@@ -1,0 +1,13 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Veeam Backup & Replication Docs",
+  "description": "Unofficial documentation dump for Veeam Backup & Replication (VBR). Includes user guide, PowerShell reference, Enterprise Manager, REST API, events, and cloud connect documentation.",
+  "folders": ["docs"],
+  "excludeFolders": [],
+  "excludeFiles": [],
+  "rules": [
+    "This is unofficial documentation - always verify against official Veeam Help Center",
+    "VBR version covered: v12.3 / v13",
+    "PowerShell cmdlets require Veeam.Backup.PowerShell module"
+  ]
+}

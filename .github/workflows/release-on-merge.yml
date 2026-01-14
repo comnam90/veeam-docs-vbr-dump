@@ -1,0 +1,62 @@
+name: Create Release on Merge
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get release date
+        id: date
+        run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+
+      - name: Check if release exists
+        id: check
+        run: |
+          if gh release view "v${{ steps.date.outputs.date }}" &>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate changelog
+        if: steps.check.outputs.exists == 'false'
+        id: changelog
+        run: |
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          if [ -z "$LAST_TAG" ]; then
+            COMMITS=$(git log --oneline --no-merges)
+          else
+            COMMITS=$(git log ${LAST_TAG}..HEAD --oneline --no-merges)
+          fi
+          
+          ADDED=$(echo "$COMMITS" | grep -c ": add " || echo "0")
+          UPDATED=$(echo "$COMMITS" | grep -c ": update " || echo "0")
+          
+          echo "added=$ADDED" >> $GITHUB_OUTPUT
+          echo "updated=$UPDATED" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        if: steps.check.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.date.outputs.date }}
+          name: "Documentation Update - ${{ steps.date.outputs.date }}"
+          body: |
+            ## Changes
+            - **Added**: ${{ steps.changelog.outputs.added }} new pages
+            - **Updated**: ${{ steps.changelog.outputs.updated }} existing pages
+            
+            ---
+            *Scraped from [Veeam Help Center](https://helpcenter.veeam.com)*
+          generate_release_notes: true
