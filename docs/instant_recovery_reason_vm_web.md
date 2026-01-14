@@ -1,0 +1,18 @@
+---
+title: "Step 7. Specify Restore Reason"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_reason_vm_web.html"
+last_updated: "8/7/2025"
+product_version: "13.0.1.1071"
+---
+
+# Step 7. Specify Restore Reason
+
+In this article
+
+At the Reason step of the wizard, enter a reason for performing Instant Recovery. The information you provide will be saved in the session history and you can reference it later.
+
+[![Specify Restore Reason - Web UI](images/instant_recovery_reason_vm_web.webp)](images/instant_recovery_reason_vm_web.webp "Specify Restore Reason - Web UI")
+
+Page updated 8/7/2025
+
+Page content applies to build 13.0.1.1071

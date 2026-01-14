@@ -1,0 +1,81 @@
+---
+title: "Failback"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failback.html"
+last_updated: "3/5/2024"
+product_version: "13.0.1.1071"
+---
+
+# Failback
+
+In this article
+
+Failback is one of the ways to finalize failover. When you perform failback, you switch back to the production VM from a replica, shift I/O processes from the disaster recovery site to the production site.
+
+Veeam Backup & Replication provides you the following options to perform failback:
+
+* You can fail back to the source VM in the original location.
+* You can fail back to a VM already recovered to a new location. This VM must be recovered before you perform failback. For example, you can recover the VM from a backup.
+* You can fail back to a VM recovered from a replica to a new location, or to any location but with different settings. The VM will be recovered from the replica during the failback process.
+
+The first two options help you decrease recovery time and the use of the network traffic because Veeam Backup & Replication needs to transfer only differences between the source/recovered VM and replica. For the third option, Veeam Backup & Replication needs to transfer the whole VM data, including its configuration and virtual disk content. Use the third option if there is no way to use the source VM or restore it from a backup.
+
+Veeam Backup & Replication performs failback in two phases:
+
+* First phase: Veeam Backup & Replication synchronizes the state of the production VM (the source VM, an already recovered VM or a VM that will be recovered from the replica) with the current state of its replica. This phase may take a lot of time especially if VM is large. While Veeam Backup & Replication performs the first phase of failback, replicas are still up and running, users can access these VMs and perform daily routine tasks as normal.
+* Second phase: Veeam Backup & Replication switches all processes from the replica to the production VM, turns off the replica and also sends to the production VM changes made to the replica since the end of the first phase.
+
+The time when the second phase starts depends on how you want to [switch from the replica to the production VM](cdp_failback_schedule.md). You can switch to the production VM automatically, at the scheduled time or manually. If you select to switch automatically, the second phase will start right after the first phase finishes. If you select to switch at the scheduled time or manually, the second phase will start at the time you want.
+
+The process of failing back to the source VM or an already recovered VM differs from the process of failing back to a VM recovered from a replica:
+
+* [How failback to the source VM and already recovered VM works](#original).
+* [How failback to a VM recovered from a replica works](#replica).
+
+How Failback to Source VM or Already Recovered VM Works
+
+When you fail back to the source VM or an already recovered VM, Veeam Backup & Replication performs the following operations during the first phase:
+
+1. If the source VM is running, Veeam Backup & Replication powers it off.
+2. Veeam Backup & Replication calculates the difference between disks of the production VM and disks of the replica in the Failover state. Difference calculation helps Veeam Backup & Replication understand what data needs to be transferred to the production VM to synchronize its state with the state of the replica.
+
+[For VMware vSphere prior version 7.0] If you fail back to the original VM in the original location and you have enabled the Quick rollback option, difference calculation can be performed much faster than without this option enabled. For more information on quick rollback, see [Quick Rollback](failback_quick_rollback.md).
+
+1. Veeam Backup & Replication transfers the data that was detected at the previous step to the production VM. The transferred data is written to the production VM.
+2. Veeam Backup & Replication changes the state of the replica from Failover to Ready to switch.
+
+During the second phase, Veeam Backup & Replication performs the following operations:
+
+1. The guest OS of the replica is shut down or the replica is powered off.
+
+If VMware Tools are installed on the replica, Veeam Backup & Replication tries to shut down the replica guest OS. If nothing happens after 15 minutes, Veeam Backup & Replication powers off the replica. If VMware Tools are not installed on the VM or the VM is suspended, Veeam Backup & Replication powers off the VM. The replica remains powered off until you commit failback or undo failback.
+
+1. Veeam Backup & Replication calculates the difference between disks of the production VM and disks of the replica. Difference calculation helps Veeam Backup & Replication understand what data was changed while the replica was in the Ready to switch state.
+2. Sends data changed on the replica while it was in the Ready to switch state to the production VM.
+3. The state of the replica is changed from Ready to switch to Failback.
+4. [If you fail back to a recovered VM] Veeam Backup & Replication updates the ID of the source VM in the Veeam Backup & Replication configuration database. The ID of the source VM is replaced with the ID of the recovered VM.
+5. If you have selected to power on the production VM after failback, Veeam Backup & Replication powers on the production VM on the host.
+
+How Failback to VM Recovered from Replica Works
+
+When you fail back to a VM recovered from a replica, Veeam Backup & Replication performs the following operations during the first phase:
+
+1. Veeam Backup & Replication requests vCenter Server to create on the target host an empty VM with the same configuration as the replica. vCenter Server registers the created production VM.
+2. Veeam Backup & Replication transfers data of the replica to the production VM to update the production VM state to the replica state.
+3. Veeam Backup & Replication changes the state of the replica from Failover to the Ready to switch.
+
+During the second phase, Veeam Backup & Replication performs the same operations as described in section [How Failback to Source VM or Already Recovered VM Works](#second) except for the step 2. When you fail back to a VM recovered from a replica, Veeam Backup & Replication does not calculate the difference between disks.
+
+Finalizing Failback
+
+Failback is an intermediate step that needs to be finalized. You can perform the following operations:
+
+* [Commit failback](cdp_failback_commit.md)
+* [Undo failback](cdp_failback_undo.md)
+
+Related Topics
+
+[Performing Failback](cdp_performing_failback.md)
+
+Page updated 3/5/2024
+
+Page content applies to build 13.0.1.1071

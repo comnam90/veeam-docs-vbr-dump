@@ -1,0 +1,31 @@
+---
+title: "Removing Backup from Configuration"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_application_backups_remove_from_configuration.html"
+last_updated: "8/1/2025"
+product_version: "13.0.1.1071"
+---
+
+# Removing Backup from Configuration
+
+In this article
+
+If you want to remove records about application backups from the Veeam Backup & Replication console and configuration database, you can use the Remove from configuration operation. When you remove an application backup from configuration, the actual backup files remain on the backup repository. You can import the backup to the Veeam Backup & Replication at any time later and restore data from it.
+
+You can remove specific child backups — backups related to individual computers or replica sets in the backup.
+
+|  |
+| --- |
+| NOTE |
+| You can use the Veeam Backup & Replication console to remove backups created by application backup policies in the Veeam backup repository. Backups created on a local drive of a protected computer or in a network shared folder are not displayed in the Veeam backup console. |
+
+To remove an application backup from configuration:
+
+1. Open the Home view.
+2. In the inventory pane, click Backups.
+3. To remove a backup of a specific computer or replica set in the application backup policy, expand the parent backup, select the necessary computer, press and hold the [Ctrl] key, right-click the backup and select Remove from > Configuration.
+
+[![Remove Backup from Configuration](images/mongo_backup_remove_from_configuration.webp)](images/mongo_backup_remove_from_configuration.webp "Remove Backup from Configuration")
+
+Page updated 8/1/2025
+
+Page content applies to build 13.0.1.1071

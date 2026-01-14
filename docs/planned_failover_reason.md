@@ -1,0 +1,23 @@
+---
+title: "Step 3. Specify Failover Reason"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planned_failover_reason.html"
+last_updated: "8/18/2025"
+product_version: "13.0.1.1071"
+---
+
+# Step 3. Specify Failover Reason
+
+In this article
+
+At the Reason step of the wizard, enter a reason for failing over to the replicas. The information you provide will be saved in the session history and you can reference it later.
+
+|  |
+| --- |
+| Tip |
+| If you do not want to show this page, select the Do not show me this page again check box. If you want to unhide this page, follow the instructions described in [this Veeam KB article](https://www.veeam.com/kb4432). |
+
+![Step 3. Specify Failover Reason](images/planned_failover_reason_vm.webp)
+
+Page updated 8/18/2025
+
+Page content applies to build 13.0.1.1071

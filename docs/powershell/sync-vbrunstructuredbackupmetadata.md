@@ -1,0 +1,75 @@
+---
+title: "Sync-VBRUnstructuredBackupMetadata"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-vbrunstructuredbackupmetadata.html"
+last_updated: "8/14/2024"
+product_version: "13.0.1.1071"
+---
+
+# Sync-VBRUnstructuredBackupMetadata
+
+In this article
+
+Short Description
+
+Downloads metadata of backup files from the long-term backup repository.
+
+Applies to
+
+Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
+
+Syntax
+
+|  |
+| --- |
+| Sync-VBRUnstructuredBackupMetadata -SourceBackup <VBRUnstructuredBackup> -TargetRepository <CBackupRepository> [-RunAsync]  [<CommonParameters>] |
+
+Detailed Description
+
+This cmdlet downloads metadata of backup files from the long-term backup repository to the short-term repository. You can use this cmdlet to restore backup files that are located on the long-term repository but are no longer available on the short-term repository.
+
+|  |
+| --- |
+| Important |
+| Before downloading metadata from the long-term repository, you must run the [Sync-VBRBackupRepository](sync-vbrbackuprepository.md) cmdlet to rescan this repository. |
+
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| SourceBackup | Specifies a backup file. The cmdlet will download metadata of this backup file from the long-term repository. | Accepts the VBRUnstructuredBackup object. To get this object, run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
+| TargetRepository | Specifies the short-term backup repository. The cmdlet will download metadata of backup files to the specified short-term backup repository. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | False |
+| RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
+
+<CommonParameters>
+
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see  [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7).
+
+Output Object
+
+None.
+
+Example
+
+Downloading Metadata to Short-term Repository
+
+This example shows how to download data from the long-term repository to the short-term repository.
+
+|  |
+| --- |
+| $backup = Get-VBRUnstructuredBackup  $repository = Get-VBRBackupRepository  Sync-VBRUnstructuredBackupMetadata -SourceBackup $backup -TargetRepository $repository |
+
+Perform the following steps:
+
+1. Run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. Save the result to the $backup variable.
+2. Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. Save the result to the $repository variable.
+3. Run the Sync-VBRUnstructuredBackupMetadata cmdlet. Set the $backup variable as the SourceBackup parameter value. Set the $repository as the TargetRepository parameter value.
+
+Related Commands
+
+* [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md)
+
+* [Get-VBRBackupRepository](get-vbrbackuprepository.md)
+
+Page updated 8/14/2024
+
+Page content applies to build 13.0.1.1071

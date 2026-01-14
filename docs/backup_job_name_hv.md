@@ -1,0 +1,27 @@
+---
+title: "Step 2. Specify Job Name and Description"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_name_hv.html"
+last_updated: "7/17/2024"
+product_version: "13.0.1.1071"
+---
+
+# Step 2. Specify Job Name and Description
+
+In this article
+
+At the Name step of the wizard, specify a name and description for the backup job.
+
+1. In the Name field, enter a name for the backup job.
+2. In the Description field, provide a description for future reference. The default description contains information about the user who created a job, date and time when the job was created.
+3. Select the High priority check box if you want the resource scheduler of Veeam Backup & Replication to prioritize this job higher than other similar jobs and allocate resources to it in the first place. For more information on job priorities, see [Job Priorities](job_priorities.md).
+
+|  |
+| --- |
+| Tip |
+| In the list of jobs in the Veeam Backup & Replication console, jobs with the High priority option enabled are marked with double green arrows (![Step 2. Specify Job Name and Description](images/high_priority_job.webp)). |
+
+![Step 2. Specify Job Name and Description](images/hv_backup_job_name.webp)
+
+Page updated 7/17/2024
+
+Page content applies to build 13.0.1.1071

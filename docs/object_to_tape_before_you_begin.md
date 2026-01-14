@@ -1,0 +1,35 @@
+---
+title: "Before You Begin"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_before_you_begin.html"
+last_updated: "5/21/2025"
+product_version: "13.0.1.1071"
+---
+
+# Before You Begin
+
+In this article
+
+Before you create an object to tape job, consider the following:
+
+* The object storage backup to tape functionality consumes Veeam instance licenses. However, if you upgrade to Veeam Backup & Replication 12 from the previous versions, you will have a grace period of 3 months during which your object to tape jobs will not consume license instances. For more information, see [Instance Consumption for Object Storage Backup, File Backup and File to Tape Jobs](nas_licensing.md).
+
+* You must configure the object storage permissions for the user account which Veeam Backup & Replication will use to authenticate and get access to the object storage. For more information on user permissions, see [Object Storage Permissions](#permissions).
+* You must configure one or more regular media pools with the necessary media set and retention settings.
+* You must load tapes to the tape device and configure the target media pool so that it has access to them. If the media pool has no available tape, the tape job will retry for 72 hours and then terminate.
+
+|  |
+| --- |
+| Note |
+| Object to tape jobs can back up only object storage data and cannot protect other workloads. You need to create other backup to tape jobs to be able to process other types of data. For more information, see [File Backup to Tape](file_to_tape_jobs.md) and [Backup to Tape](backup_to_tape.md). |
+
+Object Storage Permissions
+
+The following permissions for the object storage are required for an object to tape job:
+
+|  |
+| --- |
+| GetBucketAccelerateConfigurationGetBucketAcl |
+
+Page updated 5/21/2025
+
+Page content applies to build 13.0.1.1071

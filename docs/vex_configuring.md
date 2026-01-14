@@ -1,0 +1,22 @@
+---
+title: "General Application Settings"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_configuring.html"
+last_updated: "8/15/2023"
+product_version: "13.0.1.1071"
+---
+
+# General Application Settings
+
+In this article
+
+You can configure general settings for Veeam Explorer for Microsoft Exchange.
+
+In This Section
+
+* [Extensible Storage Engine](vex_ese_config.md)
+* [Mail Settings](vex_mail_settings.md)
+* [Advanced Settings](vex_extended_logging.md)
+
+Page updated 8/15/2023
+
+Page content applies to build 13.0.1.1071

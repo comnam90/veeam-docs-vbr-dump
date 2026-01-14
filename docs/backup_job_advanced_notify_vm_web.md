@@ -1,0 +1,45 @@
+---
+title: "Notification Settings"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_notify_vm_web.html"
+last_updated: "8/14/2025"
+product_version: "13.0.1.1071"
+---
+
+# Notification Settings
+
+In this article
+
+To specify notification settings for the backup job:
+
+1. At the Storage step of the wizard, click Advanced job settings.
+2. Click the Notifications tab.
+3. Select the Send SNMP notifications for this job check box if you want to receive SNMP traps when the job completes successfully.
+
+SNMP traps will be sent if you specify global SNMP settings in Veeam Backup & Replication and configure software on the recipient's machine to receive SNMP traps. For more information, see [Specifying SNMP Settings](snmp_settings.md).
+
+1. Select the Send email notifications to the following recipients check box if you want to receive notifications about the job completion status by email. In the field under the check box, specify the recipient’s email address. You can enter several addresses separated by a semicolon.
+
+Email notifications will be sent if you configure global email notification settings in Veeam Backup & Replication. For more information, see [Configuring Global Email Notification Settings](general_email_notifications.md).
+
+1. You can choose to use global notification settings or specify custom notification settings.
+
++ To receive a typical notification for the job, select Use global notifications settings. In this case, Veeam Backup & Replication will apply to the job global email notification settings specified for the backup server. For more information, see [Configuring Global Email Notification Settings](general_email_notifications.md).
++ To configure a custom notification for the job, select Use custom notifications settings specified below check box. You can specify the following notification settings:
+
+1. In the Subject field, specify a notification subject. You can use the following variables in the subject: %Time% (completion time), %JobName%, %JobResult%, %ObjectCount% (number of VMs in the job) and %Issues% (number of VMs in the job that have finished with the Warning or Failed status).
+2. Select the Notify on success, Notify on warning and Notify on error check boxes to receive email notification if the job completes successfully, fails or completes with a warning.
+3. Select the Suppress notifications until the last retry check box to receive a notification about the final job status. If you do not enable this option, Veeam Backup & Replication will send one notification per every job retry.
+
+|  |
+| --- |
+| Note |
+| If you specify the same email recipient in both job notification and global notification settings, Veeam Backup & Replication will send two separate notifications only if the subject for the email message specified in the job notification is different from the subject specified in global notification settings. Otherwise, Veeam Backup & Replication will suppress global notification settings and will send job notifications only. |
+
+1. Select the Set successful backup details to this VM attribute check box to write information about successfully performed backup and backup results (backup date and time, backup server name and path to the backup file) to a VM attribute. In the field under the check box, enter the name of the attribute. If the specified attribute does not exist, Veeam Backup & Replication will create it.
+2. Select the Append to the existing attribute's value check box to append information about successfully performed backup to an existing attribute's value. In this case, Veeam Backup & Replication will keep values added by the user in the attribute and will overwrite only the value added by the backup job. If you do not select this option, Veeam Backup & Replication will overwrite the existing attribute values (made both by the user and the backup job).
+
+[![Click to zoom in](images/vm_backup_job_settings_notification_web.webp)](images/vm_backup_job_settings_notification_web.webp "Click to zoom in")
+
+Page updated 8/14/2025
+
+Page content applies to build 13.0.1.1071

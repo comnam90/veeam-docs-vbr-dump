@@ -1,0 +1,31 @@
+---
+title: "VBRDefaultLinuxMountServer"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrdefaultlinuxmountserver.html"
+last_updated: "7/18/2025"
+product_version: "13.0.1.1071"
+---
+
+# VBRDefaultLinuxMountServer
+
+In this article
+
+Contains default Linux mount server and its settings.
+
+Properties
+
+| Property | Type | Description |
+| --- | --- | --- |
+| MountServer | CHost | Mount server. |
+| EnableVPowerNFS | Boolean | Enables the Veeam vPower NFS Service on the mount server. |
+| VPowerNFSPort | Int32 | Network port used by the Veeam vPower NFS Service. |
+| MountPort | Int32 | Mount server port. |
+| MountFolder | String | A folder to keep cache created during mount operations. |
+
+Related Commands
+
+* [Set-VBRDefaultLinuxMountServer](set-vbrdefaultlinuxmountserver.md)
+* [Get-VBRDefaultLinuxMountServer](get-vbrdefaultlinuxmountserver.md)
+
+Page updated 7/18/2025
+
+Page content applies to build 13.0.1.1071

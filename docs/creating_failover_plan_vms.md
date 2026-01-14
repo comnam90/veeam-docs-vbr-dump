@@ -1,0 +1,29 @@
+---
+title: "Step 3. Select VMs"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_failover_plan_vms.html"
+last_updated: "1/24/2025"
+product_version: "13.0.1.1071"
+---
+
+# Step 3. Select VMs
+
+In this article
+
+At the Virtual Machines step of the wizard, select VMs that you want to add to the failover plan. You can add separate VMs and whole VM containers.
+
+To add VMs and VM containers:
+
+1. Click Add VM.
+2. Select where to browse for VMs and VM containers:
+
+* From infrastructure — browse the virtual environment and select VMs or VM containers. If you choose a VM container, Veeam Backup & Replication will expand it to a plain VM list.
+
+* From replicas — browse existing replication jobs and select all VMs or specific VMs from replication jobs.
+
+To quickly find the necessary VMs or VM containers, you can use the search fields.
+
+![Step 3. Select VMs ](images/failover_plan_vms_vm.webp)
+
+Page updated 1/24/2025
+
+Page content applies to build 13.0.1.1071

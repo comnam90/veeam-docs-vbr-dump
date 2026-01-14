@@ -1,0 +1,23 @@
+---
+title: "Exporting Point-in-Time State"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_df_pit.html"
+last_updated: "1/2/2025"
+product_version: "13.0.1.1071"
+---
+
+# Exporting Point-in-Time State
+
+In this article
+
+This section explains how to export a standalone database or a Data Guard database as database files to a selected point-in-time state on the backup file. Your Oracle data will be restored to the default location.
+
+To export database files as of a point-in-time state, do the following:
+
+1. [Launch the Export wizard](veor_df_export_wizard_pit.md).
+2. [Specify a restore point](veor_df_export_srp.md).
+3. [Fine-tune the restore point](veor_df_export_frp.md).
+4. [Review the export summary](veor_export_dbfiles_pit_summary.md).
+
+Page updated 1/2/2025
+
+Page content applies to build 13.0.1.1071

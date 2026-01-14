@@ -1,0 +1,22 @@
+---
+title: "Viewing Replica Properties"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_view_properties.html"
+last_updated: "9/25/2025"
+product_version: "13.0.1.1071"
+---
+
+# Viewing Replica Properties
+
+In this article
+
+To view replica properties:
+
+1. Open the Home view.
+2. In the [inventory pane](vbr_ui.md), select Replicas.
+3. In the working area, right-click the necessary replica and select Properties. Alternatively, select Properties on the ribbon.
+
+![Viewing Replica Properties](images/uni_cdp_replica_properties.webp "View CDP replica properties")
+
+Page updated 9/25/2025
+
+Page content applies to build 13.0.1.1071

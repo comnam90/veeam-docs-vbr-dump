@@ -1,0 +1,31 @@
+---
+title: "deployment_linux_iso_install_time"
+source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_install_time.html"
+last_updated: "10/7/2025"
+product_version: "13.0.1.1071"
+---
+
+
+In this article
+
+At the Time step of the Initial Configuration wizard, review server time configuration. Server time affects multi-factor authentication and backup operations, for example, backup job schedule.
+
+Configure the following server time settings:
+
+* Time zone. By default, UTC is used. To specify another time zone, select Change.
+* Available NTP servers. By default, the time.nist.gov NTP server is used. You can add multiple NTP and NTS servers. It is recommended to use a minimum of 3 to mitigate timing issues.
+
+|  |
+| --- |
+| Note |
+| NTS servers must use a certificate signed by a public certificate authority. |
+
+To synchronize time on the backup server with the NTP servers, select Sync.
+
+You can change server time settings later in the Host Management console. For more information, see [Configuring Server Time Settings](hmc_configure_time.md).
+
+![Step 7. Review Server Time Settings](images/deployment_iso_install_time.webp)
+
+Page updated 10/7/2025
+
+Page content applies to build 13.0.1.1071

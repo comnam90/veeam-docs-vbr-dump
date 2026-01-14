@@ -1,0 +1,35 @@
+---
+title: "Quick Rollback"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failback_quick_rollback.html"
+last_updated: "3/13/2025"
+product_version: "13.0.1.1071"
+---
+
+# Quick Rollback
+
+In this article
+
+Quick rollback helps you significantly reduce the failback time. You can use quick rollback if you fail back from a replica to the source VM in the source location.
+
+During failback, Veeam Backup & Replication calculates differences between disks of the source VM and disks of the replica. With the quick rollback option enabled, Veeam Backup & Replication compares only those disk sectors that have changed during the replica was in the Failover state instead of comparing entire disks. To get information about the changed disk sectors, Veeam Backup & Replication uses VMware vSphere Changed Block Tracking (CBT).
+
+As a result of enabling quick rollback, difference calculation becomes much faster. After the differences are calculated, Veeam Backup & Replication performs failback in a regular way: transport changed blocks to the source VM, powers off the replica and synchronizes the source VM with the replica once again.
+
+Requirements for Quick Rollback
+
+To perform quick rollback, make sure that the following requirements are met:
+
+* You fail back to the source VM in the original location.
+* Do not use quick rollback if the problem occurred at the VM hardware level, storage level or due to a power loss.
+
+Use quick rollback if you fail back to the source VM that had a problem at the guest OS level — for example, there was an application error or a user accidentally deleted a file on the source VM guest OS.
+
+* CBT must be enabled for the source VM.
+
+Limitations for Quick Rollback
+
+During the first replication job session after failback with quick rollback, CBT on the original VM is reset. Due to that Veeam Backup & Replication will read data of the entire VM.
+
+Page updated 3/13/2025
+
+Page content applies to build 13.0.1.1071

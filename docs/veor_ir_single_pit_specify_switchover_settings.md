@@ -1,0 +1,40 @@
+---
+title: "Step 4. Specify Switchover Settings"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_single_pit_specify_switchover_settings.html"
+last_updated: "8/25/2025"
+product_version: "13.0.1.1071"
+---
+
+# Step 4. Specify Switchover Settings
+
+In this article
+
+At this step of the wizard, specify switchover options for the published database.
+
+1. Select one of the following switchover options:
+
+* Auto: switchover is performed automatically after all database files are copied and synchronized.
+* Manual: switchover is started manually by user at any time after all database files are copied and synchronized.
+
+* Scheduled: switchover is performed at a specified date and time. Use the drop-down calendar to specify the date and time.
+
+1. Click Recover.
+
+After you click Recover, Veeam Explorer for Oracle starts publishing the database on the target server.
+
+|  |
+| --- |
+| Note |
+| Before the restore process begins, you will be prompted to enter the source machine credentials. |
+
+[![Specifying Switchover Type](images/instant_switchover_veor.webp)](images/instant_switchover_veor.webp "Specifying Switchover Type")
+
+[For Windows-based Oracle servers] If the user specified in the job is not the Oracle home user, you must provide a password to access the target Oracle home. Applicable to Oracle 12c and later versions.
+
+Note that this window will not appear if you are restoring your data as of a specific transaction and entered the Oracle home user password when configuring the staging server. For more information, see [Configuring Staging Oracle Server](veor_staging_server.md#staging_windows).
+
+[![Specifying Oracle Home User Password](images/veor_ir_oracle_home_password.webp)](images/veor_ir_oracle_home_password.webp "Specifying Oracle Home User Password")
+
+Page updated 8/25/2025
+
+Page content applies to build 13.0.1.1071

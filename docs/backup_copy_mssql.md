@@ -1,0 +1,33 @@
+---
+title: "Backup Copy for Microsoft SQL Server Backups"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_mssql.html"
+last_updated: "11/7/2025"
+product_version: "13.0.1.1071"
+---
+
+# Backup Copy for Microsoft SQL Server Backups
+
+In this article
+
+Having just one backup does not provide the necessary level of safety. The primary backup may get destroyed together with production data, and you will have no backups from which you can restore data.
+
+To build a successful data protection and disaster recovery plan, it is recommended that you follow the 3-2-1 rule:
+
+* 3: You must have at least three copies of your data: the original production data and two backups.
+* 2: You must use at least two different types of media to store the copies of your data, for example, local disk and cloud.
+* 1: You must keep at least one backup offsite, for example, in the cloud or in a remote site.
+
+Thus, you must have at least two backups and they must be in different locations. If a disaster takes out your production data and local backup, you can still recover from your offsite backup.
+
+To help you adopt the 3-2-1 rule, Veeam Backup & Replication offers the backup copy functionality that allows you to create several instances of the same backup in different locations, whether onsite or offsite. Backup copies have the same format as those created by backup jobs and you can recover your data from them when you need it.
+
+Veeam Backup & Replication fully automates the backup copy process and lets you specify retention settings to maintain the desired number of restore points, as well as full backups for archival purposes. Backup copy is a job-driven process. When enabled, the backup copy job for Veeam Plug-In backups runs continuously.
+
+In This Section
+
+* [Creating Backup Copy Job](backup_copy_job_mssql.md)
+* [Converting Backup Copy to Backup](mapping_backup_copy.md)
+
+Page updated 11/7/2025
+
+Page content applies to build 13.0.1.1071

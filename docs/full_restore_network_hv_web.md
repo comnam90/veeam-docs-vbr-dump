@@ -1,0 +1,28 @@
+---
+title: "Step 6. Specify Network Mapping"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_network_hv_web.html"
+last_updated: "8/6/2025"
+product_version: "13.0.1.1071"
+---
+
+# Step 6. Specify Network Mapping
+
+In this article
+
+The Network step of the wizard is available if you have selected Restore to a new location, or with different settings at the [Restore Mode](full_restore_mode_hv_web.md) step.
+
+If you plan to restore a VM to a new location, for example, another site with a different set of networks, you can map the source site networks to the target site networks. Veeam Backup & Replication will use the network mapping table to update the VM configuration files on the fly during the restore process..
+
+To change the networks to which the restored VM will be connected:
+
+1. Select the necessary networks in the list and click Network.
+2. From the list of available networks, choose a network to which the VM must have access upon restore.
+3. Click OK to save the changes.
+
+If you do not want to map a network to your virtual network, select the network in the list and click Disconnect.
+
+[![Configure Network Mapping - Web UI](images/full_restore_network_hv_web.webp)](images/full_restore_network_hv_web.webp "Configure Network Mapping - Web UI")
+
+Page updated 8/6/2025
+
+Page content applies to build 13.0.1.1071

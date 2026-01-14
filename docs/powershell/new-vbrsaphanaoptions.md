@@ -1,0 +1,58 @@
+---
+title: "New-VBRSAPHANAOptions"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsaphanaoptions.html"
+last_updated: "12/6/2024"
+product_version: "13.0.1.1071"
+---
+
+# New-VBRSAPHANAOptions
+
+In this article
+
+Short Description
+
+Creates the SAP HANA backup settings for application backup policies.
+
+Applies to
+
+Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
+
+Syntax
+
+|  |
+| --- |
+| New-VBRSAPHANAOptions [-ParallelChannelsCount <int>]  [<CommonParameters>] |
+
+Detailed Description
+
+This cmdlet applies to application backup policies for Veeam Plug-In for SAP HANA.
+
+This cmdlet creates SAP HANA backup settings. You can run this cmdlet to allow Veeam Plug-In to send application backups to the target storage using several parallel data channels.
+
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| ParallelChannelsCount | Specifies the number of data channels that can be assigned.  Permitted values: 1 to 32. | Int32 | False | Named | False |
+
+<CommonParameters>
+
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see  [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7).
+
+Output Object
+
+The cmdlet returns the VBRSAPHANAOptions object that defines SAP HANA backup settings.
+
+Examples
+
+Creating SAP HANA Backup Settings for Application Backup Policies for Veeam Plug-In for SAP HANA
+
+This command creates a SAP HANA backup settings for application backup policies for Veeam Plug-In for SAP HANA. The policy will send application backups to the target storage using 3 parallel data channels.
+
+|  |
+| --- |
+| New-VBRSAPHANAOptions -ParallelChannelsCount 3 |
+
+Page updated 12/6/2024
+
+Page content applies to build 13.0.1.1071

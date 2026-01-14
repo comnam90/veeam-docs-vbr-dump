@@ -1,0 +1,72 @@
+---
+title: "New-VBRSAPOnOracleProcessingOptions"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsaponoracleprocessingoptions.html"
+last_updated: "5/6/2024"
+product_version: "13.0.1.1071"
+---
+
+# New-VBRSAPOnOracleProcessingOptions
+
+In this article
+
+Short Description
+
+Creates the SAP on Oracle database processing settings for application backup policies.
+
+Applies to
+
+Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
+
+Syntax
+
+|  |
+| --- |
+| New-VBROracleRMANProcessingOptions -Credentials <CCredentials> [-DeleteSourceLogs] [-ArchiveLogBackupPeriod <int>]  [<CommonParameters>] |
+
+Detailed Description
+
+This cmdlet applies to application backup policies for Veeam Plug-In for SAP on Oracle.
+
+This cmdlet creates SAP on Oracle database processing settings. You can set up the following options:
+
+* The way Veeam Backup & Replication will process archived logs.
+* Schedule settings for archived logs processing.
+
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| Credentials | Specifies the credentials for SAP on Oracle database processing. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | False |
+| DeleteSourceLogs | Defines that Veeam Plug-In should delete archived logs that were backed up. | SwitchParameter | False | Named | False |
+| ArchiveLogBackupPeriod | Specifies the integer defining the frequency for archived logs backup in minutes.  Permitted values: 5 to 480. | Int32 | False | Named | False |
+
+<CommonParameters>
+
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see  [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7).
+
+Output Object
+
+The cmdlet returns the VBRSAPOnOracleProcessingOptions object that defines SAP on Oracle database processing settings.
+
+Examples
+
+Creating SAP on Oracle Database Processing Settings for Application Backup Policies for Veeam Plug-In for SAP on Oracle
+
+This example shows how to create an SAP on Oracle database processing settings for application backup policies for Veeam Plug-In for SAP on Oracle. The policy will back up archived logs every 15 minutes and send application backups to the target storage using 3 parallel data channels.
+
+|  |
+| --- |
+| $db\_administrator = Get-VBRCredentials  New-VBRSAPOnOracleProcessingOptions -Credentials $db\_administrator -DeleteSourceLogs Keep -ArchiveLogBackupPeriod 15 |
+
+Perform the following steps:
+
+1. Run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. Save the result to the $db\_administrator variable.
+2. Run the New-VBRSAPOnOracleProcessingOptions cmdlet. Set the $db\_administrator variable as the Credentials parameter value. Set the Keep option for the DeleteSourceLogs parameter. Specify the ArchiveLogBackupPeriod parameter value.
+
+Related Commands
+
+[Get-VBRCredentials](get-vbrcredentials.md)
+
+Page updated 5/6/2024
+
+Page content applies to build 13.0.1.1071

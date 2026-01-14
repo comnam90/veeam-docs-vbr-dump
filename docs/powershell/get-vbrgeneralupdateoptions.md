@@ -1,0 +1,56 @@
+---
+title: "Get-VBRGeneralUpdateOptions"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgeneralupdateoptions.html"
+last_updated: "8/26/2025"
+product_version: "13.0.1.1071"
+---
+
+# Get-VBRGeneralUpdateOptions
+
+In this article
+
+Short Description
+
+Returns general update settings.
+
+Applies to
+
+Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
+
+Syntax
+
+|  |
+| --- |
+| Get-VBRGeneralUpdateOptions  [<CommonParameters>] |
+
+Detailed Description
+
+This cmdlet returns general update settings.
+
+Parameters
+
+<CommonParameters>
+
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see  [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7).
+
+Output Object
+
+VBRGeneralUpdateOptions
+
+Examples
+
+Getting Update Options
+
+This command returns general update settings.
+
+|  |
+| --- |
+| Get-VBRGeneralUpdateOptions |
+
+Related Commands
+
+[Set-VBRGeneralUpdateOptions](set-vbrgeneralupdateoptions.md)
+
+Page updated 8/26/2025
+
+Page content applies to build 13.0.1.1071

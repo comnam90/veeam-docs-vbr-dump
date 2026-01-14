@@ -1,0 +1,88 @@
+---
+title: "Set-VBRDefaultWindowsMountServer"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrdefaultwindowsmountserver.html"
+last_updated: "7/22/2025"
+product_version: "13.0.1.1071"
+---
+
+# Set-VBRDefaultWindowsMountServer
+
+In this article
+
+Short Description
+
+Modifies the default Microsoft Windows mount server.
+
+Applies to
+
+Platform: VMware, Hyper-V
+
+Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
+
+Syntax
+
+This cmdlet provides parameter sets that allow you to:
+
+* Configure the default Windows mount server settings from scratch.
+
+|  |
+| --- |
+| Set-VBRDefaultWindowsMountServer -MountServer <CHost> -MountFolder <string> [-MountPort <int>] [-EnableVPowerNFS] [-VPowerNFSPort <int>]  [<CommonParameters>] |
+
+* Apply existing mount server settings to the default Windows mount server.
+
+|  |
+| --- |
+| Set-VBRDefaultWindowsMountServer -Options <VBRRepositoryMountServerOptions>  [<CommonParameters>] |
+
+Detailed Description
+
+This cmdlet defines the default Microsoft Windows mount server and its settings.
+
+|  |
+| --- |
+| Note |
+| To modify settings, specify new values for the necessary parameters. The cmdlet will overwrite the previous parameter values with new values. The parameters that you omit will remain unchanged. |
+
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| MountServer | Specifies the server that you want to use as a default Windows mount server. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
+| EnableVPowerNFS | Enables the Veeam vPower NFS Service on the default mount server. If you enable this option, Veeam vPower NFS Service will be be able to access the backup repository.  Default: True.  Note: To disable this option, set the parameter value to $false. That is, parameter\_name:$false. | SwitchParameter | False | Named | False |
+| VPowerNFSPort | Specifies the port that the Veeam vPower NFS Service will use to connect to the target NFS share.  Default: 2049. | Int32 | False | Named | False |
+| MountPort | Specifies the port that the Veeam vPower NFS Service will use to mount the vPower NFS datastore to the ESXi host.  Default: 1063. | Int32 | False | Named | False |
+| MountFolder | Specifies the folder to keep cache that is created during mount operations. | String | True | Named | False |
+| Options | Specifies mount server settings. | Accepts the VBRRepositoryMountServerOptions object. To get this object, run the [Get-VBRRepositoryMountServerOptions](get-vbrrepositorymountserveroptions.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
+
+<CommonParameters>
+
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see  [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7).
+
+Output Object
+
+[VBRDefaultWindowsMountServer](vbrdefaultwindowsmountserver.md)
+
+Examples
+
+Configuring Default Windows Mount Server
+
+This example shows how to configure the default Windows mount server.
+
+|  |
+| --- |
+| $windows\_mount = Get-VBRServer -Name "srv001.tech.local"  Set-VBRDefaultWindowsMountServer -MountServer $windows\_mount -MountFolder "C:\ProgramData\Veeam\Backup\IRCache\" -EnableVPowerNFS |
+
+Perform the following steps:
+
+1. Run the [Get-VBRServer](get-vbrserver.md) cmdlet. Specify the Name parameter value. Save the result to the $windows\_mount variable.
+2. Run the Set-VBRDefaultWindowsMountServer cmdlet. Set the $windows\_mount variable as the MountServer parameter value. Specify the MountFolder parameter value. Provide the EnableVPowerNFS parameter.
+
+Related Commands
+
+* [Get-VBRServer](get-vbrserver.md)
+* [Get-VBRRepositoryMountServerOptions](get-vbrrepositorymountserveroptions.md)
+
+Page updated 7/22/2025
+
+Page content applies to build 13.0.1.1071
