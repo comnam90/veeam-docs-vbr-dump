@@ -16,23 +16,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get release date
-        id: date
-        run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
-
-      - name: Check if release exists
-        id: check
+      - name: Get release version
+        id: version
         run: |
-          if gh release view "v${{ steps.date.outputs.date }}" &>/dev/null; then
-            echo "exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "exists=false" >> $GITHUB_OUTPUT
-          fi
+          DATE=$(date +'%Y.%m.%d')
+          
+          EXISTING=$(gh release list --limit 100 | grep -c "v${DATE}\." || true)
+          [ -z "$EXISTING" ] && EXISTING=0
+          
+          VERSION=$((EXISTING + 1))
+          
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v${DATE}.${VERSION}" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate changelog
-        if: steps.check.outputs.exists == 'false'
         id: changelog
         run: |
           LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
@@ -52,11 +52,10 @@ jobs:
           echo "updated=$UPDATED" >> $GITHUB_OUTPUT
 
       - name: Create Release
-        if: steps.check.outputs.exists == 'false'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ steps.date.outputs.date }}
-          name: "Documentation Update - ${{ steps.date.outputs.date }}"
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: "Documentation Update - ${{ steps.version.outputs.date }} (#${{ steps.version.outputs.version }})"
           body: |
             ## Changes
             - **Added**: ${{ steps.changelog.outputs.added }} new pages
