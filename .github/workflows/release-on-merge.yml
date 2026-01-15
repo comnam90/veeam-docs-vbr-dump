@@ -40,8 +40,11 @@ jobs:
             COMMITS=$(git log ${LAST_TAG}..HEAD --oneline --no-merges)
           fi
           
-          ADDED=$(echo "$COMMITS" | grep -c ": add " || echo "0")
-          UPDATED=$(echo "$COMMITS" | grep -c ": update " || echo "0")
+          ADDED=$(echo "$COMMITS" | grep -c ": add " || true)
+          UPDATED=$(echo "$COMMITS" | grep -c ": update " || true)
+          
+          [ -z "$ADDED" ] && ADDED=0
+          [ -z "$UPDATED" ] && UPDATED=0
           
           echo "added=$ADDED" >> $GITHUB_OUTPUT
           echo "updated=$UPDATED" >> $GITHUB_OUTPUT
