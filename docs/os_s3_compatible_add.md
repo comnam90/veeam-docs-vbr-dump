@@ -1,7 +1,9 @@
 ---
 title: "Adding S3 Compatible Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_s3_compatible_add.html"
-last_updated: "3/18/2025"
+last_updated: "1/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -9,11 +11,7 @@ product_version: "13.0.1.1071"
 
 In this article
 
-Before you add an S3 compatible object storage to the inventory of the virtual infrastructure, consider the following:
-
-* The object storage meets requirements and limitations listed in the [Platform Support](https://helpcenter.veeam.com/docs/backup/vsphere/platform_support.html?ver=120#os) section.
-
-* If you plan to use dedicated proxy servers, make sure these components are added in the [Backup Infrastructure](https://helpcenter.veeam.com/docs/backup/vsphere/unstructured_data_backup_infrastructure.html?ver=120).
+Before you add an S3 compatible object storage to the inventory of your virtual infrastructure, ensure that the dedicated proxy servers you plan to use are already added to the [Backup Infrastructure](unstructured_data_backup_infrastructure.md).
 
 To add an S3 compatible object storage as a source of unstructured data, do the following:
 
@@ -23,6 +21,6 @@ To add an S3 compatible object storage as a source of unstructured data, do the 
 4. [Apply object storage settings](os_s3_compatible_apply.md).
 5. [Finish working with the wizard](os_s3_compatible_finish.md).
 
-Page updated 3/18/2025
+Page updated 1/12/2026
 
 Page content applies to build 13.0.1.1071

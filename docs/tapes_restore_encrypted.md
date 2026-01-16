@@ -1,7 +1,9 @@
 ---
 title: "Restoring Data from Encrypted Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tapes_restore_encrypted.html"
-last_updated: "11/5/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -19,6 +21,6 @@ For more information, see the following sections:
 * [Decrypting Tapes with Password](tape_decrypt_password.md)
 * [Decrypting Tapes With Enterprise Manager Keys](tape_decrypt_no_password.md)
 
-Page updated 11/5/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

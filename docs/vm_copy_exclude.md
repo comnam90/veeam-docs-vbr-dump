@@ -1,7 +1,9 @@
 ---
 title: "Step 4. Exclude Objects from VM Copy Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_exclude.html"
-last_updated: "5/26/2023"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -50,6 +52,6 @@ To exclude VM templates:
 
 ![Step 4. Exclude Objects from VM Copy Job](images/vm_copy_job_exclude_templates.webp)
 
-Page updated 5/26/2023
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

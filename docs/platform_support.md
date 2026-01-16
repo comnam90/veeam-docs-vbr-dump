@@ -1,7 +1,9 @@
 ---
 title: "Supported Platforms, Applications and Workloads"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html"
-last_updated: "1/7/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -186,7 +188,7 @@ You can create transactionally-consistent backups or replicas of VMs that run th
 | Microsoft Active Directory | Veeam Backup & Replication supports backup of domain controllers running on the following operating systems:  * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Minimum supported domain and forest functional level is Windows 2012 R2. |
 | Microsoft Exchange | Veeam Backup & Replication supports backup of the following Microsoft Exchange versions:  * Microsoft Exchange Server Subscription Edition  * Microsoft Exchange Server 2019 * Microsoft Exchange Server 2016 |
 | Microsoft SharePoint | Veeam Backup & Replication supports backup of the following Microsoft SharePoint versions:  * Microsoft SharePoint Server Subscription Edition * Microsoft SharePoint Server 2019  * Microsoft SharePoint Server 2016   All editions are supported (Subscription, Foundation, Standard, Enterprise).  Restore of Microsoft SharePoint data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Staging SQL Server Settings](https://helpcenter.veeam.com/docs/vbr/explorers/vesp_configuring_sql_settings.html?ver=13). |
-| Microsoft SQL Server | Veeam Backup & Replication supports backup of the following Microsoft SQL Server versions:  * Microsoft SQL Server 2022 (only for Windows) * Microsoft SQL Server 2019 (only for Windows) * Microsoft SQL Server 2017 (only for Windows) * Microsoft SQL Server 2016 SP2 * Microsoft SQL Server 2014 SP3 * Microsoft SQL Server 2012 SP4   All editions of Microsoft SQL Server except LocalDB are supported.  The database whose logs you want to back up must use the Full or Bulk-logged recovery model. In this case, all changes of the Microsoft SQL Server state will be written to transaction logs, and you will be able to replay transaction logs to restore the Microsoft SQL Server. You can use the Microsoft SQL Server Management Studio to switch to one of these models. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-2017).  Restore of Microsoft SQL Server data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Configuring Staging SQL Server](vesql_configure_staging.md). |
+| Microsoft SQL Server | Veeam Backup & Replication supports backup of the following Microsoft SQL Server versions:  * Microsoft SQL Server 2025 (only for Windows) * Microsoft SQL Server 2022 (only for Windows) * Microsoft SQL Server 2019 (only for Windows) * Microsoft SQL Server 2017 (only for Windows) * Microsoft SQL Server 2016 SP2 * Microsoft SQL Server 2014 SP3 * Microsoft SQL Server 2012 SP4   All editions of Microsoft SQL Server except LocalDB are supported.  The database whose logs you want to back up must use the Full or Bulk-logged recovery model. In this case, all changes of the Microsoft SQL Server state will be written to transaction logs, and you will be able to replay transaction logs to restore the Microsoft SQL Server. You can use the Microsoft SQL Server Management Studio to switch to one of these models. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-2017).  Restore of Microsoft SQL Server data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Configuring Staging SQL Server](vesql_configure_staging.md). |
 | Oracle on Windows OS | Veeam Backup & Replication supports backup of Oracle Database running on the following Microsoft Windows operating systems:  * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016  Veeam Backup & Replication supports backup of the following Oracle Database versions on Microsoft Windows machines:  * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c Release 2 * Oracle Database 12c Release 1 * Oracle Database 11g Release 2 |
 | Oracle on Linux OS | Veeam Backup & Replication supports backup of Oracle Database running on the following Linux distributions:  * RHEL 8.4 to 9.4 * SLES 12 SP5, 15 SP3 or later * Oracle Linux 7 (UEK3) to 9 (UEK R7) * Oracle Linux 7 to 9 (RHCK)  Veeam Backup & Replication supports backup of the following Oracle Database versions on Linux machines:  * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c Release 2 * Oracle Database 12c Release 1 * Oracle Database 11g Release 2 |
 | Oracle Database configuration | Consider the following:   * Automatic Storage Management (ASM) is supported for Oracle 11g and later; requires ASMlib present.  * Oracle Real Application Clusters (RAC) are not supported within the image-level backup functionality. Use Veeam Plug-In for Oracle RMAN. For details, see [Veeam Plug-In for Oracle RMAN](rman_plugin.md). * Oracle Database Express Edition (XE) is supported for Windows-based machines only.  * [For Microsoft Windows-based Oracle machines] Configurations with different versions of Oracle Database deployed on the same server are not supported.  * To create Oracle database backups, all Oracle servers that use Data Guard must be added to the backup job. * You can use Veeam Plug-In for Oracle RMAN to integrate RMAN with Veeam Backup & Replication repositories. For details, see the [Veeam Plug-In for Oracle RMAN](rman_plugin.md) section. |
@@ -239,16 +241,6 @@ The following object storage sources are supported:
 * Microsoft Azure Blob storage
 * Azure Data Lake Gen2 storage (HNS)
 * S3-compatible object storage
-
-Requirements and Limitations for Object Storage
-
-Consider the following limitations for object storage added as a source of unstructured data:
-
-* Veeam Backup & Replication does not support backup from and restore to the following types of Azure Blob Storage: Azure Data Box Storage, Azure Stack Edge.
-* Veeam Backup & Replication does not support backup from and restore to AWS Snowball Edge Storage.
-* Veeam Backup & Replication does not support backup from and restore to Veeam Data Cloud Vault.
-
-For more information on unstructured data backup, see the [Unstructured Data Backup](unstructured_data_backup.md) section.
 
 File Shares
 
@@ -340,6 +332,6 @@ Consider the following requirements and limitations:
 * [For VMware vSphere] VMware NSX-T 3.0 or later is supported with VDS for VMware vSphere and VMware Cloud on AWS/Dell.
 * [For VMware vSphere] VMware NSX-V is supported (see details on the support of vSphere and VMware Cloud version in [VMware vSphere Virtual Infrastructure](#vm_virt_infrastructure)).
 
-Page updated 1/7/2026
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

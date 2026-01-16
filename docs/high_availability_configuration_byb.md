@@ -1,7 +1,9 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_configuration_byb.html"
-last_updated: "12/17/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -31,7 +33,7 @@ To configure Linux-based servers that you plan to use as HA nodes and the HA net
 | Important |
 | If you use Kerberos authentication, you must reserve a static IP address for the cluster within the same network as the Kerberos Key Distribution Center (KDC). |
 
-1. Configure your HA cluster DNS name to resolve to the HA cluster IP address.
+1. Configure the HA cluster DNS name to resolve to the HA cluster IP address.
 2. [For Kerberos authentication] Join both Linux-based servers to a domain where Kerberos authentication is configured. For more information, see [Managing Domain Settings](hmc_configure_domain.md).
 
 Enabling High Availability
@@ -42,7 +44,7 @@ To submit the request, do the following:
 
 1. Log in to the [Veeam Host Management web UI](hmc_access.md).
 2. In the management pane, click Backup Infrastructure.
-3. In the High Availability section, click Submit Request:
+3. In the High Availability section, click Submit Request.
 
 + If you did not configure the [Security Officer](deployment_linux_iso_install_security_officer.md) account during the Veeam Software Appliance installation, the request is approved automatically.
 + If you configured the Security Officer account, you must wait until the security officer approves your request. This approval expires in 8 hours; ensure that you assemble the cluster within this period.
@@ -74,7 +76,7 @@ To create the .keytab file, do the following:
 | --- |
 | New-ADComputer -Name <account name> -AccountPassword (ConvertTo-SecureString "<account password>" -AsPlainText -Force) -KerberosEncryptionType AES256 -PasswordNeverExpires $true -ServicePrincipalNames HOST/<DNS cluster hostname>,HOST/<DNS cluster hostname>.<domain name> |
 
-1. On your Domain Controller (DC), generate the .keytab file. For information on the parameters, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ktpass#parameters).
+1. On your Domain Controller (DC), generate the .keytab file. For more information on the parameters, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ktpass#parameters).
 
 |  |
 | --- |
@@ -93,6 +95,6 @@ Keytab Files Examples
 | --- | --- |
 | This command generates the .keytab file using UPN.  |  | | --- | | ktpass -princ my-ha-cluster-acc$@DOMAIN.LOCAL -mapuser DOMAIN\my-ha-cluster-acc -crypto AES256-SHA1 -ptype KRB5\_NT\_PRINCIPAL -pass password123 -setPass -setUpn -out custom.keytab |  Specify the following parameters:   * Specify the Kerberos principal name for which the .keytab file is generated. Provide the princ parameter value in the host/computer.tech.com@DOMAIN.LOCAL format. Note: This parameter is case-sensitive. * Specify the Kerberos principal to associate with a user or computer account. Provide the mapuser parameter value in the DOMAIN\my-ha-cluster-acc format. * Specify the encryption type key that is generated in the .keytab file. Set the AES256-SHA1 value for the crypto parameter. * Specify the principal type. Set the KRB5\_NT\_PRINCIPAL value for the ptype parameter. * Specify the password for the principal user name. This password is used to generate the key in the .keytab file. Set the password123 value for the pass parameter. Note: Use the asterisk sign (\*) to prompt for a password. * Set the ktpass command to use the password specified in the pass on the user account in Active Directory. Provide the setPass parameter.  * Set the UPN on the account to match the SPN. Provide the setUpn parameter.  * Specify the name of the .keytab file that you want to generate. Set the custom .keytab value for the out parameter. |
 
-Page updated 12/17/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071

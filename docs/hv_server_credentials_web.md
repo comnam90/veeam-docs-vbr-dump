@@ -1,7 +1,9 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_credentials_web.html"
-last_updated: "10/16/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -46,6 +48,6 @@ The option applies if the Hyper-V host also performs the role of the onhost back
 
 To update the network port, select a component in the list of Veeam Backup & Replication components and click Edit.
 
-Page updated 10/16/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

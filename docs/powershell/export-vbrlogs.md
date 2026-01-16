@@ -1,7 +1,9 @@
 ---
 title: "Export-VBRLogs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/export-vbrlogs.html"
-last_updated: "10/24/2025"
+last_updated: "1/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -63,7 +65,7 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Export-VBRLogs -ScaleOutRepository <CExtendableRepository[]> -FolderPath <String> [-Compress] [-From <DateTime>] [-To <DateTime>] [-Wait] [-LastDays <Int32>]  [<CommonParameters>] |
+| Export-VBRLogs -ScaleOutRepository <CExtendableRepository[]> -FolderPath <String> [-Compress] [-Wait] [-LastDays <Int32>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -137,6 +139,6 @@ Related Commands
 * [Get-VBRSureBackupJob](get-vbrsurebackupjob.md)
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 10/24/2025
+Page updated 1/12/2026
 
 Page content applies to build 13.0.1.1071

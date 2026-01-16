@@ -1,7 +1,9 @@
 ---
 title: "How GFS File and Object Storage Backup to Tape Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_file_to_tape_hiw.html"
-last_updated: "10/2/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,6 +34,6 @@ Consider the following:
 * If you use the Daily media set, after creating or enabling a tape job it will be started within an hour even if the scheduled start time has already passed.
 * If you disable the GFS tape job manually for some period, all backups for that period will be skipped from processing.
 
-Page updated 10/2/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

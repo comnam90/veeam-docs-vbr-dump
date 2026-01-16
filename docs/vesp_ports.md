@@ -1,7 +1,9 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_ports.html"
-last_updated: "1/5/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,6 +34,6 @@ For more information on the ports used during backup, see the following sections
 | Note |
 | To restore database items or lists to a server that is running in a DMZ, the SharePoint web application ports will be used. |
 
-Page updated 1/5/2026
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

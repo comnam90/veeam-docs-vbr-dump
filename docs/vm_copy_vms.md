@@ -1,7 +1,9 @@
 ---
 title: "Step 3. Select VMs to Copy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vms.html"
-last_updated: "6/3/2024"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,6 +29,6 @@ The initial size of VMs and VM containers added to the VM copy job is displayed 
 
 ![Step 3. Select VMs to Copy](images/vm_copy_job_add_vms.webp)
 
-Page updated 6/3/2024
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071
