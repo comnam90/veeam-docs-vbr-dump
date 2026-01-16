@@ -1,7 +1,9 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_requirements.html"
-last_updated: "11/28/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -51,8 +53,8 @@ A computer with databases you want to protect using Veeam Plug-In for Microsoft 
 
 | Specification | Requirement |
 | --- | --- |
-| OS | Veeam Plug-In for Microsoft SQL Server supports 64-bit versions of the following distributions:   * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Note:  Server Core installations of Microsoft Windows Server OSes are not supported. |
-| Microsoft SQL Server | Veeam Plug-In for Microsoft SQL Server supports the Standard, Developer, Web and Enterprise editions of the following Microsoft SQL Server versions:   * Microsoft SQL Server 2025 * Microsoft SQL Server 2022 * Microsoft SQL Server 2019 * Microsoft SQL Server 2017 * Microsoft SQL Server 2016 * Microsoft SQL Server 2014 SP3   Notes:   * Standalone Microsoft SQL Server are supported. * SQL Server Express edition is not supported. * Windows Server Failover Clusters are supported, both with shared disks and Cluster Shared Volumes (CSV). * Always On Availability Groups, Always On Clusterless Availability Groups and Always On Failover Cluster Instances are supported. |
+| OS | Veeam Plug-In for Microsoft SQL Server supports 64-bit versions of the following distributions:   * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Note. Server Core installations of Microsoft Windows Server OSes are not supported. |
+| Microsoft SQL Server | Veeam Plug-In for Microsoft SQL Server supports the Standard, Developer, Web and Enterprise editions of the following Microsoft SQL Server versions:   * Microsoft SQL Server 2025 * Microsoft SQL Server 2022 * Microsoft SQL Server 2019 * Microsoft SQL Server 2017 * Microsoft SQL Server 2016 * Microsoft SQL Server 2014 SP3  Notes:   * Standalone Microsoft SQL Servers are supported. * SQL Server Express edition is not supported. * Windows Server Failover Clusters are supported, both with shared disks and Cluster Shared Volumes (CSV).  * Always On availability groups, Always On clusterless availability groups and Always On failover cluster instances are supported. Contained availability groups and distributed availability groups are not supported. |
 
 Veeam Backup & Replication
 
@@ -81,6 +83,6 @@ Network
 
 Veeam Plug-In must be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway.
 
-Page updated 11/28/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071

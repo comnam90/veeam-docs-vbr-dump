@@ -1,7 +1,9 @@
 ---
 title: "Forward Incremental Backup Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_incremental_hv.html"
-last_updated: "8/28/2025"
+last_updated: "1/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -9,7 +11,7 @@ product_version: "13.0.1.1071"
 
 In this article
 
-To be able to restore from a forward incremental backup, you need to have a full backup file and a chain of subsequent incremental backup files on disk. If you delete a full backup file, the whole chain of incremental backup files will become useless. Similarly, if you delete any incremental backup file before the point to which you want to roll back, you won’t be able to restore VM data (since later incremental backup files depend on earlier incremental backup files).
+To be able to restore from a forward incremental backup, you need to have a full backup file and a chain of subsequent incremental backup files on disk. Note that the administrator must schedule full backups (synthetic or active) in the job settings. Veeam Backup & Replication does not create full backups automatically based on retention limits. If you delete a full backup file, the entire chain of incremental backup files will become useless. Similarly, if you delete any incremental backup file before the point to which you want to roll back, you will not be able to restore VM data (since later incremental backup files depend on earlier incremental backup files).
 
 For this reason, if you select the forward incremental backup method, on some days, there will be more restore points on disk than specified by retention policy settings. Veeam Backup & Replication will remove the full backup chain only after the last incremental backup file in the chain becomes outdated.
 
@@ -27,6 +29,6 @@ Related Topics
 
 [Creating Backup Jobs](backup_job_hv.md)
 
-Page updated 8/28/2025
+Page updated 1/12/2026
 
 Page content applies to build 13.0.1.1071

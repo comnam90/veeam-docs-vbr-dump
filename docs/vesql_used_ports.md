@@ -1,7 +1,9 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_used_ports.html"
-last_updated: "12/22/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,6 +31,6 @@ For information on the ports that must be opened when working with backups creat
 | Target machine with Microsoft SQL Server, staging server | Mount server associated with the backup repository | TCP | 3260 to 3270 | Port range opened by Veeam Backup & Replication to manage iSCSI traffic during restore to the target machine.  This port range is opened only during application item restore.  For more information, see [How Mounting Works](vesql_mount_operations.md). |
 | Backup repository | TCP | 6162 or 2500 to 3300 | These ports are used by the Veeam Agent persistent component deployed on the target or staging server and only during transaction log restore.  Port 6162 is used to connect to the Veeam Data Mover Service (for Windows-based backup servers) or Veeam Transport Service (for Linux-based backup servers).  The 2500 to 3300 port range is the default port range for data transfer over the network.  For more information on the components used during data recovery, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md). |
 
-Page updated 12/22/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

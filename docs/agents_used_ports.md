@@ -1,7 +1,9 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_used_ports.html"
-last_updated: "1/8/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -37,8 +39,8 @@ Communication Between Veeam Backup & Replication Components
 | TCP | 6160, 11731 | Ports used for the volume-level restore. |
 | TCP | 6162 | Default port used by the Veeam Data Mover. |
 | TCP | 5985 | Port used in the following cases:   * retrieving of Windows Failover Cluster configuration * creating WMI queries by Veeam Backup & Replication on Linux. WMI queries are mandatory for backing up failover clusters and perform file-level restore and optional for faster Veeam Agent deployment. |
-| Veeam Agent computer (Linux) | TCP | 22,  6160,  6162 | Port 22 is used to establish an SSH connection from the Veeam Backup Server to the Veeam Agent computer.  Ports 6160 and 6162 are used for default connection to the Veeam Agent computer using Veeam Deployer Service and Veeam Transport Service.  Note:You can customize ports 6160 and 6162 using registry keys. To learn more, see [this Veeam KB article](https://www.veeam.com/kb4519).  If the backup repository server role and the mount server role are assigned to different servers in your infrastructure, you must open ports described in section [Mount Server Connections](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#mount-server-connections). |
-| TCP | 6162 | Default port used by the Veeam Data Mover.  Note:You can customize port 6162 using registry keys. To learn more, see [this Veeam KB article](https://www.veeam.com/kb4519). |
+| Veeam Agent computer (Linux) | TCP | 22,  6160,  6162 | Port 22 is used to establish an SSH connection from the Veeam Backup Server to the Veeam Agent computer.  Ports 6160 and 6162 are used for default connection to the Veeam Agent computer using Veeam Deployer Service and Veeam Transport Service.  Note:You can customize ports 6160 and 6162. To learn more, see [this Veeam KB article](https://www.veeam.com/kb4519).  If the backup repository server role and the mount server role are assigned to different servers in your infrastructure, you must open ports described in section [Mount Server Connections](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#mount-server-connections). |
+| TCP | 6162 | Default port used by the Veeam Data Mover.  Note:You can customize port 6162. To learn more, see [this Veeam KB article](https://www.veeam.com/kb4519). |
 | TCP | 2500 to 3300 | Default range of ports used for communication between Veeam Agent components during data transmission. For every TCP connection that a backup job uses, one port from this range is assigned.  Note: Ports 2500 – 3300 are required if during data transmission, the Veeam Data Mover Service is started on the Veeam backup server — for example, when the backup is targeted at the default backup repository of the Veeam backup server or when Veeam backup server acts as a gateway to the target backup repository. |
 | Veeam Agent computer (Unix) | TCP | 22 | Port 22 is used to establish an SSH connection from the Veeam Backup Server to the Veeam Agent computer. |
 | TCP | 2500 to 3300 | Default range of ports used for communication between Veeam Agent components during data transmission. For every TCP connection that a backup job uses, one port from this range is assigned.  Note: Ports 2500 – 3300 are required if during data transmission, the Veeam Data Mover Service is started on the Veeam backup server — for example, when the backup is targeted at the default backup repository of the Veeam backup server or when Veeam backup server acts as a gateway to the target backup repository. |
@@ -135,6 +137,6 @@ The following table describes network ports that must be opened to ensure proper
 | TCP | 636 | LDAPS (Secure LDAP) connections. |
 | DNS server with forward/reverse name resolution of all backup servers | TCP | 53 | Port used for communication with the DNS Server. |
 
-Page updated 1/8/2026
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

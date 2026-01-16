@@ -1,7 +1,9 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compatible_glacier_settings.html"
-last_updated: "8/8/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,6 +32,6 @@ Note that you must create the bucket where you want to store your backup data be
 
 ![Step 4. Specify Object Storage Settings](images/compatible_glacier_bucket.webp)
 
-Page updated 8/8/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

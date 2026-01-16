@@ -1,7 +1,9 @@
 ---
 title: "vsphere_plugin_uninstalling"
+product: "vbr"
+doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vsphere_plugin_uninstalling.html"
-last_updated: "1/2/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,6 +19,6 @@ To uninstall Veeam Plug-in for VMware vSphere Client, take the following steps:
 5. In the displayed window, click Yes to confirm the removal.
 6. To finish the uninstallation, restart the vSphere Client service on the vCenter Server.
 
-Page updated 1/2/2026
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071
