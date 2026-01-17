@@ -1,7 +1,9 @@
 ---
 title: "Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_failover.html"
-last_updated: "11/14/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +17,7 @@ Failover Limitations
 
 Before you perform a failover, consider the following limitations:
 
-* Before you initiate a failover, ensure that the primary node is offline and will not revert to online status during the failover. Otherwise, it may lead to the split-brain scenarios.
+* Before you initiate a failover, ensure that the primary node is offline and will not revert to online status during the failover. Otherwise, it may lead to split-brain scenarios.
 * Kerberos authentication is not supported during failover to the secondary node. You must specify credentials in plain text.
 * Veeam Backup & Replication does not support automatic failover of an HA cluster.
 
@@ -24,7 +26,7 @@ Before you perform a failover, consider the following limitations:
 
 How Failover of High Availability Cluster Works
 
-After you initiate a failover, Veeam Backup & Replication performs the following:
+After you initiate a failover, the following steps are performed:
 
 1. Veeam Backup & Replication updates the node database configuration.
 2. Veeam Backup & Replication assigns the role of the primary node to the secondary node.
@@ -45,13 +47,13 @@ After the failover completes, you can follow one of these scenarios to reconfigu
 
 Split Brain Resolution Algorithm
 
-To prevent this split brain scenario, Veeam Backup & Replication uses the following algorithm:
+To prevent the split-brain scenario, Veeam Backup & Replication uses the following algorithm:
 
 1. The former primary node is back up and running.
 2. The former primary node requests the update from the new primary node about its state.
 3. The new primary node notifies that it has been assigned the role of primary node and informs the former primary node that it is now the secondary node.
 4. Veeam Backup & Replication on the new secondary node updates the configuration and starts operating as the secondary node.
 
-Page updated 11/14/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071

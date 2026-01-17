@@ -1,7 +1,9 @@
 ---
 title: "High Availability (HA) Cluster"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_cluster.html"
-last_updated: "11/12/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -11,7 +13,7 @@ In this article
 
 The High Availability (HA) cluster is a solution that is designed to ensure continuous availability and minimize downtime of the backup server by clustering two backup servers. The HA cluster addresses the need for resilience and operational continuity of the Veeam Backup & Replication infrastructure. HA cluster guarantees continuous operation by replicating your backup server, ensuring uninterrupted service.
 
-An HA cluster consists of two nodes with continuous replication between these nodes: the primary node handles all backup and replication tasks, while the secondary stands by to take over if needed. In case the primary node experiences downtime or you need to take it down for hardware maintenance, you can use one of the following operations to switch the role of the primary node to the secondary node:
+The HA cluster consists of two nodes with continuous replication between these nodes. The primary node handles all backup and replication tasks, while the secondary stands by to take over if needed. In case the primary node experiences downtime or you need to take it down for hardware maintenance, you can use one of the following operations to switch the role of the primary node to the secondary node:
 
 * Switchover —  An operation that you may want to run when both HA nodes are in an operational state and synchronized with each other, but you need to perform operations that will require downtime for the primary node, such as hardware maintenance.
 * Failover — An operation necessary when your primary node is not available due to an unexpected outage. In this case, you can perform a failover to promote the secondary node to the primary node role and resume working with the backup server without significant interruption.
@@ -33,6 +35,6 @@ In This Section
 * [Failover](high_availability_failover.md)
 * [Managing High Availbility Cluster](high_availbilitu_cluster_management.md)
 
-Page updated 11/12/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071

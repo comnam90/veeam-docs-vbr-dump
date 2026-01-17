@@ -1,7 +1,9 @@
 ---
 title: "Veeam Data Mover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_transport_service.html"
-last_updated: "11/19/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -45,6 +47,6 @@ For a hardened repository, when you add a Linux server with single-use credentia
 | Tip |
 | If Veeam Data Mover on a Linux server fails for some reason, you can re-install it manually. For more information, see [this Veeam KB article](https://www.veeam.com/kb4298). |
 
-Page updated 11/19/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

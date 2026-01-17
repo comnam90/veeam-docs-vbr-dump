@@ -1,7 +1,9 @@
 ---
 title: "Solution Architecture"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_architecture.html"
-last_updated: "12/17/2025"
+last_updated: "1/16/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -42,8 +44,8 @@ A cache repository is a storage location where Veeam Backup for Microsoft Entra 
 | Tip |
 | To minimize network load during backup operations, it is recommended that you configure the cache repository to be located closer to the backup server in the computer network. |
 
-![Solution Architecture](images/architecture.webp "Select Restore Point")
+[![Launch Audit Log Restore](images/architecture.webp)](images/architecture.webp "Launch Audit Log Restore")
 
-Page updated 12/17/2025
+Page updated 1/16/2026
 
 Page content applies to build 13.0.1.1071

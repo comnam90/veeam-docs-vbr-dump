@@ -1,7 +1,9 @@
 ---
 title: "Configuring Users"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_users.html"
-last_updated: "11/18/2025"
+last_updated: "1/14/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,8 +27,8 @@ The following table describes roles you can assign to the local users.
 | --- | --- |
 | Host Administrator | Can perform all administrative activities in the Veeam Host Management web UI and TUI:   * Configure network settings * Configure server time settings * Configure remote access settings * Manage users and roles * Configure backup infrastructure integrations * Manage software updates * Perform maintenance tasks   The default Host Administrator account is veeamadmin. |
 | Security Officer | Can perform the following operations in the Veeam Host Management web UI:   * Reset user passwords * Reset user multi-factor authentication * Manage authorization requests * Manage password recovery tokens  * Manage configuration backups * Export events   Security Officer does not have access to the Veeam Host Management TUI.  The default Security Officer account is veeamso. |
-| User | Has limited permissions to the system without access to the Veeam Host Management console. |
-| Service Account | Has limited permissions to the system without access to the Veeam Host Management console. |
+| User | Manages backup and restore operations in accordance with the assigned backup server role. Use this role to create backup console users when the Veeam Software Appliance is not joined to a domain.  User must reset their password at first sign-in.  Has limited permissions to the system and no access to the Veeam Host Management console. |
+| Service Account | Provides credentials for standalone backup agents and plug-ins to authenticate with the backup server.  Service Account cannot be used for interactive logons to management consoles and does not require password rotation.  Has limited permissions to the system and no access to the Veeam Host Management console. |
 
 |  |
 | --- |
@@ -113,6 +115,6 @@ For Security Officer accounts, multi-factor authentication cannot be disabled.
 
 [![Configuring Users](images/hmc_web_disable_mfa.webp)](images/hmc_web_disable_mfa.webp)
 
-Page updated 11/18/2025
+Page updated 1/14/2026
 
 Page content applies to build 13.0.1.1071

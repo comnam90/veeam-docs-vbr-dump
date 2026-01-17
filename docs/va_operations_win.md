@@ -1,7 +1,9 @@
 ---
 title: "Operations Available on Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations_win.html"
-last_updated: "11/4/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -92,7 +94,7 @@ Getting Support
 If you have any questions or want to share your feedback about Veeam Agent, you can use one of the following options:
 
 * Contact your Veeam backup administrator.
-* Search for the information on the necessary subject in the current Veeam Agent for Microsoft Windows User Guide.
+* Search for the information on the necessary subject in the current [Veeam Agent for Microsoft Windows User Guide](https://helpcenter.veeam.com/docs/agentforwindows/userguide/overview.html?ver=13).
 
 * Visit [Veeam R&D Forums](https://forums.veeam.com) and share your opinion or ask a question.
 
@@ -104,6 +106,6 @@ To access help and support options in Veeam Agent:
 
 ![Operations Available on Windows Computers](images/managed_support.webp "Get Support")
 
-Page updated 11/4/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

@@ -1,7 +1,9 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_before_you_begin.html"
-last_updated: "10/20/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -54,6 +56,6 @@ For the database server to store the configuration database, we recommend using 
 * Memory: Same as for the backup server. If the database server and the backup server are the same server, double the RAM.
 * Database Size: 850 MB for every 1 000 000 file and folder versions written to tape. A new file or folder version is created with each full backup run or if a file or folder was changed.
 
-Page updated 10/20/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

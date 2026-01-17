@@ -1,7 +1,9 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_ports.html"
-last_updated: "1/5/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,6 +28,6 @@ For more information on the ports used during backup, see the following sections
 | Mail server | TCP | 25, 587 or another port, 443 | Ports used for sending Microsoft Exchange items.  Port 25 is used by default, but you can specify another port in the settings. To use SSL data encryption, specify port 587.  Port 443 is also used and cannot be changed. |
 | Backup repository | TCP | 6162 or 2500 to 3300 | Ports used to manage the mounting process.  Port 6162 is the default port used to connect to the Veeam Data Mover Service (for Windows-based backup servers) or Veeam Transport Service (for Linux-based backup servers). If port 6162 cannot be reached, the first available port in the 2500 to 3300 range is used instead. |
 
-Page updated 1/5/2026
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071
