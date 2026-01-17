@@ -14,7 +14,7 @@ Markdown conversions of Veeam Backup & Replication documentation, optimized for 
 
 |                  |                                                      |
 | ---------------- | ---------------------------------------------------- |
-| **Source**       | https://helpcenter.veeam.com/docs/vbr/               |
+| **Source**       | https://helpcenter.veeam.com/docs/vbr/userguide/     |
 | **Last Updated** | 2025-01-15                                           |
 | **Maintainer**   | [@comnam90](https://github.com/comnam90)             |
 
