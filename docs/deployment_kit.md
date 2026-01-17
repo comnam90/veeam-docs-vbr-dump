@@ -1,15 +1,18 @@
 ---
 title: "Using Veeam Deployment Kit"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_kit.html"
-last_updated: "12/30/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Using Veeam Deployment Kit
 
-In this article
 
 The Veeam Deployment Kit is a package that enables certificate-based authentication for the backup infrastructure configuration. When the Deployment Kit is installed on a target server, Veeam Backup & Replication can authenticate using certificates instead of traditional user name and password credentials. The Deployment Kit can be used to connect to remote Microsoft Windows servers and to Veeam Agent computers that you plan to add to a protection group.
+
+The Deployment Kit installation is a prerequisite to use persistent agent components on protected Microsoft Windows VMs. For more information, see [Persistent Agent Components](persistent_agent_components.md).
 
 Deployment Kit Usage Scenarios
 
@@ -41,6 +44,7 @@ For the following components, you can manually install the Deployment Kit:
 * Hyper-V hosts
 * Microsoft Windows-based and Linux-based Veeam Agent computers
 * Guest Interaction proxies
+* Protected Microsoft Windows VMs (for persistent guest agent installation)
 
 How to Use the Veeam Deployment Kit
 
@@ -58,7 +62,7 @@ The Deployment Kit typically includes:
 * Authentication certificates
 * A sample service configuration script (InstallDeploymentKit.BAT) for automated installation
 
-1. [For Microsoft Windows managed servers] Install the Deployment Kit on the target remote host:
+1. [For Microsoft Windows managed servers and protected Microsoft Windows VMs] Install the Deployment Kit on the target remote host:
 
 * Automated installation (recommended):
 
@@ -92,6 +96,4 @@ Related Topics
 * [Adding Microsoft Windows Servers](add_windows_server.md)
 * [Guest Interaction Proxies](guest_interaction_proxy.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

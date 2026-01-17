@@ -1,13 +1,14 @@
 ---
 title: "How Backup to Tape Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_hiw.html"
-last_updated: "5/21/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Backup to Tape Works
 
-In this article
 
 When Veeam Backup & Replication executes a backup to tape job (started manually or on schedule), it performs the following operations:
 
@@ -30,6 +31,4 @@ For backup to tape jobs from [non-direct attached repositories](backup_repositor
 
 ![How Backup to Tape Works](images/tape_vm_backup.webp)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

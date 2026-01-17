@@ -1,0 +1,28 @@
+---
+title: "VEXItem"
+product: "vbr"
+doc_type: "explorers_powershell"
+source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/vexitem.html"
+last_updated: "2/4/2025"
+product_version: "13.0.1.1071"
+---
+
+# VEXItem
+
+
+Parent type of the following objects:
+
+* [VEXAppointmentItem](vexappointmentitem.md)
+* [VEXContactGroupItem](vexcontactgroupitem.md)
+* [VEXContactItem](vexcontactitem.md)
+* [VEXDiscussionItem](vexdiscussionitem.md)
+* [VEXJournalItem](vexjournalitem.md)
+* [VEXMessageItem](vexmessageitem.md)
+* [VEXNoteItem](vexnoteitem.md)
+* [VEXTaskItem](vextaskitem.md)
+
+Related Commands
+
+[Get-VEXItem](get-vexitem.md)
+
+

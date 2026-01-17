@@ -1,13 +1,14 @@
 ---
 title: "Step 5. Add Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/new_capacity_tier_web.html"
-last_updated: "1/5/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 5. Add Capacity Tier
 
-In this article
 
 Before you add a capacity tier, [check the prerequisites](capacity_tier_limitations.md).
 
@@ -59,6 +60,4 @@ Related Topics
 * [Data Transfer](capacity_tier_data_transfer.md)
 * [Health Check for Capacity Tier](hc_capacity_tier.md)
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071
