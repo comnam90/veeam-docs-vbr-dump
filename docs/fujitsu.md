@@ -1,13 +1,14 @@
 ---
 title: "Fujitsu ETERNUS CS800"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/fujitsu.html"
-last_updated: "11/19/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Fujitsu ETERNUS CS800
 
-In this article
 
 You can use Fujitsu ETERNUS CS800 deduplicating storage appliances as backup repositories.
 
@@ -107,6 +108,4 @@ Related Topics
 
 [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

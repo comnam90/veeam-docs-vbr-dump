@@ -1,13 +1,14 @@
 ---
 title: "Configuring Global SNMP Settings Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_snmp_settings_web.html"
-last_updated: "7/31/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Global SNMP Settings Using Web UI
 
-In this article
 
 To configure global SNMP settings, do the following in the Veeam Backup & Replication web UI:
 
@@ -23,6 +24,4 @@ To edit the existing server, use the check box before the required server name, 
 
 [![Configuring Global SNMP Settings Using Web UI](images/settings_snmp_servers.webp)](images/settings_snmp_servers.webp)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

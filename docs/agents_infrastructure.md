@@ -1,13 +1,14 @@
 ---
 title: "Veeam Agent Management Infrastructure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_infrastructure.html"
-last_updated: "11/28/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Veeam Agent Management Infrastructure
 
-In this article
 
 The Veeam Agent management infrastructure comprises the following components:
 
@@ -76,7 +77,7 @@ You must manually deploy Veeam Agent for Mac on the computer you want to protect
 
 Distribution Server
 
-The distribution server is an architecture component in the Veeam Agent management infrastructure used for automated deployment of Veeam Agent setup files to protected computers. When you instruct Veeam Backup & Replication to install Veeam Agent on a protected computer, the Veeam backup server communicates uses the distribution server to upload Veeam Agent setup files to the target computer.
+The distribution server is an architecture component in the Veeam Agent management infrastructure used for automated deployment of Veeam Agent setup files to protected computers. The distribution server comprises the Veeam Distribution Service. When you instruct Veeam Backup & Replication to install Veeam Agent on a protected computer, the Veeam backup server communicates uses the distribution server to upload Veeam Agent setup files to the target computer.
 
 By default, the role of the distribution server is assigned to the backup server itself. However, you can deploy a dedicated distribution server to reduce load on the backup server. To deploy a distribution server, you need to add a Windows-based or Linux-based server to Veeam Backup & Replication. To learn more, see [Adding Microsoft Windows Servers](add_windows_server.md) and [Adding Linux Servers](add_linux_server.md). After you assigned the role of distribution server, you need to select this server in the properties of a protection group. To learn more, see [Creating Protection Groups](protection_group_add.md).
 
@@ -117,6 +118,4 @@ Consider the following:
 * [For Azure Blob Storage] You cannot add a repository using the Microsoft Entra ID account.
 * [For Amazon S3 Storage] If you plan to use the Amazon S3 repository in the China region as a distribution repository, make sure that you have the ICP license. This license is required to create signed URLs for Amazon S3 repositories in the China region. For more information, see [AWS Documentation](https://docs.amazonaws.cn/aws/latest/userguide/s3.html).
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

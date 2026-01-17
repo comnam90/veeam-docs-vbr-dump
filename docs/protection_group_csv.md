@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Specify CSV File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_csv.html"
-last_updated: "11/4/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify CSV File
 
-In this article
 
 At the CSV File step of the wizard, specify a file that defines a list of computers that you want to add to the protection group. You must specify a list of computers in a file of the CSV or TXT format. The file must be created beforehand. To learn more, see [Preparing CSV File](#csv).
 
@@ -50,8 +51,6 @@ For example:
 |  |
 | --- |
 | IMPORTANT |
-| For correct import of the CSV file, make sure to use newline characters of the CR LF type. |
+| Consider the following:   * For correct import of the CSV file, make sure to use newline characters of the CR LF type. * If the file uses a UTF encoding, it should not include a Byte Order Mark (BOM) at the beginning of the file. |
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

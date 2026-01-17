@@ -1,22 +1,23 @@
 ---
 title: "FIPS Compliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/fips_compliance.html"
-last_updated: "11/7/2025"
+last_updated: "1/9/2026"
 product_version: "13.0.1.1071"
 ---
 
 # FIPS Compliance
 
-In this article
 
 Veeam Backup & Replication can be configured to run in a FIPS-compliant operation mode.
 
 When this mode is enabled:
 
-* Veeam Backup & Replication uses [platform-provided cryptographic APIs](communications_encryption.md#encryption_libraries) and the [Veeam Cryptographic Module](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4872).
+* Veeam Backup & Replication uses [platform-provided cryptographic APIs](communications_encryption.md#encryption_libraries) and the [Veeam Cryptographic Module](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4282).
 * NTLM is disabled. Kerberos is the only available domain authentication protocol.
 * Connections cannot be established with components that are not FIPS-compliant.
-* Self-tests are performed. For more information, see the Self-tests section of the [Veeam FIPS 140-2 Security Policy](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4872.pdf).
+* Self-tests are performed. For more information, see the Self-tests section of the [Veeam FIPS 140-2 Security Policy](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4282.pdf).
 
 |  |
 | --- |
@@ -42,6 +43,4 @@ To enable the FIPS-compliant operation mode:
 
 ![FIPS Compliance](images/fips_compliance.webp)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

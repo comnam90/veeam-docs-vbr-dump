@@ -1,13 +1,14 @@
 ---
 title: "Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_repository.html"
-last_updated: "12/11/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Object Storage Repositories
 
-In this article
 
 An object storage repository is a repository intended for long-term data storage and based on either a cloud solution or S3 compatible on-premises storage solutions.
 
@@ -104,6 +105,4 @@ In This Section
 * [Managing Object Storage Repositories](managing_object_storage_repo_data.md)
 * [Managing Object Storage Backups](managing_object_storage_backups.md)
 
-Page updated 12/11/2025
 
-Page content applies to build 13.0.1.1071

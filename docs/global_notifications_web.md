@@ -1,13 +1,14 @@
 ---
 title: "Specifying Global Notification Settings Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/global_notifications_web.html"
-last_updated: "11/14/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Specifying Global Notification Settings Using Web UI
 
-In this article
 
 In Veeam Backup & Replication web UI, you can configure Veeam Backup & Replication to automatically notify you about the following events:
 
@@ -42,6 +43,4 @@ To stop receiving notifications about support contract expiration, do the follow
 
 [![Specifying Global Notification Settings Using Web UI](images/settings_notifications.webp)](images/settings_notifications.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Dell Data Domain"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_dd.html"
-last_updated: "12/12/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Dell Data Domain
 
-In this article
 
 You can use Dell Data Domain storage systems with Data Domain Boost (DD Boost) as backup repositories.
 
@@ -102,6 +103,4 @@ Related Topics
 * [Accelerated Restore of Entire VM](dell_dd_accelerated_restore.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,21 +1,22 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_limitations.html"
-last_updated: "12/11/2025"
+last_updated: "1/16/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
-This section contains information on limitations for HA cluster.
+This section contains information on limitations for the HA cluster.
 
 General Limitations for HA Cluster
 
-Consider the following general limitations for HA cluster:
+Consider the following general limitations for the HA cluster:
 
-* To be able to use HA cluster, you must install the Veeam Data Platform Premium License. You must apply this license to the Veeam software appliance that you plan to use as the primary node. For more details about all license types, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
+* To be able to use the HA cluster, you must install the Veeam Data Platform Premium License. You must apply this license to the Veeam software appliance that you plan to use as the primary node. For more details about all license types, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 * Before you assemble the HA cluster, make sure that both nodes have the same DNS suffixes and correct DNS addresses. Otherwise, Veeam Backup & Replication will not be able to resolve infrastructure servers on both nodes.
 * Veeam Backup & Replication does not automatically install [Universal Storage API integrated systems](universal_storage_integration_api.md) on an HA cluster. You must install the necessary Universal Storage API integrated system plug-in on every node. For more information, see [Installing and Updating Plug-ins on Linux-Based Backup Server](storage_install_plugin_linux.md).
@@ -42,7 +43,7 @@ Consider the following general limitations for HA cluster:
 | You can use the  [Veeam Host Management console](hmc_about.md) to manage each HA node individually. |
 
 * Both HA nodes must have the same version of Veeam Backup & Replication installed.
-* You can use an already existing backup server as a primary node for your HA cluster. Do not use the backup server that you are already using as the secondary node. Otherwise, after you assemble the HA cluster, its configuration database will be deleted and replaced with the configuration database of the primary HA node.
+* You can use an existing backup server as a primary node for your HA cluster. Do not use the backup server that you are already using as the secondary node. Otherwise, after you assemble the HA cluster, its configuration database will be deleted and replaced with the configuration database of the primary HA node.
 * Before you [regenerate self-signed certificates](self_signed_tls.md), ensure that both cluster nodes are online and the cluster is fully functional. You will not be able to regenerate the certificates while one of the nodes is down.
 * The events that Veeam Backup & Replication writes and sends to the [syslog server](syslog_servers.md) do not contain events for the HA cluster reconfiguration and a failover.
 
@@ -50,8 +51,9 @@ Consider the following general limitations for HA cluster:
 
 Kerberos Environment Limitations for HA cluster
 
-Consider the following limitations for HA cluster with the Kerberos environment:
+Consider the following limitations for the HA cluster with the Kerberos environment:
 
+* Ensure that the cluster IP is allowed to communicate to the ports used for Kerberos authentication. For more information, see the [Ports](used_ports.md#kerberos) section.
 * To configure an HA cluster with Kerberos, follow these steps:
 
 1. Join both nodes to a domain where Kerberos authentication is configured. For more information, see [Managing Domain Settings](hmc_configure_domain.md).
@@ -70,25 +72,25 @@ Consider the following limitations for HA cluster with the Kerberos environment:
 
 HA Cluster Network Limitations
 
-Consider the following network limitations for HA cluster:
+Consider the following network limitations for the HA cluster:
 
 * Before you assemble the HA cluster, make sure that both nodes have the same DNS suffixes and correct DNS addresses. Otherwise, Veeam Backup & Replication will not be able to resolve infrastructure servers on both nodes. Ensure that the HA cluster hostname resolves to the correct IP by both HA nodes.
-* The machines that you use as Linux-based backup servers must allow inbound and outbound traffic on the ports listed in the [Ports](used_ports.md#copnfigurationdb) section.
-* HA cluster does not synchronize DNS suffixes between HA nodes. You must add the suffixes for both nodes in the [Veeam Host Management console](hmc_about.md).
+* The machines that you use as Linux-based backup servers must allow inbound and outbound traffic on the ports listed in the [Ports](used_ports.md#copnfigurationdb) section. Ensure that these ports are opened for the cluster IP to enable proper cluster operations.
+* The HA cluster does not synchronize DNS suffixes between HA nodes. You must add the suffixes for both nodes in the [Veeam Host Management console](hmc_about.md).
 
-* You must use static IP addresses for HA nodes and for a cluster virtual IP address.
+* You must use static IP addresses for the HA nodes and for a cluster virtual IP address.
 
 * The hosts that you plan to use as the HA nodes must be in the same subnet.
-* After you disassemble your HA cluster, the static IP address of a cluster remains assigned to the HA primary node.
+* After you disassemble your HA cluster, the static IP address of the cluster remains assigned to the HA primary node.
 
 * If you want to include the DNS name of the HA cluster in the self-signed certificate, you must regenerate this certificate after you assemble the cluster. After that, the cluster DNS name will be added to the alternative names. Ensure that both cluster nodes are online and the cluster is fully functional.
 
-* Ensure that the TCP protocol is opened on both primary and secondary nodes. Otherwise, Veeam Backup & Replication will not be able to send WAL logs of PostgreSQL database to the secondary node.
+* Ensure that the TCP protocol is opened on both primary and secondary nodes. Otherwise, Veeam Backup & Replication will not be able to send WAL logs of the PostgreSQL database to the secondary node.
 * Ensure that you use only one type of IP address—either IPv4 or IPv6—for the HA cluster configuration. If you configure HA cluster with a mix of both IPv4 and IPv6 addresses, the HA cluster will not operate.
 
 HA Cluster Configuration Database Limitations
 
-Consider the following configuration database limitations for HA cluster:
+Consider the following configuration database limitations for the HA cluster:
 
 * HA cluster supports only PostgreSQL as a configuration database.
 * You cannot assemble an HA cluster if your Linux-based backup servers have PostgreSQL databases configured on a remote host. HA cluster supports only PostgreSQL databases configured on a local host of the HA node.
@@ -98,7 +100,7 @@ Consider the following configuration database limitations for HA cluster:
 
 HA Cluster Synchronization Limitations
 
-Consider the following synchronization limitations for HA cluster:
+Consider the following synchronization limitations for the HA cluster:
 
 * Veeam Backup & Replication synchronizes job scripts, pre-freeze and post-thaw scripts only if they are located in the /var/lib/veeam/scripts directory. Currently, it is not possible to synchronize scripts from the different directories.
 * Veeam Backup & Replication does not synchronize Veeam appliance users between nodes of an HA cluster. If you plan to use several users to manage your HA cluster, you must create these users on each HA node. For more information on creating users, see [Configuring Users](hmc_configure_users.md).
@@ -114,7 +116,7 @@ HA Cluster Failover Limitations
 
 Before you perform a failover, consider the following limitations:
 
-* Before you initiate a failover, ensure that the primary node is offline and will not revert to online status during the failover. Otherwise, it may lead to the split-brain scenarios.
+* Before you initiate a failover, ensure that the primary node is offline and will not revert to online status during the failover. Otherwise, it may lead to split-brain scenarios.
 * Kerberos authentication is not supported during failover to the secondary node. You must specify credentials in plain text.
 * Veeam Backup & Replication does not support automatic failover of an HA cluster.
 
@@ -125,7 +127,7 @@ HA Cluster Switchover Limitations
 
 Before you perform a switchover, consider the following limitations:
 
-* It is crucial to prevent any scenario where either the primary or secondary node becomes offline (for example, due to power loss or network connectivity issues) during the switchover process. If either node becomes and remains offline for the entire duration of the switchover, the HA cluster will be unable to recover. If this happens, contact [Veeam Customer Support](https://www.veeam.com/support.html).
+* It is crucial to prevent any scenario where either the primary or secondary node becomes offline (for example, due to power loss or network connectivity issues) during the switchover process. If either node goes and remains offline for the entire duration of the switchover, the HA cluster will be unable to recover. If this happens, contact [Veeam Customer Support](https://www.veeam.com/support.html).
 * Veeam Backup & Replication does not support an automatic switchover of an HA cluster.
 * During a switchover, Veeam Backup & Replication stops all jobs and services.
 
@@ -135,9 +137,7 @@ Disassembling HA Cluster Limitations
 
 Before you disassemble an HA cluster, consider the following limitations:
 
-* By default, you cannot use the secondary node as a standalone backup server after you disassemble an HA cluster since it still contains the configuration files and certificates. To use it as a standalone backup server, you must [reinstall Veeam Infrastructure Appliance](linux_infrastructure_appliance_install.md).
+* By default, you cannot use the secondary node as a standalone backup server after you disassemble an HA cluster, since it still contains the configuration files and certificates. To use it as a standalone backup server, you must [reinstall Veeam Infrastructure Appliance](linux_infrastructure_appliance_install.md).
 * If you disassemble an HA cluster, you can use the secondary node again in the same cluster.
 
-Page updated 12/11/2025
 
-Page content applies to build 13.0.1.1071

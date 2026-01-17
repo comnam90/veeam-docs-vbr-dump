@@ -1,13 +1,14 @@
 ---
 title: "Veeam Backup & Replication Console UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_ui.html"
-last_updated: "10/22/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Veeam Backup & Replication Console UI
 
-In this article
 
 The user interface of Veeam Backup & Replication desktop application is designed to let you quickly find commands that you need and perform data protection and disaster recovery tasks.
 
@@ -225,6 +226,4 @@ Related Topics
 
 [Changing Color Theme](change_color_theme.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071
