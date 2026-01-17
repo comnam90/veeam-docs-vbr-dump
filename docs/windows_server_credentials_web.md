@@ -1,19 +1,20 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/windows_server_credentials_web.html"
-last_updated: "8/7/2025"
+last_updated: "1/14/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify authentication settings for the Microsoft Windows server.
 
 1. Select one of the two authentication methods:
 
-* Connect using local administrator credentials — this method uses the standard Windows Kerberos authentication protocol. It is recommended for environments with Active Directory or where traditional authentication is required. For more information, see [Kerberos Authentication](kerberos_authentication.md).
+* Connect using admin credentials — this method uses the standard Windows Kerberos authentication protocol. It is recommended for environments with Active Directory or where traditional authentication is required. For more information, see [Kerberos Authentication](kerberos_authentication.md).
 
 From the Credentials list, select credentials for the account that has administrator privileges described in section [Permissions](required_permissions.md#rphost). If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add the credentials. For more information, see [Credentials Manager](credentials_manager.md).
 
@@ -39,6 +40,4 @@ The option applies if one of the following roles is assigned to the server: sour
 
 [![Step 3. Specify Credentials](images/add_server_windows_ports_web.webp)](images/add_server_windows_ports_web.webp)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

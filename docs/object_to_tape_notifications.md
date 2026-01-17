@@ -1,13 +1,14 @@
 ---
 title: "Notifications Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_notifications.html"
-last_updated: "6/27/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Notifications Settings
 
-In this article
 
 To specify notification settings for the backup job:
 
@@ -45,6 +46,4 @@ Select the occasions on which you want to receive email notifications:
 
 ![Notifications Settings](images/object_tape_job_options_notifications.webp)
 
-Page updated 6/27/2025
 
-Page content applies to build 13.0.1.1071

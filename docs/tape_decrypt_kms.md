@@ -1,13 +1,14 @@
 ---
 title: "Decrypting Tapes with KMS Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_decrypt_kms.html"
-last_updated: "1/9/2026"
+last_updated: "1/16/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Decrypting Tapes with KMS Keys
 
-In this article
 
 Tapes can be decrypted automatically or manually.
 
@@ -51,6 +52,4 @@ For more information, see [How Double Data Encryption Works](encryption_tape.md#
 * If you cannot use KMS keys due to a KMS server failure, you can issue a request to Veeam Backup Enterprise Manager and restore data from encrypted tapes using Enterprise Manager keys. This option works only if the password loss protection is enabled. For more information, see [Decrypting Tapes With Enterprise Manager Keys](tape_decrypt_no_password.md).
 * If the imported tape is a part of a backup set but is not the last tape in this set, after you decrypt the type media, perform catalogization once again.
 
-Page updated 1/9/2026
 
-Page content applies to build 13.0.1.1071

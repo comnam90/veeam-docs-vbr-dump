@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_credentials.html"
-last_updated: "10/16/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials for the Microsoft Hyper-V server.
 
@@ -48,6 +49,4 @@ The option applies if the Hyper-V host also performs the role of the onhost back
 
 ![Step 3. Specify Credentials](images/add_server_hv_ports.webp)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071
