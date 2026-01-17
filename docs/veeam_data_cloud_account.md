@@ -1,7 +1,9 @@
 ---
 title: "Step 3. Specify Veeam Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account.html"
-last_updated: "11/20/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -51,6 +53,6 @@ By default, the role of a gateway server is assigned to the Veeam Backup & Repli
 
 ![Step 3. Specify Veeam Account](images/veeam_vault_account.webp)
 
-Page updated 11/20/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

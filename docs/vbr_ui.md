@@ -1,7 +1,9 @@
 ---
 title: "Veeam Backup & Replication Console UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_ui.html"
-last_updated: "10/22/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -225,6 +227,6 @@ Related Topics
 
 [Changing Color Theme](change_color_theme.md)
 
-Page updated 10/22/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

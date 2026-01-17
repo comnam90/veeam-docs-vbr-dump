@@ -1,7 +1,9 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_used_ports.html"
-last_updated: "1/5/2026"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,6 +22,6 @@ The following table lists network ports that must be opened for managing traffic
 | TCP | 2500 to 3300 | Default range of ports used for managing data transfer during restore to the original (remote) machine or another Linux machine with MongoDB. |
 | Target Linux machine with MongoDB | Backup repository | TCP | 6162 or 2500 to 3300 | Ports used for managing data transfer during restore to the original (remote) machine or another Linux machine with MongoDB.  Port 6162 is the default port used to connect to the Veeam Data Mover Service (for Windows-based backup servers) or Veeam Transport Service (for Linux-based backup servers). If port 6162 cannot be reached, the first available port in the 2500 to 3300 range is used instead. |
 
-Page updated 1/5/2026
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

@@ -1,7 +1,9 @@
 ---
 title: "Step 5. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_mount_server_web.html"
-last_updated: "9/25/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -37,6 +39,6 @@ To configure the mount server settings:
 
 [![Step 5. Specify Mount Server Settings](images/linux_repo_mount_server_web.webp)](images/linux_repo_mount_server_web.webp)
 
-Page updated 9/25/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

@@ -1,7 +1,9 @@
 ---
 title: "Step 6. Specify Secure Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_secure.html"
-last_updated: "11/18/2025"
+last_updated: "1/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -43,6 +45,6 @@ This option is available if you configured a third-party antivirus as the detect
 
 ![Step 6. Specify Secure Restore Settings](images/agent_volume_restore_secure.webp "Specify Secure Restore Settings")
 
-Page updated 11/18/2025
+Page updated 1/9/2026
 
 Page content applies to build 13.0.1.1071

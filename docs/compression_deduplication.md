@@ -1,7 +1,9 @@
 ---
 title: "Data Compression and Deduplication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compression_deduplication.html"
-last_updated: "11/25/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -95,6 +97,6 @@ To change data block size for backup copy jobs, you must perform the following a
 2. Create an active full backup with the initial backup job.
 3. Create an active full backup with the backup copy job.
 
-Page updated 11/25/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

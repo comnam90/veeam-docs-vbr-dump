@@ -1,7 +1,9 @@
 ---
 title: "Step 3. Choose Objects to Archive"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_objects.html"
-last_updated: "4/10/2024"
+last_updated: "1/16/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -52,15 +54,15 @@ To specify filters:
 * Use the Object by tag option to exclude prefixes and object with a specific tag. Specify the tag name and value in the Exclude object by tag window and click OK.
 * Use the Bucket by tag option to exclude buckets and containers with specific metadata. Specify the metadata name and value in the Exclude bucket by tag window and click OK.
 
-If you want to reuse the inclusion and exclusion settings in the future, you can save them to an XML file. Click Export these filters at the bottom of the Include and exclude masks window and specify the location for the file. When it is necessary to use the same inclusion and exclusion settings again for a new job, click Import existing list and browse to the file location. Veeam Backup & Replication will import the masks and display them in the Include and exclude masks window.
-
 |  |
 | --- |
 | Note |
-| The Exclude masks field has priority over the Include masks field. If you add a bucket to the Include masks field, and an object within this bucket is listed in the Exclude masks field, the object will be excluded from the job. |
+| Consider the following:   * The Veeam directory is automatically added to the list of excluded prefixes. It excludes all backup files created by other backup jobs targeted at this object storage.  * The Exclude masks field has priority over the Include masks field. If you add a bucket to the Include masks field, and an object within this bucket is listed in the Exclude masks field, the object will be excluded from the job. |
+
+If you want to reuse the inclusion and exclusion settings in the future, you can save them to an XML file. Click Export these filters at the bottom of the Include and exclude masks window and specify the location for the file. When it is necessary to use the same inclusion and exclusion settings again for a new job, click Import existing list and browse to the file location. Veeam Backup & Replication will import the masks and display them in the Include and exclude masks window.
 
 ![Step 3. Choose Objects to Archive](images/include_exclude_masks.webp)
 
-Page updated 4/10/2024
+Page updated 1/16/2026
 
 Page content applies to build 13.0.1.1071

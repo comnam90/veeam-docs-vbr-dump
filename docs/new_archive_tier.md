@@ -1,7 +1,9 @@
 ---
 title: "Step 6. Add Archive Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/new_archive_tier.html"
-last_updated: "11/24/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -47,6 +49,6 @@ When you add as an archive extent an object storage repository that contains arc
 
 ![Step 6. Add Archive Tier](images/archive_tier_storage_settings.webp)
 
-Page updated 11/24/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

@@ -1,7 +1,9 @@
 ---
 title: "Step 3. Specify Cluster Nodes Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_configuration_nodes.html"
-last_updated: "11/14/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -9,7 +11,7 @@ product_version: "13.0.1.1071"
 
 In this article
 
-At the Cluster Node step of the wizard, you must specify details for primary and secondary nodes.
+At the Cluster Nodes step of the wizard, you must specify details for primary and secondary nodes.
 
 1. In the Primary node section, from the IP address drop-down menu, select the IP address of the primary node.
 2. In the Secondary node section, in the IP address field, specify the IP address of the secondary node.
@@ -22,6 +24,6 @@ At the Cluster Node step of the wizard, you must specify details for primary and
 
 ![Step 3. Specify Cluster Nodes Settings](images/high_availability_cluster_nodes.webp)
 
-Page updated 11/14/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071

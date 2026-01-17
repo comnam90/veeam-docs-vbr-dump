@@ -1,7 +1,9 @@
 ---
 title: "Tape Parallel Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/parallel_processing.html"
-last_updated: "7/18/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -73,7 +75,7 @@ The order in which VMs are queued for processing is defined by the order of VMs 
 
 ![Tape Parallel Processing](images/parallel_processing_mixed_source_with_perVM.webp)
 
-Similarly, if the source job is an agent job with the configured backup policy (the Managed by agent option is selected) and produces backups for multiple machines/protection groups, the media pool processes backups for several computers simultaneously. For more information about agent backup jobs, see [Working with Veeam Agent Backup Jobs and Policies](https://helpcenter.veeam.com/docs/backup/agents/backup_job_tasks.html?ver=120).
+Similarly, if the source job is an agent job with the configured backup policy (the Managed by agent option is selected) and produces backups for multiple machines/protection groups, the media pool processes backups for several computers simultaneously. For more information about agent backup jobs, see [Working with Veeam Agent Backup Jobs and Policies](https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_tasks.html).
 
 Example 3. Processing One File to Tape Job
 
@@ -98,6 +100,6 @@ Related Topics
 
 [Media Sets Created with Parallel Processing](parallel_processing_media_sets.md)
 
-Page updated 7/18/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

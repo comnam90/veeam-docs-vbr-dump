@@ -1,7 +1,9 @@
 ---
 title: "Step 5. Specify Retention Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_retention.html"
-last_updated: "5/21/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -41,6 +43,6 @@ If the vault is not added yet, click Add New to open the New Media Vault wizard.
 
 ![Step 5. Specify Retention Settings](images/add_media_pool_retention.webp)
 
-Page updated 5/21/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

@@ -1,7 +1,9 @@
 ---
 title: "Step 4. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_configuration_summary.html"
-last_updated: "11/14/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,6 +20,6 @@ After you configure the HA cluster, Veeam Backup & Replication displays a yellow
 
 ![Step 4. Finish Working with Wizard](images/high_availability_cluster_finishing.webp)
 
-Page updated 11/14/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071

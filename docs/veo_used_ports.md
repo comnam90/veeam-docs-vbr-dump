@@ -1,7 +1,9 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veo_used_ports.html"
-last_updated: "12/23/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -47,6 +49,6 @@ In addition to the ports in the table below, Veeam Explorer for Oracle relies on
 
 1 If you use default Microsoft Windows firewall settings, you do not need to configure dynamic RPC ports: during setup, Veeam Backup & Replication automatically creates a firewall rule for the runtime process. If you use firewall settings other than default ones or application-aware processing fails with the RPC function call failed error, you need to configure dynamic RPC ports. For more information on how to configure RPC dynamic port allocation to work with firewalls, see [this Microsoft KB article](https://support.microsoft.com/en-us/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls).
 
-Page updated 12/23/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

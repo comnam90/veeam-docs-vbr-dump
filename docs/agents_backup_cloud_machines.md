@@ -1,7 +1,9 @@
 ---
 title: "Backup of Cloud Machines"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_cloud_machines.html"
-last_updated: "9/16/2025"
+last_updated: "1/16/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,10 +23,12 @@ You can back up cloud machines running Microsoft Windows or Linux OSes that are 
 * To learn lists of OSes supported by Veeam Agent, see system requirements [for Veeam Agent for Microsoft Windows](agents_system_requirements_windows.md#vaw) or [for Veeam Agent for Linux](agents_system_requirements_linux.md#val) depending on the type of Veeam Agent you plan to use.
 * To learn lists of OSes supported by cloud service provider, see [AWS documentation](https://docs.aws.amazon.com/systems-manager/latest/userguide/prereqs-operating-systems.html) or [Microsoft documentation](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/support-extensions-agent-version) depending on the type of cloud machines you plan to protect.
 
-|  |
-| --- |
-| IMPORTANT |
-| In case of cloud machines running Microsoft Windows, Windows PowerShell 5.1 must be installed on the cloud machine. |
+Considerations and Limitations
+
+Consider the following about backing up cloud machines:
+
+* On machines running Microsoft Windows, Windows PowerShell 5.1 or later must be installed.
+* You cannot install Veeam Agent for Linux on UEFI-based cloud machines with Secure Boot enabled.
 
 Getting Started
 
@@ -105,6 +109,6 @@ After the installation of Veeam components is completed, Veeam Backup & Replicat
 
 ![Backup of Cloud Machines](images/agents_cloud_machines.webp)
 
-Page updated 9/16/2025
+Page updated 1/16/2026
 
 Page content applies to build 13.0.1.1071

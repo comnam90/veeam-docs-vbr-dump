@@ -1,7 +1,9 @@
 ---
 title: "Step 3. Specify Shared Folder Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_repository_server.html"
-last_updated: "8/7/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,6 +27,6 @@ For more information on the gateway servers, their requirements and limitations,
 
 ![Step 3. Specify Shared Folder Settings](images/smb_repo_share.webp)
 
-Page updated 8/7/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

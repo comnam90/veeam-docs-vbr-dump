@@ -1,7 +1,9 @@
 ---
 title: "ExaGrid"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_exgrid.html"
-last_updated: "11/19/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -112,6 +114,6 @@ Related Topics
 
 [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 11/19/2025
+Page updated 1/15/2026
 
 Page content applies to build 13.0.1.1071

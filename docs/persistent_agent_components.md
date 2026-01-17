@@ -1,7 +1,9 @@
 ---
 title: "Persistent Agent Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_agent_components.html"
-last_updated: "12/30/2025"
+last_updated: "1/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -13,13 +15,23 @@ If you want to perform guest processing in a highly secure way, you can use pers
 
 Prerequisites
 
-To use persistent agent components, ensure the Deployment Kit is generated and run on a Windows machine. The Deployment Kit contains [Veeam Installer Service](installer_service.md) and security certificates. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
+To use persistent agent components, ensure the Deployment Kit is generated on a backup server and run on a protected Windows machine. The Deployment Kit typically contains necessary binaries and supporting files, authentication certificates, and a sample service configuration script (InstallDeploymentKit.BAT) for automated installation. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
+
+Certificate Lifecycle
+
+When you use the Deployment Kit to enable certificate-based authentication for persistent guest agents, certificates follow a defined lifecycle.
+
+The Deployment Kit installs a temporary certificate on a protected VM to enable initial communication. By default, this certificate is valid for 30 days (720 hours). You can adjust the validity period only when you generate the kit using PowerShell or the backup server REST API. Only one temporary certificate is active at a time. Creating a new kit invalidates previously issued temporary certificates.
+
+When you run a backup job with Application-Aware Processing and persistent guest agents enabled, Veeam Backup & Replication automatically replaces the temporary certificate with a permanent certificate. The permanent certificate remains valid for 10 years. This process transitions the environment from short-term to long-term security without manual intervention.
+
+For information about the Deployment Kit generation and installation steps, see [Using Veeam Deployment Kit](deployment_kit.md).
 
 Installing Persistent Agent Components on Microsoft Windows VMs
 
 For Microsoft Windows VMs, Veeam Backup & Replication deploys persistent agent components using guest interaction proxies. For more information, see [Guest Interaction Proxies](guest_interaction_proxy.md). If there are no guest interaction proxies or guest interaction proxies fail for some reason, Veeam Backup & Replication will deploy persistent agent components on Microsoft Windows VMs from the backup server.
 
-To use persistent agent components, select the Use persistent guest agent check box when specifying application-aware processing settings as described in section [Application-Aware Processing](backup_job_vss_application_vm.md) for VM backup jobs. The Veeam Installer Service will install persistent guest agents during the first run of the backup job.
+To use persistent agent components, select the Use persistent guest agent check box when specifying application-aware processing settings as described in section [Application-Aware Processing](backup_job_vss_application_vm.md) for VM backup jobs. The [Veeam Installer Service](installer_service.md) will install persistent guest agents during the first run of the backup job.
 
 When you select the Use persistent guest agent option, Veeam Backup & Replication performs processing of the backup jobs with enabled guest processing according to the following algorithm.
 
@@ -82,10 +94,11 @@ If all attempts are unsuccessful, guest processing tasks fail. The job proceeds 
 Related Topics
 
 * [Guest Interaction Proxies](guest_interaction_proxy.md)
+* [Veeam Installer Service](installer_service.md)
 * [Creating Backup Jobs](backup_job.md)
 * [Creating Replication Jobs](replica_job.md)
 * [Copying VMs](copy_job.md)
 
-Page updated 12/30/2025
+Page updated 1/13/2026
 
 Page content applies to build 13.0.1.1071
