@@ -35,15 +35,36 @@ jobs:
       - name: Generate changelog
         id: changelog
         run: |
-          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
-          if [ -z "$LAST_TAG" ]; then
-            COMMITS=$(git log --oneline --no-merges)
-          else
-            COMMITS=$(git log ${LAST_TAG}..HEAD --oneline --no-merges)
-          fi
+          # Get PR body for the associated PR if it exists
+          # We need to find the PR associated with this commit
+          PR_NUMBER=$(gh pr list --state merged --search "${{ github.sha }}" --json number --jq '.[0].number')
           
-          ADDED=$(echo "$COMMITS" | grep -c ": add " || true)
-          UPDATED=$(echo "$COMMITS" | grep -c ": update " || true)
+          if [ -n "$PR_NUMBER" ] && [ "$PR_NUMBER" != "null" ]; then
+            PR_BODY=$(gh pr view "$PR_NUMBER" --json body --jq .body)
+            
+            # Extract counts from PR body table
+            # | Type | New | Updated (Content) | Updated (Metadata) | Deleted |
+            # | Markdown | $NEW_MD_COUNT | $CONTENT_COUNT | $METADATA_COUNT | ...
+            
+            ADDED=$(echo "$PR_BODY" | grep "| Markdown |" | awk -F'|' '{print $3}' | tr -d ' ')
+            UPDATED_CONTENT=$(echo "$PR_BODY" | grep "| Markdown |" | awk -F'|' '{print $4}' | tr -d ' ')
+            UPDATED_METADATA=$(echo "$PR_BODY" | grep "| Markdown |" | awk -F'|' '{print $5}' | tr -d ' ')
+            
+            # Sum up updates
+            UPDATED=$((UPDATED_CONTENT + UPDATED_METADATA))
+          else
+            # Fallback to git log if no PR found (e.g. direct push)
+            LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+            if [ -z "$LAST_TAG" ]; then
+              COMMITS=$(git log --oneline --no-merges)
+            else
+              COMMITS=$(git log ${LAST_TAG}..HEAD --oneline --no-merges)
+            fi
+            
+            # Rough estimate based on file changes since we don't have individual commits per file anymore
+            ADDED=$(git diff --name-status ${LAST_TAG}..HEAD | grep "^A" | grep ".md$" | wc -l)
+            UPDATED=$(git diff --name-status ${LAST_TAG}..HEAD | grep "^M" | grep ".md$" | wc -l)
+          fi
           
           [ -z "$ADDED" ] && ADDED=0
           [ -z "$UPDATED" ] && UPDATED=0
