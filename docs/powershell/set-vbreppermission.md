@@ -1,13 +1,14 @@
 ---
 title: "Set-VBREPPermission"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbreppermission.html"
-last_updated: "6/6/2024"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Set-VBREPPermission
 
-In this article
 
 Short Description
 
@@ -37,7 +38,7 @@ Parameters
 | Repository | Specifies the repository for which you want to set permissions.  Note: You cannot set permissions for Veeam Cloud Connect repositories. | Accepts string (repository name) or the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Type | Specifies the permission type:   * Everyone: everyone has permissions. * NoOne: no one has permissions. * OnlySelectedUsers: the selected users have permissions. Use the User parameter to specify the users.   Default: the permissions type that is currently set for the selected repository. | VBREPPermissionType | False | Named | False |
 | User | Used to set users for OnlySelectedUsers option.  Specifies names of users allowed to use the repository.  You can specify user names or names of Active Directory groups. | String[] | False | Named | False |
-| EnableEncryption | Enables the option to encrypt the backups created by Veeam Agent or Veeam Backup for Nutanix AHV.  Use the EncryptionKey parameter to specify the encryption key.  Note: Do not enable the encryption option if you back up your data with Veeam Plug-in. Veeam Plug-ins cannot send backups to a backup repository where encryption is enabled. | SwitchParameter | False | Named | False |
+| EnableEncryption | Enables the option to encrypt the backups created by Veeam Agent or Veeam Backup for Nutanix AHV.  Use the EncryptionKey parameter to specify the encryption key. | SwitchParameter | False | Named | False |
 | EncryptionKey | Used to specify the encryption key for the EnableEncryption parameter. | Accepts the [VBREncryptionKey](pscryptokey.md) object. To get this object, run the [Get-VBREncryptionKey](get-vbrencryptionkey.md) cmdlet. | False | Named | False |
 | PassThru | Defines that the command returns the output object to the Windows PowerShell console. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will apply access permissions to a repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
@@ -77,6 +78,4 @@ Related Commands
 * [Get-VBREncryptionKey](get-vbrencryptionkey.md)
 * [Get-VBRKMSServer](get-vbrkmsserver.md)
 
-Page updated 6/6/2024
 
-Page content applies to build 13.0.1.1071

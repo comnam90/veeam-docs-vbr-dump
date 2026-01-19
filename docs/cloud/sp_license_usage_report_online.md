@@ -3,7 +3,7 @@ title: "Automatic License Usage Reporting"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/sp_license_usage_report_online.html"
-last_updated: "11/11/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,14 +24,16 @@ If the SP configured email notification settings, Veeam Backup & Replication wil
 
 1. Veeam Backup & Replication informs the SP about the generated report with the notification window in the Veeam Backup & Replication console.
 
+The notification window appears on the first day of the month.
+
 |  |
 | --- |
 | Note |
-| If the SP uses Veeam Service Provider Console to manage the Veeam backup infrastructure, the notification window in the Veeam Backup & Replication console on the first day of the month will not be displayed. |
+| If the SP uses Veeam Service Provider Console to manage the Veeam backup infrastructure, and the Automatic Report Approval option is enabled in Veeam Service Provider Console, Veeam Backup & Replication does not display the notification window. To learn more, see the [Enabling Automatic Report Approval](https://helpcenter.veeam.com/docs/vac/provider_admin/submit_license_usage_report.html?ver=9.1#enabling-automatic-report-approval) section in the Guide for Service Providers. |
 
 1. The SP can review, adjust if necessary and send the report to Veeam. The SP can also postpone the sending of the report. To learn more, see [Managing License Usage Reports](sp_license_usage_manage.md).
 
-If the SP doesn't send the report, on the eleventh day of the month, Veeam Backup & Replication will send the report automatically.
+If the SP doesn't send the report, on the third day of the month, Veeam Backup & Replication will send the report automatically.
 
 Keep in mind that automatic license usage reporting does not replace manual reporting through the VCSP Pulse portal (or an aggregator reporting portal). For more information, see [Veeam Rental Licensing and Usage Reporting Guide](https://helpcenter.veeam.com/docs/vcsp/refguide/about.html).
 

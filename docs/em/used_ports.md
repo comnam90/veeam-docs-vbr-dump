@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/used_ports.html"
-last_updated: "12/22/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -44,6 +44,7 @@ Veeam Backup Enterprise Manager on Linux (Veeam Software Appliance)
 | Browser | Veeam Backup Enterprise Manager web application (Nginx) | TCP | 443 | Default ports used to communicate with the Enterprise Manager website and Identity Service through HTTPS.  When you work with Veeam Self-Service Backup Portal (accessed by the portal URL or from the native VMware Cloud Director environment) and vSphere Self-Service Backup Portal, your browser also communicates with the Veeam Backup Enterprise Manager website through this port. |
 | Veeam Backup Enterprise Manager REST API client and VMware vSphere Client plug-in | Veeam Backup Enterprise Manager REST API | TCP | 9398 | Default port used to communicate with Veeam Backup Enterprise Manager REST API through HTTPS. |
 | Veeam ONE Server (optional) | Veeam Backup Enterprise Manager Service | TCP | 50001 | If you add the Enterprise Manager server to the Veeam ONE monitoring scope, this port is used for data collection through gRPC. |
+| Management client PC (remote access) | Veeam Backup Enterprise Manager Service | TCP | 10443 | Default port used by the Linux-based Enterprise Manager to connect to Veeam Host Management. |
 
 Veeam Backup Enterprise Manager on Windows
 
