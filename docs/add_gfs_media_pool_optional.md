@@ -1,13 +1,14 @@
 ---
 title: "Step 6. Add Optional Media Pool Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_gfs_media_pool_optional.html"
-last_updated: "7/18/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 6. Add Optional Media Pool Settings
 
-In this article
 
 At the Options step of the wizard, you can enable parallel processing and encryption.
 
@@ -23,6 +24,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 ![Step 6. Add Optional Media Pool Settings](images/add_gfs_media_pool_encryption.webp)
 
-Page updated 7/18/2025
 
-Page content applies to build 13.0.1.1071

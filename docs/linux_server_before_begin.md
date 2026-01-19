@@ -1,13 +1,14 @@
 ---
 title: "Prerequisites"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server_before_begin.html"
-last_updated: "10/20/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Prerequisites
 
-In this article
 
 Before you add a Linux server to the Veeam Backup & Replication infrastructure, check the [required permissions](required_permissions.md#rphost) and the following prerequisites.
 
@@ -40,6 +41,4 @@ TLS Connection
 
 Linux servers use the TLS connection. You can disable the TLS connection for the servers that do not support the TLS connection in the configuration file on the Linux-based backup server or with registry values on the Microsoft Windows-based backup server. For more information, contact Veeam Customer Support.
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

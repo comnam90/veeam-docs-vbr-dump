@@ -1,13 +1,14 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_before_you_begin_hv.html"
-last_updated: "11/18/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you create and start a recovery verification job, check the following prerequisites:
 
@@ -17,6 +18,7 @@ Before you create and start a recovery verification job, check the following pre
 * You must create or connect a virtual lab. For more information, see sections [Creating Virtual Lab](vlab_hv.md) and [Connecting to Existing Virtual Lab](connect_to_vlab_hv.md).
 
 * If you plan to scan machine data for malware, [check requirements and limitations](av_scan_about.md#av_limitations).
+* If you plan to verify machines protected by Veeam Agent for Linux, a DHCP server must be available in the production network. During recovery verification, an additional Linux-based virtual machine (Helper Appliance) is registered on the target host. This appliance requires a DHCP server to obtain an IP address.
 
 * If you plan to verify machines with a ping test, the firewall on tested machines must allow ping requests.
 * If you plan to verify machines with a heartbeat test, Hyper-V Integration Services must be installed in tested machines.
@@ -28,6 +30,4 @@ Consider the following limitations:
 
 * The source backup job has a higher priority than the SureBackup job. If the source backup job starts when the SureBackup job is running, and this job is about to modify the restore point from which the VM is started, Veeam Backup & Replication automatically powers off VMs in the virtual lab and completes the SureBackup job.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

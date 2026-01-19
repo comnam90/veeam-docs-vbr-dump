@@ -1,13 +1,14 @@
 ---
 title: "Step 2. Specify Path to NFS File Share"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_new_nfs_share_wizard_share.html"
-last_updated: "5/21/2025"
+last_updated: "1/15/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 2. Specify Path to NFS File Share
 
-In this article
 
 At the NFS File Share step of the wizard, specify the path to an NFS file share in the server:/folder format.
 
@@ -15,6 +16,4 @@ You can add the root server folder in the server:/ format to protect all NFS fil
 
 ![Step 2. Specify Path to NFS File Share](images/nfs_file_share_wizard_path_to_nfs.webp "Specify Path to NFS File Share")
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071
