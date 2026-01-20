@@ -1,0 +1,15 @@
+---
+title: "Tenants"
+product: "vbr"
+doc_type: "events"
+source_url: "https://helpcenter.veeam.com/docs/vbr/events/event_tenants.html"
+last_updated: "5/22/2024"
+product_version: "13.0.1.1071"
+---
+
+# Tenants
+
+
+This section contains Veeam Backup & Replication events related to tenants.
+
+
