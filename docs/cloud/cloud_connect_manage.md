@@ -3,7 +3,7 @@ title: "Managing Tenant Accounts"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_manage.html"
-last_updated: "12/10/2025"
+last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,7 +23,7 @@ The SP can perform the following actions with tenant accounts:
 |  |
 | --- |
 | Note |
-| By default, in case the SP backup server is managed by Veeam Service Provider Console version 5.0 or later, you cannot manage tenant accounts in Veeam Backup & Replication. You can change this setting in Veeam Service Provider Console. To learn more, see the [Managing Veeam Cloud Connect Servers](https://helpcenter.veeam.com/docs/vac/provider_admin/connect_cloud_server.html?ver=9) section in the Guide for Service Providers. |
+| By default, in case the SP backup server is managed by Veeam Service Provider Console version 5.0 or later, you cannot manage tenant accounts in Veeam Backup & Replication. You can change this setting in Veeam Service Provider Console. To learn more, see the [Managing Veeam Cloud Connect Servers](https://helpcenter.veeam.com/docs/vac/provider_admin/connect_cloud_server.html?ver=9.1) section in the Guide for Service Providers. |
 
 Related Tasks
 

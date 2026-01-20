@@ -1,13 +1,14 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_plugin_permissions.html"
-last_updated: "11/6/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Permissions
 
-In this article
 
 For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
 
@@ -17,7 +18,7 @@ For general requirements for permissions that must be provided to the user accou
 |  |
 | --- |
 | Note |
-| If you plan to restore Oracle databases using Veeam Explorer for Oracle, consider the required permissions listed in [Permissions](https://helpcenter.veeam.com/docs/vbr/userguide/veo_permissions..html?ver=13). |
+| If you plan to restore Oracle databases using Veeam Explorer for Oracle, consider the required permissions listed in [Permissions](https://helpcenter.veeam.com/docs/vbr/userguide/veo_permissions.html?ver=13). |
 
 Permissions for Veeam Plug-In
 
@@ -89,6 +90,4 @@ If you plan to back up data using such infrastructure configuration, make sure t
 | --- |
 | {   "iam.serviceAccounts.create",   "iam.serviceAccounts.delete",   "iam.serviceAccounts.get",   "iam.serviceAccounts.list",   "storage.buckets.get",   "storage.buckets.getIamPolicy",   "storage.buckets.list",   "storage.buckets.setIamPolicy",   "storage.buckets.update",   "storage.hmacKeys.create",   "storage.hmacKeys.delete",   "storage.hmacKeys.get",   "storage.hmacKeys.list",   "storage.objects.create",   "storage.objects.delete",   "storage.objects.get",   "storage.objects.list" } |
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

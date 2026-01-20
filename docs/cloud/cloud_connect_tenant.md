@@ -3,7 +3,7 @@ title: "Creating Tenant Accounts"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_tenant.html"
-last_updated: "10/30/2025"
+last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,7 +22,7 @@ The SP can create tenant accounts of the following types:
 |  |
 | --- |
 | Note |
-| Consider the following:   * When you create a tenant account, remember to save a user name and password for the created account. You must pass this data to your tenant. When adding the SP on the tenant Veeam backup server, the tenant must enter the user name and password for the tenant account registered on the SP side.  * By default, in case the SP backup server is managed by Veeam Service Provider Console version 5.0 or later, you cannot create tenant accounts in Veeam Backup & Replication. You can change this setting in Veeam Service Provider Console. To learn more, see the [Managing Veeam Cloud Connect Servers](https://helpcenter.veeam.com/docs/vac/provider_admin/connect_cloud_server.html?ver=9) section in the Guide for Service Providers. |
+| Consider the following:   * When you create a tenant account, remember to save a user name and password for the created account. You must pass this data to your tenant. When adding the SP on the tenant Veeam backup server, the tenant must enter the user name and password for the tenant account registered on the SP side.  * By default, in case the SP backup server is managed by Veeam Service Provider Console version 5.0 or later, you cannot create tenant accounts in Veeam Backup & Replication. You can change this setting in Veeam Service Provider Console. To learn more, see the [Managing Veeam Cloud Connect Servers](https://helpcenter.veeam.com/docs/vac/provider_admin/connect_cloud_server.html?ver=9.1) section in the Guide for Service Providers. |
 
 Related Tasks
 

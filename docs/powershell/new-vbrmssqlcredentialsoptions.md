@@ -1,13 +1,14 @@
 ---
 title: "New-VBRMSSQLCredentialsOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmssqlcredentialsoptions.html"
-last_updated: "12/19/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # New-VBRMSSQLCredentialsOptions
 
-In this article
 
 Short Description
 
@@ -49,14 +50,12 @@ This example shows how to apply stored service account credentials to the discov
 
 |  |
 | --- |
-| $creds = Get‑VBRCredentials -Name "SQL\_Account"  $sqlcredentials = New‑VBRMSSQLCredentialsOptions -Credentials $creds -Instance $mssqlInstance  $mssqlInstances = Get-VBRDiscoveredApplication -MSSQL -MSSQLEntityType -Instance  $mssqlInstance = $mssqlInstances[0] |
+| $creds = Get‑VBRCredentials -Name "SQL\_Account"  $mssqlInstances = Get-VBRDiscoveredApplication -MSSQL -MSSQLEntityType -Instance  $mssqlInstance = $mssqlInstances[0]  $sqlcredentials = New‑VBRMSSQLCredentialsOptions -Credentials $creds -Instance $mssqlInstance |
 
 Perform the following steps:
 
 1. Run the [Get‑VBRCredentials](get-vbrcredentials.md) cmdlet. Save the result to the $creds variable.
-2. Run the New‑VBRMSSQLCredentialsOptions cmdlet. Specify the Credentials parameter with the $creds variable. Specify the Instance parameter with the name of the Microsoft SQL Server instance. Save the result to the $sqlcredentials variable.
-3. Run the [Get-VBRDiscoveredApplication](get-vbrdiscoveredapplication.md) cmdlet. Specify the MSSQL, MSSQLEntityType and Instance parameters. Save the result to the $mssqlInstances variable.
+2. Run the [Get-VBRDiscoveredApplication](get-vbrdiscoveredapplication.md) cmdlet. Specify the MSSQL, MSSQLEntityType and Instance parameters. Save the result to the $mssqlInstances variable.
+3. Run the New‑VBRMSSQLCredentialsOptions cmdlet. Specify the Credentials parameter with the $creds variable. Specify the Instance parameter with the name of the Microsoft SQL Server instance. Save the result to the $sqlcredentials variable.
 
-Page updated 12/19/2025
 
-Page content applies to build 13.0.1.1071

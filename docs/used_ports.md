@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "1/16/2026"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -245,6 +245,8 @@ The following table describes network ports that must be opened to ensure proper
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
 | Gateway server or backup proxy | SMB (CIFS) backup repository (Microsoft Windows) | TCP | 445 | Port used as a transmission channel from the gateway server to the target SMB (CIFS) backup repository if a gateway server is specified explicitly in SMB (CIFS) backup repository settings. |
+| Active Directory Domain Controller | TCP | 389 | Port used for communications over LDAP and LDAPS protocols. |
+| TCP | 88 | Port used for Kerberos authentication. |
 
 Dell Data Domain System
 
@@ -560,10 +562,10 @@ File Share Connections
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
-| Backup server | File server (Windows or Linux) | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
-| TCP | 6160 | Default port used by Veeam Installer Service (if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
+| Backup server | File server (Windows or Linux), Backup proxy | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
+| TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6210 | Default port used by the Veeam Backup VSS Integration Service for taking a VSS snapshot during the SMB file share backup (if Veeam Backup & Replication is installed on the Microsoft Windows machine). For more information, see [Microsoft Windows Services](services_and_components.md#win_services). |
-| TCP | 6162 | Default port used by Veeam Transport Service (if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
+| TCP | 6162 | Default port used by Veeam Transport Service. |
 | Backup proxy | NAS filer (NetApp Data ONTAP or Lenovo ThinkSystem DM/DG Series storage system) | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
 | TCP | 445 | Standard SMB port. |
 | TCP, UDP | 635 | The default port used by the NetApp Data ONTAP storage controller. |
@@ -571,6 +573,8 @@ File Share Connections
 | NAS filer (Dell PowerScale (formerly Isilon) or Nutanix Files storage system) | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
 | TCP | 445 | Standard SMB port. |
 | TCP | 20048 | Port used for the NFS mountd access and service request monitoring. |
+| Active Directory Domain Controller | TCP | 389 | Port used for communications over LDAP and LDAPS protocols. |
+| TCP | 88 | Port used for Kerberos authentication. |
 | File server (Windows or Linux), backup proxy or tape server | NFS share | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
 | SMB share | TCP | 445 | Standard SMB port. |
 | Amazon S3 object storage  (\*.amazonaws.com, \*.amazonaws.com.cn) | TCP | 443 | Port used to communicate with Amazon S3 object storage.  The endpoint used by the connection depends on the region:   * \*.amazonaws.com is used for the Global and Government regions. * \*.amazonaws.com.cn is used for the China region.   All AWS service endpoints are specified in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). |
@@ -578,15 +582,18 @@ File Share Connections
 | Microsoft Azure object storage  (<storage-account>.blob.core.windows.net, <storage-account>.blob.storage.azure.net, <storage-account>.blob.core.chinacloudapi.cn, <storage-account>.blob.core.usgovcloudapi.net) | TCP | 443 | Port used to communicate with Microsoft Azure object storage.  The endpoints used by the connection depend on the region:   * <storage-account>.blob.core.windows.net is used for the Global region. * <storage-account>.blob.storage.azure.net is used for the Global region. * <storage-account>.blob.core.chinacloudapi.cn is used for the China region. * <storage-account>.blob.core.usgovcloudapi.net is used for the Government region.   Consider that the <storage-account> part of the address must be replaced with your actual storage account URL that can be found in the Azure management portal. |
 | Microsoft Azure object storage | TCP | 80 | Port used to verify the certificate status through the certificate verification endpoints (CRL URLs and OCSP servers).  These endpoints are subject to change. You can find the actual list of addresses in [this Microsoft article](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-CA-details?tabs=root-and-subordinate-cas-list#certificate-downloads-and-revocation-lists) or in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access |
 | S3 compatible object storage | TCP | Depends on device configuration | Port used to communicate with S3 compatible object storage. |
+| Active Directory Domain Controller | TCP | 389 | Port used for communications over LDAP and LDAPS protocols. |
+| TCP | 88 | Port used for Kerberos authentication. |
 | Mount server | SMB share | TCP | 137-139, 443, 445, 6170 | Ports used during Instant File Share Recovery. |
 
 Cache Repository Connections
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
-| Backup proxy | Cache repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
-| TCP | 6160, 6162 | Default ports used by Veeam Installer Service |
-| Cache repository | Backup proxy | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
+| File server (Windows or Linux), Backup proxy | Cache repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
+| TCP | 6160 | Default ports used by Veeam Installer Service. |
+| TCP | 6162 | Default port used by Veeam Transport Service. |
+| Cache repository | File server (Windows or Linux), Backup proxy | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | Primary or secondary backup repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels for file share backup restore jobs. For every TCP connection that a job uses, one port from this range is assigned. |
 
 Archive Repository Connections

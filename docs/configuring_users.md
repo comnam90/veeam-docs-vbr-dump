@@ -1,13 +1,14 @@
 ---
 title: "Configuring Users"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_users.html"
-last_updated: "11/28/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Users
 
-In this article
 
 To perform Veeam Backup & Replication operations, you can add users and assign to them different roles, both predefined and custom ones. For the list of predefined roles, see [Configuring Roles](configure_roles.md).
 
@@ -31,6 +32,7 @@ When you configure users for Veeam Backup & Replication on Windows, consider the
 * For security reasons, the account used to run Veeam services should be a LocalSystem account. If a Veeam service runs under a user account other than LocalSystem, this user will have full access to the Veeam Backup & Replication console even if they are not specified in the users and roles settings.
 * The user account under which the Veeam Backup Service runs must have the Veeam Backup Administrator role. If you change the default settings, make sure that you assign this role to the necessary user account. It is recommended to assign the role to the user account explicitly rather than the group to which the user belongs.
 * The Veeam Backup Administrator role is assigned to all members of the Administrators group on the machine where Veeam Backup & Replication is installed.
+* If you need to change the password for the service account, do that by actually logging in as that user and changing the password through standard Windows user interfaces (such as pressing Ctrl+Alt+Del and selecting "Change a password" while logged in as that user), rather than resetting it through administrative tools, scripts, or the Active Directory Users and Computers (ADUC) console.
 
 * If multi-factor authentication (MFA) is disabled, consider the following:
 
@@ -45,6 +47,4 @@ To protect administrator accounts from being compromised, it is strongly recomme
 + If you do not add a local or domain member of the Administrators group in the users and roles settings, this user will not have access to the Veeam Backup & Replication console.
 + If you add a local or domain member of the Administrators group in the users and roles settings, this user will have full access to the Veeam Backup & Replication console regardless of the assigned role.
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071
