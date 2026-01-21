@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_upgrade_byb.html"
-last_updated: "1/13/2026"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ Before starting the upgrade procedure, read and follow the recommendations below
 * A machine on which you plan to install Enterprise Manager must meet the system requirements. For more information, see [System Requirements](system_requirements.md).
 * A user account that you plan to use for upgrade must have sufficient permissions. For more information, see [Permissions](required_permissions.md).
 * Backup infrastructure components communicate with each other over specific ports. These ports must be open. For more information, see [Ports](used_ports.md).
-* Check the Known Issues section of the [Veeam Backup & Replication Release Notes](https://www.veeam.com/veeam_backup_12_release_notes_rn.pdf).
+* Check the Known Issues section of the [Veeam Backup & Replication Release Notes](https://helpcenter.veeam.com/rn/veeam_backup_13_0_1_release_notes.html).
 * With Enterprise Manager and connected backup servers, begin the backup infrastructure upgrade process with Enterprise Manager. Backup servers must be upgraded after that. When you use different versions of Veeam Backup Enterprise Manager and Veeam Backup & Replication, you may not be able to leverage all features of Veeam Backup Enterprise Manager. Moreover, data collection from backup servers of earlier versions takes more time, which can be critical if many backup servers are added to Enterprise Manager.
 
 If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Enterprise Manager server. Otherwise, the Configuration Database Connection Settings utility will not work properly for Veeam Backup & Replication. For more information about the utility, see [Connecting Enterprise Manager to Another Configuration Database](dbconfig_utility.md).

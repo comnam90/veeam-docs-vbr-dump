@@ -1,13 +1,14 @@
 ---
 title: "Get-VBRBackupRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrbackuprepository.html"
-last_updated: "4/3/2024"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Get-VBRBackupRepository
 
-In this article
 
 Short Description
 
@@ -49,7 +50,10 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the CBackupRepository object that contains settings of backup repositories added to the backup infrastructure.
+The cmdlet returns one of the following objects:
+
+* VBRScaleOutBackupRepository — if you specify the ScaleOut parameter.
+* CBackupRepository — if you do not specify the ScaleOut parameter.
 
 Examples
 
@@ -77,6 +81,4 @@ Examples
 | --- | --- |
 | This command gets scale-out backup repository named  Veeam Performance Scale-Out Repository.  |  | | --- | | Get-VBRBackupRepository -ScaleOut -Name "Veeam Performance Scale-Out Repository" | |
 
-Page updated 4/3/2024
 
-Page content applies to build 13.0.1.1071

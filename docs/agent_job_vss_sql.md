@@ -1,13 +1,14 @@
 ---
 title: "Microsoft SQL Server Transaction Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_vss_sql.html"
-last_updated: "11/4/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Microsoft SQL Server Transaction Log Settings
 
-In this article
 
 |  |
 | --- |
@@ -21,7 +22,9 @@ If you back up Microsoft SQL Server, you can specify how Veeam Agent for Microso
 3. In the displayed list, select a protection group or individual computer and click Edit.
 4. In the Microsoft VSS settings section, select Process transaction logs with this job.
 5. In the Processing Settings window, click the SQL tab.
-6. To specify a user account that Veeam Agent will use to connect to the Microsoft SQL Server, select from the Specify Windows account with sysadmin role on SQL Server list a user account that has access permissions on the database. This account must be a Microsoft Windows user account with roles and permissions as specified in section [Permissions for Guest Processing](agents_permissions.md#guest). Keep in mind that you cannot use Microsoft SQL Server accounts (for example, the SA account) to connect to the database.
+6. To specify a user account that Veeam Agent will use to connect to the Microsoft SQL Server, select from the Specify Windows account with sysadmin role on SQL Server list a user account that has access permissions on the database. This account must be a Microsoft Windows user account or a Group Managed Service Account (gMSA) with roles and permissions as specified in section [Permissions for Guest Processing](agents_permissions.md#guest).
+
+Keep in mind that you cannot use Microsoft SQL Server accounts (for example, the SA account) to connect to the database.
 
 By default, the Use guest credentials option is selected in the list. With this option selected, Veeam Agent will connect to the Microsoft SQL Server under the account that you have specified for the protected computer in the protection group settings.
 
@@ -49,6 +52,4 @@ If you have selected to back up transaction logs with Veeam Agent for Microsoft 
 
 ![Microsoft SQL Server Transaction Log Settings ](images/agent_job_vss_sql.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

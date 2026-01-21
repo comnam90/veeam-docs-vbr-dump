@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_installation_byb.html"
-last_updated: "11/18/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,7 +24,7 @@ Before you install Veeam Backup Enterprise Manager, check the following prerequi
 
 Since Enterprise Manager connects to the postgres database to access the configuration database, do not rename the postgres database upon the Enterprise Manager installation.
 
-* Check the Known Issues section of the [Veeam Backup & Replication Release Notes](https://www.veeam.com/veeam_backup_12_release_notes_rn.pdf).
+* Check the Known Issues section of the [Veeam Backup & Replication Release Notes](https://helpcenter.veeam.com/rn/veeam_backup_13_0_1_release_notes.html).
 
 Configuring PostgreSQL Instance
 
