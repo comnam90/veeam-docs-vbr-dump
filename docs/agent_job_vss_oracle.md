@@ -1,13 +1,14 @@
 ---
 title: "Oracle Archived Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_vss_oracle.html"
-last_updated: "11/4/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Oracle Archived Log Settings
 
-In this article
 
 If you back up an Oracle database, you can specify how Veeam Agent for Microsoft Windows must process archived logs:
 
@@ -16,7 +17,9 @@ If you back up an Oracle database, you can specify how Veeam Agent for Microsoft
 3. In the displayed list, select a protection group or individual computer and click Edit.
 4. In the Microsoft VSS settings section, select Process transaction logs with this job.
 5. In the Processing Settings window, click the Oracle tab.
-6. To specify a user account that Veeam Agent for Microsoft Windows will use to connect to the Oracle database, select from the Specify Oracle account with SYSDBA privileges list a user account that has SYSDBA rights on the database. If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials.
+6. To specify a user account that Veeam Agent for Microsoft Windows will use to connect to the Oracle database, select from the Specify Oracle account with SYSDBA privileges list a user account configured as specified in section [Permissions for Guest Processing](agents_permissions.md#guest).
+
+If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials.
 
 By default, the Use guest OS credentials option is selected in the list. With this option selected, Veeam Agent for Microsoft Windows will connect to the Oracle database under the account that you have specified for the protected computer in the protection group settings.
 
@@ -41,6 +44,4 @@ It is recommended that you select this option for databases for which the ARCHIV
 
 ![Oracle Archived Log Settings ](images/agent_job_vss_oracle.webp "Specify Oracle Archived Log Settings")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Using Group Managed Service Accounts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/using_gmsa.html"
-last_updated: "1/9/2026"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Using Group Managed Service Accounts
 
-In this article
 
 A Group Managed Service Account (gMSA) is the type of domain account configured on the server. It does not need the administrator to manage the password as this role is performed by the Microsoft Windows operating system. Randomly generated complex passwords are automatically changed every 30 days which reduce the risk of brute force and dictionary attacks. For more information about gMSAs, see [this Microsoft article](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/service-accounts-group-managed).
 
@@ -16,7 +17,7 @@ You can use gMSAs to only run guest processing tasks.
 |  |
 | --- |
 | Note |
-| For application-aware processing, using a gMSA is supported for backups or replicas of VMs that run Microsoft Active Directory (domain controllers), Microsoft Exchange, Microsoft SQL Server, and Oracle 12c Release 2 and later. You cannot back up or replicate VMs that run Microsoft SharePoint with the gMSA. |
+| Consider the following regarding application-aware processing:   * For image-level backups or replicas, using a gMSA is supported for VMs that run Microsoft Active Directory (domain controllers), Microsoft Exchange, Microsoft SQL Server, and Oracle 12c Release 2 and later. You cannot back up or replicate VMs that run Microsoft SharePoint with the gMSA. * For Veeam Agent backups, using a gMSA is supported only in [backup jobs managed by the backup server](agents_job_mode.md), and only for [Microsoft SQL Server](agent_job_vss_sql.md) and [scripts](agent_job_vss_scripts.md) processing. |
 
 Requirements and Limitations
 
@@ -131,6 +132,4 @@ To run guest processing tasks with the gMSA, do the following:
 1. Add the gMSA account type to the Credentials Manager. For more information, see [Group Managed Service Accounts](credentials_manager_gmsa.md).
 2. Select the gMSA when specifying guest OS credentials for jobs or policies.
 
-Page updated 1/9/2026
 
-Page content applies to build 13.0.1.1071
