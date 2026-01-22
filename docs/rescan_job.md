@@ -1,13 +1,14 @@
 ---
 title: "Rescan Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rescan_job.html"
-last_updated: "11/25/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Rescan Job
 
-In this article
 
 For automated discovery of protected computers, Veeam Backup & Replication uses the rescan job that runs on the backup server. Veeam Backup & Replication automatically creates this job once you create the first protection group in the inventory. The rescan job runs upon schedule defined individually for every protection group in the protection group settings. By default, Veeam Backup & Replication is set up to perform discovery at 9:00 PM daily. You can adjust daily schedule in the protection group settings or define periodic schedule.
 
@@ -44,7 +45,7 @@ If Veeam Installer Service detects that Veeam Plug-In is already deployed on the
 1. Veeam Installer Service retrieves the TLS certificate with a public key from the backup server and saves a TLS certificate with a public key in the Veeam Plug-In configuration database on the target computer. Veeam Plug-In will use this certificate to connect to Veeam Backup & Replication.
 2. Veeam Transport Service and Veeam Plug-In running on the target computer collect information about databases available on the target computer. To learn more, see [Database Detection](rescan_job_db_detection.md).
 
-![Rescan Job](images/rescan_job.webp)
+![Rescan Job](images/plugins_rescan_job.webp)
 
 Related Tasks
 
@@ -53,6 +54,4 @@ Related Tasks
 * [Rescanning Protected Computer](protected_computers_rescan.md)
 * [Viewing Rescan Job Statistics](report_rescan_job_stats.md)
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

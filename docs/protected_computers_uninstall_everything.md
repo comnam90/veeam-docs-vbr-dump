@@ -1,13 +1,14 @@
 ---
 title: "Uninstalling Veeam Plug-In and Other Veeam Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_uninstall_everything.html"
-last_updated: "12/4/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Uninstalling Veeam Plug-In and Other Veeam Components
 
-In this article
 
 You can uninstall all Veeam Plug-Ins and the following Veeam product components installed on a protected computer as one operation:
 
@@ -44,8 +45,6 @@ To uninstall Veeam Plug-Ins, Veeam Agents and Veeam product components:
 3. In the working area, select the necessary computer and click Uninstall Everything on the ribbon or right-click the computer and select Uninstall everything.
 4. In the displayed notification window, click Yes.
 
-[![Uninstall All Veeam Agents and Veeam Plug-ins](images/protected_computer_uninstall_all.webp)](images/protected_computer_uninstall_all.webp "Uninstall All Veeam Agents and Veeam Plug-ins")
+[![Uninstall All Veeam Agents and Veeam Plug-ins](images/plugins_protected_computer_uninstall_all.webp)](images/plugins_protected_computer_uninstall_all.webp "Uninstall All Veeam Agents and Veeam Plug-ins")
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

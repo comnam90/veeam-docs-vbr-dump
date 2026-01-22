@@ -1,13 +1,14 @@
 ---
 title: "Upgrading Veeam Plug-In"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_upgrade.html"
-last_updated: "11/7/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Upgrading Veeam Plug-In
 
-In this article
 
 Periodically, Veeam releases a new version of Veeam Backup & Replication that contains new features and bug fixes. The release package also contains a new version of Veeam Plug-Ins.
 
@@ -45,7 +46,7 @@ To upgrade Veeam Plug-In on a protected computer:
 | NOTE |
 | In some cases, upgrade to the new version of Veeam Plug-In may require computer reboot. |
 
-[![Upgrade Plug-in](images/protection_group_outdated_upgrade_one.webp)](images/protection_group_outdated_upgrade_one.webp "Upgrade Plug-in")
+[![Upgrade Plug-in](images/plugins_protection_group_outdated_upgrade_one.webp)](images/plugins_protection_group_outdated_upgrade_one.webp "Upgrade Plug-in")
 
 Upgrading Veeam Plug-In on Multiple Computers
 
@@ -59,7 +60,7 @@ You can upgrade Veeam Plug-In on all computers that require upgrade at once. To 
 | NOTE |
 | In some cases, upgrade to the new version of Veeam Plug-In may require computer reboot. |
 
-[![Upgrade All Plug-ins](images/protection_group_outdated_upgrade_batch.webp)](images/protection_group_outdated_upgrade_batch.webp "Upgrade All Plug-ins")
+[![Upgrade All Plug-ins](images/plugins_protection_group_outdated_upgrade_batch.webp)](images/plugins_protection_group_outdated_upgrade_batch.webp "Upgrade All Plug-ins")
 
 Upgrading from Veeam Plug-In Side
 
@@ -69,6 +70,4 @@ You can also upgrade Veeam Plug-In from the computer side. This approach is requ
 * [Upgrading Plug-In for SAP HANA](update_saphana_plugin.md)
 * [Upgrading Veeam Plug-In for SAP on Oracle](update_sap_on_oracle_plugin.md)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

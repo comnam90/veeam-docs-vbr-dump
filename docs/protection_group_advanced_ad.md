@@ -1,13 +1,14 @@
 ---
 title: "Step 7. Specify Advanced Protection Group Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_advanced_ad.html"
-last_updated: "11/3/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 7. Specify Advanced Protection Group Settings
 
-In this article
 
 You can specify email notification settings for the protection group. If you enable notification settings, Veeam Backup & Replication will send a daily email report with protection group statistics to a specified email address. The report contains cumulative statistics for rescan job sessions performed for the protection group within the last 24-hour period.
 
@@ -42,8 +43,6 @@ To configure a custom notification for the protection group, select Use custom n
 * Notify on warning — when the job completes with a warning.
 * Notify on error — when the job fails.
 
-![Step 7. Specify Advanced Protection Group Settings](images/protection_group_notify_ad.webp)
+![Step 7. Specify Advanced Protection Group Settings](images/plugins_protection_group_notify_ad.webp)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

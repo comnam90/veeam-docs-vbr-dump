@@ -1,13 +1,14 @@
 ---
 title: "Configuring Plug-In on Microsoft Windows"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_win.html"
-last_updated: "12/5/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Plug-In on Microsoft Windows
 
-In this article
 
 To configure backup, restore and authentication settings, use the Veeam Plug-In for Oracle RMAN configuration wizard. The wizard configures Oracle RMAN settings and creates the Veeam Plug-In configuration file (veeam\_config.xml) which is stored in the %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN folder on the machine where Veeam Plug-In is installed.
 
@@ -18,11 +19,11 @@ To configure Veeam Plug-In, do the following:
 1. On the Oracle server, click launch the Veeam RMAN Configuration Wizard (%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\Veeam.Backup.RMAN.Configuration.exe).
 2. At the Backup Server step of the wizard, specify the DNS name of the Veeam Backup & Replication server and OS user account credentials that will be used to connect to the server.
 
-![Configuring Plug-In on Microsoft Windows](images/rman_plugin_wizard_vbr.webp)
+![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_vbr.webp)
 
 1. If you connect to the specified Veeam Backup & Replication server for the first time, Veeam Plug-In displays the Certificate Security Alert window. After you review the certificate, click Continue to confirm the connection.
 
-![Configuring Plug-In on Microsoft Windows](images/rman_plugin_wizard_alert.webp)
+![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_alert.webp)
 
 1. At the Backup Repository step of the wizard:
 
@@ -38,7 +39,7 @@ Note that if you use Veeam Plug-In compression in combination with Oracle RMAN i
 
 1. Click Next.
 
-![Configuring Plug-In on Microsoft Windows](images/rman_plugin_wizard_repository.webp)
+![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_repository.webp)
 
 |  |
 | --- |
@@ -59,7 +60,7 @@ For details, see [Authentication Against Database](rman_auth_methods.md).
 
 The OS user credentials are applied automatically.
 
-![Configuring Plug-In on Microsoft Windows](images/rman_plugin_wizard_os_authentication.webp)
+![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_os_authentication.webp)
 
 * Select Database authentication, to choose the database authentication method.
 
@@ -72,14 +73,14 @@ To set database credentials, perform one of the following:
 * Select an individual database and click Set user to configure the database user account credentials.
 * Select multiple databases and click Set user to configure common credentials for multiple target databases.
 
-![Configuring Plug-In on Microsoft Windows](images/rman_plugin_wizard_db_authentication.webp)
+![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_db_authentication.webp)
 
 1. At the Summary step of the wizard, you can export the plug-in and Oracle RMAN configuration files. You can use the configuration files to apply the plug-in settings on other servers.
 
 1. To export the veeam\_config.xml file click Export and select Veeam Config.
 2. Click Finish.
 
-![Configuring Plug-In on Microsoft Windows](images/rman_plugin_wizard_summary.webp)
+![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_summary.webp)
 
 |  |
 | --- |
@@ -134,6 +135,4 @@ For example, to specify credentials that will be used to log in to the Veeam Bac
 | --add-preferred-network <network\_IP\_address> <position\_in\_list> | Adds a network to the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository.  To select to which network Veeam Plug-In connects first, you can set the order number of the network in the list. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_rman.md). |
 | --remove-preferred-network <network\_IP\_address> | Removes a specified network from the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository. |
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

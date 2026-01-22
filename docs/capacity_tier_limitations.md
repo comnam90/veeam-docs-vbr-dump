@@ -1,13 +1,14 @@
 ---
 title: "Limitations for Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_limitations.html"
-last_updated: "11/25/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Limitations for Capacity Tier
 
-In this article
 
 General Limitations
 
@@ -15,9 +16,10 @@ Consider the following limitations for the capacity tier:
 
 * If you want to add object storage repositories of another provider as capacity extents, you must switch the object storage of the former extent [to the sealed mode](sobr_seal.md). For example, if you used Amazon S3 object storage as capacity extents and you want to add Microsoft Azure Blob as a new extent, you must first seal the Amazon S3 object storage.
 
-* If you want to use S3-compatible repositories by different providers as capacity extents, one of this repository must be in the sealed mode. For example, if you want to use both Wasabi Cloud object storage and IBM Cloud object storage within the same capacity tier, Wasabi Cloud object storage must be in [sealed mode](sobr_seal.md).
+* If you want to use S3-compatible repositories by different providers as capacity extents, one of these repositories must be in the sealed mode. For example, if you want to use both Wasabi Cloud object storage and IBM Cloud object storage within the same capacity tier, Wasabi Cloud object storage must be in [sealed mode](sobr_seal.md).
 
 * You cannot add more than one instance of Azure Databox or Snowball Edge AWS object storage repository as a capacity extent.
+* You cannot add the object storage repository that contains imported backups as a capacity extent. For more information, see [Importing Object Storage Backups](osr_import_backups.md).
 * You cannot copy transaction log backups to the capacity tier.
 * You cannot use the capacity tier as a target for file backup jobs and object storage backup jobs.
 * Before you start using the capacity tier, make sure to check the pricing plans of your cloud storage provider to avoid additional costs for offloading and downloading backup data.
@@ -61,6 +63,4 @@ For more information on limitations for a specific Veeam solution that utilizes 
 * [Veeam Plug-In for Microsoft SQL Server](repos_mssql.md#cap) — to check limitations for a backup and recovery solution that allows you to back up and restore Microsoft SQL Server databases.
 * [Veeam Plug-In for IBM Db2](db2_backup_repos.md#cap) — to check limitations for a backup and recovery solution that allows you to back up and restore IBM Db2 databases.
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_hana_advanced_notifications.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the backup policy:
 
@@ -29,8 +30,6 @@ Email notifications will be sent if you configure global email notification sett
 1. In the Subject field, specify a notification subject. You can use the following variables in the subject: %Time% (completion time), %JobName%, %JobResult%, %ObjectCount% (number of machines in the backup policy) and %Issues% (number of machines in the backup policy that have been processed with the Warning or Failed status).
 2. Select the Notify on success, Notify on warning and Notify on error check boxes to receive email notification if the policy completes successfully, completes with a warning or fails.
 
-![Notification Settings](images/policy_sap_hana_storage_advanced_notifications.webp)
+![Notification Settings](images/plugins_policy_sap_hana_storage_advanced_notifications.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

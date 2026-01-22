@@ -1,17 +1,23 @@
 ---
 title: "Step 5. Link Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_joblink_hv.html"
-last_updated: "1/5/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 5. Link Backup Job
 
-In this article
 
 At the Linked Jobs step of the wizard, select backup jobs with machines that you want to verify with the created SureBackup job.
 
 You can link a backup job to the SureBackup job or skip this step. If you do not link a backup job, in Full recoverability testing mode Veeam Backup & Replication will only start machines from the application group in the virtual lab and verify them. You have an option not to link a backup job to the SureBackup job only if you have selected an application group at the [Application Group](surebackup_job_appgroup_hv.md) step of the wizard.
+
+|  |
+| --- |
+| Note |
+| You cannot link backup copy jobs to the SureBackup job. |
 
 Linking Backup Job
 
@@ -46,6 +52,4 @@ To remove an object from the list, select it and click Remove.
 
 ![Step 5. Link Backup Job](images/surebackup_job_link_121.webp)
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

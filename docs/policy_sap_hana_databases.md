@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Specify Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_hana_databases.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify Databases
 
-In this article
 
 At the Databases step of the wizard, select protection groups, computers, database systems or individual databases whose data you want to back up.
 
@@ -40,7 +41,7 @@ To quickly find the necessary object, use the search field at the bottom of the 
 1. Enter the object name or a part of it in the search field.
 2. Click the Start search button on the right or press [Enter].
 
-![Step 3. Specify Databases](images/policy_saphana_databases_add.webp)
+![Step 3. Specify Databases](images/plugins_policy_saphana_databases_add.webp)
 
 Excluding Objects
 
@@ -63,8 +64,6 @@ You can press and hold [Ctrl] to select multiple objects at once.
 | Note |
 | In the Exclusions window, Veeam Backup & Replication shows only those objects which were already added to the backup scope. To learn more, see [Adding Objects from Inventory](#add). |
 
-![Step 3. Specify Databases](images/policy_saphana_databases_exclude.webp)
+![Step 3. Specify Databases](images/plugins_policy_saphana_databases_exclude.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

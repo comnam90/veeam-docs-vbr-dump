@@ -1,13 +1,14 @@
 ---
 title: "How Veeam Plug-In for SAP on Oracle Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hiw_sap_orcl_plugin.html"
-last_updated: "4/4/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Veeam Plug-In for SAP on Oracle Works
 
-In this article
 
 Veeam Plug-In for SAP on Oracle functions as an agent between SAP BR\*Tools and Veeam backup repositories. After you install and configure Veeam Plug-In, you can perform all backup and restore operations with BR\*Tools. Veeam Plug-In compresses database backups and transfers them to a backup repository connected to Veeam Backup & Replication.
 
@@ -30,13 +31,11 @@ After you configure Veeam Plug-In for SAP on Oracle, SAP BR\*Tools performs a ba
 4. Veeam Plug-In starts Veeam Data Mover on the SAP server and on the backup repository. Veeam Data Movers create communication channels for each backup data stream. Depending on the number of channels specified in Veeam Plug-In settings, there can be 1 or up to 32 parallel channels.
 5. Veeam Data Movers transport database backup files to the backup repository.
 
-[![How Backup Operations Work](images/sap_orcl_architecture.webp)](images/sap_orcl_architecture.webp "How Backup Operations Work")
+[![How Backup Operations Work](images/plugins_sap_orcl_architecture.webp)](images/plugins_sap_orcl_architecture.webp "How Backup Operations Work")
 
 |  |
 | --- |
 | Important |
 | Some backup operations, such as backing up of profiles, log files, control files and performing incremental backups of databases can be performed only with RMAN\_UTIL. For details, see [this SAP article](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/47/3b8f17fae93423e10000000a1553f6/content.htm?no_cache=true).  For details on how Veeam Plug-In for SAP on Oracle functions along with RMAN see, [SAP on Oracle Backup Using RMAN\_UTIL](rman_util.md). |
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

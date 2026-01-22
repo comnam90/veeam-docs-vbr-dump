@@ -1,13 +1,14 @@
 ---
 title: "Step 4. Specify Restore Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_target.html"
-last_updated: "11/28/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 4. Specify Restore Target
 
-In this article
 
 At the Target step of the wizard, specify where and how you want to restore the database:
 
@@ -43,8 +44,6 @@ By default, Veeam Plug-In selects the same file locations as for the original da
 
 1. Click Run to start the restore process.
 
-![Step 4. Specify Restore Target](images/mssql_restore_target.webp)
+![Step 4. Specify Restore Target](images/plugins_mssql_restore_target.webp)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

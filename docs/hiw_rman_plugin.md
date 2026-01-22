@@ -1,13 +1,14 @@
 ---
 title: "How Veeam Plug-In for Oracle RMAN Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hiw_rman_plugin.html"
-last_updated: "12/12/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Veeam Plug-In for Oracle RMAN Works
 
-In this article
 
 Veeam Plug-In functions as an agent between Oracle RMAN and Veeam backup repository.
 
@@ -20,14 +21,12 @@ When use Oracle RMAN integrated with Veeam Plug-In, the database backup is perfo
 3. Veeam Plug-In starts Veeam Data Mover Service on the Oracle server and on the Veeam backup repository. Depending on the configured limit of RMAN channels, there will be multiple connections started in parallel.
 4. Veeam Data Movers transport the backup data to the backup repository.
 
-[![How Veeam Plug-in for Oracle RMAN Works](images/rman_plugin_architecture.webp)](images/rman_plugin_architecture.webp "How Veeam Plug-in for Oracle RMAN Works")
+[![How Veeam Plug-in for Oracle RMAN Works](images/plugins_rman_plugin_architecture.webp)](images/plugins_rman_plugin_architecture.webp "How Veeam Plug-in for Oracle RMAN Works")
 
 Multiple Repositories Deployment
 
 Veeam Plug-In allows you to add up to 4 backup repositories. The backup process can be run in multiple channels. For each channel Veeam Plug-In creates a separate agent process.
 
-[![Multiple Repositories Deployment](images/rman_plugin_architecture_multiple_repositories.webp)](images/rman_plugin_architecture_multiple_repositories.webp "Multiple Repositories Deployment")
+[![Multiple Repositories Deployment](images/plugins_rman_plugin_architecture_multiple_repositories.webp)](images/plugins_rman_plugin_architecture_multiple_repositories.webp "Multiple Repositories Deployment")
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

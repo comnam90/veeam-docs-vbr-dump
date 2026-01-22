@@ -1,13 +1,14 @@
 ---
 title: "Installing Plug-In on Microsoft Windows"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_plugin_windows.html"
-last_updated: "1/6/2026"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Installing Plug-In on Microsoft Windows
 
-In this article
 
 Veeam Plug-In for Oracle RMAN is an additional component of Veeam Backup & Replication. The installation package of the plug-in is included in the Veeam Backup & Replication installation ISO file and available for download from [veeam.com](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 
@@ -46,19 +47,19 @@ Using veeam.com
 
 1. At the welcome screen of the installation wizard, click Next.
 
-![Installing Plug-In on Microsoft Windows](images/rman_plugin_install_welcome.webp)
+![Installing Plug-In on Microsoft Windows](images/plugins_rman_plugin_install_welcome.webp)
 
 1. At the License Agreement step of the wizard, accept the terms of license agreements and click I Accept.
 
-![Installing Plug-In on Microsoft Windows](images/rman_plugin_install_license.webp)
+![Installing Plug-In on Microsoft Windows](images/plugins_rman_plugin_install_license.webp)
 
 1. At the Data Location step of the wizard, specify the installation path for Veeam Plug-In and click Install.
 
-![Installing Plug-In on Microsoft Windows](images/rman_plugin_install_path.webp)
+![Installing Plug-In on Microsoft Windows](images/plugins_rman_plugin_install_path.webp)
 
 1. Wait for the installation process to complete and click Finish to exit the wizard.
 
-![Installing Plug-In on Microsoft Windows](images/rman_plugin_install_finish.webp)
+![Installing Plug-In on Microsoft Windows](images/plugins_rman_plugin_install_finish.webp)
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In on Microsoft Windows](configuring_rman_plugin_win.md).
 
@@ -106,6 +107,4 @@ Veeam Plug-In for Oracle RMAN uses the following codes to report about the insta
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In on Microsoft Windows](configuring_rman_plugin_win.md).
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

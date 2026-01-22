@@ -1,13 +1,14 @@
 ---
 title: "Step 7. Specify Policy Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_oracle_schedule.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 7. Specify Policy Schedule
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -50,8 +51,6 @@ For example, you have configured a job to run with a 2-hour interval and defined
 | NOTE |
 | If you configure a backup policy, after you click Apply at the Schedule step of the wizard, Veeam Backup & Replication will immediately apply the backup policy to protected computers. |
 
-![Step 7. Specify Policy Schedule](images/policy_sap_oracle_schedule.webp)
+![Step 7. Specify Policy Schedule](images/plugins_policy_sap_oracle_schedule.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

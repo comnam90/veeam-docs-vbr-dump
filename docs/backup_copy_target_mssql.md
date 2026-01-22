@@ -1,13 +1,14 @@
 ---
 title: "Step 4. Define Backup Copy Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_target_mssql.html"
-last_updated: "12/4/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 4. Define Backup Copy Target
 
-In this article
 
 At the Target step of the wizard, configure the target repository settings.
 
@@ -39,8 +40,6 @@ To map a backup copy job to the backup:
 
 1. You can specify the number of days after which the backup copy will be deleted from the repository. Note that the countdown starts from the moment when source backup has been created.
 
-![Step 4. Define Backup Copy Target](images/backup_copy_mssql_target.webp)
+![Step 4. Define Backup Copy Target](images/plugins_backup_copy_mssql_target.webp)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

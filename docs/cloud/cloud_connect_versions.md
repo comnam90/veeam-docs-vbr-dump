@@ -3,7 +3,7 @@ title: "Veeam Product Versions"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_versions.html"
-last_updated: "11/24/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +15,7 @@ The SP and tenants can run different versions of Veeam Backup & Replication on t
 * Veeam Backup & Replication versions must support the Veeam Cloud Connect functionality.
 * The SP Veeam backup server can run the same or later version of Veeam Backup & Replication than the tenant Veeam backup server. The SP backup server cannot run an earlier version of Veeam Backup & Replication than the tenant backup server.
 
-This applies to major product versions. Within Veeam Backup & Replication version 13, the SP and tenant can use any product build later that 13.0.1.180. It is recommended, however, that the SP and tenant install latest hotfixes and updates on the backup server.
+This applies to major product versions. Within Veeam Backup & Replication version 13, the SP and tenant can use a product build 13.0.1 or later. It is recommended, however, that the SP and tenant install latest hotfixes and updates on the backup server.
 
 * Veeam Backup & Replication 13.0.1 running on the SP backup server is compatible with the following versions of Veeam products running on the tenant side:
 

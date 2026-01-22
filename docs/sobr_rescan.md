@@ -1,13 +1,14 @@
 ---
 title: "Rescanning Scale-Out Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_rescan.html"
-last_updated: "7/22/2024"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Rescanning Scale-Out Repositories
 
-In this article
 
 Veeam Backup & Replication periodically rescans scale-out backup repositories. During the rescan process, it gets the following information:
 
@@ -48,6 +49,4 @@ To do it, perform the following steps:
 
 [![Scale-Out backup Repository Rescan Check](images/scaleout_repo_rescan_check.webp)](images/scaleout_repo_rescan_check.webp "Scale-Out backup Repository Rescan Check")
 
-Page updated 7/22/2024
 
-Page content applies to build 13.0.1.1071

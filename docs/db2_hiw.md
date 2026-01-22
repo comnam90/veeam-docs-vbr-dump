@@ -1,13 +1,14 @@
 ---
 title: "How Veeam Plug-In for IBM Db2 Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_hiw.html"
-last_updated: "4/4/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Veeam Plug-In for IBM Db2 Works
 
-In this article
 
 Veeam Plug-In acts as an agent between an IBM Db2 server and Veeam backup repositories.
 
@@ -20,8 +21,6 @@ When Veeam Plug-In is configured, IBM Db2 tools perform a database backup in the
 3. Veeam Plug-In starts Veeam Data Mover services on the IBM Db2 server and on a backup repository.
 4. Veeam Data Movers transport data to the backup repository.
 
-[![How Veeam Plug-in for IBM Db2 Works](images/db2_plugin_architecture.webp)](images/db2_plugin_architecture.webp "How Veeam Plug-in for IBM Db2 Works")
+[![How Veeam Plug-in for IBM Db2 Works](images/plugins_db2_plugin_architecture.webp)](images/plugins_db2_plugin_architecture.webp "How Veeam Plug-in for IBM Db2 Works")
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

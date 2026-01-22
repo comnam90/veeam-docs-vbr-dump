@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Select Backups to Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_copy_backups.html"
-last_updated: "4/2/2024"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Select Backups to Process
 
-In this article
 
 At the Object step of the wizard, select machines whose backups you want to copy to the target repository.
 
@@ -19,8 +20,6 @@ At the Object step of the wizard, select machines whose backups you want to copy
 1. Use the Remove button if you want to remove selected jobs or repositories from processing.
 2. If you have added jobs from a repository and want to exclude from processing some of the backup jobs on the selected repository, click Exclusions and select the jobs that you want to exclude.
 
-![Step 3. Select Backups to Process](images/db2_backup_copy_objects.webp)
+![Step 3. Select Backups to Process](images/plugins_db2_backup_copy_objects.webp)
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

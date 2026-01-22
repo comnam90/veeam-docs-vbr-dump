@@ -1,13 +1,14 @@
 ---
 title: "How Veeam Plug-In for SAP MaxDB Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_hiw.html"
-last_updated: "11/18/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Veeam Plug-In for SAP MaxDB Works
 
-In this article
 
 With the configured Veeam Plug-In for SAP MaxDB, you can use SAP MaxDB to perform backup and restore operations. Veeam Plug-In functions as a link between SAP MaxDB infrastructure and Veeam backup repositories. Veeam Plug-In accepts some commands from SAP MaxDB Database Manager and performs backup or restore tasks.
 
@@ -27,6 +28,4 @@ After you configure Veeam Plug-In for SAP MaxDB, components work in the followin
 3. Veeam Plug-In starts Veeam Data Mover on the SAP MaxDB server and on the backup repository. Veeam Data Movers create communication channels for each backup data stream. Depending on the number of channels specified in Veeam Plug-In settings, there can be 1 or up to 32 parallel channels.
 4. Veeam Data Movers transport database backup files to the backup repository.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

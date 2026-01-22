@@ -1,13 +1,14 @@
 ---
 title: "Deleting Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_delete.html"
-last_updated: "11/26/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Deleting Backup Policy
 
-In this article
 
 You can permanently remove a disabled application backup policy from Veeam Backup & Replication. Backups created by this backup policy remain on the target location.
 
@@ -23,8 +24,6 @@ After the job is deleted, the backups created by this job are displayed under th
 * In case of capacity tier, the backups are displayed under the Backups > Capacity Tier (Orphaned) node in the inventory pane.
 * In case of object storage, the backups are displayed under the Backups > Object Storage (Orphaned) node in the inventory pane.
 
-[![Delete Application Backup Policy](images/application_policy_delete.webp)](images/application_policy_delete.webp "Delete Application Backup Policy")
+[![Delete Application Backup Policy](images/plugins_application_policy_delete.webp)](images/plugins_application_policy_delete.webp "Delete Application Backup Policy")
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

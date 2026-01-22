@@ -1,13 +1,14 @@
 ---
 title: "Deploying Plug-In Using Veeam Deployment Kit"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_deployer_service.html"
-last_updated: "12/4/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Deploying Plug-In Using Veeam Deployment Kit
 
-In this article
 
 You have an option to install Veeam Plug-In on computers using certificate-based authentication instead of credentials. To do so, you must install Veeam Installer Service on the computer and then add the computer to a protection group of the [Individual computers](protection_group_types.md) type. In this case, Veeam Backup & Replication does not require SSH connection to install Veeam Plug-In.
 
@@ -28,7 +29,7 @@ To learn more, see the [Generate-VBRBackupServerDeployerKit](https://helpcenter.
 2. Click the Physical and Cloud Infrastructure node in the inventory pane and click Create Veeam Deployment Kit on the ribbon. Alternatively, right-click the Physical and Cloud Infrastructure node in the inventory pane and select Create Veeam deployment kit.
 3. In the Create Deployment Kit window, specify a path to the folder to which Veeam Backup & Replication will export the deployment kit files.
 
-[![Create deployment kit](images/create_deployment_kit.webp)](images/create_deployment_kit.webp "Create deployment kit")
+[![Create deployment kit](images/plugins_create_deployment_kit.webp)](images/plugins_create_deployment_kit.webp "Create deployment kit")
 
 1. Upload the exported files on the computer which database you want to protect.
 2. On the computer with database side, install the uploaded files. You can do this in one of the following ways:
@@ -74,6 +75,4 @@ Related Topics
 * [Protection Group Types](protection_group_types.md)
 * [Creating Protection Group for Individual Computers](protection_group_create_computers.md)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

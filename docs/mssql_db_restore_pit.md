@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Specify Point in Time"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_pit.html"
-last_updated: "9/16/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify Point in Time
 
-In this article
 
 At the Restore Point step of the wizard, select a point in time and a way that Veeam Plug-In will restore data:
 
@@ -34,8 +35,6 @@ When using the Quick recovery option, consider the following:
 | Tip |
 | The Quick recovery option may be helpful, for example, if you plan to continuously restore database to another location and want to have as relevant as possible copy of the backed-up database. |
 
-![Step 3. Specify Point in Time](images/mssql_restore_pit.webp)
+![Step 3. Specify Point in Time](images/plugins_mssql_restore_pit.webp)
 
-Page updated 9/16/2025
 
-Page content applies to build 13.0.1.1071

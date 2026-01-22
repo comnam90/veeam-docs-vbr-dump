@@ -1,13 +1,14 @@
 ---
 title: "Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_oracle_database_processing_general.html"
-last_updated: "11/4/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Processing Settings
 
-In this article
 
 To specify processing settings:
 
@@ -23,8 +24,6 @@ It is recommended that you select this option for databases for which the ARCHIV
 
 * Select Delete offline redo logs that were backed up if you want Veeam Plug-In back up logs and delete logs from the database after the backup operation. Veeam Plug-In will wait for the backup job to complete successfully and then trigger archived logs truncation using Oracle Call Interface (OCI). If the backup job fails, the logs will remain untouched until the next successful backup job session.
 
-![Processing Settings](images/policy_sap_oracle_database_processing_edit.webp)
+![Processing Settings](images/plugins_policy_sap_oracle_database_processing_edit.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

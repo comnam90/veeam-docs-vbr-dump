@@ -1,13 +1,14 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_oracle_advanced_storage.html"
-last_updated: "11/19/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Storage Settings
 
-In this article
 
 To specify compression settings for the backup job:
 
@@ -29,7 +30,7 @@ You can select a Key Management System (KMS) server in the Password field. To do
 | NOTE |
 | Consider the following:   * If you plan to encrypt the content of backup files, consider the limitations listed in [Data Encryption Limitations](#limits). * You must encrypt the backup policy if you want to back up data to the Veeam Data Vault storage. |
 
-![Storage Settings](images/policy_sap_oracle_storage_advanced_storage.webp)
+![Storage Settings](images/plugins_policy_sap_oracle_storage_advanced_storage.webp)
 
 Data Encryption Limitations
 
@@ -43,6 +44,4 @@ If you plan to encrypt the content of backup files, consider the following limit
 
 To learn more about data encryption in Veeam Backup & Replication, see [Data Encryption](data_encryption.md).
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

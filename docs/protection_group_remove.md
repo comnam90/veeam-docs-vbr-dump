@@ -1,13 +1,14 @@
 ---
 title: "Removing Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_remove.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Removing Protection Group
 
-In this article
 
 When you remove a protection group, you can instruct Veeam Backup & Replication to remove Veeam components from all protected computers included in this protection group, too. The protection group is removed permanently. You cannot undo this operation.
 
@@ -31,8 +32,6 @@ To remove a protection group:
 | TIP |
 | You can also remove individual computers from protection groups. For details, see [Removing Computer from Protection Group](protected_computers_remove.md). |
 
-[![Remove Protection Group](images/protection_group_remove.webp)](images/protection_group_remove.webp "Remove Protection Group")
+[![Remove Protection Group](images/plugins_protection_group_remove.webp)](images/plugins_protection_group_remove.webp "Remove Protection Group")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Database Backup (SAP HANA Cockpit)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_hana_cockpit.html"
-last_updated: "3/27/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Database Backup (SAP HANA Cockpit)
 
-In this article
 
 After you [configure Veeam Plug-In settings](configure_sap_hana_plugin.md), you can back up your databases with SAP HANA Cockpit 2.0. You can perform complete, incremental, and differential backups of SYSTEMDB and tenant databases. Veeam Plug-In will automatically transform backup files to Veeam backup repository. Keep in mind that you must select the Backint option as a destination target.
 
@@ -17,11 +18,11 @@ To perform Backint backup with SAP HANA Cockpit, do the following:
 
 1. In the System Overview page, go to Database Administration and select Manage Database Backups.
 
-[![Manage Database Backups](images/backup_cockpit_db_administration.webp)](images/backup_cockpit_db_administration.webp "Manage Database Backups")
+[![Manage Database Backups](images/plugins_backup_cockpit_db_administration.webp)](images/plugins_backup_cockpit_db_administration.webp "Manage Database Backups")
 
 1. At the Backup Catalog section, click Create Backup.
 
-[![Backup Catalog](images/backup_cockpit_launch.webp)](images/backup_cockpit_launch.webp "Backup Catalog")
+[![Backup Catalog](images/plugins_backup_cockpit_launch.webp)](images/plugins_backup_cockpit_launch.webp "Backup Catalog")
 
 1. Specify backup settings:
 
@@ -35,8 +36,6 @@ To perform Backint backup with SAP HANA Cockpit, do the following:
 2. Change the default prefix for the backup file, if needed.
 3. To start the backup, click Back Up.
 
-[![Specify Backup Settings](images/backup_cockpit_backup_type.webp)](images/backup_cockpit_backup_type.webp "Specify Backup Settings")
+[![Specify Backup Settings](images/plugins_backup_cockpit_backup_type.webp)](images/plugins_backup_cockpit_backup_type.webp "Specify Backup Settings")
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

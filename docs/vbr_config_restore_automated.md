@@ -1,13 +1,14 @@
 ---
 title: "Automating Configuration Database Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_restore_automated.html"
-last_updated: "8/23/2024"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Automating Configuration Database Restore
 
-In this article
 
 If you want to automate the process of the configuration database restore, you can do it using the Veeam.Backup.Configuration.UnattandedRestore.exe file.
 
@@ -71,6 +72,7 @@ Configuration File Parameters
 
 | Parameter | Description | Required |
 | --- | --- | --- |
+| MODE | Specifies the restore mode.  Supported values: restore or migrate.  Note: For the configuration database restore, specify the restore mode. | Yes |
 | CONFIGURATION\_FILE | Specifies a full path to the configuration backup file.  Supported values:   * For local backup files: C:\Backup\VeeamConfigBackup\VM\VM\_2022-12-04\_13-01-38.bco. * For network backup files: \\VM\Backups\VM\_2022-12-04\_13-01-38.bco. * For repository backup files: VeeamConfigBackup\VM\VM\_2022-12-04\_13-01-38.bco. | Yes |
 | REPOSITORY\_NAME | Specifies Veeam Backup & Replication repository name where the configuration backup file is stored. If you do not specify this parameter, empty name will be used.  Supported values: String. | No |
 | BACKUP\_PASSWORD | Specifies the password to decrypt the configuration backup file.  Supported values: String. | No |
@@ -100,6 +102,4 @@ Configuration File Parameters
 | PRIVATE\_KEYS | Specify this parameter if you want to update stored private keys during the configuration restore. If you do not specify this parameter, private keys will not be updated.  Supported values: user=privatekey;password;{hint}. | No |
 | HOSTS | Forces target server components upgrade if necessary. If you do not specify this parameter, all hosts will be upgraded.  Note: If you specify only several hosts out of all hosts in your backup infrastructure, only these hosts will be upgraded. Do not specify this parameter if you want to upgrade all hosts.  Supported values: DNS name\IP address. | No |
 
-Page updated 8/23/2024
 
-Page content applies to build 13.0.1.1071

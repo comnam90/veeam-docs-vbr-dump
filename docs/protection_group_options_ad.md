@@ -1,13 +1,14 @@
 ---
 title: "Step 6. Specify Discovery and Deployment Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_options_ad.html"
-last_updated: "11/18/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 6. Specify Discovery and Deployment Options
 
-In this article
 
 At the Options step of the wizard, specify settings for protected computers discovery and Veeam Plug-In deployment.
 
@@ -47,8 +48,6 @@ You can also choose to disable automated Veeam Plug-In installation. To do this,
 2. Select the Perform reboot automatically if required check box to allow Veeam Backup & Replication to reboot a protected computer.
 3. Click Advanced to specify advanced settings for the protection group. To learn more, see [Specify Advanced Protection Group Settings](protection_group_advanced.md).
 
-![Step 6. Specify Discovery and Deployment Options](images/protection_group_options_ad.webp)
+![Step 6. Specify Discovery and Deployment Options](images/plugins_protection_group_options_ad.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

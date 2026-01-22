@@ -1,13 +1,14 @@
 ---
 title: "Managing Backup Job in Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_job_vbr.html"
-last_updated: "11/28/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Managing Backup Job in Veeam Backup & Replication
 
-In this article
 
 After Veeam Plug-In for Microsoft SQL Server starts the backup process, Veeam Backup & Replication creates the backup job. You can use this job to view statistics on the backup process and generate backup job reports. You can also disable the backup job.
 
@@ -34,7 +35,7 @@ To view details of the backup process, do the following:
 | Note |
 | Veeam Backup & Replication does not display the progress bar for a running Veeam Plug-In for Microsoft SQL Server backup job. Statistics for backup jobs of this type becomes available after the backup job session is completed. |
 
-[![View Details of Backup Process](images/mssql_backup_job.webp)](images/mssql_backup_job.webp "View Details of Backup Process")
+[![View Details of Backup Process](images/plugins_mssql_backup_job.webp)](images/plugins_mssql_backup_job.webp "View Details of Backup Process")
 
 Generating Backup Job Reports
 
@@ -46,7 +47,7 @@ To generate a report, do the following:
 2. In the Home view, expand the Jobs node in the inventory pane and click Applications.
 3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
 
-[![Generate Backup Job Report](images/mssql_job_report.webp)](images/mssql_job_report.webp "Generate Backup Job Report")
+[![Generate Backup Job Report](images/plugins_mssql_job_report.webp)](images/plugins_mssql_job_report.webp "Generate Backup Job Report")
 
 Disabling Backup Job
 
@@ -60,8 +61,6 @@ To disable a backup job, do the following:
 
 1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
 
-[![Disable Backup Job](images/mssql_job_disable.webp)](images/mssql_job_disable.webp "Disable Backup Job")
+[![Disable Backup Job](images/plugins_mssql_job_disable.webp)](images/plugins_mssql_job_disable.webp "Disable Backup Job")
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

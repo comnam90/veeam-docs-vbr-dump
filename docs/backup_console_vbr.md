@@ -1,13 +1,14 @@
 ---
 title: "Backup Job in Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_console_vbr.html"
-last_updated: "3/27/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Backup Job in Veeam Backup & Replication
 
-In this article
 
 |  |
 | --- |
@@ -32,7 +33,7 @@ To view details of a backup job process, do the following:
 2. In the Home view, expand the Jobs node and click Application Plug-Ins.
 3. In the list of jobs, select the SAP HANA backup job to see details of the current backup process or the last backup job session.
 
-[![View Details of Backup Job Process](images/vpsh_job.webp)](images/vpsh_job.webp "View Details of Backup Job Process")
+[![View Details of Backup Job Process](images/plugins_vpsh_job.webp)](images/plugins_vpsh_job.webp "View Details of Backup Job Process")
 
 Generating Backup Job Reports
 
@@ -42,7 +43,7 @@ Veeam Backup & Replication can generate reports with details about an SAP HANA b
 2. In the inventory pane, select Jobs.
 3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
 
-[![View Report of Backup Job Process](images/vpsh_job_report.webp)](images/vpsh_job_report.webp "View Report of Backup Job Process")
+[![View Report of Backup Job Process](images/plugins_vpsh_job_report.webp)](images/plugins_vpsh_job_report.webp "View Report of Backup Job Process")
 
 Disabling Backup Job
 
@@ -56,8 +57,6 @@ To disable a backup job:
 
 1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
 
-[![Disable Backup Job](images/vpsh_job_disable.webp)](images/vpsh_job_disable.webp "Disable Backup Job")
+[![Disable Backup Job](images/plugins_vpsh_job_disable.webp)](images/plugins_vpsh_job_disable.webp "Disable Backup Job")
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

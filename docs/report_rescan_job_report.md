@@ -1,13 +1,14 @@
 ---
 title: "Viewing Rescan Job Report"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/report_rescan_job_report.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Viewing Rescan Job Report
 
-In this article
 
 You can generate reports with details about rescan job sessions performed for a specific protection group. The report contains data on the latest rescan job session initiated for the job upon schedule. To generate a report:
 
@@ -24,8 +25,6 @@ The report contains the following data:
 | TIP |
 | You can also set up Veeam Backup & Replication to send reports automatically by email. To learn more, see [Enabling Email Reporting](report_email.md). |
 
-[![View Rescan Job Report](images/report_discovery.webp)](images/report_discovery.webp "View Rescan Job Report")
+[![View Rescan Job Report](images/plugins_report_discovery.webp)](images/plugins_report_discovery.webp "View Rescan Job Report")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

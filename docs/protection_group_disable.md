@@ -1,13 +1,14 @@
 ---
 title: "Disabling Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_disable.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Disabling Protection Group
 
-In this article
 
 You can temporary disable a protection group. When you disable a protection group, you disable scheduled discovery of protected computers added to this protection group. This may be required, for example, if a new version of Veeam Agent or Veeam Plug-In appears on the Veeam Backup & Replication server, and you do not want to deploy a new version of the product to all protected computers at once. Instead, you can disable the protection group, test the deployment process on a specific computer in this group, and then enable the protection group to let Veeam Backup & Replication deploy a new version of the product to remaining computers.
 
@@ -32,8 +33,6 @@ To enable automatic discovery for the protection group:
 2. In the inventory pane, expand the Physical Infrastructure node.
 3. In the inventory pane, select the necessary protection group and click Enable on the ribbon or right-click the necessary protection group and select Enable.
 
-[![Disable Protection Group](images/protection_group_disable.webp)](images/protection_group_disable.webp "Disable Protection Group")
+[![Disable Protection Group](images/plugins_protection_group_disable.webp)](images/plugins_protection_group_disable.webp "Disable Protection Group")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

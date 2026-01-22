@@ -1,13 +1,14 @@
 ---
 title: "Viewing Backup Policy Report"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/report_backup_policy_report.html"
-last_updated: "12/20/2024"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Viewing Backup Policy Report
 
-In this article
 
 You can generate a report with details about application backup job sessions performed on protected databases added to a backup policy. The report contains data on the latest backup job session initiated for the backup policy. To generate a report:
 
@@ -28,8 +29,6 @@ The report contains data on the latest job session:
 | TIP |
 | You can also set up Veeam Backup & Replication to send reports automatically by email. To learn more, see [Enabling Email Reporting](report_email.md). |
 
-[![View Backup Policy Report](images/policy_report.webp)](images/policy_report.webp "View Backup Policy Report")
+[![View Backup Policy Report](images/plugins_policy_report.webp)](images/plugins_policy_report.webp "View Backup Policy Report")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

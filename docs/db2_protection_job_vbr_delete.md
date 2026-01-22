@@ -1,13 +1,14 @@
 ---
 title: "Deleting Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_job_vbr_delete.html"
-last_updated: "11/26/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Deleting Backup Job
 
-In this article
 
 You can delete Veeam Plug-In backup jobs in the Veeam Backup & Replication console. When you delete a job, Veeam Backup & Replication removes all records about the job from its database and console. Veeam Plug-In backups created by this job remain intact on the backup repository. In the Veeam Backup & Replication console, such backups are displayed in the Home view, under the Backups > Disk (Orphaned) node in the inventory pane. In certain cases, the backups can be displayed in other nodes:
 
@@ -24,8 +25,6 @@ To delete a backup job, do the following:
 
 1. In the working area, select the necessary job and click Delete on the ribbon. You can also right-click the job and select Delete.
 
-[![Disable Backup Job](images/db2_job_delete.webp)](images/db2_job_delete.webp "Disable Backup Job")
+[![Disable Backup Job](images/plugins_db2_job_delete.webp)](images/plugins_db2_job_delete.webp "Disable Backup Job")
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

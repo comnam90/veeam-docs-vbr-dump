@@ -1,13 +1,14 @@
 ---
 title: "Step 10. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_finish_ad.html"
-last_updated: "9/3/2024"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 10. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, complete the protection group configuration process.
 
@@ -18,8 +19,6 @@ If you want to perform computer discovery later, you can clear the Run discovery
 
 1. Click Finish to close the wizard.
 
-![Step 10. Finish Working with Wizard](images/protection_group_finish_ad.webp)
+![Step 10. Finish Working with Wizard](images/plugins_protection_group_finish_ad.webp)
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

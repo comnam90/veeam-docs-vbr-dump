@@ -1,13 +1,14 @@
 ---
 title: "Upgrading Veeam Plug-In for Microsoft SQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_mssql_plugin.html"
-last_updated: "12/10/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Upgrading Veeam Plug-In for Microsoft SQL Server
 
-In this article
 
 Periodically, Veeam releases a new version of Veeam Backup & Replication that contains new features and bug fixes. The release package also contains a new version of Veeam Plug-Ins.
 
@@ -53,24 +54,22 @@ Using veeam.com
 1. After you uploaded the files, you can upgrade Veeam Plug-In. To do this, open the setup archive and run the VeeamPluginforMSSQL.exe file to launch the installation wizard.
 2. At the welcome screen of the installation wizard, click Next.
 
-![Upgrading Veeam Plug-In for Microsoft SQL Server](images/mssql_plugin_install_welcome.webp)
+![Upgrading Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_plugin_install_welcome.webp)
 
 1. At the License Agreement step of the wizard, follow the links to view license agreements and click I Accept.
 
-![Upgrading Veeam Plug-In for Microsoft SQL Server](images/mssql_plugin_install_license.webp)
+![Upgrading Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_plugin_install_license.webp)
 
 1. At the Upgrade step of the wizard, review Veeam Plug-In for Microsoft SQL Server components to be upgraded and click Next.
 
-![Upgrading Veeam Plug-In for Microsoft SQL Server](images/mssql_plugin_upgrade_upgrade.webp)
+![Upgrading Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_plugin_upgrade_upgrade.webp)
 
 1. Wait for the upgrade process to complete and click Finish to exit the wizard.
 
-![Upgrading Veeam Plug-In for Microsoft SQL Server](images/mssql_plugin_upgrade_finish.webp)
+![Upgrading Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_plugin_upgrade_finish.webp)
 
 Upgrading Veeam Plug-In in Unattended Mode
 
 You can upgrade Veeam Plug-In for Microsoft SQL Server to a later version in the unattended mode using the same command that is used for unattended installation. For details, see [Installing Veeam Plug-In in Unattended Mode](install_mssql_unattended.md).
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

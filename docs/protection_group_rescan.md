@@ -1,13 +1,14 @@
 ---
 title: "Rescanning Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_rescan.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Rescanning Protection Group
 
-In this article
 
 When you perform protection group rescan, you manually start the discovery process for the protection group. This operation may be required, for example, if you want to discover new computers added to the protection group without waiting for the next rescan.
 
@@ -19,8 +20,6 @@ To rescan a protection group:
 2. In the inventory pane, expand the Physical Infrastructure node.
 3. In the inventory pane, select the necessary protection group and click Rescan on the ribbon or right-click the protection group and select Rescan.
 
-[![Rescan Protection Group](images/protection_group_rescan.webp)](images/protection_group_rescan.webp "Rescan Protection Group")
+[![Rescan Protection Group](images/plugins_protection_group_rescan.webp)](images/plugins_protection_group_rescan.webp "Rescan Protection Group")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_database_processing_general.html"
-last_updated: "11/4/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Processing Settings
 
-In this article
 
 To specify processing settings:
 
@@ -27,7 +28,7 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 | Note |
 | Make sure the specified OS user account has the required [permissions](plan_and_manage_permissions.md#rman). |
 
-![Processing Settings](images/policy_rman_processing_settings_os_authentication.webp)
+![Processing Settings](images/plugins_policy_rman_processing_settings_os_authentication.webp)
 
 * Database authentication
 
@@ -40,7 +41,7 @@ To set the database authentication, do the following:
 
 If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials. For details, see [Credentials Manager](credentials_manager.md).
 
-![Processing Settings](images/policy_rman_processing_settings_db_authentication.webp)
+![Processing Settings](images/plugins_policy_rman_processing_settings_db_authentication.webp)
 
 1. In the Archived logs section, specify if Veeam Plug-In must delete archived logs for the Oracle database:
 
@@ -54,6 +55,4 @@ In the Backup archived redo logs every <N> minutes field, specify the frequency 
 
 1. In the Parallel processing section, specify the number of data channels that Veeam Plug-In will use in parallel to back up logs.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071
