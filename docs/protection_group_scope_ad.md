@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Specify Active Directory Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_scope_ad.html"
-last_updated: "11/3/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify Active Directory Objects
 
-In this article
 
 At this step of the wizard, select Active Directory objects that you want to add to the protection group. You can add to a protection group the following types of Active Directory objects: domain, organization unit, container, computer, cluster, or group.
 
@@ -41,8 +42,6 @@ To quickly find the necessary object, you can use the search field at the bottom
 2. Enter the object name or a part of it in the search field.
 3. Click the Start search button on the right or press [Enter].
 
-![Step 3. Specify Active Directory Objects ](images/protection_group_ad_domain.webp)
+![Step 3. Specify Active Directory Objects ](images/plugins_protection_group_ad_domain.webp)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

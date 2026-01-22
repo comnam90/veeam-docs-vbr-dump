@@ -1,13 +1,14 @@
 ---
 title: "Configuring Plug-In for SAP HANA"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configure_sap_hana_plugin.html"
-last_updated: "12/3/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Plug-In for SAP HANA
 
-In this article
 
 When you configure Veeam Plug-In settings, you set up integration settings between an SAP HANA server, Veeam Backup & Replication server and backup repositories where backup files will be stored. Veeam Plug-In uses the SapBackintConfigTool wizard to configure the integration settings. The wizard configures the SAP HANA Backint settings and creates the/opt/veeam/VeeamPluginforSAPHANA/veeam\_config.xml file.
 
@@ -118,7 +119,7 @@ To verify that the Backint Agent is configured correctly, do the following:
 2. Go to Backup/Configuration.
 3. In the Backint Agent field, make sure that the specified path leads to /opt/veeam/VeeamPluginforSAPHANA/hdbbackint.
 
-[![Configuration of Veeam Plug-in for SAP HANA](images/symlink_check.webp)](images/symlink_check.webp "Configuration of Veeam Plug-in for SAP HANA")
+[![Configuration of Veeam Plug-in for SAP HANA](images/plugins_symlink_check.webp)](images/plugins_symlink_check.webp "Configuration of Veeam Plug-in for SAP HANA")
 
 Configuration Tool Parameters
 
@@ -159,6 +160,4 @@ To specify credentials that will be used to log in to the Veeam Backup & Replica
 | --- |
 | SapBackintConfigTool --set-credentials "serv02\Administrator" "password" |
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

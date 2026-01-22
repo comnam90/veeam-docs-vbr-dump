@@ -1,13 +1,14 @@
 ---
 title: "Veeam Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repos_mssql.html"
-last_updated: "11/21/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Veeam Backup Repositories
 
-In this article
 
 Veeam Plug-Ins store backup files in repositories added to the Veeam Backup & Replication infrastructure. This section lists supported types of backup repositories and limitations for Veeam Plug-In for Microsoft SQL Server backups.
 
@@ -81,7 +82,7 @@ If you want to store Veeam Plug-In backups in [scale-out backup repositories](ba
 
 1. On the Veeam Plug-In server, launch the Configure Plug-In wizard and set the scale-out repository as the target for backups:
 
-![Veeam Backup Repositories](images/mssql_configuration_vbr.webp)
+![Veeam Backup Repositories](images/plugins_mssql_configuration_vbr.webp)
 
 Alternatively, you can use the following command in the command line interface:
 
@@ -91,14 +92,14 @@ Alternatively, you can use the following command in the command line interface:
 
 1. If you connect to the specified Veeam Backup & Replication server for the first time, Veeam Plug-In displays the Certificate Security Alert window. After you review the certificate, click Continue to confirm the connection.
 
-![Veeam Backup Repositories](images/mssql_configuration_alert.webp)
+![Veeam Backup Repositories](images/plugins_mssql_configuration_alert.webp)
 
 1. At the Backup Repository step of the wizard:
 
 1. From the Backup repository drop-down list, select the scale-out repository.
 2. Click Map backups to map the imported backups stored in the backup repository.
 
-![Veeam Backup Repositories](images/mssql_configuration_repo.webp)
+![Veeam Backup Repositories](images/plugins_mssql_configuration_repo.webp)
 
 |  |
 | --- |
@@ -172,7 +173,7 @@ To restore backup availability in the Veeam Backup & Replication console, do the
 
 As a result, the backup will appear in the Veeam Backup & Replication console as an imported backup. You can perform all available restore operations for imported backups with the newly imported backup.
 
-[![Repair of Backup](images/repo_rescan.webp)](images/repo_rescan.webp "Repair of Backup")
+[![Repair of Backup](images/plugins_repo_rescan.webp)](images/plugins_repo_rescan.webp "Repair of Backup")
 
 Object Storage Repository
 
@@ -191,6 +192,4 @@ Before you configure your backup infrastructure to back up to the object storage
 
 * For Microsoft Azure Blob storage, Veeam Plug-Ins do not support soft delete for blobs.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "How Veeam Plug-In for Microsoft SQL Server Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hiw_mssql_plugin.html"
-last_updated: "11/28/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Veeam Plug-In for Microsoft SQL Server Works
 
-In this article
 
 Veeam Plug-In for Microsoft SQL Server performs backup of Microsoft SQL Server databases in the following way:
 
@@ -18,18 +19,16 @@ Veeam Plug-In for Microsoft SQL Server performs backup of Microsoft SQL Server d
 5. The source Veeam Data Mover reads the backup data from VDI Devices and transfers it to the target Veeam Data Mover.
 6. The target Veeam Data Mover writes the backup data to the backup repository.
 
-![How Veeam Plug-In for Microsoft SQL Server Works](images/mssql_plugin_architecture.webp)
+![How Veeam Plug-In for Microsoft SQL Server Works](images/plugins_mssql_plugin_architecture.webp)
 
 Parallel Database Processing
 
 Veeam Plug-In allows you to back up the same Microsoft SQL Server database in multiple parallel streams. To do this, you must specify the necessary number of data streams when configuring backup settings. For each data stream, a separate VDI Device is created.
 
-![How Veeam Plug-In for Microsoft SQL Server Works](images/mssql_plugin_architecture_parallel.webp)
+![How Veeam Plug-In for Microsoft SQL Server Works](images/plugins_mssql_plugin_architecture_parallel.webp)
 
 If you back up multiple databases simultaneously, a separate VDI Device is created for each backed-up database.
 
-![How Veeam Plug-In for Microsoft SQL Server Works](images/mssql_plugin_architecture_multiple.webp)
+![How Veeam Plug-In for Microsoft SQL Server Works](images/plugins_mssql_plugin_architecture_multiple.webp)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

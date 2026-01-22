@@ -1,13 +1,14 @@
 ---
 title: "Restoring from Backup with Veeam Explorer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_backups_restore_with_explorer.html"
-last_updated: "11/6/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring from Backup with Veeam Explorer
 
-In this article
 
 You can recover SAP HANA, Oracle and Microsoft SQL Server databases from backups created with Veeam Plug-In for SAP HANA, Veeam Plug-In for Oracle RMAN and Veeam Plug-In for Microsoft SQL Server:
 
@@ -44,8 +45,6 @@ To restore database from an application backup:
 * [For Oracle database backup] Click Oracle Database on the ribbon or right-click the backup and select Restore from Oracle RMAN backup.
 * [For SAP HANA database backup] Click SAP HANA Database on the ribbon or right-click the backup and select Restore from SAP HANA backup.
 
-[![Restore from Database Backup](images/application_backup_restore_from_backup.webp)](images/application_backup_restore_from_backup.webp "Restore from Database Backup")
+[![Restore from Database Backup](images/plugins_application_backup_restore_from_backup.webp)](images/plugins_application_backup_restore_from_backup.webp "Restore from Database Backup")
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

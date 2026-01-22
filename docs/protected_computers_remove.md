@@ -1,13 +1,14 @@
 ---
 title: "Removing Computer from Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_remove.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Removing Computer from Protection Group
 
-In this article
 
 You can remove one or more computers from a protection group, for example, if you do not want to protect these computers with Veeam Plug-In any longer but want to back up data of other computers in the protection group.
 
@@ -33,7 +34,7 @@ Backups created for computers that were removed from a protection group remain i
 | NOTE |
 | You cannot remove a computer from the protection group if this computer is a failover cluster node. |
 
-[![Remove from Configuration](images/protected_computer_remove_form_configuration.webp)](images/protected_computer_remove_form_configuration.webp "Remove from Configuration")
+[![Remove from Configuration](images/plugins_protected_computer_remove_form_configuration.webp)](images/plugins_protected_computer_remove_form_configuration.webp "Remove from Configuration")
 
 Alternative Ways to Remove Computer from Protection Group
 
@@ -46,6 +47,4 @@ Alternatively, if the protection group contains a container, organization unit, 
 
 * For a protection group that contains computers listed in a CSV file, remove the record about the necessary computer from the CSV file. During subsequent rescan of the protection group, Veeam Backup & Replication will remove the computer from the protection group.
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Evacuating Backups from Extents"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_evacuate.html"
-last_updated: "4/29/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Evacuating Backups from Extents
 
-In this article
 
 If you want to remove an extent from a scale-out backup repository, you first need to evacuate backups from this extent. When you evacuate backups, Veeam Backup & Replication moves backup files from the necessary extent to other extents within the same scale-out backup repository.
 
@@ -111,6 +112,4 @@ To stop backups evacuation, do the following:
 
 [![Evacuating Backups from Extents](images/scaleout_repo_evacuate_stop.webp)](images/scaleout_repo_evacuate_stop.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Creating Recovery Token"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_backup_vbr_token.html"
-last_updated: "9/2/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Creating Recovery Token
 
-In this article
 
 If you want to recover database data from a specific backup, you can use the Create recovery token operation.
 
@@ -41,8 +42,6 @@ You can also create and modify the existing recovery token using the PowerShell 
 | Tip |
 | Alternatively, you can get access to the backup using user credentials. |
 
-[![Create Recovery Token](images/db2_backup_create_recovery_token.webp)](images/db2_backup_create_recovery_token.webp "Create Recovery Token")
+[![Create Recovery Token](images/plugins_db2_backup_create_recovery_token.webp)](images/plugins_db2_backup_create_recovery_token.webp "Create Recovery Token")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

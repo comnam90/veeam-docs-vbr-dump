@@ -1,13 +1,14 @@
 ---
 title: "Importing Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_backups_mssql.html"
-last_updated: "11/28/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Importing Backup Files
 
-In this article
 
 If the Veeam Backup & Replication server has failed and you have restored it in a new location, you can copy the backup files to a new repository and re-map the Veeam Plug-In backup files.
 
@@ -45,7 +46,7 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 * In case of capacity tier, the backups are displayed under the Backups > Capacity Tier (Imported) node in the inventory pane.
 * In case of object storage, the backups are displayed under the Backups > Object Storage (Imported) node in the inventory pane.
 
-[![Rescan Backup Repository](images/repo_rescan.webp)](images/repo_rescan.webp "Rescan Backup Repository")
+[![Rescan Backup Repository](images/plugins_repo_rescan.webp)](images/plugins_repo_rescan.webp "Rescan Backup Repository")
 
 1. On Microsoft SQL Server, set the new backup repository as a target in the Veeam Plug-In settings and map Veeam Plug-In to backups in the repository. For more information, see [Configuring Veeam Plug-In for Microsoft SQL Server](configuring_mssql_plugin.md).
 
@@ -54,6 +55,4 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 | Note |
 | After you import the backup, map the imported backup to continue to back up to this repository. |
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

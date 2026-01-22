@@ -1,13 +1,14 @@
 ---
 title: "Configuring Veeam Plug-In for Microsoft SQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_mssql_plugin.html"
-last_updated: "12/2/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Veeam Plug-In for Microsoft SQL Server
 
-In this article
 
 To use Veeam Plug-In, you must configure connection between Microsoft SQL Server, Veeam Backup & Replication server and backup repository where backup files will be stored.
 
@@ -48,11 +49,11 @@ For details about other required ports, see [Ports](ports_mssql.md).
 
 1. In the Username and Password fields, specify credentials that will be used to connect to the Veeam Backup & Replication server.
 
-![Configuring Veeam Plug-In for Microsoft SQL Server](images/mssql_configuration_vbr.webp)
+![Configuring Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_configuration_vbr.webp)
 
 1. If you connect to the specified Veeam Backup & Replication server for the first time, Veeam Plug-In displays the Certificate Security Alert window. After you review the certificate, click Continue to confirm the connection.
 
-![Configuring Veeam Plug-In for Microsoft SQL Server](images/mssql_configuration_alert.webp)
+![Configuring Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_configuration_alert.webp)
 
 1. At the Backup Repository step of the wizard, do the following:
 
@@ -68,7 +69,7 @@ You can map Veeam Plug-In for Microsoft SQL Server backup jobs to multiple backu
 
 1. Click Finish to exit the wizard.
 
-![Configuring Veeam Plug-In for Microsoft SQL Server](images/mssql_configuration_repo.webp)
+![Configuring Veeam Plug-In for Microsoft SQL Server](images/plugins_mssql_configuration_repo.webp)
 
 |  |
 | --- |
@@ -123,6 +124,4 @@ You can specify the following parameters for the MSSQLConfigTool.exe command:
 | --instance | Use the --instance parameter only with the --exclude-from-managed-mode parameter.  Specifies the instance whose databases are are excluded from the backup scope of an application backup policy. |
 | --d | Use the --d parameter only with the --exclude-from-managed-mode parameter.  Specifies the databases that are excluded from the backup scope of an application backup policy. |
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

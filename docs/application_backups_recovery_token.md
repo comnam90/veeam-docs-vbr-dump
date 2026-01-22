@@ -1,13 +1,14 @@
 ---
 title: "Creating Recovery Token"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_backups_recovery_token.html"
-last_updated: "11/4/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Creating Recovery Token
 
-In this article
 
 If you want to recover database from a specific backup, you can use the Create recovery token operation.
 
@@ -47,8 +48,6 @@ You can create a recovery token for several backups. To do this, press and hold 
 | Tip |
 | Alternatively, you can create and modify the existing recovery token using the PowerShell console. To learn more, see the [Working with Tokens](https://helpcenter.veeam.com/docs/vbr/powershell/tokens.html?ver=13) section in the Veeam PowerShell Reference. |
 
-[![Create Recovery Token](images/application_backup_create_recovery_token.webp)](images/application_backup_create_recovery_token.webp "Create Recovery Token")
+[![Create Recovery Token](images/plugins_application_backup_create_recovery_token.webp)](images/plugins_application_backup_create_recovery_token.webp "Create Recovery Token")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

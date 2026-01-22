@@ -1,13 +1,14 @@
 ---
 title: "Viewing Backup Policy Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/report_backup_policy_stats.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Viewing Backup Policy Statistics
 
-In this article
 
 You can view statistics about application backup policies configured in Veeam Backup & Replication. Veeam Backup & Replication displays statistics in the following way:
 
@@ -27,8 +28,6 @@ To view application backup policy statistics:
 * To get statistics for database data backup, double-click the necessary application backup policy. Alternatively, you can select the necessary application backup policy and click Statistics > Instance backup on the ribbon or right-click the backup policy and select Statistics > Instance backup.
 * To get statistics for database logs backup, select the necessary application backup policy and click Statistics > Database logs backup on the ribbon or right-click the backup policy and select Statistics > Database logs backup.
 
-[![Application Backup Policy Statistics](images/statistics_policy.webp)](images/statistics_policy.webp "Application Backup Policy Statistics")
+[![Application Backup Policy Statistics](images/plugins_statistics_policy.webp)](images/plugins_statistics_policy.webp "Application Backup Policy Statistics")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

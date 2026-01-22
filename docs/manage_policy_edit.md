@@ -1,13 +1,14 @@
 ---
 title: "Editing Backup Policy Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_edit.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Editing Backup Policy Settings
 
-In this article
 
 You can edit settings of an application backup policy at any time. For example, you may want to change the backup scope, target location or scheduling settings for application backup policies running on protected computers.
 
@@ -23,8 +24,6 @@ To edit backup policy settings:
 3. In the working area, select the backup policy and click Edit on the ribbon or right-click the policy and select Edit.
 4. Complete the steps of the Edit Application Backup Policy wizard to change the job settings as required.
 
-[![Edit Application Backup Policy](images/application_policy_edit.webp)](images/application_policy_edit.webp "Edit Application Backup Policy")
+[![Edit Application Backup Policy](images/plugins_application_policy_edit.webp)](images/plugins_application_policy_edit.webp "Edit Application Backup Policy")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

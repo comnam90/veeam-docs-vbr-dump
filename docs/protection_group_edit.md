@@ -1,13 +1,14 @@
 ---
 title: "Editing Protection Group Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_edit.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Editing Protection Group Settings
 
-In this article
 
 You can edit the settings of a protection group. This operation may be required, if you want to add/remove computers to/from a protection group or change settings for protected computers discovery and Veeam components deployment defined in the properties of the protection group.
 
@@ -23,8 +24,6 @@ To edit protection group settings:
 3. In the inventory pane, select the protection group that you want to edit and click Edit Group on the ribbon or right-click the protection group that you want to edit and select Edit Group.
 4. Edit protection group settings as required.
 
-[![Edit Protection Group Settings](images/protection_group_edit.webp)](images/protection_group_edit.webp "Edit Protection Group Settings")
+[![Edit Protection Group Settings](images/plugins_protection_group_edit.webp)](images/plugins_protection_group_edit.webp "Edit Protection Group Settings")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

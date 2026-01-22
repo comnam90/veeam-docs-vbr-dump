@@ -1,17 +1,19 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_byb.html"
-last_updated: "1/7/2026"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 Before you install Veeam Software Appliance, review known issues and limitations described in [release notes](https://helpcenter.veeam.com/rn/veeam_backup_13_release_notes.html#known-issues-and-limitations). Also, consider the following:
 
 * Veeam Software Appliance must be installed on a dedicated empty machine that meets the system requirements. For more information, see [System Requirements](system_requirements.md).
+* Essentials license holders cannot license an ISO-based deployment.
 
 * Backup infrastructure components communicate over specific network ports. These ports must be open. For more information, see [Ports](used_ports.md).
 
@@ -42,6 +44,4 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * [V-257937](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-257937) — The RHEL 9 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems.
 * [V-258122](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-258122) — RHEL 9 must enable certificate based smart card authentication.
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

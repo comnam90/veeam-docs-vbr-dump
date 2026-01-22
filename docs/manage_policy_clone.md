@@ -1,13 +1,14 @@
 ---
 title: "Cloning Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_clone.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Cloning Backup Policy
 
-In this article
 
 You can clone application backup policies configured in Veeam Backup & Replication. For example, you may want to configure a backup policy that will be used as a template, and use this policy to create multiple policies with similar settings.
 
@@ -23,8 +24,6 @@ To clone a backup policy:
 | NOTE |
 | The backup policy cloning functionality is available only in the Enterprise and Enterprise Plus editions of Veeam Backup & Replication. |
 
-[![Clone Application Backup Policy](images/application_policy_clone.webp)](images/application_policy_clone.webp "Clone Application Backup Policy")
+[![Clone Application Backup Policy](images/plugins_application_policy_clone.webp)](images/plugins_application_policy_clone.webp "Clone Application Backup Policy")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Specify Backup Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_options.html"
-last_updated: "11/6/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Specify Backup Options
 
-In this article
 
 At the Backup Options step of the wizard, specify data retention settings and data processing settings according to which you want to perform backup, and start the backup process:
 
@@ -37,8 +38,6 @@ If you want Veeam Plug-In to perform backup with the specified settings regularl
 
 If you do not want to start the backup process immediately, click Close to exit the wizard.
 
-![Step 3. Specify Backup Options](images/mssql_backup_options.webp)
+![Step 3. Specify Backup Options](images/plugins_mssql_backup_options.webp)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Assigning Location to Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_location.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Assigning Location to Protection Group
 
-In this article
 
 You can assign a location to a protection group configured in Veeam Backup & Replication. To assign a location:
 
@@ -18,8 +19,6 @@ You can assign a location to a protection group configured in Veeam Backup & Rep
 
 For details on locations, see [Locations](locations.md).
 
-[![Assign Location to Protection Group](images/protection_group_location.webp)](images/protection_group_location.webp "Assign Location to Protection Group")
+[![Assign Location to Protection Group](images/plugins_protection_group_location.webp)](images/plugins_protection_group_location.webp "Assign Location to Protection Group")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

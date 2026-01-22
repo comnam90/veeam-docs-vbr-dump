@@ -1,13 +1,14 @@
 ---
 title: "Backup Chain"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_backup_chain.html"
-last_updated: "11/27/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Backup Chain
 
-In this article
 
 A sequence of backups created with Veeam Plug-In for a Microsoft SQL Server database makes up a backup chain. The backup chain can be described at two levels: physical level and logical level.
 
@@ -22,7 +23,7 @@ The logical sequence of backups is hidden from the user — the user cannot get 
 
 For information about types of backup files that Veeam Plug-In creates and rules for creating the backup chain, see [Backup Files](#files) and [How Backup Chain Works](#chain).
 
-![Backup Chain](images/backup_chain.webp)
+![Backup Chain](images/plugins_backup_chain.webp)
 
 Backup Files
 
@@ -52,6 +53,4 @@ Veeam Plug-In writes data of each backed-up database to a separate backup file. 
 | Note |
 | If the backup is targeted at a scale-out backup repository, Veeam Plug-In selects an extent where to write the backup data according to the placement policy specified for the scale-out backup repository (Data locality or Performance). After that, Veeam Plug-In applies the same algorithm to choose whether to write the backup data to an existing backup file or new backup file. |
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

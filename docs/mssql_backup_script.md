@@ -1,13 +1,14 @@
 ---
 title: "Saving Backup Settings as SQL Agent Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_backup_script.html"
-last_updated: "11/6/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Saving Backup Settings as SQL Agent Job
 
-In this article
 
 You can save backup settings specified for Veeam Plug-In for Microsoft SQL Server as an SQL Agent job. This may be helpful if you have Microsoft SQL Server Management Studio in your environment and want to use its functionality to apply schedule to a Microsoft SQL Server backup job.
 
@@ -23,7 +24,7 @@ The SQL Agent job will become available in the Jobs node in Microsoft SQL Server
 | Tip |
 | Consider [exit codes](#exit) that the MSSQLRecoveryManager.exe command can return. |
 
-![Saving Backup Settings as SQL Agent Job](images/mssql_backup_agent_job.webp)
+![Saving Backup Settings as SQL Agent Job](images/plugins_mssql_backup_agent_job.webp)
 
 Exit Codes
 
@@ -34,8 +35,6 @@ The MSSQLRecoveryManager.exe command can return the following exit codes:
 
 Make sure that you specify 0 in the Process exit code of a successful command field when you configure the SQL Agent job properties using Microsoft SQL Server Management Studio.
 
-![Saving Backup Settings as SQL Agent Job](images/management_studio_exit_code_0.webp)
+![Saving Backup Settings as SQL Agent Job](images/plugins_management_studio_exit_code_0.webp)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

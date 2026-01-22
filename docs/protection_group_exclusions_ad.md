@@ -1,13 +1,14 @@
 ---
 title: "Step 4. Exclude Objects from Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_exclusions_ad.html"
-last_updated: "8/26/2024"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 4. Exclude Objects from Protection Group
 
-In this article
 
 At this step of the wizard, you can specify which objects you want to exclude from the protection group. You can exclude the following types of objects:
 
@@ -29,8 +30,6 @@ To quickly find the necessary Active Directory object, you can use the search fi
 2. Enter the object name or a part of it in the search field.
 3. Click the Start search button on the right or press [Enter].
 
-![Step 4. Exclude Objects from Protection Group](images/protection_group_exclusions_ad.webp)
+![Step 4. Exclude Objects from Protection Group](images/plugins_protection_group_exclusions_ad.webp)
 
-Page updated 8/26/2024
 
-Page content applies to build 13.0.1.1071

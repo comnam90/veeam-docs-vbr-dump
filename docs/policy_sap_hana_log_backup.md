@@ -1,13 +1,14 @@
 ---
 title: "Step 7. Specify Log Backup Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_hana_log_backup.html"
-last_updated: "10/31/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 7. Specify Log Backup Settings
 
-In this article
 
 At the Log Backup step of the wizard, specify log processing settings:
 
@@ -36,8 +37,6 @@ To quickly find the necessary object, use the search field at the bottom of the 
 1. Enter the object name or a part of it in the search field.
 2. Click the Start search button on the right or press [Enter].
 
-![Step 7. Specify Log Backup Settings](images/policy_sap_hana_log_backup.webp)
+![Step 7. Specify Log Backup Settings](images/plugins_policy_sap_hana_log_backup.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

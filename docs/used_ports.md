@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "1/20/2026"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -42,6 +42,7 @@ Incoming Connections
 | Backup repository (Linux) | TCP | 2500 to 3300 | Default range of ports used as transmission channels for copy backup operations if the backup server is used as the target backup repository. These ports are also required for file copy operations between the Linux backup repository and the backup server.  For every TCP connection that a job uses, one port from this range is assigned. |
 | Tape server | TCP | 2500 to 3300 | Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | Mount server | TCP | 9401 | Port used for communication with the Veeam Backup Service.  Also required to perform Copy to and Mount to console operations during Windows file-level recovery. |
+| TCP | 443 | Port used for communication with the backup server during file-level recovery. |
 | REST client | TCP | 9419 | Default ports for communication with REST API service. |
 | Management client PC (remote access) | TCP | 10443 | Default port used by the Linux-based backup server to connect to the Host Management console. |
 | CDP components | TCP | 33034 | [CDP only] Port used by the following CDP components to communicate with Veeam CDP Coordinator Service:   * CDP proxy (source and target) * ESXi host (source and target) * vCenter Server (source and target)   For more information, see [Continuous Data Protection (CDP) for VMware vSphere](cdp_replication.md). |
@@ -82,7 +83,7 @@ Outgoing Connections
 | Microsoft Graph REST API  (graph.microsoft.com, login.microsoftonline.com) | TCP | 443 | Port used to communicate with Microsoft Exchange Online organizations. |
 | Other Communications | | | | |
 | Backup server | Veeam Update Repository  (repository.veeam.com) | TCP | 443 | Port used by backup servers deployed from the Veeam Software Appliance ISO. It is used to connect to the Veeam Update Repository. The repository is Veeam-maintained and provides product, operating system, and security updates. For more information, see [How Updates Work](update_appliance_hiw.md). |
-| Veeam Update Repository (local mirror)  (<localmirrorrepository.domain>) | TCP | 80 | Port used by backup servers deployed from the Veeam Software Appliance ISO. It is used to connect to a local mirror of the Veeam Update Repository. For more information, see [Configuring Updates](update_appliance_configure_updates.md).  Consider that the address must be replaced with the actual URL of your mirror repository. |
+| Veeam Update Repository (local mirror)  (<localmirrorrepository.domain>) | TCP | 443 or 80 | Port used by backup servers deployed from the Veeam Software Appliance ISO. It is used to connect to a local mirror of the Veeam Update Repository. For more information, see [Configuring Updates](update_appliance_configure_updates.md).  Consider that the address must be replaced with the actual URL of your mirror repository. |
 | Veeam License Update Server  (vbr.butler.veeam.com, autolk.veeam.com) | TCP | 443 | Default port used to automatically update license from the Veeam License Update Server over HTTPS. Veeam Threat Hunter and Veeam Data Cloud Vault also require this communication to work properly. |
 | Veeam License Update Server  (\*.ss2.us, \*.amazontrust.com) | TCP | 80 | Port used for certificate validation when Veeam Backup & Replication connects to Veeam License Update Server to check if the new license is available and download it. Veeam Threat Hunter also requires this communication to work properly.  Consider that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. You can find the actual list of addresses in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access |
 | Certificate Revocation Lists | TCP | 80 or 443 | Port used for access to the Certificate Revocation Lists (CRL) of the Certificate Authority (CA) that issued the certificate for each backup infrastructure component.  Note: The specific CRL endpoint that must be connected to depends on the CA that issued the certificate.  You can find the actual list of addresses in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access |
@@ -111,7 +112,8 @@ The following table describes network ports that must be opened to ensure proper
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
-| Veeam Backup & Replication console | Mount server | TCP | 2500 to 3300 | [Remote console only] Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned.  This port is used if the mount server is not located on the console. |
+| Veeam Backup & Replication console | Mount server | TCP | 6162, 2500 to 3300 | [Remote console only] Ports used as data transmission channels for guest OS file-level restore. For every TCP connection that a job uses, one port from this range is assigned.  These ports are used if the mount server is not located on the console.  Note: The port range 2500-3300 is optional. You can use it for failover if port 6162 is unavailable. |
+|  | TCP |  |  |
 | Veeam AI Assistant  (rest-ai.veeam.com) | TCP | 443 | Default port for communication with the Veeam AI Assistant service. |
 | Backup server | TCP | 9396 | Port used for gRPC communication with UI Service required for GUI operation (processing database queries and caching data). |
 | Backup server | TCP | 9420 | [For console version 12.3.2 P1 (build 12.3.2.4165)] Port used by the Veeam Backup & Replication console to communicate with the backup server for console automatic update. |
@@ -123,7 +125,7 @@ The following table describes network ports that must be opened to ensure proper
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
 | Veeam Infrastructure Appliance | Veeam Update Repository  (repository.veeam.com) | TCP | 443 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO. It is used to connect to the Veeam Update Repository. The repository is Veeam-maintained and provides product, operating system, and security updates. For more information, see [How Updates Work](update_appliance_hiw.md). |
-| Veeam Update Repository (local mirror)  (<localmirrorrepository.domain>) | TCP | 80 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO. It is used to connect to a local mirror of the Veeam Update Repository. For more information, see [Configuring Updates](update_appliance_configure_updates.md).  Consider that the address must be replaced with the actual URL of your mirror repository. |
+| Veeam Update Repository (local mirror)  (<localmirrorrepository.domain>) | TCP | 443 or 80 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO. It is used to connect to a local mirror of the Veeam Update Repository. For more information, see [Configuring Updates](update_appliance_configure_updates.md).  Consider that the address must be replaced with the actual URL of your mirror repository. |
 | Backup server | TCP | 443 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO to authenticate incoming connections from Veeam Backup & Replication. |
 | NTP server | UDP | 123 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO for synchronization with NTP time servers. |
 | NTS server | UDP | 123 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO for synchronization with NTS time servers. |
@@ -807,7 +809,8 @@ Mount Server Connections
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
-| Mount server | Backup repository | TCP | 2500 to 3300 | Default range of ports used for communication with a backup repository. |
+| Mount server | Backup server | TCP | 443 | Port used to communicate with the backup server. |
+| Backup repository | TCP | 6162, 2500 to 3300 | Default range of ports used for communication with a backup repository.  Note: The port range 2500-3300 is optional. You can use it for failover if port 6162 is unavailable. |
 | ESXi host | TCP | 443 | Default port used for connections to the ESXi host. |
 | vCenter server | TCP | 443 | Default port used for connections to the vCenter server. |
 | Veeam Signature Update Server  (avupdate.veeam.com) | TCP | 443 | Default port used by Veeam Threat Hunter to download information about new malware signatures from the Veeam Signature Update Server over HTTPS. |
@@ -853,7 +856,7 @@ Guest OS Connections
 | Backup server | VM guest OS (Linux/Unix) | TCP | 22 | Default SSH port used as a control channel. |
 | Mount server | VM guest OS (Microsoft Windows) | TCP | 445, 135 | Required to deploy the runtime coordination process on the VM guest OS. |
 | TCP | 6160, 11731 | Default port and failover port used by Veeam Installer Service. |
-| TCP | 6173, 2500 | Port used by the Veeam Guest Helper for guest OS processing and file-level restore if persistent agent components are deployed inside the VM guest OS. |
+| TCP | 6162 | Port used by the Veeam Transport Service for file-level restore. |
 | Backup server | VM guest OS | TCP | 2500 to 3300 | Default range of ports used for communication with a VM guest OS. |
 
 Veeam vPower NFS Service

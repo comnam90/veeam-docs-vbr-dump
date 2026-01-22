@@ -1,13 +1,14 @@
 ---
 title: "Backup Job in Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_job_vbr.html"
-last_updated: "11/28/2024"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Backup Job in Veeam Backup & Replication
 
-In this article
 
 |  |
 | --- |
@@ -36,7 +37,7 @@ To view details of a backup job process, do the following:
 2. In the Home view, expand the Jobs node and click Backup.
 3. In the list of jobs, select the Oracle RMAN backup job to see details of the current backup process or the last backup job session.
 
-[![View Details of Backup Job Process](images/rman_backup_job.webp)](images/rman_backup_job.webp "View Details of Backup Job Process")
+[![View Details of Backup Job Process](images/plugins_rman_backup_job.webp)](images/plugins_rman_backup_job.webp "View Details of Backup Job Process")
 
 Generating Backup Job Reports
 
@@ -48,7 +49,7 @@ To generate a report, do the following:
 2. In the inventory pane, select Jobs.
 3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
 
-[![Generate Backup Job Report](images/rman_job_report.webp)](images/rman_job_report.webp "Generate Backup Job Report")
+[![Generate Backup Job Report](images/plugins_rman_job_report.webp)](images/plugins_rman_job_report.webp "Generate Backup Job Report")
 
 Disabling Backup Job
 
@@ -62,8 +63,6 @@ To disable a backup job, do the following:
 
 1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
 
-[![Disable Backup Job](images/rman_job_disable.webp)](images/rman_job_disable.webp "Disable Backup Job")
+[![Disable Backup Job](images/plugins_rman_job_disable.webp)](images/plugins_rman_job_disable.webp "Disable Backup Job")
 
-Page updated 11/28/2024
 
-Page content applies to build 13.0.1.1071

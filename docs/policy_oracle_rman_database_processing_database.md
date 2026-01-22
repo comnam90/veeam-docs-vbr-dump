@@ -1,13 +1,14 @@
 ---
 title: "Pluggable Database Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_database_processing_database.html"
-last_updated: "9/2/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Pluggable Database Settings
 
-In this article
 
 The Pluggable Databases tab is available if you selected an individual database in the Credentials list at the Database Processing step of the wizard.
 
@@ -22,8 +23,6 @@ To specify settings for pluggable database (PDB) processing:
 * All PDBs except — select this option if you want to process all detected pluggable databases excluding the databases that you specify. Click Add to add the necessary databases or wildcards to the list.
 * Only the following PDBs — select this option if you want to process only those pluggable databases that you specify. Click Add to add the necessary databases or wildcards to the list.
 
-![Pluggable Database Settings](images/policy_rman_processing_pluggable_dbs.webp)
+![Pluggable Database Settings](images/plugins_policy_rman_processing_pluggable_dbs.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

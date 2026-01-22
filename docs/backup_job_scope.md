@@ -1,13 +1,14 @@
 ---
 title: "Step 2. Select Databases to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_scope.html"
-last_updated: "11/28/2025"
+last_updated: "1/19/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 2. Select Databases to Back Up
 
-In this article
 
 At the Databases step of the wizard, select Microsoft SQL Server databases that you want to back up:
 
@@ -35,8 +36,6 @@ Keep in mind that differential backups cannot use the copy-only full backup as a
 | TIP |
 | At this step of the wizard, you can also export backup settings to a custom script. You will be able to use this script with a third-party scheduling tool. For details, see [Exporting Backup Settings to Custom Script](mssql_backup_agent_job.md). |
 
-![Step 2. Select Databases to Back Up](images/mssql_backup_dbs.webp)
+![Step 2. Select Databases to Back Up](images/plugins_mssql_backup_dbs.webp)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

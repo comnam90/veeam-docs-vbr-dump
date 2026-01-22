@@ -1,13 +1,14 @@
 ---
 title: "Switching to Sealed Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_seal.html"
-last_updated: "6/26/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Switching to Sealed Mode
 
-In this article
 
 Veeam Backup & Replication allows you to put any of the scale-out backup repository extents into the Sealed mode.
 
@@ -75,6 +76,4 @@ Related Topics
 * [Short-Term Retention Policy](retention_policy.md)
 * [Switching to Maintenance Mode](sobr_maintenance.md)
 
-Page updated 6/26/2025
 
-Page content applies to build 13.0.1.1071

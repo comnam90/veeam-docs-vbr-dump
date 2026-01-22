@@ -1,13 +1,14 @@
 ---
 title: "Using Certificate Signed by Internal CA"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tls_internal_ca.html"
-last_updated: "11/18/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Using Certificate Signed by Internal CA
 
-In this article
 
 If you want to use a certificate signed by an internal Certificate Authority (CA), consider the following:
 
@@ -44,11 +45,12 @@ A certificate signed by a CA must meet the following requirements:
 + Digital Signature
 + Certificate Signing
 + Off-line CRL Signing
-+ CRL Signing (86)
++ CRL Signing (06)
 
 ![Using Certificate Signed by Internal CA](images/certificate_key_usage.webp)
 
 * The Path Length Constraint parameter in the Basic Constraints extension is set to 0.
+* The Subject Type parameter in the Basic Constraints extension is set to CA.
 
 [![Using Certificate Signed by Internal CA](images/certificate_basic_constraints.webp)](images/certificate_basic_constraints.webp)
 
@@ -60,6 +62,4 @@ If you use Windows Server Certification Authority, open the Certificate Template
 
 To start using the signed certificate, you must select it from the local certificate store on the Veeam Backup & Replication server or import it as a .pfx file. To learn more, see [Importing Certificate from Certificate Store](import_tls.md) and [Importing Certificate from PFX Files](import_tls_pfx.md).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

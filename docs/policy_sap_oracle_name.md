@@ -1,13 +1,14 @@
 ---
 title: "Step 2. Specify Policy Name"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_oracle_name.html"
-last_updated: "10/31/2025"
+last_updated: "1/20/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 2. Specify Policy Name
 
-In this article
 
 At the Name step of the wizard, specify a name and description for the application backup policy.
 
@@ -24,8 +25,6 @@ At the Name step of the wizard, specify a name and description for the applicati
 
 * Use BR\*Tools with BACKINT (util\_file\_online mode)
 
-![Step 2. Specify Policy Name](images/policy_sap_oracle_name.webp)
+![Step 2. Specify Policy Name](images/plugins_policy_sap_oracle_name.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071
