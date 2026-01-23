@@ -1,13 +1,14 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/before_you_begin_data_box.html"
-last_updated: "8/2/2024"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you add Microsoft Azure Data Box to the backup infrastructure, complete the following steps:
 
@@ -58,12 +59,15 @@ Consider that Veeam Backup & Replication supports Azure Data Box devices that ar
 
 As with any other object storage, REST API performance depends on scale. As Azure Data Box is a single endpoint, the individual throughput of this REST API may be limited. The block size used in Veeam Backup & Replication capacity tier for object storage offload matches that of the source job. The default object size will be a compressed 1 MB block, resulting in objects of around 512 KB in size.
 
-The speed of data offload to Azure Data Box devices may reach about 300 MB/s. To achieve this speed, we recommend using a separate gateway server with 8 CPU cores.
+Data offload speed capabilities depend on the Azure Data Box devices:
+
+* Azure Data Box 80 TiB: Data offload speed can reach up to 300 MB/s.
+* Azure Data Box Next Gen 120 TB: Data offload speed can reach up to 600 MB/s.
+
+For optimal performance, it is recommended to use a dedicated gateway server equipped with at least 8 CPU cores.
 
 Related Topics
 
 [Gateway Servers](gateway_server.md)
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

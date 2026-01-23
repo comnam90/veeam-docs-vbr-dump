@@ -1,13 +1,14 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_systemreqs.html"
-last_updated: "11/7/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # System Requirements
 
-In this article
 
 This section lists system requirements for Veeam Explorer for Microsoft SharePoint.
 
@@ -20,11 +21,4 @@ The set of supported Microsoft SharePoint versions depends on the product Veeam 
 
 \*Government support is experimental. For more information on Veeam experimental support, see [this Veeam KB article](https://www.veeam.com/kb2976).
 
-|  |
-| --- |
-| Note |
-| [For machines with ReFS] The mount server, staging server, backup server and the machine where the console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability). |
 
-Page updated 11/7/2025
-
-Page content applies to build 13.0.1.1071

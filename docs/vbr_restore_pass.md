@@ -1,13 +1,14 @@
 ---
 title: "Step 5. Specify Password"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_restore_pass.html"
-last_updated: "12/4/2023"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 5. Specify Password
 
-In this article
 
 The Password step of the wizard is available if you have enabled the encryption option in the configuration backup properties.
 
@@ -21,10 +22,8 @@ If you forgot or lost the password, click the I forgot the password link. For mo
 |  |
 | --- |
 | Note |
-| Restoring configuration data without a password is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise or higher edition is required.  Also, your backup server must be connected to Veeam Backup Enterprise Manager. Otherwise, you will not see the I forgot the password link. |
+| The availability of restoring configuration data without a password depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).  Also, your backup server must be connected to Veeam Backup Enterprise Manager. Otherwise, you will not see the I forgot the password link. |
 
 ![Step 5. Specify Password](images/vbr_restore_pass.webp)
 
-Page updated 12/4/2023
 
-Page content applies to build 13.0.1.1071

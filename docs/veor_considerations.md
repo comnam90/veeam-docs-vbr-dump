@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_considerations.html"
-last_updated: "12/2/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and known limitations of Veeam Explorer for Oracle.
 
@@ -72,9 +73,10 @@ If you have selected the more secure, manual validation in the Veeam Backup & Re
 
 * [For data recovery to Oracle ASM disks] You cannot specify paths and file names for recovered database files. During recovery, Oracle ASM will automatically create and name the necessary files in the specified disk group using the OMF (Oracle Managed Files) feature.
 * Veeam Explorer for Oracle does not support recovery of Oracle databases deployed on Solaris OS or IBM AIX. You can restore such databases with Veeam Plug-In for Oracle RMAN. For details, see [Restore to Original Server](restore_rman.md) or [Restore to Another Server](restore_other_server_rman.md).
-* [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
 
 * [For Linux-based backup servers] To recover Oracle data to a Microsoft Windows server, you must specify a Windows mount server for the backup repository or a default Windows mount server.
+
+* [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
 
 Restore from Image-Level Backups
 
@@ -196,6 +198,4 @@ Export
 
 The databases from the Data Guard are exported as standalone Oracle databases, preserving no Data Guard infrastructure.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

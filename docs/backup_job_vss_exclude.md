@@ -1,20 +1,21 @@
 ---
 title: "VM Guest OS File Exclusion"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_exclude.html"
-last_updated: "12/9/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # VM Guest OS File Exclusion
 
-In this article
 
 If you do not want to back up specific files and folders on the VM guest OS, you can exclude them from the backup.
 
 |  |
 | --- |
 | Note |
-| VM guest OS file exclusion functionality is included in the Veeam Universal License. When using a legacy socket-based license, an Enterprise or higher edition is required. |
+| The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 To specify excluded files and folders, do the following:
 
@@ -35,6 +36,4 @@ To specify excluded files and folders, do the following:
 
 ![VM Guest OS File Exclusion](images/file_exclude.webp)
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

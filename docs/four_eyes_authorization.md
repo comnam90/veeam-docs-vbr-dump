@@ -1,13 +1,14 @@
 ---
 title: "Four-Eyes Authorization"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/four_eyes_authorization.html"
-last_updated: "11/19/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Four-Eyes Authorization
 
-In this article
 
 You can enable four-eyes authorization to reduce the risk of accidental actions affecting sensitive data. This functionality requires additional approval for certain operations in Veeam Backup & Replication given by another user. To approve the request, the user must have the Veeam Backup Administrator or Veeam Security Administrator role.
 
@@ -53,7 +54,7 @@ Requirements and Limitations
 
 Four-eyes authorization has the following requirements and limitations:
 
-* The functionality is included only in the Veeam Universal License or the Enterprise Plus edition. If the license expires, you will still be able to process already created requests but not to create new ones.
+* The availability of the functionality depends on the license you use. For more information, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). If the license expires, you will still be able to process already created requests but not to create new ones.
 * If four-eyes authorization is enabled, you cannot perform the following operations:
 
 + Delete operations using PowerShell cmdlets, REST API, and Veeam Backup Enterprise Manager.
@@ -94,6 +95,4 @@ To view events related to four-eyes authorization, open the History view and sel
 
 [![Four-Eyes Authorization](images/four_eyes_history.webp)](images/four_eyes_history.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071
