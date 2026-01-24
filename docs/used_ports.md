@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "1/21/2026"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -113,9 +113,7 @@ The following table describes network ports that must be opened to ensure proper
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
 | Veeam Backup & Replication console | Mount server | TCP | 6162, 2500 to 3300 | [Remote console only] Ports used as data transmission channels for guest OS file-level restore. For every TCP connection that a job uses, one port from this range is assigned.  These ports are used if the mount server is not located on the console.  Note: The port range 2500-3300 is optional. You can use it for failover if port 6162 is unavailable. |
-|  | TCP |  |  |
 | Veeam AI Assistant  (rest-ai.veeam.com) | TCP | 443 | Default port for communication with the Veeam AI Assistant service. |
-| Backup server | TCP | 9396 | Port used for gRPC communication with UI Service required for GUI operation (processing database queries and caching data). |
 | Backup server | TCP | 9420 | [For console version 12.3.2 P1 (build 12.3.2.4165)] Port used by the Veeam Backup & Replication console to communicate with the backup server for console automatic update. |
 
 Veeam Infrastructure Appliance
@@ -1018,7 +1016,7 @@ Veeam Plug-Ins for Cloud Solutions
 
 * [AWS Plug-In for Veeam Backup & Replication](https://helpcenter.veeam.com/docs/vbaws/guide/ports.html?ver=10)
 * [Microsoft Azure Plug-In for Veeam Backup & Replication](https://helpcenter.veeam.com/docs/vbazure/guide/ports.html?ver=8.1)
-* [Google Cloud Plug-In for Veeam Backup & Replication](https://helpcenter.veeam.com/docs/vbgc/guide/ports.html?ver=7)
+* [Veeam Plug-in for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/ports.html?ver=7)
 
 Kasten
 

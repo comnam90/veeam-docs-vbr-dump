@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_recovery_specials.html"
-last_updated: "11/20/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and limitations of Veeam Explorer for Microsoft SharePoint.
 
@@ -35,6 +36,7 @@ If you start item-level recovery directly for the backup of the SharePoint VM, m
 Backup of the same VM by both Veeam Backup & Replication and Veeam Agent for Microsoft Windows may be required, for example, if Microsoft SQL Server running on the VM operates as part of a failover cluster.
 
 * Veeam Explorer for Microsoft SharePoint must stay open during all data recovery operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
+* [For machines with ReFS] The mount server, staging server, backup server and the machine where the console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
 
 |  |
 | --- |
@@ -158,6 +160,4 @@ Also, consider the following when planning for the restore of list items (with o
 * If the retention policy for the target list or target document library was configured to declare items as records automatically, only the last version of the item will be restored to the target list or target document library. Target retention policy settings will be applied to the restored item. Besides, if the Require content approval for submitted items option was enabled for the original list, then the item status will be set to Pending after restore.
 * Alternatively (with different retention policy settings), all versions of the original item will be restored to the target list or target document library. Besides, if the Require content approval for submitted items option was enabled for the original list, then after restore the item status in the content approval workflow will be also restored, except for the states listed. For more information, see [Status Restore Limitations](#status_restore_lim).
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_considerations.html"
-last_updated: "11/20/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and known limitations of Veeam Explorer for Microsoft Active Directory.
 
@@ -22,6 +23,12 @@ General
 
 * Veeam Explorer for Microsoft Active Directory does not support data recovery using a group Managed Service Account (gMSA) to connect to the target server.
 * Veeam Explorer for Microsoft Active Directory must stay open during all data recovery operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
+
+* Veeam Explorer for Microsoft Active Directory does not support Active Directory Lightweight Directory Services (AD LDS).
+* Database files created by the domain controller can be opened for object recovery with Veeam Explorer for Microsoft Active Directory only if Veeam Explorer for Microsoft Active Directory is installed on a Windows machine with the same OS version or later than the version of the domain controller OS.
+* To open database files, Veeam Explorer for Microsoft Active Directory uses a service dynamic link library (Esent.dll) which is installed with Microsoft Active Directory Domain Services and can be found in the %SystemRoot% directory. The Esent.dll file on a machine with Veeam Explorer for Microsoft Active Directory must be of the same version as that of Microsoft Active Directory Domain Services that was used to create database files.
+
+* [For machines with ReFS] The mount server, backup server and the machine where the Veeam Backup & Replication console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
 * [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
 
 Restore
@@ -54,6 +61,4 @@ Export
 * Veeam Explorer for Microsoft Active Directory uses Lightweight Data Interchange Format to save Active Directory objects and containers to .ldf files. You can make an .ldf file available to the Active Directory Domain Services server by importing it with the ldifde utility. For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781%28v%3Dws.10%29).
 * Veeam Explorer for Microsoft Active Directory does not support exporting passwords.
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

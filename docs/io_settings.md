@@ -1,20 +1,21 @@
 ---
 title: "Specifying I/O Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/io_settings.html"
-last_updated: "10/31/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Specifying I/O Settings
 
-In this article
 
 You can specify data processing settings.
 
 Consider the following:
 
-* The Enable storage latency control option is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise or higher edition is required.
-* The Set custom thresholds on individual datastores option is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise Plus edition is required.
+* The availability of the Enable storage latency control option depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
+* The availability of the Set custom thresholds on individual datastores option depends on the license you use. For more information about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * For vVols/vSAN storage used in VMware vSphere environments, the Enable storage latency control option is not supported.
 
 To specify data processing settings:
@@ -50,6 +51,4 @@ To set the I/O latency limit for every storage separately:
 
 ![Specifying I/O Settings](images/notify_io_volume.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

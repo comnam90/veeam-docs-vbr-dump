@@ -1,13 +1,14 @@
 ---
 title: "VM Guest OS Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_exclusion_hv.html"
-last_updated: "2/11/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # VM Guest OS Files
 
-In this article
 
 If you do not want to back up or replicate some files and folders on the VM guest OS, you can exclude them from the backup or replica. File exclusion reduces the size of the backup or replica but may affect job performance.
 
@@ -62,7 +63,7 @@ Requirements and Limitations for VM Guest OS File Exclusion
 VM guest OS files exclusion has the following limitations:
 
 * File exclusion works only on Microsoft Windows NTFS.
-* File exclusion is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise or higher edition is required.
+* The availability of the file exclusion feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * To exclude VM guest OS files, Veeam Backup & Replication must be able to deploy the non-persistent runtime components or use (in necessary, deploy) persistent agent components inside the VM. For this reason, the VM must be running and accessible by an IP address or through the Installer Service on VM, and credentials for application-aware processing must be valid.
 * Veeam Backup & Replication supports both basic and dynamic disks. For the dynamic disks, simple type of volumes is supported. Spanned, mirrored and striped volumes are not supported.
 * It is not recommended that you use VM guest files exclusion in Microsoft Windows for volumes with enabled Data Deduplication. If you decide to use VM guest files exclusion for such volumes and set up a list of inclusions, you must add the System Volume Information folder to the list of inclusions.
@@ -113,6 +114,4 @@ During the job session with file exclude, Veeam Backup & Replication makes chang
 * Data blocks that were excluded during the previous job session
 * Data blocks that must be excluded during the current job session
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

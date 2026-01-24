@@ -1,15 +1,18 @@
 ---
 title: "Background Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/background_retention_job_hv.html"
-last_updated: "11/27/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Background Retention
 
-In this article
 
-In addition to applying a retention policy ([short-term retention](retention_policy_hv.md) and [long-term retention](gfs_retention_policy_hv.md)) within a job session, Veeam Backup & Replication performs background retention for backups. The background retention aims mostly at backups that are no longer processed by jobs (orphaned backups shown in the node with the (Orphaned) postfix). However, this retention can also be helpful for standard backups, in case backups are created by jobs without a schedule, the job retention has not been applied yet or failed for some reason, and so on.
+In addition to applying a retention policy ([short-term retention](retention_policy_hv.md) and [long-term retention](gfs_retention_policy_hv.md)) within a job session, Veeam Backup & Replication performs background retention for backups. Background retention mostly targest backups that are no longer processed by jobs (orphaned backups shown in the node with the (Orphaned) postfix). In such cases, background retention uses the last known retention settings and can delete the entire backup. Background retention is the only method for deleting the outdated restore points and backups.
+
+However, background retention can also apply to backups that still have an associated job. In these cases, background retention follows the retention settings of the job and the presence or absence of a schedule does not affect the process. It always leaves 3 restore points, even if all the points are outdated. Background retention is especially useful for jobs without a schedule, where there can be an outdated storage before the next manual run.
 
 The background retention starts automatically every 24 hours at 00:30, runs in the background and consists of the following activities:
 
@@ -18,6 +21,8 @@ The background retention starts automatically every 24 hours at 00:30, runs in t
 * Background log retention
 * Backup cleanup
 * Deleted Agent retention
+
+It can also be started manually at any time through the [Apply retention](backup_background_retention_launch_hv.md) option.
 
 Limitations
 
@@ -52,6 +57,9 @@ Consider the following:
 * [For backups created with Veeam Agent for Windows operating in standalone or managed by Veeam Agent mode] For backups linked to jobs basic retention does not apply.
 * Unlike the job retention, the background retention does not merge data from one backup file to another; it just deletes files. In the case of forever forward incremental and forward incremental backup chains, the background retention deletes incremental files only after the last increment in the related part of the backup chain becomes outdated.
 * The background retention does not delete backup files if they are locked by other processes. The retention waits until the backup file is unlocked.
+
+* Background retention requires free space in the target repository for the generated metadata file (.VBM). If the backup repository does not have enough free disk space, the background retention task (including manual Apply retention option) will fail. Ensure the repository has sufficient free space before you run background retention.
+
 * You can launch the background retention manually as described in section [Launching Background Retention](backup_background_retention_launch_hv.md).
 
 Background Basic Retention
@@ -94,6 +102,4 @@ Related Links
 * [Launching Background Retention](backup_background_retention_launch_hv.md)
 * [Disabling Background Retention](backup_background_retention_disable_hv.md)
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

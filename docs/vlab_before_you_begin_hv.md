@@ -1,17 +1,18 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_before_you_begin_hv.html"
-last_updated: "8/11/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you create a virtual lab, check the following prerequisites:
 
-* A valid license for Enterprise edition of Veeam Backup & Replication must be installed on the backup server.
+* The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * You can configure a virtual lab on the following types of hosts:
 
 + Microsoft Windows Server 2022 with the Hyper-V role enabled
@@ -31,6 +32,4 @@ Before you create a virtual lab, check the following prerequisites:
 | Note |
 | Starting from Veeam Backup & Replication 12, you can verify VMware vSphere backups and Veeam Agent backups using Hyper-V virtual lab. To learn about SureBackup limitations for Veeam Agent backups, see [Veeam Agent Backup](agents_recovery_verification.md). |
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

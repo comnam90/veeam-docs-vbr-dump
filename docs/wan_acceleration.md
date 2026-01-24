@@ -1,13 +1,14 @@
 ---
 title: "WAN Acceleration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_acceleration.html"
-last_updated: "5/29/2024"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # WAN Acceleration
 
-In this article
 
 WAN acceleration is a Veeam technology that optimizes data transfer to remote locations. It is specific for off-site backup copy jobs and replication jobs.
 
@@ -16,7 +17,7 @@ To enable WAN acceleration and data deduplication technologies, you must deploy 
 |  |
 | --- |
 | Note |
-| WAN acceleration is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise or Enterprise Plus editions of Veeam Backup & Replication are required. |
+| The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 Off-site backup copy and replication always involve moving large volumes of data between remote sites. The most common problems that backup administrators encounter during off-site backup and replication are insufficient network bandwidth to support VM data traffic and transmission of redundant data. To solve these problems, Veeam Backup & Replication offers the WAN acceleration technology that combines:
 
@@ -40,6 +41,4 @@ In This Section
 * [Data Block Verification](wan_crc.md)
 * [Data Transport on WAN Disconnect](resume_disconnect_wan.md)
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071
