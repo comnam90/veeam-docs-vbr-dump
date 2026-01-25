@@ -1,20 +1,21 @@
 ---
 title: "Guest Interaction Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_interaction_proxy.html"
-last_updated: "1/7/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Guest Interaction Proxies
 
-In this article
 
 The guest interaction proxy is a backup infrastructure component that sits between the backup server and the processed VM. To interact with the VM guest OS, Veeam Backup & Replication needs either to install non-persistent runtime components or use (if necessary, install) persistent agent components in each VM. The task of deploying these components in a VM is performed by the guest interaction proxy. For more information on the components, see [Non-Persistent Runtime Components and Persistent Agent Components](runtime_process.md).
 
 |  |
 | --- |
 | Note |
-| The guest interaction proxy functionality requires a license with Enterprise or higher edition. |
+| The availability of the guest interaction proxy functionality depends on the license you use. For more details about licensing support, see Veeam [Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 The guest interaction proxy allows you to communicate with the VM guest OS even if the backup server and processed VM run in different networks.
 
@@ -80,6 +81,4 @@ Related Topics
 * [Creating Replication Jobs](replica_job.md)
 * [Creating VM Copy Jobs](copy_job.md)
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

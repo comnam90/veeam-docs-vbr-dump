@@ -1,19 +1,20 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_considerations.html"
-last_updated: "12/12/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 If you plan to use universal CDP to protect your workloads, consider the following requirements and limitations.
 
 Licensing
 
-CDP is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise Plus edition is required.
+The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 Infrastructure Components
 
@@ -74,6 +75,4 @@ Replicas
 * On the target host, Veeam Backup & Replication does not allow you to migrate replicas using VMware vSphere Storage vMotion. Note that host vMotion is allowed. However, note that during failover, host vMotion is not allowed.
 * Replicas can be powered on only using the failover operation; powering on replicas manually is not supported.
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

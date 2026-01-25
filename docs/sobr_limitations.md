@@ -1,13 +1,14 @@
 ---
 title: "Limitations for Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_limitations.html"
-last_updated: "11/20/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Limitations for Scale-Out Backup Repositories
 
-In this article
 
 Limitations for Jobs
 
@@ -92,7 +93,7 @@ Enterprise edition of Veeam Backup & Replication has the following limitations f
 |  |
 | --- |
 | Note |
-| Veeam Universal License and Enterprise Plus of Veeam Backup & Replication editions have no limitations on the number of scale-out backup repositories or performance extents and capacity extents. |
+| Veeam Universal License and Enterprise Plus editions of Veeam Backup & Replication have no limitations on the number of scale-out backup repositories or performance extents and capacity extents. |
 
 Limitations for Veeam Solutions
 
@@ -107,6 +108,4 @@ For more information on limitations for a specific Veeam solution that utilizes 
 
 * [Veeam Agent for Microsoft Windows](https://helpcenter.veeam.com/docs/agentforwindows/userguide/backup_to_object_storage.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for physical and virtual machines running Windows-based operating systems.
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

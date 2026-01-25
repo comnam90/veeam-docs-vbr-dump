@@ -1,13 +1,14 @@
 ---
 title: "Supported Storage Features for Backup and Orchestration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/supported_features.html"
-last_updated: "1/6/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Supported Storage Features for Backup and Orchestration
 
-In this article
 
 Veeam Backup & Replication supports the following native storage features for backup from storage snapshots and snapshot orchestration:
 
@@ -48,7 +49,7 @@ The following table shows which storage systems and which features supports Veea
 | Pure Storage FlashArray | ✓ | Asynchronous Replication ActiveCluster Replication | ✓ | Asynchronous Replication2 ActiveCluster Replication1 | ✕ | Offload2 |
 | Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile) | ✓ | ✕ | ✓ | ✕ | ✕ | ✕ |
 
-1 Snapshot orchestration requires at least Enterprise license. Backup from storage snapshots with snapshot retention always requires Enterprise Plus license.
+1 Snapshot orchestration and backup from storage snapshots with snapshot retention requires specific licenses. For more information, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 2 Enterprise Plus license is required.
 
@@ -72,6 +73,4 @@ The following table shows storage systems, replication features and terms for th
 | Hitachi VSP/VSP One Block | ✕ | TrueCopy Global-Active Device (GAD) |
 | Pure Storage FlashArray | Asynchronous Replication | ActiveCluster Replication |
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

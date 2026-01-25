@@ -1,13 +1,14 @@
 ---
 title: "Backup Copy Architecture"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_path.html"
-last_updated: "9/9/2024"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Backup Copy Architecture
 
-In this article
 
 To transport data from the source backup repository to the target backup repository, the backup copy job uses one of the following paths:
 
@@ -43,7 +44,7 @@ Veeam Backup & Replication transports data through a pair of WAN accelerators: o
 |  |
 | --- |
 | Important |
-| The WAN acceleration technology is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise Plus edition is required. For more information, see [WAN Acceleration](wan_acceleration.md). |
+| The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 When Veeam Backup & Replication transports data using WAN accelerators, it uses Veeam Data Movers on the following backup infrastructure components:
 
@@ -52,6 +53,4 @@ When Veeam Backup & Replication transports data using WAN accelerators, it uses 
 
 ![Backup Copy Architecture](images/backup_copy_wan_path.webp)
 
-Page updated 9/9/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_considerations.html"
-last_updated: "12/23/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and known limitations of Veeam Explorer for PostgreSQL.
 
@@ -81,6 +82,4 @@ Export
 * PostgreSQL on the staging server and on the backed-up machine must be of the same major version. For example, if PostgreSQL 15.1 is installed on the backed-up machine, the staging server can have PostgreSQL 15.3.
 * You can use pg\_restore to reconstruct a database from a DUMP file exported with Veeam Explorer for PostgreSQL. If a new database is created in the process and the database in the DUMP file has tablespaces, you must manually create tablespaces with the same names as the ones in the DUMP file. Note that the --no-tablespace argument of the pg\_restore utility, which places the reconstructed database in the default tablespace, is not supported for DUMP files exported with Veeam Explorer for PostgreSQL. For more information, see [Restoring Exported Database](vep_export_restore_exported_databases.md).
 
-Page updated 12/23/2025
 
-Page content applies to build 13.0.1.1071

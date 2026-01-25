@@ -3,7 +3,7 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repos_mssql.html"
-last_updated: "1/19/2026"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -148,7 +148,7 @@ You can configure Veeam Backup & Replication to transfer Veeam Plug-In backup fi
 
 For Veeam Plug-In for Microsoft SQL Server backups, immutability works according to the following rules:
 
-* Immutability is applied to backup (.VAB) files and backup metadata (.VASM) files. Backup job metadata (.VACM) files are not immutable.
+* Immutability is applied to backup files (.VAB) and backup metadata files (.VASM). Backup job metadata files (.VACM) are not immutable.
 
 * Backup files become immutable for the configured time period (minimum 7 days, maximum 9999 days).
 
@@ -159,7 +159,7 @@ For Veeam Plug-In for Microsoft SQL Server backups, immutability works according
 | TIP |
 | Contact Veeam Customer Support to change the default 24 hour lifespan of a backup file. To do that, you can submit a support case on the [Veeam Customer Support Portal](https://www.veeam.com/support.html). |
 
-* The immutability period is automatically extended for backup files that contain restore points of the active chain.
+* The immutability period is automatically extended for backup files that contain restore points of the active chain. The logic is the same as for immutability that is configured in the object storage repository. Consider example in [Backup Immutability](plugins_mssql_object_storage_immutable.md#ex)
 
 Data Restore from Hardened Repository
 
@@ -188,7 +188,7 @@ Before you configure your backup infrastructure to back up to the object storage
 * Azure Data Box
 
 * Data in object storage repositories must be managed solely by Veeam Backup & Replication, including retention and data management. Lifecycle rules are not supported, and their enabling may result in backup and restore failures.
-* For backups located in object storage repositories, data recovery options are not available if you access the object storage repository using credentials with the read-only access permissions.
+* If you access the object storage repository using credentials with the read-only access permissions, data recovery options are not available for backups located in object storage repositories.
 
 * For Microsoft Azure Blob storage, Veeam Plug-Ins do not support soft delete for blobs.
 
