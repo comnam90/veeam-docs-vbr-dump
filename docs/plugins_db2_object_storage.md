@@ -1,13 +1,14 @@
 ---
 title: "Backup to Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_db2_object_storage.html"
-last_updated: "8/6/2025"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Backup to Object Storage
 
-In this article
 
 If you want to store your data in a cloud-based or on-premises object storage, you can use Veeam Plug-In to create backups in repositories provided by the object storage. Veeam Plug-Ins support the object storage as a primary repository for backup jobs and Veeam Backup & Replication supports the object storage as a primary repository for backup copy jobs.
 
@@ -51,8 +52,6 @@ To learn more, see [Creating Application Backup Policy](mongo_policy_create.md).
 |  |
 | --- |
 | Note |
-| Before you configure your backup infrastructure to back up to the object storage, consider the limitations listed in [Veeam Backup Repositories](db2_backup_repos.md#object). |
+| * Before you configure your backup infrastructure to back up to the object storage, consider the limitations listed in [Veeam Backup Repositories](db2_backup_repos.md#object).  * If you plan to configure immutability for the object storage repository, consider the limitations listed in [Backup Immutability](plugins_sap_maxdb_overview_object_storage_immutable.md). |
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

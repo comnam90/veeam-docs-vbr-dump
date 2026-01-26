@@ -1,13 +1,14 @@
 ---
 title: "Archiver Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archiver_appliance.html"
-last_updated: "9/19/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Archiver Appliances
 
-In this article
 
 Archiver appliance is a temporary virtual machine that is located in the Public Cloud (AWS or Microsoft Azure). Veeam Backup & Replication uses it for the following operations:
 
@@ -32,7 +33,7 @@ Consider the following:
 
 * The archiver appliance is used in case extents of your scale-out backup repository consists of the same object storage providers. For example, performance or capacity extents consist of [Microsoft Azure Blob storage](osr_adding_blob_storage.md) and the archive extent consist of [Azure Archive Storage](azure_archive_tier_archiver_appliance.md). If your scale-out backup repository has a mixed configuration, for example performance or capacity extents consist of an [Adding S3 Compatible Object Storage](adding_s3c_object_storage.md) and the archive extent consist of Azure Archive Storage, Veeam Backup & Replication will use the other component for the data transfer operation that might result in additional costs.
 
-* The archiever appliance is not used for the direct data transfer from the performance tier to the archive tier if your scale-out backup repository has the following configuration:
+* The archiver appliance is not used for the direct data transfer from the performance tier to the archive tier if your scale-out backup repository has the following configuration:
 
 * The archive tier consists of S3 compatible object storage with data archiving.
 * The performance tier consist of a direct attached storage or network attached storage and the archive tier consist of Amazon S3 object storage or Microsoft Azure Blob storage.
@@ -42,6 +43,4 @@ In these cases, the component that transfers data depends on the connection type
 * If you use the direct connection type, the data mover that runs on performance extents transfers data to the archive tier.
 * If you use the connection through gateway servers, the specified gateway servers transfer data to the archive tier.
 
-Page updated 9/19/2025
 
-Page content applies to build 13.0.1.1071

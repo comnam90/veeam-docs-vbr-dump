@@ -1,19 +1,20 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_requirements.html"
-last_updated: "11/18/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 If you plan to use CDP to protect your workloads, consider the following requirements and limitations.
 
 Licensing
 
-CDP is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise Plus edition is required.
+The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 Platforms and Datastores
 
@@ -67,6 +68,4 @@ Related Topics
 
 [Backup Infrastructure for CDP](cdp_infrastructure.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

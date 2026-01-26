@@ -1,20 +1,21 @@
 ---
 title: "Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_jobs.html"
-last_updated: "10/20/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Backup to Tape
 
-In this article
 
 To back up data to tape, you need to create and run tape jobs. The backup to tape job is a dedicated job that archives to tape Veeam backups that were produced by Veeam backup jobs. Note that you cannot directly backup virtual machines to tapes.
 
 |  |
 | --- |
 | Note |
-| Support of the backup to tape is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise or Enterprise Plus edition of Veeam Backup & Replication is required. For details, see [Veeam Editions Comparison](https://www.veeam.com/backup-version-standard-enterprise-editions-comparison.html). |
+| The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 You can archive the following data to tape:
 
@@ -121,6 +122,4 @@ Related Topics
 * [Creating Backup to Tape Jobs](creating_backup_to_tape_jobs.md)
 * [Linking Backup Jobs to Backup to Tape Jobs](linking_backup_to_backup_to_tape.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

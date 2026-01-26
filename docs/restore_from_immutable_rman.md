@@ -1,13 +1,14 @@
 ---
 title: "Restore from Hardened Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_from_immutable_rman.html"
-last_updated: "12/4/2025"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restore from Hardened Repository
 
-In this article
 
 As a result of malware activity or unplanned actions, backup job metadata files (.VACM) may become unavailable in the hardened repository. In such cases, to restore data from the hardened repository, Veeam Backup & Replication can regenerate the .VACM file based on information from the backup job storage metadata file (.VASM). The recovery process depends on whether the backup is still visible in the Veeam Backup & Replication console. Use the following procedure to restore backup availability in the Veeam Backup & Replication console.
 
@@ -23,8 +24,6 @@ To restore metadata with a rescan operation, complete the following steps:
 
 As a result, the backup will appear in the Veeam Backup & Replication console as an imported backup. You can perform all available restore operations for imported backups with the newly imported backup.
 
-[![Repair of Backup](images/repo_rescan.webp)](images/repo_rescan.webp "Repair of Backup")
+[![Repair of Backup](images/plugins_repo_rescan.webp)](images/plugins_repo_rescan.webp "Repair of Backup")
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

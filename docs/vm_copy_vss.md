@@ -1,13 +1,14 @@
 ---
 title: "Step 6. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss.html"
-last_updated: "4/29/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 6. Specify Guest Processing Settings
 
-In this article
 
 At the Guest Processing step of the wizard, you can enable the following settings for VM guest OS processing:
 
@@ -44,10 +45,8 @@ To check if Veeam Backup & Replication can communicate with VMs added to the job
 |  |
 | --- |
 | Note |
-| The guest interaction proxy functionality is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise or higher edition is required. |
+| The availability of the guest interaction proxy functionality depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 ![Step 6. Specify Guest Processing Settings](images/vm_copy_job_vss.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071
