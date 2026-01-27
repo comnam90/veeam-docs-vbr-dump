@@ -1,13 +1,14 @@
 ---
 title: "Importing Encrypted Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_encrypted.html"
-last_updated: "7/7/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Importing Encrypted Backups
 
-In this article
 
 You can import backups that were encrypted on this backup server or on another backup server.
 
@@ -30,7 +31,7 @@ If you enter the correct passwords, Veeam Backup & Replication will decrypt the 
 |  |
 | --- |
 | Note |
-| You can recover data from encrypted backups even if the password is lost. Restoring data without a password is included in the Veeam Universal License. When using a legacy socket-based license, an Enterprise or higher edition is required. Also, your backup server must be connected to Veeam Backup Enterprise Manager. For more information, see [Decrypting Backups With Enterprise Manager Keys](decrypt_without_pass.md). |
+| You can recover data from encrypted backups even if the password is lost. The availability of restoring data without a password depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). Also, your backup server must be connected to Veeam Backup Enterprise Manager. For more information, see [Decrypting Backups With Enterprise Manager Keys](decrypt_without_pass.md). |
 
 ![Importing Encrypted Backups](images/decrypt_file.webp)
 
@@ -38,6 +39,4 @@ Related Topics
 
 [Creating Encrypted Configuration Backups](config_backup_encrypted.md)
 
-Page updated 7/7/2025
 
-Page content applies to build 13.0.1.1071

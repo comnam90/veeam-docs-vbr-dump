@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_byb.html"
-last_updated: "12/30/2025"
+last_updated: "1/26/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 Check the following considerations and limitations.
 
@@ -40,7 +41,7 @@ Helper Appliance
 
 The helper appliance is an auxiliary Linux-based VM instance. It is used to upload backed-up data to Google Compute Engine. Veeam Backup & Replication automatically deploys the helper appliance in Google Compute Engine only for the duration of the restore process and removes it immediately after that.
 
-* It is recommended to use the helper appliance when you recover from backups of Google Compute Engine virtual machines. In other cases, it is recommended to use restore without the helper appliance.
+* It is recommended to use the helper appliance when you recover from backups of Google Compute Engine virtual machines created by [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7). In other cases, it is recommended to use restore without the helper appliance.
 
 For information on how to configure the helper appliance, see [Configure Helper Appliance](restore_google_proxy_appliance.md).
 
@@ -50,6 +51,4 @@ For information on how to configure the helper appliance, see [Configure Helper 
 * The VPC route table must contain a route from the IP address of the Veeam Backup & Replication server to an active Google Cloud internet gateway. For more information on internet gateways and how to create route tables, see the [Google Cloud documentation](https://cloud.google.com/vpc/docs/routes).
 * Check that OS Login is disabled for the project where you plan to recover VM instances. For more information on how to configure OS Login, see the [Google Cloud documentation](https://cloud.google.com/compute/docs/oslogin/set-up-oslogin). If you want to have OS Login enabled, use restore without the helper appliance.
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

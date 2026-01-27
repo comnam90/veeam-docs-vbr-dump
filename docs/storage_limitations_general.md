@@ -1,13 +1,14 @@
 ---
 title: "General Requirements and Limitations (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_general.html"
-last_updated: "1/6/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # General Requirements and Limitations (Storage Systems)
 
-In this article
 
 The following limitations apply to all storage systems supported by Veeam Backup & Replication.
 
@@ -57,7 +58,7 @@ To use IPv6 addresses and resolve names using IPv6, configure IPv6 communication
 
 Backup from storage snapshots has the following requirements and limitations:
 
-* You must install the Enterprise Plus edition of Veeam Backup & Replication on the backup server.
+* The availability of backup from storage snapshots depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 * You must configure the backup infrastructure in the following way:
 
@@ -106,7 +107,7 @@ Snapshot jobs (snapshot-only jobs and backup jobs with storage snapshot retentio
 + Add to the backup infrastructure vCenter Server or ESXi hosts with VMs whose disks are hosted on the storage system.
 + Add the storage system to the backup infrastructure. If you plan to perform backup from snapshots on secondary storage arrays, also add the secondary storage array to the backup infrastructure.
 
-* You must install a license for Veeam Backup & Replication Enterprise Plus edition on the backup server.
+* The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * [For backup from secondary storage arrays] When you add storage arrays to the backup infrastructure, you must add to the rescan scope volumes and LUNs on which VM disks are located (both for primary and secondary storage arrays). For more information, see the description of the storage system wizard.
 
 [VMware Integration] Data Recovery from Storage Snapshots
@@ -165,6 +166,4 @@ Before you restore VM guest OS files from Linux, Unix or other file systems, che
 
 For more information on configuring connection settings for Linux servers, see the [Specify Credentials and SSH Settings](linux_server_ssh.md) step of the New Linux Server wizard.
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

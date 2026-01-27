@@ -1,20 +1,21 @@
 ---
 title: "NDMP Servers Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ndmp_servers_backup_to_tape.html"
-last_updated: "8/27/2024"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # NDMP Servers Backup to Tape
 
-In this article
 
 If your NAS device supports the NDMP protocol, you can back up data from it to tape. For this, you need to utilize the file to tape job.
 
 |  |
 | --- |
 | Note |
-| Support of NDMP servers backup to tape is included in the Veeam Universal License and does not consume Veeam licenses. When using a legacy socket-based license, the Enterprise Plus edition of Veeam Backup & Replication is required. For details, see [Veeam Editions Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
+| The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 To back up data from NAS devices by the NDMP protocol, you need to add the device as an NDMP server. For details, see [Adding NDMP Servers](adding_ndmp_servers.md).
 
@@ -46,6 +47,4 @@ See Also
 
 [File Restore from Tape](file_restore_from_tape.md)
 
-Page updated 8/27/2024
 
-Page content applies to build 13.0.1.1071
