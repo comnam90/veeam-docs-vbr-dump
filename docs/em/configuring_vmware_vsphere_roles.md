@@ -3,23 +3,23 @@ title: "Configuring VMware vSphere Roles"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/configuring_vmware_vsphere_roles.html"
-last_updated: "10/30/2025"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring VMware vSphere Roles
 
 
-If you use a remotely installed [Veeam Plug-in for VMware vSphere Client](remote_vsphere_client_plugin.md), you need to map one of the Veeam Backup Enterprise Manager roles with a VMware vSphere role that you will use to log in to the remote vSphere Client plug-in.
+Before you can use the Veeam Plug-in for VMware vSphere Client, you must map the VMware vSphere role that you will use to work with the plug-in with one of the Veeam Backup Enterprise Manager roles. For more information on the plug-in, see [Veeam Plug-in for VMware vSphere Client](vsphere_plugin.md).
 
-To add a VMware vSphere role, take the following steps:
+To map a VMware vSphere role, take the following steps:
 
 1. Log in to Enterprise Manager using an administrative account.
 2. To open the Configuration view, click Configuration in the upper-right corner.
 3. Select the Roles section on the left of the Configuration view.
 4. Click Add on the toolbar.
 5. From the Account type list, select vSphere Role.
-6. From the vSphere role list, select a vCenter Server role created in VMware vSphere.
+6. From the vSphere role list, select a vCenter Server role created in VMware vSphere that you will use to work with Veeam Plug-in for VMware vSphere Client.
 7. From the Role list, select a role you want to assign to the account: Portal Administrator, Portal User or Restore Operator. For more information, see [Roles](em_about_accounts_and_roles.md#roles).
 
 |  |

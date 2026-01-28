@@ -1,17 +1,18 @@
 ---
 title: "Cisco HyperFlex"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_ciscohx.html"
-last_updated: "2/14/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Cisco HyperFlex
 
-In this article
 
 If you plan to use VMware integration and perform backup and replication from Cisco HyperFlex storage snapshots, consider the following:
 
-* License for Veeam Backup & Replication Enterprise Plus edition must be installed on the backup server.
+* The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 * Cisco HyperFlex system must be added to the backup infrastructure. For more information, see [Adding Cisco HyperFlex Storage System](cisco_add.md).
 
@@ -27,6 +28,4 @@ During backup or replication, Veeam Backup & Replication fails to trigger Cisco 
 * The Limit processed VM count per storage snapshots to N option is not applicable to Cisco HyperFlex since snapshots for VMs hosted on Cisco HyperFlex are created at the VM level, not volume level.
 * For working with REST API, use default route and default port: https://{hostname}:443.
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

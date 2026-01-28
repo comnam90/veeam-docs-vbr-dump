@@ -1,13 +1,14 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_before_you_begin.html"
-last_updated: "9/12/2025"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you configure a file to tape job, consider the following:
 
@@ -19,8 +20,9 @@ Note that the NDMP servers backup to tape functionality does not consume Veeam i
 * You must load tapes to the tape device and configure the target media pool so that it has access to them. If the media pool has no available tape, the tape job will retry for 72 hours and then terminate.
 * Make sure that files and folders that you want to back up do not contain certain Unicode symbols, including but not limited to the symbols with the following codes: U+D800 – U+DFFF, U+FFFE, U+FFFF (55296 – 57343, 65534, 65535), U+007C (124). Also the file and folder names must contain only symbols that are supported by the source file system. Files and folders with unsupported names will be skipped from processing.
 * You can back up only files and directories whose names are written in all locales in the UTF-8 encoding. If the encoding is other than UTF-8, you can back up only files and directories whose names are written in the English locale.
-* The file backup to tape job can process files with names up to 255 characters long. Backup of files with longer names is not supported.
+* The file to tape job can process files with names up to 255 characters long. Backup of files with longer names is not supported.
 * Make sure that files and folders that you want to back up are not symlinks. Backup of symlinks is not supported.
+* The file to tape job backs up only the general Microsoft Windows properties and attributes of files. The advanced file attributes are not backed up.
 * For SMB and NFS file share backup to tapes, make sure that the shared source does not contain folders with the same name entered in different letter case (for example, Documents and documents).
 * To back up NDMP volumes, add a storage device that supports the NDMP protocol as an NDMP server. For more information, see [Adding NDMP Servers](adding_ndmp_servers.md).
 * To back up files and folders from a Microsoft Windows server, make sure it is added to the backup infrastructure as a file server. For details, see [Adding File Server](tape_adding_file_server.md).
@@ -54,6 +56,4 @@ For storing the configuration database, we recommend using a dedicated NVME driv
 | Important |
 | Do not back up to tape large number of files (over 1 000 000 files in 1 000 folders) in one tape job if your Veeam backup server uses Microsoft SQL Server Express edition. Processing a large number of files will result in considerable performance penalty. Note that the usage of Microsoft SQL Server Express Edition is limited by the database size up to 10 GB. If you plan to have larger databases, use other editions of Microsoft SQL Server or PostgreSQL. |
 
-Page updated 9/12/2025
 
-Page content applies to build 13.0.1.1071

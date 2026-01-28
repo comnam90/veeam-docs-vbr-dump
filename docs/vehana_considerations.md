@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_considerations.html"
-last_updated: "11/3/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and known limitations of Veeam Explorer for SAP HANA.
 
@@ -66,6 +67,4 @@ For more information about this command, see [Restore to Another Server (System 
 * Before you restore a tenant database using the SSL protocol, make sure that the target SAP HANA system is properly configured to use SSL and that the backup server has SAP Common Crypto Library installed. For more information about how to install SAP Common Crypto Library on Windows machines, see the [SAP Help Portal](https://help.sap.com/docs/SAP_DATA_SERVICES/e54136ab6a4a43e6a370265bf0a2d744/c049e28431ee4e8280cd6f5d1a8937d8.html?locale=en-US).
 * [For Windows-based backup servers] If you are using secure restore, the backup server is running Microsoft Windows Server 2012 or 2016 and you are using SAP Common Crypto Library 8.5.51 or higher, you must export the SSL private key with the Triple DES encryption algorithm. SAP Common Crypto Library 8.5.51 or higher uses the AES 256 encryption algorithm as default for PKCS #12 encryption, while this encryption algorithm is not supported in Microsoft Windows Server 2012 and 2016.
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

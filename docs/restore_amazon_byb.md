@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_byb.html"
-last_updated: "1/7/2026"
+last_updated: "1/26/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 Check the following considerations and limitations.
 
@@ -27,7 +28,7 @@ Helper Appliance
 
 The helper appliance is an auxiliary Linux-based EC2 instance. It is used to upload backed-up data to Amazon EC2. Veeam Backup & Replication automatically deploys the helper appliance in Amazon EC2 only for the duration of the restore process and removes it immediately after that.
 
-* It is recommended to use the helper appliance when you recover from backups of EC2 instances. In other cases, it is recommended to use restore without the helper appliance.
+* It is recommended to use the helper appliance when you recover from backups of EC2 instances created by [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10). In other cases, it is recommended to use restore without the helper appliance.
 
 For information on how to configure the helper appliance, see [Configure Helper Appliance](restore_amazon_proxy.md).
 
@@ -66,6 +67,4 @@ AWS-Specific Considerations
 * Veeam Backup & Replication uses AWS VM Import/Export during restore. It is recommended to check limitations in the [AWS Documentation](https://docs.aws.amazon.com/vm-import/latest/userguide/vmie_prereqs.html).
 * If you plan to assign AWS tags to the restored EC2 instance, check limitations for tags in the [AWS Documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Using_Tags.html).
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

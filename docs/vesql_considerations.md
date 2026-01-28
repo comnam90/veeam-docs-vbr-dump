@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_considerations.html"
-last_updated: "11/14/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and known limitations of Veeam Explorer for Microsoft SQL Server.
 
@@ -25,7 +26,6 @@ This does not apply to restore from Veeam Plug-In for Microsoft SQL Server and i
 * When recovering your Microsoft SQL Server data from CDP replicas, consider the following limitations:
 
 * Restore, publishing, instant recovery, and export operations of Microsoft SQL Server data from CDP replicas can only recover your data to the latest state of the selected long-term restore point. CDP policies do not copy Microsoft SQL Server transaction logs so data recovery to a point-in-time state is not supported.
-
 * When you recover your data from CDP replicas, you can only use long-term (both application-consistent and crash-consistent) restore points. Short-term restore points are not supported.
 * You can recover your data from a CDP replica if its CDP policy is currently running. During recovery, the CDP policy does not create new long-term restore points and does not delete existing ones. Short-term restore points are still created.
 * You cannot restore application items from a CDP replica in parallel with guest OS file restore, SureReplica, and failover.
@@ -45,8 +45,10 @@ The Config.xml files are located on the machine where Veeam Explorer for Microso
 If a configuration file named Config.xml does not exist in the necessary directory, create this file.
 
 * Veeam Explorer for Microsoft SQL Server does not support data recovery using a group Managed Service Account (gMSA) to connect to the target server.
-* [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
 * [For Linux-based backup servers] To recover Microsoft SQL Server data, you must specify a Windows mount server for the backup repository or a default Windows mount server.
+* By default, the AUTO\_CLOSE option for Microsoft SQL Server databases is set to False. If AUTO\_CLOSE is enabled, your databases may be skipped from processing.
+* [For machines with ReFS] The mount server, target server, staging server, backup server and the machine where the Veeam Backup & Replication console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
+* [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
 
 Restore from Image-Level Backups
 
@@ -126,6 +128,4 @@ As a workaround, you can perform instant recovery of multiple databases in paral
 * If you plan to perform scheduled or manual switchover, make sure that the mount server volume with the write cache has enough free disk space to store the changes of the published database. By default, the write cache is stored in the C:\ProgramData\Veeam\Backup\IRCache\ folder of the mount server. For more information on how to configure the write cache folder, see [Specify Mount Server Settings](repository_mount_server.md).
 * Instant recovery to a Microsoft SQL Server failover cluster requires 2 free drive letters on each cluster node to mount a volume from the backup. If the backed-up machine has multiple volumes, the number of free drive letters on each cluster node must be twice the number of volumes in the backup. For more information, see [How Instant Recovery Works](vesql_instant_hiw.md).
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

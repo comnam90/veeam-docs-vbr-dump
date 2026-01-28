@@ -1,13 +1,14 @@
 ---
 title: "Requirements and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_limitations.html"
-last_updated: "1/8/2026"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Requirements and Limitations
 
-In this article
 
 For the hardened repository, consider the following requirements and limitations.
 
@@ -57,6 +58,7 @@ Repository
 * For importing a backup, use VBK backup files. Metadata files of a backup chain (.VBM) cannot be immutable because they are updated on every job pass.
 * Veeam Backup & Replication does not support symlinks in the path to the hardened repository.
 * Only Veeam Data Mover Service/Veeam Transport Service child processes can run under the root account on a hardened repository.
+* Hardened repositories are not visible in the Files view in the Veeam Backup & Replication console.
 
 Immutability Feature
 
@@ -73,6 +75,4 @@ When deploying a Veeam Hardened Repository with Veeam Infrastructure Appliance, 
 * Multi-factor authentication cannot be disabled on hardened repositories that do not have security officer accounts enabled.
 * If security officer accounts are enabled, you must initialize the default security officer account before you add the hardened repository to your Veeam Backup & Replication infrastructure.
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

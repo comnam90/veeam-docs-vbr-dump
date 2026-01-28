@@ -3,7 +3,7 @@ title: "Dell Data Domain"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_dd.html"
-last_updated: "1/15/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -46,6 +46,7 @@ General
 If you plan to use Dell Data Domain as a backup repository, consider the following:
 
 * We strongly recommend that you follow recommendations from this list and also recommendations from [this Veeam KB article](https://www.veeam.com/kb1745).
+* The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * Check [requirements and limitations for the gateway server](gateway_server.md).
 * The same Data Domain Boost storage unit cannot be added to multiple backup servers.
 

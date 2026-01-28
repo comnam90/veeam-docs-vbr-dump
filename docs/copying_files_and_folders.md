@@ -1,13 +1,14 @@
 ---
 title: "Copying Files and Folders Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copying_files_and_folders.html"
-last_updated: "12/2/2025"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Copying Files and Folders Manually
 
-In this article
 
 You can manually copy and move files and folders between servers and hosts added to the backup infrastructure.
 
@@ -15,7 +16,7 @@ Veeam Backup & Replication lets you copy files manually between the following ba
 
 * Virtualization hosts
 * Microsoft Windows servers
-* Linux servers
+* Linux servers that are not used as hardened repositories
 * Deduplicating storage appliances used as backup repositories
 
 |  |
@@ -35,6 +36,4 @@ You can also use a drag and drop operation to copy files and folders between the
 
 [![Click to zoom in](images/file_copy_manual.webp)](images/file_copy_manual.webp "Click to zoom in")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

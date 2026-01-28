@@ -3,7 +3,7 @@ title: "Quantum DXi"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_quantum.html"
-last_updated: "1/15/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -34,7 +34,7 @@ Quantum DXi hosts Veeam Data Mover permanently. Veeam Backup & Replication insta
 |  |
 | --- |
 | Note |
-| Since Veeam Backup & Replication version 12, deduplicating storage appliances use the TLS connection. For Microsoft Windows-based backup server, you can disable the TLS connection with a registry value for the deduplicating storage appliances that do not support the TLS connection. For Linux-based backup server, you can disable the TLS connection by editing the configuration file. For more information, see [this Veeam KB article](https://www.veeam.com/kb4429). |
+| Consider the following:   * Since Veeam Backup & Replication version 12, deduplicating storage appliances use the TLS connection. For Microsoft Windows-based backup server, you can disable the TLS connection with a registry value for the deduplicating storage appliances that do not support the TLS connection. For Linux-based backup server, you can disable the TLS connection by editing the configuration file. For more information, see [this Veeam KB article](https://www.veeam.com/kb4429).  * The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 For more information and recommendations on working with Quantum DXi, see [this Veeam KB article](https://www.veeam.com/kb1745).
 

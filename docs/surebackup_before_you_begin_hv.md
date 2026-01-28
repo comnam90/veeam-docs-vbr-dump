@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_before_you_begin_hv.html"
-last_updated: "1/19/2026"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you create and start a recovery verification job, check the following prerequisites:
 
-* A valid Veeam Universal License of Veeam Backup & Replication must be installed on the backup server. When using a legacy socket-based license, Enterprise or higher edition is required.
+* The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 * All applications and services on which verified machines are dependent must be virtualized in your environment.
 * You must create or connect a virtual lab. For more information, see sections [Creating Virtual Lab](vlab_hv.md) and [Connecting to Existing Virtual Lab](connect_to_vlab_hv.md).
