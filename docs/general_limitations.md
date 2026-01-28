@@ -1,13 +1,14 @@
 ---
 title: "General Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_limitations.html"
-last_updated: "1/2/2026"
+last_updated: "1/26/2026"
 product_version: "13.0.1.1071"
 ---
 
 # General Considerations and Limitations
 
-In this article
 
 This section contains general limitations for object storage repositories:
 
@@ -40,7 +41,7 @@ Ports and Network
 
 Consider the following network limitations:
 
-* Make sure to open required ports to communicate with object storage repositories in advance. Consider that a backup server or a gateway server must have internet access to verify that the certificates installed on object storage repositories are valid. For more details, see [Ports](used_ports.md#osrc).
+* Ensure that you open the required ports to communicate with object storage repositories in advance. Consider that non-internet-facing infrastructure components (for example, a gateway server or a backup proxy) must have internet access to verify that the certificates installed on object storage repositories are valid. For more information, see [Ports](used_ports.md#osrc). If these components do not have access to the Internet to perform certificate revocation checks, disable them by modifying the registry (for Windows-based servers) or the etc/VeeamAgentConfig file (for Linux-based servers). For more information, see [this Veeam KB article](https://www.veeam.com/kb4373), step 6.
 
 * If you use default network security configuration for helper appliances, make sure that they are compliant with your internal security policies.
 
@@ -99,6 +100,4 @@ For more information on limitations for Veeam solutions that utilizes object sto
 * [Veeam Agent for Mac](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_object_ovw.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for physical endpoints and virtual machines running macOS.
 * [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/vbr/cloud/cc_object_storage.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for cloud service providers.
 
-Page updated 1/2/2026
 
-Page content applies to build 13.0.1.1071

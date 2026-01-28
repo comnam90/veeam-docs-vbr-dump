@@ -3,7 +3,7 @@ title: "Configuring Veeam Plug-In for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_mssql_plugin.html"
-last_updated: "1/19/2026"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -117,7 +117,7 @@ You can specify the following parameters for the MSSQLConfigTool.exe command:
 | --show-preferred-networks | Shows the list of preferred networks set for Veeam Plug-In data traffic to the remote backup repository.  The list shows set preferred networks in descending order of priority. If the list is empty, no networks are set as preferred and Veeam Plug-In routes data traffic to the preferred networks set in Veeam Backup & Replication. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md). |
 | --add-preferred-network | Adds a network to the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository.  To select to which network Veeam Plug-In connects first, you can set the order number of the network in the list. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md). |
 | --remove-preferred-network | Removes a specified network from the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md). |
-| --set-auth-data-for-restore | Specifies the authentication method for database restore. Use this parameter if you want to restore a database to another server or to restore a database from a backup copy.  After you run the MSSQLConfigTool.exe command with this parameter, use the MSSQLConfigTool.exe command with the --exclude-from-managed-mode parameter to select a database that you want to back up from the Microsoft SQL Server side. |
+| --set-auth-data-for-restore | Specifies the authentication method for database restore. Use this parameter if you want to restore a database to another server or to restore a database from a backup copy. |
 | --get-file-content | Use the --get-file-content parameter only with the ---set-auth-data-for-restore parameter.  Specifies the path to an .XML file. If you use the --get-file-content parameter, the authentication data will be retrieved from the specified .XML file. |
 | --exclude-from-managed-mode | For Veeam Plug-In for Microsoft SQL Server in the managed mode, specifies databases that are excluded from the backup scope of an application backup policy. You can back up these databases using a standalone backup job from Microsoft SQL Server. Requires --instance and --d parameters. For more information, see [Backing Up SQL Databases with Standalone Backup Job](mssql_configure_backup_exclude_from_managed.md). |
 | --remove-from-exclusions | Use the --remove-from-exclusions parameter only with the --exclude-from-managed-mode parameter.  Removes database from the list of exclusions that was created with the --exclude-from-managed-mode parameter. After you remove the database from the list of exclusions, you can back up this database again using an application backup policy. |

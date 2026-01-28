@@ -1,13 +1,14 @@
 ---
 title: "How Immutability Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_immutability.html"
-last_updated: "10/17/2025"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Immutability Works
 
-In this article
 
 Immutability is managed by the following services:
 
@@ -111,7 +112,9 @@ For information on how immutability works for unstructured data backups and ente
 * [Veeam Plug-In for Oracle RMAN](repos_rman.md#hardened)
 * [Veeam Plug-In for SAP HANA](sap_repos.md#hardened)
 * [Veeam Plug-In for SAP on Oracle](sap_orcl_repos.md#hardened)
+* [Veeam Plug-In for SAP MaxDB](plugins_sap_maxdb_overview_data_backup_repos.md#hardened)
 * [Veeam Plug-In for Microsoft SQL Server](repos_mssql.md#hardened)
+* [Veeam Plug-In for IBM Db2](db2_backup_repos.md#hardened)
 
 Retention Scenarios
 
@@ -130,6 +133,4 @@ Consider the following retention scenarios:
 
 * [With disabled retention period] Veeam Backup & Replication ignores the VeeamZIP or Export Backup retention period. The immutability time period for VeeamZIP or Export Backup backup files equals the period specified in the setting of a hardened repository.
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

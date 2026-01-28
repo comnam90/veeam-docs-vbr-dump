@@ -1,14 +1,16 @@
 ---
-title: "Deployment"
+title: "Plug-in Deployment"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vsphere_plugin_deployment.html"
-last_updated: "8/26/2025"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
-# Deployment
+# Plug-in Deployment
 
+
+Veeam Plug-in for VMware vSphere Client is installed remotely on the Veeam Backup Enterprise Manager server. During deployment, the installer registers the plug-in as an extension on the VMware vCenter Server, and the vCenter Server downloads the plug-in manifest file. This allows the vsphere-ui service to define how the plug-in extends the VMware vSphere Client user interface. The back-end service of the plug-in runs on the Enterprise Manager server.
 
 You can install Veeam Plug-in for VMware vSphere Client using Veeam Backup Enterprise Manager under an account with the Portal Administrator role. For more information, see [Installing vSphere Client Plug-in](vsphere_plugin_installing.md).
 

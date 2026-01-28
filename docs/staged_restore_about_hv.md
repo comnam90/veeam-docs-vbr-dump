@@ -1,13 +1,14 @@
 ---
 title: "Staged Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/staged_restore_about_hv.html"
-last_updated: "10/21/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Staged Restore
 
-In this article
 
 Staged restore allows you to run an executable script for VMs before recovering them to the production environment. Staged restore is a part of the entire VM restore operations. To perform staged restore, you must select the Staged Restore mode in the [Full VM Restore](performing_full_recovery_hv.md) wizard and specify [staged restore settings](full_restore_staged_hv.md).
 
@@ -20,7 +21,7 @@ Staged restore can help you ensure that recovered VMs do not contain any persona
 |  |
 | --- |
 | Note |
-| The staged restore functionality is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise or higher edition is required. |
+| The availability of the staged restore feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 Requirements and Limitations for Staged Restore
 
@@ -65,6 +66,4 @@ Related Topics
 
 * [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts_hv.md)
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -3,7 +3,7 @@ title: "Accounts and Roles Overview"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_about_accounts_and_roles.html"
-last_updated: "10/30/2025"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ Administrators can add accounts to Veeam Backup Enterprise Manager to grant user
 | Group | Local or AD group | By specifying a user name and password | * Windows-based Enterprise Manager: DOMAIN\Groupname (domain is optional) * Linux-based Enterprise Manager: Groupname@DOMAIN (domain is mandatory for AD groups) |
 | External User | IdP user | By using single sign-on\* | Username@Suffix |
 | External Group | IdP group | By using single sign-on\* | Free-form string |
-| vSphere Role | VMware vCenter Server role used to access the [Remote vSphere Client plug-in](remote_vsphere_client_plugin.md) | — | — |
+| vSphere Role | VMware vCenter Server role used to access the [Veeam Plug-in for VMware vSphere Client](vsphere_plugin.md) | — | — |
 
 \* For more information on the single sign-on capability, see [SAML Authentication Support](em_saml.md).
 

@@ -1,13 +1,14 @@
 ---
 title: "Databases and Enterprise Applications"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications.html"
-last_updated: "1/8/2026"
+last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Databases and Enterprise Applications
 
-In this article
 
 Veeam Backup & Replication allows you to protect data from various applications and databases, such as Microsoft Active Directory, Microsoft SQL Server, MongoDB and others. Depending on the application you want to back up and the level on which you want to create a backup, Veeam Backup & Replication suggests the following options:
 
@@ -32,7 +33,7 @@ Veeam Backup & Replication allows you to protect data from various applications 
 
 Image-Level Backup with Application-Aware Processing
 
-Application-aware processing is available for most platforms protected by Veeam. With the application-aware processing enabled, Veeam Backup & Replication creates image-level backups of your workload and also backs up application logs. To configure application-aware processing, you must select the Enable application-aware processing check box in the backup job settings. For more information, see guides or sections dedicated to your platform. Make sure that you configured the infrastructure as required for the platform. For example, see [VMware vSphere](vmware_vsphere.md) for VMware vSphere VMs; [Veeam Agent Backup](protect_comp.md) for physical computers and VMs; [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/welcome.html?ver=10) for EC2 instances and so on.
+Application-aware processing is available for most platforms protected by Veeam. With the application-aware processing enabled, Veeam Backup & Replication creates image-level backups of your workload and also backs up application logs. To configure application-aware processing, you must select the Enable application-aware processing check box in the backup job settings. For more information, see guides or sections dedicated to your platform. Make sure that you configured the infrastructure as required for the platform. For example, see [VMware vSphere](vmware_vsphere.md) for VMware vSphere VMs and [Veeam Agent Backup](protect_comp.md) for physical computers and VMs.
 
 For recovery, Veeam Backup & Replication provides recovery of workloads themselves as well as recovery of application items. For recovery, Veeam Backup & Replication uses tools called Veeam Explorers. Veeam Explorers are distributed as part of Veeam Backup & Replication, and you do not need to install them separately. You also do not need to purchase any additional license to use Veeam Explorers. For information on how to launch Veeam Explorers to restore application items, see [Launching Veeam Explorer from Image-Level Backups](restoring_veeam_explorers.md). As an alternative, you can launch Veeam Explorers as a separate tool. For more information, see the [Veeam Explorers User Guide](https://helpcenter.veeam.com/docs/vbr/explorers/explorers_introduction.html?ver=13).
 
@@ -58,6 +59,4 @@ Veeam Backup & Replication allows you to use the following backup solutions for 
 | Important |
 | Veeam Plug-Ins store database and log backups in repositories added to the Veeam Backup & Replication infrastructure. Thus, to use Veeam Plug-Ins, you must have a Veeam Backup & Replication server deployed in your infrastructure. To learn how to deploy Veeam Backup & Replication, see [Deployment](deployment.md). |
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

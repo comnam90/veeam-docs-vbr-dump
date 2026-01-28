@@ -1,17 +1,18 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/verification_before_you_begin.html"
-last_updated: "11/18/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you create and start a SureBackup job, check the following prerequisites:
 
-* A valid Veeam Universal License of Veeam Backup & Replication must be installed on the backup server. When using a legacy socket-based license, Enterprise or higher edition is required.
+* The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * All applications and services on which verified machines are dependent must be virtualized in your environment.
 * To perform full recoverability testing, you must create or connect a virtual lab. For more information, see sections [Creating Virtual Lab](create_vlab.md) and [Connecting to Existing Virtual Lab](connect_to_vlab.md).
 * If you plan to verify Microsoft Windows machines, you must configure Microsoft Windows-based mount server. For more information, see [Mount Servers](mount_server.md).
@@ -27,6 +28,4 @@ Consider the following limitations:
 * The source backup or replication job has a higher priority than the SureBackup job. If the source backup or replication job starts when the SureBackup job is running, and this job is about to modify the restore point from which the VM is started, Veeam Backup & Replication automatically powers off VMs in the virtual lab and completes the SureBackup job.
 * The Microsoft SQL Server Checker script runs on the backup server side. For this reason, Named Pipes or TCP/IP connections must be enabled for the Microsoft SQL Server running in the virtual lab. For more information, see [Microsoft Docs](https://msdn.microsoft.com/en-us/library/dd983822%28v%3Dnav.71%29.aspx).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

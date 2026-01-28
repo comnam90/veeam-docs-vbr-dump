@@ -2,7 +2,7 @@
 title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
-source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_mssql_object_storage.html"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_object_storage.html"
 last_updated: "1/23/2026"
 product_version: "13.0.1.1071"
 ---
@@ -52,6 +52,6 @@ To learn more, see [Creating Application Backup Policy](mongo_policy_create.md).
 |  |
 | --- |
 | Note |
-| * Before you configure your backup infrastructure to back up to the object storage, consider the limitations listed in [Veeam Backup Repositories](repos_mssql.md#object).  * If you plan to configure immutability for the object storage repository, consider the limitations listed in [Backup Immutability](plugins_mssql_object_storage_immutable.md). |
+| * Before you configure your backup infrastructure to back up to the object storage, consider the limitations listed in [Veeam Backup Repositories](plugins_sap_maxdb_overview_data_backup_repos.md#object).  * If you plan to configure immutability for the object storage repository, consider the limitations listed in [Backup Immutability](plugins_sap_maxdb_overview_object_storage_immutable.md). |
 
 

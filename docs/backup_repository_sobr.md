@@ -1,20 +1,21 @@
 ---
 title: "Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_sobr.html"
-last_updated: "11/10/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Scale-Out Backup Repositories
 
-In this article
 
 A scale-out backup repository is a repository system with horizontal scaling support for multi-tier storage of data. A scale-out backup repository consists of one or more backup repositories or object storage repositories called performance tier, and can be expanded with object storage repositories for long-term and archive storage: capacity tier and archive tier. All the storage devices and systems inside the scale-out backup repository are joined into a system, with their capacities summarized.
 
 |  |
 | --- |
 | Note |
-| Consider the following:   * Scale-out backup repository is included in the Veeam Universal License. When using a legacy socket-based license, Enterprise or higher edition is required. * If you configure a scale-out backup repository and then downgrade to the Standard license, you will not be able to run jobs targeted at the scale-out backup repository. However, you will be able to perform restore from the scale-out backup repository. |
+| Consider the following:   * The availability of the scale-out backup repository depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). * If you configure a scale-out backup repository and then downgrade to the Standard license, you will not be able to run jobs targeted at the scale-out backup repository. However, you will be able to perform restore from the scale-out backup repository. |
 
 This feature provides the following benefits:
 
@@ -61,6 +62,4 @@ In This Section
 * [Adding Scale-Out Backup Repositories](sobr_add.md)
 * [Managing Scale-Out Backup Repositories](managing_sobr_data.md)
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_considerations.html"
-last_updated: "11/20/2025"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and limitations of Veeam Explorer for Microsoft Exchange.
 
@@ -24,6 +25,9 @@ General
 * You cannot restore application items from a CDP replica in parallel with guest OS file restore, SureReplica, and failover.
 
 * Veeam Explorer for Microsoft Exchange must stay open during all data recovery operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
+
+* To work with database files, Veeam Explorer for Microsoft Exchange requires a dynamic link library ese.dll supplied with Microsoft Exchange. The ese.dll file must be of the same version as that of Microsoft Exchange in which database files were created.
+* [For machines with ReFS] The mount server, backup server and the machine where the console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
 
 Restore
 
@@ -60,6 +64,4 @@ Export
 
 * To avoid conflicts during export, make sure to exclude PST files from the indexing scope. Oftentimes conflicts may occur if a file you are exporting is being indexed at the same time. When exporting to shared folders, exclude Outlook files or disable Windows search on the destination computer.
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

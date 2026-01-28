@@ -1,19 +1,20 @@
 ---
 title: "Microsoft Windows File Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "11/19/2025"
+last_updated: "1/22/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Microsoft Windows File Recovery
 
-In this article
 
 This section lists considerations and limitations that apply to recovery from Microsoft Windows workloads.
 
 Licensing
 
-[Restore changes functionality](guest_restore_save.md#changed) is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise or Enterprise Plus editions of Veeam Backup & Replication are required.
+The availability of the recovery features depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 Infrastructure Components
 
@@ -102,6 +103,4 @@ Recovery Finalization
 * If the Veeam Backup & Replication console is launched on the backup server, the Copy to operation does not allow copying files to the backup server. You can only copy files to a network shared folder.
 * [For Hyper-V VMs] You can restore files and folders to components of the Veeam Backup & Replication infrastructure available over the network.
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_byb.html"
-last_updated: "1/7/2026"
+last_updated: "1/21/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,6 +15,7 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * Veeam Software Appliance must be installed on a dedicated empty machine that meets the system requirements. For more information, see [System Requirements](system_requirements.md).
 * Enterprise Manager on Linux is supported only with the Enterprise Plus edition license.
 * You cannot install other backup infrastructure components on the machine where Enterprise Manager is installed. This includes the backup server, backup repository, proxy server and other components.
+* Essentials license holders cannot license an ISO-based deployment.
 
 * Backup infrastructure components communicate over specific network ports. These ports must be open. For more information, see [Ports](used_ports.md).
 
