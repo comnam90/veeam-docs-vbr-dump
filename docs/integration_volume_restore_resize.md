@@ -1,13 +1,14 @@
 ---
 title: "Step 5. Resize Restored Volumes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_resize.html"
-last_updated: "8/26/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 5. Resize Restored Volumes
 
-In this article
 
 At the Disk Mapping step of the wizard you can set the necessary size for the restored volumes. A volume will be shrunk or extended to the specified size during the process of data restore.
 
@@ -27,6 +28,4 @@ To resize a volume:
 
 ![Step 5. Resize Restored Volumes](images/agent_volume_restore_resize.webp "Resize Restored Volumes")
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

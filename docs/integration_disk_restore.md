@@ -1,13 +1,14 @@
 ---
 title: "Exporting Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore.html"
-last_updated: "11/19/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Exporting Disks
 
-In this article
 
 You can restore computer disks from Veeam Agent backups created using Veeam Agent for Microsoft Windows and Veeam Agent for Linux and convert them to disks of the VMDK, VHD or VHDX format.
 
@@ -39,6 +40,4 @@ To restore disks and convert them to the VMDK, VHD or VHDX format, perform the f
 7. [Specify restore reason](integration_disk_restore_reason.md).
 8. [Complete restore process](integration_disk_restore_complete.md).
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

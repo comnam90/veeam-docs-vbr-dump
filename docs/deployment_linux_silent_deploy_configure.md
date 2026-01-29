@@ -1,13 +1,14 @@
 ---
 title: "Automating Installation with Initial Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_silent_deploy_configure.html"
-last_updated: "12/11/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Automating Installation with Initial Configuration
 
-In this article
 
 You can modify the Veeam Software Appliance ISO file to allow unattended installation and configuration. This allows you to automatically deploy Veeam Software Appliance with preconfigured users, passwords, multi-factor authentication codes, and other settings.
 
@@ -106,6 +107,4 @@ To set a static IP address, edit the bootproto parameter and add the ip, netmask
 | --- |
 | network --bootproto=static --ip=192.0.2.1 --netmask=255.255.255.0 --gateway=192.0.2.254 --nameserver=192.168.2.1,192.168.3.1 --hostname=vbr-MACH\_HASH |
 
-Page updated 12/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Installing Veeam Software Appliance from ISO"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install.html"
-last_updated: "8/1/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Installing Veeam Software Appliance from ISO
 
-In this article
 
 To install and configure Veeam Software Appliance, perform the following steps:
 
@@ -22,6 +23,4 @@ To install and configure Veeam Software Appliance, perform the following steps:
 9. [Configure the default security officer account](deployment_linux_iso_install_security_officer.md).
 10. [Finish the configuration](deployment_linux_iso_install_summary.md).
 
-Page updated 8/1/2025
 
-Page content applies to build 13.0.1.1071

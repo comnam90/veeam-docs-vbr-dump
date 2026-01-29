@@ -1,13 +1,14 @@
 ---
 title: "Installing Updates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_appliance_install_updates.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Installing Updates
 
-In this article
 
 Updates can be installed manually or automatically. For more details on the installation process, see [How Updates Work](update_appliance_hiw.md).
 
@@ -55,6 +56,4 @@ If you get a private hotfix provided by Veeam, you can install it manually. To d
 
 [![Installing Updates](images/install_hotfix.webp)](images/install_hotfix.webp)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

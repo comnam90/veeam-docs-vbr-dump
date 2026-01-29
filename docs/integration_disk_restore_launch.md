@@ -1,13 +1,14 @@
 ---
 title: "Step 1. Launch Export Disk Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore_launch.html"
-last_updated: "8/21/2024"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 1. Launch Export Disk Wizard
 
-In this article
 
 To launch the Export Disk wizard, do either of the following:
 
@@ -16,6 +17,4 @@ To launch the Export Disk wizard, do either of the following:
 
 In this case, you will pass immediately to the [Restore Point](integration_disk_restore_point.md) step of the wizard.[![Launch Export Disk Wizard](images/am_agent_restore_disk.webp)](images/am_agent_restore_disk.webp "Launch Export Disk Wizard")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

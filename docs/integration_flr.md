@@ -1,13 +1,14 @@
 ---
 title: "Restoring Files and Folders"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_flr.html"
-last_updated: "1/8/2026"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Files and Folders
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore individual files and folders from Veeam Agent backups.
 
@@ -57,6 +58,4 @@ In this case, add the failover cluster whose data you want to restore to a prote
 
 [![Restore Files and Folders](images/am_agent_restore_flr.webp)](images/am_agent_restore_flr.webp "Restore Files and Folders")
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

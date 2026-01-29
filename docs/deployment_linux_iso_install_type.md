@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Begin Installation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install_type.html"
-last_updated: "8/1/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Begin Installation
 
-In this article
 
 In the installation menu, select Install and press [Enter].
 
@@ -20,6 +21,4 @@ After the installation is complete, do the following:
 1. Select Reboot System or wait for the system to reboot automatically.
 2. After the system reboots, complete the Initial Configuration wizard.
 
-Page updated 8/1/2025
 
-Page content applies to build 13.0.1.1071

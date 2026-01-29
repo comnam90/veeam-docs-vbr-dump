@@ -1,13 +1,14 @@
 ---
 title: "Configuring Updates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_appliance_configure_updates.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Updates
 
-In this article
 
 You can use the following update configurations:
 
@@ -93,6 +94,4 @@ To use the custom update configuration for the specific backup infrastructure co
 
 [![Configuring Updates](images/configure_custom_updates_hmc.webp)](images/configure_custom_updates_hmc.webp)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

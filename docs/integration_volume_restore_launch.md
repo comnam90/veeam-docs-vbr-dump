@@ -1,13 +1,14 @@
 ---
 title: "Step 1. Launch Volume Level Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_launch.html"
-last_updated: "11/19/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 1. Launch Volume Level Restore Wizard
 
-In this article
 
 To launch the Volume Restore wizard, do either of the following:
 
@@ -16,6 +17,4 @@ To launch the Volume Restore wizard, do either of the following:
 
 [![Launch Volume Level Restore Wizard](images/am_volume_restore_launch.webp)](images/am_volume_restore_launch.webp "Launch Volume Level Restore Wizard")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Configuring Remote Access Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_remote_access.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Remote Access Settings
 
-In this article
 
 Users with Host Administrator permissions can perform the following operations within the remote access settings:
 
@@ -115,6 +116,4 @@ If you configured the Security Officer account during the Veeam appliance instal
 
 If the Security Officer approves the request, access to the TUI root shell will be granted for 8 hours from the first login. The access is not revoked after activity timeouts.
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

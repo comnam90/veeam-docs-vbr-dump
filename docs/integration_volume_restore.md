@@ -1,13 +1,14 @@
 ---
 title: "Restoring Volumes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore.html"
-last_updated: "9/1/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Volumes
 
-In this article
 
 If data on a computer volume gets corrupted or lost, you can use Veeam Backup & Replication to restore such computer volume or all volumes from a backup created with Veeam Agent for Microsoft Windows.
 
@@ -28,6 +29,4 @@ Before you perform volume restore, [check prerequisites](integration_volume_rest
 7. [Specify restore reason](integration_volume_restore_reason.md).
 8. [Complete the restore process](integration_volume_restore_complete.md).
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

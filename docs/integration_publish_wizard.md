@@ -1,13 +1,14 @@
 ---
 title: "Step 1. Launch Publish Disks Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_wizard.html"
-last_updated: "9/3/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 1. Launch Publish Disks Wizard
 
-In this article
 
 To launch the Publish Disks wizard, do either of the following:
 
@@ -17,6 +18,4 @@ To launch the Publish Disks wizard, do either of the following:
 
 [![Launch Pubish Disks Wizard](images/agents_disk_publish_launch.webp)](images/agents_disk_publish_launch.webp "Launch Pubish Disks Wizard")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

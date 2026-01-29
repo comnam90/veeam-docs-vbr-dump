@@ -1,13 +1,14 @@
 ---
 title: "Step 10. Finish Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install_summary.html"
-last_updated: "10/8/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 10. Finish Configuration
 
-In this article
 
 At the Summary step of the Initial Configuration wizard, review the system configuration and select Finish. The system will apply the configuration and restart required services.
 
@@ -20,6 +21,4 @@ Related Topics
 * [Configuring Veeam Appliances](hmc.md)
 * [Configuring Veeam Backup & Replication Settings](vbr_configuring.md)
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

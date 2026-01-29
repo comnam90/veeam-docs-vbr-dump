@@ -1,13 +1,14 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_before.html"
-last_updated: "11/4/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you publish disks, check the following requirements and limitations:
 
@@ -22,6 +23,4 @@ Before you publish disks, check the following requirements and limitations:
 
 For the full list of limitations, see [Considerations and Limitations](https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html?ver=13#considerations-and-limitations).
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

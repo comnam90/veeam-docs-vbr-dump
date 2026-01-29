@@ -1,13 +1,14 @@
 ---
 title: "Restoring to Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_to_azure.html"
-last_updated: "11/10/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring to Microsoft Azure
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore computers from Veeam Agent backups to Microsoft Azure.
 
@@ -38,6 +39,4 @@ The procedure of restore to Microsoft Azure from a Veeam Agent backup practicall
 
 [![Restore to Microsoft Azure](images/am_agent_restore_azure.webp)](images/am_agent_restore_azure.webp "Restore to Microsoft Azure")
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

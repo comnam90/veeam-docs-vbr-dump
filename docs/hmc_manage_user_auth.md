@@ -1,13 +1,14 @@
 ---
 title: "Managing User Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_manage_user_auth.html"
-last_updated: "11/20/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Managing User Authentication
 
-In this article
 
 Users with Host Administrator permissions can perform the following operations related to authentication of the tocal Veeam appliance users:
 
@@ -116,6 +117,4 @@ After the Security Officer approves the request, the next time you log in you wi
 
 [![Managing User Authentication](images/hmc_web_forgot_pass.webp)](images/hmc_web_forgot_pass.webp)
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

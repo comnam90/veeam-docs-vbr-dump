@@ -3,14 +3,14 @@ title: "Deploying Veeam Agents Using Generated Setup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_deploy_package.html"
-last_updated: "1/13/2026"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Deploying Veeam Agents Using Generated Setup Files
 
 
-When you configure the Veeam Agent management infrastructure in Veeam Backup & Replication, you can create protection groups of the [Computers with pre-installed backup agents](agents_protection_groups_types.md) type. If you selected this protection group type, you must deploy Veeam Agents on the computers that you plan to protect.
+When you configure the Veeam Agent management infrastructure in Veeam Backup & Replication, you can create protection groups of the [Computers with pre-installed backup agents](agents_protection_groups_types.md) type. If you selected this protection group type, you must manually deploy Veeam Agents on the computers that you plan to protect.
 
 Before You Begin
 

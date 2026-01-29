@@ -1,13 +1,14 @@
 ---
 title: "Restoring Veeam Agent Backup to oVirt KVM VM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_ovirt.html"
-last_updated: "11/10/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Veeam Agent Backup to oVirt KVM VM
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore a Veeam Agent computer as an oVirt KVM VM in your virtualization environment.
 
@@ -32,6 +33,4 @@ The procedure of restore to an oVirt KVM VM for a Veeam Agent computer practical
 
 [![Restore Veeam Agent Backup to oVirt KVM](images/am_agent_restore_ovirt.webp)](images/am_agent_restore_ovirt.webp "Restore Veeam Agent Backup to oVirt KVM")
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

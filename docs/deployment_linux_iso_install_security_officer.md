@@ -1,13 +1,14 @@
 ---
 title: "Step 9. Configure Security Officer Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install_security_officer.html"
-last_updated: "11/25/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 9. Configure Security Officer Account
 
-In this article
 
 At the Security Officer step of the Initial Configuration wizard, configure the default security officer account to perform specific operations in the Host Management console — veeamso. This account type provides an additional security layer to protect your infrastructure against malicious system administration. For more information about operations available for this role, see [Managing Users and Roles](hmc_users.md).
 
@@ -38,6 +39,4 @@ When a security officer first logs in to the Host Management console, they must 
 
 ![Step 9. Configure Security Officer Account](images/deployment_iso_install_security_officer_password.webp)
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

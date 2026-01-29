@@ -1,13 +1,14 @@
 ---
 title: "Configuring HTTP/HTTPS Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_proxies.html"
-last_updated: "8/14/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring HTTP/HTTPS Proxies
 
-In this article
 
 In the Veeam Host Management TUI, you can configure HTTP/HTTPS internet proxies. To do this, perform the following steps:
 
@@ -16,6 +17,4 @@ In the Veeam Host Management TUI, you can configure HTTP/HTTPS internet proxies.
 
 [![Configuring HTTP/HTTPS Proxies](images/hmc_tui_add_http_proxies.webp)](images/hmc_tui_add_http_proxies.webp)
 
-Page updated 8/14/2025
 
-Page content applies to build 13.0.1.1071

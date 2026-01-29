@@ -1,13 +1,14 @@
 ---
 title: "Add-VBRApplicationBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrapplicationbackupjob.html"
-last_updated: "10/22/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Add-VBRApplicationBackupJob
 
-In this article
 
 Short Description
 
@@ -125,8 +126,6 @@ Related Commands
 * [New-VBRSAPHANAProcessingOptions](new-vbrsaphanaprocessingoptions.md)
 * [New-VBRDatabaseProcessingOptions](new-vbrdatabaseprocessingoptions.md)
 * [New-VBRSAPHANAOptions](new-vbrsaphanaoptions.md)
-* [New-VBRSAPHANACredentialsOptions](New-VBRSAPHANACredentialsOptions.md)
+* [New-VBRSAPHANACredentialsOptions](new-vbrsaphanacredentialsoptions.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

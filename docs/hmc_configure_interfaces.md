@@ -1,13 +1,14 @@
 ---
 title: "Configuring Network Interfaces"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_interfaces.html"
-last_updated: "11/18/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Network Interfaces
 
-In this article
 
 You can perform basic and advanced operations with network interfaces:
 
@@ -132,6 +133,4 @@ In the Veeam Host Management TUI, you can use the nmtui tool to add multiple net
 
 [![Configuring Network Interfaces](images/hmc_tui_multiple_network_connections.webp)](images/hmc_tui_multiple_network_connections.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Restoring Application Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_explorers.html"
-last_updated: "11/19/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Application Items
 
-In this article
 
 You can use Veeam Explorers to restore application items from backups created using Veeam Agent for Microsoft Windows and Veeam Agent for Linux. Veeam Backup & Replication lets you restore items and objects from the following applications:
 
@@ -28,6 +29,4 @@ The procedure of application item restore from a Veeam Agent backup does not dif
 
 [![Restore Application Items](images/agent_app_restore.webp)](images/agent_app_restore.webp "Restore Application Items")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

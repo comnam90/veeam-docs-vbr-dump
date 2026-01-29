@@ -1,13 +1,14 @@
 ---
 title: "Immutability"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/immutability.html"
-last_updated: "11/19/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Immutability
 
-In this article
 
 Immutability
 
@@ -47,12 +48,10 @@ When you run the [Sync-VBRSOBREntityState](sync-vbrsobrentitystate.md) cmdlet, i
 2. Rebuilds indexes on the performance tier if it is necessary.
 3. Downloads metadata of backup files that are stored on the capacity tier to the performance tier for the specified period of time. The backups are not downloaded to the performance tier and are stored on the capacity tier.
 
-In This Section:
+In This Section
 
 * [Get-VBRArchiveTierSyncInterval](get-vbrarchivetiersyncinterval.md)
 * [Get-VBRCapacityTierSyncInterval](get-vbrcapacitytiersyncinterval.md)
 * [Sync-VBRSOBREntityState](sync-vbrsobrentitystate.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

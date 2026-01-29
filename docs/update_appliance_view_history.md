@@ -1,13 +1,14 @@
 ---
 title: "Viewing Update History"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_appliance_view_history.html"
-last_updated: "10/8/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Viewing Update History
 
-In this article
 
 To view detailed information about update sessions, do the following:
 
@@ -20,6 +21,4 @@ To download a full log file, click View Full Log.
 
 [![Viewing Update History](images/view_updates_history.webp)](images/view_updates_history.webp)
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

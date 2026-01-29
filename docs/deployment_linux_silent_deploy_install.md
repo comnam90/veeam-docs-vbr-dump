@@ -1,13 +1,14 @@
 ---
 title: "Automating Installation Without Initial Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_silent_deploy_install.html"
-last_updated: "12/11/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Automating Installation Without Initial Configuration
 
-In this article
 
 You can modify the Veeam Software Appliance ISO file to allow unattended installation. This allows you to deploy Veeam Software Appliance automatically. After the installation is complete, you must configure Veeam Software Appliance manually using the Initial Configuration wizard.
 
@@ -43,6 +44,4 @@ To automate the installation of Veeam Software Appliance, do the following:
 
 1. The automatic installation finishes at the [Read and Accept License Agreements](deployment_linux_iso_install_license.md) step. To complete the Initial Configuration wizard, continue the process described in the [Installing Veeam Software Appliance from ISO](deployment_linux_iso_install.md) section.
 
-Page updated 12/11/2025
 
-Page content applies to build 13.0.1.1071

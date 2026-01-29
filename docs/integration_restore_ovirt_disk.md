@@ -1,13 +1,14 @@
 ---
 title: "Restoring Disk from Veeam Agent Backup to oVirt KVM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_ovirt_disk.html"
-last_updated: "11/10/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Disk from Veeam Agent Backup to oVirt KVM
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore disks from a Veeam Agent computer backup to an oVirt KVM VM in your virtualization environment.
 
@@ -32,6 +33,4 @@ The procedure of restoring disks to an oVirt KVM VM for a Veeam Agent computer p
 
 [![Restore Disk from Veeam Agent Backup to oVirt KVM](images/am_agent_restore_ovirt_disks.webp)](images/am_agent_restore_ovirt_disks.webp "Restore Disk from Veeam Agent Backup to oVirt KVM")
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Managing Publishing Disks Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_session.html"
-last_updated: "12/1/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Managing Publishing Disks Session
 
-In this article
 
 After you started a publishing session, you can check details about the session or stop it.
 
@@ -39,6 +40,4 @@ To stop a publishing session, do one of the following:
 
 [![Managing Publishing Disks Session](images/disk_publish_stop_agents.webp)](images/disk_publish_stop_agents.webp)
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

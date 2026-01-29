@@ -1,13 +1,14 @@
 ---
 title: "Step 6. Specify Restore Reason"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_reason.html"
-last_updated: "8/27/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 6. Specify Restore Reason
 
-In this article
 
 At the Reason step of the wizard, enter a reason for publishing disks.
 
@@ -18,6 +19,4 @@ At the Reason step of the wizard, enter a reason for publishing disks.
 
 ![Step 6. Specify Restore Reason](images/disk_publish_reason.webp "Specify Restore Reason")
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Step 8. Complete Restore Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_complete.html"
-last_updated: "8/27/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 8. Complete Restore Process
 
-In this article
 
 At the Summary step of the wizard, complete the procedure of volume restore.
 
@@ -16,6 +17,4 @@ At the Summary step of the wizard, complete the procedure of volume restore.
 
 ![Step 8. Complete Restore Process](images/agent_volume_restore_summary.webp "Complete Restore Process")
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

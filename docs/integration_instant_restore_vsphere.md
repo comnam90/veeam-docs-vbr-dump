@@ -1,13 +1,14 @@
 ---
 title: "Restoring Veeam Agent Backup to vSphere VM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_vsphere.html"
-last_updated: "11/17/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Veeam Agent Backup to vSphere VM
 
-In this article
 
 In the Veeam Backup & Replication console, you can use Instant Recovery to restore a Veeam Agent computer as a VMware vSphere VM in your virtualization environment.
 
@@ -49,6 +50,4 @@ Restore to vSphere VM
 
 The procedure of Instant Recovery for a Veeam Agent computer practically does not differ from the same procedure for a VM. The main difference from Instant Recovery is that you do not need to select the recovery mode, because Veeam Agent computers are always restored to a new location. To learn more, see [Performing Instant Recovery of Workloads to VMware vSphere](performing_instant_recovery_vm.md).[![Restore Veeam Agent Backup to vSphere VM](images/am_agent_restore_instant.webp)](images/am_agent_restore_instant.webp "Restore Veeam Agent Backup to vSphere VM")
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

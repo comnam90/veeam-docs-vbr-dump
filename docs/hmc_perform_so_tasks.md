@@ -1,13 +1,14 @@
 ---
 title: "Performing Security Officer Tasks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_perform_so_tasks.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Performing Security Officer Tasks
 
-In this article
 
 Users with Security Officer permissions can perform the following tasks in the Veeam Host Management web UI:
 
@@ -151,6 +152,4 @@ If you have a configuration backup passphrase from the previous backup server, y
 
 [![Performing Security Officer Tasks](images/hmc_so_bco_restore.webp)](images/hmc_so_bco_restore.webp)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

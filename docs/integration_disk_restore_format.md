@@ -1,13 +1,14 @@
 ---
 title: "Step 5. Select Destination and Disk Format"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore_format.html"
-last_updated: "8/27/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 5. Select Destination and Disk Format
 
-In this article
 
 At the Target step of the wizard, select the destination for disk export and format in which you want to save the resulting virtual disk.
 
@@ -34,6 +35,4 @@ At the Target step of the wizard, select the destination for disk export and for
 
 ![Step 5. Select Destination and Disk Format](images/agent_restore_disks_type.webp "Select Destination and Disk Format")
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

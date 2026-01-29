@@ -1,13 +1,14 @@
 ---
 title: "About Veeam Host Management"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_about.html"
-last_updated: "11/20/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # About Veeam Host Management
 
-In this article
 
 Veeam Host Management is the component used to configure backup server or other backup infrastructure components deployed from Veeam appliances — Veeam Software Appliance and Veeam Infrastructure Appliance. You can perform operations through the Veeam Host Management console that has a web UI and text-based UI (TUI). For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
 
@@ -63,6 +64,4 @@ The following table describes operations available in the Veeam Host Management 
 | View authorization request events | + | — |
 | Manage configuration backup passphrases | + | — |
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

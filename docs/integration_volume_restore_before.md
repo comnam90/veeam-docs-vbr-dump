@@ -1,13 +1,14 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_before.html"
-last_updated: "9/1/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Before You Begin
 
-In this article
 
 Before you begin the volume-level restore process, check the following prerequisites:
 
@@ -21,6 +22,4 @@ Volume-level restore has the following limitations:
 * You cannot restore a system volume to a system volume of the original Veeam Agent computer or another computer with the running OS. To perform such restore, you need to boot the OS from the recovery image. To learn more, see [Restoring Data with Veeam Recovery Media](performing_restore_tasks.md#veeamre). You can also restore a system volume to a non-system volume that has enough free space.
 * You cannot restore a volume to a volume on which the Microsoft Windows swap file is hosted.
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Restoring Veeam Agent Backup to Scale Computing HyperCore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_scale.html"
-last_updated: "11/21/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Veeam Agent Backup to Scale Computing HyperCore
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore a Veeam Agent computer as a Scale Computing HyperCore VM in your virtualization environment.
 
@@ -17,6 +18,4 @@ The procedure of restore to Scale Computing HyperCore for a Veeam Agent computer
 
 [![Restore Veeam Agent Backup to Scale Computing HyperCore](images/agent_restore_scale.webp)](images/agent_restore_scale.webp "Restore Veeam Agent Backup to Scale Computing HyperCore")
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Restoring to Google Compute Engine"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_to_google.html"
-last_updated: "11/10/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring to Google Compute Engine
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore computers from Veeam Agent backups to Google Compute Engine.
 
@@ -35,6 +36,4 @@ The procedure of restore to Google Compute Engine from a Veeam Agent backup prac
 
 [![Restore to Google Cloud Platform](images/am_agent_restore_google.webp)](images/am_agent_restore_google.webp "Restore to Google Cloud Platform")
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071
