@@ -1,13 +1,14 @@
 ---
 title: "Configuring Network Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_network.html"
-last_updated: "8/7/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Network Settings
 
-In this article
 
 Users with Host Administrator permissions can perform the following operations within the network settings:
 
@@ -18,6 +19,4 @@ Users with Host Administrator permissions can perform the following operations w
 
 Users with Security Officer permissions cannot configure network settings.
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "How Updates Work"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_appliance_hiw.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # How Updates Work
 
-In this article
 
 Update operations work in the following way:
 
@@ -41,6 +42,4 @@ For more information on automatic and manual update installation, see [Installin
 | Note |
 | If your license has expired or is not valid, update operations will fail, and the Veeam Updater UI will be unavailable. |
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

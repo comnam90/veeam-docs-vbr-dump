@@ -1,13 +1,14 @@
 ---
 title: "Step 1. Mount ISO File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install_mount.html"
-last_updated: "9/24/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 1. Mount ISO File
 
-In this article
 
 To start the setup wizard, perform the following steps:
 
@@ -23,6 +24,4 @@ To start the setup wizard, perform the following steps:
 
 [![Step 1. Mount ISO File](images/deployment_iso_install_mount.webp)](images/deployment_iso_install_mount.webp)
 
-Page updated 9/24/2025
 
-Page content applies to build 13.0.1.1071

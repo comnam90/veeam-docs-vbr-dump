@@ -1,13 +1,14 @@
 ---
 title: "Step 3. Select Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_point.html"
-last_updated: "11/17/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 3. Select Restore Point
 
-In this article
 
 At the Restore Point step of the wizard, select a restore point from which you want to recover data.
 
@@ -23,6 +24,4 @@ To select a restore point:
 
 ![Step 3. Select Restore Point](images/agent_volume_restore_point.webp "Select Restore Point")
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

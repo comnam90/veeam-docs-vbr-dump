@@ -1,13 +1,14 @@
 ---
 title: "Performing Initial Security Officer Login"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_users_security_officer.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Performing Initial Security Officer Login
 
-In this article
 
 When you first log in to the Veeam Host Management as a Security Officer, perform the following steps:
 
@@ -43,6 +44,4 @@ You can change the passphrase later if required. For more information, see [Mana
 
 1. Click Finish.
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

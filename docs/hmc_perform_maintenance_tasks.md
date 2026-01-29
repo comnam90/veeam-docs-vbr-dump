@@ -1,13 +1,14 @@
 ---
 title: "Performing Maintenance Tasks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_perform_maintenance_tasks.html"
-last_updated: "11/20/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Performing Maintenance Tasks
 
-In this article
 
 Users with Host Administrator permissions can perform the following maintenance tasks:
 
@@ -101,6 +102,4 @@ In the Veeam Host Management TUI, you can generate new certificate for the Veeam
 
 [![Performing Maintenance Tasks](images/hmc_tui_generate_certificates.webp)](images/hmc_tui_generate_certificates.webp)
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Restoring Data from Veeam Agent Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_restore_tasks.html"
-last_updated: "11/21/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Data from Veeam Agent Backups
 
-In this article
 
 You can recover data from Veeam Agent backups created by backup jobs configured in Veeam Backup & Replication. For data restore with the Veeam backup console, you can use the backups created on a Veeam backup repository or cloud repository. If you specified a local drive or network shared folder as a target for Veeam Agent backups, you need to restore data from such backups using Veeam Agent UI on a protected computer.
 
@@ -49,6 +50,4 @@ The process of data restore with the Veeam Recovery Media in the Veeam Agent man
 * For information on data restore with the Veeam Recovery Media on a Microsoft Windows computer, see the [Restoring from Veeam Recovery Media](https://helpcenter.veeam.com/docs/agentforwindows/userguide/image_boot.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
 * For information on data restore with the Veeam Recovery Media on a Linux computer, see the [Restoring from Veeam Recovery Media](https://helpcenter.veeam.com/docs/agentforlinux/userguide/baremetal.html?ver=13) section in the Veeam Agent for Linux User Guide.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

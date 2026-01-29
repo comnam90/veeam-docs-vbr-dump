@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "1/26/2026"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -567,8 +567,8 @@ File Share Connections
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
-| Backup server | File server (Windows or Linux), Backup proxy | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
-| TCP | 6160 | Default port used by Veeam Installer Service. |
+| File server (Windows or Linux), Backup proxy | Backup server | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
+| Backup server | File server (Windows or Linux), Backup proxy | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6210 | Default port used by the Veeam Backup VSS Integration Service for taking a VSS snapshot during the SMB file share backup (if Veeam Backup & Replication is installed on the Microsoft Windows machine). For more information, see [Microsoft Windows Services](services_and_components.md#win_services). |
 | TCP | 6162 | Default port used by Veeam Transport Service. |
 | Backup proxy | NAS filer (NetApp Data ONTAP or Lenovo ThinkSystem DM/DG Series storage system) | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
@@ -598,6 +598,7 @@ Cache Repository Connections
 | File server (Windows or Linux), Backup proxy | Cache repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | TCP | 6160 | Default ports used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service. |
+| Backup server | Old cache repository, new cache repository | TCP | 2500 to 3300, 6160, 6162 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo). |
 | Cache repository | File server (Windows or Linux), Backup proxy | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | Primary or secondary backup repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels for file share backup restore jobs. For every TCP connection that a job uses, one port from this range is assigned. |
 

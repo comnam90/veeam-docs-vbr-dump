@@ -1,13 +1,14 @@
 ---
 title: "Changing Server Name"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_hostname.html"
-last_updated: "11/17/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Changing Server Name
 
-In this article
 
 Before you change the server name, consider the following:
 
@@ -32,6 +33,4 @@ If you use the Veeam Host Management TUI, perform the following steps:
 
 [![Changing Server Name](images/hmc_tui_change_hostname.webp)](images/hmc_tui_change_hostname.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -3,7 +3,7 @@ title: "Creating Universal CDP Policies"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/creating_universal_cdp_policies.html"
-last_updated: "11/18/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -95,7 +95,9 @@ During every specified period, Veeam Backup & Replication will prepare data for 
 1. To instruct the CDP policy to display a warning or error if a newly created restore points are not transferred to the target within the set RPO, click RPO reporting. Then specify when the policy must display error and warning. If you configured email notification settings, Veeam Backup & Replication will mark the policy with the Warning or Error status and will also send email notifications.
 2. In the Short-term retention section, configure the short-term retention policy, that is, specify for how long to store short-term restore points.
 3. In the Long-term retention section, specify when to create long-term restore points and for how long to store them.
-4. To specify time periods when Veeam Backup & Replication must create application-consistent and crash-consistent long-term restore points, click Schedule, then click Crash-consistent or Application-consistent and select the necessary time area.
+4. To specify time periods when Veeam Backup & Replication must create crash-consistent long-term restore points, click Schedule, then select the necessary time area for crash-consistent long-term restore points.
+
+For Universal CDP policies, application-consistent restore points are not supported, and those time periods cannot be specified. Crash-consistent is selected by default.
 
 ![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_schedule.webp)
 

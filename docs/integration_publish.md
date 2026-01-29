@@ -1,13 +1,14 @@
 ---
 title: "Publishing Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish.html"
-last_updated: "8/27/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Publishing Disks
 
-In this article
 
 You can use the Veeam backup console to publish disks from Veeam Agent backups.
 
@@ -34,6 +35,4 @@ To publish disks from a backup of a Veeam Agent computer to a target server, Vee
 
 To learn more, see [Disk Publishing](data_integration_api.md).
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Step 4. Read and Accept License Agreements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install_license.html"
-last_updated: "9/3/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 4. Read and Accept License Agreements
 
-In this article
 
 At the License step of the Initial Configuration wizard, read and accept Veeam license agreements and policies.
 
@@ -18,6 +19,4 @@ At the License step of the Initial Configuration wizard, read and accept Veeam l
 
 ![Step 4. Read and Accept License Agreements](images/deployment_iso_install_license.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

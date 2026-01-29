@@ -1,13 +1,14 @@
 ---
 title: "Step 5. Select Target Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_server.html"
-last_updated: "9/3/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 5. Select Target Server
 
-In this article
 
 At the Target step of the wizard, select a server that will have access to disk content. You can select the following servers depending on the OS of the Veeam Agent computer:
 
@@ -44,6 +45,4 @@ To learn more about these settings, see [Specify Credentials and SSH Settings](l
 
 ![Step 5. Select Target Server](images/disk_publish_target_settings.webp "Customize Connection Settings")  ![Step 5. Select Target Server](images/disk_publish_target_settings_advanced.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

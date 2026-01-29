@@ -1,13 +1,14 @@
 ---
 title: "Performing Disk Publish"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_disks.html"
-last_updated: "11/14/2023"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Performing Disk Publish
 
-In this article
 
 Before you publish disks, [check prerequisites](integration_publish_before.md). Then use the Publish Disks wizard.
 
@@ -19,6 +20,4 @@ Before you publish disks, [check prerequisites](integration_publish_before.md). 
 6. [Specify a reason for disk publishing](integration_publish_reason.md).
 7. [Finish working with the wizard](integration_publish_finish.md).
 
-Page updated 11/14/2023
 
-Page content applies to build 13.0.1.1071

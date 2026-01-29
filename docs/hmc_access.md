@@ -1,13 +1,14 @@
 ---
 title: "Accessing Veeam Host Management Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_access.html"
-last_updated: "11/17/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Accessing Veeam Host Management Console
 
-In this article
 
 You can log in to the Veeam Host Management console under a user account with either the Host Administrator or Security Officer role.
 
@@ -62,6 +63,4 @@ To log in to the Veeam Host Management TUI, do the following:
 
 [![Accessing Veeam Host Management Console](images/hmc_tui.webp)](images/hmc_tui.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

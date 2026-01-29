@@ -1,13 +1,14 @@
 ---
 title: "Restoring to Amazon EC2"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_to_amazon.html"
-last_updated: "11/10/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring to Amazon EC2
 
-In this article
 
 You can use the Veeam Backup & Replication console to restore computers from Veeam Agent backups to Amazon EC2.
 
@@ -35,6 +36,4 @@ The procedure of restore to Amazon EC2 from a Veeam Agent backup practically doe
 
 [![Restore to Amazon EC2](images/am_agent_restore_amazon.webp)](images/am_agent_restore_amazon.webp "Restore to Amazon EC2")
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

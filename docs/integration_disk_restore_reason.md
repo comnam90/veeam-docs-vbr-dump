@@ -1,13 +1,14 @@
 ---
 title: "Step 7. Specify Restore Reason"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore_reason.html"
-last_updated: "8/27/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 7. Specify Restore Reason
 
-In this article
 
 At the Reason step of the wizard, enter a reason for restoring the computer volume.
 
@@ -18,6 +19,4 @@ At the Reason step of the wizard, enter a reason for restoring the computer volu
 
 ![Step 7. Specify Restore Reason](images/agent_restore_disks_reason.webp "Specify Restore Reason")
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

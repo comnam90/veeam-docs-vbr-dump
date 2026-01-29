@@ -1,13 +1,14 @@
 ---
 title: "Configuring Backup Infrastructure Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_infrastructure.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Backup Infrastructure Settings
 
-In this article
 
 Users with Host Administrator permissions can perform the following operations with backup infrastructure:
 
@@ -51,6 +52,4 @@ To disable lockdown, click Revoke. If you configured the Security Officer accoun
 
 [![Configuring Backup Infrastructure Settings](images/hmc_web_lockdown.webp)](images/hmc_web_lockdown.webp)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

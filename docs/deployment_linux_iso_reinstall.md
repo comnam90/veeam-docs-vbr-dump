@@ -1,13 +1,14 @@
 ---
 title: "Reinstalling Veeam Software Appliance from ISO"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_reinstall.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Reinstalling Veeam Software Appliance from ISO
 
-In this article
 
 To recover the operating system, you can reinstall Veeam Software Appliance. During this procedure, your backup data will not be affected.
 
@@ -23,6 +24,4 @@ To reinstall Veeam Software Appliance, perform the following steps:
 
 [![Reinstalling Veeam Software Appliance from ISO](images/deployment_iso_reinstall.webp)](images/deployment_iso_reinstall.webp)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

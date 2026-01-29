@@ -1,13 +1,14 @@
 ---
 title: "Configuring Server Time Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_time.html"
-last_updated: "12/16/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Server Time Settings
 
-In this article
 
 Users with Host Administrator permissions can perform the following operations within the server time settings:
 
@@ -115,6 +116,4 @@ If you use the Veeam Host Management TUI, perform the following steps:
 
 [![Configuring Server Time Settings](images/hmc_tui_remove_ntp_server.webp)](images/hmc_tui_remove_ntp_server.webp)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

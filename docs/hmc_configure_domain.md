@@ -1,13 +1,14 @@
 ---
 title: "Managing Domain Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_domain.html"
-last_updated: "11/20/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Managing Domain Settings
 
-In this article
 
 In the Veeam Host Management web UI, you can change domain membership of the server. To do this, perform the following steps:
 
@@ -30,6 +31,4 @@ To specify additional DNS suffixes, click Configure next to the setting name.
 
 [![Managing Domain Settings](images/hmc_web_change_domain.webp)](images/hmc_web_change_domain.webp)
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

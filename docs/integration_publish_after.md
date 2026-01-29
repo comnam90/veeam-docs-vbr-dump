@@ -1,13 +1,14 @@
 ---
 title: "What You Do Next"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_after.html"
-last_updated: "12/20/2023"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # What You Do Next
 
-In this article
 
 After the disks are published, go to the following locations on the target server to browse disks content:
 
@@ -17,6 +18,4 @@ After the disks are published, go to the following locations on the target serve
 
 After you started a disks publishing session, you can view the session statistics or stop the session from the Veeam backup console. To learn more, see [Managing Publishing Disks Session](integration_publish_session.md).
 
-Page updated 12/20/2023
 
-Page content applies to build 13.0.1.1071

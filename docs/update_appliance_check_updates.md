@@ -1,13 +1,14 @@
 ---
 title: "Checking for Updates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_appliance_check_updates.html"
-last_updated: "11/18/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Checking for Updates
 
-In this article
 
 Veeam Backup & Replication automatically notifies you about updates that must be installed or can be installed to enhance your experience with the product. Update notifications eliminate the risk of using out-of-date components in the backup infrastructure or missing critical updates that can have a negative impact on data protection and disaster recovery tasks.
 
@@ -32,6 +33,4 @@ To check information about latest updates manually, do one of the following:
 
 [![Checking for Updates](images/check_updates.webp)](images/check_updates.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,13 +1,14 @@
 ---
 title: "Step 4. Map Restored Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_disk_mapping.html"
-last_updated: "8/26/2025"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 4. Map Restored Disks
 
-In this article
 
 At the Disk Mapping step of the wizard, select what volumes you want to restore and map volumes from the backup to volumes on the target computer.
 
@@ -51,6 +52,4 @@ If you want to change disk layout configured by Veeam Backup & Replication, righ
 
 ![Step 4. Map Restored Disks](images/agent_volume_restore_map_disks_resize.webp "Map Restored Disks")
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071
