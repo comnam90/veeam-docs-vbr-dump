@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_advanced_maintenance.html"
 last_updated: "12/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 You can instruct Veeam Backup & Replication to periodically perform a health check for the backup. The health check ensures that the backup is consistent, and you will be able to restore data from it.
 
@@ -22,6 +23,4 @@ To configure the health-check settings for backup job:
 
 ![Maintenance Settings](images/os_backup_job_advanced_maintenance.webp)
 
-Page updated 12/18/2023
 
-Page content applies to build 13.0.1.1071

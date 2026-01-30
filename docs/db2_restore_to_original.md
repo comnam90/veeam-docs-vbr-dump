@@ -1,5 +1,7 @@
 ---
 title: "Restore to Original Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_original.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Original Server
 
-In this article
 
 You can restore IBM Db2 databases from backups stored on Veeam backup repositories in the following ways:
 
@@ -115,6 +116,4 @@ where <database\_name> is a name of the database you want to deactivate.
 
 where <database\_name> is a name of the database you want to deactivate.
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

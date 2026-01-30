@@ -1,5 +1,7 @@
 ---
 title: "Microsoft SQL Server Transaction Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_sql_logs.html"
 last_updated: "5/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft SQL Server Transaction Log Settings
 
-In this article
 
 The SQL tab is available for VMs that run Microsoft SQL Server and if you have selected Process transaction logs with this job when configuring application-aware processing.
 
@@ -39,6 +40,4 @@ This option is recommended if you are using another backup tool to perform VM gu
 
 ![Microsoft SQL Server Transaction Log Settings](images/vcd_sql_transaction.webp)
 
-Page updated 5/31/2023
 
-Page content applies to build 13.0.1.1071

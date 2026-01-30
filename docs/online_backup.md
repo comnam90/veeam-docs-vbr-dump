@@ -1,5 +1,7 @@
 ---
 title: "Online Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/online_backup.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Online Backup
 
-In this article
 
 Online backup is the recommended backup method for Microsoft Hyper-V VMs as it requires no downtime. VMs remain running during the entire backup period, and users can access them without interruption. Online backup can be performed if Microsoft Hyper-V VMs meet several requirements. For more information, see [Microsoft Hyper-V documentation](http://technet.microsoft.com/en-us/library/dd252619%28WS.10%29.aspx).
 
@@ -38,6 +39,4 @@ Related Topics
 
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

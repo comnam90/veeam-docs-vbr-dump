@@ -1,5 +1,7 @@
 ---
 title: "Infrastructure Icons"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infrastructure_icons.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Infrastructure Icons
 
-In this article
 
 The user interface icons display Veeam Backup & Replication infrastructure objects, jobs and their current state.
 
@@ -391,6 +392,4 @@ Tape Infrastructure
 
 For more information about the icons that represent the tape infrastructure components, see [Tape Infrastructure Icons](tape_indicators.md).
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

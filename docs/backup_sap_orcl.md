@@ -1,5 +1,7 @@
 ---
 title: "Database Protection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_sap_orcl.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Protection
 
-In this article
 
 After you configure Veeam Plug-In for SAP on Oracle, you can back up databases using SAP BR\*Tools. Veeam Plug-In will automatically transfer backup files to a backup repository and store them in the Veeam proprietary format. The backup process itself is performed by SAP BR\*Tools.
 
@@ -25,6 +26,4 @@ In This Section
 | Note |
 | This guide provides examples for SAP BR\*Tools commands. Apart from BR\*Tools scripts, you can perform backup operations using BRTOOLS interactive wizard and BR\*Tools Studio. For details, see [this SAP article](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/47/15f47c634b63efe10000000a114a6b/frameset.htm). |
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

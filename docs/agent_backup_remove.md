@@ -1,5 +1,7 @@
 ---
 title: "Removing Backup from Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_remove.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Backup from Configuration
 
-In this article
 
 If you want to remove records about Veeam Agent backups from the Veeam Backup & Replication console and configuration database, you can use the Remove from configuration operation. When you remove a Veeam Agent backup from configuration, the actual backup files remain on the backup repository. You can import the backup to the Veeam Backup & Replication at any time later and restore data from it.
 
@@ -34,6 +35,4 @@ To remove a Veeam Agent backup from configuration:
 
 [![Remove Backup from Configuration Database](images/agent_remove_from_backups.webp)](images/agent_remove_from_backups.webp "Remove Backup from Configuration Database")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

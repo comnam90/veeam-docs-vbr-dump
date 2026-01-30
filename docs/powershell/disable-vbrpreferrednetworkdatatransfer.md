@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRPreferredNetworkDataTransfer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrpreferrednetworkdatatransfer.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRPreferredNetworkDataTransfer
 
-In this article
 
 Short Description
 
@@ -49,6 +50,4 @@ This command disables data transfer over preferred networks only.
 | --- |
 | Disable-VBRPreferredNetworkDataTransfer |
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

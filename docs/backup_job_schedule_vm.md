@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Define Job Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_schedule_vm.html"
 last_updated: "1/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Define Job Schedule
 
-In this article
 
 At the Schedule step of the wizard, select to run the job manually or schedule the job to run on a regular basis:
 
@@ -58,6 +59,4 @@ Related Topics
 
 [Chained Jobs](job_schedule.md)
 
-Page updated 1/23/2025
 
-Page content applies to build 13.0.1.1071

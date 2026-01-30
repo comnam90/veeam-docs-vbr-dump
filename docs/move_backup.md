@@ -1,5 +1,7 @@
 ---
 title: "Moving Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/move_backup.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Moving Backups
 
-In this article
 
 Veeam Backup & Replication allows you to move all backups of a backup job to another repository or to move specific workloads and their backups to another job.
 
@@ -70,6 +71,4 @@ To finalize the move operation:
 2. In the inventory pane, select the Last 24 Hours node.
 3. Right-click the failed move session and select the required action. Alternatively, select the required action on the ribbon.
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

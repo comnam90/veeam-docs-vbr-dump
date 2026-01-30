@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant Recovery Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_multiple_latest_wizard.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant Recovery Wizard
 
-In this article
 
 To perform instant recovery of multiple databases to the latest state, do the following:
 
@@ -25,6 +26,4 @@ Alternatively, you can right-click the Oracle server or an Oracle home and selec
 
 [![Performing Instant Recovery of Latest State](images/veor_ir_multiple_latest.webp)](images/veor_ir_multiple_latest.webp "Performing Instant Recovery of Latest State")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

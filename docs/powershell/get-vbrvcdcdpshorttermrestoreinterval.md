@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRvCDCDPShortTermRestoreInterval"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvcdcdpshorttermrestoreinterval.html"
 last_updated: "7/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRvCDCDPShortTermRestoreInterval
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Related Commands
 
 [Get-VBRCDPReplica](get-vbrcdpreplica.md)
 
-Page updated 7/24/2024
 
-Page content applies to build 13.0.1.1071

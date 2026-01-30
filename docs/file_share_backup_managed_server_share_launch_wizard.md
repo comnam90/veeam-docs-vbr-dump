@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New File Server Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_managed_server_share_launch_wizard.html"
 last_updated: "10/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New File Server Wizard
 
-In this article
 
 To launch the New File Server wizard:
 
@@ -22,6 +23,4 @@ To launch the New File Server wizard:
 
 ![Step 1. Launch New File Server Wizard](images/add_unstructured_data_source.webp)
 
-Page updated 10/31/2023
 
-Page content applies to build 13.0.1.1071

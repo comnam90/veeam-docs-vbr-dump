@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Veeam Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_uninstall_everything.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Veeam Components
 
-In this article
 
 You can uninstall all the following Veeam product components installed on a protected computer as one operation:
 
@@ -38,6 +39,4 @@ To uninstall Veeam Agents, Veeam Plug-Ins and other Veeam product components:
 
 [![Uninstall All Veeam Agents and Veeam Plug-Ins](images/mongo_policy_uninstall_everything.webp)](images/mongo_policy_uninstall_everything.webp "Uninstall All Veeam Agents and Veeam Plug-Ins")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

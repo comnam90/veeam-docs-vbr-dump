@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_linux_vbr.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Repository Settings
 
-In this article
 
 At the Backup Server step of the wizard, specify settings to connect to the backup repository:
 
@@ -48,6 +49,4 @@ You can enable this option only if a backup copy job or backup to tape job is al
 
 ![Veeam Backup Repository Settings](images/agent_policy_vbr_repo_linux.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

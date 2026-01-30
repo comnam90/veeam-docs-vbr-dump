@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRMSSQLProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrmssqlprocessingoptions.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRMSSQLProcessingOptions
 
-In this article
 
 Short Description
 
@@ -67,6 +68,4 @@ Perform the following steps:
 
 1. Run the Set‑VBRMSSQLProcessingOptions cmdlet. Specify the Options parameter with the $sqloptions variable.
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

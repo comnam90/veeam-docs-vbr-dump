@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_multiple_select_databases.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Databases
 
-In this article
 
 At this step of the wizard, select the databases that you want to recover.
 
@@ -22,6 +23,4 @@ In the New Name column, you can specify a new name for the selected database on 
 
 [![Selecting Databases](images/vemdb_rs_restore_collection_multiple_select_databases.webp)](images/vemdb_rs_restore_collection_multiple_select_databases.webp "Selecting Databases")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

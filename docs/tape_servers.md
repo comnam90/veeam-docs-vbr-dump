@@ -1,5 +1,7 @@
 ---
 title: "Tape Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_servers.html"
 last_updated: "9/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Servers
 
-In this article
 
 When you have deployed a tape server and connected the tape device to it, you need to add the tape server to the Veeam backup server. To do so, you must assign the role of the tape server to a Windows or Linux server that is already added to the list of managed servers. For the tape server system requirements, see [System Requirements](system_requirements.md#tape_server).
 
@@ -27,6 +28,4 @@ Related Topics
 * [Modifying Tape Servers](managing_tapeservers.md)
 * [Replacing Tape Servers](replacing_tape_servers.md)
 
-Page updated 9/12/2025
 
-Page content applies to build 13.0.1.1071

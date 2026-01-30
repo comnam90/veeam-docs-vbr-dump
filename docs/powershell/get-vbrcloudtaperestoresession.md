@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCloudTapeRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudtaperestoresession.html"
 last_updated: "1/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCloudTapeRestoreSession
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command shows how to get all active restore sessions of the tenant data fro
 | --- |
 | Get-VBRCloudTapeRestoreSession |
 
-Page updated 1/26/2024
 
-Page content applies to build 13.0.1.1071

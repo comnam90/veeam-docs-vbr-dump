@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Export Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_bak_multiple_latest_wizard.html"
 last_updated: "8/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Export Wizard
 
-In this article
 
 To launch the Export wizard, do the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can right-click an instance or the server and select Export b
 
 [![Launching Export Wizard](images/1_click_export_to_current_bak_multiple.webp)](images/1_click_export_to_current_bak_multiple.webp "Launching Export Wizard")
 
-Page updated 8/10/2025
 
-Page content applies to build 13.0.1.1071

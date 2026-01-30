@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Add Machines to Application Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_vms_vm.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Add Machines to Application Group
 
-In this article
 
 At the Machines step of the wizard, add machines to the created application group. You can add machines from different sources:
 
@@ -28,6 +29,4 @@ To add machines to the application group:
 
 ![Step 3. Add Machines to Application Group](images/app_group_add_vm.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

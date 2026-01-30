@@ -1,5 +1,7 @@
 ---
 title: "New-VBRPostgreSQLProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrpostgresqlprocessingoptions.html"
 last_updated: "3/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRPostgreSQLProcessingOptions
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Related Commands
 
 [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 3/6/2024
 
-Page content applies to build 13.0.1.1071

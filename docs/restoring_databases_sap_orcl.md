@@ -1,5 +1,7 @@
 ---
 title: "Database Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_databases_sap_orcl.html"
 last_updated: "11/23/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Recovery
 
-In this article
 
 With the configured Veeam Plug-In you can restore Oracle databases from the backups that reside on backup repositories. All restore operations are performed on the SAP BR\*Tools side.
 
@@ -19,6 +20,4 @@ To learn how to recover Oracle databases from backups created by Veeam Plug-In f
 * [Restore Redo Logs](restore_sap_orcl_logs.md)
 * [Restore from Hardened Repository](restore_from_immutable_sap_orcl.md)
 
-Page updated 11/23/2023
 
-Page content applies to build 13.0.1.1071

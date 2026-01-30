@@ -1,5 +1,7 @@
 ---
 title: "How SureReplica Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_hiw.html"
 last_updated: "8/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How SureReplica Works
 
-In this article
 
 SureReplica is Veeam’s technology that lets you test a VM replica for recoverability. To ensure that the VM replica is functioning properly, Veeam Backup & Replication performs its “live” verification. Veeam Backup & Replication automatically boots the VM replica from the necessary restore point in the isolated environment, performs tests against the VM replica, powers it off and creates a report on the VM replica state.
 
@@ -41,6 +42,4 @@ To perform VM replica verification, you need to create the following objects:
 2. [Virtual lab](surereplica_vlab_config.md). The virtual lab is the isolated virtual environment in which the VM replica and VMs from the application group are started and tested.
 3. [SureBackup job](surereplica_job.md). The SureBackup job is a task for VM replica verification process. You can run the SureBackup job manually or schedule it to run automatically by schedule.
 
-Page updated 8/20/2024
 
-Page content applies to build 13.0.1.1071

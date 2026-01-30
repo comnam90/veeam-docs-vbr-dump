@@ -1,5 +1,7 @@
 ---
 title: "Editing Backup Policy Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_manage_edit.html"
 last_updated: "11/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Backup Policy Settings
 
-In this article
 
 You can edit settings of an application backup policy at any time. For example, you may want to change the backup scope, target location or scheduling settings for application backup policies running on protected computers.
 
@@ -25,6 +26,4 @@ To edit backup policy settings:
 
 [![Edit Application Backup Policy](images/mongo_policy_edit.webp)](images/mongo_policy_edit.webp "Edit Application Backup Policy")
 
-Page updated 11/27/2024
 
-Page content applies to build 13.0.1.1071

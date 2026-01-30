@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRBackupRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrbackuprepository.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRBackupRepository
 
-In this article
 
 Short Description
 
@@ -157,6 +158,4 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Add-VBRLinux](add-vbrlinux.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Sessions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/session_cmdlets.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sessions
 
-In this article
 
 Get sessions of a selected job and look which tasks it contains.
 
@@ -31,6 +32,4 @@ In This Section
 
 For SureBackup sessions, see [SureBackup Jobs](surebackup_job.md).
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restore Point Selection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_select_point.html"
 last_updated: "3/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore Point Selection
 
-In this article
 
 Veeam Backup & Replication always copies the most recent restore points, even if a backup copy job runs for the first time and source backup repositories already contain chains of restore points.
 
@@ -33,6 +34,4 @@ The following limitations apply when Veeam Backup & Replication selects restore 
 
 For example, if you have changed the block size for restore points in the source backup job settings, Veeam Backup & Replication will not copy newly created restore points and will display the Restore point is located in backup file with different block size message.
 
-Page updated 3/17/2025
 
-Page content applies to build 13.0.1.1071

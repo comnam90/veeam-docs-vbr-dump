@@ -1,5 +1,7 @@
 ---
 title: "Creating Job for Linux Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_create_linux.html"
 last_updated: "6/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Job for Linux Computers
 
-In this article
 
 To back up data of a computer protected with Veeam Agent for Linux, you can configure a Veeam Agent backup job in Veeam Backup & Replication.
 
@@ -26,6 +27,4 @@ Before configuring a backup job, [check prerequisites](agent_job_before_linux.md
 11. [Specify the backup schedule](agent_job_schedule_linux.md).
 12. [Review backup job settings](backup_job_review_linux.md).
 
-Page updated 6/6/2024
 
-Page content applies to build 13.0.1.1071

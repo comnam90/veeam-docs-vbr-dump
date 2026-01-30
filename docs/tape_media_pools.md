@@ -1,5 +1,7 @@
 ---
 title: "Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_media_pools.html"
 last_updated: "5/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Media Pools
 
-In this article
 
 Media pools are logical containers created in Veeam Backup & Replication to organize and administer tapes.
 
@@ -40,6 +41,4 @@ Related Topics
 * [Modifying Media Pools](modifying_media_pools.md)
 * [Removing Media Pools](deleting_media_pools.md)
 
-Page updated 5/27/2024
 
-Page content applies to build 13.0.1.1071

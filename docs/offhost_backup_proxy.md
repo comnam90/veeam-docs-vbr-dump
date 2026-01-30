@@ -1,5 +1,7 @@
 ---
 title: "Off-Host Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/offhost_backup_proxy.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Off-Host Backup Proxies
 
-In this article
 
 An off-host backup proxy is a component that sits between the backup server and other backup infrastructure components in Microsoft Hyper-V environments. The proxy processes jobs and delivers backup traffic.
 
@@ -79,6 +80,4 @@ Related Topics
 * [Disabling and Removing Backup Proxies](offhost_setup_manproxy.md)
 * [Configuring Advanced Options for Off-Host Backup Proxies](offhost_proxy_advanced.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

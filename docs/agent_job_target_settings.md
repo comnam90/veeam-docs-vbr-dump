@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Backup Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_target_settings.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Backup Storage Settings
 
-In this article
 
 Specify settings for the target backup repository:
 
@@ -42,6 +43,4 @@ You can enable this option only if a backup copy job or backup to tape job is al
 
 ![Step 7. Specify Backup Storage Settings](images/agent_job_storage.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

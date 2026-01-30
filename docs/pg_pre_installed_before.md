@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_pre_installed_before.html"
 last_updated: "9/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before creating a protection group, consider the following prerequisites and limitations:
 
@@ -24,6 +25,4 @@ Before creating a protection group, consider the following prerequisites and lim
 * You must not install Veeam Agent for Linux on a server that is already being used as a Veeam Backup & Replication infrastructure component.
 * If you want to add new computers to a protection group for pre-installed Veeam Agents after updating the TLS certificate on the Veeam backup server, you must first recreate the setup files. To learn more, see [Specify Packages](protection_group_packages.md).
 
-Page updated 9/15/2025
 
-Page content applies to build 13.0.1.1071

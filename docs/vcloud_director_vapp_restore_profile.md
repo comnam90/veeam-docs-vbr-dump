@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Select Storage Policy and Datastores"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_profile.html"
 last_updated: "5/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Select Storage Policy and Datastores
 
-In this article
 
 The Datastores step of the wizard is available if you have chosen to change settings of the restored vApp, for example, its name or location.
 
@@ -23,6 +24,4 @@ If you have selected to disable fast provisioning at the previous step of the wi
 
 ![Step 8. Select Storage Policy and Datastores](images/vcloud_restore_datastores.webp)
 
-Page updated 5/26/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRDeletedArchivedBackupFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrdeletedarchivedbackupfile.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRDeletedArchivedBackupFile
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command returns deleted backup files containing Backup in name.
 | --- |
 | Get-VBRDeletedArchivedBackupFile -Name "Backup" |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

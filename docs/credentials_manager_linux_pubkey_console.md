@@ -1,5 +1,7 @@
 ---
 title: "Creating SSH Private Key Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_linux_pubkey_console.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating SSH Private Key Using Console
 
-In this article
 
 To add a credentials record using the Identity/Pubkey authentication method in the Veeam Backup & Replication console, do the following:
 
@@ -44,6 +45,4 @@ To enable the failover, select the Use "su" if "sudo" fails check box and in the
 
 ![Creating SSH Private Key Using Console](images/creds_linux_pubkey.webp)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

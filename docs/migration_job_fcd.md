@@ -1,5 +1,7 @@
 ---
 title: "Migrating First Class Disks (FCDs)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migration_job_fcd.html"
 last_updated: "5/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating First Class Disks (FCDs)
 
-In this article
 
 You can relocate First Class Disks (FCDs) between datastores using Quick Migration. Migration of FCDs supports only the vMotion method. Depending on whether FCDs that you want to migrate are attached to a VM or not, Veeam Backup & Replication defines the migration scenario:
 
@@ -22,6 +23,4 @@ Quick Migration is not a job-driven process: it cannot be saved as a job or sche
 4. [Specify an FCD destination](quick_migration_fcd_destination.md).
 5. [Finish working with the wizard](quick_migration_fcd_summary.md).
 
-Page updated 5/15/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Logs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/logging.html"
 last_updated: "2/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Logs
 
-In this article
 
 Veeam Backup & Replication provides detailed logging of performed activities, data protection and disaster recovery tasks.
 
@@ -30,6 +31,4 @@ Logs are stored on the backup server and all servers added to the backup infrast
 
 To collect log files from the backup server and servers managed by Veeam Backup & Replication, use the Export Logs wizard as described in section [Exporting Logs](exporting_logs.md).
 
-Page updated 2/24/2025
 
-Page content applies to build 13.0.1.1071

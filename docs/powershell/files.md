@@ -1,5 +1,7 @@
 ---
 title: "Managing Backups"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/files.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Backups
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations:
 
@@ -43,6 +44,4 @@ You can use the cmdlet in this topic to perform the following operations:
 | [Disable-VBRBackgroundRetention](disable-vbrbackgroundretention.md) | Disables background retention for backups. |
 | [Get-VBRSOBRObjectStorageBackup](get-vbrsobrobjectstoragebackup.md) | Returns backups available in archive extents and capacity extents of scale-out backup repositories. |
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Backup Repository Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_launch.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Backup Repository Wizard
 
-In this article
 
 To launch the New Backup Repository wizard, do the following:
 
@@ -22,6 +23,4 @@ Related Topics
 * [Backup Repositories](backup_repository.md)
 * [Object Storage Repositories](object_storage_repository.md)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

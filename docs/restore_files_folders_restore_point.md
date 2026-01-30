@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_folders_restore_point.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Restore Point
 
-In this article
 
 The Restore Point step is required if you use the All Time option at the [Select Files and Folders to Restore](restore_files_folders_backup_browser.md) step, the selected folders have more than one restore point, and you select the Earlier restore point option at the [Restore Mode](restore_files_folders_restore_mode.md) step.
 
@@ -20,6 +21,4 @@ In the Files in backup tree, you can see what folders and files are covered by t
 
 ![Step 6. Select Restore Point](images/restore_files_folders_restore_point.webp)
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

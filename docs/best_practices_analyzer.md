@@ -1,5 +1,7 @@
 ---
 title: "Security & Compliance Analyzer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/best_practices_analyzer.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Security & Compliance Analyzer
 
-In this article
 
 The Veeam Backup & Replication console provides a built-in tool to ensure that your backup server configuration follows security best practices for Veeam backup infrastructure components based on Microsoft Windows Server and Linux operating systems.
 
@@ -158,6 +159,4 @@ Full scan logs are stored in the following locations:
 
 ![Security & Compliance Analyzer](images/bpa_scan_view_results.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_advanced_notify_mac.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 You can specify email notification settings for the backup policy. If you enable notification settings, Veeam Backup & Replication will send a daily email report with backup policy statistics to a specified email address. The report contains cumulative statistics for backup policy sessions performed for the last 24-hour period on computers to which the backup policy is applied.
 
@@ -33,6 +34,4 @@ To specify notification settings for the backup policy:
 
 ![Notification Settings](images/agent_policy_settings_notify_mac.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

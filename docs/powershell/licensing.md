@@ -1,5 +1,7 @@
 ---
 title: "Veeam PowerShell Licensing"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/licensing.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam PowerShell Licensing
 
-In this article
 
 On this page, you can check which Veeam cmdlets are available under each of Veeam product edition.
 
@@ -686,6 +687,4 @@ Veeam PowerShell Help
 | [Get-VBRCommand](get-vbrcommand.md) | ✓ | ✓ | ✓ |
 | [Get-VBRToolkitDocumentation](get-vbrtoolkitdocumentation.md) | ✓ | ✓ | ✓ |
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

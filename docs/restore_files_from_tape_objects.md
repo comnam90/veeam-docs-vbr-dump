@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Files to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_tape_objects.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Files to Restore
 
-In this article
 
 The objects to restore depend on the mode that the wizard is working in:
 
@@ -58,6 +59,4 @@ To remove tapes from the restore list, select the tapes and click Remove.
 
 ![Step 2. Choose Files to Restore](images/entire_tape_restore_objects.webp)
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

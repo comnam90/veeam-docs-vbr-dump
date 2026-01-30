@@ -1,5 +1,7 @@
 ---
 title: "Backup Jobs for Standalone Veeam Plug-Ins"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/plugin_jobs.html"
 last_updated: "7/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Jobs for Standalone Veeam Plug-Ins
 
-In this article
 
 You can use cmdlets in this topic to perform operations with the following types of Veeam Plug-In jobs:
 
@@ -25,6 +26,4 @@ You can use cmdlets in this topic to perform operations with the following types
 | [Enable-VBRPluginJob](enable-vbrpluginjob_standalone.md) | Enables backup jobs that were created with standalone Veeam Plug-Ins and backup copy jobs of backups created with Veeam Plug-Ins. |
 | [Disable-VBRPluginJob](disable-vbrpluginjob_standalone.md) | Disables backup jobs that were created with standalone Veeam Plug-Ins and backup copy jobs of backups created with Veeam Plug-Ins. |
 
-Page updated 7/1/2025
 
-Page content applies to build 13.0.1.1071

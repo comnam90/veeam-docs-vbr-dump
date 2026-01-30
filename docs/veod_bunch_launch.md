@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_bunch_launch.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do one of the following:
 
@@ -20,6 +21,4 @@ To launch the Restore wizard, do one of the following:
 
 [![Restoring Multiple OneDrives](images/onedrives_restore.webp)](images/onedrives_restore.webp "Restoring Multiple OneDrives")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

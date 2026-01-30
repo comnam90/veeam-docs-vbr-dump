@@ -1,5 +1,7 @@
 ---
 title: "Data Encryption"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/crypto_cmdlets.html"
 last_updated: "4/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Encryption
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -19,6 +20,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Set-VBREncryptionKey](set-vbrencryptionkey.md) | Modifies an encryption key. |
 | [Remove-VBREncryptionKey](remove-vbrencryptionkey.md) | Removes an encryption key. |
 
-Page updated 4/30/2025
 
-Page content applies to build 13.0.1.1071

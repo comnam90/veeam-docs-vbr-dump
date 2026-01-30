@@ -1,5 +1,7 @@
 ---
 title: "Failback Undo"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/undo_failback_hv.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback Undo
 
-In this article
 
 Failback undo is one of the ways to finalize failback. When you undo failback, you confirm that the VM to which you failed back (the production VM) and changes sent to it during failback work in a wrong way and you want to get back to the replica.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Undoing Failback](failback_undo_hv.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

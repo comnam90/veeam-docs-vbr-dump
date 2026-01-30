@@ -1,5 +1,7 @@
 ---
 title: "Enterprise Manager Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/enterprise_manager_keys.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enterprise Manager Keys
 
-In this article
 
 Enterprise Manager keys make up a pair of matching keys — a keyset. Keysets are created and managed on the Veeam Backup Enterprise Manager server. During installation of Veeam Backup Enterprise Manager, the setup automatically generates a new keyset containing a public Enterprise Manager key and a private Enterprise Manager key. You can use Veeam Backup Enterprise Manager to create new Enterprise Manager keysets, activate them, import and export keysets and specify retention for their lifetime. For more information, see the [Managing Encryption Keys](https://helpcenter.veeam.com/docs/vbr/em/em_manage_keys.html?ver=13) section in the Veeam Backup Enterprise Manager User Guide.
 
@@ -28,6 +29,4 @@ For Enterprise Manager keysets, consider the following recommendations:
 * Export your Enterprise Manager keysets and keep them in a safe place. If your installation of Veeam Backup Enterprise Manager goes down for some reason, you will lose private Enterprise Manager keys. As a result, you will not be able to use the password loss protection.
 * If a matching private Enterprise Manager key is not found in the Veeam Backup Enterprise Manager configuration database, the decryption process will fail. In such situations, you can import the private key manually. For more information, see the [Exporting and Importing Enterprise Manager Keyset](https://helpcenter.veeam.com/docs/vbr/em/em_export_import_keys.html?ver=13) section in the Veeam Backup Enterprise Manager Guide.
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

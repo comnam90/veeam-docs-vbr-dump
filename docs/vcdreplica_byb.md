@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcdreplica_byb.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a VMware Cloud Director replication job, check the following prerequisites:
 
@@ -30,6 +31,4 @@ Before you create a VMware Cloud Director replication job, check the following p
 * You must check limitations for replication. For more information, see [Considerations and Limitations](replica_limitations.md).
 * Due to VMware vSphere limitations, if you change the size of VM disks on the source VM, all VM snapshots that were created previously, will not be available for failover, failback and other subsequent operations. For more information, see [this VMware KB article](https://kb.vmware.com/s/article/1004047).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

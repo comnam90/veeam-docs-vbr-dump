@@ -1,5 +1,7 @@
 ---
 title: "Configuring Parallelism for Redo Logs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_parallelism.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Parallelism for Redo Logs
 
-In this article
 
 To configure backup or restore of redo logs through multiple channels, you can change the parallelism parameter in the Veeam configuration XML file as follows:
 
@@ -25,6 +26,4 @@ where:
 
 Keep in mind that you must add parameters to the existing line in the veeam\_config.xml file. If you create a new line with the same name as the existing line, Veeam Plug-In will consider parameters only in the first detected line. Other parameters will be ignored.
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding Veeam Data Cloud Vault Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vdcv_add_web.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Veeam Data Cloud Vault Using Web UI
 
-In this article
 
 To add Veeam Data Cloud Vault using the web UI, use the New Veeam Data Cloud Vault wizard.
 
@@ -18,6 +19,4 @@ To add Veeam Data Cloud Vault using the web UI, use the New Veeam Data Cloud Vau
 5. [Specify mount server settings](veeam_data_cloud_mount_server_web.md).
 6. [Finish working with wizard](veeam_data_cloud_finish_web.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

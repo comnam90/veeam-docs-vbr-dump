@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRSureBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsurebackupjob.html"
 last_updated: "4/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRSureBackupJob
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Examples
 | --- | --- |
 | This command returns the 6298815d-2c1c-46a0-86a9-299a8bf1ab72 SureBackup job. The cmdlet output will contain details on the SureBackup job.  |  | | --- | | Get-VBRSureBackupJob -Id 6298815d-2c1c-46a0-86a9-299a8bf1ab72  VirtualLab                  : Virtual Lab 1  ApplicationGroup            : Application Group 1  KeepApplicationGroupRunning : True  LinkedJob                   : {}  LinkToJobs                  : False  MaxConcurrentVMs            : 3  VerificationOptions         : Veeam.Backup.PowerShell.Infos.VBRSureBackupJobVerificationOptions  ScheduleOptions             : Veeam.Backup.PowerShell.Infos.VBRSureBackupJobScheduleOptions  LastRun                     : 9/24/2019 6:22:39 AM  LastResult                  : None  NextRun                     : 1/1/0001 12:00:00 AM  LastState                   : Working  IsEnabled                   : True  ScheduleEnabled             : True  Id                          : 6298815d-2c1c-46a0-86a9-299a8bf1ab72  Name                        : Job01  Description                 : Created by WinSRV2049\Administrator at 2/20/2020 6:21 AM. | |
 
-Page updated 4/26/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Changing Switching Time"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_switching_time.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Switching Time
 
-In this article
 
 The following instructions apply if you have selected to switch from replicas to production vApps manually or at the scheduled time at at the Failback Mode step of the Failback wizard.
 
@@ -21,6 +22,4 @@ If the switching time operation failed, you can retry this operation again. To p
 
 [![Changing Switching Time_2](images/vcd_change_switching_time.webp)](images/vcd_change_switching_time.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

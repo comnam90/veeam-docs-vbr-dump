@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify System Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_latest_specify_system_credentials.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify System Credentials
 
-In this article
 
 This step of the wizard is only available if you are restoring a tenant SAP HANA database.
 
@@ -40,6 +41,4 @@ Note that before you restore a tenant database using SSL, you must have SAP Comm
 
 [![Specifying System Credentials](images/vehana_specify_system_credentials_last.webp)](images/vehana_specify_system_credentials_last.webp "Specifying System Credentials")
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

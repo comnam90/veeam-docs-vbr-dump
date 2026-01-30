@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRJobGuestFSIndexing"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrjobguestfsindexing.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRJobGuestFSIndexing
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 
 [Get-VBRJob](get-vbrjob.md)
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

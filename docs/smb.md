@@ -1,5 +1,7 @@
 ---
 title: "Adding Microsoft SMB3 Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb.html"
 last_updated: "2/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Microsoft SMB3 Servers
 
-In this article
 
 Veeam Backup & Replication supports Microsoft Hyper-V VMs whose disks reside on Microsoft SMB3 file shares and lets you perform backup, replication and file copy operations for such VMs.
 
@@ -33,6 +34,4 @@ Before you add a Microsoft SMB3 server or cluster, [check prerequisites](smb_bef
 6. [Finish working with the wizard](smb_summary.md).
 7. [Configure SMB3 shares](smb_configure.md).
 
-Page updated 2/6/2025
 
-Page content applies to build 13.0.1.1071

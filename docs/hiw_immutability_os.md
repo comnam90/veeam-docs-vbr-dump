@@ -1,5 +1,7 @@
 ---
 title: "How Immutability Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hiw_immutability_os.html"
 last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Immutability Works
 
-In this article
 
 Immutability is the state of data that prevents it from being modified or deleted. Veeam Backup & Replication applies immutability to the state of a backup chain within a certain period of time. After you enable immutability, Veeam Backup & Replication prohibits deleting data from object storage repositories until the immutability expiration date comes. Immutability settings configured for object storage repository are applied to the whole backup chain and all its restore points.
 
@@ -102,6 +103,4 @@ Actual retention: 17 days. If the backup is run on 07/01/2025, the VBK file and 
 | Important |
 | Consider the following:   * Immutable backup files created in the previous versions of Veeam Backup & Replication are deleted according to the [former immutability model](https://helpcenter.veeam.com/docs/backup/vsphere/hiw_immutability_os.html?ver=120). * The type of the [backup method](backup_methods.md) affects the job retention policy and actual retention. For more information, see [Short-Term Retention Policy](retention_policy.md). * If you add an object storage repository as an extent of the performance tier, immutability depends on the scale-out backups repository configuration. For more information, see [Immutability for Performance Tier](immutability_performance_tier.md#dbos). |
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

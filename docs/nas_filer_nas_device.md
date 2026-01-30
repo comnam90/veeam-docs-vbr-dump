@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select NAS Device"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_filer_nas_device.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select NAS Device
 
-In this article
 
 At the NAS Filer step of the wizard, choose the NAS device, which you want to use as a NAS filer where protected file shares reside.
 
@@ -73,6 +74,4 @@ Consider that the PowerScale [BackupAdmin](https://www.dell.com/support/manuals/
 
 Dell PowerScale SmartConnect helps distribute the load among storage nodes: SmartConnect provides clients different IP addresses from different nodes to work with the storage cluster in parallel. If you do not use SmartConnect, Veeam Backup & Replication will use single IP address during backup, which can cause significant delays.
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

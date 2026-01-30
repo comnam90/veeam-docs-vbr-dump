@@ -1,5 +1,7 @@
 ---
 title: "System Requirements (Unstructured Data)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_unstructured_data.html"
 last_updated: "3/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements (Unstructured Data)
 
-In this article
 
 Make sure that servers that you plan to use as backup infrastructure components to protect your unstructured data meet the listed system requirements.
 
@@ -169,12 +170,12 @@ The NAS must be able to present its capacity as NFS share (protocol versions 3.0
 * Any S3-compatible object storage (on-premises appliance, or cloud storage provider)
 * Dell Data Domain (DD OS version 7.9 to 8.6) with DDBoost license. Both Ethernet and Fibre Channel (FC) connectivity options are supported.
 * ExaGrid1 (firmware version 7.2.0 P08 or later)
-* Fujitsu ETERNUS CS8001 software version 5.2.0 or later
+* Fujitsu ETERNUS CS8001 (CS800 software version 5.2.0 or later)
 * HPE StoreOnce (firmware version 3.18.18 or later for Gen3, 4.2.3 or later for Gen4, 5.1.0 or later for Gen 5) with Catalyst license
 
 Both Ethernet and Fibre Channel (FC) connectivity are supported. Note that HPE StoreOnce Federated Catalyst is not supported.
 
-* Infinidat InfiniGuard1 version 5.2.0 and later
+* Infinidat InfiniGuard1 (InfiniGuard software 3.12 or later)
 * Quantum DXi1 (DXi software 5.2.0 or later)
 
 Supported Quantum DXi systems include DXiV5000, DXi4800, DXi4801, DXi9000, DXi9100, DXi9200, DXiT10.
@@ -207,6 +208,15 @@ For information on unstructured data backup target, see Storage Repositories in 
 
 Gateway Server
 
+Gateway servers can be deployed using the [Veeam JeOS](linux_infrastructure.md) image by selecting the Infrastructure Appliance option. This enables certificate-based authentication, secure industry-standard communication protocols, and automated updates that are centrally controlled using the [Veeam Backup & Replication server](backup_server.md).
+
+|  |
+| --- |
+| Note |
+| Component hardware requirements must be added to the [Veeam JeOS](system_requirements.md#jeos) system requirements to ensure that the assigned role has sufficient CPU and RAM resources. |
+
+In addition to this option, you can deploy and manage gateway servers on supported operating systems of your choice.
+
 | Specification | Requirement |
 | --- | --- |
 | Hardware | CPU: x86-64 processor with 2 cores (vCPUs) minimum.  Memory: 4 GB RAM, plus up to 4 GB RAM for each concurrently processed machine, file share or object storage. For more information, see [Limitation of Concurrent Tasks](limiting_tasks.md). For RAM allocation recommendations for unstructured data backup, see [Limitations and recommendations for unstructured data backup](#nas_recommendations).  Disk space: 750 MB for Microsoft Windows-based proxies; 400 MB for Linux-based proxies.  Note: If a unstructured data backup stored in an object storage does not have metadata in the cache repository, during the restore or health check operation this metadata will be downloaded to the gateway server. That can consume up to 80% of the gateway server disk space.  Network: 1 Gbps or faster for on-site backup and replication, and 1 Mbps or faster for off-site backup and replication. High latency and reasonably unstable WAN links are supported. |
@@ -232,6 +242,4 @@ In addition to this option, you can deploy and manage backup proxies on supporte
 
 For more information, see the [Mount Server](mount_server.md) section.
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

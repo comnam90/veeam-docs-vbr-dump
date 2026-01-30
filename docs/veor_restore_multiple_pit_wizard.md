@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_multiple_pit_wizard.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can right-click the Oracle server or an Oracle home and selec
 
 [![Restoring Databases to Point-in-Time State](images/veor_restore_multiple_pit.webp)](images/veor_restore_multiple_pit.webp "Restoring Databases to Point-in-Time State")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

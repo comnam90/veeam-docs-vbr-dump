@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failover_finish.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, review details of the failover task. Then click Finish to start the failover process.
 
@@ -23,6 +24,4 @@ Failover is an intermediate step that needs to be finalized. You can finalize fa
 * [Undo failover](vcd_undoing_failover.md)
 * [Perform failback](vcd_failback_perform.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

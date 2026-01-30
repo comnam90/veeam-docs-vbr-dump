@@ -1,5 +1,7 @@
 ---
 title: "Restoring Entire File Share"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_recovery_restore_entire_file_share.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Entire File Share
 
-In this article
 
 You can restore the entire file share from the backup to a specific restore point. That can be helpful, for example, if your file share device gets out of order and you need to restore the entire file share to the original or other location.
 
@@ -24,6 +25,4 @@ Before you restore an entire file share, [check prerequisites](restore_entire_fi
 4. [Specify restore options](restore_entire_file_share_restore_options.md).
 5. [Finish working with the wizard](restore_entire_file_share_summary.md).
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

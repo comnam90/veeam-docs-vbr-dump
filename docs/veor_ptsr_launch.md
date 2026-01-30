@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Publish Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ptsr_launch.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Publish Wizard
 
-In this article
 
 To launch the Publish wizard, do the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can right-click a database and select Publish database > Publ
 
 [![Launching Publish Wizard](images/publish_veor_1.webp)](images/publish_veor_1.webp "Launching Publish Wizard")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

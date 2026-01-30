@@ -1,5 +1,7 @@
 ---
 title: "Restoring Configuration Database using Veeam Host Management"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_restore_hmc.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Configuration Database using Veeam Host Management
 
-In this article
 
 Before you start the restore process, [check prerequisites](#5). Then perform the following steps:
 
@@ -73,6 +74,4 @@ At the Configuration Backup step of the wizard, do the following:
 
 Veeam Backup & Replication will use the specified backup file file to perform the restore of configuration database.
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

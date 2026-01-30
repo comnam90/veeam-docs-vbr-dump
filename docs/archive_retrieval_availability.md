@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Availability Period"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archive_retrieval_availability.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Availability Period
 
-In this article
 
 At the Availability Period step of the wizard, select the desired availability period of the retrieved backup files. During that period you will be able to restore the data.
 
@@ -20,6 +21,4 @@ If you want to receive a notification that the availability period is about to e
 
 ![Step 3. Select Availability Period](images/archive_retrieval_availability.webp)
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_plan_and_manage_ports.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ports
 
-In this article
 
 The following tables describe network ports that must be opened to ensure proper communication of infrastructure components required for MongoDB Backup.
 
@@ -62,6 +63,4 @@ The following table describes network ports that must be opened to ensure proper
 | TCP | 636 | LDAP connections. |
 | DNS server with forward/reverse name resolution of all backup servers | UDP | 53 | Port used for communication with the DNS Server. |
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

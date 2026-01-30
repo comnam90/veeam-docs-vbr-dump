@@ -1,5 +1,7 @@
 ---
 title: "Proxy Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_proxy_appliance.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Proxy Appliance
 
-In this article
 
 To enable communication between the production environment and isolated networks in the virtual lab, Veeam Backup & Replication uses a proxy appliance. The proxy appliance is an auxiliary Linux-based VM that is deployed on the ESXi host where the virtual lab is created. The proxy appliance VM is assigned an IP address from the production network and placed to the dedicated virtual lab folder and resource pool on the ESXi host.
 
@@ -19,6 +20,4 @@ The proxy appliance is an optional component for recovery verification. Technica
 
 ![Proxy Appliance](images/advanced_single_host.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

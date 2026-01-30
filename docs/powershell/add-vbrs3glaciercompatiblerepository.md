@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRS3GlacierCompatibleRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrs3glaciercompatiblerepository.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRS3GlacierCompatibleRepository
 
-In this article
 
 Short Description
 
@@ -81,6 +82,4 @@ Related Commands
 * [Connect-VBRAmazonS3CompatibleService](connect-vbramazons3compatibleservice.md)
 * [New-VBRAmazonS3Folder](new-vbramazons3folder.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_notification.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the replication job:
 
@@ -32,6 +33,4 @@ SNMP traps will be sent if you configure global SNMP settings in Veeam Backup & 
 
 ![Notification Settings](images/vcd_replica_notifications.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

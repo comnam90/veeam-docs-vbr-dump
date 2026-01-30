@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRQuickBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrquickbackup.html"
 last_updated: "7/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRQuickBackup
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 * [Find-VBRViEntity](find-vbrvientity.md)
 * [Find-VBRHvEntity](find-vbrhventity.md)
 
-Page updated 7/11/2024
 
-Page content applies to build 13.0.1.1071

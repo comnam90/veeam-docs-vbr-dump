@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRFilesInRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrfilesinrestorepoint.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRFilesInRestorePoint
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Related Commands
 * [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 * [Select-Object](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-object?view=powershell-7.3&viewFallbackFrom=powershell-7)
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

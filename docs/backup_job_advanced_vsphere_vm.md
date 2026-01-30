@@ -1,5 +1,7 @@
 ---
 title: "vSphere Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_vsphere_vm.html"
 last_updated: "7/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # vSphere Settings
 
-In this article
 
 To specify VMware vSphere settings for the backup job:
 
@@ -34,6 +35,4 @@ For more information on CBT, see [Changed Block Tracking](changed_block_tracking
 
 ![vSphere Settings](images/vm_backup_job_settings_cbt.webp)
 
-Page updated 7/30/2025
 
-Page content applies to build 13.0.1.1071

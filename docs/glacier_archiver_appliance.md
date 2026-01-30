@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Archiver Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/glacier_archiver_appliance.html"
 last_updated: "9/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Archiver Appliance
 
-In this article
 
 At the Archiver Appliance step of the wizard, you can specify the archiver appliance settings. An archiver appliance is an auxiliary instance that is necessary for transferring the data to Amazon S3 Glacier. For more information, see the [Archiver Appliances](archiver_appliance.md) section.
 
@@ -37,6 +38,4 @@ You can specify archiver appliance in one of the following ways:
 
 ![Step 5. Specify Archiver Appliance](images/glacier_proxy.webp)
 
-Page updated 9/4/2025
 
-Page content applies to build 13.0.1.1071

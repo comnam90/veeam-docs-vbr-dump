@@ -1,5 +1,7 @@
 ---
 title: "Advanced Single-Host Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_advanced_vlab.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Single-Host Virtual Labs
 
-In this article
 
 The advanced single-host virtual lab can be used if VMs that you want to verify and VMs from the application group are connected to different networks.
 
@@ -25,6 +26,4 @@ When you create an advanced single-host virtual lab, Veeam Backup & Replication 
 
 ![Advanced Single-Host Virtual Labs](images/advanced_vlab_vsphere.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

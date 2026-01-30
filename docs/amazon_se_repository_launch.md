@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Object Storage Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_se_repository_launch.html"
 last_updated: "12/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Object Storage Repository
 
-In this article
 
 To launch the New Object Storage Repository wizard, do the following:
 
@@ -17,6 +18,4 @@ To launch the New Object Storage Repository wizard, do the following:
 
 [![Step 1. Launch New Object Storage Repository](images/amazon_snowball_splash.webp)](images/amazon_snowball_splash.webp)
 
-Page updated 12/6/2024
 
-Page content applies to build 13.0.1.1071

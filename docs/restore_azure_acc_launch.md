@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Microsoft Azure Compute Account Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_acc_launch.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Microsoft Azure Compute Account Wizard
 
-In this article
 
 To launch the Microsoft Azure Compute Account wizard, do the following:
 
@@ -16,6 +17,4 @@ To launch the Microsoft Azure Compute Account wizard, do the following:
 
 [![Azure Compute - Launch](images/azure_config_account.webp)](images/azure_config_account.webp "Azure Compute - Launch")
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

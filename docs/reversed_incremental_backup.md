@@ -1,5 +1,7 @@
 ---
 title: "Reverse Incremental Backup (Deprecated)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/reversed_incremental_backup.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reverse Incremental Backup (Deprecated)
 
-In this article
 
 The reverse incremental backup method produces a backup chain that consists of the last full backup file (VBK) and a set of reverse incremental backup files (VRB) preceding it.
 
@@ -30,6 +31,4 @@ Related Topics
 * [Health Check for Backup Files](backup_health_check.md)
 * [Compact of Full Backup File](backup_compact_file.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

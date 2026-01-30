@@ -1,5 +1,7 @@
 ---
 title: "Linux Specific Operations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_save_vm.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Linux Specific Operations
 
-In this article
 
 After the wizard is closed, Veeam Backup & Replication opens the Veeam Backup browser displaying the file system tree of the restored VM.
 
@@ -117,6 +118,4 @@ If you need to access logs of the helper appliance, click Support Logs on the Ve
 
 [![Linux Specific Operations](images/guest_all_os_restore_logs.webp)](images/guest_all_os_restore_logs.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Vaults"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_media_vaults.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Vaults
 
-In this article
 
 Created vaults are shown under the Vaults node. If you have no vaults created, the Vaults node will not be shown.
 
@@ -19,6 +20,4 @@ To add a vault, follow the next steps:
 2. [Specify a media vault name](specify_media_vault_name.md).
 3. [Finish working with the wizard](finish_working_with_vault_wizard.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

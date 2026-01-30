@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_point.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Restore Points
 
-In this article
 
 At the Virtual Machines step of the wizard select to which state of replicas you want to fail over:
 
@@ -20,6 +21,4 @@ If you fail over to a specific point in time, use the right and left arrows on t
 
 ![Step 3. Select Restore Points](images/uni_cdp_failover_point.webp "Select restore point")
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

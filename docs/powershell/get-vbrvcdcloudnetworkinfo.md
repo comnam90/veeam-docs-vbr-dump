@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRvCDCloudNetworkInfo"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvcdcloudnetworkinfo.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRvCDCloudNetworkInfo
 
-In this article
 
 Short Description
 
@@ -84,6 +85,4 @@ Related Commands
 
 [Get-VBRvCDCloudOrganizationvDC](get-vbrvcdcloudorganizationvdc.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_guest_scripts.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 You can instruct Veeam Backup & Replication to run custom scripts before the CDP policy starts the creation of a long-term restore point and after the policy finishes the creation. For example, these can be pre-freeze and post-thaw scripts for a VM that does not support VSS. The scripts will quiesce the VM file system and application data to bring the VM to a consistent state before the creation of a restore point, and bring the VM and applications to their initial state after the creation finishes.
 
@@ -43,6 +44,4 @@ If you plan to replicate a VM container with Microsoft Windows and Linux VMs, yo
 
 ![Script Settings](images/vcd_cdp_policy_script.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

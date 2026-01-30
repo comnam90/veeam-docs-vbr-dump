@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRViInstantRecoveryMigration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantrecoverymigration.html"
 last_updated: "8/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRViInstantRecoveryMigration
 
-In this article
 
 Short Description
 
@@ -96,6 +97,4 @@ Related Commands
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 * [Find-VBRViFolder](find-vbrvifolder.md)
 
-Page updated 8/19/2024
 
-Page content applies to build 13.0.1.1071

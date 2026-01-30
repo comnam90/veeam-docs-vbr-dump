@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Job Schedule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_job_schedule.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Job Schedule
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -23,6 +24,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Set-VBRMacScheduleOptions](set-vbrmacscheduleoptions.md) | Modifies schedule for macOS jobs. |
 | [New-VBRUnixScheduleOptions](new-vbrunixscheduleoptions.md) | Defines the schedule for Unix jobs. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

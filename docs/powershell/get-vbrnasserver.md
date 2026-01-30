@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASServer (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasserver.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASServer (obsolete)
 
-In this article
 
 Short Description
 
@@ -107,6 +108,4 @@ Related Commands
 
 [Get-VBRNASBackup](get-vbrnasbackup.md)
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding Computers to Trusted Hosts List"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_security_settings_ssh_trust.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Computers to Trusted Hosts List
 
-In this article
 
 After you enable the Add unknown hosts to the list manually (more secure) option in Veeam Backup & Replication settings, Linux-based computers whose SSH fingerprints are not stored in the Veeam Backup & Replication database become unable to communicate to the Veeam backup server. During discovery, Veeam Backup & Replication puts such computers to the Untrusted protection group. To start managing an untrusted computer, you must manually validate the SSH fingerprint and add the computer to the list of trusted hosts in the Veeam Backup & Replication console.
 
@@ -25,6 +26,4 @@ To add a computer to the list of trusted hosts:
 
 [![Trust One Computer](images/plugins_protected_computer_trust.webp)](images/plugins_protected_computer_trust.webp "Trust One Computer")
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

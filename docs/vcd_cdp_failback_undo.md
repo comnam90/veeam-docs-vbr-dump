@@ -1,5 +1,7 @@
 ---
 title: "Failback Undo"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_undo.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback Undo
 
-In this article
 
 Failback undo is one of the ways to finalize failback. You can use this option if the vApp to which you failed back (the production vApp) works in a wrong way and you want to get back to the replica.
 
@@ -22,6 +23,4 @@ In This Section
 * [Undoing Failback](vcd_cdp_failback_undoing.md)
 * [Performing Failback Undo Retry](vcd_cdp_failback_undo_retry.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

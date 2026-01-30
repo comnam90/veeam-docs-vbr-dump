@@ -1,5 +1,7 @@
 ---
 title: "Adding Protection Group to Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_job.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Protection Group to Backup Job
 
-In this article
 
 You can quickly add an entire protection group to a Veeam Agent backup job configured in Veeam Backup & Replication.
 
@@ -48,6 +49,4 @@ For Unix computers
 
 [![Add Protection Group to Backup Job](images/protection_group_job.webp)](images/protection_group_job.webp "Add Protection Group to Backup Job")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

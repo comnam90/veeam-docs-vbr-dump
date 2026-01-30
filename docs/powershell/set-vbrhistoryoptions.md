@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRHistoryOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrhistoryoptions.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRHistoryOptions
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Examples
 | --- | --- |
 | This command modifies history settings.  According to these settings, Veeam Backup & Replication will keep session information in the database for 7 weeks.  |  | | --- | | Set-VBRHistoryOptions -RetentionLimitWeeks 7  KeepAllSessions RetentionLimitWeeks  --------------  -------------------          False                    8 | |
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

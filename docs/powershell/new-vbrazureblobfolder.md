@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAzureBlobFolder"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrazureblobfolder.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAzureBlobFolder
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Connect-VBRAzureBlobService](connect-vbrazureblobservice.md)
 * [Get-VBRAzureBlobContainer](get-vbrazureblobcontainer.md)
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

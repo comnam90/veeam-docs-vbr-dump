@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_server.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Server Settings
 
-In this article
 
 To configure settings for a Linux server:
 
@@ -24,6 +25,4 @@ The Repository server list contains only those servers that are added to the bac
 
 [![Step 3. Specify Server Settings](images/linux_repo_server.webp)](images/linux_repo_server.webp)
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

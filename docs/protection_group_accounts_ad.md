@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_accounts_ad.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Credentials
 
-In this article
 
 At this step of the wizard, specify credentials to connect to computers included in the protection group:
 
@@ -48,6 +49,4 @@ To check if Veeam Backup & Replication can connect to computers added to the pro
 
 ![Step 5. Specify Credentials](images/plugins_protection_group_ad_creds.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

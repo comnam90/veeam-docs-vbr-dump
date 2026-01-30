@@ -1,5 +1,7 @@
 ---
 title: "Creating Policy for Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_create_win.html"
 last_updated: "6/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Policy for Windows Computers
 
-In this article
 
 To back up data of a computer protected with Veeam Agent for Microsoft Windows, you can configure a Veeam Agent backup policy in Veeam Backup & Replication.
 
@@ -28,6 +29,4 @@ Before configuring a Veeam Agent backup policy, [check prerequisites](agent_poli
 13. [Specify the backup schedule](agent_policy_win_schedule.md).
 14. [Review backup job settings](agent_policy_win_review.md).
 
-Page updated 6/19/2024
 
-Page content applies to build 13.0.1.1071

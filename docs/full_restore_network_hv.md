@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_network_hv.html"
 last_updated: "3/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Network Mapping
 
-In this article
 
 The Network step of the wizard is available if you have chosen to change the location and settings for the restored VM.
 
@@ -25,6 +26,4 @@ If you do not want to connect a restored VM to your virtual networks, select the
 
 ![Step 7. Specify Network Mapping](images/hv_restore_fullvm_network.webp)
 
-Page updated 3/5/2025
 
-Page content applies to build 13.0.1.1071

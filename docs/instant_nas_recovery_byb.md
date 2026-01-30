@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_byb.html"
 last_updated: "6/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform instant file share recovery, consider the following:
 
@@ -16,6 +17,4 @@ Before you perform instant file share recovery, consider the following:
 * You cannot rename folders in file shares recovered with instant recovery.
 * You cannot change folder attributes and apply folder security in published file shares recovered with instant recovery.
 
-Page updated 6/10/2024
 
-Page content applies to build 13.0.1.1071

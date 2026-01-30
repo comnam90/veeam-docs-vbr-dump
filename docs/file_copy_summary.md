@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_copy_summary.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, complete the file copy job configuration.
 
@@ -17,6 +18,4 @@ At the Summary step of the wizard, complete the file copy job configuration.
 
 ![Step 6. Finish Working with Wizard](images/file_copy_finish_vm.webp)
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

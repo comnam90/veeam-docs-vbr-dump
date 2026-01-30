@@ -1,5 +1,7 @@
 ---
 title: "Deployment and Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_plugin_deployment.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment and Configuration
 
-In this article
 
 Veeam Plug-In for Oracle RMAN is a feature of Veeam Backup & Replication. This guide gives instructions on how to deploy Veeam Plug-In assuming that you already have deployed Veeam Backup & Replication and configured a backup repository. To learn how to deploy Veeam Backup & Replication, see the [Veeam Backup & Replication User Guide](https://www.veeam.com/documentation-guides-datasheets.html) for your platform.
 
@@ -30,6 +31,4 @@ In This Section
 * [Importing Backup Files](import_backups_rman.md)
 * [Uninstalling Veeam Plug-In for Oracle RMAN](uninstall_plugin_rman.md)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

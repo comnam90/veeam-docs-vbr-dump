@@ -1,5 +1,7 @@
 ---
 title: "Rebalancing Extents of Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_rebalance.html"
 last_updated: "1/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rebalancing Extents of Scale-Out Backup Repositories
 
-In this article
 
 To maintain [Backup File Placement](backup_repository_sobr_placement.md) policies and distribute backup data between performance extents evenly, you can use a rebalance. It can be useful if one of the performance extents of your scale-out backup repository contains more data than the other extents.
 
@@ -64,6 +65,4 @@ To start a rebalance session, you must press and hold the [Ctrl] key on your key
 
 [![Rebalancing Extents of Scale-Out Backup Repositories](images/sobr_rebalance.webp)](images/sobr_rebalance.webp)
 
-Page updated 1/8/2025
 
-Page content applies to build 13.0.1.1071

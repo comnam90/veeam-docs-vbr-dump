@@ -1,5 +1,7 @@
 ---
 title: "Restoring to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_single_tas.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to Another Server
 
-In this article
 
 This section explains how to restore a standalone database and Data Guard database to another server.
 
@@ -26,6 +27,4 @@ To restore data, take the following steps:
 6. [Specify database files location](veor_restore_single_tas_specify_database_location.md).
 7. [Review the restore summary](veor_restore_single_tas_summary.md).
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

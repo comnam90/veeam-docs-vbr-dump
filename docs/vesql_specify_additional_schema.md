@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Additional Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_specify_additional_schema.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Additional Restore Options
 
-In this article
 
 At this step of the wizard, specify additional restore options and click Restore.
 
@@ -26,6 +27,4 @@ For more information on filegroups, see [Microsoft Docs](https://learn.microsoft
 
 [![Specifying Additional Restore Options](images/vesql_restore_schema_options.webp)](images/vesql_restore_schema_options.webp "Specifying Additional Restore Options")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

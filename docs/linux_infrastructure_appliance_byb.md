@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Before you install Veeam Infrastructure Appliance, consider the following:
 
@@ -73,6 +74,4 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * [V-257937](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-257937) — The RHEL 9 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems.
 * [V-258122](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-258122) — RHEL 9 must enable certificate based smart card authentication.
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

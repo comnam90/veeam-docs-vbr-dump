@@ -1,5 +1,7 @@
 ---
 title: "Deployment Procedure for Unix Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_a_centralized_hotfix_deployment_unux.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment Procedure for Unix Computers
 
-In this article
 
 You can add Unix-based servers with Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris installed to protection groups for individual computers.
 
@@ -24,6 +25,4 @@ To deploy a hotfix on Unix machines included in the protection group, perform th
 
 During rescan, Veeam Backup & Replication will update Veeam Agents on the protected machines.
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

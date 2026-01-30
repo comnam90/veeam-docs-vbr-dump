@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In Management Infrastructure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/management_infrastructure.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In Management Infrastructure
 
-In this article
 
 The Veeam Plug-In management infrastructure comprises the following components:
 
@@ -84,6 +85,4 @@ The backup storage is an architecture component in the Veeam Plug-In management 
 
 * [Veeam Plug-In for Microsoft SQL Server](repos_mssql.md)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

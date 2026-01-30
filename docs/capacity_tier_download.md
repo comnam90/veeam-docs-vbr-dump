@@ -1,5 +1,7 @@
 ---
 title: "How Downloading from Capacity Tier Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_download.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Downloading from Capacity Tier Works
 
-In this article
 
 To download data from the capacity extent back to the performance extents, Veeam Backup & Replication uses the SOBR Download job.
 
@@ -31,6 +32,4 @@ Related Topics
 * [Copying Backups to Capacity Tier](capacity_tier_copy.md)
 * [Moving Backups to Capacity Tier](capacity_tier_move.md)
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

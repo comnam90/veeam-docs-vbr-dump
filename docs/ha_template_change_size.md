@@ -1,5 +1,7 @@
 ---
 title: "Changing Template and Helper Appliance Size"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ha_template_change_size.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Template and Helper Appliance Size
 
-In this article
 
 During creation of a helper appliance template, Veeam Backup & Replication sends a command to create two VMs: one Linux-based and one Microsoft Windows-based. By default, both VMs use the Standard\_D4lds\_v5 size. This size requires 4 CPUs for each VM, totaling 8 CPUs in the target Microsoft Azure subscription. If your Azure subscription does not have enough available CPUs of this family, you can change the VM size.
 
@@ -42,6 +43,4 @@ To change the VM size:
 
 To change the VM size on the Microsoft Windows-based backup server, use a registry value: HKEY\_LOCAL\_MACHINE\SOFTWARE\Veeam\Veeam Backup and Replication\AzureIr\_Start\_Appliance\_DefaultVmSize {REG\_SZ}.
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

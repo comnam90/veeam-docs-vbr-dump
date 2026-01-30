@@ -1,5 +1,7 @@
 ---
 title: "Database Backup (HDBSQL Scripts)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_saphana_scripts.html"
 last_updated: "9/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Backup (HDBSQL Scripts)
 
-In this article
 
 After you [configure Veeam Plug-In settings](configure_sap_hana_plugin.md), you can use HDBSQL to back up and restore SAP HANA databases. For details on the HDBSQL backup, see [this SAP article](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/75a06c444e9a4b3287a46a6a40b4ee69.html?locale=en-US&version=2.0.06).
 
@@ -67,6 +68,4 @@ To back up the database with Backint, use one of the following commands dependin
 | --- |
 | backup data incremental using backint ('backup\_name\_prefix'); |
 
-Page updated 9/6/2023
 
-Page content applies to build 13.0.1.1071

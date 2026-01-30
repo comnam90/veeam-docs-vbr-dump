@@ -1,5 +1,7 @@
 ---
 title: "New-VBRFileRestoreLinuxHelperApplianceOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrfilerestorelinuxhelperapplianceoptions.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRFileRestoreLinuxHelperApplianceOptions
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Perform the following steps:
 2. Run the [Find-VBRViResourcePool](find-vbrviresourcepool.md) cmdlet. Set the $server variable as the Server parameter value. Specify the Name parameter value. Save the result to the $resourcepool variable.
 3. Run the New-VBRFileRestoreLinuxHelperApplianceOptions cmdlet. Set the $server variable as the Server parameter value. Set the $resourcepool variable as the ResourcePool parameter value. Save the result to the $helper variable.
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

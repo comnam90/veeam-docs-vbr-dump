@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials and SSH Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server_ssh_web.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials and SSH Settings
 
-In this article
 
 At the Access step of the wizard, provide credentials for the service console connection and adjust secure shell (SSH) port number.
 
@@ -73,6 +74,4 @@ To let you identify the server, Veeam Backup & Replication displays the SSH key 
 
 [![Step 3. Specify Credentials and SSH Settings](images/add_server_linux_certificate_web.webp)](images/add_server_linux_certificate_web.webp)
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

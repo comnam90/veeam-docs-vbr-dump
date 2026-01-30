@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_single_specify_restore_settings.html"
 last_updated: "8/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Restore Settings
 
-In this article
 
 At this step of the wizard, you can choose whether to restore your MongoDB data to the original or to another replica set.
 
@@ -24,6 +25,4 @@ At this step of the wizard, you can choose whether to restore your MongoDB data 
 
 [![Specifying Restore Settings](images/vemdb_rs_restore_collection_single_specify_restore_settings.webp)](images/vemdb_rs_restore_collection_single_specify_restore_settings.webp "Specifying Restore Settings")
 
-Page updated 8/29/2024
 
-Page content applies to build 13.0.1.1071

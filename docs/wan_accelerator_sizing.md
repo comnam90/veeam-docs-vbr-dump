@@ -1,5 +1,7 @@
 ---
 title: "WAN Accelerator Sizing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_accelerator_sizing.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WAN Accelerator Sizing
 
-In this article
 
 To ensure correct work of remote jobs over WAN accelerators, you must provide enough free space for service data on source and target WAN accelerators.
 
@@ -140,6 +141,4 @@ In this case, the needed amount of free disk space for the global cache and dige
 | Note |
 | For more information and recommendations on WAN accelerator cache sizing, see [this Veeam KB article](https://www.veeam.com/kb1877). |
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

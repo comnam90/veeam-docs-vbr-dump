@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backups Using IBM Db2 Tools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_retention_remove_from_machine.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backups Using IBM Db2 Tools
 
-In this article
 
 To delete backups, you can use the IBM Db2 built-in option: the PRUNE HISTORY command. To learn more about the command, see [this IBM article](https://www.ibm.com/docs/en/db2/11.5?topic=commands-prune-historylogfile).
 
@@ -36,6 +37,4 @@ where <timestamp> is a time stamp that IBM Db2 generates for each backup in the 
 
 With this command, Veeam Plug-In will delete all backup files up to the time and equal the time that you specified in the command. Thus, Veeam Plug-In will also delete the backup with the time stamp that you specified from the backup repository. Veeam Plug-In will also delete the most recent full backup and associated objects.
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Amazon S3 and S3 Compatible Object Storage Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/s3_compatible_limitations.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Amazon S3 and S3 Compatible Object Storage Considerations and Limitations
 
-In this article
 
 General Limitations
 
@@ -45,6 +46,4 @@ Consider the following limitations:
 * Veeam Backup & Replication keeps configuration backups in a separate location and ignores multiple bucket setup.
 * Veeam Backup & Replication does not support the multiple-bucket option for S3-compatible repositories that use [Veeam Smart Object Storage API (SOSAPI)](sosapi.md) functionality with load balancing enabled on a smart entity level.
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

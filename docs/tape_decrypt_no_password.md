@@ -1,5 +1,7 @@
 ---
 title: "Decrypting Tapes With Enterprise Manager Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_decrypt_no_password.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Decrypting Tapes With Enterprise Manager Keys
 
-In this article
 
 If you have lost or forgotten a password or you cannot use KMS keys due to a KMS server failure, you can restore encrypted data using password loss protection provided by Veeam Backup Enterprise Manager. This solution allows you to include Enterprise Manager keyset in the encryption process and use it to decrypt tapes. For more information, see the [Enterprise Manager Keys](https://helpcenter.veeam.com/docs/backup/vsphere/enterprise_manager_keys.html) section in the Veeam Backup & Replication User Guide.
 
@@ -28,6 +29,4 @@ To complete the operation, perform the following steps:
 2. [Process the request in Veeam Backup Enterprise Manager](tape_restore_nopass2.md).
 3. [Complete the key restore process](tape_restore_nopass3.md).
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

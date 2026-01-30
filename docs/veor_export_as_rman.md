@@ -1,5 +1,7 @@
 ---
 title: "Exporting as RMAN Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_export_as_rman.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting as RMAN Backup
 
-In this article
 
 Once published, the database can be exported as an RMAN backup so that you can save the changes you may have made on the target server. For example, after publishing a database, you may have added a column or altered some values. To save these modifications before you unpublish the database, you can use the export feature.
 
@@ -43,6 +44,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Export Summary Window](images/veor_export_summary.webp)](images/veor_export_summary.webp "Reviewing Export Summary Window")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Tape Device Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_device_support.html"
 last_updated: "6/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Device Support
 
-In this article
 
 Veeam provides native tape support that is fully integrated into Veeam Backup & Replication. You can administer all operations on tapes from your Veeam Backup & Replication console.
 
@@ -23,6 +24,4 @@ Related Topics
 * [Unstructured Data Backup to Tape](unstructured_data_to_tape.md)
 * [Restore from Tape](restore_from_tape.md)
 
-Page updated 6/13/2025
 
-Page content applies to build 13.0.1.1071

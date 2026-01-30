@@ -1,5 +1,7 @@
 ---
 title: "VBRTapeMediaPool"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtapemediapool.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRTapeMediaPool
 
-In this article
 
 Contains simple media pool.
 
@@ -37,6 +38,4 @@ Related Commands
 * [Remove-VBRTapeMediaPool](remove-vbrtapemediapool.md)
 * [Set-VBRTapeMediaPool](set-vbrtapemediapool.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

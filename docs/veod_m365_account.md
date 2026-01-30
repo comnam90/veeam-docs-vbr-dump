@@ -1,5 +1,7 @@
 ---
 title: "Microsoft 365 Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_m365_account.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft 365 Account
 
-In this article
 
 You can authorize Veeam Explorer for Microsoft OneDrive for Business to send Microsoft OneDrive items as attachments on behalf of your Microsoft 365 account. To send email messages, Veeam Explorer for Microsoft OneDrive for Business communicates with the Microsoft Graph API. For authentication, Veeam Explorer for Microsoft OneDrive for Business uses an access token issued by Microsoft Identity platform. To acquire an access token, you can either use an application preinstalled by Veeam Backup & Replication or specify details of the custom Microsoft Entra application registered in Microsoft Identity platform. For more information on obtaining client credentials, see [Registering Application in Microsoft Identity Platform](veod_register_app_azure.md).
 
@@ -50,6 +51,4 @@ In the Microsoft 365 Application Settings window, select the Use custom applicat
 
 [![Configuring Microsoft 365 Application Settings](images/microsoft365.png)](images/microsoft365.png "Configuring Microsoft 365 Application Settings")
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

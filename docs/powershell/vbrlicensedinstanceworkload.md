@@ -1,5 +1,7 @@
 ---
 title: "VBRLicensedInstanceWorkload"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrlicensedinstanceworkload.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRLicensedInstanceWorkload
 
-In this article
 
 Contains protected workloads for the per-instance license.
 
@@ -24,6 +25,4 @@ Related Commands
 
 [Get-VBRLicensedInstanceWorkload](get-vbrlicensedinstanceworkload.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Failover Plans"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/fplan_cmdlets.html"
 last_updated: "6/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover Plans
 
-In this article
 
 Failover plan is a preset scenario for one-click failover of a group of interdependent VMs. Failover plan is created by the user in advance and then used to perform failover of the group in case the primary VMs are out of service for any reason.
 
@@ -29,6 +30,4 @@ In This Section
 | [Start-VBRFailoverPlan](start-vbrfailoverplan.md) | Starts failing the VMs over by failover plan. |
 | [Undo-VBRFailoverPlan](undo-vbrfailoverplan.md) | Undoes failover by failover plan. |
 
-Page updated 6/27/2024
 
-Page content applies to build 13.0.1.1071

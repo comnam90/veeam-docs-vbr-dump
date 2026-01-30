@@ -1,5 +1,7 @@
 ---
 title: "Protecting Logs"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/overview_entra_id_log.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Protecting Logs
 
-In this article
 
 To produce backups of Microsoft Entra ID tenant logs, Veeam Backup for Microsoft Entra ID runs backup jobs. A backup job is a collection of settings that define the way backup operations are performed: what data to back up, where to store backups, when to start the backup process, and so on.
 
@@ -28,6 +29,4 @@ Related Topics
 * [Creating Log Backup Jobs](entra_id_log_job.md)
 * [Log Restore](entra_id_log_restore.md)
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

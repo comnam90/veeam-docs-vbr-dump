@@ -1,5 +1,7 @@
 ---
 title: "Upgrading Hardened Repository Deployed with Veeam Hardened Repository ISO"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrading_hr_iso_v2.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading Hardened Repository Deployed with Veeam Hardened Repository ISO
 
-In this article
 
 If your backup infrastructure includes hardened repositories deployed using the Veeam Hardened Repository ISO v2, you can upgrade them using the Veeam Infrastructure Appliance ISO. After the upgrade, they will have the same features and functionality as a Veeam Infrastructure Appliance.
 
@@ -61,6 +62,4 @@ To upgrade your hardened repository, do the following:
 | Important |
 | If the hardened repository is assigned the VMware backup proxy role, you must also run through the Edit Proxy wizard to install additional components required for the proxy role. For more information, see [Editing VMware Backup Proxy Settings](backup_proxy_edit.md). |
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

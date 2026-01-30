@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRViVirtualLabConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvivirtuallabconfiguration.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRViVirtualLabConfiguration
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ Examples
 | --- | --- |
 | This command returns the SQL Virtual Lab virtual lab. The cmdlet output will contain settings of the virtual lab.  |  | | --- | | Get-VBRViVirtualLabConfiguration -Name "SQL Virtual Lab"  DesignatedResourcePoolName : SQL Virtual Lab  DesignatedVMFolderName     : SQL Virtual Lab  CacheDatastore             : esx09-das05  ProxyAppliance             : SQL Virtual Lab  ProxyApplianceEnabled      : True  NetworkMapping             : {SQL Virtual Lab VM Network}  NetworkOptions             : {Veeam.Backup.PowerShell.Infos.VBRViVirtualLabNetworkOptions  RoutingBetweenvNicsEnabled : False  IsMultiHost                : False  DVS                        :  IpMappingRule              : {}  StaticIPMappingEnabled     : False  Type                       : Advanced  IdOnHost                   : 43d2457a-ddee-424d-9fd3-42e021a77309  Server                     : Veeam.Backup.Core.Common.CHost  Platform                   : VMWare  Id                         : 8762b1ea-3422-4f84-8472-e596d7c8265e  Name                       : SQL Virtual Lab  Description                : Created by Powershell at 2/20/2020 5:56 AM. | |
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

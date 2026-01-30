@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Advanced Protection Group Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_advanced.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Advanced Protection Group Settings
 
-In this article
 
 You can specify email notification settings for the protection group. If you enable notification settings, Veeam Backup & Replication will send a daily email report with protection group statistics to a specified email address. The report contains cumulative statistics for rescan job sessions performed for the protection group within the last 24-hour period.
 
@@ -43,6 +44,4 @@ To configure a custom notification for the protection group, select Use custom n
 
 ![Step 6. Specify Advanced Protection Group Settings](images/mongo_protection_group_options_advanced.webp)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Switchover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_switchover.html"
 last_updated: "1/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switchover
 
-In this article
 
 The switchover option becomes available the published instance is fully replicated on the target server. During switchover, the published instance is switched to its complete replica on the target server. Note that if you have selected to restore to the original server, the restored instance will replace the original instance.
 
@@ -46,6 +47,4 @@ When you manually launch switchover, Veeam Explorer for PostgreSQL switches the 
 
 For more information on how to perform manual switchover, see [Starting Switchover Manually](vep_ir_switchover_manual.md).
 
-Page updated 1/8/2024
 
-Page content applies to build 13.0.1.1071

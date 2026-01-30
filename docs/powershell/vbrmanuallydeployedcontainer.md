@@ -1,5 +1,7 @@
 ---
 title: "VBRManuallyDeployedContainer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrmanuallydeployedcontainer.html"
 last_updated: "5/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRManuallyDeployedContainer
 
-In this article
 
 Contains a scope of Veeam Agent setup files.
 
@@ -32,6 +33,4 @@ Related Commands
 * [New-VBRCSVContainer](new-vbrcsvcontainer.md)
 * [New-VBRManuallyDeployedContainer](new-vbrmanuallydeployedcontainer.md)
 
-Page updated 5/3/2024
 
-Page content applies to build 13.0.1.1071

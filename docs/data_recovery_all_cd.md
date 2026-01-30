@@ -1,5 +1,7 @@
 ---
 title: "Platform-Independent Data Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_recovery_all_cd.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Platform-Independent Data Recovery
 
-In this article
 
 Veeam Backup & Replication provides the following platform-independent methods for workload recovery:
 
@@ -49,6 +50,4 @@ Veeam Backup & Replication provides the following platform-independent methods f
 
 For more information, see [Data Recovery (All Platforms)](data_recovery_all.md).
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

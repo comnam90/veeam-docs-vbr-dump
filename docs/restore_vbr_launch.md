@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Configuration Database Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_launch.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Configuration Database Restore Wizard
 
-In this article
 
 To launch the Veeam Backup and Replication Configuration Restore wizard, do either one of the following:
 
@@ -18,6 +19,4 @@ To launch the Veeam Backup and Replication Configuration Restore wizard, do eith
 
 ![Step 1. Launch Configuration Database Restore Wizard](images/restore_vbr_backup_launch.webp)
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

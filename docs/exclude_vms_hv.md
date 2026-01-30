@@ -1,5 +1,7 @@
 ---
 title: "VMs and VM Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/exclude_vms_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMs and VM Disks
 
-In this article
 
 When you configure a backup or replication job, you can exclude the following objects from processing:
 
@@ -36,6 +37,4 @@ You can define which VM disks you want to back up or replicate at the Virtual Ma
 
 ![VMs and VM Disks](images/exclude_disks_hv.webp)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

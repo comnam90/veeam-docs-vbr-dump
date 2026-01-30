@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Configure Hardened Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_add_web_repository.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Configure Hardened Repository Settings
 
-In this article
 
 At the Repository step of the wizard, configure hardened repository settings including path to the repository folder, immutability period, load control, and advanced repository settings.
 
@@ -53,6 +54,4 @@ To configure advanced repository settings:
 
 [![Step 4. Configure Hardened Repository Settings](images/hardened_repo_repository_advanced_web.webp)](images/hardened_repo_repository_advanced_web.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

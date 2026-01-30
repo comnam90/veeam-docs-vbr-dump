@@ -1,5 +1,7 @@
 ---
 title: "Deployment and Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_plugin_deployment.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment and Configuration
 
-In this article
 
 Veeam Plug-In for Microsoft SQL Server is a feature of Veeam Backup & Replication. This guide gives instructions on how to deploy Veeam Plug-In assuming that you already have deployed Veeam Backup & Replication and configured a backup repository. To learn how to deploy Veeam Backup & Replication, see the [Veeam Backup & Replication User Guide](https://www.veeam.com/documentation-guides-datasheets.html) for your platform.
 
@@ -25,6 +26,4 @@ Related Topics
 * [Specifying the Version of Microsoft ODBC Driver for SQL Server](mssql_odbc_driver.md)
 * [Uninstalling Veeam Plug-In for Microsoft SQL Server](uninstall_plugin_mssql.md)
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

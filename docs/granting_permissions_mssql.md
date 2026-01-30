@@ -1,5 +1,7 @@
 ---
 title: "Granting Permissions to Users"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_mssql.html"
 last_updated: "12/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Granting Permissions to Users
 
-In this article
 
 When you install Veeam Plug-In for Microsoft SQL Server, full access rights to the plug-in configuration file are automatically granted to all users. To protect sensitive information that is stored in the configuration file from unwanted access, we recommend limiting access to the configuration file to a dedicated group of users.
 
@@ -80,6 +81,4 @@ where:
 
 * newACL — the name of the new access control list.
 
-Page updated 12/3/2024
 
-Page content applies to build 13.0.1.1071

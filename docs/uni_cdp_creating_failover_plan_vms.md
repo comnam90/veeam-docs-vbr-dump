@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Workloads"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_creating_failover_plan_vms.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Workloads
 
-In this article
 
 At the Machines step of the wizard, select workloads that you want to add to the failover plan.
 
@@ -29,6 +30,4 @@ To quickly find the necessary workloads, you can use the search fields.
 
 ![Step 3. Select Workloads ](images/failover_plan_vms_vm.webp)
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

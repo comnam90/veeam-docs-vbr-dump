@@ -1,5 +1,7 @@
 ---
 title: "Configuring Veeam Plug-In for SAP MaxDB"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_vp.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Veeam Plug-In for SAP MaxDB
 
-In this article
 
 When you configure Veeam Plug-In settings, you set up integration settings between the SAP MaxDB server, Veeam Backup & Replication server and backup repositories where backup files will be stored.
 
@@ -102,6 +103,4 @@ To learn more about SapMaxDBBackintConfigTool and configuration file, see the fo
 * [Configuration file](plugins_sap_maxdb_deploy_configure_vp_file.md)
 * [Configuration tool](plugins_sap_maxdb_deploy_configure_vp_parameters.md)
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

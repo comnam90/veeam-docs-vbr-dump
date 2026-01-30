@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRTapeVault"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapevault.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRTapeVault
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Examples
 | --- | --- |
 | This command looks for a vault named Sydney Remote Storage.  |  | | --- | | Get-VBRTapeVault -Name "Sydney Remote Storage" | |
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

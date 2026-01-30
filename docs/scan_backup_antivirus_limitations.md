@@ -1,5 +1,7 @@
 ---
 title: "Requirements and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/scan_backup_antivirus_limitations.html"
 last_updated: "7/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Requirements and Limitations
 
-In this article
 
 The antivirus scan has the following requirements and limitations:
 
@@ -23,6 +24,4 @@ The antivirus scan has the following requirements and limitations:
 
 * If you install several antivirus software on the mount server, the Scan Backup session may fail because of the antivirus conflict and file access problems. To avoid such issues, use only one antivirus software.
 
-Page updated 7/8/2025
 
-Page content applies to build 13.0.1.1071

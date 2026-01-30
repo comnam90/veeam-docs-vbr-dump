@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRStorageLatencyControl"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrstoragelatencycontrol.html"
 last_updated: "12/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRStorageLatencyControl
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command disables the storage latency control option on production datastore
 | --- |
 | Disable-VBRStorageLatencyControl |
 
-Page updated 12/18/2023
 
-Page content applies to build 13.0.1.1071

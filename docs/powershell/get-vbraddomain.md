@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRADDomain"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbraddomain.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRADDomain
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 * [Find-VBRADEntity](find-vbradentity.md)
 * [Get-Credential](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.4)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

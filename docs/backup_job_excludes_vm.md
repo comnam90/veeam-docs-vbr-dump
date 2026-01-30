@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Exclude Objects from Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_excludes_vm.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Exclude Objects from Backup Job
 
-In this article
 
 After you add VMs and VM containers to the job, you can specify which objects you want to exclude from the backup. You can exclude the following types of objects:
 
@@ -66,6 +67,4 @@ To exclude VM templates:
 
 ![Step 4. Exclude Objects from Backup Job](images/vm_backup_job_exclude_templates.webp)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

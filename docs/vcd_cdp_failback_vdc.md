@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Organization VDCs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_vdc.html"
 last_updated: "2/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Organization VDCs
 
-In this article
 
 The Organization VDC step is available if you have selected the Failback to the specified location option at the Destination step.
 
@@ -15,6 +16,4 @@ At the Organization VDC step of the wizard, specify names for the restored vApps
 
 ![Step 5. Specify Organization VDC_2](images/vcd_organization_failback.webp)
 
-Page updated 2/26/2024
 
-Page content applies to build 13.0.1.1071

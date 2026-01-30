@@ -1,5 +1,7 @@
 ---
 title: "Basic Single-Host Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_basic_vlab.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Basic Single-Host Virtual Labs
 
-In this article
 
 The basic single-host virtual lab configuration can be used if your disaster recovery (DR) site is configured in the following way:
 
@@ -31,6 +32,4 @@ Veeam Backup & Replication automatically configures all settings for the basic s
 
 ![Basic Single-Host Virtual Labs](images/basic_single_host.webp)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Host"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_host_vm.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Host
 
-In this article
 
 At the Host step of the wizard, select an ESXi host on which the virtual lab must be created.
 
@@ -40,6 +41,4 @@ The ESXi host on which the virtual lab is created must meet the following requir
 + The ESXi host must have enough CPU and RAM resources. If the application group contains VMs that are started from backups or storage snapshots, these VMs will be started on the same ESXi host where the virtual lab is located, which will require a lot of resources.
 + For this type of virtual lab configuration, you must use the Advanced multi-host networking mode. For more information, see [Selecting a Networking Mode](vlab_network_vm.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

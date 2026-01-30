@@ -1,5 +1,7 @@
 ---
 title: "New-VBRHvReplicaReIpIPv6Rule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvreplicareipipv6rule.html"
 last_updated: "7/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRHvReplicaReIpIPv6Rule
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ This command generates a new re-IPv6 rule. Save it to the $reiprule variable for
 | --- |
 | $reiprule = New-VBRHvReplicaReIpIPv6Rule -SourceIp "2001:0DB8:ABCD:0012:0000:0000:0000:\*" -SourcePrefix "24" -TargetIp "2001:0DB8:ABCD:0012:0000:0000:0000:\*" -TargetPrefix "24" |
 
-Page updated 7/18/2024
 
-Page content applies to build 13.0.1.1071

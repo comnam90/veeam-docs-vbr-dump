@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCDPProxy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcdpproxy.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCDPProxy
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command returns the d602b38b-fab6-4c4e-8066-a1bf16affa76 CDP Proxy.  |  | | --- | | Get-VBRCDPProxy -Id "d602b38b-fab6-4c4e-8066-a1bf16affa76" | |
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

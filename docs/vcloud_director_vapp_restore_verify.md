@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Verify Recovery Settings and Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_verify.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Verify Recovery Settings and Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, specify additional settings for vApp restore:
 
@@ -21,6 +22,4 @@ At the Summary step of the wizard, specify additional settings for vApp restore:
 
 ![Step 11. Verify Recovery Settings and Finish Working with Wizard](images/vcloud_restore_finish.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

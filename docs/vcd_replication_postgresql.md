@@ -1,5 +1,7 @@
 ---
 title: "PostgreSQL Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_postgresql.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # PostgreSQL Settings
 
-In this article
 
 The PostgreSQL tab applies to Linux VMs that run PostgreSQL.
 
@@ -58,6 +59,4 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 ![PostgreSQL WAL Settings_2](images/vcd_cdp_policy_postgre.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

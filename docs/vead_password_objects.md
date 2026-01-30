@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Password Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_password_objects.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Password Restore Options
 
-In this article
 
 At this step, select one of the following options:
 
@@ -34,6 +35,4 @@ The default location is %systemroot%\System32\Config.
 
 [![Specifying Password Restore Options](images/vead_restore_obj_3.webp)](images/vead_restore_obj_3.webp "Specifying Password Restore Options")
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

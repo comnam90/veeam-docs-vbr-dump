@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Virtual Disks to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_disks.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Virtual Disks to Restore
 
-In this article
 
 At the Disks step of the wizard, select virtual disks that you register as FCDs and define names for the recovered disks and FCDs.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [How Instant FCD Recovery Works](instant_disk_recovery_fcd.md#hiw)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

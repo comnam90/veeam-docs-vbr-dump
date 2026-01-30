@@ -1,5 +1,7 @@
 ---
 title: "File Backup Integration with Storage Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_snapshot_integration.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # File Backup Integration with Storage Systems
 
-In this article
 
 There are two approaches in backing up file shares residing on enterprise NAS storage systems.
 
@@ -76,6 +77,4 @@ You cannot specify separate folders within file shares. Therefore, to configure 
 
 1. Configure what files and folders must be included in or excluded from processing by the file backup job. For more information on how to include/exclude files and folders from processing, see [Select Files and Folders to Back Up](file_share_backup_job_files_and_folders.md).
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

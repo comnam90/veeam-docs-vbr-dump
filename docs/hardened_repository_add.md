@@ -1,5 +1,7 @@
 ---
 title: "Adding Hardened Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_add.html"
 last_updated: "11/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Hardened Repositories
 
-In this article
 
 This section describes how to add a hardened repository as a backup repository with the console or web UI.
 
@@ -29,6 +30,4 @@ In This Section
 * [Adding Hardened Repositories Using Console](hardened_repository_add_console.md)
 * [Adding Hardened Repositories Using Web UI](hardened_repository_add_web.md)
 
-Page updated 11/11/2025
 
-Page content applies to build 13.0.1.1071

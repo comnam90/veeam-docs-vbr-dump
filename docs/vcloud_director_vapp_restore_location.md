@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select vApp Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_location.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select vApp Location
 
-In this article
 
 The vApp step of the wizard is available if you have chosen to change the location and settings of the restored vApp.
 
@@ -33,6 +34,4 @@ To change the vApp name:
 
 ![Step 5. Select vApp Location](images/vcloud_restore_location.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

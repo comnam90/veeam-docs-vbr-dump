@@ -1,5 +1,7 @@
 ---
 title: "VBRNASBackupSecondaryTarget"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnasbackupsecondarytarget.html"
 last_updated: "1/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNASBackupSecondaryTarget
 
-In this article
 
 Contains settings of secondary backup repositories.
 
@@ -29,6 +30,4 @@ Related Commands
 * [New-VBRNASBackupSecondaryTarget](new-vbrnasbackupsecondarytarget.md)
 * [Set-VBRNASBackupSecondaryTarget](set-vbrnasbackupsecondarytarget.md)
 
-Page updated 1/19/2024
 
-Page content applies to build 13.0.1.1071

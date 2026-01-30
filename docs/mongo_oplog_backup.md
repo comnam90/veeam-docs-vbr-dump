@@ -1,5 +1,7 @@
 ---
 title: "Oplog Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_oplog_backup.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oplog Backup
 
-In this article
 
 You can use MongoDB Backup to create transactionally consistent backups of MongoDB replica sets.
 
@@ -34,6 +35,4 @@ Related Task
 
 [Specifying MongoDB Processing Settings](mongo_policy_preferences_processing.md)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

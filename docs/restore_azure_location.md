@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Subscription and Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_location.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Subscription and Location
 
-In this article
 
 At the Subscription step of the wizard, select a subscription, location for the restored workloads and define how workload data must be transported to Microsoft Azure or Azure Stack Hub:
 
@@ -24,6 +25,4 @@ It is recommended that you configure the Azure restore proxy appliance in the sa
 
 ![Step 3. Select Subscription and Location](images/azure_restore_locations.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

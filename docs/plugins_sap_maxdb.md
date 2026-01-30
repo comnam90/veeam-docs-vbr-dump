@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In for SAP MaxDB"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In for SAP MaxDB
 
-In this article
 
 Veeam Plug-In for SAP MaxDB is a backup tool for SAP MaxDB. Veeam Plug-In integrates with SAP MaxDB and transfers database and log backups to repositories connected to Veeam Backup & Replication.
 
@@ -28,6 +29,4 @@ In This Section
 * [Backup Copy for SAP MaxDB Backups](plugins_sap_maxdb_backup_copy.md)
 * [Logs and Support](plugins_sap_maxdb_logs.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

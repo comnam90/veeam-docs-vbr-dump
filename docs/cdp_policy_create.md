@@ -1,5 +1,7 @@
 ---
 title: "Creating CDP Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_create.html"
 last_updated: "6/23/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating CDP Policies
 
-In this article
 
 To protect VMs with CDP, you must configure a CDP policy. The CDP policy defines which VMs to protect, where to store replicas, how often create short-term and long-term restore points, and so on. One CDP policy can process one or multiple VMs.
 
@@ -29,6 +30,4 @@ To create a CDP policy use the New CDP Policy wizard.
 14. [Specify guest processing settings](cdp_policy_guest.md).
 15. [Finish working with the wizard](cdp_policy_summary.md).
 
-Page updated 6/23/2023
 
-Page content applies to build 13.0.1.1071

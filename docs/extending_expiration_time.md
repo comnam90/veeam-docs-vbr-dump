@@ -1,5 +1,7 @@
 ---
 title: "Extending Data Availability"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extending_expiration_time.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Extending Data Availability
 
-In this article
 
 The availability period of the retrieved data can be prolonged:
 
@@ -24,6 +25,4 @@ To extend the availability period, do the following:
 
 [![Extending Data Availability](images/archive_availability_extend.webp)](images/archive_availability_extend.webp)
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

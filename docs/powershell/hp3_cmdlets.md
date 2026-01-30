@@ -1,5 +1,7 @@
 ---
 title: "HPE 3PAR StoreServ Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/hp3_cmdlets.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # HPE 3PAR StoreServ Storage Systems
 
-In this article
 
 Add HPE 3PAR StoreServ storage systems to your Veeam Backup & Replication console and administrate them.
 
@@ -28,6 +29,4 @@ In This Section
 | [Remove-HP3Snapshot](remove-hp3snapshot.md) | Removes HPE 3PAR StoreServ storage snapshots. |
 | [New-VBRStorageProtocolPolicy](new-vbrstorageprotocolpolicy.md) | Creates protocol policies for storage systems. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

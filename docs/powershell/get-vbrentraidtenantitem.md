@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREntraIDTenantItem"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrentraidtenantitem.html"
 last_updated: "3/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREntraIDTenantItem
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Related Commands
 
 [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 
-Page updated 3/21/2025
 
-Page content applies to build 13.0.1.1071

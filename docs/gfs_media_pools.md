@@ -1,5 +1,7 @@
 ---
 title: "GFS Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_media_pools.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # GFS Media Pools
 
-In this article
 
 The GFS media pools are special media pools that store data to tape according to the GFS, or Grandfather-Father-Son rotation scheme. The GFS media pools are targets for GFS tape jobs. For more information, see [GFS Backup to Tape](gfs_jobs.md).
 
@@ -43,6 +44,4 @@ Related Topics
 * [Modifying Media Pools](modifying_media_pools.md)
 * [Removing Media Pools](deleting_media_pools.md)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Viewing Tape Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identifying_tapes.html"
 last_updated: "8/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Tape Properties
 
-In this article
 
 You can view properties of each tape registered in Veeam database. The tapes may be online or offline. The Properties window shows location, capacity, name and other properties of the selected tape.
 
@@ -51,6 +52,4 @@ For cleaning tapes, you can view the remaining cleaning cycles in the Wear field
 
 ![Viewing Tape Properties](images/cleaning_tape_properties.webp)
 
-Page updated 8/27/2024
 
-Page content applies to build 13.0.1.1071

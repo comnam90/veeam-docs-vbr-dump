@@ -1,5 +1,7 @@
 ---
 title: "Exceeding License Limit"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_exceeding.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exceeding License Limit
 
-In this article
 
 For Veeam Universal Licenses, Veeam Backup & Replication allows you to protect more workloads than covered by the number of instances specified in the license. An increase in the number of protected workloads is allowed throughout the duration of the contract (license key).
 
@@ -37,6 +38,4 @@ When the license limit is exceeded, the logs will include the number of instance
 | Note |
 | Capacity-based (per-TB) license limit for unstructured data backup cannot be exceeded. |
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

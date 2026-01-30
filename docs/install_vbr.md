@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Backup & Replication on Microsoft Windows"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Backup & Replication on Microsoft Windows
 
-In this article
 
 Before you install Veeam Backup & Replication, [check prerequisites](installation_byb.md). Then use the Veeam Backup & Replication setup wizard to install the product.
 
@@ -29,6 +30,4 @@ Related Topics
 * [Backup & Replication Console](backup_console.md)
 * [Backup Infrastructure Components](components.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Policy Name and Advanced Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_name.html"
 last_updated: "8/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Policy Name and Advanced Settings
 
-In this article
 
 At the Name step of the wizard, specify a name and description for the CDP policy, and choose whether you want to use replica seeding or network mapping:
 
@@ -32,6 +33,4 @@ Related Topics
 
 [vApp Replica Seeding and Mapping](vcd_seeding_mapping.md)
 
-Page updated 8/18/2023
 
-Page content applies to build 13.0.1.1071

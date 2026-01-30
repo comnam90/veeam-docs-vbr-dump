@@ -1,5 +1,7 @@
 ---
 title: "Marking Tapes as Free"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/marking_tapes_as_free.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Marking Tapes as Free
 
-In this article
 
 Instead of erasing tapes, you can mark tapes as free. During this operation, Veeam Backup & Replication deletes from backup and tape catalogs information about backup contents stored on tape. Data written to tape remains intact.
 
@@ -32,6 +33,4 @@ If you want Veeam Backup & Replication to automatically reuse the tape for stori
 
 [![Marking Tapes as Free](images/mark_tape_as_free.webp)](images/mark_tape_as_free.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing Missing Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_remove_missing_point.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Missing Restore Points
 
-In this article
 
 In some cases, one or more restore points in the backup chain may be inaccessible. This can happen, for example, if the backup repository is put to the Maintenance mode (for scale-out backup repositories), the backup repository is not available or some backup file is missing in the backup chain. Backup chains that contain missing restore points get corrupted — you cannot perform backup copy or restore data from the missing restore point, and restore points that depend on the missing restore point.
 
@@ -45,6 +46,4 @@ To remove missing restore points from the configuration database and disk:
 
 [![Removing Missing Restore Points](images/rp_delete_backup_copy.webp)](images/rp_delete_backup_copy.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

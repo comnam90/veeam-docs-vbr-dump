@@ -1,5 +1,7 @@
 ---
 title: "Object Storage Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_jobs.html"
 last_updated: "8/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Object Storage Backup to Tape
 
-In this article
 
 The object to tape job allows you to back up object storage data to tape. You can back up objects to tape from the following object storage services:
 
@@ -26,6 +27,4 @@ Related Topics
 * [Before You Begin](object_to_tape_before_you_begin.md)
 * [Creating Object to Tape Jobs](creating_object_to_tape_jobs.md)
 
-Page updated 8/27/2024
 
-Page content applies to build 13.0.1.1071

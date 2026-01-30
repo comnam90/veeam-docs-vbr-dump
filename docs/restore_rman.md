@@ -1,5 +1,7 @@
 ---
 title: "Restore to Original Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_rman.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Original Server
 
-In this article
 
 Veeam Plug-In for Oracle RMAN allows you to restore databases using built-in Oracle RMAN functionality. When you launch a restore, RMAN restores the necessary database from the backup stored in the Veeam backup repository.
 
@@ -24,6 +25,4 @@ To restore the Oracle database, you must connect to the database with RMAN and r
 | Note |
 | If you use the SEND command on the target server to point to the source server, you can run operations like DUPLICATE. For details, see [Restore to Another Server](restore_other_server_rman.md). |
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

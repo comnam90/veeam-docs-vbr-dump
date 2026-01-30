@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New NetApp Data ONTAP Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_add_launch.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New NetApp Data ONTAP Storage Wizard
 
-In this article
 
 To launch the New NetApp Data ONTAP Storage wizard, perform the following steps.
 
@@ -25,6 +26,4 @@ To launch the New NetApp Data ONTAP Storage wizard, perform the following steps.
 
 [![Step 1. Launch New NetApp Data ONTAP Storage Wizard](images/netapp_launch.webp)](images/netapp_launch.webp)
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backups from Disk"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/delete_backup_from_disk_hv.html"
 last_updated: "2/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backups from Disk
 
-In this article
 
 The Delete from disk operation is needed if you want to remove records about backups from the Veeam Backup & Replication console and configuration database. This option allows you to delete the following type of data:
 
@@ -62,6 +63,4 @@ To delete a VM from a backup, do the following:
 
 [![Deleting Backups from Disk](images/remove_from_disk_hv.webp)](images/remove_from_disk_hv.webp)
 
-Page updated 2/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup Job Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_mac_scripts.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job Scripts
 
-In this article
 
 When you create a backup policy, you can specify custom pre-job and post-job scripts for Veeam Agent to run during backup job session. Veeam Agent will execute the pre-job script directly before the backup job starts. After the backup job completes, Veeam Agent will execute the post-job script.
 
@@ -30,6 +31,4 @@ If you use Veeam Backup & Replication on Windows, you can place the script files
 * If you use relative paths in your scripts, during script execution such paths will refer to the root directory. For example, the script may have an output that must be saved to a new file. If you specify a relative path to that file or only a file name, the file will be created in the root directory. To specify a different location for a file, use a full absolute path.
 * The default time period for script execution is 10 minutes. After this period expires, Veeam Agent stops executing the script and displays a warning message in the job session.
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrbackupsession.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRBackupSession
 
-In this article
 
 Contains job session.
 
@@ -30,6 +31,4 @@ Related Commands
 
 [Get-VBRSession](get-vbrsession.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

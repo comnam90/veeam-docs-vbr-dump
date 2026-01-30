@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New CDP Policy Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_launch.html"
 last_updated: "10/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New CDP Policy Wizard
 
-In this article
 
 To launch the New CDP Policy wizard, do one of the following:
 
@@ -18,6 +19,4 @@ To launch the New CDP Policy wizard, do one of the following:
 
 [![Launch wizard](images/cdp_policy_launch.webp)](images/cdp_policy_launch.webp "Launch wizard")
 
-Page updated 10/31/2023
 
-Page content applies to build 13.0.1.1071

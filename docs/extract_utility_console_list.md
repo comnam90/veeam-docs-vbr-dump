@@ -1,5 +1,7 @@
 ---
 title: "Displaying List of Machines in Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extract_utility_console_list.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Displaying List of Machines in Backup
 
-In this article
 
 This command displays the list of all machines in the backup file from which you want to perform restore.
 
@@ -26,6 +27,4 @@ Parameters
 | password | Password for the encrypted backup file. | Required for encrypted backup files |
 | pathtobackup | Path to the backup file from which the machine must be restored. | Required |
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select Target Folder"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_folder_vm.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select Target Folder
 
-In this article
 
 The VM Folder step is available if you have selected the Failback to the specified location option at the [Destination](failback_destination_vm.md) step.
 
@@ -22,6 +23,4 @@ If you want the recovered VMs to have the same tags as the source VMs, select th
 
 ![Step 7. Select Target Folder](images/failback_7.webp)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

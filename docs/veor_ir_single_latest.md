@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery of Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_single_latest.html"
 last_updated: "1/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery of Latest State
 
-In this article
 
 This section explains how to instantly recover a standalone database or a Data Guard database to its latest state on the backup file.
 
@@ -17,6 +18,4 @@ To perform instant recovery to the latest state on the backup file, perform the 
 2. [Specify switchover settings](veor_ir_single_latest_specify_switchover_settings.md).
 3. [Finalize the Instant Recovery session](veor_ir_single_latest_finalize_ir_session.md).
 
-Page updated 1/2/2025
 
-Page content applies to build 13.0.1.1071

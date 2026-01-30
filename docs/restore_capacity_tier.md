@@ -1,5 +1,7 @@
 ---
 title: "Restore from Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_capacity_tier.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore from Capacity Tier
 
-In this article
 
 You can restore your data directly from the capacity tier back to production servers or to Microsoft Azure, Amazon EC2 or Google Cloud platforms. Capacity tier data recovery does not differ from that of a standard backup data recovery and can be performed by using any of the following methods:
 
@@ -35,6 +36,4 @@ Related Topics
 * [Indexes](capacity_tier_indexing.md)
 * [Managing Capacity Tier](managing_capacity_tier_data.md)
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

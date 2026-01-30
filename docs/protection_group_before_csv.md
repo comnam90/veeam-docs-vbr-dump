@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_before_csv.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before creating a protection group, consider the following prerequisites and limitations:
 
@@ -21,6 +22,4 @@ Note that in client Microsoft Windows OSes access to the administrative share is
 
 1. Veeam Backup & Replication does not support usage of a Linux account for which system settings modify shell output results to connect to a computer included in the protection group. For example, this includes Linux accounts with the modified PS1 shell variable.
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Target Datastores and Disk Types"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_datastore_vm_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Target Datastores and Disk Types
 
-In this article
 
 The Datastore step of the wizard is available if you have selected Restore to a new location, or with different settings at the [Restore Mode](full_restore_mode_vm_web.md) step.
 
@@ -23,6 +24,4 @@ To specify disk types and where to store disks, do the following:
 
 [![Select Disk Type - Web UI](images/full_restore_disk_vm_web.webp)](images/full_restore_disk_vm_web.webp "Select Disk Type - Web UI")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

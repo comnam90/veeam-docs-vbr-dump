@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant Recovery to VMware Cloud Director Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_launch.html"
 last_updated: "8/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant Recovery to VMware Cloud Director Wizard
 
-In this article
 
 To launch the Instant Recovery to VMware Cloud Director wizard, do one of the following:
 
@@ -22,6 +23,4 @@ To launch the Instant Recovery to VMware Cloud Director wizard, do one of the fo
 
 [![Launch Instant Recovery](images/vcloud_instant_recovery_launch.webp)](images/vcloud_instant_recovery_launch.webp "Launch Instant Recovery")
 
-Page updated 8/9/2024
 
-Page content applies to build 13.0.1.1071

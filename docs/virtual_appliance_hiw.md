@@ -1,5 +1,7 @@
 ---
 title: "Data Backup and Restore in Virtual Appliance Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_appliance_hiw.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup and Restore in Virtual Appliance Mode
 
-In this article
 
 The process of data retrieval in the Virtual appliance transport mode includes the following steps:
 
@@ -24,6 +25,4 @@ The process of data restore in the Virtual appliance mode works in a similar man
 
 ESXi host interacts with VMware Cloud on AWS through VMware vCenter. Veeam Backup & Replication performs backup through the networkless Virtual appliance (HotAdd) mode.
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

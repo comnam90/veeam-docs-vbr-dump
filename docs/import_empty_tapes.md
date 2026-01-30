@@ -1,5 +1,7 @@
 ---
 title: "Loading Empty Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_empty_tapes.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Loading Empty Tapes
 
-In this article
 
 To load empty tapes, perform the following steps:
 
@@ -25,6 +26,4 @@ If you want to refill the free tape resources in your tape device, you can overw
 | Tip |
 | To understand which of the tapes can be overwritten, you can check their expiration date. In the Tape Infrastructure view, open the Media Pools node and select the media pool that you want to replenish. Check the Expires in field in the working area. You can sort the tapes by the expiration date and get the list of tapes that can be reused. |
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

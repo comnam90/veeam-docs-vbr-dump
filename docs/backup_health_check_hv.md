@@ -1,5 +1,7 @@
 ---
 title: "Health Check for Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_health_check_hv.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Health Check for Backup Files
 
-In this article
 
 You can instruct Veeam Backup & Replication to periodically perform a health check for the latest restore point in the backup chain. During the health check, Veeam Backup & Replication performs a cyclic redundancy check (CRC) for metadata and a hash check for VM data blocks in the backup file to verify their integrity. The health check helps ensure that the restore point is consistent, and you can restore data from this restore point.
 
@@ -137,6 +138,4 @@ Related Topics
 
 [Reverse Incremental Backup (Deprecated)](reversed_incremental_backup_hv.md)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

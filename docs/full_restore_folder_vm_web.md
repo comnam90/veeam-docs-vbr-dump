@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Target Folders and Change VM Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_folder_vm_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Target Folders and Change VM Settings
 
-In this article
 
 The Folder step of the wizard is available if you have selected Restore to a new location, or with different settings at the [Restore Mode](full_restore_mode_vm_web.md) step.
 
@@ -47,6 +48,4 @@ To change VM names:
 
 [![Change Name - Web UI](images/full_restore_name_vm_web.webp)](images/full_restore_name_vm_web.webp "Change Name - Web UI")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

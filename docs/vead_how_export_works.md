@@ -1,5 +1,7 @@
 ---
 title: "How Export Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_how_export_works.html"
 last_updated: "5/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Export Works
 
-In this article
 
 Veeam Explorer for Microsoft Active Directory allows you to export your data to the machine where Veeam Explorer for Microsoft Active Directory is opened.
 
@@ -21,6 +22,4 @@ You can make an exported LDF file available to an Active Directory Domain Servic
 
 [![How Export Works](images/vead_how_export_works.webp)](images/vead_how_export_works.webp "How Export Works")
 
-Page updated 5/10/2024
 
-Page content applies to build 13.0.1.1071

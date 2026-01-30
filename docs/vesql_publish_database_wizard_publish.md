@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Publish Database Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_publish_database_wizard_publish.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Publish Database Wizard
 
-In this article
 
 To launch the Publish Database wizard, do the following:
 
@@ -28,6 +29,4 @@ The figure below demonstrates a published database (db1\_published) available in
 
 [![Published Database in Object Explorer](images/published_sql.webp)](images/published_sql.webp "Published Database in Object Explorer")
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

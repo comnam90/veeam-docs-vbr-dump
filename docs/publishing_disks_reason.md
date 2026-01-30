@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Reason"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/publishing_disks_reason.html"
 last_updated: "5/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Reason
 
-In this article
 
 At the Reason step of the wizard, enter a reason for publishing disks.
 
@@ -18,6 +19,4 @@ At the Reason step of the wizard, enter a reason for publishing disks.
 
 ![Step 6. Specify Reason](images/disk_publish_reason.webp)
 
-Page updated 5/1/2025
 
-Page content applies to build 13.0.1.1071

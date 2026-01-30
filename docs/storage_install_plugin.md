@@ -1,5 +1,7 @@
 ---
 title: "Installing Plug-Ins on Microsoft Windows-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_install_plugin.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Plug-Ins on Microsoft Windows-Based Backup Server
 
-In this article
 
 [The following information applies to the Microsoft Windows-based backup server.]
 
@@ -38,6 +39,4 @@ Related Topics
 * [Infrastructure Overview](storage_infrastructure.md)
 * [Backup & Replication Console](backup_console.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

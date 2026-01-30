@@ -1,5 +1,7 @@
 ---
 title: "Deployment Procedure for Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_a_centralized_hotfix_deployment_windows.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment Procedure for Windows Computers
 
-In this article
 
 To deploy a hotfix on Microsoft Windows computers included in the protection group, perform the following steps:
 
@@ -28,6 +29,4 @@ where <number> is a number of the hotfix provided by Veeam Customer Support.
 
 [![Deploy Hotfix on Microsoft Windows Computers](images/protection_group_rescan.webp)](images/protection_group_rescan.webp "Deploy Hotfix on Microsoft Windows Computers")
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Review Results"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/export_logs_results.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Review Results
 
-In this article
 
 At the Export step of the wizard, Veeam Backup & Replication will collect specified logs and create a log archive. Wait for the export process to complete, review the results and click the Open folder link to browse to exported log files and log package.
 
@@ -18,6 +19,4 @@ At the Export step of the wizard, Veeam Backup & Replication will collect specif
 
 ![Step 5. Review Results](images/exporting_logs_finish.webp)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

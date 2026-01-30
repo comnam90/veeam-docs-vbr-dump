@@ -1,5 +1,7 @@
 ---
 title: "Launching Application and Exploring Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_launching.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Application and Exploring Backups
 
-In this article
 
 To open Veeam Explorer for Microsoft Active Directory and load Active directory data, you can use either of the following methods:
 
@@ -46,6 +47,4 @@ In This Section
 * [Getting to Know User Interface](vead_know_ui.md)
 * [Browsing, Searching and Viewing Items](vead_browsing.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

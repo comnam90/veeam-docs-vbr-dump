@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrserver.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRServer
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Examples
 | --- | --- |
 | This command looks for the VM named Hv\_DNS registered on a Hyper-V server.  |  | | --- | | Get-VBRServer -Type "HvServer" -Name "Hv\_DNS" | |
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

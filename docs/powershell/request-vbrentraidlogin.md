@@ -1,5 +1,7 @@
 ---
 title: "Request-VBREntraIDLogin"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/request-vbrentraidlogin.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Request-VBREntraIDLogin
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 * [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 * [Start-VBREntraIDTenantRestore](start-vbrentraidtenantrestore.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

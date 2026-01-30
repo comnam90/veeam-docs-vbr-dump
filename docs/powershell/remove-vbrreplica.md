@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBRReplica"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrreplica.html"
 last_updated: "7/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBRReplica
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 
 [Get-VBRReplica](get-vbrreplica.md)
 
-Page updated 7/1/2024
 
-Page content applies to build 13.0.1.1071

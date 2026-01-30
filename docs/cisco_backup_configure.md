@@ -1,5 +1,7 @@
 ---
 title: "Configuring Backup from Cisco HyperFlex Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cisco_backup_configure.html"
 last_updated: "8/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Backup from Cisco HyperFlex Snapshots
 
-In this article
 
 To back up and replicate from Cisco HyperFlex snapshots:
 
@@ -20,6 +21,4 @@ To back up and replicate from Cisco HyperFlex snapshots:
 
 ![Configuring Backup from Cisco HyperFlex Snapshots](images/cisco_backup_configure.webp)
 
-Page updated 8/4/2023
 
-Page content applies to build 13.0.1.1071

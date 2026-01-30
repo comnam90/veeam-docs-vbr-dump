@@ -1,5 +1,7 @@
 ---
 title: "Planning and Preparation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planning.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Planning and Preparation
 
-In this article
 
 Infrastructure of Veeam Backup & Replication depends on the business needs and resources of your company. Before you install Veeam Backup & Replication, make sure that your backup infrastructure meet product hardware recommendations and system requirements. For more information, see these sections:
 
@@ -92,6 +93,4 @@ The easiest way to start is to deploy a Veeam Backup & Replication server, one d
 
 Also, note that in most cases, it is recommended to deploy Veeam Backup & Replication, Veeam Backup Enterprise Manager and Veeam ONE on separate servers.
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

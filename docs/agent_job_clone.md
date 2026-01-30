@@ -1,5 +1,7 @@
 ---
 title: "Cloning Veeam Agent Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_clone.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cloning Veeam Agent Backup Job
 
-In this article
 
 You can clone Veeam Agent backup jobs configured in Veeam Backup & Replication. For example, you may want to configure a Veeam Agent backup job that will be used as a ‘job template’, and use this job to create multiple jobs with similar settings.
 
@@ -20,6 +21,4 @@ To clone a Veeam Agent backup job:
 
 [![Clone Backup Job](images/agent_backup_job_clone.webp)](images/agent_backup_job_clone.webp "Clone Backup Job")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

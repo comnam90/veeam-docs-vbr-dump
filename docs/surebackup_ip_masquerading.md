@@ -1,5 +1,7 @@
 ---
 title: "IP Masquerading"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_ip_masquerading.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # IP Masquerading
 
-In this article
 
 To let the traffic into the virtual lab, Veeam Backup & Replication uses masquerade IP addressing.
 
@@ -28,6 +29,4 @@ For example, when trying to access a VM with IP address 172.16.10.10 in the isol
 
 ![IP Masquerading](images/routing_table.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

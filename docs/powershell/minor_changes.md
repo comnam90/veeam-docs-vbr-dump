@@ -1,5 +1,7 @@
 ---
 title: "Minor Non-Breaking Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/minor_changes.html"
 last_updated: "11/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Minor Non-Breaking Changes
 
-In this article
 
 The following minor non-breaking changes were introduced in Veeam PowerShell 12.1.
 
@@ -50,6 +51,4 @@ In this version, in the following cmdlets parameters were changed from obligator
 | [New-VBRAmazonEC2DiskConfiguration](new-vbramazonec2diskconfiguration.md) | Include |
 | [Start-VBRVMRestoreToAmazon](start-vbrvmrestoretoamazon.md) | DiskConfiguration |
 
-Page updated 11/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New Features"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new_features_v13.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New Features
 
-In this article
 
 This section contains information on new features introduced in Veeam PowerShell v13.
 
@@ -129,6 +130,4 @@ In this version, you can create SAP HANA storage encryption settings for applica
 | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [New-VBRSAPHANAStorageOptions](new-vbrsaphanastorageoptions.md) | Creates the SAP HANA storage encryption settings for application backup policies. | |
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

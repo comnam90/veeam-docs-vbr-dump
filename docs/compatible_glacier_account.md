@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Object Storage Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compatible_glacier_account.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Object Storage Account
 
-In this article
 
 At the Account step of the wizard, specify the connection and archiver appliance settings. An archiver appliance is an auxiliary machine that transfers data from S3 compatible object storage to S3 compatible object storage with data archive. For more information, see the [Archiver Appliances](archiver_appliance.md) section.
 
@@ -21,6 +22,4 @@ If you already have a credentials record that was configured in advance, select 
 
 ![Step 3. Specify Object Storage Account](images/compatible_glacier_account.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

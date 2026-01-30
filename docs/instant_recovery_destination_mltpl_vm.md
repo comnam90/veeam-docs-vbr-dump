@@ -1,5 +1,7 @@
 ---
 title: "Specifying Destination for Multiple VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_destination_mltpl_vm.html"
 last_updated: "3/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Destination for Multiple VMs
 
-In this article
 
 The following steps are available if you recover multiple workloads and recover them to a new location or with different settings.
 
@@ -73,6 +74,4 @@ If you do not want to connect a recovered VM to any virtual network, select the 
 
 ![Specifying Destination for Multiple VMs](images/hv_instant_recovery_to_vmware_network.webp)
 
-Page updated 3/12/2025
 
-Page content applies to build 13.0.1.1071

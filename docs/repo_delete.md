@@ -1,5 +1,7 @@
 ---
 title: "Removing Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repo_delete.html"
 last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Backup Repositories
 
-In this article
 
 You can permanently remove a backup repository from the backup infrastructure. When you remove a backup repository, Veeam Backup & Replication unassigns the backup repository role from the server and this server is no longer used as a backup repository. The actual server remains in the backup infrastructure.
 
@@ -23,6 +24,4 @@ To remove a backup repository:
 
 [![Click to zoom in](images/remove_repository.webp)](images/remove_repository.webp "Click to zoom in")
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

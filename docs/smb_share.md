@@ -1,5 +1,7 @@
 ---
 title: "SMB (CIFS) Share"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_share.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SMB (CIFS) Share
 
-In this article
 
 You can use SMB (CIFS) shares as backup repositories.
 
@@ -35,6 +36,4 @@ Related Topics
 * [Adding SMB (CIFS) Repositories](smb_repository_add.md)
 * [Gateway Servers](gateway_server.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

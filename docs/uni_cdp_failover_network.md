@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_network.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Network Mapping
 
-In this article
 
 At the Network step of the wizard create a network mapping table. This table maps networks in the DR site to networks in the site where the production VMs will reside. Veeam Backup & Replication will use the network mapping table to update configuration files of VMS on the fly, during the failback process.
 
@@ -23,6 +24,4 @@ If you do not want to connect the production VMs to any virtual network, select 
 
 ![Step 7. Configure Network Mapping](images/uni_cdp_failback_network.webp "Configure network mapping")
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

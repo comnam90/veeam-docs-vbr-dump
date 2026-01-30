@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_limitations_hv.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and limitations common for creating backup jobs.
 
@@ -67,6 +68,4 @@ Before you configure script settings, you must create and upload scripts to the 
 
 When scripts are uploaded correctly, permissions are set automatically. You do not have to edit them.
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

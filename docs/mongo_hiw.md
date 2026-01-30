@@ -1,5 +1,7 @@
 ---
 title: "Solution Architecture"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_hiw.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Solution Architecture
 
-In this article
 
 When you rescan the MongoDB replica set (a group of instances that maintain the same data set) for the first time, Veeam Backup & Replication deploys the following Veeam components on each computer with the MongoDB primary daemon process (mongod) detected:
 
@@ -28,6 +29,4 @@ Veeam Agent for Linux consists of the following components:
 
 [![MongoDB Backup Feature Architecture](images/mongo_architecture.webp)](images/mongo_architecture.webp "MongoDB Backup Feature Architecture")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

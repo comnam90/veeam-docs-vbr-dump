@@ -1,5 +1,7 @@
 ---
 title: "Add-VBREntraIDLogsBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrentraidlogsbackupjob.html"
 last_updated: "1/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBREntraIDLogsBackupJob
 
-In this article
 
 Short Description
 
@@ -93,6 +94,4 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [New-VBRUnstructuredBackupSecondaryTarget](new-vbrunstructuredbackupsecondarytarget.md)
 
-Page updated 1/30/2025
 
-Page content applies to build 13.0.1.1071

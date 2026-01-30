@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Object Storage Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_repository_account.html"
 last_updated: "10/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Object Storage Account
 
-In this article
 
 At the Account step of the wizard, specify the connection settings:
 
@@ -28,6 +29,4 @@ By default, the role of a gateway server is assigned to the Veeam Backup & Repli
 
 ![Step 3. Specify Object Storage Account](images/s3_add_account.webp "Specify S3 Object Storage Account")
 
-Page updated 10/23/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Backup in Direct SAN Access Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direc_san_access_backup.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup in Direct SAN Access Mode
 
-In this article
 
 To retrieve VM data blocks from a SAN LUN during backup, the VMware backup proxy uses metadata about the layout of VM disks on the SAN.
 
@@ -23,6 +24,4 @@ Data backup in the Direct SAN access transport mode includes the following steps
 
 ![Data Backup in Direct SAN Access Mode](images/direct_san_access.webp)
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

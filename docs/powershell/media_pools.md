@@ -1,5 +1,7 @@
 ---
 title: "Tape Media Pools"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/media_pools.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Media Pools
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with media pools:
 
@@ -23,6 +24,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Get-VBRTapeMediaPool](get-vbrtapemediapool.md) | Returns media pools. |
 | [Remove-VBRTapeMediaPool](remove-vbrtapemediapool.md) | Removes media pools. |
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_data_backup.html"
 last_updated: "6/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup
 
-In this article
 
 Veeam Plug-In for IBM Db2 integrates and uses native IBM Db2 mechanisms to back up data to the Veeam backup repository. With the configured Veeam Plug-In, you can create full, incremental or log backups. For details, see [Backup Types](db2_backup_types.md).
 
@@ -15,6 +16,4 @@ For each backup operation, Veeam Plug-In automatically creates and stores databa
 
 To store backups, you can add and configure backup repositories to your Veeam Backup & Replication infrastructure. For details on supported backup repositories, see [Veeam Backup Repositories](db2_backup_repos.md).
 
-Page updated 6/26/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Exporting Microsoft SharePoint Data"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_exporting_doclibs_and_lists.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Microsoft SharePoint Data
 
-In this article
 
 Veeam Explorer for Microsoft SharePoint allows you to export SharePoint document libraries and lists from backups created by Veeam Backup & Replication.
 
@@ -38,6 +39,4 @@ To export a list, do the following:
 
 [![Exporting SharePoint Library](images/vesp_export_library.webp)](images/vesp_export_library.webp "Exporting SharePoint Library")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

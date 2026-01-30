@@ -1,5 +1,7 @@
 ---
 title: "VBRvCDCloudTenant"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrvcdcloudtenant.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRvCDCloudTenant
 
-In this article
 
 Contains Cloud Director tenant accounts.
 
@@ -59,6 +60,4 @@ Related Commands
 * [Get-VBRCloudTenant](get-vbrcloudtenant.md)
 * [Set-VBRvCDCloudTenant](set-vbrvcdcloudtenant.md)
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

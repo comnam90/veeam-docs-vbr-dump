@@ -1,5 +1,7 @@
 ---
 title: "Failover Undo"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/undo_failover.html"
 last_updated: "1/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover Undo
 
-In this article
 
 Failover undo is one of the ways to finalize failover. When you undo failover, you switch back from a VM replica to the source VM. Veeam Backup & Replication discards all changes made to the VM replica while it was in the Failover state.
 
@@ -22,6 +23,4 @@ Related Topics
 
 [Undoing Failover](failover_undo.md)
 
-Page updated 1/24/2025
 
-Page content applies to build 13.0.1.1071

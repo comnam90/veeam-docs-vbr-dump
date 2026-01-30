@@ -1,5 +1,7 @@
 ---
 title: "Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_preferences_processing.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Processing Settings
 
-In this article
 
 To specify processing settings:
 
@@ -41,6 +42,4 @@ When configuring retention policy for oplog backups in days, keep in mind retent
 
 ![Processing Settings](images/mongo_policy_backup_preferences_processing.webp)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

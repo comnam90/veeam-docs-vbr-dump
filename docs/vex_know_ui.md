@@ -1,5 +1,7 @@
 ---
 title: "Getting to Know User Interface"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_know_ui.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting to Know User Interface
 
-In this article
 
 The user interface of Veeam Explorer for Microsoft Exchange is designed to let you quickly find commands that you need to restore and export Microsoft Exchange data from backups created by Veeam Backup for Microsoft 365 and Veeam Backup & Replication.
 
@@ -40,6 +41,4 @@ The main application window contains the following UI elements:
 
 [![Main Application Window](images/vex_know_ui.webp)](images/vex_know_ui.webp "Main Application Window")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

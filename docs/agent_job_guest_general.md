@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest_general.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing
 
-In this article
 
 If a computer protected with Veeam Agent for Linux runs an Oracle, MySQL or PostgreSQL database system, you can enable application-aware processing to create a transactionally consistent backup. The transactionally consistent backup guarantees proper recovery of databases without data loss.
 
@@ -38,6 +39,4 @@ If you select this option, you will need to specify database processing settings
 
 ![Application-Aware Processing](images/agent_job_guest_general.webp)
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

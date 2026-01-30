@@ -1,5 +1,7 @@
 ---
 title: "Step 12. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_vss.html"
 last_updated: "6/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 12. Specify Guest Processing Settings
 
-In this article
 
 The Guest Processing step of the wizard is available if you have selected the Server or Failover cluster option at the [Job Mode](agent_policy_win_protection_mode.md) step of the wizard.
 
@@ -22,6 +23,4 @@ For a Veeam Agent backup policy that includes Windows-based computers, you can e
 
 ![Step 12. Specify Guest Processing Settings](images/agent_policy_vss.webp "Specify Guest Processing Settings")
 
-Page updated 6/19/2024
 
-Page content applies to build 13.0.1.1071

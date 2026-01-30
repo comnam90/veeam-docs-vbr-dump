@@ -1,5 +1,7 @@
 ---
 title: "Remove-HP3Snapshot"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-hp3snapshot.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-HP3Snapshot
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 * [Get-HP3Volume](get-hp3volume.md)
 * [Get-HP3Snapshot](get-hp3snapshot.md)
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Connecting to High Availability Cluster"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_cluster_connect.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Connecting to High Availability Cluster
 
-In this article
 
 Once you assemble an HA cluster, you can connect to it using the Veeam Backup & Replication console.
 
@@ -18,6 +19,4 @@ To connect to an HA cluster, do the following:
 1. Close the current session with the Veeam Backup & Replication console on the primary node.
 2. Use the HA cluster IP address or the HA cluster DNS name to connect to an HA cluster using the Veeam Backup & Replication console.
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Cloud Storage Details"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_google_cloud_details.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Cloud Storage Details
 
-In this article
 
 At the Bucket step of the wizard, specify a Google Cloud bucket and folder where Google Cloud instance backups reside:
 
@@ -25,6 +26,4 @@ For more information about encryption, see [Encryption](external_repository_encr
 
 ![Step 4. Specify Cloud Storage Details ](images/external_google_bucket.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

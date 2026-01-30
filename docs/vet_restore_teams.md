@@ -1,5 +1,7 @@
 ---
 title: "Restoring Teams"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_teams.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Teams
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to restore all teams of a Microsoft 365 organization or a specific team of an organization.
 
@@ -23,6 +24,4 @@ To restore teams, do the following:
 6. [Select team members to restore](vet_restore_select_members.md).
 7. [Review the operation summary](summary24.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

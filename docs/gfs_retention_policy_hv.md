@@ -1,5 +1,7 @@
 ---
 title: "Long-Term Retention Policy (GFS)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_retention_policy_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Long-Term Retention Policy (GFS)
 
-In this article
 
 The long-term or Grandfather-Father-Son (GFS) retention policy allows you to store backup files for long periods of time — for weeks, months and even years. For this purpose, Veeam Backup & Replication does not create any special new backup files — it uses backup files created while the backup job runs and marks these backups with specific GFS flags.
 
@@ -44,6 +45,4 @@ Related Topics
 * [Assignment of GFS Flags](gfs_how_flags_assigned_hv.md)
 * [Removal of GFS Flags](gfs_flags_removal_hv.md)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

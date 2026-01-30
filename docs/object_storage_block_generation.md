@@ -1,13 +1,14 @@
 ---
 title: "Block Generation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_block_generation.html"
-last_updated: "1/7/2026"
+last_updated: "1/29/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Block Generation
 
-In this article
 
 Block Generation is a time period within which all blocks in backup files (both full and increment backup files) have the same immutability period. Block Generation reduces the number of requests to the object storage repository, thereby saving traffic and reducing costs that can be incurred by your object storage provider. You do not have to configure it, the Block Generation setting is applied automatically.
 
@@ -22,12 +23,12 @@ How Block Generation Works
 
 When the first data block (a full backup) arrives, its immutability period by default is set to 30 + 10 = 40 days. The first full backup starts its generation, that will be appended with the incremental backups. All the incremental backups within the generation (that is, within the 10-days period) will have the same immutability expiration date as the full backup. For instance, a data block that was offloaded on day 9 will have the same immutability expiration date as a data block offloaded on day 1. Thus we ensure that the immutability period for all the data blocks within a generation is no less than 30 days.
 
-To maintain the backup consistency, Veeam Backup & Replication can extend immutability expiration for all data blocks in all backup chains (both active and inactive) and assign these blocks to a new generation. For example, within one forward incremental backup chain, a full backup file can not be removed before an incremental backup file. On the other hand, an incremental backup file makes no sense without relevant full backup file. So the immutability period is extended for all data blocks in the backup chain.
+To maintain the backup consistency, Veeam Backup & Replication can extend immutability expiration for all data blocks in all backup chains (both active and inactive) and assign these blocks to a new generation. For example, within one forward incremental backup chain, a full backup file cannot be removed before an incremental backup file. On the other hand, an incremental backup file makes no sense without relevant full backup file. So the immutability period is extended for all data blocks in the backup chain.
 
 |  |
 | --- |
 | Note |
-| Consider the following:   * The immutability period differs from the actual retention of the object storage repository. For more information, see [Object Storage Actual Retention](hiw_immutability_os.md#retention). * For data blocks located in object storage repositories, Veeam Backup & Replication extends the immutability period for every data block of every backup file in the whole backup chain, even in an inactive part. * Veeam Backup & Replication will not extended immutability for the data blocks that are not used in any existing backup files. |
+| Consider the following:   * The immutability period differs from the actual retention of the object storage repository. For more information, see [Object Storage Actual Retention](hiw_immutability_os.md#retention). * For data blocks located in object storage repositories, Veeam Backup & Replication extends the immutability period for every data block of every backup file in the whole backup chain, even in an inactive part. * Veeam Backup & Replication will not extend immutability for the data blocks that are not used in any existing backup files. |
 
 Block Generation for GFS Backups
 
@@ -49,6 +50,4 @@ The retention period of a weekly GFS backup is 28 days, and the Block Generation
 
 ![Block Generation](images/weeklyGFS_block_generation_10.webp)
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

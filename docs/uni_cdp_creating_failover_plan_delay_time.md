@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Set Time Delay"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_creating_failover_plan_delay_time.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Set Time Delay
 
-In this article
 
 After you have set the order for workloads in the failover plan, you need to set a time delay for workloads. The delay time defines for how long Veeam Backup & Replication must wait before starting the failover operation for the next workload in the list. You can use time delays to make sure that some workload are already running at the moment dependent workloads start.
 
@@ -25,6 +26,4 @@ To set the time delay for a workload:
 
 ![Step 5. Set Time Delay](images/failover_plan_delay_vm.webp)
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

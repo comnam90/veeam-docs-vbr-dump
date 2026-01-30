@@ -1,5 +1,7 @@
 ---
 title: "Adding Object Storage Servers"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/adding_os_servers.html"
 last_updated: "1/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Object Storage Servers
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Add-VBRAzureStorageServer](add-vbrazurestorageserver.md) | Adds Microsoft Azure object storage as unstructured data source to the inventory. |
 | [Set-VBRAzureStorageServer](set-vbrazurestorageserver.md) | Modifies settings of Microsoft Azure object storage added as unstructured data source to the inventory. |
 
-Page updated 1/7/2025
 
-Page content applies to build 13.0.1.1071

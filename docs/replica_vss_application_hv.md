@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_application_hv.html"
 last_updated: "9/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing
 
-In this article
 
 Application-aware processing helps create transactionally consistent replicas. The transactionally consistent replicas guarantee proper recovery of applications without data loss. For more information on application-aware processing, see [Application-Aware Processing](application_aware_processing_hv.md).
 
@@ -54,6 +55,4 @@ For more information on guest agent and non-persistent components, see [Non-Pers
 
 ![Application-Aware Processing](images/hv_replica_job_vss_common.webp)
 
-Page updated 9/4/2025
 
-Page content applies to build 13.0.1.1071

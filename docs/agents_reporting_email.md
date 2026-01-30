@@ -1,5 +1,7 @@
 ---
 title: "Enabling Email Reporting"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_email.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling Email Reporting
 
-In this article
 
 You can set up Veeam Backup & Replication to send reports automatically by email. To do this, you must enable and configure global email notification settings in Veeam Backup & Replication. To learn more, see [Configuring Global Email Notification Settings](general_email_notifications.md).
 
@@ -39,6 +40,4 @@ You can specify custom notification settings for a specific backup policy. To le
 * [Notification Settings for Backup Policy](agent_policy_advanced_notify_unix.md) (for Unix computers)
 * [Notification Settings for Backup Policy](agent_policy_advanced_notify_mac.md) (for macOS computers)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

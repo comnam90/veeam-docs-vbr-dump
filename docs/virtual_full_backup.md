@@ -1,5 +1,7 @@
 ---
 title: "Virtual Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_full_backup.html"
 last_updated: "9/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Full Backup
 
-In this article
 
 The virtual full backup allows you to transform backup chains created by source backup and backup copy jobs to save them to tapes. Unlike disk backups, tape archives are static: tape jobs cannot rebuild backups once they are written to tape. Also, if the source job has forever forward incremental backup chain configured, then the tape archive will have one full backup and an endless chain of increments all of which would be required for restore. To adapt such backup chains to tapes, Veeam Backup & Replication uses the virtual full backup.
 
@@ -33,6 +34,4 @@ Related Topics
 * [How Virtual Full Backup Works](virtual_full_backup_hiw.md)
 * [Virtual Full Intervals](virtual_full_intervals.md)
 
-Page updated 9/15/2025
 
-Page content applies to build 13.0.1.1071

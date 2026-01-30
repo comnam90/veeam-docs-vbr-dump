@@ -1,5 +1,7 @@
 ---
 title: "Managing Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_retention.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Retention Policy
 
-In this article
 
 A retention policy is set in the backup policy settings of [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10), [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\* and [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1) and defines the number of restore points to keep in repositories.
 
@@ -32,6 +33,4 @@ Related Topics
 
 * [Ownership](external_repository_ownership.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

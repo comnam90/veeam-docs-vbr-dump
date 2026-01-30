@@ -1,5 +1,7 @@
 ---
 title: "Virtual Appliance Mode for VMs on VSAN"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_appliance_mode_vsan.html"
 last_updated: "10/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Appliance Mode for VMs on VSAN
 
-In this article
 
 To transport data of VMs residing on VSAN in the Virtual appliance mode, you must assign the VMware backup proxy role to a VM.
 
@@ -31,6 +32,4 @@ If you notice excessive network link utilization during backup operations, consi
 | Note |
 | Even if disks of a VM are located on a host where the VMware backup proxy is deployed, VSAN traffic may still be observed between hosts in the cluster. This behavior depends on the VSAN cluster itself and cannot be modified in Veeam Backup & Replication. |
 
-Page updated 10/14/2025
 
-Page content applies to build 13.0.1.1071

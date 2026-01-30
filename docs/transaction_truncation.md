@@ -1,5 +1,7 @@
 ---
 title: "Transaction Log Truncation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/transaction_truncation.html"
 last_updated: "3/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Transaction Log Truncation
 
-In this article
 
 If you back up or replicate virtualized database systems that use transaction logs, for example, Microsoft Exchange or Microsoft SQL Server, you can instruct Veeam Backup & Replication to truncate transaction logs so that logs do not overflow the storage space on the VM. Veeam Backup & Replication provides the following options of transaction logs handling:
 
@@ -55,6 +56,4 @@ Related Topics
 * [Creating Backup Jobs](backup_job.md)
 * [Creating Replication Jobs](replica_job.md)
 
-Page updated 3/4/2025
 
-Page content applies to build 13.0.1.1071

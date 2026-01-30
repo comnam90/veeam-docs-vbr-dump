@@ -1,5 +1,7 @@
 ---
 title: "Microsoft SQL Server Transaction Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_sql_hv.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft SQL Server Transaction Log Settings
 
-In this article
 
 To create a transactionally consistent backup of SQL VM, you must enable application-aware processing and define settings of transaction logs processing.
 
@@ -57,6 +58,4 @@ For more information on log shipping servers and how they are selected, see [Log
 
 ![Microsoft SQL Server Transaction Log Settings](images/hv_backup_job_vss_sql.webp)
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

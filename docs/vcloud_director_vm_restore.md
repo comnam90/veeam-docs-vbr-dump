@@ -1,5 +1,7 @@
 ---
 title: "Data Recovery for VMware Cloud Director"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vm_restore.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Recovery for VMware Cloud Director
 
-In this article
 
 Veeam Backup & Replication enables full-fledged restore of VMs to VMware Cloud Director. You can restore separate VMs to vApps, as well as VM data.
 
@@ -27,6 +28,4 @@ In This Section
 * [vApp Recovery](vcd_vapp_recovery.md)
 * [Item Recovery](vcd_item_recovery.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

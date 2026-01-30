@@ -1,5 +1,7 @@
 ---
 title: "How Virtual Full Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_full_backup_hiw.html"
 last_updated: "7/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Virtual Full Backup Works
 
-In this article
 
 When the tape job archives the source backup chain, it copies the full backup from disk only once. After that, it copies new increments and creates virtual fulls regularly, or, if archiving of increments is disabled, creates only virtual fulls.
 
@@ -33,6 +34,4 @@ On Saturday, the tape job picks data blocks from the full backup on Tuesday and 
 | Note |
 | If the source backup chain contains a full backup that was created on the virtual full day (for example, an active full backup created manually), the tape job will copy it and will not create a virtual full. |
 
-Page updated 7/19/2025
 
-Page content applies to build 13.0.1.1071

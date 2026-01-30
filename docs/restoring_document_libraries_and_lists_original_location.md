@@ -1,5 +1,7 @@
 ---
 title: "Restoring Document Libraries and Lists to Original Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_document_libraries_and_lists_original_location.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Document Libraries and Lists to Original Location
 
-In this article
 
 To restore Microsoft SharePoint document libraries and lists to the original location, do the following:
 
@@ -18,6 +19,4 @@ To restore Microsoft SharePoint document libraries and lists to the original loc
 5. [Specify restore options](vesp_restore_lib_options.md).
 6. [Review the operation summary](summary12.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

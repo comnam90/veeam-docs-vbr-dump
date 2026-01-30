@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Job
 
-In this article
 
 A SureBackup job is a task for recovery verification. The SureBackup job can run in two different modes: Full recoverability testing and Backup verification and content scan only.
 
@@ -44,6 +45,4 @@ Related Topics
 * [Viewing Recovery Verification Job Statistics](viewing_surebackup_stats.md)
 * [Creating SureBackup Session Reports](creating_surebackup_reports.md)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

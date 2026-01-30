@@ -1,5 +1,7 @@
 ---
 title: "New-VBRRepositoryMountServerOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrrepositorymountserveroptions.html"
 last_updated: "7/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRRepositoryMountServerOptions
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Related Commands
 
 [Get-VBRServer](get-vbrserver.md)
 
-Page updated 7/17/2025
 
-Page content applies to build 13.0.1.1071

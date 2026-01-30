@@ -1,5 +1,7 @@
 ---
 title: "Exporting as BAK"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_published_export.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting as BAK
 
-In this article
 
 To save changes that have been made while working with your published database to a local computer, you can use the export feature. This feature will export modified databases as BAK, preserving all the changes that have been made during the publishing session.
 
@@ -39,6 +40,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Export Summary Window](images/vesql_export_published_bak_summary.webp)](images/vesql_export_published_bak_summary.webp "Reviewing Export Summary Window")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

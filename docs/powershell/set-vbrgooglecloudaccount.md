@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRGoogleCloudAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgooglecloudaccount.html"
 last_updated: "2/7/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRGoogleCloudAccount
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Related Commands
 
 [Get-VBRGoogleCloudAccount](get-vbrgooglecloudaccount.md)
 
-Page updated 2/7/2024
 
-Page content applies to build 13.0.1.1071

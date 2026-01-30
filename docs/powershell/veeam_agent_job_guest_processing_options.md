@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Job Guest Processing Options"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_job_guest_processing_options.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Job Guest Processing Options
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -28,6 +29,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Set-VBRScriptProcessingOptions](set-vbrscriptprocessingoptions.md) | Modifies pre-freeze and post-thaw scripts settings for Veeam Agent backup jobs. |
 | [Set-VBRComputerIndexingOptions](set-vbrcomputerindexingoptions.md) | Modifies indexing settings for Veeam Agent backup job. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

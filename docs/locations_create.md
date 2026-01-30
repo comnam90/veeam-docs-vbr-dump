@@ -1,5 +1,7 @@
 ---
 title: "Creating and Assigning Locations to Infrastructure Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/locations_create.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating and Assigning Locations to Infrastructure Objects
 
-In this article
 
 You can create a list of locations in Veeam Backup & Replication and assign locations to infrastructure objects. If you assign a location to a root infrastructure host (SCVMM) or vCenter server, it will be applied to all child hosts (clusters, HV hosts or ESXi hosts). You can also assign the location to a child host.
 
@@ -28,6 +29,4 @@ To assign a location to an infrastructure object, in the Inventory or Backup Inf
 
 [![Creating and Assigning Locations to Infrastructure Objects](images/locations_assign.webp)](images/locations_assign.webp)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

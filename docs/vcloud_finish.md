@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_finish.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Finish Working with Wizard
 
-In this article
 
 At the Apply step of the wizard, complete the procedure of VMware Cloud Director adding.
 
@@ -18,6 +19,4 @@ If vCenter Servers underlying VMware Cloud Director are already added to the bac
 
 ![Step 5. Finish Working with Wizard](images/vcloud_add_server_results.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

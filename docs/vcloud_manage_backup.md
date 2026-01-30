@@ -1,5 +1,7 @@
 ---
 title: "Managing Cloud Director Backups and Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_manage_backup.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Cloud Director Backups and Jobs
 
-In this article
 
 Managing for Cloud Director backups and jobs is practically the same as for regular backups. You can view backup properties, copy, move, export and delete backups from disk. For more information, see the following sections:
 
@@ -43,6 +44,4 @@ To create a partial active full backup:
 
 [![Managing Cloud Director Backups and Jobs](images/vcloud_partial_af.webp)](images/vcloud_partial_af.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_byb.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you begin restore to Microsoft Azure, check the following prerequisites:
 
@@ -26,6 +27,4 @@ Before you begin restore to Microsoft Azure, check the following prerequisites:
 
 * You must set up correct time on the backup server. Otherwise you may not be able to add a Microsoft Azure Compute account or Microsoft Azure Stack Hub Compute account to Veeam Backup & Replication, or the restore process may fail.
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Azure Backup Copy Job"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/azure_backup_copy.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Azure Backup Copy Job
 
-In this article
 
 You can use cmdlets in this topic to perform the following operations:
 
@@ -24,6 +25,4 @@ You can use cmdlets in this topic to perform the following operations:
 | [New-VBRGFSRetentionPolicy](new-vbrgfsretentionpolicy_azure.md) | Creates a GFS retention policy for backup copy jobs that process backups stored on external repositories. |
 | [Set-VBRGFSRetentionPolicy](set-vbrgfsretentionpolicy_azure.md) | Modifies a GFS retention policy for backup copy jobs that process backups stored on external repositories. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

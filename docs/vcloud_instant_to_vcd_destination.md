@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Destination for Restored VM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_destination.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Destination for Restored VM
 
-In this article
 
 The Destination step of the wizard is available if you have chosen to change the location and settings of the restored VM.
 
@@ -23,6 +24,4 @@ Select a destination and specify a name for the restored VM:
 
 ![Step 5. Select Destination for Restored VM](images/vcloud_instant_recovery_destination.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

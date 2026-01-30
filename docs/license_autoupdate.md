@@ -1,5 +1,7 @@
 ---
 title: "Updating License Automatically"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_autoupdate.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating License Automatically
 
-In this article
 
 You can instruct Veeam Backup & Replication to automatically update the license installed on the backup server or Veeam Backup Enterprise Manager server. With automatic license update, you do not need to download and install the license manually each time when you purchase the license extension. If the automatic update option is enabled, Veeam Backup & Replication proactively communicates with the Veeam License Update Server to obtain and install a new license before the current license expires.
 
@@ -79,6 +80,4 @@ Statistics on the automatic license update process is available under the System
 | Note |
 | [For Rental, Subscription, Perpetual licenses] Enabling license auto update activates [Automatic License Usage Reporting](automatic_usage_logging.md). |
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

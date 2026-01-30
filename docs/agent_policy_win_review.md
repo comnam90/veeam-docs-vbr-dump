@@ -1,5 +1,7 @@
 ---
 title: "Step 14. Review Backup Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_review.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 14. Review Backup Job Settings
 
-In this article
 
 At the Summary step of the wizard, complete the backup policy configuration process.
 
@@ -20,6 +21,4 @@ If you want to apply backup policy immediately, you must synchronize Veeam Agent
 
 ![Step 14. Review Backup Job Settings](images/agent_policy_summary.webp "Review Backup Job Settings")
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

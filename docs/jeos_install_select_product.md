@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Product"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jeos_install_select_product.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Product
 
-In this article
 
 In the installation menu, select one of the following:
 
@@ -30,6 +31,4 @@ Then, press [Enter].
 
 ![Step 2. Select Product](images/jeos_product.webp)
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

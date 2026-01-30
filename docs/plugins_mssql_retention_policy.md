@@ -1,5 +1,7 @@
 ---
 title: "Configuring Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_mssql_retention_policy.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Retention Policy
 
-In this article
 
 To configure the retention policy, select the Apply retention policy check box at the Backup Options step of the Back Up Database wizard and specify the number of days to keep restore points in the backup chain. For details, see [Specify Backup Options](backup_job_options.md).
 
@@ -24,6 +25,4 @@ Alternatively, if you enable retention policy for multiple types of backups of t
 
 ![Configuring Retention Policy](images/mssql_backup_options.webp)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

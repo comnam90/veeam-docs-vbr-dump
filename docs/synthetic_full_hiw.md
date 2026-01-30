@@ -1,5 +1,7 @@
 ---
 title: "How Synthetic Full Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/synthetic_full_hiw.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Synthetic Full Backup Works
 
-In this article
 
 To understand how synthetic full backups are created, consider the following example. The backup job starts on Sunday, with synthetic full backups scheduled on Friday. Active full backups are not configured.
 
@@ -41,6 +42,4 @@ Veeam Backup & Replication creates a synthetic full backup only once a day on wh
 
 If an active or synthetic full backups are scheduled for the chained job, but the initial job does not run on these days, the active and synthetic full backups will not be created for the chained job. For more information, see [Chained Jobs](job_schedule.md#chain).
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

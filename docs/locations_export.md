@@ -1,5 +1,7 @@
 ---
 title: "Exporting and Importing Locations List"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/locations_export.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting and Importing Locations List
 
-In this article
 
 You can export and import the list of locations to/from a file of XML format.
 
@@ -30,6 +31,4 @@ To import the locations list:
 
 [![Exporting and Importing Locations List](images/locations_export.webp)](images/locations_export.webp)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

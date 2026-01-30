@@ -1,5 +1,7 @@
 ---
 title: "Immutability for Performance Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_performance_tier.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Immutability for Performance Tier
 
-In this article
 
 Veeam Backup & Replication allows you to prohibit deletion of data from the repositories added as a performance extent by making that data temporarily immutable. It is done for increased security: immutability protects your data from loss as a result of attacks, malware activity or any other injurious actions.
 
@@ -58,6 +59,4 @@ Related Topics
 
 [Block Generation](performance_tier_block_generation.md)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

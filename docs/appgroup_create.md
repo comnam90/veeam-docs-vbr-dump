@@ -1,5 +1,7 @@
 ---
 title: "Creating Application Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_create.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Application Groups
 
-In this article
 
 Before you create an application group, [check prerequisites](appgroup_before_you_begin.md). Then use the New Application Group wizard to create an application group.
 
@@ -17,6 +18,4 @@ Before you create an application group, [check prerequisites](appgroup_before_yo
 4. [Specify recovery verification options and tests](appgroup_tests_vm.md).
 5. [Review application group settings and finish working with the wizard](appgroup_review_vm.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

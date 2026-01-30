@@ -1,5 +1,7 @@
 ---
 title: "Migrating Backups within Scale-Out Backup Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backups_migration.html"
 last_updated: "3/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating Backups within Scale-Out Backup Repository
 
-In this article
 
 The migration option allows you to migrate data between performance or capacity extents of different object storage repositories. This option may be helpful if you want to switch from one object storage repository to another or to migrate from the object storage repository with different immutability settings.
 
@@ -101,6 +102,4 @@ To do this, perform the following steps:
 1. Switch the necessary extent into the [Maintenance](sobr_maintenance.md) mode.
 2. Evacuate backups from the extent.
 
-Page updated 3/28/2025
 
-Page content applies to build 13.0.1.1071

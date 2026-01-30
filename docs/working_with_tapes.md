@@ -1,5 +1,7 @@
 ---
 title: "Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/working_with_tapes.html"
 last_updated: "4/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tapes
 
-In this article
 
 All tapes managed by Veeam Backup & Replication belong to one of the media pools. Generally, the new tapes are in the Free media pool. Tapes that were written by tape jobs stay in the media pools that are targets to these tape jobs.
 
@@ -42,6 +43,4 @@ Related Topics
 * [Tape Alerts](tape_alert.md)
 * [WORM Tapes](worm_tapes.md)
 
-Page updated 4/16/2025
 
-Page content applies to build 13.0.1.1071

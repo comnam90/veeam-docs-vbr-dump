@@ -1,5 +1,7 @@
 ---
 title: "Limitation of Read and Write Data Rates for Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/limiting_ingestion.html"
 last_updated: "9/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Limitation of Read and Write Data Rates for Backup Repositories
 
-In this article
 
 Veeam Backup & Replication can limit the speed with which Veeam Backup & Replication must read and write data to/from the backup repository. The data read and write speed is controlled with the Limit read and write data rate to <N> MB/s option that you can enable in backup repository settings.
 
@@ -21,6 +22,4 @@ For example, you set the Limit read and write data rate to option to 8 MB/s and 
 
 If, at this moment, you start some job reading data from the same backup repository, for example, a backup copy job processing 1 VM with 1 disk, Veeam Backup & Replication will assign the read speed rate equal to 8 MB/s to this job. If you start 2 backup copy jobs at the same time (each processing 1 VM with 1 disk), Veeam Backup & Replication will split the read speed rate between these 2 jobs equally: 4 MB/s for one backup copy job and 4 MB/s for the other backup copy job.
 
-Page updated 9/30/2025
 
-Page content applies to build 13.0.1.1071

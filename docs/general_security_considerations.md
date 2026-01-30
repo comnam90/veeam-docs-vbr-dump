@@ -1,5 +1,7 @@
 ---
 title: "General Security Considerations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_security_considerations.html"
 last_updated: "11/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # General Security Considerations
 
-In this article
 
 General security considerations include best practices which help you to harden backup infrastructure, build a more secure environment, and mitigate risks of being compromised. Ensure that your backup infrastructure meet the common recommendations described in this section. For more information about hardening specific backup infrastructure components, see [Securing Backup Infrastructure](securing_backup_infrastructure.md).
 
@@ -94,6 +95,4 @@ Related Topics
 
 [Security & Compliance Analyzer](best_practices_analyzer.md)
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

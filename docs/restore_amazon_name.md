@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Name and Tags"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_name.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Name and Tags
 
-In this article
 
 At the Name step of the wizard, you can specify names and manage AWS tags for the restored workloads. By default, Veeam Backup & Replication uses the original workload names and adds the Original name and Restore start time tags.
 
@@ -58,6 +59,4 @@ To delete a tag:
 
 ![Step 4. Specify Name and Tags](images/amazon_restore_tags.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

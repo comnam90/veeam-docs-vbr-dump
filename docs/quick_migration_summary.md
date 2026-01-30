@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_summary.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Finish Working with Wizard
 
-In this article
 
 At the Ready step of the wizard, your actions differ depending on the [method you have chosen to use for migration](quick_migration_infrastructure.md). For more information on the methods, see [Quick Migration for VMware vSphere](quick_migration.md).
 
@@ -32,6 +33,4 @@ During Veeam Quick Migration, Veeam Backup & Replication names the VMs according
 
 ![Step 5. Finish Working with Wizard](images/migration_summary.webp)
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

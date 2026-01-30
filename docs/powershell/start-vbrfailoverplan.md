@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRFailoverPlan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrfailoverplan.html"
 last_updated: "12/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRFailoverPlan
 
-In this article
 
 Short Description
 
@@ -89,6 +90,4 @@ Related Commands
 * [Get-VBRFailoverPlan](get-vbrfailoverplan.md)
 * [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1)
 
-Page updated 12/23/2024
 
-Page content applies to build 13.0.1.1071

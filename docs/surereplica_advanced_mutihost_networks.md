@@ -1,5 +1,7 @@
 ---
 title: "Isolated Networks on DVS"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_advanced_mutihost_networks.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Isolated Networks on DVS
 
-In this article
 
 For every isolated network in the virtual lab, Veeam Backup & Replication adds a new DVS port group to the DVS. The added port group is named after the isolated network.
 
@@ -26,6 +27,4 @@ The port groups created on the DVS must be isolated from the production environm
 
 ![Isolated Networks on DVS](images/vlan_tagging.webp)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

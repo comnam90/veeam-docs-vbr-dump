@@ -1,5 +1,7 @@
 ---
 title: "Quick Migration Architecture"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migration_architecture_hv.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Quick Migration Architecture
 
-In this article
 
 Quick Migration architecture in a VMware vSphere environment comprises the following components:
 
@@ -24,6 +25,4 @@ For off-site migration, you need to deploy at least one local backup proxy in ea
 
 ![Quick Migration Architecture](images/quick_mig_2proxies.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

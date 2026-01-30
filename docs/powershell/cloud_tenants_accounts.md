@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Tenant Accounts"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cloud_tenants_accounts.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Tenant Accounts
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -27,6 +28,4 @@ You can use the cmdlets in this topic to perform the following operations:
 | [Start-VBRCloudTenantBackupEvacuation](start-vbrcloudtenantbackupevacuation.md) | Starts to migrate tenant data between performance extents. |
 | [Switch-VBRCloudTenantsQuotaRepositoryToSOBR](switch-vbrcloudtenantsquotarepositorytosobr.md) | Switches tenant quota on the cloud repository to a scale-out backup repository. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

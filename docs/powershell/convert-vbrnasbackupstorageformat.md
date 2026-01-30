@@ -1,5 +1,7 @@
 ---
 title: "Convert-VBRNASBackupStorageFormat"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/convert-vbrnasbackupstorageformat.html"
 last_updated: "9/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Convert-VBRNASBackupStorageFormat
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 * [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md)
 * [Get-VBRUnstructuredBackupCopyJob](get-vbrunstructuredbackupcopyjob.md)
 
-Page updated 9/4/2024
 
-Page content applies to build 13.0.1.1071

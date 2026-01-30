@@ -1,5 +1,7 @@
 ---
 title: "Filtering Events"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/syslog_servers_filtering_events.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Filtering Events
 
-In this article
 
 You can exclude specific events from sending them to the syslog server. To do this, perform the following steps:
 
@@ -66,6 +67,4 @@ Example:
 | --- |
 | <SyslogFilteredEvents>   <FilteredEvent EventId="23010" FilterInfo="True" FilterWarning="False" FilterError="False" />  </SyslogFilteredEvents> |
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

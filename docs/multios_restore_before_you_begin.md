@@ -1,5 +1,7 @@
 ---
 title: "Linux File Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_before_you_begin.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Linux File Recovery
 
-In this article
 
 This section lists considerations and limitations that apply to recovery from Linux workloads.
 
@@ -98,6 +99,4 @@ where zone\_name\_1, zone\_name\_2 is a list of zone names where the ports must 
 | Note |
 | Veeam Backup & Replication opens the port 2500 in all zones even if you have specified the required zones in configuration files. |
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

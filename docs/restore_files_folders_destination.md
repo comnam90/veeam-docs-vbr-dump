@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Destination for File Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_folders_destination.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Destination for File Restore
 
-In this article
 
 The Destination step is required if you choose the Copy To option at the [Select Files and Folders to Restore](restore_files_folders_backup_browser.md) step. Specify the destination where the restored files must be stored:
 
@@ -23,6 +24,4 @@ If you want to restore the file share to a new folder, click New Folder at the b
 
 ![Step 8. Specify Destination for File Restore](images/restore_files_folders_destination.webp "Specify Destination for File Restore")
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

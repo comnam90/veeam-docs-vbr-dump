@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_vss.html"
 last_updated: "12/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Specify Guest Processing Settings
 
-In this article
 
 For a Veeam Agent backup job managed by the backup server that protects Windows-based computers, you can enable the following guest OS processing settings:
 
@@ -20,6 +21,4 @@ For a Veeam Agent backup job managed by the backup server that protects Windows-
 
 ![Step 10. Specify Guest Processing Settings](images/agent_job_vss.webp "Specify Guest Processing Settings")
 
-Page updated 12/6/2024
 
-Page content applies to build 13.0.1.1071

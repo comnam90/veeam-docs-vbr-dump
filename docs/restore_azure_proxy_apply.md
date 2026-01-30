@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Start Deployment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_apply.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Start Deployment
 
-In this article
 
 At the Apply step of the wizard, Veeam Backup & Replication deploys the Azure restore proxy appliance with the specified settings. You can view the deployment progress in the real-time mode. When the configuration process is over, click Next. At the Summary step of the wizard, click Finish to close the wizard.
 
@@ -18,6 +19,4 @@ At the Apply step of the wizard, Veeam Backup & Replication deploys the Azure re
 
 ![Step 8. Start Deployment](images/azure_proxy_apply.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

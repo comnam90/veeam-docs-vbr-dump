@@ -1,5 +1,7 @@
 ---
 title: "Editing Protection Group Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_edit.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Protection Group Settings
 
-In this article
 
 You can edit the settings of a protection group. This operation may be required, for example, if you added a new node to the protected MongoDB replica set and you need to add it to a protection group.
 
@@ -20,6 +21,4 @@ To edit protection group settings:
 
 [![Edit Protection Group](images/mongo_protection_group_edit.webp)](images/mongo_protection_group_edit.webp "Edit Protection Group")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

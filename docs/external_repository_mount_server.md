@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_mount_server.html"
 last_updated: "7/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Mount Server Settings
 
-In this article
 
 At the Mount Servers step of the wizard, specify settings for the mount servers that you plan to use for restores that work with guest OS files and application items.
 
@@ -37,6 +38,4 @@ To configure the mount server settings:
 
 [![Step 6. Specify Mount Server Settings](images/new_external_repo_mount_server.webp)](images/new_external_repo_mount_server.webp)
 
-Page updated 7/14/2025
 
-Page content applies to build 13.0.1.1071

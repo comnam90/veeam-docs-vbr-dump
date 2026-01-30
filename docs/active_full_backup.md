@@ -1,5 +1,7 @@
 ---
 title: "Active Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/active_full_backup.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Active Full Backup
 
-In this article
 
 In some cases, you need to create a full backup regularly. For example, your corporate backup policy may require you to create a full backup on weekends and run incremental backup on work days. To let you conform to these requirements, Veeam Backup & Replication lets you create active full backups.
 
@@ -39,6 +40,4 @@ Veeam Backup & Replication creates an active full backup only once a day on whi
 | Important |
 | If you schedule a job to start after another job (initial job), but the initial job does not run on days when the active full backup is scheduled for the chained job, Veeam Backup & Replication will not create active full backups. |
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

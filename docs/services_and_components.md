@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup & Replication Services"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/services_and_components.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup & Replication Services
 
-In this article
 
 This section describes services used by Veeam Backup & Replication:
 
@@ -103,6 +104,4 @@ The following table describes Veeam services used by Veeam Backup & Replication 
 | Veeam PVE Service | VeeamPVESvc | Enables interaction between Veeam Backup & Replication and Proxmox Virtual Environment. |
 | Veeam SC HyperCore Service | VeeamHyperCoreSvc | Enables interaction between Veeam Backup & Replication and Scale Computing HyperCore infrastructure. |
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

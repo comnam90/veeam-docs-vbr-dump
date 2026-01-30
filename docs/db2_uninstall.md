@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Plug-In"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_uninstall.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Plug-In
 
-In this article
 
 Installation scenario depends on the OS you work with:
 
@@ -69,6 +70,4 @@ To uninstall Veeam Plug-In and undo the configuration changes, run the following
 | --- |
 | rpm -e VeeamPluginforDB2 |
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

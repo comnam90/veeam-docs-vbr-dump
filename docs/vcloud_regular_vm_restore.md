@@ -1,5 +1,7 @@
 ---
 title: "How Restore of Regular and Standalone VMs to VMware Cloud Director Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_regular_vm_restore.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore of Regular and Standalone VMs to VMware Cloud Director Works
 
-In this article
 
 Veeam Backup & Replication lets you restore regular VMs that are part of vApps and standalone VMs that were created in the VMware Cloud Director tenant portal.
 
@@ -18,6 +19,4 @@ When you restore regular or standalone VMs back to the VMware Cloud Director hie
 
 ![How Restore of Regular and Standalone VMs to VMware Cloud Director Works](images/vcd_regular_restore.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

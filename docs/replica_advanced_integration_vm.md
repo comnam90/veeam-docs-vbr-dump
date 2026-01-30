@@ -1,5 +1,7 @@
 ---
 title: "Integration Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_advanced_integration_vm.html"
 last_updated: "4/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Integration Settings
 
-In this article
 
 On the Integration tab, define whether you want to use the Backup from Storage Snapshots technology to create a VM replica. Backup from Storage Snapshots lets you leverage storage snapshots for VM data processing. The technology improves RPOs and reduces the impact of replication activities on the production environment. For more information, see the [Backup from Storage Snapshot](backup_from_storage_snapshots.md) section.
 
@@ -25,6 +26,4 @@ In a regular job processing course, Veeam Backup & Replication creates a VMware 
 
 ![Integration Settings](images/vm_replica_job_settings_integration.webp)
 
-Page updated 4/16/2025
 
-Page content applies to build 13.0.1.1071

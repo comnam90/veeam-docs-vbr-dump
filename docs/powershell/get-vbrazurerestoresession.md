@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAzureRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazurerestoresession.html"
 last_updated: "12/19/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAzureRestoreSession
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Examples
 | --- | --- |
 | This example shows how to get a restore session and check its status.  |  | | --- | | $session = Get-VBRAzureRestoreSession | Sort-Object CreationTime -Descending | Select -First 1 |  Perform the following steps:   1. Run the Get-VBRAzureRestoreSession cmdlet. 2. Pipe the cmdlet output to the Sort-Object cmdlet. Specify the CreationTime parameter. 3. Pipe the cmdlet output to the Select cmdlet. Specify the First parameter. |
 
-Page updated 12/19/2023
 
-Page content applies to build 13.0.1.1071

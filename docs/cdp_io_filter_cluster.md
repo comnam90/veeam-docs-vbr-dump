@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Clusters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_cluster.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Clusters
 
-In this article
 
 At the Clusters step of the wizard, select check boxes near clusters on which you want to install the I/O filter.
 
@@ -20,6 +21,4 @@ If you select check boxes near clusters where the filters are already installed,
 
 ![Step 2. Select Clusters](images/cdp_io_filter_cluster.webp "Select cluster")
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

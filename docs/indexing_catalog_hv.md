@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Catalog"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/indexing_catalog_hv.html"
 last_updated: "3/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Catalog
 
-In this article
 
 For VM guest OS file indexing, Veeam Backup & Replication uses the Veeam Guest Catalog Service. In the backup infrastructure, the Veeam Guest Catalog Service is installed on the Veeam backup server and Veeam Backup Enterprise Manager server.
 
@@ -24,6 +25,4 @@ On the Veeam Backup Enterprise Manager server, the default folder for storing in
 * Maintains indexing data retention.
 * Allows you to search for VM guest OS files in current and archived backup files.
 
-Page updated 3/3/2025
 
-Page content applies to build 13.0.1.1071

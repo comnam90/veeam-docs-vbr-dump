@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRKMSServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrkmsserver.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRKMSServer
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command returns the thales.tech.local KMS server.  |  | | --- | | Get-VBRKMSServer -Name "thales.tech.local" | |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

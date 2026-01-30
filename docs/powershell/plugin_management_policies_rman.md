@@ -1,5 +1,7 @@
 ---
 title: "Application Backup Policy Settings for Veeam Plug-In for Oracle RMAN"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/plugin_management_policies_rman.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Backup Policy Settings for Veeam Plug-In for Oracle RMAN
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -20,6 +21,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [New-VBRPluggableDatabasesOptions](new-vbrpluggabledatabasesoptions.md) | Creates the pluggable database settings for application backup policies. |
 | [Set-VBRPluggableDatabasesOptions](set-vbrpluggabledatabasesoptions.md) | Modifies the pluggable database settings for application backup policies. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

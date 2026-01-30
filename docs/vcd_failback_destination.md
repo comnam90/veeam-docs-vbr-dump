@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Failback Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_destination.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Failback Destination
 
-In this article
 
 At the Destination step of the wizard, select the failback destination and backup proxies for vApp data transport during failback:
 
@@ -58,6 +59,4 @@ When you click Next, Veeam Backup & Replication will check storage policies in t
 
 For more information, see [Storage Profiles](storage_profile_restore.md).
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

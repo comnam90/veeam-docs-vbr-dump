@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Nutanix Files Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nutanix_add_launch.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Nutanix Files Storage Wizard
 
-In this article
 
 To launch the New Nutanix Files Storage wizard, do one of the following:
 
@@ -19,6 +20,4 @@ Open the Storage Infrastructure view. In the inventory pane, right-click the Nut
 
 [![Step 1. Launch New Nutanix Files Storage Wizard](images/nutanix_add_launch.webp)](images/nutanix_add_launch.webp)
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

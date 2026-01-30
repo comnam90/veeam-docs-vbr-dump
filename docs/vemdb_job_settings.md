@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_job_settings.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 You can create backups of MongoDB replica sets using application backup jobs in Veeam Backup & Replication.
 
@@ -20,6 +21,4 @@ To be able to restore your MongoDB data to a point-in-time state, make sure to c
 
 After the backup is successfully created, you can use Veeam Explorer for MongoDB to restore your MongoDB data.
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

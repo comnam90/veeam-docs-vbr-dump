@@ -1,5 +1,7 @@
 ---
 title: "Removing Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deleting_media_pools.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Media Pools
 
-In this article
 
 If you no longer need a media pool or a GFS media pool, you can remove it:
 
@@ -29,6 +30,4 @@ Limitations for Removing Media Pools
 
 [![Removing Media Pools](images/remove_media_pool.webp)](images/remove_media_pool.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "HPE StoreOnce Supported Features"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storeonce_supported_features.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # HPE StoreOnce Supported Features
 
-In this article
 
 The HPE StoreOnce Catalyst technology offers a set of features for advanced data processing. Veeam Backup & Replication supports the following features.
 
@@ -81,6 +82,4 @@ Related Topics
 * [Operational Modes](deduplicating_appliance_storeonce_modes.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

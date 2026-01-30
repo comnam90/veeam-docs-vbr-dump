@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify NAS Access Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_nas_access.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify NAS Access Options
 
-In this article
 
 [This step is available if you have selected the NAS filer check box at the [Specify Lenovo ThinkSystem Server Name or Address](lenovo_add_name.md) step of the wizard.]
 
@@ -42,6 +43,4 @@ After you finish working with the wizard, you can change the rescan scope and st
 
 ![Step 6. Specify NAS Access Options](images/lenovo_add_nas.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

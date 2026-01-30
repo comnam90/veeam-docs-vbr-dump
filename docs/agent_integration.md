@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Integration (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_integration.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Integration (Storage Systems)
 
-In this article
 
 Veeam Backup & Replication allows you to integrate your storage systems with Veeam Agent for Microsoft Windows installed on computers in your infrastructure. For more information, see [Backup from Storage Snapshots](agents_storage_systems.md).
 
@@ -33,6 +34,4 @@ Related Topics
 
 * [Universal Storage API Integrated Systems](universal_storage_integration_api.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

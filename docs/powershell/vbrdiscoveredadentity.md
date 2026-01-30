@@ -1,5 +1,7 @@
 ---
 title: "VBRDiscoveredADEntity"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrdiscoveredadentity.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRDiscoveredADEntity
 
-In this article
 
 Contains an Active Directory discovered object.
 
@@ -22,6 +23,4 @@ Related Commands
 
 [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

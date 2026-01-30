@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSureBackupJobVerificationOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsurebackupjobverificationoptions.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSureBackupJobVerificationOptions
 
-In this article
 
 Short Description
 
@@ -96,6 +97,4 @@ Examples
 | --- | --- |
 | This command defines the validation of backup files of VMs with a CRC check and enables antivirus scan of VMs from an application group.  |  | | --- | | New-VBRSureBackupJobVerificationOptions -EnableDiskContentValidation -DisableApplicationGroupMalwareScan:$False | |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

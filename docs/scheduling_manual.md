@@ -1,5 +1,7 @@
 ---
 title: "Manual Start of Backup Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/scheduling_manual.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manual Start of Backup Jobs
 
-In this article
 
 You can start jobs manually if you need to capture VM data at a specific point in time and do not want to re-configure job scheduling settings. For example, you can start a job to create a VM backup before you install new software on a VM or enable a new feature.
 
@@ -21,6 +22,4 @@ Related Topics
 
 [Starting and Stopping Jobs](jobs_start_stop.md)
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

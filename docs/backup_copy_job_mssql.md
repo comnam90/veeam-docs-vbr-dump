@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup Copy Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_job_mssql.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup Copy Job
 
-In this article
 
 To copy backups to a secondary location, you must configure a backup copy job. The backup copy job defines how, where and when to copy backups. One job can be used to process backups of one or more machines.
 
@@ -23,6 +24,4 @@ Before creating a job, [check prerequisites](backup_copy_prerequisites_mssql.md)
 6. [Define backup copy schedule](backup_copy_schedule_mssql.md).
 7. [Finish working with the wizard](backup_copy_summary_mssql.md).
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Policy Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_schedule.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Policy Schedule
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -51,6 +52,4 @@ For example, you have configured a policy to run with a 2-hour interval and defi
 
 ![Step 7. Specify Policy Schedule](images/mongo_policy_schedule.webp)
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

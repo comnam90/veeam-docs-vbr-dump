@@ -1,5 +1,7 @@
 ---
 title: "Using Veeam Backup Validator"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_validator_validate.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Veeam Backup Validator
 
-In this article
 
 Veeam Backup Validator is located on the backup server in the installation folder of Veeam Backup & Replication — by default, %ProgramFiles%\Veeam\Backup and Replication\Backup\Veeam.Backup.Validator.exe. If the default path was changed, you can find the actual path in the following registry value: [HKEY\_LOCAL\_MACHINE\SOFTWARE\Veeam\Veeam Backup and Replication] CorePath.
 
@@ -77,6 +78,4 @@ Examples
 | --- | --- |
 | This example shows how to validate the srv506 VM in the Exchange Backup Job backup file created after June 2, 2024, 9:00 PM.  |  | | --- | | $backup = Get-VBRBackup -Name "Exchange Backup Job"  $child\_backups = $backup.FindChildBackups()  $first\_child\_backup\_name = $child\_backups[0].Name  .\Veeam.Backup.Validator /backup:$first\_child\_backup\_name /date:02.06.2024 /time:21:00 /vmname:srv506 | |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

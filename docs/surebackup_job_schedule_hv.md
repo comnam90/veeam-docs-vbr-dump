@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Job Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_schedule_hv.html"
 last_updated: "8/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Job Schedule
 
-In this article
 
 At the Schedule step of the wizard, select to manually run the SureBackup job or schedule the job at specific time, for example, after the backup job completes. Keep in mind that SureBackup job will be stopped during synthetic operations (synthetic full backup, backup files merge and transformation) against the source backup chain, health check and replication session even if SureBackup job is scheduled to run.
 
@@ -33,6 +34,4 @@ To create a chain of jobs, you must define the time schedule for the first job i
 
 ![Step 8. Specify Job Schedule](images/surebackup_job_schedule.webp)
 
-Page updated 8/27/2024
 
-Page content applies to build 13.0.1.1071

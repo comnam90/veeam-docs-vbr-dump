@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_prerequisites.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a backup copy job, check the prerequisites and limitations:
 
@@ -17,6 +18,4 @@ Before you create a backup copy job, check the prerequisites and limitations:
 * If you plan to create backup copy job for a backup created with MongoDB Backup and target this backup copy job at the scale-out backup repository, note that Veeam Backup & Replication can store files of such backup copy job in the performance tier and capacity tier. The archive tier are not supported as a target for backup copies containing MongoDB backups.
 * Veeam Cloud Connect repositories are not supported as a target for backup copies containing MongoDB backups.
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

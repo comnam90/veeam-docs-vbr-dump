@@ -1,5 +1,7 @@
 ---
 title: "New-VBRRecoveryPointObjective"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrrecoverypointobjective_azure.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRRecoveryPointObjective
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command creates a backup copy interval. According to this interval the back
 | --- |
 | New-VBRRecoveryPointObjective -Value 3 -Unit Day -StartTime 22:00 |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Begin Installation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_summary.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Begin Installation
 
-In this article
 
 The Ready to Install step of the wizard is available if you have selected to configure installation settings manually.
 
@@ -19,6 +20,4 @@ At this step of the wizard, you can review the Veeam Backup & Replication instal
 
 ![Step 11. Begin Installation](images/installation_final.webp)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

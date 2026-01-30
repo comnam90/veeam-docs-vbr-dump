@@ -1,5 +1,7 @@
 ---
 title: "Block Generation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/block_gen.html"
 last_updated: "1/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Block Generation
 
-In this article
 
 To reduce I/O operations and associated costs, Veeam Backup & Replication will add several days to the immutability expiration date. This period is called Block Generation. You do not have to configure it, the Block Generation setting is applied automatically.
 
@@ -62,6 +63,4 @@ Related Topics
 * [Forward Incremental Backup](forward_incremental_backup.md)
 * [Reverse Incremental Backup](reversed_incremental_backup.md)
 
-Page updated 1/2/2025
 
-Page content applies to build 13.0.1.1071

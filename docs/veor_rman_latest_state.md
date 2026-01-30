@@ -1,5 +1,7 @@
 ---
 title: "Exporting Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_latest_state.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Latest State
 
-In this article
 
 To export a standalone database or Data Guard database as of the latest available state to the default location, do the following:
 
@@ -31,6 +32,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Export Summary Window](images/veor_export_summary.webp)](images/veor_export_summary.webp "Reviewing Export Summary Window")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

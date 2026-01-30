@@ -1,5 +1,7 @@
 ---
 title: "Limitations of Single-Host Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_vlab_limitations.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Limitations of Single-Host Virtual Labs
 
-In this article
 
 If VM replicas are located on different hosts, you cannot use the single-host virtual lab configuration (basic or advanced). A single-host virtual lab uses standard vSwitches that have specific configuration limitations.
 
@@ -21,6 +22,4 @@ For this reason, the single-host configuration can only be used if all VM replic
 
 To overcome this limitation and verify VM replicas that are registered on different ESXi hosts, you can use [advanced multi-host virtual labs](surereplica_advanced_mutihost.md).
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Secure Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_restore_av_vm.html"
 last_updated: "5/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Secure Restore Settings
 
-In this article
 
 This step is available if you restore disks of Microsoft Windows VMs.
 
@@ -52,6 +53,4 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 
 ![Step 5. Specify Secure Restore Settings](images/hard_disk_restore_av.webp)
 
-Page updated 5/1/2025
 
-Page content applies to build 13.0.1.1071

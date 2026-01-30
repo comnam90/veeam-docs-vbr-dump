@@ -1,5 +1,7 @@
 ---
 title: "NFS and SMB (CIFS) Protocols"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_backup_netapp_nfs.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NFS and SMB (CIFS) Protocols
 
-In this article
 
 [For VMware, NAS integration] If the NetApp storage system operates over SMB (CIFS) (for NAS integration) or over NFS (both for VMware and NAS integration), you do not have to install any additional licenses to use backup from storage snapshots.
 
@@ -31,6 +32,4 @@ Requirements for SMB (CIFS) Protocol
 * Permissions for access to the SMB share are properly configured. To ensure that, login to your NetApp Ontap System Manager, select the SMB share in Storage – Shares, click Edit to open share settings, and configure permissions in the Permissions tab.
 * The snapshot directory (~snapshot) is visible in the SMB share. To ensure that, login to your NetApp Ontap System Manager, select the SMB share in Storage – Shares, click Edit to open share settings, and select the Show Snapshots check box in the Options tab.
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

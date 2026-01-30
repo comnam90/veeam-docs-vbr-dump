@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_server_credentials_web.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials and port settings for the VMware vSphere server.
 
@@ -36,6 +37,4 @@ If the certificate installed on the server is not trusted, Veeam Backup & Replic
 
 [![Step 3. Specify Credentials](images/add_server_vmware_certificate_web.webp)](images/add_server_vmware_certificate_web.webp)
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

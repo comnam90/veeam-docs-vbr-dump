@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Schedule Switch to Production VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_switch_schedule.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Schedule Switch to Production VMs
 
-In this article
 
 At the Failback Mode step of the wizard, specify when switch from replicas to production VMs must be performed:
 
@@ -19,6 +20,4 @@ If you select the Scheduled or Manual option, you can further reset/set the sche
 
 ![Step 10. Schedule Switch to Production VMs](images/failback_11_schedule.webp "Schedule switching to production")
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

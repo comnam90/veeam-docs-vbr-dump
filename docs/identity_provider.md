@@ -1,5 +1,7 @@
 ---
 title: "SAML Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SAML Authentication
 
-In this article
 
 Veeam Backup & Replication supports single sign-on authentication based on the SAML 2.0 protocol. Enterprise organizations that use a single sign-on (SSO) service in their IT infrastructure can extend single sign-on capabilities to Veeam Backup & Replication. A user of the organization logged in to the single sign-on service can access Veeam Backup & Replication if their account was added by the Veeam Backup Administrator.
 
@@ -70,6 +71,4 @@ After you configure SAML authentication, you can add external users or groups to
 
 ![SAML Authentication](images/saml_add_external_user.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Swap Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/swap_files_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Swap Files
 
-In this article
 
 You can instruct Veeam Backup & Replication to exclude pagefile.sys and hiberfil.sys files from backups or replicas of Microsoft Windows VMs. As a result, the size of incremental backups and replicas will be smaller.
 
@@ -35,6 +36,4 @@ Related Topics
 * [Configure swap file exclusion for backup jobs](backup_job_advanced_storage_hv.md)
 * [Configure swap file exclusion for replication jobs](replica_advanced_traffic_hv.md)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

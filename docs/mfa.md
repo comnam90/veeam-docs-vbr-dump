@@ -1,5 +1,7 @@
 ---
 title: "Multi-Factor Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mfa.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Multi-Factor Authentication
 
-In this article
 
 Veeam Backup & Replication supports multi-factor authentication (MFA) for additional user verification. A one-time password (OTP) generated in a mobile authenticator application is used as a second verification method. Combined with login and password credentials, it creates a more secure environment and protects user accounts from being compromised.
 
@@ -123,6 +124,4 @@ To disable the feature for service accounts:
 
 ![Multi-Factor Authentication](images/mfa_disable_service_account.webp)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

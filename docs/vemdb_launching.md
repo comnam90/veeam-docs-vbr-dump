@@ -1,5 +1,7 @@
 ---
 title: "Launching Application"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_launching.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Application
 
-In this article
 
 To open Veeam Explorer for MongoDB, you can use either of the following methods:
 
@@ -43,6 +44,4 @@ In This Section
 
 [Getting to Know User Interface](vemdb_know_ui.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

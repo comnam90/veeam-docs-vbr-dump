@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Fine-Tune Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ptsr_fine_tune.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Fine-Tune Restore Point
 
-In this article
 
 At this step of the wizard, select an operation prior to which you want to publish your database.
 
@@ -18,6 +19,4 @@ At this step of the wizard, select an operation prior to which you want to publi
 
 [![Fine-Tuning Restore Point](images/veor_fine_tune.webp)](images/veor_fine_tune.webp "Fine-Tuning Restore Point")
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_tas.html"
 last_updated: "8/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to Another Server
 
-In this article
 
 To restore an SAP HANA tenant database to another server, use the Restore wizard.
 
@@ -25,6 +26,4 @@ To restore an SAP HANA tenant database to another server, use the Restore wizard
 7. [Select a backup](vehana_restore_single_tas_select_backup.md).
 8. [Specify the SYSTEM user password](vehana_restore_single_tas_specify_password.md).
 
-Page updated 8/22/2023
 
-Page content applies to build 13.0.1.1071

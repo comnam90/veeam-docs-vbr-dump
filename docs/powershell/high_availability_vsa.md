@@ -1,5 +1,7 @@
 ---
 title: "High Availability Cluster"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/high_availability_vsa.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # High Availability Cluster
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -20,6 +21,4 @@ You can use the cmdlets in this topic to perform the following operations:
 | [Start-VBRHighAvailabilityClusterFailover](start-vbrhighavailabilityclusterfailover.md) | Starts failover of an HA cluster. |
 | [Start-VBRHighAvailabilityClusterSwitchover](start-vbrhighavailabilityclusterswitchover.md) | Starts switchover of an HA cluster. |
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

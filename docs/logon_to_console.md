@@ -1,5 +1,7 @@
 ---
 title: "Logging in to Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/logon_to_console.html"
 last_updated: "10/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Logging in to Veeam Backup & Replication
 
-In this article
 
 To log in to Veeam Backup & Replication, you must open the Veeam Backup & Replication console and specify connection settings to access the backup server.
 
@@ -56,6 +57,4 @@ Related Topics
 * [Veeam Backup & Replication Web UI](vbr_web_console.md)
 * [Installing Veeam Backup & Replication Console](install_console.md)
 
-Page updated 10/29/2025
 
-Page content applies to build 13.0.1.1071

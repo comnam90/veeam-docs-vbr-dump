@@ -1,5 +1,7 @@
 ---
 title: "Creating Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_custom_media_pools.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Media Pools
 
-In this article
 
 To create a media pool, use the New Media Pool wizard or New WORM Media Pool wizard. This section will guide you through all steps of the wizard and provide explanation on available options.
 
@@ -19,6 +20,4 @@ To create a media pool, use the New Media Pool wizard or New WORM Media Pool wiz
 6. [Add optional media pool settings](add_media_pool_encryption.md).
 7. [Finish working with the wizard](add_media_pool_review.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

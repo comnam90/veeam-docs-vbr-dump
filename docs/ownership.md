@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In Ownership"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ownership.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In Ownership
 
-In this article
 
 To manage Veeam Plug-Ins on target computers, you must make Veeam Backup & Replication the owner of these Veeam Plug-Ins. To do this, perform one of the following operations from Veeam Backup & Replication console:
 
@@ -76,6 +77,4 @@ To reset the ownership, on the computer with Veeam Plug-In, you must do one of t
 
 In case of Windows-based servers, you must also delete certificates from the Microsoft Windows certificate store.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

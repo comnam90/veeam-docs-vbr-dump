@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Verify Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_review_hv_web.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,12 +9,9 @@ product_version: "13.0.1.1071"
 
 # Step 9. Verify Restore Settings
 
-In this article
 
 At the Summary step of the wizard, check restore settings and click Finish. If you want to start the recovered VMs on the target host, select the Power on VM after restoring check box.
 
 [![Check Settings - Web UI](images/full_restore_review_hv_web.webp)](images/full_restore_review_hv_web.webp "Check Settings - Web UI")
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

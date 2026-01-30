@@ -1,5 +1,7 @@
 ---
 title: "Data Recovery (All Platforms)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_recovery_all.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Recovery (All Platforms)
 
-In this article
 
 Veeam Backup & Replication provides platform-specific data recovery methods as well as platform-independent methods:
 
@@ -23,6 +24,4 @@ Related Topics
 * [Unstructured Data Recovery](unstructured_data_recovery.md)
 * [VM Restore from Tape to Infrastructure](vm_restore_from_tape.md)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Automatic Startup Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_schedule_hv.html"
 last_updated: "2/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Automatic Startup Schedule
 
-In this article
 
 To run a job periodically without user intervention, you can schedule the job to start automatically. The Veeam Backup Service running on the backup server continuously checks the configuration settings of all jobs configured on the backup server and starts them according to their schedule.
 
@@ -83,6 +84,4 @@ Imagine that Job 1 starts on Saturday and runs for 2.5 hours instead of 1 hour. 
 
 Instead of job chaining, you can balance the load on backup infrastructure components. To do this, you must limit the number of concurrent tasks on backup proxies and backup repositories. For more information, see [Limitation of Concurrent Tasks](limiting_tasks.md).
 
-Page updated 2/12/2025
 
-Page content applies to build 13.0.1.1071

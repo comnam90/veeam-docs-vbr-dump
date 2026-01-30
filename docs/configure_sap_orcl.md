@@ -1,5 +1,7 @@
 ---
 title: "Configuring Veeam Plug-In for SAP on Oracle"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configure_sap_orcl.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Veeam Plug-In for SAP on Oracle
 
-In this article
 
 When you configure Veeam Plug-In settings, you set up integration settings between the SAP on Oracle server, Veeam Backup & Replication server and backup repositories where backup files will be stored.
 
@@ -147,6 +148,4 @@ The following example shows how to specify credentials that will be used to log 
 | --- |
 | SapOracleBackintConfigTool --set-credentials "serv02\Administrator" "password" |
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

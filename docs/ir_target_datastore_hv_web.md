@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Target Datastores"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_target_datastore_hv_web.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Target Datastores
 
-In this article
 
 The Datastore step of the wizard is available if you have selected Restore to a new location or with different settings at the [Restore Mode](ir_mode_hv_web.md) step.
 
@@ -26,6 +27,4 @@ At the Datastore step of the wizard, specify a path to the folder where VM confi
 
 [![Select Datastore - Web UI](images/ir_target_datastore_hv_web.webp)](images/ir_target_datastore_hv_web.webp "Select Datastore - Web UI")
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

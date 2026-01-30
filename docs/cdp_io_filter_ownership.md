@@ -1,5 +1,7 @@
 ---
 title: "Taking I/O Filter Ownership"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_ownership.html"
 last_updated: "8/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Taking I/O Filter Ownership
 
-In this article
 
 After the backup server finishes installation of the I/O filter on a cluster, the backup server becomes the owner of the I/O filter and its components.
 
@@ -17,6 +18,4 @@ If the I/O filter is managed by another client, you will see a warning when tryi
 
 ![Taking I/O Filter Ownership](images/cdp_io_filter_ownership.webp)
 
-Page updated 8/25/2023
 
-Page content applies to build 13.0.1.1071

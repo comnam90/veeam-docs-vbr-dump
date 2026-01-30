@@ -1,5 +1,7 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_used_ports.html"
 last_updated: "12/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ports
 
-In this article
 
 The following links lead to tables that list network ports that must be opened to ensure proper communication of components in the Veeam Plug-In management infrastructure.
 
@@ -41,6 +42,4 @@ The following sections describe network ports that must be opened to enable prop
 * [Veeam Plug-In for SAP on Oracle](ports_sap_orcl.md)
 * [Veeam Plug-In for Microsoft SQL Server](ports_mssql.md)
 
-Page updated 12/18/2025
 
-Page content applies to build 13.0.1.1071

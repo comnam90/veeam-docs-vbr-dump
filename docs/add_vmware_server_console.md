@@ -1,5 +1,7 @@
 ---
 title: "Adding VMware vSphere Server Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_vmware_server_console.html"
 last_updated: "9/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding VMware vSphere Server Using Console
 
-In this article
 
 This section describes how to add a VMware vSphere server as a backup infrastructure component.
 
@@ -19,6 +20,4 @@ To add a VMware vSphere server using the Veeam Backup & Replication console, use
 4. [Apply settings](vmware_server_apply.md).
 5. [Finish working with the wizard](vmware_server_summary.md).
 
-Page updated 9/29/2025
 
-Page content applies to build 13.0.1.1071

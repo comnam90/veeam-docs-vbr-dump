@@ -1,5 +1,7 @@
 ---
 title: "Viewing Session Statistics and Results"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_session.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Session Statistics and Results
 
-In this article
 
 Veeam Backup & Replication allows you to view real-time statistics and session results for a workload added to a CDP policy:
 
@@ -83,6 +84,4 @@ If the session is still being performed, you can click the graph to view data ra
 
 The colored graph is displayed only for the currently running session or the latest finished session. If you open statistics for past sessions other than the latest one, the colored graph will not be displayed.
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

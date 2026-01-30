@@ -1,5 +1,7 @@
 ---
 title: "VBRNDMPVolume"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrndmpvolume.html"
 last_updated: "7/28/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNDMPVolume
 
-In this article
 
 Contains NDMP server volumes.
 
@@ -22,6 +23,4 @@ Related Commands
 
 [Get-VBRNDMPVolume](get-vbrndmpvolume.md)
 
-Page updated 7/28/2023
 
-Page content applies to build 13.0.1.1071

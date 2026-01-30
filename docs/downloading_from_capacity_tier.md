@@ -1,5 +1,7 @@
 ---
 title: "Downloading Data from Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/downloading_from_capacity_tier.html"
 last_updated: "10/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Downloading Data from Capacity Tier
 
-In this article
 
 In Veeam Backup & Replication, you can manually download offloaded backups back to the performance extents. You can download one backup at a time using the Copy to Performance Tier option, or get all offloaded backups in bulk using the Download feature.
 
@@ -74,6 +75,4 @@ Related Topics
 * [Backup Chain Detection](capacity_tier_inactive_backup_chain.md)
 * [Viewing Capacity Tier Sessions Statistics](offload_session_results.md)
 
-Page updated 10/2/2024
 
-Page content applies to build 13.0.1.1071

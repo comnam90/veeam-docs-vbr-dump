@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Storage Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_storage.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Storage Policies
 
-In this article
 
 The Storage Policy step is available if you have selected the Failback to the specified location option at the Destination step.
 
@@ -18,6 +19,4 @@ At the Storage Policy step of the wizard, specify storage policies that Veeam Ba
 
 ![Step 5. Specify Storage Policies](images/vcd_failback_storage_policy.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

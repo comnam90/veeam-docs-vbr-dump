@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Review Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_review.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Review Restore Settings
 
-In this article
 
 At the Restore step of the wizard, Veeam Backup & Replication will display the progress on the restore process. Wait for the restore process to complete and click Next.
 
@@ -21,6 +22,4 @@ If you have chosen to restore data in the Migrate mode and the configuration bac
 
 For more information, see [Migrating Veeam Backup & Replication to Another Backup Server](vbr_config_migrate.md).
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Access Permissions for Direct Connection to Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage_direct_access.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Access Permissions for Direct Connection to Object Storage
 
-In this article
 
 If you back up data using a direct connection between the Veeam Agent computer and the object storage, access to the object storage will be managed by an API provided by this object storage. Depending on the selected object storage, access permissions are distributed differently. As a result, you must consider different limitations for the following types of object storage:
 
@@ -113,6 +114,4 @@ To learn more, see [Managing Permissions for S3 Compatible Object Storage](acces
 
 * User accounts that you use to connect to the S3 compatible storage have the required permissions. To learn more, see [Permissions](agents_permissions.md#s3).
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

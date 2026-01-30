@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRvCDReplicaJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrvcdreplicajob.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRvCDReplicaJob
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 
 [Get-VBRvCDReplicaJob](get-vbrcdppolicy.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

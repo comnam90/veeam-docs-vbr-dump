@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBRWindowsGuestItemRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrwindowsguestitemrestore.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBRWindowsGuestItemRestore
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Perform the following steps:
 
 1. Run the Stop-VBRWindowsGuestItemRestore cmdlet. Set the $restoresession variable as the ItemSession parameter value.
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

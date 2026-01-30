@@ -1,5 +1,7 @@
 ---
 title: "Upgrade Checklist"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrade Checklist
 
-In this article
 
 Use the following checklist to ensure your infrastructure is ready for the Veeam Backup & Replication upgrade. The built-in configuration check mechanism of the Veeam Backup & Replication Upgrade wizard performs some of the checks. Still, you can control them manually before starting the upgrade procedure.
 
@@ -125,6 +126,4 @@ Upgrade Process
 7. Perform the configuration backup, as described in [Running Configuration Backups Manually](vbr_config_manually.md).
 8. Ensure you have configuration backup encryption enabled, otherwise stored credentials will not be included in it. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md).
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

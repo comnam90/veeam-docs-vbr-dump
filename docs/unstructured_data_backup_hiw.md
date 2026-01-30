@@ -1,5 +1,7 @@
 ---
 title: "How Unstructured Data Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_hiw.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Unstructured Data Backup Works
 
-In this article
 
 Veeam Backup & Replication performs backup of unstructured data to the backup storage in the following way:
 
@@ -38,6 +39,4 @@ In This Section
 * [Scale-Out Repository with Extents in Metadata and Data Roles](unstructured_data_backup_sobr_extent_roles.md)
 * [File Backup Integration with Storage Systems](storage_snapshot_integration.md)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

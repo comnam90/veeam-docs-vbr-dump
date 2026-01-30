@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_point_vm.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Restore Points
 
-In this article
 
 By default, Veeam Backup & Replication uses the latest valid restore point. However, you can restore the VM to an earlier state. If you have chosen to restore several VMs, you can select the necessary restore point for each VM in the list.
 
@@ -24,6 +25,4 @@ Related Topics
 * [Backup Repository](backup_repository.md)
 * [Object Storage Repository](object_storage_repository.md)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Publish-StoragePluginArchivedSnapshot"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/publish-storagepluginarchivedsnapshot.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publish-StoragePluginArchivedSnapshot
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 
 [Get-StoragePluginArchivedSnapshot](get-storagepluginarchivedsnapshot.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

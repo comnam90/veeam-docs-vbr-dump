@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSimpleRetentionPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsimpleretentionpolicy_azure.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSimpleRetentionPolicy
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ This command creates a retention policy for a backup copy job. The target backup
 | --- |
 | New-VBRSimpleRetentionPolicy -RestorePoints 5 |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

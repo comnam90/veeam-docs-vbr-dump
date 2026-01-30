@@ -1,5 +1,7 @@
 ---
 title: "Snapshot Orchestration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/schedule_snapshots.html"
 last_updated: "6/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Snapshot Orchestration
 
-In this article
 
 Veeam Backup & Replication lets you perform snapshot orchestration — build a snapshot chain on primary and secondary storage arrays. To create only long-term snapshots on storage arrays, you can run a snapshot-only job.
 
@@ -22,6 +23,4 @@ Related Topics
 * [Configuring Snapshot-Only Jobs](snapshot_only_job_perform.md)
 * [General Limitations](storage_limitations_general.md)
 
-Page updated 6/6/2024
 
-Page content applies to build 13.0.1.1071

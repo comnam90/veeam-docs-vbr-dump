@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch File Level Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_launch_vm.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch File Level Restore Wizard
 
-In this article
 
 To launch the File Level Restore wizard, do one of the following:
 
@@ -18,6 +19,4 @@ To launch the File Level Restore wizard, do one of the following:
 
 [![Step 1. Launch File Level Restore Wizard](images/guest_files_restore_task.webp)](images/guest_files_restore_task.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

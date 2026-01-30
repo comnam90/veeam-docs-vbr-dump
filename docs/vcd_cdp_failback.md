@@ -1,5 +1,7 @@
 ---
 title: "Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback
 
-In this article
 
 Failback is an option that allows you to switch back from the replicated vApp on a disaster recovery organization VDC to the production vApp. When you perform failback, you switch back to the production VM from a VM replica, shift I/O processes from the disaster recovery site to the production site.
 
@@ -74,6 +75,4 @@ In This Section
 * [Switching to Production vApps Manually](vcd_cdp_failback_switch.md)
 * [Performing Failback Retry](vcd_cdp_failback_retry.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

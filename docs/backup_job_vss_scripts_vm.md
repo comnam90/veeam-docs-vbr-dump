@@ -1,5 +1,7 @@
 ---
 title: "Pre-Freeze and Post-Thaw Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_scripts_vm.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Pre-Freeze and Post-Thaw Scripts
 
-In this article
 
 If you plan to back up VMs running applications that do not support VSS, you can specify what scripts Veeam Backup & Replication must use to quiesce the VM. The pre-freeze script quiesces the VM file system and application data to bring the VM to a consistent state before Veeam Backup & Replication triggers a VM snapshot. After the VM snapshot is created, the post-thaw script brings the VM and applications to their initial state.
 
@@ -32,6 +33,4 @@ If you have added a VM container with Microsoft Windows and Linux VMs to the job
 
 ![Pre-Freeze and Post-Thaw Scripts](images/vm_backup_job_vss_pre-post.webp)
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "SMTP Server with Basic Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_configuring_smtp.html"
 last_updated: "9/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SMTP Server with Basic Authentication
 
-In this article
 
 To configure sending Microsoft Teams posts and files as attachments using an SMTP server with basic authentication, do the following:
 
@@ -38,6 +39,4 @@ By default, Veeam Explorer for Microsoft Teams establishes a connection to the s
 
 [![Configuring Mail Settings](images/teams_smtp.webp)](images/teams_smtp.webp "Configuring Mail Settings")
 
-Page updated 9/24/2024
 
-Page content applies to build 13.0.1.1071

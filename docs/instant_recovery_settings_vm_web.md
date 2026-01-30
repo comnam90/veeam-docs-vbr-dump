@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Configure VM Settings and Folders"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_settings_vm_web.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Configure VM Settings and Folders
 
-In this article
 
 The Folder step of the wizard is available if you have selected Restore to a new location or with different settings at the [Restore Mode](instant_recovery_mode_vm_web.md) step.
 
@@ -33,6 +34,4 @@ To change names and UUIDs:
 
 [![Configure VM Settings - Web UI](images/instant_recovery_settings_vm_web.webp)](images/instant_recovery_settings_vm_web.webp "Configure VM Settings - Web UI")
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_advanced_main_linux.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 You can specify maintenance settings for a backup chain created with the Veeam Agent backup job managed by the backup server. Maintenance operations help make sure that the backup chain remains valid and consistent.
 
@@ -47,6 +48,4 @@ If the full backup file contains data blocks for deleted items (protection group
 
 ![Maintenance Settings](images/agent_job_settings_maintain_linux.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

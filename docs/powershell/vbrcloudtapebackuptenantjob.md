@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudTapeBackupTenantJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudtapebackuptenantjob.html"
 last_updated: "7/28/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudTapeBackupTenantJob
 
-In this article
 
 Contains cloud tenant jobs.
 
@@ -22,6 +23,4 @@ Related Commands
 
 [Get-VBRCloudTapeBackupTenantJob](get-vbrcloudtapebackuptenantjob.md)
 
-Page updated 7/28/2023
 
-Page content applies to build 13.0.1.1071

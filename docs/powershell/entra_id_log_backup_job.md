@@ -1,5 +1,7 @@
 ---
 title: "Log Backup Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/entra_id_log_backup_job.html"
 last_updated: "11/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Log Backup Jobs
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Set-VBREntraIDLogsBackupJob](set-vbrentraidlogsbackupjob.md) | Modifies a Microsoft Entra ID log backup job. |
 | [Remove-VBREntraIDLogsBackupJob](remove-vbrentraidlogsbackupjob.md) | Removes Microsoft Entra ID log backup jobs. |
 
-Page updated 11/13/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Planned Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failover_planned.html"
 last_updated: "7/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Planned Failover
 
-In this article
 
 Planned failover is a process when you manually launch switching from a source VM to its replica with minimum interruption in operation. Planned failover is helpful when you know that your production VMs are about to go offline and you need to proactively switch the workload from the source VMs to their replicas. You can use the planned failover, for example, if you plan to perform datacenter migration, maintenance or software upgrade of the production VMs. You can also perform planned failover if you have noticed some signs of the approaching disaster.
 
@@ -38,6 +39,4 @@ Failover is an intermediate step that needs to be finalized. You can perform the
 * [Perform permanent failover](cdp_permanent_failover.md).
 * [Perform failback](cdp_failback.md).
 
-Page updated 7/30/2024
 
-Page content applies to build 13.0.1.1071

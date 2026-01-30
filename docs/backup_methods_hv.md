@@ -1,5 +1,7 @@
 ---
 title: "Backup Methods"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_methods_hv.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Methods
 
-In this article
 
 Veeam Backup & Replication provides the following methods for creating backup chains:
 
@@ -65,6 +66,4 @@ Related Topics
 * [Backup Chain Formats](per_vm_backup_files_hv.md)
 * [Creating Backup Jobs](backup_job_hv.md)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

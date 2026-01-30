@@ -1,5 +1,7 @@
 ---
 title: "Restore of Control File from Autobackup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/controlfile_restore.html"
 last_updated: "3/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore of Control File from Autobackup
 
-In this article
 
 You may need to restore the Oracle database control file in the following cases:
 
@@ -52,6 +53,4 @@ If you did not find an example that suits your needs, refer to Oracle documentat
 * For details on restoring the control file, see [this Oracle article](https://docs.oracle.com/cd/B19306_01/backup.102/b14192/recov004.htm#CFABADJC).
 * For details on the control file autobackup format, see [this Oracle article](https://docs.oracle.com/cd/B19306_01/backup.102/b14192/setup004.htm#i1017907).
 
-Page updated 3/28/2025
 
-Page content applies to build 13.0.1.1071

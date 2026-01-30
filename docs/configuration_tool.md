@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Configuration Tool"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuration_tool.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Configuration Tool
 
-In this article
 
 Veeam Backup & Replication comes with the Veeam.Backup.Configuration.Tool.exe utility that allows you to manage BCO files. BCO files are backup files that contain backups of configuration databases. Veeam Backup & Replication creates these files when it performs configuration backup. For more information on configuration backup, see [Managing Configuration Database](vbr_config.md).
 
@@ -23,6 +24,4 @@ You can use the Veeam Backup Configuration tool in the following scenarios:
 | Note |
 | If you back up the configuration database using the Veeam Backup Configuration tool, you will not be able to choose the backup repository in which the configuration backup must be stored and the necessary retention settings. Veeam Backup & Replication will keep last 10 restore points of the configuration backup in the default backup repository. If you want to change these setting, see the [Scheduling Configuration Backups](vbr_config_schedule.md) section. |
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

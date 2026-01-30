@@ -1,5 +1,7 @@
 ---
 title: "On-Demand Sandbox for Microsoft Hyper-V"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sandbox_hv.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # On-Demand Sandbox for Microsoft Hyper-V
 
-In this article
 
 If you need to perform tests for production VMs, you can use an On-Demand SandboxTM. The On-Demand Sandbox is an isolated virtual environment where you can start one or more VMs from backups. You can use the On-Demand Sandbox to perform the following tasks:
 
@@ -27,6 +28,4 @@ Related Topics
 
 [Configuring On-Demand Sandbox](sandbox_configure_hv.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

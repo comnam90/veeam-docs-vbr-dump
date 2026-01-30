@@ -1,5 +1,7 @@
 ---
 title: "How YARA Scan Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/scan_backup_yara_hiw.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How YARA Scan Works
 
-In this article
 
 During the Scan Backup session, the YARA scan works in the following way:
 
@@ -36,6 +37,4 @@ In this case, the malware detection event will not be created but the Scan Backu
 
 In both cases, the malware detection event will not be created.
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

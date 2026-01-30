@@ -1,5 +1,7 @@
 ---
 title: "Creating Application Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_create.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Application Backup Policy
 
-In this article
 
 To back up MongoDB data, you must configure an application backup policy in Veeam Backup & Replication.
 
@@ -22,6 +23,4 @@ Before configuring an application backup policy, [check prerequisites](mongo_pol
 7. [Specify the backup schedule](mongo_policy_schedule.md).
 8. [Review backup policy settings](mongo_policy_summary.md).
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

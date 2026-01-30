@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Workloads and Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_virtual_machines.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Workloads and Restore Points
 
-In this article
 
 At the Virtual Machines step of the wizard, specify the workload that you plan to restore and specify a restore point to which you want to restore the workload. By default, Veeam Backup & Replication restores workloads to the latest valid restore point in the backup chain.
 
@@ -30,6 +31,4 @@ To select a restore point, for a workload do the following:
 
 ![Step 2. Select Workloads and Restore Points](images/restore_google_virtual_machines_restore_point.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

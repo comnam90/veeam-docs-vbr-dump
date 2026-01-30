@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Finalize Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_save_vm_web.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Finalize Recovery
 
-In this article
 
 You can recover files and folders to the original location, download files to the machine where the web UI is opened and review which files were recovered.
 
@@ -40,6 +41,4 @@ To view the list of files that were recovered, navigate to the Audit tab on the 
 
 [![See Audit Information - Web UI](images/guest_restore_save_audit_web.webp)](images/guest_restore_save_audit_web.webp "See Audit Information - Web UI")
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

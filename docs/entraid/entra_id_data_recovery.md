@@ -1,5 +1,7 @@
 ---
 title: "Performing Restore"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_data_recovery.html"
 last_updated: "4/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Restore
 
-In this article
 
 Entra ID offers the following restore operations:
 
@@ -17,6 +18,4 @@ Entra ID offers the following restore operations:
 
 You can restore tenant data to the most recent state or to any available restore point.
 
-Page updated 4/25/2025
 
-Page content applies to build 13.0.1.1071

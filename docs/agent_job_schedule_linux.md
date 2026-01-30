@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Specify Backup Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_schedule_linux.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Specify Backup Schedule
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -53,6 +54,4 @@ For example, you have configured a job to run with a 2-hour interval and defined
 
 ![Step 12. Specify Backup Schedule](images/agent_job_schedule_linux.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

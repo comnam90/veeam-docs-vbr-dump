@@ -1,5 +1,7 @@
 ---
 title: "Sync-VBRObjectToTapeJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-vbrobjecttotapejob.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sync-VBRObjectToTapeJob
 
-In this article
 
 Short Description
 
@@ -87,6 +88,4 @@ Related Commands
 
 [Get-VBRTapeJob](get-vbrtapejob.md)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Deleting from Disk"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_deleting.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting from Disk
 
-In this article
 
 When you delete replicas from disks, Veeam Backup & Replication removes the replicas not only from the Veeam Backup & Replication console and configuration database, but also from host storage.
 
@@ -24,6 +25,4 @@ To delete replica files from disks:
 
 [![Cloud Director - Replica Delete From Disk](images/vcd_replica-delete_from_disk.webp)](images/vcd_replica-delete_from_disk.webp "Cloud Director - Replica Delete From Disk")
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

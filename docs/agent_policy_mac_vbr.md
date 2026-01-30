@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_mac_vbr.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Repository Settings
 
-In this article
 
 If you have chosen to store backup files on a Veeam backup repository, specify settings to connect to the backup repository:
 
@@ -50,6 +51,4 @@ You can enable this option only if a backup copy job or backup to tape job is al
 
 ![Veeam Backup Repository Settings](images/agent_policy_vbr_repo_mac.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

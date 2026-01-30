@@ -1,5 +1,7 @@
 ---
 title: "Removing Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_remove.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Protection Group
 
-In this article
 
 When you remove a protection group, you can instruct Veeam Backup & Replication to remove Veeam components from all protected computers included in this protection group, too. The protection group is removed permanently. You cannot undo this operation.
 
@@ -33,6 +34,4 @@ To remove a protection group:
 
 [![Remove Protection Group](images/mongo_protection_group_remove.webp)](images/mongo_protection_group_remove.webp "Remove Protection Group")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

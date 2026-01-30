@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRDownloadBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrdownloadbackup.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRDownloadBackup
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 
 [Get-VBRBackup](get-vbrbackup.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_cloud_machines_before.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before creating a protection group, consider the following prerequisites and limitations:
 
@@ -34,6 +35,4 @@ Before creating a protection group, consider the following prerequisites and lim
 * You can store backups of cloud machines only in the object repository located on the same external cloud storage as the cloud machines you want to back up.
 * Scale-out backup repositories and Veeam Cloud Connect repositories are not supported as a backup destination for cloud machines.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Object Storage Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/google_cloud_repository_account.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Object Storage Account
 
-In this article
 
 At the Account step of the wizard, specify Google Cloud credentials and connection settings that Veeam Backup & Replication will use to transfer data to the object storage repository.
 
@@ -27,6 +28,4 @@ By default, the role of a gateway server is assigned to the Veeam Backup & Repli
 
 ![Step 3. Specify Object Storage Account](images/google_cloud_account.webp)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

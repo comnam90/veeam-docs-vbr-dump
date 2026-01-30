@@ -1,5 +1,7 @@
 ---
 title: "VM Tags"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_tags.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Tags
 
-In this article
 
 If you use vCenter Server tags to categorize objects in the virtual infrastructure, you can filter objects that you add to data protection and disaster recovery jobs and tasks by these tags. Use of tags facilitates object management. You can quickly configure jobs and tasks for VMs that belong to a specific category, for example, a certain department or SLA level.
 
@@ -44,6 +45,4 @@ Veeam Backup & Replication ignores the cardinality setting for VM tag categories
 
 To overcome this situation, you can add to the list of exclusions the tag assigned to objects that you do not want to process.
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_mount_server.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Mount Server Settings
 
-In this article
 
 At the Mount Server step of the wizard, specify settings for the mount server that you plan to use for restore operations, and configure a helper appliance. The helper appliance is a temporary EC2 instance that Veeam Backup & Replication deploys in your Amazon EC2, to perform a health check of backup files and apply retention to unstructured data backup files. For more information, see [Health Check for Object Storage Repositories](health_check_os.md) and [Helper Appliance in Unstructured Data Backup](unstructured_data_backup_in_object_storage.md#helper). After Veeam Backup & Replication completes these operations, it removes the helper appliance from Amazon EC2.
 
@@ -64,6 +65,4 @@ To be able to select the necessary security group from the drop-down list, you m
 
 ![Step 5. Specify Mount Server Settings](images/s3_add_helper_appliance.webp "Specify S3 Object Storage Mount Server")
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

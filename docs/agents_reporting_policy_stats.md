@@ -1,5 +1,7 @@
 ---
 title: "Viewing Backup Policy Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_policy_stats.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Backup Policy Statistics
 
-In this article
 
 You can view statistics about Veeam Agent backup jobs configured in Veeam Backup & Replication. For Veeam Agent backup jobs managed by Veeam Agent, or backup policies, Veeam Backup & Replication displays statistics in the following way:
 
@@ -43,6 +44,4 @@ For more information about backup of Microsoft SQL Server transaction logs, see 
 
 [![Backup Policy Statistics](images/statistics_policy.webp)](images/statistics_policy.webp "Backup Policy Statistics")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

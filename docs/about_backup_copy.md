@@ -1,5 +1,7 @@
 ---
 title: "About Backup Copy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/about_backup_copy.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # About Backup Copy
 
-In this article
 
 With backup copy, you can create several instances of the same backup file and copy them to secondary (target) backup repositories for long-term storage. Target backup repositories can be located in the same site as the source backup repository or can be deployed off-site. The backup copy file has the same format as the primary backup, so you can restore necessary data directly from it in case of a disaster.
 
@@ -51,6 +52,4 @@ Related Topics
 * [Creating Backup Copy Jobs for HPE StoreOnce Repositories](backup_copy_hpe_storeonce.md)
 * [Creating Backup Copy Jobs for Veeam Plug-Ins](backup_copy_plugins.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

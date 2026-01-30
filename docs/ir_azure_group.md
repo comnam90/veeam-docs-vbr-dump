@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Resource Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_group.html"
 last_updated: "6/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Resource Group
 
-In this article
 
 At the Resource Group step of the wizard, you can select resource groups for the recovered VMs. By default, Veeam Backup & Replication creates a new resource group for the recovered VMs and places them in it.
 
@@ -28,6 +29,4 @@ In the new resource group, Veeam Backup & Replication automatically creates a ne
 
 ![Step 6. Specify Resource Group](images/ir_azure_group.webp)
 
-Page updated 6/30/2025
 
-Page content applies to build 13.0.1.1071

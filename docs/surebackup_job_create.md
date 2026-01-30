@@ -1,5 +1,7 @@
 ---
 title: "Creating SureBackup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_create.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating SureBackup Job
 
-In this article
 
 To create a new SureBackup job, use the New SureBackup Job wizard.
 
@@ -52,6 +53,4 @@ To create a new SureBackup job, use the New SureBackup Job wizard.
 
 1. Click Finish
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

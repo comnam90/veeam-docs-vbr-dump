@@ -1,5 +1,7 @@
 ---
 title: "Job Priorities"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_priorities.html"
 last_updated: "9/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Job Priorities
 
-In this article
 
 Resources in the backup infrastructure are limited. To make sure that the most crucial jobs are the first to get free resources to provide the reliable data protection, Veeam Backup & Replication uses the system of priorities to allocate resources to different jobs.
 
@@ -45,6 +46,4 @@ The resource scheduler within Veeam Backup & Replication uses several stages to 
 
 You can check the job type and priority of a certain job in service logs. For more information on logs, see [Managing Logs](logging.md).
 
-Page updated 9/30/2025
 
-Page content applies to build 13.0.1.1071

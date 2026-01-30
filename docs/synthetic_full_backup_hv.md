@@ -1,5 +1,7 @@
 ---
 title: "Synthetic Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/synthetic_full_backup_hv.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Synthetic Full Backup
 
-In this article
 
 In some situations, periodically running active full backups may not be an option. Active full backups are resource-intensive and consume a considerable amount of network bandwidth. As an alternative, you can create synthetic full backups.
 
@@ -36,6 +37,4 @@ Related Topics
 
 [How Synthetic Full Backup Works](synthetic_full_hiw_hv.md)
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

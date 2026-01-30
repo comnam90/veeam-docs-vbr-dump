@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSAPHANAProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsaphanaprocessingoptions.html"
 last_updated: "12/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSAPHANAProcessingOptions
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ This command creates an SAP HANA database processing settings for application ba
 | --- |
 | New-VBRSAPHANAProcessingOptions -RedoLogsBackupPeriod 15 -LogBackupMode SAPHANAManaged |
 
-Page updated 12/6/2024
 
-Page content applies to build 13.0.1.1071

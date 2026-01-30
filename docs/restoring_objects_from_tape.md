@@ -1,5 +1,7 @@
 ---
 title: "Restoring Objects from Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_objects_from_tape.html"
 last_updated: "12/5/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Objects from Tape
 
-In this article
 
 To restore the content of an object storage backup from tape, use the Restore from Tape wizard.
 
@@ -21,6 +22,4 @@ To restore objects from tape, follow the next steps:
 4. [Specify restore options](restore_objects_from_tape_options.md).
 5. [Finish working with the wizard](restore_objects_from_tape_summary.md).
 
-Page updated 12/5/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup File Placement for Performance Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_sobr_placement.html"
 last_updated: "2/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup File Placement for Performance Tier
 
-In this article
 
 Veeam Backup & Replication stores backup files on all performance extents of the scale-out backup repository.
 
@@ -122,6 +123,4 @@ This mechanism is also applied to backup files created by backup copy jobs.
 | Note |
 | Consider the following:   * On every extent of a scale-out backup repository, Veeam Backup & Replication reserves 1% of storage space to guarantee correct update of backup metadata files (VBM) and success of merge operations. * Make sure that you have enough free space on the extent where the full backup file resides. Veeam Backup & Replication requires 10% of the size of the full backup file to perform merge operations in the backup chain. If the disk space is low, merge operations may fail. * The actual free space value is only captured at the start of a job targeted at the scale-out backup repository while no other jobs actively use the same scale-out backup repository. For more information, see [this Veeam KB article](https://www.veeam.com/kb2282). |
 
-Page updated 2/13/2025
 
-Page content applies to build 13.0.1.1071

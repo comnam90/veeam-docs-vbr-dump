@@ -1,5 +1,7 @@
 ---
 title: "Saving Microsoft SharePoint Documents and Libraries"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_saving.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Saving Microsoft SharePoint Documents and Libraries
 
-In this article
 
 Veeam Explorer for Microsoft SharePoint allows you to save your document libraries and library documents to a specified location.
 
@@ -35,6 +36,4 @@ Keep in mind that if you select the Save as ZIP option, Veeam Explorer for Micro
 
 [![Saving Documents and Libraries](images/vbo_saving_lib.webp)](images/vbo_saving_lib.webp "Saving Documents and Libraries")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

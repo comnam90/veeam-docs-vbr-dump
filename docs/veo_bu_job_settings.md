@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veo_bu_job_settings.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 The required job settings depend on whether you want to use an image-level backup created with native Veeam Backup & Replication functionality or an application backup created with Veeam Plug-In for Oracle RMAN.
 
@@ -55,6 +56,4 @@ You can create backups of Oracle databases using application backup policies man
 
 After the RMAN plug-in backups are successfully created using one of these methods, you can use Veeam Explorer for Oracle to restore your Oracle data.
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Configure Re-IP Rules"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_reip_hv.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Configure Re-IP Rules
 
-In this article
 
 The Re-IP step of the wizard is available if you have selected the Replica re-IP option at the [Job](replica_name_hv.md) step of the wizard. This step applies only to VMs with Microsoft Windows OSes.
 
@@ -31,6 +32,4 @@ To facilitate the configuration, Veeam Backup & Replication detects an IP addres
 
 ![Step 9. Configure Re-IP Rules](images/hv_replica_job_re-ip.webp)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

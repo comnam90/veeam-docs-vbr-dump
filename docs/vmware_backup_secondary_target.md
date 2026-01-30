@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Specify Secondary Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_backup_secondary_target.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Specify Secondary Target
 
-In this article
 
 The Secondary Target step of the wizard is available if you have enabled the Configure secondary destinations for this job option at the Storage step of the wizard.
 
@@ -22,6 +23,4 @@ If you plan to link the backup job to a backup to tape or backup copy job, selec
 
 ![Step 9. Specify Secondary Target](images/vm_backup_job_secondary.webp)
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

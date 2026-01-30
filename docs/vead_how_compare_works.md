@@ -1,5 +1,7 @@
 ---
 title: "How Compare Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_how_compare_works.html"
 last_updated: "5/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Compare Works
 
-In this article
 
 Veeam Explorer for Microsoft Active Directory allows you to compare your data on the backup file with its present state on the original machine used to create the backup.
 
@@ -24,6 +25,4 @@ You can use the displayed information to choose which objects or attribute value
 
 [![How Compare Works](images/vead_how_compare_works.webp)](images/vead_how_compare_works.webp "How Compare Works")
 
-Page updated 5/10/2024
 
-Page content applies to build 13.0.1.1071

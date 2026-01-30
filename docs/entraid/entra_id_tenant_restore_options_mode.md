@@ -1,5 +1,7 @@
 ---
 title: "Choosing Restore Mode"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_restore_options_mode.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Choosing Restore Mode
 
-In this article
 
 When processing an item added to the restore scope, Veeam Backup for Microsoft Entra ID checks whether the item still exists in the production environment:
 
@@ -23,6 +24,4 @@ To change this behavior, clear the Restore from Entra ID Recycle Bin check box i
 
   [![Configure Restore Options](images/entra_id_restore_user_options.webp)](images/entra_id_restore_user_options.webp "Configure Restore Options")
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

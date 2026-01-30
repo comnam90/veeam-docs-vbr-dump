@@ -1,5 +1,7 @@
 ---
 title: "VBRAzureRestoreProxy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazurerestoreproxy.html"
 last_updated: "5/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAzureRestoreProxy
 
-In this article
 
 Contains Microsoft Azure proxy appliance.
 
@@ -31,6 +32,4 @@ Related Commands
 * [Add-VBRAzureRestoreProxy](add-vbrazurerestoreproxy.md)
 * [Get-VBRAzureRestoreProxy](get-vbrazurerestoreproxy.md)
 
-Page updated 5/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Force Deletion of Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_retention_force_delete.html"
 last_updated: "12/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Force Deletion of Backups
 
-In this article
 
 Veeam Plug-In for IBM Db2 has a functionality that automatically force deletes backup files which are older than specified number of days. For example, you can use it if a backup repository contains backup files that are no longer in the backup catalog.
 
@@ -32,6 +33,4 @@ By default, the force delete functionality is disabled (set to 0).
 | Important |
 | If a backup repository contains backups older than the specified retention period, Veeam Plug-In removes old backup files only after the next backup run. |
 
-Page updated 12/17/2024
 
-Page content applies to build 13.0.1.1071

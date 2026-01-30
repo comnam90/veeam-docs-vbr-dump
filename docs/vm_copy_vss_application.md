@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_application.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing
 
-In this article
 
 If you add to the VM copy job VMs running VSS-aware applications, you can enable application-aware processing to create a transactionally consistent VM copy. The transactionally consistent VM copy guarantees proper recovery of applications on VMs without data loss.
 
@@ -43,6 +44,4 @@ Select the Use persistent guest agent check box to enable persistent agent compo
 
 ![Application-Aware Processing](images/vm_copy_job_vss_general.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Updated Cmdlets"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/updated_cmdlets_12.1.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updated Cmdlets
 
-In this article
 
 This section contains information on cmdlets updated in Veeam PowerShell v12.1.
 
@@ -97,6 +98,4 @@ In this version, you can specify the Linux package type when you get Veeam Agent
 | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [Get-VBRProtectionGroupLinuxPackage](get-vbrprotectiongrouplinuxpackage.md) | New parameter added: Type. | |
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

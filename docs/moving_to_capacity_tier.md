@@ -1,5 +1,7 @@
 ---
 title: "Manually Moving Backups to Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/moving_to_capacity_tier.html"
 last_updated: "9/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manually Moving Backups to Capacity Tier
 
-In this article
 
 The Move to capacity tier option allows you to manually offload selected backup files to capacity extents.
 
@@ -35,6 +36,4 @@ Related Topics
 * [Backup Chain Detection](capacity_tier_inactive_backup_chain.md)
 * [Viewing Capacity Tier Sessions Statistics](offload_session_results.md)
 
-Page updated 9/9/2024
 
-Page content applies to build 13.0.1.1071

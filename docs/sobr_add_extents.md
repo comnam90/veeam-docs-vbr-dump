@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Add Performance Extents"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_extents.html"
 last_updated: "11/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Add Performance Extents
 
-In this article
 
 At the Performance Tier step of the wizard, specify which backup repositories or object storage repositories you want to add as performance extents, and configure options for the scale-out backup repository.
 
@@ -23,6 +24,4 @@ If a backup repository that you add as a performance extent is already used by j
 
 ![Step 3. Add Performance Extents](images/scaleout_repo_add_extents.webp)
 
-Page updated 11/24/2025
 
-Page content applies to build 13.0.1.1071

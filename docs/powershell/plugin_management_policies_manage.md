@@ -1,5 +1,7 @@
 ---
 title: "Application Backup Policies"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/plugin_management_policies_manage.html"
 last_updated: "6/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Backup Policies
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -23,6 +24,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Enable-VBRApplicationBackupJob](enable-vbrapplicationbackupjob.md) | Enables application backup policies. |
 | [Disable-VBRApplicationBackupJob](disable-vbrapplicationbackupjob.md) | Disables application backup policies. |
 
-Page updated 6/26/2024
 
-Page content applies to build 13.0.1.1071

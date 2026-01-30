@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRVeeamDataCloudAssignedVault"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrveeamdatacloudassignedvault.html"
 last_updated: "6/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRVeeamDataCloudAssignedVault
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command returns Veeam storage vaults assigned to the backup server.
 | --- |
 | Get-VBRVeeamDataCloudAssignedVault |
 
-Page updated 6/11/2025
 
-Page content applies to build 13.0.1.1071

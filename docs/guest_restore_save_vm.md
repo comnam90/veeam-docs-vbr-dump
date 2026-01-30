@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Windows Specific Operations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_save_vm.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Windows Specific Operations
 
-In this article
 
 After you close the wizard, Veeam Backup & Replication opens the Veeam Backup browser with the file system tree of the restored workload.
 
@@ -208,6 +209,4 @@ After the warning is displayed, you can perform one of the following actions:
 * You can click Cancel to postpone the close operation. In this case, the Veeam Backup browser will remain open for 5 minutes. After this period expires, Veeam Backup & Replication will display the warning again.
 * You can perform no action at all. In this case, the Veeam Backup browser will close automatically in 5 minutes.
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

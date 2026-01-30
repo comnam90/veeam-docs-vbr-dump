@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAmazonAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbramazonaccount.html"
 last_updated: "1/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAmazonAccount
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ This command creates an AWS credentials record.
 | --- |
 | Add-VBRAmazonAccount -AccessKey "ABCDEFGHIGKLMNOP" -SecretKey "vmdkflvm8908GUIEIE" -Description "Amazon credentials" |
 
-Page updated 1/30/2024
 
-Page content applies to build 13.0.1.1071

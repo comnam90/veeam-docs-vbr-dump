@@ -1,5 +1,7 @@
 ---
 title: "Custom List Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_configuring_custom_lists.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Custom List Settings
 
-In this article
 
 Veeam Explorer for Microsoft SharePoint supports obtaining custom list templates from backups created by Veeam Backup & Replication. The actual information about templates is stored directly in a backup file and obtained automatically so that you can view the custom list data without having to perform any additional operations.
 
@@ -67,6 +68,4 @@ When using the latter option, specify the path to the Microsoft SharePoint templ
 
 [![Custom List Settings](images/templates_options.webp)](images/templates_options.webp)
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

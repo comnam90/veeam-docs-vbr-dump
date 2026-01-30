@@ -1,5 +1,7 @@
 ---
 title: "Creating GFS Tape Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_gfs_tape_jobs.html"
 last_updated: "10/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating GFS Tape Jobs
 
-In this article
 
 To create a GFS archive on tape, you need to create a [GFS media pool](creating_gfs_media_pools.md) and target a backup to tape job to it. Technically, a GFS tape job is a variant of backup to tape job. When you select a GFS media pool as target, the job schedule automatically changes to the GFS mode. For details, see [Creating Backup to Tape Jobs](creating_backup_to_tape_jobs.md).
 
@@ -23,6 +24,4 @@ Related Topics
 * [Creating GFS Media Pools](creating_gfs_media_pools.md)
 * [Creating Backup to Tape Jobs](creating_backup_to_tape_jobs.md)
 
-Page updated 10/4/2024
 
-Page content applies to build 13.0.1.1071

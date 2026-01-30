@@ -1,5 +1,7 @@
 ---
 title: "Undoing Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failover_undo.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Undoing Failover
 
-In this article
 
 For more information on failover undo, see [Failover Undo](undo_failover.md) and [Failover and Failback for Replication](failover_failback.md).
 
@@ -26,6 +27,4 @@ When you force failover undo, Veeam Backup & Replication attempts to perform the
 
 [![Undoing Failover](images/vmware_undo_failover_force.webp)](images/vmware_undo_failover_force.webp)
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

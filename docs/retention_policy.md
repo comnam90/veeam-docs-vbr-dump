@@ -1,5 +1,7 @@
 ---
 title: "Short-Term Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_policy.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Short-Term Retention Policy
 
-In this article
 
 Every successful backup job session creates a new restore point that lets you roll back VM data to an earlier point in time. To control the number of restore points in the backup chain, you must specify retention policy settings. The retention policy defines how many restore points you want to retain on disk and, thus, how ‘far’ you can roll back. After the allowed number of restore points is exceeded, Veeam Backup & Replication applies the retention policy — it removes the earliest restore point from the backup chain.
 
@@ -50,6 +51,4 @@ Related Topics
 * [Retention Policy for Deleted Items](retention_deleted_vms.md)
 * [Specifying Backup Storage Settings](backup_job_storage_vm.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

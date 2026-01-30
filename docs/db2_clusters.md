@@ -1,5 +1,7 @@
 ---
 title: "Support for Clusters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_clusters.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Support for Clusters
 
-In this article
 
 Veeam Plug-In supports backup and restore of IBM Db2 databases that operate as part of a failover cluster.
 
@@ -52,6 +53,4 @@ Restore of Cluster
 
 To restore a database that operates as part of a failover cluster, you must start the restore process on the primary cluster node.
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

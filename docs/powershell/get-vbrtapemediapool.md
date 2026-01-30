@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRTapeMediaPool"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapemediapool.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRTapeMediaPool
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Related Commands
 
 [Get-VBRTapeLibrary](get-vbrtapelibrary.md)
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

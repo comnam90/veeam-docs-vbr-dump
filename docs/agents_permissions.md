@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_permissions.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md). In addition to general port requirements, for the Veeam Agent management scenarios the following permissions must be provided.
 
@@ -143,6 +144,4 @@ Depending on the application you need to back up, the user must have the permiss
 | MySQL | To process the MySQL database system, the MySQL user account must have the following privileges:   * SELECT for all tables. This privilege is required to allow Veeam Agent to access table metadata. To learn more, see [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/information-schema-introduction.html). * LOCK TABLES. This privilege is required to allow Veeam Agent to process tables based on the MyISAM storage engine. * RELOAD. This privilege is required to allow the MySQL account to perform FLUSH operations. |
 | PostgreSQL | To back up PostgreSQL instances, the user account must have the superuser privileges for the PostgreSQL instance. For more information, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html). |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

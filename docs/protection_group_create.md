@@ -1,5 +1,7 @@
 ---
 title: "Creating Protection Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_create.html"
 last_updated: "9/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Protection Groups
 
-In this article
 
 You must add computers that you plan to protect with Veeam Plug-Ins to the inventory in the Veeam Backup & Replication console. In Veeam Backup & Replication, protected computers are organized into protection groups. You can create one or more protection groups that contain computers of different types or offer different discovery and deployment options.
 
@@ -26,6 +27,4 @@ Related Topics
 
 [Protection Groups](protection_group_hiw.md)
 
-Page updated 9/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding SMB (CIFS) Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_repository_add.html"
 last_updated: "10/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding SMB (CIFS) Repositories
 
-In this article
 
 This section describes how to add an SMB (CIFS) share as a backup repository.
 
@@ -22,6 +23,4 @@ To add a backup repository, use the New Backup Repository wizard.
 7. [Apply backup repository settings](smb_repository_apply.md).
 8. [Finish working with the wizard](smb_repository_finish.md).
 
-Page updated 10/23/2024
 
-Page content applies to build 13.0.1.1071

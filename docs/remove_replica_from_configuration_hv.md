@@ -1,5 +1,7 @@
 ---
 title: "Removing Replicas from Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_replica_from_configuration_hv.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Replicas from Configuration
 
-In this article
 
 When you remove replicas from the configuration, Veeam Backup & Replication removes records about the replicas from the configuration database, stops showing the replicas in Veeam Backup & Replication console and also stops synchronizing their state with the state of the source VMs. However, the actual replicas remain on hosts.
 
@@ -24,6 +25,4 @@ To remove records about replicas from the Veeam Backup & Replication console and
 
 [![Removing Replicas from Configuration](images/replica_remove_from_config_hv.webp)](images/replica_remove_from_config_hv.webp)
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New Features"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new_features_12.1.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New Features
 
-In this article
 
 This section contains information on new features that were introduced in Veeam PowerShell v12.1.
 
@@ -174,6 +175,4 @@ In this version, you can use new cmdlets to work with the Veeam Deployer Service
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [Generate-VBRBackupServerDeployerKit](generate-vbrbackupserverdeployerkit.md) | Generates the Veeam Deployer Service certificate and installation packages for Microsoft Windows and Linux computers. | | [Get-VBRBackupServerDeployerCertificate](get-vbrbackupserverdeployercertificate.md) | Exports Veeam Deployer Service certificates to the specified location for Linux machines. | | [Remove-VBRBackupServerDeployerCertificate](remove-vbrbackupserverdeployercertificate.md) | Removes Veeam Deployer Service certificates from the Veeam Backup & Replication database. | |
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

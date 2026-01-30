@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRHvServerConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrhvserverconfiguration.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRHvServerConfiguration
 
-In this article
 
 Short Description
 
@@ -67,6 +68,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Get-VBRHvServerConfiguration](get-vbrhvserverconfiguration.md)
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

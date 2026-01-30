@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASBackupRestorePoint (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasbackuprestorepoint.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASBackupRestorePoint (obsolete)
 
-In this article
 
 Short Description
 
@@ -96,6 +97,4 @@ Related Commands
 * [Get-VBRNASServer](get-vbrnasserver.md)
 * [Select-Object](https://docs.microsoft.com/en-us/PowerShell/module/microsoft.powershell.utility/select-object?view=powershell-6)
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

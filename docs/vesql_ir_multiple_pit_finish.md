@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Finalize Instant Recovery Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_pit_finish.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Finalize Instant Recovery Session
 
-In this article
 
 After you finish steps of the Instant Recovery wizard, Veeam Explorer for Microsoft SQL Server starts an instant recovery session.
 
@@ -28,6 +29,4 @@ Related Topics
 * [Managing Instant Recovery Session](vesql_instant_session.md)
 * [Switchover](vesql_switchover.md)
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

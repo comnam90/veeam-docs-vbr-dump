@@ -1,5 +1,7 @@
 ---
 title: "New Features"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new_features_12.3.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New Features
 
-In this article
 
 This section contains information on new features that were introduced in Veeam PowerShell v12.3.
 
@@ -67,6 +68,4 @@ In this version, you can run new cmdlets to resolve MORef ID misalignment after 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [Set-VBRVmBiosUuid](set-vbrvmbiosuuid.md) | Collects MORef IDs. | | [Set-VBRVCenterName](set-vbrvcentername.md) | Modifies VMware vCenter name. | | [Generate-VBRViMigrationSpecificationFile](generate-vbrvimigrationspecificationfile.md) | Generates a migration task file. | | [Start-VBRViVMMigration](start-vbrvivmmigration.md) | Starts the MORef ID update. | |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

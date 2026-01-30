@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAmazonEC2Tag"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbramazonec2tag.html"
 last_updated: "12/13/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAmazonEC2Tag
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ This command defines AWS tags.
 | --- |
 | New-VBRAmazonEC2Tag -Key webserver -Value production |
 
-Page updated 12/13/2023
 
-Page content applies to build 13.0.1.1071

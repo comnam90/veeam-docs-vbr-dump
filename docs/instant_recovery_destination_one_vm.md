@@ -1,5 +1,7 @@
 ---
 title: "Specifying Destination for One VM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_destination_one_vm.html"
 last_updated: "3/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Destination for One VM
 
-In this article
 
 The Destination step of the wizard is available if you recover one workload and recover it to a new location or with different settings.
 
@@ -29,6 +30,4 @@ We recommend that you select to generate a new BIOS UUID for the recovered VM to
 
 ![Specifying Destination for One VM](images/instant_recovery_destination.webp)
 
-Page updated 3/12/2025
 
-Page content applies to build 13.0.1.1071

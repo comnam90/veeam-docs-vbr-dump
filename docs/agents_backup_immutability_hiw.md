@@ -1,5 +1,7 @@
 ---
 title: "How Backup Immutability Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_immutability_hiw.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Backup Immutability Works
 
-In this article
 
 After you specify a minimum immutability period for a backup and run the backup job for the first time, Veeam Backup & Replication will append an additional period to the specified immutability period depending on the type of the object storage repository:
 
@@ -75,6 +76,4 @@ In this scenario, the retention is configured as follows:
 
 Actual retention: 7 days (immutability period) + 10 days (block generation) = 17 days.
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

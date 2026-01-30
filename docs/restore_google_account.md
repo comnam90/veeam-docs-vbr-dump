@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials and Datacenter Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_account.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials and Datacenter Settings
 
-In this article
 
 At the Account step of the wizard, specify a Google Cloud service account, datacenter and availability zone to use for restore:
 
@@ -24,6 +25,4 @@ If you restore a Google Compute Engine VM instance from a backup created by Veea
 
 ![Step 3. Specify Credentials and Datacenter Settings](images/restore_google_account_load_configuration.webp)
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

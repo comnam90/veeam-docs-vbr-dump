@@ -1,5 +1,7 @@
 ---
 title: "Veeam Environment Planning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_planning_mssql.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Environment Planning
 
-In this article
 
 Before you deploy Veeam Plug-In, keep in mind the following requirements and limitations.
 
@@ -117,6 +118,4 @@ Your Microsoft SQL Server has 4 CPU cores and 4 GB RAM. Your backup repository h
 
 As a result, Veeam Plug-In will split there data streams between 2 databases and process these databases in parallel: Veeam Plug-In will process the first database using 5 parallel streams and the second database using 3 parallel streams. Keep in mind, if number of available data streams is enough for 1 database only, Veeam Plug-In will process databases one by one.
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

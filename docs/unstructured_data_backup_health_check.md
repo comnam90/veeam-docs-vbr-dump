@@ -1,5 +1,7 @@
 ---
 title: "Performing Health Check and Repair for Unstructured Data Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_health_check.html"
 last_updated: "10/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Health Check and Repair for Unstructured Data Backups
 
-In this article
 
 In this section you will learn how to perform:
 
@@ -45,6 +46,4 @@ To run the backup repair:
 
 [![Run Repair](images/nas_repair_backup.webp)](images/nas_repair_backup.webp "Run Repair")
 
-Page updated 10/3/2025
 
-Page content applies to build 13.0.1.1071

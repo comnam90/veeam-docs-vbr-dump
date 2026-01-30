@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_before_you_begin.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a file backup job, consider the following:
 
@@ -40,6 +41,4 @@ For more information on how to rescan backup repositories, see the [Rescanning B
 
 To upload scripts to the Linux backup server, in the Veeam Backup & Replication console, navigate to the Files node. Then, copy script files to the /var/lib/veeam/scripts folder on the Linux backup server.
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

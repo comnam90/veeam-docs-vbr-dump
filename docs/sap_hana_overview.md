@@ -1,5 +1,7 @@
 ---
 title: "Overview"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_hana_overview.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Overview
 
-In this article
 
 Veeam Plug-In for SAP HANA connects SAP HANA servers and Veeam backup repositories by interacting with databases through the SAP HANA Backint component. Backint for SAP HANA is the backup interface that enables Veeam Plug-In to communicate with SAP HANA databases and send the database backup files to the specified Veeam repositories. For details, see [How Veeam Plug-In for SAP HANA Works](hiw_sap_hana_plugin.md).
 
@@ -17,6 +18,4 @@ Veeam Plug-In for SAP HANA transfers backup data to the Veeam backup repository 
 
 In case of malware activity or unplanned actions, you can perform restore operations based on the backup data transferred by Veeam Plug-In to the Veeam Backup & Replication backup repositories. You can use SAP HANA tools or the Veeam Backup & Replication console and Veeam Explorer for SAP HANA to initiate and manage restore operations. Restore processes managed with SAP HANA tools run on the SAP HANA side. Restore processes managed in the Veeam Backup & Replication console or in Veeam Explorer for SAP HANA run on the Veeam Backup & Replication side. For details on restore operations with Veeam Plug-In, see [Data Restore](sap_hana_data_restore.md).
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

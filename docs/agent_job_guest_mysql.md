@@ -1,5 +1,7 @@
 ---
 title: "MySQL Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest_mysql.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # MySQL Processing Settings
 
-In this article
 
 You can specify how Veeam Agent for Linux must process a MySQL database.
 
@@ -50,6 +51,4 @@ For information on how Veeam Agent for Linux processes the MySQL database system
 
 ![MySQL Processing Settings](images/agent_job_guest_mysql.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

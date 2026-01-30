@@ -1,5 +1,7 @@
 ---
 title: "Snapshot Hunter"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_hunter.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Snapshot Hunter
 
-In this article
 
 The Snapshot Hunter is a Veeam technology used to detect and remove orphaned snapshots that may remain after backup or replication job sessions.
 
@@ -32,6 +33,4 @@ Related Topics
 
 [How Snapshot Hunter Works](snapshot_hunter_hiw.md)
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

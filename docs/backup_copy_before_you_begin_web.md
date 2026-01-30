@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_before_you_begin_web.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a backup copy job using web console, check the following prerequisites:
 
@@ -21,6 +22,4 @@ Before you create a backup copy job using web console, check the following prere
 * If you delete the source backup job after creating the backup copy job, backup files will become orphaned. The orphaned backup files can not be processed by any job.
 * Even if Use per-machine backup files option is disabled in a repository that you are planning to use as the target, backup copy job will always create per-machine backup files in the backup repository.
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

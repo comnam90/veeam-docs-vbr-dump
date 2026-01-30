@@ -1,5 +1,7 @@
 ---
 title: "Restore to Google Compute Engine"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Google Compute Engine
 
-In this article
 
 Veeam Backup & Replication allows you to restore different workloads (VMs, Google VM instances, physical servers and so on) to Google Compute Engine as VM instances. A VM instance is a virtual machine in Google Compute Engine with a preconfigured combination of computing resources.
 
@@ -46,6 +47,4 @@ In This Section
 * [Google Compute Engine IAM User Permissions](gcp_iam_permissions.md)
 * [Restoring Machines](restore_google_process.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

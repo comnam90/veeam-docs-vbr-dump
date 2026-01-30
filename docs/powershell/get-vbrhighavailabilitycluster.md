@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRHighAvailabilityCluster"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrhighavailabilitycluster.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRHighAvailabilityCluster
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command returns information on an HA cluster.
 | --- |
 | Get-VBRHighAvailabilityCluster |
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

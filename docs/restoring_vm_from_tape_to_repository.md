@@ -1,5 +1,7 @@
 ---
 title: "How Restoring Backups from Tape to Repository Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_vm_from_tape_to_repository.html"
 last_updated: "9/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restoring Backups from Tape to Repository Works
 
-In this article
 
 For restoring machine backups to a repository or a folder on disk, Veeam Backup & Replication performs the following steps:
 
@@ -18,6 +19,4 @@ For restoring machine backups to a repository or a folder on disk, Veeam Backup 
 
 ![How Restoring Backups from Tape to Repository Works](images/restore_backups_to_repository.webp)
 
-Page updated 9/15/2025
 
-Page content applies to build 13.0.1.1071

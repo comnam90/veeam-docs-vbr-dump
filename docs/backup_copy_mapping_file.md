@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy Job Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_mapping_file.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy Job Mapping
 
-In this article
 
 Backup copy job mapping helps you reduce the amount of data transferred over network and decrease the load on WAN accelerators or slow connections. You can also use mapping to upgrade from legacy backup chain formats to per-machine backup with separate metadata files format. For more information, see [Backup Chain Formats](per_vm_backup_files.md).
 
@@ -26,6 +27,4 @@ Related Topics
 
 [Creating a Seed for the Backup Copy Job](backup_copy_mapping_auxiliary.md)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

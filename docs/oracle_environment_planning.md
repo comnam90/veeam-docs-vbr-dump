@@ -1,5 +1,7 @@
 ---
 title: "Oracle Environment Planning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_environment_planning.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Environment Planning
 
-In this article
 
 Before you deploy Veeam Plug-In, consider the following requirements and limitations.
 
@@ -171,6 +172,4 @@ Before you recover your database using Veeam Explorer for Oracle, consider the f
 * If you want to restore a database with a different name and settings, the database must use SPFILE. If SPFILE is not used, a warning will be displayed during the Veeam Plug-In configuration.
 * If you use huge pages, make sure that you allocated enough memory to the system where you want to restore your database.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

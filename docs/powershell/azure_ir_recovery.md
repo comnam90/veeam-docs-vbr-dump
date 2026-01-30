@@ -1,5 +1,7 @@
 ---
 title: "Recovery and Finalization"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/azure_ir_recovery.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Recovery and Finalization
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -23,6 +24,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Switch-VBRAzureInstantRecoveryMigration](switch-vbrazureinstantrecoverymigration.md) | Starts the manual switchover for finalizing the migration to production process after you perform the Instant Recovery to Microsoft Azure. |
 | [Stop-VBRAzureInstantRecovery](stop-vbrazureinstantrecovery.md) | Stops the specified Instant Recovery to Microsoft Azure operation. |
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

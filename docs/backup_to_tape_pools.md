@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Choose Media Pool for Full Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_pools.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Choose Media Pool for Full Backups
 
-In this article
 
 At the Media Pool step of the wizard, choose media pool for full backups.
 
@@ -43,6 +44,4 @@ Depending on the backup chain type of the source job, there are two possible opt
 
 ![Step 4. Choose Media Pool for Full Backups](images/backup_to_tape_schedule_virtual_full.webp)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

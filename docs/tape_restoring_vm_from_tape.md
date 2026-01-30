@@ -1,5 +1,7 @@
 ---
 title: "How Restoring VM from Tape to Infrastructure Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restoring_vm_from_tape.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restoring VM from Tape to Infrastructure Works
 
-In this article
 
 Restore Directly to Infrastructure
 
@@ -56,6 +57,4 @@ The jobs start simultaneously. The VM restore job starts and remains pending unt
 
 ![How Restoring VM from Tape to Infrastructure Works](images/restore_VM_staging.webp)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

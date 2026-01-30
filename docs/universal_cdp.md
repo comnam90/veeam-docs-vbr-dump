@@ -1,5 +1,7 @@
 ---
 title: "Universal CDP to VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/universal_cdp.html"
 last_updated: "12/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Universal CDP to VMware vSphere
 
-In this article
 
 Universal continuous data protection (CDP) is a technology that helps you protect mission-critical workloads when data loss for seconds or minutes is unacceptable. Workloads of various types, such as virtual, physical or cloud machines can be replicated to VMware vSphere cluster or host. CDP provides minimum recovery time objective (RTO) in case a disaster strikes because CDP replicas are in a ready-to-start state.
 
@@ -38,6 +39,4 @@ In This Section
 * [Backup Infrastructure for Universal CDP](uni_cdp_infrastructure.md)
 * [Considerations and Limitations](uni_cdp_considerations.md)
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

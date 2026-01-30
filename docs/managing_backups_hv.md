@@ -1,5 +1,7 @@
 ---
 title: "Managing Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_backups_hv.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Backups
 
-In this article
 
 You can perform the following operations with backups:
 
@@ -27,6 +28,4 @@ You can perform the following operations with backups:
 
 \* Available only for Microsoft Windows-based backup servers.
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

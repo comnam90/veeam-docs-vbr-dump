@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Target Datastores"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_target_datastore_hv.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Target Datastores
 
-In this article
 
 This step is available if you recover workloads to a new location or with different settings.
 
@@ -29,6 +30,4 @@ At the Datastore step of the wizard, specify a path to the folder where VM confi
 
 ![Step 6. Select Target Datastores](images/instant_recovery_to_hv_datastore.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

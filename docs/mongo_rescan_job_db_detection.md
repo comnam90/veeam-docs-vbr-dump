@@ -1,5 +1,7 @@
 ---
 title: "Backup Source Selection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_rescan_job_db_detection.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Source Selection
 
-In this article
 
 During the application backup policy run, Veeam Mongo Agent running on the target computer collects information about databases included in MongoDB replica sets that were processed during the previous [rescan job](mongo_rescan_job.md). Using this information, Veeam Backup & Replication selects a node in a replica set that will be a backup source for the backup session.
 
@@ -43,6 +44,4 @@ According to the described logic, Veeam Backup & Replication selects a backup so
 
 After the backup source is selected, Veeam Backup & Replication continues the backup operation. For details, [Application Backup Policies](mongo_backup_job.md#3).
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

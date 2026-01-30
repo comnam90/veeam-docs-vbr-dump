@@ -1,5 +1,7 @@
 ---
 title: "Adding Enterprise Storage System as NAS Filer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_nas_filer.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Enterprise Storage System as NAS Filer
 
-In this article
 
 Before you add an enterprise storage system as a NAS filer to the inventory of the virtual infrastructure, consider the following:
 
@@ -26,6 +27,4 @@ To add an enterprise NAS system as a source of unstructured data, do the followi
 4. [Apply file share settings](nas_filer_apply.md).
 5. [Finish working with the wizard](nas_filer_summary.md).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

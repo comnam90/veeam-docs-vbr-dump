@@ -1,5 +1,7 @@
 ---
 title: "Editing Access Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/access_permissions.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Access Permissions
 
-In this article
 
 If you want to store in the backup repository backups of virtual and physical machines created by Veeam Backup & Replication additional solutions, for example, [Veeam Agent for Microsoft Windows](agents_introduction.md), [Veeam Agent for Linux](agents_introduction.md), [Veeam Plug-Ins for Enterprise Applications](protect_applications.md) and so on, you must set up access permissions to backup repositories.
 
@@ -80,6 +81,4 @@ To specify credentials, do the following:
 
 [![Editing Access Permissions](images/ep_permissions_s3.webp)](images/ep_permissions_s3.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

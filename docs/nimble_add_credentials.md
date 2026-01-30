@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nimble_add_credentials.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials for a user account with administrator privileges on the storage system.
 
@@ -31,6 +32,4 @@ Veeam Backup & Replication will display an error message, and you will not be ab
 
 ![Step 3. Specify Credentials](images/nimble_add_creds.webp)
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

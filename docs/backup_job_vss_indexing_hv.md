@@ -1,5 +1,7 @@
 ---
 title: "Enable Guest File System Indexing and Malware Detection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_indexing_hv.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enable Guest File System Indexing and Malware Detection
 
-In this article
 
 To specify VM guest OS indexing options for a VM:
 
@@ -31,6 +32,4 @@ To reset the list of folders to its initial state, click Default.
 
 ![Enable Guest File System Indexing and Malware Detection](images/hv_backup_job_vss_indexing.webp)
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

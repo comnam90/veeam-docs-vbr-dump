@@ -1,5 +1,7 @@
 ---
 title: "Obtaining and Renewing License"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_obtain.html"
 last_updated: "12/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Obtaining and Renewing License
 
-In this article
 
 You can obtain an Evaluation or paid license for the product when you download the product from the Veeam website.
 
@@ -42,6 +43,4 @@ Note that the Renew option is subject to restrictions. If online renewal is not 
 
 ![Obtaining and Renewing License](images/license_renewal.webp)
 
-Page updated 12/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Post-Restore Action"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_single_tas_specify_post_restore_action.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Post-Restore Action
 
-In this article
 
 This step is available only if you have selected the Restore to a specific point in time option at the [Specify restore point](vep_restore_single_tas_specify_restore_point.md) step of the wizard.
 
@@ -49,6 +50,4 @@ For example:
 
 [![Specifying Post-Restore Action](images/vep_restore_to_another_server_post_restore.webp)](images/vep_restore_to_another_server_post_restore.webp "Specifying Post-Restore Action")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

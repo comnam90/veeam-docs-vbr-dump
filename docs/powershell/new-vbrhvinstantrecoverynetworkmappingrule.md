@@ -1,5 +1,7 @@
 ---
 title: "New-VBRHvInstantRecoveryNetworkMappingRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvinstantrecoverynetworkmappingrule.html"
 last_updated: "4/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRHvInstantRecoveryNetworkMappingRule
 
-In this article
 
 Short Description
 
@@ -59,6 +60,4 @@ Perform the following steps:
 1. Run the [Get-VBRComputerNetworkInfo](get-vbrcomputernetworkinfo.md) cmdlet. Save the result to the $network variable.
 2. Run the New-VBRHvInstantRecoveryNetworkMappingRule cmdlet. Set the $network variable as the SourceNetwork parameter value.
 
-Page updated 4/4/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/byb_instant_recovery_hv.html"
 last_updated: "12/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Before you perform Instant Recovery to Microsoft Hyper-V, consider the following:
 
@@ -40,6 +41,4 @@ The Hyper-V role must be enabled on both source and target hosts.
 
 * [For HA cluster] Make sure you [finalize the Instant Recovery session](ir_finalize_hv.md) to Hyper-V before you start a switchover. During a switchover, Veeam Backup & Replication stops the Instant Recovery session. After that, the VM that Veeam Backup & Replication creates on the Hyper-V datastore and its snapshot are deleted. Once you connect to a cluster, Veeam Backup & Replication will start an Instant Recovery session again.
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing Vaults"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_media_vault.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Vaults
 
-In this article
 
 If you no longer need a vault, you can remove it. Consider the following limitations:
 
@@ -23,6 +24,4 @@ To remove a vault:
 
 [![Removing Vaults](images/remove_vault.webp)](images/remove_vault.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Network Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/network_mode.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Network Mode
 
-In this article
 
 The Network mode can be used with any infrastructure configuration. In this mode, data is retrieved through the ESXi host over LAN using the Network Block Device protocol (NBD).
 
@@ -33,6 +34,4 @@ Related Topics
 * [Failover to Network Mode](network_mode_failover.md)
 * [Adding VMware Backup Proxies](add_vmware_proxy.md)
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

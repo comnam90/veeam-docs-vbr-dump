@@ -1,5 +1,7 @@
 ---
 title: "AWS IAM User Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_permissions.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # AWS IAM User Permissions
 
-In this article
 
 To restore to Amazon EC2, it is recommended that the IAM user whose credentials you plan to use to connect to AWS has administrative permissions — access to all AWS actions and resources.
 
@@ -26,6 +27,4 @@ Alternatively, you can attach the created policy to the IAM group or role to whi
 
 For information on how to create and attach a policy to an IAM user, see the [Creating IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and [Adding and Removing IAM Identity Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) sections in the AWS IAM User Guide.
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

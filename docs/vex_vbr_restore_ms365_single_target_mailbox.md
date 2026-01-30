@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Target Mailbox"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore_ms365_single_target_mailbox.html"
 last_updated: "8/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Target Mailbox
 
-In this article
 
 At this step of the wizard, specify the target mailbox and mailbox location.
 
@@ -23,6 +24,4 @@ You can also restore from backups created for Exchange Online organizations to o
 
 [![Specify Target Mailbox](images/specify_target_mailbox.webp)](images/specify_target_mailbox.webp "Specify Target Mailbox")
 
-Page updated 8/22/2024
 
-Page content applies to build 13.0.1.1071

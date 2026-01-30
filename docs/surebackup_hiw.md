@@ -1,5 +1,7 @@
 ---
 title: "How SureBackup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_hiw.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How SureBackup Works
 
-In this article
 
 For SureBackup, Veeam Backup & Replication uses a regular image-based backup. SureBackup job can operate in two different recovery verification modes:
 
@@ -49,6 +50,4 @@ During the backup verification and content scan, Veeam Backup & Replication perf
 
 During verification, a backed-up machine image remains in read-only state. All changes that take place when the machine is running are written to the differencing disk (AVHD/AVHDX file), created for the recovered machine. When the recovery verification process is complete, the changes are discarded.
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Mount Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_host_vm.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Mount Server
 
-In this article
 
 At the Restore Point step of the wizard, you can select a server that will be used to mount disks of a workload from the backup or replica. You can also choose to configure a new helper appliance where Veeam Backup & Replication will mount workload disks.
 
@@ -41,6 +42,4 @@ If you have not added the account before, click the Add button on the right of t
 
 ![Step 4. Specify Mount Server](images/guest_all_os_restore_host.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

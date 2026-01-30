@@ -1,5 +1,7 @@
 ---
 title: "Removing Helper Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_remove_appliance.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Helper Appliances
 
-In this article
 
 If you no longer need to restore Linux workloads to Azure or Azure Stack Hub, you can remove helper appliances:
 
@@ -23,6 +24,4 @@ If you no longer need to restore Linux workloads to Azure or Azure Stack Hub, yo
 
 ![Removing Helper Appliances](images/azure_restore_remove_linux_appliance.webp)
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_advanced_backup.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Settings
 
-In this article
 
 To specify settings for a backup chain created with the backup policy:
 
@@ -24,6 +25,4 @@ To specify settings for a backup chain created with the backup policy:
 
 ![Backup Settings](images/plugins_policy_mssql_storage_advanced_backup.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

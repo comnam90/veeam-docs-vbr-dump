@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Server or Shared Folder Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repository_server.html"
 last_updated: "7/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Server or Shared Folder Settings
 
-In this article
 
 To configure settings for a Microsoft Windows server:
 
@@ -16,6 +17,4 @@ To configure settings for a Microsoft Windows server:
 
 ![Step 3. Specify Server or Shared Folder Settings](images/add_backup_repository_windows.webp)
 
-Page updated 7/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Seed for Backup Copy Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_mapping_auxiliary.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Seed for Backup Copy Job
 
-In this article
 
 Backup copy jobs have limitations for backups that can be used as seeds. The limitations are listed in section [Map Backup File](backup_copy_mapping_file_job.md).
 
@@ -26,6 +27,4 @@ As a result, Veeam Backup & Replication will use the full backup file as a seed.
 
 ![Creating Seed for Backup Copy Job](images/backup_copy_remapping.webp)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Virtual Appliance (HotAdd)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_appliance.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Appliance (HotAdd)
 
-In this article
 
 The Virtual appliance mode is not so efficient as the Direct storage access mode but provides better performance than the Network mode. The Virtual appliance mode is recommended if the role of a VMware backup proxy is assigned to a VM.
 
@@ -62,6 +63,4 @@ Related Topics
 * [Virtual Appliance Mode for VMs on VSAN](virtual_appliance_mode_vsan.md)
 * [Adding VMware Backup Proxies](add_vmware_proxy.md)
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_add_rescan.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, do the following:
 
@@ -17,6 +18,4 @@ At the Summary step of the wizard, do the following:
 
 ![Step 8. Finish Working with Wizard](images/netapp_add_summary.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

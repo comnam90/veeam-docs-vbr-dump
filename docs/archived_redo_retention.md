@@ -1,5 +1,7 @@
 ---
 title: "Configuring Archived Redo Log Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archived_redo_retention.html"
 last_updated: "9/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Archived Redo Log Retention
 
-In this article
 
 By default, archivelog deletion policy is disabled.
 
@@ -31,6 +32,4 @@ To disable archivelog deletion policy, run the following command:
 
 For details, see [this Oracle article](https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmconfb.htm#BRADV89439).
 
-Page updated 9/6/2023
 
-Page content applies to build 13.0.1.1071

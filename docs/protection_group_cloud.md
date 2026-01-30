@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_cloud.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Account
 
-In this article
 
 At the Cloud Account step of the wizard, specify settings for Amazon or Microsoft Azure cloud that you want to use to deploy Veeam Agents on cloud machines.
 
@@ -47,6 +48,4 @@ For Microsoft Azure Compute Account
 
 ![Step 3. Specify Account](images/protection_group_cloud.webp "Specifying Account")
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

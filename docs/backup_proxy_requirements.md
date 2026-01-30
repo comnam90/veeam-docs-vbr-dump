@@ -1,5 +1,7 @@
 ---
 title: "Requirements and Limitations for VMware Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy_requirements.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Requirements and Limitations for VMware Backup Proxies
 
-In this article
 
 Before you assign the role of a VMware backup proxy, check the following prerequisites and limitations.
 
@@ -57,6 +58,4 @@ In addition to the general requirements and limitations, the following ones appl
 
 * See recommendations for VMware backup proxy parameters in the [Veeam Backup & Replication Best Practice Guide](https://bp.veeam.com/vbr/2_Design_Structures/D_Veeam_Components/D_backup_proxies/vmware_proxies.html).
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

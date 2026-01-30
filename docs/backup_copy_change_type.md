@@ -1,5 +1,7 @@
 ---
 title: "Upgrading Backup Chain Formats"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_change_type.html"
 last_updated: "1/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading Backup Chain Formats
 
-In this article
 
 Veeam Backup & Replication supports the following ways to store backup files: per-machine backup with separate metadata files, per-machine backup with single metadata file and single-file backup. For more information, see [Backup Chain Formats](per_vm_backup_files.md).
 
@@ -54,6 +55,4 @@ To upgrade the backup chain format for the periodic copy mode, do the following:
 
 Veeam Backup & Replication will start a new backup chain in the required format and will place the backups used for mapping to the orphaned node and retain them according to the background retention. For more information on when the background retention applies, its limitations and considerations, see [Background Retention](background_retention_job.md).
 
-Page updated 1/30/2025
 
-Page content applies to build 13.0.1.1071

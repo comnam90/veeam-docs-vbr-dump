@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSelectedFilesBackupOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrselectedfilesbackupoptions.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSelectedFilesBackupOptions
 
-In this article
 
 Short Description
 
@@ -87,6 +88,4 @@ Examples
 | --- | --- |
 | This command creates the backup scope settings for the Veeam Agent job that backs up a Linux computer. The backup scope will include the files from the /home/user01/ directory and will exclude all files of the PDF format.  |  | | --- | | New-VBRSelectedFilesBackupOptions -OSPlatform Linux -BackupSelectedFiles -SelectedFiles "/home/user01/" -ExcludeMask '\*.pdf' | |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

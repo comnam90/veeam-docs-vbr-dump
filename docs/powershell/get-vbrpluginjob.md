@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRPluginJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrpluginjob.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRPluginJob
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Examples
 | --- | --- |
 | This command returns the 35d7b6cc-5726-4ec9-a954-f58109f3ff28 job that was created with standalone Veeam Plug-in.  |  | | --- | | Get-VBRPluginJob -Id "35d7b6cc-5726-4ec9-a954-f58109f3ff28" | |
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

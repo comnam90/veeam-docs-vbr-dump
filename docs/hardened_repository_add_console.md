@@ -1,5 +1,7 @@
 ---
 title: "Adding Hardened Repositories Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_add_console.html"
 last_updated: "11/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Hardened Repositories Using Console
 
-In this article
 
 This section describes how to add a hardened repository.
 
@@ -22,6 +23,4 @@ To add a hardened repository using the Veeam Backup & Replication console, use t
 7. [Apply hardened repository settings](hardened_repository_add_console_apply.md).
 8. [Finish working with wizard](hardened_repository_add_console_finish.md).
 
-Page updated 11/11/2025
 
-Page content applies to build 13.0.1.1071

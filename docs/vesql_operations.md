@@ -1,5 +1,7 @@
 ---
 title: "SQL Server Database Operations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_operations.html"
 last_updated: "11/9/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SQL Server Database Operations
 
-In this article
 
 The following table lists SQL Server database operations and their display names that appear in the fine-tune dialog.
 
@@ -43,6 +44,4 @@ The following table lists SQL Server database operations and their display names
 | DROP | <date\_time> Deleted <trigger\_name> Trigger <initiator> | — |
 | ALTER | <date\_time> Modified <trigger\_name> Trigger <initiator> | — |
 
-Page updated 11/9/2023
 
-Page content applies to build 13.0.1.1071

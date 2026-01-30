@@ -1,5 +1,7 @@
 ---
 title: "Starting Switchover Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_switchover_manual.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting Switchover Manually
 
-In this article
 
 If you have selected the Manual switchover option in the Instant Recovery wizard, you can start the switchover process at any time if the instance is in the Ready to switchover state.
 
@@ -20,6 +21,4 @@ Alternatively, you can right-click the instance and select Switchover now.
 
 [![Starting Switchover Manually](images/vep_ir_switchover.webp)](images/vep_ir_switchover.webp "Starting Switchover Manually")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

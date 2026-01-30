@@ -1,5 +1,7 @@
 ---
 title: "Configuring Notification Settings for Configuration Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_notifications.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Notification Settings for Configuration Backups
 
-In this article
 
 You can configure notifications for the configuration backup:
 
@@ -32,6 +33,4 @@ Email notifications will be sent if you configure global email notification sett
 
 ![Configuring Notification Settings for Configuration Backups](images/config_backup_notifications.webp)
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

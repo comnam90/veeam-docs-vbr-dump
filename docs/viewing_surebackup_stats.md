@@ -1,5 +1,7 @@
 ---
 title: "Viewing Recovery Verification Job Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_surebackup_stats.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Recovery Verification Job Statistics
 
-In this article
 
 You can monitor how tests for verified VMs are performed while a recovery verification job is running.
 
@@ -32,6 +33,4 @@ If you enabled content analysis at the [Settings step](surebackup_job_settings_v
 
 ![Viewing Recovery Verification Job Statistics](images/surebackup_stats_vm.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

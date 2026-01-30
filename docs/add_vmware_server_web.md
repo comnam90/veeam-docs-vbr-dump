@@ -1,5 +1,7 @@
 ---
 title: "Adding VMware vSphere Server Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_vmware_server_web.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding VMware vSphere Server Using Web UI
 
-In this article
 
 This section describes how to add a VMware vSphere server as a backup infrastructure component.
 
@@ -18,6 +19,4 @@ To add a VMware vSphere server using the Veeam Backup & Replication web UI, use 
 3. [Specify credentials](vmware_server_credentials_web.md).
 4. [Finish working with the wizard](vmware_server_summary_web.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

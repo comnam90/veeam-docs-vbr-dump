@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRJobObjectVssOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrjobobjectvssoptions.html"
 last_updated: "6/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRJobObjectVssOptions
 
-In this article
 
 Short Description
 
@@ -95,6 +96,4 @@ Related Commands
 * [New-VBRJobVssOptions](new-vbrjobvssoptions.md) ([-ForObject])
 * [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 6/12/2024
 
-Page content applies to build 13.0.1.1071

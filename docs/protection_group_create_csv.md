@@ -1,5 +1,7 @@
 ---
 title: "Creating Protection Group for Computers from CSV File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_create_csv.html"
 last_updated: "9/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Protection Group for Computers from CSV File
 
-In this article
 
 Before you create a protection group for computers from a CSV file, [check prerequisites](protection_group_before_csv.md). Then use the New Protection Group wizard to configure a protection group.
 
@@ -21,6 +22,4 @@ Before you create a protection group for computers from a CSV file, [check prere
 8. [Assess results](protection_group_apply_csv.md).
 9. [Finish working with the wizard](protection_group_finish_csv.md).
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

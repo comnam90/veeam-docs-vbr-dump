@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Job Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_name.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Job Name and Description
 
-In this article
 
 At the Name step of the wizard, specify a name and description for the object storage backup job.
 
@@ -22,6 +23,4 @@ At the Name step of the wizard, specify a name and description for the object 
 
 ![Step 2. Specify Job Name and Description](images/os_backup_job_name.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

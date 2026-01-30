@@ -1,5 +1,7 @@
 ---
 title: "How Export Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_how_export_works.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Export Works
 
-In this article
 
 Veeam Explorer for Oracle allows you to export standalone databases and Data Guard databases to the machine where Veeam Explorer for Oracle is running. You can export your data as RMAN backups and as database files.
 
@@ -70,6 +71,4 @@ After the export process successfully completes, Veeam Explorer for Oracle unmou
 
 [![How Export of Database Files Works for Linux Machines](images/veor_export_files_lin.png)](images/veor_export_files_lin.png "How Export of Database Files Works for Linux Machines")
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

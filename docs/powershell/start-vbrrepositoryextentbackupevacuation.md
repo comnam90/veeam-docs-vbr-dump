@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRRepositoryExtentBackupEvacuation"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrrepositoryextentbackupevacuation.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRRepositoryExtentBackupEvacuation
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ Related Commands
 
 [Get-VBRRepositoryExtent](get-vbrrepositoryextent.md)
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

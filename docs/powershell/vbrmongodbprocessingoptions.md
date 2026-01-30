@@ -1,5 +1,7 @@
 ---
 title: "VBRMongoDBProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrmongodbprocessingoptions.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRMongoDBProcessingOptions
 
-In this article
 
 Contains processing options for MongoDB replica sets.
 
@@ -21,6 +22,4 @@ Properties
 | BackupSourceNode | [VBRDiscoveredMongoDBReplicaSetNode](vbrdiscoveredmongodbreplicasetnode.md) | Specifies the selected node to be backed up. |
 | AllowBackupSourceNodeFailover | Boolean | Allows switching to automatic node selection if the manually selected node is not available and the AutoSelectBackupSourceNode parameter is not enabled. |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

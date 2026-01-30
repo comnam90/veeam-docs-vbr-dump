@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Recovery Verification Options and Tests"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_tests_hv.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Recovery Verification Options and Tests
 
-In this article
 
 Specifying recovery verification options and tests is available only for SureBackup job working in Full recoverability testing mode.
 
@@ -136,6 +137,4 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 ![Step 6. Specify Recovery Verification Options and Tests](images/surebackup_job_creds.webp)
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

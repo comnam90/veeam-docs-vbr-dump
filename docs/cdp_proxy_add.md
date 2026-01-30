@@ -1,5 +1,7 @@
 ---
 title: "Adding CDP Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy_add.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding CDP Proxies
 
-In this article
 
 You must add to the backup infrastructure CDP proxies that you plan to use for continuous data protection of VMs.
 
@@ -21,6 +22,4 @@ To add a CDP proxy, use the New CDP Proxy wizard.
 6. [Wait for the CDP proxy to be added to the infrastructure](cdp_proxy_apply.md).
 7. [Finish working with the wizard](cdp_proxy_finish.md).
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

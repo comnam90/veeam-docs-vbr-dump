@@ -1,5 +1,7 @@
 ---
 title: "Creating Recovery Token"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_recovery_token.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Recovery Token
 
-In this article
 
 If you want to recover files, volumes or an entire computer from a specific backup, you can use the Create recovery token operation.
 
@@ -53,6 +54,4 @@ You can also create and modify the existing recovery token using the PowerShell 
 
 [![Create Recovery Token](images/agent_backup_create_recovery_token.webp)](images/agent_backup_create_recovery_token.webp "Create Recovery Token")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

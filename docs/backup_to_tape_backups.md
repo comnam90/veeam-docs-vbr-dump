@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Choose Backups to Archive"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_backups.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Choose Backups to Archive
 
-In this article
 
 At the Backups step of the wizard, select backups that you want to write to tape with the tape job.
 
@@ -49,6 +50,4 @@ This option selects what backup chain will be copied on the first run of the job
 
 ![Step 3. Choose Backups to Archive](images/backup_to_tape_several_chains.webp)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Updating Source File Share Path for Backup Jobs with Secondary Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_source_share_path.html"
 last_updated: "8/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating Source File Share Path for Backup Jobs with Secondary Target
 
-In this article
 
 Veeam Backup & Replication does not support auto mapping of the source file share path for the file backup copy when updating the source file share path for the main file backup job.
 
@@ -50,6 +51,4 @@ Veeam Backup & Replication will automatically map the existing file backup copy,
 
 As a result, if the job and its backups are updated correctly, the first session of the updated job will create not a full backup, but an incremental one.
 
-Page updated 8/19/2024
 
-Page content applies to build 13.0.1.1071

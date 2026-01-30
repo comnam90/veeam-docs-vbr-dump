@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Buckets to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_bucket_buckets.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Buckets to Restore
 
-In this article
 
 At the Buckets step of the wizard, select the buckets or containers that you want to restore:
 
@@ -29,6 +30,4 @@ To exclude the bucket or container from the restore process, select the bucket o
 
 ![Step 2. Select Buckets to Restore](images/restore_entire_bucket_buckets.webp "Select an Object to Restore")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

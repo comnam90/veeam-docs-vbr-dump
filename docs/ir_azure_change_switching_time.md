@@ -1,5 +1,7 @@
 ---
 title: "Changing Switchover Time"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_change_switching_time.html"
 last_updated: "7/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Switchover Time
 
-In this article
 
 The following instructions apply if you have selected to start the switchover manually or at the scheduled time in the [Migrate to production](ir_azure_finalize.md#migrate) wizard.
 
@@ -19,6 +20,4 @@ To change the time when Veeam Backup & Replication will perform the switchover:
 
 [![Changing Switchover Time](images/ir_azure_change_switching_time.webp)](images/ir_azure_change_switching_time.webp)
 
-Page updated 7/3/2025
 
-Page content applies to build 13.0.1.1071

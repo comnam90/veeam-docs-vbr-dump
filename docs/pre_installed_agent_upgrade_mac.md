@@ -1,5 +1,7 @@
 ---
 title: "Mac Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_installed_agent_upgrade_mac.html"
 last_updated: "2/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Mac Computers
 
-In this article
 
 To update pre-installed Veeam Agent on Mac computer, perform the following operations:
 
@@ -21,6 +22,4 @@ To update pre-installed Veeam Agent on Mac computer, perform the following opera
 | --- |
 | veeamconfig mode syncnow |
 
-Page updated 2/23/2024
 
-Page content applies to build 13.0.1.1071

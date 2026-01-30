@@ -1,5 +1,7 @@
 ---
 title: "Assignment of GFS Flags"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_how_flags_assigned_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Assignment of GFS Flags
 
-In this article
 
 When configuring GFS retention policy settings, you can choose a number of GFS flag types that Veeam Backup & Replication will use to mark backup files for long-term retention. Depending on this number, Veeam Backup & Replication will apply slightly different algorithms when assigning GFS flags:
 
@@ -95,6 +96,4 @@ Consider the following example. On Monday, you configure GFS policy settings of 
 | --- |
 | 1. On Monday, the backup job will produce an incremental backup file. Veeam Backup & Replication will start waiting for a full backup file since the monthly scheduled period is now started. 2. On Tuesday, the backup job will produce a full backup file. Although Veeam Backup & Replication will still be waiting for a full backup file, the full backup file with weekly GFS flag is required.   ![Assignment of GFS Flags ](images/backup_gfs_example_2_1.webp)   1. On Wednesday, the backup job will produce an incremental backup file. 2. On Thursday, the backup job will produce an incremental backup file. Veeam Backup & Replication will start waiting for a full backup file to assign the weekly GFS flag to it since the weekly scheduled period is now started.   ![Assignment of GFS Flags ](images/backup_gfs_example_2_2.webp)   1. On Friday, the backup job will produce a full backup file. Veeam Backup & Replication will immediately assign the weekly GFS flag to the backup file. As the weekly GFS flag will have been assigned, Veeam Backup & Replication will also assign the monthly GFS flag to the backup file.   ![Assignment of GFS Flags ](images/backup_gfs_example_2_3.webp) |
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

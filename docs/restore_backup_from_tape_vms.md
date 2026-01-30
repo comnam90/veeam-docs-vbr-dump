@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Machines to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_backup_from_tape_vms.html"
 last_updated: "7/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Machines to Restore
 
-In this article
 
 At the Source step of the wizard, select one or more physical or virtual machines for which backup files should be restored. If you have chosen machines to restore from archives on tape, the list of objects to restore will be populated with selected machines.
 
@@ -20,6 +21,4 @@ To remove a machine, select it in the list and click Remove on the right.
 
 ![Step 2. Choose Machines to Restore](images/restore_backup_from_tape_vms.webp)
 
-Page updated 7/8/2025
 
-Page content applies to build 13.0.1.1071

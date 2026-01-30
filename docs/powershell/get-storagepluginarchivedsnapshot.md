@@ -1,5 +1,7 @@
 ---
 title: "Get-StoragePluginArchivedSnapshot"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-storagepluginarchivedsnapshot.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-StoragePluginArchivedSnapshot
 
-In this article
 
 Short Description
 
@@ -56,6 +57,4 @@ This cmdlet returns the archived snapshot with the pdcqastg11:-pure14-AAB97A1858
 | --- |
 | Get-StoragePluginArchivedSnapshot -Name pdcqastg11:-pure14-AAB97A18587ghudDaPRSF-t5kbsdr1E |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

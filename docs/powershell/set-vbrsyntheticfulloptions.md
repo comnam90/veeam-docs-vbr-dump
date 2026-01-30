@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRSyntheticFullOptions (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsyntheticfulloptions.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRSyntheticFullOptions (obsolete)
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Related Commands
 * [Get-VBRComputerBackupJob](get-vbrcomputerbackupjob.md)
 * [New-VBRSyntheticFullOptions](new-vbrsyntheticfulloptions.md)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

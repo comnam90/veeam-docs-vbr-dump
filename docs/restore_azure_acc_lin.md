@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Configuring Helper Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_acc_lin.html"
 last_updated: "10/23/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Configuring Helper Appliance
 
-In this article
 
 This step is available if you have selected Enable direct restore of Linux-based computers at the Subscription step of the wizard.
 
@@ -49,6 +50,4 @@ After you have configured all the helper appliances, click Apply and wait while 
 
 ![Step 5. Configuring Helper Appliance](images/azure_config_linux.webp)
 
-Page updated 10/23/2023
 
-Page content applies to build 13.0.1.1071

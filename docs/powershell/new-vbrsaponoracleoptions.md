@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSAPOnOracleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsaponoracleoptions.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSAPOnOracleOptions
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This example shows how to create a SAP on Oracle backup settings for application
 | --- |
 | New-VBRSAPOnOracleOptions -ParallelChannelsCount 3 |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

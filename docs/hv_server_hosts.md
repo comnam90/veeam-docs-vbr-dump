@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Hosts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_hosts.html"
 last_updated: "8/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Hosts
 
-In this article
 
 This step is available only if you selected to add an SCVMM server or a Microsoft Hyper-V cluster.
 
@@ -19,6 +20,4 @@ If necessary, you can instruct Veeam Backup & Replication to install components 
 
 ![Step 4. Select Hosts](images/add_server_hv_apply_cluster.webp)
 
-Page updated 8/9/2025
 
-Page content applies to build 13.0.1.1071

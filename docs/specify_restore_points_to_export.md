@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Restore Points to Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_restore_points_to_export.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Restore Points to Export
 
-In this article
 
 At the Restore Point step of the wizard, do the following:
 
@@ -21,6 +22,4 @@ When selecting a backup job consisting of multiple machines, each machine will b
 
 [![Step 2. Select Restore Points to Export](images/export_vbk_4.webp)](images/export_vbk_4.webp)
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

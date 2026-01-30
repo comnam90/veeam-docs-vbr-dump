@@ -1,5 +1,7 @@
 ---
 title: "Copying Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copying_tapes.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copying Tapes
 
-In this article
 
 You can use the tape copy feature to migrate backups or files stored on previous generation tapes to newer ones.
 
@@ -34,6 +35,4 @@ To copy content of a tape to another one, use the Copy Tapes wizard.
 4. [Specify tape copy options](tape_copy_options.md).
 5. [Finish working with the wizard](tape_copy_finish.md).
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

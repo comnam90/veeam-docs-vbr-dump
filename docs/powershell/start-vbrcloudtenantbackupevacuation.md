@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRCloudTenantBackupEvacuation"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcloudtenantbackupevacuation.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRCloudTenantBackupEvacuation
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Get-VBRRepositoryExtent](get-vbrrepositoryextent.md)
 * [Get-VBRCloudTenant](get-vbrcloudtenant.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

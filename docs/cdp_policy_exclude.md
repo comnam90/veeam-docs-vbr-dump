@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Exclude Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_exclude.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Exclude Objects
 
-In this article
 
 After you have added VMs or VM containers to the CDP policy, you can specify which objects you want to exclude from being replicated.
 
@@ -49,6 +50,4 @@ To exclude VM disks:
 
 ![Step 4. Exclude Objects](images/cdp_policy_exclude_disk.webp "Exclude disks")
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Target Site"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_vbr_restore_document_libraries_specify_target_site.html"
 last_updated: "8/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Target Site
 
-In this article
 
 At this step of the wizard, specify web address of a target SharePoint site and provide credentials to connect to the Microsoft SharePoint server.
 
@@ -23,6 +24,4 @@ To specify web address of a target site and credentials to connect to SharePoint
 
 [![Specify Target Site Web Address](images/vbr_target_site.webp)](images/vbr_target_site.webp "Specify Target Site Web Address")
 
-Page updated 8/21/2023
 
-Page content applies to build 13.0.1.1071

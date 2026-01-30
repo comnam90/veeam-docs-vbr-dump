@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy Modes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_modes.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy Modes
 
-In this article
 
 Veeam Backup & Replication offers two backup copy modes:
 
@@ -70,6 +71,4 @@ Veeam Backup & Replication allows you to change the selected backup copy mode by
 
 [For Windows-based backup server] If you want to change the selected backup copy mode for a backup copy job created in earlier versions of Veeam Backup & Replication, it must have the per-machine backup with separate metadata files format. If a backup copy job has the per-machine backup with single metadata file format, you must upgrade its backup chain format to per-machine with separate metadata files or detach backups to start a new backup chain. For more information, see [Upgrading Backup Chain Formats](backup_copy_change_type.md).
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

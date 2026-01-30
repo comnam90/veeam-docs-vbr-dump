@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Complete Key Restore Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_without_pass_complete.html"
 last_updated: "11/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Complete Key Restore Process
 
-In this article
 
 This procedure is performed by the Veeam Backup Administrator on the backup server.
 
@@ -20,6 +21,4 @@ To complete the key restore process, do the following:
 
 ![Step 3. Complete Key Restore Process](images/encryption_key_restore_finish.webp)
 
-Page updated 11/20/2024
 
-Page content applies to build 13.0.1.1071

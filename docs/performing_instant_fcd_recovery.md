@@ -1,5 +1,7 @@
 ---
 title: "Performing Instant FCD Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_instant_fcd_recovery.html"
 last_updated: "6/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Instant FCD Recovery
 
-In this article
 
 To register VM disks as FDCs, use the Instant Disk Recovery wizard.
 
@@ -21,6 +22,4 @@ To register VM disks as FDCs, use the Instant Disk Recovery wizard.
 8. [Specify a restore reason](instant_fcd_recovery_reason.md).
 9. [Verify recovery settings](instant_fcd_recovery_summary.md).
 
-Page updated 6/21/2023
 
-Page content applies to build 13.0.1.1071

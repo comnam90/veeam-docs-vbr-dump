@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCDPPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcdppolicy.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCDPPolicy
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Examples
 | --- | --- |
 | This command returns all CDP policies that are created on the backup server.  |  | | --- | | Get-VBRCDPPolicy | |
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

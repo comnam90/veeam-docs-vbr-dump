@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRGoogleCloudAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgooglecloudaccount.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRGoogleCloudAccount
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command gets a Google Cloud credentials record by the ID.  |  | | --- | | Get-VBRGoogleCloudAccount -Id "936edf7c-7cf3-4dbd-9895-c7485ef4bb2c", "936edf7c-7cf3-4ddc-9895-c7485ef4bb2c" | |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

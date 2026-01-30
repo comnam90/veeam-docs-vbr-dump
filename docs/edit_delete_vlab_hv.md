@@ -1,5 +1,7 @@
 ---
 title: "Editing and Deleting Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/edit_delete_vlab_hv.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing and Deleting Virtual Labs
 
-In this article
 
 You can edit settings of a virtual lab or delete the virtual lab.
 
@@ -29,6 +30,4 @@ To remove a virtual lab:
 
 [![Editing and Deleting Virtual Labs](images/delete_vlab_hv.webp)](images/delete_vlab_hv.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

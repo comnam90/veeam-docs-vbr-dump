@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRDeletedDehydratedBackupFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrdeleteddehydratedbackupfile.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRDeletedDehydratedBackupFile
 
-In this article
 
 Short Description
 
@@ -49,6 +50,4 @@ This command returns backup files with MonthlyReport in name.
 | --- |
 | Get-VBRDeletedDehydratedBackupFile -Name "MonthlyReport" |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing Tape Devices"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_tape_libraries.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Tape Devices
 
-In this article
 
 If you want to stop using a tape library or standalone tape drive, you can remove it from your Veeam backup console.
 
@@ -31,6 +32,4 @@ To remove a tape device:
 
 [![Removing Tape Devices](images/remove_library.webp)](images/remove_library.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

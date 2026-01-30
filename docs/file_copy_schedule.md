@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Define Job Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_copy_schedule.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Define Job Schedule
 
-In this article
 
 At the Schedule step of the wizard, you can choose to run the file copy job manually or schedule it to run regularly.
 
@@ -38,6 +39,4 @@ For example, if you configure a job to run with a 2-hour interval and define per
 
 ![Step 5. Define Job Schedule](images/file_copy_schedule.webp)
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

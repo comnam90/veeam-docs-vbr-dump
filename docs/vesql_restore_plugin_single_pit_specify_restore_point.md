@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_single_pit_specify_restore_point.html"
 last_updated: "4/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Restore Point
 
-In this article
 
 At this step of the wizard, select a restore point from which you want to restore your database.
 
@@ -20,6 +21,4 @@ To quickly find the necessary restore point, you can sort the restore points acc
 
 [![Specifying Restore Point](images/vesql_restore_plugin_single_specify_restore_point.webp)](images/vesql_restore_plugin_single_specify_restore_point.webp "Specifying Restore Point")
 
-Page updated 4/1/2025
 
-Page content applies to build 13.0.1.1071

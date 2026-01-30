@@ -1,5 +1,7 @@
 ---
 title: "Infrastructure Overview (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_infrastructure.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Infrastructure Overview (Storage Systems)
 
-In this article
 
 Infrastructure for storage integration includes the following components:
 
@@ -54,6 +55,4 @@ Related Topics
 
 [Planning and Preparation](storage_limitations.md)
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

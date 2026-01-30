@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Create Recovery Media Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/image_create_launch.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Create Recovery Media Wizard
 
-In this article
 
 To launch the Create Recovery Media wizard:
 
@@ -22,6 +23,4 @@ To launch the Create Recovery Media wizard:
 
 [![Create Recovery Media](images/protected_computer_media.webp)](images/protected_computer_media.webp "Create Recovery Media")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

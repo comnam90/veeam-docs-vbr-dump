@@ -1,5 +1,7 @@
 ---
 title: "How Restore to Microsoft Azure Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_hiw.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore to Microsoft Azure Works
 
-In this article
 
 The restore process differs for Microsoft Windows and Linux workloads.
 
@@ -50,6 +51,4 @@ To restore a Linux workload, Veeam Backup & Replication performs the following s
 
 ![How Restore to Microsoft Azure Works](images/azure_hiw_linux.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

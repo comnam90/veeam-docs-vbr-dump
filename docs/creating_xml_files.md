@@ -1,5 +1,7 @@
 ---
 title: "XML Files with Machine Roles Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_xml_files.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # XML Files with Machine Roles Description
 
-In this article
 
 Machine roles that you can assign to verified machines and machines from the application group are described in XML files. These XML files are stored in the /var/lib/veeam/sbroles folder on the backup server.
 
@@ -42,6 +43,4 @@ The XML file with the role description contains the following tags and parameter
 | <DisableWinFirewall> | Required | Must a firewall be disabled for this machine role: True or False. |
 | <PingEnabled> | Required | Must a ping test be enabled for this machine role: True or False. |
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Windows Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ms_server.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Windows Server
 
-In this article
 
 You can use a Microsoft Windows server with local or directly attached storage as a backup repository. The storage can be a local disk, directly attached disk-based storage (such as a USB hard drive), or iSCSI/FC SAN LUN in case the server is connected into the SAN fabric.
 
@@ -48,6 +49,4 @@ Related Topics
 * [Adding Microsoft Windows Repositories Using Console](repo_add.md)
 * [Adding Microsoft Windows Repositories Using Web UI](add_repo_web.md)
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

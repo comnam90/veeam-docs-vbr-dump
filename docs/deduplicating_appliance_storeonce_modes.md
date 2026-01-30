@@ -1,5 +1,7 @@
 ---
 title: "Operational Modes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_storeonce_modes.html"
 last_updated: "11/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Operational Modes
 
-In this article
 
 Depending on the storage configuration and type of the backup target, HPE StoreOnce can work in the following modes:
 
@@ -74,6 +75,4 @@ Related Topics
 * [HPE StoreOnce Supported Features](storeonce_supported_features.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 11/24/2025
 
-Page content applies to build 13.0.1.1071

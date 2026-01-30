@@ -1,5 +1,7 @@
 ---
 title: "Encrypting Standalone Application Backups in Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypting_backups.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Encrypting Standalone Application Backups in Backup Repositories
 
-In this article
 
 At the storage encryption level, you can encrypt backup files created by the following standalone applications:
 
@@ -53,6 +54,4 @@ To encrypt standalone application backups, do the following:
 
 [![Encrypting Standalone Application Backups in Backup Repositories](images/ep_permissions_settings.webp)](images/ep_permissions_settings.webp)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring Objects from Archive Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_data_recovery_restore_files_from_archive.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Objects from Archive Repository
 
-In this article
 
 You can restore any object from the archive repository to the state of any object version stored in the archive. Depending on the circumstances, such a restore can require different actions.
 
@@ -41,6 +42,4 @@ To restore objects from the archive repository, for example, from an object stor
 
 1. Restore objects from the archive backup as described in the [Restoring Individual Objects or Versions](os_data_recovery_restore_individual_objects.md) section.
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "On-Demand Sandbox for Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sandbox_storages.html"
 last_updated: "3/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # On-Demand Sandbox for Storage Snapshots
 
-In this article
 
 In On-Demand Sandbox, you can start VMs from snapshots existing on the production storage array. You can use On-Demand Sandbox to test VMs, troubleshoot issues, perform training and so on.
 
@@ -44,6 +45,4 @@ To overcome this situation, Veeam Backup & Replication offers the mechanism of t
 2. During the next 20 minutes, Veeam Backup & Replication attempts to mount the datastore with the time interval of 2 minutes.
 3. If resources are freed and Veeam Backup & Replication manages to mount the datastore, VMs in the application group are started and the SureBackup job continues to run. If resources on the ESXi hosts are not freed within 20 minutes, the SureBackup job fails.
 
-Page updated 3/18/2025
 
-Page content applies to build 13.0.1.1071

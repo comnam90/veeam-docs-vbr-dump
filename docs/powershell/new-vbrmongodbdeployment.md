@@ -1,5 +1,7 @@
 ---
 title: "New-VBRMongoDBDeployment"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmongodbdeployment.html"
 last_updated: "9/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRMongoDBDeployment
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Related Command
 
 [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 9/16/2025
 
-Page content applies to build 13.0.1.1071

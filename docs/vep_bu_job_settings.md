@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_bu_job_settings.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 When you create backup jobs, replication jobs, and CDP policies, make sure to enable application-aware processing in the Veeam Backup & Replication console.
 
@@ -23,6 +24,4 @@ Consider the following:
 * For VeeamZIP backups, application-aware processing is not supported. For more information, see [VeeamZIP](veeamzip.md).
 * For storage snapshots, application-aware processing is automatically enabled. For more information, see [Application Item Restore from Storage Snapshots](restore_veeam_explorers_snapshots.md).
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Proxies"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/proxies.html"
 last_updated: "2/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Proxies
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -34,6 +35,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | Note |
 | Operations with file backup proxies are described in the [Adding File Share Backup Proxies](nas_backup_proxy.md) section. |
 
-Page updated 2/7/2025
 
-Page content applies to build 13.0.1.1071

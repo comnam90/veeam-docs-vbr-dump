@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Target SQL Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_target_server_schema.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Target SQL Server Settings
 
-In this article
 
 At this step of the wizard, specify the target SQL Server connection parameters:
 
@@ -39,6 +40,4 @@ To browse for a Microsoft SQL Server instance, perform one of the following acti
 
 [![Browsing For Servers](images/browsing_for_staging.webp)](images/browsing_for_staging.webp "Browsing For Servers")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

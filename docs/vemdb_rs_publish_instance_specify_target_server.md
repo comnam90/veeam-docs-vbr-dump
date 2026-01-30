@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Target Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_publish_instance_specify_target_server.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Target Server
 
-In this article
 
 At this step of the wizard, specify credentials to access the target Linux machine with MongoDB.
 
@@ -43,6 +44,4 @@ To locate a file, click Browse and select a key.
 
 [![Specifying Target Server Credentials](images/vemdb_rs_publish_instance_specify_target_server.webp)](images/vemdb_rs_publish_instance_specify_target_server.webp "Specifying Target Server Credentials")
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

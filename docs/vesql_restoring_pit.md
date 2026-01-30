@@ -1,5 +1,7 @@
 ---
 title: "Restoring Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_pit.html"
 last_updated: "9/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Point-in-Time State
 
-In this article
 
 You can restore a Microsoft SQL Server database as of a point-in-time state in your backup file.
 
@@ -23,6 +24,4 @@ To restore SQL Server databases as of a point-in-time state, use the Restore wiz
 3. [Fine-tune the restore point](vesql_fine_tune_pit.md).
 4. [Review the restore summary](vesql_restore_single_pit_summary.md).
 
-Page updated 9/26/2024
 
-Page content applies to build 13.0.1.1071

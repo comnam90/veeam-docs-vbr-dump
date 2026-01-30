@@ -1,5 +1,7 @@
 ---
 title: "Port Groups and VLAN IDs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_multihost_portgroup_vlan_id.html"
 last_updated: "1/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Port Groups and VLAN IDs
 
-In this article
 
 You need to be extremely careful when specifying port group and VLAN ID settings for the advanced multi-host virtual lab.
 
@@ -36,6 +37,4 @@ A DVS port group has VLAN ID settings. If you select an existing port group for 
 
 * If VLAN ID settings are specified incorrectly, Veeam Backup & Replication will report an error informing that the selected port group exists but cannot be used due to incorrect VLAN ID settings.
 
-Page updated 1/26/2024
 
-Page content applies to build 13.0.1.1071

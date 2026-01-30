@@ -1,5 +1,7 @@
 ---
 title: "How Snapshot Hunter Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_hunter_hiw.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Snapshot Hunter Works
 
-In this article
 
 A temporary snapshot of the VM is taken and then removed during every backup or replication job session. To remove the snapshot, Veeam Backup & Replication triggers the VMware snapshot consolidation mechanism that includes two steps:
 
@@ -47,6 +48,4 @@ To view information on the Snapshot Hunter sessions, in the Veeam Backup & Repli
 
 In case no consolidation attempt could fit the backup window, the warning appears in the job statistics.
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

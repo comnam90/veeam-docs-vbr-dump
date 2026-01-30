@@ -1,5 +1,7 @@
 ---
 title: "Protection Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_hiw.html"
 last_updated: "5/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Protection Groups
 
-In this article
 
 In Veeam Backup & Replication, computers that you want to protect with Veeam Plug-Ins are organized into protection groups. A protection group is a container in the Veeam Backup & Replication inventory aimed to combine protected computers of a specific type. For example, you can use a dedicated protection group for computers of the same type or computers running the same OS type to simplify management of such computers. You can also use a separate protection group for computers that you want to manage in a different way from other computers in your infrastructure.
 
@@ -28,6 +29,4 @@ Related Tasks
 
 [Creating Protection Groups](protection_group_create.md)
 
-Page updated 5/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Google Cloud Service Accounts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_gcp.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,9 +9,8 @@ product_version: "13.0.1.1071"
 
 # Google Cloud Service Accounts
 
-In this article
 
-You can create a record for credentials that you plan to use to connect to Google Compute Engine within Google Cloud. This Google Cloud service account is used by Veeam Backup & Replication to perform direct restore to Google Compute Engine and backup and restore operations available with Google Cloud Plug-In for Veeam Backup & Replication. For more information on the latter, see the [Veeam Backup for Google Cloud User Guide](https://helpcenter.veeam.com/docs/vbgc/guide/integration_vbr.html?ver=7).
+You can create a record for credentials that you plan to use to connect to Google Compute Engine within Google Cloud. This Google Cloud service account is used by Veeam Backup & Replication to perform direct restore to Google Compute Engine and backup and restore operations available with Veeam Plug-in for Google Cloud. For more information on the latter, see the [Veeam Backup for Google Cloud User Guide](https://helpcenter.veeam.com/docs/vbgc/guide/integration_vbr.html?ver=7).
 
 To create a credentials record for a Google Cloud service account:
 
@@ -20,7 +21,7 @@ To create a credentials record for a Google Cloud service account:
 |  |
 | --- |
 | Note |
-| If you select Create a new service account, the created service account will be granted the [Owner IAM role](https://cloud.google.com/iam/docs/understanding-roles?authuser=1#basic) with a wide scope of permissions and capabilities. If you want to limit the list of permissions granted to the service account, create a user-managed service account, as described in the [Google Cloud documentation](https://cloud.google.com/iam/docs/service-accounts#user-managed), with the limited set of permissions:   * For the information on permissions required to restore to Google Compute Engine, see [Google Compute Engine IAM User Permissions](gcp_iam_permissions.md). * For the information on permissions required to deploy Google Cloud Plug-In for Veeam Backup & Replication, see the [Permissions](https://helpcenter.veeam.com/docs/vbgc/guide/plugin_permissions.html?ver=7) section in the Veeam Backup for Google Cloud User Guide. |
+| If you select Create a new service account, the created service account will be granted the [Owner IAM role](https://cloud.google.com/iam/docs/understanding-roles?authuser=1#basic) with a wide scope of permissions and capabilities. If you want to limit the list of permissions granted to the service account, create a user-managed service account, as described in the [Google Cloud documentation](https://cloud.google.com/iam/docs/service-accounts#user-managed), with the limited set of permissions:   * For the information on permissions required to restore to Google Compute Engine, see [Google Compute Engine IAM User Permissions](gcp_iam_permissions.md). * For the information on permissions required to deploy Veeam Plug-in for Google Cloud, see the [Permissions](https://helpcenter.veeam.com/docs/vbgc/guide/plugin_permissions.html?ver=7) section in the Veeam Backup for Google Cloud User Guide. |
 
 ![Google Cloud Service Accounts](images/cloud_credentials_gcp_type.webp)
 
@@ -55,6 +56,4 @@ Related Topics
 * [External Repositories](external_repository.md)
 * [Restore to Google Compute Engine](restore_google.md)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

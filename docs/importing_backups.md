@@ -1,5 +1,7 @@
 ---
 title: "Importing Backups Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/importing_backups.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Importing Backups Manually
 
-In this article
 
 You may need to import backups to Veeam Backup & Replication in the following situations:
 
@@ -51,6 +52,4 @@ Related Topics
 * [Importing Transaction Logs](import_sql_logs.md)
 * [Importing Backup Files from Scale-Out Backup Repositories](import_sobr.md)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

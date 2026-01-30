@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRDiscoveredComputerUpdate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrdiscoveredcomputerupdate.html"
 last_updated: "1/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRDiscoveredComputerUpdate
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Examples
 | --- | --- |
 | This command returns private fixes by the major and minor version numbers, the build number and the revision number.  |  | | --- | | Get-VBRDiscoveredComputerUpdate -AgentVersion 2.1.10.304 | |
 
-Page updated 1/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_tapes.html"
 last_updated: "10/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Tapes
 
-In this article
 
 You can perform the following operations with tapes:
 
@@ -24,6 +25,4 @@ You can perform the following operations with tapes:
 * [View data on tapes](viewing_backup_sets_on_tape.md).
 * [Copy tapes](copying_tapes.md).
 
-Page updated 10/26/2023
 
-Page content applies to build 13.0.1.1071

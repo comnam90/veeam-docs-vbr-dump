@@ -1,5 +1,7 @@
 ---
 title: "Simple Deployment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/simple.html"
 last_updated: "10/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Simple Deployment
 
-In this article
 
 The simple deployment scenario is good for small virtual environments or for the purpose of the Veeam Backup & Replication evaluation. In this scenario, Veeam Backup & Replication and all services needed for data protection tasks are installed on a single Windows-based machine.
 
@@ -52,6 +53,4 @@ Related Topics
 
 [Distributed Deployment](distributed.md)
 
-Page updated 10/14/2025
 
-Page content applies to build 13.0.1.1071

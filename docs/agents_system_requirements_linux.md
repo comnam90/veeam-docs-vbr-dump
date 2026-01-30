@@ -1,5 +1,7 @@
 ---
 title: "System Requirements for Linux Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_linux.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements for Linux Computers
 
-In this article
 
 You can use Veeam Backup & Replication to manage Veeam Agent for Linux that was installed using a package with the Veeam kernel module dependency or using a nosnap package without dependency on the Veeam kernel module. On IBM Power Systems, Veeam Agent for Linux can be installed using a special nosnap package — Veeam Agent for Linux on Power.
 
@@ -134,6 +135,4 @@ Software
 
 * The python3 package or another RPM package providing a /usr/bin/python3 binary is required for RHEL 8.4 and later distributions if a pre-built binary kmod-veeamsnap package is to be installed.
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

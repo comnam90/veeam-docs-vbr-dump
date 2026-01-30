@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRCloudMaintenanceMode"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrcloudmaintenancemode.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRCloudMaintenanceMode
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ This command returns the cloud infrastructure to the normal operational mode.
 | --- |
 | Disable-VBRCloudMaintenanceMode |
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

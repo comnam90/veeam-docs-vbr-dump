@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRPluginRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrpluginrestoresession_standalone.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRPluginRestoreSession
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Examples
 | --- | --- |
 | This command returns the ebea2113-dacb-4f5f-ac2a-18794fb6d4aa session.  |  | | --- | | Get-VBRPluginRestoreSession -Id ebea2113-dacb-4f5f-ac2a-18794fb6d4aa | |
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

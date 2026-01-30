@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Restore Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_mode_hv.html"
 last_updated: "3/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Restore Mode
 
-In this article
 
 At the Restore Mode step of the wizard, choose the necessary restore mode:
 
@@ -38,6 +39,4 @@ For more information on quick rollback, its requirements and limitations, see [Q
 
 ![Step 4. Select Restore Mode](images/hv_restore_fullvm_mode.webp)
 
-Page updated 3/5/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Converting Backup Copy to Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy_mssql.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Converting Backup Copy to Backup
 
-In this article
 
 If you have imported Veeam Plug-In backup copies from another server, you can convert them into regular backup files. When you convert a backup copy to a backup, Veeam Plug-In creates a backup job with the converted backup. You can use this backup job to continue a backup chain and use the converted backup as a restore point.
 
@@ -38,6 +39,4 @@ To convert a backup copy to a primary backup, do the following:
 | --- |
 | Backup copies available for promotion to the primary backup target:  1. Backup Copy Job 1\SERV01 Microsoft SQL backup (Default Backup Repository)  Select a backup copy: 1  Proceed with the action?  1. Promote backup copy destination to the primary backup target  2. Cancel  Enter selection: 1  Promoting backup copy destination  Done |
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Location for Helper Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_proxy_vm.html"
 last_updated: "6/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Location for Helper Appliance
 
-In this article
 
 The Helper Appliance step of the wizard is available only if you have selected the Use a temporary helper appliance option at the [Restore Point](multios_restore_host_vm.md) step.
 
@@ -61,6 +62,4 @@ Consider that the backup server and the mount server must have access to the hel
 
 ![Step 5. Specify Location for Helper Appliance (2)](images/guest_all_os_restore_flr.webp)
 
-Page updated 6/25/2025
 
-Page content applies to build 13.0.1.1071

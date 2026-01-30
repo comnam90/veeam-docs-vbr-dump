@@ -1,5 +1,7 @@
 ---
 title: "Configuring Roles"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configure_roles.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Roles
 
-In this article
 
 To perform Veeam Backup & Replication operations, you can either assign the [default roles](#default_roles) to users or create [custom roles](#custom_roles) depending on your needs.
 
@@ -77,6 +78,4 @@ Unstructured Data Backup
 * If the original location is included in the target restore scope, the Copy to option in [specific file and folder restore](file_share_recovery_restore_files_folders.md) is unavailable.
 * The Copy to option may be used to restore to more locations than those defined in the target restore scope.
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

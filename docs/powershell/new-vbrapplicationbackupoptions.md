@@ -1,5 +1,7 @@
 ---
 title: "New-VBRApplicationBackupOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrapplicationbackupoptions.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRApplicationBackupOptions
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Examples
 | --- | --- |
 | This command schedules an application backup policy to create full backups monthly. The policy will create full backups on the 15th of January, April and September.  |  | | --- | | New-VBRApplicationBackupOptions -FullBackupScheduleType Monthly -DayNumber OnDay -DayOfMonth 15 -SelectedMonths January, April, September | |
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

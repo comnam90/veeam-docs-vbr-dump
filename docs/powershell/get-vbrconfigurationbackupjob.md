@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRConfigurationBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrconfigurationbackupjob.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRConfigurationBackupJob
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command returns the configuration backup job.
 | --- |
 | Get-VBRConfigurationBackupJob |
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

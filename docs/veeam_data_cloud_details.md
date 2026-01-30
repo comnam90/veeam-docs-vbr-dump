@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_details.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Container step of the wizard, specify the folder that will be used to store data, the storage consumption and the immutability period.
 
@@ -37,6 +38,4 @@ To prohibit deletion of blocks of data from object storage, select the Make rece
 
 ![Step 4. Specify Object Storage Settings](images/veeam_vault_immutability.webp)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

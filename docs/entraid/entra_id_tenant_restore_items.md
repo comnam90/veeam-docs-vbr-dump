@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Items to Restore"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_restore_items.html"
 last_updated: "12/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Items to Restore
 
-In this article
 
 In the Microsoft Entra ID Tenant Restore wizard, switch to the necessary tab and then do either of the following:
 
@@ -26,6 +27,4 @@ Veeam Backup for Microsoft Entra ID allows you to restore multiple properties at
 
 [![Launch Group Restore](images/entra_id_restore_group_launch.webp)](images/entra_id_restore_group_launch.webp "Launch Group Restore")
 
-Page updated 12/18/2025
 
-Page content applies to build 13.0.1.1071

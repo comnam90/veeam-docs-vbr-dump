@@ -1,5 +1,7 @@
 ---
 title: "New-VBRGFSRetentionPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrgfsretentionpolicy_azure.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRGFSRetentionPolicy
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ This command creates a GFS retention policy for a backup copy job with the follo
 | --- |
 | New-VBRGFSRetentionPolicy -RestorePoints 2 -GFSWeeklyBackups 3 -GFSMonthlyBackups 4 -GFSQuarterlyBackups 5 -GFSYearlyBackups 9 |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

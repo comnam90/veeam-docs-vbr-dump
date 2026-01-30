@@ -1,5 +1,7 @@
 ---
 title: "Editing Backup Job Settings"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_edit_job_setting.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Backup Job Settings
 
-In this article
 
 For each backup job, you can modify the settings configured while creating the job:
 
@@ -32,6 +33,4 @@ You will follow the same steps you followed when creating the job and can change
 
 [![Edit Job Settings](images/entra_id_edit_job.webp)](images/entra_id_edit_job.webp "Edit Job Settings")
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

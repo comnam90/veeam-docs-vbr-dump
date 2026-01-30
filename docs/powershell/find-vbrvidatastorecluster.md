@@ -1,5 +1,7 @@
 ---
 title: "Find-VBRViDatastoreCluster"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/find-vbrvidatastorecluster.html"
 last_updated: "2/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Find-VBRViDatastoreCluster
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Find-VBRViStoragePolicy](find-vbrvistoragepolicy.md)
 
-Page updated 2/5/2024
 
-Page content applies to build 13.0.1.1071

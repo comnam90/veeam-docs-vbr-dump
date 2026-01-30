@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Review Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_mount_review.html"
 last_updated: "10/17/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Review Components
 
-In this article
 
 At the Review step of the wizard, review what components will be processed on the mount server server and their status.
 
@@ -17,6 +18,4 @@ If the backup repository contains guest file system index files, select the Impo
 
 ![Step 6. Review Components](images/s3_add_review.webp "Review S3 Object Storage Setting")
 
-Page updated 10/17/2023
 
-Page content applies to build 13.0.1.1071

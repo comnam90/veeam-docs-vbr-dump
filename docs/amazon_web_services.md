@@ -1,5 +1,7 @@
 ---
 title: "Amazon Web Services"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_web_services.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Amazon Web Services
 
-In this article
 
 Veeam Backup & Replication with AWS Plug-In for Veeam Backup & Replication allows you to add AWS backup appliances to Veeam Backup & Replication and manage data protection and recovery operations for all these appliances from a single Veeam Backup & Replication console. You can use Veeam Backup & Replication with the installed plug-in to perform the following operations:
 
@@ -40,6 +41,4 @@ Veeam Backup & Replication with AWS Plug-In for Veeam Backup & Replication allow
 
 For more information, see the [Veeam Backup for AWS User Guide](https://helpcenter.veeam.com/docs/vbaws/guide/welcome.html?ver=10).
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

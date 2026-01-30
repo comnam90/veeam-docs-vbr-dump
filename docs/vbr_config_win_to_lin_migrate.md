@@ -1,5 +1,7 @@
 ---
 title: "Migrating Veeam Backup & Replication to Linux-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_win_to_lin_migrate.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating Veeam Backup & Replication to Linux-Based Backup Server
 
-In this article
 
 If you need to migrate Veeam Backup & Replication from Windows-based backup server to Linux-based backup server, you can back up its configuration database, install Veeam Backup & Replication on the target server and restore the configuration data from the backup. As a result, you will have new Veeam Backup & Replication server with settings, jobs and backup infrastructure from the old server.
 
@@ -93,6 +94,4 @@ After you migrate the configuration backup, finalize the configuration:
 | Note |
 | If the Veeam Backup & Replication server was added to the Veeam Backup Enterprise Manager or Veeam ONE infrastructure, you must add the new backup server and delete the old one after the migration. |
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

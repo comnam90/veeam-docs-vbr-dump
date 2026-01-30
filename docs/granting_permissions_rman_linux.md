@@ -1,5 +1,7 @@
 ---
 title: "Granting User Permissions on Linux and UNIX Machines"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_rman_linux.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Granting User Permissions on Linux and UNIX Machines
 
-In this article
 
 On Linux and UNIX machines, you can set up access to the plug-in configuration files in command line interface.
 
@@ -46,6 +47,4 @@ where <groupName> is the name of the created group.
 | --- |
 | sudo chmod 660 /opt/veeam/VeeamPluginforOracleRMAN/veeam\_config.xml |
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

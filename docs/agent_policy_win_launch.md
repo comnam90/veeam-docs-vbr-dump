@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Agent Backup Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_launch.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Agent Backup Job Wizard
 
-In this article
 
 You can create a Veeam Agent backup policy for protected computers that run a Microsoft Windows OS in one of the following ways:
 
@@ -49,6 +50,4 @@ Veeam Backup & Replication will start the New Agent Backup Job wizard and add th
 
 [![Launch New Backup Job Wizard](images/agent_backup_job_launch.webp)](images/agent_backup_job_launch.webp "Launch New Backup Job Wizard")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

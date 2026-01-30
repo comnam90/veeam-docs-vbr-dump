@@ -1,5 +1,7 @@
 ---
 title: "Disabling Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_disable.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disabling Protection Group
 
-In this article
 
 You can temporary disable a protection group. When you disable a protection group, you disable scheduled discovery of protected computers added to this protection group. This may be required, for example, if a new version of Veeam Agent or Veeam Plug-In appears on the Veeam Backup & Replication server, and you do not want to deploy a new version of the product to all protected computers at once. Instead, you can disable the protection group, test the deployment process on a specific computer in this group, and then enable the protection group to let Veeam Backup & Replication deploy a new version of the product to remaining computers.
 
@@ -34,6 +35,4 @@ To enable automatic discovery for the protection group:
 
 [![Disable Protection Group](images/mongo_protection_group_disable.webp)](images/mongo_protection_group_disable.webp "Disable Protection Group")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

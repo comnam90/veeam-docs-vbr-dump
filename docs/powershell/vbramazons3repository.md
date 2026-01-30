@@ -1,5 +1,7 @@
 ---
 title: "VBRAmazonS3Repository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbramazons3repository.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAmazonS3Repository
 
-In this article
 
 Contains settings of the Amazon S3 object storage repository.
 
@@ -22,6 +23,4 @@ Properties
 | ImmutabilityPeriod | Int | Immutability period in days. |
 | MountServerOptions | [VBRRepositoryMountServerOptions](vbrrepositorymountserveroptions.md) | Mount server settings. |
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

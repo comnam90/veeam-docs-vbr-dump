@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Server Name or Address"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_server_name_web.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Server Name or Address
 
-In this article
 
 At the Name step of the wizard, specify an address and description for the VMware vSphere server.
 
@@ -19,6 +20,4 @@ If you add a VMware Cloud on AWS vCenter Server, use its Fully Qualified Domain 
 
 [![Step 2. Specify Server Name or Address](images/add_server_vmware_name_web.webp)](images/add_server_vmware_name_web.webp)
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

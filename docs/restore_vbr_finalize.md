@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Finalize Restore Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_finalize.html"
 last_updated: "2/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Finalize Restore Process
 
-In this article
 
 After the restore process has finished, you may need to perform the following actions to finalize the configuration database restore:
 
@@ -55,6 +56,4 @@ After the restore process is complete, Veeam Backup & Replication will check if 
 
 To upgrade backup infrastructure components, select check boxes next to the necessary components and click Next. If some component fails to upgrade, you can get back to a previous step of the wizard and repeat the procedure or close the wizard and upgrade the components manually. For more information, see [Upgrading Infrastructure Components](components_update.md).
 
-Page updated 2/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRInternetProxyUpdateOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrinternetproxyupdateoptions.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRInternetProxyUpdateOptions
 
-In this article
 
 Contains proxy update settings.
 
@@ -25,6 +26,4 @@ Related Commands
 
 [Get-VBRInternetProxyUpdateOptions](get-vbrinternetproxyupdateoptions.md)
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

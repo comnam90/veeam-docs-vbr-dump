@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRGlobalNotificationOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrglobalnotificationoptions.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRGlobalNotificationOptions
 
-In this article
 
 Short Description
 
@@ -49,6 +50,4 @@ This command returns global notification settings. The cmdlet output will contai
 | --- |
 | Get-VBRGlobalNotificationOptions  StorageSpaceThresholdEnabled   : True  StorageSpaceThreshold          : 10  DatastoreSpaceThresholdEnabled : True  DatastoreSpaceThreshold        : 10  SkipVMSpaceThresholdEnabled    : True  SkipVMSpaceThreshold           : 5  NotifyOnSupportExpiration      : True  NotifyOnUpdates                : True |
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

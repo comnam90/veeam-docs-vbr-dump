@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Veeam Agent Access Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hp_3par_agents_access.html"
 last_updated: "9/28/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Veeam Agent Access Options
 
-In this article
 
 [This step is available if you have selected the Block storage for Microsoft Windows servers check box at the [Specify HPE Web Services API Address and Storage Role](hp_3par_add_name.md) step of the wizard.]
 
@@ -41,6 +42,4 @@ After you finish working with the wizard, you can change the rescan scope and st
 
 ![Step 6. Specify Agents Access Options](images/hp_3par_add_agents.webp)
 
-Page updated 9/28/2023
 
-Page content applies to build 13.0.1.1071

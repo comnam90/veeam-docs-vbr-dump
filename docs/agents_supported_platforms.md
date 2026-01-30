@@ -1,5 +1,7 @@
 ---
 title: "Supported Applications"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_supported_platforms.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Supported Applications
 
-In this article
 
 Veeam Agent for Microsoft Windows
 
@@ -31,6 +32,4 @@ You can use Veeam Agent for Linux operating in the managed mode to create transa
 | MySQL | * MySQL database system versions 5.7 to 9.0 are supported. * Configurations with multiple MySQL installations or instances on the same machine are not supported. * MySQL Cluster versions are not supported. |
 | PostgreSQL | * PostgreSQL database system versions 13 – 17 are supported. * PostgreSQL clusters are not supported. |
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Cloud Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_target_cloud.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cloud Repository Settings
 
-In this article
 
 |  |
 | --- |
@@ -35,6 +36,4 @@ Related Topics
 
 [Backup to Veeam Cloud Connect Repository](agents_cloud_connect.md)
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

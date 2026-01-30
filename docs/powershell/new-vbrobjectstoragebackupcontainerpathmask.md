@@ -1,5 +1,7 @@
 ---
 title: "New-VBRObjectStorageBackupContainerPathMask"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrobjectstoragebackupcontainerpathmask.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRObjectStorageBackupContainerPathMask
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ This command defines that all objects that start with files/old will be excluded
 | --- |
 | $ExclusionMask = New-VBRObjectStorageBackupContainerPathMask -Container "Monthly Backups" -Path "files/old" |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

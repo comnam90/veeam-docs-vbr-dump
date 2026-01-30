@@ -1,5 +1,7 @@
 ---
 title: "Viewing History Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/history_statistics.html"
 last_updated: "7/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing History Statistics
 
-In this article
 
 The History view displays statistics for operations performed with Veeam Backup & Replication: backup and restore jobs, system operations, retention jobs and malware detection sessions. The History view shows data for all sessions stored in the configuration database.
 
@@ -26,6 +27,4 @@ The History view provides overall session statistics: name, status, start and en
 
 [![Viewing History Statistics](images/history_view.webp)](images/history_view.webp)
 
-Page updated 7/28/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Veeam Installer Service"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installer_service.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Installer Service
 
-In this article
 
 The Veeam Installer Service is a  Windows or Linux service that manages Veeam components and services in the following cases:
 
@@ -50,6 +51,4 @@ The Veeam Installer Service for Linux runs the following processes:
 * Web listener — listens to port 6160 for new request from Veeam Backup & Replication to deploy or update components and services. Also, validates the public certificate, the checksum and the digital signature of the installation package. By default, runs with root permissions as a child process of Veeam Linux Deployer. For the hardened repository, runs with reduced permissions.
 * Watchdog — monitors Veeam Linux Deployer and web listener processes and restarts them if required. Runs with root permissions as a child Veeam Linux Deployer process.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

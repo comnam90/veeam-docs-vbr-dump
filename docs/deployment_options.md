@@ -1,5 +1,7 @@
 ---
 title: "Deployment Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_options.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment Options
 
-In this article
 
 For  Veeam Backup & Replication on Linux, Veeam provides the following deployment options:
 
@@ -23,6 +24,4 @@ For  Veeam Backup & Replication on Windows, Veeam provides a Veeam Backup & Re
 * Veeam Backup & Replication console — can be installed on the Microsoft Windows machine with the Veeam Backup & Replication server or on a dedicated Microsoft Windows machine. For more information, see [Veeam Backup & Replication Console Installation](deploy_console.md).
 * Veeam Backup Enterprise Manager server — can be installed on the Microsoft Windows machine with the Veeam Backup & Replication server or on a dedicated Microsoft Windows machine. For more information, see [Enterprise Manager Deployment on Windows](https://helpcenter.veeam.com/docs/backup/em/deployment.html) in the Enterprise Manager User Guide.
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

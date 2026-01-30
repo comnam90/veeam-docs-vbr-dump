@@ -1,5 +1,7 @@
 ---
 title: "Configuring Helper Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_helper.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Helper Appliances
 
-In this article
 
 Before you configure helper appliances, consider the following:
 
@@ -16,6 +17,4 @@ Before you configure helper appliances, consider the following:
 
 Helper appliances are configured when you add a Microsoft Azure compute. For more information, see the Helper Appliance step description in the [Microsoft Azure Compute Accounts](restore_azure_accounts.md) section.
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

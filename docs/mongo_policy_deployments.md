@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Deployments"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_deployments.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Deployments
 
-In this article
 
 At the Deployments step of the wizard, select protection groups or replica sets whose data you want to back up.
 
@@ -39,6 +40,4 @@ To quickly find the necessary object, use the search field at the bottom of the 
 
 ![Step 3. Specify Deployments](images/mongo_policy_replica_set_add.webp)
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

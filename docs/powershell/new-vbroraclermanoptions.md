@@ -1,5 +1,7 @@
 ---
 title: "New-VBROracleRMANOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbroraclermanoptions.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBROracleRMANOptions
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command creates the Oracle RMAN backup settings for application backup poli
 | --- |
 | New-VBROracleRMANOptions -ParallelChannelsCount 3 |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

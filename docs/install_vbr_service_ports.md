@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Specify Service Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_service_ports.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Specify Service Ports
 
-In this article
 
 The Port Configuration step of the wizard is available if you have selected to configure installation settings manually.
 
@@ -20,6 +21,4 @@ At this step of the wizard, you can customize port number values that will be us
 
 ![Step 10. Specify Service Ports](images/installation_port_configuration.webp)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

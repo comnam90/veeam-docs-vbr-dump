@@ -1,5 +1,7 @@
 ---
 title: "Removing License Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_license_console.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing License Using Console
 
-In this article
 
 You can remove the installed license using the Veeam Backup & Replication console. When you remove a license, Veeam Backup & Replication will switch to the Veeam Backup & Replication Community Edition. For more information, see [Veeam Backup & Replication Community Edition](https://www.veeam.com/virtual-machine-backup-solution-free.html).
 
@@ -31,6 +32,4 @@ If you have both socket and instance licenses, you will be asked which license y
 
 1. Click Yes to confirm the license removal.
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

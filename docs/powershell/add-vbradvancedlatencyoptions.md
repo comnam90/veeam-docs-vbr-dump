@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAdvancedLatencyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbradvancedlatencyoptions.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAdvancedLatencyOptions
 
-In this article
 
 Short Description
 
@@ -77,6 +78,4 @@ Related Commands
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 * [Get-VBRHvServerVolume](get-vbrhvservervolume.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

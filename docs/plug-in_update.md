@@ -1,5 +1,7 @@
 ---
 title: "Update Notifications on Microsoft Windows-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plug-in_update.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Update Notifications on Microsoft Windows-Based Backup Server
 
-In this article
 
 [The following information applies to the Microsoft Windows-based backup server.]
 
@@ -19,6 +20,4 @@ To install the plug-in, follow the steps described in section [Installing Storag
 
 ![Update Notifications on Microsoft Windows-Based Backup Server](images/plugin_new.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

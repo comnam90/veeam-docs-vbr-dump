@@ -1,5 +1,7 @@
 ---
 title: "Licensing"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_licensing.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Licensing
 
-In this article
 
 Veeam Backup for Microsoft Entra ID is licensed by the number of protected Microsoft Entra ID users. Each 10 protected users consume one Veeam Universal License instance from the license scope. All Enabled Member users in the organization must be licensed, partial user coverage is not allowed by Microsoft Entra ID.
 
@@ -60,6 +61,4 @@ If you already use Veeam Backup & Replication and you have spare Veeam Univer
 
 If you have a legacy perpetual per-socket license, you must obtain Veeam Universal License instances and merge them with the existing perpetual socket license as described in the Veeam Backup & Replication User Guide, section [Merging Licenses](https://helpcenter.veeam.com/docs/vbr/userguide/license_merge.html?ver=13) section.
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

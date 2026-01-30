@@ -1,5 +1,7 @@
 ---
 title: "Restoring Multiple OneDrives"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_multiple_onedrives.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Multiple OneDrives
 
-In this article
 
 To restore multiple OneDrives, do the following:
 
@@ -17,6 +18,4 @@ To restore multiple OneDrives, do the following:
 4. [Select OneDrives](select_onedrives.md).
 5. [Review the operation summary](summary22.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

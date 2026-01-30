@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/bc_hpe_storeonce_maintenance_settings.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 In the maintenance settings, you can configure whether to perform a health check and after which period delete from the target HPE StoreOnce repository files deleted from the source repository. Note that the health check may lower the performance of the target repository. For details, see [Health Check for Backup Files](backup_copy_health_check.md#storeonce).
 
@@ -22,6 +23,4 @@ For example, if the option is set to 30 days and the backup file on the source r
 
 ![Maintenance Settings](images/backup_copy_hpe_storeonce_maintenance.webp)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

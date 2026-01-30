@@ -1,5 +1,7 @@
 ---
 title: "Performance Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_sobr_extents.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performance Tier
 
-In this article
 
 Performance tier of a scale-out backup repository is the level used for fast access to the data.
 
@@ -49,6 +50,4 @@ In This Section
 * [Transferring Backups to Performance Tier](data_transfer_to_performance_tier.md)
 * [Removing Performance Extents from Scale-Out Repositories](sobr_remove_extent.md)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

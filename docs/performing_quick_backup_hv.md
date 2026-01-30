@@ -1,5 +1,7 @@
 ---
 title: "Performing Quick Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_quick_backup_hv.html"
 last_updated: "2/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Quick Backup
 
-In this article
 
 You can create an ad-hoc incremental backup for one or more VMs — quick backup, and add it to the backup chain in the backup repository. A quick backup is useful when you want to produce an additional restore point for one or more VMs in the backup job and do not want to configure a new job or modify the existing one.
 
@@ -26,6 +27,4 @@ Veeam Backup & Replication will trigger a backup job to create a new incremental
 
 [![Click to zoom in](images/create_quick_backup_hv.webp)](images/create_quick_backup_hv.webp "Click to zoom in")
 
-Page updated 2/18/2025
 
-Page content applies to build 13.0.1.1071

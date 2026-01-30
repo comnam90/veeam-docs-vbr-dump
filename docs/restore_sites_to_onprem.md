@@ -1,5 +1,7 @@
 ---
 title: "Restore to On-Premises Microsoft Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sites_to_onprem.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to On-Premises Microsoft Servers
 
-In this article
 
 You can restore backed-up data to on-premises Microsoft SharePoint servers. For more information, see the [Adding On-Premises Microsoft Organizations](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_onpremises_org.html?ver=80) section of the Veeam Backup for Microsoft 365 User Guide.
 
@@ -19,6 +20,4 @@ To restore Microsoft SharePoint sites to an on-premises Microsoft SharePoint ser
 4. [Specify restore options](vesp_specify_restore_options_sites_onprem.md).
 5. [Review the operation summary](summary11.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_restoring_onedrive_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 You can use Veeam Explorer for Microsoft OneDrive for Business to restore data to [Microsoft 365](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_office365_org.html?ver=80) organizations.
 
@@ -21,6 +22,4 @@ In This Section
 * [Restoring Single OneDrive](restoring_single_onedrive.md)
 * [Restoring Multiple OneDrives](restoring_multiple_onedrives.md)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Trusted Certificates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/trusted_root_certificates.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Trusted Certificates
 
-In this article
 
 There are several root and intermediate certificates necessary for the Veeam Backup & Replication to operate correctly. Removal of these certificates from the backup server or infrastructure component may limit the functionality of Veeam Backup & Replication or cause it to fail.
 
@@ -32,6 +33,4 @@ Make sure the following certificates are installed on the backup server and comp
 
 If your backup server does not have internet access, you can download certificate files from another computer.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

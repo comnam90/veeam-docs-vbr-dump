@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Azure Object Storage Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_limitations.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Azure Object Storage Considerations and Limitations
 
-In this article
 
 General Considerations and Limitations
 
@@ -69,6 +70,4 @@ Consider the following [immutability](immutability_object_storage_repositories.m
 
 * [For Veeam Cloud Connect] Microsoft Azure object storage cannot be used as a cloud repository in the direct connection mode.
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

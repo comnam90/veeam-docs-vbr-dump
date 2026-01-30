@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Failover Plans"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/failover_plan.html"
 last_updated: "9/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Failover Plans
 
-In this article
 
 You can use the cmdlets from this section to leverage cloud failover capabilities.
 
@@ -23,6 +24,4 @@ To fail over to your cloud replicas, you need to create a failover plan. For det
 | [Remove-VBRDefaultGateway](remove-vbrdefaultgateway.md) | Removes the default gateway |
 | [New-VBRFailoverPlanPublicIPRule](new-vbrfailoverplanpubliciprule.md) | Creates public IP mapping rule |
 
-Page updated 9/4/2023
 
-Page content applies to build 13.0.1.1071

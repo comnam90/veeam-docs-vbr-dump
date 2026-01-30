@@ -1,5 +1,7 @@
 ---
 title: "Hardened Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository.html"
 last_updated: "11/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Hardened Repository
 
-In this article
 
 To protect your backup files from loss as a result of malware activity or unplanned actions, you can add a hardened repository based on a Linux server to your backup infrastructure.
 
@@ -31,10 +32,8 @@ In This Section
 * [About Hardened Repository](hardened_repository_about.md)
 * [Requirements and Limitations](hardened_repository_limitations.md)
 * [Using Veeam Infrastructure Appliance as Hardened Repository](hardened_repository_appliance_prepare.md)
-* [Using Backup Server as Hardened Repository](hardened_repository_backup_server.md)
+* [Using Backup Server as Immutable Repository](hardened_repository_backup_server.md)
 * [Adding Hardened Repositories](hardened_repository_add.md)
 * [Managing Hardened Repository](hardened_repository_managing.md)
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

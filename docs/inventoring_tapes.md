@@ -1,5 +1,7 @@
 ---
 title: "Inventorying Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/inventoring_tapes.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Inventorying Tapes
 
-In this article
 
 When you load new tapes in your tape device for the first time, these tapes are presented to Veeam Backup & Replication as Unrecognized. To identify unrecognized tapes, you need to run tape inventory job against them.
 
@@ -51,6 +52,4 @@ After the inventory, Veeam Backup & Replication places tapes in predefined pools
 
 [![Inventorying Tapes](images/inventory_results.webp)](images/inventory_results.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

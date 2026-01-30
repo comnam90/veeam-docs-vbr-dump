@@ -1,5 +1,7 @@
 ---
 title: "Schedule for GFS Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_gfs_schedule.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Schedule for GFS Job
 
-In this article
 
 This step of the wizard is available if you selected a GFS media pool at the Media Pool step of the wizard.
 
@@ -28,6 +29,4 @@ For tenant to tape jobs, this option is active by default and cannot be disabled
 
 ![Schedule for GFS Job](images/backup_to_tape_gfs_schedule.webp)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

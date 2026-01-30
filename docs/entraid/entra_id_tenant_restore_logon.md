@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Connect to Microsoft Azure"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_restore_logon.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Connect to Microsoft Azure
 
-In this article
 
 At the Logon step of the wizard, do the following:
 
@@ -28,6 +29,4 @@ Keep in mind that the account must have all the permissions required to perform 
 
 [![Log on to Microsoft](images/entra_id_restore_prop_logon.webp)](images/entra_id_restore_prop_logon.webp "Log on to Microsoft")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

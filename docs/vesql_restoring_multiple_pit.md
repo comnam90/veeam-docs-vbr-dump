@@ -1,5 +1,7 @@
 ---
 title: "Restoring Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_multiple_pit.html"
 last_updated: "9/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Point-in-Time State
 
-In this article
 
 When restoring multiple databases, consider that depending on the database recovery model the following cases are possible:
 
@@ -21,6 +22,4 @@ To restore Microsoft SQL Server databases as of the point-in-time state, use the
 3. [Specify a restore point](vesql_restoring_multiple_specify_restore_point_pit.md).
 4. [Review the restore summary](vesql_restore_multiple_pit_summary.md).
 
-Page updated 9/26/2024
 
-Page content applies to build 13.0.1.1071

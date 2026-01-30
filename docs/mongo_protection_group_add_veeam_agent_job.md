@@ -1,5 +1,7 @@
 ---
 title: "Adding Protection Group to Veeam Agent Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_add_veeam_agent_job.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Protection Group to Veeam Agent Backup Job
 
-In this article
 
 You can add a protection group for MongoDB to a Veeam Agent backup job that you have configured in Veeam Backup & Replication. This may be useful if you want to create an image-level backup of the protected computer with Veeam Agent for Linux instead of an application-level backup of MongoDB data. To learn more about Veeam Agent backup jobs, see [Adding Computer to Backup Job](agents_protected_computers_add.md).
 
@@ -31,6 +32,4 @@ You can add the whole protection group to the Veeam Agent backup job:
 
 [![View Properties of Protected Computer](images/mongo_protection_group_add_to_VA_job.webp)](images/mongo_protection_group_add_to_VA_job.webp "View Properties of Protected Computer")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

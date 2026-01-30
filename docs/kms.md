@@ -1,5 +1,7 @@
 ---
 title: "Key Management System Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kms.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Key Management System Keys
 
-In this article
 
 You can use Key Management System (KMS) keys for data encryption instead of [secret keys based on a password](encryption_hiw.md). KMS keys are based on an asymmetric key encryption algorithm. They are managed and rotated by an external KMS server and provide a higher level of security.
 
@@ -57,6 +58,4 @@ In This Section
 * [Adding KMS Server](kms_add_server.md)
 * [Using KMS Keys](kms_use_keys.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

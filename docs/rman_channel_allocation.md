@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Configure Channel Allocation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_channel_allocation.html"
 last_updated: "9/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Configure Channel Allocation
 
-In this article
 
 At this step of the wizard, configure the number of channels used during restore.
 
@@ -29,6 +30,4 @@ Select this option to specify the number of channels to be used when restoring y
 
 [![Configuring Channel Allocation](images/rman_5.webp)](images/rman_5.webp "Configuring Channel Allocation")
 
-Page updated 9/26/2025
 
-Page content applies to build 13.0.1.1071

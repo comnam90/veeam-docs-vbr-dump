@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRUnstructuredBackupVersionRetentionOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrunstructuredbackupversionretentionoptions.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRUnstructuredBackupVersionRetentionOptions
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 
 [New-VBRUnstructuredBackupVersionRetentionOptions](new-vbrunstructuredbackupversionretentionoptions.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

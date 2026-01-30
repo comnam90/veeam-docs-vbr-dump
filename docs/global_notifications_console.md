@@ -1,5 +1,7 @@
 ---
 title: "Specifying Global Notification Settings Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/global_notifications_console.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Global Notification Settings Using Console
 
-In this article
 
 In Veeam Backup & Replication console, you can configure Veeam Backup & Replication to automatically notify you about the following events:
 
@@ -41,6 +42,4 @@ To stop receiving notifications about support contract expiration, do the follow
 
 ![Specifying Global Notification Settings Using Console](images/notify_support_contract.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

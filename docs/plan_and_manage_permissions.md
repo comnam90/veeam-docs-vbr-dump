@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_permissions.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 To perform database protection and recovery operations on a computer with Veeam Plug-In, you must specify the user whose permissions Veeam Backup & Replication will use to access the protected computer and database management system. Depending on the database system, the specified user accounts must have the permissions listed in this section.
 
@@ -70,6 +71,4 @@ Consider the following:
 * If you work with SQL failover cluster or Always On availability group, you must assign permissions to the account on each node.
 * When you install Veeam Plug-In using [Veeam Deployment Kit](protection_group_deployer_service.md), Veeam Plug-In connects to the SQL instance with the NT AUTHORITY\SYSTEM account. To do this, the NT AUTHORITY\SYSTEM account must have a login to connect to the SQL instance. In addition, depending on the backup source, the NT AUTHORITY\SYSTEM account must have at least the permissions listed in the table above.
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

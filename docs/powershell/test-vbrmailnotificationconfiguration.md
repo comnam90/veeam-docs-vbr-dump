@@ -1,5 +1,7 @@
 ---
 title: "Test-VBRMailNotificationConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/test-vbrmailnotificationconfiguration.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Test-VBRMailNotificationConfiguration
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command sends a test email to check if global email notification settings h
 | --- |
 | Test-VBRMailNotificationConfiguration |
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

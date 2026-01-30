@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Agent"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_install.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Agent
 
-In this article
 
 You can install Veeam Agent on a specific protected computer in the inventory. This operation may be required, for example, if you want to test the installation process before allowing Veeam Backup & Replication to deploy Veeam Agent to all computers included in the protection group.
 
@@ -21,6 +22,4 @@ To install Veeam Agent on a protected computer:
 
 [![Install Veeam Agent](images/mongo_policy_agent_install.webp)](images/mongo_policy_agent_install.webp "Install Veeam Agent")
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

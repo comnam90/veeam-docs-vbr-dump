@@ -1,5 +1,7 @@
 ---
 title: "Oracle RMAN Channel Allocation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_allocation_backup.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle RMAN Channel Allocation
 
-In this article
 
 You can manually allocate RMAN channels by using the ALLOCATE CHANNEL command. This approach helps optimize backup operations and resource allocation. Specify the Veeam backup repository universal unique identifier (UUID) in the channel parameters to direct backup operations to the intended backup repository.
 
@@ -79,6 +80,4 @@ Examples
 | --- | --- |
 | In this example for Microsoft Windows environments, the RUN block contains the following commands:   * ALLOCATE CHANNEL: this command allocates channel ch1 to the Veeam backup repository with UUID d8338780-1aec-4c36-b17c-e1ea3ea2ca93. * BACKUP DATABASE: this command backs up the specified database. * RELEASE CHANNEL: this command releases the allocated channel ch1 to optimize resources.   |  | | --- | | RUN {     ALLOCATE CHANNEL ch1 DEVICE TYPE SBT\_TAPE       PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VEEAMP~2\ORACLE~2.DLL' FORMAT 'd8338780-1aec-4c36-b17c-e1ea3ea2ca93/RMAN\_%I\_%d\_%T\_%U.vab';     BACKUP DATABASE;     RELEASE CHANNEL ch1;  }  EXIT; | |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

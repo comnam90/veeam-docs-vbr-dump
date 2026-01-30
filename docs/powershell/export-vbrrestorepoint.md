@@ -1,5 +1,7 @@
 ---
 title: "Export-VBRRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/export-vbrrestorepoint.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Export-VBRRestorePoint
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 
 [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

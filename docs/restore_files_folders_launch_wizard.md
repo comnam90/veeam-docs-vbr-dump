@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch File Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_folders_launch_wizard.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch File Restore Wizard
 
-In this article
 
 To launch the File Restore wizard, do one of the following:
 
@@ -23,6 +24,4 @@ You can restore files and folders from a backup copy. Backup copies created in t
 
 [![Launch File Restore Wizard](images/restore_files_folders_launch_wizard.webp)](images/restore_files_folders_launch_wizard.webp "Launch File Restore Wizard")
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

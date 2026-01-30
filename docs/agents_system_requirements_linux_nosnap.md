@@ -1,5 +1,7 @@
 ---
 title: "System Requirements for Linux Computers with Nosnap Veeam Agent"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_linux_nosnap.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements for Linux Computers with Nosnap Veeam Agent
 
-In this article
 
 If you plan to use a nosnap package to install Veeam Agent, the protected Linux computer must meet the following system requirements:
 
@@ -98,6 +99,4 @@ Software
 
 * [For nosnap Veeam Agent for Linux] The dmidecode package is required for Veeam Agent management — a valid BIOS UUID must be obtainable either from dmidecode | grep -i uuid or from /sys/class/dmi/id/product\_uuid. Each Veeam Agent that consumes a license installed in Veeam Backup & Replication must have a unique BIOS UUID. If a valid UUID cannot be obtained, Veeam will generate it automatically.
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

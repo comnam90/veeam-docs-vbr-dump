@@ -1,5 +1,7 @@
 ---
 title: "Backup to Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_object_storage.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup to Object Storage
 
-In this article
 
 If you want to store your data in a cloud-based or on-premises object storage, you can use MongoDB Backup to create backups in repositories provided by the object storage. Veeam Backup & Replication supports the object storage as a primary repository for application backup policies and backup copy jobs.
 
@@ -49,6 +50,4 @@ You can use an object storage in Veeam Backup & Replication as one of the follow
 
 To learn more, see [Creating Application Backup Policy](mongo_policy_create.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

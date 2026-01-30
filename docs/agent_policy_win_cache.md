@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Specify Backup Cache Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_cache.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Specify Backup Cache Settings
 
-In this article
 
 The Backup Cache step of the wizard is available if you selected Veeam backup repository or Veeam Cloud Connect repository at the [Destination](agent_policy_win_destination.md) step of the wizard.
 
@@ -28,6 +29,4 @@ When defining the size of the backup cache, assume the following:
 
 ![Step 11. Specify Backup Cache Settings](images/agent_job_cache.webp "Specify Backup Cache Settings")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

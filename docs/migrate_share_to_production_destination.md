@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Define Destination for Migration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migrate_share_to_production_destination.html"
 last_updated: "7/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Define Destination for Migration
 
-In this article
 
 At the Destination step of the wizard, specify the location where you want to migrate the selected file share to.
 
@@ -23,6 +24,4 @@ If you want to restore the file share to a new folder, click New Folder at the b
 
 ![Step 2. Define Destination for Migration](images/migrate_share_to_production_destination.webp)
 
-Page updated 7/26/2024
 
-Page content applies to build 13.0.1.1071

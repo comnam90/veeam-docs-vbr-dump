@@ -1,5 +1,7 @@
 ---
 title: "VBRAmazonS3GlacierRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbramazons3glacierrepository.html"
 last_updated: "3/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAmazonS3GlacierRepository
 
-In this article
 
 Amazon S3 Glacier archive storage repository.
 
@@ -25,6 +26,4 @@ Properties
 | EnableBackupImmutability | SwitchParameter | Defines if backup immutability option enabled (TRUE) or not enabled (FALSE). |
 | Force | SwitchParameter | Defines that the cmdlet will add object storage without showing warnings in the PowerShell console. |
 
-Page updated 3/27/2024
 
-Page content applies to build 13.0.1.1071

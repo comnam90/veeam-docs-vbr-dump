@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_limitations.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Replication has the following requirements and limitations:
 
@@ -26,6 +27,4 @@ Replication has the following requirements and limitations:
 
 * If a job is unable to complete within 21 days period, it will be stopped with the Failed status.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

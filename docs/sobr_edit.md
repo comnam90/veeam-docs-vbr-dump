@@ -1,5 +1,7 @@
 ---
 title: "Editing Settings of Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_edit.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Settings of Scale-Out Backup Repositories
 
-In this article
 
 You can edit settings of the scale-out backup repository, for example, if you want to change the backup file placement policy or specify other advanced settings for the backup repository.
 
@@ -26,6 +27,4 @@ To change the scale-out backup repository settings:
 
 [![Editing Settings of Scale-Out Backup Repositories](images/scaleout_repo_edit_settings.webp)](images/scaleout_repo_edit_settings.webp "Editing Settings of Scale-Out Backup Repositories")
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

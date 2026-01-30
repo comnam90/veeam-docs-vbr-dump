@@ -1,5 +1,7 @@
 ---
 title: "VBRGlobalNotificationOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrglobalnotificationoptions.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRGlobalNotificationOptions
 
-In this article
 
 Contains global notification settings.
 
@@ -24,6 +25,4 @@ Properties
 | NotifyOnSupportExpiration | bool | Indicates that Veeam Backup & Replication will (TRUE) or will not (FALSE) notify about the support expiration date in every email notification. |
 | NotifyOnUpdates | bool | Indicates that Veeam Backup & Replication will (TRUE) or will not (FALSE) notify about new product versions and patches available on the Veeam website. |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

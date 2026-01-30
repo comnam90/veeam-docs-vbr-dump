@@ -1,5 +1,7 @@
 ---
 title: "Restore to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_other_server_rman.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Another Server
 
-In this article
 
 If you want to restore Oracle databases from a Veeam Plug-In backup to another server, see [this Oracle article](https://docs.oracle.com/en/database/oracle/oracle-database/21/bradv/rman-recovery-advanced.html#GUID-6B71E7DF-A2B6-44F5-A8D5-B184BB41A768) and consider the specifics described in this section.
 
@@ -157,6 +158,4 @@ Select the backup to obtain the backup ID:
 | --- |
 | Select backup to be used: 1. Backup1 Oracle backup (Default Backup Repository) 2. Backup2 Oracle backup (Default Backup Repository) 3. Backup3 Oracle backup (Default Backup Repository) Enter backup number: 3 To perform restore operations, use ID of the selected backup from the example below as srcBackup parameter value in SEND command: ALLOCATE CHANNEL ch1 DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so'; SEND 'srcBackup=6109d377-93b5-4741-a796-03471d2795cd'; |
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

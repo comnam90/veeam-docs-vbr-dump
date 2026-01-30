@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hp_3par_add_credentials.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials for a user account with administrator privileges on the HPE Web Services API Server.
 
@@ -35,6 +36,4 @@ When you update a certificate or SSH key on a server, this server becomes unavai
 
 ![Step 4. Specify Credentials](images/hp_3par_add_certificate.webp)
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

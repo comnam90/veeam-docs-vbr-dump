@@ -1,5 +1,7 @@
 ---
 title: "Configuration Tool Parameters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_vp_parameters.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuration Tool Parameters
 
-In this article
 
 Apart from running a configuration wizard, you can use the SapMaxDBBackintConfigTool tool to change a specific parameter in the veeam\_config.xml file or enable/disable Veeam Plug-In features.
 
@@ -45,6 +46,4 @@ The following example shows how to specify credentials that will be used to log 
 | --- |
 | SapMaxDBBackintConfigTool --set-credentials srv001\Administrator" "password" |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

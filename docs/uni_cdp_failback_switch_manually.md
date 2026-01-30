@@ -1,5 +1,7 @@
 ---
 title: "Switching to Production VMs Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failback_switch_manually.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switching to Production VMs Manually
 
-In this article
 
 The following instructions apply if you have selected to switch from replicas to the VMs in the production site manually or at the scheduled time at the Failback Mode step of the Failback wizard.
 
@@ -26,6 +27,4 @@ After you switch to the production site, you must finalize failback. You can fin
 * [Commit failback](uni_cdp_failback_commit.md)
 * [Undo failback](uni_cdp_failback_undo.md)
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Target Resource Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_pool_vm.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Target Resource Pools
 
-In this article
 
 The Resource Pool step of the wizard is available if you have chosen to change the location and settings for the restored VM.
 
@@ -19,6 +20,4 @@ To specify a destination resource pool:
 
 ![Step 6. Select Target Resource Pools](images/vmrestore_pool.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

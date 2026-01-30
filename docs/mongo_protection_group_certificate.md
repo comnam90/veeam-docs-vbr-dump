@@ -1,5 +1,7 @@
 ---
 title: "Deploying Veeam Components for Certificate-Based Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_certificate.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deploying Veeam Components for Certificate-Based Authentication
 
-In this article
 
 You have an option to install Veeam Agents on computers using certificate-based authentication instead of credentials. To do so, you must install Veeam Deployer Service on the computer and then add the computer to a protection group for MongoDB. In this case, Veeam Backup & Replication does not require SSH connection to install Veeam Agent.
 
@@ -59,6 +60,4 @@ Related Topics
 * [Protection Group for MongoDB](mongo_protection_group_hiw.md)
 * [Creating Protection Group for MongoDB](protection_group_create_mongo.md)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

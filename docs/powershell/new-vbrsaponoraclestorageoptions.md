@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSAPOnOracleStorageOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsaponoraclestorageoptions.html"
 last_updated: "7/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSAPOnOracleStorageOptions
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ This command creates an SAP on Oracle storage settings for application backup po
 | --- |
 | New-VBRSAPOnOracleStorageOptions -CompressionEnabled -CompressionMode RMAN |
 
-Page updated 7/2/2025
 
-Page content applies to build 13.0.1.1071

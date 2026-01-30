@@ -1,5 +1,7 @@
 ---
 title: "VBRAzureResourceGroup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazureresourcegroup.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAzureResourceGroup
 
-In this article
 
 Contains Microsoft Azure resource group.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [Get-VBRAzureResourceGroup](get-vbrazureresourcegroup.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

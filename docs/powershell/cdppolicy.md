@@ -1,5 +1,7 @@
 ---
 title: "VMware CDP Policy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cdppolicy.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware CDP Policy
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -21,6 +22,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Add-VBRCDPPolicy](add-vbrcdppolicy.md) | Creates CDP policies for VMware vSphere VMs. |
 | [Set-VBRCDPPolicy](set-vbrcdppolicy.md) | Modifies CDP policies for VMware vSphere VMs. |
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

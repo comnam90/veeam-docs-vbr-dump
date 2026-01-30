@@ -1,5 +1,7 @@
 ---
 title: "Creating Cloud Director Replication Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_vcd_replication_job.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Cloud Director Replication Job
 
-In this article
 
 To replicate a vApp or another VM container, you must configure a VMware Cloud Director replication job. The VMware Cloud Director replication job defines a scope of VM containers to replicate, where to store replicated VM containers and how often to replicate VM containers. Every time the VMware Cloud Director replication job runs, replica snapshots are created on the VMs that are added to the target vApp. If a disaster strikes, you can fail over to the necessary restore point of your VM container. During failover, Veeam Backup & Replication shifts from the source VM container to their replicas. As a result, you have fully functional vApps within a couple of seconds, and your users can access services and applications with minimum disruption.
 
@@ -34,6 +35,4 @@ To create a VMware Cloud Director replication job, do the following:
 14. [Define a job schedule](vcd_schedule.md).
 15. [Finish working with the wizard](vcd_finish.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Backup Repository Settings"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_log_job_repo.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Backup Repository Settings
 
-In this article
 
 At the Storage step of the wizard, you can choose a backup repository where the backed-up log data will be stored. You can also specify the number of days, months or years for which you want to keep restore points in a backup chain — if a restore point is older than the specified time limit, Veeam Backup for Microsoft Entra ID removes the restore point from the chain.
 
@@ -27,6 +28,4 @@ When [restoring backed-up log data](entra_id_log_restore.md), Veeam Backup & 
 
 ![Step 4. Specify Backup Repository Settings](images/entra_id_log_job_repo.webp "Configure Repository")
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

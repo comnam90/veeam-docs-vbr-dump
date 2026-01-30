@@ -1,5 +1,7 @@
 ---
 title: "Creating Custom Role for Azure Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_custom_role.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Custom Role for Azure Account
 
-In this article
 
 Granular permissions differ depending on whether you create an Azure Stack Hub account, or Azure Compute account using a new Microsoft Entra ID (formerly Azure Active Directory) application, or Azure Compute account using an existing Microsoft Entra application.
 
@@ -66,6 +67,4 @@ If you plan to add an Azure Compute account using a new Microsoft Entra ID (form
 | Note |
 | The described permissions are required for assigning a role on the subscription level for the registered application. Also, privileges to register applications are required. For more information, see [Permissions](required_permissions.md#azure_compute). |
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

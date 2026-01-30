@@ -1,5 +1,7 @@
 ---
 title: "Application Backup Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_policy.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Backup Policies
 
-In this article
 
 To back up databases on your computers with Veeam Plug-Ins, you must configure an application backup policy. An application backup policy is a task that defines what data to back up, how, where and when to back up data.
 
@@ -46,6 +47,4 @@ Related Tasks
 
 [Working with Application Policies](application_policies.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

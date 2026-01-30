@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Create Network Mapping Table"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_network_hv.html"
 last_updated: "2/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Create Network Mapping Table
 
-In this article
 
 The Network step of the wizard is available if you have selected the Network remapping option at the [Job](replica_name_hv.md) step of the wizard.
 
@@ -29,6 +30,4 @@ To add a row to a network mapping table:
 
 ![Step 8. Create Network Mapping Table](images/hv_replica_job_network.webp)
 
-Page updated 2/26/2024
 
-Page content applies to build 13.0.1.1071

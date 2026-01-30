@@ -1,5 +1,7 @@
 ---
 title: "Verifying Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/verifying_tapes.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Verifying Tapes
 
-In this article
 
 Veeam Backup & Replication offers a simple, yet efficient means to verify that your tapes are correctly read and consequently you can restore data stored on them in case of emergency.
 
@@ -59,6 +60,4 @@ To get an email report about the results of the tape verification job processing
 
 [![Verifying Tapes](images/verify_tape.webp)](images/verify_tape.webp)
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

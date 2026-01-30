@@ -1,5 +1,7 @@
 ---
 title: "Get-HyperFlexHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-hyperflexhost.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-HyperFlexHost
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ Examples
 | --- | --- |
 | This command returns the HX Storage Cisco HyperFlex storage.  |  | | --- | | Get-HyperFlexHost -Name "HX Storage" | |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

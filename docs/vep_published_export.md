@@ -1,5 +1,7 @@
 ---
 title: "Exporting From Published Instances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_published_export.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting From Published Instances
 
-In this article
 
 Veeam Explorer for PostgreSQL allows you to export published PostgreSQL databases. This feature exports the modified databases managed by the instance, preserving all the changes that have been made during the publishing session.
 
@@ -24,6 +25,4 @@ To export databases from the published instance, do the following:
 
 [![Exporting Published Databases](images/vep_published_export.webp)](images/vep_published_export.webp "Exporting Published Databases")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

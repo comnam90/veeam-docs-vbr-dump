@@ -1,5 +1,7 @@
 ---
 title: "Managing and Restoring VeeamZIP Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeamzip_manage.html"
 last_updated: "5/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing and Restoring VeeamZIP Backups
 
-In this article
 
 Managing for VeeamZIP backups is practically the same as for regular backups. You can view backup properties, copy, move or delete backups from disk. For more information, see the list. Note that links are given for the VMware vSphere platform.
 
@@ -30,6 +31,4 @@ You can restore your data directly from the VeeamZIP backups back to production 
 * [Restore to Microsoft Azure](restore_azure.md)
 * [Restore to Google Compute Engine](restore_google.md)
 
-Page updated 5/9/2025
 
-Page content applies to build 13.0.1.1071

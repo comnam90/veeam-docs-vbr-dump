@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backups Using SAP HANA Tools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_sap_tools.html"
 last_updated: "9/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backups Using SAP HANA Tools
 
-In this article
 
 To configure retention policies for SAP HANA backups, you can use the SAP HANA housekeeping options:
 
@@ -38,6 +39,4 @@ Deletion of catalog and backups using scripts. For details see [this SAP article
 
 To physically delete backups from the backup repository, you must include the WITH BACKINT and WITH FILE options in the script.
 
-Page updated 9/9/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Performing Failover by Failover Plan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/performing_failover_plan.html"
 last_updated: "2/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Failover by Failover Plan
 
-In this article
 
 To perform failover by failover plan with Veeam PowerShell snap-in, you need to perform the following steps:
 
@@ -35,6 +36,4 @@ This example demonstrates how to create a failover plan for a group of Microsoft
 | --- |
 | // Create VM objects:  $DNS = Find-VBRViEntity -Name "DNSServer" | New-VBRFailoverPlanObject -BootDelay 0  $MSExchange01 = Find-VBRViEntity -Name "MS\_Exchange\_Server\_01" | New-VBRFailoverPlanObject -BootOrder 1  -BootDelay 180  $MSExchange02 = Find-VBRViEntity -Name "MS\_Exchange\_Server\_02" | New-VBRFailoverPlanObject -BootOrder 2  -BootDelay 120    // Create failover plan:  Add-VBRFailoverPlan -Name "MS Exchange Group Failover" -FailoverPlanObject $DNS, $MSexchange01, $MSExchange02 -Description "Failover plan for the mail servers group: DNS Server, MS Exchange 01 Server, MS Exchange 02 Server"    // Launch failover plan:  Get-VBRFailoverPlan -Name "MS Exchange Group Failover" | Start-VBRFailoverPlan    // Undo failover:  Get-VBRFailoverPlan -Name "MS Exchange Group Failover" | Undo-VBRFailoverPlan |
 
-Page updated 2/5/2024
 
-Page content applies to build 13.0.1.1071

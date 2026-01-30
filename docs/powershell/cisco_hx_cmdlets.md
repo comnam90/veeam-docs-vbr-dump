@@ -1,5 +1,7 @@
 ---
 title: "Cisco HyperFlex Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cisco_hx_cmdlets.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cisco HyperFlex Storage Systems
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -19,6 +20,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Sync-HyperFlexHost](sync-hyperflexhost.md) | Rescans Cisco HyperFlex storage system. |
 | [Remove-HyperFlexHost](remove-hyperflexhost.md) | Removes Cisco HyperFlex storage systems from the backup infrastructure. |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Discovery and Deployment Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_options.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Discovery and Deployment Options
 
-In this article
 
 At the Options step of the wizard, specify settings for protected computers discovery and Veeam Plug-In deployment.
 
@@ -49,6 +50,4 @@ You can also choose to disable automated Veeam Plug-In installation. To do this,
 
 ![Step 4. Specify Discovery and Deployment Options](images/plugins_protection_group_options.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

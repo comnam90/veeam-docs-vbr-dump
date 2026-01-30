@@ -1,5 +1,7 @@
 ---
 title: "Browsing, Searching and Viewing Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_browsing.html"
 last_updated: "6/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Browsing, Searching and Viewing Items
 
-In this article
 
 You can use Veeam Explorer for Microsoft SharePoint to view the contents of a backup file, view object properties, open files, search for sites and for items in a backup file as well as customize criteria of your search.
 
@@ -82,6 +83,4 @@ To remove a filter, click the cross mark next to it. To remove all configured fi
 
 [![Browsing, Searching and Viewing Items](images/vesp_browsing_items_3.webp)](images/vesp_browsing_items_3.webp "Browsing, Searching and Viewing Items")
 
-Page updated 6/26/2025
 
-Page content applies to build 13.0.1.1071

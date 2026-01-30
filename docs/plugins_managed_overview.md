@@ -1,5 +1,7 @@
 ---
 title: "Overview"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_managed_overview.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Overview
 
-In this article
 
 Veeam Backup & Replication offers the following management capabilities:
 
@@ -23,6 +24,4 @@ In This Section
 * [Computer Discovery and Veeam Plug-In Deployment](discovery_and_deployment.md)
 * [Application Backup Policies](backup_policy.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

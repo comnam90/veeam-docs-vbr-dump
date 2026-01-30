@@ -1,5 +1,7 @@
 ---
 title: "WAN Acceleration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/wan_cmdlets.html"
 last_updated: "4/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WAN Acceleration
 
-In this article
 
 WAN acceleration allows you to optimize VM traffic going over the WAN during remote jobs. To use this technology, you need to configure a pair of WAN accelerators that will work at source side and at target side.
 
@@ -25,6 +26,4 @@ In This Section
 | [Remove-VBRWANAccelerator](remove-vbrwanaccelerator.md) | Removes a WAN accelerator |
 | [Clear-VBRWANCache](clear-vbrwancache.md) | Removes data from WAN accelerator global cache |
 
-Page updated 4/22/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Specifying Folders to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_folders.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Folders to Back Up
 
-In this article
 
 The Objects step of the wizard is available if you have selected the File level backup option at the [Backup Mode](agent_policy_win_mode.md) step of the wizard.
 
@@ -104,6 +105,4 @@ Consider the following limitation:
 
 ![Specifying Folders to Back Up](images/agent_policy_files_exclude.webp "Configure Filters")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

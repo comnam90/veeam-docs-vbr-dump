@@ -1,5 +1,7 @@
 ---
 title: "Failover Plans"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failover_plan.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover Plans
 
-In this article
 
 A failover plan helps you perform failover for dependent VMs one by one, as a group. To do this automatically, you can prepare a failover plan.
 
@@ -43,6 +44,4 @@ Related Topics
 * [Running Failover Plans](cdp_running_failover_plans.md)
 * [Undoing Failover by Failover Plans](cdp_failover_plan_undo.md)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

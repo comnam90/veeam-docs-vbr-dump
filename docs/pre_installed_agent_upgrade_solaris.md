@@ -1,5 +1,7 @@
 ---
 title: "Unix Computers with Oracle Solaris OS"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_installed_agent_upgrade_solaris.html"
 last_updated: "2/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unix Computers with Oracle Solaris OS
 
-In this article
 
 To update pre-installed Veeam Agent on a Unix computer that runs an Oracle Solaris operating system, perform the following operations:
 
@@ -21,6 +22,4 @@ To update pre-installed Veeam Agent on a Unix computer that runs an Oracle Solar
 | --- |
 | veeamconfig mode syncnow |
 
-Page updated 2/23/2024
 
-Page content applies to build 13.0.1.1071

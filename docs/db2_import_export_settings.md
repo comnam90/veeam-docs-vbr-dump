@@ -1,5 +1,7 @@
 ---
 title: "Exporting and Importing Plug-In Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_import_export_settings.html"
 last_updated: "3/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting and Importing Plug-In Settings
 
-In this article
 
 You can export a Veeam Plug-In configuration file and apply the plug-in settings to other servers.
 
@@ -27,6 +28,4 @@ To export the configuration file to another server, do the following:
 | --- |
 | DB2ConfigTool --set-credentials "serv02\Administrator" password |
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

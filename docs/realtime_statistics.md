@@ -1,5 +1,7 @@
 ---
 title: "Viewing Real-Time Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/realtime_statistics.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Real-Time Statistics
 
-In this article
 
 To view real-time statistics for a job, do one of the following:
 
@@ -66,6 +67,4 @@ The colored graph is displayed only for the currently running job session or the
 
 ![Viewing Real-Time Statistics](images/realtime_stats.webp)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Veeam Backup & Replication Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_configuring.html"
 last_updated: "7/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Veeam Backup & Replication Settings
 
-In this article
 
 This section describes basic operations related to Veeam Backup & Replication configuration management.
 
@@ -22,6 +23,4 @@ In This Section
 * [Configuring Global VM Exclusions](global_exclusion.md)
 * [Configuring Analytics View](configure_analytics.md)
 
-Page updated 7/21/2025
 
-Page content applies to build 13.0.1.1071

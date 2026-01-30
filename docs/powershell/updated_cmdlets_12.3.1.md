@@ -1,5 +1,7 @@
 ---
 title: "Updated Cmdlets"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/updated_cmdlets_12.3.1.html"
 last_updated: "6/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updated Cmdlets
 
-In this article
 
 This section contains information on cmdlets updated in Veeam PowerShell v12.3.1.
 
@@ -35,6 +36,4 @@ In this version, Cloud Connect backups are removed when using the FromDisk param
 | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [Remove-VBRBackup](remove-vbrbackup.md) | Parameter Updated: FromDisk parameter also removes Cloud Connect backups. | |
 
-Page updated 6/11/2025
 
-Page content applies to build 13.0.1.1071

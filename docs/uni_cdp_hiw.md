@@ -1,5 +1,7 @@
 ---
 title: "How Universal CDP Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_hiw.html"
 last_updated: "10/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Universal CDP Works
 
-In this article
 
 This section describes how universal CDP works during replication. To learn how universal CDP works during data recovery, see [Failover and Failback for Universal CDP](uni_cdp_failover_failback.md).
 
@@ -111,6 +112,4 @@ Based on the workflow, CDP policies can have the following statuses:
 * CBT mode — the replica data on the target host is not actual. This status can be shown, for example, if a CDP proxy is overloaded and cannot receive or send data. The status can change for Syncing after the workload decreases and replica data on the target host is updated to the current VM state on the source host. For more information on how Veeam Backup & Replication behaves in case of data delivery issues, see [Guaranteed Delivery](cdp_guaranteed_delivery.md).
 * Success, Warning or Error — the CDP process was successful, had warnings or failed. These statuses are shown for the disabled CDP policies.
 
-Page updated 10/29/2025
 
-Page content applies to build 13.0.1.1071

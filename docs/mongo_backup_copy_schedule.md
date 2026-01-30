@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Define Backup Copy Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_schedule.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Define Backup Copy Schedule
 
-In this article
 
 At the Schedule step of the wizard, you can define a time span in which the backup copy job will transport data between source and target backup repositories.
 
@@ -42,6 +43,4 @@ To define a backup window for the immediate backup copy job:
 
 ![Step 8. Define Backup Copy Schedule](images/backup_copy_schedule_immediate_mongo.webp)
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

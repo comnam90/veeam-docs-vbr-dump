@@ -1,5 +1,7 @@
 ---
 title: "Install-VBRDiscoveredComputerAgent"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/install-vbrdiscoveredcomputeragent.html"
 last_updated: "5/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Install-VBRDiscoveredComputerAgent
 
-In this article
 
 Short Description
 
@@ -67,6 +68,4 @@ Related Commands
 * [Add-VBRProtectionGroup](add-vbrprotectiongroup.md)
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 5/15/2024
 
-Page content applies to build 13.0.1.1071

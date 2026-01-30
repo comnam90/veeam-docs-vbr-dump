@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Failover Plan Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_creating_failover_plans_name.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Failover Plan Name and Description
 
-In this article
 
 At the General step of the wizard, specify a name and description for the failover plan.
 
@@ -17,6 +18,4 @@ The scripts will be executed on the backup server. Veeam Backup & Replication su
 
 ![Step 2. Specify Failover Plan Name and Description](images/failover_plan_name_vm.webp)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

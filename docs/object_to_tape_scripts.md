@@ -1,5 +1,7 @@
 ---
 title: "Advanced Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_scripts.html"
 last_updated: "7/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Settings
 
-In this article
 
 To enable hardware compression or specify custom scripts that you want to run before and after the object to tape job:
 
@@ -23,6 +24,4 @@ Most manufacturers add the hardware compression feature to their tape drives. Th
 
 ![Advanced Settings](images/object_tape_job_options_advanced.webp)
 
-Page updated 7/11/2024
 
-Page content applies to build 13.0.1.1071

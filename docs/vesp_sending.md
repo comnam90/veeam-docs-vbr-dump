@@ -1,5 +1,7 @@
 ---
 title: "Sending Microsoft SharePoint Documents and Libraries"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_sending.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sending Microsoft SharePoint Documents and Libraries
 
-In this article
 
 Veeam Explorer for Microsoft SharePoint allows you to send libraries or library documents to the specified recipients by email.
 
@@ -41,6 +42,4 @@ You can also edit the message subject and body. To edit the message body, click 
 
 [![Sending Documents and Libraries](images/sending_items.webp)](images/sending_items.webp "Sending Documents and Libraries")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

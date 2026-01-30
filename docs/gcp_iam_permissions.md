@@ -1,5 +1,7 @@
 ---
 title: "Google Compute Engine IAM User Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gcp_iam_permissions.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Google Compute Engine IAM User Permissions
 
-In this article
 
 To enable restore of workloads to Google Compute Engine, do the following:
 
@@ -54,6 +55,4 @@ The Google Cloud service account specified at the [Account](restore_google_accou
 
 For more information on the required permissions and limitations, see the Import virtual disk images section in the [Google Cloud documentation](https://cloud.google.com/migrate/virtual-machines/docs/5.0/migrate/image_import#supported-formats).
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

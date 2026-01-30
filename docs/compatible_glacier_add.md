@@ -1,5 +1,7 @@
 ---
 title: "Adding S3 Compatible with Data Archiving"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compatible_glacier_add.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding S3 Compatible with Data Archiving
 
-In this article
 
 This section describes how to add S3 compatible object storage with data archiving to the backup infrastructure. You can only use this repository as an archive extent of the scale-out backup repository. For more information, see [Archive Tier](archive_tier.md).
 
@@ -19,6 +20,4 @@ To add S3 compatible object storage with data archiving, use the New Object Stor
 4. [Specify object storage settings](compatible_glacier_settings.md).
 5. [Finish working with the wizard](compatible_glacier_finish.md).
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

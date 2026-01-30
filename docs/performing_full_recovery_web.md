@@ -1,5 +1,7 @@
 ---
 title: "Restoring Entire VMs Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_full_recovery_web.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Entire VMs Using Web UI
 
-In this article
 
 To restore an entire VM using the web UI, use the Entire VM Restore wizard.
 
@@ -21,6 +22,4 @@ To restore an entire VM using the web UI, use the Entire VM Restore wizard.
 8. [Specify a restore reason](full_restore_reason_vm_web.md).
 9. [Verify restore settings](full_restore_review_vm_web.md).
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

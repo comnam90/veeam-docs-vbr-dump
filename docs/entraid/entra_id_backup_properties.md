@@ -1,5 +1,7 @@
 ---
 title: "Viewing Log Backup Properties"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_backup_properties.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Log Backup Properties
 
-In this article
 
 This section applies to log backups only.
 
@@ -28,6 +29,4 @@ To view summary information for backups:
 
 ![Viewing Log Backup Properties](images/entra_id_log_backup_prop.webp "Audit Log Backup Properties")
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

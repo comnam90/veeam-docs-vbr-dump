@@ -1,5 +1,7 @@
 ---
 title: "Editing and Deleting Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_edit_delete.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing and Deleting Files
 
-In this article
 
 You can edit files and delete them in the Files view of Veeam Backup & Replication. For example, you may want to edit a configuration file of the VM (VMX) or delete files of unused VMs from the storage.
 
@@ -31,6 +32,4 @@ To delete a file:
 
 [![Click to zoom in](images/files_edit_delete.webp)](images/files_edit_delete.webp "Click to zoom in")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

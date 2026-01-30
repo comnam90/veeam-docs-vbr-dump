@@ -1,5 +1,7 @@
 ---
 title: "Vaults"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_media_vaults.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Vaults
 
-In this article
 
 Vaults are logical containers that help you to additionally organize offline tapes. When the tapes are recorded and moved offsite, you need to have easy ways to manage data on such tapes.
 
@@ -38,6 +39,4 @@ See Also
 
 [Managing Locations](locations.md)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

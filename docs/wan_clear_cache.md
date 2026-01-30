@@ -1,5 +1,7 @@
 ---
 title: "Clearing Global Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_clear_cache.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Clearing Global Cache
 
-In this article
 
 You can clear the global cache on the target WAN accelerator. It is recommended that you clear the global cache in the following situations:
 
@@ -29,6 +30,4 @@ To clear the global cache:
 
 [![Click to enlarge](images/wan_accelerator_clear_cache.webp)](images/wan_accelerator_clear_cache.webp "Click to enlarge")
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

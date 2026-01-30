@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRvCDIndividualObjectStoragePolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvcdindividualobjectstoragepolicy.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRvCDIndividualObjectStoragePolicy
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Find-VBRvCloudEntity](find-vbrvcloudentity.md)
 * [New-VBRvCDIndividualObjectStoragePolicy](new-vbrvcdindividualobjectstoragepolicy.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

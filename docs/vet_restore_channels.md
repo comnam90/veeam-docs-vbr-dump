@@ -1,5 +1,7 @@
 ---
 title: "Restoring Channels and Tabs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_channels.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Channels and Tabs
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to restore individual channels of a team. You can restore an entire channel or specific tabs of a channel.
 
@@ -19,6 +20,4 @@ To restore channels and tabs, do the following:
 4. [Specify restore options](vet_restore_options_channels.md).
 5. [Review the operation summary](summary25.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

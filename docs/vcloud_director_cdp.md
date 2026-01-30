@@ -1,5 +1,7 @@
 ---
 title: "CDP for VMware Cloud Director"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_cdp.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # CDP for VMware Cloud Director
 
-In this article
 
 Continuous data protection (CDP) for VMware Cloud Director is a technology that helps you protect mission-critical vApps and VMs when data loss for seconds or minutes is unacceptable. CDP also provides minimum recovery time objective (RTO) in case a disaster strikes because CDP replicas are in a ready-to-start state.
 
@@ -32,6 +33,4 @@ In This Section
 * [Managing Cloud Director CDP Replicas](vcd_cdp_replica_manage.md)
 * [Failover and Failback for Cloud Director CDP](vcd_cdp_failover_failback.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

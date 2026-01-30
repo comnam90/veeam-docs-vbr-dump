@@ -1,5 +1,7 @@
 ---
 title: "New-VBRObjectStorageBackupServerPathMask"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrobjectstoragebackupserverpathmask.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRObjectStorageBackupServerPathMask
 
-In this article
 
 Short Description
 
@@ -51,6 +52,4 @@ This command defines that prefixes that start with files/New Inc-Exc will be exc
 | --- |
 | $ExclusionMask = New-VBRObjectStorageBackupServerPathMask -Path "files/New Inc-Exc" |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

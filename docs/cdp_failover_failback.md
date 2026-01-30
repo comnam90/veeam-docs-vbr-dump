@@ -1,5 +1,7 @@
 ---
 title: "Failover and Failback for CDP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failover_failback.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover and Failback for CDP
 
-In this article
 
 Failover and failback operations help you ensure that your business will function even if a disaster strikes your production site. Failover is a process of switching from the VM on the source host to its replica on a host in the disaster recovery site. Failback is a process of returning from the replica to the source VM.
 
@@ -81,6 +82,4 @@ Related Topics
 * [Committing Failback](cdp_comitting_failback.md)
 * [Undoing Failback](cdp_undoing_failback.md)
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

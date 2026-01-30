@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore_ms365_single_restore_options.html"
 last_updated: "9/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Restore Options
 
-In this article
 
 At this step of the wizard, select restore options and click Restore.
 
@@ -34,6 +35,4 @@ If you restore a mailbox, to prevent certain folders from being restored, click 
 
 [![Specify Restore Options](images/vex_restore_options.webp)](images/vex_restore_options.webp "Specify Restore Options")
 
-Page updated 9/19/2024
 
-Page content applies to build 13.0.1.1071

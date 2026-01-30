@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore from Tape Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_tape_launch.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore from Tape Wizard
 
-In this article
 
 The wizard may work in one of the two following modes:
 
@@ -39,6 +40,4 @@ To launch the Restore from Tape wizard for restoring entire tapes, do the follow
 
 [![Step 1. Launch Restore from Tape Wizard](images/entire_tape_restore_launch.webp)](images/entire_tape_restore_launch.webp)
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

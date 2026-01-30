@@ -1,5 +1,7 @@
 ---
 title: "Replacing Tape Devices"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replacing_tape_library.html"
 last_updated: "10/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replacing Tape Devices
 
-In this article
 
 You may want to stop using a tape library or a standalone tape drive, for example, because of breakdown or low efficiency, and replace it with a new tape device. To replace the device seamlessly and continue using the tapes within the same media pool, follow the instructions below.
 
@@ -45,6 +46,4 @@ The tapes in the media pool will now be associated with the new tape drive.
 
 As a result, the tapes remain in the same media pools and the data is intact.
 
-Page updated 10/24/2025
 
-Page content applies to build 13.0.1.1071

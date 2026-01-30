@@ -1,5 +1,7 @@
 ---
 title: "VM Guest OS File Indexing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/indexing_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Guest OS File Indexing
 
-In this article
 
 You can instruct Veeam Backup & Replication to create an index of files and folders on the VM guest OS during backup. VM guest OS file indexing allows you to search for VM guest OS files inside VM backups and perform a 1-click restore in Veeam Backup Enterprise Manager.
 
@@ -42,6 +43,4 @@ Related Topics
 * [How VM Guest OS File Indexing Works](indexing_hiw_hv.md)
 * [Creating Backup Jobs](backup_job_hv.md)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

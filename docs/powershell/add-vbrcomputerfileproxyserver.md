@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRComputerFileProxyServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcomputerfileproxyserver.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRComputerFileProxyServer
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Related Commands
 
 [Get-VBRServer](get-vbrserver.md)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

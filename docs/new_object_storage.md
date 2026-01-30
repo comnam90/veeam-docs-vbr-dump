@@ -1,5 +1,7 @@
 ---
 title: "Adding Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/new_object_storage.html"
 last_updated: "9/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Object Storage Repositories
 
-In this article
 
 You can add the following types of object storage repositories:
 
@@ -20,6 +21,4 @@ You can add the following types of object storage repositories:
 * [Wasabi Cloud Object Storage](adding_wasabi_object_storage.md)
 * [Veeam Smart Object Storage API (SOSAPI)](sosapi.md)
 
-Page updated 9/24/2024
 
-Page content applies to build 13.0.1.1071

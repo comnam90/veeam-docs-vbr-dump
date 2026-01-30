@@ -1,5 +1,7 @@
 ---
 title: "Adding Standalone Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_add_database.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Standalone Databases
 
-In this article
 
 To add a standalone Active Directory database manually, do the following:
 
@@ -23,6 +24,4 @@ By default, the Active Directory database file (NTDS.DIT) is located in the %Sys
 
 [![Adding Microsoft Active Directory Databases Manually](images/vead_add_db.webp)](images/vead_add_db.webp "Adding Microsoft Active Directory Databases Manually")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

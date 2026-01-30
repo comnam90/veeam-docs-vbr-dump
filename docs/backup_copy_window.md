@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy Window"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_window.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy Window
 
-In this article
 
 A backup copy window is a period of time when a backup copy job is allowed to transport data between source and target repositories.
 
@@ -34,6 +35,4 @@ Backup copy job can not start during prohibited hours. If a prohibited time inte
 
 ![Backup Copy Window](images/backup_copy_window_periodic.webp)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Backup from Snapshots on Secondary Storage Arrays"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_secondary_backup_perform.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Backup from Snapshots on Secondary Storage Arrays
 
-In this article
 
 You can configure a backup job to perform backup from storage snapshots on secondary storage arrays.
 
@@ -102,6 +103,4 @@ Related Topics
 
 [Backup from Secondary Storage Arrays](storage_secondary_backup.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Network Traffic Rules"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/network_rules.html"
 last_updated: "2/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Network Traffic Rules
 
-In this article
 
 Network traffic rules control traffic transferred between backup infrastructure components. These rules allow you to do the following:
 
@@ -45,6 +46,4 @@ After you create or edit network rules, they are applied almost immediately.
 | Tip |
 | If you created a rule for a vSphere backup proxy or Hyper-V off-host backup proxy, you can check whether it applies. For this, open the [Traffic Rules](vmware_proxy_traffic.md) (vSphere) [Traffic Rules](hv_proxy_traffic.md) (Hyper-V) step of the backup proxy wizard. The rule must be in the list of rules. |
 
-Page updated 2/25/2025
 
-Page content applies to build 13.0.1.1071

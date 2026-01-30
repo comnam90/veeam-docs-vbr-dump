@@ -1,5 +1,7 @@
 ---
 title: "Install-VBRDiscoveredComputerPlugin"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/install-vbrdiscoveredcomputerplugin.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Install-VBRDiscoveredComputerPlugin
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

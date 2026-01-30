@@ -1,5 +1,7 @@
 ---
 title: "Gateway Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gateway_server.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Gateway Servers
 
-In this article
 
 A gateway server is an auxiliary backup infrastructure component that “bridges” the backup server and backup repository. It can also "bridge" a source backup repository and a target backup repository in case of backup copy jobs. The gateway server is required if you deploy the following types of backup repositories in the backup infrastructure:
 
@@ -87,6 +88,4 @@ Related Topics
 * [Scale-Out Backup Repositories](backup_repository_sobr.md)
 * [Specifying Server or Shared Folder Settings](repository_server.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

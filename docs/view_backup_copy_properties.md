@@ -1,5 +1,7 @@
 ---
 title: "Viewing Backup Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/view_backup_copy_properties.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Backup Properties
 
-In this article
 
 You can view summary information about backups created by backup copy jobs. The summary information provides the following data: available restore points, date of restore points creation, compression and deduplication ratios, data size and backup size.
 
@@ -41,6 +42,4 @@ To view summary information for a backup copy:
 
 [![Viewing Backup Properties](images/backup_copy_properties.webp)](images/backup_copy_properties.webp)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

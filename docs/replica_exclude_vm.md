@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Exclude Objects from Replication Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_exclude_vm.html"
 last_updated: "7/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Exclude Objects from Replication Job
 
-In this article
 
 After you have added VMs and VM containers to the replication job, you can specify which objects you want to exclude from replicas. You can exclude the following types of objects:
 
@@ -57,6 +58,4 @@ To exclude VM disks:
 
 ![Step 5. Exclude Objects from Replication Job](images/vm_replica_job_exclude_disks.webp)
 
-Page updated 7/10/2025
 
-Page content applies to build 13.0.1.1071

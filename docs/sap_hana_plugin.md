@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In for SAP HANA"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_hana_plugin.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In for SAP HANA
 
-In this article
 
 Veeam Plug-In for SAP HANA is an SAP-certified backup tool that integrates with SAP backint and allows you to store transactionally-consistent SAP HANA database backups and logs in repositories connected to Veeam Backup & Replication.
 
@@ -27,6 +28,4 @@ In This Section
 * [Backup Copy for SAP HANA Backups](backup_copy_main_hana.md)
 * [Logs and Support](veeam_sap_logs.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

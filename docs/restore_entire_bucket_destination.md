@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Destination for Bucket or Container Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_bucket_destination.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Destination for Bucket or Container Restore
 
-In this article
 
 At the Destination step of the wizard, specify the location where you want to restore the bucket or container.
 
@@ -28,6 +29,4 @@ To select a specific prefix, click Browse. In the Select Folder window, select t
 
 ![Step 3. Specify Destination for Bucket or Container Restore](images/restore_entire_bucket_destination.webp "Specify Destination for Data Restore")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Target User"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_copy_target_user.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Target User
 
-In this article
 
 At this step of the wizard, specify a target user where you want to copy data.
 
@@ -23,6 +24,4 @@ To select a target user, do the following:
 
 [![Specify Target User](images/restoring_onedrive_3.webp)](images/restoring_onedrive_3.webp "Specify Target User")
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

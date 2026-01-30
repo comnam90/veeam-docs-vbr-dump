@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_bu_job_settings.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 The required job settings depend on whether you want to use an image-level backup created with native Veeam Backup & Replication functionality or an application backup created with Veeam Plug-In for Microsoft SQL Server.
 
@@ -58,6 +59,4 @@ The following table lists database logging models and applicable options in Veea
 | Full | Applicable option.  Veeam Backup & Replication performs "backup to NUL" for log files on guest. | Applicable but not recommended to use without native or 3rd party means of log truncation or backup – otherwise, logs will increase in size. | Applicable option. Log backup files (in the BAK format) are copied from the temporary folder on the Microsoft SQL Server to a backup repository. As soon as the data is copied to the target, BAK files are deleted from the source. |
 | Bulk-logged | Applicable option.  Veeam Backup & Replication performs "backup to NUL" for log files on guest. | Applicable but not recommended to use without native or 3rd party means of log truncation or backup – otherwise, logs will increase in size. | Applicable option. Log backup files (in the BAK format) are copied from the temporary folder on the Microsoft SQL Server to a backup repository. As soon as the data is copied to the target, BAK files are deleted from the source. |
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

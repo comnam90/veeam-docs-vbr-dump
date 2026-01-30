@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ad_objects_before.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before creating a protection group, consider the following prerequisites and limitations:
 
@@ -17,6 +18,4 @@ Before creating a protection group, consider the following prerequisites and lim
 * You cannot add or exclude universal and domain local groups to/from protection groups that include Microsoft Active Directory objects. Only global groups are supported.
 * When you configure a protection group for a failover cluster, do not exclude nodes of this cluster from a protection scope. Otherwise, Veeam Backup & Replication will not have complete information about all clustered servers.
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

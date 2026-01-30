@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select Target Datastores and Disk Types"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_datastore_vm.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select Target Datastores and Disk Types
 
-In this article
 
 The Datastore step of the wizard is available if you have chosen to change the location and settings for the restored VM.
 
@@ -26,6 +27,4 @@ If you want to place configuration and disk files to different datastores, expan
 
 ![Step 7. Select Target Datastores and Disk Types](images/vmrestore_datastore.webp)Z]
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

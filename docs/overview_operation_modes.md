@@ -1,5 +1,7 @@
 ---
 title: "Standalone and Managed Operations Modes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview_operation_modes.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Standalone and Managed Operations Modes
 
-In this article
 
 Depending on the available infrastructure, some Veeam Plug-Ins can operate in either of two modes to optimize database protection. Based on the operation mode, Veeam Plug-Ins have different functionality and limitations.
 
@@ -42,6 +43,4 @@ The following table describes the support of operation modes by solutions for en
 | Standalone mode | Supported | Supported | Supported | Supported | Supported | Supported | Not supported |
 | Managed mode | Supported | Supported | Supported | Not supported | Supported | Not supported | Supported |
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

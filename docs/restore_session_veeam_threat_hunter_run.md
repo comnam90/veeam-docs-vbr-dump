@@ -1,5 +1,7 @@
 ---
 title: "Performing Veeam Threat Hunter Scan"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_session_veeam_threat_hunter_run.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Veeam Threat Hunter Scan
 
-In this article
 
 To perform Veeam Threat Hunter scan during the restore session, do the following at the Secure Restore step of the restore wizard:
 
@@ -33,6 +34,4 @@ To perform Veeam Threat Hunter scan during the restore session, do the following
 
 1. If you want to continue Veeam Threat Hunter scan after the first malware is found, select the Continue scanning all remaining files after the first occurrence check box.
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

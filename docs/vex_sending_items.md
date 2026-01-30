@@ -1,5 +1,7 @@
 ---
 title: "Sending Microsoft Exchange Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_sending_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sending Microsoft Exchange Items
 
-In this article
 
 Veeam Explorer for Microsoft Exchange allows you to send Exchange items by email.
 
@@ -56,6 +57,4 @@ You can also edit the message subject and body. To edit the message body, click 
 
 [![Sending Microsoft Exchange Items](images/vee_send_details.webp)](images/vee_send_details.webp "Sending Microsoft Exchange Items")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

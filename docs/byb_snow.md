@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/byb_snow.html"
 last_updated: "9/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you add AWS Snowball Edge storage to the backup infrastructure, check the following prerequisites:
 
@@ -20,6 +21,4 @@ Before you add AWS Snowball Edge storage to the backup infrastructure, check the
 
 * You cannot back up data using Veeam Agent backup job or policy to AWS Snowball Edge devices.
 
-Page updated 9/25/2024
 
-Page content applies to build 13.0.1.1071

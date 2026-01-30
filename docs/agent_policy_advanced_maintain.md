@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_advanced_maintain.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 To specify maintenance settings for the backup policy:
 
@@ -57,6 +58,4 @@ If the full backup file contains data blocks for deleted drives, Veeam Agent for
 
 ![Maintenance Settings](images/agent_policy_settings_maintainance.webp "Specify Maintainance Settings")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

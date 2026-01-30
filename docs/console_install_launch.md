@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Start Setup Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/console_install_launch.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Start Setup Wizard
 
-In this article
 
 You can start the Veeam Backup & Replication console installation in the following ways depending on your installation type:
 
@@ -33,6 +34,4 @@ You can start the Veeam Backup & Replication console installation in the followi
 
 ![Step 1. Start Setup Wizard](images/installation_splash.webp)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

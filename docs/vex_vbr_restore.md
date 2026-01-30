@@ -1,5 +1,7 @@
 ---
 title: "Restore from Veeam Backup & Replication Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore from Veeam Backup & Replication Backups
 
-In this article
 
 You can restore Microsoft Exchange data from backups created by Veeam Backup & Replication to the original location or other on-premises Microsoft organizations and Microsoft 365 organizations.
 
@@ -26,6 +27,4 @@ In This Section
 * [Restore to On-Premises Microsoft Servers](vex_vbr_restore_onprem.md)
 * [Restore to Microsoft 365 Organizations](vex_vbr_restore_ms365.md)
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

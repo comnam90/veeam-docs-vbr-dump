@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAmazonEC2Subnet"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbramazonec2subnet.html"
 last_updated: "2/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAmazonEC2Subnet
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Get-VBRAmazonEC2Region](get-vbramazonec2region.md)
 * [Get-VBRAmazonEC2VPC](get-vbramazonec2vpc.md)
 
-Page updated 2/20/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Specifying Syslog Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/syslog_servers.html"
 last_updated: "11/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Syslog Servers
 
-In this article
 
 You can use an external syslog server to manage events written by Veeam Backup & Replication.
 
@@ -22,6 +23,4 @@ In This Section
 * [Adding Syslog Server Using Console](syslog_servers_add.md)
 * [Filtering Events](syslog_servers_filtering_events.md)
 
-Page updated 11/14/2024
 
-Page content applies to build 13.0.1.1071

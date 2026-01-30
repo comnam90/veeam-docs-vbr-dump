@@ -1,5 +1,7 @@
 ---
 title: "New-VBRApplicationProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrapplicationprocessingoptions.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRApplicationProcessingOptions
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [New-VBRSQLProcessingOptions](new-vbrsqlprocessingoptions.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAmazonRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbramazonrestoresession.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAmazonRestoreSession
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ This command gets the active restore session to Amazon EC2.
 | --- |
 | Get-VBRAmazonRestoreSession -Session "New session" |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

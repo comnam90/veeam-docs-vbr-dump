@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Target Hosts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_target_host_hv.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Target Hosts
 
-In this article
 
 This step is available if you recover workloads to a new location or with different settings.
 
@@ -22,6 +23,4 @@ At the Host step of the wizard, specify a target Hyper-V host or a Hyper-V clust
 
 ![Step 5. Select Target Hosts](images/instant_recovery_to_hv_host.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

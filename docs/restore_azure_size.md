@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify VM Size and Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_size.html"
 last_updated: "6/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify VM Size and Disks
 
-In this article
 
 At the VM Size step of the wizard, you can select VM sizes, storage accounts where to store disks of the restored workloads, select disks to restore and change their type. By default, Veeam Backup & Replication selects the smallest size that can support the number of disks for the restored workload and restores all workload disks.
 
@@ -44,6 +45,4 @@ To select specific disks and change their type, do the following:
 
 ![Step 5. Specify VM Size and Disks](images/azure_restore_exclusions.webp)
 
-Page updated 6/30/2025
 
-Page content applies to build 13.0.1.1071

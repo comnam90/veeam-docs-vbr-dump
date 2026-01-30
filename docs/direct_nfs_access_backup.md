@@ -1,5 +1,7 @@
 ---
 title: "Data Backup in Direct NFS Access Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_nfs_access_backup.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup in Direct NFS Access Mode
 
-In this article
 
 Data backup in the Direct NFS access transport mode is performed in the following way:
 
@@ -21,6 +22,4 @@ Data backup in the Direct NFS access transport mode is performed in the followin
 
 ![Data Backup in Direct NFS Access Mode](images/direct_nfs_retrieval.webp)
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

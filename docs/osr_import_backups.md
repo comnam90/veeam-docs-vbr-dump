@@ -1,5 +1,7 @@
 ---
 title: "Importing Object Storage Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/osr_import_backups.html"
 last_updated: "5/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Importing Object Storage Backups
 
-In this article
 
 In case a disaster strikes and your Veeam Backup & Replication with a scale-out backup repository becomes unavailable, you can import into another Veeam Backup & Replication infrastructure backups located in object storage repositories added as performance, capacity or archive extents of the scale-out backup repository. Once you add the necessary object storage repositories in Veeam Backup & Replication infrastructure, you can import backups and they will become available for data recovery operations.
 
@@ -30,6 +31,4 @@ To import backups, do the following:
 3. [Wait for import](osr_wait_import.md).
 4. [Finish working with the wizard](osr_finish.md).
 
-Page updated 5/27/2024
 
-Page content applies to build 13.0.1.1071

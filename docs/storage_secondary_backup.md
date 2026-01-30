@@ -1,5 +1,7 @@
 ---
 title: "Backup from Secondary Storage Arrays"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_secondary_backup.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup from Secondary Storage Arrays
 
-In this article
 
 If the primary storage array is associated with a secondary storage array, you can use the secondary storage array as a data source for backup. Backup from snapshots on secondary storage arrays reduces impact on the production storage. During backup, operations on VM data reading are performed on the side of the secondary storage array, and the primary storage array is not affected. For information on the supported secondary storage array features and terms for them in Veeam Backup & Replication, see [Secondary Storage Array Features and Veeam Backup & Replication Terms](supported_features.md#terms).
 
@@ -62,6 +63,4 @@ Related Topics
 
 [Configuring Backup from Snapshots on Secondary Storage Arrays](storage_secondary_backup_perform.md)
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Upgrading Backup Chain Formats"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_change_type.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading Backup Chain Formats
 
-In this article
 
 Veeam Backup & Replication supports the following ways to store backup files: per-machine backup with separate metadata files, per-machine backup with single metadata file and single-file backup. For more information, see [Backup Chain Formats](per_vm_backup_files.md).
 
@@ -41,6 +42,4 @@ To change the backup chain format, you must detach the existing backup chain fro
 | Note |
 | If the job has a backup to tape job configured as a [secondary target](vmware_backup_secondary_target.md), the backup to tape job will archive a full backup during its next scheduled run. |
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

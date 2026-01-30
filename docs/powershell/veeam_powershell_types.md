@@ -1,5 +1,7 @@
 ---
 title: "Veeam PowerShell Types"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_powershell_types.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam PowerShell Types
 
-In this article
 
 Veeam PowerShell uses the following types:
 
@@ -186,6 +187,4 @@ Veeam PowerShell uses the following types:
 * [VBRViStoragePolicy](vbrvistoragepolicy.md)
 * [VBRViVirtualSwitch](vbrvivirtualswitch.md)
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

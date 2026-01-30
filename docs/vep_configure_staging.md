@@ -1,5 +1,7 @@
 ---
 title: "Configuring Staging PostgreSQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_configure_staging.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Staging PostgreSQL Server
 
-In this article
 
 To enable advanced recovery functionality, you can use a PostgreSQL machine as a staging server. A staging server is required when exporting data, as described in [Data Export](vep_data_export.md).
 
@@ -45,6 +46,4 @@ To enable the failover, select the Use su if sudo is unavailable check box and i
 
 [![Configuring Staging Server for Linux Machines](images/vep_configure_staging.webp)](images/vep_configure_staging.webp "Configuring Staging Server for Linux Machines")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

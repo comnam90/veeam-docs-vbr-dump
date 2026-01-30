@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Linux Server Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server_launch.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Linux Server Wizard
 
-In this article
 
 To launch the New Linux Server wizard, do the following:
 
@@ -17,6 +18,4 @@ To launch the New Linux Server wizard, do the following:
 
 [![Step 1. Launch New Linux Server Wizard](images/add_server_lin.webp)](images/add_server_lin.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

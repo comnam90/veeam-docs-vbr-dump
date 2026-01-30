@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAzureComputeBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazurecomputebackup.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAzureComputeBackup
 
-In this article
 
 Short Description
 
@@ -51,6 +52,4 @@ This command returns an array of Azure backups.
 | --- |
 | Get-VBRAzureComputeBackup |
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

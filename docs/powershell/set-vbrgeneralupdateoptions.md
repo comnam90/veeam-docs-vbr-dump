@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRGeneralUpdateOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgeneralupdateoptions.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRGeneralUpdateOptions
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 * [New-VBRMaintenanceWindowOptions](new-vbrmaintenancewindowoptions.md)
 * [Get-VBRGeneralUpdateOptions](get-vbrgeneralupdateoptions.md)
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_plan_and_manage_requirements.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements
 
-In this article
 
 Make sure that components in the plug-in management infrastructure meet the system requirements listed in this section.
 
@@ -31,6 +32,4 @@ Consider the following:
 * A computer with MongoDB must be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, a computer with MongoDB cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway.
 * Domain names of the computer with MongoDB deployment, Veeam Backup & Replication server and other servers in the Veeam backup infrastructure must be resolvable into IPv4 or IPv6 addresses.
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

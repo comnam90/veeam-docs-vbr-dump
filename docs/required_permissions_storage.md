@@ -1,5 +1,7 @@
 ---
 title: "Permissions (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions_storage.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions (Storage Systems)
 
-In this article
 
 To perform data protection and disaster recovery operations with storage snapshots, the account used to connect to a storage system must have necessary permissions.
 
@@ -22,6 +23,4 @@ In This Section
 
 * [Universal Storage API Integrated Systems Permissions](usais_permissions.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

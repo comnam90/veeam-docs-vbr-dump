@@ -1,5 +1,7 @@
 ---
 title: "Targeting Jobs to Another Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jobs_target.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Targeting Jobs to Another Repository
 
-In this article
 
 Veeam Backup & Replication offers you 2 ways to target a job to another repository:
 
@@ -16,6 +17,4 @@ Veeam Backup & Replication offers you 2 ways to target a job to another reposito
 
 For more information on how the move to another repository operation works and its considerations, see [Backup Move](backup_moving.md).
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

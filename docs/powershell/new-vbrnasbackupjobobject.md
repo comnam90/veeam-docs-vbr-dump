@@ -1,5 +1,7 @@
 ---
 title: "New-VBRNASBackupJobObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrnasbackupjobobject.html"
 last_updated: "4/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRNASBackupJobObject
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Related Commands
 
 [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 
-Page updated 4/29/2024
 
-Page content applies to build 13.0.1.1071

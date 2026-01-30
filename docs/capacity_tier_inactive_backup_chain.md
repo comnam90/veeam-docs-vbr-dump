@@ -1,5 +1,7 @@
 ---
 title: "Backup Chain Detection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_inactive_backup_chain.html"
 last_updated: "3/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Chain Detection
 
-In this article
 
 Veeam Backup & Replication will transfer to capacity extents only those restore points that belong to inactive backup chains. To ensure a backup chain is inactive, Veeam Backup & Replication verifies its state. This does not apply to the [copy policy](capacity_tier_copy.md): all newly created restore points are copied immediately.
 
@@ -46,6 +47,4 @@ The structure of the backup chains can be different. That depends on whether you
 
 For more information on how Veeam Backup & Replication creates and manages backup chains, see [Backup Chain](backup_files.md).
 
-Page updated 3/28/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrinstantrecovery.html"
 last_updated: "1/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRInstantRecovery
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ Examples
 | --- | --- |
 | This command gets the list of the instant recovery sessions in detailed view.  |  | | --- | | Get-VBRInstantRecovery -Full | |
 
-Page updated 1/23/2024
 
-Page content applies to build 13.0.1.1071

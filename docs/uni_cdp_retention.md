@@ -1,5 +1,7 @@
 ---
 title: "Retention Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_retention.html"
 last_updated: "10/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retention Policies
 
-In this article
 
 A retention policy defines for how long Veeam Backup & Replication must store restore points for replicas. Veeam Backup & Replication offers two retention policy schemes:
 
@@ -69,6 +70,4 @@ Veeam Backup & Replication retains long-term restore points for the number of da
 
 For more information on technical points, short-term restore points, long-term restore points and when they are created, see [CDP Replication Chain](uni_cdp_replica_chain.md).
 
-Page updated 10/29/2025
 
-Page content applies to build 13.0.1.1071

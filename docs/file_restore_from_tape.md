@@ -1,5 +1,7 @@
 ---
 title: "File Restore from Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_restore_from_tape.html"
 last_updated: "5/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # File Restore from Tape
 
-In this article
 
 You can restore data previously archived with file to tape jobs and with backup to tape jobs where the sources are unstructured data backup jobs or repositories that store unstructured data backups. You can restore the following data:
 
@@ -35,6 +36,4 @@ Related Topics
 * [Before You Begin](file_from_tape_before_you_begin.md)
 * [Restoring Files from Tape](restore_files_from_tapes.md)
 
-Page updated 5/27/2024
 
-Page content applies to build 13.0.1.1071

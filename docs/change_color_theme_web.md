@@ -1,5 +1,7 @@
 ---
 title: "Changing Appearance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/change_color_theme_web.html"
 last_updated: "9/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Appearance Settings
 
-In this article
 
 If necessary, you can change the appearance settings of the Veeam Backup & Replication web UI. Changing the color theme can be helpful, for example, if you connect to different backup servers from one remote machine. In this case, you will be able to easily differentiate with which backup server you are currently working.
 
@@ -25,6 +26,4 @@ To change the appearance settings for the Veeam Backup & Replication web UI:
 
 [![Changing Appearance Settings](images/change_color_theme_web.webp)](images/change_color_theme_web.webp)
 
-Page updated 9/30/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding Veeam Backup for Microsoft 365 Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_adding_adb.html"
 last_updated: "3/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Veeam Backup for Microsoft 365 Server
 
-In this article
 
 In Veeam Explorer for Microsoft Exchange, you can connect to a Veeam Backup for Microsoft 365 server to view backups located on this server.
 
@@ -26,6 +27,4 @@ Select the Use Windows session authentication check box to connect with the user
 
 [![Adding Veeam Backup for Microsoft 365 Server](images/vex_connection_to_vbo_new.webp)](images/vex_connection_to_vbo_new.webp "Adding Veeam Backup for Microsoft 365 Server")
 
-Page updated 3/5/2025
 
-Page content applies to build 13.0.1.1071

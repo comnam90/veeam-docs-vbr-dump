@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Plug-In in Unattended Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_mssql_unattended.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Plug-In in Unattended Mode
 
-In this article
 
 Veeam Plug-In for Microsoft SQL Server is an additional component of Veeam Backup & Replication. The installation package of the plug-in is included in the Veeam Backup & Replication installation ISO file and available for download from [veeam.com](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 
@@ -54,6 +55,4 @@ Veeam Plug-In for Microsoft SQL Server uses the following codes to report about 
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Veeam Plug-In for Microsoft SQL Server](configuring_mssql_plugin.md).
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

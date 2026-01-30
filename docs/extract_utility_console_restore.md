@@ -1,5 +1,7 @@
 ---
 title: "Restoring VMs from Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extract_utility_console_restore.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring VMs from Backup
 
-In this article
 
 This command restores data for all machines or for the selected machine from the backup file.
 
@@ -36,6 +37,4 @@ This command restores winsrv29 machine from an encrypted backup file to the C:/B
 | --- |
 | extract.exe -restore -vm winsrv29 -password "standard 1" "C:/Backup/Single/Backup Job Single StorageD2022-10-03T132735\_1E50.vbk" C:/backup |
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

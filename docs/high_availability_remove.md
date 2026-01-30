@@ -1,5 +1,7 @@
 ---
 title: "Disassembling High Availability Cluster"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_remove.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disassembling High Availability Cluster
 
-In this article
 
 After you initiate the cluster disassembly procedure, Veeam Backup & Replication removes the configuration database from the secondary node. After you disassemble an HA cluster, Veeam Backup & Replication stops synchronizing the nodes; however, the certificates and files remain in the same state they were in before the disassembly.
 
@@ -24,6 +25,4 @@ To disassemble an HA cluster, do the following:
 
 [![Disassembling High Availability Cluster](images/high_availability_cluster_disassemble.webp)](images/high_availability_cluster_disassemble.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

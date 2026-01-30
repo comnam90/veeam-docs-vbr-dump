@@ -1,5 +1,7 @@
 ---
 title: "Managing Application Backup Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Application Backup Policies
 
-In this article
 
 You can use the Veeam Backup & Replication console to perform the following operations with an application backup policy:
 
@@ -19,6 +20,4 @@ You can use the Veeam Backup & Replication console to perform the following oper
 * [Clone a backup policy](manage_policy_clone.md).
 * [Delete a backup policy](manage_policy_delete.md).
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

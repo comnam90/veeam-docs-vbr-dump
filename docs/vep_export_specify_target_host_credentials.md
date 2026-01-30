@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Target Host Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_export_specify_target_host_credentials.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Target Host Credentials
 
-In this article
 
 At this step of the wizard, specify connection settings required to access the target server for the export operation. The set of connection settings depends on whether you have chosen to export your databases to the local host (available for Windows-based backup servers only) or another Linux server.
 
@@ -57,6 +58,4 @@ To locate a file, click Browse and select a key.
 
 [![Specifying Linux Server Connection Credentials](images/vep_export_specify_target_linux_host_credentials.webp)](images/vep_export_specify_target_linux_host_credentials.webp "Specifying Linux Server Connection Credentials")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

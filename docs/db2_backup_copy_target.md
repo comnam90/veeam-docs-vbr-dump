@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Define Backup Copy Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_copy_target.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Define Backup Copy Target
 
-In this article
 
 At the Target step of the wizard, configure the target repository settings.
 
@@ -41,6 +42,4 @@ To map a backup copy job to the backup:
 
 ![Step 4. Define Backup Copy Target](images/plugins_backup_copy_target.webp)
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

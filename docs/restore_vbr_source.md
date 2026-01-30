@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Configuration Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_source.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Configuration Backup
 
-In this article
 
 At the Configuration Backup step of the wizard, select a configuration backup from which you want to restore data:
 
@@ -25,6 +26,4 @@ If you select to restore configuration data from a backup in a remote backup rep
 
 ![Step 3. Select Configuration Backup](images/restore_vbr_source.webp)
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

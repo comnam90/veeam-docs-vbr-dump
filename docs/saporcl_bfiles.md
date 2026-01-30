@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/saporcl_bfiles.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In Backup Files
 
-In this article
 
 For every backup job within Veeam Backup & Replication, Veeam Plug-In creates and stores database backup files and separate metadata files for each of the backup files. The backup files provide a consistent and integrated way for Veeam Plug-Ins to store and manage backup data, while ensuring that the data is protected, accessible and can be quickly restored when needed.
 
@@ -43,6 +44,4 @@ After one of the limits is reached, Veeam Plug-In closes the backup file and can
 * Copy and move backup file to the capacity tier.
 * Update the encryption setting for the application backup policy.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

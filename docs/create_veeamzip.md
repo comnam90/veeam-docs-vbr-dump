@@ -1,5 +1,7 @@
 ---
 title: "Creating VeeamZIP Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/create_veeamzip.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating VeeamZIP Backups
 
-In this article
 
 You can quickly back up running and powered off VMs with VeeamZIP. VeeamZIP can be helpful if you want to create an ad-hoc backup for VMs, archive VMs before decommissioning and so on. You can create VeeamZIP backups for one or more VMs.
 
@@ -60,6 +61,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 1. As the job runs, you can track the job performance in the real-time mode. To see the job results once it completes, open the History view, expand the Jobs node and click Backup. Then double-click the job session in the list.
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

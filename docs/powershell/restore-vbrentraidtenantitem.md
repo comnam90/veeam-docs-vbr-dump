@@ -1,5 +1,7 @@
 ---
 title: "Restore-VBREntraIDTenantItem"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restore-vbrentraidtenantitem.html"
 last_updated: "7/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore-VBREntraIDTenantItem
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Related Commands
 * [Generate-VBREntraIDTenantUserPassword](generate-vbrentraidtenantuserpassword.md)
 * [New-VBREntraIDUserCredentials](new-vbrentraidusercredentials.md)
 
-Page updated 7/28/2025
 
-Page content applies to build 13.0.1.1071

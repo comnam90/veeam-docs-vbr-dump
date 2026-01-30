@@ -1,5 +1,7 @@
 ---
 title: "New-VBRComputerGFSWeeklyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrcomputergfsweeklyoptions.html"
 last_updated: "10/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRComputerGFSWeeklyOptions
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command defines settings of a weekly GFS retention policy:
 | --- |
 | New-VBRComputerGFSWeeklyOptions -RetentionPeriod 3 -SelectedDay Wednesday |
 
-Page updated 10/22/2024
 
-Page content applies to build 13.0.1.1071

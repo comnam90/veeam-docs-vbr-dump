@@ -1,5 +1,7 @@
 ---
 title: "Cloud Director Cloud Replication Job"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cloud_replication_job.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cloud Director Cloud Replication Job
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with Cloud Director cloud replication jobs:
 
@@ -21,6 +22,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Get-VBRvCDCloudvApp](get-vbrvcdcloudvapp.md) | Returns Cloud Director vApps |
 | [Get-VBRvCDCloudVM](get-vbrvcdcloudvm.md) | Returns cloud VMs from organization VCDs. |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

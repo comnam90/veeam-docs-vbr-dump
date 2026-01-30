@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Archive Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_archive_repo.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Archive Repository Settings
 
-In this article
 
 At the Archive Repository step of the wizard, define the archive repository, where the file backup job must store backup files, and settings for moving or copying files and folders to this repository. To learn what storage types you can assign the role of the archive repository to, see [Storage Repositories](unstructured_data_backup_infrastructure.md#backup_repository) in the Backup Infrastructure for Unstructured Data Backup section.
 
@@ -50,6 +51,4 @@ When you archive the previous file versions, Veeam Backup & Replication moves ba
 
 ![Step 6. Specify Archive Repository Settings](images/file_share_backup_job_archive.webp "Specify Archive Repository Settings")
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

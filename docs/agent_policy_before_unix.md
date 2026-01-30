@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_before_unix.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a Veeam Agent backup policy in the Veeam Backup & Replication console, check the following prerequisites:
 
@@ -26,6 +27,4 @@ Veeam Agent backup policies have the following limitations:
 
 Keep in mind, that you can immediately update settings of the backup policy from the Veeam Agent computer. To learn more, see [Deploying Veeam Agent for Unix](deploy_agent_unix.md#configure).
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

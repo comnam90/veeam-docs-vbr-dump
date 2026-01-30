@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy Job of Amazon EC2 Instances"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/backup_copy_job.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy Job of Amazon EC2 Instances
 
-In this article
 
 You can use cmdlets in this topic to perform the following operations:
 
@@ -24,6 +25,4 @@ You can use cmdlets in this topic to perform the following operations:
 | [New-VBRGFSRetentionPolicy](new-vbrgfsretentionpolicy.md) | Creates a GFS retention policy for backup copy jobs that process backups of Amazon EC2 instances. |
 | [Set-VBRGFSRetentionPolicy](set-vbrgfsretentionpolicy.md) | Modifies a GFS retention policy for backup copy jobs that process backups of Amazon EC2 instances. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Exclude Objects from Backup Copy Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_exclude.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Exclude Objects from Backup Copy Job
 
-In this article
 
 This option is available only for virtual machines.
 
@@ -27,6 +28,4 @@ When you exclude VMs, you can use the Show full hierarchy check box to display t
 
 ![Step 4. Exclude Objects from Backup Copy Job](images/backup_copy_exclude.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

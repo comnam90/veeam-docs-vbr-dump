@@ -1,5 +1,7 @@
 ---
 title: "Transaction Log Backup Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_stats.html"
 last_updated: "9/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Transaction Log Backup Statistics
 
-In this article
 
 You can view the statistics of the transaction log backup job in the History view or in the Home view in Veeam Backup & Replication.
 
@@ -104,6 +105,4 @@ Total number of all LOG<N>.BAK files stored at the moment in all VLBs is reporte
 
 In the Veeam Backup & Replication console, this number of restore points for the log backup job can be seen in the Restore Points column of the preview pane.
 
-Page updated 9/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Accelerated Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_dd_accelerated_restore.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Accelerated Restore
 
-In this article
 
 To speed up entire VM restore and [Restore to Microsoft Azure](restore_azure.md) from Dell Data Domain, Veeam Backup & Replication uses the mechanism of sequential data reading from backups and parallel VM disks restore.
 
@@ -65,6 +66,4 @@ Related Topics
 * [Dell Data Domain Supported Features](dell_dd_supported_features.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

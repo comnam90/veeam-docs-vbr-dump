@@ -1,5 +1,7 @@
 ---
 title: "Limitations and Considerations for GFS Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_considerations.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Limitations and Considerations for GFS Retention Policy
 
-In this article
 
 Before configuring the GFS retention policy for a backup copy job, consider the following limitations and considerations:
 
@@ -69,6 +70,4 @@ If in version 10, the GFS policy was set to X monthly backups and Y quarterly ba
 | Important |
 | [For synthetic method] Before the upgrade to Veeam Backup & Replication 12 or later, make sure that all GFS candidates (incremental restore points created on days when GFS was scheduled and that are expected to be transformed into full GFS restore points) are already transformed into GFS restore points. To force the backup copy job to transform all GFS candidates, you can temporarily decrease the short-term retention to a value less than the number of restore points between the latest restore point and the most recent GFS candidate and then wait till all the candidates are transformed.  Before Veeam Backup & Replication version 11, Veeam Backup & Replication created GFS candidates on days when GFS was scheduled and only then transformed them into full GFS restore points according to the short-term retention. For more information on how restore points were transformed, see [Synthetic Weekly Full Backups](https://helpcenter.veeam.com/archive/backup/100/vsphere/backup_copy_weekly_synthetic.html). Starting from Veeam Backup & Replication version 11, Veeam Backup & Replication creates GFS restore points according to a new schedule and creates them right on the scheduled days. After the upgrade, Veeam Backup & Replication no longer transforms previous GFS candidates into full GFS restore points. This means, that all GFS candidates lose their GFS status, they become regular incremental restore points and are deleted according to the short-term retention policy. |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

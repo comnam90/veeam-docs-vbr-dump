@@ -1,5 +1,7 @@
 ---
 title: "Adding Veeam Backup for Microsoft 365 Service Provider"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_sp_add.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Veeam Backup for Microsoft 365 Service Provider
 
-In this article
 
 In Veeam Explorer for Microsoft SharePoint, you can connect to a service provider server to add its backups to the application scope and recover data directly from such backups.
 
@@ -45,6 +46,4 @@ To select a point in time, use the calendar control.
 
 [![Adding Veeam Backup for Microsoft 365 Service Provider](images/srv_server.webp)](images/srv_server.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

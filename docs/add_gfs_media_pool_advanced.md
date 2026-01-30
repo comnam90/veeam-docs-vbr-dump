@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Advanced Media Set Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_gfs_media_pool_advanced.html"
 last_updated: "6/28/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Advanced Media Set Options
 
-In this article
 
 You can granularly configure rules for each media set.
 
@@ -35,6 +36,4 @@ Select the Weekly, Monthly, Quarterly or Yearly tabs to set the advanced media s
 
 ![Step 5. Specify Advanced Media Set Options](images/add_gfs_media_pool_set_advanced.webp)
 
-Page updated 6/28/2023
 
-Page content applies to build 13.0.1.1071

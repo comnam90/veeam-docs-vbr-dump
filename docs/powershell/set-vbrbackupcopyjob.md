@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRBackupCopyJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrbackupcopyjob.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRBackupCopyJob
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Related Commands
 * [Get-VBRBackupCopyJob](get-vbrbackupcopyjob.md)
 * [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_single_tas_specify_pit.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Point-in-Time State
 
-In this article
 
 At this step of the wizard, select a state as of which you want to restore your database:
 
@@ -31,6 +32,4 @@ This check box is not available and grayed out if you selected a full backup at 
 
 [![Specifying Restore Point](images/vesql_restore_plugin_single_tas_specify_pit.webp)](images/vesql_restore_plugin_single_tas_specify_pit.webp "Specifying Restore Point")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

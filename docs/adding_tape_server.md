@@ -1,5 +1,7 @@
 ---
 title: "Adding Tape Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_tape_server.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Tape Servers
 
-In this article
 
 To add a tape server, follow the next steps:
 
@@ -18,6 +19,4 @@ To add a tape server, follow the next steps:
 5. [Assess results](assess_results.md).
 6. [Finish working with the wizard](finish_working_with_wizard.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

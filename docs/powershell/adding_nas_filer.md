@@ -1,5 +1,7 @@
 ---
 title: "Adding Enterprise Storage System as NAS Filer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/adding_nas_filer.html"
 last_updated: "1/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Enterprise Storage System as NAS Filer
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -20,6 +21,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Set-VBRNasFilerSMBServer](set-vbrnasfilersmbserver.md) | Modifies settings of SMB shares located on an enterprise NAS system added to the inventory. |
 | [Set-VBRNasFilerNFSServer](set-vbrnasfilernfsserver.md) | Modifies settings of NFS shared folders located on an enterprise NAS system and added to the inventory. |
 
-Page updated 1/7/2025
 
-Page content applies to build 13.0.1.1071

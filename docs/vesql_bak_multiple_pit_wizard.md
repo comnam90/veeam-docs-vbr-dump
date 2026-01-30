@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Export Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_bak_multiple_pit_wizard.html"
 last_updated: "12/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Export Wizard
 
-In this article
 
 To launch the Export wizard, do the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can right-click an instance or the server and select Export b
 
 [![Launching Export Wizard](images/bak_point_in_time_multiple.webp)](images/bak_point_in_time_multiple.webp "Launching Export Wizard")
 
-Page updated 12/18/2024
 
-Page content applies to build 13.0.1.1071

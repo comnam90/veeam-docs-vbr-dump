@@ -1,5 +1,7 @@
 ---
 title: "Restore to OLVM and RHV"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_olvm_rhv.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to OLVM and RHV
 
-In this article
 
 [This recovery method is available on the Microsoft Windows-based backup server.]
 
@@ -44,6 +45,4 @@ The restore procedure of entire workloads to oVirt KVM practically does not diff
 
 [![Restore to OLVM and RHV](images/restore_kvm_vm.webp)](images/restore_kvm_vm.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

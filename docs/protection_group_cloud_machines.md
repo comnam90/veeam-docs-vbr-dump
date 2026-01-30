@@ -1,5 +1,7 @@
 ---
 title: "Creating Protection Group for Cloud Machines"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_cloud_machines.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Protection Group for Cloud Machines
 
-In this article
 
 Before you create a protection group for cloud machines, [check prerequisites](pg_cloud_machines_before.md). Then use the New Protection Group wizard to configure a protection group.
 
@@ -22,6 +23,4 @@ Before you create a protection group for cloud machines, [check prerequisites](p
 9. [Assess results](https://helpcenter.veeam.com/docs/backup/agents/protection_group_apply.html).
 10. [Finish working with the wizard](https://helpcenter.veeam.com/docs/backup/agents/protection_group_finish.html).
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

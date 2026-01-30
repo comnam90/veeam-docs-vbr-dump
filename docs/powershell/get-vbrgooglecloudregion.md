@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRGoogleCloudRegion"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgooglecloudregion.html"
 last_updated: "2/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRGoogleCloudRegion
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 * [Get-VBRGoogleCloudAccount](get-vbrgooglecloudaccount.md)
 * [Connect-VBRGoogleCloudService](connect-vbrgooglecloudservice.md)
 
-Page updated 2/5/2024
 
-Page content applies to build 13.0.1.1071

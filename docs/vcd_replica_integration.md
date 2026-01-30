@@ -1,5 +1,7 @@
 ---
 title: "Integration Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_integration.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Integration Settings
 
-In this article
 
 On the Integration tab, define whether you want to use the Backup from Storage Snapshots technology to create a VMware Cloud Director replica. Backup from Storage Snapshots lets you leverage storage snapshots for VM data processing. The technology improves RPOs and reduces the impact of replication activities on the production environment. For more information, see [Backup from Storage Snapshots](backup_from_storage_snapshots.md) section.
 
@@ -24,6 +25,4 @@ For example, you add to the job vApps with 30 VMs whose disks are located on the
 
 ![Integration Settings](images/vcd_replica_integration.webp)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

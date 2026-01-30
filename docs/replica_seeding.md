@@ -1,5 +1,7 @@
 ---
 title: "Replica Seeding and Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_seeding.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replica Seeding and Mapping
 
-In this article
 
 Replica seeding and mapping are technologies that help reduce the amount of traffic sent over a network. With these technologies, Veeam Backup & Replication do not have to transfer all of VM data from the source host to the target host across the sites during the first session of a replication job (during the initial replication).
 
@@ -78,6 +79,4 @@ Related Topics
 
 [Defining Seeding and Mapping Settings](replica_seeding_vm.md)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

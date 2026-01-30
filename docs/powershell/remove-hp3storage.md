@@ -1,5 +1,7 @@
 ---
 title: "Remove-HP3Storage"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-hp3storage.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-HP3Storage
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 
 [Get-HP3Storage](get-hp3storage.md)
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

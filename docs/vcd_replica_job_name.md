@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Job Name and Advanced Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_job_name.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Job Name and Advanced Settings
 
-In this article
 
 At the Name step of the wizard, specify a job name and description, and configure advanced settings for the VMware Cloud Director replication job.
 
@@ -27,6 +28,4 @@ At the Name step of the wizard, specify a job name and description, and configur
 
 ![Step 2. Specify Job Name and Advanced Settings](images/vcd_replication_job_name.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

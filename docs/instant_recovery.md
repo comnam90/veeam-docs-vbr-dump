@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery to VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery to VMware vSphere
 
-In this article
 
 With Instant Recovery to VMware vSphere, you can immediately recover different workloads (VMs, EC2 instances, physical servers and so on) as VMware vSphere VMs. Instant Recovery to VMware vSphere can be helpful, for example, if you want to migrate your infrastructure from one environment to another, or you want to recover your infrastructure in a matter of minutes but with limited performance.
 
@@ -64,6 +65,4 @@ Related Topics
 
 [List of Recovery Methods for All Platforms](vm_recovery_all.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

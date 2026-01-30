@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Enterprise Manager"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/enterprise_manager.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Enterprise Manager
 
-In this article
 
 Veeam Backup Enterprise Manager is an optional component intended for distributed enterprise environments with multiple backup servers. Veeam Backup Enterprise Manager federates backup servers and offers a consolidated view of these servers through a web browser interface. You can centrally control and manage all jobs through a single "pane of glass", edit and clone jobs, monitor job state and get reporting data across all backup servers. Veeam Backup Enterprise Manager also enables you to search for VM guest OS files in all current and archived backups across your backup infrastructure, and restore these files in one click.
 
@@ -31,6 +32,4 @@ Related Topics
 
 [Enterprise Manager Deployment on Linux](https://helpcenter.veeam.com/docs/vbr/em/em_deployment_linux.html?ver=13)
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

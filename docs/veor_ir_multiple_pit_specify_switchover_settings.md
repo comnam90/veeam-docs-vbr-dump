@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Switchover Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_multiple_pit_specify_switchover_settings.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Switchover Settings
 
-In this article
 
 At this step of the wizard, specify database switchover options.
 
@@ -35,6 +36,4 @@ After you click Recover, Veeam Explorer for Oracle starts publishing the databas
 
 [![Specifying Oracle Home User Password](images/veor_ir_oracle_home_password.webp)](images/veor_ir_oracle_home_password.webp "Specifying Oracle Home User Password")
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

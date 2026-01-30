@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBRCopyBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrcopybackupsession.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBRCopyBackupSession
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ Output Object
 
 The cmdlet returns the VBRSession object that contains settings of the copy session.
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

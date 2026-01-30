@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Retrieve Backup Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archive_retrieval_launch.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Retrieve Backup Wizard
 
-In this article
 
 To launch the retrieval job, do one of the following:
 
@@ -17,6 +18,4 @@ To launch the retrieval job, do one of the following:
 
 [![Step 1. Launch Retrieve Backup Wizard](images/archive_retrieval_launch.webp)](images/archive_retrieval_launch.webp)
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRSureBackupLinkedJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsurebackuplinkedjob.html"
 last_updated: "9/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRSureBackupLinkedJob
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 [Get-VBRJob](get-vbrjob.md)
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Import-VBRConfiguration (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/import-vbrconfiguration.html"
 last_updated: "3/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Import-VBRConfiguration (obsolete)
 
-In this article
 
 Short Description
 
@@ -67,6 +68,4 @@ Examples
 | --- | --- |
 | This command imports the VEEAMBACKUP-10-06-2021 configuration backup file to the ConfigBackup database.  |  | | --- | | Import-VBRConfiguration -FileName "C:\backup\VeeamConfigBackup\VEEAMBACKUP\VEEAMBACKUP-10-06-2021" -DatabaseName "ConfigBackup" | |
 
-Page updated 3/11/2024
 
-Page content applies to build 13.0.1.1071

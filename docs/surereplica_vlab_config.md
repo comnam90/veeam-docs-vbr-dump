@@ -1,5 +1,7 @@
 ---
 title: "Virtual Lab Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_vlab_config.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Lab Configuration
 
-In this article
 
 Veeam Backup & Replication offers three types of the virtual lab configuration for VM replica verification:
 
@@ -19,6 +20,4 @@ Related Topics
 
 [Limitations of Single-Host Virtual Labs](surereplica_vlab_limitations.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

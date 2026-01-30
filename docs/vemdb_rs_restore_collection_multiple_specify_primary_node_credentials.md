@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Primary Node Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_multiple_specify_primary_node_credentials.html"
 last_updated: "7/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Primary Node Credentials
 
-In this article
 
 At this step of the wizard, specify credentials to access the primary node of the target MongoDB replica set.
 
@@ -43,6 +44,4 @@ To locate a file, click Browse and select a key.
 
 [![Specifying Primary Node Credentials](images/vemdb_rs_restore_collection_specify_primary_node_credentials.webp)](images/vemdb_rs_restore_collection_specify_primary_node_credentials.webp "Specifying Primary Node Credentials")
 
-Page updated 7/10/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring from Published Instances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_published_restore.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring from Published Instances
 
-In this article
 
 Veeam Explorer for MongoDB allows you to restore collections from published MongoDB instances. This feature restores the modified collections managed by the instance, preserving all the changes that have been made during the publishing session. The collections will be restored to the point-in-time state selected in the [Specify Restore Point](vemdb_rs_publish_instance_specify_restore_point.md) step of the Publish Wizard.
 
@@ -29,6 +30,4 @@ To restore databases from the published instance, do the following:
 
 1. Proceed with the [Specify Replica Set Credentials](vemdb_rs_restore_collection_multiple_specify_rs_credentials.md) step of the Restore Wizard. Complete the remaining steps of the wizard to restore your collections.
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

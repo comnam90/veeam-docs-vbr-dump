@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAzureADAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazureadaccount.html"
 last_updated: "11/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAzureADAccount
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Examples
 | --- | --- |
 | This command returns Azure Entra ID-based storage accounts with the Azure Entra ID Admin name.  |  | | --- | | Get-VBRAzureADAccount -Name "Azure Entra ID Admin" | |
 
-Page updated 11/13/2024
 
-Page content applies to build 13.0.1.1071

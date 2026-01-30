@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDTenantItemRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidtenantitemrestoresession.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDTenantItemRestoreSession
 
-In this article
 
 Contains details on a session for the Microsoft Entra ID item restore.
 
@@ -27,6 +28,4 @@ Related Commands
 
 [Get-VBREntraIDTenantItemRestoreSession](get-vbrentraidtenantitemrestoresession.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

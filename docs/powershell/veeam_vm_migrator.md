@@ -1,5 +1,7 @@
 ---
 title: "Veeam VM Migrator"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_vm_migrator.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam VM Migrator
 
-In this article
 
 Veeam VM Migrator cmdlets set resolves MORef ID misalignment after VMware vCenter migration, preventing VMs with changed MORef IDs from being treated as new VMs. It allows jobs to continue the incremental processing of these VMs.
 
@@ -36,6 +37,4 @@ In This Section
 | [Generate-VBRViMigrationSpecificationFile](generate-vbrvimigrationspecificationfile.md) | Generates a migration task file. |
 | [Start-VBRViVMMigration](start-vbrvivmmigration.md) | Starts the MORef ID update. |
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

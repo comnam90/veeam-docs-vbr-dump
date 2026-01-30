@@ -1,5 +1,7 @@
 ---
 title: "Database Protection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_protection.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Protection
 
-In this article
 
 After you configure Veeam Plug-In, you can use the Oracle RMAN functionality to back up databases. Veeam Plug-In will automatically transfer the backup files to the Veeam backup repository. For more information about configuring Veeam Plug-In, see [Configuring Veeam Plug-In for Oracle RMAN](configuring_rman_plugin.md).
 
@@ -29,6 +30,4 @@ In this Section
 * [Oracle RMAN Channel Allocation](rman_allocation_backup.md)
 * [Backup Job in Veeam Backup & Replication](rman_job_vbr.md)
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

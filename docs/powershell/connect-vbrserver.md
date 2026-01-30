@@ -1,5 +1,7 @@
 ---
 title: "Connect-VBRServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vbrserver.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Connect-VBRServer
 
-In this article
 
 Short Description
 
@@ -99,6 +100,4 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.1)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

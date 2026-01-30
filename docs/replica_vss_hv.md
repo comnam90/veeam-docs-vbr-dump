@@ -1,5 +1,7 @@
 ---
 title: "Step 14. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_hv.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 14. Specify Guest Processing Settings
 
-In this article
 
 At the Guest Processing step of the wizard, enable guest OS processing that allows you to create transactionally consistent replicas, exclude files from processing, and use pre-freeze and post-thaw scripts. For more information on guest OS processing, see the [Guest Processing](guest_processing_hv.md) section.
 
@@ -41,6 +42,4 @@ After you have enabled guest OS processing, configure the following guest proces
 
 ![Step 14. Specify Guest Processing Settings](images/hv_replica_job_vss.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

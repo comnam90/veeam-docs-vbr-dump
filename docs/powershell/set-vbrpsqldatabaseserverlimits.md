@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRPSQLDatabaseServerLimits"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrpsqldatabaseserverlimits.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRPSQLDatabaseServerLimits
 
-In this article
 
 Short Description
 
@@ -92,6 +93,4 @@ Examples
 | --- | --- |
 | This command modifies settings of the PostgreSQL instance. The PostgreSQL instance is installed on a remote machine and is not used as the Veeam Backup & Replication configuration database.  |  | | --- | | Set-VBRPSQLDatabaseServerLimits -OSType <String> -CPUCount 16 -RamGb 30 -DumpToFile "C:\settings.sql" | |
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Configure Helper Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_appliance_hv.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Configure Helper Appliance
 
-In this article
 
 This step is available if you recover workloads with Linux OS and recover them to a new location or with different settings.
 
@@ -49,6 +50,4 @@ The 0 value means that the VLAN is not set.
 
 ![Step 9. Configure Helper Appliance](images/instant_recovery_to_hv_helper.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

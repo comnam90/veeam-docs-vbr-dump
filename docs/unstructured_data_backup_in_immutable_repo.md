@@ -1,5 +1,7 @@
 ---
 title: "Unstructured Data Backups in Immutable Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_in_immutable_repo.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unstructured Data Backups in Immutable Repositories
 
-In this article
 
 All data stored in immutable repositories cannot be altered or removed until the immutability period expires and the immutability lock for the data is released. The only exception is active metadata for backups stored in immutable hardened repositories and immutable deduplicating storage appliances (HPE StoreOnce and Dell Data Domain).
 
@@ -68,6 +69,4 @@ If unstructured data backups are stored in an immutable object storage such as A
 
 ![Unstructured Data Backups in Immutable Repositories](images/nas_immutability_object_repo.webp)
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

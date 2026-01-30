@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_before_you_begin_hv.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Before you restore a VM from a backup, consider the following:
 
@@ -26,6 +27,4 @@ For example, you can restore a VM from the host that runs Microsoft Windows Serv
 
 The Hyper-V role must be enabled on both source and target hosts.
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

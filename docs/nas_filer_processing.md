@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify File Share Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_filer_processing.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify File Share Processing Settings
 
-In this article
 
 At the Processing step of the wizard, define NAS filer processing settings:
 
@@ -26,6 +27,4 @@ If you change the cache repository for an NAS filer whose backups are stored in 
 
 ![Step 3. Specify File Share Processing Settings](images/nas_filer_processing.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

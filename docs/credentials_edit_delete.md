@@ -1,5 +1,7 @@
 ---
 title: "Editing and Deleting Credentials Records"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_edit_delete.html"
 last_updated: "1/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing and Deleting Credentials Records
 
-In this article
 
 You can edit or delete credentials records that you have created. For the system credentials records, you can only change a password and record description. These credentials records cannot be deleted.
 
@@ -30,6 +31,4 @@ To delete a credentials record:
 
 ![Editing and Deleting Credentials Records](images/credentials_records_delete.webp)
 
-Page updated 1/11/2024
 
-Page content applies to build 13.0.1.1071

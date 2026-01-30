@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBRHighAvailabilityCluster"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrhighavailabilitycluster.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBRHighAvailabilityCluster
 
-In this article
 
 Short Description
 
@@ -51,6 +52,4 @@ This command disassembles the HA cluster.
 | --- |
 | Remove-VBRHighAvailabilityCluster -RunAsync |
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

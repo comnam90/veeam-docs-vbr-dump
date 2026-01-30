@@ -1,5 +1,7 @@
 ---
 title: "Replication Chain"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_chain.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replication Chain
 
-In this article
 
 For every VM replica, Veeam Backup & Replication creates a replication chain that consists of restore points. Veeam Backup & Replication utilizes VMware ESXi snapshot capabilities to create and manage replica restore points.
 
@@ -24,6 +25,4 @@ VM replica restore points are stored in a native VMware vSphere format next to r
 
 [![Replication Chain](images/snapshot_chain_vm.webp)](images/snapshot_chain_vm.webp)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

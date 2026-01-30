@@ -1,5 +1,7 @@
 ---
 title: "Managing Instant Recovery Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_managing_session.html"
 last_updated: "2/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Instant Recovery Session
 
-In this article
 
 After you finish the steps of the Instant Recovery wizard, Veeam Explorer for PostgreSQL starts an instant recovery session which shows the progress of the recovery process.
 
@@ -32,6 +33,4 @@ Also, in the Instant Recovery session view, you can do the following:
 
 [![Managing Instant Recovery Session](images/vep_ir_finalize.webp)](images/vep_ir_finalize.webp "Managing Instant Recovery Session")
 
-Page updated 2/21/2025
 
-Page content applies to build 13.0.1.1071

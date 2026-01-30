@@ -1,5 +1,7 @@
 ---
 title: "Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_job.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job
 
-In this article
 
 The backup job that processes Veeam Agent computers runs on the backup server in the similar way as a regular job for VM data backup. You can add one or more protection groups or individual computers to the job and instruct Veeam Backup & Replication to create Veeam Agent backups in a Veeam backup repository or cloud repository. In terms of the Veeam Agent management scenario, the backup job of this type is also referred to as the Veeam Agent backup job managed by the backup server.
 
@@ -43,6 +44,4 @@ Veeam Backup & Replication stores backed-up data to the backup file in the backu
 
 ![Backup Job](images/backup_job.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

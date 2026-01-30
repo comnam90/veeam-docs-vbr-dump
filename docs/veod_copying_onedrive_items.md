@@ -1,5 +1,7 @@
 ---
 title: "Data Copy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_copying_onedrive_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Copy
 
-In this article
 
 You can use Veeam Explorer for Microsoft OneDrive for Business to copy OneDrive data to a different location.
 
@@ -21,6 +22,4 @@ To copy OneDrive data to the same or different user, do the following:
 6. [Specify restore options](veod_copy_restore_options.md).
 7. [Review the operation summary](summary23.md).
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

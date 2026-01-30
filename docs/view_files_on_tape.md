@@ -1,5 +1,7 @@
 ---
 title: "Viewing Files and Objects on Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/view_files_on_tape.html"
 last_updated: "4/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Files and Objects on Tape
 
-In this article
 
 After the file to tape job or object to tape job completes, you can view the created archive on tape:
 
@@ -50,6 +51,4 @@ To view summary information for files and objects:
 
 ![Viewing Files and Objects on Tape](images/file_to_tape_properties_points.webp)
 
-Page updated 4/29/2024
 
-Page content applies to build 13.0.1.1071

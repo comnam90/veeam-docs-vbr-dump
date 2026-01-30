@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Utility"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_db_utility_launch.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Utility
 
-In this article
 
 You can launch the configuration database connection utility using one of the following ways:
 
@@ -19,6 +20,4 @@ To run the utility, you must have administrative rights on the local machine, as
 
 ![Step 1. Launch Utility](images/entra_id_launch_db_utility.webp)
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_pit.html"
 last_updated: "12/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Point-in-Time State
 
-In this article
 
 To restore a point-in-time state of an SAP HANA database, use the Restore wizard.
 
@@ -19,6 +20,4 @@ To restore a point-in-time state of an SAP HANA database, use the Restore wizard
 6. [Select a backup](vehana_restore_single_pit_select_backup.md).
 7. [Specify SYSTEM user password](vehana_restore_single_pit_specify_password.md).
 
-Page updated 12/4/2023
 
-Page content applies to build 13.0.1.1071

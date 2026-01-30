@@ -1,5 +1,7 @@
 ---
 title: "Deleted Items Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_deleted_vms.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleted Items Retention
 
-In this article
 
 After you configure a backup copy job, you may want to change something in the virtual infrastructure. For example, you may remove some virtual or physical machines or move VMs to another location. You may also exclude VMs from the backup copy job that has already run for some time.
 
@@ -57,6 +58,4 @@ As a result, after the backup copy session on Tuesday backup files in the target
 
 ![Deleted Items Retention](images/backup_copy_deleted_vms_example.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

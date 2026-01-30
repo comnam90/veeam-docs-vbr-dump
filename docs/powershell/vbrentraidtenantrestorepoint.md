@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDTenantRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidtenantrestorepoint.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDTenantRestorePoint
 
-In this article
 
 Contains details on a restore point created by a Microsoft Entra ID backup job.
 
@@ -24,6 +25,4 @@ Related Commands
 
 [Get-VBREntraIDTenantRestorePoint](get-vbrentraidtenantrestorepoint.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

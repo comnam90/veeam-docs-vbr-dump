@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup Jobs Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_hv_web.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup Jobs Using Web UI
 
-In this article
 
 To back up VMs, you must configure a backup job. The backup job defines how, where and when to back up VM data. You can use one job to process one or more VMs. Jobs can be started manually or scheduled to run automatically at a specific time.
 
@@ -24,6 +25,4 @@ Before you create a backup job, [check the prerequisites](backup_job_limitations
 9. [Define a job schedule](backup_job_schedule_hv_web.md).
 10. [Finish working with the wizard](backup_job_review_hv_web.md).
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Cloud Storage Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_azure_account.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Cloud Storage Account
 
-In this article
 
 At the Account step of the wizard, specify settings for an account which will be used to connect to Azure Blob storage:
 
@@ -29,6 +30,4 @@ By default, the role of a gateway server is assigned to the Veeam Backup & Repli
 
 [![Step 3. Specify Cloud Storage Account](images/external_azure_wizard_account.webp)](images/external_azure_wizard_account.webp)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

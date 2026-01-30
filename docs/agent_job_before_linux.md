@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_before_linux.html"
 last_updated: "11/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a Veeam Agent backup job managed by the backup server in the Veeam Backup & Replication console, check the following prerequisites:
 
@@ -32,6 +33,4 @@ If you perform an entire machine backup of a system with bind mount points, Veea
 
 * You cannot add a Veeam Agent computer protected by a Veeam Agent backup policy to a backup job managed by the backup server. To add such a computer to a backup job managed by the backup server, first remove the computer from the Veeam Agent backup policy.
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

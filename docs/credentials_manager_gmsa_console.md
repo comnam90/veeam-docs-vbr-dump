@@ -1,5 +1,7 @@
 ---
 title: "Creating Managed Service Account Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_gmsa_console.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Managed Service Account Using Console
 
-In this article
 
 To add a new credentials record with the gMSA, do the following in the Veeam Backup & Replication console:
 
@@ -18,6 +19,4 @@ To add a new credentials record with the gMSA, do the following in the Veeam Bac
 
 [![Creating Managed Service Account Using Console](images/credentials_manager_gmsa.webp)](images/credentials_manager_gmsa.webp)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

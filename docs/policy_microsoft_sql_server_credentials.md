@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_credentials.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials that Veeam Plug-In will use to connect to the SQL instance:
 
@@ -19,6 +20,4 @@ Keep in mind that the specified account must be a SQL instance user with a sysad
 
 ![Step 6. Specify Credentials](images/plugins_policy_mssql_credentials.webp)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

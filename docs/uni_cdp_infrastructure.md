@@ -1,5 +1,7 @@
 ---
 title: "Backup Infrastructure for Universal CDP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_infrastructure.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Infrastructure for Universal CDP
 
-In this article
 
 The following backup infrastructure components are required for universal CDP:
 
@@ -57,6 +58,4 @@ The I/O filter processes I/O receives data from CDP proxies. The filter also com
 
 For more information on how to install the filter, see [Installing I/O Filter](cdp_io_filter_install.md).
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_advanced_notifications.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the backup policy:
 
@@ -31,6 +32,4 @@ Email notifications will be sent if you configure global email notification sett
 
 ![Notification Settings](images/mongo_policy_storage_advanced_notifications.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRDiscoveredMongoDBReplicaSetNode"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrdiscoveredmongodbreplicasetnode.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRDiscoveredMongoDBReplicaSetNode
 
-In this article
 
 Contains discovered MongoDB replica set nodes.
 
@@ -24,6 +25,4 @@ Properties
 | IsPrimary | Boolean | Replica set node set as a primary backup node. |
 | IsHidden | Boolean | Hidden replica set node. |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

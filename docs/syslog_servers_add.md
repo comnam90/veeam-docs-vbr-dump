@@ -1,5 +1,7 @@
 ---
 title: "Adding Syslog Server Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/syslog_servers_add.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Syslog Server Using Console
 
-In this article
 
 To add a syslog server, do the following in the Veeam Backup & Replication console:
 
@@ -29,6 +30,4 @@ To add a syslog server, do the following in the Veeam Backup & Replication conso
 | Tip |
 | If required, you can also configure the following specific parameters on the backup server:   * Add the Unicode byte order mask (BOM) before the MSG field * [For TCP or TLS connections] Use the octet count prefix as a syslog message delimiter instead of \n character * [For TCP connections] Specify custom connection timeout   To configure these parameters, see [this Veeam KB article](https://www.veeam.com/kb4522). |
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

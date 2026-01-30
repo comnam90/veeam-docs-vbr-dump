@@ -1,5 +1,7 @@
 ---
 title: "Restoring Documents and List Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_vbr_restore_items.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Documents and List Items
 
-In this article
 
 You can restore Microsoft SharePoint documents and list items to the same or a different site.
 
@@ -19,6 +20,4 @@ To restore a Microsoft SharePoint document or list item, take the following step
 4. [Specify restore options](vesp_vbr_restore_items_specify_restore_options.md).
 5. [Review the operation summary](summary20.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

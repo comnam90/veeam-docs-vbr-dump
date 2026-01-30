@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup Jobs for Cloud Director VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_perform_backup.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup Jobs for Cloud Director VMs
 
-In this article
 
 The process of creating a VMware Cloud Director backup job is practically the same as for a [VMware vSphere backup job](backup_job.md). The VMware Cloud Director backup job aggregates main settings for the backup task and defines when, what, how and where to back up VMware Cloud Director VMs.
 
@@ -37,6 +38,4 @@ At the Virtual Machines step of the wizard, select which Cloud Director instance
 
 [![Create job for VMware Cloud Director](images/vcloud_backup.webp)](images/vcloud_backup.webp "Create job for VMware Cloud Director")
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

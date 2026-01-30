@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Choose Files and Folders to Archive"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_to_tape_files.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Choose Files and Folders to Archive
 
-In this article
 
 At the Files and Folders step of the wizard, select files and folders that you want to back up.
 
@@ -63,6 +64,4 @@ If you want to reuse the inclusion and exclusion settings in the future, you can
 
 ![Step 3. Choose Files and Folders to Archive](images/file_to_tape_masks.webp)
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

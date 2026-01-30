@@ -1,5 +1,7 @@
 ---
 title: "Using 1-Click Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_exporting_schema_1_click.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using 1-Click Export
 
-In this article
 
 Veeam Explorer for Microsoft SQL Server allows you to quickly export the database schema state as of the current restore point.
 
@@ -31,6 +32,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Restore Summary Window](images/vesql_export_schema_summary.webp)](images/vesql_export_schema_summary.webp "Reviewing Restore Summary Window")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

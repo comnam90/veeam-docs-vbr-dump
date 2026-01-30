@@ -1,5 +1,7 @@
 ---
 title: "Restore to Scale Computing HyperCore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sch.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Scale Computing HyperCore
 
-In this article
 
 Veeam Backup & Replication allows you to recover different workloads as Scale Computing HyperCore VMs.
 
@@ -37,6 +38,4 @@ The restore procedure of entire workloads to Scale Computing HyperCore practical
 
 [![Restore to Scale Computing HyperCore](images/sch_restore_entire_vm_launch.webp)](images/sch_restore_entire_vm_launch.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_scripts.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 You can specify script settings for the job managed by backup server.
 
@@ -34,6 +35,4 @@ You can select to execute pre- and post-backup actions after a number of backup 
 
 ![Script Settings](images/agent_job_settings_scripts.webp "Specify Script Settings")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

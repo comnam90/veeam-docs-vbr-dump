@@ -1,5 +1,7 @@
 ---
 title: "Managing Application Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_manage.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Application Backup Policy
 
-In this article
 
 You can use the Veeam Backup & Replication console to perform the following operations with an application backup policy:
 
@@ -19,6 +20,4 @@ You can use the Veeam Backup & Replication console to perform the following oper
 * [Clone a backup policy](mongo_policy_manage_clone.md).
 * [Delete a backup policy](mongo_policy_manage_delete.md).
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Configure Backup Copy Settings"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_backup_copy.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Configure Backup Copy Settings
 
-In this article
 
 [This step applies only if you have selected the Configure secondary destinations for this job check box at the Tenant step of the wizard]
 
@@ -34,6 +35,4 @@ For a password to be displayed in the list of available passwords, it must be ad
 
 ![Step 4. Configure Backup Copy Settings](images/entra_id_tenant_backup_copy.webp)
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

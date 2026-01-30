@@ -1,5 +1,7 @@
 ---
 title: "Adding Protection Group to Application Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_job.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Protection Group to Application Backup Policy
 
-In this article
 
 To add a protection group to an application backup policy:
 
@@ -24,6 +25,4 @@ To add a protection group to an application backup policy:
 
 [![Add to Backup Policy](images/mongo_protection_group_add_to_job.webp)](images/mongo_protection_group_add_to_job.webp "Add to Backup Policy")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

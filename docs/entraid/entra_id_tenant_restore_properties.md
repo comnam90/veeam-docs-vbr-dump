@@ -1,5 +1,7 @@
 ---
 title: "Restoring Item Properties"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_restore_properties.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Item Properties
 
-In this article
 
 [This step applies only if you have selected the Metadata comparison option when proceeding with the wizard]
 
@@ -25,6 +26,4 @@ To help you choose a restore point, Veeam Backup for Microsoft Entra ID provides
 
 [![Select Restore Point](images/entra_id_restore_prop_point.webp)](images/entra_id_restore_prop_point.webp "Select Restore Point")
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

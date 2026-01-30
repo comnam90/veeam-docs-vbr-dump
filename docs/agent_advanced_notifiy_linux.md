@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_advanced_notifiy_linux.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the Veeam Agent backup job managed by the backup server:
 
@@ -32,6 +33,4 @@ Email notifications will be sent if you configure global email notification sett
 
 ![Notification Settings](images/agent_job_settings_notify_linux.webp)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

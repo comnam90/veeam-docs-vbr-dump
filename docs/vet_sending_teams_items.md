@@ -1,5 +1,7 @@
 ---
 title: "Sending Posts and Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_sending_teams_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sending Posts and Files
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to send posts and files published in a team channel to specified recipients by email. You can send all posts or files of a channel or send individual posts or files.
 
@@ -71,6 +72,4 @@ You can also edit the message subject and body. To edit the message body, click 
 
 [![Sending Posts and Files](images/send_post_mail.webp)](images/send_post_mail.webp "Sending Posts and Files")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Destination and Disk Format"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_export_format.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Destination and Disk Format
 
-In this article
 
 At the Target step of the wizard, select the destination for disk export and format in which you want to save the resulting virtual disks:
 
@@ -30,6 +31,4 @@ At the Target step of the wizard, select the destination for disk export and for
 
 ![Step 5. Select Destination and Disk Format](images/disk_export_disks_type.webp)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

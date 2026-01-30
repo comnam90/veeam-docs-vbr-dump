@@ -1,5 +1,7 @@
 ---
 title: "Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failback.html"
 last_updated: "3/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback
 
-In this article
 
 Failback is one of the ways to finalize failover. When you perform failback, you switch back to the production VM from a replica, shift I/O processes from the disaster recovery site to the production site.
 
@@ -76,6 +77,4 @@ Related Topics
 
 [Performing Failback](cdp_performing_failback.md)
 
-Page updated 3/5/2024
 
-Page content applies to build 13.0.1.1071

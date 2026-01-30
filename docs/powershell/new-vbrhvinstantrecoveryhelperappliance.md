@@ -1,5 +1,7 @@
 ---
 title: "New-VBRHvInstantRecoveryHelperAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvinstantrecoveryhelperappliance.html"
 last_updated: "4/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRHvInstantRecoveryHelperAppliance
 
-In this article
 
 Short Description
 
@@ -75,6 +76,4 @@ Perform the following steps:
 1. Run the [Get-VBRHvServerNetworkInfo](get-vbrhvservernetworkinfo.md) cmdlet. Specify the Server parameter value. Save the result to the $network variable.
 2. Run the New-VBRHvInstantRecoveryHelperAppliance cmdlet. Set the $network variable as the Network parameter value.
 
-Page updated 4/4/2024
 
-Page content applies to build 13.0.1.1071

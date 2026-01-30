@@ -1,5 +1,7 @@
 ---
 title: "Configuration Commands"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_configure_commands.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuration Commands
 
-In this article
 
 You can use the DB2ConfigTool tool to change specific parameters in the configuration file, located in the /opt/veeam/VeeamPluginforDB2 directory.
 
@@ -48,6 +49,4 @@ To specify credentials that will be used to log in to the Veeam Backup & Replica
 | --- |
 | DB2ConfigTool --set-credentials "serv02\Administrator" password |
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

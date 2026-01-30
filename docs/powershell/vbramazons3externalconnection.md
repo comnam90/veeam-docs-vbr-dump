@@ -1,5 +1,7 @@
 ---
 title: "VBRAmazonS3ExternalConnection"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbramazons3externalconnection.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAmazonS3ExternalConnection
 
-In this article
 
 Contains connection settings to Amazon S3 object storage.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [Connect-VBRAmazonS3Service](connect-vbramazons3service.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

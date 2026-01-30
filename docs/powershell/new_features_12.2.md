@@ -1,5 +1,7 @@
 ---
 title: "New Features"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new_features_12.2.html"
 last_updated: "9/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New Features
 
-In this article
 
 This section contains information on new features that were introduced in Veeam PowerShell v12.2.
 
@@ -45,6 +46,4 @@ In this version, you can run new cmdlets to perform and manage MongoDB backups.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [Add-VBRMongoDBBackupJob](add-vbrmongodbbackupjob.md) | Creates MongoDB backup policies. | | [Set-VBRMongoDBBackupJob](set-vbrmongodbbackupjob.md) | Modifies MongoDB backup policies. | | [Get-VBRMongoDBComputer](get-vbrmongodbcomputer.md) | Returns a list of all computers within specified replica sets. | | [New-VBRMongoDBContainer](new-vbrmongodbcontainer.md) | Creates a MongoDB container for an array of existing custom credentials. | | [Set-VBRMongoDBContainer](set-vbrmongodbcontainer.md) | Modifies MongoDB containers that include an array of custom credentials. | | [New-VBRMongoDBCustomCredentials](new-vbrmongodbcustomcredentials.md) | Creates custom credentials for computers within MongoDB replica sets to be selected for backup operations. | | [New-VBRMongoDBDeployment](new-vbrmongodbdeployment.md) | Connects to and adds MongoDB replica sets to protection groups. | | [New-VBRMongoDBProcessingOptions](new-vbrmongodbprocessingoptions.md) | Creates processing options for each MongoDB replica set. | | [Set-VBRMongoDBProcessingOptions](set-vbrmongodbprocessingoptions.md) | Modifies processing options for each MongoDB replica set. | |
 
-Page updated 9/2/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Start Restore Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_start.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Start Restore Process
 
-In this article
 
 To start  the configuration database restore process, do the following:
 
@@ -22,6 +23,4 @@ To start  the configuration database restore process, do the following:
 
 Veeam Backup & Replication will use the preferences specified in the unattended.xml file to perform the configuration database restore.
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

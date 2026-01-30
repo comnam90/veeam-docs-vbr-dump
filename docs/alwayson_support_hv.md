@@ -1,5 +1,7 @@
 ---
 title: "Support for Always On Availability Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/alwayson_support_hv.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Support for Always On Availability Groups
 
-In this article
 
 Always On Availability Groups allow you to increase fault tolerance between active and hot-standby databases without involving shared physical disks, which is quite important for the virtualization of Microsoft SQL Servers. Veeam Backup & Replication supports Always On Availability Groups for virtualized Microsoft SQL Server 2012 or later.
 
@@ -46,6 +47,4 @@ Logs are backed up from one node of the Always On Availability Group. To become 
 | Note |
 | When you configure a backup job to process Distributed Availability Groups transaction logs, select either primary or secondary distributed availability group. Otherwise, the log chain of the distributed group databases may become inconsistent.  When you configure a backup job to back up transaction logs for other Distributed Availability Groups, use the Perform copy only mode. See [Application-Aware Processing](backup_job_vss_application_hv.md) to learn more about the copy only mode. You can also use the exclude feature to prevent Guest-OS database from being processed. See [Exclude Objects from Backup Job](backup_job_excludes_hv.md) to learn more on excluding objects. To read about distributed availability group limitations, see [Configure distributed availability group](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/configure-distributed-availability-groups). |
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

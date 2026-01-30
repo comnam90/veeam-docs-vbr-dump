@@ -1,5 +1,7 @@
 ---
 title: "Off-Host Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/offhost_backup.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Off-Host Backup
 
-In this article
 
 In the off-host backup mode, backup processing is shifted from the source Microsoft Hyper-V host to a dedicated machine — an off-host backup proxy.
 
@@ -57,6 +58,4 @@ Related Topics
 
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

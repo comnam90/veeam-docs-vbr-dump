@@ -1,5 +1,7 @@
 ---
 title: "Using KMS Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kms_use_keys.html"
 last_updated: "7/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using KMS Keys
 
-In this article
 
 To use KMS keys for data encryption, go to the backup job or storage settings and select the KMS server in the Password field. For more information about data encryption levels, see [Job Encryption](encryption_job.md) and [Storage Encryption](encryption_storage.md).
 
@@ -42,6 +43,4 @@ Related Topics
 
 [Decrypting Tapes with KMS Keys](tape_decrypt_kms.md)
 
-Page updated 7/23/2025
 
-Page content applies to build 13.0.1.1071

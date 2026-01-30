@@ -1,5 +1,7 @@
 ---
 title: "Disabling and Removing VMware Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/setup_manproxy.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disabling and Removing VMware Backup Proxies
 
-In this article
 
 You can temporarily disable a VMware backup proxy or remove it from the backup infrastructure.
 
@@ -45,6 +46,4 @@ To remove a VMware backup proxy:
 
 [![Click to zoom in](images/remove_proxy_vm.webp)](images/remove_proxy_vm.webp "Click to zoom in")
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

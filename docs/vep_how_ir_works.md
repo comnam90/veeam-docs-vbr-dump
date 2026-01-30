@@ -1,5 +1,7 @@
 ---
 title: "How Instant Recovery Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_how_ir_works.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Instant Recovery Works
 
-In this article
 
 Instant recovery of PostgreSQL instances with Veeam Explorer for PostgreSQL works in the following manner:
 
@@ -31,6 +32,4 @@ The instant recovery session is resilient to network disruptions, backup server 
 
 [![How Instant Recovery Works](images/vepg_ir.webp)](images/vepg_ir.webp "How Instant Recovery Works")
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

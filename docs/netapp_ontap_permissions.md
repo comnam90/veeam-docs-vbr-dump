@@ -1,5 +1,7 @@
 ---
 title: "NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_ontap_permissions.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG Permissions
 
-In this article
 
 The account used to connect to NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG storage system must have permissions described in this section. The commands are provided for the console, UI names may differ.
 
@@ -111,6 +112,4 @@ Only as SVM (Veeam Agent Integration)
 | volume snapshot | all |
 | vserver | all |
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

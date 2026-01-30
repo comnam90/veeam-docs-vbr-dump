@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/finish_working_with_wizard.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, finalize the procedure of the tape server configuration. Review details of the added tape server.
 
@@ -15,6 +16,4 @@ To inventory tape libraries connected to the tape server, select the Start tape 
 
 ![Step 6. Finish Working with Wizard](images/tapeproxy_finish.webp)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

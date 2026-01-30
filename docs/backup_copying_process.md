@@ -1,5 +1,7 @@
 ---
 title: "How Backup Copy Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copying_process.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Backup Copy Works
 
-In this article
 
 Veeam Backup & Replication performs backup copy in the following way:
 
@@ -39,6 +40,4 @@ In some cases, the source backup job and backup copy job may overlap. This situa
 
 If a specific task in the backup copy job locks the source backup chain to read data from it, and the source backup job that needs to write data to this backup chain starts at this moment (for example, for reverse incremental backup), the task in the backup copy job is put on hold. The backup copy job can continue processing other tasks that use other sources (for example, backup files created by other backup jobs). After the source backup job releases the backup chain, the backup copy job resumes processing machines in this backup chain.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

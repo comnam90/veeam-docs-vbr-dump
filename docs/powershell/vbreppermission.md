@@ -1,5 +1,7 @@
 ---
 title: "VBREPPermission"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbreppermission.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREPPermission
 
-In this article
 
 Contains user access permissions for backup repositories used by Veeam Agent for Microsoft Windows backup jobs.
 
@@ -26,6 +27,4 @@ Related Commands
 * [Get-VBREPPermission](get-vbreppermission.md)
 * [Set-VBREPPermission](set-vbreppermission.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBREncryptionKey"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrencryptionkey.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBREncryptionKey
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Related Commands
 
 [Get-VBREncryptionKey](get-vbrencryptionkey.md)
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

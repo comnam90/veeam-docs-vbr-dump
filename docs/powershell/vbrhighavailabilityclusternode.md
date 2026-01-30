@@ -1,5 +1,7 @@
 ---
 title: "VBRHighAvailabilityClusterNode"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrhighavailabilityclusternode.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRHighAvailabilityClusterNode
 
-In this article
 
 Contains settings of the secondary node for the high availability cluster.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [New-VBRHighAvailabilityClusterNode](new-vbrhighavailabilityclusternode.md)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

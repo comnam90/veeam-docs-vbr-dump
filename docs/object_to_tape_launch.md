@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Object to Tape Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_launch.html"
 last_updated: "12/5/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Object to Tape Job Wizard
 
-In this article
 
 To run the New Object to Tape Job wizard, do either of the following:
 
@@ -19,6 +20,4 @@ To run the New Object to Tape Job wizard, do either of the following:
 
 [![Step 1. Launch New Object to Tape Job Wizard](images/object_tape_job_launch.webp)](images/object_tape_job_launch.webp)
 
-Page updated 12/5/2023
 
-Page content applies to build 13.0.1.1071

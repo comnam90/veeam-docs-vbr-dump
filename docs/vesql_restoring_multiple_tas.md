@@ -1,5 +1,7 @@
 ---
 title: "Restoring to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_multiple_tas.html"
 last_updated: "9/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to Another Server
 
-In this article
 
 To restore multiple Microsoft SQL Server databases to another server, use the Restore wizard.
 
@@ -17,6 +18,4 @@ To restore multiple Microsoft SQL Server databases to another server, use the Re
 4. [Specify the target server](vesql_target_server_multiple.md).
 5. [Review the restore summary](vesql_restore_multiple_tas_summary.md).
 
-Page updated 9/26/2024
 
-Page content applies to build 13.0.1.1071

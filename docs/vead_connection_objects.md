@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Connection Parameters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_connection_objects.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Connection Parameters
 
-In this article
 
 At this step of the wizard, do the following:
 
@@ -32,6 +33,4 @@ To specify a Global Catalog server, click the Settings button on the right side 
 
 [![Specifying Global Catalog Server](images/global_catalog_server.webp)](images/global_catalog_server.webp "Specifying Global Catalog Server")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

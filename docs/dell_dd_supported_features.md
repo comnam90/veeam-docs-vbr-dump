@@ -1,5 +1,7 @@
 ---
 title: "Dell Data Domain Supported Features"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_dd_supported_features.html"
 last_updated: "3/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Dell Data Domain Supported Features
 
-In this article
 
 The DD Boost technology offers a set of features for advanced data processing. Veeam Backup & Replication supports the following features:
 
@@ -65,6 +66,4 @@ Related Topics
 * [Accelerated Restore of Entire VM](dell_dd_accelerated_restore.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
-Page updated 3/31/2025
 
-Page content applies to build 13.0.1.1071

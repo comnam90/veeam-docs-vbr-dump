@@ -1,5 +1,7 @@
 ---
 title: "Copy-Only Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copy_only_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copy-Only Backup
 
-In this article
 
 Some organizations prefer to back up Microsoft SQL Server databases and transaction logs with native Microsoft SQL Server tools or 3rd party backup tools. To restore database systems properly, database administrators must ensure they have database backups and a sequence of transaction log backups associated with these backups at hand.
 
@@ -22,6 +23,4 @@ The Perform copy only option indicates that a chain of database backups is creat
 
 ![Copy-Only Backup](images/copy_only_hv.webp)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

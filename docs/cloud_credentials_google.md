@@ -1,5 +1,7 @@
 ---
 title: "Google Cloud Accounts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_google.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Google Cloud Accounts
 
-In this article
 
 You can add to the backup infrastructure a credentials record for the Google Cloud account that will be used to connect to Google Cloud Storage. Veeam Backup & Replication uses these credentials to add a Google Cloud storage repository to the backup infrastructure as an [external repository](external_repository.md).
 
@@ -32,6 +33,4 @@ Related Topics
 
 [External Repository](external_repository.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

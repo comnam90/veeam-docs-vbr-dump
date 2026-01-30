@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_restore_from_tape_to_repo_byb.html"
 last_updated: "9/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you start restoring backups from tape to repository, consider the following:
 
@@ -15,6 +16,4 @@ Before you start restoring backups from tape to repository, consider the followi
 * Restoring machine backups from tapes to object storage repositories is not supported.
 * [For backup to tape jobs from the HPE StoreOnce appliance] Restoring backups from tapes to a different HPE StoreOnce appliance is not supported if the source HPE StoreOnce appliance uses the variable block size and the target HPE StoreOnce appliance uses the fixed block size.
 
-Page updated 9/12/2025
 
-Page content applies to build 13.0.1.1071

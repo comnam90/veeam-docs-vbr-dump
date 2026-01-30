@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRComputerRecoveryToken"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcomputerrecoverytoken.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRComputerRecoveryToken
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ This command returns all tokens added to the backup infrastructure.
 | --- |
 | Get-VBRComputerRecoveryToken |
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

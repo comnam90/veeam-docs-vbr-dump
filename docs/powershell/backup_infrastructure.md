@@ -1,5 +1,7 @@
 ---
 title: "Backup Infrastructure"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/backup_infrastructure.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Infrastructure
 
-In this article
 
 The following topics contain instructions on setting up and managing the backup infrastructure by means of Veeam PowerShell.
 
@@ -40,6 +41,4 @@ In this section
 * [Veeam Backup & Replication Settings](vbr_global_settings.md)
 * [Roles and Users](roles_and_users.md)
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

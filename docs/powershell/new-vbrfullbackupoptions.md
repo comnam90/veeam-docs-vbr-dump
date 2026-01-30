@@ -1,5 +1,7 @@
 ---
 title: "New-VBRFullBackupOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrfullbackupoptions.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRFullBackupOptions
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command sets a schedule to create active full backups monthly. The job with these settings applied will create active full backups on the 15th of January, April and September.  |  | | --- | | New-VBRFullBackupOptions -Enable -ScheduleType Monthly -DayNumber OnDay -DayOfMonth 15 -SelectedMonths January, April, September | |
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

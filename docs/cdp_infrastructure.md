@@ -1,5 +1,7 @@
 ---
 title: "Backup Infrastructure for CDP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_infrastructure.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Infrastructure for CDP
 
-In this article
 
 The following backup infrastructure components are required for CDP:
 
@@ -49,6 +50,4 @@ The source and target CDP proxies perform the following tasks:
 
 For more information on CDP proxies, their requirements, limitations and deployment, see [CDP Proxies](cdp_proxy.md).
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

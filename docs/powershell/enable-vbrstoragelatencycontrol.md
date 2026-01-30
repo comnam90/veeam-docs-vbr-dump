@@ -1,5 +1,7 @@
 ---
 title: "Enable-VBRStorageLatencyControl"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/enable-vbrstoragelatencycontrol.html"
 last_updated: "12/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enable-VBRStorageLatencyControl
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command enables the storage latency control option on production datastores
 | --- |
 | Enable-VBRStorageLatencyControl |
 
-Page updated 12/18/2023
 
-Page content applies to build 13.0.1.1071

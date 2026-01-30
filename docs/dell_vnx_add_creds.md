@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_vnx_add_creds.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials for a user account with administrator privileges on the storage system:
 
@@ -26,6 +27,4 @@ When you update a certificate or SSH key on a server, this server becomes unavai
 
 ![Step 3. Specify Credentials](images/emc_vnx_add_creds_cert.webp)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

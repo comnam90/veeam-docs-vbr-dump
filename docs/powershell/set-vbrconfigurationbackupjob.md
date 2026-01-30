@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRConfigurationBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrconfigurationbackupjob.html"
 last_updated: "5/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRConfigurationBackupJob
 
-In this article
 
 Short Description
 
@@ -75,6 +76,4 @@ Related Commands
 * [New-VBRConfigurationBackupScheduleOptions](new-vbrconfigurationbackupscheduleoptions.md)
 * [Get-VBREncryptionKey](get-vbrencryptionkey.md)
 
-Page updated 5/15/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Subscription and Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_location.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Subscription and Location
 
-In this article
 
 At the Subscription step of the wizard, select a subscription and location for the Azure restore proxy appliance:
 
@@ -16,6 +17,4 @@ At the Subscription step of the wizard, select a subscription and location for t
 
 ![Step 4. Select Subscription and Location ](images/azure_proxy_subscription.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

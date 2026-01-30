@@ -1,5 +1,7 @@
 ---
 title: "Resource Scheduling"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/resource_scheduling.html"
 last_updated: "5/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Resource Scheduling
 
-In this article
 
 Veeam Backup & Replication has the built-in mechanism of resource scheduling. Resource scheduling lets Veeam Backup & Replication automatically define what backup infrastructure resources are required for data protection and disaster recovery jobs and tasks, select optimal resources and assign them for the jobs and tasks.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Managing Network Traffic](managing_network_traffic.md)
 
-Page updated 5/9/2025
 
-Page content applies to build 13.0.1.1071

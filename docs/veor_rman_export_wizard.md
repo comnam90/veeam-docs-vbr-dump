@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Export Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_export_wizard.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Export Wizard
 
-In this article
 
 To launch the Export wizard, do the following:
 
@@ -20,6 +21,4 @@ Note that Veeam Explorer for Oracle exports files in the following format: \_%I\
 
 [![Launching Export Wizard](images/export_rman_pit.webp)](images/export_rman_pit.webp "Launching Export Wizard")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Editing Settings of Object Storage Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_editing_settings.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Settings of Object Storage Repository
 
-In this article
 
 After you have added an object storage repository, you may want to edit its settings.
 
@@ -22,6 +23,4 @@ Note that some settings cannot be modified and will remain disabled while being 
 
 [![Editing Settings of Archive Repositories](images/archive_repository_edit.webp)](images/archive_repository_edit.webp "Editing Settings of Archive Repositories")
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

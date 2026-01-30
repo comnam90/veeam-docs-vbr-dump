@@ -1,5 +1,7 @@
 ---
 title: "Instance Consumption for Object Storage Backup, File Backup and File to Tape Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_licensing.html"
 last_updated: "3/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instance Consumption for Object Storage Backup, File Backup and File to Tape Jobs
 
-In this article
 
 For unstructured data backup and unstructured data backup to tape, there are the following peculiarities in calculating the number of license instances to consume:
 
@@ -102,6 +103,4 @@ You have a single NAS device, but you have added 2 of its shared folders \\root\
 
 0 + 1 = 1 — protection of 2 file shares in this case consumes 1 license instance.
 
-Page updated 3/26/2025
 
-Page content applies to build 13.0.1.1071

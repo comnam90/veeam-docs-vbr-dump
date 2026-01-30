@@ -1,5 +1,7 @@
 ---
 title: "CDP Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # CDP Proxies
 
-In this article
 
 A CDP proxy is a component that operates as a data mover and transfers data between the source and target hosts. Basically, CDP proxy performs the following tasks:
 
@@ -69,6 +70,4 @@ Before you assign the role of a backup proxy, check the following requirements:
 * Before assigning the role of the CDP proxy to a server, you must first add a vCenter server or VMware Cloud Director server to the backup infrastructure.
 * [For CDP proxies deployed on physical servers] Fast network between hosts and CDP proxies is required.
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

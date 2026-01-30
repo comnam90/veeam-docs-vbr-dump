@@ -1,5 +1,7 @@
 ---
 title: "Global Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/gloabl_changes_v13.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Global Changes
 
-In this article
 
 This section provides essential information about global changes introduced in Veeam PowerShell version 13.
 
@@ -27,6 +28,4 @@ To utilize Veeam PowerShell on Windows, you must use the Veeam Backup & Repli
 
 To utilize the Veeam Explorer PowerShell functionality, you must install the necessary Veeam Explorer PowerShell module. For more information, see [Starting PowerShell Sessions](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/ps_sessions.html?ver=13) in the Veeam Explorers PowerShell Reference.
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

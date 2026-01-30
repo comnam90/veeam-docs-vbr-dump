@@ -1,5 +1,7 @@
 ---
 title: "Backup from Primary Storage Arrays"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_from_storage_snapshots_hiw_hp.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup from Primary Storage Arrays
 
-In this article
 
 Backup from primary storage array allows you to use the backup from storage snapshots feature and create backups from snapshots created on primary storage arrays.
 
@@ -42,6 +43,4 @@ Related Topics
 
 [Configuring Backup from Storage Snapshots](storage_backup.md)
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

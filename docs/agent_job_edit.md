@@ -1,5 +1,7 @@
 ---
 title: "Editing Veeam Agent Backup Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_edit.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Veeam Agent Backup Job Settings
 
-In this article
 
 You can edit Veeam Agent backup jobs configured in Veeam Backup & Replication at any time. For example, you may want to edit a backup job to change the backup scope, target location or job scheduling settings.
 
@@ -25,6 +26,4 @@ To edit job settings:
 
 [![Edit Backup Job](images/agent_backup_job_edit.webp)](images/agent_backup_job_edit.webp "Edit Backup Job")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restore from Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_storage_snapshots_hiw_netapp.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore from Storage Snapshots
 
-In this article
 
 cDot
 
@@ -27,6 +28,4 @@ In This Section
 * [SnapRestore](storage_restore_netapp_snaprestore.md)
 * [NFS Protocol](storage_restore_netapp_nfs.md)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

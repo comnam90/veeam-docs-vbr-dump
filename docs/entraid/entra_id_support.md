@@ -1,5 +1,7 @@
 ---
 title: "Getting Technical Support"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_support.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting Technical Support
 
-In this article
 
 If you have any questions or issues with Veeam Backup for Microsoft Entra ID, you can search for a resolution on [Veeam R&D Forums](https://forums.veeam.com/) or submit a support case in the [Veeam Customer Support Portal](https://www.veeam.com/support.html).
 
@@ -36,6 +37,4 @@ To export the product logs, do the following:
 
 ![Getting Technical Support](images/entra_id_export_logs.webp)
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

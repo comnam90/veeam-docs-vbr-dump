@@ -1,5 +1,7 @@
 ---
 title: "Ejecting Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ejecting_tapes.html"
 last_updated: "3/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ejecting Tapes
 
-In this article
 
 Ejecting moves the tape that is currently in drive to a library slot. The tape stays in the library and is online. Ejecting prevents tapes, for example, from being occasionally overwritten.
 
@@ -39,6 +40,4 @@ To eject a drive:
 
 [![Ejecting Tapes](images/eject_tape_drive.webp)](images/eject_tape_drive.webp)
 
-Page updated 3/14/2025
 
-Page content applies to build 13.0.1.1071

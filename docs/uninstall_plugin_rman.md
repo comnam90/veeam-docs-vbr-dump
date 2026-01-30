@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Veeam Plug-In for Oracle RMAN"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uninstall_plugin_rman.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Veeam Plug-In for Oracle RMAN
 
-In this article
 
 You can uninstall the Veeam Plug-In and undo the configuration changes made by Veeam Plug-In.
 
@@ -46,6 +47,4 @@ To uninstall Veeam Plug-In and undo the configuration changes, run the following
 | --- |
 | pkgrm VeeamPluginforOracleRMAN |
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Working with Unstructured Data Source"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/adding_unstructured_data_source.html"
 last_updated: "1/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Working with Unstructured Data Source
 
-In this article
 
 The following topics contain instructions on how to set up the backup infrastructure for various NAS file shares and object storage by means of Veeam PowerShell.
 
@@ -20,6 +21,4 @@ In This Section
 * [Adding Object Storage Servers](adding_os_servers.md)
 * [Managing Unstructured Data Source](managing_data_source.md)
 
-Page updated 1/7/2025
 
-Page content applies to build 13.0.1.1071

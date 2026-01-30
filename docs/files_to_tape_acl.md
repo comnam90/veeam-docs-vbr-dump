@@ -1,5 +1,7 @@
 ---
 title: "ACL Handling Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_to_tape_acl.html"
 last_updated: "5/29/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # ACL Handling Settings
 
-In this article
 
 To specify how the file to tape job will process permissions and attributes:
 
@@ -19,6 +20,4 @@ To specify how the file to tape job will process permissions and attributes:
 
 ![ACL Handling Settings](images/files_to_tape_advanced_acl.webp)
 
-Page updated 5/29/2023
 
-Page content applies to build 13.0.1.1071

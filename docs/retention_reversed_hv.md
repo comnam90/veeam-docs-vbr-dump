@@ -1,5 +1,7 @@
 ---
 title: "Reverse Incremental Backup Retention Policy (Deprecated)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_reversed_hv.html"
 last_updated: "8/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reverse Incremental Backup Retention Policy (Deprecated)
 
-In this article
 
 In case of deprecated [reverse incremental backup](backup_methods_hv.md#ri_backup_hv), Veeam Backup & Replication immediately deletes the earliest reverse incremental backup file as soon as it becomes outdated.
 
@@ -27,6 +28,4 @@ Related Topics
 
 [Reverse Incremental Backup (Deprecated)](reversed_incremental_backup_hv.md)
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

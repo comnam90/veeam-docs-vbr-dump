@@ -1,5 +1,7 @@
 ---
 title: "Moving Backups to Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_move.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Moving Backups to Capacity Tier
 
-In this article
 
 To collect backup files that belong to inactive backup chains from the performance extents and move them to the capacity tier, Veeam Backup & Replication uses an offload session which is executed automatically every 4 hours.
 
@@ -76,6 +77,4 @@ Related Topics
 * [Storage Settings](backup_job_advanced_storage_hv.md) (Hyper-V)
 * [Capacity Extent Structure](object_storage_repository_structure.md)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding Linux Repositories Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_add_web.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Linux Repositories Using Web UI
 
-In this article
 
 This section describes how to add a Linux server as a backup repository.
 
@@ -21,6 +22,4 @@ To add a backup repository using the Veeam Backup & Replication web UI, use the 
 6. [Review properties and components](linux_repository_review_web.md).
 7. [Finish working with the wizard](linux_repository_finish_web.md).
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

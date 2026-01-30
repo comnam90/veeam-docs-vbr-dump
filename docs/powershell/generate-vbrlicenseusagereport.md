@@ -1,5 +1,7 @@
 ---
 title: "Generate-VBRLicenseUsageReport"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrlicenseusagereport.html"
 last_updated: "8/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Generate-VBRLicenseUsageReport
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Examples
 | --- | --- |
 | This command creates the JSON report on license usage. The report is saved as the report.json file to the C:\Users\Administrator\VeeamReports\ folder.  |  | | --- | | Generate-VBRLicenseUsageReport -Path "C:\Users\Administrator\VeeamReports\DecemberReport" -Type Json | |
 
-Page updated 8/5/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How GFS Retention Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_how_to_gfs.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How GFS Retention Works
 
-In this article
 
 To understand how GFS retention works, see the following sections:
 
@@ -16,6 +17,4 @@ To understand how GFS retention works, see the following sections:
 * [Backup Chain for GFS Backups](backup_copy_gfs_chain.md)
 * [Limitations and Considerations for GFS Retention Policy](backup_copy_considerations.md)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

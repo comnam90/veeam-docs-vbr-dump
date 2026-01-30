@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In for IBM Db2"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In for IBM Db2
 
-In this article
 
 Veeam Plug-In for IBM Db2 is a backup tool for IBM Db2 databases. Veeam Plug-In integrates with IBM Db2 tools and transfers database and log backups to repositories connected to Veeam Backup & Replication.
 
@@ -31,6 +32,4 @@ In This Section
 * [License Management](plugins_db2_license_management.md)
 * [Logs and Support](db2_veeam_logs.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

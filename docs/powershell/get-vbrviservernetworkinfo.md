@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRViServerNetworkInfo"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrviservernetworkinfo.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRViServerNetworkInfo
 
-In this article
 
 Short Description
 
@@ -77,6 +78,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Where-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.1)
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

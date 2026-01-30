@@ -1,5 +1,7 @@
 ---
 title: "Full Backup Methods"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_backup_methods.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Full Backup Methods
 
-In this article
 
 Veeam Backup & Replication provides the following methods for creation of full backup files:
 
@@ -24,6 +25,4 @@ When you perform a synthetic full backup, Veeam Backup & Replication does not re
 | Tip |
 | You can perform both active and synthetic full backups. For more information on how to do that, see [Backup Settings](backup_job_advanced_backup_vm.md). |
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

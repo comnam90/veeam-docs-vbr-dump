@@ -1,5 +1,7 @@
 ---
 title: "Cloning Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_clone_policy.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cloning Policies
 
-In this article
 
 You can create a new CDP policy by cloning an existing one. Policy cloning allows you to create an exact copy of any policy with the same policy settings.
 
@@ -33,6 +34,4 @@ After the policy is cloned, you can edit its settings, including the policy name
 
 [![Edit CDP policy](images/cdp_clone_policy.webp)](images/cdp_clone_policy.webp "Edit CDP policy")
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

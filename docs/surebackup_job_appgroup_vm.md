@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Application Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_appgroup_vm.html"
 last_updated: "10/16/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Application Group
 
-In this article
 
 Selecting application group is available only for SureBackup job working in Full recoverability testing mode.
 
@@ -23,6 +24,4 @@ To select an application group:
 
 ![Step 4. Select Application Group](images/surebackup_job_app_group.webp)
 
-Page updated 10/16/2023
 
-Page content applies to build 13.0.1.1071

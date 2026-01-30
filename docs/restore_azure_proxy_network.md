@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select Virtual Network"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_network.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select Virtual Network
 
-In this article
 
 At the Network step of the wizard, you select to which network and subnet the Azure restore proxy appliance will be connected.
 
@@ -18,6 +19,4 @@ At the Network step of the wizard, you select to which network and subnet the Az
 
 ![Step 7. Select Virtual Network](images/azure_proxy_network.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

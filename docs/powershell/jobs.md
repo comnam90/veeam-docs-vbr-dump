@@ -1,5 +1,7 @@
 ---
 title: "Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/jobs.html"
 last_updated: "4/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Jobs
 
-In this article
 
 The following topics contain instructions on setting up and managing jobs created in Veeam Backup & Replication by means of Veeam PowerShell.
 
@@ -25,6 +26,4 @@ In this section
 * [Sessions](session_cmdlets.md)
 * [Veeam Data Movers for Guest Processing](data_movers.md)
 
-Page updated 4/22/2024
 
-Page content applies to build 13.0.1.1071

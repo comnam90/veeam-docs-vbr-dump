@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Failback Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_launch.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Failback Wizard
 
-In this article
 
 To launch the Failback wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the Failback wizard, do one of the following:
 
 [![Launch Failback Wizard](images/vcd_failback_launch.webp)](images/vcd_failback_launch.webp "Launch Failback Wizard")
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Cloud Director CDP Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policies_create.html"
 last_updated: "8/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Cloud Director CDP Policies
 
-In this article
 
 To protect vApps with CDP, you must configure a VMware Cloud Director CDP policy. The CDP policy defines which vApps to protect, where to store replicas, how often create short-term and long-term restore points, and so on. One CDP policy can process one or multiple vApps.
 
@@ -27,6 +28,4 @@ To create a CDP policy, use the New VMware Cloud Director CDP Policy wizard.
 12. [Specify guest processing settings](vcd_cdp_policy_guest.md).
 13. [Finish working with the wizard](vcd_cdp_policy_summary.md).
 
-Page updated 8/18/2023
 
-Page content applies to build 13.0.1.1071

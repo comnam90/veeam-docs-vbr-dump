@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSQLProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsqlprocessingoptions.html"
 last_updated: "5/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSQLProcessingOptions
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ This command creates SQL processing settings for a Veeam Agent job that backs up
 | --- |
 | New-VBRSQLProcessingOptions -TransactionAction BackupPeriodically -LogBackupPeriod 25 -LogRetainAction KeepOnlyLastDays -LogRetainPeriod 7 |
 
-Page updated 5/6/2024
 
-Page content applies to build 13.0.1.1071

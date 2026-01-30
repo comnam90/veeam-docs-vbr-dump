@@ -1,5 +1,7 @@
 ---
 title: "After Upgrade"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_after_upgrade.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # After Upgrade
 
-In this article
 
 After you upgrade Veeam Backup & Replication to version 13.0.1, perform the following steps:
 
@@ -27,6 +28,4 @@ Note that immediately after the upgrade, the backup server performance may decre
 | Important |
 | You must upgrade Veeam components on all remote servers with which the backup server communicates during data protection and disaster recovery tasks. If you do not upgrade components on remote servers, Veeam Backup & Replication jobs will fail. For more information, see [Server Components Upgrade](components_update.md). |
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

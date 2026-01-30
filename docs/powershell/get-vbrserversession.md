@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRServerSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrserversession.html"
 last_updated: "4/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRServerSession
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command returns the current session with a Veeam backup server.
 | --- |
 | Get-VBRServerSession |
 
-Page updated 4/26/2024
 
-Page content applies to build 13.0.1.1071

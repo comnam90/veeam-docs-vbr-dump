@@ -1,5 +1,7 @@
 ---
 title: "Performing Backup with Command-Line Interface"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_configure_backup_cmd.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Backup with Command-Line Interface
 
-In this article
 
 You can perform backup of Microsoft SQL Server databases with Veeam Plug-In using the command-line interface.
 
@@ -54,6 +55,4 @@ You can specify the following parameters for backup of Microsoft SQL Server data
 | --check\_preferred | [For backup of Always On Availability Groups] Defines that Veeam Plug-In will check whether the availability replica is the preferred replica for backup. |
 | --use\_compression | Defines that Veeam Backup & Replication mechanisms of data compression will be applied to the backup. To Veeam Plug-In for Microsoft SQL Server backups, the Optimal (ZSTD) compression level is applied. |
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

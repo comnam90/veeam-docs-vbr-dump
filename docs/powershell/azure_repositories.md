@@ -1,5 +1,7 @@
 ---
 title: "Adding Microsoft Azure Object Storage"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/azure_repositories.html"
 last_updated: "4/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Microsoft Azure Object Storage
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -21,6 +22,4 @@ You can use the cmdlets in this topic to perform the following operations:
 | [Set-VBRAzureDataBoxRepository](set-vbrazuredataboxrepository.md) | Modifies settings of Azure Data Box storage repository added to  Veeam Backup & Replication. |
 | [Set-VBRAzureArchiveRepository](set-vbrazurearchiverepository.md) | Modifies settings of  Azure Archive storage repository added to Veeam Backup & Replication. |
 
-Page updated 4/11/2024
 
-Page content applies to build 13.0.1.1071

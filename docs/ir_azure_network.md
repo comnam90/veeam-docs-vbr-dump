@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Network Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_network.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Network Settings
 
-In this article
 
 At the Network step of the wizard, select the networks and subnets to which the recovered VMs will be connected. By default, Veeam Backup & Replication creates a new security group for the recovered VMs. The default security group rules are listed in [Default Security Group Rules](#rules).
 
@@ -49,6 +50,4 @@ When you leave the Empty value while configuring the security group, Veeam Backu
 | 65001 | AllowInternetOutBound | Any | Any | Any | Internet | Allow |
 | 65500 | DenyAllOutBound | Any | Any | Any | Any | Deny |
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

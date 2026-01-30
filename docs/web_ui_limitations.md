@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup & Replication Web UI Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/web_ui_limitations.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup & Replication Web UI Limitations
 
-In this article
 
 The Veeam Backup & Replication web UI has the following limitations:
 
@@ -45,6 +46,4 @@ Alternative: Create a [backup copy job](backup_copy_create.md).
 
 * The Install missing updates option in the Manage Updates group installs updates on Linux-based infrastructure components (Veeam Infrastructure Appliances), but not on the Linux-based backup server (Veeam Software Appliance). To update the backup server, use the [Veeam Updater](update_appliances.md).
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

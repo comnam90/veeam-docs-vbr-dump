@@ -1,5 +1,7 @@
 ---
 title: "How to Protect Failover Clusters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/how_to_protect_failover_cluster.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How to Protect Failover Clusters
 
-In this article
 
 Veeam Backup & Replication lets you deploy and manage Veeam Agent for Microsoft Windows on failover clusters in your infrastructure.
 
@@ -104,6 +105,4 @@ To create a failover cluster backup job:
 
 ![How to Protect Failover Clusters](images/clusters_backup_job_summary.webp "Save Backup Job")
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

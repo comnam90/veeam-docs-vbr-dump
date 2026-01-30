@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Veeam Backup & Replication in Silent Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uninstall_vbr_answer_file.html"
 last_updated: "6/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Veeam Backup & Replication in Silent Mode
 
-In this article
 
 You can uninstall Veeam Backup & Replication in the silent automated mode with a special XML answer file by using the command line interface. The answer file contains all the necessary uninstallation settings in the proper order and their thorough description.
 
@@ -85,6 +86,4 @@ The uninstallation error codes accompanied by their detailed description are dis
 | 112 | Failed to uninstall the product. |
 | 113 | Unexpected error occurred. |
 
-Page updated 6/2/2025
 
-Page content applies to build 13.0.1.1071

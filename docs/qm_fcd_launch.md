@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch FCD Quick Migration Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/qm_fcd_launch.html"
 last_updated: "5/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch FCD Quick Migration Wizard
 
-In this article
 
 To launch the FCD Quick Migration wizard
 
@@ -19,6 +20,4 @@ After you finish working with the wizard, Veeam Backup & Replication migrates th
 
 [![Step 1. Launch FCD Quick Migration Wizard](images/quick_migration_fcd_start.webp)](images/quick_migration_fcd_start.webp)
 
-Page updated 5/31/2023
 
-Page content applies to build 13.0.1.1071

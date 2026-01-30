@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRSecurityOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsecurityoptions.html"
 last_updated: "4/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRSecurityOptions
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 * [Get-VBRSecurityOptions](get-vbrsecurityoptions.md)
 * [Get-VBRLinuxTrustedHostPolicy](get-vbrlinuxtrustedhostpolicy.md)
 
-Page updated 4/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Switching to Production VMs Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_switch_to_prod.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switching to Production VMs Manually
 
-In this article
 
 The following instructions apply if you have selected to switch from replicas to production VMs manually or at the scheduled time at the Failback Mode step of the Failback wizard.
 
@@ -26,6 +27,4 @@ After you switch to the production VM, you must finalize failback. You can final
 * [Commit failback](commit_failback.md)
 * [Undo failback](undo_failback.md)
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

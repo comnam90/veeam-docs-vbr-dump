@@ -1,5 +1,7 @@
 ---
 title: "Start-VBREntraIDLogsBackupFLRSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrentraidlogsbackupflrsession.html"
 last_updated: "1/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBREntraIDLogsBackupFLRSession
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Related Commands
 * [Get-VBREntraIdTenant](get-vbrentraidtenant.md)
 * [Get-VBREntraIDLogsBackup](get-vbrentraidlogsbackup.md)
 
-Page updated 1/9/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 14. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_vm.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 14. Specify Guest Processing Settings
 
-In this article
 
 At the Guest Processing step of the wizard, enable and configure guest OS processing.
 
@@ -58,6 +59,4 @@ After you have enabled application-aware processing for all VMs and configured o
 
 ![Step 14. Specify Guest Processing Settings](images/vm_replica_job_vss.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

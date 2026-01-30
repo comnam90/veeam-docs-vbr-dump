@@ -1,5 +1,7 @@
 ---
 title: "How YARA Scan Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/secure_restore_yara_hiw.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How YARA Scan Works
 
-In this article
 
 During the secure restore, the YARA scan works in the following way:
 
@@ -31,6 +32,4 @@ If you do not want to create a malware detection event for a YARA rule, you can 
 
 In this case, the malware detection event will not be created but the restore session will be finished with the Warning status.
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

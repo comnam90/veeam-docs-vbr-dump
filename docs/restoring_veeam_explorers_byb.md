@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_byb.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you recover application items, consider the following:
 
@@ -25,6 +26,4 @@ Before you recover application items, consider the following:
 * [Microsoft OneDrive for Business](https://helpcenter.veeam.com/docs/vbr/explorers/veod_planning_and_prep.html?ver=13)
 * [Microsoft Teams](https://helpcenter.veeam.com/docs/vbr/explorers/vet_prerequisites.html?ver=13)
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

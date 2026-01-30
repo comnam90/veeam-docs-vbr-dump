@@ -1,5 +1,7 @@
 ---
 title: "How Object Storage Backup to Tape Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_hiw.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Object Storage Backup to Tape Works
 
-In this article
 
 When Veeam Backup & Replication executes an object to tape job (started manually or by schedule), it performs the following operations:
 
@@ -37,6 +38,4 @@ If you [explicitly specify proxy servers](tape_add_amazon_s3_processing.md) for 
 
 ![How Object Storage Backup to Tape Works](images/tape_object_storage_backup_proxy.webp)
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

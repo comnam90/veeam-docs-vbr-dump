@@ -1,5 +1,7 @@
 ---
 title: "Upgrading Veeam Plug-In for Oracle RMAN"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_rman_plugin.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading Veeam Plug-In for Oracle RMAN
 
-In this article
 
 Periodically, Veeam releases a new version of Veeam Backup & Replication that contains new features and bug fixes. The release package also contains a new version of Veeam Plug-Ins.
 
@@ -128,6 +129,4 @@ To upgrade Veeam Plug-In for Oracle RMAN on an IBM AIX machine, do the following
 | --- |
 | rpm -U VeeamPluginforOracleRMAN-13.0.1.180-1.aix6.1.ppc.rpm |
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

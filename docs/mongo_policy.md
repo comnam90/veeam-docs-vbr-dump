@@ -1,5 +1,7 @@
 ---
 title: "Working with Application Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Working with Application Backup Policy
 
-In this article
 
 To back up MongoDB items, you must create an application backup policy and add your MongoDB replica sets to the backup scope. For details, see [Creating Application Backup Policy](mongo_policy_create.md).
 
@@ -15,6 +16,4 @@ After you create a MongoDB backup job, you can back up MongoDB items with this b
 
 Apart from running, you can perform a certain set of other operations with an application backup job. For details, see [Managing Application Backup Policy](mongo_policy_manage.md).
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

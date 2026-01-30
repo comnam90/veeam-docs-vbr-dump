@@ -1,5 +1,7 @@
 ---
 title: "Sending Microsoft OneDrive Data"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_sending_onedrive_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sending Microsoft OneDrive Data
 
-In this article
 
 Veeam Explorer for Microsoft OneDrive for Business allows you to send OneDrive data to specified recipients by email.
 
@@ -46,6 +47,4 @@ You can also edit the message subject and body. To edit the message body, click 
 
 [![Sending OneDrive Data](images/one_drive_send_2.webp)](images/one_drive_send_2.webp "Sending OneDrive Data")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

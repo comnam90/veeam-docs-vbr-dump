@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New File Backup Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_launch_wizard.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New File Backup Job Wizard
 
-In this article
 
 To launch the New File Backup Job wizard, do one of the following:
 
@@ -18,6 +19,4 @@ To launch the New File Backup Job wizard, do one of the following:
 
 [![Launch New File Share Backup Job Wizard](images/file_share_backup_job_launch_wizard.webp)](images/file_share_backup_job_launch_wizard.webp "Launch New File Share Backup Job Wizard")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

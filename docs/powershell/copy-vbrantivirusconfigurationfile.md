@@ -1,5 +1,7 @@
 ---
 title: "Copy-VBRAntivirusConfigurationFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/copy-vbrantivirusconfigurationfile.html"
 last_updated: "4/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copy-VBRAntivirusConfigurationFile
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 
 [Get-VBRServer](get-vbrserver.md)
 
-Page updated 4/17/2024
 
-Page content applies to build 13.0.1.1071

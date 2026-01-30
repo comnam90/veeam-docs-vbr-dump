@@ -1,5 +1,7 @@
 ---
 title: "Managing Published Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/publishing_disks_manage.html"
 last_updated: "7/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Published Disks
 
-In this article
 
 After you started a publishing session, you can check details on this session or stop it.
 
@@ -39,6 +40,4 @@ To stop a publishing session, do one of the following:
 
 [![View properties](images/disk_publish_stop.webp)](images/disk_publish_stop.webp "View properties")
 
-Page updated 7/21/2025
 
-Page content applies to build 13.0.1.1071

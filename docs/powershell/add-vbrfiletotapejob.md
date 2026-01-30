@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRFileToTapeJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrfiletotapejob.html"
 last_updated: "12/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRFileToTapeJob
 
-In this article
 
 Short Description
 
@@ -95,6 +96,4 @@ Related Commands
 * [New-VBRNotificationOptions](new-vbrnotificationoptions.md)
 * [New-VBRJobScriptOptions](new-vbrjobscriptoptions.md)
 
-Page updated 12/19/2025
 
-Page content applies to build 13.0.1.1071

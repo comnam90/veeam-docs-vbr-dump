@@ -1,5 +1,7 @@
 ---
 title: "Copying Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copy_backup_hv.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copying Backups
 
-In this article
 
 Copying backups can be helpful if you want to copy backups of a workload or backup job to another repository, local or shared folder. Veeam Backup & Replication copies the whole backup chain. If you want to convert a specific restore point into a single VBK file, use backup export. For more information, see [Exporting Backups](exporting_backups_hv.md).
 
@@ -79,6 +80,4 @@ To finalize the copy operation:
 2. In the inventory pane, select the Last 24 Hours node.
 3. Right-click the failed copy session and select the required action. Alternatively, select the required action on the ribbon.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Veeam Agent Backup Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_manage_policy.html"
 last_updated: "5/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Veeam Agent Backup Policies
 
-In this article
 
 You can use the Veeam Backup & Replication console to perform the following operations with a Veeam Agent backup job managed by Veeam Agent (a Veeam Agent backup policy):
 
@@ -20,6 +21,4 @@ You can use the Veeam Backup & Replication console to perform the following oper
 * [Clone a backup policy](agent_policy_clone.md).
 * [Remove a backup policy](agent_policy_delete.md).
 
-Page updated 5/7/2025
 
-Page content applies to build 13.0.1.1071

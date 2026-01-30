@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_summary_web.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, your actions differ depending on the [method you have chosen to use for migration](quick_migration_infrastructure_web.md). For more information on the methods, see [Quick Migration for Finalizing Instant Restore](quick_migration_hv.md).
 
@@ -37,6 +38,4 @@ During Veeam Quick Migration, Veeam Backup & Replication names the VMs according
 
 [![Configure Data Transfer - Web UI](images/quick_migration_summary_web.webp)](images/quick_migration_summary_web.webp "Configure Data Transfer - Web UI")
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

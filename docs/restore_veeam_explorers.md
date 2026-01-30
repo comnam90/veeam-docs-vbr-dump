@@ -1,5 +1,7 @@
 ---
 title: "Application Item Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_veeam_explorers.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Item Restore
 
-In this article
 
 Veeam Backup & Replication provides additional tools called Veeam Explorers, that help you restore application items. Veeam Explorers are included in Veeam Backup & Replication installations, so you do not need to install them separately. You also do not need to purchase any additional license to use Veeam Explorers. For general information, see [Veeam Explorers Overview](explorers_introduction.md).
 
@@ -38,6 +39,4 @@ From database-level backups created by Veeam Plug-ins or MongoDB backup, you can
 
 For more information, see [Launching Veeam Explorer from Plug-in or MongoDB Backup](launching_veeam_explorers_plugin.md).
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

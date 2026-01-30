@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations for Restore to Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_limitations.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations for Restore to Microsoft Azure
 
-In this article
 
 When planning to restore workloads to Microsoft Azure, consider the following general limitations:
 
@@ -73,6 +74,4 @@ Consider the following requirements and limitations:
 * When you select VM sizes at the [Specify VM Size](restore_azure_size.md) step of the Restore to Azure wizard, make sure that the selected size is compatible with Generation 2 VMs.
 * Generation 2 VMs support only managed disks. Thus, you will need to select the managed storage type from the Storage type list at the [Specify VM Size](restore_azure_size.md) step of the Restore to Azure wizard.
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

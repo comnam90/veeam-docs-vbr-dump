@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backup from Disk"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_delete.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backup from Disk
 
-In this article
 
 Veeam Backup & Replication allows you to delete the following types of MongoDB Backups from the backup repository:
 
@@ -44,6 +45,4 @@ Keep in mind that if you delete log backup files from the backup repository, Vee
 
 [![Delete Backup](images/mongo_backup_delete_log.webp)](images/mongo_backup_delete_log.webp "Delete Backup")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

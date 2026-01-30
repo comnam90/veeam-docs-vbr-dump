@@ -1,5 +1,7 @@
 ---
 title: "Block Generation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performance_tier_block_generation.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Block Generation
 
-In this article
 
 To reduce I/O operations and associated costs, Veeam Backup & Replication will add several days to the immutability expiration date. This period is called Block Generation. You do not have to configure it, the Block Generation setting is applied automatically.
 
@@ -33,6 +34,4 @@ With 10 days of immutability automatically added, it means there is no need to e
 | Note |
 | Consider the following:   * For data blocks located in object storage repositories, Veeam Backup & Replication extends immutability period for every data block of every backup file in the whole backup chains, even in inactive part. * Veeam Backup & Replication will not extended immutability for the data blocks that are not used in any exiting backup files. |
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

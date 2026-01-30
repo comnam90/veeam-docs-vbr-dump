@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Backup Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_mode_linux.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Backup Mode
 
-In this article
 
 At the Backup Mode step of the wizard, select the mode in which you want to create a backup.
 
@@ -26,6 +27,4 @@ At the Backup Mode step of the wizard, select the mode in which you want to crea
 
 ![Step 5. Select Backup Mode](images/agent_policy_mode_linux.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

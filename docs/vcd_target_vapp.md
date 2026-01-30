@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select Target vApp"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_target_vapp.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select Target vApp
 
-In this article
 
 The Target vApp step is available if you have selected the Failback to the original VM restored in a different location option at the Destination step.
 
@@ -21,6 +22,4 @@ By default, Veeam Backup & Replication fails back the replica to the source vApp
 
 ![Step 7. Select Target vApp](images/vcd_failback_target_vapp.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

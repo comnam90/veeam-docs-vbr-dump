@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_before_you_begin.html"
 last_updated: "6/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform Instant Recovery, check the following prerequisites:
 
@@ -25,6 +26,4 @@ By default, Veeam Backup & Replication writes virtual disk updates to the IRCach
 * Consider that during Instant Recovery, Veeam Backup & Replication restores standalone VMs as regular VMware Cloud Director VMs.
 * [For [migration of recovered VMs](vcloud_instant_to_vcd_finalize.md#migrate)] You must disable the VM discovery option in VMware Cloud Director settings. For more information on where you can change the option, see [VMware Docs](https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-068B8D3E-11B4-4B67-A653-B374AFD98303.html#activating-vm-discovery-0).
 
-Page updated 6/10/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_single_tas.html"
 last_updated: "4/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery to Another Server
 
-In this article
 
 To perform instant recovery of an instance to another server, use the Instant Recovery wizard.
 
@@ -19,6 +20,4 @@ To perform instant recovery of an instance to another server, use the Instant Re
 6. [Specify switchover settings](vep_ir_single_tas_specify_switchover_settings.md).
 7. [Finalize the Instant Recovery session](vep_ir_single_tas_finalize_ir_session.md).
 
-Page updated 4/5/2024
 
-Page content applies to build 13.0.1.1071

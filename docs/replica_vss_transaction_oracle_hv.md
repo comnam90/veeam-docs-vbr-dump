@@ -1,5 +1,7 @@
 ---
 title: "Oracle Archived Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_transaction_oracle_hv.html"
 last_updated: "2/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Archived Log Settings
 
-In this article
 
 The Oracle tab applies to VMs that run Oracle.
 
@@ -47,6 +48,4 @@ The non-persistent runtime components or persistent components running on the VM
 
 ![Oracle Archived Log Settings](images/hv_replica_job_vss_oracle.webp)
 
-Page updated 2/23/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Logs and Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_mssql_logs.html"
 last_updated: "3/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Logs and Support
 
-In this article
 
 If you have any questions or issues with Veeam Plug-In for Microsoft SQL Server or Veeam Backup & Replication, you can search for a resolution on [Veeam R&D Forums](https://forums.veeam.com/) or submit a support case on the [Veeam Customer Support Portal](https://www.veeam.com/support.html).
 
@@ -24,6 +25,4 @@ To export Veeam Plug-In logs, do the following:
 
 1. On the Veeam Backup & Replication server, navigate to the %PROGRAMDATA%\Veeam\Backup\Plugin directory and copy logs of the required backup or restore process.
 
-Page updated 3/14/2024
 
-Page content applies to build 13.0.1.1071

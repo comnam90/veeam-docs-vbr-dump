@@ -1,5 +1,7 @@
 ---
 title: "Restore to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_restore_to_another.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Another Server
 
-In this article
 
 To restore a database to another server, you need to perform the following steps:
 
@@ -155,6 +156,4 @@ You can restore a database to another server using a recovery token generated in
 
 1. Restore the database in the same manner as you restore a database to the original server. To learn more, see [Restore to Original Server](plugins_sap_maxdb_restore_db.md).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Azure Restore Proxy Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_config.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Azure Restore Proxy Appliances
 
-In this article
 
 To configure an Azure restore proxy appliance, use the New Azure Restore Proxy Appliance wizard.
 
@@ -25,6 +26,4 @@ Related Topics
 
 [Removing Azure Restore Proxy Appliances](restore_azure_remove_proxy.md)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Verify Instant Recovery Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_verify.html"
 last_updated: "7/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Verify Instant Recovery Settings
 
-In this article
 
 At the Summary step of the wizard, specify additional settings for Instant Recovery:
 
@@ -20,6 +21,4 @@ What You Do Next
 
 [Finalizing Instant Recovery](vcloud_instant_to_vcd_finalize.md)
 
-Page updated 7/18/2024
 
-Page content applies to build 13.0.1.1071

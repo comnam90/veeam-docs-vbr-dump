@@ -1,5 +1,7 @@
 ---
 title: "Object Storage Repository Structure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_structure.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Object Storage Repository Structure
 
-In this article
 
 After backups are moved to an object storage repository, Veeam Backup & Replication creates and maintains the following structure of directories.
 
@@ -48,6 +49,4 @@ Veeam Backup & Replication creates and maintains the following structure of dire
 | Backups | Contains backups. |
 | Backup mapping | XML with mapping metadata. |
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

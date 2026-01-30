@@ -1,5 +1,7 @@
 ---
 title: "New-VBRViReplicaReIpRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrvireplicareiprule.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRViReplicaReIpRule
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ This command generates a new re-IP rule. Save it to the $reiprule variable for f
 | --- |
 | $reiprule = New-VBRViReplicaReIpRule -SourceIp 172.16.\*.\* -SourceMask 255.255.0.0 -TargetIp 172.17.\*.\* -TargetMask 255.255.0.0 -TargetGateway 172.17.0.1 |
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

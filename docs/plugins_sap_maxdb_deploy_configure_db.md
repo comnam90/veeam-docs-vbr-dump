@@ -1,5 +1,7 @@
 ---
 title: "Configuring Database"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_db.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Database
 
-In this article
 
 To back up SAP MaxDB database using Veeam Plug-In, you must configure one or more backup mediums for each database that you want to protect. Also, you must configure the maximum number of backup media to allow multiple mediums to be used in parallel during a single backup operation.
 
@@ -77,6 +78,4 @@ In this example, the following backup mediums are assigned:
 | --- |
 | medium\_getall |
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

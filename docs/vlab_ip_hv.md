@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Static IP Mapping Rules"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_ip_hv.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Static IP Mapping Rules
 
-In this article
 
 The Static Mapping step of the wizard is available if you have selected the advanced networking option at the [Networking](vlab_network_hv.md) step of the wizard.
 
@@ -38,6 +39,4 @@ After a virtual lab is created and VMs are started in the virtual lab, you will 
 
 ![Step 8. Specify Static IP Mapping Rules](images/adding_vlab_network_static_mapping_hv.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

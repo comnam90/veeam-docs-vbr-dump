@@ -1,5 +1,7 @@
 ---
 title: "VBRNotificationOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnotificationoptions.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNotificationOptions
 
-In this article
 
 Contains job notification options.
 
@@ -28,6 +29,4 @@ Related Commands
 
 [New-VBRNotificationOptions](new-vbrnotificationoptions.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

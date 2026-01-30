@@ -1,5 +1,7 @@
 ---
 title: "Loading Tapes Written on This Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tapes_this_server.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Loading Tapes Written on This Backup Server
 
-In this article
 
 If the tapes that you load were written on the same Veeam backup server, the Veeam backup database has information about them. The procedure is different for tape libraries depending on whether they support barcodes or not.
 
@@ -46,6 +47,4 @@ To load tapes without barcodes:
 
 Note that if the tapes are expired, they will be overwritten by tape rotation scheme set for the tapes' parent media pool.
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRCloudTenantNetworkAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcloudtenantnetworkappliance.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRCloudTenantNetworkAppliance
 
-In this article
 
 Short Description
 
@@ -98,6 +99,4 @@ Related Commands
 * [Get-VBRHvServerNetworkInfo](get-vbrhvservernetworkinfo.md)
 * [Get-VBRViServerNetworkInfo](get-vbrviservernetworkinfo.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

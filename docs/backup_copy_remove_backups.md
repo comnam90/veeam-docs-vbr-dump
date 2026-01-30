@@ -1,5 +1,7 @@
 ---
 title: "Removing Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_remove_backups.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Backups
 
-In this article
 
 You can detach backups from backup copy jobs, permanently delete backups from the target backup repositories or remove records about backups from the Veeam Backup & Replication console and configuration database using the Remove from configuration operation.
 
@@ -62,6 +63,4 @@ To remove a backup from the configuration:
 
 [![Removing Backups](images/remove_from_configuration_bcj.webp)](images/remove_from_configuration_bcj.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Quick Migration for VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Quick Migration for VMware vSphere
 
-In this article
 
 Quick Migration allows you to migrate VMs or virtual disks between ESXi hosts and datastores. Veeam Backup & Replication supports migration of VMs or their disks in any state with minimum disruption to business operations. You can use Quick Migration as a self-contained capability or as a way to finalize the Instant Recovery and Instant Disk Recovery processes.
 
@@ -75,6 +76,4 @@ Related Topics
 * [Migrating VMs](migration_job.md)
 * [Instant Recovery to VMware vSphere](instant_recovery.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing License Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_license_web.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing License Using Web UI
 
-In this article
 
 You can remove the installed license using the Veeam Backup & Replication web UI. When you remove a license, Veeam Backup & Replication will switch to the Veeam Backup & Replication Community Edition. For more information, see [Veeam Backup & Replication Community Edition](https://www.veeam.com/virtual-machine-backup-solution-free.html).
 
@@ -26,6 +27,4 @@ To remove a license, do the following:
 
 [![Removing License Using Web UI](images/license_remove_web.webp)](images/license_remove_web.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Logs and Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_plugin_logs.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Logs and Support
 
-In this article
 
 If you have any questions or issues with Veeam Plug-In for SAP on Oracle or Veeam Backup & Replication, you can search for a resolution on [Veeam Community Forums](https://forums.veeam.com/) or submit a support case on the [Veeam Customer Support Portal](https://www.veeam.com/support.html).
 
@@ -39,6 +40,4 @@ For details, see the following SAP articles:
 * [BRARCHIVE Logs](https://help.sap.com/viewer/3ef1b95cacbf4f77a066797285371bb9/118/en-US/47231bb19a0c550fe10000000a114a6b.html)
 * [BRRECOVER Logs](https://help.sap.com/viewer/3ef1b95cacbf4f77a066797285371bb9/118/en-US/472387629a59550ee10000000a114a6b.html)
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

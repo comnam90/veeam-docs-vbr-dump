@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Backup Preferences"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_preferences.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Backup Preferences
 
-In this article
 
 At the Backup Preferences step of the wizard, specify processing settings for the nodes of the replica set you plan to back up:
 
@@ -32,6 +33,4 @@ To quickly find the necessary replica set, use the search field at the bottom of
 
 ![Step 6. Specify Backup Preferences](images/mongo_policy_backup_preferences.webp)
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

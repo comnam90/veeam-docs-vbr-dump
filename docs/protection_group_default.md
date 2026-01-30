@@ -1,5 +1,7 @@
 ---
 title: "Predefined Protection Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_default.html"
 last_updated: "3/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Predefined Protection Groups
 
-In this article
 
 In addition to protection groups created by a user, the Veeam Backup & Replication inventory may contain one or more predefined protection groups.
 
@@ -42,6 +43,4 @@ Untrusted
 
 The Untrusted protection group acts as a filter to display Linux-based computers whose fingerprints were not verified in Veeam Backup & Replication. For computers included in this protection group, you need to check and validate SSH fingerprints. To learn more, see [Adding Computers to Trusted Hosts List](security_settings_ssh_trust.md).
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

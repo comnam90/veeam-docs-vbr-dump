@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify VM Processing Order"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_order.html"
 last_updated: "1/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify VM Processing Order
 
-In this article
 
 At the Virtual Machines step of the wizard, click Up and Down to change the processing order. VMs at the top of the list have a higher priority and will be processed first.
 
@@ -18,6 +19,4 @@ At the Virtual Machines step of the wizard, click Up and Down to change the proc
 
 ![Step 5. Specify VM Processing Order](images/cdp_policy_order.webp "Specify processing order")
 
-Page updated 1/30/2025
 
-Page content applies to build 13.0.1.1071

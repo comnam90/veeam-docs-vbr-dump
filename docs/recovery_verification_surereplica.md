@@ -1,5 +1,7 @@
 ---
 title: "SureReplica"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_verification_surereplica.html"
 last_updated: "7/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureReplica
 
-In this article
 
 To guarantee recoverability of your data, Veeam Backup & Replication complements the SureBackup recovery verification technology with SureReplica.
 
@@ -28,6 +29,4 @@ Related Topics
 
 * [SureBackup Job](surebackup_job.md)
 
-Page updated 7/23/2024
 
-Page content applies to build 13.0.1.1071

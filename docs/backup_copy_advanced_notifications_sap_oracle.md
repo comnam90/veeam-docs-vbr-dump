@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_notifications_sap_oracle.html"
 last_updated: "5/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 At the Notifications tab, to specify notification settings for the backup copy job:
 
@@ -28,6 +29,4 @@ At the Notifications tab, to specify notification settings for the backup copy j
 
 ![Notification Settings](images/plugins_backup_copy_notifications.webp)
 
-Page updated 5/7/2025
 
-Page content applies to build 13.0.1.1071

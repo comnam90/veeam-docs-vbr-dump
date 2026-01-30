@@ -1,5 +1,7 @@
 ---
 title: "Deployment Procedure for Linux Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_a_centralized_hotfix_deployment_linux.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment Procedure for Linux Computers
 
-In this article
 
 Before You Begin
 
@@ -121,6 +122,4 @@ To deploy the hotfix, you need to do the following:
 
 1. Rescan the protection group.
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

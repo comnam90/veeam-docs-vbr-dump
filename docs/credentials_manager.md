@@ -1,5 +1,7 @@
 ---
 title: "Credentials Manager"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Credentials Manager
 
-In this article
 
 You can use the Credentials Manager to create and maintain a list of credentials records that you plan to use to connect to components in the backup infrastructure.
 
@@ -25,6 +26,4 @@ Related Topics
 
 [Editing and Deleting Credentials Records](credentials_edit_delete.md)
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

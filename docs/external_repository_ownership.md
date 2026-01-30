@@ -1,5 +1,7 @@
 ---
 title: "Ownership"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_ownership.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ownership
 
-In this article
 
 Ownership defines what entity can own an Amazon S3, Google Cloud\* or Azure Blob storage repository at a time.
 
@@ -46,6 +47,4 @@ Related Topics
 * [Managing Retention Policy](external_repository_retention.md)
 * [Adding External Repositories](external_repositories_add.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Networking Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_network_hv.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Networking Mode
 
-In this article
 
 At the Networking step of the wizard, select the type of network settings configuration. Veeam Backup & Replication offers two networking modes for the virtual lab:
 
@@ -18,6 +19,4 @@ If this option is selected, the New Virtual Lab wizard will include additional s
 
 ![Step 5. Select Networking Mode](images/adding_vlab_networking_hv.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Viewing Rescan Job Report"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_report_rescan_job_report.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Rescan Job Report
 
-In this article
 
 You can generate reports with details about rescan job sessions performed for a specific protection group. The report contains data on the latest rescan job session initiated for the job upon schedule. To generate a report:
 
@@ -26,6 +27,4 @@ The report contains the following data:
 
 [![View Rescan Job Report](images/mongo_report_discovery.webp)](images/mongo_report_discovery.webp "View Rescan Job Report")
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

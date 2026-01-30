@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRSelectedPersonalFolders"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrselectedpersonalfolders.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRSelectedPersonalFolders
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Examples
 | --- | --- |
 | This example shows how to define the following settings for personal data scope:   * The cmdlet will include data stored in the Favorites and Downloads folders to the backup scope. * The cmdlet will exclude data stored in the OneDrive folder from the backup scope.   |  | | --- | | $folders = New-VBRSelectedPersonalFolders  Set-VBRSelectedPersonalFolders -SelectedPersonalFolders $folders -Favorites -Downloads -ExcludeOneDrive |  Perform the following steps:   1. Run the [New-VBRSelectedPersonalFolders](new-vbrselectedpersonalfolders.md) cmdlet. Save the result to the $folders variable. 2. Run the Set-VBRSelectedPersonalFolders cmdlet. Specify the following settings:  * Set the $folders variable as the SelectedPersonalFolders parameter value.  * Provide the Favorites parameter. * Provide the Downloads parameter. * Provide the ExcludeOneDrive parameter. |
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

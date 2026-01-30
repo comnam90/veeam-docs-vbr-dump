@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy for SAP MaxDB Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_backup_copy.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy for SAP MaxDB Backups
 
-In this article
 
 Having just one backup does not provide the necessary level of safety. The primary backup may get destroyed together with production data, and you will have no backups from which you can restore data.
 
@@ -24,6 +25,4 @@ In This Section
 * [Creating Backup Copy Job](plugins_sap_maxdb_backup_copy_create.md)
 * [Converting Backup Copy to Backup](plugins_sap_maxdb_backup_copy_map.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

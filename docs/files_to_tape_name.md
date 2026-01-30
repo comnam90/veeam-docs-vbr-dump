@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Job Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_to_tape_name.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Job Name and Description
 
-In this article
 
 At the Name step of the wizard, you should define basic settings for the created file to tape job.
 
@@ -16,6 +17,4 @@ At the Name step of the wizard, you should define basic settings for the created
 
 ![Step 2. Specify Job Name and Description](images/files_to_tape_name.webp)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

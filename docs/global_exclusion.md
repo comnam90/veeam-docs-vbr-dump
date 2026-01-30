@@ -1,5 +1,7 @@
 ---
 title: "Configuring Global VM Exclusions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/global_exclusion.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Global VM Exclusions
 
-In this article
 
 Global VM exclusion allows you to stop processing VMs even if they are included in jobs. When excluding VMs globally, you do not need to change job settings. Global exclusion applies to all types of jobs that process VMs except backup copy jobs and SureBackup jobs. Note that if Veeam Backup & Replication has started to process a VM at the moment when you exclude the VM from processing, Veeam Backup & Replication finishes processing and only then excludes the VM.
 
@@ -43,6 +44,4 @@ Alternatively, you can open the Inventory view and switch to the required view. 
 
 ![Configuring Global VM Exclusions](images/global_exclude_return.webp "Return VMs to processing")
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

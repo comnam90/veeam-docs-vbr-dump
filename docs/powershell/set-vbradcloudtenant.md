@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAdCloudTenant"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbradcloudtenant.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAdCloudTenant
 
-In this article
 
 Short Description
 
@@ -113,6 +114,4 @@ Related Commands
 
 [Get-VBRCloudTenant](get-vbrcloudtenant.md)
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/storage_systems.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Systems
 
-In this article
 
 The following topics contain instructions on deploying and manage Storage Systems by means of Veeam PowerShell.
 
@@ -23,6 +24,4 @@ In this section
 * [Nutanix Files Storage Systems](nutanix_storage.md)
 * [Universal Storage API Integrated Systems](veeam_universal_storage_api_integrated_storages.md)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

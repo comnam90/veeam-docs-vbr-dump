@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Create Request for Key Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_without_pass_request.html"
 last_updated: "11/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Create Request for Key Restore
 
-In this article
 
 This procedure is performed by the Veeam Backup Administrator on the backup server.
 
@@ -29,6 +30,4 @@ To create a request for key restore, do the following:
 | Tip |
 | You can close the Encryption Key Restore wizard on the backup server and start it again when you receive a response from the Veeam Backup Enterprise Manager Administrator. |
 
-Page updated 11/20/2024
 
-Page content applies to build 13.0.1.1071

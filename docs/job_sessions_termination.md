@@ -1,5 +1,7 @@
 ---
 title: "Manual Stop of Backup Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_sessions_termination.html"
 last_updated: "6/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manual Stop of Backup Jobs
 
-In this article
 
 You can stop job execution at any moment. For example, you can stop a job if the job processes several VMs, but the workload appears to be greater than you expected. Or you can stop the job if there is not enough time to finish the job session.
 
@@ -63,6 +64,4 @@ Related Tasks
 
 [Starting and Stopping Jobs](jobs_start_stop.md)
 
-Page updated 6/24/2025
 
-Page content applies to build 13.0.1.1071

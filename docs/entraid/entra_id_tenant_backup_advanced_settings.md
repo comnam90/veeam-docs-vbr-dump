@@ -1,5 +1,7 @@
 ---
 title: "Advanced Settings"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_backup_advanced_settings.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Settings
 
-In this article
 
 In the Advanced Settings window, you can instruct Veeam Backup for Microsoft Entra ID to use password-based data encryption and specify custom notification settings for the backup job.
 
@@ -54,6 +55,4 @@ Related Topics
 
 [Define Job Schedule](entra_id_job_schedule.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

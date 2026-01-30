@@ -1,5 +1,7 @@
 ---
 title: "New-VBRHvIsolatedNetworkOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvisolatednetworkoptions.html"
 last_updated: "4/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRHvIsolatedNetworkOptions
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Get-VBRHvServerNetworkInfo](get-vbrhvservernetworkinfo.md)
 * [New-VBRHvProductionNetworkOptions](new-vbrhvproductionnetworkoptions.md)
 
-Page updated 4/30/2024
 
-Page content applies to build 13.0.1.1071

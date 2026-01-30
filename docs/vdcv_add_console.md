@@ -1,5 +1,7 @@
 ---
 title: "Adding Veeam Data Cloud Vault Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vdcv_add_console.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Veeam Data Cloud Vault Using Console
 
-In this article
 
 To add Veeam Data Cloud Vault using console, use the New Object Storage Repository wizard.
 
@@ -20,6 +21,4 @@ To add Veeam Data Cloud Vault using console, use the New Object Storage Reposito
 7. [Apply settings](veeam_data_cloud_apply.md).
 8. [Finish working with the wizard](veeam_data_cloud_finishing_wizard.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

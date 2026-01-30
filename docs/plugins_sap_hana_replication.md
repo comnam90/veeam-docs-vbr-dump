@@ -1,5 +1,7 @@
 ---
 title: "Support for SAP HANA System Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_hana_replication.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Support for SAP HANA System Replication
 
-In this article
 
 Veeam Plug-In for SAP HANA operating in the standalone mode supports backup and restore of SAP HANA databases that operate as parts of SAP HANA System Replication. For more information about SAP HANA System Replication, see [SAP documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/4e9b18c116aa42fc84c7dbfd02111aba/afac7100bc6d47729ae8eae32da5fdec.html?locale=en-US).
 
@@ -70,6 +71,4 @@ This command specifies the backup that Veeam Plug-In will use for restore. For d
 
 If then you want to restore from a backup created in a new backup chain, you must use the --set-backup-for-restore parameter again to select a new backed-up machine as a source for restore.
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

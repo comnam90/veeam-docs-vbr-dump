@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Install Mount Service Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_mount_service_launch.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Install Mount Service Wizard
 
-In this article
 
 To manually launch the Install Mount Service wizard:
 
@@ -17,6 +18,4 @@ To manually launch the Install Mount Service wizard:
 
 [![Click to zoom in](images/install_mount_service_launch.webp)](images/install_mount_service_launch.webp "Click to zoom in")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

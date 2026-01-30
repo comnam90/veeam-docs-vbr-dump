@@ -1,5 +1,7 @@
 ---
 title: "New-VBRComputerGFSMonthlyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrcomputergfsmonthlyoptions.html"
 last_updated: "11/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRComputerGFSMonthlyOptions
 
-In this article
 
 Short Description
 
@@ -56,6 +57,4 @@ Examples
 | --- | --- |
 | This command defines monthly GFS retention policy with the following settings:   * With these settings applied, Veeam Backup & Replication will keep monthly backups for 3 weeks. * With these settings applied, Veeam Backup & Replication will create monthly backups on the last week of the month.     |  | | --- | | New-VBRComputerGFSMonthlyOptions -RetentionPeriod 3 -SelectedWeek Last | |
 
-Page updated 11/12/2024
 
-Page content applies to build 13.0.1.1071

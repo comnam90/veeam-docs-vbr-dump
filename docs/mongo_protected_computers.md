@@ -1,5 +1,7 @@
 ---
 title: "Managing Protected Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Protected Computers
 
-In this article
 
 You can perform the following operations with computers added to the inventory in Veeam Backup & Replication:
 
@@ -23,6 +24,4 @@ You can perform the following operations with computers added to the inventory i
 
 * [Uninstall all Veeam Agents and Veeam Plug-Ins on a computer](mongo_protected_computers_uninstall_everything.md).
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

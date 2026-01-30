@@ -1,5 +1,7 @@
 ---
 title: "Quick Rollback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_quick_rollback_hv.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Quick Rollback
 
-In this article
 
 If you fail back from a VM replica to the source VM in the original location, you can instruct Veeam Backup & Replication to perform quick rollback. Quick rollback significantly reduces the failback time and has little impact on the production environment.
 
@@ -34,6 +35,4 @@ Related Topics
 
 [Performing Failback](performing_failback_hv.md)
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

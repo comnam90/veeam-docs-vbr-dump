@@ -1,5 +1,7 @@
 ---
 title: "New-VBRJobVssOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrjobvssoptions.html"
 last_updated: "6/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRJobVssOptions
 
-In this article
 
 Short Description
 
@@ -84,6 +85,4 @@ Perform the following steps:
 * Provide the Everyfolders value for the GuestFSIndexingType property of the $o variable.
 * Provide the Always value for the TransactionLogsTruncation property of the $o variable.
 
-Page updated 6/12/2024
 
-Page content applies to build 13.0.1.1071

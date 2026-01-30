@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Specify Secure Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_av_hv.html"
 last_updated: "12/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Specify Secure Restore Settings
 
-In this article
 
 This step is available if you restore Microsoft Windows VMs.
 
@@ -52,6 +53,4 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 
 ![Step 9. Specify Secure Restore Settings](images/hv_restore_fullvm_av.webp)
 
-Page updated 12/2/2024
 
-Page content applies to build 13.0.1.1071

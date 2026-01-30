@@ -1,5 +1,7 @@
 ---
 title: "Generate-VBRBackupServerDeployerKit"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrbackupserverdeployerkit.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Generate-VBRBackupServerDeployerKit
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ Examples
 | --- | --- |
 | This command generates Veeam Installer Service Veeam Deployer Service certificates and installation packages for Microsoft Windows and Linux computers to the C:\Users\Administrator\Documents folder.  |  | | --- | | Generate-VBRBackupServerDeployerKit -ExportPath "C:\Users\Administrator\Documents" -AllPlatforms | |
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

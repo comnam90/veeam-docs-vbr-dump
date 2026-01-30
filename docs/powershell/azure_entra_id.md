@@ -1,5 +1,7 @@
 ---
 title: "Managing Azure Entra ID Account"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/azure_entra_id.html"
 last_updated: "11/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Azure Entra ID Account
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Set-VBRAzureADAccount](set-vbrazureadaccount.md) | Modifies settings of Azure Entra ID-based storage accounts. |
 | [Remove-VBRAzureADAccount](remove-vbrazureadaccount.md) | Removes Azure Entra ID-based storage accounts from Veeam Backup & Replication. |
 
-Page updated 11/10/2023
 
-Page content applies to build 13.0.1.1071

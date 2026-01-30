@@ -1,5 +1,7 @@
 ---
 title: "Backup Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_backup_hv.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Settings
 
-In this article
 
 To specify settings for a backup chain created by the backup job:
 
@@ -28,6 +29,4 @@ Before you schedule periodic full backups, you must ensure you have enough free 
 
 ![Backup Settings](images/hv_backup_job_settings_backup.webp "Backup Settings")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

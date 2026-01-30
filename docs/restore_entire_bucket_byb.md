@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_bucket_byb.html"
 last_updated: "3/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you restore the entire bucket or container, consider the following:
 
@@ -30,6 +31,4 @@ Before you restore the entire bucket or container, consider the following:
 | Tip |
 | If you want to restore these objects, you must change the access tier to hot, cool or cold access tiers. If you do not want to restore these objects, you need to remove them from your Azure container. |
 
-Page updated 3/18/2025
 
-Page content applies to build 13.0.1.1071

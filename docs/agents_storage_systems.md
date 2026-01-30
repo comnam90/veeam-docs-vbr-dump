@@ -1,5 +1,7 @@
 ---
 title: "Storage Snapshots Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_storage_systems.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Snapshots Support
 
-In this article
 
 You can use Veeam Backup & Replication and Veeam Agent for Microsoft Windows operating in the managed mode (within the Veeam Agent management scenario) to create backups from native storage snapshots.
 
@@ -82,6 +83,4 @@ In This Section
 * [Storage Snapshots on Volumes Greater than 64 TB](agents_storage_snapshots_great.md)
 * [Storage Snapshots on BitLocker Encrypted Volumes](agents_storage_snapshots_encrypted.md)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

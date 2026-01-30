@@ -1,5 +1,7 @@
 ---
 title: "How Instant Recovery Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_instant_hiw.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Instant Recovery Works
 
-In this article
 
 To perform instant recovery, Veeam Explorer for Oracle uses the Veeam Explorers Recovery Service running on the mount server associated with the backup repository. This removes the necessity to keep Veeam Explorer for Oracle open during an entire instant recovery session. Once the instant recovery session is started, you can close Veeam Explorer for Oracle and then open it later when necessary.
 
@@ -51,6 +52,4 @@ The instant recovery session is resilient to network disruptions, backup server 
 
 [![How Instant Recovery Works](images/veor_ir.webp)](images/veor_ir.webp "How Instant Recovery Works")
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

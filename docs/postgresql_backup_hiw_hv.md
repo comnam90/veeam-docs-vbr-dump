@@ -1,5 +1,7 @@
 ---
 title: "WAL Files PostgreSQL Backup Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_backup_hiw_hv.html"
 last_updated: "2/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WAL Files PostgreSQL Backup Jobs
 
-In this article
 
 To maintain data consistency and integrity, Veeam Backup & Replication makes a backup of write ahead log (WAL) files for PostgreSQL instances. Veeam Backup & Replication uses these log files to recover PostgreSQL instances and bring them to the necessary consistent state.
 
@@ -28,6 +29,4 @@ The child backup session starts and stops in the following way:
 * The session ends before the next session of the parent backup job or when this parent backup job is disabled.
 * When the session ends, Veeam Backup & Replication stops the non-persistent runtime components and uninstalls them from the VM guest OS. When a new session starts, the runtime components are deployed again.
 
-Page updated 2/12/2025
 
-Page content applies to build 13.0.1.1071

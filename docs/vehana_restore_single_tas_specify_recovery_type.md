@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Recovery Type"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_tas_specify_recovery_type.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Recovery Type
 
-In this article
 
 At this step of the wizard, specify whether to restore your database as of a specific data backup, or a point in time within a data backup.
 
@@ -28,6 +29,4 @@ If you select the Recover to a specific data backup option, proceed to the next 
 
 [![Specifying Recovery Type](images/vehana_specify_single_recovery_tas.webp)](images/vehana_specify_single_recovery_tas.webp "Specifying Recovery Type")
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

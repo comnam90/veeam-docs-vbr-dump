@@ -1,5 +1,7 @@
 ---
 title: "Undoing Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_undoing.html"
 last_updated: "6/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Undoing Failback
 
-In this article
 
 For more information on failback undo, see [Failover and Failback for Cloud Director](vcd_failover_failback.md) and [Failback Undo](vcd_failback_undo.md).
 
@@ -19,6 +20,4 @@ To undo failback:
 
 [![vCD Undo Failover](images/vcd_undo_failback.webp)](images/vcd_undo_failback.webp "vCD Undo Failover")
 
-Page updated 6/22/2023
 
-Page content applies to build 13.0.1.1071

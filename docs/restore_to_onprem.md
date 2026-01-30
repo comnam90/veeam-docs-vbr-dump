@@ -1,5 +1,7 @@
 ---
 title: "Restore to On-Premises Microsoft Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_to_onprem.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to On-Premises Microsoft Servers
 
-In this article
 
 You can restore data to on-premises Microsoft Exchange servers.
 
@@ -24,6 +25,4 @@ To restore a single mailbox, folder or item, do the following:
 5. [Specify restore options](vex_single_restore_options.md).
 6. [Review the operation summary](summary5.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

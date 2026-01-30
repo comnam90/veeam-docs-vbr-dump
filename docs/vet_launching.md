@@ -1,5 +1,7 @@
 ---
 title: "Launching Application and Exploring Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_launching.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Application and Exploring Backups
 
-In this article
 
 To open Veeam Explorer for Microsoft Teams and load backups, you must manually open Microsoft Teams databases. For more information, see [Standalone Databases and External Servers](vet_standalone_databases.md).
 
@@ -40,6 +41,4 @@ In This Section
 * [Getting to Know User Interface](vet_know_ui.md)
 * [Browsing, Searching and Viewing Items](vet_browsing_and_searching.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

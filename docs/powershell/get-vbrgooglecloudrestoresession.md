@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRGoogleCloudRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgooglecloudrestoresession.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRGoogleCloudRestoreSession
 
-In this article
 
 Short Description
 
@@ -54,6 +55,4 @@ This command gets the New session restore session.
 | --- |
 | Get-VBRGoogleCloudRestoreSession -Session "New session" |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

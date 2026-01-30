@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_before_you_begin.html"
 last_updated: "4/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform Instant Disk Recovery, consider the following:
 
@@ -21,6 +22,4 @@ Before you perform Instant Disk Recovery, consider the following:
 
 By default, Veeam Backup & Replication writes virtual disk updates to the IRCache folder on a volume with the maximum amount of free space, for example, C:\ProgramData\Veeam\Backup\IRCache.
 
-Page updated 4/16/2025
 
-Page content applies to build 13.0.1.1071

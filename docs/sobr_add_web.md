@@ -1,5 +1,7 @@
 ---
 title: "Adding Scale-Out Backup Repositories Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_web.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Scale-Out Backup Repositories Using Web UI
 
-In this article
 
 To add the scale-out backup repository using the web UI, use the New Scale-out Backup Repository wizard.
 
@@ -18,6 +19,4 @@ To add the scale-out backup repository using the web UI, use the New Scale-out B
 5. [Add capacity tier](new_capacity_tier_web.md).
 6. [Finish working with wizard](sobr_add_summary_web.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

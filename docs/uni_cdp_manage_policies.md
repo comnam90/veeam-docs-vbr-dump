@@ -1,5 +1,7 @@
 ---
 title: "Managing Universal CDP Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_manage_policies.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Universal CDP Policies
 
-In this article
 
 After you create CDP policies, you can edit, disable and delete them.
 
@@ -19,6 +20,4 @@ In This Section
 * [Editing Policies](cdp_edit.md)
 * [Disabling and Deleting Policies](cdp_disable.md)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

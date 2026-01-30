@@ -1,5 +1,7 @@
 ---
 title: "GFS Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_jobs.html"
 last_updated: "3/7/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # GFS Backup to Tape
 
-In this article
 
 The GFS tape job creates yearly archive for source machines by the GFS (Grandfather-Father-Son) scheme. The GFS archive includes one yearly backup and several quarterly, monthly, weekly and daily backups.
 
@@ -52,6 +53,4 @@ Related Topics
 * [Creating GFS Tape Jobs](creating_gfs_tape_jobs.md)
 * [Viewing Backups on Tape](view_backups_on_tape.md)
 
-Page updated 3/7/2024
 
-Page content applies to build 13.0.1.1071

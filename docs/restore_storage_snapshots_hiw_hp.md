@@ -1,5 +1,7 @@
 ---
 title: "How Restore from Storage Snapshots Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_storage_snapshots_hiw_hp.html"
 last_updated: "8/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore from Storage Snapshots Works
 
-In this article
 
 For restore operations, Veeam Backup & Replication uses a copy of the volume snapshot, not the volume snapshot itself.
 
@@ -33,6 +34,4 @@ When you restore VM data from storage snapshots, Veeam Backup & Replication perf
 
 ![How Restore from Storage Snapshots Works](images/restore_from_snapshots_hiw.webp)
 
-Page updated 8/4/2023
 
-Page content applies to build 13.0.1.1071

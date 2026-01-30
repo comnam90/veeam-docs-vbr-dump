@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRInstantRecoveryMigration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrinstantrecoverymigration.html"
 last_updated: "4/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRInstantRecoveryMigration
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Perform the following steps:
 2. Run the [Start-VBRNASInstantRecoveryMigration](start-vbrnasinstantrecoverymigration.md) cmdlet. Set the $nasInstantRecovery variable as the InstantRecovery parameter value. Save the result to the $session variable.
 3. Run the Get-VBRInstantRecoveryMigration cmdlet. Set the Id property of the $session variable as the Id parameter value. Save the result to the $migrationsession variable.
 
-Page updated 4/4/2024
 
-Page content applies to build 13.0.1.1071

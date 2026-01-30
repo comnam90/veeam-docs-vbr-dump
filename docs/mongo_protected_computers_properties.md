@@ -1,5 +1,7 @@
 ---
 title: "Viewing Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_properties.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Properties
 
-In this article
 
 You can view detailed information about protected computers. The detailed information provides the following data:
 
@@ -26,6 +27,4 @@ To view detailed information about a protected computer:
 
 [![View Properties of Protected Computer](images/mongo_policy_details.webp)](images/mongo_policy_details.webp "View Properties of Protected Computer")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Veeam Agent Backup Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_create.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Veeam Agent Backup Jobs
 
-In this article
 
 To create a Veeam Agent backup job managed by the backup server, you must create a backup job with the Managed by backup server option selected in the job settings. You will be able to add one or more individual computers and protection groups to the job and instruct Veeam Backup & Replication to create Veeam Agent backups in a Veeam backup repository or Veeam Cloud Connect repository. The Veeam Agent backup job will run on the backup server in the similar way as a regular job for VM data backup. To learn more, see [Backup Job](agents_job.md).
 
@@ -22,6 +23,4 @@ Related Topics
 
 [Backup Job](agents_job.md)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

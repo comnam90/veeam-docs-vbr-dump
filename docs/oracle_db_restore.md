@@ -1,5 +1,7 @@
 ---
 title: "Database Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_db_restore.html"
 last_updated: "3/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Recovery
 
-In this article
 
 With the configured Veeam Plug-In for Oracle RMAN, you can perform all kinds of database restore operations available in Oracle RMAN. You can also restore from database backups in the Veeam Backup & Replication console.
 
@@ -20,6 +21,4 @@ In This Section
 * [Restore of Control File from Autobackup](controlfile_restore.md)
 * [Restore from Hardened Repository](restore_from_immutable_rman.md)
 
-Page updated 3/28/2025
 
-Page content applies to build 13.0.1.1071

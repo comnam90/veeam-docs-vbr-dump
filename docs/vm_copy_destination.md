@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Copy Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_destination.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Copy Destination
 
-In this article
 
 At the Storage step of the wizard, select which backup proxy must be used for VM data transporting and specify the destination for the VM copy.
 
@@ -34,6 +35,4 @@ Use the Check button to see how much free space is available in the target locat
 
 ![Step 5. Specify Copy Destination](images/vm_copy_job_storage.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

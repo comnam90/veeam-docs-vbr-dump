@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Full VM Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_launch_hv_web.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Full VM Restore Wizard
 
-In this article
 
 To launch the Entire VM Restore wizard using the web UI, do the following:
 
@@ -17,6 +18,4 @@ To launch the Entire VM Restore wizard using the web UI, do the following:
 
 [![Launch Wizard - Web UI](images/full_restore_launch_hv_web.webp)](images/full_restore_launch_hv_web.webp "Launch Wizard - Web UI")
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

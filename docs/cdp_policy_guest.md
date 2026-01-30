@@ -1,5 +1,7 @@
 ---
 title: "Step 13. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_guest.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 13. Specify Guest Processing Settings
 
-In this article
 
 Settings configured at this step apply only to long-term restore points.
 
@@ -59,6 +60,4 @@ After you have enabled application-aware processing for all VMs and configured o
 
 ![Step 13. Specify Guest Processing Settings](images/cdp_policy_guest.webp "Specify guest processing settings")
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

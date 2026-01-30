@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_byb.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you start the restore process, check the following prerequisites:
 
@@ -28,6 +29,4 @@ Before you start the restore process, check the following prerequisites:
 + The target backup server must also have the configured Security Officer account.
 + In the Veeam Host Management console of the target backup server, a Security Officer must specify a configuration backup passphrase used to encrypt the configuration backup on the previous backup server. For more information, see [Managing Configuration Backup Passphrases](hmc_perform_so_tasks.md#manage_bco_passphrase).
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

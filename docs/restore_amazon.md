@@ -1,5 +1,7 @@
 ---
 title: "Restore to Amazon EC2"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Amazon EC2
 
-In this article
 
 Veeam Backup & Replication allows you to restore different workloads (VMs, Google VM instances, physical servers and so on) to Amazon Elastic Compute Cloud (Amazon EC2) as EC2 instances. An EC2 instance is a virtual machine in Amazon EC2 with a preconfigured combination of computing resources.
 
@@ -47,6 +48,4 @@ In This Section
 * [AWS IAM User Permissions](restore_amazon_permissions.md)
 * [Performing Restore to Amazon EC2](restore_amazon_process.md)
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

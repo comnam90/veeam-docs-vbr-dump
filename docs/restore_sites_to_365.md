@@ -1,5 +1,7 @@
 ---
 title: "Restore to Microsoft 365 Organizations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sites_to_365.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Microsoft 365 Organizations
 
-In this article
 
 You can restore backed-up data to Microsoft 365 organizations with enabled [multi-factor authentication](https://docs.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) (MFA). For more information, see the [Adding Microsoft 365 Organizations](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_office365_org.html?ver=80) section of the Veeam Backup for Microsoft 365 User Guide.
 
@@ -21,6 +22,4 @@ To restore Microsoft SharePoint sites to another Microsoft 365 organization, do 
 6. [Specify restore options](vesp_specify_restore_options_sites_m365.md).
 7. [Review the operation summary](summary10.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

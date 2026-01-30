@@ -1,5 +1,7 @@
 ---
 title: "Failback on VSAN"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_vsan.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback on VSAN
 
-In this article
 
 Due to specifics of VSAN data storage organization, Veeam Backup & Replication cannot get the difference between disks of a VM replica located on VSAN and disks of the source VM in a regular manner. Veeam Backup & Replication needs to read VM disks data anew in every failback process phase. As a result, failback for VMs replicas on VSAN slightly differs from the regular failback course.
 
@@ -24,6 +25,4 @@ Before Veeam Backup & Replication starts the failback process, it checks the loc
 
 The rest of the failback process does not differ from the regular failback process.
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Storage Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_setup.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Storage Systems
 
-In this article
 
 Before you start working with storage systems in Veeam Backup & Replication, you must configure the infrastructure. For more information on the required components and how to add them, see [Infrastructure Overview](storage_infrastructure.md).
 
@@ -39,6 +40,4 @@ In This Section
 * [Rescanning Storage Systems](storage_rescan.md)
 * [Removing Storage Systems](storage_remove.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

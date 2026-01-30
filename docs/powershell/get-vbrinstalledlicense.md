@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRInstalledLicense"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrinstalledlicense.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRInstalledLicense
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This example shows how to get details about a number of available instances.  |  | | --- | | $license =  Get-VBRInstalledLicense  $license.InstanceLicenseSummary  LicensedInstancesNumber : 1000  UsedInstancesNumber     : 2  NewInstancesNumber      : 0  RentalInstancesNumber   : 0  Object                  : {Veeam.Backup.PowerShell.Infos.VBRInstanceLicenseSummaryObject}  Workload                : {srv009, SQLsrv} |  Perform the following steps:   1. Run the Get-VBRInstalledLicense cmdlet. Save the result to the $license variable. 2. Get the InstanceLicenseSummary property of the $license variable. |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

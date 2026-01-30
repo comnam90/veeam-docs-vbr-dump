@@ -1,5 +1,7 @@
 ---
 title: "Restore to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_another.html"
 last_updated: "12/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Another Server
 
-In this article
 
 You can restore IBM Db2 databases from Veeam Plug-In backups to another server. To restore databases to another server, you must specify an authentication method to access the backup created for the original server and then select the backup from which you want to restore a database.
 
@@ -25,6 +26,4 @@ Veeam Plug-In supports the following authentication methods to access backups:
 
 You can also perform a redirected restore if you need to restore to a instance with a name that is different from the backed-up instance. For details, see [Restore to Instance with Different Name](db2_restore_to_server_with_different_name.md).
 
-Page updated 12/17/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Local Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_unix_drive.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Local Storage Settings
 
-In this article
 
 The Local Storage step of the wizard is available if you have chosen to save the backup on a local drive of your computer.
 
@@ -29,6 +30,4 @@ Keep in mind that to use the GFS retention policy, you must set Veeam Agent to c
 
 ![Local Storage Settings](images/agent_policy_local_unix.webp)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

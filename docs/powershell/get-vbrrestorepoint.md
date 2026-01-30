@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrrestorepoint.html"
 last_updated: "6/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRRestorePoint
 
-In this article
 
 Short Description
 
@@ -114,6 +115,4 @@ Related Commands
 * [Sort-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/sort-object?view=powershell-7)
 * [Select-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-object?view=powershell-7)
 
-Page updated 6/19/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRAmazonEC2Container"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbramazonec2container.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAmazonEC2Container
 
-In this article
 
 Contains Amazon EC2 entities.
 
@@ -19,6 +20,4 @@ Contains Amazon EC2 entities.
 | Excluded Entity | Object[] | Excluded EC2 instances, EC2 tags or AWS datacenters. |
 | AutoAssignIAMRole | Bool | Assigns IAM role with the AmazonSSMManagedInstanceCore policy to all EC2 instances. |
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

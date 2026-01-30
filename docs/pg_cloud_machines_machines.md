@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Cloud Machines"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_cloud_machines_machines.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Cloud Machines
 
-In this article
 
 At the Cloud Machines step of the wizard, specify cloud machines that you want to add to the protection group. To do this, you can select individual cloud machines, whole datacenters, or specify metadata tags.
 
@@ -42,6 +43,4 @@ To add a tag:
 
 ![Step 4. Specify Cloud Machines](images/protection_group_cloud_tags.webp "Specify Tags")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

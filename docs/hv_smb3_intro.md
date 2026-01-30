@@ -1,5 +1,7 @@
 ---
 title: "Backup of VMs on Microsoft SMB3"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_smb3_intro.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup of VMs on Microsoft SMB3
 
-In this article
 
 Microsoft Hyper-V provides the ability to store VM files on SMB3 file shares. Veeam Backup & Replication works with both standalone and clustered SMB3 servers. It supports VMs whose VM disks are located on SMB3 shares and allows you to perform backup, replication and file copy operations for such VMs without taking VMs offline.
 
@@ -24,6 +25,4 @@ Related Topics
 * [Online Backup](online_backup.md)
 * [Adding Microsoft SMB3 Servers](smb.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

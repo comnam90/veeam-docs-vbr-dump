@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_tape_options.html"
 last_updated: "2/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Restore Options
 
-In this article
 
 At the Options step of the wizard, specify overwrite options in case the file already exists in the target folder:
 
@@ -29,6 +30,4 @@ Select the Restore file and folder security check box if you want the restored f
 
 ![Step 4. Specify Restore Options](images/restore_files_from_tape_options.webp)
 
-Page updated 2/5/2024
 
-Page content applies to build 13.0.1.1071

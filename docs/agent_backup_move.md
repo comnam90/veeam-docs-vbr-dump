@@ -1,5 +1,7 @@
 ---
 title: "Moving Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_move.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Moving Backup
 
-In this article
 
 You can move backups created with Veeam Agent in the following ways:
 
@@ -115,6 +116,4 @@ The detached backups will be shown under the Backups > Orphaned node in the inve
 
 [![Manage Failed Activity](images/agent_backup_move_action.webp)](images/agent_backup_move_action.webp "Manage Failed Activity")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRProtectionGroupAdvancedWindowsOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrprotectiongroupadvancedwindowsoptions.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRProtectionGroupAdvancedWindowsOptions
 
-In this article
 
 Contains settings for Veeam Agent for Microsoft Windows machines.
 
@@ -30,6 +31,4 @@ Related Commands
 
 [New-VBRProtectionGroupAdvancedWindowsOptions](new-vbrprotectiongroupadvancedwindowsoptions.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

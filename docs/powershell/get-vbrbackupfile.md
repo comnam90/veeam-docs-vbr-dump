@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRBackupFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrbackupfile.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRBackupFile
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 
 [Get-VBRBackup](get-vbrbackup.md)
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

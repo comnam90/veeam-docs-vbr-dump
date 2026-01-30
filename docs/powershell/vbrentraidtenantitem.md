@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDTenantItem"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidtenantitem.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDTenantItem
 
-In this article
 
 Contains settings of a Microsoft Entra ID item of a tenant.
 
@@ -26,6 +27,4 @@ Related Commands
 
 [Validate-VBREntraIDTenantItem](validate-vbrentraidtenantitem.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

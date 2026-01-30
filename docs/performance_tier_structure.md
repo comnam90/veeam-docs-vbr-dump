@@ -1,5 +1,7 @@
 ---
 title: "Extent Structure of Performance Tier with Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performance_tier_structure.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Extent Structure of Performance Tier with Object Storage Repositories
 
-In this article
 
 If your performance tier consists of object storage repositories, Veeam Backup & Replication creates and maintains the following structure of directories after backups are moved to the performance tier extents.
 
@@ -26,6 +27,4 @@ If your performance tier consists of object storage repositories, Veeam Backup &
 | Owner | Contains information on a repository owner. |
 | Repository | Contains information on a repository. |
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

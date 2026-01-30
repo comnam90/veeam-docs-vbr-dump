@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Instance Type and Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_instance_type.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Instance Type and Disks
 
-In this article
 
 At the Instance Type step of the wizard, select instance types and disk types for the restored workloads. By default, Veeam Backup & Replication restores all disks as Google Compute Engine disks of the Balanced persistent disk type. For information on types of Google Compute Engine disks, see the [Google Cloud documentation](https://cloud.google.com/compute/docs/disks).
 
@@ -45,6 +46,4 @@ To select workload disks for restore:
 
 ![Step 5. Specify Instance Type and Disks](images/restore_google_instance_type_disks.webp)
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing from Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_removing_config.html"
 last_updated: "9/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing from Configuration
 
-In this article
 
 When you remove replicas from the configuration, Veeam Backup & Replication removes records about the replicas from the configuration database, stops showing the replicas in Veeam Backup & Replication console and also stops synchronizing their state with the state of the source VMs. However, the actual replicas remain on hosts.
 
@@ -24,6 +25,4 @@ To remove records about replicas from the Veeam Backup & Replication console and
 
 [![vCD Replica From Configuration](images/vcd_replica_fromconfig_remove.webp)](images/vcd_replica_fromconfig_remove.webp "vCD Replica From Configuration")
 
-Page updated 9/10/2024
 
-Page content applies to build 13.0.1.1071

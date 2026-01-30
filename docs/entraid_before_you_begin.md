@@ -1,5 +1,7 @@
 ---
 title: "Before you Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entraid_before_you_begin.html"
 last_updated: "12/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before you Begin
 
-In this article
 
 Before you add a Microsoft Azure storage account with Microsoft Entra authorization to Veeam Backup & Replication, check the following prerequisites:
 
@@ -37,6 +38,4 @@ You can limit the subscriptions to which Veeam Backup & Replication assigns the 
 
 * When the internet access is possible only through HTTP/HTTPS proxy, you must configure the proxy settings for the Local System account or account under which the Veeam Backup Service is running. For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet).
 
-Page updated 12/11/2024
 
-Page content applies to build 13.0.1.1071

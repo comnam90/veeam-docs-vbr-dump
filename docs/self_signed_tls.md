@@ -1,5 +1,7 @@
 ---
 title: "Generating Self-Signed Certificate"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/self_signed_tls.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Generating Self-Signed Certificate
 
-In this article
 
 You can use Veeam Backup & Replication to generate a self-signed certificate for authenticating parties in the Veeam Backup & Replication infrastructure.
 
@@ -56,6 +57,4 @@ To generate a self-signed TLS certificate, do the following:
 
 ![Generating Self-Signed Certificate](images/ssl_ss_finish.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

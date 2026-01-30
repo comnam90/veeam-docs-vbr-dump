@@ -1,5 +1,7 @@
 ---
 title: "Configuring Staging Oracle Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_staging_server.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Staging Oracle Server
 
-In this article
 
 To enable advanced recovery functionality, you can use an Oracle machine as a staging server. This section explains the use cases of the staging server and how to configure it.
 
@@ -82,6 +83,4 @@ To enable the failover, select the Use su if sudo is unavailable check box and i
 
 [![Configuring Staging Server for Linux Machines](images/veo_cfg_linux.webp)](images/veo_cfg_linux.webp "Configuring Staging Server for Linux Machines")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

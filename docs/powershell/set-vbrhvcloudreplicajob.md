@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRHvCloudReplicaJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrhvcloudreplicajob.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRHvCloudReplicaJob
 
-In this article
 
 Short Description
 
@@ -103,6 +104,4 @@ Related Commands
 * [Get-VBRHvProxy](get-vbrhvproxy.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

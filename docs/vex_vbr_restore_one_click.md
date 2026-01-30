@@ -1,5 +1,7 @@
 ---
 title: "1-Click Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore_one_click.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # 1-Click Restore
 
-In this article
 
 The 1-Click Restore feature allows you to quickly restore Exchange mailboxes, folders and items according to the following:
 
@@ -51,6 +52,4 @@ After the restore process is complete, review the results shown in the Restore s
 
 [![Reviewing Restore Summary Window](images/vex_restore_summary_single.webp)](images/vex_restore_summary_single.webp "Reviewing Restore Summary Window")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

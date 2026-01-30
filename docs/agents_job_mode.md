@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Backup Jobs and Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_job_mode.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Backup Jobs and Policies
 
-In this article
 
 To back up data of your protected computers, you must configure a Veeam Agent backup job. The Veeam Agent backup job defines what data to back up, how, where and when to back up data. In Veeam Backup & Replication, you can create Veeam Agent backup jobs of the following types:
 
@@ -60,6 +61,4 @@ Related Tasks
 * [Creating Veam Agent Backup Jobs](agent_job_create.md)
 * [Creating Veeam Agent Backup Policies](agent_policy.md)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

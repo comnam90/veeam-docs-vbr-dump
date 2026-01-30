@@ -1,5 +1,7 @@
 ---
 title: "Pre-Freeze and Post-Thaw Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_vss_scripts.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Pre-Freeze and Post-Thaw Scripts
 
-In this article
 
 If you plan to back up data of applications that do not support VSS, you can specify what scripts Veeam Agent for Microsoft Windows must use to quiesce the OS on the protected computer. The pre-freeze script quiesces the file system and application data to bring the OS to a consistent state before Veeam Agent for Microsoft Windows requests the creation of a VSS snapshot. After the VSS snapshot is created, the post-thaw script brings the file system and applications to their initial state.
 
@@ -35,6 +36,4 @@ You can use scripts of other formats as well, but we cannot guarantee correct pr
 
 ![Pre-Freeze and Post-Thaw Scripts](images/agent_policy_win_vss_scripts.webp "Specify Pre-Freeze and Post-Thaw Scripts")
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

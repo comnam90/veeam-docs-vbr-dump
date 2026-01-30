@@ -1,5 +1,7 @@
 ---
 title: "Managing Folders"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_server_file_copy.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Folders
 
-In this article
 
 You can create, rename and delete folders in the Files view of Veeam Backup & Replication.
 
@@ -32,6 +33,4 @@ To remove a folder:
 
 [![Click to zoom in](images/files_folders_manage.webp)](images/files_folders_manage.webp "Click to zoom in")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

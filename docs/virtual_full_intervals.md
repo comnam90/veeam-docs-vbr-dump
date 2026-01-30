@@ -1,5 +1,7 @@
 ---
 title: "Virtual Full Intervals"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_full_intervals.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Full Intervals
 
-In this article
 
 When the tape job needs to create a new virtual full, it analyzes the tape archive and detects the date of the last virtual full on tape. To create a new virtual full, the tape job needs restore points that were created in the following interval:
 
@@ -42,6 +43,4 @@ The source job may not produce any backups after the previous full backup day. I
 | Important |
 | The virtual full cannot be forced before its scheduled day. For example, if you start the tape job manually but the virtual full backup day is in future, the virtual full backup will not be created. |
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

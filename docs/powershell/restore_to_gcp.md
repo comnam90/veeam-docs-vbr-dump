@@ -1,5 +1,7 @@
 ---
 title: "Restore to Google Compute Engine"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restore_to_gcp.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Google Compute Engine
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -30,6 +31,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Get-VBRGoogleCloudRestoreSession](get-vbrgooglecloudrestoresession.md) | Returns active restore sessions to Google Cloud. |
 | [Stop-VBRVMRestoreToGoogleCloud](stop-vbrvmrestoretogooglecloud.md) | Stops running restore to Google Cloud sessions. |
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

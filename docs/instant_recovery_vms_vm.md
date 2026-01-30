@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Workloads"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_vms_vm.html"
 last_updated: "3/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Workloads
 
-In this article
 
 At the Machines step of the wizard, select one or multiple workloads that you want to recover:
 
@@ -27,6 +28,4 @@ When you add a VM to the list, Veeam Backup & Replication displays information a
 
 ![Step 2. Select Workloads](images/instant_recovery_vms.webp)
 
-Page updated 3/12/2025
 
-Page content applies to build 13.0.1.1071

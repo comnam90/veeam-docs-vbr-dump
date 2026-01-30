@@ -1,5 +1,7 @@
 ---
 title: "Backup of Database Availability Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_dag_hiw.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup of Database Availability Groups
 
-In this article
 
 The procedure of adding a Microsoft Exchange Database Availability Group (DAG) to a Veeam Agent backup job differs depending on the type of the DAG that you want to process:
 
@@ -52,6 +53,4 @@ DAG servers contain active and passive copies of each database. By default, the 
 
 Log truncation is applied to all passive and active database copies. Veeam Agent uses the Exchange VSS Writer to truncate logs. However, you can set Veeam Agent to disable transaction logs or backup transaction logs with Veeam Agent in the backup job settings. To learn more, see [Guest Processing Settings](agent_job_vss.md).
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

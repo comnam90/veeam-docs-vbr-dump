@@ -1,5 +1,7 @@
 ---
 title: "Limitation of Concurrent Tasks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/limiting_tasks.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Limitation of Concurrent Tasks
 
-In this article
 
 When you start a data protection or disaster recovery job, Veeam Backup & Replication analyzes the list of VMs added to the job and creates a list of tasks to be processed. Veeam Backup & Replication then defines what backup infrastructure components must be used for the job, checks what backup infrastructure components are currently available, and assigns necessary components to process the created job tasks. The task concept differs depending on the type of operation.
 
@@ -65,6 +66,4 @@ One machine can perform several roles. For example, you can assign roles of the 
 
 We do not recommend sharing backup infrastructure components across Veeam installations. However, if you use the same infrastructure component with multiple Veeam Backup & Replication servers, ensure that this component can handle the cumulative workload for all Veeam Backup & Replication servers to which it is added. For more information on sharing backup infrastructure components across Veeam installations, see [System Requirements](system_requirements.md#recommendations).
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Enable-VSBJob (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/enable-vsbjob.html"
 last_updated: "2/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enable-VSBJob (obsolete)
 
-In this article
 
 Short Description
 
@@ -50,6 +51,4 @@ Related Commands
 
 [Get-VSBJob](get-vsbjob.md)
 
-Page updated 2/23/2024
 
-Page content applies to build 13.0.1.1071

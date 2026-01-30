@@ -1,5 +1,7 @@
 ---
 title: "Working with Tokens"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/tokens.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Working with Tokens
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Set-VBRComputerRecoveryToken](set-vbrcomputerrecoverytoken.md) | Modifies tokens for bare-metal recovery. |
 | [Remove-VBRComputerRecoveryToken](remove-vbrcomputerrecoverytoken.md) | Removes tokens for bare-metal recovery. |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

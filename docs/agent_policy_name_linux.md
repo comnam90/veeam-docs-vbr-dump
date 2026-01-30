@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Job Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_name_linux.html"
 last_updated: "6/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Job Name and Description
 
-In this article
 
 At the Name step of the wizard, specify a name and description for the backup policy.
 
@@ -16,6 +17,4 @@ At the Name step of the wizard, specify a name and description for the backup po
 
 ![Step 3. Specify Job Name and Description ](images/agent_policy_name_linux.webp)
 
-Page updated 6/19/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Advanced Multi-Host Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_advanced_mutihost.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Multi-Host Virtual Labs
 
-In this article
 
 The advanced multi-host virtual lab configuration can be used if your disaster recovery (DR) site is configured in the following way:
 
@@ -32,6 +33,4 @@ Related Topics
 * [Isolated Networks on DVS](surereplica_advanced_mutihost_networks.md)
 * [Port Groups and VLAN IDs](surereplica_multihost_portgroup_vlan_id.md)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How File Backup to Tape Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_hiw.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How File Backup to Tape Works
 
-In this article
 
 When Veeam Backup & Replication executes a file to tape job (started manually or on schedule), it performs the following operations:
 
@@ -36,6 +37,4 @@ In case the file share has automatic backup proxy server selection enabled, the 
 
 ![How File Backup to Tape Works](images/tape_file_backup_nas.webp)
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

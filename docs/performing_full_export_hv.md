@@ -1,5 +1,7 @@
 ---
 title: "Performing Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_full_export_hv.html"
 last_updated: "2/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Export
 
-In this article
 
 To export data, do the following:
 
@@ -17,6 +18,4 @@ To export data, do the following:
 4. [Specify an export reason](specify_export_reason_hv.md).
 5. [Finish working with the wizard](finishing_working_with_export_wizard_hv.md).
 
-Page updated 2/18/2025
 
-Page content applies to build 13.0.1.1071

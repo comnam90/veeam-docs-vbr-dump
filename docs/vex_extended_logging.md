@@ -1,5 +1,7 @@
 ---
 title: "Advanced Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_extended_logging.html"
 last_updated: "8/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Settings
 
-In this article
 
 Veeam Explorer for Microsoft Exchange allows you to configure advanced settings such as extended logging mode, pop-up notifications and PST size availability.
 
@@ -25,6 +26,4 @@ To configure advanced settings, do the following:
 
 [![Configuring Advanced Settings](images/vex_logging.webp)](images/vex_logging.webp "Configuring Advanced Settings")
 
-Page updated 8/14/2025
 
-Page content applies to build 13.0.1.1071

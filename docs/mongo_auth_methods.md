@@ -1,5 +1,7 @@
 ---
 title: "Authentication Against Replica Set"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_auth_methods.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Authentication Against Replica Set
 
-In this article
 
 When you configure MongoDB Backup, you can choose one of several methods to authenticate against MongoDB replica sets that you plan to back up. Veeam Backup & Replication will use this method to connect to the MongoDB replica set and collect information about replica set configuration. For more information, see [Rescan Job](mongo_rescan_job.md).
 
@@ -28,6 +29,4 @@ Related Task
 
 [Specify Deployments](mongo_protection_group_scope_deployments.md)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Rescanning Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rescanning_backup_repositories.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning Backup Repositories
 
-In this article
 
 You can rescan a backup repository configured in the backup infrastructure. Backup repository rescan may be required, for example, if you have archived backups from a backup repository to tape and deleted backup files in the backup repository. Or you have copied backups to the backup repository manually and want to work with them in Veeam Backup & Replication.
 
@@ -31,6 +32,4 @@ To rescan a backup repository:
 
 [![Click to zoom in](images/rescan_repository.webp)](images/rescan_repository.webp "Click to zoom in")
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

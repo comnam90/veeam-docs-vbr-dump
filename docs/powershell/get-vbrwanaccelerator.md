@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRWANAccelerator"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrwanaccelerator.html"
 last_updated: "5/7/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRWANAccelerator
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Examples
 | --- | --- |
 | This command looks for WAN accelerators with the names starting with WAN.  |  | | --- | | Get-VBRWANAccelerator -Name WAN\* | |
 
-Page updated 5/7/2024
 
-Page content applies to build 13.0.1.1071

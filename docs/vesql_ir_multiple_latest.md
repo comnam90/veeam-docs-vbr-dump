@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery of Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_latest.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery of Latest State
 
-In this article
 
 To perform instant recovery of multiple databases to the latest state, use the Instant Recovery wizard.
 
@@ -21,6 +22,4 @@ Related Topics
 * [Managing Instant Recovery Session](vesql_instant_session.md)
 * [Switchover](vesql_switchover.md)
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

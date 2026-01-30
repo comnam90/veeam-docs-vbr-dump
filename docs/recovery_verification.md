@@ -1,5 +1,7 @@
 ---
 title: "Mixed Scenarios"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_verification.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Mixed Scenarios
 
-In this article
 
 You can start VMs from different sources in the On-Demand Sandbox:
 
@@ -24,6 +25,4 @@ You cannot link jobs that trigger snapshots on storage arrays to the SureBackup 
 | Application group | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) |
 | Linked job | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/no.webp) |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Getting to Know User Interface"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_know_ui.html"
 last_updated: "7/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting to Know User Interface
 
-In this article
 
 The user interface of Veeam Explorer for PostgreSQL is designed to let you quickly find commands that you need to restore PostgreSQL instances from backups.
 
@@ -42,6 +43,4 @@ The main application window contains the following UI elements:
 
 [![Components of Main Application Window](images/vep_know_ui.webp)](images/vep_know_ui.webp "Components of Main Application Window")
 
-Page updated 7/23/2024
 
-Page content applies to build 13.0.1.1071

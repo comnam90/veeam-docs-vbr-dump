@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Azure Storage Accounts (Shared Key)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_azure_storage.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Azure Storage Accounts (Shared Key)
 
-In this article
 
 You can create a credentials record for a Microsoft Azure storage account to connect to the following types of accounts:
 
@@ -65,6 +66,4 @@ Related Topics
 
 [External Repositories](external_repository.md)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

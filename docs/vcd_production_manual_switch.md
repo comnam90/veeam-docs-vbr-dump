@@ -1,5 +1,7 @@
 ---
 title: "Switching to Production vApps Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_production_manual_switch.html"
 last_updated: "3/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switching to Production vApps Manually
 
-In this article
 
 The following instructions apply if you have selected to switch from replicas to production vApps manually at the Failback Mode step of the Failback wizard.
 
@@ -28,6 +29,4 @@ After you switch to the production VM, you must finalize failback. You can final
 * [Commit failback](vcd_failback_commit.md)
 * [Undo failback](vcd_failback_undo.md)
 
-Page updated 3/5/2024
 
-Page content applies to build 13.0.1.1071

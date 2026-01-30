@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Target Hosts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_host_hv_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Target Hosts
 
-In this article
 
 The Host step of the wizard is available if you have selected Restore to a new location, or with different settings at the [Restore Mode](full_restore_mode_hv_web.md) step.
 
@@ -24,6 +25,4 @@ If you choose to register the restored VM on a host that is a part of a Hyper-V 
 
 [![Select Target Host - Web UI](images/full_restore_host_hv_web.webp)](images/full_restore_host_hv_web.webp "Select Target Host - Web UI")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

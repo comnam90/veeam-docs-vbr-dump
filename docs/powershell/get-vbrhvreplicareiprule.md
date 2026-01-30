@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRHvReplicaReIpRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrhvreplicareiprule.html"
 last_updated: "6/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRHvReplicaReIpRule
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ Related Commands
 
 [Get-VBRJob](get-vbrjob.md)
 
-Page updated 6/24/2024
 
-Page content applies to build 13.0.1.1071

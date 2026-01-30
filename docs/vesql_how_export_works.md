@@ -1,5 +1,7 @@
 ---
 title: "How Export Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_export_works.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Export Works
 
-In this article
 
 Veeam Explorer for Microsoft SQL Server allows you to export databases to the machine where Veeam Explorer for Microsoft SQL Server is opened. You can export your database as database files (MDF and LDF files) or as a BAK file.
 
@@ -26,6 +27,4 @@ After the export operation successfully completes, Veeam Explorer for Microsoft 
 
 [![How Export Works](images/vesql_export.webp)](images/vesql_export.webp "How Export Works")
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

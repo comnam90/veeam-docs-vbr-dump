@@ -1,5 +1,7 @@
 ---
 title: "Backup and Restore of Failover Clusters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_cluster_backup_and_restore.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup and Restore of Failover Clusters
 
-In this article
 
 To process a failover cluster with Veeam Agent for Microsoft Windows, you must complete the following tasks:
 
@@ -58,6 +59,4 @@ When you copy failover cluster backups, consider the following:
 
 To learn more about backup copy, see [Backup Copy](backup_copy.md).
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

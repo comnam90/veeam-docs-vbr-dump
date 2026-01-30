@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRGoogleCloudExternalRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgooglecloudexternalrepository.html"
 last_updated: "7/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRGoogleCloudExternalRepository
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Get-VBRExternalRepository](get-vbrexternalrepository.md)
 * [Add-VBREncryptionKey](add-vbrencryptionkey.md)
 
-Page updated 7/23/2025
 
-Page content applies to build 13.0.1.1071

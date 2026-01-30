@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Select Target Folders and Change VM Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_folder_vm.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Select Target Folders and Change VM Settings
 
-In this article
 
 The Folder step of the wizard is available if you have chosen to change the location and settings for restored VMs.
 
@@ -43,6 +44,4 @@ Select the Restore VM tags check box if you want to restore tags that were assig
 
 ![Step 8. Select Target Folders and Change VM Settings](images/vmrestore_folder.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Job Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_name.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Job Name and Description
 
-In this article
 
 At the Job step of the wizard, specify basic settings for the backup copy job:
 
@@ -24,6 +25,4 @@ The default description contains information on a user who created the job, date
 
 ![Step 2. Specify Job Name and Description](images/backup_copy_name_mongo.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

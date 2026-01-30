@@ -1,5 +1,7 @@
 ---
 title: "How Cloud Director CDP Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_cdp_hiw.html"
 last_updated: "8/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Cloud Director CDP Works
 
-In this article
 
 Cloud Director CDP works in a similar way as CDP for VMware vSphere VMs. For more information, see the following sections:
 
@@ -17,6 +18,4 @@ Cloud Director CDP works in a similar way as CDP for VMware vSphere VMs. For mor
 * [Guaranteed Delivery](cdp_guaranteed_delivery.md)
 * [Replica Seeding and Mapping](cdp_seeding.md)
 
-Page updated 8/18/2023
 
-Page content applies to build 13.0.1.1071

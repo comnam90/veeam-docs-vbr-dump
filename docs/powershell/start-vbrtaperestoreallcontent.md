@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRTapeRestoreAllContent"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrtaperestoreallcontent.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRTapeRestoreAllContent
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 
 [Get-VBRTapeMedium](get-vbrtapemedium.md)
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

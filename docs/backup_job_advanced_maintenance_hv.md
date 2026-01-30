@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_maintenance_hv.html"
 last_updated: "7/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 You can instruct Veeam Backup & Replication to periodically perform the health check for the latest restore point in the backup chain and maintenance operations to ensure the backup chain remains valid and consistent.
 
@@ -51,6 +52,4 @@ To specify maintenance settings for the backup job:
 
 ![Maintenance Settings](images/hv_backup_job_settings_maintenance.webp)
 
-Page updated 7/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing Backups from Capacity or Archive Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_removing_data.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Backups from Capacity or Archive Tier
 
-In this article
 
 To remove moved or copied backups from capacity or archive extent, use the Delete from disk feature, as described in section [Deleting Backups from Scale-Out Backup Repositories](deleting_backups_from_sobr.md).
 
@@ -41,6 +42,4 @@ Related Topics
 * [Moving Backups to Capacity Tier](capacity_tier_move.md)
 * [Copying Backups to Capacity Tier](capacity_tier_copy.md)
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

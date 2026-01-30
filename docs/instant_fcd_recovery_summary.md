@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Verify Instant FCD Recovery Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_summary.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Verify Instant FCD Recovery Settings
 
-In this article
 
 At the Summary step of the wizard, check settings of Instant FCD Recovery and click Finish.
 
@@ -17,6 +18,4 @@ What You Do Next
 
 [Finalizing Instant FCD Recovery](instant_fcd_recovery_finalize.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "System Requirements (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_system_requirements.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements (Storage Systems)
 
-In this article
 
 Veeam Backup & Replication provides different types of snapshot integrations and these integrations support different storage systems. For details, see the following table.
 
@@ -53,6 +54,4 @@ Related Topics
 * [NAS Integration](nas_integration.md)
 * [Veeam Agent Integration](agent_integration.md)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

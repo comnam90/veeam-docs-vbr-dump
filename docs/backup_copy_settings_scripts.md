@@ -1,5 +1,7 @@
 ---
 title: "Scripts Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_settings_scripts.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scripts Settings
 
-In this article
 
 To specify script settings for the backup copy job:
 
@@ -29,6 +30,4 @@ Then click Browse and select executable files from a local folder on the backup 
 
 ![Scripts Settings](images/backup_copy_advanced_advanced.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Discovery and Deployment Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_options.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Discovery and Deployment Options
 
-In this article
 
 At the Options step of the wizard, specify settings for protected computers discovery and Veeam Agent deployment.
 
@@ -65,6 +66,4 @@ Keep in mind that Veeam Backup & Replication will install the CBT driver only on
 
 ![Step 4. Specify Discovery and Deployment Options](images/pg_computers_options.webp "Specify Duscovery and Deployment Options")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

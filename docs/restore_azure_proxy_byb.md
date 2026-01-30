@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_byb.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you configure an Azure restore proxy appliance, check the following prerequisites:
 
@@ -24,6 +25,4 @@ For storage accounts and network configuration, you must use the same deployment
 | Important |
 | When you deploy Azure restore proxy appliance for Azure Stack Hub, make sure that Windows Server 2019 is available in Azure marketplace. |
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

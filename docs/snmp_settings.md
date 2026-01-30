@@ -1,5 +1,7 @@
 ---
 title: "Specifying SNMP Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snmp_settings.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying SNMP Settings
 
-In this article
 
 You can receive SNMP traps with results on jobs performed on the backup server. You can use SNMP traps to feed data to other monitoring systems such as CA Unicenter, BMC Patrol, IBM Tivoli or HPE OneView. SNMP traps can be sent to 5 different destinations.
 
@@ -24,6 +25,4 @@ To receive SNMP traps, you must perform the following tasks:
 * [Configure SNMP service properties](snmp_service_properties.md).
 * [Configure SNMP settings for jobs](job_snmp_settings.md).
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

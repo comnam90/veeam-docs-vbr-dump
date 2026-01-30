@@ -1,5 +1,7 @@
 ---
 title: "Tape Drive Alerts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_alerts.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Drive Alerts
 
-In this article
 
 There are 3 types of error flags:
 
@@ -78,6 +79,4 @@ You may get one of the following tape drive alerts when working with Veeam Backu
 | 57 | 0x39 | Interface failure | Critical | The tape drive has a problem with the automation interface:   1. Check the power to the automation system. 2. Check the cables and cable connections. 3. Call the supplier help line if problem persists. | Automation interface failure. |
 | 58 | 0x3a | Firmware failure | Warning | The tape drive has reset itself due to a detected firmware fault. If problem persists, call the supplier help line. | Firmware failure. |
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

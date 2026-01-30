@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch VMware Cloud Director Entire VM Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_launch.html"
 last_updated: "8/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch VMware Cloud Director Entire VM Restore Wizard
 
-In this article
 
 To launch the VMware Cloud Director Entire VM Restore wizard, do one of the following:
 
@@ -20,6 +21,4 @@ To launch the VMware Cloud Director Entire VM Restore wizard, do one of the foll
 
 [![Step 1. Launch VMware Cloud Director Entire VM Restore Wizard](images/vcloud_restore_vm_launch.webp)](images/vcloud_restore_vm_launch.webp)
 
-Page updated 8/9/2024
 
-Page content applies to build 13.0.1.1071

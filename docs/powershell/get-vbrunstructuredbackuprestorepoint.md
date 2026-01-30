@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackupRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackuprestorepoint.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackupRestorePoint
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related Commands
 
 * [Select-Object](https://docs.microsoft.com/en-us/PowerShell/module/microsoft.powershell.utility/select-object?view=powershell-6)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

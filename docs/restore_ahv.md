@@ -1,5 +1,7 @@
 ---
 title: "Restore to Nutanix AHV"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_ahv.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Nutanix AHV
 
-In this article
 
 Veeam Backup & Replication allows you to recover different workloads as Nutanix AHV VMs.
 
@@ -37,6 +38,4 @@ The restore procedure of entire workloads to Nutanix AHV practically does not di
 
 [![Restore to Nutanix AHV](images/restore_ahv.webp)](images/restore_ahv.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

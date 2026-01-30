@@ -1,5 +1,7 @@
 ---
 title: "Finalizing Instant Disk Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_finalize.html"
 last_updated: "10/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Finalizing Instant Disk Recovery
 
-In this article
 
 After the disks have been successfully recovered, you must finalize the process. For this, test the recovered disks and decide whether to migrate them to production environment or stop publishing them.
 
@@ -56,6 +57,4 @@ To remove the recovered disks:
 
 [![Finalizing Instant Disk Recovery](images/instant_disk_recovery_stop_publishing.webp)](images/instant_disk_recovery_stop_publishing.webp)
 
-Page updated 10/31/2023
 
-Page content applies to build 13.0.1.1071

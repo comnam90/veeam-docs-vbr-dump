@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Microsoft Azure Storage Account (Entra ID) Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entraid_launch.html"
 last_updated: "8/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Microsoft Azure Storage Account (Entra ID) Wizard
 
-In this article
 
 To launch the Microsoft Azure Storage Account (Entra ID) wizard, do the following:
 
@@ -16,6 +17,4 @@ To launch the Microsoft Azure Storage Account (Entra ID) wizard, do the followin
 
 ![Step 1. Launch Microsoft Azure Storage Account (Entra ID) Wizard](images/entraid_launch.webp)
 
-Page updated 8/14/2025
 
-Page content applies to build 13.0.1.1071

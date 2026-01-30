@@ -1,5 +1,7 @@
 ---
 title: "VBRTapeGFSMediaPool"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtapegfsmediapool.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRTapeGFSMediaPool
 
-In this article
 
 Contains GFS media pool.
 
@@ -32,6 +33,4 @@ Related Commands
 * [Set-VBRTapeGFSMediaPool](set-vbrtapegfsmediapool.md)
 * [Remove-VBRTapeMediaPool](remove-vbrtapemediapool.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

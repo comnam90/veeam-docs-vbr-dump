@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRCDPPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcdppolicy.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRCDPPolicy
 
-In this article
 
 Short Description
 
@@ -97,6 +98,4 @@ Related Commands
 
 [Find-VBRViEntity](find-vbrvientity.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup of Database Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_linux_dbs_processing.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup of Database Systems
 
-In this article
 
 You can instruct Veeam Agent for Linux to create consistent backups of Veeam Agent computers that run one of the supported database systems using application-aware processing..
 
@@ -97,6 +98,4 @@ Related Topics
 * [Oracle Processing Settings](agent_job_guest_oracle.md)
 * [PostgreSQL Processing Settings](agent_job_guest_postgresql.md)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

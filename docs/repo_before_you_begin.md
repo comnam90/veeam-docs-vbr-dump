@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repo_before_you_begin.html"
 last_updated: "11/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you configure a backup repository, check the following prerequisites.
 
@@ -73,6 +74,4 @@ To offload data to tapes, make sure that:
 * All of the backup data is stored on the appliance altogether (that is, all of the backup chains are stored on the appliance as a whole and not scattered across multiple devices) and only copies are stored on tapes.
 * These appliances emulate a tape system (VTL) as an access protocol for.
 
-Page updated 11/24/2025
 
-Page content applies to build 13.0.1.1071

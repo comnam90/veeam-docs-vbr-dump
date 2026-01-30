@@ -1,5 +1,7 @@
 ---
 title: "Support for Always On Availability Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_plugin_aon.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Support for Always On Availability Groups
 
-In this article
 
 Veeam Plug-In supports backup and restore of Microsoft SQL Server databases that operate as part of an Always On availability group.
 
@@ -44,6 +45,4 @@ To restore a database that operates as part of an Always On availability group, 
 3. Remove the original database from the secondary replica.
 4. Add the restored database to the availability group.
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

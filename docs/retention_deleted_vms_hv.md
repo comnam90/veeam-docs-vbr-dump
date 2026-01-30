@@ -1,5 +1,7 @@
 ---
 title: "Retention Policy for Deleted Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_deleted_vms_hv.html"
 last_updated: "5/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retention Policy for Deleted Items
 
-In this article
 
 In some situations, after you configure and run backup jobs in Veeam Backup & Replication, you may want to change something in the virtual infrastructure or in the backup strategy. For example, you may remove some machines from the virtual infrastructure or move them to another location. You may also exclude some machines from jobs that have already run for some time.
 
@@ -76,6 +77,4 @@ Related Topics
 
 [Creating Backup Jobs](backup_job_hv.md)
 
-Page updated 5/30/2025
 
-Page content applies to build 13.0.1.1071

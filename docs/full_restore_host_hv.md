@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Target Hosts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_host_hv.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Target Hosts
 
-In this article
 
 The Host step of the wizard is available if you have chosen to change the location and settings for the restored VM.
 
@@ -23,6 +24,4 @@ If you choose to register the restored VM on a host being a part of a Hyper-V fa
 
 ![Step 5. Select Target Hosts](images/hv_restore_fullvm_host.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

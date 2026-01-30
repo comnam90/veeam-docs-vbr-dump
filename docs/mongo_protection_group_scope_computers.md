@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_scope_computers.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Computers
 
-In this article
 
 At the Computers step of the wizard, select nodes that you want to protect and specify how Veeam Backup & Replication will connect to them.
 
@@ -44,6 +45,4 @@ For more information, see [Credentials Manager](credentials_manager.md).
 
 ![Step 4. Specify Computers](images/mongo_protection_group_computers.webp)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Data Path Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_data_path.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Data Path Settings
 
-In this article
 
 At this step of the wizard, you can select how Veeam Backup & Replication will transport backed up data — directly or through WAN accelerators. By default, during the backup copy job Veeam Backup & Replication transports data directly from the source backup repository to target backup repository. This type of transport is recommended if you plan to copy backup files over high-speed connections.
 
@@ -30,6 +31,4 @@ The source WAN accelerator requires a lot of CPU and RAM resources and does not 
 
 ![Step 7. Specify Data Path Settings](images/backup_copy_data_path_mongo.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

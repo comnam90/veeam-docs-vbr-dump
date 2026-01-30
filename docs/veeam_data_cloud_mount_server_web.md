@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_mount_server_web.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Mount Server Settings
 
-In this article
 
 At the Mount Server step of the wizard, specify settings for the mount server that you plan to use for restore operations.
 
@@ -37,6 +38,4 @@ For information on ports used by default, see [Ports](used_ports.md).
 
 [![Step 5. Specify Mount Server Settings](images/veeam_vault_mount_server_web.webp)](images/veeam_vault_mount_server_web.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

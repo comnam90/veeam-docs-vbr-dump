@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Define Restore Target Scope"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_new_role_restore_target_scope.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Define Restore Target Scope
 
-In this article
 
 At the Restore Target Scope step of the wizard, specify where users with this role can perform restores:
 
@@ -16,6 +17,4 @@ At the Restore Target Scope step of the wizard, specify where users with this ro
 
 ![Step 6. Define Restore Target Scope](images/add_new_role_restore_target_scope.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

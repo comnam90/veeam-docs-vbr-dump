@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Log In to Microsoft 365"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_data_compare_server.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Log In to Microsoft 365
 
-In this article
 
 This step is only available if you have selected the Modern Authentication (one-time password) option at the [previous step](vex_data_compare_credentials.md#auth_code) of the wizard.
 
@@ -31,6 +32,4 @@ Make sure to log in with the user account that has both the ApplicationImpersona
 
 [![Log In to Microsoft 365](images/compare_office.webp)](images/compare_office.webp "Log In to Microsoft 365")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

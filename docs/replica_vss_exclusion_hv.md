@@ -1,5 +1,7 @@
 ---
 title: "VM Guest OS File Exclusion"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_exclusion_hv.html"
 last_updated: "9/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Guest OS File Exclusion
 
-In this article
 
 These settings apply only to Microsoft Windows workloads.
 
@@ -43,6 +44,4 @@ To exclude guest OS files and folders from being replicated:
 
 ![VM Guest OS File Exclusion](images/hv_replica_job_vss_exclude.webp)
 
-Page updated 9/4/2025
 
-Page content applies to build 13.0.1.1071

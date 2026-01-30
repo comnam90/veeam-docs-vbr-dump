@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Discovery and Deployment Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_options.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Discovery and Deployment Options
 
-In this article
 
 At the Options step of the wizard, specify settings for protected computers discovery and Veeam components deployment.
 
@@ -37,6 +38,4 @@ To specify discovery and deployment options:
 
 ![Step 5. Specify Discovery and Deployment Options](images/mongo_protection_group_options.webp)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup & Replication Web UI Features"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/web_console_features.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup & Replication Web UI Features
 
-In this article
 
 The main features supported by Veeam Backup & Replication web UI include:
 
@@ -94,6 +95,4 @@ Audit
 * Authorization Events
 * Malware Events
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

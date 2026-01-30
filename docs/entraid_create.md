@@ -1,5 +1,7 @@
 ---
 title: "Creating New Microsoft Entra Application"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entraid_create.html"
 last_updated: "3/7/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating New Microsoft Entra Application
 
-In this article
 
 This step applies only if you have selected the Create a new account option at the [Account Type](entraid_access.md) step of the wizard.
 
@@ -35,6 +36,4 @@ Veeam Backup & Replication will create Microsoft Entra application in the tenant
 
 ![Creating New Microsoft Entra Application](images/entraid_new.webp)
 
-Page updated 3/7/2024
 
-Page content applies to build 13.0.1.1071

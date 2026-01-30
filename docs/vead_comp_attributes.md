@@ -1,5 +1,7 @@
 ---
 title: "Comparing Object Attributes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_comp_attributes.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Comparing Object Attributes
 
-In this article
 
 To compare Active Directory objects attributes, do the following:
 
@@ -25,6 +26,4 @@ To restore an attribute, select it and click Restore. Multiple selection is also
 
 [![Comparing Attributes](images/attr_compare_1.webp)](images/attr_compare_1.webp "Comparing Attributes")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

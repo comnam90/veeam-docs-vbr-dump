@@ -1,5 +1,7 @@
 ---
 title: "Managing Instant Recovery Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_instant_session.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Instant Recovery Session
 
-In this article
 
 After you finish steps of the Instant Recovery wizard, Veeam Explorer for Oracle starts an instant recovery session which shows the progress of the recovery process.
 
@@ -32,6 +33,4 @@ Also, in the Instant Recovery session view, you can do the following:
 
 [![Viewing Instant Recovery Session](images/instant_recovery_session_veor.webp)](images/instant_recovery_session_veor.webp "Viewing Instant Recovery Session")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

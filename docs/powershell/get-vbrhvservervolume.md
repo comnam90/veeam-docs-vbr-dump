@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRHvServerVolume"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrhvservervolume.html"
 last_updated: "10/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRHvServerVolume
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 
 [Get-VBRServer](get-vbrserver.md)
 
-Page updated 10/4/2024
 
-Page content applies to build 13.0.1.1071

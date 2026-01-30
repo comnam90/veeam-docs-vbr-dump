@@ -1,5 +1,7 @@
 ---
 title: "Overview"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_rman_overview.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Overview
 
-In this article
 
 Veeam Backup & Replication offers two options to protect Oracle databases:
 
@@ -36,6 +37,4 @@ For backup operations, you can use the built-in Oracle RMAN functionality. Veeam
 
 In case of malware activity or unplanned actions, you can perform restore operations based on the backup data transferred by Veeam Plug-In to the Veeam Backup & Replication backup repositories. Use the built-in Oracle RMAN functionality or Veeam Explorer for Oracle to restore databases. Restore processes run on the Oracle side. For details on restore operations with Veeam Plug-In, see [Data Restore](rman_data_restore.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

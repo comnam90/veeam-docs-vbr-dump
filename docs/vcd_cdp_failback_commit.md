@@ -1,5 +1,7 @@
 ---
 title: "Failback Commit"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_commit.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback Commit
 
-In this article
 
 Failback commit is one of the ways to finalize failback. When you commit failback, you confirm that the vApp to which you failed back (the production vApp) works as expected. After the commit operation, Veeam Backup & Replication resumes replication activities for the production vApp.
 
@@ -32,6 +33,4 @@ In This Section
 * [Committing Failback](vcd_cdp_failback_committing.md)
 * [Performing Failback Commit Retry](vcd_cdp_failback_commit_retry.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

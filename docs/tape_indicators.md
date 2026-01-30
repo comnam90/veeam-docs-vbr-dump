@@ -1,5 +1,7 @@
 ---
 title: "Tape Infrastructure Icons"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_indicators.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Infrastructure Icons
 
-In this article
 
 The user interface indicates states of the tape infrastructure components.
 
@@ -95,6 +96,4 @@ Files on Tapes
 | --- | --- |
 | ![Tape Infrastructure Icons](images/broken_file_on_tape.webp) | Partially archived file (some file elements are missing) |
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

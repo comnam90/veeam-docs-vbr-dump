@@ -1,5 +1,7 @@
 ---
 title: "VBRArchiveObjectStorageRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrarchiveobjectstoragerepository.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRArchiveObjectStorageRepository
 
-In this article
 
 Contains an archive object storage repository.
 
@@ -21,6 +22,4 @@ Related Commands
 
 [Get-VBRArchiveExtent](get-vbrarchiveextent.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

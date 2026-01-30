@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAmazonS3Server"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazons3server.html"
 last_updated: "9/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAmazonS3Server
 
-In this article
 
 Short Description
 
@@ -75,6 +76,4 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRAmazonAccount](get-vbramazonaccount.md)
 
-Page updated 9/2/2024
 
-Page content applies to build 13.0.1.1071

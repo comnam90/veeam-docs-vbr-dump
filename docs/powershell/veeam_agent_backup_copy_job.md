@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Backup Copy Job"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_backup_copy_job.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Backup Copy Job
 
-In this article
 
 You can use cmdlets in this topic to perform the following operations:
 
@@ -24,6 +25,4 @@ You can use cmdlets in this topic to perform the following operations:
 | [New-VBRBackupCopyJobStorageOptions](new-vbrbackupcopyjobstorageoptions.md) | Defines storage settings for Veeam Agent backup copy jobs. |
 | [Set-VBRBackupCopyJobStorageOptions](set-vbrbackupcopyjobstorageoptions.md) | Modifies storage optimization settings for Veeam Agent backup copy jobs. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

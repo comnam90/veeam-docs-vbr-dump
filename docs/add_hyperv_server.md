@@ -1,5 +1,7 @@
 ---
 title: "Adding Microsoft Hyper-V Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_hyperv_server.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Microsoft Hyper-V Servers
 
-In this article
 
 You must add to the backup infrastructure Microsoft Hyper-V hosts that you plan to use as source and target for backup, replication and other activities.
 
@@ -32,6 +33,4 @@ Related Topics
 * [Adding Microsoft Hyper‑V Servers Using Console](add_hyperv_server_console.md)
 * [Adding Microsoft Hyper‑V Servers Using Web UI](add_hyperv_server_web.md)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

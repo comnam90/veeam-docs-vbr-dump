@@ -1,5 +1,7 @@
 ---
 title: "Archive Extent Structure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archive_extent_structure.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Archive Extent Structure
 
-In this article
 
 When data is transferred to the archive extent, Veeam Backup & Replication creates and maintains the following structure of directories:
 
@@ -26,6 +27,4 @@ When data is transferred to the archive extent, Veeam Backup & Replication creat
 | Objects | Contains meta information and other auxiliary data. |  |
 | Storages | Contains a replicated version of archived backup files with metadata. |  |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

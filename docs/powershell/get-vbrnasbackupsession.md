@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASBackupSession (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasbackupsession.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASBackupSession (obsolete)
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ This command returns all backup sessions for the New backup session file backup 
 | --- |
 | Get-VBRNASBackupSession -Name "New backup session\*" |
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Object Version Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_advanced_version.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Object Version Settings
 
-In this article
 
 To configure how many versions to keep for protected objects, do the following:
 
@@ -27,6 +28,4 @@ To configure how many versions to keep for protected objects, do the following:
 
 ![Object Version Settings](images/os_backup_job_advanced_object_versions.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

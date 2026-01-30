@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRVmBiosUuid"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvmbiosuuid.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRVmBiosUuid
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This example shows how to collect MORef IDs of VMs stored in VMware vCenter name
 | --- |
 | Set-VBRVmBiosUuid -VCenterName "vcenter70" |
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

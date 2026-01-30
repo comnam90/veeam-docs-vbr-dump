@@ -1,5 +1,7 @@
 ---
 title: "Configuring Job Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_email_notifications.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Job Notification Settings
 
-In this article
 
 To configure job notification settings:
 
@@ -29,6 +30,4 @@ To configure job notification settings:
 
 ![Configuring Job Notification Settings](images/vm_backup_job_settings_notification.webp)
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

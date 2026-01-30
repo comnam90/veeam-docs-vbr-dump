@@ -1,5 +1,7 @@
 ---
 title: "Creating Active Full Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_active_full_create.html"
 last_updated: "5/30/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Active Full Backups
 
-In this article
 
 You can manually create an ad-hoc full backup — active full backup, and add it to the backup chain in the target backup repository. Active full backup can be helpful if you want to change backup copy job settings, for example, enable or disable encryption. Veeam Backup & Replication will apply new settings starting from this full backup.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Active Full Backup Copies](backup_copy_active_full.md)
 
-Page updated 5/30/2023
 
-Page content applies to build 13.0.1.1071

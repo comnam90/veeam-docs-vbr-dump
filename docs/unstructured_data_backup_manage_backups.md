@@ -1,5 +1,7 @@
 ---
 title: "Managing Unstructured Data Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_manage_backups.html"
 last_updated: "6/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Unstructured Data Backups
 
-In this article
 
 You can perform the following operations with backups:
 
@@ -21,6 +22,4 @@ You can perform the following operations with backups:
 * [Convert backups from non-root to root shared folders](convert_backups_nonroot_to_root.md).
 * [Update the source file share path for backup jobs with a secondary target](update_source_share_path.md).
 
-Page updated 6/24/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select VMs to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vms_vm.html"
 last_updated: "8/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select VMs to Back Up
 
-In this article
 
 At the Virtual Machines step of the wizard, select VMs and VM containers (hosts, clusters, folders, resource pools, VirtualApps, datastores or tags) that you want to back up:
 
@@ -27,6 +28,4 @@ The total size of objects added to the job is displayed in the Total size field.
 
 ![Step 3. Select VMs to Back Up](images/vm_backup_job_add_vms.webp)
 
-Page updated 8/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "General-Purpose Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy_general.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # General-Purpose Backup Proxies
 
-In this article
 
 A general-purpose backup proxy is a component that operates as a data mover. The backup proxy processes jobs and delivers backup and restore traffic.
 
@@ -44,6 +45,4 @@ Before you add a backup proxy to the inventory of the virtual infrastructure, ch
 * The role of a backup proxy for unstructured data backup and file to tape backup can be assigned to a Microsoft Windows or Linux server.
 * For Veeam Agent backup from storage system snapshots, the role of a backup proxy must be assigned to a Microsoft Windows server. For more information on the limitations, see the [Storage Snapshots Support](agents_storage_systems.md) section in  Veeam Agent Backup.
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

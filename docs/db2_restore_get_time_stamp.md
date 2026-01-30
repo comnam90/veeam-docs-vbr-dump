@@ -1,5 +1,7 @@
 ---
 title: "Get Backup Time Stamp"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_get_time_stamp.html"
 last_updated: "10/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get Backup Time Stamp
 
-In this article
 
 To restore IBM Db2 databases from a backup, you need a backup time stamp. IBM Db2 generates a time stamp for each backup in the yyyymmddhhmmss format. Using this timestamp, Veeam Plug-In restores the database from the backup file created at the certain time.
 
@@ -46,6 +47,4 @@ You can specify the following parameters for the --get-restore-points command:
 | --database | This parameter is optional. Defines the name of the backed-up database. Veeam Plug-In will return the list of backups only of the specified database. |
 | --json | This parameter is optional. If you use this parameter, Veeam Plug-In create a .JSON file in your current directory and collect the command output in this file. |
 
-Page updated 10/23/2024
 
-Page content applies to build 13.0.1.1071

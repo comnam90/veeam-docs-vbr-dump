@@ -1,5 +1,7 @@
 ---
 title: "Adding S3 Compatible Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/s3_compatible_adding.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding S3 Compatible Object Storage
 
-In this article
 
 This section describes how to add S3 compatible object storage to the backup infrastructure.
 
@@ -22,6 +23,4 @@ To add S3 compatible object storage, use the New Object Storage Repository wizar
 7. [Apply settings](compatible_apply.md).
 8. [Finish working with the wizard](compatible_finishing_wizard.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

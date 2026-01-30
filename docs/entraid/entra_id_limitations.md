@@ -1,13 +1,14 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_limitations.html"
-last_updated: "12/24/2025"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Considerations and Limitations
 
-In this article
 
 When you plan to deploy and configure Veeam Backup for Microsoft Entra ID, keep in mind the following limitations and considerations.
 
@@ -37,6 +38,4 @@ Log Backup and Restore
 * You cannot back up sign-in logs with Microsoft Entra ID free license. With this license, you can back up only audit logs.
 * To create a log backup, you must have the backup of the tenant whose logs you want to protect. The latest restore point of this backup must be created within 30 days before the log backup.
 
-Page updated 12/24/2025
 
-Page content applies to build 13.0.1.1071

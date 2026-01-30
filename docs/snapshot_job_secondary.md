@@ -1,5 +1,7 @@
 ---
 title: "Backup from Storage Snapshots with Snapshot Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_job_secondary.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup from Storage Snapshots with Snapshot Retention
 
-In this article
 
 You can configure a backup job to create regular backup files in the backup repository and, additionally, maintain a snapshot chain on the storage system. Veeam Backup & Replication lets you create long-term storage snapshots in the following destinations:
 
@@ -38,6 +39,4 @@ Related Topics
 * [Configuring Backup Jobs with Storage Snapshot Retention](snapshot_job_secondary_perform.md)
 * [General Limitations](storage_limitations_general.md)
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

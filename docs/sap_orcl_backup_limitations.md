@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_backup_limitations.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Before you start using Veeam Plug-In for SAP on Oracle, consider the following:
 
@@ -19,6 +20,4 @@ Before you start using Veeam Plug-In for SAP on Oracle, consider the following:
 * Backup of directories is not supported.
 * Backups created by Veeam Plug-Ins cannot be used as a source for file to tape or backup to tape jobs.
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

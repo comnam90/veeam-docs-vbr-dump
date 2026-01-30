@@ -1,5 +1,7 @@
 ---
 title: "Permanent Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_permanent_failover.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permanent Failover
 
-In this article
 
 Permanent failover is one of the ways to finalize failover. When you perform permanent failover, you permanently switch processes from the source workload to its replica. As a result of permanent failover, the VM replica stops acting as a replica and starts acting as the production workload.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Performing Permanent Failover](uni_cdp_performing_perm_failover.md)
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_repository.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Storage Settings
 
-In this article
 
 At the Storage step of the wizard, specify settings for the target backup repository:
 
@@ -17,6 +18,4 @@ At the Storage step of the wizard, specify settings for the target backup reposi
 
 ![Step 4. Specify Storage Settings](images/plugins_policy_mssql_storage.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

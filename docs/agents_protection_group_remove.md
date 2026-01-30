@@ -1,5 +1,7 @@
 ---
 title: "Removing Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_remove.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Protection Group
 
-In this article
 
 You can remove a protection group that you configured.
 
@@ -35,6 +36,4 @@ To remove a protection group:
 
 [![Remove Protection Group](images/protection_group_remove.webp)](images/protection_group_remove.webp "Remove Protection Group")
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

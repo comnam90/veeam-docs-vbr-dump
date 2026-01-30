@@ -1,5 +1,7 @@
 ---
 title: "ACL Handling Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_acl.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # ACL Handling Settings
 
-In this article
 
 To specify how the backup job will process permissions and attributes:
 
@@ -29,6 +30,4 @@ If you change the ACL handling settings for an existing file backup job, Veeam B
 
 ![ACL Handling Settings](images/file_share_backup_job_advanced_acl.webp "ACL Handling Settings")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

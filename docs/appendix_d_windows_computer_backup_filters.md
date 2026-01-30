@@ -1,5 +1,7 @@
 ---
 title: "Using Filters in Backup Jobs for Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_d_windows_computer_backup_filters.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Filters in Backup Jobs for Windows Computers
 
-In this article
 
 When you create or edit a Veeam Agent backup job for a Microsoft Windows computer in the Veeam Backup & Replication console, you can include and exclude files and folders from the backup job scope by using include and exclude masks as described in section [Specifying Folders to Back Up](agent_job_folders.md). This topic demonstrates several basic scenarios you may want to implement in your infrastructure.
 
@@ -191,6 +192,4 @@ You may have a set of files named according to a convention — for example, Fil
 
 As a result, the backup will contain all data from the backup scope except the text files whose names contain a digit ranging from 1 to 9 in the position of the wildcard character specified in the mask — for example, File\_01.txt, File\_07.txt and so on. Keep in mind that this filter will also exclude files whose names contain any other character in the wildcard position — for example, File\_0A.txt.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Automatic Job Retries"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_job_retry.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Automatic Job Retries
 
-In this article
 
 Veeam Backup & Replication automatically retries several operations that are performed within a backup copy job session.
 
@@ -47,6 +48,4 @@ At the beginning of every backup copy session, Veeam Backup & Replication access
 
 Veeam Backup & Replication may fail to access the virtual infrastructure for some reason: for example, in case the vCenter Server or the Hyper-V host is not responding. By default, Veeam Backup & Replication automatically retries access operations for 5 times with a 5 minute interval.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

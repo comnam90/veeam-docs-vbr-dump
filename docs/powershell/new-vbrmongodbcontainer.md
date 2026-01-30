@@ -1,5 +1,7 @@
 ---
 title: "New-VBRMongoDBContainer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmongodbcontainer.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRMongoDBContainer
 
-In this article
 
 Short Description
 
@@ -56,6 +57,4 @@ Related Commands
 * [Add-VBRProtectionGroup](add-vbrprotectiongroup.md)
 * [New-VBRMongoDBCustomCredentials](new-vbrmongodbcustomcredentials.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

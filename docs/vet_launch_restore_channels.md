@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_launch_restore_channels.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do the following:
 
@@ -40,6 +41,4 @@ To launch the Restore wizard, do the following:
 
 [![Restoring Channels and Tabs](images/tab_restore.webp)](images/tab_restore.webp "Restoring Channels and Tabs")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

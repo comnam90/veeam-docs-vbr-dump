@@ -1,5 +1,7 @@
 ---
 title: "Exporting Containers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_exporting_containers.html"
 last_updated: "8/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Containers
 
-In this article
 
 To export containers and their contents, do the following:
 
@@ -30,6 +31,4 @@ All nested containers (if any) will be preserved during the export.
 
 [![Specifying Target Path and Export Settings](images/vead_export_filtering.webp)](images/vead_export_filtering.webp "Specifying Target Path and Export Settings")
 
-Page updated 8/15/2024
 
-Page content applies to build 13.0.1.1071

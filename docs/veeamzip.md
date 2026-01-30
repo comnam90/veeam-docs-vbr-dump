@@ -1,5 +1,7 @@
 ---
 title: "VeeamZIP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeamzip.html"
 last_updated: "5/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VeeamZIP
 
-In this article
 
 With Veeam Backup & Replication, you can quickly perform backup of one or several VMs with VeeamZIP.
 
@@ -31,6 +32,4 @@ In This Section
 * [Creating VeeamZIP Backups](create_veeamzip.md)
 * [Managing and Restoring VeeamZIP Backups](veeamzip_manage.md)
 
-Page updated 5/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Oracle Archived Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_oracle_trans_logs.html"
 last_updated: "9/15/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Archived Log Settings
 
-In this article
 
 The Oracle tab applies to VMs that run Oracle.
 
@@ -47,6 +48,4 @@ Transaction logs will be deleted using Oracle Call Interface after the CDP polic
 
 ![Oracle Archived Log Settings](images/cdp_policy_oracle_transaction_logs.webp "Configure log handling for Oracle Server")
 
-Page updated 9/15/2023
 
-Page content applies to build 13.0.1.1071

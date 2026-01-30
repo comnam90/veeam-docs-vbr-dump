@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_launch_vm_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Wizard
 
-In this article
 
 To launch guest OS file restore using the web UI, do the following:
 
@@ -17,6 +18,4 @@ To launch guest OS file restore using the web UI, do the following:
 
 [![Launch Wizard - Web UI](images/guest_restore_launch_vm_web.webp)](images/guest_restore_launch_vm_web.webp "Launch Wizard - Web UI")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

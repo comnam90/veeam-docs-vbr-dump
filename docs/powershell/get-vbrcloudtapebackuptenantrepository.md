@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCloudTapeBackupTenantRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudtapebackuptenantrepository.html"
 last_updated: "4/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCloudTapeBackupTenantRepository
 
-In this article
 
 Short Description
 
@@ -92,6 +93,4 @@ Examples
 | --- | --- |
 | This command gets tenant cloud repositories by the tenant ID.  |  | | --- | | Get-VBRCloudTapeBackupTenantRepository -TenantId "4bff98a5-c49e-473c-8ce0-4203549b7560" | |
 
-Page updated 4/12/2024
 
-Page content applies to build 13.0.1.1071

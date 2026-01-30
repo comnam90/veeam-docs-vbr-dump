@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Review Default Installation Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_settings.html"
 last_updated: "10/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Review Default Installation Settings
 
-In this article
 
 At the Ready to Install step of the wizard, you can select to install Veeam Backup & Replication with default installation settings or specify custom installation settings.
 
@@ -36,7 +37,7 @@ The following Veeam services and components are also deployed when installing Ve
 | Veeam Component | Default Installation Path |
 | --- | --- |
 | AWS Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\AWS\ |
-| Google Cloud Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\GCP\ |
+| Veeam Plug-in for Google Cloud | %ProgramFiles%\Veeam\Plugins\GCP\ |
 | Veeam Kasten Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\Kasten\ |
 | Microsoft Azure Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\Microsoft Azure\ |
 | Veeam Plug-In for Nutanix AHV | %ProgramFiles%\Veeam\Plugins\Nutanix AHV\ |
@@ -59,6 +60,4 @@ For more information, see [Veeam Backup & Replication Services](services_and_com
 
 ![Step 6. Review Default Installation Settings](images/installation_ready_to_install.webp)
 
-Page updated 10/27/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Helper Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_linux.html"
 last_updated: "6/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Helper Appliances
 
-In this article
 
 Helper appliances are Linux-based VMs in Microsoft Azure registered by Veeam Backup & Replication. Helper appliances are required to restore Linux workloads to Microsoft Azure. During the restore process, Veeam Backup & Replication mounts disks of a backed-up workload to a helper appliance to prepare disks for restore.
 
@@ -21,6 +22,4 @@ In This Section
 * [Changing Credentials for Helper Appliances](restore_azure_credentials.md)
 * [Removing Helper Appliances](restore_azure_remove_appliance.md)
 
-Page updated 6/30/2025
 
-Page content applies to build 13.0.1.1071

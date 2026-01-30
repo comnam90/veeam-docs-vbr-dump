@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Recovery Media Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/image_create_options.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Recovery Media Options
 
-In this article
 
 At the Recovery Media step of the wizard, in the Available bootable media types list, specify on which type of media you want to create a recovery image. You can create the following types of recovery images:
 
@@ -21,6 +22,4 @@ At the Recovery Media step of the wizard, in the Available bootable media types 
 
 ![Step 2. Specify Recovery Media Options](images/ep_recoveryimage_options.webp)
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

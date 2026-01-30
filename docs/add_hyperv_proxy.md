@@ -1,5 +1,7 @@
 ---
 title: "Adding Off-Host Backup Proxies Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_hyperv_proxy.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Off-Host Backup Proxies Using Console
 
-In this article
 
 You can configure one or more off-host backup proxies in the backup infrastructure.
 
@@ -19,6 +20,4 @@ Before you add an off-host backup proxy using Veeam Backup & Replication console
 4. [Review components](hv_proxy_review.md).
 5. [Finish working with the wizard](hv_proxy_summary.md).
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

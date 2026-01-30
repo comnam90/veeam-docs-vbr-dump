@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRArchiveObjectStorageRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrarchiveobjectstoragerepository.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRArchiveObjectStorageRepository
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Examples
 | --- | --- |
 | This command gets all Amazon S3 Glacier archive repository instances added to the backup infrastructure.  |  | | --- | | Get-VBRArchiveObjectStorageRepository -Type AmazonS3Glacier | |
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSureBackupTestScript"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsurebackuptestscript.html"
 last_updated: "4/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSureBackupTestScript
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Examples
 | --- | --- |
 | This command defines a verification script for the DNS Server VM role. Veeam Backup & Replication will run the script to verify that the VM with the DNS Server role has up and running applications for this role.  |  | | --- | | New-VBRSureBackupTestScript -PredefinedApplication DNSServer | |
 
-Page updated 4/30/2024
 
-Page content applies to build 13.0.1.1071

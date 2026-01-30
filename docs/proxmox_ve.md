@@ -1,5 +1,7 @@
 ---
 title: "Proxmox Virtual Environment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/proxmox_ve.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Proxmox Virtual Environment
 
-In this article
 
 Veeam Backup & Replication with Veeam Plug-In for Proxmox Virtual Environment is a solution developed for protection and disaster recovery tasks for Proxmox Virtual Environment (Proxmox VE). You can use Veeam Backup & Replication with the installed plug-in to perform the following operations:
 
@@ -28,6 +29,4 @@ Veeam Backup & Replication with Veeam Plug-In for Proxmox Virtual Environment is
 
 For more information, see the [Veeam Plug-In for Proxmox VE User Guide](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3).
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

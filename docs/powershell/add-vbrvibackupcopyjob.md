@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRViBackupCopyJob (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrvibackupcopyjob.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRViBackupCopyJob (obsolete)
 
-In this article
 
 Short Description
 
@@ -105,6 +106,4 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

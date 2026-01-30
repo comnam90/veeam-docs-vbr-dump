@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Objects to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_objects_from_tape_objects.html"
 last_updated: "8/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Objects to Restore
 
-In this article
 
 At the Objects to Restore step, click Add and browse to the bucket, prefix or object that you want to restore. The selected item will be added to the list. If you choose an entire bucket, the list of objects to restore will be populated with prefixes and objects belonging to the bucket.
 
@@ -21,6 +22,4 @@ By default, Veeam Backup & Replication restores the latest version of objects av
 
 ![Step 2. Choose Objects to Restore](images/restore_objects_from_tape_point.webp)
 
-Page updated 8/23/2024
 
-Page content applies to build 13.0.1.1071

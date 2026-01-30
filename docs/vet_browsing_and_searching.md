@@ -1,5 +1,7 @@
 ---
 title: "Browsing, Searching and Viewing Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_browsing_and_searching.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Browsing, Searching and Viewing Items
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to view the contents of a backup file, view team properties, open posts and files, search for teams and for items in a backup file as well as customize criteria of your search.
 
@@ -108,6 +109,4 @@ To remove a filter, click the cross mark next to it. To remove all configured fi
 
 [![Browsing, Searching and Viewing Items](images/vet_search_advanced.webp)](images/vet_search_advanced.webp "Browsing, Searching and Viewing Items")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

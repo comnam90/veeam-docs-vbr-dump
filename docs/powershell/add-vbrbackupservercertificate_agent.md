@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRBackupServerCertificate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrbackupservercertificate_agent.html"
 last_updated: "9/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRBackupServerCertificate
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related Commands
 
 [Get-VBRBackupServerCertificate](get-vbrbackupservercertificate.md)
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

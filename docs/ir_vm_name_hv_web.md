@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Change Names and UUIDs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_vm_name_hv_web.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Change Names and UUIDs
 
-In this article
 
 The Name step of the wizard is available if you have selected Restore to a new location or with different settings at the [Restore Mode](ir_mode_hv_web.md) step.
 
@@ -18,6 +19,4 @@ To configure recovered VM settings:
 
 [![Configure Name - Web UI](images/ir_vm_name_hv_web.webp)](images/ir_vm_name_hv_web.webp "Configure Name - Web UI")
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

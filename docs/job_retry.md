@@ -1,5 +1,7 @@
 ---
 title: "Job Retry"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_retry.html"
 last_updated: "6/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Job Retry
 
-In this article
 
 You can instruct Veeam Backup & Replication to retry a job several times if the initial job run fails. By default, Veeam Backup & Replication automatically retries a failed job 3 times within one job session. You can specify a custom number of retries in the job settings.
 
@@ -50,6 +51,4 @@ During the first job session, Veeam Backup & Replication successfully processes 
 
 ![Job Retry](images/automatic_retry.webp)
 
-Page updated 6/17/2025
 
-Page content applies to build 13.0.1.1071

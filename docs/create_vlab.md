@@ -1,5 +1,7 @@
 ---
 title: "Creating Virtual Lab"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/create_vlab.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Virtual Lab
 
-In this article
 
 Before you create a new virtual lab, [check prerequisites](vlab_before_you_begin_vm.md). Then use the New Virtual Lab wizard to create a virtual lab.
 
@@ -22,6 +23,4 @@ Before you create a new virtual lab, [check prerequisites](vlab_before_you_begin
 9. [Specify static IP mapping rules](vlab_ip_vm.md).
 10. [Apply parameters](vlab_apply_vm.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRUniversalCDPViDestination"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbruniversalcdpvidestination.html"
 last_updated: "11/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRUniversalCDPViDestination
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Find-VBRViEntity](find-vbrvientity.md)
 * [Get-VBRServer](get-vbrserver.md)
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

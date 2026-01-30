@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_point_vm.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Restore Point
 
-In this article
 
 The UI of this step differs depending on the source for recovery.
 
@@ -27,6 +28,4 @@ To quickly find a long-term restore point, click a link that shows a date. In th
 
 ![Step 3. Select Restore Point](images/guest_files_restore_point_cdp.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

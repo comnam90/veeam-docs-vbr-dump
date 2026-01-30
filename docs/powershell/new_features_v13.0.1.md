@@ -1,5 +1,7 @@
 ---
 title: "New Features"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new_features_v13.0.1.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New Features
 
-In this article
 
 This section contains information on new features introduced in Veeam PowerShell v13.0.1.
 
@@ -59,6 +60,4 @@ In this version, you can run new cmdlets to create and modify the Microsoft SQL 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [New-VBRMSSQLOptions](new-vbrmssqloptions.md) | Creates the Microsoft SQL Server backup settings for application backup policies. | | [New-VBRMSSQLProcessingOptions](new-vbrmssqlprocessingoptions.md) | Creates the Microsoft SQL Server database processing settings for application backup policies. | | [Set-VBRMSSQLProcessingOptions](set-vbrmssqlprocessingoptions.md) | Modifies the Microsoft SQL Server database processing settings for application backup policies. | | [New-VBRMSSQLStorageOptions](new-vbrmssqlstorageoptions.md) | Creates the Microsoft SQL Server storage encryption settings for application backup policies. | | [New-VBRMSSQLCredentialsOptions](new-vbrmssqlcredentialsoptions.md) | Creates the Microsoft SQL Server credentials settings for application backup policies. | |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

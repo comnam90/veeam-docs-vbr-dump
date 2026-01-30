@@ -1,5 +1,7 @@
 ---
 title: "Log Shipping Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_log_shipping.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Log Shipping Servers
 
-In this article
 
 For every Oracle VM whose archived logs you want to back up, Veeam Backup & Replication defines how to ship logs to the backup repository. Archived logs can be transported in the following ways:
 
@@ -49,6 +50,4 @@ Log shipping servers are assigned per job session. When a new job session starts
 
 ![Log Shipping Servers](images/log_shipping_oracle_vm.webp)
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

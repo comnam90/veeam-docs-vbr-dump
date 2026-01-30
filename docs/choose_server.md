@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/choose_server.html"
 last_updated: "9/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Server
 
-In this article
 
 At the Server step of the wizard, choose a physical or virtual server to which the tape devices are connected and that you want to add as the tape server.
 
@@ -24,6 +25,4 @@ If the server is not added to Veeam Backup & Replication yet, you can click Add 
 
 ![Step 2. Choose Server](images/tapeproxy_choose_server.webp)
 
-Page updated 9/12/2025
 
-Page content applies to build 13.0.1.1071

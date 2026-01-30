@@ -1,5 +1,7 @@
 ---
 title: "How Restore Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_how_restore_works.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore Works
 
-In this article
 
 Restoring Collections
 
@@ -56,6 +57,4 @@ After the restore operation successfully completes, Veeam Explorer for MongoDB r
 
 [![Restoring Instance](images/vemdb_how_restore_works_instance.webp)](images/vemdb_how_restore_works_instance.webp "Restoring Instance")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

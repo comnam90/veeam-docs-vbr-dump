@@ -1,5 +1,7 @@
 ---
 title: "VM Copy for VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy.html"
 last_updated: "10/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Copy for VMware vSphere
 
-In this article
 
 With Veeam Backup & Replication, you can run a VM copy job to create an independent fully-functioning copy of a VM or VM container (host, cluster, folder, resource pool, VirtualApp, datastore or tag) on the selected storage. VM copying can be helpful if you want to move your datacenter, create a test lab and so on.
 
@@ -30,6 +31,4 @@ Related Topics
 
 [Copying VMs](copy_job.md)
 
-Page updated 10/14/2025
 
-Page content applies to build 13.0.1.1071

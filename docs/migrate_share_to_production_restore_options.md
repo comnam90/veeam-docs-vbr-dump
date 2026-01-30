@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migrate_share_to_production_restore_options.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Restore Options
 
-In this article
 
 At the Restore Options step of the wizard, specify overwrite options in case the file with the same name already exists in the destination:
 
@@ -16,6 +17,4 @@ At the Restore Options step of the wizard, specify overwrite options in case the
 
 ![Step 3. Specify Restore Options](images/migrate_share_to_production_restore_options.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

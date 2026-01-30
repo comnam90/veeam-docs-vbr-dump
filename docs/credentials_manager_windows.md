@@ -1,5 +1,7 @@
 ---
 title: "Standard Accounts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_windows.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Standard Accounts
 
-In this article
 
 By default, the Credentials Manager includes the following system standard credentials records:
 
@@ -22,6 +23,4 @@ You can create a new standard account in one of the following ways:
 * [Create a standard account using the Veeam Backup & Replication console](credentials_manager_windows_console.md)
 * [Create a standard account using the Veeam Backup & Replication web UI](credentials_manager_windows_web.md)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

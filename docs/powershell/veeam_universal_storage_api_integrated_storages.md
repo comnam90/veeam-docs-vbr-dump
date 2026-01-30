@@ -1,5 +1,7 @@
 ---
 title: "Universal Storage API Integrated Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_universal_storage_api_integrated_storages.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Universal Storage API Integrated Systems
 
-In this article
 
 Add Universal Storage API integrated systems to your Veeam Backup & Replication console and administrate them.
 
@@ -31,6 +32,4 @@ In This Section
 | [Get-StoragePluginSnapshot](get-storagepluginsnapshot.md) | Returns snapshots of Universal Storage API integrated systems. |
 | [Remove-StoragePluginSnapshot](remove-storagepluginsnapshot.md) | Removes snapshots of Universal Storage API integrated systems. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

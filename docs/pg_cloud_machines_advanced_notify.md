@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_cloud_machines_advanced_notify.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 You can specify email notification settings for the protection group. If you enable notification settings, Veeam Backup & Replication will send a daily email report with protection group statistics to a specified email address. The report contains cumulative statistics for rescan job sessions performed for the protection group within the last 24-hour period.
 
@@ -40,6 +41,4 @@ To configure a custom notification for the protection group, select Use custom n
 
 ![Notification Settings](images/pg_cloud_machines_advanced_notify.webp "Specify Notification Settings")
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

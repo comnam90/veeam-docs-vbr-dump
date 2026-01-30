@@ -1,5 +1,7 @@
 ---
 title: "Data Retrieval"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archive_tier_retrieval.html"
 last_updated: "10/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Retrieval
 
-In this article
 
 Data retrieval is the process of receiving temporary access to archived data, so that it can be restored.
 
@@ -76,6 +77,4 @@ Related Topics
 * [Retrieving Backup Files](retrieval_job_launch.md)
 * [Extending Data Availability](extending_expiration_time.md)
 
-Page updated 10/13/2025
 
-Page content applies to build 13.0.1.1071

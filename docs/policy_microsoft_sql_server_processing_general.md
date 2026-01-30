@@ -1,5 +1,7 @@
 ---
 title: "Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_processing_general.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Processing Settings
 
-In this article
 
 To specify processing settings for the object:
 
@@ -17,6 +18,4 @@ To specify processing settings for the object:
 
 ![Processing Settings](images/plugins_policy_mssql_log_processing_options.webp)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

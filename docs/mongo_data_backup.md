@@ -1,5 +1,7 @@
 ---
 title: "Data Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_data_backup.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup
 
-In this article
 
 MongoDB Backup is an integrated solution that uses Veeam Backup & Replication mechanisms to back up data to the Veeam backup repository. With the configured application backup policy, you can create full and incremental backups. For details, see [Backup Types](mongo_backup_types.md).
 
@@ -17,6 +18,4 @@ Veeam Backup & Replication provides several methods to authenticate against the 
 
 To store backups, you can add and configure backup repositories to your Veeam Backup & Replication infrastructure. For details on supported backup repositories, see [Veeam Backup Repositories](mongo_backup_repos.md).
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

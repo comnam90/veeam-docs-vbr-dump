@@ -1,5 +1,7 @@
 ---
 title: "Global Data Deduplication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_acceleration_sources.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Global Data Deduplication
 
-In this article
 
 The goal of WAN acceleration is to send less data over the network. To reduce the amount of data going over WAN, Veeam Backup & Replication uses the global data deduplication mechanism.
 
@@ -27,6 +28,4 @@ Veeam Backup & Replication uses three sources for data deduplication:
 | Note |
 | Consider the following:   * Veeam Backup & Replication deduplicates data blocks within one VM disk and in restore points for one VM only. Deduplication between VM disks and restore points of different VMs is performed indirectly, using the global cache. For more information, see [WAN Global Cache](wan_global_cache.md). * Global data deduplication and deduplication within the same VM disk are not used if both WAN accelerators in the pair (the source one and the target one) operate in the High bandwidth mode. |
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

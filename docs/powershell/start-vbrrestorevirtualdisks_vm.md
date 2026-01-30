@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRRestoreVirtualDisks"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrrestorevirtualdisks_vm.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRRestoreVirtualDisks
 
-In this article
 
 Short Description
 
@@ -27,7 +28,16 @@ Syntax
 
 Detailed Description
 
-This cmdlet restores disks from backups of physical or virtual machines and converts them to the VMDK, VHD or VHDX formats.
+This cmdlet restores disks from backups of physical or virtual machines and converts them to the VMDK, VHD or VHDX formats. You must select restore points from the following types of backups:
+
+* Volume-level backups created by Veeam Agent for Microsoft Windows volume-level backups.
+* Volume-level backups created by Veeam Agent for Linux volume-level backups.
+* Backups of VMware vSphere virtual machines created by Veeam Backup & Replication.
+* Backups of VMware Cloud Director virtual machines created by Veeam Backup & Replication.
+* Backups of Microsoft Hyper-V virtual machines created by Veeam Backup & Replication.
+* Backups of Amazon EC2 instances created by Veeam Backup for AWS.
+* Backups of Microsoft Azure virtual machines created by Veeam Backup for Microsoft Azure.
+* Backups of Google Compute Engine VM instances created by Google Cloud Plug-in for Veeam Backup & Replication.
 
 The cmdlet allows you to scan the disks that you want to restore with the antivirus.
 
@@ -42,7 +52,7 @@ Parameters
 
 | Parameter | Description | Type | Required | Position | Accept |
 | --- | --- | --- | --- | --- | --- |
-| RestorePoint | Specifies the restore point from which you want to restore the disks.  You must select restore points only from Veeam Agent for Microsoft Windows volume-level backups. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
+| RestorePoint | Specifies the restore point from which you want to restore the disks. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
 | Server | Specifies the Windows host to which the disks should be restored. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | 2 | False |
 | Path | Specifies the path to the folder on the target server. The cmdlet will register virtual disks in this folder. | String | True | 3 | False |
 | RestoreDiskType | Specifies the format to which you want to convert the resulting virtual disk:   * VHD * VHDX * VMDK | EVirtualDiskRestoreType | False | Named | False |
@@ -96,6 +106,4 @@ Related Commands
 * [Get-VBRFilesInRestorePoint](get-vbrfilesinrestorepoint.md)
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

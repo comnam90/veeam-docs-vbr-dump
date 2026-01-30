@@ -1,5 +1,7 @@
 ---
 title: "Media Sets Created with Parallel Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/parallel_processing_media_sets.html"
 last_updated: "11/16/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Media Sets Created with Parallel Processing
 
-In this article
 
 With parallel processing, a separate media set is opened per each drive used.
 
@@ -54,6 +55,4 @@ When the media pool is set to Daily at option, several media sets (per each driv
 
 ![Media Sets Created with Parallel Processing](images/media_sets_daily_at.webp)
 
-Page updated 11/16/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Publish Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_lpw.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Publish Wizard
 
-In this article
 
 To launch the Publish wizard, do the following:
 
@@ -20,6 +21,4 @@ Once completed, the database will be published with the same name as during the 
 
 [![Launching Publish Wizard](images/publish_pit_veor_1.webp)](images/publish_pit_veor_1.webp "Launching Publish Wizard")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

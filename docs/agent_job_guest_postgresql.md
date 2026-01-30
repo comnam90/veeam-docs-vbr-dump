@@ -1,5 +1,7 @@
 ---
 title: "PostgreSQL Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest_postgresql.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # PostgreSQL Processing Settings
 
-In this article
 
 You can specify how Veeam Agent for Linux must process the PostgreSQL database system.
 
@@ -104,6 +105,4 @@ For more information on how Veeam Agent for Linux processes the PostgreSQL datab
 
 ![PostgreSQL Processing Settings](images/agent_job_guest_postgresql.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

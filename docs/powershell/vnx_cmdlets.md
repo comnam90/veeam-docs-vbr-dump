@@ -1,5 +1,7 @@
 ---
 title: "Dell VNX Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vnx_cmdlets.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Dell VNX Storage Systems
 
-In this article
 
 Add Dell VNX storage systems to your Veeam Backup & Replication console and administrate them.
 
@@ -28,6 +29,4 @@ In This Section
 | [Remove-VNXSnapshot](remove-vnxsnapshot.md) | Removes Dell VNX storage snapshots. |
 | [New-VBRStorageProtocolPolicy](new-vbrstorageprotocolpolicy.md) | Creates protocol policies for storage systems. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Viewing Job and Job Session Reports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/session_report.html"
 last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Job and Job Session Reports
 
-In this article
 
 You can generate reports with details about all sessions of a job or a single session only.
 
@@ -64,6 +65,4 @@ In the Details section, you can see similar counters for each workload the job p
 | Note |
 | A synthetic full backup that is part of an incremental backup session is synthesized directly on the backup repository. Therefore, the Transferred and Backup size counters do not include data processed during the synthetic backup. They cover only data processed during the incremental run. Besides, the report header for such a backup does not have the (Full) mark as Veeam Backup & Replication considers it incremental. For more information, see the [Synthetic Full Backup](synthetic_full_backup.md) section. |
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

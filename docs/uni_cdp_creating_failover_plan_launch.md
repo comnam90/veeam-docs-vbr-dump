@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Failover Plan Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_creating_failover_plan_launch.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Failover Plan Wizard
 
-In this article
 
 To launch the New Failover Plan wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the New Failover Plan wizard, do one of the following:
 
 [![Click to zoom in](images/launch_failover_plan_vm.webp)](images/launch_failover_plan_vm.webp "Click to zoom in")
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

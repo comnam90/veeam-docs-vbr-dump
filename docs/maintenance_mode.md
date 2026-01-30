@@ -1,5 +1,7 @@
 ---
 title: "Switching Libraries to Maintenance Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/maintenance_mode.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switching Libraries to Maintenance Mode
 
-In this article
 
 There can be situations where you need to lock a tape library or a standalone tape drive from being used by Veeam Backup & Replication, for example, to provide maintenance services to them.
 
@@ -28,6 +29,4 @@ After you disable the maintenance mode, Veeam Backup & Replication automatically
 
 [![Switching Libraries to Maintenance Mode](images/maintenance_mode.webp)](images/maintenance_mode.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

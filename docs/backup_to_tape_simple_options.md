@@ -1,5 +1,7 @@
 ---
 title: "Options for Backup to Tape Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_simple_options.html"
 last_updated: "7/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Options for Backup to Tape Job
 
-In this article
 
 This step of the wizard is available if you selected a regular media pool at the Media Pool step of the wizard.
 
@@ -29,6 +30,4 @@ If you want to export tapes on specific days only (for example, every Saturday),
 
 ![Options for Backup to Tape Job](images/backup_to_tape_options.webp)
 
-Page updated 7/18/2025
 
-Page content applies to build 13.0.1.1071

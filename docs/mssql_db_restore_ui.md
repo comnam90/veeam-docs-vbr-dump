@@ -1,5 +1,7 @@
 ---
 title: "Restore with Restore Database Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_ui.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore with Restore Database Wizard
 
-In this article
 
 You can restore Microsoft SQL Server databases using the Restore Database wizard.
 
@@ -21,6 +22,4 @@ Before restoring a database, [check prerequisites](planning_and_preparation_mssq
 4. [Specify where and how to restore the database](mssql_db_restore_target.md).
 5. [Monitor the restore process](mssql_db_restore_process.md).
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

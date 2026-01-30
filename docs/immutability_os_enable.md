@@ -1,5 +1,7 @@
 ---
 title: "Enabling Immutability"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_os_enable.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling Immutability
 
-In this article
 
 To enable immutability, you must configure the necessary settings for your object storage repository.
 
@@ -64,6 +65,4 @@ To be able to use immutability with Google Cloud object storage repositories, yo
 
 1. Enable the immutability option when you add an object storage repository to the backup infrastructure at the Bucket step of the new [Object Storage Repository](new_object_storage.md) wizard.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

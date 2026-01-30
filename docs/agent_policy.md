@@ -1,5 +1,7 @@
 ---
 title: "Creating Veeam Agent Backup Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Veeam Agent Backup Policies
 
-In this article
 
 To create a Veeam Agent backup policy, you must create a backup job with the Managed by agent option selected in the job settings. In contrast to a Veeam Agent backup job managed by the backup server that is similar to a regular backup job for VM backup, a backup policy acts as a template that describes settings of individual Veeam Agent backup jobs running on protected computers.
 
@@ -29,6 +30,4 @@ Related Topics
 
 [Backup Policy](agents_policy.md)
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

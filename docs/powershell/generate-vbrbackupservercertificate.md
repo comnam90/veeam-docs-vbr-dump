@@ -1,5 +1,7 @@
 ---
 title: "Generate-VBRBackupServerCertificate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrbackupservercertificate.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Generate-VBRBackupServerCertificate
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command generates a TLS certificate in Veeam Backup & Replication.
 | --- |
 | Add-VBRBackupServerCertificate -Name "veeam-bk01.tech.local" |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

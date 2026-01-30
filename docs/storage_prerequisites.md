@@ -1,5 +1,7 @@
 ---
 title: "Universal Storage API Integrated Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_prerequisites.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Universal Storage API Integrated Systems
 
-In this article
 
 [For VMware, Veeam Agent integration] Before you add storage systems to Veeam Backup & Replication, check the following requirements:
 
@@ -31,6 +32,4 @@ In this article
 * [For Dell SC] Make sure that multiple proxy servers are not part of a single Server object.
 * Some storage system vendors provide the capability to configure additional integration options — such as limiting the scope of storage systems involved in the integration, specifying the primary node in active-active replication scenarios or others. After you add the storage system to the backup infrastructure, edit the configuration file and specify the options provided by the vendor. For the Linux-based backup server, edit the /etc/veeam/plugins/storages/<plugin-name> configuration file as described in [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md#config). For the Microsoft Windows-based backup server, edit the C:\ProgramData\Veeam\Storage\<Plugin Name> configuration file. For the information on the file format and the list of available options, see the vendor documentation of the plug-in.
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

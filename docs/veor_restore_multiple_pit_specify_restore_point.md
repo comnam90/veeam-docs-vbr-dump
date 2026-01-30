@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_multiple_pit_specify_restore_point.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Restore Point
 
-In this article
 
 At this step of the wizard, select a state as of which you want to restore your databases.
 
@@ -32,6 +33,4 @@ Note that the Restore to a specific point in time option is available only if ar
 
 [![Specifying Oracle Home User Password](images/veor_restore_oracle_home_password.webp)](images/veor_restore_oracle_home_password.webp "Specifying Oracle Home User Password")
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

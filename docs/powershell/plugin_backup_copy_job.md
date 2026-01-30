@@ -1,5 +1,7 @@
 ---
 title: "Plug-In Backup Copy Job"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/plugin_backup_copy_job.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Plug-In Backup Copy Job
 
-In this article
 
 You can use cmdlets in this topic to perform operations with the following types of Veeam Plug-in jobs:
 
@@ -30,6 +31,4 @@ You can use cmdlets in this topic to perform operations with the following types
 | [New-VBRPluginCopyJobStorageOptions](new-vbrplugincopyjobstorageoptions.md) | Defines storage optimization settings for plug-in backup copy jobs. |
 | [Set-VBRPluginCopyJobStorageOptions](set-vbrplugincopyjobstorageoptions.md) | Modifies storage optimization settings for plug-in backup copy jobs. |
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

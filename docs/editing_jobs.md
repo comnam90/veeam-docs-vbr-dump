@@ -1,5 +1,7 @@
 ---
 title: "Editing Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/editing_jobs.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Job Settings
 
-In this article
 
 After you add a backup job, you can edit its settings at any time. For example, you may want to change the scheduling settings or add VMs to the job.
 
@@ -37,6 +38,4 @@ If you disable the Keep certain full backups longer for archival purposes option
 
 ![Editing Job Settings](images/backup_job_edit_disable_gfs.webp)
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

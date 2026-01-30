@@ -1,5 +1,7 @@
 ---
 title: "Encrypting Backup Copy Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypting_backup_copy_jobs.html"
 last_updated: "12/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Encrypting Backup Copy Jobs
 
-In this article
 
 The encryption process for a backup job includes the following steps:
 
@@ -40,6 +41,4 @@ Note that Veeam Backup & Replication does not encrypt the previous backup chain 
 * If you change the password or start using KMS keys for the already encrypted job, during the next job session Veeam Backup & Replication will create a new incremental backup file. The created backup file and subsequent backup files in the backup chain will be encrypted with the new password or KMS key.
 * If you disable encryption, during the next job session Veeam Backup & Replication will automatically create a full backup file.
 
-Page updated 12/11/2024
 
-Page content applies to build 13.0.1.1071

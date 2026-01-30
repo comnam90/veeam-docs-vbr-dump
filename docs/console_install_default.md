@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Review Default Installation Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/console_install_default.html"
 last_updated: "7/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Review Default Installation Settings
 
-In this article
 
 At the Ready to Install step of the wizard, you can select to install the Veeam Backup & Replication console with default installation settings or specify custom installation settings.
 
@@ -22,6 +23,4 @@ The following table lists the default installation settings.
 
 ![Step 5. Review Default Installation Settings](images/console_installation_settings.webp)
 
-Page updated 7/21/2025
 
-Page content applies to build 13.0.1.1071

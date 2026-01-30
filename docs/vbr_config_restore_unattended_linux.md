@@ -1,5 +1,7 @@
 ---
 title: "Restoring Configuration Database using Answer File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_restore_unattended_linux.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Configuration Database using Answer File
 
-In this article
 
 Restore of the configuration database is helpful in the following situations:
 
@@ -23,6 +24,4 @@ Before you start the restore process, [check prerequisites](restore_vbr_linux_by
 3. [Start Restore Process](restore_vbr_linux_start.md).
 4. [Finalize Restore Process](restore_vbr_linux_finalize.md).
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

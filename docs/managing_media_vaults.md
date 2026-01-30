@@ -1,5 +1,7 @@
 ---
 title: "Modifying Vaults"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_media_vaults.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Modifying Vaults
 
-In this article
 
 To modify vault settings:
 
@@ -19,6 +20,4 @@ To modify vault settings:
 
 [![Modifying Vaults](images/modify_vault.webp)](images/modify_vault.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

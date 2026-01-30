@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudTenant"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudtenant.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudTenant
 
-In this article
 
 Contains cloud tenant.
 
@@ -62,6 +63,4 @@ Related Commands
 * [Reset-VBRCloudTenant](reset-vbrcloudtenant.md)
 * [Remove-VBRCloudTenant](remove-vbrcloudtenant.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

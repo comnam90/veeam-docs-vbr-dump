@@ -1,5 +1,7 @@
 ---
 title: "Publishing Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_publish_latest.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing Latest State
 
-In this article
 
 Veeam Explorer for Microsoft SQL Server allows you to republish an unpublished database. When republishing a database, it will be attached to the target SQL server as of the latest state.
 
@@ -33,6 +34,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Publishing Summary Window](images/vesql_publish_summary.webp)](images/vesql_publish_summary.webp "Reviewing Publishing Summary Window")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

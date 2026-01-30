@@ -1,5 +1,7 @@
 ---
 title: "Instant Disk Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Disk Recovery
 
-In this article
 
 With Instant Disk Recovery, you can immediately restore VM disks from a backup file and publish them in the initial format. If you want to register disks as First Class Disks (FCD), see [Instant First Class Disk (FCD) Recovery](instant_disk_recovery_fcd.md). For the list of all disk recovery methods and their brief descriptions, see [Disk Recovery](disk_restores.md).
 
@@ -37,6 +38,4 @@ Related Topics
 
 [Performing Instant First Class Disk (FCD) Recovery](performing_instant_fcd_recovery.md)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

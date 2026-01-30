@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASBackupFLRSession (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasbackupflrsession.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASBackupFLRSession (obsolete)
 
-In this article
 
 Short Description
 
@@ -50,6 +51,4 @@ This command gets all restore sessions that are started to recover backups creat
 | --- |
 | Get-VBRNASBackupFLRSession |
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

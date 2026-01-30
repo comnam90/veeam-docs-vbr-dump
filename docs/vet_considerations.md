@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_considerations.html"
 last_updated: "11/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and limitations of Veeam Explorer for Microsoft Teams.
 
@@ -42,6 +43,4 @@ Consider the following when planning to restore Microsoft Teams data:
 
 * Before restoring team data for a tenant organization with modern app-only authentication, make sure that a user account used for authorization has access to the root SharePoint site of this tenant organization.
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Review Migration Task File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_migrator_task_review.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Review Migration Task File
 
-In this article
 
 After you generate the migration task file, you must carefully review and edit it. The file contains several sections with mapping tasks. Each line contains source VM MORef-ID, source VM name and BIOS UUID field values. These field values are followed by target VM MORef-ID and target VM name.
 
@@ -28,6 +29,4 @@ When editing migration task file, consider the following:
 * If you need to comment out a line, use a tab followed by double slash character “//”.
 * If task file contains multiple mappings for the same VM, they will be commented out. Uncomment one of them if you want to apply it.
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

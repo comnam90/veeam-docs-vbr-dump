@@ -1,5 +1,7 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements
 
-In this article
 
 Make sure that servers that you plan to use as backup infrastructure components meet the listed system requirements.
 
@@ -24,7 +25,7 @@ Linux-Based Backup Server (Veeam Software Appliance)
 | --- | --- |
 | Hardware | CPU: x86-64 processor with 8 cores (vCPUs) minimum.  Memory: 16 GB RAM plus 500 MB RAM for each concurrent job.  Disk 1: 240 GB minimum. This disk hosts Veeam JeOS, Veeam Backup & Replication software, configuration database and instant recovery cache.  Recommended sizing depends on the number of protected workloads:   * 480 GB SSD for small environments (up to a few hundred workloads). * 960 GB SSD for medium-sized environments (up to a few thousand workloads). * Multi-TB SSD for large environments. Larger capacity increases the disk space available to instant recovery cache, allowing for running more machines for longer time.   Disk 2: 240 GB minimum. This disk hosts guest file system catalogs and backups, therefore recommended sizing depends on your backup storage needs. Any additional disks found in the system will be automatically joined with Disk 2 into the single Logical Volume Manager (LVM) spanned volume.  Note: Veeam Software Appliance only supports local disks and hardware RAID. RAID controller with battery or capacitor backed write cache is highly recommended for performance and reliability reasons.  Network: 1 Gbps or faster for on-site backup and replication, and 1 Mbps or faster for off-site backup and replication. High latency and reasonably unstable WAN links are supported.  Server Hardware: Veeam offers “Veeam Ready - Appliance” certification for hardware vendors. This certification ensures verified and certified compatibility, delivering an optimal customer experience through additional requirements for direct technical collaboration between vendors. Veeam also acknowledges that some customers may need to use existing hardware. As current compatibility guidance, we expect that most systems listed on the [RHEL Hardware Compatibility List (HCL)](https://catalog.redhat.com/en/search?searchType=Hardware&certified_RedHat_Platforms=Red+Hat+Enterprise+Linux&certified_architectures=x86_64) will be compatible with Veeam Software Appliance. |
 | Configuration Database | If you are planning to use a remote installation of the PostgreSQL on Linux, ensure that the following packages are installed on it:   * postgresql17.x86\_64 * postgresql17-contrib.x86\_64 * postgresql17-libs.x86\_64 * postgresql17-plperl.x86\_64 * postgresql17-server.x86\_64   All of them must be of version 17.6 or later. |
-| Software | * VMware vSphere ESXi 7.0 U2 (7.0.2) or later for OVA deployments. * Veeam Software Appliance ISO deployment to a virtual machine is supported for all hypervisors for which Veeam offers host-based VM backup functionality. For details, see [Supported Platforms, Applications and Workloads](platform_support.md). |
+| Software | * VMware vSphere ESXi 7.0 U2 (7.0.2) or later for OVA deployments. * Veeam Software Appliance ISO deployment to a virtual machine is supported for all hypervisors for which Veeam offers host-based VM backup functionality. For details, see [Supported Platforms, Applications and Workloads](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13). |
 
 Windows-Based Backup Server
 
@@ -262,12 +263,12 @@ The NAS must be able to present its capacity as NFS share (protocol versions 3.0
 * Any S3-compatible object storage (on-premises appliance, or cloud storage provider)
 * Dell Data Domain (DD OS version 7.9 to 8.6) with DDBoost license. Both Ethernet and Fibre Channel (FC) connectivity options are supported.
 * ExaGrid1 (firmware version 7.2.0 P08 or later)
-* Fujitsu ETERNUS CS8001 software version 5.2.0 or later
+* Fujitsu ETERNUS CS8001 (CS800 software version 5.2.0 or later)
 * HPE StoreOnce (firmware version 3.18.18 or later for Gen3, 4.2.3 or later for Gen4, 5.1.0 or later for Gen 5) with Catalyst license
 
 Both Ethernet and Fibre Channel (FC) connectivity are supported. Note that HPE StoreOnce Federated Catalyst is not supported.
 
-* Infinidat InfiniGuard1 version 5.2.0 and later
+* Infinidat InfiniGuard1 (InfiniGuard software 3.12 or later)
 * Quantum DXi1 (DXi software 5.2.0 or later)
 
 Supported Quantum DXi systems include DXiV5000, DXi4800, DXi4801, DXi9000, DXi9100, DXi9200, DXiT10.
@@ -371,6 +372,15 @@ Veeam Backup & Replication provides different types of snapshot integrations and
 
 Gateway Server
 
+Gateway servers can be deployed using the [Veeam JeOS](linux_infrastructure.md) image by selecting the Infrastructure Appliance option. This enables certificate-based authentication, secure industry-standard communication protocols, and automated updates that are centrally controlled using the [Veeam Backup & Replication server](backup_server.md).
+
+|  |
+| --- |
+| Note |
+| Component hardware requirements must be added to the [Veeam JeOS](system_requirements.md#jeos) system requirements to ensure that the assigned role has sufficient CPU and RAM resources. |
+
+In addition to this option, you can deploy and manage gateway servers on supported operating systems of your choice.
+
 | Specification | Requirement |
 | --- | --- |
 | Hardware | CPU: x86-64 processor with 2 cores (vCPUs) minimum.  Memory: 4 GB RAM, plus up to 4 GB RAM for each concurrently processed machine, file share or object storage. For more information, see [Limitation of Concurrent Tasks](limiting_tasks.md). For RAM allocation recommendations for unstructured data backup, see [Limitations and recommendations for unstructured data backup](#nas_recommendations).  Disk space: 750 MB for Microsoft Windows-based proxies; 400 MB for Linux-based proxies.  Note: If a unstructured data backup stored in an object storage does not have metadata in the cache repository, during the restore or health check operation this metadata will be downloaded to the gateway server. That can consume up to 80% of the gateway server disk space.  Network: 1 Gbps or faster for on-site backup and replication, and 1 Mbps or faster for off-site backup and replication. High latency and reasonably unstable WAN links are supported. |
@@ -437,7 +447,7 @@ The machine where you plan to install Veeam Plug-Ins must meet the following req
 | --- | --- |
 | AWS Plug-In for Veeam Backup & Replication version 13.10.0.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for AWS User Guide](https://helpcenter.veeam.com/docs/vbaws/guide/system_requirements.html?ver=10). |
 | Microsoft Azure Plug-In for Veeam Backup & Replication version 13.8.1.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for Microsoft Azure User Guide](https://helpcenter.veeam.com/docs/vbazure/guide/system_requirements.html?ver=8.1). |
-| Google Cloud Plug-In for Veeam Backup & Replication version 13.0.0.xxx and later1 | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for Google Cloud User Guide](https://helpcenter.veeam.com/docs/vbgc/guide/system_requirements.html?ver=7). |
+| Veeam Plug-in for Google Cloud version 13.0.0.xxx and later1 | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for Google Cloud User Guide](https://helpcenter.veeam.com/docs/vbgc/guide/system_requirements.html?ver=7). |
 | Veeam Plug-In for Nutanix AHV version 13.9.0.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Plug-In for Nutanix AHV User Guide](https://helpcenter.veeam.com/docs/vbahv/userguide/system_requirements.html?ver=9). |
 | oVirt KVM Plug-In for Veeam Backup & Replication version 13.7.0.xxx and later1 | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [oVirt KVM Plug-In for Veeam Backup & Replication User Guide](https://helpcenter.veeam.com/docs/vbrhv/userguide/system_requirements.html?ver=7). |
 | Veeam Plug-In for Proxmox Virtual Environment version 13.3.0.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Plug-In for Proxmox VE User Guide](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/system_requirements.html?ver=3). |
@@ -528,6 +538,4 @@ Unstructured Data Backup
 
 Each of the following components for unstructured data backup may consume up to 4 GB RAM per task (in case of deduplicating storage appliances, up to 8 GB RAM): [backup repository](#repo), [general-purpose backup proxy](#file_proxy), [cache repository](#cache_repo). Make sure you allocate enough memory resources for your installation. For all-in-one installations, where the server performs several roles, it must have enough memory resources for all components.
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

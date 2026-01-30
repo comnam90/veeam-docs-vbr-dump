@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRGoogleCloudBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgooglecloudbackup.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRGoogleCloudBackup
 
-In this article
 
 Short Description
 
@@ -51,6 +52,4 @@ This command returns all backups of Google Cloud VM instances that were created 
 | --- |
 | Get-VBRGoogleCloudBackup |
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

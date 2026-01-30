@@ -1,5 +1,7 @@
 ---
 title: "Updating Tape Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/updating_tapeserver.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating Tape Servers
 
-In this article
 
 Every time you launch Veeam Backup & Replication, it automatically checks if the components installed on managed servers are up to date. You will be unable to work with tape libraries that are connected to the outdated servers.
 
@@ -25,6 +26,4 @@ The Components Update section lists tape servers that have outdated components d
 
 ![Updating Tape Servers](images/tapeproxy_update.webp)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

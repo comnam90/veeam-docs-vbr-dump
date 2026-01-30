@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_aware_processing_hv.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing
 
-In this article
 
 By default, Veeam Backup & Replication does not process application logs and creates a crash-consistent backup of VMs with applications that use transaction logs for operations. You can create a transactionally consistent backup — in this case, Veeam Backup & Replication will process application logs. In case a disaster strikes, Veeam Backup & Replication will use backups of logs to perform recovery operations.
 
@@ -87,6 +88,4 @@ Related Topics
 * [PostgreSQL WAL Files Backup](postgresql_backup_hv.md)
 * [Guest Interaction Proxies](guest_interaction_proxy.md)
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

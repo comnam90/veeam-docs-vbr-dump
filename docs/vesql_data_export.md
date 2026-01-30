@@ -1,5 +1,7 @@
 ---
 title: "Data Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_data_export.html"
 last_updated: "8/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Export
 
-In this article
 
 This section contains information about the available export options for Microsoft SQL Server databases.
 
@@ -21,6 +22,4 @@ In This Section
 
 * [Exporting Database Schema and Data](vesql_schema_and_data_custom.md)
 
-Page updated 8/10/2025
 
-Page content applies to build 13.0.1.1071

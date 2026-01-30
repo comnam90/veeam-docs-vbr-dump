@@ -1,5 +1,7 @@
 ---
 title: "Viewing Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_properties.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Properties
 
-In this article
 
 You can view detailed information about protected computers. The detailed information provides the following data:
 
@@ -26,6 +27,4 @@ To view detailed information about a protected computer:
 
 [![Details of Protected Computer](images/plugins_protected_computer_details.webp)](images/plugins_protected_computer_details.webp "Details of Protected Computer")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

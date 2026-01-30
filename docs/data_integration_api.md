@@ -1,5 +1,7 @@
 ---
 title: "Disk Publishing (Data Integration API)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disk Publishing (Data Integration API)
 
-In this article
 
 Disk publishing allows you to save time by getting backup content of one or multiple disks instead of all disks from a backup. This technology gives read-only access to data and helps if you want to analyze data of your backup. For example, look for specific documents or usage patterns, or perform antivirus scan of backed-up data.
 
@@ -107,6 +108,4 @@ Mount Modes
 
 When you publish disks with Microsoft Windows file system from the UI, Veeam Backup & Replication automatically configures the iSCSI session and gives the target server (iSCSI initiator) access to the published disks. To manually start the iSCSI session from any server that has access to the iSCSI Target Server, you can use the [Publish-VBRBackupContent](https://helpcenter.veeam.com/docs/vbr/powershell/publish-vbrbackupcontent.html?ver=13) cmdlet.
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

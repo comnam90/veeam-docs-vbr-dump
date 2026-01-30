@@ -1,5 +1,7 @@
 ---
 title: "Restoring Databases (HDBSQL Commands)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/saphana_restore_scripts.html"
 last_updated: "11/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Databases (HDBSQL Commands)
 
-In this article
 
 You can use HDBSQL to restore SAP HANA databases from backups stored on Veeam backup repositories. For details on the HDBSQL restore, see [this SAP article](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/c4205f73bb571014ba46d209981bc1f5.html?locale=en-US&version=2.0.06).
 
@@ -25,6 +26,4 @@ To recover SAP HANA databases from backups stored on Veeam backup repositories, 
 | --- |
 | alter stop database <DATABASE\_NAME>; |
 
-Page updated 11/8/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Apply-VBRBackgroundRetention"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/apply-vbrbackgroundretention.html"
 last_updated: "7/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Apply-VBRBackgroundRetention
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command performs background retention for backups.
 | --- |
 | Apply-VBRBackgroundRetention |
 
-Page updated 7/25/2025
 
-Page content applies to build 13.0.1.1071

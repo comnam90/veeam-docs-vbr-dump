@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Edit Answer File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_edit.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Edit Answer File
 
-In this article
 
 After you generate the answer file, you can edit it:
 
@@ -56,6 +57,4 @@ Configuration File Parameters
 | PRIVATE\_KEYS | Specify this parameter if you want to update stored private keys during the configuration restore. If you do not specify this parameter, private keys will not be updated.  Supported values: user=privatekey;password;{hint}. | No |
 | HOSTS | Forces target server components upgrade if necessary. If you do not specify this parameter, all hosts will be upgraded.  Note: If you specify only several hosts out of all hosts in your backup infrastructure, only these hosts will be upgraded. Do not specify this parameter if you want to upgrade all hosts.  Supported values: DNS name\IP address. | No |
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

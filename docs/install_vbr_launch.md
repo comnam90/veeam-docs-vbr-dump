@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Start Setup Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_launch.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Start Setup Wizard
 
-In this article
 
 To start the setup wizard:
 
@@ -26,6 +27,4 @@ To extract the content of the ISO, you can also use the latest versions of utili
 
 ![Step 1. Start Setup Wizard](images/installation_splash.webp)
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

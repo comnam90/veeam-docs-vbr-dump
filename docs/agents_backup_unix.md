@@ -1,5 +1,7 @@
 ---
 title: "Backup and Restore of Unix Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_unix.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup and Restore of Unix Computers
 
-In this article
 
 |  |
 | --- |
@@ -21,6 +22,4 @@ In This Section
 * [Backup Job Scripts](agents_backup_unix_scripts.md)
 * [Backup of ACLs](agents_backup_unix_acl.md)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

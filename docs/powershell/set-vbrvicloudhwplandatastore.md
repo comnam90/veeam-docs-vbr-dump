@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRViCloudHWPlanDatastore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvicloudhwplandatastore.html"
 last_updated: "11/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRViCloudHWPlanDatastore
 
-In this article
 
 Short Description
 
@@ -85,6 +86,4 @@ Related Commands
 * [Set-VBRViCloudHardwarePlan](set-vbrvicloudhardwareplan.md)
 * [Find-VBRViStoragePolicy](find-vbrvistoragepolicy.md)
 
-Page updated 11/20/2024
 
-Page content applies to build 13.0.1.1071

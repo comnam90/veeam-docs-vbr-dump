@@ -1,5 +1,7 @@
 ---
 title: "Backup from Cisco HyperFlex Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cisco_integration.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup from Cisco HyperFlex Snapshots
 
-In this article
 
 Veeam Backup & Replication integrates with Cisco HyperFlex and allows you to improve performance of backup and replication of VMware vSphere VMs hosted on Cisco HyperFlex.
 
@@ -23,6 +24,4 @@ In This Section
 * [Configuring Backup Proxies](cisco_backup_proxy.md)
 * [Configuring Backup from Cisco HyperFlex Snapshots](cisco_backup_configure.md)
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

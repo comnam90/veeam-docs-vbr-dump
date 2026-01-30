@@ -1,5 +1,7 @@
 ---
 title: "Editing and Deleting Credentials Records"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_edit_delete.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing and Deleting Credentials Records
 
-In this article
 
 You can edit or delete existing cloud credentials records.
 
@@ -44,6 +45,4 @@ To delete a credentials record:
 1. From the main menu, select Credentials and Passwords > Cloud Credentials.
 2. Select the credentials record in the list and click Remove. You cannot delete a record that is already used for any component in the backup infrastructure.
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

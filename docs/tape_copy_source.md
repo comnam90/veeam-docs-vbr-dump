@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Source Tapes to Copy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_copy_source.html"
 last_updated: "3/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Source Tapes to Copy
 
-In this article
 
 At the Source Tapes step of the wizard, select source tapes to copy. The tape that you selected when launching the wizard is added to the list of tapes to copy by default. To add other tapes to copy, do the following:
 
@@ -22,6 +23,4 @@ To remove tapes from the copy list, select the tapes and click Remove.
 
 ![Step 2. Choose Source Tapes to Copy](images/tape_copy_source.webp)
 
-Page updated 3/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Dell Powerscale"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_powerscale_req.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Dell Powerscale
 
-In this article
 
 To provide proper integration of Veeam Backup & Replication with Dell PowerScale (formerly Isilon) to implement the NAS backup functionality, consider the following:
 
@@ -57,6 +58,4 @@ Consider that the PowerScale [BackupAdmin](https://www.dell.com/support/manuals/
 
 Dell PowerScale SmartConnect helps distribute the load among storage nodes: SmartConnect provides clients different IP addresses from different nodes to work with the storage cluster in parallel. If you do not use SmartConnect, Veeam Backup & Replication will use single IP address during backup, which can cause significant delays.
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

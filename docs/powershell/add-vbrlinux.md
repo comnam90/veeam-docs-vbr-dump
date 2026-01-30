@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRLinux"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrlinux.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRLinux
 
-In this article
 
 Short Description
 
@@ -126,6 +127,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Remove-VBRServer](remove-vbrserver.md)
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

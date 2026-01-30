@@ -1,5 +1,7 @@
 ---
 title: "How Restore Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_how_restore_works.html"
 last_updated: "9/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore Works
 
-In this article
 
 Restoring SAP HANA databases with Veeam Explorer for SAP HANA works in the following manner:
 
@@ -20,6 +21,4 @@ Restoring SAP HANA databases with Veeam Explorer for SAP HANA works in the follo
 
 [![How Restore Works](images/vehana_restore.webp)](images/vehana_restore.webp "How Restore Works")
 
-Page updated 9/26/2025
 
-Page content applies to build 13.0.1.1071

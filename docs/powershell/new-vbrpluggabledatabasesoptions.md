@@ -1,5 +1,7 @@
 ---
 title: "New-VBRPluggableDatabasesOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrpluggabledatabasesoptions.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRPluggableDatabasesOptions
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command creates the pluggable database settings for application backup poli
 | --- |
 | New-VBRPluggableDatabasesOptions -ProcessingMode All |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

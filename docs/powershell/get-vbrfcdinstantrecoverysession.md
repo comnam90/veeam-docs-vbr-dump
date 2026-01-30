@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRFCDInstantRecoverySession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrfcdinstantrecoverysession.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRFCDInstantRecoverySession
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ Examples
 | --- | --- |
 | This command returns the sessions that are running to perform FCD recovery with the following IDs: 49664A5F-9C55-4A1F-8E6A-1CD5705A684B and 42696B53-6FEC-4148-9354-AA9E4B52DED9.  |  | | --- | | Get-VBRFCDInstantRecoverySession -Id "49664A5F-9C55-4A1F-8E6A-1CD5705A684B", "42696B53-6FEC-4148-9354-AA9E4B52DED9" | |
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

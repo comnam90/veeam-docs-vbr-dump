@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRMailNotificationConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrmailnotificationconfiguration.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRMailNotificationConfiguration
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command returns global email notification settings. The cmdlet output will 
 | --- |
 | Get-VBRMailNotificationConfiguration  Enabled               : False  SmtpServer            :  Sender                :  Recipient             :  Subject               : [%JobResult%] %JobName% (%ObjectCount% objects) %Issues%  DailyReportsTime      : 3/8/2021 10:00:00 PM  Port                  : 25  Timeout               : 100000  SSLEnabled            : False  AuthEnabled           : False  Credentials           :  NotifyOnSuccess       : True  NotifyOnWarning       : True  NotifyOnFailure       : True  NotifyOnLastRetryOnly : True |
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

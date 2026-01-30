@@ -1,5 +1,7 @@
 ---
 title: "Configuring Plug-In on Linux or Unix"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_lin.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Plug-In on Linux or Unix
 
-In this article
 
 To configure Veeam Plug-In, you can use OracleRMANConfigTool. The tool configures Oracle RMAN integration settings and creates the Veeam Plug-In configuration file (veeam\_config.xml) which is stored in the /opt/veeam/VeeamPluginforOracleRMAN directory on the machine where Veeam Plug-In is installed.
 
@@ -207,6 +208,4 @@ To specify credentials that will be used to log in to the Veeam Backup & Replica
 | --- |
 | OracleRMANConfigTool --set-credentials 'serv04\joelle' 'password' |
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

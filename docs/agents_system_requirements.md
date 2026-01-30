@@ -1,5 +1,7 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements
 
-In this article
 
 Make sure that components in the Veeam Agent management infrastructure meet system requirements listed in the topics below.
 
@@ -25,6 +26,4 @@ In This Section
 * [Backup Target](agents_system_requirements_backup_target.md)
 * [Network](agents_system_requirements_network.md)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

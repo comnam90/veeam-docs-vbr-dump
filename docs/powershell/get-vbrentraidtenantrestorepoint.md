@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREntraIDTenantRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrentraidtenantrestorepoint.html"
 last_updated: "1/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREntraIDTenantRestorePoint
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Related Commands
 
 [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 
-Page updated 1/9/2025
 
-Page content applies to build 13.0.1.1071

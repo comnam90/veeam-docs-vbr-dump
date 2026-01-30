@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_pre_installed_finish.html"
 last_updated: "9/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, complete the protection group configuration process.
 
@@ -21,6 +22,4 @@ At the Summary step of the wizard, complete the protection group configuration p
 
 ![Step 6. Finish Working with Wizard](images/pg_pre_installed_finish.webp "Finish Working with Wizard")
 
-Page updated 9/16/2025
 
-Page content applies to build 13.0.1.1071

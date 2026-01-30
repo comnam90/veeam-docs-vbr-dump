@@ -1,5 +1,7 @@
 ---
 title: "Performing Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_full.html"
 last_updated: "10/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Full Backup
 
-In this article
 
 IBM Db2 supports the following types of full backups:
 
@@ -94,6 +95,4 @@ where <database\_name> is a name of the database you want to back up.
 
 To learn more about the INCLUDE LOGS option, see [this IBM article](https://www.ibm.com/docs/en/db2/11.5?topic=management-including-log-files-backup-image).
 
-Page updated 10/23/2024
 
-Page content applies to build 13.0.1.1071

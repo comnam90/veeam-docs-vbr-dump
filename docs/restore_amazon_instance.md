@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Instance Type and Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_instance.html"
 last_updated: "8/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Instance Type and Disks
 
-In this article
 
 At the Instance Type step of the wizard, you can configure the instance type for the restored workload, select which disks to restore and change their type. By default, Veeam Backup & Replication restores all disks as Amazon Elastic Block Store (EBS) volumes of the General Purpose SSD type. For information on types of EBS volumes, see the [AWS Documentation](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EBSVolumeTypes.html).
 
@@ -57,6 +58,4 @@ If you selected the Provisioned IOPS SSD (IO1) type, you can also specify the ma
 
 ![Step 5. Specify Instance Type and Disks](images/amazon_restore_disks_type.webp)
 
-Page updated 8/1/2025
 
-Page content applies to build 13.0.1.1071

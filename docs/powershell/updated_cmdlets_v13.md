@@ -1,5 +1,7 @@
 ---
 title: "Updated Cmdlets"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/updated_cmdlets_v13.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updated Cmdlets
 
-In this article
 
 This section contains information on cmdlets updated in Veeam PowerShell v13.
 
@@ -192,6 +193,4 @@ In this version, you can specify storage settings for Veeam Plug-Ins for Enterpr
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [Add-VBRApplicationBackupJob](add-vbrapplicationbackupjob.md) | New parameter: SAPHANAStorageOptions. | | [Set-VBRApplicationBackupJob](set-vbrapplicationbackupjob.md) | New parameter: SAPHANAStorageOptions. | | [Add-VBRMongoDBBackupJob](add-vbrmongodbbackupjob.md) | New parameter: OplogProcessingOptions. | | [Set-VBRMongoDBBackupJob](set-vbrmongodbbackupjob.md) | New parameter: OplogProcessingOptions. | | [New-VBRMongoDBDeployment](new-vbrmongodbdeployment.md) | New parameters: ClientCertificatePath, ClientCertificatePassword, CACertificatePath. | | [Get-VBRDiscoveredApplication](get-vbrdiscoveredapplication.md) | New parameters: MSSQLEntityType, MSSQL. | | [New-VBROracleRMANStorageOptions](new-vbroraclermanstorageoptions.md) | New parameters: KMSServer, EncryptionKey, EnableEncryption. | | [New-VBRPluginCopyJobStorageOptions](new-vbrplugincopyjobstorageoptions.md) | New parameters: KMSServer, EncryptionKey, EnableEncryption. | | [New-VBRSAPOnOracleStorageOptions](new-vbrsaponoraclestorageoptions.md) | New parameters: KMSServer, EncryptionKey, EnableEncryption. | | [Set-VBRPluginCopyJobStorageOptions](set-vbrplugincopyjobstorageoptions.md) | New parameters: KMSServer, EncryptionKey, EnableEncryption. | |
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

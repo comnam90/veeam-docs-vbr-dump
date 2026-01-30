@@ -1,5 +1,7 @@
 ---
 title: "Configuring Backint"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_backint.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Backint
 
-In this article
 
 To configure Veeam Backint to process SAP MaxDB commands, you must create the following files:
 
@@ -85,6 +86,4 @@ For example:
 | --- |
 | BACKINT /opt/sdb/MAXDB1/bin/backint PARAMETERFILE /sapdb/MAXDB1/data/wrk/MAXDB1/adapter\_config.par |
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

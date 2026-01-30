@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Isolated Networks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_isolated_network_hv.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Isolated Networks
 
-In this article
 
 The Isolated Networks step of the wizard is available if you have selected the advanced networking option at the [Networking](vlab_network_hv.md) step of the wizard.
 
@@ -55,6 +56,4 @@ For example, you have 3 VLANs in your production networks: VLAN 100, VLAN 200 an
 
 In the virtual lab, Veeam Backup & Replication will create 3 isolated networks and 3 virtual switches for these networks and connect VMs to necessary virtual switches. VMs in the virtual lab will function as they function in the production environment.
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

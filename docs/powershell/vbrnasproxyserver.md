@@ -1,5 +1,7 @@
 ---
 title: "VBRNASProxyServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnasproxyserver.html"
 last_updated: "6/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNASProxyServer
 
-In this article
 
 Contains settings of the file backup proxy server.
 
@@ -26,6 +27,4 @@ Related Commands
 * [Get-VBRNASProxyServer](get-vbrnasproxyserver.md)
 * [Set-VBRNASProxyServer](set-vbrnasproxyserver.md)
 
-Page updated 6/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "GFS File and Object Storage Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_file_to_tape.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # GFS File and Object Storage Backup to Tape
 
-In this article
 
 The GFS tape job allows you to archive files, folders and object storage data by the Grandfather-Father-Son (GFS) scheme. The GFS archive includes one yearly backup and several quarterly, monthly, weekly and daily backups.
 
@@ -57,6 +58,4 @@ Related Topics
 * [File Backup to Tape](file_to_tape_jobs.md)
 * [Object Storage Backup to Tape](object_to_tape_jobs.md)
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Application Item Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_launch.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Application Item Restore Wizard
 
-In this article
 
 To launch the wizard, do one of the following:
 
@@ -32,6 +33,4 @@ To launch the wizard, do one of the following:
 
 [![Restore Microsoft SharePoint Launch Wizard](images/application_item_restore_exchange.webp)](images/application_item_restore_exchange.webp "Restore Microsoft SharePoint Launch Wizard")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

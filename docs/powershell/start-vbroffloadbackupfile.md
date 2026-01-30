@@ -1,5 +1,7 @@
 ---
 title: "Start-VBROffloadBackupFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbroffloadbackupfile.html"
 last_updated: "3/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBROffloadBackupFile
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related Commands
 * [Get-VBRBackup](get-vbrbackup.md)
 * [Get-VBRBackupFile](get-vbrbackupfile.md)
 
-Page updated 3/11/2024
 
-Page content applies to build 13.0.1.1071

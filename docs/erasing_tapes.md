@@ -1,5 +1,7 @@
 ---
 title: "Erasing Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/erasing_tapes.html"
 last_updated: "6/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Erasing Tapes
 
-In this article
 
 If you do not need the contents stored on tape, you can erase tapes. Veeam Backup & Replication supports two options for erasing data:
 
@@ -27,6 +28,4 @@ To erase tapes:
 
 [![Erasing Tapes](images/erase_tape.webp)](images/erase_tape.webp)
 
-Page updated 6/26/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRReplica"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrreplica.html"
 last_updated: "7/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRReplica
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Examples
 | --- | --- |
 | This command looks for the local (non-cloud) replica objects created with the replication job.  |  | | --- | | Get-VBRReplica -Type Local -Name "DC Replica" | |
 
-Page updated 7/17/2024
 
-Page content applies to build 13.0.1.1071

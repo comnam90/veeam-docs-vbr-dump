@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Job for VM Replicas"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_job.html"
 last_updated: "8/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Job for VM Replicas
 
-In this article
 
 You can verify VM replicas with the SureBackup job only in the Full recoverability testing mode. The SureBackup job aggregates all settings and policies of a recovery verification task, such as application group and virtual lab to be used, VM replicas that must be verified in the virtual lab and so on. The SureBackup job can be run manually or scheduled to be performed automatically.
 
@@ -36,6 +37,4 @@ Related Topis
 
 [SureBackup Job for VM Replicas Processing](surereplica_job_processing.md)
 
-Page updated 8/20/2024
 
-Page content applies to build 13.0.1.1071

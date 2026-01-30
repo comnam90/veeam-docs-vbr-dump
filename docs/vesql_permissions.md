@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_permissions.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 The following table lists the user account permissions necessary to launch Veeam Explorer for Microsoft SQL Server and recover Microsoft SQL Server data.
 
@@ -18,6 +19,4 @@ The following table lists the user account permissions necessary to launch Veeam
 | Staging Microsoft SQL Server configuration | The account used to connect to the staging server must be granted the sysadmin role on the Microsoft SQL Server machine.  If you want to use a local Microsoft SQL Server as a staging server and Veeam Explorer for Microsoft SQL Server runs under an account that does not belong to the local Administrators group, you must specify the current account for connection to the staging server, or you will get an impersonation error.  For more information on how to configure and use the staging Microsoft SQL Server, see [Configuring Staging SQL Server](vesql_configure_staging.md). |
 | Restore from SQL plug-in backups | To be able to connect to a Microsoft SQL Server instance, the account used for starting Microsoft SQL Server backup and restore processes must meet the following conditions:   * The account must be added to the following roles: public, sysadmin. * If the account is not a member of the Administrators group, you must enable the Create Global Objects security policy for the account. For detailed instructions on how to manage the Create Global Objects security policy, see [this Microsoft article](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/create-global-objects). |
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

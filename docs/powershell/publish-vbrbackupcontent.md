@@ -1,5 +1,7 @@
 ---
 title: "Publish-VBRBackupContent"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/publish-vbrbackupcontent.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publish-VBRBackupContent
 
-In this article
 
 Short Description
 
@@ -94,6 +95,4 @@ Related Commands
 * [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 * [Add-VBRCredentials](add-vbrcredentials.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

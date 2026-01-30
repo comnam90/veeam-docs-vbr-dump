@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_options_files.html"
 last_updated: "12/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Restore Options
 
-In this article
 
 At this step of the wizard, specify data restore options and start the restore operation:
 
@@ -18,6 +19,4 @@ At this step of the wizard, specify data restore options and start the restore o
 
 [![Specify Restore Options](images/vet_restore_options_files.webp)](images/vet_restore_options_files.webp "Specify Restore Options")
 
-Page updated 12/18/2024
 
-Page content applies to build 13.0.1.1071

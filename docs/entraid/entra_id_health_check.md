@@ -1,5 +1,7 @@
 ---
 title: "Performing Health Check for Log Backups"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_health_check.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Health Check for Log Backups
 
-In this article
 
 This section applies to log backups only.
 
@@ -44,6 +45,4 @@ To run the backup repair:
 
 [![Run Repair](images/entra_id_backup_repair.webp)](images/entra_id_backup_repair.webp "Run Repair")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

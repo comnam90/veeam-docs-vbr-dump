@@ -1,5 +1,7 @@
 ---
 title: "Restoring Cloud Director vApps"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Cloud Director vApps
 
-In this article
 
 To restore a vApp to VMware Cloud Director, use the vCloud Full vApp Restore wizard.
 
@@ -23,6 +24,4 @@ To restore a vApp to VMware Cloud Director, use the vCloud Full vApp Restore wiz
 10. [Specify a restore reason](vcloud_director_vapp_restore_reason.md).
 11. [Verify recovery settings and finish working with the wizard](vcloud_director_vapp_restore_verify.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

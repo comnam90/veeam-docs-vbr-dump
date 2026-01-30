@@ -1,5 +1,7 @@
 ---
 title: "Licensing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/licensing.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Licensing
 
-In this article
 
 To work with Veeam Backup & Replication, you must obtain a license key and install it on the backup server. If you do not install the license key, the product will operate in the Veeam Backup & Replication Community (free) Edition. For more information, see [Veeam Backup & Replication Community Edition](https://www.veeam.com/virtual-machine-backup-solution-free.html).
 
@@ -125,6 +126,4 @@ In This Section
 * [Updating License](license_update.md)
 * [Automatic License Usage Reporting](automatic_usage_logging.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

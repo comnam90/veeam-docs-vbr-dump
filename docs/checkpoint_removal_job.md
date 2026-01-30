@@ -1,5 +1,7 @@
 ---
 title: "Background Checkpoint Removal Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/checkpoint_removal_job.html"
 last_updated: "12/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Background Checkpoint Removal Job
 
-In this article
 
 To improve the performance of backup jobs that target object storage repositories, Veeam Backup & Replication runs a background checkpoint removal job. This job runs continuously as a background activity and removes checkpoints from backups located in object storage repositories.
 
@@ -52,6 +53,4 @@ Email Reports
 
 Veeam Backup & Replication generates an email report that includes errors from all completed checkpoint removal jobs. The report is sent once a day according to [Global Email Notification Settings](general_email_notifications.md).
 
-Page updated 12/2/2024
 
-Page content applies to build 13.0.1.1071

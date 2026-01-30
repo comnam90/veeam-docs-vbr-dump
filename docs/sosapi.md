@@ -1,5 +1,7 @@
 ---
 title: "Working with Veeam Smart Object Storage API (SOSAPI)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sosapi.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Working with Veeam Smart Object Storage API (SOSAPI)
 
-In this article
 
 Veeam Backup & Replication offers Veeam Smart Object Storage application programming interface (SOSAPI) functionality to interact with S3 compatible object storage repositories. Object storage vendors can leverage SOSAPI to decrease impact on the production environment, significantly improve recovery point objective (RPO) and optimize the interaction between object storage and Veeam Backup & Replication. SOSAPI relies on Amazon S3 API protocol, uses its authorization mechanisms and existing S3 API calls. This approach does not require to set up a complex network infrastructure - there is no need to create additional ports, firewall rules or install any plug-ins. Instead, vendors need to handle the API requests to interact with [S3 compatible](s3_compatible_adding.md) and [S3 compatible with Data Archiving](compatible_glacier_add.md) object storage repositories.
 
@@ -55,6 +56,4 @@ You can use SOSAPI functionality for advanced interaction with backups created b
 | Note |
 | This option works only if a tenant connects to the object storage through a gateway server. For more information, see the [Backup to Object Storage](https://helpcenter.veeam.com/docs/vbr/cloud/cc_object_storage.html?ver=13) section in the Veeam Cloud Connect Guide. |
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

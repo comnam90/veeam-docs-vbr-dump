@@ -1,5 +1,7 @@
 ---
 title: "Configuring Analytics View"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configure_analytics.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Analytics View
 
-In this article
 
 |  |
 | --- |
@@ -55,6 +56,4 @@ Reconnecting to Veeam ONE Instance
 
 In case of any problems with the connection to the Veeam ONE instance, you can reconnect to it. To do that, click Reconnect in the ribbon.
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

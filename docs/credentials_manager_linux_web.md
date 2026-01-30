@@ -1,5 +1,7 @@
 ---
 title: "Creating SSH Credentials Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_linux_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating SSH Credentials Using Web UI
 
-In this article
 
 To add a new credentials record with a user name and password for a Linux server, do the following in the Veeam Backup & Replication web UI:
 
@@ -38,6 +39,4 @@ Veeam Backup & Replication will first try to use the sudo command. If the attemp
 
 [![Creating SSH Credentials Using Web UI](images/settings_credentials_ssh.webp)](images/settings_credentials_ssh.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Connecting Tape Devices"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/connecting_tape_devices.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Connecting Tape Devices
 
-In this article
 
 To deploy a tape device, you must perform the following steps:
 
@@ -58,6 +59,4 @@ Reconnecting Tape Devices to Another Tape Server
 
 You can reconnect your tape devices to another tape server. For example, you can reconnect the tape devices from the backup server acting as a tape server to a dedicated tape server. To do this, choose a tape server and perform steps for connecting tape devices above. When you add the new tape server to Veeam Backup & Replication, Veeam Backup & Replication will recognize the tape devices and all tape device settings.
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

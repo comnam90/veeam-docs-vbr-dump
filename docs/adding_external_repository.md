@@ -1,5 +1,7 @@
 ---
 title: "Adding External Amazon S3 Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_external_repository.html"
 last_updated: "10/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding External Amazon S3 Storage
 
-In this article
 
 To add an Amazon S3 storage as an external repository, do the following:
 
@@ -19,6 +20,4 @@ To add an Amazon S3 storage as an external repository, do the following:
 6. [Wait for the repository to be added to the infrastructure](external_repository_apply.md).
 7. [Finish working with the wizard](external_repository_finish.md).
 
-Page updated 10/24/2024
 
-Page content applies to build 13.0.1.1071

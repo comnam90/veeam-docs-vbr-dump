@@ -1,5 +1,7 @@
 ---
 title: "Permanent Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_perm_failover.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permanent Failover
 
-In this article
 
 Permanent failover is one of the ways to finalize failover. When you perform permanent failover, you permanently switch processes from the source vApp to its replica. As a result, the replica stops acting as a replica and starts acting as the production vApp.
 
@@ -22,6 +23,4 @@ In This Section
 * [Performing Permanent Failover](vcd_cdp_perform_perm_failover.md)
 * [Performing Permanent Failover Retry](vcd_cdp_perm_failover_restry.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

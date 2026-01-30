@@ -1,5 +1,7 @@
 ---
 title: "New-VBRDiscoveredComputerConfigurationOption"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrdiscoveredcomputerconfigurationoption.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRDiscoveredComputerConfigurationOption
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Get-VBRDiscoveredComputerConfigurationPolicy](get-vbrdiscoveredcomputerconfigurationpolicy.md)
 * [Remove-VBRDiscoveredComputerConfigurationPolicy](remove-vbrdiscoveredcomputerconfigurationpolicy.md)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

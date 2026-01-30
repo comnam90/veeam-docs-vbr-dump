@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Generate Answer File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_generate.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Generate Answer File
 
-In this article
 
 To generate the answer file, do the following:
 
@@ -22,6 +23,4 @@ To generate the answer file, do the following:
 
 After you execute the command, the answer file will be generated with default preferences by the path you specified. You can manually edit the file to specify the necessary parameters.
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

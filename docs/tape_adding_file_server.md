@@ -1,5 +1,7 @@
 ---
 title: "Adding File Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_adding_file_server.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding File Server
 
-In this article
 
 Before you add a Windows- or Linux-managed server as a file server to the inventory of the virtual infrastructure, consider the following:
 
@@ -27,6 +28,4 @@ To add a managed Windows or Linux server:
 5. [Apply file server settings](tape_new_file_server_wizard_apply.md).
 6. [Finish working with the wizard](tape_new_file_server_wizard_summary.md).
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

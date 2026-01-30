@@ -1,5 +1,7 @@
 ---
 title: "Configuring SNMP Settings for Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_snmp_settings.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring SNMP Settings for Jobs
 
-In this article
 
 To receive SNMP traps with results of a specific job:
 
@@ -17,6 +18,4 @@ To receive SNMP traps with results of a specific job:
 
 ![Configuring SNMP Settings for Jobs](images/vm_backup_job_settings_notification.webp)
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

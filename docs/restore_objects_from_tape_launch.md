@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore from Tape Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_objects_from_tape_launch.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore from Tape Wizard
 
-In this article
 
 You can use the Restore from Tape wizard in one of the two following modes:
 
@@ -39,6 +40,4 @@ To launch the Restore from Tape wizard for restoring entire object storage bucke
 
 [![Step 1. Launch Restore from Tape Wizard](images/restore_objects_from_tape_launch_bucket.webp)](images/restore_objects_from_tape_launch_bucket.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

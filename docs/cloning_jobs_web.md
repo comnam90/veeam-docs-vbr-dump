@@ -1,5 +1,7 @@
 ---
 title: "Cloning Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloning_jobs_web.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cloning Jobs
 
-In this article
 
 You can create new jobs using job cloning. Job cloning allows you to create an exact copy of any job with the same job settings. Configuration information of the created job copy is written to the configuration database that stores information about the original job.
 
@@ -28,6 +29,4 @@ To clone a job:
 
 [![Click to zoom in](images/cloning_jobs_web.webp)](images/cloning_jobs_web.webp "Click to zoom in")
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

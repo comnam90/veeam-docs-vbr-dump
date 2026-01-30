@@ -1,5 +1,7 @@
 ---
 title: "Migrating Veeam Backup & Replication to Another Windows-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_migrate.html"
 last_updated: "12/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating Veeam Backup & Replication to Another Windows-Based Backup Server
 
-In this article
 
 If you need to migrate Veeam Backup & Replication to another backup server, you can back up its configuration database, install Veeam Backup & Replication on the target server and restore the configuration data from the backup. As a result, you will have a new Veeam Backup & Replication server with all settings, jobs and backup infrastructure elements from the old server.
 
@@ -100,6 +101,4 @@ Related Topics
 
 [Creating Configuration Backups](export_vbr_config.md)
 
-Page updated 12/19/2025
 
-Page content applies to build 13.0.1.1071

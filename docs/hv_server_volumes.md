@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Settings for Connected Volumes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_volumes.html"
 last_updated: "8/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Settings for Connected Volumes
 
-In this article
 
 After you add a Microsoft Hyper-V host to the backup infrastructure, you can configure the following settings for the host:
 
@@ -79,6 +80,4 @@ By default, the failover option is enabled. To disable failover to a software VS
 
 ![Step 7. Specify Settings for Connected Volumes](images/add_server_hv_failover.webp)
 
-Page updated 8/9/2025
 
-Page content applies to build 13.0.1.1071

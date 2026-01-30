@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover_point.html"
 last_updated: "9/27/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Restore Points
 
-In this article
 
 At the vApp step of the wizard select to which state of replicas you want to fail over:
 
@@ -24,6 +25,4 @@ Use the right and left arrows on the keyboard to select the required restore poi
 
 ![Step 3. Select Restore Points](images/vcd_cdp_failover_point.webp)
 
-Page updated 9/27/2023
 
-Page content applies to build 13.0.1.1071

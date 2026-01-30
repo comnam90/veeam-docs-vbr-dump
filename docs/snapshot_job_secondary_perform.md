@@ -1,5 +1,7 @@
 ---
 title: "Configuring Backup Jobs with Storage Snapshot Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_job_secondary_perform.html"
 last_updated: "10/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Backup Jobs with Storage Snapshot Retention
 
-In this article
 
 You can configure a backup job to create backup files and a chain of long-term storage snapshots on the primary storage array, on the secondary storage arrays or both.
 
@@ -78,6 +79,4 @@ Related Topics
 
 [Backup from Storage Snapshots with Snapshot Retention](snapshot_job_secondary.md)
 
-Page updated 10/13/2025
 
-Page content applies to build 13.0.1.1071

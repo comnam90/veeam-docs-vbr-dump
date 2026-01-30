@@ -1,5 +1,7 @@
 ---
 title: "Storage System Snapshot Integration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_integration.html"
 last_updated: "4/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage System Snapshot Integration
 
-In this article
 
 Storage systems are designed to store and maintain data, and also protect data by means of snapshots. Veeam Backup & Replication allows using these snapshots to create backups which accelerates the backup process and minimizes the impact on the production site.
 
@@ -39,6 +40,4 @@ Related Topics
 * [Universal Storage API Integrated Systems](universal_storage_integration_api.md)
 * [On-Demand Sandbox for Storage Snapshots](sandbox_storages_ebook.md)
 
-Page updated 4/16/2025
 
-Page content applies to build 13.0.1.1071

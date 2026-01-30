@@ -1,5 +1,7 @@
 ---
 title: "Get-NimbleHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-nimblehost.html"
 last_updated: "4/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-NimbleHost
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ Examples
 | --- | --- |
 | This command returns an HPE Nimble storage by name.  |  | | --- | | Get-NimbleHost -Name "HPE Nimble-FC" | |
 
-Page updated 4/19/2024
 
-Page content applies to build 13.0.1.1071

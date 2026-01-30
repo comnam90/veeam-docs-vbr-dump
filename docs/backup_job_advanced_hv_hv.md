@@ -1,5 +1,7 @@
 ---
 title: "Hyper-V Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_hv_hv.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Hyper-V Settings
 
-In this article
 
 To specify Hyper-V settings for the backup job:
 
@@ -49,6 +50,4 @@ For example, you add to the job 2 VMs that are registered on the same host. VM1 
 
 ![Hyper-V Settings](images/hv_backup_job_settings_hv.webp)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

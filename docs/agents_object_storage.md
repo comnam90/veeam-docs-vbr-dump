@@ -1,5 +1,7 @@
 ---
 title: "Backup to Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup to Object Storage
 
-In this article
 
 If you want to store your data in a cloud-based or on-premises object storage, you can create Veeam Agent backups in an object storage repository.
 
@@ -109,6 +110,4 @@ To learn more about immutability, see [Immutability for Object Storage Repositor
 
 * Veeam Agents do not support direct backup under the general-purpose V1 storage account type.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRViCloudHardwarePlan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrvicloudhardwareplan.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRViCloudHardwarePlan
 
-In this article
 
 Contains VMware hardware plan.
 
@@ -34,6 +35,4 @@ Related Commands
 * [Get-VBRCloudHardwarePlan](get-vbrcloudhardwareplan.md)
 * [Remove-VBRCloudHardwarePlan](remove-vbrcloudhardwareplan.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

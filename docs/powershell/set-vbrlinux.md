@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRLinux"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrlinux.html"
 last_updated: "8/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRLinux
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Related Commands
 
 [Get-VBRServer](get-vbrserver.md)
 
-Page updated 8/1/2025
 
-Page content applies to build 13.0.1.1071

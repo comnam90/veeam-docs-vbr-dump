@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Export Disk Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_export_launch.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Export Disk Wizard
 
-In this article
 
 To launch the Export Disk wizard, do one of the following:
 
@@ -33,6 +34,4 @@ To launch the Export Disk wizard, do one of the following:
 
 [![Step 1. Launch Export Disk Wizard](images/disk_export_launch.webp)](images/disk_export_launch.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

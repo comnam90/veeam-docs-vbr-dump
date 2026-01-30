@@ -1,5 +1,7 @@
 ---
 title: "Restoring from SQL Plug-in Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring from SQL Plug-in Backups
 
-In this article
 
 This section explains how to restore data from backups created with Veeam Plug-In for Microsoft SQL Server. For more information, see [Veeam Plug-In for Microsoft SQL Server](mssql_plugin.md).
 
@@ -20,6 +21,4 @@ In This Section
 * [Restoring Multiple Databases](vesql_restore_plugin_multiple.md)
 * [Canceling Restore](vesql_restore_plugin_cancel.md)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

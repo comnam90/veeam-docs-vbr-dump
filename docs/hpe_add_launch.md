@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New HPE Alletra/Nimble Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_add_launch.html"
 last_updated: "9/28/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New HPE Alletra/Nimble Storage Wizard
 
-In this article
 
 To launch the wizard for adding a storage system, do the following:
 
@@ -23,6 +24,4 @@ To launch the wizard for adding a storage system, do the following:
 
 [![Step 1. Launch New HPE Alletra/Nimble Storage Wizard](images/storage_launch_hpe.webp)](images/storage_launch_hpe.webp)
 
-Page updated 9/28/2023
 
-Page content applies to build 13.0.1.1071

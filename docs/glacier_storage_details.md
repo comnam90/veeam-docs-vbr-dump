@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/glacier_storage_details.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Bucket step of the wizard, specify Amazon S3 bucket and folder that will be used to store data:
 
@@ -51,6 +52,4 @@ Related Topics
 * [Immutability for Archive Tier](immutability_archive_tier.md)
 * [Immutability for Scale-Out Backup Repositories](immutability_sobr.md)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

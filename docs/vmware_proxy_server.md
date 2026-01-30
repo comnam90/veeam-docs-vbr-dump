@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_proxy_server.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Server
 
-In this article
 
 At the Server step of the wizard, specify server settings for the backup proxy:
 
@@ -60,6 +61,4 @@ Veeam Backup & Replication creates one task per every VM disk. The recommended n
 
 1. Click Next.
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

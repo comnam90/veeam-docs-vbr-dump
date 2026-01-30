@@ -1,5 +1,7 @@
 ---
 title: "Adding Google Cloud Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_google_cloud_object_storage.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Google Cloud Object Storage
 
-In this article
 
 For more information about Google Cloud object storage, see [this Google article](https://cloud.google.com/storage/docs/introduction).
 
@@ -22,6 +23,4 @@ Before you add a Google Cloud object storage to the backup infrastructure, check
 7. [Apply settings](google_cloud_storage_review.md).
 8. [Finish working with the wizard](google_cloud_finishing_wizard.md).
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

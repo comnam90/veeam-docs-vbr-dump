@@ -1,5 +1,7 @@
 ---
 title: "Generate-VBRViMigrationSpecificationFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrvimigrationspecificationfile.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Generate-VBRViMigrationSpecificationFile
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ This example shows how generate the migration task file for the old VMware vCent
 | --- |
 | Generate-VBRViMigrationSpecificationFile -ExportPath C:\Folder -NewVCenterName vcenter70 -OldVCenterName vcenter70\_old |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

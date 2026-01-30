@@ -1,5 +1,7 @@
 ---
 title: "Backup Chain Formats"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/per_vm_backup_files_hv.html"
 last_updated: "11/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Chain Formats
 
-In this article
 
 When you add repositories to the backup infrastructure, you can configure how many backup files Veeam Backup & Replication creates for protected workloads. The type of backup files creted depends on the selected [backup method](backup_methods_hv.md).
 
@@ -97,6 +98,4 @@ Related Topics
 * [Upgrading Backup Chain Formats](backup_change_type_hv.md)
 * [Adding Scale-Out Backup Repositories](sobr_add.md)
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

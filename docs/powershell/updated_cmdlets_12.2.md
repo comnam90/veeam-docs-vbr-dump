@@ -1,5 +1,7 @@
 ---
 title: "Updated Cmdlets"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/updated_cmdlets_12.2.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updated Cmdlets
 
-In this article
 
 This section contains information on cmdlets updated in Veeam PowerShell v12.2.
 
@@ -51,6 +52,4 @@ In this version, you can select one of the authentication methods to connect to 
 | --- | --- | --- | --- | --- | --- | --- |
 | | Cmdlet | Operation | | --- | --- | | [New-VBROracleRMANProcessingOptions](new-vbroraclermanprocessingoptions.md) | New parameters added: AuthenticationMode, DBCredentials. | | [Set-VBROracleRMANProcessingOption](set-vbroraclermanprocessingoptions.md) | New parameters added: AuthenticationMode, DBCredentials. | |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

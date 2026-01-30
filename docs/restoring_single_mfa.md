@@ -1,5 +1,7 @@
 ---
 title: "Restoring Single Mailbox, Folder or Item"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_single_mfa.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Single Mailbox, Folder or Item
 
-In this article
 
 To restore a single mailbox, folder or item, do the following:
 
@@ -21,6 +22,4 @@ To restore a single mailbox, folder or item, do the following:
 8. [Specify restore options](specify_restore_options_mfa.md).
 9. [Review the operation summary](summary3.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

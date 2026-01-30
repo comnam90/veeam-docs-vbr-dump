@@ -1,5 +1,7 @@
 ---
 title: "Changed Block Tracking"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/changed_block_tracking.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changed Block Tracking
 
-In this article
 
 To perform incremental backup, Veeam Backup & Replication needs to know what data blocks have changed since the previous job session.
 
@@ -40,6 +41,4 @@ In some situations, Veeam Backup & Replication cannot leverage VMware vSphere CB
 
 During VM processing, Veeam Backup & Replication consolidates virtual disk content, scans through the VM image and calculates a checksum for every data block. Checksums are stored as metadata to backup files next to VM data. When incremental backup is run, Veeam Backup & Replication opens all backup files in the chain of previous full and incremental backups, reads metadata from these files and compares it with checksums calculated for a VM in its current state. If a match is found (which means the block already exists in the backup), this block is filtered out.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

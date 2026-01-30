@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/google_cloud_storage_mount_server.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Mount Server Settings
 
-In this article
 
 At the Mount Server step of the wizard, specify settings for the mount server that you plan to use for restore operations, and configure a helper appliance. The helper appliance is a temporary VM instance that Veeam Backup & Replication deploys in Google Compute Engine to perform a health check of backup files and apply retention to unstructured data backup files. For more information, see [Health Check for Object Storage Repositories](health_check_os.md) and [Helper Appliance in Unstructured Data Backup](unstructured_data_backup_in_object_storage.md#helper). After Veeam Backup & Replication completes these operations, it removes the helper appliance from Google Compute Engine.
 
@@ -71,6 +72,4 @@ To be able to select the subnet from the drop-down list, you must create it befo
 
 ![Step 5. Specify Mount Server Settings](images/google_cloud_mount_server_helper_appliance.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "SAP MaxDB Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_backup_backint.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SAP MaxDB Backup
 
-In this article
 
 To back up SAP MaxDB databases, you can use Database Manager CLI:
 
@@ -49,6 +50,4 @@ For example:
 
 To learn more about the backup\_start command, see [SAP MaxDB documentation](https://maxdb.sap.com/doc/7_7/39/e89fe68c0f46ad888b055a9f11cb23/frameset.htm).
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removal of GFS Flags"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_flags_removal_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removal of GFS Flags
 
-In this article
 
 When configuring GFS retention policy settings, you can specify the retention period for each type of GFS flag. After the specified retention period exceeds, Veeam Backup & Replication removes GFS flags.
 
@@ -32,6 +33,4 @@ Consider the following example. At the beginning of January, you create a backup
 1. Veeam Backup & Replication will assign the monthly GFS flag on 1/31/2019.
 2. To calculate the date when the monthly flag must be removed, the following formula is used: date of GFS flag assignment + 1 month. This means that the flag must be removed on 2/31/2019. However, this date does not exist since the last date of February is 2/28/2019. That is why Veeam Backup & Replication will remove the GFS flag on 3/1/2019 (which is 2/28/2019 + 1 day).
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

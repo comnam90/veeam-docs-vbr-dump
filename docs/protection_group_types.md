@@ -1,5 +1,7 @@
 ---
 title: "Protection Group Types"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_types.html"
 last_updated: "9/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Protection Group Types
 
-In this article
 
 Veeam Backup & Replication offers several methods to specify computers on which you want to install and manage Veeam Plug-Ins.
 
@@ -37,6 +38,4 @@ You can add multiple computers to a protection group by importing a list of comp
 
 ![Protection Group Types](images/plugins_protection_groups.webp)
 
-Page updated 9/16/2025
 
-Page content applies to build 13.0.1.1071

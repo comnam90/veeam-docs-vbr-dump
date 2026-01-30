@@ -23,7 +23,7 @@ Applies to
 
 Veeam Backup & Replication, Veeam Backup for Microsoft 365
 
-Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
+Product Edition: Community, Standard, Enterprise, Enterprise Plus, Veeam Universal License
 
 Syntax
 

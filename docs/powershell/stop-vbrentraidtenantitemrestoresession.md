@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBREntraIDTenantItemRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrentraidtenantitemrestoresession.html"
 last_updated: "1/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBREntraIDTenantItemRestoreSession
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 [Get-VBREntraIDTenantItemRestoreSession](get-vbrentraidtenantitemrestoresession.md)
 
-Page updated 1/9/2025
 
-Page content applies to build 13.0.1.1071

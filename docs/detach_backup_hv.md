@@ -1,5 +1,7 @@
 ---
 title: "Detaching Backups from Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/detach_backup_hv.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Detaching Backups from Jobs
 
-In this article
 
 If you want to detach backups from a job, you can use the Detach from job operation.
 
@@ -23,6 +24,4 @@ To detach backups from a job:
 
 [![Click to zoom in](images/detach_backups.webp)](images/detach_backups.webp "Click to zoom in")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

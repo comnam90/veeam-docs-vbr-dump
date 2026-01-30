@@ -1,5 +1,7 @@
 ---
 title: "Backup for VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup for VMware vSphere
 
-In this article
 
 Veeam Backup & Replication produces image-level backups of VMs. It treats VMs as objects, not as a set of files. When you back up VMs, Veeam Backup & Replication copies a VM image as a whole at a block level. Image-level backups can be used for different types of restore, including Instant Recovery, entire VM restore, VM file recovery, file-level recovery, and so on.
 
@@ -25,6 +26,4 @@ In This Section
 * [Managing Backup Jobs](managing_jobs.md)
 * [Reporting](reporting.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

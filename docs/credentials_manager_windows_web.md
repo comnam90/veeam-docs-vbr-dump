@@ -1,5 +1,7 @@
 ---
 title: "Creating Standard Account Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_windows_web.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Standard Account Using Web UI
 
-In this article
 
 To add a new standard credentials record, do the following in the Veeam Backup & Replication web UI:
 
@@ -21,6 +22,4 @@ To add a new standard credentials record, do the following in the Veeam Backup &
 
 [![Creating Standard Account Using Web UI](images/settings_credentials_standard_account.webp)](images/settings_credentials_standard_account.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

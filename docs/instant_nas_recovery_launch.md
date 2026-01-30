@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant File Share Recovery Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_launch.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant File Share Recovery Wizard
 
-In this article
 
 To launch the Instant File Share Recovery wizard, do one of the following:
 
@@ -21,6 +22,4 @@ You can perform the instant file share recovery by using a backup copy. Backup c
 
 [![Launch Migrate to Production Wizard](images/instant_nas_recovery_launch.webp)](images/instant_nas_recovery_launch.webp "Launch Migrate to Production Wizard")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

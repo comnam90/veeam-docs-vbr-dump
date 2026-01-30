@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy for Microsoft SQL Server Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_mssql.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy for Microsoft SQL Server Backups
 
-In this article
 
 Having just one backup does not provide the necessary level of safety. The primary backup may get destroyed together with production data, and you will have no backups from which you can restore data.
 
@@ -28,6 +29,4 @@ In This Section
 * [Creating Backup Copy Job](backup_copy_job_mssql.md)
 * [Converting Backup Copy to Backup](mapping_backup_copy.md)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

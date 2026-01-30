@@ -1,5 +1,7 @@
 ---
 title: "Microsoft SQL Server Transaction Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_sql_trans_logs.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft SQL Server Transaction Log Settings
 
-In this article
 
 The SQL tab is available for VMs that run Microsoft SQL Server and if you have selected Process transaction logs with this job when configuring application-aware processing.
 
@@ -39,6 +40,4 @@ This option is recommended if you use another tool to perform VM guest-level rep
 
 ![Microsoft SQL Server Transaction Log Settings](images/cdp_policy_sql_transaction_logs.webp "Configure log handling for Microsoft SQL Server")
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

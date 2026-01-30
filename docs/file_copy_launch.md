@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New File Copy Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_copy_launch.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New File Copy Job Wizard
 
-In this article
 
 To launch the New File Copy Job wizard, do either of the following:
 
@@ -18,6 +19,4 @@ You can add files and folders to already existing jobs. To do this, open the Fil
 
 [![Click to zoom in](images/file_copy_launch.webp)](images/file_copy_launch.webp "Click to zoom in")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

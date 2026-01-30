@@ -1,5 +1,7 @@
 ---
 title: "Viewing Session Statistics"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_session_statistics.html"
 last_updated: "12/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Session Statistics
 
-In this article
 
 For each performed data protection or disaster recovery operation, Veeam Backup for Microsoft Entra ID starts a new session and stores its records in the configuration database.
 
@@ -29,6 +30,4 @@ The opened window will display restore session details such as the name of the M
 
 [![Launch Audit Log Restore](images/entra_id_session_stats.webp)](images/entra_id_session_stats.webp "Launch Audit Log Restore")
 
-Page updated 12/19/2025
 
-Page content applies to build 13.0.1.1071

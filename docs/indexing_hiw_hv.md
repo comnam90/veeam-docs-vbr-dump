@@ -1,5 +1,7 @@
 ---
 title: "How VM Guest OS File Indexing Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/indexing_hiw_hv.html"
 last_updated: "3/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How VM Guest OS File Indexing Works
 
-In this article
 
 When you run a backup job with the file indexing option enabled, Veeam Backup & Replication performs the following operations:
 
@@ -19,6 +20,4 @@ When you run a backup job with the file indexing option enabled, Veeam Backup & 
 
 ![How VM Guest OS File Indexing Works](images/data_indexing_hv.webp)
 
-Page updated 3/3/2025
 
-Page content applies to build 13.0.1.1071

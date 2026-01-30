@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_data_restore.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 With the configured Veeam Plug-In for SAP MaxDB, you can restore SAP MaxDB databases from Veeam Plug-In backups that reside on Veeam backup repositories. Restore operations are performed on the Veeam Plug-In side.
 
@@ -33,6 +34,4 @@ Restore SAP MaxDB databases from Veeam Plug-In backups stored on supported types
 
 Restore SAP MaxDB databases from hardened repositories by creating new backup job metadata files (.VACM) with data from available backup metadata files (.VASM). For details, see [Restore from Hardened Repository](plugins_sap_maxdb_restore_from_hard.md).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

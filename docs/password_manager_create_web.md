@@ -1,5 +1,7 @@
 ---
 title: "Creating Passwords Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/password_manager_create_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Passwords Using Web UI
 
-In this article
 
 To create a new password in the Password Manager, , do the following in the Veeam Backup & Replication web UI:
 
@@ -28,6 +29,4 @@ To view the entered password, click and hold the eye icon on the right of the fi
 
 [![Creating Passwords Using Web UI](images/settings_credentials_encryption_passwords.webp)](images/settings_credentials_encryption_passwords.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

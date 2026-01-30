@@ -1,5 +1,7 @@
 ---
 title: "Exporting Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_export_latest_state.html"
 last_updated: "8/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Latest State
 
-In this article
 
 To export data as of the latest available state to the default location, do the following:
 
@@ -29,6 +30,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Restore Summary Window](images/vesql_export_files_summary_single.webp)](images/vesql_export_files_summary_single.webp "Reviewing Restore Summary Window")
 
-Page updated 8/10/2025
 
-Page content applies to build 13.0.1.1071

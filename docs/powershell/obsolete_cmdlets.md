@@ -1,5 +1,7 @@
 ---
 title: "Obsolete Cmdlets"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/obsolete_cmdlets.html"
 last_updated: "11/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Obsolete Cmdlets
 
-In this article
 
 Some cmdlets are obsolete. Most of them work so that you do not have your scripts fail, however it is suggested to rewrite your scripts using the new cmdlets.
 
@@ -117,6 +118,4 @@ In This Section
 * [Stop-VBRNASBackupFLRSession (obsolete)](stop-vbrnasbackupflrsession.md)
 * [Update-VBRNasBackupPath (obsolete)](update-vbrnasbackuppath.md)
 
-Page updated 11/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -3,7 +3,7 @@ title: "Supported Entra ID Item Properties"
 product: "vbr"
 doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_properties.html"
-last_updated: "1/14/2026"
+last_updated: "1/28/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -47,7 +47,7 @@ Veeam Backup for Microsoft Entra ID supports protection of the following Microso
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | Property | Comments | | --- | --- | | AddIns | — | | Api | — | | AppId | Read-only property in Entra ID. | | ApplicationTemplateId | Read-only property in Entra ID. | | AppRoles | — | | Certification | Read-only property in Entra ID. | | CreatedDateTime | Read-only property in Entra ID. | | Description | — | | DisabledByMicrosoftStatus | Read-only property in Entra ID. | | DisplayName | — | | ExtensionProperties | — | | FederatedIdentityCredentials | — | | GroupMembershipClaims | — | | IdentifierUris | — | | Info | — | | IsDeviceOnlyAuthSupported | — | | IsFallbackPublicClient | — | | Notes | — | | Oauth2RequirePostResponse | — | | OptionalClaims | — | | Owners | — | | ParentalControlSettings | — | | PublicClient | — | | PublisherDomain | Read-only property in Entra ID. | | RequestSignatureVerification | — | | RequiredResourceAccess | — | | SamlMetadataUrl | — | | ServiceManagementReference | — | | ServicePrincipalLockConfiguration | — | | SignInAudience | — | | Spa | — | | Tags | — | | TokenEncryptionKeyId | Read-only property in Entra ID. | | VerifiedPublisher | Read-only property in Entra ID. | | Web | — | |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Service Principles
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Service Principals
 
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

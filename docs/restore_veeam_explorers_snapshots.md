@@ -1,5 +1,7 @@
 ---
 title: "Application Item Restore from Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_veeam_explorers_snapshots.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Item Restore from Storage Snapshots
 
-In this article
 
 Veeam Backup & Replication allows you to restore different application items from a storage snapshot.
 
@@ -41,6 +42,4 @@ Performing Application Item Restore
 
 For information on performing application item restore, see the [Launching Veeam Explorer](restoring_veeam_explorers.md) section in the Veeam Backup & Replication User Guide.
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAzureStorageServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazurestorageserver.html"
 last_updated: "7/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAzureStorageServer
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRNASProxyServer](get-vbrnasproxyserver.md)
 
-Page updated 7/15/2025
 
-Page content applies to build 13.0.1.1071

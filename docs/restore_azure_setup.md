@@ -1,5 +1,7 @@
 ---
 title: "Configuring Components and Accounts for Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_setup.html"
 last_updated: "8/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Components and Accounts for Restore
 
-In this article
 
 Before you restore workloads, you must first add an account to be used for restore and then configure the required components:
 
@@ -29,6 +30,4 @@ This account must have specific built-in Azure roles (the roles are listed in th
 | Note |
 | If you use Veeam Backup for Microsoft Azure and plan to restore VMs from restore points that were created using the appliance, you do not need to configure the helper appliance and Azure restore proxy appliance (former Azure proxy). Also, restore to Microsoft Azure works as described in the [Performing VM Restore](https://helpcenter.veeam.com/docs/vbazure/guide/vm_restore_entire_hiw.html?ver=8.1) section in Veeam Backup for Microsoft Azure User Guide. |
 
-Page updated 8/28/2025
 
-Page content applies to build 13.0.1.1071

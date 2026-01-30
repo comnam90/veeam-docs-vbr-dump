@@ -1,5 +1,7 @@
 ---
 title: "Manual Recovery Verification"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_manual_hv.html"
 last_updated: "5/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manual Recovery Verification
 
-In this article
 
 Beside automatic recovery verification, you can perform manual verification of machine backups. Manual verification can be performed with all editions of Veeam Backup & Replication.
 
@@ -24,6 +25,4 @@ To perform an application test:
 
 The same procedure must be performed for all machines that run applications on which the verified machine is dependent such as domain controller and DNS. All machines must be connected to the same isolated network and started in the correct order: for example, DNS > domain controller > verified machine.
 
-Page updated 5/5/2025
 
-Page content applies to build 13.0.1.1071

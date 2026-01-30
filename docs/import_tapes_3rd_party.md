@@ -1,5 +1,7 @@
 ---
 title: "Loading Tapes Written with 3rd-Party Backup Solution"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tapes_3rd_party.html"
 last_updated: "7/11/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Loading Tapes Written with 3rd-Party Backup Solution
 
-In this article
 
 Veeam Backup & Replication does not support backups written with another backup solution even if they are written in the supported format.
 
@@ -29,6 +30,4 @@ To erase and re-use tapes containing non-Veeam data:
 5. Select tapes you want to erase and click Erase on the ribbon. Alternatively, you can right-click selected tapes and choose Erase. Choose Short erase and click OK. For more information, see [Erasing Tapes](erasing_tapes.md).
 6. The tapes will be moved to the Free media pool.
 
-Page updated 7/11/2023
 
-Page content applies to build 13.0.1.1071

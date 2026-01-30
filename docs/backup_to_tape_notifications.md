@@ -1,5 +1,7 @@
 ---
 title: "Notifications Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_notifications.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notifications Settings
 
-In this article
 
 At the Notifications tab, you can specify notification settings for the backup to tape job.
 
@@ -48,6 +49,4 @@ Select the occasions on which you want to receive email notifications:
 | Tip |
 | After you specify necessary settings for the tape job, you can save them as default settings. To do this, click Save as Default at the bottom left corner of the Advanced Settings window. When you create a new backup to tape job, Veeam Backup & Replication will automatically apply the default settings to the new job. |
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

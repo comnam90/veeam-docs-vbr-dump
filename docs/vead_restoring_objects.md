@@ -1,5 +1,7 @@
 ---
 title: "Restoring Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restoring_objects.html"
 last_updated: "9/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Objects
 
-In this article
 
 To restore Active Directory objects, do the following:
 
@@ -20,6 +21,4 @@ To restore Active Directory objects, do the following:
 7. [Specify attributes to restore](vead_restore_attr_objects.md).
 8. [Review the restore summary](vead_restore_objects_summary.md).
 
-Page updated 9/26/2024
 
-Page content applies to build 13.0.1.1071

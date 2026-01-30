@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Entra ID"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id.html"
 last_updated: "3/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Entra ID
 
-In this article
 
 Veeam Backup for Microsoft Entra ID is a solution developed for protection and disaster recovery tasks for Microsoft Entra ID. With Veeam Backup for Microsoft Entra ID, you can perform the following operations:
 
@@ -19,6 +20,4 @@ Veeam Backup for Microsoft Entra ID is a solution developed for protection and d
 
 For more information, see the [User Guide for Microsoft Entra ID](https://helpcenter.veeam.com/docs/vbr/entraid/overview.html?ver=13).
 
-Page updated 3/26/2025
 
-Page content applies to build 13.0.1.1071

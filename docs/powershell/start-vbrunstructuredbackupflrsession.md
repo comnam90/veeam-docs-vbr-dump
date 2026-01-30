@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRUnstructuredBackupFLRSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrunstructuredbackupflrsession.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRUnstructuredBackupFLRSession
 
-In this article
 
 Short Description
 
@@ -82,6 +83,4 @@ Related Commands
 * [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 * [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

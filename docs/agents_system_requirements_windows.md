@@ -1,5 +1,7 @@
 ---
 title: "System Requirements for Microsoft Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_windows.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements for Microsoft Windows Computers
 
-In this article
 
 A computer that you want to protect with Veeam Agent for Microsoft Windows must meet the following requirements:
 
@@ -29,6 +30,4 @@ Consider the following:
 
 * Do not use Veeam Agent managed by one Veeam Backup & Replication installation on a server that acts as a backup infrastructure component in another Veeam Backup & Replication installation. If this happens, both Veeam Backup & Replication installations can automatically update the Transport and Deployer components on the host server, which may lead to performance issues or errors in your backup infrastructure.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "SSH Private Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_linux_pubkey.html"
 last_updated: "1/8/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SSH Private Keys
 
-In this article
 
 You can log on to a Linux server or VM running Linux OS using the Identity/Pubkey authentication method. The Identity/Pubkey authentication method helps protect against malicious applications like keyloggers, strengthens the security level and simplifies launch of automated tasks.
 
@@ -56,6 +57,4 @@ You can create a new credentials record using the Identity/Pubkey authentication
 * [Creating an SSH private key using the Veeam Backup & Replication console](credentials_manager_linux_pubkey_console.md)
 * [Creating an SSH private key using the Veeam Backup & Replication web UI](credentials_manager_linux_pubkey_web.md)
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

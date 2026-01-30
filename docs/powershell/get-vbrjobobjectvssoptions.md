@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRJobObjectVssOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrjobobjectvssoptions.html"
 last_updated: "3/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRJobObjectVssOptions
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Related Commands
 * [Get-VBRJobObject](get-vbrjobobject.md)
 * [Get-VBRJob](get-vbrjob.md)
 
-Page updated 3/13/2024
 
-Page content applies to build 13.0.1.1071

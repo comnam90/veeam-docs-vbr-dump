@@ -1,5 +1,7 @@
 ---
 title: "VBRBestPracticeInfo"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrbestpracticeinfo.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRBestPracticeInfo
 
-In this article
 
 Contains the results of Security and Compliance Analyzer checks.
 
@@ -25,6 +26,4 @@ Related Commands
 * [Start-VBRSecurityComplianceAnalyzer](start-vbrsecuritycomplianceanalyzer.md)
 * [Get-VBRSecurityComplianceAnalyzerResults](get-vbrsecuritycomplianceanalyzerresults.md)
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Failover and Failback"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/replica_cmdlets.html"
 last_updated: "6/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover and Failback
 
-In this article
 
 When you have a replica of a VM, you can use it to fail over to it in case of the original VM malfunction or for testing.
 
@@ -20,6 +21,4 @@ In This Section
 | [Stop-VBRViReplicaFailback](stop-vbrvireplicafailback.md) | [Stop-VBRHvReplicaFailback](stop-vbrhvreplicafailback.md) | Undoes replica failback. |
 | [Stop-VBRReplicaFailover](stop-vbrreplicafailover.md) |  | Undoes replica failover. |
 
-Page updated 6/27/2024
 
-Page content applies to build 13.0.1.1071

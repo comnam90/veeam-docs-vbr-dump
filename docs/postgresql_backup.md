@@ -1,5 +1,7 @@
 ---
 title: "PostgreSQL WAL Files Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_backup.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # PostgreSQL WAL Files Backup
 
-In this article
 
 To protect VMs with PostgreSQL instances, you can instruct the backup job to create image-level VM backups and periodically back up write ahead log (WAL) files of PostgreSQL instances. Thus, you will create transactionally consistent backups of PostgreSQL instances that will contain backups of WAL files. If a PostgreSQL instance fails, you can use [Application Item Restore](restore_veeam_explorers.md) to apply WAL files and recover PostgreSQL instances to the necessary state.
 
@@ -36,6 +37,4 @@ Related Topics
 * [Log Shipping Servers](postgresql_log_shipping.md)
 * [WAL Backup Statistics](postrgesql_statistics.md)
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Structure in Backup, Archive and Secondary Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_structure.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Structure in Backup, Archive and Secondary Repositories
 
-In this article
 
 Backup, archive and secondary repositories store file and object storage backups as objects in VBLOB files (up to 64 MB each) of unstructured data. They also store metadata about the original objects on unstructured data sources and their structure.
 
@@ -40,6 +41,4 @@ Veeam Backup & Replication uses the following structure for storing the file bac
 |  |  |  |  | <guid\_y> |  | 1 GB basket that stores VBLOB backup files. |
 |  |  |  |  |  | .vblob | By default, a classic 64 MB file that stores data from the file share backup or object storage backup.  If necessary, you can convert unstructured data backup files into the single file basket format recommended for storing data on HPE StoreOnce storage appliances. For more information, see description of the Convert-VBRNASBackupStorageFormat cmdlet in the [Veeam PowerShell Reference](https://helpcenter.veeam.com/docs/vbr/powershell/convert-vbrnasbackupstorageformat.html?ver=13). |
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

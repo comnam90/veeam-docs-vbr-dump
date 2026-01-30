@@ -1,5 +1,7 @@
 ---
 title: "Viewing Backup Policy Report"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_policy_report.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Backup Policy Report
 
-In this article
 
 You can generate a report with details about Veeam Agent backup job sessions performed on protected computers added to a backup policy. The report contains data on the latest backup job session initiated for the backup policy. To generate a report:
 
@@ -34,6 +35,4 @@ The report contains data on the latest job session:
 
 ![Viewing Backup Policy Report](images/report_policy.webp)
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

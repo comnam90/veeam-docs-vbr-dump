@@ -1,5 +1,7 @@
 ---
 title: "VBRMongoDBBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrmongodbbackupjob.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRMongoDBBackupJob
 
-In this article
 
 Contains MongoDB application backup policies.
 
@@ -36,6 +37,4 @@ Properties
 | GFSRetentionEnabled | Boolean | Enables GFS retention for MongoDB backup policy. |
 | IsHighPriority | Boolean | Defines that Veeam Backup & Replication will prioritize this job higher than other similar jobs and will allocate resources to it first. |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

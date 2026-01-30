@@ -1,5 +1,7 @@
 ---
 title: "A-Z Cmdlets List"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cmdlets.html"
 last_updated: "5/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # A-Z Cmdlets List
 
-In this article
 
 This page provides with a list of all cmdlets added to the Veeam Backup PowerShell module.
 
@@ -3036,6 +3037,4 @@ Related Topics
 * [Obsolete Cmdlets](obsolete_cmdlets.md)
 * [Veeam PowerShell Types](veeam_powershell_types.md)
 
-Page updated 5/31/2023
 
-Page content applies to build 13.0.1.1071

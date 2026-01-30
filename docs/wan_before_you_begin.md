@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_before_you_begin.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you add a WAN accelerator, check the following prerequisites:
 
@@ -20,6 +21,4 @@ Before you add a WAN accelerator, check the following prerequisites:
 * The machine must have enough free disk space to store digests or global cache data. For more information, see [WAN Accelerator Sizing](wan_accelerator_sizing.md).
 * You must add the machine to the Veeam Backup & Replication console as a managed server before adding it as a WAN accelerator.
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

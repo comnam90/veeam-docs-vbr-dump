@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRNasBackupRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrnasbackuprestore.html"
 last_updated: "10/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRNasBackupRestore
 
-In this article
 
 Short Description
 
@@ -89,6 +90,4 @@ Related Commands
 * [Get-VBRNASBackupRestorePoint](get-vbrnasbackuprestorepoint.md)
 * [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 
-Page updated 10/4/2024
 
-Page content applies to build 13.0.1.1071

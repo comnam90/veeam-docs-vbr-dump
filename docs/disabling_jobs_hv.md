@@ -1,5 +1,7 @@
 ---
 title: "Disabling and Deleting Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disabling_jobs_hv.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disabling and Deleting Jobs
 
-In this article
 
 You can temporarily disable scheduled jobs. The disabled job is paused for some period of time and is not run by the specified schedule. You can enable a disabled job at any time. You can also permanently delete a job from Veeam Backup & Replication and the configuration database.
 
@@ -35,6 +36,4 @@ After a job is deleted, the backups created by this job are displayed under the 
 
 [![Click to zoom in](images/delete_jobs.webp)](images/delete_jobs.webp "Click to zoom in")
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

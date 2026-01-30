@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Files and Folders to Be Copied"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_copy_source.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Files and Folders to Be Copied
 
-In this article
 
 At the Source step of the wizard, select the files and folders you want to copy.
 
@@ -26,6 +27,4 @@ To remove a file or folder from the list, select it and click Remove.
 
 ![Step 3. Select Files and Folders to Be Copied](images/file_copy_source_vm.webp)
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Performing Instant Recovery to Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_ir_azure_performing.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Instant Recovery to Microsoft Azure
 
-In this article
 
 With Instant Recovery to Microsoft Azure, you can recover different workloads from backups and register them as Microsoft Azure VMs.
 
@@ -25,6 +26,4 @@ To perform Instant Recovery, use the Instant Recovery to Microsoft Azure wizard.
 10. [Verify recovery settings](ir_azure_summary.md).
 11. [Finalizing Instant Recovery to Microsoft Azure](ir_azure_finalize.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

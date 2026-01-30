@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Bucket Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_bucket_launch.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Bucket Restore Wizard
 
-In this article
 
 To launch the Bucket Restore wizard, do one of the following:
 
@@ -21,6 +22,4 @@ You can restore the bucket or container to the state as of a specific restore po
 
 [![Launch File Restore Wizard](images/restore_entire_bucket_launch.webp)](images/restore_entire_bucket_launch.webp "Launch File Restore Wizard")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

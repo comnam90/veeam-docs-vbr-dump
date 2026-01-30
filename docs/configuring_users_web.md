@@ -1,5 +1,7 @@
 ---
 title: "Configuring Users Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_users_web.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Users Using Web UI
 
-In this article
 
 Adding Users
 
@@ -50,6 +51,4 @@ To remove a user or user group:
 2. Select a user or user group.
 3. Click Remove.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

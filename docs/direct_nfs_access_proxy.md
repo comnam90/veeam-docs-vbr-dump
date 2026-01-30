@@ -1,5 +1,7 @@
 ---
 title: "VMware Backup Proxy for Direct NFS Access Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_nfs_access_proxy.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware Backup Proxy for Direct NFS Access Mode
 
-In this article
 
 To instruct the VMware backup proxy to use the Direct NFS access mode, you must choose the Automatic selection or Direct storage access option in the VMware backup proxy settings.
 
@@ -38,6 +39,4 @@ The host discovery process rescans all machines to which the VMware backup proxy
 
 If necessary, you can start the host discovery process manually. To do this, perform the Rescan operation for a machine to which the VMware backup proxy role is assigned.
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

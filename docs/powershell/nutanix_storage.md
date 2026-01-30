@@ -1,5 +1,7 @@
 ---
 title: "Nutanix Files Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/nutanix_storage.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Nutanix Files Storage Systems
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Get-VBRNutanixVolume](get-vbrnutanixvolume.md) | Returns all volumes of the specified Nutanix Files storage systems. |
 | [Remove-VBRNutanixHost](remove-vbrnutanixhost.md) | Removes Nutanix Files storage systems from the backup infrastructure. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

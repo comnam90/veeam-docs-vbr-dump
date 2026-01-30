@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_before.html"
 last_updated: "1/9/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before creating a protection group, consider the following prerequisites and limitations:
 
@@ -17,6 +18,4 @@ Before creating a protection group, consider the following prerequisites and lim
 
 * Do not install Veeam Agent on servers that are used as components of the Veeam Backup & Replication infrastructure. This includes Veeam backup servers, backup repositories, proxy servers, mount servers, distribution servers, gateway and helper appliance servers, and any other backup infrastructure component that has the Veeam Mount Service deployed.
 
-Page updated 1/9/2026
 
-Page content applies to build 13.0.1.1071

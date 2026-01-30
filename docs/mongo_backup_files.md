@@ -1,5 +1,7 @@
 ---
 title: "Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_files.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Files
 
-In this article
 
 For every application backup policy for MongoDB, Veeam Backup & Replication creates and stores database backup files, and a separate metadata file for each backup chain. The backup files provide a consistent and integrated way for Veeam Backup & Replication to store and manage backup data, while ensuring that the data is protected, accessible and can be quickly restored when needed.
 
@@ -33,6 +34,4 @@ The backup metadata file is updated with every backup policy session.
 
 For more information about the oplog backup, see [Oplog Backup](mongo_oplog_backup.md).
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

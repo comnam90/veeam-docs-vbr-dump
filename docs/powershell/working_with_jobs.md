@@ -1,5 +1,7 @@
 ---
 title: "Working with Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/working_with_jobs.html"
 last_updated: "10/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Working with Jobs
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -23,6 +24,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Enable-VBRJob](enable-vbrjob.md) | Enables a disabled job. |
 | [Remove-VBRJob](remove-vbrjob.md) | Removes a selected backup, replication or backup copy job. |
 
-Page updated 10/4/2024
 
-Page content applies to build 13.0.1.1071

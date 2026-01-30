@@ -1,5 +1,7 @@
 ---
 title: "Importing Certificate from Certificate Store"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tls.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Importing Certificate from Certificate Store
 
-In this article
 
 If the Veeam backup server has been issued a TLS certificate signed by a CA and the TLS certificate is located in the Veeam Backup & Replication server certificate store, you can use this certificate for authenticating parties in the Veeam Backup & Replication infrastructure.
 
@@ -32,6 +33,4 @@ To select a certificate from the certificate store, do the following:
 1. At the Summary step of the wizard, review the certificate properties.
 2. Click Finish to apply the certificate.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

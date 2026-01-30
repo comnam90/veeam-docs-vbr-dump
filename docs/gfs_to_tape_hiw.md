@@ -1,5 +1,7 @@
 ---
 title: "How GFS Backup to Tape Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_to_tape_hiw.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How GFS Backup to Tape Works
 
-In this article
 
 To create a GFS archive, Veeam Backup & Replication performs the following operations:
 
@@ -57,6 +58,4 @@ If you do not want to wait, you can instruct the tape job to copy the most recen
 
 * If a job is unable to complete within a period of 21 days, it will be stopped with the Failed status.
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

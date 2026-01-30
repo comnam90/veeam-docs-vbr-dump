@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRGFSRetentionPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgfsretentionpolicy_azure.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRGFSRetentionPolicy
 
-In this article
 
 Short Description
 
@@ -83,6 +84,4 @@ Related Commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Get-VBRRetentionPolicy](get-vbrretentionpolicy.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_plan_before_you_begin.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a failover plan, check the following prerequisites:
 
@@ -15,6 +16,4 @@ Before you create a failover plan, check the following prerequisites:
 * Replicas must be in the Ready state.
 * If you plan to use pre-failover and post-failover scripts for the failover plan, you must create scripts before you configure the failover plan.
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

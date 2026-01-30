@@ -1,5 +1,7 @@
 ---
 title: "Start-VBREntraIDDBRepositoryRescan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrentraiddbrepositoryrescan.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBREntraIDDBRepositoryRescan
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This example shows how to rescan the repository where the tenant backups are sto
 | --- |
 | Start-VBREntraIDDBRepositoryRescan |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

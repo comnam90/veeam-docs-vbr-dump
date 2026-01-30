@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Configure vApp Seeding and Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_seeding_mapping.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Configure vApp Seeding and Mapping
 
-In this article
 
 The Seeding step is available if you have selected the Replica seeding check box at the Name step of the wizard.
 
@@ -61,6 +62,4 @@ Related Topics
 
 [Exclude Objects](vcd_cdp_policy_exclude.md)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

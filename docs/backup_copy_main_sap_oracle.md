@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy for SAP on Oracle Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_main_sap_oracle.html"
 last_updated: "10/12/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy for SAP on Oracle Backups
 
-In this article
 
 Having just one backup does not provide the necessary level of safety. The primary backup may get destroyed together with production data, and you will have no backups from which you can restore data.
 
@@ -24,6 +25,4 @@ In This Section
 * [Creating Backup Copy Job](backup_copy_sap_oracle.md)
 * [Converting Backup Copy to Backup](mapping_backup_copy_sap_orcl.md)
 
-Page updated 10/12/2023
 
-Page content applies to build 13.0.1.1071

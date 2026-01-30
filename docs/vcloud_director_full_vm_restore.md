@@ -1,5 +1,7 @@
 ---
 title: "Restoring Entire VMs to Cloud Director vApp"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore.html"
 last_updated: "11/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Entire VMs to Cloud Director vApp
 
-In this article
 
 You can restore one or several VMs from VMware Cloud Director backups back to VMware Cloud Director.
 
@@ -29,6 +30,4 @@ Before you restore a VM to the VMware Cloud Director hierarchy, [check prerequis
 10. [Specify a restore reason](vcloud_director_full_vm_restore_reason.md).
 11. [Verify recovery settings](vcloud_director_full_vm_restore_verify.md).
 
-Page updated 11/28/2024
 
-Page content applies to build 13.0.1.1071

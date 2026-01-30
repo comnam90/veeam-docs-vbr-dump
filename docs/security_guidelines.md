@@ -1,5 +1,7 @@
 ---
 title: "Security Guidelines"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/security_guidelines.html"
 last_updated: "11/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Security Guidelines
 
-In this article
 
 When you set up the backup infrastructure, one thing that you must not overlook is security. The backup infrastructure can be potentially used as a backdoor to gain access to your systems and data. This section includes a number of security features and recommendations that will help you prevent potential security issues and reduce the risk of compromising sensitive data.
 
@@ -23,6 +24,4 @@ In This Section
 * [Kerberos Authentication](kerberos_authentication.md)
 * [Using Group Managed Service Accounts](using_gmsa.md)
 
-Page updated 11/12/2024
 
-Page content applies to build 13.0.1.1071

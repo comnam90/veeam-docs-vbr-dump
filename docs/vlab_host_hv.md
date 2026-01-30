@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Host"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_host_hv.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Host
 
-In this article
 
 At the Destination step of the wizard, select a Microsoft Hyper-V host on which the virtual lab must be created.
 
@@ -20,6 +21,4 @@ Veeam Backup & Replication emulates the presence of VM files in the virtual lab 
 
 ![Step 3. Select Host](images/adding_vlab_host_hv.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

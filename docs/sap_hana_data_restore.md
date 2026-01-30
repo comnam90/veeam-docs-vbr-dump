@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_hana_data_restore.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 With the configured Veeam Plug-In for SAP HANA, you can restore SAP HANA databases from Veeam Plug-In backups that reside on Veeam backup repositories.
 
@@ -35,6 +36,4 @@ Restore SAP HANA databases from Veeam Plug-In backups stored on supported types 
 
 Restore SAP HANA databases from hardened repositories by creating new backup job metadata files (.VACM) with data from available backup metadata files (.VASM). For details, see [Restore from Hardened Repository](restore_from_immutable_saphana.md).
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

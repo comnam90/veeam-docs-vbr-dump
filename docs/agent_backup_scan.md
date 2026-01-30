@@ -1,5 +1,7 @@
 ---
 title: "Scanning Veeam Agent Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_scan.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scanning Veeam Agent Backups
 
-In this article
 
 You can scan restore points of a backup created by Veeam Agent for Microsoft Windows or Veeam Agent for Linux after a malware attack or to look for some sensitive data in a backup.
 
@@ -71,6 +72,4 @@ To learn more, see [Scan Backup](malware_detection_scan_backup.md).
 
 ![Scanning Veeam Agent Backups](images/agent_backup_scan_rules.webp "Scan Backup")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

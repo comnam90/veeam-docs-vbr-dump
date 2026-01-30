@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Tape Copy Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_copy_options.html"
 last_updated: "3/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Tape Copy Options
 
-In this article
 
 At the Options step of the wizard, specify tape copy and tape export options.
 
@@ -20,6 +21,4 @@ If you are copying several tapes with different retention settings, Veeam Backup
 
 ![Step 4. Specify Tape Copy Options](images/tape_copy_options.webp)
 
-Page updated 3/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_cache.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cache
 
-In this article
 
 Veeam Backup & Replication caches data that is being retrieved from external repositories every time a backup copy job or restore session is performed.
 
@@ -42,6 +43,4 @@ Related Topics
 
 [Maintenance Job](external_repository_maintenance_job.md)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

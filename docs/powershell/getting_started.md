@@ -1,5 +1,7 @@
 ---
 title: "Getting Started"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/getting_started.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting Started
 
-In this article
 
 Veeam Backup & Replication comes with the PowerShell extension — a Veeam Backup PowerShell module. The Veeam Backup PowerShell module allows you to do almost all operations that are available in the user interface. Keep in mind that actions performed with PowerShell have the same force as actions performed using Veeam Backup & Replication: for example, if you delete a job with a PowerShell script, the job will be removed from the Veeam Backup & Replication database, and you will not be able to undo changes. In order to run Veeam PowerShell commands, you must start a PowerShell session.
 
@@ -27,6 +28,4 @@ In This Section
 * [Using Update-Help](update_help.md)
 * [Examples of Use](examples_of_use.md)
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

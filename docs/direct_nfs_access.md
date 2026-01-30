@@ -1,5 +1,7 @@
 ---
 title: "Direct NFS Access"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_nfs_access.html"
 last_updated: "5/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Direct NFS Access
 
-In this article
 
 The Direct NFS access is a recommended transport mode for VMs whose disks are located on NFS datastores.
 
@@ -54,6 +55,4 @@ Related Topics
 * [Failover to Network Mode](network_mode_failover.md)
 * [Adding VMware Backup Proxies](add_vmware_proxy.md)
 
-Page updated 5/15/2024
 
-Page content applies to build 13.0.1.1071

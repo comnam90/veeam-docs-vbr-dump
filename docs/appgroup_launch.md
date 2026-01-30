@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Application Group Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_launch.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Application Group Wizard
 
-In this article
 
 To launch the New Application Group wizard, do one of the following:
 
@@ -17,6 +18,4 @@ To launch the New Application Group wizard, do one of the following:
 
 [![Click to zoom in](images/app_group_launch.webp)](images/app_group_launch.webp "Click to zoom in")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRADDomain"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbraddomain.html"
 last_updated: "5/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRADDomain
 
-In this article
 
 Contains an Active Directory domain connection object.
 
@@ -25,6 +26,4 @@ Related Commands
 
 [Get-VBRADDomain](get-vbraddomain.md)
 
-Page updated 5/20/2024
 
-Page content applies to build 13.0.1.1071

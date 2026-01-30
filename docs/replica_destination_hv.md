@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Replica Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_destination_hv.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Replica Destination
 
-In this article
 
 At the Destination step of the wizard, select a destination for replicas:
 
@@ -47,6 +48,4 @@ If you have selected to replicate multiple VMs and want to place individual repl
 
 ![Step 7. Specify Replica Destination](images/hv_replica_job_destination.webp)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

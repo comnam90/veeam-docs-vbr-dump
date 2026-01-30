@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudTenantHwPlanOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudtenanthwplanoptions.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudTenantHwPlanOptions
 
-In this article
 
 Contains options of hardware plan assigned to tenant.
 
@@ -26,6 +27,4 @@ Related Commands
 
 [New-VBRCloudTenantHwPlanOptions](new-vbrcloudtenanthwplanoptions.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

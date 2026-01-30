@@ -1,5 +1,7 @@
 ---
 title: "Enable Application-Aware Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_application_vm_web.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enable Application-Aware Processing
 
-In this article
 
 To create transactionally consistent backups of VMs, you must enable application-aware processing. Application-aware processing allows you to define the method to process applications and application logs and select if you want to use the persistent agent.
 
@@ -62,6 +63,4 @@ For more information, see [Persistent Agent Components](persistent_agent_compone
 
 [![Click to zoom in](images/vm_backup_job_vss_web.webp)](images/vm_backup_job_vss_web.webp "Click to zoom in")
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

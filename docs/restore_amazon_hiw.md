@@ -1,5 +1,7 @@
 ---
 title: "How Restore to Amazon EC2 Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_hiw.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore to Amazon EC2 Works
 
-In this article
 
 The workflow of the restore process depends on whether the helper appliance is used or not. For more information on the helper appliance, see [Considerations and Limitations](restore_amazon_byb.md#happ).
 
@@ -46,6 +47,4 @@ In Amazon S3, the uploaded disks are stored to the temporary bucket in the RAW f
 2. Veeam Backup & Replication creates a target instance in Amazon EC2 and attaches the EBS volumes to it.
 3. After the import process is complete, Veeam Backup & Replication removes the temporary bucket from Amazon S3.
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

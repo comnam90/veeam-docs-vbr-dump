@@ -1,5 +1,7 @@
 ---
 title: "Set-ThinkSystemHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-thinksystemhost.html"
 last_updated: "7/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-ThinkSystemHost
 
-In this article
 
 Short Description
 
@@ -111,6 +112,4 @@ Related Commands
 * [Get-ThinkSystemHost](get-thinksystemhost.md)
 * [Get-ThinkSystemInfrastructureVolume](get-thinksysteminfrastructurevolume.md)
 
-Page updated 7/16/2025
 
-Page content applies to build 13.0.1.1071

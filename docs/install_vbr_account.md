@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Service Account Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_account.html"
 last_updated: "5/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Service Account Settings
 
-In this article
 
 The Service Account step of the wizard is available if you have selected to configure installation settings manually.
 
@@ -30,6 +31,4 @@ Veeam Backup & Replication automatically grants the Log on as service right to t
 
 ![Step 7. Specify Service Account Settings](images/installation_service_account.webp)
 
-Page updated 5/9/2025
 
-Page content applies to build 13.0.1.1071

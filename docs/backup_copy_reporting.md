@@ -1,5 +1,7 @@
 ---
 title: "Reporting"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_reporting.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reporting
 
-In this article
 
 The process of performing reporting operations for backup copy jobs is the same as described in the [Backup: Reporting](reporting.md) section. However, the process differs for immediate backup copy jobs created in Veeam Backup & Replication 11 the following way:
 
@@ -27,6 +28,4 @@ The job report shows results for the last job run and does not provide details o
 
 You can view session reports only if you configured notifications for a job. In this case, you get reports once a child job finishes. For more information, see [Notification Settings](backup_copy_settings_notification.md).
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

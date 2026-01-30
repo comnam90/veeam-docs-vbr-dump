@@ -1,5 +1,7 @@
 ---
 title: "Managing Locations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/locations.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Locations
 
-In this article
 
 To control data migration in the virtual infrastructure, Veeam Backup & Replication introduces a notion of location. A location defines a geographic region, or country, in which an infrastructure object resides. You can create a list of locations, and assign to backup infrastructure objects information about locations to which they belong.
 
@@ -65,6 +66,4 @@ In This Section
 * [Deleting Locations](locations_delete.md)
 * [Exporting and Importing Locations List](locations_export.md)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

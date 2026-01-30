@@ -1,5 +1,7 @@
 ---
 title: "Forever Forward Incremental Backup Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_forever_incremental.html"
 last_updated: "8/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Forever Forward Incremental Backup Retention Policy
 
-In this article
 
 If the number of days or restore points in forever forward incremental backup chains exceeds retention policy settings, Veeam Backup & Replication transforms the backup chain to make room for the most recent restore point. The transformation process is performed in the following way:
 
@@ -58,6 +59,4 @@ Related Topics
 
 [Creating Backup Jobs](backup_job.md)
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

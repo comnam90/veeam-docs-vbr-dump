@@ -1,5 +1,7 @@
 ---
 title: "VBRBackupToTapeScheduleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrbackuptotapescheduleoptions.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRBackupToTapeScheduleOptions
 
-In this article
 
 Contains backup to tape job schedule settings.
 
@@ -27,6 +28,4 @@ Related Commands
 
 [New-VBRBackupToTapeScheduleOptions](new-vbrbackuptotapescheduleoptions.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

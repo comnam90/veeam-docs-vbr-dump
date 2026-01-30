@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Recovery Verification Options and Tests"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_tests_vm.html"
 last_updated: "11/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Recovery Verification Options and Tests
 
-In this article
 
 You must specify verification options for every VM in the application group:
 
@@ -129,6 +130,4 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 ![Step 4. Specify Recovery Verification Options and Tests](images/app_group_credentials.webp)
 
-Page updated 11/11/2025
 
-Page content applies to build 13.0.1.1071

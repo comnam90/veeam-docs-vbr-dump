@@ -1,5 +1,7 @@
 ---
 title: "Force Deleting Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_mssql_retention_force.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Force Deleting Backups
 
-In this article
 
 Veeam Plug-In has a functionality that automatically force deletes backup files which are older than specified number of days. For example, it may be helpful if a database was renamed and backups for this database created before the renaming are no longer processed by Veeam Plug-In.
 
@@ -47,6 +48,4 @@ Before you delete backup files, consider the following:
 
 * The command cannot delete imported backups.
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

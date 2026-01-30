@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Object Storage Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_db_repository_account.html"
 last_updated: "7/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Object Storage Account
 
-In this article
 
 At the Account step of the wizard, specify the connection settings:
 
@@ -44,6 +45,4 @@ For example, if the complete service endpoint address is https://qadataboxstorac
 
 [![Step 3. Specify Object Storage Account](images/adb_endpoint.webp)](images/adb_endpoint.webp)
 
-Page updated 7/11/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Select Product"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_product.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Select Product
 
-In this article
 
 At the Product step of the wizard, select the database which settings you want to configure.
 
@@ -15,6 +16,4 @@ The utility detects what servers are installed on the local machine and displays
 
 ![Step 1. Select Product](images/dbconfig_product.webp)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

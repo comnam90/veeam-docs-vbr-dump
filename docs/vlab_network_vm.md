@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Networking Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_network_vm.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Networking Mode
 
-In this article
 
 At the Networking step of the wizard, select the type of network settings configuration. The virtual lab configuration depends on objects that you plan to verify in the virtual lab:
 
@@ -57,6 +58,4 @@ Selecting Network Mode for Verifying VMs on Storage Snapshots
 
 For verifying VMs from storage snapshots, you can select any networking mode.
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

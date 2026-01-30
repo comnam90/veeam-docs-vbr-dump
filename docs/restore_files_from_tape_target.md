@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Restore Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_tape_target.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Restore Destination
 
-In this article
 
 At the Destination step of the wizard, specify destination where the archived files will be restored. You can use one of the following options:
 
@@ -31,6 +32,4 @@ When restoring files to a location other than original, Veeam Backup & Replicati
 
 ![Step 3. Specify Restore Destination](images/restore_files_from_tape_target.webp)
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Direct SAN Access"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_san_access.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Direct SAN Access
 
-In this article
 
 The Direct SAN access transport mode is recommended for VMs whose disks are located on shared VMFS SAN LUNs that are connected to ESXi hosts over FC, FCoE, iSCSI, NVMe-FC\*, and on shared SAS storage.
 
@@ -77,6 +78,4 @@ Related Topics
 * [Data Restore in Direct SAN Access Mode](direct_san_access_writing.md)
 * [Adding VMware Backup Proxies](add_vmware_proxy.md)
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

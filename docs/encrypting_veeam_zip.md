@@ -1,5 +1,7 @@
 ---
 title: "Encrypting VeeamZIP Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypting_veeam_zip.html"
 last_updated: "1/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Encrypting VeeamZIP Backups
 
-In this article
 
 The encryption process for a VeeamZIP session includes the following steps:
 
@@ -23,6 +24,4 @@ The encryption process for a VeeamZIP session includes the following steps:
 | Note |
 | If you plan to store backups in [Veeam Data Cloud Vault](osr_adding_veeam_data_cloud_vault.md), you must enable encryption for VeeamZIP backup. |
 
-Page updated 1/31/2025
 
-Page content applies to build 13.0.1.1071

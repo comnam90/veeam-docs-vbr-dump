@@ -1,5 +1,7 @@
 ---
 title: "Performing YARA Scan"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/secure_restore_yara_run.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing YARA Scan
 
-In this article
 
 To perform the YARA scan during the restore session, do the following at the Secure Restore step of the restore wizard:
 
@@ -43,6 +44,4 @@ Note that if the YARA rule is not found, Veeam Backup & Replication will display
 * Clear the Scan the restore point with the following YARA rule option.
 * Use Veeam Threat Hunter or third-party antivirus sofware. For more information, see [Veeam Threat Hunter for Secure Restore](secure_restore_veeam_threat_hunter.md) and [Antivirus Scan for Secure Restore](secure_restore_antivirus.md).
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

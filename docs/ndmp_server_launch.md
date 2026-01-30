@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New NDMP Server Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ndmp_server_launch.html"
 last_updated: "6/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New NDMP Server Wizard
 
-In this article
 
 To launch the New NDMP Server wizard:
 
@@ -16,6 +17,4 @@ To launch the New NDMP Server wizard:
 
 [![Step 1. Launch New NDMP Server Wizard](images/ndmp_server_launch.webp)](images/ndmp_server_launch.webp)
 
-Page updated 6/25/2025
 
-Page content applies to build 13.0.1.1071

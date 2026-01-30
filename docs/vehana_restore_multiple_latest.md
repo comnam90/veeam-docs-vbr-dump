@@ -1,5 +1,7 @@
 ---
 title: "Restoring Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_multiple_latest.html"
 last_updated: "12/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Latest State
 
-In this article
 
 To restore the latest available state of multiple SAP HANA tenant databases, use the Restore wizard.
 
@@ -17,6 +18,4 @@ To restore the latest available state of multiple SAP HANA tenant databases, use
 4. [Specify system credentials](vehana_restore_multiple_latest_specify_system_credentials.md).
 5. [Specify SYSTEM user password](vehana_restore_multiple_latest_specify_password.md).
 
-Page updated 12/4/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Custom Verification Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/custom_verification_scripts.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Custom Verification Scripts
 
-In this article
 
 Veeam Backup & Replication can verify VMs with the following custom verification scripts:
 
@@ -99,6 +100,4 @@ The result of the backup file validation test impacts the state of the SureBacku
 
 ![Custom Verification Scripts](images/surebackup_stats_vm.webp)
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

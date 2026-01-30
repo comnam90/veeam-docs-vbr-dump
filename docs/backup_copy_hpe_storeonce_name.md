@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Job Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_hpe_storeonce_name.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Job Name and Description
 
-In this article
 
 At the Job step of the wizard, specify name and description for the backup copy job:
 
@@ -16,6 +17,4 @@ At the Job step of the wizard, specify name and description for the backup copy 
 
 ![Step 2. Specify Job Name and Description](images/backup_copy_hpe_storeonce_name.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 This section contains information about the available restore operations in Veeam Explorer for SAP HANA.
 
@@ -21,6 +22,4 @@ In This Section
 * [Restoring Multiple Databases](vehana_restore_multiple.md)
 * [Managing Restore Session](vehana_restore_manage_session.md)
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

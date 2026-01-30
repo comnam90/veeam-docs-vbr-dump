@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select VMs to Replicate"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vms_hv.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select VMs to Replicate
 
-In this article
 
 At the Virtual Machines step of the wizard, select VMs and VM containers that you want to replicate:
 
@@ -20,6 +21,4 @@ The total size of objects added to the job is displayed in the Total size field.
 
 ![Step 3. Select VMs to Replicate](images/hv_replica_job_vms.webp)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

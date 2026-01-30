@@ -1,5 +1,7 @@
 ---
 title: "Adding Computer to Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_add.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Computer to Backup Job
 
-In this article
 
 You can quickly add a specific protected computer to a Veeam Agent backup job that you have configured in Veeam Backup & Replication. To do this, do the following:
 
@@ -24,6 +25,4 @@ You can quickly add a specific protected computer to a Veeam Agent backup job th
 
 [![Add Computers to Backup Job](images/protected_computer_add.webp)](images/protected_computer_add.webp "Add Computers to Backup Job")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAmazonEC2VPC"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbramazonec2vpc.html"
 last_updated: "12/13/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAmazonEC2VPC
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 * [Get-VBRAmazonAccount](get-vbramazonaccount.md)
 * [Get-VBRAmazonEC2Region](get-vbramazonec2region.md)
 
-Page updated 12/13/2023
 
-Page content applies to build 13.0.1.1071

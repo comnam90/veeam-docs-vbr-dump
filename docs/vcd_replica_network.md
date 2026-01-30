@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_network.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Network Mapping
 
-In this article
 
 The Network step of the wizard is available if you have selected the Network remapping option at the Name step of the wizard.
 
@@ -24,6 +25,4 @@ To add a row to the network mapping table:
 
 ![Step 7. Configure Network Mapping](images/vcd_replica_network.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

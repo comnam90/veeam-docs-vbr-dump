@@ -1,5 +1,7 @@
 ---
 title: "New-VBRMonthlyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmonthlyoptions.html"
 last_updated: "10/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRMonthlyOptions
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Examples
 | --- | --- |
 | This command creates the schedule for a job to run at 10:00 on the last Sunday of January and July.  |  | | --- | | New-VBRMonthlyOptions -DayNumberInMonth Last -DayOfWeek Sunday -Period 10:00 -Months January, July | |
 
-Page updated 10/9/2024
 
-Page content applies to build 13.0.1.1071

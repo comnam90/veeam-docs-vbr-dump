@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select Template to Link"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_template.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select Template to Link
 
-In this article
 
 The Fast Provisioning step of the wizard is available if you have chosen to change the settings of the restored VMs.
 
@@ -22,6 +23,4 @@ If you want to disable fast provisioning for the VM and restore it as a regular 
 
 ![Step 7. Select Template to Link](images/vcloud_full_restore_fast_provision.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

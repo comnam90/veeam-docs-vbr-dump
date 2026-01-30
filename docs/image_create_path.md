@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Path to ISO"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/image_create_path.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Path to ISO
 
-In this article
 
 The Image Path step of the wizard is available if you have selected to create an ISO file with the recovery image.
 
@@ -17,6 +18,4 @@ You cannot save the ISO file in a shared folder. Thus, the recovery image will a
 
 ![Step 3. Specify Path to ISO](images/ep_recoveryimage_isopath.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

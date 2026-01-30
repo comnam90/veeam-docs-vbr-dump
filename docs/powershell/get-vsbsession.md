@@ -1,5 +1,7 @@
 ---
 title: "Get-VSBSession (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vsbsession.html"
 last_updated: "2/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VSBSession (obsolete)
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Examples
 | --- | --- |
 | This command looks for the Winserver SureJob SureBackup session.  |  | | --- | | Get-VSBSession -Name \*Winserver SureJob\* | |
 
-Page updated 2/26/2024
 
-Page content applies to build 13.0.1.1071

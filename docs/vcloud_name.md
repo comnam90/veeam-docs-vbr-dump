@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Server Name or Address"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_name.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Server Name or Address
 
-In this article
 
 At the Name step of the wizard, specify connection settings for VMware Cloud Director. If the VMware Cloud Director infrastructure comprises several cells, you can specify connection settings for any cell in the VMware Cloud Director hierarchy.
 
@@ -17,6 +18,4 @@ At the Name step of the wizard, specify connection settings for VMware Cloud Dir
 
 ![Step 2. Specify Server Name or Address](images/vcloud_add_server_name.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

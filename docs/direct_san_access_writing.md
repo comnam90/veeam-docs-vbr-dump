@@ -1,5 +1,7 @@
 ---
 title: "Data Restore in Direct SAN Access Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_san_access_writing.html"
 last_updated: "5/30/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore in Direct SAN Access Mode
 
-In this article
 
 The Direct SAN access transport mode can be used to restore VMs with thick disks. To restore VMs with thin disks, you can use the [Direct NFS access](data_restore_in_direct_nfs_acc.md), [Virtual appliance](virtual_appliance.md) or [Network](network_mode.md) mode.
 
@@ -25,6 +26,4 @@ Data restore in the Direct SAN access transport mode includes the following step
 
 ![Data Restore in Direct SAN Access Mode](images/direct_san_access_restore.webp)
 
-Page updated 5/30/2023
 
-Page content applies to build 13.0.1.1071

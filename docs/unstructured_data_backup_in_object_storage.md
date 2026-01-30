@@ -1,5 +1,7 @@
 ---
 title: "Unstructured Data Backups in Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_in_object_storage.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unstructured Data Backups in Object Storage Repositories
 
-In this article
 
 How Unstructured Data Backup to Object Storage Repository Works
 
@@ -49,6 +50,4 @@ If your unstructured data source is protected with an unstructured data backup j
 
 ![Unstructured Data Backups in Object Storage Repositories](images/copy_download_meta.webp)
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

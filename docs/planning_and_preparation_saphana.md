@@ -1,5 +1,7 @@
 ---
 title: "Planning and Preparation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planning_and_preparation_saphana.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Planning and Preparation
 
-In this article
 
 Before you start to use Veeam Plug-In for SAP HANA, make sure that your environment meets system requirements and read the environment planning recommendations.
 
@@ -20,6 +21,4 @@ In This Section
 * [Veeam Environment Planning](veeam_environment_saphana.md)
 * [SAP Environment Planning](sap_environment_saphana.md)
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

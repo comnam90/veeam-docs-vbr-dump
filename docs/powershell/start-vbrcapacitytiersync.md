@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRCapacityTierSync"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcapacitytiersync.html"
 last_updated: "6/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRCapacityTierSync
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [ForEach-Object](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/foreach-object?view=powershell-7.3)
 
-Page updated 6/18/2024
 
-Page content applies to build 13.0.1.1071

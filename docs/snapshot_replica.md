@@ -1,5 +1,7 @@
 ---
 title: "Snapshot Replica"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_replica.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Snapshot Replica
 
-In this article
 
 To create snapshot replicas, Veeam Backup & Replication uses Hyper-V VM snapshot capabilities.
 
@@ -32,6 +33,4 @@ The full VM replica along with its restore points is stored in a dedicated folde
 | Note |
 | Virtual disks of snapshot VM replicas are always dynamically expand. |
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

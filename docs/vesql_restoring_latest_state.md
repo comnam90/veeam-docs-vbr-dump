@@ -1,5 +1,7 @@
 ---
 title: "Restoring Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_latest_state.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Latest State
 
-In this article
 
 You can restore a Microsoft SQL Server database as of the latest state in your backup file.
 
@@ -41,6 +42,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Restore Summary Window](images/vesql_restore_summary_single.webp)](images/vesql_restore_summary_single.webp "Reviewing Restore Summary Window")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

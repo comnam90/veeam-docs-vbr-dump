@@ -1,5 +1,7 @@
 ---
 title: "System Requirements (VMware vSphere)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_vm.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements (VMware vSphere)
 
-In this article
 
 Make sure that servers that you plan to use as backup infrastructure components to protect your VMware vSphere virtual machines meet the listed system requirements.
 
@@ -149,12 +150,12 @@ The NAS must be able to present its capacity as NFS share (protocol versions 3.0
 * Any S3-compatible object storage (on-premises appliance, or cloud storage provider)
 * Dell Data Domain (DD OS version 7.9 to 8.6) with DDBoost license. Both Ethernet and Fibre Channel (FC) connectivity options are supported.
 * ExaGrid1 (firmware version 7.2.0 P08 or later)
-* Fujitsu ETERNUS CS8001 software version 5.2.0 or later
+* Fujitsu ETERNUS CS8001 (CS800 software version 5.2.0 or later)
 * HPE StoreOnce (firmware version 3.18.18 or later for Gen3, 4.2.3 or later for Gen4, 5.1.0 or later for Gen 5) with Catalyst license
 
 Both Ethernet and Fibre Channel (FC) connectivity are supported. Note that HPE StoreOnce Federated Catalyst is not supported.
 
-* Infinidat InfiniGuard1 version 5.2.0 and later
+* Infinidat InfiniGuard1 (InfiniGuard software 3.12 or later)
 * Quantum DXi1 (DXi software 5.2.0 or later)
 
 Supported Quantum DXi systems include DXiV5000, DXi4800, DXi4801, DXi9000, DXi9100, DXi9200, DXiT10.
@@ -208,6 +209,15 @@ Support for HCI appliances is pending validation by Veeam. The documentation wil
 | Consider the following:   * Cisco HyperFlex 4.5 (2a) and later can be used as a source or target only with VMware vSphere 7.0 U2 and later. With the previous versions of VMware vSphere, Cisco HyperFlex is not supported. * vVol and VSAN of each vendor have limits for the number of storage objects. Once the limit is reached, CDP starts to fail because creation of new objects cannot be completed. To restore the CDP process, remove some objects from VSAN/vVol. * CDP performance depends on your datastore characteristics. For better performance, check that your target datastore is able to process the I/O workload produced on the source datastore. |
 
 Gateway Server
+
+Gateway servers can be deployed using the [Veeam JeOS](linux_infrastructure.md) image by selecting the Infrastructure Appliance option. This enables certificate-based authentication, secure industry-standard communication protocols, and automated updates that are centrally controlled using the [Veeam Backup & Replication server](backup_server.md).
+
+|  |
+| --- |
+| Note |
+| Component hardware requirements must be added to the [Veeam JeOS](system_requirements.md#jeos) system requirements to ensure that the assigned role has sufficient CPU and RAM resources. |
+
+In addition to this option, you can deploy and manage gateway servers on supported operating systems of your choice.
 
 | Specification | Requirement |
 | --- | --- |
@@ -271,6 +281,4 @@ Veeam Explorers
 * [Veeam Explorer for PostgreSQL](https://helpcenter.veeam.com/docs/vbr/explorers/vep_prerequisites.html?ver=13)
 * [Veeam Explorer for SAP HANA](https://helpcenter.veeam.com/docs/vbr/explorers/vehana_prerequisites.html?ver=13)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

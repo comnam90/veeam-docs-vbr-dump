@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Choose Backup Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_backup_from_tape_target.html"
 last_updated: "3/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Choose Backup Destination
 
-In this article
 
 At the Destination step of the wizard, select where the backup files for the selected machines should be restored:
 
@@ -24,6 +25,4 @@ If you choose to restore files to a shared folder, make sure that the account un
 
 ![Step 4. Choose Backup Destination](images/restore_backup_from_tape_target.webp)
 
-Page updated 3/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Backup Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_storage_vm_web.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Backup Storage Settings
 
-In this article
 
 At the Storage step of the wizard, select backup infrastructure components for the job — backup proxy and backup repository, and specify backup storage settings:
 
@@ -39,6 +40,4 @@ To keep all restore points created during the last N days, specify the number of
 
 [![Click to zoom in](images/vm_backup_job_storage_web.webp)](images/vm_backup_job_storage_web.webp "Click to zoom in")
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

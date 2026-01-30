@@ -1,5 +1,7 @@
 ---
 title: "Convert-VBRLegacyCopyBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/convert-vbrlegacycopybackup.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Convert-VBRLegacyCopyBackup
 
-In this article
 
 Short Description
 
@@ -103,6 +104,4 @@ Related Commands
 * [Disable-VBRJob](disable-vbrjob.md)
 * [Add-VBRBackupCopyJob](add-vbrbackupcopyjob.md)
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring Entire VMs Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_full_recovery.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Entire VMs Using Console
 
-In this article
 
 To restore an entire VM, use the Full VM Restore wizard.
 
@@ -26,6 +27,4 @@ To restore an entire VM, use the Full VM Restore wizard.
 13. [Specify a restore reason](full_restore_reason_vm.md).
 14. [Verify recovery settings](full_restore_review_vm.md).
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

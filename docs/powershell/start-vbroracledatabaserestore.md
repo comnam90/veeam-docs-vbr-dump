@@ -1,5 +1,7 @@
 ---
 title: "Start-VBROracleDatabaseRestore (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbroracledatabaserestore.html"
 last_updated: "2/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBROracleDatabaseRestore (obsolete)
 
-In this article
 
 Short Description
 
@@ -106,6 +107,4 @@ Related Commands
 * [Get-VBROracleDatabase](get-vbroracledatabase.md)
 * [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 2/27/2024
 
-Page content applies to build 13.0.1.1071

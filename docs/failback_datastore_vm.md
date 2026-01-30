@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Target Datastore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_datastore_vm.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Target Datastore
 
-In this article
 
 The Datastore step is available if you have selected the Failback to the specified location option at the [Destination](failback_destination_vm.md) step.
 
@@ -28,6 +29,4 @@ By default, Veeam Backup & Replication preserves disk types of the source VMs.
 
 ![Step 6. Select Target Datastore](images/failback_6.webp)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

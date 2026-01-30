@@ -1,5 +1,7 @@
 ---
 title: "New-VBRFileToTapeObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrfiletotapeobject.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRFileToTapeObject
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 
 [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

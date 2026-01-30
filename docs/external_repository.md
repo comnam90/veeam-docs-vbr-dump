@@ -1,5 +1,7 @@
 ---
 title: "External Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # External Repositories
 
-In this article
 
 An external repository is a read-only repository. You can use Veeam Backup & Replication to copy, import and restore backups created by [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10), [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\* and [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1) from external repositories to the cloud or on-premises repositories. This way, you can migrate workloads between cloud, on-premises and virtual infrastructures.
 
@@ -49,6 +50,4 @@ In This Section
 * [Adding External Repositories](external_repositories_add.md)
 * [Managing External Repositories](managing_external_repositories.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

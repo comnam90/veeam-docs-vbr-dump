@@ -1,5 +1,7 @@
 ---
 title: "PSCryptoKey"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/pscryptokey.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # PSCryptoKey
 
-In this article
 
 Contains encryption key.
 
@@ -26,6 +27,4 @@ Related Commands
 
 [Encryption](crypto_cmdlets.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071
