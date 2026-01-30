@@ -1,5 +1,7 @@
 ---
 title: "Removing Backups from Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_from_backups.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Backups from Configuration
 
-In this article
 
 If you want to remove records about backups from the Veeam Backup & Replication console and configuration database, you can use the Remove from configuration operation.
 
@@ -28,6 +29,4 @@ To remove a backup from the configuration:
 
 [![Click to zoom in](images/remove_from_backups.webp)](images/remove_from_backups.webp "Click to zoom in")
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

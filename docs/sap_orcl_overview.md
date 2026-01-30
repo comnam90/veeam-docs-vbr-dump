@@ -1,5 +1,7 @@
 ---
 title: "Overview"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_overview.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Overview
 
-In this article
 
 Veeam Plug-In for SAP on Oracle functions as an agent between SAP BR\*Tools and Veeam backup repositories. With the configured Veeam Plug-In, you can use the SAP BR\*Tools to perform backup and restore operations. Veeam Plug-In compresses and transfers database backups to a backup repository connected to Veeam Backup & Replication. To learn more, see [How Veeam Plug-In for SAP on Oracle Works](hiw_sap_orcl_plugin.md).
 
@@ -17,6 +18,4 @@ For backup operations, use the SAP BR\*Tools. Veeam Plug-In for SAP on Oracle tr
 
 In case of malware activity or unplanned actions, you can perform restore operations based on the backup data transferred by Veeam Plug-In to the Veeam Backup & Replication backup repositories. All restore operations are performed on the SAP BR\*Tools side. To learn more about restore operations with Veeam Plug-In, see [Data Restore](sap_orcl_data_restore.md).
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_storage_hv_web.html"
 last_updated: "9/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 To specify storage settings for the backup job:
 
@@ -40,6 +41,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 [![Click to zoom in](images/hv_backup_job_settings_storage_web.webp)](images/hv_backup_job_settings_storage_web.webp "Click to zoom in")
 
-Page updated 9/30/2025
 
-Page content applies to build 13.0.1.1071

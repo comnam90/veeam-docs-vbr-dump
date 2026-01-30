@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRLinuxScheduleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrlinuxscheduleoptions.html"
 last_updated: "5/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRLinuxScheduleOptions
 
-In this article
 
 Short Description
 
@@ -99,6 +100,4 @@ Related Commands
 * [New-VBRDailyOptions](new-vbrdailyoptions.md)
 * [Get-VBRComputerBackupJob](get-vbrcomputerbackupjob.md)
 
-Page updated 5/6/2024
 
-Page content applies to build 13.0.1.1071

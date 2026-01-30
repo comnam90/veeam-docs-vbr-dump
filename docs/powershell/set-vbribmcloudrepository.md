@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRIBMCloudRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbribmcloudrepository.html"
 last_updated: "7/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRIBMCloudRepository
 
-In this article
 
 Short Description
 
@@ -81,6 +82,4 @@ Related Commands
 * [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md)
 * [Get-VBRServer](get-vbrserver.md)
 
-Page updated 7/7/2025
 
-Page content applies to build 13.0.1.1071

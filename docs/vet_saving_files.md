@@ -1,5 +1,7 @@
 ---
 title: "Saving Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_saving_files.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Saving Files
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to save files published in a team channel to a specified location. You can save all files of a channel or specific posts.
 
@@ -50,6 +51,4 @@ To save a specific file published in a team channel, do the following:
 
 [![Saving Files](images/file_save.webp)](images/file_save.webp "Saving Files")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_before_you_begin_hv.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform failback, check the following prerequisites:
 
@@ -17,6 +18,4 @@ Before you perform failback, check the following prerequisites:
 * The target VM configuration version must be equal or higher than the source VM configuration version.
 * On non-Microsoft Windows SMB3 storage, for example, Tintri, Veeam Backup & Replication may display the "Failed to disable integrity bit on disk N" warning during VM restore. You can ignore this warning for non-Microsoft Windows SMB3 storage.
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

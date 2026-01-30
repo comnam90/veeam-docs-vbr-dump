@@ -1,5 +1,7 @@
 ---
 title: "Specifying Preferred Networks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/select_backup_network.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Preferred Networks
 
-In this article
 
 You can choose networks over which Veeam Backup & Replication must transport data when you perform data protection and disaster recovery tasks. This option can be helpful if you have a non-production network and want to route data traffic over this network instead of the production one.
 
@@ -51,6 +52,4 @@ To specify a preferred network:
 | Note |
 | [For multiple preferred network] The order of the networks in the preferred networks list does not specify the order of how Veeam Backup & Replication connects to these networks. |
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Names for Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_exporting_schema_5.html"
 last_updated: "8/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Names for Objects
 
-In this article
 
 At this step of the wizard, specify the name to be assigned to the object.
 
@@ -16,6 +17,4 @@ At this step of the wizard, specify the name to be assigned to the object.
 
 [![Specifying Names for Objects](images/export_wizard_schema_obj_name.webp)](images/export_wizard_schema_obj_name.webp "Specifying Names for Objects")
 
-Page updated 8/10/2025
 
-Page content applies to build 13.0.1.1071

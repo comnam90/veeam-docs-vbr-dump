@@ -1,5 +1,7 @@
 ---
 title: "Adjusting PostgreSQL Instance Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_instance_configuration.html"
 last_updated: "10/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adjusting PostgreSQL Instance Configuration
 
-In this article
 
 If you selected to use an already installed PostgreSQL instance at the [Specify Database Engine and Instance](install_vbr_sql.md) step of the wizard, make sure that the instance configuration is sufficient for the Veeam Backup & Replication performance.
 
@@ -72,6 +73,4 @@ Alternatively, you can do it by executing the SQL code:
 | --- |
 | CREATE EXTENSION IF NOT EXISTS "pg\_stat\_statements"; |
 
-Page updated 10/14/2025
 
-Page content applies to build 13.0.1.1071

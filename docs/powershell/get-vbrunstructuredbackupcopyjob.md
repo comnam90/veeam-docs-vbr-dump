@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackupCopyJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackupcopyjob.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackupCopyJob
 
-In this article
 
 Short Description
 
@@ -85,6 +86,4 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

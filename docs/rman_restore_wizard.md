@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_restore_wizard.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do the following:
 
@@ -17,6 +18,4 @@ To launch the Restore wizard, do the following:
 
 [![Launching Restore Wizard](images/rman_restore.webp)](images/rman_restore.webp "Launching Restore Wizard")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

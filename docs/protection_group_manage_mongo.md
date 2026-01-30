@@ -1,5 +1,7 @@
 ---
 title: "Managing Protection Group for MongoDB"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_manage_mongo.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Protection Group for MongoDB
 
-In this article
 
 In Veeam Backup & Replication, computers with MongoDB are organized into a protection group for applications. You can perform the following operations with this type of protection groups:
 
@@ -19,6 +20,4 @@ In Veeam Backup & Replication, computers with MongoDB are organized into a prote
 * [Disable a protection group](mongo_protection_group_disable.md).
 * [Remove a protection group](mongo_protection_group_remove.md).
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

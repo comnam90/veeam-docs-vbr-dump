@@ -1,5 +1,7 @@
 ---
 title: "Managing Google Cloud Storage Containers"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/google_cloud_containers.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Google Cloud Storage Containers
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [New-VBRGoogleCloudFolder](new-vbrgooglecloudfolder.md) | Creates Google Cloud folders. |
 | [Get-VBRGoogleCloudFolder](get-vbrgooglecloudfolder.md) | Returns the array of Google Cloud folders. |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

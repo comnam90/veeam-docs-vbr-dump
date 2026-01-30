@@ -1,5 +1,7 @@
 ---
 title: "VBRTenantFailoverPlan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtenantfailoverplan.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRTenantFailoverPlan
 
-In this article
 
 Contains tenant failover plan on service provider side.
 
@@ -27,6 +28,4 @@ Properties
 | Name | string | Failover plan name. |
 | Description | sting | Failover plan description. |
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

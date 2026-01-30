@@ -1,5 +1,7 @@
 ---
 title: "Virtualization Servers and Hosts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/setup_add_server.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtualization Servers and Hosts
 
-In this article
 
 You can add the following types of servers and hosts to the backup infrastructure:
 
@@ -53,6 +54,4 @@ Related Topics
 * [Editing Server Settings](edit_server.md)
 * [Removing Servers](remove_server.md)
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

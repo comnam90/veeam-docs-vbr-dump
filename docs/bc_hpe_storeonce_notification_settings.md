@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/bc_hpe_storeonce_notification_settings.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the backup copy job:
 
@@ -33,6 +34,4 @@ Email notifications will be sent if you configure global email notification sett
 
 ![Notification Settings](images/backup_copy_hpe_storeonce_notifications.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

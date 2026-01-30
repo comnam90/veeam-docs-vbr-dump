@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_mount_servers.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Mount Server Settings
 
-In this article
 
 At the Mount Servers step of the wizard, specify mount server settings for published file shares.
 
@@ -29,6 +30,4 @@ To quickly find a mount server, you can use the search field at the bottom of th
 
 ![Step 3. Specify Mount Server Settings](images/instant_nas_recovery_mount_servers.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

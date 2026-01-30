@@ -1,5 +1,7 @@
 ---
 title: "Removing Microsoft Entra ID Tenants"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_remove_tenant.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Microsoft Entra ID Tenants
 
-In this article
 
 If you do not want to protect the added Microsoft Entra ID tenant anymore, you can remove it from the backup infrastructure. Note that the tenant will be removed only from the backup infrastructure, not Entra ID.
 
@@ -25,6 +26,4 @@ To remove a tenant:
 
 [![Remove Tenant](images/entra_id_manage_tenant.webp)](images/entra_id_manage_tenant.webp "Remove Tenant")
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

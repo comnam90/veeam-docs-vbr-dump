@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREPSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrepsession.html"
 last_updated: "1/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREPSession
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Examples
 | --- | --- |
 | This command gets a specific session of a backup job run by Veeam Agent operating in a standalone mode.  |  | | --- | | Get-VBREPSession -Name "Backup Job Mediaserver" | |
 
-Page updated 1/5/2024
 
-Page content applies to build 13.0.1.1071

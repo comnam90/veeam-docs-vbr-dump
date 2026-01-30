@@ -1,5 +1,7 @@
 ---
 title: "Advanced Deployment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/advanced.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Deployment
 
-In this article
 
 For mid-size and large-scale virtual environments with a large number of jobs, the load on the backup server is heavy. In this case, it is recommended that you use the advanced deployment scenario that moves the backup workload to dedicated backup infrastructure components. The backup server here functions as a "manager" for deploying and maintaining backup infrastructure components.
 
@@ -46,6 +47,4 @@ Related Topics
 
 [Distributed Deployment](distributed.md)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

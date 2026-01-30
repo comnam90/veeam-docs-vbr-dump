@@ -1,5 +1,7 @@
 ---
 title: "Converting Backups from Non-Root to Root Shared Folders"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/convert_backups_nonroot_to_root.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Converting Backups from Non-Root to Root Shared Folders
 
-In this article
 
 Veeam Backup & Replication allows adding a server root folder as a source for file backup jobs. In this case, all changes to separate shared folders residing on this server will be reflected in the file backup job where the root shared folder of this server is added. You can even add shared root folders using different protocols to one file backup job and thus protect all file shares that are or will be added on the server.
 
@@ -30,6 +31,4 @@ At this step, you can check if the cmdlet has correctly converted the backup. To
 
 1. Enable file backup jobs protecting file shares, for which you converted backups. To do that, right-click the required job from the Jobs node of the inventory pane in the Home view and clear selection Disable. Alternatively, you can click Disable on the ribbon.
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

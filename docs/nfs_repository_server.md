@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Shared Folder Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_repository_server.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Shared Folder Settings
 
-In this article
 
 To configure settings for an NFS share:
 
@@ -21,6 +22,4 @@ For more information on the gateway servers, their requirements and limitations,
 
 ![Step 3. Specify Shared Folder Settings](images/nfs_repo_share.webp)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

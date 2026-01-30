@@ -1,5 +1,7 @@
 ---
 title: "Tape Vaults"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vaults.html"
 last_updated: "7/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Vaults
 
-In this article
 
 |  |
 | --- |
@@ -23,6 +24,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Remove-VBRTapeVault](remove-vbrtapevault.md) | Removes vaults. |
 | [Set-VBRTapeVault](set-vbrtapevault.md) | Modifies vaults. |
 
-Page updated 7/25/2023
 
-Page content applies to build 13.0.1.1071

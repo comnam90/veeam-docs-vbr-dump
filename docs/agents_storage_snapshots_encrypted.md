@@ -1,5 +1,7 @@
 ---
 title: "Storage Snapshots on BitLocker Encrypted Volumes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_storage_snapshots_encrypted.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Snapshots on BitLocker Encrypted Volumes
 
-In this article
 
 You can use Veeam Backup & Replication and Veeam Agent for Microsoft Windows operating in the managed mode to create backups from storage snapshots located on volumes encrypted with Microsoft Windows BitLocker.
 
@@ -29,6 +30,4 @@ Consider the following:
 * If automatic unlocking is not set on the Veeam Agent computer, file indexing will not work during the backup process.
 * If automatic unlocking is not set on the backup proxy, only volume-level restore to a new location is available. File-level restore and volume-level restore to the original location will fail.
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

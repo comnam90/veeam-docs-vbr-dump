@@ -1,5 +1,7 @@
 ---
 title: "Exporting to Custom Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_exporting_schema.html"
 last_updated: "12/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting to Custom Location
 
-In this article
 
 To export database schema and data to a custom location, do the following:
 
@@ -19,6 +20,4 @@ To export database schema and data to a custom location, do the following:
 6. [Specify export location](vesql_exporting_schema_6.md).
 7. [Review the export summary](vesql_export_schema_tal_summary.md).
 
-Page updated 12/6/2024
 
-Page content applies to build 13.0.1.1071

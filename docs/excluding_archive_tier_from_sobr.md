@@ -1,5 +1,7 @@
 ---
 title: "Excluding Archive Extent from Scale-Out Backup Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/excluding_archive_tier_from_sobr.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Excluding Archive Extent from Scale-Out Backup Repository
 
-In this article
 
 You can exclude an archive extent from the scale-out backup repository scope, for example, if you no longer want to use any third party services to store your data.
 
@@ -25,6 +26,4 @@ You will be asked to confirm the action in the dialog box. After that, the objec
 
 ![Excluding Archive Extent from Scale-Out Backup Repository](images/exclude_archive_extent.webp)
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

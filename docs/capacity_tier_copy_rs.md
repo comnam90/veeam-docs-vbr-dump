@@ -1,5 +1,7 @@
 ---
 title: "Restore Scenarios"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_copy_rs.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore Scenarios
 
-In this article
 
 This section explains possible restore scenarios from the capacity tier.
 
@@ -59,6 +60,4 @@ Related Topics
 * [Moving Backups to Capacity Tier](capacity_tier_move.md)
 * [Copying Backups to Capacity Tier](capacity_tier_copy.md)
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

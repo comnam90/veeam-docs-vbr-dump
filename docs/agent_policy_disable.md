@@ -1,5 +1,7 @@
 ---
 title: "Enabling and Disabling Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_disable.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling and Disabling Backup Policy
 
-In this article
 
 You can temporary disable Veeam Agent backup policies configured in Veeam Backup & Replication. While a backup policy is in the disabled state, the following operations are not performed in the Veeam Agent management infrastructure:
 
@@ -37,6 +38,4 @@ To enable a disabled policy, select it in the list and click Disable on the ribb
 
 [![Disable Backup Policy](images/agent_policy_disable.webp)](images/agent_policy_disable.webp "Disable Backup Policy")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

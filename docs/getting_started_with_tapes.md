@@ -1,5 +1,7 @@
 ---
 title: "Getting Started with Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/getting_started_with_tapes.html"
 last_updated: "5/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting Started with Tapes
 
-In this article
 
 After you have connected tape devices, you need to complete the following steps:
 
@@ -18,6 +19,4 @@ After you have connected tape devices, you need to complete the following steps:
 5. Configure and run [backup to tape](creating_backup_to_tape_jobs.md), [file to tape](file_to_tape_jobs.md) or [object storage to tape](object_to_tape_jobs.md) jobs.
 6. Restore [virtual machines to infrastructure](vm_restore_from_tape.md) or [both virtual and physical machines to repository](vm_restore_from_tape_to_repository.md), or [restore files](file_restore_from_tape.md) and [objects from tape](object_restore_from_tape.md).
 
-Page updated 5/27/2024
 
-Page content applies to build 13.0.1.1071

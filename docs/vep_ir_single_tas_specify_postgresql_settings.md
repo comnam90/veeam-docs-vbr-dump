@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify PostgreSQL Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_single_tas_specify_postgresql_settings.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify PostgreSQL Settings
 
-In this article
 
 At this step of the wizard, specify the following PostgreSQL settings:
 
@@ -25,6 +26,4 @@ At this step of the wizard, specify the following PostgreSQL settings:
 
 [![Specifying Database Files Target Location](images/vep_ir_to_another_server_postgresql_settings.webp)](images/vep_ir_to_another_server_postgresql_settings.webp "Specifying Database Files Target Location")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

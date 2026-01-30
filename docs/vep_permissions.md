@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_permissions.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 The following table lists the user account permissions necessary to launch Veeam Explorer for PostgreSQL and recover PostgreSQL data.
 
@@ -17,6 +18,4 @@ The following table lists the user account permissions necessary to launch Veeam
 | Restore, Publish, Instant Recovery | The account used for PostgreSQL data recovery must be a Linux user with root privileges on the target machine. Root privileges are required to mount the backed-up file system to the target server and to communicate with PostgreSQL. |
 | Export | The account used to connect to the staging server must be a Linux user with root privileges.  Consider the following when configuring the account used to connect to the target server:   * [For Windows-based backup servers] When you export data to the local host where Veeam Explorer for PostgreSQL is running, the account under which Veeam Explorer for PostgreSQL is running must be a member of the local Administrators group. * When you export data to a Linux server, the account used to connect to the target server can be a Linux user with non-root privileges. |
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

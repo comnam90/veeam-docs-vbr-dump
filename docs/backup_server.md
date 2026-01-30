@@ -1,5 +1,7 @@
 ---
 title: "Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_server.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Server
 
-In this article
 
 The backup server is a Windows-based or Linux-based physical or virtual machine on which Veeam Backup & Replication is installed. It is the core component in the backup infrastructure that fills the role of the “configuration and control center”. The backup server performs all types of administrative activities:
 
@@ -26,6 +27,4 @@ Related Topics
 * [Veeam Backup & Replication Installation on Microsoft Windows](installation.md)
 * [Veeam Backup & Replication Services](services_and_components.md)
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

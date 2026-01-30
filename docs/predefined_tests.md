@@ -1,5 +1,7 @@
 ---
 title: "Predefined Tests"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/predefined_tests.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Predefined Tests
 
-In this article
 
 Veeam Backup & Replication can verify machines with the following predefined tests:
 
@@ -27,6 +28,4 @@ You can run verification tests for machines added to the application group or pr
 
 ![Predefined Tests](images/surebackup_job_tests.webp)
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

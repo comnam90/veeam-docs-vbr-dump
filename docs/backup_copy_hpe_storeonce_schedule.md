@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Define Backup Copy Window"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_hpe_storeonce_schedule.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Define Backup Copy Window
 
-In this article
 
 At the Schedule step of the wizard, you can define a time span in which the backup copy job will transport data between source and target backup repositories. For more information, see [Backup Copy Window](backup_copy_window.md#immediate).
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Backup Copy Window](backup_copy_window.md)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

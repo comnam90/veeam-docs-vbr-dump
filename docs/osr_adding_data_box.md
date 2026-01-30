@@ -1,5 +1,7 @@
 ---
 title: "Adding Azure Data Box Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/osr_adding_data_box.html"
 last_updated: "1/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Azure Data Box Storage
 
-In this article
 
 [Azure Data Box](https://docs.microsoft.com/en-us/azure/databox/data-box-overview) is a physical device which you can request for a short period of time from Microsoft. You can temporarily attach it to the backup infrastructure and use it as an object storage. For more information about ordering Azure Data Box and preparing to use it, see [Microsoft Docs](https://docs.microsoft.com/en-us/azure/databox/data-box-deploy-ordered).
 
@@ -39,6 +40,4 @@ To add Microsoft Azure Blob storage, use the New Object Storage Repository wizar
 5. [Specify object storage settings](azure_db_storage_details.md).
 6. [Finish working with the wizard](azure_db_finishing_wizard.md).
 
-Page updated 1/16/2025
 
-Page content applies to build 13.0.1.1071

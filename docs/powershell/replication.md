@@ -1,5 +1,7 @@
 ---
 title: "Replication Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/replication.html"
 last_updated: "6/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replication Jobs
 
-In this article
 
 The Veeam PowerShell Snap-In contains full set of capabilities for running replication tasks.
 
@@ -48,6 +49,4 @@ See Also
 * [Restore Points](point_cmdlets.md)
 * [Sessions](session_cmdlets.md)
 
-Page updated 6/27/2024
 
-Page content applies to build 13.0.1.1071

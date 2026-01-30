@@ -1,5 +1,7 @@
 ---
 title: "Data Transfer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_data_transfer.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Transfer
 
-In this article
 
 Veeam Backup & Replication allows you to transfer data to and from capacity extents, as well as [move data from capacity extents to archive extents](archive_data_transfer.md).
 
@@ -47,6 +48,4 @@ In This Section
 * [Downloading Data from Capacity Tier](downloading_from_capacity_tier.md)
 * [Viewing Capacity Tier Sessions Statistics](offload_session_results.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

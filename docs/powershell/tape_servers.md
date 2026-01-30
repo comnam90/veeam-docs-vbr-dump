@@ -1,5 +1,7 @@
 ---
 title: "Tape Servers"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/tape_servers.html"
 last_updated: "9/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Servers
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with tape servers:
 
@@ -18,6 +19,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Remove-VBRTapeServer](remove-vbrtapeserver.md) | Removes tape servers. |
 | [Set-VBRTapeServer](set-vbrtapeserver.md) | Modifies tape servers. |
 
-Page updated 9/4/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup Repositories with Rotated Drives"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_rotated.html"
 last_updated: "3/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Repositories with Rotated Drives
 
-In this article
 
 A backup repository can use rotated drives. Rotated drives can be detachable USB or eSATA hard drives. This scenario can be helpful if you want to store backups on several external hard drives that you plan to regularly move between different locations.
 
@@ -32,6 +33,4 @@ In This Section
 * [How Repository with Rotated Drives Works](rotated_drives_hiw.md)
 * [Deploying Backup Repositories with Rotated Drives](rotated_drives_configure.md)
 
-Page updated 3/28/2025
 
-Page content applies to build 13.0.1.1071

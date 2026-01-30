@@ -1,5 +1,7 @@
 ---
 title: "Direct Backup to Object Storage Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_backup_to_object_storage_limitations.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Direct Backup to Object Storage Considerations and Limitations
 
-In this article
 
 This section contains the general limitations for direct backup to object storage:
 
@@ -36,6 +37,4 @@ Consider the following limitations:
 * [For Oracle Solaris 10 1/13] To enable Veeam Agent connection to S3 compatible storage repositories, you must install the necessary CA certificates. For more information on installing the certificates, see [this Veeam KB article](https://veeam.com/kb4735).
 * Veeam Agent for Unix only supports backup repositories that are configured to have [direct connection](object_storage_repository.md#direct) to object storage.
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

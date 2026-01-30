@@ -1,5 +1,7 @@
 ---
 title: "Performing Instant Recovery to Microsoft Hyper-V Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_instant_recovery_hv_vm_web.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Instant Recovery to Microsoft Hyper-V Using Web UI
 
-In this article
 
 With Instant Recovery, you can recover workloads from backups and register them as Microsoft Hyper-V VMs.
 
@@ -29,6 +30,4 @@ To perform Instant Recovery, use the Instant Recovery to Microsoft Hyper-V wizar
 | Note |
 | At the moment, web UI has a limited functionality. It allows recovering only Microsoft Hyper-V VMs to Microsoft Hyper-V. |
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

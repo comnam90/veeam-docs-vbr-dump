@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_export_specify_restore_point.html"
 last_updated: "6/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Restore Point
 
-In this article
 
 At this step of the wizard, select a state as of which you want to recover your databases:
 
@@ -26,6 +27,4 @@ Note that if the backed-up WAL files do not contain information about some datab
 
 [![Specifying Restore Point](images/vep_export_specify_restore_point.webp)](images/vep_export_specify_restore_point.webp "Specifying Restore Point")
 
-Page updated 6/18/2024
 
-Page content applies to build 13.0.1.1071

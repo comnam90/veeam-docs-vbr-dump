@@ -1,5 +1,7 @@
 ---
 title: "Creating SSH Credentials Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_linux_console.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating SSH Credentials Using Console
 
-In this article
 
 To add a new credentials record with a user name and password for a Linux server, do the following in the Veeam Backup & Replication console:
 
@@ -36,6 +37,4 @@ Veeam Backup & Replication will first try to use the sudo command. If the attemp
 
 ![Creating SSH Credentials Using Console](images/creds_linux.webp)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

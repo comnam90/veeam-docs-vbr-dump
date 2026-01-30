@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Infrastructure Scope"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_export_logs_servers.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Infrastructure Scope
 
-In this article
 
 At the Scope step of the wizard, define the scope for Veeam Agent logs export. You can select one of the following options:
 
@@ -29,6 +30,4 @@ In this case, Veeam Backup & Replication exports only the Veeam Metrics Collecto
 
 ![Step 2. Select Infrastructure Scope](images/exporting_logs_job.webp)
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Quick Rollback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/incremental_restore.html"
 last_updated: "3/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Quick Rollback
 
-In this article
 
 When you restore a full VM or VM hard disk to the original location, you can instruct Veeam Backup & Replication to perform quick rollback — incremental data restore. Instead of restoring an entire VM or VM disk from a backup file, Veeam Backup & Replication will recover only those data blocks that are necessary to revert the VM or VM disk to an earlier point in time. Quick rollback significantly reduces the recovery time and has little impact on the production environment.
 
@@ -29,6 +30,4 @@ Related Topics
 * [Performing Entire VM Restore](performing_full_recovery.md)
 * [Restoring VM Hard Disks](performing_disk_restore.md)
 
-Page updated 3/5/2025
 
-Page content applies to build 13.0.1.1071

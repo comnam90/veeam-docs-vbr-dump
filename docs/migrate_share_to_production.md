@@ -1,5 +1,7 @@
 ---
 title: "Migrating File Share to Production"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migrate_share_to_production.html"
 last_updated: "8/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating File Share to Production
 
-In this article
 
 |  |
 | --- |
@@ -24,6 +25,4 @@ To migrate the mounted file share to production use the Migrate to Production wi
 4. [Specify file share switchover options](migrate_share_to_production_restore_switchover.md).
 5. [Finish working with the wizard](migrate_share_to_production_summary.md).
 
-Page updated 8/25/2023
 
-Page content applies to build 13.0.1.1071

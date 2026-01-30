@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New External Repository Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_launching_wizard.html"
 last_updated: "7/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New External Repository Wizard
 
-In this article
 
 To launch the New Backup Repository wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the New Backup Repository wizard, do one of the following:
 
 [![Step 1. Launch New External Repository Wizard](images/new_external_aws_splash.webp)](images/new_external_aws_splash.webp)
 
-Page updated 7/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Source and Target Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_hpe_storeonce_source_and_target.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Source and Target Repositories
 
-In this article
 
 At the Storage Mapping step of the wizard, select a source repository from which you want to copy backups and a target repository where you want to store the copies.
 
@@ -37,6 +38,4 @@ When you create backup copy jobs, check that you do not create loops in data flo
 
 ![Step 3. Select Source and Target Repositories](images/backup_copy_hpe_storeonce_source_target.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

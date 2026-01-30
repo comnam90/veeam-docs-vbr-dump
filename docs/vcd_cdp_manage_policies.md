@@ -1,5 +1,7 @@
 ---
 title: "Managing Cloud Director CDP Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_manage_policies.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Cloud Director CDP Policies
 
-In this article
 
 After you create VMware Cloud Director CDP policies, you can view statistics, edit, disable and delete policies.
 
@@ -19,6 +20,4 @@ In This Section
 * [Editing Policies](vcd_cdp_edit.md)
 * [Disabling and Deleting Policies](vcd_cdp_disable.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Deleting Replicas from Disk"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/delete_replica_from_disk_hv.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Replicas from Disk
 
-In this article
 
 When you delete replicas from disks, Veeam Backup & Replication removes the replicas not only from the Veeam Backup & Replication console and configuration database, but also from host storage.
 
@@ -24,6 +25,4 @@ To delete replica files from disks:
 
 [![Deleting Replicas from Disk](images/replica_remove_from_replicas_hv.webp)](images/replica_remove_from_replicas_hv.webp)
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

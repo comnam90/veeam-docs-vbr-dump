@@ -1,5 +1,7 @@
 ---
 title: "Performing Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_performing_failback.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Failback
 
-In this article
 
 For more information on failback, see [Failover and Failback for Universal CDP](uni_cdp_failover_failback.md) and [Failback](uni_cdp_failback.md).
 
@@ -24,6 +25,4 @@ To perform failback, use the CDP Replica Failback wizard.
 9. [Schedule switching to production](uni_cdp_failback_schedule.md).
 10. [Finish working with the wizard](uni_cdp_failback_summary.md).
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

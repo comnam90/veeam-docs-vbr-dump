@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Replication Resources"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/replication_resources.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Replication Resources
 
-In this article
 
 Replication resources are quotas of resources for replication to the cloud. Replication resources include access to the service provider hardware, cloud storage and networking.
 
@@ -48,6 +49,4 @@ Public IP Addresses
 | [Get-VBRCloudTenantNetworkAppliance](get-vbrcloudtenantnetworkappliance.md) | Returns tenants' network extension appliances |
 | [Set-VBRCloudTenantNetworkAppliance](set-vbrcloudtenantnetworkappliance.md) | Modifies tenants' network extension appliances |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

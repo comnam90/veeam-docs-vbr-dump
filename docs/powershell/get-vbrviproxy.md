@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRViProxy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrviproxy.html"
 last_updated: "4/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRViProxy
 
-In this article
 
 Short Description
 
@@ -59,6 +60,4 @@ Examples
 | --- | --- |
 | This command gets the VMware backup proxy with the name LocalProxy.  |  | | --- | | Get-VBRViProxy -Name "LocalProxy" | |
 
-Page updated 4/18/2024
 
-Page content applies to build 13.0.1.1071

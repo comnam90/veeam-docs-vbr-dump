@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_backup_job_settings.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 When you create backup jobs, replication jobs, and CDP policies, make sure to enable application-aware processing in the Veeam Backup & Replication console.
 
@@ -28,6 +29,4 @@ Consider the following:
 | Note |
 | You must use Veeam Agent backup jobs in the following cases:   * If your Microsoft SharePoint infrastructure contains virtual and physical machines and has Microsoft SharePoint and Microsoft SQL Server installed on separate machines. You can use one or separate jobs to back up the Microsoft SharePoint and Microsoft SQL Server machines. * If your Microsoft SQL Server machines are a part of a failover cluster.   For more information, see [Working with Veeam Agent Backup Jobs and Policies](backup_job_tasks.md). |
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

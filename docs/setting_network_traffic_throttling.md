@@ -1,5 +1,7 @@
 ---
 title: "Enabling Traffic Throttling"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/setting_network_traffic_throttling.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling Traffic Throttling
 
-In this article
 
 Traffic throttling setting in a network rule allows you to limit the impact of Veeam Backup & Replication tasks on network performance. Traffic throttling prevents jobs from utilizing the entire bandwidth available in your environment and makes sure that other network operations get enough traffic.
 
@@ -96,6 +97,4 @@ In this case, Veeam Backup & Replication will use the lowest speed limit — 1 M
 
 The principle of several rules and the lowest speed limit also applies if some rules are created on the Veeam Backup & Replication side and others on the Veeam Agent for Microsoft Windows side. For more information on how to throttle traffic by Veeam Agent for Microsoft Windows, see the [Veeam Agent Backup](agents_protection_group_advanced_vaw.md) section and [Veeam Agent for Microsoft Windows User Guide](https://helpcenter.veeam.com/docs/agentforwindows/userguide/settings_network_bandwidth.html?ver=13).
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

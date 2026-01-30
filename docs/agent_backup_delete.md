@@ -1,5 +1,7 @@
 ---
 title: "Removing Backup from Disk"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_delete.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Backup from Disk
 
-In this article
 
 If you want to delete records about backups from the Veeam Backup & Replication console and configuration database and, additionally, delete backup files from the backup repository, you can use the Remove from disk operation.
 
@@ -29,6 +30,4 @@ To remove a Veeam Agent backup from the backup repository:
 
 [![Delete Backup from Disk](images/agent_remove_from_disk.webp)](images/agent_remove_from_disk.webp "Delete Backup from Disk")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

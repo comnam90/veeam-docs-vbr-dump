@@ -1,5 +1,7 @@
 ---
 title: "Get-HP3Snapshot"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-hp3snapshot.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-HP3Snapshot
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Get-HP3Storage](get-hp3storage.md)
 * [Get-HP3Volume](get-hp3volume.md)
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Installing CDP Agent Service and Filter Driver"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_service_install.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing CDP Agent Service and Filter Driver
 
-In this article
 
 To install the Veeam CDP Agent Service and Veeam CDP Volume Filter Driver on workloads, you must create a protection group and configure it to install the service and driver:
 
@@ -42,6 +43,4 @@ For the full description of the protection group options, see [Creating Protecti
 
 ![Installing CDP Agent Service and Filter Driver](images/cdp_guest_filter.webp)
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

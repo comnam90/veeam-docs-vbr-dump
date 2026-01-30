@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Veeam Agent and Other Veeam Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_remove.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Veeam Agent and Other Veeam Components
 
-In this article
 
 You can remove Veeam Agent and the following Veeam components installed on a protected computer as one operation:
 
@@ -54,6 +55,4 @@ To uninstall Veeam Agent, Veeam Plug-Ins and Veeam components:
 
 [![Uninstall all components](images/protected_computer_remove_all.webp)](images/protected_computer_remove_all.webp "Uninstall all components")
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

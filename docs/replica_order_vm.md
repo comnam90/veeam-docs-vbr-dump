@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify VM Processing Order"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_order_vm.html"
 last_updated: "7/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify VM Processing Order
 
-In this article
 
 At the Virtual Machines step of the wizard, click Up and Down to change the processing order. VMs at the top of the list have a higher priority and will be processed first.
 
@@ -18,6 +19,4 @@ At the Virtual Machines step of the wizard, click Up and Down to change the proc
 
 ![Step 6. Specify VM Processing Order](images/vm_replica_job_order.webp)
 
-Page updated 7/10/2025
 
-Page content applies to build 13.0.1.1071

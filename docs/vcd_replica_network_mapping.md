@@ -1,5 +1,7 @@
 ---
 title: "Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_network_mapping.html"
 last_updated: "8/2/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Network Mapping
 
-In this article
 
 To establish a connection between a production VM and its replica, Veeam Backup & Replication uses network mapping.
 
@@ -55,6 +56,4 @@ If static IP pool allocation mode is used on the source VM, Veeam Backup & Repli
 * If mapping (manual or automatic) was performed — NIC is connected, the IP mode is DHCP and new MAC address is assigned.
 * If mapping (manual or automatic) was not performed — NIC is disconnected, the IP mode is not set and new MAC address is assigned.
 
-Page updated 8/2/2023
 
-Page content applies to build 13.0.1.1071

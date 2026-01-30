@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_oracle_before.html"
 last_updated: "3/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create an application backup policy in the Veeam Backup & Replication console, check the following prerequisites:
 
@@ -27,6 +28,4 @@ Application backup policies have the following limitations:
 
 * An application backup policy cannot back up Oracle installations with SAP BR\*Tools user and password in secure storage. If you work with Veeam Plug-In in the managed mode, this configuration is not supported.
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

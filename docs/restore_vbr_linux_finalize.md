@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Finalize Restore Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_finalize.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Finalize Restore Process
 
-In this article
 
 After the restore process has finished, consider the following:
 
@@ -18,6 +19,4 @@ After the restore process has finished, consider the following:
 * Veeam Backup & Replication does not restore credentials records of Google Cloud service accounts that were created automatically using the Cloud Credentials Manager. For details, see [Google Cloud Service Accounts](cloud_credentials_gcp.md).
 * After the configuration restore, you may need to perform the components upgrade. For more information, see [Upgrading Infrastructure Components](components_update.md).
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudFailoverPlan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudfailoverplan.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudFailoverPlan
 
-In this article
 
 Contains cloud failover plan.
 
@@ -37,6 +38,4 @@ Related Commands
 * [Start-VBRFailoverPlan](start-vbrfailoverplan.md)
 * [Undo-VBRFailoverPlan](undo-vbrfailoverplan.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

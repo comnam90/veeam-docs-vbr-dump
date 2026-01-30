@@ -1,5 +1,7 @@
 ---
 title: "Failback Commit"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/commit_failback_hv.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failback Commit
 
-In this article
 
 Failback commit is one of the ways to finalize failback. When you commit failback, you confirm that the VM to which you failed back (the production VM) and also changes sent to it during failback work as expected. After the commit operation, Veeam Backup & Replication resumes replication activities for the production VM.
 
@@ -27,6 +28,4 @@ Related Topics
 
 [Committing Failback](failback_commit_hv.md)
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

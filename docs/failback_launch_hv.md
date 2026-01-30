@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Failback Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_launch_hv.html"
 last_updated: "1/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Failback Wizard
 
-In this article
 
 To launch the Failback wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the Failback wizard, do one of the following:
 
 [![Step 1. Launch Failback Wizard](images/hv_failback_task.webp)](images/hv_failback_task.webp)
 
-Page updated 1/27/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRObjectStorageBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrobjectstoragebackupjob.html"
 last_updated: "11/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRObjectStorageBackupJob
 
-In this article
 
 Short Description
 
@@ -93,6 +94,4 @@ Related Commands
 * [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
-Page updated 11/5/2024
 
-Page content applies to build 13.0.1.1071

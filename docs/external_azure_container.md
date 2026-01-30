@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Azure Blob Container"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_azure_container.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Azure Blob Container
 
-In this article
 
 At the Container step of the wizard, specify Azure Blob storage container settings:
 
@@ -23,6 +24,4 @@ If you do not see the required folder, make sure that the repository you are try
 
 [![Step 4. Select Azure Blob Container](images/external_azure_wizard_container.webp)](images/external_azure_wizard_container.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

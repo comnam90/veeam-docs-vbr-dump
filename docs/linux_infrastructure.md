@@ -1,5 +1,7 @@
 ---
 title: "Deploying Linux Infrastructure Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure.html"
 last_updated: "11/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deploying Linux Infrastructure Components
 
-In this article
 
 You can prepare a Linux machine as a backup infrastructure component in one of the following ways:
 
@@ -23,6 +24,4 @@ In This Section
 * [Updating Veeam Infrastructure Appliance](linux_infrastructure_appliance_updating.md)
 * [Reinstalling Veeam Infrastructure Appliance with ISO](linux_infrastructure_appliance_reinstall.md)
 
-Page updated 11/11/2025
 
-Page content applies to build 13.0.1.1071

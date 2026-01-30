@@ -1,5 +1,7 @@
 ---
 title: "Unstructured Data Backup Retention Scenarios"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_retention_scenarios.html"
 last_updated: "7/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unstructured Data Backup Retention Scenarios
 
-In this article
 
 There can be a number of backup retention scenarios depending on the configuration of backup and archive repositories. In this section, you can find example cases that illustrate file and object storage backup retention with different settings.
 
@@ -139,6 +140,4 @@ Finally, on day 56, the immutability lock is released for file version 2 and it 
 
 Thus, no file versions are stored in the backup repository for this file any longer.
 
-Page updated 7/22/2024
 
-Page content applies to build 13.0.1.1071

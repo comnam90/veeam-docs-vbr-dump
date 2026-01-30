@@ -1,5 +1,7 @@
 ---
 title: "Oracle Log Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_backup_hv.html"
 last_updated: "3/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Log Backup
 
-In this article
 
 Veeam Backup & Replication supports backup of Oracle database archived logs and restore of Oracle databases.
 
@@ -37,6 +38,4 @@ Related Topics
 * [Log Shipping Servers](oracle_log_shipping_hv.md)
 * [Archived Log Backup Statistics](oracle_statistics_hv.md)
 
-Page updated 3/3/2025
 
-Page content applies to build 13.0.1.1071

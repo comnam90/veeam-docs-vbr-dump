@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRvCloudJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrvcloudjob.html"
 last_updated: "10/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRvCloudJob
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Related Commands
 * [Find-VBRvCloudEntity](find-vbrvcloudentity.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
-Page updated 10/1/2025
 
-Page content applies to build 13.0.1.1071

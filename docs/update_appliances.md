@@ -1,5 +1,7 @@
 ---
 title: "Updating Veeam Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_appliances.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating Veeam Appliances
 
-In this article
 
 Update operations are managed by Veeam Updater — a Veeam service that runs on backup server or other backup infrastructure components deployed from Veeam appliances — Veeam Software Appliance and Veeam Infrastructure Appliance. The service communicates with components through Veeam Backup & Replication REST API and uses the Veeam Identity Service for authorization.
 
@@ -31,6 +32,4 @@ In This Section
 * [Installing Updates](update_appliance_install_updates.md)
 * [Viewing Update History](update_appliance_view_history.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

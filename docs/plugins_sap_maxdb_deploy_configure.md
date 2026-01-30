@@ -1,5 +1,7 @@
 ---
 title: "Configuring Environment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Environment
 
-In this article
 
 To back up SAP MaxDB database, you must configure the following components on the machine with Veeam Plug-In for SAP MaxDB:
 
@@ -15,6 +16,4 @@ To back up SAP MaxDB database, you must configure the following components on th
 * [Configurating Backint](plugins_sap_maxdb_deploy_configure_backint.md)
 * [Configuring SAP MaxDB database](plugins_sap_maxdb_deploy_configure_db.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

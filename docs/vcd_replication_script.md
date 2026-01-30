@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_script.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 To specify script settings for the replication job:
 
@@ -28,6 +29,4 @@ To specify script settings for the replication job:
 
 ![Script Settings](images/vcd_replica-scripts.webp)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

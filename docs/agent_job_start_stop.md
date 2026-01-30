@@ -1,5 +1,7 @@
 ---
 title: "Starting and Stopping Veeam Agent Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_start_stop.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting and Stopping Veeam Agent Backup Job
 
-In this article
 
 You can start a Veeam Agent backup job manually, for example, if you want to create an additional restore point in the backup chain and do not want to change the job schedule. You can also stop a job, for example, if processing of a Veeam Agent computer is about to take long, and you do not want the job to produce load on the production environment during business hours.
 
@@ -42,6 +43,4 @@ To stop a job gracefully:
 
 [![Stop Backup Job](images/agent_job_stop.webp)](images/agent_job_stop.webp "Stop Backup Job")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

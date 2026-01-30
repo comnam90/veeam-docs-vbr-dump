@@ -1,5 +1,7 @@
 ---
 title: "Connect-VBRGoogleCloudService"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vbrgooglecloudservice.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Connect-VBRGoogleCloudService
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Related Commands
 * [Get-VBRGoogleCloudAccount](get-vbrgooglecloudaccount.md)
 * [Add-VBRGoogleCloudRepository](add-vbrgooglecloudrepository.md)
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

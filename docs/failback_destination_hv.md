@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Failback Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_destination_hv.html"
 last_updated: "1/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Failback Destination
 
-In this article
 
 At the Destination step of the wizard, select a failback destination and backup proxies for data transfer during failback:
 
@@ -33,6 +34,4 @@ If you select Failback to the specified location, Veeam Backup & Replication wil
 
 ![Step 3. Select Failback Destination](images/hv_failback_destination.webp)
 
-Page updated 1/27/2025
 
-Page content applies to build 13.0.1.1071

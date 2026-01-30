@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Microsoft Entra ID Tenant Restore Wizard"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_restore_wizard_launch.html"
 last_updated: "8/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Microsoft Entra ID Tenant Restore Wizard
 
-In this article
 
 To launch the Microsoft Entra ID Tenant Restore wizard, do the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can right-click the tenant and select Restore.
 
 [![Restoring Azure VM](images/entra_id_restore_wizard.webp)](images/entra_id_restore_wizard.webp "Restoring Azure VM")
 
-Page updated 8/27/2025
 
-Page content applies to build 13.0.1.1071

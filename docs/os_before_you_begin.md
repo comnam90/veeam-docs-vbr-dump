@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_before_you_begin.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 This section contains information that you should consider before you create an object storage backup job.
 
@@ -64,6 +65,4 @@ Before you create an object storage backup job, consider the following limitatio
 
 * Veeam Backup & Replication does not support backup of the objects with the Amazon S3 Glacier Flexible Retrieval and Amazon S3 Glacier Deep Archive storage classes.
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

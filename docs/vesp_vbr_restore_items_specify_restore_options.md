@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_vbr_restore_items_specify_restore_options.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Restore Options
 
-In this article
 
 At this step of the wizard, select check boxes next to the restore options that you want to apply and click Restore.
 
@@ -27,6 +28,4 @@ If the Restore only latest version check box is not selected, all versions of it
 
 [![Specify Restore Options ](images/specify_restore_options_2.webp)](images/specify_restore_options_2.webp "Specify Restore Options ")
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

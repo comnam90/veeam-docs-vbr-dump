@@ -1,5 +1,7 @@
 ---
 title: "Mount-VBRObjectStorageRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/mount-vbrobjectstoragerepository.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Mount-VBRObjectStorageRepository
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Related Commands
 * [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md)
 * [Get-VBREncryptionKey](get-vbrencryptionkey.md)
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

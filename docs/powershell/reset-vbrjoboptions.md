@@ -1,5 +1,7 @@
 ---
 title: "Reset-VBRJobOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/reset-vbrjoboptions.html"
 last_updated: "6/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reset-VBRJobOptions
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Related Commands
 
 [Get-VBRJob](get-vbrjob.md)
 
-Page updated 6/11/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRPeriodicallyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrperiodicallyoptions.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRPeriodicallyOptions
 
-In this article
 
 Contains periodically schedule settings for performing discovery operations in a protection group.
 
@@ -25,6 +26,4 @@ Related Commands
 * [New-VBRPeriodicallyOptions](new-vbrperiodicallyoptions.md)
 * [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

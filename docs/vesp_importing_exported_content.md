@@ -1,5 +1,7 @@
 ---
 title: "Importing Microsoft SharePoint Data"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_importing_exported_content.html"
 last_updated: "9/5/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Importing Microsoft SharePoint Data
 
-In this article
 
 To import document library or list, use one of the following PowerShell cmdlets:
 
@@ -35,6 +36,4 @@ To get extended help on the Import–SPWeb command, use the following command:
 | --- |
 | Get-Help Import-SPWeb -full |
 
-Page updated 9/5/2023
 
-Page content applies to build 13.0.1.1071

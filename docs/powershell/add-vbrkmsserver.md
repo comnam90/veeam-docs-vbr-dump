@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRKMSServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrkmsserver.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRKMSServer
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ This command adds the thales.tech.local server to the Veeam Backup & Replicat
 | --- |
 | Add-VBRKMSServer -Name "thales.tech.local" -Port 5696 -CACertificate $ClientCertificate -ClientCertificate $ClientCertificate |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

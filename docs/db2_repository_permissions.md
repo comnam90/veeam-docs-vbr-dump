@@ -1,5 +1,7 @@
 ---
 title: "Access and Encryption Settings on Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_repository_permissions.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Access and Encryption Settings on Backup Repositories
 
-In this article
 
 When you configure Veeam Plug-In, you specify an account that must be used to connect to the Veeam Backup & Replication server.
 
@@ -27,7 +28,7 @@ To grant access permissions, do the following:
 
 1. In the working area, select the necessary backup repository and click Set Access Permissions on the ribbon or right-click the backup repository and select Access permissions.
 
-[![Access Permissions](images/repository_permissions_set.webp)](images/repository_permissions_set.webp "Access Permissions")
+[![Access Permissions](images/plugins_repository_permissions_set.webp)](images/plugins_repository_permissions_set.webp "Access Permissions")
 
 1. In the Access Permissions window, on the Standalone applications tab specify to whom you want to grant access permissions on this backup repository:
 
@@ -47,8 +48,6 @@ You can select a Key Management System (KMS) server in the Password field. To do
 
 1. Click OK.
 
-![Access and Encryption Settings on Backup Repositories](images/repository_permissions_users.webp)
+![Access and Encryption Settings on Backup Repositories](images/plugins_repository_permissions_users.webp)
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

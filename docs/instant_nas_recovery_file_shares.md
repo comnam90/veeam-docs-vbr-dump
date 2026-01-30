@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select File Share to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_file_shares.html"
 last_updated: "7/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select File Share to Restore
 
-In this article
 
 At the File Shares step of the wizard, select the file share you want to instantly recover:
 
@@ -23,6 +24,4 @@ Alternatively, you can use the File shares to publish search field to quickly se
 
 ![Step 2. Select File Share to Restore](images/instant_nas_recovery_file_shares.webp)
 
-Page updated 7/2/2024
 
-Page content applies to build 13.0.1.1071

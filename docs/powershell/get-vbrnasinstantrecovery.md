@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasinstantrecovery.html"
 last_updated: "9/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASInstantRecovery
 
-In this article
 
 Short Description
 
@@ -93,6 +94,4 @@ Examples
 | --- | --- |
 | This command returns instant restore sessions for file backups with certain parameters.  |  | | --- | | Get-VBRNASInstantRecovery -SessionName ("\\Server\Share", "\\OtherServer\OtherShare") | |
 
-Page updated 9/4/2024
 
-Page content applies to build 13.0.1.1071

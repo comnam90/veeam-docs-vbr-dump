@@ -1,5 +1,7 @@
 ---
 title: "VBRVeeamDataCloudAssignedVault"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrveeamdatacloudassignedvault.html"
 last_updated: "6/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRVeeamDataCloudAssignedVault
 
-In this article
 
 Contains Veeam storage vault details.
 
@@ -24,6 +25,4 @@ Properties
 
 [Get-VBRVeeamDataCloudAssignedVault](get-vbrveeamdatacloudassignedvault.md)
 
-Page updated 6/11/2025
 
-Page content applies to build 13.0.1.1071

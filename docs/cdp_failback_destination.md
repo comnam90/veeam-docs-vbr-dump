@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failback_destination.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Destination
 
-In this article
 
 At the Destination step of the wizard, select a failback destination and backup proxies for data transfer during failback:
 
@@ -39,6 +40,4 @@ We recommend you to select at least two backup proxies in each site to ensure th
 
 ![Step 3. Select Destination](images/cdp_failback_destination.webp "Select destination")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

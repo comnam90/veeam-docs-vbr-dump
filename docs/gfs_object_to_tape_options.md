@@ -1,5 +1,7 @@
 ---
 title: "Options for GFS Object to Tape Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_object_to_tape_options.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Options for GFS Object to Tape Job
 
-In this article
 
 This step of the wizard is available if you selected a GFS media pool at the Full Backup step of the wizard.
 
@@ -23,6 +24,4 @@ Click Media Sets and select the media sets that you want to export.
 
 ![Options for GFS Object to Tape Job](images/gfs_object_to_tape_options.webp)
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

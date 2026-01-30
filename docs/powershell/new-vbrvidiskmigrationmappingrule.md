@@ -1,5 +1,7 @@
 ---
 title: "New-VBRViDiskMigrationMappingRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrvidiskmigrationmappingrule.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRViDiskMigrationMappingRule
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

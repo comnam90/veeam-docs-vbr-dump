@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Job Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_protection_unix.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Job Mode
 
-In this article
 
 At the Job Mode step of the wizard, click Next.
 
@@ -15,6 +16,4 @@ You do not need to select the job type and mode. Unix computers can be added onl
 
 ![Step 2. Select Job Mode](images/agent_policy_protection_unix.webp)
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

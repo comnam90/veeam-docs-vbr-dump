@@ -1,5 +1,7 @@
 ---
 title: "Data Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_data_backup.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup
 
-In this article
 
 Veeam Plug-In for Oracle RMAN transfers backup data to the Veeam backup repository and stores the data in the Veeam proprietary format for backups.
 
@@ -19,6 +20,4 @@ Veeam Plug-In allows you to authenticate against Oracle database with the creden
 
 To store backup files, you can add backup repositories to your Veeam Backup & Replication infrastructure. For details on all supported backup repositories, see [Veeam Backup Repositories](repos_rman.md).
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

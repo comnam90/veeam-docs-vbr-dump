@@ -1,5 +1,7 @@
 ---
 title: "Performing Antivirus Scan"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/av_scan_run.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Antivirus Scan
 
-In this article
 
 To perform the antivirus scan during the restore session, do the following at the Secure Restore step of the restore wizard:
 
@@ -45,6 +46,4 @@ If the antivirus is not installed or the configuration file has syntax errors, V
 * Use Veeam Threat Hunter. For more information, see [Veeam Threat Hunter for Secure Restore](secure_restore_veeam_threat_hunter.md).
 * Use YARA scan. For more information, see [YARA Scan for Secure Restore](secure_restore_yara.md).
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRGoogleCloudAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrgooglecloudaccount.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRGoogleCloudAccount
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command creates a Google Cloud credentials record.
 | --- |
 | Add-VBRGoogleCloudAccount -AccessKey "XXXXXXXXXXXXX" -SecretKey "XXXXXXXXXXXX" -Description "Google Cloud Administrator" |
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "CDP Replication Chain"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_replica_chain.html"
 last_updated: "10/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # CDP Replication Chain
 
-In this article
 
 A replication chain is a sequence of files that allows you to roll back a replica to a specific point in time during failover. Veeam Backup & Replication creates replication chains for each disk of a workload added to a CDP policy.
 
@@ -54,6 +55,4 @@ To roll back a replica to a specific point in time, the chain of files created f
 
 For more information on retention policies and how to configure them, see [Retention Policies](uni_cdp_retention.md).
 
-Page updated 10/27/2025
 
-Page content applies to build 13.0.1.1071

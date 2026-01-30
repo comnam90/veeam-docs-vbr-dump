@@ -1,5 +1,7 @@
 ---
 title: "Installing Plug-In for Linux on Power"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installing_plugin_sap_hana_power.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Plug-In for Linux on Power
 
-In this article
 
 Veeam Plug-In for SAP HANA is an additional component of Veeam Backup & Replication. The installation package of the plug-in is included in the Veeam Backup & Replication installation ISO file and available for download from [veeam.com](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 
@@ -90,6 +91,4 @@ In the terminal, open the folder that contains the VeeamPluginforSAPHANA.TAR.GZ 
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In for SAP HANA](configure_sap_hana_plugin.md).
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

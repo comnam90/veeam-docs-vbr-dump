@@ -1,5 +1,7 @@
 ---
 title: "Dell PowerScale (Formerly Isilon) Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/isilon_cmdlets.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Dell PowerScale (Formerly Isilon) Storage Systems
 
-In this article
 
 Add Dell PowerScale (formerly Isilon) storage systems to your Veeam Backup & Replication console and administrate them.
 
@@ -24,6 +25,4 @@ In This Section
 | [Get-VBRIsilonVolume](get-vbrisilonvolume.md) | Returns storage volumes from the Dell PowerScale storage infrastructure. |
 | [Sync-VBRIsilonVolume](sync-vbrisilonvolume.md) | Starts a rescan session of Dell PowerScale storage volumes from the Veeam Backup & Replication infrastructure. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How Backup Data Decryption Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/decryption_hiw.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Backup Data Decryption Works
 
-In this article
 
 To perform operations with backup files, you need to decrypt them first. Backup files can be decrypted automatically or manually:
 
@@ -31,6 +32,4 @@ For more information on how to decrypt backups, see [Decrypting Backups](decrypt
 * [Restoring Data from Encrypted Backups](restore_encrypted.md)
 * [Restoring Data from Encrypted Tapes](tapes_restore_encrypted.md)
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

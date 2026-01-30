@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Dell Unity Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_select_storage_type.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Dell Unity Storage Wizard
 
-In this article
 
 To launch the wizard for adding a storage system, do the following:
 
@@ -23,6 +24,4 @@ To launch the wizard for adding a storage system, do the following:
 
 [![Select storage type](images/dell_add_storage_type.webp)](images/dell_add_storage_type.webp "Select storage type")
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

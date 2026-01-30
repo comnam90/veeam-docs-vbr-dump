@@ -1,5 +1,7 @@
 ---
 title: "Assigning Location to Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_location.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Assigning Location to Protection Group
 
-In this article
 
 You can assign a location to a protection group configured in Veeam Backup & Replication. To assign a location:
 
@@ -20,6 +21,4 @@ For details on locations, see [Locations](locations.md).
 
 [![Assign Location to Protection Group](images/mongo_protection_group_location.webp)](images/mongo_protection_group_location.webp "Assign Location to Protection Group")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

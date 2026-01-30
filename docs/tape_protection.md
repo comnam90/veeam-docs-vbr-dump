@@ -1,5 +1,7 @@
 ---
 title: "Tape Protection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_protection.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Protection
 
-In this article
 
 Tape protection is a software option that prohibits overwriting, erasing or appending data to protected tape. You can protect individual tapes that, for example, contain particularly valuable data.
 
@@ -30,6 +31,4 @@ Related Topics
 
 [Protecting Tapes](protecting_tapes.md)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

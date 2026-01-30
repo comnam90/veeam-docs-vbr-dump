@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRHvJobObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrhvjobobject.html"
 last_updated: "6/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRHvJobObject
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Find-VBRHvEntity](find-vbrhventity.md)
 
-Page updated 6/11/2024
 
-Page content applies to build 13.0.1.1071

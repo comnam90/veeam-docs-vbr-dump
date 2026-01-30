@@ -1,5 +1,7 @@
 ---
 title: "Import-VBRLinuxKnownHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/import-vbrlinuxknownhost.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Import-VBRLinuxKnownHost
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ This command imports Linux TLS fingerprints from an XML file.
 | --- |
 | Import-VBRLinuxKnownHost -Path "C:\fingerprints.xml" |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

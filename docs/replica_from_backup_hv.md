@@ -1,5 +1,7 @@
 ---
 title: "Replica from Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_from_backup_hv.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replica from Backup
 
-In this article
 
 Disaster recovery plans often require that you back up and replicate the same VM for disaster recovery (DR) and high availability (HA) purposes. As a rule, this doubles the workload on the virtual infrastructure: two VM snapshots need to be created independently from one another, and VM data need to be transferred from the production site twice.
 
@@ -43,6 +44,4 @@ Related Topics
 * [How Replica from Backup Works](replica_from_backup_hiw_hv.md)
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

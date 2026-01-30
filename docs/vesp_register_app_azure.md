@@ -1,5 +1,7 @@
 ---
 title: "Registering Application in Microsoft Identity Platform"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_register_app_azure.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Registering Application in Microsoft Identity Platform
 
-In this article
 
 To register an application in Microsoft Identity platform, do the following:
 
@@ -20,6 +21,4 @@ To register an application in Microsoft Identity platform, do the following:
 * Directory (tenant) ID
 * Application (client) ID
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

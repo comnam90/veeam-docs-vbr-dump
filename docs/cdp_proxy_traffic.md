@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Configure Network Traffic Rules"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy_traffic.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Configure Network Traffic Rules
 
-In this article
 
 At the Traffic Rules step of the wizard, configure network traffic rules. These rules help you reduce, throttle and encrypt traffic sent between backup infrastructure components. For more information, see [Managing Network Traffic](managing_network_traffic.md).
 
@@ -22,6 +23,4 @@ To change network traffic settings:
 
 ![Step 4. Configure Network Traffic Rules](images/cdp_proxy_traffic_rules.webp "Configure traffic rules")
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

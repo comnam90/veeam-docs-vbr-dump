@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCloudInfrastructureState"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudinfrastructurestate.html"
 last_updated: "1/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCloudInfrastructureState
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ This command returns the state of the cloud infrastructure.
 | --- |
 | Get-VBRCloudInfrastructureState  Maintenance |
 
-Page updated 1/24/2024
 
-Page content applies to build 13.0.1.1071

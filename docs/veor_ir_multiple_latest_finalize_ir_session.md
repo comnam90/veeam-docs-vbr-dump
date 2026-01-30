@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Finalize Instant Recovery Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_multiple_latest_finalize_ir_session.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Finalize Instant Recovery Session
 
-In this article
 
 Depending on the option you choose in the Instant Recovery wizard, switchover starts in one of the following ways:
 
@@ -24,6 +25,4 @@ Related Topics
 * [Managing Instant Recovery Session](veor_instant_session.md)
 * [Switchover](veor_switchover.md)
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

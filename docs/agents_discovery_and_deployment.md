@@ -1,5 +1,7 @@
 ---
 title: "Protected Computers Discovery and Veeam Agent Deployment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_discovery_and_deployment.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Protected Computers Discovery and Veeam Agent Deployment
 
-In this article
 
 Veeam Backup & Replication supports automated and manual deployment of Veeam Agents on computers in your infrastructure:
 
@@ -49,6 +50,4 @@ In This Section
 * [Protection Groups](agents_protection_groups.md)
 * [Rescan Job](agents_discovery_job.md)
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

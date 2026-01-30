@@ -1,5 +1,7 @@
 ---
 title: "Backup File Validation"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_backup_files_valdiation_hv.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup File Validation
 
-In this article
 
 In addition to predefined tests, Veeam Backup & Replication allows you to perform backup file validation. For backup file validation, Veeam Backup & Replication performs a CRC check for backup files of machines verified by the SureBackup job. You can also validate backup files for machines from the application group with this test.
 
@@ -17,6 +18,4 @@ The backup file validation test is started after recovery verification tests. As
 
 The result of the backup file validation test impacts the state of the SureBackup job session. If the verification tests are completed successfully but the backup validation is not passed, Veeam Backup & Replication marks the SureBackup job session with the Failed status.
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating SSH Private Key Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_linux_pubkey_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating SSH Private Key Using Web UI
 
-In this article
 
 To add a credentials record using the Identity/Pubkey authentication method in the Veeam Backup & Replication web UI, do the following:
 
@@ -46,6 +47,4 @@ To enable the failover, select the Use "su" if "sudo" fails check box and in the
 
 [![Creating SSH Private Key Using Web UI](images/settings_credentials_ssh_private_key.webp)](images/settings_credentials_ssh_private_key.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

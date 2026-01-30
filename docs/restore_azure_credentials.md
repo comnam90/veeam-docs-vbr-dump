@@ -1,5 +1,7 @@
 ---
 title: "Changing Credentials for Helper Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_credentials.html"
 last_updated: "8/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Credentials for Helper Appliances
 
-In this article
 
 By default, Veeam Backup & Replication uses its built-in credentials record to work with all helper appliances in Microsoft Azure and Azure Stack Hub. You can find this credential record in the credentials manger in the Veeam Backup & Replication console: the root account with "Azure helper appliance credentials" in the Description column.
 
@@ -28,6 +29,4 @@ To change the password in the credentials record for the helper appliances:
 
 ![Changing Credentials for Helper Appliances](images/azure_change_credentials.webp)
 
-Page updated 8/1/2025
 
-Page content applies to build 13.0.1.1071

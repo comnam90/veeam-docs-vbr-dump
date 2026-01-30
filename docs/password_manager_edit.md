@@ -1,5 +1,7 @@
 ---
 title: "Editing Passwords"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/password_manager_edit.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Passwords
 
-In this article
 
 To edit a password in the Password Manager, perform the following steps:
 
@@ -20,6 +21,4 @@ After you edit the password, you do not need to perform any other actions. Veeam
 
 ![Editing Passwords](images/password_manager_edit_pass.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

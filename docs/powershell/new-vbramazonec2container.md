@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAmazonEC2Container"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbramazonec2container.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAmazonEC2Container
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Get-VBRAmazonEC2Region](get-vbramazonec2region.md)
 * [Get-VBRAmazonEC2VM](get-vbramazonec2vm.md)
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Target Datastores"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_datastore_hv.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Target Datastores
 
-In this article
 
 The Datastore step of the wizard is available if you have chosen to change the location and settings for recovered VMs.
 
@@ -27,6 +28,4 @@ At the Datastore step of the wizard, specify a path to the folder where VM confi
 
 ![Step 6. Select Target Datastores](images/hv_restore_fullvm_datastore.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Heuristic Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nonvss_heuristic.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Heuristic Settings
 
-In this article
 
 At this step of the wizard, do the following:
 
@@ -29,6 +30,4 @@ You can enter the Oracle home user password when you configure the staging serve
 
 [![Specifying Oracle Home User Password](images/veor_heuristic_oracle_home_password.webp)](images/veor_heuristic_oracle_home_password.webp "Specifying Oracle Home User Password")
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

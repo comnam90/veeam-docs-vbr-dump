@@ -1,5 +1,7 @@
 ---
 title: "VBRReplica"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrreplica.html"
 last_updated: "7/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRReplica
 
-In this article
 
 Contains details of a replica.
 
@@ -21,6 +22,4 @@ Properties
 | JobName | String | The name of the job. |
 | JobId | GUID | The ID of the job. |
 
-Page updated 7/17/2024
 
-Page content applies to build 13.0.1.1071

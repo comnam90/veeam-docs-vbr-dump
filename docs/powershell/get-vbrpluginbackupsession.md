@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRPluginBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrpluginbackupsession.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRPluginBackupSession
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Examples
 | --- | --- |
 | This command returns the 483699a2-3fa2-45ed-86cb-230b9009b29d session.  |  | | --- | | Get-VBRPluginBackupSession -Id "483699a2-3fa2-45ed-86cb-230b9009b29d" | |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

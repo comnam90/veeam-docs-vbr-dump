@@ -1,5 +1,7 @@
 ---
 title: "Veeam Environment Planning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_planning.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Environment Planning
 
-In this article
 
 Before you deploy Veeam Plug-In, keep in mind the following requirements and limitations.
 
@@ -108,6 +109,4 @@ We recommend to contact your Veeam system engineer to optimize the channel setti
 
 * Veeam Backup & Replication server: during manual metadata operations such as [import of backup files](import_backups_rman.md), the Veeam Backup & Replication server needs additional 15 GB of RAM per 1 million files located in the same backup job folder.
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

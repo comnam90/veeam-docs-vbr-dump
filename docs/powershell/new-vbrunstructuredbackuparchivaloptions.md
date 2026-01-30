@@ -1,5 +1,7 @@
 ---
 title: "New-VBRUnstructuredBackupArchivalOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrunstructuredbackuparchivaloptions.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRUnstructuredBackupArchivalOptions
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This command excludes a scope of file versions. The archive repository will not keep .EXE file extensions.      |  | | --- | | New-VBRUnstructuredBackupArchivalOptions -ArchivalType ExclusionMask -ExclusionMask '\*.exe' | |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

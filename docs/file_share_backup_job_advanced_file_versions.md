@@ -1,5 +1,7 @@
 ---
 title: "File Version Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_file_versions.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # File Version Settings
 
-In this article
 
 To configure how many file versions to keep for protected files, do the following:
 
@@ -27,6 +28,4 @@ To configure how many file versions to keep for protected files, do the followin
 
 ![File Version Settings](images/file_share_backup_job_advanced_file_versions.webp)
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

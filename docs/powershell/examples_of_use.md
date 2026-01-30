@@ -1,5 +1,7 @@
 ---
 title: "Examples of Use"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/examples_of_use.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Examples of Use
 
-In this article
 
 In this example, we will review how to restore a VM to another location by means of the Veeam PowerShell script. To let you get most out of this example, each command will be illustrated by the action from the Veeam Backup & Replication UI that provides the result similar to execution of the PowerShell script.
 
@@ -49,6 +50,4 @@ Then get the restore point of this backup. Remember that the backup contains all
 | --- |
 | Start-VBRRestoreVM –RestorePoint $restorepoint –Server $server –ResourcePool $resourcepool |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

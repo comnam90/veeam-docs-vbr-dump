@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRApplicationBackupJobSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrapplicationbackupjobsession.html"
 last_updated: "5/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRApplicationBackupJobSession
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command returns the 1137c678-e79d-48c4-8d30-b921a612ba1e application policy session.  |  | | --- | | Get-VBRApplicationBackupJobSession -Id 1137c678-e79d-48c4-8d30-b921a612ba1e | |
 
-Page updated 5/3/2024
 
-Page content applies to build 13.0.1.1071

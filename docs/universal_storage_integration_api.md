@@ -1,5 +1,7 @@
 ---
 title: "Universal Storage API Integrated Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/universal_storage_integration_api.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Universal Storage API Integrated Systems
 
-In this article
 
 Storage vendors can leverage the Veeam Universal Storage API framework to integrate their storage solutions with Veeam Backup & Replication. With this kind of integration, you can use snapshots of Universal Storage API integrated systems to perform backup and restore operations.
 
@@ -43,6 +44,4 @@ In This Section
 * [Uninstalling Plug-Ins from Microsoft Windows-Based Backup Server](storage_remove_plugin.md)
 * [Uninstalling Plug-Ins from Linux-Based Backup Server](storage_remove_plugin_lin.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Viewing SQL Server Transaction Log Backup Report"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_logs_report.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing SQL Server Transaction Log Backup Report
 
-In this article
 
 If you configure a backup job or backup policy to back up Microsoft SQL Server transaction logs, you can generate a report with details about the SQL Server transaction log backup job session performed on protected computers. For more information about backup of Microsoft SQL Server transaction logs, see [Microsoft SQL Server Transaction Log Settings](agent_job_vss_sql.md).
 
@@ -28,6 +29,4 @@ The report contains data on the latest SQL Server transaction log backup job ses
 | TIP |
 | [For Veeam Agent backup jobs] If you set up Veeam Backup & Replication to send reports automatically by email, SQL Server transaction log backup reports is sent to the specified email address after each transaction log backup job session. For more information about email notifications, see [Enabling Email Reporting](agents_reporting_email.md). |
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

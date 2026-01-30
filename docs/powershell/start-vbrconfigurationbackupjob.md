@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRConfigurationBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrconfigurationbackupjob.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRConfigurationBackupJob
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command starts the configuration backup job in the RunAsync mode.
 | --- |
 | Start-VBRConfigurationBackupJob -RunAsync |
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

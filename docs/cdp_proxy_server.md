@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Server and Traffic Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy_server.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Server and Traffic Ports
 
-In this article
 
 At the Server step of the wizard, select a server which you want to use as the CDP proxy, specify description and ports that will be used for communication:
 
@@ -31,6 +32,4 @@ The range of available ports is 33032–33039.
 
 ![Step 2. Select Server and Traffic Ports](images/cdp_proxy_server.webp "Select server")
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

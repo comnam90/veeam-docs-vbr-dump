@@ -1,5 +1,7 @@
 ---
 title: "Log Shipping Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_log_shipping_hv.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Log Shipping Servers
 
-In this article
 
 For every Microsoft SQL Server VM whose transaction logs you want to back up, Veeam Backup & Replication defines how to ship logs to the backup repository. Transaction logs can be shipped in the following ways:
 
@@ -49,6 +50,4 @@ Log shipping servers are assigned per job session. When a new job session starts
 
 ![Log Shipping Servers](images/log_shipping_sql_hv.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

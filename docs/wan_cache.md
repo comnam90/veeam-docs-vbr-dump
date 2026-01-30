@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Define Cache Location and Size"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_cache.html"
 last_updated: "1/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Define Cache Location and Size
 
-In this article
 
 At the Cache step of the wizard, define settings for the folder where service files and global cache data will be stored.
 
@@ -26,6 +27,4 @@ At the Cache step of the wizard, define settings for the folder where service fi
 
 ![Step 3. Define Cache Location and Size](images/add_wan_accelerator_cache.webp)
 
-Page updated 1/2/2024
 
-Page content applies to build 13.0.1.1071

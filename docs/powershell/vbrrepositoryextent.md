@@ -1,5 +1,7 @@
 ---
 title: "VBRRepositoryExtent"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrrepositoryextent.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRRepositoryExtent
 
-In this article
 
 Contains scale-out backup repository extent.
 
@@ -25,6 +26,4 @@ Properties
 | Repository | CBackupRepository | The backup repository that is converted into the extent. |
 | Status | [VBRRepositoryExtentStatus](enums.md#VBRRepositoryExtentStatus) | Extent status. |
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

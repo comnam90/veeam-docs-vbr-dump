@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Objects to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_individual_objects_browser.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Objects to Restore
 
-In this article
 
 In the Backup Browser, select objects and prefixes to restore. Backup browser has three representations of restore points. You can select one of the following options in the Restore point group on the ribbon to display object versions:
 
@@ -108,6 +109,4 @@ In the Compare Attributes window, Veeam Backup & Replication shows changed attri
 
 ![Step 4. Select Objects to Restore](images/restore_objects_folders_backup_browser_compare_attributes.webp)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRCloudProviderNetworkAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcloudprovidernetworkappliance.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRCloudProviderNetworkAppliance
 
-In this article
 
 Short Description
 
@@ -109,6 +110,4 @@ Related Commands
 * [Find-VBRViResourcePool](find-vbrviresourcepool.md)
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

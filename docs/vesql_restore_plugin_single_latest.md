@@ -1,5 +1,7 @@
 ---
 title: "Restoring Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_single_latest.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Latest State
 
-In this article
 
 You can restore a database as of the latest state in your backup file.
 
@@ -30,6 +31,4 @@ Alternatively, you can right-click a database and select Restore latest state to
 
 [![Restoring Latest State](images/vesql_restore_plugin_single_latest.webp)](images/vesql_restore_plugin_single_latest.webp "Restoring Latest State")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

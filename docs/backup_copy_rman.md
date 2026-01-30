@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup Copy Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_rman.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup Copy Job
 
-In this article
 
 Veeam Backup & Replication offers the backup copy functionality that allows you to create several instances of the same backup in different locations, whether onsite or offsite. Backup copies have the same format as those created by backup jobs and you can recover your data from them when you need it.
 
@@ -25,6 +26,4 @@ Before creating a job, [check prerequisites](backup_copy_prerequisites_rman.md).
 6. [Define backup copy schedule](backup_copy_schedule_rman.md).
 7. [Finish working with the wizard](backup_copy_summary_rman.md).
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

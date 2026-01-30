@@ -1,5 +1,7 @@
 ---
 title: "Scheduling Configuration Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_schedule.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scheduling Configuration Backups
 
-In this article
 
 You can instruct Veeam Backup & Replication to perform configuration backup automatically by schedule.
 
@@ -27,6 +28,4 @@ To schedule a configuration backup:
 
 ![Scheduling Configuration Backups](images/schedule_config_backup.webp)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "HPE Alletra Storage MP B10000, 9000, Primera, 3PAR"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_primera.html"
 last_updated: "10/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # HPE Alletra Storage MP B10000, 9000, Primera, 3PAR
 
-In this article
 
 If you plan to perform operations with HPE Alletra Storage MP B10000, 9000, Primera, 3PAR storage systems, consider the following:
 
@@ -41,6 +42,4 @@ If you plan to perform operations with HPE Alletra Storage MP B10000, 9000, Prim
 
 * [For backup from secondary storage arrays and backup with snapshot retention] For Peer Persistence and Remote Copy features, you must create a Remote Copy Group (RCG) with relevant type (Synchronous or Periodic).
 
-Page updated 10/30/2025
 
-Page content applies to build 13.0.1.1071

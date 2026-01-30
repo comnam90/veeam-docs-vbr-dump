@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_copy_advanced_storage.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 At the Storage tab, define compression and deduplication settings.
 
@@ -28,6 +29,4 @@ You can select a Key Management System (KMS) server in the Password field. To do
 
 ![Storage Settings](images/plugins_backup_copy_storage.webp)
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRApplicationBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrapplicationbackupjob.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRApplicationBackupJob
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This command returns the Plugin Policy 05 application backup policy.  |  | | --- | | Get-VBRApplicationBackupJob -Name "Plugin Policy 05" | |
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

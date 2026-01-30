@@ -1,5 +1,7 @@
 ---
 title: "VBRSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrsession.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRSession
 
-In this article
 
 Contains job session.
 
@@ -28,6 +29,4 @@ Related Commands
 
 [Get-VBRSession](get-vbrsession.md)
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

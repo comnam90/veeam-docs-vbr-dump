@@ -1,5 +1,7 @@
 ---
 title: "Saving Microsoft OneDrives"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_saving_onedrive_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Saving Microsoft OneDrives
 
-In this article
 
 Veeam Explorer for Microsoft OneDrive for Business allows you to save OneDrive content to the specified location.
 
@@ -48,6 +49,4 @@ To save data of a specific OneDrive, do one of the following:
 
 [![Saving Microsoft OneDrive](images/save_onedrive.webp)](images/save_onedrive.webp "Saving Microsoft OneDrive")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

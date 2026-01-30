@@ -1,5 +1,7 @@
 ---
 title: "Creating Object Storage Backup Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job.html"
 last_updated: "6/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Object Storage Backup Jobs
 
-In this article
 
 To protect an object storage repository, configure an object storage backup job. The backup job defines how, where and when to back up data from the object storage. One job can be used to protect one or more object storage repositories. Jobs can be started manually or scheduled to run automatically at a specific time.
 
@@ -31,6 +32,4 @@ To create an object storage backup job, use the New Object Storage Backup Job w
 8. [Define the job schedule](os_backup_job_schedule.md).
 9. [Finish working with the wizard](os_backup_job_finish.md).
 
-Page updated 6/28/2024
 
-Page content applies to build 13.0.1.1071

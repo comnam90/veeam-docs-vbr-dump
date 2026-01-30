@@ -1,5 +1,7 @@
 ---
 title: "Deleting Unstructured Data Backups from Disk"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_delete_from_disk.html"
 last_updated: "6/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Unstructured Data Backups from Disk
 
-In this article
 
 If you want to permanently remove unstructured data backup files from the backup repository and Veeam Backup & Replication console, you can use the Delete from disk operation.
 
@@ -25,6 +26,4 @@ To delete backups from disk:
 
 1. In the working area, select the backup and click Delete from > Disk on the ribbon. You can also right-click the backup and select Delete from disk.
 
-Page updated 6/24/2025
 
-Page content applies to build 13.0.1.1071

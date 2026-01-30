@@ -1,5 +1,7 @@
 ---
 title: "Cloning Replication Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/clone_replica_jobs.html"
 last_updated: "1/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cloning Replication Jobs
 
-In this article
 
 You can create new jobs by means of job cloning. Job cloning allows you to create an exact copy of any job with the same job settings and edit settings of cloned jobs as required.
 
@@ -22,6 +23,4 @@ To clone a job:
 
 [![Cloning Replication Jobs](images/clone_replica_job.webp)](images/clone_replica_job.webp)
 
-Page updated 1/23/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRComputerRecoveryToken"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcomputerrecoverytoken.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRComputerRecoveryToken
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Get-VBRBackup](get-vbrbackup.md)
 * [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1)
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

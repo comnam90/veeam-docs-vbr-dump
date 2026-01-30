@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRObjectToTapeJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrobjecttotapejob.html"
 last_updated: "7/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRObjectToTapeJob
 
-In this article
 
 Short Description
 
@@ -100,6 +101,4 @@ Related Commands
 * [New-VBRJobScriptOptions](new-vbrjobscriptoptions.md)
 * [New-VBRTapeGFSScheduleOptions](new-vbrtapegfsscheduleoptions.md)
 
-Page updated 7/22/2025
 
-Page content applies to build 13.0.1.1071

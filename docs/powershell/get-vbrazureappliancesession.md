@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAzureApplianceSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazureappliancesession.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAzureApplianceSession
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Examples
 | --- | --- |
 | This command returns status of a specific session. In this example, we assume that the user saved the session to a variable when they deployed the appliance. See examples for the [Deploy-VBRAzureLinuxRestoreAppliance](deploy-vbrazurelinuxrestoreappliance.md) cmdlet for details.  |  | | --- | | Get-VBRAzureApplianceSession -Session $appliancesession | |
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Installing and Updating Plug-Ins on Linux-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_install_plugin_linux.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing and Updating Plug-Ins on Linux-Based Backup Server
 
-In this article
 
 [The following information applies to the Linux-based backup server.]
 
@@ -63,6 +64,4 @@ Related Topics
 * [Infrastructure Overview](storage_infrastructure.md)
 * [Backup & Replication Console](backup_console.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

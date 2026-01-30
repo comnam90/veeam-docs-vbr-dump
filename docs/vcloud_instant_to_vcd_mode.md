@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Restore Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_mode.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Restore Mode
 
-In this article
 
 At the Restore Mode of the wizard, choose the necessary restore mode.
 
@@ -23,6 +24,4 @@ At the Restore Mode of the wizard, choose the necessary restore mode.
 
 ![Step 4. Select Restore Mode](images/vcloud_instant_recovery_mode.webp)
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

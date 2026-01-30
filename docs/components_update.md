@@ -1,5 +1,7 @@
 ---
 title: "Updating Infrastructure Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/components_update.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating Infrastructure Components
 
-In this article
 
 Every time you launch the Veeam Backup & Replication console, Veeam Backup & Replication automatically checks if Veeam Backup & Replication components installed on managed servers are up to date. If a later version of components is available, the system displays the Components Update window once a week for all users (once per user) who access the backup server. Components upgrade may be necessary, for example, after you have upgraded Veeam Backup & Replication.
 
@@ -34,6 +35,4 @@ To update components for an individual managed server:
 
 [![Updating Infrastructure Components](images/upgrading_components_server.webp)](images/upgrading_components_server.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

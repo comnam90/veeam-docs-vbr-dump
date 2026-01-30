@@ -1,5 +1,7 @@
 ---
 title: "Converting Backups from SMB or NFS Shares to NAS Filer Shares"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/convert_nas_shares_into_san.html"
 last_updated: "9/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Converting Backups from SMB or NFS Shares to NAS Filer Shares
 
-In this article
 
 You can use enterprise storage systems integrated with Veeam Backup & Replication both to host simple SMB or NFS shares and to act as NAS filer shares.
 
@@ -67,6 +68,4 @@ For more information, see the description of the Convert-VBRNASBackupSANFormat c
 
 File share backup copy will automatically map to the file backup copy job. After that, the backup copy job will back up new points of the main file backup job if they were created.
 
-Page updated 9/19/2025
 
-Page content applies to build 13.0.1.1071

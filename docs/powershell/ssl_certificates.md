@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect TLS Certificates"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/ssl_certificates.html"
 last_updated: "7/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect TLS Certificates
 
-In this article
 
 Veeam uses the TLS certificates to secure the TLS connection between the service provider and the user infrastructures. The service provider sets up a TLS certificate on the service provider side.
 
@@ -22,6 +23,4 @@ Veeam uses the TLS certificates to secure the TLS connection between the service
 | [Add-VBRCloudGatewayCertificate](add-vbrcloudgatewaycertificate.md) | Assigns the TLS certificate to the service provider. |
 | [Get-VBRCloudGatewayCertificate](get-vbrcloudgatewaycertificate.md) | Returns the TLS certificates. |
 
-Page updated 7/21/2025
 
-Page content applies to build 13.0.1.1071

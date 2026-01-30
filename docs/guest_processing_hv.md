@@ -1,5 +1,7 @@
 ---
 title: "Guest Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_processing_hv.html"
 last_updated: "9/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Guest Processing
 
-In this article
 
 If you back up or replicate running VMs, you can enable guest processing options. Guest processing options are advanced tasks that help Veeam Backup & Replication to communicate with the VM guest OS. Using guest processing options, Veeam Backup & Replication creates transactionally consistent backups, replicas, and catalogs of files and folders on the VM guest OS.
 
@@ -68,6 +69,4 @@ Related Topics
 * [Creating Backup Jobs](backup_job_hv.md)
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 9/29/2025
 
-Page content applies to build 13.0.1.1071

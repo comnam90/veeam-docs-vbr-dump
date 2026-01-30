@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam CBT Driver"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_driver.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam CBT Driver
 
-In this article
 
 You can use the Veeam Backup & Replication console to quickly install the Veeam changed block tracking (CBT) driver on a protected computer. This operation may be required, for example, if you want to evaluate driver performance on a selected computer rather than deploy driver to all computers in the protection group at once.
 
@@ -60,6 +61,4 @@ You can uninstall the Veeam CBT driver at any time you need. To uninstall the dr
 
 [![Uninstall CBT Driver](images/protected_computer_driver_remove.webp)](images/protected_computer_driver_remove.webp "Uninstall CBT Driver")
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

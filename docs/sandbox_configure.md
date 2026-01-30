@@ -1,5 +1,7 @@
 ---
 title: "Configuring On-Demand Sandbox"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sandbox_configure.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring On-Demand Sandbox
 
-In this article
 
 To configure the On-Demand Sandbox, perform the following steps:
 
@@ -34,6 +35,4 @@ Veeam Backup & Replication will start the virtual lab and power on VMs from the 
 
 [![Configuring On-Demand Sandbox](images/surebackup_start_to.webp)](images/surebackup_start_to.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

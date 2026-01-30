@@ -1,5 +1,7 @@
 ---
 title: "Extending Scale-Out Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_extent.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Extending Scale-Out Repositories
 
-In this article
 
 You can add a backup repository or an object storage repository as a performance extent or a capacity extent to the scale-out backup repository at any time. For example, the scale-out backup repository may run low on space, and you will need to add storage capacity to it.
 
@@ -50,6 +51,4 @@ To extend the capacity tier, perform the following steps:
 
 ![Extending Scale-Out Repositories](images/capacity_tier_extend.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

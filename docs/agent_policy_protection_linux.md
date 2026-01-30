@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Job Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_protection_linux.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Job Mode
 
-In this article
 
 At the Job Mode step of the wizard, specify protection settings for the Veeam Agent backup policy:
 
@@ -38,6 +39,4 @@ If you selected the Server option in the [Type](#type) field, in the Mode field,
 
 ![Step 2. Select Job Mode](images/agent_policy_protection_linux.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

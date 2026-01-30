@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_wizard_schema.html"
 last_updated: "8/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do the following:
 
@@ -23,6 +24,4 @@ Alternatively, you can right-click a database in the navigation pane and select 
 
 [![Launching Restore Wizard](images/rst_schema.webp)](images/rst_schema.webp "Launching Restore Wizard")
 
-Page updated 8/10/2025
 
-Page content applies to build 13.0.1.1071

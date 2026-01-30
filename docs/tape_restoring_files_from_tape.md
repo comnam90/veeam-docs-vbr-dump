@@ -1,5 +1,7 @@
 ---
 title: "How Restoring Files from Tape Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restoring_files_from_tape.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restoring Files from Tape Works
 
-In this article
 
 When Veeam Backup & Replication restores files archived to tape, it performs the following operations:
 
@@ -23,6 +24,4 @@ When Veeam Backup & Replication restores files archived to tape, it performs the
 
 ![How Restoring Files from Tape Works](images/tape_file_restore.webp)
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VMware Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware Backup Proxies
 
-In this article
 
 A VMware backup proxy is an architecture component that sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic.
 
@@ -58,6 +59,4 @@ In This Section
 * [Editing VMware Backup Proxy Settings](backup_proxy_edit.md)
 * [Disabling and Removing VMware Backup Proxies](setup_manproxy.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

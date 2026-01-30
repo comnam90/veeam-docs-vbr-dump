@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New File to Tape Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_to_tape_launch.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New File to Tape Job Wizard
 
-In this article
 
 To run the New File to Tape Job wizard, do either of the following:
 
@@ -21,6 +22,4 @@ Alternatively, you can:
 
 [![Step 1. Launch New File to Tape Job Wizard](images/files_to_tape_launch.webp)](images/files_to_tape_launch.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

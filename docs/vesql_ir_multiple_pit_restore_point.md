@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_pit_restore_point.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Restore Point
 
-In this article
 
 At this step of the Instant Recovery wizard, select a state as of which you want to recover databases:
 
@@ -21,6 +22,4 @@ If some of the databases do not have transaction log backups for the specified t
 
 [![Specifying Restore Point](images/instant_multiple_point_vesql.webp)](images/instant_multiple_point_vesql.webp "Specifying Restore Point")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_options_teams.html"
 last_updated: "8/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Restore Options
 
-In this article
 
 At this step of the wizard, specify data restore options:
 
@@ -31,6 +32,4 @@ Note that you cannot proceed to the [next step](vet_restore_select_members.md) o
 
 [![Specify Restore Options](images/vet_restore_options_teams.webp)](images/vet_restore_options_teams.webp "Specify Restore Options")
 
-Page updated 8/14/2025
 
-Page content applies to build 13.0.1.1071

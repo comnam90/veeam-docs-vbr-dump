@@ -1,5 +1,7 @@
 ---
 title: "Adding WAN Accelerators"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_add.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding WAN Accelerators
 
-In this article
 
 To add a WAN accelerator, you must assign the WAN accelerator role to a Microsoft Windows or Linux server added to the backup infrastructure.
 
@@ -22,6 +23,4 @@ Before you add a WAN accelerator, [check prerequisites](wan_before_you_begin.md)
 5. [Apply WAN accelerator settings](wan_apply.md).
 6. [Finish working with the wizard](wan_summary.md).
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

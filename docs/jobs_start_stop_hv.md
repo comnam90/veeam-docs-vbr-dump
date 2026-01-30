@@ -1,5 +1,7 @@
 ---
 title: "Starting and Stopping Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jobs_start_stop_hv.html"
 last_updated: "7/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting and Stopping Jobs
 
-In this article
 
 You can start a job manually if, for example, you want to create an additional restore point for a VM backup or replica without changing the job schedule. You can also stop a job if, for example, VM processing is about to take a long time, and you do not want the job to produce workload on the production environment during business hours.
 
@@ -47,6 +48,4 @@ Related Topics
 * [Manual Start of Backup Jobs](scheduling_manual_hv.md)
 * [Manual Stop of Backup Jobs](job_sessions_termination_hv.md)
 
-Page updated 7/1/2025
 
-Page content applies to build 13.0.1.1071

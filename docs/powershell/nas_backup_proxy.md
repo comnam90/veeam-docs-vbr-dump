@@ -1,5 +1,7 @@
 ---
 title: "Adding File Share Backup Proxies"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/nas_backup_proxy.html"
 last_updated: "5/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding File Share Backup Proxies
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ In This Section
 | [Enable-VBRNASProxyServer](enable-vbrnasproxyserver.md) | Enables general-purpose backup proxies. |
 | [Disable-VBRNASProxyServer](disable-vbrnasproxyserver.md) | Disables general-purpose backup proxies. |
 
-Page updated 5/26/2025
 
-Page content applies to build 13.0.1.1071

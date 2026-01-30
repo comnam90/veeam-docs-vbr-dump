@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_restore.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 This section contains information about the available restore operations in Veeam Explorer for MongoDB.
 
@@ -24,6 +25,4 @@ In This Section
 
 * [Canceling Restore](vemdb_restore_cancel.md)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How Backup from Cisco HyperFlex Snapshots Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cisco_hiw.html"
 last_updated: "8/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Backup from Cisco HyperFlex Snapshots Works
 
-In this article
 
 When you perform backup or replication from Cisco HyperFlex snapshots, Veeam Backup & Replication performs the following actions:
 
@@ -20,6 +21,4 @@ When you perform backup or replication from Cisco HyperFlex snapshots, Veeam Bac
 
 ![How Backup from Cisco HyperFlex Snapshots Works](images/cisco_bfss_scheme.webp)
 
-Page updated 8/4/2023
 
-Page content applies to build 13.0.1.1071

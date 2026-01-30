@@ -1,5 +1,7 @@
 ---
 title: "Restore from Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_from_tape.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore from Tape
 
-In this article
 
 You can restore data previously backed up to tape. Veeam Backup & Replication offers several recovery options for different recovery scenarios:
 
@@ -32,6 +33,4 @@ In This Section
 * [Object Restore from Tape](object_restore_from_tape.md)
 * [Restoring Data from Encrypted Tapes](tapes_restore_encrypted.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

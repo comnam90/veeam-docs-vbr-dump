@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRUserRoleAssignment"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbruserroleassignment.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRUserRoleAssignment
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Examples
 | --- | --- |
 | This command assigns a Veeam Tape Operator role to the Tech\TapeAdmin user. The cmdlet output will contain the following details Role, Type, Name and Id.  |  | | --- | | Add-VBRUserRoleAssignment -Name Tech\TapeAdmin -Role TapeOperator        Role  Type Name           Id        ----  ---- ----           --  BackupAdmin Group Administrators c5d266c7-8e2b-43f9-92c6-fffc4297074d | |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

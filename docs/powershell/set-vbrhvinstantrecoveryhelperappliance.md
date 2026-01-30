@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRHvInstantRecoveryHelperAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrhvinstantrecoveryhelperappliance.html"
 last_updated: "4/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRHvInstantRecoveryHelperAppliance
 
-In this article
 
 Short Description
 
@@ -82,6 +83,4 @@ Perform the following steps:
 2. Run the [New-VBRHvInstantRecoveryHelperAppliance](new-vbrhvinstantrecoveryhelperappliance.md) cmdlet. Set the $network variable as the Network parameter value. Save the result to the $appliance variable.
 3. Run the Set-VBRHvInstantRecoveryHelperAppliance cmdlet. Set the $appliance variable as the HelperAppliance parameter value. Provide the ObtainIPAutomatically parameter.
 
-Page updated 4/5/2024
 
-Page content applies to build 13.0.1.1071

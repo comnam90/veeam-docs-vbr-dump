@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Storage Name or Address and Storage Role"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nimble_add_name.html"
 last_updated: "3/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Storage Name or Address and Storage Role
 
-In this article
 
 At the Name step of the wizard, specify the storage system name, description and storage role.
 
@@ -29,6 +30,4 @@ If you do not select any check box, Veeam Backup & Replication displays an error
 
 ![Step 2. Specify Storage Name or Address and Storage Role](images/nimble_add_name.webp)
 
-Page updated 3/15/2024
 
-Page content applies to build 13.0.1.1071

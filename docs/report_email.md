@@ -1,5 +1,7 @@
 ---
 title: "Enabling Email Reporting"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/report_email.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling Email Reporting
 
-In this article
 
 You can set up Veeam Backup & Replication to send reports automatically by email. To do this, you must enable and configure global email notification settings in Veeam Backup & Replication. For details, see [Configuring Global Email Notification Settings](general_email_notifications.md).
 
@@ -27,6 +28,4 @@ You can specify custom notification settings for a specific backup policy. To le
 * [Notification Settings](policy_sap_hana_advanced_notifications.md) for Veeam Plug-In for SAP HANA
 * [Notification Settings](policy_sap_oracle_advanced_notifications.md) for Veeam Plug-In for SAP on Oracle
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

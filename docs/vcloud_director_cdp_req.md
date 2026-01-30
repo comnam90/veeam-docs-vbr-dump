@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_cdp_req.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Consider the following for CDP for VMware Cloud Director:
 
@@ -20,6 +21,4 @@ Consider the following for CDP for VMware Cloud Director:
 * The maximum number of VMs in a vApp that can be protected with CDP is 128.
 * If you add a new organization VDC to the Cloud Director server after the I/O filter is installed on the existing VDCs, you need to install the I/O filter manually on the newly added VDC. To do that, open the [I/O Filter Management](vcd_cdp_io_filter_launch.md) wizard, make sure that check boxes are selected near the organization VDCs where the I/O filter must be present and finish the wizard.
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

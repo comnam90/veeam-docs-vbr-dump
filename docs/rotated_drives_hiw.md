@@ -1,5 +1,7 @@
 ---
 title: "How Repository with Rotated Drives Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rotated_drives_hiw.html"
 last_updated: "1/9/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Repository with Rotated Drives Works
 
-In this article
 
 You can use [Microsoft Windows server](#MSserver) or [Linux server or SMB (CIFS) share](#LinuxSMB) as a backup repository with rotated drives.
 
@@ -80,6 +81,4 @@ Veeam Backup & Replication starts a new backup chain on the drive. It removes th
 
 ![How Repositories with Rotated Drives Work](images/rotated_drive_lin.webp)
 
-Page updated 1/9/2026
 
-Page content applies to build 13.0.1.1071

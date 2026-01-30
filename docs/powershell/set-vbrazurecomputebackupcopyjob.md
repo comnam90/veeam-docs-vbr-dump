@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAzureComputeBackupCopyJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazurecomputebackupcopyjob.html"
 last_updated: "1/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAzureComputeBackupCopyJob
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Related Commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
-Page updated 1/24/2024
 
-Page content applies to build 13.0.1.1071

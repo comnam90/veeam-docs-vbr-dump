@@ -1,5 +1,7 @@
 ---
 title: "Tape Libraries"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_library.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Libraries
 
-In this article
 
 All tape libraries and standalone tape drives managed by Veeam Backup & Replication are shown in a list under the Libraries node in the Tape Infrastructure view. All connected devices are discovered automatically during the rescan procedure. When you add a new tape device to the tape server, it appears in your console after rescanning.
 
@@ -31,6 +32,4 @@ Related Topics
 * [Automated Drive Cleaning](auto_drive_cleaning.md)
 * [Switching Libraries to Maintenance Mode](maintenance_mode.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

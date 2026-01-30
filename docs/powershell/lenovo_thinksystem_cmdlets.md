@@ -1,5 +1,7 @@
 ---
 title: "Lenovo ThinkSystem Storage Systems"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/lenovo_thinksystem_cmdlets.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Lenovo ThinkSystem Storage Systems
 
-In this article
 
 Add Lenovo ThinkSystem storage systems to your  Veeam Backup & Replication console and administrate them.
 
@@ -27,6 +28,4 @@ In This Section
 | [Get-ThinkSystemSnapshot](get-thinksystemsnapshot.md) | Looks for ThinkSystem storage snapshots. |
 | [Remove-ThinkSystemSnapshot](remove-thinksystemsnapshot.md) | Removes ThinkSystem storage snapshots. |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

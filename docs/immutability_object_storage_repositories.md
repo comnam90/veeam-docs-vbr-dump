@@ -1,5 +1,7 @@
 ---
 title: "Immutability for Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_object_storage_repositories.html"
 last_updated: "10/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Immutability for Object Storage Repositories
 
-In this article
 
 Veeam Backup & Replication allows you to prohibit deletion of data from the object storage repository by making that data temporarily immutable and to protect data against malware activity by maintaining several versions of a single backup.
 
@@ -47,6 +48,4 @@ Related Topics
 
 [Enabling Immutability](immutability_os_enable.md)
 
-Page updated 10/14/2025
 
-Page content applies to build 13.0.1.1071

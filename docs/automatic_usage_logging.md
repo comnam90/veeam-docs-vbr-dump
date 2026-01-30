@@ -1,5 +1,7 @@
 ---
 title: "Automatic License Usage Reporting"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/automatic_usage_logging.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Automatic License Usage Reporting
 
-In this article
 
 When license auto update is enabled for [Rental, Subscription, Perpetual](types_of_licenses.md#rental) licenses, Veeam Backup & Replication performs automatic license usage reporting.
 
@@ -21,6 +22,4 @@ The collected data allows our back-end system to automatically approve your mont
 
 By enabling license auto update you agree with collection, transmission and use of the reporting data. You must not enable license auto update in case you do not agree with such collection, transmission and use.
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

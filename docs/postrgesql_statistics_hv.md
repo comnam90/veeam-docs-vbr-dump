@@ -1,5 +1,7 @@
 ---
 title: "WAL Backup Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postrgesql_statistics_hv.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WAL Backup Statistics
 
-In this article
 
 You can view the statistics of the WAL files backup job in the History view or in the Home view in Veeam Backup & Replication.
 
@@ -82,6 +83,4 @@ The pane at the bottom shows all actions performed during the job run. To filter
 | Note |
 | Statistics on WAL files processing is updated periodically, simultaneously for the VM backup job (parent) and WAL files backup job (child job). |
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

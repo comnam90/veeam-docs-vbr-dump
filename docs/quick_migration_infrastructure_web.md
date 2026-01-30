@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Infrastructure Components for Data Transfer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_infrastructure_web.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Infrastructure Components for Data Transfer
 
-In this article
 
 At the Transfer step of the wizard, assign infrastructure components to relocate the VMs:
 
@@ -40,6 +41,4 @@ Related Topics
 
 [Quick Migration for Finalizing Instant Restore](quick_migration_hv.md)
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

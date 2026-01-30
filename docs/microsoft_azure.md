@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/microsoft_azure.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Azure
 
-In this article
 
 Veeam Backup & Replication with Microsoft Azure Plug-In for Veeam Backup & Replication allows you to add Microsoft Azure backup appliances to Veeam Backup & Replication and manage data protection and recovery operations for all these appliances from a single Veeam Backup & Replication console. You can use Veeam Backup & Replication with the installed plug-in to perform the following operations:
 
@@ -35,6 +36,4 @@ Veeam Backup & Replication with Microsoft Azure Plug-In for Veeam Backup & Repli
 
 For more information, see the [Veeam Backup for Microsoft Azure User Guide](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1).
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

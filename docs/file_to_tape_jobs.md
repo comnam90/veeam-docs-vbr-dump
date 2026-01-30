@@ -1,5 +1,7 @@
 ---
 title: "File Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_jobs.html"
 last_updated: "7/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # File Backup to Tape
 
-In this article
 
 File to tape job allows you to back up to tape any Microsoft Windows or Linux files. Also, you can back up volumes of storage devices that support the NDMP protocol. For more information, see [NDMP Servers Backup to Tape](ndmp_servers_backup_to_tape.md).
 
@@ -33,6 +34,4 @@ Related Topics
 * [Before You Begin](file_to_tape_before_you_begin.md)
 * [Creating File to Tape Jobs](creating_file_to_tape_jobs.md)
 
-Page updated 7/9/2025
 
-Page content applies to build 13.0.1.1071

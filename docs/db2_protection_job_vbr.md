@@ -1,5 +1,7 @@
 ---
 title: "Managing Backup Jobs in Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_job_vbr.html"
 last_updated: "12/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Backup Jobs in Veeam Backup & Replication
 
-In this article
 
 After Veeam Plug-In for IBM Db2 starts the backup process, Veeam Backup & Replication creates the backup job. You can use this job to view statistics on the backup process and generate backup job reports. You can also disable or delete the backup job.
 
@@ -25,6 +26,4 @@ You can perform the following operations from the Veeam Backup & Replication con
 * [Disable a backup job](db2_protection_job_vbr_disable.md)
 * [Delete a backup job](db2_protection_job_vbr_delete.md)
 
-Page updated 12/17/2024
 
-Page content applies to build 13.0.1.1071

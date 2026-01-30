@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Destination for Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_file_share_destination.html"
 last_updated: "7/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Destination for Data Restore
 
-In this article
 
 At the Destination step of the wizard, specify the location where you want to restore the file share.
 
@@ -25,6 +26,4 @@ If you want to restore the file share to a new folder, click New Folder at the b
 
 ![Step 3. Specify Destination for Data Restore](images/nas_file_restore_destination.webp "Specify Destination for Data Restore")
 
-Page updated 7/23/2024
 
-Page content applies to build 13.0.1.1071

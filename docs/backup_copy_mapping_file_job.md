@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Map Backup File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_mapping_file_job.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Map Backup File
 
-In this article
 
 If the target backup repository already stores a backup of workloads that you want to copy, you can map the backup copy job to this backup.
 
@@ -30,6 +31,4 @@ When mapping a backup copy job, consider the following limitations:
 
 ![Mapping Backup Copy Jobs](images/backup_copy_file_mapping.webp)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

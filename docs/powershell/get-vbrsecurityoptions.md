@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRSecurityOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsecurityoptions.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRSecurityOptions
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This example returns Veeam Backup & Replication security settings. The cmdlet
 | --- |
 | Get-VBRSecurityOptions  Certificate              : Veeam.Backup.PowerShell.Infos.VBRBackupServerCertificate  TrustedHosts             : 0  HostPolicy               : Veeam.Backup.PowerShell.Infos.VBRLinuxTrustedHostPolicy  AuditLogsPath            : C:\ProgramData\Veeam\Backup\Audit  CompressOldAuditLogs     : True  FipsCompliantModeEnabled : False |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

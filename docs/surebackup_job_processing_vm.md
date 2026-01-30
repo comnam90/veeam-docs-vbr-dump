@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Job Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_processing_vm.html"
 last_updated: "8/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Job Processing
 
-In this article
 
 SureBackup job processing depends on the verification mode, Full recoverability testing mode or Backup verification and content scan only mode.
 
@@ -67,6 +68,4 @@ Veeam Backup & Replication verifies VMs sequentially — one after another. For 
 
 1. Running backup integrity check. Veeam Backup & Replication runs a CRC check to verify the VM backup at the file level and make sure that this file is not corrupted.
 
-Page updated 8/20/2024
 
-Page content applies to build 13.0.1.1071

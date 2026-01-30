@@ -1,5 +1,7 @@
 ---
 title: "Retrying Veeam Agent Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_retry.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retrying Veeam Agent Backup Job
 
-In this article
 
 You can manually retry a Veeam Agent backup job configured in Veeam Backup & Replication if the job failed during the previous job session. When you retry a Veeam Agent backup job, Veeam Backup & Replication processes only those computers in the job that were not processed successfully during the previous job session.
 
@@ -37,6 +38,4 @@ Keep in mind that you will be able to launch retry for another computer in the s
 
 [![Retry Backup Job for Individual Computer](images/agent_backup_job_retry_one.webp)](images/agent_backup_job_retry_one.webp "Retry Backup Job for Individual Computer")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

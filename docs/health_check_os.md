@@ -1,5 +1,7 @@
 ---
 title: "Health Check for Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/health_check_os.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Health Check for Object Storage Repositories
 
-In this article
 
 You can instruct Veeam Backup & Replication to periodically perform a health check for the latest restore point in the backup chain. An automatic health check can help you verify that VM data blocks are present in the object storage repository and check the integrity of these blocks. It helps you avoid a situation where a restore point gets corrupted, making all dependent restore points corrupted, too. The health check helps ensure that the restore point is consistent, and you will be able to restore data from this restore point.
 
@@ -57,6 +58,4 @@ For scheduled jobs, the number of health check retries is equal to the number of
 | Important |
 | To allow Veeam Backup & Replication add the repaired data blocks to the latest restore point after completing the health check, the backup job must meet the following requirements:   * The backup job must not be disabled. * You must schedule the backups job to run automatically. For more information, see the Schedule section for [VMware vSphere backup jobs](backup_job_schedule_vm.md) and [Microsoft Hyper-V backup jobs](backup_job_schedule_hv.md). * The target object storage is not set to the [Maintenance mode](sobr_maintenance.md). * Backup window settings must allow a backup job to run after the health check completes.   If the backup job does not meet these requirements, Veeam Backup & Replication will add the repaired data blocks to a new restore point, created during a next run of the backup job. |
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

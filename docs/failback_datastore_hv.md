@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Target Datastore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_datastore_hv.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Target Datastore
 
-In this article
 
 The Datastore step is available if you have selected the Failback to the specified location option at the [Destination](failback_destination_hv.md) step.
 
@@ -28,6 +29,4 @@ The host or cluster where you plan to register VMs must have access to the to th
 
 ![Step 5. Select Target Datastore](images/hv_failback_datastore.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

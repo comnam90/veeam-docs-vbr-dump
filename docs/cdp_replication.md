@@ -1,5 +1,7 @@
 ---
 title: "Continuous Data Protection (CDP) for VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_replication.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Continuous Data Protection (CDP) for VMware vSphere
 
-In this article
 
 Continuous data protection (CDP) is a technology that helps you protect mission-critical VMware virtual machines when data loss for seconds or minutes is unacceptable. CDP also provides minimum recovery time objective (RTO) in case a disaster strikes because CDP replicas are in a ready-to-start state.
 
@@ -40,6 +41,4 @@ In This Section
 * [Backup Infrastructure for CDP](cdp_infrastructure.md)
 * [How CDP Works](cdp_hiw.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

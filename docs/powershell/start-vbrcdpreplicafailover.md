@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRCDPReplicaFailover"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcdpreplicafailover.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRCDPReplicaFailover
 
-In this article
 
 Short Description
 
@@ -98,6 +99,4 @@ Related Commands
 * [Get-VBRCDPLongTermRestorePoint](get-vbrcdplongtermrestorepoint.md)
 * [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

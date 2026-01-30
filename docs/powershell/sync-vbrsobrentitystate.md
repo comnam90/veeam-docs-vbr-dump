@@ -1,5 +1,7 @@
 ---
 title: "Sync-VBRSOBREntityState"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-vbrsobrentitystate.html"
 last_updated: "6/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sync-VBRSOBREntityState
 
-In this article
 
 Short Description
 
@@ -107,6 +108,4 @@ Related Commands
 * [Get-VBRCapacityTierSyncInterval](get-vbrcapacitytiersyncinterval.md)
 * [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1)
 
-Page updated 6/18/2024
 
-Page content applies to build 13.0.1.1071

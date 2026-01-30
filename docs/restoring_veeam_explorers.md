@@ -1,5 +1,7 @@
 ---
 title: "Launching Veeam Explorer from Image-Level Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Veeam Explorer from Image-Level Backups
 
-In this article
 
 To restore application items from image-level backups, use the item restore wizard.
 
@@ -19,6 +20,4 @@ To restore application items from image-level backups, use the item restore wiza
 6. [Specify a restore reason](restoring_veeam_explorers_reason.md).
 7. [Open Veeam Explorer](restoring_veeam_explorers_open.md).
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

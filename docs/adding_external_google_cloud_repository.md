@@ -1,5 +1,7 @@
 ---
 title: "Adding External Google Cloud Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_external_google_cloud_repository.html"
 last_updated: "4/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding External Google Cloud Storage
 
-In this article
 
 To add an external Google Cloud storage repository to the backup infrastructure, do the following:
 
@@ -18,6 +19,4 @@ To add an external Google Cloud storage repository to the backup infrastructure,
 5. [Apply settings](external_google_cloud_apply.md).
 6. [Finish working with the wizard](external_google_cloud_finish.md).
 
-Page updated 4/15/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_permissions.html"
 last_updated: "11/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 The following table lists the user account permissions necessary to launch Veeam Explorer for Microsoft SharePoint and restore Microsoft SharePoint data.
 
@@ -23,6 +24,4 @@ Consider the following if you are using ADFS as an authentication provider:
 * When using Windows Authentication, you can use both your current account or provide another account.
 * When using Forms Authentication, the current account cannot be used.
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

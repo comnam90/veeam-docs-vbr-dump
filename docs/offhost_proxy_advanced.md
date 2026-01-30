@@ -1,5 +1,7 @@
 ---
 title: "Configuring Advanced Options for Off-Host Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/offhost_proxy_advanced.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Advanced Options for Off-Host Backup Proxies
 
-In this article
 
 When you configure a backup or replication job, you can instruct Veeam Backup & Replication to automatically assign an off-host backup proxy to the job. To select an appropriate off-host backup proxy, Veeam Backup & Replication uses a static topology scheme — a scheme of available connections in the backup infrastructure. The static topology scheme is updated once in 4 hours, when Veeam Backup & Replication performs automatic rescan of backup infrastructure components.
 
@@ -20,6 +21,4 @@ In This Section
 * [Presenting Volumes to Off-Host Backup Proxies](present_volumes.md)
 * [Assigning Off-Host Backup Proxies to Jobs](assign_proxy.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

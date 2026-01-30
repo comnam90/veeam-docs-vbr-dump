@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Installer Service with GPO"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_services_gpo.html"
 last_updated: "6/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Installer Service with GPO
 
-In this article
 
 This topic describes how you can deploy the Veeam Installer service setup file to remote computers using GPO. You must create an MST file with custom configuration parameters and use this MST file to deploy the service on remote computers.
 
@@ -89,6 +90,4 @@ Step 4. Apply Group Policies to Client Computers
 
 Apply the created Group Policy to client computers.
 
-Page updated 6/27/2025
 
-Page content applies to build 13.0.1.1071

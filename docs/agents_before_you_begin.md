@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_before_you_begin.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Before you start using the Veeam Agent management functionality in Veeam Backup & Replication, consider the following:
 
@@ -24,6 +25,4 @@ Related Topics
 * [Prerequisites and Limitations for Veeam Agent Backup Policies (Unix Computers)](agent_policy_before_unix.md)
 * [Prerequisites and Limitations for Veeam Agent Backup Policies (Mac Computers)](agent_policy_before_mac.md)
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

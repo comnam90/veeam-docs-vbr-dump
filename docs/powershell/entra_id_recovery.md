@@ -1,5 +1,7 @@
 ---
 title: "Item Data Recovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/entra_id_recovery.html"
 last_updated: "11/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Item Data Recovery
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -27,6 +28,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [New-VBREntraIDTenantItemIncludedProperty](new-vbrentraidtenantitemincludedproperty.md) | Defines an object with item properties or references that you want to restore. |
 | [Restore-VBREntraIDTenantItemAttributes](restore-vbrentraidtenantitemattributes.md) | Restores properties of Microsoft Entra ID items. |
 
-Page updated 11/13/2024
 
-Page content applies to build 13.0.1.1071

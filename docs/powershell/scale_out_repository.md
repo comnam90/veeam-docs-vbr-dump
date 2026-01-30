@@ -1,5 +1,7 @@
 ---
 title: "Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/scale_out_repository.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scale-Out Backup Repositories
 
-In this article
 
 The following topics contain instructions on setting up and managing scale-out backup repositories by means of Veeam PowerShell.
 
@@ -23,6 +24,4 @@ In this section
 * [Capacity Tier](sobr_capacity_tier.md)
 * [Archive Tier](sobr_archive_tier.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

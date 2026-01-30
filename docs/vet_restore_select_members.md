@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Review Team Members"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_select_members.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Review Team Members
 
-In this article
 
 This step is only available if you launched the Restore wizard to restore a specific team and selected the Restore membership and their permissions check box at the [previous step](vet_restore_options_teams.md) of the wizard.
 
@@ -22,6 +23,4 @@ To quickly find the necessary team members, use the search field at the top of t
 
 [![Review Team Members](images/vet_restore_select_members.webp)](images/vet_restore_select_members.webp "Review Team Members")
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

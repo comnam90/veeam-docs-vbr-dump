@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials and Region Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_account.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials and Region Settings
 
-In this article
 
 At the Account step of the wizard, specify AWS user credentials and region:
 
@@ -22,6 +23,4 @@ If you have not set up credentials beforehand in the [Cloud Credentials Manager]
 
 ![Step 3. Specify Credentials and Region Settings](images/amazon_restore_account.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

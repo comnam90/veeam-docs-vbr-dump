@@ -1,5 +1,7 @@
 ---
 title: "Restore from Other File Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_other.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore from Other File Systems
 
-In this article
 
 To recover files from OSes not supported for guest OS file restore, you can use other types of restores. For the list of file systems supported for guest OS file restore, see the [Guest OS File Restore](platform_support.md#flr) section.
 
@@ -33,6 +34,4 @@ To restore files and folders, do the following:
 
 Alternatively, you can mount the VM disks to a Microsoft Windows VM and use file management tools.
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

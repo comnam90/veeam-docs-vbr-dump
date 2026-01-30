@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_network.html"
 last_updated: "10/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Configure Network Mapping
 
-In this article
 
 The Network step of the wizard is available if you have selected the Network remapping option at the [Name](uni_cdp_policy_name.md) step.
 
@@ -26,6 +27,4 @@ To specify a network for an individual workload:
 
 ![Step 6. Configure Network Mapping](images/uni_cdp_policy_network.webp "Specify network mapping")
 
-Page updated 10/24/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Secondary Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_secondary_target.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Secondary Repository Settings
 
-In this article
 
 At the Secondary Target step of the wizard, you can specify a secondary repository that will be used to store additional copies of backup files from the backup storage for redundancy. To learn what storage types you can assign the role of the secondary repository to, see [Storage Repositories](unstructured_data_backup_infrastructure.md#backup_repository) in the Backup Infrastructure for Unstructured Data Backup section.
 
@@ -46,6 +47,4 @@ If the backup server is not connected to Veeam Backup Enterprise Manager and doe
 
 ![Step 7. Specify Secondary Repository Settings](images/file_share_backup_job_secondary_target_retention.webp)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

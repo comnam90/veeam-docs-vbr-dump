@@ -1,5 +1,7 @@
 ---
 title: "NFS Share"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_share.html"
 last_updated: "10/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NFS Share
 
-In this article
 
 You can use NFS shares as backup repositories.
 
@@ -82,6 +83,4 @@ Related Topics
 * [Adding NFS Repositories](nfs_repository_add.md)
 * [Gateway Servers](gateway_server.md)
 
-Page updated 10/29/2025
 
-Page content applies to build 13.0.1.1071

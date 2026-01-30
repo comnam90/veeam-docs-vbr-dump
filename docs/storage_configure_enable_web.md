@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Enable HPE Web Services API Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_configure_enable_web.html"
 last_updated: "4/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Enable HPE Web Services API Server
 
-In this article
 
 Veeam Backup & Replication uses the HPE Web Services API (WSAPI) server to communicate with HPE Alletra Storage MP B10000, 9000, Primera, 3PAR storage systems.
 
@@ -63,6 +64,4 @@ The state of the WSAPI server is displayed in the WSAPI Provider tab.
 
 If it is not enabled, click the Edit button and enable the server.
 
-Page updated 4/16/2025
 
-Page content applies to build 13.0.1.1071

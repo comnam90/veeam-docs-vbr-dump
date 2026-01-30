@@ -1,5 +1,7 @@
 ---
 title: "Tape Data Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_data_retention.html"
 last_updated: "7/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Data Retention
 
-In this article
 
 Data retention period is a period of time when data written to tapes is protected from overwriting.
 
@@ -47,6 +48,4 @@ The tapes containing outdated data are handled in the following way:
 
 You can erase tapes or move tapes to another media pool manually. For more information, see [Moving Tapes to Another Media Pool](moving_tapes_to_custom_pool.md).
 
-Page updated 7/15/2025
 
-Page content applies to build 13.0.1.1071

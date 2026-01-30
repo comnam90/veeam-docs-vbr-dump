@@ -1,5 +1,7 @@
 ---
 title: "Veeam Explorer for Microsoft SharePoint"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_user_guide.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Explorer for Microsoft SharePoint
 
-In this article
 
 Veeam Explorer for Microsoft SharePoint allows you to restore and export Microsoft SharePoint data from backups, snapshot replicas, CDP replicas, VeeamZIP backups or storage snapshots created by Veeam Backup & Replication. You can also save data from backups to a local computer and send data from backups by email. You can also restore and export Microsoft SharePoint data from backups created by Veeam Backup for Microsoft 365.
 
@@ -25,6 +26,4 @@ In This Section
 
 * [Getting Support](vesp_support.md)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

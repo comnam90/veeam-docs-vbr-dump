@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specifying CSV File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_scope_csv.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specifying CSV File
 
-In this article
 
 At this step of the wizard, specify a file that defines a list of computers that you want to add to the protection group. You must specify a list of computers in a file of the CSV or TXT format. The file must be created beforehand. To learn more, see [Preparing CSV File](#csv).
 
@@ -45,6 +46,4 @@ Alternatively, you can delimit IP addresses or domain names in the list with the
 | --- |
 | 172.17.53.16 |
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

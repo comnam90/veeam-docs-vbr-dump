@@ -1,5 +1,7 @@
 ---
 title: "Undoing Failover by Failover Plans"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failover_plan_undo.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Undoing Failover by Failover Plans
 
-In this article
 
 You can undo failover for all VMs added to the failover plan at once. When you undo failover, you switch the workload back to source VMs and discard all changes that were made to VM replicas during failover. If some of the VMs were already failed back, for example manually by the user, they are skipped from processing.
 
@@ -23,6 +24,4 @@ To undo failover by a failover plan:
 
 [![Undoing Failover by Failover Plans](images/undo_failover_plan_vm.webp)](images/undo_failover_plan_vm.webp)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

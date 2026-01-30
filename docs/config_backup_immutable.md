@@ -1,5 +1,7 @@
 ---
 title: "Creating Immutable Configuration Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/config_backup_immutable.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Immutable Configuration Backups
 
-In this article
 
 Veeam Backup & Replication allows you to keep configuration backups on object storage repositories that support immutability. Immutability makes data temporarily immutable and prohibits deletion of configuration backups from object storage repositories. Therefore, it protects your data against loss as a result of attacks, malware activity or any other injurious actions.
 
@@ -29,6 +30,4 @@ To make configurations backups immutable, perform the following steps:
 
 ![Creating Immutable Configuration Backups](images/immutable_config_backup.webp)
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

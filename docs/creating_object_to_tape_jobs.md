@@ -1,5 +1,7 @@
 ---
 title: "Creating Object to Tape Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_object_to_tape_jobs.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Object to Tape Jobs
 
-In this article
 
 To write object storage data to tape, configure an object to tape job. The backup job defines how, where and when to back up data from the object storage. One job can be used to protect data from one or more types of object storage. Jobs can be started manually or scheduled to run automatically at a specific time.
 
@@ -25,6 +26,4 @@ Before you create an object to tape job, [check prerequisites](object_to_tape_be
 8. [Define a job schedule](gfs_object_to_tape_schedule.md).
 9. [Finish working with the wizard](object_to_tape_summary.md).
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Veeam Intelligence Settings Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_intelligence_settings_web.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Veeam Intelligence Settings Using Web UI
 
-In this article
 
 To configure Veeam Intelligence settings, do the following in the Veeam Backup & Replication web UI:
 
@@ -21,6 +22,4 @@ To configure Veeam Intelligence settings, do the following in the Veeam Backup &
 
 [![Click to zoom in](images/settings_veeam_intelligence_web.webp)](images/settings_veeam_intelligence_web.webp "Click to zoom in")
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Minor Non-Breaking Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/minor_changes_v13.0.1.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Minor Non-Breaking Changes
 
-In this article
 
 The following minor non-breaking changes were introduced in Veeam PowerShell 13.0.1.
 
@@ -35,6 +36,4 @@ Veeam PowerShell Enumerations
 
 In this version, the [VBREntraIDTenantItemType](enums.md#VBREntraIDTenantItemType) enum has a new property: DeviceConfiguration.
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

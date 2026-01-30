@@ -1,5 +1,7 @@
 ---
 title: "Veeam PowerShell Reference"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_psreference.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam PowerShell Reference
 
-In this article
 
 Veeam PowerShell allows you to perform almost all operations that are available with the Veeam Backup & Replication UI.
 
@@ -51,6 +52,4 @@ Related Topics
 * [Veeam PowerShell Types](veeam_powershell_types.md)
 * [Veeam PowerShell Changelog](changelog.md)
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

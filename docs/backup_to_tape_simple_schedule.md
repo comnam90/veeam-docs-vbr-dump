@@ -1,5 +1,7 @@
 ---
 title: "Schedule for Backup to Tape Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_simple_schedule.html"
 last_updated: "1/2/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Schedule for Backup to Tape Job
 
-In this article
 
 This step of the wizard is available if you selected a regular media pool at the Media Pool step of the wizard.
 
@@ -51,6 +52,4 @@ By default, the source job has priority. In this case, the tape job terminates w
 
 ![Schedule for Backup to Tape Job](images/backup_to_tape_schedule.webp)
 
-Page updated 1/2/2026
 
-Page content applies to build 13.0.1.1071

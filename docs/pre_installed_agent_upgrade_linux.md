@@ -1,5 +1,7 @@
 ---
 title: "Linux Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_installed_agent_upgrade_linux.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Linux Computers
 
-In this article
 
 To update pre-installed Veeam Agent on a Linux computer, perform the following operations:
 
@@ -21,6 +22,4 @@ To update pre-installed Veeam Agent on a Linux computer, perform the following o
 | --- |
 | veeamconfig mode syncnow |
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

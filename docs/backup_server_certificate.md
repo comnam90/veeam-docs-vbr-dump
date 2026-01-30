@@ -1,5 +1,7 @@
 ---
 title: "Backup Server Certificate"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_server_certificate.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Server Certificate
 
-In this article
 
 When you configure the Veeam Backup & Replication infrastructure, you can specify what TLS certificate must be used to establish a secure connection from backup infrastructure components to the backup server. Veeam Backup & Replication offers the following options for TLS certificates:
 
@@ -23,6 +24,4 @@ If you plan to use a certificate issued by your own Certificate Authority (CA), 
 | Important |
 | If you update the TLS certificate used on the backup server, you must also do the following:   * If multi-factor authentication is enabled, any Veeam Backup & Replication consoles connected to the backup server must be restarted to avoid connection issues. * If you use Veeam Plug-In for Nutanix AHV, restart the Veeam AHV Service. For more information on restarting services, see [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md). * For RHV Backup proxies, pass through the Edit Red Hat Virtualization Proxy wizard. To do this, in the Backup Infrastructure view, right-click a proxy and select Properties. In the wizard, click Finish. * For VMware clusters, pass through the I/O filter Management wizard as described in section [Installing I/O Filter](cdp_io_filter_install.md). * For CDP proxies, pass through the Edit CDP Proxy wizard. To do this, in the Backup Infrastructure view, right-click a proxy and select Properties. In the wizard, click Finish.  * To avoid potential synchronization issues, make sure that Veeam Agents are synchronized with Veeam Backup & Replication before you change the existing certificate. To learn more, see [Rescan Job](agents_discovery_job.md). * [For protection groups for pre-installed Veeam Agents] If you change the existing certificate, you must export a new package with setup files to deploy Veeam Agents on new computers that you want to add to the protection group.To learn more, see [Specifying Packages](protection_group_packages.md). |
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

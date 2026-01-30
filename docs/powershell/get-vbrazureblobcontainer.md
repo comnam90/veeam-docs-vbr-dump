@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAzureBlobContainer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazureblobcontainer.html"
 last_updated: "4/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAzureBlobContainer
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 * [Get-VBRAzureBlobAccount](get-vbrazureblobaccount.md)
 * [Connect-VBRAzureBlobService](connect-vbrazureblobservice.md)
 
-Page updated 4/17/2024
 
-Page content applies to build 13.0.1.1071

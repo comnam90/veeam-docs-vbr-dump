@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compatible_storage_details.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Bucket step of the wizard, specify the bucket and folder where you will store data, and define storage limits and immutability settings that Veeam Backup & Replication will apply to data in the object storage.
 
@@ -44,6 +45,4 @@ Note that the maximum immutability period you can set in the Veeam Backup & Repl
 
 ![Step 4. Specify Object Storage Settings](images/s3_compatible_immutability.webp)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

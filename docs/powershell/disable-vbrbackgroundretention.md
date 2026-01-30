@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRBackgroundRetention"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrbackgroundretention.html"
 last_updated: "7/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRBackgroundRetention
 
-In this article
 
 Short Description
 
@@ -49,6 +50,4 @@ This command disables background retention for backups.
 | --- |
 | Disable-VBRBackgroundRetention |
 
-Page updated 7/25/2025
 
-Page content applies to build 13.0.1.1071

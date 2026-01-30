@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Files Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_files_location_single.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Files Location
 
-In this article
 
 At this step of the wizard, specify the following file locations.
 
@@ -32,6 +33,4 @@ To specify a file location, do the following:
 
 [![Selecting File](images/select_file.webp)](images/select_file.webp "Selecting File")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_details.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Bucket step of the wizard, specify Amazon S3 bucket and folder that will be used to store data:
 
@@ -67,6 +68,4 @@ For more information on storage class, see [AWS Documentation](https://aws.amazo
 
 ![Step 4. Specify Object Storage Settings](images/s3_add_bucket_storage_class.webp)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

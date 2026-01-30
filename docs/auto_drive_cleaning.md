@@ -1,5 +1,7 @@
 ---
 title: "Automated Drive Cleaning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/auto_drive_cleaning.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Automated Drive Cleaning
 
-In this article
 
 You can instruct Veeam Backup & Replication to automatically clean the tape library drives.
 
@@ -54,6 +55,4 @@ Consider the following limitations for automated drive cleaning:
 * You cannot enable the automated drive cleaning on standalone tape drives.
 * You cannot start the drive cleaning manually with Veeam Backup & Replication. The drive cleaning is fully automated.
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

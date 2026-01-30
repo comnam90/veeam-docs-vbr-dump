@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Target Repository and Retention Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_target_web.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Target Repository and Retention Settings
 
-In this article
 
 At the Target step of the wizard, define a target backup repository and configure retention policy:
 
@@ -48,6 +49,4 @@ To use this method, select the Read the entire restore point from source instead
 
 ![Step 4. Specify Target Repository and Retention Settings](images/backup_copy_target_web.webp)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUserRoleAssignment"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbruserroleassignment.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUserRoleAssignment
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This command returns all users and user groups that have the Veeam Restore Operator role. The cmdlet output will contain the following details Role, Type, Name and Id.  |  | | --- | | Get-VBRUserRoleAssignment -Role RestoreOperator        Role  Type Name           Id        ----  ---- ----           --  BackupAdmin Group Administrators c5d266c7-8e2b-43f9-92c6-fffc4297074d | |
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

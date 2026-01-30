@@ -1,5 +1,7 @@
 ---
 title: "Export-VBRLinuxKnownHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/export-vbrlinuxknownhost.html"
 last_updated: "5/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Export-VBRLinuxKnownHost
 
-In this article
 
 Short Description
 
@@ -51,6 +52,4 @@ This command exports Linux TLS fingerprints to an XML file.
 | --- |
 | Export-VBRLinuxKnownHost -Path "C:\fingerprints.xml" |
 
-Page updated 5/2/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "RPO Warning Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_advanced_rpo_monitor.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # RPO Warning Settings
 
-In this article
 
 You can instruct a backup copy job to display a warning if a newly created restore point or transaction log is not copied within the desired recovery point objective (RPO). The RPO is counted down from the moment when the source backup job finishes and is ready to be copied.
 
@@ -22,6 +23,4 @@ To mark a job with the Warning status when the RPO is exceeded, do the following
 
 ![RPO Warning Settings](images/backup_copy_advanced_rpo_mongo.webp)
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

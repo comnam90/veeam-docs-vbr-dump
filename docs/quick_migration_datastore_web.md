@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Datastores and Disk Types"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_datastore_web.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Datastores and Disk Types
 
-In this article
 
 At the Datastore step, select target datastores and configure disk types:
 
@@ -24,6 +25,4 @@ Veeam Backup & Replication displays only those datastores that are accessible by
 
 [![Specify Datastore - Web UI](images/quick_migration_datastore_web.webp)](images/quick_migration_datastore_web.webp "Specify Datastore - Web UI")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

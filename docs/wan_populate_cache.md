@@ -1,5 +1,7 @@
 ---
 title: "Manually Populating Global Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_populate_cache.html"
 last_updated: "7/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manually Populating Global Cache
 
-In this article
 
 To manually populate the global cache:
 
@@ -29,6 +30,4 @@ Related Topics
 
 [Manual Population of Global Cache](wan_population.md)
 
-Page updated 7/18/2024
 
-Page content applies to build 13.0.1.1071

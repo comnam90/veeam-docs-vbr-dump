@@ -1,5 +1,7 @@
 ---
 title: "Platform-Independent Features"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_vbr_features.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Platform-Independent Features
 
-In this article
 
 Veeam Backup & Replication is a data protection solution designed to support a [wide range of platforms](platform_support.md), including virtual, physical, cloud platforms and others. While many features are designed as platform-specific, Veeam Backup & Replication also offers a set of platform-independent features. These features enhance the overall functionality, usability and efficiency of the solution.
 
@@ -22,6 +23,4 @@ This section describes the following platform-independent features:
 
 For the information on platform-specific features, see [Platform-Specific Features](workloads.md).
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/launch_restore_mailbox_mfa.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 Depending on the type of object you want to restore, to launch the Restore wizard, the following actions are available:
 
@@ -28,6 +29,4 @@ Depending on the type of object you want to restore, to launch the Restore wizar
 
 [![Restoring Single Mailbox, Folder or Item](images/vex_single_restore_to.webp)](images/vex_single_restore_to.webp "Restoring Single Mailbox, Folder or Item")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

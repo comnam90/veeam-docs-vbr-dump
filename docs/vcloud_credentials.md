@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify VMware Cloud Director Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_credentials.html"
 last_updated: "2/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify VMware Cloud Director Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials to connect to VMware Cloud Director.
 
@@ -28,6 +29,4 @@ If the certificate installed on the server is not trusted, Veeam Backup & Replic
 
 ![Step 3. Specify VMware Cloud Director Credentials](images/vcloud_add_server_credentials.webp)
 
-Page updated 2/6/2025
 
-Page content applies to build 13.0.1.1071

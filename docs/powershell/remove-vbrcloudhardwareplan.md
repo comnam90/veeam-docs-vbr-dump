@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBRCloudHardwarePlan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrcloudhardwareplan.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBRCloudHardwarePlan
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Related Commands
 
 [Get-VBRCloudHardwarePlan](get-vbrcloudhardwareplan.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

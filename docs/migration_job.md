@@ -1,5 +1,7 @@
 ---
 title: "Migrating VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migration_job.html"
 last_updated: "5/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating VMs
 
-In this article
 
 You can relocate one or more VMs with Quick Migration. Quick migration can be used to move VMs from one ESXi host to another one. You can perform "hot" Quick Migration for running VMs or "cold" Quick Migration for VMs that are powered off.
 
@@ -21,6 +22,4 @@ Before you start Quick Migration, [check prerequisites](quick_migration_before_y
 4. [Select infrastructure components for data transfer](quick_migration_infrastructure.md).
 5. [Finish working with the wizard](quick_migration_summary.md).
 
-Page updated 5/15/2024
 
-Page content applies to build 13.0.1.1071

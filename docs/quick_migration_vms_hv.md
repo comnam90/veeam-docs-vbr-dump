@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select VMs to Relocate"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_vms_hv.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select VMs to Relocate
 
-In this article
 
 At the Virtual Machines step of the wizard, select the VMs and VM containers that you want to relocate:
 
@@ -23,6 +24,4 @@ To quickly find the necessary object, you can use the search field at the bottom
 
 ![Step 2. Select VMs to Relocate](images/migration_vms.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

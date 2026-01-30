@@ -1,5 +1,7 @@
 ---
 title: "Antivirus Configuration File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/av_scan_xml.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Antivirus Configuration File
 
-In this article
 
 The antivirus software that you plan to use for scanning backups is described in the AntivirusInfos.xml file. By default, the file contains predefined settings for the following antivirus solutions:
 
@@ -88,6 +89,4 @@ You can edit the AntivirusInfos.xml file in the following ways:
 | Note |
 | Consider the following:   * If you made changes to the antivirus configuration file, you do not need to restart Veeam services on the backup server — Veeam Backup & Replication will perform the next malware scan with new settings. * During the upgrade, the customized AntivirusInfos.xml file is replaced by the default one. Do not forget to make necessary changes to it. * If the mount server is a [Veeam Software or Infrastructure Appliance](deployment_options.md), you cannot edit the AntivirusInfos.xml file. If you want to use third-party antivirus software, you must assign the mount server role to a non-Appliance server. |
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

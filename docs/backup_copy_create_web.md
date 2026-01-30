@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup Copy Jobs for VMs and Physical Machines Using Web Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_create_web.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup Copy Jobs for VMs and Physical Machines Using Web Console
 
-In this article
 
 To copy backups to a secondary location, you must configure a backup copy job. The backup copy job defines how, where and when to copy backups. One backup copy job can be used to process one or multiple machines. Machines included in the job are processed in parallel. If a machine included in the backup copy job has multiple disks, disks are processed sequentially, one after another.
 
@@ -20,6 +21,4 @@ Before you create a job, [check prerequisites](backup_copy_before_you_begin_web.
 5. [Define backup copy window](backup_copy_schedule_web.md).
 6. [Finish working with wizard](backup_copy_finish_web.md).
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

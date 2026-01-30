@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Planned Failover Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planned_failover_launch_hv.html"
 last_updated: "1/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Planned Failover Wizard
 
-In this article
 
 To launch the VMware Planned Failover wizard, do one of the following:
 
@@ -17,6 +18,4 @@ To launch the VMware Planned Failover wizard, do one of the following:
 
 [![Click to zoom in](images/planned_failover_launch_hv.webp)](images/planned_failover_launch_hv.webp "Click to zoom in")
 
-Page updated 1/24/2025
 
-Page content applies to build 13.0.1.1071

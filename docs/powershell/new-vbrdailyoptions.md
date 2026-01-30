@@ -1,5 +1,7 @@
 ---
 title: "New-VBRDailyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrdailyoptions.html"
 last_updated: "6/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRDailyOptions
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Examples
 | --- | --- |
 | This example shows how to create schedule with the following settings: on weekends at 18:00.  |  | | --- | | $weekendoptions = New-VBRDailyOptions -DayOfWeek Saturday, Sunday -Type SelectedDays |  Perform the following steps:   1. Run the New-VBRDailyOptions cmdlet. Specify the DayOfWeek parameter value. Specify the Type parameter value. 2. Save the result to the $weekendoptions variable. |
 
-Page updated 6/12/2024
 
-Page content applies to build 13.0.1.1071

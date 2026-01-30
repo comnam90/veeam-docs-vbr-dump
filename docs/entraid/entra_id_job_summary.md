@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Finish Working with Wizard"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_job_summary.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, review configuration information and click Finish.
 
@@ -18,6 +19,4 @@ At the Summary step of the wizard, review configuration information and click Fi
 
 ![Step 6. Finish Working with Wizard](images/entra_id_job_summary.webp "Summary")
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

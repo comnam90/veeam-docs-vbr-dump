@@ -1,5 +1,7 @@
 ---
 title: "Receiving Export Reports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_receiving_export_reports.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Receiving Export Reports
 
-In this article
 
 Veeam Explorer for Microsoft Exchange can deliver reports that show summary information about export operations.
 
@@ -54,6 +55,4 @@ The following table lists fields that are shown in the report.
 
 [![Receiving Export Reports](images/vex_export_report.webp)](images/vex_export_report.webp)
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

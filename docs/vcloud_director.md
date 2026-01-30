@@ -1,5 +1,7 @@
 ---
 title: "VMware Cloud Director"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware Cloud Director
 
-In this article
 
 Veeam Backup & Replication provides support for VMware Cloud Director. Veeam Backup & Replication uses VMware Cloud Director API to back up vApps and VMs and restore them directly to the VMware Cloud Director hierarchy.
 
@@ -41,6 +42,4 @@ Related Topics
 * [Data Recovery for VMware Cloud Director](vcloud_director_vm_restore.md)
 * [Replication for VMware Cloud Director](vcloud_director_replication.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

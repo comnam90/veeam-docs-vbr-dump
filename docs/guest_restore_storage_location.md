@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Configure Staging Host"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_storage_location.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Configure Staging Host
 
-In this article
 
 This step is available if you recover files from storage snapshots.
 
@@ -22,6 +23,4 @@ To specify the destination for a snapshot clone/virtual copy and temporary VM:
 
 ![Step 6. Configure Staging Host](images/san_flr_esx.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

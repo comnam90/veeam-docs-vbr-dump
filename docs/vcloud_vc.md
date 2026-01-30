@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Credentials for Underlying vCenter Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_vc.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Credentials for Underlying vCenter Servers
 
-In this article
 
 At the vCenter Servers step of the wizard, specify credentials for every vCenter Server added to VMware Cloud Director. If the vCenter Server is already added to the backup infrastructure, you do not need to specify credentials for it once again. Veeam Backup & Replication will automatically detect the credentials you provided when adding this vCenter Server and use them.
 
@@ -33,6 +34,4 @@ If the certificate installed on the server is not trusted, Veeam Backup & Replic
 
 ![Step 4. Specify Credentials for Underlying vCenter Servers](images/vcloud_add_server_vsphere_creds.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

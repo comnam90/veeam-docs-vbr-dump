@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBRLinuxFileRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrlinuxfilerestore.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBRLinuxFileRestore
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Related Commands
 * [Find-VBRViResourcePool](find-vbrviresourcepool.md)
 * [Start-VBRLinuxFileRestore](start-vbrlinuxfilerestore.md)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

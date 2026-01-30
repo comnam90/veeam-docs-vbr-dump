@@ -1,5 +1,7 @@
 ---
 title: "Publishing to Specified Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ptsr.html"
 last_updated: "1/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing to Specified Server
 
-In this article
 
 This section explains how to publish a standalone database or Data Guard database to the specified Oracle server.
 
@@ -20,6 +21,4 @@ To publish data, take the following steps:
 5. [Specify Oracle settings](veor_oracle_settings.md).
 6. [Review the publishing summary](veor_publish_tas_summary.md).
 
-Page updated 1/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How Microsoft SQL Server Log Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_hiw.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Microsoft SQL Server Log Backup Works
 
-In this article
 
 To perform transaction log backup, Veeam Backup & Replication installs the Veeam Guest SQL Log Shipper runtime component on the VM guest OS.
 
@@ -40,6 +41,4 @@ Transaction logs that, for some reason, were not processed during the log backup
 
 ![How Microsoft SQL Server Log Backup Works](images/SQL_logs_hiw.webp)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

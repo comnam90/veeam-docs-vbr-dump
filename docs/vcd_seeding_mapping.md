@@ -1,5 +1,7 @@
 ---
 title: "vApp Replica Seeding and Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_seeding_mapping.html"
 last_updated: "7/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # vApp Replica Seeding and Mapping
 
-In this article
 
 Replica seeding and mapping are technologies that help reduce the amount of traffic sent over the network. With these technologies, Veeam Backup & Replication does not have to transfer all of vApp data from the source host to the target host across the sites during the initial synchronization.
 
@@ -70,6 +71,4 @@ Related Topics
 * [Configure Seeding and Mapping in Cloud Director Replication](vcd_seeding_and_mapping.md)
 * [Configure Seeding and Mapping in Cloud Director CDP](vcd_cdp_policy_seeding_mapping.md)
 
-Page updated 7/18/2024
 
-Page content applies to build 13.0.1.1071

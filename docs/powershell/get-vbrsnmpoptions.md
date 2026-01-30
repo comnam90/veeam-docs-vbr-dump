@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRSNMPOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsnmpoptions.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRSNMPOptions
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ Perform the following steps:
 
 The cmdlet output will contain the following details on the global SNMP settings: ReceiverIP, ReceiverPort and CommunityString.
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

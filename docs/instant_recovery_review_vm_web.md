@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Finalizing Instant Recovery to VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_review_vm_web.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Finalizing Instant Recovery to VMware vSphere
 
-In this article
 
 After the VMs have been successfully recovered, you must finalize the process. For this, test the recovered VMs in the VMware Remote Console (VMRC) and decide whether to migrate them to production environment or stop publishing.
 
@@ -34,6 +35,4 @@ To stop publishing a VM, click Instant Recovery in the management pane. Select t
 
 [![Migrate to Production - Web UI](images/instant_recovery_stop_vm_web.webp)](images/instant_recovery_stop_vm_web.webp "Migrate to Production - Web UI")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

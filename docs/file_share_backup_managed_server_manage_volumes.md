@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Settings for Connected Volumes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_managed_server_manage_volumes.html"
 last_updated: "10/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Settings for Connected Volumes
 
-In this article
 
 |  |
 | --- |
@@ -64,6 +65,4 @@ By default, the failover option is enabled. To disable failover to direct backup
 
 ![Step 7. Specify Settings for Connected Volumes](images/win_file_share_wizard_manage_volumes.webp)
 
-Page updated 10/31/2023
 
-Page content applies to build 13.0.1.1071

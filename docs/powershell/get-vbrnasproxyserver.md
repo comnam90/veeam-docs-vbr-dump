@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASProxyServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasproxyserver.html"
 last_updated: "1/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASProxyServer
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Examples
 | --- | --- |
 | This command gets all file backup proxy servers that are added to the Veeam Backup & Replication infrastructure by the backup proxy server ID. The cmdlet output will contain the following details on file backup proxy servers: ID, Description, Server and ConcurrentTaskNumber.  |  | | --- | | Get-VBRNASProxyServer -Id "02da6898-308d-44ac-b007-94d81576c296"  Id                            Description                   Server                                 ConcurrentTaskNumber  --                            -----------                   ------                                 --------------------  02da6898-308d-44ac-b007-94... Created by Powershell at 8... Veeam.Backup.Core.Common.C...                             2 | |
 
-Page updated 1/19/2024
 
-Page content applies to build 13.0.1.1071

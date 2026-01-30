@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRHvProxy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrhvproxy.html"
 last_updated: "4/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRHvProxy
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This command gets the Hyper-V backup proxy with the name LocalProxy.  |  | | --- | | Get-VBRHvProxy -Name "LocalProxy" | |
 
-Page updated 4/18/2024
 
-Page content applies to build 13.0.1.1071

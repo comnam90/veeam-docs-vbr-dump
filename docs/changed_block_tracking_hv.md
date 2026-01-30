@@ -1,5 +1,7 @@
 ---
 title: "Changed Block Tracking"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/changed_block_tracking_hv.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changed Block Tracking
 
-In this article
 
 When Veeam Backup & Replication performs incremental backup, it needs to know what data blocks have changed since the previous job session. To get the list of changed data blocks, Veeam Backup & Replication uses the changed block tracking mechanism or CBT. CBT increases the speed and efficiency of incremental backups.
 
@@ -46,6 +47,4 @@ To guarantee the persistence of CBT data, Microsoft RCT maintains 3 bitmaps with
 
 RCT and MRT files are created for every VM disk and stored at the VM disk level.
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

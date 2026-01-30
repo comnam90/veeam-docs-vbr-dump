@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant Disk Recovery Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_launch.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant Disk Recovery Wizard
 
-In this article
 
 To launch the Instant Disk Recovery wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the Instant Disk Recovery wizard, do one of the following:
 
 [![Step 1. Launch Instant Disk Recovery Wizard](images/instant_disk_recovery_launch.webp)](images/instant_disk_recovery_launch.webp)
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

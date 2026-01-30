@@ -1,5 +1,7 @@
 ---
 title: "Storage Encryption"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_storage.html"
 last_updated: "7/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Encryption
 
-In this article
 
 Storage-level encryption is supported for the following backups:
 
@@ -17,6 +18,4 @@ Storage-level encryption is supported for the following backups:
 * Backup files stored to external repositories. For more information, see [Encryption](external_repository_encryption.md).
 * Backup files stored to tape media pools. For more information, see [Tape Encryption](encryption_tape.md).
 
-Page updated 7/3/2025
 
-Page content applies to build 13.0.1.1071

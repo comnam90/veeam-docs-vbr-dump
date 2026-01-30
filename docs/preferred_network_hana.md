@@ -1,5 +1,7 @@
 ---
 title: "Specifying Preferred Networks for Veeam Plug-Ins"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/preferred_network_hana.html"
 last_updated: "9/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Preferred Networks for Veeam Plug-Ins
 
-In this article
 
 You can specify networks over which Veeam Plug-In must transport data when you perform data protection and disaster recovery tasks on remote backup repositories. This setting applies only to Veeam Plug-In network traffic, without affecting the data traffic of other Veeam Backup & Replication components. Setting a dedicated network for Veeam Plug-In backup and replication operations can help to reduce heavy network loads.
 
@@ -76,6 +77,4 @@ For example:
 | --- |
 | SapBackintConfigTool --remove-preferred-network 172.24.29.189 |
 
-Page updated 9/9/2025
 
-Page content applies to build 13.0.1.1071

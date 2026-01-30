@@ -1,5 +1,7 @@
 ---
 title: "Protecting Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protecting_tapes.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Protecting Tapes
 
-In this article
 
 If you have tapes for which you need to change the retention to 'never overwrite', you can protect them. Protection option sets lifelong retention period for the selected tapes overriding the retention settings of the media pool.
 
@@ -38,6 +39,4 @@ You can switch off the protection at any time. The retention will return to the 
 
 [![Protecting Tapes](images/protect_tape.webp)](images/protect_tape.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

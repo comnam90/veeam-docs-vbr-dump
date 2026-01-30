@@ -1,5 +1,7 @@
 ---
 title: "VBRAzureApplianceSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazureappliancesession.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAzureApplianceSession
 
-In this article
 
 Contains Linux VM restore appliance deploy session.
 
@@ -29,6 +30,4 @@ Related Commands
 
 [Deploy-VBRAzureLinuxRestoreAppliance](deploy-vbrazurelinuxrestoreappliance.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

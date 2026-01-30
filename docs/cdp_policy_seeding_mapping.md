@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Configure Seeding and Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_seeding_mapping.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Configure Seeding and Mapping
 
-In this article
 
 The Seeding step is available if you have selected the Replica seeding check box at the [Name](cdp_policy_name.md) step of the wizard.
 
@@ -52,6 +53,4 @@ To remove a mapping association, select a VM in the list and click Remove.
 
 ![Step 9. Configure Seeding and Mapping](images/cdp_policy_mapping.webp "Configure seeding and mapping")
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Network Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_net_settings_vm.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Network Settings
 
-In this article
 
 The Network Settings step of the wizard is available if you have selected the advanced networking option at the [Networking](vlab_network_vm.md) step of the wizard.
 
@@ -32,6 +33,4 @@ To add a vNIC adapter for an isolated network:
 
 ![Step 8. Specify Network Settings](images/vlab_network_settings.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

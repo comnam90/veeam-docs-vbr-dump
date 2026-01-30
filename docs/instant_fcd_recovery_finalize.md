@@ -1,5 +1,7 @@
 ---
 title: "Finalizing Instant FCD Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_finalize.html"
 last_updated: "2/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Finalizing Instant FCD Recovery
 
-In this article
 
 After FCDs have been successfully registered, you must finalize the process and decide whether to migrate the disks to the production environment or stop publishing them.
 
@@ -36,6 +37,4 @@ To stop publishing FCDs:
 
 [![FCD Stop Publish](images/instant_disk_recovery_fcd_stop_publishing.webp)](images/instant_disk_recovery_fcd_stop_publishing.webp "FCD Stop Publish")
 
-Page updated 2/13/2024
 
-Page content applies to build 13.0.1.1071

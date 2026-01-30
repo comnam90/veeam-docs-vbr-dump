@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Target Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_single_tas_specify_target_server.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Target Server
 
-In this article
 
 At this step of the wizard, specify credentials to access the target PostgreSQL server.
 
@@ -43,6 +44,4 @@ To locate a file, click Browse and select a key.
 
 [![Specifying Linux Server Connection Credentials](images/vep_restore_to_another_server_specify_server.webp)](images/vep_restore_to_another_server_specify_server.webp "Specifying Linux Server Connection Credentials")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

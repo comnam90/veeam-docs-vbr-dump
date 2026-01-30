@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAzureADAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazureadaccount.html"
 last_updated: "11/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAzureADAccount
 
-In this article
 
 Short Description
 
@@ -81,6 +82,4 @@ Related Commands
 
 [Get-VBRAzureADAccount](get-vbrazureadaccount.md)
 
-Page updated 11/13/2024
 
-Page content applies to build 13.0.1.1071

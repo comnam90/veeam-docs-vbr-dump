@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRNetworkTrafficRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrnetworktrafficrule.html"
 last_updated: "8/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRNetworkTrafficRule
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ This command creates a network traffic rule that also throttles restore operatio
 | --- |
 | Add-VBRNetworkTrafficRule -Name "New rule" -SourceIPStart 192.168.0.1 -SourceIPEnd 192.168.0.255 -TargetIPStart 192.168.0.1 -TargetIPEnd 192.168.0.255 -EnableThrottling -AllowRestoreThrottling -ThrottlingValue 5 -ThrottlingUnit MbitPerSec |
 
-Page updated 8/1/2025
 
-Page content applies to build 13.0.1.1071

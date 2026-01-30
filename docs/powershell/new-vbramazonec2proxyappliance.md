@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAmazonEC2ProxyAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbramazonec2proxyappliance.html"
 last_updated: "1/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAmazonEC2ProxyAppliance
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related Commands
 * [Get-VBRAmazonEC2SecurityGroup](get-vbramazonec2securitygroup.md)
 * [Get-VBRAmazonEC2Subnet](get-vbramazonec2subnet.md)
 
-Page updated 1/23/2024
 
-Page content applies to build 13.0.1.1071

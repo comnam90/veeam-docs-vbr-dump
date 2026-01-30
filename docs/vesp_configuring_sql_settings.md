@@ -1,5 +1,7 @@
 ---
 title: "Staging SQL Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_configuring_sql_settings.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Staging SQL Server Settings
 
-In this article
 
 To perform Microsoft SharePoint items restore, Veeam Explorer for Microsoft SharePoint requires a Microsoft SQL server to be used as a staging system.
 
@@ -51,6 +52,4 @@ To browse for an instance, perform one of the following actions:
 
 [![Browsing For Servers](images/browsing_for_staging.webp)](images/browsing_for_staging.webp "Browsing For Servers")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

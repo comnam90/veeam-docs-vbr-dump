@@ -1,5 +1,7 @@
 ---
 title: "Adding Replica Set to Application Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_replica_add_to_app_policy.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Replica Set to Application Backup Policy
 
-In this article
 
 To add a replica set to an application backup policy:
 
@@ -24,6 +25,4 @@ To add a replica set to an application backup policy:
 
 [![Rescan Protected Computer](images/mongo_protected_replica_sets_add_to_app_policy.webp)](images/mongo_protected_replica_sets_add_to_app_policy.webp "Rescan Protected Computer")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup Infrastructure for Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_architecture.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Infrastructure for Backup
 
-In this article
 
 Veeam Backup & Replication uses the following components for the backup process:
 
@@ -60,6 +61,4 @@ Related Topics
 * [Backup Infrastructure Components](components.md)
 * [Data Compression and Deduplication](compression_deduplication.md)
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

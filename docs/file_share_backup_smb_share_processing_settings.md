@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify File Share Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_smb_share_processing_settings.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify File Share Processing Settings
 
-In this article
 
 At the Processing step of the wizard, do the following:
 
@@ -16,7 +17,7 @@ At the Processing step of the wizard, do the following:
 
 * If you select All proxies, Veeam Backup & Replication will use all available backup proxies for file backup. The number of proxies in use defines the number of data threads that transfer data from the file share to the backup repository. The more data transfer threads Veeam Backup & Replication uses, the higher is the data transfer speed.
 
-If the file share is used as a source for a file to tape backup job, the tape server utilized for this job is added as yet another backup proxy when creating a file to tape backup job. This backup proxy has the highest priority over all others and is used by default if it has access rights to the file share. For details on file to tape backup jobs, see [File Backup to Tape](https://helpcenter.veeam.com/docs/backup/vsphere/file_to_tape_jobs.html?ver=120).
+If the file share is used as a source for a file to tape backup job, the tape server utilized for this job is added as yet another backup proxy when creating a file to tape backup job. This backup proxy has the highest priority over all others and is used by default if it has access rights to the file share. For details on file to tape backup jobs, see the [File Backup to Tape](https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_jobs.html?ver=13) section.
 
 * If you select Use the selected backup proxies only, you can explicitly specify backup proxies that Veeam Backup & Replication must use for file backup.
 
@@ -28,7 +29,7 @@ Even if the file share is used as a source for file to tape backup jobs, Veeam B
 
 1. From the Cache repository drop-down list, select a cache repository where temporary cache files must be stored. This repository must be located in the close proximity to the source file share and backup proxies.
 
-If you change the cache repository for an existing file share whose backups are stored in object storage, Veeam Backup & Replication will prompt you to either attach migrated metadata, copy metadata from the previous cache repository, or download metadata manually from the archive repository. For more information on storing NAS backups in the object storage and changing the cache repository, see the [Unstructured Data Backups in Object Storage Repositories](https://helpcenter.veeam.com/docs/backup/vsphere/unstructured_data_backup_in_object_storage.html?ver=120) section.
+If you change the cache repository for an existing file share whose backups are stored in object storage, Veeam Backup & Replication will prompt you to either attach migrated metadata, copy metadata from the previous cache repository, or download metadata manually from the archive repository. For more information on storing NAS backups in the object storage and changing the cache repository, see the [Unstructured Data Backups in Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_in_object_storage.html?ver=13) section.
 
 1. Use the Backup I/O control slider to define how fast backup proxies can read data from the source file share. This setting is based on the number of parallel threads that can be used by proxies configured for processing the file share.
 
@@ -46,6 +47,4 @@ If resources of your NAS device are limited, it is recommended that you select t
 
 ![Step 4. Specify File Share Processing Settings](images/smb_file_share_wizard_processing.webp "Specify Processing Settings for SMB File Share")
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

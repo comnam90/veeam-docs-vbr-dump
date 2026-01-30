@@ -1,5 +1,7 @@
 ---
 title: "How Publishing Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_how_publishing_works.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Publishing Works
 
-In this article
 
 Publishing PostgreSQL instances with Veeam Explorer for PostgreSQL works in the following manner:
 
@@ -26,6 +27,4 @@ Once the publishing operation is completed, you can export the modified database
 
 [![How Publishing Works](images/vepg_publish.webp)](images/vepg_publish.webp "How Publishing Works")
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

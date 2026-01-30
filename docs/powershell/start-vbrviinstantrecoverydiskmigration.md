@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRViInstantRecoveryDiskMigration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantrecoverydiskmigration.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRViInstantRecoveryDiskMigration
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Related Commands
 * [Get-VBRViVirtualDevice](get-vbrvivirtualdevice.md)
 * [New-VBRViVirtualDeviceMappingRule](new-vbrvivirtualdevicemappingrule.md)
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

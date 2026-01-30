@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Management Security Settings"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_security_settings.html"
 last_updated: "9/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Management Security Settings
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -26,6 +27,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | Note |
 | With Veeam PowerShell, you cannot create a self-signed certificate or import an SSL certificate from file in the PFX format. You can only select an existing SSL certificate from the Microsoft Windows Certificates store. The certificate must be imported into the certificate store beforehand. |
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing Storage Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_remove.html"
 last_updated: "6/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Storage Systems
 
-In this article
 
 You can remove a storage system from the backup infrastructure.
 
@@ -23,6 +24,4 @@ To remove a storage system:
 
 [![Removing Storage Systems](images/storage_remove.webp)](images/storage_remove.webp)
 
-Page updated 6/3/2025
 
-Page content applies to build 13.0.1.1071

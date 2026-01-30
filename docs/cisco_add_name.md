@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Storage Name or Address and Storage Role"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cisco_add_name.html"
 last_updated: "3/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Storage Name or Address and Storage Role
 
-In this article
 
 At the Name step of the wizard, specify the storage system name and description:
 
@@ -18,6 +19,4 @@ Only VMware backup jobs are allowed to access this storage system, so the VMware
 
 ![Step 2. Specify Storage Name or Address and Storage Role](images/cisco_add_name.webp)
 
-Page updated 3/18/2024
 
-Page content applies to build 13.0.1.1071

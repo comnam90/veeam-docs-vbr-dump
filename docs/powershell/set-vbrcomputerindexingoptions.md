@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRComputerIndexingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcomputerindexingoptions.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRComputerIndexingOptions
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [New-VBRComputerIndexingOptions](new-vbrcomputerindexingoptions.md)
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

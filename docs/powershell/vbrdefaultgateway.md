@@ -1,5 +1,7 @@
 ---
 title: "VBRDefaultGateway"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrdefaultgateway.html"
 last_updated: "4/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRDefaultGateway
 
-In this article
 
 Contains default gateway.
 
@@ -27,6 +28,4 @@ Related Commands
 
 [Get-VBRDefaultGatewayConfiguration](get-vbrdefaultgatewayconfiguration.md)
 
-Page updated 4/23/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Supported Cipher Suites and Protocols"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cipher_suites_protocols.html"
 last_updated: "1/2/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Supported Cipher Suites and Protocols
 
-In this article
 
 Veeam backup infrastructure components support the following TLS versions:
 
@@ -35,6 +36,4 @@ Ensure that your SSH configuration on the Linux server allows you to use at leas
 | --- |
 | sudo sshd -T | grep "\(ciphers\|macs\|kexalgorithms\)" |
 
-Page updated 1/2/2026
 
-Page content applies to build 13.0.1.1071

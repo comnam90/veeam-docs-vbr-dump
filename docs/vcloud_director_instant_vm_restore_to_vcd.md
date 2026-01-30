@@ -1,5 +1,7 @@
 ---
 title: "Performing Instant Recovery to Cloud Director vApp"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_instant_vm_restore_to_vcd.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Instant Recovery to Cloud Director vApp
 
-In this article
 
 With Instant Recovery, you can immediately start a VM from a backup file stored in the backup repository. Instant Recovery accelerates the restore process, allows you to improve RTOs and decrease downtime of production VMs.
 
@@ -30,6 +31,4 @@ Before you start Instant Recovery, [check prerequisites](vcloud_instant_to_vcd_b
 9. [Verify Instant Recovery settings](vcloud_instant_to_vcd_verify.md).
 10. [Finalize Instant Recovery](vcloud_instant_to_vcd_finalize.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

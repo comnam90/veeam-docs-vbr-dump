@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/windows_server_credentials.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify authentication settings for the Microsoft Windows server.
 
@@ -39,6 +40,4 @@ The option applies if one of the following roles is assigned to the server: sour
 
 ![Step 3. Specify Credentials](images/add_server_windows_ports.webp)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

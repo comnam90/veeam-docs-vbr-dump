@@ -1,5 +1,7 @@
 ---
 title: "Archive Tier"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sobr_archive_tier.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Archive Tier
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -25,6 +26,4 @@ You can use the cmdlets in this topic to perform the following operations:
 | [Add-VBRArchiveBackupAvailabilityPeriod](add-vbrarchivebackupavailabilityperiod.md) | Extends the availability of the backup files from the archive storage. |
 | [Start-VBRArchiveTierSync](start-vbrarchivetiersync.md) | Starts the archiving job. |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

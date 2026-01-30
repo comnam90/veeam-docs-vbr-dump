@@ -1,5 +1,7 @@
 ---
 title: "Backup from Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_storage_snapshots_hiw.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup from Storage Snapshots
 
-In this article
 
 To create a backup from a storage snapshot, Veeam Backup & Replication and Veeam Agent do the following:
 
@@ -34,6 +35,4 @@ After that, you can use backups created from storage snapshots for restore and a
 
 ![Backup from Storage Snapshots](images/backup_from_storage_snapshot.webp)
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

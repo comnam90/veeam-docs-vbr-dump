@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Data Transfer and Replica Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_data_transfer.html"
 last_updated: "10/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Data Transfer and Replica Settings
 
-In this article
 
 At the Policy Settings step of the wizard, select CDP proxies that must be used for the CDP policy, specify which suffix to add to replica names and CDP proxies availability:
 
@@ -43,6 +44,4 @@ Related Topics
 
 [How Universal CDP Works](uni_cdp_hiw.md)
 
-Page updated 10/24/2025
 
-Page content applies to build 13.0.1.1071

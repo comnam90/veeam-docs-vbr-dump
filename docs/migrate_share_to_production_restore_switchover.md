@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Switchover Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migrate_share_to_production_restore_switchover.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Switchover Options
 
-In this article
 
 During migration to production, Veeam Backup & Replication moves to the production site not only content of the initial file share, but also incremental changes made by users in the mounted file share. When incremental changes are being moved, the mounted share is not available to users. We call this stage a switchover. The switchover may take some time, so ensure you properly plan when it is performed.
 
@@ -30,6 +31,4 @@ Before the scheduled switchover starts, you can edit the switchover time. To edi
 
 ![Step 4. Specify Switchover Options](images/migrate_share_to_production_switchover.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

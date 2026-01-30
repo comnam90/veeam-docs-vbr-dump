@@ -1,5 +1,7 @@
 ---
 title: "Kerberos Authentication (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_kerberos.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Kerberos Authentication (Storage Systems)
 
-In this article
 
 This section lists requirements, limitations and peculiarities in work of storage systems that use Kerberos authentication.
 
@@ -73,6 +74,4 @@ The values can be the following:
 * 2 — krb5
 * 3 — krb5i
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

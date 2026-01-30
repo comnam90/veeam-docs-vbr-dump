@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRArchiveExtentMaintenanceMode"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrarchiveextentmaintenancemode.html"
 last_updated: "6/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRArchiveExtentMaintenanceMode
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 * [Get-VBRArchiveExtent](get-vbrarchiveextent.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
-Page updated 6/18/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Upgrading or Switching Linux Repositories to Hardened Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/switching_from_linux_repository.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading or Switching Linux Repositories to Hardened Repositories
 
-In this article
 
 |  |
 | --- |
@@ -65,6 +66,4 @@ Finish the wizard to apply changes.
 | Note |
 | For more information on enabling immutability for tenant backups, see the [Switching from Linux Repository to Hardened Repository](https://helpcenter.veeam.com/docs/vbr/cloud/cc_sobr_migration_linux.html?ver=13) section in the Veeam Cloud Connect Guide. |
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

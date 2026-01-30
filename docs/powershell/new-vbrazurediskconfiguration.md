@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAzureDiskConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrazurediskconfiguration.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAzureDiskConfiguration
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Examples
 | --- | --- |
 | This example shows how to define the Azure StandardHDD disk type for disks of workloads other than computers backed-up with Veeam Agent for Microsoft Windows. This example shows how to do it for a VMware vSphere VM.  |  | | --- | | $backup = Get-VBRBackup -Name "VM Backup Job"  $restorePoint = Get-VBRRestorePoint -Backup $backup | Sort-Object -Property CreationTime -Descending | Select-Object -First 1  $diskConfig = New-VBRAzureDiskConfiguration -DiskName $restorePoint.AuxData.Disks[0].FileName -DiskType StandardHDD -Include |  Perform the following steps:   1. Run the [Get-VBRBackup](get-vbrbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $backup variable. 2. Run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. Specify the Backup parameter value. 3. Pipe the cmdlet output to the [Sort-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/sort-object?view=powershell-7) cmdlet. Set the CreationTime value for the Property parameter. Provide the Descending parameter. 4. Pipe the cmdlet output to the [Select-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-object?view=powershell-7) cmdlet. Specify the First parameter value. Save the result to the $restorePoint variable. 5. Run the New-VBRAzureDiskConfiguration cmdlet. Specify the following:  1. Set the $restorePoint.AuxData.Disks[0].FileName variable as the DiskName parameter value. 2. Specify the DiskType and Include parameter values. 3. Save the result to the $diskConfig variable. |
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

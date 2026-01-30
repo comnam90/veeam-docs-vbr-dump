@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Target Oracle Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_single_tas_specify_target_server.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Target Oracle Server
 
-In this article
 
 At this step of the wizard, specify connection settings required to access the target Oracle server. The set of connection settings depends on the OS type of the target server: Windows or Linux.
 
@@ -52,6 +53,4 @@ To select a key, click Browse and select a key.
 
 [![Specifying Target Linux Server Credentials](images/ir_wizard_linux_srv_target.webp)](images/ir_wizard_linux_srv_target.webp "Specifying Target Linux Server Credentials")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

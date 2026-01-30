@@ -1,5 +1,7 @@
 ---
 title: "Restore to Another Server Using Recovery Token"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_another_token.html"
 last_updated: "10/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Another Server Using Recovery Token
 
-In this article
 
 You can restore a database to another server using a recovery token generated in Veeam Backup & Replication and provided to you by a backup administrator.
 
@@ -43,6 +44,4 @@ To restore database, do the following steps:
 
 * If you plan to restore to another instance with a name that is different from the backed-up instance, see [Restore to Instance with Different Name](db2_restore_to_server_with_different_name.md).
 
-Page updated 10/23/2024
 
-Page content applies to build 13.0.1.1071

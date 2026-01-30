@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Configure Backup Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_repository_web.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Configure Backup Repository Settings
 
-In this article
 
 At the Repository step of the wizard, configure general repository settings including path to the repository folder and load control, and also advanced repository settings.
 
@@ -52,6 +53,4 @@ To configure advanced repository settings:
 
 [![Step 4. Configure Backup Repository Settings](images/linux_repo_repository_advanced_web.webp)](images/linux_repo_repository_advanced_web.webp)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

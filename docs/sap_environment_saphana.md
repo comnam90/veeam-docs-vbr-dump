@@ -1,5 +1,7 @@
 ---
 title: "SAP Environment Planning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_environment_saphana.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SAP Environment Planning
 
-In this article
 
 Keep in mind the following requirements and limitations for your SAP environment, before you deploy Veeam Plug-In for SAP HANA.
 
@@ -37,6 +38,4 @@ Consider the following limitations of Veeam Plug-In support for SAP HANA scale-o
 
 * Each cluster node must use the same credentials to connect to Veeam servers.
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Define Backup Copy Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_target.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Define Backup Copy Target
 
-In this article
 
 At the Target step of the wizard, define a target backup repository and configure retention policy:
 
@@ -55,6 +56,4 @@ To use this method, select the Read the entire restore point from source instead
 
 ![Step 4. Define Backup Copy Target](images/backup_copy_target_mongo.webp)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

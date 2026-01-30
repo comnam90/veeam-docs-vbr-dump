@@ -1,5 +1,7 @@
 ---
 title: "Backup to Veeam Cloud Connect Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_cloud_connect.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup to Veeam Cloud Connect Repository
 
-In this article
 
 If you want to store your data in the cloud, you can connect to a Veeam Cloud Connect service provider (SP) and create Veeam Agent backups in a cloud repository.
 
@@ -71,6 +72,4 @@ Limitations for Veeam Agent Backup to Cloud Repository
 
 To learn about limitations for Veeam Cloud Connect Backup, see the [Limitations for Cloud Repository](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_limitations.html?ver=120) section in the Veeam Cloud Connect Guide.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

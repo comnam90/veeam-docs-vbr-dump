@@ -1,5 +1,7 @@
 ---
 title: "Removing Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_server.html"
 last_updated: "2/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Servers
 
-In this article
 
 If you do not plan to use some server anymore, you can remove it from the backup infrastructure.
 
@@ -28,6 +29,4 @@ To remove a server from the backup infrastructure:
 
 [![Click to zoom in](images/remove_server.webp)](images/remove_server.webp "Click to zoom in")
 
-Page updated 2/6/2025
 
-Page content applies to build 13.0.1.1071

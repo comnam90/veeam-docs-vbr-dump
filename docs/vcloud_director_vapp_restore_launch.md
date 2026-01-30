@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Full vApp Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_launch.html"
 last_updated: "8/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Full vApp Restore Wizard
 
-In this article
 
 To launch the Full vApp Restore wizard, do one of the following:
 
@@ -20,6 +21,4 @@ To launch the Full vApp Restore wizard, do one of the following:
 
 [![Step 1. Launch Full vApp Restore Wizard](images/vcloud_vapp_restore_launch.webp)](images/vcloud_vapp_restore_launch.webp)
 
-Page updated 8/9/2024
 
-Page content applies to build 13.0.1.1071

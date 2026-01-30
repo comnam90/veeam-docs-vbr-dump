@@ -1,5 +1,7 @@
 ---
 title: "Data Recovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/data_recovery.html"
 last_updated: "7/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Recovery
 
-In this article
 
 The following topics contain instructions on data recovery options by means of Veeam PowerShell.
 
@@ -28,6 +29,4 @@ In this section
 * [Veeam Data Integration API](veeam_data_integration_api.md)
 * [Secure Restore](secure_restore.md)
 
-Page updated 7/4/2025
 
-Page content applies to build 13.0.1.1071

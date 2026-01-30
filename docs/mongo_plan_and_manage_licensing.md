@@ -1,5 +1,7 @@
 ---
 title: "Licensing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_plan_and_manage_licensing.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Licensing
 
-In this article
 
 To use the MongoDB Backup functionality, you must have a valid Veeam Backup & Replication license. Licenses are installed and managed on the Veeam Backup & Replication server that is connected to the MongoDB server. If the license is not valid or out of resources, application backup policies fail.
 
@@ -59,6 +60,4 @@ To assign or revoke license usage of individual instances, do the following:
 
 ![Licensing](images/plugins_license_management.webp)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

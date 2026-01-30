@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify File Share Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_new_nfs_share_wizard_processing.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify File Share Processing Settings
 
-In this article
 
 At the Processing step of the wizard, do the following:
 
@@ -32,6 +33,4 @@ Even if the file share is used as a source for file to tape backup jobs, Veeam B
 
 ![Step 4. Specify File Share Processing Settings](images/nfs_file_share_wizard_processing.webp "Specify Processing Settings for NFS File Share")
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRFailbackSwitchingSchedule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrfailbackswitchingschedule.html"
 last_updated: "6/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRFailbackSwitchingSchedule
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1)
 
-Page updated 6/27/2024
 
-Page content applies to build 13.0.1.1071

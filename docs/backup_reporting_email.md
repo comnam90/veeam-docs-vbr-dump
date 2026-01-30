@@ -1,5 +1,7 @@
 ---
 title: "Enabling Email Reporting"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_reporting_email.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling Email Reporting
 
-In this article
 
 You can set up Veeam Backup & Replication to send reports automatically by email. The reports include information about software updates and a detailed overview of all job sessions and their statuses.
 
@@ -39,6 +40,4 @@ To turn on the report, do the following:
 
 ![Enabling Email Reporting](images/ai_report_enable_console.webp)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

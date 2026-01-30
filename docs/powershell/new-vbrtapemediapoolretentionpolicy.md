@@ -1,5 +1,7 @@
 ---
 title: "New-VBRTapeMediaPoolRetentionPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrtapemediapoolretentionpolicy.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRTapeMediaPoolRetentionPolicy
 
-In this article
 
 Short Description
 
@@ -59,6 +60,4 @@ Examples
 | --- | --- |
 | This command defines media pool retention rules and saves the result to the $noretention variable. The Type is set to Cyclic.  |  | | --- | | $noretention = New-VBRTapeMediaPoolRetentionPolicy -Type Cyclic | |
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_advanced_storage.html"
 last_updated: "10/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 To specify advanced storage settings for the object storage backup job:
 
@@ -31,6 +32,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 ![Storage Settings](images/os_backup_job_advanced_storage.webp)
 
-Page updated 10/24/2024
 
-Page content applies to build 13.0.1.1071

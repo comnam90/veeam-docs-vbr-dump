@@ -1,5 +1,7 @@
 ---
 title: "VBRKMSServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrkmsserver.html"
 last_updated: "7/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRKMSServer
 
-In this article
 
 Contains KMS server settings.
 
@@ -28,6 +29,4 @@ Related Commands
 * [Get-VBRKMSServer](get-vbrkmsserver.md)
 * [Set-VBRKMSServer](set-vbrkmsserver.md)
 
-Page updated 7/25/2024
 
-Page content applies to build 13.0.1.1071

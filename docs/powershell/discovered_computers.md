@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Management Discovered Computers"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/discovered_computers.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Management Discovered Computers
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -25,6 +26,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Get-VBRDiscoveredComputerConfigurationPolicy](get-vbrdiscoveredcomputerconfigurationpolicy.md) | Returns configuration options applied to protected computers. |
 | [Remove-VBRDiscoveredComputerConfigurationPolicy](remove-vbrdiscoveredcomputerconfigurationpolicy.md) | Removes policies that contain configuration options for Veeam Agent settings. |
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

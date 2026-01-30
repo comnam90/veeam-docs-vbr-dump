@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Files Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_multiple_tas_specify_files_location.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Files Location
 
-In this article
 
 At this step of the wizard, specify the following file locations.
 
@@ -34,6 +35,4 @@ To specify a file location, do the following:
 
 1. Click Restore.
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

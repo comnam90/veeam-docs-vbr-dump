@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery to Microsoft Hyper-V"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_to_hv.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery to Microsoft Hyper-V
 
-In this article
 
 With Instant Recovery to Microsoft Hyper-V, you can immediately recover different workloads (VMs, EC2 instances, physical servers and so on) as Microsoft Hyper-V VMs. Instant Recovery to Microsoft Hyper-V can be helpful, for example, if you want to migrate your infrastructure from one environment to another, or you want to recover your infrastructure in a matter of minutes but with limited performance.
 
@@ -74,6 +75,4 @@ Related Topics
 
 [Instant Recovery to VMware vSphere](instant_recovery.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

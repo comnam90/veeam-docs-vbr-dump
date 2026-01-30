@@ -1,5 +1,7 @@
 ---
 title: "Launching Veeam Explorer from Plug-in or MongoDB Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/launching_veeam_explorers_plugin.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Veeam Explorer from Plug-in or MongoDB Backup
 
-In this article
 
 To restore application items from plug-in or MongoDB backups, perform the steps specified in the following topics:
 
@@ -20,6 +21,4 @@ To restore application items from plug-in or MongoDB backups, perform the steps 
 
 For more information, see [Veeam Explorers Overview](explorers_introduction.md).
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

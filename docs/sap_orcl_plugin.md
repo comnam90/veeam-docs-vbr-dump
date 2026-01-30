@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In for SAP on Oracle"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_plugin.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In for SAP on Oracle
 
-In this article
 
 Veeam Plug-In for SAP on Oracle is an SAP-certified backup tool for SAP applications running on Oracle Database. Veeam Plug-In integrates with SAP BR\*Tools and transfers database and log backups to repositories connected to Veeam Backup & Replication.
 
@@ -29,6 +30,4 @@ In This Section
 * [License Management](plugins_sap_oracle_license_management.md)
 * [Logs and Support](sap_orcl_plugin_logs.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

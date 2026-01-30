@@ -1,5 +1,7 @@
 ---
 title: "Publishing Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_latest.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing Latest State
 
-In this article
 
 You can republish an unpublished instance anew. When republishing an instance, it will be attached to the target PostgreSQL server as of the latest available state.
 
@@ -27,6 +28,4 @@ Once completed, the instance will be published with the same settings as you spe
 
 [![Publishing Latest State](images/vep_publish_latest_state.webp)](images/vep_publish_latest_state.webp "Publishing Latest State")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

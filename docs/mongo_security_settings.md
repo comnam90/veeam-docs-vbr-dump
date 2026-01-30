@@ -1,5 +1,7 @@
 ---
 title: "Configuring Security Settings for MongoDB Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_security_settings.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Security Settings for MongoDB Backup
 
-In this article
 
 When you configure the backup infrastructure for enterprise applications in Veeam Backup & Replication, you can specify what security settings Veeam Backup & Replication will use to establish a secure connection between the backup server and protected computers. By default, Veeam Backup & Replication offers the following security settings:
 
@@ -23,6 +24,4 @@ Related Topics
 * [Managing TLS Certificates](security_settings_tls_cert.md)
 * [Adding Computers to Trusted Hosts List](security_settings_ssh_trust.md)
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

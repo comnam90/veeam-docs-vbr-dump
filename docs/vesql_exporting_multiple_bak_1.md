@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_exporting_multiple_bak_1.html"
 last_updated: "9/7/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Restore Point
 
-In this article
 
 At this step of the wizard, select a state as of which you want to restore your database:
 
@@ -24,6 +25,4 @@ Use the slider to choose the point in time you need.
 
 [![Specifying Restore Point](images/export_mult_different.webp)](images/export_mult_different.webp "Specifying Restore Point")
 
-Page updated 9/7/2023
 
-Page content applies to build 13.0.1.1071

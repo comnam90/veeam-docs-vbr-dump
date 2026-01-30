@@ -1,5 +1,7 @@
 ---
 title: "Data Publishing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_data_publishing.html"
 last_updated: "3/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Publishing
 
-In this article
 
 Publishing a Microsoft SQL Server database allows you to temporarily attach the database to the target Microsoft SQL Server without launching restore. Publishing typically occurs faster than using standard restore features and could be convenient when, for example, your time to perform disaster-recovery operations is limited.
 
@@ -28,6 +29,4 @@ In This Section
 * [Unpublishing Databases](vesql_unpublishing.md)
 * [Refreshing Database Status](vesql_refreshing_published_database.md)
 
-Page updated 3/28/2024
 
-Page content applies to build 13.0.1.1071

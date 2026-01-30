@@ -1,5 +1,7 @@
 ---
 title: "Deleting Passwords"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/password_manager_delete.html"
 last_updated: "7/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Passwords
 
-In this article
 
 To delete a password in the Password Manager, perform the following steps:
 
@@ -17,6 +18,4 @@ To delete a password in the Password Manager, perform the following steps:
 
 ![Deleting Passwords](images/password_manager_delete_pass.webp)
 
-Page updated 7/28/2025
 
-Page content applies to build 13.0.1.1071

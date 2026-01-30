@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudIP"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudip.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudIP
 
-In this article
 
 Contains public IP address from public IP addresses pool.
 
@@ -27,6 +28,4 @@ Related Commands
 * [Get-VBRCloudPublicIP](get-vbrcloudpublicip.md)
 * [Remove-VBRCloudPublicIP](remove-vbrcloudpublicip.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

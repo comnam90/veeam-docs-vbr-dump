@@ -1,5 +1,7 @@
 ---
 title: "How Export Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_how_export_works.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Export Works
 
-In this article
 
 Exporting PostgreSQL databases with Veeam Explorer for PostgreSQL works in the following manner:
 
@@ -30,6 +31,4 @@ You can save the exported DUMP file to the necessary PostgreSQL server and resto
 
 [![How Export Works](images/vepg_export.webp)](images/vepg_export.webp "How Export Works")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

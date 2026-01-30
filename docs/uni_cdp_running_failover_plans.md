@@ -1,5 +1,7 @@
 ---
 title: "Running Failover Plans"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_running_failover_plans.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Running Failover Plans
 
-In this article
 
 You have the following options to run a failover plan:
 
@@ -38,6 +39,4 @@ To fail over to specific restore points of replicas:
 
 [![Click to zoom in](images/start_failover_plan.webp)](images/start_failover_plan.webp "Click to zoom in")
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRHvRestoreVM"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrhvrestorevm.html"
 last_updated: "12/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRHvRestoreVM
 
-In this article
 
 Short Description
 
@@ -125,6 +126,4 @@ Related Commands
 * [Get-VSBHvVirtualLab](get-vsbhvvirtuallab.md)
 * [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 12/10/2024
 
-Page content applies to build 13.0.1.1071

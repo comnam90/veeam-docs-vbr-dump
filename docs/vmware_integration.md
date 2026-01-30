@@ -1,5 +1,7 @@
 ---
 title: "VMware Integration (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_integration.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware Integration (Storage Systems)
 
-In this article
 
 To build the data protection and disaster recovery strategy, you can use the capabilities of native snapshots created on production storage systems that host VM disks.
 
@@ -36,6 +37,4 @@ In This Section
 * [Retrieving Achived Snapshots](storage_archived.md)
 * [Creating and Deleting Snapshots](storage_create_snapshot.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

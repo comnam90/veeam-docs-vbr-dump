@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Target Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_multiple_target.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Target Server
 
-In this article
 
 At this step of the wizard, specify credentials to access the target server.
 
@@ -27,6 +28,4 @@ To browse for another servers and SQL Server instances:
 
 [![Specifying SQL Server Connection Parameters](images/instant_multiple_dbs_target.webp)](images/instant_multiple_dbs_target.webp "Specifying SQL Server Connection Parameters")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

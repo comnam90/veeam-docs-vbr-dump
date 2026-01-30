@@ -1,5 +1,7 @@
 ---
 title: "VBRGlobalMediaPoolOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrglobalmediapooloptions.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRGlobalMediaPoolOptions
 
-In this article
 
 Contains tape library failover settings.
 
@@ -25,6 +26,4 @@ Related Objects
 * [VBRTapeGFSMediaPool](vbrtapegfsmediapool.md)
 * [VBRTapeMediaPool](vbrtapemediapool.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

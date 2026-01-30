@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSureBackupStartupOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsurebackupstartupoptions.html"
 last_updated: "4/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSureBackupStartupOptions
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Examples
 | --- | --- |
 | This command specifies the following startup settings for VMs added to an application group. Veeam Backup & Replication will perform staged restore with the following VM startup settings:   * The period that is required for VMs to boot is set to 100 seconds. * The timeout required to initialize applications on VMs is set to 200 seconds. * The amount of memory provided for VMs is set to 90 percent. * Veeam Backup & Replication will perform not heartbeat and ping tests.   |  | | --- | | New-VBRSureBackupStartupOptions -MaximumBootTime 100 -ApplicationInitializationTimeout 200 -AllocatedMemory 90 -EnableVMPingCheck:$False -EnableVMHeartbeatCheck:$False | |
 
-Page updated 4/30/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "WORM Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/worm_tapes.html"
 last_updated: "6/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WORM Tapes
 
-In this article
 
 Veeam Backup & Replication supports WORM (Write Once Read Many) tapes for archiving backups to tape.
 
@@ -34,6 +35,4 @@ Requirements for WORM Tapes
 
 Tape libraries must support reading/writing data on WORM tape cartridge memory chip.
 
-Page updated 6/21/2023
 
-Page content applies to build 13.0.1.1071

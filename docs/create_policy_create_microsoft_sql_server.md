@@ -1,5 +1,7 @@
 ---
 title: "Creating Microsoft SQL Server Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/create_policy_create_microsoft_sql_server.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Microsoft SQL Server Backup Policy
 
-In this article
 
 To back up databases protected with Veeam Plug-In for Microsoft SQL Server, you must configure an application backup policy in Veeam Backup & Replication.
 
@@ -23,6 +24,4 @@ Before configuring an application backup policy, [check prerequisites](policy_mi
 8. [Specify the backup schedule.](policy_microsoft_sql_server_schedule.md)
 9. [Review backup policy settings.](policy_microsoft_sql_server_summary.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

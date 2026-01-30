@@ -1,5 +1,7 @@
 ---
 title: "Registering Application in Google Cloud Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_register_app_google.html"
 last_updated: "8/16/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Registering Application in Google Cloud Console
 
-In this article
 
 To register an application in the Google Cloud console, do the following:
 
@@ -23,6 +24,4 @@ You can do this with [the Google setup tool](https://console.developers.google.c
 * Client ID
 * Client secret
 
-Page updated 8/16/2023
 
-Page content applies to build 13.0.1.1071

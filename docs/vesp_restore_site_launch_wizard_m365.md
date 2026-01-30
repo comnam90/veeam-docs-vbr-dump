@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_restore_site_launch_wizard_m365.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do one of the following:
 
@@ -22,6 +23,4 @@ To launch the Restore wizard, do one of the following:
 
 [![Restoring Microsoft SharePoint Sites](images/restore_sites_2.webp)](images/restore_sites_2.webp "Restoring Microsoft SharePoint Sites")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

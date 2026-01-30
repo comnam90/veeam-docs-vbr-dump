@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Exclude Objects from Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_cloud_machines_exclude.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Exclude Objects from Protection Group
 
-In this article
 
 At the Exclusions step of the wizard, you can specify which objects you want to exclude from the protection group. You can exclude the following types of objects:
 
@@ -48,6 +49,4 @@ To exclude cloud machines using a metadata tag:
 
 ![Step 5. Exclude Objects from Protection Group](images/protection_group_exclusions_tags.webp "Exclude Tags from Protection Group")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

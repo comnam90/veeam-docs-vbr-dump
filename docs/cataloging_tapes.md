@@ -1,5 +1,7 @@
 ---
 title: "Cataloging Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cataloging_tapes.html"
 last_updated: "11/16/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Cataloging Tapes
 
-In this article
 
 Cataloging tapes is required for tapes that contain some data but are not registered in the Veeam database. For example, cataloging is required for tapes that were written on another Veeam backup server. After the cataloging procedure, you can restore data from the tapes.
 
@@ -59,6 +60,4 @@ If the tape backup contains a large quantity of files, for example, more than 1 
 * Backup server: 1.3 GB RAM per each 1 000 000 files
 * Tape server: 800 MB RAM per each 1 000 000 files
 
-Page updated 11/16/2023
 
-Page content applies to build 13.0.1.1071

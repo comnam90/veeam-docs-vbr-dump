@@ -1,5 +1,7 @@
 ---
 title: "How Antivirus Scan Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/scan_backup_antivirus_hiw.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Antivirus Scan Works
 
-In this article
 
 During the Scan Backup session, the antivirus scan works in the following way:
 
@@ -21,6 +22,4 @@ During the Scan Backup session, the antivirus scan works in the following way:
 
 ![How Antivirus Scan Works](images/av_scan_hiw.webp)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

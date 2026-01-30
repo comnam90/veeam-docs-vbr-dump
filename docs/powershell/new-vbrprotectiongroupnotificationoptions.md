@@ -1,5 +1,7 @@
 ---
 title: "New-VBRProtectionGroupNotificationOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrprotectiongroupnotificationoptions.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRProtectionGroupNotificationOptions
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ The example shows how to create notifications options for the protection group. 
 | --- |
 | $options = New-VBRProtectionGroupNotificationOptions -EnableAdditionalNotification -AdditionalAddress admin@domain.com -SendTime 05:00 |
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

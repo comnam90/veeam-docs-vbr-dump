@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Job Advanced Settings"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_job_advanced_settings.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Job Advanced Settings
 
-In this article
 
 | Cmdlet | Operation |
 | --- | --- |
@@ -28,6 +29,4 @@ In this article
 | [New-VBRComputerWarningOptions](new-vbrcomputerwarningoptions.md) | Defines notification settings for computers not processed by Veeam Agent jobs. |
 | [Set-VBRComputerWarningOptions](set-vbrcomputerwarningoptions.md) | Modifies notification settings for computers not processed by Veeam Agent jobs. |
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

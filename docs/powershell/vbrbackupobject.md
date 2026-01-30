@@ -1,5 +1,7 @@
 ---
 title: "VBRBackupObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrbackupobject.html"
 last_updated: "7/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRBackupObject
 
-In this article
 
 Contains VM backup or replica object settings.
 
@@ -30,6 +31,4 @@ Related Commands
 
 [Get-VBRBackupObject](get-vbrbackupobject.md)
 
-Page updated 7/17/2024
 
-Page content applies to build 13.0.1.1071

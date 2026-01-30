@@ -1,5 +1,7 @@
 ---
 title: "Creating Universal CDP Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_create.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Universal CDP Policies
 
-In this article
 
 To protect workloads with universal CDP, you must configure a CDP policy. The CDP policy defines which workloads to protect, where to store replicas, how often create short-term and long-term restore points, and so on. One CDP policy can process one or multiple workloads.
 
@@ -25,6 +26,4 @@ To create a CDP policy use the New Universal CDP Policy wizard.
 10. [Specify the replication schedule](uni_cdp_policy_schedule.md).
 11. [Finish working with the wizard](uni_cdp_policy_summary.md).
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup Job and Snapshot Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_windows_scripts.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job and Snapshot Scripts
 
-In this article
 
 You can instruct Veeam Agent to run custom scripts within the backup job session. Veeam Agent for Microsoft Windows supports the following types of scripts:
 
@@ -52,6 +53,4 @@ If you specify both pre-job and post-job and pre-freeze and post-thaw scripts, t
 3. Post-thaw script
 4. Post-job script
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

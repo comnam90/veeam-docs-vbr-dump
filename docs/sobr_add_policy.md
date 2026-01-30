@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Backup Placement Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_policy.html"
 last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Backup Placement Policy
 
-In this article
 
 [This step is not available if you use object storage repositories as performance extents. For more information on how the backup file placement policy works for performance extents configured using object storage repositories, see [Backup File Placement](backup_repository_sobr_placement.md#extent_selection_objectstorage).]
 
@@ -35,6 +36,4 @@ For more information, see [Backup File Placement](backup_repository_sobr_placeme
 
 [![Step 4. Specify Backup Placement Policy](images/scaleout_repo_add_policy.webp)](images/scaleout_repo_add_policy.webp)
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

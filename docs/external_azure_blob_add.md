@@ -1,5 +1,7 @@
 ---
 title: "Adding External Azure Blob Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_azure_blob_add.html"
 last_updated: "11/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding External Azure Blob Storage
 
-In this article
 
 To add an Microsoft Azure Blob storage as an external repository, do the following:
 
@@ -19,6 +20,4 @@ To add an Microsoft Azure Blob storage as an external repository, do the followi
 6. [Wait for the repository to be added to the infrastructure](external_azure_apply.md).
 7. [Finish working with the wizard](external_azure_summary.md).
 
-Page updated 11/26/2024
 
-Page content applies to build 13.0.1.1071

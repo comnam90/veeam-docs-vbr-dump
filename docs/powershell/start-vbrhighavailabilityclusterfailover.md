@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRHighAvailabilityClusterFailover"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrhighavailabilityclusterfailover.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRHighAvailabilityClusterFailover
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 
 [Get-Credential](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5&viewFallbackFrom=powershell-7.1)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

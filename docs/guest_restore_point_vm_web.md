@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_point_vm_web.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Restore Point
 
-In this article
 
 To select a restore point:
 
@@ -20,6 +21,4 @@ If you want to configure the mount server, do not close the window. For more inf
 
 [![Launch Wizard - Web UI](images/guest_restore_point_vm_web.webp)](images/guest_restore_point_vm_web.webp "Launch Wizard - Web UI")
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

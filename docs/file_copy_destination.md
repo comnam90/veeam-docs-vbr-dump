@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Destination for Copying"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_copy_destination.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Destination for Copying
 
-In this article
 
 At the Destination step of the wizard, select the destination to which files or folders must be copied.
 
@@ -24,6 +25,4 @@ To specify the destination:
 
 ![Step 4. Select Destination for Copying](images/file_copy_target.webp)
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

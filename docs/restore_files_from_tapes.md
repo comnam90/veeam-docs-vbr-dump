@@ -1,5 +1,7 @@
 ---
 title: "Restoring Files from Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_tapes.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Files from Tape
 
-In this article
 
 To restore files or NDMP volumes backed up to tape, use the Restore from Tape wizard.
 
@@ -32,6 +33,4 @@ To restore files from tape or to restore entire tapes, follow the next steps:
 4. [Specify restore options](restore_files_from_tape_options.md).
 5. [Finish working with the wizard](restore_files_from_tape_review.md).
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

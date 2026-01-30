@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRFailoverPlan"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrfailoverplan.html"
 last_updated: "4/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRFailoverPlan
 
-In this article
 
 Short Description
 
@@ -96,6 +97,4 @@ Examples
 | --- | --- |
 | [Cloud provider] This command gets MS Exchange Group Failover failover plan created by the ABC Company tenant.  |  | | --- | | $tenant = Get-VBRCloudTenant -Name "ABC Company"  Get-VBRFailoverPlan -Tenant $tenant -Name "MS Exchange Group Failover" |  Perform the following steps:   1. Run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. Specify the Name parameter value. Save the result to the $tenant variable. 2. Run the Get-VBRFailoverPlan cmdlet. Set the $tenant variable as the Tenant parameter value. Specify the Name parameter value. |
 
-Page updated 4/18/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Replica Set Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_multiple_pit_specify_rs_credentials.html"
 last_updated: "9/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Replica Set Credentials
 
-In this article
 
 At this step of the wizard, specify the connection parameters for the target MongoDB replica set. Veeam Explorer for MongoDB must access the target replica set to detect the primary node.
 
@@ -39,6 +40,4 @@ Note that the certificates on the client and server must be issued by the same C
 
 [![Specifying Replica Set Credentials](images/vemdb_rs_restore_collection_specify_rs_credentials.webp)](images/vemdb_rs_restore_collection_specify_rs_credentials.webp "Specifying Replica Set Credentials")
 
-Page updated 9/29/2025
 
-Page content applies to build 13.0.1.1071

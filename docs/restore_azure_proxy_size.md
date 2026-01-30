@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select VM Size"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_size.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select VM Size
 
-In this article
 
 At the VM size step of the wizard, you can select the size for the Azure restore proxy appliance VM and specify which storage account you want to use to deploy the Azure restore proxy appliance VM:
 
@@ -38,6 +39,4 @@ The list of storage accounts will contain only general purpose storage accounts.
 
 ![Step 5. Select VM Size](images/azure_proxy_size.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

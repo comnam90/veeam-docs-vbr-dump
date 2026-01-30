@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRComputerWarningOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcomputerwarningoptions.html"
 last_updated: "10/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRComputerWarningOptions
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ This command modifies a warning time period of notifications settings for comput
 | --- |
 | $warning = Set-VBRComputerWarningOptions -WarningPolicy 15 |
 
-Page updated 10/22/2024
 
-Page content applies to build 13.0.1.1071

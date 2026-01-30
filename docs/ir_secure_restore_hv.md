@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Specify Secure Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_secure_restore_hv.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Specify Secure Restore Settings
 
-In this article
 
 This step is available if you recover workloads with Microsoft Windows OS.
 
@@ -52,6 +53,4 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 
 ![Step 10. Specify Secure Restore Settings](images/instant_recovery_to_hv_secure.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

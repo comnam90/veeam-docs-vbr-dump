@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Resource Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_resource_group.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Resource Group
 
-In this article
 
 At the Resource Group step of the wizard, you specify the resource group to which the Azure restore proxy appliance must be placed and configure DNS name label:
 
@@ -27,6 +28,4 @@ For the new resource group, Veeam Backup & Replication automatically creates a n
 
 ![Step 6. Select Resource Group](images/azure_proxy_resource_group.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

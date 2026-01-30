@@ -1,5 +1,7 @@
 ---
 title: "Securing Backup Infrastructure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/securing_backup_infrastructure.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Securing Backup Infrastructure
 
-In this article
 
 This section includes recommendations for hardening specific backup infrastructure components in addition to [general security considerations](general_security_considerations.md).
 
@@ -93,6 +94,4 @@ Related Topics
 
 * [Security & Compliance Analyzer](best_practices_analyzer.md)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

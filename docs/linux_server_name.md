@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Server Name or Address"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server_name.html"
 last_updated: "8/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Server Name or Address
 
-In this article
 
 At the Name step of the wizard, specify an address and description for the Linux server.
 
@@ -16,6 +17,4 @@ At the Name step of the wizard, specify an address and description for the Linux
 
 ![Step 2. Specify Server Name or Address](images/add_server_linux_name.webp)
 
-Page updated 8/25/2023
 
-Page content applies to build 13.0.1.1071

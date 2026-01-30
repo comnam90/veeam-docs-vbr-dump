@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Workloads and Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_vm.html"
 last_updated: "6/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Workloads and Restore Points
 
-In this article
 
 At the Machine step of the wizard, specify workloads that you want to restore and specify restore points to which you want to restore the workloads. By default, Veeam Backup & Replication restores workloads to the latest valid restore point in the backup chain.
 
@@ -30,6 +31,4 @@ To select a restore point for a workload, do the following:
 
 ![Step 2. Select Workloads and Restore Points](images/azure_restore_point.webp)
 
-Page updated 6/27/2025
 
-Page content applies to build 13.0.1.1071

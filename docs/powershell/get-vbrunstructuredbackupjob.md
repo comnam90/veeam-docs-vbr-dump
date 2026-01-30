@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackupjob.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackupJob
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command returns the 0789b522-c02c-4d05-a619-dee26520495d object storage backup job.  |  | | --- | | Get-VBRUnstructuredBackupJob -ID "0789b522-c02c-4d05-a619-dee26520495d" | |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

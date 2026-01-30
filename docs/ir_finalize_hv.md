@@ -1,5 +1,7 @@
 ---
 title: "Step 13. Finalizing Instant Recovery to Microsoft Hyper-V"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_finalize_hv.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 13. Finalizing Instant Recovery to Microsoft Hyper-V
 
-In this article
 
 After the VMs have been successfully recovered, you must finalize the process. For this, test the recovered VMs and decide whether to migrate them to production environment or stop publishing.
 
@@ -59,6 +60,4 @@ To remove a recovered VM:
 
 [![Click to zoom in](images/hyperv_instant_recovery_finalize.webp)](images/hyperv_instant_recovery_finalize.webp "Click to zoom in")
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

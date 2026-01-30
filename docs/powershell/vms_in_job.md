@@ -1,5 +1,7 @@
 ---
 title: "VMs in Job"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vms_in_job.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMs in Job
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -20,6 +21,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Remove-VBRJobObject](remove-vbrjobobject.md) | Removes VMs or VM containers from jobs. |
 | [Reset-HvVmChangeTracking](reset-hvvmchangetracking.md) | Clears change tracking data for a specific VM or specific virtual disk (VHD). |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

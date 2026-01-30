@@ -1,5 +1,7 @@
 ---
 title: "Rescan Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_discovery_job.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescan Job
 
-In this article
 
 For automated discovery of protected computers, Veeam Backup & Replication uses the rescan job that runs on the backup server. Veeam Backup & Replication automatically creates this job once you create the first protection group in the inventory. The rescan job runs upon schedule defined individually for every protection group in the protection group settings. By default, Veeam Backup & Replication is set up to perform discovery at 9:00 PM daily. You can adjust daily schedule in the protection group settings or define periodic schedule.
 
@@ -72,6 +73,4 @@ Related Tasks
 * [Rescanning Protected Computer](agents_protected_computers_rescan.md)
 * [Viewing Rescan Job Statistics](agents_reporting_stats.md)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

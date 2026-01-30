@@ -1,5 +1,7 @@
 ---
 title: "Failover and Failback for Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failover_failback.html"
 last_updated: "3/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover and Failback for Replication
 
-In this article
 
 Failover and failback operations help you ensure that your business will function even if a disaster strikes your production site. Failover is a process of switching from the VM on the source host to its VM replica on a host in the disaster recovery site. Failback is a process of returning from the VM replica to the source VM.
 
@@ -82,6 +83,4 @@ In This Section
 * [Failback Commit](commit_failback.md)
 * [Failback Undo](undo_failback.md)
 
-Page updated 3/19/2025
 
-Page content applies to build 13.0.1.1071

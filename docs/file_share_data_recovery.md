@@ -1,5 +1,7 @@
 ---
 title: "File Share Data Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_data_recovery.html"
 last_updated: "7/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # File Share Data Recovery
 
-In this article
 
 You can restore data previously backed up with file backup jobs. You can restore the following data:
 
@@ -25,6 +26,4 @@ Veeam Backup & Replication offers several recovery options for different recover
 * [Restore of files and folders](file_share_recovery_restore_files_folders.md) allows you to select files and folders to restore to one of the restore points.
 * [Restore of files from an archive repository](restore_files_from_archive.md) allows you to select archived files to restore to one of the restore points.
 
-Page updated 7/21/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How Replication Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_process.html"
 last_updated: "1/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Replication Works
 
-In this article
 
 Veeam Backup & Replication performs VM replication in the following way:
 
@@ -27,6 +28,4 @@ While copying VM data, the source proxy performs additional processing. It filte
 
 ![How Replication Works](images/replication_hiw_vm.webp)
 
-Page updated 1/27/2025
 
-Page content applies to build 13.0.1.1071

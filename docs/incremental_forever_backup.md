@@ -1,5 +1,7 @@
 ---
 title: "Forever Forward Incremental Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/incremental_forever_backup.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Forever Forward Incremental Backup
 
-In this article
 
 The forever forward incremental backup method produces a backup chain that consists of the first full backup file (VBK) and a set of forward incremental backup files (VIB) following it.
 
@@ -28,6 +29,4 @@ Related Topics
 * [Health Check for Backup Files](backup_health_check.md)
 * [Compact of Full Backup File](backup_compact_file.md)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Migrating Configuration Database to Another SQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_migrate_to_another_server.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating Configuration Database to Another SQL Server
 
-In this article
 
 It is the best practice to keep the Veeam Backup & Replication application and its configuration database on the same server to maintain lowest latency and highest performance. However, in some scenarios a remote Microsoft SQL Server instance can be the better choice:
 
@@ -104,6 +105,4 @@ Reschedule your configuration database backup. Also, check if you can see the Lo
 
 * Enable your backup jobs and backup copy jobs. Take a closer look at your backup infrastructure to ensure that everything is working as expected.
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

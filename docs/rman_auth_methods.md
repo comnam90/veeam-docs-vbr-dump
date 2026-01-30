@@ -1,5 +1,7 @@
 ---
 title: "Authentication Against Database"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_auth_methods.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Authentication Against Database
 
-In this article
 
 When you configure Veeam Plug-In for Oracle RMAN, you can choose between the operating system authentication and database authentication methods to connect to the database you plan to back up.
 
@@ -35,6 +36,4 @@ Related Tasks
 * [Configuring Plug-In on Linux and Unix](configuring_rman_plugin_lin.md#authmethodsrman)
 * [Configuring Plug-In on Microsoft Windows](configuring_rman_plugin_win.md#authmethods)
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

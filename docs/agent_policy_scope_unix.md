@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Backup Scope Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_scope_unix.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Backup Scope Settings
 
-In this article
 
 The Objects step of the wizard is available if you have chosen the Custom scope mode at the [Backup Mode](agent_policy_mode_unix.md) step of the wizard.
 
@@ -50,6 +51,4 @@ Veeam Agent will include in the backup all files of the PDF format that do not c
 
 ![Step 6. Specify Backup Scope Settings](images/agent_policy_files_exclude_unix.webp)
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Choose Target Media Pool"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_copy_target.html"
 last_updated: "3/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Choose Target Media Pool
 
-In this article
 
 At the Target Media Pool step of the wizard, specify where you want to copy the source tapes to.
 
@@ -25,6 +26,4 @@ If the target media pool is the same as the source media pool, Veeam Backup & Re
 
 ![Step 3. Choose Target Media Pool](images/tape_copy_target.webp)
 
-Page updated 3/14/2025
 
-Page content applies to build 13.0.1.1071

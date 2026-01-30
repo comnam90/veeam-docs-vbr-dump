@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRS3CompatibleServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrs3compatibleserver.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRS3CompatibleServer
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Related Commands
 * [Get-VBRAmazonAccount](get-vbramazonaccount.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

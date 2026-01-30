@@ -1,5 +1,7 @@
 ---
 title: "Update-VBRServerComponent"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/update-vbrservercomponent.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Update-VBRServerComponent
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Related Commands
 
 [Get-VBRPhysicalHost](get-vbrphysicalhost.md)
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

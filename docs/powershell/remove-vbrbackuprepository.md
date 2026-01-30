@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBRBackupRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrbackuprepository.html"
 last_updated: "7/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBRBackupRepository
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 
 [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
-Page updated 7/23/2025
 
-Page content applies to build 13.0.1.1071

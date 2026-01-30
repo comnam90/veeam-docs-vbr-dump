@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New NAS Filer Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_filer_wizard_launch.html"
 last_updated: "12/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New NAS Filer Wizard
 
-In this article
 
 To launch the New NAS Filer wizard:
 
@@ -22,6 +23,4 @@ To launch the New NAS Filer wizard:
 
 ![Step 1. Launch New NAS Filer Wizard](images/add_unstructured_data_source.webp)
 
-Page updated 12/2/2024
 
-Page content applies to build 13.0.1.1071

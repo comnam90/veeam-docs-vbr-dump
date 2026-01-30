@@ -1,5 +1,7 @@
 ---
 title: "Validating Untrusted Hosts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_fingerprint_validate.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Validating Untrusted Hosts
 
-In this article
 
 When you select the Add unknown hosts to the list manually option in Veeam Backup & Replication settings, you need to validate the SSH or deployer certificate fingerprints of untrusted servers and VMs manually in the Veeam Backup & Replication console.
 
@@ -39,6 +40,4 @@ If the SSH public key of a server is changed, Veeam Backup & Replication puts th
 
 [![Validating Untrusted Hosts](images/linux_host_fingerprint.webp)](images/linux_host_fingerprint.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

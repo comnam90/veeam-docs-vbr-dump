@@ -1,5 +1,7 @@
 ---
 title: "Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover
 
-In this article
 
 Failover is when Veeam Backup & Replication switches processes from the source workload in the production site to its replica in the disaster recovery site. During failover, Veeam Backup & Replication recovers the replica to the required restore point and shifts all I/O processes from the source workload to its replica. As a result, you have a fully functional VM within a couple of seconds, and your users can access services and applications with minimum disruption.
 
@@ -44,6 +45,4 @@ Related Topics
 
 [Performing Failover](uni_cdp_performing_failover.md)
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

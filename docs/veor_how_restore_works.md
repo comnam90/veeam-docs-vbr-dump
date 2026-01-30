@@ -1,5 +1,7 @@
 ---
 title: "How Restore Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_how_restore_works.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore Works
 
-In this article
 
 Restoring standalone databases or Data Guard databases with Veeam Explorer for Oracle works in the following manner:
 
@@ -36,6 +37,4 @@ When restoring Data Guard databases, consider the following:
 
 [![How Restore Works](images/veor_restore.webp)](images/veor_restore.webp "How Restore Works")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

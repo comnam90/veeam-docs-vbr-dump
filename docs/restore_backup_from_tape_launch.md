@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Backup from Tape to Repository Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_backup_from_tape_launch.html"
 last_updated: "7/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Backup from Tape to Repository Wizard
 
-In this article
 
 To run the Restore Backup from Tape to Repository wizard, on the Home tab, click Restore and choose Tape > Restore Backups.
 
@@ -18,6 +19,4 @@ Alternatively, you can:
 
 [![Step 1. Launch Restore Backup from Tape to Repository Wizard](images/restore_backup_from_tape_launch.webp)](images/restore_backup_from_tape_launch.webp)
 
-Page updated 7/8/2025
 
-Page content applies to build 13.0.1.1071

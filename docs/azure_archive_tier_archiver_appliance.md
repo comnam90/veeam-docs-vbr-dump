@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Archiver Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_archive_tier_archiver_appliance.html"
 last_updated: "9/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Archiver Appliance
 
-In this article
 
 At the Archiver Appliance step of the wizard, you can specify archiver appliance settings. An archiver appliance is an auxiliary instance that is necessary to transfer data from Azure Blob storage to Azure Archive Storage. For more information, see the [Archiver Appliances](archiver_appliance.md) section.
 
@@ -36,6 +37,4 @@ To configure and set up an archiver appliance, you must add a Microsoft Azure ac
 
 ![Step 6. Specify Archiver Appliance](images/azure_archive_proxy.webp)
 
-Page updated 9/4/2025
 
-Page content applies to build 13.0.1.1071

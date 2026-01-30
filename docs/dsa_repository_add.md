@@ -1,5 +1,7 @@
 ---
 title: "Adding Deduplicating Storage Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_add.html"
 last_updated: "8/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Deduplicating Storage Appliances
 
-In this article
 
 This section describes how to add a deduplicating storage appliance as a backup repository.
 
@@ -22,6 +23,4 @@ Before you add a backup repository, check [prerequisites](repo_before_you_begin.
 7. [Apply backup repository settings](dsa_repository_apply.md).
 8. [Finish working with the wizard](dsa_repository_finish.md).
 
-Page updated 8/10/2023
 
-Page content applies to build 13.0.1.1071

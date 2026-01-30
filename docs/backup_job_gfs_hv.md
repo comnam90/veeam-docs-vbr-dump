@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Long-Term Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_gfs_hv.html"
 last_updated: "7/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Long-Term Retention
 
-In this article
 
 If you want to ignore the short-term retention policy for some full backups and store them for long-term archiving, you can configure GFS retention policy settings for the backup job. For more information on GFS and its limitations, see [Long-Term Retention Policy (GFS)](gfs_retention_policy_hv.md).
 
@@ -36,6 +37,4 @@ From the Use monthly full backup from the following month drop-down list, select
 
 ![Step 7. Configure Long-Term Retention](images/hv_backup_job_gfs.webp)
 
-Page updated 7/3/2025
 
-Page content applies to build 13.0.1.1071

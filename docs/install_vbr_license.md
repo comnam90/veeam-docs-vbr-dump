@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Provide License File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_license.html"
 last_updated: "5/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Provide License File
 
-In this article
 
 At the License step of the wizard, specify what license you want to install for Veeam Backup & Replication. For more information, see [Licensing](licensing.md).
 
@@ -33,6 +34,4 @@ If you do not install a license, the product will operate in the Veeam Backup & 
 
 ![Step 4. Provide License File](images/installation_select_license.webp)
 
-Page updated 5/9/2025
 
-Page content applies to build 13.0.1.1071

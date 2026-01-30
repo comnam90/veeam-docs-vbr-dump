@@ -1,5 +1,7 @@
 ---
 title: "Rescanning Protected Computer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_rescan.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning Protected Computer
 
-In this article
 
 You can rescan protected computers added to the inventory. The rescan operation may be required, for example, if you want to refresh information about the protected computer in the Veeam Backup & Replication database. During the rescan operation, Veeam Backup & Replication communicates to Veeam Installer Service running on the protected computer, retrieves information about the computer and stores this information to the configuration database.
 
@@ -26,6 +27,4 @@ To rescan a protected computer:
 
 [![Rescan Computer](images/protected_computer_rescan.webp)](images/protected_computer_rescan.webp "Rescan Computer")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

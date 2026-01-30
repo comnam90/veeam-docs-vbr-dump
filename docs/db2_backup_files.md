@@ -1,5 +1,7 @@
 ---
 title: "Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_files.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Files
 
-In this article
 
 For every backup job within Veeam Backup & Replication, Veeam Plug-In creates and stores database backup files, and separate metadata files for each of the backup files. The backup files provide a consistent and integrated way for Veeam Plug-Ins to store and manage backup data, while ensuring that the data is protected, accessible and can be quickly restored when needed.
 
@@ -44,6 +45,4 @@ After one of the limits is archived, Veeam Plug-In closes the backup file and ca
 * Set the immutability for the backup file.
 * Copy and move backup file to the capacity tier.
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

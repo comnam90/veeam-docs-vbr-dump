@@ -1,5 +1,7 @@
 ---
 title: "Replication Scenarios"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_scenarios.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replication Scenarios
 
-In this article
 
 Veeam Backup & Replication supports a number of replication scenarios that depend on the location of the target host:
 
@@ -74,6 +75,4 @@ Off-site replication over WAN accelerators requires the following backup infrast
 
 In the off-site replication scenario using WAN accelerators, Veeam Backup & Replication compresses VM data. VM data blocks are compressed on the source WAN accelerator, transported to the DR site in the compressed format and decompressed on the target WAN accelerator.
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

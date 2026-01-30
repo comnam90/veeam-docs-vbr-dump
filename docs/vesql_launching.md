@@ -1,5 +1,7 @@
 ---
 title: "Launching Application and Exploring Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_launching.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Application and Exploring Backups
 
-In this article
 
 To open Veeam Explorer for Microsoft SQL Server and load SQL data, you can use either of the following methods:
 
@@ -48,6 +49,4 @@ In This Section
 * [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md)
 * [Viewing Database Information](vesql_view_db_info.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

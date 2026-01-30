@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Backup Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_launch_vm.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Backup Job Wizard
 
-In this article
 
 To launch the New Backup Job wizard, do one of the following:
 
@@ -18,6 +19,4 @@ To launch the New Backup Job wizard, do one of the following:
 
 [![Click to zoom in](images/vm_backup_job_create.webp)](images/vm_backup_job_create.webp "Click to zoom in")
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

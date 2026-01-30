@@ -1,5 +1,7 @@
 ---
 title: "Tape Encryption"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_tape.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Encryption
 
-In this article
 
 Veeam Backup & Replication supports the following encryption levels for tape media:
 
@@ -48,6 +49,4 @@ Related Topics
 
 [Restoring Encrypted Data from Tapes](tapes_restore_encrypted.md)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

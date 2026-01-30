@@ -1,5 +1,7 @@
 ---
 title: "Distributed Deployment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/distributed.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Distributed Deployment
 
-In this article
 
 The distributed deployment scenario is recommended for large geographically dispersed virtual environments with multiple Veeam Backup & Replication servers installed across different sites. These backup servers are federated under Veeam Backup Enterprise Manager — an optional component that provides centralized management and reporting for these servers through a web interface.
 
@@ -28,6 +29,4 @@ Related Topics
 * [Advanced Deployment](advanced.md)
 * [Veeam Backup Enterprise Manager](enterprise_manager.md)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

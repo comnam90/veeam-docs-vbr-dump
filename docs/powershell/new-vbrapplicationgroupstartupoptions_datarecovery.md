@@ -1,5 +1,7 @@
 ---
 title: "New-VBRApplicationGroupStartupOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrapplicationgroupstartupoptions_datarecovery.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRApplicationGroupStartupOptions
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Examples
 | --- | --- |
 | This command defines startup settings for VMs added to an application group. Veeam Backup & Replication will perform staged restore with the following VM startup settings:   * The period that is required for VMs to boot is set to 150 sec. * The timeout required to initialize applications on VMs is set to 130. * The amount of memory provided for VMs is set to 110 percent.   |  | | --- | | $startupoptions = New-VBRApplicationGroupStartupOptions -MaximumBootTime 150 -ApplicationInitializationTimeout 130 -MemoryAllocationPercent 110 -HeartbeatCheck -PingCheck | |
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

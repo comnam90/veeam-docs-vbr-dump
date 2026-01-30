@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_databases.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Databases
 
-In this article
 
 At the Databases step of the wizard, select protection groups, computers, SQL instances or individual databases whose data you want to back up.
 
@@ -66,6 +67,4 @@ You can press and hold [Ctrl] to select multiple objects at once.
 
 ![Step 3. Specify Databases](images/plugins_policy_mssql_database_exclude.webp)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

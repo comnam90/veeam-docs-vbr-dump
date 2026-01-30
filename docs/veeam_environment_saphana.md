@@ -1,5 +1,7 @@
 ---
 title: "Veeam Environment Planning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_saphana.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Environment Planning
 
-In this article
 
 The integration of SAP HANA and Veeam Plug-In requires additional environment planning. Before you deploy Veeam Plug-In, keep in mind the following requirements and limitations.
 
@@ -143,6 +144,4 @@ Veeam Plug-In for SAP HANA and SAP HANA do not include the respective configurat
 
 To learn more about SAP HANA configuration files, see [this SAP article](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c39a9abbbb57101496d4fade60e43503.html).
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

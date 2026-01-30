@@ -1,5 +1,7 @@
 ---
 title: "Restore to Microsoft Azure"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/microsoft_azure.html"
 last_updated: "5/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Microsoft Azure
 
-In this article
 
 To use the cmdlets in this section, you must have the Microsoft Azure PowerShell Module installed on your machine. You can install the Microsoft Azure PowerShell Module with the following options:
 
@@ -41,6 +42,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Get-VBRAzureRestoreSession](get-vbrazurerestoresession.md) | Returns VM backup restore to Microsoft Azure sessions. |
 | [Stop-VBRVMRestoreToAzure](stop-vbrvmrestoretoazure.md) | Stops running VM backup restore to Microsoft Azure sessions. |
 
-Page updated 5/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Editing High Availability Cluster Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availbility_cluster_editing.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing High Availability Cluster Settings
 
-In this article
 
 After you have assembled an HA cluster, you can edit the ports and data transfer options of the primary node.
 
@@ -20,6 +21,4 @@ To edit the HA cluster settings, do the following:
 
 [![Editing High Availability Cluster Settings](images/high_availability_cluster_editing.webp)](images/high_availability_cluster_editing.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

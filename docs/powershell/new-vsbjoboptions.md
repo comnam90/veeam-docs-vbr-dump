@@ -1,5 +1,7 @@
 ---
 title: "New-VSBJobOptions (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vsbjoboptions.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VSBJobOptions (obsolete)
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command creates a CDRJobOptions object with the following settings:
 | --- |
 | $sureoptions = New-VSBJobOptions  $sureoptions.EmailNotification = $true  $sureoptions.EmailNotificationAddresses = "mailto@veeam.com"  $sureoptions.RunningVmsNumber = 6  $sureoptions  RunManually                : True |
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

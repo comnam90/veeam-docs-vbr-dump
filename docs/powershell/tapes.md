@@ -1,5 +1,7 @@
 ---
 title: "Managing Tapes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/tapes.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Tapes
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with tapes:
 
@@ -27,6 +28,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Start-VBRTapeVerification](start-vbrtapeverification.md) | Starts tape verification jobs. |
 | [Start-VBRTapeCopy](start-vbrtapecopy.md) | Starts tape copy jobs. |
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

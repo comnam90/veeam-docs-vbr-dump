@@ -1,5 +1,7 @@
 ---
 title: "Network Traffic Management"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/network_traffic_rules.html"
 last_updated: "4/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Network Traffic Management
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -30,6 +31,4 @@ In This Section
 | [Get-VBRUploadStreamsConfiguration](get-vbruploadstreamsconfiguration.md) | Returns information on data transfer settings for job sessions. |
 | [Set-VBRUploadStreamsConfiguration](set-vbruploadstreamsconfiguration.md) | Modifies data transfer settings for job sessions. |
 
-Page updated 4/22/2024
 
-Page content applies to build 13.0.1.1071

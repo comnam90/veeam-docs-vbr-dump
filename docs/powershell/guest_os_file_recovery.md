@@ -1,5 +1,7 @@
 ---
 title: "Guest OS File Recovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/guest_os_file_recovery.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Guest OS File Recovery
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -34,6 +35,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Stop-VBRLinuxGuestItemRestore](stop-vbrlinuxguestitemrestore.md) | Stops Linux guest OS file restore session initiated with the [Start-VBRLinuxGuestItemRestore](start-vbrlinuxguestitemrestore.md) cmdlet. |
 | [Stop-VBRWindowsGuestItemRestore](stop-vbrwindowsguestitemrestore.md) | Stops Windows guest OS file restore session initiated with the [Start-VBRWindowsGuestItemRestore](start-vbrwindowsguestitemrestore.md) cmdlet. |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

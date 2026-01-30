@@ -1,5 +1,7 @@
 ---
 title: "Viewing Rescan Job Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_report_rescan_job_stats.html"
 last_updated: "11/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Rescan Job Statistics
 
-In this article
 
 You can view statistics about performed rescan job sessions. When you create a protection group or manually start the discovery process for a protection group or individual protected computer, Veeam Backup & Replication displays statistics for the currently running rescan job session. In the statistics window, Veeam Backup & Replication displays session duration details and a list of operations performed during the job.
 
@@ -20,6 +21,4 @@ You can also view statistics for any performed rescan job session. To view resca
 
 [![Viewing Rescan Job Statistics](images/mongo_statistics_discovery.webp)](images/mongo_statistics_discovery.webp "Viewing Rescan Job Statistics")
 
-Page updated 11/21/2024
 
-Page content applies to build 13.0.1.1071

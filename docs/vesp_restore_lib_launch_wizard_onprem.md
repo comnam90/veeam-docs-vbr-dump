@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_restore_lib_launch_wizard_onprem.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard for a document library, do one of the following:
 
@@ -23,6 +24,4 @@ To launch the Restore wizard for a list, do one of the following:
 
 [![Restoring Document Libraries and Lists](images/sp_lib_2.webp)](images/sp_lib_2.webp "Restoring Document Libraries and Lists")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

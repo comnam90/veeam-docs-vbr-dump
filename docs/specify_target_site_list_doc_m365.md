@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Target Site and List"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_target_site_list_doc_m365.html"
 last_updated: "9/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Target Site and List
 
-In this article
 
 At this step of the wizard, specify web address of a target SharePoint site and select whether you want to restore backed-up data to the original list or specify a custom list.
 
@@ -23,6 +24,4 @@ Keep in mind that Veeam Explorer for Microsoft SharePoint will not create the li
 
 [![Specify Target Site and List](images/target_url_doc_2.webp)](images/target_url_doc_2.webp "Specify Target Site and List")
 
-Page updated 9/10/2024
 
-Page content applies to build 13.0.1.1071

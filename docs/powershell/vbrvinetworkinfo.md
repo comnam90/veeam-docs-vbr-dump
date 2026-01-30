@@ -1,5 +1,7 @@
 ---
 title: "VBRViNetworkInfo"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrvinetworkinfo.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRViNetworkInfo
 
-In this article
 
 Contains virtual network connected to VMware host.
 
@@ -30,6 +31,4 @@ Related Commands
 
 [Get-VBRViServerNetworkInfo](get-vbrviservernetworkinfo.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

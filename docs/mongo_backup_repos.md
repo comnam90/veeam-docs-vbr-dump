@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_repos.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Repositories
 
-In this article
 
 You can store MongoDB backup files in repositories added to the Veeam Backup & Replication infrastructure. In this section, you can find the list of supported backup repositories and limitations for MongoDB backups.
 
@@ -67,6 +68,4 @@ Before you configure your backup infrastructure to back up to the object storage
 
 * For Microsoft Azure Blob storage, MongoDB Backup does not support soft delete for blobs.
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

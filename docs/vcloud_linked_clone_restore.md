@@ -1,5 +1,7 @@
 ---
 title: "How Restore of Linked Clone VMs to VMware Cloud Director Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_linked_clone_restore.html"
 last_updated: "11/17/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore of Linked Clone VMs to VMware Cloud Director Works
 
-In this article
 
 Veeam Backup & Replication lets you restore linked clone VMs – VMs that were deployed from a VM template using the fast provisioning technology. There are several mechanisms for processing linked clone VMs.
 
@@ -45,6 +46,4 @@ In this case, Veeam Backup & Replication uses the same algorithm as for restore 
 
 ![How Restore of Linked Clone VMs to VMware Cloud Director Works](images/restore_independent_disks.webp)
 
-Page updated 11/17/2023
 
-Page content applies to build 13.0.1.1071

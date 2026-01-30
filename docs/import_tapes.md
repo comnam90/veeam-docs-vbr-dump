@@ -1,5 +1,7 @@
 ---
 title: "Loading Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tapes.html"
 last_updated: "4/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Loading Tapes
 
-In this article
 
 When you need to add free tapes, or if you need to restore data from offline tapes, you need to load these tapes into your tape device.
 
@@ -28,6 +29,4 @@ Related Topics
 
 [Loading Tapes Written with 3rd-Party Backup Solution](import_tapes_3rd_party.md)
 
-Page updated 4/30/2025
 
-Page content applies to build 13.0.1.1071

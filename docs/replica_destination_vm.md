@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Replica Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_destination_vm.html"
 last_updated: "7/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Replica Destination
 
-In this article
 
 At the Destination step of the wizard, select a target host or cluster, resource pool, folder and datastore for replicas, and types of replica disks:
 
@@ -77,6 +78,4 @@ For more information about disk types, see [VMware Docs](https://docs.vmware.com
 
 ![Step 7. Specify Replica Destination](images/vm_replica_job_destination.webp)
 
-Page updated 7/10/2025
 
-Page content applies to build 13.0.1.1071

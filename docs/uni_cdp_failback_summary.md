@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failback_summary.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, review the configured failback settings and click Finish.
 
@@ -22,6 +23,4 @@ Failback is an intermediate step that needs to be finalized. You can finalize fa
 * [Commit failback](uni_cdp_comitting_failback.md).
 * [Undo failback](uni_cdp_undoing_failback.md).
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

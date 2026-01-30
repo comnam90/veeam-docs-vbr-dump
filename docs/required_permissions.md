@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 Make sure the user accounts that you plan to use have permissions described in the following sections.
 
@@ -450,6 +451,4 @@ Related Topics
 
 For permissions required for Veeam Backup Enterprise Manager, see [Permissions](https://helpcenter.veeam.com/docs/vbr/em/required_permissions.html?ver=13) in the Enterprise Manager User Guide.
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

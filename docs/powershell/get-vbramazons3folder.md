@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAmazonS3Folder"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbramazons3folder.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAmazonS3Folder
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Related Commands
 * [Connect-VBRAmazonS3Service](connect-vbramazons3service.md)
 * [Get-VBRAmazonS3Bucket](get-vbramazons3bucket.md)
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

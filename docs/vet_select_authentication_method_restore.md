@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Authentication Method"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_select_authentication_method_restore.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Authentication Method
 
-In this article
 
 At this step of the wizard, select either modern or basic authentication and specify authentication settings.
 
@@ -34,6 +35,4 @@ To use basic authentication, do the following:
 
 [![Select Authentication Method](images/restore_teams_basic.webp)](images/restore_teams_basic.webp "Select Authentication Method")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

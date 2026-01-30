@@ -1,5 +1,7 @@
 ---
 title: "Backup Job and Snapshot Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_linux_scripts.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job and Snapshot Scripts
 
-In this article
 
 You can instruct Veeam Agent for Linux to run custom scripts within the backup job session. In contrast to the standalone version of the product that can run custom scripts on the Veeam Agent computer only, Veeam Agent for Linux operating in the managed mode supports the following types of scripts:
 
@@ -63,6 +64,4 @@ If you specify both pre-job and post-job scripts that run on the backup server a
 5. Post-job script on the Veeam Agent computer
 6. Post-job script on the backup server
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

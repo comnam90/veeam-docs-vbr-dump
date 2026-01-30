@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Destination for Virtual Disk Updates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_datastore_vm.html"
 last_updated: "3/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Destination for Virtual Disk Updates
 
-In this article
 
 This step is available if you recover workloads to a new location or with different settings. However, this step is not available if you recover VMware vSphere VMs from storage snapshots.
 
@@ -27,6 +28,4 @@ To redirect redo logs:
 
 ![Step 6. Select Destination for Virtual Disk Updates](images/instant_recovery_datastore.webp)
 
-Page updated 3/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_before_begin.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you add a Microsoft Hyper-V server to the backup infrastructure, check the following prerequisites:
 
@@ -23,6 +24,4 @@ Before you add a Microsoft Hyper-V server to the backup infrastructure, check th
 * If you get the "Invalid Credentials" error when adding a Hyper-V host using a local account, see [this Veeam KB article](https://www.veeam.com/kb1914).
 * Veeam Backup & Replication ignores the SCVMM maintenance mode on Hyper-V hosts and Hyper-V cluster nodes. That is, Veeam Backup & Replication continues all data protection activities and allows launching new ones.
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

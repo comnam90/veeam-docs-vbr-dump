@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_repos.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup Repositories
 
-In this article
 
 Veeam Plug-Ins store backup files in repositories added to the Veeam Backup & Replication infrastructure. In this section, you can find the list of supported backup repositories and limitations for Veeam Plug-In backups.
 
@@ -191,10 +192,8 @@ Before you configure your backup infrastructure to back up to the object storage
 * Azure Data Box
 
 * Data in object storage repositories must be managed solely by Veeam Backup & Replication, including retention and data management. Lifecycle rules are not supported, and their enabling may result in backup and restore failures.
-* For backups located in object storage repositories, data recovery options are not available if you access the object storage repository using credentials with the read-only access permissions.
+* If you access the object storage repository using credentials with the read-only access permissions, data recovery options are not available for backups located in object storage repositories.
 
 * For Microsoft Azure Blob storage, Veeam Plug-Ins do not support soft delete for blobs.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

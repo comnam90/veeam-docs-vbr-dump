@@ -1,5 +1,7 @@
 ---
 title: "VBRFileToTapeObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrfiletotapeobject.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRFileToTapeObject
 
-In this article
 
 Contains file system objects processed by file to tape job.
 
@@ -25,6 +26,4 @@ Related Commands
 
 [New-VBRFileToTapeObject](new-vbrfiletotapeobject.md)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

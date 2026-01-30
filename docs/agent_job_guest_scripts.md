@@ -1,5 +1,7 @@
 ---
 title: "Backup Job and Snapshot Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest_scripts.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job and Snapshot Scripts
 
-In this article
 
 You can specify custom scripts that will be executed within the backup job session on Linux computers. Veeam Agent for Linux supports the following types of scripts:
 
@@ -73,6 +74,4 @@ Veeam Agent for Linux supports scripts in the SH file format. During the backup 
 
 ![Backup Job and Snapshot Scripts](images/agent_job_linux_scripts_job.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

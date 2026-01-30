@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRLinuxPackage"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrlinuxpackage.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRLinuxPackage
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command returns Linux components installed on the backup server.
 | --- |
 | Get-VBRLinuxPackage |
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Compare-VBRWindowsGuestItemsAttributes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/compare-vbrwindowsguestitemsattributes.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Compare-VBRWindowsGuestItemsAttributes
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Related Commands
 * [Start-VBRWindowsFileRestore](start-vbrwindowsfilerestore.md)
 * [Get-VBRWindowsGuestItem](get-vbrwindowsguestitem.md)
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Tape Devices"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/tape_devices.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Devices
 
-In this article
 
 The following topics contain instructions on managing and storing your data on tapes by means of Veeam PowerShell.
 
@@ -24,6 +25,4 @@ In this section
 * [Tape Decryption](tape_decryption.md)
 * [NDMP Volumes Restore](ndmp_volumes_restore.md)
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

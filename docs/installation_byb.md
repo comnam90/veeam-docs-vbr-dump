@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installation_byb.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you install Veeam Backup & Replication, check the following prerequisites:
 
@@ -57,6 +58,4 @@ Related Topics
 
 [Planning and Preparation](planning.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

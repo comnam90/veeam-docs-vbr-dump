@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDBackupSecondaryTarget"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidbackupsecondarytarget.html"
 last_updated: "7/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDBackupSecondaryTarget
 
-In this article
 
 Contains secondary repository settings for a Entra ID tenant backup job.
 
@@ -26,6 +27,4 @@ Related Commands
 * [New-VBREntraIDBackupSecondaryTarget](new-vbrentraidbackupsecondarytarget.md)
 * [Set-VBREntraIDBackupSecondaryTarget](set-vbrentraidbackupsecondarytarget.md)
 
-Page updated 7/28/2025
 
-Page content applies to build 13.0.1.1071

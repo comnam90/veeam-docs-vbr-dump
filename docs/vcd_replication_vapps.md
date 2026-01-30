@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select vApps to Replicate"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_vapps.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select vApps to Replicate
 
-In this article
 
 At the vApps step of the wizard, select VM containers (vApps, organization or organization VDCs) that you want to replicate.
 
@@ -23,6 +24,4 @@ When you add new items to VM containers, Veeam Backup & Replication updates sett
 
 ![Step 3. Select vApps to Replicate](images/select_vapps.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Upgrading Plug-In for SAP HANA"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_saphana_plugin.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading Plug-In for SAP HANA
 
-In this article
 
 Periodically, Veeam releases a new version of Veeam Backup & Replication that contains new features and bug fixes. The release package also contains a new version of Veeam Plug-Ins.
 
@@ -97,6 +98,4 @@ To upgrade Veeam Plug-In for SAP HANA on a Linux machine from the .TAR.GZ archiv
 | --- |
 | tar -xzvf VeeamPluginforSAPHANA.tar.gz -C /opt/veeam |
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

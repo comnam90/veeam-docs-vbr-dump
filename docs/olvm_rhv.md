@@ -1,5 +1,7 @@
 ---
 title: "Oracle Linux Virtualization Manager and Red Hat Virtualization"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/olvm_rhv.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Linux Virtualization Manager and Red Hat Virtualization
 
-In this article
 
 |  |
 | --- |
@@ -29,6 +30,4 @@ Veeam Backup & Replication with oVirt KVM Plug-In for Veeam Backup & Replication
 
 For more information, see the [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization User Guide](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7).
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

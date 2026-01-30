@@ -1,5 +1,7 @@
 ---
 title: "Set-HyperFlexHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-hyperflexhost.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-HyperFlexHost
 
-In this article
 
 Short Description
 
@@ -77,6 +78,4 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-VBRViProxy](get-vbrviproxy.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

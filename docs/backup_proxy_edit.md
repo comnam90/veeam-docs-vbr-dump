@@ -1,5 +1,7 @@
 ---
 title: "Editing VMware Backup Proxy Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy_edit.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing VMware Backup Proxy Settings
 
-In this article
 
 You can edit settings of backup proxies you have configured.
 
@@ -20,6 +21,4 @@ To edit VMware backup proxy settings:
 
 [![Click to zoom in](images/edit_proxy_vm.webp)](images/edit_proxy_vm.webp "Click to zoom in")
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Viewing Imported Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_imported_backup_data.html"
 last_updated: "5/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Imported Backups
 
-In this article
 
 To view [imported](osr_import_backups.md) backups, do the following:
 
@@ -17,6 +18,4 @@ To view [imported](osr_import_backups.md) backups, do the following:
 
 [![Viewing Imported Backups](images/viewing_imported_backup_data.webp)](images/viewing_imported_backup_data.webp)
 
-Page updated 5/27/2024
 
-Page content applies to build 13.0.1.1071

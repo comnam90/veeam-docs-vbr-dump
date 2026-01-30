@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_point.html"
 last_updated: "2/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Restore Point
 
-In this article
 
 You can select the restore point for the vApp.
 
@@ -22,6 +23,4 @@ In the Location column, you can view a name of a backup repository where a resto
 
 ![Step 3. Select Restore Point ](images/vcloud_restore_point.webp)
 
-Page updated 2/23/2024
 
-Page content applies to build 13.0.1.1071

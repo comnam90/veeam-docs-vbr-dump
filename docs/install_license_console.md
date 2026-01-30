@@ -1,5 +1,7 @@
 ---
 title: "Installing License Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_license_console.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing License Using Console
 
-In this article
 
 When you access the remote Veeam Backup & Replication console for the first time, you are asked to install a valid Veeam Backup & Replication license. If you do not specify a path to the license file, Veeam Backup & Replication will run in the Veeam Backup & Replication Community (free) Edition. Veeam Software Appliance 13.0.0 (build 13.0.0.4967) operating in the Veeam Backup & Replication Community Edition supports only [data recovery](data_recovery_all.md) features. For more information, see [Veeam Backup & Replication Community Edition](https://www.veeam.com/virtual-machine-backup-solution-free.html).
 
@@ -44,6 +45,4 @@ If backup servers are connected to Veeam Backup Enterprise Manager, Veeam Backup
 
 For information on Veeam Backup Enterprise Manager license, see the [Licensing](https://helpcenter.veeam.com/docs/vbr/em/managing_licenses.html?ver=13) section of the Veeam Backup Enterprise Manager Guide.
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

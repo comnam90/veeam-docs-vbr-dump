@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select VDC Organizations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_io_filter_vdc.html"
 last_updated: "1/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select VDC Organizations
 
-In this article
 
 At the Organization VDC step of the wizard, select check boxes near organization VDCs on which you want to install the I/O filter.
 
@@ -20,6 +21,4 @@ If you select check boxes near VDCs where the filters are installed, Veeam Backu
 
 ![Step 2. Select VDC Organizations](images/vcd_cdp_io_filter_vdc.webp)
 
-Page updated 1/18/2024
 
-Page content applies to build 13.0.1.1071

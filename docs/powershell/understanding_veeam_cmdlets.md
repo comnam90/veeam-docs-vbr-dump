@@ -1,5 +1,7 @@
 ---
 title: "Understanding Veeam Cmdlets"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/understanding_veeam_cmdlets.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Understanding Veeam Cmdlets
 
-In this article
 
 A cmdlet is a specialized .NET class that interacts with Microsoft .NET Framework objects. Each cmdlet acts as a single-function command that can perform multiple operations with these objects. Objects represent instances of the Veeam backup infrastructure: jobs, databases, restore sessions and so on.
 
@@ -45,6 +46,4 @@ Some cmdlets have two or more parameter sets. For example, restore cmdlets offer
 | Important |
 | Veeam PowerShell does not support the use of square brackets in the names of Veeam backup infrastructure components. |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

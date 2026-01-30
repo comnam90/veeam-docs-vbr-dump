@@ -1,5 +1,7 @@
 ---
 title: "Comparing Active Directory Containers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_compare_containers.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Comparing Active Directory Containers
 
-In this article
 
 To compare Active Directory containers, do the following:
 
@@ -22,6 +23,4 @@ The following figure shows user accounts the attributes of which have been chang
 
 [![Showing Changed Items Only](images/compare_1.webp)](images/compare_1.webp "Showing Changed Items Only")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Staging SQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_staging_microsoft_sql_server.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Staging SQL Server
 
-In this article
 
 To perform Microsoft SharePoint items restore, Veeam Explorer for Microsoft SharePoint requires a Microsoft SQL server to be used as a staging system.
 
@@ -63,6 +64,4 @@ Make sure the staging Microsoft SQL Server configuration meets the following req
 
 For Microsoft SQL Server 2014 and later, the Remote Blob Store setup is included in the installation media. For other versions, you can use the Microsoft SQL Server Remote Blob Store installation package. For more information on how to install the package, see [this Microsoft article](https://docs.microsoft.com/en-us/sharepoint/administration/install-and-configure-rbs).
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

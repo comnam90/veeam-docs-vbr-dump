@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Finalizing Instant Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_finalize.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Finalizing Instant Recovery
 
-In this article
 
 All VMs restored with Instant Recovery are displayed in the Home view, under the Instant Recovery node.
 
@@ -74,6 +75,4 @@ To unpublish a recovered VM:
 
 [![Step 11. Finalizing Instant Recovery](images/vcloud_instant_recovery_finalize.webp)](images/vcloud_instant_recovery_finalize.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

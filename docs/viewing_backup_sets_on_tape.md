@@ -1,5 +1,7 @@
 ---
 title: "Viewing Data on Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_backup_sets_on_tape.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Data on Tapes
 
-In this article
 
 To view data contents that is currently stored on tape:
 
@@ -20,6 +21,4 @@ You will see a list of protected hosts, repository servers and file shares where
 
 ![Viewing Data on Tapes](images/backup_set_on_tape.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

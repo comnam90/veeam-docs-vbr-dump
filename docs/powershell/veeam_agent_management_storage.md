@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Management Storage Integration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_management_storage.html"
 last_updated: "5/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Management Storage Integration
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [New-VBRSanIntegrationOptions](new-vbrsanintegrationoptions.md) | Defines storage integration settings for the Veeam Agent backup job. |
 | [Set-VBRSanIntegrationOptions](set-vbrsanintegrationoptions.md) | Modifies storage integration settings for the Veeam Agent backup job. |
 
-Page updated 5/22/2025
 
-Page content applies to build 13.0.1.1071

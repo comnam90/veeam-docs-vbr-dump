@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_data_restore.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 This section contains information about the available restore operations in Veeam Explorer for Microsoft SQL Server.
 
@@ -20,6 +21,4 @@ In This Section
 
 * [Restoring from SQL Plug-in Backups](vesql_restore_plugin.md)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding VMware Cloud Director Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_vcloud_director.html"
 last_updated: "6/23/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding VMware Cloud Director Servers
 
-In this article
 
 To work with vApps and VMs managed by VMware Cloud Director, you must add VMware Cloud Director to the backup infrastructure.
 
@@ -21,6 +22,4 @@ To add the VMware Cloud Director server, use the New VMware Cloud Director wizar
 4. [Specify credentials for underlying vCenter Servers](vcloud_vc.md).
 5. [Finish working with the wizard](vcloud_finish.md).
 
-Page updated 6/23/2023
 
-Page content applies to build 13.0.1.1071

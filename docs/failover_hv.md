@@ -1,5 +1,7 @@
 ---
 title: "Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failover_hv.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover
 
-In this article
 
 Failover is a process when Veeam Backup & Replication switches processes from the source VM in the production site to its VM replica in the disaster recovery site. During failover, Veeam Backup & Replication recovers the VM replica to the required restore point and shifts all I/O processes from the source VM to its replica. As a result, you have a fully functional VM within a couple of seconds, and your users can access services and applications with minimum disruption.
 
@@ -46,6 +47,4 @@ Related Topics
 
 [Performing Failover](performing_failover_hv.md)
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

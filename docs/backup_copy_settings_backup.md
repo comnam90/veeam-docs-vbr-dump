@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_settings_backup.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 To specify settings for backup files stored in the target backup repository:
 
@@ -33,6 +34,4 @@ By default, the compact operation is disabled. For more information on compact o
 
 ![Maintenance Settings](images/backup_copy_advanced_backup.webp)
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

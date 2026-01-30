@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRViVirtualDiskRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvivirtualdiskrestore.html"
 last_updated: "12/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRViVirtualDiskRestore
 
-In this article
 
 Short Description
 
@@ -94,6 +95,4 @@ Related Commands
 * [Get-VBRViVirtualDevice](get-vbrvivirtualdevice.md)
 * [New-VBRViVirtualDeviceMappingRule](new-vbrvivirtualdevicemappingrule.md)
 
-Page updated 12/5/2024
 
-Page content applies to build 13.0.1.1071

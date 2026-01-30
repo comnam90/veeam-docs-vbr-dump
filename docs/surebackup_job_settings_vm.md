@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Additional Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_settings_vm.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Additional Job Settings
 
-In this article
 
 On the Settings step of the wizard, specify additional settings for the SureBackup job.
 
@@ -44,6 +45,4 @@ Email notifications will be sent only if you configure global email notification
 
 ![Step 7. Specify Additional Job Settings](images/surebackup_job_notification_settings.webp)
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

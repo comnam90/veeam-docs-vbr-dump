@@ -1,5 +1,7 @@
 ---
 title: "Virtual Lab"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_lab.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Lab
 
-In this article
 
 The virtual lab is an isolated virtual environment in which Veeam Backup & Replication verifies VMs. In the virtual lab, Veeam Backup & Replication starts VMs from the application group and the verified VM. The virtual lab is used not only for the SureBackup verification procedure, but also for [U-AIR](https://www.veeam.com/veeam_backup_12_uair_wizard_user_guide_pg.pdf), On-Demand Sandbox and staged restore.
 
@@ -29,6 +30,4 @@ In This Section
 * [Connecting to Existing Virtual Lab](connect_to_vlab.md)
 * [Editing and Deleting Virtual Labs](vlab_edit_delete.md)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

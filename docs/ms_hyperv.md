@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Hyper-V"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ms_hyperv.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Hyper-V
 
-In this article
 
 Veeam Backup & Replication offers various data protection and disaster recovery features for the Microsoft Hyper-V environment.
 
@@ -29,6 +30,4 @@ In This Section
 * [Recovery Verification (Microsoft Hyper-V)](recovery_verification_overview_hv.md)
 * [On-Demand Sandbox](sandbox_hv.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Application Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_group.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Group
 
-In this article
 
 In most cases, a machine works not alone but in cooperation with other services and components. To verify such machine, you first need to start all services and components on which this machine is dependent. To this aim, Veeam Backup & Replication uses the application group.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Creating Application Groups](appgroup_create.md)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

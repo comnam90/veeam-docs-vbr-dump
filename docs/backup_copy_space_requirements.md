@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy Space Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_space_requirements.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy Space Requirements
 
-In this article
 
 If the target backup repository is insufficiently provisioned, or the retention policy is configured to cause the job to retain more points than the target backup repository can contain, enforcement of retention points can fail. This can lead to the repository having not enough free space and restore points being unrestorable.
 
@@ -36,6 +37,4 @@ Depending on your retention policy, the target backup repository should have the
 * For short-term retention policy: [1.25 TB full backup] + [1.25 TB merge] + [2.38 TB incremental points] = 4.88 TB.
 * For long-term retention policy (GFS): [1.25 TB full backup] + [5.0 TB GFS points] + [1.25 TB merge] + [2.38 TB incremental points] = 9.88TB.
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

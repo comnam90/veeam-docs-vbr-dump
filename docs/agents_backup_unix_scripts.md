@@ -1,5 +1,7 @@
 ---
 title: "Backup Job Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_unix_scripts.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job Scripts
 
-In this article
 
 You can instruct Veeam Agent for Unix to run custom scripts within the backup job session.
 
@@ -36,6 +37,4 @@ If you use Veeam Backup & Replication on Windows, you can place the script files
 * Script settings are enabled at the backup job level. If you want to configure multiple backup jobs, you can specify individual scripts for each job.
 * If you use relative paths in your scripts, during script execution such paths will refer to the root directory. For example, the script may have an output that must be saved to a new file. If you specify a relative path to that file or only a file name, the file will be created in the root directory. To specify a different location for a file, use a full absolute path.
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

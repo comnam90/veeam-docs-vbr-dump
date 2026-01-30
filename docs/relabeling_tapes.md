@@ -1,5 +1,7 @@
 ---
 title: "Relabeling Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/relabeling_tapes.html"
 last_updated: "8/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Relabeling Tapes
 
-In this article
 
 To change a barcode label on a tape, you must correctly perform tape relabeling. To do that:
 
@@ -26,6 +27,4 @@ After the library rescan, the tape becomes offline. That is indicated by a black
 
 1. [Optionally] If you need data written to the inserted tape, catalog the appeared tape.
 
-Page updated 8/25/2023
 
-Page content applies to build 13.0.1.1071

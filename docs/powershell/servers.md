@@ -1,5 +1,7 @@
 ---
 title: "Virtualization Servers and Hosts"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/servers.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtualization Servers and Hosts
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -41,6 +42,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Uninstall-VBRServerComponent](uninstall-vbrservercomponent.md) | Removes a backup infrastructure component from the backup infrastructure. |
 | [Get-VBRLinuxPackage](get-vbrlinuxpackage.md) | Returns information about Linux components installed on the backup server. |
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup to Tape Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_backup_to_tape_jobs.html"
 last_updated: "7/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup to Tape Jobs
 
-In this article
 
 Before you create a backup to tape job, [check the prerequisites](tape_before_you_begin.md).
 
@@ -25,6 +26,4 @@ To create a backup to tape job, follow the next steps:
 8. [Define the job schedule](backup_to_tape_schedule.md).
 9. [Finish working with the wizard](backup_to_tape_review.md).
 
-Page updated 7/18/2025
 
-Page content applies to build 13.0.1.1071

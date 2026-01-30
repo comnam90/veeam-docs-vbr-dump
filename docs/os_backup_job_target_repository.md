@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Backup Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_target_repository.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Backup Repository Settings
 
-In this article
 
 At the Backup Repository step of the wizard, define the primary backup repository, where the object storage backup job must store objects, and settings for moving objects to this repository. To learn what storage types you can assign the role of the backup repository to, see [Storage Repositories](unstructured_data_backup_infrastructure.md#backup_repository) in the Backup Infrastructure for Unstructured Data Backup section.
 
@@ -29,6 +30,4 @@ If, for example, Keep all versions for the last is set to 30 days, the backup re
 
 ![Step 4. Specify Backup Repository Settings](images/os_backup_job_target_repository.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "KMS Certificates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kms_certificates.html"
 last_updated: "5/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # KMS Certificates
 
-In this article
 
 The KMS server certificate must meet the following requirements:
 
@@ -17,6 +18,4 @@ The KMS server certificate must meet the following requirements:
 
 The client certificate issued by the KMS administrator for Veeam Backup & Replication must be exportable.
 
-Page updated 5/21/2024
 
-Page content applies to build 13.0.1.1071

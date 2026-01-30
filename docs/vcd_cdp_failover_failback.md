@@ -1,5 +1,7 @@
 ---
 title: "Failover and Failback for Cloud Director CDP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover_failback.html"
 last_updated: "8/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover and Failback for Cloud Director CDP
 
-In this article
 
 Failover and failback are operations that allow you to manage your production and disaster recovery (DR) sites if a disaster strikes. Failover is a process of switching from the vApp on the source organization VDC to its replica on a target organization VDC that is set up as the disaster recovery (DR) site. Failback is a process of returning from the replica to the source vApp or a new vApp.
 
@@ -47,6 +48,4 @@ Related Topics
 * [Failback Undo](vcd_cdp_failback_undo.md)
 * [Failback Commit](vcd_cdp_failback_commit.md)
 
-Page updated 8/18/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring Configuration Database on Windows-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_restore.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Configuration Database on Windows-Based Backup Server
 
-In this article
 
 Restore of the configuration database is helpful in the following situations:
 
@@ -38,6 +39,4 @@ Before you start the restore process, [check prerequisites](restore_vbr_before_y
 11. [Synchronize backups and tape libraries](restore_vbr_rescan.md).
 12. [Finish working with the wizard](vbr_config_summary.md).
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

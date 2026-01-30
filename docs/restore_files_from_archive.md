@@ -1,5 +1,7 @@
 ---
 title: "Restoring Backup Files from Archive Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_archive.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Backup Files from Archive Repository
 
-In this article
 
 You can restore any file or folder from the archive repository to the state of any file version stored in the archive. Depending on the circumstances, such a restore can require different actions.
 
@@ -34,6 +35,4 @@ To restore files from the archive repository, for example, from an object storag
 
 1. Restore files from the archive backup as described in section [Restoring Specific Files and Folders](file_share_recovery_restore_files_folders.md).
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

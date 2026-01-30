@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select VM Replicas to Fail Back"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_replica_vm.html"
 last_updated: "1/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select VM Replicas to Fail Back
 
-In this article
 
 At the Replica step of the wizard, select replicas from which you want to fail back.
 
@@ -15,6 +16,4 @@ To update the list of replicas that are ready for failback (replicas in the Fail
 
 ![Step 2. Select VM Replicas to Fail Back](images/failback_2.webp)
 
-Page updated 1/27/2025
 
-Page content applies to build 13.0.1.1071

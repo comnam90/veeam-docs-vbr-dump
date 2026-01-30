@@ -1,5 +1,7 @@
 ---
 title: "Add-VSBVirtualLab (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vsbvirtuallab.html"
 last_updated: "3/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VSBVirtualLab (obsolete)
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Related Commands
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 * [Get-VBRViVirtualSwitch](get-vbrvivirtualswitch.md)
 
-Page updated 3/11/2024
 
-Page content applies to build 13.0.1.1071

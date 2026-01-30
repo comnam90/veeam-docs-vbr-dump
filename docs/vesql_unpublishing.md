@@ -1,5 +1,7 @@
 ---
 title: "Unpublishing Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_unpublishing.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unpublishing Databases
 
-In this article
 
 Once you have finished working with published SQL databases, you may want to unpublish (detach) these databases from the target SQL server.
 
@@ -28,6 +29,4 @@ To detach more than one published database simultaneously, right-click the root 
 
 [![Unpublishing Databases](images/unpublish.webp)](images/unpublish.webp "Unpublishing Databases")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

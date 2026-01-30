@@ -1,5 +1,7 @@
 ---
 title: "Failover Cluster Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_cluster_support.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover Cluster Support
 
-In this article
 
 You can use Veeam Agent for Microsoft Windows operating in the managed mode (within the Veeam Agent management scenario) to protect data processed by a failover cluster. Veeam Agent supports Windows Server Failover Clusters running on any of the supported Microsoft Windows Server OS versions. To learn the full list of versions, see [System Requirements](agents_system_requirements.md#OSes).
 
@@ -50,6 +51,4 @@ In This Section
 * [Backup of Database Availability Groups](agents_dag_hiw.md)
 * [Backup of Always On Availability Groups](agents_cluster_always_on_hiw.md)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

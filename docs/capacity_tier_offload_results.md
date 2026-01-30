@@ -1,5 +1,7 @@
 ---
 title: "Viewing Offload Session Results"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_offload_results.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Offload Session Results
 
-In this article
 
 To review offload session results, do the following:
 
@@ -43,6 +44,4 @@ Related Topics
 * [Viewing Copy Session Results](capacity_tier_copy_results.md)
 * [Viewing Download Session Results](capacity_tier_download_results.md)
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_options_channels.html"
 last_updated: "6/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Restore Options
 
-In this article
 
 At this step of the wizard, specify data restore options and start the restore operation:
 
@@ -29,6 +30,4 @@ For private and shared team channels:
 
 [![Specify Restore Options](images/vet_restore_options_private_shared_channels.webp)](images/vet_restore_options_private_shared_channels.webp "Specify Restore Options")
 
-Page updated 6/27/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackupFLRSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackupflrsession.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackupFLRSession
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command gets all restore sessions that are started to recover backups creat
 | --- |
 | Get-VBRUnstructuredBackupFLRSession |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

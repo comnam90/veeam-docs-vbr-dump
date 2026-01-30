@@ -1,5 +1,7 @@
 ---
 title: "Configuring Performance Throttling"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_performance_throttling_rman.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Performance Throttling
 
-In this article
 
 You can limit computer processing (CPU) resources assigned for Veeam Plug-In backup jobs. This setting allows you to reduce the impact of backup operations on the target computer performance. Performance throttling prevents Veeam Plug-Ins from utilizing all computer resources to ensure that enough resources are provided for other operations. This maybe useful in case you detected that your source database responses are slower during backup operations.
 
@@ -46,6 +47,4 @@ To throttle Veeam Plug-In performance, do the following:
 | --- |
 | All backup activities will be throttled if the system is busy. Backup performance may be affected. Proceed? (y/N): y |
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCloudTapeBackupTenantJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudtapebackuptenantjob.html"
 last_updated: "1/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCloudTapeBackupTenantJob
 
-In this article
 
 Short Description
 
@@ -99,6 +100,4 @@ Examples
 | --- | --- |
 | This command gets a tenant job by the tenant repository ID.  |  | | --- | | Get-VBRCloudTapeBackupTenantJob -TenantRepositoryId "729c82d6-54d5-4eb6-b0f2-9d85bcff1b9b" | |
 
-Page updated 1/26/2024
 
-Page content applies to build 13.0.1.1071

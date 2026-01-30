@@ -1,5 +1,7 @@
 ---
 title: "Backup & Replication Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_console.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup & Replication Console
 
-In this article
 
 The Veeam Backup & Replication console is a client-side component that provides access to the backup server. The console allows you to log in to Veeam Backup & Replication and perform all kinds of data protection and disaster recovery operations on the backup server.
 
@@ -90,6 +91,4 @@ Related Topics
 * [Installing Veeam Backup & Replication Console](install_console.md)
 * [Logging in to Veeam Backup & Replication](logon_to_console.md)
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

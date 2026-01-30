@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRvCloudInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvcloudinstantrecovery.html"
 last_updated: "12/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRvCloudInstantRecovery
 
-In this article
 
 Short Description
 
@@ -88,6 +89,4 @@ Related Commands
 * [Find-VBRvCloudEntity](find-vbrvcloudentity.md)
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 
-Page updated 12/6/2024
 
-Page content applies to build 13.0.1.1071

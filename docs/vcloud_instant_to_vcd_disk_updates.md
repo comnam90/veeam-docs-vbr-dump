@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Destination for Virtual Disk Updates"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_disk_updates.html"
 last_updated: "5/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Destination for Virtual Disk Updates
 
-In this article
 
 The Datastore step of the wizard is available if you have chosen to change the location and settings of the restored VM.
 
@@ -20,6 +21,4 @@ To select a datastore:
 
 ![Step 6. Select Destination for Virtual Disk Updates](images/vcloud_instant_recovery_redo.webp)
 
-Page updated 5/26/2023
 
-Page content applies to build 13.0.1.1071

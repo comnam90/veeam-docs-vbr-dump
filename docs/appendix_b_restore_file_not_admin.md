@@ -1,5 +1,7 @@
 ---
 title: "Restoring Files from Backup Without Administrator Privileges"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_b_restore_file_not_admin.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Files from Backup Without Administrator Privileges
 
-In this article
 
 If you have Veeam Agent for Microsoft Windows installed on your computer and you work on this computer under an account that does not have Administrator privileges, you can still restore files from the file-level backup.
 
@@ -44,6 +45,4 @@ To get the access rights you need, you can switch to another system user with th
 
 [![Restore File to Original Location](images/howto_flr_not_admin_browse.webp)](images/howto_flr_not_admin_browse.webp "Restore File to Original Location")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_finish.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, complete the procedure of VM copy job configuration.
 
@@ -17,6 +18,4 @@ At the Summary step of the wizard, complete the procedure of VM copy job configu
 
 ![Step 8. Finish Working with Wizard](images/vm_copy_job_summary.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

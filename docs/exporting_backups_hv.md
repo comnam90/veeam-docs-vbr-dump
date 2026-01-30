@@ -1,5 +1,7 @@
 ---
 title: "Exporting Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/exporting_backups_hv.html"
 last_updated: "12/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Backups
 
-In this article
 
 Exporting backups allows you to synthesize a complete and independent full backup file out of selected restore points that are located in your backup repositories. You can transform any incremental or reverse-incremental backup chain (that is, all dependent .VBK, .VIB or .VRB files) into a full backup file and specify new retention policy settings for it. This option can be useful for legal hold and archiving purposes in case you want to prevent specific restore points from being deleted according to the retention policy of the primary backup job. It also allows you to provide a specific restore point on removable media.
 
@@ -57,6 +58,4 @@ In This Section
 * [Performing Export](performing_full_export_hv.md)
 * [Viewing Session Statistics](export_statistic_hv.md)
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

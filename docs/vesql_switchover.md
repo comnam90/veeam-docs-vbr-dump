@@ -1,5 +1,7 @@
 ---
 title: "Switchover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_switchover.html"
 last_updated: "1/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switchover
 
-In this article
 
 The switchover option becomes available after all the database files are copied to the target server and all database files are synchronized. During switchover, the published mount is detached from the target SQL Server instance and the copied database is attached to this instance. Note that if you have selected to restore to the original server, the restored database will replace the original database.
 
@@ -51,6 +52,4 @@ After synchronization is finished, you can launch switchover manually. For detai
 
 If you launch switchover during the synchronization process, switchover starts only after the synchronization is finished.
 
-Page updated 1/8/2024
 
-Page content applies to build 13.0.1.1071

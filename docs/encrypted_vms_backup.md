@@ -1,5 +1,7 @@
 ---
 title: "Encrypted VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypted_vms_backup.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Encrypted VMs
 
-In this article
 
 |  |
 | --- |
@@ -97,6 +98,4 @@ To fail back VMware encrypted VMs replicas, the backup infrastructure must meet 
 
 If you fail back an encrypted VM replica to the specified location, ensure that the target datastore is under the VM Encryption Policy node.
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

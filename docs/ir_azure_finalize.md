@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Finalizing Instant Recovery to Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_finalize.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Finalizing Instant Recovery to Microsoft Azure
 
-In this article
 
 After the workloads have been successfully recovered, you must finalize the process. For this, test the workloads recovered as Microsoft Azure VMs and decide whether to migrate them to the production environment or stop publishing.
 
@@ -65,6 +66,4 @@ To remove a recovered VM:
 
 [![Step 11. Finalizing Instant Recovery to Microsoft Azure](images/ir_azure_stop.webp)](images/ir_azure_stop.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

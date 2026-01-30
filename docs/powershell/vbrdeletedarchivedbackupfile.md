@@ -1,5 +1,7 @@
 ---
 title: "VBRDeletedArchivedBackupFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrdeletedarchivedbackupfile.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRDeletedArchivedBackupFile
 
-In this article
 
 This object contains an array of backup files deleted from the archive tier and covered by insider protection.
 
@@ -21,6 +22,4 @@ Related Commands
 
 [Get-VBRDeletedArchivedBackupFile](get-vbrdeletedarchivedbackupfile.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

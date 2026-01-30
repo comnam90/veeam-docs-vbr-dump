@@ -1,5 +1,7 @@
 ---
 title: "Saving Posts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_saving_posts.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Saving Posts
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to save posts published in a team channel as Microsoft Exchange Mail Document (.msg) files. You can save all posts of a channel or specific posts. Veeam Explorer for Microsoft Teams saves each post to a separate .msg file in the specified location.
 
@@ -48,6 +49,4 @@ To save a specific post published in a team channel, do the following:
 
 [![Saving Posts](images/post_save.webp)](images/post_save.webp "Saving Posts")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

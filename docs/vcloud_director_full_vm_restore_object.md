@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select VMs to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_object.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select VMs to Restore
 
-In this article
 
 At the Objects to Restore step of the wizard, select one or several VMs to restore.
 
@@ -28,6 +29,4 @@ To remove a VM from the list, select it and click Remove on the right.
 
 ![Step 2. Select VMs to Restore](images/vcloud_restore_full_vm.webp)
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

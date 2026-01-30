@@ -1,5 +1,7 @@
 ---
 title: "Get-VNXVolume"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vnxvolume.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VNXVolume
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 [Get-VNXHost](get-vnxhost.md)
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

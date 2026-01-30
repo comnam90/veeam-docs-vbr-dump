@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure SMB3 Shares"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_configure.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure SMB3 Shares
 
-In this article
 
 After you have added a Microsoft SMB3 server, you can configure the following settings for shared folders hosted on this server:
 
@@ -62,6 +63,4 @@ To specify shared folder settings:
 
 ![Step 7. Configure SMB3 Shares](images/add_server_smb_snapshot.webp)
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

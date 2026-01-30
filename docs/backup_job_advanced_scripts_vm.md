@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_scripts_vm.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 To specify script settings for the backup job:
 
@@ -27,6 +28,4 @@ You can select to execute pre- and post-backup actions after a number of backup 
 
 ![Script Settings](images/vm_backup_job_settings_adv.webp)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

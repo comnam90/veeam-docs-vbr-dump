@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Define Inventory Scope"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_new_role_inventory_scope.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Define Inventory Scope
 
-In this article
 
 At the Inventory Scope step of the wizard, specify which workloads are available to this role:
 
@@ -25,6 +26,4 @@ You can grant access to the following workloads:
 
 ![Step 3. Define Inventory Scope](images/add_new_role_inventory_scope.webp)
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

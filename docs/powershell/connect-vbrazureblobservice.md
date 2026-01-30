@@ -1,5 +1,7 @@
 ---
 title: "Connect-VBRAzureBlobService"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vbrazureblobservice.html"
 last_updated: "5/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Connect-VBRAzureBlobService
 
-In this article
 
 Short Description
 
@@ -94,6 +95,4 @@ Related Commands
 * [Get-VBRAzureBlobAccount](get-vbrazureblobaccount.md)
 * [Get-VBRServer](get-vbrserver.md)
 
-Page updated 5/3/2024
 
-Page content applies to build 13.0.1.1071

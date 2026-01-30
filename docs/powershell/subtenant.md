@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Subtenants"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/subtenant.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Subtenants
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with cloud subtenants accounts:
 
@@ -23,6 +24,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Disable-VBRCloudSubTenant](disable-vbrcloudsubtenant.md) | Disables cloud subtenant accounts |
 | [Enable-VBRCloudSubTenant](enable-vbrcloudsubtenant.md) | Enables disabled cloud subtenant accounts |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRFailoverPlanObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrfailoverplanobject.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRFailoverPlanObject
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This example shows how to set a new boot delay value for the server that was earlier assigned to the $MSExchange01 variable.  |  | | --- | | $MSExchange01 = Find-VBRViEntity -Name "MSExchange01" | New-VBRFailoverPlanObject -BootDelay 0  $MSExchange01 = Set-VBRFailoverPlanObject -Object $MSExchange01 -BootDelay 120 |  Perform the following steps:   1. Run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. Specify the Name parameter value. Pipe the cmdlet output to the [New-VBRFailoverPlanObject](new-vbrfailoverplanobject.md) cmdlet. Specify the BootDelay parameter value. Save the result to the $MSExchange01 variable to be used with other cmdlets. 2. Run the Set-VBRFailoverPlanObject cmdlet. Set the $MSExchange01 variable as the Object parameter value. Specify the BootDelay parameter values. Save the result to the $MSExchange01 variable to be used with other cmdlets. |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

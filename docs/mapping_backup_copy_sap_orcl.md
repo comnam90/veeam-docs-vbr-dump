@@ -1,5 +1,7 @@
 ---
 title: "Converting Backup Copy to Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy_sap_orcl.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Converting Backup Copy to Backup
 
-In this article
 
 If you have imported backup copy files created by a [backup copy job](backup_copy_main_sap_oracle.md) from another repository, you can convert them into regular backup files. When you convert backup copy files to regular backup files, Veeam Plug-In creates a backup job and attaches the converted backup files to it. You can use this backup job to continue the backup chain and use converted backup files as a restore point.
 
@@ -35,6 +36,4 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 | Important |
 | [For servers with the customServerName option] To avoid failure of conversion of backup copies, the server name must be the same as the name used in the backup copy. |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

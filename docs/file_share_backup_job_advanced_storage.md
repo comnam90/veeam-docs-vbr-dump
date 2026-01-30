@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_storage.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 To specify advanced storage settings for the file backup job:
 
@@ -30,6 +31,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 ![Storage Settings](images/file_share_backup_job_advanced_storage.webp "Storage Settigs")
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

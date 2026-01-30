@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCatalystCopyJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcatalystcopyjob.html"
 last_updated: "4/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCatalystCopyJob
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command returns the cc20878e-614a-4e28-b00b-d2434bae15d7 backup copy job for an HPE StoreOnce repository.  |  | | --- | | Get-VBRCatalystCopyJob -Id "cc20878e-614a-4e28-b00b-d2434bae15d7" | |
 
-Page updated 4/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Exporting Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/exporting_disks.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Disks
 
-In this article
 
 You can export disks of different workloads from backups and convert disks to the VMDK, VHD or VHDX format. For the list of backups that you can use for export, see [Supported Backup Types](disk_export.md).
 
@@ -22,6 +23,4 @@ To export disks, use the Export Disk wizard.
 7. [Specify export reason](disk_export_reason.md).
 8. [Finish working with the wizard](disk_export_complete.md).
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

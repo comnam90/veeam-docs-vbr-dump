@@ -1,5 +1,7 @@
 ---
 title: "Nutanix AHV"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nutanix_ahv.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Nutanix AHV
 
-In this article
 
 Veeam Backup & Replication with Veeam Plug-In for Nutanix AHV is a solution developed for data protection and disaster recovery tasks for the Nutanix AHV environment. You can use Veeam Backup & Replication with the installed plug-in to perform the following operations:
 
@@ -33,6 +34,4 @@ Veeam Backup & Replication with Veeam Plug-In for Nutanix AHV is a solution deve
 
 For more information, see the [Veeam Plug-In for Nutanix AHV User Guide](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9).
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

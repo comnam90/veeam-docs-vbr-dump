@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Exclude Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_exclusions.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Exclude Objects
 
-In this article
 
 After you have added vApps or VM containers to the replication job, at the vApps step of the wizard you can specify which objects you want to exclude from the replication job.
 
@@ -45,6 +46,4 @@ To exclude disks:
 
 ![Step 4. Exclude Objects](images/vcd_exclude_disks.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

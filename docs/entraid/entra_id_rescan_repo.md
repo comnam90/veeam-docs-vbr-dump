@@ -1,5 +1,7 @@
 ---
 title: "Rescanning Microsoft Entra ID Repository"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_rescan_repo.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning Microsoft Entra ID Repository
 
-In this article
 
 Backup repository rescan can be required in the following cases:
 
@@ -30,6 +31,4 @@ To rescan the Microsoft Entra ID backup repository:
 
 [![Rescanning Microsoft Entra ID Repository](images/entra_id_rescan_repo.webp)](images/entra_id_rescan_repo.webp)
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

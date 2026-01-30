@@ -1,5 +1,7 @@
 ---
 title: "Local Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_linux_drive.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Local Storage Settings
 
-In this article
 
 At the Local Storage step of the wizard, specify local storage settings:
 
@@ -28,6 +29,4 @@ Keep in mind that to use the GFS retention policy, you must set Veeam Agent to c
 
 ![Local Storage Settings](images/agent_policy_local_linux.webp)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

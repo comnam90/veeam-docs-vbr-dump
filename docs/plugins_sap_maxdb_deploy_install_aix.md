@@ -1,5 +1,7 @@
 ---
 title: "Installing Plug-In on IBM AIX"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_install_aix.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Plug-In on IBM AIX
 
-In this article
 
 Veeam Plug-In for SAP MaxDB is an additional component of Veeam Backup & Replication. The installation package of the plug-in is included in the Veeam Backup & Replication installation ISO file and available for download from [veeam.com](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 
@@ -44,6 +45,4 @@ Using veeam.com
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Product](plugins_sap_maxdb_deploy_configure.md).
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

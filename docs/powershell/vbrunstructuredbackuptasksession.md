@@ -1,5 +1,7 @@
 ---
 title: "VBRUnstructuredBackupTaskSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrunstructuredbackuptasksession.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRUnstructuredBackupTaskSession
 
-In this article
 
 Contains file share backup task session.
 
@@ -29,6 +30,4 @@ Related Commands
 
 [Get-VBRNASBackupTaskSession](get-vbrnasbackuptasksession.md)
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

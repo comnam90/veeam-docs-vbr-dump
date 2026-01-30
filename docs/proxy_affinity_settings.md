@@ -1,5 +1,7 @@
 ---
 title: "Specifying Proxy Affinity Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/proxy_affinity_settings.html"
 last_updated: "2/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Proxy Affinity Settings
 
-In this article
 
 For every backup repository, you can configure proxy affinity settings — define a list of backup proxies that can work with this backup repository. Proxy affinity binds backup proxies to specific backup repositories. When transporting data to/from the backup repository, Veeam Backup & Replication tries to pick a VMware backup proxy from the proxy affinity list whenever it is possible.
 
@@ -24,6 +25,4 @@ Related Topics
 
 [Proxy Affinity](proxy_affinity.md)
 
-Page updated 2/22/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudVLANConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudvlanconfiguration.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudVLANConfiguration
 
-In this article
 
 Contains range of VLANs reserved for Veeam Backup & Replication.
 
@@ -46,6 +47,4 @@ Properties
 | LastVLANWithoutInternet | int32 | The last VLAN ID in the range of VLANs used for providing networks without internet access to VM replicas on the cloud host. |
 | Id | GUID | VLAN ID. |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

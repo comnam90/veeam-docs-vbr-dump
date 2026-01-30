@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRViVirtualDeviceMappingRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvivirtualdevicemappingrule.html"
 last_updated: "10/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRViVirtualDeviceMappingRule
 
-In this article
 
 Short Description
 
@@ -85,6 +86,4 @@ Related Commands
 * [Find-VBRViDatastore](find-vbrvidatastore.md)
 * [New-VBRViVirtualDeviceMappingRule](new-vbrvivirtualdevicemappingrule.md)
 
-Page updated 10/4/2024
 
-Page content applies to build 13.0.1.1071

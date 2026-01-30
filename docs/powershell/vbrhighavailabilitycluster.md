@@ -1,5 +1,7 @@
 ---
 title: "VBRHighAvailabilityCluster"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrhighavailabilitycluster.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRHighAvailabilityCluster
 
-In this article
 
 Contains information on the high availability cluster.
 
@@ -30,6 +31,4 @@ Related Commands
 * [Add-VBRHighAvailabilityCluster](add-vbrhighavailabilitycluster.md)
 * [Get-VBRHighAvailabilityCluster](get-vbrhighavailabilitycluster.md)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

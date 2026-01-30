@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Export Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_export_specify_export_location.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Export Location
 
-In this article
 
 At this step of the wizard, specify the path to the directory where you want to export database files and click Export.
 
@@ -22,6 +23,4 @@ Select the Enable compression check box to compress the contents of the exported
 
 [![Specifying Database Files Location](images/vep_export_specify_export_location.webp)](images/vep_export_specify_export_location.webp "Specifying Database Files Location")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

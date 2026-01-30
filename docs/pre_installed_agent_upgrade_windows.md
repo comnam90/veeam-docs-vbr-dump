@@ -1,5 +1,7 @@
 ---
 title: "Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_installed_agent_upgrade_windows.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Windows Computers
 
-In this article
 
 To update pre-installed Veeam Agent on a Microsoft Windows computer, perform the following operations:
 
@@ -23,6 +24,4 @@ To update pre-installed Veeam Agent on a Microsoft Windows computer, perform the
 | --- |
 | "C:\Program Files\Veeam\Endpoint Backup\Veeam.Agent.Configurator.exe" -syncnow |
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

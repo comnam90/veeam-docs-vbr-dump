@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Proxy VM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_proxy_vm.html"
 last_updated: "10/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Proxy VM
 
-In this article
 
 The Proxy VM step will appear if all of the following conditions are met:
 
@@ -22,6 +23,4 @@ To select a VM from the virtual infrastructure:
 
 ![Step 3. Select Proxy VM](images/add_vmware_proxy_proxy_vm.webp)
 
-Page updated 10/27/2025
 
-Page content applies to build 13.0.1.1071

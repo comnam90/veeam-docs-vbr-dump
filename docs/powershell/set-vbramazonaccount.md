@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAmazonAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazonaccount.html"
 last_updated: "1/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAmazonAccount
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Related Commands
 
 [Get-VBRAmazonAccount](get-vbramazonaccount.md)
 
-Page updated 1/30/2024
 
-Page content applies to build 13.0.1.1071

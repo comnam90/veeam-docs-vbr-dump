@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch I/O Filter Management Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_launch.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch I/O Filter Management Wizard
 
-In this article
 
 To launch the VeeamCDP Filter Management wizard, do one of the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can install the I/O filter on an individual cluster. To do th
 
 [![Launch wizard](images/cdp_io_filter_launch.webp)](images/cdp_io_filter_launch.webp "Launch wizard")
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

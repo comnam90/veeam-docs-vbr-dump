@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Define Job Schedule"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_job_schedule.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Define Job Schedule
 
-In this article
 
 At the Schedule step of the wizard, you can instruct Veeam Backup for Microsoft Entra ID to run the backup job automatically according to a specific backup schedule — to do that, select the Run the job automatically check box. The backup schedule defines how often data of the tenant added to the backup job will be backed up.
 
@@ -53,6 +54,4 @@ To do that, select the Terminate the job outside of the allowed backup window ch
 
 ![Step 5. Define Job Schedule](images/entra_id_job_schedule.webp "Configure Job Schedule")
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

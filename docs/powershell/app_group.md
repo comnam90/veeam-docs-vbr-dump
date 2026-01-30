@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Application Groups"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/app_group.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Application Groups
 
-In this article
 
 |  |
 | --- |
@@ -31,6 +32,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [New-VBRApplicationGroupStartupOptions](new-vbrapplicationgroupstartupoptions_surebackup.md) | Creates VM startup settings for staged restore. |
 | [Set-VBRApplicationGroupStartupOptions](set-vbrapplicationgroupstartupoptions_surebackup.md) | Modifies VM startup settings for staged restore. |
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

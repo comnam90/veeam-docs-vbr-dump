@@ -1,5 +1,7 @@
 ---
 title: "Disabling and Deleting Replication Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disable_delete_replica_job.html"
 last_updated: "1/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disabling and Deleting Replication Jobs
 
-In this article
 
 You can temporary disable scheduled jobs. The disabled job is paused for some period of time and is not run by the specified schedule. You can enable a disabled job at any time. You can also permanently delete a job from Veeam Backup & Replication and from the configuration database.
 
@@ -40,6 +41,4 @@ After you delete the job, the replicas created by this job are displayed under t
 
 [![Disabling and Deleting Replication Jobs](images/delete_replica_job.webp)](images/delete_replica_job.webp)
 
-Page updated 1/23/2025
 
-Page content applies to build 13.0.1.1071

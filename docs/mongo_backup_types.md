@@ -1,5 +1,7 @@
 ---
 title: "Backup Types"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_types.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Types
 
-In this article
 
 Veeam Backup & Replication using the Veeam Agent for Linux functionality creates consistent backups of MongoDB data. Every backup job session produces a new backup file in the target location. Backup files make up a backup chain. The backup chain can contain files of two types: full backups and incremental backups.
 
@@ -26,6 +27,4 @@ To recover data to a specific restore point, you need a chain of backup files: a
 
 To create backups, you must configure a protection group and an application backup policy, then run the backup process. For details about backup of MongoDB data, see [Working with Application Backup Policy](mongo_policy.md).
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

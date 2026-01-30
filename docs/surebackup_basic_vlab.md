@@ -1,5 +1,7 @@
 ---
 title: "Basic Single-Host Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_basic_vlab.html"
 last_updated: "4/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Basic Single-Host Virtual Labs
 
-In this article
 
 The basic single-host virtual lab can be used if all VMs that you want to verify, VMs from the application group and the backup server are connected to the same network.
 
@@ -23,6 +24,4 @@ Veeam Backup & Replication automatically configures all settings for the basic s
 
 ![Basic Single-Host Virtual Labs](images/simple_deployment_vmware.webp)
 
-Page updated 4/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Recovery Catalog Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_pit_specify_recovery_catalog.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Recovery Catalog Options
 
-In this article
 
 This step of the wizard is only available if you have selected the Recover to a specific data backup option at the [Specify Recovery Type](vehana_restore_single_pit_specify_recovery_type.md) step.
 
@@ -20,6 +21,4 @@ To specify the backup prefix of the backup you want to use, use the Backup prefi
 
 [![Specifying Recovery Catalog Options](images/vehana_no_recovery_catalog.webp)](images/vehana_no_recovery_catalog.webp "Specifying Recovery Catalog Options")
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRSOBRObjectStorageBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsobrobjectstoragebackup.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRSOBRObjectStorageBackup
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Examples
 | --- | --- |
 | This command returns all backups stored in archive extents of scale-out backup repositories.  |  | | --- | | Get-VBRSOBRObjectStorageBackup -ArchiveTier | |
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRCredentials"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcredentials.html"
 last_updated: "4/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRCredentials
 
-In this article
 
 Short Description
 
@@ -99,6 +100,4 @@ Related Commands
 
 [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 4/3/2024
 
-Page content applies to build 13.0.1.1071

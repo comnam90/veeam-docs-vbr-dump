@@ -1,5 +1,7 @@
 ---
 title: "VBRSelectedPersonalFolders"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrselectedpersonalfolders.html"
 last_updated: "7/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRSelectedPersonalFolders
 
-In this article
 
 Contains scope of personal data for Agent Backup jobs that back up Microsoft Windows and Mac computers.
 
@@ -36,6 +37,4 @@ Related Commands
 * [New-VBRSelectedPersonalFolders](new-vbrselectedpersonalfolders.md)
 * [Set-VBRSelectedPersonalFolders](set-vbrselectedpersonalfolders.md)
 
-Page updated 7/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Log Shipping Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_log_shipping.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Log Shipping Servers
 
-In this article
 
 For every PostgreSQL VM whose WAL files you want to back up, Veeam Backup & Replication defines how to ship logs to the backup repository. WAL files can be transported in the following ways:
 
@@ -44,6 +45,4 @@ Veeam Backup & Replication assigns log shipping servers per job session. When a 
 
 ![Log Shipping Servers](images/log_shipping_oracle_vm.webp)
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

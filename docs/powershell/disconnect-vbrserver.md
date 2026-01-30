@@ -1,5 +1,7 @@
 ---
 title: "Disconnect-VBRServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disconnect-vbrserver.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disconnect-VBRServer
 
-In this article
 
 Short Description
 
@@ -41,6 +42,4 @@ This command terminates the current connection to a Veeam backup server.
 | --- |
 | Disconnect-VBRServer |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

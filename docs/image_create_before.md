@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/image_create_before.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 You can create a Veeam Recovery Media for a protected computer in Veeam Backup & Replication if the following conditions are met:
 
@@ -30,6 +31,4 @@ Removable Storage Device Scenario (USB, SD Card and Other)
 * The removable storage device must have enough capacity to store the created recovery image. On average, the size of the created recovery image without manually loaded drivers is 500 MB.
 * During the recovery image creation, Veeam Agent for Microsoft Windows formats the removable storage device. If you have important information on the device, create a copy of this data in some other location.
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

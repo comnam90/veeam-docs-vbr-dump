@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRTapeRestoreFiles (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrtaperestorefiles.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRTapeRestoreFiles (obsolete)
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 * [Find-VBRTapeCatalog](find-vbrtapecatalog.md)
 * [Find-VBRTapeCatalogVersion](find-vbrtapecatalogversion.md)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

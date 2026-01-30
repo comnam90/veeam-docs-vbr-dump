@@ -1,5 +1,7 @@
 ---
 title: "New-VBRHvCloudHWPlanDatastore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvcloudhwplandatastore.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRHvCloudHWPlanDatastore
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ This example shows how to create a cloud storage on the "Veeam Cloud Datastore" 
 | --- |
 | $cloudreplicas = New-VBRHvCloudHWPlanDatastore -DatastorePath "D:\Replicas" -FriendlyName "Cloud Replicas" -Quota 500 |
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

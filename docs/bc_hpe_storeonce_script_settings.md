@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/bc_hpe_storeonce_script_settings.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 To specify script settings for the backup copy job:
 
@@ -29,6 +30,4 @@ Then click Browse and select executable files from a local folder on the backup 
 
 ![Script Settings](images/backup_copy_hpe_storeonce_scripts.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

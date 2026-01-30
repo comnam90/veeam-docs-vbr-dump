@@ -14,7 +14,7 @@ The following table lists network ports that must be opened for managing traffic
 
 For more information on the ports used during backup, see the following sections:
 
-* [Ports](used_ports.md#guest_processing_components) — for backups created with Veeam Backup & Replication
+* [Ports](used_ports.md#guest_processing_components) — for backups created with Veeam Backup & Replication.
 * [Ports](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_used_ports.html?ver=8) section of the Veeam Backup for Microsoft 365 User Guide — for backups created with Veeam Backup for Microsoft 365.
 
 | From | To | Protocol | Port | Notes |

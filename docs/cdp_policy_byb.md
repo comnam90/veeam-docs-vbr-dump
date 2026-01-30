@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_byb.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a CDP policy, check the following prerequisites:
 
@@ -17,6 +18,4 @@ Before you create a CDP policy, check the following prerequisites:
 
 * If you plan to protect VMware Cloud Director objects, consider using the dedicated policy. For more information, see [CDP for VMware Cloud Director](vcloud_director_cdp.md).
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

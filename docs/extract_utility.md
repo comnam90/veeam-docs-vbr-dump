@@ -1,5 +1,7 @@
 ---
 title: "Extract Utility"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extract_utility.html"
 last_updated: "2/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Extract Utility
 
-In this article
 
 Veeam Backup & Replication comes with an extract utility that can be used to recover machines from backup files. The extract utility does not require any interaction with Veeam Backup & Replication and can be used as an independent tool on Linux and Microsoft Windows machines.
 
@@ -37,6 +38,4 @@ Related Topics
 * [Using the extract utility in the interactive mode](extract_utility_interactive_mode.md)
 * [Using the extract utility from the command line](extract_utility_console.md)
 
-Page updated 2/20/2025
 
-Page content applies to build 13.0.1.1071

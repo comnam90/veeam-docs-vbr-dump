@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREntraIDLogsBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrentraidlogsbackup.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREntraIDLogsBackup
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ This example shows how to get the Log Backup backup job.
 | --- |
 | $logBackup = Get-VBREntraIDLogsBackup -Name "Log Backup" |
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

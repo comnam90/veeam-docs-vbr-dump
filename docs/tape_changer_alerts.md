@@ -1,5 +1,7 @@
 ---
 title: "Tape Changer Alerts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_changer_alerts.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Changer Alerts
 
-In this article
 
 There are 3 types of error flags:
 
@@ -55,6 +56,4 @@ You may get one of the following tape changer alerts when working with Veeam Bac
 | 31 | 0x1f | Cartridge in pass-through mechanism | Critical | A cartridge has been left in the pass-through mechanism from a previous hardware fault.  Check the library users guide for instructions on clearing this fault. | Cartridge left in the pass-through  mechanism between two library modules. |
 | 32 | 0x20 | Unreadable bar code labels | Information | The library was unable to read the bar code on a cartridge. | Unable to read a barcode label on a cartridge during library inventory/scan. |
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

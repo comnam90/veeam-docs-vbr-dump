@@ -1,5 +1,7 @@
 ---
 title: "How Publishing Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_how_publish_works.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Publishing Works
 
-In this article
 
 Publishing the entire MongoDB instance with Veeam Explorer for MongoDB works in the following manner:
 
@@ -26,6 +27,4 @@ Once the publishing operation is completed, you can restore the collections mana
 
 [![Publishing Instance](images/vemdb_how_publish_works_instance.webp)](images/vemdb_how_publish_works_instance.webp "Publishing Instance")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

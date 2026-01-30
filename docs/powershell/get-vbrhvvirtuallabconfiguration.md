@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRHvVirtualLabConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrhvvirtuallabconfiguration.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRHvVirtualLabConfiguration
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Examples
 | --- | --- |
 | This example shows how to get the virtual lab named SQL Virtual Lab.  |  | | --- | | Get-VBRHvVirtualLabConfiguration -Name "SQL Virtual Lab" | |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

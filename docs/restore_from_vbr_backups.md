@@ -1,5 +1,7 @@
 ---
 title: "Restore from Veeam Backup & Replication Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_from_vbr_backups.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore from Veeam Backup & Replication Backups
 
-In this article
 
 You can restore Microsoft SharePoint data from backups created by Veeam Backup & Replication to the original or another location.
 
@@ -30,6 +31,4 @@ In This Section
 * [Restoring Document Libraries and Lists](vesp_vbr_restore_document_libraries.md)
 * [Restoring Documents and List Items](vesp_vbr_restore_items.md)
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

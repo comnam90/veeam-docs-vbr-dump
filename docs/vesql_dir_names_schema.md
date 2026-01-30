@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Directory Names for File Tables"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_dir_names_schema.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Directory Names for File Tables
 
-In this article
 
 At this step of the wizard, specify directory names for file tables.
 
@@ -25,6 +26,4 @@ To provide a different name under the Directory Name column.
 
 [![Specifying Directory Names for Tables](images/vesql_file_table.webp)](images/vesql_file_table.webp "Specifying Directory Names for Tables")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

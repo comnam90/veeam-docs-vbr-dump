@@ -1,5 +1,7 @@
 ---
 title: "Adding KMS Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kms_add_server.html"
 last_updated: "5/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding KMS Server
 
-In this article
 
 To add a KMS server, do the following:
 
@@ -54,6 +55,4 @@ For more information about requirements that a client certificate must meet, see
 
 ![Adding KMS Server](images/kms_add_server.webp)
 
-Page updated 5/15/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Converting Backup Copy to Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy.html"
 last_updated: "10/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Converting Backup Copy to Backup
 
-In this article
 
 If you have imported Veeam Plug-In backup copies from another server, you can convert them into regular backup files. When you convert a backup copy to a backup, Veeam Plug-In creates a backup job with the converted backup. You can use this backup job to continue a backup chain and use the converted backup as a restore point.
 
@@ -38,6 +39,4 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 | --- |
 | Proceed with the action?  1. Promote backup copy destination to the primary backup target and apply required configuration to RMAN automatically  2. Promote backup copy destination to the primary backup target and export required RMAN configuration (RMAN will have to be configured manually)  3. Cancel  Enter selection: 1  Promoting backup copy destination  Configuring RMAN  Done |
 
-Page updated 10/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Datastores"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failback_datastore.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Datastores
 
-In this article
 
 At the Datastore step of the wizard, specify datastores where you want to store configuration files and disk files of production VMs. Also, you can change disk types.
 
@@ -26,6 +27,4 @@ By default, Veeam Backup & Replication preserves disk types of the source worklo
 
 ![Step 5. Select Datastores](images/uni_cdp_failback_datastore.webp "Select datastore")
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

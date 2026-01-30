@@ -1,5 +1,7 @@
 ---
 title: "VBRAzureNetworkSecurityGroup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazurenetworksecuritygroup.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAzureNetworkSecurityGroup
 
-In this article
 
 Contains Microsoft Azure security groups.
 
@@ -21,6 +22,4 @@ Properties
 
 [Get-VBRAzureNetworkSecurityGroup](get-vbrazurenetworksecuritygroup.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

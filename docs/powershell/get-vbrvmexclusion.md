@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRVMExclusion"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvmexclusion.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRVMExclusion
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ This command returns an exclusion created for the ubuntusrv20 VM.
 | --- |
 | Get-VBRVMExclusion -Name "ubuntusrv20" |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

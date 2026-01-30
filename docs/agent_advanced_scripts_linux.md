@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_advanced_scripts_linux.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 You can specify what scripts Veeam Backup & Replication will execute on the backup server before and after the session of the Veeam Agent backup job managed by the backup server.
 
@@ -34,6 +35,4 @@ You can select to execute pre- and post-backup actions after a number of backup 
 
 ![Script Settings](images/agent_job_settings_scripts_linux.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

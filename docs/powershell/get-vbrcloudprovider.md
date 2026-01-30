@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCloudProvider"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudprovider.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCloudProvider
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Examples
 | --- | --- |
 | This command looks for the cloud service provider with the 104.45.95.227 IP address.  |  | | --- | | Get-VBRCloudProvider -Name "104.45.95.227" | |
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

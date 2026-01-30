@@ -1,5 +1,7 @@
 ---
 title: "Specifying Directories to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_folders_linux.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Directories to Back Up
 
-In this article
 
 The Objects step of the wizard is available if you have chosen to create a file-level backup.
 
@@ -56,6 +57,4 @@ Veeam Agent for Linux will include in the backup all files of the PDF format tha
 
 ![Specifying Directories to Back Up](images/agent_job_files_exclude_linux.webp)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

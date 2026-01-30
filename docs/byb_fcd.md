@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/byb_fcd.html"
 last_updated: "2/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform Instant FCD Recovery, consider the following:
 
@@ -38,6 +39,4 @@ Before you perform Instant FCD Recovery, consider the following:
 
 By default, Veeam Backup & Replication writes virtual disk updates to the IRCache folder on a volume with the maximum amount of free space, for example, C:\ProgramData\Veeam\Backup\IRCache.
 
-Page updated 2/13/2024
 
-Page content applies to build 13.0.1.1071

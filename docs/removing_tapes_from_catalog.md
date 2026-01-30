@@ -1,5 +1,7 @@
 ---
 title: "Removing Tapes from Catalog"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_tapes_from_catalog.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Tapes from Catalog
 
-In this article
 
 If you do not want to store information about a tape and contents on this tape in Veeam Backup & Replication database, you can remove the tape from the catalog. For example, you can perform removal from catalog if a physical tape no longer exists, and the tape should no longer be displayed among media in the Veeam Backup & Replication console.
 
@@ -27,6 +28,4 @@ To remove one or more tapes from the catalog:
 
 [![Removing Tapes from Catalog](images/remove_from_catalog.webp)](images/remove_from_catalog.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

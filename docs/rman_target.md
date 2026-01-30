@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Target Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_target.html"
 last_updated: "9/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Target Server
 
-In this article
 
 At this step of the wizard, specify connection settings required to access the target Oracle server. The set of connection settings depends on the OS type of the target server: Windows or Linux.
 
@@ -53,6 +54,4 @@ To select a key, click Browse and select a key.
 
 [![Specifying Target Linux Server Credentials](images/restore_wizard_linux_srv_target.webp)](images/restore_wizard_linux_srv_target.webp "Specifying Target Linux Server Credentials")
 
-Page updated 9/26/2025
 
-Page content applies to build 13.0.1.1071

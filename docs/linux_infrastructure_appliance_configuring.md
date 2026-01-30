@@ -1,5 +1,7 @@
 ---
 title: "Configuring Veeam Infrastructure Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_configuring.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Veeam Infrastructure Appliance
 
-In this article
 
 The Host Management console is used to configure Veeam Infrastructure Appliance. For more information, see [Configuring Veeam Appliances](hmc.md).
 
@@ -34,6 +35,4 @@ To do this, do one of the following:
 2. Press [Delete] to delete the previous connection.
 3. Press [F1] to generate a pairing code.
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

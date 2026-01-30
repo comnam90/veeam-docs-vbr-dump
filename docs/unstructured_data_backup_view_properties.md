@@ -1,5 +1,7 @@
 ---
 title: "Viewing Unstructured Data Backup Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_view_properties.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Unstructured Data Backup Properties
 
-In this article
 
 You can view summary information about the unstructured data backup. The summary information provides the following data:
 
@@ -29,6 +30,4 @@ To view summary information for backups:
 
 ![Viewing Unstructured Data Backup Properties](images/nas_backup_properties.webp)
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

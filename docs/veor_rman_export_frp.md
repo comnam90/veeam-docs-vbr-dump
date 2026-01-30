@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Fine-Tune Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_export_frp.html"
 last_updated: "11/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Fine-Tune Restore Point
 
-In this article
 
 At this step of the wizard, select an operation prior to which you want to export data and click Export.
 
@@ -18,6 +19,4 @@ At this step of the wizard, select an operation prior to which you want to expor
 
 [![Fine-Tuning Restore Point](images/rman_export_pit.webp)](images/rman_export_pit.webp "Fine-Tuning Restore Point")
 
-Page updated 11/26/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Point in Time"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_pit.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Point in Time
 
-In this article
 
 At this step of the wizard, do the following:
 
@@ -33,6 +34,4 @@ This check box is available only when using the Restore with the original name a
 
 [![Specifying Point-in-Time](images/rman_3.webp)](images/rman_3.webp "Specifying Point-in-Time")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

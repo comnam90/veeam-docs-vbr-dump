@@ -1,5 +1,7 @@
 ---
 title: "System Requirements for Unix Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_unix.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements for Unix Computers
 
-In this article
 
 This topic lists system requirements for Veeam Agent computers that run on [IBM AIX](#aix) or [Oracle Solaris](#sol).
 
@@ -37,6 +38,4 @@ A computer that you want to protect with Veeam Agent for Oracle Solaris must mee
 | File System | All file systems supported by the supported operating systems.  Consider the following:   * Total size of all file systems included in a file-level backup must not exceed 216 TiB. * Size of a file in a backup must not exceed 16 TiB. * Name of a file in a backup must not be larger than 254 bytes.   Keep in mind that characters that you can use in the file name may be encoded in 2 bytes or more.   * Sparse files are not supported. Veeam Agent backs up and restores sparse files as regular files. * Backup of clustered systems is not supported. * Veeam Agent supports backup and restore of POSIX and NFSv4 Access Control Lists (ACLs). For more information, see [Backup of ACLs](agents_backup_unix_acl.md). |
 | Software | IMPORTANT! The user account used to work with Veeam Agent for Oracle Solaris installed on the protected computer must have the /bin/bash shell set as the default shell.  For file system indexing, the following utilities are required: tar, mlocate and gzip.   * mlocate (version 0.26-1 or later) – required for file system indexing. If your system does not have the mlocate utility, you can install it from the product installation media. * tar - required for file system indexing, exporting and rotating logs. It is installed with the product. * gzip – required for file system indexing, exporting and rotating logs. It must be installed separately. * xorriso – required for creating Veeam Recovery Media.   Oracle Solaris minimal install (Core System Support Software Group) requires adding the following packages: SUMWtoo, SUNWzoneu and SUNWzoner.  If you use Veeam Backup & Replication on Linux, OpenSSH is required for Veeam Agent installation. On Oracle Solaris 10 1/13 and 11.3, OpenSSH must be installed manually. For more information, see [this Veeam KB article](https://www.veeam.com/kb4735). |
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

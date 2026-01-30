@@ -1,5 +1,7 @@
 ---
 title: "Modifying Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/modifying_media_pools.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Modifying Media Pools
 
-In this article
 
 If necessary, you can modify settings of a media pool.
 
@@ -25,6 +26,4 @@ You can modify only regular or GFS media pools; service media pools cannot be mo
 
 [![Modifying Media Pools](images/edit_media_pool.webp)](images/edit_media_pool.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

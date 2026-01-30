@@ -1,5 +1,7 @@
 ---
 title: "Deleted File Blocks (BitLooker)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dirty_blocks.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleted File Blocks (BitLooker)
 
-In this article
 
 Deleted file block exclusion is a technology that reduces the backup size and time needed to create a backup. As a rule, file systems do not zero out blocks of permanently deleted files; they only remove information about such files from the file allocation table. It means the file content still exists on the disk image and enlarges the backup size. Deleted file block exclusion helps avoid copying this unnecessary data or, in Veeam terms, "dirty" blocks.
 
@@ -39,6 +40,4 @@ Deleted file blocks exclusion has the following limitations:
 * Veeam Backup & Replication can exclude deleted file blocks only on the VM guest OS with Microsoft NTFS.
 * Veeam Backup & Replication supports both basic and dynamic disks. For the dynamic disks, simple type of volumes is supported. Spanned, mirrored and striped volumes are not supported.
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

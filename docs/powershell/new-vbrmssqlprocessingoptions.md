@@ -1,5 +1,7 @@
 ---
 title: "New-VBRMSSQLProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmssqlprocessingoptions.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRMSSQLProcessingOptions
 
-In this article
 
 Short Description
 
@@ -59,6 +60,4 @@ This example shows how to create new Microsoft SQL Server processing options for
 | --- |
 | New-VBRMSSQLProcessingOptions -EnableLogBackup -LogBackupPeriod 10 -EnableCopyOnlyBackup |
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

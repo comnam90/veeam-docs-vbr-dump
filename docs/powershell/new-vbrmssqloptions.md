@@ -1,5 +1,7 @@
 ---
 title: "New-VBRMSSQLOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmssqloptions.html"
 last_updated: "12/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRMSSQLOptions
 
-In this article
 
 Short Description
 
@@ -56,6 +57,4 @@ This example shows how to create Microsoft SQL Server backup settings for applic
 | --- |
 | New-VBRMSSQLOptions -ParallelChannelsCount 4 -LogBackupChannelsCount 2 -EnableCopyOnlyBackup |
 
-Page updated 12/19/2025
 
-Page content applies to build 13.0.1.1071

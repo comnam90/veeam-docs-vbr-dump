@@ -1,5 +1,7 @@
 ---
 title: "VBRNASInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnasinstantrecovery.html"
 last_updated: "9/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNASInstantRecovery
 
-In this article
 
 Contains information about active instant restore sessions for file backups.
 
@@ -35,6 +36,4 @@ Related Commands
 * [Get-VBRNASInstantRecoveryMigration](get-vbrnasinstantrecoverymigration.md)
 * [Start-VBRNASInstantRecoveryMigration](start-vbrnasinstantrecoverymigration.md)
 
-Page updated 9/4/2024
 
-Page content applies to build 13.0.1.1071

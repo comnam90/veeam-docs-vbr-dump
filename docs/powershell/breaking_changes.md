@@ -1,5 +1,7 @@
 ---
 title: "Breaking Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/breaking_changes.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Breaking Changes
 
-In this article
 
 This section contains information on breaking changes in Veeam PowerShell v12. These changes cause Veeam PowerShell v12 to function differently and could affect the client code.
 
@@ -29,6 +30,4 @@ The following cmdlets are deprecated in Veeam PowerShell v12. To perform the nec
 | [Add-VBRHvBackupCopyJob](add-vbrhvbackupcopyjob.md) | Applies only for creating a simple mode backup copy job. For other scenarios, run the [Add-VBRBackupCopyJob](add-vbrbackupcopyjob.md) cmdlet. |
 | [Add-VBRvCloudBackupCopyJob](add-vbrvcloudbackupcopyjob.md) | Applies only for creating a simple mode backup copy job. For other scenarios, run the [Add-VBRBackupCopyJob](add-vbrbackupcopyjob.md) cmdlet. |
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

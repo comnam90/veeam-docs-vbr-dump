@@ -1,5 +1,7 @@
 ---
 title: "Creating Veeam Recovery Media from Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_create_image.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Veeam Recovery Media from Backup
 
-In this article
 
 You can create the Veeam Recovery Media for a Microsoft Windows computer whose Veeam Agent backup resides on a Veeam backup repository or Veeam Cloud Connect repository. For this operation, you can use a backup created by any type of a Veeam Agent backup job: a backup job managed by the backup server or backup job managed by Veeam Agent (backup policy).
 
@@ -22,6 +23,4 @@ To create Veeam Recovery Media:
 
 [![Create Recovery Media](images/agent_backup_media.webp)](images/agent_backup_media.webp "Create Recovery Media")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_data_restore.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 With the configured Veeam Plug-In for Oracle RMAN, you can restore Oracle databases from Veeam Plug-In backups that reside on Veeam backup repositories.
 
@@ -40,6 +41,4 @@ Restore the Oracle database control file if you want to restore the database to 
 
 Restore Oracle databases from hardened repositories by creating new backup job metadata files (.VACM) with data from available backup metadata files (.VASM). For details, see [Restore from Hardened Repository](restore_from_immutable_rman.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRScriptProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrscriptprocessingoptions.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRScriptProcessingOptions
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Related Commands
 
 [New-VBRScriptProcessingOptions](new-vbrscriptprocessingoptions.md)
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

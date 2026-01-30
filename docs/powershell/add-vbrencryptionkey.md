@@ -1,5 +1,7 @@
 ---
 title: "Add-VBREncryptionKey"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrencryptionkey.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBREncryptionKey
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Perform the following steps:
 2. Turn the password into a SecureString by running the [ConvertTo-SecureString](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/convertto-securestring?view=powershell-7.4) command. Provide the AsPlainText and Force parameters.
 3. Run the Add-VBREncryptionKey cmdlet. Set the $securepassword variable as the Password parameter value. Specify the Description parameter value.
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

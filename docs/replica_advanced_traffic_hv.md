@@ -1,5 +1,7 @@
 ---
 title: "Traffic Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_advanced_traffic_hv.html"
 last_updated: "7/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Traffic Settings
 
-In this article
 
 You can optimize data traffic sent over network by specifying which data you want to replicate, data compression level and optimize the job performance and storage usage:
 
@@ -27,6 +28,4 @@ If you want to include dirty data blocks into VM replicas, clear the Exclude del
 
 ![Traffic Settings](images/hv_replica_job_settings_traffic.webp)
 
-Page updated 7/24/2025
 
-Page content applies to build 13.0.1.1071

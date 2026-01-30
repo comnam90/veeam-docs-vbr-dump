@@ -1,5 +1,7 @@
 ---
 title: "VBRLicensedSocketWorkload"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrlicensedsocketworkload.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRLicensedSocketWorkload
 
-In this article
 
 Contains licensed hosts for the per-socket license.
 
@@ -25,6 +26,4 @@ Related Commands
 
 [Get-VBRLicensedSocketWorkload](get-vbrlicensedsocketworkload.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Virtual Disks to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_map.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Virtual Disks to Restore
 
-In this article
 
 At the Disk Mapping step, select virtual disks that you want to restore and choose a VM to which the disks must be attached:
 
@@ -31,6 +32,4 @@ At the Disk Mapping step, select virtual disks that you want to restore and choo
 
 ![Step 5. Select Virtual Disks to Restore](images/instant_disk_recovery_mapping.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

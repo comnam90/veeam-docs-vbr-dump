@@ -1,5 +1,7 @@
 ---
 title: "Integration Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_integration.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Integration Settings
 
-In this article
 
 You can specify storage integration settings for the job managed by backup server.
 
@@ -42,6 +43,4 @@ Keep in mind that Veeam Backup & Replication displays only those backup proxies 
 
 ![Integration Settings](images/agent_job_settings_intergration_proxy.webp "Specify Off-Host Backup Proxy Settings")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Service Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/service_media_pools.html"
 last_updated: "5/30/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Service Media Pools
 
-In this article
 
 Service media pools sort tapes and manage their free capacity for writing data. Service media pools are automatically created by Veeam Backup & Replication when needed. The following predefined media pools can be created:
 
@@ -20,6 +21,4 @@ You cannot create, modify or delete service media pools.
 
 [![Launch New File Share Backup Job Wizard](images/service_media_pools.webp)](images/service_media_pools.webp "Launch New File Share Backup Job Wizard")
 
-Page updated 5/30/2023
 
-Page content applies to build 13.0.1.1071

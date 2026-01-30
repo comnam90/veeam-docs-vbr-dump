@@ -1,5 +1,7 @@
 ---
 title: "VBRNASBackupRestorePoint"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnasbackuprestorepoint.html"
 last_updated: "1/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNASBackupRestorePoint
 
-In this article
 
 Contains settings of restore points created by the file backup jobs.
 
@@ -26,6 +27,4 @@ Related Commands
 
 [Get-VBRNASBackupRestorePoint](get-vbrnasbackuprestorepoint.md)
 
-Page updated 1/17/2024
 
-Page content applies to build 13.0.1.1071

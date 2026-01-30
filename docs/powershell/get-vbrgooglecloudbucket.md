@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRGoogleCloudBucket"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgooglecloudbucket.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRGoogleCloudBucket
 
-In this article
 
 Short Description
 
@@ -74,6 +75,4 @@ Related Commands
 * [Connect-VBRGoogleCloudService](connect-vbrgooglecloudservice.md)
 * [Get-VBRGoogleCloudRegion](get-vbrgooglecloudregion.md)
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VBRAmazonEC2SecurityGroup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbramazonec2securitygroup.html"
 last_updated: "9/13/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAmazonEC2SecurityGroup
 
-In this article
 
 Contains Amazon S3 security group.
 
@@ -19,6 +20,4 @@ Properties
 | VPC | [VBRAmazonEC2VPC](vbramazonec2vpc.md) | Amazon VPC details. |
 | Name | String | Name of Amazon S3 security group. |
 
-Page updated 9/13/2023
 
-Page content applies to build 13.0.1.1071

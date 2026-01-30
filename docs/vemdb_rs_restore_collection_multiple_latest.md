@@ -1,5 +1,7 @@
 ---
 title: "Restoring Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_multiple_latest.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Latest State
 
-In this article
 
 To restore the latest available state of multiple MongoDB collections, use the Restore wizard.
 
@@ -18,6 +19,4 @@ To restore the latest available state of multiple MongoDB collections, use the R
 5. [Select databases](vemdb_rs_restore_collection_multiple_select_databases.md).
 6. [Specify collections](vemdb_rs_restore_collection_multiple_select_collections.md).
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

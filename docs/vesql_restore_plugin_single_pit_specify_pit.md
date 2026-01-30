@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_single_pit_specify_pit.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Point-in-Time State
 
-In this article
 
 At this step of the wizard, specify a point-in-time state to which you want to restore your database. To do this, specify one of the following options:
 
@@ -32,6 +33,4 @@ Before the restore process begins, you will be prompted to enter the source mach
 
 [![Specifying Point in Time](images/vesql_restore_plugin_single_pit_specify_pit.webp)](images/vesql_restore_plugin_single_pit_specify_pit.webp "Specifying Point in Time")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

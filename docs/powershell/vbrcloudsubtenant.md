@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudSubTenant"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudsubtenant.html"
 last_updated: "1/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudSubTenant
 
-In this article
 
 Contains cloud subtenant.
 
@@ -31,6 +32,4 @@ Related Commands
 * [Set-VBRCloudSubTenant](set-vbrcloudsubtenant.md)
 * [Remove-VBRCloudSubTenant](remove-vbrcloudsubtenant.md)
 
-Page updated 1/23/2024
 
-Page content applies to build 13.0.1.1071

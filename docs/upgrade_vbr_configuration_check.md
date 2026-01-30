@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Perform Configuration Check"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_configuration_check.html"
 last_updated: "10/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Perform Configuration Check
 
-In this article
 
 At the Configuration Check step of the wizard, the setup checks the Veeam Backup & Replication configuration.
 
@@ -21,6 +22,4 @@ To copy a list of detected issues with detailed descriptions for further investi
 
 ![Step 6. Perform Configuration Check](images/upgrade_configuration_check.webp)
 
-Page updated 10/30/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Restore Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_mode.html"
 last_updated: "1/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Restore Mode
 
-In this article
 
 At the Restore Mode step of the wizard, choose the necessary restore mode and backup proxy for VM data transport:
 
@@ -30,6 +31,4 @@ During the restore process, VMs are processed simultaneously. Veeam Backup & Rep
 
 ![Step 4. Select Restore Mode](images/vcloud_full_restore_mode.webp)
 
-Page updated 1/27/2025
 
-Page content applies to build 13.0.1.1071

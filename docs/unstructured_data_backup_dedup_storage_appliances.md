@@ -1,5 +1,7 @@
 ---
 title: "Unstructured Data Backups in Deduplicating Storage Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_dedup_storage_appliances.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unstructured Data Backups in Deduplicating Storage Appliances
 
-In this article
 
 When you use a deduplicating storage appliance for storing unstructured data backups, it can store data and metadata. However, storing both data and metadata on the same deduplicating storage appliance is slow due to how deduplication works. To avoid this, we strongly recommend that you configure a scale-out backup repository with performance extents acting as metadata extents. This allows you to store metadata separately from the backup data.
 
@@ -46,6 +47,4 @@ To view the roles of the extents in a scale-out backup repository, do either of 
 * Check the role of each extent (the Role column) in the list of extents under the certain scale-out repository in the Backup Infrastructure view.
 * Run the Get-VBRRepositoryExtent cmdlet, as described in the [Veeam PowerShell Reference](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrrepositoryextent.html?ver=13).
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

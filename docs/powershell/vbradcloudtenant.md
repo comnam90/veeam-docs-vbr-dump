@@ -1,5 +1,7 @@
 ---
 title: "VBRAdCloudTenant"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbradcloudtenant.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAdCloudTenant
 
-In this article
 
 Contains an Active Directory object that defines settings of Active Directory tenant accounts.
 
@@ -55,6 +56,4 @@ Related Commands
 * [Get-VBRCloudTenant](get-vbrcloudtenant.md)
 * [Set-VBRAdCloudTenant](set-vbradcloudtenant.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

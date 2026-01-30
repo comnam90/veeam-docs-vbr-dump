@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRMailNotification"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrmailnotification.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRMailNotification
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command disables global email notification settings.
 | --- |
 | Disable-VBRMailNotification |
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

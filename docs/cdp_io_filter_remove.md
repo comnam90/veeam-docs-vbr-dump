@@ -1,5 +1,7 @@
 ---
 title: "Updating and Uninstalling I/O Filter"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_remove.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating and Uninstalling I/O Filter
 
-In this article
 
 Veeam Backup & Replication allows you to update or uninstall the I/O filter from organization VDCs using the Veeam Backup & Replication console.
 
@@ -50,6 +51,4 @@ As an alternative, you can uninstall the I/O filter from a specific cluster. To 
 
 ![Updating and Uninstalling I/O Filter](images/cdp_upgrade_io_filter.webp)
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

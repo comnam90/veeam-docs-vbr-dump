@@ -1,5 +1,7 @@
 ---
 title: "VBRAmazonS3CompatibleRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbramazons3compatiblerepository.html"
 last_updated: "11/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAmazonS3CompatibleRepository
 
-In this article
 
 Contains settings of S3 compatible object storage repository.
 
@@ -24,6 +25,4 @@ Properties
 | BucketAutoProvisionEnabled | Boolean | Defines if the multiple buckets option for S3 compatible object storage repository is enabled. |
 | MachinesPerBucketLimit | Int32 | Amount of per-machine backup chains per a child bucket. |
 
-Page updated 11/4/2024
 
-Page content applies to build 13.0.1.1071

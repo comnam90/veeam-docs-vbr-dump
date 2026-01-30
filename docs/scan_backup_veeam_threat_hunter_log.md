@@ -1,5 +1,7 @@
 ---
 title: "Viewing Veeam Threat Hunter Scan Results"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/scan_backup_veeam_threat_hunter_log.html"
 last_updated: "7/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Veeam Threat Hunter Scan Results
 
-In this article
 
 Results of the Veeam Threat Hunter scan are available in the Scan Backup session statistics.
 
@@ -22,6 +23,4 @@ To view the detailed log of the scan, click Scan Log. Veeam Backup & Replication
 
 Full logs of the scan are stored on the mount server in the C:\ProgramData\Veeam\Backup\FLRSessions\Windows\FLR\_\_<machinename>\_\Antivirus folder (for Veeam Backup & Replication on Microsoft Windows) or in the /var/log/VeeamBackup/FLRSessions/OtherOS/FLR\_<machinename>/Antivirus/ directory (for Veeam Backup & Replication on Linux).
 
-Page updated 7/10/2025
 
-Page content applies to build 13.0.1.1071

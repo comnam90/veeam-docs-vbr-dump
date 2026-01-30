@@ -1,5 +1,7 @@
 ---
 title: "Hardened Repository as Performance Extent"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_sobr.html"
 last_updated: "8/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Hardened Repository as Performance Extent
 
-In this article
 
 You can add a hardened repository to your scale-out backup repository as a performance extent. For more information, see [Scale-Out Backup Repository](backup_repository_sobr.md) and [Add Performance Extents](sobr_add_extents.md).
 
@@ -34,6 +35,4 @@ When you evacuate backups to the hardened Linux extent, the immutability period 
 * The immutability period determined for the original chain.
 * The time of creation of the last restore point in the chain plus the immutability period determined for the target extent.
 
-Page updated 8/1/2024
 
-Page content applies to build 13.0.1.1071

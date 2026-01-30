@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Destination Network"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_network.html"
 last_updated: "5/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Destination Network
 
-In this article
 
 The vApp Network step of the wizard is available if you have chosen to change the location and settings of the restored vApp.
 
@@ -27,6 +28,4 @@ To prevent the restored vApp from accessing any network, select it in the list a
 
 ![Step 6. Select Destination Network](images/vcloud_restore_network.webp)
 
-Page updated 5/31/2023
 
-Page content applies to build 13.0.1.1071

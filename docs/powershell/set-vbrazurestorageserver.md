@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAzureStorageServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazurestorageserver.html"
 last_updated: "7/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAzureStorageServer
 
-In this article
 
 Short Description
 
@@ -75,6 +76,4 @@ Related Commands
 
 [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 
-Page updated 7/15/2025
 
-Page content applies to build 13.0.1.1071

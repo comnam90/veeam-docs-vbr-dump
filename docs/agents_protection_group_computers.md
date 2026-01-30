@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_computers.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Computers
 
-In this article
 
 At the Computers step of the wizard, specify computers that you want to add to the protection group.
 
@@ -52,6 +53,4 @@ If you want to change the connection method after you create a protection group,
 
 ![Step 3. Specify Computers](images/protection_group_computers.webp "Specify Computers")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

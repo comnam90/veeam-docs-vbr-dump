@@ -1,5 +1,7 @@
 ---
 title: "Starting and Stopping SureBackup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_start.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting and Stopping SureBackup Job
 
-In this article
 
 You can instruct the SureBackup job to verify the latest restore point of a VM backup or VM replica or select a specific restore point to which the VM from the backup or VM replica must be started.
 
@@ -38,6 +39,4 @@ To stop a running SureBackup job session:
 
 [![Click to zoom in](images/surebackup_stop.webp)](images/surebackup_stop.webp "Click to zoom in")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

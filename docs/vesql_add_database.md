@@ -1,5 +1,7 @@
 ---
 title: "Adding Standalone Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_add_database.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Standalone Databases
 
-In this article
 
 |  |
 | --- |
@@ -26,6 +27,4 @@ Manually added databases will be displayed in the navigation pane under the Othe
 
 [![Adding Microsoft SQL Databases Manually](images/vesql_external_database.webp)](images/vesql_external_database.webp "Adding Microsoft SQL Databases Manually")
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_maintenance_job.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Job
 
-In this article
 
 The maintenance job is a system job that is executed automatically every 24 hours.
 
@@ -30,6 +31,4 @@ Related Topics
 * [Managing Retention Policy](external_repository_retention.md)
 * [Cache](external_repository_cache.md)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

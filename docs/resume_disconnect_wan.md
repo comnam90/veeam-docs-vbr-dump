@@ -1,5 +1,7 @@
 ---
 title: "Data Transport on WAN Disconnect"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/resume_disconnect_wan.html"
 last_updated: "2/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Transport on WAN Disconnect
 
-In this article
 
 If you replicate VMs over WAN accelerators, and a WAN connection drops for short periods of time (less than 30 minutes), Veeam Backup & Replication transparently handles disconnect issues. It automatically resumes the data transport process from the point when the connection was lost. The resume on disconnect capability improves the reliability of off-site replication, reduces the backup window and minimizes the load on the WAN link.
 
@@ -19,6 +20,4 @@ Not to keep long snapshot chains, Veeam Backup & Replication merges earlier snap
 
 If the WAN link is weak and drops constantly, Veeam Backup & Replication may fail to transport VM data by the time a new replication job session starts. In this case, during a new replication job session Veeam Backup & Replication attempts to transfer VM data that have changed since the last replication job session and VM data that were not transferred during the previous replication job session.
 
-Page updated 2/27/2025
 
-Page content applies to build 13.0.1.1071

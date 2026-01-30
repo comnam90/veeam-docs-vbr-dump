@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Object Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_s3_aws_launch.html"
 last_updated: "12/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Object Storage Wizard
 
-In this article
 
 To launch the New Object Storage wizard:
 
@@ -24,6 +25,4 @@ To launch the New Object Storage wizard:
 
 ![Step 1. Launch New Object Storage Wizard](images/snippet_os_s3_aws_launch.webp)
 
-Page updated 12/4/2023
 
-Page content applies to build 13.0.1.1071

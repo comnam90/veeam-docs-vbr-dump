@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRLinuxGuestItem"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrlinuxguestitem.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRLinuxGuestItem
 
-In this article
 
 Short Description
 
@@ -88,6 +89,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Start-VBRLinuxFileRestore](start-vbrlinuxfilerestore.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

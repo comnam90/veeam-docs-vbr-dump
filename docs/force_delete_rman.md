@@ -1,5 +1,7 @@
 ---
 title: "Configuring Force Deletion of Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/force_delete_rman.html"
 last_updated: "3/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Force Deletion of Backups
 
-In this article
 
 In the main scenario, when using Veeam Plug-In for Oracle RMAN, you must configure the retention policy using native Oracle RMAN tools. For details, see [Configuring Retention Policy](retention_rman_config.md).
 
@@ -44,6 +45,4 @@ By default, the force delete functionality is disabled (set to 0).
 | Important |
 | * A value for the number of days setting must be at least 1 backup generation period longer than the retention period for your Oracle Database backups. Otherwise, Veeam Plug-In will delete earliest backups created within the retention period. * If a backup repository contains backups older than the specified retention period, Veeam Plug-In removes old backup files only after the next run of the RMAN backup. |
 
-Page updated 3/28/2025
 
-Page content applies to build 13.0.1.1071

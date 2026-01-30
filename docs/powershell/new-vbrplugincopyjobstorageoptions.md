@@ -1,5 +1,7 @@
 ---
 title: "New-VBRPluginCopyJobStorageOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrplugincopyjobstorageoptions.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRPluginCopyJobStorageOptions
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Examples
 | --- | --- |
 | This command defines storage optimization settings for a plug-in backup copy job. These settings are defined with the following options:   * The compression level is set to dedupe-friendly. * The storage optimization type is set to back up to local storage. * Data deduplication is enabled.     |  | | --- | | New-VBRPluginCopyJobStorageOptions -CompressionLevel DedupeFriendly -StorageOptimizationType LANTarget -EnableDataDeduplication | |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

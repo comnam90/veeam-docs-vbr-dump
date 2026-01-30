@@ -1,5 +1,7 @@
 ---
 title: "VBRMoveBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrmovebackupsession.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRMoveBackupSession
 
-In this article
 
 This object contains settings of the move session.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [Move-VBRBackup](move-vbrbackup.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

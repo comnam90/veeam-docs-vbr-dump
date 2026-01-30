@@ -1,5 +1,7 @@
 ---
 title: "Disabling Background Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_background_retention_disable.html"
 last_updated: "3/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disabling Background Retention
 
-In this article
 
 You can manually disable [background retention](background_retention_job.md), which is launched every 24 hours at 00:30. You can enable disabled background retention at any time.
 
@@ -30,6 +31,4 @@ Related Links
 * [Background Retention](background_retention_job.md)
 * [Launching Background Retention](backup_background_retention_launch.md)
 
-Page updated 3/4/2025
 
-Page content applies to build 13.0.1.1071

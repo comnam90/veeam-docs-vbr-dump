@@ -1,5 +1,7 @@
 ---
 title: "Removing Tape Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_tapeserver.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Tape Servers
 
-In this article
 
 To remove a tape server:
 
@@ -23,6 +24,4 @@ You cannot remove a tape server while tape jobs are running. Before you remove t
 
 [![Removing Tape Servers](images/remove_tape_server.webp)](images/remove_tape_server.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

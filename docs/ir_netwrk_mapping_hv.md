@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_netwrk_mapping_hv.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Network Mapping
 
-In this article
 
 This step is available if you recover workloads to a new location or with different settings.
 
@@ -25,6 +26,4 @@ If you do not want to connect the recovered VM to any virtual network, select th
 
 ![Step 7. Configure Network Mapping](images/instant_recovery_to_hv_network.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

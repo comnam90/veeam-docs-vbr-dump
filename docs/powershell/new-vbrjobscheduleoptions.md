@@ -1,5 +1,7 @@
 ---
 title: "New-VBRJobScheduleOptions (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrjobscheduleoptions.html"
 last_updated: "3/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRJobScheduleOptions (obsolete)
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Examples
 | --- | --- |
 | This example shows how to define schedule settings for a job. The job will run with the following schedule settings:   * The job will run repeatedly during a day. * The job will run every 120 minutes.   |  | | --- | | $newschedule = New-VBRJobScheduleOptions  $newschedule.OptionsPeriodically.Enabled = $true  $newschedule.OptionsPeriodically.FullPeriod = 120  $newschedule.OptionsDaily.Enabled = $false |  Perform the following steps:   1. Run the New-VBRJobScheduleOptions cmdlet. Save the result to the $newschedule variable. 2. Provide the $true value for the OptionsPeriodically property of the $newschedule variable. 3. Specify the value for the OptionsPeriodically property in minutes. 4. Provide the $false value for the OptionsDaily property of the $newschedule variable to disable the daily schedule option. |
 
-Page updated 3/6/2024
 
-Page content applies to build 13.0.1.1071

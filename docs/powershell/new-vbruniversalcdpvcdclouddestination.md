@@ -1,5 +1,7 @@
 ---
 title: "New-VBRUniversalCDPvCDCloudDestination"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbruniversalcdpvcdclouddestination.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRUniversalCDPvCDCloudDestination
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 * [Get-VBRvCDCloudOrganizationvDC](get-vbrvcdcloudorganizationvdc.md)
 * [Get-VBRvCDCloudStoragePolicy](get-vbrvcdcloudstoragepolicy.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

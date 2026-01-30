@@ -1,5 +1,7 @@
 ---
 title: "Entire VM Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_recovery.html"
 last_updated: "3/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Entire VM Restore
 
-In this article
 
 With Veeam Backup & Replication, you can restore an entire VM from a backup file to the latest state or to a previous point in time if the original VM fails.
 
@@ -47,6 +48,4 @@ Related Topics
 * [Transport Modes](transport_modes.md)
 * [Restoring Entire VM](performing_full_recovery.md)
 
-Page updated 3/5/2025
 
-Page content applies to build 13.0.1.1071

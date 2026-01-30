@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRBackupServerCertificate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrbackupservercertificate.html"
 last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRBackupServerCertificate
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Examples
 | --- | --- |
 | This command gets a TLS certificate from a PFX file.  |  | | --- | | Get-VBRBackupServerCertificate -Path "C:\cert\AMB\_cert.pfx" | |
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

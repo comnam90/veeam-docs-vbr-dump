@@ -3,7 +3,7 @@ title: "Decrypting Tapes with Password"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_decrypt_password.html"
-last_updated: "1/19/2026"
+last_updated: "5/15/2025"
 product_version: "13.0.1.1071"
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Hyper-V Server Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_launch.html"
 last_updated: "7/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Hyper-V Server Wizard
 
-In this article
 
 To launch the New Hyper-V Server wizard, do one of the following:
 
@@ -35,6 +36,4 @@ Select this option to add a standalone Microsoft Hyper-V host that is not part o
 
 [![Step 1. Launch New Hyper-V Server Wizard](images/add_server_hv.webp)](images/add_server_hv.webp)
 
-Page updated 7/22/2025
 
-Page content applies to build 13.0.1.1071

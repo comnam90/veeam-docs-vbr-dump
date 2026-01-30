@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRHvReplicaJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrhvreplicajob.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRHvReplicaJob
 
-In this article
 
 Short Description
 
@@ -97,6 +98,4 @@ Related Commands
 * [Get-VBRReplica](get-vbrreplica.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

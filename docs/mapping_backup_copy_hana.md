@@ -1,5 +1,7 @@
 ---
 title: "Converting Backup Copy to Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy_hana.html"
 last_updated: "10/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Converting Backup Copy to Backup
 
-In this article
 
 If you have imported Veeam Plug-In backup copies from another server, you can convert them into regular backup files. When you convert a backup copy to a backup, Veeam Plug-In creates a backup job with the converted backup. You can use this backup job to continue a backup chain and use the converted backup as a restore point.
 
@@ -35,6 +36,4 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 | Important |
 | [For backups of scale-out clusters and servers with the customServerName option] To avoid failure of conversion of backup copies, the cluster name must be the same as the name used in the backup copy. |
 
-Page updated 10/25/2024
 
-Page content applies to build 13.0.1.1071

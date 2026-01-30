@@ -1,5 +1,7 @@
 ---
 title: "Veeam Plug-In for Microsoft SQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_plugin.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Plug-In for Microsoft SQL Server
 
-In this article
 
 Veeam Plug-In for Microsoft SQL Server is a backup tool for Microsoft SQL Server databases. Veeam Plug-In integrates with Microsoft SQL Server Management Studio and transfers database backups and transaction log backups to backup repositories configured in Veeam Backup & Replication.
 
@@ -30,6 +31,4 @@ In This Section
 * [License Management](plugins_mssql_license_management.md)
 * [Logs and Support](veeam_mssql_logs.md)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

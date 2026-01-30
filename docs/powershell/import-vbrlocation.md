@@ -1,5 +1,7 @@
 ---
 title: "Import-VBRLocation"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/import-vbrlocation.html"
 last_updated: "2/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Import-VBRLocation
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command imports geographic locations to Veeam Backup & Replication from 
 | --- |
 | Import-VBRLocation -Path "C:\Locations\BackupNorth.xml" |
 
-Page updated 2/20/2024
 
-Page content applies to build 13.0.1.1071

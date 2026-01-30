@@ -1,5 +1,7 @@
 ---
 title: "How Restore Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_restore_works.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Restore Works
 
-In this article
 
 Restore from Image-Level Backups
 
@@ -41,6 +42,4 @@ For each database that will be restored, the restore component creates a VDI dev
 
 [![How Restore Works](images/vesql_restore_plugin.webp)](images/vesql_restore_plugin.webp "How Restore Works")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

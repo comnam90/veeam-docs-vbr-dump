@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_immutability_limitations.html"
 last_updated: "1/5/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and known limitations for object storage repositories.
 
@@ -77,6 +78,4 @@ Consider the following immutability limitations for GFS backups:
 * Monthly and yearly GFS backups do not have Block Generation unless you change the default values for Block Generation to exceed these backups.
 * If you keep backups with multiple GFS flags assigned (weekly, monthly, and yearly) in the same object storage, Veeam Backup & Replication will not assign any Block Generation period for these backups.
 
-Page updated 1/5/2026
 
-Page content applies to build 13.0.1.1071

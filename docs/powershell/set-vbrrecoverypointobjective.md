@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRRecoveryPointObjective"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrrecoverypointobjective.html"
 last_updated: "4/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRRecoveryPointObjective
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Perform the following steps:
 
 Save the result to the $newinterval variable to apply the settings to the backup copy job.
 
-Page updated 4/25/2024
 
-Page content applies to build 13.0.1.1071

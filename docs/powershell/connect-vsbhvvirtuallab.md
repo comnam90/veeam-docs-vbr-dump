@@ -1,5 +1,7 @@
 ---
 title: "Connect-VSBHvVirtualLab (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vsbhvvirtuallab.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Connect-VSBHvVirtualLab (obsolete)
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 [Find-VSBHvVirtualLab](find-vsbhvvirtuallab.md)
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

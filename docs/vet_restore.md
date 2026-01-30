@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to restore Microsoft Teams data to [Microsoft 365](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_office365_org.html?ver=80) organizations. Items are restored to their original location.
 
@@ -20,6 +21,4 @@ In This Section
 * [Restoring Posts](vet_restore_posts.md)
 * [Restoring Files](vet_restore_files.md)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

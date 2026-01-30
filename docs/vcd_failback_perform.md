@@ -1,5 +1,7 @@
 ---
 title: "Performing Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_perform.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Failback
 
-In this article
 
 For more information on failback, see [Failover and Failback for Cloud Director](vcd_failover_failback.md) and [Failback](vcd_failback.md).
 
@@ -24,6 +25,4 @@ To perform failback, do the following:
 9. [Define Failback Mode](vcd_switch_to_production_vapps.md).
 10. [Review summary and finish working with the wizard](vcd_failback_finish.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

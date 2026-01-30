@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select File Version to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_folders_file_version.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select File Version to Restore
 
-In this article
 
 The File Version step is required if you use the All Time option at the [Select Files and Folders to Restore](restore_files_folders_backup_browser.md) step and the selected files have more than one file version.
 
@@ -17,6 +18,4 @@ If at the [Backup Browser](restore_files_folders_backup_browser.md) step you hav
 
 ![Step 7. Select File Version to Restore](images/restore_files_folders_file_version.webp "Select a File Version to Restore")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

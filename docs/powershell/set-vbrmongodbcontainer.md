@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRMongoDBContainer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrmongodbcontainer.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRMongoDBContainer
 
-In this article
 
 Short Description
 
@@ -85,6 +86,4 @@ Related Commands
 * [New-VBRMongoDBCustomCredentials](new-vbrmongodbcustomcredentials.md)
 * [New-VBRMongoDBContainer](new-vbrmongodbcontainer.md)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

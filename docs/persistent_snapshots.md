@@ -1,5 +1,7 @@
 ---
 title: "Persistent VSS Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_snapshots.html"
 last_updated: "5/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Persistent VSS Snapshots
 
-In this article
 
 During application-aware processing, Veeam Backup & Replication uses a VSS writer for a required application to freeze application data and bring it to a consistent state.
 
@@ -36,6 +37,4 @@ Veeam Backup & Replication uses the persistent VSS snapshot technology if the VM
 * The VM does not perform the role of a domain controller.
 * Microsoft Exchange databases and log files are located on a non-system disk of the VM. During backup, Veeam Backup & Replication does not trigger a persistent VSS snapshot for system VM disks. As a result, system disks are restored in a crash-consistent, not transactionally consistent state.
 
-Page updated 5/26/2025
 
-Page content applies to build 13.0.1.1071

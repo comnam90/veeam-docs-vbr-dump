@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select VMs to Replicate"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_workloads.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select VMs to Replicate
 
-In this article
 
 At the Virtual Machines step of the wizard, select VMs or VM containers that you want to replicate:
 
@@ -32,6 +33,4 @@ To quickly find the necessary VMs, you can use the search field at the bottom of
 
 ![Step 3. Select VMs to Replicate](images/cdp_policy_workloads.webp "Select workloads")
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

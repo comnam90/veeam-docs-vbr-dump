@@ -1,5 +1,7 @@
 ---
 title: "Using Backups Created on Crashed Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_from_backup_another_srv_hv.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Backups Created on Crashed Backup Server
 
-In this article
 
 There may be a situation when you created backups on one backup server, the server crashed and you want to use these backups for replica from backup on another backup server.
 
@@ -30,6 +31,4 @@ After you map a backup to a job, Veeam Backup & Replication stops considering th
 | Important |
 | Consider the following:   * The backup job or backup copy job to which you map the imported backup file must run periodically and produce new restore points. Otherwise, the replication job will have no data to retrieve and replicas will be in an outdated state. * No other running backup servers must use the imported backups. |
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify VM Name and VM UUID Handling"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_name_hv.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify VM Name and VM UUID Handling
 
-In this article
 
 The Name step is available if you have selected the Failback to the specified location option at the [Destination](failback_destination_hv.md) step.
 
@@ -34,6 +35,4 @@ To change VM identification settings:
 
 ![Step 7. Specify VM Name and VM UUID Handling](images/hv_failback_uuid.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

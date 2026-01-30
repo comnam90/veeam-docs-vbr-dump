@@ -1,5 +1,7 @@
 ---
 title: "GFS Backups Immutability Period"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_immutability_sobr.html"
 last_updated: "1/8/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # GFS Backups Immutability Period
 
-In this article
 
 The immutability period for backups with GFS flags depends on multiple settings of a scale-out backup repository. The following table shows how the immutability period is counted depending on the scale-out backup repository configuration.
 
@@ -22,6 +23,4 @@ The immutability period for backups with GFS flags depends on multiple settings 
 
 1 Valid only in case the GFS retention period is longer than the immutability period for object storage repository.
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

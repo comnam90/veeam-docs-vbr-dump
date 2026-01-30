@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRDefaultWindowsMountServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrdefaultwindowsmountserver.html"
 last_updated: "7/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRDefaultWindowsMountServer
 
-In this article
 
 Short Description
 
@@ -83,6 +84,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Get-VBRRepositoryMountServerOptions](get-vbrrepositorymountserveroptions.md)
 
-Page updated 7/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Rescanning External Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rescaning_external_repositories.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning External Repositories
 
-In this article
 
 To synchronize the state of an external repository with the state of an object storage (Amazon S3, Azure Blob or Google Cloud Storage), you can use the rescan feature. During rescan, Veeam Backup & Replication fetches newly created restore points and other required metadata.
 
@@ -35,6 +36,4 @@ Related Topics
 
 [Adding External Repository](external_repositories_add.md)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

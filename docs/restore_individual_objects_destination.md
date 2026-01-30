@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Destination for Object Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_individual_objects_destination.html"
 last_updated: "12/19/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Destination for Object Restore
 
-In this article
 
 The Destination step is required if you choose the Copy To option at the [Select Objects to Restore](restore_individual_objects_browser.md) step. Specify the destination where the restored objects must be stored:
 
@@ -18,6 +19,4 @@ To select a dedicated prefix for restored objects, click Browse. In the Select F
 
 ![Step 8. Specify Destination for Object Restore](images/restore_individual_objects_destination.webp "Specify Destination for File Restore")
 
-Page updated 12/19/2023
 
-Page content applies to build 13.0.1.1071

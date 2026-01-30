@@ -1,5 +1,7 @@
 ---
 title: "Deployment and Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deploy_sap_orcl_plugin.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment and Configuration
 
-In this article
 
 To deploy Veeam Plug-In, you must install the plug-in on an SAP on Oracle server and configure plug-in integration settings.
 
@@ -28,6 +29,4 @@ In This Section
 
 This guide gives instructions on how to deploy Veeam Plug-In assuming that you have already deployed a Veeam Backup & Replication server and configured a backup repository. If you need instructions on how to deploy Veeam Backup & Replication, see the [Veeam Backup & Replication User Guide](https://www.veeam.com/documentation-guides-datasheets.html) for your platform.
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

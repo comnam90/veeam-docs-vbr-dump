@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Target Folder"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore_ms365_single_target_folder.html"
 last_updated: "8/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Target Folder
 
-In this article
 
 This step is only available if you have selected the Modern Authentication (one-time password) or the Modern authentication (certificate-based) option at the [Select Authentication Method](vex_vbr_restore_ms365_single_select_authentication_method.md) step.
 
@@ -17,6 +18,4 @@ When you select to restore to a custom folder, Veeam Explorer for Microsoft Exch
 
 [![Specify Target Folder](images/mfa_target_folder.webp)](images/mfa_target_folder.webp "Specify Target Folder")
 
-Page updated 8/1/2024
 
-Page content applies to build 13.0.1.1071

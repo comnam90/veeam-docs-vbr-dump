@@ -1,5 +1,7 @@
 ---
 title: "Retention for Transaction Log Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_retention.html"
 last_updated: "3/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retention for Transaction Log Backups
 
-In this article
 
 Transaction log backups are stored in files of the proprietary Veeam format — VLB. Veeam Backup & Replication keeps transaction log backups together with the VM image-level backup. The target location of VLB files depends on the type of the backup repository:
 
@@ -39,6 +40,4 @@ Related Topics
 
 [Microsoft SQL Server Transaction Log Settings](backup_job_vss_sql_vm.md)
 
-Page updated 3/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Getting Started"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quickstart.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting Started
 
-In this article
 
 To start using the Veeam Plug-In management functionality in Veeam Backup & Replication, you must perform the following operations:
 
@@ -56,6 +57,4 @@ You can start, stop, enable and disable application backup policies to administe
 
 To learn more, see [Managing Application Backups](application_backups.md).
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

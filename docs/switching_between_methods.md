@@ -1,5 +1,7 @@
 ---
 title: "Switching Between Backup Methods"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/switching_between_methods.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Switching Between Backup Methods
 
-In this article
 
 You can easily switch between backup methods. Veeam Backup & Replication does not transform the previously created chain. Instead, it creates a new backup chain next to the existing one in the following manner:
 
@@ -18,6 +19,4 @@ You can easily switch between backup methods. Veeam Backup & Replication does no
 
 For more information on which settings are required for each method, see the following sections: [Forever Forward Incremental Backup](incremental_forever_backup.md), [Forward Incremental Backup](forward_incremental_backup.md) and [Reverse Incremental Backup (Deprecated)](reversed_incremental_backup.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

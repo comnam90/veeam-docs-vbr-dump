@@ -1,5 +1,7 @@
 ---
 title: "Google Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_google_account.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Google Account
 
-In this article
 
 You can authorize Veeam Explorer for Microsoft OneDrive for Business to send Microsoft OneDrive items as attachments on behalf of your Google account. To send email messages, Veeam Explorer for Microsoft OneDrive for Business communicates with the Gmail API. For authentication, Veeam Explorer for Microsoft OneDrive for Business uses an access token issued by Google Authorization Server. To acquire an access token, you can either use an application preinstalled by Veeam Backup & Replication or specify OAuth 2.0 client credentials of the custom application registered in the Google Cloud console. For more information on obtaining client credentials, see [Registering Application in Google Cloud Console](veod_register_app_google.md).
 
@@ -45,6 +46,4 @@ In the Google Gmail Application Settings window, select the Use custom applicati
 
 [![Configuring Google Gmail Application Settings](images/google_gmail.png)](images/google_gmail.png "Configuring Google Gmail Application Settings")
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

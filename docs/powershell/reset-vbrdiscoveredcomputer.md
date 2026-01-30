@@ -1,5 +1,7 @@
 ---
 title: "Reset-VBRDiscoveredComputer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/reset-vbrdiscoveredcomputer.html"
 last_updated: "5/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reset-VBRDiscoveredComputer
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 * [Get-VBRProtection](get-vbrprotectiongroup.md)
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 5/3/2024
 
-Page content applies to build 13.0.1.1071

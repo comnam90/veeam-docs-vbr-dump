@@ -1,5 +1,7 @@
 ---
 title: "Performing Quick Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_quick_backup_start.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Quick Backup
 
-In this article
 
 You can create an ad-hoc incremental backup for one or more protected computers — quick backup, and add it to the backup chain on the backup repository. Quick backup can be helpful if you want to produce an additional restore point for one or more computers in the Veeam Agent backup job and do not want to configure a new job or modify the existing one.
 
@@ -32,6 +33,4 @@ Veeam Backup & Replication will trigger a Veeam Agent backup job to create a new
 
 [![Perform Quick Backup](images/protected_computer_backup.webp)](images/protected_computer_backup.webp "Perform Quick Backup")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Define Job Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_file_to_tape_schedule.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Define Job Schedule
 
-In this article
 
 This step of the wizard is available if you selected a GFS media pool at the Full Backup step of the wizard.
 
@@ -24,6 +25,4 @@ In the Start daily scan for GFS restore points at field, specify the time when t
 
 ![Step 8. Define Job Schedule](images/gfs_file_to_tape_schedule1.webp)
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

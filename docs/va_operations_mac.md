@@ -1,5 +1,7 @@
 ---
 title: "Operations Available on Mac Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations_mac.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Operations Available on Mac Computers
 
-In this article
 
 Mac computers are managed by Veeam Backup & Replication through a protection group for pre-installed Veeam Agents. You can protect Mac computers only by a backup job managed by Veeam Agent.
 
@@ -106,6 +107,4 @@ To access help and support options in Veeam Agent:
 
 ![Operations Available on Mac Computers](images/managed_support_mac.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

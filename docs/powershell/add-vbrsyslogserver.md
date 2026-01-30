@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRSyslogServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrsyslogserver.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRSyslogServer
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ This command add a syslog server with the following settings:
 | --- |
 | Add-VBRSyslogServer -ServerHost "172.17.53.28" -Port 514 -Protocol Udp |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

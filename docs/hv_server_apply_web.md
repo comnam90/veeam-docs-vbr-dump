@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Review Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_apply_web.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Review Components
 
-In this article
 
 This step is available only if you selected to add a standalone Microsoft Hyper-V server.
 
@@ -23,6 +24,4 @@ The Task limit field is displayed only for standalone Microsoft Hyper-V hosts. T
 
 [![Step 5. Review Components](images/add_server_hv_review_web.webp)](images/add_server_hv_review_web.webp)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

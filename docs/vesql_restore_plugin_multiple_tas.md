@@ -1,5 +1,7 @@
 ---
 title: "Restoring to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_multiple_tas.html"
 last_updated: "9/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to Another Server
 
-In this article
 
 To restore multiple databases backed up with Veeam Plug-In for Microsoft SQL Server to another server, use the Restore wizard.
 
@@ -17,6 +18,4 @@ To restore multiple databases backed up with Veeam Plug-In for Microsoft SQL Ser
 4. [Specify the target server](vesql_restore_plugin_multiple_tas_specify_target_server.md).
 5. [Specify files location](vesql_restore_plugin_multiple_tas_specify_files_location.md).
 
-Page updated 9/26/2025
 
-Page content applies to build 13.0.1.1071

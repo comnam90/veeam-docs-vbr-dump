@@ -1,5 +1,7 @@
 ---
 title: "Restoring Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_multiple_pit.html"
 last_updated: "11/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Point-in-Time State
 
-In this article
 
 To restore multiple MongoDB collections to a point-in-time state, use the Restore wizard.
 
@@ -24,6 +25,4 @@ To restore multiple MongoDB collections to a point-in-time state, use the Restor
 | Note |
 | Point-in-time restore is available only if oplog backups exist. For more information, see [Required Job Settings](vemdb_job_settings.md). |
 
-Page updated 11/7/2025
 
-Page content applies to build 13.0.1.1071

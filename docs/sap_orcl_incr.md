@@ -1,5 +1,7 @@
 ---
 title: "Incremental Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_incr.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Incremental Backup
 
-In this article
 
 You can perform an incremental backup by using the BRBACKUP command with the rman\_util parameter. An incremental backup contains the changed data from the last full backup. Incremental backups use less media and resources than full backups.
 
@@ -27,6 +28,4 @@ Run the brbackup command with the following parameters:
 
 To see all brbackup command options, see the [Command Options for BRBACKUP](https://help.sap.com/docs/SAP_NETWEAVER_DBOS/3ef1b95cacbf4f77a066797285371bb9/46e7e24fdcba3c1de10000000a155369.html) section in the SAP Database Guide: Oracle.
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

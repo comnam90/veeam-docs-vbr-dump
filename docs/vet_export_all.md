@@ -1,5 +1,7 @@
 ---
 title: "Exporting Multiple Posts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_export_all.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Multiple Posts
 
-In this article
 
 To export posts of a channel, do the following:
 
@@ -40,6 +41,4 @@ To export posts of a channel, do the following:
 
 [![Review Export Summary](images/vet_export_summary.webp)](images/vet_export_summary.webp "Review Export Summary")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

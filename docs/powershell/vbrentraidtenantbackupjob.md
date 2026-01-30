@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDTenantBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidtenantbackupjob.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDTenantBackupJob
 
-In this article
 
 Contains settings of a backup job for a Microsoft Entra ID tenant.
 
@@ -33,6 +34,4 @@ Related Commands
 * [Get-VBREntraIDTenantBackupJob](get-vbrentraidtenantbackupjob.md)
 * [Set-VBREntraIDTenantBackupJob](set-vbrentraidtenantbackupjob.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Unstructured Data Backups"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/unstructured_backups_manage.html"
 last_updated: "1/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Unstructured Data Backups
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Convert-VBRNASBackupSANFormat](convert-vbrnasbackupsanformat.md) | Converts backups created for SMB or NFS file shares residing on an enterprise NAS system into the format of a NAS filer share on the same storage system. |
 | [Convert-VBRNASBackupStorageFormat](convert-vbrnasbackupstorageformat.md) | Converts format of baskets used for storing backups created with file backup and file backup copy jobs. |
 
-Page updated 1/7/2025
 
-Page content applies to build 13.0.1.1071

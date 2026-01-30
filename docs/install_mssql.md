@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Plug-In for Microsoft SQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_mssql.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Plug-In for Microsoft SQL Server
 
-In this article
 
 You can install Veeam Plug-In for Microsoft SQL Server using the installation wizard or in an unattended mode using the command-line interface.
 
@@ -21,6 +22,4 @@ In This Section
 * [Installing Veeam Plug-In](install_mssql_ui.md)
 * [Installing Veeam Plug-In in Unattended Mode](install_mssql_unattended.md)
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

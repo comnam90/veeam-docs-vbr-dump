@@ -1,5 +1,7 @@
 ---
 title: "Restoring Exported Database"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_export_restore_exported_databases.html"
 last_updated: "1/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Exported Database
 
-In this article
 
 Veeam Explorer for PostgreSQL exports databases to the target destination as DUMP files. These files are portable across platforms and can be used to restore the original state of the databases with the pg\_restore utility. For more information about this utility, see the [PostgreSQL Documentation](https://www.postgresql.org/docs/16/app-pgrestore.html).
 
@@ -38,6 +39,4 @@ For example:
 | --- |
 | $ pg\_restore -p 5433 -U root -C -d sales /var/tmp/Import/export.dump |
 
-Page updated 1/17/2024
 
-Page content applies to build 13.0.1.1071

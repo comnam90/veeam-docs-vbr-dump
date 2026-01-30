@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRvCloudQuickMigration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvcloudquickmigration.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRvCloudQuickMigration
 
-In this article
 
 Short Description
 
@@ -75,6 +76,4 @@ Related Commands
 * [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 * [Start-VBRvCloudInstantRecovery](start-vbrvcloudinstantrecovery.md)
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

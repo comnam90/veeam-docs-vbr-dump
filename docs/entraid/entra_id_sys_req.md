@@ -1,5 +1,7 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_sys_req.html"
 last_updated: "12/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements
 
-In this article
 
 | Specification | Requirement |
 | --- | --- |
@@ -19,6 +20,4 @@ In this article
 | Cache repository | The cache repository stores temporary cache files for log processing. This repository must meet system requirements described in the [Cache Repository System Requirements](https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements.html?ver=13#cache_repo) section in the Veeam Backup & Replication User Guide. |
 | Log backup repository | The primary and secondary log backup repositories store audit and sign-in log backups and their copies. These repositories must meet requirements described in the [Backup Repository System Requirements](https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements.html?ver=13#cache_repo) section in the Veeam Backup & Replication User Guide.  For information on which types of repositories can be used as primary and secondary repositories, see [Configuring Repositories](entra_id_configure_repo.md). |
 
-Page updated 12/18/2025
 
-Page content applies to build 13.0.1.1071

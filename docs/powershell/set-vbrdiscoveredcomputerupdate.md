@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRDiscoveredComputerUpdate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrdiscoveredcomputerupdate.html"
 last_updated: "1/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRDiscoveredComputerUpdate
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 * [Get-VBRDiscoveredComputerUpdate](get-vbrdiscoveredcomputerupdate.md)
 
-Page updated 1/3/2024
 
-Page content applies to build 13.0.1.1071

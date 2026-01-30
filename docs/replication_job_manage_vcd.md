@@ -1,5 +1,7 @@
 ---
 title: "Managing Cloud Director Replication Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_job_manage_vcd.html"
 last_updated: "6/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Cloud Director Replication Jobs
 
-In this article
 
 After you create VMware Cloud Director replication jobs, you can edit, disable and delete them.
 
@@ -68,6 +69,4 @@ To delete a VMware Cloud Director replication job:
 
 [![vCD Replication Job Delete](images/vcd_replication_job_delete.webp)](images/vcd_replication_job_delete.webp "vCD Replication Job Delete")
 
-Page updated 6/11/2025
 
-Page content applies to build 13.0.1.1071

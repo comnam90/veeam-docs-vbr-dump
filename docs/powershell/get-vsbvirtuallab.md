@@ -1,5 +1,7 @@
 ---
 title: "Get-VSBVirtualLab (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vsbvirtuallab.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VSBVirtualLab (obsolete)
 
-In this article
 
 Short Description
 
@@ -81,6 +82,4 @@ Examples
 | --- | --- |
 | This command returns virtual labs by Id.  |  | | --- | | Get-VSBVirtualLab -Id 3fw1505l-8811-4283-b066-718bdf7280ea, 909fg28c-14f5-9a9d-6ve7-0b40d1k5a9jm | |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

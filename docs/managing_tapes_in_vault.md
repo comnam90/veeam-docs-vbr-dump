@@ -1,5 +1,7 @@
 ---
 title: "Managing Tapes in Vault"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_tapes_in_vault.html"
 last_updated: "6/29/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Tapes in Vault
 
-In this article
 
 When you have tapes placed to vaults, you can move them to another vault or remove from vault. When you remove tapes from a vault, they are still available in the Offline list or in their media pool.
 
@@ -27,6 +28,4 @@ The tapes are removed from vault automatically in the following situations:
 * A tape is removed from catalog.
 * A tape is marked as free.
 
-Page updated 6/29/2023
 
-Page content applies to build 13.0.1.1071

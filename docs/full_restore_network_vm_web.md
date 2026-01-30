@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_network_vm_web.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Network Mapping
 
-In this article
 
 The Network step of the wizard is available if you have selected Restore to a new location, or with different settings at the [Restore Mode](full_restore_mode_vm_web.md) step.
 
@@ -23,6 +24,4 @@ If you do not want to map a network to your virtual network, select the network 
 
 [![Configure Network - Web UI](images/full_restore_network_vm_web.webp)](images/full_restore_network_vm_web.webp "Configure Network - Web UI")
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

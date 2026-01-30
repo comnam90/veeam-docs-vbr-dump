@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/surebackup_job.html"
 last_updated: "8/2/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Jobs
 
-In this article
 
 |  |
 | --- |
@@ -35,6 +36,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Get-VBRSureBackupSession](get-vbrsurebackupsession.md) | Returns SureBackup sessions that have been run. |
 | [Get-VBRSureBackupTaskSession](get-vbrsurebackuptasksession.md) | Returns tasks performed during the specified SureBackup session. |
 
-Page updated 8/2/2023
 
-Page content applies to build 13.0.1.1071

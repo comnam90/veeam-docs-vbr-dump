@@ -1,5 +1,7 @@
 ---
 title: "Data Publishing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_data_publishing.html"
 last_updated: "8/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Publishing
 
-In this article
 
 Publishing an Oracle database allows you to temporarily attach the databases to the target Oracle server without launching restore. Publishing typically occurs faster than using standard restore features and could be convenient when, for example, your time to perform disaster-recovery operations is limited.
 
@@ -28,6 +29,4 @@ In This Section
 * [Unpublishing Databases](veor_unpublishing.md)
 * [Refreshing Database Status](veor_publishing_refresh.md)
 
-Page updated 8/29/2025
 
-Page content applies to build 13.0.1.1071

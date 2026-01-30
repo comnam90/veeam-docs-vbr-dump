@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_multiple_latest_wizard.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do the following:
 
@@ -18,6 +19,4 @@ Alternatively, you can right-click an instance or the server and select Restore 
 
 [![Launching Restore Wizard](images/vesql_restore_plugin_multiple_latest_wizard.webp)](images/vesql_restore_plugin_multiple_latest_wizard.webp "Launching Restore Wizard")
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

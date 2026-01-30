@@ -1,5 +1,7 @@
 ---
 title: "Disk Publishing (Data Integration API)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_data_integration_api.html"
 last_updated: "4/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disk Publishing (Data Integration API)
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Get-VBRPublishedBackupContentInfo](get-vbrpublishedbackupcontentinfo.md) | Returns details on the published disks. |
 | [Unpublish-VBRBackupContent](unpublish-vbrbackupcontent.md) | Unpublishes disks. |
 
-Page updated 4/17/2024
 
-Page content applies to build 13.0.1.1071

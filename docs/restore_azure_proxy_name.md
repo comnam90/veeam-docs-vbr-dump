@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Azure Restore Proxy Appliance Name"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_name.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Azure Restore Proxy Appliance Name
 
-In this article
 
 At the Name step of the wizard, specify a name and description for the Azure restore proxy appliance:
 
@@ -26,6 +27,4 @@ Veeam Backup & Replication creates one task per one workload disk. By default, A
 
 ![Step 2. Specify Azure Restore Proxy Appliance Name](images/azure_proxy_name.webp)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

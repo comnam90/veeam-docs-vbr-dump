@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Backup Repository Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_storage.html"
 last_updated: "9/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Backup Repository Settings
 
-In this article
 
 At the Backup Repository step of the wizard, define the primary backup repository where the file backup job must store backup files, and settings for moving files and folders to this repository. To learn what storage types you can assign the role of the backup repository to, see [Storage Repositories](unstructured_data_backup_infrastructure.md#backup_repository) in the Backup Infrastructure for Unstructured Data Backup section.
 
@@ -35,6 +36,4 @@ If, for example, Keep all file versions for the last is set to 30 days, the back
 
 ![Step 4. Specify Backup Repository Settings](images/file_share_backup_job_storage.webp "Specify Backup Repository Settings")
 
-Page updated 9/2/2024
 
-Page content applies to build 13.0.1.1071

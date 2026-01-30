@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore to Azure Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_launch.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore to Azure Wizard
 
-In this article
 
 To launch the Restore to Azure wizard, do one of the following:
 
@@ -30,6 +31,4 @@ In the displayed window, click Entire machine restore > Restore to public cloud 
 
 [![Step 1. Launch Restore to Azure Wizard](images/azure_restore_vm.webp)](images/azure_restore_vm.webp)
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

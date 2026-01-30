@@ -1,5 +1,7 @@
 ---
 title: "Health Check for Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hc_capacity_tier.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Health Check for Capacity Tier
 
-In this article
 
 A health check is an operation that allows you to ensure that the restore point is consistent, and you will be able to restore data from this restore point. For data located in the capacity tier, Veeam Backup & Replication offers a special health check mechanism that differs from the standard health check in the following ways:
 
@@ -46,6 +47,4 @@ You can view the health check result in the restore point statistics. If the hea
 | Note |
 | For immutable backups, Veeam Backup & Replication performs the health check only for valid restore points according to the retention policy. Immutable data associated with removed restore points can still remain in the repository depending on the immutability period, but Veeam Backup & Replication will not perform the health check for such data. |
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

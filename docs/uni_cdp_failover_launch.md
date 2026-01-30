@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Universal CDP Failover Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_launch.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Universal CDP Failover Wizard
 
-In this article
 
 To launch the failover wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the failover wizard, do one of the following:
 
 [![Launch wizard](images/cdp_failover_launch.webp)](images/cdp_failover_launch.webp "Launch wizard")
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

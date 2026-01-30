@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/qm_byb_fcd.html"
 last_updated: "5/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform FCD Quick Migration, check the following prerequisites and limitations.
 
@@ -24,6 +25,4 @@ Before you perform FCD Quick Migration, check the following prerequisites and li
 
 * You can not migrate FCDs to the same datastore where they have already been registered.
 
-Page updated 5/15/2024
 
-Page content applies to build 13.0.1.1071

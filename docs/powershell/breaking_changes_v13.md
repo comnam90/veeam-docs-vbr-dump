@@ -1,5 +1,7 @@
 ---
 title: "Breaking Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/breaking_changes_v13.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Breaking Changes
 
-In this article
 
 This section contains information on breaking changes in Veeam PowerShell v13. These changes cause Veeam PowerShell v13 to function differently and could affect the code.
 
@@ -49,6 +50,4 @@ In this version, the HPE StoreVirtual storage systems are no longer available in
 * Remove-HP4Snapshot
 * Remove-HP4Storage
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

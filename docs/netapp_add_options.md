@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify VMware Access Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_add_options.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify VMware Access Options
 
-In this article
 
 [This step is available for Microsoft Windows-based backup server, and if you have selected the Block or file storage for VMware vSphere check box at the [Specify NetApp Server Name or Address and Storage Role](netapp_add_name.md) step of the wizard.]
 
@@ -44,6 +45,4 @@ After you finish working with the wizard, you can change the rescan scope and st
 
 ![Step 4. Specify VMware Access Options](images/netapp_add_options.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

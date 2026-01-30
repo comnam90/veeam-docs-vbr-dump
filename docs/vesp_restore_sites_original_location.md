@@ -1,5 +1,7 @@
 ---
 title: "Restoring Sites to Original Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_restore_sites_original_location.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Sites to Original Location
 
-In this article
 
 To restore Microsoft SharePoint sites to the original location, do the following:
 
@@ -18,6 +19,4 @@ To restore Microsoft SharePoint sites to the original location, do the following
 5. [Specify restore options](vesp_specify_restore_options_sites.md).
 6. [Review the operation summary](summary9.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

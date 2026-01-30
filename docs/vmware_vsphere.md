@@ -1,5 +1,7 @@
 ---
 title: "VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_vsphere.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware vSphere
 
-In this article
 
 Veeam Backup & Replication offers various data protection and disaster recovery features for the VMware vSphere environment.
 
@@ -39,6 +40,4 @@ In This Section
 * [Advanced VMware vSphere Features](vmware_features.md)
 * [VMware Cloud Support](vmware_cloud_support.md)
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

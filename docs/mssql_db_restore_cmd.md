@@ -1,5 +1,7 @@
 ---
 title: "Restore with Command-Line Interface"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_cmd.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore with Command-Line Interface
 
-In this article
 
 You can restore backup of Microsoft SQL Server databases with Veeam Plug-In using the MSSQLRecoveryManager.exe command-line tool.
 
@@ -55,6 +56,4 @@ You can specify the following parameters for database restore with the MSSQLReco
 | --f | Specifies the rules for database file mapping. Provide mapping rules in the following format: --f="'<DisplayName>'::'<TargetFileLocation>'".  For example: --f="'DB'::'D:\SQLServer\Data\DB.mdf'".  This parameter is optional. If you do not use this parameter, Veeam Plug-In will place database files to the same location and with the same name as for the original database. |
 | --quick\_recovery | Applies differential and log backup to the existing database.  This parameter is optional. If you do not use this parameter, Veeam Plug-In will restore an entire database and then applies differential or log backup to the restored database. For details, see [Step 3. Specify Point in Time](mssql_db_restore_pit.md#quick). |
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

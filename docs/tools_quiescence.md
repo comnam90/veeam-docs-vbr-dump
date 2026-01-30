@@ -1,5 +1,7 @@
 ---
 title: "VMware Tools Quiescence"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tools_quiescence.html"
 last_updated: "12/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMware Tools Quiescence
 
-In this article
 
 When you back up or replicate a running VM, you need to quiesce or ‘freeze’ the VM to bring its file system and application data to a consistent state. Data quiescence is crucial for highly-transactional applications. It helps create transactionally consistent backups or replicas and guarantees safety of application data.
 
@@ -27,6 +28,4 @@ Related Topics
 
 [Application-Aware Processing](application_aware_processing.md)
 
-Page updated 12/10/2024
 
-Page content applies to build 13.0.1.1071

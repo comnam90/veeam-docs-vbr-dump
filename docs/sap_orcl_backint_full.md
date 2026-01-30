@@ -1,5 +1,7 @@
 ---
 title: "Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_backint_full.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Full Backup
 
-In this article
 
 If you want to create a full backup Oracle databases, you can use the BRBACKUP tool. When Veeam Plug-In for SAP on Oracle is configured, the plug-in transfers database backup files to a backup repository connected to Veeam Backup & Replication.
 
@@ -44,6 +45,4 @@ Run the brbackup command with the following parameters:
 | Important |
 | When you use BRBACKUP, you must specify the full directory path to the Veeam Plug-In initialization profile file (-p $Oracle\_HOME/dbs/veeam\_initSID.sap). If the profile file is in the default directory, you can specify only the file name. |
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

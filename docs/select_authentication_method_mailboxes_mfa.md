@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Authentication Method"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/select_authentication_method_mailboxes_mfa.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Authentication Method
 
-In this article
 
 At this step of the wizard, select either modern or basic authentication and specify authentication settings.
 
@@ -62,6 +63,4 @@ Make sure that the account that you use has both the Exchange Administrator and 
 
 [![Select Authentication Method](images/restore_multiple_mailboxes_auth_method_mfa_4.webp)](images/restore_multiple_mailboxes_auth_method_mfa_4.webp "Select Authentication Method")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

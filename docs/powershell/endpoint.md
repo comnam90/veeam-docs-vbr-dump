@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Standalone Mode"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/endpoint.html"
 last_updated: "2/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Standalone Mode
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Start-VBRRestoreVirtualDisks](start-vbrrestorevirtualdisks.md) | Restores physical disks to virtual disk formats. |
 | [Start-VBREpInstantRecovery](start-vbrepinstantrecovery.md) | Starts instant recovery of physical computers to virtual infrastructure. |
 
-Page updated 2/7/2025
 
-Page content applies to build 13.0.1.1071

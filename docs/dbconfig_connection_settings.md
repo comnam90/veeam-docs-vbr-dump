@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Connection Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_connection_settings.html"
 last_updated: "7/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Connection Settings
 
-In this article
 
 At the Connection Settings step of the wizard, provide the connection settings for the selected database.
 
@@ -41,6 +42,4 @@ Both local and remote PostgreSQL instances are supported. If a database with the
 
 ![Step 2. Specify Connection Settings](images/dbconfig_settings_postgre.webp)
 
-Page updated 7/24/2024
 
-Page content applies to build 13.0.1.1071

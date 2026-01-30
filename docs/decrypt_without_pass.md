@@ -1,5 +1,7 @@
 ---
 title: "Decrypting Backups With Enterprise Manager Keys"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/decrypt_without_pass.html"
 last_updated: "10/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Decrypting Backups With Enterprise Manager Keys
 
-In this article
 
 To decrypt backup files with Enterprise Manager keys, you need to issue a request to Veeam Backup Enterprise Manager using the following wizards:
 
@@ -25,6 +26,4 @@ To complete the operation, perform the following steps:
 2. [Process the request in Veeam Backup Enterprise Manager](restore_without_key_process.md).
 3. [Complete the key restore process](restore_without_pass_complete.md).
 
-Page updated 10/18/2024
 
-Page content applies to build 13.0.1.1071

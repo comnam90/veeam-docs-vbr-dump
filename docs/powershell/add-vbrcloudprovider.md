@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRCloudProvider"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcloudprovider.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRCloudProvider
 
-In this article
 
 Short Description
 
@@ -87,6 +88,4 @@ Related Commands
 * [Get-VBRCloudProviderCredentials](get-vbrcloudprovidercredentials.md)
 * [Get-VBRCloudProviderNetworkAppliance](get-vbrcloudprovidernetworkappliance.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_archive_tier_storage_details.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Container step of the wizard, specify the container and folder that will be used to store data:
 
@@ -30,6 +31,4 @@ To specify the the access tier that you want assign to data blocks that you keep
 
 ![Step 4. Specify Object Storage Settings ](images/azure_archive_acess_tier.webp)
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

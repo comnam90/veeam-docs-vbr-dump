@@ -1,5 +1,7 @@
 ---
 title: "Migrating Configuration Database to PostgreSQL Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_migrate_to_postgresql.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating Configuration Database to PostgreSQL Server
 
-In this article
 
 If you need to migrate the Veeam Backup & Replication configuration database from Microsoft SQL Server to PostgreSQL, you need to create a new configuration backup and restore it on the PostgreSQL instance. As a result, you will be able to continue using the same Veeam Backup & Replication server but it will be connected to a configuration database on PostgreSQL instead of Microsoft SQL Server.
 
@@ -112,6 +113,4 @@ Reschedule your configuration database backup. Also, check if you can see the Lo
 
 * Enable your backup jobs and backup copy jobs. Take a closer look at your backup infrastructure to ensure that everything is working as expected.
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

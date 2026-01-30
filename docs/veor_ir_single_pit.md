@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery of Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ir_single_pit.html"
 last_updated: "1/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery of Point-in-Time State
 
-In this article
 
 This section explains how to instantly recover a standalone database or a Data Guard database to a selected point-in-time state on the backup file.
 
@@ -19,6 +20,4 @@ To perform instant recovery to a selected point-in-time state, perform the follo
 4. [Specify switchover settings](veor_ir_single_pit_specify_switchover_settings.md).
 5. [Finalize the Instant Recovery session](veor_ir_single_pit_finalize_ir_session.md).
 
-Page updated 1/2/2025
 
-Page content applies to build 13.0.1.1071

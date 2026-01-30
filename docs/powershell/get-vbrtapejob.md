@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRTapeJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapejob.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRTapeJob
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command returns the tape job named Daily WebApp Backup.
 | --- |
 | Get-VBRTapeJob -Name "Daily WebApp Backup" |
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

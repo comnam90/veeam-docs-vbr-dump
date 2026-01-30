@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/1111_storage_details.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Bucket step of the wizard, specify the bucket and folder that will be used to store data:
 
@@ -47,6 +48,4 @@ To specify the storage class that you want to enable for your bucket, click the 
 
 ![Step 4. Specify Object Storage Settings](images/1111_add_storage_class.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

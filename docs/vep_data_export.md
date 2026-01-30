@@ -1,5 +1,7 @@
 ---
 title: "Data Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_data_export.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Export
 
-In this article
 
 This section explains how to export PostgreSQL data using Veeam Explorer for PostgreSQL.
 
@@ -25,6 +26,4 @@ In This Section
 * [Managing Export Session](vep_export_manage_session.md)
 * [Restoring Exported Database](vep_export_restore_exported_databases.md)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

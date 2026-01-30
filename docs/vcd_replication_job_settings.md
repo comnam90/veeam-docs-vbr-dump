@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Replication Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_job_settings.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Replication Job Settings
 
-In this article
 
 At the Job Settings step of the wizard, define VMware Cloud Director replication job settings.
 
@@ -24,6 +25,4 @@ When you specify the retention policy settings for the replication job, consider
 
 ![Step 8. Specify Replication Job Settings](images/vcd_replica_job_settings.webp)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

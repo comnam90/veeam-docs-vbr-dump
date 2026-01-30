@@ -1,5 +1,7 @@
 ---
 title: "Managing Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_credentials.html"
 last_updated: "12/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Credentials
 
-In this article
 
 This section describes different types of credential records that Veeam Backup & Replication supports.
 
@@ -18,6 +19,4 @@ In This Section
 * [Password Manager](password_manager.md)
 * [Key Management System Keys](kms.md)
 
-Page updated 12/4/2023
 
-Page content applies to build 13.0.1.1071

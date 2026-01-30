@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_options_posts.html"
 last_updated: "9/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Restore Options
 
-In this article
 
 At this step of the wizard, select restore options and click Restore.
 
@@ -27,6 +28,4 @@ When you restore posts, Veeam Backup for Microsoft 365 will create a separate ta
 
 [![Specify Restore Options](images/vet_restore_options_posts.webp)](images/vet_restore_options_posts.webp "Specify Restore Options")
 
-Page updated 9/24/2024
 
-Page content applies to build 13.0.1.1071

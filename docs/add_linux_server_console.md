@@ -1,5 +1,7 @@
 ---
 title: "Adding Linux Servers Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_linux_server_console.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Linux Servers Using Console
 
-In this article
 
 This section describes how to add a Linux server as a backup infrastructure component.
 
@@ -21,6 +22,4 @@ Before you add a Linux server, [check prerequisites](linux_server_before_begin.m
 4. [Apply settings](linux_server_apply.md).
 5. [Finish working with the wizard](linux_server_summary.md).
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

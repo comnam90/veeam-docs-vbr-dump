@@ -1,5 +1,7 @@
 ---
 title: "Adding Wasabi Cloud Object Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_wasabi_object_storage.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Wasabi Cloud Object Storage
 
-In this article
 
 This section describes how to add Wasabi Cloud object storage to the backup infrastructure. For more information about Wasabi Cloud object storage, see [Wasabi documentation](https://docs.wasabi.com/docs/how-do-i-use-veeam-with-wasabi).
 
@@ -22,6 +23,4 @@ Before you add a Wasabi Cloud object storage to the backup infrastructure, check
 7. [Apply settings](wasabi_apply.md).
 8. [Finish working with the wizard](wasabi_finishing_wizard.md).
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

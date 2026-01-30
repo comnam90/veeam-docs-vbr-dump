@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch VM Copy Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_launch.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch VM Copy Job Wizard
 
-In this article
 
 To run the VM Copy Job wizard, do either of the following:
 
@@ -18,6 +19,4 @@ To run the VM Copy Job wizard, do either of the following:
 
 [![Click to zoom in](images/vm_copy_job_launch.webp)](images/vm_copy_job_launch.webp "Click to zoom in")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

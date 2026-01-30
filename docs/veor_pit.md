@@ -1,5 +1,7 @@
 ---
 title: "Publishing Latest or Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_pit.html"
 last_updated: "12/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing Latest or Point-in-Time State
 
-In this article
 
 After you have published a standalone database or a Data Guard database to an Oracle server (as described in [Publishing to Specified Server](vep_ptsr.md)), you can quickly republish the database to the same server.
 
@@ -18,6 +19,4 @@ You can republish either of the following states:
 
 When you unpublish a database, both options remain available until you close the application so that you can quickly republish the database if required.
 
-Page updated 12/9/2024
 
-Page content applies to build 13.0.1.1071

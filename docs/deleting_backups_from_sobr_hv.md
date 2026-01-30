@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backups from Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deleting_backups_from_sobr_hv.html"
 last_updated: "9/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backups from Scale-Out Backup Repositories
 
-In this article
 
 To delete a backup from a scale-out backup repository, do the following:
 
@@ -31,6 +32,4 @@ Related Topics
 * [Capacity Tier](capacity_tier.md)
 * [Object Storage Repositories](object_storage_repository.md)
 
-Page updated 9/26/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRFiler"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrfiler.html"
 last_updated: "4/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRFiler
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Examples
 | --- | --- |
 | This example shows how to get enterprise NAS systems added to the inventory by specifying their IDs. The cmdlet output will contain the following details on the enterprise NAS systems: Server, AccessCredentials, Name, EnableSnapDiff, Id, CacheRepository, BackupIOControlLevel.  |  | | --- | | Get-VBRFiler -Id 'f804cc0c-e959-46c4-8515-47925ab5b77d'  Server               : Veeam.Backup.Core.Common.CHost AccessCredentials    : administrator Name                 : 7mode-01 EnableSnapDiff       : False Id                   : f804cc0c-e959-46c4-8515-47925ab5b77d CacheRepository      : Veeam.Backup.Core.CBackupRepository BackupIOControlLevel : Medium | |
 
-Page updated 4/29/2024
 
-Page content applies to build 13.0.1.1071

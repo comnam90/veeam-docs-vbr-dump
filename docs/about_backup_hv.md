@@ -1,5 +1,7 @@
 ---
 title: "About Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/about_backup_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # About Backup
 
-In this article
 
 Veeam Backup & Replication is built for virtual environments. It operates at the virtualization layer and uses an image-based approach for VM backup.
 
@@ -41,6 +42,4 @@ In This Section
 * [Backup Move](backup_moving_hv.md)
 * [Resume on Disconnect](replica_resume_disconnect_hv.md)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

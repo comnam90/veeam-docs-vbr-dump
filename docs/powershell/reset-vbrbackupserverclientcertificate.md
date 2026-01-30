@@ -1,5 +1,7 @@
 ---
 title: "Reset-VBRBackupServerClientCertificate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/reset-vbrbackupserverclientcertificate.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reset-VBRBackupServerClientCertificate
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command returns creates a new TLS certificate and adds it to the Veeam Bac
 | --- |
 | Reset-VBRBackupServerClientCertificate |
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

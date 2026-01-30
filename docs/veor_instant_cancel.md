@@ -1,5 +1,7 @@
 ---
 title: "Canceling Instant Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_instant_cancel.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Canceling Instant Recovery
 
-In this article
 
 If you have finished working with the published database and you do not want to switch over to it, you can cancel the instant recovery session.
 
@@ -41,6 +42,4 @@ Alternatively, you can right-click the session and click Stop publishing.
 
 [![Stopping Publishing](images/instant_stop_publishing.webp)](images/instant_stop_publishing.webp "Stopping Publishing")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

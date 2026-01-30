@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRViReplicaFailback"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvireplicafailback.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRViReplicaFailback
 
-In this article
 
 Short Description
 
@@ -118,6 +119,4 @@ Related Commands
 * [Find-VBRViEntity](find-vbrhventity.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

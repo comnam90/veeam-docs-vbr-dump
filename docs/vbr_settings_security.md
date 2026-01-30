@@ -1,5 +1,7 @@
 ---
 title: "Configuring Security Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_settings_security.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Security Settings
 
-In this article
 
 In the Security tab, you can configure the following:
 
@@ -31,6 +32,4 @@ Enable FIPS-compliant operation mode.
 
 Select a folder for storing audit logs.
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

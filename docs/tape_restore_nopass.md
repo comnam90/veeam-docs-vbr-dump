@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Create Request for Key Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restore_nopass.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Create Request for Key Restore
 
-In this article
 
 This procedure is performed by the Veeam Backup Administrator on the backup server.
 
@@ -29,6 +30,4 @@ To create a request for key restore, do the following:
 | Tip |
 | You can close the Encryption Key Restore wizard on the Veeam backup server and start it anew when you receive a response from the Veeam Backup Enterprise Manager Administrator. |
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

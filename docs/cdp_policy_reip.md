@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Configure Re-IP Rules"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_reip.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Configure Re-IP Rules
 
-In this article
 
 The Re-IP step is available if you have selected the Replica re-IP check box at the [Name](cdp_policy_name.md) step of the wizard. This step applies only to VMs with Microsoft Windows OSes.
 
@@ -31,6 +32,4 @@ To facilitate the configuration, Veeam Backup & Replication detects an IP addres
 
 ![Step 8. Configure Re-IP Rules](images/cdp_policy_reip.webp "Configure re-IP rules")
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

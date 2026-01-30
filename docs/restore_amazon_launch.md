@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore to Amazon EC2 Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_launch.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore to Amazon EC2 Wizard
 
-In this article
 
 To begin the restore process, do one of the following.
 
@@ -31,6 +32,4 @@ In the displayed window, click Entire VM restore > Restore to public cloud > Res
 
 [![Step 1. Launch Restore to Azure Wizard](images/amazon_restore_vm.webp)](images/amazon_restore_vm.webp)
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Manage Guest OS Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vbr_credentials_manage_hv_web.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manage Guest OS Credentials
 
-In this article
 
 If you enable application-aware processing or instruct Veeam Backup & Replication to create a catalog of VM files and folders, you must also specify a user whose credentials are used to communicate with VM guest OSes. Note that the specified user must have the permissions required to perform guest processing. For more information on the required permissions, see [Performing Guest Processing](required_permissions.md#rptcb).
 
@@ -37,6 +38,4 @@ To check whether Veeam Backup & Replication can connect to the VM guest OSes usi
 
 [![Click to zoom in](images/backup_job_vbr_vm_credentials_web.webp)](images/backup_job_vbr_vm_credentials_web.webp "Click to zoom in")
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

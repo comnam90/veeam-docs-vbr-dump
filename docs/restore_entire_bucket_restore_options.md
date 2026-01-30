@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_bucket_restore_options.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Restore Options
 
-In this article
 
 The Restore Options step is available if you select either the Original location option or the This location option at the [Destination](restore_entire_bucket_destination.md) step.
 
@@ -27,6 +28,4 @@ Select the Overwrite current bucket attributes with attributes from the backup c
 
 ![Step 5. Specify Restore Options](images/restore_entire_bucket_restore_options.webp "Specify Restore Options")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

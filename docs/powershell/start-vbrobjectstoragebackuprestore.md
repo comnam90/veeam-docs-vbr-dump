@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRObjectStorageBackupRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrobjectstoragebackuprestore.html"
 last_updated: "9/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRObjectStorageBackupRestore
 
-In this article
 
 Short Description
 
@@ -86,6 +87,4 @@ Related Commands
 * [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md)
 * [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md)
 
-Page updated 9/4/2024
 
-Page content applies to build 13.0.1.1071

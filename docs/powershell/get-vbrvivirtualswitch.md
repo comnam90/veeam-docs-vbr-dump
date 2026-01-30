@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRViVirtualSwitch"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvivirtualswitch.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRViVirtualSwitch
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Find-VBRViEntity](find-vbrvientity.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

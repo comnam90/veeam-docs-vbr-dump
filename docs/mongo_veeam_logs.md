@@ -1,5 +1,7 @@
 ---
 title: "Logs and Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_veeam_logs.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Logs and Support
 
-In this article
 
 If you have any questions or issues with Veeam Backup & Replication, you can search for a resolution on [Veeam R&D Forums](https://forums.veeam.com/) or submit a support case on the [Veeam Customer Support Portal](https://www.veeam.com/support.html).
 
@@ -33,6 +34,4 @@ Veeam Backup & Replication Logs
 
 For details on how to collect Veeam Backup & Replication logs, see [Exporting Logs](exporting_logs.md).
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

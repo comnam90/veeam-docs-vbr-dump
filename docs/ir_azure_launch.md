@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant Recovery to Microsoft Azure Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_launch.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant Recovery to Microsoft Azure Wizard
 
-In this article
 
 To launch the Instant Recovery to Microsoft Azure wizard, do one of the following:
 
@@ -34,6 +35,4 @@ To launch the Instant Recovery to Microsoft Azure wizard, do one of the followin
 
 [![Step 1. Launch Instant Recovery to Microsoft Azure Wizard](images/ir_azure_launch.webp)](images/ir_azure_launch.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

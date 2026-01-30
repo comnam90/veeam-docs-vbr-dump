@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_restoring_multiple_options.html"
 last_updated: "9/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select Restore Options
 
-In this article
 
 At this step of the wizard, select restore options and click Restore.
 
@@ -31,6 +32,4 @@ To prevent certain folders from being restored, click the Exclude folders link a
 
 [![Select Restore Options](images/vex_restore_options2.webp)](images/vex_restore_options2.webp "Select Restore Options")
 
-Page updated 9/19/2024
 
-Page content applies to build 13.0.1.1071

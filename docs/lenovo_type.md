@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Lenovo ThinkSystem DM Series Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/lenovo_type.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Lenovo ThinkSystem DM Series Storage Wizard
 
-In this article
 
 To launch the wizard for adding a storage system, do the following:
 
@@ -22,6 +23,4 @@ To launch the wizard for adding a storage system, do the following:
 
 [![Step 1. Launch New Lenovo ThinkSystem DM Series Storage Wizard](images/add_lenovo_thinksystem.webp)](images/add_lenovo_thinksystem.webp)
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

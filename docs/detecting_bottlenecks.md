@@ -1,5 +1,7 @@
 ---
 title: "Performance Bottlenecks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/detecting_bottlenecks.html"
 last_updated: "2/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performance Bottlenecks
 
-In this article
 
 As any backup application handles a great amount of data, it is important to make sure the data flow is efficient and all resources engaged in the backup process are optimally used. Veeam Backup & Replication provides advanced statistics about the data flow efficiency and lets you identify bottlenecks in the data transmission process.
 
@@ -48,6 +49,4 @@ In addition to main points in the data pipe, Veeam Backup & Replication may repo
 * If you limit the read and write data rates for a backup repository, a backup repository may become a bottleneck. Veeam Backup & Replication will report Throttling in the bottleneck statistics.
 * If you set up network throttling rules, network may become a bottleneck. Veeam Backup & Replication will report Throttling in the bottleneck statistics.
 
-Page updated 2/27/2025
 
-Page content applies to build 13.0.1.1071

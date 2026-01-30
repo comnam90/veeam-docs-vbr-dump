@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBRJobObject"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrjobobject.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBRJobObject
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Related Commands
 * [Get-VBRJobObject](get-vbrjobobject.md)
 * [Get-VBRJob](get-vbrjob.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

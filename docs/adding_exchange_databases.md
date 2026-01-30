@@ -1,5 +1,7 @@
 ---
 title: "Adding Microsoft Exchange Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_exchange_databases.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Microsoft Exchange Databases
 
-In this article
 
 You can add Microsoft Exchange databases to the application scope manually.
 
@@ -33,6 +34,4 @@ To manually add a Microsoft Exchange database, do the following:
 
 [![Adding Microsoft Exchange Databases](images/vee_add_store_1.webp)](images/vee_add_store_1.webp "Adding Microsoft Exchange Databases")
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

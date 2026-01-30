@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Target Database"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_target.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Target Database
 
-In this article
 
 At the Target Database step of the wizard, specify the target Microsoft SQL Server or PostgreSQL instance to which configuration data must be restored.
 
@@ -39,6 +40,4 @@ If you do not want to lose the current data, restore the configuration to a new 
 
 ![Step 6. Specify Target Database](images/vbr_restore_target_warning.webp)
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

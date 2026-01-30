@@ -1,5 +1,7 @@
 ---
 title: "Restore to Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Microsoft Azure
 
-In this article
 
 Veeam Backup & Replication allows you to restore different workloads (VMs, Google VM instances, physical servers and so on) from backups to Microsoft Azure.
 
@@ -65,6 +66,4 @@ In This Section
 * [Configuring Components and Accounts for Restore](restore_azure_setup.md)
 * [Restoring to Microsoft Azure](restore_azure_process.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "VM Files Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmfile_recovery_hv.html"
 last_updated: "3/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Files Restore
 
-In this article
 
 You can restore specific VM files (.XML, .VMCX, .VMRS, .VMGS, .VHD, .VHDX) if any of these files are deleted or the volume is corrupted. This option provides a great alternative to entire VM restore, for example, when your VM configuration file is missing and you need to restore it. Instead of restoring the whole VM image to the production storage, you can restore a specific VM file only.
 
@@ -22,6 +23,4 @@ Related Topics
 
 [Restoring VM Files](performing_vmfile_restore.md)
 
-Page updated 3/24/2025
 
-Page content applies to build 13.0.1.1071

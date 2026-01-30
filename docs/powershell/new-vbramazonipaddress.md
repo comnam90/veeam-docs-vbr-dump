@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAmazonIpAddress"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbramazonipaddress.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAmazonIpAddress
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ This command defines a static IP address.
 | --- |
 | New-VBRAmazonIpAddress -Type Static -Ip "172.172.72.72" |
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

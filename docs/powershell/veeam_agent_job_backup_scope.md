@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Job Backup Scope"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_job_backup_scope.html"
 last_updated: "7/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Job Backup Scope
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -20,6 +21,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [New-VBRSelectedPersonalFolders](new-vbrselectedpersonalfolders.md) | Defines the scope of personal data for Agent Backup jobs that back up Microsoft Windows and Mac computers. |
 | [Set-VBRSelectedPersonalFolders](set-vbrselectedpersonalfolders.md) | Modifies the scope of personal data for Agent Backup jobs that back up Microsoft Windows and Mac computers. |
 
-Page updated 7/24/2024
 
-Page content applies to build 13.0.1.1071

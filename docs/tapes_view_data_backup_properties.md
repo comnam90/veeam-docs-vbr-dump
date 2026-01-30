@@ -1,5 +1,7 @@
 ---
 title: "Viewing Unstructured Data Backup Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tapes_view_data_backup_properties.html"
 last_updated: "11/15/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Unstructured Data Backup Properties
 
-In this article
 
 You can view summary information about a selected object to tape or file backup to tape job. The summary information provides the following data:
 
@@ -27,6 +28,4 @@ To view summary information for backups:
 
 ![Viewing Unstructured Data Backup Properties](images/view_tape_backup_properties.webp)
 
-Page updated 11/15/2023
 
-Page content applies to build 13.0.1.1071

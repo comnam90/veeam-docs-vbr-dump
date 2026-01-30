@@ -1,5 +1,7 @@
 ---
 title: "Logs and Support"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_logs.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Logs and Support
 
-In this article
 
 If you have any questions or issues with Veeam Plug-In for SAP MaxDB or Veeam Backup & Replication, you can search for a resolution on [Veeam Community Forums](https://forums.veeam.com/) or submit a support case on the [Veeam Customer Support Portal](https://www.veeam.com/support.html).
 
@@ -60,6 +61,4 @@ To export SAP Backint logs, navigate to Veeam logs directory: /tmp/veeam\_plugin
 * /sdb/SapBackintMaxDBManager.log
 * /sdb/SapMaxDBBackint.log
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

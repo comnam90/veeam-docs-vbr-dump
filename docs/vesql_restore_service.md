@@ -1,5 +1,7 @@
 ---
 title: "Deploying Persistent and Non-Persistent Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_service.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deploying Persistent and Non-Persistent Components
 
-In this article
 
 To perform data recovery operations, Veeam Explorer for Microsoft SQL Server uses persistent agent or non-persistent runtime components — they check the valid rights assignments required for database recovery, get information about the databases, and later perform required file operations including database and transaction logs copy. Persistent components remain on the machine until they are manually deleted, while non-persistent components are automatically stopped and removed from the machine after the data recovery session completes.
 
@@ -71,6 +72,4 @@ Related Topics
 * [How Instant Recovery Works](vesql_instant_hiw.md)
 * [How Export Works](vesql_how_export_works.md)
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

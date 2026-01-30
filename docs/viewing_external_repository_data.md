@@ -1,5 +1,7 @@
 ---
 title: "Viewing External Repository Data"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_external_repository_data.html"
 last_updated: "8/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing External Repository Data
 
-In this article
 
 After you add an external repository to the backup infrastructure, you can view backups in External Repository and External Repository (Encrypted) nodes of the Backups node in the Home view.
 
@@ -31,6 +32,4 @@ Related Topics
 
 [Adding External Repositories](external_repositories_add.md)
 
-Page updated 8/13/2024
 
-Page content applies to build 13.0.1.1071

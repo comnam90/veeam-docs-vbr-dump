@@ -1,5 +1,7 @@
 ---
 title: "Exporting Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_pit.html"
 last_updated: "1/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Point-in-Time State
 
-In this article
 
 This section explains how to export a standalone database or a Data Guard database as an RMAN backup to a selected point-in-time state on the backup file. Your Oracle data will be exported to the default location.
 
@@ -18,6 +19,4 @@ To export data as an RMAN backup as of a point-in-time state, do the following:
 3. [Fine-tune the restore point](veor_rman_export_frp.md).
 4. [Review the export summary](veor_export_rman_pit_summary.md).
 
-Page updated 1/2/2025
 
-Page content applies to build 13.0.1.1071

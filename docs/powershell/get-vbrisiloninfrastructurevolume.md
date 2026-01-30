@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRIsilonInfrastructureVolume"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrisiloninfrastructurevolume.html"
 last_updated: "2/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRIsilonInfrastructureVolume
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This command returns Dell PowerScale storage volumes by the volume name.  |  | | --- | | Get-VBRIsilonInfrastructureVolume -Name "Volume4", "Volume5" | |
 
-Page updated 2/19/2024
 
-Page content applies to build 13.0.1.1071

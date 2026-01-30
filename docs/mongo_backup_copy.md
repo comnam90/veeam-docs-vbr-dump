@@ -1,5 +1,7 @@
 ---
 title: "Creating Backup Copy Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Backup Copy Job
 
-In this article
 
 The main backup purpose is to protect your data against disasters and virtual or physical machine failures. However, having just one backup does not provide the necessary level of safety. The primary backup may get destroyed together with production data, and you will have no backups from which you can restore data.
 
@@ -35,6 +36,4 @@ Before creating a job, [check prerequisites](mongo_backup_copy_prerequisites.md)
 8. [Define backup copy schedule](mongo_backup_copy_schedule.md).
 9. [Finish working with the wizard](mongo_backup_copy_summary.md).
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

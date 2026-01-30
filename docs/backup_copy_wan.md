@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Data Path Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_wan.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Data Path Settings
 
-In this article
 
 The Data Transfer step of the wizard is available only if you copy backups of virtual or physical machines created by Veeam Backup & Replication or Veeam Agents.
 
@@ -36,6 +37,4 @@ Related Topics
 
 [Adding WAN Accelerators](wan_add.md)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

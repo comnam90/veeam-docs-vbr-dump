@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRExternalRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrexternalrepository.html"
 last_updated: "1/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRExternalRepository
 
-In this article
 
 Short Description
 
@@ -71,6 +72,4 @@ Examples
 | --- | --- |
 | This command allows you to get an external repository by the external repository ID.  |  | | --- | | Get-VBRExternalRepository -Id "0x0x0xxx-000x-0x0x-000-000x00000x0x" | |
 
-Page updated 1/30/2024
 
-Page content applies to build 13.0.1.1071

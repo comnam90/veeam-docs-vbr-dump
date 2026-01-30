@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_server.html"
 last_updated: "11/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Server Settings
 
-In this article
 
 Options that you can specify at the Server step of the wizard depend on the type of backup repository you are adding.
 
@@ -68,6 +69,4 @@ Related Topics
 
 [Gateway Servers](gateway_server.md)
 
-Page updated 11/24/2025
 
-Page content applies to build 13.0.1.1071

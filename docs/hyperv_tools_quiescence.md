@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Hyper-V Guest Quiescence"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hyperv_tools_quiescence.html"
 last_updated: "3/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Hyper-V Guest Quiescence
 
-In this article
 
 When you back up or replicate a running VM, you need to quiesce or ‘freeze’ the VM to bring its file system and application data to a consistent state. Data quiescence is crucial for highly-transactional applications. It helps create transactionally consistent backups or replicas and guarantees safety of application data.
 
@@ -40,6 +41,4 @@ Microsoft Hyper-V guest quiescence is enabled at the job level for all VMs added
 
 ![Microsoft Hyper-V Guest Quiescence](images/hv_vss_app-aware.webp)
 
-Page updated 3/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRVMRestoreToAmazon"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvmrestoretoamazon.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRVMRestoreToAmazon
 
-In this article
 
 Short Description
 
@@ -101,6 +102,4 @@ Related Commands
 * [Get-VBRAmazonEC2Subnet](get-vbramazonec2subnet.md)
 * [New-VBRAmazonEC2ProxyAppliance](new-vbramazonec2proxyappliance.md)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrjob.html"
 last_updated: "12/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRJob
 
-In this article
 
 Short Description
 
@@ -88,6 +89,4 @@ Related Commands
 * [Add-VBRvCloud](add-vbrvcloud.md)
 * [Add-VBRvCloudJob](add-vbrvcloudjob.md)
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

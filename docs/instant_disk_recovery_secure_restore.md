@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Secure Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_secure_restore.html"
 last_updated: "3/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Secure Restore Settings
 
-In this article
 
 This step is available if you restore disks of Microsoft Windows VMs. However, this step is not available if you restore disks from storage snapshots.
 
@@ -47,6 +48,4 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 
 ![Step 6. Specify Secure Restore Settings](images/instant_disk_recovery_secure_restore.webp)
 
-Page updated 3/24/2025
 
-Page content applies to build 13.0.1.1071

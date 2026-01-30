@@ -1,5 +1,7 @@
 ---
 title: "Disable-VBRPluginJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrpluginjob_standalone.html"
 last_updated: "8/17/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disable-VBRPluginJob
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 
 [Get-VBRPluginJob](get-vbrpluginjob.md)
 
-Page updated 8/17/2023
 
-Page content applies to build 13.0.1.1071

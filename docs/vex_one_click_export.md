@@ -1,5 +1,7 @@
 ---
 title: "Using 1-Click Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_one_click_export.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using 1-Click Export
 
-In this article
 
 Veeam Explorer for Microsoft Exchange allows you to quickly export mailbox store data as PST files.
 
@@ -50,6 +51,4 @@ After the export process is complete, review the results shown in the Export sum
 
 [![Review Export Summary](images/vex_export_summary.webp)](images/vex_export_summary.webp "Review Export Summary")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

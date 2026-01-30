@@ -1,5 +1,7 @@
 ---
 title: "Network"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_network.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Network
 
-In this article
 
 Consider the following about network requirements:
 
@@ -26,6 +27,4 @@ Keep in mind that for Veeam Agent computers that are included in a protection gr
 
 * [For SSH connection to Linux- and Unix-based computers] Veeam Backup & Replication expects only standard command responses; unexpected additional console output may cause SSH connection failure. We recommend that you disable all login banners, MOTDs (Message of the Day) and remove output-generating code from shell initialization files for the account that Veeam Backup & Replication uses to connect to the host.
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

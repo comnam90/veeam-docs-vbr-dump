@@ -1,5 +1,7 @@
 ---
 title: "Starting and Stopping Transaction Log Backup Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/starting_transaction_log_jobs_web.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting and Stopping Transaction Log Backup Jobs
 
-In this article
 
 If you create a backup job and instruct it to ship transaction logs, the backup job comprises 2 jobs:
 
@@ -63,6 +64,4 @@ To re-activate transaction log processing for all VMs in the parent backup job, 
 
 [![Click to zoom in](images/log_backup_disable_web.webp)](images/log_backup_disable_web.webp "Click to zoom in")
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

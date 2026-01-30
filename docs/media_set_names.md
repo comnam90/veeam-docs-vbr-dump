@@ -1,5 +1,7 @@
 ---
 title: "Media Set Names"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/media_set_names.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Media Set Names
 
-In this article
 
 Consistent naming of media sets makes the work with media pools easier. Therefore, we recommend to pay attention to configuring media set naming patterns when configuring [media pools](add_media_pool_set.md) and [GFS media pools](add_gfs_media_pool_advanced.md).
 
@@ -55,6 +56,4 @@ The default variables are #%id% (the number of the media set) and %date% (the da
 | --- |
 | %job%\_Yearly\_%year% |
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

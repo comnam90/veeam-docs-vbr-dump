@@ -1,5 +1,7 @@
 ---
 title: "Clearing Backup Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_cache.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Clearing Backup Cache
 
-In this article
 
 You can use the Veeam backup console to delete restore points from the backup cache on computers added to the backup policy. This operation may be required, for example, if the backup cache contains one or more restore points, and the backup chain in the target location has changed prior to the time when Veeam Agent starts uploading restore points to the target location.
 
@@ -25,6 +26,4 @@ To clear the backup cache on Veeam Agent computers added to the backup policy:
 
 [![Clear Backup Cache](images/agent_policy_cache.webp)](images/agent_policy_cache.webp "Clear Backup Cache")
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

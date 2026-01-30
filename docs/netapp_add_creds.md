@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials and Protocol Type"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_add_creds.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials and Protocol Type
 
-In this article
 
 At the Credentials step of the wizard, specify credentials for a user account with administrator privileges on the storage system, and select the communication protocol.
 
@@ -32,6 +33,4 @@ When you update a certificate on a server, this server becomes unavailable in th
 
 ![Step 3. Specify Credentials and Protocol Type](images/netapp_add_creds.webp)
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

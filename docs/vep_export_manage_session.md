@@ -1,5 +1,7 @@
 ---
 title: "Managing Export Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_export_manage_session.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Export Session
 
-In this article
 
 After you finish the steps of the Export wizard, Veeam Explorer for PostgreSQL starts an export session for each of the selected databases.
 
@@ -41,6 +42,4 @@ Alternatively, you can right-click the Export node or the relevant database and 
 
 [![Canceling Export](images/vep_export_cancel.webp)](images/vep_export_cancel.webp "Canceling Export")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

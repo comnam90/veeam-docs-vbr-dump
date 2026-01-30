@@ -1,5 +1,7 @@
 ---
 title: "Viewing Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_replica_sets_properties.html"
 last_updated: "12/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Properties
 
-In this article
 
 You can view detailed information about protected replica sets. The detailed information provides the following data:
 
@@ -23,6 +24,4 @@ To view detailed information about a protected replica set:
 
 [![Rescan Protected Computer](images/mongo_protected_replica_sets_properties.webp)](images/mongo_protected_replica_sets_properties.webp "Rescan Protected Computer")
 
-Page updated 12/20/2024
 
-Page content applies to build 13.0.1.1071

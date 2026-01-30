@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRAzureLinuxRestoreAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazurelinuxrestoreappliance.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRAzureLinuxRestoreAppliance
 
-In this article
 
 Short Description
 
@@ -88,6 +89,4 @@ Related Commands
 * [Get-VBRAzureVirtualNetwork](get-vbrazurevirtualnetwork.md)
 * [VBRAzureNetworkSubnet](vbrazurenetworksubnet.md)
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

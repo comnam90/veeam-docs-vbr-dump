@@ -1,5 +1,7 @@
 ---
 title: "Committing Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_comitting_failback.html"
 last_updated: "10/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Committing Failback
 
-In this article
 
 For more information on failback commit, see [Failover and Failback for CDP](cdp_failover_failback.md) and [Failback Commit](cdp_failback_commit.md).
 
@@ -24,6 +25,4 @@ To commit failback:
 
 [![Commit failback](images/cdp_failback_commit.webp)](images/cdp_failback_commit.webp "Commit failback")
 
-Page updated 10/31/2023
 
-Page content applies to build 13.0.1.1071

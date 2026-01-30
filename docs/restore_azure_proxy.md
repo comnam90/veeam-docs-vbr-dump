@@ -1,5 +1,7 @@
 ---
 title: "Managing Azure Restore Proxy Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Azure Restore Proxy Appliances
 
-In this article
 
 Azure restore proxy appliances (former Azure proxies) are Windows-based VMs over which Veeam Backup & Replication transports VM disk data to Blob storage. Veeam Backup & Replication uses Azure restore proxy appliances during restore of Windows-based and Linux-based workloads.
 
@@ -24,6 +25,4 @@ In This Section
 * [Configuring Azure Restore Proxy Appliances](restore_azure_proxy_config.md)
 * [Removing Azure Restore Proxy Appliances](restore_azure_remove_proxy.md)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

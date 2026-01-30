@@ -1,5 +1,7 @@
 ---
 title: "Licensing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/licensing_mssql.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Licensing
 
-In this article
 
 To use the Veeam Plug-In functionality, you must have a valid Veeam Backup & Replication license. Licenses are installed and managed on the Veeam Backup & Replication server that is connected to the Veeam Plug-In server. If the license is not valid or out of resources, Veeam Plug-In backup jobs fail.
 
@@ -49,6 +50,4 @@ Obtaining and Managing Licenses
 
 For details on how to install a license and monitor licensed objects, see [Licensing](licensing.md) for Veeam Backup & Replication.
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

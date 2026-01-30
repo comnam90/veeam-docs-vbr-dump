@@ -1,5 +1,7 @@
 ---
 title: "Receiving Scale-Out Backup Repository Reports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_reports.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Receiving Scale-Out Backup Repository Reports
 
-In this article
 
 Veeam Backup & Replication is capable of sending reports that contain information about processing results of your scale-out backup repositories data.
 
@@ -95,6 +96,4 @@ Related Topics
 
 [Viewing Capacity Tier Sessions Statistic](offload_session_results.md)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

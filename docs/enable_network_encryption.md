@@ -1,5 +1,7 @@
 ---
 title: "Enabling Traffic Encryption"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/enable_network_encryption.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enabling Traffic Encryption
 
-In this article
 
 By default, Veeam Backup & Replication encrypts network traffic transferred between public networks. For details, see [Adjusting Internet Rule](internet_rule.md).
 
@@ -35,6 +36,4 @@ Related Topics
 
 [Communications Encryption](communications_encryption.md)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

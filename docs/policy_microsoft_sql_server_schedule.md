@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Policy Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_schedule.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Policy Schedule
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -51,6 +52,4 @@ For example, you have configured a job to run with a 2-hour interval and defined
 
 ![Step 8. Specify Policy Schedule](images/plugins_policy_mssql_schedule.webp)
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

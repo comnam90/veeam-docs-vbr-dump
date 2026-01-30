@@ -1,5 +1,7 @@
 ---
 title: "New-VBRJobOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrjoboptions.html"
 last_updated: "3/13/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRJobOptions
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Set-VBRJobOptions](set-vbrjoboptions.md)
 
-Page updated 3/13/2024
 
-Page content applies to build 13.0.1.1071

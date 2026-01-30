@@ -1,5 +1,7 @@
 ---
 title: "Starting Backup Job on Veeam Plug-In Side"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_start_job_from_vp.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting Backup Job on Veeam Plug-In Side
 
-In this article
 
 In the Veeam Plug-In management scenario, you can still manually start an application backup job from the computer with Veeam Plug-In installed. For example, this may be useful if you want to create an ad-hoc backup just before the database maintenance.
 
@@ -71,6 +72,4 @@ If you create an application backup policy for Veeam Plug-In for Microsoft SQL S
 | Tip |
 | With Veeam Plug-In for Microsoft SQL Server operating in the managed mode, you can still back up an SQL database using a standalone backup job. For details, see [Backing Up SQL Databases with Standalone Backup Job](mssql_configure_backup_exclude_from_managed.md). |
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

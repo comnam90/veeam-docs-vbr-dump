@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRObjectStorageRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrobjectstoragerepository.html"
 last_updated: "11/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRObjectStorageRepository
 
-In this article
 
 Short Description
 
@@ -84,6 +85,4 @@ Examples
 | --- | --- |
 | This command gets all S3 compatible object storage added as backup repositories.  |  | | --- | | Get-VBRObjectStorageRepository -Type AmazonS3Compatible | |
 
-Page updated 11/22/2024
 
-Page content applies to build 13.0.1.1071

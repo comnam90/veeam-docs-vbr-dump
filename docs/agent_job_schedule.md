@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Specify Backup Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_schedule.html"
 last_updated: "2/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Specify Backup Schedule
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -56,6 +57,4 @@ If the job exceeds the allowed window, it will be automatically terminated. In t
 
 ![Step 11. Specify Backup Schedule](images/agent_job_schedule_server.webp "Specify Scheduling Settings for Servers and Clusters")
 
-Page updated 2/20/2025
 
-Page content applies to build 13.0.1.1071

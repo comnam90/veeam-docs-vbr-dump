@@ -1,5 +1,7 @@
 ---
 title: "Adding Unstructured Data Source"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_unstructured_data.html"
 last_updated: "6/7/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Unstructured Data Source
 
-In this article
 
 You must add to the backup infrastructure sources of unstructured data that you plan to protect with the file to tape and object to tape jobs.
 
@@ -21,6 +22,4 @@ You can add the following types to the inventory of your virtual infrastructure:
 
 * [Object storage](tape_adding_object_storage.md)
 
-Page updated 6/7/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRCDPWindowsFileRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcdpwindowsfilerestore.html"
 last_updated: "7/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRCDPWindowsFileRestore
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Related Commands
 * [Get-VBRCDPLongTermRestorePoint](get-vbrcdplongtermrestorepoint.md)
 * [Get-VBRCredentials](get-vbrcredentials.md)
 
-Page updated 7/30/2025
 
-Page content applies to build 13.0.1.1071

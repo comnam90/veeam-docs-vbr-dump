@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_before.html"
 last_updated: "11/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create an application backup policy in the Veeam Backup & Replication console, check the following prerequisites:
 
@@ -24,6 +25,4 @@ Application backup policies have the following limitations:
 
 * If your database resides on a Oracle Exadata Database Machine, you may need to adjust the memory limit (memlock) for Veeam Transport Service. Otherwise, the application backup policy will fail. To learn more, see [this Veeam KB article](https://www.veeam.com/kb4518).
 
-Page updated 11/8/2024
 
-Page content applies to build 13.0.1.1071

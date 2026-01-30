@@ -1,5 +1,7 @@
 ---
 title: "Backup of VMs on Local Storage and CSV"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_process.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup of VMs on Local Storage and CSV
 
-In this article
 
 For backup of VMs on local storage and CSV (Cluster Shared Volumes), Veeam Backup & Replication uses the Microsoft VSS framework and Microsoft Hyper-V VSS components. Veeam Backup & Replication acts as a Microsoft VSS requestor and communicates with the Microsoft VSS framework. It obtains information about available Microsoft VSS components from Microsoft VSS, specifies which components Microsoft VSS must use, identifies the volumes where VM files are located, and triggers the Microsoft VSS coordinator to create volume snapshots.
 
@@ -30,6 +31,4 @@ Related Topics
 * [Creating Backup Jobs](backup_job_hv.md)
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

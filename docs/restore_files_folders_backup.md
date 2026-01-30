@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Object to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_folders_backup.html"
 last_updated: "7/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Object to Restore
 
-In this article
 
 At the Backup step of the wizard, select the file share backup you want to restore files from:
 
@@ -21,6 +22,4 @@ To quickly find a file share, you can use the search field at the bottom of the 
 
 ![Step 2. Select Object to Restore](images/restore_files_folders_backup.webp "Select Object to Restore")
 
-Page updated 7/2/2024
 
-Page content applies to build 13.0.1.1071

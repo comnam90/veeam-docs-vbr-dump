@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Finish Migration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_migrator_finish_migration.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Finish Migration
 
-In this article
 
 To finish the migration process, do the following:
 
@@ -16,6 +17,4 @@ To finish the migration process, do the following:
 * Recreate virtual labs.
 * If you use exclusions to remove objects from processing in your jobs, verify and update the exclusion lists for each job.
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

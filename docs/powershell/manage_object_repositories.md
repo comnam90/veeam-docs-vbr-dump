@@ -1,5 +1,7 @@
 ---
 title: "Managing Object Storage Repositories"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/manage_object_repositories.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Object Storage Repositories
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -22,6 +23,4 @@ You can use the cmdlets in this topic to perform the following operations:
 | [Get-VBRS3CompatibleRepositorySecurityOptions](get-vbrs3compatiblerepositorysecurityoptions.md) | Returns settings that Veeam Agent uses to access S3 compatible Compatible repositories. |
 | [Set-VBRS3CompatibleRepositorySecurityOptions](set-vbrs3compatiblerepositorysecurityoptions.md) | Modifies settings that Veeam Agent uses to access S3 compatible Compatible repositories. |
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

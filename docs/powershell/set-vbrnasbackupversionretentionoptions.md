@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRNASBackupVersionRetentionOptions (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnasbackupversionretentionoptions.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRNASBackupVersionRetentionOptions (obsolete)
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Examples
 | --- | --- |
 | This example shows how to enable the version-based retention settings for active files and it for deleted files. The version-based retention settings applies to the backup and archive repository and they will keep file versions of active files for 21 days and deleted files for 7 days.  |  | | --- | | $version\_retention\_options = New-VBRNASBackupVersionRetentionOptions -VersionRetentionType  $new\_version\_retention\_options = Set-VBRNASBackupVersionRetentionOptions -Options $version\_retention\_options -VersionRetentionType BackupAndArchive -EnableActiveFileVersionRetention -ActiveFileVersionRetention 21 -EnableDeletedFileVersionRetention -DeletedFileVersionRetention 7 |  Perform the following steps:   1. Run the [New-VBRNASBackupVersionRetentionOptions](new-vbrnasbackupversionretentionoptions.md) cmdlet. Use default settings. Save the result to the $version\_retention\_options variable. 2. Run the Set-VBRNASBackupVersionRetentionOptions cmdlet. Specify the following settings:  * Set the $new\_version\_retention\_options variable as the Options parameter value. * Set the VersionRetentionType parameter to the BackupAndArchive value. * Specify the EnableActiveFileVersionRetention parameter value. * Set the ActiveFileVersionRetention parameter to the 21 value. * Specify the EnableDeletedFileVersionRetention parameter value. * Set the DeletedFileVersionRetention parameter to the 7 value.  * Save the result to the $new\_version\_retention\_options variable to be used with other cmdlets. |
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

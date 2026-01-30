@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Oracle Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_multiple_tas_specify_oracle_settings.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Oracle Settings
 
-In this article
 
 At this step of the wizard, select a location to which you want to restore the databases.
 
@@ -24,6 +25,4 @@ At this step of the wizard, select a location to which you want to restore the d
 
 [![Specifying Oracle Home User Password](images/veor_restore_oracle_home_password.webp)](images/veor_restore_oracle_home_password.webp "Specifying Oracle Home User Password")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

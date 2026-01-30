@@ -1,5 +1,7 @@
 ---
 title: "Data Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_backup_mssql_plugin.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup
 
-In this article
 
 Veeam Plug-In for Microsoft SQL Server uses native Microsoft SQL Server mechanisms to create application-level backups of Microsoft SQL Server data. You can use Veeam Plug-In to create backups of the following types:
 
@@ -60,6 +61,4 @@ After that, you will be able to configure job schedule in the properties of the 
 
 After that, you will be able to use the resulting command in a custom backup script or with a scheduling tool of your choice.
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

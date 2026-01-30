@@ -1,5 +1,7 @@
 ---
 title: "Static IP Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_ip_mapping_hv.html"
 last_updated: "5/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Static IP Mapping
 
-In this article
 
 Sometimes it is necessary to provide many clients with access to a restored VM, which is especially the case for user-directed application item-level recovery. For example, you may want to provide users with access to the Microsoft Exchange Server started in the virtual lab using web-based access (like Outlook Web Access). Technically, you may update the routing table on every client machine; however, this will demand a lot of administrative effort.
 
@@ -21,6 +22,4 @@ For example, for a VM with IP address 192.168.1.20 in the isolated network, you 
 
 You can also register an alias record in the production DNS server for the reserved IP address. For example, you can register backup.exchange.local as an alias for the IP address 192.168.1.99, and users will be able to access Microsoft Exchange Server by this alias.
 
-Page updated 5/5/2025
 
-Page content applies to build 13.0.1.1071

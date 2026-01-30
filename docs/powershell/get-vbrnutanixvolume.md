@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNutanixVolume"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnutanixvolume.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNutanixVolume
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ This command gets Nutanix Files volumes.
 | --- |
 | Get-VBRNutanixVolume -Name "VOL01" |
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

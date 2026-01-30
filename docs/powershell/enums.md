@@ -1,5 +1,7 @@
 ---
 title: "Veeam PowerShell Enumerations"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/enums.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam PowerShell Enumerations
 
-In this article
 
 In this section you can find enumerations used by Veeam PowerShell.
 
@@ -956,6 +957,4 @@ Update type.
 | SecurityOnly | Security updates are installed. |
 | SecurityAndOptional | Security and optional updates are installed. |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

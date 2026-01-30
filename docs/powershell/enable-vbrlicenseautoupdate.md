@@ -1,5 +1,7 @@
 ---
 title: "Enable-VBRLicenseAutoUpdate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/enable-vbrlicenseautoupdate.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Enable-VBRLicenseAutoUpdate
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command enables the automatic license update option.
 | --- |
 | Enable-VBRLicenseAutoUpdate |
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

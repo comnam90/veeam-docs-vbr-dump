@@ -1,5 +1,7 @@
 ---
 title: "Instant VM Disk Recovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/instant_vm_disk_recovery.html"
 last_updated: "4/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant VM Disk Recovery
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Start-VBRViInstantVMDiskRecovery](start-vbrviinstantvmdiskrecovery.md) | Starts restore of VM virtual disks from backups. |
 | [Stop-VBRViInstantVMDiskRecovery](stop-vbrviinstantvmdiskrecovery.md) | Stops restore of VM virtual disks. |
 
-Page updated 4/11/2024
 
-Page content applies to build 13.0.1.1071

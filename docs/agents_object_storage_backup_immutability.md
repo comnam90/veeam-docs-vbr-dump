@@ -1,5 +1,7 @@
 ---
 title: "Backup Immutability"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage_backup_immutability.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Immutability
 
-In this article
 
 If you store your backup files in an object storage repository, Veeam Agent allows you to protect backup data from deletion or modification by making that data temporarily immutable. It is done for increased security: immutability protects data in your recent backups from loss as a result of attacks, malware activity or any other injurious actions.
 
@@ -55,6 +56,4 @@ Backup Immutability and Retention Policy
 
 Veeam Agent removes obsolete restore points based on the defined backup retention policy, but only if such restore points are no longer immutable. If data associated with an obsolete restore point is still immutable, such restore point will remain in the backup chain and in the repository until its immutability period is over. After that, such restore point is automatically removed from the backup chain and storage.
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

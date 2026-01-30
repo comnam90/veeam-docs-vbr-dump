@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRComputerBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcomputerbackupjob.html"
 last_updated: "3/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRComputerBackupJob
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Examples
 | --- | --- |
 | This command returns an array of Veeam Agent backup policies.  |  | | --- | | Get-VBRComputerBackupJob -Mode ManagedByAgent | |
 
-Page updated 3/6/2024
 
-Page content applies to build 13.0.1.1071

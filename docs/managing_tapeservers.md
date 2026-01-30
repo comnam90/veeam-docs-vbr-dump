@@ -1,5 +1,7 @@
 ---
 title: "Modifying Tape Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_tapeservers.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Modifying Tape Servers
 
-In this article
 
 To edit settings of an added tape server:
 
@@ -18,6 +19,4 @@ To edit settings of an added tape server:
 
 [![Modifying Tape Servers](images/edit_tape_server.webp)](images/edit_tape_server.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

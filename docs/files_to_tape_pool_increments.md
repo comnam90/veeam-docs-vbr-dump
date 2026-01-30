@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Media Pool for Incremental Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_to_tape_pool_increments.html"
 last_updated: "6/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Media Pool for Incremental Backups
 
-In this article
 
 This step is available only if you selected a regular media pool as target for full backups.
 
@@ -29,6 +30,4 @@ At the Incremental Backup step of the wizard, choose a media pool that will be u
 
 ![Step 5. Specify Media Pool for Incremental Backups](images/files_to_tape_pool_increments.webp)
 
-Page updated 6/27/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Google VPC"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_network.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Google VPC
 
-In this article
 
 At the Network step of the wizard, you can select to which Google Virtual Private Cloud (Google VPC) network the workload must be connected after restore. You can also specify a subnet. For the information on Google VPC, see the [Google Cloud documentation](https://cloud.google.com/vpc/docs).
 
@@ -23,6 +24,4 @@ To define network settings for the restored workload, do the following:
 
 ![Step 6. Select Google VPC](images/restore_google_network.webp)
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "WAN Global Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_global_cache.html"
 last_updated: "7/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WAN Global Cache
 
-In this article
 
 From the technical point of view, the global cache is a folder on the target WAN accelerator. By default, global cache data is stored in the VeeamWAN folder on the disk with the most amount of space available. However, you can define any folder of your choice when you configure the target WAN accelerator.
 
@@ -41,6 +42,4 @@ Related Topics
 * [Many to One WAN Acceleration](wan_acceleration_many.md)
 * [Manual Population of Global Cache](wan_population.md)
 
-Page updated 7/18/2024
 
-Page content applies to build 13.0.1.1071

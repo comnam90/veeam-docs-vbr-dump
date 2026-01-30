@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNASBackupTaskSession (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasbackuptasksession.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNASBackupTaskSession (obsolete)
 
-In this article
 
 Short Description
 
@@ -88,6 +89,4 @@ Related Commands
 
 [Get-VBRNASBackupSession](get-vbrnasbackupsession.md)
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

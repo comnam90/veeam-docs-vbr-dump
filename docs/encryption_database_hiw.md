@@ -1,5 +1,7 @@
 ---
 title: "How Database Data Encryption Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_database_hiw.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Database Data Encryption Works
 
-In this article
 
 To protect data encryption keys, passwords, secret keys, KMS keys, certificates and other sensitive information stored in the configuration database, Veeam Backup & Replication uses built-in operating system mechanisms for data protection:
 
@@ -16,6 +17,4 @@ To protect data encryption keys, passwords, secret keys, KMS keys, certificates 
 
 For encrypted configuration backups, data protection on the operating system level is replaced with data protection mechanisms provided by Veeam Backup & Replication. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md).
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

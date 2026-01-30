@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Hardware Plans"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/hardware_plans.html"
 last_updated: "9/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Hardware Plans
 
-In this article
 
 Hardware plans are quotas of hardware resources for cloud replication. Hardware plans include:
 
@@ -42,6 +43,4 @@ VLANs
 | [Remove-VBRCloudVLANConfiguration](remove-vbrcloudvlanconfiguration.md) | | Removes a VLANs pool |
 | [Get-VBRViVirtualSwitch](get-vbrvivirtualswitch.md) | — | Returns virtual switches |
 
-Page updated 9/4/2023
 
-Page content applies to build 13.0.1.1071

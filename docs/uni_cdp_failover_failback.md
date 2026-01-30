@@ -1,5 +1,7 @@
 ---
 title: "Failover and Failback for Universal CDP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_failback.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover and Failback for Universal CDP
 
-In this article
 
 Failover and failback operations help you ensure that your business will function even if a disaster strikes your production site. Failover is a process of switching from the source workload to its replica on a host in the disaster recovery site. Failback is a process of switching from the replica to the new production VM. This production VM will be recovered from a replica.
 
@@ -73,6 +74,4 @@ Related Topics
 * [Failback Commit](uni_cdp_failback_commit.md)
 * [Failback Undo](uni_cdp_failback_undo.md)
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

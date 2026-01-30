@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Job Name and Description"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_name_hv.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Job Name and Description
 
-In this article
 
 At the Job step of the wizard, specify a job name and description, and configure advanced settings for the replication job.
 
@@ -38,6 +39,4 @@ Related Topics
 
 [Replica Seeding and Mapping](replica_seed_hv.md)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

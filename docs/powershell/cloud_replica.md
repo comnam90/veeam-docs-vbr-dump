@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Replication"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cloud_replica.html"
 last_updated: "2/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Replication
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with cloud replication jobs:
 
@@ -19,6 +20,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Get-VBRCloudServer](get-vbrcloudserver.md) |  | Returns cloud hosts available by your cloud resources |
 | [Get-VBRCloudServerNetworkInfo](get-vbrcloudservernetworkinfo.md) |  | Returns networks available in your cloud resources |
 
-Page updated 2/9/2024
 
-Page content applies to build 13.0.1.1071

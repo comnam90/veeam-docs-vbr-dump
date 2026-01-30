@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRApplicationGroup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrapplicationgroup.html"
 last_updated: "4/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRApplicationGroup
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ Examples
 | --- | --- |
 | This command returns the AppGroup for SQL verification application group. The cmdlet output will contain the details about the Name and the Description of an application group.  |  | | --- | | Get-VBRApplicationGroup -Name "Exchange Application Group"  Name                 Description  ----                 -----------  Exchange Group       AppGroup for Exchange verification | |
 
-Page updated 4/30/2024
 
-Page content applies to build 13.0.1.1071

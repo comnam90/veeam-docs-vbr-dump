@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New External Repository Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_google_cloud_launching_wizard.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New External Repository Wizard
 
-In this article
 
 To launch the New External Repository wizard, do one of the following:
 
@@ -16,6 +17,4 @@ To launch the New External Repository wizard, do one of the following:
 
 [![Step 1. Launch New External Repository Wizard ](images/new_external_google_splash.webp)](images/new_external_google_splash.webp)
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

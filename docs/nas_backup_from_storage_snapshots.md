@@ -1,5 +1,7 @@
 ---
 title: "NAS File Share Backup from Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_backup_from_storage_snapshots.html"
 last_updated: "10/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NAS File Share Backup from Storage Snapshots
 
-In this article
 
 For backup from storage snapshots, Veeam Backup & Replication uses storage snapshots as a source of data for backup. During backup from storage snapshots, Veeam Backup & Replication triggers a storage snapshot of the volume where the NAS file share is located.
 
@@ -63,6 +64,4 @@ Data packages comprise backup data files (each 64 MB in size) and metadata files
 1. Veeam Backup & Replication checks file versions in the backup repository against retention settings and moves backup data from the backup repository to the archive repository if necessary.
 2. [For all job sessions after the first one] Veeam Backup & Replication deletes the previous storage snapshot, keeping the newest storage snapshot.
 
-Page updated 10/23/2025
 
-Page content applies to build 13.0.1.1071

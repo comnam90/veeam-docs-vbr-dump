@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_before_mac.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a Veeam Agent backup policy in the Veeam Backup & Replication console, check the following prerequisites:
 
@@ -31,6 +32,4 @@ Keep in mind, that you can immediately update settings of the backup policy from
 
 * Veeam Agent backup policy may fail unexpectedly due to restrictions applied on the Veeam Agent computer side. For more information, see [Backup Job Restrictions](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_job_restrictions.html) in the Veeam Agent for Mac User Guide.
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

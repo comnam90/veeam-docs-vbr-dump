@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Workloads and Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_vms_vm_web.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Workloads and Restore Points
 
-In this article
 
 At the Machines step of the wizard, you can change the list of workloads that you want to recover and also select restore points.
 
@@ -32,6 +33,4 @@ To select a restore point:
 
 [![Select Restore Point - Web UI](images/instant_recovery_point_vm_web.webp)](images/instant_recovery_point_vm_web.webp "Select Restore Point - Web UI")
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

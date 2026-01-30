@@ -1,5 +1,7 @@
 ---
 title: "Restore to Proxmox VE"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_prox.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Proxmox VE
 
-In this article
 
 Veeam Backup & Replication allows you to recover different workloads as Proxmox VE VMs.
 
@@ -37,6 +38,4 @@ The restore procedure of entire workloads to Proxmox VE practically does not dif
 
 [![Restore to Proxmox VE](images/restore_proxmox.webp)](images/restore_proxmox.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Point in Time"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_multiple_pit_specify_pit.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Point in Time
 
-In this article
 
 At this step of the wizard, specify a point in time to which you want to restore the selected SAP HANA databases.
 
@@ -23,6 +24,4 @@ Each database will be restored to the most recent available state to the date an
 
 [![Specifying Point in Time](images/vehana_specify_multiple_pit.webp)](images/vehana_specify_multiple_pit.webp "Specifying Point in Time")
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

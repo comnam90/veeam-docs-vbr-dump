@@ -1,5 +1,7 @@
 ---
 title: "Audit Logs Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/audit_logs_location.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Audit Logs Location
 
-In this article
 
 Veeam Backup & Replication logs activities during File-Level Restore sessions involving backups, replicas and unstructured data backups. The results are stored in form of .csv files that are called audit logs. For more information about log files, see [Managing Logs](logging.md).
 
@@ -24,6 +25,4 @@ By default, older audit logs are compressed automatically. To perform this opera
 
 ![Audit Logs Location](images/audit_logs.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

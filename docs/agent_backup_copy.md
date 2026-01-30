@@ -1,5 +1,7 @@
 ---
 title: "Copying Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_copy.html"
 last_updated: "9/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copying Backup
 
-In this article
 
 You can copy backups created by a backup job managed by Veeam backup server. This functionality allows you to create several copies of the same backup in different locations, whether onsite or offsite. Backup copies have the same format as files created by backup jobs and you can recover your data from them when you need it.
 
@@ -49,6 +50,4 @@ During the retry operation, Veeam Backup & Replication does not relaunch the cop
 
 [![Manage Failed Activity](images/agent_backup_copy_action.webp)](images/agent_backup_copy_action.webp "Manage Failed Activity")
 
-Page updated 9/11/2025
 
-Page content applies to build 13.0.1.1071

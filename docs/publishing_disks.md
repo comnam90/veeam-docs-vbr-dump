@@ -1,5 +1,7 @@
 ---
 title: "Publishing Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/publishing_disks.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing Disks
 
-In this article
 
 To publish a disk, use the Publish Disks wizard.
 
@@ -19,6 +20,4 @@ To publish a disk, use the Publish Disks wizard.
 6. [Specify a reason](publishing_disks_reason.md).
 7. [Finish working with the wizard](publishing_disks_summary.md).
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

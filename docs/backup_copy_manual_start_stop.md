@@ -1,5 +1,7 @@
 ---
 title: "Starting and Stopping Backup Copy Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_manual_start_stop.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting and Stopping Backup Copy Jobs
 
-In this article
 
 Manual start can be helpful if the backup copy job was disabled for some time and restore points were not copied to the target repository. This procedure differs for the periodic and immediate copy modes. You can also manually stop the periodic backup copy job. For more information, see the following sections:
 
@@ -58,6 +59,4 @@ Related Topics
 
 * [Backup Copy Modes](backup_copy_modes.md)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

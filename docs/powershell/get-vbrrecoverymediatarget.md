@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRRecoveryMediaTarget"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrrecoverymediatarget.html"
 last_updated: "10/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRRecoveryMediaTarget
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Examples
 | --- | --- |
 | This command returns all attached removable storage devices that can be used for creating Veeam Recovery Media.  |  | | --- | | Get-VBRRecoveryMediaTarget -Type RemovableDevice | |
 
-Page updated 10/9/2025
 
-Page content applies to build 13.0.1.1071

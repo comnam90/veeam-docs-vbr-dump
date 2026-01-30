@@ -1,5 +1,7 @@
 ---
 title: "Moving Tapes to Vault"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/placing_tapes_to_vault.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Moving Tapes to Vault
 
-In this article
 
 Recorded tapes can be moved to a vault. In the vault, you can view tape information, including data written to tape and data retention settings.
 
@@ -64,6 +65,4 @@ Vaulting of GFS tapes is set for media sets individually. To change a media set 
 | Tip |
 | If you have not previously created a vault, you can click the Add New button and create a new vault without closing the job wizard. For more information, see [Creating Vaults](creating_media_vaults.md). |
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

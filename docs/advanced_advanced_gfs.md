@@ -1,5 +1,7 @@
 ---
 title: "Advanced Settings for GFS Tape Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/advanced_advanced_gfs.html"
 last_updated: "7/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Settings for GFS Tape Job
 
-In this article
 
 This step of the wizard is available if you selected a GFS media pool at the Media Pool step of the wizard.
 
@@ -27,6 +28,4 @@ You can select to execute pre- and post-job actions after a number of job sessio
 | Tip |
 | After you specify necessary settings for the tape job, you can save them as default settings. To do this, click Save as Default at the bottom left corner of the Advanced Settings window. When you create a new backup to tape job, Veeam Backup & Replication will automatically apply the default settings to the new job. |
 
-Page updated 7/11/2024
 
-Page content applies to build 13.0.1.1071

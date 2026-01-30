@@ -1,5 +1,7 @@
 ---
 title: "Advanced Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_logging.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Settings
 
-In this article
 
 Veeam Explorer for Microsoft Teams allows you to configure advanced settings such as extended logging mode and pop-up notifications.
 
@@ -22,6 +23,4 @@ To configure advanced settings, do the following:
 
 [![Configuring Advanced Settings](images/teams_logging.webp)](images/teams_logging.webp "Configuring Advanced Settings")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

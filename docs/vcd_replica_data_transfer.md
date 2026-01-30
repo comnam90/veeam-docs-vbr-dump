@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Specify Data Transfer Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_data_transfer.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Specify Data Transfer Settings
 
-In this article
 
 At the Data Transfer step of the wizard, select backup infrastructure components that Veeam Backup & Replication will use for the replication process and choose a path for vApp data transfer.
 
@@ -32,6 +33,4 @@ The target WAN accelerator, however, can be assigned to several replication jobs
 
 ![Step 10. Specify Data Transfer Settings](images/vcd_replica_data_transfer.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Launching Application and Exploring Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veo_first_steps.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Application and Exploring Backups
 
-In this article
 
 To open Veeam Explorer for Oracle, you can use any of the following methods:
 
@@ -51,6 +52,4 @@ In This Section
 * [How Mounting Works](veo_mount.md)
 * [Viewing Database Information](veo_view_db_info.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

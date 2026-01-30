@@ -1,5 +1,7 @@
 ---
 title: "Viewing Replica Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/view_replica_properties.html"
 last_updated: "1/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Replica Properties
 
-In this article
 
 You can view summary information about created replicas. The summary information provides the following data:
 
@@ -23,6 +24,4 @@ To view replica properties:
 
 ![Viewing Replica Properties](images/replica_properties_vm.webp)
 
-Page updated 1/23/2025
 
-Page content applies to build 13.0.1.1071

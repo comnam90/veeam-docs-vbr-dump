@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Select VM Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_location.html"
 last_updated: "12/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Select VM Location
 
-In this article
 
 The Location step of the wizard is available if you have chosen to change the location and settings for the restored VMs.
 
@@ -37,6 +38,4 @@ To restore tags that were assigned to the original VM and assign them to the res
 
 ![Step 5. Select VM Location](images/vcloud_full_restore_location.webp)
 
-Page updated 12/22/2023
 
-Page content applies to build 13.0.1.1071

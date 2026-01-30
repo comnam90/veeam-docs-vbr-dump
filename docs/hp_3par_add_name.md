@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify HPE Web Services API Address and Storage Role"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hp_3par_add_name.html"
 last_updated: "10/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify HPE Web Services API Address and Storage Role
 
-In this article
 
 Veeam Backup & Replication uses the HPE Web Services API to work with HPE Alletra Storage MP B10000, 9000, Primera, 3PAR storage systems. The HPE Web Services API delivers a programming interface for performing storage management tasks.
 
@@ -39,6 +40,4 @@ If you do not select any check box, Veeam Backup & Replication displays an error
 
 ![Step 3. Specify HPE Web Services API Address and Storage Role](images/hp_3par_add_server.webp)
 
-Page updated 10/30/2025
 
-Page content applies to build 13.0.1.1071

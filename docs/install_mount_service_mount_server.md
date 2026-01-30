@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_mount_service_mount_server.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Mount Server Settings
 
-In this article
 
 At the Mount Server step of the wizard, specify settings for the mount server that you plan to use by default for restores that work with guest OS files and application items.
 
@@ -25,6 +26,4 @@ To configure the mount server settings:
 
 ![Step 2. Specify Mount Server Settings](images/mount_service.webp)
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

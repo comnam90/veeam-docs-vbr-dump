@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Fine-Tune Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_fine_tune_publish.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Fine-Tune Restore Point
 
-In this article
 
 At this step of the wizard, select an operation prior to which you want to publish your database.
 
@@ -20,6 +21,4 @@ Veeam Explorer for Microsoft SQL Server database operations are listed in the [S
 
 [![Fine-Tuning Restore Point](images/publish_trans.webp)](images/publish_trans.webp "Fine-Tuning Restore Point")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

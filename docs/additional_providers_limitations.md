@@ -1,5 +1,7 @@
 ---
 title: "Additional Providers Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/additional_providers_limitations.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Additional Providers Considerations and Limitations
 
-In this article
 
 Limitations for 11:11 Cloud Object Storage
 
@@ -28,6 +29,4 @@ Limitations for Wasabi Cloud Storage
 
 You cannot add as performance extents one Wasabi bucket as an [S3 compatible Object Storage](adding_s3c_object_storage.md) and another Wasabi bucket as a [Wasabi Cloud Object Storage](adding_wasabi_object_storage.md) to the same type of tier (either performance tier or capacity tier) of a scale-out backup repository.
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

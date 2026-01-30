@@ -1,5 +1,7 @@
 ---
 title: "Supported Devices and Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_supported_devices.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Supported Devices and Configuration
 
-In this article
 
 Veeam Backup & Replication supports Linear Tape-Open (LTO) and IBM 3592 (Jaguar) tape libraries:
 
@@ -116,6 +117,4 @@ Veeam supports medium changers that have no Microsoft Windows drivers available.
 
 It is recommended that you use tape devices with original equipment manufacturer (OEM) drivers.
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

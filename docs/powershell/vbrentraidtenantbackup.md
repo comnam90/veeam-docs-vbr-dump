@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDTenantBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidtenantbackup.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDTenantBackup
 
-In this article
 
 Contains settings of a Microsoft Entra ID tenant backup.
 
@@ -26,6 +27,4 @@ Related Commands
 
 [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

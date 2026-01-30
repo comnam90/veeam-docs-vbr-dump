@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Instance Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_instance_specify_mongodb_settings.html"
 last_updated: "8/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Instance Restore Settings
 
-In this article
 
 At this step of the wizard, specify a location to which you want to restore the MongoDB instance.
 
@@ -25,6 +26,4 @@ Note that if the target data folder is not empty, you will be prompted to overwr
 
 [![Specifying MongoDB Settings](images/vemdb_rs_restore_instance_specify_mongodb_settings.webp)](images/vemdb_rs_restore_instance_specify_mongodb_settings.webp "Specifying MongoDB Settings")
 
-Page updated 8/14/2025
 
-Page content applies to build 13.0.1.1071

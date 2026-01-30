@@ -1,5 +1,7 @@
 ---
 title: "How Mounting Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_mount_operations.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Mounting Works
 
-In this article
 
 To facilitate data transfer, Veeam Explorer for Microsoft SQL Server uses mounting operations during data recovery.
 
@@ -19,6 +20,4 @@ Note that when restoring your data to a specific transaction and when restoring 
 
 To mount a file system, the Veeam Mount Service uses the iSCSI protocol. The target machine or the staging Microsoft SQL Server acts as an iSCSI initiator, and the mount server associated with the backup repository acts as an iSCSI target. The iSCSI mount point is non-persistent and only exists during the recovery process.
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

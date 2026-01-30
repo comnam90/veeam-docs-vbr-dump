@@ -1,5 +1,7 @@
 ---
 title: "Backup Chain"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_files_hv.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Chain
 
-In this article
 
 A backup chain is a sequence of backup files created by jobs. The backup chain provides the ability to recover data.
 
@@ -47,6 +48,4 @@ In This Section
 * [Long-Term Retention Policy (GFS)](gfs_retention_policy_hv.md)
 * [Background Retention](background_retention_job_hv.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

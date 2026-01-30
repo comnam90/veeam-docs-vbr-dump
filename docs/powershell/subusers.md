@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Subusers"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/subusers.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Subusers
 
-In this article
 
 You can use the cmdlets from this section to perform the following operations with cloud subuser accounts:
 
@@ -24,6 +25,4 @@ You can use the cmdlets from this section to perform the following operations wi
 | [Disable-VBRCloudSubUser](disable-vbrcloudsubuser.md) | Disables cloud subuser accounts |
 | [Enable-VBRCloudSubUser](enable-vbrcloudsubuser.md) | Enables disabled cloud subuser accounts |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

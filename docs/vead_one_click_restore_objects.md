@@ -1,5 +1,7 @@
 ---
 title: "Restoring Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_one_click_restore_objects.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Objects
 
-In this article
 
 To restore an object, do the following:
 
@@ -27,6 +28,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Restore Summary Window](images/restore_summary_objects.webp)](images/restore_summary_objects.webp "Reviewing Restore Summary Window")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

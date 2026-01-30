@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRvCDCloudCDPPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvcdcloudcdppolicy.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRvCDCloudCDPPolicy
 
-In this article
 
 Short Description
 
@@ -84,6 +85,4 @@ Related Commands
 * [Get-VBRCDPPolicy](get-vbrcdppolicy.md)
 * [Get-VBRCDPProxy](get-vbrcdpproxy.md)
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Moving Tapes to Another Media Pool"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/moving_tapes_to_custom_pool.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Moving Tapes to Another Media Pool
 
-In this article
 
 Veeam Backup & Replication allows you to move tapes between media pools. You can move tapes between media pools and GFS media pools, and from and to the Free media pool. Veeam Backup & Replication uses tapes from the Free media pool to automatically add them to other media pools and write backups to them if there are no more free tapes available in those media pools.
 
@@ -35,6 +36,4 @@ Alternatively, you can right-click selected tapes and choose Move to Media Pool.
 
 [![Moving Tapes to Another Media Pool](images/move_tapes_to_pool.webp)](images/move_tapes_to_pool.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

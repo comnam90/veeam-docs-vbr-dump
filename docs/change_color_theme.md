@@ -1,5 +1,7 @@
 ---
 title: "Changing Color Theme"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/change_color_theme.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Color Theme
 
-In this article
 
 By default, Veeam Backup & Replication uses a ‘Veeam Green’ color theme for the UI. If necessary, you can change the color theme. Changing the color theme can be helpful, for example, if you connect to different backup servers from one remote machine on which the Veeam Backup & Replication console is installed. In this case, you will be able to easily differentiate with which backup server you are currently working.
 
@@ -23,6 +24,4 @@ To change the color theme for Veeam Backup & Replication:
 
 [![Changing Color Theme](images/change_color_theme.webp)](images/change_color_theme.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

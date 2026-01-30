@@ -1,5 +1,7 @@
 ---
 title: "Retrying Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retrying_jobs.html"
 last_updated: "2/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retrying Jobs
 
-In this article
 
 The retry option is necessary if a job fails and you want to retry this operation again. When you perform a retry, Veeam Backup & Replication restarts the operation only for the failed workloads added to the job and does not process VMs that have been processed successfully. As a result, the retry operation takes less time than running the job for all workloads.
 
@@ -36,6 +37,4 @@ To perform retry for individual workloads:
 
 [![Retry an individual job](images/job_retry_individual.webp)](images/job_retry_individual.webp "Retry an individual job")
 
-Page updated 2/8/2024
 
-Page content applies to build 13.0.1.1071

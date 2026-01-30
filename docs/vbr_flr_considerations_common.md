@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_flr_considerations_common.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 This section lists considerations and limitations common for recovery guest OS files and folders from Microsoft Windows and Linux workloads. For information on considerations and limitations specific for recovering Microsoft Windows and Linux workloads, see [Microsoft Windows Limitations and Considerations Guest OS Recovery](guest_restore_before_you_begin.md) and [Linux Limitations and Considerations Guest OS Recovery](multios_restore_before_you_begin.md).
 
@@ -60,6 +61,4 @@ Storage Snapshots
 
 Requirements for guest OS file restore from storage snapshots are listed in the [Data Recovery from Storage Snapshots](storage_limitations_general.md#vess) section.
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

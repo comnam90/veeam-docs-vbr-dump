@@ -1,5 +1,7 @@
 ---
 title: "Performing Instant Disk Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_instant_disk_recovery.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Instant Disk Recovery
 
-In this article
 
 To recover disks using Instant Disk Recovery, use the Instant Disk Recovery wizard.
 
@@ -20,6 +21,4 @@ To recover disks using Instant Disk Recovery, use the Instant Disk Recovery wiza
 7. [Specify a restore reason](instant_disk_recovery_reason.md).
 8. [Verify recovery settings](instant_disk_recovery_summary.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

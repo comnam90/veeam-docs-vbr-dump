@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_before_you_begin.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you start the restore process, check the following prerequisites:
 
@@ -34,6 +35,4 @@ Before you start the restore process, check the following prerequisites:
 | Important |
 | You can start configuration restore only from the Veeam Backup & Replication console installed locally on the backup server. You cannot start configuration restore from the console installed on a remote machine. |
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

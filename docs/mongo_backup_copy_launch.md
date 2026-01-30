@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Backup Copy Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_launch.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Backup Copy Job Wizard
 
-In this article
 
 To create a backup copy job, do one of the following:
 
@@ -16,6 +17,4 @@ To create a backup copy job, do one of the following:
 
 [![Create New Backup Copy Job](images/application_backup_copy_mongo.webp)](images/application_backup_copy_mongo.webp "Create New Backup Copy Job")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

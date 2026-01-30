@@ -1,5 +1,7 @@
 ---
 title: "New-VBRMongoDBCustomCredentials"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmongodbcustomcredentials.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRMongoDBCustomCredentials
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Perform the following steps:
 * Use the UseTemporaryCertificate parameter to use a temporary certificate instead of custom credentials.
 * Save the result to the $computer1CustomCredentials variable.
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

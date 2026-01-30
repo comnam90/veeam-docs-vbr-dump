@@ -1,5 +1,7 @@
 ---
 title: "Encryption for Archive Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_for_archive_tier.html"
 last_updated: "12/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Encryption for Archive Tier
 
-In this article
 
 Veeam Backup & Replication allows you to encrypt archived data. This helps you protect the data from unauthorized access.
 
@@ -42,6 +43,4 @@ Depending on the configuration of a scale-out backup repository, Veeam Backup & 
 | Important |
 | When you disable encryption, the encryption key is added to the file system of your backup repository and all encrypted backups located on the archive tier become unencrypted. If you enable encryption again, Veeam Backup & Replication will encrypt only new backups with a new encryption key. |
 
-Page updated 12/11/2024
 
-Page content applies to build 13.0.1.1071

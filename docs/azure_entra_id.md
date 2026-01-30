@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Azure Storage Accounts (Entra ID)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_entra_id.html"
 last_updated: "11/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Azure Storage Accounts (Entra ID)
 
-In this article
 
 You can create a credentials record for a Microsoft Azure Storage account with Microsoft Entra authorization to connect to the following types of accounts:
 
@@ -25,6 +26,4 @@ To add a Microsoft Azure storage account with Microsoft Entra authorization, use
 5. [Specify authentication settings](entraid_access.md).
 6. [Finish working with the wizard](entraid_finish.md).
 
-Page updated 11/29/2024
 
-Page content applies to build 13.0.1.1071

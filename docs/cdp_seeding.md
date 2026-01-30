@@ -1,5 +1,7 @@
 ---
 title: "Replica Seeding and Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_seeding.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replica Seeding and Mapping
 
-In this article
 
 Replica seeding and mapping are technologies that help reduce the amount of traffic sent over a network. With these technologies, Veeam Backup & Replication does not have to transfer all of VM data from the source host to the target host across the sites during the initial synchronization. For more information on the initial synchronization, see [How CDP Works](cdp_hiw.md#data).
 
@@ -75,6 +76,4 @@ Related Topics
 
 [Configure Seeding and Mapping](cdp_policy_seeding_mapping.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

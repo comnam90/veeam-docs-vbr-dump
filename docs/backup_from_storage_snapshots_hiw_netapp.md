@@ -1,5 +1,7 @@
 ---
 title: "Backup from Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_from_storage_snapshots_hiw_netapp.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup from Storage Snapshots
 
-In this article
 
 cDot
 
@@ -32,6 +33,4 @@ In This Section
 * [SnapRestore](storage_backup_netapp_snaprestore.md)
 * [NFS Protocol](storage_backup_netapp_nfs.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

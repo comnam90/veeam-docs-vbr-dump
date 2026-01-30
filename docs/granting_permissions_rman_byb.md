@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_rman_byb.html"
 last_updated: "12/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create a user group that will have access to the plug-in configuration file, consider the following:
 
@@ -20,6 +21,4 @@ Before you create a user group that will have access to the plug-in configuratio
 | Important |
 | The users that configure the plug-in and start the RMAN client must be added to the group. |
 
-Page updated 12/17/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREntraIDTenantRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrentraidtenantrestoresession.html"
 last_updated: "1/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREntraIDTenantRestoreSession
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 * [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 * [Start-VBREntraIDTenantRestore](start-vbrentraidtenantrestore.md)
 
-Page updated 1/14/2025
 
-Page content applies to build 13.0.1.1071

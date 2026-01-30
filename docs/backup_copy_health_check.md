@@ -1,5 +1,7 @@
 ---
 title: "Health Check for Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_health_check.html"
 last_updated: "9/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Health Check for Backup Files
 
-In this article
 
 You can instruct Veeam Backup & Replication to periodically perform a health check for the latest restore point or backup file in the backup chain. The health check helps Veeam Backup & Replication make sure that further restore will be possible.
 
@@ -46,6 +47,4 @@ The checksum calculation requires the rehydration of the verified data. This may
 1. Veeam Backup & Replication compares the calculated checksums and the checksums already stored in the backup file.
 2. If the health check detects corrupted data blocks, Veeam Backup & Replication deletes the backup file from the target repository. On the next backup copy job session, Veeam Backup & Replication transfers and performs the health check for this file again.
 
-Page updated 9/16/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Backup Proxies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cisco_backup_proxy.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Backup Proxies
 
-In this article
 
 This section describes how to configure VMware backup proxies for using Cisco HyperFlex snapshots and also which transport modes and methods of data retrieving proxies can use.
 
@@ -71,6 +72,4 @@ If you plan to use the Virtual appliance or Network mode to process VMs hosted o
 
 If a backup proxy on the same host as a processed VM is unavailable, Veeam Backup & Replication will use an available backup proxy on a different host, but force it to use the Network transport mode, so that no stun occurs.
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

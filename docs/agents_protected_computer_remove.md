@@ -1,5 +1,7 @@
 ---
 title: "Removing Computer from Protection Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computer_remove.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Computer from Protection Group
 
-In this article
 
 You can remove one or more computers from a protection group, for example, if you do not want to protect these computers with Veeam Agent any longer but want to back up data of other computers in the protection group.
 
@@ -69,6 +70,4 @@ To remove a computer from the Manually Added protection group, you must edit thi
 | ![Removing Computer from Protection Group](images/icon_note.webp) NOTE |
 | You cannot remove a computer from the Manually Added protection group if this computer is added to a Veeam Agent backup job. |
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

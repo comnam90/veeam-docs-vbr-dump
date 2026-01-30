@@ -1,5 +1,7 @@
 ---
 title: "Creating Passwords Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/password_manager_create.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Passwords Using Console
 
-In this article
 
 To create a new password in the Password Manager, do the following in the Veeam Backup & Replication console:
 
@@ -27,6 +28,4 @@ To view the entered password, click and hold the eye icon on the right of the fi
 
 ![Creating Passwords Using Console](images/password_manager_create_pass.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

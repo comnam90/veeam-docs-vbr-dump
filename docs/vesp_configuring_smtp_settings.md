@@ -1,5 +1,7 @@
 ---
 title: "SMTP Server with Basic Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_configuring_smtp_settings.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SMTP Server with Basic Authentication
 
-In this article
 
 To configure sending Microsoft SharePoint items as attachments using an SMTP server with basic authentication, do the following:
 
@@ -38,6 +39,4 @@ By default, Veeam Explorer for Microsoft SharePoint establishes a connection to 
 
 [![Configuring Mail Settings](images/vesp_options_mail.webp)](images/vesp_options_mail.webp "Configuring Mail Settings")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

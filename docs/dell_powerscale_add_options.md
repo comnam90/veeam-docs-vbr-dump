@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify NAS Access Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_powerscale_add_options.html"
 last_updated: "8/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify NAS Access Options
 
-In this article
 
 At the NAS Filer step of the wizard, specify options for accessing the storage system:
 
@@ -30,6 +31,4 @@ After you finish working with the wizard, you can change the rescan scope and st
 
 ![Step 4. Specify NAS Access Options](images/emc_isilon_add_options.webp)
 
-Page updated 8/10/2023
 
-Page content applies to build 13.0.1.1071

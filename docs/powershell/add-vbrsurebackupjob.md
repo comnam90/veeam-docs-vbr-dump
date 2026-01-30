@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRSureBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrsurebackupjob.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRSureBackupJob
 
-In this article
 
 Short Description
 
@@ -84,6 +85,4 @@ Related Commands
 * [Get-VBRApplicationGroup](get-vbrapplicationgroup.md)
 * [New-VBRSureBackupJobVerificationOptions](new-vbrsurebackupjobverificationoptions.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

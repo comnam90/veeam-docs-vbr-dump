@@ -1,5 +1,7 @@
 ---
 title: "Discovering Backups in Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_discover.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Discovering Backups in Scale-Out Backup Repositories
 
-In this article
 
 To discover on which performance extent of the scale-out backup repository a particular backup file is stored, you can examine the job session statistics or check the backup properties.
 
@@ -33,6 +34,4 @@ To view the backup properties:
 
 ![Discovering Backups in Scale-Out Backup Repositories](images/scaleout_backup_properties.webp)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

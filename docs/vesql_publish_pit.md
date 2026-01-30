@@ -1,5 +1,7 @@
 ---
 title: "Publishing Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_publish_pit.html"
 last_updated: "12/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing Point-in-Time State
 
-In this article
 
 Publishing a point-in-time state allows you to obtain a required database state and unroll specified transactions if needed.
 
@@ -18,6 +19,4 @@ To publish databases as of the point-in-time state, do the following:
 3. [Fine-tune the restore point](vesql_fine_tune_publish_pit.md).
 4. [Review the publish summary](vesql_publish_pit_summary.md).
 
-Page updated 12/16/2024
 
-Page content applies to build 13.0.1.1071

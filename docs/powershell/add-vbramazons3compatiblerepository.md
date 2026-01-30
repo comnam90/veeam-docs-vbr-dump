@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAmazonS3CompatibleRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbramazons3compatiblerepository.html"
 last_updated: "7/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAmazonS3CompatibleRepository
 
-In this article
 
 Short Description
 
@@ -86,6 +87,4 @@ Related Commands
 * [Get-VBRAmazonS3Bucket](get-vbramazons3bucket.md)
 * [Get-VBRAmazonS3Folder](get-vbramazons3folder.md)
 
-Page updated 7/30/2025
 
-Page content applies to build 13.0.1.1071

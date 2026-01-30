@@ -1,5 +1,7 @@
 ---
 title: "Microsoft SQL Server Transaction Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_vss_sql.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft SQL Server Transaction Log Settings
 
-In this article
 
 |  |
 | --- |
@@ -54,6 +55,4 @@ If you have selected to back up transaction logs with Veeam Agent for Microsoft 
 
 ![Microsoft SQL Server Transaction Log Settings](images/agent_policy_win_vss_sql.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

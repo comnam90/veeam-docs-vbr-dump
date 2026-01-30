@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackup.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackup
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command gets backup files that are created by the e5559d89-ca63-48dc-a53b-d9c54b7f2482 object storage backup job. The cmdlet output will contain settings of the backup file crated by the e5559d89-ca63-48dc-a53b-d9c54b7f2482 object storage backup job.  |  | | --- | | Get-VBRUnstructuredBackup -ID e5559d89-ca63-48dc-a53b-d9c54b7f2482 | |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

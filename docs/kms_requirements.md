@@ -1,5 +1,7 @@
 ---
 title: "Requirements and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kms_requirements.html"
 last_updated: "10/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Requirements and Limitations
 
-In this article
 
 The KMS feature has the following requirements and limitations:
 
@@ -34,6 +35,4 @@ In other cases, Veeam Backup & Replication will retrieve private keys from the K
 * [For Cloud Connect] To use the KMS feature in the Veeam Cloud Connect environment, both a service provider and a tenant must run Veeam Backup & Replication 12.1 (build 12.1.0.2131) or later.
 * [For Cloud Connect] If a tenant uses the same KMS server as a service provider, backup files stored in the tenant quota cannot be decrypted on the service provider side.
 
-Page updated 10/8/2025
 
-Page content applies to build 13.0.1.1071

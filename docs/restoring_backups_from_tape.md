@@ -1,5 +1,7 @@
 ---
 title: "Restoring Backups from Tape to Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_backups_from_tape.html"
 last_updated: "7/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Backups from Tape to Repository
 
-In this article
 
 To restore backups from tape, use the Restore Backup from Tape to Repository wizard. This section will guide you through all steps of the wizard and provide explanation on available options.
 
@@ -23,6 +24,4 @@ To restore backups from tape, follow the next steps:
 4. [Choose backup destination](restore_backup_from_tape_target.md).
 5. [Finish working with the wizard](restore_backup_from_tape_review.md).
 
-Page updated 7/8/2025
 
-Page content applies to build 13.0.1.1071

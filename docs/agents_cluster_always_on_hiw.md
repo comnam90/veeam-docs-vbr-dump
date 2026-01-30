@@ -1,5 +1,7 @@
 ---
 title: "Backup of Always On Availability Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_cluster_always_on_hiw.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup of Always On Availability Groups
 
-In this article
 
 To process Always On Availability Group, you must complete the following tasks:
 
@@ -40,6 +41,4 @@ To become a subject for a log backup, the node must meet the following criteria:
 * The database backup preferences settings must allow a backup of the node that you want to process. For example, if you want to back up the primary node, you must not exclude this node from a backup, or select the Secondary only option in the database backup preferences settings.
 * Databases in the Always On Availability Groups for this node were successfully backed up for the last two processing intervals.
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

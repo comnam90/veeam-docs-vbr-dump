@@ -1,5 +1,7 @@
 ---
 title: "Configuring Log and Cache Repositories"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_configure_repo.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Log and Cache Repositories
 
-In this article
 
 To protect Microsoft Entra ID tenant data and logs, you require the following repositories:
 
@@ -38,6 +39,4 @@ The following types of repositories are supported only for the primary and secon
 | Note |
 | Veeam Backup for Microsoft Entra ID does not support using Veeam Cloud Connect repositories or multi-bucket repositories to store log backups. For more information, see the Veeam Cloud Connect Guide, section [Cloud Repository](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_repository.html?ver=13) and Veeam Backup & Replication User Guide, section [Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_repository.html?ver=13#childbuckets). |
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

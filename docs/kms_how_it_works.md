@@ -1,5 +1,7 @@
 ---
 title: "How KMS Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kms_how_it_works.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How KMS Works
 
-In this article
 
 When you add the KMS server in the Veeam Backup & Replication console and start using KMS keys for data encryption, Veeam Backup & Replication asks the KMS server to generate an asymmetric KMS key for the required job or repository. Veeam Backup & Replication stores a public key in the configuration database and uses it for data encryption. The KMS server stores a private key and uses it for data decryption.
 
@@ -31,6 +32,4 @@ The KMS server rotates KMS keys at a time interval specified in the KMS policies
 
 By default, the Veeam Backup & Replication system job runs every 24 hours. If you want to change the default time period, contact Veeam Customer Support.
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

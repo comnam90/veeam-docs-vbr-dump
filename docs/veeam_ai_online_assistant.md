@@ -1,5 +1,7 @@
 ---
 title: "Veeam Intelligence"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_ai_online_assistant.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Intelligence
 
-In this article
 
 Veeam Intelligence is a chatbot designed to assist with common issues and questions about Veeam products. It is trained on Veeam technical documentation to provide accurate answers. You can communicate with Veeam Intelligence in any language and create both simple and complex inquiries.
 
@@ -80,6 +81,4 @@ If you cannot use Veeam Intelligence in your environment due to company policy, 
 
 [![AI Assistant](images/ai_chatbox.webp)](images/ai_chatbox.webp "AI Assistant")
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

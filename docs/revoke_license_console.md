@@ -1,5 +1,7 @@
 ---
 title: "Revoking License Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/revoke_license_console.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Revoking License Using Console
 
-In this article
 
 To revoke a license in the Veeam Backup & Replication console, do the following:
 
@@ -24,6 +25,4 @@ The steps to revoke licenses for Veeam Agent machines are slightly different. Fo
 
 ![Revoking License Using Console](images/revoke_license_vm.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

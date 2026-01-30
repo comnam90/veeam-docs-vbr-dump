@@ -1,5 +1,7 @@
 ---
 title: "Backup Infrastructure for Unstructured Data Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_infrastructure.html"
 last_updated: "11/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Infrastructure for Unstructured Data Backup
 
-In this article
 
 To protect your unstructured data, you can use your existing Veeam Backup & Replication infrastructure. To do so, configure the following components:
 
@@ -150,6 +151,4 @@ In This Section
 
 * [Adding Unstructured Data Source](adding_unstructured_data_source.md)
 
-Page updated 11/10/2025
 
-Page content applies to build 13.0.1.1071

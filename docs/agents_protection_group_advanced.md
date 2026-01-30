@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Advanced Protection Group Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_advanced.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Advanced Protection Group Settings
 
-In this article
 
 In the Advanced Settings window, specify advanced settings for the protection group:
 
@@ -19,6 +20,4 @@ In the Advanced Settings window, specify advanced settings for the protection gr
 | TIP |
 | After you specify necessary settings for the protection group, you can save them as default settings. To do this, click Save as Default at the bottom left corner of the Advanced Settings window. When you create a new protection group, Veeam Backup & Replication will automatically apply the default settings to the new protection group. |
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managed Veeam Plug-Ins"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/management.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managed Veeam Plug-Ins
 
-In this article
 
 Veeam Plug-In lets you deploy and manage the following Veeam Plug-Ins on computers in your infrastructure:
 
@@ -46,6 +47,4 @@ In This Section
 * [Managing Application Backups](application_backups.md)
 * [Reporting](report.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

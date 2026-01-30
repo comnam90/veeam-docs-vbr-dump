@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRRestoreSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrrestoresession.html"
 last_updated: "12/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRRestoreSession
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command looks for the restore sessions of the Hv\_DNS and Hv\_DC VMs.  |  | | --- | | Get-VBRRestoreSession -Name "Hv\_DNS", "Hv\_DC" | |
 
-Page updated 12/18/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Change VM Names and UUIDs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_names_hv.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Change VM Names and UUIDs
 
-In this article
 
 The Name step of the wizard is available if you have chosen to change the location and settings for recovered VMs.
 
@@ -36,6 +37,4 @@ To change VM identification settings:
 
 ![Step 8. Change VM Names and UUIDs](images/hv_restore_fullvm_uuid.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

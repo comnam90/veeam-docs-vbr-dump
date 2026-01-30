@@ -1,5 +1,7 @@
 ---
 title: "Minor Non-Breaking Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/minor_changes_12.2.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Minor Non-Breaking Changes
 
-In this article
 
 The following minor non-breaking changes were introduced in Veeam PowerShell 12.2.
 
@@ -31,6 +32,4 @@ In this version, the following cmdlets can return new objects:
 
 * The [Get-VBRHvReplicaReIpRule](get-vbrhvreplicareiprule.md) cmdlet can return the VBRHvReplicaReIpIPv6Rule object that contains Hyper-V replica re-IPv6 rule. You can use this object when you run the [Add-VBRHvReplicaJob](add-vbrhvreplicajob.md) or the [Set-VBRHvReplicaJob](set-vbrhvreplicajob.md) cmdlets to create or modify Hyper-V replication jobs.
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

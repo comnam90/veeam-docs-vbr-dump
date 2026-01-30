@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_storage.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Storage Settings
 
-In this article
 
 At the Storage step of the wizard, specify settings for the target backup repository:
 
@@ -27,6 +28,4 @@ To map the job to a backup, click the Map backup link and select the backup on t
 
 ![Step 4. Specify Storage Settings](images/mongo_policy_storage.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

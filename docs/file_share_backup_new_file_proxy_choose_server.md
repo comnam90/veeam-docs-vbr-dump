@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_new_file_proxy_choose_server.html"
 last_updated: "8/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Server
 
-In this article
 
 At the Server step of the wizard, specify server settings for the backup proxy.
 
@@ -24,6 +25,4 @@ For example, for a 4-core CPU, it is recommended that you specify a maximum of 8
 
 ![Step 2. Choose Server](images/add_file_proxy_choose_server.webp "Choose Microsoft Windows Server")
 
-Page updated 8/9/2025
 
-Page content applies to build 13.0.1.1071

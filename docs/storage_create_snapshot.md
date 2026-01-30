@@ -1,5 +1,7 @@
 ---
 title: "Creating and Deleting Snapshots Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_create_snapshot.html"
 last_updated: "5/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating and Deleting Snapshots Manually
 
-In this article
 
 You can create and delete storage snapshots in the Veeam Backup & Replication console. The create and delete snapshot operations do not differ from operations that you perform in the management console of the storage system.
 
@@ -37,6 +38,4 @@ To delete a volume snapshot:
 
 [![Creating and Deleting Snapshots Manually](images/san_delete_snapshot.webp)](images/san_delete_snapshot.webp)
 
-Page updated 5/30/2025
 
-Page content applies to build 13.0.1.1071

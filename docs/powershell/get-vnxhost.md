@@ -1,5 +1,7 @@
 ---
 title: "Get-VNXHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vnxhost.html"
 last_updated: "7/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VNXHost
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ Examples
 | --- | --- |
 | This command returns a Dell VNX storage by name.  |  | | --- | | Get-VNXHost -Name "VNX Storage" | |
 
-Page updated 7/16/2025
 
-Page content applies to build 13.0.1.1071

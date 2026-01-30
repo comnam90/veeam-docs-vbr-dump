@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Start Upgrade Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_launch.html"
 last_updated: "10/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Start Upgrade Wizard
 
-In this article
 
 To start the upgrade wizard, take the following steps:
 
@@ -21,6 +22,4 @@ To extract the content of the ISO, you can also use the latest versions of utili
 
 ![Step 1. Start Upgrade Wizard](images/upgrade_splash.webp)
 
-Page updated 10/29/2025
 
-Page content applies to build 13.0.1.1071

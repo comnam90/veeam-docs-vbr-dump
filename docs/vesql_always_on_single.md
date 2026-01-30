@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Always On Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_always_on_single.html"
 last_updated: "11/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Always On Restore Options
 
-In this article
 
 If the specified target Microsoft SQL Server supports Always On Availability Groups, you will be offered to specify Always On restore options. To use the Always On capabilities for the restored database, do the following:
 
@@ -20,6 +21,4 @@ If you do not plan to use the Always On capabilities when restoring a database, 
 
 [![Specifying AlwaysOn Restore Parameters](images/restore_database_alwayson.webp)](images/restore_database_alwayson.webp "Specifying AlwaysOn Restore Parameters")
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

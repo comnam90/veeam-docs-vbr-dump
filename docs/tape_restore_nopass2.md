@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Process Request in Veeam Backup Enterprise Manager"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restore_nopass2.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Process Request in Veeam Backup Enterprise Manager
 
-In this article
 
 This procedure is performed by the Veeam Backup Enterprise Manager Administrator on the Veeam Backup Enterprise Manager server.
 
@@ -24,6 +25,4 @@ To process the key restore request, do the following:
 
 ![Step 2. Process Request in Veeam Backup Enterprise Manager](images/decrypt_tapes_response.webp)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

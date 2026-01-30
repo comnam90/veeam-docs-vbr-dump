@@ -1,5 +1,7 @@
 ---
 title: "Disconnect-VBRGoogleCloudService"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disconnect-vbrgooglecloudservice.html"
 last_updated: "2/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disconnect-VBRGoogleCloudService
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 
 * [Connect-VBRGoogleCloudService](connect-vbrgooglecloudservice.md)
 
-Page updated 2/5/2024
 
-Page content applies to build 13.0.1.1071

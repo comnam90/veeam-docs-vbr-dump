@@ -1,5 +1,7 @@
 ---
 title: "VBRIBMCloudRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbribmcloudrepository.html"
 last_updated: "7/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRIBMCloudRepository
 
-In this article
 
 Contains settings of the 11:11 Cloud Object Storage.
 
@@ -23,6 +24,4 @@ Properties
 | MountServerOptions | [VBRRepositoryMountServerOptions](vbrrepositorymountserveroptions.md) | Mount server settings. |
 | ProxyAppliance | CHost | Proxy appliance. |
 
-Page updated 7/1/2025
 
-Page content applies to build 13.0.1.1071

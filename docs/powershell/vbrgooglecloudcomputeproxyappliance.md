@@ -1,5 +1,7 @@
 ---
 title: "VBRGoogleCloudComputeProxyAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrgooglecloudcomputeproxyappliance.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRGoogleCloudComputeProxyAppliance
 
-In this article
 
 Contains proxy appliance of the Google Cloud compute engine.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [New-VBRGoogleCloudComputeProxyAppliance](new-vbrgooglecloudcomputeproxyappliance.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

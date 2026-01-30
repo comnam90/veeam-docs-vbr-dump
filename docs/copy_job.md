@@ -1,5 +1,7 @@
 ---
 title: "Copying VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copy_job.html"
 last_updated: "6/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copying VMs
 
-In this article
 
 With VM copy jobs you can create a fully-functional copy of a VM and store this copy in the backup repository or storage device. VM copying may be helpful if you want to move your datacenter to another location, archive a VM before decommissioning and so on.
 
@@ -26,6 +27,4 @@ Before you create a VM copy job, [check prerequisites](vm_copy_before_you_begin.
 7. [Define a job schedule](vm_copy_schedule.md).
 8. [Finish working with the wizard](vm_copy_finish.md).
 
-Page updated 6/22/2023
 
-Page content applies to build 13.0.1.1071

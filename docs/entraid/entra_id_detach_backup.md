@@ -1,5 +1,7 @@
 ---
 title: "Removing Tenant and Log Backups"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_detach_backup.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Tenant and Log Backups
 
-In this article
 
 Veeam Backup for Microsoft Entra ID applies the [configured retention policy settings](entra_id_backup_job.md) to automatically remove backups and backup copies from backup repositories (both primary and secondary). If necessary, you can also remove the backed-up data manually.
 
@@ -40,6 +41,4 @@ To detach backups from a backup or backup copy job:
 | Important |
 | Before you detach any backup or backup copy, make sure that all related jobs are [disabled](entra_id_enable_job.md). |
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

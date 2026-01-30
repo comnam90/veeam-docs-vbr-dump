@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Path to SMB File Share and Access Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_new_file_share_wizard_share.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Path to SMB File Share and Access Credentials
 
-In this article
 
 At the SMB File Share step of the wizard, specify access settings for the SMB file share:
 
@@ -36,6 +37,4 @@ If you have not set up credentials beforehand, click the Manage accounts link at
 
 ![Step 2. Specify Path to SMB File Share and Access Credentials](images/smb_file_share_wizard_path_to_smb.webp "Specify Path to SMB File Share and Access Credentials")
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

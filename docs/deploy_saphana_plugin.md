@@ -1,5 +1,7 @@
 ---
 title: "Deployment and Configuration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deploy_saphana_plugin.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment and Configuration
 
-In this article
 
 To deploy Veeam Plug-In, you must install the plug-in on an SAP HANA server and configure plug-in integration settings.
 
@@ -30,6 +31,4 @@ This guide gives instructions on how to deploy Veeam Plug-In assuming that you h
 
 You can also manage deployment, configuration and backup policies of Veeam Plug-Ins using the Veeam Backup & Replication console. For details, see [Veeam Plug-In Management](management.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

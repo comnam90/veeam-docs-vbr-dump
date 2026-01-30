@@ -1,5 +1,7 @@
 ---
 title: "Viewing Replica Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_properties.html"
 last_updated: "6/1/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Replica Properties
 
-In this article
 
 You can view replica properties that provide the following information:
 
@@ -23,6 +24,4 @@ To view replica properties:
 
 [![vCD Replica Properties](images/vcd_replica_properties.webp)](images/vcd_replica_properties.webp "vCD Replica Properties")
 
-Page updated 6/1/2023
 
-Page content applies to build 13.0.1.1071

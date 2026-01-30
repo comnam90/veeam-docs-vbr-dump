@@ -1,5 +1,7 @@
 ---
 title: "Restoring from Backup with Veeam Explorer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_application_backups_restore.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring from Backup with Veeam Explorer
 
-In this article
 
 You can recover MongoDB instance or collection items from backups created with the MongoDB Backup feature of Veeam Backup & Replication.
 
@@ -22,6 +23,4 @@ Use the MongoDB Items Restore wizard to start the restore the process:
 
 Alternatively, to perform restore from the MongoDB backup, you can also use Veeam Explorer cmdlets. For details, see the [Veeam Explorer for MongoDB](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_mongodb.html?ver=13) section in the the Veeam Explorers PowerShell Reference.
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

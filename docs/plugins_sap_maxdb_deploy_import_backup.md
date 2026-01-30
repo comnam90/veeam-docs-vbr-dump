@@ -1,5 +1,7 @@
 ---
 title: "Importing Backup Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_import_backup.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Importing Backup Files
 
-In this article
 
 If the Veeam Backup & Replication server has failed and you have restored it in a new location, you can copy the backup files to a new repository and re-map the Veeam Plug-In backup files.
 
@@ -68,6 +69,4 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 | --- |
 | SapMaxDBBackintConfigTool --map-backup |
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

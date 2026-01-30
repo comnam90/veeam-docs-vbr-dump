@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_before_you_begin.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you create an object to tape job, consider the following:
 
@@ -30,6 +31,4 @@ The following permissions for the object storage are required for an object to t
 | --- |
 | GetBucketAccelerateConfigurationGetBucketAcl |
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

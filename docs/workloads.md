@@ -1,5 +1,7 @@
 ---
 title: "Workloads"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/workloads.html"
 last_updated: "11/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Workloads
 
-In this article
 
 Veeam Backup & Replication is a data protection solution designed to support a [wide range of platforms](platform_support.md), including virtual, physical, cloud platforms, and others. Each platform has unique data protection operations and workflows.
 
@@ -33,6 +34,4 @@ In addition to platform-specific features, Veeam Backup & Replication also provi
 
 \*This feature is available for Microsoft Windows-based backup servers.
 
-Page updated 11/27/2025
 
-Page content applies to build 13.0.1.1071

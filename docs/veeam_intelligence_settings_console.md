@@ -1,5 +1,7 @@
 ---
 title: "Configuring Veeam Intelligence Settings Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_intelligence_settings_console.html"
 last_updated: "1/6/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Veeam Intelligence Settings Using Console
 
-In this article
 
 To configure Veeam Intelligence settings, do the following in the Veeam Backup & Replication console:
 
@@ -21,6 +22,4 @@ To configure Veeam Intelligence settings, do the following in the Veeam Backup &
 
 ![Configuring Veeam Intelligence Settings Using Console](images/settings_veeam_intelligence.webp)
 
-Page updated 1/6/2026
 
-Page content applies to build 13.0.1.1071

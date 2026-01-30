@@ -1,5 +1,7 @@
 ---
 title: "Exporting Logs from Veeam Agent Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_logging.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Logs from Veeam Agent Computers
 
-In this article
 
 If Veeam Agent computer is connected to a Veeam backup server as a member of a protection group for pre-installed Veeam Agents, you can export Veeam Agent logs directly from the Veeam Agent computer.
 
@@ -35,6 +36,4 @@ For more information on exporting product logs from a Veeam Agent computer, see 
 * [Veeam Agent for Oracle Solaris](https://helpcenter.veeam.com/docs/agentforsolaris/userguide/installation_operation_mode_logs.html?ver=13)
 * [Veeam Agent for IBM AIX](https://helpcenter.veeam.com/docs/agentforaix/userguide/installation_operation_mode_logs.html?ver=13)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

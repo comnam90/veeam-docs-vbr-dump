@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Specify Replication Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_schedule.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Specify Replication Schedule
 
-In this article
 
 At the Schedule step of the wizard, configure the schedule and retention policies:
 
@@ -41,6 +42,4 @@ Related Topics
 * [Short-term Retention Policy](uni_cdp_retention.md#short)
 * [Long-term Retention Policy](uni_cdp_retention.md#long)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Helper Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_helper_appliance_vm.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Helper Appliance
 
-In this article
 
 This step is available if you recover workloads with Linux OS, recover them to a new location or with different settings, and VIX API is not available. However, this step is not available if you recover VMware vSphere VMs from storage snapshots.
 
@@ -45,6 +46,4 @@ Consider that the backup server and the mount server must have access to the hel
 
 ![Step 7. Configure Helper Appliance](images/instant_recovery_helper_appliance.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

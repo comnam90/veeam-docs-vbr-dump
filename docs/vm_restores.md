@@ -1,5 +1,7 @@
 ---
 title: "VM Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_restores.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Recovery
 
-In this article
 
 VM recovery includes the following data recovery methods for the VMware vSphere platform:
 
@@ -41,6 +42,4 @@ Use Instant Recovery for tier 1 VMs with little tolerance for business interrupt
 
 \* - Available on Microsoft Windows-based backup server.
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

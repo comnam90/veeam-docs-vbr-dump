@@ -1,5 +1,7 @@
 ---
 title: "Password Loss Protection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_password_loss_protection.html"
 last_updated: "11/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Password Loss Protection
 
-In this article
 
 If you have lost or forgotten a password or you cannot use KMS keys due to a KMS server failure, you can restore encrypted data using password loss protection provided by Veeam Backup Enterprise Manager. This solution allows you to include Enterprise Manager keyset in the encryption process and use it to decrypt backup files. For more information, see [Enterprise Manager Keys](enterprise_manager_keys.md).
 
@@ -20,6 +21,4 @@ Password loss protection has the following requirements and limitations:
 
 For more information on how to decrypt backups with Enterprise Manager keys, see [Decrypting Backups With Enterprise Manager Keys](decrypt_without_pass.md).
 
-Page updated 11/20/2024
 
-Page content applies to build 13.0.1.1071

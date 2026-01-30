@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRMongoDBProcessingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrmongodbprocessingoptions.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRMongoDBProcessingOptions
 
-In this article
 
 Short Description
 
@@ -83,6 +84,4 @@ Related Commands
 * [Get-VBRDiscoveredApplication](get-vbrdiscoveredapplication.md)
 * [New-VBRMongoDBProcessingOptions](new-vbrmongodbprocessingoptions.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

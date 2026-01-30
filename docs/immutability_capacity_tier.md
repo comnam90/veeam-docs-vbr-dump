@@ -1,5 +1,7 @@
 ---
 title: "Immutability for Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_capacity_tier.html"
 last_updated: "12/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Immutability for Capacity Tier
 
-In this article
 
 Veeam Backup & Replication allows you to prohibit deletion of data from capacity extents by making that data temporarily immutable. It is done for increased security: immutability protects your data from loss as a result of attacks, malware activity or any other injurious actions.
 
@@ -49,6 +50,4 @@ Related Topics
 
 [Block Generation](block_gen.md)
 
-Page updated 12/23/2025
 
-Page content applies to build 13.0.1.1071

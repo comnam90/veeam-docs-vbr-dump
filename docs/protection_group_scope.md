@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specifying Individual Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_scope.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specifying Individual Computers
 
-In this article
 
 At this step of the wizard, specify computers that you want to add to the protection group.
 
@@ -43,6 +44,4 @@ For details, see [Credentials Manager](credentials_manager.md).
 
 ![Step 3. Specifying Individual Computers](images/plugins_protection_group_computers.webp)
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

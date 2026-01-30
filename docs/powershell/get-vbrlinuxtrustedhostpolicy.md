@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRLinuxTrustedHostPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrlinuxtrustedhostpolicy.html"
 last_updated: "1/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRLinuxTrustedHostPolicy
 
-In this article
 
 Short Description
 
@@ -50,6 +51,4 @@ This command returns the trust policy that is set for Linux hosts.
 | --- |
 | Get-VBRLinuxTrustedHostPolicy |
 
-Page updated 1/17/2025
 
-Page content applies to build 13.0.1.1071

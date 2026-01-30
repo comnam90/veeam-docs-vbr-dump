@@ -1,5 +1,7 @@
 ---
 title: "Export-VBRLocation"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/export-vbrlocation.html"
 last_updated: "3/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Export-VBRLocation
 
-In this article
 
 Short Description
 
@@ -54,6 +55,4 @@ This command exports geographic locations from Veeam Backup & Replication to 
 | --- |
 | Export-VBRLocation -Path "C:\Locations\BackupNorth.xml" |
 
-Page updated 3/11/2024
 
-Page content applies to build 13.0.1.1071

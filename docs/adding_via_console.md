@@ -1,5 +1,7 @@
 ---
 title: "Adding Veeam Infrastructure Appliance Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_via_console.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Veeam Infrastructure Appliance Using Console
 
-In this article
 
 This section describes how to add a host deployed from Veeam Infrastructure Appliance as a backup infrastructure component.
 
@@ -20,6 +21,4 @@ Before you add a Veeam Infrastructure Appliance, [check prerequisites](linux_inf
 3. [Apply settings](linux_server_apply.md).
 4. [Finish working with the wizard](linux_server_summary.md).
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

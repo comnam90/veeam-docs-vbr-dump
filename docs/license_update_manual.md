@@ -1,5 +1,7 @@
 ---
 title: "Updating License Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_update_manual.html"
 last_updated: "10/20/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Updating License Manually
 
-In this article
 
 You can update the license manually on demand. When you update the license manually, Veeam Backup & Replication connects to the Veeam License Update Server, downloads a new license from it (if the license is available) and installs it on the backup server.
 
@@ -37,6 +38,4 @@ Manual license update can complete with the following results:
 * Veeam Backup & Replication has received an invalid answer. Such situation can occur due to connectivity issues between the Veeam License Update Server and Veeam Backup & Replication.
 * Licensing by the contract has been terminated. In such situation, Veeam Backup & Replication automatically disables automatic license update on the backup server or Veeam Backup Enterprise Manager server.
 
-Page updated 10/20/2023
 
-Page content applies to build 13.0.1.1071

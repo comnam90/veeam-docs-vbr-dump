@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Set Time Delay"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_failover_plan_delay_time.html"
 last_updated: "1/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Set Time Delay
 
-In this article
 
 After you have set the order for VMs in the failover plan, you need to set a time delay for VMs. The delay time defines for how long Veeam Backup & Replication must wait before starting the failover operation for the next VM in the list. You can use time delays to make sure that some VMs are already running at the moment dependent VMs start.
 
@@ -25,6 +26,4 @@ To set the time delay for a VM:
 
 ![Step 5. Set Time Delay](images/failover_plan_delay_vm.webp)
 
-Page updated 1/24/2025
 
-Page content applies to build 13.0.1.1071

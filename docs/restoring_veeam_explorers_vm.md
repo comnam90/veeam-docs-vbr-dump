@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Machine or Site"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_vm.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Machine or Site
 
-In this article
 
 This step of the wizard differs for Microsoft SharePoint and other applications.
 
@@ -29,6 +30,4 @@ If you have many machines, you can quickly find the machine you need by entering
 
 ![Step 2. Select Machine or Site](images/application_item_restore_ad_machine.webp)
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

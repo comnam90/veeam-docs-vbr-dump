@@ -1,5 +1,7 @@
 ---
 title: "Configuring SAML Authentication for Microsoft Entra ID"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider_entra_id.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring SAML Authentication for Microsoft Entra ID
 
-In this article
 
 For Veeam Backup & Replication to be able to use Microsoft Entra ID as an identity provider, you must perform the steps described in this section.
 
@@ -128,6 +129,4 @@ To add external users or groups to Veeam Backup & Replication and assign roles t
 
 ![Configuring SAML Authentication for Microsoft Entra ID](images/saml_add_external_user.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

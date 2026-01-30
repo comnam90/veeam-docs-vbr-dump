@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Restore Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_location_objects.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Restore Location
 
-In this article
 
 At this step of the wizard, select a container to which you want to restore the objects.
 
@@ -29,6 +30,4 @@ To select a different container, click Browse and choose a container you want to
 
 [![Selecting a Different Container](images/browse_container.webp)](images/browse_container.webp "Selecting a Different Container")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

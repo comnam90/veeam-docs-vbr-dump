@@ -1,5 +1,7 @@
 ---
 title: "CDP Proxy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cdpproxy.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # CDP Proxy
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -20,6 +21,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Disable-VBRCDPProxy](disable-vbrcdpproxy.md) | Disables CDP proxies. |
 | [Remove-VBRCDPProxy](remove-vbrcdpproxy.md) | Removes CDP proxies from the backup infrastructure. |
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

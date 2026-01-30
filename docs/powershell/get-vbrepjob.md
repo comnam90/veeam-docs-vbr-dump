@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREPJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrepjob.html"
 last_updated: "2/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREPJob
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Examples
 | --- | --- |
 | This command gets a backup job run by Veeam Agent operating in the standalone mode by a job name.  |  | | --- | | Get-VBREPJob -Name "Backup Job Mediaserver" | |
 
-Page updated 2/7/2025
 
-Page content applies to build 13.0.1.1071

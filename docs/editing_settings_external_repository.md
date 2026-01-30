@@ -1,5 +1,7 @@
 ---
 title: "Editing Settings of External Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/editing_settings_external_repository.html"
 last_updated: "5/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Settings of External Repositories
 
-In this article
 
 To edit settings of an external repository:
 
@@ -25,6 +26,4 @@ Note that some settings cannot be modified and will remain disabled during editi
 
 [![Editing Settings of External Repositories](images/edit_external_repo.webp)](images/edit_external_repo.webp)
 
-Page updated 5/16/2024
 
-Page content applies to build 13.0.1.1071

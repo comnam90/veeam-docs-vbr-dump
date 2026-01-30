@@ -1,5 +1,7 @@
 ---
 title: "VBRAzureAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazureaccount.html"
 last_updated: "10/19/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAzureAccount
 
-In this article
 
 Contains Microsoft Azure account.
 
@@ -31,6 +32,4 @@ Related Commands
 * [Set-VBRAzureAccount](set-vbrazureaccount.md)
 * [Remove-VBRAzureAccount](remove-vbrazureaccount.md)
 
-Page updated 10/19/2023
 
-Page content applies to build 13.0.1.1071

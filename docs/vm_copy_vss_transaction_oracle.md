@@ -1,5 +1,7 @@
 ---
 title: "Oracle Archived Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_transaction_oracle.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Archived Log Settings
 
-In this article
 
 If you copy an Oracle VM, you can specify how Veeam Backup & Replication must process transaction logs:
 
@@ -30,6 +31,4 @@ It is recommended that you select this option for databases for which the ARCHIV
 
 ![Oracle Archived Log Settings](images/vm_copy_job_vss_oracle.webp)
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

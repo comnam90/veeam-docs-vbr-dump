@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_summary.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, review the configured settings. If you want to start the policy right after you close the wizard, leave the Enable the policy when I click Finish check box selected, otherwise clear the check box. Then click Finish to close the wizard.
 
@@ -17,6 +18,4 @@ Related Topics
 
 [Failover and Failback for CDP](uni_cdp_failover_failback.md)
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

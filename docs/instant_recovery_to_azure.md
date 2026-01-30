@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery to Microsoft Azure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_to_azure.html"
 last_updated: "12/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery to Microsoft Azure
 
-In this article
 
 With Instant Recovery to Microsoft Azure, you can immediately recover different workloads (VMs, EC2 instances, physical servers, and so on) as Microsoft Azure VMs. This feature is useful, if you want to recover your infrastructure in a matter of minutes but with limited performance. To migrate your infrastructure, use the [Restore to Microsoft Azure](restore_azure.md) feature.
 
@@ -42,6 +43,4 @@ You can recover workloads from the following types of backups:
 
 \* - Available on Microsoft Windows-based backup server.
 
-Page updated 12/11/2025
 
-Page content applies to build 13.0.1.1071

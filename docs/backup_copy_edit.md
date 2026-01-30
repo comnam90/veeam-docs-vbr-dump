@@ -1,5 +1,7 @@
 ---
 title: "Editing Backup Copy Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_edit.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Backup Copy Job Settings
 
-In this article
 
 You can edit backup copy job settings after you create it. For example, you may want to change scheduling settings for the job or add some machines to the job.
 
@@ -39,6 +40,4 @@ If you disable the Keep certain full backups longer for archival purposes option
 
 ![Editing Backup Copy Job Settings](images/backup_copy_edit.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

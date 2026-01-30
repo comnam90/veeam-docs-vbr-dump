@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backups from Object Storage Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deleting_backups_from_object_storage.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backups from Object Storage Repositories
 
-In this article
 
 This section describes how to delete backups from object storage repositories. To know how to delete backups from an object storage repository added as an extent of the scale-out backup repository, see [Deleting Backups from Scale-Out Backup Repositories](deleting_backups_from_sobr.md).
 
@@ -19,6 +20,4 @@ To delete a backup from object storage repositories, do the following:
 
 [![Deleting Backups from Object Storage Repositories](images/remove_from_object_storage.webp)](images/remove_from_object_storage.webp)
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

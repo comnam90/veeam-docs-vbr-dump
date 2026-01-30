@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Computers to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_comp_unix.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Computers to Back Up
 
-In this article
 
 At the Computers step of the wizard, select protection groups and individual computers that you want to back up.
 
@@ -30,6 +31,4 @@ To quickly find the necessary object, use the search field at the bottom of the 
 
 ![Step 4. Select Computers to Back Up](images/agent_policy_computers_unix.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

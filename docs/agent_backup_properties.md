@@ -1,5 +1,7 @@
 ---
 title: "Viewing Backup Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_properties.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Backup Properties
 
-In this article
 
 You can view summary information for the [entire backup](#parent) related to a Veeam Agent backup job or [backup of specific objects](#child).
 
@@ -70,6 +71,4 @@ In this case, the summary information provides the following data:
 
 ![Viewing Backup Properties](images/agent_backup_properties.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

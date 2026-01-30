@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Export Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_exporting_schema_1.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Export Wizard
 
-In this article
 
 To launch the Export wizard, do the following:
 
@@ -23,6 +24,4 @@ Alternatively, you can right-click a database and select Export schema > Export 
 
 [![Launching Export Wizard](images/export_cust.webp)](images/export_cust.webp "Launching Export Wizard")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

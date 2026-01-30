@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRApplicationGroupStartupOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrapplicationgroupstartupoptions_surebackup.html"
 last_updated: "4/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRApplicationGroupStartupOptions
 
-In this article
 
 Short Description
 
@@ -79,6 +80,4 @@ Related Commands
 
 [New-VBRApplicationGroupStartupOptions](new-vbrapplicationgroupstartupoptions_surebackup.md)
 
-Page updated 4/30/2024
 
-Page content applies to build 13.0.1.1071

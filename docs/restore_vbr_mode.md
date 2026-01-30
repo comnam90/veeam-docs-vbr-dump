@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Restore Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_mode.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Restore Mode
 
-In this article
 
 At the Restore Mode step of the wizard, select a restore mode that you want to use.
 
@@ -21,6 +22,4 @@ In the Migrate mode, Veeam Backup & Replication retrieves configuration data fro
 
 ![Step 2. Select Restore Mode](images/restore_vbr_backup_mode.webp)
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

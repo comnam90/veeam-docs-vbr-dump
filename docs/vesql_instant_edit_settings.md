@@ -1,5 +1,7 @@
 ---
 title: "Editing Instant Recovery Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_edit_settings.html"
 last_updated: "8/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Instant Recovery Settings
 
-In this article
 
 If you have started an instant recovery session and want to change switchover settings, you can edit the instant recovery settings.
 
@@ -22,6 +23,4 @@ To change the switchover settings of an instant recovery session, do the followi
 
 [![Specifying Database Switchover Scheduling Options](images/instant_edit_apply.webp)](images/instant_edit_apply.webp "Specifying Database Switchover Scheduling Options")
 
-Page updated 8/24/2025
 
-Page content applies to build 13.0.1.1071

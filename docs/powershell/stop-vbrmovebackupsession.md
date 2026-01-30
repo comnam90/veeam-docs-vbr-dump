@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBRMoveBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrmovebackupsession.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBRMoveBackupSession
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ Related Commands
 
 [Get-VBRMoveBackupSession](get-vbrmovebackupsession.md)
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

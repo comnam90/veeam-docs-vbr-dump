@@ -1,5 +1,7 @@
 ---
 title: "VBRCopyBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcopybackupsession.html"
 last_updated: "12/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCopyBackupSession
 
-In this article
 
 This object contains settings of the copy session.
 
@@ -24,6 +25,4 @@ Related Commands
 
 [Copy-VBRBackup](copy-vbrbackup.md)
 
-Page updated 12/18/2024
 
-Page content applies to build 13.0.1.1071

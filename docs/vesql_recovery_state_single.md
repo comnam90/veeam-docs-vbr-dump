@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Recovery State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_recovery_state_single.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Recovery State
 
-In this article
 
 At this step of the wizard, select a recovery state for the database.
 
@@ -38,6 +39,4 @@ For more information on recovery states, see [this Microsoft article](https://le
 
 [![Specifying Recovery State](images/recovery_mode.webp)](images/recovery_mode.webp "Specifying Recovery State")
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Job for VM Replicas Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_job_processing.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Job for VM Replicas Processing
 
-In this article
 
 The recovery verification process for VM replicas includes the following steps:
 
@@ -41,6 +42,4 @@ Once the stabilization point has been established, Veeam Backup & Replication ru
 
 The stabilization process cannot exceed the value specified in the Maximum allowed boot time field. If the stabilization point cannot be determined within the Maximum allowed boot time, the recovery verification process will be finished with the timeout error. For this reason, you should be careful when specifying this value. Typically, a VM replica started by a recovery verification job requires more time to boot that a VM started regularly. When such error situation occurs, you need to increase the Maximum allowed boot time value and start the job again.
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

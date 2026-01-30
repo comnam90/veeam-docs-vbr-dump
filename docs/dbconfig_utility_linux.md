@@ -1,5 +1,7 @@
 ---
 title: "Using Veeam Configuration Database Connection Utility in Veeam Backup & Replication for Linux"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_utility_linux.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Veeam Configuration Database Connection Utility in Veeam Backup & Replication for Linux
 
-In this article
 
 The utility is located on the backup server by the following path: /opt/veeam/vbr/Veeam.Backup.Setup.Linux.dll. To use the utility, you must have root permissions on the local machine.
 
@@ -65,6 +66,4 @@ Step 3. Finalize the Connection Process.
 
 After new settings are applied, manually start the Veeam Backup & Replication services again.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

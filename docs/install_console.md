@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Backup & Replication Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_console.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Backup & Replication Console
 
-In this article
 
 Before you install the Veeam Backup & Replication console, [check prerequisites](console_install_before_you_begin.md). Then use the Veeam Backup & Replication Console Setup wizard to install the console.
 
@@ -24,6 +25,4 @@ Related Topics
 * [Installing Veeam Backup & Replication Console in Silent Mode](install_console_answer_file.md)
 * [Uninstalling Veeam Backup & Replication Console in Silent Mode](uninstall_console_answer_file.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

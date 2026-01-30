@@ -1,5 +1,7 @@
 ---
 title: "VBRTapeGFSMediaSetPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtapegfsmediasetpolicy.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRTapeGFSMediaSetPolicy
 
-In this article
 
 Contains GFS media set advanced options.
 
@@ -26,6 +27,4 @@ Related Commands
 
 [New-VBRTapeMediaSetCreationPolicy](new-vbrtapemediasetcreationpolicy.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

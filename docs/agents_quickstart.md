@@ -1,5 +1,7 @@
 ---
 title: "Getting Started"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_quickstart.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting Started
 
-In this article
 
 To start using the Veeam Agent management functionality in Veeam Backup & Replication, you must perform the following operations:
 
@@ -49,6 +50,4 @@ You can start, stop, enable and disable Veeam Agent backup jobs and policies to 
 
 To learn more, see [Restoring Data from Veeam Agent Backups](performing_restore_tasks.md).
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

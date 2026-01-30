@@ -1,5 +1,7 @@
 ---
 title: "Transformation Processes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_transform_operations.html"
 last_updated: "8/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Transformation Processes
 
-In this article
 
 Veeam Backup & Replication can perform additional transformations in the target backup repository after the backup copying task or at the end of the backup copy interval. Transformation processes are the following:
 
@@ -35,6 +36,4 @@ In the backup copy job settings, you can select to periodically compact a full b
 | Note |
 | If backup copy job processes the per-machine backup files, transformation processes will be performed for each object individually. |
 
-Page updated 8/25/2023
 
-Page content applies to build 13.0.1.1071

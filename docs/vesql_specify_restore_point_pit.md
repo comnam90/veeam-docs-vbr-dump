@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_specify_restore_point_pit.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Restore Point
 
-In this article
 
 At this step of the wizard, specify a state to which you want to restore your database:
 
@@ -31,6 +32,4 @@ This option is unavailable when restoring multiple databases.
 
 [![Specifying Restore Point](images/restore_point.webp)](images/restore_point.webp "Specifying Restore Point")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

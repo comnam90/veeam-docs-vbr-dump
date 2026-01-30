@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Synchronize Backups and Tape Libraries"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_rescan.html"
 last_updated: "12/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Synchronize Backups and Tape Libraries
 
-In this article
 
 After the configuration database is restored, Veeam Backup & Replication can perform a synchronization operation for backups and replicas created on the backup server and tape libraries connected to the backup server.
 
@@ -16,6 +17,4 @@ After the configuration database is restored, Veeam Backup & Replication can per
 
 Wait for the synchronization operation to complete.
 
-Page updated 12/4/2023
 
-Page content applies to build 13.0.1.1071

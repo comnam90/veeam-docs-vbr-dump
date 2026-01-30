@@ -1,5 +1,7 @@
 ---
 title: "Get-VBREncryptedBackup"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrencryptedbackup.html"
 last_updated: "4/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBREncryptedBackup
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Examples
 | --- | --- |
 | This command returns an encrypted backup named Atlanta SQL Server Backup.  |  | | --- | | Get-VBREncryptedBackup -Name "Atlanta SQL Server Backup" | |
 
-Page updated 4/30/2025
 
-Page content applies to build 13.0.1.1071

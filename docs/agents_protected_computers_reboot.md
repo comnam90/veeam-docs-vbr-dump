@@ -1,5 +1,7 @@
 ---
 title: "Rebooting Protected Computer"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_reboot.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rebooting Protected Computer
 
-In this article
 
 You can use the Veeam Backup & Replication console to reboot a protected computer running a Microsoft Windows OS. This operation may be required, for example, if you have installed the CBT driver on a selected computer and need to reboot this computer to finish the installation process and enable the driver.
 
@@ -27,6 +28,4 @@ To reboot a protected computer:
 
 [![Reboot Protected Computer](images/protected_computer_reboot.webp)](images/protected_computer_reboot.webp "Reboot Protected Computer")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

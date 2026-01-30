@@ -1,5 +1,7 @@
 ---
 title: "Detaching Object Storage Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/osr_detach_backups.html"
 last_updated: "1/9/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Detaching Object Storage Repository
 
-In this article
 
 You can detach an object storage repository after you have [imported its backups](osr_import_backups.md) and finished working with this repository. After you detach the object storage repository, the [imported](osr_import_backups.md) backups become unavailable.
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Importing Object Storage Backups](osr_import_backups.md)
 
-Page updated 1/9/2026
 
-Page content applies to build 13.0.1.1071

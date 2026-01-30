@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRViSureBackupJob (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvisurebackupjob.html"
 last_updated: "2/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRViSureBackupJob (obsolete)
 
-In this article
 
 Short Description
 
@@ -77,6 +78,4 @@ Related Commands
 * [Get-VBRSureBackupJob](get-vbrsurebackupjob.md)
 * [Get-VBRVirtualLab](get-vbrvirtuallab.md)
 
-Page updated 2/27/2024
 
-Page content applies to build 13.0.1.1071

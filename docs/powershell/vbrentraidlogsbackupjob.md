@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDLogsBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidlogsbackupjob.html"
 last_updated: "7/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDLogsBackupJob
 
-In this article
 
 Contains details on a backup job for Microsoft Entra ID audit and sign-in logs.
 
@@ -39,6 +40,4 @@ Related Commands
 * [Get-VBREntraIDLogsBackupJob](get-vbrentraidlogsbackupjob.md)
 * [Set-VBREntraIDLogsBackupJob](set-vbrentraidlogsbackupjob.md)
 
-Page updated 7/28/2025
 
-Page content applies to build 13.0.1.1071

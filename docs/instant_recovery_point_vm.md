@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_point_vm.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Restore Point
 
-In this article
 
 By default, Veeam Backup & Replication uses the latest valid restore point to recover workloads. You can recover a workload to an earlier state, if necessary:
 
@@ -17,6 +18,4 @@ By default, Veeam Backup & Replication uses the latest valid restore point to re
 
 ![Step 3. Select Restore Point](images/instant_recovery_point.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

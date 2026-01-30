@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_before_ad.html"
 last_updated: "8/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before creating a protection group, consider the following prerequisites and limitations:
 
@@ -22,6 +23,4 @@ Before creating a protection group, consider the following prerequisites and lim
 
 Note that in client Microsoft Windows OSes access to the administrative share is forbidden by default for local accounts. You can enable this option with a registry key. For details, see [this Microsoft KB article](https://support.microsoft.com/en-us/help/947232/error-message-when-you-try-to-access-an-administrative-share-on-a-wind).
 
-Page updated 8/20/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/application_aware_processing.html"
 last_updated: "12/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing
 
-In this article
 
 You can use the cmdlets from this section to configure application-aware processing settings (not only VSS settings) for jobs.
 
@@ -22,6 +23,4 @@ You can use the cmdlets from this section to configure application-aware process
 | [Set-VBRJobObjectVssOptions](set-vbrjobobjectvssoptions.md) | Edits VSS options of a specific job object |
 | [Set-VBRJobVssOptions](set-vbrjobvssoptions.md) | Applies new VSS settings to a selected job |
 
-Page updated 12/18/2023
 
-Page content applies to build 13.0.1.1071

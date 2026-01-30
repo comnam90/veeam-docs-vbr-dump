@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_notifications.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the backup job:
 
@@ -40,6 +41,4 @@ Email notifications will be sent if you configure global email notification sett
 
 ![Notification Settings](images/file_share_backup_job_advanced_notifications.webp "Notification Settings")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "File Indexing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_linux_guest_indexing.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # File Indexing
 
-In this article
 
 You can instruct the Veeam Agent backup policy to create an index of files and folders on the protected computer OS during backup. If you enable the file indexing option, you will be able to search for individual files inside Veeam Agent backups and perform 1-click restore in Veeam Backup Enterprise Manager. For more information on file system indexing, see the [File System Indexing](https://helpcenter.veeam.com/docs/agentforlinux/userguide/backup_job_index.html?ver=13) topic in the Veeam Agent for Linux User Guide.
 
@@ -42,6 +43,4 @@ To reset the list of folders to its initial state, click Default.
 
 ![File Indexing](images/agent_policy_linux_indexing.webp)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

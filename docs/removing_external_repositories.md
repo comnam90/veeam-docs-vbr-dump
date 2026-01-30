@@ -1,5 +1,7 @@
 ---
 title: "Removing External Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_external_repositories.html"
 last_updated: "7/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing External Repositories
 
-In this article
 
 You can remove an external repository from the backup infrastructure.
 
@@ -30,6 +31,4 @@ Related Topics
 * [Ownership](external_repository_ownership.md)
 * [Cache](external_repository_cache.md)
 
-Page updated 7/23/2024
 
-Page content applies to build 13.0.1.1071

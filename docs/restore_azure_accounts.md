@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Azure Compute Accounts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_accounts.html"
 last_updated: "2/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft Azure Compute Accounts
 
-In this article
 
 You can use a Microsoft Azure Compute account for the following operations in Veeam Backup & Replication:
 
@@ -27,6 +28,4 @@ To add a Microsoft Azure Compute account, use the Microsoft Azure Compute Accoun
 6. [Enable Linux restore](restore_azure_acc_lin.md).
 7. [Finish working with the wizard](restore_azure_acc_summary.md).
 
-Page updated 2/23/2024
 
-Page content applies to build 13.0.1.1071

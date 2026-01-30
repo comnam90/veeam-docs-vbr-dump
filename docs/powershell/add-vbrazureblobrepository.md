@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAzureBlobRepository"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazureblobrepository.html"
 last_updated: "7/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAzureBlobRepository
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related Commands
 * [Get-VBRAzureBlobFolder](get-vbrazureblobfolder.md)
 * [New-VBRAzureBlobFolder](new-vbrazureblobfolder.md)
 
-Page updated 7/7/2025
 
-Page content applies to build 13.0.1.1071

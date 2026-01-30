@@ -1,5 +1,7 @@
 ---
 title: "Backup Window"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_window.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Window
 
-In this article
 
 If necessary, you can specify a backup window for jobs. The backup window is a period of time on weekdays when jobs are permitted to run. If the job exceeds the allowed window, Veeam Backup & Replication will automatically stop this job. Also, if a job is in progress and enters the denied window, Veeam Backup & Replication will stop it immediately and reschedule according to the schedule settings.
 
@@ -34,6 +35,4 @@ For example, you have configured a job to run with a 4-hour interval with an off
 
 ![Backup Window](images/backup_window_periodic.webp)
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

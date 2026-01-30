@@ -1,5 +1,7 @@
 ---
 title: "Managing Upload Streams"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/enabling_multithreaded_transfer.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Upload Streams
 
-In this article
 
 By default, Veeam Backup & Replication uses multithreaded data transfer for every job session. VM data going from source to target is transferred over 5 TCP/IP connections. However, if you schedule several jobs to run at the same time, load on the network may be heavy. If the network capacity is not sufficient to support multiple data transfer connections, you can disable multithreaded data transfer or change the number of TCP/IP connections.
 
@@ -26,6 +27,4 @@ To change the number of connections:
 
 ![Managing Upload Streams](images/disable_multithreaded_transfer.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

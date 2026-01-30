@@ -1,5 +1,7 @@
 ---
 title: "Configuring Global Email Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_email_notifications.html"
 last_updated: "12/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Global Email Notification Settings
 
-In this article
 
 To configure global email notification settings:
 
@@ -149,6 +150,4 @@ For every particular job, you can specify additional recipients. For more inform
 1. Veeam Backup & Replication allows sending a test email to check if all settings have been configured correctly. To send a test email, click Test Message.
 2. Select the Send me a daily AI-powered summary of all backup activities check box to receive daily summary report. For more information, see [Data Resilience Daily Summary Report](backup_reporting_email.md#morning_coffe_report).
 
-Page updated 12/23/2025
 
-Page content applies to build 13.0.1.1071

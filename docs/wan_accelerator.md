@@ -1,5 +1,7 @@
 ---
 title: "WAN Accelerators"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_accelerator.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # WAN Accelerators
 
-In this article
 
 WAN accelerators are dedicated components that Veeam Backup & Replication uses for [WAN acceleration](wan_acceleration.md). WAN accelerators are responsible for global data caching and data deduplication.
 
@@ -48,6 +49,4 @@ In This Section
 * [Removing WAN Accelerators](wan_remove.md)
 * [WAN Acceleration](wan_acceleration.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

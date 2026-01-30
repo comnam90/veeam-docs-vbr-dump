@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Choose Media Pool for Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_full.html"
 last_updated: "7/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Choose Media Pool for Full Backup
 
-In this article
 
 At the Full Backup step of the wizard, choose a media pool that will be used for archiving full backups of the selected objects and set a schedule for full backups.
 
@@ -24,6 +25,4 @@ You can select a regular media pool or a GFS media pool. Depending on the select
 
 ![Step 4. Choose Media Pool for Full Backup](images/object_tape_job_full_backup.webp)
 
-Page updated 7/7/2025
 
-Page content applies to build 13.0.1.1071

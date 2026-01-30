@@ -1,5 +1,7 @@
 ---
 title: "Adding NFS Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_repository_add.html"
 last_updated: "10/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding NFS Repositories
 
-In this article
 
 This section describes how to add an NFS share as a backup repository.
 
@@ -22,6 +23,4 @@ To add a backup repository, use the New Backup Repository wizard.
 7. [Apply backup repository settings](nfs_repository_apply.md).
 8. [Finish working with the wizard](nfs_repository_finish.md).
 
-Page updated 10/23/2024
 
-Page content applies to build 13.0.1.1071

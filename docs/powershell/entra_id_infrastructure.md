@@ -1,5 +1,7 @@
 ---
 title: "Infrastructure Components"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/entra_id_infrastructure.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Infrastructure Components
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -22,6 +23,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Remove-VBREntraIDTenant](remove-vbrentraidtenant.md) | Removes Microsoft Entra ID tenants from the backup infrastructure. |
 | [Start-VBREntraIDDBRepositoryRescan](start-vbrentraiddbrepositoryrescan.md) | Starts rescan of the repository where the Microsoft Entra ID tenant backups are stored. |
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRComputerWarningOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrcomputerwarningoptions.html"
 last_updated: "10/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRComputerWarningOptions
 
-In this article
 
 Short Description
 
@@ -52,6 +53,4 @@ This command enables notification settings for computers not processed by Veeam 
 | --- |
 | $warning = New-VBRComputerWarningOptions -Enable |
 
-Page updated 10/21/2024
 
-Page content applies to build 13.0.1.1071

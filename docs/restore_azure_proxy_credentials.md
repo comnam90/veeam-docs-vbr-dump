@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Credentials and Transport Port"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_credentials.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Credentials and Transport Port
 
-In this article
 
 At the Credentials step of the wizard, specify credentials of the local administrator account on the Azure restore proxy appliance and define the transport port:
 
@@ -24,6 +25,4 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 ![Step 3. Specify Credentials and Transport Port](images/azure_proxy_credentials.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

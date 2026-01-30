@@ -1,5 +1,7 @@
 ---
 title: "vApp Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_vapp_recovery.html"
 last_updated: "8/30/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # vApp Recovery
 
-In this article
 
 With vApp recovery, you can restore the whole vApp from a backup to VMware Cloud Director.
 
@@ -20,6 +21,4 @@ During vApp recovery, Veeam Backup & Replication recovers VMs within one vApp on
 | Important |
 | You can restore only those VMs whose placement policy is the same as the default placement policy of the target organization VDC (VDC where the vApp to which you restore VMs reside). For more information on placement policies, see [VMware Docs](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-38C72A2B-B5CA-475C-A154-ACD4C4C475CC.html). |
 
-Page updated 8/30/2023
 
-Page content applies to build 13.0.1.1071

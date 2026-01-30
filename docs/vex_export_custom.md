@@ -1,5 +1,7 @@
 ---
 title: "Exporting to Custom Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_export_custom.html"
 last_updated: "4/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting to Custom Location
 
-In this article
 
 Veeam Explorer for Microsoft Exchange allows you to export mailbox store data to a custom location as PST files.
 
@@ -67,6 +68,4 @@ After the export process is complete, review the results shown in the Export sum
 
 [![Review Export Summary](images/vex_export_summary.webp)](images/vex_export_summary.webp "Review Export Summary")
 
-Page updated 4/30/2025
 
-Page content applies to build 13.0.1.1071

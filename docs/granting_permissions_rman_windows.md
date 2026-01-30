@@ -1,5 +1,7 @@
 ---
 title: "Granting User Permissions on Microsoft Windows Machines"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_rman_windows.html"
 last_updated: "12/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Granting User Permissions on Microsoft Windows Machines
 
-In this article
 
 By default, the Veeam Plug-In configuration file (veeam\_config.xml) is located in the %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN folder on the machine where Veeam Plug-In is installed. On Microsoft Windows machines, you can set up access to the plug-in configuration file using [graphic user interface](#gui) or [Windows PowerShell](#ps).
 
@@ -87,6 +88,4 @@ where:
 * <configFilePAth> — the path to the plug-in configuration file. The default path is %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\veeam\_config.xml.
 * newACL — the name of the new access control list.
 
-Page updated 12/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Access Keys for AWS Users"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_aws.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Access Keys for AWS Users
 
-In this article
 
 You can create a record for credentials that you plan to use to connect to AWS.
 
@@ -36,6 +37,4 @@ Related Topics
 * [Object Storage Repositories](object_storage_repository.md)
 * [Restore to Amazon EC2](restore_amazon.md)
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

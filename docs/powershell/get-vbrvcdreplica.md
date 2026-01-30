@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRvCDReplica"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvcdreplica.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRvCDReplica
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Examples
 | --- | --- |
 | This command returns all Cloud Director replicas that are added to the backup infrastructure.  |  | | --- | | Get-VBRvCDReplica | |
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

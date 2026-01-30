@@ -1,5 +1,7 @@
 ---
 title: "Set-StoragePluginHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-storagepluginhost.html"
 last_updated: "7/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-StoragePluginHost
 
-In this article
 
 Short Description
 
@@ -106,6 +107,4 @@ Related Commands
 * [New-VBRStorageProtocolPolicy](new-vbrstorageprotocolpolicy.md)
 * [Get-StoragePluginInfrastructureVolume](get-storageplugininfrastructurevolume.md)
 
-Page updated 7/16/2025
 
-Page content applies to build 13.0.1.1071

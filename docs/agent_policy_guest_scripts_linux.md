@@ -1,5 +1,7 @@
 ---
 title: "Backup Job and Snapshot Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_guest_scripts_linux.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job and Snapshot Scripts
 
-In this article
 
 You can specify custom scripts that will be executed within the backup policy session on Linux computers. Veeam Agent for Linux supports the following types of scripts:
 
@@ -62,6 +63,4 @@ To define custom settings for a computer added as a part of a protection group, 
 
    ![Backup Job and Snapshot Scripts](images/agent_policy_linux_scripts_workstation.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

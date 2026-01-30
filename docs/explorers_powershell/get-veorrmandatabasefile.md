@@ -18,7 +18,7 @@ Applies to
 
 Veeam Backup & Replication
 
-Product Edition: Enterprise, Enterprise Plus, Veeam Universal License
+Product Edition: Community, Enterprise, Enterprise Plus, Veeam Universal License
 
 Syntax
 

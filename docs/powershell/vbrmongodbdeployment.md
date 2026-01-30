@@ -1,5 +1,7 @@
 ---
 title: "VBRMongoDBDeployment"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrmongodbdeployment.html"
 last_updated: "9/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRMongoDBDeployment
 
-In this article
 
 Contains MongoDB replica sets or containers, also known as deployments.
 
@@ -23,6 +24,4 @@ Properties
 | UseTls | Boolean | Use of TLS protocol to provide additional privacy and data integrity. |
 | Type | [VBRMongoDBDeploymentType](enums.md#VBRMongoDBDeploymentType) | Type of MongoDB deployment. |
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

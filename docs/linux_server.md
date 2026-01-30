@@ -1,5 +1,7 @@
 ---
 title: "Linux Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Linux Server
 
-In this article
 
 You can add a Linux server with local, directly attached storage or mounted NFS as a backup repository. The storage can be a local disk, directly attached disk-based storage (such as a USB hard drive), NFS share, or iSCSI/FC SAN LUN in case the server is connected into the SAN fabric.
 
@@ -54,6 +55,4 @@ Related Topics
 * [Adding Linux Repositories Using Console](linux_repository_add.md)
 * [Adding Linux Repositories Using Web UI](linux_repository_add_web.md)
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

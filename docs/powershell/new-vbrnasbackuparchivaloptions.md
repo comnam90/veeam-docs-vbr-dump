@@ -1,5 +1,7 @@
 ---
 title: "New-VBRNASBackupArchivalOptions (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrnasbackuparchivaloptions.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRNASBackupArchivalOptions (obsolete)
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Examples
 | --- | --- |
 | This command shows how to define retention policy for deleted file versions of backed up files from file shares. The long-term repository will not keep .EXE file extensions.      |  | | --- | | New-VBRNASBackupArchivalOptions -ArchivalType ExclusionMask -ExclusionMask '\*.exe' | |
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

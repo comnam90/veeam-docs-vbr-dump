@@ -1,5 +1,7 @@
 ---
 title: "Viewing Logs and Events"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/history_statistics_hv_web.html"
 last_updated: "8/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Logs and Events
 
-In this article
 
 The Logs and Events view displays system and job event logs. This view shows data for all sessions stored in the configuration database.
 
@@ -22,6 +23,4 @@ The Session Logs view provides overall session statistics: name, session type, s
 
 [![Viewing Logs and Events](images/history_stats_web.webp)](images/history_stats_web.webp)
 
-Page updated 8/25/2025
 
-Page content applies to build 13.0.1.1071

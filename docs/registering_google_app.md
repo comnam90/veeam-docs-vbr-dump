@@ -1,5 +1,7 @@
 ---
 title: "Registering Application in Google Cloud Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/registering_google_app.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Registering Application in Google Cloud Console
 
-In this article
 
 If you want to use your own web application for email notifications, you need to configure it in the Google Cloud console. To do this, perform the following steps:
 
@@ -35,6 +36,4 @@ After you finish the registration, specify custom application registration setti
 | Note |
 | You can leave your application in the Testing status and do not publish it. In that case, you will receive a warning message Google hasn't verified this app when connecting to your application. If you want to verify it, see [this Google article](https://support.google.com/cloud/answer/7454865?hl=en&ref_topic=3473162). |
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

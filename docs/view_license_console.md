@@ -1,5 +1,7 @@
 ---
 title: "Viewing License Information Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/view_license_console.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing License Information Using Console
 
-In this article
 
 You can view details of the installed license in the License Information window of the Veeam Backup & Replication console.
 
@@ -131,6 +132,4 @@ This section contains detailed information about consumed instances, which are g
 * Date of the last job run
 * Notes
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

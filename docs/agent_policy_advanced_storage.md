@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_advanced_storage.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 To specify storage settings for the backup policy:
 
@@ -57,6 +58,4 @@ This scenario differs from the same scenario in earlier versions of Veeam Backup
 
 To learn more about data encryption in Veeam Backup & Replication, see [Data Encryption](data_encryption.md).
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Integration Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_integration_vm.html"
 last_updated: "6/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Integration Settings
 
-In this article
 
 On the Integration tab, you can define whether you want to use the Backup from Storage Snapshots technology to create the backup. Backup from Storage Snapshots lets you leverage storage snapshots for VM data processing. The technology improves RPOs and reduces the impact of backup activities on the production environment.
 
@@ -27,6 +28,4 @@ For more information, see [Limitation on Number of VMs per Snapshot](storage_lim
 
 ![Integration Settings](images/vm_backup_job_settings_san.webp)
 
-Page updated 6/30/2025
 
-Page content applies to build 13.0.1.1071

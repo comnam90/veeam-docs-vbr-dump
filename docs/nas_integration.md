@@ -1,5 +1,7 @@
 ---
 title: "NAS Integration (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_integration.html"
 last_updated: "4/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NAS Integration (Storage Systems)
 
-In this article
 
 Veeam Backup & Replication allows you to integrate your storage systems with NAS file shares residing on them into your infrastructure. For more information, see the [Adding Enterprise Storage System as NAS Filer](adding_nas_filer.md) section in the Veeam Backup & Replication User Guide.
 
@@ -24,6 +25,4 @@ Related Topics
 * [NAS File Share Backup from Storage Snapshots](nas_backup_from_storage_snapshots.md)
 * [Rescanning Storage Systems](storage_rescan.md)
 
-Page updated 4/17/2025
 
-Page content applies to build 13.0.1.1071

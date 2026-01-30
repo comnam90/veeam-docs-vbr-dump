@@ -1,5 +1,7 @@
 ---
 title: "Rescan (Storage Discovery) Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_discovery_process.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescan (Storage Discovery) Process
 
-In this article
 
 The Storage Discovery process performs rescan of the whole storage system or selected volumes. It can be performed against the following nodes in the storage system hierarchy:
 
@@ -148,6 +149,4 @@ To manually start storage discovery:
 
 [![Click to zoom in](images/san_rescan.webp)](images/san_rescan.webp "Click to zoom in")
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

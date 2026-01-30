@@ -1,5 +1,7 @@
 ---
 title: "Operations Available on Linux Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations_linux.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Operations Available on Linux Computers
 
-In this article
 
 The list of operations that you can perform on a Linux-based Veeam Agent computer managed by Veeam Backup & Replication depends on the backup job type. Some operations are available only if the computer is protected with a backup job managed by Veeam Agent.
 
@@ -134,6 +135,4 @@ If you have any questions or want to share your feedback about Veeam Agent, you 
 
 * Visit [Veeam R&D Forums](https://forums.veeam.com) to share your opinion or ask a question.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Upgrading Performance Extent to Hardened Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrading_performance_tier_extents.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading Performance Extent to Hardened Repository
 
-In this article
 
 |  |
 | --- |
@@ -61,6 +62,4 @@ Select Map Backup and map the job to the corresponding imported backup. Finish t
 1. Re-enable the jobs that you disabled on the SOBR.
 2. Open the Backup Infrastructure view and remove the unused Linux repositories from the backup infrastructure.
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

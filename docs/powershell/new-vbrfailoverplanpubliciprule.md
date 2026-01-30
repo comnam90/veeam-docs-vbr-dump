@@ -1,5 +1,7 @@
 ---
 title: "New-VBRFailoverPlanPublicIPRule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrfailoverplanpubliciprule.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRFailoverPlanPublicIPRule
 
-In this article
 
 Short Description
 
@@ -59,6 +60,4 @@ This command defines settings of a new public IP rule.
 | --- |
 | New-VBRFailoverPlanPublicIPRule -SourceIp "45.0.0.2" -SourcePort 8888 -TargetIp "172.16.2.232" -TargetPort 3389 -Description "Public IP for srv03" |
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

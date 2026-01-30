@@ -1,5 +1,7 @@
 ---
 title: "Managing Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_capacity_tier_data.html"
 last_updated: "11/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Capacity Tier
 
-In this article
 
 You can manage your capacity tier and the offloaded data in the following ways:
 
@@ -24,6 +25,4 @@ In This Section
 * [Retention Policy](capacity_tier_retention.md)
 * [Excluding Capacity Extent from Scale-Out Repositories](excluding_object_storage.md)
 
-Page updated 11/28/2024
 
-Page content applies to build 13.0.1.1071

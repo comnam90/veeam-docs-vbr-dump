@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Oracle Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_oracle_settings.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Oracle Settings
 
-In this article
 
 At this step of the wizard, specify the location to which you want to restore the database.
 
@@ -41,6 +42,4 @@ The maximum length of the Oracle SID is 12 characters and it can only contain al
 
 [![Specifying Oracle Settings](images/rman_restore_settings.webp)](images/rman_restore_settings.webp "Specifying Oracle Settings")
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

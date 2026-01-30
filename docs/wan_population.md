@@ -1,5 +1,7 @@
 ---
 title: "Manual Population of Global Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_population.html"
 last_updated: "6/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Manual Population of Global Cache
 
-In this article
 
 You can manually pre-populate the global cache to avoid the situation where the cache remains empty. As a result, by the time a job to the remote location starts, the global cache will contain data blocks that can be used for data deduplication.
 
@@ -64,6 +65,4 @@ Related Topics
 * [Manually Populating Global Cache](wan_populate_cache.md)
 * [Clearing Global Cache](wan_clear_cache.md)
 
-Page updated 6/8/2023
 
-Page content applies to build 13.0.1.1071

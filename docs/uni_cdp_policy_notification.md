@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_notification.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Notification Settings
 
-In this article
 
 Veeam Backup & Replication can send by email two types of notifications for CDP policies: session reports and RPO reports.
 
@@ -37,6 +38,4 @@ SNMP traps will be sent if you configure global SNMP settings in Veeam Backup & 
 
 ![Step 8. Specify Notification Settings](images/uni_cdp_policy_notifications.webp "Specify notification settings")
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

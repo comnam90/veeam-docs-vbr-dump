@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Configure Encryption"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_azure_encryption.html"
 last_updated: "10/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Configure Encryption
 
-In this article
 
 At the Encryption step of the wizard, provide a key for decryption:
 
@@ -26,6 +27,4 @@ If you do not specify the decryption password, you can do it later. For more inf
 
 [![Step 5. Configure Encryption](images/external_azure_wizard_encryption.webp)](images/external_azure_wizard_encryption.webp)
 
-Page updated 10/2/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Using Veeam VM Migrator Utility"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/using_vm_migrator_utility.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Veeam VM Migrator Utility
 
-In this article
 
 Each procedure step includes running utility cmdlets in Veeam Backup PowerShell module.
 
@@ -22,6 +23,4 @@ To use Veeam VM Migrator utility, check the [prerequisites](vm_migrator_utility_
 7. [Start the migration](vm_migrator_start_migration.md).
 8. [Finish the migration](vm_migrator_finish_migration.md).
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

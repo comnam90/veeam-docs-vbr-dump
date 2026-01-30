@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_before_you_begin_vm.html"
 last_updated: "12/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Before you perform Instant Recovery, consider the following:
 
@@ -39,6 +40,4 @@ By default, vPower NFS datastore is located in the IRCache folder on a volume wi
 * [For Veeam Quick Migration with Smart Switch] In addition to the disk space mentioned above, you need to provide more disk space in vPower NFS datastore. The minimum amount of free space must equal the RAM capacity of the recovered VM.
 * [For Nutanix AHV VMs] Instantly recoverd VM will have default virtual hardware settings: 2 CPU cores, 4GB RAM and one network adapter. If you want to change the default settings, turn off the VM and set the required virtual resources. Note that you must not switch off the instant recovery session before turning off the VM.
 
-Page updated 12/12/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Microsoft SQL Server Transaction Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_transaction_sql.html"
 last_updated: "5/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Microsoft SQL Server Transaction Log Settings
 
-In this article
 
 If you copy a Microsoft SQL VM, you can specify how Veeam Backup & Replication must process transaction logs:
 
@@ -23,6 +24,4 @@ If you copy a Microsoft SQL VM, you can specify how Veeam Backup & Replication m
 
 ![Microsoft SQL Server Transaction Log Settings](images/vm_copy_job_vss_sql.webp)
 
-Page updated 5/26/2023
 
-Page content applies to build 13.0.1.1071

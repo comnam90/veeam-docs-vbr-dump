@@ -1,5 +1,7 @@
 ---
 title: "Seeding Backups to Azure Blob Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_box_seeding.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Seeding Backups to Azure Blob Storage
 
-In this article
 
 Seeding backups is an operation which can help in case you want to keep backups in object storage repositories and need to transfer backups in bulk to object storage. In this case, you can utilize the capabilities of the Azure Data Box device that will help you to transfer data from the local backup repository to Azure Blob storage and synchronize with the storage. Azure Data Box is a physical storage device that emulates a cloud storage endpoint and serves as an intermediate between the local backup repository and Azure Blob storage. With the help of Azure Data Box you will not need to create a full backup file and transfer it through the network which may result in high load on the network. Instead, you will transport all necessary data using Azure Data Box.
 
@@ -88,6 +89,4 @@ Related Topics
 
 [Adding Azure Data Box Storage](osr_adding_data_box.md)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

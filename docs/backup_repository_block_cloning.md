@@ -1,5 +1,7 @@
 ---
 title: "Fast Clone"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_block_cloning.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Fast Clone
 
-In this article
 
 Fast Clone is the Veeam Backup & Replication technology that helps create quick file copies. Fast Clone increases the speed of synthetic backup creation and transformation, reduces disk space requirements and decreases the load on storage devices.
 
@@ -162,6 +163,4 @@ Related Topics
 
 [Backup File Placement for Performance Tier](backup_repository_sobr_placement.md)
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

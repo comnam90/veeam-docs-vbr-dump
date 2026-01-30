@@ -1,5 +1,7 @@
 ---
 title: "Retention for PostgreSQL WAL Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postrgresql_backup_retention.html"
 last_updated: "2/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retention for PostgreSQL WAL Files
 
-In this article
 
 Veeam Backup & Replication stores WAL files in the proprietary Veeam format — .VLB and keep them together with the VM image-level backup. For more information on the backup files, see [Backup Chain](backup_files.md).
 
@@ -57,6 +58,4 @@ Veeam Backup & Replication comprises native means of the PostgreSQL server to ar
 
 ![Retention for Backup Log Backup](images/bu_chain_vlbs_oracle.webp)
 
-Page updated 2/26/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRNDMPServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrndmpserver.html"
 last_updated: "3/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRNDMPServer
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 * [Add-VBRCredentials](add-vbrcredentials.md)
 * [Get-VBRServer](get-vbrserver.md)
 
-Page updated 3/8/2024
 
-Page content applies to build 13.0.1.1071

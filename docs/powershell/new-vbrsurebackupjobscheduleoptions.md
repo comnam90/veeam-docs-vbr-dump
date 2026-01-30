@@ -1,5 +1,7 @@
 ---
 title: "New-VBRSureBackupJobScheduleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsurebackupjobscheduleoptions.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRSureBackupJobScheduleOptions
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Related Commands
 * [New-VBRMonthlyOptions](new-vbrmonthlyoptions.md)
 * [Get-VBRJob](get-vbrjob.md)
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

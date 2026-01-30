@@ -1,5 +1,7 @@
 ---
 title: "How integration with Syslog Server Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/syslog_servers_hiw.html"
 last_updated: "3/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How integration with Syslog Server Works
 
-In this article
 
 When you add the syslog server in the Veeam Backup & Replication console, Veeam Backup & Replication sends a test event to check if it can communicate with the syslog server. Further, all events that Veeam Backup & Replication writes to Microsoft Windows Event Log will also be sent to the syslog server.
 
@@ -31,6 +32,4 @@ Each event contains a syslog message. The format of the message is defined by [R
 | Note |
 | The structure and the content of the syslog message may vary for different syslog servers. For the full list of fields that can be sent in a syslog message, see the [Syslog Message Format](https://www.rfc-editor.org/rfc/rfc5424.html#section-6) section in RFC 5424. |
 
-Page updated 3/5/2025
 
-Page content applies to build 13.0.1.1071

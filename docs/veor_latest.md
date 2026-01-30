@@ -1,5 +1,7 @@
 ---
 title: "Publishing Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_latest.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Publishing Latest State
 
-In this article
 
 Veeam Explorer for Oracle allows you to republish an unpublished database anew. When republishing a database, it will be attached to the target Oracle server as of the latest available state.
 
@@ -37,6 +38,4 @@ You can filter notifications by their status: Error, Warning or Success.
 
 [![Reviewing Publish Summary Window](images/veor_publish_summary.webp)](images/veor_publish_summary.webp "Reviewing Publish Summary Window")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

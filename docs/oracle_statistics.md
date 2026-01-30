@@ -1,5 +1,7 @@
 ---
 title: "Archived Log Backup Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_statistics.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Archived Log Backup Statistics
 
-In this article
 
 You can view the statistics of the archived log backup job in the History view or in the Home view in Veeam Backup & Replication.
 
@@ -97,6 +98,4 @@ As described in the section above, during database log backup ('child') job sess
 
 The total number of all archived log files stored at the moment in all VLBs is reported as a number of restore points for the 'child' job that backs up database logs. So, in the example above, the log backup job for Oracle VM1 has created 8 restore points by the moment.
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

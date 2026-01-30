@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Mount Server Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_mount_server.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Mount Server Settings
 
-In this article
 
 At the Mount Server step of the wizard, specify settings for the mount servers that you plan to use for file-level and application items restore.
 
@@ -34,6 +35,4 @@ Each list contains servers with the selected Guest OS and added to the backup in
 
 ![Step 5. Specify Mount Server Settings](images/dell_data_domain_mount_server.webp)
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

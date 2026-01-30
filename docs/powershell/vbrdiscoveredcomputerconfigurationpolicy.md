@@ -1,5 +1,7 @@
 ---
 title: "VBRDiscoveredComputerConfigurationPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrdiscoveredcomputerconfigurationpolicy.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRDiscoveredComputerConfigurationPolicy
 
-In this article
 
 Contains a configuration policy.
 
@@ -19,6 +20,4 @@ Contains a configuration policy.
 | AppliedTo | GUID | IDs of computers to which the policy is assigned. |
 | Id | GUID | ID of the policy. |
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRAzureCloudService"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazurecloudservice.html"
 last_updated: "12/13/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRAzureCloudService
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 
 [Get-VBRAzureSubscription](get-vbrazuresubscription.md)
 
-Page updated 12/13/2023
 
-Page content applies to build 13.0.1.1071

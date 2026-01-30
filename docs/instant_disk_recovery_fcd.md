@@ -1,5 +1,7 @@
 ---
 title: "Instant First Class Disk (FCD) Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_fcd.html"
 last_updated: "5/31/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant First Class Disk (FCD) Recovery
 
-In this article
 
 With Instant First Class Disk (FCD) Recovery, you can immediately restore VM disks from a backup file and register them as FCDs. If you want to recover disks in their initial format, see [Instant Disk Recovery](instant_disk_recovery.md). For the list of all disk recovery methods and their brief descriptions, see [Disk Recovery](disk_restores.md).
 
@@ -33,6 +34,4 @@ Related Topics
 
 [Performing Instant FCD Recovery](performing_instant_fcd_recovery.md)
 
-Page updated 5/31/2023
 
-Page content applies to build 13.0.1.1071

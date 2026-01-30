@@ -1,5 +1,7 @@
 ---
 title: "Sync-NetAppHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-netapphost.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sync-NetAppHost
 
-In this article
 
 Short Description
 
@@ -65,6 +66,4 @@ Related Commands
 
 [Get-NetAppHost](get-netapphost.md)
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

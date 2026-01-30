@@ -1,5 +1,7 @@
 ---
 title: "SureBackup Virtual Labs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/virtual_lab.html"
 last_updated: "8/2/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SureBackup Virtual Labs
 
-In this article
 
 |  |
 | --- |
@@ -48,6 +49,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [New-VBRHvVirtualLabProxyAppliance](new-vbrhvvirtuallabproxyappliance.md) | Defines settings of proxy appliances. |
 | [Set-VBRHvVirtualLabProxyAppliance](set-vbrhvvirtuallabproxyappliance.md) | Modifies settings of proxy appliances for Hyper-V virtual lab. |
 
-Page updated 8/2/2023
 
-Page content applies to build 13.0.1.1071

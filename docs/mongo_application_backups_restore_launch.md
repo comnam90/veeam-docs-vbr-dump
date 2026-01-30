@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch MongoDB Items Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_application_backups_restore_launch.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch MongoDB Items Restore Wizard
 
-In this article
 
 To launch database from an application backup:
 
@@ -17,6 +18,4 @@ To launch database from an application backup:
 
 [![Restore from MongoDB Backup](images/mongo_backup_restore.webp)](images/mongo_backup_restore.webp "Restore from MongoDB Backup")
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

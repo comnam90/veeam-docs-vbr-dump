@@ -1,5 +1,7 @@
 ---
 title: "Capacity Tier"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sobr_capacity_tier.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Capacity Tier
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations:
 
@@ -21,6 +22,4 @@ You can use the cmdlets in this topic to perform the following operations:
 | [Start-VBRCapacityTierSync](start-vbrcapacitytiersync.md) | Starts to sync data with the capacity extent. |
 | [Start-VBRDownloadBackup](start-vbrdownloadbackup.md) | Downloads backup files from the capacity tier to the performance tier. |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

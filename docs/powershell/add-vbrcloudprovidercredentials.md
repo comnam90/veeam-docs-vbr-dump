@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRCloudProviderCredentials"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcloudprovidercredentials.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRCloudProviderCredentials
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ Examples
 | --- | --- |
 | This example shows how to add cloud provider credentials records with the secure string option to the Veeam Backup & Replication infrastructure.  |  | | --- | | $securepassword = Read-Host -Prompt "Enter password" -AsSecureString  Add-VBRCloudProviderCredentials -Name "Cloud Login" -Password $securepassword |  Perform the following steps:   1. Run the [Read-Host](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.3&viewFallbackFrom=powershell-6) cmdlet. Specify the Prompt parameter value. Provide the AsSecureString parameter. Save the result to the $securepassword variable. 2. Run the Add-VBRCloudProviderCredentials cmdlet. Specify the Name parameter value. Set the $securepassword variable as the Password parameter value. |
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

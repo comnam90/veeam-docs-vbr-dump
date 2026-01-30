@@ -1,5 +1,7 @@
 ---
 title: "VBRNASBackupArchivalOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnasbackuparchivaloptions.html"
 last_updated: "1/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNASBackupArchivalOptions
 
-In this article
 
 Contains retention policy for file versions and settings of files and folders that will be added to the file backup job.
 
@@ -28,6 +29,4 @@ Related Commands
 * [New-VBRNASBackupArchivalOptions](new-vbrnasbackuparchivaloptions.md)
 * [Set-VBRNASBackupArchivalOptions](set-vbrnasbackuparchivaloptions.md)
 
-Page updated 1/19/2024
 
-Page content applies to build 13.0.1.1071

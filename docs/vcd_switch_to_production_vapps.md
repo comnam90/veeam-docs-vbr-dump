@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Schedule Switch to Production vApps"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_switch_to_production_vapps.html"
 last_updated: "12/14/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Schedule Switch to Production vApps
 
-In this article
 
 At the Failback Mode step of the wizard, specify when switch from replicas to production vApps must be performed:
 
@@ -19,6 +20,4 @@ If you select the Scheduled or Manual option, you can further reset/set the sche
 
 ![Step 8. Schedule Switch to Production vApps ](images/vcd_failback_switch_shedule.webp)
 
-Page updated 12/14/2023
 
-Page content applies to build 13.0.1.1071

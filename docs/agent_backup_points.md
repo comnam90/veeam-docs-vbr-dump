@@ -1,5 +1,7 @@
 ---
 title: "Managing Backup Files and Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_points.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Backup Files and Restore Points
 
-In this article
 
 In the [Backup Properties](agent_backup_properties.md#parent) and [Agent Backup Properties](agent_backup_properties.md#child) windows, you can can perform the following actions:
 
@@ -80,6 +81,4 @@ Alternatively, you can select the required backup file and click Remove from dis
 
 To learn more, see [Removing Missing Restore Points](remove_missing_point.md).
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

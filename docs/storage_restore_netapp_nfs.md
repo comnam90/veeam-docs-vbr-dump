@@ -1,5 +1,7 @@
 ---
 title: "NFS Protocol"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_restore_netapp_nfs.html"
 last_updated: "5/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NFS Protocol
 
-In this article
 
 When you perform restore from storage snapshot on NetApp storage systems working over the NFS protocol, Veeam Backup & Replication triggers NetApp to clone an NFS share that holds VM data. NetApp creates a copy of the NFS share and places this copy on the same volume where the original NFS share is located. This copy is used as a data source for restore operations.
 
@@ -43,6 +44,4 @@ If the NetApp storage system operates in cDot, you must have a FlexClone license
 | Important |
 | [For Instant Recovery] If you restore data from ONTAP SnapMirror, Veeam Backup & Replication performs actual Instant Recovery only if a FlexClone license is installed. If the NDMP protocol is enabled, Veeam Backup & Replication performs entire VM restore instead of Instant Recovery. As a result, the restore process takes more time and may fail due to exceeding the default protocol timeout. |
 
-Page updated 5/30/2025
 
-Page content applies to build 13.0.1.1071

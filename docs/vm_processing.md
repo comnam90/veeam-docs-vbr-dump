@@ -1,5 +1,7 @@
 ---
 title: "VM Data Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_processing.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Data Processing
 
-In this article
 
 Veeam Backup & Replication supports an accelerated procedure of creating backups for VMs that host their disks on storage systems. This section describes differences between regular data processing and backup from storage snapshots.
 
@@ -40,6 +41,4 @@ As a result, the VMware snapshot exists for a very short time, namely several se
 
 ![VM Data Processing](images/storage_backup_san.webp)
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

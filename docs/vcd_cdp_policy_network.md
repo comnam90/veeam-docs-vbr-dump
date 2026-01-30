@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_network.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Configure Network Mapping
 
-In this article
 
 The Network step of the wizard is available if you have selected the Network remapping option at the Name step of the wizard.
 
@@ -29,6 +30,4 @@ To add a row to the network mapping table:
 
 ![Step 7. Configure Network Mapping](images/vcd_cdp_policy_network.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

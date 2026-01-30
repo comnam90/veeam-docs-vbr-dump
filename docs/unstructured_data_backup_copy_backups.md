@@ -1,5 +1,7 @@
 ---
 title: "Copying Unstructured Data Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_copy_backups.html"
 last_updated: "9/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copying Unstructured Data Backups
 
-In this article
 
 Copying backups can be helpful if you want to copy file share backups to a repository or local or shared folder. Veeam Backup & Replication copies the whole backup chain.
 
@@ -39,6 +40,4 @@ After the copy process finishes, the copied backups are shown in the Disk (Expor
 
 ![Copying Unstructured Data Backups](images/nas_backup_copy.webp)
 
-Page updated 9/8/2025
 
-Page content applies to build 13.0.1.1071

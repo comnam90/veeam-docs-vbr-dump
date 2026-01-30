@@ -1,5 +1,7 @@
 ---
 title: "Considerations and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_considerations.html"
 last_updated: "1/8/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Considerations and Limitations
 
-In this article
 
 Prerequisites
 
@@ -98,6 +99,4 @@ Large-Scale Restore of Workloads
 
 If you plan to recover more than 20 workloads at the same time, follow the instructions provided in [this Veeam KB article](https://www.veeam.com/kb4764).
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

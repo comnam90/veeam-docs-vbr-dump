@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_export_target.html"
 last_updated: "2/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Destination
 
-In this article
 
 At the Target step of the wizard, do the following:
 
@@ -22,6 +23,4 @@ At the Target step of the wizard, do the following:
 
 [![Step 3. Specify Destination](images/export_vbk_5.webp)](images/export_vbk_5.webp)
 
-Page updated 2/8/2024
 
-Page content applies to build 13.0.1.1071

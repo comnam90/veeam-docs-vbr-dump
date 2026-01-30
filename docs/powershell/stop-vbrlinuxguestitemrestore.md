@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBRLinuxGuestItemRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrlinuxguestitemrestore.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBRLinuxGuestItemRestore
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ The Get-VBRLinuxGuestItem cmdlet will return an array of files and folders. Mind
 1. Run the [Start-VBRLinuxGuestItemRestore](start-vbrlinuxguestitemrestore.md) cmdlet. Specify the LinuxFlrObject and Item parameter values. Specify the RunAsync parameter. Save the result to the $restoresession variable.
 2. Run the Stop-VBRLinuxGuestItemRestore. Set the $restoresession variable as the ItemSession parameter value.
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

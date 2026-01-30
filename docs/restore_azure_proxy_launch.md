@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Azure Restore Proxy Appliance Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_proxy_launch.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Azure Restore Proxy Appliance Wizard
 
-In this article
 
 To launch the New Azure Restore Proxy Appliance wizard, do one of the following:
 
@@ -17,6 +18,4 @@ To launch the New Azure Restore Proxy Appliance wizard, do one of the following:
 
 [![Step 1. Launch New Azure Restore Proxy Appliance Wizard](images/azure_proxy_launch.webp)](images/azure_proxy_launch.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

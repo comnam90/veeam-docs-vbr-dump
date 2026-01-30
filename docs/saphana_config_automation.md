@@ -1,5 +1,7 @@
 ---
 title: "Automating Configuration of Plug-In for SAP HANA"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/saphana_config_automation.html"
 last_updated: "3/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Automating Configuration of Plug-In for SAP HANA
 
-In this article
 
 To automate the configuration of Veeam Plug-In for SAP HANA, do the following:
 
@@ -18,6 +19,4 @@ To automate the configuration of Veeam Plug-In for SAP HANA, do the following:
 | --- |
 | SapBackintConfigTool --set-credentials <"serv\username"> <password> |
 
-Page updated 3/27/2025
 
-Page content applies to build 13.0.1.1071

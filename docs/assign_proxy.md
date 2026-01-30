@@ -1,5 +1,7 @@
 ---
 title: "Assigning Off-Host Backup Proxies to Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/assign_proxy.html"
 last_updated: "12/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Assigning Off-Host Backup Proxies to Jobs
 
-In this article
 
 If the automatic proxy detection mechanism does not work correctly, you can manually assign an off-host backup proxy to a job.
 
@@ -25,6 +26,4 @@ If the automatic proxy detection mechanism does not work correctly, you can manu
 
 When you start the configured job, Veeam Backup & Replication will check the topology scheme of connections for off-host backup proxies that you have selected in the list and choose one of them for the job. If none of these backup proxies can be used for the job and you have selected the Failover to on-host backup mode if no suitable off-host proxies available check box, Veeam Backup & Replication will fail over to the on-host backup mode. If you have not enabled the failover option, the job will fail.
 
-Page updated 12/21/2023
 
-Page content applies to build 13.0.1.1071

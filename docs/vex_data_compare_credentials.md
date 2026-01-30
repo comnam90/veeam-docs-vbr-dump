@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Select Authentication Method"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_data_compare_credentials.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Select Authentication Method
 
-In this article
 
 At this step of the wizard, select either modern or basic authentication and specify authentication settings.
 
@@ -62,6 +63,4 @@ Make that the account that you use has both the Exchange Administrator and the G
 
 [![Select Authentication Method](images/compare_on.webp)](images/compare_on.webp "Select Authentication Method")
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

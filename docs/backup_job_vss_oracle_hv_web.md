@@ -1,5 +1,7 @@
 ---
 title: "Oracle Archived Redo Log Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_oracle_hv_web.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle Archived Redo Log Settings
 
-In this article
 
 To create a transactionally consistent backup of a VM where Oracle Database is deployed, you must enable application-aware processing and define how Veeam Backup & Replication> will process archived redo logs on this VM.
 
@@ -43,6 +44,4 @@ Make sure that you select a server that is not engaged in other resource-consumi
 
 [![Click to zoom in](images/hv_backup_job_vss_oracle_web.webp)](images/hv_backup_job_vss_oracle_web.webp "Click to zoom in")
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

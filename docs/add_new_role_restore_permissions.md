@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Configure Restore Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_new_role_restore_permissions.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Configure Restore Permissions
 
-In this article
 
 At the Restore Permissions step of the wizard, define which backups and restore operations are available:
 
@@ -23,6 +24,4 @@ At the Restore Permissions step of the wizard, define which backups and restore 
 
 ![Step 5. Configure Restore Permissions](images/add_new_role_restore_permissions.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

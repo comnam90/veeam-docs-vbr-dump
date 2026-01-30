@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup & Replication Silent Deployment on Microsoft Windows"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/silent_mode_vbr.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup & Replication Silent Deployment on Microsoft Windows
 
-In this article
 
 You can install, upgrade and uninstall Veeam Backup & Replication and the Veeam Backup & Replication console in the unattended automated mode with a special XML answer file by using the command line interface. Answer files contain all the necessary installation, upgrade or uninstallation settings in the proper order and their thorough description.
 
@@ -29,6 +30,4 @@ In This Section
 * [Uninstalling Veeam Backup & Replication in Silent Mode](uninstall_vbr_answer_file.md)
 * [Uninstalling Veeam Backup & Replication Console in Silent Mode](uninstall_console_answer_file.md)
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

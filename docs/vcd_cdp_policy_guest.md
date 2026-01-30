@@ -1,5 +1,7 @@
 ---
 title: "Step 12. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_guest.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 12. Specify Guest Processing Settings
 
-In this article
 
 At the Guest Processing step of the wizard, enable and configure guest OS processing.
 
@@ -56,6 +57,4 @@ After you have enabled application-aware processing for all VMs and configured o
 
 ![Step 13. Specify Guest Processing Settings](images/vcd_cdp_policy_guest.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

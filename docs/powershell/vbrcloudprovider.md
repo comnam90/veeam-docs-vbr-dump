@@ -1,5 +1,7 @@
 ---
 title: "VBRCloudProvider"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudprovider.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRCloudProvider
 
-In this article
 
 Contains cloud provider.
 
@@ -35,6 +36,4 @@ Related Commands
 * [Set-VBRCloudProvider](set-vbrcloudprovider.md)
 * [Remove-VBRCloudProvider](remove-vbrcloudprovider.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

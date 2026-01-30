@@ -1,5 +1,7 @@
 ---
 title: "Restore Oracle Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sap_orcl.html"
 last_updated: "3/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore Oracle Databases
 
-In this article
 
 Veeam Plug-In for SAP on Oracle allows you to restore databases using the BRRESTORE tool functionality. When you launch the restore, BRRESTORE restores the selected database from backup files stored on the backup repository.
 
@@ -28,6 +29,4 @@ Run the brrestore command with the following parameters:
 3. Specify last as the argument for the -b (-backup) parameter. With this option, BRRESTORE uses the last successful database backup for the restore.
 4. Specify full as the argument for the -m (-mode) parameter. With this option, BRRESTORE performs restore of files in all tablespaces, control files and redo log files.
 
-Page updated 3/14/2024
 
-Page content applies to build 13.0.1.1071

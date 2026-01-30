@@ -1,5 +1,7 @@
 ---
 title: "Scheduling Settings for Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_schedule_server.html"
 last_updated: "2/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scheduling Settings for Servers
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -57,6 +58,4 @@ If the policy exceeds the allowed window, it will be automatically terminated. I
 
 ![Scheduling Settings for Servers](images/agent_policy_win_schedule_server.webp "Specify Scheduling Settings for Servers and Clusters")
 
-Page updated 2/20/2025
 
-Page content applies to build 13.0.1.1071

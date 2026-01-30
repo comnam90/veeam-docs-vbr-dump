@@ -1,5 +1,7 @@
 ---
 title: "Restoring Virtual Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_disk_restore.html"
 last_updated: "6/26/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Virtual Disks
 
-In this article
 
 To restore virtual disks, use the Virtual Disk Restore wizard.
 
@@ -20,6 +21,4 @@ To restore virtual disks, use the Virtual Disk Restore wizard.
 7. [Specify a restore reason](disk_restore_reason_vm.md).
 8. [Finish working with the wizard](disk_restore_review_vm.md).
 
-Page updated 6/26/2023
 
-Page content applies to build 13.0.1.1071

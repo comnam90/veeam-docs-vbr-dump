@@ -1,5 +1,7 @@
 ---
 title: "Getting to Know User Interface"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_know_ui.html"
 last_updated: "9/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Getting to Know User Interface
 
-In this article
 
 The user interface of Veeam Explorer for Microsoft Teams is designed to let you quickly find commands that you need to restore and export Microsoft Teams data from backups created by Veeam Backup for Microsoft 365.
 
@@ -41,6 +42,4 @@ The main application window contains the following UI elements:
 
 [![Main Application Window](images/vet_know_ui_2.webp)](images/vet_know_ui_2.webp "Main Application Window")
 
-Page updated 9/18/2024
 
-Page content applies to build 13.0.1.1071

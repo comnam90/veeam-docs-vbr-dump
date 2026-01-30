@@ -1,5 +1,7 @@
 ---
 title: "Compact of Full Backup File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_compact_file.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Compact of Full Backup File
 
-In this article
 
 The backup copy job constantly transforms the full backup file in the backup chain to meet retention policy settings. The transformation process, however, has a side effect. In the long run, the full backup file grows large and gets fragmented. The file data occurs to be written to non-contiguous clusters on disk, and operations of reading and writing data from and to the backup file slow down.
 
@@ -21,6 +22,4 @@ Related Topics
 
 [Creating Backup Copy Jobs for VMs and Physical Machines](backup_copy_create.md)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

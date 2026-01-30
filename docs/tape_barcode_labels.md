@@ -1,5 +1,7 @@
 ---
 title: "Tape Barcode Labels"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_barcode_labels.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Barcode Labels
 
-In this article
 
 Library tapes can be marked with barcode labels that simplify identification of tapes and their types. Although the main source of information about the tape for Veeam Backup & Replication is a cartridge memory chip (LTO-CM), it can be read only when the media is inserted into the drive. Thus, correct labeling of tapes turns very useful for management of tape media.
 
@@ -48,6 +49,4 @@ Cleaning and diagnostic tapes use unique labels to distinguish them from data ta
 | Note |
 | If tapes have incorrect barcode labels, for example, labels on ordinary (non-WORM) tapes indicate that they are of WORM or cleaning type, Veeam Backup & Replication may incorrectly identify such tapes. |
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

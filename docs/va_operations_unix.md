@@ -1,5 +1,7 @@
 ---
 title: "Operations Available on Unix Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations_unix.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Operations Available on Unix Computers
 
-In this article
 
 If a Unix-based Veeam Agent computer is managed by Veeam Backup & Replication, you can protect such computers only by a backup job managed by Veeam Agent.
 
@@ -165,6 +166,4 @@ If you have any questions or want to share your feedback about Veeam Agent, you 
 
 * Visit [Veeam R&D Forums](https://forums.veeam.com) to share your opinion or ask a question.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

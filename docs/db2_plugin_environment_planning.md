@@ -1,5 +1,7 @@
 ---
 title: "Environment Planning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_environment_planning.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Environment Planning
 
-In this article
 
 Before you deploy Veeam Plug-In, keep in mind the following requirements and limitations.
 
@@ -64,6 +65,4 @@ To ignore network traffic encryption rules, do the following:
 
 For details on traffic encryption, see [Enabling Traffic Encryption](enable_network_encryption.md).
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

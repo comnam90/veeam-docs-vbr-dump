@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRComputerVolumeRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcomputervolumerestore.html"
 last_updated: "12/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRComputerVolumeRestore
 
-In this article
 
 Short Description
 
@@ -94,6 +95,4 @@ Related Commands
 * [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 * [Get-VBRComputerDiskPartition](get-vbrcomputerdiskpartition.md)
 
-Page updated 12/10/2024
 
-Page content applies to build 13.0.1.1071

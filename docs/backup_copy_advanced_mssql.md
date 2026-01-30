@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Advanced Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_mssql.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Advanced Settings
 
-In this article
 
 At the Target step of the wizard, click Advanced job settings to configure compression, RPO and notifications settings.
 
@@ -73,6 +74,4 @@ At the Notifications tab, to specify notification settings for the backup copy j
 
 ![Step 5. Specify Advanced Settings](images/plugins_backup_copy_notifications.webp)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

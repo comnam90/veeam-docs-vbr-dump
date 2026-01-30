@@ -1,5 +1,7 @@
 ---
 title: "Restoring Entire Tapes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_entire_tapes.html"
 last_updated: "8/25/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Entire Tapes
 
-In this article
 
 A special case of file restore from tape described in section [Restoring Files from Tape](restore_files_from_tapes.md) is restoring content of entire tapes. That can be useful in various situations. For example:
 
@@ -29,6 +30,4 @@ Before restoring tapes, consider the following:
 
 For information on how to restore entire tapes, see [Restoring Files from Tape](restore_files_from_tapes.md).
 
-Page updated 8/25/2023
 
-Page content applies to build 13.0.1.1071

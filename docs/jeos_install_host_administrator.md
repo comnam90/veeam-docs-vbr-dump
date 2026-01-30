@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Configure Host Administrator Account"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jeos_install_host_administrator.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Configure Host Administrator Account
 
-In this article
 
 At the Host Administrator step of the Initial Configuration wizard, configure the default host administrator account to perform administrator activities in the Host Management console — veeamadmin. For more information about operations available for this role, see [Managing Users and Roles](hmc_users.md).
 
@@ -44,6 +45,4 @@ To configure the host administrator account, perform the following steps:
 
 ![Step 8. Configure Host Administrator Account](images/deployment_iso_install_host_admin_mfa.webp)
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRNASBackupVersionRetentionOptions (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrnasbackupversionretentionoptions.html"
 last_updated: "1/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRNASBackupVersionRetentionOptions (obsolete)
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Examples
 | --- | --- |
 | This command shows how to define retention policy for file versions of deleted files. The version-based retention settings applies to the archive repository only and it will keep file versions of deleted files for 7 days.  |  | | --- | | New-VBRNASBackupVersionRetentionOptions -VersionRetentionType Archive -DeletedFileVersionRetention 7 | |
 
-Page updated 1/6/2025
 
-Page content applies to build 13.0.1.1071

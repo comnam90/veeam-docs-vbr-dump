@@ -1,5 +1,7 @@
 ---
 title: "Restoring Database Schema and Data"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_schema.html"
 last_updated: "9/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Database Schema and Data
 
-In this article
 
 To restore database schema and data, do the following:
 
@@ -21,6 +22,4 @@ To restore database schema and data, do the following:
 8. [Specify additional restore options](vesql_specify_additional_schema.md).
 9. [Review the restore summary](vesql_restore_schema_summary.md).
 
-Page updated 9/26/2024
 
-Page content applies to build 13.0.1.1071

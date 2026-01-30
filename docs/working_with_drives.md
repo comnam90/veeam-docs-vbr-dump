@@ -1,5 +1,7 @@
 ---
 title: "Tape Drives"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/working_with_drives.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Drives
 
-In this article
 
 Drives of each connected library or standalone tape device are displayed in the Tape Infrastructure view under the Libraries > LibraryName node > Drives.
 
@@ -24,6 +25,4 @@ To disable a drive, clear the Enabled check box in the drive properties. To set 
 
 ![Tape Drives](images/tape_drive_properties.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

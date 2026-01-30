@@ -1,5 +1,7 @@
 ---
 title: "Excluding Capacity Extent from Scale-Out Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/excluding_object_storage.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Excluding Capacity Extent from Scale-Out Repositories
 
-In this article
 
 You can exclude a capacity extent from the scale-out backup repository scope, for example, if you no longer want to use any third party services to store your data.
 
@@ -34,6 +35,4 @@ Related Topics
 
 [Switching to Maintenance Mode](sobr_maintenance.md)
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

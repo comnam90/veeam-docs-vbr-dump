@@ -1,5 +1,7 @@
 ---
 title: "New-VBRBackupCacheOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrbackupcacheoptions.html"
 last_updated: "10/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRBackupCacheOptions
 
-In this article
 
 Short Description
 
@@ -64,6 +65,4 @@ Examples
 | --- | --- |
 | This command defines the following backup cache settings:   * The location to keep backup cache is specified explicitly. * Veeam Backup & Replication will keep cache in the C:\Backup folder on the protected computer. * Veeam Agent Backup jobs will not create backup cache files when the backup cache exceeds 10 TB.   |  | | --- | | New-VBRBackupCacheOptions -Enable -Type Manual -LocalPath "C:\Backup" -SizeLimit 10 -SizeUnit TB | |
 
-Page updated 10/21/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBROracleRMANStorageOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbroraclermanstorageoptions.html"
 last_updated: "7/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBROracleRMANStorageOptions
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ This command creates an Oracle RMAN storage settings for application backup poli
 | --- |
 | New-VBROracleRMANStorageOptions -CompressionEnabled -CompressionMode RMAN -RMANCompressionLevel Low |
 
-Page updated 7/2/2025
 
-Page content applies to build 13.0.1.1071

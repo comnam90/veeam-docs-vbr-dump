@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Collections"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_rs_restore_collection_multiple_select_collections.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Collections
 
-In this article
 
 At this step of the wizard, select the collections that you want to recover and click Restore.
 
@@ -24,6 +25,4 @@ If collections with the same names exist on the target MongoDB machine, you will
 
 [![Selecting Collections](images/vemdb_rs_restore_collection_multiple_select_collections.webp)](images/vemdb_rs_restore_collection_multiple_select_collections.webp "Selecting Collections")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

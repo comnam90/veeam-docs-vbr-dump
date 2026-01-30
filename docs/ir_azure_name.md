@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Names and Tags"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_name.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Names and Tags
 
-In this article
 
 At the Name step of the wizard, you can specify names for the recovered VMs and assign tags to them. By default, Veeam Backup & Replication recovers workloads with their original names.
 
@@ -30,6 +31,4 @@ To add a tag for the recovered workloads:
 
 ![Step 4. Specify Names and Tags](images/ir_azure_tags.webp)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

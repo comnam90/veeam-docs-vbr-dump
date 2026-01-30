@@ -1,5 +1,7 @@
 ---
 title: "Creating Policy for Linux Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_create_linux.html"
 last_updated: "6/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Policy for Linux Computers
 
-In this article
 
 To back up data of a computer protected with Veeam Agent for Linux, you can configure a Veeam Agent backup policy in Veeam Backup & Replication.
 
@@ -27,6 +28,4 @@ Before configuring a Veeam Agent backup policy, [check prerequisites](agent_poli
 12. [Specify the backup schedule](agent_policy_schedule_linux.md).
 13. [Review backup job settings](agent_policy_review_linux.md).
 
-Page updated 6/6/2024
 
-Page content applies to build 13.0.1.1071

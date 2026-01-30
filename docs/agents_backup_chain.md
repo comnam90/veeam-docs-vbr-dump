@@ -1,5 +1,7 @@
 ---
 title: "Backup Chain"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_chain.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Chain
 
-In this article
 
 Backup chain is a sequence of backup files created by Veeam Agent backup jobs. The backup chain provides the ability to recover data.
 
@@ -19,6 +20,4 @@ In This Section
 
 [Short-Term Retention Policy](agents_retention.md)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

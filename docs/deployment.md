@@ -1,5 +1,7 @@
 ---
 title: "Deployment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deployment
 
-In this article
 
 This section describes how to install, upgrade, update and uninstall Veeam Backup & Replication and the Veeam Backup & Replication console.
 
@@ -20,6 +21,4 @@ In This Section
 * [Veeam Backup & Replication Console Installation](deploy_console.md)
 * [Upgrade and Update](vbr_updating.md)
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

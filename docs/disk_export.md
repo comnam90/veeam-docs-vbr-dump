@@ -1,5 +1,7 @@
 ---
 title: "Disk Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_export.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disk Export
 
-In this article
 
 Veeam Backup & Replication allows you to export disks, that is, restore disks from backups of physical or virtual machines and convert them to the VMDK, VHD or VHDX formats.
 
@@ -48,6 +49,4 @@ Related Topics
 * [Exporting Disks](exporting_disks.md)
 * [Restoring Volumes from Veeam Agent Backups](integration_volume_restore.md)
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

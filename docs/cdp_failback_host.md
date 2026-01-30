@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Hosts or Clusters"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failback_host.html"
 last_updated: "7/30/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Hosts or Clusters
 
-In this article
 
 The Host step is available if you have selected the Failback to the specified location option at the [Destination](cdp_failback_destination.md) step.
 
@@ -15,6 +16,4 @@ At the Host step of the wizard, specify names for the recovered VMs and destinat
 
 ![Step 4. Select Hosts or Clusters](images/cdp_failback_host.webp "Select target host")
 
-Page updated 7/30/2024
 
-Page content applies to build 13.0.1.1071

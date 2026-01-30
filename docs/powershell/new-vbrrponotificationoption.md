@@ -1,5 +1,7 @@
 ---
 title: "New-VBRRPONotificationOption"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrrponotificationoption.html"
 last_updated: "7/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRRPONotificationOption
 
-In this article
 
 Short Description
 
@@ -54,6 +55,4 @@ This command defines the RPO notification settings. According to these options, 
 | --- |
 | New-VBRRPONotificationOption -EnableRPOWarning -Value 1 -TimeUnit Hours |
 
-Page updated 7/11/2024
 
-Page content applies to build 13.0.1.1071

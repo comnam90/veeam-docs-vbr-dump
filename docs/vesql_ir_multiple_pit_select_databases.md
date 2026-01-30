@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_pit_select_databases.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Databases
 
-In this article
 
 At this step of the wizard, select the databases that you want to recover.
 
@@ -15,6 +16,4 @@ To quickly find the necessary databases, use the search field or sort the databa
 
 [![Selecting Databases to Restore](images/multiple_ir_select_databases.webp)](images/multiple_ir_select_databases.webp "Selecting Databases to Restore")
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

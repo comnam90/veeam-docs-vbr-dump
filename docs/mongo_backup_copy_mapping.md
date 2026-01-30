@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Map Backup File"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_mapping.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Map Backup File
 
-In this article
 
 If the target backup repository already stores a backup of workloads that you want to copy, you can map the backup copy job to this backup.
 
@@ -25,6 +26,4 @@ To map the backup copy job to a backup:
 
 ![Step 5. Map Backup File](images/backup_copy_mapping_mongo.webp)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

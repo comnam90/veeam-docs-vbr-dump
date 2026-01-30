@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_permissions.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 The following table lists the user account permissions necessary to launch Veeam Explorer for Microsoft Active Directory and restore Microsoft Active Directory data.
 
@@ -24,6 +25,4 @@ To assign the Organization Management role using PowerShell, run the following c
 | --- |
 | Add-RoleGroupMember “Organization Management” –Member “<user\_name>” |
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

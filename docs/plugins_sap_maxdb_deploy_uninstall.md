@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Veeam Plug-In for SAP MaxDB"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_uninstall.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Veeam Plug-In for SAP MaxDB
 
-In this article
 
 To uninstall Veeam Plug-In for SAP MaxDB, go to the directory with the Veeam Plug-In package and run the following commands:
 
@@ -25,6 +26,4 @@ To uninstall Veeam Plug-In for SAP MaxDB, go to the directory with the Veeam Plu
 
 Note that these operations requires root privileges.
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

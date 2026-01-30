@@ -1,5 +1,7 @@
 ---
 title: "How Publishing Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_publishing_works.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Publishing Works
 
-In this article
 
 Publishing databases with Veeam Explorer for Microsoft SQL Server works in the following manner:
 
@@ -30,6 +31,4 @@ After you have finished working with the published database, you can unpublish (
 
 [![How Publishing Works](images/vesql_publish.webp)](images/vesql_publish.webp "How Publishing Works")
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

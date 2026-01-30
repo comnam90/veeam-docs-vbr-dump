@@ -1,5 +1,7 @@
 ---
 title: "Installing Veeam Plug-In for SAP MaxDB"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_install.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing Veeam Plug-In for SAP MaxDB
 
-In this article
 
 See one of the following guides depending on which OS is installed on the target machine.
 
@@ -15,6 +16,4 @@ See one of the following guides depending on which OS is installed on the target
 
 * [Installing Veeam Plug-In on IBM AIX machines](plugins_sap_maxdb_deploy_install_aix.md)
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

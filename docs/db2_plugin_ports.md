@@ -1,5 +1,7 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_ports.html"
 last_updated: "1/2/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ports
 
-In this article
 
 To enable proper work of Veeam Plug-Ins, make sure that the following ports are open.
 
@@ -55,6 +56,4 @@ On backup infrastructure components, Veeam Backup & Replication automatically cr
 
 For a detailed list of ports used by Veeam Backup & Replication server and backup repositories, see [Used Ports](used_ports.md).
 
-Page updated 1/2/2026
 
-Page content applies to build 13.0.1.1071

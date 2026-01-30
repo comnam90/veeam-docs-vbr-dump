@@ -1,5 +1,7 @@
 ---
 title: "VBRGoogleCloudComputeSubnet"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrgooglecloudcomputesubnet.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRGoogleCloudComputeSubnet
 
-In this article
 
 Contains Google Cloud compute subnet.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [Get-VBRGoogleCloudComputeSubnet](get-vbrgooglecloudcomputesubnet.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

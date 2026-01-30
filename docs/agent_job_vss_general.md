@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_vss_general.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing
 
-In this article
 
 If your computer runs VSS-aware applications, you can enable application-aware processing to create a transactionally consistent backup. The transactionally consistent backup guarantees proper recovery of applications without data loss.
 
@@ -42,6 +43,4 @@ You can clear this check box, for example, if you want to disable application-aw
 
 ![Application-Aware Processing](images/agent_job_vss_general.webp)
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

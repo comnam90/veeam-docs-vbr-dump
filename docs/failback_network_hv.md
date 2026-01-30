@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Select Target Network"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_network_hv.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Select Target Network
 
-In this article
 
 The Network step is available if you have selected the Failback to the specified location option at the [Destination](failback_destination_hv.md) step. This step applies if you fail back to VMs recovered to new locations, and if networks in those locations differ from networks in the disaster recovery (DR) site.
 
@@ -25,6 +26,4 @@ If you do not want to connect the recovered VMs to any virtual network, select t
 
 ![Step 6. Select Target Network](images/hv_failback_network.webp)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

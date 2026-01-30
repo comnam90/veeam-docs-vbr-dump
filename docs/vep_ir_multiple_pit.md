@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery of Point-in-Time State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_pit.html"
 last_updated: "10/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery of Point-in-Time State
 
-In this article
 
 To perform instant recovery of multiple instances to a selected point-in-time state, use the Instant Recovery wizard.
 
@@ -16,6 +17,4 @@ To perform instant recovery of multiple instances to a selected point-in-time st
 3. [Specify switchover settings](vep_ir_multiple_pit_specify_switchover_settings.md).
 4. [Finalize the Instant Recovery session](vep_ir_multiple_pit_finalize_ir_session.md).
 
-Page updated 10/6/2025
 
-Page content applies to build 13.0.1.1071

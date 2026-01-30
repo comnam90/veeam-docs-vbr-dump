@@ -1,5 +1,7 @@
 ---
 title: "Recovering Guest OS Files Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_guest_restore.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Recovering Guest OS Files Using Console
 
-In this article
 
 To recover guest OS files and folders, use the File Level Restore wizard.
 
@@ -21,6 +22,4 @@ To recover guest OS files and folders, use the File Level Restore wizard.
 8. [Verify recovery settings](guest_restore_review_vm.md).
 9. [Finalize recovery](guest_restore_save.md).
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

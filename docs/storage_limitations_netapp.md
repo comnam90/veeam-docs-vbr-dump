@@ -1,5 +1,7 @@
 ---
 title: "NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_netapp.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG
 
-In this article
 
 If you plan to perform operations with NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG storage snapshots, consider the following:
 
@@ -59,6 +60,4 @@ In This Section
 * [Backup from Storage Snapshots](backup_from_storage_snapshots_hiw_netapp.md)
 * [Restore from Storage Snapshots](restore_storage_snapshots_hiw_netapp.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

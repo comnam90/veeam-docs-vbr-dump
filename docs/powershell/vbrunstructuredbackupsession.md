@@ -1,5 +1,7 @@
 ---
 title: "VBRUnstructuredBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrunstructuredbackupsession.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRUnstructuredBackupSession
 
-In this article
 
 Contains file share backup session.
 
@@ -27,6 +28,4 @@ Related Commands
 
 [Get-VBRUnstructuredBackupSession](get-vbrunstructuredbackupsession.md)
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

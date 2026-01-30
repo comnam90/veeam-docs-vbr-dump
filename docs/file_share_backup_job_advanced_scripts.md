@@ -1,5 +1,7 @@
 ---
 title: "Script Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_scripts.html"
 last_updated: "11/2/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Script Settings
 
-In this article
 
 You can configure custom scripts to run before or after the file backup job. For example, you can configure scripts to take a VSS snapshot before running the job and to delete it after completing the job.
 
@@ -26,6 +27,4 @@ You can select to execute pre- and post-backup actions after a number of backup 
 
 ![Script Settings](images/file_share_backup_job_advanced_scripts.webp "Script Settings")
 
-Page updated 11/2/2023
 
-Page content applies to build 13.0.1.1071

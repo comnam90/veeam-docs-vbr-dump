@@ -1,5 +1,7 @@
 ---
 title: "Veeam Updater"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_updater.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Updater
 
-In this article
 
 You can use cmdlets in this topic to perform the following operations:
 
@@ -21,6 +22,4 @@ You can use cmdlets in this topic to perform the following operations:
 | [Set-VBRGeneralUpdateOptions](set-vbrgeneralupdateoptions.md) | Modifies general update settings. |
 | [Set-VBRInternetProxyUpdateOptions](set-vbrinternetproxyupdateoptions.md) | Modifies internet proxy settings. |
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

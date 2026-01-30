@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_backup_job_settings.html"
 last_updated: "4/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 When you create backup jobs, replication jobs, and CDP policies, make sure to enable application-aware processing in the Veeam Backup & Replication console.
 
@@ -34,6 +35,4 @@ Veeam Backup & Replication supports any configuration of DAGs. In particular, ha
 
 For more information and recommendations about DAGs, see [this Veeam KB article](https://www.veeam.com/kb1744).
 
-Page updated 4/11/2025
 
-Page content applies to build 13.0.1.1071

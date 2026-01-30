@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/backupcopy.html"
 last_updated: "4/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy
 
-In this article
 
 The following topics contain instructions on creating backup copy jobs and managing them by means of Veeam PowerShell.
 
@@ -20,6 +21,4 @@ In this section
 * [Azure Backup Copy Job](azure_backup_copy.md)
 * [Veeam Agent Backup Copy Job](veeam_agent_backup_copy_job.md)
 
-Page updated 4/22/2024
 
-Page content applies to build 13.0.1.1071

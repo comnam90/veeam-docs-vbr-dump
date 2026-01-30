@@ -1,5 +1,7 @@
 ---
 title: "Linking Backup Jobs to Backup Copy Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linking_backup_to_copy.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Linking Backup Jobs to Backup Copy Jobs
 
-In this article
 
 You can link backup jobs to backup copy jobs. This option lets you create a secondary target for the backup job and store backups created by the backup job in the secondary backup repository.
 
@@ -25,6 +26,4 @@ You can link a backup job to an existing backup copy job using the Backup Job wi
 
 ![Linking Backup Jobs to Backup Copy Jobs](images/linking_backup_to_copy.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

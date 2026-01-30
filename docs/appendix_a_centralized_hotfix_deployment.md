@@ -1,5 +1,7 @@
 ---
 title: "Deploying Hotfix on Protected Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_a_centralized_hotfix_deployment.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deploying Hotfix on Protected Computers
 
-In this article
 
 A Veeam Agent hotfix is a set of updated Veeam Agent packages that addresses a certain issue in the product. This scenario describes how to deploy a hotfix on protected computers with one of the following installed Veeam Agents:
 
@@ -54,6 +55,4 @@ The hotfix deployment procedure differs depending on the OS of the server where 
 * [Deployment procedure for Linux computers](appendix_a_centralized_hotfix_deployment_linux.md)
 * [Deployment Procedure for Unix Computers](appendix_a_centralized_hotfix_deployment_unux.md)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRIsilonHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrisilonhost.html"
 last_updated: "3/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRIsilonHost
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ Examples
 | --- | --- |
 | This command returns a Dell PowerScale storage by name.  |  | | --- | | Get-VBRIsilonHost -Name "Isilon Storage" | |
 
-Page updated 3/4/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Configure Backup Source Settings"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_job_tenant.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Configure Backup Source Settings
 
-In this article
 
 At the Tenant step of the wizard, select a Microsoft Entra ID tenant whose resources you want to back up, and specify the number of days for which you want to keep restore points in a backup chain. If a restore point is older than the specified time limit, Veeam Backup for Microsoft Entra ID removes the restore point from the chain.
 
@@ -27,6 +28,4 @@ Related Topics
 * [Advanced Settings](entra_id_tenant_backup_advanced_settings.md)
 * [Secondary Repository Settings](entra_id_tenant_backup_copy.md)
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

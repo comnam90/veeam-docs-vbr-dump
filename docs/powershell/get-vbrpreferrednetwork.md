@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRPreferredNetwork"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrpreferrednetwork.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRPreferredNetwork
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command returns preferred networks created for the backup infrastructure.
 | --- |
 | Get-VBRPreferredNetwork  IpAddress                               SubnetMask                              CIDRNotation  192.168.0.1                             255.255.255.255                         192.168.0.1/32  123.0.0.0                               255.0.0.0                               123.0.0.0/8 |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

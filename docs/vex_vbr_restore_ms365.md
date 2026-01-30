@@ -1,5 +1,7 @@
 ---
 title: "Restore to Microsoft 365 Organizations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore_ms365.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Microsoft 365 Organizations
 
-In this article
 
 You can restore your Exchange data to Microsoft 365 organizations with enabled [multi-factor authentication](https://docs.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) (MFA).
 
@@ -23,6 +24,4 @@ To restore a single mailbox, folder or item, do the following:
 8. [Specify restore options](vex_vbr_restore_ms365_single_restore_options.md).
 9. [Review the operation summary](summary8.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

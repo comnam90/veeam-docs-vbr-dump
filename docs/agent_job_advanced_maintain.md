@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_maintain.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 You can specify maintenance settings for a backup chain created with the Veeam Agent backup job. Maintenance operations help make sure that the backup chain remains valid and consistent.
 
@@ -41,6 +42,4 @@ For Veeam Agent backup jobs managed by the backup server, the compact operation 
 
 ![Maintenance Settings](images/agent_job_settings_maintainance.webp)
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_before_you_begin.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you configure database connection settings, consider the following:
 
@@ -19,6 +20,4 @@ Before you configure database connection settings, consider the following:
 
 After database creation this account automatically gets a db\_owner role and can perform all operations with the database. If the current account does not have this permission, a Database Administrator may create an empty database in advance and grant the db\_owner role to the account that will be used for migration of the configuration database.
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Protection Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_add.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Protection Groups
 
-In this article
 
 You must add computers that you plan to protect with Veeam Agents to the inventory in the Veeam Backup & Replication console. In Veeam Backup & Replication, protected computers are organized into protection groups. You can create one or more protection groups that contain computers of different types or offer different discovery and deployment options.
 
@@ -45,6 +46,4 @@ To learn more about Veeam Agents deployment, see [Deploying Veeam Agents Using G
 
 * [Cloud machines](protection_group_cloud_machines.md) — create a protection group for these objects if you want to add to the protection group one or several Amazon EC2 instances or Microsoft Azure virtual machines (both objects can be also referred to as cloud machines). Using this protection group, Veeam Backup & Replication will discover such cloud machines and deploy Veeam Agent for Microsoft Windows or Veeam Agent for Linux on them without connection over network. After that, you will be able to create transactionally consistent backups of cloud machines included in the protection group.
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

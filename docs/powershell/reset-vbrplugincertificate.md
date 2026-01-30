@@ -1,5 +1,7 @@
 ---
 title: "Reset-VBRPluginCertificate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/reset-vbrplugincertificate.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Reset-VBRPluginCertificate
 
-In this article
 
 Short Description
 
@@ -69,6 +70,4 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Get-VBRDiscoveredApplication](get-vbrdiscoveredapplication.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

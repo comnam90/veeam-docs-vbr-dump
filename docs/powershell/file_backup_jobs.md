@@ -1,5 +1,7 @@
 ---
 title: "Adding File Backup Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/file_backup_jobs.html"
 last_updated: "1/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding File Backup Jobs
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -20,6 +21,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [New-VBRNASBackupPathMask](new-vbrnasbackuppathmask.md) | Defines an exclusion mask for path for a file backup job. |
 | [New-VBRNASBackupWildcardMask](new-vbrnasbackupwildcardmask.md) | Defines a wildcard mask for file backup job. |
 
-Page updated 1/7/2025
 
-Page content applies to build 13.0.1.1071

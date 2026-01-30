@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Choose Restore Source"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vms_from_tape_staging.html"
 last_updated: "3/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Choose Restore Source
 
-In this article
 
 At the Restore Source step of the wizard, choose the restore mode:
 
@@ -30,6 +31,4 @@ If you choose to restore files to a shared folder, make sure that the account un
 
 ![Step 4. Choose Restore Source](images/restore_vm_from_tape_s4_vmw.webp)
 
-Page updated 3/20/2025
 
-Page content applies to build 13.0.1.1071

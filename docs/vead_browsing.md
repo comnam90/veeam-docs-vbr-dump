@@ -1,5 +1,7 @@
 ---
 title: "Browsing, Searching and Viewing Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_browsing.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Browsing, Searching and Viewing Items
 
-In this article
 
 This topic explains how to use Veeam Explorer for Microsoft Active Directory to:
 
@@ -52,6 +53,4 @@ To use the LDAP search query, do the following:
 
 [![Using LDAP Queries](images/vead_search_ldap_query.webp)](images/vead_search_ldap_query.webp "Using LDAP Queries")
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

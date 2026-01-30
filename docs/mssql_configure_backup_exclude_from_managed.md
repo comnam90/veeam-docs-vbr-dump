@@ -1,5 +1,7 @@
 ---
 title: "Backing Up SQL Databases with Standalone Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_configure_backup_exclude_from_managed.html"
 last_updated: "12/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backing Up SQL Databases with Standalone Backup Job
 
-In this article
 
 If you have Veeam Plug-In for Microsoft SQL Server managed by Veeam Backup & Replication, you have a possibility to exclude databases from the backup scope of an application backup policy configured in the Veeam Backup & Replication console. As a result you can back up such databases using a separate standalone backup job triggered from Microsoft SQL Server. In this case, Veeam Backup & Replication processes the whole SQL server in the managed mode, but certain databases are processed by Veeam Plug-In in the standalone mode. This may be useful if you want to back up database manually from Microsoft SQL Server and avoid creating 2 backup chains for the same database.
 
@@ -74,6 +75,4 @@ For example:
 
 After that, you can back up removed databases as usual in the management scenario. For details, see [Getting Started](quickstart.md).
 
-Page updated 12/1/2025
 
-Page content applies to build 13.0.1.1071

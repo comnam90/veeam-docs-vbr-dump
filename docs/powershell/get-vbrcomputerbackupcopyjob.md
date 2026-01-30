@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRComputerBackupCopyJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcomputerbackupcopyjob.html"
 last_updated: "1/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRComputerBackupCopyJob
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Examples
 | --- | --- |
 | This command returns the c4bb4625-7158-43d7-ab63-beaee75d2cff Veeam Agent backup copy job.  |  | | --- | | Get-VBRComputerBackupCopyJob -Id "c4bb4625-7158-43d7-ab63-beaee75d2cff" | |
 
-Page updated 1/8/2024
 
-Page content applies to build 13.0.1.1071

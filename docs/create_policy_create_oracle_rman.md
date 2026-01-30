@@ -1,5 +1,7 @@
 ---
 title: "Creating Oracle RMAN Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/create_policy_create_oracle_rman.html"
 last_updated: "5/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Oracle RMAN Backup Policy
 
-In this article
 
 To back up databases protected with Veeam Plug-In for Oracle RMAN, you must configure an application backup policy in Veeam Backup & Replication.
 
@@ -22,6 +23,4 @@ Before configuring an application policy for Veeam Plug-In for Oracle RMAN, [che
 7. [Specify the backup schedule](policy_oracle_rman_schedule.md).
 8. [Review backup policy settings](policy_oracle_rman_summary.md).
 
-Page updated 5/7/2025
 
-Page content applies to build 13.0.1.1071

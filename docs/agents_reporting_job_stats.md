@@ -1,5 +1,7 @@
 ---
 title: "Viewing Veeam Agent Backup Job Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_job_stats.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Veeam Agent Backup Job Statistics
 
-In this article
 
 You can view statistics about Veeam Agent backup jobs configured in Veeam Backup & Replication. For Veeam Agent backup jobs managed by the backup server, Veeam Backup & Replication displays statistics in the similar way as for backup jobs for VM data backup.
 
@@ -26,6 +27,4 @@ For more information about backup of Microsoft SQL Server transaction logs, see 
 
 ![Viewing Veeam Agent Backup Job Statistics](images/statistics_agent_job.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

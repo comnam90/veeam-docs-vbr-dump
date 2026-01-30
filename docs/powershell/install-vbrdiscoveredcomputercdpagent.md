@@ -1,5 +1,7 @@
 ---
 title: "Install-VBRDiscoveredComputerCDPAgent"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/install-vbrdiscoveredcomputercdpagent.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Install-VBRDiscoveredComputerCDPAgent
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Add Machines to Application Group"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_vms_hv.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Add Machines to Application Group
 
-In this article
 
 At the Machines step of the wizard, add machines to the created application group.
 
@@ -26,6 +27,4 @@ To remove a machine from the list, select it and click Remove.
 
 ![Step 3. Add Machines to Application Group](images/app_group_add_vm.webp)
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

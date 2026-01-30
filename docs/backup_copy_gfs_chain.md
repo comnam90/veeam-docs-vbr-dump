@@ -1,5 +1,7 @@
 ---
 title: "Backup Chain for GFS Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_gfs_chain.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Chain for GFS Backups
 
-In this article
 
 GFS retention creates yearly, monthly and weekly full backups and functions in a combination with the short-term retention. Short-term retention policy cannot delete or merge these GFS full backups. Veeam Backup & Replication removes GFS backups only after the specified retention period for yearly/monthly/weekly backup is exceeded. Thus, the backup chain may contain more restore points than specified in the short-term retention policy.
 
@@ -30,6 +31,4 @@ To check whether a restore point has a GFS flag, you can open the backup propert
 
 [![Backup Chain for GFS Backups](images/backup_copy_properties.webp)](images/backup_copy_properties.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

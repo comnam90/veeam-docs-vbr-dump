@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRNASInstantRecoveryMigration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnasinstantrecoverymigration.html"
 last_updated: "9/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRNASInstantRecoveryMigration
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 * [Get-VBRNASInstantRecoveryMigration](get-vbrnasinstantrecoverymigration.md)
 * [New-VBRNASInstantRecoveryMigrationSwitchOverOptions](new-vbrnasinstantrecoverymigrationswitchoveroptions.md)
 
-Page updated 9/4/2024
 
-Page content applies to build 13.0.1.1071

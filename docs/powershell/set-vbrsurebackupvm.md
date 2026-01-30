@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRSureBackupVM"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsurebackupvm.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRSureBackupVM
 
-In this article
 
 Short Description
 
@@ -72,6 +73,4 @@ Related Commands
 * [New-VBRSureBackupVM](new-vbrsurebackupvm.md)
 * [New-VBRApplicationGroupStartupOptions](new-vbrapplicationgroupstartupoptions_surebackup.md)
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

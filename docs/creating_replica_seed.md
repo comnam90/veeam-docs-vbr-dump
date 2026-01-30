@@ -1,5 +1,7 @@
 ---
 title: "Creating Replica Seeds for CDP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_replica_seed.html"
 last_updated: "8/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Replica Seeds for CDP
 
-In this article
 
 To use replica seeding in a CDP policy, you must have backups of replicated VMs in a backup repository in the disaster recovery (DR) site. These backups are known as replica seeds. For more information on seeding and when to use it, see [Replica Seeding and Mapping](cdp_seeding.md).
 
@@ -30,6 +31,4 @@ If you do not have a backup repository in the DR site, you need to create the re
 
 1. After the backup is copied to the backup repository in the DR site, perform rescan of this backup repository as described in section [Rescanning Backup Repositories](rescanning_backup_repositories.md). Otherwise, Veeam Backup & Replication will not be able to detect the copied backup.
 
-Page updated 8/2/2024
 
-Page content applies to build 13.0.1.1071

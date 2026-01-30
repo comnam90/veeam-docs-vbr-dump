@@ -1,5 +1,7 @@
 ---
 title: "VBRViStoragePolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrvistoragepolicy.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRViStoragePolicy
 
-In this article
 
 Contains VMware storage policy profile.
 
@@ -25,6 +26,4 @@ Related Commands
 
 [Find-VBRViStoragePolicy](find-vbrvistoragepolicy.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VSBHvJob (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vsbhvjob.html"
 last_updated: "2/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VSBHvJob (obsolete)
 
-In this article
 
 Short Description
 
@@ -84,6 +85,4 @@ Related Commands
 * [Get-VSBApplicationGroup](get-vsbapplicationgroup.md)
 * [Get-VBRJob](get-vbrjob.md)
 
-Page updated 2/21/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Launching Background Retention"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_background_retention_launch.html"
 last_updated: "1/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Launching Background Retention
 
-In this article
 
 Veeam Backup & Replication launches background retention every 24 hours at 00:30. If you need to free up disk space from outdated backups earlier, you can launch the background retention manually.
 
@@ -29,6 +30,4 @@ Related Links
 * [Background Retention](background_retention_job.md)
 * [Disabling Background Retention](backup_background_retention_disable.md)
 
-Page updated 1/13/2025
 
-Page content applies to build 13.0.1.1071

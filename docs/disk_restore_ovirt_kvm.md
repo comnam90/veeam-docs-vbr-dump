@@ -1,5 +1,7 @@
 ---
 title: "Disk Restore to oVirt KVM"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_restore_ovirt_kvm.html"
 last_updated: "10/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Disk Restore to oVirt KVM
 
-In this article
 
 [This recovery method is available on the Microsoft Windows-based backup server.]
 
@@ -22,6 +23,4 @@ The restore procedure of virtual disks to oVirt KVM practically does not differ 
 
 [![Disk Restore to oVirt KVM](images/restore_kvm_disks.webp)](images/restore_kvm_disks.webp)
 
-Page updated 10/28/2025
 
-Page content applies to build 13.0.1.1071

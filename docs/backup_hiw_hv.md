@@ -1,5 +1,7 @@
 ---
 title: "How Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_hiw_hv.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Backup Works
 
-In this article
 
 Veeam Backup & Replication performs VM backup in the following way:
 
@@ -33,6 +34,4 @@ Related Topics
 * [Backup of VMs on Microsoft SMB3](hv_smb3_intro.md)
 * [Data Compression and Deduplication](compression_deduplication_hv.md)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

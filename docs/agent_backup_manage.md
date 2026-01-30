@@ -1,5 +1,7 @@
 ---
 title: "Managing Veeam Agent Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_manage.html"
 last_updated: "9/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Veeam Agent Backups
 
-In this article
 
 You can perform administration tasks with backups created by Veeam Agent backup jobs and stored in the Veeam backup repository. For such Veeam Agent backups, Veeam Backup & Replication allows you to perform the following tasks:
 
@@ -25,6 +26,4 @@ You can perform administration tasks with backups created by Veeam Agent backup 
 * [Managing Backup Files and Restore Points](agent_backup_points.md)
 * [Scanning Veeam Agent backups](agent_backup_scan.md).
 
-Page updated 9/4/2025
 
-Page content applies to build 13.0.1.1071

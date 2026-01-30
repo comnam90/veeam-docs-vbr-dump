@@ -1,5 +1,7 @@
 ---
 title: "Seeding Backups to Amazon S3 Storage"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_se_seeding.html"
 last_updated: "8/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Seeding Backups to Amazon S3 Storage
 
-In this article
 
 Seeding backups is an operation which can be helpful in case you want to start using object storage repositories and need to transfer a bulk amount of data to object storage. In this case, you can utilize the capabilities of the AWS Snowball Edge device that will help you to transfer data from the local backup repository to Amazon S3 storage and synchronize with the storage. AWS Snowball Edge is a physical storage device that emulates a cloud storage endpoint and serves as an intermediate between the local backup repository and Amazon S3 storage. With the help of AWS Snowball Edge you will not need to create a full backup file and transfer it through the internet which can result in high load on the network. Instead you will transport all necessary data using AWS Snowball Edge.
 
@@ -80,6 +81,4 @@ Related Topics
 
 [Adding AWS Snowball Edge Storage](osr_amazon_se_adding.md)
 
-Page updated 8/1/2024
 
-Page content applies to build 13.0.1.1071

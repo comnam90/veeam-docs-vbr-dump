@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Workloads to Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_vms.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Workloads to Process
 
-In this article
 
 At the Objects step of the wizard, select workloads whose restore points you want to copy to the target backup repository:
 
@@ -49,6 +50,4 @@ Related Topics
 
 [Restore Point Selection](backup_copy_select_point.md)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

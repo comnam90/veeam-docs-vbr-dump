@@ -1,5 +1,7 @@
 ---
 title: "Media Sets"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_media_sets.html"
 last_updated: "11/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Media Sets
 
-In this article
 
 Media set is a set of tapes used for continuously writing backup data. Media set is one of the parameters in media pool configuration.
 
@@ -34,6 +35,4 @@ In some cases, Veeam forcibly starts a new media set, even if media pool setting
 
 Note that if a new media set is started, scheduled or forced, the previous media set cannot be resumed.
 
-Page updated 11/25/2024
 
-Page content applies to build 13.0.1.1071

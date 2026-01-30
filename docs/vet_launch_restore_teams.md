@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_launch_restore_teams.html"
 last_updated: "9/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do the following:
 
@@ -25,6 +26,4 @@ To launch the Restore wizard, do the following:
 
 [![Restoring Teams](images/team_restore.webp)](images/team_restore.webp "Restoring Teams")
 
-Page updated 9/24/2024
 
-Page content applies to build 13.0.1.1071

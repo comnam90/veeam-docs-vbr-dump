@@ -1,5 +1,7 @@
 ---
 title: "Performing Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Backup
 
-In this article
 
 After you [configure Veeam Plug-In settings](db2_configure.md), you can use Veeam Plug-In to back up IBM Db2 databases.
 
@@ -22,6 +23,4 @@ In This Section
 * [Managing Backup Jobs in Veeam Backup & Replication](db2_protection_job_vbr.md)
 * [Managing Backups in Veeam Backup & Replication](db2_protection_backup_vbr.md)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

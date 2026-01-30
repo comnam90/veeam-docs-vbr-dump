@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Select Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_tas_select_backup.html"
 last_updated: "8/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Select Backup
 
-In this article
 
 This step of the wizard is only available if you have selected Select backup from the catalog at the [Specify Recovery Catalog Options](vehana_restore_single_tas_specify_recovery_catalog.md) step.
 
@@ -17,6 +18,4 @@ You can sort the available data backups by their backup IDs, the time they were 
 
 [![Selecting Backup](images/vehana_select_backup.webp)](images/vehana_select_backup.webp "Selecting Backup")
 
-Page updated 8/20/2024
 
-Page content applies to build 13.0.1.1071

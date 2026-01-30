@@ -1,5 +1,7 @@
 ---
 title: "Restore to Another Server Using Configured Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_another_auth.html"
 last_updated: "4/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Another Server Using Configured Authentication
 
-In this article
 
 You can restore a database to another server using an account and authentication method that were specified in the Veeam Plug-In settings during the [Veeam Plug-In configuring](db2_configure.md) process.
 
@@ -39,6 +40,4 @@ Select a backup to start the restore process:
 
 * If you plan to restore to another instance with a name that is different from the backed-up instance, see [Restore to Instance with Different Name](db2_restore_to_server_with_different_name.md).
 
-Page updated 4/2/2024
 
-Page content applies to build 13.0.1.1071

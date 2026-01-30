@@ -1,5 +1,7 @@
 ---
 title: "Upgrading on Protected Computer Side"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_upgrade_endpoint.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Upgrading on Protected Computer Side
 
-In this article
 
 You must perform the upgrade of Veeam Agent on the computers added to protection groups for pre-installed Veeam Agents on the protected computer side.
 
@@ -62,6 +63,4 @@ On the Veeam Agent computer side, the update procedure differs depending on the 
 * [Upgrade procedure for Unix computers with Oracle Solaris OS](pre_installed_agent_upgrade_solaris.md)
 * [Upgrade procedure for Mac computers](pre_installed_agent_upgrade_mac.md)
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

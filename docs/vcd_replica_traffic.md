@@ -1,5 +1,7 @@
 ---
 title: "Traffic Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_traffic.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Traffic Settings
 
-In this article
 
 To specify traffic settings for a VMware Cloud Director replication job:
 
@@ -23,6 +24,4 @@ If you want to include data blocks of the hiberfil.sys file and pagefile.sys fil
 
 ![Traffic Settings](images/vcd_replica_traffic.webp)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Active Full Backup Copies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_active_full.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Active Full Backup Copies
 
-In this article
 
 You can manually create an ad-hoc full backup for the backup copy job — active full backup copy, and add it to the backup chain in the target backup repository. To do this, you can use the Active Full button on the ribbon or the Active Full command from the shortcut menu.
 
@@ -25,6 +26,4 @@ Related Topics
 
 [Creating Active Full Backups](backup_copy_active_full_create.md)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

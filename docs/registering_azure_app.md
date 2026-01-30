@@ -1,5 +1,7 @@
 ---
 title: "Registering Application in Microsoft Azure Portal"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/registering_azure_app.html"
 last_updated: "8/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Registering Application in Microsoft Azure Portal
 
-In this article
 
 If you want to use your own web application for email notifications, you need to configure it in the Microsoft Azure portal. To do this, perform the following steps:
 
@@ -54,6 +55,4 @@ After registration, you can find application (client) ID and directory (tenant) 
 
 After you finish the registration, specify custom application registration settings when configuring the mail server for Microsoft 365 OAuth 2.0 authentication. For more information, see [Configuring Mail Server](general_email_notifications.md#configuring_mail_server).
 
-Page updated 8/15/2025
 
-Page content applies to build 13.0.1.1071

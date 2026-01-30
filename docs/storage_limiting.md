@@ -1,5 +1,7 @@
 ---
 title: "Limitation on Number of VMs per Snapshot"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limiting.html"
 last_updated: "2/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Limitation on Number of VMs per Snapshot
 
-In this article
 
 By default, during backup from storage snapshots Veeam Backup & Replication creates VMware snapshots for all VMs defined in the backup job that reside on the same volume or LUN, and then triggers a storage snapshot for this volume or LUN. The more VMs reside on the volume or LUN, the more time the VMware snapshots are stored and the more load is produced on the ESXi host. To reduce the lifetime of VMware snapshots and lower the load on the host, limit the number of VMs processed at a time.
 
@@ -34,6 +35,4 @@ Related Topics
 * [Configuring Backup from Storage Snapshots](storage_backup.md)
 * [Configuring Backup from Snapshots on Secondary Storage Arrays](storage_secondary_backup_perform.md)
 
-Page updated 2/14/2025
 
-Page content applies to build 13.0.1.1071

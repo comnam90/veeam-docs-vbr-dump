@@ -1,5 +1,7 @@
 ---
 title: "Editing Replication Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/edit_replica_job.html"
 last_updated: "1/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Editing Replication Jobs
 
-In this article
 
 You can edit configured jobs at any moment. For example, you may want to change scheduling settings for the job or add some VMs to the job.
 
@@ -25,6 +26,4 @@ To edit a replication job:
 
 [![Editing Replication Jobs](images/edit_replica_job.webp)](images/edit_replica_job.webp)
 
-Page updated 1/4/2024
 
-Page content applies to build 13.0.1.1071

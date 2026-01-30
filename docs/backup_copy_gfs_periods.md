@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy GFS Cycles"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_gfs_periods.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy GFS Cycles
 
-In this article
 
 When you configure the GFS schedule in the backup copy job settings, you specify for how long archive backups must be stored and on which day certain GFS backup must be created. You can configure the GFS schedule in the settings of a backup copy job. For details, see [Backup Copy Job: Define Backup Copy Target](backup_copy_target.md).
 
@@ -26,6 +27,4 @@ There are separate schedules for weekly, monthly and yearly full cycles. For det
 | Tip |
 | If you want to save this set of settings as the default one, click Save as default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server. |
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

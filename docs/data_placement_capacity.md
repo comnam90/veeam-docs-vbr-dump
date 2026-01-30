@@ -1,5 +1,7 @@
 ---
 title: "Backup File Placement for Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_placement_capacity.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup File Placement for Capacity Tier
 
-In this article
 
 Data distribution between capacity extents depends on whether it is the first or a subsequent move or copy of a backup chain. To select an extent for backup file placement, Veeam Backup & Replication checks the following conditions:
 
@@ -21,6 +22,4 @@ Data distribution between capacity extents depends on whether it is the first or
 | Note |
 | If an extent is set to Sealed mode or Maintenance mode, Veeam Backup & Replication will not move a backup chain to this extent. In this case, a new extent is selected and Veeam Backup & Replication follows the same algorithm as during the first job session. The backup chain located in an unavailable extent will be moved again to another extent. Veeam Backup & Replication will remove backup chains from the unavailable extents according to [retention policy](capacity_tier_retention.md). |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

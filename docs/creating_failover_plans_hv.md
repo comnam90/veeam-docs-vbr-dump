@@ -1,5 +1,7 @@
 ---
 title: "Creating Failover Plans"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_failover_plans_hv.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Failover Plans
 
-In this article
 
 To create a failover plan, use the New Failover Plan wizard.
 
@@ -18,6 +19,4 @@ To create a failover plan, use the New Failover Plan wizard.
 5. [Set time delay](creating_failover_plan_delay_time_hv.md).
 6. [Review the summary and finish working with the wizard](creating_failover_plan_summary_hv.md).
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

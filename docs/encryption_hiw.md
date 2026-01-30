@@ -1,5 +1,7 @@
 ---
 title: "How Backup Data Encryption Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_hiw.html"
 last_updated: "12/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Backup Data Encryption Works
 
-In this article
 
 In Veeam Backup & Replication, data encryption for backup files works at the following levels:
 
@@ -66,6 +67,4 @@ If data compression and data encryption are enabled for a job, Veeam Backup & Re
 
 If the Decompress backup data blocks before storing check box is selected in the backup repository settings, Veeam Backup & Replication does not compress VM data before encryption. Therefore, in the job statistics, you may observe a higher amount of transferred data (the Transferred counter) as compared to a job for which encryption is disabled. For details on job statistics, see [Viewing Real-Time Statistics](realtime_statistics.md).
 
-Page updated 12/22/2025
 
-Page content applies to build 13.0.1.1071

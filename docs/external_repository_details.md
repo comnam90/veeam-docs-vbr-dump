@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Cloud Storage Details"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_details.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Cloud Storage Details
 
-In this article
 
 At the Bucket step of the wizard, specify an Amazon S3 bucket and folder where Amazon EC2 instance backups reside:
 
@@ -24,6 +25,4 @@ If you do not see the required folder, make sure that the repository you are try
 
 [![Specify Cloud Storage Details](images/new_external_repo_4.webp)](images/new_external_repo_4.webp "Specify Cloud Storage Details")
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Backup from Storage Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_backup.html"
 last_updated: "5/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Backup from Storage Snapshots
 
-In this article
 
 You can instruct Veeam Backup & Replication to use backup from storage snapshots for backup and replication. During backup and replication jobs, Veeam Backup & Replication reads data of processed VMs from temporary storage snapshots, which speeds up backup and replication operations and improves RPOs.
 
@@ -39,6 +40,4 @@ Related Topics
 
 [Backup from Storage Snapshots](backup_from_storage_snapshots.md)
 
-Page updated 5/30/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Guest OS File Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_recovery.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Guest OS File Restore
 
-In this article
 
 With guest OS file restore, you can recover individual guest OS files and folders. When you recover files or folders, you do not need to extract the image of a workload to a staging location or start the workload prior to recovery. You can recover files and folders directly from a regular image-level backup or replica to the necessary point in time.
 
@@ -124,6 +125,4 @@ Related Topics
 * [Recovering Guest OS Files](performing_guest_restore.md)
 * [Application Item Restore](restore_veeam_explorers.md)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

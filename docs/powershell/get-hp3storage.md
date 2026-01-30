@@ -1,5 +1,7 @@
 ---
 title: "Get-HP3Storage"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-hp3storage.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-HP3Storage
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ Examples
 | --- | --- |
 | This command returns an HPE 3PAR StoreServ storage by name.  |  | | --- | | Get-HP3Storage -Name "HPE 3PAR StoreServe Storage" | |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

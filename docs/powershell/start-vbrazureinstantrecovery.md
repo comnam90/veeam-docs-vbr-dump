@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRAzureInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrazureinstantrecovery.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRAzureInstantRecovery
 
-In this article
 
 Short Description
 
@@ -113,6 +114,4 @@ Related Commands
 * [Get-VBRAzureVirtualNetworkSubnet](get-vbrazurevirtualnetworksubnet.md)
 * [Get-VBRAzureResourceGroup](get-vbrazureresourcegroup.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

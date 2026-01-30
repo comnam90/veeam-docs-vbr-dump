@@ -1,5 +1,7 @@
 ---
 title: "Veeam Cloud Connect Accounts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_tenant.html"
 last_updated: "6/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Cloud Connect Accounts
 
-In this article
 
 You can add a credentials record for a tenant account — an account that you plan to use to connect to a service provider (SP).
 
@@ -29,6 +30,4 @@ To create a credentials record for a tenant account:
 
 ![Veeam Cloud Connect Accounts](images/tenant_account.webp)
 
-Page updated 6/12/2024
 
-Page content applies to build 13.0.1.1071

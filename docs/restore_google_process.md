@@ -1,5 +1,7 @@
 ---
 title: "Restoring to Google Compute Engine"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_process.html"
 last_updated: "10/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to Google Compute Engine
 
-In this article
 
 To restore workloads to Google Compute Engine, use the Restore to Google Compute Engine wizard.
 
@@ -26,8 +27,6 @@ To restore workloads to Google Compute Engine, use the Restore to Google Compute
 |  |
 | --- |
 | Note |
-| [For Microsoft Windows-based backup server] If you use Google Cloud Plug-In for Veeam Backup & Replication and plan to restore Google Compute Engine virtual machines from restore points that were created using the appliance, you do not need to configure the helper appliance. Also, restore to Google Compute Engine works as described in the [Performing Instance Restore](https://helpcenter.veeam.com/docs/vbgc/guide/performing_instance_restore_console.html?ver=7) section in the Veeam Backup for Google Cloud User Guide. |
+| [For Microsoft Windows-based backup server] If you use Veeam Plug-in for Google Cloud and plan to restore Google Compute Engine virtual machines from restore points that were created using the appliance, you do not need to configure the helper appliance. Also, restore to Google Compute Engine works as described in the [Performing Instance Restore](https://helpcenter.veeam.com/docs/vbgc/guide/performing_instance_restore_console.html?ver=7) section in the Veeam Backup for Google Cloud User Guide. |
 
-Page updated 10/22/2025
 
-Page content applies to build 13.0.1.1071

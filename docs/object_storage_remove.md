@@ -1,5 +1,7 @@
 ---
 title: "Removing Object Storage Repository"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_remove.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Object Storage Repository
 
-In this article
 
 You can remove any object storage repository from the application scope if you no longer need it.
 
@@ -37,6 +38,4 @@ To remove an object storage repository, do the following:
 
 [![Removing Archive Repositories](images/archive_repository_remove.webp)](images/archive_repository_remove.webp "Removing Archive Repositories")
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRObjectStorageBackupTagMask"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrobjectstoragebackuptagmask.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRObjectStorageBackupTagMask
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command defines the tag mask for with object storage job.
 | --- |
 | $InclusionMask = New-VBRObjectStorageBackupTagMask -Name "tag" -Value "tag" -IsObjectTag |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

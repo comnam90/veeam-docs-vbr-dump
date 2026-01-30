@@ -1,5 +1,7 @@
 ---
 title: "VMs and VM Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/exclude_vms.html"
 last_updated: "3/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VMs and VM Disks
 
-In this article
 
 When you configure a backup or replication job, you can exclude the following objects from processing:
 
@@ -49,6 +50,4 @@ You can define how Veeam Backup & Replication must process VM templates at the V
 
 ![VMs and VM Disks](images/vm_backup_job_exclude_templates.webp)
 
-Page updated 3/4/2025
 
-Page content applies to build 13.0.1.1071

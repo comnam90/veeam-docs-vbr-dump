@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_byb.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you restore VMware Cloud Director VMs to a vApp, consider the following:
 
@@ -22,6 +23,4 @@ Before you restore VMware Cloud Director VMs to a vApp, consider the following:
 
 * If you want to scan VM data for viruses, check the [secure restore requirements and limitations](av_scan_about.md#av_limitations).
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Generate-VBRCloudGatewayCertificate"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrcloudgatewaycertificate.html"
 last_updated: "7/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Generate-VBRCloudGatewayCertificate
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ This command creates a certificate with the following settings:
 | --- |
 | Generate-VBRCloudGatewayCertificate ‑FriendlyName "CC-GW-2024" ‑Subject "cloudgw.tech.com" ‑ValidForDays 730 |
 
-Page updated 7/28/2025
 
-Page content applies to build 13.0.1.1071

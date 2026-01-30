@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Restore Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_mode_vm.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Restore Mode
 
-In this article
 
 This step is available only if you recover VMware vSphere VMs or VMware Cloud Director VMs.
 
@@ -31,6 +32,4 @@ At the Restore Mode step of the wizard, specify a destination for VM recovery an
 
 ![Step 4. Select Restore Mode](images/instant_recovery_mode.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

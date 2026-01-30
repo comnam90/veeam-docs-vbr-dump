@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Object Storage Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_data_lake_launch.html"
 last_updated: "8/9/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Object Storage Wizard
 
-In this article
 
 To launch the New Object Storage wizard:
 
@@ -24,6 +25,4 @@ To launch the New Object Storage wizard:
 
 ![Step 1. Launch New Object Storage Wizard](images/snippet_os_data_lake_launch.webp)
 
-Page updated 8/9/2024
 
-Page content applies to build 13.0.1.1071

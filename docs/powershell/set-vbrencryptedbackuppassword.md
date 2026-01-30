@@ -1,5 +1,7 @@
 ---
 title: "Set-VBREncryptedBackupPassword"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrencryptedbackuppassword.html"
 last_updated: "4/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBREncryptedBackupPassword
 
-In this article
 
 Short Description
 
@@ -85,6 +86,4 @@ Related Commands
 * [Get-VBRImportedEncryptedBackup](get-vbrencryptedbackup.md)
 * [Get-VBRImportedEncryptedBackupHint](get-vbrencryptedbackuphint.md)
 
-Page updated 4/30/2025
 
-Page content applies to build 13.0.1.1071

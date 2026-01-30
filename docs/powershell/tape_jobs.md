@@ -1,5 +1,7 @@
 ---
 title: "Tape Jobs"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/tape_jobs.html"
 last_updated: "12/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Jobs
 
-In this article
 
 You can create and manage tape jobs from your command line. For more information on how to enable, copy and remove tape jobs using cmdlets, see the [Working with Jobs](working_with_jobs.md) section.
 
@@ -50,6 +51,4 @@ Tape Jobs Schedule
 | [New-VBRTapeGFSScheduleOptions](new-vbrtapegfsscheduleoptions.md) | Creates GFS schedule. |
 | [Set-VBRTapeGFSScheduleOptions](set-vbrtapegfsscheduleoptions.md) | Modifies GFS schedule. |
 
-Page updated 12/16/2025
 
-Page content applies to build 13.0.1.1071

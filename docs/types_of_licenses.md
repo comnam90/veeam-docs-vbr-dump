@@ -1,5 +1,7 @@
 ---
 title: "Types of Licenses"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/types_of_licenses.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Types of Licenses
 
-In this article
 
 Veeam Software offers the following types of licenses for Veeam Backup & Replication:
 
@@ -27,6 +28,4 @@ Free Licenses
 * NFR license — license used for product demonstration, training and education. The person to whom the license is provided agrees that the license is not for resell or commercial use.
 * Promo license — license that grants additional instances. You can install it only on top of an existing Perpetual or Subscription license (primary license). The primary license can have any units (only sockets, only instances, or both). Number of additional instances and duration of promo period are decided by a sales representative.
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

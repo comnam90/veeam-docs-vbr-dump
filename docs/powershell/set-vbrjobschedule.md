@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRJobSchedule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrjobschedule.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRJobSchedule
 
-In this article
 
 Short Description
 
@@ -121,6 +122,4 @@ Related Commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Get-VSBJob](get-vsbjob.md)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

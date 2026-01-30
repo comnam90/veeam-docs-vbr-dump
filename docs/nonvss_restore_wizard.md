@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Heuristic Analysis Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nonvss_restore_wizard.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Heuristic Analysis Wizard
 
-In this article
 
 To launch the Heuristic Analysis wizard, do the following:
 
@@ -19,6 +20,4 @@ Veeam Backup & Replication will launch Veeam Explorer for Oracle and display the
 
 [![Launching Heuristic Analysis Wizard](images/novss.webp)](images/novss.webp "Launching Heuristic Analysis Wizard")
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

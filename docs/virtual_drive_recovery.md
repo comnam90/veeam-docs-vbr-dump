@@ -1,5 +1,7 @@
 ---
 title: "Virtual Disk Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_drive_recovery.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Virtual Disk Restore
 
-In this article
 
 Veeam Backup & Replication allows you to recover individual virtual disks of a VM from a backup. Recovered virtual disks can be attached to the original VM (for example, if you want to replace a corrupted disk) or mapped to any other VM in the virtual infrastructure. This recovery option can be helpful if a VM disk becomes corrupted.
 
@@ -24,6 +25,4 @@ Related Resources
 
 * [Restoring Volumes from Veeam Agent Backups](integration_volume_restore.md)
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

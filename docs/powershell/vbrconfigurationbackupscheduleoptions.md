@@ -1,5 +1,7 @@
 ---
 title: "VBRConfigurationBackupScheduleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrconfigurationbackupscheduleoptions.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRConfigurationBackupScheduleOptions
 
-In this article
 
 Contains configuration backup job schedule settings.
 
@@ -24,6 +25,4 @@ Related Commands
 
 [New-VBRConfigurationBackupScheduleOptions](new-vbrconfigurationbackupscheduleoptions.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

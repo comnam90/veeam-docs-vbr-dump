@@ -1,5 +1,7 @@
 ---
 title: "SAP on Oracle Backup Using Backint"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_brbackup.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # SAP on Oracle Backup Using Backint
 
-In this article
 
 Veeam Plug-In for SAP on Oracle integrates with the BRBACKUP tool and transfers backup files to backup repositories connected to Veeam Backup & Replication. The backup process itself is performed by the BRBACKUP tool. To perform the backup you can use BR\*TOOLS or BR\*TOOLS Studio.
 
@@ -27,6 +28,4 @@ The following examples are only for demonstration purposes. To see the descripti
 * [Full Backup](sap_orcl_backint_full.md)
 * [Redo Logs Backup](sap_orcl_logs.md)
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

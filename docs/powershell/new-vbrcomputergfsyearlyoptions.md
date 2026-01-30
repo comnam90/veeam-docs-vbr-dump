@@ -1,5 +1,7 @@
 ---
 title: "New-VBRComputerGFSYearlyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrcomputergfsyearlyoptions.html"
 last_updated: "10/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRComputerGFSYearlyOptions
 
-In this article
 
 Short Description
 
@@ -55,6 +56,4 @@ This command defines a yearly GFS retention policy with the following settings:
 | --- |
 | New-VBRComputerGFSYearlyOptions -RetentionPeriod 2 -SelectedMonth November |
 
-Page updated 10/21/2024
 
-Page content applies to build 13.0.1.1071

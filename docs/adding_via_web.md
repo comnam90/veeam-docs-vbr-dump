@@ -1,5 +1,7 @@
 ---
 title: "Adding Veeam Infrastructure Appliance Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_via_web.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Veeam Infrastructure Appliance Using Web UI
 
-In this article
 
 This section describes how to add a host deployed from Veeam Infrastructure Appliance as a backup infrastructure component.
 
@@ -19,6 +20,4 @@ Before you add a Veeam Infrastructure Appliance, [check prerequisites](linux_inf
 2. [Review components](linux_server_review_web.md).
 3. [Finish working with the wizard](linux_server_summary_web.md).
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

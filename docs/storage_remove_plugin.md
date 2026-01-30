@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Plug-Ins from Microsoft Windows-Based Backup Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_remove_plugin.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Plug-Ins from Microsoft Windows-Based Backup Server
 
-In this article
 
 [The following information applies to the Microsoft Windows-based backup server.]
 
@@ -26,6 +27,4 @@ Alternatively, you can navigate to Control Panel > Programs > Programs and Featu
 
 ![Uninstalling Plug-Ins from Microsoft Windows-Based Backup Server](images/storage_plugin_uninstall.webp "Plug-in Uninstallation")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

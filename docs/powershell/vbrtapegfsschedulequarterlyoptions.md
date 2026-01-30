@@ -1,5 +1,7 @@
 ---
 title: "VBRTapeGFSScheduleQuarterlyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtapegfsschedulequarterlyoptions.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRTapeGFSScheduleQuarterlyOptions
 
-In this article
 
 Contains GFS tape jobs quarterly schedule options.
 
@@ -25,6 +26,4 @@ Properties
 | DayOfMonth | string | The day of month: 1-31/Last. |
 | MonthOfQuarter | VBRGFSMonthOfQuarter | The number of month in quarter:   * First * Last |
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

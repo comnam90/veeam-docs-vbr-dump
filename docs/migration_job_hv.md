@@ -1,5 +1,7 @@
 ---
 title: "Migrating VMs Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migration_job_hv.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Migrating VMs Using Console
 
-In this article
 
 Quick Migration is not job-driven: it cannot be saved as a job or scheduled to run later. Veeam Backup & Replication will start relocating VMs immediately after you finish working with the Quick Migration wizard.
 
@@ -19,6 +20,4 @@ Before you start Quick Migration, [check prerequisites](quick_migration_before_y
 4. [Select infrastructure components for data transfer](quick_migration_infrastructure_hv.md).
 5. [Finish working with the wizard](quick_migration_summary_hv.md).
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

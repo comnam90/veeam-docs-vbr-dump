@@ -1,5 +1,7 @@
 ---
 title: "Deleting Backup Jobs"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_delete_job.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deleting Backup Jobs
 
-In this article
 
 To delete a job:
 
@@ -19,6 +20,4 @@ After the job is deleted, the backups created by this job are displayed under th
 
 [![Delete Job](images/entra_id_delete_job.webp)](images/entra_id_delete_job.webp "Delete Job")
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

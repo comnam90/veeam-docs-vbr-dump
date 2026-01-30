@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_advanced_maintenance.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 To specify maintenance settings for a backup chain created with the backup policy:
 
@@ -34,6 +35,4 @@ If the full backup file contains data blocks for deleted items (protection group
 
 ![Maintenance Settings](images/mongo_policy_storage_advanced_maintenance.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

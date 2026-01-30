@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Apply Connection Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_apply.html"
 last_updated: "5/30/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Apply Connection Settings
 
-In this article
 
 Before proceeding, the utility validates the specified settings to make sure that the user account has enough privileges to access the database.
 
@@ -24,6 +25,4 @@ Wait for the operation to complete and click Next to proceed to the Summary step
 
 ![Step 3. Apply Connection Settings](images/dbconfig_apply.webp)
 
-Page updated 5/30/2023
 
-Page content applies to build 13.0.1.1071

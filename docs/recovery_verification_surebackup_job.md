@@ -1,5 +1,7 @@
 ---
 title: "Using SureBackup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_verification_surebackup_job.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using SureBackup
 
-In this article
 
 A SureBackup job is a task for recovery verification. You can run the SureBackup job manually or schedule it to run automatically.
 
@@ -52,6 +53,4 @@ When you configure the application group, you must add the backup you want to te
 
 After all preparations are done, you can [create the SureBackup job](surebackup_job_create.md).
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

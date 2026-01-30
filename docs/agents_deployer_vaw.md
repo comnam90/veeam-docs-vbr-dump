@@ -1,5 +1,7 @@
 ---
 title: "Deploying Veeam Agent for Microsoft Windows"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_deployer_vaw.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deploying Veeam Agent for Microsoft Windows
 
-In this article
 
 To deploy Veeam Agent for Microsoft Windows using Veeam Deployment Kit, perform the following steps:
 
@@ -62,6 +63,4 @@ To learn more, see [Creating Protection Group for Individual Computers](protecti
 
 After you create the protection group, Veeam Backup & Replication will rescan the protection group. During the rescan operation, Veeam Backup & Replication will replace the Veeam Deployer Service temporary certificate, connect to the Veeam Deployer Service and install Veeam Agent. To learn more, see [Rescan Job](agents_discovery_job.md).
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

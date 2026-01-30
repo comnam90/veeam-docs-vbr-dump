@@ -1,5 +1,7 @@
 ---
 title: "Creating Protection Group for Microsoft Active Directory Objects"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_ad_objects.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Protection Group for Microsoft Active Directory Objects
 
-In this article
 
 Before you create a protection group for Microsoft Active Directory objects, [check prerequisites](ad_objects_before.md). Then use the New Protection Group wizard to configure a protection group.
 
@@ -22,6 +23,4 @@ Before you create a protection group for Microsoft Active Directory objects, [ch
 9. [Assess results](ad_objects_results.md).
 10. [Finish working with the wizard](ad_objects_finish.md).
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

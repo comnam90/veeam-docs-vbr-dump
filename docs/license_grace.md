@@ -1,5 +1,7 @@
 ---
 title: "License Expiration"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_grace.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # License Expiration
 
-In this article
 
 When the license expires, Veeam Backup & Replication behaves in the following way depending on the license type:
 
@@ -55,6 +56,4 @@ If you merged licenses with different expiration dates, the merged license will 
 
 In such case, you can update your Subscription license or continue using the Perpetual license. To continue using the Perpetual license, remove the Subscription license. For more information, see [Removing License](removing_license.md).
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

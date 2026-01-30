@@ -1,5 +1,7 @@
 ---
 title: "Performing Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Restore
 
-In this article
 
 You can restore Microsoft SQL Server databases from backups created with Veeam Plug-In. Veeam Plug-In supports restore of entire databases to the original Microsoft SQL Server machine or to another server.
 
@@ -31,6 +32,4 @@ To restore Microsoft SQL Server databases, you can use the following tools:
 * The MSSQLRecoveryManager.exe command-line tool. For details, see [Restore with Command-Line Interface](mssql_db_restore_cmd.md).
 * Veeam Explorer for Microsoft SQL Server. For details, see [Restore with Veeam Explorer for Microsoft SQL Server](mssql_db_restore_vesql.md).
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Saving Microsoft Exchange Items"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_saving_items.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Saving Microsoft Exchange Items
 
-In this article
 
 Veeam Explorer for Microsoft Exchange allows you to save any item as Microsoft Exchange Mail Document (.msg) files.
 
@@ -45,6 +46,4 @@ To save items to a custom location, do the following:
 
 [![Saving to Custom Location](images/vee_save.webp)](images/vee_save.webp "Saving to Custom Location")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

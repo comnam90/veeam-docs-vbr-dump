@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy Jobs for VMs and Physical Machines"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/backup_copy.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy Jobs for VMs and Physical Machines
 
-In this article
 
 You can use cmdlets in this topic to perform the following operations:
 
@@ -25,6 +26,4 @@ You can use cmdlets in this topic to perform the following operations:
 | [Get-VBRLegacyBackupCopySourceJob](get-vbrlegacybackupcopysourcejob.md) | Returns legacy periodic backup copy job source objects. |
 | [Convert-VBRLegacyCopyBackup](convert-vbrlegacycopybackup.md) | Converts legacy backup file of legacy periodic backup copy job to the per-machine backup with separate metadata files using mapping. |
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

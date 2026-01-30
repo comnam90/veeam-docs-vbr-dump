@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify External Repository Name"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_google_cloud_name.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify External Repository Name
 
-In this article
 
 At the Name step of the wizard, specify a name and description for the external repository.
 
@@ -18,6 +19,4 @@ The default description contains information about the user who added the extern
 
 ![Step 2. Specify External Repository Name](images/external_google_name.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Failover"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover.html"
 last_updated: "9/27/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Failover
 
-In this article
 
 Failover is a process when Veeam Backup & Replication switches processes from the source vApp in the production organization VDC to its replica in the disaster recovery organization VDC. During failover, Veeam Backup & Replication recovers the replica to the required restore point and shifts all I/O processes from the source vApp to its replica. As a result, you have a fully functional vApp within several minutes, and your users can access services and applications with minimum disruption.
 
@@ -40,6 +41,4 @@ In This Section
 * [Performing Failover](vcd_cdp_performing_failover.md)
 * [Performing Failover Retry](vcd_cdp_failover_retry.md)
 
-Page updated 9/27/2023
 
-Page content applies to build 13.0.1.1071

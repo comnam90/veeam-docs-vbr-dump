@@ -1,5 +1,7 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_system_requirements.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements
 
-In this article
 
 System requirements for Veeam Plug-In for IBM Db2 depend on the architecture of the Linux OS that runs on your machine:
 
@@ -15,6 +16,4 @@ System requirements for Veeam Plug-In for IBM Db2 depend on the architecture of 
 * [System requirements for Linux on Power](db2_plugin_system_requirements_power.md)
 * [System requirements for IBM AIX](db2_plugin_system_requirements_aix.md)
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

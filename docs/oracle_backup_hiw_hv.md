@@ -1,5 +1,7 @@
 ---
 title: "How Oracle Archived Log Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_backup_hiw_hv.html"
 last_updated: "2/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Oracle Archived Log Backup Works
 
-In this article
 
 The archived log backup for Oracle VMs is performed in the following way:
 
@@ -53,6 +54,4 @@ Archived logs that, for some reason, were not processed during the log backup in
 
 ![How Oracle Archived Log Backup Works](images/oracle_backup_hiw_hv.webp)
 
-Page updated 2/11/2025
 
-Page content applies to build 13.0.1.1071

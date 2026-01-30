@@ -1,5 +1,7 @@
 ---
 title: "Restoring to On-Premises Microsoft Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/one_click_to_onprem.html"
 last_updated: "9/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to On-Premises Microsoft Servers
 
-In this article
 
 To perform 1-Click Restore to on-premises Microsoft servers, do the following:
 
@@ -15,6 +16,4 @@ To perform 1-Click Restore to on-premises Microsoft servers, do the following:
 2. [Specify a user account](specify_user_account.md).
 3. [Review the operation summary](summary2.md).
 
-Page updated 9/19/2024
 
-Page content applies to build 13.0.1.1071

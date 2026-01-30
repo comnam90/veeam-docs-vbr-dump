@@ -1,5 +1,7 @@
 ---
 title: "Backup Copy GFS Methods"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_gfs_modes.html"
 last_updated: "9/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Copy GFS Methods
 
-In this article
 
 You can instruct Veeam Backup & Replication to create archive full backups with the following methods:
 
@@ -45,6 +46,4 @@ Related Topics
 * [Backup Copy GFS Cycles](backup_copy_gfs_periods.md)
 * [Backup Chain for GFS Backups](backup_copy_gfs_chain.md)
 
-Page updated 9/15/2025
 
-Page content applies to build 13.0.1.1071

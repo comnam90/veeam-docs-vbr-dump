@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Virtual Hard Disks to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_restore_map_vm.html"
 last_updated: "5/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Virtual Hard Disks to Restore
 
-In this article
 
 At the Disk Mapping step, select virtual hard disks to restore, choose a VM to which the disks must be attached and define additional restore settings.
 
@@ -49,6 +50,4 @@ During the restore process, VM hard disks are processed simultaneously. Veeam Ba
 
 ![Step 4. Select Virtual Hard Disks to Restore](images/hard_disk_restore_disk_mapping.webp)
 
-Page updated 5/1/2025
 
-Page content applies to build 13.0.1.1071

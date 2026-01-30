@@ -1,5 +1,7 @@
 ---
 title: "Moving Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_move_backups.html"
 last_updated: "11/28/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Moving Backups
 
-In this article
 
 Veeam Backup & Replication allows you to move all backups of a backup copy job to another repository or to move specific workloads and their backups to another backup copy job.
 
@@ -72,6 +73,4 @@ To finalize the move operation:
 
 [![Retry Move Operation](images/backup_move_retry.webp)](images/backup_move_retry.webp "Retry Move Operation")
 
-Page updated 11/28/2023
 
-Page content applies to build 13.0.1.1071

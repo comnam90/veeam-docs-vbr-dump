@@ -1,5 +1,7 @@
 ---
 title: "VBRTapeGFSScheduleYearlyOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtapegfsscheduleyearlyoptions.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRTapeGFSScheduleYearlyOptions
 
-In this article
 
 Contains GFS tape jobs yearly schedule options.
 
@@ -25,6 +26,4 @@ Properties
 | DayOfMonth | string | The day of month: 1-31/Last. |
 | MonthOfYear | VBRMonth | The month. |
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

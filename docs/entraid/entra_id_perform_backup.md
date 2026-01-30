@@ -1,5 +1,7 @@
 ---
 title: "Performing Backup"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_perform_backup.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Backup
 
-In this article
 
 To produce backups, Veeam Backup for Microsoft Entra ID runs backup jobs. A backup job is a collection of settings that define the way backup operations are performed: what data to back up, where to store backups, when to start the backup process, and so on.
 
@@ -24,6 +25,4 @@ In This Section
 * [Creating Log Backup Jobs](entra_id_log_job.md)
 * [Managing Backup Jobs](entra_id_manage_jobs.md)
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

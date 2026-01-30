@@ -1,5 +1,7 @@
 ---
 title: "Built-In Storage Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_configure_add_storage.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Built-In Storage Systems
 
-In this article
 
 To use storage snapshots for data protection and disaster recovery operations, you must add the storage system to the backup infrastructure. Before adding a storage system to the backup infrastructure, check [Planning and Preparation](storage_limitations.md). If you plan to work with secondary storage arrays, you must add them to the backup infrastructure as well.
 
@@ -43,6 +44,4 @@ In This Section
 * [Adding NetApp ONTAP](netapp_add.md)
 * [Adding Nutanix Files Storage](nutanix_add.md)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

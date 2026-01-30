@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRSureBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsurebackupsession.html"
 last_updated: "2/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRSureBackupSession
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Examples
 | --- | --- |
 | This command returns the SureBackup sessions named Winserver SureBackupJob.  |  | | --- | | Get-VBRSureBackupSession -Name "Winserver SureBackupJob" | |
 
-Page updated 2/12/2024
 
-Page content applies to build 13.0.1.1071

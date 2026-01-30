@@ -1,5 +1,7 @@
 ---
 title: "Step 12. Specify Data Transfer Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_data_transfer_vm.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 12. Specify Data Transfer Settings
 
-In this article
 
 At the Data Transfer step of the wizard, select backup infrastructure components that must be used for the replication process and choose a path for VM data transfer:
 
@@ -39,6 +40,4 @@ Veeam Backup & Replication will assign backup proxies for VM processing one by o
 
 ![Step 12. Specify Data Transfer Settings](images/vm_replica_job_data_transfer.webp)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

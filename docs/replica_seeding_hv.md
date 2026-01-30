@@ -1,5 +1,7 @@
 ---
 title: "Step 13. Define Seeding and Mapping Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_seeding_hv.html"
 last_updated: "1/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 13. Define Seeding and Mapping Settings
 
-In this article
 
 The Seeding step is available if you have selected the Replica seeding check box at the [Job](replica_name_hv.md) step of the wizard.
 
@@ -63,6 +64,4 @@ To remove a mapping association, select a VM in the list and click Remove.
 
 ![Step 13. Define Seeding and Mapping Settings](images/hv_replica_job_mapping.webp)
 
-Page updated 1/23/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRFreeAgentInstanceConsumptionStatus"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrfreeagentinstanceconsumptionstatus.html"
 last_updated: "2/5/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRFreeAgentInstanceConsumptionStatus
 
-In this article
 
 Short Description
 
@@ -44,6 +45,4 @@ This command returns a state of the instance consumption by non-licensed Veeam A
 | --- |
 | Get-VBRFreeAgentInstanceConsumptionStatus  False |
 
-Page updated 2/5/2024
 
-Page content applies to build 13.0.1.1071

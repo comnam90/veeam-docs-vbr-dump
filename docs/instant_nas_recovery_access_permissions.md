@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Access Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_access_permissions.html"
 last_updated: "11/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Access Permissions
 
-In this article
 
 After you specify file shares and mount servers, Veeam Backup & Replication validates them. If Veeam Backup & Replication detects missing security descriptors on the file shares, it adds the Access Permissions step to the wizard. At this step you can specify the owner account and permissions for the file share.
 
@@ -52,6 +53,4 @@ If you use a Linux mount server and want to specify an Active Directory account 
 | --- |
 | $ sudo wbinfo --ping-dc |
 
-Page updated 11/5/2025
 
-Page content applies to build 13.0.1.1071

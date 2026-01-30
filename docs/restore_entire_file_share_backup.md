@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select File Share to Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_file_share_backup.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select File Share to Restore
 
-In this article
 
 At the File Shares step of the wizard, select the file share that you want to restore:
 
@@ -29,6 +30,4 @@ To exclude the file share from the restore process, select the file share in the
 
 ![Step 2. Select File Share to Restore](images/nas_file_restore_backup.webp "Select an Object to Restore")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

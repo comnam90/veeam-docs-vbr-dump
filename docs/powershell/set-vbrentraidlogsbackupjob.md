@@ -1,5 +1,7 @@
 ---
 title: "Set-VBREntraIDLogsBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrentraidlogsbackupjob.html"
 last_updated: "1/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBREntraIDLogsBackupJob
 
-In this article
 
 Short Description
 
@@ -91,6 +92,4 @@ Related Commands
 * [New-VBRDailyOptions](new-vbrdailyoptions.md)
 * [New-VBRServerScheduleOptions](new-vbrserverscheduleoptions.md)
 
-Page updated 1/30/2025
 
-Page content applies to build 13.0.1.1071

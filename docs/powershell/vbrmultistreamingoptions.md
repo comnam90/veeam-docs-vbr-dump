@@ -1,5 +1,7 @@
 ---
 title: "VBRMultiStreamingOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrmultistreamingoptions.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRMultiStreamingOptions
 
-In this article
 
 Contains media pool multistreaming options.
 
@@ -23,6 +24,4 @@ Related Objects
 
 [VBRTapeMediaPool](vbrtapemediapool.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Export Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_export_custom_stl.html"
 last_updated: "1/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Export Location
 
-In this article
 
 At this step of the wizard, do the following:
 
@@ -26,6 +27,4 @@ For more information, see [this Oracle article](https://docs.oracle.com/en/datab
 
 [![Exporting as RMAN backup](images/rman_export_published_1.webp)](images/rman_export_published_1.webp "Exporting as RMAN backup")
 
-Page updated 1/2/2025
 
-Page content applies to build 13.0.1.1071

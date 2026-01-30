@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Finalizing Instant Recovery to Microsoft Hyper-V"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_finalize_hv_web.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Finalizing Instant Recovery to Microsoft Hyper-V
 
-In this article
 
 After the VMs have been successfully recovered, you must finalize the process. For this, test the recovered workloads in the Hyper-V client and decide whether to migrate them to production environment or stop publishing.
 
@@ -37,6 +38,4 @@ To stop publishing a VM, click Instant Recovery in the management pane. Select t
 
 [![Stop Publishing VM - Web UI](images/ir_finalize_stop_hv_web.webp)](images/ir_finalize_stop_hv_web.webp "Stop Publishing VM - Web UI")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAzureBlobAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazureblobaccount.html"
 last_updated: "4/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAzureBlobAccount
 
-In this article
 
 Short Description
 
@@ -61,6 +62,4 @@ Perform the following steps:
 2. Enter the password.
 3. Run the Add-VBRAzureBlobAccount cmdlet. Specify the Name parameter value. Set the $securepassword variable as the SharedKey parameter value.
 
-Page updated 4/19/2024
 
-Page content applies to build 13.0.1.1071

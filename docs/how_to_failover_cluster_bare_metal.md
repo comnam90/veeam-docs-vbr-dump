@@ -1,5 +1,7 @@
 ---
 title: "How to Perform Bare Metal Restore for Clusters with Shared Disks"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/how_to_failover_cluster_bare_metal.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How to Perform Bare Metal Restore for Clusters with Shared Disks
 
-In this article
 
 Veeam Backup & Replication allows you to protect failover clusters in your infrastructure using Veeam Agent for Microsoft Windows. If cluster nodes fail to start for any reason, you can restore affected nodes.
 
@@ -33,6 +34,4 @@ Depending on the validation tests results, do the following:
 | IMPORTANT |
 | Do not restore the cluster shared disk from the Veeam Agent computer side. In this case, you will be able to restore only to a local disk. |
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

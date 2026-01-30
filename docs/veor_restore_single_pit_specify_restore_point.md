@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_single_pit_specify_restore_point.html"
 last_updated: "6/18/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Restore Point
 
-In this article
 
 At this step of the wizard, select a state as of which you want to restore your database:
 
@@ -24,6 +25,4 @@ Consider the following:
 
 [![Specifying Restore Point](images/veo_rest_wiz_point.webp)](images/veo_rest_wiz_point.webp "Specifying Restore Point")
 
-Page updated 6/18/2024
 
-Page content applies to build 13.0.1.1071

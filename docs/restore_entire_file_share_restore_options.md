@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_file_share_restore_options.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Restore Options
 
-In this article
 
 At the Restore Options step of the wizard, specify overwrite options in case the file with the same name already exists in the target folder:
 
@@ -25,6 +26,4 @@ Select the Restore permissions and security attributes check box if you want the
 
 ![Step 4. Specify Restore Options](images/nas_file_restore_options.webp "Specify Restore Options")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

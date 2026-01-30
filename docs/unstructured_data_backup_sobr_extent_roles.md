@@ -1,5 +1,7 @@
 ---
 title: "Scale-Out Repository with Extents in Metadata and Data Roles"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_sobr_extent_roles.html"
 last_updated: "9/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scale-Out Repository with Extents in Metadata and Data Roles
 
-In this article
 
 When you use a standalone repository for storing unstructured data backups, it stores both data and metadata. But when you plan to use a scale-out repository, you can configure its performance extents to act as data extents or as metadata extents. Thus, you can store metadata separate from the backup data.
 
@@ -49,6 +50,4 @@ To view the roles of the extents in a scale-out backup repository, do either of 
 * Check the role of each extent (the Role column) in the list of extents under the certain scale-out repository in the Backup Infrastructure view.
 * Run the Get-VBRRepositoryExtent cmdlet, as described in the [Veeam PowerShell Reference](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrrepositoryextent.html?ver=13).
 
-Page updated 9/18/2025
 
-Page content applies to build 13.0.1.1071

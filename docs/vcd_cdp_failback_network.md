@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Configure Network Mapping"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_network.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Configure Network Mapping
 
-In this article
 
 The Network step is available if you have selected the Failback to the specified location option at the Destination step.
 
@@ -25,6 +26,4 @@ If you do not want to connect restored vApps to any virtual network, select the 
 
 ![Step 6. Configure Network Mapping_2](images/vcd_failback_network.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

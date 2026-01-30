@@ -1,5 +1,7 @@
 ---
 title: "Data Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_hana_data_backup.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Backup
 
-In this article
 
 Veeam Plug-In for SAP HANA transfers backup data to the Veeam backup repository and stores the data in the Veeam proprietary format for backups.
 
@@ -19,6 +20,4 @@ To store backup files, you can add backup repositories to your Veeam Backup & Re
 
 For details on how to use the specific backup tools, see [Database Protection](sap_hana_backup.md).
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "New-VBRAzureApplianceTemplateDeploymentOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrazureappliancetemplatedeploymentoptions.html"
 last_updated: "8/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRAzureApplianceTemplateDeploymentOptions
 
-In this article
 
 Short Description
 
@@ -81,6 +82,4 @@ Related Commands
 * [Get-VBRAzureSubscription](get-vbrazuresubscription.md)
 * [Get-VBRAzureLocation](get-vbrazurelocation.md)
 
-Page updated 8/4/2025
 
-Page content applies to build 13.0.1.1071

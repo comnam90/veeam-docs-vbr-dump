@@ -1,5 +1,7 @@
 ---
 title: "New-VBRNASBackupWildcardMask"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrnasbackupwildcardmask.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRNASBackupWildcardMask
 
-In this article
 
 Short Description
 
@@ -51,6 +52,4 @@ This command defines the wildcard mask the .avi types of files.
 | --- |
 | $exclusionMask = New-VBRNASBackupWildcardMask -Wildcard "\*.avi" |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

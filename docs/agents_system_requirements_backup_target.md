@@ -1,5 +1,7 @@
 ---
 title: "Backup Target"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_backup_target.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Target
 
-In this article
 
 Backup can be performed to the storage targets listed below.
 
@@ -41,6 +42,4 @@ If you protect Veeam Agent computers by a backup job managed by Veeam Agent, you
 | IMPORTANT |
 | Veeam Cloud Connect repository is not supported as a backup and backup copy target for the following Veeam Agents:   * Veeam Agent for IBM AIX * Veeam Agent for Oracle Solaris * Veeam Agent for Linux on Power |
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

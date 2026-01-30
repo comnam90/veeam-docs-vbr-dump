@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRComputerFileProxyServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcomputerfileproxyserver.html"
 last_updated: "5/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRComputerFileProxyServer
 
-In this article
 
 Short Description
 
@@ -78,6 +79,4 @@ Examples
 | --- | --- |
 | This command gets all general-purpose backup proxies that are added to the Veeam Backup & Replication infrastructure by the backup proxy ID. The cmdlet output will contain the following details on general-purpose backup proxies: ID, Description, Server and ConcurrentTaskNumber.  |  | | --- | | Get-VBRComputerFileProxyServer -Id "02da6898-308d-44ac-b007-94d81576c296"  Id                            Description                   Server                                 ConcurrentTaskNumber  --                            -----------                   ------                                 --------------------  02da6898-308d-44ac-b007-94... Created by Powershell at 8... Veeam.Backup.Core.Common.C...                             2 | |
 
-Page updated 5/22/2025
 
-Page content applies to build 13.0.1.1071

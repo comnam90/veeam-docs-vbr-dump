@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRVirtualLab"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvirtuallab.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRVirtualLab
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Examples
 | --- | --- |
 | This command returns virtual labs created on the VMware.  |  | | --- | | Get-VBRVirtualLab -Platform VMWare    IdOnHost    : 6b2686ae-9e1b-4c6e-b6fb-842d7155a9ec  Server      : Veeam.Backup.Core.Common.CHost  Platform    : VMWare  Id          : 8762b1ea-3422-4f84-8472-e596d7c8265e  Name        : Exchange Virtual Lab  Description : Created by Powershell at 2/20/2020 5:56 AM. | |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

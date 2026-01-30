@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrinstantrecovery.html"
 last_updated: "12/10/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRInstantRecovery
 
-In this article
 
 Short Description
 
@@ -99,6 +100,4 @@ Related Commands
 * [Find-VBRViFolder](find-vbrvifolder.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 12/10/2024
 
-Page content applies to build 13.0.1.1071

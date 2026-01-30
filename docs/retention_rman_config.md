@@ -1,5 +1,7 @@
 ---
 title: "Configuring Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_rman_config.html"
 last_updated: "12/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Retention Policy
 
-In this article
 
 If you want to edit a retention policy for Oracle RMAN backups, you must connect to the target database in RMAN console and configure one of the following retention policies:
 
@@ -46,6 +47,4 @@ To disable retention policy for RMAN backups, run the following command:
 
 For details, see [this Oracle article](https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmconfb.htm#BRADV8400).
 
-Page updated 12/19/2024
 
-Page content applies to build 13.0.1.1071

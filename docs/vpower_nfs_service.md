@@ -1,5 +1,7 @@
 ---
 title: "Veeam vPower NFS Service"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vpower_nfs_service.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam vPower NFS Service
 
-In this article
 
 The vPower technology enables the following features in the VMware vSphere environment:
 
@@ -53,6 +54,4 @@ To establish a connection between the ESXi host and vPower NFS server, you must 
 
 When connecting to the vPower NFS server, the ESXi host uses a VMkernel interface. For this reason, the ESXi host must have a VMkernel interface. Otherwise, Veeam Backup & Replication will fail to mount the vPower NFS datastore on the ESXi host.
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

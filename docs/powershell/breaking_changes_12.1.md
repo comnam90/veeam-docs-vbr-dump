@@ -1,5 +1,7 @@
 ---
 title: "Breaking Changes"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/breaking_changes_12.1.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Breaking Changes
 
-In this article
 
 This section contains information on breaking changes in Veeam PowerShell v12.1. These changes cause Veeam PowerShell v12.1 to function differently and could affect the code.
 
@@ -48,6 +49,4 @@ In this version, the type for the Job parameter is changed from the VBRSureBacku
 * [Stop-VBRSureBackupJob](stop-vbrsurebackupjob.md)
 * [Remove-VBRSureBackupJob](remove-vbrsurebackupjob.md)
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

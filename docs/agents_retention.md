@@ -1,5 +1,7 @@
 ---
 title: "Short-Term Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_retention.html"
 last_updated: "8/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Short-Term Retention Policy
 
-In this article
 
 Restore points in the backup chain are not kept forever. The short-term retention policy defines when a restore point is obsolete and must be removed from the backup chain so that backup files do not consume too much disk space.
 
@@ -46,6 +47,4 @@ If the backup chain contains several obsolete restore points, the rebuild proced
 
 ![Short-Term Retention Policy](images/endpoint_backup_chain_retention_several.webp "Retention Policy for Case with Several Obsolete Restore Points")
 
-Page updated 8/7/2025
 
-Page content applies to build 13.0.1.1071

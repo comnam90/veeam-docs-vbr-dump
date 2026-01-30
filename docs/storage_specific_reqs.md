@@ -1,5 +1,7 @@
 ---
 title: "Storage Specific Requirements and Limitations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_specific_reqs.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Specific Requirements and Limitations
 
-In this article
 
 This section lists requirements and limitations specific for storage systems:
 
@@ -18,6 +19,4 @@ This section lists requirements and limitations specific for storage systems:
 * [NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG](storage_limitations_netapp.md)
 * [Universal Storage API Integrated Systems](storage_prerequisites.md)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

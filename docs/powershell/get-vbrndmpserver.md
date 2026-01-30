@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRNDMPServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrndmpserver.html"
 last_updated: "2/2/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRNDMPServer
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Examples
 | --- | --- |
 | This command gets the 0fccf7c9-1f90-49de-8bec-53a0697e04ab NDMP server.  |  | | --- | | Get-VBRNDMPServer -ID "0fccf7c9-1f90-49de-8bec-53a0697e04ab" | |
 
-Page updated 2/2/2024
 
-Page content applies to build 13.0.1.1071

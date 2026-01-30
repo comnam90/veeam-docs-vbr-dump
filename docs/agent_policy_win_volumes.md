@@ -1,5 +1,7 @@
 ---
 title: "Specifying Volumes to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_volumes.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Volumes to Back Up
 
-In this article
 
 The Objects step of the wizard is available if you have selected the Volume level backup option at the [Backup Mode](agent_policy_win_mode.md) step of the wizard.
 
@@ -46,6 +47,4 @@ To include or exclude individual mount points:
 
 ![Specifying Volumes to Back Up](images/agent_policy_volumes.webp "Specify Volumes to Back Up")
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

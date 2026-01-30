@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Set Up Proxy Appliance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_proxy_vm.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Set Up Proxy Appliance
 
-In this article
 
 At the Proxy step of the wizard, configure proxy appliance settings.
 
@@ -30,6 +31,4 @@ At the Proxy step of the wizard, configure proxy appliance settings.
 
 ![Step 5. Set Up Proxy Appliance](images/vlab_proxy_appliance.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

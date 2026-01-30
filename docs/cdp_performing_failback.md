@@ -1,5 +1,7 @@
 ---
 title: "Performing Failback"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_performing_failback.html"
 last_updated: "6/23/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Failback
 
-In this article
 
 For more information on failback, see [Failover and Failback for CDP](cdp_failover_failback.md) and [Failback](cdp_failback.md).
 
@@ -26,6 +27,4 @@ To perform failback, use the Failback wizard.
 11. [Schedule switching to production](cdp_failback_schedule.md).
 12. [Finish working with the wizard](cdp_failback_summary.md).
 
-Page updated 6/23/2023
 
-Page content applies to build 13.0.1.1071

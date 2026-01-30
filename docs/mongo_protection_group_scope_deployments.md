@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Deployments"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_scope_deployments.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Deployments
 
-In this article
 
 At the Deployments step of the wizard, select the MongoDB replica sets that you want to add to the protection group.
 
@@ -52,6 +53,4 @@ If you want to use the TLS protocol to authenticate against the MongoDB replica 
 
 ![Step 3. Specify Deployments](images/mongo_protection_group_replicas_advanced.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

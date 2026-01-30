@@ -1,5 +1,7 @@
 ---
 title: "Pre-Freeze and Post-Thaw Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_post_scripts_hv.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Pre-Freeze and Post-Thaw Scripts
 
-In this article
 
 If you back up or replicate VMs running applications that do not support Microsoft VSS, you can instruct Veeam Backup & Replication to run custom scripts for VMs. For example, the pre-freeze script may quiesce the file system and application data on the VM guest OS to bring the VM to a consistent state before Veeam Backup & Replication triggers a VM checkpoint. After the checkpoint is created, the post-thaw script may bring the VM and applications to their initial state.
 
@@ -52,6 +53,4 @@ Related Topics
 * [Creating Backup Jobs](backup_job_hv.md)
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

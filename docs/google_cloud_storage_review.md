@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Review Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/google_cloud_storage_review.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Review Components
 
-In this article
 
 At the Review step of the wizard, review what components will be processed on the mount server server and their status.
 
@@ -17,6 +18,4 @@ If the backup repository contains guest file system index files, select the Impo
 
 ![Step 6. Review Components](images/google_cloud_review.webp)
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

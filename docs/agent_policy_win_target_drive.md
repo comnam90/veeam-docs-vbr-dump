@@ -1,5 +1,7 @@
 ---
 title: "Local Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_target_drive.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Local Storage Settings
 
-In this article
 
 At the Local Storage step of the wizard, specify local storage settings:
 
@@ -27,6 +28,4 @@ Click Advanced to specify advanced settings for the backup policy. To learn more
 
 ![Local Storage Settings](images/agent_job_local_storage.webp "Specjfy Local Storage Settings")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Storage Profiles"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_profile_restore.html"
 last_updated: "7/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Profiles
 
-In this article
 
 During backup, Veeam Backup & Replication preserves information about the storage policy associated with the VM, and stores this information to the backup file or replica metadata. When you restore the VM to its original location, Veeam Backup & Replication also restores information about the VM storage policy. The restored VM gets automatically associated with the original storage policy.
 
@@ -31,6 +32,4 @@ Related Topics
 * [Entire VM Restore](full_recovery.md)
 * [Failback](failback.md)
 
-Page updated 7/22/2024
 
-Page content applies to build 13.0.1.1071

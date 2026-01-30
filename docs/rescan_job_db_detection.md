@@ -1,5 +1,7 @@
 ---
 title: "Database Detection"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rescan_job_db_detection.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Detection
 
-In this article
 
 After Veeam Plug-In is installed, Plug-In Manager running on the computer collects information about databases on this computer. Plug-In Manager saves collected information to the XML file and sends to Veeam Backup & Replication. The way Plug-In Manager collects information differs depending on the system installed on the computer:
 
@@ -77,6 +78,4 @@ As a result, Veeam Backup & Replication gets the following database hierarchy (f
 
 * For servers in a SQL Server Failover Cluster or Always On Availability Group: cluster or group name, database name.
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

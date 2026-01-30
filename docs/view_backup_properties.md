@@ -1,5 +1,7 @@
 ---
 title: "Viewing Backup Properties"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/view_backup_properties.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Backup Properties
 
-In this article
 
 You can view summary information about created backups. The summary information provides the following data:
 
@@ -29,6 +30,4 @@ To view summary information for backups:
 
 [![Viewing Backup Properties](images/view_backup_properties.webp)](images/view_backup_properties.webp)
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Transport Modes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/transport_modes.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Transport Modes
 
-In this article
 
 A transport mode is a method that is used by the [Veeam Data Mover](veeam_transport_service.md) to retrieve VM data from the source and write VM data to the target. Job efficiency and time required for job completion greatly depend on the transport mode.
 
@@ -62,6 +63,4 @@ The transport mode limitations are defined by the backup proxy configuration. Th
 
 2 These backup infrastructure components may support additional transport modes and block protocols if configured manually using root access permissions.
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

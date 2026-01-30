@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify NDMP Server Name and Location"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ndmp_server_name.html"
 last_updated: "8/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify NDMP Server Name and Location
 
-In this article
 
 At the NDMP Server step of the wizard, enter the name of the NDMP server and connection details.
 
@@ -23,6 +24,4 @@ Veeam Backup & Replication will use the provided credentials to deploy its compo
 
 ![Step 2. Specify NDMP Server Name and Location](images/ndmp_server_name.webp)
 
-Page updated 8/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Configuring Plug-In"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_configure.html"
 last_updated: "12/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Configuring Plug-In
 
-In this article
 
 To configure Veeam Plug-In for IBM Db2, you can use DB2ConfigTool. The tool configures IBM Db2 settings and saves the settings to the Veeam Plug-In configuration file (veeam\_config.xml). The file is located in the /opt/veeam/VeeamPluginforDB2 directory on the machine where Veeam Plug-In is installed.
 
@@ -119,6 +120,4 @@ To learn more about DB2ConfigTool and configuration file:
 * [Configuration file](db2_configure_file.md)
 * [Configuration tool](db2_configure_commands.md)
 
-Page updated 12/4/2025
 
-Page content applies to build 13.0.1.1071

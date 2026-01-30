@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Backup Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_storage_hv.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Backup Storage Settings
 
-In this article
 
 At the Storage step of the wizard, select backup infrastructure components for the job — backup proxy and backup repository, and define backup storage settings.
 
@@ -58,6 +59,4 @@ Related Topics
 
 [Targeting Jobs to Another Repository](jobs_target_hv.md)
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

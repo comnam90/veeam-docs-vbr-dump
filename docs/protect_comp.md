@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html"
 last_updated: "7/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Backup
 
-In this article
 
 Veeam Backup & Replication allows you to protect computers running the following operating systems:
 
@@ -31,6 +32,4 @@ You can perform the following data protection and recovery operations with physi
 
 For all data protection and recovery operations, you can see real-time statistics and get reports by email.
 
-Page updated 7/3/2025
 
-Page content applies to build 13.0.1.1071

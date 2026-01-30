@@ -1,5 +1,7 @@
 ---
 title: "Restoring Multiple Mailboxes"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_vbr_restore_onprem_multiple.html"
 last_updated: "9/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Multiple Mailboxes
 
-In this article
 
 To restore multiple Exchange mailboxes, do the following:
 
@@ -18,6 +19,4 @@ To restore multiple Exchange mailboxes, do the following:
 5. [Select restore options](vex_vbr_restore_onprem_multiple_restore_options.md).
 6. [Review the operation summary](summary7.md).
 
-Page updated 9/20/2024
 
-Page content applies to build 13.0.1.1071

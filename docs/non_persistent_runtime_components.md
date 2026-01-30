@@ -1,5 +1,7 @@
 ---
 title: "Non-Persistent Runtime Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/non_persistent_runtime_components.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Non-Persistent Runtime Components
 
-In this article
 
 Non-persistent runtime components help to avoid agent-related drawbacks such as pre-installing, troubleshooting and updating. These components are deployed on every VM added to the job when the job starts. As soon as the job finishes, the components are removed. This method is used for guest processing by default.
 
@@ -53,6 +54,4 @@ Related Topics
 * [Creating Replication Jobs](replica_job.md)
 * [Copying VMs](copy_job.md)
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

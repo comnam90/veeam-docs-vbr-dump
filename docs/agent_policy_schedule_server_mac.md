@@ -1,5 +1,7 @@
 ---
 title: "Scheduling Settings for Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_schedule_server_mac.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Scheduling Settings for Servers
 
-In this article
 
 At the Schedule step of the wizard, specify the schedule according to which you want to perform backup.
 
@@ -31,6 +32,4 @@ To specify the job schedule:
 
 ![Scheduling Settings for Servers](images/agent_policy_schedule_server_mac.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

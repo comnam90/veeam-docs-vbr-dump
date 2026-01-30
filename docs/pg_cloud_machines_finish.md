@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_cloud_machines_finish.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, complete the protection group configuration process.
 
@@ -20,6 +21,4 @@ If you want to perform computer discovery later, you can clear the Run discovery
 
 ![Step 10. Finish Working with Wizard](images/pg_cloud_finish.webp "Finish Working with Wizard")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

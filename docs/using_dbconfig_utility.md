@@ -1,5 +1,7 @@
 ---
 title: "Using Veeam Configuration Database Connection Utility in Veeam Backup & Replication for Windows"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/using_dbconfig_utility.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Veeam Configuration Database Connection Utility in Veeam Backup & Replication for Windows
 
-In this article
 
 You can launch the configuration database connection utility the following ways:
 
@@ -24,6 +25,4 @@ To manage connection settings for Veeam Backup & Replication, check [prerequisit
 3. [Apply connection settings](dbconfig_apply.md).
 4. [Finish working with the wizard](dbconfig_summary.md).
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

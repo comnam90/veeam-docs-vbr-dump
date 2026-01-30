@@ -1,5 +1,7 @@
 ---
 title: "Proxy Affinity"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/proxy_affinity.html"
 last_updated: "9/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Proxy Affinity
 
-In this article
 
 |  |
 | --- |
@@ -67,6 +68,4 @@ Related Topics
 
 [Specifying Proxy Affinity Settings](proxy_affinity_settings.md)
 
-Page updated 9/15/2025
 
-Page content applies to build 13.0.1.1071

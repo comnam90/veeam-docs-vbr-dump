@@ -1,5 +1,7 @@
 ---
 title: "Ports (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ports.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ports (Storage Systems)
 
-In this article
 
 On backup infrastructure components, Veeam Backup & Replication automatically creates firewall rules for the required ports. These rules allow communication between the components. You can find the full list of the ports below.
 
@@ -29,15 +30,15 @@ Dell Unity XT, Unity Storage
 | --- | --- | --- | --- | --- |
 | Backup server | Dell Unity XT/Unity storage system | TCP | 443 | Default port used for communication with Dell Unity XT/Unity over HTTPS and sending REST API calls. |
 | Backup proxy | Dell Unity XT/Unity storage system | TCP | 3260 | Default iSCSI target port. |
-| TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
+| TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
 
 Dell PowerScale (Formerly Isilon) Storage
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
 | Backup server | Dell PowerScale storage system | TCP | 8080 | Default port used for communication with Dell PowerScale over HTTPS and sending REST API calls. |
-| Backup proxy | Dell PowerScale storage system | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
-| TCP | 445 | Standard SMB port. |
+| Backup proxy | Dell PowerScale storage system | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
+| TCP | 445 | Default SMB port. |
 
 HPE 3PAR StoreServ Storage
 
@@ -55,6 +56,7 @@ HPE Alletra Storage MP B10000, Alletra 9000, Primera Storage
 | Backup server | HPE Alletra Storage MP B10000/Alletra 9000/Primera storage system | TCP | 443 | Default port used for communication with HPE Alletra Storage MP B10000/Alletra 9000/Primera over HTTPS. |
 | TCP | 22 | Default command port used for communication with HPE Alletra Storage MP B10000/Alletra 9000/Primera over SSH. |
 | Backup proxy | HPE Alletra Storage MP B10000/Alletra 9000/Primera storage system | TCP | 3260 | Default iSCSI target port. |
+| HPE Alletra Storage MP B10000/Alletra 9000 | TCP | 4420, 8009 | Default NVMe-oF ports. |
 
 HPE Alletra 5000, Alletra 6000, Nimble Storage
 
@@ -69,8 +71,8 @@ Lenovo ThinkSystem DM/DG Series Storage
 | --- | --- | --- | --- | --- |
 | Backup server | Lenovo ThinkSystem DM/DG Series storage system | TCP | 80 | Default command port used for communication with Lenovo ThinkSystem DM/DG Series over HTTP. |
 | TCP | 443 | Default command port used for communication with Lenovo ThinkSystem DM/DG Series over HTTPS. |
-| Backup proxy | Lenovo ThinkSystem DM/DG Series storage system | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
-| TCP | 445 | Standard SMB port. |
+| Backup proxy | Lenovo ThinkSystem DM/DG Series storage system | TCP, UDP | 111, 2049, 635 | Default NFS ports. Port 111 is used by the port mapper service. |
+| TCP | 445 | Default SMB port. |
 | TCP | 3260 | Default iSCSI target port. |
 
 NetApp ONTAP Storage
@@ -79,8 +81,8 @@ NetApp ONTAP Storage
 | --- | --- | --- | --- | --- |
 | Backup server | NetApp ONTAP storage system | TCP | 80 | Default command port used for communication with NetApp ONTAP over HTTP. |
 | TCP | 443 | Default command port used for communication with NetApp ONTAP over HTTPS. |
-| Backup proxy | NetApp ONTAP storage system | TCP, UDP | 111, 2049, 635 | Standard NFS ports. Port 111 is used by the port mapper service. |
-| TCP | 445 | Standard SMB port. |
+| Backup proxy | NetApp ONTAP storage system | TCP, UDP | 111, 2049, 635 | Default NFS ports. Port 111 is used by the port mapper service. |
+| TCP | 445 | Default SMB port. |
 | TCP | 3260 | Default iSCSI target port. |
 
 Nutanix Files Storage
@@ -88,8 +90,8 @@ Nutanix Files Storage
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
 | Backup server | Nutanix Files storage system | TCP | 9440 | Default port used for communication with Nutanix Files and sending REST API calls. |
-| Backup proxy | Nutanix Files storage system | TCP, UDP | 111, 2049, 20048 | Standard NFS ports. Port 111 is used by the port mapper service. |
-| TCP | 445 | Standard SMB port. |
+| Backup proxy | Nutanix Files storage system | TCP, UDP | 111, 2049, 20048 | Default NFS ports. Port 111 is used by the port mapper service. |
+| TCP | 445 | Default SMB port. |
 
 Universal Storage API Integrated System
 
@@ -187,6 +189,7 @@ Pure Storage FlashArray
 | --- | --- | --- | --- | --- |
 | Backup server | Pure Storage FlashArray system | TCP | 443 | Default command port used for communication with Pure Storage FlashArray over HTTPS. |
 | Backup proxy | Pure Storage FlashArray system | TCP | 3260 | Default iSCSI target port. |
+| Pure Storage FlashArray system | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
 
 Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile)
 
@@ -194,8 +197,6 @@ Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile)
 | --- | --- | --- | --- | --- |
 | Backup server | Tintri IntelliFlash system | TCP | 443 | Default command port used for communication with Tintri IntelliFlash over HTTPS. |
 | Backup proxy | Tintri IntelliFlash system | TCP | 3260 | Default iSCSI target port. |
-| Tintri IntelliFlash system | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
+| Tintri IntelliFlash system | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "How WAN Acceleration Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_hiw.html"
 last_updated: "5/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How WAN Acceleration Works
 
-In this article
 
 When you create a job to the remote location, you can select to use WAN acceleration in its properties.
 
@@ -36,6 +37,4 @@ If WAN acceleration is performed in the High bandwidth mode, the procedure of da
 * Deduplication is performed only by using previous restore points for the processed VM on the target repository. Therefore, Veeam Backup & Replication performs less deduplication operations and saves resources and time for data processing.
 * The data chunk size used by the Changed Block Tracking mechanism during deduplication is smaller if compared with the Low bandwidth mode. This reduces the size of redundant data to transfer.
 
-Page updated 5/29/2024
 
-Page content applies to build 13.0.1.1071

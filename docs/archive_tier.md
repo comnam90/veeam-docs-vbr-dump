@@ -1,5 +1,7 @@
 ---
 title: "Archive Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archive_tier.html"
 last_updated: "11/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Archive Tier
 
-In this article
 
 Archive tier is an additional tier of storage that can be attached to a scale-out backup repository. You can transfer data to the archive tier directly from the performance tier or from the capacity tier. To transfer data to the archive tier, the [archiving job session](archiving_job.md) runs periodically. Archived data in the archive tier is cheaper than in the performance and capacity tier. However, restoring data from the archive tier is longer and more expensive compared to the capacity tier. Data must be prepared for restore from the archive tier.
 
@@ -62,6 +63,4 @@ In This Section
 * [Managing Archive Tier](managing_archive_tier.md)
 * [Restore from Archive Tier](restore_archive_tier.md)
 
-Page updated 11/21/2025
 
-Page content applies to build 13.0.1.1071

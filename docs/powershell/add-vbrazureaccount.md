@@ -1,5 +1,7 @@
 ---
 title: "Add-VBRAzureAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazureaccount.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Add-VBRAzureAccount
 
-In this article
 
 Short Description
 
@@ -88,6 +89,4 @@ Examples
 | --- | --- |
 | This command adds the Microsoft Azure Stack Hub compute account named Azure Stack Administrator. The account connects to the management.local.veeamstack.external virtual IP address of Azure Resource Manager.  |  | | --- | | Add-VBRAzureAccount -ResourceManagerEndpoint "management.local.azurestack.external" -Name "Azure Stack Administrator" | |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

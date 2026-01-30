@@ -1,5 +1,7 @@
 ---
 title: "Database Recovery"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_databases.html"
 last_updated: "8/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Database Recovery
 
-In this article
 
 With the configured Veeam Plug-In you can restore SAP HANA databases from the backups that reside in the Veeam backup repository.
 
@@ -26,6 +27,4 @@ To learn how to recover SAP HANA databases from backups stored in Veeam backup r
 * [Restore from Hardened Repository](restore_from_immutable_saphana.md)
 * [Restore with Veeam Explorer for SAP HANA](restore_vehana.md)
 
-Page updated 8/19/2024
 
-Page content applies to build 13.0.1.1071

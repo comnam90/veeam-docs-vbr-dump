@@ -1,5 +1,7 @@
 ---
 title: "Decrypting Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/decrypt_with_pass.html"
 last_updated: "7/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Decrypting Backups
 
-In this article
 
 If you encrypt data encryption keys with KMS keys, for more information about decrypting data, see [Using KMS Keys](kms_use_keys.md).
 
@@ -34,6 +35,4 @@ Consider the following:
 
 * If you have lost or forgotten a password, you can issue a request to Veeam Backup Enterprise Manager and restore data from an encrypted file using Enterprise Manager keys. This option works only if the password loss protection is enabled. For more information, see [Password Loss Protection](encryption_password_loss_protection.md).
 
-Page updated 7/22/2025
 
-Page content applies to build 13.0.1.1071

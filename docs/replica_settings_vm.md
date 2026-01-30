@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Specify Replication Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_settings_vm.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Specify Replication Job Settings
 
-In this article
 
 At the Job Settings step of the wizard, specify a backup repository for storing replica metadata, replica name and number of restore points to keep:
 
@@ -27,6 +28,4 @@ Related Topics
 
 [Backup Infrastructure for Replication](replication_components.md#repo_vm)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

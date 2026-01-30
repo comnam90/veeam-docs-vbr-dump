@@ -1,5 +1,7 @@
 ---
 title: "Oracle RMAN Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_backup.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Oracle RMAN Full Backup
 
-In this article
 
 After you configure Veeam Plug-In, you can use the Oracle RMAN functionality to back up databases. Veeam Plug-In will automatically transfer the backup files to the Veeam backup repository. For more information about configuring Veeam Plug-In, see [Configuring Veeam Plug-In for Oracle RMAN](configuring_rman_plugin.md).
 
@@ -34,6 +35,4 @@ To create a consistent backup of an Oracle database operating in the NOARCHIVELO
 | --- |
 | RUN {  SHUTDOWN TRANSACTIONAL;  STARTUP MOUNT;  BACKUP DATABASE;  STARTUP;  }  EXIT; |
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

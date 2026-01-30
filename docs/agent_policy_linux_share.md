@@ -1,5 +1,7 @@
 ---
 title: "Shared Folder Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_linux_share.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Shared Folder Settings
 
-In this article
 
 At the Shared Folder step of the wizard, specify shared folder settings:
 
@@ -37,6 +38,4 @@ Keep in mind that to use the GFS retention policy, you must set Veeam Agent to c
 
 ![Shared Folder Settings](images/agent_policy_share_linux.webp)
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071

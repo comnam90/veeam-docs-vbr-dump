@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRLinuxTrustedHostPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrlinuxtrustedhostpolicy_agent.html"
 last_updated: "9/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRLinuxTrustedHostPolicy
 
-In this article
 
 Short Description
 
@@ -57,6 +58,4 @@ This command instructs Veeam Backup & Replication to establish connections on
 | --- |
 | C:\Users\Administrator> Set-VBRLinuxTrustedHostPolicy -Type KnownHosts -PassThru |
 
-Page updated 9/3/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Exporting Databases"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_export_databases.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Databases
 
-In this article
 
 To export one or multiple databases, use the Export wizard.
 
@@ -19,6 +20,4 @@ To export one or multiple databases, use the Export wizard.
 1. [Specify target host credentials](vep_export_specify_target_host_credentials.md).
 2. [Specify export location](vep_export_specify_export_location.md).
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

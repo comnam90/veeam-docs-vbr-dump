@@ -1,5 +1,7 @@
 ---
 title: "Retrieving Archived Snapshots"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_archived.html"
 last_updated: "10/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retrieving Archived Snapshots
 
-In this article
 
 Snapshot archiving allows jobs to manage the offload of long-term snapshots to a 3rd party storage solution supported by a storage vendor (for example, Amazon S3 storage or NFS target). Snapshot archiving is helpful when you need to save rarely accessed data. For information on which storage systems support snapshot archiving, see [Supported Storage Features for Backup and Orchestration](supported_features.md). To archive (offload) snapshots, create a snapshot-only job or a backup from storage snapshot job with the archiving feature enabled. For more information, see [Configuring Backup from Snapshots on Secondary Storage Arrays](storage_secondary_backup_perform.md#archive) or [Configuring Snapshot-Only Jobs](snapshot_only_job_perform.md#archive). Archived snapshots are shown under the ![Retrieving Archived Snapshots](images/icon_snapshot_archived.webp "Retrieve snaphot icon") icon.
 
@@ -31,6 +32,4 @@ After the retrieval finishes, Veeam Backup & Replication will show the retrieved
 
 [![Retrieve data from archived snapshot](images/storage_retrieve.webp)](images/storage_retrieve.webp "Retrieve data from archived snapshot")
 
-Page updated 10/30/2025
 
-Page content applies to build 13.0.1.1071

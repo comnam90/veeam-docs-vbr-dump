@@ -1,5 +1,7 @@
 ---
 title: "Advanced Single-Host Virtual Labs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_advanced_vlab.html"
 last_updated: "8/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Advanced Single-Host Virtual Labs
 
-In this article
 
 The advanced single-host virtual lab configuration can be used if your virtual environment is configured in the following way:
 
@@ -33,6 +34,4 @@ When you create an advanced single-host virtual lab, Veeam Backup & Replication 
 
 ![Advanced Single-Host Virtual Labs](images/surereplica_advanced_single_host.webp)
 
-Page updated 8/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Secure Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/av_scan_about.html"
 last_updated: "7/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Secure Restore
 
-In this article
 
 Secure restore allows you to check restore points for malware activity before restoring the machine to the production environment. To scan restore points, Veeam Backup & Replication uses the following engines:
 
@@ -41,6 +42,4 @@ In This Section
 * [Antivirus Scan for Secure Restore](secure_restore_antivirus.md)
 * [YARA Scan for Secure Restore](secure_restore_yara.md)
 
-Page updated 7/25/2025
 
-Page content applies to build 13.0.1.1071

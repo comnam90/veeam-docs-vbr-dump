@@ -1,5 +1,7 @@
 ---
 title: "Starting and Stopping Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_start_stop.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Starting and Stopping Backup
 
-In this article
 
 You can manually start backup on Veeam Agent computers added to the backup policy, for example, if you want to create an additional restore point in the backup chain and do not want to change the backup schedule. You can also stop the backup process, for example, if processing of a Veeam Agent computer is about to take long, and you do not want the backup process to produce load on the production environment during business hours.
 
@@ -44,6 +45,4 @@ To stop backup on Veeam Agent computers added to the backup policy:
 
 [![Stop Backup Policy](images/agent_policy_stop.webp)](images/agent_policy_stop.webp "Stop Backup Policy")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup to Deduplicating Storage Appliances"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_deduplicating_storage.html"
 last_updated: "8/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup to Deduplicating Storage Appliances
 
-In this article
 
 You can store backups in the deduplicating storage appliances added as backup repositories. To learn the full lists of supported appliances and their requirements and limitations, see [Deduplicating Storage Appliances](deduplicating_storage_appliances.md).
 
@@ -47,6 +48,4 @@ If the value of at least one of these periods lies outside the established range
 
 To learn more about immutability for the Dell Data Domain backup repositories, see [Retention Lock](dell_dd_supported_features.md).
 
-Page updated 8/5/2025
 
-Page content applies to build 13.0.1.1071

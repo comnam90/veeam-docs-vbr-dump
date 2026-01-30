@@ -1,5 +1,7 @@
 ---
 title: "VBREntraIDTenantItemIncludedProperty"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrentraidtenantitemincludedproperty.html"
 last_updated: "1/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBREntraIDTenantItemIncludedProperty
 
-In this article
 
 Contains item properties or references that you plan to restore.
 
@@ -22,6 +23,4 @@ Related Topics
 
 [New-VBREntraIDTenantItemIncludedProperty](new-vbrentraidtenantitemincludedproperty.md)
 
-Page updated 1/28/2025
 
-Page content applies to build 13.0.1.1071

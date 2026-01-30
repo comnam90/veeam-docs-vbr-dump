@@ -1,5 +1,7 @@
 ---
 title: "Preparing Database"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_prepare.html"
 last_updated: "11/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Preparing Database
 
-In this article
 
 Before you create a backup of the database, make sure that the database is configured properly. You must re-configure the database if you plan to perform the following operations:
 
@@ -57,6 +58,4 @@ Alternatively, you can set IBM Db2 to use hardware-accelerated compression. To d
 
 where <database\_name> is a name of the database you want to back up.
 
-Page updated 11/25/2025
 
-Page content applies to build 13.0.1.1071

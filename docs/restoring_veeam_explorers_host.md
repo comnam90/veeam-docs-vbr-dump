@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select ESXi Host for Snapshot Mounting"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_host.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select ESXi Host for Snapshot Mounting
 
-In this article
 
 This step is available only if you restore application items from a storage snapshot.
 
@@ -23,6 +24,4 @@ To specify a destination for the snapshot clone or virtual copy and temporary VM
 
 ![Step 4. Select ESXi Host for Snapshot Mounting](images/application_item_restore_ad_location.webp)
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Removing Performance Extents from Scale-Out Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_remove_extent.html"
 last_updated: "7/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removing Performance Extents from Scale-Out Repositories
 
-In this article
 
 You can remove a performance extent from the scale-out backup repository, for example, if you do not want to store backup files on the underlying storage anymore. When you remove a performance extent, Veeam Backup & Replication puts the relevant backup repository to the Maintenance mode and unassigns the performance extent role from it. The backup repository ceases to exist as a part of the scale-out backup repository and becomes an individual backup repository.
 
@@ -32,6 +33,4 @@ If you do not want to evacuate the backup files, click Yes and proceed with the 
 
 ![Removing Performance Extents from Scale-Out Repositories](images/performance_remove_extent.webp)
 
-Page updated 7/22/2024
 
-Page content applies to build 13.0.1.1071

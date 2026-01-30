@@ -1,5 +1,7 @@
 ---
 title: "Backup for VMware Cloud Director"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_backup.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup for VMware Cloud Director
 
-In this article
 
 Veeam Backup & Replication allows you to create backups of the following instances:
 
@@ -35,6 +36,4 @@ Related Topics
 * [Creating Backup Jobs for Cloud Director VMs](vcloud_director_perform_backup.md)
 * [Data Recovery for VMware Cloud Director](vcloud_director_vm_restore.md)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

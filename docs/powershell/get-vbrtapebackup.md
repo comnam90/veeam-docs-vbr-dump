@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRTapeBackup (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapebackup.html"
 last_updated: "2/28/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRTapeBackup (obsolete)
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Examples
 | --- | --- |
 | This command looks for backups named VM01 and VM05.  |  | | --- | | Get-VBRTapeBackup -Name "VM01", "VM05" | |
 
-Page updated 2/28/2024
 
-Page content applies to build 13.0.1.1071

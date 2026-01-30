@@ -1,5 +1,7 @@
 ---
 title: "Specifying Existing Entra ID Application"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_acc_account_existing.html"
 last_updated: "10/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Specifying Existing Entra ID Application
 
-In this article
 
 This step applies only if you have selected the Use the existing account option at the [Account Type](restore_azure_acc_account.md) step of the wizard.
 
@@ -27,6 +28,4 @@ If you plan to restore Linux-based workloads, select the Enable direct restore o
 
 ![Use New Azure AD Application_2](images/azure_config_subscription_existing.webp "Azure Compute - Existing application")
 
-Page updated 10/21/2024
 
-Page content applies to build 13.0.1.1071

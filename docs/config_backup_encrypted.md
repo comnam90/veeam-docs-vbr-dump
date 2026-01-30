@@ -1,5 +1,7 @@
 ---
 title: "Creating Encrypted Configuration Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/config_backup_encrypted.html"
 last_updated: "12/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Encrypted Configuration Backups
 
-In this article
 
 You must encrypt configuration backups in the following cases:
 
@@ -58,6 +59,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 ![Creating Encrypted Configuration Backups](images/schedule_config_backup.webp)
 
-Page updated 12/29/2025
 
-Page content applies to build 13.0.1.1071

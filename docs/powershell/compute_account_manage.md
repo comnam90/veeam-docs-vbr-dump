@@ -1,5 +1,7 @@
 ---
 title: "Managing Azure Compute Account"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/compute_account_manage.html"
 last_updated: "11/9/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Azure Compute Account
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -18,6 +19,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Set-VBRAzureAccount](set-vbrazureaccount.md) | Edits Microsoft Azure accounts added to the Veeam Backup & Replication console. |
 | [Remove-VBRAzureAccount](remove-vbrazureaccount.md) | Removes Microsoft Azure accounts from the Veeam Backup & Replication console. |
 
-Page updated 11/9/2023
 
-Page content applies to build 13.0.1.1071

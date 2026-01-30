@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRvCDCloudTenant"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvcdcloudtenant.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRvCDCloudTenant
 
-In this article
 
 Short Description
 
@@ -99,6 +100,4 @@ Related Commands
 * [Get-VBRCloudGatewayPool](get-vbrcloudgatewaypool.md)
 * [New-VBRvCDReplicationResource](new-vbrvcdreplicationresource.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

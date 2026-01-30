@@ -1,5 +1,7 @@
 ---
 title: "About Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview.html"
 last_updated: "12/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # About Veeam Backup & Replication
 
-In this article
 
 Veeam Backup & Replication is a comprehensive data protection and disaster recovery solution. With Veeam Backup & Replication, you can create image-level backups of virtual, physical and cloud machines and restore from them. Technology used in the product optimizes data transfer and resource consumption, which helps to minimize storage costs and the recovery time in case of a disaster.
 
@@ -114,6 +115,4 @@ If you are a service provider, you can use [Veeam Service Provider Console](http
 
 You can also use Veeam Backup & Replication to offer cloud repository as a service and disaster recovery as a service. For details, see [Veeam Cloud Connect](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html?ver=13).
 
-Page updated 12/30/2025
 
-Page content applies to build 13.0.1.1071

@@ -18,7 +18,7 @@ Applies to
 
 Veeam Backup for Microsoft 365
 
-Product Edition: Rental License, Subscription License
+Product Edition: Community, Rental License, Subscription License
 
 Syntax
 

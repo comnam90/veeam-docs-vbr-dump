@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Media Pool Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/launch_media_pool_wizard.html"
 last_updated: "6/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Media Pool Wizard
 
-In this article
 
 To run the New Media Pool wizard:
 
@@ -21,6 +22,4 @@ To run the New Media Pool wizard:
 
 [![Step 1. Launch New Media Pool Wizard](images/add_media_pool_launch.webp)](images/add_media_pool_launch.webp)
 
-Page updated 6/14/2024
 
-Page content applies to build 13.0.1.1071

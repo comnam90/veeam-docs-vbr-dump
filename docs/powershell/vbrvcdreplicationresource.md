@@ -1,5 +1,7 @@
 ---
 title: "VBRvCDReplicationResource"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrvcdreplicationresource.html"
 last_updated: "4/24/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRvCDReplicationResource
 
-In this article
 
 Contains Cloud Director replication resources.
 
@@ -19,6 +20,4 @@ Properties
 | TenantNetworkAppliance | [VBRCloudTenantNetworkAppliance](vbrcloudtenantnetworkappliance.md)[] | Tenant network helper appliances. |
 | OrganizationvDCOptions | [VBROrganizationvDCOption](vbrorganizationvdcoption.md)[] | Replication resources. |
 
-Page updated 4/24/2024
 
-Page content applies to build 13.0.1.1071

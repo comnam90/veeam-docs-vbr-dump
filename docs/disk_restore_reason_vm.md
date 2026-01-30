@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Restore Reason"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_restore_reason_vm.html"
 last_updated: "11/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Restore Reason
 
-In this article
 
 At the Reason step of the wizard, enter a reason for restoring VM disks. The information you provide will be saved in the session history and you can reference it later.
 
@@ -18,6 +19,4 @@ At the Reason step of the wizard, enter a reason for restoring VM disks. The inf
 
 ![Step 6. Specify Restore Reason](images/hard_disk_restore_reason.webp)
 
-Page updated 11/22/2023
 
-Page content applies to build 13.0.1.1071

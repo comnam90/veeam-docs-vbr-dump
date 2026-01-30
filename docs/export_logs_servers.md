@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Virtual Infrastructure Scope"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/export_logs_servers.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Virtual Infrastructure Scope
 
-In this article
 
 At the Scope step of the wizard, define the scope for logs export. You can export logs for the following objects:
 
@@ -29,6 +30,4 @@ Select Collect local PostgreSQL instance logs to include PostgreSQL instance log
 
 ![Step 2. Select Virtual Infrastructure Scope](images/exporting_logs_servers.webp)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

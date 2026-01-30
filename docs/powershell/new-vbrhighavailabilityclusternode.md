@@ -1,5 +1,7 @@
 ---
 title: "New-VBRHighAvailabilityClusterNode"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhighavailabilityclusternode.html"
 last_updated: "10/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRHighAvailabilityClusterNode
 
-In this article
 
 Short Description
 
@@ -53,6 +54,4 @@ This command defines the settings of the secondary node for the HA cluster. Save
 | --- |
 | $secondary = New-VBRHighAvailabilityClusterNode -HostName "203.0.113.24" |
 
-Page updated 10/20/2025
 
-Page content applies to build 13.0.1.1071

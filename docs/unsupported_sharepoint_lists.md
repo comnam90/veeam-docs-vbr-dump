@@ -1,5 +1,7 @@
 ---
 title: "Unsupported SharePoint Lists"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unsupported_sharepoint_lists.html"
 last_updated: "6/7/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unsupported SharePoint Lists
 
-In this article
 
 The following table contains all unsupported Microsoft SharePoint lists. Veeam Explorer for Microsoft SharePoint does not restore data from these lists.
 
@@ -81,6 +82,4 @@ Because Veeam Explorer for Microsoft SharePoint that is distributed as a part of
 
 1For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-wssts/8bf797af-288c-4a1d-a14b-cf5394e636cf).
 
-Page updated 6/7/2024
 
-Page content applies to build 13.0.1.1071

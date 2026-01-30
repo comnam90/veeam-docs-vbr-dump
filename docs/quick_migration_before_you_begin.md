@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_before_you_begin.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you perform Quick Migration, check the following prerequisites and limitations:
 
@@ -36,6 +37,4 @@ For more information, see [Instant Recovery to VMware vSphere](instant_recovery.
 | Note |
 | Virtual appliance (HotAdd) transport mode cannot be used if the role of the backup proxy and mount server or backup repository where the backup file is stored are assigned to the same VM. |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

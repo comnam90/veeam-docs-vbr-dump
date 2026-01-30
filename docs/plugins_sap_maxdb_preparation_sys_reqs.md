@@ -1,5 +1,7 @@
 ---
 title: "System Requirements"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_preparation_sys_reqs.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # System Requirements
 
-In this article
 
 Before you start using Veeam Plug-In for SAP MaxDB, make sure the following requirements are met.
 
@@ -18,6 +19,4 @@ Before you start using Veeam Plug-In for SAP MaxDB, make sure the following requ
 | Veeam Backup & Replication | Veeam Backup & Replication 13 supports management of Veeam Plug-In for SAP MaxDB 13. |
 | Network | Veeam Plug-In should be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway. |
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

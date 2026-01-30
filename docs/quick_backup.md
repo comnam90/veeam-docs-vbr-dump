@@ -1,5 +1,7 @@
 ---
 title: "Quick Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_backup.html"
 last_updated: "9/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Quick Backup
 
-In this article
 
 Quick backup lets you perform on-demand incremental backup for VMs. You can use quick backup if you want to produce an additional restore point for one or more VMs in a backup job and do not want to configure a new job or modify the existing one. Quick backup can be run for both incremental backup chains and reverse incremental backup chains (deprecated).
 
@@ -42,6 +43,4 @@ Related Topics
 * [Retention Policy for Quick Backups](quick_backup_retention.md)
 * [Performing Quick Backup](performing_quick_backup.md)
 
-Page updated 9/17/2025
 
-Page content applies to build 13.0.1.1071

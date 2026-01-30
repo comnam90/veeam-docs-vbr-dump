@@ -1,5 +1,7 @@
 ---
 title: "Uninstalling Veeam Agent"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_uninstall.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Uninstalling Veeam Agent
 
-In this article
 
 You can remove Veeam Agent from a specific protected computer, for example, if you want to reinstall Veeam Agent running on the protected computer.
 
@@ -32,6 +33,4 @@ To uninstall Veeam Agent:
 
 [![Uninstall Veeam Agent](images/protected_computer_remove.webp)](images/protected_computer_remove.webp "Uninstall Veeam Agent")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

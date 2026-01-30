@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Define VM Backup Order"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_order_vm.html"
 last_updated: "2/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Define VM Backup Order
 
-In this article
 
 You can define the order in which the backup job must process VMs. Setting VM order can be helpful, for example, if you add some mission-critical VMs to the job and want the job to process them first. You can set these VMs first in the list to ensure their processing fits the backup window.
 
@@ -25,6 +26,4 @@ To define the VM backup order:
 
 ![Step 5. Define VM Backup Order](images/vm_backup_job_order.webp)
 
-Page updated 2/10/2025
 
-Page content applies to build 13.0.1.1071

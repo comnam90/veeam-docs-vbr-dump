@@ -1,5 +1,7 @@
 ---
 title: "Creating Configuration Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/export_vbr_config.html"
 last_updated: "11/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Configuration Backups
 
-In this article
 
 By default, Veeam Backup & Replication creates a configuration backup daily. You can change the schedule or create a configuration backup manually. You can choose the backup repository in which the configuration backup must be stored, specify the necessary retention settings. Veeam Backup & Replication allows you to create immutable configuration backups.
 
@@ -48,6 +49,4 @@ When you configure a new backup repository, Veeam Backup & Replication offers yo
 
 Configuration backups that were created before the target change will remain in the default backup repository. You can manually copy them to the new backup repository to have all restore points of the configuration backup in one place.
 
-Page updated 11/9/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Running Configuration Backups Manually"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_manually.html"
 last_updated: "5/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Running Configuration Backups Manually
 
-In this article
 
 You can create a configuration backup manually when you need it, for example, if you want to capture a state of the configuration database at a specific point in time.
 
@@ -29,6 +30,4 @@ Veeam Backup & Replication will back up the configuration database and store a n
 
 ![Running Configuration Backups Manually](images/schedule_config_backup.webp)
 
-Page updated 5/21/2025
 
-Page content applies to build 13.0.1.1071

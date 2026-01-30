@@ -1,5 +1,7 @@
 ---
 title: "Recovery Verification for Veeam Agent Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_recovery_verification.html"
 last_updated: "5/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Recovery Verification for Veeam Agent Backups
 
-In this article
 
 Veeam Backup & Replication offers the SureBackup technology to test backups and check if you can recover data from them. You can verify any restore point of a backed-up computer protected with Veeam Agent for Microsoft Windows and Veeam Agent for Linux.
 
@@ -69,6 +70,4 @@ For backups created with Veeam Agent for Linux, SureBackup has the following lim
 
 ![Recovery Verification for Veeam Agent Backups](images/agents_surebackup.webp "Launch SureBackup Wizard")
 
-Page updated 5/23/2025
 
-Page content applies to build 13.0.1.1071

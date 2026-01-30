@@ -1,5 +1,7 @@
 ---
 title: "Restore to Original Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_restore_db.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore to Original Server
 
-In this article
 
 To restore SAP MaxDB database to the original server, you can perform the following operations using Database Manager CLI:
 
@@ -159,6 +160,4 @@ For example:
 | --- |
 | recover\_start VEEAMDATA DATA DAT\_000000001 EBID "MAXDB1 A1F7FEDCA7700BE0 /tmp/MAXDB1/compipe1,MAXDB1 6BDD1FAA716643CE /tmp/MAXDB1/compipe2,MAXDB1 7426C47F91789FCF /tmp/MAXDB1/compipe3,MAXDB1 F30423029579B4CF /tmp/MAXDB1/compipe4" |
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

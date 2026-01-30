@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failover_summary.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, review details of the failover task and click Finish to exit the wizard.
 
@@ -23,6 +24,4 @@ Failover is an intermediate step that needs to be finalized. You can finalize fa
 
 ![Step 5. Finish Working with Wizard](images/cdp_failover_summary.webp "Finish working with wizard")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

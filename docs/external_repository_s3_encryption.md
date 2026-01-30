@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Configure Encryption"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository_s3_encryption.html"
 last_updated: "10/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Configure Encryption
 
-In this article
 
 At the Encryption step of the wizard, provide a key for decryption:
 
@@ -28,6 +29,4 @@ For more information on how backups are encrypted, see the [S3 Repository Encryp
 
 [![Specify Cloud Storage Details](images/new_external_repo_encrypt.webp)](images/new_external_repo_encrypt.webp "Specify Cloud Storage Details")
 
-Page updated 10/1/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Exploring RMAN Plug-in Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_exploring_rman.html"
 last_updated: "11/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exploring RMAN Plug-in Backups
 
-In this article
 
 This section explains how to explore backups created with Veeam Plug-In for Oracle RMAN. For more information, see [Veeam Plug-In for Oracle RMAN](rman_plugin.md).
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Restoring from RMAN Plug-in Backups](rman_backups.md)
 
-Page updated 11/3/2025
 
-Page content applies to build 13.0.1.1071

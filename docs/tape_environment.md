@@ -1,5 +1,7 @@
 ---
 title: "Tape Environment"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_environment.html"
 last_updated: "9/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Tape Environment
 
-In this article
 
 To administer tape backup and restore procedures, you must add the tape server to your Veeam Backup & Replication console. Adding the tape server to the backup infrastructure makes possible to transfer data between the disk storage and the tape archive.
 
@@ -52,6 +53,4 @@ Backup Repositories and File Servers
 
 When retrieving data to back up, or restoring data to disk, Veeam Backup & Replication can connect to any machine that has been added as a managed server to the Veeam Backup & Replication console.
 
-Page updated 9/12/2025
 
-Page content applies to build 13.0.1.1071

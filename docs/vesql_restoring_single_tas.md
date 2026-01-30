@@ -1,5 +1,7 @@
 ---
 title: "Restoring to Another Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_single_tas.html"
 last_updated: "11/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring to Another Server
 
-In this article
 
 To restore a single Microsoft SQL Server database to another server, use the Restore wizard.
 
@@ -20,6 +21,4 @@ To restore a single Microsoft SQL Server database to another server, use the Res
 7. [Specify the recovery state](vesql_recovery_state_single.md).
 8. [Review the restore summary](vesql_restore_single_tas_summary.md).
 
-Page updated 11/12/2025
 
-Page content applies to build 13.0.1.1071

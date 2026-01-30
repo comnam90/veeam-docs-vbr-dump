@@ -1,5 +1,7 @@
 ---
 title: "How Replica from Backup Works"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_from_backup_hiw.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # How Replica from Backup Works
 
-In this article
 
 Replica from backup is performed along with a regular replication job. When you set up a replication job, you define a backup repository with VM backups as a source of data. If the backups for this VM are available in different backup repositories, you can [select several backup repositories as a source](replica_data_source_vm.md). In this case, Veeam Backup & Replication will look for the latest VM restore point across these backup repositories.
 
@@ -34,6 +35,4 @@ In some cases, Veeam Backup & Replication can resume the replication process if 
 | Note |
 | When you replicate a VM over a production network, Veeam Backup & Replication retrieves VM data as of the latest VM state. When you replicate a VM from backup, Veeam Backup & Replication retrieves VM data as of the point in time when the backup was created. The VM replica restore point has the same timestamp as a VM backup restore point, not the time when the replica job session is run. |
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

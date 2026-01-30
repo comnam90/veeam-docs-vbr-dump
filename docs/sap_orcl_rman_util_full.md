@@ -1,5 +1,7 @@
 ---
 title: "Full Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_rman_util_full.html"
 last_updated: "12/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Full Backup
 
-In this article
 
 To back up an SAP on Oracle database using RMAN, you must use the brbackup tool with the rman\_util parameter and with the defined directory for SBT library.
 
@@ -23,6 +24,4 @@ To back up an SAP on Oracle database using RMAN, you must use the brbackup tool 
 
 For the fill list of BRBACKUP parameters, see the [Command Options for BRBACKUP](https://help.sap.com/docs/SAP_NETWEAVER_DBOS/3ef1b95cacbf4f77a066797285371bb9/46e7e24fdcba3c1de10000000a155369.html) section in the SAP Database Guide: Oracle.
 
-Page updated 12/17/2024
 
-Page content applies to build 13.0.1.1071

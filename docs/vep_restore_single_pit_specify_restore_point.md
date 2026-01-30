@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_single_pit_specify_restore_point.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Specify Restore Point
 
-In this article
 
 At this step of the wizard, select a state as of which you want to restore your data.
 
@@ -24,6 +25,4 @@ Note that if the backed-up WAL files do not contain information about some insta
 
 [![Specifying Restore Point](images/vep_point_in_time_specify_restore_point.webp)](images/vep_point_in_time_specify_restore_point.webp "Specifying Restore Point")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_sobr_data.html"
 last_updated: "7/26/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Scale-Out Backup Repositories
 
-In this article
 
 You can manage your scale-out backup repositories and the data there in various ways: edit settings of the scale-out backup repository, rescan scale-out backup repositories automatically or manually, discover on which performance extent of the scale-out backup repository a particular backup file is stored, extend scale-out backup repository or remove certain performance extents from it, perform service actions or remove the scale-out backup repository.
 
@@ -25,6 +26,4 @@ In This Section
 * [Rebalancing Extents of Scale-Out Backup Repositories](sobr_rebalance.md)
 * [Removing Scale-Out Backup Repositories](sobr_remove.md)
 
-Page updated 7/26/2024
 
-Page content applies to build 13.0.1.1071

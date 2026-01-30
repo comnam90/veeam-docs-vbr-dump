@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRBackupServerInfo"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrbackupserverinfo.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRBackupServerInfo
 
-In this article
 
 Short Description
 
@@ -49,6 +50,4 @@ This command returns the IP address, current build version and patch details of 
 | --- |
 | Get-VBRBackupServerInfo |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

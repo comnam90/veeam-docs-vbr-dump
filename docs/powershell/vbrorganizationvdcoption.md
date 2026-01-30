@@ -1,5 +1,7 @@
 ---
 title: "VBROrganizationvDCOption"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrorganizationvdcoption.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBROrganizationvDCOption
 
-In this article
 
 Contains replication resources.
 
@@ -25,6 +26,4 @@ Properties
 | UsedMemory | Int64 | Amount of storage allocated to the tenant. |
 | StoragePolicyQuotas | [VBRCloudvCDStoragePolicyQuota](vbrcloudvcdstoragepolicyquota.md)[] | Datastore quota allocated to the tenant. |
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

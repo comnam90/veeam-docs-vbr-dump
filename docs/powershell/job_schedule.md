@@ -1,5 +1,7 @@
 ---
 title: "Job Schedule"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/job_schedule.html"
 last_updated: "12/18/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Job Schedule
 
-In this article
 
 Create job schedule.
 
@@ -23,6 +24,4 @@ Create job schedule.
 | [Set-VBRBackupWindowOptions](set-vbrbackupwindowoptions.md) | Modifies backup window |
 | [Set-VBRJobSchedule](set-vbrjobschedule.md) | Creates schedule for a selected job |
 
-Page updated 12/18/2023
 
-Page content applies to build 13.0.1.1071

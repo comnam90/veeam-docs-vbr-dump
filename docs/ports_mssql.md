@@ -1,5 +1,7 @@
 ---
 title: "Ports"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ports_mssql.html"
 last_updated: "1/2/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Ports
 
-In this article
 
 To enable proper operation of Veeam Plug-In for Microsoft SQL Server, make sure that the following ports are open.
 
@@ -51,6 +52,4 @@ Depending on the type of backup repositories that you use for Veeam Plug-In back
 
 For a detailed list of ports used by Veeam Backup & Replication server and backup repositories, see [Used Ports](used_ports.md).
 
-Page updated 1/2/2026
 
-Page content applies to build 13.0.1.1071

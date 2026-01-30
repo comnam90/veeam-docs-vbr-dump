@@ -1,5 +1,7 @@
 ---
 title: "Remove-VBRApplicationBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrapplicationbackupjob.html"
 last_updated: "7/11/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Remove-VBRApplicationBackupJob
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Related Commands
 
 [Get-VBRApplicationBackupJob](get-vbrapplicationbackupjob.md)
 
-Page updated 7/11/2024
 
-Page content applies to build 13.0.1.1071

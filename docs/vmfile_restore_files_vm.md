@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select VM Files and Destination"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmfile_restore_files_vm.html"
 last_updated: "12/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select VM Files and Destination
 
-In this article
 
 At the Destination step of the wizard, select VM files that you want to restore and destination where the restored files must be stored:
 
@@ -20,6 +21,4 @@ To create a new folder for restored files, click Browse. In the Select Folder wi
 
 ![Step 4. Select VM Files and Destination](images/vmfilesrestore_files.webp)
 
-Page updated 12/15/2025
 
-Page content applies to build 13.0.1.1071

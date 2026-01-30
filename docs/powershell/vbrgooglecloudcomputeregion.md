@@ -1,5 +1,7 @@
 ---
 title: "VBRGoogleCloudComputeRegion"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrgooglecloudcomputeregion.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRGoogleCloudComputeRegion
 
-In this article
 
 Contains Google Cloud compute region.
 
@@ -22,6 +23,4 @@ Related Commands
 
 [Get-VBRGoogleCloudComputeRegion](get-vbrgooglecloudcomputeregion.md)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

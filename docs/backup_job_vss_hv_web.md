@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_hv_web.html"
 last_updated: "12/9/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Guest Processing Settings
 
-In this article
 
 At the Guest Processing step of the wizard, you can configure the following settings:
 
@@ -18,6 +19,4 @@ At the Guest Processing step of the wizard, you can configure the following sett
 
 [![Click to zoom in](images/hv_backup_job_vss_web.webp)](images/hv_backup_job_vss_web.webp "Click to zoom in")
 
-Page updated 12/9/2025
 
-Page content applies to build 13.0.1.1071

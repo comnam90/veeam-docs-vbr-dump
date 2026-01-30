@@ -1,5 +1,7 @@
 ---
 title: "Step 10. Specify Guest Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 10. Specify Guest Processing Settings
 
-In this article
 
 At the Guest Processing step of the wizard, you can enable the following guest OS processing settings for a Veeam Agent backup job that includes Linux-based computers:
 
@@ -70,6 +71,4 @@ To define custom settings for a computer added as a part of a protection group, 
 
 ![Step 11. Specify Guest Processing Settings](images/agent_job_vss_linux.webp)
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Adding NFS File Share"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_adding_nfs_share.html"
 last_updated: "11/3/2023"
 product_version: "13.0.1.1071"
@@ -7,11 +9,10 @@ product_version: "13.0.1.1071"
 
 # Adding NFS File Share
 
-In this article
 
 Before you add an NFS file share to the inventory of the virtual infrastructure, consider the following:
 
-* The file share meets requirements listed in [Platform Support](https://helpcenter.veeam.com/docs/backup/vsphere/platform_support.html?ver=120#nas-backup-support).
+* The file share meets requirements listed in [Platform Support](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13#unstructured-data).
 * If you plan to use a dedicated backup proxy server or cache repository, make sure these components are added in Backup Infrastructure.
 
 To add an NFS file share:
@@ -23,6 +24,4 @@ To add an NFS file share:
 5. [Apply file share settings](tape_new_nfs_share_wizard_apply.md).
 6. [Finish working with the wizard](tape_new_nfs_share_wizard_summary.md).
 
-Page updated 11/3/2023
 
-Page content applies to build 13.0.1.1071

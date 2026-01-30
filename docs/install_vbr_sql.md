@@ -1,5 +1,7 @@
 ---
 title: "Step 8. Specify Database Engine and Instance"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_sql.html"
 last_updated: "10/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 8. Specify Database Engine and Instance
 
-In this article
 
 The Database step of the wizard is available if you have selected to configure installation settings manually.
 
@@ -50,6 +51,4 @@ If a configuration database with the specified name already exists (for example,
 
 ![Step 8. Specify Database Engine and Instance](images/installation_database_connect.webp)
 
-Page updated 10/21/2025
 
-Page content applies to build 13.0.1.1071

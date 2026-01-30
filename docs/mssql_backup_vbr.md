@@ -1,5 +1,7 @@
 ---
 title: "Managing Veeam Plug-In Backups in Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_backup_vbr.html"
 last_updated: "11/28/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Veeam Plug-In Backups in Veeam Backup & Replication
 
-In this article
 
 In the Veeam Backup & Replication console, backups created by Veeam Plug-Ins are displayed in the Backups node of the Home view. In the working area, backups created by Veeam Plug-In for IBM Db2 are listed under the Microsoft SQL node.
 
@@ -26,6 +27,4 @@ You can use the Veeam Backup & Replication console to perform the following oper
 * [Delete a backup from the backup repository](delete_backups_mssql.md)
 * [Remove a backup from configuration](delete_backups_config_mssql.md)
 
-Page updated 11/28/2025
 
-Page content applies to build 13.0.1.1071

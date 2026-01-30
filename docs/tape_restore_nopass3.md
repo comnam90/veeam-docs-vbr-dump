@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Complete Key Restore Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restore_nopass3.html"
 last_updated: "5/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Complete Key Restore Process
 
-In this article
 
 This procedure is performed by the Veeam Backup Administrator on the backup server.
 
@@ -17,6 +18,4 @@ This procedure is performed by the Veeam Backup Administrator on the backup serv
 
 ![Step 3. Complete Key Restore Process](images/encryption_key_restore_finish.webp)
 
-Page updated 5/20/2025
 
-Page content applies to build 13.0.1.1071

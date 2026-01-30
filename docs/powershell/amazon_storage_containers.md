@@ -1,5 +1,7 @@
 ---
 title: "Managing Amazon Storage Containers"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/amazon_storage_containers.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Amazon Storage Containers
 
-In this article
 
 The cmdlets in this section allow you to get and manage the following containers for the Amazon S3 object storage:
 
@@ -24,6 +25,4 @@ In This Section
 | [New-VBRAmazonS3Folder](new-vbramazons3folder.md) | Creates Amazon S3 folders. |
 | [Get-VBRAmazonS3Folder](get-vbramazons3folder.md) | Returns the array of Amazon S3 folders. |
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

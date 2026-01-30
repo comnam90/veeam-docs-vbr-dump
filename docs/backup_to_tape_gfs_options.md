@@ -1,5 +1,7 @@
 ---
 title: "Options for GFS Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_gfs_options.html"
 last_updated: "7/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Options for GFS Job
 
-In this article
 
 This step of the wizard is available if you selected a GFS media pool at the Media Pool step of the wizard. At this step, specify options for automatic operations after finishing the job and the drive usage limit:
 
@@ -24,6 +25,4 @@ Click Media sets and select the media sets that you want to export.
 
 ![Options for GFS Job](images/backup_to_tape_gfs_options.webp)
 
-Page updated 7/18/2025
 
-Page content applies to build 13.0.1.1071

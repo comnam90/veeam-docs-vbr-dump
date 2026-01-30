@@ -1,5 +1,7 @@
 ---
 title: "Proxy Requirements (Storage Systems)"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_configure_proxy.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Proxy Requirements (Storage Systems)
 
-In this article
 
 This section describes requirements for proxies used for storage integration.
 
@@ -87,6 +88,4 @@ For other proxies, the following technologies are supported: NVMe-RDMA, NVMe-FC 
 * The proxy must have an NVMe-FC adapter installed and also access to the storage system over Fibre Channel fabric.
 * Install NVMe-FC devices on the proxy must be installed according to the vendor documentation. Ensure that the proxy operating system and the Fibre Channel adapter are compatible. Also, check that the WWN ID of the proxy is properly zoned on the Fibre Channel switch.
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

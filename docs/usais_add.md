@@ -1,5 +1,7 @@
 ---
 title: "Adding Universal Storage API Integrated Systems"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/usais_add.html"
 last_updated: "8/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Universal Storage API Integrated Systems
 
-In this article
 
 Before you add a Universal Storage API integrated system to the backup infrastructure, check [Planning and Preparation](storage_limitations.md). Then use the storage installation wizard.
 
@@ -19,6 +20,4 @@ Before you add a Universal Storage API integrated system to the backup infrastru
 6. [Apply settings](usais_add_apply.md).
 7. [Finish working with the wizard](usais_add_finish.md).
 
-Page updated 8/8/2023
 
-Page content applies to build 13.0.1.1071

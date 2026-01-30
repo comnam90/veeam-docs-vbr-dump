@@ -1,5 +1,7 @@
 ---
 title: "Hardened Repository as VMware Backup Proxy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_vmware_backup_proxy.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Hardened Repository as VMware Backup Proxy
 
-In this article
 
 You can assign the VMware backup proxy role to the hardened repository. In this case, only the Network mode (NBD) is supported. Other transport modes will not be available for selection.
 
@@ -18,6 +19,4 @@ You can assign the VMware backup proxy role to the hardened repository. In this 
 
 To add a hardened repository as a VMware backup proxy, use the New VMware Proxy wizard. For more information, see [Adding VMware Backup Proxies](add_vmware_proxy.md).
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

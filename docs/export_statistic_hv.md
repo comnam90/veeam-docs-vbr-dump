@@ -1,5 +1,7 @@
 ---
 title: "Viewing Session Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/export_statistic_hv.html"
 last_updated: "7/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Session Statistics
 
-In this article
 
 Once you invoke the export procedure, Veeam shows the Export backup progress dialog box that informs you of the current export status.
 
@@ -34,6 +35,4 @@ To cancel a session, open the Export backup dialog box, as described in steps 1â
 
 [![Viewing Session Statistics](images/export_progress.webp)](images/export_progress.webp)
 
-Page updated 7/4/2025
 
-Page content applies to build 13.0.1.1071

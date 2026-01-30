@@ -1,5 +1,7 @@
 ---
 title: "Rescanning Tape Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rescan_tape_server.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning Tape Servers
 
-In this article
 
 Veeam Backup & Replication automatically rescans the tape servers every 3 minutes. During the rescan, Veeam Backup & Replication updates the list of managed tape devices. You can perform manual rescan of a tape server, for example, if you want to implement the changes made to the tape infrastructure immediately.
 
@@ -19,6 +20,4 @@ To rescan a tape server:
 
 [![Rescanning Tape Servers](images/rescan_tape_server.webp)](images/rescan_tape_server.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

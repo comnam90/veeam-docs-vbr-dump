@@ -1,5 +1,7 @@
 ---
 title: "Adding Helper Appliance Template"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ha_template_add.html"
 last_updated: "1/8/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Helper Appliance Template
 
-In this article
 
 To add a helper appliance template, do the following:
 
@@ -34,6 +35,4 @@ In the Subscription and Location fields, specify the subscription and region to 
 
 1. At the Appliance Template step of the wizard, click Next. Then click Finish. The template will be deployed as a background process.
 
-Page updated 1/8/2026
 
-Page content applies to build 13.0.1.1071

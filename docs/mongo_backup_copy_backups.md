@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select Backups to Process"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_backups.html"
 last_updated: "11/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select Backups to Process
 
-In this article
 
 At the Objects step of the wizard, select workloads whose restore points you want to copy to the target backup repository:
 
@@ -33,6 +34,4 @@ If you select repositories as sources, and target new jobs to the repositories i
 
 ![Step 3. Select Backups to Process](images/backup_copy_objects_mongo.webp)
 
-Page updated 11/26/2025
 
-Page content applies to build 13.0.1.1071

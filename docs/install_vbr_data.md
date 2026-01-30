@@ -1,5 +1,7 @@
 ---
 title: "Step 9. Specify Data Locations"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_data.html"
 last_updated: "10/27/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 9. Specify Data Locations
 
-In this article
 
 The Data Locations step is available if you have selected to configure installation settings manually and to install a new instance of the database server.
 
@@ -31,6 +32,4 @@ You do not need to configure this data location for Microsoft Hyper-V environmen
 
 ![Step 9. Specify Data Locations](images/installation_data_locations.webp)
 
-Page updated 10/27/2025
 
-Page content applies to build 13.0.1.1071

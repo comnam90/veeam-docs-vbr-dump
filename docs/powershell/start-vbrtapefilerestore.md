@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRTapeFileRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrtapefilerestore.html"
 last_updated: "3/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRTapeFileRestore
 
-In this article
 
 Short Description
 
@@ -77,6 +78,4 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Find-VBRTapeCatalogItem](find-vbrtapecatalogitem.md)
 
-Page updated 3/25/2024
 
-Page content applies to build 13.0.1.1071

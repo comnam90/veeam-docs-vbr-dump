@@ -1,5 +1,7 @@
 ---
 title: "Appendix"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Appendix
 
-In this article
 
 This section provides information on additional procedures available for Veeam Agents operating in the managed mode.
 
@@ -20,6 +21,4 @@ In this Section
 * [Protecting Failover Clusters](how_to_protect_failover_cluster.md)
 * [Performing Bare Metal Restore for Clusters with Shared Disks](how_to_failover_cluster_bare_metal.md)
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

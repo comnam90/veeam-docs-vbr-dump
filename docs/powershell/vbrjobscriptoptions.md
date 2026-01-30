@@ -1,5 +1,7 @@
 ---
 title: "VBRJobScriptOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrjobscriptoptions.html"
 last_updated: "5/20/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRJobScriptOptions
 
-In this article
 
 Contains job scripts options.
 
@@ -27,6 +28,4 @@ Related Commands
 
 [New-VBRJobScriptOptions](new-vbrjobscriptoptions.md)
 
-Page updated 5/20/2024
 
-Page content applies to build 13.0.1.1071

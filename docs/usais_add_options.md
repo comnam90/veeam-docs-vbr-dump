@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify VMware Access Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/usais_add_options.html"
 last_updated: "8/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify VMware Access Options
 
-In this article
 
 [This step is available if you have selected the Block or file storage for VMware vSphere check box at the [Specify Storage Name or Address and Storage Role](usais_add_name.md) step of the wizard.]
 
@@ -44,6 +45,4 @@ After you finish working with the wizard, you can change the rescan scope and st
 
 ![Step 4. Specify VMware Access Options](images/inf_add_options.webp)
 
-Page updated 8/4/2023
 
-Page content applies to build 13.0.1.1071

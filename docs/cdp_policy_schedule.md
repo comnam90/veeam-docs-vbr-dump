@@ -1,5 +1,7 @@
 ---
 title: "Step 12. Specify Replication Schedule"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_schedule.html"
 last_updated: "8/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 12. Specify Replication Schedule
 
-In this article
 
 At the Schedule step of the wizard, configure the schedule and retention policies:
 
@@ -44,6 +45,4 @@ Related Topics
 * [Long-term Retention Policy](cdp_retention.md#long)
 * [Specify Guest Processing Settings (Application-Aware Processing)](cdp_policy_guest.md)
 
-Page updated 8/20/2025
 
-Page content applies to build 13.0.1.1071

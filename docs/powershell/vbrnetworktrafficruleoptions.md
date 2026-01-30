@@ -1,5 +1,7 @@
 ---
 title: "VBRNetworkTrafficRuleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnetworktrafficruleoptions.html"
 last_updated: "11/12/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNetworkTrafficRuleOptions
 
-In this article
 
 Contains network traffic rule details.
 
@@ -23,6 +24,4 @@ Related Commands
 
 [Get-VBRNetworkTrafficRuleOptions](get-vbrnetworktrafficruleoptions.md)
 
-Page updated 11/12/2023
 
-Page content applies to build 13.0.1.1071

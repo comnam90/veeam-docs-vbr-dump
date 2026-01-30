@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRDefaultLinuxMountServer"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrdefaultlinuxmountserver.html"
 last_updated: "7/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRDefaultLinuxMountServer
 
-In this article
 
 Short Description
 
@@ -47,6 +48,4 @@ This command returns the default Linux mount server.
 | --- |
 | Get-VBRDefaultLinuxMountServer |
 
-Page updated 7/22/2025
 
-Page content applies to build 13.0.1.1071

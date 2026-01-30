@@ -1,5 +1,7 @@
 ---
 title: "Move-VBRTapeMedium"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/move-vbrtapemedium.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Move-VBRTapeMedium
 
-In this article
 
 Short Description
 
@@ -82,6 +83,4 @@ Related Commands
 * [Get-VBRTapeMediaPool](get-vbrtapemediapool.md)
 * [Get-VBRTapeVault](get-vbrtapevault.md)
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

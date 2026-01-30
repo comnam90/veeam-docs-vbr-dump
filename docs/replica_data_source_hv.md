@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Data Source"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_data_source_hv.html"
 last_updated: "1/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Data Source
 
-In this article
 
 You can enable replication from production storage. For this, select a data source from which Veeam Backup & Replication will read VM data:
 
@@ -23,6 +24,4 @@ Related Topics
 
 [Replica from Backup](replica_from_backup.md)
 
-Page updated 1/22/2025
 
-Page content applies to build 13.0.1.1071

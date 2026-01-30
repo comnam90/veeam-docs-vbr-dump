@@ -1,5 +1,7 @@
 ---
 title: "VBRAzureStorageAccount"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazurestorageaccount.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRAzureStorageAccount
 
-In this article
 
 Contains Microsoft Azure storage account.
 
@@ -24,6 +25,4 @@ Related Commands
 
 [Get-VBRAzureStorageAccount](get-vbrazurestorageaccount.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

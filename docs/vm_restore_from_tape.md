@@ -1,5 +1,7 @@
 ---
 title: "VM Restore from Tape to Infrastructure"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_restore_from_tape.html"
 last_updated: "6/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VM Restore from Tape to Infrastructure
 
-In this article
 
 Restoring a VM from tape with Veeam Backup & Replication is a lot like restoring a VM from disk. For example, you can choose a desired restore point, select the target location or change the configuration of the restored VM.
 
@@ -47,6 +48,4 @@ Related Topics
 * [How Restoring VM from Tape to Infrastructure Works](tape_restoring_vm_from_tape.md)
 * [Restoring VM from Tape to Infrastructure](restoring_vms_from_tape.md)
 
-Page updated 6/21/2023
 
-Page content applies to build 13.0.1.1071

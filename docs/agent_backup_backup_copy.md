@@ -1,5 +1,7 @@
 ---
 title: "Performing Backup Copy for Veeam Agent Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_backup_copy.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Performing Backup Copy for Veeam Agent Backups
 
-In this article
 
 You can configure backup copy jobs that will copy backups created with Veeam Agent to a secondary backup repository.
 
@@ -37,6 +38,4 @@ To overcome this limitation, you can delegate the restore task to backup adminis
 
 You can also restore data from the copied backup stored in the target repository using Veeam Agent.
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

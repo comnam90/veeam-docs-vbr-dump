@@ -1,5 +1,7 @@
 ---
 title: "Validate-VBRInfrastructure"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/validate-vbrinfrastructure.html"
 last_updated: "4/23/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Validate-VBRInfrastructure
 
-In this article
 
 Short Description
 
@@ -54,6 +55,4 @@ This command validates the network infrastructure of a backup server.
 | --- |
 | Validate-VBRInfrastructure -EnableIPv6 |
 
-Page updated 4/23/2024
 
-Page content applies to build 13.0.1.1071

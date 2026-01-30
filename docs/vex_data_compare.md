@@ -1,5 +1,7 @@
 ---
 title: "Data Compare"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_data_compare.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Compare
 
-In this article
 
 You can use Veeam Explorer for Microsoft Exchange to compare data in a backup file with that of the production state.
 
@@ -33,6 +34,4 @@ To compare a single item, right-click an item and select Compare item properties
 
 [![Comparing Microsoft Exchange Items](images/comparing_items_2.webp)](images/comparing_items_2.webp "Comparing Microsoft Exchange Items")
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_retention.html"
 last_updated: "6/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retention Policy
 
-In this article
 
 Retention policy defines the number of restore points to keep on your performance extents and capacity extents. You can manage retention policies to remove obsolete restore points both from the performance extents and the capacity tier. For more information on how to configure retention policy, see the Specify Backup Storage Settings section for [VMware vSphere backup jobs](backup_job_storage_vm.md) and [Microsoft Hyper-V backup jobs.](backup_job_storage_hv.md)
 
@@ -31,6 +32,4 @@ Related Topics
 * [Short-Term Retention Policy](retention_policy.md)
 * [Switching to Maintenance Mode](sobr_maintenance.md)
 
-Page updated 6/4/2025
 
-Page content applies to build 13.0.1.1071

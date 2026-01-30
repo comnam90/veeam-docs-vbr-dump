@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify Server Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_multiple_tas_specify_server_credentials.html"
 last_updated: "8/22/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify Server Credentials
 
-In this article
 
 At this step of the wizard, specify the connection parameters for the target SAP HANA server.
 
@@ -30,6 +31,4 @@ For more information about the ports used to connect to SAP Web Services, see [P
 
 [![Specifying Target Server Credentials](images/vehana_specify_server_credentials_tas.webp)](images/vehana_specify_server_credentials_tas.webp "Specifying Target Server Credentials")
 
-Page updated 8/22/2023
 
-Page content applies to build 13.0.1.1071

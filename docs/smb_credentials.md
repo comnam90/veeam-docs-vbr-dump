@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Credentials"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_credentials.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Credentials
 
-In this article
 
 At the Credentials step of the wizard, specify credentials for the Microsoft SMB3 server or cluster.
 
@@ -40,6 +41,4 @@ The option applies if the server or cluster also performs the role of the onhost
 
 ![Step 4. Specify Credentials](images/add_server_smb_ports.webp)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_account_byb.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before you add a Microsoft Azure Compute account to Veeam Backup & Replication, check the following prerequisites:
 
@@ -35,6 +36,4 @@ You can limit the subscriptions to which Veeam Backup & Replication assigns the 
 
 * When the internet access is possible only through HTTP/HTTPS proxy, you must configure the proxy settings for the Local System account or account under which the Veeam Backup Service is running. For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet).
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

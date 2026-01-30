@@ -1,5 +1,7 @@
 ---
 title: "Restoring Latest State"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_multiple_latest.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Latest State
 
-In this article
 
 To restore the latest state of the PostgreSQL server, do the following:
 
@@ -23,6 +24,4 @@ Alternatively, you can right-click the server and select Restore instances > Res
 
 [![Restoring to Latest State](images/vep_restore_multiple_latest.webp)](images/vep_restore_multiple_latest.webp "Restoring to Latest State")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

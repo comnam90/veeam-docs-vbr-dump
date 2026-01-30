@@ -1,5 +1,7 @@
 ---
 title: "Application Backup Policies"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_job.html"
 last_updated: "8/22/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application Backup Policies
 
-In this article
 
 To back up MongoDB data with Veeam Backup & Replication, you must configure an application backup policy. With an application backup policy, you can instruct Veeam Backup & Replication to create MongoDB backups in a Veeam backup repository.
 
@@ -39,6 +40,4 @@ While transporting backed-up data, Veeam Agent for Linux running on a protected 
 
 [![How Application Backup Policy for MongoDB Works](images/mongo_application_hiw.webp)](images/mongo_application_hiw.webp "How Application Backup Policy for MongoDB Works")
 
-Page updated 8/22/2025
 
-Page content applies to build 13.0.1.1071

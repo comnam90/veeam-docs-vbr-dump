@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackupFLRItem"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackupflritem.html"
 last_updated: "11/12/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackupFLRItem
 
-In this article
 
 Short Description
 
@@ -76,6 +77,4 @@ Related Commands
 * [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md)
 * [Start-VBRUnstructuredBackupFLRSession](start-vbrunstructuredbackupflrsession.md)
 
-Page updated 11/12/2024
 
-Page content applies to build 13.0.1.1071

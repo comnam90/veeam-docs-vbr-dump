@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRHistoryOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrhistoryoptions.html"
 last_updated: "1/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRHistoryOptions
 
-In this article
 
 Short Description
 
@@ -45,6 +46,4 @@ This command returns history settings for jobs that are available on a backup se
 | --- |
 | Get-VBRHistoryOptions  KeepAllSessions RetentionLimitWeeks  --------------- -------------------           False                  13 |
 
-Page updated 1/29/2024
 
-Page content applies to build 13.0.1.1071

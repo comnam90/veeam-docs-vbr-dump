@@ -1,5 +1,7 @@
 ---
 title: "Mount Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
 last_updated: "9/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Mount Servers
 
-In this article
 
 The mount server is a server required for restores that work with guest OS files and application items. To access files or items stored in a backup file, Veeam Backup & Replication mounts the content of the backup to the mount server. Only after the content is mounted, Veeam Backup & Replication can get files and copy them to the restore destination.
 
@@ -90,6 +91,4 @@ Related Topics
 * [Adding Microsoft Windows Repositories](repo_add.md)
 * [Installing Mount Service](install_mount_service.md)
 
-Page updated 9/19/2025
 
-Page content applies to build 13.0.1.1071

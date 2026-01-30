@@ -1,5 +1,7 @@
 ---
 title: "Managing Configuration Database"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config.html"
 last_updated: "11/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Configuration Database
 
-In this article
 
 You can back up and restore the configuration database that Veeam Backup & Replication uses. If the backup server fails for some reason, you can re-install the backup server and quickly restore its configuration from the configuration backup. You can also use configuration backups to apply the configuration of one backup server to another backup server in the backup infrastructure. During configuration backup, Veeam Backup & Replication exports data from the configuration database and saves it to a backup file in the backup repository.
 
@@ -42,6 +43,4 @@ Related Topics
 * [Automating Configuration Database Restore](vbr_config_restore_automated.md)
 * [Restoring Configuration Database on Linux-Based Backup Server](vbr_config_restore_linux.md)
 
-Page updated 11/24/2025
 
-Page content applies to build 13.0.1.1071

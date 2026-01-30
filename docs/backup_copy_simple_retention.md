@@ -1,5 +1,7 @@
 ---
 title: "Short-Term Retention Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_simple_retention.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Short-Term Retention Policy
 
-In this article
 
 The short-term retention policy allows retaining restore points created by backup copy jobs for a specified number of days or until the number of restore points reaches the specified number in the retention settings.
 
@@ -65,6 +66,4 @@ Related Topics
 
 [Long-Term Retention Policy (GFS)](backup_copy_gfs.md)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

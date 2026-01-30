@@ -1,5 +1,7 @@
 ---
 title: "Start-VBREntraIDTenantRestore"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrentraidtenantrestore.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBREntraIDTenantRestore
 
-In this article
 
 Short Description
 
@@ -67,6 +68,4 @@ Related Commands
 
 [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

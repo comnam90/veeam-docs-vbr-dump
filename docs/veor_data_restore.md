@@ -1,5 +1,7 @@
 ---
 title: "Data Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_data_restore.html"
 last_updated: "10/15/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Restore
 
-In this article
 
 This section contains information about the available restore operations in Veeam Explorer for Oracle.
 
@@ -24,6 +25,4 @@ In This Section
 * [Restoring from Image-Level Backups](veor_restore_image_level_backups.md)
 * [Restoring from RMAN Plug-in Backups](rman_backups.md)
 
-Page updated 10/15/2025
 
-Page content applies to build 13.0.1.1071

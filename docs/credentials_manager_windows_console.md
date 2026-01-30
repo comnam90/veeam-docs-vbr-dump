@@ -1,5 +1,7 @@
 ---
 title: "Creating Standard Account Using Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_windows_console.html"
 last_updated: "7/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Standard Account Using Console
 
-In this article
 
 To add a new standard credentials record, do the following in the Veeam Backup & Replication console:
 
@@ -19,6 +20,4 @@ To add a new standard credentials record, do the following in the Veeam Backup &
 
 ![Creating Standard Account Using Console](images/creds_windows.webp)
 
-Page updated 7/31/2025
 
-Page content applies to build 13.0.1.1071

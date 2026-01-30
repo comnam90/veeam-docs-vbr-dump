@@ -3,7 +3,7 @@ title: "Upgrading Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_update.html"
-last_updated: "1/19/2026"
+last_updated: "1/29/2026"
 product_version: "13.0.1.1071"
 ---
 

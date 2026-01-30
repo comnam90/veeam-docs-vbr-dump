@@ -1,5 +1,7 @@
 ---
 title: "Replication Scenarios"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_scenarios_hv.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Replication Scenarios
 
-In this article
 
 Veeam Backup & Replication supports a number of replication scenarios. Depending on the scenario you are planning to use, different backup infrastructure components will be involved in the replication process. For more information on the components, see [Backup Infrastructure for Replication](replication_components_hv.md).
 
@@ -54,6 +55,4 @@ During off-host replication, all the necessary data transformations (such as dat
 
 ![Replication Scenarios](images/offhost_replication.webp)
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

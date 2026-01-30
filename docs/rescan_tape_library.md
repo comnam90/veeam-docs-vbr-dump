@@ -1,5 +1,7 @@
 ---
 title: "Rescanning Tape Devices"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rescan_tape_library.html"
 last_updated: "7/10/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning Tape Devices
 
-In this article
 
 You can rescan a selected tape library or standalone tape drive to update its network status.
 
@@ -19,6 +20,4 @@ To rescan a tape device:
 
 [![Rescanning Tape Devices](images/rescan_library.webp)](images/rescan_library.webp)
 
-Page updated 7/10/2023
 
-Page content applies to build 13.0.1.1071

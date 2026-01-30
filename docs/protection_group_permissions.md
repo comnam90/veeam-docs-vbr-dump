@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_permissions.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Permissions
 
-In this article
 
 The Cloud Permissions step of the wizard is available if you have chosen to define a protection scope that includes Amazon EC2 virtual machines.
 
@@ -32,6 +33,4 @@ Keep in mind that Veeam Backup & Replication will set the IAM role with the Amaz
 
 ![Step 6. Specify Permissions](images/protection_group_permissions.webp "Specify Permissions")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

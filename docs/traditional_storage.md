@@ -1,5 +1,7 @@
 ---
 title: "Restore With and Without Veeam Backup & Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/traditional_storage.html"
 last_updated: "1/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restore With and Without Veeam Backup & Replication
 
-In this article
 
 This section describes differences between restore from storage snapshots with and without Veeam Backup & Replication.
 
@@ -34,6 +35,4 @@ If you recover data from storage snapshots using Veeam Backup & Replication, sto
 
 When you restore data from storage snapshots, they are not converted into backups. VM data is restored directly from native storage system snapshots. You do not have to install any agents or perform additional configuration actions.
 
-Page updated 1/19/2024
 
-Page content applies to build 13.0.1.1071

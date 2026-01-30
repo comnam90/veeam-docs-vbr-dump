@@ -1,5 +1,7 @@
 ---
 title: "Removal of Restore Points"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_separate_vms_hv.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Removal of Restore Points
 
-In this article
 
 Retention works in different ways for per-machine backup with separate metadata files, single-file backup and per-machine with single metadata file formats. For more information on backup chain formats, see [Backup Chain Formats](per_vm_backup_files_hv.md).
 
@@ -97,6 +98,4 @@ Related Topics
 
 [Creating Backup Jobs](backup_job_hv.md)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

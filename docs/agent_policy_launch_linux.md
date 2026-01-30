@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch New Agent Backup Job Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_launch_linux.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch New Agent Backup Job Wizard
 
-In this article
 
 You can create a Veeam Agent backup policy for protected computers that run a Linux OS in one of the following ways:
 
@@ -48,6 +49,4 @@ Veeam Backup & Replication will start the New Agent Backup Job wizard and add th
 
 [![Launch New Agent Backup Job Wizard](images/agent_backup_job_launch_linux.webp)](images/agent_backup_job_launch_linux.webp "Launch New Agent Backup Job Wizard")
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

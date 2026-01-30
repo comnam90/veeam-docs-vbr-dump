@@ -1,5 +1,7 @@
 ---
 title: "New-VBRNASBackupPathMask"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrnasbackuppathmask.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # New-VBRNASBackupPathMask
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Examples
 | --- | --- |
 | This command defines that the New Inc-Exc folder will be excluded from all file shares.  |  | | --- | | $exclusionMask = New-VBRNASBackupPathMask -Path "New Inc-Exc" -ForAllShares | |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

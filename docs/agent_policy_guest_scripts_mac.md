@@ -1,5 +1,7 @@
 ---
 title: "Backup Job Scripts"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_guest_scripts_mac.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Job Scripts
 
-In this article
 
 You can specify custom backup job scripts that will be executed within the backup job session. Veeam Agent supports pre-job and post-job scripts that run on the Veeam Agent computer before and after the backup job session. To learn more about requirements for scripts, see [Backup Job Scripts](agents_backup_mac_scripts.md).
 
@@ -28,6 +29,4 @@ During policy application session, Veeam Backup & Replication will upload the sc
 
 ![Backup Job Scripts](images/agent_policy_mac_scripts.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

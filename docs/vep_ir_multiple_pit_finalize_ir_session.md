@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Finalize Instant Recovery Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_pit_finalize_ir_session.html"
 last_updated: "11/8/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Finalize Instant Recovery Session
 
-In this article
 
 After you finish steps of the Instant Recovery wizard, Veeam Explorer for PostgreSQL starts an instant recovery session.
 
@@ -30,6 +31,4 @@ Related Topics
 * [Managing Instant Recovery Session](vesql_instant_session.md)
 * [Switchover](vesql_switchover.md)
 
-Page updated 11/8/2023
 
-Page content applies to build 13.0.1.1071

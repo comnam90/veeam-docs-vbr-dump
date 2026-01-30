@@ -1,5 +1,7 @@
 ---
 title: "Protecting Tenant Data"
+product: "vbr"
+doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/overview_entra_id_tenant.html"
 last_updated: "12/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Protecting Tenant Data
 
-In this article
 
 To produce backups of Microsoft Entra ID tenant data, Veeam Backup for Microsoft Entra ID runs backup jobs. A backup job is a collection of settings that define the way backup operations are performed: what data to back up, where to store backups, when to start the backup process, and so on.
 
@@ -23,6 +24,4 @@ To create a Microsoft Entra ID backup job, complete the following steps:
 4. [Connect to a remote Microsoft Entra ID repository, if necessary](entra_id_manage_repo.md).
 5. [Complete the New Microsoft Entra ID Tenant Backup Job wizard](entra_id_backup_job.md).
 
-Page updated 12/17/2025
 
-Page content applies to build 13.0.1.1071

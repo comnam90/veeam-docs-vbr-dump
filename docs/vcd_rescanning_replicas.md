@@ -1,5 +1,7 @@
 ---
 title: "Rescanning Replicas"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_rescanning_replicas.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Rescanning Replicas
 
-In this article
 
 Rescan is a process that allows Veeam Backup & Replication to verify that the following data written to configuration database is up to date: information about the disaster recovery (DR) site, its components and VM containers. The replica rescan process is performed the following way:
 
@@ -22,6 +23,4 @@ To rescan replicas, do the following:
 
 [![vCD Replica Rescan](images/vcd_replica_rescan.webp)](images/vcd_replica_rescan.webp "vCD Replica Rescan")
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

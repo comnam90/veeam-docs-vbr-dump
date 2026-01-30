@@ -1,5 +1,7 @@
 ---
 title: "Using Veeam Backup Configuration Tool"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuration_tool_using.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using Veeam Backup Configuration Tool
 
-In this article
 
 The Veeam Backup Configuration tool is located on the backup server in the installation folder of Veeam Backup & Replication. The default path is %ProgramFiles%\Veeam\Backup and Replication\Backup\Veeam.Backup.Configuration.Tool.exe. If the default path was changed, you can find the actual path in the following registry value: [HKEY\_LOCAL\_MACHINE\SOFTWARE\Veeam\Veeam Backup and Replication] CorePath.
 
@@ -93,6 +94,4 @@ This example shows how to analyze the 193022052014.bco configuration backup file
 | --- |
 | Veeam.Backup.Configuration.Tool.exe /file:c:\backups\091323052014.bco  /backupdatabase /servername:WIN2008R2 /instancename:VeeamSql2008  /initialcatalog:VeeamBackup |
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

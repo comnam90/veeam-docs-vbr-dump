@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Choose Server"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_server.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Choose Server
 
-In this article
 
 At the Server step of the wizard, select a server that you plan to use as a WAN accelerator and define port and connection settings for this server.
 
@@ -45,6 +46,4 @@ When you enable the High bandwidth mode for an existing pair of WAN accelerators
 
 ![Step 2. Choose Server](images/add_wan_accelerator_server.webp)
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Start-VBRQuickMigration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrquickmigration.html"
 last_updated: "3/1/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Start-VBRQuickMigration
 
-In this article
 
 Short Description
 
@@ -102,6 +103,4 @@ Related Commands
 * [Get-VBRViProxy](get-vbrviproxy.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 3/1/2024
 
-Page content applies to build 13.0.1.1071

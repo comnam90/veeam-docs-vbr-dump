@@ -1,5 +1,7 @@
 ---
 title: "Traditional LUN Cloning"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_backup_netapp_cloning.html"
 last_updated: "8/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Traditional LUN Cloning
 
-In this article
 
 [For VMware, Veeam Agent integration] For NetApp storage systems that do not have a FlexClone license installed, Veeam Backup & Replication uses the NetApp traditional LUN cloning technology.
 
@@ -32,6 +33,4 @@ Related Topics
 
 [FlexClone](storage_backup_netapp_flexclone.md)
 
-Page updated 8/4/2023
 
-Page content applies to build 13.0.1.1071

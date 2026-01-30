@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Target Host"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_host_hv.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Target Host
 
-In this article
 
 The Host step is available if you have selected the Failback to the specified location option at the [Destination](failback_destination_hv.md) step.
 
@@ -21,6 +22,4 @@ To quickly find the necessary hosts, you can use the search field at the top of 
 
 ![Step 4. Select Target Host](images/hv_failback_host.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

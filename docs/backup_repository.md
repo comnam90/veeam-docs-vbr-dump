@@ -1,5 +1,7 @@
 ---
 title: "Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository.html"
 last_updated: "12/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Repositories
 
-In this article
 
 A backup repository is a storage location where Veeam keeps backup files, VM copies and metadata for replicated VMs.
 
@@ -70,6 +71,4 @@ Related Topics
 
 [Scale-Out Backup Repositories](backup_repository_sobr.md)
 
-Page updated 12/5/2025
 
-Page content applies to build 13.0.1.1071

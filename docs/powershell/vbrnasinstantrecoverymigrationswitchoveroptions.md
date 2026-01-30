@@ -1,5 +1,7 @@
 ---
 title: "VBRNASInstantRecoveryMigrationSwitchOverOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrnasinstantrecoverymigrationswitchoveroptions.html"
 last_updated: "5/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRNASInstantRecoveryMigrationSwitchOverOptions
 
-In this article
 
 Contains the switchover options with the specified parameters.
 
@@ -22,6 +23,4 @@ Related Commands
 
 [New-VBRNASInstantRecoveryMigrationSwitchOverOptions](new-vbrnasinstantrecoverymigrationswitchoveroptions.md)
 
-Page updated 5/17/2024
 
-Page content applies to build 13.0.1.1071

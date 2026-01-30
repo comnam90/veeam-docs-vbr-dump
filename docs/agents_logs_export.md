@@ -1,5 +1,7 @@
 ---
 title: "Exporting Logs from Veeam Backup & Replication Console"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_logs_export.html"
 last_updated: "9/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Exporting Logs from Veeam Backup & Replication Console
 
-In this article
 
 Veeam Backup & Replication stores log files in different locations. To learn more, see [Managing Logs](logging.md).
 
@@ -29,6 +30,4 @@ To export all log files to one location, use the Export Logs wizard.
 | TIP |
 | If you do not have access to the Veeam Backup & Replication console and you cannot use the built-in log export, export logs manually as described in [this Veeam KB article](https://www.veeam.com/kb1832). |
 
-Page updated 9/16/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Detaching Backup from Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_detach.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Detaching Backup from Job
 
-In this article
 
 If you want a backup job to stop processing backup files, you can use the Detach from job operation.
 
@@ -30,6 +31,4 @@ To detach backups from a job:
 
 [![Detach from Job](images/agent_detach_from_job.webp)](images/agent_detach_from_job.webp "Detach from Job")
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

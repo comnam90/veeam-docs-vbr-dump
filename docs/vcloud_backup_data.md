@@ -1,5 +1,7 @@
 ---
 title: "Data to Back Up"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_backup_data.html"
 last_updated: "9/4/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data to Back Up
 
-In this article
 
 Veeam Backup & Replication lets you back up the following types of VMware Cloud Director VMs:
 
@@ -53,6 +54,4 @@ For details on how to enable CBT on the VM template, contact Veeam Customer Supp
 
 * Backup of linked clone VMs that were created by services other than VMware Cloud Director may cause snapshot-related problems. To overcome this issue, disable Veeam Snapshot Hunter. For details, see [this Veeam KB article](https://www.veeam.com/kb2091).
 
-Page updated 9/4/2023
 
-Page content applies to build 13.0.1.1071

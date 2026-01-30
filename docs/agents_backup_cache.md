@@ -1,5 +1,7 @@
 ---
 title: "Backup Cache"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_cache.html"
 last_updated: "12/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Cache
 
-In this article
 
 Veeam Agent for Microsoft Windows managed by Veeam Backup & Replication supports creating restore points in the backup cache — a temporary local storage where Veeam Agent creates backup files in case a remote backup location is unavailable at the time of backup. This may be helpful in the scenario where you create Veeam Agent backups using the backup policy: if some computers in the backup policy cannot access the remote location during scheduled backup, Veeam Agent creates backup files in the backup cache on these computers. When the target location becomes available, Veeam Agent uploads backup files from the backup cache to the remote storage so that the backup chain contains a sequence of restore points that precisely complies with the backup schedule.
 
@@ -61,6 +62,4 @@ Keep in mind that Veeam Backup & Replication automatically deletes restore point
 
 You can also delete restore points from the backup cache manually in the Veeam backup console. To learn more, see [Clearing Backup Cache](agent_policy_cache.md).
 
-Page updated 12/8/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Working with Protection Groups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_tasks.html"
 last_updated: "5/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Working with Protection Groups
 
-In this article
 
 |  |
 | --- |
@@ -40,6 +41,4 @@ Related Topics
 
 [Protection Groups](agents_protection_groups.md)
 
-Page updated 5/26/2025
 
-Page content applies to build 13.0.1.1071

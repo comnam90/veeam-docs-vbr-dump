@@ -1,5 +1,7 @@
 ---
 title: "Kasten Authentication Tokens"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_kasten.html"
 last_updated: "11/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Kasten Authentication Tokens
 
-In this article
 
 If you use Veeam Kasten for Kubernetes as a part of your backup infrastructure, you can add a credentials record in Veeam Backup & Replication. After you add a token, you will be able to manage your Veeam Kasten for Kubernetes policies and restore points from the Veeam Backup & Replication console.
 
@@ -26,6 +27,4 @@ To add a new Kasten authentication token record, do the following in the Veeam B
 
 ![Kasten Authentication Tokens](images/credentials_manager_kasten.webp)
 
-Page updated 11/24/2025
 
-Page content applies to build 13.0.1.1071

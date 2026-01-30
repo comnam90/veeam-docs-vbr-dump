@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Configure Seeding and Mapping Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_seeding_and_mapping.html"
 last_updated: "6/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Configure Seeding and Mapping Settings
 
-In this article
 
 The Seeding step is available if you have selected the Replica seeding option at the Name step wizard. You can use this step to configure replica seeding and mapping for a VMware Cloud Director replication job. For more information on when to use seeding and mapping, see [vApp Seeding and Mapping](vcd_seeding_mapping.md).
 
@@ -57,6 +58,4 @@ To remove a mapping association, select a VM in the list and click Remove.
 
 ![Step 11. Configure Seeding and Mapping Settings](images/vcd_seeding_mapping.webp)
 
-Page updated 6/10/2025
 
-Page content applies to build 13.0.1.1071

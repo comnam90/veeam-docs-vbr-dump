@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRTapeBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapebackupsession.html"
 last_updated: "3/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRTapeBackupSession
 
-In this article
 
 Short Description
 
@@ -70,6 +71,4 @@ Related Commands
 
 [Get-VBRTapeJob](get-vbrtapejob.md)
 
-Page updated 3/21/2024
 
-Page content applies to build 13.0.1.1071

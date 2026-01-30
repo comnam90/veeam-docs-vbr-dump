@@ -1,5 +1,7 @@
 ---
 title: "Unstructured Data Recovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/unstructured_data_recovery.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unstructured Data Recovery
 
-In this article
 
 You can use the cmdlets in this topic to perform the following operations.
 
@@ -34,6 +35,4 @@ You can use the cmdlets in this topic to perform the following operations.
 | [Compare-VBRUnstructuredBackupFLRItemAttributes](compare-vbrunstructuredbackupflritemattributes.md) | Compares attributes of backed-up objects with objects on production file share or object storage. |
 | [Stop-VBRUnstructuredBackupFLRItemComparison](stop-vbrunstructuredbackupflritemcomparison.md) | Stops sessions that are running to compare backed-up objects with objects on production file share or object storage. |
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

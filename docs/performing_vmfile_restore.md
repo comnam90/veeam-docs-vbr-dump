@@ -1,5 +1,7 @@
 ---
 title: "Restoring VM Files"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_vmfile_restore.html"
 last_updated: "3/24/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring VM Files
 
-In this article
 
 To restore VM files from a backup, use the Virtual Machine Files Restore  wizard.
 
@@ -19,6 +20,4 @@ To restore VM files from a backup, use the Virtual Machine Files Restore  wizard
 6. [Specify a restore reason](vmfile_restore_reason_vm.md).
 7. [Finish working with the wizard](vmfile_restore_summary_vm.md).
 
-Page updated 3/24/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "PostgreSQL WAL Files Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_postgresql_vm.html"
 last_updated: "1/25/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # PostgreSQL WAL Files Settings
 
-In this article
 
 To create a transactionally consistent backup of PostgreSQL VM, you must enable application-aware processing and define the settings of WAL files processing.
 
@@ -60,6 +61,4 @@ Make sure that you select a server that is not used by other resource-consuming 
 
 ![PostgreSQL WAL Files Settings](images/vm_backup_job_vss_postgresql.webp)
 
-Page updated 1/25/2024
 
-Page content applies to build 13.0.1.1071

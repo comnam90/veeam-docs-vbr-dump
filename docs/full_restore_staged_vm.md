@@ -1,5 +1,7 @@
 ---
 title: "Step 11. Specify Staged Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_staged_vm.html"
 last_updated: "8/8/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 11. Specify Staged Restore Settings
 
-In this article
 
 The Staged Restore step of the wizard is available if you have chosen the Staged restore option at the [Restore Mode](full_restore_mode_vm.md) step of the wizard.
 
@@ -34,6 +35,4 @@ Be careful when specifying the Maximum allowed boot time value. Typically, a VM 
 
 ![Step 11. Specify Staged Restore Settings](images/vmrestore_staged_adv.webp)
 
-Page updated 8/8/2024
 
-Page content applies to build 13.0.1.1071

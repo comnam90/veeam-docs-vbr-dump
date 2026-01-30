@@ -1,5 +1,7 @@
 ---
 title: "Using 1-Click Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_one_click_export.html"
 last_updated: "8/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Using 1-Click Export
 
-In this article
 
 To export a container or object to the default location, do the following:
 
@@ -23,6 +24,4 @@ Alternatively, you can right-click a container or an object and select Export co
 
 [![Using 1-Click Export](images/vead_1click_export.webp)](images/vead_1click_export.webp "Using 1-Click Export")
 
-Page updated 8/15/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_settings_storage.html"
 last_updated: "8/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 To specify compression, deduplication and encryption settings for backup files stored in the target backup repository, do the following:
 
@@ -33,6 +34,4 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 ![Storage Settings](images/backup_copy_advanced_storage.webp)
 
-Page updated 8/31/2025
 
-Page content applies to build 13.0.1.1071

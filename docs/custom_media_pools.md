@@ -1,5 +1,7 @@
 ---
 title: "Media Pools"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/custom_media_pools.html"
 last_updated: "6/21/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Media Pools
 
-In this article
 
 Media pools are target destinations for backup to tape and file to tape jobs. The media pools manage empty (or available for overwriting) tapes to allow the tape jobs write data. You can create as many media pools as you need. One media pool can be target for unlimited number of tape jobs. The GFS jobs require GFS media pools. For more information, see [GFS Media Pools](gfs_media_pools.md).
 
@@ -45,6 +46,4 @@ Related Topics
 * [Modifying Media Pools](modifying_media_pools.md)
 * [Removing Media Pools](deleting_media_pools.md)
 
-Page updated 6/21/2023
 
-Page content applies to build 13.0.1.1071

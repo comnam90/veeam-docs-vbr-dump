@@ -1,5 +1,7 @@
 ---
 title: "Sync-ThinkSystemHost"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-thinksystemhost.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Sync-ThinkSystemHost
 
-In this article
 
 Short Description
 
@@ -63,6 +64,4 @@ Related Commands
 
 [Get-ThinkSystemHost](get-thinksystemhost.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

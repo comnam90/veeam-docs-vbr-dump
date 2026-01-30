@@ -1,5 +1,7 @@
 ---
 title: "Retention for Archived Log Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_backup_retention_hv.html"
 last_updated: "3/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Retention for Archived Log Backup
 
-In this article
 
 Archived log backups are stored in files of the proprietary Veeam format — VLB. Veeam Backup & Replication keeps archived log backups together with the VM image-level backup. The target location of VLB files depends on the type of the backup repository:
 
@@ -35,6 +36,4 @@ If you select this retention method, you must make sure that retention policies 
 
 ![Retention for Archived Log Backup](images/archived_log_retention_days.webp)
 
-Page updated 3/3/2025
 
-Page content applies to build 13.0.1.1071

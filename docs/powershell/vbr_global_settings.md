@@ -1,5 +1,7 @@
 ---
 title: "Veeam Backup & Replication Settings"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbr_global_settings.html"
 last_updated: "7/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Backup & Replication Settings
 
-In this article
 
 The following topics contain instructions on general settings for Veeam Backup & Replication by means of Veeam PowerShell.
 
@@ -21,6 +22,4 @@ In this section
 * [Configuring Security Settings](vbr_security_settings.md)
 * [Specifying Session History Settings](history_options.md)
 
-Page updated 7/3/2024
 
-Page content applies to build 13.0.1.1071

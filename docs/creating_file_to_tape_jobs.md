@@ -1,5 +1,7 @@
 ---
 title: "Creating File to Tape Jobs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/creating_file_to_tape_jobs.html"
 last_updated: "10/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating File to Tape Jobs
 
-In this article
 
 To write files to tape, you should create a file to tape job using the New File to Tape Job wizard. This section will guide you through all steps of the wizard and provide explanation on available options.
 
@@ -25,6 +26,4 @@ To create a file to tape job, follow the next steps:
 8. [Define a job schedule](gfs_file_to_tape_schedule.md).
 9. [Finish working with the wizard](files_to_tape_review.md).
 
-Page updated 10/2/2025
 
-Page content applies to build 13.0.1.1071

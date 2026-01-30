@@ -1,5 +1,7 @@
 ---
 title: "Unstructured Data Backup to Tape"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_to_tape.html"
 last_updated: "5/27/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Unstructured Data Backup to Tape
 
-In this article
 
 With Veeam Backup & Replication you can easily back up to tape and restore unstructured data of various sources. You can protect the following types of data:
 
@@ -25,6 +26,4 @@ In This Section
 * [Viewing Files and Objects on Tape](view_files_on_tape.md)
 * [Viewing Unstructured Data Backup Properties](tapes_view_data_backup_properties.md)
 
-Page updated 5/27/2024
 
-Page content applies to build 13.0.1.1071

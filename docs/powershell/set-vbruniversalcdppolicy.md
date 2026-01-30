@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRUniversalCDPPolicy"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbruniversalcdppolicy.html"
 last_updated: "11/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRUniversalCDPPolicy
 
-In this article
 
 Short Description
 
@@ -80,6 +81,4 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

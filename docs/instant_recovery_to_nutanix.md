@@ -1,5 +1,7 @@
 ---
 title: "Instant Recovery to Nutanix AHV"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_to_nutanix.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Instant Recovery to Nutanix AHV
 
-In this article
 
 With Instant Recovery to Nutanix AHV, you can immediately recover different workloads as Nutanix AHV VMs. You can use Instant Recovery to Nutanix AHV to migrate the entire infrastructure or individual VMs to a Nutanix AHV cluster.
 
@@ -44,6 +45,4 @@ The procedure of restore to Nutanix AHV practically does not differ from the pro
 
 [![Launch Instant Recovery to Nutanix AHV](images/instant_recovery_to_nutanix.webp)](images/instant_recovery_to_nutanix.webp "Launch Instant Recovery to Nutanix AHV")
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

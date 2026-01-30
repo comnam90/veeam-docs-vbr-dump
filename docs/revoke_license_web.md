@@ -1,5 +1,7 @@
 ---
 title: "Revoking License Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/revoke_license_web.html"
 last_updated: "11/14/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Revoking License Using Web UI
 
-In this article
 
 To revoke a license in the Veeam Backup & Replication web UI, do the following:
 
@@ -25,6 +26,4 @@ The steps to revoke licenses for Veeam Agent machines are slightly different. Fo
 
 [![Revoking License Using Web UI](images/license_revoke_web.webp)](images/license_revoke_web.webp)
 
-Page updated 11/14/2025
 
-Page content applies to build 13.0.1.1071

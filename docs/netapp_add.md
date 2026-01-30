@@ -1,5 +1,7 @@
 ---
 title: "Adding NetApp ONTAP"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_add.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding NetApp ONTAP
 
-In this article
 
 Before you add to the backup infrastructure a NetApp storage system running ONTAP, check [Planning and Preparation](storage_limitations.md). Then use the New NetApp Data ONTAP Storage wizard to add the storage system.
 
@@ -20,6 +21,4 @@ Before you add to the backup infrastructure a NetApp storage system running ONTA
 7. [Apply settings](netapp_add_apply.md).
 8. [Finish working with wizard](netapp_add_rescan.md).
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Restoring Specific Files and Folders"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_recovery_restore_files_folders.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Restoring Specific Files and Folders
 
-In this article
 
 You can restore specific files and folders to the original or a new location. This option can be useful, for example, if you need to get an older version of some files and folders from the backup.
 
@@ -26,6 +27,4 @@ Before you restore specific files and folders, [check prerequisites](restore_fil
 7. [Specify the destination for file restore](restore_files_folders_destination.md).
 8. [Finish working with the wizard](restore_files_folders_summary2.md).
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

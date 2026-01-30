@@ -1,5 +1,7 @@
 ---
 title: "VBRViCloudProviderNetworkAppliance"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrvicloudprovidernetworkappliance.html"
 last_updated: "11/6/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRViCloudProviderNetworkAppliance
 
-In this article
 
 Contains VMware network appliance on service provider side.
 
@@ -31,6 +32,4 @@ Related Commands
 
 [Network Appliance](user_network_appliance.md)
 
-Page updated 11/6/2023
 
-Page content applies to build 13.0.1.1071

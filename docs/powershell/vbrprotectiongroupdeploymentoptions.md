@@ -1,5 +1,7 @@
 ---
 title: "VBRProtectionGroupDeploymentOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrprotectiongroupdeploymentoptions.html"
 last_updated: "2/16/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # VBRProtectionGroupDeploymentOptions
 
-In this article
 
 Contains Veeam Agent deployment settings for a protection group.
 
@@ -25,6 +26,4 @@ Related Commands
 
 [New-VBRProtectionGroupDeploymentOptions](new-vbrprotectiongroupdeploymentoptions.md)
 
-Page updated 2/16/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Creating Veeam Recovery Media"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_media_create.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Veeam Recovery Media
 
-In this article
 
 You can use the backup console to create a Veeam Recovery Media for a Veeam Agent computer that you manage in Veeam Backup & Replication. The process of creating a Veeam Recovery Media in Veeam Backup & Replication practically does not differ from the same procedure performed on a Veeam Agent computer. To learn more about the Veeam Recovery Media, see the [Veeam Recovery Media](https://helpcenter.veeam.com/docs/agentforwindows/userguide/recovery_media.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
 
@@ -21,6 +22,4 @@ Before you create a Veeam Recovery Media, [check prerequisites](image_create_bef
 4. [Review recovery image settings](image_create_review.md).
 5. [Take additional steps to finalize recovery media creation](image_create_after.md).
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

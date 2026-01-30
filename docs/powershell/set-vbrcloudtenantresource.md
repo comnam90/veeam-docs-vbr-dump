@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRCloudTenantResource"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcloudtenantresource.html"
 last_updated: "10/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRCloudTenantResource
 
-In this article
 
 Short Description
 
@@ -73,6 +74,4 @@ Related Commands
 * [Get-VBRWANAccelerator](get-vbrwanaccelerator.md)
 * [Set-VBRCloudTenant](set-vbrcloudtenant.md)
 
-Page updated 10/7/2025
 
-Page content applies to build 13.0.1.1071

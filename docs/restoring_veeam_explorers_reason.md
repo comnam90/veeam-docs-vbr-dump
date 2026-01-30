@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Restore Reason"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_reason.html"
 last_updated: "12/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Restore Reason
 
-In this article
 
 At the Reason step of the wizard, enter a reason for restoring the application item. The information you provide will be saved in the session history, and you will be able to view it later.
 
@@ -18,6 +19,4 @@ At the Reason step of the wizard, enter a reason for restoring the application i
 
 ![Step 5. Specify Restore Reason](images/application_item_restore_ad_reason.webp)
 
-Page updated 12/3/2025
 
-Page content applies to build 13.0.1.1071

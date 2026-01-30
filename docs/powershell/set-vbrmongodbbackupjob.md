@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRMongoDBBackupJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrmongodbbackupjob.html"
 last_updated: "7/30/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRMongoDBBackupJob
 
-In this article
 
 Short Description
 
@@ -102,6 +103,4 @@ Related Commands
 * [New-VBRMongoDBOplogProcessingOptions](new-vbrmongodboplogprocessingoptions.md)
 * [Set-VBRMongoDBOplogProcessingOptions](set-vbrmongodboplogprocessingoptions.md)
 
-Page updated 7/30/2025
 
-Page content applies to build 13.0.1.1071

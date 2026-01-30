@@ -1,5 +1,7 @@
 ---
 title: "Required Job Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_job_settings.html"
 last_updated: "11/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Required Job Settings
 
-In this article
 
 You can create backups of SAP HANA databases using application backup policies managed by Veeam Backup & Replication and backup jobs managed by a standalone Veeam Plug-In for SAP HANA.
 
@@ -20,6 +21,4 @@ You can create backups of SAP HANA databases using application backup policies m
 
 After the backups are successfully created using one of these methods, you can use Veeam Explorer for SAP HANA to restore your SAP HANA data.
 
-Page updated 11/6/2025
 
-Page content applies to build 13.0.1.1071

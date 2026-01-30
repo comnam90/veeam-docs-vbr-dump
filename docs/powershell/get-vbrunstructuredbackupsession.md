@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRUnstructuredBackupSession"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackupsession.html"
 last_updated: "8/14/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRUnstructuredBackupSession
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ This command returns all backup sessions for the New backup session file backup 
 | --- |
 | Get-VBRUnstructuredBackupSession -Name "New backup session\*" |
 
-Page updated 8/14/2024
 
-Page content applies to build 13.0.1.1071

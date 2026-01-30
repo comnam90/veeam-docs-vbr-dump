@@ -1,5 +1,7 @@
 ---
 title: "Immutability for Scale-Out Backup Repositories"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_sobr.html"
 last_updated: "1/7/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Immutability for Scale-Out Backup Repositories
 
-In this article
 
 Veeam Backup & Replication allows you to prohibit deletion of data from object storage repositories added as the extents of the scale-out backup repository by making that data temporarily immutable. It is done for increased security: immutability protects your data against loss as a result of attacks, malware activity or other injurious actions.
 
@@ -36,6 +37,4 @@ In This Section
 
 [GFS Backups Immutability Period](gfs_immutability_sobr.md)
 
-Page updated 1/7/2025
 
-Page content applies to build 13.0.1.1071

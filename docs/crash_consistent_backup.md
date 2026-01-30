@@ -1,5 +1,7 @@
 ---
 title: "Crash-Consistent Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/crash_consistent_backup.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Crash-Consistent Backup
 
-In this article
 
 Crash-consistent backup is a proprietary Veeam method of creating crash-consistent VM images. A crash-consistent image can be compared to the state of a VM that has been manually reset. Unlike an offline backup, crash-consistent backup does not require any VM downtime.
 
@@ -38,6 +39,4 @@ Related Topics
 
 * [Creating Replication Jobs](replica_job_hv.md)
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

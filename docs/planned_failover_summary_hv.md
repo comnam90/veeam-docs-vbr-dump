@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Finish Working with Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planned_failover_summary_hv.html"
 last_updated: "1/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Finish Working with Wizard
 
-In this article
 
 At the Summary step of the wizard, review details of the failover task and click Finish to start the failover process. Once planned failover is complete, VM replicas will be started on the target host.
 
@@ -21,6 +22,4 @@ Planned failover is an intermediate step that needs to be finalized. You can fin
 
 ![Step 4. Finish Working with Wizard](images/planned_failover_summary_hv.webp)
 
-Page updated 1/29/2025
 
-Page content applies to build 13.0.1.1071

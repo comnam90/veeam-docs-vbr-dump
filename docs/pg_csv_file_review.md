@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Review Components"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pg_csv_file_review.html"
 last_updated: "8/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Review Components
 
-In this article
 
 At the Review step of the wizard, review what Veeam Backup & Replication components are already installed on the distribution server specified for the protection group and what components will be installed.
 
@@ -16,6 +17,4 @@ At the Review step of the wizard, review what Veeam Backup & Replication compone
 
 ![Step 7. Review Components](images/pg_csv_review.webp "Specify Review Components")
 
-Page updated 8/11/2025
 
-Page content applies to build 13.0.1.1071

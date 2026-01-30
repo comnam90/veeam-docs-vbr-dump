@@ -1,5 +1,7 @@
 ---
 title: "Eject-VBRTapeDrive (obsolete)"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/eject-vbrtapedrive.html"
 last_updated: "3/6/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Eject-VBRTapeDrive (obsolete)
 
-In this article
 
 Short Description
 
@@ -62,6 +63,4 @@ Related Commands
 
 [Get-VBRTapeDrive](get-vbrtapedrive.md)
 
-Page updated 3/6/2024
 
-Page content applies to build 13.0.1.1071

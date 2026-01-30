@@ -1,5 +1,7 @@
 ---
 title: "Encryption for Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_for_capacity_tier.html"
 last_updated: "5/6/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Encryption for Capacity Tier
 
-In this article
 
 Veeam Backup & Replication allows you to encrypt archived data. This helps you protect the data from unauthorized access.
 
@@ -31,6 +32,4 @@ To access the data in the archive extent you need to provide the password that i
 | Important |
 | Consider the following:   * When you disable encryption, the encryption key is added to the file system of your backup repository and all encrypted backups located on the capacity tier become unencrypted. If you enable encryption again, Veeam Backup & Replication will encrypt only new data with a new encryption key. * If you enable encryption for the capacity extent that already contains backups, it will not automatically encrypt these backups. If a backup job creates an active full or synthetic full backup, it will consist of encrypted and unencrypted data blocks after offload to the capacity tier. This backup will remain in the capacity tier in this state until new encrypted data blocks completely replace the unencrypted blocks. * If you enable encryption after you have already offloaded data to capacity tier, Veeam Backup & Replication will not encrypt previously offloaded backup chains. |
 
-Page updated 5/6/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Data Export"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_export.html"
 last_updated: "10/31/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Export
 
-In this article
 
 You can use Veeam Explorer for Microsoft Teams to export posts published in a team channel to a file of the HTML format. You can export all posts of a channel, export posts created during a specified time period or export individual posts.
 
@@ -21,6 +22,4 @@ In This Section
 
 * [Exporting Individual Posts](vet_export_one.md)
 
-Page updated 10/31/2025
 
-Page content applies to build 13.0.1.1071

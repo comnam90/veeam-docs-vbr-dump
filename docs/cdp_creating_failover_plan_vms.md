@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Select VMs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_creating_failover_plan_vms.html"
 last_updated: "9/25/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Select VMs
 
-In this article
 
 At the Virtual Machines step of the wizard, select VMs that you want to add to the failover plan. You can add separate VMs and whole VM containers.
 
@@ -29,6 +30,4 @@ To quickly find the necessary VMs or VM containers, you can use the search field
 
 ![Step 3. Select VMs ](images/failover_plan_vms_vm.webp)
 
-Page updated 9/25/2025
 
-Page content applies to build 13.0.1.1071

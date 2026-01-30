@@ -1,5 +1,7 @@
 ---
 title: "Step 2. Select Authentication Method"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_credentials_lib.html"
 last_updated: "8/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 2. Select Authentication Method
 
-In this article
 
 At this step of the wizard, select either modern or basic authentication, or authenticate on an on-premises Microsoft SharePoint server, and specify authentication settings.
 
@@ -58,6 +59,4 @@ For more information about on how to restore Microsoft SharePoint document libra
 
 [![Restoring from Microsoft SQL Server Database](images/vbr_target_site.webp)](images/vbr_target_site.webp "Restoring from Microsoft SQL Server Database")
 
-Page updated 8/22/2024
 
-Page content applies to build 13.0.1.1071

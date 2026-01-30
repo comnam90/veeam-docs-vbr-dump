@@ -1,5 +1,7 @@
 ---
 title: "Veeam Configuration Database Connection Utility"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_utility.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Configuration Database Connection Utility
 
-In this article
 
 Veeam Backup & Replication comes with the configuration database connection utility that allows you to manage connection settings for Veeam Backup & Replication, Veeam Backup Enterprise Manager and Microsoft Entra ID. Using this utility, you can:
 
@@ -25,6 +26,4 @@ Related Topics
 
 [Using Veeam Configuration Database Connection Utility](dbconfig_utility_linux.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Managing Restore Session"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_manage_session.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Restore Session
 
-In this article
 
 After you finish the steps of the Restore wizard, Veeam Explorer for PostgreSQL starts a restore session for each of the selected instances.
 
@@ -41,6 +42,4 @@ Alternatively, you can right-click the Restore node or the relevant instance and
 
 [![Finalizing Restore Session](images/vep_restore_cancel.webp)](images/vep_restore_cancel.webp "Finalizing Restore Session")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

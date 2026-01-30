@@ -1,5 +1,7 @@
 ---
 title: "Copying Backups to Capacity Tier"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_copy.html"
 last_updated: "8/22/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Copying Backups to Capacity Tier
 
-In this article
 
 Veeam Backup & Replication allows you to copy backups from the performance extents of your scale-out backup repository to capacity extents as soon as these backups are created.
 
@@ -51,6 +52,4 @@ Related Topics
 * [Moving Backups to Capacity Tier](capacity_tier_move.md)
 * [How Downloading from Capacity Tier Works](capacity_tier_download.md)
 
-Page updated 8/22/2024
 
-Page content applies to build 13.0.1.1071

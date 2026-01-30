@@ -1,5 +1,7 @@
 ---
 title: "Maintenance Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup_copy_advanced_maintenance.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Maintenance Settings
 
-In this article
 
 To specify settings for backup files stored in the target backup repository:
 
@@ -31,6 +32,4 @@ By default, the compact operation is disabled. For details on compact of full ba
 
 ![Maintenance Settings](images/backup_copy_advanced_maintenance_mongo.webp)
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

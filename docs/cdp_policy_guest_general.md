@@ -1,5 +1,7 @@
 ---
 title: "Application-Aware Processing and Transaction Logs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_guest_general.html"
 last_updated: "1/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Application-Aware Processing and Transaction Logs
 
-In this article
 
 Application-aware processing helps create transactionally consistent replicas. The transactionally consistent replicas guarantee proper recovery of applications without data loss. For more information on application-aware processing, see [Application-Aware Processing](application_aware_processing.md).
 
@@ -59,6 +60,4 @@ Related Topics
 * [Microsoft SQL Server Transaction Log Settings](cdp_policy_sql_trans_logs.md)
 * [Oracle Archived Log Settings](cdp_policy_oracle_trans_logs.md)
 
-Page updated 1/23/2025
 
-Page content applies to build 13.0.1.1071

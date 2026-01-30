@@ -1,5 +1,7 @@
 ---
 title: "Backup Infrastructure for Replication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_components_hv.html"
 last_updated: "3/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Infrastructure for Replication
 
-In this article
 
 Veeam Backup & Replication uses the following components for the replication process:
 
@@ -62,6 +63,4 @@ Related Topics
 
 [Replication Scenarios](replication_scenarios_hv.md)
 
-Page updated 3/13/2025
 
-Page content applies to build 13.0.1.1071

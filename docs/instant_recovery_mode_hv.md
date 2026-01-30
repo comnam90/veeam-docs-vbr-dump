@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Select Recovery Mode"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_mode_hv.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Select Recovery Mode
 
-In this article
 
 This step is available only if you recover Hyper-V VMs.
 
@@ -23,6 +24,4 @@ At the Recovery Mode step of the wizard, choose the necessary restore mode:
 
 ![Step 4. Select Recovery Mode](images/hyperv_instant_recovery_mode.webp)
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

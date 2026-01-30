@@ -1,5 +1,7 @@
 ---
 title: "Assign-VBRInstanceWorkload"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/assign-vbrinstanceworkload.html"
 last_updated: "6/17/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Assign-VBRInstanceWorkload
 
-In this article
 
 Short Description
 
@@ -60,6 +61,4 @@ Related Commands
 * [Get-VBRInstalledLicense](get-vbrinstalledlicense.md)
 * [Get-VBRLicensedSocketWorkload](get-vbrlicensedsocketworkload.md)
 
-Page updated 6/17/2024
 
-Page content applies to build 13.0.1.1071

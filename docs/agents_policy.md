@@ -1,5 +1,7 @@
 ---
 title: "Backup Policy"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_policy.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup Policy
 
-In this article
 
 In some cases, the backup job managed by the backup server may be not suitable for data backup with Veeam Agents. For example, you may want use Veeam Agents to back up data of computers that reside in a remote location and have limited connection to the Veeam backup server and backup repository. For such scenarios, Veeam Backup & Replication offers the concept of the backup policy.
 
@@ -96,6 +97,4 @@ Every 6 hours, or when the backup policy starts, Veeam Agent checks whether job 
 
 ![Backup Policy](images/backup_policy_hiw_flex.webp)
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

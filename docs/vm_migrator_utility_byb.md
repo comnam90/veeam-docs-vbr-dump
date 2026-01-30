@@ -1,5 +1,7 @@
 ---
 title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_migrator_utility_byb.html"
 last_updated: "1/7/2026"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Before You Begin
 
-In this article
 
 Before using Veeam VM Migrator, consider the following:
 
@@ -25,6 +26,4 @@ For more information on replica mapping, see [Replica Seeding and Mapping](repli
 * The VM containers will not be updated, you will need to manually re-add all folders, tags, datastores, clusters and resource pools in the list of VMs in backup and/or replica job settings.
 * You can not resolve MORef-ID misalignment for jobs that target a Cloud Connect repository.
 
-Page updated 1/7/2026
 
-Page content applies to build 13.0.1.1071

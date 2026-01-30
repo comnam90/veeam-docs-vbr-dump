@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Specify File Server Processing Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_new_file_server_wizard_processing.html"
 last_updated: "11/3/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Specify File Server Processing Settings
 
-In this article
 
 At the Processing step of the wizard, define file server processing settings:
 
@@ -17,6 +18,4 @@ At the Processing step of the wizard, define file server processing settings:
 
 ![Step 3. Specify File Server Processing Settings](images/win_file_share_wizard_processing.webp "Specify Processing Settings for Managed Server File Share")
 
-Page updated 11/3/2023
 
-Page content applies to build 13.0.1.1071

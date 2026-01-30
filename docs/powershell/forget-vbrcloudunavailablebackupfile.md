@@ -1,5 +1,7 @@
 ---
 title: "Forget-VBRCloudUnavailableBackupFile"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/forget-vbrcloudunavailablebackupfile.html"
 last_updated: "2/29/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Forget-VBRCloudUnavailableBackupFile
 
-In this article
 
 Short Description
 
@@ -68,6 +69,4 @@ Related Commands
 * [Get-VBRCloudTenant](get-vbrcloudtenant.md)
 * [Get-VBRCloudUnavailableBackupFile](get-vbrcloudunavailablebackupfile.md)
 
-Page updated 2/29/2024
 
-Page content applies to build 13.0.1.1071

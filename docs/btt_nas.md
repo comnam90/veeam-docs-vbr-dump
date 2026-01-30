@@ -1,5 +1,7 @@
 ---
 title: "Backup to Tape for Unstructured Data Backups"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/btt_nas.html"
 last_updated: "10/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup to Tape for Unstructured Data Backups
 
-In this article
 
 You can use backup to tape to write backups and backup copies created by file and object storage backup jobs to tapes. For more information on the file share and object storage backup, see [Unstructured Data Backup](unstructured_data_backup.md).
 
@@ -35,6 +36,4 @@ When creating a backup to tape job for additionally securing unstructured data b
 
 ![Backup to Tape for Unstructured Data Backups](images/btt_nas.webp)
 
-Page updated 10/10/2025
 
-Page content applies to build 13.0.1.1071

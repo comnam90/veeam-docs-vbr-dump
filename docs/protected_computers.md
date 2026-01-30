@@ -1,5 +1,7 @@
 ---
 title: "Managing Protected Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers.html"
 last_updated: "4/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Protected Computers
 
-In this article
 
 You can perform the following operations with computers added to the inventory in Veeam Backup & Replication:
 
@@ -25,6 +26,4 @@ You can perform the following operations with computers added to the inventory i
 * [Uninstalling Veeam Plug-In and Other Veeam Components](protected_computers_uninstall_everything.md).
 * [Remove a protected computer from a protection group](protected_computers_remove.md).
 
-Page updated 4/4/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Installing License Using Web UI"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_license_web.html"
 last_updated: "8/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Installing License Using Web UI
 
-In this article
 
 When you access the Veeam Backup & Replication web UI for the first time, you are asked to specify a path to the license file. If you do not specify a path to the license file, you are not allowed to access the web UI and will be shown the prompt to install a license until you do it.
 
@@ -38,6 +39,4 @@ If backup servers are connected to Veeam Backup Enterprise Manager, Veeam Backup
 
 For information on Veeam Backup Enterprise Manager license, see the [Licensing](https://helpcenter.veeam.com/docs/vbr/em/managing_licenses.html?ver=13) section of the Veeam Backup Enterprise Manager Guide.
 
-Page updated 8/19/2025
 
-Page content applies to build 13.0.1.1071

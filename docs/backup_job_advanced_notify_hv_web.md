@@ -1,5 +1,7 @@
 ---
 title: "Notification Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_notify_hv_web.html"
 last_updated: "8/21/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Notification Settings
 
-In this article
 
 To specify notification settings for the backup job:
 
@@ -34,6 +35,4 @@ Email notifications will be sent if you configure global email notification sett
 
 [![Click to zoom in](images/hv_backup_job_settings_notify_web.webp)](images/hv_backup_job_settings_notify_web.webp "Click to zoom in")
 
-Page updated 8/21/2025
 
-Page content applies to build 13.0.1.1071

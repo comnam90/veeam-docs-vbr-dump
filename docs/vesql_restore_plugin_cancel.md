@@ -1,5 +1,7 @@
 ---
 title: "Canceling Restore"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_cancel.html"
 last_updated: "9/23/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Canceling Restore
 
-In this article
 
 After you finish the steps of the Restore wizard, Veeam Explorer for Microsoft SQL Server starts a restore session.
 
@@ -24,6 +25,4 @@ Alternatively, you can right-click the Restore node or the relevant restore sess
 
 [![Canceling Restore](images/vesql_restore_plugin_cancel.webp)](images/vesql_restore_plugin_cancel.webp "Canceling Restore")
 
-Page updated 9/23/2025
 
-Page content applies to build 13.0.1.1071

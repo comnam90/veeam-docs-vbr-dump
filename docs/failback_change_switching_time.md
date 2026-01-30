@@ -1,5 +1,7 @@
 ---
 title: "Changing Switching Time"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_change_switching_time.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Changing Switching Time
 
-In this article
 
 The following instructions apply if you have selected to switch from replicas to production VMs manually or at the scheduled time at the Failback Mode step of the Failback wizard.
 
@@ -19,6 +20,4 @@ To change the time when Veeam Backup & Replication will switch from replicas to 
 
 [![Change switching time](images/cdp_failback_switchover_time.webp)](images/cdp_failback_switchover_time.webp "Change switching time")
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

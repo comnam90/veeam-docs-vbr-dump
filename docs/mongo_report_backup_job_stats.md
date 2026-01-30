@@ -1,5 +1,7 @@
 ---
 title: "Viewing Backup Policy Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_report_backup_job_stats.html"
 last_updated: "8/26/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing Backup Policy Statistics
 
-In this article
 
 You can view statistics about application backup policies configured in Veeam Backup & Replication. Veeam Backup & Replication displays statistics in the following way:
 
@@ -29,6 +30,4 @@ To view application backup policy statistics:
 
 [![View Backup Statistics](images/mongo_policy_statistics.webp)](images/mongo_policy_statistics.webp "View Backup Statistics")
 
-Page updated 8/26/2025
 
-Page content applies to build 13.0.1.1071

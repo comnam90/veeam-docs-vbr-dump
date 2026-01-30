@@ -1,5 +1,7 @@
 ---
 title: "Creating Job for Windows Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_create_win.html"
 last_updated: "6/19/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Job for Windows Computers
 
-In this article
 
 To back up data of a computer protected with Veeam Agent for Microsoft Windows, you can configure a Veeam Agent backup job in Veeam Backup & Replication.
 
@@ -26,6 +27,4 @@ Before configuring a Veeam Agent backup job, [check prerequisites](agent_job_bef
 11. [Specify the backup schedule](agent_job_schedule.md).
 12. [Review backup job settings](agent_job_review.md).
 
-Page updated 6/19/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Backup of ACLs"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_unix_acl.html"
 last_updated: "12/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Backup of ACLs
 
-In this article
 
 Veeam Agent for IBM AIX supports backup and restore of NFSv4 Access Control Lists (ACLs).
 
@@ -25,6 +26,4 @@ Considerations and Limitations
 
 * You cannot restore ACLs when y ou perform guest file restore in Veeam Backup & Replication.
 
-Page updated 12/2/2025
 
-Page content applies to build 13.0.1.1071

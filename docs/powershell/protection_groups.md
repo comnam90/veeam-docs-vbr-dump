@@ -1,5 +1,7 @@
 ---
 title: "Veeam Agent Management Protection Groups"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/protection_groups.html"
 last_updated: "7/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Veeam Agent Management Protection Groups
 
-In this article
 
 You can use the cmdlet in this topic to perform the following operations.
 
@@ -31,6 +32,4 @@ You can use the cmdlet in this topic to perform the following operations.
 | [Get-VBRBackupServerDeployerCertificate](get-vbrbackupserverdeployercertificate.md) | Downloads Veeam Installer Service and Veeam Deployer Service certificates to the specified location. |
 | [Remove-VBRBackupServerDeployerCertificate](remove-vbrbackupserverdeployercertificate.md) | Removes Veeam Deployer Service certificates from the Veeam Backup & Replication database. |
 
-Page updated 7/29/2025
 
-Page content applies to build 13.0.1.1071

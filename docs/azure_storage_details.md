@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Specify Object Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_storage_details.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Specify Object Storage Settings
 
-In this article
 
 At the Container step of the wizard, specify the container, the folder that will be used to store data and select an access tier in which Veeam Backup & Replication will keep blobs. For more information on access tiers, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview).
 
@@ -56,6 +57,4 @@ To specify the the access tier that you want assign to data blocks that you keep
 
 ![Step 4. Specify Object Storage Settings](images/azure_access_tier.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

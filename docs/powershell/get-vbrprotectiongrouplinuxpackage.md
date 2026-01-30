@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRProtectionGroupLinuxPackage"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrprotectiongrouplinuxpackage.html"
 last_updated: "4/15/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRProtectionGroupLinuxPackage
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ Examples
 | --- | --- |
 | This command returns an array of Debian and Ubuntu packages with the X64 operating system version.  |  | | --- | | Get-VBRProtectionGroupLinuxPackage -LinuxDistributionName "debian", "ubuntu" -LinuxPackageBitness X64 | |
 
-Page updated 4/15/2024
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRCloudVLANConfiguration"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudvlanconfiguration.html"
 last_updated: "9/7/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRCloudVLANConfiguration
 
-In this article
 
 Short Description
 
@@ -49,6 +50,4 @@ This command returns all configured VLANs.
 | --- |
 | Get-VBRCloudVLANConfiguration |
 
-Page updated 9/7/2023
 
-Page content applies to build 13.0.1.1071

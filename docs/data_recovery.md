@@ -1,5 +1,7 @@
 ---
 title: "Data Recovery for VMware vSphere"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_recovery.html"
 last_updated: "8/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Data Recovery for VMware vSphere
 
-In this article
 
 Veeam Backup & Replication offers the following types of recovery for the VMware vSphere platform:
 
@@ -27,6 +28,4 @@ Related Topics
 * [Data Recovery for VMware Cloud Director](vcloud_director_vm_restore.md)
 * [VM Restore from Tape to Infrastructure](vm_restore_from_tape.md)
 
-Page updated 8/18/2025
 
-Page content applies to build 13.0.1.1071

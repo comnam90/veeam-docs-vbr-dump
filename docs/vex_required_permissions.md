@@ -1,5 +1,7 @@
 ---
 title: "Permissions"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_required_permissions.html"
 last_updated: "11/20/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Permissions
 
-In this article
 
 The following table lists the user account permissions necessary to launch Veeam Explorer for Microsoft Exchange and restore Microsoft Exchange data.
 
@@ -59,6 +60,4 @@ To recall given access level, run one of the following cmdlets:
 | --- |
 | Remove-ManagementRoleAssignment -Identity "<role\_name>" |
 
-Page updated 11/20/2025
 
-Page content applies to build 13.0.1.1071

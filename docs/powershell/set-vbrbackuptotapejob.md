@@ -1,5 +1,7 @@
 ---
 title: "Set-VBRBackupToTapeJob"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrbackuptotapejob.html"
 last_updated: "5/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Set-VBRBackupToTapeJob
 
-In this article
 
 Short Description
 
@@ -113,6 +114,4 @@ Related Commands
 * [New-VBRJobScriptOptions](new-vbrjobscriptoptions.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
-Page updated 5/12/2025
 
-Page content applies to build 13.0.1.1071

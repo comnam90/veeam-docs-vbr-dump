@@ -1,5 +1,7 @@
 ---
 title: "Managing Protected Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_manage.html"
 last_updated: "11/4/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Managing Protected Computers
 
-In this article
 
 |  |
 | --- |
@@ -46,6 +47,4 @@ For Veeam Agent computers added to the protection group for pre-installed Veeam 
 * [Add a protected computer to a Veeam Agent backup job](agents_protected_computers_add.md).
 * [View properties of a protected computer](agents_protected_computers_properties.md).
 
-Page updated 11/4/2025
 
-Page content applies to build 13.0.1.1071

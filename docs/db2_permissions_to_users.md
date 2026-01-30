@@ -1,5 +1,7 @@
 ---
 title: "Granting Permissions to Users"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_permissions_to_users.html"
 last_updated: "9/5/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Granting Permissions to Users
 
-In this article
 
 When you install Veeam Plug-In for IBM Db2, full access rights to the plug-in configuration file are automatically granted to all users. To protect sensitive information that is stored in the Veeam Plug-In configuration file (veeam\_config.xml) from unwanted access, we recommend limiting access to the Veeam Plug-In configuration file to a dedicated group of users.
 
@@ -56,6 +57,4 @@ where <groupName> is the name of the created group.
 | --- |
 | sudo chmod 660 /opt/veeam/VeeamPluginforDB2/veeam\_config.xml |
 
-Page updated 9/5/2025
 
-Page content applies to build 13.0.1.1071

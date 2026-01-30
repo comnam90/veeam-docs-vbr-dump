@@ -1,5 +1,7 @@
 ---
 title: "Step 3. Log In to Microsoft 365"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_login_copy.html"
 last_updated: "8/21/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 3. Log In to Microsoft 365
 
-In this article
 
 This step is only available if you have selected the Modern authentication option at the [previous step](veod_select_authentication_method_copy.md) of the wizard.
 
@@ -31,6 +32,4 @@ Make sure to log in with the user account that has the SharePoint Administrator 
 
 [![Log In to Microsoft 365](images/logon_restore_next.webp)](images/logon_restore_next.webp "Log In to Microsoft 365")
 
-Page updated 8/21/2024
 
-Page content applies to build 13.0.1.1071

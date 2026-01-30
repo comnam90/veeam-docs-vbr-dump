@@ -1,5 +1,7 @@
 ---
 title: "Stop-VBRNASInstantRecovery"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrnasinstantrecovery.html"
 last_updated: "9/4/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Stop-VBRNASInstantRecovery
 
-In this article
 
 Short Description
 
@@ -66,6 +67,4 @@ Related Commands
 
 [Get-VBRNASInstantRecovery](get-vbrnasinstantrecovery.md)
 
-Page updated 9/4/2024
 
-Page content applies to build 13.0.1.1071

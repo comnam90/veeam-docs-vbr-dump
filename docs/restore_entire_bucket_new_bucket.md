@@ -1,5 +1,7 @@
 ---
 title: "Step 4. Create New Bucket or Container"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_entire_bucket_new_bucket.html"
 last_updated: "6/3/2024"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 4. Create New Bucket or Container
 
-In this article
 
 The New Bucket step is available if you select the New bucket option at the [Destination](restore_entire_bucket_destination.md) step.
 
@@ -24,6 +25,4 @@ At the New Bucket step of the wizard, create a new bucket or container where you
 
 ![Step 4. Create New Bucket or Container](images/restore_entire_bucket_new_bucket.webp "Specify Destination for Data Restore")
 
-Page updated 6/3/2024
 
-Page content applies to build 13.0.1.1071

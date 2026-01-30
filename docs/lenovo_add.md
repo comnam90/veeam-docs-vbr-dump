@@ -1,5 +1,7 @@
 ---
 title: "Adding Lenovo ThinkSystem DM/DG Series"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/lenovo_add.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Lenovo ThinkSystem DM/DG Series
 
-In this article
 
 Before you add a Lenovo ThinkSystem DM/DG series storage system to the backup infrastructure, check [Planning and Preparation](storage_limitations.md). To add the storage system to the backup infrastructure, use the New Lenovo ThinkSystem DM Series Storage wizard.
 
@@ -20,6 +21,4 @@ Before you add a Lenovo ThinkSystem DM/DG series storage system to the backup in
 7. [Apply settings](lenovo_add_apply.md).
 8. [Finish working with the wizard](lenovo_add_rescan.md).
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

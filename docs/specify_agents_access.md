@@ -1,5 +1,7 @@
 ---
 title: "Step 5. Specify Veeam Agent Access Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_agents_access.html"
 last_updated: "10/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 5. Specify Veeam Agent Access Options
 
-In this article
 
 [This step is available for Microsoft Windows-based backup server, and if you have selected the Block storage for Microsoft Windows servers check box at the [Specify Lenovo ThinkSystem Server Name or Address](lenovo_add_name.md) step of the wizard.]
 
@@ -41,6 +42,4 @@ After you finish working with the wizard, you can change the rescan scope and st
 
 ![Step 5. Specify Veeam Agent Access Options](images/lenovo_add_agent.webp)
 
-Page updated 10/17/2025
 
-Page content applies to build 13.0.1.1071

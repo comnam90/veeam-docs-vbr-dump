@@ -1,5 +1,7 @@
 ---
 title: "Adding VMware vSphere Servers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_vmware_server.html"
 last_updated: "9/29/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding VMware vSphere Servers
 
-In this article
 
 You must add to the backup infrastructure VMware vSphere servers that you plan to use as source and target for backup, replication and other activities.
 
@@ -18,6 +19,4 @@ Related Topics
 * [Adding VMware vSphere Server Using Console](add_vmware_server_console.md)
 * [Adding VMware vSphere Server Using Web UI](add_vmware_server_web.md)
 
-Page updated 9/29/2025
 
-Page content applies to build 13.0.1.1071

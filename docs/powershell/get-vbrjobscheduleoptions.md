@@ -1,5 +1,7 @@
 ---
 title: "Get-VBRJobScheduleOptions"
+product: "vbr"
+doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrjobscheduleoptions.html"
 last_updated: "11/18/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Get-VBRJobScheduleOptions
 
-In this article
 
 Short Description
 
@@ -58,6 +59,4 @@ Related Commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Get-VBRJobObject](get-vbrjobobject.md)
 
-Page updated 11/18/2025
 
-Page content applies to build 13.0.1.1071

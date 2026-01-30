@@ -1,5 +1,7 @@
 ---
 title: "Step 7. Specify Secure Restore Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_google_secure_restore.html"
 last_updated: "3/11/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 7. Specify Secure Restore Settings
 
-In this article
 
 This step is available if you restore Microsoft Windows workloads.
 
@@ -54,6 +55,4 @@ Click the Click to change link to specify the VPC and subnet for this network.
 
 ![Step 7. Specify Secure Restore Settings](images/restore_google_secure_restore.webp)
 
-Page updated 3/11/2025
 
-Page content applies to build 13.0.1.1071

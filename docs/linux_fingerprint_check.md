@@ -1,5 +1,7 @@
 ---
 title: "Host Authentication"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_fingerprint_check.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Host Authentication
 
-In this article
 
 In the Host authentication section of Veeam Backup & Replication settings, you can specify verification settings for protected machines.
 
@@ -24,6 +25,4 @@ You can select one of the following options:
 
 ![Host Authentication](images/security.webp)
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

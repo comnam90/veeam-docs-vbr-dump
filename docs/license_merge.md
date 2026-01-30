@@ -1,5 +1,7 @@
 ---
 title: "Merging Licenses"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_merge.html"
 last_updated: "10/16/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Merging Licenses
 
-In this article
 
 Merging licenses is an option for customers who have a Perpetual Socket license. If you have a Perpetual Socket license, and want to also protect, for example, your cloud or physical workloads, or work with Veeam Plug-Ins, you can obtain an instance license and merge it with the socket license.
 
@@ -64,6 +65,4 @@ Splitting Licenses
 
 To split licenses, contact [Veeam Customer Support](https://www.veeam.com/support.html).
 
-Page updated 10/16/2025
 
-Page content applies to build 13.0.1.1071

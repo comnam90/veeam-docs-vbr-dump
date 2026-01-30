@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant Recovery Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_launch_hv.html"
 last_updated: "11/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant Recovery Wizard
 
-In this article
 
 To launch the Instant Recovery to Hyper-V wizard, do one of the following:
 
@@ -33,6 +34,4 @@ To launch the Instant Recovery to Hyper-V wizard, do one of the following:
 
 [![Step 1. Launch Instant Recovery Wizard](images/hyperv_instant_recovery_task.webp)](images/hyperv_instant_recovery_task.webp)
 
-Page updated 11/13/2025
 
-Page content applies to build 13.0.1.1071

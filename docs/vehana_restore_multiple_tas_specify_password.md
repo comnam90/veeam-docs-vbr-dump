@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify SYSTEM User Password"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_multiple_tas_specify_password.html"
 last_updated: "11/27/2023"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify SYSTEM User Password
 
-In this article
 
 This step of the wizard is only available if any of the databases selected at the [Select Databases](vehana_restore_multiple_tas_select_databases.md) step do not exist on the target server. In this case, the SAP HANA system creates new tenant databases on the target server and a new SYSTEM user for the new databases.
 
@@ -22,6 +23,4 @@ The password policy follows the default SAP HANA configuration — the password 
 
 [![Specifying System Password](images/vehana_specify_password_multiple.webp)](images/vehana_specify_password_multiple.webp "Specifying System Password")
 
-Page updated 11/27/2023
 
-Page content applies to build 13.0.1.1071

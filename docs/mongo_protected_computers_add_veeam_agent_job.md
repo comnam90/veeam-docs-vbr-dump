@@ -1,5 +1,7 @@
 ---
 title: "Adding Computer to Veeam Agent Backup Job"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_add_veeam_agent_job.html"
 last_updated: "9/2/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Adding Computer to Veeam Agent Backup Job
 
-In this article
 
 You can add a specific protected computer to a Veeam Agent backup job that you have configured in Veeam Backup & Replication. This may be useful if you want to create an image-level backup of the protected computer with Veeam Agent for Linux in addition to the application-level backup of MongoDB data. To learn more about Veeam Agent backup jobs, see [Adding Computer to Backup Job](agents_protected_computers_add.md).
 
@@ -26,6 +27,4 @@ To add a protected computer to a Veeam Agent backup job:
 
 [![View Properties of Protected Computer](images/mongo_protected_computer_add_to_VA_job.webp)](images/mongo_protected_computer_add_to_VA_job.webp "View Properties of Protected Computer")
 
-Page updated 9/2/2025
 
-Page content applies to build 13.0.1.1071

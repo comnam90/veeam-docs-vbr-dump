@@ -1,5 +1,7 @@
 ---
 title: "MongoDB Backup"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup.html"
 last_updated: "12/10/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # MongoDB Backup
 
-In this article
 
 MongoDB Backup is a backup solution integrated in Veeam Backup & Replication that allows you to back up MongoDB replica sets. With this solution, Veeam Backup & Replication installs Veeam components on MongoDB nodes, backs up volumes with MongoDB data and transfers backups to backup repositories configured in Veeam Backup & Replication.
 
@@ -30,6 +31,4 @@ In This Section
 * [Retention of MongoDB Backups](mongo_retention.md)
 * [Logs and Support](mongo_veeam_logs.md)
 
-Page updated 12/10/2025
 
-Page content applies to build 13.0.1.1071

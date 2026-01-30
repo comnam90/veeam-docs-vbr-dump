@@ -1,5 +1,7 @@
 ---
 title: "Viewing File Restore Session Statistics"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/view_flr_statistics.html"
 last_updated: "11/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Viewing File Restore Session Statistics
 
-In this article
 
 You can view statistics about performed guest OS file restore sessions.
 
@@ -27,6 +28,4 @@ The file restore statistics provide detailed data on file restore sessions:
 
 ![Viewing File Restore Session Statistics](images/statistics_flr.webp)
 
-Page updated 11/19/2025
 
-Page content applies to build 13.0.1.1071

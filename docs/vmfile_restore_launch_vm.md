@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmfile_restore_launch_vm.html"
 last_updated: "5/19/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Restore Wizard
 
-In this article
 
 To launch the Restore wizard, do one of the following:
 
@@ -18,6 +19,4 @@ In this case, you will pass to the [Restore Point](vmfile_restore_point_vm.md) s
 
 [![Step 1. Launch Restore Wizard](images/vmfilesrestore_task.webp)](images/vmfilesrestore_task.webp)
 
-Page updated 5/19/2025
 
-Page content applies to build 13.0.1.1071

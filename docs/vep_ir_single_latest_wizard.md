@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Instant Recovery Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_single_latest_wizard.html"
 last_updated: "8/13/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Instant Recovery Wizard
 
-In this article
 
 To launch the Instant Recovery wizard, do the following:
 
@@ -23,6 +24,4 @@ Alternatively, you can right-click an instance and select Instant recovery > Ins
 
 [![Launching Instant Recovery Wizard](images/vep_ir_latest_launch.webp)](images/vep_ir_latest_launch.webp "Launching Instant Recovery Wizard")
 
-Page updated 8/13/2025
 
-Page content applies to build 13.0.1.1071

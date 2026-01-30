@@ -1,5 +1,7 @@
 ---
 title: "Creating Policy for Mac Computers"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_create_mac.html"
 last_updated: "11/17/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Creating Policy for Mac Computers
 
-In this article
 
 To back up data of a computer protected with Veeam Agent for Mac, you must configure a Veeam Agent backup policy in Veeam Backup & Replication. This backup policy will be applied to Veeam Agent computers to create individual backup jobs. Using these jobs, Veeam Agents will perform backup operations.
 
@@ -27,6 +28,4 @@ Before configuring a backup policy, [check prerequisites](agent_policy_before_ma
 12. [Specify the backup schedule](agent_policy_schedule_mac.md).
 13. [Review backup policy settings](agent_policy_review_mac.md).
 
-Page updated 11/17/2025
 
-Page content applies to build 13.0.1.1071

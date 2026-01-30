@@ -1,5 +1,7 @@
 ---
 title: "Storage Settings"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_advanced_storage.html"
 last_updated: "9/1/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Storage Settings
 
-In this article
 
 To specify compression settings for the backup policy:
 
@@ -36,6 +37,4 @@ If you plan to encrypt the content of backup files, consider the following limit
 
 To learn more about data encryption in Veeam Backup & Replication, see [Data Encryption](data_encryption.md).
 
-Page updated 9/1/2025
 
-Page content applies to build 13.0.1.1071

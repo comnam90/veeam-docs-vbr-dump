@@ -1,5 +1,7 @@
 ---
 title: "Step 1. Launch Object Restore Wizard"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_individual_objects_launch.html"
 last_updated: "9/3/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 1. Launch Object Restore Wizard
 
-In this article
 
 To launch the Objects or Versions Restore wizard, do one of the following:
 
@@ -21,6 +22,4 @@ You can restore objects from a backup copy. Backup copies created in the seconda
 
 [![Launch File Restore Wizard](images/restore_individual_objects_launch.webp)](images/restore_individual_objects_launch.webp "Launch File Restore Wizard")
 
-Page updated 9/3/2025
 
-Page content applies to build 13.0.1.1071

@@ -1,5 +1,7 @@
 ---
 title: "Deploying Backup Repositories with Rotated Drives"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rotated_drives_configure.html"
 last_updated: "8/8/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Deploying Backup Repositories with Rotated Drives
 
-In this article
 
 To deploy a backup repository with rotated drives, do the following:
 
@@ -40,6 +41,4 @@ You can also attach the external hard drive to the backup server itself. In this
 
 1. Configure other settings of the backup repository as required and finish working with the wizard.
 
-Page updated 8/8/2025
 
-Page content applies to build 13.0.1.1071

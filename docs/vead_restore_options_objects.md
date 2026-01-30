@@ -1,5 +1,7 @@
 ---
 title: "Step 6. Specify Restore Options"
+product: "vbr"
+doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restore_options_objects.html"
 last_updated: "8/12/2025"
 product_version: "13.0.1.1071"
@@ -7,7 +9,6 @@ product_version: "13.0.1.1071"
 
 # Step 6. Specify Restore Options
 
-In this article
 
 At this step of the wizard, specify restore options.
 
@@ -41,6 +42,4 @@ By default, multi-valued attributes will be replaced, not merged.
 
 [![Specifying Restore Options](images/vead_restore_obj_5.webp)](images/vead_restore_obj_5.webp "Specifying Restore Options")
 
-Page updated 8/12/2025
 
-Page content applies to build 13.0.1.1071
