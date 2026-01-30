@@ -3,7 +3,7 @@ title: "Automating Installation with Initial Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_silent_deploy_configure.html"
-last_updated: "1/28/2026"
+last_updated: "1/29/2026"
 product_version: "13.0.1.1071"
 ---
 

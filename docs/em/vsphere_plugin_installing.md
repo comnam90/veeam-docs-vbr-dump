@@ -3,7 +3,7 @@ title: "Installing vSphere Client Plug-in"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vsphere_plugin_installing.html"
-last_updated: "10/30/2025"
+last_updated: "1/27/2026"
 product_version: "13.0.1.1071"
 ---
 
