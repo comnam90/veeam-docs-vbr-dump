@@ -3,7 +3,7 @@ title: "Configuring Backint"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_backint.html"
-last_updated: "12/3/2025"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -51,7 +51,12 @@ For example:
 
 |  |
 | --- |
-| STAGING AREA: /tmp/MAXDB1/stage1 5 GB |
+| STAGING AREA: /tmp/MAXDB1/stage1 1 GB |
+
+|  |
+| --- |
+| Note |
+| For optimal Veeam Plug-In performance, we recommend configuring 4 to 8 staging area files. The number of staging area files should match the number of files per backint call and the [number of parallel data streams](plugins_sap_maxdb_deploy_configure_vp.md#prl) configured with the SapMaxDBBackintConfigTool wizard. The size of each staging area file should be between 50 MB and 1 GB. |
 
 Creating Configuration File for SAP MaxDB Backint
 
