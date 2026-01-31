@@ -3,7 +3,7 @@ title: "Import-VBRLinuxKnownHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/import-vbrlinuxknownhost.html"
-last_updated: "4/24/2024"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Imports Linux TLS fingerprints from a file.
+Imports trusted Linux SSH and deployer certificate fingerprints from a file.
 
 Applies to
 
@@ -26,7 +26,12 @@ Syntax
 
 Detailed Description
 
-This cmdlet imports TLS fingerprints of Linux hosts from a file to Veeam Backup & Replication. Veeam Backup & Replication will consider the hosts as trusted.
+This cmdlet imports trusted Linux SSH and deployer certificate fingerprints from the specified file to Veeam Backup & Replication. Veeam Backup & Replication will consider the hosts as trusted.
+
+The file can contain the following fingerprints:
+
+* Microsoft Windows and Linux deployer service certificate fingerprints of servers added as managed to the backup infrastructure.
+* Trusted Linux server SSH fingerprints of servers added to the protection groups created for Veeam Agents and servers protected by Veeam Plug-ins for Enterprise Applications.
 
 |  |
 | --- |
@@ -37,7 +42,7 @@ Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Path | Specifies the path to the file. The cmdlet will import TLS fingerprints from this file. | String | True | Named | True (ByValue, |
+| Path | Specifies the path to the file on the backup server. The cmdlet will import TLS fingerprints from this file. | String | True | Named | True (ByValue, |
 | NetworkCredentials | For importing from a folder on a file share.  Specifies the credentials you want to use for authenticating with the shared folder. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | True (ByProperty Name) |
 | Force | Defines that the cmdlet will overwrite TLS fingerprints for existing hosts in the Veeam Backup & Replication database without asking a user. | SwitchParameter | False | Named | False |
 
