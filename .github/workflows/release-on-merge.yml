@@ -36,41 +36,85 @@ jobs:
         id: changelog
         run: |
           # Get PR body for the associated PR if it exists
-          # We need to find the PR associated with this commit
           PR_NUMBER=$(gh pr list --state merged --search "${{ github.sha }}" --json number --jq '.[0].number')
-          
+
           if [ -n "$PR_NUMBER" ] && [ "$PR_NUMBER" != "null" ]; then
             PR_BODY=$(gh pr view "$PR_NUMBER" --json body --jq .body)
-            
-            # Extract counts from PR body table
+
+            # Extract counts from PR body table (generate_pr.sh always includes both rows)
             # | Type | New | Updated (Content) | Updated (Metadata) | Deleted |
-            # | Markdown | $NEW_MD_COUNT | $CONTENT_COUNT | $METADATA_COUNT | ...
-            
-            ADDED=$(echo "$PR_BODY" | grep "| Markdown |" | awk -F'|' '{print $3}' | tr -d ' ')
-            UPDATED_CONTENT=$(echo "$PR_BODY" | grep "| Markdown |" | awk -F'|' '{print $4}' | tr -d ' ')
-            UPDATED_METADATA=$(echo "$PR_BODY" | grep "| Markdown |" | awk -F'|' '{print $5}' | tr -d ' ')
-            
-            # Sum up updates
-            UPDATED=$((UPDATED_CONTENT + UPDATED_METADATA))
-          else
-            # Fallback to git log if no PR found (e.g. direct push)
-            LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
-            if [ -z "$LAST_TAG" ]; then
-              COMMITS=$(git log --oneline --no-merges)
+            # | Markdown | ... | ... | ... | ... |
+            # | Images | ... | ... | - | ... |
+            # Empty values are handled by default-to-zero logic below
+
+            MD_ROW=$(echo "$PR_BODY" | grep "| Markdown |" || true)
+            IMG_ROW=$(echo "$PR_BODY" | grep "| Images |" || true)
+
+            if [ -n "$MD_ROW" ]; then
+              ADDED=$(echo "$MD_ROW" | awk -F'|' '{print $3}' | tr -d ' ')
+              UPDATED_CONTENT=$(echo "$MD_ROW" | awk -F'|' '{print $4}' | tr -d ' ')
+              UPDATED_METADATA=$(echo "$MD_ROW" | awk -F'|' '{print $5}' | tr -d ' ')
+              DELETED_MD=$(echo "$MD_ROW" | awk -F'|' '{print $6}' | tr -d ' ')
             else
-              COMMITS=$(git log ${LAST_TAG}..HEAD --oneline --no-merges)
+              ADDED=0
+              UPDATED_CONTENT=0
+              UPDATED_METADATA=0
+              DELETED_MD=0
             fi
-            
-            # Rough estimate based on file changes since we don't have individual commits per file anymore
-            ADDED=$(git diff --name-status ${LAST_TAG}..HEAD | grep "^A" | grep ".md$" | wc -l)
-            UPDATED=$(git diff --name-status ${LAST_TAG}..HEAD | grep "^M" | grep ".md$" | wc -l)
+
+            if [ -n "$IMG_ROW" ]; then
+              NEW_IMAGES=$(echo "$IMG_ROW" | awk -F'|' '{print $3}' | tr -d ' ')
+              UPDATED_IMAGES=$(echo "$IMG_ROW" | awk -F'|' '{print $4}' | tr -d ' ')
+              DELETED_IMAGES=$(echo "$IMG_ROW" | awk -F'|' '{print $6}' | tr -d ' ')
+            else
+              NEW_IMAGES=0
+              UPDATED_IMAGES=0
+              DELETED_IMAGES=0
+            fi
+          else
+            # Fallback to git diff if no PR found (e.g. direct push)
+            LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+            if [ -n "$LAST_TAG" ]; then
+              DIFF_RANGE="${LAST_TAG}..HEAD"
+            else
+              # No previous tag - compare against empty tree to count all files as new
+              EMPTY_TREE="4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+              DIFF_RANGE="${EMPTY_TREE}..HEAD"
+            fi
+
+            ADDED=$(git diff --name-status "$DIFF_RANGE" 2>/dev/null | grep "^A" | grep "\.md$" | wc -l)
+            UPDATED_CONTENT=$(git diff --name-status "$DIFF_RANGE" 2>/dev/null | grep "^M" | grep "\.md$" | wc -l)
+            # Git diff can't distinguish metadata-only vs content changes; all mods counted as content
+            UPDATED_METADATA=0
+            DELETED_MD=$(git diff --name-status "$DIFF_RANGE" 2>/dev/null | grep "^D" | grep "\.md$" | wc -l)
+            NEW_IMAGES=$(git diff --name-status "$DIFF_RANGE" 2>/dev/null | grep "^A" | grep -E "\.(png|jpg|jpeg|gif|svg|webp)$" | wc -l)
+            UPDATED_IMAGES=$(git diff --name-status "$DIFF_RANGE" 2>/dev/null | grep "^M" | grep -E "\.(png|jpg|jpeg|gif|svg|webp)$" | wc -l)
+            DELETED_IMAGES=$(git diff --name-status "$DIFF_RANGE" 2>/dev/null | grep "^D" | grep -E "\.(png|jpg|jpeg|gif|svg|webp)$" | wc -l)
           fi
-          
+
+          # Ensure all values are set
           [ -z "$ADDED" ] && ADDED=0
-          [ -z "$UPDATED" ] && UPDATED=0
-          
+          [ -z "$UPDATED_CONTENT" ] && UPDATED_CONTENT=0
+          [ -z "$UPDATED_METADATA" ] && UPDATED_METADATA=0
+          [ -z "$DELETED_MD" ] && DELETED_MD=0
+          [ -z "$NEW_IMAGES" ] && NEW_IMAGES=0
+          [ -z "$UPDATED_IMAGES" ] && UPDATED_IMAGES=0
+          [ -z "$DELETED_IMAGES" ] && DELETED_IMAGES=0
+
+          # Calculate totals
+          TOTAL_CONTENT=$((ADDED + UPDATED_CONTENT))
+          TOTAL_IMAGES=$((NEW_IMAGES + UPDATED_IMAGES))
+
           echo "added=$ADDED" >> $GITHUB_OUTPUT
-          echo "updated=$UPDATED" >> $GITHUB_OUTPUT
+          echo "updated_content=$UPDATED_CONTENT" >> $GITHUB_OUTPUT
+          echo "updated_metadata=$UPDATED_METADATA" >> $GITHUB_OUTPUT
+          echo "deleted_md=$DELETED_MD" >> $GITHUB_OUTPUT
+          echo "new_images=$NEW_IMAGES" >> $GITHUB_OUTPUT
+          echo "updated_images=$UPDATED_IMAGES" >> $GITHUB_OUTPUT
+          echo "deleted_images=$DELETED_IMAGES" >> $GITHUB_OUTPUT
+          echo "total_content=$TOTAL_CONTENT" >> $GITHUB_OUTPUT
+          echo "total_images=$TOTAL_IMAGES" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ github.token }}
 
@@ -80,10 +124,20 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag }}
           name: "Documentation Update - ${{ steps.version.outputs.date }} (#${{ steps.version.outputs.version }})"
           body: |
-            ## Changes
-            - **Added**: ${{ steps.changelog.outputs.added }} new pages
-            - **Updated**: ${{ steps.changelog.outputs.updated }} existing pages
-            
+            Documentation sync from Veeam Help Center with ${{ steps.changelog.outputs.total_content }} content changes and ${{ steps.changelog.outputs.total_images }} image updates.
+
+            ### Summary
+
+            | Category | Added | Updated | Deleted |
+            |----------|-------|---------|---------|
+            | Pages | ${{ steps.changelog.outputs.added }} | ${{ steps.changelog.outputs.updated_content }} | ${{ steps.changelog.outputs.deleted_md }} |
+            | Images | ${{ steps.changelog.outputs.new_images }} | ${{ steps.changelog.outputs.updated_images }} | ${{ steps.changelog.outputs.deleted_images }} |
+            | Metadata | - | ${{ steps.changelog.outputs.updated_metadata }} | - |
+
+            ### Details
+
+            Each content change below includes an AI-generated summary describing what was modified.
+
             ---
             *Scraped from [Veeam Help Center](https://helpcenter.veeam.com)*
           generate_release_notes: true
