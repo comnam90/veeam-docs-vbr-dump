@@ -118,26 +118,161 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: Build release body
+        id: body
+        run: |
+          # Build base body (without commit list)
+          BASE_BODY="Documentation sync from Veeam Help Center with ${{ steps.changelog.outputs.total_content }} content changes and ${{ steps.changelog.outputs.total_images }} image updates.
+
+          ### Summary
+
+          | Category | Added | Updated | Deleted |
+          |----------|-------|---------|---------|
+          | Pages | ${{ steps.changelog.outputs.added }} | ${{ steps.changelog.outputs.updated_content }} | ${{ steps.changelog.outputs.deleted_md }} |
+          | Images | ${{ steps.changelog.outputs.new_images }} | ${{ steps.changelog.outputs.updated_images }} | ${{ steps.changelog.outputs.deleted_images }} |
+          | Metadata | - | ${{ steps.changelog.outputs.updated_metadata }} | - |
+
+          ### Details
+
+          Each content change below includes an AI-generated summary describing what was modified.
+
+          ---
+          *Scraped from [Veeam Help Center](https://helpcenter.veeam.com)*"
+
+          BASE_LEN=${#BASE_BODY}
+          COMMITS_HEADER=$'\n\n### Commits\n'
+          COMMITS_HEADER_LEN=${#COMMITS_HEADER}
+          GITHUB_LIMIT=125000
+          AVAILABLE=$((GITHUB_LIMIT - BASE_LEN - COMMITS_HEADER_LEN))
+
+          echo "base_body<<EOF" >> $GITHUB_OUTPUT
+          echo "$BASE_BODY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "available_chars=$AVAILABLE" >> $GITHUB_OUTPUT
+
+      - name: Generate commits list
+        id: commits
+        run: |
+          # Determine commit range
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+          if [ -n "$LAST_TAG" ]; then
+            COMMIT_RANGE="${LAST_TAG}..HEAD"
+          else
+            # No previous tag - use empty tree
+            EMPTY_TREE="4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+            COMMIT_RANGE="${EMPTY_TREE}..HEAD"
+          fi
+
+          AVAILABLE=${{ steps.body.outputs.available_chars }}
+          if [ "$AVAILABLE" -le 0 ]; then
+            echo "commits=(... truncated: 0 of 0 commits shown)" >> $GITHUB_OUTPUT
+            echo "shown=0" >> $GITHUB_OUTPUT
+            echo "total=0" >> $GITHUB_OUTPUT
+            echo "truncated=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          ALL_ENTRIES=$(git log --no-merges --format='%h%x1f%s%x1f%b%x1e' "$COMMIT_RANGE" 2>/dev/null | awk -v RS='\x1e' -F '\x1f' '
+            NF >= 2 {
+              hash = $1
+              subject = $2
+              body = $3
+              file = ""
+              summary = ""
+
+              if (subject ~ /^docs\(/) {
+                n = split(body, lines, "\n")
+                for (i = 1; i <= n; i++) {
+                  line = lines[i]
+                  if (file == "" && line ~ /^File:/) {
+                    file = line
+                    sub(/^File:[ \t]*/, "", file)
+                  }
+                  if (summary == "" && line !~ /^File:/ && line !~ /^Changes:/ && line !~ /^[[:space:]]*$/) {
+                    summary = line
+                  }
+                }
+                if (file != "" && summary != "") {
+                  prefix = subject
+                  split(subject, parts, " - ")
+                  if (parts[1] != "") {
+                    prefix = parts[1]
+                  }
+                  printf "- %s %s %s - %s\n", hash, prefix, file, summary
+                  next
+                }
+              }
+
+              printf "- %s %s\n", hash, subject
+            }
+          ')
+
+          if [ -z "$ALL_ENTRIES" ]; then
+            echo "commits=" >> $GITHUB_OUTPUT
+            echo "shown=0" >> $GITHUB_OUTPUT
+            echo "total=0" >> $GITHUB_OUTPUT
+            echo "truncated=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          mapfile -t ENTRIES <<< "$ALL_ENTRIES"
+          TOTAL_COMMITS=${#ENTRIES[@]}
+          SHOWN_COMMITS=0
+          CURRENT_LENGTH=0
+          TRUNCATED=false
+          OUTPUT_ENTRIES=()
+
+          for ENTRY in "${ENTRIES[@]}"; do
+            ENTRY_LEN=$((${#ENTRY} + 1))
+            if [ $((CURRENT_LENGTH + ENTRY_LEN)) -gt $AVAILABLE ]; then
+              TRUNCATED=true
+              break
+            fi
+            OUTPUT_ENTRIES+=("$ENTRY")
+            CURRENT_LENGTH=$((CURRENT_LENGTH + ENTRY_LEN))
+            SHOWN_COMMITS=$((SHOWN_COMMITS + 1))
+          done
+
+          if [ "$TRUNCATED" = true ]; then
+            TRUNCATION_NOTE="(... truncated: $SHOWN_COMMITS of $TOTAL_COMMITS commits shown)"
+            NOTE_LEN=$((${#TRUNCATION_NOTE} + 1))
+            while [ $SHOWN_COMMITS -gt 0 ] && [ $((CURRENT_LENGTH + NOTE_LEN)) -gt $AVAILABLE ]; do
+              LAST_INDEX=$((${#OUTPUT_ENTRIES[@]} - 1))
+              LAST_ENTRY=${OUTPUT_ENTRIES[$LAST_INDEX]}
+              OUTPUT_ENTRIES=("${OUTPUT_ENTRIES[@]:0:$LAST_INDEX}")
+              CURRENT_LENGTH=$((CURRENT_LENGTH - ${#LAST_ENTRY} - 1))
+              SHOWN_COMMITS=$((SHOWN_COMMITS - 1))
+            done
+            OUTPUT_ENTRIES+=("$TRUNCATION_NOTE")
+          fi
+
+          COMMITS_OUTPUT=$(printf '%s\n' "${OUTPUT_ENTRIES[@]}")
+
+          echo "commits<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMITS_OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "shown=$SHOWN_COMMITS" >> $GITHUB_OUTPUT
+          echo "total=$TOTAL_COMMITS" >> $GITHUB_OUTPUT
+          echo "truncated=$TRUNCATED" >> $GITHUB_OUTPUT
+
+      - name: Assemble release body
+        id: release_body
+        run: |
+          FULL_BODY="${{ steps.body.outputs.base_body }}
+
+          ### Commits
+
+          ${{ steps.commits.outputs.commits }}"
+
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          echo "$FULL_BODY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.tag }}
           name: "Documentation Update - ${{ steps.version.outputs.date }} (#${{ steps.version.outputs.version }})"
-          body: |
-            Documentation sync from Veeam Help Center with ${{ steps.changelog.outputs.total_content }} content changes and ${{ steps.changelog.outputs.total_images }} image updates.
-
-            ### Summary
-
-            | Category | Added | Updated | Deleted |
-            |----------|-------|---------|---------|
-            | Pages | ${{ steps.changelog.outputs.added }} | ${{ steps.changelog.outputs.updated_content }} | ${{ steps.changelog.outputs.deleted_md }} |
-            | Images | ${{ steps.changelog.outputs.new_images }} | ${{ steps.changelog.outputs.updated_images }} | ${{ steps.changelog.outputs.deleted_images }} |
-            | Metadata | - | ${{ steps.changelog.outputs.updated_metadata }} | - |
-
-            ### Details
-
-            Each content change below includes an AI-generated summary describing what was modified.
-
-            ---
-            *Scraped from [Veeam Help Center](https://helpcenter.veeam.com)*
+          body: ${{ steps.release_body.outputs.body }}
           generate_release_notes: true
