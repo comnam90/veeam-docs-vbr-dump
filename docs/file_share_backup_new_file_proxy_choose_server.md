@@ -3,7 +3,7 @@ title: "Step 2. Choose Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_new_file_proxy_choose_server.html"
-last_updated: "8/9/2025"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,7 +21,7 @@ The list of servers contains only those managed servers that are added to the ba
 
 If the number of parallel tasks reaches this value, the backup proxy will not start a new task until one of current tasks completes. Veeam Backup & Replication creates one task per every source file share. The recommended number of concurrent tasks is calculated automatically based on the amount of available resources. Backup proxies with multi-core CPUs can handle more concurrent tasks.
 
-For example, for a 4-core CPU, it is recommended that you specify a maximum of 8 concurrent tasks, for an 8-core CPU — 16 concurrent tasks. When defining the number of concurrent tasks, keep in mind network traffic throughput in the infrastructure.
+For example, for a 4-core CPU, it is recommended that you specify a maximum of 2 concurrent tasks, for an 8-core CPU — 4 concurrent tasks. When defining the number of concurrent tasks, keep in mind network traffic throughput in the infrastructure.
 
 ![Step 2. Choose Server](images/add_file_proxy_choose_server.webp "Choose Microsoft Windows Server")
 
