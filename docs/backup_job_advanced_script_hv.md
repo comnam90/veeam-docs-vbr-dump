@@ -3,7 +3,7 @@ title: "Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_script_hv.html"
-last_updated: "8/7/2025"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,7 +24,7 @@ You can select to execute pre- and post-backup actions after a number of backup 
 |  |
 | --- |
 | Note |
-| Consider the following:   * Custom scripts you define in the advanced job settings relate to the backup job itself, not the VM quiescence process. To add pre-freeze and post-thaw scripts for VM image quiescence, use the Guest Processing step of the wizard.  * If you select the Run scripts on the selected days only option, Veeam Backup & Replication executes scripts only once on each selected day — when the job runs for the first time. During subsequent job runs, scripts are not executed.  * To run the script, Veeam Backup & Replication uses the service account under which the Veeam Backup Service is running. |
+| Consider the following:   * Custom scripts you define in the advanced job settings relate to the backup job itself, not the VM quiescence process. To add pre-freeze and post-thaw scripts for VM image quiescence, use the Guest Processing step of the wizard.  * If you select the Run scripts on the selected days only option, Veeam Backup & Replication executes scripts only once on each selected day — when the job runs for the first time. During subsequent job runs, scripts are not executed.  * Veeam Backup & Replication executes the post-job scripts regardless of whether the job succeeded or failed. * For a scheduled job that fails, Veeam Backup & Replication executes the post-job scripts only after all retry attempts have been exhausted. * For a manually started job that fails, Veeam Backup & Replication executes the post-job scripts on the first attempt, since the manually started jobs do not have any retry attempts.  * To run the script, Veeam Backup & Replication uses the service account under which the Veeam Backup Service is running. |
 
 ![Script Settings](images/hv_backup_job_settings_adv.webp)
 
