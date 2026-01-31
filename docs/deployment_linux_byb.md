@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_byb.html"
-last_updated: "1/29/2026"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -13,7 +13,7 @@ product_version: "13.0.1.1071"
 Before you install Veeam Software Appliance, review known issues and limitations described in [release notes](https://helpcenter.veeam.com/rn/veeam_backup_13_release_notes.html#known-issues-and-limitations). Also, consider the following:
 
 * Veeam Software Appliance must be installed on a dedicated empty machine that meets the system requirements. For more information, see [System Requirements](system_requirements.md).
-* Essentials license holders cannot license an ISO-based deployment.
+* Essentials license holders can only deploy Veeam Software Appliance on any [hypervisor supported by Veeam](platform_support.md) and on [Veeam Ready — Appliance](https://www.veeam.com/partners/alliance-partner-technical-programs.html) certified hardware.
 
 * Backup infrastructure components communicate over specific network ports. These ports must be open. For more information, see [Ports](used_ports.md).
 

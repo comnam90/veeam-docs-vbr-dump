@@ -3,7 +3,7 @@ title: "Configuring Veeam Plug-In for SAP MaxDB"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_vp.html"
-last_updated: "12/3/2025"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -96,7 +96,10 @@ In the wizard dialog, you will see a list of available repositories. Enter the n
 | --- |
 | Enter number of data streams (From 1 to 32) to run in parallel: 4  The plug-in configuration completed successfully. |
 
-Note that this parallelism setting applies only to backup and restore of SAP MaxDB datafiles. If you want to configure parallel channels for backup and restore of logs, see [Configuring Parallelism for Logs](sap_orcl_parallelism.md).
+Keep in mind the following:
+
+* This setting applies only to data backup and restore. For the log backup and restore, SAP MaxDB does not support parallel data streams.
+* For optimal Veeam Plug-In performance, we recommend specifying 4 to 8 parallel data streams. The number of parallel data streams should match the [number of staging area files](plugins_sap_maxdb_deploy_configure_backint.md) configured for Veeam Backint.
 
 To learn more about SapMaxDBBackintConfigTool and configuration file, see the following subsections:
 

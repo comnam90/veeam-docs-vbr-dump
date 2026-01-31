@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "1/28/2026"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -627,7 +627,6 @@ The following table describes network ports that must be opened to ensure proper
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | TCP | 6166 | Controlling port for RPC calls. |
-| TCP | 49152 to 65535 | Dynamic RPC port range for Microsoft Windows 2008 and later. For more information, see [this Microsoft KB article](https://support.microsoft.com/kb/929851/en-us).  Note: If you use default Microsoft Windows firewall settings, you do not need to configure dynamic RPC ports. During setup, Veeam Backup & Replication automatically creates a firewall rule for the runtime process. If you use firewall settings other than default ones or application-aware processing fails with the "RPC function call failed" error, you need to configure dynamic RPC ports. For more information on how to configure RPC dynamic port allocation to work with firewalls, see [this Microsoft KB article](https://support.microsoft.com/en-us/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls). |
 | Tape server | Backup repository or gateway server | TCP | 2500 to 3300 | Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | NFS share | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
 | SMB share | TCP | 445 | Standard SMB port. |
