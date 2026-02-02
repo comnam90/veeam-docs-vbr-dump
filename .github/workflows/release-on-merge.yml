@@ -224,6 +224,8 @@ jobs:
           OUTPUT_ENTRIES=()
 
           for ENTRY in "${ENTRIES[@]}"; do
+            # Skip empty entries (from blank lines in awk output)
+            [ -z "$ENTRY" ] && continue
             ENTRY_LEN=$((${#ENTRY} + 1))
             if [ $((CURRENT_LENGTH + ENTRY_LEN)) -gt $AVAILABLE ]; then
               TRUNCATED=true
