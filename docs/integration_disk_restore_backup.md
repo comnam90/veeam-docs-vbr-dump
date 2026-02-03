@@ -3,7 +3,7 @@ title: "Step 2. Select Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore_backup.html"
-last_updated: "1/30/2026"
+last_updated: "2/3/2026"
 product_version: "13.0.1.1071"
 ---
 
