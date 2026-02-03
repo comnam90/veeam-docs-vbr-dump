@@ -273,15 +273,15 @@ jobs:
       - name: Assemble release body
         id: release_body
         run: |
-          FULL_BODY="${{ steps.body.outputs.base_body }}
+          echo 'body<<RELEASE_BODY_EOF' >> "$GITHUB_OUTPUT"
+          cat <<'INNER_EOF' >> "$GITHUB_OUTPUT"
+          ${{ steps.body.outputs.base_body }}
 
           ### Commits
 
-          ${{ steps.commits.outputs.commits }}"
-
-          echo "body<<EOF" >> $GITHUB_OUTPUT
-          echo "$FULL_BODY" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          ${{ steps.commits.outputs.commits }}
+          INNER_EOF
+          echo 'RELEASE_BODY_EOF' >> "$GITHUB_OUTPUT"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
