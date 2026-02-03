@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+  workflow_dispatch:
 
 jobs:
   release:
@@ -173,40 +174,46 @@ jobs:
             exit 0
           fi
 
-          ALL_ENTRIES=$(git log --no-merges --format='%h%x1f%s%x1f%b%x1e' "$COMMIT_RANGE" 2>/dev/null | awk -v RS='\x1e' -F '\x1f' '
-            NF >= 2 {
-              hash = $1
-              subject = $2
-              body = $3
-              file = ""
-              summary = ""
+           ALL_ENTRIES=$(git log --no-merges --format='%h%x1f%s%x1f%b%x1e' "$COMMIT_RANGE" 2>/dev/null | awk -v RS='\x1e' -F '\x1f' '
+             NF >= 2 {
+               hash = $1
+               subject = $2
+               body = $3
+               file = ""
+               summary = ""
 
-              if (subject ~ /^docs\(/) {
-                n = split(body, lines, "\n")
-                for (i = 1; i <= n; i++) {
-                  line = lines[i]
-                  if (file == "" && line ~ /^File:/) {
-                    file = line
-                    sub(/^File:[ \t]*/, "", file)
-                  }
-                  if (summary == "" && line !~ /^File:/ && line !~ /^Changes:/ && line !~ /^[[:space:]]*$/) {
-                    summary = line
-                  }
-                }
-                if (file != "" && summary != "") {
-                  prefix = subject
-                  split(subject, parts, " - ")
-                  if (parts[1] != "") {
-                    prefix = parts[1]
-                  }
-                  printf "- %s %s %s - %s\n", hash, prefix, file, summary
-                  next
-                }
-              }
+               # Sanitize inputs - remove any stray newlines/carriage returns
+               gsub(/[\r\n]/, "", hash)
+               gsub(/[\r\n]/, " ", subject)
 
-              printf "- %s %s\n", hash, subject
-            }
-          ')
+               if (subject ~ /^docs\(/) {
+                 n = split(body, lines, "\n")
+                 for (i = 1; i <= n; i++) {
+                   line = lines[i]
+                   # Remove carriage returns from line
+                   gsub(/\r/, "", line)
+                   if (file == "" && line ~ /^File:/) {
+                     file = line
+                     sub(/^File:[ \t]*/, "", file)
+                   }
+                   if (summary == "" && line !~ /^File:/ && line !~ /^Changes:/ && line !~ /^[[:space:]]*$/) {
+                     summary = line
+                   }
+                 }
+                 if (file != "" && summary != "") {
+                   prefix = subject
+                   split(subject, parts, " - ")
+                   if (parts[1] != "") {
+                     prefix = parts[1]
+                   }
+                   printf "- %s %s %s - %s\n", hash, prefix, file, summary
+                   next
+                 }
+               }
+
+               printf "- %s %s\n", hash, subject
+             }
+           ')
 
           if [ -z "$ALL_ENTRIES" ]; then
             echo "commits=" >> $GITHUB_OUTPUT
@@ -223,18 +230,23 @@ jobs:
           TRUNCATED=false
           OUTPUT_ENTRIES=()
 
-          for ENTRY in "${ENTRIES[@]}"; do
-            # Skip empty entries (from blank lines in awk output)
-            [ -z "$ENTRY" ] && continue
-            ENTRY_LEN=$((${#ENTRY} + 1))
-            if [ $((CURRENT_LENGTH + ENTRY_LEN)) -gt $AVAILABLE ]; then
-              TRUNCATED=true
-              break
-            fi
-            OUTPUT_ENTRIES+=("$ENTRY")
-            CURRENT_LENGTH=$((CURRENT_LENGTH + ENTRY_LEN))
-            SHOWN_COMMITS=$((SHOWN_COMMITS + 1))
-          done
+           for ENTRY in "${ENTRIES[@]}"; do
+             # Skip empty, whitespace-only, or malformed entries
+             # Trim leading/trailing whitespace for comparison
+             TRIMMED="${ENTRY#"${ENTRY%%[![:space:]]*}"}"
+             TRIMMED="${TRIMMED%"${TRIMMED##*[![:space:]]}"}"
+             [[ -z "$TRIMMED" || "$TRIMMED" == "-" || "$TRIMMED" == "- " ]] && continue
+             # Skip entries that don't start with "- " (malformed)
+             [[ "$ENTRY" != "- "* ]] && continue
+             ENTRY_LEN=$((${#ENTRY} + 1))
+             if [ $((CURRENT_LENGTH + ENTRY_LEN)) -gt $AVAILABLE ]; then
+               TRUNCATED=true
+               break
+             fi
+             OUTPUT_ENTRIES+=("$ENTRY")
+             CURRENT_LENGTH=$((CURRENT_LENGTH + ENTRY_LEN))
+             SHOWN_COMMITS=$((SHOWN_COMMITS + 1))
+           done
 
           if [ "$TRUNCATED" = true ]; then
             TRUNCATION_NOTE="(... truncated: $SHOWN_COMMITS of $TOTAL_COMMITS commits shown)"
