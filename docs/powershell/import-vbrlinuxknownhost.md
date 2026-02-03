@@ -3,7 +3,7 @@ title: "Import-VBRLinuxKnownHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/import-vbrlinuxknownhost.html"
-last_updated: "1/30/2026"
+last_updated: "2/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -42,7 +42,7 @@ Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Path | Specifies the path to the file on the backup server. The cmdlet will import TLS fingerprints from this file. | String | True | Named | True (ByValue, |
+| Path | Specifies the path to the file on the backup server. The cmdlet will import TLS fingerprints from this file.  Note: For the Linux-based backup server, the path must start with /var/lib/veeam/. | String | True | Named | True (ByValue, |
 | NetworkCredentials | For importing from a folder on a file share.  Specifies the credentials you want to use for authenticating with the shared folder. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | True (ByProperty Name) |
 | Force | Defines that the cmdlet will overwrite TLS fingerprints for existing hosts in the Veeam Backup & Replication database without asking a user. | SwitchParameter | False | Named | False |
 
@@ -58,10 +58,10 @@ Examples
 
 Importing Linux TLS Fingerprints
 
-This command imports Linux TLS fingerprints from an XML file.
+This command imports SSH and deployer certificate fingerprints from an XML file.
 
 |  |
 | --- |
-| Import-VBRLinuxKnownHost -Path "C:\fingerprints.xml" |
+| Import-VBRLinuxKnownHost -Path "/var/lib/veeam/export/fingerprints.xml" |
 
 
