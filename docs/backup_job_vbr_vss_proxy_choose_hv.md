@@ -3,7 +3,7 @@ title: "Choose Guest Interaction Proxy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vbr_vss_proxy_choose_hv.html"
-last_updated: "1/22/2026"
+last_updated: "2/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,7 +30,7 @@ For a server to be displayed in the list of available log shipping servers, it m
 |  |
 | --- |
 | Important |
-| Due to technical limitations, Linux-based proxies cannot access Windows guest OSes in the current version. That is why if you have added Windows-based VMs to back up at step 3 of the wizard, you must also add at least one Microsoft Windows-based server to the backup infrastructure. |
+| Linux-based guest interaction proxies do not support group Managed Service Accounts (gMSAs). If the account specified in the [Guest OS credentials](backup_job_vbr_credentials_manage_hv.md) field is a gMSA, make sure you add at least one Microsoft Windows-based server to the backup infrastructure. You cannot specify a gMSA in the Guest OS credentials field and explicitly select a Linux-based guest interaction proxy. For more information on gMSAs, see [Using Group Managed Service Accounts](using_gmsa.md). |
 
 ![Choose Guest Interaction Proxy](images/vm_backup_job_vss_proxy.webp)
 

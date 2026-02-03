@@ -3,7 +3,7 @@ title: "Export-VBRLinuxKnownHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/export-vbrlinuxknownhost.html"
-last_updated: "1/30/2026"
+last_updated: "2/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -35,7 +35,7 @@ Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Path | Specifies the path to the file on the backup server. The cmdlet will export TLS fingerprints to this file. | String | True | Named | True (ByValue, |
+| Path | Specifies the path to the file on the backup server. The cmdlet will export TLS fingerprints to this file.  Note: For the Linux-based backup server, the path must start with /var/lib/veeam/. | String | True | Named | True (ByValue, |
 
 <CommonParameters>
 
@@ -49,10 +49,10 @@ Examples
 
 Exporting Linux SSH Fingerprints
 
-This command exports Linux TLS fingerprints to an XML file.
+This command exports SSH and deployer certificate fingerprints to an XML file.
 
 |  |
 | --- |
-| Export-VBRLinuxKnownHost -Path "C:\fingerprints.xml" |
+| Export-VBRLinuxKnownHost -Path "/var/lib/veeam/export/fingerprints.xml" |
 
 

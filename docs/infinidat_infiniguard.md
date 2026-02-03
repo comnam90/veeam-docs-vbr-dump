@@ -3,7 +3,7 @@ title: "Infinidat InfiniGuard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infinidat_infiniguard.html"
-last_updated: "1/22/2026"
+last_updated: "2/3/2026"
 product_version: "13.0.1.1071"
 ---
 

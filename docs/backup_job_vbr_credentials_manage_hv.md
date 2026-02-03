@@ -3,7 +3,7 @@ title: "Manage Guest OS Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vbr_credentials_manage_hv.html"
-last_updated: "12/9/2025"
+last_updated: "2/2/2026"
 product_version: "13.0.1.1071"
 ---
 
