@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/2/2026"
+last_updated: "2/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -599,7 +599,7 @@ Cache Repository Connections
 | TCP | 6160 | Default ports used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service. |
 | Backup server | Old cache repository, new cache repository | TCP | 2500 to 3300, 6160, 6162 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo). |
-| Cache repository | File server (Windows or Linux), Backup proxy | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
+| Cache repository | Gateway server | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | Primary or secondary backup repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels for file share backup restore jobs. For every TCP connection that a job uses, one port from this range is assigned. |
 
 Archive Repository Connections
