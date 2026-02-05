@@ -3,7 +3,7 @@ title: "Get-VBRLinuxTrustedHostPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrlinuxtrustedhostpolicy.html"
-last_updated: "1/17/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns the trust policy for Linux hosts.
+Returns the trust policy for protected Linux and Microsoft Windows machines.
 
 Applies to
 
@@ -26,12 +26,12 @@ Syntax
 
 Detailed Description
 
-This cmdlet returns the trust policy that is set for Linux hosts.
+This cmdlet returns the trust policy for protected machines.
 
-The trust policy determines which protected computers running Linux OS are allowed to connect to the backup server:
+The trust policy determines which protected computers are allowed to connect to the backup server:
 
-* All: with this policy, the connection is allowed for all newly discovered Linux hosts.
-* KnownHosts: with this policy, the connection is allowed only for trusted Linux hosts.
+* All: with this policy, Veeam Backup & Replication allows all servers added to the protection group and all VMs to connect to the backup server. SSH and deployer certificate fingerprints are added to the Veeam Backup & Replication database and checked every time a machine establishes a connection with the backup server. If the SSH or certificate fingerprints do not match, the connection fails.
+* KnownHosts: with this policy, only trusted servers and VMs can connect to the backup server.
 
 <CommonParameters>
 
@@ -43,9 +43,9 @@ Output Object
 
 Examples
 
-Getting Trust Policy for Linux Hosts
+Getting Trust Policy
 
-This command returns the trust policy that is set for Linux hosts.
+This command returns the trust policy that is set for protected machines.
 
 |  |
 | --- |
