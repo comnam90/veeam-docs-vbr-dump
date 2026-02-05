@@ -3,7 +3,7 @@ title: "Set-VBRPSQLDatabaseServerLimits"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrpsqldatabaseserverlimits.html"
-last_updated: "5/17/2024"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -63,7 +63,7 @@ Parameters
 | OSType | Specifies the OS of the machine where the PostgreSQL instance is installed:   * Windows * Linux | String | True | Named | False |
 | CPUCount | Specifies a number of CPU cores that you want to assign to a machine where the PostgreSQL instance is installed. | Int32 | True | Named | False |
 | RamGb | Specifies amount of memory in GB that you want to assign to a machine where the PostgreSQL instance is installed. | Int32 | True | Named | False |
-| DumpToFile | Specifies a path to a dump file. The cmdlet will apply these settings to a machine where the PostgreSQL instance is installed. | String | True | Named | False |
+| DumpToFile | Specifies a path to a dump file. The cmdlet will apply these settings to a machine where the PostgreSQL instance is installed.  Note: Provide a path under /var/lib/veeam when using this cmdlet with the Veeam Software Appliance. The resulting file will be created on the appliance itself, and can be downloaded using the Veeam Remote Console from the [Files view](https://helpcenter.veeam.com/docs/vbr/userguide/vbr_ui.html?ver=13#views). | String | True | Named | False |
 
 <CommonParameters>
 
@@ -87,10 +87,10 @@ Examples
 | --- | --- |
 | This command manually modifies settings of the PostgreSQL instance. The PostgreSQL instance is installed on a remote machine and is used as the Veeam Backup & Replication configuration database.  |  | | --- | | Set-VBRPSQLDatabaseServerLimits -OSType Windows -CPUCount 16 -RamGb 30 | |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Modifying Remote PostgreSQL Instance not Used as Configuration Database
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Modifying PostgreSQL Instance for Veeam Software Appliance
 
 |  |  |
 | --- | --- |
-| This command modifies settings of the PostgreSQL instance. The PostgreSQL instance is installed on a remote machine and is not used as the Veeam Backup & Replication configuration database.  |  | | --- | | Set-VBRPSQLDatabaseServerLimits -OSType <String> -CPUCount 16 -RamGb 30 -DumpToFile "C:\settings.sql" | |
+| This command modifies settings of the PostgreSQL instance used by the Veeam Software Appliance.  To use the command, run it from a remote PowerShell session.  |  | | --- | | Set-VBRPSQLDatabaseServerLimits -OSType Linux -CPUCount 16 -RamGb 30 -DumpToFile "/var/lib/veeam/settings.conf" | |
 
 
