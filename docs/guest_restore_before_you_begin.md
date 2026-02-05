@@ -3,7 +3,7 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "1/22/2026"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -47,6 +47,7 @@ The Restore to option is not available for restoring from backups created by Vee
 
 * Recovery is not supported for workloads with data deduplication enabled.
 * When backup of a Microsoft Windows workload is mounted on a Linux-based mount server, the original volume name or drive letter cannot be determined. Linux does not support access to Windows registry data, which stores this information. As a result, the server displays volumes with random IDs instead of their original names or drive letters.
+* File-level recovery to the original location from backups of Windows-based [cloud machines](agents_backup_cloud_machines.md) using a Linux-based mount server is not supported.
 
 Source for Data Recovery
 
