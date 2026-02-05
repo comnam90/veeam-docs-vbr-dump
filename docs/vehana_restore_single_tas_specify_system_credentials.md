@@ -3,7 +3,7 @@ title: "Step 3. Specify System Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_single_tas_specify_system_credentials.html"
-last_updated: "8/15/2024"
+last_updated: "2/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,7 +21,7 @@ At this step, specify the connection parameters for the target SAP HANA system.
 * Select the Do not prompt for connections to <host\_name:port> check box if you want to use the certificate in future restore operations to the specified server. The certificate thumbprint will be saved to a Config.xml file, located in the UserProfile%\AppData\Local\Veeam\Backup\SapHanaExplorer directory on the machine where Veeam Explorer for SAP HANA is running.
 * Click View Certificate... to see more details about the imported certificate.
 
-[![Reviewing Certificate](images/vehana_license_ssl_review.webp)](images/vehana_license_ssl_review.webp "Reviewing Certificate")
+![Step 3. Specify System Credentials](images/vehana_license_ssl_review.webp "Reviewing Certificate")
 
 * Select the Private key is required for this connection check box to also use a private key generated on the target SAP HANA system to validate the user of the backup server. Once you import the private key on the backup server, perform the following actions:
 
@@ -35,6 +35,6 @@ For more information about how to generate a private client key on the target SA
 
 Note that before you restore a tenant database using SSL, you must have SAP Common Crypto Library installed on the backup server. For more information about how to install SAP Common Crypto Library on Windows machines, see the [SAP Help Portal](https://help.sap.com/docs/SAP_DATA_SERVICES/e54136ab6a4a43e6a370265bf0a2d744/c049e28431ee4e8280cd6f5d1a8937d8.html?locale=en-US).
 
-[![Specifying Target System Credentials](images/vehana_specify_system_credentials_next.webp)](images/vehana_specify_system_credentials_next.webp "Specifying Target System Credentials")
+![Step 3. Specify System Credentials](images/vehana_specify_system_credentials_next.webp "Specifying Target System Credentials")
 
 
