@@ -3,7 +3,7 @@ title: "Accessing Veeam Host Management Console"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_access.html"
-last_updated: "11/17/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 

@@ -3,7 +3,7 @@ title: "Reinstalling Veeam Software Appliance from ISO"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_reinstall.html"
-last_updated: "12/16/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 

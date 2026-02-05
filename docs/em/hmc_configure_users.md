@@ -3,7 +3,7 @@ title: "Configuring Users"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_configure_users.html"
-last_updated: "1/14/2026"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 

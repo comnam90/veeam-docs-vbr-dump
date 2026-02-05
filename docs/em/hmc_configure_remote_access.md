@@ -3,7 +3,7 @@ title: "Configuring Remote Access Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_configure_remote_access.html"
-last_updated: "12/16/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
