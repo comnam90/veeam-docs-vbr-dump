@@ -3,7 +3,7 @@ title: "Exporting to Custom Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_export_custom.html"
-last_updated: "4/30/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -62,10 +62,10 @@ The Apply filter option is only available when exporting folders and mailboxes, 
 
 With this option, Veeam Explorer for Microsoft Exchange will create multiple PST files as of the specified size.
 
-[![Exporting to Custom Location](images/export_to_custom_options.webp)](images/export_to_custom_options.webp)
+![Exporting to Custom Location](images/export_to_custom_options.webp "Specify Target Path and Optional Settings")
 
 After the export process is complete, review the results shown in the Export summary window. To do this, click See more to expand the window and review details of the export operation. You can filter notifications by their status: Error, Warning or Success.
 
-[![Review Export Summary](images/vex_export_summary.webp)](images/vex_export_summary.webp "Review Export Summary")
+![Exporting to Custom Location](images/vex_export_summary.webp "Review Export Summary")
 
 
