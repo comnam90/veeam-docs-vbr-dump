@@ -49,6 +49,6 @@ In the Microsoft 365 Application Settings window, select the Use custom applicat
 1. In the Application client ID field, specify an identification number of your Microsoft Entra application. You can find this number in an application settings in your Microsoft Entra ID. For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal).
 2. In the Tenant ID field, specify the Microsoft Entra tenant ID.
 
-[![Configuring Microsoft 365 Application Settings](images/microsoft365.png)](images/microsoft365.png "Configuring Microsoft 365 Application Settings")
+[![Configuring Microsoft 365 Application Settings](images/microsoft365.webp)](images/microsoft365.webp "Configuring Microsoft 365 Application Settings")
 
 
