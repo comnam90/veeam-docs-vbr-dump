@@ -3,7 +3,7 @@ title: "Step 2. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_multiple_tas_specify_restore_point.html"
-last_updated: "10/6/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,6 +20,6 @@ The Restore to a specific point in time option is available only if backups of P
 
 Note that if the backed-up WAL files do not contain information about some instances for the selected point in time, those instances will be recovered as of their latest available state.
 
-[![Specifying Restore Point](images/vep_restore_tas_specify_restore_point.webp)](images/vep_restore_tas_specify_restore_point.webp "Specifying Restore Point")
+![Step 2. Specify Restore Point_2](images/vep_restore_tas_specify_restore_point.webp "Specifying Restore Point")
 
 
