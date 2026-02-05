@@ -44,6 +44,6 @@ In the Google Gmail Application Settings window, select the Use custom applicati
 1. In the Application client ID field, specify specify the obtained client ID.
 2. In the Client secret field, specify the client secret.
 
-[![Configuring Google Gmail Application Settings](images/google_gmail.png)](images/google_gmail.png "Configuring Google Gmail Application Settings")
+[![Configuring Google Gmail Application Settings](images/google_gmail.webp)](images/google_gmail.webp "Configuring Google Gmail Application Settings")
 
 
