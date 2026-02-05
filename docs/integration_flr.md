@@ -3,7 +3,7 @@ title: "Restoring Files and Folders"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_flr.html"
-last_updated: "2/3/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,16 @@ The procedure of file-level restore from a Veeam Agent backup is similar to the 
 
 Consider the following:
 
-* When you perform the file-level restore procedure, Veeam Backup & Replication selects a mount server automatically, based on the OS of the protected computer and infrastructure availability. You can also specify a preferred mount server manually. For more information, see [Mount Server Automatic Selection](guest_restore_scenarios.md).
+* When you perform the file-level restore procedure, Veeam Backup & Replication selects a mount server automatically, based on the OS of the protected computer and infrastructure availability. For more information, see [Mount Server Automatic Selection](guest_restore_scenarios.md).
+
+You can also specify a preferred mount server manually.
+
+|  |
+| --- |
+| Important |
+| File-level recovery to the original location from backups of Windows-based [cloud machines](agents_backup_cloud_machines.md) using a Linux-based mount server is not supported. |
+
+* The full list of mounting options includes the following infrastructure components:
 
 * Veeam backup server.
 * Helper host. You can use the following infrastructure components as helper hosts:
