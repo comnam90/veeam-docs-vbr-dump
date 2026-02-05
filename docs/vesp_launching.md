@@ -3,7 +3,7 @@ title: "Launching Application and Exploring Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_launching.html"
-last_updated: "11/14/2025"
+last_updated: "2/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,13 +24,13 @@ To launch the application, go to Start, click Veeam Explorer for Microsoft Share
 
 Click Connect.
 
-[![Specify Backup Server](images/vesp_launching_explorer_specify_backup_server.webp)](images/vesp_launching_explorer_specify_backup_server.webp "Specify Backup Server")
+![Launching Application and Exploring Backups](images/vesp_launching_explorer_specify_backup_server.webp "Specify Backup Server")
 
 1. When you are connecting to the backup server for the first time, Veeam Explorer for Microsoft SharePoint will ask you to validate the backup server certificate fingerprint. Click View Certificate to see more details about the imported certificate.
 
 Click Yes to install the certificate on the machine where you are launching Veeam Explorer for Microsoft SharePoint.
 
-[![Validate Server Certificate Fingerprint](images/vesp_launching_explorer_certificate.webp)](images/vesp_launching_explorer_certificate.webp "Validate Server Certificate Fingerprint")
+![Launching Application and Exploring Backups](images/vesp_launching_explorer_certificate.webp "Validate Server Certificate Fingerprint")
 
 1. At the Sign in step, enter the credentials of the user account that you want to use to connect to the backup server. For more information on the required permissions for the user, see [Permissions](vesp_permissions.md).
 
@@ -40,7 +40,7 @@ Click Sign in.
 
 Alternatively, select Sign in as current user to use the credentials of the Windows user account currently signed in on the machine where you are launching Veeam Explorer for Microsoft SharePoint.
 
-[![Specify Credentials](images/vesp_launching_explorer_specify_credentials.webp)](images/vesp_launching_explorer_specify_credentials.webp "Specify Credentials")
+![Launching Application and Exploring Backups](images/vesp_launching_explorer_specify_credentials.webp "Specify Credentials")
 
 In This Section
 
