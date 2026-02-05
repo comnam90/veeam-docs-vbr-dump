@@ -3,7 +3,7 @@ title: "Retention for Reverse Incremental Backups"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/reversed_incremental_retention.html"
-last_updated: "9/4/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -19,7 +19,7 @@ When Veeam Backup Enterprise Manager deletes indexing data by retention, it remo
 
 However, in reverse incremental chains, session indexing data references the machine restore point that was created in the backup job sessions, and restore points preceding it. To learn more, see [Indexing Data](indexing_data.md#session_index).
 
-[![Retention for Reverse Incremental Backups](images/reversed_incremental_retention.PNG)](images/reversed_incremental_retention.PNG "Retention for Reverse Incremental Backups")
+[![Retention for Reverse Incremental Backups](images/reversed_incremental_retention.webp)](images/reversed_incremental_retention.webp "Retention for Reverse Incremental Backups")
 
 For this reason, Veeam Backup Enterprise Manager retains more indexing data for reverse incremental chains. The retention period is calculated by the following formula:
 
