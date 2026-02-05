@@ -3,7 +3,7 @@ title: "Step 3. Specify Restore Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_location_containers.html"
-last_updated: "10/6/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,12 +22,12 @@ You can select the following:
 | Note |
 | If a container that is being restored was not found in the production environment, it will be restored anew. |
 
-[![Specifying Restore Location](images/vead_restore_obj_2.webp)](images/vead_restore_obj_2.webp "Specifying Restore Location")
+![Step 3. Specify Restore Location](images/vead_restore_obj_2.webp "Specifying Restore Location")
 
 Browsing Container
 
 To select a different container, click Browse and choose a container you want to use.
 
-[![Selecting Different Container](images/browse_container.webp)](images/browse_container.webp "Selecting Different Container")
+![Step 3. Specify Restore Location](images/browse_container.webp "Selecting Different Container")
 
 
