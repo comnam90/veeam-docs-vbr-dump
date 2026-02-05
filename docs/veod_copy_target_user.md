@@ -3,7 +3,7 @@ title: "Step 4. Specify Target User"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_copy_target_user.html"
-last_updated: "10/6/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,6 +22,6 @@ To select a target user, do the following:
 1. Click Browse.
 2. In the Browse OneDrive Accounts window, select the necessary account and click Select.
 
-[![Specify Target User](images/restoring_onedrive_3.webp)](images/restoring_onedrive_3.webp "Specify Target User")
+![Step 4. Specify Target User](images/restoring_onedrive_3.webp "Specify Target User")
 
 
