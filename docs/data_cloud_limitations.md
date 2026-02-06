@@ -3,7 +3,7 @@ title: "Veeam Data Cloud Vault Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_cloud_limitations.html"
-last_updated: "2/3/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -35,7 +35,7 @@ Consider the following limitations for Veeam Data Cloud Vault:
 * Veeam Data Cloud Vault does not support China and Government regions.
 * Veeam Data Cloud Vault supports the cool access tier only.
 * You cannot use Veeam Data Cloud Vault as a source of [unstructured data backup](unstructured_data_backup.md).
-* You cannot [move](capacity_tier_move.md) or [copy](capacity_tier_copy.md) unencrypted backups to Veeam Data Cloud Vault.
+* You cannot [move](move_backup.md) or [copy](copy_backup.md) unencrypted backups to Veeam Data Cloud Vault.
 
 * You must enable the capacity tier encryption for Veeam Data Cloud Vault if you want to use it as a capacity extent.
 
