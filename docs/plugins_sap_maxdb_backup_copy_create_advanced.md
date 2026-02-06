@@ -3,7 +3,7 @@ title: "Step 5. Specify Advanced Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_backup_copy_create_advanced.html"
-last_updated: "10/31/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
