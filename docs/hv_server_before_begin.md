@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_before_begin.html"
-last_updated: "12/9/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,6 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you add a Microsoft Hyper-V server to the backup infrastructure, check the following prerequisites:
 
+* Note that Linux-based Veeam Software Appliance does not support the SCVMM High Availability feature.
 * Check permissions required to add the server. For more information, see [Permissions](required_permissions.md#rphost).
 * Make sure that you do not add to the backup infrastructure Hyper-V hosts or clusters managed by an SCVMM server if this SCVMM server is already added to the backup infrastructure.
 
