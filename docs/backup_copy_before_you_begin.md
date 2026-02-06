@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_before_you_begin.html"
-last_updated: "1/22/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,14 +12,13 @@ product_version: "13.0.1.1071"
 
 Before you create a backup copy job, check the following prerequisites:
 
-* Backup infrastructure components that will take part in the backup copy process must be added to the backup infrastructure. This include target backup repository to which backups must be copied. For more information on adding components, see [Backup Infrastructure Components](components.md).
+* Backup infrastructure components that will take part in the backup copy process must be added to the backup infrastructure. This includes target backup repository to which backups must be copied. For more information on adding components, see [Backup Infrastructure Components](components.md).
 * If you plan to use pre-job and post-job scripts, you must create scripts before you configure the backup copy job.
 
 * [For Linux-based backup server] The following applies to pre-job and post-job scripts:
 
 * Bash scripts must use Linux-style line ednings (LF).
 * Only the .SH and .PS1 file extensions are supported.
-
 * Scripts with the .EXE file extension are not supported.
 * Script impersonation is not supported.
 

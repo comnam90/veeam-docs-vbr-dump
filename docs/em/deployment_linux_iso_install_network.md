@@ -3,7 +3,7 @@ title: "Step 6. Review Network Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_install_network.html"
-last_updated: "8/13/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 

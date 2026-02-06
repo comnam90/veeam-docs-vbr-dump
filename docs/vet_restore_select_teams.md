@@ -3,7 +3,7 @@ title: "Step 4. Select Teams"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_select_teams.html"
-last_updated: "10/6/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,6 +14,6 @@ This step is only available if you launched the Restore wizard to restore multip
 
 At this step of the wizard, select check boxes next to the teams that you want to restore.
 
-[![Select Teams](images/vet_restore_select_teams.webp)](images/vet_restore_select_teams.webp "Select Teams")
+![Step 4. Select Teams](images/vet_restore_select_teams.webp "Select Teams")
 
 

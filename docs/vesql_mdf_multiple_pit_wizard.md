@@ -17,6 +17,6 @@ To launch the Export wizard, do the following:
 
 Alternatively, you can right-click an instance or the server and select Export files > Export point-in-time state to Desktop\<db\_name>.
 
-[![Launching Export Wizard](images/export_pit_multiple.png)](images/export_pit_multiple.png "Launching Export Wizard")
+[![Launching Export Wizard](images/export_pit_multiple.webp)](images/export_pit_multiple.webp "Launching Export Wizard")
 
 

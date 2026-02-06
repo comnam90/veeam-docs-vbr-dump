@@ -3,7 +3,7 @@ title: "Export-VBRLinuxKnownHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/export-vbrlinuxknownhost.html"
-last_updated: "2/3/2026"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -47,7 +47,7 @@ None.
 
 Examples
 
-Exporting Linux SSH Fingerprints
+Exporting Fingerprints
 
 This command exports SSH and deployer certificate fingerprints to an XML file.
 

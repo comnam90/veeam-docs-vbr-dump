@@ -3,7 +3,7 @@ title: "Set-VBRLinuxTrustedHostPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrlinuxtrustedhostpolicy.html"
-last_updated: "1/17/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Sets the trust policy for Linux hosts.
+Sets the trust policy for protected Linux and Microsoft Windows machines.
 
 Applies to
 
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet sets the trust policy for Linux hosts. The policy determines which protected computers running Linux OS are allowed to connect to the backup server. Veeam Backup & Replication recognizes a host as trusted if this host has connected to the Veeam backup server before. Veeam Backup & Replication remembers trusted hosts and keeps them in a database. You can add trusted hosts to the database manually by importing hosts SSH fingerprints from a file.
+This cmdlet sets the trust policy for protected Linux and Microsoft Windows machines. The policy determines which protected machines are allowed to connect to the backup server. Veeam Backup & Replication recognizes a host as trusted if this host has connected to the Veeam backup server before. Veeam Backup & Replication remembers trusted hosts and keeps them in a database. You can add trusted hosts to the database manually by importing machine Linux SSH and deployer certificate fingerprints from a file.
 
 |  |
 | --- |
@@ -37,7 +37,7 @@ Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Type | Specifies the trust policy type. You can set the trust policy one of the following types:   * All: Use this option if you want to allow all newly discovered Linux hosts to connect to the backup server. * KnownHosts: Use this option if you want to allow all only trusted Linux hosts to connect to the backup server. | VBRLinuxTrustedHostPolicyType | True | Named | True (ByValue, |
+| Type | Specifies the trust policy type. You can set the trust policy one of the following types:   * All: Use this option if you want to allow all servers added to the protection group and all VMs to connect to the backup server. * KnownHosts: Use this option if you want to allow all only trusted only trusted servers and VMs to connect to the backup server. | VBRLinuxTrustedHostPolicyType | True | Named | True (ByValue, |
 | PassThru | Defines that the command returns the output object to the Windows PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -50,9 +50,9 @@ Output Object
 
 Examples
 
-Setting up Connections with Trusted Linux Hosts
+Setting up Connections with Trusted Machines
 
-This command instructs Veeam Backup & Replication to establish connections only with trusted Linux hosts.
+This command instructs Veeam Backup & Replication to establish connections only with trusted servers and VMs.
 
 |  |
 | --- |

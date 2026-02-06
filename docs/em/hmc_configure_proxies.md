@@ -3,7 +3,7 @@ title: "Configuring HTTP/HTTPS Proxies"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_configure_proxies.html"
-last_updated: "8/14/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 

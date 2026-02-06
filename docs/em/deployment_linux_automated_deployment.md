@@ -3,7 +3,7 @@ title: "Veeam Software Appliance Installation in Unattended Mode"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_automated_deployment.html"
-last_updated: "11/19/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 

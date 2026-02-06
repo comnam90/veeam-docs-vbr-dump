@@ -3,7 +3,7 @@ title: "Adding Veeam Backup for Microsoft 365 Service Provider"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_add_sp_database.html"
-last_updated: "11/19/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -44,6 +44,6 @@ To select a point in time, use the calendar control.
 2. Select the Show all versions of items that have been modified by user check box if you want to load modified versions.
 3. Click Connect.
 
-[![Adding Veeam Backup for Microsoft 365 Service Provider](images/srv_server.webp)](images/srv_server.webp)
+![Adding Veeam Backup for Microsoft 365 Service Provider](images/srv_server.webp "Adding Veeam Backup for Microsoft 365 Service Provider")
 
 

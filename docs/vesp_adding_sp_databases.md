@@ -3,14 +3,14 @@ title: "Adding Microsoft SharePoint Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_adding_sp_databases.html"
-last_updated: "6/18/2024"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Adding Microsoft SharePoint Databases
 
 
-You can add Microsoft SharePoint databases to the application scope manually. For example, you may want to do this to restore items from a Microsoft SharePoint database exported earlier using Veeam Explorer for Microsoft SQL Server. For more information, see [Exporting as MDF](vesql_exporting_mdf.md).
+You can add Microsoft SharePoint databases to the application scope manually.For example, you may want to do this to restore items from a Microsoft SharePoint database exported earlier using Veeam Explorer for Microsoft SQL Server. For more information, see [Exporting as MDF](vesql_exporting_mdf.md).
 
 When you add a standalone Microsoft SharePoint database to the application scope, Veeam Explorer for Microsoft SharePoint attaches the database to the staging SQL server, creating a temporary Microsoft SharePoint content database from which you can restore your items.
 
@@ -27,6 +27,6 @@ To add remote BLOB stores, click Add next to the Remote BLOB Stores section.
 
 1. Click OK.
 
-[![Adding Microsoft SharePoint Databases](images/adding_ms_db_manually_1.webp)](images/adding_ms_db_manually_1.webp)
+![Adding Microsoft SharePoint Databases](images/adding_ms_db_manually_1.webp "Adding Microsoft SharePoint Databases")
 
 

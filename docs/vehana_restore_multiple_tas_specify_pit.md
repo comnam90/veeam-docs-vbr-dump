@@ -3,7 +3,7 @@ title: "Step 5. Specify Point in Time"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_restore_multiple_tas_specify_pit.html"
-last_updated: "8/18/2025"
+last_updated: "2/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,6 +23,6 @@ This action removes all log segments in the log area or, in other words, clears 
 
 Each database will be restored to the most recent available state to the date and time selected in the Date field. Note that if any of the databases that you want to restore were first backed up after the specified point in time, their restore process will fail.
 
-[![Specifying Point in Time](images/vehana_specify_multiple_recovery_tas.webp)](images/vehana_specify_multiple_recovery_tas.webp "Specifying Point in Time")
+![Step 5. Specify Point in Time](images/vehana_specify_multiple_recovery_tas.webp "Specifying Point in Time")
 
 
