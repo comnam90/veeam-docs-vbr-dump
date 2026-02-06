@@ -3,7 +3,7 @@ title: "NDMP Servers Backup to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ndmp_servers_backup_to_tape.html"
-last_updated: "1/22/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -42,6 +42,7 @@ Limitations for NDMP Servers
 
 * Only in-direct NDMP backup is supported. Veeam Backup & Replication moves the backup data from the NDMP server via the backup proxy server and tape server directly to the tape drive.
 * The NDMP server performs its own backup consistency check for the NDMP volumes. To ensure the correct calculation of the delta of changes and the backup chain integrity, Veeam Backup & Replication does not allow adding one NDMP volume to more than one file to tape job.
+* For the NDMP server backup to a media pool with the Process independent data sources simultaneously option enabled, Veeam Backup & Replication processes NDMP volumes in parallel, with each volume written by a separate drive. For more information, see [Tape Parallel Processing](parallel_processing.md).
 
 See Also
 
