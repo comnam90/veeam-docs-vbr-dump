@@ -3,14 +3,14 @@ title: "Managing Veeam Plug-In Backups in Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_backup_vbr.html"
-last_updated: "11/28/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Managing Veeam Plug-In Backups in Veeam Backup & Replication
 
 
-In the Veeam Backup & Replication console, backups created by Veeam Plug-Ins are displayed in the Backups node of the Home view. In the working area, backups created by Veeam Plug-In for IBM Db2 are listed under the Microsoft SQL node.
+In the Veeam Backup & Replication console, backups created by Veeam Plug-Ins are displayed in the Backups node of the Home view. In the working area, backups created by Veeam Plug-In for Microsoft SQL Server are listed under the Microsoft SQL node.
 
 For backups created by Veeam Plug-In for Microsoft SQL Server, consider the following:
 
