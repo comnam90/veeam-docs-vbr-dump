@@ -3,7 +3,7 @@ title: "Backup Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_server.html"
-last_updated: "10/21/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,6 +20,11 @@ In addition to its primary functions, a newly deployed backup server also perfor
 
 * [For VMware vSphere] the default VMware backup proxy and the backup repository (it manages data handling and data storing tasks).
 * [For Microsoft Hyper-V] the default backup repository, storing backups locally.
+
+|  |
+| --- |
+| Important |
+| The backup server cannot be added as a managed server to another Veeam Backup & Replication server. This type of deployment is unsupported and may cause issues in Veeam services coordination. |
 
 Related Topics
 

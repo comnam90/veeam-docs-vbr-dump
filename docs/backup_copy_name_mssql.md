@@ -3,7 +3,7 @@ title: "Step 2. Specify Job Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_name_mssql.html"
-last_updated: "1/19/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 

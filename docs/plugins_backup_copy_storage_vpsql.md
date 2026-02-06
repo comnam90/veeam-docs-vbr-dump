@@ -2,7 +2,7 @@
 title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
-source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_storage_sap_oracle.html"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_backup_copy_storage_vpsql.html"
 last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---

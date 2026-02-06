@@ -3,7 +3,7 @@ title: "Step 2. Choose Files to Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_from_tape_objects.html"
-last_updated: "3/20/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ To remove a file or folder from the list, select it and click Remove.
 |  |
 | --- |
 | Note |
-| For one restore session, you can select only Microsoft Windows and Linux files, or NDMP volumes. |
+| Consider the following:   * For one restore session, you can select only Microsoft Windows and Linux files, or NDMP volumes. * When restoring multiple NDMP volumes in one restore session, the restored volumes are merged into a single volume in the destination location. |
 
 ![Step 2. Choose Files to Restore](images/restore_files_from_tape_objects.webp)
 

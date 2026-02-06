@@ -3,7 +3,7 @@ title: "Removing Missing Restore Points"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_missing_point.html"
-last_updated: "9/26/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,8 +29,10 @@ To remove records about missing restore points from the configuration database:
 3. In the working area, select the backup and click Properties on the ribbon or right-click the backup and select Properties.
 4. In the Backup Properties window, right-click the missing restore point and select Forget.
 
-+ To remove only the selected restore point and restore points that depend on it (that is, a part of the backup chain starting from this restore point), select This and dependent backups.
++ To remove only the selected restore point and restore points that depend on it (that is, a part of the backup chain starting from this restore point), select This backup and dependent backups.
 + To remove all missing restore points, select All unavailable backups.
+
+[![Removing Missing Restore Points](images/rp_forget.webp)](images/rp_forget.webp)
 
 To remove missing restore points from the configuration database and disk:
 
@@ -39,7 +41,9 @@ To remove missing restore points from the configuration database and disk:
 3. In the working area, select the backup and click Properties on the ribbon or right-click the backup and select Properties.
 4. In the Backup Properties window, right-click the missing restore point and select Remove from disk.
 
-+ To remove only the selected restore point and restore points that depend on it (that is, a part of the backup chain starting from this restore point), select This and dependent backups.
++ To remove only the selected restore point and restore points that depend on it (that is, a part of the backup chain starting from this restore point), select This backup and dependent backups.
 + To remove all missing restore points, select All unavailable backups.
+
+[![Removing Missing Restore Points](images/rp_delete.webp)](images/rp_delete.webp)
 
 

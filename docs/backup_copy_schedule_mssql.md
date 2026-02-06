@@ -3,7 +3,7 @@ title: "Step 6. Define Backup Copy Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_schedule_mssql.html"
-last_updated: "1/19/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,6 +18,6 @@ To define a backup window for the backup copy job:
 2. In the schedule box, select the desired time area.
 3. Use the Enable and Disable options to mark the selected area as allowed or prohibited for the backup copy job.
 
-![Step 6. Define Backup Copy Schedule](images/plugins_backup_copy_mssql_schedule.webp)
+![Step 6. Define Backup Copy Schedule](images/plugins_backup_copy_schedule.webp)
 
 

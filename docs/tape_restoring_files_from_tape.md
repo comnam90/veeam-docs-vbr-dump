@@ -3,7 +3,7 @@ title: "How Restoring Files from Tape Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restoring_files_from_tape.html"
-last_updated: "11/12/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ When Veeam Backup & Replication restores files archived to tape, it performs the
 * In case the file share has automatic gateway selection enabled, the role of the gateway server is assigned to the tape server.
 * If you explicitly specify gateway servers for the file share, Veeam Backup & Replication uses only gateway servers selected in the list.
 
-1. Veeam Backup & Replication updates the Tape Catalog in the Veeam Backup database.
+1. Veeam Backup & Replication updates the Tape Catalog in the configuration database.
 
 ![How Restoring Files from Tape Works](images/tape_file_restore.webp)
 
