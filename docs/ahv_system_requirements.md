@@ -3,7 +3,7 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_system_requirements.html"
-last_updated: "2/3/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,7 +29,7 @@ The following table lists compatible versions of Veeam Backup & Replication and 
 
 | Product Release | Veeam Plug-in for Proxmox VE Build | Veeam Backup & Replication Build | Backup Appliance / Worker OS Version |
 | --- | --- | --- | --- |
-| 9 | 13.9.0.212 | 13.0.1.180 | Rocky Linux 9.2 |
+| 9 | 13.9.0.212 | 13.0.1.180 | CIQ Rocky Linux 9.2 |
 | 8 | 13.8.0.582 | 13.0.0.4967 | Rocky Linux 8.10 |
 | 7.1 | 12.7.1.12 | 12.3.1.1139 | Rocky Linux 8.10 |
 | 7.0 | 12.7.0.172 | 12.3.0.310 |
