@@ -3,7 +3,7 @@ title: "Installing Veeam Plug-In for oVirt KVM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_install_plugin.html"
-last_updated: "2/2/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +15,7 @@ The plug-in that allows you to protect oVirt KVM resources comes pre-installed w
 |  |
 | --- |
 | Note |
-| If you use a remote Veeam Backup & Replication console, you do not need to install Veeam Plug-in for Proxmox VE on the workstation where the remote Veeam Backup & Replication console is deployed. |
+| If you use a remote Veeam Backup & Replication console, you do not need to install Veeam Plug-in for oVirt KVM on the workstation where the remote Veeam Backup & Replication console is deployed. |
 
 To install Veeam Plug-in for oVirt KVM, do the following:
 
