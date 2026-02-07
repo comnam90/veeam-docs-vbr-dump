@@ -3,7 +3,7 @@ title: "System Requirements for Linux Computers with Nosnap Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_linux_nosnap.html"
-last_updated: "1/6/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,9 +32,7 @@ If a new version of a supported Linux distribution is released after the release
 * [For nosnap Veeam Agent for Linux] Veeam Agent supports the following versions of RHEL with Extended Update Support Add-On: 8.4, 8.6, 8.8, 8.10, 9.0, 9.2 and 9.4.
 * [For nosnap Veeam Agent for Linux on Power] Veeam Agent supports the following versions of RHEL with Extended Update Support Add-On: 8.4, 8.6, 8.8, 8.10 and 9.4.
 
-* You must not install Veeam Agent on servers that are used as [hardened repositories](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html) in the Veeam Backup & Replication infrastructure.
-
-* You must not install Veeam Agent on devices that are used as [deduplicating storage appliances](https://helpcenter.veeam.com/docs/backup/vsphere/deduplicating_storage_appliances.html?ver=120) in the Veeam Backup & Replication infrastructure.
+* Do not install Veeam Agent on servers that are used as components of the Veeam Backup & Replication infrastructure. This includes Veeam backup servers, backup repositories, proxy servers, mount servers, distribution servers, gateway and helper appliance servers, and any other backup infrastructure component that has the Veeam Mount Service deployed.
 
 * Do not use Veeam Agent managed by one Veeam Backup & Replication installation on a server that acts as a backup infrastructure component in another Veeam Backup & Replication installation. If this happens, both Veeam Backup & Replication installations can automatically update the Transport and Deployer components on the host server, which may lead to performance issues or errors in your backup infrastructure.
 
