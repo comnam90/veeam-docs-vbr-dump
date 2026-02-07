@@ -3,7 +3,7 @@ title: "Backup of Cloud Machines"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_cloud_machines.html"
-last_updated: "1/16/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 

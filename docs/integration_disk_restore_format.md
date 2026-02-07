@@ -3,7 +3,7 @@ title: "Step 5. Select Destination and Disk Format"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore_format.html"
-last_updated: "2/5/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 

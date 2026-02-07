@@ -3,7 +3,7 @@ title: "Veeam Software Appliance Installation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux.html"
-last_updated: "2/5/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
