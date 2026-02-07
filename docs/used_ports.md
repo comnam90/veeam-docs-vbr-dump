@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/5/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ All Backup Infrastructure Components
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
-| Any backup infrastructure component | DNS server | UDP, TCP | 22 | Port used for communication with the DNS server. It is required for forward/reverse name resolution of all backup and infrastructure servers including Active Directory domain controllers. |
+| Any backup infrastructure component | DNS server | UDP, TCP | 53 | Port used for communication with the DNS server. It is required for forward/reverse name resolution of all backup and infrastructure servers including Active Directory domain controllers. |
 
 Backup Server
 
@@ -43,6 +43,8 @@ Incoming Connections
 | --- | --- | --- | --- | --- |
 | Management client PC (remote access) | Backup server | TCP | 22 | Default port used to connect to the Linux-based backup server through SSH. |
 | TCP | 443 | Default ports used to connect to the Veeam Backup & Replication web UI. |
+| TCP | 10443 | Default port used by the Linux-based backup server to connect to the Host Management console. |
+| TCP | 3389 | Default port used by Remote Desktop Services to connect to the Windows-based backup server. If you use third-party solutions to connect to the backup server, other ports may need to be open. |
 | Remote Veeam Backup & Replication console | TCP | 443 | Port used to communicate with the backup server. |
 | Backup proxy | TCP | 2500 to 3300 | Default range of ports used for malware detection metadata transfer. |
 | Backup repository (Linux) | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
@@ -53,12 +55,10 @@ Incoming Connections
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | TCP | 443 | Port used for communication with the backup server. |
 | REST client | TCP | 9419 | Default ports for communication with REST API service. |
-| Management client PC (remote access) | TCP | 10443 | Default port used by the Linux-based backup server to connect to the Host Management console. |
 | CDP components | TCP | 33034 | [CDP only] Port used by the following CDP components to communicate with Veeam CDP Coordinator Service:   * CDP proxy (source and target) * ESXi host (source and target) * vCenter Server (source and target)   For more information, see [Continuous Data Protection (CDP) for VMware vSphere](cdp_replication.md). |
 | ESXi host | TCP | 33035 | [CDP only] Port used to install I/O filter components on the source and target ESXi hosts. For more information, see [Continuous Data Protection (CDP) for VMware vSphere](cdp_replication.md). |
 | vCenter Server | TCP | 33035 | [CDP only] Port used to install I/O filter components on the source and target vCenter servers. For more information, see [Continuous Data Protection (CDP) for VMware vSphere](cdp_replication.md). |
 | SCVMM | TCP | 443 | Port used for Veeam PowerShell Management Service authorization on the SCVMM server. |
-| Management client PC (remote access) | TCP | 3389 | Default port used by Remote Desktop Services to connect to the Windows-based backup server. If you use third-party solutions to connect to the backup server, other ports may need to be open. |
 
 Outgoing Connections
 
@@ -197,11 +197,9 @@ The following table describes network ports that must be opened to ensure proper
 | Backup server | Gateway server (Microsoft Windows) | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
-| TCP | 6190 | Port used for communication with the guest interaction proxy. |
 | Gateway server (Linux) | TCP | 22 | Default SSH port used as a control channel. |
 | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  You can specify a different port while adding the Linux server to the Veeam Backup & Replication infrastructure. Note that you can specify a different port only if there is no previously installed Veeam Transport Service or Veeam Data Mover components on this Linux server. For more information, see [Specify Credentials and SSH Settings](linux_server_ssh.md). |
-| TCP | 6190 | Port used for communication with the guest interaction proxy. |
 | Backup proxy or Hyper-V server/Off-host backup proxy | Gateway server | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | Guest interaction proxy | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | Log shipping server | TCP | 2500 to 3300 | Default range of ports used as transmission channels and for log file collection. For every TCP connection that a job uses, one port from this range is assigned. |
@@ -612,7 +610,9 @@ File Share Connections
 | S3 compatible object storage | TCP | Depends on device configuration | Port used to communicate with S3 compatible object storage. |
 | Active Directory Domain Controllers | TCP | 389 | Port used for communications over LDAP and LDAPS protocols. |
 | TCP | 88 | Port used for Kerberos authentication. |
-| Mount server | SMB share | TCP | 137-139, 443, 445, 6170 | Ports used during Instant File Share Recovery. |
+| Mount server | SMB share | TCP | 445 | Standard SMB port. |
+| SMB share | TCP | 137-139 | Standard CIFS ports range. |
+| Backup server | TCP | 135, 443, 445, 6170 | Ports used during Instant File Share Recovery. |
 
 Cache Repository Connections
 
@@ -621,7 +621,7 @@ Cache Repository Connections
 | File server (Windows or Linux), Backup proxy | Cache repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | Backup server | Cache repository | TCP | 6160 | Default ports used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service. |
-| Old cache repository, new cache repository | TCP | 2500 to 3300, 6160, 6162 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo). |
+| Old cache repository, new cache repository | TCP | 2500 to 3300 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo). |
 | Cache repository | Gateway server | TCP | 2500 to 3300 | Default range of ports used as transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
 | Primary or secondary backup repository | TCP | 2500 to 3300 | Default range of ports used as transmission channels for file share backup restore jobs. For every TCP connection that a job uses, one port from this range is assigned. |
 
