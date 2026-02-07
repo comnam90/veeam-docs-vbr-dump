@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_limitations.html"
-last_updated: "1/16/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,6 +17,11 @@ General Limitations for HA Cluster
 Consider the following general limitations for the HA cluster:
 
 * To be able to use the HA cluster, you must install the Veeam Data Platform Premium License. You must apply this license to the Veeam software appliance that you plan to use as the primary node. For more details about all license types, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
+
+|  |
+| --- |
+| Note |
+| You cannot use earlier iterations of the Veeam Universal License (for example, Veeam Availability Suite), unless you upgrade your license to the Veeam Data Platform Premium License. To upgrade the license, use the [Update license](license_update_manual.md) option. |
 
 * Before you assemble the HA cluster, make sure that both nodes have the same DNS suffixes and correct DNS addresses. Otherwise, Veeam Backup & Replication will not be able to resolve infrastructure servers on both nodes.
 * Veeam Backup & Replication does not automatically install [Universal Storage API integrated systems](universal_storage_integration_api.md) on an HA cluster. You must install the necessary Universal Storage API integrated system plug-in on every node. For more information, see [Installing and Updating Plug-ins on Linux-Based Backup Server](storage_install_plugin_linux.md).
