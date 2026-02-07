@@ -3,7 +3,7 @@ title: "Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_overview.html"
-last_updated: "1/29/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,5 +18,10 @@ In This Section
 * [VM Backup](ahv_nutanix_integration.md)
 * [VM Restore](ahv_restore_how.md)
 * [Retention Policies](ahv_retention_policy.md)
+
+|  |
+| --- |
+| Note |
+| Since Veeam Plug-in for Nutanix AHV was originally introduced as a dedicated component of the Veeam Backup & Replication solution, the plug-in preserves its own versioning — the current version of Veeam Plug-in for Nutanix AHV is 9. For more information on plug-in versions and their compatibility with Veeam Backup & Replication, see [System Requirements](ahv_system_requirements.md#compatibility). |
 
 
