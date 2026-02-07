@@ -3,7 +3,7 @@ title: "Disabling Automatic Worker Updates"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_workers_update.html"
-last_updated: "1/9/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,6 +22,11 @@ Alternatively, right-click the worker and select Properties.
 
 1. At the Networks step of the Edit Nutanix AHV Worker wizard, click Advanced and clear the Check for updates online check box. Then, click Finish to save changes made to the worker settings.
 
-   ![Disabling Automatic Worker Updates](images/ahv_workers_update.webp "Updating Workers")
+|  |
+| --- |
+| Tip |
+| [Applies only to Linux-based backup servers] Alternatively, you can instruct Veeam Backup & Replication to use your local mirror repository while updating workers. To learn how to enable using local repositories, see [Configuring Updates](update_appliance_configure_updates.md#custom_configuration). |
+
+![Disabling Automatic Worker Updates](images/ahv_workers_update.webp "Updating Workers")
 
 
