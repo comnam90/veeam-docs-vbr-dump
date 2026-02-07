@@ -3,7 +3,7 @@ title: "How Repository with Rotated Drives Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rotated_drives_hiw.html"
-last_updated: "1/9/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -19,7 +19,7 @@ Veeam Backup & Replication performs backup jobs and backup copy jobs targeted at
 |  |
 | --- |
 | Important |
-| When you specify retention settings for a backup job or a backup copy job targeted at a backup repository with rotated drives, you must define the total number of restore points that you want to retain on one drive. You can specify retention in days or restore points. For example, if you set retention to 10 restore points, the job will keep the total of 10 restore points on each drive in the set. |
+| When you specify retention settings for a backup job or a backup copy job targeted at a backup repository with rotated drives, you must define the total number of days for how long you want to retain the restore points on one drive. For example, if you set retention to 10 days, Veeam Backup & Replication keeps the restore points created during the last 10 days on each drive in the set. |
 
 Backup Jobs
 

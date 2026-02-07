@@ -3,7 +3,7 @@ title: "Block Generation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/block_gen.html"
-last_updated: "1/2/2025"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,8 @@ To reduce I/O operations and associated costs, Veeam Backup & Replication will a
 
 Depending on the type of the object storage repository, Veeam Backup & Replication will add the following values for the default generation period:
 
-* 30 days — for Amazon S3 object storage and IBM Cloud object storage.
+* 30 days — for Amazon S3 object storage, IBM Cloud object storage, Google Cloud object storage and for 11:11 Cloud object storage.
+
 * 10 days — for all other types of object storage repositories.
 
 For example, if you set your immutability period to 30 days for your object storage repository, Veeam Backup & Replication will add 10 days to specific objects to reduce I/O operations with the data blocks over time. Thus, you will have immutability set for 30 days + 10 days of Block Generation set for data blocks in your object storage repositories.

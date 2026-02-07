@@ -3,7 +3,7 @@ title: "Step 5a. Enable Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_backup_job_vbr_vss_application.html"
-last_updated: "1/26/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -56,7 +56,7 @@ To change this behavior and instruct Veeam Backup & Replication to proceed with 
 
 Enabling Persistent Agent Components
 
-For Veeam Backup & Replication to be able to create transactionally-consistent backups of a processed VM, this VM must run a number of runtime components that enable access the VM guest OS. By default, these components are installed temporarily and then removed automatically as soon as the backup operation completes; this approach eliminates error-prone manual steps but [requires multiples ports](ahv_used_ports.md#runtime_components) to be open on the VM. To change this behavior, you can instruct Veeam Backup & Replication to use persistent agent components that are installed permanently and then run in the background while no backup operations are performed; this approach increases the security of guest processing, requires a very [limited number of ports](ahv_used_ports.md#persistent_agents) to be open on the processed VM — but you will have to take some additional configuration steps to install the agent deployment kit on the VM.
+For Veeam Backup & Replication to be able to create transactionally-consistent backups of a processed VM, this VM must run a number of runtime components that enable access the VM guest OS. By default, these components are installed temporarily and then removed automatically as soon as the backup operation completes; this approach eliminates error-prone manual steps but [requires multiples ports](used_ports.md#runtime_components) to be open on the VM. To change this behavior, you can instruct Veeam Backup & Replication to use persistent agent components that are installed permanently and then run in the background while no backup operations are performed; this approach increases the security of guest processing, requires a very [limited number of ports](used_ports.md#persistent_agents) to be open on the processed VM — but you will have to take some additional configuration steps to install the agent deployment kit on the VM.
 
 |  |
 | --- |

@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_limitations.html"
-last_updated: "11/18/2025"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -38,6 +38,7 @@ Backup Job Configuration
 * If you use tags to categorize virtual infrastructure objects, check the limitations for VM tags. For more information, see [VM Tags](vm_tags.md).
 * If a job cannot be completed within the 21 days period, it will be stopped with the Failed status.
 * If you plan to protect VMware Cloud Director objects, consider using the dedicated backup job. For more information, see [Backup for VMware Cloud Director](vcloud_director_backup.md).
+* You cannot exclude VMs in the web UI. This option is available only in the Veeam Backup & Replication console.
 
 Guest Processing
 

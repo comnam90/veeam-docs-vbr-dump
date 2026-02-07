@@ -3,7 +3,7 @@ title: "Deploying Veeam Agent for Unix"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deploy_agent_unix.html"
-last_updated: "11/4/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 

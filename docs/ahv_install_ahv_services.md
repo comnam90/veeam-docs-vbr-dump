@@ -3,7 +3,7 @@ title: "Installing Veeam Plug-In for Nutanix AHV Manually"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_install_ahv_services.html"
-last_updated: "2/2/2026"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +15,7 @@ The plug-in that allows you to protect Nutanix AHV resources comes pre-installed
 |  |
 | --- |
 | Note |
-| If you use a remote Veeam Backup & Replication console, you do not need to install Nutanix AHV Plug-in on the workstation where the remote Veeam Backup & Replication console is deployed. |
+| If you use a remote Veeam Backup & Replication console, you do not need to install Veeam Plug-in for Nutanix AHV on the workstation where the remote Veeam Backup & Replication console is deployed. |
 
 To install Veeam Plug-in for Nutanix AHV, do the following:
 

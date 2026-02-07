@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_limitations_hv.html"
-last_updated: "12/3/2025"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -42,6 +42,8 @@ Backup Job Configuration
 * If you plan to use pre-job and post-job scripts, you must create scripts before you configure the backup job.
 
 * If you plan to migrate VMs between hosts in the cluster or SCVMM, you will not have to reconfigure jobs in Veeam Backup & Replication. Veeam Backup & Replication will automatically locate migrated VMs and continue processing them as usual. If you migrate VMs between standalone hosts that are not a part of one cluster or SCVMM server registered in Veeam Backup & Replication, you will have to reconfigure jobs to include the migrated VMs. After that, Veeam Backup & Replication will create full backups for these VMs. If you do not reconfigure the jobs, they will fail.
+
+* You cannot exclude VMs in the web UI. This option is available only in the Veeam Backup & Replication console.
 
 Guest Processing
 

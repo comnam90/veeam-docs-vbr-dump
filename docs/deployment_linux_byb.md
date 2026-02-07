@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_byb.html"
-last_updated: "2/5/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,6 +22,7 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * You cannot install third-party software on a Veeam Software Appliance.
 
 * [VMware only] Veeam Software Appliance only supports the Network transport mode.
+* [Microsoft Hyper-V only] Linux-based Veeam Software Appliance does not support the SCVMM High Availability feature.
 
 * Define where the Veeam Backup & Replication server will be located. Depending on what kind of protection are you planning to use, the Veeam Backup & Replication server should be located on the source site or the Disaster Recovery site.
 
