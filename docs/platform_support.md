@@ -3,7 +3,7 @@ title: "Supported Platforms, Applications and Workloads"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html"
-last_updated: "2/3/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -99,7 +99,7 @@ File-level restore is supported for the following file systems, including Micros
 | Linux | * ext2, ext3, ext4 * ReiserFS * JFS * XFS * Btrfs * NTFS   DRBD (Distributed Replicated Block Devices) are not supported. |
 | BSD | UFS, UFS2 |
 | Mac | HFS, HFS+ (volumes up to 2 TB) |
-| OpenText OES (formerly Micro Focus OES) | NSS  AD-enabled NSS volumes on Open Enterprise Server 2015 are supported. Besides restore of standard file and folder permissions, restore of NSS trustee rights on files and folders is supported.  File-level restore is supported for the following OSes:   * Open Enterprise Server (OES) versions 2015(SP1), 2018(SP1-SP3). Versions 2023 and 24.1 are supported with limitations. For more information, see [this Veeam KB article](https://www.veeam.com/kb4492). * NetWare 6.5 (only [restore to a new location](guest_restore_save.md#new) is supported) |
+| OpenText OES (formerly Micro Focus OES) | NSS  AD-enabled NSS volumes on Open Enterprise Server 2015 are supported. Besides restore of standard file and folder permissions, restore of NSS trustee rights on files and folders is supported.  File-level restore is supported for the following OSes:   * Open Enterprise Server (OES) versions 2015(SP1), 2018(SP1-SP3). Versions 2023, 24.1, 24.4 and 25.4 are supported with limitations. For more information, see [this Veeam KB article](https://www.veeam.com/kb4492). * NetWare 6.5 (only [restore to a new location](guest_restore_save.md#new) is supported) |
 | Solaris | * UFS * ZFS (except any pool versions of Oracle Solaris)   The helper appliance uses module ZFSonLinux version 2.1.5. For this reason, Veeam Backup & Replication supports only those versions of pools and features that are available in ZFSonLinux version 2.1.5. |
 
 For other requirements and limitations of guest OS file restore, see [Requirements and Limitations](guest_restore_before_you_begin.md).
