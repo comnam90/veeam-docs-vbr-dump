@@ -3,7 +3,7 @@ title: "Snapshot Types"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_nutanix_snapshots.html"
-last_updated: "1/26/2026"
+last_updated: "2/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,7 +26,7 @@ While taking VM snapshots, Nutanix AHV captures data residing on virtual disks a
 
 * Snapshots on Replica Sites
 
-[Applies only to the [Prism Central deployment](ahv_infrastructure_prism_central.md)] A snapshot on a replica site is a VM snapshot created and replicated by a Prism Central [protection policy](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_7_3:mul-explore-protection-policies-view-pc-r.html). Snapshots on replica sites are not displayed in the Veeam Backup & Replication console — these snapshots can be only be found in the Prism Central console.
+[Applies only to the [Prism Central deployment](ahv_infrastructure_prism_central.md)] A snapshot on a replica site is a VM snapshot created and replicated by a Prism Central[protection policy](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_7_3:mul-explore-protection-policies-view-pc-r.html). Snapshots on replica sites are not displayed in the Veeam Backup & Replication console — these snapshots can be only be found in the Prism Central console.
 
 Snapshots on replica sites allow Veeam Backup & Replication to reduce the backup load on the production environment. However, Veeam Backup & Replication can use these snapshots only if the following requirements are met for each VM included into the backup scope:
 
