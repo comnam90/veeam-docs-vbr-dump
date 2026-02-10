@@ -3,7 +3,7 @@ title: "Step 7. Specify Replica Destination"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_destination_hv.html"
-last_updated: "1/22/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -19,7 +19,7 @@ You can specify the following folders:
 
 1. An existing folder on a host.
 2. A new folder on a host. To do this, in the Select Folder window, select a location where the folder must be created. Click New Folder and specify a folder name.
-3. A Microsoft SMB3 shared folder. To do this, in the search field at the bottom of the Select Folder window, enter a path to the Microsoft SMB3 shared folder. The path must be specified in the UNC format, for example: \\172.16.11.38\Share01.
+3. [For Microsoft Windows-based backup server] A Microsoft SMB3 shared folder. To do this, in the search field at the bottom of the Select Folder window, enter a path to the Microsoft SMB3 shared folder. The path must be specified in the UNC format, for example: \\172.16.11.38\Share01.
 
 The host or cluster you specify in the Host or cluster field must have access to the Microsoft SMB3 shared folder. If you are using Microsoft SCVMM 2012 or Microsoft SCVMM 2012 R2, the server hosting the Microsoft SMB3 share must be registered in Microsoft SCVMM as a storage device. For more information, see [Microsoft Docs](http://technet.microsoft.com/en-us/library/jj614620.aspx).
 
