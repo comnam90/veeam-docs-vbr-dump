@@ -3,7 +3,7 @@ title: "Infrastructure Icons"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infrastructure_icons.html"
-last_updated: "10/16/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -127,6 +127,7 @@ The following icons represent the replicas configured in Veeam Backup & Replicat
 | ![Infrastructure Icons](images/backup_replicas_ready.webp) | Replicas in the ready state |
 | ![Infrastructure Icons](images/failover-plan.webp) | Failover plan |
 | ![Infrastructure Icons](images/cloud_failover.webp) | Cloud failover plan |
+| ![Infrastructure Icons](images/replica_files.webp) | Replica metadata |
 
 Microsoft Entra ID Backups
 
