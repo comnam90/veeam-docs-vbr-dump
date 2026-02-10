@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/6/2026"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -128,7 +128,12 @@ The following table describes network ports that must be opened to ensure proper
 
 Veeam Infrastructure Appliance
 
-The following table describes network ports that must be opened to ensure proper communication between Veeam Infrastructure Appliances and other backup components. You must open additional ports based on the role you have assigned to the Veeam Infrastructure Appliance. For more information, see the relevant section for the role on this page.
+The following table describes network ports that must be opened to ensure proper communication between Veeam Infrastructure Appliances and other backup components.
+
+|  |
+| --- |
+| Note |
+| The following ports are required by all Veeam Infrastructure Appliances. You must also open additional ports based on the role you have assigned to the Veeam Infrastructure Appliance. They can be found on this page in the relevant section for the role. For example, [Backup Proxy](#proxy) or [Gateway Server](#gateway).  For more information on the roles that can be assigned to a Veeam Infrastructure Appliance, see [Considerations and Limitations](linux_infrastructure_appliance_byb.md). |
 
 | From | To | Protocol | Port | Notes |
 | --- | --- | --- | --- | --- |
@@ -201,10 +206,10 @@ The following table describes network ports that must be opened to ensure proper
 | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  You can specify a different port while adding the Linux server to the Veeam Backup & Replication infrastructure. Note that you can specify a different port only if there is no previously installed Veeam Transport Service or Veeam Data Mover components on this Linux server. For more information, see [Specify Credentials and SSH Settings](linux_server_ssh.md). |
 | Backup proxy or Hyper-V server/Off-host backup proxy | Gateway server | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
-| Guest interaction proxy | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
-| Log shipping server | TCP | 2500 to 3300 | Default range of ports used as transmission channels and for log file collection. For every TCP connection that a job uses, one port from this range is assigned. |
+| Guest interaction proxy | Gateway server | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
+| Log shipping server | Gateway server | TCP | 2500 to 3300 | Default range of ports used as transmission channels and for log file collection. For every TCP connection that a job uses, one port from this range is assigned. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
-| VM Guest OS | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
+| VM Guest OS | Gateway server | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | TCP | 2500-3300 | Default range of ports used as transmission channels and for log file collection. For every TCP connection that a job uses, one port from this range is assigned. |
 
 Backup Repositories

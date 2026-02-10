@@ -3,7 +3,7 @@ title: "Supported Platforms, Applications and Workloads"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html"
-last_updated: "2/6/2026"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -72,7 +72,7 @@ The following infrastructure requirements apply only when you protect VMs with C
 * Minimum 16GB RAM is required for source and target ESXi hosts.
 
 * All hosts in a cluster must be of the same major version. For example, 7.x or 8.x (7.0.0, or 7.0.2, or a combination of 7.0.0 and 7.0.2 is supported).
-* You can replicate data between vCenter Servers of different versions. However, if you replicate data within one vCenter Server, and this vCenter Server includes hosts of different versions (8 and 7), your CDP policy may fail. In this case, go to the vSphere Client and delete the Veeam CDP Replication VM storage policy applied to each VM included in the CDP policy. For more information on how to delete a VM storage policy, see [VMware Docs](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.storage.doc/GUID-B9200042-1D30-4C1C-A84C-B69BF711D98D.html). Then, in the Veeam Backup & Replication console, relaunch the CDP policy.
+* You can replicate data between vCenter Servers of different versions. However, if you replicate data within one vCenter Server, and this vCenter Server includes hosts of different versions (8 and 7), your CDP policy may fail. In this case, go to the vSphere Client and delete the Veeam CDP Replication VM storage policy applied to each VM included in the CDP policy. For more information on how to delete a VM storage policy, see [VMware Docs](https://knowledge.broadcom.com/external/article/375858/deleting-a-virtual-machine-storage-polic.html). Then, in the Veeam Backup & Replication console, relaunch the CDP policy.
 
 * The maximum number of disks per ESXi host is 500.
 
