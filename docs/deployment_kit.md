@@ -3,14 +3,14 @@ title: "Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_kit.html"
-last_updated: "1/13/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Using Veeam Deployment Kit
 
 
-The Veeam Deployment Kit is a package that enables certificate-based authentication for the backup infrastructure configuration. When the Deployment Kit is installed on a target server, Veeam Backup & Replication can authenticate using certificates instead of traditional user name and password credentials. The Deployment Kit can be used to connect to remote Microsoft Windows servers and to Veeam Agent computers that you plan to add to a protection group.
+The Veeam Deployment Kit is a package that enables certificate-based authentication for the backup infrastructure configuration. When the Deployment Kit is installed on a target server, Veeam Backup & Replication can authenticate using certificates instead of traditional user name and password credentials. The Deployment Kit can be used to connect to remote Linux and Microsoft Windows servers and to Veeam Agent computers that you plan to add to a protection group.
 
 The Deployment Kit installation is a prerequisite to use persistent agent components on protected Microsoft Windows VMs. For more information, see [Persistent Agent Components](persistent_agent_components.md).
 
