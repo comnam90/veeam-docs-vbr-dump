@@ -3,7 +3,7 @@ title: "Restoring Veeam Agent Backup to Hyper-V VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_hyperv.html"
-last_updated: "2/9/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 

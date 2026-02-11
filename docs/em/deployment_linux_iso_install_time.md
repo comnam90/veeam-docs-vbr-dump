@@ -3,7 +3,7 @@ title: "Step 7. Review Server Time Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_install_time.html"
-last_updated: "2/4/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
