@@ -3,7 +3,7 @@ title: "Performing Maintenance Tasks"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_perform_maintenance_tasks.html"
-last_updated: "2/4/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -51,13 +51,7 @@ You can export and import required configuration files to customize Veeam Softwa
 1. Log in to the Veeam Host Management web UI as a Host Administrator. For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
 2. In the management pane, click Logs and Services.
 3. On the Host Configuration tab, select the file in the Configuration Files section and click Export.
-
-|  |
-| --- |
-| Note |
-| If the Export button is unavailable, the selected file does not exist on the Veeam Appliance and must be imported manually first. |
-
-1. After you edit the file and update configuration parameters, click Import to upload the updated file. To apply new configuration, you may need to restart the service or the server.
+4. After you edit the file and update configuration parameters, click Import to upload the updated file. To apply new configuration, you may need to restart the service or the server.
 
 [![Performing Maintenance Tasks](images/hmc_web_config_files.webp)](images/hmc_web_config_files.webp)
 
