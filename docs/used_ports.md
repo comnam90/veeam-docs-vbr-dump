@@ -3,14 +3,14 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/9/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Ports
 
 
-On backup infrastructure components, Veeam Backup & Replication automatically creates firewall rules for the required ports on Windows-based machines. If you are using a third-party firewall, these rules must be created manually. These rules allow components to communicate with each other. You can find the full list of the ports in this section.
+On backup infrastructure components, Veeam Backup & Replication automatically creates firewall rules for the required ports on Windows-based machines. If you are using a third-party firewall, these rules must be created manually. These rules allow components to communicate with each other. You can find the full list of the ports for standard installations in this section.
 
 |  |
 | --- |
@@ -597,6 +597,7 @@ File Share Connections
 | Backup server | File server (Windows or Linux), Backup proxy | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6210 | Default port used by the Veeam Backup VSS Integration Service for taking a VSS snapshot during the SMB file share backup (if Veeam Backup & Replication is installed on the Microsoft Windows machine). For more information, see [Microsoft Windows Services](services_and_components.md#win_services). |
 | TCP | 6162 | Default port used by Veeam Transport Service. |
+| Mount server | TCP | 443, 445, 6170 | Ports used during Instant File Share Recovery. |
 | Backup proxy | NAS filer (NetApp Data ONTAP or Lenovo ThinkSystem DM/DG Series storage system) | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service. |
 | TCP | 445 | Standard SMB port. |
 | TCP, UDP | 635 | The default port used by the NetApp Data ONTAP storage controller. |
@@ -617,7 +618,6 @@ File Share Connections
 | TCP | 88 | Port used for Kerberos authentication. |
 | Mount server | SMB share | TCP | 445 | Standard SMB port. |
 | SMB share | TCP | 137-139 | Standard CIFS ports range. |
-| Backup server | TCP | 135, 443, 445, 6170 | Ports used during Instant File Share Recovery. |
 
 Cache Repository Connections
 
