@@ -3,7 +3,7 @@ title: "Tasks with Cloud Repository"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_tasks.html"
-last_updated: "11/19/2025"
+last_updated: "2/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,6 +17,9 @@ Tenants can perform the following data backup and recovery tasks in Veeam Backup
 Data Backup
 
 * VM backup
+
+VM backup is supported for VMware vSphere and Microsoft Hyper-V platforms only. For other platforms, use backup copy.
+
 * VMware Cloud Director backup (for VMware vSphere platform)
 * Veeam Agent backup
 * Backup copy
