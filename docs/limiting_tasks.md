@@ -3,7 +3,7 @@ title: "Limitation of Concurrent Tasks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/limiting_tasks.html"
-last_updated: "11/26/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -34,7 +34,7 @@ Task Limitation for Backup Proxies
 
 During data protection or recovery jobs, Veeam Backup & Replication creates a separate task per each disk of every VM added to the job.
 
-We recommend that you define the maximum number of concurrent tasks depending on the number of CPU cores available on the backup proxy. To calculate the optimum limit, we recommend that you follow the rule: not more than 2 tasks per 1 CPU core.
+We recommend that you define the maximum number of concurrent tasks depending on the number of CPU cores and RAM available on the backup proxy. To calculate the optimum limit, we recommend that you follow the rule: not more than 2 tasks per 1 CPU core and not less than 1 GB RAM for each concurrent task for a VMware backup proxy, or not less than 500 MB RAM for each concurrent task for Hyper-V off-host backup proxy, or not less than 4 GB RAM for each concurrent task for general-purpose backup proxy (in case of Veeam Agent and storage system snapshot integration, 1 GB RAM). For more information about RAM requirements for the backup proxy roles, see [System Requirements](system_requirements.md).
 
 To limit the number of concurrent tasks on the backup proxy, you must define the Max concurrent tasks setting for the backup proxy.
 
