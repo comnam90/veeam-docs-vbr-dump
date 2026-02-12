@@ -3,7 +3,7 @@ title: "Restore to Instance with Different Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_server_with_different_name.html"
-last_updated: "11/25/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,8 +22,8 @@ For example, you can use the SET STOGROUP PATHS command. With this command, you 
 
 where:
 
-* <database\_name> is a name of the database you want to restore.
-* <timestamp> is a time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
+* <database\_name> is the name of the database you want to restore.
+* <timestamp> is the time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
 
 1. Set storage group paths for the database with the following command:
 
@@ -31,7 +31,7 @@ where:
 | --- |
 | db2 set stogroup paths for IBMSTOGROUP on '/home/<instance\_name>' |
 
-where: <instance\_name> is a name of the target instance to which you want to restore your database.
+where: <instance\_name> is the name of the target instance to which you want to restore your database.
 
 1. Run the RESTORE command again with the CONTINUE parameter:
 
@@ -39,7 +39,7 @@ where: <instance\_name> is a name of the target instance to which you want to re
 | --- |
 | db2 restore database <database\_name> continue |
 
-where <database\_name> is a name of the database you want to restore.
+where <database\_name> is the name of the database you want to restore.
 
 After that, your database will be restored and re-configured to comply with the name of the target instance.
 
