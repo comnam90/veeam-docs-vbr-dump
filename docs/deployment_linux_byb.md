@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_byb.html"
-last_updated: "2/10/2026"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * Veeam Software Appliance installation and initial configuration support only the English US keyboard layout.
 * When you install Veeam Software Appliance, the Rocky Linux operating system, Veeam Backup & Replication and other Veeam Software Appliance components are installed with predefined settings, including volume partitioning and user account creation. After installation is complete, you need to proceed with the initial configuration of Veeam Software Appliance, which includes setting up host users, and configuring server time and network settings.
 
-* You cannot add additional storage devices to a Veeam Software Appliance after it has been deployed.
+* After you deploy a Veeam Software Appliance, you cannot add new storage devices or expand existing ones.
 
 * You cannot install third-party software on a Veeam Software Appliance.
 
