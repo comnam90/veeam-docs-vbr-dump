@@ -3,7 +3,7 @@ title: "Installing Veeam Software Appliance from ISO"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install.html"
-last_updated: "2/10/2026"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
