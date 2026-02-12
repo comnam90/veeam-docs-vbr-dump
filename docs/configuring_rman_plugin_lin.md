@@ -3,7 +3,7 @@ title: "Configuring Plug-In on Linux or Unix"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_lin.html"
-last_updated: "12/5/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ Note that the Veeam Plug-In configuration tool changes the settings of Oracle RM
 
 To configure Veeam Plug-In for Oracle RMAN, do the following:
 
-1. Log in to the Oracle server with an account which is a member of the DBA group.
+1. Log in to the Oracle server with an account which is the member of the DBA group.
 2. Launch the configuration wizard:
 
 |  |
