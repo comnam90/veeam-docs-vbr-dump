@@ -3,7 +3,7 @@ title: "Restore to Original Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_original.html"
-last_updated: "11/25/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,8 +26,8 @@ To restore a IBM Db2 database from a full backup, use the following command:
 
 where:
 
-* <database\_name> is a name of the database you want to restore.
-* <timestamp> is a time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
+* <database\_name> is the name of the database you want to restore.
+* <timestamp> is the time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
 
 To learn how to get time stamp, see [Get Backup Time Stamp](db2_restore_get_time_stamp.md).
 
@@ -41,8 +41,8 @@ To restore a IBM Db2 database from an incremental backup, use the following comm
 
 where:
 
-* <database\_name> is a name of the database you want to restore.
-* <timestamp> is a time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
+* <database\_name> is the name of the database you want to restore.
+* <timestamp> is the time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
 
 To learn how to get time stamp, see [Get Backup Time Stamp](db2_restore_get_time_stamp.md).
 
@@ -63,7 +63,7 @@ To restore database to the previous state, do the following steps:
 | --- |
 | db2 terminate  db2 deactivate database <database\_name> |
 
-where <database\_name> is a name of the database you want to deactivate.
+where <database\_name> is the name of the database you want to deactivate.
 
 1. Extract archive logs from the backup file with the following command:
 
@@ -73,8 +73,8 @@ where <database\_name> is a name of the database you want to deactivate.
 
 where:
 
-* <database\_name> is a name of the database you want to deactivate.
-* <path\_to\_logs> is a path to the directory to which Veeam Plug-In will extract archive logs.
+* <database\_name> is the name of the database you want to deactivate.
+* <path\_to\_logs> is the path to the directory to which Veeam Plug-In will extract archive logs.
 
 1. Return the database to the state recorded in a backup with the following command:
 
@@ -84,8 +84,8 @@ where:
 
 where:
 
-* <database\_name> is a name of the database you want to restore.
-* <timestamp> is a time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
+* <database\_name> is the name of the database you want to restore.
+* <timestamp> is the time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format. Veeam Plug-In will restore database from the backup file created at the time that you specify in the command.
 
 To learn how to get time stamp, see [Get Backup Time Stamp](db2_restore_get_time_stamp.md).
 
@@ -97,8 +97,8 @@ To learn how to get time stamp, see [Get Backup Time Stamp](db2_restore_get_time
 
 where:
 
-* <database\_name> is a name of the database you want to deactivate.
-* <path\_to\_logs> is a path to the directory to which Veeam Plug-In will extract archive logs.
+* <database\_name> is the name of the database you want to deactivate.
+* <path\_to\_logs> is the path to the directory to which Veeam Plug-In will extract archive logs.
 
 1. Recover the database with the following command:
 
@@ -106,7 +106,7 @@ where:
 | --- |
 | db2 recover database <database\_name> |
 
-where <database\_name> is a name of the database you want to deactivate.
+where <database\_name> is the name of the database you want to deactivate.
 
 1. Re-activate the database with the following command:
 
@@ -114,6 +114,6 @@ where <database\_name> is a name of the database you want to deactivate.
 | --- |
 | db2 activate database <database\_name> |
 
-where <database\_name> is a name of the database you want to deactivate.
+where <database\_name> is the name of the database you want to deactivate.
 
 
