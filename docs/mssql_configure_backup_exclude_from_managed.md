@@ -3,7 +3,7 @@ title: "Backing Up SQL Databases with Standalone Backup Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_configure_backup_exclude_from_managed.html"
-last_updated: "12/1/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,8 +32,8 @@ To exclude databases from the backup scope of an application backup policy, perf
 
 where:
 
-* <instance\_name> is a name of the instance whose databases you want to exclude from the backup scope of an application backup policy.
-* <database\_name> is a name of the database you want to exclude from the backup scope of an application backup policy. If you want to specify several databases, specify each database with a separate --d parameter.
+* <instance\_name> is the name of the instance whose databases you want to exclude from the backup scope of an application backup policy.
+* <database\_name> is the name of the database you want to exclude from the backup scope of an application backup policy. If you want to specify several databases, specify each database with a separate --d parameter.
 
 For example:
 
@@ -64,8 +64,8 @@ If you want to return the database to the management scenario and back up the da
 
 where:
 
-* <instance\_name> is a name of the instance whose databases you want to exclude from the backup scope of an application backup policy.
-* <database\_name> is a name of the database you want to exclude from the backup scope of an application backup policy. If you want to specify several databases, specify each database with a separate --d parameter.
+* <instance\_name> is the name of the instance whose databases you want to exclude from the backup scope of an application backup policy.
+* <database\_name> is the name of the database you want to exclude from the backup scope of an application backup policy. If you want to specify several databases, specify each database with a separate --d parameter.
 
 For example:
 
