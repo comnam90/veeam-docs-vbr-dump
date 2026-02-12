@@ -3,7 +3,7 @@ title: "How Updates Work"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/update_appliance_hiw.html"
-last_updated: "2/4/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 

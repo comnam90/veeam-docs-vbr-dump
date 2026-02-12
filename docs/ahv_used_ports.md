@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_used_ports.html"
-last_updated: "2/6/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,7 +25,7 @@ The following table describes network ports that must be opened to ensure proper
 | Veeam backup repository (or [gateway server](gateway_server.md)) | TCP | 2500-3300 | Default range of ports used as transmission channels for jobs and restore sessions. For every TCP connection that a job uses, one port from this range is assigned. |
 | TCP | 6162 | Default port used by Veeam Transport Service (on Linux  servers) or Veeam Data Mover Service (on Windows servers). |
 | Veeam Update Repository  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) (cloudfront.net, amazonaws.com) | TCP/HTTPS | 443 | Used to download worker update packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
-| Veeam Update Repository (local mirror)  (<yourlocalmirrorrepository.domain>) | TCP | 443 or 80 | [Applies only to Linux-based backup servers]  Used to download worker update packages from your local mirror repository if enabled in [Update Settings](update_appliance_configure_updates.md#custom_configuration). |
+| Veeam Update Repository (local mirror)  (<yourlocalmirrorrepository.domain>) | TCP | 443 or 80 | Used to download worker update packages from your local mirror repository if enabled as described in section [Setting Up Global Update Configuration](update_appliance_configure_updates.md#global_configuration). |
 
 Backup Server
 

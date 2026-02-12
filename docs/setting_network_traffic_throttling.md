@@ -3,7 +3,7 @@ title: "Enabling Traffic Throttling"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/setting_network_traffic_throttling.html"
-last_updated: "1/6/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,7 +21,7 @@ When several jobs that fall into the same network rule run simultaneously, Veeam
 |  |
 | --- |
 | Note |
-| Consider the following:   * Traffic can be throttled only if the [infrastructure components](#components) are located on different servers and have different IP addresses. For example, if you use the same server as a backup proxy and a backup repository, traffic throttling rules do not apply to them. * It is recommended that you throttle network traffic if you perform off-site backup or replicate VMs to a DR site over slow WAN links. * Traffic throttling rules apply to the transfer of virtual disks. At the beginning of the job, you may see bandwidth usage peaks caused by transferring other VM files. |
+| Consider the following:   * Traffic can be throttled only if the [infrastructure components](#components) are located on different servers and have different IP addresses. For example, if you use the same server as a backup proxy and a backup repository, traffic throttling rules do not apply to them. * It is recommended that you throttle network traffic if you perform off-site backup or replicate VMs to a DR site over slow WAN links. * In case of machine-related jobs, traffic throttling rules apply to the transfer of virtual disks. At the beginning of the job, you may see bandwidth usage peaks caused by transferring other VM files. |
 
 Infrastructure Components
 

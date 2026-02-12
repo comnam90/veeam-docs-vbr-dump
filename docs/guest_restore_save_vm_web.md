@@ -3,7 +3,7 @@ title: "Step 4. Finalize Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_save_vm_web.html"
-last_updated: "8/7/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 

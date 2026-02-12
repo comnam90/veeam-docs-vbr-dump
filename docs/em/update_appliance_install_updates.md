@@ -3,14 +3,16 @@ title: "Installing Updates"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/update_appliance_install_updates.html"
-last_updated: "2/4/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Installing Updates
 
 
-Updates can be installed manually or automatically. For more details on the installation process, see [How Updates Work](update_appliance_hiw.md).Installing Updates Manually
+Updates can be installed manually or automatically. For more details on the installation process, see [How Updates Work](update_appliance_hiw.md).
+
+Installing Updates Manually
 
 To install updates manually, perform the following steps:
 

@@ -3,7 +3,7 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_storage_details.html"
-last_updated: "10/17/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -45,7 +45,7 @@ To prohibit deletion of blocks of data from object storage, select the Make rece
 
 Specifying Azure Access Tier Settings
 
-To specify the the access tier that you want assign to data blocks that you keep in Azure Blob object storage, click the Hot link to the right of the Access tier field. In the Access Tier Settings window, select one of the following:
+To specify the access tier that you want assign to data blocks that you keep in Azure Blob object storage, click the Hot link to the right of the Access tier field. In the Access Tier Settings window, select one of the following:
 
 * Select the Hot option to assign the Hot access tier to data blocks. Use this option if you plan to access your data frequently and store it for a short period of time.
 * Select the Cool option to assign the Cool access tier the Hot tier to data blocks. Use this option if you plan to access your data rarely (for example, once in a month or less) and plan to store data at least for 30 days.
@@ -53,7 +53,7 @@ To specify the the access tier that you want assign to data blocks that you keep
 |  |
 | --- |
 | Important |
-| If you enable this option and plan to use this object storage as a performance or capacity tier, do not target to this repository any jobs that constantly send backup data to this storage: scheduled regular backup and backup copy jobs that run without GFS, jobs with transactions logs enabled, jobs created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md). Otherwise, it will result in higher costs. |
+| Consider the following:   * If you select the Cool option and plan to use this object storage as a performance or capacity tier, do not target to this repository any jobs that constantly send backup data to this storage: scheduled regular backup and backup copy jobs that run without GFS, jobs with transactions logs enabled, jobs created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md). Otherwise, it will result in higher costs. * Azure Blob storage may apply a different access tier to your backup data and metadata than the settings specified in Veeam Backup & Replication, if your Azure storage account access tier differs from those set in Veeam Backup & Replication. For more information, see [Azure Storage Access Tier Considerations](azure_limitations.md#accesstier). |
 
 ![Step 4. Specify Object Storage Settings](images/azure_access_tier.webp)
 
