@@ -3,7 +3,7 @@ title: "Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_environment_planning.html"
-last_updated: "11/28/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,7 +25,7 @@ To assign a custom name, update the Veeam configuration XML file as follows:
 | --- |
 | <PluginParameters customServerName="hostname.domain.tld" /> |
 
-where <hostname.domain.tld> is a custom name of the server.
+where <hostname.domain.tld> is the custom name of the server.
 
 After adding this parameter, Veeam Plug-In will use the specified custom name of the server to name the backup job and backup folder.
 
