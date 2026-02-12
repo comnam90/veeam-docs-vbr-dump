@@ -3,7 +3,7 @@ title: "Installing Veeam Plug-In in Unattended Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_mssql_unattended.html"
-last_updated: "12/5/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,7 +36,7 @@ Using veeam.com
 | --- |
 | <path\_to\_exe>\VeeamPluginforMSSQL.exe /silent /accepteula /acceptthirdpartylicenses /acceptlicensingpolicy /acceptrequiredsoftware |
 
-where <path\_to\_exe> is a path to the Veeam Plug-In for Microsoft SQL Server installation file.
+where <path\_to\_exe> is the path to the Veeam Plug-In for Microsoft SQL Server installation file.
 
 | Parameter | Description |
 | --- | --- |
