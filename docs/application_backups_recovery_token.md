@@ -3,7 +3,7 @@ title: "Creating Recovery Token"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_backups_recovery_token.html"
-last_updated: "1/20/2026"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,6 +17,7 @@ You can create a recovery token on the Veeam Backup & Replication side. Then, on
 * [Veeam Plug-In for Oracle RMAN](restore_other_server_rman.md#token)
 * [Veeam Plug-In for SAP HANA](restore_saphana_other_server.md#token)
 * [Veeam Plug-In for SAP on Oracle](restore_sap_orcl_other_server.md#token)
+* Veeam Plug-In for Microsoft SQL Server
 
 Limitations
 
