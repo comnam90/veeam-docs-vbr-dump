@@ -3,7 +3,7 @@ title: "Configuring Backint"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_backint.html"
-last_updated: "1/30/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,7 +27,7 @@ To create parameter file, do the following:
 | --- |
 | touch /<path>/adapter\_config.par |
 
-where <path> is a path to the SAP MaxDB database.
+where <path> is the path to the SAP MaxDB database.
 
 For example:
 
@@ -70,7 +70,7 @@ To create configuration file, do the following:
 | --- |
 | touch /path/bsi.env |
 
-where <path> is a path to the SAP MaxDB database.
+where <path> is the path to the SAP MaxDB database.
 
 For example:
 
