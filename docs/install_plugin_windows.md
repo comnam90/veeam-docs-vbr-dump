@@ -3,7 +3,7 @@ title: "Installing Plug-In on Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_plugin_windows.html"
-last_updated: "1/19/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -90,7 +90,7 @@ Using veeam.com
 | --- |
 | <path\_to\_exe>\VeeamPluginforOracleRMAN.exe /silent /accepteula /acceptthirdpartylicenses /acceptlicensingpolicy /acceptrequiredsoftware |
 
-where <path\_to\_exe> is a path to the Veeam Plug-In for Oracle RMAN installation file.
+where <path\_to\_exe> is the path to the Veeam Plug-In for Oracle RMAN installation file.
 
 | Parameter | Description |
 | --- | --- |
