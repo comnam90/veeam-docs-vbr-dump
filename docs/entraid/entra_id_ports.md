@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_ports.html"
-last_updated: "1/20/2026"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,10 +22,14 @@ The main ports required to create backups of Microsoft Entra ID tenants are list
 | Azure Resource Manager | TCP | 443 |
 | [Optional] HTTP proxy server | Microsoft Entra ID Services (Service tag: AzureActiveDirectory) | TCP | 443 |
 | Azure Resource Manager (Service tag: AzureResourceManager) | TCP | 443 |
+| [Optional] Cache repository | Gateway server | TCP | 2500 to 3300 | Cache repository is required to use the log backup and log backup copy features. |
+| Primary or secondary backup repository |
+| [Optional] Backup server | Cache repository | TCP | 6160, 6162 |
+| Old cache repository, new cache repository | TCP | 2500 to 3300 |
 
 |  |
 | --- |
 | Important |
-| * As Veeam Backup for Microsoft Entra ID is installed on the same machine where Veeam Backup & Replication runs, it also uses the same [ports](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#backup-server). To be able to use the log backup, log backup copy and tenant backup copy features, you must configure the ports listed in the [Cache Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#cache-repository-connections) and [Backup Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#backup-repositories) sections of the Veeam Backup & Replication User Guide. * Veeam Backup for Microsoft Entra ID does not support remote backup proxies — instead, the backup server performs the role of a general-purpose backup proxy. |
+| * As Veeam Backup for Microsoft Entra ID is installed on the same machine where Veeam Backup & Replication runs, it also uses the same [ports](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#backup-server). To be able to use the tenant backup copy feature, you must configure the ports listed in the [Backup Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#backup-repositories) section of the Veeam Backup & Replication User Guide. * Veeam Backup for Microsoft Entra ID does not support remote backup proxies — instead, the backup server performs the role of a general-purpose backup proxy. |
 
 
