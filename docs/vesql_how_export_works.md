@@ -3,7 +3,7 @@ title: "How Export Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_export_works.html"
-last_updated: "8/26/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,6 +25,6 @@ Veeam Explorer for Microsoft SQL Server deploys persistent or runtime components
 
 After the export operation successfully completes, Veeam Explorer for Microsoft SQL Server unmounts the mounted file system and removes the staged data from the staging server.
 
-[![How Export Works](images/vesql_export.webp)](images/vesql_export.webp "How Export Works")
+![How Export Works](images/vesql_export.webp "How Export Works")
 
 
