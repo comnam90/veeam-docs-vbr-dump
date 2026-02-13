@@ -3,7 +3,7 @@ title: "Exporting as BAK"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_published_export.html"
-last_updated: "8/24/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,12 +32,12 @@ To export a published database, do the following:
 
 1. Click Export.
 
-[![Specifying Database Export Location](images/export_bak_publish_location.webp)](images/export_bak_publish_location.webp "Specifying Database Export Location")
+![Exporting as BAK](images/export_bak_publish_location.webp "Specifying Database Export Location")
 
 1. After the export process is complete, review the results shown in the Databases export summary window. To do this, click See more to expand the window and review details of the export operation.
 
 You can filter notifications by their status: Error, Warning or Success.
 
-[![Reviewing Export Summary Window](images/vesql_export_published_bak_summary.webp)](images/vesql_export_published_bak_summary.webp "Reviewing Export Summary Window")
+![Exporting as BAK](images/vesql_export_published_bak_summary.webp "Reviewing Export Summary Window")
 
 
