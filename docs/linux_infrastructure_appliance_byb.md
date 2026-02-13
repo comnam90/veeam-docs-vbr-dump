@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "2/10/2026"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -50,7 +50,7 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * SSDs are strongly recommended for machines with the backup repository or hardened repository role assigned.
 * Veeam Infrastructure Appliance installation and initial configuration support only the English US keyboard layout.
 * When you install Veeam Infrastructure Appliance, the Rocky Linux operating system is installed with predefined settings, including volume partitioning and user account creation. After installation is complete, you need to proceed with the initial configuration of Veeam Infrastructure Appliance, which includes setting up default user accounts and basic system settings.
-* You cannot add additional storage devices to a Veeam Infrastructure Appliance after it has been deployed.
+* After you deploy a Veeam Infrastructure Appliance, adding new storage devices or resizing existing ones is not supported.
 
 * You cannot install third-party software on a Veeam Infrastructure Appliance.
 
