@@ -3,7 +3,7 @@ title: "Installing Plug-In on Linux"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_install_linux.html"
-last_updated: "1/6/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -159,7 +159,7 @@ Using veeam.com
 |  |
 | --- |
 | Tip |
-| The /opt/veeam directory is a default directory for the Veeam Plug-In installation. This directory is used in relevant command examples in this guide. |
+| The /opt/veeam directory is the default directory for the Veeam Plug-In installation. This directory is used in relevant command examples in this guide. |
 
 1. Unpack Veeam Plug-In files from the archive to the /opt/veeam directory with the following command:
 
