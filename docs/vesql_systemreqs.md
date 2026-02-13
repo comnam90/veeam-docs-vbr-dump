@@ -3,7 +3,7 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_systemreqs.html"
-last_updated: "1/21/2026"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,6 +26,6 @@ This section lists system requirements that are relevant when restoring data fro
 
 | Component | Requirement |
 | --- | --- |
-| Microsoft SQL Server | The following Microsoft SQL Server versions are supported:   * Microsoft SQL Server 2025 * Microsoft SQL Server 2022 * Microsoft SQL Server 2019 * Microsoft SQL Server 2017 * Microsoft SQL Server 2016 * Microsoft SQL Server 2014 SP3   To connect to the Microsoft SQL Server, Veeam Plug-In requires Microsoft ODBC Driver for SQL Server versions 17 or 18. Other driver versions are not supported but can be present in the same system.  By default, Veeam Plug-In uses driver version 17. If driver version 17 is unavailable in the system, Veeam Plug-In automatically uses driver version 18. Optionally, you can manually set a preferred driver version in the veeam\_config.xml file for cases when the default driver version is not suitable for your system.  For details, see [Specifying the Version of Microsoft ODBC Driver for SQL Server](mssql_odbc_driver.md).  Notes:   * Standard, Enterprise, Web, Developer editions of Microsoft SQL Server are supported. Express edition of Microsoft SQL Server is not supported. * Windows Server Failover Clusters are supported, both with shared disks and Cluster Shared Volumes (CSV). * Always On Availability Groups, Always On Clusterless Availability Groups and Always On Failover Cluster Instances are supported. Distributed Availability Groups are not supported. |
+| Microsoft SQL Server | Veeam Explorer for Microsoft SQL Server supports the Standard, Developer, Web and Enterprise editions of the following Microsoft SQL Server versions:   * Microsoft SQL Server 2025 * Microsoft SQL Server 2022 * Microsoft SQL Server 2019 * Microsoft SQL Server 2017 * Microsoft SQL Server 2016 * Microsoft SQL Server 2014 SP3   To connect to Microsoft SQL Server, Veeam Plug-In requires Microsoft ODBC Driver for SQL Server versions 17 or 18. Other driver versions are not supported but can be present in the same system.  By default, Veeam Plug-In uses driver version 17. If driver version 17 is unavailable in the system, Veeam Plug-In automatically uses driver version 18. Optionally, you can manually set a preferred driver version in the veeam\_config.xml file for cases when the default driver version is not suitable for your system.  For details, see [Specifying the Version of Microsoft ODBC Driver for SQL Server](mssql_odbc_driver.md#driver).  Notes:   * Standalone Microsoft SQL Servers are supported. * SQL Server Express edition is not supported. * Windows Server Failover Clusters are supported, both with shared disks and Cluster Shared Volumes (CSV).  * Always On availability groups, Always On clusterless availability groups and Always On failover cluster instances are supported. Contained availability groups and distributed availability groups are not supported. |
 
 
