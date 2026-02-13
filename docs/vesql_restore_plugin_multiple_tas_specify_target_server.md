@@ -3,7 +3,7 @@ title: "Step 4. Specify Target Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_multiple_tas_specify_target_server.html"
-last_updated: "11/4/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,11 +22,11 @@ If the SQL Server instance is assigned a custom port, and Microsoft SQL Browser 
 
 Select the Use SQL Server authentication check box to use Microsoft SQL Server authentication. If you do not select the check box, Veeam Explorer for Microsoft SQL Server will use Windows authentication.
 
-[![Specifying Target SQL Server](images/vesql_restore_plugin_multiple_specify_target_server.webp)](images/vesql_restore_plugin_multiple_specify_target_server.webp "Specifying Target SQL Server")
+![Step 4. Specify Target Server](images/vesql_restore_plugin_multiple_specify_target_server.webp "Specifying Target SQL Server")
 
 If you select the Use SQL Server authentication check box and provide SQL Server credentials, proceed to the next step of the wizard where you specify the user name and password for the account used to authenticate to the target server.
 
-[![Specifying Connection Credentials](images/vesql_restore_plugin_specify_target_server_sa.webp)](images/vesql_restore_plugin_specify_target_server_sa.webp "Specifying Connection Credentials")
+![Step 4. Specify Target Server](images/vesql_restore_plugin_specify_target_server_sa.webp "Specifying Connection Credentials")
 
 Browsing for Servers
 
@@ -35,6 +35,6 @@ To browse for a Microsoft SQL Server instance, perform one of the following acti
 * On the Local Servers tab, choose a Microsoft SQL Server instance that is located on the machine where Veeam Explorer for Microsoft SQL Server is opened and click Select.
 * On the Network Servers tab, choose a Microsoft SQL Server instance available over the network and click Select.
 
-[![Browsing For Servers](images/browsing_for_staging.webp)](images/browsing_for_staging.webp "Browsing For Servers")
+![Step 4. Specify Target Server](images/browsing_for_staging.webp "Browsing For Servers")
 
 
