@@ -3,7 +3,7 @@ title: "How Restore Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_restore_works.html"
-last_updated: "11/12/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,7 +24,7 @@ To perform these validations and required file operations, Veeam Explorer for Mi
 
 After the restore operation successfully completes, Veeam Explorer for Microsoft SQL Server unmounts the mounted file system from the target server.
 
-[![How Restore Works](images/vesql_restore.webp)](images/vesql_restore.webp "How Restore Works")
+![How Restore Works](images/vesql_restore.webp "How Restore Works")
 
 Restore from SQL Plug-in Backups
 
@@ -40,6 +40,6 @@ For each database that will be restored, the restore component creates a VDI dev
 1. Veeam Plug-In for Microsoft SQL Server retrieves data from the backups stored in the backup repository and starts Veeam Data Mover services on the backup repository and the target Microsoft SQL Server machine.
 2. Veeam Data Movers transport the Microsoft SQL Server data from the backup repository to the VDI devices on the target server. The restore component on the target server applies the changes to the relevant databases.
 
-[![How Restore Works](images/vesql_restore_plugin.webp)](images/vesql_restore_plugin.webp "How Restore Works")
+![How Restore Works](images/vesql_restore_plugin.webp "How Restore Works")
 
 
