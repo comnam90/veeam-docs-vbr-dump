@@ -3,14 +3,14 @@ title: "Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_kit.html"
-last_updated: "2/10/2026"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Using Veeam Deployment Kit
 
 
-The Veeam Deployment Kit is a package that enables certificate-based authentication for the backup infrastructure configuration. When the Deployment Kit is installed on a target server, Veeam Backup & Replication can authenticate using certificates instead of traditional user name and password credentials. The Deployment Kit can be used to connect to remote Linux and Microsoft Windows servers and to Veeam Agent computers that you plan to add to a protection group.
+The Veeam Deployment Kit is a package that enables certificate-based authentication for the backup infrastructure configuration. When the Deployment Kit is installed on a target server, Veeam Backup & Replication can authenticate using certificates instead of traditional user name and password credentials. The Deployment Kit can be used to connect to remote [Microsoft Windows servers](windows_server_credentials.md) and to [Veeam Agent computers](agents_deploy_deployer.md) that you plan to add to a protection group.
 
 The Deployment Kit installation is a prerequisite to use persistent agent components on protected Microsoft Windows VMs. For more information, see [Persistent Agent Components](persistent_agent_components.md).
 
@@ -45,6 +45,11 @@ For the following components, you can manually install the Deployment Kit:
 * Microsoft Windows-based and Linux-based Veeam Agent computers
 * Guest Interaction proxies
 * Protected Microsoft Windows VMs (for persistent guest agent installation)
+
+|  |
+| --- |
+| Note |
+| The Deployment Kit cannot be used to connect to remote Linux servers that are not deployed from the Veeam JeOS ISO file. When adding such servers to the backup infrastructure, you must use the SSH credentials option at the [Access](linux_server_ssh.md) step of the New Linux Server wizard. |
 
 How to Use the Veeam Deployment Kit
 
