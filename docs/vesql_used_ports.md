@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_used_ports.html"
-last_updated: "1/15/2026"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,7 +22,7 @@ For information on the ports that must be opened when working with backups creat
 | Backup server, Veeam Backup & Replication console, mount server associated with the backup repository (only for Instant Recovery or restore from Enterprise Manager) | Target machine with Microsoft SQL Server, staging server | TCP, UDP | 135, 445 | Ports used to deploy the runtime coordination process on the target machine. |
 | TCP | 6173 | Port used by the runtime coordination process that is deployed on the target machine. |
 | TCP | 6160 | Port used to communicate with Veeam Installer Service. |
-| TCP | 1433, 1434 | Ports used to communicate with the Microsoft SQL Server installed on the target machine during application-item restore.  For more information, see [this Microsoft article](http://msdn.microsoft.com/en-us/library/cc646023.aspx#BKMK_ssde). |
+| TCP | 1433, 1434 | Ports used to communicate with Microsoft SQL Server installed on the target machine during application-item restore.  For more information, see [this Microsoft article](http://msdn.microsoft.com/en-us/library/cc646023.aspx#BKMK_ssde). |
 | UDP | 1434 | Port used by the Microsoft SQL Server Browser service.  For more information, see [this Microsoft article](https://technet.microsoft.com/en-us/library/ms181087%28v%3Dsql.130%29.aspx). |
 | TCP | 1026 to 1034 | Default RPC range for the Veeam SQL Restore Service runtime components installed on a target or staging Microsoft SQL Server machine. Each runtime component uses the next available port in the range, and only during application item restore.  For more information on the Veeam SQL Restore Service non-persistent runtime component, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md).  Note: You must manually open this port range in Microsoft Windows Firewall. |
 | TCP | 1025 | Port used by the Veeam SQL Agent Service persistent component installed on the target or staging Microsoft SQL Server machine. The port is used only during application item restore.  For more information on the Veeam SQL Agent Service persistent component, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md).  Note: You must manually open this port in Microsoft Windows Firewall. |
