@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_used_ports.html"
-last_updated: "1/27/2026"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,7 +21,7 @@ The following table describes network ports that must be open to ensure proper c
 | Worker | Proxmox VE server | TCP/HTTPS | 8006 | Used to communicate with the REST API service running on the Proxmox VE server. |
 | Proxmox VE server | SSH | 22 | Used to communicate with Proxmox VE server. |
 | Backup server | TCP | 10006 | Used to communicate with the backup server. |
-| Backup server | TCP | 2500 to 3300 | Default range of ports used for malware detection metadata transfer. |
+| Backup server | TCP | 2500 to 3300 | Default range of ports used for ransomware index transfer. |
 | Veeam backup repository or [gateway server](gateway_server.md) | TCP | 2500 to 3300 | Default range of ports used as transmission channels for jobs and restore sessions. For each TCP connection that a job uses, one port from this range is assigned. |
 | TCP | 6162 | Default port used by Veeam Transport Service (on Linux  servers) or Veeam Data Mover Service (on Windows servers). |
 | Veeam Update Repository  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) | TCP/HTTPS | 443 | Used to download worker deployment packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
