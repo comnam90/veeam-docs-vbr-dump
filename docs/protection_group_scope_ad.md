@@ -3,7 +3,7 @@ title: "Step 3. Specify Active Directory Objects"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_scope_ad.html"
-last_updated: "1/20/2026"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,7 +25,7 @@ To add Active Directory objects to a protection group:
 | Important |
 | If you want to use port 636, make sure that the domain root CA certificate is properly published in the domain. Otherwise, Veeam Backup & Replication will not be able to establish a secure connection to the protection group. |
 
-1. From the Account list, select a user account that is a member of the DOMAIN\Administrators group. If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials. For details, see [Credentials Manager](credentials_manager.md) .
+1. From the Account list, select a user account that is the member of the DOMAIN\Administrators group. If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials. For details, see [Credentials Manager](credentials_manager.md) .
 2. Click OK to close the Specify Domain window.
 
 |  |

@@ -3,14 +3,14 @@ title: "Publishing to Specified Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_publishing_databases.html"
-last_updated: "9/26/2024"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Publishing to Specified Server
 
 
-Publishing to the specified server allows you to select a target Microsoft SQL Server to which you can publish your databases.
+Publishing to the specified server allows you to select a target Microsoft SQL Server machine to which you can publish your databases.
 
 To publish data, do the following:
 

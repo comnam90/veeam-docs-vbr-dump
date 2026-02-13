@@ -3,7 +3,7 @@ title: "Publishing Point-in-Time State"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_pit_state.html"
-last_updated: "10/6/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,5 +16,10 @@ To publish a PostgreSQL instance as of the point-in-time state, use the Publish 
 
 1. [Launch the Publish wizard](vep_lpw.md).
 2. [Specify a restore point](vep_srp.md).
+
+|  |
+| --- |
+| Note |
+| Point-in-time restore is available only if write-ahead log (WAL) file backups exist. For more information, see [Required Job Settings](vep_bu_job_settings.md). |
 
 

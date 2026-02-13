@@ -3,7 +3,7 @@ title: "Performing Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_full.html"
-last_updated: "10/23/2024"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -39,7 +39,7 @@ This command returns a list of all existing connections. To stop these connectio
 | --- |
 | db2 deactivate database <database\_name> |
 
-where <database\_name> is a name of the database you want to deactivate.
+where <database\_name> is the name of the database you want to deactivate.
 
 1. Back up the database offline with the following command:
 
@@ -47,7 +47,7 @@ where <database\_name> is a name of the database you want to deactivate.
 | --- |
 | db2 backup database <database\_name> load /opt/veeam/VeeamPluginforDB2/libDB2Plugin.so |
 
-where <database\_name> is a name of the database you want to back up.
+where <database\_name> is the name of the database you want to back up.
 
 1. Re-activate the database.
 
@@ -55,7 +55,7 @@ where <database\_name> is a name of the database you want to back up.
 | --- |
 | db2 activate database <database\_name> |
 
-where <database\_name> is a name of the database you want to deactivate.
+where <database\_name> is the name of the database you want to deactivate.
 
 Online Backup
 
@@ -75,7 +75,7 @@ Alternatively, you can re-configure the database with the following command:
 | --- |
 | db2 update database cfg for <database\_name> using logarchmeth1 VENDOR:</opt/veeam/VeeamPluginforDB2/libDB2Plugin.so> |
 
-where <database\_name> is a name of the database you want to back up.
+where <database\_name> is the name of the database you want to back up.
 
 1. Back up the database online with the following command:
 
@@ -83,7 +83,7 @@ where <database\_name> is a name of the database you want to back up.
 | --- |
 | db2 backup database <database\_name> online load /opt/veeam/VeeamPluginforDB2/libDB2Plugin.so |
 
-where <database\_name> is a name of the database you want to back up.
+where <database\_name> is the name of the database you want to back up.
 
 If you want to include logs in the backup, you can use the INCLUDE LOGS option with the BACKUP DATABASE command:
 
@@ -91,7 +91,7 @@ If you want to include logs in the backup, you can use the INCLUDE LOGS option w
 | --- |
 | db2 backup database <database\_name> online load /opt/veeam/VeeamPluginforDB2/libDB2Plugin.so include logs |
 
-where <database\_name> is a name of the database you want to back up.
+where <database\_name> is the name of the database you want to back up.
 
 To learn more about the INCLUDE LOGS option, see [this IBM article](https://www.ibm.com/docs/en/db2/11.5?topic=management-including-log-files-backup-image).
 

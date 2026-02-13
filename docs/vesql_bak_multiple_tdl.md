@@ -3,7 +3,7 @@ title: "Exporting to Different Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_bak_multiple_tdl.html"
-last_updated: "12/6/2024"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 

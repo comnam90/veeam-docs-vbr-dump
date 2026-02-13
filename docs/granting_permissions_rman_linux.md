@@ -3,7 +3,7 @@ title: "Granting User Permissions on Linux and UNIX Machines"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_rman_linux.html"
-last_updated: "9/5/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,8 +30,8 @@ where <groupName> is the name of the created group.
 
 where:
 
-* <groupName> — the name of the created group.
-* <userName> — the name of the account that will be granted access to the configuration file.
+* <groupName> is the name of the created group.
+* <userName> is the name of the account that will be granted access to the configuration file.
 
 1. Change the ownership of the configuration file to enable users from the dedicated group to access the configuration file. To do this, run the following command:
 

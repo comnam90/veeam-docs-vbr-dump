@@ -3,14 +3,14 @@ title: "Staging SQL Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_configuring_sql_settings.html"
-last_updated: "11/14/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Staging SQL Server Settings
 
 
-To perform Microsoft SharePoint items restore, Veeam Explorer for Microsoft SharePoint requires a Microsoft SQL server to be used as a staging system.
+To perform Microsoft SharePoint items restore, Veeam Explorer for Microsoft SharePoint requires a Microsoft SQL Server machine to be used as a staging system.
 
 Before you add a staging server, see the prerequisites in [Staging SQL Server](vesp_staging_microsoft_sql_server.md).
 
@@ -41,7 +41,7 @@ To use SQL Server authentication, select the Use SQL Server authentication check
 
 1. Click OK to finish the configuration and close the window.
 
-[![Configuring Staging SQL Server](images/vesp_sql_settings.webp)](images/vesp_sql_settings.webp "Configuring Staging SQL Server")
+![Staging SQL Server Settings](images/vesp_sql_settings.webp "Configuring Staging SQL Server")
 
 Browsing for Servers
 
@@ -50,6 +50,6 @@ To browse for an instance, perform one of the following actions:
 * On the Local Servers tab, choose a Microsoft SQL Server instance that is located on the machine where Veeam Explorer for Microsoft SharePoint is opened and click Select.
 * On the Network Servers tab, choose a Microsoft SQL Server instance available over the network and click Select.
 
-[![Browsing For Servers](images/browsing_for_staging.webp)](images/browsing_for_staging.webp "Browsing For Servers")
+![Staging SQL Server Settings](images/browsing_for_staging.webp "Browsing For Servers")
 
 

@@ -3,7 +3,7 @@ title: "Standalone Databases Management"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_standalone_databases.html"
-last_updated: "8/22/2023"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 

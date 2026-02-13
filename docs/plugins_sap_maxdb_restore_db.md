@@ -3,7 +3,7 @@ title: "Restore to Original Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_restore_db.html"
-last_updated: "12/17/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,9 +27,9 @@ To collect information that is required for the database restore, do the followi
 
 where:
 
-* <database> is a database name
-* <user> is a name for the database user has administrator rights
-* <password> is a password for the database user has administrator rights
+* <database> is the database name
+* <user> is the name for the database user has administrator rights
+* <password> is the password for the database user has administrator rights
 
 For example:
 
@@ -69,9 +69,9 @@ where:
 
 For example, you can select the following media from the [database configuration](plugins_sap_maxdb_deploy_configure_db.md):
 
-* VEEAMDATA is a media for a full data backup
-* VEEAMPAGES is a media for an incremental data backup
-* VEEAMLOG is a media for an interactive log backup
+* VEEAMDATA is the media for a full data backup
+* VEEAMPAGES is the media for an incremental data backup
+* VEEAMLOG is the media for an interactive log backup
 
 * <database> is the name of the database using which the backups were created
 
@@ -109,9 +109,9 @@ To restore database, do the following:
 
 where:
 
-* <database> is a database name
-* <user> is a name for the database user has administrator rights
-* <password> is a password for the database user has administrator rights
+* <database> is the database name
+* <user> is the name for the database user has administrator rights
+* <password> is the password for the database user has administrator rights
 
 For example:
 
@@ -137,20 +137,20 @@ where:
 
 For example, you can select the following media:
 
-* VEEAMDATA is a media for a full data backup
-* VEEAMPAGES is a media for an incremental data backup
-* VEEAMLOG is a media for an interactive log backup
+* VEEAMDATA is the media for the full data backup
+* VEEAMPAGES is the media for the incremental data backup
+* VEEAMLOG is the media for the interactive log backup
 
 * <backup\_type> is the type of backup that you want to restore. To understand which backup types are available for restore, check the output of the backup\_ext\_ids\_list command.
 
 You can select the following backup types:
 
-* DATA is a full data backup
+* DATA is the full data backup
 * PAGES is an incremental data backup
 * LOG is an interactive log backup
 
 * <label> is an ID of a backup that you want to use. To get backup IDs, review the [backup history file](#history).
-* <ebid\_list>  is a list of external backup IDs that you want to restore. If the list contains several external backup IDs, separate them by commas. If the backup IDs contain spaces, the list must be enclosed in double quotation marks. To get external backup IDs, review the [information from the Veeam Backint](#backint).
+* <ebid\_list>  is the list of external backup IDs that you want to restore. If the list contains several external backup IDs, separate them by commas. If the backup IDs contain spaces, the list must be enclosed in double quotation marks. To get external backup IDs, review the [information from the Veeam Backint](#backint).
 
 To learn more about the recover\_start command, see [SAP MaxDB documentation](https://maxdb.sap.com/doc/7_7/45/ad0ae6ebaf47f6e10000000a114a6b/frameset.htm).
 

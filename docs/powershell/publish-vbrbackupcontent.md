@@ -3,7 +3,7 @@ title: "Publish-VBRBackupContent"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/publish-vbrbackupcontent.html"
-last_updated: "11/18/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet publishes content using the iSCSI protocol for disks with Microsoft Windows-based file system or the FUSE protocol for disks with Unix-based file systems. You can publish disks from backups and replicas. For the list of supported backup types, see the [Publishing Disks (Data Integration API)](https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html?ver=13) section in the Veeam Backup & Replication User Guide.
+This cmdlet uses the iSCSI protocol when publishing the content to the Microsoft Windows-based host and FUSE protocol when publishing content to the Linux-based or Unix-based server. You can publish disks from backups and replicas. For the list of supported backup types, see the [Publishing Disks (Data Integration API)](https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
 [For Microsoft Windows-based file systems] Depending on how you want to configure an iSCSI session, you can use one of the following mount modes:
 
@@ -52,7 +52,7 @@ Parameters
 | TargetServerName | For the automatic mount mode.  Specifies the name of the target server. The cmdlet will give the specified server access to the disk content.  Note: You must specify the TargetServerCredentials parameter to provide credentials that Veeam Backup & Replication will use to authenticate against the target server. | String | False | Named | False |
 | TargetServerCredentials | Specifies credentials that the cmdlet will use to authenticate against the target server. | Accepts the CCredentials object. To create this object, run the [Add-VBRCredentials](add-vbrcredentials.md) cmdlet. | False | Named | False |
 | MountHostId | Specifies the ID of a server that has the mount server role. The mount server acts as an intermediary between the backup repository and the target server.  If you specify the ID, the cmdlet will use the specified server as the mount server. If you do not specify the ID, the cmdlet will use the mount server associated with the backup repository where backups are stored.  Note: You must add the server with this ID as the mount server to any backup repository in your backup infrastructure. For more information, see the [Specify Mount Server Settings](https://helpcenter.veeam.com/docs/vbr/userguide/repository_mount_server.html?ver=13) section in the Veeam Backup & Replication User Guide. | GUID | False | Named | False |
-| EnableFUSEProtocol | Enables the FUSE protocol.  Note: This parameter is required if you want to publish disks with Unix-based file systems. | SwitchParameter | False | Named | False |
+| EnableFUSEProtocol | Enables the FUSE protocol.  Note: This parameter is required if you want to publish disks to a Linux-based or Unix-based server. | SwitchParameter | False | Named | False |
 | Reason | Specifies the reason for disk publishing. | String | False | Named | False |
 
 <CommonParameters>

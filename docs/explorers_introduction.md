@@ -3,7 +3,7 @@ title: "Veeam Explorers Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/explorers_introduction.html"
-last_updated: "12/2/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 

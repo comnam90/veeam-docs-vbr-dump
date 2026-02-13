@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_used_ports.html"
-last_updated: "2/10/2026"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ The following table describes network ports that must be opened to ensure proper
 | --- | --- | --- | --- | --- |
 | Worker | Nutanix Prism Central and standalone clusters | TCP/HTTPS | 9440 | Used to communicate with Nutanix AHV REST API (clusters and Prism Central). |
 | Backup server | TCP | 10006 | Used to connect to Veeam Backup & Replication. |
-| Backup server | TCP | 2500 to 3300 | Default range of ports used for malware detection metadata transfer. |
+| Backup server | TCP | 2500 to 3300 | Default range of ports used for ransomware index transfer. |
 | Nutanix AHV server | TCP/iSCSI | 3205, 3260 | Used to access disks attached to Nutanix AHV VMs. |
 | Veeam backup repository (or [gateway server](gateway_server.md)) | TCP | 2500-3300 | Default range of ports used as transmission channels for jobs and restore sessions. For every TCP connection that a job uses, one port from this range is assigned. |
 | TCP | 6162 | Default port used by Veeam Transport Service (on Linux  servers) or Veeam Data Mover Service (on Windows servers). |

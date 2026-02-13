@@ -3,7 +3,7 @@ title: "Licensing"
 product: "vbr"
 doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_licensing.html"
-last_updated: "12/3/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,6 +15,11 @@ Veeam Backup for Microsoft Entra ID is licensed by the number of protected Micro
 For the license consumption, Veeam Backup for Microsoft Entra ID counts only enabled member users. The tenant to whom these users belong must have a restore point created during the past 31 days. Note that disabled users, guest users and logs do not consume license instances, but Veeam Backup for Microsoft Entra ID still protects them.
 
 By default, Veeam Backup for Microsoft Entra ID automatically revokes a license instance from protected users if no new restore points have been created during the past 31 days. However, you can manually revoke license instances from protected users as described in the Veeam Backup & Replication User Guide, section [Revoking License](https://helpcenter.veeam.com/docs/vbr/userguide/revoke_servers.html?ver=13).
+
+|  |
+| --- |
+| Note |
+| The type of the user account is specified by the value of the userType attribute (Member or Guest). Microsoft Entra ID users who were created before the introduction of the userType attribute on August 31, 2014, have null value for this attribute instead. Veeam Backup & Replication licenses and processes these user accounts the same way it licenses and processes Entra ID member users. |
 
 Obtaining New License
 

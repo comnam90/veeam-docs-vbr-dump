@@ -3,7 +3,7 @@ title: "Veeam Plug-In Ownership"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ownership.html"
-last_updated: "11/21/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -53,13 +53,13 @@ On the computer, you can check the current owner of Veeam Plug-In. If Veeam Plug
 
 where:
 
-* <hostname> — IP address or hostname of the Veeam Backup & Replication server.
-* <port\_number> — port over which Veeam Plug-In must communicate with Veeam Backup & Replication. The default port used for communication with the Veeam Backup & Replication server is 10006.
-* <username> — a name of the account that has access to the Veeam Backup & Replication server.
-* <domain> — a name of the domain in which the account that has access to the Veeam Backup & Replication server is registered.
-* <password> — password of the account that has access to the Veeam Backup & Replication server.
-* <name> — name of the Veeam Backup & Replication server.
-* <ID> — ID of the Veeam Backup & Replication server.
+* <hostname> is the IP address or hostname of the Veeam Backup & Replication server.
+* <port\_number> is the port over which Veeam Plug-In must communicate with Veeam Backup & Replication. The default port used for communication with the Veeam Backup & Replication server is 10006.
+* <username> is the name of the account that has access to the Veeam Backup & Replication server.
+* <domain> is the name of the domain in which the account that has access to the Veeam Backup & Replication server is registered.
+* <password> is the password of the account that has access to the Veeam Backup & Replication server.
+* <name> is the name of the Veeam Backup & Replication server.
+* <ID> is the ID of the Veeam Backup & Replication server.
 
 |  |
 | --- |

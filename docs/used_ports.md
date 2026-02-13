@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/10/2026"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -46,7 +46,7 @@ Incoming Connections
 | TCP | 10443 | Default port used by the Linux-based backup server to connect to the Host Management console. |
 | TCP | 3389 | Default port used by Remote Desktop Services to connect to the Windows-based backup server. If you use third-party solutions to connect to the backup server, other ports may need to be open. |
 | Remote Veeam Backup & Replication console | TCP | 443 | Port used to communicate with the backup server. |
-| Backup proxy | TCP | 2500 to 3300 | Default range of ports used for malware detection metadata transfer. |
+| Backup proxy | TCP | 2500 to 3300 | Default range of ports used for ransomware index transfer. |
 | Backup repository (Linux) | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | TCP | 2500 to 3300 | Default range of ports used as transmission channels for copy backup operations if the backup server is used as the target backup repository. These ports are also required for file copy operations between the Linux backup repository and the backup server.  For every TCP connection that a job uses, one port from this range is assigned. |
 | Backup repository (Microsoft Windows) | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |

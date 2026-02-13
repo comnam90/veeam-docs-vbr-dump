@@ -3,7 +3,7 @@ title: "Configuring Database"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_db.html"
-last_updated: "12/17/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,9 +22,9 @@ To configure backup media, run the following operations:
 
 where:
 
-* <database> is a database name
-* <user> is a name of the database user with administrator rights
-* <password> is a password of the database user with administrator rights
+* <database> is the database name
+* <user> is the name of the database user with administrator rights
+* <password> is the password of the database user with administrator rights
 
 For example:
 
@@ -38,7 +38,7 @@ For example:
 | --- |
 | param\_put -permanent MaxBackupMedia <N> |
 
-where <N> is a maximum number of mediums that can operate in parallel during backup and restore processes.
+where <N> is the maximum number of mediums that can operate in parallel during backup and restore processes.
 
 For example:
 

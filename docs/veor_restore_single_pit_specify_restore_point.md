@@ -3,7 +3,7 @@ title: "Step 2. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_single_pit_specify_restore_point.html"
-last_updated: "6/18/2024"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,11 +18,8 @@ At this step of the wizard, select a state as of which you want to restore your 
 
 * Select the Perform restore to the specific transaction check box to load database files exactly as of the moment before undesired transactions.
 
-Consider the following:
+Note that the Perform restore to the specific transaction option requires a staging Oracle server. For more information, see [Configuring Staging Oracle Server](veor_staging_server.md).
 
-* The Restore to a specific point in time option is available only if archived log backups exist. For more information, see [Required Job Settings](veo_bu_job_settings.md).
-* The Perform restore to the specific transaction option requires a staging Oracle server. For more information, see [Configuring Staging Oracle Server](veor_staging_server.md).
-
-[![Specifying Restore Point](images/veo_rest_wiz_point.webp)](images/veo_rest_wiz_point.webp "Specifying Restore Point")
+![Step 2. Specify Restore Point](images/veo_rest_wiz_point.webp "Specifying Restore Point")
 
 

@@ -3,7 +3,7 @@ title: "Restore from Veeam Backup & Replication Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_from_vbr_backups.html"
-last_updated: "10/6/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 

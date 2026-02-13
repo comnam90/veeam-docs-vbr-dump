@@ -3,14 +3,14 @@ title: "Staging SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_staging_microsoft_sql_server.html"
-last_updated: "11/12/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Staging SQL Server
 
 
-To perform Microsoft SharePoint items restore, Veeam Explorer for Microsoft SharePoint requires a Microsoft SQL server to be used as a staging system.
+To perform Microsoft SharePoint items restore, Veeam Explorer for Microsoft SharePoint requires a Microsoft SQL Server machine to be used as a staging system.
 
 |  |
 | --- |
@@ -22,9 +22,9 @@ The server you plan to use as a staging system must meet the following requireme
 * A staging system must have the same or a later version of Microsoft SQL Server than the machine that hosts restored Microsoft SharePoint databases.
 * As a staging server, you can use any edition of Microsoft SQL Server, including the Express Edition. You can download the necessary edition from the [Microsoft Download Center](https://www.microsoft.com/en-us/download).
 
-Note that databases that exceed 10 GB cannot be attached to the Microsoft SQL Server Express Edition due to Express Edition limitations. For more information, see the [Editions and supported features of SQL Server 2022](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16) Microsoft article.
+Note that databases that exceed 10 GB cannot be attached to a Microsoft SQL Server Express Edition instance due to Express Edition limitations. For more information, see the [Editions and supported features of SQL Server 2022](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16) Microsoft article.
 
-* A Microsoft SQL Server that is included in a Microsoft SQL Server Failover Cluster cannot be used as a staging system.
+* A Microsoft SQL Server machine that is included in a Microsoft SQL Server Failover Cluster cannot be used as a staging system.
 * Nodes participating in Always On Availability Groups are supported. However, you should not use Availability Group Listeners as staging servers.
 
 Note that the available authentication options for the staging server depend on the domain configuration. Consider the following:

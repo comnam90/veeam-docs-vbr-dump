@@ -3,7 +3,7 @@ title: "Get Backup Time Stamp"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_get_time_stamp.html"
-last_updated: "10/23/2024"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,9 +20,9 @@ To get backup details, run the -get-restore-points command:
 
 where:
 
-* <time\_period> is a time period when the backup you need was created. You must specify this value in a time stamp format. For details, see [Command Parameters](#params).
-* <database\_name> is a name of a database whose backups you need.
-* <timestamps.json> is a name of a .JSON file with the command output.
+* <time\_period> is the time period when the backup you need was created. You must specify this value in a time stamp format. For details, see [Command Parameters](#params).
+* <database\_name> is the name of a database whose backups you need.
+* <timestamps.json> is the name of a .JSON file with the command output.
 
 If the command run is successful, Veeam Plug-In provides the following details of your machine backups that are available in the connected backup repository:
 

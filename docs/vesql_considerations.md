@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_considerations.html"
-last_updated: "1/22/2026"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -109,9 +109,9 @@ Publishing
 
 * Make sure that the mount server volume with the write cache has enough free disk space to store the changes of the published database. By default, the write cache is stored in the C:\ProgramData\Veeam\Backup\IRCache\ folder of the mount server. For more information on how to configure the write cache folder, see [Specify Mount Server Settings](repository_mount_server.md).
 
-* After you unpublish a database, Veeam Explorer for Microsoft SQL Server detaches such a database from the target Microsoft SQL Server but the restore point will continue to remain on the target machine for the next 15 minutes.
-* If a Veeam Explorer for Microsoft SQL Server session has been terminated in any way other than by clicking Exit in the main menu (or by clicking the X button in the upper-right corner), then all the published databases will continue to remain attached to the target Microsoft SQL Server with the Recovery pending state.
-* If published databases have been renamed manually using SQL tools (for example, Microsoft SQL Management Studio), Veeam Explorer for Microsoft SQL Server will not be able to unpublish such databases properly. In this case, all the renamed databases will continue to remain attached to the target Microsoft SQL Server and you will have to remove them manually using SQL tools.
+* After you unpublish a database, Veeam Explorer for Microsoft SQL Server detaches such a database from the target Microsoft SQL Server machine but the restore point will continue to remain on the target machine for the next 15 minutes.
+* If a Veeam Explorer for Microsoft SQL Server session has been terminated in any way other than by clicking Exit in the main menu (or by clicking the X button in the upper-right corner), then all the published databases will continue to remain attached to the target Microsoft SQL Server machine with the Recovery pending state.
+* If published databases have been renamed manually using SQL tools (for example, Microsoft SQL Management Studio), Veeam Explorer for Microsoft SQL Server will not be able to unpublish such databases properly. In this case, all the renamed databases will continue to remain attached to the target Microsoft SQL Server machine and you will have to remove them manually using SQL tools.
 * Veeam Explorer for Microsoft SQL Server does not back up published databases.
 
 * Upon closing the Veeam Explorer for Microsoft SQL Server console, all the published databases will be detached from the target Microsoft SQL Server instance automatically. Mount points will be also dismounted from under the C:\VeeamFLR directory.

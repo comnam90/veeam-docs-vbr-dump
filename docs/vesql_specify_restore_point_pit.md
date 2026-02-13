@@ -3,7 +3,7 @@ title: "Step 2. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_specify_restore_point_pit.html"
-last_updated: "8/12/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,6 +30,6 @@ This option requires a staging Microsoft SQL Server. For more information, see [
 
 This option is unavailable when restoring multiple databases.
 
-[![Specifying Restore Point](images/restore_point.webp)](images/restore_point.webp "Specifying Restore Point")
+![Step 2. Specify Restore Point](images/restore_point.webp "Specifying Restore Point")
 
 

@@ -3,7 +3,7 @@ title: "SAP MaxDB Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_backup_backint.html"
-last_updated: "12/17/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,9 +20,9 @@ To back up SAP MaxDB databases, you can use Database Manager CLI:
 
 where:
 
-* <database> is a database name
-* <user> is a name for the database user has administrator rights
-* <password> is a password for the database user has administrator rights
+* <database> is the database name
+* <user> is the name for the database user has administrator rights
+* <password> is the password for the database user has administrator rights
 
 For example:
 
@@ -38,9 +38,9 @@ For example:
 
 where <medium\_name> is the medium that you previously assigned for the backup operation. For example, you can select the following media from the [database configuration examples](plugins_sap_maxdb_deploy_configure_db.md):
 
-* VEEAMDATA is a media for a full data backup
-* VEEAMPAGES is a media for an incremental data backup
-* VEEAMLOG is a media for an interactive log backup
+* VEEAMDATA is the media for a full data backup
+* VEEAMPAGES is the media for an incremental data backup
+* VEEAMLOG is the media for an interactive log backup
 
 For example:
 

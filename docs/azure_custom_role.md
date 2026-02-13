@@ -3,7 +3,7 @@ title: "Creating Custom Role for Azure Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_custom_role.html"
-last_updated: "11/4/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -60,7 +60,7 @@ If you plan to add an Azure Compute account using a new Microsoft Entra ID (form
 
 1. Assign the created role to the required Microsoft Entra user. For details, see the [Manage access to Azure resources using RBAC and the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) section in the RBAC for Azure resources documentation.
 2. At the [Account Type](restore_azure_acc_account.md) step of the Microsoft Azure Compute Account wizard, select Create a new account.
-3. At the Subscription step, configure the account as described in section [Creating New Entra ID Application](restore_azure_acc_account_new.md). On the Microsoft Azure device authentication page, specify an Microsoft Entra user account with the assigned role.
+3. At the Subscription step, configure the account as described in section [Creating New Entra ID Application](restore_azure_acc_account_new.md). On the Microsoft Azure device authentication page, specify a Microsoft Entra user account with the assigned role.
 
 |  |
 | --- |
