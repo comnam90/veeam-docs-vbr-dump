@@ -3,7 +3,7 @@ title: "Restoring Latest State"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_single_latest.html"
-last_updated: "11/4/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,8 +14,8 @@ You can restore a database as of the latest state in your backup file.
 
 The data will be restored in the following manner:
 
-* Database files will be copied to the original location and then mounted to the original Microsoft SQL Server.
-* If a database with the same name already exists on a target Microsoft SQL Server, it will be replaced with the database from a backup file.
+* Database files will be copied to the original location and then mounted to the original Microsoft SQL Server machine.
+* If a database with the same name already exists on a target Microsoft SQL Server machine, it will be replaced with the database from a backup file.
 
 To restore the latest available state of a Microsoft SQL Server database, do the following:
 
