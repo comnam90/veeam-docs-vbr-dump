@@ -3,14 +3,14 @@ title: "Data Publishing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_data_publishing.html"
-last_updated: "3/28/2024"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Data Publishing
 
 
-Publishing a Microsoft SQL Server database allows you to temporarily attach the database to the target Microsoft SQL Server without launching restore. Publishing typically occurs faster than using standard restore features and could be convenient when, for example, your time to perform disaster-recovery operations is limited.
+Publishing a Microsoft SQL Server database allows you to temporarily attach the database to the target Microsoft SQL Server machine without launching restore. Publishing typically occurs faster than using standard restore features and could be convenient when, for example, your time to perform disaster-recovery operations is limited.
 
 Veeam Explorer for Microsoft SQL Server mounts disks from the backup repository to the target machine (under the C:\VeeamFLR directory), retrieves required database files and attaches the associated database directly to your Microsoft SQL Server instance so that you can perform required operations using SQL Server tools such as Microsoft SQL Server Management Studio.
 
