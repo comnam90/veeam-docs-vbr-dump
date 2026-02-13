@@ -3,7 +3,7 @@ title: "Step 1. Launch Publish Database Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_publish_database_wizard_publish.html"
-last_updated: "8/25/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,10 +23,10 @@ After you complete the wizard steps, a new Published databases node appears at t
 
 [![Finding Published Database](images/published.webp)](images/published.webp "Finding Published Database")
 
-To work with published databases, open a SQL tool you prefer, for example, Microsoft SQL Management Studio and locate your published databases.
+To work with published databases, open a SQL tool you prefer, for example, Microsoft SQL Server Management Studio and locate your published databases.
 
 The figure below demonstrates a published database (db1\_published) available in the Object Explorer window of your Microsoft SQL Server Management Studio console. This database is also being referenced by Veeam Explorer for Microsoft SQL Server under its Published databases node.
 
-[![Published Database in Object Explorer](images/published_sql.webp)](images/published_sql.webp "Published Database in Object Explorer")
+![Step 1. Launch Publish Database Wizard](images/published_sql.webp "Published Database in Object Explorer")
 
 
