@@ -3,7 +3,7 @@ title: "Disk Publishing (Data Integration API)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html"
-last_updated: "12/15/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Disk publishing allows you to save time by getting backup content of one or multiple disks instead of all disks from a backup. This technology gives read-only access to data and helps if you want to analyze data of your backup. For example, look for specific documents or usage patterns, or perform antivirus scan of backed-up data.
 
-You can publish a disk from different types of backups. The disk can have a Microsoft Windows file system or Linux, Unix or other file system. For the full list of supported file systems, see [Supported Platforms, Applications and Workloads](platform_support.md#flr). To present the backed-up disk to the target server, disk publishing uses the iSCSI protocol for Windows file systems or the FUSE protocol for other OSes. After the publishing, the target server can access the backup content using the iSCSI initiator or FUSE protocol, and read the necessary data from the disk.
+You can publish a disk from different types of backups. The disk can have a Microsoft Windows file system or Linux, Unix or other file system. For the full list of supported file systems, see [Supported Platforms, Applications and Workloads](platform_support.md#flr). To present the backed-up disk to the target server, Veeam Backup & Replication uses the iSCSI protocol when publishing disks to the Microsoft Windows-based server or the FUSE protocol when publishing disks to the Linux-server or Unix-based server. After the publishing, the target server can access the backup content using the iSCSI initiator or FUSE protocol, and read the necessary data from the disk.
 
 Supported Backup Types
 
