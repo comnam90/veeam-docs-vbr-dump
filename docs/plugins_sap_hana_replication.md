@@ -3,7 +3,7 @@ title: "Support for SAP HANA System Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_hana_replication.html"
-last_updated: "11/7/2025"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ To assign a custom name to the machine, do the following:
 | --- |
 | <PluginParameters customServerName="<name>" /> |
 
-where <name> is a custom name for the group of the machines that participate in SAP HANA System Replication.
+where <name> is the custom name for the group of the machines that participate in SAP HANA System Replication.
 
 For example:
 
