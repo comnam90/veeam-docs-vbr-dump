@@ -3,7 +3,7 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_object_storage.html"
-last_updated: "8/12/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,13 +14,13 @@ If you want to store your data in a cloud-based or on-premises object storage, y
 
 You can store backups created with MongoDB Backup on the following types of the object storage:
 
+* Veeam Data Cloud Vault
 * Amazon S3
 * S3 compatible
 * Google Cloud Storage
 * Microsoft Azure Blob Storage
 * IBM Cloud Object Storage
 * Wasabi Cloud Storage
-* Veeam Data Cloud Vault
 * 11:11 Cloud Object Storage
 
 Veeam Agent on the machine with MongoDB replica set always accesses object storage through Veeam Backup & Replication. As a result, Veeam Agent access to object storage is managed by a proxy component that Veeam Backup & Replication selects according to the connection mode specified in the repository settings:
