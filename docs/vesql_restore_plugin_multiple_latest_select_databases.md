@@ -3,7 +3,7 @@ title: "Step 2. Select Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_multiple_latest_select_databases.html"
-last_updated: "11/12/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,6 +21,6 @@ To quickly find the necessary databases, use the search field or sort the databa
 
 Before the restore process begins, you will be prompted to enter the source machine credentials.
 
-[![Selecting Databases to Restore](images/vesql_restore_plugin_multiple_latest_select_databases.webp)](images/vesql_restore_plugin_multiple_latest_select_databases.webp "Selecting Databases to Restore")
+![Step 2. Select Databases](images/vesql_restore_plugin_multiple_latest_select_databases.webp "Selecting Databases to Restore")
 
 
