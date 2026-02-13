@@ -3,7 +3,7 @@ title: "Step 2. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_export_srp.html"
-last_updated: "8/19/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,6 +20,6 @@ Use the slider to choose the point in time you need.
 
 * Select the Perform restore to the specific transaction check box to load database files exactly as of the moment before undesired transactions.
 
-[![Specifying Restore Point](images/veor_rman_export_pit.webp)](images/veor_rman_export_pit.webp "Specifying Restore Point")
+![Step 2. Specify Restore Point](images/veor_rman_export_pit.webp "Specifying Restore Point")
 
 
