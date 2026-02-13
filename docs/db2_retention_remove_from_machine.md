@@ -3,7 +3,7 @@ title: "Deleting Backups Using IBM Db2 Tools"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_retention_remove_from_machine.html"
-last_updated: "12/19/2024"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,7 +23,7 @@ To delete backup files and log archives from the backup repository, use the foll
 | --- |
 | db2 prune history <timestamp> and delete |
 
-where <timestamp> is a time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format.
+where <timestamp> is the time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format.
 
 With this command, Veeam Plug-In will delete all backup files up to the time that you specified in the command. Thus, Veeam Plug-In will not delete the backup with the time stamp that you specified. Also, the PRUNE HISTORY command will not delete to the most recent full backup and associated objects. For example, incremental and log backups.
 
@@ -33,7 +33,7 @@ If you want to delete the most recent full backup and associated objects, use th
 | --- |
 | db2 prune history <timestamp> with force option and delete |
 
-where <timestamp> is a time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format.
+where <timestamp> is the time stamp that IBM Db2 generates for each backup in the yyyymmddhhmmss format.
 
 With this command, Veeam Plug-In will delete all backup files up to the time and equal the time that you specified in the command. Thus, Veeam Plug-In will also delete the backup with the time stamp that you specified from the backup repository. Veeam Plug-In will also delete the most recent full backup and associated objects.
 
