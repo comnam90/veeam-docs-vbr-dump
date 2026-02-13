@@ -3,14 +3,14 @@ title: "Scale Computing HyperCore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sc_hypercore.html"
-last_updated: "11/26/2025"
+last_updated: "2/5/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Scale Computing HyperCore
 
 
-Veeam Backup & Replication with Veeam Plug-In for Scale Computing HyperCore is a solution developed for protection and disaster recovery tasks for the Scale Computing HyperCore environment. With Veeam Plug-In for Scale Computing HyperCore, you can perform the following operations:
+Veeam Plug-in for Scale Computing HyperCore is a solution developed for protection and disaster recovery tasks for Scale Computing HyperCore. With Veeam Plug-in for Scale Computing HyperCore, you can perform the following operations:
 
 * Create backups of Scale Computing HyperCore VMs and store them in backup repositories.
 
@@ -31,7 +31,5 @@ Veeam Backup & Replication with Veeam Plug-In for Scale Computing HyperCore is a
 * Restore files and folders of Scale Computing HyperCore VM guest OSes.
 * Export disks of backed-up Scale Computing HyperCore VMs to VMDK, VHD and VHDX formats.
 * Mount disks of backed-up Scale Computing HyperCore VMs to any server and access data in the read-only mode.
-
-For more information, see the [Veeam Plug-In for Scale Computing HyperCore User Guide](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2).
 
 
