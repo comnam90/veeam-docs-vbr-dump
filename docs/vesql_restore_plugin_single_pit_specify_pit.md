@@ -3,7 +3,7 @@ title: "Step 3. Specify Point-in-Time State"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_single_pit_specify_pit.html"
-last_updated: "11/12/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -31,6 +31,6 @@ This option is available in case the following conditions are met:
 
 Before the restore process begins, you will be prompted to enter the source machine credentials.
 
-[![Specifying Point in Time](images/vesql_restore_plugin_single_pit_specify_pit.webp)](images/vesql_restore_plugin_single_pit_specify_pit.webp "Specifying Point in Time")
+![Step 3. Specify Point-in-Time State](images/vesql_restore_plugin_single_pit_specify_pit.webp "Specifying Point in Time")
 
 
