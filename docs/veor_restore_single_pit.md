@@ -3,7 +3,7 @@ title: "Restoring Point-in-Time State"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_single_pit.html"
-last_updated: "12/9/2024"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,5 +16,10 @@ To restore a standalone database or Data Guard database as of the selected point
 2. [Specify a restore point](veor_restore_single_pit_specify_restore_point.md).
 3. [Fine-tune restore point](veor_restore_single_pit_fine_tune.md).
 4. [Review the restore summary](veor_restore_single_pit_summary.md).
+
+|  |
+| --- |
+| Note |
+| Point-in-time restore is available only if archived log backups exist. For more information, see [Required Job Settings](veo_bu_job_settings.md). |
 
 
