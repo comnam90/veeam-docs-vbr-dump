@@ -3,7 +3,7 @@ title: "How Publishing Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_publishing_works.html"
-last_updated: "11/3/2025"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,6 +29,6 @@ Once the publishing operation is completed, you can export the modified database
 
 After you have finished working with the published database, you can unpublish (detach) the database from the target Microsoft SQL Server machine. For more information, see [Unpublishing Databases](vesql_unpublishing.md).
 
-[![How Publishing Works](images/vesql_publish.webp)](images/vesql_publish.webp "How Publishing Works")
+![How Publishing Works](images/vesql_publish.webp "How Publishing Works")
 
 
