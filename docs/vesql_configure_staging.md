@@ -3,7 +3,7 @@ title: "Configuring Staging SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_configure_staging.html"
-last_updated: "1/22/2026"
+last_updated: "2/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,7 +27,7 @@ Before you add a staging server, consider the following:
 
 * As a staging server, you can use any edition of Microsoft SQL Server, including the Express Edition. You can download the necessary edition from the [Microsoft Download Center](https://www.microsoft.com/en-us/download).
 
-Note that databases that exceed 10 GB cannot be attached to the Microsoft SQL Server Express Edition due to Express Edition limitations. For more information, see the [Editions and supported features of SQL Server 2022](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16) Microsoft article.
+Note that databases that exceed 10 GB cannot be attached to an Microsoft SQL Server Express Edition instance due to Express Edition limitations. For more information, see the [Editions and supported features of SQL Server 2022](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16) Microsoft article.
 
 * Make sure that the staging server has the same version of Microsoft SQL Server as the source server, or a later version.
 * A SQL Server included in Microsoft SQL Server failover cluster cannot be used as a staging system.
@@ -84,6 +84,6 @@ To browse for a Microsoft SQL Server instance, perform one of the following acti
 * On the Local Servers tab, choose a Microsoft SQL Server instance that is located on the machine where Veeam Explorer for Microsoft SQL Server is opened and click Select.
 * On the Network Servers tab, choose a Microsoft SQL Server instance available over the network and click Select.
 
-[![Browsing For Servers](images/browsing_for_staging.webp)](images/browsing_for_staging.webp "Browsing For Servers")
+![Configuring Staging SQL Server](images/browsing_for_staging.webp "Browsing For Servers")
 
 
