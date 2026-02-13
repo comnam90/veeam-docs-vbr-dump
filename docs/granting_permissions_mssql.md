@@ -3,7 +3,7 @@ title: "Granting Permissions to Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_mssql.html"
-last_updated: "12/3/2024"
+last_updated: "2/10/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,8 +32,8 @@ Granting Permissions to the Plug-In Configuration File
 
 where:
 
-* <groupName> — the name of the created group.
-* <description> — the description of the group.
+* <groupName> is the name of the created group.
+* <description> is the description of the group.
 
 1. Add a user to the group with the following command:
 
@@ -43,9 +43,9 @@ where:
 
 where:
 
-* <groupName> — the name of the created group.
+* <groupName> is the name of the created group.
 
-* <userName> — the name of the account that will be granted access to the configuration file.
+* <userName> is the name of the account that will be granted access to the configuration file.
 
 1. Create a new access control list (ACL) with Read and Write permissions using this set of commands:
 
@@ -55,8 +55,8 @@ where:
 
 where:
 
-* newACL — the name of the new access control list. You can give any name to this temporary variable.
-* <groupName> — the name of the created group.
+* newACL is the name of the new access control list. You can give any name to this temporary variable.
+* <groupName> is the name of the created group.
 
 1. Assign ownership of the new ACL to the previously created user group by running the following command:
 
@@ -66,8 +66,8 @@ where:
 
 where:
 
-* newACL — the name of the new access control list.
-* <groupName> — the name of the created group.
+* newACL is the name of the new access control list.
+* <groupName> is the name of the created group.
 
 1. Apply the ACL to the plug-in configuration file using this command:
 
@@ -77,8 +77,8 @@ where:
 
 where:
 
-* <configFilePAth> — the path to the plug-in configuration file. The default path is %PROGRAMFILES%\Veeam\Plugins\Microsoft SQL\veeam\_config.xml.
+* <configFilePAth> is the path to the plug-in configuration file. The default path is %PROGRAMFILES%\Veeam\Plugins\Microsoft SQL\veeam\_config.xml.
 
-* newACL — the name of the new access control list.
+* newACL is the name of the new access control list.
 
 
