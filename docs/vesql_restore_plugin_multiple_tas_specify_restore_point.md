@@ -3,7 +3,7 @@ title: "Step 3. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_plugin_multiple_tas_specify_restore_point.html"
-last_updated: "11/12/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,6 +20,6 @@ Consider the following:
 * If you specify a point in time for which none of the databases have the necessary differential or transaction log backups, you will not be able to continue with the wizard.
 * If you specify a point in time for which one or more databases do not have the necessary differential or transaction log backups, Veeam Explorer for Microsoft SQL Server will display a warning at the end of the wizard. These databases will not be restored. After you acknowledge the warning, the restore process will continue for the other databases you selected.
 
-[![Specifying Restore Point](images/vesql_restore_plugin_multiple_tas_specify_restore_point.webp)](images/vesql_restore_plugin_multiple_tas_specify_restore_point.webp "Specifying Restore Point")
+![Step 3. Specify Restore Point](images/vesql_restore_plugin_multiple_tas_specify_restore_point.webp "Specifying Restore Point")
 
 
