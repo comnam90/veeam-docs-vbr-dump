@@ -3,20 +3,20 @@ title: "Accelerated Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storeonce_accelerated_restore.html"
-last_updated: "8/26/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Accelerated Restore
 
 
-To speed up entire VM restore and [Restore to Microsoft Azure](restore_azure.md) from HPE StoreOnce, Veeam Backup & Replication uses the mechanism of sequential data reading from backups and parallel VM disks restore.
+To speed up entire VM restore and Restore to Microsoft Azure, Amazon EC2 or Google Compute Engine from HPE StoreOnce, Veeam Backup & Replication uses the mechanism of sequential data reading from backups and parallel VM disks restore.
 
 HPE StoreOnce storage systems are optimized for sequential I/O operations. However, data blocks of VM disks in backup files are stored not sequentially, but in the random order. If data blocks of VM disks are read at random, the restore performance from backups on HPE StoreOnce degrades.
 
 To accelerate the restore process, Veeam Backup & Replication creates a map of data blocks in backup files. It uses the created map to read data blocks of VM disks from backup files sequentially, as they reside on disk. Veeam Backup & Replication writes data blocks to target in the order in which they come from the target [Veeam Data Mover](veeam_transport_service.md), restoring several VM disks in parallel.
 
-This accelerated restore mechanism is enabled by default, and is used for the entire VM restore and restore to Microsoft Azure scenario.
+This accelerated restore mechanism is enabled by default, and is used for restore scenarios.
 
 |  |
 | --- |
