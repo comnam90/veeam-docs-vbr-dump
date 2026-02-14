@@ -3,7 +3,7 @@ title: "Get-VBRGeneralUpdateOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrgeneralupdateoptions.html"
-last_updated: "8/26/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns general update settings.
+Returns general update settings for the Linux-based backup server and Veeam Infrastructure Appliances.
 
 Applies to
 
