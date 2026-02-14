@@ -3,7 +3,7 @@ title: "Publishing Disks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish.html"
-last_updated: "2/12/2026"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 

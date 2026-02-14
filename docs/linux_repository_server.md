@@ -3,7 +3,7 @@ title: "Step 3. Specify Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_server.html"
-last_updated: "9/5/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,7 @@ To configure settings for a Linux server:
 
 1. From the Repository server list, select the Linux server that you want to use as a backup repository.
 
-The Repository server list contains only those servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, you can click Add New on the right to open the New Linux Server wizard.
+The Repository server list contains only those servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, you can click Add New on the right to open the New Linux Server wizard. For more information, see [Adding Linux Servers](add_linux_server.md).
 
 |  |
 | --- |

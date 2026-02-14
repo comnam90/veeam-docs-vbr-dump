@@ -3,7 +3,7 @@ title: "Viewing Backup Properties"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_properties.html"
-last_updated: "11/14/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -41,6 +41,11 @@ In this case, the summary information provides the following data:
 * Types of restore points.
 
 * Dates of backup files creation.
+
+|  |
+| --- |
+| NOTE |
+| [For Linux-based and Unix-based Veeam Agent computers] If the protected computer has LVM volume groups or BTRFS pools on top of physical partitions, during a full backup, Veeam Agent creates a separate disk in the backup file for each physical volume and each LVM volume group or BTRFS pool. As a result, the size of backed-up data (Data Size) may appear larger than the actual volume of the physical partitions. |
 
 ![Viewing Backup Properties](images/backup_properties.webp)
 

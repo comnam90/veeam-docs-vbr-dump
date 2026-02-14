@@ -3,7 +3,7 @@ title: "Viewing Veeam Agent Backup Job Statistics"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_job_stats.html"
-last_updated: "9/2/2025"
+last_updated: "2/12/2026"
 product_version: "13.0.1.1071"
 ---
 

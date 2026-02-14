@@ -3,7 +3,7 @@ title: "Install-VBRAvailableUpdates"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/install-vbravailableupdates.html"
-last_updated: "9/8/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Installs available software updates on Linux-based servers.
+Installs available software updates on a Linux-based backup server or a Veeam Infrastructure Appliance.
 
 Applies to
 
@@ -22,13 +22,13 @@ Syntax
 
 This cmdlet provides parameter sets that allow you to:
 
-* Install software updates on all Linux-based servers.
+* Install software updates on the Linux-based backup server and Veeam Infrastructure Appliances.
 
 |  |
 | --- |
 | Install-VBRAvailableUpdates -InstallAll  [<CommonParameters>] |
 
-* Install software updates on a specific list of Linux-based servers.
+* Install software updates on a specific list of the Linux-based backup server and Veeam Infrastructure Appliances.
 
 |  |
 | --- |
@@ -36,7 +36,7 @@ This cmdlet provides parameter sets that allow you to:
 
 Detailed Description
 
-This cmdlet installs available software updates on all Linux-based servers or a specific list of Linux-based servers.
+This cmdlet installs available software updates on the Linux-based backup server and all Veeam Infrastructure Appliances or a specific list of servers.
 
 Parameters
 

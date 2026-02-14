@@ -3,7 +3,7 @@ title: "Viewing Backup Policy Report"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_reporting_policy_report.html"
-last_updated: "9/11/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,12 +21,17 @@ You can generate a report with details about Veeam Agent backup job sessions per
 
 For more information about backup of Microsoft SQL Server transaction logs, see [Microsoft SQL Server Transaction Log Settings](agent_policy_win_vss_sql.md).
 
-The report contains data on the latest job session:
+The report provides the following information on the latest backup job session:
 
 * Cumulative session statistics: details on the number of protected computers specified in the backup policy settings, the number of computers to which settings of the backup policy are applied, and the number of disconnected computes, details of the session performance, amount of read, processed and transferred data.
 * Detailed statistics for every protected computer processed within the session: processing duration details, backup data size, amount of read and transferred data, list of warnings and errors (if any).
 
 * Detailed statistics for the application process if you edit the backup policy. In this case Veeam Backup & Replication applies the backup policy to protected computers and includes information about this process in the next job session report.
+
+|  |
+| --- |
+| NOTE |
+| [For Linux-based and Unix-based Veeam Agent computers] If the protected computer has LVM volume groups or BTRFS pools on top of physical partitions, during a full backup, Veeam Agent creates a separate disk in the backup file for each physical volume and each LVM volume group or BTRFS pool. As a result, the total data size in the report may appear larger than the actual volume of the physical partitions. |
 
 |  |
 | --- |
