@@ -3,7 +3,7 @@ title: "Set-VBRGeneralUpdateOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgeneralupdateoptions.html"
-last_updated: "9/8/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Modifies general update settings.
+Modifies general update settings for the Linux-based backup server and Veeam Infrastructure Appliances.
 
 Applies to
 
@@ -26,7 +26,12 @@ Syntax
 
 Detailed Description
 
-This cmdlet modifies general update settings.
+This cmdlet modifies general update settings for the Linux-based backup server and Veeam Infrastructure Appliances.
+
+|  |
+| --- |
+| Important |
+| Before you run this cmdlet, you must get the certificate either from a file or from the certificates store. |
 
 Parameters
 
@@ -59,7 +64,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This command sets a local repository as the source of updates and specifies a maintenance window. Security and optional updates are installed. There is a 30 day compliance deadline.  |  | | --- | | Set-VBRGeneralUpdateOptions -SourceRepositoryType "Custom" -AutoUpdatePeriod "30" -CustomRepositoryPath "https://repository.company.local/rocky/9.2" -ServerCertificate $ServerCertificate -MaintenanceWindow $maintenancewindow -UpdatesType "SecurityAndOptional" | |
+| This command sets a local repository as the source of updates and specifies a maintenance window. Security and optional updates are installed. There is a 30 day compliance deadline.  |  | | --- | | $cert = New-SelfSignedCertificate -DnsName "yourserver.domain.com" -CertStoreLocation "Cert:\LocalMachine\My"  $thumbprint = $cert.Thumbprint  $store = New-Object System.Security.Cryptography.X509Certificates.X509Store("My", "LocalMachine")  $store.Open("ReadOnly")  $cert = $store.Certificates | Where-Object { $\_.Thumbprint -eq $thumbprint }  $store.Close()  $dailywindow = New-VBRDailyOptions  $maintenancewindow = New-VBRMaintenanceWindowOptions -Enable -DailyOptions $dailywindow  Set-VBRGeneralUpdateOptions -SourceRepositoryType "Custom" -AutoUpdatePeriod "30" -CustomRepositoryPath "https://repository.company.local/rocky/9.2" -ServerCertificate $cert -MaintenanceWindow $maintenancewindow -UpdatesType "SecurityAndOptional" |  Perform the following steps:   1. Run the [New-SelfSignedCertificate](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps) cmdlet to create a self-signed certificate. Save the result to the $cert variable. 2. Commands up to $store.Close() are required to retrieve the certificate from the store by thumbprint. 3. Run the [New-VBRDailyOptions](new-vbrdailyoptions.md) cmdlet. Save the result to the $dailywindow variable. 4. Run the [New-VBRMaintenanceWindowOptions](new-vbrmaintenancewindowoptions.md) cmdlet. Specify the Enable parameter. Set $dailywindow as the DailyOptions parameter value. 5. Run the Set-VBRGeneralUpdateOptions cmdlet and specify the following settings:  * Specify the SourceRepositoryType, AutoUpdatePeriod, CustomRepositoryPath and UpdatesType parameter values. * Set the $cert variable as the ServerCertificate parameter value. * Set the $maintenancewindow variable as the MaintenanceWindow parameter value. |
 
 Related Commands
 
