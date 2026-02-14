@@ -3,7 +3,7 @@ title: "Step 3. Add Performance Extents"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_extents.html"
-last_updated: "11/24/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,6 +22,6 @@ At the Performance Tier step of the wizard, specify which backup repositories or
 
 If a backup repository that you add as a performance extent is already used by jobs of supported type or there are backups pointing at the backup repository (for example, independent backups created by VeeamZIP), Veeam Backup & Replication will offer you to update a link to the backup repository in the job properties. Click Yes to update the link and target the jobs and backups at the scale-out backup repository. If you click No, you will not be able to pass to the next steps of the wizard.
 
-![Step 3. Add Performance Extents](images/scaleout_repo_add_extents.webp)
+![Step 3. Add Performance Extents](images/scaleout_repo_update.webp)
 
 
