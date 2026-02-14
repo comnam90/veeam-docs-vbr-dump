@@ -3,7 +3,7 @@ title: "Get-VBRAvailableUpdates"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbravailableupdates.html"
-last_updated: "8/4/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns available software updates.
+Returns available software updates for a Linux-based backup server or a Veeam Infrastructure Appliance.
 
 Applies to
 
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet returns all available software updates for a server.
+This cmdlet returns all available software updates for the specified Linux-based backup server or Veeam Infrastructure Appliance.
 
 Parameters
 
