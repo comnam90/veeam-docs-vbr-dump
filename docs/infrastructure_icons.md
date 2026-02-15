@@ -3,7 +3,7 @@ title: "Infrastructure Icons"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infrastructure_icons.html"
-last_updated: "2/9/2026"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -392,5 +392,24 @@ For more information about the icons that represent the hypervisor objects of Hy
 Tape Infrastructure
 
 For more information about the icons that represent the tape infrastructure components, see [Tape Infrastructure Icons](tape_indicators.md).
+
+Proxmox VE Infrastructure
+
+The following icons represent the backup infrastructure components of Veeam Plug-In for Proxmox Virtual Environment.
+
+| Icon | Description |
+| --- | --- |
+| ![Infrastructure Icons](images/proxmox_server.webp) | Proxmox VE server |
+| ![Infrastructure Icons](images/proxmox_server_unavailable.webp) | Proxmox VE server is unavailable |
+| ![Infrastructure Icons](images/proxmox_engine-cluster.webp) | Proxmox VE cluster |
+| ![Infrastructure Icons](images/proxmox_engine_cluster_unavailable.webp) | Proxmox VE cluster is unavailable |
+| ![Infrastructure Icons](images/proxmox_vm.webp) | Proxmox VE VM |
+| ![Infrastructure Icons](images/proxmox_corrupted_vm.webp) | Proxmox VE VM is corrupted |
+| ![Infrastructure Icons](images/proxmox_infected_vm.webp) | Infected Proxmox VE VM |
+| ![Infrastructure Icons](images/proxmox_policy.webp) | Proxmox VE backup job |
+| ![Infrastructure Icons](images/proxmox_worker_disable.webp) | Worker is disabled |
+| ![Infrastructure Icons](images/proxmox_worker_configured.webp) | Worker is configured / Worker is tested |
+| ![Infrastructure Icons](images/proxmox_worker_working.webp) | Worker is working |
+| ![Infrastructure Icons](images/proxmox_worker_turnedoff.webp) | Worker is powered off |
 
 

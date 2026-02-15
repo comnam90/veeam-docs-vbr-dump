@@ -3,7 +3,7 @@ title: "Copying Unstructured Data Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_copy_backups.html"
-last_updated: "9/8/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,7 +36,7 @@ After the copy process finishes, the copied backups are shown in the Disk (Expor
 |  |
 | --- |
 | Note |
-| Consider the following:   * If you copy backups from a scale-out backup repository and some backups are stored on extents in the Maintenance mode, such backups are not copied.  * Veeam Backup & Replication copies backups only from the performance tier of the scale-out backup repository. If you want to copy data from the capacity tier, you first need to download it to the performance tier. For more information, see [Downloading Data from Capacity Tier](downloading_from_capacity_tier.md). |
+| Consider the following:   * If you copy backups from a scale-out backup repository and some backups are stored on extents in the Maintenance mode, such backups are not copied.  * Veeam Backup & Replication copies backups only from the performance tier of the scale-out backup repository. |
 
 ![Copying Unstructured Data Backups](images/nas_backup_copy.webp)
 
