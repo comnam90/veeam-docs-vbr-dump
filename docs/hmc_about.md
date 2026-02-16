@@ -3,7 +3,7 @@ title: "About Veeam Host Management"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_about.html"
-last_updated: "2/13/2026"
+last_updated: "2/15/2026"
 product_version: "13.0.1.1071"
 ---
 
