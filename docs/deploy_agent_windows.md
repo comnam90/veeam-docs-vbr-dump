@@ -3,7 +3,7 @@ title: "Deploying Veeam Agent for Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deploy_agent_windows.html"
-last_updated: "11/13/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 

@@ -3,7 +3,7 @@ title: "Viewing Backup Policy Statistics"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/report_backup_policy_stats.html"
-last_updated: "1/20/2026"
+last_updated: "2/15/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,5 +29,11 @@ To view application backup policy statistics:
 * To get statistics for database logs backup, select the necessary application backup policy and click Statistics > Database logs backup on the ribbon or right-click the backup policy and select Statistics > Database logs backup.
 
 [![Application Backup Policy Statistics](images/plugins_statistics_policy.webp)](images/plugins_statistics_policy.webp "Application Backup Policy Statistics")
+
+Additional Options for Monitoring Microsoft SQL Server Application Backup Policies
+
+When multiple objects in a database are backed up, you can use the search bar and status filters at the bottom of the statistics window to find specific object names. The search and filter options are also available in the job progress window. This functionality is available for application backup policies created with Veeam Plug-In for Microsoft SQL Server.
+
+[![Application Backup Policy Statistics](images/plugins_statistics_policy_ms_sql.webp)](images/plugins_statistics_policy_ms_sql.webp "Application Backup Policy Statistics")
 
 
