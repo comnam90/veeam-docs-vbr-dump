@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_volume_restore_before.html"
-last_updated: "2/15/2026"
+last_updated: "2/16/2026"
 product_version: "13.0.1.1071"
 ---
 
