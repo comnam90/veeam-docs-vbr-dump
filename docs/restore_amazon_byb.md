@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_byb.html"
-last_updated: "1/26/2026"
+last_updated: "2/16/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,6 +36,9 @@ For information on how to configure the helper appliance, see [Configure Helper 
 
 * To upload one machine disk to Amazon EC2, the helper appliance requires 1 GB RAM. Make sure that the type of EC2 instance selected for the helper appliance offers enough memory resources to upload all machine disks. Otherwise, the restore process may fail.
 * To recover from a backup in an on-premises object storage repository, the helper appliance machine must have access to the source object storage repository. To provide access to object storage repository, you can use VPN or AWS Direct Connect.
+
+* You cannot restore EC2 instances with encrypted EBS volumes using a helper appliance. To restore such instances, [disable the use of the helper appliance](restore_amazon_proxy.md). If your backups are stored on an object storage repository, you can disable the appliance in the configuration file on the Linux-based backup server or with registry values on the Microsoft Windows-based backup server. For more information, contact Veeam Customer Support.
+
 * To restore from a backup in an Amazon S3 object storage, use the helper appliance that has the instance type with the maximum values for the Network Bandwidth (Gbps) and EBS Bandwidth (Mbps). In most cases, you can use c5.18xlarge. For more information on instance types, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/).
 
 * A subnet and security group that you select for the helper appliance must meet the following requirements:
@@ -60,7 +63,6 @@ Source Workload Considerations
 * [For restore of EC2 instances without helper appliance] If you restore workloads with more than five disks, check that the Limit maximum concurrent tasks option of the repository where the backups are stored is equal or less than the limit of the AWS ImportVolume service for concurrent tasks. Veeam Backup & Replication uses this service during the restore. For more information on the limit, see [AWS Documentation](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html#limits_ec2).
 
 * [For Microsoft Windows-based backup server] Veeam Backup & Replication does not support restoring disks encrypted by BitLocker, except for restoring from backups created by Veeam Agent for Microsoft Windows. For more information, see the [Veeam Agent for Microsoft Windows User Guide](https://helpcenter.veeam.com/docs/agentforwindows/userguide/bitlocker.html?ver=13).
-* You cannot restore EC2 instances with encrypted EBS volumes using a helper appliance. To restore such instances, [disable the use of the helper appliance](restore_amazon_proxy.md). If your backups are stored on an object storage repository, you can disable the appliance in the configuration file on the Linux-based backup server or with registry values on the Microsoft Windows-based backup server. For more information, contact Veeam Customer Support.
 
 AWS-Specific Considerations
 
