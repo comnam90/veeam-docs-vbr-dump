@@ -3,7 +3,7 @@ title: "Step 3. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_pit_restore_point.html"
-last_updated: "2/11/2026"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,7 @@ At this step of the Instant Recovery wizard, select a state as of which you want
 
 Use the slider to choose the point in time you need.
 
-If some of the databases do not have transaction log backups for the specified time, they will be displayed below with their own time point.
+If the backed-up transaction logs do not contain information about some databases for the selected point in time, those databases will be recovered as of their latest available state.
 
 ![Step 3. Specify Restore Point](images/instant_multiple_point_vesql.webp "Specifying Restore Point")
 

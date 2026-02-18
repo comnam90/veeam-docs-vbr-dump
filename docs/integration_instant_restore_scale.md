@@ -3,7 +3,7 @@ title: "Restoring Veeam Agent Backup to Scale Computing HyperCore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_scale.html"
-last_updated: "2/16/2026"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 

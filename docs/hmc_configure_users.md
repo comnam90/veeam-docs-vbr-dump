@@ -3,7 +3,7 @@ title: "Configuring Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_users.html"
-last_updated: "2/16/2026"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,8 +22,9 @@ User Roles
 
 The following table describes roles you can assign to the local users.
 
+User Roles
+
 | Role | Description |
-| --- | --- |
 | Host Administrator | Can perform all administrative activities in the Veeam Host Management web UI and TUI:   * Configure network settings * Configure server time settings * Configure remote access settings * Manage users and roles * Configure backup infrastructure integrations * Manage software updates * Perform maintenance tasks   The default Host Administrator account is veeamadmin. |
 | Security Officer | Can perform the following operations in the Veeam Host Management web UI:   * Reset user passwords * Reset user multi-factor authentication * Manage authorization requests * Manage password recovery tokens  * Manage configuration backups * Export events   Security Officer does not have access to the Veeam Host Management TUI.  The default Security Officer account is veeamso. |
 | User | Manages backup and restore operations in accordance with the assigned backup server role. Use this role to create backup console users when the Veeam Software Appliance is not joined to a domain.  User must reset their password at first sign-in.  Has limited permissions to the system and no access to the Veeam Host Management console. |

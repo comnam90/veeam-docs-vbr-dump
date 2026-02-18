@@ -3,7 +3,7 @@ title: "Connect-VBRServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vbrserver.html"
-last_updated: "10/17/2025"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -55,11 +55,12 @@ Run the [Get-VBRServerSession](get-vbrserversession.md) cmdlet to get informatio
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies the Veeam server to which you want to connect.  Default: localhost. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
-| Port | Specifies the port for connection.  Default: 9392. | Int | False | Named | False |
-| Timeout | Specifies timeout for waiting for a blocked session. | Int32 | False | Named | False |
+| Port | Specifies the port for connection.  Default: 443. | Int | False | Named | False |
+| Timeout | Specifies timeout in seconds for waiting for a blocked session.  Default: 30. | Int32 | False | Named | False |
 | ForceAcceptTlsCertificate | Defines that the cmdlet will accept the backup server TLS certificate. | SwitchParameter | False | Named | False |
 | User | Specifies the user name you want to use for authenticating with the remote server.  Note: You must specify the user name in the DOMAIN\Username or UPN format. | String | True | Named | False |
 | Password | Specifies the password you want to use for authenticating with the Veeam server. | String | True | Named | False |

@@ -3,7 +3,7 @@ title: "Using Get-Help"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/using_get-help.html"
-last_updated: "8/26/2025"
+last_updated: "2/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,6 +21,6 @@ To get full details about the necessary cmdlet, run the Get-Help <cmdletname> -f
 | Note |
 | The online help for PowerShell on [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html) always provides more accurate information than the help reference that is integrated into the product. The online help is updated regularly and contains all fixes based on customers feedback. |
 
-[![Using Get-Help](images/using_get-help.webp)](images/using_get-help.webp "Using Get-Help")
+![Using Get-Help](images/using_get-help.webp "Using Get-Help")
 
 

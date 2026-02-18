@@ -3,7 +3,7 @@ title: "Step 3. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restoring_multiple_specify_restore_point_pit.html"
-last_updated: "8/21/2025"
+last_updated: "2/13/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,9 +15,9 @@ At this step of the wizard, select a state as of which you want to restore your 
 1. Choose a restore point:
 
 * Select the Restore to the point in time of the selected image-level backup option to load database files as of the moment when the current restore point was created.
-* Select the Restore to a specific point in time option to load database files as of the specified point in time.
+* Select the Restore to a specific point in time option to load database files as of the specified point in time. Use the slider to choose the point in time you need.
 
-Use the slider to choose the point in time you need.
+If the backed-up transaction logs do not contain information about some databases for the selected point in time, those databases will be recovered as of their latest available state.
 
 1. Click Restore.
 
@@ -26,6 +26,6 @@ Use the slider to choose the point in time you need.
 | Note |
 | Before the restore process begins, you will be prompted to enter the source machine credentials. |
 
-[![Specifying Restore Point](images/multiple_restore_select_point.webp)](images/multiple_restore_select_point.webp "Specifying Restore Point")
+![Step 3. Specify Restore Point](images/multiple_restore_select_point.webp "Specifying Restore Point")
 
 
