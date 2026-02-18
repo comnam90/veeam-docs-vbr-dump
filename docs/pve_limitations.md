@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_limitations.html"
-last_updated: "2/3/2026"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -40,7 +40,7 @@ When configuring Veeam Plug-in for Proxmox VE, consider the following:
 
 Backup Repositories
 
-When managing backup repositories, consider that Veeam Plug-in for Proxmox VE does not support storing backups in [HPE Cloud Bank Storage](storeonce_supported_features.md) repositories. However, you can use them for [storing copies of backups](pve_backups_copy.md) created with Veeam Plug-in for Proxmox VE.
+When managing backup repositories, consider that Veeam Plug-in for Proxmox VE does not support storing backups in [Veeam Cloud Connect](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html?ver=13) and [HPE Cloud Bank Storage](storeonce_supported_features.md) repositories. However, you can use them for [storing copies of backups](pve_backups_copy.md) created with Veeam Plug-in for Proxmox VE.
 
 Workers
 
