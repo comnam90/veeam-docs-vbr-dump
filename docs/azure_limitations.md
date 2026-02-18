@@ -3,7 +3,7 @@ title: "Microsoft Azure Object Storage Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_limitations.html"
-last_updated: "2/10/2026"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,7 @@ General Considerations and Limitations
 
 Consider the following limitations:
 
-* Data in an Azure container must be managed solely by Veeam Backup & Replication, including retention and data management. When you enable version-level immutability for the Azure container, make sure that you do NOT enable the default retention option. Note that enabling lifecycle rules is not supported, and may result in backup and restore failures.
+* Data in an Azure container must be managed solely by Veeam Backup & Replication, including retention and data management. When you enable version-level immutability for the Azure container, make sure that you do NOT enable the default retention option. Note that enabling lifecycle rules is not supported and may result in backup and restore failures.
 * [For Microsoft Azure Blob storage] Veeam Backup & Replication does not support soft delete for blobs.
 * [For Microsoft Azure Archive storage] Microsoft Azure has certain limits (quotas) on maximum amount of resources used. The quotas depend on the type of proxies you have selected. If you exhaust a quota, you will be unable to use Microsoft Azure Archive storage. For more information about Microsoft Azure quotas, see [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits).
 * Veeam Backup & Replication performs operations only on a blob level. You cannot create Azure containers or storage accounts from the backup infrastructure.
