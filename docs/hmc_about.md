@@ -3,7 +3,7 @@ title: "About Veeam Host Management"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_about.html"
-last_updated: "2/16/2026"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,8 +14,9 @@ Veeam Host Management is the component used to configure backup server or other 
 
 The following table describes operations available in the Veeam Host Management console.
 
+About Veeam Host Management
+
 | Operation | Host Management Web UI | Host Management TUI |
-| --- | --- | --- |
 | Network | | |
 | Change the server name | + | + |
 | Manage domain settings | + | — |
