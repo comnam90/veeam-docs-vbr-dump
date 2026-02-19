@@ -3,14 +3,14 @@ title: "Restoring Tenant Backups to Microsoft Azure"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_restore_azure.html"
-last_updated: "11/19/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restoring Tenant Backups to Microsoft Azure
 
 
-The SP can restore machines from tenant backups in the cloud repository to public cloud environments. This allows the SP to perform restore operations with tenant backups to recover tenant backup workloads and use Microsoft Azure as a target. This enables the SP to provide more disaster recovery scenarios, such as migration if the tenant decides to permanently move from an on-premise repository to a public cloud environment.
+The SP can restore machines from tenant backups stored in a cloud repository to a public cloud environment. This capability allows the SP to use tenant backups to recover workloads directly in Microsoft Azure, rather than to the original on‑premises location. As a result, the SP can offer additional data protection scenarios, such as migration if the tenant decides to permanently move from an on-premises environment to a public cloud environment.
 
 To use this functionality, the SP must make sure that the following conditions are met:
 
