@@ -3,7 +3,7 @@ title: "Security & Compliance Analyzer"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/best_practices_analyzer.html"
-last_updated: "2/5/2026"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -34,8 +34,9 @@ Security & Compliance Analyzer checks configuration parameters both for the oper
 
 Parameters for Veeam Backup & Replication on Linux
 
+Parameters for Veeam Backup & Replication on Linux
+
 | Parameter | Check Condition | Notes |
-| --- | --- | --- |
 | Backup Infrastructure Security | | |
 | Secure Boot should be enabled | The command mokutil -sb--state returns SecureBoot enabled. | To reduce the risk of rootkits compromising the system, the UEFI Secure Boot should be enabled on the machine where Veeam Backup & Replication is installed. |
 | Firewall should be enabled | The command systemctl is-enabled firewalld returns status enabled.  The command systemctl is-active firewalld returns status active. | The firewall should be turned on. Also, rules for inbound and outbound connections should be configured according to your infrastructure and security best practices. |
@@ -47,7 +48,7 @@ Parameters for Veeam Backup & Replication on Linux
 | OS should be in FIPS mode | The command sysctl -n -b crypto.fips\_enabled returns 1. | The Linux operating system should run in a FIPS-compliant operation mode. For more information, see [FIPS Compliance](fips_compliance.md). |
 | Address space layout randomization (ASLR) should be used | The command sysctl -n -b kernel.randomize\_va\_space returns 2. | To reduce the risk of compromise, program data should be stored in random memory locations. |
 | OS should be configured to use TCP syncookies | The command sysctl -n -b net.ipv4.tcp\_syncookies returns 1. | SYN cookies should be used to reduce the impact of SYN flood denial-of-service attacks. They allow the system to accept valid connections, even if the half-open connection queue is full. |
-| World-writable directories should not be executable | The command find / -type d -perm o+w -perm -0+x 2> /dev/null returns empty values.  The following directories are checked:   * /bin/ * /user/bin/ * /etc/ * /home/ * /var/ (excluding var/tmp and /var/lib/veeam/dump) | World-writable directories should not be executable as they can be modified by any user on the system and are vulnerable to malicious actors. |
+| World-writable directories should not be executable | The command find / -type d -perm o+w -perm -o+x 2> /dev/null returns empty values.  The following directories are checked:   * /bin/ * /user/bin/ * /etc/ * /home/ * /var/ (excluding var/tmp and /var/lib/veeam/dump) | World-writable directories should not be executable as they can be modified by any user on the system and are vulnerable to malicious actors. |
 | Services with known issues should be disabled | The following commands do not return enabled:   * systemctl is-enabled rlogin.socket * systemctl is-enabled telnetd * systemctl is-enabled rsh.socket   The following commands do not return active:   * systemctl is-active rlogin.socket * systemctl is-active telnetd * systemctl is-active rsh.socket | The rlogin, telnetd, and rsh-server services should be disabled as they have a number of known security vulnerabilities. |
 | Local accounts credentials should follow password length and complexity recommendations | Linux credentials meet the following requirements for password length and complexity:   * 15 characters minimum * 1 upper case character * 1 lower case character * 1 numeric character * 1 special character | Using strong passwords minimizes the risk of unauthorized access. |
 | Audit binaries should be owned by root | The following commands return 1:   * find %auditbinaryfilepath% -type f -not -user root | grep -q . * find %auditbinaryfilepath% -type f -not -group root | grep -q .   The following directories are checked:   * /sbin/auditctl * /sbin/aureport * /sbin/ausearch * /sbin/autrace * /sbin/auditd * /sbin/rsyslogd * /sbin/augenrules | Access to the audit binaries should be restricted to prevent unauthorized changes that may affect system performance or result in incomplete event logging. |
@@ -78,8 +79,9 @@ Parameters for Veeam Backup & Replication on Linux
 
 Parameters for Veeam Backup & Replication on Microsoft Windows
 
+Parameters for Veeam Backup & Replication on Microsoft Windows
+
 | Parameter | Check Condition | Notes |
-| --- | --- | --- |
 | Backup Infrastructure Security | | |
 | Remote Desktop Services (TermService) should be disabled | The Remote Desktop Services service is not running. The Startup type parameter is set to Disabled. | Remote services should be disabled if they are not needed. Note that for the Veeam Cloud Connect infrastructure, this parameter must be enabled if the SP uses Remote Desktop Protocol (RDP) to connect to the tenant backup server. For more information, see [Remote Desktop Connection to Tenant](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_remote_desktop.html?ver=13). |
 | Remote Registry service (RemoteRegistry) should be disabled | The Remote Registry service is not running. The Startup type parameter is set to Disabled. | Remote services should be disabled if they are not needed. |
