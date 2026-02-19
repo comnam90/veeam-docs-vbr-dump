@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/13/2026"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,8 +26,9 @@ If you use an HTTP/HTTPS proxy server to access the Internet, make sure that Win
 
 All Backup Infrastructure Components
 
+All Backup Infrastructure Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Any backup infrastructure component | DNS server | UDP, TCP | 53 | Port used for communication with the DNS server. It is required for forward/reverse name resolution of all backup and infrastructure servers including Active Directory domain controllers. |
 
 Backup Server
@@ -39,8 +40,9 @@ The following tables describe network ports that must be opened to ensure proper
 
 Incoming Connections
 
+Incoming Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Management client PC (remote access) | Backup server | TCP | 22 | Default port used to connect to the Linux-based backup server through SSH. |
 | TCP | 443 | Default ports used to connect to the Veeam Backup & Replication web UI. |
 | TCP | 10443 | Default port used by the Linux-based backup server to connect to the Host Management console. |
@@ -49,7 +51,7 @@ Incoming Connections
 | Backup proxy | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) for ransomware index transfer.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup repository (Linux) | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup repository (Microsoft Windows) | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
-| Tape server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is uses for failover if port 6162 is unavailable. |
+| Tape server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Mount server | TCP | 9401 | Port used for communication with the Veeam Backup Service.  Also required to perform Copy to and Mount to console operations during Windows file-level recovery. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | TCP | 443 | Port used for communication with the backup server. |
@@ -61,8 +63,9 @@ Incoming Connections
 
 Outgoing Connections
 
+Outgoing Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Communication with Virtualization Servers | | | | |
 | Backup server | vCenter Server | TCP | 443 | Port used for connections to vCenter Server.  Note: The backup server should have a direct connection to vCenter Server. HTTP/HTTPS proxy servers are not supported.  If you use VMware Cloud Director, make sure you open port 443 on underlying vCenter Servers. |
 | ESXi server | TCP | 443 | Port used for connections to ESXi host.  This port is not required for VMware Cloud on AWS. |
@@ -117,9 +120,10 @@ Backup & Replication Console
 
 The following table describes network ports that must be opened to ensure proper communication with the Veeam Backup & Replication console.
 
+Backup & Replication Console
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
-| Veeam Backup & Replication console | Mount server | TCP | 6162, 2500 to 3300 | [Remote console only] Ports used as data transmission channels for guest OS file-level restore. For every TCP connection that a job uses, one port from this range is assigned.  These ports are used if the mount server is not located on the console.  The port range 2500-3300 is uses for failover if port 6162 is unavailable. |
+| Veeam Backup & Replication console | Mount server | TCP | 6162, 2500 to 3300 | [Remote console only] Ports used as data transmission channels for guest OS file-level restore. For every TCP connection that a job uses, one port from this range is assigned.  These ports are used if the mount server is not located on the console.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Veeam AI Assistant  (rest-ai.veeam.com) | TCP | 443 | Default port for communication with the Veeam AI Assistant service. |
 | Backup server | TCP | 9420 | [For console version 12.3.2 P1 (build 12.3.2.4165)] Port used by the Veeam Backup & Replication console to communicate with the backup server for console automatic update. |
@@ -133,8 +137,9 @@ The following table describes network ports that must be opened to ensure proper
 | Note |
 | The following ports are required by all Veeam Infrastructure Appliances. You must also open additional ports based on the role you have assigned to the Veeam Infrastructure Appliance. They can be found on this page in the relevant section for the role. For example, [Backup Proxy](#proxy) or [Gateway Server](#gateway).  For more information on the roles that can be assigned to a Veeam Infrastructure Appliance, see [Considerations and Limitations](linux_infrastructure_appliance_byb.md). |
 
+Veeam Infrastructure Appliance
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam Infrastructure Appliance | Veeam Update Repository  (repository.veeam.com) | TCP | 443 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO. It is used to connect to the Veeam Update Repository. The repository is Veeam-maintained and provides product, operating system, and security updates. For more information, see [How Updates Work](update_appliance_hiw.md). |
 | Veeam Update Repository (local mirror)  (<localmirrorrepository.domain>) | TCP | 443 or 80 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO. It is used to connect to a local mirror of the Veeam Update Repository. For more information, see [Configuring Updates](update_appliance_configure_updates.md).  Consider that the address must be replaced with the actual URL of your mirror repository. |
 | Backup server | TCP | 443 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO to authenticate incoming connections from Veeam Backup & Replication. |
@@ -153,8 +158,9 @@ Backup Proxy
 
 The following table describes network ports that must be opened to ensure proper communication of backup proxies with other backup components. For more information about ports that must be opened between the backup proxy and specific backup repository, see [Backup Repositories](#backup_repos).
 
+Backup Proxy
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Communication with Backup Server | | | | |
 | Backup server | Backup proxy (Microsoft Windows) | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
@@ -167,7 +173,7 @@ The following table describes network ports that must be opened to ensure proper
 | ESXi server | TCP | 902 | Default VMware port used for data transfer.  This port is not required for VMware Cloud on AWS. |
 | TCP | 443 | Default VMware web service port that can be customized in ESXi host settings. Not required if vCenter connection is used.  This port is not required for VMware Cloud on AWS. |
 | Other Communications | | | | |
-| Backup proxy | Gateway server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is uses for failover if port 6162 is unavailable. |
+| Backup proxy | Gateway server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup proxy | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable.. |
 | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
@@ -175,8 +181,9 @@ Off-Host Backup Proxy
 
 The following table describes network ports that must be opened to ensure proper communication of off-host backup proxies with other backup components. For more information about ports that must be opened between the off-host backup proxy and specific backup repository, see [Backup Repositories](#backup_repos).
 
+Off-Host Backup Proxy
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Communication with Backup Server | | | | |
 | Backup server | Hyper-V server/Off-host backup proxy | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
@@ -192,8 +199,9 @@ Gateway Server
 
 The following table describes network ports that must be opened to ensure proper communication with gateway servers. For more information about ports that must be opened between the gateway server and specific backup repository, see [Backup Repositories](#backup_repos).
 
+Gateway Server
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Gateway server (Microsoft Windows) | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -210,7 +218,6 @@ Backup Repositories
 * [Microsoft Windows/Linux-Based Backup Repository](#repo)
 * [NFS Backup Repository](#nfs_repository)
 * [SMB Backup Repository](#smb_repository)
-
 * [Dell Data Domain System](#emc)
 * [ExaGrid](#exagrid)
 * [HPE StoreOnce](#storeonce)
@@ -227,8 +234,9 @@ Microsoft Windows/Linux-Based Backup Repository
 
 The following table describes network ports that must be opened to ensure proper communication with Microsoft Windows/Linux-based backup repositories.
 
+Microsoft Windows/Linux-Based Backup Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Backup repository (Microsoft Windows) | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -242,8 +250,9 @@ NFS Backup Repository
 
 The following table describes network ports that must be opened to ensure proper communication with NFS shares added as backup repositories.
 
+NFS Backup Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server or backup proxy | NFS backup repository | TCP, UDP | 111, 2049 | Standard NFS ports. Port 111 is used by the port mapper service.  Also used as a transmission channel from the gateway server to the target NFS backup repository if a gateway server is specified explicitly in NFS backup repository settings. |
 | Gateway server or backup proxy | NFS backup repository | TCP, UDP | mountd\_port | Dynamic port used for mountd service. Can be assigned statically. |
 | TCP, UDP | statd\_port | Dynamic port used for statd service. Can be assigned statically. |
@@ -253,8 +262,9 @@ SMB Backup Repository
 
 The following table describes network ports that must be opened to ensure proper communication with SMB (CIFS) shares added as backup repositories.
 
+SMB Backup Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server or backup proxy | SMB (CIFS) backup repository (Microsoft Windows) | TCP | 445 | Port used as a transmission channel from the gateway server to the target SMB (CIFS) backup repository if a gateway server is specified explicitly in SMB (CIFS) backup repository settings. |
 | Active Directory Domain Controllers | TCP | 389 | Port used for communications over LDAP and LDAPS protocols. |
 | TCP | 88 | Port used for Kerberos authentication. |
@@ -263,16 +273,18 @@ Dell Data Domain System
 
 For more information, see [Dell Documents](https://www.dell.com/support/kbdoc/en-us/000126375/powerprotect-and-data-domain-core-documents).
 
+Dell Data Domain System
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server or gateway server | Dell Data Domain | TCP | 111 | Port used to assign a random port for the mountd service used by NFS and DDBOOST. Mountd service port can be statically assigned. |
 | TCP | 2049 | Main port used by NFS. Can be modified using the ‘nfs set server-port’ command. Command requires SE mode. |
 | TCP | 2052 | Main port used by NFS MOUNTD. Can be modified using the 'nfs set mountd-port' command in SE mode. |
 
 ExaGrid
 
+ExaGrid
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | ExaGrid | TCP | 22 | Default command port used for communication with ExaGrid and initial installation of Veeam components. |
 | TCP | 6160 | Default port used by Veeam Installer Service for components management and upgrade. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Data Mover Service.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -280,15 +292,17 @@ ExaGrid
 
 HPE StoreOnce
 
+HPE StoreOnce
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server or gateway server | HPE StoreOnce | TCP | 9387 | Default command port used for communication with HPE StoreOnce. |
 | TCP | 9388 | Default data port used for communication with HPE StoreOnce. |
 
 Quantum DXi
 
+Quantum DXi
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Quantum DXi | TCP | 22 | Default command port used for communication with Quantum DXi and initial installation of Veeam components. |
 | TCP | 6160 | Default port used by Veeam Installer Service for components management and upgrade. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Data Mover Service.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -296,8 +310,9 @@ Quantum DXi
 
 Fujitsu ETERNUS CS800
 
+Fujitsu ETERNUS CS800
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Fujitsu ETERNUS CS800 | TCP | 22 | Default command port used for communication with Fujitsu ETERNUS CS800 and initial installation of Veeam components. |
 | TCP | 6160 | Default port used by Veeam Installer Service for components management and upgrade. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Data Mover Service.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -305,8 +320,9 @@ Fujitsu ETERNUS CS800
 
 Infinidat InfiniGuard
 
+Infinidat InfiniGuard
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Infinidat InfiniGuard | TCP | 22 | Default command port used for communication with Infinidat InfiniGuard and initial installation of Veeam components. |
 | TCP | 6160 | Default port used by Veeam Installer Service for components management and upgrade. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Data Mover Service.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -316,8 +332,9 @@ Veeam Data Cloud Vault
 
 The following table describes network ports and endpoints that must be opened to ensure proper communication with Veeam Data Cloud Vault. Note that a connection between the backup server and Veeam License Update Server is also required. For more information, see [Backup Server](#backup).
 
+Veeam Data Cloud Vault
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Veeam Data Cloud Vault  (<storage-account>.blob.core.windows.net, <storage-account>.blob.storage.azure.net) | TCP | 443 | Port used to communicate with the Microsoft Azure object storage.  Consider that the <storage-account> part of the address must be replaced with the ID of your storage vault. You can find the storage vault ID in the Storage Vaults > Vault ID section in Veeam Data Cloud Vault. For more information, see the [Managing Storage Vaults](https://helpcenter.veeam.com/docs/vdc/userguide/vault_storage_vaults_edit.html#viewing-storage-vault-details) section in the Veeam Data Cloud User Guide. |
 | Veeam Data Cloud Vault | TCP | 80 | Port used to verify the certificate status through the certificate verification endpoints (CRL URLs and OCSP servers).  These endpoints are subject to change. You can find the actual list of addresses in [this Microsoft article](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-CA-details?tabs=root-and-subordinate-cas-list#certificate-downloads-and-revocation-lists) or in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access   Make sure that the backup server can reach these verification endpoints. |
 | Microsoft Entra ID  (login.microsoftonline.com, login.windows.net) | TCP | 443 | Port used for Entra ID authentication. |
@@ -329,8 +346,9 @@ Object Storage Repository
 
 The following table describes network ports and endpoints that must be opened to ensure proper communication with object storage repositories. For more information, see [Object Storage Repository](object_storage_repository.md).
 
+Object Storage Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server | Backup proxy (direct connection)/Gateway server or backup server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup server | Smart Object Storage API (SOSAPI) compatible S3 object storage | TCP | 443 | Port used by Veeam Backup & Replication for auxiliary communications with object storage repositories that support Smart Object Storage API (SOSAPI). |
 | Backup proxy (direct connection)/Gateway server or backup server/Instant Recovery to Azure helper appliance | Amazon S3 object storage  (\*.amazonaws.com, \*.amazonaws.com.cn) | TCP | 443 | Port used to communicate with the Amazon S3 object storage.  The endpoint used by the connection depends on the region:   * \*.amazonaws.com is used for the Global and Government regions. * \*.amazonaws.com.cn is used for the China region.   All AWS service endpoints are specified in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). |
@@ -346,8 +364,9 @@ Scale-Out Backup Repository
 
 The following table describes network ports that must be opened to ensure proper communication with scale-out backup repository. For more information, see [Scale-Out Backup Repositories](backup_repository_sobr.md).
 
+Scale-Out Backup Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Source extent | Target extent | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Target extent | Source extent | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
@@ -355,8 +374,9 @@ External Repository
 
 The following table describes network ports and endpoints that must be opened to ensure proper communication with external repositories. For more information, see [External Repository](external_repository.md).
 
+External Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server | Backup proxy (direct connection)/Gateway server or backup server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Gateway server/backup server/Instant Recovery to Azure helper appliance | Amazon S3 object storage  (\*.amazonaws.com, \*.amazonaws.com.cn) | TCP | 443 | Port used to communicate with Amazon S3 object storage.  The endpoint used by the connection depends on the region:   * \*.amazonaws.com is used for the Global and Government regions. * \*.amazonaws.com.cn is used for the China region.   All AWS service endpoints are specified in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). |
 | Amazon S3 object storage  (\*.amazontrust.com) | TCP | 80 | Port used to verify certificate status.  Consider that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. You can find the actual list of addresses in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access   Make sure that the proxy, or backup server, or helper appliance can reach these verification endpoints. |
@@ -369,8 +389,9 @@ Archive Object Storage Repository
 
 The following table describes network ports and endpoints that must be opened to ensure proper communication with object storage repositories used as a part of Archive Tier. For more information, see [Archive Tier](archive_tier.md).
 
+Archive Object Storage Repository
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server or backup server | Amazon EC2 helper appliance | TCP | 443 | Port used by default to communicate with the Amazon EC2 helper appliance through public/private IPv4 addresses of EC2 appliances.  If you use Amazon S3 Glacier object storage, the gateway server should have direct connection to AWS service endpoints. HTTP/HTTPS proxy servers are not supported.  If there is no gateway server selected, the backup server will be used as a gateway server. |
 | TCP | 22 | Default SSH port used as a control channel. |
 | Microsoft Azure proxy appliance | TCP | 443 | Port used by default to communicate with the Microsoft Azure helper appliance through public/private IPv4 addresses of Azure appliances.  If there is no gateway server selected, the backup server will be used as a gateway server. |
@@ -383,9 +404,7 @@ The following table describes network ports and endpoints that must be opened to
 Storage Systems
 
 * [Dell Unity XT, Unity Storage](#dell_unity)
-
 * [Dell PowerScale (formerly Isilon) Storage](#dell_isilon)
-
 * [HPE 3PAR StoreServ Storage](#3par)
 * [HPE Alletra Storage MP B10000, Alletra 9000, Primera Storage](#hpe_primera)
 * [HPE Alletra 5000, Alletra 6000, Nimble Storage](#nimble)
@@ -396,24 +415,27 @@ Storage Systems
 
 Dell Unity XT, Unity Storage
 
+Dell Unity XT, Unity Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Dell Unity XT/Unity storage system | TCP | 443 | Default port used for communication with Dell Unity XT/Unity over HTTPS and sending REST API calls. |
 | Backup proxy | Dell Unity XT/Unity storage system | TCP | 3260 | Default iSCSI target port. |
 | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
 
 Dell PowerScale (Formerly Isilon) Storage
 
+Dell PowerScale (Formerly Isilon) Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Dell PowerScale storage system | TCP | 8080 | Default port used for communication with Dell PowerScale over HTTPS and sending REST API calls. |
 | Backup proxy | Dell PowerScale storage system | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
 | TCP | 445 | Default SMB port. |
 
 HPE 3PAR StoreServ Storage
 
+HPE 3PAR StoreServ Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | HPE 3PAR StoreServ storage system | TCP | 8008 | Default port used for communication with HPE 3PAR StoreServ over HTTP. |
 | TCP | 8080 | Default port used for communication with HPE 3PAR StoreServ over HTTPS. |
 | TCP | 22 | Default command port used for communication with HPE 3PAR StoreServ over SSH. |
@@ -421,8 +443,9 @@ HPE 3PAR StoreServ Storage
 
 HPE Alletra Storage MP B10000, Alletra 9000, Primera Storage
 
+HPE Alletra Storage MP B10000, Alletra 9000, Primera Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | HPE Alletra Storage MP B10000/Alletra 9000/Primera storage system | TCP | 443 | Default port used for communication with HPE Alletra Storage MP B10000/Alletra 9000/Primera over HTTPS. |
 | TCP | 22 | Default command port used for communication with HPE Alletra Storage MP B10000/Alletra 9000/Primera over SSH. |
 | Backup proxy | HPE Alletra Storage MP B10000/Alletra 9000/Primera storage system | TCP | 3260 | Default iSCSI target port. |
@@ -430,15 +453,17 @@ HPE Alletra Storage MP B10000, Alletra 9000, Primera Storage
 
 HPE Alletra 5000, Alletra 6000, Nimble Storage
 
+HPE Alletra 5000, Alletra 6000, Nimble Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | HPE Alletra 5000/Alletra 6000/Nimble storage system | TCP | 5392 | Default command port used for communication with HPE Alletra 5000/Alletra 6000/Nimble. |
 | Backup proxy | HPE Alletra 5000/Alletra 6000/Nimble storage system | TCP | 3260 | Default iSCSI target port. |
 
 Lenovo ThinkSystem DM/DG Series Storage
 
+Lenovo ThinkSystem DM/DG Series Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Lenovo ThinkSystem DM/DG Series storage system | TCP | 80 | Default command port used for communication with Lenovo ThinkSystem DM/DG Series over HTTP. |
 | TCP | 443 | Default command port used for communication with Lenovo ThinkSystem DM/DG Series over HTTPS. |
 | Backup proxy | Lenovo ThinkSystem DM/DG Series storage system | TCP, UDP | 111, 2049, 635 | Default NFS ports. Port 111 is used by the port mapper service. |
@@ -447,8 +472,9 @@ Lenovo ThinkSystem DM/DG Series Storage
 
 NetApp ONTAP Storage
 
+NetApp ONTAP Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | NetApp ONTAP storage system | TCP | 80 | Default command port used for communication with NetApp ONTAP over HTTP. |
 | TCP | 443 | Default command port used for communication with NetApp ONTAP over HTTPS. |
 | Backup proxy | NetApp ONTAP storage system | TCP, UDP | 111, 2049, 635 | Default NFS ports. Port 111 is used by the port mapper service. |
@@ -457,8 +483,9 @@ NetApp ONTAP Storage
 
 Nutanix Files Storage
 
+Nutanix Files Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Nutanix Files storage system | TCP | 9440 | Default port used for communication with Nutanix Files and sending REST API calls. |
 | Backup proxy | Nutanix Files storage system | TCP, UDP | 111, 2049, 20048 | Default NFS ports. Port 111 is used by the port mapper service. |
 | TCP | 445 | Default SMB port. |
@@ -472,12 +499,9 @@ The following tables describe network ports that must be opened to ensure proper
 * [Dell PowerMax](#dell_powermax)
 * [Dell PowerStore](#dell_powerstore)
 * [Fujitsu ETERNUS DX/AF](#fujitsu)
-
 * [Hitachi VSP/VSP One Block](#vsp)
 * [IBM FlashSystem (formerly Spectrum Virtualize) Storage](#ibm)
-
 * [INFINIDAT InfiniBox](#infinidat)
-
 * [NEC Storage M Series](#necm)
 * [NetApp SolidFire/HCI](#solidfire)
 * [Pure Storage FlashArray](#pure)
@@ -485,86 +509,98 @@ The following tables describe network ports that must be opened to ensure proper
 
 DataCore SANsymphony
 
+DataCore SANsymphony
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | DataCore SANsymphony storage system | TCP | 443 | Default command port used for communication with DataCore SANsymphony over HTTPS. |
 | Backup proxy | DataCore SANsymphony storage system | TCP | 3260 | Default iSCSI target port. |
 
 Dell SC Series
 
+Dell SC Series
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Dell SC Series storage system | TCP | 3033 | Default command port used for communication with Dell SC Series over HTTPS. |
 | Backup proxy | Dell SC Series storage system | TCP | 3260 | Default iSCSI target port. |
 
 Dell PowerMax
 
+Dell PowerMax
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Dell PowerMax storage system | TCP | 8443 | Default command port used for communication with Dell PowerMax over HTTPS. |
 | Backup proxy | Dell PowerMax storage system | TCP | 3260 | Default iSCSI target port. |
 
 Dell PowerStore
 
+Dell PowerStore
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Dell PowerStore storage system | TCP | 443 | Default command port used for communication with Dell PowerStore over HTTPS. |
 | Backup proxy | Dell PowerStore storage system | TCP | 3260 | Default iSCSI target port. |
 
 Fujitsu ETERNUS DX/AF
 
+Fujitsu ETERNUS DX/AF
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Fujitsu ETERNUS DX/AF storage system | TCP | 22 | Default command port used for communication with Fujitsu ETERNUS DX/AF over SSH. |
 | Backup proxy | Fujitsu ETERNUS DX/AF storage system | TCP | 3260 | Default iSCSI target port. |
 
 Hitachi VSP/VSP One Block
 
+Hitachi VSP/VSP One Block
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Hitachi VSP/VSP One Block storage system | TCP | 443 | Default command port used for communication with Hitachi VSP/VSP One Block over HTTPS. |
 | Backup proxy | Hitachi VSP/VSP One Block storage system | TCP | 3260 | Default iSCSI target port. |
 
 IBM FlashSystem (formerly Spectrum Virtualize) Storage
 
+IBM FlashSystem (formerly Spectrum Virtualize) Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | IBM FlashSystem storage system | TCP | 22 | Default command port used for communication with IBM FlashSystem over SSH. |
 | Backup proxy | IBM FlashSystem storage system | TCP | 3260 | Default iSCSI target port. |
 
 INFINIDAT InfiniBox
 
+INFINIDAT InfiniBox
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | INFINIDAT InfiniBox storage system | TCP | 443 | Default command port used for communication with INFINIDAT InfiniBox over HTTPS. |
 | Backup proxy | INFINIDAT InfiniBox storage system | TCP | 3260 | Default iSCSI target port. |
 
 NEC Storage M Series
 
+NEC Storage M Series
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | NEC Storage M Series storage system | TCP | 22 | Default command port used for communication with NEC Storage M Series over SSH. |
 | Backup proxy | NEC Storage M Series storage system | TCP | 3260 | Default iSCSI target port. |
 
 NetApp SolidFire/HCI
 
+NetApp SolidFire/HCI
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | NetApp SolidFire/HCI storage system | TCP | 443 | Default command port used for communication with NetApp SolidFire/HCI over HTTPS. |
 | Backup proxy | NetApp SolidFire/HCI storage system | TCP | 3260 | Default iSCSI target port. |
 
 Pure Storage FlashArray
 
+Pure Storage FlashArray
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Pure Storage FlashArray system | TCP | 443 | Default command port used for communication with Pure Storage FlashArray over HTTPS. |
 | Backup proxy | Pure Storage FlashArray system | TCP | 3260 | Default iSCSI target port. |
 | Pure Storage FlashArray system | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
 
 Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile)
 
+Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile)
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Tintri IntelliFlash system | TCP | 443 | Default command port used for communication with Tintri IntelliFlash over HTTPS. |
 | Backup proxy | Tintri IntelliFlash system | TCP | 3260 | Default iSCSI target port. |
 | Tintri IntelliFlash system | TCP, UDP | 111, 2049 | Default NFS ports. Port 111 is used by the port mapper service. |
@@ -580,8 +616,9 @@ The following tables describe network ports that must be opened to ensure proper
 
 File Share Connections
 
+File Share Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | File server (Windows or Linux), Backup proxy | Backup server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup server | File server (Windows or Linux), Backup proxy | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6210 | Default port used by the Veeam Backup VSS Integration Service for taking a VSS snapshot during the SMB file share backup (if Veeam Backup & Replication is installed on the Microsoft Windows machine). For more information, see [Microsoft Windows Services](services_and_components.md#win_services). |
@@ -610,8 +647,9 @@ File Share Connections
 
 Cache Repository Connections
 
+Cache Repository Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | File server (Windows or Linux), Backup proxy | Cache repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup server | Cache repository | TCP | 6160 | Default ports used by Veeam Installer Service. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -621,24 +659,27 @@ Cache Repository Connections
 
 Archive Repository Connections
 
+Archive Repository Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Primary backup repository | Archive repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
 NDMP Server Connections
 
 The following table describes network ports that must be opened to ensure proper communication with NDMP servers.
 
+NDMP Server Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server | NDMP server | NDMP | 10000 | Default port used to manage the NMDP server.  Note: The port range used for data transfer depends on your NDMP server configuration. For more information, contact your hardware vendor. |
 
 Tape Server
 
 The following table describes network ports that must be opened to ensure proper communication with tape servers.
 
+Tape Server
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Tape server | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -651,8 +692,9 @@ WAN Accelerator
 
 The following table describes network ports that must be opened to ensure proper communication between WAN accelerators used in backup copy jobs and replication jobs.
 
+WAN Accelerator
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | WAN accelerator | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
@@ -667,8 +709,9 @@ Guest Processing Components
 
 The following table describes the network ports that must be opened to ensure proper communication between the backup server and the VMs that will be added to Managed Servers as Guest Interaction Proxy (Log Shipping Server).
 
+Guest Processing Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Guest interaction proxy | TCP | 445, 135 | Ports used for adding Windows VMs to managed servers using local administrator credentials. Note: Kerberos domain account with administrator privileges should be used. |
 | TCP | 6160 | Port used for adding both Windows and Linux VMs to managed servers using a certificate-based authentication. Note: Deployment kit should be pre-installed on VMs. |
 | TCP | 22 | Port used for adding Linux VMs to managed servers using SSH credentials. |
@@ -677,15 +720,17 @@ Connections with Non-Persistent Runtime Components
 
 The following tables describe network ports that must be opened to ensure proper communication of the backup server and backup infrastructure components with the non-persistent runtime components deployed inside the VM guest OS for application-aware processing and indexing.
 
+Connections with Non-Persistent Runtime Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Guest interaction proxy | TCP | 6190 | Port used for communication with the guest interaction proxy. |
 | Guest interaction proxy | ESXi server | TCP | 443 | Default port used for connections to ESXi host.  [For VMware vSphere earlier than 6.5] Not required if vCenter connection is used. In VMware vSphere versions 6.5 and later, port 443 is required by vCenter Web Services. |
 
 Network ports described in the following table are NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct.
 
+Connections with Non-Persistent Runtime Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | VM guest OS (Microsoft Windows) | TCP | 445, 135 | Port used to deploy the runtime coordination process on the VM guest OS. |
 | TCP | 2500 to 3300 | Default range of ports used as transmission channels for log shipping. |
 | TCP | 6173 | Port used by the runtime process deployed inside the VM for guest OS interaction. |
@@ -696,8 +741,9 @@ Connections with Persistent Agent Components
 
 The following table describes network ports that must be opened to ensure proper communication of the backup server with the persistent agent components deployed inside the VM guest OS for application-aware processing and indexing.
 
+Connections with Persistent Agent Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | VM guest OS (Linux) | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162 | Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 | VM guest OS (Windows) | TCP | 6160, 11731 | Default port and failover port used by Veeam Installer Service. |
@@ -714,8 +760,9 @@ The following tables describe network ports that must be opened to ensure proper
 
 Log Shipping Server Connections
 
+Log Shipping Server Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Log shipping server | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
@@ -726,8 +773,9 @@ Log Shipping Server Connections
 
 MS SQL Guest OS Connections
 
+MS SQL Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | MS SQL VM guest OS | TCP | 445, 135, 137, 139 | [Non-persistent runtime components only] Ports used for deploying Veeam Backup & Replication components including Veeam Log Shipper runtime component.  These ports are not required:   * When working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. * If the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.   Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a guest OS.  These ports are NOT required when working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | TCP | 6173 | Port used by the Veeam Guest Helper for guest OS processing. |
@@ -738,8 +786,9 @@ MS SQL Guest OS Connections
 
 Oracle Guest OS Connections
 
+Oracle Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | Oracle VM guest OS (Microsoft Windows) | TCP | 445, 135 | [Non-persistent runtime components only] Ports used for deploying Veeam Backup & Replication components including Veeam Log Shipper runtime component.  These ports are not required:   * When working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. * If the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.   Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a guest OS.  These ports are NOT required when working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | TCP | 6173 | Port used by the Veeam Guest Helper for guest OS processing |
@@ -753,8 +802,9 @@ Oracle Guest OS Connections
 
 PostgreSQL Guest OS Connections
 
+PostgreSQL Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | PostgreSQL VM guest OS | TCP | 22 | [Non-persistent runtime components only] Default SSH port used as a control channel.  This port is NOT required when working in networkless mode over vSphere Web Services. |
 | TCP | 6162 | [Persistent agent components only] Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a guest OS.  This port is NOT required when working in networkless mode over vSphere Web Services. |
@@ -765,8 +815,9 @@ CDP Components
 
 The following table describes network ports that must be opened to ensure proper communication of Veeam CDP components with other backup components.
 
+CDP Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | ESXi host (source) | CDP proxy (source) | TCP | 33032 | Default port used as a transmission channel to the source CDP proxy. |
 | ESXi host (source) | TCP | 33036 | Port used on the source ESXi host for communication between CDP components over HTTPS without HTTP Reverse Proxy. |
 | CDP proxy (source) | CDP proxy (target) | TCP | 33033 | Default port used as a transmission channel to the target CDP proxy. |
@@ -785,8 +836,9 @@ Universal CDP Components
 
 The following table describes network ports that must be opened to ensure proper communication of Veeam Universal CDP components with other backup components.
 
+Universal CDP Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Source workload | CDP proxy (source) | TCP | 33032 | Default port used as a transmission channel to the source CDP proxy. |
 | CDP proxy (source) | CDP proxy (target) | TCP | 33033 | Default port used as a transmission channel to the target CDP proxy. |
 | ESXi host (target) | TCP | 902 | Default VMware port used for data transfer. Used during initial synchronization and restore operations. |
@@ -826,8 +878,9 @@ The following table describes network ports that must be opened to ensure proper
 
 Mount Server Connections
 
+Mount Server Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Mount server | Backup server | TCP | 443 | Port used to communicate with the backup server. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
 | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
@@ -841,8 +894,9 @@ Mount Server Connections
 
 Helper Appliance Connections
 
+Helper Appliance Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Helper appliance | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Helper appliance | ESXi server | TCP | 443 | Default port used for connections to the ESXi host if restore is performed over VIX API/vSphere Web Services.  [For VMware vSphere earlier than 6.5] Not required if vCenter connection is used. In VMware vSphere versions 6.5 and later, port 443 is required by vSphere Web Services. |
 | Backup server | Helper appliance | TCP | 22 | Default SSH port used as a control channel. |
@@ -852,8 +906,9 @@ Helper Appliance Connections
 
 Helper Host Connections
 
+Helper Host Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Helper host | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Helper host | ESXi server | TCP | 443 | Default port used for connections to the ESXi host if restore is performed over VIX API/vSphere Web Services.  [For VMware vSphere earlier than 6.5] Not required if vCenter connection is used. In VMware vSphere versions 6.5 and later, port 443 must also be open to vSphere Web Services. |
 | Backup server | Helper host | TCP | 22 | Default SSH port used as a control channel. |
@@ -865,8 +920,9 @@ Helper Host Connections
 
 Guest OS Connections
 
+Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | VM guest OS (Linux/Unix) | Helper appliance | TCP | 21 | Default port used for protocol control messages if FTP server is enabled. |
 | Helper appliance | VM guest OS (Linux/Unix) | TCP | 20 | Default port used for data transfer if FTP server is enabled. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a VM guest OS. |
@@ -879,8 +935,9 @@ Guest OS Connections
 
 Veeam vPower NFS Service
 
+Veeam vPower NFS Service
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Mount server running vPower NFS Service | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6161 | Default port used by the Veeam vPower NFS Service. |
 | ESXi host | Mount server running vPower NFS Service | TCP UDP | 111 | Standard port used by the port mapper service. |
@@ -893,8 +950,9 @@ SureBackup
 
 The following table describes network ports that must be opened to ensure proper communication between SureBackup components.
 
+SureBackup
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Proxy appliance | TCP | 443 | Port used for communication with the proxy appliance in the virtual lab. |
 | Applications on VMs in the virtual lab | — | — | Application-specific ports to perform port probing test. For example, to verify a DC, Veeam Backup & Replication probes port 389 for a response. |
 | Internet-facing proxy server | VMs in the virtual lab | TCP | 8080 | Port used to let VMs in the virtual lab access the Internet. |
@@ -907,8 +965,9 @@ SureReplica Recovery Verification
 
 The following table describes network ports that must be opened to ensure proper communication between SureReplica components.
 
+SureReplica Recovery Verification
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Proxy appliance | TCP | 443 | Port used for communication with the proxy appliance in the virtual lab. |
 | Applications on VMs in the virtual lab | — | — | Application-specific ports to perform port probing test. For example, to verify a DC, Veeam Backup & Replication probes port 389 for a response. |
 | Internet-facing proxy server | VMs in the virtual lab | TCP | 8080 | Port used to let VMs in the virtual lab access the Internet. |
@@ -917,8 +976,9 @@ Microsoft Active Directory Domain Controller Connections During Application Item
 
 The following table describes network ports that must be opened to ensure proper communication of the backup server with the Microsoft Active Directory VM during application-item restore.
 
+Microsoft Active Directory Domain Controller Connections During Application Item Restore
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Microsoft  Active Directory VM guest OS | TCP | 135 | Port used for communication between the domain controller and backup server. |
 | TCP, UDP | 389 | Port used for LDAP connections. |
 | TCP | 636, 3268, 3269 | Ports used for LDAP connections. |
@@ -927,8 +987,9 @@ Microsoft Exchange Server Connections During Application Item Restore
 
 The following table describes network ports that must be opened to ensure proper communication of the Veeam backup server with the Microsoft Exchange Server system during application-item restore.
 
+Microsoft Exchange Server Connections During Application Item Restore
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Microsoft Exchange 2003/2007 CAS Server | TCP | 80, 443 | Ports used for WebDAV connections. |
 | Microsoft Exchange 2010/2013/2016/2019 CAS Server | TCP | 443 | Port used for Microsoft Exchange Web Services Connections. |
 
@@ -936,29 +997,33 @@ Microsoft SQL Server Connections During Application Item Restore
 
 The following table describes network ports that must be opened to ensure proper communication of the backup server with the VM guest OS system during application-item restore.
 
+Microsoft SQL Server Connections During Application Item Restore
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Microsoft  SQL VM guest OS | TCP | 1433, 1434 and other | Ports used for communication with the Microsoft SQL Server installed inside the VM.  Port numbers depends on configuration of your Microsoft SQL server. For more information, see [this Microsoft article](https://msdn.microsoft.com/en-us/library/cc646023.aspx#BKMK_ssde). |
 | UDP | 1434 | Port used by the Microsoft SQL Server Browser service.  For more information, see [this Microsoft article](https://learn.microsoft.com/en-us/sql/tools/configuration-manager/sql-server-browser-service). |
 
 Restore to Amazon EC2
 
+Restore to Amazon EC2
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server or backup repository | Helper appliance | TCP | 22 | Port used as a communication channel to the helper appliance. |
 | TCP | 443 | Default redirector port. You can change the port in helper appliance settings. For details, see the Specify Helper Appliance section in [Restore to Amazon EC2](restore_amazon_proxy.md). |
 
 Restore to Google Cloud
 
+Restore to Google Cloud
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server or backup repository | Helper appliance | TCP | 22 | Port used as a communication channel to the helper appliance. |
 | TCP | 443 | Default redirector port. You can change the port in helper appliance settings. For details, see the Specify Helper Appliance section in [Restore to Google Cloud](restore_google_proxy_appliance.md). |
 
 Restore to Microsoft Azure
 
+Restore to Microsoft Azure
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Microsoft Azure Resource Manager service  (https://management.azure.com) | TCP | 443 | Port used for Azure resources management and deployment. |
 | Microsoft Entra ID  (https://login.microsoftonline.com) | TCP | 443 | Port used for Entra ID authentication. |
 | Certificate verification endpoints | TCP | 80 | Port used to verify the certificate status through the certificate verification endpoints (CRL URLs and OCSP servers).  These endpoints are subject to change. You can find the actual list of addresses in [this Microsoft article](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-CA-details?tabs=root-and-subordinate-cas-list#certificate-downloads-and-revocation-lists) or in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access   Make sure that the backup server can reach these verification endpoints. |
@@ -969,8 +1034,9 @@ Restore to Microsoft Azure
 
 Instant Recovery to Microsoft Azure
 
+Instant Recovery to Microsoft Azure
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Microsoft Azure Resource Manager service  (https://management.azure.com) | TCP | 443 | Port used for Azure Resources management and deployment.  Service Tag: AzureResourceManager |
 | Microsoft Azure storage account (Veeam packages upload)  (<storage-account>.queue.core.windows.net, <storage-account>.queue.storage.azure.net) | TCP | 443 | Port used to deliver Veeam components from the backup server to the temporary Azure VM used to create templates of Instant Recovery to Azure helper appliances.  Consider that the <storage-account> part of the address must be replaced with your actual storage account URL that can be found in the Azure management portal.  Service Tag: Storage |
 | Microsoft Azure storage account (message queues)  (<storage-account>.queue.core.windows.net, <storage-account>.queue.storage.azure.net) | TCP | 443 | Port used for communication with Instant Recovery to Azure helper appliances via Azure Message queues.  Consider that the <storage-account> part of the address must be replaced with your actual storage account URL that can be found in the Azure management portal. |
@@ -1025,7 +1091,6 @@ Veeam Plug-Ins for Enterprise Applications
 * [Connections for Veeam Plug-In for SAP MaxDB](plugins_sap_maxdb_preparation_ports.md)
 * [Connections for Veeam Plug-In for Microsoft SQL Server](ports_mssql.md)
 * [Connections for Veeam Plug-In for IBM Db2](db2_plugin_ports.md)
-
 * [Connections for Components in Veeam Plug-In Management Infrastructure](plan_and_manage_used_ports.md)
 
 MongoDB Backup
@@ -1045,7 +1110,6 @@ Kasten
 Virtualization Platforms
 
 * [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization Connections](https://helpcenter.veeam.com/docs/vbrhv/userguide/used_ports.html?ver=7)
-
 * [Veeam Plug-In for Nutanix AHV Connections](https://helpcenter.veeam.com/docs/vbahv/userguide/used_ports.html?ver=9)
 * [Veeam Plug-In for Proxmox VE Connections](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/used_ports.html?ver=3)
 
