@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_limitations.html"
-last_updated: "1/27/2026"
+last_updated: "2/17/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,12 +12,12 @@ product_version: "13.0.1.1071"
 
 When you plan to deploy and configure Veeam Backup for Microsoft Entra ID, keep in mind the following limitations and considerations.
 
-Infrastructure
+Backup Infrastructure
 
-* Veeam Backup for Microsoft Entra ID can use only the default general-purpose backup proxy. This proxy is deployed during Veeam Backup & Replication installation. If you delete or disable this proxy, Microsoft Entra ID tenant backup, log backup and backup copy functionalities will not be available. For more information on the architecture, see [Solution Architecture](entra_id_architecture.md).
-* One backup server can work only with one Microsoft Entra ID backup repository. For more information on the architecture, see [Solution Architecture](entra_id_architecture.md).
-* Veeam Backup for Microsoft Entra ID supports repositories running on PostgreSQL 14 and higher.
-* If you plan to store backed-up data in remote Microsoft Entra ID backup repositories, consider that only PostgreSQL password authentication is supported to connect to these repositories. For more information, see Connecting to Remote Microsoft Entra ID Backup Repository.
+* It is not recommended that you delete or disable the default [general-purpose backup proxy](entra_id_architecture.md#server) deployed during Veeam Backup & Replication installation. Otherwise, Veeam Backup for Microsoft Entra ID will not be able to perform tenant backup, log backup and backup copy operations.
+* Veeam Backup for Microsoft Entra ID does not support creation of more than one Microsoft Entra ID backup repository on the backup server.
+* Veeam Backup for Microsoft Entra ID supports storing backed-up tenant data in Microsoft Entra ID backup repositories running PostgreSQL 14 or higher.
+* Veeam Backup for Microsoft Entra ID supports only [PostgreSQL password authentication](https://www.postgresql.org/docs/current/auth-password.html) to connect to remote Microsoft Entra ID backup repositories. For more information, see [Connecting to Remote Microsoft Entra ID Backup Repository](entra_id_remote_repository_environment.md).
 
 Tenant Backup and Restore
 
