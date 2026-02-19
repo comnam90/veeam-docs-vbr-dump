@@ -3,7 +3,7 @@ title: "SAML Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider.html"
-last_updated: "11/19/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,9 +16,14 @@ SAML authentication scenario involves the following parties:
 
 * User that logs in to the Veeam Backup & Replication console or Veeam Backup & Replication Web UI.
 * Service provider (SP) — an application accessed by the user. In the Veeam backup infrastructure, the service provider is Veeam Backup & Replication.
-* Identity provider (IdP) — an external service (hosted on premises or in the public cloud) that facilitates SSO such as Active Directory Federation Services (AD FS), Microsoft Entra ID, Okta, Auth0, Keycloak, and so on. The IdP keeps user identity data in a user store (or attribute store). Upon requests from the SP, the IdP issues SAML authentication assertions, that is, identifies the user and provides the SP with the required information about the user.
+* Identity provider (IdP) — an external service (hosted on premises or in the public cloud) that facilitates SSO. The IdP keeps user identity data in a user store (or attribute store). Upon requests from the SP, the IdP issues SAML authentication assertions, that is, identifies the user and provides the SP with the required information about the user.
 
 The SP and IdP exchange information in the XML format in accordance with the [SAML V2.0 Standard](https://wiki.oasis-open.org/security/FrontPage#SAML_V2.0_Standard).
+
+|  |
+| --- |
+| Tip |
+| The list of tested SAML solutions includes the following vendor product lines:   * Active Directory Federation Services * Microsoft Entra ID * Okta * Auth0 * Keycloak * Cyberark * Thales * Entrust |
 
 How SAML Authentication Works
 
