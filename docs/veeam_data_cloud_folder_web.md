@@ -3,14 +3,14 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_folder_web.html"
-last_updated: "1/15/2026"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Step 4. Specify Object Storage Settings
 
 
-At the Container step of the wizard, specify the folder that will be used to store data, the storage consumption and the immutability period.
+At the Folder step of the wizard, specify the folder that will be used to store data, the storage consumption and the immutability period.
 
 1. To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
 2. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB.
