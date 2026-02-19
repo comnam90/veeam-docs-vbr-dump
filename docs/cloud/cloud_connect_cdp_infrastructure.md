@@ -3,7 +3,7 @@ title: "CDP Infrastructure in Veeam Cloud Connect"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_cdp_infrastructure.html"
-last_updated: "11/18/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -81,7 +81,7 @@ After the SP installs the I/O filter on the cluster, Veeam Backup & Replication 
 |  |
 | --- |
 | Note |
-| If you add a new organization VDC to the Cloud Director server after the I/O filter is installed on the existing VDCs, you must do the following:   1. Install the I/O filter on the newly added organization VDC. To do this, at the Organization VDC step of the I/O Filter Management wizard, select check boxes next to the VDC where the I/O filter must be present and finish the wizard. For details, see the [Select VDC Organizations](https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_io_filter_vdc.html?ver=13) section in the Veeam Backup & Replication User Guide. 2. Update properties of the cloud gateway through which the tenant who will use the newly added VDC connects to the SP. To do this, launch the Edit Cloud Gateway wizard for this cloud gateway, click Next at each step of the wizard and then click Finish at the Summary step of the wizard.   Once the SP completes these steps, the tenant can rescan the SP in the tenant Veeam backup console and start using the newly added VDC as a cloud host. |
+| If you add a new organization VDC to the Cloud Director server after the I/O filter is installed on the existing VDCs, you must do the following:   1. Install the I/O filter on the newly added organization VDC. To do this, at the Organization VDC step of the I/O Filter Management wizard, select check boxes next to the VDC where the I/O filter must be present and finish the wizard. For details, see the [Select VDC Organizations](https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_io_filter_vdc.html?ver=13) section in the Veeam Backup & Replication User Guide. 2. Create CDP target policy on the new organization VCD and mark it as CDP-ready. To do this, launch the Edit Tenant wizard for this tenant, click Next at each step of the wizard. At the Replica Resources step of the wizard, add new organization VDC as replication resource and then click Finish at the Summary step of the wizard. For details, see [Allocate Replication Resources](cloud_vcd_tenant_replication.md).   Once the SP completes these steps, the tenant can rescan the SP in the tenant Veeam backup console and start using the newly added VDC as a cloud host. |
 
 * [For CDP for VMware vSphere] On the tenant side, the I/O filter must be installed on the VMware vSphere cluster where VMs they plan to replicate reside. For details on how to install the filter, see the [Installing I/O Filter](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_io_filter_install.html?ver=120) section in the Veeam Backup & Replication User Guide.
 
