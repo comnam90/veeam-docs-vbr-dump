@@ -3,7 +3,7 @@ title: "Creating VM Backup Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_backup.html"
-last_updated: "11/11/2025"
+last_updated: "1/30/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -41,7 +41,7 @@ To create a backup job:
 1. Click Advanced job settings.
 2. On the Backup tab, specify advanced backup settings.
 
-* [If a simple backup repository is used as the cloud repository] Veeam Backup & Replication uses forward incremental backup method for backup chain creation. You can choose to periodically create synthetic full backups and active full backups. To create synthetic full backups periodically, select the Create synthetic full backups periodically on check box and specify when you want to create active full backups. To create active full backups periodically, select the Create active full backups periodically on check box and specify when you want to create active full backups.
+* [If a simple backup repository is used as the cloud repository] Veeam Backup & Replication uses forward incremental backup method for backup chain creation. You can choose to periodically create synthetic full backups and active full backups. To create synthetic full backups periodically, select the Create synthetic full backups periodically on check box and specify when you want to create synthetic full backups. To create active full backups periodically, select the Create active full backups periodically on check box and specify when you want to create active full backups.
 
 ![Creating VM Backup Jobs](images/cloud_backup_settings.webp)
 
