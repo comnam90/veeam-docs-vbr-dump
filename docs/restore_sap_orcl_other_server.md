@@ -3,7 +3,7 @@ title: "Restore to Another Server (System Copy)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sap_orcl_other_server.html"
-last_updated: "11/7/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -54,7 +54,7 @@ Select a backup to start the restore process:
 | --- |
 | Select backup to be used: 1. Backup1 2. Backup2 3. Backup3 Enter backup number: 3 The selected backup [Backup3] will be used for all restore operations. |
 
-1. Perform [restore to another server](#restore).
+1. Perform database restore. To learn more, see [Restore Oracle Databases](restore_sap_orcl.md).
 
 Restore to Another Server Using Credentials
 
@@ -86,7 +86,7 @@ Select a backup to start the restore process:
 | --- |
 | Select backup to be used: 1. Backup1 2. Backup2 3. Backup3 Enter backup number: 3 The selected backup [Backup3] will be used for all restore operations. |
 
-1. Perform [restore to another server](#restore).
+1. Perform database restore. To learn more, see [Restore Oracle Databases](restore_sap_orcl.md).
 
 Restore to Another Server Using Recovery Token
 
@@ -116,6 +116,6 @@ You can restore a database to another server using a recovery token generated in
 | --- |
 | Select backup to be used: 1. Backup1 2. Backup2 3. Backup3 Enter backup number: 3 The selected backup [Backup3] will be used for all restore operations. |
 
-1. Perform [restore to another server](#restore).
+1. Perform database restore. To learn more, see [Restore Oracle Databases](restore_sap_orcl.md).
 
 
