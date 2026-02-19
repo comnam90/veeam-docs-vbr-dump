@@ -3,7 +3,7 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html"
-last_updated: "2/6/2026"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,13 +16,14 @@ Installing and Using Veeam Backup & Replication
 
 The accounts used for installing and using Veeam Backup & Replication must have the following permissions.
 
+Installing and Using Veeam Backup & Replication
+
 | Account | Required Permission |
-| --- | --- |
 | Installation for Veeam Backup & Replication on Microsoft Windows | The account used to install the product must have the local Administrator permissions on the target machine. |
 | Installation for Veeam Backup & Replication on Linux from .ISO | The account used to install the product must have access to manage input/output and boot devices. If you install Veeam Backup & Replication on a VM, the account must also have permission to create virtual machines with attached disk images on the hypervisor level. |
 | Installation for Veeam Backup & Replication on Linux from .OVA | The account used to install the product must have permissions to deploy .OVA files. For details on the minimum required permissions, see the [Permissions Reference](https://helpcenter.veeam.com/docs/vbr/permissions/installation.html?ver=13). |
-| Veeam Backup & Replication Console Permissions | The account used to install the Veeam Backup & Replication console must have the local Administrator permissions on the machine where the console will be installed. After installation, users can have standard (non-administrative) privileges to connect to the console.  When connecting to backup server, the console automatically checks for updates. If the backup server has been updated (for example, after installing a private fix or upgrading to a new product version), or if any console program files or services are missing, the console prompts users to elevate their rights to administrator to complete the update process. After the update, users can connect to and use the console with standard user privileges.  [For recovery of Microsoft Windows VM guest OS files] If you plan to [save files to a new location](guest_restore_save.md#other), the user who launched the Veeam Backup & Replication console does not have permissions to read and write data to the new location, and the mount point is located on the same machine as the Veeam Backup & Replication console, check that the user has the SeBackupPrivilege and SeRestorePrivilege. For more information on where mount points are created, see [Mount Points and Restore Scenarios](guest_restore_scenarios.md).  Accounts that are members of the Protected Users Active Directory group cannot be used to access the backup server remotely over the Veeam Backup & Replication console. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group). |
-| [Veeam Backup & Replication Services](services_and_components.md) for Veeam Backup & Replication on Microsoft Windows | The account used to run the Veeam Backup & Replication Services must be the LocalSystem account or must have local Administrator permissions on the backup server.  These privileges are required because the services need access to the Veeam registry configuration, which is available only to privileged users. Some services also perform disk management operations, open ports in firewalls and perform other operations that require a high permission level. |
+| Veeam Backup & Replication Console Permissions | The account used to install the Veeam Backup & Replication console must have the local Administrator permissions on the machine where the console will be installed. After installation, users can have standard (non-administrative) privileges to connect to the console.  When connecting to backup server, the console automatically checks for updates. If the backup server has been updated (for example, after installing a private fix or upgrading to a new product version), or if any console program files or services are missing, the console prompts users to elevate their rights to administrator to complete the update process. After the update, users can connect to and use the console with standard user privileges.  [For recovery of Microsoft Windows VM guest OS files] If you plan to [save files to a new location](guest_restore_save.md#other), the user who launched the Veeam Backup & Replication console does not have permissions to read and write data to the new location, and the mount point is located on the same machine as the Veeam Backup & Replication console, check that the user has the SeBackupPrivilege and SeRestorePrivilege. For more information on where mount points are created, see [Mount Points and Restore Scenarios](guest_restore_scenarios.md). |
+| [Veeam Backup & Replication Services](services_and_components.md) for Veeam Backup & Replication on Microsoft Windows | The account [used to run the Veeam Backup & Replication Services](install_vbr_settings.md) must be the LocalSystem account or must have local Administrator permissions on the backup server.  These privileges are required because the services need access to the Veeam registry configuration, which is available only to privileged users. Some services also perform disk management operations, open ports in firewalls and perform other operations that require a high permission level.  Accounts that are a part of Active Directory must also have permissions to read the following AD attributes:   * userPrincipalName   Ensure that the used account has a valid userPrincipalName set in AD.   * userAccountControl * pwdLastSet * accountExpires * msDS-UserPasswordExpiryTimeComputed * tokenGroupsGlobalAndUniversal |
 | Microsoft SQL Server | You require different sets of Microsoft SQL permissions in the following cases:   * Installation (remote or local): current account needs CREATE ANY DATABASE permission on the SQL server level. After database creation this account automatically gets a db\_owner role and can perform all operations with the database. If the current account does not have this permission, a Database Administrator may create an empty database in advance and grant the db\_owner role to the account that will be used for installing Veeam Backup & Replication. * Upgrade: current account should have sufficient permissions for that database. To grant these permissions through role assignment, it is recommended that you use the account with db\_owner role. * Operation: the account used to run Veeam Backup Service requires db\_datareader and db\_datawriter roles as well as permissions to execute stored procedures for the configuration database on the Microsoft SQL Server. Alternatively, you can assign db\_owner role for this database to the service account.   For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/server-level-roles?view=sql-server-ver15). |
 | PostgreSQL | The account used for installation, upgrade and operation requires superuser role. |
 
@@ -30,8 +31,9 @@ Using Virtualization Servers and Hosts
 
 The following permissions and roles are required to work with virtualization servers and hosts during data protection tasks.
 
+Using Virtualization Servers and Hosts
+
 | Component | Required Permission or Role |
-| --- | --- |
 | Source/Target VMware vSphere Host | Root permissions on the ESXi host. When adding the credentials, use the MACHINE\USER format for local accounts or DOMAIN\USER format for domain accounts.  If the vCenter Server is added to the backup infrastructure, an account that has administrative permissions is required. You can either grant the Administrator role to the account or configure granular vCenter Server permissions for certain Veeam Backup & Replication operations in the VMware vSphere environment. For more information, see the [Permissions Reference](https://helpcenter.veeam.com/docs/vbr/permissions/installation.html?ver=13). |
 | VMware Cloud Director Server | The account that you specify when adding a server must have system administrator privileges on VMware Cloud Director. You cannot use the organization administrator account to add the Cloud Director server. |
 | Source / Target Hyper-V host or cluster | Administrator permissions. |
@@ -58,8 +60,9 @@ Group Managed Service Accounts (gMSAs) must also have the following permissions:
 
 Other permissions depend on applications that you back up. You can find permissions for backup operations in the following table. For restore operation permissions, see Permissions sections in the [Veeam Explorers User Guide](https://helpcenter.veeam.com/docs/vbr/explorers/explorers_introduction.html?ver=13).
 
+Performing Guest Processing
+
 | Application | Required Permission |
-| --- | --- |
 | Microsoft SQL Server | To back up Microsoft SQL Server data, the user whose account you plan to use must be:   * Local Administrator on the target VM. * System administrator (has the Sysadmin role) on the target Microsoft SQL Server.   If you need to provide minimal permissions, the account must be assigned the following roles and permissions:   * SQL Server instance-level role: public and dbcreator. * Database-level roles and roles for the model system database: db\_backupoperator, db\_denydatareader, public; for the master system database — db\_backupoperator, db\_datareader, public;  for the msdb system database — db\_backupoperator, db\_datareader, public, db\_datawriter. * Securables: view any definition, view server state, connect SQL. |
 | Microsoft Active Directory | To back up Microsoft Active Directory data, the account must be a member of the built-in Administrators group. |
 | Microsoft Exchange | To back up Microsoft Exchange data, the account must have the local Administrator permissions on the machine where Microsoft Exchange is installed. |
@@ -100,8 +103,9 @@ Microsoft Azure Compute account is required to restore workloads to Microsoft Az
 
 The following permissions are required for adding a Microsoft Azure Compute account.
 
+Adding Microsoft Azure Compute Accounts
+
 | Microsoft Entra ID (formerly Azure Active Directory) Application | Permissions |
-| --- | --- |
 | New (select the Create a new account option at the [Subscription](restore_azure_acc_account.md) step of the wizard) | The Microsoft Entra ID user account where the application will be created must have the following privileges:   * To register applications. For this, you can assign the Global Administrator privileges to the user or enable the Users can register applications option for the user in Azure portal. For details, see [Microsoft Azure Docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-how-applications-are-added). * To assign a role on the subscription level for the registered application. For this, you can use the Owner\* role or if the Owner role cannot be used, you can create a custom role with minimal permissions. To learn how to create a custom role, see [Creating Custom Role for Azure and Azure Stack Hub Accounts](azure_custom_role.md#hub_new).   \* - When you assign a privileged role, like Owner, using the Azure Portal, the default conditions can be added to this role assignment. With these default conditions, adding the Compute account will fail. To avoid this issue, select the Allow user to assign all roles (highly privileged) option. For more information on conditions, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal#delegate-condition). |
 | Existing (select the Use the existing account option at the [Subscription](restore_azure_acc_account.md) step of the wizard) | The application must have the Contributor role privilege for the selected subscription. If you restore workloads to Microsoft Azure Stack Hub and cannot use the Contributor role, you can create a custom role with minimal permissions. To learn how to create a custom role, see [Creating Custom Role for Azure and Azure Stack Hub Accounts](azure_custom_role.md#hub_ex). |
 
@@ -307,8 +311,9 @@ The account used to connect to NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo Think
 
 CDOT (VMware Integration)
 
+CDOT (VMware Integration)
+
 | Command/Directory | Access/Query Level |
-| --- | --- |
 | DEFAULT | readonly |
 | cluster | readonly |
 | metrocluster | readonly |
@@ -333,8 +338,9 @@ CDOT (VMware Integration)
 
 Only as SVM (VMware Integration)
 
+Only as SVM (VMware Integration)
+
 | Command/Directory | Access/Query Level |
-| --- | --- |
 | DEFAULT | none |
 | lun | all |
 | lun igroup | all |
@@ -355,8 +361,9 @@ Only as SVM (VMware Integration)
 
 CDOT (NAS Backup Integration)
 
+CDOT (NAS Backup Integration)
+
 | Command/Directory | Access/Query Level |
-| --- | --- |
 | DEFAULT | readonly |
 | security | readonly |
 | security login | readonly |
@@ -366,8 +373,9 @@ CDOT (NAS Backup Integration)
 
 Only as SVM (NAS Backup Integration)
 
+Only as SVM (NAS Backup Integration)
+
 | Command/Directory | Access/Query Level |
-| --- | --- |
 | DEFAULT | none |
 | lun | readonly |
 | network | readonly |
@@ -381,8 +389,9 @@ Only as SVM (NAS Backup Integration)
 
 CDOT (Veeam Agent Integration)
 
+CDOT (Veeam Agent Integration)
+
 | Command/Directory | Access/Query Level |
-| --- | --- |
 | cluster | readonly |
 | lun | all |
 | metrocluster | readonly |
@@ -396,8 +405,9 @@ CDOT (Veeam Agent Integration)
 
 Only as SVM (Veeam Agent Integration)
 
+Only as SVM (Veeam Agent Integration)
+
 | Command/Directory | Access/Query Level |
-| --- | --- |
 | lun | all |
 | network | readonly |
 | version | readonly |
