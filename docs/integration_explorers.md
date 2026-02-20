@@ -3,7 +3,7 @@ title: "Restoring Application Items"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_explorers.html"
-last_updated: "2/18/2026"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
