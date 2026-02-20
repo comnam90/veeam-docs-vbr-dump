@@ -3,7 +3,7 @@ title: "Backup of ACLs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_unix_acl.html"
-last_updated: "12/2/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,6 +24,8 @@ Considerations and Limitations
 * During file-level restore, you can restore only NFSv4 ACLs.
 * Restoring NFSv4 ACLs requires NFSv4 to be configured on the Veeam Agent machine. For information on enabling NFSv4 in IBM AIX, see [this Veeam KB article](https://veeam.com/kb4713).
 
-* You cannot restore ACLs when y ou perform guest file restore in Veeam Backup & Replication.
+* If you perform file-level restore in the recovery environment, the backup is mounted using the NFSv3 protocol. As a result, restoring ACLs from such backup mount will not be possible.
+
+* You cannot restore ACLs when you perform guest file restore in Veeam Backup & Replication.
 
 
