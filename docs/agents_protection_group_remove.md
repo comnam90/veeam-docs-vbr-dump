@@ -3,7 +3,7 @@ title: "Removing Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_remove.html"
-last_updated: "9/17/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,12 +18,12 @@ Backups created for computers that were included in the removed protection group
 
 |  |
 | --- |
-| ![Removing Protection Group](images/icon_note.webp) NOTE |
+| NOTE |
 | Consider the following:   * You cannot remove a protection group if the entire protection group or a separate computer included in this protection group is added to a Veeam Agent backup job. * You cannot remove default protection groups, such as Manually Added, Unmanaged, and so on. |
 
 |  |
 | --- |
-| ![Removing Protection Group](images/icon_tip.webp) TIP |
+| TIP |
 | You can also remove separate computers from protection groups. To learn more, see [Removing Computer from Protection Group](agents_protected_computer_remove.md). |
 
 To remove a protection group:

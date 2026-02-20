@@ -3,7 +3,7 @@ title: "Working with Protection Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_tasks.html"
-last_updated: "5/26/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 |  |
 | --- |
-| ![Working with Protection Groups](images/icon_important.webp) IMPORTANT |
+| IMPORTANT |
 | Protection groups for pre-installed Veeam Agents offer a limited set of operations. To learn more, see [Working with Protection Groups for Pre-Installed Veeam Agents](#flex). |
 
 In Veeam Backup & Replication, Veeam Agent computers are organized into protection groups. You can perform the following operations with protection groups:

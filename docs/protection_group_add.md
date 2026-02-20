@@ -3,7 +3,7 @@ title: "Creating Protection Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_add.html"
-last_updated: "11/3/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,7 +32,7 @@ You can create protection groups of the following types:
 | NOTE |
 | You can add a failover cluster only to a protection group that includes Microsoft Active Directory objects. |
 
-* [Computers from CSV file](protection_group_csv_file.md) — create a protection group for these objects if you want to add to the protection scope computers listed in a CSV or TXT file that resides on the Veeam Backup & Replication server. As well as protection groups that include Active Directory containers, protection groups of this type are also dynamic. For example, if a new computer appears in the file after the protection job is created, within the next rescan session, Veeam Backup & Replication will automatically update the protection group settings to include the added computer.
+* [Computers from CSV file](protection_group_csv_file.md) — create a protection group for these objects if you want to add to the protection scope computers listed in a CSV or TXT file that resides on the Veeam Backup & Replication server. Similar to protection groups that include Active Directory containers, protection groups of this type are also dynamic. For example, if a new computer appears in the file after the protection job is created, within the next rescan session, Veeam Backup & Replication will automatically update the protection group settings to include the added computer.
 * [Computers with pre-installed backup agents](protection_group_pre_installed.md) — create a protection group for these objects if you want to create a protection group for pre-installed Veeam Agents. This protection group will include any number of computers that use a certain temporary certificate to connect to the Veeam backup server. A temporary certificate is a unique identification number generated for each protection group that is available among other connection settings in a configuration file. You will obtain the configuration file along with Veeam Agent setup files after the protection group is created. Using these setup files, you must deploy Veeam Agent and apply connection settings from the configuration file on the Veeam Agent computer. After that, Veeam Agent connects to the Veeam backup and Veeam Backup & Replication includes the Veeam Agent computer in the protection group.
 
 The Computers with pre-installed backup agents option is the only applicable option for the following objects: Mac computers with pre-installed Veeam Agent for Mac and Linux computers with pre-installed Veeam Agent for Linux on Power.
@@ -40,7 +40,7 @@ The Computers with pre-installed backup agents option is the only applicable opt
 |  |
 | --- |
 | IMPORTANT |
-| Make sure that the setup and configuration files are stored in a secure place. If a third-party uncovers the files, they can use any host to connect to the protection group, receive the configuration options, create backups and perform other actions. |
+| Make sure that the setup and configuration files are stored in a secure location. If a third party gains access to these files, they can use any host to connect to the protection group, obtain the configuration options, create backups and perform other actions. |
 
 To learn more about Veeam Agents deployment, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md).
 

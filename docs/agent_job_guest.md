@@ -3,7 +3,7 @@ title: "Step 10. Specify Guest Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest.html"
-last_updated: "7/29/2025"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -55,7 +55,7 @@ Keep in mind that to specify credentials for a particular computer, you must inc
 * [Processing settings for Oracle database system](agent_job_guest_oracle.md)
 * [Processing settings for MySQL database system](agent_job_guest_mysql.md)
 * [Processing settings for PostgreSQL database system](agent_job_guest_postgresql.md)
-* [Backup job and snapshot scripts](agent_job_guest_scripts.md)
+* [Backup job and snapshot script settings](agent_job_guest_scripts.md)
 
 Configuring File Indexing
 
