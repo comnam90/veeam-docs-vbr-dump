@@ -3,7 +3,7 @@ title: "Rescanning Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_rescan.html"
-last_updated: "9/1/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,7 @@ You can rescan a protection group configured in the inventory. When you perform 
 
 |  |
 | --- |
-| ![Rescanning Protection Group](images/icon_note.webp) NOTE |
+| NOTE |
 | You cannot rescan a protection group for pre-installed Veeam Agents. To learn more, see [Protection Group Types](agents_protection_groups_types.md). |
 
 During the rescan operation, Veeam Backup & Replication starts the rescan job in the same way as in case of scheduled discovery. The rescan job connects to computers included in the protection group and performs on these computers operations specified in the protection group settings. For example, if Veeam Backup & Replication is set up to automatically install Veeam Agent on protected computers during discovery, you can use the rescan operation to deploy Veeam Agent to computers that have appeared in the protection group after the previous scheduled rescan job session finished.
