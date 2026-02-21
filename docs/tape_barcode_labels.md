@@ -3,7 +3,7 @@ title: "Tape Barcode Labels"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_barcode_labels.html"
-last_updated: "5/20/2025"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,8 +21,9 @@ Each barcode label used for marking LTO tapes supported by Veeam Backup & Replic
 
 LTO data tapes used in devices supported by Veeam Backup & Replication may have the following media ID:
 
+Tape Barcode Labels
+
 | Media ID | Description |
-| --- | --- |
 | L3 | Generation 3 |
 | L4 | Generation 4 |
 | L5 | Generation 5 |
@@ -30,6 +31,7 @@ LTO data tapes used in devices supported by Veeam Backup & Replication may have 
 | L7 | Generation 7 |
 | L8 | Generation 8 |
 | L9 | Generation 9 |
+| LA | Generation 10 |
 | LT | Generation 3 WORM |
 | LU | Generation 4 WORM |
 | LV | Generation 5 WORM |
@@ -37,6 +39,7 @@ LTO data tapes used in devices supported by Veeam Backup & Replication may have 
 | LX | Generation 7 WORM |
 | LY | Generation 8 WORM |
 | LZ | Generation 9 WORM |
+| LH | Generation 10 WORM |
 | CU | Universal cleaning |
 
 Cleaning and diagnostic tapes use unique labels to distinguish them from data tapes. The first three alphanumeric characters in the volume ID indicate the tape type:
