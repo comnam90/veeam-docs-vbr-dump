@@ -3,7 +3,7 @@ title: "Direct SAN Access"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_san_access.html"
-last_updated: "12/3/2025"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -44,7 +44,7 @@ The volumes must be visible in Disk Management but must not be initialized by th
 
 Limitations for the Direct SAN Access Mode
 
-* The [Veeam Infrastructure Appliance](linux_infrastructure.md) does not support DirectSAN.
+* The [Veeam Infrastructure Appliance](linux_infrastructure.md) does not support DirectSAN. For more information on transport mode availability and protocol support, see [Transport Mode Limitations](transport_modes.md#limitations).
 * The Direct SAN access transport mode can be used to restore only thick VM disks.
 * The transport mode is used for the entire VM, not for the virtual disk. It means that one VM can be processed in one transport mode only. If there are VM disks that cannot be processed in the Direct SAN access transport mode, then the rest of the disks also cannot be processed in this transport mode.
 
