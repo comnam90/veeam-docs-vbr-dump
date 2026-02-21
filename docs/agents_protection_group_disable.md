@@ -3,7 +3,7 @@ title: "Disabling Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_disable.html"
-last_updated: "9/1/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,7 @@ Disabling a protection group does not affect processing of Veeam Agent computers
 
 |  |
 | --- |
-| ![Disabling Protection Group](images/icon_note.webp) NOTE |
+| NOTE |
 | You cannot disable default protection groups that act as filters used to display protected computers of a specific type: Unmanaged, Out of Date, Offline and Untrusted. |
 
 To disable automatic discovery for the protection group:

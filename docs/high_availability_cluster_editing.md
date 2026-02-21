@@ -2,8 +2,8 @@
 title: "Editing High Availability Cluster Settings"
 product: "vbr"
 doc_type: "userguide"
-source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availbility_cluster_editing.html"
-last_updated: "11/14/2025"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_cluster_editing.html"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 

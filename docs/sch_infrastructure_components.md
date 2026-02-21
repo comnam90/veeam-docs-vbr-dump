@@ -3,7 +3,7 @@ title: "Solution Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_infrastructure_components.html"
-last_updated: "2/11/2026"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -24,7 +24,7 @@ A Scale Computing HyperCore cluster is a cluster node containing one or more ser
 
 Backup Server
 
-A backup server is a Windows-based physical or virtual machine on which Veeam Backup & Replication is installed. The backup server is the configuration, administration and management core of the backup infrastructure. It coordinates backup and restore operations, controls job scheduling and manages resource allocation.
+A backup server is a physical or virtual machine on which Veeam Backup & Replication is installed. The backup server is the configuration, administration and management core of the backup infrastructure. It coordinates backup and restore operations, controls job scheduling and manages resource allocation.
 
 Plug-in
 

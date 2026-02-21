@@ -3,7 +3,7 @@ title: "SAML Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider.html"
-last_updated: "2/18/2026"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,7 +23,7 @@ The SP and IdP exchange information in the XML format in accordance with the [SA
 |  |
 | --- |
 | Tip |
-| The list of tested SAML solutions includes the following vendor product lines:   * Active Directory Federation Services * Microsoft Entra ID * Okta * Auth0 * Keycloak * Cyberark * Thales * Entrust |
+| The list of tested identity providers includes the following vendor product lines:   * Active Directory Federation Services * Microsoft Entra ID * Okta * Auth0 * Keycloak * Cyberark * Thales * Entrust |
 
 How SAML Authentication Works
 

@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_used_ports.html"
-last_updated: "2/6/2026"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,9 +16,10 @@ Workers
 
 The following table describes network ports that must be open to ensure proper communication of workers with other backup infrastructure components.
 
+Workers
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
-| Worker | Backup server | TCP | 19000 | Used to communicate with the Veeam Backup & Replication server. |
+| Worker | Backup server | TCP | 10006 | Used to communicate with the Veeam Backup & Replication server. |
 | oVirt KVM Manager | TCP/HTTPS | 443 | Used to communicate with the REST API service running on the oVirt KVM Manager. |
 | oVirt KVM Manager | TCP | 54323 | Used to communicate with oVirt KVM Manager (hosted engine). |
 | oVirt KVM host | TCP | 54322 | Used to communicate with oVirt KVM hosts. |
@@ -29,14 +30,16 @@ Backup Server
 
 The following table describes network ports that must be open to ensure proper communication of the backup server with other backup infrastructure components.
 
+Backup Server
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam Backup & Replication console | Backup server | TCP/HTTPS | 443 | Used to communicate with the Platform Service REST API. |
 | Backup server | FLR helper appliance | TCP | 22 | Used to connect to the helper appliance during file-level restore. |
 | Backup server | TCP/HTTPS | 6172 | Used by the Platform Service to enable communication with the Veeam Backup & Replication database. |
 | oVirt KVM Manager | TCP/HTTPS | 443 | Used to communicate with the REST API service running on the oVirt KVM Manager. |
 | oVirt KVM Manager | TCP | 54323 | Used to communicate with the oVirt KVM Manager (hosted engine). |
 | oVirt KVM host | TCP | 54322 | Used to communicate with oVirt KVM hosts. |
+| Worker | TCP | 19000 | Used to communicate with the workers. |
 
 |  |
 | --- |

@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_limitations.html"
-last_updated: "2/11/2026"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,7 +17,8 @@ Configuration
 When configuring Veeam Plug-in for Scale Computing HyperCore, consider the following:
 
 * Veeam Plug-in for Scale Computing HyperCore does not support user accounts with OpenID Connect authentication to access the Scale Computing HyperCore cluster.
-* The Scale Computing HyperCore cluster must be able to establish a direct IP connection to the backup server. Connections through NAT gateways are not supported.
+* The Scale Computing HyperCore cluster must be able to establish a direct IP connection to the backup server. Connections through NAT gateways are not supported. Veeam Plug-in for Proxmox VE does not support the IPv6 protocol.
+* Veeam Plug-in for Scale Computing HyperCore does not support the IPv6 protocol.
 
 * After you make changes to your Scale Computing HyperCore environment (for example, you migrate a VM between cluster nodes), these changes may not appear in Veeam Backup & Replication immediately — the data synchronization process between the backup server and the Scale Computing HyperCore cluster may take up to 15 minutes to complete. You can speed up the data synchronization process by [rescanning the Scale Computing HyperCore cluster](sch_server_rescan.md).
 

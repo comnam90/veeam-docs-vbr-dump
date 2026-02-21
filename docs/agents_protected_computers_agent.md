@@ -1,13 +1,13 @@
 ---
-title: "Managing Veeam Agent"
+title: "Managing Veeam Agents"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_agent.html"
-last_updated: "11/4/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
-# Managing Veeam Agent
+# Managing Veeam Agents
 
 
 You can use the backup console to manage the following Veeam Agents on a specific computer in the inventory:
