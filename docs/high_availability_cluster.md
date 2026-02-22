@@ -3,7 +3,7 @@ title: "High Availability (HA) Cluster"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_cluster.html"
-last_updated: "1/13/2026"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,6 +32,6 @@ In This Section
 * [Connecting to High Availability Cluster](high_availability_cluster_connect.md)
 * [Switchover](high_availability_switchover.md)
 * [Failover](high_availability_failover.md)
-* [Managing High Availbility Cluster](high_availbilitu_cluster_management.md)
+* [Managing High Availability Cluster](high_availability_cluster_management.md)
 
 
