@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_configuration_byb.html"
-last_updated: "2/17/2026"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -67,7 +67,7 @@ To create the .keytab file, do the following:
 
 |  |
 | --- |
-| New-ADComputer -Name <computer account name> -AccountPassword (Read-Host -AsSecureString "<computer account password>") -KerberosEncryptionType AES256 -PasswordNeverExpires $true -ServicePrincipalNames HOST/<DNS cluster hostname>,HOST/<DNS cluster hostname>.<domain name> -Path "OU=<organizational unit name>,DC=<first label of the domain name>,DC=<second label of the domain name>" |
+| New-ADComputer -Name <computer account name> -AccountPassword (Read-Host "Enter your password" -AsSecureString) -KerberosEncryptionType AES256 -PasswordNeverExpires $true -ServicePrincipalNames HOST/<DNS cluster hostname>,HOST/<DNS cluster hostname>.<domain name> -Path "OU=<organizational unit name>,DC=<first label of the domain name>,DC=<second label of the domain name>" |
 
 * Specifying the password directly in the script.
 
