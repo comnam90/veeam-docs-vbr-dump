@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "2/12/2026"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -48,6 +48,7 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * UEFI Secure Boot must be enabled.
 
 * SSDs are strongly recommended for machines with the backup repository or hardened repository role assigned.
+* Disks that are accessible through multipath cannot be used for the Veeam Infrastructure Appliance installation.
 * Veeam Infrastructure Appliance installation and initial configuration support only the English US keyboard layout.
 * When you install Veeam Infrastructure Appliance, the Rocky Linux operating system is installed with predefined settings, including volume partitioning and user account creation. After installation is complete, you need to proceed with the initial configuration of Veeam Infrastructure Appliance, which includes setting up default user accounts and basic system settings.
 * After you deploy a Veeam Infrastructure Appliance, adding new storage devices or resizing existing ones is not supported.

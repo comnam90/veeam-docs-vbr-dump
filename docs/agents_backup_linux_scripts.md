@@ -3,7 +3,7 @@ title: "Backup Job and Snapshot Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_linux_scripts.html"
-last_updated: "11/17/2025"
+last_updated: "2/19/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,6 +27,10 @@ If you use Veeam Backup & Replication on Windows, you can place the script files
 * Veeam Agent supports scripts in the .sh file format only.
 * Scripts must have UNIX line endings (LF).
 * Script settings are enabled at the backup job level. If you want to configure multiple backup jobs, you can specify individual scripts for each job.
+
+* Scripts are executed under the root user account.
+* The script is considered to be executed successfully if a "0" is returned.
+
 * If you use relative paths in your scripts, during script execution such paths will refer to the root directory. For example, the script may have an output that must be saved to a new file. If you specify a relative path to that file or only a file name, the file will be created in the root directory. To specify a different location for a file, use a full absolute path.
 
 Pre-Freeze and Post-Thaw Scripts
@@ -35,7 +39,7 @@ Veeam Agent runs these scripts before and after creating a snapshot of the backe
 
 You can specify pre-freeze and post-thaw script settings at the Guest Processing step of the New Agent Backup Job wizard. To learn more, see [Backup Job and Snapshot Scripts](agent_job_guest_scripts.md).
 
-During the backup job session, Veeam Backup & Replication uploads the scripts to each Veeam Agent computer added to the backup job and executes them on these computers. The scripts run in the same way as in the standalone version of Veeam Agent. To learn more, see the [Backup Job Scripts](https://helpcenter.veeam.com/docs/agentforlinux/userguide/backup_job_script.html?ver=13) section in the Veeam Agent for Linux User Guide.
+Veeam Backup & Replication uploads the scripts to the /var/lib/veeam/scripts/<backuз job ID>/<script type>/ directory on each Veeam Agent computer included in the backup job. Veeam Agent executes the scripts on these computers from the same directory under the root user.
 
 Pre-Job and Post-Job Scripts on Veeam Agent Computer
 
@@ -43,7 +47,7 @@ Veeam Agent runs these scripts before the backup job starts and after the backup
 
 You can specify backup job script settings at the Guest Processing step of the New Agent Backup Job wizard. To learn more, see [Backup Job and Snapshot Scripts](agent_job_guest_scripts.md).
 
-During the backup job session, Veeam Backup & Replication uploads the scripts to each Veeam Agent computer added to the backup job and executes them on these computers. The scripts run in the same way as in the standalone version of Veeam Agent. To learn more, see the [Backup Job Scripts](https://helpcenter.veeam.com/docs/agentforlinux/userguide/backup_job_script.html?ver=13) section in the Veeam Agent for Linux User Guide.
+Veeam Backup & Replication uploads the scripts to the /var/lib/veeam/scripts/<backuз job ID>/<script type>/ directory on each Veeam Agent computer included in the backup job. Veeam Agent executes the scripts on these computers from the same directory under the root user.
 
 Pre-Job and Post-Job Scripts on Backup Server
 
@@ -63,5 +67,10 @@ If you specify both pre-job and post-job scripts that run on the backup server a
 4. Post-thaw script
 5. Post-job script on the Veeam Agent computer
 6. Post-job script on the backup server
+
+Related Topics
+
+* [Backup Job and Snapshot Script Settings](agent_job_guest_scripts.md) (backup job)
+* [Backup Job and Snapshot Script Settings](agent_policy_guest_scripts_linux.md) (backup policy)
 
 
