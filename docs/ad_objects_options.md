@@ -3,7 +3,7 @@ title: "Step 6. Specify Discovery and Deployment Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ad_objects_options.html"
-last_updated: "11/13/2025"
+last_updated: "2/11/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,7 +30,7 @@ To specify discovery and deployment options:
 
 |  |
 | --- |
-| ![Step 6. Specify Discovery and Deployment Options](images/icon_note.webp) NOTE |
+| NOTE |
 | You cannot create a protection group without defining schedule for automatic discovery. However, you can disable automatic discovery for a specific protection group, if needed. To learn more, see [Disabling Protection Group](agents_protection_group_disable.md). |
 
 1. In the Deployment section, from the Distribution server list, select a server that you plan to use as a distribution server. Veeam Backup & Replication will use the distribution server to upload Veeam Agent setup files to computers added to the protection group. By default, Veeam Backup & Replication assigns the distribution server role to the backup server. To learn more, see [Distribution Server](agents_infrastructure.md#distribution).
