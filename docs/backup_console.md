@@ -3,7 +3,7 @@ title: "Backup & Replication Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_console.html"
-last_updated: "12/22/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,7 +36,7 @@ If you have multiple backup servers in the infrastructure, you can connect to an
 |  |
 | --- |
 | Important |
-| You cannot use the same console to connect to backup servers with different versions of Veeam Backup & Replication. Note this if you have more than one backup server in your backup environment, and these backup servers run different versions of Veeam Backup & Replication. For example, if one of your backup servers run version 11, and another backup server runs version 12.1.2, you will need to use 2 separate consoles for connecting to these servers. |
+| Note the following:   * You cannot use the same console to connect to backup servers on different operating systems. For example, you cannot use the same console to connect to Windows-based and Linux-based backup servers. * You cannot use the same console to connect to backup servers with different versions of Veeam Backup & Replication. Note this if you have more than one backup server in your backup environment, and these backup servers run different versions of Veeam Backup & Replication. For example, if one of your backup servers run version 13, and another backup server runs version 12.3.2, you will need to use 2 separate consoles for connecting to these servers. |
 
 The console supports automatic update. Every time you connect to the backup server locally or remotely, the console checks for updates. If the backup server has updates installed, the console will be updated automatically.
 
