@@ -3,7 +3,7 @@ title: "Maintenance Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_advanced_main_mac.html"
-last_updated: "7/29/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,7 +22,7 @@ If Veeam Agent does not create new restore points for the backup, the backup wil
 
 By default, the deleted items data retention period is 30 days. Do not set the deleted items retention period to 1 day or a similar short interval. Otherwise, the backup policy may not work as expected and remove data that you still require.
 
-1. If you selected object storage as a target for your backup, Veeam Backup & Replication will display the setting that allows you to schedule a regular backup health check. To learn more, see [Scheduling Health Check](#hc).
+If you selected object storage as a target for your backup, Veeam Backup & Replication will display the setting that allows you to schedule a regular backup health check. To learn more, see [Scheduling Health Check](#hc).
 
 ![Maintenance Settings](images/agent_policy_settings_maintain_mac.webp)
 
