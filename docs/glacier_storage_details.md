@@ -3,7 +3,7 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/glacier_storage_details.html"
-last_updated: "12/29/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,7 +23,7 @@ At the Bucket step of the wizard, specify Amazon S3 bucket and folder that will 
 If the FIPS-compliant operation mode is enabled and the bucket you want to add is non-FIPS compliant, the warning will be displayed. For more information, see [FIPS Compliance](fips_compliance.md).
 
 1. To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
-2. To prohibit deletion of blocks of data from object storage, select the Make backups immutable for the entire duration of their retention policy check box. The immutability period will be equal to the retention period (if any) of the data blocks. All the types of files that are eligible for archive storage can be made immutable. For more information on the immutability feature and the retention policy for each file type, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
+2. To prohibit deletion of blocks of data from object storage, select the Make backups immutable for the entire duration of their retention policy check box. The immutability period will be equal to the retention period (if any) of the data blocks. All the types of files that are eligible for archive storage can be made immutable. For more information on the immutability feature and the retention policy for each file type, see [Immutability for Archive Tier](immutability_archive_tier.md).
 
 Keep in mind that to use immutability, you must enable the Object Lock and Versioning features on your S3 bucket at the time when you create the bucket. For more information, see [Enabling Immutability](immutability_os_enable.md).
 
