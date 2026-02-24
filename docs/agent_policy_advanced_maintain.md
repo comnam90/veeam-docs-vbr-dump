@@ -3,7 +3,7 @@ title: "Maintenance Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_advanced_maintain.html"
-last_updated: "2/20/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,6 +30,8 @@ For Veeam Agent backup policies, the health check process is the same as for Vee
 | --- |
 | NOTE |
 | For object storage, Veeam Agent offers a special health check mechanism as default. To run the health check for object storage, enable the Perform backup files health check option in the Storage-level corruption guard section and specify the health check schedule.  You can also switch from the health check for object storage to the standard health check. To do so, select the Verify content of each object in backup check box in the backup policy settings. Keep in mind that enabling this setting may result in additional charges from your object storage provider. |
+
+1. [For backup policies targeted at a Veeam backup repository or cloud repository] Select the Remove deleted items data after check box and specify the number of days for which you want to keep the backup created with the backup policy in the target location.
 
 If Veeam Agent does not create new restore points for the backup, the backup will remain in the target location for the period that you have specified. When this period is over, the backup will be removed from the target location. For more information, see the [Retention Policy for Outdated Backups](https://helpcenter.veeam.com/docs/agentforwindows/userguide/retention_deleted_items.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
 
