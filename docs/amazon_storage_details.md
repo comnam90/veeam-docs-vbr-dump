@@ -3,7 +3,7 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_details.html"
-last_updated: "11/21/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -42,12 +42,10 @@ To prohibit deletion of blocks of data from object storage, select the Make rece
 |  |
 | --- |
 | Important |
-| Consider the following:   * If the job retention exceeds the immutability period, the actual retention is counted as job retention policy + Block Generation period. * If the immutability period exceeds the job retention period, the actual retention is counted as immutability period + Block Generation period.   For more information, see [How Immutability Works](hiw_immutability_os.md), |
+| Consider the following:   * If the job retention exceeds the immutability period, the actual retention is counted as job retention policy + Block Generation period. * If the immutability period exceeds the job retention period, the actual retention is counted as immutability period + Block Generation period. * The default immutability period is 30 days. You can set the immutability period to different values in the Veeam Backup & Replication UI. The minimum immutability period is 1 day, and the maximum is 999 days.   For more information, see [How Immutability Works](hiw_immutability_os.md). |
 
 * Select For the minimum immutability period only if you want to specify the immutability period explicitly. The backup job retention will be skipped.
 * Next to the Minimum immutability duration option, provide the necessary value.
-
-Note that the maximum immutability period you can set in the Veeam Backup & Replication UI is 999 days. If you want to set immutability to a longer period, use the [Set-VBRAmazonS3Repository](https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazons3repository.html?ver=13) cmdlet.
 
 ![Step 4. Specify Object Storage Settings](images/s3_add_bucket.webp "Specify S3 Object Storage Bucket")
 
