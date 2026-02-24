@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/18/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +15,7 @@ On backup infrastructure components, Veeam Backup & Replication automatically cr
 |  |
 | --- |
 | Important |
-| Some Linux distributions also require firewall and security rules to be created manually. For details, see [this Veeam KB article](https://www.veeam.com/kb2986). |
+| Note the following:   * Some Linux distributions also require firewall and security rules to be created manually. For details, see [this Veeam KB article](https://www.veeam.com/kb2986). * Ports listed as [bad ports](https://fetch.spec.whatwg.org/#bad-port) cannot be used as they will be blocked unless a specific protocol overrides that. For example, SSH uses port 22. |
 
 If you use an HTTP/HTTPS proxy server to access the Internet, make sure that WinHTTP settings are properly configured on Microsoft Windows machines with Veeam backup infrastructure components. For information on how to configure WinHTTP settings, see [Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet).
 
