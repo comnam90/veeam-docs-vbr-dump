@@ -3,7 +3,7 @@ title: "Step 6. Specify Recovery Verification Options and Tests"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_tests_vm.html"
-last_updated: "12/1/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -46,7 +46,7 @@ In the Non-Authoritative Restore mode, Veeam Backup & Replication restores a dom
 
 * Global Catalog
 * Mail Server
-* SQL Server
+* [For Veeam Backup & Replication on Windows] SQL Server
 * Veeam Backup for Microsoft 365 (machine on which Veeam Backup for Microsoft 365 is installed)
 * Web Server
 

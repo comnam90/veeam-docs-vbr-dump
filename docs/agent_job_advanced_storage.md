@@ -3,7 +3,7 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_storage.html"
-last_updated: "11/14/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -13,7 +13,7 @@ product_version: "13.0.1.1071"
 To specify storage settings for the backup job:
 
 1. Click Advanced at the Storage step of the wizard.
-2. Click the Storage tab.
+2. In the Advanced Settings window, select the Storage tab.
 3. [For a failover cluster backup job] By default, Veeam Backup & Replication deduplicates failover cluster data before storing it in the backup repository. Data deduplication provides a smaller size of the backup file but may reduce the backup job performance. You can disable data deduplication if necessary, for example, if you use a deduplication storage appliance as a backup repository. To disable data deduplication, clear the Enable inline data deduplication check box.
 
 |  |

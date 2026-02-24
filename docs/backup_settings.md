@@ -3,7 +3,7 @@ title: "Configuring General Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_settings.html"
-last_updated: "7/31/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,9 @@ In This Section
 * [Configuring Security Settings](vbr_settings_security.md)
 * [Specifying Email Notification Settings](email_notification_settings.md)
 * [Specifying SNMP Settings](snmp_settings.md)
+* [Specifying Syslog Servers](syslog_servers.md)
 * [Specifying Global Notification Settings](global_notifications.md)
 * [Specifying Session History Settings](history_settings.md)
+* [Configuring Veeam Intelligence Settings](veeam_intelligence_settings.md)
 
 

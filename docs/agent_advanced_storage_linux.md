@@ -3,7 +3,7 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_advanced_storage_linux.html"
-last_updated: "11/14/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,9 +12,10 @@ product_version: "13.0.1.1071"
 
 To specify storage settings for the Veeam Agent backup job managed by the backup server:
 
-1. In the Advanced Settings window, select the Storage tab.
-2. On the Storage tab, from the Compression level list, select a compression level for the backup: None, Dedupe-friendly, Optimal, High or Extreme. To learn more about the compression levels, see the [Data Compression](https://helpcenter.veeam.com/docs/agentforwindows/userguide/compression_deduplication.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
-3. In the Storage optimization section, select what type of backup target you plan to use. Depending on the chosen storage type, Veeam Agent for Linux will use data blocks of different size to optimize the size of backup files and job performance: 4 MB, 1 MB, 512 KB or 256 KB.
+1. Click Advanced at the Storage step of the wizard.
+2. In the Advanced Settings window, select the Storage tab.
+3. On the Storage tab, from the Compression level list, select a compression level for the backup: None, Dedupe-friendly, Optimal, High or Extreme. To learn more about the compression levels, see the [Data Compression](https://helpcenter.veeam.com/docs/agentforwindows/userguide/compression_deduplication.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
+4. In the Storage optimization section, select what type of backup target you plan to use. Depending on the chosen storage type, Veeam Agent for Linux will use data blocks of different size to optimize the size of backup files and job performance: 4 MB, 1 MB, 512 KB or 256 KB.
 
 |  |
 | --- |

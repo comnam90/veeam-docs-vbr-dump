@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "1/6/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -70,7 +70,7 @@ Discontinued features:
 Integration with Veeam Management and Monitoring Products
 
 1. Are you using Veeam ONE to monitor your backup infrastructure? If yes, upgrade it first. Veeam ONE 13 supports monitoring of backup servers version 12 or later.
-2. Are you using Veeam Backup Enterprise Manager? If yes, start the upgrade procedure with this component. Veeam Backup & Replication should be upgraded after that. If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Veeam Backup Enterprise Manager server. Otherwise, the [Veeam Configuration Database Connection Utility](dbconfig_utility.md) (DBConfig) utility will not work correctly for Veeam Backup & Replication.
+2. Are you using Veeam Backup Enterprise Manager? If yes, start the upgrade procedure with this component. Veeam Backup & Replication should be upgraded after that. If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Veeam Backup Enterprise Manager server without restarting the machine. Otherwise, the [Veeam Configuration Database Connection Utility](dbconfig_utility.md) (DBConfig) utility will not work correctly for Veeam Backup & Replication.
 3. Are you using Veeam Backup Enterprise Manager server added to Veeam ONE? If yes, first upgrade Veeam ONE, second upgrade Veeam Backup Enterprise Manager, and third upgrade Veeam Backup & Replication.
 4. Are you using Veeam Cloud Connect? If yes, consider the following:
 

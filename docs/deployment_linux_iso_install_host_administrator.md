@@ -3,7 +3,7 @@ title: "Step 8. Configure Host Administrator Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_iso_install_host_administrator.html"
-last_updated: "2/20/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 

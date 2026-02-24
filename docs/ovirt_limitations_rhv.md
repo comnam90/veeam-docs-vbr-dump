@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_limitations_rhv.html"
-last_updated: "2/2/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -11,6 +11,16 @@ product_version: "13.0.1.1071"
 
 
 When you plan to use Veeam Plug-in for oVirt KVM, keep in mind the following limitations and considerations.
+
+Configuration
+
+When configuring Veeam Plug-in for oVirt KVM, consider the following:
+
+* In the case where a Veeam Backup & Replication certificate is changed it will be necessary to restart the Veeam oVirt KVM service in order to facilitate proper internal component communications.
+
+* Veeam Plug-in for oVirt KVM does not support the IPv6 protocol.
+
+* The oVirt KVM Manager must be able to establish a direct IP connection to the backup server. Connections through NAT gateways are not supported.
 
 Backup
 

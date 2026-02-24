@@ -3,7 +3,7 @@ title: "Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_notify.html"
-last_updated: "8/5/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -13,7 +13,7 @@ product_version: "13.0.1.1071"
 You can specify notification settings for Veeam Agent backup jobs configured in Veeam Backup & Replication. To specify notification settings:
 
 1. At the Storage step of the wizard, click Advanced.
-2. Click the Notifications tab.
+2. In the Advanced Settings window, select the Notifications tab.
 3. Select the Send SNMP notifications for this job check box if you want to receive SNMP traps when the job completes successfully.
 
 SNMP traps will be sent if you specify global SNMP settings in Veeam Backup & Replication and configure software on recipient's machine to receive SNMP traps. For more information, see [Specifying SNMP Settings](snmp_settings.md).

@@ -3,7 +3,7 @@ title: "Backup Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_advanced_backup_linux.html"
-last_updated: "7/29/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 To specify settings for a backup chain created with the Veeam Agent backup job managed by the backup server:
 
-1. In the Advanced Settings window, select the Backup tab.
-2. If you want to periodically create synthetic full backups, select Create synthetic full backups periodically and click Configure to define the schedule.
+1. Click Advanced at the Storage step of the wizard.
+2. In the Advanced Settings window, select the Backup tab.
+3. If you want to periodically create synthetic full backups, select Create synthetic full backups periodically and click Configure to define the schedule.
 
 |  |
 | --- |

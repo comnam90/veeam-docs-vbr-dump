@@ -3,7 +3,7 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_folder_web.html"
-last_updated: "2/18/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,7 +30,7 @@ At the Folder step of the wizard, specify the folder that will be used to store 
 |  |
 | --- |
 | Note |
-| Consider the following:   * By default, immutability is enabled for Veeam Data Cloud Vault. You cannot disable this option and cannot remove data during this period. * The default immutability period is for 30 days. You can set the immutability period to different values in the Veeam Backup & Replication UI. The minimum immutability period is 1 day, and the maximum is 999 days. If you want to set immutability to a longer period, use the [Set-VBRDataCloudVaultRepository](https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrdatacloudvaultrepository.html?ver=13) cmdlet. |
+| Consider the following:   * By default, immutability is enabled for Veeam Data Cloud Vault. You cannot disable this option and cannot remove data during this period.  * The default immutability period is 30 days. You can set the immutability period to different values. The minimum immutability period is 1 day, and the maximum is 999 days. |
 
 [![Step 4. Specify Object Storage Settings](images/veeam_vault_container_web.webp)](images/veeam_vault_container_web.webp)
 

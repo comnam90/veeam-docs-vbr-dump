@@ -3,7 +3,7 @@ title: "Integration Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_integration.html"
-last_updated: "11/4/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,7 +17,7 @@ Keep in mind that storage integration settings are unavailable if you work with 
 To specify storage integration settings for the backup job:
 
 1. At the Storage step of the wizard, click Advanced.
-2. Click the Integration tab.
+2. In the Advanced Settings window, select the Integration tab.
 3. If you select the Enable backup from storage snapshots check box, Veeam Backup & Replication will use native storage snapshots to create Veeam Agent backups. To learn more about storage snapshots support, see [Storage Snapshots Support](agents_storage_systems.md).
 4. To transfer a snapshot from storage to the target repository, Veeam Backup & Replication uses off-host backup proxies. You can allow Veeam Backup & Replication to use any suitable backup proxies or you can select specific backup proxies. To learn more, see [Selecting Off-Host Backup Proxy](#proxy).
 5. If Veeam Backup & Replication fails to create a storage snapshot or backup proxy is unavailable, you can fail over to the regular backup scenario that uses the software VSS provider. To do this, select the Failover to on-host backup agent check box.

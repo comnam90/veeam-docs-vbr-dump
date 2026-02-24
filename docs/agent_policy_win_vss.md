@@ -3,7 +3,7 @@ title: "Step 12. Specify Guest Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_vss.html"
-last_updated: "6/19/2024"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,7 @@ For a Veeam Agent backup policy that includes Windows-based computers, you can e
 * [Transaction log handling for Microsoft SQL Server](agent_job_vss_sql.md)
 * [Archived log handling for Oracle databases](agent_job_vss_oracle.md)
 * [SharePoint account settings](agent_job_vss_sharepoint.md)
-* [Use of pre-freeze and post-thaw scripts](agent_job_vss_scripts.md)
+* [Use of pre-freeze and post-thaw script settings](agent_job_vss_scripts.md)
 * [File indexing](agent_job_vss_indexing.md)
 
 ![Step 12. Specify Guest Processing Settings](images/agent_policy_vss.webp "Specify Guest Processing Settings")

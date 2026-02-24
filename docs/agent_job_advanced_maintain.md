@@ -3,7 +3,7 @@ title: "Maintenance Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_maintain.html"
-last_updated: "8/5/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +15,7 @@ You can specify maintenance settings for a backup chain created with the Veeam A
 To specify maintenance settings for the backup job:
 
 1. Click Advanced at the Storage step of the wizard.
-2. In the Advanced Settings window, click the Maintenance tab.
+2. In the Advanced Settings window, select the Maintenance tab.
 3. To periodically perform a health check for the latest restore point in the backup chain, in the Storage-level corruption guard section, select the Perform backup files health check check box. To specify the schedule for the health check, click Configure. An automatic health check can help you avoid a situation where a restore point gets corrupted, making all dependent restore points corrupted, too. If during the health check Veeam Agent for Microsoft Windows or Veeam Backup & Replication detect corrupted data blocks in the latest restore point in the backup chain (or the restore point before the latest one if the latest restore point is incomplete), it will start the health check retry and transport valid data blocks from the Veeam Agent computer to the target location. The transported data blocks are stored to a new backup file or the latest backup file in the backup chain, depending on the data corruption scenario.
 
 For Veeam Agent backup jobs managed by the backup server, the health check process is similar to the one for backup jobs that process VMs. For more information, see [Health Check for Backup Files](backup_health_check.md).
@@ -26,7 +26,7 @@ For backup jobs managed by the backup server, deleted items retention policy is 
 
 By default, the deleted items data retention period is 30 days. Do not set the deleted items retention period to 1 day or a similar short interval. In the opposite case, the backup job may work not as expected and remove data that you still require.
 
-To periodically compact a full backup, select the Defragment and compact full backup file check box. To specify the schedule for the compact operation, click Configure. During the compact operation, data blocks from the full backup file are copied to a new empty file. As a result, the full backup file gets defragmented, and the speed of reading from and writing to the backup file increases.
+1. To periodically compact a full backup, select the Defragment and compact full backup file check box. To specify the schedule for the compact operation, click Configure. During the compact operation, data blocks from the full backup file are copied to a new empty file. As a result, the full backup file gets defragmented, and the speed of reading from and writing to the backup file increases.
 
 |  |
 | --- |

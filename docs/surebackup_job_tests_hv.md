@@ -3,7 +3,7 @@ title: "Step 6. Specify Recovery Verification Options and Tests"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_tests_hv.html"
-last_updated: "12/1/2025"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -39,7 +39,7 @@ On the Role tab, select the role that the machine performs. Veeam Backup & Repli
 * Domain Controller (Non-Authoritative Restore). In the Non-Authoritative Restore mode, Veeam Backup & Replication restores a domain controller in the virtual lab and marks it as being non-authoritative to its replication partners. Non-authoritative domain controllers then replicate data from a domain controller started in the Authoritative Restore mode.
 * Global Catalog
 * Mail Server
-* SQL Server
+* [For Veeam Backup & Replication on Windows] SQL Server
 * Veeam Backup for Microsoft 365 (machine on which Veeam Backup for Microsoft 365 is installed)
 * Web Server
 
