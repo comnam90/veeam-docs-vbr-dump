@@ -3,7 +3,7 @@ title: "Backup Job and Snapshot Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_windows_scripts.html"
-last_updated: "11/21/2025"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,9 +32,9 @@ Pre-Freeze and Post-Thaw Scripts
 
 Veeam Agent runs these scripts before and after creating a snapshot of the backed-up volume. For example, the pre-freeze script may quiesce the file system and application data to bring the OS to a consistent state before Veeam Agent creates a snapshot. After the snapshot is created, the post-thaw script brings the file system and applications to their initial state.
 
-You can specify pre-freeze and post-thaw script settings at the Guest Processing step of a backup job wizard. To learn more, see sections [Pre-Freeze and Post-Thaw Scripts](agent_job_vss_scripts.md) (for backup jobs managed by the backup server) and [Pre-Freeze and Post-Thaw Scripts](agent_policy_win_vss_scripts.md) (for backup policies).
+You can specify pre-freeze and post-thaw script settings at the Guest Processing step of a backup job wizard. To learn more, see sections [Pre-Freeze and Post-Thaw Script Settings](agent_job_vss_scripts.md) (for backup jobs managed by the backup server) and [Pre-Freeze and Post-Thaw Script Settings](agent_policy_win_vss_scripts.md) (for backup policies).
 
-During the backup job session, Veeam Backup & Replication uploads the scripts to each Veeam Agent computer added to the backup job and executes them on these computers. The scripts run in the same way as in the standalone version of Veeam Agent. To learn more, see the [Backup Job Scripts](https://helpcenter.veeam.com/docs/agentforwindows/userguide/pre_post_scripts.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
+Veeam Backup & Replication uploads the scripts to each Veeam Agent computer added to the backup job and executes them on these computers. The scripts run in the same way as in the standalone version of Veeam Agent. To learn more, see the [Backup Job Scripts](https://helpcenter.veeam.com/docs/agentforwindows/userguide/pre_post_scripts.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
 
 Pre-Job and Post-Job Scripts
 
@@ -42,7 +42,7 @@ Veeam Agent runs these scripts before the backup job starts and after the backup
 
 You can specify backup job script settings at the Storage step of the backup job wizard. To learn more, see [Script Settings](agent_job_advanced_scripts.md).
 
-During the backup job session, Veeam Backup & Replication executes the scripts on the backup server under the account under which the Veeam Backup Service runs (the local System account or account that has the local Administrator permissions on the backup server).
+Veeam Backup & Replication executes the scripts on the backup server under the account under which the Veeam Backup Service runs (the local System account or account that has the local Administrator permissions on the backup server).
 
 Script Execution Order
 
