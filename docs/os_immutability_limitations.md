@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_immutability_limitations.html"
-last_updated: "1/5/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ General Considerations and Limitations
 
 Consider the following immutability limitations:
 
-* The maximum immutability period you can set in the Veeam Backup & Replication UI is 999 days. If you want to set immutability to a longer period, use one of the following Veeam PowerShell cmdlets: [Set-VBRAmazonS3CompatibleRepository](https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazons3compatiblerepository.html?ver=13), [Add-VBRAmazonS3CompatibleRepository](https://helpcenter.veeam.com/docs/vbr/powershell/add-vbramazons3compatiblerepository.html?ver=13), [Set-VBRAzureBlobRepository](https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazureblobrepository.html?ver=13).
+* The minimum immutability period that you can set for an object storage repository is 1 day, and the maximum is 999 days.
 * Immutable data is preserved as described in [Block Generation](object_storage_block_generation.md).
 
 * We recommend that you do not set the immutability period longer than the retention policy of the backup job, otherwise it will result in extra charges.
