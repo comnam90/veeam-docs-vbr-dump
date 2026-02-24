@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_before_you_begin_hv.html"
-last_updated: "1/22/2026"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,6 +27,8 @@ Before you create and start a recovery verification job, check the following pre
 Consider the following limitations:
 
 * You cannot link the following machines backups to the SureBackup job: backups created by backup copy jobs and backups stored in [cloud backup repositories](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_repository.html?ver=13).
+
+* SureBackup operations are not supported for backups of VMs that were originally attached to Virtual Private Cloud (VPC) subnets.
 
 * The source backup job has a higher priority than the SureBackup job. If the source backup job starts when the SureBackup job is running, and this job is about to modify the restore point from which the VM is started, Veeam Backup & Replication automatically powers off VMs in the virtual lab and completes the SureBackup job.
 
