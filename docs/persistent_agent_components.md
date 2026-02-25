@@ -3,7 +3,7 @@ title: "Persistent Agent Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_agent_components.html"
-last_updated: "1/13/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ For information about the Deployment Kit generation and installation steps, see 
 
 Installing Persistent Agent Components on Microsoft Windows VMs
 
-For Microsoft Windows VMs, Veeam Backup & Replication deploys persistent agent components using guest interaction proxies. For more information, see [Guest Interaction Proxies](guest_interaction_proxy.md). If there are no guest interaction proxies or guest interaction proxies fail for some reason, Veeam Backup & Replication will deploy persistent agent components on Microsoft Windows VMs from the backup server.
+After you deploy the necessary [prerequisites](#pac_prereq), Veeam Backup & Replication deploys persistent agent components on Microsoft Windows VMs using guest interaction proxies. For more information, see [Guest Interaction Proxies](guest_interaction_proxy.md). If there are no guest interaction proxies or guest interaction proxies fail for some reason, Veeam Backup & Replication will deploy persistent agent components on Microsoft Windows VMs from the backup server.
 
 To use persistent agent components, select the Use persistent guest agent check box when specifying application-aware processing settings as described in section [Application-Aware Processing](backup_job_vss_application_vm.md) for VM backup jobs. The [Veeam Installer Service](installer_service.md) will install persistent guest agents during the first run of the backup job.
 
