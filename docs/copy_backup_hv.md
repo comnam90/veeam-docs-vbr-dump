@@ -3,7 +3,7 @@ title: "Copying Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copy_backup_hv.html"
-last_updated: "11/4/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,16 +23,19 @@ Requirements and Limitations
 
 * The copy operation does not change the [backup chain format](per_vm_backup_files_hv.md) (single-file backup, per-machine with single metadata file or per-machine with separate metadata files). If you copy backups between repositories with and without the Use per-machine backup files check box enabled, backups preserve their formats.
 
-* If you copy backups from a scale-out backup repository and some backups are stored on extents in the Maintenance mode, such backups are not copied.
+* Backups with [transaction log backups](https://helpcenter.veeam.com/docs/vbr/userguide/guest_processing_hv.html?ver=13#:~:text=Transaction%20log%20backup) configured copy both image-level and transaction log backups during the copy backup operation. Ensure there is sufficient free space in the target repository.
+
 * If you copy a backup chain to a repository with different immutability or retention settings, Veeam Backup & Replication will replace the source repository settings with the settings of the target repository for that specific backup chain.
 
 * Veeam Backup & Replication copies backups only from the performance tier of the scale-out backup repository. If you want to copy data from the capacity tier, you first must download it to the performance tier. For more information, see [Downloading Data from Capacity Tier](downloading_from_capacity_tier.md).
+
+* If you copy backups from a scale-out backup repository and some backups are stored on extents in the Maintenance mode, such backups are not copied.
 
 * You cannot copy backups between extents of a scale-out backup repository. To learn how to manage backups within the scale-out backup repository, see [Scale-Out Backup Repositories](backup_repository_sobr.md).
 
 * You cannot copy backups stored in Veeam Cloud Connect repositories. For more information on Veeam Cloud Connect repositories, see the [Cloud Repository](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_repository.html?ver=13) section in the Veeam Cloud Connect Guide.
 
-* The Copy backup operations to, from and between cloud repositories are not supported. For more information on Veeam Cloud Connect's limitations, see the [Veeam Cloud Connect Backup](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_limitations.html?ver=13) section in the Veeam Cloud Connect Guide.
+* Copy backup operations to, from and between cloud repositories are not supported. For more information on Veeam Cloud Connect's limitations, see the [Veeam Cloud Connect Backup](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_limitations.html?ver=13) section in the Veeam Cloud Connect Guide.
 
 * [For VMware Cloud Director] You can copy backups of a whole job or individual vApps. You cannot move backups of VMs.
 * You cannot copy backups created by a backup job managed by Veeam Agent (backup policy).
