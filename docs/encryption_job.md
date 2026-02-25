@@ -3,7 +3,7 @@ title: "Job Encryption"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_job.html"
-last_updated: "10/24/2024"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,6 +22,6 @@ Job-level encryption is supported for the following jobs:
 |  |
 | --- |
 | Note |
-| If you plan to store backups in [Veeam Data Cloud Vault](osr_adding_veeam_data_cloud_vault.md), you must enable job encryption. |
+| If you plan to store backups in [Veeam Data Cloud Vault](osr_adding_veeam_data_cloud_vault.md), you must enable job encryption. However, if you use a Veeam Plug-In in [Standalone mode](overview_operation_modes.md), you must enable repository encryption instead. |
 
 
