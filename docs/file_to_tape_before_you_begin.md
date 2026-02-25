@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_before_you_begin.html"
-last_updated: "1/29/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you configure a file to tape job, consider the following:
 
-* The file backup to tape functionality consumes Veeam instance or capacity pack licenses. However, if you upgrade to Veeam Backup & Replication 12 from the previous versions, you will have a grace period of 3 months during which your file to tape jobs will not consume license instances. For more information, see [Instance Consumption for Object Storage Backup, File Backup and File to Tape Jobs](nas_licensing.md).
+* The file backup to tape functionality consumes Veeam instance or capacity pack licenses. For more information, see [Instance Consumption for Object Storage Backup, File Backup and File to Tape Jobs](nas_licensing.md).
 
 Note that the NDMP servers backup to tape functionality does not consume Veeam instance or capacity pack licenses.
 
@@ -36,8 +36,9 @@ If the file to tape job processes large quantities of files, you must provide ad
 
 Backup Server
 
+Backup Server
+
 | Amount of files | RAM | CPU Cores |
-| --- | --- | --- |
 | 1 million files | 12 GB | 8 |
 | 10 million files | 24 GB | 12 |
 | 100 million files | 32 GB | 24 |
