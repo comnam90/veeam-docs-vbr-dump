@@ -3,21 +3,19 @@ title: "Upgrading Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_update.html"
-last_updated: "2/24/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Upgrading Veeam Agent
 
 
-Periodically, Veeam releases a new version of Veeam Backup & Replication that contains new features and bug fixes. The release package also contains a new version of Veeam Plug-Ins.
+Veeam Backup & Replication 13 supports different on versions of Veeam Agent depending on which OS is running on the backup server:
 
-Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depending on which OS is running on the backup server:
+* Veeam Backup & Replication on Linux supports management of Veeam Agents 13. Management of previous versions of Veeam Agents is not supported.
+* Veeam Backup & Replication on Microsoft Windows supports management of Veeam Agents 12.3.2.4165 and later.
 
-* Veeam Backup & Replication on Linux supports management of Veeam Plug-Ins 13. Management of previous versions of Veeam Plug-Ins is not supported.
-* Veeam Backup & Replication on Microsoft Windows supports management of Veeam Plug-Ins 12.3.2.4165 and later.
-
-Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
+Keep in mind that if you use an earlier Veeam Agent build than the one that is included in the installation ISO file of your Veeam Backup & Replication version, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version.
 
 In the Veeam Backup & Replication console, you can upgrade Veeam Agents on the computers that are added to a protection group for MongoDB.
 
