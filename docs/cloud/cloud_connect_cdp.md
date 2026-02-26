@@ -3,7 +3,7 @@ title: "Continuous Data Protection (CDP) with Veeam Cloud Connect"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_cdp.html"
-last_updated: "11/18/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,6 +16,11 @@ Veeam Cloud Connect supports the following types of the CDP technology offered b
 
 * [CDP for VMware vSphere](https://helpcenter.veeam.com/docs/vbr/userguide/cdp_replication.html?ver=13)
 * [Universal CDP to VMware vSphere](https://helpcenter.veeam.com/docs/vbr/userguide/universal_cdp.html?ver=13)
+
+|  |
+| --- |
+| Note |
+| Veeam Cloud Connect does not support VMware Cloud Director as a source for CDP replication. With Veeam Cloud Connect, you can only replicate individual VMware vSphere VMs, not vApps. |
 
 CDP with Veeam Cloud Connect is in many ways similar to both CDP in the regular Veeam Backup & Replication infrastructure and snapshot-based Veeam Cloud Connect Replication.
 
