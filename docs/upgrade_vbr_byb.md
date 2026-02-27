@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "2/24/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -90,14 +90,27 @@ Are you using Veeam Backup & Replication integrated with Veeam Virtualization Pl
 * Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization: During the upgrade to version 13.0.1, the plug-in for this product will be automatically upgraded to the required version. For details, see [Upgrading to Veeam Plug-in for OLVM and RHV 7](https://helpcenter.veeam.com/docs/vbrhv/userguide/upgrading.html?ver=7) in the Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization User Guide.
 * Veeam Plug-In for Proxmox Virtual Environment: During the upgrade to version 13.0.1, the plug-in for this product will be automatically upgraded to the required version. For details, see [Upgrading to Veeam Plug-in for Proxmox VE 3](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/upgrading.html?ver=3) in the Veeam Plug-In for Proxmox VE User Guide.
 
-Integration with Veeam Backup Agents and Enterprise Plug-Ins
+Integration with Veeam Agents, Veeam Plug-Ins for Enterprise Applications and MongoDB Backup
 
 1. Are you using Veeam Agents managed through Veeam Backup & Replication?
 
 * If you use Veeam Agent for Microsoft Windows or Veeam Agent for Linux below 6.3.1, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agent for Microsoft Windows or Veeam Agent for Linux to 13. If you use Veeam Agent for Microsoft Windows or Veeam Agent for Linux 6.3.1 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agent for Microsoft Windows or Veeam Agent for Linux to 13 later if the support of new features is not critical for you.
 * If you use Veeam Agent for Mac below 2.3.1, it will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agent for Mac to 13. If you use Veeam Agent for Mac 2.3.1 or later, it will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agent for Mac to 13 later if the support of new features is not critical for you.
+* If you use Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris below 4.6.1, it will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris to 13. If you use Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris 4.6.1 or later, it will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris to 13 later if the support of new features is not critical for you.
 
-1. Are you using Veeam Plug-In for Oracle RMAN, Veeam Plug-In for SAP HANA, Veeam Plug-In for SAP on Oracle, Veeam Plug-In for IBM Db2 or Veeam Plug-In for Microsoft SQL Server? If yes, upgrade Veeam Backup & Replication first, then you can upgrade Veeam Plug-Ins ([Veeam Plug-In for Oracle RMAN](update_rman_plugin.md), [Veeam Plug-In for SAP HANA](update_saphana_plugin.md), [Veeam Plug-In for SAP on Oracle](update_sap_on_oracle_plugin.md), [Veeam Plug-In for IBM Db2](db2_upgrade.md), [Veeam Plug-In for Microsoft SQL Server](update_mssql_plugin.md)).
+For details about Veeam Agent upgrade, see [Upgrading Veeam Agent](agents_protected_computers_upgrade.md).
+
+1. Are you using Veeam Plug-Ins for Enterprise Applications (Veeam Plug-In for Oracle RMAN, Veeam Plug-In for SAP HANA, Veeam Plug-In for SAP on Oracle, Veeam Plug-In for Microsoft SQL Server or Veeam Plug-In for IBM Db2)?
+
+If you use Veeam Plug-Ins for Enterprise Applications below 12.3.2.4165, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Plug-Ins to 13. If you use Veeam Plug-Ins for Enterprise Applications 12.3.2.4165 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Plug-Ins to 13 later if the support of new features is not critical for you.
+
+For details about upgrade of Veeam Plug-Ins for Enterprise Applications, see [Upgrading Veeam Plug-In](protected_computers_upgrade.md).
+
+1. Are you using MongoDB Backup?
+
+If you use MongoDB Backup with Veeam Agents below 12.3.2.4165, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agents to 13. If you use MongoDB Backup with Veeam Agents 12.3.2.4165 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agents to 13 later if the support of new features is not critical for you.
+
+For details about upgrade of Veeam Agents, see [Upgrading Veeam Agent for MongoDB Backup](mongo_protected_computers_update.md).
 
 Integration with Storage Systems
 
