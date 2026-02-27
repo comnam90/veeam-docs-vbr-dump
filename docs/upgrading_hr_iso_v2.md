@@ -3,7 +3,7 @@ title: "Upgrading Hardened Repository Deployed with Veeam Hardened Repository IS
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrading_hr_iso_v2.html"
-last_updated: "11/6/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -34,7 +34,7 @@ To upgrade your hardened repository, do the following:
 2. In the installation menu, do the following:
 
 1. Select Veeam Hardened Repository.
-2. Select Upgrade from Hardened Repository Appliance v2.
+2. Select Upgrade - upgrades Hardened Repository to latest version.
 3. Select Reboot System or wait for the system to reboot automatically.
 
 1. After the system reboots, complete the Initial Configuration wizard as described in the [Installing Veeam Infrastructure Appliance with ISO](linux_infrastructure_appliance_install.md) section.
