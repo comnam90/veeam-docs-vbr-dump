@@ -3,7 +3,7 @@ title: "Getting Started with Replication to VMware Cloud Director"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_vcloud_director_quickstart.html"
-last_updated: "11/18/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -11,6 +11,11 @@ product_version: "13.0.1.1071"
 
 
 The SP and tenant can use VMware Cloud Director resources as a target for snapshot-based replication and CDP. Within the Veeam Cloud Connect Replication to VMware Cloud Director scenario, the SP and tenant perform the following tasks.
+
+|  |
+| --- |
+| Note |
+| Veeam Cloud Connect does not support VMware Cloud Director as a source for replication to a VMware Cloud Director target. |
 
 Tasks on SP Side
 
