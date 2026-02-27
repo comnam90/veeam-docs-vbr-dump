@@ -3,7 +3,7 @@ title: "Upgrading Veeam Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_upgrade.html"
-last_updated: "1/20/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -67,7 +67,9 @@ Upgrading from Veeam Plug-In Side
 You can also upgrade Veeam Plug-In from the computer side. This approach is required, for example, for standalone Veeam Plug-Ins that are cannot be upgraded from the Veeam backup console. The process of upgrading differs depending on the Veeam Plug-In:
 
 * [Upgrading Veeam Plug-In for Oracle RMAN](update_rman_plugin.md)
-* [Upgrading Plug-In for SAP HANA](update_saphana_plugin.md)
+* [Upgrading Veeam Plug-In for SAP HANA](update_saphana_plugin.md)
 * [Upgrading Veeam Plug-In for SAP on Oracle](update_sap_on_oracle_plugin.md)
+* [Upgrading Veeam Plug-In for Microsoft SQL Server](update_mssql_plugin.md)
+* [Upgrading Veeam Plug-In for IBM Db2](db2_upgrade.md)
 
 
