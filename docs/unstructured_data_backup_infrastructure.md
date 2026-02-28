@@ -3,7 +3,7 @@ title: "Backup Infrastructure for Unstructured Data Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_infrastructure.html"
-last_updated: "11/10/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -100,10 +100,12 @@ A backup repository is a main storage location where Veeam Backup & Replication 
 
 The following table describes which roles can be assigned to different storage types.
 
+Storage Repositories
+
 | Storage Type | Backup Repository | Archive Repository | Secondary Repository |
-| --- | --- | --- | --- |
 | [Microsoft Windows server](ms_server.md) | ✓ | ✓ | ✓ |
 | [Linux server](linux_server.md) | ✓ | ✓ | ✓ |
+| [Veeam Data Cloud Vault](object_storage_repository.md) | ✓ | ✓ | ✓ |
 | [Hardened linux server](hardened_repository.md) | ✓ | ✓ | ✓ |
 | [SMB (CIFS) share](smb_share.md) 1 | ✓ | ✓ | ✓ |
 | [NFS share](nfs_share.md) | ✓ | ✓ | ✓ |
