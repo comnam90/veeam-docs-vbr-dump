@@ -3,7 +3,7 @@ title: "Tasks with Cloud Host"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_replication_tasks.html"
-last_updated: "11/9/2023"
+last_updated: "2/20/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -13,7 +13,7 @@ product_version: "13.0.1.1071"
 Tenants can perform the following VM replication and data recovery tasks against the cloud host:
 
 * Replication
-* Failover:
+* Failover
 
 * Full site failover (failover by cloud failover plan)
 * Partial site failover
