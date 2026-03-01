@@ -3,7 +3,7 @@ title: "Automatic License Usage Reporting"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/automatic_usage_logging.html"
-last_updated: "1/25/2024"
+last_updated: "2/23/2026"
 product_version: "13.0.1.1071"
 ---
 
