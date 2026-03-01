@@ -3,7 +3,7 @@ title: "CDP Infrastructure in Veeam Cloud Connect"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_cdp_infrastructure.html"
-last_updated: "2/18/2026"
+last_updated: "2/27/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -83,7 +83,7 @@ After the SP installs the I/O filter on the cluster, Veeam Backup & Replication 
 | Note |
 | If you add a new organization VDC to the Cloud Director server after the I/O filter is installed on the existing VDCs, you must do the following:   1. Install the I/O filter on the newly added organization VDC. To do this, at the Organization VDC step of the I/O Filter Management wizard, select check boxes next to the VDC where the I/O filter must be present and finish the wizard. For details, see the [Select VDC Organizations](https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_io_filter_vdc.html?ver=13) section in the Veeam Backup & Replication User Guide. 2. Create CDP target policy on the new organization VCD and mark it as CDP-ready. To do this, launch the Edit Tenant wizard for this tenant, click Next at each step of the wizard. At the Replica Resources step of the wizard, add new organization VDC as replication resource and then click Finish at the Summary step of the wizard. For details, see [Allocate Replication Resources](cloud_vcd_tenant_replication.md).   Once the SP completes these steps, the tenant can rescan the SP in the tenant Veeam backup console and start using the newly added VDC as a cloud host. |
 
-* [For CDP for VMware vSphere] On the tenant side, the I/O filter must be installed on the VMware vSphere cluster where VMs they plan to replicate reside. For details on how to install the filter, see the [Installing I/O Filter](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_io_filter_install.html?ver=120) section in the Veeam Backup & Replication User Guide.
+* [For CDP for VMware vSphere] On the tenant side, the I/O filter must be installed on the VMware vSphere cluster where VMs they plan to replicate reside. For details on how to install the filter, see the [Installing I/O Filter](https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_install.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
 After the tenant installs the I/O filter on the cluster, Veeam Backup & Replication automatically installs the filter on all hosts added to the cluster.
 
@@ -107,7 +107,7 @@ The source and target CDP proxies perform the following tasks:
 * The source proxy prepares data for short-term restore points from data received from the source host, compresses and encrypts the data (if encryption is enabled in the [network traffic rules](https://helpcenter.veeam.com/docs/vbr/userguide/internet_rule.html?ver=13)). Then sends it to the target proxy.
 * The target proxy receives the data, decompresses and decrypts it, and then sends it to the target host.
 
-For more information on CDP proxies, their requirements, limitations and deployment, see the [CDP Proxies](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_proxy.html?ver=120) section in the Veeam Backup & Replication User Guide.
+For more information on CDP proxies, their requirements, limitations and deployment, see the [CDP Proxies](https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
 Related Topics
 
