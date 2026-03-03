@@ -3,7 +3,7 @@ title: "Step 2. Edit Answer File"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_edit.html"
-last_updated: "12/1/2025"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,8 +26,9 @@ After you generate the answer file, you can edit it:
 
 Configuration File Parameters
 
+Configuration File Parameters
+
 | Parameter | Description | Required |
-| --- | --- | --- |
 | MODE | Specifies the restore mode.  Supported values: restore or migrate. | No |
 | CONFIGURATION\_FILE | Specifies a full path to the configuration backup file.  Supported values:   * /var/lib/veeam/backup/filename.bco for local backups. * VeeamConfigBackup\VM\File.bco for repository backups. | Yes |
 | REPOSITORY\_NAME | Specifies Veeam Backup & Replication repository name where the configuration backup file is stored. If you do not specify this parameter, empty name will be used.  Supported values: String. | No |
@@ -43,7 +44,7 @@ Configuration File Parameters
 | PG\_DUMP\_PATH | Specifies a path to the pg\_dump.exe file.  Supported values: String. | No |
 | RESTORE\_BACKUPS | Defines that Veeam Backup & Replication will restore backup and replica restore points catalog.  Supported values:   * No: 0. * Yes: 1.   Default: 1. | No |
 | RESTORE\_SESSIONS | Defines that Veeam Backup & Replication will restore sessions history.  Supported values:   * No: 0. * Yes: 1.   Default: 0. | No |
-| BACKUP\_EXISTING\_DATABASE | Defines that the current database will be backed up.  Supported values:   * No: 0. * Yes: 1.   Default: 0. | No |
+| BACKUP\_EXISTING\_DATABASE | Defines that the current database will be backed up.  Supported values:   * No: 0. * Yes: 1.   Default: 0.  The created database backup is stored by the following path: /var/log/VeeamBackup/Utils/PostgreSQLBackup. | No |
 | SERVICES\_AUTOSTART | Defines that Veeam Backup & Replication will start automatically after the migration.  Supported values:   * No: 0. * Yes: 1.   Default: 1. | No |
 | CREATE\_NEW\_DATABASE | Defines that the new database will be created if it does not exist.  Supported values:   * No: 0. * Yes: 1.   Default: 1. | No |
 | USE\_EXISTING\_DATABASE | Defines that Veeam Backup & Replication will use an existing database if it is not empty.  Supported values:   * No: 0. * Yes: 1.   Default: 0. | No |
