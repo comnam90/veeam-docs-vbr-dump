@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_before_you_begin.html"
-last_updated: "11/9/2025"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,7 +26,8 @@ Before you start the restore process, check the following prerequisites:
 
 * Veeam Backup & Replication supports configuration database migration between different database engines only within the same Veeam Backup & Replication version.
 
-* After you run configuration restore for [capacity tier](capacity_tier.md), Veeam Backup & Replication will put the capacity tier extents into the [Sealed mode](sobr_seal.md). Rescan the backup infrastructure and then remove the extents from the Sealed mode.
+* After you run the configuration restore, Veeam Backup & Replication puts all capacity tier extents of a scale-out backup repository into the [Sealed mode](sobr_seal.md). After the restore completes, rescan the scale-out backup repository, then remove the extents from the Sealed mode.
+
 * If you use a Veeam Backup & Replication server as a Veeam repository, after restore to a new host this repository will be located in the same file path as it was before the migration.
 * If you use Veeam Plug-Ins ([Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7), [Veeam Plug-In for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9) and so on) and want to restore the configuration database to a new machine, make sure you have the plug-ins installed before the restoration process.
 
