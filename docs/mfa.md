@@ -3,7 +3,7 @@ title: "Multi-Factor Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mfa.html"
-last_updated: "10/20/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -86,13 +86,15 @@ To enable the feature for all users:
 
 Resetting MFA for Specific User
 
-The backup administrator can reset MFA by user request if they have authentication issues, lose or change a mobile device with the mobile authentication application, and so on.
+The backup administrator can reset the MFA on a specific user account. A reset can performed if the user cannot access their account due to authentication issues, has changed or lost the mobile device with their mobile authentication application, and so on.
+
+After the reset is performed, the next time the user logs in, they must configure their MFA again, as described in the [How MFA Works](#hiw) section. Once reconfigured, the user can access their account as normal.
 
 To reset MFA for a specific user:
 
 1. Log in to the Veeam Backup & Replication console as an administrator.
 2. Go to Users and Roles > Security.
-3. Select the user and click Reset MFA. The next time the user logs in they will get the instruction how to set up MFA.
+3. Select the user and click Reset MFA.
 
 |  |
 | --- |
