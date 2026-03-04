@@ -3,7 +3,7 @@ title: "Infrastructure Icons"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infrastructure_icons.html"
-last_updated: "2/13/2026"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,8 +16,9 @@ Jobs
 
 The following icons represent the jobs configured in Veeam Backup & Replication.
 
+Jobs
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/job.webp) | Job |
 | ![Infrastructure Icons](images/high_priority_job.webp) | High priority job |
 | ![Infrastructure Icons](images/job_disabled.webp) | Job in the disabled state |
@@ -27,8 +28,9 @@ Job Nodes
 
 The following icons represent the job nodes displayed in the inventory pane of the Home view.
 
+Job Nodes
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/backup_jobs_backup.webp) | Backup jobs |
 | ![Infrastructure Icons](images/backup_jobs_replication.webp) | Replication jobs |
 | ![Infrastructure Icons](images/copy_job.webp) | Backup copy jobs |
@@ -42,8 +44,9 @@ Backups
 
 The following icons represent the backups created with Veeam Backup & Replication.
 
+Backups
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/icon_full.webp) | Backup |
 | ![Infrastructure Icons](images/encrypted_backup.webp) | Encrypted backup |
 | ![Infrastructure Icons](images/file_to_tape_backup.webp) | Backup to tape |
@@ -53,8 +56,9 @@ Backup Nodes
 
 The following icons represent the backup nodes displayed in the inventory pane of the Home view.
 
+Backup Nodes
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/backup_backups_disk.webp) | Backups on disk |
 | ![Infrastructure Icons](images/backup_copy.webp) | Backup copies on disk |
 | ![Infrastructure Icons](images/backup_backups_imported.webp) | Imported backups on disk |
@@ -87,8 +91,9 @@ Restore Points
 
 The following icons indicate the states of the restore points in backups of all types.
 
+Restore Points
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/icon_full.webp) | Full restore point |
 | ![Infrastructure Icons](images/icon_forward_incremental.webp) | Incremental restore point |
 | ![Infrastructure Icons](images/icon_reverse_incremental.webp) | Reverse incremental restore point |
@@ -101,8 +106,9 @@ Scale-Out Backup Repository Restore Points
 
 The following icons indicate the states of the restore points in the scale-out backup repository.
 
+Scale-Out Backup Repository Restore Points
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/vbk.webp) | Full restore point; on performance tier only |
 | ![Infrastructure Icons](images/vbk_rehydrated.webp) | Full restore point; on performance tier and offloaded to capacity tier |
 | ![Infrastructure Icons](images/vbk_dehydrated.webp) | Full restore point; on capacity tier only |
@@ -121,8 +127,9 @@ Replicas
 
 The following icons represent the replicas configured in Veeam Backup & Replication and displayed in the inventory pane of the Home view.
 
+Replicas
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/backup_replicas_active.webp) | Replicas in the active state |
 | ![Infrastructure Icons](images/backup_replicas_ready.webp) | Replicas in the ready state |
 | ![Infrastructure Icons](images/failover-plan.webp) | Failover plan |
@@ -131,8 +138,9 @@ The following icons represent the replicas configured in Veeam Backup & Replicat
 
 Microsoft Entra ID Backups
 
+Microsoft Entra ID Backups
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/backup_entraID_tenant.webp) | Microsoft Entra ID tenant / Microsoft Entra ID tenant backup |
 | ![Infrastructure Icons](images/backup_entraID_audit_log.webp) | Microsoft Entra ID audit and sign-in log backup |
 | ![Infrastructure Icons](images/backup_entraID_corrupted.webp) | Microsoft Entra ID tenant backup is corrupted |
@@ -141,8 +149,9 @@ VMware vSphere Virtual Infrastructure
 
 The following icons represent the hypervisor objects of VMware vSphere workloads and servers added to the backup infrastructure.
 
+VMware vSphere Virtual Infrastructure
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/vc.webp) | vCenter |
 | ![Infrastructure Icons](images/vm.webp) | VM |
 | ![Infrastructure Icons](images/vm_deleted.webp) | Deleted VM |
@@ -167,8 +176,9 @@ Hyper-V Virtual Infrastructure
 
 The following icons represent the hypervisor objects of Hyper-V workloads and servers added to the backup infrastructure.
 
+Hyper-V Virtual Infrastructure
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/hv_cluster.webp) | Cluster |
 | ![Infrastructure Icons](images/hv_cluster_corrupted.webp) | Corrupted cluster |
 | ![Infrastructure Icons](images/hv_host.webp) | Host |
@@ -185,8 +195,9 @@ VMware Cloud Director
 
 The following icons represent the VMware Cloud Director objects added to Veeam Backup & Replication.
 
+VMware Cloud Director
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/vcd_system.webp) | VMware Cloud Director infrastructure |
 | ![Infrastructure Icons](images/vcd_organization.webp) | Cloud Director organization |
 | ![Infrastructure Icons](images/vcd_organization_dc.webp) | Cloud Director organization VDC |
@@ -204,8 +215,9 @@ Physical Infrastructure
 
 The following icons represent the physical infrastructure objects added to Veeam Backup & Replication.
 
+Physical Infrastructure
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/veeam_container.webp) | Protection group |
 | ![Infrastructure Icons](images/veeam_container_disabled.webp) | Protection group in the disabled state |
 | ![Infrastructure Icons](images/protected_container_outofdate.webp) | Protection group is outdated |
@@ -230,8 +242,9 @@ Unstructured Data
 
 The following icons represent the unstructured data sources added to Veeam Backup & Replication.
 
+Unstructured Data
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/file_server.webp) | File server |
 | ![Infrastructure Icons](images/nas_filer.webp) | NAS filer |
 | ![Infrastructure Icons](images/file_share.webp) | File share |
@@ -246,8 +259,9 @@ Backup Proxies
 
 The following icons represent the backup proxies added to Veeam Backup & Replication.
 
+Backup Proxies
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/proxy_vmware.webp) | VMware / Hyper-V backup proxy |
 | ![Infrastructure Icons](images/proxy_vmware_disabled.webp) | VMware / Hyper-V backup proxy is disabled |
 | ![Infrastructure Icons](images/file_proxy.webp) | General-purpose backup proxy (for file shares) |
@@ -264,8 +278,9 @@ Backup Repositories and Scale-Out Backup Repositories
 
 The following icons represent the backup repositories and scale-out backup repositories added to Veeam Backup & Replication.
 
+Backup Repositories and Scale-Out Backup Repositories
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/repositories.webp) | Backup repositories |
 | ![Infrastructure Icons](images/externalrepositories.webp) | External repositories |
 | ![Infrastructure Icons](images/cloud_repository.webp) | Cloud repositories |
@@ -346,8 +361,9 @@ External Repositories
 
 The following icons represent the external repositories added to Veeam Backup & Replication.
 
+External Repositories
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/amazon_s3external_repository.webp) | Amazon S3 external repository |
 | ![Infrastructure Icons](images/azure_external_repository.webp) | Microsoft Azure Blob Storage external repository |
 | ![Infrastructure Icons](images/google_cloud_external_repository.webp) | Google Cloud Storage external repository |
@@ -357,8 +373,9 @@ WAN Accelerators
 
 The following icons represent the WAN accelerators added to Veeam Backup & Replication.
 
+WAN Accelerators
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/wan_accelerator.webp) | WAN accelerator |
 | ![Infrastructure Icons](images/wan_accelerator_busy.webp) | WAN accelerator is busy |
 | ![Infrastructure Icons](images/wan_accelerator_error.webp) | WAN accelerator has an error |
@@ -368,8 +385,9 @@ SureBackup
 
 The following icons represent the SureBackup objects.
 
+SureBackup
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/app_groups.webp) | Application group |
 | ![Infrastructure Icons](images/virtual_labs.webp) | Virtual lab |
 
@@ -379,8 +397,9 @@ For more information about the icons that represent the hypervisor objects of VM
 
 For more information about the icons that represent the hypervisor objects of Hyper-V workloads and servers, see the [Hyper-V Virtual Infrastructure](#vi_hyperv) section.
 
+Managed Servers
+
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/windows_host.webp) | Microsoft Windows server |
 | ![Infrastructure Icons](images/linux_host.webp) | Linux host |
 | ![Infrastructure Icons](images/windows_host_failed.webp) | Server is unavailable |
@@ -395,10 +414,11 @@ For more information about the icons that represent the tape infrastructure comp
 
 Proxmox VE Infrastructure
 
-The following icons represent the backup infrastructure components of Veeam Plug-In for Proxmox Virtual Environment.
+The following icons represent the backup infrastructure components of Veeam Plug-in for Proxmox VE.
+
+Proxmox VE Infrastructure
 
 | Icon | Description |
-| --- | --- |
 | ![Infrastructure Icons](images/proxmox_server.webp) | Proxmox VE server |
 | ![Infrastructure Icons](images/proxmox_server_unavailable.webp) | Proxmox VE server is unavailable |
 | ![Infrastructure Icons](images/proxmox_engine-cluster.webp) | Proxmox VE cluster |
@@ -407,6 +427,35 @@ The following icons represent the backup infrastructure components of Veeam Plug
 | ![Infrastructure Icons](images/proxmox_corrupted_vm.webp) | Proxmox VE VM is corrupted |
 | ![Infrastructure Icons](images/proxmox_infected_vm.webp) | Infected Proxmox VE VM |
 | ![Infrastructure Icons](images/proxmox_policy.webp) | Proxmox VE backup job |
+| ![Infrastructure Icons](images/proxmox_worker_disable.webp) | Worker is disabled |
+| ![Infrastructure Icons](images/proxmox_worker_configured.webp) | Worker is configured / Worker is tested |
+| ![Infrastructure Icons](images/proxmox_worker_working.webp) | Worker is working |
+| ![Infrastructure Icons](images/proxmox_worker_turnedoff.webp) | Worker is powered off |
+
+Nutanix AHV Infrastructure
+
+The following icons represent the backup infrastructure components of Veeam Plug-in for Nutanix AHV.
+
+Nutanix AHV Infrastructure
+
+| Icon | Description |
+| ![Infrastructure Icons](images/prism_central.webp) | Nutanix AHV Prism Central |
+| ![Infrastructure Icons](images/prism_central_unavailable.webp) | Nutanix AHV Prism Central is unavailable |
+| ![Infrastructure Icons](images/nutanix_cluster.webp) | Nutanix AHV cluster |
+| ![Infrastructure Icons](images/nutanix_cluster_unavailable.webp) | Nutanix AHV cluster is unavailable |
+| ![Infrastructure Icons](images/nutanix_proxy.webp) | Nutanix AHV proxy |
+| ![Infrastructure Icons](images/nutanix_proxy_disabled.webp) | Nutanix AHV proxy is disabled |
+| ![Infrastructure Icons](images/nutanix_pd.webp) | Protection domain |
+| ![Infrastructure Icons](images/category.webp) | Nutanix AHV category |
+| ![Infrastructure Icons](images/vm_nutanix.webp) | Nutanix AHV VM |
+| ![Infrastructure Icons](images/proxmox_corrupted_vm.webp) | Nutanix AHV VM is corrupted |
+| ![Infrastructure Icons](images/proxmox_infected_vm.webp) | Infected Nutanix AHV VM |
+| ![Infrastructure Icons](images/mounting_nutanixVM.webp) | Mounting Nutanix AHV VM |
+| ![Infrastructure Icons](images/unmounting_nutanixVM1.webp) | Unmounting Nutanix AHV VM |
+| ![Infrastructure Icons](images/unmount_failed_nutanixVM.webp) | Unmounting Nutanix AHV VM has failed |
+| ![Infrastructure Icons](images/custom_policy_nutanix.webp) | Nutanix AHV backup job |
+| ![Infrastructure Icons](images/custom_policy_run.webp) | Nutanix AHV backup job is running |
+| ![Infrastructure Icons](images/custom_policy_disabled.webp) | Nutanix AHV backup job is disabled |
 | ![Infrastructure Icons](images/proxmox_worker_disable.webp) | Worker is disabled |
 | ![Infrastructure Icons](images/proxmox_worker_configured.webp) | Worker is configured / Worker is tested |
 | ![Infrastructure Icons](images/proxmox_worker_working.webp) | Worker is working |
