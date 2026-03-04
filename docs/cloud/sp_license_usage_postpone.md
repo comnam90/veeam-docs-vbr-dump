@@ -3,7 +3,7 @@ title: "Postponing License Usage Report Review"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/sp_license_usage_postpone.html"
-last_updated: "2/6/2026"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,5 +18,7 @@ To postpone the report review:
 
 * [For automatic reporting] In the notification window informing that the report is generated, click Postpone.
 * [For manual reporting] In the notification window informing that the report is generated, click Postpone Review.
+
+[![Postpone License Usage Report Review](images/license_report_postpone_online.webp)](images/license_report_postpone_online.webp "Postpone License Usage Report Review")
 
 
