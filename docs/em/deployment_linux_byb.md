@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_byb.html"
-last_updated: "2/10/2026"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -13,6 +13,7 @@ product_version: "13.0.1.1071"
 Before you install Veeam Software Appliance, review known issues and limitations described in [release notes](https://helpcenter.veeam.com/rn/veeam_backup_13_release_notes.html#known-issues-and-limitations). Also, consider the following:
 
 * Veeam Software Appliance must be installed on a dedicated empty machine that meets the system requirements. For more information, see [System Requirements](system_requirements.md).
+* Disks that are accessible through multipath cannot be used for the Veeam Software Appliance installation.
 * Enterprise Manager on Linux is supported only with the Enterprise Plus edition license.
 * You cannot install other backup infrastructure components on the machine where Enterprise Manager is installed. This includes the backup server, backup repository, proxy server and other components.
 * Essentials license holders can only deploy Veeam Software Appliance on any [hypervisor supported by Veeam](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13) and on [Veeam Ready — Appliance](https://www.veeam.com/partners/alliance-partner-technical-programs.html) certified hardware.
@@ -22,7 +23,7 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * Veeam Software Appliance installation and initial configuration support only the English US keyboard layout.
 * When you install Veeam Software Appliance, the Rocky Linux operating system, Veeam Backup Enterprise Manager and other Veeam Software Appliance components are installed with predefined settings, including volume partitioning and user account creation. After installation is complete, you need to proceed with the initial configuration of Veeam Software Appliance, which includes setting up host users, and configuring server time and network settings.
 
-* You cannot add additional storage devices to a Veeam Software Appliance after it has been deployed.
+* After you deploy a Veeam Software Appliance, adding new storage devices or resizing existing ones is not supported.
 
 * You cannot install third-party software on a Veeam Software Appliance.
 
