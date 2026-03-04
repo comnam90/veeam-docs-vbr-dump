@@ -3,18 +3,40 @@ title: "Configuring Job Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_email_notifications.html"
-last_updated: "3/20/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Configuring Job Notification Settings
 
 
+Veeam Backup & Replication allows you to configure email notification settings at the job level. You can use the global notification settings that are configured on the backup server or you can specify custom notification settings that apply only to the job. Notifications for a specific job are sent to the recipients you specify in the job settings.
+
+Considerations
+
+Consider the following:
+
+* Reports are sent only after you enable and configure the global email notification settings, as described in section [Configuring Global Email Notification Settings](general_email_notifications.md).
+* Reports are sent daily at the time specified in the global notification settings.
+* Reports are sent for all notification types selected in the global notification settings, such as Success, Warning and Failure.
+
+Configuring Job Notification Settings
+
 To configure job notification settings:
 
 1. Open advanced settings of the job.
-2. On the Notifications tab, select the Send email notifications to the following recipients check box.
-3. In the field under the Send email notifications to the following recipients check box, enter an email address to which a notification must be sent. You can enter several email addresses separated with a semicolon.
+
+You can find the notification settings description in the dedicated jobs, for example:
+
+* [Notification Settings](backup_job_advanced_notify_vm.md) for backup job
+* [Notification Settings](backup_copy_settings_notification.md) for backup copy job
+* [Notification Settings](os_backup_job_advanced_notification.md) for object storage backup job
+* [Notification Settings](file_share_backup_job_advanced_notifications.md) for file backup job
+* [Notification Settings](bc_hpe_storeonce_notification_settings.md) for backup copy jobs for HPE StoreOnce repositories
+* [Notification Settings](replica_advanced_notify_vm.md) for replication jobs
+
+1. On the Notifications tab, select the Send email notifications to the following recipients check box.
+2. In the field under the Send e-mail notifications to the following recipients check box, enter an email address to which a notification must be sent. You can enter several email addresses separated with a semicolon.
 
 |  |
 | --- |
