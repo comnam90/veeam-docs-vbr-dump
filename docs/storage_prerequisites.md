@@ -3,7 +3,7 @@ title: "Universal Storage API Integrated Systems"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_prerequisites.html"
-last_updated: "1/6/2026"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,6 +22,7 @@ product_version: "13.0.1.1071"
 * [Dell SC Series](https://www.veeam.com/kb4798)
 * [Fujitsu ETERNUS AF/DX Series](https://www.veeam.com/kb4043)
 * [Hitachi VSP/VSP One Block](https://www.veeam.com/kb4191)
+* [HPE XP](https://www.veeam.com/kb4194)
 * [IBM FlashSystem](https://www.veeam.com/kb4650)
 * [INFINIDAT InfiniBox F Series](https://www.veeam.com/kb4009)
 * [NEC Storage M Series](https://www.veeam.com/kb4274)
@@ -29,7 +30,6 @@ product_version: "13.0.1.1071"
 * [Pure Storage FlashArray](https://www.veeam.com/kb4129)
 * [Tintri IntelliFlash/Western Digital/Tegile](https://www.veeam.com/kb3226)
 
-* [For Dell SC] Make sure that multiple proxy servers are not part of a single Server object.
 * Some storage system vendors provide the capability to configure additional integration options — such as limiting the scope of storage systems involved in the integration, specifying the primary node in active-active replication scenarios or others. After you add the storage system to the backup infrastructure, edit the configuration file and specify the options provided by the vendor. For the Linux-based backup server, edit the /etc/veeam/plugins/storages/<plugin-name> configuration file as described in [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md#config). For the Microsoft Windows-based backup server, edit the C:\ProgramData\Veeam\Storage\<Plugin Name> configuration file. For the information on the file format and the list of available options, see the vendor documentation of the plug-in.
 
 
