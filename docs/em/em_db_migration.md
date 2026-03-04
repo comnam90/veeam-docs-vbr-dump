@@ -3,7 +3,7 @@ title: "Migrating Enterprise Manager from Microsoft SQL Server to PostrgeSQL"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_db_migration.html"
-last_updated: "11/14/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,8 +26,9 @@ Account Permissions
 
 The Enterprise Manager Database Migration utility requires access to the registry so you must run the command-line shell as administrator. In addition, make sure that the accounts used to run the utility and connect to the target PostgreSQL database have the necessary permissions.
 
+Account Permissions
+
 | Command | Required Permissions |
-| --- | --- |
 | /backupemdatabase | The account that runs the /backupemdatabase command must either be the Enterprise Manager service account or any other account with the following permissions:   * Local Administrator permissions on the Enterprise Manager server. * Log on as a service permission. * The account must also be assigned either of the following roles on the level of the Microsoft SQL Server database:  * db\_owner role * db\_datareader and db\_datawriter roles |
 | /restoreemdatabase | The account that you specify to authenticate against a PostgreSQL server in the /login parameter must be a superuser. If you don't specify any parameter, the utility will use the account under which the Veeam Backup Enterprise Manager Service is running. |
 
@@ -43,14 +44,14 @@ To migrating Enterprise Manager from Microsoft SQL Server to PostgreSQL, follow 
 
 |  |
 | --- |
-| Veeam.EM.DB.Migration.exe /file:"C:\EM Configuration\02.emco" /backupemdatabase /encryptionpassword:Password01 /encryptionhint:thatpass |
+| Veeam.EM.DB.Migration.exe /file:"C:\EM Configuration\02.emco" /backupemdatabase /encryptionpassword:"Password&01" /encryptionhint:"that password" |
 
 where:
 
 * /file:"C:\EM Configuration\02.emco" — file name and location of the backup file. If you specify a folder that does not exist, the utility will create it. If a file with the specified name already exists, it will be rewritten.
 * /backupemdatabase — utility backup mode.
-* /encryptionpassword:Password01 — encryption password for the backup file.
-* /encryptionhint:thatpass — password hint.
+* /encryptionpassword:"Password&01" — encryption password for the backup file.
+* /encryptionhint:"that password" — password hint.
 
 Microsoft SQL Server connection settings are not required in the command, the utility gets them from the registry.
 
@@ -58,18 +59,18 @@ Microsoft SQL Server connection settings are not required in the command, the ut
 
 |  |
 | --- |
-| Veeam.EM.DB.Migration.exe /file:"C:\EM Configuration\02.emco" /restoreemdatabase /encryptionpassword:Password01 /servername:enterprise05 /initialcatalog:VeeamBackupReporting\_01 /serverport:5434 /login:postgres /password:Password02 |
+| Veeam.EM.DB.Migration.exe /file:"C:\EM Configuration\02.emco" /restoreemdatabase /encryptionpassword:"Password&01" /servername:enterprise05 /initialcatalog:VeeamBackupReporting\_01 /serverport:5434 /login:postgres /password:"Password&02" |
 
 where:
 
 * /file:"C:\EM Configuration\02.emco" — file name and location of the backup file.
 * /restoreemdatabase — utility restore mode.
-* /encryptionpassword:Password01 — encryption password for the backup file.
+* /encryptionpassword:"Password&01" — encryption password for the backup file.
 * /servername:enterprise05 — name of the target PostgreSQL server.
 * /initialcatalog:VeeamBackupReporting\_01 — target PostgreSQL instance.
 * /serverport:5434 — port number of the target PostgreSQL instance.
 * /login:postgres — account name used to authenticate against the PostgreSQL server.
-* /password:Password02 — password used to authenticate against the PostgreSQL server.
+* /password:"Password&02" — password used to authenticate against the PostgreSQL server.
 
 1. Connect Enterprise Manager to the restored database using the Configuration Database Connection Settings utility. For more information, see [Connecting Enterprise Manager to Another Configuration Database](dbconfig_utility.md).
 
@@ -95,12 +96,18 @@ With the Enterprise Manager Database Migration utility, you can perform the foll
 | --- |
 | Veeam.EM.DB.Migration.exe /? |
 
+|  |
+| --- |
+| Tip |
+| Use double quotation marks (") around parameter values that contain spaces or special characters. |
+
 Utility Parameters
 
 The table below describes parameters that you can use to back up and restore the Enterprise Manager configuration database.
 
+Utility Parameters
+
 | Parameter | Description |
-| --- | --- |
 | /? | Displays help. |
 | /file:<value> | Specifies file name and location of an EMCO backup file. |
 | /encryptionpassword:<value> | Specifies a password for backup file encryption. |
