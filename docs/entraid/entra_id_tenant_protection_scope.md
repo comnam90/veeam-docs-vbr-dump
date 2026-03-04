@@ -3,7 +3,7 @@ title: "Step 3. Specify Protection Scope"
 product: "vbr"
 doc_type: "entraid"
 source_url: "https://helpcenter.veeam.com/docs/vbr/entraid/entra_id_tenant_protection_scope.html"
-last_updated: "11/19/2025"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
