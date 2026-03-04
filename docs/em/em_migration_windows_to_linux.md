@@ -3,7 +3,7 @@ title: "Migrating Enterprise Manager from Windows to Linux"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_migration_windows_to_linux.html"
-last_updated: "11/14/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -51,7 +51,7 @@ To migrate Enterprise Manager, follow these steps:
 
 |  |
 | --- |
-| Veeam.EM.DB.Migration.exe /file:"C:\em\_configuration.emco" /backupemdatabase /encryptionpassword:Password01 /encryptionhint:thatpassword |
+| Veeam.EM.DB.Migration.exe /file:"C:\em\_configuration.emco" /backupemdatabase /encryptionpassword:"Password&01" /encryptionhint:"that password" |
 
 1. Transfer the backup file to the Linux machine where Enterprise Manager is deployed as part of Veeam Software Appliance:
 
@@ -69,7 +69,7 @@ To migrate Enterprise Manager, follow these steps:
 
 |  |
 | --- |
-| # dotnet /opt/veeam/vbem/Veeam.EM.DB.Migration.dll /file:"/tmp/em\_configuration.emco" /restoreemdatabase /encryptionpassword:'Password01' |
+| # dotnet /opt/veeam/vbem/Veeam.EM.DB.Migration.dll /file:"/tmp/em\_configuration.emco" /restoreemdatabase /encryptionpassword:'Password&01' |
 
 1. Update the configuration database name in the configuration file /etc/veeam/veeam\_backup\_reporting.conf:
 
@@ -84,8 +84,9 @@ Utility Parameters
 
 The table below describes the Veeam.EM.DB.Migration parameters that you can use to migrate Enterprise Manager from Microsoft Windows to Linux.
 
+Utility Parameters
+
 | Parameter | Description |
-| --- | --- |
 | /? | Displays help. |
 | /file:<value> | Specifies file name and location of an EMCO backup file. |
 | /encryptionpassword:<value> | Specifies a password for backup file encryption. |
