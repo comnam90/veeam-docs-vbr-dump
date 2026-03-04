@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_considerations.html"
-last_updated: "1/21/2026"
+last_updated: "2/27/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -33,16 +33,13 @@ Restore
 
 * Veeam Explorer for Microsoft Exchange does not support restore using PowerShell Direct, VIX API or vSphere Automation API.
 * Sending objects that exceed 3 MB in size may fail. To fix this issue, install [this Microsoft update](https://support.microsoft.com/en-us/help/2468871/update-for-the-net-framework-4-march-2011).
-* Bulk restore (restore of multiple objects) is not supported for public folder mailboxes. Use the regular per-object restore instead.
+* Restore of public folders can be performed to the original location only.
+* Bulk restore (restore of multiple objects) using modern authentication with the Microsoft Entra application certificate is not supported for public folder mailboxes. Use the regular per-object restore instead.
 * Mailboxes can be restored only to mailboxes of the same type. For example, a user mailbox to a user mailbox, an archive mailbox to an archive mailbox.
-* To restore In-Place Hold Items or Litigation Hold Items to the original location, consider the following:
 
-* In-Place Hold Items restore is not supported for On-Premises Exchange Server 2013 due to EWS limitations.
-* To restore In-Place Hold Items of Exchange 2016 mailboxes, these mailboxes must have In-Place Hold enabled and applied at least once with DiscoveryHolds system folder creation. Otherwise, restore will fail with the following error:
+* To restore In-Place Hold Items of Exchange 2016/2019 mailboxes to the original location, these mailboxes must have In-Place Hold enabled and applied at least once with the DiscoveryHolds system folder creation. Otherwise, restore of In-Place Hold Items will fail with the following error: "Failed to restore In-Place Hold Items. Restore of In-Place Hold Items into Exchange 2013 is not supported".
 
-"Failed to restore In-Place Hold Items. Restore of In-Place Hold Items into Exchange 2013 is not supported".
-
-For information on enabling In-Place Hold and Litigation Hold, see [this Microsoft article](https://technet.microsoft.com/en-us/library/ff637980%28v%3Dexchg.160%29.aspx).
+For more information about enabling In-Place Hold and Litigation Hold, see [this Microsoft article](https://technet.microsoft.com/en-us/library/ff637980%28v%3Dexchg.160%29.aspx).
 
 * [For Veeam Explorer for Microsoft Exchange that comes with Veeam Backup & Replication] Restore of an entire mailbox or selected mailbox items to the original location is available with Veeam Universal License. When using a legacy socket-based license, the Enterprise or Enterprise Plus editions of Veeam Backup & Replication is required.
 

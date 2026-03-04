@@ -3,7 +3,7 @@ title: "Gateway Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gateway_server.html"
-last_updated: "10/17/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,7 +29,9 @@ Requirements and Limitations for Gateway Servers
 
 Consider the following:
 
-* The gateway server can run on a Microsoft Windows or Linux machine or Microsoft Hyper-V host that is added to the backup infrastructure as a managed server. The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#gateway).
+* The gateway server can run on a Microsoft Windows or Linux machine or Microsoft Hyper-V host that is added to the backup infrastructure as a managed server. Note that the Hyper-V host is not available for the deduplicating storage appliances.
+
+The used machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#gateway).
 
 * The fast clone on ReFS volumes feature requires a Microsoft Windows gateway server.
 
@@ -69,8 +71,9 @@ Automatic Gateway Selection
 
 If you instruct Veeam Backup & Replication to select gateway servers automatically, Veeam Backup & Replication uses the backup infrastructure components described in the following table. Note that principles described in the [Gateway Selection](#selection) section also apply, and multiple gateway servers may be used for concurrent tasks. If the primary selection gateway server is not accessible, Veeam Backup & Replication fails over to the next available option.
 
+Automatic Gateway Selection
+
 | Type of job | Component used as gateway server | Component used as gateway server for synthetic operations |
-| --- | --- | --- |
 | Backup job / File backup job | [For VMware vSphere environments] Backup proxy that was assigned first to process workload data / file share for a backup job.  [For Microsoft Hyper-V environments] Backup proxy (onhost or offhost).  For backup and file backup jobs to an object storage repository with the direct connection mode, Veeam Backup & Replication does not use only one proxy as the gateway server for the entire job duration. Instead, it assigns the role of a gateway server to the least loaded available proxy before each operation. | Synthetic operations are performed on the mount server associated with the backup repository. If the mount server is not accessible, Veeam Backup & Replication fails over to the backup server. |
 | Backup copy job / File backup copy job | For backup copy and file copy jobs, the selected gateway depends on the type of the source backup repository:   * [Direct attached repository](backup_repository.md). The mount server associated with the backup repository is used as the gateway server. If the mount server is not accessible, Veeam Backup & Replication fails over to the backup server. * Backup repository with the gateway server connection. The gateway of the source backup repository is used.   For backup copy and file copy jobs to an [object storage repository](object_storage_repository.md) with the direct connection mode, the source backup repository is used as the gateway server.  For backup copy jobs that work over WAN accelerators, the role of a gateway server is assigned to source or target WAN accelerator (depending on the shared folder backup repository location). File backup copy job does not support WAN accelerators. | Synthetic operations are performed on the mount server associated with the backup repository. If the mount server is not accessible, Veeam Backup & Replication fails over to the backup server.  These rules are applied to the direct data path and processing over WAN accelerators. File backup copy job does not support WAN accelerators. |
 | Tape job | If there is a direct connection between a backup repository and tape device, the role of a gateway server is assigned to the tape server.  Otherwise, the role of a gateway server is assigned to the backup server. | Synthetic operations are performed on the mount server associated with the backup repository. If the mount server is not accessible, Veeam Backup & Replication fails over to the backup server. |

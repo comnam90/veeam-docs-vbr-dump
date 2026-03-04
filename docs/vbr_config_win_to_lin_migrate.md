@@ -3,7 +3,7 @@ title: "Migrating Veeam Backup & Replication to Linux-Based Backup Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_win_to_lin_migrate.html"
-last_updated: "11/19/2025"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -86,6 +86,9 @@ After you migrate the configuration backup, finalize the configuration:
 * If you use a hardened repository with immutability, after migration this server will not be available. In this case, you must specify single-use credentials for this repository again. For more information, see [Editing Settings of Backup Repositories](backup_repo_edit.md).
 * If you use Linux hosts in your backup infrastructure, after migration these hosts and hosts that are associated with them will not be available. (For example, if you have a Linux host with the backup proxy role, the backup repositories to which this Linux-based backup proxy transfer during a backup job will not be available). In this case, you must [open the Edit Linux Server wizard](edit_server.md) for the necessary Linux host, follow the steps of the wizard and click Finish.
 * If you have Veeam Agent backup jobs managed by Veeam Agents, update the backup policies after the migration process.
+
+* If you use Veeam Plug-In for Nutanix AHV, Veeam Plug-In for Proxmox VE, Veeam Plug-in for oVirt KVM or Veeam Plug-in for Scale Computing HyperCore, workers will be automatically redeployed after the migration.
+
 * You can safely uninstall Veeam Backup & Replication from the old backup server after migration.
 * [For VMware vSphere] If you use CDP, after the migration the I/O filter will be owned by the previous backup server. You must take ownership of the I/O filter on the new backup server. For more information, see [Taking I/O Filter Ownership](cdp_io_filter_ownership.md).
 

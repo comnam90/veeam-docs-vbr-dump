@@ -3,7 +3,7 @@ title: "Kerberos Authentication (Storage Systems)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_kerberos.html"
-last_updated: "1/6/2026"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ General Requirements and Limitations
 
 For management connection:
 
-* Kerberos authentication is supported for the following storage systems: Dell Unity (XT), HPE 3PAR StoreServ, HPE Primera, HPE Alletra 9000, HPE Alletra Storage MP B10000, HPE Nimble, HPE Alletra 6000, HPE Alletra 5000, Pure Storage FlashArray, INFINIDAT InfiniBox F Series, Dell SC Series, Dell PowerStore, Dell PowerMax, Hitachi VSP/VSP One Block, NetApp ONTAP, Lenovo ThinkSystem DM/DG Series, NetApp Element, Tintri IntelliFlash.
+* Kerberos authentication is supported for the following storage systems: Dell Unity (XT), HPE 3PAR StoreServ, HPE Primera, HPE Alletra 9000, HPE Alletra Storage MP B10000, HPE Nimble, HPE Alletra 6000, HPE Alletra 5000, Pure Storage FlashArray, INFINIDAT InfiniBox F Series, Dell SC Series, Dell PowerStore, Dell PowerMax, Hitachi VSP/VSP One Block, HPE XP, NetApp ONTAP, Lenovo ThinkSystem DM/DG Series, NetApp Element, Tintri IntelliFlash.
 * Storage systems that use SSH are not supported.
 
 [For VMware integration] For data connections, that is, used during backup and restore:
@@ -34,6 +34,7 @@ When adding storage systems that use Kerberos, specify user names in the followi
 * Hitachi VSP/VSP One Block: username
 * HPE 3PAR StoreServ, HPE Primera, HPE Alletra 9000, HPE Alletra Storage MP B10000: username
 * HPE Nimble, HPE Alletra 6000, HPE Alletra 5000: username, domain\username, username@domain
+* HPE XP: username
 * INFINIDAT InfiniBox F Series: username
 * NetApp Element: username
 * NetApp ONTAP, Lenovo ThinkSystem DM/DG Series: domain\username

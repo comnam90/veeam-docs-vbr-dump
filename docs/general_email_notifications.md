@@ -3,7 +3,7 @@ title: "Configuring Global Email Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_email_notifications.html"
-last_updated: "12/23/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,23 +16,24 @@ To configure global email notification settings:
 2. Open the Email Settings tab and select the Enable email notifications check box.
 3. [Configure mail server](#configuring_mail_server).
 4. [Customize send settings](#customizing_send_settings).
+5. [Enable the data resilience daily summary report](#enable_ai_report).
 
 Configuring Mail Server
 
-To configure mail server, perform the following steps:
+To configure mail server, in the Mail server field, specify the authentication method you want to use. Veeam Backup & Replication supports the following methods:
 
-1. In the Mail server field, specify the authentication method you want to use. Veeam Backup & Replication supports the following methods:
-
-* SMTP basic authentication
-* Google Gmail OAuth 2.0 authentication
-* Microsoft 365 OAuth 2.0 authentication
+* [SMTP basic authentication](#smtp_auth)
+* [Google Gmail OAuth 2.0 authentication](#gmail_auth)
+* [Microsoft 365 OAuth 2.0 authentication](#microsoft_auth)
 
 |  |
 | --- |
 | Note |
 | For more secure environments, it is recommended to use OAuth 2.0 authentication. Also, note that Microsoft and Google consider SMTP basic authentication as an outdated industry standard and they disabled it. For more information, see [this Microsoft article](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online) and [this Google article](https://support.google.com/accounts/answer/6010255). |
 
-1. If you want to use SMTP basic authentication, perform the following steps:
+Configuring SMTP Basic Authentication
+
+If you want to use SMTP basic authentication, perform the following steps:
 
 1. In the Mail server field, select SMTP server from the list.
 2. In the SMTP server field, enter a full DNS name, or IPv4 or IPv6 address of the SMTP server that will be used for sending email notifications. Note that you can use IPv6 addresses only if IPv6 communication is enabled as described in section [IPv6 Support](ipv6.md).
@@ -49,11 +50,14 @@ To configure mail server, perform the following steps:
 | Sending email notifications using Implicit TLS (over port 465) is not supported. For more information about Implicit TLS, see [this RFC section](https://www.rfc-editor.org/rfc/rfc8314#section-3). |
 
 * To use a secure connection for email operations, select the Connect using SSL check box.
+
 * If you need to connect to the SMTP server using a specific account, select the This SMTP server requires authentication check box and select the necessary credentials from the Log on as list. If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials. For more information, see [Credentials Manager](credentials_manager.md).
 
 When you add an SMTP server, Veeam Backup & Replication saves to the configuration database a thumbprint of the TLS certificate. If the certificate is not trusted, Veeam Backup & Replication displays a warning. If you trust the certificate, click Continue.
 
-1. If you want to use Google Gmail OAuth 2.0 authentication, perform the following steps:
+Configuring Google Gmail OAuth 2.0 Authentication
+
+If you want to use Google Gmail OAuth 2.0 authentication, perform the following steps:
 
 1. In the Mail server field, select Google Gmail from the list and click the Sign in with Google button.
 
@@ -77,7 +81,9 @@ To specify custom authentication options, click the Advanced button:
 
 For more information on how to register your custom application, see [Registering Application in Google Cloud Console](registering_google_app.md).
 
-1. If you want to use Microsoft 365 OAuth 2.0 authentication, perform the following steps:
+Configuring Microsoft 365 OAuth 2.0 Authentication
+
+If you want to use Microsoft 365 OAuth 2.0 authentication, perform the following steps:
 
 1. In the Mail server field, select Microsoft 365 from the list and click the Authorize now link.
 
@@ -130,6 +136,7 @@ For every particular job, you can specify additional recipients. For more inform
 1. In the Send daily reports at field, specify at what time Veeam Backup & Replication will send daily email reports. Daily reports are generated for different purposes throughout Veeam Backup & Replication:
 
 * Reports about processing results of scale-out repository data. For more information, see [Receiving Scale-Out Backup Repository Reports](sobr_reports.md).
+* Reports about processing results of backup jobs. For more information, see [Notification Settings](backup_job_advanced_notify_vm.md) in the Creating Backup Jobs.
 * Reports about processing results of backup copy jobs. For more information, see [Notification Settings](backup_copy_settings_notification.md) in the Creating Backup Copy Jobs for VMs and Physical Machines section.
 * Reports about processing results of backup copy jobs for transaction log backups. For more information about transaction log backups, see [Microsoft SQL Server Logs Backup](sql_backup.md).
 * Reports about backups of virtual and physical machines created by [Veeam Agent for Microsoft Windows or Veeam Agent for Linux](agents_introduction.md) in the Managed by Agent mode.
@@ -148,6 +155,27 @@ For every particular job, you can specify additional recipients. For more inform
 1. Select the Suppress notifications until the last retry check box to receive a notification about the final job status. If you do not enable this option, Veeam Backup & Replication will send one notification per every job retry. This option does not apply to immediate backup copy jobs.
 
 1. Veeam Backup & Replication allows sending a test email to check if all settings have been configured correctly. To send a test email, click Test Message.
-2. Select the Send me a daily AI-powered summary of all backup activities check box to receive daily summary report. For more information, see [Data Resilience Daily Summary Report](backup_reporting_email.md#morning_coffe_report).
+
+Job Session Report
+
+By default, Veeam Backup & Replication sends an email notification after each job session completes. You can enable and specify custom notification settings for a specific job. This may be useful if you want to change the subject, the notification rules, or the list of recipients for certain reports. For detailed instructions, see [Configuring Job Notification Settings](job_email_notifications.md).
+
+Software Updates Summary
+
+By default, Veeam Backup & Replication sends a daily report at 10:00 PM that includes a list of software updates that ended with Success, Warning or Failure.
+
+Enabling Data Resilience Daily Summary Report (Morning Coffee Report)
+
+The AI-generated daily summary report gives a detailed overview of all job sessions and their statuses. The report lists errors and warnings, explains their causes, and recommends actions to resolve them. It also includes links to relevant resources and groups error codes by workload, which helps simplify the troubleshooting process.
+
+To configure Veeam Backup & Replication to send the data resilience daily summary report by email, you must enable Veeam Intelligence Advanced mode and have a valid Veeam Backup & Replication license.
+
+To turn on the report, do the following:
+
+1. In the Options window, switch to the Veeam Intelligence tab.
+2. On the Veeam Intelligence tab, select Advanced mode. For more information about the Advanced mode, see [Veeam Intelligence](veeam_ai_online_assistant.md#advanced_mode).
+3. On the Email Settings tab, select the Send me a daily AI-powered summary of all backup activities option.
+
+![Configuring Global Email Notification Settings](images/ai_report_enable_console.webp)
 
 

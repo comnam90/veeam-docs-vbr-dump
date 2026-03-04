@@ -3,7 +3,7 @@ title: "FIPS Compliance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/fips_compliance.html"
-last_updated: "1/9/2026"
+last_updated: "2/27/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,6 +16,7 @@ When this mode is enabled:
 
 * Veeam Backup & Replication uses [platform-provided cryptographic APIs](communications_encryption.md#encryption_libraries) and the [Veeam Cryptographic Module](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4282).
 * NTLM is disabled. Kerberos is the only available domain authentication protocol.
+* Persistent agents components must be used for guest processing.
 * Connections cannot be established with components that are not FIPS-compliant.
 * Self-tests are performed. For more information, see the Self-tests section of the [Veeam FIPS 140-2 Security Policy](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4282.pdf).
 

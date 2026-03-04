@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "2/25/2026"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -116,7 +116,7 @@ Integration with Storage Systems
 
 1. IBM FlashSystem: If you are using IBM FlashSystem Plug-In for Veeam Backup & Replication, upgrade it to version 2.3.77 or later. If the plug-in version is lower than the minimum required, storage integration will not function.
 2. Hitachi VSP: If you are using Hitachi for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with Hitachi is available starting from Veeam Backup & Replication version 13.0.1.1071.
-3. HPE XP: If you are using HPE XP Plug-In for Veeam Backup & Replication, storage integration will stop working after the upgrade. Plug-in version with support for Veeam Backup & Replication will be released by the vendor later.
+3. HPE XP: If you are using HPE XP for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with HPE XP is available starting from Veeam Backup & Replication version 13.0.1.1071.
 4. NEC Storage V Series: If you are using NEC Storage V Series Plug-In for Veeam Backup & Replication, storage integration will stop working after the upgrade. Plug-in version with support for Veeam Backup & Replication will be released by the vendor later.
 5. Make sure your storage systems work on a supported operating system:
 

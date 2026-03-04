@@ -3,7 +3,7 @@ title: "Migrating Veeam Backup & Replication to Another Windows-Based Backup Ser
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_migrate.html"
-last_updated: "12/19/2025"
+last_updated: "3/2/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -82,6 +82,7 @@ After you restore the configuration backup, finalize the configuration:
 * If you have local repositories, after migration to another machine they may be displayed as empty. In this case, add them again and remap the jobs.
 * If you use custom guest processing scripts, YARA rules or SureBackup roles, manually copy them to the new backup server.
 * Enable your backup jobs and backup copy jobs. Take a closer look at your backup infrastructure to ensure that everything is working as expected.
+* If you use Veeam Plug-In for Nutanix AHV, Veeam Plug-In for Proxmox VE, Veeam Plug-in for oVirt KVM or Veeam Plug-in for Scale Computing HyperCore, workers will be automatically redeployed after the migration.
 * If you use Veeam Backup & Replication to back up storage systems, after migration they will not be added to the backup infrastructure. In this case, you must re-add them after migration completes. For more information, see [Storage System Snapshot Integration](storage_integration.md).
 * If you use a hardened repository with immutability, after migration this server will not be available. In this case, you must specify single-use credentials for this repository again. For more information, see [Editing Settings of Backup Repositories](backup_repo_edit.md).
 * If you use Linux hosts in your backup infrastructure, after migration these hosts and hosts that are associated with them will not be available. (For example, if you have a Linux host with the backup proxy role, the backup repositories to which this Linux-based backup proxy transfer during a backup job will not be available). In this case, you must [open the Edit Linux Server wizard](edit_server.md) for the necessary Linux host, follow the steps of the wizard and click Finish.

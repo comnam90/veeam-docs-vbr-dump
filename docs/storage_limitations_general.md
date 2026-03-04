@@ -3,7 +3,7 @@ title: "General Requirements and Limitations (Storage Systems)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_general.html"
-last_updated: "1/22/2026"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -39,6 +39,7 @@ IPv6 is supported for the following storage systems:
 * HPE Primera, HPE Alletra 9000
 * HPE Alletra Storage MP B10000 (management connections only)
 * HPE 3PAR StoreServ (management connections only)
+* HPE XP (data connections only)
 * IBM FlashSystem (management connections only)
 * Lenovo ThinkSystem DM/DG Series
 * NEC Storage M Series (management connections only)
