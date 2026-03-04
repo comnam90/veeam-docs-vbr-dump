@@ -3,7 +3,7 @@ title: "Versioning"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/em_web_api_versions.html"
-last_updated: "9/26/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,9 +20,10 @@ The table below describes relations between versions of Veeam Backup Enterprise 
 
 The Deprecated support status is intermediate. Deprecated REST API versions are expected to become unsupported. You can still use them but it is recommended that you switch to a newer one.
 
+Versioning
+
 | REST API Version | Support Status | Veeam Backup & Replication Version | Logon Session URL |
-| --- | --- | --- | --- |
-| 1.7 | Supported | 12 to 12.1 | https://<Enterprise-Manager>:9398/api/sessionMngr/?v=v1\_7  https://<Enterprise-Manager>:9398/api/sessionMngr/?v=latest |
+| 1.7 | Supported | 12 to 13 | https://<Enterprise-Manager>:9398/api/sessionMngr/?v=v1\_7  https://<Enterprise-Manager>:9398/api/sessionMngr/?v=latest |
 | 1.6 | Deprecated | 11 to 11a | https://<Enterprise-Manager>:9398/api/sessionMngr/?v=v1\_6 |
 | 1.5 | Deprecated | 10.0 to 10a | https://<Enterprise-Manager>:9398/api/sessionMngr/?v=v1\_5 |
 | 1.4 | Not supported | 9.5 Update 4 to 9.5 Update 4b | — |
