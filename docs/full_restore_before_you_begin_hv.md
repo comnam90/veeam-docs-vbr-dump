@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_before_you_begin_hv.html"
-last_updated: "10/21/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,7 @@ Before you restore a VM from a backup, consider the following:
 
 * You can restore a VM from a backup that has at least one successfully created restore point.
 
-* Check requirements and limitations in the [VMs](platform_support.md#vms) section in [Supported Platforms, Applications and Workloads](platform_support.md).
+* Check requirements and limitations in the [VMs](platform_support_hv.md#vms) section in [Workloads](platform_support_hv.md).
 
 * [For restore to original location] If the original VM is still running, Veeam Backup & Replication powers off the original VM and deletes it before the restore.
 * If you want to scan VM data for viruses, check the [secure restore requirements and limitations](av_scan_about.md#av_limitations).
