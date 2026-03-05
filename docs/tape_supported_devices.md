@@ -3,7 +3,7 @@ title: "Supported Devices and Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_supported_devices.html"
-last_updated: "9/5/2025"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,7 +15,7 @@ Veeam Backup & Replication supports Linear Tape-Open (LTO) and IBM 3592 (Jaguar)
 * Physical libraries, standalone drives and virtual tape libraries.
 * Partitions of the physical or virtual tape libraries presented to the Veeam backup server.
 
-For more information on supported devices, see [System Requirements](system_requirements.md#tape).
+For more information on supported devices, see [System Requirements](system_requirements_tape.md).
 
 Limitations
 
