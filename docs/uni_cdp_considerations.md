@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_considerations.html"
-last_updated: "1/22/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ Infrastructure Components
 
 Source Workloads
 
-* Check the list of [supported operating systems](platform_support.md#uni).
+* Check the list of [supported operating systems](platform_support_universal_cdp.md).
 * Universal CDP works only for powered on workloads.
 * You can add protection groups as a source for replication. If you add new workloads to the protection group after you start the policy, you must install the Veeam CDP Agent Service and Veeam CDP Volume Filter Driver on those workloads. To complete that, do the following:
 
@@ -49,7 +49,7 @@ Target Host or Cluster
 
 * The requirements for target destination and its datastores are practically the same as for CDP for VMware vSphere. For more information, see the following topics:
 
-* [Supported Platforms, Applications and Workloads](platform_support.md#cdp)
+* [Workloads](platform_support_vm.md#cdp)
 
 Note that the minimum ESXi version required is 8.0 for the universal CDP.
 
