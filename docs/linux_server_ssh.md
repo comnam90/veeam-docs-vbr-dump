@@ -3,7 +3,7 @@ title: "Step 3. Specify Credentials and SSH Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server_ssh.html"
-last_updated: "12/5/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -67,7 +67,7 @@ If the role of the Linux server is changed, you can uninstall or reinstall the c
 |  |
 | --- |
 | Note |
-| Depending on the selected components (possible roles), the Linux server may require additional packages that must be installed before you add the server to the backup infrastructure. For details, see requirements for the role assigned. For example, see [Mount Server System Requirements](system_requirements.md#mount). |
+| Depending on the selected components (possible roles), the Linux server may require additional packages that must be installed before you add the server to the backup infrastructure. For details, see requirements for the role assigned. For example, see [Mount Server System Requirements](system_requirements_mount_server.md). |
 
 ![Step 3. Specify Credentials and SSH Settings](images/add_server_linux_components.webp)
 
