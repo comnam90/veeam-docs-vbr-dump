@@ -3,7 +3,7 @@ title: "Veeam Updater"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_updater.html"
-last_updated: "2/13/2026"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use cmdlets in this topic to perform the following operations:
 
+Veeam Updater
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VBRAvailableUpdates](get-vbravailableupdates.md) | Returns available software updates for a Linux-based backup server or a Veeam Infrastructure Appliance. |
 | [Install-VBRAvailableUpdates](install-vbravailableupdates.md) | Installs available software updates on a Linux-based backup server or a Veeam Infrastructure Appliance. |
 | [Get-VBRGeneralUpdateOptions](get-vbrgeneralupdateoptions.md) | Returns general update settings for the Linux-based backup server and Veeam Infrastructure Appliances. |
