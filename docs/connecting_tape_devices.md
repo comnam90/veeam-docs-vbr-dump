@@ -3,7 +3,7 @@ title: "Connecting Tape Devices"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/connecting_tape_devices.html"
-last_updated: "10/20/2025"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,7 @@ To deploy a tape device, you must perform the following steps:
 
 Note that Veeam Software Appliance cannot be used as a tape server.
 
-* As a tape server, you can use a Microsoft Windows or Linux server, physical or virtual, accessible by Veeam Backup & Replication. For the tape server system requirements, see [System Requirements](system_requirements.md#tape_server).
+* As a tape server, you can use a Microsoft Windows or Linux server, physical or virtual, accessible by Veeam Backup & Replication. For the tape server system requirements, see [System Requirements](system_requirements_tape_server.md).
 
 A dedicated tape server is recommended for installations with intense data transferring. A dedicated tape server allows you to manage remote tape libraries.
 
