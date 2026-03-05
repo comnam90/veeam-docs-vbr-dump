@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcdreplica_byb.html"
-last_updated: "11/18/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you create a VMware Cloud Director replication job, check the following prerequisites:
 
-* Check the supported Cloud Director versions in [Supported Platforms, Applications and Workloads](platform_support.md#cloud_dir).
+* Check the supported Cloud Director versions in [Workloads](platform_support_vm.md#cloud_dir).
 
 * You must [add VMware Cloud Director server](adding_vcloud_director.md) to the backup infrastructure. The backup server must be able to resolve short names and connect to source and target virtualization hosts.
 * You must [set up the organization VDC](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-D8A4277E-6F45-45D2-94D0-58D2E1175C67.html) that will keep the replicas.
