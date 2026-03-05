@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_before_you_begin.html"
-last_updated: "10/21/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ General Considerations
 
 Before you create an object storage backup job, consider the following:
 
-* Consider limitations listed in the [Supported Platforms, Applications and Workloads](platform_support.md#os) section.
+* Consider limitations listed in the [Workloads](platform_support_unstructured_data.md) section.
 * The account that you use to add Amazon S3 and S3 Compatible object storage as unstructured sources and back up data from them must be able to perform the actions listed in the [Permissions](required_permissions.md#os_unstructured) section.
 * Backup infrastructure components that will take part in the object storage backup process must be added to the backup infrastructure and properly configured. These include objects storage sources to back up, backup proxies, and all repositories, including cache, backup, archive, and secondary repositories. For more information, see the [Backup Infrastructure for Unstructured Data Backup](unstructured_data_backup_infrastructure.md) section.
 * The target backup repository must have enough free space to store created backup files. If you want to receive notifications on the repository running low on free space, configure global notification settings as described in the [Specifying Global Notification Settings](global_notifications.md) section.
