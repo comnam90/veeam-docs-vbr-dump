@@ -3,7 +3,7 @@ title: "Add-VBRSyslogEventFilter"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrsyslogeventfilter.html"
-last_updated: "11/18/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,8 +36,9 @@ By default, all events are sent to the syslog server. To exclude specific severi
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | EventId | Specifies an event ID. For a complete list of event IDs, see [Event IDs List](https://helpcenter.veeam.com/docs/backup/events/event_id_list.html?ver=13). | Int64 | True | Named | False |
 | FilterErrors | Determines whether events with the Error severity level are excluded from being sent to the syslog server.  Default: True | Boolean | False | Named | False |
 | FilterInfos | Determines whether events with the Info severity level are excluded from being sent to the syslog server.  Default: True | Boolean | False | Named | False |
