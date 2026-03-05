@@ -3,7 +3,7 @@ title: "General Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_limitations.html"
-last_updated: "2/17/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -75,7 +75,7 @@ Deployment Considerations and Limitations
 
 Consider the following deployment imitations:
 
-* Make sure that a proxy server that you plan to use, meets the System Requirements for a [VMware vSphere proxy server](system_requirements.md#proxy) or a [Hyper-V off-host proxy server](system_requirements.md#offhost_proxy) depending on the protected platform.
+* Make sure that a proxy server that you plan to use, meets the System Requirements for a [VMware vSphere proxy server](system_requirements_vmware_proxy.md) or a [Hyper-V off-host proxy server](system_requirements_hv_proxy.md) depending on the protected platform.
 * You must locate your proxy server as close as possible to the backup source host.
 * Veeam Agent transfers data to the object storage repositories without a proxy server. Make sure that you grant Veeam Backup & Replication and Veeam Agent necessary permissions. For more information on how to configure permissions within Veeam Backup & Replication, see [Access Permissions](access_permissions.md#s3permissions). For more information on how to configure permissions for Veeam Agent, see the [Permissions](agents_permissions.md#s3) section in Veeam Agent Backup. For more information on how Veeam Agent works in direct connection with object storage repositories, see the [Access Permissions](agents_object_storage_direct_access.md#S3) section in Veeam Agent Backup.
 * [For backup copy jobs and file backup copy jobs] Veeam Backup & Replication uses the source backup repository as the gateway server. For more information, see the [Automatic Gateway Selection](gateway_server.md#auto) section.
