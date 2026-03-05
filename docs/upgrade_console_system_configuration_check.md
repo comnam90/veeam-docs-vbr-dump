@@ -3,7 +3,7 @@ title: "Step 4. Install Missing Software"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_console_system_configuration_check.html"
-last_updated: "10/22/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,7 +17,7 @@ If the setup wizard cannot install some of the required software components auto
 |  |
 | --- |
 | Note |
-| If all required software is already installed on the machine, the System Configuration Check step will be skipped. For more information on the necessary software, see [System Requirements](system_requirements.md#backup_server). |
+| If all required software is already installed on the machine, the System Configuration Check step will be skipped. For more information on the necessary software, see [System Requirements](system_requirements_console.md). |
 
 ![Step 4. Install Missing Software](images/upgrade_console_system_configuration_check.webp)
 
