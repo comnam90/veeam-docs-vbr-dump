@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repo_before_you_begin.html"
-last_updated: "11/24/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,7 @@ Before you configure a backup repository, check the following prerequisites.
 
 Dell Data Domain
 
-* Dell Data Domain must meet software and hardware requirements. For more information, see [System Requirements](system_requirements.md#target).
+* Dell Data Domain must meet software and hardware requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 * Dell Data Domain must meet requirements listed in [Considerations and Limitations for Dell Data Domain](dell_dd.md#consider).
 * The DD Boost license must be installed on the Dell Data Domain system, DD Boost must be enabled and configured.
 * The gateway server that you plan to use for work with Dell Data Domain must be added to the backup infrastructure.
@@ -24,14 +24,14 @@ If the Dell Data Domain storage system does not meet these requirements, you can
 
 ExaGrid
 
-* ExaGrid must meet software and hardware requirements. For more information, see [System Requirements](system_requirements.md#target).
+* ExaGrid must meet software and hardware requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 * To use ExaGrid as a backup repository, you must configure an ExaGrid share in ExaGrid Manager. For more information on how to configure the share and repository settings, see [ExaGrid](deduplicating_appliance_exgrid.md).
 
 * Check vendor documentation dedicated to integration with Veeam. Some links you can find in [this Veeam KB article](https://www.veeam.com/kb1745#vendordocs).
 
 HPE StoreOnce
 
-* HPE StoreOnce must meet software and hardware requirements. For more information, see [System Requirements](system_requirements.md#target).
+* HPE StoreOnce must meet software and hardware requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
 * HPE StoreOnce must meet requirements listed in [Considerations and Limitations for HPE StoreOnce](deduplicating_appliance_storeonce.md#consider).
 
@@ -45,13 +45,13 @@ If the HPE StoreOnce storage system does not meet these requirements, you can ad
 
 Quantum DXi
 
-* Quantum DXi must meet software and hardware requirements. For more information, see [System Requirements](system_requirements.md#target).
+* Quantum DXi must meet software and hardware requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
 * To use Quantum DXi as a backup repository, you must configure a Quantum DXi share. For more information, see [Quantum DXi](deduplicating_appliance_quantum.md).
 
 Fujitsu ETERNUS CS800
 
-* Fujitsu ETERNUS CS800 must meet software requirements. For more information, see [System Requirements](system_requirements.md#target).
+* Fujitsu ETERNUS CS800 must meet software requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
 * To use Fujitsu ETERNUS CS800 as a backup repository, you must configure a Fujitsu share. For more information, see [Fujitsu ETERNUS CS800](fujitsu.md).
 
@@ -59,7 +59,7 @@ Fujitsu ETERNUS CS800
 
 Infinidat InfiniGuard
 
-* Infinidat InfiniGuard must meet software requirements. For more information, see [System Requirements](system_requirements.md#target).
+* Infinidat InfiniGuard must meet software requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
 * To use Infinidat InfiniGuard as a backup repository, you must configure a Infinidat InfiniGuard share. For more information, see [Infinidat InfiniGuard](infinidat_infiniguard.md).
 
