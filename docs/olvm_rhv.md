@@ -1,13 +1,13 @@
 ---
-title: "Oracle Linux Virtualization Manager and Red Hat Virtualization"
+title: "oVirt KVM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/olvm_rhv.html"
-last_updated: "1/29/2026"
+last_updated: "2/26/2026"
 product_version: "13.0.1.1071"
 ---
 
-# Oracle Linux Virtualization Manager and Red Hat Virtualization
+# oVirt KVM
 
 
 Veeam Backup & Replication offers various data protection and disaster recovery features for oVirt KVM environments. Specifically, you can perform the following operations:
