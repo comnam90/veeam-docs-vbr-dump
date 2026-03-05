@@ -3,7 +3,7 @@ title: "Backup Infrastructure for Universal CDP"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_infrastructure.html"
-last_updated: "11/19/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,7 +27,7 @@ For more information on the backup server, see [Backup Server](backup_server.md)
 
 Source Workloads
 
-Source workloads can be of various types, such as physical machines, virtual machines, or cloud instances. However, Veeam Backup & Replication supports specific operation systems. For more information, see [Supported Platforms, Applications and Workloads](platform_support.md#uni).
+Source workloads can be of various types, such as physical machines, virtual machines, or cloud instances. However, Veeam Backup & Replication supports specific operation systems. For more information, see [Universal CDP](platform_support_universal_cdp.md) in [Workloads](platform_support.md).
 
 Veeam CDP Agent Service and Veeam CDP Volume Filter Driver
 
