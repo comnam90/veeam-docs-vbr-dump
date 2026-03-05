@@ -3,7 +3,7 @@ title: "Requirements and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_limitations.html"
-last_updated: "1/23/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -19,7 +19,7 @@ Linux Server
 | Note |
 | Note that these requirements are for manually configured Linux servers. For Linux servers configured using the Veeam Infrastructure Appliance, see [Considerations and Limitations](linux_infrastructure_appliance_byb.md). |
 
-* The role of the hardened repository can be assigned to a Linux machine with local or remotely attached block storage. The machine must meet [system requirements for backup repositories](system_requirements.md#repo).
+* The role of the hardened repository can be assigned to a Linux machine with local or remotely attached block storage. The machine must meet [system requirements for backup repositories](system_requirements_backup_repo.md).
 
 |  |
 | --- |
