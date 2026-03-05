@@ -3,7 +3,7 @@ title: "HPE StoreOnce"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_storeonce.html"
-last_updated: "1/22/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -47,7 +47,7 @@ General
 
 If you plan to use HPE StoreOnce as a backup repository for jobs other than file backup jobs, object storage backup jobs and Veeam Plug-In for Enterprise Application jobs, consider the following recommendations and limitations. These requirements and limitations apply only if you use HPE StoreOnce in the integration mode, not the shared folder mode.
 
-* Check that HPE StoreOnce that you plan to use is supported. For more information, see [Backup Target](system_requirements.md#target).
+* Check that HPE StoreOnce that you plan to use is supported. For more information, see [Backup Target](system_requirements_backup_target.md).
 
 * The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
