@@ -3,7 +3,7 @@ title: "VBRGeneralUpdateOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrgeneralupdateoptions.html"
-last_updated: "8/26/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,8 +14,9 @@ Contains general update settings.
 
 Properties
 
+Properties
+
 | Property | Type | Description |
-| --- | --- | --- |
 | SourceRepositoryType | [VBRUpdateSourceRepositoryType](enums.md#VBRUpdateSourceRepositoryType) | Indicates the repository type. |
 | AutoUpdatePeriod | Int32 | Compliance deadline for updates. |
 | CustomRepositoryPath | String | Local mirror repository address. |
