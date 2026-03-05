@@ -3,7 +3,7 @@ title: "Get-VBRAzureRestoreProxy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazurerestoreproxy.html"
-last_updated: "5/30/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -35,8 +35,9 @@ This cmdlet returns a restore proxy appliance for restoring backups to Microsoft
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies a name of the restore proxy appliance that you want to get. | String | False | Named | True |
 | Id | Specifies an ID of the restore proxy appliance that you want to get. | String | False | Named | True |
 
