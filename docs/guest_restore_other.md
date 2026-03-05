@@ -3,14 +3,14 @@ title: "Restore from Other File Systems"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_other.html"
-last_updated: "11/19/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Restore from Other File Systems
 
 
-To recover files from OSes not supported for guest OS file restore, you can use other types of restores. For the list of file systems supported for guest OS file restore, see the [Guest OS File Restore](platform_support.md#flr) section.
+To recover files from OSes not supported for guest OS file restore, you can use other types of restores. For the list of file systems supported for guest OS file restore, see the Guest OS File Restore sections in [Workloads](platform_support.md).
 
 Recovering Files for VMware vSphere VMs
 
