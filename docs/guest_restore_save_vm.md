@@ -3,7 +3,7 @@ title: "Microsoft Windows Specific Operations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_save_vm.html"
-last_updated: "11/19/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -163,7 +163,7 @@ If you want to restore entire files and folders to the original location, see [R
 
 Launching Application Item Restore
 
-If you are restoring guest OS files from workloads where the [supported applications](platform_support.md#guest) (Microsoft Active Directory, Oracle and so on) are installed, you can also launch application item restore directly from the Veeam Backup browser. To restore application items, Veeam Backup & Replication uses special tools called Veeam Explorers.
+If you are restoring guest OS files from workloads where the [supported applications](platform_support_applications.md#application_aware_processing_explorers) (Microsoft Active Directory, Oracle and so on) are installed, you can also launch application item restore directly from the Veeam Backup browser. To restore application items, Veeam Backup & Replication uses special tools called Veeam Explorers.
 
 To launch application item restore, do the following:
 
