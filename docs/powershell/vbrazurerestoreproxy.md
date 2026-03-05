@@ -3,7 +3,7 @@ title: "VBRAzureRestoreProxy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrazurerestoreproxy.html"
-last_updated: "5/14/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,8 +14,9 @@ Contains Microsoft Azure proxy appliance.
 
 Properties
 
+Properties
+
 | Property | Type | Description |
-| --- | --- | --- |
 | MaxConcurrentTasks | Int32 | Number of concurrent tasks. |
 | TrafficPort | Int32 | Port number. |
 | Subscription | [VBRAzureSubscription](vbrazuresubscription.md) | Microsoft Azure subscription. |
