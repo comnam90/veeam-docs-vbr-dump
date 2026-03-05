@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_flr_considerations_common.html"
-last_updated: "11/19/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,12 +14,12 @@ This section lists considerations and limitations common for recovery guest OS f
 
 Infrastructure Components
 
-* You can recover files from the file systems listed in section [Supported Platforms, Applications and Workloads](platform_support.md#flr).
-* If you plan to use a mount server (default or associated with a repository) as a mount server for guest OS restore, see [Mount Server Requirements](system_requirements.md#mount).
+* You can recover files from the file systems listed in [Workloads](platform_support_vm.md#flr).
+* If you plan to use a mount server (default or associated with a repository) as a mount server for guest OS restore, see [Mount Server Requirements](system_requirements_mount_server.md).
 
 Source for Data Recovery
 
-* [For Hyper-V VMs] See limitations in the [VMs](platform_support.md#vms) section of [Supported Platforms, Applications and Workloads](platform_support.md).
+* [For Hyper-V VMs] See limitations in the [VMs](platform_support_hv.md#vms) section of [Workloads](platform_support.md).
 
 * You can recover guest OS files from a backup, replica, Cloud Director replica or CDP replica that has at least one successfully created restore point.
 
@@ -40,7 +40,7 @@ Linux Helper Host as Mount Server
 
 If you plan to use a Linux helper host as a mount server (select the <Linux\_host\_name> or Specify a different Linux host option at the [Restore point](multios_restore_host_vm.md) step), consider the following:
 
-* Check the supported OSes listed in [System Requirements](system_requirements.md#helper_host).
+* Check the supported OSes listed in [System Requirements](system_requirements_linux_helper_host.md).
 * The backup server and the mount server, associated with the repository where the backup is stored, must be able to resolve the FQDN of the helper host.
 * You can recover from ZFS if the zfsutils-linux package is installed on the specified Linux helper host. The zfs-fuse package is not supported.
 * The Linux helper host OS kernel must support the file system that you plan to mount on this host. Otherwise, mount will be refused, and, in rare cases, it may cause kernel panic.
