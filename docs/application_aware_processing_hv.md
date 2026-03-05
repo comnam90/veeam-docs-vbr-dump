@@ -3,7 +3,7 @@ title: "Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_aware_processing_hv.html"
-last_updated: "12/15/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ Application-aware processing is the Veeam technology that allows Veeam Backup & 
 
 Requirements and Limitations
 
-Application-aware processing for Linux-based VMs and Microsoft Windows Server versions is supported by the following versions of Microsoft Hyper-V (see [Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277%28v%3Dws.11%29)). To use application-aware processing, you must have Hyper-V Integration Services and the latest updates installed on the VM guest OS. For more information on supported guest OS versions, see [Supported Platforms, Applications and Workloads](platform_support.md#guest).
+Application-aware processing for Linux-based VMs and Microsoft Windows Server versions is supported by the following versions of Microsoft Hyper-V (see [Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277%28v%3Dws.11%29)). To use application-aware processing, you must have Hyper-V Integration Services and the latest updates installed on the VM guest OS. For more information on supported guest OS versions, see [Workloads](platform_support_hv.md#vms).
 
 |  |
 | --- |
@@ -39,7 +39,7 @@ How Application-Aware Processing Works for Windows-Based Machines
 
 If you enable application-aware processing in job settings, Veeam Backup & Replication performs the following operations as a part of the backup or replication process:
 
-1. Veeam Backup & Replication deploys the non-persistent runtime components and security certificates or, if necessary, persistent agent components on the VM and detects if the VM runs any of the [supported applications](platform_support.md#guest).
+1. Veeam Backup & Replication deploys the non-persistent runtime components and security certificates or, if necessary, persistent agent components on the VM and detects if the VM runs any of the [supported applications](platform_support_hv.md#flr_hv).
 2. Veeam Backup & Replication collects information about applications installed on VMs — this information is required for VSS-aware restore.
 
 VSS-aware restore is performed when the VM is started after you restore it from the backup or fail over to a VM replica.
