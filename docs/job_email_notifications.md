@@ -3,7 +3,7 @@ title: "Configuring Job Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_email_notifications.html"
-last_updated: "3/3/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -34,6 +34,8 @@ You can find the notification settings description in the dedicated jobs, for ex
 * [Notification Settings](file_share_backup_job_advanced_notifications.md) for file backup job
 * [Notification Settings](bc_hpe_storeonce_notification_settings.md) for backup copy jobs for HPE StoreOnce repositories
 * [Notification Settings](replica_advanced_notify_vm.md) for replication jobs
+* [Notification Settings](agent_job_advanced_notify.md) for Veeam agent backup jobs (for Windows machines)
+* [Notification Settings](agent_advanced_notifiy_linux.md) for Veeam agent backup jobs (for Linux machines)
 
 1. On the Notifications tab, select the Send email notifications to the following recipients check box.
 2. In the field under the Send e-mail notifications to the following recipients check box, enter an email address to which a notification must be sent. You can enter several email addresses separated with a semicolon.
