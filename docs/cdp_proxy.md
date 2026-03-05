@@ -3,7 +3,7 @@ title: "CDP Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy.html"
-last_updated: "10/16/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -65,7 +65,7 @@ Requirements for CDP Proxy
 
 Before you assign the role of a backup proxy, check the following requirements:
 
-* For system requirements, see [System Requirements for CDP Proxy](system_requirements.md#cdp_proxy).
+* For system requirements, see [System Requirements for CDP Proxy](system_requirements_cdp_proxy.md).
 * A CDP proxy must be a Windows-based or Linux-based virtual or physical server.
 * Before assigning the role of the CDP proxy to a server, you must first add a vCenter server or VMware Cloud Director server to the backup infrastructure.
 * [For CDP proxies deployed on physical servers] Fast network between hosts and CDP proxies is required.
