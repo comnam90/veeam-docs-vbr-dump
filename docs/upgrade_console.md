@@ -3,14 +3,14 @@ title: "Upgrading Veeam Backup & Replication Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_console.html"
-last_updated: "1/27/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
 # Upgrading Veeam Backup & Replication Console
 
 
-To perform upgrade of Veeam Backup & Replication console to version 13.0.1, you must be running version 12.3.1 (build 12.3.1.1139) or later on the supported operating system (refer to the [System Requirements](system_requirements.md#console) section of this document). For information on upgrade from earlier versions, see [this Veeam KB article](https://www.veeam.com/kb2053).
+To perform upgrade of Veeam Backup & Replication console to version 13.0.1, you must be running version 12.3.1 (build 12.3.1.1139) or later on the supported operating system (refer to the [System Requirements](system_requirements_console.md) section of this document). For information on upgrade from earlier versions, see [this Veeam KB article](https://www.veeam.com/kb2053).
 
 |  |
 | --- |
