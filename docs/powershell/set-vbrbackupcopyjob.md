@@ -3,7 +3,7 @@ title: "Set-VBRBackupCopyJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrbackupcopyjob.html"
-last_updated: "12/19/2024"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -35,12 +35,13 @@ This cmdlet modifies Veeam Agent backup copy jobs.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| AnyTime | Defines that Veeam Backup & Replication will run a backup copy job at any time according to its schedule. | SwitchParameter | False | Named | False |
+| AnyTime | Defines that Veeam Backup & Replication will run a backup copy job at any time according to its schedule. | Boolean | False | Named | False |
 | Backup | Specifies an array of backups. The cmdlet will add these backups as source to the backup copy job.  You can specify only the array of the following backups:   * EC2 instance backups. * Azure backups. * Google Cloud VM instance backups. | Accepts the VBRBackup[] object. To get this object, run the [Get-VBREC2Backup](get-vbrec2backup.md), [Get-VBRAzureComputeBackup](get-vbrazurecomputebackup.md) or [Get-VBRGoogleCloudBackup](get-vbrgooglecloudbackup.md) cmdlet. | False | Named | True (ByPropertyName) |
 | BackupJob | Specifies an array of backup jobs. The cmdlet will add backups processed by these jobs to this backup copy job. | Accepts the CBackupJob[] object. To get this object, run the [Get-VBRJob](get-vbrjob.md) cmdlet. | False | Named | True (ByPropertyName) |
-| BackupWindowOptions | Specifies a time interval within which a backup copy job can start. | Accepts the VBRBackupWindowOptions object. To get this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | False |
+| BackupWindowOptions | Specifies a time interval within which a backup copy job can start.  To use this parameter, set the AnyTime parameter value to $False beforehand. | Accepts the VBRBackupWindowOptions object. To get this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | False |
 | Description | Specifies a description for a backup copy job. | String | False | Named | False |
 | DirectOperation | Defines that a backup copy job will send  the data directly to the target backup repository without performing data deduplication. | SwitchParameter | False | Named | False |
 | EnableTransactionLogCopy | Defines that a backup copy job will process transaction logs of the source job. | SwitchParameter | False | Named | False |
@@ -79,13 +80,14 @@ This example shows how to modify backup window settings for a backup copy job na
 
 |  |
 | --- |
-| $job = Get-VBRBackupCopyJob -Name "Copy Job05"  $windowoptions = New-VBRBackupWindowOptions -FromDay Monday -FromHour 08 -ToDay Friday -ToHour 20  Set-VBRBackupCopyJob -Job $job -BackupWindowOptions $windowoptions |
+| $job = Get-VBRBackupCopyJob -Name "Copy Job05"  $windowoptions = New-VBRBackupWindowOptions -FromDay Monday -FromHour 08 -ToDay Friday -ToHour 20  Set-VBRBackupCopyJob -Job $job -AnyTime:$False  Set-VBRBackupCopyJob -Job $job -BackupWindowOptions $windowoptions |
 
 Perform the following steps:
 
 1. Run the [Get-VBRBackupCopyJob](get-vbrbackupcopyjob.md) cmdlet. Specify the Name parameter value. Save the result to the $job variable.
 2. Run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. Specify the FromDay, FromHour, ToDay and ToHour parameter values. Save the result to the $windowoptions variable.
-3. Run the Set-VBRBackupCopyJob cmdlet. Set the $job variable as the Job parameter value. Set the $windowoptions variable as the BackupWindowOptions parameter value.
+3. Run the Set-VBRBackupCopyJob cmdlet. Set the $job variable as the Job parameter value. Set the AnyTime parameter value to $False.
+4. Run the Set-VBRBackupCopyJob cmdlet. Set the $job variable as the Job parameter value. Set the $windowoptions variable as the BackupWindowOptions parameter value.
 
 Related Commands
 

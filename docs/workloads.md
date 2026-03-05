@@ -3,7 +3,7 @@ title: "Workloads"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/workloads.html"
-last_updated: "11/27/2025"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,8 +18,9 @@ This section describes features and workflows specific to each platform:
 * [VMware Cloud Director](vcloud_director.md)
 * [Microsoft Hyper-V](ms_hyperv.md)
 * [Nutanix AHV](nutanix_ahv.md)
-* [Oracle Linux Virtualization Manager and Red Hat Virtualization](olvm_rhv.md)\*
+* [oVirt KVM](olvm_rhv.md)\*
 * [Proxmox Virtual Environment](proxmox_ve.md)
+* [HPE VM Morpheus Essentials](hpe_morpheus_vme.md)
 * [Microsoft Entra ID](entra_id.md)
 * [Scale Computing HyperCore](sc_hypercore.md)
 * [Unstructured Data](unstructured_data_backup.md)

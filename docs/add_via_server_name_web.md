@@ -3,7 +3,7 @@ title: "Step 2. Specify Server Name or Address"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_via_server_name_web.html"
-last_updated: "11/6/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,7 +27,7 @@ If you change the role of the Veeam Infrastructure Appliance, you can uninstall 
 |  |
 | --- |
 | Note |
-| Depending on the selected components (possible roles), the Veeam Infrastructure Appliance may require additional packages that must be installed before you add the server to the backup infrastructure. For details, see the requirements for the role assigned. For example, see [Mount Server System Requirements](system_requirements.md#mount). |
+| Depending on the selected components (possible roles), the Veeam Infrastructure Appliance may require additional packages that must be installed before you add the server to the backup infrastructure. For details, see the requirements for the role assigned. For example, see [Mount Server System Requirements](system_requirements_mount_server.md). |
 
 [![Step 2. Specify Server Name or Address](images/via_add_components_web.webp)](images/via_add_components_web.webp)
 

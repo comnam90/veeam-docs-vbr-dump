@@ -3,7 +3,7 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planning.html"
-last_updated: "10/20/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,9 +12,12 @@ product_version: "13.0.1.1071"
 
 Infrastructure of Veeam Backup & Replication depends on the business needs and resources of your company. Before you install Veeam Backup & Replication, make sure that your backup infrastructure meet product hardware recommendations and system requirements. For more information, see these sections:
 
-* [Supported Platforms, Applications and Workloads](platform_support.md)
+* [System Requirements](system_requirements_general.md):
+
+* [Workloads](platform_support.md)
+* [Backup Infrastructure](system_requirements.md)
+
 * [Deployment Scenarios](deployment_scenarios.md)
-* [System Requirements](system_requirements.md)
 * [Permissions](required_permissions.md)
 * [Ports](used_ports.md)
 * [Naming Conventions](naming_conventions.md)
@@ -50,8 +53,9 @@ Step 3. Select Veeam Backup & Replication Features
 
 Based on the analysis of your RTO and RPO, you can define your protection plan and select which features are the most suitable for your business needs. It is a common practice to divide servers and applications into categories and use different protection functionality for each category based on SLA (service level agreement). You can take the following table as a reference.
 
+Step 3. Select Veeam Backup & Replication Features
+
 |  | RPO: Seconds | RPO: Minutes | RPO: Hours (<24h) | RPO: Hours (24-48) |
-| --- | --- | --- | --- | --- |
 | RTO: Seconds | [Continuous Data Protection (CDP)](cdp_replication.md) (for VMware vSphere) | [Replication](replication.md) |  |  |
 | RTO: Minutes |  | [Snapshot Orchestration](schedule_snapshots.md) (for VMware vSphere) | [Backup](backup.md) | [Backup Copy](backup_copy.md) |
 | RTO: Hours |  |  |  | [Tape Device Support](tape_device_support.md) |

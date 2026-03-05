@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_requirements.html"
-last_updated: "1/22/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,7 @@ The availability of the feature depends on the license you use. For more details
 
 Platforms and Datastores
 
-* CDP is supported for a limited number of platforms and versions. For more information on platforms and requirements for them, see [Supported Platforms, Applications and Workloads](platform_support.md#cdp).
+* CDP is supported for a limited number of platforms and versions. For more information on platforms and requirements for them, see [Workloads](platform_support_vm.md#cdp).
 * CDP supports specific source and target datastores. For more information, see [Veeam CDP Source and Target](system_requirements_vm.md#cdp_source_target).
 
 Infrastructure Components

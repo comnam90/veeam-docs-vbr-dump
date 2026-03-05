@@ -3,7 +3,7 @@ title: "Disk Publishing (Data Integration API)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html"
-last_updated: "2/12/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Disk publishing allows you to save time by getting backup content of one or multiple disks instead of all disks from a backup. This technology gives read-only access to data and helps if you want to analyze data of your backup. For example, look for specific documents or usage patterns, or perform antivirus scan of backed-up data.
 
-You can publish a disk from different types of backups. The disk can have a Microsoft Windows file system or Linux, Unix or other file system. For the full list of supported file systems, see [Supported Platforms, Applications and Workloads](platform_support.md#flr). To present the backed-up disk to the target server, Veeam Backup & Replication uses the iSCSI protocol when publishing disks to the Microsoft Windows-based server or the FUSE protocol when publishing disks to the Linux-server or Unix-based server. After the publishing, the target server can access the backup content using the iSCSI initiator or FUSE protocol, and read the necessary data from the disk.
+You can publish a disk from different types of backups. The disk can have a Microsoft Windows file system or Linux, Unix or other file system. For the full list of supported file systems, see [Workloads](platform_support.md). To present the backed-up disk to the target server, Veeam Backup & Replication uses the iSCSI protocol when publishing disks to the Microsoft Windows-based server or the FUSE protocol when publishing disks to the Linux-server or Unix-based server. After the publishing, the target server can access the backup content using the iSCSI initiator or FUSE protocol, and read the necessary data from the disk.
 
 Supported Backup Types
 
@@ -24,19 +24,19 @@ You can publish disks from the following types of backups:
 
 * Backups of VMware Cloud Director virtual machines created by Veeam Backup & Replication
 
-* Backups of oVirt VMs created by [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
+* Backups of oVirt VMs created by [Veeam Plug-In for oVirt KVM](olvm_rhv.md)\*
 
 * Backups of virtual and physical machines created by [Veeam Agent for Microsoft Windows, Veeam Agent for Linux, Veeam Agent for Mac, Veeam Agent for Oracle Solaris or Veeam Agent for IBM AIX](agents_introduction.md)
 
-* Backups of Nutanix AHV virtual machines created by [Veeam Plug-In for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
+* Backups of Nutanix AHV virtual machines created by [Veeam Plug-In for Nutanix AHV](nutanix_ahv.md)
 * Backups of Amazon EC2 instances created by [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10)
 * Backups of Microsoft Azure virtual machines created by [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)
 * Backups of Google instances created by [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\*
 
 * Backups exported by [Kasten policies](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13)
 
-* Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Scale Computing HyperCore VMs created by [Veeam Plug-In for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2)
+* Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](proxmox_ve.md)
+* Backups of Scale Computing HyperCore VMs created by [Veeam Plug-in for Scale Computing HyperCore](sc_hypercore.md)
 
 \* - Available on Microsoft Windows-based backup server.​
 

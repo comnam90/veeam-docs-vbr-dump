@@ -3,7 +3,7 @@ title: "Get-VBRAzureNetworkSecurityGroup"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrazurenetworksecuritygroup.html"
-last_updated: "3/1/2024"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -51,8 +51,9 @@ This cmdlet returns Microsoft Azure security groups.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Subscription | Specifies subscriptions associated with a Microsoft Azure account. | Accepts the [VBRAzureSubscription](vbrazuresubscription.md) object. To create this object, run the [Get-VBRAzureSubscription](get-vbrazuresubscription.md) cmdlet. | True | Named | True  (ByValue, ByPropertyName) |
 | Location | Specifies a geographic location of the network security group. | Accepts the [VBRAzureLocation](vbrazurelocation.md) object. To get this object, run the [Get-VBRAzureLocation](get-vbrazurelocation.md) cmdlet. | False | Named | False |
 | Id | Specifies Microsoft Azure security groups ID. The cmdlet will return security groups with the specified ID. | String | False | Named | False |

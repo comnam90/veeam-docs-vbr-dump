@@ -3,7 +3,7 @@ title: "Requirements and Limitations for VMware Backup Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy_requirements.html"
-last_updated: "1/7/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ General Requirements and Limitations
 * Physical or virtual Linux machine
 
 * Before assigning the role of the VMware backup proxy to a machine, you must first add a vCenter server or ESXi host to the backup infrastructure.
-* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#proxy).
+* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements_vmware_proxy.md).
 * The account that you specify when adding a server must have permissions described in section [Permissions](required_permissions.md).
 
 * It is recommended that you balance the number of tasks on backup proxies and backup repository to avoid the situation where some backup infrastructure resources remain idle while others are overloaded.

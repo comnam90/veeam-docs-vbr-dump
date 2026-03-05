@@ -3,7 +3,7 @@ title: "Persistent Agent Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_agent_components_hv.html"
-last_updated: "2/24/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -66,7 +66,7 @@ For VMs running Linux operating systems, persistent agent components are deploye
 |  |
 | --- |
 | Note |
-| For more information about Linux operating systems supported by guest processing, see [Supported Platforms, Applications and Workloads](platform_support.md). |
+| For more information about Linux operating systems supported by guest processing, see [Workloads](platform_support.md). |
 
 To install Management Agent, perform the following steps:
 

@@ -3,7 +3,7 @@ title: "Restore to Microsoft Azure"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/microsoft_azure.html"
-last_updated: "5/22/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,8 +18,9 @@ If you add Microsoft Azure accounts to Veeam Backup & Replication using Power
 
 You can use the cmdlet in this topic to perform the following operations.
 
+Restore to Microsoft Azure
+
 | Cmlet | Operation |
-| --- | --- |
 | [Get-VBRAzureSubscription](get-vbrazuresubscription.md) | Returns subscriptions associated with a Microsoft Azure account. |
 | [Get-VBRAzureCloudService](get-vbrazurecloudservice.md) | Returns Microsoft Azure cloud services available for a subscription. |
 | [Get-VBRAzureLocation](get-vbrazurelocation.md) | Returns geographic locations of Microsoft Azure datacenters available for a subscription. |

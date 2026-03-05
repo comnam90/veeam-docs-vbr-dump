@@ -3,7 +3,7 @@ title: "VM Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_how.html"
-last_updated: "6/19/2025"
+last_updated: "2/26/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ Veeam Plug-in for Scale Computing HyperCore does not install agent software insi
 
 How to Protect VMs
 
-1. Check [system requirements](sch_system_requirements.md) and [account permissions](sch_permissions.md).
+1. Check [system requirements](platform_support_sch.md) and [account permissions](sch_permissions.md).
 2. [Add backup repositories](sch_configure_repository.md).
 3. [Connect the Scale Computing HyperCore cluster](sch_connecting_manager.md).
 4. [Configure worker settings](sch_workers_add.md).

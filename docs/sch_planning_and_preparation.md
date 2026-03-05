@@ -3,7 +3,7 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_planning_and_preparation.html"
-last_updated: "9/12/2024"
+last_updated: "2/26/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,6 @@ Before you start deploying Veeam Plug-in for Scale Computing HyperCore, check su
 
 In This Section
 
-* [System Requirements](sch_system_requirements.md)
 * [Considerations and Limitations](sch_limitations.md)
 * [Account Permissions](sch_permissions.md)
 * [Ports](sch_used_ports.md)

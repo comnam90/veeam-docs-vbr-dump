@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installation_byb.html"
-last_updated: "12/30/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you install Veeam Backup & Replication, check the following prerequisites:
 
-* A machine on which you plan to install Veeam Backup & Replication must meet the system requirements. For more information, see [System Requirements](system_requirements.md).
+* A machine on which you plan to install Veeam Backup & Replication must meet the system requirements. For more information, see [System Requirements](system_requirements_backup_server.md).
 * We do not recommend you to install Veeam Backup & Replication directly on a Hyper-V host. Such installation may lead to unpredictable system behavior. Instead, create a VM on the host and install Veeam Backup & Replication on the VM.
 
 * A user account that you plan to use for installation must have sufficient permissions. For more information, see [Permissions](required_permissions.md).

@@ -3,7 +3,7 @@ title: "Guest Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_processing_hv.html"
-last_updated: "2/24/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -18,7 +18,7 @@ Veeam Backup & Replication offers the following guest processing options:
 
 Application-Aware Processing
 
-By default, Veeam Backup & Replication does not process application logs and creates a crash-consistent backup of VMs with applications that use transaction logs for operations. You can create a transactionally consistent backup - in this case Veeam Backup & Replication will process application logs. In case a disaster strikes, Veeam Backup & Replication will use backups of logs to perform recovery operations. You can create transactionally consistent backups and replicas of VMs that run Microsoft Active Directory, Microsoft Exchange, Microsoft SharePoint, Microsoft SQL Server, Oracle Database or PostgreSQL instances. Transactionally consistent backups guarantee proper recovery of these applications without data loss. For information on supported applications, see [Supported Platforms, Applications and Workloads](platform_support.md#guest).
+By default, Veeam Backup & Replication does not process application logs and creates a crash-consistent backup of VMs with applications that use transaction logs for operations. You can create a transactionally consistent backup - in this case Veeam Backup & Replication will process application logs. In case a disaster strikes, Veeam Backup & Replication will use backups of logs to perform recovery operations. You can create transactionally consistent backups and replicas of VMs that run Microsoft Active Directory, Microsoft Exchange, Microsoft SharePoint, Microsoft SQL Server, Oracle Database or PostgreSQL instances. Transactionally consistent backups guarantee proper recovery of these applications without data loss. For information on supported applications, see [Workloads](platform_support_applications.md#application_aware_processing_explorers).
 
 When you define the job settings, you can set up the following application-aware processing settings:
 

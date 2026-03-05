@@ -3,7 +3,7 @@ title: "Get-VBRSyslogEventFilters"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsyslogeventfilters.html"
-last_updated: "12/19/2024"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 

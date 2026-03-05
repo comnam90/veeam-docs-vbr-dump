@@ -3,7 +3,7 @@ title: "Specifying Syslog Server Settings"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/syslog_server_settings.html"
-last_updated: "11/25/2024"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlet in this topic to perform the following operations.
 
+Specifying Syslog Server Settings
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Add-VBRSyslogServer](add-vbrsyslogserver.md) | Adds a syslog server to Veeam Backup & Replication. |
 | [Set-VBRSyslogServer](set-vbrsyslogserver.md) | Modifies syslog server settings. |
 | [Get-VBRSyslogServer](get-vbrsyslogserver.md) | Returns syslog server settings. |

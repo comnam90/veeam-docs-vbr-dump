@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replication_byb_hv.html"
-last_updated: "10/21/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you create a replication job, check the following prerequisites:
 
-* Check requirements and limitations in the [Requirements and Limitations](replica_limitations_hv.md) and [VMs](platform_support.md#vms) sections.
+* Check requirements and limitations in the [Requirements and Limitations](replica_limitations_hv.md) and [Workloads](platform_support_hv.md#vms) sections.
 
 * The version of the target host must be equal to or later than the version of the source host.
 

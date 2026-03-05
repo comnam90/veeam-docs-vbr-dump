@@ -3,7 +3,7 @@ title: "Set-VBRGeneralUpdateOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgeneralupdateoptions.html"
-last_updated: "2/13/2026"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -35,8 +35,9 @@ This cmdlet modifies general update settings for the Linux-based backup server a
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | AutoUpdatePeriod | Specifies a compliance deadline for updates.  After being available for the specified number of days, any pending updates will be installed immediately. | Int32 | False | Named | False |
 | CustomRepositoryPath | Specifies a local mirror of the Veeam update repository. | String | False | Named | False |
 | MaintenanceWindow | Specifies a maintenance window when updates are installed automatically. | Accepts the VBRMaintenanceWindowOptions object. To get this object, run the [New-VBRMaintenanceWindowOptions](new-vbrmaintenancewindowoptions.md) cmdlet. | False | Named | False |

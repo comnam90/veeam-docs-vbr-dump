@@ -3,7 +3,7 @@ title: "Mount Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
-last_updated: "9/19/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -67,7 +67,7 @@ Requirements for Mount Servers
 
 Before you assign the role of a mount server, check the following requirements and limitations:
 
-* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#mount).
+* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements_mount_server.md).
 
 * The mount server must have access to the backup repository with which it is associated and to the original VM (the VM to which you restore files or application items). For restore from storage snapshots in VMware vSphere environments, the mount server must also have access to the ESXi host on which the temporary VM is registered.
 * For Linux mount servers, consider the following:

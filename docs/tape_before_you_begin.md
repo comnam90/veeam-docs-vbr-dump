@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_before_you_begin.html"
-last_updated: "1/15/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -33,10 +33,11 @@ Before you configure a backup to tape job, check the following prerequisites and
 
 System Requirements for Backup to Tape Job
 
-For processing backup to tape jobs, you must provide additional system resources apart from those listed in system requirements for the [backup server](system_requirements.md#backup_server) and [tape server](system_requirements.md#tape_server).
+For processing backup to tape jobs, you must provide additional system resources apart from those listed in system requirements for the [backup server](system_requirements_backup_server.md) and [tape server](system_requirements_tape_server.md).
+
+System Requirements for Backup to Tape Job
 
 | Component | RAM | CPU Cores per Task |
-| --- | --- | --- |
 | Backup server | 1 GB1 plus 1 GB for each concurrent task | 1 |
 | Source repository/gateway server | System resources depend on the job type:   * For backup to tape jobs, 250 MB - 350 MB (for source Veeam Data Mover) * For [backup to tape jobs for unstructured data backups](btt_nas.md), 6 GB for each tape drive2 | 0,5 |
 | Tape server | 250 MB - 350 MB (for target Veeam Data Mover) | 0,5 |
@@ -47,7 +48,7 @@ For processing backup to tape jobs, you must provide additional system resources
 
 System Requirements for Backup to Tape Job for Unstructured Data Backups
 
-If the [backup to tape job for unstructured data backups](btt_nas.md) processes large quantities of files and objects, you must provide additional system resources apart from those listed in system requirements for the [backup server/database server](system_requirements.md#backup_server) and [tape server](system_requirements.md#tape_server).
+If the [backup to tape job for unstructured data backups](btt_nas.md) processes large quantities of files and objects, you must provide additional system resources apart from those listed in system requirements for the [backup server/database server](system_requirements_backup_server.md) and [tape server](system_requirements_tape_server.md).
 
 For the database server to store the configuration database, we recommend using a dedicated NVME drive that is not used for anything else. The following minimum system requirements apply:
 

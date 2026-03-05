@@ -3,7 +3,7 @@ title: "Remove-VBRAzureRestoreProxy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrazurerestoreproxy.html"
-last_updated: "5/30/2025"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,8 +30,9 @@ This cmdlet removes a restore proxy appliance for restoring backups to Microsoft
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Proxy | Specifies the restore proxy appliance that you want to remove. | Accepts the VBRAzureRestoreProxy object. To get this object, run the [Get-VBRAzureRestoreProxy](get-vbrazurerestoreproxy.md) cmdlet. | True | Named | True |
 | Wait | Defines that the command waits for the process to complete before accepting more input. | SwitchParameter | False | Named | True |
 

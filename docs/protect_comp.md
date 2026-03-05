@@ -3,7 +3,7 @@ title: "Veeam Agent Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html"
-last_updated: "7/3/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,7 +22,7 @@ Veeam Backup & Replication uses backup agents installed on each computer. You ca
 
 You can perform the following data protection and recovery operations with physical machines:
 
-* Create crash-consistent and [application-consistent](platform_support.md#guest) backups. Save them in different repositories: direct attached storage, network attached storage, deduplicating storage appliances, object storage, cloud connect repository and so on.
+* Create crash-consistent and [application-consistent](platform_support_applications.md) backups. Save them in different repositories: direct attached storage, network attached storage, deduplicating storage appliances, object storage, cloud connect repository and so on.
 
 * Copy backups to 3rd party locations.
 

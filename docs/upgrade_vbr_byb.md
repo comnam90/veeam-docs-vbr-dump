@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "3/3/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -19,10 +19,10 @@ Licensing
 
 System Requirements
 
-1. Verify that the backup server to be upgraded is running a supported operating system as specified in [System Requirements](system_requirements.md#backup_server_windows). If not, perform a configuration backup, install Veeam Backup & Replication 13.0.1 (build 13.0.1.180) on a supported OS, and restore the configuration backup created earlier. For information on how to perform the migration, see [Migrating Veeam Backup & Replication to Another Backup Server](vbr_config_migrate.md).
+1. Verify that the backup server to be upgraded is running a supported operating system as specified in [System Requirements](system_requirements_backup_server.md#backup_server_windows). If not, perform a configuration backup, install Veeam Backup & Replication 13.0.1 (build 13.0.1.180) on a supported OS, and restore the configuration backup created earlier. For information on how to perform the migration, see [Migrating Veeam Backup & Replication to Another Backup Server](vbr_config_migrate.md).
 2. Ensure that the backup server has sufficient disk space. The minimum disk space is calculated dynamically during the system configuration check in the upgrade procedure. It is based on the list of required packages to be installed on the machine and usually is about 9 GB. We recommend allocating at least the minimum disk space calculated during the system configuration check, but not less than 55.5 GB: 3 x ISO size (50.5 GB) in the selected installation path (for example, D:\VBR) plus 5 GB for the database operations on the system volume (for example, C:).
 3. Make sure that other servers that you plan to use as backup infrastructure components meet the system requirements listed in [System Requirements](system_requirements.md). In particular, ensure all backup infrastructure servers are based on 64-bit operating systems.
-4. Ensure that the environment you are going to protect with Veeam Backup & Replication meets the requirements listed in [Supported Platforms, Applications and Workloads](platform_support.md). In particular:
+4. Ensure that the environment you are going to protect with Veeam Backup & Replication meets the requirements listed in [Workloads](platform_support.md). In particular:
 
 * Make sure that VMware ESXi and VMware vCenter server are upgraded to the minimum supported version 7.0 or remove these servers from the backup server configuration to continue.
 * Make sure that VMware Cloud Director is upgraded to the minimum supported version 10.4 or remove the hosts from the backup server configuration to continue.
@@ -64,7 +64,7 @@ Discontinued features:
 2. Are you using Server 2019-based ReFS backup repositories? If yes, avoid upgrading them to Server 2022 or mounting ReFS volumes from Server 2019 to new Server 2022 installations until you read [this thread](https://forums.veeam.com/veeam-backup-replication-f2/windows-server-2022-refs-megathread-t76458.html) on Veeam R&D forums. Microsoft has addressed the known regression in the ReFS format upgrade code, and the fix is now publicly available.
 3. Are you using Scale-Out Backup Repositories with immutable performance tier extents? Make sure that all extents have the same immutability settings.
 4. Are you using a customized AntivirusInfos.xml file? During the upgrade, Veeam Backup & Replication will replace it with the default file. Make sure that you save your customized file at another path and make necessary changes to the default file after the upgrade.
-5. Azure compute accounts based on Azure AD user credentials (created with the Use the existing account option) are obsolete. Replace these accounts with new ones to restore workloads to Microsoft Azure, use the Microsoft Azure archive storage or Microsoft Azure Plug-In for Veeam Backup & Replication appliance.
+5. Azure compute accounts based on Azure AD user credentials (created with the Use the existing account option) are obsolete. Replace these accounts with new ones to restore workloads to Microsoft Azure, use the Microsoft Azure archive storage or Veeam Plug-In for Microsoft Azure appliance.
 6. Are you using integration with Veeam Backup for Microsoft Azure? If yes, after upgrading to Veeam Backup & Replication 13 and replacing the obsolete accounts from p.22, select the existing Microsoft Azure compute account in Manage Cloud Credentials, click Edit, and go through the [Microsoft Azure Compute Account](restore_azure_accounts.md) wizard to update account permissions. Otherwise, you can face problems when adding an external repository with backups created by Veeam Backup for Microsoft Azure.
 
 Integration with Veeam Management and Monitoring Products
@@ -87,7 +87,7 @@ Integration with Veeam Virtualization Plug-Ins
 Are you using Veeam Backup & Replication integrated with Veeam Virtualization Plug-Ins?
 
 * Veeam Plug-In for Nutanix AHV: During the upgrade to version 13.0.1, the plug-in for this product will be automatically upgraded to the required version. For details, see [Upgrading to Veeam Plug-in for Nutanix AHV 9](https://helpcenter.veeam.com/docs/vbahv/userguide/upgrading_vbahv.html?ver=9) in the Veeam Plug-In for Nutanix AHV User Guide.
-* Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization: During the upgrade to version 13.0.1, the plug-in for this product will be automatically upgraded to the required version. For details, see [Upgrading to Veeam Plug-in for OLVM and RHV 7](https://helpcenter.veeam.com/docs/vbrhv/userguide/upgrading.html?ver=7) in the Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization User Guide.
+* Veeam Plug-In for oVirt KVM: During the upgrade to version 13.0.1, the plug-in for this product will be automatically upgraded to the required version. For details, see [Upgrading to Veeam Plug-in for OLVM and RHV 7](https://helpcenter.veeam.com/docs/vbrhv/userguide/upgrading.html?ver=7) in the Veeam Plug-In for oVirt KVM User Guide.
 * Veeam Plug-In for Proxmox Virtual Environment: During the upgrade to version 13.0.1, the plug-in for this product will be automatically upgraded to the required version. For details, see [Upgrading to Veeam Plug-in for Proxmox VE 3](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/upgrading.html?ver=3) in the Veeam Plug-In for Proxmox VE User Guide.
 
 Integration with Veeam Agents, Veeam Plug-Ins for Enterprise Applications and MongoDB Backup
@@ -115,8 +115,8 @@ For details about upgrade of Veeam Agents, see [Upgrading Veeam Agent for MongoD
 Integration with Storage Systems
 
 1. IBM FlashSystem: If you are using IBM FlashSystem Plug-In for Veeam Backup & Replication, upgrade it to version 2.3.77 or later. If the plug-in version is lower than the minimum required, storage integration will not function.
-2. Hitachi VSP: If you are using Hitachi for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with Hitachi is available starting from Veeam Backup & Replication version 13.0.1.1071.
-3. HPE XP: If you are using HPE XP for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with HPE XP is available starting from Veeam Backup & Replication version 13.0.1.1071.
+2. Hitachi VSP: If you are using Hitachi for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with Hitachi is available starting from Veeam Backup & Replication version 13.0.1.180.
+3. HPE XP: If you are using HPE XP for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with HPE XP is available starting from Veeam Backup & Replication version 13.0.1.180.
 4. NEC Storage V Series: If you are using NEC Storage V Series Plug-In for Veeam Backup & Replication, storage integration will stop working after the upgrade. Plug-in version with support for Veeam Backup & Replication will be released by the vendor later.
 5. Make sure your storage systems work on a supported operating system:
 

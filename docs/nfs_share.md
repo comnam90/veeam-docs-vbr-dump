@@ -3,7 +3,7 @@ title: "NFS Share"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_share.html"
-last_updated: "10/29/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,7 +36,7 @@ Requirements and Limitations for NFS Backup Repositories
 
 A machine performing the role of an NFS repository must meet the following requirements:
 
-* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#target).
+* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
 * The role of the NFS repository can be assigned to a Microsoft Windows or Linux machine (physical or virtual) or to NAS storage supporting NFS protocol.
 * The NFS repository must present read and write access rights to the gateway.
@@ -53,7 +53,7 @@ Requirements for Gateway Server
 
 A machine performing the role of a gateway server for communication with the NFS backup repository must meet the following requirements:
 
-* The role of the gateway server can be assigned to a Microsoft Windows or Linux machine (physical or virtual). The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#gateway).
+* The role of the gateway server can be assigned to a Microsoft Windows or Linux machine (physical or virtual). The machine must meet the system requirements. For more information, see [System Requirements](system_requirements_gateway.md).
 
 * You must add the machine to the Veeam Backup & Replication console as a managed server.
 * [For automatic gateway selection] The backup server must have read and write access in the NFS repository.

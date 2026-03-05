@@ -3,7 +3,7 @@ title: "Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_aware_processing.html"
-last_updated: "12/15/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -28,7 +28,7 @@ Application-aware processing is the Veeam technology that allows Veeam Backup & 
 
 Requirements and Limitations
 
-Application-aware processing is supported for Linux-based VMs and Microsoft Windows client versions starting from Windows Vista and for server versions starting from Windows Server 2008. To use application-aware processing, you must have VMware Tools and the latest updates installed on the VM guest OS. For more information on supported guest OS versions, see [Supported Platforms, Applications and Workloads](platform_support.md#guest).
+Application-aware processing is supported for Linux-based VMs and Microsoft Windows client versions starting from Windows Vista and for server versions starting from Windows Server 2008. To use application-aware processing, you must have VMware Tools and the latest updates installed on the VM guest OS. For more information on supported guest OS versions, see [Workloads](platform_support_vm.md#vm_vms).
 
 |  |
 | --- |

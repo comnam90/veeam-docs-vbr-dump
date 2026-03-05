@@ -3,7 +3,7 @@ title: "About Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview.html"
-last_updated: "12/30/2025"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -65,7 +65,7 @@ With Veeam Backup & Replication, you can back up and restore the following objec
 * [Google Cloud SQL instances](https://helpcenter.veeam.com/docs/vbgc/guide/overview_sql.html?ver=7)\*
 * [Google Cloud Spanner instances](https://helpcenter.veeam.com/docs/vbgc/guide/overview_spanner.html?ver=7)\*
 
-* [Microsoft Entra ID tenant data](https://helpcenter.veeam.com/docs/vbr/entraid/overview.html?ver=13)
+* [Microsoft Entra ID data](https://helpcenter.veeam.com/docs/vbr/entraid/overview.html?ver=13)
 * [Unstructured data](unstructured_data_backup.md):
 
 * [File servers](adding_managed_server_file_share.md)

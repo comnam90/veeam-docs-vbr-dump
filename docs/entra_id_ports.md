@@ -1,0 +1,36 @@
+---
+title: "Ports"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_ports.html"
+last_updated: "2/27/2026"
+product_version: "13.0.1.1071"
+---
+
+# Ports
+
+
+The main ports required to create backups of Microsoft Entra ID tenants are listed in the following table.
+
+Ports
+
+| From | To | Protocol | Port | Notes |
+| Veeam Backup & Replication console | Backup server | TCP | 9419 | — |
+| Backup server | TCP | 443 | — |
+| Backup server | [Optional] PostgreSQL server hosting the database for the Microsoft Entra ID backup repository | TCP | 5432 | This port is required if the database is located on a remote PostgreSQL server. Port number may differ if you configure a custom PostgreSQL server instance as Microsoft Entra ID backup repository. |
+| [Optional] HTTP proxy server | TCP | HTTP proxy server port | This port is required if you configure a proxy server as described in section [Configuring HTTP/HTTPS Proxies](https://helpcenter.veeam.com/docs/vbr/em/hmc_configure_proxies.html?ver=13). |
+| Microsoft Entra ID Services | TCP | 443 | To access the necessary Azure service, you can use the IP address, DNS name or [virtual network service tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview) of the service. If you want to use an IP address, you can download a .JSON file with the full list of Azure IP ranges and service tags from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519). |
+| Azure Resource Manager (Service tag: AzureResourceManager) | TCP | 443 |
+| [Optional] HTTP proxy server  (for Linux-based instances of Veeam Backup & Replication) | Microsoft Entra ID Services (Service tag: AzureActiveDirectory) | TCP | 443 |
+| Azure Resource Manager (Service tag: AzureResourceManager) | TCP | 443 |
+| [Optional] Cache repository | Gateway server | TCP | 2500 to 3300 | Cache repository is required to use the log backup and log backup copy features. |
+| Primary or secondary backup repository |
+| [Optional] Backup server | Cache repository | TCP | 6160, 6162 |
+| Old cache repository, new cache repository | TCP | 2500 to 3300 |
+
+|  |
+| --- |
+| Important |
+| * As Veeam Backup for Microsoft Entra ID is installed on the same machine where Veeam Backup & Replication runs, it also uses the same [ports](used_ports.md). To be able to use the tenant backup copy feature, you must configure the ports listed in section [Backup Repositories](used_ports.md). * Veeam Backup for Microsoft Entra ID does not support remote backup proxies — instead, the backup server performs the role of a general-purpose backup proxy. |
+
+

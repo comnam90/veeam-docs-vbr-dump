@@ -3,7 +3,7 @@ title: "Backup & Replication Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_console.html"
-last_updated: "2/23/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -74,7 +74,7 @@ Requirements for Backup & Replication Console
 
 A machine on which you install the Veeam Backup & Replication console must meet the following requirements:
 
-* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#console).
+* The machine must meet the system requirements. For more information, see [System Requirements](system_requirements_console.md).
 * The remote console can be installed on a Microsoft Windows machine (physical or virtual).
 * The system time on both the backup server and the console must be synchronized with an external time source, such as a Network Time Protocol (NTP) server.
 * If you install the console remotely, you can deploy it behind NAT. However, the backup server must be outside NAT. The opposite type of deployment is not supported: if the backup server is deployed behind NAT and the remote console is deployed outside NAT, you will not be able to connect to the backup server.

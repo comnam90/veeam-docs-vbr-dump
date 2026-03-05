@@ -3,7 +3,7 @@ title: "Configuring Global Email Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_email_notifications.html"
-last_updated: "3/3/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -158,13 +158,21 @@ For every particular job, you can specify additional recipients. For more inform
 
 Job Session Report
 
-By default, Veeam Backup & Replication sends an email notification after each job session completes. You can enable and specify custom notification settings for a specific job. This may be useful if you want to change the subject, the notification rules, or the list of recipients for certain reports. For detailed instructions, see [Configuring Job Notification Settings](job_email_notifications.md).
+By default, after you enable and configure global email notification settings, Veeam Backup & Replication sends an email notification after each job session completes. You can enable and specify custom notification settings for a specific job. This may be useful if you want to change the subject, the notification rules, or the list of recipients for certain reports. For more information, see [Configuring Job Notification Settings](job_email_notifications.md).
 
 Software Updates Summary
 
-By default, Veeam Backup & Replication sends a daily report at 10:00 PM that includes a list of software updates that ended with Success, Warning or Failure.
+By default, after you enable and configure global email notification settings, Veeam Backup & Replication sends a daily report at 10:00 PM that includes a list of software updates that ended with Success, Warning or Failure.
 
-Enabling Data Resilience Daily Summary Report (Morning Coffee Report)
+Rescan Job Report
+
+By default, after you enable and configure global email notification settings, Veeam Backup & Replication sends rescan job reports daily at 10:00 PM. These reports are generated only for rescan jobs associated with protection groups. Veeam Backup & Replication sends a separate report for each protection group that has rescan job reporting enabled. The report contains cumulative statistics for rescan job sessions performed during the last 24-hour period. You can specify custom notification settings for a specific protection group.
+
+Backup Policy Report
+
+By default, after you enable and configure global email notification settings, Veeam Backup & Replication sends backup policy reports daily at 10:00 AM for Veeam Agent backup policies. Veeam Backup & Replication sends a separate report for each backup policy that you configured. The report contains cumulative statistics for backup job sessions performed during the last 24-hour period on computers to which the backup policy is applied.
+
+Data Resilience Daily Summary Report (Morning Coffee Report)
 
 The AI-generated daily summary report gives a detailed overview of all job sessions and their statuses. The report lists errors and warnings, explains their causes, and recommends actions to resolve them. It also includes links to relevant resources and groups error codes by workload, which helps simplify the troubleshooting process.
 

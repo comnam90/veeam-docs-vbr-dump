@@ -3,7 +3,7 @@ title: "Remove-VBRSyslogEventFilter"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrsyslogeventfilter.html"
-last_updated: "12/19/2024"
+last_updated: "2/18/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -30,8 +30,9 @@ This cmdlet removes all severity filters for an event ID.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | EventID | Specifies an event ID. For a complete list of event IDs, see [Event IDs List](https://helpcenter.veeam.com/docs/backup/events/event_id_list.html?ver=120). | Int64 | True | Named | False |
 
 <CommonParameters>

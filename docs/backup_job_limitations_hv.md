@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_limitations_hv.html"
-last_updated: "2/6/2026"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,7 +14,7 @@ This section lists considerations and limitations common for creating backup job
 
 Backup Infrastructure
 
-* Check requirements and limitations in the [VMs](platform_support.md#vms) section in [Supported Platforms, Applications and Workloads](platform_support.md).
+* Check requirements and limitations in the [VMs](platform_support_hv.md#vms) section in [Workloads](platform_support_hv.md).
 
 * Backup infrastructure components that will take part in the backup process must be added to the backup infrastructure and properly configured. These include Microsoft Hyper-V hosts on which VMs are located and a backup repository. If you want to perform backup in the off-host backup mode, the off-host backup proxy must also be added to the backup infrastructure and properly configured.
 * The backup repository must have enough free space to store created backup files. To receive alerts about low space in the backup repository, configure global notification settings. For more information, see [Specifying Global Notification Settings](global_notifications.md).

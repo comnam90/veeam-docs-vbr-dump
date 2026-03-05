@@ -3,7 +3,7 @@ title: "Backup to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_jobs.html"
-last_updated: "1/22/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -38,8 +38,8 @@ Jobs as Source
 
 The following jobs can be a source for tape jobs:
 
-* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE backup jobs
-* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE backup copy jobs
+* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE/HPE Morpheus VM Essentials backup jobs
+* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE/HPE Morpheus VM Essentials backup copy jobs
 * Unstructured data backup jobs
 * Windows/Linux/Unix/Mac Veeam Agent backup jobs configured in Veeam Agent operating in the standalone mode
 * Windows/Linux/Unix/Mac Veeam Agent standalone backup copy jobs

@@ -3,7 +3,7 @@ title: "Limitation of Concurrent Tasks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/limiting_tasks.html"
-last_updated: "2/12/2026"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -64,6 +64,6 @@ Task Limitation for Components with Several Roles
 
 One machine can perform several roles. For example, you can assign roles of the backup proxy and backup repository to the same machine, or use the backup proxy as a gateway server for a shared folder backup repository. In such a situation, you must make sure that the backup infrastructure component can process the cumulative number of tasks specified for different roles.
 
-We do not recommend sharing backup infrastructure components across Veeam installations. However, if you use the same infrastructure component with multiple Veeam Backup & Replication servers, ensure that this component can handle the cumulative workload for all Veeam Backup & Replication servers to which it is added. For more information on sharing backup infrastructure components across Veeam installations, see [System Requirements](system_requirements.md#recommendations).
+We do not recommend sharing backup infrastructure components across Veeam installations. However, if you use the same infrastructure component with multiple Veeam Backup & Replication servers, ensure that this component can handle the cumulative workload for all Veeam Backup & Replication servers to which it is added. For more information on sharing backup infrastructure components across Veeam installations, see [System Requirements](system_requirements_limitations.md).
 
 

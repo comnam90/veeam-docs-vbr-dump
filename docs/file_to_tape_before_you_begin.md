@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_before_you_begin.html"
-last_updated: "2/24/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -32,7 +32,7 @@ Note that the NDMP servers backup to tape functionality does not consume Veeam i
 
 System Requirements for Large Number of Files in Job
 
-If the file to tape job processes large quantities of files, you must provide additional system resources apart from those listed in system requirements for the [backup server/database server](system_requirements.md#backup_server) and [tape server](system_requirements.md#tape_server).
+If the file to tape job processes large quantities of files, you must provide additional system resources apart from those listed in system requirements for the [backup server/database server](system_requirements_backup_server.md) and [tape server](system_requirements_tape_server.md).
 
 Backup Server
 
