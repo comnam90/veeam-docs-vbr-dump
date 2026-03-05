@@ -3,7 +3,7 @@ title: "Fast Clone"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_block_cloning.html"
-last_updated: "10/20/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -58,7 +58,7 @@ Requirements for Linux Repositories
 To use Fast Clone, Veeam Backup & Replication requires that Linux-based backup repositories meet the following conditions:
 
 * File system is XFS.
-* The Linux distribution is supported. For more information, see [Backup Repository](system_requirements.md#repo) (XFS integration).
+* The Linux distribution is supported. For more information, see [Backup Repository](system_requirements_backup_repo.md) (XFS integration).
 * The Linux kernel supports reflinks.
 * Cyclic redundancy check (CRC) is enabled.
 * The minimum supported data block size is 1 KB. The maximum supported block size is 4KB.
@@ -133,8 +133,9 @@ To use Fast Clone, Veeam Backup & Replication requires that SMB backup repositor
 
 Depending on the type of the performed job, Veeam Backup & Replication also imposes the following requirements on backup infrastructure components.
 
+Requirements for Microsoft Windows and SMB Repositories
+
 | Type of Job | Requirements for backup infrastructure components |
-| --- | --- |
 | Backup job | Protocol: SMB 3.1.1  OS: Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the following backup infrastructure components:   * If a gateway is selected manually: Gateway server. * If a gateway is selected automatically:  * [For VMware vSphere environments] Mount server associated with the backup repository, or backup server. For reverse incremental backup chains, Microsoft Windows Server 2016 (or later) or Windows 10 Pro for Workstations (or later) must additionally be installed on backup proxies assigned for the job. * [For Microsoft Hyper-V environments] For forward incremental chains, mount server associated with the backup repository, or backup server. |
 | Backup copy job | Protocol: SMB 3.1.1  OS: Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the following backup infrastructure components:   * If a gateway is selected manually: Gateway server. * If a gateway is selected automatically: |
 
