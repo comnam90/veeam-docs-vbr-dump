@@ -3,7 +3,7 @@ title: "Veeam vPower NFS Service"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vpower_nfs_service.html"
-last_updated: "11/14/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -36,7 +36,7 @@ Consideration and Limitations
 
 Consider the following:
 
-* The vPower NFS server is installed on a mount server. For more information on the system requirements for the mount server, see [System Requirements](system_requirements.md#mount).
+* The vPower NFS server is installed on a mount server. For more information on the system requirements for the mount server, see [System Requirements](system_requirements_mount_server.md).
 * [vPower NFS on Linux] Due to the [ports](used_ports.md#vpower) used by the vPower NFS service, it is not possible to configure a native NFS server on the same machine.
 
 vPower NFS Server Location
