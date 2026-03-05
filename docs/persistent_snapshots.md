@@ -3,7 +3,7 @@ title: "Persistent VSS Snapshots"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_snapshots.html"
-last_updated: "5/26/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -33,7 +33,7 @@ Limitations for Persistent VSS Snapshot Technology
 
 Veeam Backup & Replication uses the persistent VSS snapshot technology if the VM meets the following requirements:
 
-* The version of Microsoft Exchange installed on the VM is listed in the [Supported Applications](platform_support.md#guest) section of [Supported Platforms, Applications and Workloads](platform_support.md).
+* The version of Microsoft Exchange installed on the VM is listed in the [Supported Applications](platform_support_applications.md#application_aware_processing_explorers) section of [Workloads](platform_support.md).
 * The VM does not perform the role of a domain controller.
 * Microsoft Exchange databases and log files are located on a non-system disk of the VM. During backup, Veeam Backup & Replication does not trigger a persistent VSS snapshot for system VM disks. As a result, system disks are restored in a crash-consistent, not transactionally consistent state.
 
