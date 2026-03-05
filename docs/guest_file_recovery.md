@@ -3,7 +3,7 @@ title: "Guest OS File Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_recovery.html"
-last_updated: "11/19/2025"
+last_updated: "2/25/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,7 +22,7 @@ You can recover files from the following types of data:
 
 You can recover files to the original or new location, access recovered files, launch application item restore for the files or perform other operations. For more information, see [Finalize Recovery](guest_restore_save.md).
 
-For the list of supported file systems, see [Supported Platforms, Applications and Workloads](platform_support.md#flr).
+For the list of supported file systems, see [Workloads](platform_support.md).
 
 Mount Servers
 
