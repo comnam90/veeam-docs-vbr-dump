@@ -3,7 +3,7 @@ title: "SMB (CIFS) Share"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_share.html"
-last_updated: "8/26/2025"
+last_updated: "2/24/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,7 +29,7 @@ If you plan to move VM data to an off-site SMB repository over a WAN link, it is
 
 Requirements for SMB Backup Repositories
 
-The role of an SMB repository can be assigned to a Microsoft Windows machine (physical or virtual). The machine must meet the system requirements. For more information, see [System Requirements](system_requirements.md#target).
+The role of an SMB repository can be assigned to a Microsoft Windows machine (physical or virtual). The machine must meet the system requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
 Related Topics
 
