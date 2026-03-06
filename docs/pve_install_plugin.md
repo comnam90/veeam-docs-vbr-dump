@@ -3,7 +3,7 @@ title: "Installing Veeam Plug-In for Proxmox VE Manually"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_install_plugin.html"
-last_updated: "2/2/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -22,7 +22,7 @@ The pre-installed plug-in that comes with the default installation package of Ve
 To install Veeam Plug-in for Proxmox VE, do the following:
 
 1. Log in to the backup server using an account with the local Administrator permissions.
-2. Download a product installation file from your [Veeam download page](https://www.veeam.com/products/data-platform-trial-download.html?tab=virtualization-plugins).
+2. Download the product installation file from from [Veeam download page](https://www.veeam.com/products/data-platform-trial-download.html?tab=virtualization-plugins).
 3. Open the downloaded archive file and launch the installation file.
 
 Before proceeding with installation, the installer will check whether you have Microsoft .NET Core Runtime installed on the backup server. In case the required version is missing, the installer will offer to install it automatically. To do that, click OK.
