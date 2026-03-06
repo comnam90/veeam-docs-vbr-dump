@@ -3,7 +3,7 @@ title: "Performing File-Level Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_vm_guest_restore.html"
-last_updated: "2/4/2026"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,8 +14,8 @@ With guest OS file recovery (file-level restore), you can restore individual gue
 
 |  |
 | --- |
-| Important |
-| Make sure to install the [QEMU Guest Agent](https://wiki.qemu.org/Features/GuestAgent) on VMs — before the backups are created. You will not be able to install the agent during the recovery operation. |
+| Note |
+| To be able to restore files and folders to the original location, you will need to install the [QEMU Guest Agent](https://wiki.qemu.org/Features/GuestAgent) on the target VM. |
 
 To restore VM guest OS files and folders, do the following:
 
