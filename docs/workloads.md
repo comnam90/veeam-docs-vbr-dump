@@ -3,7 +3,7 @@ title: "Workloads"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/workloads.html"
-last_updated: "3/4/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ This section describes features and workflows specific to each platform:
 * [Nutanix AHV](nutanix_ahv.md)
 * [oVirt KVM](olvm_rhv.md)\*
 * [Proxmox Virtual Environment](proxmox_ve.md)
-* [HPE VM Morpheus Essentials](hpe_morpheus_vme.md)
+* [HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
 * [Microsoft Entra ID](entra_id.md)
 * [Scale Computing HyperCore](sc_hypercore.md)
 * [Unstructured Data](unstructured_data_backup.md)
