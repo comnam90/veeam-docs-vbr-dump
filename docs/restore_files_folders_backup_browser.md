@@ -3,7 +3,7 @@ title: "Step 4. Select Files and Folders to Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_files_folders_backup_browser.html"
-last_updated: "5/21/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
