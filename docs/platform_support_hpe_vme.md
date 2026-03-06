@@ -3,7 +3,7 @@ title: "HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_hpe_vme.html"
-last_updated: "3/2/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -58,7 +58,7 @@ Version Compatibility
 
 Related Topics
 
-* [Overview of HPE Morpheus VM Essentials Protection Functionality](proxmox_ve.md)
-* [HPE Morpheus VM Essentials Integration Architecture](pve_infrastructure_components.md)
+* [Overview of HPE Morpheus VM Essentials Protection Functionality](hpe_morpheus_vme.md)
+* [HPE Morpheus VM Essentials Integration Architecture](hpe_infrastructure_components.md)
 
 
