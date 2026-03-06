@@ -3,7 +3,7 @@ title: "Step 3. Specify Veeam Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account.html"
-last_updated: "1/15/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,7 +16,7 @@ Specifying User Credentials
 
 To specify the authorization settings:
 
-1. To authorize using your Veaam credentials, click the Authorize link.
+1. To authorize using your Veeam credentials, click the Authorize link.
 2. In the Veeam authorization window enter your credentials for the Veeam account. After that, your backup server will be registered in the My Account portal.
 
 |  |
