@@ -3,14 +3,14 @@ title: "SAP on Oracle Backup Using RMAN\_UTIL"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_util.html"
-last_updated: "11/7/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
 # SAP on Oracle Backup Using RMAN\_UTIL
 
 
-The rman\_util parameter allows you to back up Oracle databases using Oracle RMAN in combination with [Veeam Plug-In for Oracle RMAN](rman_plugin.md). BACKINT
+The rman\_util parameter allows you to back up Oracle databases using Oracle RMAN in combination with [Veeam Plug-In for Oracle RMAN](rman_plugin.md).
 
 Prerequisites
 
