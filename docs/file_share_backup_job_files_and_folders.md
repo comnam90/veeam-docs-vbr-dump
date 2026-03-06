@@ -3,7 +3,7 @@ title: "Step 3. Select Files and Folders to Back Up"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_files_and_folders.html"
-last_updated: "4/16/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -65,7 +65,7 @@ To filter objects that you do not want to back up, you can specify the path or f
 3. Click Add.
 4. Depending on the way you want to exclude objects, select one of the following:
 
-* To exclude object by path, select Object by path and specify a filter to exclude objects based on their path.
+* To exclude object by path, select the Object by path option and specify a filter to exclude objects based on their path.
 
 |  |
 | --- |
