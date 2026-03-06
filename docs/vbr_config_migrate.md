@@ -3,7 +3,7 @@ title: "Migrating Veeam Backup & Replication to Another Windows-Based Backup Ser
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config_migrate.html"
-last_updated: "3/2/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,6 +23,7 @@ Before you migrate the configuration database of Veeam Backup & Replication to a
 * This section gives instructions on how to migrate Veeam Backup & Replication together with its configuration database to another server. If you need to migrate only the configuration database, see [Migrating Configuration Database to Another SQL Server](vbr_config_migrate_to_another_server.md).
 
 * Veeam Backup & Replication supports configuration database migration between different database engines only within the same Veeam Backup & Replication version.
+* The configuration database backup does not include backups of Microsoft Entra ID. To retain them, configure the secondary target for Microsoft Entra ID backup jobs beforehand.
 
 |  |
 | --- |
@@ -61,7 +62,7 @@ Back up the configuration database of Veeam Backup & Replication. For instructio
 
 Step 4. Install Veeam Backup & Replication on Target Machine
 
-Install Veeam Backup & Replication on the machine on which you plan to move your source backup server. The machine must meet [system requirements for a backup server](system_requirements.md#backup_server).
+Install Veeam Backup & Replication on the machine on which you plan to move your source backup server. The machine must meet [system requirements for a backup server](system_requirements_backup_server.md).
 
 During installation, you need to specify a new database name to store the configuration data. It does not matter whether you select an existing instance or create a new one. In the next steps of this guide, you will restore the previous configuration data to the database selected at this step.
 
@@ -86,8 +87,8 @@ After you restore the configuration backup, finalize the configuration:
 * If you use Veeam Backup & Replication to back up storage systems, after migration they will not be added to the backup infrastructure. In this case, you must re-add them after migration completes. For more information, see [Storage System Snapshot Integration](storage_integration.md).
 * If you use a hardened repository with immutability, after migration this server will not be available. In this case, you must specify single-use credentials for this repository again. For more information, see [Editing Settings of Backup Repositories](backup_repo_edit.md).
 * If you use Linux hosts in your backup infrastructure, after migration these hosts and hosts that are associated with them will not be available. (For example, if you have a Linux host with the backup proxy role, the backup repositories to which this Linux-based backup proxy transfer during a backup job will not be available). In this case, you must [open the Edit Linux Server wizard](edit_server.md) for the necessary Linux host, follow the steps of the wizard and click Finish.
-* You can safely uninstall Veeam Backup & Replication from the old backup server after migration.
 * [For VMware vSphere] If you use CDP, after the migration the I/O filter will be owned by the previous backup server. You must take ownership of the I/O filter on the new backup server. For more information, see [Taking I/O Filter Ownership](cdp_io_filter_ownership.md).
+* You can safely uninstall Veeam Backup & Replication from the old backup server after migration.
 
 * If you have Veeam Agent backup jobs managed by Veeam Agents, specify the name or IP address of the new backup server in the properties of all backup policies configured in Veeam Backup & Replication.
 
