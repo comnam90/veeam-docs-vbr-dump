@@ -3,7 +3,7 @@ title: "Step 3a. Choose Resources"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_resources.html"
-last_updated: "2/11/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -29,7 +29,7 @@ While running the job, Veeam Plug-in for Scale Computing HyperCore processes res
 | Note |
 | Consider the following:   * If you include the same resource into the backup scope multiple times (for example, an individual VM and a tag that contains this VM), Veeam Plug-in for Scale Computing HyperCore will process this resource only once.  * If you include a cluster or tag into the backup scope, VMs in this object are processed at random. To ensure that the VMs are processed in a specific order, you must add them as standalone VMs — not as part of the cluster or tag. |
 
-By default, jobs process all disks attached to VMs included into the backup scope. However, you can protect only specific disks of the selected resources. For more information, see [Step 3b. Choose Disks and Volume Groups](sch_backup_job_create_disk_excludes.md).
+By default, jobs process all disks attached to VMs included into the backup scope. However, you can protect only specific disks of the selected resources. For more information, see [Step 3b. Choose Disks](sch_backup_job_create_disk_excludes.md).
 
 [![Select VMs to Back Up](images/sch_backup_job_create_resources.webp)](images/sch_backup_job_create_resources.webp "Select VMs to Back Up")
 
