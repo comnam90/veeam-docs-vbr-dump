@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "2/24/2026"
+last_updated: "3/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -243,7 +243,8 @@ Microsoft Windows/Linux-Based Backup Repository
 | Backup repository (Linux) | TCP | 22 | Default SSH port used as a control channel. |
 | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  You can specify a different port while adding the Linux server to the Veeam Backup & Replication infrastructure. Note that you can specify a different port only if there is no previously installed Veeam Transport Service or Veeam Data Mover components on this Linux server. For more information, see [Specify Credentials and SSH Settings](linux_server_ssh.md).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
-| Backup proxy or Hyper-V server/Off-host backup proxy | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Backup proxy or Hyper-V server/Off-host backup proxy | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) during backup and restore operations.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Backup repository | Hyper-V server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) during restore operations.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Source backup repository | Target backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  If the backup copy job utilizes WAN accelerators, make sure that [ports specific for WAN accelerators](used_ports.md#wan) are opened.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
 NFS Backup Repository
@@ -500,6 +501,7 @@ The following tables describe network ports that must be opened to ensure proper
 * [Dell PowerStore](#dell_powerstore)
 * [Fujitsu ETERNUS DX/AF](#fujitsu)
 * [Hitachi VSP/VSP One Block](#vsp)
+* [HPE XP](#xp)
 * [IBM FlashSystem (formerly Spectrum Virtualize) Storage](#ibm)
 * [INFINIDAT InfiniBox](#infinidat)
 * [NEC Storage M Series](#necm)
@@ -554,6 +556,14 @@ Hitachi VSP/VSP One Block
 | From | To | Protocol | Port | Notes |
 | Backup server | Hitachi VSP/VSP One Block storage system | TCP | 443 | Default command port used for communication with Hitachi VSP/VSP One Block over HTTPS. |
 | Backup proxy | Hitachi VSP/VSP One Block storage system | TCP | 3260 | Default iSCSI target port. |
+
+HPE XP
+
+HPE XP
+
+| From | To | Protocol | Port | Notes |
+| Backup server | HPE XP storage system | TCP | 443 | Default command port used for communication with HPE XP over HTTPS. |
+| Backup proxy | HPE XP storage system | TCP | 3260 | Default iSCSI target port. |
 
 IBM FlashSystem (formerly Spectrum Virtualize) Storage
 
@@ -1099,13 +1109,13 @@ MongoDB Backup
 
 Veeam Plug-Ins for Cloud Solutions
 
-* [AWS Plug-In for Veeam Backup & Replication](https://helpcenter.veeam.com/docs/vbaws/guide/ports.html?ver=10)
-* [Microsoft Azure Plug-In for Veeam Backup & Replication](https://helpcenter.veeam.com/docs/vbazure/guide/ports.html?ver=8.1)
-* [Veeam Plug-in for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/ports.html?ver=7)
+* [Veeam Plug-In for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/ports.html?ver=10)
+* [Veeam Plug-In for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/ports.html?ver=8.1)
+* [Veeam Plug-In for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/ports.html?ver=7)
 
 Kasten
 
-* [Veeam Kasten Plug-In for Veeam Backup & Replication Connections](https://helpcenter.veeam.com/docs/vbr/kasten_integration/used_ports.html?ver=13)
+* [Veeam Plug-In for Kasten Connections](https://helpcenter.veeam.com/docs/vbr/kasten_integration/used_ports.html?ver=13)
 
 Virtualization Platforms
 
