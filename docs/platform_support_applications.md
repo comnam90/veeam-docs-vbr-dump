@@ -3,7 +3,7 @@ title: "Applications"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_applications.html"
-last_updated: "2/26/2026"
+last_updated: "3/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -12,33 +12,33 @@ product_version: "13.0.1.1071"
 
 Application-Aware Image Processing and Veeam Explorers
 
-You can create transactionally-consistent backups or replicas of VMs that run the following applications.
-
-Application-Aware Image Processing and Veeam Explorers
-
-| Application | Requirement |
-| Microsoft Active Directory | Veeam Backup & Replication supports backup of domain controllers running on the following operating systems:  * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Minimum supported domain and forest functional level is Windows 2012 R2. |
-| Microsoft Exchange | Veeam Backup & Replication supports backup of the following Microsoft Exchange versions:  * Microsoft Exchange Server Subscription Edition  * Microsoft Exchange Server 2019 * Microsoft Exchange Server 2016 |
-| Microsoft SharePoint | Veeam Backup & Replication supports backup of the following Microsoft SharePoint versions:  * Microsoft SharePoint Server Subscription Edition * Microsoft SharePoint Server 2019  * Microsoft SharePoint Server 2016   All editions are supported (Subscription, Foundation, Standard, Enterprise).  Restore of Microsoft SharePoint data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Staging SQL Server Settings](https://helpcenter.veeam.com/docs/vbr/explorers/vesp_configuring_sql_settings.html?ver=13). |
-| Microsoft SQL Server | Veeam Backup & Replication supports backup of the following Microsoft SQL Server versions:  * Microsoft SQL Server 2025 (only for Windows) * Microsoft SQL Server 2022 (only for Windows) * Microsoft SQL Server 2019 (only for Windows) * Microsoft SQL Server 2017 (only for Windows) * Microsoft SQL Server 2016 SP2 * Microsoft SQL Server 2014 SP3 * Microsoft SQL Server 2012 SP4   All editions of Microsoft SQL Server except LocalDB are supported.  The database whose logs you want to back up must use the Full or Bulk-logged recovery model. In this case, all changes of the Microsoft SQL Server state will be written to transaction logs, and you will be able to replay transaction logs to restore the Microsoft SQL Server. You can use the Microsoft SQL Server Management Studio to switch to one of these models. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-2017).  Restore of Microsoft SQL Server data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Configuring Staging SQL Server](vesql_configure_staging.md). |
-| Oracle on Windows OS | Veeam Backup & Replication supports backup of Oracle Database running on the following Microsoft Windows operating systems:  * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016  Veeam Backup & Replication supports backup of the following Oracle Database versions on Microsoft Windows machines:  * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c Release 2 * Oracle Database 12c Release 1 * Oracle Database 11g Release 2 |
-| Oracle on Linux OS | Veeam Backup & Replication supports backup of Oracle Database running on the following Linux distributions:  * RHEL 8.4 to 9.4 * SLES 12 SP5, 15 SP3 or later * Oracle Linux 7 (UEK3) to 9 (UEK R7) * Oracle Linux 7 to 9 (RHCK)  Veeam Backup & Replication supports backup of the following Oracle Database versions on Linux machines:  * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c Release 2 * Oracle Database 12c Release 1 * Oracle Database 11g Release 2 |
-| Oracle Database configuration | Consider the following:   * Automatic Storage Management (ASM) is supported for Oracle 11g and later; requires ASMlib present.  * Oracle Real Application Clusters (RAC) are not supported within the image-level backup functionality. Use Veeam Plug-In for Oracle RMAN. For details, see [Veeam Plug-In for Oracle RMAN](rman_plugin.md). * Oracle Database Express Edition (XE) is supported for Windows-based machines only.  * [For Microsoft Windows-based Oracle machines] Configurations with different versions of Oracle Database deployed on the same server are not supported.  * To create Oracle database backups, all Oracle servers that use Data Guard must be added to the backup job. * You can use Veeam Plug-In for Oracle RMAN to integrate RMAN with Veeam Backup & Replication repositories. For details, see the [Veeam Plug-In for Oracle RMAN](rman_plugin.md) section. |
-| PostgreSQL | Veeam Backup & Replication supports backup of the following PostgreSQL versions on Linux machines:  * PostgreSQL 18 * PostgreSQL 17 * PostgreSQL 16 * PostgreSQL 15 * PostgreSQL 14 * PostgreSQL 13  Veeam Backup & Replication does not support backup of PostgreSQL clusters. |
+You can create transactionally consistent backups or replicas of machines that run the following applications:
 
 |  |
 | --- |
 | Note |
-| Consider that 32-bit Oracle running on 64-bit operating systems and Oracle Express Edition (XE) on Linux are not supported. |
+| To recover application data from image-level backups or replicas created with application-aware processsing, use Veeam Explorers. For more information, see [Veeam Explorers Overview](explorers_introduction.md). |
+
+Application-Aware Image Processing and Veeam Explorers
+
+| Application | Requirement |
+| Microsoft Active Directory | Veeam Backup & Replication supports backup and recovery of domain controllers running on the following operating systems:  * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Minimum supported domain and forest functional level is Windows 2012 R2. |
+| Microsoft Exchange | Veeam Backup & Replication supports backup and recovery of the following Microsoft Exchange versions:  * Microsoft Exchange Server Subscription Edition  * Microsoft Exchange Server 2019 * Microsoft Exchange Server 2016 |
+| Microsoft SharePoint | Veeam Backup & Replication supports backup and recovery of the following Microsoft SharePoint versions:  * Microsoft SharePoint Server Subscription Edition * Microsoft SharePoint Server 2019  * Microsoft SharePoint Server 2016   All editions are supported (Subscription, Foundation, Standard, Enterprise).  Restore of Microsoft SharePoint data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Staging SQL Server Settings](https://helpcenter.veeam.com/docs/vbr/explorers/vesp_configuring_sql_settings.html?ver=13). |
+| Microsoft SQL Server | Veeam Backup & Replication supports backup and recovery of the following Microsoft SQL Server versions:  * Microsoft SQL Server 2025 (only for Windows) * Microsoft SQL Server 2022 (only for Windows) * Microsoft SQL Server 2019 (only for Windows) * Microsoft SQL Server 2017 (only for Windows) * Microsoft SQL Server 2016 SP2 * Microsoft SQL Server 2014 SP3 * Microsoft SQL Server 2012 SP4   All editions of Microsoft SQL Server except LocalDB are supported.  The database whose logs you want to back up must use the Full or Bulk-logged recovery model. In this case, all changes of the Microsoft SQL Server state will be written to transaction logs, and you will be able to replay transaction logs to restore the Microsoft SQL Server. You can use the Microsoft SQL Server Management Studio to switch to one of these models. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-2017).  Restore of Microsoft SQL Server data may require an available staging Microsoft SQL Server. To learn how to configure this server, see [Configuring Staging SQL Server](vesql_configure_staging.md). |
+| Oracle on Windows OS | Veeam Backup & Replication supports backup and recovery of Oracle Database running on the following Microsoft Windows operating systems:  * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016  Veeam Backup & Replication supports backup and recovery of the following Oracle Database versions on Microsoft Windows machines:  * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c Release 2 * Oracle Database 12c Release 1 * Oracle Database 11g Release 2 |
+| Oracle on Linux OS | Veeam Backup & Replication supports backup and recovery of Oracle Database running on the following Linux distributions:  * RHEL 8.4 to 9.4 * SLES 12 SP5, 15 SP3 or later * Oracle Linux 7 (UEK3) to 9 (UEK R7) * Oracle Linux 7 to 9 (RHCK)  Veeam Backup & Replication supports backup and recovery of the following Oracle Database versions on Linux machines:  * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c Release 2 * Oracle Database 12c Release 1 * Oracle Database 11g Release 2 |
+| Oracle Database configuration | Consider the following:   * Automatic Storage Management (ASM) is supported for Oracle 11g and later; requires ASMlib present.  * Oracle Real Application Clusters (RAC) are not supported within the image-level backup functionality. Use Veeam Plug-In for Oracle RMAN. For details, see [Veeam Plug-In for Oracle RMAN](rman_plugin.md). * 32-bit Oracle running on 64-bit operating systems is not supported. * Oracle Database Express Edition (XE) is supported for Windows-based machines only.  * [For Microsoft Windows-based Oracle machines] Configurations with different versions of Oracle Database deployed on the same server are not supported.  * To create Oracle database backups, all Oracle servers that use Data Guard must be added to the backup job. * You can use Veeam Plug-In for Oracle RMAN to integrate RMAN with Veeam Backup & Replication repositories. For details, see the [Veeam Plug-In for Oracle RMAN](rman_plugin.md) section. |
+| PostgreSQL | Veeam Backup & Replication supports backup and recovery of the following PostgreSQL versions on Linux machines:  * PostgreSQL 18 * PostgreSQL 17 * PostgreSQL 16 * PostgreSQL 15 * PostgreSQL 14 * PostgreSQL 13  Veeam Backup & Replication does not support backup and recovery of PostgreSQL clusters. |
 
 Veeam Plug-Ins for Enterprise Applications
 
-Veeam Plug-Ins for Enterprise Applications further enhance Veeam Backup & Replication by enabling transactionally consistent backups of the following databases and enterprise applications:
+Veeam Plug-Ins for Enterprise Applications further enhance Veeam Backup & Replication by enabling transactionally consistent backups and recovery of the following databases and enterprise applications:
 
 |  |
 | --- |
 | Tip |
-| For more information on Veeam Plug-Ins for Enterprise Applications, see [Databases and Enterprise Applications](protect_applications.md). |
+| Consider the following:   * For more information on Veeam Plug-Ins for Enterprise Applications, see [Databases and Enterprise Applications](protect_applications.md). * Some Veeam Plug-Ins for Enterprise Applications support data recovery using Veeam Explorers. For more information, see [Launching Veeam Explorer from Plug-in or MongoDB Backup](launching_veeam_explorers_plugin.md). |
 
 Veeam Plug-Ins for Enterprise Applications
 
@@ -51,6 +51,8 @@ Veeam Plug-Ins for Enterprise Applications
 | IBM Db2 | [Veeam Plug-In for IBM Db2](db2_plugin.md) | Veeam Plug-In for IBM Db2 supports the following configurations of IBM Db2:   * Versions: 10.5, 11.1, 11.5, 12.1 * Editions: Standard, Advanced * Environments: standalone servers, high availability disaster recovery (HADR), failover clusters   In case of HADR and failover clusters, Veeam Plug-In supports the following cluster management software: TSA, Pacemaker for Linux OSes, PowerHA for IBM AIX. |
 
 MongoDB Backup
+
+Veeam Backup & Replication allows you to create transactionally consistent backups of MongoDB data. To recover this data, use [Veeam Explorer for MongoDB](vemdb_user_guide.md).
 
 MongoDB Backup
 

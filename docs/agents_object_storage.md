@@ -3,7 +3,7 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage.html"
-last_updated: "12/2/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -109,5 +109,9 @@ To learn more about access tiers for blob data, see [Microsoft documentation](ht
 To learn more about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 
 * Veeam Agents do not support direct backup under the general-purpose V1 storage account type.
+* [For backup jobs managed by Veeam Agent] If you configure an [expiration policy for shared access signatures (SAS)](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal) on your Azure container, the SAS expiry interval should be set to at least:
+
+* 30 days — for repositories using Shared Access Key.
+* 7 days — for repositories using Entra ID credentials.
 
 

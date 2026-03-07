@@ -3,7 +3,7 @@ title: "Veeam Data Cloud Vault Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_cloud_limitations.html"
-last_updated: "2/5/2026"
+last_updated: "3/6/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ Consider the following limitations for Veeam Data Cloud Vault:
 |  |
 | --- |
 | Note |
-| Ensure that the email address you use to access the My Account portal or the Veeam Data Cloud Vault portal matches the email address of the License Administrator. Consider that this email address is case-sensitive. If you plan to delegate access to another user, make sure that he also has the License Administrator role. |
+| Ensure that the email address you use to access the My Account portal or the Veeam Data Cloud Vault portal matches the email address of the License Administrator. Consider that this email address is case-sensitive. If you plan to delegate access to another user, make sure that this user also has the License Administrator role. |
 
 * Make sure you have WebView2 Runtime installed on your backup server.
 * You must enable encryption for every job that you target to Veeam Data Cloud Vault. For more information, see [Job Encryption](encryption_job.md).

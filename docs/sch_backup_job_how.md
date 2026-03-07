@@ -3,7 +3,7 @@ title: "VM Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_how.html"
-last_updated: "2/26/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -34,7 +34,7 @@ If no worker is deployed on the host, Veeam Plug-in for Scale Computing HyperCor
 1. Connects to the Scale Computing HyperCore cluster and creates a snapshot of the processed VM.
 2. Uses the worker to read data from disks that are attached to the processed VM, compares it to the data written to the snapshot created at the step 2, excludes the changes and transfers the resulting data to the target repository — and stores it in the native Veeam format.
 
-To reduce the amount of data read from VM disks, Veeam Plug-in for Scale Computing HyperCore uses the changed block tracking (CBT) mechanism: during incremental backup sessions, Veeam Plug-in for Scale Computing HyperCore compares the current disk content with the backed-up content and reads only those data blocks that have changed since the previous backup session. If CBT cannot be used, Veeam Plug-in for Scale Computing HyperCore reads all data from the VM disks. For more information, see [Changed Block Tracking](sch_changed_block_tracking.md).
+To reduce the amount of data read from VM disks, Veeam Plug-in for Scale Computing HyperCore uses the changed block tracking (CBT) mechanism: during incremental backup sessions, Veeam Plug-in for Scale Computing HyperCore compares the current snapshot with the previous one and reads only those data blocks that have changed since the previous backup session. If CBT cannot be used, Veeam Plug-in for Scale Computing HyperCore reads all data from the VM disks. For more information, see [Changed Block Tracking](sch_changed_block_tracking.md).
 
 Veeam Plug-in for Scale Computing HyperCore compresses and deduplicates data saved to repositories.
 

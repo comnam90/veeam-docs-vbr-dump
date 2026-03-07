@@ -3,7 +3,7 @@ title: "Veeam PowerShell Enumerations"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/enums.html"
-last_updated: "11/18/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,8 +16,9 @@ EVmssState
 
 Mount state.
 
+EVmssState
+
 | Member | Description |
-| --- | --- |
 | 0 | Mounting |
 | 1 | Mounted |
 | 2 | Mount Failed |
@@ -29,8 +30,9 @@ EVBRHighAvailablityClusterNodeStatus
 
 The role of the high availability cluster node.
 
+EVBRHighAvailablityClusterNodeStatus
+
 | Member | Description |
-| --- | --- |
 | Primary | Primary node. |
 | Secondary | Secondary node. |
 
@@ -38,8 +40,9 @@ EVBRHighAvailabilityClusterNodeRole
 
 The status of the high availability cluster node.
 
+EVBRHighAvailabilityClusterNodeRole
+
 | Member | Description |
-| --- | --- |
 | Online | Node is online. |
 | Offline | Node is offline. |
 
@@ -47,8 +50,9 @@ VBRAmazonIpAddressType
 
 Type of a private IP address for an Amazon EC2 instance.
 
+VBRAmazonIpAddressType
+
 | Member | Description |
-| --- | --- |
 | Dynamic | Private dynamic IP address. |
 | Static | Private static IP address. |
 
@@ -56,8 +60,9 @@ VBRAmazonRegionType
 
 Type of Amazon region.
 
+VBRAmazonRegionType
+
 | Member | Description |
-| --- | --- |
 | Global | Global region. |
 | Government | Government region. |
 | China | China region. |
@@ -66,8 +71,9 @@ VBRAmazonServiceType
 
 Type of Amazon object storage.
 
+VBRAmazonServiceType
+
 | Member | Description |
-| --- | --- |
 | ExternalRepository | External repository. |
 | CapacityTier | Capacity tier, object storage repository. |
 | ArchiveTier | Archive tier |
@@ -76,8 +82,9 @@ VBRArchiveExtentStatus
 
 Status of archive extent.
 
+VBRArchiveExtentStatus
+
 | Member | Description |
-| --- | --- |
 | 0 | Normal |
 | 1 | Pending |
 | 2 | Maintenance |
@@ -85,8 +92,9 @@ Status of archive extent.
 
 VBRArchiveObjectStorageRepositoryType
 
+VBRArchiveObjectStorageRepositoryType
+
 | Member | Description |
-| --- | --- |
 | AzureArchive | Microsoft Azure Archive Storage. |
 | AmazonS3Glacier | Amazon S3 Glacier Storage |
 | S3GlacierCompatible | S3 compatible Glacier Storage |
@@ -95,8 +103,9 @@ VBRActivitySeverity
 
 Malware states.
 
+VBRActivitySeverity
+
 | Member | Description |
-| --- | --- |
 | Clean | Clean |
 | Suspicious | Suspicious |
 | Infected | Infected |
@@ -105,8 +114,9 @@ VBRActivityState
 
 Malware status.
 
+VBRActivityState
+
 | Member | Description |
-| --- | --- |
 | Created | Clean |
 | FalsePositive | False positive event |
 
@@ -114,8 +124,9 @@ VBRApplicationBackupAuthenticationMode
 
 Types of authentication methods to access Oracle hosts and databases.
 
+VBRApplicationBackupAuthenticationMode
+
 | Member | Description |
-| --- | --- |
 | OSAuth | Connection to the Oracle host and database with OS authentication. |
 | SplitAuth | Uses OS and database credentials simultaneously to connect to the Oracle host and database. |
 
@@ -123,8 +134,9 @@ VBRAzureBlobRegionType
 
 Type of Azure regions.
 
+VBRAzureBlobRegionType
+
 | Member | Description |
-| --- | --- |
 | Global | Global region |
 | China | China region |
 | Government | Government region |
@@ -133,8 +145,9 @@ VBRAzureDiskType
 
 Azure disk type.
 
+VBRAzureDiskType
+
 | Member | Description |
-| --- | --- |
 | StandardHDD | Standard HDD |
 | StandardSSD | Standard SSD |
 | PremiumSSD | Premium SSD |
@@ -143,15 +156,17 @@ VBRAzureModelType
 
 Microsoft Azure subscription type.
 
+VBRAzureModelType
+
 | Member | Description |
-| --- | --- |
 | ResourceManager | Microsoft Azure Resource Manager subscription type |
 | Classic | Microsoft Azure Classic subscription type |
 
 VBRAzureServiceType
 
+VBRAzureServiceType
+
 | Member | Description |
-| --- | --- |
 | ExternalRepository | External repository |
 | CapacityTier | Capacity tier, object storage repository |
 | ArchiveTier | Archive tier |
@@ -160,8 +175,9 @@ VBRAgentLicenseMode
 
 Agent license mode.
 
+VBRAgentLicenseMode
+
 | Member | Description |
-| --- | --- |
 | Workstation | Workstation mode |
 | Server | Server mode |
 
@@ -169,8 +185,9 @@ VBRBackupToTapePolicyType
 
 Job schedule settings.
 
+VBRBackupToTapePolicyType
+
 | Member | Description |
-| --- | --- |
 | AfterJob | Job starts after a selected job. |
 | AfterNewBackup | Job starts when a new backup appear. |
 | Daily | Job starts on selected days of week. |
@@ -180,8 +197,9 @@ VBRBestPracticeStatus
 
 Status of Security and Compliance Analyzer check.
 
+VBRBestPracticeStatus
+
 | Member | Description |
-| --- | --- |
 | None | The check not applicable. |
 | Analyzing | The check is not finished. |
 | Ok | The check passed. |
@@ -193,8 +211,9 @@ VBRBestPracticeType
 
 Type of Security and Compliance Analyzer check.
 
+VBRBestPracticeType
+
 | Member | Description |
-| --- | --- |
 | BackupServerInProductionDomain | The backup server should be in a workgroup. |
 | VbrAndEmOnDifferentMachines | Not used. |
 | BiosUEFIMode | Not used. |
@@ -270,8 +289,9 @@ VBRCapacityExtentStatus
 
 The status of a capacity extent in the scale-out backup repository.
 
+VBRCapacityExtentStatus
+
 | Member | Description |
-| --- | --- |
 | 0 | Normal |
 | 1 | Pending |
 | 2 | Maintenance |
@@ -284,8 +304,9 @@ VBRCloudConnectedLicenseMode
 
 Cloud Connect license options.
 
+VBRCloudConnectedLicenseMode
+
 | Member | Description |
-| --- | --- |
 | Enabled | Cloud Connect license enabled. |
 | Disabled | Cloud Connect license disabled. |
 | Enterprise | Cloud Connect for the Enterprise |
@@ -294,8 +315,9 @@ VBRCloudGatewaySelectionType
 
 Type of gateway for the tenant.
 
+VBRCloudGatewaySelectionType
+
 | Member | Description |
-| --- | --- |
 | StandaloneGateways | A gateway that is not added to a gateway pool. |
 | GatewayPool | A gateway that is added to a gateway pool. |
 
@@ -303,8 +325,9 @@ VBRCloudInfrastructureState
 
 The state of the cloud infrastructure.
 
+VBRCloudInfrastructureState
+
 | Member | Description |
-| --- | --- |
 | Active | Cloud infrastructure is in working state. |
 | Maintenance | Cloud infrastructure is in Maintenance mode. |
 
@@ -312,8 +335,9 @@ VBRCompressionLevel
 
 The level of compression.
 
+VBRCompressionLevel
+
 | Member | Description |
-| --- | --- |
 | None | Compression is disabled. |
 | Dedupe-friendly | The dedupe-friendly compression level. |
 | Optimal | The optimal compression level. |
@@ -324,8 +348,9 @@ VBRConfigurationBackupScheduleType
 
 Configuration backup job schedule type.
 
+VBRConfigurationBackupScheduleType
+
 | Member | Description |
-| --- | --- |
 | Daily | Job starts on selected days of week. |
 | Monthly | Job starts on selected days of month. |
 
@@ -333,8 +358,9 @@ VBRDailyOptionsType
 
 Daily basis job schedule type.
 
+VBRDailyOptionsType
+
 | Member | Description |
-| --- | --- |
 | Everyday | Job runs everyday. |
 | WeekDays | Job runs Monday to Friday. |
 | SelectedDays | Job runs on selected days. |
@@ -343,8 +369,9 @@ VBRDayNumberInMonth
 
 Day in month in job schedule, for example, "the first" (Sunday).
 
+VBRDayNumberInMonth
+
 | Member | Description |
-| --- | --- |
 | First | Job runs every first day of month. |
 | Second | Job runs every second day of month. |
 | Third | Job runs every third day of month. |
@@ -356,22 +383,25 @@ VBRDetectionEngine
 
 Type of scan engine.
 
+VBRDetectionEngine
+
 | Member | Description |
-| --- | --- |
 | External | Third-party antivirus software. |
 | VeeamThreatHunter | Veeam signature-based scan engine. |
 
 VBRDiscoveredMongoDBEntityType
 
+VBRDiscoveredMongoDBEntityType
+
 | Member | Description |
-| --- | --- |
 | ReplicaSet | Specific MongoDB replica set. |
 | ReplicaSetNode | Specific node within a MongoDB replica set. |
 
 VBRDiscoveredSAPHANAEntityType
 
+VBRDiscoveredSAPHANAEntityType
+
 | Member | Description |
-| --- | --- |
 | ScaleOutSystem | Multiple-host SAP system distributed across several servers. |
 | Server | Protected server. |
 | SAPSystem | Single SAP system installed on one server. |
@@ -381,8 +411,9 @@ VBREntraIdLogsBackupShortTermRetentionType
 
 Retention period type.
 
+VBREntraIdLogsBackupShortTermRetentionType
+
 | Member | Description |
-| --- | --- |
 | 0 | Restore points are removed after the specified amount of days. |
 | 1 | Restore points are removed after the specified amount of months. |
 | 2 | Restore points are removed after the specified amount of years. |
@@ -391,8 +422,9 @@ VBREntraIDTenantItemType
 
 Type of a Microsoft Entra ID item.
 
+VBREntraIDTenantItemType
+
 |  | Description |
-| --- | --- |
 | User | Entra ID user. |
 | Group | Entra ID group. |
 | AdminUnit | Entra ID administrative unit. |
@@ -405,16 +437,18 @@ VBREPPermissionType
 
 User access permissions to repositories for Veeam Agent for Microsoft Windows backups.
 
+VBREPPermissionType
+
 | Member | Description |
-| --- | --- |
 | Everyone | Everyone has permission. |
 | NoOne | No one has permission. |
 | OnlySelectedUsers | Selected users have permission. |
 
 VBREpThrottlingAgentType
 
+VBREpThrottlingAgentType
+
 | Member | Description |
-| --- | --- |
 | Workstations | Throttle Veeam Agent on workstations. |
 | Servers | Throttle Veeam Agent on servers |
 | AllHosts | Throttle Veeam Agent on all computers. |
@@ -423,8 +457,9 @@ VBRExportRetentionPeriod
 
 A retention period of exported backup files.
 
+VBRExportRetentionPeriod
+
 | Member | Description |
-| --- | --- |
 | Never | Veeam Backup & Replication never deletes exported backup files. |
 | In1Month | Veeam Backup & Replication will delete exported backup files in 1 month. |
 | In3Months | Veeam Backup & Replication will delete exported backup files in 3 months. |
@@ -439,8 +474,9 @@ VBRFailoverPlanType
 
 Failover plan type.
 
+VBRFailoverPlanType
+
 | Member | Description |
-| --- | --- |
 | Local | Non-cloud failover plan |
 | Cloud | Cloud failover plan on cloud user side |
 | Tenant | Cloud failover plan of a tenant on cloud provider side |
@@ -449,8 +485,9 @@ VBRFileToTapeBackupPolicyType
 
 File to tape job schedule type.
 
+VBRFileToTapeBackupPolicyType
+
 | Member | Description |
-| --- | --- |
 | Daily | Job starts on selected days of week. |
 | Monthly | Job starts on selected days of month. |
 
@@ -458,15 +495,17 @@ VBRFullBackupToTapePolicyType
 
 Virtual full backup schedule type.
 
+VBRFullBackupToTapePolicyType
+
 | Member | Description |
-| --- | --- |
 | Monthly | Virtual full is created on selected days of month. |
 | WeeklyOnDays | Virtual full is created on selected days of week. |
 
 VBRGatewayMode
 
+VBRGatewayMode
+
 | Member | Description |
-| --- | --- |
 | Automatic | Automatic gateway selection. |
 | SelectedGateway | Manual gateway selection. |
 
@@ -474,8 +513,9 @@ VBRGatewayNetworkMode
 
 Network mode for cloud gateways. The network mode defines how the cloud gateway communicates with the Veeam backup server on the tenant side.
 
+VBRGatewayNetworkMode
+
 | Member | Description |
-| --- | --- |
 | Direct | Direct network mode. |
 | NAT | NAT network mode. |
 
@@ -483,8 +523,9 @@ VBRGFSMonthlyKind
 
 Monthly basis job schedule type.
 
+VBRGFSMonthlyKind
+
 | Member | Description |
-| --- | --- |
 | DayOfWeek | Job runs on a selected day in month, for example, the first Sunday of month. |
 | DayOfMonth | Job runs on a selected date, for example, on the 1st (of January). |
 
@@ -492,8 +533,9 @@ VBRGoogleCloudComputeDiskType
 
 Google Cloud compute engine disk type.
 
+VBRGoogleCloudComputeDiskType
+
 | Member | Description |
-| --- | --- |
 | BalancedPersistent | Balanced persistent disk type for Google Cloud Compute Engine VM. |
 | SSDPersistent | SSD persistent disk type for Google Cloud Compute Engine VM. |
 | StandardPersistent | Standard persistent disk type for Google Cloud Compute Engine VM. |
@@ -502,8 +544,9 @@ VBRGoogleCloudComputeVirusDetectionAction
 
 Action that Veeam Backup & Replication will perform if detecting a virus when scanning the VM with antivirus software before restoring it to Google Compute Engine.
 
+VBRGoogleCloudComputeVirusDetectionAction
+
 | Member | Description |
-| --- | --- |
 | ConnectToIsolatedNetwork | Restore the VM to an isolated Google Cloud network. |
 | AbortRecovery | Cancel the VM restore session. |
 
@@ -511,8 +554,9 @@ VBRGoogleCloudServiceType
 
 Type of the Google Cloud object storage repository added to the backup infrastructure.
 
+VBRGoogleCloudServiceType
+
 | Member | Description |
-| --- | --- |
 | ExternalRepository | External repository. |
 | CapacityTier | Extent of the capacity tier. |
 | ArchiveTier | Extent of the archive tier. |
@@ -521,8 +565,9 @@ VBRGuestOsType
 
 Oracle database guest OS type.
 
+VBRGuestOsType
+
 | Member | Description |
-| --- | --- |
 | Unknown | Oracle database runs on VM with unknown OS. |
 | Windows | Oracle database runs on Windows-based VM. |
 | Linux | Oracle database runs on Linux-based VM. |
@@ -532,8 +577,9 @@ VBRRepositoryImmutabilityMode
 
 Immutability mode settings.
 
+VBRRepositoryImmutabilityMode
+
 | Member | Description |
-| --- | --- |
 | RepositoryRetention | Repository retention. |
 | BackupRetention | Backup retention. |
 
@@ -541,8 +587,9 @@ VBRInfrastructureValidationErrorType
 
 Validation errors.
 
+VBRInfrastructureValidationErrorType
+
 | Member | Description |
-| --- | --- |
 | AddedByIPAddress | Contains IPv4. |
 | HasIPv6Config | Contains IPv6. |
 
@@ -550,8 +597,9 @@ VBRInstanceLicenseObjectType
 
 Types of instance licensed workloads.
 
+VBRInstanceLicenseObjectType
+
 | Member | Description |
-| --- | --- |
 | VM | Protected VM. |
 | Server | Protected server. |
 | Workstation | Protected workstation. |
@@ -569,8 +617,9 @@ VBRJobType
 
 Job type.
 
+VBRJobType
+
 | Member | Description |
-| --- | --- |
 | Backup | Backup job. |
 | BackupSync | Backup copy job. |
 | BackupToTape | Backup to tape job. |
@@ -589,8 +638,9 @@ VBRLicenseEdition
 
 License edition.
 
+VBRLicenseEdition
+
 | Member | Description |
-| --- | --- |
 | Community | Community edition. |
 | Standard | Standard edition. |
 | Enterprise | Enterprise edition. |
@@ -601,8 +651,9 @@ VBRLicenseUsageReportType
 
 Type of a report file.
 
+VBRLicenseUsageReportType
+
 | Member | Description |
-| --- | --- |
 | HTML | HTML type. |
 | PDF | PDF type. |
 | JSON | JSON type. |
@@ -611,8 +662,9 @@ VBRLicenseStatus
 
 License status.
 
+VBRLicenseStatus
+
 | Member | Description |
-| --- | --- |
 | Valid | Valid. |
 | Expired | Expired. |
 | Invalid | Invalid. |
@@ -621,8 +673,9 @@ VBRLicenseType
 
 License type.
 
+VBRLicenseType
+
 | Member | Description |
-| --- | --- |
 | Rental | Rental type. |
 | Perpetual | Perpetual type. |
 | Subscription | Subscription type. |
@@ -635,8 +688,9 @@ VBRLinuxAgentPackageType
 
 Type of Veeam Agent for Linux packages.
 
+VBRLinuxAgentPackageType
+
 | Member | Description |
-| --- | --- |
 | Standard | Veeam Agent for Linux packages with kernel module for creating snapshots. |
 | Nosnap | Veeam Agent for Linux packages without kernel module for creating snapshots. |
 
@@ -644,10 +698,11 @@ VBRLogStatus
 
 Log entry status.
 
+VBRLogStatus
+
 | Member | Description |
-| --- | --- |
 | None | Job session status not applicable. |
-| Success | Job session finished with success. |
+| Succeeded | Job session finished with success. |
 | Warning | Job session finished with warning. |
 | Failed | Job session failed. |
 
@@ -655,16 +710,18 @@ VBRMongoDBDeploymentType
 
 Type of MongoDB deployment.
 
+VBRMongoDBDeploymentType
+
 | Member | Description |
-| --- | --- |
 | ReplicaSet | MongoDB replica set type deployment. |
 
 VBRMongoDBOplogRetentionPolicy
 
 Types of retention policy options for MongoDB oplog backups .
 
+VBRMongoDBOplogRetentionPolicy
+
 | Member | Description |
-| --- | --- |
 | KeepLastDays | Retains oplog backup for a specified number of days, regardless of the state of the corresponding full backup. |
 | KeepWithBackup | Retains oplog backup simultaneously with the corresponding full backup. |
 
@@ -672,8 +729,9 @@ VBRObjectStorageRepositoryType
 
 Types of object storage repositories.
 
+VBRObjectStorageRepositoryType
+
 | Member | Description |
-| --- | --- |
 | AmazonS3 | Amazon S3. |
 | AmazonS3Compatible | S3 compatible |
 | AzureBlob | Azure Blob |
@@ -687,8 +745,9 @@ VBROracleDatabaseRecoveryModel
 
 Oracle database recovery mode.
 
+VBROracleDatabaseRecoveryModel
+
 | Member | Description |
-| --- | --- |
 | ArchiveLog | ARCHIVELOG mode is enabled for the Oracle database. |
 | NoArchiveLog | ARCHIVELOG mode is not enabled for the Oracle database. |
 
@@ -696,8 +755,9 @@ VBROrganizationvDCAllocationModel
 
 Allocation model.
 
+VBROrganizationvDCAllocationModel
+
 | Member | Description |
-| --- | --- |
 | PayAsYouGo | Pay-as-you-go allocation model. |
 | AllocationPool | Allocation pool allocation model. |
 | ReservationPool | Reservation pool allocation model. |
@@ -706,8 +766,9 @@ VBRPeriodicityType
 
 Script run mode.
 
+VBRPeriodicityType
+
 | Member | Description |
-| --- | --- |
 | Cycles | Script runs after a set number of job runs (for example, every second job run). |
 | Days | Script runs on selected days. |
 
@@ -715,8 +776,9 @@ VBRPlatform:
 
 Virtualization platform.
 
+VBRPlatform:
+
 | Member | Description |
-| --- | --- |
 | VMware | VMware virtualization platform. |
 | Hyper-V | Hyper-V virtualization platform. |
 
@@ -724,8 +786,9 @@ VBRRansomwareScanningSensitivity
 
 Malware index settings.
 
+VBRRansomwareScanningSensitivity
+
 | Member | Description |
-| --- | --- |
 | Low | Low |
 | BetweenLowAndNormal | Between low and normal |
 | Normal | Normal |
@@ -736,8 +799,9 @@ VBRReplicaStatus
 
 Status of replica VM.
 
+VBRReplicaStatus
+
 | Member | Description |
-| --- | --- |
 | Ready | Ready |
 | Processing | Processing |
 | SureBackup | SureBackup |
@@ -750,8 +814,9 @@ VBRRepositoryConnectionType
 
 Connection type to object storage repository.
 
+VBRRepositoryConnectionType
+
 | Member | Description |
-| --- | --- |
 | Direct | Direct connection using proxy. |
 | Gateway | Connection using gateway server. |
 
@@ -759,8 +824,9 @@ VBRRepositoryExtentStatus
 
 Scale-out backup repository status.
 
+VBRRepositoryExtentStatus
+
 | Member | Description |
-| --- | --- |
 | Unknown | Extent is not added to any scale-out repository. |
 | Normal | Extent is in working mode. |
 | Pending | Extent is in process of switching to Maintenance mode. |
@@ -771,8 +837,9 @@ VBRRestorePointType
 
 Restore point type.
 
+VBRRestorePointType
+
 | Member | Description |
-| --- | --- |
 | Full | Restore point is a VBK file (full backup). |
 | Rollback | Restore point is a VRB file (reverse incremental backup). |
 | Increment | Restore point is a VIB file (forward incremental backup). |
@@ -783,8 +850,9 @@ VBRScaleOutBackupRepositoryPolicyType
 
 Scale-out backup repository policy.
 
+VBRScaleOutBackupRepositoryPolicyType
+
 | Member | Description |
-| --- | --- |
 | DataLocality | Data locality policy. |
 | Performance | Performance policy. |
 
@@ -792,8 +860,9 @@ VBRSessionResult
 
 Session result. Indicates the state with which a job run or a task session finished.
 
+VBRSessionResult
+
 | Member | Description |
-| --- | --- |
 | None | The result is N/A. |
 | Success | The session finished successfully. |
 | Warning | The session finished with warnings. |
@@ -803,8 +872,9 @@ VBRSessionState
 
 Job or task current state.
 
+VBRSessionState
+
 | Member | Description |
-| --- | --- |
 | ActionRequired | [For move or copy backups operation]  The job is stopped with an error and requires an action (for example, job retry or undo). |
 | Idle | The job is idle. The job is in idle state between the scheduled job runs. |
 | Pausing | The job is pausing. |
@@ -823,8 +893,9 @@ VBRSocketLicenseObjectType
 
 Types of socket licensed workloads.
 
+VBRSocketLicenseObjectType
+
 | Member | Description |
-| --- | --- |
 | HyperV | Protected HyperV workloads. |
 | vSphere | Protected vSphere workloads. |
 | Nutanix | Protected Nutanix workloads. |
@@ -833,16 +904,18 @@ Types of socket licensed workloads.
 
 VBRSpeedUnit
 
+VBRSpeedUnit
+
 | Member | Description |
-| --- | --- |
 | MbitPerSec | Megabit per second unit. |
 | MbytePerSec | Megabyte per second unit. |
 | KbytePerSec | Kilobyte per second unit. |
 
 VBRS3CompatibleAccessControlPolicyType
 
+VBRS3CompatibleAccessControlPolicyType
+
 | Member | Description |
-| --- | --- |
 | AllowAll | Direct access insecure. |
 | VBRManaged | Access using gateway server. |
 | S3CompatibleManaged | Direct access using token. |
@@ -851,8 +924,9 @@ VBRTapeDriveState
 
 Tape drive state.
 
+VBRTapeDriveState
+
 | Member | Description |
-| --- | --- |
 | Loaded | Tape drive is loaded. |
 | Empty | Tape drive is empty. |
 
@@ -860,8 +934,9 @@ VBRTapeLibraryState
 
 Tape library state.
 
+VBRTapeLibraryState
+
 | Member | Description |
-| --- | --- |
 | Online | Tape library is online. |
 | Offline | Tape library is offline. |
 
@@ -869,8 +944,9 @@ VBRTapeLibraryType
 
 Tape library type.
 
+VBRTapeLibraryType
+
 | Member | Description |
-| --- | --- |
 | Automated | Tape library is automated tape device. |
 | StandaloneDrive | Tape library is standalone tape drive. |
 
@@ -878,8 +954,9 @@ VBRTapeMediaPoolRetentionType
 
 Tape retention period type.
 
+VBRTapeMediaPoolRetentionType
+
 | Member | Description |
-| --- | --- |
 | Never | Data on tape is never overwritten. |
 | Periodic | Data on tape is protected for selected period of time. |
 | Cyclic | Data on tape is not protected. |
@@ -888,8 +965,9 @@ VBRTapeMediaPoolType
 
 Media pool type.
 
+VBRTapeMediaPoolType
+
 | Member | Description |
-| --- | --- |
 | Unrecognized | Unrecognized media pool. |
 | Free | Free media pool. |
 | Retired | Retired media pool. |
@@ -901,8 +979,9 @@ VBRTapeMediaPoolPeriod
 
 Tape retention measure unit.
 
+VBRTapeMediaPoolPeriod
+
 | Member | Description |
-| --- | --- |
 | None | Tape data is not protected. |
 | Days | Tape data retention period is measured in days. |
 | Weeks | Tape data retention period is measured in weeks. |
@@ -912,8 +991,9 @@ VBRTapeMediaSetCreationPolicyType
 
 Policy for creating media sets.
 
+VBRTapeMediaSetCreationPolicyType
+
 | Member | Description |
-| --- | --- |
 | Never | New media sets are not created. |
 | Always | New media set is created for each tape job session. |
 | Daily | New media set is created on particular days. |
@@ -923,8 +1003,9 @@ VBRViNetworkInfoType
 
 Network type.
 
+VBRViNetworkInfoType
+
 | Member | Description |
-| --- | --- |
 | Cloud | Cloud network. |
 | Hv | Hyper-V network. |
 | ViDVS | VMware network connected to distributed virtual switch (DVS). |
@@ -934,8 +1015,9 @@ VBRVirtualSwitchType
 
 Virtual switch type.
 
+VBRVirtualSwitchType
+
 | Member | Description |
-| --- | --- |
 | DVS | Distributed virtual switch (DVS). |
 | Simple | Standard switch. |
 
@@ -943,8 +1025,9 @@ VBRUpdateSourceRepositoryType
 
 Update source repository type.
 
+VBRUpdateSourceRepositoryType
+
 | Member | Description |
-| --- | --- |
 | Official | Veeam update repository. |
 | Custom | Local mirror of Veeam update repository. |
 
@@ -952,8 +1035,9 @@ VBRUpdateType
 
 Update type.
 
+VBRUpdateType
+
 | Member | Description |
-| --- | --- |
 | SecurityOnly | Security updates are installed. |
 | SecurityAndOptional | Security and optional updates are installed. |
 

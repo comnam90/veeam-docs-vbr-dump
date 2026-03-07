@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "2/19/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -54,6 +54,7 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * After you deploy a Veeam Infrastructure Appliance, adding new storage devices or resizing existing ones is not supported.
 
 * You cannot install third-party software on a Veeam Infrastructure Appliance.
+* You cannot use third-party software to back up or restore a Veeam Infrastructure Appliance.
 
 * VMware proxies deployed with Veeam Infrastructure Appliance support the following transport modes:
 

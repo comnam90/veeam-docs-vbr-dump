@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_limitations.html"
-last_updated: "2/27/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -14,14 +14,15 @@ When you plan to deploy and configure Veeam Backup for Microsoft Entra ID, keep 
 
 Backup Infrastructure
 
-* It is not recommended that you delete or disable the default [general-purpose backup proxy](entra_id_architecture.md#server) deployed during Veeam Backup & Replication installation. Otherwise, Veeam Backup for Microsoft Entra ID will not be able to perform tenant backup, log backup and backup copy operations.
-* Veeam Backup for Microsoft Entra ID does not support creation of more than one Microsoft Entra ID backup repository on the backup server.
+* It is not recommended that you delete or disable the default [general-purpose backup proxy](entra_id_architecture.md#server) deployed during Veeam Backup & Replication installation. Otherwise, Veeam Backup for Microsoft Entra ID will not be able to perform any backup operations.
+* Veeam Backup for Microsoft Entra ID does not support creation of more than one Microsoft Entra ID backup repository on the backup server. For more information on Microsoft Entra ID backup repository, see [Solution Architecture](entra_id_architecture.md#psql_db).
 * Veeam Backup for Microsoft Entra ID supports storing backed-up tenant data in Microsoft Entra ID backup repositories running PostgreSQL 14 or higher.
 * Veeam Backup for Microsoft Entra ID supports only [PostgreSQL password authentication](https://www.postgresql.org/docs/current/auth-password.html) to connect to remote Microsoft Entra ID backup repositories. For more information, see [Connecting to Remote Microsoft Entra ID Backup Repository](entra_id_remote_repository_environment.md).
 
 Tenant Backup and Restore
 
-* Veeam Backup for Microsoft Entra ID does not support the Government and China regions.
+* Veeam Backup for Microsoft Entra ID does not support backup and restore of Microsoft Entra ID tenants registered in China. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/china/).
+* Veeam Backup for Microsoft Entra ID does not support backup and restore of [Azure Government tenants](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-application#obtaining-your-government-tenant) and tenants registered in the Azure Government [geography](https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies). For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome).
 * Veeam Backup for Microsoft Entra ID does not support backup and restore of Microsoft Entra External ID tenants and Azure B2C tenants.
 * Each restore operation is limited to 1000 items per session.
 * For one Microsoft Entra ID tenant, you can create only one tenant backup job. One tenant backup job can protect only one tenant.

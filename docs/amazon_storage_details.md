@@ -3,7 +3,7 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_details.html"
-last_updated: "2/23/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -37,14 +37,14 @@ Specifying Immutability Settings
 
 To prohibit deletion of blocks of data from object storage, select the Make recent backups immutable (recommended) check box. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
 
-* Select For the entire duration of their retention policy if you want the immutability period depend on the retention policy of a backup job.
+* Select the For the entire duration of their retention policy option if you want the immutability period depend on the retention policy of a backup job.
 
 |  |
 | --- |
 | Important |
 | Consider the following:   * If the job retention exceeds the immutability period, the actual retention is counted as job retention policy + Block Generation period. * If the immutability period exceeds the job retention period, the actual retention is counted as immutability period + Block Generation period. * The default immutability period is 30 days. You can set the immutability period to different values in the Veeam Backup & Replication UI. The minimum immutability period is 1 day, and the maximum is 999 days.   For more information, see [How Immutability Works](hiw_immutability_os.md). |
 
-* Select For the minimum immutability period only if you want to specify the immutability period explicitly. The backup job retention will be skipped.
+* Select the For the minimum immutability period only option if you want to specify the immutability period explicitly. The backup job retention will be skipped.
 * Next to the Minimum immutability duration option, provide the necessary value.
 
 ![Step 4. Specify Object Storage Settings](images/s3_add_bucket.webp "Specify S3 Object Storage Bucket")
@@ -53,9 +53,9 @@ Specifying Amazon S3 Storage Classes
 
 To specify the Amazon S3 storage class that you want to enable for your bucket, click the Standard link to the right of the Storage class field. In the Storage Class Settings window, select one of the following:
 
-* Standard (recommended) — Use this option if you plan to access your data frequently.
-* Infrequent Access — Use this option if you plan to access your data infrequently and require fast access in case when data is needed.
-* One Zone-Infrequent Access — Use this option if you want to isolate your data and store it in a specific location.
+* Standard (recommended) — use this option if you plan to access your data frequently.
+* Infrequent Access — use this option if you plan to access your data infrequently and require fast access in case when data is needed.
+* One Zone-Infrequent Access — use this option if you want to isolate your data and store it in a specific location.
 
 |  |
 | --- |

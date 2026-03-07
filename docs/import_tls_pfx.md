@@ -3,7 +3,7 @@ title: "Importing Certificate from PFX Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tls_pfx.html"
-last_updated: "11/18/2025"
+last_updated: "3/6/2026"
 product_version: "13.0.1.1071"
 ---
 

@@ -3,7 +3,7 @@ title: "Creating Backup Copy Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_backup_copy.html"
-last_updated: "11/11/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -21,12 +21,12 @@ To learn more about backup copy in the Veeam Cloud Connect Backup scenario, see 
 
 To create a backup copy job:
 
-1. On the Home tab, click Backup Copy.
-2. At the Job step of the wizard, specify a name and description for the backup copy job and select the backup copy mode:
+1. On the Home tab, click Backup Copy > Image-level backup.
+2. At the Name step of the wizard, specify a name and description for the backup copy job and select the backup copy mode:
 
-* Select Immediate copy to copy new restore points and, if required, database log backups as soon as they appear in the source backup repository.
+* Select the Immediate copy option to copy new restore points and, if required, database log backups as soon as they appear in the source backup repository.
 
-* Select Periodic copy to copy the most recent restore points according to a specified schedule.
+* Select the Periodic copy option to copy the most recent restore points according to a specified schedule.
 
 ![Creating Backup Copy Jobs](images/backup_copy_name.webp)
 

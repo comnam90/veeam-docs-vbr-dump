@@ -1,13 +1,13 @@
 ---
-title: "HPE VM Morpheus Essentials"
+title: "HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_morpheus_vme.html"
-last_updated: "3/2/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
-# HPE VM Morpheus Essentials
+# HPE Morpheus VM Essentials
 
 
 Veeam Backup & Replication offers various data protection and disaster recovery features for HPE Morpheus VM Essentials environments. Specifically, you can perform the following operations:

@@ -3,7 +3,7 @@ title: "Restore with Veeam Explorer for SAP HANA"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vehana.html"
-last_updated: "1/19/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
