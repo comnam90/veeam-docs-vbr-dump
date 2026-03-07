@@ -3,7 +3,7 @@ title: "Microsoft Azure Object Storage Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_limitations.html"
-last_updated: "2/17/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -25,6 +25,11 @@ Consider the following limitations:
 | --- |
 | Note |
 | Note that the support of storage redundancy depends on the type of the Microsoft Azure Storage. For example. Microsoft Azure Archive Storage with the archive access tier does not support Azure accounts with the following redundancy options: zone-redundant storage (ZRS), geo-redundant storage (GZRS) and read-access geo-zone-redundant storage (RA-GZRS). For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview#archive-access-tier). |
+
+* [For Veeam Cloud Connect] If you configure an [expiration policy for shared access signatures (SAS)](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal) on your Azure container, the SAS expiry interval should be set to at least:
+
+* 30 days — for repositories using Shared Access Key.
+* 7 days — for repositories using Entra ID credentials.
 
 Azure Storage Access Tier Considerations
 
@@ -64,8 +69,6 @@ Consider the following [immutability](immutability_object_storage_repositories.m
 * Do NOT enable immutability for already existing containers in the Azure portal. Otherwise, Veeam Backup & Replication will not be able to process these containers properly and it may result in data loss.
 
 * Version-level immutability for Azure storage accounts is not supported.
-
-* [For backup jobs managed by Veeam Agent] You cannot back up data to Microsoft Azure object storage added in the direct connection mode.
 
 * [For Veeam Cloud Connect] Microsoft Azure object storage cannot be used as a cloud repository in the direct connection mode.
 
