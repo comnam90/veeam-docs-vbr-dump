@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_used_ports.html"
-last_updated: "2/12/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -16,22 +16,23 @@ Workers
 
 The following table describes network ports that must be open to ensure proper communication of workers with other backup infrastructure components.
 
+Workers
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Worker | Proxmox VE server | TCP/HTTPS | 8006 | Used to communicate with the REST API service running on the Proxmox VE server. |
 | Proxmox VE server | SSH | 22 | Used to communicate with Proxmox VE server. |
 | Backup server | TCP | 10006 | Used to communicate with the backup server. |
 | Backup server | TCP | 2500 to 3300 | Default range of ports used for ransomware index transfer. |
-| Veeam backup repository or [gateway server](gateway_server.md) | TCP | 2500 to 3300 | Default range of ports used as transmission channels for jobs and restore sessions. For each TCP connection that a job uses, one port from this range is assigned. |
-| TCP | 6162 | Default port used by Veeam Transport Service (on Linux  servers) or Veeam Data Mover Service (on Windows servers). |
-| Veeam Update Repository  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) | TCP/HTTPS | 443 | Used to download worker deployment packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
+| Veeam backup repository or [gateway server](gateway_server.md) | TCP | 6162 | Default range of ports used as transmission channels for jobs and restore sessions. The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Veeam Update Repository  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) (cloudfront.net, amazonaws.com) | TCP/HTTPS | 443 | Used to download worker deployment packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
 
 Backup Server
 
 The following table describes network ports that must be open to ensure proper communication of the backup server with other backup infrastructure components.
 
+Backup Server
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Worker | TCP | 19000 | Used to communicate with workers. |
 | Worker | TCP/HTTPS | 443 | Used by the Platform Service to enable communication with the Veeam Updater service on the worker. |
 | Backup server | TCP/HTTPS | 6172 | Used by the Platform Service to enable communication with the Veeam Backup & Replication database. |
@@ -48,8 +49,9 @@ Guest Processing Components
 
 The following table describes the network ports that must be opened to ensure proper communication between the backup server and the VMs that will be added to Managed Servers as Guest Interaction Proxy (Log Shipping Server).
 
+Guest Processing Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Guest interaction proxy | TCP | 445, 135 | Ports used for adding Windows VMs to managed servers using local administrator credentials. Note: Kerberos domain account with administrator privileges should be used. |
 | TCP | 6160 | Port used for adding both Windows and Linux VMs to managed servers using a certificate-based authentication. Note: Deployment kit should be pre-installed on VMs. |
 | TCP | 22 | Port used for adding Linux VMs to managed servers using SSH credentials. |
@@ -58,15 +60,17 @@ Connections with Non-Persistent Runtime Components
 
 The following tables describe network ports that must be opened to ensure proper communication of the backup server and backup infrastructure components with the non-persistent runtime components deployed inside the VM guest OS for application-aware processing and indexing.
 
+Connections with Non-Persistent Runtime Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Guest interaction proxy | TCP | 6190 | Port used for communication with the guest interaction proxy. |
 | Guest interaction proxy | ESXi server | TCP | 443 | Default port used for connections to ESXi host.  [For VMware vSphere earlier than 6.5] Not required if vCenter connection is used. In VMware vSphere versions 6.5 and later, port 443 is required by vCenter Web Services. |
 
 Network ports described in the following table are NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct.
 
+Connections with Non-Persistent Runtime Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | VM guest OS (Microsoft Windows) | TCP | 445, 135 | Port used to deploy the runtime coordination process on the VM guest OS. |
 | TCP | 2500 to 3300 | Default range of ports used as transmission channels for log shipping. |
 | TCP | 6173 | Port used by the runtime process deployed inside the VM for guest OS interaction. |
@@ -77,8 +81,9 @@ Connections with Persistent Agent Components
 
 The following table describes network ports that must be opened to ensure proper communication of the backup server with the persistent agent components deployed inside the VM guest OS for application-aware processing and indexing.
 
+Connections with Persistent Agent Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | VM guest OS (Linux) | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162 | Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 | VM guest OS (Windows) | TCP | 6160, 11731 | Default port and failover port used by Veeam Installer Service. |
@@ -95,8 +100,9 @@ The following tables describe network ports that must be opened to ensure proper
 
 Log Shipping Server Connections
 
+Log Shipping Server Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Backup server | Log shipping server | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine). |
@@ -107,8 +113,9 @@ Log Shipping Server Connections
 
 MS SQL Guest OS Connections
 
+MS SQL Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | MS SQL VM guest OS | TCP | 445, 135, 137, 139 | [Non-persistent runtime components only] Ports used for deploying Veeam Backup & Replication components including Veeam Log Shipper runtime component.  These ports are not required:   * When working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. * If the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.   Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a guest OS.  These ports are NOT required when working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | TCP | 6173 | Port used by the Veeam Guest Helper for guest OS processing. |
@@ -119,8 +126,9 @@ MS SQL Guest OS Connections
 
 Oracle Guest OS Connections
 
+Oracle Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | Oracle VM guest OS (Microsoft Windows) | TCP | 445, 135 | [Non-persistent runtime components only] Ports used for deploying Veeam Backup & Replication components including Veeam Log Shipper runtime component.  These ports are not required:   * When working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. * If the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.   Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a guest OS.  These ports are NOT required when working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | TCP | 6173 | Port used by the Veeam Guest Helper for guest OS processing |
@@ -134,8 +142,9 @@ Oracle Guest OS Connections
 
 PostgreSQL Guest OS Connections
 
+PostgreSQL Guest OS Connections
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Guest interaction proxy | PostgreSQL VM guest OS | TCP | 22 | [Non-persistent runtime components only] Default SSH port used as a control channel.  This port is NOT required when working in networkless mode over vSphere Web Services. |
 | TCP | 6162 | [Persistent agent components only] Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 | TCP | 2500 to 3300 | Default range of ports used for communication with a guest OS.  This port is NOT required when working in networkless mode over vSphere Web Services. |
