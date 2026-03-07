@@ -3,7 +3,7 @@ title: "General Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_limitations.html"
-last_updated: "2/24/2026"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -94,7 +94,7 @@ Limitations for Veeam Solutions
 
 For more information on limitations for Veeam solutions that utilizes object storage repositories functionality, see the following sections of the necessary guide:
 
-* [Veeam Agent Backup](agents_object_storage.md#limits) — to check limitations for Veeam Agent management solution.
+* [Backup to Object Storage](agents_object_storage.md#limits) — to check limitations for Veeam Agent management solution.
 * [Veeam Agent for Microsoft Windows](https://helpcenter.veeam.com/docs/agentforwindows/userguide/backup_to_object_storage.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for physical and virtual machines running Windows-based operating systems.
 * [Veeam Agent for Linux](https://helpcenter.veeam.com/docs/agentforlinux/userguide/backup_external_cloud.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for physical endpoints and virtual machines running Linux-based operating systems.
 * [Veeam Agent for Mac](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_object_ovw.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for physical endpoints and virtual machines running macOS.
