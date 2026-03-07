@@ -3,7 +3,7 @@ title: "Databases and Enterprise Applications"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications.html"
-last_updated: "1/23/2026"
+last_updated: "3/4/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -15,8 +15,9 @@ Veeam Backup & Replication allows you to protect data from various applications 
 * [Image-level backup with application-aware processing](#image-level)
 * [Database-level backup with Veeam Plug-Ins or MongoDB Backup](#database-level)
 
+Databases and Enterprise Applications
+
 |  | Image-Level Backup with Application-Aware Processing | Database-Level Backup with Veeam Plug-Ins or MongoDB Backup |
-| --- | --- | --- |
 | Microsoft Active Directory | ✓ | ✕ |
 | Microsoft Exchange | ✓ | ✕ |
 | Microsoft SharePoint | ✓ | ✕ |
@@ -41,7 +42,7 @@ Database-Level Backup with Veeam Plug-Ins or MongoDB Backup
 
 Backup solutions for enterprise applications (Veeam Plug-Ins and MongoDB Backup) allow you to create transactionally-consistent backups of SAP HANA, Oracle, Microsoft SQL Server, IBM Db2 databases and MongoDB replica sets. These solutions extend the functionality of Veeam Backup & Replication and are distributed as part of the Veeam Backup & Replication installation image.
 
-Backup solutions for enterprise applications use native database instruments to create backups. Created backups contain data only for databases (including application logs) without server data. For database-level backups created with Veeam Plug-Ins, Veeam Backup & Replication provides recovery of entire databases. For MongoDB databases, you can also restore application items using Veeam Explorers. For more information, see [Restoring from Backup with Veeam Explorer](application_backups_restore_with_explorer.md). You can also recover data using native database tools.
+Backup solutions for enterprise applications use native database instruments to create backups. Created backups contain data only for databases (including application logs) without server data. For database-level backups created with Veeam Plug-Ins, Veeam Backup & Replication provides recovery of entire databases. You can recover data using native database tools or Veeam Explorers. For details on which database-level backup solutions support data recovery with Veeam Explorers, see [Launching Veeam Explorer from Plug-in or MongoDB Backup](launching_veeam_explorers_plugin.md).
 
 Veeam Backup & Replication allows you to use the following backup solutions for enterprise applications:
 
