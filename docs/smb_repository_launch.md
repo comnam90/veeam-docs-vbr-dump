@@ -3,7 +3,7 @@ title: "Step 1. Launch New Backup Repository Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_repository_launch.html"
-last_updated: "8/7/2025"
+last_updated: "3/5/2026"
 product_version: "13.0.1.1071"
 ---
 

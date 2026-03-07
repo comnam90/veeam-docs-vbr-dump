@@ -3,7 +3,7 @@ title: "Generating Self-Signed Certificate"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/self_signed_tls.html"
-last_updated: "11/18/2025"
+last_updated: "3/6/2026"
 product_version: "13.0.1.1071"
 ---
 
