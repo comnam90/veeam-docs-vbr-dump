@@ -3,7 +3,7 @@ title: "Required Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_backup_job_settings.html"
-last_updated: "4/11/2025"
+last_updated: "3/3/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -20,7 +20,7 @@ Veeam Explorer for Microsoft Active Directory allows you to explore crash-consis
 
 Consider the following:
 
-* For backups made with [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/data_protection.html) and [Veeam Plug-in for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/data_protection.html), application-aware processing is not supported.
+* For backups created with [Veeam Backup for OLVM and RHV](olvm_rhv.md), [Veeam Plug-in for Scale Computing HyperCore](sc_hypercore.md) and [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md), application-aware processing is not supported.
 * For VeeamZIP backups, application-aware processing is not supported. For more information, see [VeeamZIP](veeamzip.md).
 * For storage snapshots, application-aware processing is automatically enabled. For more information, see [Application Item Restore from Storage Snapshots](restore_veeam_explorers_snapshots.md).
 
