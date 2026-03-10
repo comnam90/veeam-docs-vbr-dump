@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_byb.html"
-last_updated: "3/3/2026"
+last_updated: "3/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -26,6 +26,8 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * After you deploy a Veeam Software Appliance, adding new storage devices or resizing existing ones is not supported.
 
 * You cannot install third-party software on a Veeam Software Appliance.
+
+* You cannot use third-party software to back up or restore a Veeam Software Appliance.
 
 * [VMware only] Veeam Software Appliance only supports the Network transport mode.
 * [Microsoft Hyper-V only] Linux-based Veeam Software Appliance does not support the SCVMM High Availability feature.
