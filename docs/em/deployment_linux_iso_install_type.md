@@ -3,7 +3,7 @@ title: "Step 3. Begin Installation"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_install_type.html"
-last_updated: "3/3/2026"
+last_updated: "3/9/2026"
 product_version: "13.0.1.1071"
 ---
 
