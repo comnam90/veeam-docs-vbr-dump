@@ -3,7 +3,7 @@ title: "Step 2. Perform Logon"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/logging_on.html"
-last_updated: "9/26/2025"
+last_updated: "3/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -17,7 +17,7 @@ Before you can start working with Veeam Backup Enterprise Manager REST API resou
 To work with all Veeam Backup Enterprise Manager REST API resources available in the current version of Veeam Backup & Replication and to access a complete set of actions that can be performed with those resources, create a new logon session using the link to the latest version of the /sessionMngr resource. For example, to work with REST API resources supported in Veeam Backup & Replication 13, create a new logon session using one of the following links:
 
 * https://localhost:9398/api/sessionMngr/?v=latest
-* https://localhost:9398/api/sessionMngr/?v=v1\_6
+* https://localhost:9398/api/sessionMngr/?v=v1\_7
 
 If a previous version of Veeam Backup & Replication is installed on your backup server, you need to create a new logon session with the link to the REST API version that matches the version of Veeam Backup & Replication. For details, see [Versioning](em_web_api_versions.md).
 
