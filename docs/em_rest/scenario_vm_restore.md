@@ -3,7 +3,7 @@ title: "Performing Entire VM Restore"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/scenario_vm_restore.html"
-last_updated: "5/22/2025"
+last_updated: "3/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -23,7 +23,7 @@ Procedure
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/sessionMngr/?v=v1\_6    Request Header:  Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=    Response:  201 Created    Response Header:  X-RestSvcSessionId: NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response Body:  <LogonSessions xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  POST https://localhost:9398/api/sessionMngr/?v=v1\_7    Request Header:  Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=    Response:  201 Created    Response Header:  X-RestSvcSessionId: NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response Body:  <LogonSessions xmlns="http://www.veeam.com/ent/v1.0"> |
 
 1. Find the link for the /vmRestorePoints resource collection:
 
