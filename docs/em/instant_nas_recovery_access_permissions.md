@@ -3,7 +3,7 @@ title: "Step 3. Specify Access Permissions"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_nas_recovery_access_permissions.html"
-last_updated: "9/4/2025"
+last_updated: "3/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -27,6 +27,6 @@ If you select this option, configure accounts and groups to which you want to gr
 
 1. In the Set owner account field, specify the owner account for the file share.
 
-![Step 3. Specify Access Permissions](images/instant_nas_recovery_access_permissions.webp "Specifying Access Permisions")
+![Step 3. Specify Access Permissions](images/instant_nas_recovery_access_permissions.webp "Specifying Access Permissions")
 
 

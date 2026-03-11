@@ -3,7 +3,7 @@ title: "Accessing Veeam Self-Service Backup Portal"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_portal_access.html"
-last_updated: "10/30/2025"
+last_updated: "3/9/2026"
 product_version: "13.0.1.1071"
 ---
 
@@ -52,13 +52,13 @@ For example:
 
 |  |
 | --- |
-| https://enterprise01.tech.local/vcloud/TechCompanyOrg/172.17.53.16 |
+| https://enterprise01.tech.local/vcloud/organization01/172.17.53.16 |
 
 1. From the drop-down list, select a display language.
 
 For more information on display languages, see [Managing Languages](em_lang_manage.md).
 
-1. In the Username and Password fields, specify credentials of a Cloud Director account with proper rights.
+1. In the Username and Password fields, specify credentials of a Cloud Director account with proper rights. If you use LDAP authentication, enter the user name in the following format: organization\user (for example, organization01\username@domain).
 2. To save the entered credentials for future access, select the Remember me check box.
 3. Click Sign in.
 4. From the list of hosts with Cloud Director servers, select the one where your organization has been created.
