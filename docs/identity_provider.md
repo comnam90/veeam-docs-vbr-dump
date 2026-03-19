@@ -3,8 +3,8 @@ title: "SAML Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider.html"
-last_updated: "2/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # SAML Authentication
@@ -29,7 +29,7 @@ How SAML Authentication Works
 
 Veeam Backup & Replication supports the following scenario for SAML authentication:
 
-1. A Veeam Backup Administrator adds an external user account in the Security tab of the Users and Roles window and assigns a role to this user. For more information, see [Adding External Users](#add_external_user).
+1. A Veeam Backup Administrator adds an external user account in the Security tab of the Users & Roles window and assigns a role to this user. For more information, see [Adding External Users](#add_external_user).
 2. A user runs the Veeam Backup & Replication console or opens the Veeam Backup & Replication Web UI.
 3. On the sign-in page, the user clicks Sign in with SSO.
 4. Veeam Backup & Replication redirects a SAML authentication request to the IdP. If the user has not previously logged in with the single sign-on service, the IdP redirects the user to the URL of the single sign-on service.
@@ -49,7 +49,7 @@ Depending on your identity provider, SAML authentication configuration could req
 To configure SAML authentication on the Veeam Backup & Replication side, perform the following steps:
 
 1. Get an XML metadata file from your IdP.
-2. From the main menu, select Users and Roles.
+2. From the main menu, select Users & Roles.
 3. In the User and Roles window, select the Identity Provider tab.
 4. Select the Enable SAML authentication check box.
 5. In the Identity provider (IdP) information section, specify the IdP metadata file. To do this, click Browse and select the file.
@@ -66,8 +66,8 @@ Adding External Users
 
 After you configure SAML authentication, you can add external users or groups to Veeam Backup & Replication and assign roles to them. To do this, perform the following steps:
 
-1. From the main menu, select Users and Roles.
-2. In the User and Roles window, select the Security tab.
+1. From the main menu, select Users & Roles.
+2. In the User & Roles window, select the Security tab.
 3. Click Add > External user or group.
 4. From the Type drop-down list, select User or Group.
 5. In the Name field, enter the group name or user name in the UPN format, for example, john.doe@domain.com.
