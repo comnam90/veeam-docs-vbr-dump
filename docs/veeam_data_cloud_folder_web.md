@@ -3,8 +3,8 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_folder_web.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Object Storage Settings
@@ -23,7 +23,7 @@ At the Folder step of the wizard, specify the folder that will be used to store 
 | Important |
 | Consider the following:   * If the job retention exceeds the immutability period, the actual retention is counted as job retention policy + Block Generation period. * If the immutability period exceeds the job retention period, the actual retention is counted as immutability period + Block Generation period.   For more information, see [How Immutability Works](hiw_immutability_os.md), |
 
-* Select For the minimum immutability period only if you want to specify the immutability period explicitly. The backup job retention will be skipped.
+* Select the For the minimum immutability period only option if you want to specify the immutability period explicitly. The backup job retention will be skipped.
 
 * Next to the Minimum immutability duration option, provide the necessary value.
 
