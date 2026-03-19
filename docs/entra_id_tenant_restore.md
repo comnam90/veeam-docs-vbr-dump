@@ -3,14 +3,14 @@ title: "Tenant Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Tenant Restore
 
 
-In case a disaster strikes, you can use backups created by Veeam Backup for Microsoft Entra ID to restore the following tenant items and their properties: Microsoft Entra users, groups, roles, administrative units, applications, service principals and conditional access policies. Veeam Backup for Microsoft Entra ID allows you to restore tenant data to the original location only.
+In case a disaster strikes, you can use backups created by Veeam Backup for Microsoft Entra ID to restore the following tenant items and their properties: Microsoft Entra users, groups, roles, administrative units, applications, service principals, conditional access policies and intune policies. Veeam Backup for Microsoft Entra ID allows you to restore tenant data to the original location only.
 
 |  |
 | --- |
