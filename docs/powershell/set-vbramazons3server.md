@@ -3,8 +3,8 @@ title: "Set-VBRAmazonS3Server"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazons3server.html"
-last_updated: "9/2/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRAmazonS3Server
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet mofidies settings of Amazon S3 storage added as unstructured data source to the inventory.
+This cmdlet modifies settings of Amazon S3 storage added as unstructured data source to the inventory.
 
 |  |
 | --- |
@@ -35,8 +35,9 @@ This cmdlet mofidies settings of Amazon S3 storage added as unstructured data so
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies the Amazon S3 storage that you want to modify. | Accepts the VBRAmazonS3Server object. To create this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Account | Specifies an Amazon S3 credentials record. Veeam Backup & Replication will use this credentials record to connect to Amazon S3 storage. | Accepts the [VBRAmazonAccount](vbramazonaccount.md) object. To get this object, run the [Get-VBRAmazonAccount](get-vbramazonaccount.md) cmdlet. | False | Named | True (ByValue) |
 | ProxyMode | Specifies the backup proxy options.   * Automatic: use this option if you want Veeam Backup & Replication to choose the backup proxy that will process object storage. * SelectedProxy: use this option if you want to specify the backup proxy that will process object storage. | VBRNASProxyMode | False | Named | False |
