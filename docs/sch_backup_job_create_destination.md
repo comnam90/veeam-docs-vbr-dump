@@ -3,8 +3,8 @@ title: "Step 4. Specify Backup Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_destination.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Backup Job Settings
@@ -21,7 +21,7 @@ For a backup repository to be displayed in the list of available repositories, i
 | Important |
 | If a repository storing Scale Computing HyperCore backups becomes an extent of a scale-out backup repository, the jobs targeting that repository will fail. You can edit the job to target a scale-out backup repository to fix the problem. |
 
-1. In the Retention policy section, specify the number of days during which you want to keep restore points in a backup chain. If a restore point is older than the specified limit, Veeam Plug-in for Scale Computing HyperCore removes it from the chain.
+1. In the Retention policy section, specify the number of days during which you want to keep restore points in a backup chain. If there are restore points older than the specified limit, Veeam Plug-in for Scale Computing HyperCore either removes a related backup chain when it becomes outdated as a whole, or merges outdated backup chain into the closest valid restore point. For more information, see [Short-Term Retention Policy](retention_policy.md).
 
 If the UUID of a VM changes (for example, if the VM was imported or cloned), Veeam Plug-in for Scale Computing HyperCore will be unable to continue the backup chain for this VM. After you re-add the VM to the backup job, Veeam Plug-in for Scale Computing HyperCore will start a new backup chain for it. However, you will still be able to perform restore operations using backups from the old backup chain.
 
