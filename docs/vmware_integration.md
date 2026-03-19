@@ -3,8 +3,8 @@ title: "VMware Integration (Storage Systems)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_integration.html"
-last_updated: "10/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VMware Integration (Storage Systems)
@@ -34,7 +34,7 @@ In This Section
 * [Snapshot Orchestration](schedule_snapshots.md)
 * [Backup from Storage Snapshots with Snapshot Retention](snapshot_job_secondary.md)
 * [Data Recovery from Storage Snapshots](storage_snapshots_restore.md)
-* [Retrieving Achived Snapshots](storage_archived.md)
+* [Retrieving Archived Snapshots](storage_archived.md)
 * [Creating and Deleting Snapshots](storage_create_snapshot.md)
 
 
