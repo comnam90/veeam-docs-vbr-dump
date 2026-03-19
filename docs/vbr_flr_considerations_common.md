@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_flr_considerations_common.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -16,6 +16,7 @@ Infrastructure Components
 
 * You can recover files from the file systems listed in [Workloads](platform_support_vm.md#flr).
 * If you plan to use a mount server (default or associated with a repository) as a mount server for guest OS restore, see [Mount Server Requirements](system_requirements_mount_server.md).
+* The backup server and the mount server used for recovery must be able to resolve the FQDN of the helper host.
 
 Source for Data Recovery
 
@@ -41,7 +42,6 @@ Linux Helper Host as Mount Server
 If you plan to use a Linux helper host as a mount server (select the <Linux\_host\_name> or Specify a different Linux host option at the [Restore point](multios_restore_host_vm.md) step), consider the following:
 
 * Check the supported OSes listed in [System Requirements](system_requirements_linux_helper_host.md).
-* The backup server and the mount server, associated with the repository where the backup is stored, must be able to resolve the FQDN of the helper host.
 * You can recover from ZFS if the zfsutils-linux package is installed on the specified Linux helper host. The zfs-fuse package is not supported.
 * The Linux helper host OS kernel must support the file system that you plan to mount on this host. Otherwise, mount will be refused, and, in rare cases, it may cause kernel panic.
 * Make sure that the /tmp directory is mounted with the exec option. Otherwise, you will get an error with the permission denial.
