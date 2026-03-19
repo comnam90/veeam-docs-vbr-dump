@@ -3,8 +3,8 @@ title: "Step 4. Specify Target Cluster"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_entire_vm_target.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Target Cluster
@@ -14,12 +14,12 @@ product_version: "13.0.1.1071"
 
 At the Host step of the wizard, choose a host to which the recovered VM will belong.
 
-To see the list of available clusters, click Cluster. For a host to be displayed in the list of available hosts, it must be added to the backup infrastructure as described in [Connecting Scale Computing HyperCore cluster](sch_connecting_manager.md).
+To see the list of available clusters, click Cluster. For a host to be displayed in the list of available hosts, it must be added to the backup infrastructure as described in section [Connecting Scale Computing HyperCore cluster](sch_connecting_manager.md).
 
 |  |
 | --- |
 | Tip |
-| You can also choose whether you want the recovered VM to be included into the same resource pool as the original VM. |
+| You can also choose whether you want the recovered VM to be included into the same tag as the original VM. |
 
 [![Step 4. Specify Target Cluster](images/sch_restore_entire_vm_target.webp)](images/sch_restore_entire_vm_target.webp)
 
