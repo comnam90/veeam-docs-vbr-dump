@@ -3,8 +3,8 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_system_requirements.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # System Requirements
@@ -32,6 +32,6 @@ The following table lists compatible versions of Veeam Backup & Replication and 
 Version Compatibility
 
 | Product Release | Veeam Plug-in for HPE Morpheus VM Essentials Build | Veeam Backup & Replication Build | Worker OS Version |
-| 1 | 13.1.0.271 | 13.0.1.1071 | CIQ Rocky Linux 9.2 |
+| 1 | 13.1.0.271 | 13.0.1.1071 | Veeam JeOS 9.2 |
 
 
