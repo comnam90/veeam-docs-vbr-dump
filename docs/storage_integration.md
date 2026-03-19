@@ -3,8 +3,8 @@ title: "Storage System Snapshot Integration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_integration.html"
-last_updated: "4/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Storage System Snapshot Integration
@@ -23,7 +23,7 @@ Veeam Backup & Replication provides the following types of snapshot integrations
 |  |
 | --- |
 | Important |
-| You cannot back up Hyper-V-based VMs with the help of the integration. |
+| The only supported virtualization platform is VMware vSphere. |
 
 After the backups are created from snapshots, you can perform different data recovery operations.
 
