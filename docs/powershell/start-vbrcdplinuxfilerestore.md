@@ -3,8 +3,8 @@ title: "Start-VBRCDPLinuxFileRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcdplinuxfilerestore.html"
-last_updated: "12/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRCDPLinuxFileRestore
@@ -57,8 +57,9 @@ This cmdlet starts a restore session of guest OS files for a CDP replica that ha
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Replica | Specifies the CDP replica for which you want to restore files. | Accepts the VBRCDPReplica object. To create this object, run the [Get-VBRCDPReplica](get-vbrcdpreplica.md) cmdlet. | True | Named | True (ByPropertyName, ByValue) |
 | ToPointInTime | Specifies date and time when a restore point was created. The cmdlet will start the restore session for the short-term restore point created at the specified date and time or will take the nearest restore point. | Accepts the DateTime object. To get this object, run the [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1) or [Get-VBRCDPShortTermRestoreInterval](get-vbrcdpshorttermrestoreinterval.md) cmdlet. | False | Named | False |
 | LongTermRestorePoint | Specifies a long-term restore point of a CDP replica. The cmdlet will start the restore session for this restore point. | Accepts the VBRCDPLongTermRestorePoint object. To get this object, run the [Get-VBRCDPLongTermRestorePoint](get-vbrcdplongtermrestorepoint.md) cmdlet. | False | Named | False |
