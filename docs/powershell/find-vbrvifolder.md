@@ -3,8 +3,8 @@ title: "Find-VBRViFolder"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/find-vbrvifolder.html"
-last_updated: "5/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Find-VBRViFolder
@@ -30,8 +30,9 @@ This cmdlet returns folders on a specified ESXi host.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies an ESXi host on which you want to look for folders. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | True (ByValue, |
 | Name | Specifies an array of folder names. The cmdlet will return folders with these names. | String[] | False | Named | False |
 
@@ -43,7 +44,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the CViFolderItem object that cotains folders on a specified ESXi host.
+The cmdlet returns the CViFolderItem object that contains folders on a specified ESXi host.
 
 Examples
 
