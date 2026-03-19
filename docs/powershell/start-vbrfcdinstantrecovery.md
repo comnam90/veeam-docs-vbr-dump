@@ -3,8 +3,8 @@ title: "Start-VBRFCDInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrfcdinstantrecovery.html"
-last_updated: "3/1/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRFCDInstantRecovery
@@ -30,8 +30,9 @@ This cmdlet starts the FCD instant recovery session.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point for the VM whose virtual disks you want to restore as FCDs. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | TargetCluster | Specifies a cluster to which Veeam Backup & Replication will register FCDs. | Accepts the CViClusterItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | True | 1 | False |
 | MappingOptions | Specifies mapping settings of virtual disks that you want to restore as FCDs.  By default, Veeam Backup & Replication assigns the name of the backed-up disk to all types of virtual disks.  Note: If you do not provide this parameter, Veeam Backup & Replication will add all backed-up disks to the FCD instant recovery session. | Accepts the VBRFCDInstantRecoveryMappingOptions object. To create this object, run the [New-VBRFCDInstantRecoveryMappingOptions](new-vbrfcdinstantrecoverymappingoptions.md) cmdlet. | False | Named | False |
@@ -54,7 +55,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to start FCD instant recovery session for all backed-up disks avaiilable in the Databaseo5 backup. The cmdlet will publish disks to the Workload-C cluster.  |  | | --- | | $backup = Get-VBRBackup -Name "Database05"  $restorepoint = Get-VBRRestorePoint -Backup $backup  $targetCluster = Find-VBRViEntity -Name "Workload-C" -HostsAndClusters  $publishingSession = Start-VBRFCDInstantRecovery -RestorePoint $restorepoint[2] -TargetCluster $targetCluster |  Perform the following steps:   1. Run the [Get-VBRBackup](get-vbrbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $backup variable.  1. Run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. Specify the Backup parameter. Save the result to the $restorepoint variable.   The Get-VBRRestorePoint cmdlet will return an array of restore points. Consider that the array numbering starts with 0. In our example, the third restore point will be used.   1. Run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. Specify the Name parameter value. Provide the HostsAndClusters parameter. Save the result to the $targetCluster variable.  1. Run the Start-VBRFCDInstantRecovery cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Set the $targetCluster variable as the TargetCluster parameter value. Save the result to the $publishingSession variable. |
+| This example shows how to start FCD instant recovery session for all backed-up disks available in the Databaseo5 backup. The cmdlet will publish disks to the Workload-C cluster.  |  | | --- | | $backup = Get-VBRBackup -Name "Database05"  $restorepoint = Get-VBRRestorePoint -Backup $backup  $targetCluster = Find-VBRViEntity -Name "Workload-C" -HostsAndClusters  $publishingSession = Start-VBRFCDInstantRecovery -RestorePoint $restorepoint[2] -TargetCluster $targetCluster |  Perform the following steps:   1. Run the [Get-VBRBackup](get-vbrbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $backup variable.  1. Run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. Specify the Backup parameter. Save the result to the $restorepoint variable.   The Get-VBRRestorePoint cmdlet will return an array of restore points. Consider that the array numbering starts with 0. In our example, the third restore point will be used.   1. Run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. Specify the Name parameter value. Provide the HostsAndClusters parameter. Save the result to the $targetCluster variable.  1. Run the Start-VBRFCDInstantRecovery cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Set the $targetCluster variable as the TargetCluster parameter value. Save the result to the $publishingSession variable. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Starting FCD Instant Recovery Session for Specified Disks
 
