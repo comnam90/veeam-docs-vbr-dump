@@ -3,8 +3,8 @@ title: "Sync-VNXVolume"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-vnxvolume.html"
-last_updated: "2/16/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Sync-VNXVolume
@@ -41,8 +41,9 @@ Run the [Sync-VNXHost](sync-vnxhost.md) cmdlet to rescan an entire Dell VNX stor
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Volume | Specifies an array of storage volumes that you want to rescan. | Accepts the CSanVolume[] object. To get this object, run the [Get-VNXVolume](get-vnxvolume.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
