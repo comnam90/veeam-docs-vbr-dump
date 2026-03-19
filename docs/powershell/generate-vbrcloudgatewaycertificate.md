@@ -3,8 +3,8 @@ title: "Generate-VBRCloudGatewayCertificate"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrcloudgatewaycertificate.html"
-last_updated: "7/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Generate-VBRCloudGatewayCertificate
@@ -32,8 +32,9 @@ To assign the certificate to the cloud gateways, run the [Add-VBRCloudGatewayCer
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | FriendlyName | Specifies a name that you want to assign to the certificate. | String | False | Named | False |
 | Subject | Specifies the certificate subject in FQDN format.  Default: CN=Veeam Software, O=Veeam Software, OU=Veeam Software. | String | False | Named | False |
 | ValidForDays | Specifies the number of days during which the certificate will remain valid.  Default: 365 days. | Int32 | False | Named | False |
@@ -54,7 +55,7 @@ Generating Certificate for Cloud Gateways
 
 This command creates a certificate with the following settings:
 
-* The certificate is vaild for 2 years.
+* The certificate is valid for 2 years.
 * The certificate is generated for cloudgw.tech.com.
 * The friendly name is "Gateway-25".
 
