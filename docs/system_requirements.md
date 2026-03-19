@@ -3,8 +3,8 @@ title: "Backup Infrastructure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Infrastructure
@@ -27,7 +27,7 @@ In This Section
 * [VMware Backup Proxy](system_requirements_vmware_proxy.md)
 * [Hyper-V Off-Host Backup Proxy or Hyper-V Host as Backup Proxy](system_requirements_hv_proxy.md)
 * [General-Purpose Backup Proxy](system_requirements_general_proxy.md)
-* [Hutanix AHV Worker, Proxmox VE Worker and Scale Computing HyperCore Worker](system_requirements_workers.md)
+* [Nutanix AHV Worker, Proxmox VE Worker and Scale Computing HyperCore Worker](system_requirements_workers.md)
 * [CDP Proxy](system_requirements_cdp_proxy.md)
 * [Backup Repository](system_requirements_backup_repo.md)
 * [Cache Repository](system_requirements_cache_repo.md)
@@ -41,7 +41,5 @@ In This Section
 * [Mount Server](system_requirements_mount_server.md)
 * [Linux Helper Host](system_requirements_linux_helper_host.md)
 * [Veeam Backup Enterprise Manager Server](system_requirements_em_server.md)
-* [Backup Solutions for Enterprise Applications](system_requirements_plugins.md)
-* [Veeam Explorers](system_requirements_explorers.md)
 
 
