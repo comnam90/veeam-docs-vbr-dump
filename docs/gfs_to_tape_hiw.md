@@ -3,8 +3,8 @@ title: "How GFS Backup to Tape Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_to_tape_hiw.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How GFS Backup to Tape Works
@@ -30,7 +30,7 @@ If the source job created several restore points, the tape job will copy only th
 * If there is more than 1 restore point on disk available, the GFS job copies the rest of them to the Daily media set.
 * If only the Daily media set is due today, the GFS job copies all available restore points to the Daily media set.
 
-1. The GFS job waits for the source backup to appear on the disk or for the source job to start till the end of the day. If the source job starts during the day, the GFS job waits till the source job finishes and copies the created backup to tapes. If the source backup doesn't appear or the source job does not start till midnight:
+1. The GFS job waits for the source backup to appear on the disk or for the source job to start till the end of the day. If the source job starts during the day, the GFS job waits till the source job finishes and copies the created backup to tapes. If the source backup does not appear or the source job does not start till midnight:
 
 * [For Daily media set] The GFS job stops at midnight. It starts again next day according to the configured schedule.
 * [For Weekly, Monthly, Quarterly and Yearly media sets] The GFS job copies the most recent restore point since the last GFS job run and stops. It starts again according to the configured schedule.
