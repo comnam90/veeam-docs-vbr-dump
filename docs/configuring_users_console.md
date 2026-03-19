@@ -3,8 +3,8 @@ title: "Configuring Users Using Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_users_console.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Users Using Console
@@ -14,7 +14,7 @@ Adding Users
 
 To add a user or user group:
 
-1. From the main menu, select Users and Roles > Security.
+1. From the main menu, select Users & Roles > Security.
 2. Click Add.
 3. In the Type field, select User or Group.
 4. In the User or group field, enter the name of a user or user group in the UPN format, for example, john.doe@tech.local.
@@ -34,7 +34,7 @@ Editing Users
 
 To edit a user or user group:
 
-1. From the main menu, select Users and Roles > Security.
+1. From the main menu, select Users & Roles > Security.
 2. Select a user or user group.
 3. Click Edit.
 4. In the Edit window, you can do the following:
@@ -48,7 +48,7 @@ Removing Users
 
 To remove a user or user group:
 
-1. From the main menu, select Users and Roles > Security.
+1. From the main menu, select Users & Roles > Security.
 2. Select a user or user group.
 3. Click Remove.
 
