@@ -3,8 +3,8 @@ title: "Get-VBRvCDCDPLongTermRestorePoint"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrvcdcdplongtermrestorepoint.html"
-last_updated: "3/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRvCDCDPLongTermRestorePoint
@@ -30,11 +30,12 @@ This cmdlet returns long-term restore points of a Cloud Director CDP replica.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Replica | Specifies the replica whose long-term restore point you want to get. | Accepts the VBRvCDCDPReplica object. To get this object, run the [Get-VBRCDPReplica](get-vbrcdpreplicavcd.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | ApplicationConsistent | Defines that the cmdlet will return only application-consistent restore points. | SwitchParameter | False | Named | False |
-| Last | Defines that the cmdet will return only the latest long-term restore points. | SwitchParameter | False | Named | False |
+| Last | Defines that the cmdlet will return only the latest long-term restore points. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
