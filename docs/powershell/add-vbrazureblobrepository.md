@@ -3,8 +3,8 @@ title: "Add-VBRAzureBlobRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazureblobrepository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRAzureBlobRepository
@@ -32,8 +32,9 @@ This cmdlet adds Azure Blob object storage repository to the backup infrastructu
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | AzureBlobFolder | Specifies an Azure Blob folder. The cmdlet will map object storage repository to this folder. | Accepts the VBRAzureBlobFolder object. To create this object, run the [Get-VBRAzureBlobFolder](get-vbrazureblobfolder.md) cmdlet. | True | Named | True (ByValue) |
 | Connection | Specifies an active session with Azure Blob storage that you want to add as the backup repository. | Accepts the VBRAzureBlobConnection object. To get this object, run the [Connect-VBRAzureBlobService](connect-vbrazureblobservice.md) cmdlet and set the CapacityTier property as the ServiceType parameter value. | True | Named | False |
 | Name | Specifies a name of an object storage. The cmdlet will add Azure Blob storage to the backup infrastructure with this name. | String | False | Named | False |
@@ -45,7 +46,7 @@ Parameters
 | ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
 | ImmutabilityPeriod | For the EnableBackupImmutability parameter.  Defines the immutability period in days.  Default: 30 days. | Int32 | False | Named | False |
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int32 | False | Named | False |
 | AzureProxySpec | Specifies a helper appliance. Veeam Backup & Replication will use this appliance to perform a health check of backup files and apply retention to file backup job files. | Accepts the VBRAzureComputeProxyAppliance object. To create this object, run the [New-VBRAzureComputeProxyAppliance](new-vbrazurecomputeproxyappliance.md) cmdlet. | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure. | SwitchParameter | False | Named | False |
