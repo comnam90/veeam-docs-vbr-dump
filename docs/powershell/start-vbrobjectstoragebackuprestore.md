@@ -3,8 +3,8 @@ title: "Start-VBRObjectStorageBackupRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrobjectstoragebackuprestore.html"
-last_updated: "9/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRObjectStorageBackupRestore
@@ -46,12 +46,13 @@ This cmdlet starts restore of backups created by an object storage backup job.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point. The cmdlet will start restore to recover objects to the specified restore point. | Accepts the VBRUnstructuredBackupRestorePoint object. To get this object, run the [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md) cmdlet. | True | Named | False |
 | DestinationServer | Specifies a target object storage. The cmdlet will start restore to recover objects to this object storage. | Accepts the VBRUnstructuredServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | False | Named | False |
 | RollBack | Defines that the cmdlet will roll back objects that have been modified to a previous version. Objects, that have not been modified will remain unchanged. | SwitchParameter | False | Named | False |
-| OverwriteMode | Specifies restore options for objects, that you want to restore if they are already added to the target object storage. You can select one of the following restore options:   * Leave: use this option if you do not want to overwrite the existing object version with the restored object version. The cmdlet will keep the existing object version on the target object storge. * Overwrite: use this option if you want to overwrite the existing object version with the restored object version. * OverwriteIfOlder: use this option if the backed-up object version is newer than the existing object version on the object storage. The cmdlet will overwrite the existing object versions with the backed-up object versions.   Note: You must specify either this or the RollBack parameter. | VBRUnstructuredBackupRestoreOverwriteMode | False | Named | False |
+| OverwriteMode | Specifies restore options for objects, that you want to restore if they are already added to the target object storage. You can select one of the following restore options:   * Leave: use this option if you do not want to overwrite the existing object version with the restored object version. The cmdlet will keep the existing object version on the target object storage. * Overwrite: use this option if you want to overwrite the existing object version with the restored object version. * OverwriteIfOlder: use this option if the backed-up object version is newer than the existing object version on the object storage. The cmdlet will overwrite the existing object versions with the backed-up object versions.   Note: You must specify either this or the RollBack parameter. | VBRUnstructuredBackupRestoreOverwriteMode | False | Named | False |
 | OverwriteBucketAttributes | Defines that the cmdlet will overwrite the bucket attributes. | SwitchParameter | False | Named | False |
 | DestinationFolderPath | Specifies the path to the folder on the file share. The cmdlet will restore backups to the specified folder. | String | False | Named | False |
 | NewBucketName | Specifies a new name for the bucket. | String | False | Named | False |
