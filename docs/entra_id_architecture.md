@@ -3,8 +3,8 @@ title: "Solution Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_architecture.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Solution Architecture
@@ -13,7 +13,6 @@ product_version: "13.0.1.1071"
 The Veeam Backup for Microsoft Entra ID architecture comprises the following set of components:
 
 * [Backup server](#server)
-* [General-purpose backup proxy](#proxy)
 * [Microsoft Entra ID backup repository](#psql_db)
 * [Log backup repositories](#repositories)
 * [Cache repository](#cache_repository)
@@ -22,7 +21,7 @@ Backup Server
 
 A backup server is a physical or virtual machine on which Veeam Backup & Replication is installed. The backup server is the configuration, administration and management core of the backup infrastructure. It coordinates backup and restore operations, controls job scheduling and manages resource allocation. In addition to its primary functions, backup server also performs the role of a general-purpose backup proxy — an architecture component that processes jobs and transfers data to and from backup repositories.
 
-For more information on the backup server, see the sections [Backup Server](backup_server.md) and  [General-Purpose Backup Proxies](backup_proxy_general.md).
+For more information on the backup server, see the sections [Backup Server](backup_server.md) and [General-Purpose Backup Proxies](backup_proxy_general.md).
 
 Microsoft Entra ID Backup Repository
 
