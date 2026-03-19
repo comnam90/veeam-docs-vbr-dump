@@ -3,8 +3,8 @@ title: "Configuring Snapshot-Only Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_only_job_perform.html"
-last_updated: "10/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Snapshot-Only Jobs
@@ -89,7 +89,7 @@ For more information on the storage systems, supported features and required lic
 
 1. At the Guest Processing step of the wizard, select the Enable application-aware processing check box.
 2. Specify the necessary settings as described in the [Specify Guest Processing Settings](backup_job_vss_vm.md) section in the Veeam Backup & Replication User Guide.
-3. Configure general application-awarere processing settings and settings for applications as described in the [dedicated sections](backup_job_vss_application_vm.md) in the Veeam Backup & Replication User Guide.
+3. Configure general application-aware processing settings and settings for applications as described in the [dedicated sections](backup_job_vss_application_vm.md) in the Veeam Backup & Replication User Guide.
 
 If you plan to back up logs, in addition to the options described in the Veeam Backup & Replication User Guide, set a repository for storing logs. To do so, in the Processing Settings window, select a tab with the application for which you are configuring logs. In the Backup repository field, select a backup repository. Note that you specify the backup repository for the whole job, not just for a VM you have selected.
 
