@@ -3,8 +3,8 @@ title: "Step 4. Specify Access Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_access_permissions.html"
-last_updated: "11/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Access Permissions
@@ -47,7 +47,7 @@ If you use a Linux mount server and want to specify an Active Directory account 
 | --- |
 | $ sudo realm join -v --membership-software=samba --client-software=winbind --user=<domain-user> <ad-domain-name> |
 
-1. Make sure that Samba is connected to the domain controller.
+1. Make sure that Samba is connected to the domain controller:
 
 |  |
 | --- |
