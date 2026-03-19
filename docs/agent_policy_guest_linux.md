@@ -3,8 +3,8 @@ title: "Step 11. Specify Guest Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_guest_linux.html"
-last_updated: "2/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 11. Specify Guest Processing Settings
@@ -59,7 +59,7 @@ Keep in mind that to specify credentials for a particular computer, you must inc
 
 File Indexing
 
-To configure file indexing setiings:
+To configure file indexing settings:
 
 1. Select the Enable guest file system indexing check box.
 2. Click Indexing.
