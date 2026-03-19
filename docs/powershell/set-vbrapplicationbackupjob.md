@@ -3,8 +3,8 @@ title: "Set-VBRApplicationBackupJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrapplicationbackupjob.html"
-last_updated: "10/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRApplicationBackupJob
@@ -35,8 +35,9 @@ This cmdlet modifies settings of application backup policies.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies the application backup policy that you want to modify. | Accepts the VBRApplicationBackupJob object. To get this object, run the [Get-VBRApplicationBackupJob](get-vbrapplicationbackupjob.md) group cmdlet. | True | Named | True (ByValue) |
 | BackupObject | Specifies an array of protection groups and discovered computers that you want to add to the application backup policy. | Accepts the Object[] object. To get this object, run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. | False | Named | False |
 | BackupRepository | Specifies the target backup location for the application backup policy. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
@@ -65,7 +66,7 @@ Parameters
 
 This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see  [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7).
 
-Output Objet
+Output Object
 
 This cmdlet returns the VBRApplicationBackupJob[] object that contains settings of application backup policies.
 
