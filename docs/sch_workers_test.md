@@ -3,8 +3,8 @@ title: "Testing Workers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_workers_test.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Testing Workers
@@ -23,7 +23,7 @@ Alternatively, right-click the worker and select Test.
 |  |
 | --- |
 | Tip |
-| As soon as Veeam Plug-in for Scale Computing HyperCore finishes the worker configuration test, the worker will be powered off. You can review details of the test session in system logs as described in the Veeam Backup & Replication User Guide, section [Viewing History Statistics](history_statistics.md). |
+| As soon as Veeam Plug-in for Scale Computing HyperCore finishes the worker configuration test, the worker will be powered off. You can review details of the test session in system logs as described in section [Viewing History Statistics](history_statistics.md). |
 
 [![Testing Workers](images/sch_workers_test.webp)](images/sch_workers_test.webp "Testing Workers")
 
