@@ -3,8 +3,8 @@ title: "Local Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_target_drive.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Local Storage Settings
@@ -26,6 +26,6 @@ Keep in mind that to use the GFS retention policy, you must set Veeam Agent to c
 
 Click Advanced to specify advanced settings for the backup policy. To learn more, see [Specify Advanced Backup Settings](agent_policy_win_advanced.md).
 
-![Local Storage Settings](images/agent_job_local_storage.webp "Specjfy Local Storage Settings")
+![Local Storage Settings](images/agent_job_local_storage.webp "Specify Local Storage Settings")
 
 
