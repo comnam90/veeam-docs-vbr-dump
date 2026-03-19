@@ -3,8 +3,8 @@ title: "Backup Job and Snapshot Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_linux_scripts.html"
-last_updated: "2/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Job and Snapshot Scripts
@@ -39,7 +39,7 @@ Veeam Agent runs these scripts before and after creating a snapshot of the backe
 
 You can specify pre-freeze and post-thaw script settings at the Guest Processing step of the New Agent Backup Job wizard. To learn more, see [Backup Job and Snapshot Scripts](agent_job_guest_scripts.md).
 
-Veeam Backup & Replication uploads the scripts to the /var/lib/veeam/scripts/<backuз job ID>/<script type>/ directory on each Veeam Agent computer included in the backup job. Veeam Agent executes the scripts on these computers from the same directory under the root user.
+Veeam Backup & Replication uploads the scripts to the /var/lib/veeam/scripts/<backup job ID>/<script type>/ directory on each Veeam Agent computer included in the backup job. Veeam Agent executes the scripts on these computers from the same directory under the root user.
 
 Pre-Job and Post-Job Scripts on Veeam Agent Computer
 
@@ -47,7 +47,7 @@ Veeam Agent runs these scripts before the backup job starts and after the backup
 
 You can specify backup job script settings at the Guest Processing step of the New Agent Backup Job wizard. To learn more, see [Backup Job and Snapshot Scripts](agent_job_guest_scripts.md).
 
-Veeam Backup & Replication uploads the scripts to the /var/lib/veeam/scripts/<backuз job ID>/<script type>/ directory on each Veeam Agent computer included in the backup job. Veeam Agent executes the scripts on these computers from the same directory under the root user.
+Veeam Backup & Replication uploads the scripts to the /var/lib/veeam/scripts/<backup job ID>/<script type>/ directory on each Veeam Agent computer included in the backup job. Veeam Agent executes the scripts on these computers from the same directory under the root user.
 
 Pre-Job and Post-Job Scripts on Backup Server
 
