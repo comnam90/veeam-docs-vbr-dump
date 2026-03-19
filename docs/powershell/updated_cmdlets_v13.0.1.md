@@ -3,8 +3,8 @@ title: "Updated Cmdlets"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/updated_cmdlets_v13.0.1.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Updated Cmdlets
@@ -22,7 +22,7 @@ In this version, you can use the Force parameter to create a new WAN accelerator
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Add-VBRWANAccelerator](add-vbrwanaccelerator.md) | New parameter: Force. | |
+| Updated Cmdlets  | Cmdlet | Operation | | [Add-VBRWANAccelerator](add-vbrwanaccelerator.md) | New parameter: Force. | |
 
 Backup
 
@@ -34,7 +34,7 @@ In this version, you can use new parameters to specify the encryption keys and K
 
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Add-VBRHvBackupJob](add-vbrhvbackupjob.md) | New parameters: EncryptionKey, KMSServer. | | [Add-VBRvCloudJob](add-vbrvcloudjob.md) | New parameters: EncryptionKey, KMSServer. | | [Add-VBRViBackupJob](add-vbrvibackupjob.md) | New parameters: EncryptionKey, KMSServer. | |
+| Updated Cmdlets  | Cmdlet | Operation | | [Add-VBRHvBackupJob](add-vbrhvbackupjob.md) | New parameters: EncryptionKey, KMSServer. | | [Add-VBRvCloudJob](add-vbrvcloudjob.md) | New parameters: EncryptionKey, KMSServer. | | [Add-VBRViBackupJob](add-vbrvibackupjob.md) | New parameters: EncryptionKey, KMSServer. | |
 
 Veeam Agent Management
 
@@ -46,7 +46,7 @@ In this version, you can use the InstallCDPAgent parameter to install the Veeam 
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [New-VBRProtectionGroupDeploymentOptions](new-vbrprotectiongroupdeploymentoptions.md) | New parameter: InstallCDPAgent. | |
+| Updated Cmdlets  | Cmdlet | Operation | | [New-VBRProtectionGroupDeploymentOptions](new-vbrprotectiongroupdeploymentoptions.md) | New parameter: InstallCDPAgent. | |
 
 Veeam Plug-Ins for Enterprise Applications
 
@@ -58,7 +58,7 @@ In this version, you can use new parameters to specify the backup settings, stor
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Add-VBRApplicationBackupJob](add-vbrapplicationbackupjob.md) | New parameters: MSSQLStorageOptions, MSSQLOptions, MSSQLCredentialsOptions. | | [Set-VBRApplicationBackupJob](set-vbrapplicationbackupjob.md) | New parameters: MSSQLStorageOptions, MSSQLOptions, MSSQLCredentialsOptions. | |
+| Updated Cmdlets  | Cmdlet | Operation | | [Add-VBRApplicationBackupJob](add-vbrapplicationbackupjob.md) | New parameters: MSSQLStorageOptions, MSSQLOptions, MSSQLCredentialsOptions. | | [Set-VBRApplicationBackupJob](set-vbrapplicationbackupjob.md) | New parameters: MSSQLStorageOptions, MSSQLOptions, MSSQLCredentialsOptions. | |
 
 Application Backup Policy Database Processing
 
@@ -68,7 +68,7 @@ In this version, you can use the MSSQLProcessingOptions parameter to specify the
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [New-VBRDatabaseProcessingOptions](new-vbrdatabaseprocessingoptions.md) | New parameter: MSSQLProcessingOptions. | | [Set-VBRDatabaseProcessingOptions](set-vbrdatabaseprocessingoptions.md) | New parameter: MSSQLProcessingOptions. | |
+| Updated Cmdlets  | Cmdlet | Operation | | [New-VBRDatabaseProcessingOptions](new-vbrdatabaseprocessingoptions.md) | New parameter: MSSQLProcessingOptions. | | [Set-VBRDatabaseProcessingOptions](set-vbrdatabaseprocessingoptions.md) | New parameter: MSSQLProcessingOptions. | |
 
 Veeam Cloud Connect
 
@@ -80,6 +80,6 @@ In this version, you can use All parameter to get all types of backups for the t
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Get-VBRCloudTenantBackup](get-vbrcloudtenantbackup.md) | New parameter: All. | |
+| Updated Cmdlets  | Cmdlet | Operation | | [Get-VBRCloudTenantBackup](get-vbrcloudtenantbackup.md) | New parameter: All. | |
 
 
