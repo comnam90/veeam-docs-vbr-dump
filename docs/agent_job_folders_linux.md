@@ -3,8 +3,8 @@ title: "Specifying Directories to Back Up"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_folders_linux.html"
-last_updated: "2/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Specifying Directories to Back Up
@@ -26,28 +26,35 @@ To specify directories to back up:
 
 1. Repeat steps 1–2 for all directories that you want to back up.
 
-   ![Specifying Directories to Back Up](images/agent_job_files_linux.webp)
+![Specifying Directories to Back Up](images/agent_job_files_linux.webp)
 
-   Configuring Filters
+Configuring Filters
 
-   To include or exclude files of a specific type in/from the file-level backup, you can configure filters.
+To include or exclude files of a specific type in/from the file-level backup, you can configure filters.
 
-   To configure a filter:
+To configure a filter:
 
-   1. At the Objects step of the wizard, click Advanced.
-   2. Specify which files you want to back up:
-   * In the Include masks field, specify the names and masks for the files or file types you want to back up — for example, Report.pdf or \*filename\*. Veeam Agent will back up only the files or file types specified in the include masks. Other files in the backup scope will not be backed up.
-   * In the Exclude masks field, specify paths to directories, as well as names and masks for files or file types, you do not want to back up — for example, /home/user01, OldReports.tar.gz or \*.odt. Veeam Agent will back up all files in the backup scope except files that match the criteria defined in the exclude masks.
-   1. Click Add.
-   2. Repeat steps 2–3 for each mask that you want to add.
+1. At the Objects step of the wizard, click Advanced.
+2. Specify what files you want to back up:
 
-   You can use a combination of include and exclude masks. Note that exclude masks have a higher priority than include masks. For example, you can specify masks in the following way:
+* In the Include masks field, you can specify names and masks for files or file types you want to back up — for example, Report.pdf or \*filename\*. Veeam Agent will back up only the files or file types specified in the include masks. Other files in the backup scope will not be backed up.
+* In the Exclude masks field, you can specify paths to directories, as well as names and masks for files or file types, you do not want to back up — for example, /home/user01, OldReports.tar.gz or \*.odt. Veeam Agent will back up all files in the backup scope except files that match the criteria defined in the exclude masks.
 
-   * Include mask: \*.pdf
-   * Exclude mask: \*draft\*
+|  |
+| --- |
+| NOTE |
+| Consider the following when excluding directories:   * Before you specify a directory to exclude, you must first include a higher-level parent directory in the backup scope. For example, if you want to back up all files on the computer except the /home/user01/archive\_reports directory, you must include the root directory (/) and specify /home/user01/archive\_reports in the exclude masks. * You must specify the full path to each directory you want to exclude. Wildcard characters are not supported in directory paths. |
 
-   Veeam Agent for Linux will include in the backup all files of the PDF format that do not contain draft in their names.
+1. Click Add.
+2. Repeat steps 2–3 for each mask that you want to add.
 
-   ![Specifying Directories to Back Up](images/agent_job_files_exclude_linux.webp)
+You can use a combination of include and exclude masks. Note that exclude masks have a higher priority than include masks. For example, you can specify masks in the following way:
+
+* Include mask: \*.pdf
+* Exclude mask: \*draft\*
+
+Veeam Agent for Linux will include in the backup all files of the PDF format that do not contain draft in their names.
+
+![Specifying Directories to Back Up](images/agent_job_files_exclude_linux.webp)
 
 
