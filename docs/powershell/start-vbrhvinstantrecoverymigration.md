@@ -3,8 +3,8 @@ title: "Start-VBRHvInstantRecoveryMigration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrhvinstantrecoverymigration.html"
-last_updated: "5/7/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRHvInstantRecoveryMigration
@@ -30,12 +30,13 @@ Detailed Description
 
 This cmdlet migrates a recovered VM to the production host. You finalize the instant recovery of the VM initiated with the [Start-VBRHvInstantRecovery](start-vbrhvinstantrecovery.md) cmdlet by migrating the VM to production.
 
-Run the [Stop-VBRInstantRecovery](stop-vbrinstantrecovery.md) cmdelt to terminate the recovery session by unpublishing the VM.
+Run the [Stop-VBRInstantRecovery](stop-vbrinstantrecovery.md) cmdlet to terminate the recovery session by unpublishing the VM.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | InstantRecovery | Specifies the array of instant recovery sessions. The cmdlet will migrate the VMs recovered with these sessions to the Hyper-V host. | Accepts the InstantRecovery[] object. To create this object, run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
