@@ -3,8 +3,8 @@ title: "Running Veeam PowerShell Session on Linux Machines"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/running_ps_sessions_linux.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Running Veeam PowerShell Session on Linux Machines
@@ -66,7 +66,7 @@ To be able to perform operations Veeam Backup PowerShell on Linux machines, perf
 
 |  |
 | --- |
-| dnf install <https://repository.veeam.com/rocky/9.2/vbr/13.0/optional/x86_64/veeam-optional-release-latest-13.0.1.180-1.x86_64.rpm> -y |
+| dnf install <https://repository.veeam.com/rocky/9.2/vbr/13.0/optional/x86_64/veeam-optional-release-latest-13.0.1.2067-1.x86_64.rpm> -y |
 
 1. Install the Veeam Backup PowerShell Module:
 
