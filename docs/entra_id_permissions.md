@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_permissions.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Permissions
@@ -28,8 +28,8 @@ Adding and Backing Up Tenants
 
 | Application | Permissions |
 | New | The Microsoft Entra ID user account associated with the tenant where the Microsoft Entra ID application will be created must have the following built-in roles assigned:   * [Application Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator) * [Privileged Role Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator)   As an alternative, you can assign the [Global Administrator Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-administrator) built-in role. |
-| Existing | To perform backup, the application must have the following permissions:   * [Microsoft Graph application permissions](https://learn.microsoft.com/en-us/graph/permissions-reference): AuditLog.Read.All, Directory.Read.All, Group.Read.All, MailboxSettings.Read, RoleManagement.Read.Directory, User.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.Read.All. |
-| To be able to further perform restore, the application must have the following permissions:   * [Microsoft Graph delegated permissions](https://learn.microsoft.com/en-us/graph/permissions-reference): Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory, AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All, Application.ReadWrite.All, Group.ReadWrite.All, Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.ReadWrite.All * [API delegated permissions](https://learn.microsoft.com/en-us/information-protection/develop/concept-api-permissions): user\_impersonation   Note: Make sure that the Allow public client flows option is enabled for the application. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#authentication-setting-confidential-vs-public). |
+| Existing | To perform backup, the application must have the following permissions:   * [Microsoft Graph application permissions](https://learn.microsoft.com/en-us/graph/permissions-reference).   For essential tenant items backup: Directory.Read.All, Group.Read.All, MailboxSettings.Read, RoleManagement.Read.Directory, User.Read.All.  For optional tenant items backup: Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.Read.All.  For log backup: AuditLog.Read.All. |
+| To be able to further perform restore, the application must have the following permissions:   * [Microsoft Graph delegated permissions](https://learn.microsoft.com/en-us/graph/permissions-reference).   For essential tenant items restore: Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory, AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All, Application.ReadWrite.All, Group.ReadWrite.All.  For optional tenant items restore: Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.ReadWrite.All.   * [API delegated permissions](https://learn.microsoft.com/en-us/information-protection/develop/concept-api-permissions): user\_impersonation   Note: Make sure that the Allow public client flows option is enabled for the application. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#authentication-setting-confidential-vs-public). |
 
 |  |
 | --- |
