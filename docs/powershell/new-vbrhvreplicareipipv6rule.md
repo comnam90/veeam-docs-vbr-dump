@@ -3,8 +3,8 @@ title: "New-VBRHvReplicaReIpIPv6Rule"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvreplicareipipv6rule.html"
-last_updated: "7/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRHvReplicaReIpIPv6Rule
@@ -28,12 +28,13 @@ Syntax
 
 Detailed Description
 
-This cmdlet creates the [VBRHvReplicaReIpIPv6Rule](vbrhvreplicareipipv6rule.md) object. This object containins a list of rules for different IP addressing scheme. Use this object to set re-IPv6 rules for replication jobs.
+This cmdlet creates the [VBRHvReplicaReIpIPv6Rule](vbrhvreplicareipipv6rule.md) object. This object contains a list of rules for different IP addressing scheme. Use this object to set re-IPv6 rules for replication jobs.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | SourceIp | Specifies the IPv6 address or the IPv6 addressing scheme of the network in which the source VM is located. You can use the asterisk character (\*) to specify a range of IP addresses.  Default: 0000:0000:0000:0000:ffff:c0a8:0a01 | String | False | Named | False |
 | SourcePrefix | Specifies the prefix length of the network in which the source VM is located.  Default: 80 | String | False | Named | False |
 | TargetIp | Specifies the IPv6 address of the network in which the replica VM will be located.  Default: 0000:0000:0000:0000:ffff:c078:0a01 | String | False | Named | False |
