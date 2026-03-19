@@ -3,8 +3,8 @@ title: "Set-VBRObjectRestorePointStatus"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrobjectrestorepointstatus.html"
-last_updated: "7/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRObjectRestorePointStatus
@@ -35,9 +35,10 @@ This cmdlet modifies the malware status of restore points.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| RestorePoint | Specifies restore points which malware status you want to modiffy. | Accepts the VBRObjectRestorePoint object. To get this object, run the [Get-VBRObjectRestorePoint](get-vbrobjectrestorepoint.md) cmdlet. | True | 0 | True (ByPropertyName, ByValue) |
+| RestorePoint | Specifies restore points which malware status you want to modify. | Accepts the VBRObjectRestorePoint object. To get this object, run the [Get-VBRObjectRestorePoint](get-vbrobjectrestorepoint.md) cmdlet. | True | 0 | True (ByPropertyName, ByValue) |
 | Status | Specifies one of the following malware status:   * Clean * Suspicious * Infected | VBRActivitySeverity | True | Named | False |
 
 <CommonParameters>
