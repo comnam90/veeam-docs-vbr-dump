@@ -3,8 +3,8 @@ title: "Performing Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Restore
@@ -23,8 +23,13 @@ Before you perform database restore, consider the following:
 
 * The backup job that created the backup must be present in Veeam Backup & Replication.
 
-* To restore to another server under another user account, the account must have the Restore operator or Backup administrator role on the Veeam backup server.
 * To restore to another server, you must perform the restore operation on the target server, where you want to place the new database backup.
+* To restore to another server under another user account, you can use on of the following options:
+
+* Use the user account that either has the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles.
+* Use the recovery token generated on the Veeam Backup & Replication side.
+
+To learn more about options to restore to another server, see [Restore to Another Server](mssql_db_restore_another_server.md).
 
 To restore Microsoft SQL Server databases, you can use the following tools:
 
