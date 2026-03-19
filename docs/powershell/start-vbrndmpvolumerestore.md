@@ -3,8 +3,8 @@ title: "Start-VBRNDMPVolumeRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrndmpvolumerestore.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRNDMPVolumeRestore
@@ -45,8 +45,9 @@ This cmdlet restores data from the tape device to an NDMP server.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies the restore point to which you want to restore the selected volume. | Accepts the [VBRNDMPVolumeRestorePoint](vbrndmpvolumerestorepoint.md) object. To get this object, run the [Get-VBRNDMPVolumeRestorePoint](get-vbrndmpvolumerestorepoint.md) cmdlet. | True | Named | False |
 | ToOriginalLocation | Defines that the cmdlet will start the restore to the original NDMP server. | SwitchParameter | True | Named | False |
 | Server | For restore to another location.  Specifies the target NDMP server. Veeam Backup & Replication will restore the volumes to that server. | Accepts the [VBRNDMPServer](vbrndmpserver.md) object. To get this object, run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. | True | Named | False |
@@ -68,13 +69,13 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to restore data from tape to an original NDMP server.  |  | | --- | | $volume = Get-VBRNDMPVolume -Name "/svm-cifs/Exhcange\_vol"  $restorepoint = Get-VBRNDMPVolumeRestorePoint -Volume $volume  Start-VBRNDMPVolumeRestore -RestorePoint $restorepoint -ToOriginalLocation |  Perform the following steps:   1. Run the [Get-VBRNDMPVolume](get-vbrndmpvolume.md) cmdlet. Specify the Name parameter value. Save the result to the $volume variable. 2. Run the Get-VBRNDMPVolumeRestorePoint cmdlet. Set the $volume variable as the Volume parameter value. Save the result to the $restorepoint variable. 3. Run the Start-VBRNDMPVolumeRestore cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Provide the ToOriginalLocation parameter. |
+| This example shows how to restore data from tape to an original NDMP server.  |  | | --- | | $volume = Get-VBRNDMPVolume -Name "/svm-cifs/Exchange\_vol"  $restorepoint = Get-VBRNDMPVolumeRestorePoint -Volume $volume  Start-VBRNDMPVolumeRestore -RestorePoint $restorepoint -ToOriginalLocation |  Perform the following steps:   1. Run the [Get-VBRNDMPVolume](get-vbrndmpvolume.md) cmdlet. Specify the Name parameter value. Save the result to the $volume variable. 2. Run the Get-VBRNDMPVolumeRestorePoint cmdlet. Set the $volume variable as the Volume parameter value. Save the result to the $restorepoint variable. 3. Run the Start-VBRNDMPVolumeRestore cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Provide the ToOriginalLocation parameter. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Restoring Data from Tape to Another NDMP Server [Using Variable]
 
 |  |  |
 | --- | --- |
-| This example shows how to restore data from tape to another NDMP server named NetApp.tech.local.  |  | | --- | | $volume = Get-VBRNDMPVolume -Name "/svm-cifs/Exhcange\_vol"  $restorepoint = Get-VBRNDMPVolumeRestorePoint -Volume $volume  $ndmpserver = Get-VBRNDMPServer -Name "NetApp.tech.local"  Start-VBRNDMPVolumeRestore -RestorePoint $restorepoint -Server $ndmpserver -Path "/svm-cifs/ks\_tapes" |  Perform the following steps:   1. Run the [Get-VBRNDMPVolume](get-vbrndmpvolume.md) cmdlet. Specify the Name parameter value. Save the result to the $volume variable. 2. Run the [Get-VBRNDMPVolumeRestorePoint](get-vbrndmpvolumerestorepoint.md) cmdlet. Set the $volume variable as the Volume parameter value. Save the result to the $restorepoint variable. 3. Run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. Specify the Name parameter value. Save the result to the $ndmpserver variable. 4. Run the Start-VBRNDMPVolumeRestore cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Set the $ndmpserver variable as the Server parameter value. Specify the Path parameter value. |
+| This example shows how to restore data from tape to another NDMP server named NetApp.tech.local.  |  | | --- | | $volume = Get-VBRNDMPVolume -Name "/svm-cifs/Exchange\_vol"  $restorepoint = Get-VBRNDMPVolumeRestorePoint -Volume $volume  $ndmpserver = Get-VBRNDMPServer -Name "NetApp.tech.local"  Start-VBRNDMPVolumeRestore -RestorePoint $restorepoint -Server $ndmpserver -Path "/svm-cifs/ks\_tapes" |  Perform the following steps:   1. Run the [Get-VBRNDMPVolume](get-vbrndmpvolume.md) cmdlet. Specify the Name parameter value. Save the result to the $volume variable. 2. Run the [Get-VBRNDMPVolumeRestorePoint](get-vbrndmpvolumerestorepoint.md) cmdlet. Set the $volume variable as the Volume parameter value. Save the result to the $restorepoint variable. 3. Run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. Specify the Name parameter value. Save the result to the $ndmpserver variable. 4. Run the Start-VBRNDMPVolumeRestore cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Set the $ndmpserver variable as the Server parameter value. Specify the Path parameter value. |
 
 Related Commands
 
