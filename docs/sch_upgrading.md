@@ -1,13 +1,13 @@
 ---
-title: "Upgrading to Veeam Plug-in for Scale Computing HyperCore 2"
+title: "Upgrading to Veeam Plug-in for Scale Computing HyperCore v2"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_upgrading.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Upgrading to Veeam Plug-in for Scale Computing HyperCore 2
+# Upgrading to Veeam Plug-in for Scale Computing HyperCore v2
 
 
 To upgrade Veeam Plug-in for Scale Computing HyperCore to version 2, do the following:
