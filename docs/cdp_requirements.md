@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_requirements.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -28,8 +28,8 @@ Infrastructure Components
 * The network between the infrastructure components must suit the load on your infrastructure. We recommend that you use at least 100 Mbps network. Slower networks cannot handle the generated disk traffic without interruption. The better performance is proven on 10 Gbps networks or faster and MTU 9000.
 * You must configure CDP for one cluster on one backup server only. If you add a cluster to another backup server and install the I/O filter (filter required for CDP) on it, CDP policies on the first backup server will fail. For more information on the I/O filter, see [I/O Filter](cdp_infrastructure.md#iofilter).
 
-* When you upgrade Veeam Backup & Replication to the current version, you can postpone the upgrade of the I/O filter on the vCenter Servers to a later time. Veeam Backup & Replication supports the postponed upgrade for the minor versions within the 12 version. You must postpone the upgrade or upgrade all clusters on the vCenter Servers. Partially upgraded vCenter Servers or clusters have limited functionality. You cannot add VMs from such vCenter Servers or clusters to CDP policies, commit failback and perform some other operations.
-* The maximum number of CDP policies that can be created on one backup server is 100.
+* When you upgrade Veeam Backup & Replication to the current version, you can postpone the I/O filter upgrade on vCenter Servers. Veeam Backup & Replication supports postponing the I/O filter upgrade for the minor versions within 13.x, and for 12.3.2.x or 12.3.1.x filter versions. It is recommended that all clusters in one vCenter Server use the same I/O filter version. Partially upgraded vCenter Servers have limited functionality. You cannot add VMs from non-upgraded hosts to CDP policies, commit failback and perform some other operations. You should keep the I/O filter at the latest version to reduce the risk of potential issues.
+* The maximum number of CDP policies that can be created on one backup server is 400.
 * If you upgrade the primary version of hosts in the vCenter Server (for example, from ESXi version 7 to 8), you must upgrade the I/O filter version on this server. Perform this upgrade either alongside the ESXi upgrade or immediately after it. For more information, see [Updating and Uninstalling I/O Filter](cdp_io_filter_remove.md).
 * If you add a new cluster or host to a vCenter Server after the I/O filter is installed on the existing clusters and hosts, you must [launch the](cdp_io_filter_install.md) [I/O Filter Management](cdp_io_filter_install.md) [wizard](cdp_io_filter_install.md). Make sure that check boxes are selected near all clusters where the I/O filter must be present and finish the wizard. After you finish the wizard, Veeam Backup & Replication requests the vCenter Server to install the I/O filter (if required), and to configure it.
 
