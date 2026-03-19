@@ -3,8 +3,8 @@ title: "Creating CDP Policies for VMware vSphere"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/creating_cdp_policies.html"
-last_updated: "12/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating CDP Policies for VMware vSphere
@@ -115,7 +115,7 @@ You cannot specify a target proxy for the CDP policy targeted at the cloud host.
 Veeam Backup & Replication will analyze available CPU on all source CDP proxies, the maximum disk write speed during the last hour, and will calculate approximate requirements for CDP proxies. In the CDP Infrastructure Assessment window, you will see the calculated values:
 
 * The Proxy CPU rows show CPU cores available on all source proxies.
-* The Proxy RAM rows show RAM required for CDP and, in parenthesis, RAM available on all source proxies. If values in the parentheses and near the paranthesis are the same, you need to upgrade proxies for which values coincide to provide more resources. For example, you can double up the amount of RAM.
+* The Proxy RAM rows show RAM required for CDP and, in parenthesis, RAM available on all source proxies. If values in the parentheses and near the parenthesis are the same, you need to upgrade proxies for which values coincide to provide more resources. For example, you can double up the amount of RAM.
 * The Proxy Bandwidth rows show the maximum disk write speed during the last hour and, in parenthesis, available bandwidth based on available cores of source or target proxies.
 
 ![Creating CDP Policies for VMware vSphere](images/cloud_cdp_policy_settings_resources.webp)
