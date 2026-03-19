@@ -3,8 +3,8 @@ title: "Veeam Agent Management Protection Scope"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/protection_scope.html"
-last_updated: "4/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Agent Management Protection Scope
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlet in this topic to perform the following operations.
 
-| Cmlet | Operation |
-| --- | --- |
+Veeam Agent Management Protection Scope
+
+| Cmdlet | Operation |
 | [New-VBRADContainer](new-vbradcontainer.md) | Creates a scope of Active Directory objects. |
 | [New-VBRManuallyDeployedContainer](new-vbrmanuallydeployedcontainer.md) | Defines a scope of Veeam Agent setup files. |
 | [Set-VBRADContainer](set-vbradcontainer.md) | Modifies the scope of Active Directory objects. |
