@@ -3,8 +3,8 @@ title: "Step 3. Add Tapes to Media Pool"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_gfs_media_pool_tapes.html"
-last_updated: "5/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Add Tapes to Media Pool
@@ -21,7 +21,7 @@ Click Add to add other tape libraries.
 
 Configure the multiple libraries mode:
 
-* Active: in this mode, tape jobs use drives in all libraries parallelly. For more information, see [Tape Parallel Processing](parallel_processing.md).
+* Active: in this mode, tape jobs use drives in all libraries in parallel. For more information, see [Tape Parallel Processing](parallel_processing.md).
 
 To enable the parallel processing mode, set all libraries role to Active. To do this, select a library and click Edit. Use Up and Down buttons to position the libraries in order they must be used.
 
