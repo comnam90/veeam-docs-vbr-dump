@@ -3,8 +3,8 @@ title: "SMTP Server with Basic Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_configuring_smtp_onedrive.html"
-last_updated: "9/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # SMTP Server with Basic Authentication
@@ -20,13 +20,13 @@ To configure sending Microsoft OneDrive items as attachments using an SMTP serve
 
 * Specify a port number of an SMTP server that you want to use.
 
-The default port number is 25. If you want to use SSL data encryption, specify port 587.
+The default port number is 25. If you want to use TLS data encryption, specify port 587.
 
 * Select the Connect using SSL check box to establish a secure connection.
 
 * If an SMTP server requires an authentication for outgoing mail, select the The SMTP server requires authentication check box and provide authentication credentials.
 
-[![Configuring Advanced Settings](images/vex_smtp_advanced.webp)](images/vex_smtp_advanced.webp "Configuring Advanced Settings")
+![SMTP Server with Basic Authentication](images/vex_smtp_advanced.webp "Configuring Advanced Settings")
 
 1. In the SMTP server field, specify the address of a server that you want to use as an SMTP server.
 
@@ -37,6 +37,6 @@ By default, Veeam Explorer for Microsoft OneDrive for Business establishes a con
 3. Click Send to send a test email message.
 4. Click OK.
 
-[![Configuring Mail Settings](images/onedrive_smtp.webp)](images/onedrive_smtp.webp "Configuring Mail Settings")
+![SMTP Server with Basic Authentication](images/onedrive_smtp.webp "Configuring Mail Settings")
 
 
