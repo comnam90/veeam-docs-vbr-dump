@@ -3,8 +3,8 @@ title: "Add-VBRvCloudVC"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrvcloudvc.html"
-last_updated: "4/24/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRvCloudVC
@@ -47,8 +47,9 @@ This cmdlet adds a new vCenter Server to Veeam Backup & Replication infrastru
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | vCloudServer | Specifies the Cloud Director server you want to connect a vCenter to. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | 0 | True (ByValue, |
 | VCInfo | Specifies the vCenter Server you want to connect to the Cloud Director. | Accepts the CVcdVcInfo object. To get this object, run the [Find-VBRvCloudEntity](find-vbrvcloudentity.md) cmdlet. | True | 1 | False |
 | User | Specifies the user name you want to use for authenticating with the vCenter Server.  If you use the User/Password scenario, the Credentials parameter must be omitted. | String | True | 2 | False |
@@ -75,7 +76,7 @@ Examples
 | --- | --- |
 | This example shows how to add a new vCenter Server with the following parameters:   * The vCenter will be registered on the server with 172.16.1.13 IP address. * The user name is Administrator and the password is Password. * The Port parameter is not set to enable the default 443 web-service port number. * The Description parameter is not set to enable the default description.   |  | | --- | | $vc = Find-VBRvCloudEntity -Vc  Get-VBRServer -Name "172.16.1.13" | Add-VBRvCloudVC -VCInfo $vc -User "Administrator" -Password "Password" -Name "vCenter Server 1" |  Perform the following steps:   1. Run the [Find-VBRvCloudEntity](find-vbrvcloudentity.md) cmdlet. Provide the Vc parameter. Save the result to the $vc variable. 2. Run the [Get-VBRServer](get-vbrserver.md) cmdlet. Specify the Name parameter value. 3. Pipe the cmdlet output to the Add-VBRvCloudVC cmdlet. Specify the following settings:  * Set the $vc variable as the VCInfo parameter value. * Specify the User and the Password parameter values. * Specify the Name parameter value. |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Adding vCenter Server with Saved Credentails [Using Variable]
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Adding vCenter Server with Saved Credentials [Using Variable]
 
 |  |  |
 | --- | --- |
