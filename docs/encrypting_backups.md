@@ -3,8 +3,8 @@ title: "Encrypting Standalone Application Backups in Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypting_backups.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Encrypting Standalone Application Backups in Backup Repositories
@@ -16,17 +16,19 @@ At the storage encryption level, you can encrypt backup files created by the fol
 * Veeam Plug-Ins for Enterprise Applications operating in the standalone mode
 * Veeam Plug-In for Nutanix AHV
 * Veeam Plug-In for Proxmox VE
-* Veeam Backup for OLVM and RHV\*
+* Veeam Plug-in for HPE Morpheus VM Essentials
+* Veeam Plug-In for oVirt KVM\*
 * Veeam Kasten for Kubernetes
 
-* Veeam Plug-In for Scale Computing HyperCore
+* Veeam Plug-in for Scale Computing HyperCore
 
 \*This feature is available for Microsoft Windows-based backup servers.
 
 Veeam Backup & Replication encrypts files at the standalone application side in the following way:
 
+Encrypting Standalone Application Backups in Backup Repositories
+
 | Backup Repository | Encryption |
-| --- | --- |
 | Regular backup repository:   * Microsoft Windows/Linux-based repository * NFS file share * SMB (CIFS) file share * Object storage repository * Deduplicating storage appliance | Backup files are encrypted before uploading to the backup repository. To encrypt backup files, a standalone application uses encryption password specified in the Access Permissions settings. For more details, see [Enabling Encryption for Standalone Application Backups](#enable_encryption). |
 | Scale-out repository | Backup files are encrypted before uploading to the scale-out backup repository.  To encrypt backup files before uploading to a performance tier, a standalone application uses encryption password specified in the Access Permissions settings for the scale-out backup repository. For more details, see [Enabling Encryption for Standalone Application Backups](#enable_encryption).  To encrypt backup files before uploading to a capacity or archive tier, a standalone application uses encryption password specified in the capacity tier settings. For more details, see [Adding Scale-Out Backup Repositories](sobr_add.md).  If you enable encryption both in the capacity tier settings and in the Access Permissions settings for the scale-out backup repository, backup files will be encrypted twice before uploading to a capacity or archive tier. |
 
