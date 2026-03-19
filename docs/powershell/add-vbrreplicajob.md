@@ -3,8 +3,8 @@ title: "Add-VBRReplicaJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrreplicajob.html"
-last_updated: "2/28/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRReplicaJob (obsolete)
@@ -33,7 +33,7 @@ Detailed Description
 
 This cmdlet allows you to create a new replication job.
 
-Replication is a process of copying a VM from its primary location (source host) to a destination location (redundant target host). Veeam Backup & Replication creates an exact copy of a VM (replica), registers it on the target host and maintains it in synch with the original VM.
+Replication is a process of copying a VM from its primary location (source host) to a destination location (redundant target host). Veeam Backup & Replication creates an exact copy of a VM (replica), registers it on the target host and maintains it in sync with the original VM.
 
 Note that when you create a replica job, you need to run it manually unless you enable a job schedule.
 
@@ -43,8 +43,9 @@ Run the [Set-VBRJobSchedule](set-vbrjobschedule.md) cmdlet to set schedule for t
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the string with the name you want to assign to the replication job. | String | True | 1 | False |
 | Type | Specifies the string with the type of the created replication job which defines how VM data is retrieved:   * VDDK – Virtual Disk Development Kit (VMware vStorage API) * VCB – VMware Consolidated Backup (legacy mode) * NET – Network replication (legacy mode) | String | False | 2 | False |
 | Server | Specifies the host where the created replica should be stored. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | 3 | False |
