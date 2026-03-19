@@ -3,14 +3,14 @@ title: "Performing VM Restore to Amazon Web Services"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_to_amazon_ec2.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing VM Restore to Amazon Web Services
 
 
-Veeam Plug-in for Scale Computing HyperCore allows you to restore Scale Computing HyperCore VMs to Amazon Web Services (AWS) as EC2 instances. For more information, see section [Restore to Amazon EC2](restore_amazon.md).
+Veeam Plug-in for Scale Computing HyperCore allows you to restore Scale Computing HyperCore VMs to Amazon Web Services (AWS) as EC2 instances. For more information, see [Restore to Amazon EC2](restore_amazon.md).
 
 To restore a VM to Amazon EC2, do the following:
 
