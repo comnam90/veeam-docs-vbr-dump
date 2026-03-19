@@ -3,8 +3,8 @@ title: "Restore to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_other_server_rman.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore to Another Server
@@ -30,7 +30,7 @@ To restore an Oracle database to another server, use the following commands:
 
 To obtain a backup ID, do the following:
 
-1. Specify an authentication method to access the backup created for the original server. For details, see [Specifying Authentication Settings](#auth).
+1. Specify an authentication method to access the backup created for the original server. For details, see [Selecting Authentication Method](#auth).
 2. Select the backup from which you want to restore a database. For details, see [Selecting Backup](#backup).
 
 |  |
@@ -59,7 +59,7 @@ Consider the following:
 * If you perform restore from a backup that was imported to Veeam Backup & Replication, Veeam Plug-In will automatically create the backup job in Veeam Backup & Replication.
 * During the restore process, backup operations are not disabled on the Oracle server.
 
-Specifying Authentication Settings
+Selecting Authentication Method
 
 To restore databases to another server, you must specify an authentication method to access the backup created for the original server. Veeam Plug-In for Oracle RMAN supports the following authentication methods to access backups:
 
@@ -105,6 +105,8 @@ To access the backup using account credentials, type 1:
 | --- |
 | Enter username: Enter password for <username>: |
 
+After that, you can select the backup for the restore. To learn more, see [Selecting Backup](#backup).
+
 Specifying Recovery Token
 
 You can restore a database to another server using a recovery token generated in Veeam Backup & Replication and provided to you by a backup administrator. To do this, do the following:
@@ -131,6 +133,8 @@ You can restore a database to another server using a recovery token generated in
 |  |
 | --- |
 | Veeam Backup & Replication server fingerprint: CA4F820F164C02A9AAC75562FC35330A93CDAA3C. Continue? (y/n) : y Enter recovery token: The specified authentication data will be used automatically to access backups over the SEND command |
+
+After that, you can select the backup for the restore. To learn more, see [Selecting Backup](#backup).
 
 Selecting Backup
 
