@@ -3,8 +3,8 @@ title: "Performing Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_data_recovery.html"
-last_updated: "7/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "1/14/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Restore
@@ -18,7 +18,7 @@ In various disaster recovery scenarios, Veeam Plug-in for Scale Computing HyperC
 * [Disk publishing](sch_disk_publish.md) — mount specific disks of a backed-up Scale Computing HyperCore VMs to any server added to the backup infrastructure.
 * [File-level restore](sch_vm_guest_restore.md) — recover individual VM guest OS files and folders.
 
-* [Application items restore](sch_restore_app_items.md) — restore applications, such as Microsoft Active Directory, Microsoft Exchange, Microsoft SharePoint, and Microsoft SQL Server.
+* [Application items restore](sch_restore_app_items.md) — restore applications, such as Microsoft Active Directory, Microsoft Exchange, Microsoft SharePoint, PostgreSQL, Oracle Database and Microsoft SQL Server.
 
 * [VM disk export](sch_disk_export.md) — restore VM disks and convert them to disks of the VMDK, VHD or VHDX format.
 * [VM restore to Amazon Web Services](sch_restore_to_amazon_ec2.md) — restore Scale Computing HyperCore VMs to Amazon Web Services as EC2 instances.
