@@ -3,8 +3,8 @@ title: "Start-VBRWindowsFileRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrwindowsfilerestore.html"
-last_updated: "7/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRWindowsFileRestore
@@ -42,8 +42,9 @@ After you restore the necessary files, you must stop the restore session. After 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point to start a restore session. You will be able to use the session to perform operations with machine guest OS files. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, |
 | Host | Specifies the mount server to which machine disks will be mounted.  Note: This parameter works only if you start a restore session of machine disks located on storage that use the Direct SAN access transport mode.  If you start a restore session of machine disks located on storage that use the other transport mode methods, the cmdlet will mount machine disks to the source storage. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | 2 | False |
 | MountHost | Specifies the mount server to which machine disks will be mounted. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
@@ -51,7 +52,7 @@ Parameters
 | Folder | Specifies a folder on the mount server. The cmdlet will place the machine disks under this folder. | Accepts the CViFolderItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md)  cmdlet. | False | 4 | False |
 | Reason | Specifies the reason for starting a restore session of machine guest OS files.  The information you provide will be saved in the session history so that you can reference it later. | String | False | Named | False |
 | ShareCredentials | Specifies the credentials that will be used to access the shared folder. | Accepts the CCredentials object. To create this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
-| Credentials | Note: This parameter is obsolete. Use the ShareCredentials paramter instead,  Specifies the credentials to authenticate with the backup share folder. | Accepts the CCredentials object. To create this object, run the  [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
+| Credentials | Note: This parameter is obsolete. Use the ShareCredentials parameter instead,  Specifies the credentials to authenticate with the backup share folder. | Accepts the CCredentials object. To create this object, run the  [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
 
