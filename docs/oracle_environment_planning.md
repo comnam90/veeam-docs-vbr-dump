@@ -3,8 +3,8 @@ title: "Oracle Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_environment_planning.html"
-last_updated: "12/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Oracle Environment Planning
@@ -124,7 +124,7 @@ Veeam Plug-In supports parallel backup processing for up to 4 backup repositorie
 |  |
 | --- |
 | Note |
-| The use of RMAN parallel procesing must be enabled for the running Oracle Enterprise Edition. |
+| The use of RMAN parallel processing must be enabled for the running Oracle Enterprise Edition. |
 
 Additional Files to Back Up
 
