@@ -3,8 +3,8 @@ title: "Configuring Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_notifications.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Notification Settings
@@ -24,7 +24,7 @@ You can enable notifications for Veeam Plug-in for Scale Computing HyperCore eve
 
 1. In the Support expiration section, choose whether you want to receive notifications when the Production Support and Maintenance agreement included into your Subscription license is about to expire. When Veeam Plug-in for Scale Computing HyperCore detects that there are less than 14 days left before the support expiration date, it sends an email notification to the recipient specified in the [general email settings](sch_email_settings.md).
 
-For more information on how to track the support expiration date, see section [Viewing License Information](license_view.md).
+For more information on how to track the support expiration date, see [Viewing License Information](license_view.md).
 
 [![Configuring Notifications](images/sch_settings_notifications.webp)](images/sch_settings_notifications.webp "Configuring Notifications")
 
