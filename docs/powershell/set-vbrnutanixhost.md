@@ -3,8 +3,8 @@ title: "Set-VBRNutanixHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnutanixhost.html"
-last_updated: "2/7/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRNutanixHost
@@ -35,10 +35,11 @@ This cmdlet modifies settings of Nutanix Files storage systems. When you modify 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Host | Specifies the storage system you want to modify. | Accepts the CNutanixHost object. To create this object, run the [Get-VBRNutanixHost](get-vbrnutanixhost.md) cmdlet. | True | Named | True (ByValue, |
-| Name | Specifies the name of the storage system that you want to modufy. | String | False | Named | False |
+| Name | Specifies the name of the storage system that you want to modify. | String | False | Named | False |
 | Description | Specifies the description of the storage system. | String | False | Named | False |
 | UserName | Specifies the user name that you want to use for authentication to the storage system. | String | False | Named | False |
 | Password | Specifies the password you want to use for authentication to the storage system. | String | False | Named | False |
