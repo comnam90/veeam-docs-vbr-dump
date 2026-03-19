@@ -3,8 +3,8 @@ title: "Start-VBRHvRestoreVM"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrhvrestorevm.html"
-last_updated: "12/10/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRHvRestoreVM
@@ -51,8 +51,9 @@ This cmdlet starts the restore of an entire Hyper-V VM. With this cmdlet, you ca
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies the restore point to which you want to restore VMs. | Accepts the RestorePoint object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, |
 | EnableStagedRestore | For staged restore.  Defines that the cmdlet will perform staged restore. If you do not provide this parameter, the cmdlet will not perform staged restore. | SwitchParameter | True | Named | False |
 | StagingCredentials | For staged restore.  Specifies the credentials for the account that has administrator privileges on VMs that you want to restore. The cmdlet will use these credentials to authenticate against VMs and run the script. | Accepts the CInternalCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | False |
@@ -61,7 +62,7 @@ Parameters
 | Server | Specifies the host where you want to locate the restored VM. By default, the cmdlet will restore a VM to its original location.  Note: This parameter is required for the staged restore jobs. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | Path | Specifies the path to the folder where you want to restore the VM. | String | False | Named | False |
 | VMName | Specifies the name you want to apply to the restored VM. By default, the original VM name is applied. | String | False | Named | False |
-| PreserveVmID | Defines whether the restored VM will get the UUID of the original VM.  Note: The cmdlet deletes the original VM if you restore it to the same Hyper-V host. This is done to avoid UUID conflicts. To keep both VMs in the same location, the restored VM must have a new UUID and a different name. To generate a new UUID, set this parameter to False.   * True: The cmdet will restore a VM with the UUID of the original VM. * False: The cmdet will restore a VM with a new UUID. | Bool | False | Named | False |
+| PreserveVmID | Defines whether the restored VM will get the UUID of the original VM.  Note: The cmdlet deletes the original VM if you restore it to the same Hyper-V host. This is done to avoid UUID conflicts. To keep both VMs in the same location, the restored VM must have a new UUID and a different name. To generate a new UUID, set this parameter to False.   * True: The cmdlet will restore a VM with the UUID of the original VM. * False: The cmdlet will restore a VM with a new UUID. | Bool | False | Named | False |
 | PowerUp | Defines that the restored VM will be powered up immediately after the restore. If you do not provide this parameter, you will have to power up the VM manually. | SwitchParameter | False | Named | False |
 | RegisterAsClusterResource | Defines that the restored VM will be registered as a part of a cluster in case you restore the VM to a clustered host. | SwitchParameter | False | Named | False |
 | NICsEnabled | Defines that the restored VM will be connected to the network. If you do not provide this parameter, the VM will have no network connections.  Default: False. | SwitchParameter | False | Named | False |
