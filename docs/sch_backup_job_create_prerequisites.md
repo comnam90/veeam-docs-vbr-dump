@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_prerequisites.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/5/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -22,7 +22,6 @@ Before you create a backup job, consider the following limitations:
 * By default, Veeam Plug-in for Scale Computing HyperCore [enables deduplication](compression_deduplication.md) for backed-up data. Due to technical limitations, you cannot disable it while configuring backup jobs.
 
 * By default, [backup encryption](data_encryption.md) is disabled for backed-up data. However, you can enable encryption at the repository level as described in section [Access Permissions](access_permissions.md).
-* [VM guest OS file indexing](indexing.md) is not supported for backups created with Veeam Plug-in for Scale Computing HyperCore.
 
 * Since Veeam Backup & Replication does not allow you to assign [information about locations](locations.md) to the Scale Computing HyperCore cluster and workers, job statistics do not include information on the Scale Computing HyperCore VM data migration between different geographic regions.
 * You cannot back up VM disks that do not allow snapshot creation.
