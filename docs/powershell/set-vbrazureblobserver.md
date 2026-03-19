@@ -3,8 +3,8 @@ title: "Set-VBRAzureBlobServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazureblobserver.html"
-last_updated: "9/2/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRAzureBlobServer
@@ -35,8 +35,9 @@ This cmdlet modifies settings of Microsoft Azure Blob storage as unstructured da
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies the Microsoft Azure Blob storage that you want to modify. | Accepts the VBRAzureBlobServer object. To create this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Account | Specifies Microsoft Azure Blob credentials records.The cmdlet will use these credentials record to connect to object storage. | Accepts the VBRAzureBlobAccount object. To get this object, run the [Get-VBRAzureBlobAccount](get-vbrazureblobaccount.md) cmdlet. | False | Named | True (ByValue) |
 | ProxyMode | Specifies the backup proxy options.   * Automatic: use this option if you want Veeam Backup & Replication to choose the backup proxy that will process object storage. * SelectedProxy: use this option if you want to specify the backup proxy that will process object storage. | VBRNASProxyMode | False | Named | False |
