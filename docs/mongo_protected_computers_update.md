@@ -3,8 +3,8 @@ title: "Upgrading Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_update.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Upgrading Veeam Agent
@@ -43,24 +43,28 @@ Upgrading Veeam Agents Automatically
 You can upgrade Veeam Agent on all computers that require upgrade at once. To upgrade Veeam Agent on protected computers:
 
 1. Open the Inventory view.
-2. In the inventory pane, in the Physical Infrastructure node, select the Out of Date protection group and click Upgrade Agents on the ribbon or right-click the Out of Date protection group and select Upgrade.
+2. In the inventory pane, in the Physical and Cloud Infrastructure node, select the Out of Date protection group and click Upgrade Agents on the ribbon or right-click the Out of Date protection group and select Upgrade.
 
 |  |
 | --- |
 | NOTE |
-| In some cases, upgrade to the new version of Veeam Plug-In may require computer reboot. |
+| In some cases, upgrade to the new version of Veeam Agent may require computer reboot. |
+
+[![Upgrade Plug-in](images/mongo_protection_group_outdated_upgrade_batch.webp)](images/mongo_protection_group_outdated_upgrade_batch.webp "Upgrade Plug-in")
 
 Upgrading Veeam Agent Manually
 
 To upgrade Veeam Agent manually on a certain protected computer:
 
 1. Open the Inventory view.
-2. In the inventory pane, expand the Physical Infrastructure node and select the necessary protection group.
+2. In the inventory pane, expand the Physical and Cloud Infrastructure node and select the necessary protection group.
 3. In the working area, select the necessary computer and click Upgrade agent on the ribbon or right-click the computer and select Agent > Upgrade agent.
 
 |  |
 | --- |
 | NOTE |
-| In some cases, upgrade to the new version of Veeam Plug-In may require computer reboot. |
+| In some cases, upgrade to the new version of Veeam Agent may require computer reboot. |
+
+[![Upgrade All Plug-ins](images/mongo_protection_group_outdated_upgrade_single_machine.webp)](images/mongo_protection_group_outdated_upgrade_single_machine.webp "Upgrade All Plug-ins")
 
 
