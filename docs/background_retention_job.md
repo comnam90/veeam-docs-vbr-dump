@@ -3,14 +3,14 @@ title: "Background Retention"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/background_retention_job.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Background Retention
 
 
-In addition to applying a retention policy ([short-term retention](retention_policy.md) and [long-term retention](gfs_retention_policy.md)) within a job session, Veeam Backup & Replication performs background retention for backups. Background retention mostly targest backups that are no longer processed by jobs (orphaned backups shown in the node with the (Orphaned) postfix). In such cases, background retention uses the last known retention settings and can delete the entire backup. Background retention is the only method for deleting the outdated restore points and backups.
+In addition to applying a retention policy ([short-term retention](retention_policy.md) and [long-term retention](gfs_retention_policy.md)) within a job session, Veeam Backup & Replication performs background retention for backups. Background retention mostly targets backups that are no longer processed by jobs (orphaned backups shown in the node with the (Orphaned) postfix). In such cases, background retention uses the last known retention settings and can delete the entire backup. Background retention is the only method for deleting the outdated restore points and backups.
 
 However, background retention can also apply to backups that still have an associated job. In these cases, background retention follows the retention settings of the job and the presence or absence of a schedule does not affect the process. It always leaves 3 restore points, even if all the points are outdated. Background retention is especially useful for jobs without a schedule, where there can be an outdated storage before the next manual run.
 
@@ -42,7 +42,7 @@ The background retention does not apply to the following backups:
 
 * Backups created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md) and Veeam Cloud Plug-Ins ([Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10), [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\*, [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1))
 
-\* Available only for Miscrosoft Windows-based backup servers.
+\* Available only for Microsoft Windows-based backup servers.
 
 Considerations
 
