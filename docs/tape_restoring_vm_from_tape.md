@@ -3,8 +3,8 @@ title: "How Restoring VM from Tape to Infrastructure Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_restoring_vm_from_tape.html"
-last_updated: "5/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How Restoring VM from Tape to Infrastructure Works
@@ -32,7 +32,7 @@ Veeam needs to load and read the selected tapes 3 times.
 * To restore to another location, Veeam copies the VM configuration file and registers the VM on the target host.
 
 1. Veeam loads the tapes for the 3rd time.
-2. Veeam restores the VM disks. Multiple disks are restored parallelly. Veeam reads the tape consequently and, using the map of data blocks, copies the VM disks data.
+2. Veeam restores the VM disks. Multiple disks are restored in parallel. Veeam reads the tape consequently and, using the map of data blocks, copies the VM disks data.
 
 ![How Restoring VM from Tape to Infrastructure Works](images/vm_disks_restore_from_tape.webp)
 
