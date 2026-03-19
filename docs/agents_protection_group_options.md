@@ -3,8 +3,8 @@ title: "Step 4. Specify Discovery and Deployment Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_options.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Discovery and Deployment Options
@@ -64,6 +64,6 @@ Keep in mind that Veeam Backup & Replication will install the CBT driver only on
 1. Select the Perform reboot automatically if required check box to allow Veeam Backup & Replication to reboot a protected computer. In particular, the reboot operation is required as part of the Veeam CBT driver installation process.
 2. Click Advanced to specify advanced settings for the protection group. To learn more, see [Specify Advanced Protection Group Settings](agents_protection_group_advanced.md).
 
-![Step 4. Specify Discovery and Deployment Options](images/pg_computers_options.webp "Specify Duscovery and Deployment Options")
+![Step 4. Specify Discovery and Deployment Options](images/pg_computers_options.webp "Specify Discovery and Deployment Options")
 
 
