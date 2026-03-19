@@ -3,8 +3,8 @@ title: "Start-VBRZip"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrzip.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRZip
@@ -28,13 +28,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRZip -Entity <IItem[]> [-BackupRepository <CBackupRepository>] [-Compression <int>] [-DisableQuiesce] [-RunAsync] [-EncryptionKey <PSCryptoKey>]  [-KMSServer <VBRKMSServer>] [-AutoDelete <EFreeBackupRetention> {Never | Tonight | TomorrowNight | In3days | In1Week | In2Weeks | In1Month | In3Months | In6Months | In1Year}] [-RetentionNumber <Int32>] [-RetentionPeriodType <VBRRetentionPeriodType>] [-Force]  [<CommonParameters>] |
+| Start-VBRZip -Entity <IItem[]> [-BackupRepository <CBackupRepository>] [-Compression <int>] [-DisableQuiesce] [-RunAsync] [-EncryptionKey <PSCryptoKey>] [-KMSServer <VBRKMSServer>] [-AutoDelete <EFreeBackupRetention> {Never | Tonight | TomorrowNight | In3days | In1Week | In2Weeks | In1Month | In3Months | In6Months | In1Year}] [-RetentionNumber <Int32>] [-RetentionPeriodType <VBRRetentionPeriodType>] [-Force]  [<CommonParameters>] |
 
 * Target VeeamZIP backups to a folder or for Veeam Backup Free Edition.
 
 |  |
 | --- |
-| Start-VBRZip -Entity <IItem[]> [-Folder <string>] [-Compression <int>] [-DisableQuiesce] [-RunAsync] [-EncryptionKey <PSCryptoKey>]  [-KMSServer <VBRKMSServer>] [-AutoDelete <EFreeBackupRetention> {Never | Tonight | TomorrowNight | In3days | In1Week | In2Weeks | In1Month | In3Months | In6Months | In1Year}] [-RetentionNumber <Int32>] [-RetentionPeriodType <VBRRetentionPeriodType>] [-NetworkCredentials <CCredentials>] [-Force]  [<CommonParameters>] |
+| Start-VBRZip -Entity <IItem[]> [-Folder <string>] [-Compression <int>] [-DisableQuiesce] [-RunAsync] [-EncryptionKey <PSCryptoKey>] [-KMSServer <VBRKMSServer>] [-AutoDelete <EFreeBackupRetention> {Never | Tonight | TomorrowNight | In3days | In1Week | In2Weeks | In1Month | In3Months | In6Months | In1Year}] [-RetentionNumber <Int32>] [-RetentionPeriodType <VBRRetentionPeriodType>] [-NetworkCredentials <CCredentials>] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -51,8 +51,9 @@ This cmdlet is available for Veeam Backup Free Edition. You can use it in your s
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | BackupRepository | Specifies the backup repository where you want to save the backup file. If none is specified, the default repository will be used.  Note: The cmdlet will not run if you do not specify either the BackupRepository or the Folder parameters. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
 | Entity | Specifies the array of VMs for which you want to create a VeeamZIP file. | Accepts the IItem[] object. To get this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | True | Named | True (ByValue, |
 | Compression | Specifies then integer number corresponding to the desired compression level:   * 0 = None. Consider disabling compression to achieve better deduplication ratios on deduplicating storage appliances at the cost of reduced backup performance. * 4 = Dedupe-friendly. This is the recommended setting for using with deduplicating storage devices and caching WAN accelerators. This setting is used by default. * 5 = Optimal (recommended). Optimal compression provides for the best compression to performance ratio, and lowest backup proxy CPU usage. * 6 = High. High compression provides additional 10% compression ratio over Optimal, at the cost of 8x higher CPU usage. * 9 = Extreme. Extreme compression provides additional 3% compression ratio over High, at the cost of 2x higher CPU usage. | Int32 | False | Named | False |
@@ -83,7 +84,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to perform VeeamZIP backup to a shared folder. The cmdlet starts VeeamZIP with the following parameters:   * Path to the folder where the backups will be stored is D:\Repository\VeeamZIP. * The compression level is set to 4 (Dedupe-friendly). * The VMware quiescence is disabled. * The cmdlet will use Shared credentials for authenticating with the shared folder. * The RunAsync parameter is set to bring the process to the background.   |  | | --- | | $vm = Find-VBRViEntity -Name "Tech"  $netcreds = Get-VBRCredentials -Name "Shared"  Start-VBRZip -Folder "D:\Repository\VeeamZIP" -Entity $vm -Compression 4 -DisableQuiesce -NetworkCredentials $netcreds -RunAsync |  You will need to perform the following steps:   1. Run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet to get the VM where VeeamZIP will be started. Specify the Name parameter value. Save the result to the $vm variable. 2. Run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. Specify the Name parameter value. Save the result to the $netcreds variable. 3. Run the Start-VBRZip cmdlet. Specify the following settings:  * Specify the Folder parmeter value. * Set the $vm variable as the Entity parameter value. * Set the 4 value as the Compression parameter value. * Provide the DisableQuiesce parameter. * Set the $netcreds variable as the NetworkCredentials parameter value. * Provide the RunAsync parameter. |
+| This example shows how to perform VeeamZIP backup to a shared folder. The cmdlet starts VeeamZIP with the following parameters:   * Path to the folder where the backups will be stored is D:\Repository\VeeamZIP. * The compression level is set to 4 (Dedupe-friendly). * The VMware quiescence is disabled. * The cmdlet will use Shared credentials for authenticating with the shared folder. * The RunAsync parameter is set to bring the process to the background.   |  | | --- | | $vm = Find-VBRViEntity -Name "Tech"  $netcreds = Get-VBRCredentials -Name "Shared"  Start-VBRZip -Folder "D:\Repository\VeeamZIP" -Entity $vm -Compression 4 -DisableQuiesce -NetworkCredentials $netcreds -RunAsync |  You will need to perform the following steps:   1. Run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet to get the VM where VeeamZIP will be started. Specify the Name parameter value. Save the result to the $vm variable. 2. Run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. Specify the Name parameter value. Save the result to the $netcreds variable. 3. Run the Start-VBRZip cmdlet. Specify the following settings:  * Specify the Folder parameter value. * Set the $vm variable as the Entity parameter value. * Set the 4 value as the Compression parameter value. * Provide the DisableQuiesce parameter. * Set the $netcreds variable as the NetworkCredentials parameter value. * Provide the RunAsync parameter. |
 
 Related Commands
 
