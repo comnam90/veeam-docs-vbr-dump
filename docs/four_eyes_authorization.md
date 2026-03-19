@@ -3,8 +3,8 @@ title: "Four-Eyes Authorization"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/four_eyes_authorization.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Four-Eyes Authorization
@@ -72,7 +72,7 @@ Enabling Four-Eyes Authorization
 To enable four-eyes authorization, perform the following steps:
 
 1. Make sure that you have at least two users (added to a user group or separate ones) with the Veeam Backup Administrator or Veeam Security Administrator role assigned.
-2. From the main menu, select Users and Roles > Authorization.
+2. From the main menu, select Users & Roles > Authorization.
 3. Select the Require additional approval for sensitive operations check box.
 4. Specify the time period during which the requested operation must be approved or rejected (minimum 1 day, maximum — 30).
 
