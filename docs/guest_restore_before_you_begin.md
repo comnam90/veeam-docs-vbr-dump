@@ -3,14 +3,14 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "2/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Microsoft Windows File Recovery
 
 
-This section lists considerations and limitations that apply to recovery from Microsoft Windows workloads.
+This section lists considerations and limitations that apply to recovery from Microsoft Windows workloads. For the list of common considerations and limitations, see [Considerations and Limitations](vbr_flr_considerations_common.md).
 
 Licensing
 
@@ -21,7 +21,7 @@ Infrastructure Components
 * The account that you use to start the Veeam Backup & Replication console and to connect to the backup server must have permissions and privileges described in section [Veeam Backup & Replication Console Permissions](required_permissions.md#rpvbr).
 
 * You can recover files from basic disks and dynamic disks (including simple, mirrored, striped, spanned and RAID5 volumes).
-* [For recovery to another workload, to original location, or permissions only] If the target workload uses the gMSA account and you recover files from a backup, you must also [install this account](using_gmsa.md#install) on the mount server associated with the backup repository on which the backup resides. If you recover from a replica, you must install the gMSA account on the backup server.
+* [For recovery to another workload, to original location, or permissions only] If the target workload uses the gMSA account and you recover files from a backup, you must also [install this account](using_gmsa.md#install) on the mount server used for recovery. If you recover from a replica, you must install the gMSA account on the backup server.
 
 * [For vSphere recovery to original location] The mount server must have access to the guest OS (if recovery is performed over the network) or vCenter Server and ESXi host where the target workload runs (if recovery is performed over VIX API/vSphere Web Services).
 * [For Hyper-V recovery to original location] Guest OS must be accessible from the backup server over the network, or over PowerShell Direct (for VMs that reside on Microsoft Hyper-V Server 2016 or later).
@@ -64,7 +64,7 @@ Source for Data Recovery
 * [For [comparison functionality](guest_restore_save.md#compare) and recovery of permissions only] Check that VMware Tools or [Hyper-V integration services](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/integration-services) are installed on the original machine and the machine is accessible over the network.
 * You cannot use the [comparison functionality](guest_restore_save.md#compare) if the [Group Managed Service Account (gMSA) account](using_gmsa.md) is used for the workload whose files you plan to recover.
 
-* The [comparison functionality](guest_restore_save.md#compare) is not available for backups created by [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7), for backups exported with Kasten policies and for backups stored in external repositories (for example, backups created by Veeam Backup for AWS, Veeam Backup for Microsoft Azure, and so on).
+* The [comparison functionality](guest_restore_save.md#compare) is not available for backups created by [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7), for backups exported with Kasten policies and for backups stored in external repositories (for example, backups created by Veeam Backup for AWS, Veeam Backup for Microsoft Azure, and so on).
 
 * [For permission recovery] Permissions can be recovered only for files and folders that are still present on the original workloads. If files and folders are missing, recovery fails.
 
