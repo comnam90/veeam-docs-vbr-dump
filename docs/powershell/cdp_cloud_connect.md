@@ -3,8 +3,8 @@ title: "Continuous Data Protection (CDP) with Veeam Cloud Connect"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cdp_cloud_connect.html"
-last_updated: "10/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Continuous Data Protection (CDP) with Veeam Cloud Connect
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlet in this topic to perform the following operations.
 
-| Cmlet | Operation |
-| --- | --- |
+Continuous Data Protection (CDP) with Veeam Cloud Connect
+
+| Cmdlet | Operation |
 | [Get-VBRViCloudVM](get-vbrvicloudvm.md) | Returns VMs available in cloud hosts allocated by cloud resources. |
 | [Add-VBRCloudCDPPolicy](add-vbrcloudcdppolicy.md) | Creates a cloud CDP policy. |
 | [Set-VBRCloudCDPPolicy](set-vbrcloudcdppolicy.md) | Modifies a cloud CDP policy. |
