@@ -3,8 +3,8 @@ title: "Multi-Factor Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mfa.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Multi-Factor Authentication
@@ -72,7 +72,7 @@ Enabling MFA
 To enable the feature for all users:
 
 1. Log in to the Veeam Backup & Replication console as an administrator.
-2. Go to Users and Roles > Security.
+2. Go to Users & Roles > Security.
 3. Remove user groups from the list if there are any. Leave only specific users.
 4. Select the Enable multi-factor authentication (MFA) check box.
 5. Click OK.
@@ -93,7 +93,7 @@ After the reset is performed, the next time the user logs in, they must configur
 To reset MFA for a specific user:
 
 1. Log in to the Veeam Backup & Replication console as an administrator.
-2. Go to Users and Roles > Security.
+2. Go to Users & Roles > Security.
 3. Select the user and click Reset MFA.
 
 |  |
@@ -108,7 +108,7 @@ Disabling MFA
 To disable the feature for all users:
 
 1. Log in to the Veeam Backup & Replication console as an administrator.
-2. Go to Users and Roles > Security.
+2. Go to Users & Roles > Security.
 3. Clear the Enable multi-factor authentication (MFA) check box.
 4. Click OK.
 
@@ -119,7 +119,7 @@ If you cannot use MFA due to limitations described in section [Requirements and 
 To disable the feature for service accounts:
 
 1. Log in to the Veeam Backup & Replication console as an administrator.
-2. Go to Users and Roles > Security.
+2. Go to Users & Roles > Security.
 3. Select the service account and click Edit.
 4. Select the This is a service account (disables two-factor authentication) check box.
 5. Click OK.
