@@ -1,13 +1,13 @@
 ---
-title: "Step 5. Define Job Schedule"
+title: "Step 6. Define Job Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_schedule.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/25/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Step 5. Define Job Schedule
+# Step 6. Define Job Schedule
 
 
 At the Schedule step of the wizard, you can instruct Veeam Plug-in for Scale Computing HyperCore to start the backup job automatically according to a specific backup schedule. The backup schedule defines how often data of the VMs added to the backup job will be backed up.
