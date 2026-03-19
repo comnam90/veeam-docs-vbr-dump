@@ -3,8 +3,8 @@ title: "Install-VBRLinuxTransportService"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/install-vbrlinuxtransportservice.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Install-VBRLinuxTransportService
@@ -26,14 +26,15 @@ Syntax
 
 Detailed Description
 
-This cmdlet installs Veeam Data Mover for guest processing on Linux VMs. For more information on Linux distibutives, for which guest processing is supported, see the [Platform Support](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13) section of Veeam Backup & Replication User Guide.
+This cmdlet installs Veeam Data Mover for guest processing on Linux VMs. For more information on Linux distributives, for which guest processing is supported, see the [Platform Support](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13) section of Veeam Backup & Replication User Guide.
 
 After you install Veeam Data Mover, Veeam Backup & Replication will use it for guest processing tasks.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Entity | Specifies an array of Linux VMs to which you want to install Veeam Data Mover. | Accepts the IVmItem[] object. To get this object, run the [Find-VBRHvEntity](find-vbrhventity.md),[Find-VBRViEntity](find-vbrvientity.md) or [Find-VBRvCloudEntity](find-vbrvcloudentity.md) cmdlets. | True | Named | True (ByValue, ByPropertyName) |
 | SSHUser | Specifies the user name you want to use for authenticating with the Linux VMs. | String | True | Named | False |
 | SSHPassword | Specifies the password you want to use for authenticating with the Linux VMs. | String | True | Named | False |
