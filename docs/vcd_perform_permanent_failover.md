@@ -3,8 +3,8 @@ title: "Performing Permanent Failover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_perform_permanent_failover.html"
-last_updated: "6/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Permanent Failover
@@ -17,6 +17,6 @@ To perform permanent failover, do one of the following:
 * Open the Home view. In the [inventory pane](vbr_ui.md) navigate to the Replicas > Active node. In the working area, select the necessary replica and click Permanent Failover on the ribbon.
 * Open the Home view. In the [inventory pane](vbr_ui.md) navigate to the Replicas > Active node. In the working area, right-click the necessary replica and select Permanent failover.
 
-[![vCD Permanent Faolver](images/vcd_permanent_failover.webp)](images/vcd_permanent_failover.webp "vCD Permanent Faolver")
+[![vCD Permanent Failover](images/vcd_permanent_failover.webp)](images/vcd_permanent_failover.webp "vCD Permanent Failover")
 
 
