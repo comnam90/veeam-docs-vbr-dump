@@ -3,8 +3,8 @@ title: "Configuring Backup Jobs with Storage Snapshot Retention"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_job_secondary_perform.html"
-last_updated: "10/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Backup Jobs with Storage Snapshot Retention
@@ -52,9 +52,9 @@ To configure a backup job:
 
 ![Configuring Backup Jobs with Storage Snapshot Retention](images/backup_from_secondary_options.webp)
 
-1. At the Secondary Target step of the wizard, click Add and select where to create long-term snapshots, that is, snapshots for a snapshot chain. You can select an option to create snapshots on the primary storage array or create snapshots on the secondary storage array using a replication or archiving feature, or both — on the primary and secondary arrays. Also, configure the number of days for which you want to retain snapshots in the snapshot chain and configure which feature to use as the data source for backup operations, if required. Additionally, you can prohibit snapshot deletion and modificaion, that is, configure immutability.
+1. At the Secondary Target step of the wizard, click Add and select where to create long-term snapshots, that is, snapshots for a snapshot chain. You can select an option to create snapshots on the primary storage array or create snapshots on the secondary storage array using a replication or archiving feature, or both — on the primary and secondary arrays. Also, configure the number of days for which you want to retain snapshots in the snapshot chain and configure which feature to use as the data source for backup operations, if required. Additionally, you can prohibit snapshot deletion and modification, that is, configure immutability.
 
-If you want to create a snapshot chain on the secondary storage array with synchronous replication, you must add an option to create snapshots on the primary storage array and specify the Number of days to retain. Long-term snapshots will be created simultaneously on the primary and secondary storage arrays, that is, coordinated snapshots will be created. Veeam Backup & Replication will retain the same number or snapshots on both storage arrays. If you want to prohibit snapshot deletion and modificaion for some period of time, configure the Make recent backups immutable for field. Veeam Backup & Replication will protect snapshots against deletion on both storage arrays. If you also want to use the secondary storage array as a source for backup, add the synchronous replication feature to the list of the used features. Check that the Use as the data source check box is enabled.
+If you want to create a snapshot chain on the secondary storage array with synchronous replication, you must add an option to create snapshots on the primary storage array and specify the Number of days to retain. Long-term snapshots will be created simultaneously on the primary and secondary storage arrays, that is, coordinated snapshots will be created. Veeam Backup & Replication will retain the same number or snapshots on both storage arrays. If you want to prohibit snapshot deletion and modification for some period of time, configure the Make recent backups immutable for field. Veeam Backup & Replication will protect snapshots against deletion on both storage arrays. If you also want to use the secondary storage array as a source for backup, add the synchronous replication feature to the list of the used features. Check that the Use as the data source check box is enabled.
 
 If you want to create a snapshot chain on the primary storage system or secondary storage system with snapshot transfer or archiving feature, do the following:
 
