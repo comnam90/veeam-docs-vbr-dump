@@ -3,8 +3,8 @@ title: "Performing Failover for CDP Replicas"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/performing_partial_failover_cdp.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Failover for CDP Replicas
@@ -39,7 +39,7 @@ To perform partial-site failover to a CDP replica, do the following:
 
 If you fail over to a specific point in time, use the right and left arrows on the keyboard to select the required restore point.
 
-To quickly find a long-term restore point, in the Restore point field click a link that shows a date. In the displayed window, use the calendar to select the necessary day, and then select a long-term restore point created during the selected day. The colour indicates the amount of data traffic for each time point.
+To quickly find a long-term restore point, in the Restore point field click a link that shows a date. In the displayed window, use the calendar to select the necessary day, and then select a long-term restore point created during the selected day. The color indicates the amount of data traffic for each time point.
 
 ![Performing Failover for CDP Replicas](images/partial_failover_point_cdp.webp)
 
