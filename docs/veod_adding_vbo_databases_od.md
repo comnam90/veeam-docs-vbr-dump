@@ -3,8 +3,8 @@ title: "Adding Veeam Backup for Microsoft 365 Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_adding_vbo_databases_od.html"
-last_updated: "2/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Adding Veeam Backup for Microsoft 365 Databases
@@ -21,7 +21,7 @@ To manually add databases that store Microsoft 365 organization data, do the fol
 
 1. Click Open.
 
-![Adding Veeam Backup for Microsoft 365 Databases](images/adding_adb_2.webp "Adding Veaam Backup for Microsoft 365 Databases")
+![Adding Veeam Backup for Microsoft 365 Databases](images/adding_adb_2.webp "Adding Veeam Backup for Microsoft 365 Databases")
 
 |  |
 | --- |
