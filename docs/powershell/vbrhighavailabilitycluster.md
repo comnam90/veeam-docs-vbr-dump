@@ -3,8 +3,8 @@ title: "VBRHighAvailabilityCluster"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrhighavailabilitycluster.html"
-last_updated: "10/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VBRHighAvailabilityCluster
@@ -14,15 +14,16 @@ Contains information on the high availability cluster.
 
 Properties
 
+Properties
+
 | Property | Type | Description |
-| --- | --- | --- |
 | Primary | VBRHighAvailabilityClusterNode | Primary cluster node. |
 | Secondary | VBRHighAvailabilityClusterNode[] String | Secondary cluster node. |
 | ClusterEndpoint | String | IP address of the cluster, |
 | ClusterDnsName | String | Cluster DNS name. |
 | IsCreationInProgress | Boolean | Defines whether the high availability cluster creation is processing. |
 | IsFailoverInProgress | Boolean | Defines whether failover is in progress. |
-| IsRemovalInProgress | Boolean | Defines whether the high availability cluster disassemble is in progess. |
+| IsRemovalInProgress | Boolean | Defines whether the high availability cluster disassemble is in progress. |
 | IsAnyActivityInProgress | Boolean | Defines whether the following processes run on the high availability cluster:   * Cluster creation * Failover * Cluster disassemble |
 | IsHealthyCluster | Boolean | Defines whether the high availability cluster state. |
 
