@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_object_storage.html"
-last_updated: "11/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup to Object Storage
@@ -77,5 +77,12 @@ In earlier product versions, object storage repositories used as cloud repositor
 
 * Veeam Data Cloud Vault can only be used as a cloud repository in the Connection through a gateway server mode.
 * You cannot use S3 compatible repositories with multiple buckets as a cloud repository.
+
+* For backup to Azure object storage, the tenant uses SAS (shared access signature) links. You can configure an expiration policy for SAS on your Azure container. In such case, the SAS expiry interval should be set to at least:
+
+* 30 days — for repositories using Shared Access Key.
+* 7 days — for repositories using Entra ID credentials.
+
+For more information on how to configure an expiration policy for SAS, see [Microsoft docs](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal).
 
 
