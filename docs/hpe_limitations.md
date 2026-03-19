@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_limitations.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -52,10 +52,10 @@ When restoring HPE Morpheus VM Essentials resources, consider the following:
 
 * Veeam Plug-in for HPE Morpheus VM Essentials requires unique VM names across the HPE Morpheus VM Essentials environment.
 * Veeam Plug-in for HPE Morpheus VM Essentials does not support entire restore of a HPE Morpheus VM Essentials VM to the original location if the original instance exists in the cluster in the [Locked](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007370en_us&page=GUID-FB7D15CC-A606-42DC-9DBF-27778D20282D.html) [state](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007370en_us&page=GUID-FB7D15CC-A606-42DC-9DBF-27778D20282D.html).
-* Veeam Plug-in for HPE Morpheus VM Essentials does not support entire restore of a HPE Morpheus VM Essentials VM to a different location if the following conditions are met: the original plan does not exist in the target HPE Morpheus VM Essentials envitonment and the [Veeam custom service plan](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007027en_us&page=GUID-EDCE321C-91B2-4C2D-8773-9F9B6485CB1B.html) is  disabled.
+* Veeam Plug-in for HPE Morpheus VM Essentials does not support entire restore of a HPE Morpheus VM Essentials VM to a different location if the following conditions are met: the original plan does not exist in the target HPE Morpheus VM Essentials environment and the [Veeam custom service plan](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007027en_us&page=GUID-EDCE321C-91B2-4C2D-8773-9F9B6485CB1B.html) is  disabled.
 * Veeam Plug-in for HPE Morpheus VM Essentials does not support restore of multiple VMs to the original horizontally scaled instance — if a VM is restored to such an instance, other VMs in this instance will be removed. However, restore to another instance can be performed instead using the Restore to a different location mode.
 * Veeam Plug-in for HPE Morpheus VM Essentials does not support restore of advanced VM settings such as automation, placement strategy, domain, affinity group, nested virtualization flag settings.
 * Veeam Plug-in for HPE Morpheus VM Essentials does not support restore of VMs without any disks attached.
-* Veeam Plug-in for HPE Morpheus VM Essentials does not support restore of vTPM VM settings while restoring VMs to other virtualization platforms.
+* Veeam Plug-in for HPE Morpheus VM Essentials does not support restore of  Secure boot and vTPM VM settings while restoring VMs to other virtualization platforms.
 
 
