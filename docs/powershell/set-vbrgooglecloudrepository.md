@@ -3,8 +3,8 @@ title: "Set-VBRGoogleCloudRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgooglecloudrepository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRGoogleCloudRepository
@@ -37,8 +37,9 @@ This cmdlet modifies settings for Google Cloud object storage added to the backu
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Repository | Specifies the Google Cloud object storage that you want to modify. | Accepts the VBRGoogleCloudRepository object. To create this object, run the [Add-VBRGoogleCloudRepository](add-vbrgooglecloudrepository.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Name | Specifies a name of Google Cloud object storage. The cmdlet will assign this name to Google Cloud object storage. | String | False | Named | False |
 | Description | Specifies a description of Google Cloud object storage. The cmdlet will assign this description to Google Cloud object storage. | String | False | Named | False |
@@ -53,7 +54,7 @@ Parameters
 | ImmutabilityPeriod | Defines the immutability period in days.  Default: 30.  Maximum: 999. | Int32 | False | Named | False |
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
 | GoogleProxySpec | Specifies proxy appliance settings. The cmdlet will use these settings to add Google Cloud object storage. | Accepts the VBRGoogleCloudComputeProxyAppliance object. To create this object, run the [New-VBRGoogleCloudComputeProxyAppliance](new-vbrgooglecloudcomputeproxyappliance.md) cmdlet. | False | Named | False |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by Google Cloud object storage.  Use the MaxConcurrentTasks paramter to specify the number of tasks. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by Google Cloud object storage.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by Google Cloud object storage. | Int32 | False | Named | False |
 | Force | Defines that the cmdlet will add Google Cloud object storage without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
