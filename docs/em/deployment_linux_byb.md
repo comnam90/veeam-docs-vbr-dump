@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_byb.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -13,7 +13,7 @@ product_version: "13.0.1.1071"
 Before you install Veeam Software Appliance, review known issues and limitations described in [release notes](https://helpcenter.veeam.com/rn/veeam_backup_13_release_notes.html#known-issues-and-limitations). Also, consider the following:
 
 * Veeam Software Appliance must be installed on a dedicated empty machine that meets the system requirements. For more information, see [System Requirements](system_requirements.md).
-* Disks that are accessible through multipath cannot be used for the Veeam Software Appliance installation.
+* Veeam Software Appliance cannot be installed on machines that have multipath storage devices.
 * Enterprise Manager on Linux is supported only with the Enterprise Plus edition license.
 * You cannot install other backup infrastructure components on the machine where Enterprise Manager is installed. This includes the backup server, backup repository, proxy server and other components.
 * Essentials license holders can only deploy Veeam Software Appliance on any [hypervisor supported by Veeam](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13) and on [Veeam Ready — Appliance](https://www.veeam.com/partners/alliance-partner-technical-programs.html) certified hardware.
