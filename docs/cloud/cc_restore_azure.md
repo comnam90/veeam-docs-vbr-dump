@@ -3,8 +3,8 @@ title: "Restoring Tenant Backups to Microsoft Azure"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_restore_azure.html"
-last_updated: "2/18/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring Tenant Backups to Microsoft Azure
@@ -86,7 +86,7 @@ If you are restoring the workloads to a distant location and want to speed up th
 1. At the Reason step of the wizard, specify the reason for future reference.
 2. At the Summary step of the wizard, check the specified settings and click Finish.
 
-After completing the restore operation, the SP must enable the tenant account. To do that, complete the following steps::
+After completing the restore operation, the SP must enable the tenant account. To do that, complete the following steps:
 
 1. In Veeam Backup & Replication on the SP backup server, open the Cloud Connect view.
 2. In the inventory pane, click Tenants.
