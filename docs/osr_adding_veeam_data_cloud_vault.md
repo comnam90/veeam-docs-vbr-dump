@@ -3,8 +3,8 @@ title: "Adding Veeam Data Cloud Vault"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/osr_adding_veeam_data_cloud_vault.html"
-last_updated: "11/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Adding Veeam Data Cloud Vault

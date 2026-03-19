@@ -3,8 +3,8 @@ title: "Step 2. Specify Object Storage Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_name.html"
-last_updated: "8/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Specify Object Storage Name

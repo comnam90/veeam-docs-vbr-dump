@@ -3,8 +3,8 @@ title: "Backup Job and Snapshot Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_guest_scripts_linux.html"
-last_updated: "2/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Job and Snapshot Script Settings

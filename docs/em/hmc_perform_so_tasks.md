@@ -3,8 +3,8 @@ title: "Performing Security Officer Tasks"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_perform_so_tasks.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Security Officer Tasks

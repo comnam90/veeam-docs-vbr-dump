@@ -3,8 +3,8 @@ title: "Database Backup (SAP HANA Studio)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_saphana_studio.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Database Backup (SAP HANA Studio)

@@ -3,8 +3,8 @@ title: "Backup and Restore of Failover Clusters"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_cluster_backup_and_restore.html"
-last_updated: "12/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup and Restore of Failover Clusters

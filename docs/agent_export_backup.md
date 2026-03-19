@@ -3,8 +3,8 @@ title: "Exporting Restore Point to Full Backup File"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_export_backup.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Exporting Restore Point to Full Backup File

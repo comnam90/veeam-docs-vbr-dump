@@ -3,8 +3,8 @@ title: "Step 3. Select Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_disk_restore_point.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Select Restore Point

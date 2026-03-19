@@ -3,8 +3,8 @@ title: "Full Site Failover for VMware Cloud Director Replicas"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_vcloud_director_full_failover.html"
-last_updated: "9/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Full Site Failover for VMware Cloud Director Replicas

@@ -3,8 +3,8 @@ title: "Support for SAP HANA System Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_hana_replication.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Support for SAP HANA System Replication

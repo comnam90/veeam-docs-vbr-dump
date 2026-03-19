@@ -3,8 +3,8 @@ title: "Short-Term Retention Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_policy_hv.html"
-last_updated: "10/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Short-Term Retention Policy
