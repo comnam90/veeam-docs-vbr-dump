@@ -3,8 +3,8 @@ title: "Instant Recovery to VMware vSphere"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Instant Recovery to VMware vSphere
@@ -38,9 +38,10 @@ You can also recover VMware vSphere VM data directly from storage snapshots.
 * Backups of Microsoft Azure virtual machines created by [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)
 * Backups of Google Compute Engine VM instances created by [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)
 
-* Backups of oVirt VMs created by [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
+* Backups of oVirt VMs created by [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
 * Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Scale Computing HyperCore VMs created by [Veeam Plug-In for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2)
+* Backups of Scale Computing HyperCore VMs created by [Veeam Plug-in for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2)
+* Backups of HPE Morpheus VM Essentials VMs created by [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
 
 \* - Available on Microsoft Windows-based backup server.
 
