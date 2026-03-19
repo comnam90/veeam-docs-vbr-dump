@@ -3,19 +3,20 @@ title: "VBRProtectionGroupUnixPackage"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrprotectiongroupunixpackage.html"
-last_updated: "5/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VBRProtectionGroupUnixPackage
 
 
-Contains Veam Agent for Unix packages details.
+Contains Veeam Agent for Unix packages details.
+
+Properties
 
 Properties
 
 | Property | Type | Description |
-| --- | --- | --- |
 | PackageName | String | Unix package name. |
 
 Related Command
