@@ -3,8 +3,8 @@ title: "Get-VBRFCDInstantRecoveryInfo"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrfcdinstantrecoveryinfo.html"
-last_updated: "2/28/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRFCDInstantRecoveryInfo
@@ -30,8 +30,9 @@ This cmdlet returns details on the mounting of virtual disks that are recovered 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Session | Specifies a session that is running to perform an FCD recovery. The cmdlet will return details on mounting of the virtual disks that are recovered within this session. | Accepts the VBRFCDInstantRecoverySession object. To create this object, run the [Get-VBRFCDInstantRecoverySession](get-vbrfcdinstantrecoverysession.md) cmdlet. | True | 0 | False |
 
 <CommonParameters>
@@ -55,7 +56,7 @@ This example shows how to get details on the mounting of the virtual disks that 
 Perform the following steps:
 
 1. Run the [Get-VBRFCDInstantRecoverySession](get-vbrfcdinstantrecoverysession.md) cmdlet. Specify the Id parameter value. Save the result to the $session variable.
-2. Run the Get-VBRFCDInstantRecoveryInfo cmdlet. Set the $session varialbe as the Session parameter value.
+2. Run the Get-VBRFCDInstantRecoveryInfo cmdlet. Set the $session variable as the Session parameter value.
 
 Related Commands
 
