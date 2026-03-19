@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_limitations.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -18,6 +18,7 @@ When configuring Veeam Plug-in for Scale Computing HyperCore, consider the follo
 
 * Veeam Plug-in for Scale Computing HyperCore does not support user accounts with OpenID Connect authentication to access the Scale Computing HyperCore cluster.
 * The Scale Computing HyperCore cluster must be able to establish a direct IP connection to the backup server. Connections through NAT gateways are not supported.
+
 * Veeam Plug-in for Scale Computing HyperCore does not support the IPv6 protocol.
 
 * After you make changes to your Scale Computing HyperCore environment (for example, you migrate a VM between cluster nodes), these changes may not appear in Veeam Backup & Replication immediately — the data synchronization process between the backup server and the Scale Computing HyperCore cluster may take up to 15 minutes to complete. You can speed up the data synchronization process by [rescanning the Scale Computing HyperCore cluster](sch_server_rescan.md).
@@ -47,7 +48,9 @@ When protecting Scale Computing HyperCore resources, consider the following:
 * You cannot assign locations to Scale Computing HyperCore clusters in Veeam Backup & Replication. For that reason, job statistics do not include information on Scale Computing HyperCore VM data migration between different geographic regions.
 * Backup move is not supported for the Scale Computing HyperCore backups.
 * Retention of VeeamZIP backups is not supported.
-* Application-aware processing is not supported.
+
+* In Veeam Plug-in for Scale Computing HyperCore v2, application-aware processing is not supported.
+* Backup job encryption is not supported.
 
 Restore
 
@@ -57,7 +60,6 @@ When restoring Scale Computing HyperCore resources, consider the following:
 * If you restore the VM from a backup stored in the archive tier of the scale-out backup repository, you must first retrieve backup data as described in section [Retrieving Backup Files](retrieval_job_launch.md). Note that you cannot perform Entire VM restore from backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent. For those backups, you can perform Instant Recovery.
 * If you restore the VM from a backup of a VMware, Hyper-V, oVirt KVM or Proxmox VE VM or from a backup created by Veeam Agent, a restored VM may have network connection problems. To resolve the issue, install Scale Guest Tools on the restored VM.
 * You cannot restore VMs from backups stored in external repositories, Veeam Cloud Connect repositories, and on tapes.
-* You can use Veeam Backup Enterprise Manager to file-level restore guest OS files of Scale Computing HyperCore VMs and manage Scale Computing HyperCore VM backup copy jobs. All other operations are not supported.
 * [SureBackup](surebackup_recovery_verification_hv.md) for backups created by Veeam Plug-in for Scale Computing HyperCore is supported in the Backup verification and content scan only verification mode.
 
 
