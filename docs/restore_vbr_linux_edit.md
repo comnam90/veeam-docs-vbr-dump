@@ -3,8 +3,8 @@ title: "Step 2. Edit Answer File"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_linux_edit.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Edit Answer File
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 After you generate the answer file, you can edit it:
 
-1. Open Veeam Backup & Replication Console.
+1. Open the Veeam Backup & Replication console.
 2. In the inventory pane, open the Files view.
 3. Select and right-click the answer file, then click Edit.
 4. Specify and edit the necessary parameter values.
@@ -30,8 +30,8 @@ Configuration File Parameters
 
 | Parameter | Description | Required |
 | MODE | Specifies the restore mode.  Supported values: restore or migrate. | No |
-| CONFIGURATION\_FILE | Specifies a full path to the configuration backup file.  Supported values:   * /var/lib/veeam/backup/filename.bco for local backups. * VeeamConfigBackup\VM\File.bco for repository backups. | Yes |
-| REPOSITORY\_NAME | Specifies Veeam Backup & Replication repository name where the configuration backup file is stored. If you do not specify this parameter, empty name will be used.  Supported values: String. | No |
+| CONFIGURATION\_FILE | Specifies the full path to the configuration backup file.  Supported values:   * /var/lib/veeam/backup/filename.bco for local backups. * VeeamConfigBackup\VM\File.bco for repository backups. | Yes |
+| REPOSITORY\_NAME | Specifies the Veeam Backup & Replication repository name where the configuration backup file is stored. If you do not specify this parameter, empty name will be used.  Supported values: String. | No |
 | BACKUP\_PASSWORD | Specifies the password to decrypt the configuration backup file.  Supported values: String. | No |
 | NETWORK\_USER | Specifies the user account for the network share.  Supported values: domain\username. | No |
 | NETWORK\_PASSWORD | Specifies the password for the network share.  Supported values: String. | No |
@@ -39,9 +39,9 @@ Configuration File Parameters
 | DATABASE\_SERVER | Specifies the database server and instance on which the configuration database will be deployed. If you do not specify this parameter, product configuration is used.  Supported values:   * Microsoft SQL Server: MSSQLSERVER\DBINSTANCE:PORT. * PostgreSQL Server: POSTGRESQLSERVER:PORT. | No |
 | SQLSERVER\_DATABASE | Specifies the name for the configuration database.  Supported values: String.  Default: VeeamBackup. | No |
 | SQLSERVER\_AUTHENTICATION | Specifies the authentication mode to connect to the database server where the Veeam Backup & Replication configuration database will be deployed. If you do not specify this parameter, product configuration is used.  Supported values:   * Windows authentication: 0. * SQL native authentication: 1.   Default: 0. | No |
-| VBR\_SQLSERVER\_USERNAME | Specifies a LoginID to connect to the SQL server in the native authentication mode. If you do not specify this parameter, product configuration is used.  Supported values: String.  Note: The parameter is required if the SQLSERVER\_AUTHENTICATION parameter value is 1. | No |
-| VBR\_SQLSERVER\_PASSWORD | Specifies a password to connect to the SQL server in the native authentication mode. If you do not specify this parameter, product configuration is used.  Supported values: String.  Note: The parameter is required if you specify the VBR\_SQLSERVER\_USERNAME parameter. | No |
-| PG\_DUMP\_PATH | Specifies a path to the pg\_dump.exe file.  Supported values: String. | No |
+| VBR\_SQLSERVER\_USERNAME | Specifies the LoginID to connect to the SQL server in the native authentication mode. If you do not specify this parameter, product configuration is used.  Supported values: String.  Note: The parameter is required if the SQLSERVER\_AUTHENTICATION parameter value is 1. | No |
+| VBR\_SQLSERVER\_PASSWORD | Specifies the password to connect to the SQL server in the native authentication mode. If you do not specify this parameter, product configuration is used.  Supported values: String.  Note: The parameter is required if you specify the VBR\_SQLSERVER\_USERNAME parameter. | No |
+| PG\_DUMP\_PATH | Specifies the path to the pg\_dump.exe file.  Supported values: String. | No |
 | RESTORE\_BACKUPS | Defines that Veeam Backup & Replication will restore backup and replica restore points catalog.  Supported values:   * No: 0. * Yes: 1.   Default: 1. | No |
 | RESTORE\_SESSIONS | Defines that Veeam Backup & Replication will restore sessions history.  Supported values:   * No: 0. * Yes: 1.   Default: 0. | No |
 | BACKUP\_EXISTING\_DATABASE | Defines that the current database will be backed up.  Supported values:   * No: 0. * Yes: 1.   Default: 0.  The created database backup is stored by the following path: /var/log/VeeamBackup/Utils/PostgreSQLBackup. | No |
