@@ -3,8 +3,8 @@ title: "Set-VBRAmazonS3CompatibleRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazons3compatiblerepository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRAmazonS3CompatibleRepository
@@ -37,8 +37,9 @@ This cmdlet modifies settings for S3 compatible object storage added as a backup
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Repository | Specifies an S3 compatible object storage that you want to modify. | Accepts the VBRAmazonS3Repository object. To create this object, run the [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies a name of an S3 compatible object storage. The cmdlet will add object storage with this name. | String | False | Named | False |
 | Description | Specifies a description of an S3 compatible object storage. The cmdlet will add object storage with this description. | String | False | Named | False |
@@ -54,7 +55,7 @@ Parameters
 | ImmutabilityPeriod | For the EnableBackupImmutability parameter.  Defines the immutability period in days.  Default: 30 days.  Maximum: 999 days. | Int32 | False | Named | False |
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure.  Default: False. | SwitchParameter | False | Named | False |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int32 | False | Named | False |
 | EnableBucketAutoProvision | For creating multiple child buckets.  Defines that the cmdlet will create multiple child buckets automatically. | SwitchParameter | False | Named | False |
 | MachinesPerBucketLimit | For creating multiple child buckets.  Specifies a number of per-machine backup chains in a sub bucket. The cmdlet will create child buckets according to the amount of per-machine backup chains.  Default: 10. | Int32 | False | Named | False |
