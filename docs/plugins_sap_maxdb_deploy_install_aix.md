@@ -3,8 +3,8 @@ title: "Installing Plug-In on IBM AIX"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_install_aix.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Installing Plug-In on IBM AIX
@@ -27,21 +27,21 @@ Using the Veeam Backup & Replication installation disk
 
 You can download the latest version of the Veeam Backup & Replication installation image from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html).
 
-1. In the installation disk folder, go to Plugins\SAP MaxDB\AIX\ppc64 and find the VeeamPluginforSAPMaxDB-13.0.1.180-1.aix6.1.ppc.rpm file.
+1. In the installation disk folder, go to Plugins\SAP MaxDB\AIX\ppc64 and find the VeeamPluginforSAPMaxDB-13.0.2.2067.aix6.1.ppc.rpm file.
 
-1. Upload the Veeam Plug-In installation package (VeeamPluginforSAPMaxDB-13.0.1.180-1.aix6.1.ppc.rpm) to the IBM AIX server where the target SAP MaxDB database is deployed.
+1. Upload the Veeam Plug-In installation package (VeeamPluginforSAPMaxDB-13.0.2.2067.aix6.1.ppc.rpm) to the IBM AIX server where the target SAP MaxDB database is deployed.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for SAP MaxDB from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginforSAPMaxDB-13.0.1.180-1\AIX\ppc64 directory, find the VeeamPluginforSAPMaxDB-13.0.1.180-1.aix6.1.ppc.rpm file.
-3. Upload the Veeam Plug-In installation package (VeeamPluginforSAPMaxDB-13.0.1.180-1.aix6.1.ppc.rpm) to the IBM AIX server where the target SAP MaxDB database is deployed.
+2. Open the setup archive, in the \VeeamPluginforSAPMaxDB-13.0.2.2067\AIX\ppc64 directory, find the VeeamPluginforSAPMaxDB-13.0.2.2067.aix6.1.ppc.rpm file.
+3. Upload the Veeam Plug-In installation package (VeeamPluginforSAPMaxDB-13.0.2.2067.aix6.1.ppc.rpm) to the IBM AIX server where the target SAP MaxDB database is deployed.
 
 1. Install the plug-in from package with root privileges. Make sure the root user has privileges to add the PKG file.
 
 |  |
 | --- |
-| rpm -i VeeamPluginforSAPMaxDB-13.0.1.180-1.aix6.1.ppc.rpm |
+| rpm -i VeeamPluginforSAPMaxDB-13.0.2.2067.aix6.1.ppc.rpm |
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Product](plugins_sap_maxdb_deploy_configure.md).
 
