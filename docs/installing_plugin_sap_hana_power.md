@@ -3,8 +3,8 @@ title: "Installing Plug-In for Linux on Power"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installing_plugin_sap_hana_power.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Installing Plug-In for Linux on Power
@@ -34,20 +34,20 @@ Using the Veeam Backup & Replication installation image
 
 You can download the latest version of the Veeam Backup & Replication installation image from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html).
 
-1. Open the mounted image, go to the /Plugins/SAP HANA/x64 directory and find the VeeamPluginforSAPHANA-13.0.1.180-1.ppc64le.rpm file.
-2. Upload the VeeamPluginforSAPHANA-13.0.1.180-1.ppc64le.rpm package to the SAP HANA server.
+1. Open the mounted image, go to the /Plugins/SAP HANA/x64 directory and find the VeeamPluginforSAPHANA-13.0.2.2067.ppc64le.rpm file.
+2. Upload the VeeamPluginforSAPHANA-13.0.2.2067.ppc64le.rpm package to the SAP HANA server.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for SAP HANA from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginForSAPHANA-13.0.1.180\ppc64le folder, find the VeeamPluginforSAPHANA-13.0.1.180-1.ppc64le.rpm package.
-3. Upload the VeeamPluginforSAPHANA-13.0.1.180-1.ppc64le.rpm package to the SAP HANA server.
+2. Open the setup archive, in the \VeeamPluginForSAPHANA-13.0.2.2067\ppc64le folder, find the VeeamPluginforSAPHANA-13.0.2.2067.ppc64le.rpm package.
+3. Upload the VeeamPluginforSAPHANA-13.0.2.2067.ppc64le.rpm package to the SAP HANA server.
 
 1. To install Veeam Plug-In, run the following command:
 
 |  |
 | --- |
-| rpm -i VeeamPluginforSAPHANA-13.0.1.180-1.ppc64le.rpm |
+| rpm -i VeeamPluginforSAPHANA-13.0.2.2067.ppc64le.rpm |
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In for SAP HANA](configure_sap_hana_plugin.md).
 
@@ -63,14 +63,14 @@ Using the Veeam Backup & Replication installation image
 
 You can download the latest version of the Veeam Backup & Replication installation image from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html).
 
-1. Open the mounted image, in the \VeeamPluginForSAPHANA-13.0.1.180-1\ppc64le folder, find the VeeamPluginforSAPHANA.tar.gz setup archive.
+1. Open the mounted image, in the \VeeamPluginForSAPHANA-13.0.2.2067\ppc64le folder, find the VeeamPluginforSAPHANA.tar.gz setup archive.
 
 1. Upload the VeeamPluginforSAPHANA.tar.gz setup archive to the SAP HANA server.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for SAP HANA from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginForSAPHANA-13.0.1.180\ppc64le folder, find the VeeamPluginforSAPHANA.tar.gz setup archive.
+2. Open the setup archive, in the \VeeamPluginForSAPHANA-13.0.2.2067\ppc64le folder, find the VeeamPluginforSAPHANA.tar.gz setup archive.
 3. Upload VeeamPluginforSAPHANA.tar.gz file to the SAP HANA server.
 
 1. Install Veeam Plug-In. To do this, run the following commands:
