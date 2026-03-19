@@ -3,8 +3,8 @@ title: "Importing Certificates from Certificate Store"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_import_ssl.html"
-last_updated: "4/17/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Importing Certificates from Certificate Store
@@ -21,7 +21,10 @@ To select a certificate from the Microsoft Windows Certificate store:
 
 1. Open the Cloud Connect view.
 2. Click the Cloud Connect node in the inventory pane and click Manage Certificates in the working area. You can also right-click the Cloud Connect node in the inventory pane and select Manage certificates.
-3. At the Certificate Type step of the wizard, choose Select an existing certificate from the certificate store.
+
+[![Cloud Connect View](images/cloud_connect_view.webp)](images/cloud_connect_view.webp "Cloud Connect View")
+
+1. At the Certificate Type step of the wizard, choose Select an existing certificate from the certificate store.
 
 ![Selecting Existing Certificates from Certificate Store](images/ssl_ca_mode.webp)
 
