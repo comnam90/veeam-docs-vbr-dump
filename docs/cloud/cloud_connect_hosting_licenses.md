@@ -3,8 +3,8 @@ title: "Rental Veeam Backup & Replication License"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_hosting_licenses.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Rental Veeam Backup & Replication License
@@ -35,7 +35,7 @@ To provide more flexibility and introduce a trial period for tenant workload pro
 
 New workloads are counted separately from existing workloads and do not consume points in the license during the month when they were introduced. On the first day of the new month, the number of points related to new workloads is added to the total number of used points, and the new points counter is reset. New workloads are included in a [license usage report](sp_license_usage_report.md) for informational purposes.
 
-For more information on new workloads in the context of Veeam Rental Licencing, see the [Delayed License Consumption for New Workloads and Users](https://helpcenter.veeam.com/docs/vcsp/refguide/reducing_license_usage.html#delayed-license-consumption-for-new-workloads-and-users) in the Veeam Rental Licensing and Usage Reporting Guide.
+For more information on new workloads in the context of Veeam Rental Licensing, see the [Delayed License Consumption for New Workloads and Users](https://helpcenter.veeam.com/docs/vcsp/refguide/reducing_license_usage.html#delayed-license-consumption-for-new-workloads-and-users) in the Veeam Rental Licensing and Usage Reporting Guide.
 
 License Usage with Multiple Veeam Backup Servers
 
