@@ -3,8 +3,8 @@ title: "How Immutability Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hiw_immutability_os.html"
-last_updated: "1/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/18/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How Immutability Works
@@ -73,11 +73,11 @@ Scenario 1. Job Retention Longer Than Minimum Immutability Period
 
 In this scenario, the retention is configured as follows:
 
-* Job retention: 7 days
-* The minimum immutability period: 3 days
+* Job retention: 13 days
+* The minimum immutability period: 7 days
 * Block Generation: 10 days
 
-Actual retention: 17 days. If the backup is run on 07/01/2025, the VBK file and any blocks that are not extended will be deleted on 07/18/2025.
+Actual retention: 23 days. If the backup is run on 07/01/2025, the VBK file and any blocks that are not extended will be deleted on 07/24/2025.
 
 Scenario 2. Job Retention Shorter Than Immutability Period
 
