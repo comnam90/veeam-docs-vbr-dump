@@ -1,13 +1,13 @@
 ---
-title: "Connecting to a Remote Microsoft Entra ID Repository"
+title: "Connecting to Remote Microsoft Entra ID Repository"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_remote_repository_environment.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Connecting to a Remote Microsoft Entra ID Repository
+# Connecting to Remote Microsoft Entra ID Repository
 
 
 A Microsoft Entra ID backup repository is a PostgreSQL instance where Veeam Backup for Microsoft Entra ID stores backups of protected Microsoft Entra ID tenants. By default, Veeam Backup & Replication saves all backed-up data to the local PostgreSQL instance installed on the backup server. To change this behavior, you can connect to a remote PostgreSQL instance and use it as the target backup repository in your Windows or Linux deployment of Veeam Backup & Replication. Consider that Veeam Backup for Microsoft Entra ID supports only [PostgreSQL password authentication](https://www.postgresql.org/docs/current/auth-password.html) to connect to remote Microsoft Entra ID backup repositories.
