@@ -3,8 +3,8 @@ title: "Dell Data Domain"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_dd.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/18/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Dell Data Domain
@@ -73,6 +73,13 @@ Encryption can also affect the backup size: the size of a backup can be larger t
 * If you connect to an Dell Data Domain backup repository over Fibre Channel, you must explicitly define a gateway server to communicate with Dell Data Domain. As a gateway server, you must use a Microsoft Windows or Linux server that is added to the backup infrastructure and has access to the Dell Data Domain backup repository over Fibre Channel.
 
 * During backup repository rescan, Veeam Backup & Replication detects if the hard stream limit is set for a storage unit, and displays this information in backup repository rescan statistics. If the hard stream limit is exceeded when Veeam Backup & Replication runs tasks against the backup repository, Veeam Backup & Replication will fail to create new I/O streams.
+
+* For Dell Data Domain storage systems used as [performance extents](backup_repository_sobr_extents.md), you must specify the [maximum allowed number of concurrent tasks](dsa_repository_repository.md#concurrenttasks).
+
+|  |
+| --- |
+| Note |
+| The total number of concurrent tasks for all Dell Data Domain storage systems used as performance extents must not exceed the soft limit for [data read and write speed](limiting_ingestion.md). |
 
 Immutability
 
