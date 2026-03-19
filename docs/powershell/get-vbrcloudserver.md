@@ -3,8 +3,8 @@ title: "Get-VBRCloudServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudserver.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRCloudServer
@@ -48,8 +48,9 @@ This cmdlet returns cloud hosts that are allocated by a service provider.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the array of the host names you want to get. | String[] | False | Named | False |
 | CloudProvider | Specifies the array of the cloud providers. The cmdlet will return the hosts that are provided to you by these providers. | Accepts the [VBRCloudProvider[]](vbrcloudprovider.md) object. To get this object, run the [Get-VBRCloudProvider](get-vbrcloudprovider.md) cmdlet. | False | Named | True (ByValue, |
 | Id | Specifies the array of the IDs of the host you want to get. The cmdlet will return the hosts with these IDs. | Guid[] | False | Named | False |
@@ -74,7 +75,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to return cloud servers of the server provider with the 104.45.95.227 IP address.  |  | | --- | | $cloudProvider = Get-VBRCloudProvider -Name "104.45.95.227"  Get-VBRCloudServer -CloudProvider $cloudProvider |  Perform the following steps:   1. Run the [Get-VBRCloudProvider](get-vbrcloudprovider.md) cmdlet. Specify the Name parameter value. Save the result to the $cloudProvider variable. 2. Run the Get-VBRCloudServer cmdket. Set the $cloudProvider variable as the CloudProvider parameter value. |
+| This example shows how to return cloud servers of the server provider with the 104.45.95.227 IP address.  |  | | --- | | $cloudProvider = Get-VBRCloudProvider -Name "104.45.95.227"  Get-VBRCloudServer -CloudProvider $cloudProvider |  Perform the following steps:   1. Run the [Get-VBRCloudProvider](get-vbrcloudprovider.md) cmdlet. Specify the Name parameter value. Save the result to the $cloudProvider variable. 2. Run the Get-VBRCloudServer cmdlet. Set the $cloudProvider variable as the CloudProvider parameter value. |
 
 Related Commands
 
