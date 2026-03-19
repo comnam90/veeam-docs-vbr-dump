@@ -3,8 +3,8 @@ title: "New Features"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new_features_12.3.1.html"
-last_updated: "6/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New Features
@@ -16,7 +16,7 @@ Backup Infrastructure
 
 Object Storage Repositories
 
-In this version, you can run the [Get-VBRVeeamDataCloudAssignedVault](get-vbrveeamdatacloudassignedvault.md) cmdelt to add Veeam Data Cloud Vault.
+In this version, you can run the [Get-VBRVeeamDataCloudAssignedVault](get-vbrveeamdatacloudassignedvault.md) cmdlet to add Veeam Data Cloud Vault.
 
 Backup
 
