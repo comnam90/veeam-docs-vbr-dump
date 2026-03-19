@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_considerations.html"
-last_updated: "2/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -30,7 +30,7 @@ This does not apply to restore from Veeam Plug-In for Microsoft SQL Server and i
 * You can recover your data from a CDP replica if its CDP policy is currently running. During recovery, the CDP policy does not create new long-term restore points and does not delete existing ones. Short-term restore points are still created.
 * You cannot restore application items from a CDP replica in parallel with guest OS file restore, SureReplica, and failover.
 
-* When using image-level backups, Veeam Explorer for Microsoft SQL Server does show or support recovery of system databases (master, model, msdb). To recover system databases from image-level backups, use guest OS file restore. For more information, see [Guest OS File Restore](guest_file_recovery.md). Note that you can explore and restore these databases with Veeam Explorer for Microsoft SQL Server from backups created with Veeam Plug-In for Microsoft SQL Server.
+* When using image-level backups, Veeam Explorer for Microsoft SQL Server does not show or support recovery of system databases (master, model, msdb). To recover system databases from image-level backups, use guest OS file restore. For more information, see [Guest OS File Restore](guest_file_recovery.md). Note that you can explore and restore these databases with Veeam Explorer for Microsoft SQL Server from backups created with Veeam Plug-In for Microsoft SQL Server.
 * To connect to machines with Microsoft SQL Server that are running Microsoft OLE DB Driver 19 and operating in the Strict encryption mode, go to the necessary Veeam Explorer for Microsoft SQL Server Config.xml file and add the following XML code:
 
 |  |

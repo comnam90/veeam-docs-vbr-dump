@@ -3,8 +3,8 @@ title: "Start-VBRViReplicaFailback"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvireplicafailback.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRViReplicaFailback
@@ -57,8 +57,9 @@ Run the [Stop-VBRViReplicaFailback](stop-vbrvireplicafailback.md) cmdlet to undo
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies the replica restore point. The cmdlet uses this restore point to identify the replica you want to fail back. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, |
 | Complete | Defines that the failback will be committed. | SwitchParameter | False | Named | False |
 | StoragePolicyAction | Specifies the strategy for selecting storage policy profile in case the storage profile of the backed up VM differs from the profile of the original VM.   * Current: the restored VM will be subscribed to the same profile as in backup (if such profile still exists) or to the profile to which the original VM is subscribed (if profile as in backup was removed). * Default: the restored VM will be subscribed to the profile that is set as default for the target datastore. * Stored: the restored VM will be subscribed to the profile as in backup (if such profile still exists). | VBRStoragePolicyAction | False | Named | False |
@@ -100,7 +101,7 @@ Examples
 | --- | --- |
 | This example shows how to fail back to the original VM. The VM will fail back with the following parameters:   * The storage policy is set to Current. * The cmdlet will power the VM on after failback. * The cmdlet will perform failback using changed block tracking data.   |  | | --- | | $restorepoint = Get-VBRRestorePoint -Name "WebServer\_replica" | Sort-Object $\_.creationtime -Descending | Select -First 1  Start-VBRViReplicaFailback -RestorePoint $restorepoint -StoragePolicyAction Current -PowerOn -QuickRollback |  Perform the following steps:   1. Run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. Specify the Name parameter value. Filter restore points with Sort-Object method by the creationtime property to get the most recent one. Save the result to the $restorepoint variable. 2. Run the Start-VBRViReplicaFailback cmdlet. Specify the following settings:  * Set the $restorepoint variable as the RestorePoint parameter value. * Set the Current value as the StoragePolicyAction parameter value. * Provide the PowerOn and QuickRollback parameters. |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Performing Failback to VM Reatored in New Location
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Performing Failback to VM Restored in New Location
 
 |  |  |
 | --- | --- |

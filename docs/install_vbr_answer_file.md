@@ -3,8 +3,8 @@ title: "Installing Veeam Backup & Replication in Silent Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_answer_file.html"
-last_updated: "11/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Installing Veeam Backup & Replication in Silent Mode
@@ -56,8 +56,9 @@ Configuration Parameters
 
 The configuration file contains the following parameters:
 
+Configuration Parameters
+
 | Parameter | Required? | Default | Description |
-| --- | --- | --- | --- |
 | ACCEPT\_EULA | Yes |  | Specify 1 to accept the Veeam license agreement. |
 | ACCEPT\_LICENSING\_POLICY | Yes |  | Specify 1 to accept the Veeam licensing policy. |
 | ACCEPT\_THIRDPARTY\_LICENSES | Yes |  | Specify 1 to accept the license agreement for 3rd party components that Veeam incorporates. |
@@ -83,12 +84,12 @@ The configuration file contains the following parameters:
 | VBR\_IRCACHE | No | C:\ProgramData\Veeam\Backup\IRCache | Specify the path to the folder where the instant recovery cache will be stored. If you do not specify this parameter, a path is selected based on the free space across all available disks. |
 | VBR\_CHECK\_UPDATES | No | 1 | Specify 1 to automatically check for new product versions and updates. Specify 0 if you do not want Veeam Backup & Replication to check for updates automatically. |
 | AHV\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for Nutanix AHV. Specify 0 if you do not want to install the plugin. |
-| KVM\_INSTALL | No | 1 | Specify 1 if you want to install oVirt KVM Plug-In for Veeam Backup & Replication. Specify 0 if you do not want to install the plugin. |
+| KVM\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for oVirt KVM. Specify 0 if you do not want to install the plugin. |
 | PVE\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for Proxmox VE. Specify 0 if you do not want to install the plugin. |
-| SCP\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for Scale Computing HyperCore. Specify 0 if you do not want to install the plugin. |
-| AWS\_INSTALL | No | 1 | Specify 1 if you want to install AWS Plug-In for Veeam Backup & Replication. Specify 0 if you do not want to install the plugin. |
-| AZURE\_INSTALL | No | 1 | Specify 1 if you want to install Microsoft Azure Plug-In for Veeam Backup & Replication. Specify 0 if you do not want to install the plugin. |
-| KASTEN\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Kasten Plug-In for Veeam Backup & Replication. Specify 0 if you do not want to install the plugin. |
+| SCP\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-in for Scale Computing HyperCore. Specify 0 if you do not want to install the plugin. |
+| AWS\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for AWS. Specify 0 if you do not want to install the plugin. |
+| AZURE\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for Microsoft Azure. Specify 0 if you do not want to install the plugin. |
+| KASTEN\_INSTALL | No | 1 | Specify 1 if you want to install Veeam Plug-In for Kasten. Specify 0 if you do not want to install the plugin. |
 | REBOOT\_IF\_REQUIRED | No | 0 | Specify 1 if you want to reboot the machine where you install Veeam Backup & Replication after the installation finishes. Specify 0 if you do not want to reboot the machine. |
 
 Note that you must specify "1" in ACCEPT\_EULA, ACCEPT\_LICENSING\_POLICY, ACCEPT\_THIRDPARTY\_LICENSES and ACCEPT\_REQUIRED\_SOFTWARE parameters to proceed with the installation.
@@ -97,8 +98,9 @@ Installation Result Codes
 
 The installation result is written into the installation log file located at your selected log folder. It may show one of the following result codes:
 
+Installation Result Codes
+
 | Result Code | Result |
-| --- | --- |
 | 0 | success |
 | 1603 | install failure |
 | 3010 | reboot required |
@@ -108,8 +110,9 @@ Installation Error Codes
 
 The installation error codes accompanied by their detailed description are displayed in the command line dialog. They can also be found in the UnattendedInstallationResult\_%DATE%\_%TIME%.xml file in the log folder (by default, C:\ProgramData\Veeam\Setup\Temp). You can use such an XML file for retrieving installation results from the scripts or utilities that are used to run the installation. The error message may show one of the following error codes:
 
+Installation Error Codes
+
 | Error Code | Description |
-| --- | --- |
 | 0 | Installation has been completed successfully. |
 | 1 | Product is already installed. |
 | 2 | Uninstallation has been completed successfully. |

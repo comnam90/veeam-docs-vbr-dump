@@ -3,8 +3,8 @@ title: "Disk Publishing (Data Integration API)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Disk Publishing (Data Integration API)
@@ -37,6 +37,8 @@ You can publish disks from the following types of backups:
 
 * Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](proxmox_ve.md)
 * Backups of Scale Computing HyperCore VMs created by [Veeam Plug-in for Scale Computing HyperCore](sc_hypercore.md)
+
+* Backups of HPE Morpheus VM Essentials VMs created by [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
 
 \* - Available on Microsoft Windows-based backup server.​
 

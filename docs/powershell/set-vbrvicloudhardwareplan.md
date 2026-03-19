@@ -3,8 +3,8 @@ title: "Set-VBRViCloudHardwarePlan"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrvicloudhardwareplan.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRViCloudHardwarePlan
@@ -39,8 +39,9 @@ This cmdlet modifies settings of an existing hardware plan.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | HardwarePlan | Specifies the hardware plan you want to modify. | Accepts the [VBRViCloudHardwarePlan](vbrvicloudhardwareplan.md) object. To get this object, run the [Get-VBRCloudHardwarePlan](get-vbrcloudhardwareplan.md) cmdlet. | True | Named | True (ByValue, |
 | Name | Specifies the name you want to assign to the hardware plan. | String | True | Named | False |
 | Description | Specifies the description of the hardware plan. | String | False | Named | False |
@@ -76,7 +77,7 @@ Examples
 | --- | --- |
 | This example shows how to modify the CPU and memory quotas of a hardware plan named VMware Gold.  |  | | --- | | $hardwareplan = Get-VBRCloudHardwarePlan -Name "VMware Silver"  Set-VBRViCloudHardwarePlan -HardwarePlan $hardwareplan -CPU 5000 -Memory 4000 |  Perform the following steps:   1. Run the [Get-VBRCloudHardwarePlan](get-vbrcloudhardwareplan.md) cmdlet. Specify the Name parameter value. Save the result to the $hardwareplan variable. 2. Run the Set-VBRViCloudHardwarePlan cmdlet. Set the $hardwareplan variable as the HardwarePlan parameter value. Specify the CPU and the Memory parameter values. |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Modifying Harware Plan to Add More Cloud Storage
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Modifying Hardware Plan to Add More Cloud Storage
 
 |  |  |
 | --- | --- |

@@ -3,8 +3,8 @@ title: "Start-VBRViInstantRecoveryDiskMigration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantrecoverydiskmigration.html"
-last_updated: "3/1/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRViInstantRecoveryDiskMigration
@@ -35,15 +35,16 @@ This cmdlet publish VM virtual disks to the production environment. To publish t
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstantRecovery | Specifies an Instant VM Disc Recovery session. The cmdlet will start quick migration of VM virtual discs that are recovered during this session. | Accepts the InstantRecovery object. To create this object, run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet. | True | 0 | True (ByValue, |
 | Datastore | Specifies a datastore. The cmdlet will publish VM virtual disks to this datastore. | Accepts the following types of objects:   * The CViDatastoreItem object. To get this object, run the [Find-VBRViDatastore](find-vbrvidatastore.md) cmdlet. * The CViDatastoreCluster object. To create this object, run the [Find-VBRViDatastoreCluster](find-vbrvidatastorecluster.md) cmdlet. | False | Named | False |
-| DiskMigrationMappingRule | Specifies an array of mapping settings of VM virual disks. The cmdlet will publish the recovered VM virual disks to the datastores that you define in these mapping settings.  Provide this parameter to define mapping settings for multiple VM virtual disks. | Accepts the VBRViDiskMigrationRule[] object. To create this object, run the [New-VBRViDiskMigrationMappingRule](new-vbrvidiskmigrationmappingrule.md) cmdlet. | False | Named | False |
+| DiskMigrationMappingRule | Specifies an array of mapping settings of VM virtual disks. The cmdlet will publish the recovered VM virtual disks to the datastores that you define in these mapping settings.  Provide this parameter to define mapping settings for multiple VM virtual disks. | Accepts the VBRViDiskMigrationRule[] object. To create this object, run the [New-VBRViDiskMigrationMappingRule](new-vbrvidiskmigrationmappingrule.md) cmdlet. | False | Named | False |
 | StoragePolicy | Specifies the VMware storage policy profile that must be applied to the restored virtual disks. | Accepts the VBRViStoragePolicy object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | SourceProxy | Specifies an array of the source backup proxies that you want to use as source backup proxies. | Accepts the CViProxy[] object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | TargetProxy | Specifies an array of the target backup proxies that you want to use as target backup proxies. | Accepts the CViProxy[] object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
-| UseDataTransportEngine | Defines that the cmdet will enable the data transport engine, | SwitchParameter | False | Named | False |
+| UseDataTransportEngine | Defines that the cmdlet will enable the data transport engine, | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will perform VM restore even if the geographic location of the repository where VM backups reside and the target host location does not match. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
@@ -63,11 +64,11 @@ This example shows how to publish VM virtual disks to the production environment
 
 |  |
 | --- |
-| $sesson = Get-VBRInstantRecovery  $backup = Get-VBRBackup -Name "Winsrv4515"  $restorepoint = Get-VBRRestorePoint -Backup $backup  $disks = Get-VBRViVirtualDevice -RestorePoint $restorepoint[3]  $mapping = New-VBRViDiskMigrationMappingRule -TargetVirtualDevice $disks  Start-VBRViInstantRecoveryDiskMigration -InstantRecovery $sesson -DiskMigrationMappingRule $mapping -Force -RunAsync |
+| $session = Get-VBRInstantRecovery  $backup = Get-VBRBackup -Name "Winsrv4515"  $restorepoint = Get-VBRRestorePoint -Backup $backup  $disks = Get-VBRViVirtualDevice -RestorePoint $restorepoint[3]  $mapping = New-VBRViDiskMigrationMappingRule -TargetVirtualDevice $disks  Start-VBRViInstantRecoveryDiskMigration -InstantRecovery $session -DiskMigrationMappingRule $mapping -Force -RunAsync |
 
 Perform the following steps:
 
-1. Run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet.  Save the result to the $sesson variable.
+1. Run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet.  Save the result to the $session variable.
 2. Get the mapping settings of VM virtual disks:
 
 * Run the [Get-VBRBackup](get-vbrbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $backup variable.
@@ -80,7 +81,7 @@ The Get-VBRRestorePoint cmdlet will return an array of restore points. Mind the 
 
 1. Run the Start-VBRViInstantRecoveryDiskMigration cmdlet. Specify the following settings:
 
-* Set the $sesson variable as the InstantRecovery parameter value.
+* Set the $session variable as the InstantRecovery parameter value.
 * Set the $mapping variable as the DiskMigrationMappingRule parameter value.
 * Provide the Force parameter.
 * Provide the RunAsync parameter.

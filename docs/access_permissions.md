@@ -3,8 +3,8 @@ title: "Editing Access Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/access_permissions.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Editing Access Permissions
@@ -55,7 +55,7 @@ To manage permissions for S3 compatible object storage, perform the following:
 1. In the [inventory pane](vbr_ui.md), click the Backup Repositories node.
 
 1. In the working area, select the necessary S3 compatible object storage and click Set Access Permissions on the ribbon or right-click the backup repository and select Access permissions. If you do not see the Set Access Permissions button on the ribbon or the Access permissions command is not available in the shortcut menu, press and hold the [Ctrl] key, right-click the backup repository and select Access permissions.
-2. On the Security tab, specify how Veeam Agent or a tenat will access an S3 compatible object storage repository:
+2. On the Security tab, specify how Veeam Agent or a tenant will access an S3 compatible object storage repository:
 
 * Agents share credentials to object storage repository — select this option if you use the direct connection mode to access the S3 compatible object storage repository. In this case, Veeam Agent will use credentials that you specified when added the S3 compatible object storage repository to the backup infrastructure.
 

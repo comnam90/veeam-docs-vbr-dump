@@ -3,8 +3,8 @@ title: "Object Storage Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_repository.html"
-last_updated: "1/15/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Object Storage Repositories
@@ -48,9 +48,9 @@ You can use object storage repositories as target repositories in the following 
 * As target repositories for backups of [Veeam Agent Backup](protect_comp.md).
 
 * As target repositories for backups of oVirt created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7).
-* As target repositories for backups of Scale Computing HyperCore VMs created by [Veeam Plug-In for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2).
+* As target repositories for backups of Scale Computing HyperCore VMs created by [Veeam Plug-in for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2).
 
-* As target repositories for backups of applications running on Kubernetes persistent volumes created by Veeam Kasten Plug-In for Veeam Backup & Replication.
+* As target repositories for backups of applications running on Kubernetes persistent volumes created by Veeam Plug-In for Kasten.
 
 |  |
 | --- |

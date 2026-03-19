@@ -3,8 +3,8 @@ title: "Backup Repositories with Rotated Drives"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_rotated.html"
-last_updated: "3/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Repositories with Rotated Drives
@@ -25,7 +25,7 @@ Backup repositories with rotated drives have the following limitations:
 * NFS backup repositories do not support rotated drives. If you enable the This repository is backed by rotated hard drives setting on the repository, Veeam Backup & Replication will ignore this setting.
 * Scale-out backup repositories do not support rotated drives. If you enable the This repository is backed by rotated hard drives setting on an extent, Veeam Backup & Replication will ignore this setting and will work with such repository as with a standard extent.
 * Repositories with rotated drives are not supported as [archive repositories](unstructured_data_backup.md#backup_repository) for unstructured data backup.
-* [Background retention](background_retention_job.md) doesn't apply to the backups stored on backup repositories with rotated drives. These backup files will not be deleted by the retention job.
+* [Background retention](background_retention_job.md) does not apply to the backups stored on backup repositories with rotated drives. These backup files will not be deleted by the retention job.
 * [For Veeam Cloud Connect users] Veeam Backup & Replication does not support the use of backup repositories with rotated drives as cloud repositories.
 
 In This Section

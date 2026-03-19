@@ -3,8 +3,8 @@ title: "Publish-VBRCloudArchiveRestorePoint"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/publish-vbrcloudarchiverestorepoint.html"
-last_updated: "4/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Publish-VBRCloudArchiveRestorePoint
@@ -46,8 +46,9 @@ This cmdlet retrieves tenant data from archive storage and places them in the ca
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point of tenant backups which you want to retrieve. | Accepts the CCommonOib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | AvailabilityPeriodDays | Specifies a period in days during which the retrieved archive backup files will be available. | Uint32 | True | Named | False |
 | AmazonS3GlacierRetrievalPolicy | Defines the method of data retrieval for Amazon S3 Glacier object storage. You can retrieve data using one of the following method:   * Expedited: Use this method to retrieve archived data within 1-5 minutes. Note that this is the most expensive method. * Standard: Use this method to retrieve archived data within 3-5 hours. * Bulk: Use this method to retrieve archived data within 5-12 hours. | VBRAmazonS3GlacierRetrievalPolicy | True | Named | False |
@@ -63,7 +64,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the VBRCloudArchiveRestorePoint object that contains information on tenant data retieved from archive storage and places them in the capacity extents of scale-out backup repository.
+The cmdlet returns the VBRCloudArchiveRestorePoint object that contains information on tenant data retrieved from archive storage and places them in the capacity extents of scale-out backup repository.
 
 Examples
 

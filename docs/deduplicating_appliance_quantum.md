@@ -3,8 +3,8 @@ title: "Quantum DXi"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_quantum.html"
-last_updated: "2/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Quantum DXi
@@ -40,7 +40,7 @@ For more information and recommendations on working with Quantum DXi, see [this 
 
 Configuration on Quantum DXi Side
 
-Create at least one share on each Quantum DXi appliance. Enable VDMS (Veeam Data Mover Service) for the created share. Leave default compression and deduplication settings for the share. For more information, see [Quantum DXi documentation](http://qsupport.quantum.com/kb/flare/Content/dxi/DXi6900_PDFs/6-68448_Veeam_Installation_Guide.pdf).
+Create at least one share on each Quantum DXi appliance. Enable VDMS (Veeam Data Mover Service) for the created share. Leave default compression and deduplication settings for the share. For more information, see [Quantum DXi documentation](https://qsupport.quantum.com/kb/flare/Content/dxi/Dxi_V5000/Install/Veeam.htm).
 
 |  |
 | --- |
@@ -64,8 +64,9 @@ In the Credentials window, you must specify the SSH port that will be used to co
 
 The port number depends on the number of a Veeam container that you want to use. To see the available containers, go to Configuration -> System -> App Environment.
 
+Configuration on Veeam Backup & Replication Side
+
 |  | Port |
-| --- | --- |
 | Container 1 | 11000 |
 | Container 2 | 12000 |
 | Container 3 | 13000 |
@@ -88,8 +89,9 @@ At the Access step of the wizard, select the added SSH credentials from the drop
 
 The ports differ depending on the container to which you plan to connect.
 
+Configuration on Veeam Backup & Replication Side
+
 |  | Installer Service | Data Mover Service | Data Transfer |
-| --- | --- | --- | --- |
 | Container 1 | 11001 | 11002 | 11003-11999 |
 | Container 2 | 12001 | 12002 | 12003-12999 |
 | Container 3 | 13001 | 13002 | 13003-13999 |

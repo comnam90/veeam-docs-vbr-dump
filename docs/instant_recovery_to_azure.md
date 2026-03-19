@@ -3,8 +3,8 @@ title: "Instant Recovery to Microsoft Azure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_to_azure.html"
-last_updated: "12/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Instant Recovery to Microsoft Azure
@@ -14,7 +14,7 @@ With Instant Recovery to Microsoft Azure, you can immediately recover different 
 
 During recovery, Veeam Backup & Replication runs workloads from compressed and deduplicated backup files. This approach helps improve recovery time objectives (RTO), and minimizes disruption and downtime of production workloads. The workloads are recovered in a matter of minutes.
 
-When you perform Instant Recovery, Veeam Backup & Replication creates dummy VMs and mounts disks of workloads to these VMs directly from backups. The dummy VMs have limited I/O performance. To achive full I/O performance, you must migrate the VMs to the production site.
+When you perform Instant Recovery, Veeam Backup & Replication creates dummy VMs and mounts disks of workloads to these VMs directly from backups. The dummy VMs have limited I/O performance. To achieve full I/O performance, you must migrate the VMs to the production site.
 
 In addition to disaster recovery, you can also use Instant Recovery for testing purposes. Instead of extracting workloads to production storage for regular disaster recovery (DR) testing, you can run a workload directly from a backup file. This allows you to boot the workload and verify that the guest OS and applications function properly. For more information, see [Finalizing Instant Recovery to Microsoft Azure](ir_azure_finalize.md).
 
@@ -37,7 +37,7 @@ You can recover workloads from the following types of backups:
 
 * Backups of Google Compute Engine VM instances created by [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\*
 
-* Backups of oVirt VMs created by [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
+* Backups of oVirt VMs created by [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
 
 * Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
 

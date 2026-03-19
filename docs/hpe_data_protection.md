@@ -3,8 +3,8 @@ title: "Performing Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_data_protection.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Backup
@@ -17,10 +17,11 @@ One backup job can be used to process multiple VMs, but you can back up each VM 
 In This Section
 
 * [Creating Backup Jobs](hpe_backup_job_create.md)
+* [Cloning Backup Jobs](hpe_backup_job_clone.md)
 * [Editing Backup Job Settings](hpe_backup_job_edit.md)
 * [Starting and Stopping Backup Jobs](hpe_backup_job_start.md)
+* [Retrying Jobs](hpe_retrying_jobs.md)
 * [Analyzing Performance Bottlenecks](hpe_backup_job_bottlenecks.md)
-* [Cloning Backup Jobs](hpe_backup_job_clone.md)
 * [Enabling and Disabling Backup Jobs](hpe_backup_job_disable.md)
 * [Deleting Backup Jobs](hpe_backup_job_delete.md)
 * [Creating Active Full Backups](hpe_active_full_create.md)

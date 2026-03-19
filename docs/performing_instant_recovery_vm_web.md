@@ -3,8 +3,8 @@ title: "Performing Instant Recovery to VMware vSphere Using Web UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_instant_recovery_vm_web.html"
-last_updated: "8/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Instant Recovery to VMware vSphere Using Web UI

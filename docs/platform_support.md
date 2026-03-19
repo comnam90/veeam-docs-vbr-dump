@@ -3,8 +3,8 @@ title: "Workloads"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Workloads
@@ -15,7 +15,7 @@ product_version: "13.0.1.1071"
 | Note |
 | The information on this and child pages is valid as of the date of the last page update. |
 
-With Veeam Backup & Replication, you can perform backup and recovery operations for the following assets:
+With Veeam Backup & Replication, you can perform data protection and disaster recovery operations for the following assets:
 
 Workloads
 

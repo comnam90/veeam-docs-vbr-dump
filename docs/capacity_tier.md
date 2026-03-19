@@ -3,14 +3,14 @@ title: "Capacity Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Capacity Tier
 
 
-Capacity tier is an additional tier of storage that can be attached to a scale-out backup repository. Data from the scale-out backup repository performance extents can be transported to the capacity tier for long-term storage. You can use the capacity tier with almost all types of jobs and tasks that Veeam Backup & Replication runs. For a list of unsupported scenarios, see [Limitations for Capacity Tier](capacity_tier_limitations.md).
+Capacity tier is an additional tier of storage that can be attached to a scale-out backup repository. Data from the performance tier can be transported to the capacity tier for long-term storage. You can use the capacity tier with almost all types of jobs and tasks that Veeam Backup & Replication runs. For a list of unsupported scenarios, see [Limitations for Capacity Tier](capacity_tier_limitations.md).
 
 This feature is most useful in the following cases:
 

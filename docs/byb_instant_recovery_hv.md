@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/byb_instant_recovery_hv.html"
-last_updated: "12/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -26,6 +26,8 @@ Before you perform Instant Recovery to Microsoft Hyper-V, consider the following
 * We strongly recommend having one of the following tools installed on workloads that will be restored: dracut, mkinitrd or initramfs. Otherwise, they may not boot after restore.
 * Open the /etc/fstab/ file and check that all file systems are mounted using UUID. If any filesystems are mounted using block device name, the restored VM may not boot.
 
+* During instant VM recovery to Microsoft Hyper-V, only virtual switches configured at the Hyper-V host level are available for selection in the recovery wizard. Networks created and managed at the SCVMM (System Center Virtual Machine Manager) layer (such as logical or VM networks) are not supported or visible for selection. If you require network connectivity for restored VMs, ensure that appropriate virtual switches are configured directly on the target Hyper-V host(s).
+* If you require network connectivity for restored VMs, ensure that appropriate virtual switches are configured directly on the target Hyper-V host(s).
 * If you want to scan recovered VM data for viruses, check the [secure restore requirements and limitations](av_scan_about.md#av_limitations).
 * On non-Microsoft Windows SMB3 storage, for example, Tintri, Veeam Backup & Replication may display the "Failed to disable integrity bit on disk N" warning during the restore process. You can ignore this warning for non-Microsoft Windows SMB3 storage.
 * The recovered VM will have the same MAC address as the original workload. Therefore, if you recover the workload to the same Hyper-V host where the original workload is running, a MAC address conflict may occur. To overcome this situation, power off the original workload before you start the recovery process.

@@ -3,8 +3,8 @@ title: "Step 3. Configure Backup Source Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_backup_job_create_assign_vms.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Configure Backup Source Settings
@@ -31,11 +31,11 @@ While running the job, Veeam Backup & Replication processes resources in the ord
 |  |
 | --- |
 | Note |
-| Consider the following:   * If you include the same resource into the backup scope multiple times (for example, an individual VM and a tag or label that contains this VM), Veeam Backup & Replication will process this resource only once.  * If you include a tag, label, cluster or server into the backup scope, VMs in this object are processed at random. To ensure that the VMs are processed in a specific order, you must add them as standalone VMs — not as part of the tag, label, host or cluster. |
+| Consider the following:   * If you include the same resource into the backup scope multiple times (for example, an individual VM and a tag or label that contains this VM), Veeam Backup & Replication will process this resource only once.  * If you include a tag, label, cluster or server into the backup scope, VMs in this object are processed in descending order by size, starting with the largest. To ensure that the VMs are processed in a specific order, you must add them as standalone VMs — not as part of the tag, label, host or cluster. |
 
 [![Select VMs to Back Up](images/hpe_backup_job_create_resources.webp)](images/hpe_backup_job_create_resources.webp "Select VMs to Back Up")
 
-Step 3b. Choose Disks and Volume Groups
+Step 3b. Choose Disks
 
 By default, jobs process all disks attached to VMs included into the backup scope. However, you can instruct Veeam Backup & Replication to back up only specific virtual disks related to the selected backup scope:
 

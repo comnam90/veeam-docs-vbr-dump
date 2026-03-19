@@ -3,14 +3,14 @@ title: "Step 2. Specify Job Name and Copy Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_name.html"
-last_updated: "11/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Specify Job Name and Copy Mode
 
 
-At the Job step of the wizard, specify basic settings for the backup copy job:
+At the Name step of the wizard, specify basic settings for the backup copy job:
 
 1. In the Name field, specify a name for the job.
 2. In the Description field, provide a description for the job.
@@ -19,9 +19,9 @@ The default description contains information on a user who created the job, date
 
 1. Select a backup copy mode. For more information on copy modes and backup types supported in each mode, see [Backup Copy Modes](backup_copy_modes.md).
 
-* Select Immediate copy to copy new restore points and, if required, log backups as soon as they appear.
+* Select the Immediate copy option to copy new restore points and, if required, log backups as soon as they appear.
 
-* Select Periodic copy to copy the most recent restore points.
+* Select the Periodic copy option to copy the most recent restore points.
 
 |  |
 | --- |

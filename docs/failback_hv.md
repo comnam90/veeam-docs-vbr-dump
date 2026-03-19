@@ -3,14 +3,14 @@ title: "Failback"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_hv.html"
-last_updated: "1/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Failback
 
 
-Failback is one of the ways to finalize failover. When you perform failback, you switch back to the production VM from a VM replica, shift I/O processes from the disaster recovery site to the production site. Veeam Backup & Replication also sends all change made to the VM replica while it was in the Failover state to the production VM. However, note that these changes are only sent to the production VM but not published.
+Failback is one of the ways to finalize failover. When you perform failback, you switch back to the production VM from a VM replica, shift I/O processes from the disaster recovery site to the production site. Veeam Backup & Replication also sends all changes made to the VM replica while it was in the Failover state to the production VM. However, note that these changes are only sent to the production VM but not published.
 
 Veeam Backup & Replication provides you the following options to perform failback:
 

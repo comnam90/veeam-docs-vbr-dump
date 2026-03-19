@@ -3,8 +3,8 @@ title: "SP Veeam Backup Server"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_sp_vbr.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # SP Veeam Backup Server
@@ -34,7 +34,12 @@ Limitations for SP Veeam Backup Server
 
 The SP Veeam backup server is intended to be used exclusively for configuring Veeam Cloud Connect infrastructure and providing cloud resources to tenants. The SP cannot perform the following operations on the SP Veeam backup server:
 
-* Perform restore tasks with tenant backups other than Instant Recovery, restore to Microsoft Azure and Amazon EC2. For example, the SP cannot import tenant backups in the SP Veeam backup console to restore data from these backups.
+* Perform restore tasks with tenant backups other than [Instant Recovery](cloud_connect_instant_recovery.md), [restore to Microsoft Azure](cc_restore_azure.md) and [restore to Amazon EC2](cc_restore_aws.md).
+
+|  |
+| --- |
+| Important |
+| The SP must avoid the following operations with the tenant backups, for example, in an attempt to restore data from these backups:   * Import tenant backups on the SP Veeam backup server. * Decrypt tenant backups on the SP Veeam backup server. |
 
 To perform such data restore tasks, the SP must deploy a separate backup server in their backup infrastructure and do either of the following:
 
@@ -44,7 +49,7 @@ To perform such data restore tasks, the SP must deploy a separate backup server 
 |  |
 | --- |
 | Important |
-| Do not add the same repository to more than one Veeam Backup & Replication installation. Instead, copy backups to a separate folder and add this folder to a separate Veeam Backup & Replication as a new repository. This approach ensures the safety of the procedure, as it involves working with copies of the backups rather than their originals.  If the SP adds the same repository to another Veeam Backup & Replication server and then runs a backup restore procedure (or any other procedure related to that backup), the backups may be corrupted. |
+| Do not add the same repository to more than one Veeam Backup & Replication installation. Instead, copy backups to a separate folder and add this folder to a separate Veeam Backup & Replication as a new repository. This approach ensures the safety of the procedure, as it involves working with duplicates of the backups rather than their originals.  If the SP adds the same repository to another Veeam Backup & Replication server and then runs a restore process (or any other procedure related to that backup), the backups may become corrupted. |
 
 * Add itself as an SP in the Veeam Backup & Replication console, for example, to address specific scenarios that were supported in previous versions of Veeam Backup & Replication. For such scenarios, the SP must deploy a separate backup server in its backup infrastructure. The SP can use their existing Veeam Cloud Connect license on this backup server.
 * Run backup, backup copy or replication jobs, for example, to back up VMs in the SP virtual environment, or to copy tenant VM backups to a secondary location. To create and run jobs, the SP must deploy a separate backup server (and other Veeam Backup & Replication components) and also obtain a separate license key and install it on this backup server.

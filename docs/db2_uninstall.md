@@ -3,8 +3,8 @@ title: "Uninstalling Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_uninstall.html"
-last_updated: "11/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Uninstalling Plug-In
@@ -14,7 +14,7 @@ Installation scenario depends on the OS you work with:
 
 * [Uninstalling Veeam Plug-In on Linux machines](#linux).
 
-* [Unistalling Veeam Plug-In on IBM AIX machines](#aix).
+* [Uninstalling Veeam Plug-In on IBM AIX machines](#aix).
 
 Uninstalling Veeam Plug-In on Linux Machines
 

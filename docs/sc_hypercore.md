@@ -3,8 +3,8 @@ title: "Scale Computing HyperCore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sc_hypercore.html"
-last_updated: "2/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Scale Computing HyperCore
@@ -27,7 +27,7 @@ Veeam Plug-in for Scale Computing HyperCore is a solution developed for protecti
 
 * Restore VMs from Scale Computing HyperCore backups to Microsoft Azure, Amazon Web Services (AWS) and Google Cloud environments.
 * Perform Instant Recovery of Scale Computing HyperCore VMs to VMware vSphere, Microsoft Hyper-V and Nutanix AHV environments.
-* Restore application items (such as Microsoft Active Directory, Microsoft Exchange, Microsoft SharePoint, Oracle Database and Microsoft SQL Server).
+* Restore application items (such as Microsoft Active Directory, Microsoft Exchange, Microsoft SharePoint, PostgreSQL, Oracle Database and Microsoft SQL Server).
 * Restore files and folders of Scale Computing HyperCore VM guest OSes.
 * Export disks of backed-up Scale Computing HyperCore VMs to VMDK, VHD and VHDX formats.
 * Mount disks of backed-up Scale Computing HyperCore VMs to any server and access data in the read-only mode.

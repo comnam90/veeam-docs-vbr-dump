@@ -3,8 +3,8 @@ title: "Managing Configuration Database"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config.html"
-last_updated: "11/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managing Configuration Database

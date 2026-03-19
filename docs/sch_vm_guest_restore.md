@@ -3,14 +3,14 @@ title: "Performing File-Level Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_vm_guest_restore.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing File-Level Restore
 
 
-With guest OS file recovery (file-level restore), you can restore individual guest OS files and folders from VM backups created with Veeam Plug-in for Scale Computing HyperCore. When restoring files and folders, you do not need to extract the VM image to a staging location or start the VM prior to restore. For more information on VM guest OS file restore, see section [Guest OS File Recovery](guest_file_recovery.md).
+With guest OS file recovery (file-level restore), you can restore individual guest OS files and folders from VM backups created with Veeam Plug-in for Scale Computing HyperCore. When restoring files and folders, you do not need to extract the VM image to a staging location or start the VM prior to restore. For more information on VM guest OS file restore, see [Guest OS File Recovery](guest_file_recovery.md).
 
 To restore VM guest OS files and folders, do the following:
 
@@ -25,7 +25,7 @@ Alternatively, you can select the VM and click Restore Guest Files on the ribbon
 |  |
 | --- |
 | Note |
-| To restore files of a VM with an operation system other than Microsoft Windows, Veeam Plug-in for Scale Computing HyperCore requires a [mount host](guest_file_recovery.md) — a server that will be used to mount VM disks. While completing the Guest File Restore wizard, you will be able either to choose a server already added to the backup infrastructure or to specify connection settings of a new server that will be used as a mount host.  If you want to select temporary helper appliance as a mount host option, you can deploy it only on a VMware vSphere, Microsoft Hyper-V or Nutanix AHV machine.  For file-level restore to work, Veeam Plug-in for Scale Computing HyperCore must be able to obtain source VM IP address which requires guest tools to be installed on the VM. |
+| Depending on the operating system of a VM whose files and folders you want to restore, Veeam Backup & Replication may require a [mount host](guest_file_recovery.md) — a server that will be used to mount VM disks. While completing the Guest File Restore wizard, you will be able either to choose a server already added to the backup infrastructure or to specify connection settings of a new server that will used as the mount host. For more information on how Veeam Backup & Replication selects mount hosts, see [Mount Host Automatic Selection](guest_restore_scenarios.md). |
 
 [![VM Guest OS Files Restore](images/sch_vm_guest_restore.webp)](images/sch_vm_guest_restore.webp "VM Guest OS Files Restore")
 

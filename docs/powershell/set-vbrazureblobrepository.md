@@ -3,8 +3,8 @@ title: "Set-VBRAzureBlobRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazureblobrepository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRAzureBlobRepository
@@ -37,8 +37,9 @@ This cmdlet modifies settings for an Azure Blob storage added as a backup reposi
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Repository | Specifies an Azure Blob storage that you want to modify. | Accepts the VBRAzureBlobRepository object. To create this object, run the [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies a name of object storage. The cmdlet will add Azure Blob storage to the backup infrastructure with this name. | String | False | Named | False |
 | Description | Specifies a description of Azure Blob storage. The cmdlet will add Azure Blob storage to the backup infrastructure with this description. | String | False | Named | False |
@@ -47,7 +48,7 @@ Parameters
 | GatewayServer | Specifies an array of gateway servers that you want to use to transfer data from processed VM to object storage repositories. | Accepts the CHost[] object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | EnableSizeLimit | Defines that the cmdlet will enable size limits for an Azure Blob storage that you want to add as a backup repository.  Use the SizeLimit parameter to specify the size limits. | SwitchParameter | False | Named | False |
 | SizeLimit | For the EnableSizeLimit parameter.  Specifies size limits in GB for data blocks that you want to store in Azure Blob storage added as an object storage repository.  Permitted value: 1024 - 1073741824.  Default: 10240. | Int32 | False | Named | False |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int | False | Named | False |
 | EnableCoolAccessTier | Defines that Veeam Backup & Replication will keep blocks of data in the Cool access tier.  Default: False. | SwitchParameter | False | Named | False |
 | ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |

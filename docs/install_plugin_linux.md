@@ -3,8 +3,8 @@ title: "Installing Plug-In on Linux"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_plugin_linux.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Installing Plug-In on Linux
@@ -37,19 +37,19 @@ You can download the latest version of the Veeam Backup & Replication installati
 1. Open the mounted image and find the following packages:
 
 1. In the \Packages folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \Plugins\Oracle RMAN\Linux folder, find the VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm package.
+2. In the \Plugins\Oracle RMAN\Linux folder, find the VeeamPluginforOracleRMAN-13.0.2.2067.x86\_64.rpm package.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm packages to the Oracle server.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.2.2067.x86\_64.rpm packages to the Oracle server.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following packages:
 
-1. In the \VeeamPluginforOracleRMAN-13.0.1.180\veeam-openssl folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \VeeamPluginforOracleRMAN-13.0.1.180\RMANLinux\x64 folder, find the VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm package.
+1. In the \VeeamPluginforOracleRMAN-13.0.2.2067\veeam-openssl folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
+2. In the \VeeamPluginforOracleRMAN-13.0.2.2067\RMANLinux\x64 folder, find the VeeamPluginforOracleRMAN-13.0.2.2067.x86\_64.rpm package.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm packages to the Oracle server.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.2.2067.x86\_64.rpm packages to the Oracle server.
 
 1. Install Veeam Plug-In. To do this, run the following commands:
 
@@ -63,7 +63,7 @@ Using veeam.com
 
 |  |
 | --- |
-| rpm -i VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm |
+| rpm -i VeeamPluginforOracleRMAN-13.0.2.2067-1.x86\_64.rpm |
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In on Linux or Unix](configuring_rman_plugin_lin.md).
 
@@ -91,8 +91,8 @@ Using veeam.com
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following files:
 
-1. In the \VeeamPluginforOracleRMAN-13.0.1.180\veeam-openssl folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \VeeamPluginforOracleRMAN-13.0.1.180\RMANLinux\x64 folder, find the VeeamPluginForOracleRMAN.tar.gz archive.
+1. In the \VeeamPluginforOracleRMAN-13.0.2.2067\veeam-openssl folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
+2. In the \VeeamPluginforOracleRMAN-13.0.2.2067\RMANLinux\x64 folder, find the VeeamPluginForOracleRMAN.tar.gz archive.
 
 1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN.tar.gz files to the Oracle server.
 

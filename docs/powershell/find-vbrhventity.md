@@ -3,8 +3,8 @@ title: "Find-VBRHvEntity"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/find-vbrhventity.html"
-last_updated: "4/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Find-VBRHvEntity
@@ -56,12 +56,13 @@ This cmdlet provides parameter sets that allow you to:
 
 Detailed Description
 
-This cmdlet retutns an array of Hyper-V objects.
+This cmdlet returns an array of Hyper-V objects.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies an array of entity names. The cmdlet will return entities with these names. | String[] | False | Named | False |
 | Server | Specifies an array of Hyper-V hosts. The cmdlet will return entities created on these hosts. | Accepts the CHost[] object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | True (ByValue, |
 | HostsAndVMs | Defines that the cmdlet will return an array of hosts and VMs.  Default: False. | SwitchParameter | False | Named | False |

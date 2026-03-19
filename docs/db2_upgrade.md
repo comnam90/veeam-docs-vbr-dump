@@ -3,8 +3,8 @@ title: "Upgrading Veeam Plug-In for IBM Db2"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_upgrade.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Upgrading Veeam Plug-In for IBM Db2
@@ -46,8 +46,8 @@ Using veeam.com
 1. Download the current setup archive for Veeam Plug-In for IBM Db2 from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following packages:
 
-1. [For Linux] In the \VeeamPluginForIBMDb2-13.0.1.180\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64 package in the format that suits your OS.
-2. In the \VeeamPluginForIBMDb2-13.0.1.180\ folder, find the Veeam Plug-In installation file that suits your OS.
+1. [For Linux] In the \VeeamPluginForIBMDb2-13.0.2.2067\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64 package in the format that suits your OS.
+2. In the \VeeamPluginForIBMDb2-13.0.2.2067\ folder, find the Veeam Plug-In installation file that suits your OS.
 
 1. Upload packages that you need to the IBM Db2 server.
 
@@ -62,7 +62,7 @@ Upgrading Plug-In on Linux (.RPM)
 
 To upgrade Veeam Plug-In for IBM Db2 on a Linux machine, do the following:
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforDB2-13.0.1.180-1.x86\_64.rpm package to the machine with IBM Db2.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforDB2-13.0.2.2067.x86\_64.rpm package to the machine with IBM Db2.
 2. To upgrade Veeam Plug-In, run the following commands:
 
 1. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
@@ -75,7 +75,7 @@ To upgrade Veeam Plug-In for IBM Db2 on a Linux machine, do the following:
 
 |  |
 | --- |
-| rpm -U VeeamPluginforDB2-13.0.1.180-1.x86\_64.rpm |
+| rpm -U VeeamPluginforDB2-13.0.2.2067.x86\_64.rpm |
 
 |  |
 | --- |
@@ -86,7 +86,7 @@ Upgrading Plug-In on Linux (.DEB)
 
 To upgrade Veeam Plug-In for IBM Db2 on a Linux machine, do the following:
 
-1. Upload veeam-openssl3\_3.0.0.31\_amd64.deb and VeeamPluginforDB2-13.0.1.180-1\_amd64.deb package to the machine with IBM Db2.
+1. Upload veeam-openssl3\_3.0.0.31\_amd64.deb and VeeamPluginforDB2-13.0.2.2067\_amd64.deb package to the machine with IBM Db2.
 2. To upgrade Veeam Plug-In, run the following commands:
 
 1. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
@@ -99,7 +99,7 @@ To upgrade Veeam Plug-In for IBM Db2 on a Linux machine, do the following:
 
 |  |
 | --- |
-| apt-get install VeeamPluginforDB2-13.0.1.180-1\_amd64.deb |
+| apt-get install VeeamPluginforDB2-13.0.2.2067\_amd64.deb |
 
 Upgrading Plug-In on Linux (.TAR.GZ)
 
@@ -122,11 +122,11 @@ Upgrading Plug-In on IBM AIX
 
 To upgrade Veeam Plug-In for IBM Db2 on an IBM AIX machine, do the following:
 
-1. Upload the VeeamPluginforDB2-13.0.1.180-1.aix6.1.ppc.rpm package to the Oracle server.
+1. Upload the VeeamPluginforDB2-13.0.2.2067.aix6.1.ppc.rpm package to the Oracle server.
 2. To upgrade Veeam Plug-In, run the following command. Note that the operation requires root privileges.
 
 |  |
 | --- |
-| rpm -U VeeamPluginforDB2-13.0.1.180-1.aix6.1.ppc.rpm |
+| rpm -U VeeamPluginforDB2-13.0.2.2067.aix6.1.ppc.rpm |
 
 

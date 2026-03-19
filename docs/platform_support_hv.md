@@ -3,8 +3,8 @@ title: "Microsoft Hyper-V"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_hv.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Microsoft Hyper-V
@@ -29,7 +29,7 @@ Hyper-V VMs
 
 | Specification | Requirement |
 | Hardware | * Supported virtual hardware versions are 5.0 to 12.0 (valid for Hyper-V 2016 to 2025). * Both Generation 1 and 2 virtual machines are supported, including 64 TB VHDX disks. * Pass-through virtual disks and guest disks connected through in-guest FC or iSCSI initiators are not supported for VM backup. VMs with pass-through disks cannot be snapshotted, which prevents snapshot-based backup. In-guest connected disks are skipped from processing automatically. If backup of these VMs/disks is required, use Veeam Agent backup. * [For Hyper-V Server 1803 or later] Backup of VMs with VMPmemController is not supported. * [For Hyper-V 2016 and later] Veeam Backup & Replication does not support processing of VMs with shared VHDX disks. You must change the disk format to VHD Set (VHDS). * [For Hyper-V 2016 and later] VMs with pass-through virtual disks cannot be processed due to Hyper-V 2016 checkpoints limitation. * [For Hyper-V 2012 R2] Veeam Backup & Replication backs up shared VHDX disks in a crash-consistent state. * [For Hyper-V 2012 R2 and earlier] Backup and replication of VMs whose data resides on a Hyper-V host volume of 64 TB and larger is not supported. |
-| OS | All operating systems supported by Hyper-V. Guest processing is supported for OS versions released before the [Veeam Backup & Replication build release date](https://www.veeam.com/kb2680).   * For Microsoft Windows OSes, guest processing (which includes application-aware processing and indexing) is supported for all OSes supported by Hyper-V. * For Linux OSes, guest processing is supported for the [same Linux OSes as for the VMware vSphere platform](platform_support_vm.md#lin_guest). This excludes any OSes that Hyper-V does not support.   Note: You can back up VMs of Hyper-V clusters in rolling upgrade. However, Veeam Backup & Replication does not use the [Resilient Changed Tracking](changed_block_tracking_hv.md#rct) mechanism in such scenario. To perform backup with RCT enabled, make sure your Microsoft Hyper-V environment meets [these requirements](changed_block_tracking.md#reqs). It is recommended to complete the rolling upgrade within four weeks. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade). |
+| OS | All operating systems supported by Hyper-V. Guest processing is supported for OS versions released before the [Veeam Backup & Replication build release date](https://www.veeam.com/kb2680).   * For Microsoft Windows OSes, guest processing (which includes application-aware processing and indexing) is supported for all OSes supported by Hyper-V. * For Linux OSes, guest processing is supported for the [same Linux OSes as for the VMware vSphere platform](platform_support_vm.md#lin_guest). This excludes any OSes that Hyper-V does not support.   Note: You can back up VMs in Hyper-V clusters during a rolling upgrade. However, in this scenario, Veeam Backup & Replication does not use the Resilient Changed Tracking (RCT) mechanism. To enable RCT for backups, ensure your Microsoft Hyper-V environment meets the [required conditions](changed_block_tracking_hv.md#rct). It is recommended to complete the rolling upgrade within four weeks. For more information, see [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade). |
 | Software | Hyper-V integration components (optional, required for application-aware processing). |
 
 Consider the following:

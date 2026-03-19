@@ -3,8 +3,8 @@ title: "Step 7. Configure Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_restore_entire_vm_network.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 7. Configure Network Settings
@@ -16,8 +16,8 @@ At the Network step of the wizard, choose a network to which the recovered VM wi
 
 |  |
 | --- |
-| Note |
-| Since HPE Morpheus VM Essentials requires all VMs to be connected to networks, you will still need to specify a network if you choose the Disconnect option. |
+| Tip |
+| By default, Veeam Backup & Replication will try to connect each recovered VM to the original network. If you restore multiple VMs at a time and you want to specify new networks, you can click Disconnect to clear target networks for all VMs at once. Then, you will have to specify a new network for each VM to proceed. |
 
 ![Step 7. Configure Network Settings](images/hpe_restore_entire_vm_network.webp)
 

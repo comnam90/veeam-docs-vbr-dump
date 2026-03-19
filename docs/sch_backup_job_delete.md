@@ -3,8 +3,8 @@ title: "Deleting Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_delete.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Deleting Backup Jobs

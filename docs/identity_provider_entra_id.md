@@ -3,8 +3,8 @@ title: "Configuring SAML Authentication for Microsoft Entra ID"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider_entra_id.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring SAML Authentication for Microsoft Entra ID
@@ -16,8 +16,8 @@ Step 1. Obtain Service Provider Settings
 
 To obtain the service provider authentication settings, do the following:
 
-1. From the main menu, select Users and Roles.
-2. In the User and Roles window, select the Identity Provider tab.
+1. From the main menu, select Users & Roles.
+2. In the User & Roles window, select the Identity Provider tab.
 3. Select the Enable SAML authentication check box.
 4. In the Service Provider (SP) information section, do the following:
 
@@ -95,8 +95,8 @@ Step 6. Import Microsoft Entra ID Metadata
 
 To import the obtained Microsoft Entra ID identity provider settings to Veeam Backup & Replication, do the following:
 
-1. From the main menu, select Users and Roles.
-2. In the User and Roles window, select the Identity Provider tab.
+1. From the main menu, select Users & Roles.
+2. In the User & Roles window, select the Identity Provider tab.
 3. In the Identity provider configuration section:
 
 1. In the Identity Provider information section, click Browse to locate the federation metadata file with the identity provider settings.
@@ -119,8 +119,8 @@ Step 8. Add External User or Group
 
 To add external users or groups to Veeam Backup & Replication and assign roles to them, do the following:
 
-1. From the main menu, select Users and Roles.
-2. In the User and Roles window, select the Security tab.
+1. From the main menu, select Users & Roles.
+2. In the User & Roles window, select the Security tab.
 3. Click Add > External user or group.
 4. From the Type drop-down list, select User or Group.
 5. In the Name field, enter the group name or user name in the UPN format, for example, john.doe@domain.com.

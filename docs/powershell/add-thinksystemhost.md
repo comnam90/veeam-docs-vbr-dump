@@ -3,8 +3,8 @@ title: "Add-ThinkSystemHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-thinksystemhost.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-ThinkSystemHost
@@ -49,13 +49,14 @@ For more information about the rescan, see the [Adding Storage Systems](https://
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the storage IP address or DNS name. | String | True | Named | False |
 | Description | Specifies the description of the storage. | String | False | Named | False |
 | UserName | Specifies the user name that you want to use for authenticating with the storage. | String | True | Named | False |
 | Password | Specifies the password you want to use for authenticating with the storage. | String | True | Named | False |
-| IsHTTP | If set to TRUE, HTTP protocol will be used to connect to the ThinkSystem storage. Otherwise, HTTPS protocol will be selected.  Defaul: HTTPS. | Bool | False | Named | False |
+| IsHTTP | If set to TRUE, HTTP protocol will be used to connect to the ThinkSystem storage. Otherwise, HTTPS protocol will be selected.  Default: HTTPS. | Bool | False | Named | False |
 | Port | Specifies a port used to connect to the ThinkSystem storage. By default, port 443 is used. | Int | False | Named | False |
 | Credentials | Specifies the credentials you want to use for authenticating with the storage. | Accepts the CInternalCredentials object. To create this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | False |
 | MountServer | Specifies an array of proxies you want to use with this storage. Veeam Backup & Replication will use this proxy to rescan and Backup from Storage Snapshots.  If not set, Veeam Backup & Replication will use automatic proxy selection. | Accepts the IProxy object. To create this object, run the [Get-VBRViProxy](get-vbrviproxy.md) cmdlet. | False | Named | False |

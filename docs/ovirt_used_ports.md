@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_used_ports.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Ports
@@ -25,6 +25,7 @@ Workers
 | oVirt KVM host | TCP | 54322 | Used to communicate with oVirt KVM hosts. |
 | Veeam backup repository or [gateway server](gateway_server.md) | TCP | 2500-3300 | Default range of ports used as transmission channels for jobs and restore sessions. For each TCP connection that a job uses, one port from this range is assigned. |
 | Veeam Update Repository  (repository.veeam.com, cloudfront.net) | TCP/HTTPS | 443 | Used to download worker update packages. |
+| NTP server | UDP | 123 | Used for time synchronization with NTP servers. |
 
 Backup Server
 

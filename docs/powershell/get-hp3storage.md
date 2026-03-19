@@ -3,8 +3,8 @@ title: "Get-HP3Storage"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-hp3storage.html"
-last_updated: "6/17/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-HP3Storage
@@ -36,8 +36,9 @@ You can get the list of all storages added to your virtual infrastructure or nar
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the array of storage names. The cmdlet will return the storage systems with these names. | String[] | False | Named | False |
 
 <CommonParameters>

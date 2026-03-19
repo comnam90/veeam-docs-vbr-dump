@@ -3,8 +3,8 @@ title: "Starting PowerShell Sessions from PowerShell Console"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/from_windows_powershell.html"
-last_updated: "11/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Starting PowerShell Sessions from PowerShell Console
@@ -70,7 +70,7 @@ Once these requirements are met, perform the following steps:
 
 |  |
 | --- |
-| dnf install https://repository.veeam.com/rocky/9.2/vbr/13.0/optional/x86\_64/veeam-optional-release-latest-13.0.1.180-1.x86\_64.rpm -y |
+| dnf install https://repository.veeam.com/rocky/9.2/vbr/13.0/optional/x86\_64/veeam-optional-release-latest-13.0.1.2067-1.x86\_64.rpm -y |
 
 This command gives the dnf package manager access to the necessary Veeam Software Appliance packages.
 
@@ -78,7 +78,7 @@ This command gives the dnf package manager access to the necessary Veeam Softwar
 
 |  |
 | --- |
-| dnf install veeam-powershell -y  dnf install veeam-vbr-pkg-mount.x86\_64 veeam-vbr-pkg-transport.x86\_64 veeam-vbr-pkg-deployment.x86\_64 -y  dnf install /opt/veeam/vbr/Packages/veeamdeployment-13.0.1.180-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeam-mount-13.0.1.180-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeamtransport-13.0.1.180-1.x86\_64.rpm -y |
+| dnf install veeam-powershell -y  dnf install veeam-vbr-pkg-mount.x86\_64 veeam-vbr-pkg-transport.x86\_64 veeam-vbr-pkg-deployment.x86\_64 -y  dnf install /opt/veeam/vbr/Packages/veeamdeployment-13.0.1.2067-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeam-mount-13.0.1.2067-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeamtransport-13.0.1.2067-1.x86\_64.rpm -y |
 
 1. Start a PowerShell session to use PowerShell commands.
 

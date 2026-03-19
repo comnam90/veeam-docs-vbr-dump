@@ -3,8 +3,8 @@ title: "Get-VBRCDPTaskSession"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcdptasksession.html"
-last_updated: "6/12/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRCDPTaskSession
@@ -52,9 +52,10 @@ This cmdlet returns VMs performed during CDP policy sessions.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Session | Specifies a CDP policy session that processes VMs. The cmdlt will return these VMs. | Accepts the VBRCDPSession object. To create this object, run the [Get-VBRCDPSession](get-vbrcdpsession.md) cmdlet. | True | Named | True (ByPropertyName) |
+| Session | Specifies a CDP policy session that processes VMs. The cmdlet will return these VMs. | Accepts the VBRCDPSession object. To create this object, run the [Get-VBRCDPSession](get-vbrcdpsession.md) cmdlet. | True | Named | True (ByPropertyName) |
 | Last | Defines that the cmdlet will return the last VMs that were processed during a CDP policy session. | SwitchParameter | False | Named | False |
 | Id | Specifies an ID of a session that you want to get. | Guid | False | Named | False |
 | ObjectId | Specifies an ID of VMs that processed during a CDP policy session. | Guid | False | Named | False |

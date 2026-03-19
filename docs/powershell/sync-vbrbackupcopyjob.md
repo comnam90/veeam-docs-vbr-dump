@@ -3,8 +3,8 @@ title: "Sync-VBRBackupCopyJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-vbrbackupcopyjob.html"
-last_updated: "4/24/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Sync-VBRBackupCopyJob
@@ -39,8 +39,9 @@ By default, the backup copy job runs continuously synchronizing the backup repos
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies the backup copy job. The cmdlet will start this job. | Accepts string or the IJob object. To get this object, run the [Get-VBRJobs](get-vbrjob.md) cmdlet. | True | Named | True (ByValue, |
 | FullBackup | Defines that the job will create an active full backup. | SwitchParameter | False | Named | False |
 | ImmediateCopyLastRestorePoint | Defines that the cmdlet will enable the immediate copy mode.  If you specify this parameter, Veeam Backup & Replication will copy only the latest restore point for each source job.  Otherwise, Veeam Backup & Replication will copy all restore points created by the source jobs that were not copied since the last backup copy job session. | SwitchParameter | False | Named | False |

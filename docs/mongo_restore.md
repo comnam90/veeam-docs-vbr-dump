@@ -3,8 +3,8 @@ title: "Restoring with Veeam Explorer for MongoDB"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_restore.html"
-last_updated: "12/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring with Veeam Explorer for MongoDB
@@ -23,7 +23,7 @@ To learn more about restore operations, see the following sections:
 
 * [Restoring Single Collection](vemdb_rs_restore_collection_single.md)
 
-* [Restoring Multiple Collectionl](vemdb_rs_restore_collection_multiple.md)
+* [Restoring Multiple Collections](vemdb_rs_restore_collection_multiple.md)
 
 * [Restoring Instance](vemdb_rs_restore_instance.md)
 

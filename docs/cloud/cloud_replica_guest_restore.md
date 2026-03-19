@@ -3,8 +3,8 @@ title: "Restoring VM Guest OS Files"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_replica_guest_restore.html"
-last_updated: "8/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring VM Guest OS Files
@@ -29,7 +29,7 @@ To restore VM guest OS files of a Microsoft Windows VM replica:
 
 ![Restoring VM Guest OS Files](images/guest_files_replica_restore_point.webp)
 
-* [For CDP replicas] Select the necessary point in time to restore to. The colour indicates the amount of data traffic for each time point.
+* [For CDP replicas] Select the necessary point in time to restore to. The color indicates the amount of data traffic for each time point.
 
 ![Restoring VM Guest OS Files](images/guest_files_replica_restore_point_cdp.webp)
 

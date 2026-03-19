@@ -3,8 +3,8 @@ title: "Start-VBRViInstantRecoveryMigration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantrecoverymigration.html"
-last_updated: "8/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRViInstantRecoveryMigration
@@ -32,10 +32,11 @@ This cmdlet starts VMs quick migration to specified ESXi host. You can run this 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstantRecovery | Specifies a running Instant Recovery session. The cmdlet will start a quick migration of VMs that are recovered during this session. | Accepts the InstantRecovery object. To create this object, run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet. | True | 0 | True (ByValue, |
-| ToTarget | Defines target server settings.  If you migrate VMware vSphere VMs, provide this parameter and do not specify the target server explicitly with the Server parameter, the cmdlet will migrate VMs to the ESXi host that is specified in the Instant Recovery session. Otherwise, it will mirgate VMs to the original ESXi host. | SwitchParameter | False | Named | False |
+| ToTarget | Defines target server settings.  If you migrate VMware vSphere VMs, provide this parameter and do not specify the target server explicitly with the Server parameter, the cmdlet will migrate VMs to the ESXi host that is specified in the Instant Recovery session. Otherwise, it will migrate VMs to the original ESXi host. | SwitchParameter | False | Named | False |
 | Server | Specifies the target ESXi host. The cmdlet will migrate restored VMs to this host.  Note: Consider the following:   * You must not specify a vCenter Server in this parameter. * This parameter is required if you migrate a workload other than a VMware vSphere VM. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | ResourcePool | Specifies the resource pool. The cmdlet will migrate restored VMs to this resource pool.  Note: This parameter is required if you migrate a workload other than a VMware vSphere VM. | Accepts the CViResourcePoolItem object. To create this object, run the [Find-VBRViResourcePool](find-vbrviresourcepool.md) cmdlet. | False | Named | False |
 | Datastore | Specifies the datastore to which you want to migrate restored VMs. Veeam Backup & Replication will redirect the redo logs to the selected datastore.  Note: This parameter is required if you migrate a workload other than a VMware vSphere VM. | Accepts the CViDatastoreItem object. To create this object, run the [Find-VBRViDatastore](find-vbrvidatastore.md) cmdlet. | False | Named | False |

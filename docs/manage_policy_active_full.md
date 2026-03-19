@@ -3,8 +3,8 @@ title: "Performing Active Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_active_full.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Active Full Backup
@@ -18,7 +18,7 @@ To perform active full backup on computers added to the backup policy:
 
 1. Open the Home view.
 2. In the inventory pane, select Jobs.
-3. In the working area, select the backup policy and click Active full on the ribbon or right-click the job and select Full. After that, confirm the backup policy start.
+3. In the working area, select the backup policy and click Full on the ribbon or right-click the job and select Full. After that, confirm the backup policy start.
 
 [![Create Full Backup](images/plugins_application_policy_full.webp)](images/plugins_application_policy_full.webp "Create Full Backup")
 

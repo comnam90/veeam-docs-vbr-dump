@@ -3,8 +3,8 @@ title: "Set-VBRNASProxyServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnasproxyserver.html"
-last_updated: "5/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRNASProxyServer
@@ -35,11 +35,12 @@ This cmdlet modifies settings of the general-purpose backup proxy added to the V
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | ProxyServer | Specifies the general-purpose backup proxy. The cmdlet will modify the settings of this proxy. | Accepts the VBRNASProxyServer object. To get this object, run the [Get-VBRNASProxyServer](get-vbrnasproxyserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Description | Specifies a description of the general-purpose backup proxy. The cmdlet will add the proxy with the specified description. | String | False | Named | False |
-| ConcurrentTaskNumber | Specifies the number of concurrent tasks that can be assigned to the general-purpose backup proxy simultaneously.  Permitted values: 1-100. | Int32 | False | Named | False |
+| ConcurrentTaskNumber | Specifies the number of concurrent tasks that can be assigned to the general-purpose backup proxy simultaneously.  Permitted values: 1-128. | Int32 | False | Named | False |
 
 <CommonParameters>
 

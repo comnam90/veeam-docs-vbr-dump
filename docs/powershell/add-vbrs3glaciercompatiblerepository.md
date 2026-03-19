@@ -3,8 +3,8 @@ title: "Add-VBRS3GlacierCompatibleRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrs3glaciercompatiblerepository.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRS3GlacierCompatibleRepository
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-This cmdet adds S3 compatible object storage with data archiving to the backup infrastructure.
+This cmdlet adds S3 compatible object storage with data archiving to the backup infrastructure.
 
 |  |
 | --- |
@@ -35,8 +35,9 @@ This cmdet adds S3 compatible object storage with data archiving to the backup i
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | AmazonS3Folder | Specifies a folder for S3 compatible object storage with data archiving. Veeam Backup & Replication will move backup files into this folder. | Accepts the VBRAmazonS3Folder object. To create this object, run the [New-VBRAmazonS3Folder](new-vbramazons3folder.md) cmdlet. To get this object, run the [Get-VBRAmazonS3Folder](get-vbramazons3folder.md) cmdlet. | True | Named | True (ByValue) |
 | Connection | Specifies an active session with S3 compatible object storage that supports data archiving. The cmdlet use it to add S3 compatible object storage as a backup repository. | Accepts the VBRAmazonS3Connection object. To get this object, run the [Connect-VBRAmazonS3CompatibleService](connect-vbramazons3compatibleservice.md) cmdlet and set the ArchiveTier property as the ServiceType parameter value. | True | Named | False |
 | Name | Specifies a name of S3 compatible object storage with data archiving. The cmdlet will add S3 compatible object storage with this name. | String | False | Named | False |

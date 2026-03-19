@@ -3,8 +3,8 @@ title: "How CDP Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_hiw.html"
-last_updated: "10/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How CDP Works
@@ -53,7 +53,7 @@ After the initial configuration finishes, Veeam Backup & Replication starts moni
 
 * If virtual disks are added to source VMs, Veeam CDP Coordinator Service requests vCenter to create the disks on the target host, applies the storage policy and selects CDP proxies to transfer disk data.
 * If new VMs are added to the CDP policy, Veeam CDP Coordinator Service requests vCenter to create replicas with empty disks, applies the storage policy to the VM disks and selects which CDP proxies to use for data transfer.
-* If the source VMs were migrated to other host or datastore using VMware vSphere vMotion, Veeam CDP Coordinator Service analyzies how data will be transferred after the migration and selects CDP proxies to optimize data transfer.
+* If the source VMs were migrated to other host or datastore using VMware vSphere vMotion, Veeam CDP Coordinator Service analyzes how data will be transferred after the migration and selects CDP proxies to optimize data transfer.
 
 Component reconfiguration requires Veeam CDP Coordinator Service to be working. If the coordinator goes down, existing CDP policies still work, create and remove short-term restore points. Long-term restore points are not created and removed because it is the coordinator who manages them. However, if any of the components goes out of service, for example, CDP proxy goes offline or VMware vSphere vMotion changes the infrastructure, CDP policies start failing until Veeam CDP Coordinator Service is repaired.
 

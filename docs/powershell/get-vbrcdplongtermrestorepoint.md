@@ -3,8 +3,8 @@ title: "Get-VBRCDPLongTermRestorePoint"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcdplongtermrestorepoint.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRCDPLongTermRestorePoint
@@ -30,11 +30,12 @@ This cmdlet returns a long-term restore point of VM replicas.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Replica | Specifies a VM protected with CDP which long-term restore points you want to get. | Accepts the VBRCDPReplica object. To create this object, run the [Get-VBRCDPReplica](get-vbrcdpreplica.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
-| ApplicationConsistent | Defines that the cmdlet will return only application-consistent restore points. If you do not provide this parameter, the cmdet will also return crash-consistent restore points. | SwitchParameter | False | Named | False |
-| Last | Defines that the cmdlet will return only the last restore point. If you do not provide this parameter, the cmdet will return all restore points. | SwitchParameter | False | Named | False |
+| ApplicationConsistent | Defines that the cmdlet will return only application-consistent restore points. If you do not provide this parameter, the cmdlet will also return crash-consistent restore points. | SwitchParameter | False | Named | False |
+| Last | Defines that the cmdlet will return only the last restore point. If you do not provide this parameter, the cmdlet will return all restore points. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 

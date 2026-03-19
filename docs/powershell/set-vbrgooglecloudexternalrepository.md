@@ -3,8 +3,8 @@ title: "Set-VBRGoogleCloudExternalRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgooglecloudexternalrepository.html"
-last_updated: "7/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRGoogleCloudExternalRepository
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-This cmdllet modifies external Google Cloud storage repository added to the backup infrastructure.
+This cmdlet modifies external Google Cloud storage repository added to the backup infrastructure.
 
 |  |
 | --- |
@@ -35,8 +35,9 @@ This cmdllet modifies external Google Cloud storage repository added to the back
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | ExternalRepository | Specifies the external Google Cloud storage repository that you want to modify. | Accepts the VBRGoogleCloudExternalRepository object. To create this object, run the [Get-VBRExternalRepository](get-vbrexternalrepository.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies the name of the Google Cloud storage repository. | String | False | Named | False |
 | Description | Specifies the description of the Google Cloud storage. | String | False | Named | False |

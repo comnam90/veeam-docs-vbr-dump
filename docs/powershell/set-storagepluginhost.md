@@ -3,8 +3,8 @@ title: "Set-StoragePluginHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-storagepluginhost.html"
-last_updated: "7/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-StoragePluginHost
@@ -44,8 +44,9 @@ This cmdlet modifies settings of Universal Storage API storage systems. When you
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Host | Specifies the storage you want to modify. | Accepts the CPublicPluginHost object. To get this object, run the[Get-StoragePluginHost](get-storagepluginhost.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Description | Specifies the description of the storage. | String | False | Named | False |
 | UserName | Specifies the user name that you want to use for authenticating with the storage. | String | False | Named | False |
@@ -93,7 +94,7 @@ Examples
 | --- | --- |
 | This example shows how to exclude volumes from of a Universal Storage API integrated system from rescan.  |  | | --- | | $storage = Get-VNXHost -Name "VNX Storage"  $volumes = Get-StoragePluginInfrastructureVolume -Name "ISCSI Volume4", "ISCSI Volume5", "NFS Volume1"  Set-StoragePluginHost -Host $storage -VolumeScanType Exclude -ExcludedVolume $volumes |  Perform the following steps:   1. Run the [Get-VNXHost](get-vnxhost.md) cmdlet. Specify the Name parameter value. Save the result to the $storage variable. 2. Run the [Get-StoragePluginInfrastructureVolume](get-storageplugininfrastructurevolume.md) cmdlet. Specify the Name parameter value. Save the result to the $volumes variable. 3. Run the Set-StoragePluginHost cmdlet. Set the $storage variable as the Host parameter value. Set the Exclude option for the VolumeScanType parameter. Set the $volumes variable as the ExcludedVolume parameter value. |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Rescanning All Volumes Added to Univeral Storage API Integrated System
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Rescanning All Volumes Added to Universal Storage API Integrated System
 
 |  |  |
 | --- | --- |

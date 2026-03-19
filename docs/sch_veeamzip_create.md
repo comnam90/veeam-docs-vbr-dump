@@ -3,8 +3,8 @@ title: "Creating VeeamZIP Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_veeamzip_create.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating VeeamZIP Backups
@@ -15,7 +15,7 @@ You can back up one or multiple VMs without configuring backup jobs. To do that,
 |  |
 | --- |
 | Note |
-| * You cannot store VeeamZIP backups in Veeam Cloud Connect and [HPE Cloud Bank Storage](storeonce_supported_features.md) repositories. * Retention of VeeamZIP backups is not supported. * Veeam Backup & Replication does not apply network traffic throttling rules to VeeamZIP backup sessions. For more information, see section [Configuring Network Traffic Rules](network_rules.md). |
+| * You cannot store VeeamZIP backups in Veeam Cloud Connect and [HPE Cloud Bank Storage](storeonce_supported_features.md) repositories. * Retention of VeeamZIP backups is not supported. * Veeam Backup & Replication does not apply network traffic throttling rules to VeeamZIP backup sessions. For more information, see [Configuring Network Traffic Rules](network_rules.md). |
 
 To create a VeeamZIP backup, do the following:
 

@@ -3,8 +3,8 @@ title: "Installing Plug-In on IBM AIX"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_install_aix.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Installing Plug-In on IBM AIX
@@ -29,20 +29,20 @@ You can download the latest version of the Veeam Backup & Replication installati
 
 1. In the installation disk folder, navigate to the \Plugins\IBM Db2\AIX\ppc64 folder.
 
-1. Upload the VeeamPluginforDB2-13.0.1.180-1.aix6.1.ppc.rpm package to the machine with IBM Db2.
+1. Upload the VeeamPluginforDB2-13.0.2.2067.aix6.1.ppc.rpm package to the machine with IBM Db2.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for IBM Db2 from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 
-1. Open the setup archive, in the \VeeamPluginforDB2-13.0.1.180\DB2\_AIX\ppc64 folder, find the VeeamPluginforDB2-13.0.1.180-1.aix6.1.ppc.rpm file.
-2. Upload the VeeamPluginforDB2-13.0.1.180-1.aix6.1.ppc.rpm package to the machine with IBM Db2.
+1. Open the setup archive, in the \VeeamPluginforDB2-13.0.2.2067\DB2\_AIX\ppc64 folder, find the VeeamPluginforDB2-13.0.2.2067.aix6.1.ppc.rpm file.
+2. Upload the VeeamPluginforDB2-13.0.2.2067.aix6.1.ppc.rpm package to the machine with IBM Db2.
 
 1. Install the plug-in from package with root privileges. Make sure the root user has privileges to add the PKG file.
 
 |  |
 | --- |
-| rpm -i VeeamPluginforDB2-13.0.1.180-1.aix6.1.ppc.rpm |
+| rpm -i VeeamPluginforDB2-13.0.2.2067.aix6.1.ppc.rpm |
 
 Once Veeam Plug-In is installed, you must configure the plug-in settings. For details, see [Configuring Plug-In](db2_configure.md).
 

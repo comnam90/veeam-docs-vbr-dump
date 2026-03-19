@@ -3,8 +3,8 @@ title: "Get-VBRNASInstantRecoveryMigration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrnasinstantrecoverymigration.html"
-last_updated: "10/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRNASInstantRecoveryMigration
@@ -46,8 +46,9 @@ This cmdlet returns active sessions of migration to production during the instan
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | All | Defines that the cmdlet will return all active sessions of migration to production for NAS instant recovery. | SwitchParameter | False | Named | False |
 | Id | Specifies an array of IDs for migration sessions. The cmdlet will return sessions with these IDs.  If the session with the specified ID is not found, the cmdlet will return an error. | Guid[] | False | Named | True (ByPropertyName) |
 | InstantRecovery | Specifies an array of instant recovery sessions with the started sessions of migration to production. | Accepts the [VBRNASInstantRecovery](vbrnasinstantrecovery.md)[] object. To get this object, run the [Get-VBRNASInstantRecovery](get-vbrnasinstantrecovery.md) cmdlet. | False | Named | True (ByPropertyName) |
@@ -68,7 +69,7 @@ Examples
 | --- | --- |
 | This example shows how to get all active migration sessions for instant restore for file backup sessions.  |  | | --- | | $migrations = Get-VBRNASInstantRecoveryMigration  Write-Output "Get migration sessions of instant restore for file backups."  Write-Output $migrations |  Perform the following steps:   1. Run the Get-VBRNASInstantRecoveryMigration cmdlet. Save the result to the $migrations variable. 2. Run the Write-Output cmdlet. Specify the output wording. 3. Run the Write-Output cmdlet. Provide the $migrations variable. |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting Migration Sessios for Instant Restore for File Backup by IDs
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting Migration Sessions for Instant Restore for File Backup by IDs
 
 |  |  |
 | --- | --- |

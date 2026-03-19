@@ -3,8 +3,8 @@ title: "New-VBRvCloudVAppRestoreSettings"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrvcloudvapprestoresettings.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRvCloudVAppRestoreSettings
@@ -46,8 +46,9 @@ Make sure that you set the parameters for all VMs that belong to the vApp, other
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies the restore point of the vApp you want to restore the vApp to. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, |
 | vAppName | Specifies the name of the restored vApp. Use this parameter in case you want to restore the vApp with different name. | String | False | Named | False |
 | OrgVdc | Specifies the organization VDC you want to restore the vApp to. If not set, the vApp will be restored to the original organization VDC. | Accepts the IVcdItem object. Run the [Find-VBRvCloudEntity](find-vbrvcloudentity.md) cmdlet to get this object. | False | Named | False |
@@ -80,7 +81,7 @@ Here you get the $restorepoint variable containing the vApp settings:
 
 * vAppOib - the restore point of the vApp
 * OrgVdc - the organization vDataCenter where the vApp is registered
-* Vms - the list of VMs whithin the vApp
+* Vms - the list of VMs within the vApp
 * vAppName - the name of the vApp
 
 |  |

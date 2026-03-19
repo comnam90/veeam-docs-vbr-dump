@@ -3,28 +3,38 @@ title: "Step 3. Specify Veeam Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account_web.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/18/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Veeam Account
 
 
-At the Account step of the wizard, specify credentials for the Veeam account and the storage vault.
+At the Account step of the wizard, register the backup server Veeam Data Cloud using your Veeam credentials, specify the storage vault and its connection settings.
 
-Specifying User Credentials
+Registering Backup Server
 
-To specify the authorization settings:
+To register the backup server using your Veeam credentials, do the following:
 
-1. To authorize using your Veeam credentials, click the Authorize link.
-2. In the Veeam authorization window enter your credentials for the Veeam account. After that, your backup server will be registered in the My Account portal.
+1. Click the Change link. After that, the Backup Server Registration Code window will appear.
+2. To the right of the Registration Code field, click Copy.
+3. Click the Veeam Data Cloud Portal link. You will be moved to Veeam Data Cloud. Enter your Veeam credentials.
 
 |  |
 | --- |
 | Note |
-| Ensure that the email address you use matches the email address of the License Administrator. Consider that this email address is case-sensitive. If you plan to delegate access to another user, make sure that this user also has the License Administrator role. |
+| Ensure that the email address you use matches the email address of the License Administrator. Consider that this email address is case-sensitive. If you plan to delegate access to another user, make sure that he also has the License Administrator role. |
 
-1. In the Vault drop-down list, specify the storage vault that you want to use. To manage vaults, click the Manage link. For more information, see the [Managing Veeam Data Cloud Vault Subscriptions](https://helpcenter.veeam.com/docs/vdc/userguide/vault_manage_subscriptions.html) section in the Veeam Data Cloud User Guide.
+1. In the Register New Product window, under the Registration Token filed, paste the registration code you have copied.
+2. Click Register. The backup server will be registered with Veeam Data Cloud.
+
+[![Step 3. Specify Veeam Account](images/veeam_vault_backup_server_code_web.webp)](images/veeam_vault_backup_server_code_web.webp)
+
+Specifying Vault Settings
+
+To specify the Vault settings, do the following:
+
+In the Vault drop-down list, specify the storage vault that you want to use. To manage vaults, click the Manage link. For more information, see the [Managing Veeam Data Cloud Vault Subscriptions](https://helpcenter.veeam.com/docs/vdc/userguide/vault_manage_subscriptions.html) section in the Veeam Data Cloud User Guide.
 
 |  |
 | --- |

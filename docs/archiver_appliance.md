@@ -3,8 +3,8 @@ title: "Archiver Appliances"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archiver_appliance.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Archiver Appliances
@@ -31,7 +31,7 @@ Consider the following:
 
 * The archiver appliance is not used in case you do not configure it at the Archiver Appliance step of the [Adding Amazon S3 Glacier](glacier_archiver_appliance.md) or [Adding Azure Archive Storage](azure_archive_tier_archiver_appliance.md) wizard.
 
-* The archiver appliance is used in case extents of your scale-out backup repository consists of the same object storage providers. For example, performance or capacity extents consist of [Microsoft Azure Blob storage](osr_adding_blob_storage.md) and the archive extent consist of [Azure Archive Storage](azure_archive_tier_archiver_appliance.md). If your scale-out backup repository has a mixed configuration, for example performance or capacity extents consist of an [Adding S3 Compatible Object Storage](adding_s3c_object_storage.md) and the archive extent consist of Azure Archive Storage, Veeam Backup & Replication will use the other component for the data transfer operation that might result in additional costs.
+* The archiver appliance is used in case extents of your scale-out backup repository consists of the same object storage providers. For example, performance or capacity extents consist of [Microsoft Azure Blob storage](osr_adding_blob_storage.md) and the archive extent consist of [Azure Archive Storage](azure_archive_tier_archiver_appliance.md). If your scale-out backup repository has a mixed configuration (for example, the performance or capacity extents consist of [S3 Compatible Object Storage](adding_s3c_object_storage.md), and the archive extent consists of Azure Archive Storage), Veeam Backup & Replication will use the other component for the data transfer operation, which might result in additional costs.
 
 * The archiver appliance is not used for the direct data transfer from the performance tier to the archive tier if your scale-out backup repository has the following configuration:
 

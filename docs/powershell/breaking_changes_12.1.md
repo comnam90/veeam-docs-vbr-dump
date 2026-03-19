@@ -3,8 +3,8 @@ title: "Breaking Changes"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/breaking_changes_12.1.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Breaking Changes
@@ -28,11 +28,12 @@ File Backup
 
 In this version, Veeam PowerShell covers functionality related to the unstructured data backup. This feature allows you to back up and restore unstructured data: content of various file shares and object storage repositories. To support this functionality, the following changes have been done for cmdlets related to file backup jobs:
 
-* A number of cmdelts that were used to work with file backup jobs are deprecated. For more information, see [Deprecated Cmdlets](deprecated_cmdlets.md).
+* A number of cmdlets that were used to work with file backup jobs are deprecated. For more information, see [Deprecated Cmdlets](deprecated_cmdlets.md).
 * The following parameter types have been changed for the [Add-VBRNASBackupJob](add-vbrnasbackupjob.md) and [Set-VBRNASBackupJob](set-vbrnasbackupjob.md) cmdlets:
 
+File Backup
+
 | Parameter | Old Type | New Type |
-| --- | --- | --- |
 | LongTermArchivalOptions | VBRNASBackupArchivalOptions | VBRUnstructuredBackupArchivalOptions |
 | ShortTermRetentionType | VBRNASBackupShortTermRetentionType | VBRUnstructuredBackupShortTermRetentionType |
 | LongTermRetentionType | VBRNASBackupLongTermRetentionType | VBRUnstructuredBackupLongTermRetentionType |

@@ -3,8 +3,8 @@ title: "Canceling Instant Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_instant_cancel.html"
-last_updated: "8/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Canceling Instant Recovery
@@ -28,7 +28,7 @@ To cancel the instant recovery session in Veeam Explorer for Oracle, do the foll
 
 Alternatively, you can right-click the database and select Cancel.
 
-[![Cancelling Instant Recovery](images/instant_cancel_veor.webp)](images/instant_cancel_veor.webp "Cancelling Instant Recovery")
+[![Canceling Instant Recovery](images/instant_cancel_veor.webp)](images/instant_cancel_veor.webp "Canceling Instant Recovery")
 
 Canceling Instant Recovery in Veeam Backup & Replication Console
 

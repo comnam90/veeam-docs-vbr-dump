@@ -3,8 +3,8 @@ title: "New-VBRNotificationOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrnotificationoptions.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRNotificationOptions
@@ -37,8 +37,9 @@ This cmdlet creates the [VBRNotificationOptions](vbrnotificationoptions.md) obje
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | EnableAdditionalNotification | Enables the email notification. You can set it to True (enabled) or False (disabled). | SwitchParameter | False | Named | False |
 | AdditionalAddress | Specifies the email address for job notifications. | String | False | Named | False |
 | UseNotificationOptions | Defines that the notifications must use custom or global settings. You can set it to True (custom settings) or False (global settings).  Use the following parameters to set the custom settings:   * NotifyOnSuccess * NotifyOnWarning * NotifyOnError * NotifyOnLastRetryOnly | SwitchParameter | False | Named | False |
@@ -48,7 +49,7 @@ Parameters
 | NotifyOnError | Defines that the cmdlet will send the email if the job finished with error.  Default: True.  Note: To disable this option, set the parameter value to $false. That is, parameter\_name:$false. | SwitchParameter | False | Named | False |
 | NotifyOnLastRetryOnly | Defines that the cmdlet will send the email about the final job status. If you do not enable this option, Veeam Backup & Replication will send one notification per every job retry.  Default: True.  Note:   * This parameter is not available for backup policies that Veeam Agent backup jobs use to back up computers. * To disable this parameter, set the value to $false. That is, parameter\_name:$false. | SwitchParameter | False | Named | False |
 | EnableSnmpNotification | Defines that the SNMP traps will be sent when the job completes successfully.  Note: This parameter is not available for the following types of jobs:   * Backup policies that Veeam Agent backup jobs use to back up computers. * Veeam Agent backup jobs. | SwitchParameter | False | Named | False |
-| NotifyWhenWaitingForTape | Defines that the cmdlet will send the email if the tape job cannot start because there are no available tapes.  Note: This parameter is not available for the following types of jobs:   * Backup policies that Veeam Agent backup jobs use to back up computers. * Veaam Agent backup jobs. | SwitchParameter | False | Named | False |
+| NotifyWhenWaitingForTape | Defines that the cmdlet will send the email if the tape job cannot start because there are no available tapes.  Note: This parameter is not available for the following types of jobs:   * Backup policies that Veeam Agent backup jobs use to back up computers. * Veeam Agent backup jobs. | SwitchParameter | False | Named | False |
 | EnableDailyNotification | Defines that the cmdlet will send email notification daily.  Use the SendTime parameter to specify the time when the cmdlet must send the email notification. | SwitchParameter | False | Named | False |
 | SendTime | Specifies the time when the cmdlet must send the email notification. | TimeSpan | False | Named | False |
 

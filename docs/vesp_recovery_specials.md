@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_recovery_specials.html"
-last_updated: "2/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -36,7 +36,7 @@ If you start item-level recovery directly for the backup of the SharePoint VM, m
 Backup of the same VM by both Veeam Backup & Replication and Veeam Agent for Microsoft Windows may be required, for example, if Microsoft SQL Server running on the VM operates as part of a failover cluster.
 
 * Veeam Explorer for Microsoft SharePoint must stay open during all data recovery operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
-* [For machines with ReFS] The mount server, staging server, backup server and the machine where the console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
+* [For machines with ReFS] The mount server, staging server, backup server and the machine where the console is installed must support the same or a later ReFS than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
 
 |  |
 | --- |
@@ -65,6 +65,9 @@ Consider the following:
 * Some values of the Rating Settings of Discussion lists are not restored.
 * Make sure to view information about unsupported Microsoft SharePoint lists before restoring them. In particular, hidden lists are not displayed in Veeam Explorer for Microsoft SharePoint after a site backup. Thus, such lists cannot be exported. For more information, see [Unsupported SharePoint Lists](unsupported_sharepoint_lists.md).
 * [For restore from Veeam Backup & Replication backups] Restore of values in custom columns is not supported for folders and document sets.
+* Restore of sensitivity labels applied to SharePoint lists is not supported.
+
+* If your SharePoint file history maintains both major and minor versions, restoring a specific major file version creates two files: one preserving the backup version and another incremented to a minor version. The preserved version has the Modified and Modified By properties different from the backup, while the incremented version retains the backups property values. This behavior is expected and results from Microsoft API specifics.
 
 Restore of List Items
 
@@ -126,6 +129,8 @@ Consider the following:
 | --- |
 | Note |
 | Consider the following:   * In case you attempt to restore such items, the following error message will be logged: Item <item> is skipped: restoration of items based on SharePoint default template is not supported. * In case you attempt to save such items, the following error message will be logged: Unable to save document <item>. Document content is not available. |
+
+* Restore of sensitivity labels applied to SharePoint sites is not supported.
 
 Export and Import
 

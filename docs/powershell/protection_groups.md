@@ -3,8 +3,8 @@ title: "Veeam Agent Management Protection Groups"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/protection_groups.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Agent Management Protection Groups
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlet in this topic to perform the following operations.
 
-| Cmlet | Operation |
-| --- | --- |
+Veeam Agent Management Protection Groups
+
+| Cmdlet | Operation |
 | [Add-VBRProtectionGroup](add-vbrprotectiongroup.md) | Adds protection groups. |
 | [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) | Returns protection groups. |
 | [Set-VBRProtectionGroup](set-vbrprotectiongroup.md) | Modifies protection groups. |

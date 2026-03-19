@@ -3,8 +3,8 @@ title: "Restore to Another Server Using Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_another_creds.html"
-last_updated: "9/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore to Another Server Using Credentials
@@ -32,7 +32,7 @@ To restore database, do the following steps:
 | --- |
 | Enter username: Enter password for <username>: |
 
-1. Depending on the name of the target instane, perform one of the following operations:
+1. Depending on the name of the target instance, perform one of the following operations:
 
 * If you restore to to another instance with the same name as the backed-up instance, continue the restore operation in the same way you restore to the original server. For details, see [Restore to Original Server](db2_restore_to_original.md).
 

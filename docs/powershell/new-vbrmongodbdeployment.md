@@ -3,8 +3,8 @@ title: "New-VBRMongoDBDeployment"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrmongodbdeployment.html"
-last_updated: "9/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRMongoDBDeployment
@@ -42,7 +42,7 @@ This cmdlet provides parameter sets that allow you to:
 
 Detailed Description
 
-This cmdlet discovers replica sets using a single MongoDB daemon within the deployed MongoDB aplication.
+This cmdlet discovers replica sets using a single MongoDB daemon within the deployed MongoDB application.
 
 Keep in mind the following requirements:
 
@@ -51,8 +51,9 @@ Keep in mind the following requirements:
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | HostName | Specifies the DNS name or an IP address of the computer that you want to use within the MongoDB application protection group.  Note: Keep in mind that the MongoDB application host list becomes a template for the MongoHosts list for the UI. You can manually select which hosts should be included in the pool group. After that, you can use Linux root access credentials to automatically deploy Veeam Agent for Linux on the selected hosts. | String | True | Named | False |
 | Port | Specifies the port number over which Veeam Backup & Replication communicates with the MongoDB replica set. By default, Veeam Backup & Replication uses port 27017. | Int32 | True | Named | False |
 | Credentials | Specifies the credentials you want to use for authenticating with the MongoDB replica set. | Accepts the CCredentials object. To create this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | False |

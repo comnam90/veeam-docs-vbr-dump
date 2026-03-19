@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_preparation_permissions.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Permissions
@@ -17,9 +17,10 @@ For general requirements for permissions that must be provided to the user accou
 
 Permissions for Veeam Plug-In
 
+Permissions for Veeam Plug-In
+
 | Operation | Required Roles and Permissions |
-| --- | --- |
-| Installing and updaing Veeam Plug-In | The account used for installing and updating Veeam Plug-In must have root privileges. |
+| Installing and updating Veeam Plug-In | The account used for installing and updating Veeam Plug-In must have root privileges. |
 | Performing backup and restore operations in Veeam Plug-In | The account used to start SAP MaxDB Database Manager backup and restore operations must have access to all required files and folders. For details, see [Configuring Environment](plugins_sap_maxdb_deploy_configure.md). |
 | Connecting to Veeam Backup & Replication, managing backups | * The account specified in the Veeam Plug-In configuration settings must be able to authenticate against the Veeam Backup & Replication server. For details, see [Configuring Veeam Plug-In for SAP MaxDB](plugins_sap_maxdb_deploy_configure_vp.md).  * The account specified in the Veeam Plug-In configuration settings must be granted access rights on the Veeam backup repository where you want to store backups.   To learn how to grant permissions on Veeam repositories, see [Access and Encryption Settings on Repositories](plugins_sap_maxdb_deploy_repo_permissions.md).   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, see required permissions in [Configuring Veeam Plug-In for SAP MaxDB](plugins_sap_maxdb_deploy_configure_vp.md). |
 

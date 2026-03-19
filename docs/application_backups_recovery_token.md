@@ -3,8 +3,8 @@ title: "Creating Recovery Token"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_backups_recovery_token.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Recovery Token
@@ -17,7 +17,7 @@ You can create a recovery token on the Veeam Backup & Replication side. Then, on
 * [Veeam Plug-In for Oracle RMAN](restore_other_server_rman.md#token)
 * [Veeam Plug-In for SAP HANA](restore_saphana_other_server.md#token)
 * [Veeam Plug-In for SAP on Oracle](restore_sap_orcl_other_server.md#token)
-* Veeam Plug-In for Microsoft SQL Server
+* [Veeam Plug-In for Microsoft SQL Server](mssql_db_restore_another_server.md)
 
 Limitations
 
@@ -50,5 +50,12 @@ You can create a recovery token for several backups. To do this, press and hold 
 | Alternatively, you can create and modify the existing recovery token using the PowerShell console. To learn more, see the [Working with Tokens](https://helpcenter.veeam.com/docs/vbr/powershell/tokens.html?ver=13) section in the Veeam PowerShell Reference. |
 
 [![Create Recovery Token](images/plugins_application_backup_create_recovery_token.webp)](images/plugins_application_backup_create_recovery_token.webp "Create Recovery Token")
+
+After the recovery token is generated, you can get access to the backup on the machine with Veeam Plug-In side and recover the database that is stored in the backup. To learn more about operations on the computer side, see one of the following sections depending on Veeam Plug-In you work with:
+
+* [Veeam Plug-In for Oracle RMAN](restore_other_server_rman.md#token)
+* [Veeam Plug-In for SAP HANA](restore_saphana_other_server.md#token)
+* [Veeam Plug-In for SAP on Oracle](restore_sap_orcl_other_server.md#token)
+* [Veeam Plug-In for Microsoft SQL Server](mssql_db_restore_another_server.md)
 
 

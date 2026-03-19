@@ -3,8 +3,8 @@ title: "Set-VBRMailNotificationConfiguration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrmailnotificationconfiguration.html"
-last_updated: "4/24/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRMailNotificationConfiguration
@@ -35,8 +35,9 @@ This cmdlet modifies global email notification settings.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | SmtpServer | Specifies a full DNS name or an IP address of the SMTP server. The cmdlet will use this server to send email notifications. | String | False | Named | False |
 | Sender | Specifies an email address. The cmdlet will send email notifications from this address. | String | True | Named | False |
 | Recipient | Specifies the recipient addresses. | String | False | Named | False |
@@ -65,7 +66,7 @@ Examples
 
 Modifying Global Email Notification Settings
 
-This command modifes the global notification settings. Veeam Backup & Replication will send notification settings with the following options:
+This command modifies the global notification settings. Veeam Backup & Replication will send notification settings with the following options:
 
 * The IP address of the SMTP server that Veeam Backup & Replication will use to send messages is 172.17.53.12.
 * The messages are sent from the backup@tech.com email address.

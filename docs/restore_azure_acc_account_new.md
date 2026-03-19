@@ -3,8 +3,8 @@ title: "Creating New Entra ID Application"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_acc_account_new.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating New Entra ID Application
@@ -16,7 +16,7 @@ Configuring Microsoft Entra Application
 
 When you choose to create a new account, Veeam Backup & Replication registers a new Microsoft Entra ID (formerly Azure Active Directory) application in Microsoft Azure. Veeam Backup & Replication will use this application to authenticate to Azure. For more information on Microsoft Entra applications, see [Microsoft Azure Docs](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-objects). To create the Microsoft Entra application, you must use a single-use verification code that Veeam Backup & Replication provides you.
 
-At the Subscirption step of the wizard, do the following:
+At the Subscription step of the wizard, do the following:
 
 1. Click Copy to clipboard to copy the verification code.
 2. Click the <https://microsoft.com/devicelogin> link.

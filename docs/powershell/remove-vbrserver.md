@@ -3,8 +3,8 @@ title: "Remove-VBRServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrserver.html"
-last_updated: "5/7/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Remove-VBRServer
@@ -30,11 +30,12 @@ This cmdlet removes a host from the backup infrastructure.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies the array of servers you want to remove. | Accepts the CHost[] object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | 0 | True (ByValue, |
 | SSHElevateToRoot | Defines that non-root users are provided with the root account privileges.  Default: False. | SwitchParameter | False | Named | False |
-| SSHFailoverToSu | Defines that Veeam Backup & Replication will use the su command if the sudo command failes.  If you provide this parameter, Veeam Backup & Replication will failover to the su command if the sudo command fails. Otherwise, if sudo failes Veeam Backup & Replication will not be able to add Linux credentials records.  Default: False. | SwitchParameter | False | Named | False |
+| SSHFailoverToSu | Defines that Veeam Backup & Replication will use the su command if the sudo command fails.  If you provide this parameter, Veeam Backup & Replication will failover to the su command if the sudo command fails. Otherwise, if sudo fails Veeam Backup & Replication will not be able to add Linux credentials records.  Default: False. | SwitchParameter | False | Named | False |
 | SSHPasword | Specifies the password you want to use for authenticating with the Linux server.  Note: To add a Linux host using an SSH key fingerprint, provide the Confirm parameter. | String | False | Named | False |
 | SSHPort | Specifies the Web service port for the connection to the Linux server console. | Int32 | False | Named | False |
 | SSHRootPassword | Specifies the root password used for authentication. | String | False | Named | False |

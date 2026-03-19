@@ -3,8 +3,8 @@ title: "New-VBRObjectStorageBackupJobObject"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrobjectstoragebackupjobobject.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRObjectStorageBackupJobObject
@@ -30,14 +30,15 @@ This cmdlet creates the VBRObjectStorageBackupJobObject object. This object cont
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies object storage which data you want to back up. | Accepts the VBRObjectStorageServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Container | Specifies a bucket or a container that you want to back up. | String | False | Named | False |
 | Path | Specifies object path or prefixes within a bucket or a container. | String | False | Named | False |
 | IsObject | Note: This parameter is required if the path that you specify is an object.  Defines that the cmdlet will recognize the path as an object. If you omit this parameter, the cmdlet will recognize the path as the prefix. | SwitchParameter | False | Named | False |
 | InclusionMask | Specifies a file mask for objects that you want to add to the object storage backup job. The cmdlet will back up only objects specified in this file mask. | Accepts the VBRObjectStorageBackupMask[] object. To get this object, run the [New-VBRObjectStorageBackupTagMask](new-vbrobjectstoragebackuptagmask.md) cmdlet. | False | Named | False |
-| ExclusionMask | Specifies a file mask for objects that you do not want to add to the object storage backup job. The cmdlet will not back up these objects. | Accepts the VBRObjectStorageBackupMask[] object. To get this object, run the following cmdles:   * [New-VBRObjectStorageBackupContainerPathMask](new-vbrobjectstoragebackupcontainerpathmask.md) * [New-VBRObjectStorageBackupServerPathMask](new-vbrobjectstoragebackupserverpathmask.md) * [New-VBRObjectStorageBackupTagMask](new-vbrobjectstoragebackuptagmask.md) (for include and exclude) | False | Named | False |
+| ExclusionMask | Specifies a file mask for objects that you do not want to add to the object storage backup job. The cmdlet will not back up these objects. | Accepts the VBRObjectStorageBackupMask[] object. To get this object, run the following cmdlets:   * [New-VBRObjectStorageBackupContainerPathMask](new-vbrobjectstoragebackupcontainerpathmask.md) * [New-VBRObjectStorageBackupServerPathMask](new-vbrobjectstoragebackupserverpathmask.md) * [New-VBRObjectStorageBackupTagMask](new-vbrobjectstoragebackuptagmask.md) (for include and exclude) | False | Named | False |
 
 <CommonParameters>
 

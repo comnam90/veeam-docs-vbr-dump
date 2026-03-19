@@ -3,14 +3,14 @@ title: "Performing VM Restore to Microsoft Azure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_to_microsoft_azure.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing VM Restore to Microsoft Azure
 
 
-Veeam Plug-in for Scale Computing HyperCore allows you to restore Scale Computing HyperCore VMs to Microsoft Azure as Azure VMs. For more information, see section [Restore to Microsoft Azure](restore_azure.md).
+Veeam Plug-in for Scale Computing HyperCore allows you to restore Scale Computing HyperCore VMs to Microsoft Azure as Azure VMs. For more information, see [Restore to Microsoft Azure](restore_azure.md).
 
 To restore a VM to Microsoft Azure, do the following:
 

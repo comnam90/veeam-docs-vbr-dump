@@ -3,8 +3,8 @@ title: "Analyzing Performance Bottlenecks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_bottlenecks.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Analyzing Performance Bottlenecks
@@ -39,7 +39,7 @@ Alternatively, right-click the job and select Statistics.
 |  |
 | --- |
 | Tip |
-| To see the bottleneck statistics for a specific VM, click Show Details, select the VM name in the Name column and check the Load record in the Action column. To learn how to analyze the statistics, see section [Performance Bottlenecks](detecting_bottlenecks.md). |
+| To see the bottleneck statistics for a specific VM, click Show Details, select the VM name in the Name column and check the Load record in the Action column. To learn how to analyze the statistics, see [Performance Bottlenecks](detecting_bottlenecks.md). |
 
 [![Analyzing Performance Bottlenecks](images/sch_bottlenecks.webp)](images/sch_bottlenecks.webp "Analyzing Performance Bottlenecks")
 

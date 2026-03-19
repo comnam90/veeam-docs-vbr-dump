@@ -3,8 +3,8 @@ title: "Get-VBRUnstructuredServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredserver.html"
-last_updated: "12/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRUnstructuredServer
@@ -63,12 +63,13 @@ This cmdlet returns an array of unstructured data sources added to the inventory
 |  |
 | --- |
 | Important |
-| By detault, the Get-VBRUnstructuredServer returns the root server or file share. To get a bucket or container, specify the Backup parameter. |
+| By default, the Get-VBRUnstructuredServer returns the root server or file share. To get a bucket or container, specify the Backup parameter. |
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies a name of unstructured data sources. The cmdlet will return an array of unstructured data sources with the specified name. | String[] | True | Named | False |
 | Id | Specifies an ID of a unstructured data sources. The cmdlet will return an array of unstructured data sources with the specified ID. | Guid[] | True | Named | False |
 | SANEntity | Specifies a name of an enterprise NAS system. The cmdlet will return an array of file shares residing on this NAS system. | Accepts the VBRSANEntity[] object. To get this object, run the [Get-NetAppHost](get-netapphost.md) cmdlet. | True | Named | False |

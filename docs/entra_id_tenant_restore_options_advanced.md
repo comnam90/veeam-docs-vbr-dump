@@ -3,8 +3,8 @@ title: "Configuring Advanced Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore_options_advanced.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Advanced Options
@@ -31,7 +31,7 @@ Restoring Item Relationships
 |  |
 | --- |
 | Note |
-| Restoring item relationships is not supported for Conditional Access policies. |
+| Restoring item relationships is not supported for conditional access policies. |
 
 Restoring from Entra ID Recycle Bin
 

@@ -3,8 +3,8 @@ title: "Find-VBRTapeCatalogVersion (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/find-vbrtapecatalogversion.html"
-last_updated: "3/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Find-VBRTapeCatalogVersion (obsolete)
@@ -41,8 +41,9 @@ Run the [Find-VBRTapeCatalog](find-vbrtapecatalog.md) cmdlet to get the list of 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the name of the file you want to get versions for, or search conditions.  You can specify multiple names separated by commas. | String[] | False | Named | False |
 | CatalogFile | Specifies the file you want to get versions for. | Accepts the CatalogueFile object. To get this object, run the [Find-VBRTapeCatalog](find-vbrtapecatalog.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
 

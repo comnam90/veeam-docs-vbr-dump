@@ -3,14 +3,14 @@ title: "Changed Block Tracking"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_changed_block_tracking.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Changed Block Tracking
 
 
-The changed block tracking (CBT) mechanism allows Veeam Backup & Replicationto reduce the amount of data read from processed VMs, and to increase the speed and efficiency of incremental backups:
+The changed block tracking (CBT) mechanism allows Veeam Backup & Replication to reduce the amount of data read from processed VMs, and to increase the speed and efficiency of incremental backups:
 
 * During a full backup session Veeam Backup & Replication reads only written data blocks, while unallocated data blocks are filtered out.
 * During an incremental backup session, Veeam Backup & Replication reads only those data blocks that have changed since the previous backup session.

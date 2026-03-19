@@ -3,8 +3,8 @@ title: "Deleting from Disk"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_delete_disk.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Deleting from Disk
@@ -23,6 +23,6 @@ To delete replica files from disks:
 2. In the [inventory pane](vbr_ui.md), click the Replicas node.
 3. In the working area, select the necessary replica and click Remove from > Disk on the ribbon. As an alternative, right-click the replica and select Delete from disk.
 
-[![vCD REplica Delee From Disk](images/vcd_replica-delete_from_disk.webp)](images/vcd_replica-delete_from_disk.webp "vCD REplica Delee From Disk")
+[![vCD Replica Delete From Disk](images/vcd_replica-delete_from_disk.webp)](images/vcd_replica-delete_from_disk.webp "vCD Replica Delete From Disk")
 
 

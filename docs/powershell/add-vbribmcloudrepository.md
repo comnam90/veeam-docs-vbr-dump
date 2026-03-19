@@ -3,8 +3,8 @@ title: "Add-VBRIBMCloudRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbribmcloudrepository.html"
-last_updated: "9/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRIBMCloudRepository
@@ -26,12 +26,13 @@ Syntax
 
 Detailed Description
 
-This cmdelt adds the IBM Cloud object storage repository to the backup infrastructure.
+This cmdlet adds the IBM Cloud object storage repository to the backup infrastructure.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | AmazonS3Folder | Specifies an S3 compatible folder. Veeam Backup & Replication will store backup files in this folder. | Accepts the VBRAmazonS3Folder object. To get this object, run the [Get-VBRAmazonS3Folder](get-vbramazons3folder.md) cmdlet. | True | Named | True (ByValue) |
 | Connection | Specifies an active session with S3 compatible object storage. The cmdlet will add it as a backup repository. | Accepts the VBRAmazonS3CompatibleConnection object. To get this object, run the [Connect-VBRAmazonS3CompatibleService](connect-vbramazons3compatibleservice.md) cmdlet and set the CapacityTier property as the ServiceType parameter value. | True | Named | False |
 | Name | Specifies a name of an object storage repository. The cmdlet will add the object storage repository with this name. | String | False | Named | False |
@@ -42,7 +43,7 @@ Parameters
 | ImmutabilityPeriod | Specifies the immutability period in days.  Default: 30. | Int32 | False | Named | False |
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
 | ProxyAppliance | Specifies a helper appliance. Veeam Backup & Replication will use this appliance to perform a health check of backup files and apply retention to file backup job files. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | True (ByPropertyName) |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks.  Default: False. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks.  Default: False. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |

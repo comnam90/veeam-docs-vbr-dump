@@ -3,8 +3,8 @@ title: "Start-VBRCDPReplicaFailback"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcdpreplicafailback.html"
-last_updated: "10/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRCDPReplicaFailback
@@ -42,12 +42,13 @@ This cmdlet provides parameter sets that allow you to:
 
 Detailed Description
 
-This cmdlet starts to perform failback from CDP replica to the production VM. The CPD replica must be in the failover status. After you start to commit failback, the cmdlet switches the status of the CDP replica from the Fialover state to the Ready to switch state.
+This cmdlet starts to perform failback from CDP replica to the production VM. The CPD replica must be in the failover status. After you start to commit failback, the cmdlet switches the status of the CDP replica from the Failover state to the Ready to switch state.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Replica | Specifies a CDP replica from which you want to perform failback. | Accepts the VBRCDPReplica object. To create this object, run the [Get-VBRCDPReplica](get-vbrcdpreplica.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | DestinationVM | For performing failback to a new location.  Specifies a VM that is restored in a different location. The cmdlet will perform failback from the CDP replica to this VM. | Accepts the CViVmItem object. To get this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | True | Named | False |
 | Server | For performing failback to a new location or to any location but with different settings.  Specifies an ESXi host or cluster. The cmdlet will perform failover of the CDP replica to a VM that will be recovered on this ESXi host or cluster. | Accepts the Object object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | False |
@@ -81,7 +82,7 @@ None.
 
 Examples
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Performing Failback from CDP Replica to Orignal VM
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Performing Failback from CDP Replica to Original VM
 
 |  |  |
 | --- | --- |

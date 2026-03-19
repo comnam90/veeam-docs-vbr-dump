@@ -3,8 +3,8 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_licensing.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Licensing
@@ -20,7 +20,7 @@ You can obtain the following types of licenses for Veeam Plug-in for Scale Compu
 
 * Evaluation license is a free license that can be used for product evaluation. The license is valid for 30 days from the moment of the product download.
 
-To obtain this license, request a trial key on the Veeam downloads page as described in the Veeam Backup & Replication User Guide, section [Obtaining and Renewing License](license_obtain.md).
+To obtain this license, request a trial key on the Veeam downloads page as described in section [Obtaining and Renewing License](license_obtain.md).
 
 * Subscription license is a paid license with a limited subscription term. The expiration date of the Subscription license is set to the end of the subscription term. The Subscription license term is normally 1–5 years from the license issue date.
 
@@ -28,7 +28,7 @@ To obtain this license, choose the required subscription term on the [Veeam Back
 
 * Perpetual license is a paid license without an expiration date. The Perpetual license typically includes one year period of basic support and maintenance that can be extended.
 
-To obtain this license, [contact a reseller in your region](https://www.veeam.com/buy-veeam-products-pricing.html).
+To obtain this license, [contact a reseller in your region](https://www.veeam.com/partners/find-a-partner.html).
 
 After you obtain a license, install it on the backup server as described in section [Installing License](install_license.md).
 

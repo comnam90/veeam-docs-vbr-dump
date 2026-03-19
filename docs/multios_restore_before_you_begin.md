@@ -3,14 +3,14 @@ title: "Linux File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_before_you_begin.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Linux File Recovery
 
 
-This section lists considerations and limitations that apply to recovery from Linux workloads.
+This section lists considerations and limitations that apply to recovery from Linux workloads. For the list of common considerations and limitations, see [Considerations and Limitations](vbr_flr_considerations_common.md).
 
 Infrastructure Components
 

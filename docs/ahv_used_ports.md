@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_used_ports.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Ports
@@ -26,6 +26,7 @@ Workers
 | Veeam backup repository (or [gateway server](gateway_server.md)) | TCP | 6162 | Default range of ports used as transmission channels for jobs and restore sessions. The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Veeam Update Repository (repository.veeam.com)  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) (cloudfront.net, amazonaws.com) | TCP/HTTPS | 443 | Used to download worker update packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
 | Veeam Update Repository (local mirror)  (<yourlocalmirrorrepository.domain>) | TCP | 443 or 80 | Used to download worker update packages from your local mirror repository if enabled as described in section [Setting Up Global Update Configuration](update_appliance_configure_updates.md#global_configuration). |
+| NTP server | UDP | 123 | Used for time synchronization with NTP servers. |
 
 Backup Server
 

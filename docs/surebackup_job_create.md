@@ -3,8 +3,8 @@ title: "Creating SureBackup Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_create.html"
-last_updated: "9/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating SureBackup Job
@@ -28,7 +28,7 @@ To create a new SureBackup job, use the New SureBackup Job wizard.
 | TIP |
 | You can skip this step and add a backup job as a source of backups at the [Linked Jobs](#job_12.1) step of the wizard. |
 
-![Creating SureBackup Job](images/surebackup_job_app_group.webp "Selet Application Group")
+![Creating SureBackup Job](images/surebackup_job_app_group.webp "Select Application Group")
 
 1. At the Linked Jobs step of the wizard, add a backup job to use as a source of backups for the SureBackup job and specify settings for backup job processing. To learn more, see [Link Backup or Replication Job](https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_joblink_vm.html?ver=13#linking-backup-or-replication-job-in-veeam-backup---replication-12-1) and [Specify Recovery Verification Options and Tests](surebackup_job_tests_vm.md).
 

@@ -3,8 +3,8 @@ title: "Step 3. Specify Veeam Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Veeam Account
@@ -17,12 +17,12 @@ Specifying User Credentials
 To specify the authorization settings:
 
 1. To authorize using your Veeam credentials, click the Authorize link.
-2. In the Veeam authorization window enter your credentials for the Veeam account. After that, your backup server will be registered in the My Account portal.
+2. In the Veeam authorization window enter your credentials for the Veeam account. After that, your backup server will be registered in Veeam Data Cloud.
 
 |  |
 | --- |
 | Note |
-| Ensure that the email address you use matches the email address of the License Administrator. Consider that this email address is case-sensitive. If you plan to delegate access to another user, make sure that this user also has the License Administrator role. |
+| Consider the following:   * Ensure that the email address you use matches the email address of the License Administrator. Consider that this email address is case-sensitive. If you plan to delegate access to another user, make sure that this user also has the License Administrator role. * In Veeam Backup & Replication earlier than build 13.0.1.2067, the account you use must have access to the My Account portal and Veeam Data Cloud. Veeam will register the backup server in My Account and in Veeam Data Cloud. * In Veeam Backup & Replication build 13.0.1.2067 and later, the account you use does not need access to the My Account portal. Starting from this product version, Veeam Backup & Replication and Veeam Data Cloud Vault are connected directly, without using My Account. Veeam will register the backup server in Veeam Data Cloud. |
 
 1. In the Vault drop-down list, specify the storage vault that you want to use. To manage vaults, click the Manage link. For more information, see the [Managing Veeam Data Cloud Vault Subscriptions](https://helpcenter.veeam.com/docs/vdc/userguide/vault_manage_subscriptions.html) section in the Veeam Data Cloud User Guide.
 

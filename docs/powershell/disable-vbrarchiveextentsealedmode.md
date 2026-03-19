@@ -3,8 +3,8 @@ title: "Disable-VBRArchiveExtentSealedMode"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrarchiveextentsealedmode.html"
-last_updated: "4/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Disable-VBRArchiveExtentSealedMode
@@ -32,8 +32,9 @@ Run the [Enable-VBRArchiveExtentSealedMode](enable-vbrarchiveextentsealedmode.md
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | ArchiveExtent | Specifies the archive extent.The cmdlet will disable the Sealed mode for this extent. | Accepts the [VBRArchiveExtent](vbrarchiveextent.md) object. To get this object, run the [Get-VBRArchiveExtent](get-vbrarchiveextent.md) cmdlet. | True | Named | True (ByValue, |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
@@ -47,7 +48,7 @@ Output Object
 
 Examples
 
-Disabling Sealeded Mode for Archive Extent
+Disabling Sealed Mode for Archive Extent
 
 This example shows how to disable Sealed mode for the specified archive extent of the scale-out backup repository.
 

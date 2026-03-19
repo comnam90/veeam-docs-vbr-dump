@@ -3,8 +3,8 @@ title: "Step 6. Specify Backup Scope Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_scope_unix.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 6. Specify Backup Scope Settings
@@ -36,8 +36,13 @@ To configure a filter:
 1. At the Objects step of the wizard, click Advanced.
 2. Specify what files you want to back up:
 
-* In the Include masks field, specify file names and masks for file types that you want to back up, for example, Report.pdf or \*filename\*. Veeam Agent will create a backup only for selected files. Other files will not be backed up.
-* In the Exclude masks field, specify file names and masks for file types that you do not want to back up, for example, OldReports.tar.gz or \*.odt. Veeam Agent will back up all files except files of the specified type.
+* In the Include masks field, you can specify file names and masks for files or file types that you want to back up — for example, Report.pdf or \*filename\*. Veeam Agent will create a backup only for selected files. Other files will not be backed up.
+* In the Exclude masks field, you can specify paths to directories, as well as names and masks for files or file types, you do not want to back up — for example,  /home/user01, OldReports.tar.gz or \*.odt. Veeam Agent will back up all files except files of the specified type.
+
+|  |
+| --- |
+| NOTE |
+| Consider the following when excluding directories:   * Before you specify a directory to exclude, you must first include a higher-level parent directory in the backup scope. For example, if you want to back up all files on the computer except the /home/user01/archive\_reports directory, you must include the root directory (/) and specify /home/user01/archive\_reports in the exclude masks. * You must specify the full path to each directory you want to exclude. Wildcard characters are not supported in directory paths. |
 
 1. Click Add.
 2. Repeat steps 2–3 for each mask that you want to add.

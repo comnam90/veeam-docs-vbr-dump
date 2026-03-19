@@ -3,8 +3,8 @@ title: "Sync-HP3Volume"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-hp3volume.html"
-last_updated: "2/16/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Sync-HP3Volume
@@ -41,8 +41,9 @@ Run the [Sync-HP3Storage](sync-hp3storage.md) cmdlet to rescan an entire HPE 3PA
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Volume | Specifies an array of storage volumes that you want to rescan. | Accepts the CSanVolume[] object. To get this object, run the [Get-HP3Volume](get-hp3volume.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>

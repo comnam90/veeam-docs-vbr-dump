@@ -3,8 +3,8 @@ title: "Add-VBRGoogleCloudRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrgooglecloudrepository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRGoogleCloudRepository
@@ -32,8 +32,9 @@ This cmdlet adds the Google Cloud object storage repository to the backup infras
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Folder | Specifies a Google Cloud folder. Veeam Backup & Replication will move backup files into this folder. | Accepts the VBRGoogleCloudFolder object. To create this object, run the [New-VBRGoogleCloudFolder](new-vbrgooglecloudfolder.md) cmdlet. | True | Named | True (ByValue) |
 | Connection | Specifies an active session with a Google Cloud object storage that you want to add to the backup infrastructure. | Accepts the VBRGoogleCloudConnection object. To create this object, run the [Connect-VBRGoogleCloudService](connect-vbrgooglecloudservice.md) cmdlet. | True | Named | False |
 | Name | Specifies a name of the Google Cloud object storage. The cmdlet will add an object storage with this name. | String | False | Named | False |
@@ -48,7 +49,7 @@ Parameters
 | EnableBackupImmutability | Defines that the cmdlet will enable the immutability option.  Default: False. | SwitchParameter | False | Named | False |
 | ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
 | ImmutabilityPeriod | Defines the immutability period in days.  Default: 30.  Maximum: 999. | Int32 | False | Named | False |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure. | SwitchParameter | False | Named | False |
 

@@ -3,8 +3,8 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_storage.html"
-last_updated: "8/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Storage Settings
@@ -29,6 +29,6 @@ If you do not use password loss protection, Veeam Backup & Replication will disp
 
 1. If you want to save this set of settings as the default one, click Save as default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
 
-![Storage Settings](images/file_share_backup_job_advanced_storage.webp "Storage Settigs")
+![Storage Settings](images/file_share_backup_job_advanced_storage.webp "Storage Settings")
 
 

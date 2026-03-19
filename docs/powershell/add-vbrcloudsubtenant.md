@@ -3,8 +3,8 @@ title: "Add-VBRCloudSubTenant"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcloudsubtenant.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRCloudSubTenant
@@ -32,12 +32,13 @@ This cmdlet creates a new cloud subtenant account.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Tenant | Specifies the parent tenant. The cmdlet will use resources of this tenant as parent resources for the subtenant. | Accepts the [VBRCloudTenant](vbrcloudtenant.md) object. To get this object, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. | True | Named | True (ByValue, |
 | Name | Specifies the name you want to assign to the subtenant account.  The subtenant name must meet the following requirements:   * The maximum length of the subtenant name is 128 characters. It is recommended that you create short subtenant names to avoid problems with long paths to backup files on the cloud repository. * The subtenant name may contain space characters. * The subtenant name must not contain the following characters: \/:\*?\"<>|=; as well as Unicode characters. * The subtenant name must not end with the period character [.]. | String | True | Named | False |
 | Password | Specifies the password you want to set to the subtenant account. | String | True | Named | False |
-| Recources | Specifies the quota of the subtenant backup resources you want to give to the subtenant. | Accepts the [VBRCloudSubTenantResource[]](vbrcloudsubtenantresource.md) object. To get this object, run the [New-VBRCloudSubtenantResource](new-vbrcloudsubtenantresource.md) cmdlet. | True | Named | False |
+| Resources | Specifies the quota of the subtenant backup resources you want to give to the subtenant. | Accepts the [VBRCloudSubTenantResource[]](vbrcloudsubtenantresource.md) object. To get this object, run the [New-VBRCloudSubtenantResource](new-vbrcloudsubtenantresource.md) cmdlet. | True | Named | False |
 | Description | Specifies the description of the cloud subtenant account. | String | False | Named | False |
 | HashedPassword | Defines that you submit the hashed password. The hashed passwords are stored in Veeam backup database.  Use this parameter, for example, to restore subtenant accounts. | SwitchParameter | False | Named | False |
 | Disabled | Defines that the cloud subtenant is disabled. | SwitchParameter | False | Named | False |

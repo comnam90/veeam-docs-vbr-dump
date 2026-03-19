@@ -3,8 +3,8 @@ title: "Start-VBRvCloudInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvcloudinstantrecovery.html"
-last_updated: "12/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBRvCloudInstantRecovery
@@ -38,12 +38,13 @@ To restore the VM to another vApp specify the required vApp object for the vApp 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies the restore point of the VM. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
 | vApp | Specifies the vApp that you want to restore the VM to.  Note: This parameter is required if you restore the VM to a new location, or with different settings. If you do not specify this parameter, Veeam Backup & Replication restores the VM with its initial settings and to its original location. | Accepts the CVcdVappItem object. To get this object, run the [Find-VBRvCloudEntity](find-vbrvcloudentity.md) cmdlet. | False | Named | False |
 | VmName | Specifies the name under which the VM should be restored and registered. By default, the original name of the VM is used.  If you are restoring the VM to the same vApp where the original VM is registered and the original VM still resides there, you must change the VM name.  Note: This parameter applies only if you restore the VM to a new location or with different settings. | String | False | Named | False |
-| Datastore | Specifies the datastore you want to connect the restored VM to. If ommited, the VM will be connected to the original datastore.  Note: If you restore the VM to another vApp, make sure that the datastore is available in the Organization Cloud Director hosting the vApp to which the VM is restored. | Accepts the CVcdDatastoreRestoreInfo object. To get this object, run the [Find-VBRViDatastore](find-vbrvidatastore.md) cmdlet. | False | Named | False |
+| Datastore | Specifies the datastore you want to connect the restored VM to. If omitted, the VM will be connected to the original datastore.  Note: If you restore the VM to another vApp, make sure that the datastore is available in the Organization Cloud Director hosting the vApp to which the VM is restored. | Accepts the CVcdDatastoreRestoreInfo object. To get this object, run the [Find-VBRViDatastore](find-vbrvidatastore.md) cmdlet. | False | Named | False |
 | PowerOn | Defines that the VM will be powered up right after it is restored. Otherwise you will need to power up the VM manually. | SwitchParameter | False | Named | False |
 | Reason | Specifies the reason for performing restore of the selected VM.  The information you provide will be saved in the session history so that you can reference it later. | String | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |

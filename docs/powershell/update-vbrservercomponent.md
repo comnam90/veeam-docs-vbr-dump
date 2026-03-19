@@ -3,8 +3,8 @@ title: "Update-VBRServerComponent"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/update-vbrservercomponent.html"
-last_updated: "1/29/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Update-VBRServerComponent
@@ -30,9 +30,10 @@ This cmdlet upgrades all components on managed servers that are added to the bac
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Component | Specifies an array of managed servers. The cmlet will upgrade all components on these servers. | Accepts the VBRPhysicalHost[] object. To get this object, run the [Get-VBRPhysicalHost](get-vbrphysicalhost.md) cmdlet. | False | Named | True (ByValue, |
+| Component | Specifies an array of managed servers. The cmdlet will upgrade all components on these servers. | Accepts the VBRPhysicalHost[] object. To get this object, run the [Get-VBRPhysicalHost](get-vbrphysicalhost.md) cmdlet. | False | Named | True (ByValue, |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
 <CommonParameters>

@@ -3,8 +3,8 @@ title: "Stop-VBRCDPReplicaFailover"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrcdpreplicafailover.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VBRCDPReplicaFailover
@@ -30,10 +30,11 @@ This cmdlet undoes a CDP replica failover.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Replica | Specifies a CDP replica for which you want to undo a failover. The cmdlet will switch back from this  CDP replica to the original VM. | Accepts the VBRCDPReplica object. To create this object, run the [Get-VBRCDPReplica](get-vbrcdpreplica.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
-| ForceFailover | Defines that the cmdlet will force the undo failover operation. If you do not provide this parameter, the cmdlet will not be able to undo a failover in case the host on which the CDP replica resides is not avaialble. | SwitchParameter | False | Named | False |
+| ForceFailover | Defines that the cmdlet will force the undo failover operation. If you do not provide this parameter, the cmdlet will not be able to undo a failover in case the host on which the CDP replica resides is not available. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will undo a failover for a CDP replica without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 | WhatIf | Defines that the cmdlet will write a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
