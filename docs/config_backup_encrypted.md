@@ -3,8 +3,8 @@ title: "Creating Encrypted Configuration Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/config_backup_encrypted.html"
-last_updated: "12/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Encrypted Configuration Backups
@@ -26,7 +26,7 @@ To encrypt configuration backup files, Veeam Backup & Replication uses specific 
 
 The encryption process for a configuration backup job includes the following steps:
 
-1. When you enable the encryption option, you need to enter a password. For more information, see [Enabling Encription for Configuration Backups](#enable_encryption).
+1. When you enable the encryption option, you need to enter a password. For more information, see [Enabling Encryption for Configuration Backups](#enable_encryption).
 2. Veeam Backup & Replication generates a secret key based on the password.
 3. When a configuration backup job starts, Veeam Backup & Replication does the following:
 
