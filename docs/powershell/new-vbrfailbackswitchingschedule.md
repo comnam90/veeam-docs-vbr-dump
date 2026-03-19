@@ -3,8 +3,8 @@ title: "New-VBRFailbackSwitchingSchedule"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrfailbackswitchingschedule.html"
-last_updated: "6/27/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRFailbackSwitchingSchedule
@@ -30,8 +30,9 @@ This cmdlet defines the VBRFailbackSwitchingSchedule object. This object defines
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Type | Specifies a type of the failback schedule. You can set one of the following types:   * Manual: Use this option if you want to switch CDP replica to production VMs manually once CDP replicas are ready. * Auto: Use this option if you want to switch CDP replica to production VMs automatically once CDP replicas are ready. * Scheduled: Use this option if you want to switch CDP replica to production VMs according to a specific schedule. | VBRFailbackSwitchingType | False | Named | False |
 | ScheduledTime | For the scheduled type of the failback.  Specifies the date and time when Veeam Backup & Replication must perform failback from a CDP replica Vm to a production VM. | DateTime | False | Named | False |
 
@@ -57,7 +58,7 @@ Examples
 | --- | --- |
 | This command defines the auto failback schedule.  |  | | --- | | New-VBRFailbackSwitchingSchedule -Type Auto | |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Defining Sheduled Failback
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Defining Scheduled Failback
 
 |  |  |
 | --- | --- |
