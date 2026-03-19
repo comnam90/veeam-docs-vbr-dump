@@ -3,8 +3,8 @@ title: "Add-VBRTapeFilesJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrtapefilesjob.html"
-last_updated: "2/28/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRTapeFilesJob (obsolete)
@@ -39,8 +39,9 @@ Run the [Start-VBRJob](start-vbrjob.md) cmdlet to start the created job.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the name you want to assign to the new files to tape copy job.  You can input string up to 255 symbols. | String | False | Named | False |
 | Server | Specifies the source server where the files you need are located. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | False |
 | Path | Specifies the path to the folders you need to copy. Use Masks and IgnoreCase parameters to select particular files.  You can specify multiple names separated by commas. | String[] | True | Named | True (ByValue, ByProperty Name) |
@@ -48,8 +49,8 @@ Parameters
 | MediaPool Incremental | Specifies the target media pool that will be used for incremental backups. | Accepts the MediaPool object. To get this object, run the [Get-VBRTapeMediaPool](get-vbrtapemediapool.md) cmdlet. | False | Named | False |
 | Description | Specifies the description for the new files to tape copy job. | String | False | Named | False |
 | Credentials | Specifies the credentials you want to use for authenticating with the source server. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
-| Masks | Used to specify search conditions for Path paramater.  Specifies masks to select files in folders. | String | False | Named | False |
-| IgnoreCase | Used to specify search conditions for Path paramater.  If set, the search by name will be non case sensitive. | SwitchParameter | False | Named | False |
+| Masks | Used to specify search conditions for Path parameter.  Specifies masks to select files in folders. | String | False | Named | False |
+| IgnoreCase | Used to specify search conditions for Path parameter.  If set, the search by name will be non case sensitive. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
