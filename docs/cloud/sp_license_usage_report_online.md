@@ -3,8 +3,8 @@ title: "Automatic License Usage Reporting"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/sp_license_usage_report_online.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Automatic License Usage Reporting
@@ -33,7 +33,7 @@ The notification window appears on the first day of the month.
 
 1. The SP can review, adjust if necessary and send the report to Veeam. The SP can also postpone the sending of the report. To learn more, see [Managing License Usage Reports](sp_license_usage_manage.md).
 
-If the SP doesn't send the report, on the third day of the month, Veeam Backup & Replication will send the report automatically.
+If the SP does not send the report, on the third day of the month, Veeam Backup & Replication will send the report automatically.
 
 Keep in mind that automatic license usage reporting does not replace manual reporting through the VCSP Pulse portal (or an aggregator reporting portal). For more information, see [Veeam Rental Licensing and Usage Reporting Guide](https://helpcenter.veeam.com/docs/vcsp/refguide/about.html).
 
