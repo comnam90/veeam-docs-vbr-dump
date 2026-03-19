@@ -3,8 +3,8 @@ title: "Tape Drives"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/working_with_drives.html"
-last_updated: "6/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Tape Drives
@@ -21,7 +21,7 @@ To set block size for the drive manually, select a value from the Block size lis
 | Note |
 | Veeam Backup & Replication uses uniform block size. Drive that is set manually to a particular block size may fail to read tape that was written with another block size. For more information on tape block size, see [Supported Devices and Configuration](tape_supported_devices.md). |
 
-To disable a drive, clear the Enabled check box in the drive properties. To set the drive into working mode again, select the Enabled check boxs. You can disable a drive, for example, for maintenance. When you disable a drive, the library does not use this drive for read/write operations. If the library has multiple drives, other drives will be used for the read/write operations.
+To disable a drive, clear the Enabled check box in the drive properties. To set the drive into working mode again, select the Enabled check boxes. You can disable a drive, for example, for maintenance. When you disable a drive, the library does not use this drive for read/write operations. If the library has multiple drives, other drives will be used for the read/write operations.
 
 ![Tape Drives](images/tape_drive_properties.webp)
 
