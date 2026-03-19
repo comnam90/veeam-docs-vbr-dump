@@ -3,8 +3,8 @@ title: "Add-VBRHvCloudReplicaJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrhvcloudreplicajob.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRHvCloudReplicaJob
@@ -28,7 +28,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet creates a new Hyper-V cloud replication job. Cloud replication creates a VM replica on a cloud host and maintains it in synch with the original VM.
+This cmdlet creates a new Hyper-V cloud replication job. Cloud replication creates a VM replica on a cloud host and maintains it in sync with the original VM.
 
 Note that cloud replication does not support replica from backup.
 
@@ -52,8 +52,9 @@ Run the [Set-VBRJobSchedule](set-vbrjobschedule.md) cmdlet to set schedule for t
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the string with the name of the created replication job.  If not set, Veeam Backup & Replication will give the default job name. | String | False | Named | False |
 | Entity | Specifies the array of VMs you want to replicate. | Accepts the IHvItem[] object. To get this object, run the [Find-VBRHvEntity](find-vbrhventity.md) cmdlet. | True | Named | True (ByValue, |
 | Server | Specifies the cloud host where the created replica should reside. | Accepts the [VBRCloudServer](vbrcloudserver.md) object. To get this object, run the [Get-VBRCloudServer](get-vbrcloudserver.md) cmdlet. | True | Named | False |
