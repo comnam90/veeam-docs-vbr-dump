@@ -3,8 +3,8 @@ title: "Removing Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_server.html"
-last_updated: "2/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Removing Servers
@@ -15,6 +15,8 @@ If you do not plan to use some server anymore, you can remove it from the backup
 You cannot remove a server that has any dependencies. For example, you cannot remove a server that is referenced by a backup or replication job, performs the role of a VMware or off-host backup proxy or backup repository. To remove such server, you will need to delete all referencing jobs and roles first.
 
 When you remove a server that is used as a target host or backup repository, backup files and replica files are not removed from disk. You can easily import these files later to Veeam Backup & Replication if needed.
+
+When you remove a server from the backup infrastructure, Veeam Backup & Replication automatically uninstalls Veeam services and components. No further cleanup operations are required under normal circumstances.
 
 |  |
 | --- |
