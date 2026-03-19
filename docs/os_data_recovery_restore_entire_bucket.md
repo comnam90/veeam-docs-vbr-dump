@@ -3,8 +3,8 @@ title: "Restoring Entire Bucket or Container"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_data_recovery_restore_entire_bucket.html"
-last_updated: "11/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring Entire Bucket or Container
@@ -20,7 +20,7 @@ You can restore an entire object storage bucket or container from the backup to 
 Before you restore a bucket or container, [check prerequisites](restore_entire_bucket_byb.md). Then use the Bucket Restore wizard to restore the bucket or container.
 
 1. [Launch the Bucket Restore wizard](restore_entire_bucket_launch.md).
-2. [Select buckets or continers to restore](restore_entire_bucket_buckets.md).
+2. [Select buckets or containers to restore](restore_entire_bucket_buckets.md).
 3. [Specify a destination for the bucket or container restore](restore_entire_bucket_destination.md).
 4. [Create a new bucket or container](restore_entire_bucket_new_bucket.md).
 5. [Specify restore options](restore_entire_bucket_restore_options.md).
