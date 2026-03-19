@@ -3,8 +3,8 @@ title: "Upgrading Veeam Plug-In for Oracle RMAN"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_rman_plugin.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Upgrading Veeam Plug-In for Oracle RMAN
@@ -46,8 +46,8 @@ Using veeam.com
 1. Download the current setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following packages:
 
-1. [For Linux] In the \VeeamPluginforOracleRMAN-13.0.1.180-1\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \VeeamPluginforOracleRMAN-13.0.1.180-1\ folder, find the Veeam Plug-In installation file that suits your OS.
+1. [For Linux] In the \VeeamPluginforOracleRMAN-13.0.2.2067\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
+2. In the \VeeamPluginforOracleRMAN-13.0.2.2067\ folder, find the Veeam Plug-In installation file that suits your OS.
 
 1. Upload packages that you need to the Oracle server.
 
@@ -69,7 +69,7 @@ Upgrading Plug-In on Linux (.RPM)
 
 To upgrade Veeam Plug-In for Oracle RMAN on a Linux machine, do the following:
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm packages to the Oracle server.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.2.2067.x86\_64.rpm packages to the Oracle server.
 2. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
 
 |  |
@@ -80,7 +80,7 @@ To upgrade Veeam Plug-In for Oracle RMAN on a Linux machine, do the following:
 
 |  |
 | --- |
-| rpm -U VeeamPluginforOracleRMAN-13.0.1.180-1.x86\_64.rpm |
+| rpm -U VeeamPluginforOracleRMAN-13.0.2.2067.x86\_64.rpm |
 
 |  |
 | --- |
@@ -108,25 +108,25 @@ Upgrading Plug-In on Oracle Solaris
 
 To upgrade Veeam Plug-In for Oracle RMAN on an Oracle Solaris machine, do the following:
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.1.180-1.SPARC.pkg package to the Oracle server. If you need the 32-bit version, choose the i386 package.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.2.2067.SPARC.pkg package to the Oracle server. If you need the 32-bit version, choose the i386 package.
 
 1. Make sure the pkgadd administration file (admin\_file) contains the following entry: "instance=overwrite". For details, see [this Oracle article](https://docs.oracle.com/cd/E26505_01/html/E29492/swmgrpkgs-19113.html).
 2. To upgrade Veeam Plug-In, run the following command:
 
 |  |
 | --- |
-| pkgadd -a admin\_file -d /tmp/VeeamPluginforOracleRMAN-13.0.1.180-1.SPARC.pkg |
+| pkgadd -a admin\_file -d /tmp/VeeamPluginforOracleRMAN-13.0.2.2067.SPARC.pkg |
 
 Upgrading Plug-In on IBM AIX
 
 To upgrade Veeam Plug-In for Oracle RMAN on an IBM AIX machine, do the following:
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.1.180-1.aix6.1.ppc.rpm package to the Oracle server.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforOracleRMAN-13.0.2.2067.aix6.1.ppc.rpm package to the Oracle server.
 
 1. To upgrade Veeam Plug-In, run the following command. Note that the operation requires root privileges.
 
 |  |
 | --- |
-| rpm -U VeeamPluginforOracleRMAN-13.0.1.180-1.aix6.1.ppc.rpm |
+| rpm -U VeeamPluginforOracleRMAN-13.0.2.2067.aix6.1.ppc.rpm |
 
 
