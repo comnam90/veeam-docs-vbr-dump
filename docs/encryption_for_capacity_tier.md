@@ -3,14 +3,14 @@ title: "Encryption for Capacity Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_for_capacity_tier.html"
-last_updated: "5/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Encryption for Capacity Tier
 
 
-Veeam Backup & Replication allows you to encrypt archived data. This helps you protect the data from unauthorized access.
+Veeam Backup & Replication allows you to encrypt data stored in the capacity tier, protecting it from unauthorized access.
 
 You can enable data encryption in the following ways:
 
@@ -21,11 +21,11 @@ To get benefits of both encryption levels, you can use job-level and the capacit
 
 To encrypt data, Veeam Backup & Replication uses the following scheme:
 
-1. The user specifies the password in the [archiving tier settings](new_archive_tier.md#encryption).
+1. The user specifies the password in the [capacity tier settings](new_capacity_tier.md#encryption).
 2. Veeam Backup & Replication generates an encryption key and uses the password to encrypt this key.
 3. To encrypt the backups in the capacity tier, Veeam Backup & Replication uses this encryption key.
 
-To access the data in the archive extent you need to provide the password that is used to decrypt the encryption keys.
+To access the data in the capacity extent you need to provide the password that is used to decrypt the encryption keys.
 
 |  |
 | --- |
