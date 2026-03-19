@@ -3,8 +3,8 @@ title: "Immutability"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/immutability.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Immutability
@@ -26,7 +26,7 @@ Checkpoints
 
 A checkpoint is a storage unit that contains a current state of an entire backup chain for a specific period of time. When Veeam Backup & Replication offloads data from the capacity tier, the current state of backup chains that are located in the capacity tier or in the archive tier, is written to the checkpoints. Veeam PowerShell cmdlets from this section will use these checkpoints to sync data to the state before it was corrupted and therefore restore necessary data. In most cases, the capacity tier keeps only one checkpoint when the immutability mode is disabled. Therefore the previous states of the backup chains are overwritten. If you use the immutability feature, the capacity extent will keep several checkpoints that have been created during the offload session. The retention period of checkpoints is defined in the immutability period settings for the object storage that is added as the capacity tier. When you synchronize the state of data with the Veeam PowerShell, you might want to get details on the time period when checkpoints in object storage are available for synchronization.
 
-How to Synchronize Data with Veam PowerShell
+How to Synchronize Data with Veeam PowerShell
 
 To synchronize the state of data using Veeam PowerShell cmdlets, you must perform the following steps:
 
