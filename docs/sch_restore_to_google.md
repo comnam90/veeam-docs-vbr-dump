@@ -3,14 +3,14 @@ title: "Performing VM Restore to Google Cloud"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_to_google.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing VM Restore to Google Cloud
 
 
-Veeam Plug-in for Scale Computing HyperCore allows you to restore Scale Computing HyperCore VMs to Google Cloud as VM instances. For more information, see section [Restore to Google Compute Engine](restore_google.md).
+Veeam Plug-in for Scale Computing HyperCore allows you to restore Scale Computing HyperCore VMs to Google Cloud as VM instances. For more information, see [Restore to Google Compute Engine](restore_google.md).
 
 To restore a VM to Google Cloud, do the following:
 
