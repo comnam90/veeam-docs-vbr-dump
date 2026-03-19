@@ -3,8 +3,8 @@ title: "Set-VBRDataCloudVaultRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrdatacloudvaultrepository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRDataCloudVaultRepository
@@ -30,8 +30,9 @@ This cmdlet modifies a Veeam Data Cloud Vault added to the backup infrastructure
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Repository | Specifies a Veeam Data Cloud Vault that you want to modify. | Accepts the VBRAzureBlobRepository object. To get this object, run the [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies a name of an object storage repository. The cmdlet will assign this name to a Veeam Data Cloud Vault. | String | False | Named | False |
 | Description | Specifies a description of an object repository. The cmdlet will assign this description to a Veeam Data Cloud Vault. | String | False | Named | False |
@@ -42,7 +43,7 @@ Parameters
 | ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
 | ImmutabilityPeriod | Defines the immutability period in days.  Default: 30.  Maximum: 999. | Int32 | False | Named | False |
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int | False | Named | False |
 | Force | Defines that the cmdlet will modify an storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
