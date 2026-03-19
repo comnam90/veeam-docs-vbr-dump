@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_considerations.html"
-last_updated: "11/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -42,5 +42,6 @@ Consider the following when planning to restore Microsoft Teams data:
 * When restoring a channel, Veeam Explorer for Microsoft Teams cannot rename this channel.
 
 * Before restoring team data for a tenant organization with modern app-only authentication, make sure that a user account used for authorization has access to the root SharePoint site of this tenant organization.
+* When restoring or exporting team posts, the post creation or modification timestamp is converted to the locale of the machine acting as the REST API server.
 
 
