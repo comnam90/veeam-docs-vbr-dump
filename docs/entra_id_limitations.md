@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_limitations.html"
-last_updated: "3/17/2026"
+last_updated: "3/19/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -36,7 +36,7 @@ Tenant Backup and Restore
 * Veeam Backup for Microsoft Entra ID does not support protecting multiple tenants by one tenant backup job.
 * Veeam Backup for Microsoft Entra ID does not support protecting one tenant by multiple backup jobs.
 * Veeam Backup for Microsoft Entra ID does not support restore of [Microsoft Entra built-in roles](https://docs.azure.cn/en-us/entra/identity/role-based-access-control/permissions-reference), [distribution security groups](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-distributiongroup?view=exchange-ps) and [mail-enabled security groups](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-* By default, Veeam Backup for Microsoft Entra ID does not back up relationships between protected resources and management groups. If you want to add these relationships into the backup scope, you must perform additional configuration steps described in [this Veeam KB article.](https://www.veeam.com/kb4683)
+* By default, Veeam Backup for Microsoft Entra ID does not restore relationships between protected tenant items and management groups. To instruct Veeam Backup for Microsoft Entra ID to restore these relationships, you must perform additional configuration steps described in [this Veeam KB article](https://www.veeam.com/kb4683).
 * Veeam Backup for Microsoft Entra ID does not support restoring more than one type of tenant items at a time.
 * You can restore a service principal that represents an application only together with this application and within one restore session. If you restore the application and the principal separately, the restored application gets a new ID assigned, and the restore of the service principal will fail.
 * Restore of users synchronized with Microsoft Active Directory (hybrid identities) is possible using Veeam Backup for Microsoft Entra ID. For more information, see [Appendix. Restoring Synchronized Users (Hybrid Identity)](entra_id_restore_sync_users.md).
