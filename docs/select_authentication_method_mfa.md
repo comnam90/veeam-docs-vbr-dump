@@ -67,7 +67,7 @@ By default, Veeam Explorer for Microsoft Exchange populates this field with the 
 
 |  |  |  |
 | --- | --- | --- |
-| Perform the following steps:   1. Select the Import certificate from a PFX file option.   ![Step 3. Select Authentication Method](images/select_certificate_wizard_step1_type_3.webp "Importing Certificate")   1. Click Browse and select a PFX file. Specify the certificate password if required.   |  | | --- | | Note | | A TLS certificate that you want to use must have a private exportable key. |  ![Step 3. Select Authentication Method](images/select_certificate_wizard_step2_import_file.png "Importing Certificate")   1. Click Finish. |
+| Perform the following steps:   1. Select the Import certificate from a PFX file option.   ![Step 3. Select Authentication Method](images/select_certificate_wizard_step1_type_3.webp "Importing Certificate")   1. Click Browse and select a PFX file. Specify the certificate password if required.   |  | | --- | | Note | | A TLS certificate that you want to use must have a private exportable key. |  ![Step 3. Select Authentication Method](images/select_certificate_wizard_step2_import_file.webp "Importing Certificate")   1. Click Finish. |
 
 ![Step 3. Select Authentication Method](images/select_authentication_method_certificate.webp "Select Authentication Method")
 
