@@ -3,8 +3,8 @@ title: "Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository.html"
-last_updated: "12/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Repositories
@@ -15,7 +15,7 @@ A backup repository is a storage location where Veeam keeps backup files, VM cop
 |  |
 | --- |
 | Note |
-| Consider the following:   * Do not configure multiple backup repositories pointing to the same location or using the same path. * Do not configure multiple backup repositories with "nested" paths (when one repository path is a sub-path of another repository), for example:   /mnt/repo/backups/  /mnt/repo/backups/production/ |
+| Consider the following:   * Do not configure multiple backup repositories pointing to the same location or using the same path. * Do not configure multiple backup repositories with "nested" paths (when one repository path is a sub-path of another repository), for example:   /mnt/repo/backups/  /mnt/repo/backups/production/   * Linux-based backup servers deployed using the Veeam Software Appliance ISO function as an immutable backup repository by default. For more information, see [Using Backup Server as Immutable Repository](hardened_repository_backup_server.md). |
 
 You can use the following storage types as backup repositories:
 
