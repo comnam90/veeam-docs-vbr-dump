@@ -3,7 +3,7 @@ title: "Managing User Authentication"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_manage_user_auth.html"
-last_updated: "3/12/2026"
+last_updated: "3/19/2026"
 product_version: "13.0.1.2067"
 ---
 

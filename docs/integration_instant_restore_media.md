@@ -3,7 +3,7 @@ title: "Restoring Data with Veeam Recovery Media"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_media.html"
-last_updated: "3/19/2026"
+last_updated: "3/20/2026"
 product_version: "13.0.1.2067"
 ---
 
