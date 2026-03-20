@@ -3,7 +3,7 @@ title: "About Backup Copy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/about_backup_copy.html"
-last_updated: "3/9/2026"
+last_updated: "3/20/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -20,7 +20,7 @@ Veeam Backup & Replication supports backup copy for the following types of backu
 * Backups of virtual and physical machines created by [Veeam Agent for Microsoft Windows, Veeam Agent for Linux, Veeam Agent for Mac, Veeam Agent for Oracle Solaris or Veeam Agent for IBM AIX](agents_introduction.md).
 
 * Backups of Nutanix AHV virtual machines created by [Veeam Plug-In for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9).
-* Backups of Oracle, SAP HANA, and Microsoft SQL Server databases created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md).
+* Backups of databases created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md).
 * Backups of MongoDB replica sets created by [MongoDB Backup](mongo_backup.md).
 * Backups stored in an HPE StoreOnce backup repository.
 
