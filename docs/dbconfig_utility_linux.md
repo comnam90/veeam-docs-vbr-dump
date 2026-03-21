@@ -3,8 +3,8 @@ title: "Using Veeam Configuration Database Connection Utility in Veeam Backup & 
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dbconfig_utility_linux.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Using Veeam Configuration Database Connection Utility in Veeam Backup & Replication for Linux
@@ -43,7 +43,7 @@ In Shell, run the following command and specify all parameter values:
 
 |  |
 | --- |
-| VEEAM\_SETUP\_PGSQL\_PASSWORD=qwerty dotnet /opt/veeam/vbr/Veeam.Backup.Setup.Linux.dll backupdbconfigurator /sqlservername:192.168.100.50 /sqlserverport:5432 /sqlserverdatabasename:VeeamDB /sqlserverlogin:postgres |
+| VEEAM\_SETUP\_PGSQL\_PASSWORD=qwerty  dotnet /opt/veeam/vbr/Veeam.Backup.Setup.Linux.dll  backupdbconfigurator /sqlservername:192.168.100.50 /sqlserverport:5432 /sqlserverdatabasename:VeeamDB /sqlserverlogin:postgres |
 
 Perform the following steps:
 
@@ -54,8 +54,9 @@ Perform the following steps:
 
 Utility Parameters
 
+Utility Parameters
+
 | Parameter | Description | Required |
-| --- | --- | --- |
 | VEEAM\_SETUP\_PGSQL\_PASSWORD | Specifies the password for the database that Veeam Backup & Replication will use. | Yes |
 | sqlservername | Specifies the PostgreSQL server name.  Supported values: hostname\IP address. | Yes |
 | sqlserverport | Specifies the PostgreSQL server port. | Yes |

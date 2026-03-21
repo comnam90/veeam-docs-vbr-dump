@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "3/17/2026"
+last_updated: "3/20/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -180,22 +180,22 @@ Backup Proxy
 | Microsoft Windows/Linux-based backup repository | Backup proxy | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Mount server | Backup proxy | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
-Off-Host Backup Proxy
+General-Purpose Backup Proxy
 
-The following table describes network ports that must be opened to ensure proper communication of off-host backup proxies with other backup components. For more information about ports that must be opened between the off-host backup proxy and specific backup repository, see [Backup Repositories](#backup_repos).
+The following table describes network ports that must be opened to ensure proper communication of general-purpose backup proxies with other backup components. For more information about ports that must be opened between the general-purpose backup proxy and the specific backup repository, see [Backup Repositories](#backup_repos).
 
-Off-Host Backup Proxy
+General-Purpose Backup Proxy
 
 | From | To | Protocol | Port | Notes |
 | Communication with Backup Server | | | | |
-| Backup server | Hyper-V server/Off-host backup proxy | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
+| Backup server | Hyper-V server/General-purpose backup proxy | TCP | 445, 135, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | TCP | 6163 | Default port used by the Hyper-V Integration Service. |
 | TCP | 49152 to 65535 | Dynamic RPC port range for Microsoft Windows 2008 and later. For more information, see [this Microsoft KB article](https://support.microsoft.com/kb/929851/en-us).  Note: If you use default Microsoft Windows firewall settings, you do not need to configure dynamic RPC ports. During setup, Veeam Backup & Replication automatically creates a firewall rule for the runtime process. If you use firewall settings other than default ones or application-aware processing fails with the "RPC function call failed" error, you need to configure dynamic RPC ports. For more information on how to configure RPC dynamic port allocation to work with firewalls, see [this Microsoft KB article](https://support.microsoft.com/en-us/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls). |
-| Off-host file proxy | TCP | 6210 | Default port used by the Veeam Backup VSS Integration Service for taking a VSS snapshot during the SMB file share backup. |
+| General-purpose backup proxy | TCP | 6210 | Default port used by the Veeam Backup VSS Integration Service for taking a VSS snapshot during the SMB file share backup. |
 | Other Communications | | | | |
-| Hyper-V server/Off-host backup proxy | Gateway server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) during replication.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Hyper-V server/General-purpose backup proxy | Gateway server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) during replication.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Hyper-V server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) during replication.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
 Gateway Server
@@ -670,6 +670,7 @@ Cache Repository Connections
 | Old cache repository, new cache repository | TCP | 6162, 2500 to 3300 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Cache repository | Gateway server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Primary or secondary backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| NAS filer (NetApp Data ONTAP) | TCP | 80, 443, 2049 | Ports used by NetApp SnapDiff when changed file tracking (CFT) is enabled.  Port 2049 is required if the cache repository is a Linux machine. |
 
 Archive Repository Connections
 

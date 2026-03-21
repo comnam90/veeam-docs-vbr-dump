@@ -3,7 +3,7 @@ title: "New-VBRObjectStorageBackupJobObject"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrobjectstoragebackupjobobject.html"
-last_updated: "3/12/2026"
+last_updated: "3/20/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -65,7 +65,7 @@ Perform the following steps:
 
 Related Commands
 
-* [Get-VBRUnstructuredServer](new-vbroracleprocessingoptions.md)
+* [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 * [New-VBRObjectStorageBackupTagMask](new-vbrobjectstoragebackuptagmask.md)
 
 
