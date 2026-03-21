@@ -3,8 +3,8 @@ title: "Creating Configuration Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/export_vbr_config.html"
-last_updated: "11/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Configuration Backups
@@ -29,7 +29,7 @@ Veeam Backup & Replication exports information about the following objects:
 * Backup infrastructure components and objects: hosts, servers, backup proxies, repositories, WAN accelerators, virtual lab configurations, global settings configured on the backup server and so on.
 * Backups: backups and backup copies, replicas, CDP policies created on the backup server.
 * Sessions: job sessions performed on the backup server.
-* Tapes: tape libraries connected to the backup server.
+* Tapes: tape catalogs and tape libraries connected to the backup server.
 
 |  |
 | --- |
