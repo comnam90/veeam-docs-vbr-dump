@@ -3,7 +3,7 @@ title: "Automating Installation Without Initial Configuration"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_silent_deploy_install.html"
-last_updated: "3/12/2026"
+last_updated: "3/20/2026"
 product_version: "13.0.1.2067"
 ---
 
