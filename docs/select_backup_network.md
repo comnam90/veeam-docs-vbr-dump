@@ -3,8 +3,8 @@ title: "Specifying Preferred Networks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/select_backup_network.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Specifying Preferred Networks
@@ -27,7 +27,10 @@ Preferred network rule applies only to traffic between the following backup infr
 * Storage system (backup from storage snapshots scenario)4
 * Veeam Agent
 * Veeam Plug-Ins for Enterprise Applications
-* Veeam Plug-Ins for Nutanix AHV workers
+* Veeam Plug-In for Nutanix AHV workers
+* Veeam Plug-In for Proxmox VE workers
+* Veeam Plug-In for oVirt KVM workers
+* Veeam Plug-In for HPE Morpheus VM Essentials workers
 
 1 The rule applies only to traffic between the source and target WAN accelerators.
 
