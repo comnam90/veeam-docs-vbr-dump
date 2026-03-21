@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_limitations.html"
-last_updated: "2/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -115,7 +115,7 @@ When restoring Nutanix AHV resources, consider the following:
 * If you restore the VM using entire VM restore, the VM description will not be restored (will be set as empty).
 * If you restore the VM from a user snapshot or PD snapshot, you cannot change VM network settings. However, after the VM is restored, you can configure them using the Nutanix Prism console as described in [Nutanix documentation](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v10_3:ahv-vm-nw-mgmt-c.html). If you choose to restore to different location and choose to disconnect from all networks, the new VM will be created without networks.
 * If you restore the VM from a backup stored in the archive tier of the scale-out backup repository, you must first retrieve backup data as described in section [Retrieving Backup Files](retrieval_job_launch.md). Note that you cannot perform Entire VM restore from backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent. For those backups, you can perform Instant Recovery.
-* If you restore the VM from a backup of a VMware, Hyper-V, oVirt KVM, Scale Computing HyperCore or Proxmox VE VM or from a backup created by Veeam Agent, a restored VM may have network connection problems. To resolve the issue, install Nutanix Guest Tools on the restored VM as described in [Nutanix documentation](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_3:man-nutanix-guest-tool-c.html).
+* If you restore the VM from a backup of a VMware, Hyper-V, oVirt KVM, Scale Computing HyperCore or Proxmox VE VM or from a backup created by Veeam Agent, a restored VM may have network connection problems. To resolve the issue, install Nutanix VirtIO drivers and Nutanix Guest Tools on the restored VM as described in [Nutanix documentation](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_3:man-nutanix-guest-tool-c.html).
 * You cannot perform Entire VM Restore to Nutanix AHV from a Veeam Cloud Connect repository or an external repository. However, you can use Instant Recovery to restore VMs to Nutanix AHV from Veeam Cloud Connect or external repositories.
 * You cannot perform VM restore from a tape to Nutanix AHV. A tape backup needs to be returned to a supported repository to complete the restore operation.
 * You cannot perform VM restore from PD snapshots created using Nutanix AHV Async DR.
