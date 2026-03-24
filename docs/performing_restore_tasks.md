@@ -3,7 +3,7 @@ title: "Restoring Data from Veeam Agent Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_restore_tasks.html"
-last_updated: "3/20/2026"
+last_updated: "3/23/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -15,6 +15,7 @@ You can recover data from Veeam Agent backups created by backup jobs configured 
 You can perform the following restore operations:
 
 * [Restoring Data with Veeam Recovery Media](integration_instant_restore_media.md)
+
 * [Restore Veeam Agent backups to VMware vSphere VMs](integration_instant_restore_vsphere.md)
 * [Restore Veeam Agent backups to Hyper-V VMs](integration_instant_restore_hyperv.md)
 * [Restore Veeam Agent backups to Nutanix AHV VMs](integration_instant_restore_nutanix.md)
