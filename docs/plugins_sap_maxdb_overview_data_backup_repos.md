@@ -3,8 +3,8 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_data_backup_repos.html"
-last_updated: "1/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Backup Repositories
@@ -45,7 +45,7 @@ Make sure the repository is configured as described in [ExaGrid](deduplicating_a
 
 * [Scale-Out Backup Repository](backup_repository_sobr.md)
 
-Make sure that the performance extents of the scale-out backup repository contain repositories supported by Veeam Plug-In for SAP MaxDB. For example, you cannot use object storage repositories as performance extents to keep backups created with Veeam Plug-Ins.
+Ensure that the performance extents of the scale-out backup repository contain repositories supported by Veeam Plug-In for SAP MaxDB. You can use object storage repositories as performance extents to store backups created with Veeam Plug-Ins.
 
 Backup Repositories Limitations
 

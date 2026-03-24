@@ -3,8 +3,8 @@ title: "Tape Encryption"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encryption_tape.html"
-last_updated: "5/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Tape Encryption
@@ -35,7 +35,7 @@ Data encryption on tapes includes the following steps:
 |  |
 | --- |
 | Note |
-| If you have lost or forgotten a password or you cannot use KMS keys due to a KMS server failure, you will not be able to recover data from backups or tapes unless you use Enterprise Manager keys in the encryption process. For more information, see [Decrypting Tapes With Enterprise Manager Keys](tape_decrypt_no_password.md). |
+| Consider the following:   * Tapes can be decrypted automatically or manually. For more information, see [Restoring Data from Encrypted Tapes](tapes_restore_encrypted.md).  * If you have lost or forgotten a password or you cannot use KMS keys due to a KMS server failure, you will not be able to recover data from backups or tapes unless you use Enterprise Manager keys in the encryption process. For more information, see [Decrypting Tapes With Enterprise Manager Keys](tape_decrypt_no_password.md). |
 
 ![Tape Encryption](images/tape_encryption.webp)
 
@@ -47,6 +47,6 @@ Backup to tape jobs allow double data encryption. The backup to tape job uses a 
 
 Related Topics
 
-[Restoring Encrypted Data from Tapes](tapes_restore_encrypted.md)
+[Restoring Data from Encrypted Tapes](tapes_restore_encrypted.md)
 
 

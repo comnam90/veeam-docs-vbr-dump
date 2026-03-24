@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_limitations.html"
-last_updated: "2/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -54,11 +54,12 @@ Consider the following general limitations for the HA cluster:
 
 * [Veeam Backup Enterprise Manager] If a backup server is added to Enterprise Manager, you must re-add it using the cluster virtual IP address or cluster DNS name after assembling the cluster. If you do not re-add the backup server, Enterprise Manager will not be able to collect data from it after a switchover.
 
-Kerberos Environment Limitations for HA cluster
+Kerberos Environment Limitations for HA Cluster
 
 Consider the following limitations for the HA cluster with the Kerberos environment:
 
-* Ensure that the cluster IP is allowed to communicate to the ports used for Kerberos authentication. For more information, see the [Ports](used_ports.md#kerberos) section.
+* Ensure that the IP addresses of both the primary and secondary nodes are allowed to communicate over ports used for Kerberos authentication. For more information, see the [Ports](used_ports.md#kerberos) section.
+
 * To configure an HA cluster with Kerberos, follow these steps:
 
 1. Join both nodes to a domain where Kerberos authentication is configured. For more information, see [Managing Domain Settings](hmc_configure_domain.md).
@@ -75,7 +76,7 @@ Consider the following limitations for the HA cluster with the Kerberos environm
 * During a failover, the [Log in as current user](web_ui_logon.md#current) option in the Veeam Backup & Replication web UI is not supported. You must specify credentials in plain text.
 * If you [remove a node from a domain](hmc_configure_domain.md) where Kerberos authentication is configured after the HA cluster is assembled, it will result in connectivity issues between the HA nodes. If you need to remove a node from a domain, first disassemble the cluster, then remove both nodes from the domain, and then recreate the cluster.
 
-HA Cluster Network Limitations
+Network Limitations for HA Cluster
 
 Consider the following network limitations for the HA cluster:
 
@@ -93,7 +94,7 @@ Consider the following network limitations for the HA cluster:
 * Ensure that the TCP protocol is opened on both primary and secondary nodes. Otherwise, Veeam Backup & Replication will not be able to send WAL logs of the PostgreSQL database to the secondary node.
 * Ensure that you use only one type of IP address—either IPv4 or IPv6—for the HA cluster configuration. If you configure HA cluster with a mix of both IPv4 and IPv6 addresses, the HA cluster will not operate.
 
-HA Cluster Configuration Database Limitations
+Configuration Database Limitations for HA Cluster
 
 Consider the following configuration database limitations for the HA cluster:
 
@@ -103,7 +104,7 @@ Consider the following configuration database limitations for the HA cluster:
 * Veeam Backup & Replication does not support configuration restore to an HA cluster.
 * The configuration backup does not contain information about an HA cluster. You can perform a configuration restore of the HA cluster only to a standalone Veeam Backup & Replication.
 
-HA Cluster Synchronization Limitations
+Cluster Synchronization Limitations for HA Cluster
 
 Consider the following synchronization limitations for the HA cluster:
 
@@ -117,7 +118,7 @@ Consider the following synchronization limitations for the HA cluster:
 * Index of files and folders on the VM guest OS.
 * Backup server logs. To get the logs for the necessary node, use the [Veeam Host Management Console](hmc_perform_maintenance_tasks.md).
 
-HA Cluster Failover Limitations
+Failover Limitations for HA Cluster
 
 Before you perform a failover, consider the following limitations:
 
@@ -128,7 +129,7 @@ Before you perform a failover, consider the following limitations:
 * If you initiate a failover while the secondary node is not synchronized with the primary node — for example, due to network issues — the secondary node database may lack information about the latest backup files created by the primary node. After the failover, you must rescan the backup repository to ensure the secondary node is updated with any backup files created while it was out of sync.
 * To initiate a failover, you must use either the cluster virtual IP address or the IP address of the secondary node. You cannot initiate a failover using the cluster DNS name.
 
-HA Cluster Switchover Limitations
+Switchover Limitations for HA Cluster
 
 Before you perform a switchover, consider the following limitations:
 
@@ -138,7 +139,7 @@ Before you perform a switchover, consider the following limitations:
 
 * [Instant Recovery to Hyper-V] Make sure you [finalize the Instant Recovery session](ir_finalize_hv.md) to Hyper-V before you start a switchover. During a switchover, Veeam Backup & Replication stops the Instant Recovery session. After that, the VM that Veeam Backup & Replication creates on the Hyper-V datastore and its snapshot are deleted. Once you connect to a cluster, Veeam Backup & Replication will start an Instant Recovery session again.
 
-Disassembling HA Cluster Limitations
+Disassembling HA Cluster
 
 Before you disassemble an HA cluster, consider the following limitations:
 

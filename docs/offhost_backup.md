@@ -3,8 +3,8 @@ title: "Off-Host Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/offhost_backup.html"
-last_updated: "9/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Off-Host Backup
@@ -50,6 +50,11 @@ The VSS hardware provider for Dell PowerVault can be found on the Resource CD.
 The VSS hardware provider is a part of Host Integration Tool (HIT/Microsoft).
 
 To get detailed information, contact your storage vendor.
+
+|  |
+| --- |
+| Note |
+| It is recommended that you use [on-host backup](onhost_backup.md) because it is easier to implement. Whether the VSS hardware provider works correctly depends on the storage vendor implementation. If you experience problems with the VSS hardware provider for a specific storage array, contact the storage vendor or switch to on-host backup. |
 
 Related Topics
 

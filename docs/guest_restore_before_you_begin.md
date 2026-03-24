@@ -3,7 +3,7 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "3/13/2026"
+last_updated: "3/23/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -72,6 +72,7 @@ Source for Data Recovery
 
 Target for Data Recovery
 
+* If you restore files to a target workload that uses the gMSA credentials, install the Deployment Kit on the target workload before you start the restore. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
 * [For recovery to original location] VMware Tools must be installed on the target VM. Application-aware processing must be supported for the Microsoft Windows OS of the original machine. If this is not possible, you can use 1-click file-level restore or copy files to the selected folder and then move them to their original location.
 
 * [For [recovery to another workload](guest_restore_save.md#new_vm)] You can recover items only to Microsoft Windows-based workloads. You can select a workload only within the same virtual infrastructure where the original workload resides. For example, if the original workload resides in VMware vSphere, you can select a workload that resides in VMware vSphere only.
