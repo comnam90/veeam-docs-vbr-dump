@@ -3,8 +3,8 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repos_mssql.html"
-last_updated: "1/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Backup Repositories
@@ -42,7 +42,7 @@ Make sure the repository is configured as described in the [ExaGrid](deduplicati
 
 * [Scale-Out Backup Repository](backup_repository_sobr.md)
 
-Make sure that the performance extents of the scale-out backup repository contain repositories supported by Veeam Plug-In for Microsoft SQL Server. For example, you cannot use object storage repositories as performance extents to keep backups created with Veeam Plug-Ins.
+Ensure that the performance extents of the scale-out backup repository contain repositories supported by Veeam Plug-In for Microsoft SQL Server. You can use object storage repositories as performance extents to store backups created with Veeam Plug-Ins.
 
 Backup Repository Limitations
 
