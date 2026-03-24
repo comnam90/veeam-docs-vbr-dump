@@ -3,8 +3,8 @@ title: "Infrastructure Icons"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infrastructure_icons.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Infrastructure Icons
@@ -69,6 +69,7 @@ Backup Nodes
 | ![Infrastructure Icons](images/external_encrypted_backups.webp) | Encrypted backups in external repository |
 | ![Infrastructure Icons](images/cloud_backup.webp) | Backups in cloud repository |
 | ![Infrastructure Icons](images/cloud_orphaned.webp) | Orphaned backups in cloud repository |
+| ![Infrastructure Icons](images/encrypted_cloud_backup.webp) | Encrypted backups in cloud repository |
 | ![Infrastructure Icons](images/backups_to_tape.webp) | Backups on tape |
 | ![Infrastructure Icons](images/encrypted_tape_backups.webp) | Encrypted backups on tape |
 | ![Infrastructure Icons](images/backups_object_storage.webp) | Backups in object storage |
