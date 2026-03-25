@@ -3,8 +3,8 @@ title: "VM Copy for VMware vSphere"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy.html"
-last_updated: "10/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VM Copy for VMware vSphere
@@ -21,7 +21,7 @@ The produced copy of a VM is stored decompressed, in a native VMware vSphere for
 |  |
 | --- |
 | Note |
-| When registering a VM on an ESXi host, it is registered with thin provisioned disks by default. |
+| Consider the following:   * When registering a VM on an ESXi host via a VMX file, the datastore default storage policy is applied. * On VMFS datastores, the original disk provisioning type (thin or thick) is preserved. * On vSAN datastores, the disk provisioning type is determined by the applied storage policy. |
 
 * There are no failover or failback possibilities for a VM copy.
 
