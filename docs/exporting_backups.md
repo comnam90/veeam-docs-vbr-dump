@@ -3,8 +3,8 @@ title: "Exporting Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/exporting_backups.html"
-last_updated: "12/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Exporting Backups
@@ -43,6 +43,7 @@ Consider the following:
 | Note |
 | Note that the exported backup can be offloaded from the performance tier to the capacity or archive tier according to the settings of your scale-out backup repository. |
 
+* [For object storage repositories] If you export backups from the object storage repository to the same object storage repository, Veeam Backup & Replication synthesizes them in the object storage. After a successful export, backups are displayed under the Backups > Object Storage (Exported) node.
 * If a restore point that is being exported resides on the tenant side, a new full backup file will also be exported to the same repository (on the tenant side) from which the source restore point is being taken.
 * If a tenant initiates the export of a restore point that resides in the subtenant directory, a new full backup file will be exported to the tenant directory.
 * If you select an encrypted backup job, the exported backup file will be encrypted with the same password that you set in the advanced job settings.

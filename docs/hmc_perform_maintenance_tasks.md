@@ -3,7 +3,7 @@ title: "Performing Maintenance Tasks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_perform_maintenance_tasks.html"
-last_updated: "3/23/2026"
+last_updated: "3/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -19,6 +19,7 @@ Users with Host Administrator permissions can perform the following maintenance 
 * View and export Veeam appliance events
 * Download logs
 * Generate new certificate for the Veeam Host Management web UI
+* Reset time shift protection on a Veeam Hardened Repository
 
 Managing Veeam Services
 
@@ -101,5 +102,17 @@ In the Veeam Host Management TUI, you can generate new certificate for the Veeam
 3. Press [F1] to generate new certificate. The web service will be restarted.
 
 [![Performing Maintenance Tasks](images/hmc_tui_generate_certificates.webp)](images/hmc_tui_generate_certificates.webp)
+
+Resetting Time Shift Protection
+
+In the Veeam Host Management TUI, you can reset the time shift protection on aVeeam Hardened Repository or Veeam Software Appliance. To do this, perform the following steps:
+
+1. Log in to the Veeam Host Management TUI as a Host Administrator. For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
+2. In the main menu, select Host configuration.
+3. Select Reset time shift protection.
+
+For more information on time shift protection, see [How Immutability Works](https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_immutability.html?ver=13#timeshift-detection).
+
+[![Performing Maintenance Tasks](images/hmc_tui_reset_time_shift.webp)](images/hmc_tui_reset_time_shift.webp)
 
 

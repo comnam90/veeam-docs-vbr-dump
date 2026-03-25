@@ -3,7 +3,7 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_requirements.html"
-last_updated: "3/13/2026"
+last_updated: "3/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -87,5 +87,15 @@ Veeam Backup & Replication version 13 (build 13.0.2.2067-1) comes with the follo
 Network
 
 Veeam Plug-In must be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway.
+
+For communication between the Veeam backup infrastructure and servers that host databases to be backed up, one of the following authentication protocols is required:
+
+* Kerberos. To learn more, see [Kerberos Authenticationkerberos\_authentication](kerberos_authentication.md).
+
+If you plan to install Veeam Plug-Ins with Veeam Deployment Kit, Kerberos is not required. Veeam Deployment Kit uses certificate-based authentication instead of credentials.To learn more, see [Deploying Plug-In Using Veeam Deployment Kit](protection_group_deployer_service.md).
+
+* Windows New Technology LAN Manager (NTLM).
+
+As NTLM is provided by Microsoft, only the Veeam Backup & Replication server running on the Microsoft Windows OS supports NTLM.
 
 

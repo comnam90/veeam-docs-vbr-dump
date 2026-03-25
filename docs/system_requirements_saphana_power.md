@@ -3,7 +3,7 @@ title: "System Requirements for Linux on Power"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_saphana_power.html"
-last_updated: "3/10/2026"
+last_updated: "3/19/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -25,6 +25,6 @@ System Requirements for Linux on Power
 | Software | The protected computer must have FUSE libraries installed:   * [For SLES] libfuse2 * [For RHEL] fuse-libs |
 | SAP HANA Database | Veeam Plug-In for SAP HANA supports SAP HANA 2.0: SPS 02, SPS 03, SPS 04, SPS 05, SPS 06, SPS 07, SPS 08.  Notes:   * Only Backint version 1.0 is supported. * SAP HANA Express Edition is not supported. * To check whether an OS version is compatible with the SAP HANA release you want to use, see the [SAP HANA Administration Guide](https://launchpad.support.sap.com/#/notes/2235581) (requires an SAP ID). |
 | Veeam Backup & Replication | Veeam Backup & Replication 13 supports different on versions of Veeam Plug-In depending on which OS is running on the backup server:   * Veeam Backup & Replication on Linux supports management of Veeam Plug-Ins 13. Management of previous versions of Veeam Plug-Ins is not supported. * Veeam Backup & Replication on Microsoft Windows supports management of Veeam Plug-Ins 12.3.2.4165 and later.   Keep in mind that if you use an earlier Veeam Plug-In build than the one that is included in the installation ISO file of your Veeam Backup & Replication version, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474). |
-| Network | Veeam Plug-In should be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway. |
+| Network | Veeam Plug-In should be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway.  For communication between the Veeam backup infrastructure and servers that host databases to be backed up, one of the following authentication protocols is required:   * Kerberos. To learn more, see [Kerberos Authenticationkerberos\_authentication](kerberos_authentication.md).  * Windows New Technology LAN Manager (NTLM).   As NTLM is provided by Microsoft, only the Veeam Backup & Replication server running on the Microsoft Windows OS supports NTLM. |
 
 
