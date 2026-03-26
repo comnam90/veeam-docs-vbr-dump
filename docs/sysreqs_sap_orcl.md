@@ -3,7 +3,7 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sysreqs_sap_orcl.html"
-last_updated: "3/13/2026"
+last_updated: "3/19/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -25,6 +25,6 @@ System Requirement
 | SAP Software | Veeam Plug-In for SAP on Oracle supports BR\*Tools version 7.20, Patch 42 or later. |
 | Oracle Database | Veeam Plug-In for SAP on Oracle supports Standard and Enterprise Editions of the following Oracle Database versions:   * 19c * 18c * 12c * 11g Release 2   Note: Oracle Express Edition (XE) and Oracle Real Application Cluster (RAC) environment are not supported. |
 | Veeam Backup & Replication | Veeam Backup & Replication 13 supports different on versions of Veeam Plug-In depending on which OS is running on the backup server:   * Veeam Backup & Replication on Linux supports management of Veeam Plug-Ins 13. Management of previous versions of Veeam Plug-Ins is not supported. * Veeam Backup & Replication on Microsoft Windows supports management of Veeam Plug-Ins 12.3.2.4165 and later.   Keep in mind that if you use an earlier Veeam Plug-In build than the one that is included in the installation ISO file of your Veeam Backup & Replication version, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474). |
-| Network | Veeam Plug-In should be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway. |
+| Network | Veeam Plug-In should be able to establish a direct IP connection to the Veeam Backup & Replication server. Thus, Veeam Plug-In cannot work with the Veeam Backup & Replication server that is located behind the NAT gateway.  For communication between the Veeam backup infrastructure and servers that host databases to be backed up, one of the following authentication protocols is required:   * Kerberos. To learn more, see [Kerberos Authenticationkerberos\_authentication](kerberos_authentication.md).  * Windows New Technology LAN Manager (NTLM).   As NTLM is provided by Microsoft, only the Veeam Backup & Replication server running on the Microsoft Windows OS supports NTLM. |
 
 
