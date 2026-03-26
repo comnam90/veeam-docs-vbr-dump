@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup to Object Storage
@@ -52,7 +52,7 @@ You can use an object storage in Veeam Backup & Replication as one of the follow
 
 * Backup repository. To learn more, see [Backup Repositories](backup_repository.md).
 * Scale-out backup repository added as a Veeam backup repository. To learn more, see [Scale-Out Backup Repositories](backup_repository_sobr.md).
-* Cloud repository. To learn more, see the [Backup to Object Storage](https://helpcenter.veeam.com/docs/backup/cloud/cc_object_storage.html?ver=120) section in the Veeam Cloud Connect Guide.
+* Cloud repository. To learn more, see the [Backup to Object Storage](https://helpcenter.veeam.com/docs/vbr/cloud/cc_object_storage.html?ver=13) section in the Veeam Cloud Connect Guide.
 
 1. [For S3 compatible object storage] Set access to the added S3 compatible object storage. To learn more see [Managing Permissions for S3 Compatible Object Storage](access_permissions.md).
 2. Create a Veeam Agent backup job or policy and specify the following repository as a target location for backup files:
