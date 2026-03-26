@@ -3,8 +3,8 @@ title: "Configuring Retention Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_mssql_retention_policy.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Retention Policy
@@ -23,6 +23,6 @@ Alternatively, if you enable retention policy for multiple types of backups of t
 | Note |
 | If you do not specify the retention policy for any type of Microsoft SQL Server backup, Veeam Plug-In will not remove outdated restore points, and backup files fill remain in the backup repository. In this case, you can force delete backups using a dedicated command. For details, see [Configuring Force Deletion of Backups](plugins_mssql_retention_force.md).  Alternatively, you can manually delete Veeam Plug-In backups from a backup repository using the Veeam Backup & Replication console. For details, see: [Deleting Backup](delete_backups_mssql.md). |
 
-![Configuring Retention Policy](images/mssql_backup_options.webp)
+![Configuring Retention Policy](images/plugins_mssql_backup_options.webp)
 
 
