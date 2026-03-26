@@ -3,8 +3,8 @@ title: "How Immutability Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_immutability.html"
-last_updated: "1/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How Immutability Works
@@ -44,7 +44,12 @@ For example, the value of the check interval is 600 seconds (10 minutes). The pr
 | Note |
 | Consider the following:   * To detect timeshift more precisely, RTC should be set to UTC. * If RTC is disabled, the accelerationTime parameter value will be ignored. The Veeam Immutability Service will check only the moveTime parameter. * If you shut down the repository for more than 24 hours, retention operations will be blocked. * If retention operations are blocked, the Veeam Immutability Service will not set or remove the immutable attribute for existing and new backup files. |
 
-To get back to the normal operation mode, you will need to access the hardened repository under the user account with root privileges and perform the necessary operations. For more information, see [this Veeam KB article](https://www.veeam.com/kb4482).
+To get back to the normal operation mode:
+
+* On a Veeam Hardened Repository or Veeam Software Appliance, use the Reset time shift protection option in the Host configuration menu of the Veeam Host Management console TUI.
+* On a manually configured Linux server, access the hardened repository under the user account with root privileges and perform the necessary operations.
+
+For more information, see [this Veeam KB article](https://www.veeam.com/kb4482).
 
 The described hardened repository architecture prevents backup files from being deleted or modified by a potential attacker even if they exploit the Veeam Data Mover Service/Veeam Transport Service or compromise the NTP server. For more details, see [Protect against Ransomware with Immutable Backups](https://www.veeam.com/wp-guide-protect-ransomware-immutable-backups.html).
 

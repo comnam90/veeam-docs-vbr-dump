@@ -3,7 +3,7 @@ title: "Limitations for Performance Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performance_tier_limitations.html"
-last_updated: "3/17/2026"
+last_updated: "3/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -42,7 +42,6 @@ Consider the following limitations for the performance tier:
 
 * Veeam Cloud Connect service providers can not use Azure Data Box and AWS Snowball Edge storage as a performance extent of a scale-out backup repository.
 
-* You cannot use direct backup object storage repositories as performance extents to keep backups created with [Veeam Plug-Ins for Enterprise Applications](protect_applications.md).
 * [For VeeamZIP] You cannot move VeeamZIP backups to direct object storage repositories or when they are added as a performance tier of a scale-out backup repository. However, you can still move VeeamZIP backups to an object storage repository used as capacity tier.
 * [For Dell Data Domain] For Dell Data Domain storage systems used as performance extents, you must specify the [maximum allowed number of concurrent tasks](dsa_repository_repository.md#concurrenttasks).
 

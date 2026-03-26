@@ -3,8 +3,8 @@ title: "Restoring from Backup with Veeam Explorer"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_backups_restore_with_explorer.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring from Backup with Veeam Explorer
@@ -22,7 +22,7 @@ Alternatively, to perform restore from Oracle databases you can also use Veeam E
 
 * To restore Microsoft SQL Server databases, Veeam Backup & Replication uses Veeam Explorer for Microsoft SQL Server. For details, see [Microsoft SQL Server Data Restore](https://helpcenter.veeam.com/docs/vbr/userguide/vesql_data_restore.html?ver=13).
 
-Alternatively, to perform restore from Oracle databases you can also use Veeam Explorer cmdlets. For details, see the [Veeam Explorer for Microsoft SQL Server](https://helpcenter.veeam.com/docs/vbr/explorers/vesql_user_guide.html?ver=13) section in the the Veeam Explorers PowerShell Reference.
+Alternatively, to perform restore from Microsoft SQL Server databases you can also use Veeam Explorer cmdlets. For details, see the [Veeam Explorer for Microsoft SQL Server](https://helpcenter.veeam.com/docs/vbr/explorers/vesql_user_guide.html?ver=13) section in the the Veeam Explorers PowerShell Reference.
 
 Considerations and Limitations
 

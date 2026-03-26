@@ -3,8 +3,8 @@ title: "Access Permissions for Direct Connection to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage_direct_access.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Access Permissions for Direct Connection to Object Storage
@@ -48,7 +48,7 @@ For backup jobs targeted at the Cloud Connect repository
 
 * For the backup policy targeted at the object storage directly, Veeam Backup & Replication creates a user in AWS for each subtenant.
 
-To learn more about tenants and subtenants, see the [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/backup/cloud/cloud_overview.html?ver=120).
+To learn more about tenants and subtenants, see the [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html?ver=13).
 
 1. If applicable, Veeam Backup & Replication assigns a policy to each created user. This policy contains access permissions and allows Veeam Agent access only those backups that were made only by this Veeam Agent.
 
@@ -84,7 +84,7 @@ For backup jobs targeted at the Cloud Connect repository
 
 * For the backup policy targeted at the object storage directly, Veeam Backup & Replication creates a user in Google Cloud for each subtenant.
 
-To learn more about tenants and subtenants, see the [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/backup/cloud/cloud_overview.html?ver=120).
+To learn more about tenants and subtenants, see the [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html?ver=13).
 
 1. If applicable, Veeam Backup & Replication assigns a policy to each bucket. This policy contains access permissions and allows Veeam Agent access only those backups that were made only by this Veeam Agent.
 

@@ -3,14 +3,14 @@ title: "Step 3. Specify Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/windows_server_credentials_web.html"
-last_updated: "1/14/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Credentials
 
 
-At the Credentials step of the wizard, specify authentication settings for the Microsoft Windows server.
+At the Credentials step of the wizard, specify authentication settings for the Microsoft Windows server. Veeam Backup & Replication uses the selected authentication method only for the initial connection to the server to deploy Veeam components. For all subsequent connections, authentication is performed using certificates.
 
 1. Select one of the two authentication methods:
 
