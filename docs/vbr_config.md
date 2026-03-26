@@ -3,7 +3,7 @@ title: "Managing Configuration Database"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_config.html"
-last_updated: "3/17/2026"
+last_updated: "3/25/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -37,7 +37,6 @@ Related Topics
 * [Creating Configuration Backups](export_vbr_config.md)
 * [Restoring Configuration Database on Windows-Based Backup Server](vbr_config_restore.md)
 * [Migrating Veeam Backup & Replication to Another Windows-Based Backup Server](vbr_config_migrate.md)
-* [Migrating Veeam Backup & Replication to Linux-Based Backup Server](vbr_config_win_to_lin_migrate.md)
 * [Migrating Configuration Database to Another SQL Server](vbr_config_migrate_to_another_server.md)
 * [Migrating Configuration Database to PostgreSQL Server](vbr_config_migrate_to_postgresql.md)
 * [Automating Configuration Database Restore](vbr_config_restore_automated.md)
