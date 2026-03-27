@@ -3,16 +3,24 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_details.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Object Storage Settings
 
 
-At the Bucket step of the wizard, specify Amazon S3 bucket and folder that will be used to store data:
+At the Bucket step of the wizard, specify the following Amazon S3 bucket settings:
 
-1. From the Data center drop-down list, select the region where the bucket is located.
+1. [General Amazon S3 bucket settings](#bucket)
+2. [Immutability settings](#immutability)
+3. [Amazon S3 storage classes](#storageclass)
+
+Specifying General Bucket Settings
+
+To specify the Amazon S3 general bucket settings:
+
+1. From the Data center drop-down list, select the AWS region where the bucket is located.
 2. In the Bucket field, enter a name of the bucket or click Browse to get the necessary bucket.
 
 |  |
@@ -35,7 +43,11 @@ If the FIPS-compliant operation mode is enabled and the bucket you want to add i
 
 Specifying Immutability Settings
 
-To prohibit deletion of blocks of data from object storage, select the Make recent backups immutable (recommended) check box. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
+Immutability prohibits deletion of blocks of data from your object storage repository. To enable immutability:
+
+1. Select the Make backups immutable (recommended) check box.
+
+1. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
 
 * Select the For the entire duration of their retention policy option if you want the immutability period depend on the retention policy of a backup job.
 
@@ -51,7 +63,12 @@ To prohibit deletion of blocks of data from object storage, select the Make rece
 
 Specifying Amazon S3 Storage Classes
 
-To specify the Amazon S3 storage class that you want to enable for your bucket, click the Standard link to the right of the Storage class field. In the Storage Class Settings window, select one of the following:
+Amazon S3 storage class defines how your data is stored and managed in the bucket, affecting cost, availability, and access frequency. For more information on storage class, see [AWS Documentation](https://aws.amazon.com/s3/storage-classes/).
+
+To specify the storage class, do the following:
+
+1. Click the Standard link to the right of the Storage class field.
+2. In the Storage Class Settings window, select one of the following:
 
 * Standard (recommended) — use this option if you plan to access your data frequently.
 * Infrequent Access — use this option if you plan to access your data infrequently and require fast access in case when data is needed.
@@ -61,8 +78,6 @@ To specify the Amazon S3 storage class that you want to enable for your bucket, 
 | --- |
 | Important |
 | If you enable this option and plan to use this object storage as a performance or capacity tier, do not target to this repository any jobs that constantly send backup data to this storage: scheduled regular backup and backup copy jobs that run without GFS, jobs with transactions logs enabled, jobs created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md). Otherwise, it will result in higher costs. |
-
-For more information on storage class, see [AWS Documentation](https://aws.amazon.com/s3/storage-classes/).
 
 ![Step 4. Specify Object Storage Settings](images/s3_add_bucket_storage_class.webp)
 
