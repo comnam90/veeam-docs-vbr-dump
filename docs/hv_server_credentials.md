@@ -3,8 +3,8 @@ title: "Step 3. Specify Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_credentials.html"
-last_updated: "1/15/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Credentials
@@ -24,6 +24,8 @@ Veeam Backup & Replication will use the provided credentials to deploy the follo
 * Veeam Data Mover/Veeam Transport Service
 * Veeam Hyper-V Integration Service
 * Guest Interaction Proxy Service
+
+If you are adding a standalone Microsoft Hyper-V host, Veeam Backup & Replication uses the credentials only for the initial connection to the server to deploy Veeam components. For all subsequent connections, authentication is performed using certificates.
 
 If you are adding SCVMM, the same credentials will be applied to all Microsoft Hyper-V hosts managed by SCVMM. If some Microsoft Hyper-V hosts use their own credentials different from those you have provided, Veeam Backup & Replication will fail to deploy components on these hosts. You will have to specify credentials for such Microsoft Hyper-V hosts separately.
 
