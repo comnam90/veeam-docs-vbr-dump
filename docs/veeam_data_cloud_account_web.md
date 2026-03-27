@@ -3,7 +3,7 @@ title: "Step 3. Specify Veeam Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account_web.html"
-last_updated: "3/18/2026"
+last_updated: "3/26/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -27,26 +27,22 @@ To register the backup server using your Veeam credentials, do the following:
 
 1. In the Register New Product window, under the Registration Token filed, paste the registration code you have copied.
 2. Click Register. The backup server will be registered with Veeam Data Cloud.
+3. Select the storage vault that you want to use. For more information, see [Specifying Storage Vault Settings](#vault).
+
+1. Specify connection settings. For more information, see [Specifying Connection Mode](#connectionmode).
 
 [![Step 3. Specify Veeam Account](images/veeam_vault_backup_server_code_web.webp)](images/veeam_vault_backup_server_code_web.webp)
 
-Specifying Vault Settings
+Specifying Storage Vault Settings
 
 To specify the Vault settings, do the following:
 
-In the Vault drop-down list, specify the storage vault that you want to use. To manage vaults, click the Manage link. For more information, see the [Managing Veeam Data Cloud Vault Subscriptions](https://helpcenter.veeam.com/docs/vdc/userguide/vault_manage_subscriptions.html) section in the Veeam Data Cloud User Guide.
+From the Vault drop-down list, select the storage vault that you want to use. To manage vaults, click the Manage link.
 
 |  |
 | --- |
 | Note |
-| If you have only one storage vault that has not been associated with any backup server before, this vault will appear in the drop-down list automatically. |
-
-If you do not have any storage vaults associated with your backup server, the Vault drop-down list will be empty. For detailed instructions on how to obtain a vault and assign it to your backup server, see the [Obtaining Veeam Data Cloud Vault](https://helpcenter.veeam.com/docs/vdc/userguide/vault_obtain_product.html) section in the Veeam Data Cloud User Guide. After you add a storage vault and assign it to the backup repository, click the refresh icon (![Step 3. Specify Veeam Account](images/refresh_icon_web.webp)). The vault will show up in the drop-down list.
-
-|  |
-| --- |
-| Important |
-| Keep in mind that it might take several minutes to add a certificate (a public key) on the Microsoft Azure Entra ID side. |
+| Consider the following:   * If you have only one storage vault that has not been associated with any backup server before, this vault will appear in the drop-down list automatically. * If you do not have any storage vaults associated with your backup server, the Vault drop-down list will be empty. For detailed instructions on how to assign a storage vault to your backup server, see the [Assigning Storage Vaults to Workloads](https://helpcenter.veeam.com/docs/vdc/userguide/vault_storage_vaults_edit.html#assigning-storage-vaults-to-workloads) section in the Veeam Data Cloud User Guide. After you add a storage vault and assign it to the backup server, click the refresh icon (![Step 3. Specify Veeam Account](images/refresh_icon.webp)). The vault will show up in the drop-down list. * Keep in mind that it might take several minutes to add a certificate (a public key) on the Microsoft Azure Entra ID side. |
 
 Specifying Connection Mode
 

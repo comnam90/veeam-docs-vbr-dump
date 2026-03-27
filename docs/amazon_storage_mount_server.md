@@ -3,8 +3,8 @@ title: "Step 5. Specify Mount Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_mount_server.html"
-last_updated: "8/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 5. Specify Mount Server Settings
@@ -61,7 +61,8 @@ To be able to select the necessary security group from the drop-down list, you m
 | If you select the Create new option, Veeam Backup & Replication will create a new security group with the inbound rules that allow connection using the 443 and 22 ports from everywhere (0.0.0.0/0). |
 
 1. In the Redirector port field, specify the TCP port that Veeam Backup & Replication will use to route requests between the helper appliance and backup infrastructure components.
-2. Click OK.
+
+1. Click OK.
 
 ![Step 5. Specify Mount Server Settings](images/s3_add_helper_appliance.webp "Specify S3 Object Storage Mount Server")
 
