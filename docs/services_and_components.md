@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Services"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/services_and_components.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Backup & Replication Services
@@ -19,8 +19,9 @@ Linux Services
 
 The following table describes Veeam services used by Veeam Backup & Replication deployed from Veeam Software Appliance. You can manage Veeam services through the Host Management console. For more information, see [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md).
 
+Linux Services
+
 | Name | Service | Description |
-| --- | --- | --- |
 | Primary Services | | |
 | Veeam Backup Service | veeambackupsvc.service | Coordinates all operations performed by Veeam Backup & Replication such as backup, replication, recovery verification and restore tasks. |
 | Veeam Backup REST API Service | veeamrestapisvc.service | Provides access to Veeam Backup & Replication by REST API. For more information on Veeam Backup & Replication REST API, see the [REST API Reference](https://helpcenter.veeam.com/references/vbr/13/rest). |
@@ -38,11 +39,11 @@ The following table describes Veeam services used by Veeam Backup & Replication 
 | Veeam Host Manager daemon | veeamhostmanager.service | Provides access to the Veeam Host Management console. |
 | Veeam Identity Service | veeamidentitysvc.service | Manages authorization between Veeam backup infrastructure components. |
 | Veeam Immutability Service | veeamimmurepo.service | Manages immutability attributes. Runs as a dedicated process of the Veeam Transport Service. For more information, see [How Immutability Works](hardened_repository_immutability.md). |
-| Veeam Linux Deployer | veeamdeployment.service | Installs, updates or removes Veeam services when you add, update or remove backup infrastructure components. Runs as a dedicated process of the Veeam Installer Service. For more details, see [Veeam Installer Service](installer_service.md). |
+| Veeam Linux Deployer | veeamdeployment.service | Installs, updates or removes Veeam services when you add, update or remove backup infrastructure components. Runs as a dedicated process of the Veeam Installer Service. For more details, see [Veeam Installer Service](installer_service.md).  When this service is deployed, specific system users and groups are created to manage it. |
 | Veeam Mount Service | veeammountsvc.service | Mounts backups and replicas for file-level access, browsing the VM guest file system and restoring VM guest OS files and application items to the original location. |
 | Veeam Network Filesystems Mount Service | veeamnetfsmount.service | Mounts NFS and SMB (CIFS) backup repositories. |
 | Veeam Threat Hunter | veeamthreathuntersvc.service | Performs signature-based malware detection scans. For more information, see [Veeam Threat Hunter for Scan Backup](malware_detection_scan_backup_veeam_threat_hunter.md). |
-| Veeam Transport Service | veeamtransport.service | Sends and receives protected data during backup, replication and restore processes. |
+| Veeam Transport Service | veeamtransport.service | Sends and receives protected data during backup, replication and restore processes.  When this service is deployed, specific system users and groups are created to manage it. |
 | Veeam Updater | veeam-updater.service | Manages updates on the backup server and backup infrastructure components deployed from Veeam Software Appliance. For more information, see [Updating Veeam Appliances](update_appliances.md). |
 | Veeam Updater package manager | veeam-updater-package-manager.service | Manages packages for Veeam Updater. |
 | Veeam vPower NFS | veeamnfssvc.service | Implements vPower NFS server that enables running virtual machines directly from backup files.  Used in VMware vSphere environments. |
@@ -59,8 +60,9 @@ Microsoft Windows Services
 
 The following table describes Veeam services used by Veeam Backup & Replication installed on Microsoft Windows.
 
+Microsoft Windows Services
+
 | Name | Service | Description |
-| --- | --- | --- |
 | Primary Services | | |
 | Veeam Backup Service | VeeamBackupSvc | This is a Microsoft Windows service that coordinates all operations performed by Veeam Backup & Replication such as backup, replication, recovery verification and restore tasks. This service runs on the backup server. |
 | Veeam Backup Server RESTful API Service | VeeamBackupRESTSvc | Provides access to Veeam Backup & Replication by using the web API. For more information, see the [REST API Reference](https://helpcenter.veeam.com/references/vbr/13/rest). |
