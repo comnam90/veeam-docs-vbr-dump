@@ -3,8 +3,8 @@ title: "Guest OS File Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_recovery.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Guest OS File Restore
@@ -109,6 +109,8 @@ The mount server connects to the workload to which you recover files (target wor
 
 1. When you close the Veeam Backup browser or it is closed by timeout, Veeam Backup & Replication unmounts the content of the backup file or replica from the mount server.
 2. [If mount server is helper appliance] Veeam Backup & Replication unregisters the helper appliance on the host.
+
+![Guest OS File Restore](images/file-level_restore_lin.webp)
 
 How Recovery from Storage Snapshots Works
 
