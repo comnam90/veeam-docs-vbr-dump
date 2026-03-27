@@ -3,8 +3,8 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_details.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Object Storage Settings
@@ -19,7 +19,11 @@ At the Folder step of the wizard, specify the folder that will be used to store 
 
 Specifying Immutability Settings
 
-To prohibit deletion of blocks of data from object storage, select the Make recent backups immutable (recommended) check box. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
+Immutability prohibits deletion of blocks of data from your object storage repository. To enable immutability:
+
+1. Select the Make backups immutable (recommended) check box.
+
+1. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
 
 * Select the For the entire duration of their retention policy option if you want the immutability period depend on the retention policy of a backup job.
 
