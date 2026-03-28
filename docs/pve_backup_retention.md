@@ -3,8 +3,8 @@ title: "Backup Retention"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_retention.html"
-last_updated: "1/8/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Retention
@@ -41,7 +41,7 @@ Forward Incremental Backup Retention Policy
 To track and remove redundant restore points from a forward incremental backup chain, Veeam Backup & Replication performs the following actions once a day:
 
 1. Veeam Backup & Replication checks the configuration database to detect forward incremental backup chains where a new full backup has been created (which starts a new backup chain fragment).
-2. Veeam Backup & Replication checks the following whether the period to keep restore points in the new chain fragment has reached the allowed time limit.
+2. Veeam Backup & Replication checks whether the period to keep restore points in the new chain fragment has reached the allowed time limit.
 
 1. If the new backup chain fragment has reached the limit of allowed restore points, Veeam Backup & Replication removes all restore points of the older backup chain fragment.
 
