@@ -3,14 +3,14 @@ title: "Step 3. Specify Veeam Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account_web.html"
-last_updated: "3/26/2026"
+last_updated: "3/27/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Veeam Account
 
 
-At the Account step of the wizard, register the backup server Veeam Data Cloud using your Veeam credentials, specify the storage vault and its connection settings.
+At the Account step of the wizard, register the backup server with Veeam Data Cloud using your Veeam credentials, specify the storage vault and its connection settings.
 
 Registering Backup Server
 

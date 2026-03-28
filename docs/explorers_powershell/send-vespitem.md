@@ -3,8 +3,8 @@ title: "Send-VESPItem"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/send-vespitem.html"
-last_updated: "3/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Send-VESPItem
@@ -57,9 +57,10 @@ This cmdlet sends the following backed-up SharePoint items as email message atta
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| DocumentLibrary | Specifies a SharePoint document library. The cmdlet will send send this document library as an attachment in the email message. | Accepts the [VESPDocumentLibrary](vespdocumentlibrary.md) object. To get this object, run the [Get-VESPDocumentLibrary](get-vespdocumentlibrary.md) cmdlet. | True | 0 | True (ByValue) |
+| DocumentLibrary | Specifies a SharePoint document library. The cmdlet will send this document library as an attachment in the email message. | Accepts the [VESPDocumentLibrary](vespdocumentlibrary.md) object. To get this object, run the [Get-VESPDocumentLibrary](get-vespdocumentlibrary.md) cmdlet. | True | 0 | True (ByValue) |
 | From | Specifies an email address from which the cmdlet will send backed-up SharePoint data.  If this parameter is omitted, the cmdlet will use the email address, specified in email settings. | String | False | Named | False |
 | To | Specifies an email address to which the cmdlet will send restored data. | String | True | Named | False |
 | Subject | Specifies a subject of an email message. | String | False | Named | False |
@@ -119,8 +120,8 @@ Related Commands
 * [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md)
 * [Get-VBOSharePointItemRestoreSession](get-vbosharepointitemrestoresession.md)
 * [Get-VESPOrganization](get-vesporganization.md)
-* [Get-VESPDocumentLibrary](get-vespdocumentlibrary.md)
 * [Get-VESPDocument](get-vespdocument.md)
+* [Get-VESPDocumentLibrary](get-vespdocumentlibrary.md)
 * [Get-VESPItem](get-vespitem.md)
 * [Get-VESPItemAttachment](get-vespitemattachment.md)
 * [Get-VESPDatabase](get-vespdatabase.md)

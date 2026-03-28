@@ -3,8 +3,8 @@ title: "Enable-VETExtendedLogging"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/enable-vetextendedlogging.html"
-last_updated: "6/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Enable-VETExtendedLogging
@@ -32,7 +32,7 @@ This cmdlet enables the extended logging mode for Veeam Explorer for Microsoft T
 
 Run the [Get-VETExtendedLogging](get-vetextendedlogging.md) cmdlet to get the state of the extended logging mode for Veeam Explorer for Microsoft Teams.
 
-Run the [Disable-VETExtendedLogging](disable-vetextendedlogging.md) cmdlet to the disable the extended logging mode for Veeam Explorer for Microsoft Teams.
+Run the [Disable-VETExtendedLogging](disable-vetextendedlogging.md) cmdlet to disable the extended logging mode for Veeam Explorer for Microsoft Teams.
 
 Parameters
 
@@ -53,5 +53,10 @@ This command enables the extended logging mode for Veeam Explorer for Microsoft 
 |  |
 | --- |
 | Enable-VETExtendedLogging |
+
+Related Commands
+
+* [Get-VETExtendedLogging](get-vetextendedlogging.md)
+* [Disable-VETExtendedLogging](disable-vetextendedlogging.md)
 
 

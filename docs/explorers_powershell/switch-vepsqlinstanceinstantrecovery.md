@@ -3,8 +3,8 @@ title: "Switch-VEPSQLInstanceInstantRecovery"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/switch-vepsqlinstanceinstantrecovery.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Switch-VEPSQLInstanceInstantRecovery
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Performs switchover of a published PostgreSQL instance.
+Performs switchover of a PostgreSQL instance published within an instant recovery session.
 
 Applies to
 
@@ -28,12 +28,13 @@ Syntax
 
 Detailed Description
 
-This cmdlet performs a manual switchover of a PostgreSQL instance published within an instant recovery session. You can perform a switchover after all database files are copied to the target server and the cache file is synchronized. For more information on the switchover options, see the [Switchover](https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_switchover.html?ver=13) section of the Veeam Explorers User Guide.
+This cmdlet performs a manual switchover of a PostgreSQL instance published within an instant recovery session. You can perform a switchover after all database files are copied to the target server and the cache file is synchronized. Run the [New-VEPSQLIRSwitchOverOptions](new-vepsqlirswitchoveroptions.md) cmdlet to define the switchover option settings. For more information on the switchover options, see the [Switchover](https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_switchover.html?ver=13) section of the Veeam Explorers User Guide.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Instance | Specifies a PostgreSQL instance. The cmdlet will switchover this instance. | Accepts the [VEPSQLInstanceInstantRecovery](vepsqlinstanceinstantrecovery.md) object. To get this object, run the [Get-VEPSQLInstanceInstantRecovery](get-vepsqlinstanceinstantrecovery.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>

@@ -3,8 +3,8 @@ title: "Stop-VEPSQLRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vepsqlrestoresession.html"
-last_updated: "1/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VEPSQLRestoreSession
@@ -28,7 +28,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet stops active restore sessions initiated to perform operations with PostgreSQL instances.
+This cmdlet stops active restore sessions initiated to perform operations with PostgreSQL data.
 
 |  |
 | --- |
@@ -37,8 +37,9 @@ This cmdlet stops active restore sessions initiated to perform operations with P
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Session | Specifies an PostgreSQL restore session that you want to stop. | Accepts the [VEPSQLRestoreSession](vepsqlrestoresession.md) object. To get this object, run the [Get-VEPSQLRestoreSession](get-vepsqlrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -63,7 +64,7 @@ Perform the following steps:
 
 1. Run the [Get-VEPSQLRestoreSession](get-vepsqlrestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in our example, it is the fourth restore session in the array).
+The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the fourth restore session in the array).
 
 1. Run the Stop-VEPSQLRestoreSession cmdlet. Set the $session variable as the Session parameter value.
 

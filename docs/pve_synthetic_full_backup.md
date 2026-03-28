@@ -3,14 +3,14 @@ title: "Synthetic Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_synthetic_full_backup.html"
-last_updated: "1/8/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Synthetic Full Backup
 
 
-In some situations, running active full backups periodically may not be an option. Active full backups are resource-intensive and consume considerable amount of network bandwidth. As an alternative, you can create synthetic full backups that also produce VBK files and contain data of the whole VM. However, while creating synthetic full backups, Veeam Backup & Replication connects to the cluster to retrieve only VM data that has changed since recent backup and processes it with the data that is already stored in the backup repository.
+In some situations, running active full backups periodically may not be an option. Active full backups are resource-intensive and consume a considerable amount of network bandwidth. As an alternative, you can create synthetic full backups that also produce VBK files and contain data of the whole VM. However, while creating synthetic full backups, Veeam Backup & Replication connects to the cluster to retrieve only VM data that has changed since recent backup and processes it with the data that is already stored in the backup repository.
 
 To create a synthetic full backup, Veeam Backup & Replication performs the following operations:
 

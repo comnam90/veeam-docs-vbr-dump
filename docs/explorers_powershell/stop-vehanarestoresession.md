@@ -3,8 +3,8 @@ title: "Stop-VEHANARestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vehanarestoresession.html"
-last_updated: "7/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VEHANARestoreSession
@@ -22,9 +22,19 @@ Product Edition: Enterprise Plus, Veeam Universal License
 
 Syntax
 
+This cmdlet provides parameter sets that allow you to:
+
+* Stop a specific restore session. Note that this parameter set is deprecated.
+
 |  |
 | --- |
-| Stop-VEHANARestoreSession [-Session] <VEHANARestoreSession> [-RestoreSession] <VEHANARestoreSession> [<CommonParameters>] |
+| Stop-VEHANARestoreSession [-RestoreSession] <VEHANARestoreSession> [<CommonParameters>] |
+
+* Stop a specific restore session.
+
+|  |
+| --- |
+| Stop-VEHANARestoreSession [-Session] <VEHANARestoreSession> [<CommonParameters>] |
 
 Detailed Description
 
@@ -37,8 +47,9 @@ This cmdlet stops an active restore session initiated to perform operations with
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestoreSession | Specifies a restore session initiated to perform operations with SAP HANA databases. The cmdlet will stop this session.  Note: This parameter is deprecated. Use the Session parameter instead. | Accepts the [VEHANARestoreSession](vehanarestoresession.md) object. To get this object, run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 | Session | Specifies a restore session initiated to perform operations with SAP HANA databases. The cmdlet will stop this session. | Accepts the [VEHANARestoreSession](vehanarestoresession.md) object. To get this object, run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 
@@ -64,7 +75,7 @@ Perform the following steps:
 
 1. Run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in our example, it is the fourth restore session in the array).
+The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the fourth restore session in the array).
 
 1. Run the Stop-VEHANARestoreSession cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session.
 

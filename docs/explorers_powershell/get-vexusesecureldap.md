@@ -3,8 +3,8 @@ title: "Get-VEXUseSecureLdap"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vexusesecureldap.html"
-last_updated: "7/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEXUseSecureLdap
@@ -30,8 +30,8 @@ Detailed Description
 
 This cmdlet returns the state of secure LDAP mode for Veeam Explorer for Microsoft Exchange. The cmdlet will return the following types of state:
 
-* True — indicates that the secure LDAP mode is enabled. Veeam Explorer for Microsoft Exchange uses the LDAPS (LDAP over SSL/TLS) protocol and prevents failover to the LDAP protocol if LDAPS is not available.
-* False — indicates that the secure LDAP mode is disabled. Veeam Explorer for Microsoft Exchange uses the less secure LDAP protocol.
+* True — in case the secure LDAP mode is enabled. Veeam Explorer for Microsoft Exchange uses the LDAPS (LDAP over SSL/TLS) protocol and prevents failover to the LDAP protocol if LDAPS is not available.
+* False — in case the secure LDAP mode is disabled. Veeam Explorer for Microsoft Exchange uses the less secure LDAP protocol.
 
 Parameters
 

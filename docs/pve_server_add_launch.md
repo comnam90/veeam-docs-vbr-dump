@@ -3,8 +3,8 @@ title: "Step 1. Launch New Proxmox VE Server Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_server_add_launch.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 1. Launch New Proxmox VE Server Wizard

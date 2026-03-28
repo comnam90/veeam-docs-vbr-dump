@@ -3,8 +3,8 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_planning_and_preparation.html"
-last_updated: "6/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Planning and Preparation

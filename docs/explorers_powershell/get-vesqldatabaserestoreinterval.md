@@ -3,8 +3,8 @@ title: "Get-VESQLDatabaseRestoreInterval"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vesqldatabaserestoreinterval.html"
-last_updated: "12/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VESQLDatabaseRestoreInterval
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns details on the available restore period for a backed-up Microsoft SQL database.
+Returns details on the available restore period for a backed-up Microsoft SQL Server database.
 
 Applies to
 
@@ -32,8 +32,9 @@ This cmdlet returns details on the available restore period for a backed-up Micr
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a backed-up Microsoft SQL Server database. The cmdlet will return details on the available restore period for the specified database. | Accepts the [VESQLDatabase](vesqldatabase.md) object. To get this object, run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -42,13 +43,13 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the [VESQLDatabaseRestoreInterval](vesqldatabaserestoreinterval.md) object that contains details on available restore period for the backed-up Microsoft SQL database.
+The cmdlet returns the [VESQLDatabaseRestoreInterval](vesqldatabaserestoreinterval.md) object that contains details on available restore period for the backed-up Microsoft SQL Server database.
 
 Example
 
-Getting Details on Available Restore Period for Backed-Up Microsoft SQL Database
+Getting Details on Available Restore Period for Backed-Up Microsoft SQL Server Database
 
-This example shows how to get details on an available restore period for a backed-up Microsoft SQL database.
+This example shows how to get details on the available restore period for a backed-up Microsoft SQL Server database.
 
 |  |
 | --- |
@@ -56,7 +57,7 @@ This example shows how to get details on an available restore period for a backe
 
 Perform the following steps:
 
-1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.
+1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable. The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the first restore session in the array).
 2. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable.
 3. Run the Get-VESQLDatabaseRestoreInterval cmdlet. Set the $database variable as the Database parameter value.
 

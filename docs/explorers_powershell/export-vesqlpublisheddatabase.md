@@ -3,8 +3,8 @@ title: "Export-VESQLPublishedDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/export-vesqlpublisheddatabase.html"
-last_updated: "8/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Export-VESQLPublishedDatabase
@@ -37,8 +37,9 @@ This cmdlet exports a published Microsoft SQL Server database to the specified d
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a published Microsoft SQL Server database that you want to export. | Accepts the [VESQLPublishedDatabase](vesqlpublisheddatabase.md) object. To get this object, run the [Get-VESQLPublishedDatabase](get-vesqlpublisheddatabase.md) cmdlet. | True | 0 | True (ByValue) |
 | Path | Specifies a full file path. The cmdlet will the export published Microsoft SQL Server database to that file path. | String | True | 1 | False |
 | EnableCompression | Defines that the cmdlet will compress the backup file.  Note: This option is available only if your version of Microsoft SQL Server supports the compression option. | SwitchParameter | False | Named | False |
@@ -54,9 +55,9 @@ None.
 
 Example
 
-Exporting Published Microsoft SQL Database
+Exporting Published Microsoft SQL Server Database
 
-This example shows how to export a published Microsoft SQL database.
+This example shows how to export a published Microsoft SQL Server database.
 
 |  |
 | --- |
@@ -66,7 +67,7 @@ Perform the following steps:
 
 1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.
+The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.
 
 1. Run the [Get-VESQLPublishedDatabase](get-vesqlpublisheddatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Save the result to the $database variable.
 2. Run the Export-VESQLPublishedDatabase cmdlet. Set the $database variable as the Database parameter value. Specify the Path parameter value.

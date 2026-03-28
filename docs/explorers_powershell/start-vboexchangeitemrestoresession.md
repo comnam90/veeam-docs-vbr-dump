@@ -3,8 +3,8 @@ title: "Start-VBOExchangeItemRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/start-vboexchangeitemrestoresession.html"
-last_updated: "7/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBOExchangeItemRestoreSession
@@ -59,8 +59,9 @@ After you get backed-up Exchange objects, you can perform the following operatio
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | LatestState | Defines that the cmdlet will retrieve data from a mailbox database at the state of the latest restore point.  Default: False | SwitchParameter | True | Named | False |
 | Job | Specifies a backup job to start a new restore session. You will be able to use the session to perform operations with items backed up by this job. | Accepts the IVBOJob object. To get this object, run the [Get-VBOJob](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vbojob.html?ver=80) cmdlet. | False | Named | True (ByValue) |
 | Organization | Specifies an organization to start a new restore session. You will be able to use the session to perform operations with items backed up for this organization. | Accepts the IVBOOrganization object. To get this object, run the [Get-VBOOrganization](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vboorganization.html?ver=80) cmdlet. | False | Named | True (ByValue) |
@@ -71,7 +72,7 @@ Parameters
 | Server | Specifies DNS name or IP address of the Veeam Backup for Microsoft 365 server that backed up items that you want to restore. | String | True | Named | False |
 | Credential | Specifies credentials that will be used for authenticating to the Veeam Backup for Microsoft 365 server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | True | Named | False |
 | Port | Specifies a port number that will be used to connect to the Veeam Backup for Microsoft 365 server. | Int32 | False | Named | False |
-| SkipCertificateCheck | Defines that the cmdlet will not perform the SSL certificate check.  Default: False | SwitchParameter | False | Named | False |
+| SkipCertificateCheck | Defines that the cmdlet will not perform a TLS certificate check.  Default: False | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -93,7 +94,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to start a restore session to perform operations with Microsoft Exchange objects. The restore session will start with the following settings:   * The cmdlet will retrieve a mailbox database at the state of the selected restore point. * The cmdlet will start a restore session only for backups that were created by the Sales Reports backup job.     |  | | --- | | $restorepoint = Get-VBORestorePoint  $job = Get-VBOJob -Name "Sales Reports"  Start-VBOExchangeItemRestoreSession -RestorePoint $restorepoint[2] -Job $job |  Perform the following steps:   1. Run the [Get-VBORestorePoint](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vborestorepoint.html?ver=80) cmdlet. Save the result to the $restorepoint variable.   The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the third restore session in the array.   1. Run the [Get-VBOJob](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vbojob.html?ver=80) cmdlet. Specify the Name parameter value. Save the result to the $job variable. 2. Run the Start-VBOExchangeItemRestoreSession cmdlet. Set the $restorepoint variable as the RestorePoint parameter value and select the necessary restore point. In this example, it is the third restore point in the array. Set the $job variable as the Job parameter value. |
+| This example shows how to start a restore session to perform operations with Microsoft Exchange objects. The restore session will start with the following settings:   * The cmdlet will retrieve a mailbox database at the state of the selected restore point. * The cmdlet will start a restore session only for backups that were created by the Sales Reports backup job.     |  | | --- | | $restorepoint = Get-VBORestorePoint  $job = Get-VBOJob -Name "Sales Reports"  Start-VBOExchangeItemRestoreSession -RestorePoint $restorepoint[2] -Job $job |  Perform the following steps:   1. Run the [Get-VBORestorePoint](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vborestorepoint.html?ver=80) cmdlet. Save the result to the $restorepoint variable.   The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the third restore session in the array.   1. Run the [Get-VBOJob](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vbojob.html?ver=80) cmdlet. Specify the Name parameter value. Save the result to the $job variable. 2. Run the Start-VBOExchangeItemRestoreSession cmdlet. Set the $restorepoint variable as the RestorePoint parameter value and select the necessary restore point. In this example, it is the third restore point in the array. Set the $job variable as the Job parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Starting Restore Session from Latest Restore Point Remotely
 

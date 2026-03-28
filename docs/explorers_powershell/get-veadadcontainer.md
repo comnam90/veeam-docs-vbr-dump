@@ -3,8 +3,8 @@ title: "Get-VEADADContainer"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-veadadcontainer.html"
-last_updated: "3/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEADADContainer
@@ -32,11 +32,12 @@ This cmdlet returns an array of Active Directory containers that are available o
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies DNS name or IP address of the target server. Veeam Explorer for Microsoft Active Directory will restore Active Directory objects to the specified server. | String | True | Named | False |
 | Credential | Specifies credential records that Veeam Explorer for Microsoft Active Directory will use to connect to an LDAP server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | True | Named | False |
-| UseSSL | Defines that Veeam Explorer for Microsoft Active Directory will establish a secure SSL connection to the target server.  If you provide this parameter, Veeam Explorer for Microsoft Active Directory will connect over SSL to the target server. Otherwise, Veeam Explorer for Microsoft Active Directory will connect to the target server using a non-secure connection. | SwitchParameter | False | Named | False |
+| UseSSL | Defines that Veeam Explorer for Microsoft Active Directory will establish a secure connection to the target server.  If you provide this parameter, Veeam Explorer for Microsoft Active Directory will connect over TLS to the target server. Otherwise, Veeam Explorer for Microsoft Active Directory will connect to the target server using a non-secure connection. | SwitchParameter | False | Named | False |
 | Id | Specifies an ID of the container. Veeam Explorer for Microsoft Active Directory will get the container with the specified ID. | Guid | False | Named | False |
 | Name | Specifies a name of the container. Veeam Explorer for Microsoft Active Directory will get the container with the specified name. | String | False | Named | False |
 

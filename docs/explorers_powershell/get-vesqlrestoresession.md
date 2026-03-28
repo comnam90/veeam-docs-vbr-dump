@@ -3,8 +3,8 @@ title: "Get-VESQLRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vesqlrestoresession.html"
-last_updated: "1/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VESQLRestoreSession
@@ -28,7 +28,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet returns an array of active restore sessions started to perform operations with backed-up Microsoft SQL databases.
+This cmdlet returns an array of active restore sessions for Microsoft SQL Server databases.
 
 |  |
 | --- |
@@ -43,7 +43,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the [VESQLRestoreSession](vesqlrestoresession.md)[] array that contains settings of restore sessions started to explore backed-up Microsoft SQL databases and to perform operations with these databases.
+The cmdlet returns the [VESQLRestoreSession](vesqlrestoresession.md)[] array that contains settings of restore sessions started to explore backed-up Microsoft SQL Server databases and to perform operations with these databases.
 
 Examples
 
@@ -51,12 +51,12 @@ Examples
 
 |  |  |
 | --- | --- |
-| This command gets all running restore sessions to perform operations with Microsoft SQL databases. Save the result to the $session variable to be able to use it with other cmdlets.  |  | | --- | | $session = Get-VESQLRestoreSession | |
+| This command gets all running restore sessions started to perform operations with Microsoft SQL Server databases. Save the result to the $session variable to be able to use it with other cmdlets.  |  | | --- | | $session = Get-VESQLRestoreSession | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting Specific Restore Session
 
 |  |  |
 | --- | --- |
-| This example shows how to get a specific restore session to perform operations with Microsoft SQL databases.  |  | | --- | | $session = Get-VESQLRestoreSession  $session[3] |  Perform the following steps:   1. Run the Get-VESQLRestoreSession cmdlet. Save the result to the $session variable.   The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in our example, it is the fourth restore session in the array).   1. Specify the necessary ordinal number of the restore session for the $session variable. In our example, it is the fourth restore session in the array. |
+| This example shows how to get a specific restore session started to perform operations with Microsoft SQL Server databases.  |  | | --- | | $session = Get-VESQLRestoreSession  $session[3] |  Perform the following steps:   1. Run the Get-VESQLRestoreSession cmdlet. Save the result to the $session variable.   The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the fourth restore session in the array).   1. Specify the necessary ordinal number of the restore session for the $session variable. In this example, it is the fourth restore session in the array. |
 
 

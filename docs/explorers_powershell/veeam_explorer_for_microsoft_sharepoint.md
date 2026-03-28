@@ -3,8 +3,8 @@ title: "Veeam Explorer for Microsoft SharePoint"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_microsoft_sharepoint.html"
-last_updated: "3/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Explorer for Microsoft SharePoint
@@ -12,11 +12,12 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets for Veeam Explorer for Microsoft SharePoint to perform the following operations:
 
+Veeam Explorer for Microsoft SharePoint
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VESPCommand](get-vespcommand.md) | Returns a set of cmdlets available for Veeam Explorer for Microsoft SharePoint and Veeam Explorer for Microsoft OneDrive for Business. |
 | [Get-VBRSiteCollection](get-vbrsitecollection.md) | Returns site collections for Microsoft SharePoint. |
-| [Get-VBRSiteCollectionRestorePoint](get-vbrsitecollectionrestorepoint.md) | Returns restore points of backed-up machines with Microsoft SQL databases for the specified Microsoft SharePoint site collection. |
+| [Get-VBRSiteCollectionRestorePoint](get-vbrsitecollectionrestorepoint.md) | Returns restore points of backed-up machines with Microsoft SQL Server databases for the specified Microsoft SharePoint site collection. |
 | [Start-VBRSharePointItemRestoreSession](start-vbrsharepointitemrestoresession.md) | Starts restore sessions to explore backed-up SharePoint databases and to perform operations with these databases. |
 | [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md) | Returns active restore sessions started to perform operations with backed-up Microsoft SharePoint databases. |
 | [Stop-VBRSharePointItemRestoreSession](stop-vbrsharepointitemrestoresession.md) | Stops active restore sessions initiated to perform operations with Microsoft SharePoint databases. |

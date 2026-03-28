@@ -3,8 +3,8 @@ title: "Restore-VEODDocument"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restore-veoddocument.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore-VEODDocument
@@ -53,8 +53,9 @@ This cmdlet allows you to restore OneDrive documents.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Document | Specifies OneDrive documents. This cmdlet will restore the specified OneDrive documents. | Accepts the [VBOOneDriveDocument](vboonedrivedocument.md)[] object. To get this object, run the [Get-VEODDocument](get-veoddocument.md) cmdlet. | True | 0 | True (ByValue) |
 | RestoreChangedItems | Defines that the cmdlet will restore all versions of OneDrive documents that were modified by the user.  Default: False | SwitchParameter | False | Named | False |
 | RestoreDeletedItems | Defines that the cmdlet will restore all document items that were deleted by the user.  Default: False | SwitchParameter | False | Named | False |
@@ -66,7 +67,7 @@ Parameters
 | TargetFolder | Specifies the restore target OneDrive folder. This cmdlet will restore OneDrive document to the specified folder. | String | False | Named | False |
 | ApplicationCertificatePath | To restore data using multi-factor authentication.  Specifies a path to the folder where the certificate is located. The cmdlet will import the certificate that is located in this path to set up an encrypted connection to a Microsoft organization. | String | False | Named | False |
 | ApplicationCertificatePassword | To restore data using multi-factor authentication.  Specifies the certificate password. The cmdlet will use this password to confirm the certificate that you want to import to a Microsoft Entra application. This parameter is obligatory. | SecureString | False | Named | False |
-| Overwrite | Defines that the cmdlet will overwrite items in the target directory with the restored items if these items have the same name.  Default: False | SwitchParameter | False | Named | False |
+| Overwrite | Defines that the cmdlet will overwrite the items in the target directory with the restored items if these items have the same name.  Default: False | SwitchParameter | False | Named | False |
 | User | Specifies OneDrive user. The cmdlet will restore documents of this user. | Accepts the [VBOOneDriveUser](vboonedriveuser.md) object. To get this object, run the [Get-VEODUser](get-veoduser.md) cmdlet. | True | 0 | True (ByValue) |
 | MultipleUsers | Specifies an array of OneDrive users. The cmdlet will restore documents of these users.  Note: This cmdlet will restore documents to the production versions of the same OneDrive users. | Accepts the [VBOOneDriveUser](vboonedriveuser.md)[] object. To get this object, run the [Get-VEODUser](get-veoduser.md) cmdlet. | True | 0 | True (ByValue) |
 | SkipUnresolvedUsers | Defines that the cmdlet will not restore items of the users that are not resolved.  Default: False | SwitchParameter | False | Named | False |
