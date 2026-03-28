@@ -3,8 +3,8 @@ title: "Managing Microsoft Entra ID Tenants"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_manage_tenant.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managing Microsoft Entra ID Tenants
