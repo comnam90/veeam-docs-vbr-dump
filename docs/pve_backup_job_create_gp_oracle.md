@@ -3,8 +3,8 @@ title: "Specifying Oracle Archived Redo Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_gp_oracle.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Specifying Oracle Archived Redo Log Settings
@@ -25,7 +25,7 @@ To back up Oracle archived redo logs periodically, do the following:
 
 * Select the Until the corresponding image-level backup is deleted option if you want to remove archived redo log backups and the related image-level backups at the same time, according to the retention policy settings specified at [step 4](pve_backup_job_create_destination.md).
 
-* Select the Keep only last <N> days of log backups if you want to retain archived redo log backups for a specific time period, regardless of the retention policy settings specified for image-level backups. Note that archived redo logs backups must always be retained for a longer period than image-level backups.
+* Select the Keep only last <N> days of log backups option if you want to retain archived redo log backups for a specific time period, regardless of the retention policy settings specified for image-level backups. Note that archived redo logs backups must always be retained for a longer period than image-level backups.
 
 For more information on how Veeam Backup & Replication retains archived redo logs, see [Retention for Archived Log Backup](oracle_backup_retention.md).
 
