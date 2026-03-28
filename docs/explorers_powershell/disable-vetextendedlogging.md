@@ -3,8 +3,8 @@ title: "Disable-VETExtendedLogging"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/disable-vetextendedlogging.html"
-last_updated: "6/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Disable-VETExtendedLogging
@@ -53,5 +53,10 @@ This command disables the extended logging mode for Veeam Explorer for Microsoft
 |  |
 | --- |
 | Disable-VETExtendedLogging |
+
+Related Commands
+
+* [Get-VETExtendedLogging](get-vetextendedlogging.md)
+* [Enable-VETExtendedLogging](enable-vetextendedlogging.md)
 
 
