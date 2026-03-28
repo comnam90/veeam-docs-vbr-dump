@@ -3,8 +3,8 @@ title: "Get-VBRSiteCollectionRestorePoint"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vbrsitecollectionrestorepoint.html"
-last_updated: "3/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRSiteCollectionRestorePoint
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns restore points of backed-up machines with Microsoft SQL databases for the specified Microsoft SharePoint site collection.
+Returns restore points of backed-up machines with Microsoft SQL Server databases for the specified Microsoft SharePoint site collection.
 
 Applies to
 
@@ -28,13 +28,14 @@ Syntax
 
 Detailed Description
 
-This cmdlet returns restore points of backed-up machines with Microsoft SQL databases for the specified Microsoft SharePoint site collection.
+This cmdlet returns restore points of backed-up machines with Microsoft SQL Server databases for the specified Microsoft SharePoint site collection.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| SiteCollection | Specifies a site collection for Microsoft SharePoint. The cmdlet will return restore points of backed-up machines with Microsoft SQL databases for these site collections. | Accepts the [VBRSiteCollection](vbrsitecollection.md) object. To get this object, run the [Get-VBRSiteCollection](get-vbrsitecollection.md) cmdlet. | True | Named | False |
+| SiteCollection | Specifies a site collection for Microsoft SharePoint. The cmdlet will return restore points of backed-up machines with Microsoft SQL Server databases for these site collections. | Accepts the [VBRSiteCollection](vbrsitecollection.md) object. To get this object, run the [Get-VBRSiteCollection](get-vbrsitecollection.md) cmdlet. | True | Named | False |
 
 <CommonParameters>
 
@@ -42,13 +43,13 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the [VBRSiteCollectionRestorePoint](vbrsitecollectionrestorepoint.md)[] array that contains restore points of backed-up machines with Microsoft SQL databases for the specified SharePoint site collection.
+The cmdlet returns the [VBRSiteCollectionRestorePoint](vbrsitecollectionrestorepoint.md)[] array that contains restore points of backed-up machines with Microsoft SQL Server databases for the specified SharePoint site collection.
 
 Example
 
-Getting All Restore Points of Machines with Microsoft SQL Databases for Microsoft SharePoint Site Collections
+Getting All Restore Points of Machines with Microsoft SQL Server Databases for Microsoft SharePoint Site Collections
 
-This example shows how to get all restore points of backed-up machines with Microsoft SQL databases for the SharePoint server SharePoint site collection.
+This example shows how to get all restore points of backed-up machines with Microsoft SQL Server databases for the SharePoint server SharePoint site collection.
 
 |  |
 | --- |
