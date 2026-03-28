@@ -3,7 +3,7 @@ title: "Veeam Backup & Replication Services"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/services_and_components.html"
-last_updated: "3/26/2026"
+last_updated: "3/27/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -39,11 +39,11 @@ Linux Services
 | Veeam Host Manager daemon | veeamhostmanager.service | Provides access to the Veeam Host Management console. |
 | Veeam Identity Service | veeamidentitysvc.service | Manages authorization between Veeam backup infrastructure components. |
 | Veeam Immutability Service | veeamimmurepo.service | Manages immutability attributes. Runs as a dedicated process of the Veeam Transport Service. For more information, see [How Immutability Works](hardened_repository_immutability.md). |
-| Veeam Linux Deployer | veeamdeployment.service | Installs, updates or removes Veeam services when you add, update or remove backup infrastructure components. Runs as a dedicated process of the Veeam Installer Service. For more details, see [Veeam Installer Service](installer_service.md).  When this service is deployed, specific system users and groups are created to manage it. |
+| Veeam Linux Deployer | veeamdeployment.service | Installs, updates or removes Veeam services when you add, update or remove backup infrastructure components. Runs as a dedicated process of the Veeam Installer Service. For more details, see [Veeam Installer Service](installer_service.md). |
 | Veeam Mount Service | veeammountsvc.service | Mounts backups and replicas for file-level access, browsing the VM guest file system and restoring VM guest OS files and application items to the original location. |
 | Veeam Network Filesystems Mount Service | veeamnetfsmount.service | Mounts NFS and SMB (CIFS) backup repositories. |
 | Veeam Threat Hunter | veeamthreathuntersvc.service | Performs signature-based malware detection scans. For more information, see [Veeam Threat Hunter for Scan Backup](malware_detection_scan_backup_veeam_threat_hunter.md). |
-| Veeam Transport Service | veeamtransport.service | Sends and receives protected data during backup, replication and restore processes.  When this service is deployed, specific system users and groups are created to manage it. |
+| Veeam Transport Service | veeamtransport.service | Sends and receives protected data during backup, replication and restore processes. |
 | Veeam Updater | veeam-updater.service | Manages updates on the backup server and backup infrastructure components deployed from Veeam Software Appliance. For more information, see [Updating Veeam Appliances](update_appliances.md). |
 | Veeam Updater package manager | veeam-updater-package-manager.service | Manages packages for Veeam Updater. |
 | Veeam vPower NFS | veeamnfssvc.service | Implements vPower NFS server that enables running virtual machines directly from backup files.  Used in VMware vSphere environments. |
@@ -55,6 +55,11 @@ Linux Services
 | Veeam Nutanix AHV Platform Service | veeam-platform-service-ahv.service | Enables interaction between Veeam Backup & Replication and Nutanix AHV infrastructure. |
 | Veeam Proxmox Virtual Environment Platform Service | veeam-platform-service-pve.service | Enables interaction between Veeam Backup & Replication and Proxmox Virtual Environment. |
 | Veeam Scale Computing HyperCore Platform Service | veeam-platform-service-scp.service | Enables interaction between Veeam Backup & Replication and Scale Computing HyperCore infrastructure. |
+
+|  |
+| --- |
+| Note |
+| When deploying Veeam components such as Veeam Linux Deployer and Veeam Transport Service on a Linux machine (for example, as part of agent management, Linux managed server addition or guest processing), the installer automatically creates specific system users and groups to manage these services. These may include users and groups with names starting with veeam-usr-... and veeam-grp-....  These accounts are required for the operation of Veeam services and are not removed automatically if the components are uninstalled. No user action is required regarding these accounts, but their presence is expected on systems where Veeam services are (or have been) installed.  Other Veeam services may also create additional users and groups for internal service management. |
 
 Microsoft Windows Services
 
