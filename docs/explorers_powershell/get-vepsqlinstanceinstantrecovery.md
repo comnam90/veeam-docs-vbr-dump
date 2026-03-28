@@ -3,8 +3,8 @@ title: "Get-VEPSQLInstanceInstantRecovery"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vepsqlinstanceinstantrecovery.html"
-last_updated: "7/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEPSQLInstanceInstantRecovery
@@ -30,7 +30,7 @@ Detailed Description
 
 This cmdlet returns an array of PostgreSQL instances that are published within an instant recovery session.
 
-After you get published PostgreSQL instances within an instant recovery session, you can perform the following operations with these instances:
+After you get the published PostgreSQL instances within an instant recovery session, you can perform the following operations with these instances:
 
 * [Switch-VEPSQLInstanceInstantRecovery](switch-vepsqlinstanceinstantrecovery.md)
 * [Set-VEPSQLInstanceInstantRecovery](set-vepsqlinstanceinstantrecovery.md)
@@ -39,8 +39,9 @@ After you get published PostgreSQL instances within an instant recovery session,
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstanceName | Specifies a name of a PostgreSQL instance. The cmdlet will return an array of instances with the specified name. | String | False | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -59,7 +60,7 @@ Examples
 | --- | --- |
 | This command returns a list of all published PostgreSQL instances within an instant recovery session. Save the result to the $IRInstance variable to be able to use it with other cmdlets.  |  | | --- | | $IRInstance = Get-VEPSQLInstanceInstantRecovery | |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting PostgreSQL Instance with Specific Name Published Within Instant Recovery Session
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting PostgreSQL Instances with Specific Name Published Within Instant Recovery Session
 
 |  |  |
 | --- | --- |
