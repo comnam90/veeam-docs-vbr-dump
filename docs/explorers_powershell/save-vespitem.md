@@ -3,8 +3,8 @@ title: "Save-VESPItem"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/save-vespitem.html"
-last_updated: "3/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Save-VESPItem
@@ -48,8 +48,9 @@ This cmdlet saves SharePoint items such as document libraries, documents and att
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | DocumentLibrary | Specifies a SharePoint document library that you want to save. | Accepts the [VESPDocumentLibrary](vespdocumentlibrary.md) object. To get this object, run the [Get-VESPDocumentLibrary](get-vespdocumentlibrary.md) cmdlet. | True | 0 | True (ByValue) |
 | Path | Specifies a path to the specified item. | String | True | 1 | True (ByValue) |
 | AsZip | Defines that the cmdlet will save the specified item as a ZIP archive.  Default: False | SwitchParameter | False | Named | False |
@@ -112,12 +113,12 @@ Examples
 Related Commands
 
 * [Get-VBOSharePointItemRestoreSession](get-vbosharepointitemrestoresession.md)
+* [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md)
 * [Get-VESPOrganization](get-vesporganization.md)
 * [Get-VESPDocumentLibrary](get-vespdocumentlibrary.md)
 * [Get-VESPDocument](get-vespdocument.md)
 * [Get-VESPItem](get-vespitem.md)
 * [Get-VESPItemAttachment](get-vespitemattachment.md)
-* [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md)
 * [Get-VESPDatabase](get-vespdatabase.md)
 
 
