@@ -3,8 +3,8 @@ title: "Restore-VEXItem"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restore-vexitem.html"
-last_updated: "7/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore-VEXItem
@@ -52,8 +52,8 @@ Detailed Description
 
 This cmdlet restores backups of Exchange organization mailboxes. You can restore Exchange organization mailboxes with one of the following authentication methods:
 
-* Authentication methods that utilize legacy protocols.
-* Multi-factor authentication. To restore data the cmdlet utilizes a Microsoft Entra application.
+* Authentication methods that use legacy protocols.
+* Multi-factor authentication. To restore data the cmdlet uses a Microsoft Entra application.
 
 |  |
 | --- |
@@ -62,13 +62,14 @@ This cmdlet restores backups of Exchange organization mailboxes. You can restore
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Item | Specifies an array of items for an Exchange organization mailbox. The cmdlet will restore these items. | Accepts the [VEXItem](vexitem.md)[] object. To get this object, run the [Get-VEXItem](get-vexitem.md) cmdlet. | True | Named | True (ByValue) |
 | ApplicationId | To restore data using multi-factor authentication.  Specifies a Microsoft Entra application ID. The cmdlet will use this application ID to set up a secure connection to a Microsoft organization. | Guid | False | Named | False |
 | ApplicationCertificatePath | To restore data using multi-factor authentication.  Specifies a path to the certificate. The cmdlet will import this certificate that is located in this path to set up an encrypted connection to a Microsoft organization. | String | False | Named | False |
 | ApplicationCertificatePassword | To restore data using multi-factor authentication.  Specifies the certificate password. The cmdlet will use this password to confirm the certificate that you want to import to a Microsoft Entra application. This parameter is obligatory. | SecureString | False | Named | False |
-| ImpersonationAccountName | To restore data using multi-factor authentication.  Specifies a user name of a Microsoft Exchange user. The cmdlet will use this user name for authenticating to the Microsoft Exchange server. Use this parameter together with the ApplicationCertificatePassword parameter. | String | False | Named | False |
+| ImpersonationAccountName | To restore data using multi-factor authentication.  Specifies a user name of a Microsoft Exchange user. The cmdlet will use this user name to authenticate to the Microsoft Exchange server. Use this parameter together with the ApplicationCertificatePassword parameter. | String | False | Named | False |
 | OrganizationName | To restore data to another organization.  Specifies an organization name. The cmdlet will restore an Exchange items to this organization.  Note: This parameter is available for restore from backups created by Veeam Backup for Microsoft 365 only. | String | False | Named | False |
 | Region | To restore data to another organization.  Specifies a Microsoft Entra region. The cmdlet will restore Exchange items to a Microsoft organization that belongs to one of the following regions:   * Worldwide * Germany * China * USDefence * USGovernment   Note: This parameter is available for restore from backups created by Veeam Backup for Microsoft 365 only. | VBOOffice365Region | False | Named | False |
 | Server | Specifies DNS name or IP address of the Microsoft Exchange server with the Client Access Server (CAS) role. The cmdlet will perform a restore to this mailbox server. | String | False | Named | False |
@@ -147,7 +148,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to restore the Contacts folder with the following settings:   * The cmdlet will restore the Contacts folder to the sales@abc.onmicrosoft.com mailbox on the outlook.office365.com production server. * The cmdlet will restore all versions of mailbox items that were modified by the user.   |  | | --- | | $session = Get-VBOExchangeItemRestoreSession  $database = Get-VEXDatabase -Session $session -Name "ABC\*"  $salesmailbox = Get-VEXMailbox -Database $database -Name "north.sales"  $contacts = Get-VEXFolder -Mailbox $salesmailbox -Name "Contacts"  $creds = Get-Credential  Restore-VEXItem -Folder $contacts -Server outlook.office365.com -Credential $creds -TargetMailbox "sales@abc.onmicrosoft.com" -RestoreChangedItem |  Perform the following steps:   1. Get the mailbox folder:  1. Run the [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md). Save the result to the $session variable. 2. Run the [Get-VEXDatabase](get-vexdatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $database variable. 3. Run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. Set the $database variable as the Database parameter value. Specify the Name parameter value. Save the result to the $salesmailbox variable. 4. Run the [Get-VEXFolder](get-vexfolder.md) cmdlet. Set the $salesmailbox variable as the Mailbox parameter value. Specify the Name parameter value. Save the result to the $contacts variable.  1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create the PSCredential object. Save the result to the $creds variable. 2. Run the Restore-VEXItem cmdlet. Specify the following settings:  * Set the $contacts variable as the Folder parameter value. * Specify the Server parameter value. * Set the $creds variable as the Credential parameter value. * Specify the TargetMailbox parameter value. * Provide the RestoreChangedItem parameter. |
+| This example shows how to restore the Contacts folder with the following settings:   * The cmdlet will restore the Contacts folder to the sales@abc.onmicrosoft.com mailbox on the outlook.office365.com production server. * The cmdlet will restore all versions of mailbox items that were modified by the user.   |  | | --- | | $session = Get-VBOExchangeItemRestoreSession  $database = Get-VEXDatabase -Session $session -Name "ABC\*"  $salesmailbox = Get-VEXMailbox -Database $database -Name "north.sales"  $contacts = Get-VEXFolder -Mailbox $salesmailbox -Name "Contacts"  $creds = Get-Credential  Restore-VEXItem -Folder $contacts -Server outlook.office365.com -Credential $creds -TargetMailbox "sales@abc.onmicrosoft.com" -RestoreChangedItem |  Perform the following steps:   1. Get the mailbox folder:  1. Run the [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md). Save the result to the $session variable. 2. Run the [Get-VEXDatabase](get-vexdatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $database variable. 3. Run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. Set the $database variable as the Database parameter value. Specify the Name parameter value. Save the result to the $salesmailbox variable. 4. Run the [Get-VEXFolder](get-vexfolder.md) cmdlet. Set the $salesmailbox variable as the Mailbox parameter value. Specify the Name parameter value. Save the result to the $contacts variable.  1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create the PSCredential object. Type credentials that you want to use to connect to the Microsoft Exchange server. Save the result to the $creds variable. 2. Run the Restore-VEXItem cmdlet. Specify the following settings:  * Set the $contacts variable as the Folder parameter value. * Specify the Server parameter value. * Set the $creds variable as the Credential parameter value. * Specify the TargetMailbox parameter value. * Provide the RestoreChangedItem parameter. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 9. Restoring All Mailbox Items [For Veeam Backup for Microsoft 365]
 
