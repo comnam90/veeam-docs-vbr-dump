@@ -3,8 +3,8 @@ title: "Start-VBOSharePointItemRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/start-vbosharepointitemrestoresession.html"
-last_updated: "7/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Start-VBOSharePointItemRestoreSession
@@ -71,8 +71,9 @@ After you get backed-up items, you can perform the following operations with the
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies a backup job to start a new restore session. You will be able to use the session to perform operations with items backed up by this job. | Accepts the IVBOJob object. To get this object, run the [Get-VBOJob](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vbojob.html?ver=80) cmdlet. | True | 0 | True (ByValue) |
 | Server | Specifies DNS name or IP address of the Veeam Backup for Microsoft 365 server that backed up items you want to restore. | String | False | Named | False |
 | Credential | Specifies credentials that will be used for authenticating to the Veeam Backup for Microsoft 365 server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
@@ -80,7 +81,7 @@ Parameters
 | ShowDeleted | Defines that deleted items will be included in the current session. If you provide this parameter, you will be able to perform operations with these items.  Default: False  Note: With this parameter provided, the amount of data returned by cmdlets within the current session may significantly increase. | SwitchParameter | False | Named | False |
 | ShowAllVersions | Defines that all versions of SharePoint items will be included in the current session.  If you provide this parameter, you will be able to perform operations with these items. Otherwise, only the latest version of SharePoint items will be available.  Default: False  Note: With this parameter provided, the amount of data returned by cmdlets within the current session may significantly increase. | SwitchParameter | False | Named | False |
 | Reason | Specifies a reason to perform restore operation. | String | False | Named | False |
-| Organization | Specifies an organization to start a new restore session. You will be able to use the session to perform operations with items backed up for this organization. | Accepts the IVBOOrganization object. To get this object, run the [Get-VBOOrganization](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vboorganization.html?ver=80) cmdlet. | False | Named | True (ByValue) |
+| Organization | Specifies an organization to start a new restore session. You will be able to use the session to perform operations with items backed up for this organization. | Accepts the IVBOOrganization object. To get this object, run the [Get-VBOOrganization](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vboorganization.html?ver=80) cmdlet. | False | 0 | True (ByValue) |
 | RestorePoint | Specifies a restore point to start a new restore session. You will be able to use the session to perform operations with items that this restore point contains. | Accepts the IVBORestorePoint object. To get this object, run the [Get-VBORestorePoint](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vborestorepoint.html?ver=80) cmdlet. | True | 0 | True (ByValue) |
 | LatestState | Defines that the cmdlet will retrieve items from the latest restore point. If you provide this parameter, you will be able to perform operations with items in the most recent restore state.  Default: False | SwitchParameter | True | Named | False |
 
@@ -104,7 +105,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to start a restore session to retrieve items from a specific restore point created on the srv.tech.local server. To connect to the Veeam Backup for Microsoft 365 server, the default port number (9194) will be used.  |  | | --- | | $credentials = Get-Credential  $restorepoint = Get-VBORestorePoint  Start-VBOSharePointItemRestoreSession -RestorePoint $restorepoint[0] -Server "srv.tech.local" -Credential $credentials |  Perform the following steps:   1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter credentials that will be used to connect to the Veeam Backup for Microsoft 365 server. Save the result to the $credentials variable. 2. Run the [Get-VBORestorePoint](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vborestorepoint.html?ver=80) cmdlet. Save the result to the $restorepoint variable.   The cmdlet will return an array of all restore points created on the srv.tech.local server. Note the ordinal number of the necessary restore point. In our example, it is the first restore point in the array.   1. Run the Start-VBOSharePointItemRestoreSession cmdlet. Specify the following settings:  * Set the $restorepoint[0] variable as the RestorePoint parameter value. * Specify the Server parameter value. * Set the $credentials variable as the Credential parameter value. |
+| This example shows how to start a restore session to retrieve items from a specific restore point created on the srv.tech.local server. To connect to the Veeam Backup for Microsoft 365 server, the default port number (9194) will be used.  |  | | --- | | $credentials = Get-Credential  $restorepoint = Get-VBORestorePoint  Start-VBOSharePointItemRestoreSession -RestorePoint $restorepoint[0] -Server "srv.tech.local" -Credential $credentials |  Perform the following steps:   1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter credentials that will be used to connect to the Veeam Backup for Microsoft 365 server. Save the result to the $credentials variable. 2. Run the [Get-VBORestorePoint](https://helpcenter.veeam.com/docs/vbo365/powershell/get-vborestorepoint.html?ver=80) cmdlet. Save the result to the $restorepoint variable.   The cmdlet will return an array of all restore points created on the srv.tech.local server. Note the ordinal number of the necessary restore point. In this example, it is the first restore point in the array.   1. Run the Start-VBOSharePointItemRestoreSession cmdlet. Specify the following settings:  * Set the $restorepoint[0] variable as the RestorePoint parameter value. * Specify the Server parameter value. * Set the $credentials variable as the Credential parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Starting Restore Session for Backed-Up Microsoft Organization
 
