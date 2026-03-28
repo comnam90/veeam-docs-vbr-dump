@@ -3,8 +3,8 @@ title: "Get-VEMDBCommand"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vemdbcommand.html"
-last_updated: "6/12/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEMDBCommand
@@ -50,11 +50,12 @@ For example, the Get-VEMDBCommand cmdlet consists of the Get verb and the VEMDBC
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Name | Specifies a name to query cmdlets. The Get-VEMDBCommand cmdlet will return a cmdlet whose name matches the specified name. | String | False | 0 | True (ByValue, |
-| Noun | Specifies a noun to query cmdlets. The Get-VEMDBCommand cmdlet will return a list of cmdlets whose names contain the specified noun. | String | False | Named | True (By Property Name) |
-| Verb | Specifies a verb to query cmdlets. The Get-VEMDBCommand cmdlet will return a list of cmdlets whose names contain the specified verb. | String | False | Named | True (By Property Name) |
+| Name | Specifies a name to query cmdlets. The Get-VEMDBCommand cmdlet will return a cmdlet whose name matches the specified name. | String | False | 0 | True (ByPropertyName, ByValue) |
+| Noun | Specifies a noun to query cmdlets. The Get-VEMDBCommand cmdlet will return a list of cmdlets whose names contain the specified noun. | String | False | Named | True (ByPropertyName) |
+| Verb | Specifies a verb to query cmdlets. The Get-VEMDBCommand cmdlet will return a list of cmdlets whose names contain the specified verb. | String | False | Named | True (ByPropertyName) |
 
 <CommonParameters>
 
@@ -70,24 +71,24 @@ Examples
 
 |  |  |
 | --- | --- |
-| This command returns all cmdlets for Veeam Explorer for MongoDB:  |  | | --- | | Get-VEMDBCommand | |
+| This command returns all cmdlets for Veeam Explorer for MongoDB.  |  | | --- | | Get-VEMDBCommand | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting Cmdlet with Specific Name
 
 |  |  |
 | --- | --- |
-| This command returns the Get-VEMDBDatabase cmdlet:  |  | | --- | | Get-VEMDBCommand -Name Get-VEMDBDatabase | |
+| This command returns the Get-VEMDBDatabase cmdlet.  |  | | --- | | Get-VEMDBCommand -Name Get-VEMDBDatabase | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Getting Cmdlets that Contain Specific Verb
 
 |  |  |
 | --- | --- |
-| This command returns cmdlets whose names contain the Get verb:  |  | | --- | | Get-VEMDBCommand -Verb Get | |
+| This command returns cmdlets whose names contain the Get verb.  |  | | --- | | Get-VEMDBCommand -Verb Get | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 4. Getting Cmdlets that Contain Specific Noun
 
 |  |  |
 | --- | --- |
-| This command returns cmdlets whose names contain the VEMDBDatabase noun:  |  | | --- | | Get-VEMDBCommand -Noun VEMDBDatabase | |
+| This command returns cmdlets whose names contain the VEMDBDatabase noun.  |  | | --- | | Get-VEMDBCommand -Noun VEMDBDatabase | |
 
 
