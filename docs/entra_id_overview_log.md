@@ -3,8 +3,8 @@ title: "Protecting Logs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_overview_log.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Protecting Logs
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 To produce backups of Microsoft Entra ID tenant logs, Veeam Backup for Microsoft Entra ID runs backup jobs. A backup job is a collection of settings that define the way backup operations are performed: what data to back up, where to store backups, when to start the backup process, and so on.
 
-Veeam Backup for Microsoft Entra ID does not install agent software to back up Microsoft Entra ID tenant logs — it uses native Microsoft capabilities instead. During every backup session, Veeam Backup for Microsoft Entra ID creates a copy of audit and sign-in logs for the Microsoft Entra ID tenant added to a backup job.
+Veeam Backup for Microsoft Entra ID does not install agent software to back up Microsoft Entra ID tenant logs — it uses native Microsoft capabilities instead. During every log backup session, Veeam Backup for Microsoft Entra ID creates a copy of audit and sign-in logs for the Microsoft Entra ID tenant added to a backup job.
 
 How to Protect Microsoft Entra ID Logs
 
