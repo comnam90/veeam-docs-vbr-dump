@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_upgrade_byb.html"
-last_updated: "3/20/2026"
+last_updated: "3/27/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -19,7 +19,7 @@ Before starting the upgrade procedure, read and follow the recommendations below
 * Check the Known Issues section of the [Veeam Backup & Replication Release Notes](https://helpcenter.veeam.com/rn/veeam_backup_13_0_1_release_notes.html).
 * With Enterprise Manager and connected backup servers, begin the backup infrastructure upgrade process with Enterprise Manager. Backup servers must be upgraded after that. When you use different versions of Veeam Backup Enterprise Manager and Veeam Backup & Replication, you may not be able to leverage all features of Veeam Backup Enterprise Manager. Moreover, data collection from backup servers of earlier versions takes more time, which can be critical if many backup servers are added to Enterprise Manager.
 
-If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Enterprise Manager server. Otherwise, the Configuration Database Connection Settings utility will not work properly for Veeam Backup & Replication. For more information about the utility, see [Connecting Enterprise Manager to Another Configuration Database](dbconfig_utility.md).
+If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Enterprise Manager server. Otherwise, Veeam Backup Catalog, malware detection and the Configuration Database Connection Settings utility will not work properly for Veeam Backup & Replication. For more information about the utility, see [Connecting Enterprise Manager to Another Configuration Database](dbconfig_utility.md).
 
 * In Enterprise Manager, you cannot edit jobs that are managed by backup servers with earlier versions installed until you upgrade the backup servers. Additionally, you cannot create and edit jobs of such backup servers in [Veeam Self-Service Backup Portal for Cloud Director](em_working_with_vcd_vms.md) and [vSphere Self-Service Backup Portal](em_working_with_vsphere_portal.md). For example, if you upgrade Enterprise Manager to version 13.0, you will not be able to edit jobs managed by a backup server with version 12.3 until you upgrade the backup server to version 13.0.
 * Local antivirus or antimalware software can interfere with Enterprise Manager upgrade. If you receive the Failed to create website 0x80070020 message, disable your local antivirus or antimalware software and start the upgrade process again. You can re-enable your antivirus software once the upgrade completes. For more information, see [this Veeam KB article](https://www.veeam.com/kb1992).
