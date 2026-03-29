@@ -3,8 +3,8 @@ title: "Get-VETExtendedLogging"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vetextendedlogging.html"
-last_updated: "1/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VETExtendedLogging
@@ -30,8 +30,8 @@ Detailed Description
 
 This cmdlet returns a state of the extended logging mode for Veeam Explorer for Microsoft Teams. The cmdlet returns the following types of the state:
 
-* True — indicates that the extended logging mode is enabled.
-* False — indicates that the extended logging mode is disabled.
+* True — in case the extended logging mode is enabled.
+* False — in case the extended logging mode is disabled.
 
 Parameters
 
