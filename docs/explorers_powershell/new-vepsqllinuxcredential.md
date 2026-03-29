@@ -3,8 +3,8 @@ title: "New-VEPSQLLinuxCredential"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/new-vepsqllinuxcredential.html"
-last_updated: "7/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VEPSQLLinuxCredential
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Creates Linux credential record to connect to a Linux machine.
+Creates Linux credential record to connect to a target PostgreSQL server.
 
 Applies to
 
@@ -37,8 +37,9 @@ This cmdlet creates a Linux credential record. You can use this credential recor
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Account | Specifies the user name of the account that will be used to connect to the target Linux server. | String | True | 0 | False |
 | AddToSudoers | Defines that the cmdlet will add the account to the sudoers file. | SwitchParameter | False | Named | False |
 | ElevateAccountToRoot | Defines that the account must be elevated to root. | SwitchParameter | False | Named | False |
