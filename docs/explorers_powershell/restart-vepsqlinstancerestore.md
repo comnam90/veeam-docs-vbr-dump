@@ -3,8 +3,8 @@ title: "Restart-VEPSQLInstanceRestore"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restart-vepsqlinstancerestore.html"
-last_updated: "7/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restart-VEPSQLInstanceRestore
@@ -28,12 +28,13 @@ Syntax
 
 Detailed Description
 
-This cmdlet restarts a failed restore process for a PostgreSQL instance.
+This cmdlet restarts a failed restore process for a backed-up PostgreSQL instance.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstanceRestore | Specifies the PostgreSQL instance restore process. The cmdlet will restart this restore process. | Accepts the [VEPSQLInstanceRestore](vepsqlinstancerestore.md) object. To get this object, run the [Get-VEPSQLInstanceRestore](get-vepsqlinstancerestore.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -57,7 +58,7 @@ This example shows how to restart a failed restore process for the rhel01:5433 i
 Perform the following steps:
 
 1. Run the [Get-VEPSQLInstanceRestore](get-vepsqlinstancerestore.md) cmdlet. Specify the InstanceName parameter value. Save the result to the $restore variable.
-2. Run the Restart-VEPSQLInstanceRestore cmdlet. Set the $restore variable as the Instance parameter value.
+2. Run the Restart-VEPSQLInstanceRestore cmdlet. Set the $restore variable as the InstanceRestore parameter value.
 
 Related Commands
 
