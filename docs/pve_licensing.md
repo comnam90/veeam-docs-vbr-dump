@@ -3,8 +3,8 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_licensing.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Licensing
@@ -16,7 +16,7 @@ By default, Veeam Backup & Replication automatically revokes a license instance 
 
 Obtaining New License
 
-You can obtain the following types of licenses for Veeam Plug-in for Proxmox VE:
+You can obtain the following types of licenses:
 
 * Evaluation license is a free license that can be used for product evaluation. The license is valid for 30 days from the moment of the product download.
 
@@ -34,6 +34,6 @@ After you obtain a license, install it on the backup server as described in sect
 
 Using Existing License
 
-If you already use Veeam Backup & Replication and you have spare Veeam Universal License instances on your backup server, they can be used to protect Proxmox VE VMs. You can check the number of available license instances in the Veeam Backup & Replication console as described in section [Viewing License Information](license_view.md).
+If you already use Veeam Backup & Replication and you have spare Veeam Universal License instances on your backup server, they can be used to protect VMs. You can check the number of available license instances in the Veeam Backup & Replication console as described in section [Viewing License Information](license_view.md).
 
 
