@@ -3,7 +3,7 @@ title: "Configuring Backup Infrastructure Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_configure_infrastructure.html"
-last_updated: "3/20/2026"
+last_updated: "3/27/2026"
 product_version: "13.0.1.2067"
 ---
 

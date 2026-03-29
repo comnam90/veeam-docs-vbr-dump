@@ -3,8 +3,8 @@ title: "Configuring Veeam Plug-In for Proxmox VE"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_configuration.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Veeam Plug-In for Proxmox VE
