@@ -3,8 +3,8 @@ title: "Adding Backup Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/adding_backup_server.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Adding Backup Servers
@@ -16,14 +16,19 @@ Before You Begin
 
 Before you add backup servers, consider the following:
 
-* Enterprise Manager uses Kerberos authentication to communicate with backup servers. For details on Kerberos, see the [Kerberos Authentication](https://helpcenter.veeam.com/docs/vbr/userguide/kerberos_authentication.html?ver=13) section of the Veeam Backup & Replication User Guide.
-* You cannot add a backup server that is running a newer version than Enterprise Manager. The Enterprise Manager version must be equal to or later than the version of any backup server you add. Before adding a backup server of a newer version, upgrade Enterprise Manager first. For details, see [Veeam Software Appliance Update](em_update_linux.md) or [Upgrading to Enterprise Manager 13.0.1](em_upgrading.md).
+* You cannot add a backup server that is running a newer version than Enterprise Manager. The Enterprise Manager version must be equal to or later than the version of any backup server that you want to add. Before adding a backup server of a newer version, upgrade Enterprise Manager first. For details, see [Veeam Software Appliance Update](em_update_linux.md) or [Upgrading to Enterprise Manager 13.0.1](em_upgrading.md).
 * Enterprise Manager supports adding backup servers running Veeam Backup & Replication 12.3 or later. When Enterprise Manager and Veeam Backup & Replication run different major or minor versions, some Enterprise Manager features may not be available:
 
 * Enterprise Manager does not support editing jobs that are managed by backup servers of earlier major or minor versions. This includes Veeam Agent backup jobs, file backup jobs, object storage backup jobs, and backup copy jobs.
 * In [Veeam Self-Service Backup Portal for Cloud Director](em_working_with_vcd_vms.md) and [vSphere Self-Service Backup Portal](em_working_with_vsphere_portal.md), you cannot create and edit jobs managed by backup servers of earlier major or minor versions.
 
 * Data collection from backup servers of earlier major and minor versions takes more time, which can be critical if many backup servers are added to Enterprise Manager.
+
+* Enterprise Manager on Linux uses Kerberos authentication to communicate with backup servers. This means that you can add only domain-joined backup servers in Enterprise Manager on Linux. Workgroup backup servers cannot be added, as Kerberos authentication does not support local accounts.
+
+Enterprise Manager on Microsoft Windows also uses Kerberos by default, but switches to NTLM authentication for workgroup backup servers or when Kerberos is not available. This allows you to add both domain-joined and workgroup backup servers in Enterprise Manager on Microsoft Windows.
+
+For details on Kerberos, see the [Kerberos Authentication](https://helpcenter.veeam.com/docs/vbr/userguide/kerberos_authentication.html?ver=13) section of the Veeam Backup & Replication User Guide.
 
 * To add a backup server that is part of a High Availability (HA) cluster, add it using the cluster virtual IP address or cluster full DNS name. In this case, after a node switchover, Enterprise Manager will automatically collect the data from the active node.
 
