@@ -3,8 +3,8 @@ title: "Veeam Explorer for SAP HANA"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_sap_hana.html"
-last_updated: "9/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Explorer for SAP HANA
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets for Veeam Explorer for SAP HANA to perform the following operations:
 
+Veeam Explorer for SAP HANA
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VEHANACommand](get-vehanacommand.md) | Returns a set of cmdlets available for Veeam Explorer for SAP HANA. |
 | [Get-VEHANABackup](get-vehanabackup.md) | Returns backups created by Veeam Plug-in for SAP HANA |
 | [Start-VEHANARestoreSession](start-vehanarestoresession.md) | Starts a restore session to explore backed-up SAP HANA databases and to perform operations with these databases. |
@@ -24,7 +25,7 @@ You can use the cmdlets for Veeam Explorer for SAP HANA to perform the following
 | [Get-VEHANABackupCatalogItem](get-vehanabackupcatalogitem.md) | Returns backup catalog items for a specific SAP HANA database. |
 | [Start-VEHANADatabaseRestore](start-vehanadatabaserestore.md) | Restores a backed-up SAP HANA database. |
 | [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) | Returns active SAP HANA restore jobs. |
-| [Get-VEHANARestoreJobActionLogItems](get-vehanarestorejobactionlogitems.md) | Returns action log items for a SAP HANA restore job. |
+| [Get-VEHANARestoreJobActionLogItems](get-vehanarestorejobactionlogitems.md) | Returns action log items for an SAP HANA restore job. |
 | [Stop-VEHANADatabaseRestore](stop-vehanadatabaserestore.md) | Stops the restore process for a backed-up SAP HANA database. |
 | [Restart-VEHANADatabaseRestore](restart-vehanadatabaserestore.md) | Restarts a failed restore job for an SAP HANA database. |
 | [Get-VEHANAExtendedLogging](get-vehanaextendedlogging.md) | Returns the state of the extended logging mode for Veeam Explorer for SAP HANA. |
