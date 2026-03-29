@@ -3,8 +3,8 @@ title: "Stop-VBRSharePointItemRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vbrsharepointitemrestoresession.html"
-last_updated: "7/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VBRSharePointItemRestoreSession
@@ -33,13 +33,14 @@ This cmdlet stops active restore sessions for Microsoft SharePoint initiated to 
 |  |
 | --- |
 | Note |
-| * You can stop restore sessions that are created by means of PowerShell only. * The cmdlet will stop sessions that are initiated within the same PowerShell session only. * Restore sessions will not stop automatically if you close the PowerShell console without stopping the restore session first. |
+| * You can stop restore sessions that are created in the PowerShell console only. * The cmdlet will stop sessions that are initiated within the same PowerShell session only. * Restore sessions will not stop automatically if you close the PowerShell console without stopping the restore session first. |
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Session | Specifies a restore session that you want to stop. | Accepts the [VBRSharePointRestoreSession](vbrsharepointrestoresession.md) object. To get this object, run the [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
+| Session | Specifies a restore session that you want to stop. | Accepts the [SharePointRestoreSession](vbrsharepointrestoresession.md) object. To get this object, run the [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
