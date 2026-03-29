@@ -3,8 +3,8 @@ title: "Switch-VESQLIRDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/switch-vesqlirdatabase.html"
-last_updated: "12/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Switch-VESQLIRDatabase
@@ -28,14 +28,15 @@ Syntax
 
 Detailed Description
 
-This cmdlet performs a manual switchover of a Microsoft SQL Server database published within an instant recovery session. You can perform a switchover after all database files are copied to the target server and the cache file is synchronized. For more information on the switchover option, see the [Switchover](https://helpcenter.veeam.com/docs/vbr/userguide/vesql_switchover.html?ver=13) section of the Veeam Explorers User Guide.
+This cmdlet performs a manual switchover of a Microsoft SQL Server database published within an instant recovery session. You can perform a switchover after all database files are copied to the target server and the cache file is synchronized. For more information on the switchover options, see the [Switchover](https://helpcenter.veeam.com/docs/vbr/userguide/vesql_switchover.html?ver=13) section of the Veeam Explorers User Guide.
 
 Run the [New-VESQLIRSwitchOverOptions](new-vesqlirswitchoveroptions.md) cmdlet to define the switchover option settings.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a Microsoft SQL Server database. The cmdlet will switchover this database. | Accepts the [VESQLIRDatabase](vesqlirdatabase.md) object. To get this object, run the [Get-VESQLIRDatabase](get-vesqlirdatabase.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
