@@ -3,8 +3,8 @@ title: "Save-VEODDocument"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/save-veoddocument.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Save-VEODDocument
@@ -48,12 +48,13 @@ This cmdlet saves OneDrive documents.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Document | Specifies an array of OneDrive documents that you want to save. | Accepts the [VBOOneDriveDocument](vboonedrivedocument.md)[] object. To get this object, run the [Get-VEODDocument](get-veoddocument.md) cmdlet. | True | 0 | True (ByValue) |
 | Path | Specifies a path to the folder. The cmdlet will save the OneDrive document to the specified path. | String | True | 1 | False |
 | AsZip | Defines that the cmdlet will save the specified document as a ZIP archive.  Default: False | SwitchParameter | False | Named | False |
-| User | Specifies OneDrive user. The cmdlet will will save documents of this user. | Accepts the [VBOOneDriveUser](vboonedriveuser.md) object. To get this object, run the [Get-VEODUser](get-veoduser.md) cmdlet. | True | 0 | True (ByValue) |
+| User | Specifies OneDrive user. The cmdlet will save documents of this user. | Accepts the [VBOOneDriveUser](vboonedriveuser.md) object. To get this object, run the [Get-VEODUser](get-veoduser.md) cmdlet. | True | 0 | True (ByValue) |
 | MultipleUsers | Specifies an array of OneDrive users. The cmdlet will save documents of the specified users. | Accepts the [VBOOneDriveUser](vboonedriveuser.md)[] object. To get this object, run the [Get-VEODUser](get-veoduser.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
