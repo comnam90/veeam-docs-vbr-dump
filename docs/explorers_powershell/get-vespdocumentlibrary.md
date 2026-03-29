@@ -3,8 +3,8 @@ title: "Get-VESPDocumentLibrary"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vespdocumentlibrary.html"
-last_updated: "3/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VESPDocumentLibrary
@@ -48,11 +48,12 @@ This cmdlet returns document libraries. You can search the SharePoint database, 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a backed-up SharePoint database. The cmdlet will return document libraries from the specified database. | Accepts the [VESPDatabase](vespdatabase.md) object. To get this object, run the [Get-VESPDatabase](get-vespdatabase.md) cmdlet. | True | 0 | True (ByValue) |
 | Name | Specifies an array of SharePoint document library names. This cmdlet will return an array of document libraries with the specified names.  This parameter accepts wildcard characters. | String[] | False | 1 | False |
-| Organization | Specifies an array of SharePoint organizations. The cmdlet will return document libraries from these organizations. | Accepts the [VESPOrganization](vesporganization.md)[] object. To get this object, run the [Get-VESPOrganization](get-vesporganization.md) cmdlet. | True | 0 | True (ByValue) |
+| Organization | Specifies a SharePoint organization. The cmdlet will return document libraries from this organization. | Accepts the [VESPOrganization](vesporganization.md) object. To get this object, run the [Get-VESPOrganization](get-vesporganization.md) cmdlet. | True | 0 | True (ByValue) |
 | Site | Specifies a name of the SharePoint site. This cmdlet will return a document library from the specified SharePoint site. | Accepts the [VESPSite](vespsite.md) object. To get this object, run the [Get-VESPSite](get-vespsite.md) cmdlet. | True | 0 | True (ByValue) |
 | Recurse | Defines that the cmdlet will return all child items of the specified parent item.  Default: False | SwitchParameter | False | Named | False |
 
