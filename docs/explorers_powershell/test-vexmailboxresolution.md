@@ -3,8 +3,8 @@ title: "Test-VEXMailboxResolution"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/test-vexmailboxresolution.html"
-last_updated: "3/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Test-VEXMailboxResolution
@@ -48,8 +48,9 @@ This cmdlet tests the availability of mailboxes. You may want to run this cmdlet
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Credential | Specifies Windows user credentials to connect to the Active Directory domain and the Exchange server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
 | Mailbox | Specifies a mailbox. The cmdlet will check whether this mailbox is available. | Accepts the [VEXMailbox](vexmailbox.md)[] object. To get this object, run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. | True | Named | False |
 | Office365Credential | Specifies a Microsoft 365 user account credentials to connect to the backup proxy server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
@@ -85,23 +86,23 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to test the availability of the Sales Exchange mailbox. Veeam Backup for Microsoft 365 will use the 76397916-8dcb-4348-96ac-6e2e881f9292 Microsoft Entra application ID to set up a secure connection to a Microsoft organization.  |  | | --- | | $session = Get-VBOExchangeItemRestoreSession  $database = Get-VEXDatabase -Session $session -Name "support3backup\*"  $mailbox = Get-VEXMailbox -Database $database -Name "Sales"  Test-VEXMailboxResolution -Mailbox $mailbox -Domain test.local -ApplicationId 76397916-8dcb-4348-96ac-6e2e881f9292 |  Perform the following steps:   1. Run the [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VEXDatabase](get-vexdatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $database variable. 3. Run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. Set the $database variable as the Database parameter value. Specify the Name parameter value. Save the result to the $mailbox variable. 4. Run the Test-VEXMailboxResolution cmdlet. Specify the following settings:  * Set the $mailbox variable as the Mailbox parameter value. * Specify the Domain parameter value. * Specify the ApplicationId parameter value.  1. To set up a secure connection to a Microsoft organization, open the <https://microsoft.com/devicelogin> link in your browser and enter the code that you get in the PowerShell Console for authenticating to the Microsoft 365 server. |
+| This example shows how to test the availability of the Sales Exchange mailbox. Veeam Backup for Microsoft 365 will use the 76397916-8dcb-4348-96ac-6e2e881f9292 Microsoft Entra application ID to set up a secure connection to a Microsoft organization.  |  | | --- | | $session = Get-VBOExchangeItemRestoreSession  $database = Get-VEXDatabase -Session $session -Name "support3backup\*"  $mailbox = Get-VEXMailbox -Database $database -Name "Sales"  Test-VEXMailboxResolution -Mailbox $mailbox -Domain test.local -ApplicationId 76397916-8dcb-4348-96ac-6e2e881f9292 |  Perform the following steps:   1. Run the [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VEXDatabase](get-vexdatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $database variable. 3. Run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. Set the $database variable as the Database parameter value. Specify the Name parameter value. Save the result to the $mailbox variable. 4. Run the Test-VEXMailboxResolution cmdlet. Specify the following settings:  * Set the $mailbox variable as the Mailbox parameter value. * Specify the Domain parameter value. * Specify the ApplicationId parameter value.  1. To set up a secure connection to a Microsoft organization, open the <https://microsoft.com/devicelogin> link in your browser and enter the code that you get in the PowerShell Console to authenticate to the Microsoft 365 server. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 4. Testing Mailbox Resolution Using Multi-Factor Authentication with Microsoft Entra Application Certificate [For Veeam Backup for Microsoft 365]
 
 |  |  |
 | --- | --- |
-| This example shows how to test the availability of the Sales Exchange mailbox with the Microsoft Entra application certificate.  |  | | --- | | $session = Get-VBOExchangeItemRestoreSession  $database = Get-VEXDatabase -Session $session -Name "support3backup\*"  $mailbox = Get-VEXMailbox -Database $database -Name "Sales"  $securepassword = Read-Host "Enter your password" -AsSecureString  Enter your password: \*\*\*\*\*\*\*\*\*\*  Test-VEXMailboxResolution -Mailbox $mailbox -Domain test.local -ApplicationCertificatePath "C:\certificate\cert.pfx" -ApplicationCertificatePassword $securepassword |  Perform the following steps:   1. Run the [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VEXDatabase](get-vexdatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $database variable. 3. Run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. Set the $database variable as the Database parameter value. Specify the Name parameter value. Save the result to the $mailbox variable. 4. Run the [Read-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.5) cmdlet. Specify the message that the console will display as a prompt. Provide the AsSecureString parameter. Save the result to the $securepassword variable. 5. Enter the password. 6. Run the Test-VEXMailboxResolution cmdlet. Specify the following settings:  * Set the $mailbox variable as the Mailbox parameter value. * Specify the Domain parameter value. * Specify the ApplicationCertificatePath parameter value. * Set the $securepassword variable as the ApplicationCertificatePassword parameter value.  1. To set up a secure connection to a Microsoft organization, open the <https://microsoft.com/devicelogin> link in your browser and enter the code that you get in the PowerShell Console for authenticating to the Microsoft 365 server. |
+| This example shows how to test the availability of the Sales Exchange mailbox with the Microsoft Entra application certificate.  |  | | --- | | $session = Get-VBOExchangeItemRestoreSession  $database = Get-VEXDatabase -Session $session -Name "support3backup\*"  $mailbox = Get-VEXMailbox -Database $database -Name "Sales"  $securepassword = Read-Host "Enter your password" -AsSecureString  Enter your password: \*\*\*\*\*\*\*\*\*\*  Test-VEXMailboxResolution -Mailbox $mailbox -Domain test.local -ApplicationCertificatePath "C:\certificate\cert.pfx" -ApplicationCertificatePassword $securepassword |  Perform the following steps:   1. Run the [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VEXDatabase](get-vexdatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $database variable. 3. Run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. Set the $database variable as the Database parameter value. Specify the Name parameter value. Save the result to the $mailbox variable. 4. Run the [Read-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.5) cmdlet. Specify the message that the console will display as a prompt. Provide the AsSecureString parameter. Save the result to the $securepassword variable. 5. Enter the password. 6. Run the Test-VEXMailboxResolution cmdlet. Specify the following settings:  * Set the $mailbox variable as the Mailbox parameter value. * Specify the Domain parameter value. * Specify the ApplicationCertificatePath parameter value. * Set the $securepassword variable as the ApplicationCertificatePassword parameter value.  1. To set up a secure connection to a Microsoft organization, open the <https://microsoft.com/devicelogin> link in your browser and enter the code that you get in the PowerShell Console to authenticate to the Microsoft 365 server. |
 
 Related Commands
 
 * [Get-VBOExchangeItemRestoreSession](get-vboexchangeitemrestoresession.md)
 * [Get-VBRExchangeItemRestoreSession](get-vbrexchangeitemrestoresession.md)
+* [Get-VEXDatabase](get-vexdatabase.md)
+* [Get-VEXMailbox](get-vexmailbox.md)
 
 * [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5)
 
-* [Get-VEXDatabase](get-vexdatabase.md)
-* [Get-VEXMailbox](get-vexmailbox.md)
 * [Read-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.5)
 
 
