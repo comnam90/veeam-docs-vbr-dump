@@ -3,8 +3,8 @@ title: "Get-VEMDBRestoreInterval"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vemdbrestoreinterval.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEMDBRestoreInterval
@@ -32,8 +32,9 @@ This cmdlet returns details on the available restore period for a backed-up Mong
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Session | Specifies a Veeam Explorer for MongoDB restore session. The cmdlet will return details on the available restore period for the MongoDB instance. | Accepts the [VEMDBRestoreSession](vemdbrestoresession.md) object. To get this object, run the [Get-VEMDBRestoreSession](get-vemdbrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -48,7 +49,7 @@ Example
 
 Getting Details on Available Restore Period for MongoDB Instance
 
-This example shows how to get details on the available restore period for a MongoDB instance
+This example shows how to get details on the available restore period for a MongoDB instance.
 
 |  |
 | --- |
