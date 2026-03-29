@@ -3,8 +3,8 @@ title: "Get-VETCommand"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vetcommand.html"
-last_updated: "3/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VETCommand
@@ -50,11 +50,12 @@ For example, the Get-VETCommand cmdlet consists of the Get verb and the VETComma
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Name | Specifies a name to query cmdlets. The cmdlet will return a cmdlet whose name matches the specified name. | String | False | 0 | True (ByValue, |
-| Noun | Specifies a noun to query cmdlets. The cmdlet will return a list of cmdlets whose names contain the specified noun. | String | False | Named | True (By Property Name) |
-| Verb | Specifies a verb to query cmdlets. The cmdlet will return a list of cmdlets whose names contain the specified verb. | String | False | Named | True (By Property Name) |
+| Name | Specifies a name to query cmdlets. The cmdlet will return a cmdlet whose name matches the specified name. | String | False | 0 | True (ByPropertyName, ByValue) |
+| Noun | Specifies a noun to query cmdlets. The cmdlet will return a list of cmdlets whose names contain the specified noun. | String | False | Named | True (ByPropertyName) |
+| Verb | Specifies a verb to query cmdlets. The cmdlet will return a list of cmdlets whose names contain the specified verb. | String | False | Named | True (ByPropertyName) |
 
 <CommonParameters>
 
@@ -66,11 +67,11 @@ None.
 
 Examples
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Getting All Veeam Explorer for Microsoft Teams PowerShell Cmdlets
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Getting All Veeam Explorer for Microsoft Teams Cmdlets
 
 |  |  |
 | --- | --- |
-| This command returns all Veeam Explorer for Microsoft Teams PowerShell cmdlets.  |  | | --- | | Get-VETCommand | |
+| This command returns all Veeam Explorer for Microsoft Teams cmdlets.  |  | | --- | | Get-VETCommand | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting Cmdlet by Name
 
