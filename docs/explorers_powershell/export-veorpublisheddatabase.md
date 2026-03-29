@@ -3,8 +3,8 @@ title: "Export-VEORPublishedDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/export-veorpublisheddatabase.html"
-last_updated: "8/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Export-VEORPublishedDatabase
@@ -32,10 +32,11 @@ This cmdlet exports a published Oracle database as an RMAN backup. The database 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Database | Specifies a published Oracle database that you want to export. | Accepts the [VEORPublishedDatabase](veorpublisheddatabase.md) object. To get this object, run the [Get-VEORPublishedDatabase](get-veorpublisheddatabase.md) cmdlet. | True | 0 | True |
-| Path | Specifies a target directory. The cmdlet will export the Oracle database to the specified directory. | String | True | 1 | True |
+| Database | Specifies a published Oracle database that you want to export. | Accepts the [VEORPublishedDatabase](veorpublisheddatabase.md) object. To get this object, run the [Get-VEORPublishedDatabase](get-veorpublisheddatabase.md) cmdlet. | True | 0 | True (ByValue) |
+| Path | Specifies a target directory. The cmdlet will export the Oracle database to the specified directory. | String | True | 1 | False |
 | RmanBackupFormat | Specifies the FORMAT parameter of backed-up Oracle databases. The cmdlet will back up Oracle databases using the specified FORMAT parameter. | String | False | Named | False |
 | RmanBackupTagName | Specifies tags of backed-up Oracle databases. The cmdlet will back up Oracle databases using the specified tags. | String | False | Named | False |
 | RmanBackupEnableCompression | Defines that the cmdlet will back up Oracle databases with compression.  If you do not specify this parameter, the cmdlet will back up Oracle databases without compression. | SwitchParameter | False | Named | False |
@@ -64,7 +65,7 @@ Perform the following steps:
 
 1. Run the [Get-VEORRestoreSession](get-veorrestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.
+The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the first restore session in the array).
 
 1. Run the [Get-VEORPublishedDatabase](get-veorpublisheddatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Save the result to the $database variable.
 2. Run the Export-VEORPublishedDatabase cmdlet. Set the $database variable as the Database parameter value. Specify the Path parameter value.
