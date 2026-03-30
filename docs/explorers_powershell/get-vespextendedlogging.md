@@ -3,8 +3,8 @@ title: "Get-VESPExtendedLogging"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vespextendedlogging.html"
-last_updated: "1/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VESPExtendedLogging
@@ -30,8 +30,8 @@ Detailed Description
 
 This cmdlet returns a state of the extended logging mode for Veeam Explorer for Microsoft SharePoint. The cmdlet will return the following types of the state:
 
-* True — indicates that the extended logging mode is enabled.
-* False — indicates that the extended logging mode is disabled.
+* True — in case the extended logging mode is enabled.
+* False — in case the extended logging mode is disabled.
 
 Parameters
 
