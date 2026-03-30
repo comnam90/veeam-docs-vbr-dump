@@ -3,8 +3,8 @@ title: "Stop-VESQLRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vesqlrestoresession.html"
-last_updated: "7/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VESQLRestoreSession
@@ -37,9 +37,10 @@ This cmdlet stops an active restore session initiated to perform operations with
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Session | Specifies a restore session initiated to perform operations with Microsoft SQL Server databases. The cmdlet will stop this session. | Accepts the [VESQLRestoreSession](vesqlrestoresession.md) object. To get this object, run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
+| Session | Specifies a restore session initiated to perform operations with Microsoft SQL Server databases. The cmdlet will stop this session. | Accepts the [IVESQLRestoreSession](vesqlrestoresession.md) object. To get this object, run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
@@ -63,7 +64,7 @@ Perform the following steps:
 
 1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in our example, it is the fourth restore session in the array).
+The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the fourth restore session in the array).
 
 1. Run the Stop-VESQLRestoreSession cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session.
 
