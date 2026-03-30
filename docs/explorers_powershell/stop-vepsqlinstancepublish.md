@@ -3,8 +3,8 @@ title: "Stop-VEPSQLInstancePublish"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vepsqlinstancepublish.html"
-last_updated: "7/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VEPSQLInstancePublish
@@ -37,9 +37,10 @@ This cmdlet unpublishes a PostgreSQL instance from the target server.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| InstancePublish | Specifies the publishing process for a PostgreSQL instance. The cmdlet will stop the process and unpublish the instance from the target PostgreSQL server. | Accepts the [VEPSQLInstancePublish](vepsqlinstancepublish.md) object. To get this object, run the [Get-VEPSQLInstancePublish](get-vepsqlinstancepublish.md) cmdlet. | True | 0 | True |
+| InstancePublish | Specifies the publishing process for a PostgreSQL instance. The cmdlet will stop the process and unpublish the instance from the target PostgreSQL server. | Accepts the [VEPSQLInstancePublish](vepsqlinstancepublish.md) object. To get this object, run the [Get-VEPSQLInstancePublish](get-vepsqlinstancepublish.md) cmdlet. | True | 0 | True (ByValue) |
 | Force | Defines that the cmdlet will show no prompt before executing the command. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
