@@ -3,8 +3,8 @@ title: "Restart-VEHANADatabaseRestore"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restart-vehanadatabaserestore.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restart-VEHANADatabaseRestore
@@ -32,8 +32,9 @@ This cmdlet restarts a failed restore job for an SAP HANA database.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestoreJob | Specifies the SAP HANA restore job that you want to restart. | Accepts the [VEHANARestore](vehanarestore.md) object. To get this object, run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. | True | Named | True (ByValue) |
 
 <CommonParameters>
@@ -56,9 +57,9 @@ This example shows how to restart a failed restore job for an SAP HANA database.
 
 Perform the following steps:
 
-1. Run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. Save the result to the restorejob variable.
+1. Run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. Save the result to the $restorejob variable.
 
-The cmdlet will return an array of restore jobs. Note the ordinal number of the necessary restore job. In our example, it is the first restore job in the array.
+The cmdlet will return an array of restore jobs. Note the ordinal number of the necessary restore job. In this example, it is the first restore job in the array.
 
 1. Run the Restart-VEHANADatabaseRestore cmdlet. Set the $restorejob variable as the RestoreJob parameter value.
 
