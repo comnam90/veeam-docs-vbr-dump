@@ -3,8 +3,8 @@ title: "Set-VEODSmtpSettings"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/set-veodsmtpsettings.html"
-last_updated: "3/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VEODSmtpSettings
@@ -39,15 +39,16 @@ To modify settings, enter the necessary parameters with new values. The paramete
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | ConfigureSMTPSettings | Defines that Veeam Explorer for Microsoft OneDrive for Business will use the SMTP server settings for sending restored items.  Default: False | SwitchParameter | False | Named | False |
 | Server | Specifies the full DNS name or an IP address of the SMTP server. The cmdlet will use this information to send restored items in email messages. | String | False | Named | False |
 | Port | Specifies a port number. The cmdlet will use this port number to connect to an SMTP server. | Int32 | False | Named | False |
 | From | Specifies an email address from which Veeam Explorer for Microsoft OneDrive for Business will send restored OneDrive data.  This email account must have the rights to connect to an SMTP server if the SMTP server requires authentication. | String | False | Named | False |
 | UseAuthentication | Defines that the SMTP server requires SMTP authentication for outgoing mail.  Default: False | SwitchParameter | False | Named | False |
 | Credentials | Specifies the credentials. The cmdlet will use these credentials for authenticating to an SMTP server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
-| UseSSL | Defines that a secure connection is required for sending emails.  If you do not provide this parameter, email messages will be sent through the connection that does not require SSL authentication.  Default: False | SwitchParameter | False | Named | False |
+| UseSSL | Defines that a secure connection is required for sending emails.  If you do not provide this parameter, email messages will be sent through a connection that does not require TLS authentication.  Default: False | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
