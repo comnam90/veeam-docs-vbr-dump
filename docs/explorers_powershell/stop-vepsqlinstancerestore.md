@@ -3,8 +3,8 @@ title: "Stop-VEPSQLInstanceRestore"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vepsqlinstancerestore.html"
-last_updated: "7/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VEPSQLInstanceRestore
@@ -33,12 +33,13 @@ This cmdlet stops an active restore process started for a PostgreSQL instance.
 |  |
 | --- |
 | Note |
-| Restore processes will not stop automatically if you close the PowerShell console. To stop a restore process, you must run the Stop-VEPSQLInstanceRestore cmdlet. |
+| Restore processes will not stop automatically if you close the PowerShell console. To stop the restore process, you must run the Stop-VEPSQLInstanceRestore cmdlet. |
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstanceRestore | Specifies the PostgreSQL instance restore process. The cmdlet will stop this restore process. | Accepts the [VEPSQLInstanceRestore](vepsqlinstancerestore.md) object. To get this object, run the [Get-VEPSQLInstanceRestore](get-vepsqlinstancerestore.md) cmdlet. | True | 0 | True (ByValue) |
 | Force | Defines that the cmdlet will show no prompt before executing the command. | SwitchParameter | False | Named | False |
 
