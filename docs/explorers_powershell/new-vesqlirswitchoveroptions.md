@@ -3,8 +3,8 @@ title: "New-VESQLIRSwitchOverOptions"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/new-vesqlirswitchoveroptions.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VESQLIRSwitchOverOptions
@@ -48,8 +48,9 @@ This cmdlet creates the [VESQLIRSwitchOverOptions](vesqlirswitchoveroptions.md) 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Auto | Defines that the switchover will be performed in the Auto mode. This option starts switchover immediately after database files are copied and synchronized. | SwitchParameter | True | Named | False |
 | Manual | Defines that the switchover will be performed manually at a later time, using the Switch-VESQLIRDatabase cmdlet. | SwitchParameter | True | Named | False |
 | Scheduled | Defines that the switchover will be performed in the Scheduled mode. Switchover will be performed at the specified date and time. | SwitchParameter | True | Named | False |
@@ -65,7 +66,7 @@ The cmdlet returns the [VESQLIRSwitchOverOptions](vesqlirswitchoveroptions.md) o
 
 Examples
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Defining Scheduled Switchover Option
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Creating Scheduled Switchover Option
 
 |  |  |
 | --- | --- |
@@ -81,7 +82,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This command defines a manual switchover option. The switchover will run at any time after database files are copied and synchronized.  |  | | --- | | $ManualSwitch = New-VESQLIRSwitchOverOptions -Manual | |
+| This command defines a manual switchover option. The switchover will start after you initiate this process manually with the [Switch-VESQLIRDatabase](switch-vesqlirdatabase.md) cmdlet.  |  | | --- | | $ManualSwitch = New-VESQLIRSwitchOverOptions -Manual | |
 
 Related Commands
 
