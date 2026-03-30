@@ -3,8 +3,8 @@ title: "Specifying PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_gp_postgresql.html"
-last_updated: "1/16/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Specifying PostgreSQL WAL Files Settings
@@ -25,7 +25,7 @@ To back up PostgreSQL WAL logs periodically, do the following:
 
 * Select the Until the corresponding image-level backup is deleted option if you want to remove WAL log backups and the related image-level backups at the same time, according to the retention policy settings specified at [step 4](pve_backup_job_create_destination.md) of the wizard.
 
-* Select the Keep only last <N> days of log backups if you want to retain WAL log backups for a specific time period, regardless of the retention policy settings specified for image-level backups. Note that WAL log backups must always be retained for a longer period than image-level backups.
+* Select the Keep only last <N> days of log backups option if you want to retain WAL log backups for a specific time period, regardless of the retention policy settings specified for image-level backups. Note that WAL log backups must always be retained for a longer period than image-level backups.
 
 For more information on how Veeam Backup & Replication retains WAL logs, see [Retention for PostgreSQL WAL Files](postrgresql_backup_retention.md).
 
