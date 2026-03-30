@@ -3,8 +3,8 @@ title: "Set-VEPSQLInstanceInstantRecovery"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/set-vepsqlinstanceinstantrecovery.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VEPSQLInstanceInstantRecovery
@@ -37,8 +37,9 @@ This cmdlet allows you to modify the switchover settings for a specified Postgre
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Instance | Specifies a published PostgreSQL instance within an instant recovery session. | Accepts the [VEPSQLInstanceInstantRecovery](vepsqlinstanceinstantrecovery.md) object. To get this object, run the [Get-VEPSQLInstanceInstantRecovery](get-vepsqlinstanceinstantrecovery.md) cmdlet. | True | 0 | True (ByValue) |
 | SwitchOverOptions | Specifies a new switchover option for the specified PostgreSQL instance. | Accepts the [VEPSQLIRSwitchOverOptions](vepsqlirswitchoveroptions.md) object. To create this object, run the [New-VEPSQLIRSwitchOverOptions](new-vepsqlirswitchoveroptions.md) cmdlet. | True | 1 | True (ByValue) |
 
@@ -54,11 +55,11 @@ Example
 
 Setting Scheduled Switchover for PostgreSQL Instance
 
-This example shows how to modify the scheduled switchover for the rhel01:5433 instance. The switchover will be performed in the Scheduled mode — on 2023-7-24 at 13:00:00 in the time zone of the backup server.
+This example shows how to modify the scheduled switchover for the rhel01:5433 instance. The switchover will be performed in the Scheduled mode — on 2025-7-24 at 13:00:00 in the time zone of the backup server.
 
 |  |
 | --- |
-| $time = Get-Date -Date "2023-7-24 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VEPSQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc  $IRInstance = Get-VEPSQLInstanceInstantRecovery -InstanceName "rhel01:5433"  Set-VEPSQLInstanceInstantRecovery -Instance $IRInstance -SwitchOverOptions $ScheduledSwitch |
+| $time = Get-Date -Date "2025-7-24 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VEPSQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc  $IRInstance = Get-VEPSQLInstanceInstantRecovery -InstanceName "rhel01:5433"  Set-VEPSQLInstanceInstantRecovery -Instance $IRInstance -SwitchOverOptions $ScheduledSwitch |
 
 Perform the following steps:
 
