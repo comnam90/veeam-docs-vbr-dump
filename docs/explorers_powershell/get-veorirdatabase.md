@@ -3,8 +3,8 @@ title: "Get-VEORIRDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-veorirdatabase.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEORIRDatabase
@@ -38,9 +38,10 @@ After you get published Oracle databases within an instant recovery session, you
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| DatabaseName | Specifies a name of an Oracle database. The cmdlet will return an array of databases with the specified name. | String | False | 0 | False |
+| DatabaseName | Specifies the name of the Oracle database that the cmdlet will return. | String | False | Named | False |
 
 <CommonParameters>
 
@@ -62,6 +63,6 @@ Examples
 
 |  |  |
 | --- | --- |
-| This command returns all Oracle databases with the specified name published within an instant recovery session. Save the result to the $IRDatabase variable to be able to use it with other cmdlets.  |  | | --- | | $IRDatabase = Get-VEORIRDatabase -DatabaseName "orcl1.tech.local" | |
+| This command returns the specified Oracle database published within an instant recovery session. Save the result to the $IRDatabase variable to be able to use it with other cmdlets.  |  | | --- | | $IRDatabase = Get-VEORIRDatabase -DatabaseName "orcl1.tech.local" | |
 
 
