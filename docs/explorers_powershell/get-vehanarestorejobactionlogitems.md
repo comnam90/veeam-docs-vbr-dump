@@ -3,8 +3,8 @@ title: "Get-VEHANARestoreJobActionLogItems"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vehanarestorejobactionlogitems.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEHANARestoreJobActionLogItems
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns action log items for a SAP HANA restore job.
+Returns action log items for an SAP HANA restore job.
 
 Applies to
 
@@ -32,8 +32,9 @@ This cmdlet returns action log items for a specific SAP HANA restore job, giving
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Session | Specifies the restore session in which the restore job was started. | Accepts the [VEHANARestoreSession](vehanarestoresession.md) object. To get this object, run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 | RestoreJob | Specifies an SAP HANA restore job. The cmdlet will return information about the specified restore job. | Accepts the [VEHANARestore](vehanarestore.md) object. To get this object, run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. | True | Named | True (ByValue) |
 
@@ -59,10 +60,10 @@ Perform the following steps:
 
 1. Run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.
+The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.
 
 1. Run the [Get-VEHANASystem](get-vehanasystem.md) cmdlet. Set the first restore session in the $session variable as the Session parameter value.
-2. Run the [Get-VEHANADatabase](get-vehanadatabase.md) cmdlet and set the $system variable as the System parameter value. Select the necessary database returned by this command and save it to the $database variable. In our example, it is the first database in the array.
+2. Run the [Get-VEHANADatabase](get-vehanadatabase.md) cmdlet and set the $system variable as the System parameter value. Select the necessary database returned by this command and save it to the $database variable. In this example, it is the first database in the array.
 3. Run the [Start-VEHANADatabaseRestore](start-vehanadatabaserestore.md) cmdlet and set the $database variable as the Database parameter value. Save the result to the $restorejob variable.
 4. Run the Get-VEHANARestoreJobActionLogItems cmdlet. Set the $session variable as the Session parameter value and set the $restorejob variable as the RestoreJob parameter value.
 
