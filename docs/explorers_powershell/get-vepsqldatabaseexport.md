@@ -3,8 +3,8 @@ title: "Get-VEPSQLDatabaseExport"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vepsqldatabaseexport.html"
-last_updated: "7/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEPSQLDatabaseExport
@@ -37,8 +37,9 @@ After you get the databases with ongoing export sessions, you can perform the fo
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstanceName | Specifies an array of names of PostgreSQL instances. The cmdlet will return an array of databases on the specified instances that have ongoing export sessions.  This parameter accepts wildcard characters. | String[] | False | Named | False |
 | Name | Specifies an array of names of PostgreSQL databases. The cmdlet will return an array of databases with the specified names that have ongoing export sessions.  This parameter accepts wildcard characters. | String[] | False | Named | False |
 | ServerName | Specifies an array of names of PostgreSQL servers (as DNS names or IP addresses). The cmdlet will return an array of databases on the specified servers that have ongoing export sessions.  This parameter accepts wildcard characters. | String[] | False | Named | False |
@@ -70,7 +71,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to get an array of active PostgreSQL export sessions from backups of specific servers to specific target servers.  |  | | --- | | $targetservernames = @("rhel02", "rhel03")  $export = Get-VEPSQLDatabaseExport -TargetServerName $targetservernames |  Perform the following steps:   1. Declare the $targetservernames variable. Assign to this variable an array with the names of the necessary target servers with PostgreSQL. 2. Run the Get-VEPSQLDatabaseExport cmdlet. Set the $targetservernames variable as the TargetServerName parameter value. Save the result to the $export variable to be able to use it with other cmdlets. |
+| This example shows how to get an array of active PostgreSQL export sessions to specific target servers.  |  | | --- | | $targetservernames = @("rhel02", "rhel03")  $export = Get-VEPSQLDatabaseExport -TargetServerName $targetservernames |  Perform the following steps:   1. Declare the $targetservernames variable. Assign to this variable an array with the names of the necessary target servers with PostgreSQL. 2. Run the Get-VEPSQLDatabaseExport cmdlet. Set the $targetservernames variable as the TargetServerName parameter value. Save the result to the $export variable to be able to use it with other cmdlets. |
 
 Related Commands
 
