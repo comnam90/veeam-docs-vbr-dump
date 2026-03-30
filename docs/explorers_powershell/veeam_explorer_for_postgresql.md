@@ -3,8 +3,8 @@ title: "Veeam Explorer for PostgreSQL"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_postgresql.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Explorer for PostgreSQL
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets for Veeam Explorer for PostgreSQL to perform the following operations:
 
+Veeam Explorer for PostgreSQL
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VEPSQLCommand](get-vepsqlcommand.md) | Returns a set of cmdlets available for Veeam Explorer for PostgreSQL. |
 | [Start-VEPSQLRestoreSession](start-vepsqlrestoresession.md) | Starts a restore session to explore backed-up PostgreSQL instances and to perform operations with these instances. |
 | [Get-VEPSQLRestoreSession](get-vepsqlrestoresession.md) | Returns active restore sessions started to perform operations with backed-up PostgreSQL instances. |
