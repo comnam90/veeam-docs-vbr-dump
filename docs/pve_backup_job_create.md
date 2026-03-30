@@ -3,8 +3,8 @@ title: "Creating Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Backup Jobs

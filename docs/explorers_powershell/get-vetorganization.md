@@ -3,8 +3,8 @@ title: "Get-VETOrganization"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vetorganization.html"
-last_updated: "3/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VETOrganization
@@ -32,9 +32,10 @@ This cmdlet returns Microsoft Teams organizations added to Veeam Backup for Micr
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Session | Specifies an active Microsoft Teams restore session. This cmdlet will return organizations from the specified restore session. | Accepts the [VBOTeamsRestoreSession](vboteamsrestoresession.md) object. To get this object, run the [Get-VBOTeamsItemRestoreSession](get-vboteamsitemrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
+| Session | Specifies an active Microsoft Teams restore session. This cmdlet will return organizations from the specified restore session. | Accepts the [ITeamsRestoreSession](vboteamsrestoresession.md) object. To get this object, run the [Get-VBOTeamsItemRestoreSession](get-vboteamsitemrestoresession.md) cmdlet. | True | 0 | True (ByValue) |
 | Name | Specifies an array of Microsoft Teams organizations. The cmdlet will return an array of organizations with these names.  This parameter accepts wildcard characters. | String[] | False | 1 | False |
 
 <CommonParameters>

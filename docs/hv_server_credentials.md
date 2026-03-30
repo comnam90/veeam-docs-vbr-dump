@@ -3,7 +3,7 @@ title: "Step 3. Specify Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_credentials.html"
-last_updated: "3/26/2026"
+last_updated: "3/27/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -27,9 +27,7 @@ Veeam Backup & Replication will use the provided credentials to deploy the follo
 
 If you are adding a standalone Microsoft Hyper-V host, Veeam Backup & Replication uses the credentials only for the initial connection to the server to deploy Veeam components. For all subsequent connections, authentication is performed using certificates.
 
-If you are adding SCVMM, the same credentials will be applied to all Microsoft Hyper-V hosts managed by SCVMM. If some Microsoft Hyper-V hosts use their own credentials different from those you have provided, Veeam Backup & Replication will fail to deploy components on these hosts. You will have to specify credentials for such Microsoft Hyper-V hosts separately.
-
-After you connect SCVMM, expand it in the inventory pane to see the list of managed Microsoft Hyper-V hosts. Right-click the host, select Properties and use the Edit Hyper-V Server wizard to specify the credentials for this host.
+If you are adding SCVMM, the same credentials will be applied to all Microsoft Hyper-V hosts managed by SCVMM. If some Microsoft Hyper-V hosts use their own credentials different from those you have provided, Veeam Backup & Replication will fail to deploy components on these hosts. You will have to specify credentials for such Microsoft Hyper-V hosts separately. After you connect SCVMM, expand it in the inventory pane to see the list of managed Microsoft Hyper-V hosts. Right-click the host, select Properties and use the Edit Hyper-V Server wizard to specify the credentials for this host.
 
 * [For a standalone Microsoft Hyper-V host] Connect using certificate-based authentication — select this option if you have pre-installed the Veeam Deployment Kit on the target server. With this method, no user name or password is required; authentication is performed using certificates. It is recommended for environments where Kerberos is disabled or unavailable, or for enhanced security. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
 

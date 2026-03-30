@@ -3,8 +3,8 @@ title: "Get-VEXFolder"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vexfolder.html"
-last_updated: "3/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEXFolder
@@ -42,10 +42,11 @@ This cmdlet returns folders added to Microsoft Exchange mailboxes. The cmdlet wi
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Mailbox | Specifies a mailbox database. The cmdlet will return all mailboxes from this database. | Accepts the [VEXMailbox](vexmailbox.md) object. To get this object, run the [Get-VEXMailbox](get-vexmailbox.md) cmdlet. | True | 0 | True (ByValue) |
-| Name | Specifies a name of the mailbox. The cmdlet will return the mailbox with this name. | String | False | 1 | False |
+| Name | Specifies the name of the mailbox. The cmdlet will return the mailbox with this name. | String | False | 1 | False |
 | Recurse | Defines that the cmdlet will return the specified parent folder and all of its subfolders.  Default: False | SwitchParameter | False | Named | False |
 | Parent | Specifies a parent folder in the mailbox. The cmdlet will return subfolders of this parent folder. | Accepts the VEXFolder object. | True | 0 | True (ByValue) |
 

@@ -3,8 +3,8 @@ title: "Get-VESQLCommand"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vesqlcommand.html"
-last_updated: "5/30/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VESQLCommand
@@ -50,8 +50,9 @@ For example, the Get-VESQLCommand cmdlet consists of the Get verb and the VESQLC
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies a name to query cmdlets. The Get-VESQLCommand cmdlet will return a cmdlet whose name matches the specified name. | String | False | 0 | True (By |
 | Noun | Specifies a noun to query cmdlets. The Get-VESQLCommand cmdlet will return a list of cmdlets whose names contain the specified noun. | String | False | Named | True (By Property Name) |
 | Verb | Specifies a verb to query cmdlets. The Get-VESQLCommand cmdlet will return a list of cmdlets whose names contain the specified verb. | String | False | Named | True (By Property Name) |
@@ -66,28 +67,28 @@ None.
 
 Examples
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Getting All Veeam Explorer for Microsoft SQL Server PowerShell Cmdlets
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Getting All Veeam Explorer for Microsoft SQL Server Cmdlets
 
 |  |  |
 | --- | --- |
-| This command returns all Veeam Explorer for Microsoft SQL Server PowerShell cmdlets:  |  | | --- | | Get-VESQLCommand | |
+| This command returns all Veeam Explorer for Microsoft SQL Server cmdlets.  |  | | --- | | Get-VESQLCommand | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Getting Cmdlet with Specific Name
 
 |  |  |
 | --- | --- |
-| This command returns the Get-VESQLDatabase cmdlet:  |  | | --- | | Get-VESQLCommand -Name Get-VESQLDatabase | |
+| This command returns the Get-VESQLDatabase cmdlet.  |  | | --- | | Get-VESQLCommand -Name Get-VESQLDatabase | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Getting Cmdlets that Contain Specific Verb
 
 |  |  |
 | --- | --- |
-| This command returns cmdlets whose names contain the Get verb:  |  | | --- | | Get-VESQLCommand -Verb Get | |
+| This command returns cmdlets whose names contain the Get verb.  |  | | --- | | Get-VESQLCommand -Verb Get | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 4. Getting Cmdlets that Contain Specific Noun
 
 |  |  |
 | --- | --- |
-| This command returns cmdlets whose names contain the VESQLDatabase noun:  |  | | --- | | Get-VESQLCommand -Noun VESQLDatabase | |
+| This command returns cmdlets whose names contain the VESQLDatabase noun.  |  | | --- | | Get-VESQLCommand -Noun VESQLDatabase | |
 
 

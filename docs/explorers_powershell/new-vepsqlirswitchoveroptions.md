@@ -3,8 +3,8 @@ title: "New-VEPSQLIRSwitchOverOptions"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/new-vepsqlirswitchoveroptions.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VEPSQLIRSwitchOverOptions
@@ -48,10 +48,11 @@ This cmdlet creates a switchover option that you can use in the instant recovery
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Auto | Defines that the switchover will be performed in the Auto mode. This option starts switchover immediately after database files are copied and synchronized. | SwitchParameter | True | Named | False |
-| Manual | Defines that the switchover will be performed manually at a later time, using the [Switch-VEPSQLInstanceInstantRecovery](switch-vepsqlinstanceinstantrecovery.md) cmdlet. | SwitchParameter | True | Named | False |
+| Manual | Defines that the switchover will be performed manually at a later time. To perform the switchover, use the [Switch-VEPSQLInstanceInstantRecovery](switch-vepsqlinstanceinstantrecovery.md) cmdlet. | SwitchParameter | True | Named | False |
 | Scheduled | Defines that the switchover will be performed in the Scheduled mode. Switchover will be performed at the specified date and time. | SwitchParameter | True | Named | False |
 | SwitchingTimeUtc | For the scheduled switchover option.  Specifies the date and time in UTC when the switchover must be started. | DateTime | True | Named | False |
 
@@ -69,13 +70,13 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to create a scheduled switchover option.  |  | | --- | | $time = Get-Date -Date "2023-7-24 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VEPSQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc |  Perform the following steps:   1. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time when the switchover must be performed. Save the result to the $time variable. 2. Convert the scheduled time to the UTC format using the ToUniversalTime() method. Save the result to the $TimeUtc variable. 3. Run the New-VEPSQLIRSwitchOverOptions cmdlet. Provide the Scheduled parameter. Set the $TimeUtc variable as the SwitchingTimeUtc parameter value. Save the result to the $ScheduledSwitch variable to use it with other cmdlets. |
+| This example shows how to create a scheduled switchover option. The switchover schedule is set to 2025-7-24 13:00:00.  |  | | --- | | $time = Get-Date -Date "2025-7-24 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VEPSQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc |  Perform the following steps:   1. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time when the switchover must be performed. Save the result to the $time variable. 2. Convert the scheduled time to the UTC format using the ToUniversalTime() method. Save the result to the $TimeUtc variable. 3. Run the New-VEPSQLIRSwitchOverOptions cmdlet. Provide the Scheduled parameter. Set the $TimeUtc variable as the SwitchingTimeUtc parameter value. Save the result to the $ScheduledSwitch variable to use it with other cmdlets. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Defining Auto Switchover Option
 
 |  |  |
 | --- | --- |
-| This command defines an auto switchover option. The switchover will run immediately after database files are copied and synchronized.  |  | | --- | | $AutoSwitch = New-VEPSQLIRSwitchOverOptions -Auto | |
+| This command defines the auto switchover option. The switchover will run immediately after database files are copied and synchronized.  |  | | --- | | $AutoSwitch = New-VEPSQLIRSwitchOverOptions -Auto | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Defining Manual Switchover Option
 

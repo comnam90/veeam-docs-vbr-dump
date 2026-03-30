@@ -3,8 +3,8 @@ title: "Get-VESPItemAttachment"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vespitemattachment.html"
-last_updated: "1/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VESPItemAttachment
@@ -32,8 +32,9 @@ This cmdlet returns attachments of the specified SharePoint item.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Item | Specifies a SharePoint item. This cmdlet will return attachments of the specified item. | Accepts the [VESPItem](vespitem.md) object. To get this object, run the [Get-VESPItem](get-vespitem.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -63,7 +64,7 @@ Related Commands
 * [Get-VBOSharePointItemRestoreSession](get-vbosharepointitemrestoresession.md)
 * [Get-VBRSharePointItemRestoreSession](get-vbrsharepointitemrestoresession.md)
 * [Get-VESPDatabase](get-vespdatabase.md)
-* [Get-VESPOrganization](get-vesporganization.md)
 * [Get-VESPItem](get-vespitem.md)
+* [Get-VESPOrganization](get-vesporganization.md)
 
 

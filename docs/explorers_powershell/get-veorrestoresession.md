@@ -3,8 +3,8 @@ title: "Get-VEORRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-veorrestoresession.html"
-last_updated: "7/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEORRestoreSession
@@ -28,7 +28,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet returns an array of active restore sessions started to perform operations with backed-up Oracle databases.
+This cmdlet returns an array of active restore sessions for Oracle databases.
 
 |  |
 | --- |
@@ -57,6 +57,6 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to get a specific restore session started to perform operations with Oracle databases.  |  | | --- | | $session = Get-VEORRestoreSession  $session[0] |  Perform the following steps:   1. Run the Get-VEORRestoreSession cmdlet. Save the result to the $session variable.   The cmdlet will return an array of active restore sessions.   1. Specify the necessary ordinal number of the restore session for the $session variable. In our example, it is the first restore session in the array. |
+| This example shows how to get a specific restore session started to perform operations with Oracle databases.  |  | | --- | | $session = Get-VEORRestoreSession  $session[0] |  Perform the following steps:   1. Run the Get-VEORRestoreSession cmdlet. Save the result to the $session variable.   The cmdlet will return an array of active restore sessions.   1. Specify the necessary ordinal number of the restore session for the $session variable. In this example, it is the first restore session in the array. |
 
 

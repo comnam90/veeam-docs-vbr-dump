@@ -3,8 +3,8 @@ title: "Get-VETPost"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vetpost.html"
-last_updated: "7/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VETPost
@@ -58,8 +58,9 @@ This cmdlet returns posts published in Microsoft Teams team channels. You can ge
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Channel | Specifies a Microsoft Teams team channel. The cmdlet will return posts from this channel. | Accepts the [VETChannel](vetchannel.md) object. To get this object, run the [Get-VETChannel](get-vetchannel.md) cmdlet. | True | Named | True (ByValue) |
 | Query | Specifies a query string for post search. The cmdlet will return posts that match the search query from the specified organization, team, channel or parent post.  For more information, see the [Appendix A. Item Search Parameters](https://helpcenter.veeam.com/docs/vbo365/guide/appendix_search.html?ver=80) section of the Veeam Backup for Microsoft 365 User Guide. | String | False | Named | False |
 | Recurse | Defines that the cmdlet will return the specified parent post and all of its child posts.  Default: False | SwitchParameter | False | Named | False |
@@ -89,7 +90,7 @@ Examples
 | --- | --- |
 | This example shows how to get channel posts under the Announcement parent post.  |  | | --- | | $session = Get-VBOTeamsItemRestoreSession  $org = Get-VETOrganization -Session $session -Name "ABC\*"  $post = Get-VETPost -Organization $org -Query "subject: announcement"  Get-VETPost -ParentPost $post |  Perform the following steps:   1. Get the parent post:  1. Run the [Get-VBOTeamsItemRestoreSession](get-vboteamsitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VETOrganization](get-vetorganization.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $org variable. 3. Run the Get-VETPost cmdlet. Set the $org variable as the Organization parameter value. Specify the Query parameter value. Save the result to the $post variable.  1. Run the Get-VETPost cmdlet. Set the $post variable as the ParentPost parameter value. |
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3 Getting Posts from Organization
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Getting Posts from Organization
 
 |  |  |
 | --- | --- |

@@ -3,14 +3,14 @@ title: "Restoring Synchronized Users (Hybrid Identity)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_restore_sync_users.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/25/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring Synchronized Users (Hybrid Identity)
 
 
-Veeam Backup for Microsoft Entra ID allows you to restore users synchronized with Microsoft Active Directory (hybrid identities). Unlike the synchronization software (for example, [Microsoft Entra Connect)](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect-v2), restore with Veeam Backup for Microsoft Entra ID preserves relations stored in the Entra ID: group memberships, assigned roles, used licenses and other relations.
+Veeam Backup for Microsoft Entra ID allows you to restore users synchronized with Microsoft Active Directory (hybrid identities). Unlike the synchronization software (for example, [Microsoft Entra Connect](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect-v2)), restore with Veeam Backup for Microsoft Entra ID preserves relations stored in the Entra ID: group memberships, assigned roles, used licenses and other relations.
 
 Veeam Backup for Microsoft Entra ID restores properties and relations listed in [Supported Entra ID Item Properties](entra_id_properties.md). To restore other properties, you still need synchronization software and, in some cases, local Active Directory restore. This section describes possible scenarios and steps for restore.
 

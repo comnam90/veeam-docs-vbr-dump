@@ -3,8 +3,8 @@ title: "Performing Application Item Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_restore_app_items.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Application Item Restore
@@ -37,7 +37,7 @@ Alternatively, expand the necessary backup job, select the VM, click Application
 |  |
 | --- |
 | Tip |
-| As an alternative to application item restore, you can also [perform file-level restore](pve_vm_guest_restore.md) to recover standalone databases using Veeam Explorers. |
+| As an alternative to application item restore, you can also [perform file-level restore](pve_vm_guest_restore.md) to recover standalone databases. |
 
 [![Performing Application Item Restore](images/pve_restore_app_items.webp)](images/pve_restore_app_items.webp "Performing Application Item Restore")
 

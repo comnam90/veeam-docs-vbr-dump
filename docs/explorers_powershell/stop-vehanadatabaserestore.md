@@ -3,8 +3,8 @@ title: "Stop-VEHANADatabaseRestore"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-vehanadatabaserestore.html"
-last_updated: "8/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Stop-VEHANADatabaseRestore
@@ -37,10 +37,11 @@ This cmdlet stops an ongoing restore job for a backed-up SAP HANA database.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Force | Defines that the cmdlet will show no prompt before executing the command. | SwitchParameter | False | Named | False |
-| RestoreJob | Specifies an initiated SAP HANA restore job. The cmdlet will stop this job. | Accepts the [VEHANARestore](vehanarestore.md) object. To get this object, run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. | True | Named | True (ByValue) |
+| RestoreJob | Specifies an SAP HANA restore job that you want to stop. | Accepts the [VEHANARestore](vehanarestore.md) object. To get this object, run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. | True | Named | True (ByValue) |
 
 <CommonParameters>
 
@@ -68,7 +69,7 @@ Perform the following steps:
 
 1. Run the [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) cmdlet. Save the result to the $restore variable.
 
-The cmdlet will return an array of active restore jobs. Note the ordinal number of the necessary restore job (in our example, it is the fourth restore job in the array).
+The cmdlet will return an array of active restore jobs. Note the ordinal number of the necessary restore job (in this example, it is the fourth restore job in the array).
 
 1. Run the Stop-VEHANADatabaseRestore cmdlet. Set the $restore variable as the RestoreJob parameter value and select the necessary restore job. Note that the Force parameter is also provided, which will cause the restore job to be stopped without any additional prompts or warnings.
 

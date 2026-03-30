@@ -3,8 +3,8 @@ title: "Get-VEADRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-veadrestoresession.html"
-last_updated: "7/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEADRestoreSession
@@ -57,6 +57,6 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to get a specific restore session started to perform operations with Microsoft Active Directory databases:  |  | | --- | | $session = Get-VEADRestoreSession  $session[3] |  Perform the following steps:   1. Run the Get-VEADRestoreSession cmdlet. Save the result to the $session variable.   The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in our example, it is the fourth restore session in the array).   1. Specify the necessary ordinal number of the restore session for the $session variable. In our example, it is the fourth restore session in the array. |
+| This example shows how to get a specific restore session started to perform operations with Microsoft Active Directory databases.  |  | | --- | | $session = Get-VEADRestoreSession  $session[3] |  Perform the following steps:   1. Run the Get-VEADRestoreSession cmdlet. Save the result to the $session variable.   The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the fourth restore session in the array).   1. Specify the necessary ordinal number of the restore session for the $session variable. In this example, it is the fourth restore session in the array. |
 
 

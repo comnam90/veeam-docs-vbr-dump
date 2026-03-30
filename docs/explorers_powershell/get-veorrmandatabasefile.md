@@ -3,8 +3,8 @@ title: "Get-VEORRMANDatabaseFile"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-veorrmandatabasefile.html"
-last_updated: "9/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VEORRMANDatabaseFile
@@ -32,8 +32,9 @@ This cmdlet returns full file names for an Oracle database backed up with Veeam 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies an Oracle database backed up with Veeam Plug-in for Oracle RMAN. The cmdlet will return an array of full file names for the specified database. | Accepts the [VEORRMANDatabase](veorrmandatabase.md) object. To get this object, run the [Get-VEORRMANDatabase](get-veorrmandatabase.md) cmdlet | True | 0 | True (ByValue) |
 
 <CommonParameters>
@@ -58,7 +59,7 @@ Perform the following steps:
 
 1. Run the [Get-VEORRMANRestoreSession](get-veorrmanrestoresession.md) cmdlet. Save the result to the $session variable.
 
-The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.
+The cmdlet will return an array of active restore sessions. Note the ordinal number of the necessary restore session (in this example, it is the first restore session in the array).
 
 1. Run the [Get-VEORRMANDatabase](get-veorrmandatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable.
 2. Run the Get-VEORRMANDatabaseFile cmdlet. Set the $database variable as the Database parameter value.

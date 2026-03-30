@@ -3,8 +3,8 @@ title: "Set-VEORIRDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/set-veorirdatabase.html"
-last_updated: "1/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VEORIRDatabase
@@ -37,10 +37,11 @@ This cmdlet allows you to change the switchover option for a specified Oracle da
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies an Oracle database published within an instant recovery session. | Accepts the [VEORIRDatabase](veorirdatabase.md) object. To get this object, run the [Get-VEORIRDatabase](get-veorirdatabase.md) cmdlet. | True | 0 | True (ByValue) |
-| SwitchOverOptions | Specified a switchover option for the necessary Oracle database. | Accepts the [VEORIRSchedule](veorirschedule.md) object. To create this object, run the [New-VEORIRSwitchOverOptions](new-veorirswitchoveroptions.md) cmdlet. | True | 1 | True (ByValue) |
+| SwitchOverOptions | Specified a switchover option for the necessary Oracle database. | Accepts the [VEORIRSchedule](veorirschedule.md) object. To create this object, run the [New-VEORIRSwitchOverOptions](new-veorirswitchoveroptions.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
 

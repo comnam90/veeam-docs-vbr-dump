@@ -3,8 +3,8 @@ title: "Step 5. Specify Guest Processing Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_guest_processing.html"
-last_updated: "2/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/27/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 5. Specify Guest Processing Options
@@ -25,10 +25,14 @@ Considerations and Limitations
 If you enable application-aware processing or guest files system indexing, consider the following:
 
 * Veeam Plug-in for Proxmox VE will not be able to [use Kerberos authentication](kerberos_authentication.md) while connecting to guest OSes of the processed VMs.
+* Veeam Plug-in for Proxmox VE will not be able to connect to guest OSes of processed Windows VMs if NTLM authentication is not supported in your environment. To work around the issue, install the [Veeam Deployment Kit](deployment_kit.md) on Windows-based machines included into the backup scope.
 
 ![Step 5. Specify Guest Processing Settings](images/pve_backup_job_create_guest_processing.webp)
 
 Related Topics
+
+* [Ports required for guest processing](used_ports.md#guest_processing_components)
+* [Requirements and limitations for Microsoft SQL Server logs backup](https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_hiw.html?ver=13)
 
 * [Requirements and limitations for PostgreSQL WAL files backup](postgresql_backup.md)
 * [Requirements and limitations for Oracle archived redo logs backup](oracle_backup.md)
