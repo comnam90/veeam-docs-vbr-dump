@@ -3,8 +3,8 @@ title: "Restore-VESQLIRDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restore-vesqlirdatabase.html"
-last_updated: "4/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore-VESQLIRDatabase
@@ -28,12 +28,13 @@ Syntax
 
 Detailed Description
 
-This cmdlet performs instant restore of a backed-up Microsoft SQL Server database. You can restore a database to the original location or to another location. For details, see the [Instant Recovery](https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_recovery.html?ver=13) section of the Veeam Explorers User Guide.
+This cmdlet performs instant recovery of a backed-up Microsoft SQL Server database. You can restore a database to the original location or to another location. For details, see the [Instant Recovery](https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_recovery.html?ver=13) section of the Veeam Explorers User Guide.
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a Microsoft SQL Server database. The cmdlet will restore this database. | Accepts the [VESQLDatabase](vesqldatabase.md) object. To get this object, run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. | True | 0 | True (ByValue) |
 | SwitchOverOptions | Specifies a switchover option: automatic, manual or scheduled. | Accepts the [VESQLIRSwitchOverOptions](vesqlirswitchoveroptions.md) object. To get this object, run the [New-VESQLIRSwitchOverOptions](new-vesqlirswitchoveroptions.md) cmdlet. | True | Named | True (ByValue) |
 | DatabaseName | For restore to another location.  Specifies a name for the restored Microsoft SQL Server database on the target location. The database will be restored with the specified name. | String | False | Named | False |
@@ -41,13 +42,13 @@ Parameters
 | InstanceName | For restore to another location.  Specifies the name of the target Microsoft SQL Server instance. The cmdlet will restore the Microsoft SQL Server database to the specified target instance. | String | False | Named | False |
 | Port | Specifies a port number that will be used to connect to the target Microsoft SQL Server. | Int32 | False | Named | False |
 | SqlCredentials | Specifies Microsoft SQL Server credentials for authenticating to Microsoft SQL Server on the target machine.  Note: If you do not specify Microsoft SQL Server credentials, the cmdlet will use the current account credentials. If these credentials do not work, the cmdlet will use the credentials specified in the backup job. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
-| UseSQLAuthentication | Defines that the cmdlet will use SQL authentication to connect to Microsoft SQL Server on the target machine.  Note: If you omit this parameter the cmdlet will use credentials specified in the SQLCredentials parameter to connect to both Microsoft SQL Server and to the guest OS. | SwitchParameter | False | Named | False |
+| UseSQLAuthentication | Defines that the cmdlet will use SQL authentication to connect to Microsoft SQL Server on the target machine.  Note: If you omit this parameter, the cmdlet will use credentials specified in the SQLCredentials parameter to connect to both Microsoft SQL Server and to the guest OS. | SwitchParameter | False | Named | False |
 | GuestCredentials | Specifies credentials for authenticating to the target machine. If these credentials do not work, the cmdlet will use the credentials specified in the backup job.  Consider the following:   * If you omit this parameter, the cmdlet will use the credentials specified in the SqlCredentials parameter to connect to both Microsoft SQL Server and to the guest OS on the target server. * If you do not specify SQL credentials, the cmdlet will use the current account credentials. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
 | ToPointInTimeUtc | Specifies a point in time in the UTC format within the restore interval of a Microsoft SQL Server database.  The cmdlet will restore the database to the state of the specified point in time. | DateTime | False | Named | False |
-| TargetFolder | For restoring Microsoft SQL database files to specific location.  Specifies the destination folder. The cmdlet will restore all database files to that folder.  Note: This parameter is not available if you use the TargetPath parameter. | String | False | Named | False |
+| TargetFolder | For restoring Microsoft SQL Server database files to specific location.  Specifies the destination folder. The cmdlet will restore all database files to that folder.  Note: This parameter is not available if you use the TargetPath parameter. | String | False | Named | False |
 | File | Specifies an array of file names for Microsoft SQL Server databases. | Accepts the [VESQLDatabaseFile](vesqldatabasefile.md)[] object. To get this object, run the [Get-VESQLDatabaseFile](get-vesqldatabasefile.md) cmdlet. | False | Named | False |
-| TargetPath | Specifies a target path array. The cmdlet will restore Microsoft SQL Server database files to the locations specified in the array.  Consider the following:   * For every Microsoft SQL Server database file you must assign a specific file path. * This parameter is not available if you use the TargetFolder parameter. | String[] | False | Named | False |
-| Force | Defines that the cmdlet will overwrite an existing Microsoft SQL database with a Microsoft SQL database from the backup.  Note: The cmdlet will show no prompt before executing the command. | SwitchParameter | False | Named | False |
+| TargetPath | Specifies a target path array. The cmdlet will restore Microsoft SQL Server database files to the locations specified in the array.  Consider the following:   * For every Microsoft SQL Server database file, you must assign a specific file path. * This parameter is not available if you use the TargetFolder parameter. | String[] | False | Named | False |
+| Force | Defines that the cmdlet will overwrite an existing Microsoft SQL Server database with a Microsoft SQL Server database from the backup.  Note: The cmdlet will show no prompt before executing the command. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -59,11 +60,11 @@ The cmdlet returns the [VESQLIRDatabase](vesqlirdatabase.md) object that contain
 
 Examples
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Performing Instant Restore of Microsoft SQL Server Databases to Original Location with Scheduled Switchover
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Performing Instant Recovery of Microsoft SQL Server Database to Original Location with Scheduled Switchover
 
 |  |  |
 | --- | --- |
-| This example shows how to perform instant recovery of the SQLDatabase database to the original location using the scheduled switchover option. The cmdlet will perform the switchover at 13:00:00 on 2023-11-24.  |  | | --- | | $time = Get-Date -Date "2023-11-24 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VESQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc  $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  Restore-VESQLIRDatabase -Database $database -SwitchOverOptions $ScheduledSwitch |  Perform the following steps:   1. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet. Specify the Date parameter value to set the time when the switchover must be performed. Save the result to the $time variable. 2. Convert the scheduled time to the UTC format using the ToUniversalTime() method. Save the result to the $TimeUtc variable. 3. Run the [New-VESQLIRSwitchOverOptions](new-vesqlirswitchoveroptions.md) cmdlet. Provide the Scheduled parameter. Set the $TimeUTC variable as the SwitchingTimeUtc parameter value. Save the result to the $ScheduledSwitch variable. 4. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable. 2. Run the Restore-VESQLIRDatabase cmdlet. Set the $database variable as the Database parameter value. Set the $ScheduledSwitch variable as the SwitchOverOptions parameter value. |
+| This example shows how to perform instant recovery of the SQLDatabase database to the original location using the scheduled switchover option. The cmdlet will perform the switchover at 13:00:00 on 2023-11-24.  |  | | --- | | $time = Get-Date -Date "2023-11-24 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VESQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc  $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  Restore-VESQLIRDatabase -Database $database -SwitchOverOptions $ScheduledSwitch |  Perform the following steps:   1. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet. Specify the Date parameter value to set the time when the switchover must be performed. Save the result to the $time variable. 2. Convert the scheduled time to the UTC format using the ToUniversalTime() method. Save the result to the $TimeUtc variable. 3. Run the [New-VESQLIRSwitchOverOptions](new-vesqlirswitchoveroptions.md) cmdlet. Provide the Scheduled parameter. Set the $TimeUTC variable as the SwitchingTimeUtc parameter value. Save the result to the $ScheduledSwitch variable. 4. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable. 2. Run the Restore-VESQLIRDatabase cmdlet. Set the $database variable as the Database parameter value. Set the $ScheduledSwitch variable as the SwitchOverOptions parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Performing Instant Recovery of Microsoft SQL Server Databases to Specific Folder and Switching Over Manually
 
