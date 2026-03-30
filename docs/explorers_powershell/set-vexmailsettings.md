@@ -3,8 +3,8 @@ title: "Set-VEXMailSettings"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/set-vexmailsettings.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VEXMailSettings
@@ -53,15 +53,16 @@ This cmdlet modifies email settings for Veeam Explorer for Microsoft Exchange. T
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | EnableSendingEmails | Defines that Veeam Explorer for Microsoft Exchange will send email messages.  Default: False | SwitchParameter | False | Named | False |
 | Server | Specifies the full DNS name or IP address of the SMTP server for sending email messages. | String | False | Named | False |
 | Port | Specifies a port number for connecting to SMTP server. | Int32 | False | Named | False |
 | UseAuthentication | Defines that the SMTP server requires authentication. Otherwise, the connection will be established to the SMTP server which does not enforce authentication.  Default: False | SwitchParameter | False | Named | False |
-| UseSSL | Defines that Veeam Explorer for Microsoft Exchange will enable a secure connection for sending emails. If you do not provide this parameter, email messages will be sent through the connection that does not require SSL authentication.  Default: False | SwitchParameter | False | Named | False |
+| UseSSL | Defines that Veeam Explorer for Microsoft Exchange will enable a secure connection for sending emails. If you do not provide this parameter, email messages will be sent through a connection that does not require TLS authentication.  Default: False | SwitchParameter | False | Named | False |
 | Credentials | Specifies credentials that you want to use for authentication to the SMTP server. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | False | Named | False |
-| From | Specifies email address of the email sender. | String | False | Named | False |
+| From | Specifies email address of the email sender. | String | True | Named | False |
 | GoogleGmail | Defines that Veeam Explorer for Microsoft Exchange will send email messages on behalf of a Google account.  Default: False | SwitchParameter | True | Named | False |
 | ClientId | Specifies the client ID obtained while registering an application in the Google Cloud console or Microsoft Identity platform. | String | False | Named | False |
 | ClientSecret | Specifies a password.  Note: This parameter is required only for authentication with a Google account using a custom application. | SecureString | False | Named | False |
