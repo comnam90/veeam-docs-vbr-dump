@@ -3,8 +3,8 @@ title: "Requirements and Limitations for VMware Backup Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy_requirements.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Requirements and Limitations for VMware Backup Proxies
@@ -46,7 +46,7 @@ In addition to the general requirements and limitations, the following ones appl
 
 * Linux-based backup proxies use the transport service for connection with backup infrastructure components. If the transport service cannot be installed, Linux-based backup proxy require SSH connection.
 
-* You can assign the role of a VMware backup proxy to a Linux server added with single-use credentials, for example, a Linux server used as a hardened repository. For this configuration, only the Network mode (NBD) is supported, other transport modes will not be available for selection.
+* The support of the transport modes depends on the backup infrastructure component that performs the backup proxy role. For more information, see [Transport Modes](transport_modes.md).
 * Linux-based backup proxies cannot be used with VMware Cloud on AWS. This is because VDDK settings required by VMware cannot be enabled on Linux-based backup proxies.
 * Linux-based backup proxies that use virtual appliance (HotAdd) transport mode do not support the VM copy scenario.
 * For [Direct SAN with iSCSI access](direct_san_access.md), note that Linux-based backup proxies must have the Open-iSCSI initiator enabled.
