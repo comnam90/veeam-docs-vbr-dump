@@ -3,7 +3,7 @@ title: "Linux File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_before_you_begin.html"
-last_updated: "3/11/2026"
+last_updated: "3/30/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -15,6 +15,7 @@ This section lists considerations and limitations that apply to recovery from Li
 Infrastructure Components
 
 * [For source and target workload] Veeam Backup & Replication uses the ICMP ping command to define whether a workload is available over the network. If the workload must be available over the network, check that ICMP protocol is enabled on the workload.
+* Linux helper hosts must have a sufficient dynamic port range available (by default, this range is 32768 - 60999). If you restrict this range on the helper host, errors due to port exhaustion may occur. For more information, see the [Linux kernel documentation](https://www.kernel.org/doc/html/latest/networking/ip-sysctl.html#ip-variables).
 * Recovery from Linux workloads is possible only when using a Linux-based mount server (helper appliance, Linux mount server or Linux helper host).
 * The following applies if you recover VMware vSphere VMs:
 
