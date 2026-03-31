@@ -3,8 +3,8 @@ title: "Maintenance Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_advanced_maintenance.html"
-last_updated: "12/18/2023"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Maintenance Settings
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 You can instruct Veeam Backup & Replication to periodically perform a health check for the backup. The health check ensures that the backup is consistent, and you will be able to restore data from it.
 
-During the health check, Veeam Backup & Replication performs a CRC check for metadata and a hash check for data blocks in the object storage backup files to verify their integrity. For more information, see the [Performing Health Check and Repair for Unstructured Data Backups](unstructured_data_backup_health_check.md) section.
+During the health check, Veeam Backup & Replication performs a CRC check for metadata and a hash check for data blocks in the object storage backup files to verify their integrity. If you configured a secondary destination for the job, Veeam Backup & Replication also performs a health check for the backup files stored there. For more information, see the [Performing Health Check and Repair for Unstructured Data Backups](unstructured_data_backup_health_check.md) section.
 
 To configure the health-check settings for backup job:
 
