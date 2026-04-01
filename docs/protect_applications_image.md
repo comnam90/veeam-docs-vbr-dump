@@ -3,7 +3,7 @@ title: "Image-Level Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications_image.html"
-last_updated: "3/27/2026"
+last_updated: "3/31/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -14,6 +14,7 @@ With the application-aware processing, Veeam Backup & Replication and Veeam Agen
 
 * For virtual machines, application-aware processing with Veeam Backup & Replication allows you to create image-level backups together with a transactionally-consistent backups of the following applications:
 
+* Microsoft Active Directory
 * Microsoft Exchange
 * Microsoft SharePoint
 * Microsoft SQL Server
