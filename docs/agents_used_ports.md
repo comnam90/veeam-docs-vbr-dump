@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_used_ports.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Ports
@@ -20,10 +20,11 @@ Communication Between Veeam Backup & Replication Components
 
 The following table describe network ports that must be opened to ensure proper communication of components in the Veeam Agent management infrastructure:
 
+Communication Between Veeam Backup & Replication Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam backup server | Veeam Agent computer (Microsoft Windows) | TCP | 6184+ | Default port used to communicate with the Veeam Agent for Microsoft Windows Service.  If port 6184 is already in use, Veeam Agent for Microsoft Windows Service tries to use the next port number in the allocated range (6184 to 6195). Once the service takes the next available port, it makes it the default port for all subsequent connections. |
-| TCP | 135, | Default ports used to communicate with the Veeam Installer Service.  Ports 135 and 49152 to 65535 are used by Veeam Backup & Replication on Microsoft Windows for WMI queries. WMI queries are mandatory for backing up failover clusters and perform file-level restore and optional for faster Veeam Agent deployment.  Port 137 to 139 are used to communicate using NetBIOS if you use NetBIOS in your infrastructure.  Ports 137 to 139 and 445 are used to deploy of Veeam Installer Service and to start restore from the Veeam Backup & Replication console.  Ports 6160 and 11731 are used to deploy Veeam Agent on the computer and to perform volume-level restore.  Notes:   * Port 11731 is used to connect to the Veeam Installer Service in Veeam Agent versions earlier than 13.0.1. If all Veeam Agents in your infrastructure are upgraded to the latest version, this port is not required. * If the backup repository server role and the mount server role are assigned to different servers in your infrastructure, you must open ports described in section [Mount Server Connections](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#mount-server-connections). |
+| TCP | 135, | Default ports used to communicate with the Veeam Installer Service.  Port 135 is used by Veeam Backup & Replication on Microsoft Windows for WMI queries. WMI queries are mandatory for backing up failover clusters and perform file-level restore and optional for faster Veeam Agent deployment.  Port 137 to 139 are used to communicate using NetBIOS if you use NetBIOS in your infrastructure.  Ports 137 to 139 and 445 are used to deploy of Veeam Installer Service and to start restore from the Veeam Backup & Replication console.  Ports 6160 and 11731 are used to deploy Veeam Agent on the computer and to perform volume-level restore.  Notes:   * Port 11731 is used to connect to the Veeam Installer Service in Veeam Agent versions earlier than 13.0.1. If all Veeam Agents in your infrastructure are upgraded to the latest version, this port is not required. * If the backup repository server role and the mount server role are assigned to different servers in your infrastructure, you must open ports described in section [Mount Server Connections](https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html?ver=13#mount-server-connections). |
 | UDP | 137, 138 |
 | TCP | 6167,  2500 to 3300 | Ports 2500 to 3300 are used to collect Microsoft SQL logs from the Veeam Agent computer. For every TCP connection that a backup job uses, one port from this range is assigned. If Veeam Agent computer operates as part of a failover cluster with SQL Server Always On Availability Groups, ports 2500 to 3300 are used together with port 6167. |
 | TCP | 6162 | Default port used by the Veeam Data Mover. |
@@ -50,10 +51,11 @@ Communication with Veeam Backup Repositories
 
 The following table describes network ports that must be opened to ensure proper communication between Veeam Agent and backup repositories added to the Veeam Backup & Replication infrastructure.
 
+Communication with Veeam Backup Repositories
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
-| Veeam Agent computer | Veeam backup repository | TCP | 6162, 2500 to 3300 | Ports used in the following cases:   * as data transmission channels * for sending logs by Veeam Agents in protection groups for pre-installed backup agents |
-| Gateway server | TCP | 6162, 2500 to 3300 | Ports used as data transmission channels.  Ports 137 to 139 are used by backup infrastructure components to communicate using NetBIOS if you use NetBIOS in your infrastructure.  Tip: to learn about the ports required between gateway servers and backup repositories, see [Gateway Server](used_ports.md#gateway). |
+| Veeam Agent computer | Veeam backup repository | TCP | 6162, 2500 to 3300 | Ports used in the following cases:   * as data transmission channels * for sending logs by Veeam Agents in protection groups for pre-installed backup agents   Note: The port range 2500 to 3300 is optional. Only if port 6162 is unavailable, Veeam Agent uses the port range 2500 to 3300 for failover. |
+| Gateway server | TCP | 6162, 2500 to 3300 | Ports used as data transmission channels.  Ports 137 to 139 are used by backup infrastructure components to communicate using NetBIOS if you use NetBIOS in your infrastructure.  Note: The port range 2500 to 3300 is optional. Only if port 6162 is unavailable, Veeam Agent uses the port range 2500 to 3300 for failover.  Tip: to learn about the ports required between gateway servers and backup repositories, see [Gateway Server](used_ports.md#gateway). |
 | Gateway server (Microsoft Windows) | TCP | 139, 445 |
 | UDP | 137, 138 |
 
@@ -61,8 +63,9 @@ Communication with Veeam Cloud Connect Repositories
 
 The following table describes network ports that must be opened to ensure proper communication between Veeam Agents and Veeam Cloud Connect repositories.
 
+Communication with Veeam Cloud Connect Repositories
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam Agent computer (Microsoft Windows, Linux, macOS) | Cloud gateway | TCP | 6180 | Default port on the cloud gateway used to transport Veeam Agent data to the Veeam Cloud Connect repository.  You can obtain the current list of ports or cloud gateway connection points from your Service Provider. |
 | Certificate revocation lists | TCP | 80 or 443 | Veeam Agent computer needs access to Certificate Revocation Lists (CRLs) of the Certification Authority (CA) who issued a certificate to the Veeam Cloud Connect service provider.  Information about certificate verification endpoints (CRL and OCSP server URLs) can be found on the CA website. Certificate verification endpoints are subject to change. The actual list of addresses can be found in the certificate itself. |
 
@@ -70,8 +73,9 @@ Communication with Object Storage
 
 The following table describes network ports that must be opened to ensure proper communication with object storage if you back up data to object storage that Veeam Agent accesses directly. For more information about object storage connection modes, see [Backup to Object Storage](agents_object_storage.md).
 
+Communication with Object Storage
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Gateway server or backup server | Amazon S3 object storage | TCP | 443 | Used to communicate with the Amazon S3 object storage through the following endpoints:   * \*.amazonaws.com (for both Global and Government regions) * \*.amazonaws.com.cn (for China region)   All AWS service endpoints are specified in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). |
 | 80 | Used to verify the certificate status through the following endpoints:   * \*.amazontrust.com * \*.cloudfront.net   Consider that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. The actual list of addresses can be found in the certificate itself. |
 | Microsoft Azure object storage | TCP | 443 | Used to communicate with the Microsoft Azure object storage through the following endpoints:   * <storage-account>.blob.core.windows.net (for Global region) * <storage-account>.blob.core.chinacloudapi.cn (for China region) * <storage-account>.blob.core.usgovcloudapi.net (for Government region)   Consider that the <storage-account> part of the address must be replaced with your actual storage account URL that can be found in the Azure management portal. |
@@ -86,8 +90,9 @@ Communication with Shared Folder Targets
 
 The following table describes network ports that must be opened to ensure proper communication between Veeam Agent and shared folder targets outside the Veeam Backup & Replication infrastructure.
 
+Communication with Shared Folder Targets
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam Agent computer | Shared folder SMB (CIFS) share | TCP | 139,  445 | Ports used as a transmission channel from the Veeam Agent computer to the target SMB (CIFS) share not added as a Veeam backup repository  Ports 137-139 are used by backup infrastructure components to communicate using NetBIOS if you use NetBIOS in your infrastructure. |
 | UDP | 137, 138 |
 | Shared folder NFS share | TCP | 111, 2049 | Standard NFS ports used as a data transmission channel from the Veeam Agent for Linux computer to the target NFS share not added as a Veeam backup repository. |
@@ -96,8 +101,9 @@ Communication with Cloud Machines
 
 The following table describes network ports that must be opened to ensure proper communication between Veeam Backup & Replication and Veeam Agents installed on Amazon EC2 instances or Microsoft Azure virtual machines (both objects can be also referred to as cloud machines).
 
+Communication with Cloud Machines
+
 | From | To | Protocol | Port/Endpoint | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam Backup & Replication,  Amazon EC2 instance with Veeam Agent | Amazon cloud | TCP | 443 | Port and endpoints used for communication from Veeam Backup & Replication and Amazon EC2 instance to the Amazon cloud where the instance is located. |
 | HTTPS | AWS service endpoints:   * \*.amazonaws.com (for Global and Government regions) * \*.amazonaws.com.cn (for China region)   A complete list of connection endpoints can be found in [AWS Documentation](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). |
 | TCP | 80 | Port and endpoints used to verify the certificate status.  Keep in mind that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. The actual list of addresses can be found in the certificate itself. |
@@ -111,8 +117,9 @@ Communication with 3rd Party Components
 
 The following table describes network ports that must be opened to ensure proper communication between Veeam backup server and 3rd party infrastructure components.
 
+Communication with 3rd Party Components
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Veeam backup server | Microsoft Active Directory | TCP | 389 | LDAP connections. |
 | TCP | 636 | LDAPS (Secure LDAP) connections. |
 | DNS server with forward/reverse name resolution of all backup servers | TCP | 53 | Port used for communication with the DNS Server. |
