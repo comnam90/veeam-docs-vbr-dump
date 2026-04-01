@@ -3,8 +3,8 @@ title: "Retention Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_retention.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Retention Policy
@@ -20,6 +20,8 @@ For example, the retention policy is set to 7 days. Veeam Plug-In is set to crea
 
 [![Retention Policy Backup Chain](images/plugins_mssql_retention.webp)](images/plugins_mssql_retention.webp "Retention Policy Backup Chain")
 
-For more information, see [Configuring Retention Policy](plugins_mssql_retention_policy.md).
+Related Task
+
+[Configuring Retention Policy](plugins_mssql_retention_policy.md)
 
 
