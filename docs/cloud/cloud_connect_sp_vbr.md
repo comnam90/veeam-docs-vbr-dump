@@ -3,7 +3,7 @@ title: "SP Veeam Backup Server"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_sp_vbr.html"
-last_updated: "3/10/2026"
+last_updated: "3/17/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -34,14 +34,14 @@ Limitations for SP Veeam Backup Server
 
 The SP Veeam backup server is intended to be used exclusively for configuring Veeam Cloud Connect infrastructure and providing cloud resources to tenants. The SP cannot perform the following operations on the SP Veeam backup server:
 
-* Perform restore tasks with tenant backups other than [Instant Recovery](cloud_connect_instant_recovery.md), [restore to Microsoft Azure](cc_restore_azure.md) and [restore to Amazon EC2](cc_restore_aws.md).
+* Perform restore tasks with tenant backups other than [Instant Recovery](cloud_connect_instant_recovery.md), [restore to Microsoft Azure](cc_restore_azure.md) and [restore to Amazon EC2](cc_restore_aws.md). Only these three operations are supported with tenant backups on the SP Veeam backup server.
 
 |  |
 | --- |
 | Important |
 | The SP must avoid the following operations with the tenant backups, for example, in an attempt to restore data from these backups:   * Import tenant backups on the SP Veeam backup server. * Decrypt tenant backups on the SP Veeam backup server. |
 
-To perform such data restore tasks, the SP must deploy a separate backup server in their backup infrastructure and do either of the following:
+To perform other data restore tasks, the SP must deploy a separate backup server in their backup infrastructure and do either of the following:
 
 * Import tenant backups. In this scenario, the SP must install a separate license key on this backup server. The trial license key works for this scenario.
 * Rescan the repository with tenant backups. To learn how to rescan a repository, see the [Rescanning Backup Repositories](https://helpcenter.veeam.com/docs/backup/vsphere/rescanning_backup_repositories.html?ver=120) section in the Veeam Backup & Replication User Guide. In this scenario, the SP can use its existing Veeam Cloud Connect license on the backup server.

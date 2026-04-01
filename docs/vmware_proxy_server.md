@@ -3,8 +3,8 @@ title: "Step 2. Choose Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_proxy_server.html"
-last_updated: "12/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Choose Server
@@ -37,7 +37,7 @@ You can select the data transport mode manually. Click Choose on the right of th
 |  |
 | --- |
 | Note |
-| In some cases, the backup proxy may not be able to use some transport modes due to known limitations. For more information, see [Transport Modes](transport_modes.md). If you assign the backup proxy role to a hardened repository, only the Network mode will be available. Other transport modes will be grayed out. |
+| The support of the transport modes depends on the backup infrastructure component that performs the backup proxy role. For more information, see [Transport Modes](transport_modes.md). |
 
 ![Step 2. Choose Server](images/add_vmware_proxy_server_mode.webp)
 

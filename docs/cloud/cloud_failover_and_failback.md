@@ -3,8 +3,8 @@ title: "Cloud Replica Failover and Failback"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_failover_and_failback.html"
-last_updated: "11/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Cloud Replica Failover and Failback
@@ -24,7 +24,7 @@ In Veeam Backup & Replication, the actual failover is considered a temporary sta
 |  |
 | --- |
 | Note |
-| This and subsequent sections describe failover and failback aspects that are specific for Veeam Cloud Connect Replication. To get a detailed description of all failover and failback options supported in Veeam Backup & Replication, see the following sections in the Veeam Backup & Replication User Guide:   * [Failover and Failback for Replication](https://helpcenter.veeam.com/docs/backup/vsphere/failover_failback.html?ver=120) * [Failover and Failback for CDP](https://helpcenter.veeam.com/docs/backup/vsphere/cdp_failover_failback.html?ver=120) |
+| This and subsequent sections describe failover and failback aspects that are specific for Veeam Cloud Connect Replication. To get a detailed description of all failover and failback options supported in Veeam Backup & Replication, see the following sections in the Veeam Backup & Replication User Guide:   * [Failover and Failback for Replication](https://helpcenter.veeam.com/docs/vbr/userguide/failover_failback.html?ver=13) * [Failover and Failback for CDP](https://helpcenter.veeam.com/docs/vbr/userguide/cdp_failover_failback.html?ver=13) |
 
 In This Section
 

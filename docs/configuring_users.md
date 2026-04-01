@@ -3,8 +3,8 @@ title: "Configuring Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_users.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Users
@@ -18,6 +18,11 @@ You can configure users and groups in one of the following ways:
 
 * [Configuring users using the Veeam Backup & Replication console](configuring_users_console.md)
 * [Configuring users using the Veeam Backup & Replication web UI](configuring_users_web.md)
+
+|  |
+| --- |
+| Note |
+| This section is about configuring Veeam Backup & Replication users and user groups. If you want to configure local Veeam Software Appliance users, follow the steps described in section [Managing Users and Roles](https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_users.html). |
 
 Requirements and Limitations
 
