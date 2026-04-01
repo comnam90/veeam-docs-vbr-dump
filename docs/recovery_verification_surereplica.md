@@ -3,8 +3,8 @@ title: "SureReplica"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_verification_surereplica.html"
-last_updated: "7/23/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # SureReplica
@@ -18,7 +18,6 @@ The SureReplica technology is not limited only to VM replica verification. Just 
 
 * SureReplica: automated VM replicas verification, including storage snapshot replicas.
 * On-Demand Sandbox: an isolated environment for testing VM replicas, training and troubleshooting.
-* U-AIR: recovery of individual items from applications running on VM replicas.
 
 Related Topics
 
