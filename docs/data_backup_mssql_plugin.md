@@ -3,8 +3,8 @@ title: "Data Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_backup_mssql_plugin.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/26/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Data Backup
@@ -60,5 +60,11 @@ After that, you will be able to configure job schedule in the properties of the 
 * Scenario 2. You can use a third-party scheduling tool to create periodic backups of Microsoft SQL Server data with Veeam Plug-In. To do this, you must configure Veeam Plug-In backup settings and obtain a command that will be used to start the backup process. For more information, see [Exporting Backup Settings to Custom Script](mssql_backup_agent_job.md).
 
 After that, you will be able to use the resulting command in a custom backup script or with a scheduling tool of your choice.
+
+In This Section
+
+* [Backup Chain](mssql_backup_chain.md)
+* [Retention of Microsoft SQL Server Backups](mssql_retention_tools.md)
+* [Veeam Backup Repositories](repos_mssql.md)
 
 
