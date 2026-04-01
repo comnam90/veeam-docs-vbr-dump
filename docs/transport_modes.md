@@ -3,8 +3,8 @@ title: "Transport Modes"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/transport_modes.html"
-last_updated: "12/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Transport Modes
@@ -28,8 +28,9 @@ Veeam Backup & Replication leverages VMware vStorage APIs for Data Protection (V
 
 Applicability and efficiency of each transport mode primarily depends on the type of datastore used by the source host — local or shared, and on the VMware backup proxy type — physical or virtual. The following table shows recommendations for installing the VMware backup proxy, depending on the storage type and desired transport mode.
 
+Transport Modes
+
 | Production Storage Type | Direct Storage Access | Virtual Appliance | Network Mode |
-| --- | --- | --- | --- |
 | Fibre Channel (FC) SAN | Install a VMware backup proxy on a physical server with a direct FC access to the SAN. | Install a VMware backup proxy on a VM running on an ESXi host connected to the storage device. | This mode is not recommended on 1 Gb Ethernet but works well with 10 Gb Ethernet.  Install a VMware backup proxy on any machine on the storage network. |
 | iSCSI SAN | Install a VMware backup proxy on a physical or virtual machine. |
 | NFS Storage |
@@ -47,14 +48,15 @@ Transport Mode Limitations
 
 The transport mode limitations are defined by the backup proxy configuration. The following table describes transport mode availability and protocol support for different backup infrastructure components assigned the role of the backup proxy in VMware vSphere environments and storage system integration.
 
+Transport Mode Limitations
+
 | Component Used as Backup Proxy | Direct Storage Access | | | Virtual Appliance | Network Mode |
-| --- | --- | --- | --- | --- | --- |
-| Direct SAN Access1 | Direct NFS Access | Storage Integration1 |
+| Direct SAN Access1 | Direct NFS Access | Storage Integration Access1 |
 | Veeam Software Appliance | ✕ | ✕ | ✕ | ✕ | ✓ |
 | Veeam Infrastructure Appliance2 | ✕ | ✓ | NFS | ✓ | ✓ |
-| Veeam Infrastructure Appliance with iSCSI and NVMe/TCP2 | ✕ | ✓ | iSCSI, NFS, NVMe-TCP | ✓ | ✓ |
+| Veeam Infrastructure Appliance with iSCSI and NVMe/TCP2 | ✓ | ✓ | iSCSI, FC, NFS, NVMe-TCP | ✓ | ✓ |
 | Veeam Hardened Repository | ✕ | ✕ | ✕ | ✕ | ✓ |
-| Windows-based backup server | ✓ | ✓ | iSCSI, FC, NFS | ✓ | ✓ |
+| Microsoft Windows-based backup server | ✓ | ✓ | iSCSI, FC, NFS | ✓ | ✓ |
 | Microsoft Windows server | ✓ | ✓ | iSCSI, FC, NFS | ✓ | ✓ |
 | Linux server added with persistent credentials | ✓ | ✓ | iSCSI, FC, NFS, NVMe-FC, NVMe-TCP, NVMe-RDMA | ✓ | ✓ |
 | Linux server added with single-use credentials as Hardened Repository | ✕ | ✕ | ✕ | ✕ | ✓ |
