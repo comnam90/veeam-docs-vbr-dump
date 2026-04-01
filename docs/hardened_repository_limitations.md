@@ -3,8 +3,8 @@ title: "Requirements and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_limitations.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Requirements and Limitations
@@ -63,8 +63,6 @@ Repository
 Immutability Feature
 
 * To use the immutability feature for backup copy jobs, enable the GFS retention policy. For more information, see [Long-Term Retention Policy (GFS)](backup_copy_gfs.md).
-
-* Do not use the immutability feature for a [Nutanix Mine infrastructure](https://helpcenter.veeam.com/docs/backup/mine/overview.html). As Mine repositories contain thin-provisioned disks, there may be the case when Veeam Backup & Replication uses full storage capacity of a repository and cannot delete backup files from the file system.
 
 Veeam Infrastructure Appliance Hardened Repository
 
