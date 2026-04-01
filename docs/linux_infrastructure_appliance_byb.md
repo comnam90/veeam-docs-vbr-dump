@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "3/11/2026"
+last_updated: "3/23/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -56,10 +56,7 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * You cannot install third-party software on a Veeam Infrastructure Appliance.
 * You cannot use third-party software to back up or restore a Veeam Infrastructure Appliance.
 
-* VMware proxies deployed with Veeam Infrastructure Appliance support the following transport modes:
-
-* Veeam Infrastructure Appliance  — Network, HotAdd, Direct NFS
-* Veeam Infrastructure Appliance (with iSCSI and NVMe-TCP) — Network, HotAdd, Direct NFS, Backup from Storage Snapshot
+* For the list of supported transport modes for VMware proxies deployed with Veeam Infrastructure Appliance support, check [Transport Modes](transport_modes.md).
 
 * Veeam Infrastructure Appliance uses DISA and FIPS-compliant Linux policies. These policies cannot be changed.
 
