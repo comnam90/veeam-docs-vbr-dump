@@ -3,8 +3,8 @@ title: "Direct SAN Access"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_san_access.html"
-last_updated: "2/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Direct SAN Access
@@ -28,15 +28,17 @@ The Direct SAN access transport mode can be used for all operations where the VM
 
 Requirements for the Direct SAN Access Mode
 
-To use the Direct SAN access transport mode, make sure that the following requirements are met:
-
 * It is strongly recommended that you assign the role of a VMware backup proxy working in the Direct SAN access mode to a physical machine. If you assign this role to a VM, the VMware backup proxy performance may not be optimal.
-* A VMware backup proxy using the Direct SAN access transport mode must have a direct access to the production storage using a hardware or software HBA. If a direct SAN connection is not configured or not available when a job or task starts, the job or task will fail.
+* A VMware backup proxy that uses the Direct SAN access transport mode must have a direct access to the production storage using a hardware or software HBA. If a direct SAN connection is not configured or not available when a job or task starts, the job or task will fail.
 * SAN storage volumes presented as VMware datastores must be exposed to the OS of the VMware backup proxy that works in the Direct SAN access transport mode.
 
 The volumes must be visible in Disk Management but must not be initialized by the OS. Otherwise, the VMFS filesystem will be overwritten with NTFS, and volumes will become unrecognizable by ESXi hosts. To prevent volumes initialization, Veeam Backup & Replication automatically sets the SAN Policy within each proxy to Offline Shared and also sets the SAN LUNs to the Offline state.
 
 * [For restore operations] A VMware backup proxy must have write access to LUNs where VM disks are located.
+* [For backup proxy deployed using [Veeam Infrastructure Appliance with iSCSI and NVMe/TCP](linux_infrastructure_appliance_install.md)] You can use the Direct SAN access mode over FC only if you manually specify datastores that the proxy can access.
+
+To specify the connected datastores, go to the [backup proxy settings](vmware_proxy_server.md). In the Connected datastores field, specify the required datastores. If any required datastore is not visible, reboot the backup proxy.
+
 * Veeam Backup & Replication supports the Direct SAN access transport mode over NVMe-FC with the following conditions:
 
 * Datastores must be specified manually in the Connected datastores field in the [backup proxy settings](vmware_proxy_server.md). Automatic datastore detection is not supported.
@@ -44,7 +46,7 @@ The volumes must be visible in Disk Management but must not be initialized by th
 
 Limitations for the Direct SAN Access Mode
 
-* The [Veeam Infrastructure Appliance](linux_infrastructure.md) does not support DirectSAN. For more information on transport mode availability and protocol support, see [Transport Mode Limitations](transport_modes.md#limitations).
+* Support for the Direct SAN access mode depends on the backup infrastructure component that performs the backup proxy role. For more information on transport mode availability and protocol support, see [Transport Mode Limitations](transport_modes.md#limitations).
 * The Direct SAN access transport mode can be used to restore only thick VM disks.
 * The transport mode is used for the entire VM, not for the virtual disk. It means that one VM can be processed in one transport mode only. If there are VM disks that cannot be processed in the Direct SAN access transport mode, then the rest of the disks also cannot be processed in this transport mode.
 
