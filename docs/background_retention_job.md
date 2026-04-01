@@ -3,7 +3,7 @@ title: "Background Retention"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/background_retention_job.html"
-last_updated: "3/11/2026"
+last_updated: "3/31/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -52,7 +52,7 @@ Consider the following:
 * [For backups linked to jobs] If the retention is set in days, Veeam Backup & Replication leaves at least 3 backup files in a backup chain regardless of the set retention. If the retention is set in restore points, Veeam Backup & Replication leaves backup files in a backup chain. The minimum number of backup files left equals the current retention period. You can delete these backup files manually as described in section [Deleting Backups from Disk](delete_backup_from_disk.md).
 * [For orphaned backups] If the retention is set in days, Veeam Backup & Replication can remove all outdated backup files in a backup chain. If the retention is set in restore points, Veeam Backup & Replication leaves backup files in a backup chain. The minimum number of backup files left equals the current retention period. To learn how to delete these backup files manually, see section [Deleting Backups from Disk](delete_backup_from_disk.md).
 * [For backups stored in the capacity tier] Background retention job does not delete capacity tier copies of backup data directly. However, if background retention removes local copies of backups, they may also be marked for removal on the capacity tier. In such a case, cleanup during the next SOBR offloading session will remove them from the capacity tier.
-* [For backups created with Veeam Agent for Windows operating in standalone or managed by Veeam Agent mode] For backups linked to jobs basic retention does not apply.
+* [For backups created with Veeam Agent for Windows in standalone mode or with the [Managed by agent](agent_policy_win_protection_mode.md) job mode] For backups linked to jobs, basic retention does not apply.
 * Unlike the job retention, the background retention does not merge data from one backup file to another; it just deletes files. In the case of forever forward incremental and forward incremental backup chains, the background retention deletes incremental files only after the last increment in the related part of the backup chain becomes outdated.
 * The background retention does not delete backup files if they are locked by other processes. The retention waits until the backup file is unlocked.
 * Background retention requires free space in the target repository for the generated metadata file (.VBM). If the backup repository does not have enough free disk space, the background retention task (including manual Apply retention option) will fail. Ensure the repository has sufficient free space before you run background retention.
