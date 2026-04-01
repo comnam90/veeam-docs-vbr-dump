@@ -3,8 +3,8 @@ title: "How SureReplica Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_hiw.html"
-last_updated: "8/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How SureReplica Works
@@ -14,9 +14,7 @@ SureReplica is Veeam’s technology that lets you test a VM replica for recovera
 
 SureReplica supports regular VM replicas and VM replicas added to a CDP policy. SureReplica verification does not prevent CDP policy from running.
 
-The SureReplica technology does not require the vPower engine. A VM replica is essentially an exact copy of a VM with a set of restore points. The VM replica data is stored in the raw decompressed format native to VMware. Therefore, to start a VM replica in the virtual lab, you do not need to present its data through the vPower NFS datastore to the ESXi host. Veeam Backup & Replication re-configures the VM replica settings for recovery verification, connects the VM replica to the isolated virtual lab and powers it on.
-
-As there is no need to publish the VM from the backup file, the SureReplica processing is typically faster than SureBackup. Subsequently, the [U-AIR](https://www.veeam.com/veeam_backup_12_uair_wizard_user_guide_pg.pdf) and On-Demand Sandbox operations are faster, too.
+The SureReplica technology does not require the vPower engine. A VM replica is essentially an exact copy of a VM with a set of restore points. The VM replica data is stored in the raw decompressed format native to VMware. Therefore, to start a VM replica in the virtual lab, you do not need to present its data through the vPower NFS datastore to the ESXi host. Veeam Backup & Replication re-configures the VM replica settings for recovery verification, connects the VM replica to the isolated virtual lab and powers it on. As there is no need to publish the VM from the backup file, the SureReplica processing is typically faster than SureBackup.
 
 During VM replica verification, Veeam Backup & Replication performs the following actions:
 
