@@ -3,8 +3,8 @@ title: "Step 3. Select Files and Folders to Back Up"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_files_and_folders.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Select Files and Folders to Back Up
@@ -89,7 +89,7 @@ You can exclude a whole file share from processing. For example, you add the \\S
 |  |
 | --- |
 | Note |
-| Consider the following:   * Include and exclude masks are case insensitive. * You cannot exclude a whole file share from processing if the storage system, where file shares reside, is added to Veeam Backup & Replication as a NAS filer.   As a workaround, you can edit the storage in Storage Infrastructure and exclude the volumes on the NAS Filer step, as described in the [Adding NetApp Data ONTAP](netapp_nas_access.md), [Adding Lenovo ThinkSystem DM/DG Series](specify_nas_access.md), [Adding Dell PowerScale (formerly Isilon)](dell_powerscale_add_options.md) or [Adding Nutanix Files Storage](nutanix_add_nas.md) sections, depending on the type of the storage system you use.   * You cannot use mask with \* to specify folders to exclude from processing. For example, mask QA04:/NFS04/Documents/201\* will not work. * You cannot mix different exclusion options, for example, you cannot use a mask to exclude files with certain extensions from the specific folder. For example, QA04:/NFS04/Documents/2016/\*.xlsx will not work. |
+| Consider the following:   * Include and exclude masks are case insensitive. * Veeam Backup & Replication automatically excludes common NAS snapshot directories from processing. If you want to process them, remove the snapshot exclude masks. * You cannot exclude a whole file share from processing if the storage system, where file shares reside, is added to Veeam Backup & Replication as a NAS filer.   As a workaround, you can edit the storage in Storage Infrastructure and exclude the volumes on the NAS Filer step, as described in the [Adding NetApp Data ONTAP](netapp_nas_access.md), [Adding Lenovo ThinkSystem DM/DG Series](specify_nas_access.md), [Adding Dell PowerScale (formerly Isilon)](dell_powerscale_add_options.md) or [Adding Nutanix Files Storage](nutanix_add_nas.md) sections, depending on the type of the storage system you use.   * You cannot use mask with \* to specify folders to exclude from processing. For example, mask QA04:/NFS04/Documents/201\* will not work. * You cannot mix different exclusion options, for example, you cannot use a mask to exclude files with certain extensions from the specific folder. For example, QA04:/NFS04/Documents/2016/\*.xlsx will not work. |
 
 |  |
 | --- |
