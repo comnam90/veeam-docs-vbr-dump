@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "3/30/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -640,8 +640,8 @@ Cache Repositories
 | Backup server,  File server (Windows or Linux),  Backup proxy | Cache repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup server | Cache repository | TCP | 6160 | Default ports used by Veeam Installer Service. |
 | Backup server | Cache repository (Linux) | TCP | 22 | Default SSH port used as a control channel. |
-| Backup server | Old cache repository | TCP | 6162, 2500 to 3300 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
-| Backup server | New cache repository | TCP | 6162, 2500 to 3300 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Backup server | Old cache repository | TCP | 6162, 2500 to 3300 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo). |
+| Backup server | New cache repository | TCP | 6162, 2500 to 3300 | Default range of ports used for metadata migration during cache repository change. For more information, see [Changing Cache Repository](unstructured_data_backup_in_object_storage.md#change_cache_repo). |
 
 Repositories
 
@@ -696,10 +696,10 @@ Tape Device Support Components
 | Communication for Backup Server | | | | |
 | Tape server | Backup server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Communication for Tape Servers | | | | |
-| Backup server | Tape server | TCP | 445, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
-| TCP | 6160 | Default port used by Veeam Installer Service. |
+| Backup server | Tape server | TCP | 6160 | Default port used by Veeam Installer Service. |
 | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | TCP | 6166 | Controlling port for RPC calls. |
+| Backup server | Tape server (Windows) | TCP | 445, 137, 139 | Ports used for deploying Veeam Backup & Replication components. These ports are not required if the [Veeam Deployment Kit](deployment_kit.md) is installed on the backup infrastructure component.  Note: 137 and 139 are legacy ports. If your backup infrastructure components do not use SMB 1.0, they are not required. |
 | Backup server | Tape server (Linux) | TCP | 22 | Default SSH port used as a control channel. |
 | Communication for Backup Repositories and Gateway Servers | | | | |
 | Tape server | Backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
