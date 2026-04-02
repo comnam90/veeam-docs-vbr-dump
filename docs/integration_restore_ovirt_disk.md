@@ -3,7 +3,7 @@ title: "Restoring Disk from Veeam Agent Backup to oVirt KVM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_ovirt_disk.html"
-last_updated: "3/31/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 

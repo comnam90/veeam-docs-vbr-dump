@@ -3,22 +3,22 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_details.html"
-last_updated: "3/26/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Object Storage Settings
 
 
-At the Bucket step of the wizard, specify the following Amazon S3 bucket settings:
+At the Bucket step of the wizard, do the following:
 
-1. [General Amazon S3 bucket settings](#bucket)
-2. [Immutability settings](#immutability)
-3. [Amazon S3 storage classes](#storageclass)
+1. [Specify general settings for the Amazon S3 bucket](#bucket).
+2. [Specify immutability settings](#immutability).
+3. [Specify the Amazon S3 storage class](#storageclass).
 
-Specifying General Bucket Settings
+Specifying General Settings for Amazon S3 Bucket
 
-To specify the Amazon S3 general bucket settings:
+To specify general settings for the Amazon S3 bucket:
 
 1. From the Data center drop-down list, select the AWS region where the bucket is located.
 2. In the Bucket field, enter a name of the bucket or click Browse to get the necessary bucket.
@@ -43,11 +43,12 @@ If the FIPS-compliant operation mode is enabled and the bucket you want to add i
 
 Specifying Immutability Settings
 
-Immutability prohibits deletion of blocks of data from your object storage repository. To enable immutability:
+Immutability prohibits deletion of blocks of data from your object storage repository.
+
+To enable immutability:
 
 1. Select the Make backups immutable (recommended) check box.
-
-1. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
+2. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
 
 * Select the For the entire duration of their retention policy option if you want the immutability period depend on the retention policy of a backup job.
 
@@ -61,18 +62,18 @@ Immutability prohibits deletion of blocks of data from your object storage repos
 
 ![Step 4. Specify Object Storage Settings](images/s3_add_bucket.webp "Specify S3 Object Storage Bucket")
 
-Specifying Amazon S3 Storage Classes
+Specifying Amazon S3 Storage Class
 
-Amazon S3 storage class defines how your data is stored and managed in the bucket, affecting cost, availability, and access frequency. For more information on storage class, see [AWS Documentation](https://aws.amazon.com/s3/storage-classes/).
+The Amazon S3 storage class defines how your data is stored and managed in the bucket, affecting cost, availability, and access frequency. For more information on storage classes, see [AWS Documentation](https://aws.amazon.com/s3/storage-classes/).
 
 To specify the storage class, do the following:
 
 1. Click the Standard link to the right of the Storage class field.
 2. In the Storage Class Settings window, select one of the following:
 
-* Standard (recommended) — use this option if you plan to access your data frequently.
-* Infrequent Access — use this option if you plan to access your data infrequently and require fast access in case when data is needed.
-* One Zone-Infrequent Access — use this option if you want to isolate your data and store it in a specific location.
+* Standard (recommended): Use this option if you plan to access your data frequently.
+* Infrequent Access: Use this option if you plan to access your data infrequently and require fast access in case when data is needed.
+* One Zone-Infrequent Access: Use this option if you want to isolate your data and store it in a specific location.
 
 |  |
 | --- |
