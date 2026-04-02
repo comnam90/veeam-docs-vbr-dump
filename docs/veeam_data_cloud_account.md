@@ -3,18 +3,21 @@ title: "Step 3. Specify Veeam Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_account.html"
-last_updated: "3/26/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Veeam Account
 
 
-At the Account step of the wizard, specify credentials for the Veeam account, the storage vault that you plan to use and the connection settings that Veeam Backup & Replication will use to transfer data to Veeam Data Cloud Vault:
+At the Account step of the wizard, do the following:
 
-Specifying User Credentials
+1. [Specify storage vault settings](#settings).
+2. [Specify connection mode settings](#connectionmode).
 
-To specify the authorization settings:
+Specifying Storage Vault Settings
+
+To specify the storage vault settings:
 
 1. To authorize using your Veeam credentials, click the Authorize link.
 2. In the Veeam authorization window enter your credentials for the Veeam account. After that, your backup server will be registered in Veeam Data Cloud.
