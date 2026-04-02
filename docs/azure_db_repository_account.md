@@ -3,14 +3,21 @@ title: "Step 3. Specify Object Storage Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_db_repository_account.html"
-last_updated: "7/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/1/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Object Storage Account
 
 
-At the Account step of the wizard, specify the connection settings:
+At the Account step of the wizard, do the following:
+
+1. [Specify general settings](#general).
+2. [Getting Azure Data Box connection parameters](#gdbe).
+
+Specifying General Settings
+
+To specify general settings, do the following:
 
 1. In the Service endpoint field, specify a service endpoint address of your Azure Data Box device.
 2. From the Credentials drop-down list, select user credentials to access your Azure Data Box storage.
