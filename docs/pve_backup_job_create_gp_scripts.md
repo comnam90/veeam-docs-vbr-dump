@@ -3,7 +3,7 @@ title: "Specifying Pre-Freeze and Post-Thaw Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_gp_scripts.html"
-last_updated: "3/31/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
