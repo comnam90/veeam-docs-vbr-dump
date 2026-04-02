@@ -3,18 +3,23 @@ title: "Step 5. Specify Mount Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_mount_server.html"
-last_updated: "3/27/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Step 5. Specify Mount Server Settings
 
 
-At the Mount Server step of the wizard, specify settings for the mount server that you plan to use for restore operations, and configure a helper appliance. The helper appliance is a temporary EC2 instance that Veeam Backup & Replication deploys in your Amazon EC2, to perform a health check of backup files and apply retention to unstructured data backup files. For more information, see [Health Check for Object Storage Repositories](health_check_os.md) and [Helper Appliance in Unstructured Data Backup](unstructured_data_backup_in_object_storage.md#helper). After Veeam Backup & Replication completes these operations, it removes the helper appliance from Amazon EC2.
+At the Mount Server step of the wizard, do the following.
 
-Specifying Mount Server Settings for VMware vSphere Platform
+* [Specify mount server settings](#mount).
+* [Configure a helper appliance](#helper).
 
-To configure the mount server settings:
+Specifying Mount Server Settings
+
+The mount server is a component that Veeam Backup & Replication uses for restore operations. For more information, see [Mount Servers](mount_server.md).
+
+To specify mount server settings, do the following:
 
 1. From the Windows mount server list, select a Microsoft Windows server that you want to use as a mount server. The Windows mount server list contains only Microsoft Windows servers added to the backup infrastructure. If the server is not added to the backup infrastructure yet, click Add New on the right to open the New Windows Server wizard. For more information, see [Adding Microsoft Windows Servers](add_windows_server.md).
 2. From the Linux mount server list, select a Linux server that you want to use as a mount server. The Linux mount server list contains only RHEL/Rocky-based Linux servers added to the backup infrastructure and Veeam Software Appliance. If the server is not added to the backup infrastructure yet, click Add New on the right to open the New Linux Server wizard. For more information, see [Adding Linux Servers](add_linux_server.md).
@@ -40,7 +45,12 @@ For information on ports used by default, see [Ports](used_ports.md).
 
 Configuring Helper Appliance
 
-To configure the helper appliance, at the Mount Server step, click Configure and in the Helper Appliance Settings window, specify the following settings:
+A helper appliance is a temporary EC2 instance that Veeam Backup & Replication deploys in your Amazon EC2 to perform a health check of backup files and apply retention to unstructured data backup files. For more information, see [Health Check for Object Storage Repositories](health_check_os.md) and [Helper Appliance in Unstructured Data Backup](unstructured_data_backup_in_object_storage.md#helper). After Veeam Backup & Replication completes these operations, it removes the helper appliance from Amazon EC2.
+
+To configure the helper appliance, do the following
+
+1. Click Configure.
+2. In the Helper Appliance Settings window, specify the following settings:
 
 1. From the EC2 instance type drop-down list, select the EC2 instance type for the helper appliance. The speed and cost of operations that the helper appliance performs depend on the EC2 instance type. For information on EC2 instance types, see [AWS Documentation](https://aws.amazon.com/ec2/instance-types/). For details on the EC2 instant types used by Veeam Backup & Replication, see [this Veeam KB article](https://www.veeam.com/kb4317).
 2. From the Amazon VPC drop-down list, select the Amazon VPC where Veeam Backup & Replication will launch the EC2 instance. For information on the Amazon VPC, see [AWS Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
@@ -61,8 +71,7 @@ To be able to select the necessary security group from the drop-down list, you m
 | If you select the Create new option, Veeam Backup & Replication will create a new security group with the inbound rules that allow connection using the 443 and 22 ports from everywhere (0.0.0.0/0). |
 
 1. In the Redirector port field, specify the TCP port that Veeam Backup & Replication will use to route requests between the helper appliance and backup infrastructure components.
-
-1. Click OK.
+2. Click OK.
 
 ![Step 5. Specify Mount Server Settings](images/s3_add_helper_appliance.webp "Specify S3 Object Storage Mount Server")
 
