@@ -3,7 +3,7 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "3/23/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -52,8 +52,6 @@ The Restore to option is not available for restoring from backups created by Vee
 Source for Data Recovery
 
 * You can recover guest OS files from disks that use either the GPT or MBR partitioning scheme. Recovery from disks without a partitioning scheme is not supported.
-
-* You cannot recover pipes and other file system objects. Guest OS file restore supports recovery of files and folders only.
 
 * You cannot recover guest OS files encrypted with Windows EFS.
 * You cannot recover and browse guest OS files on disks encrypted by BitLocker.
