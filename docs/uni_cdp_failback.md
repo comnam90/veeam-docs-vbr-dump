@@ -3,8 +3,8 @@ title: "Failback"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failback.html"
-last_updated: "10/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Failback
@@ -14,8 +14,8 @@ Failback is one of the ways to finalize failover. When you perform failback, you
 
 Veeam Backup & Replication performs failback in two phases:
 
-* First phase: Veeam Backup & Replication recovers the production VM from the replica. Veeam Backup & Replication synchronizes the state of the production VM with the current state of its replica. This phase may take long time especially if VM is large. While Veeam Backup & Replication performs the first phase of failback, replicas are still up and running, users can access these VMs and perform daily routine tasks as normal.
-* Second phase: Veeam Backup & Replication switches all processes from the replica to the production VM (recovered VM from the replica), turns off the replica and also sends to the production VM changes made to the replica since the end of the first phase.
+* First phase: Veeam Backup & Replication recovers the production VM from the replica. Veeam Backup & Replication synchronizes the state of the production VM with the current state of its replica. This phase may take a long time especially if the VM is large. While Veeam Backup & Replication performs the first phase of failback, replicas are still up and running, users can access these VMs and perform daily routine tasks as normal.
+* Second phase: Veeam Backup & Replication switches all processes from the replica to the production VM (recovered VM from the replica), turns off the replica and also sends to the production VM the changes made to the replica since the end of the first phase.
 
 The time when the second phase starts depends on how you want to [switch from the replica to the production VM](uni_cdp_failback_schedule.md). You can switch to the production VM automatically, at the scheduled time or manually. If you select to switch automatically, the second phase will start right after the first phase finishes. If you select to switch at the scheduled time or manually, the second phase will start at the time you want.
 
@@ -30,7 +30,7 @@ When you fail back to the production VM (VM recovered from a replica), Veeam Bac
 
 1. Veeam Backup & Replication requests vCenter Server to create on the target host an empty VM with the same configuration as the replica. vCenter Server registers the created production VM.
 2. Veeam Backup & Replication transfers data of the replica to the production VM to update the production VM state to the replica state.
-3. Veeam Backup & Replication changes the state of the replica from Failover to the Ready to switch.
+3. Veeam Backup & Replication changes the state of the replica from Failover to Ready to switch.
 
 During the second phase, Veeam Backup & Replication performs the following operations:
 

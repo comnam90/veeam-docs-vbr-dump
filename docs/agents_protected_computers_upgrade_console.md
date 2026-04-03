@@ -1,13 +1,13 @@
 ---
-title: "Upgrading from Veeam Backup & Replication Console"
+title: "Upgrading Veeam Agent from Veeam Backup & Replication Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_upgrade_console.html"
-last_updated: "11/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Upgrading from Veeam Backup & Replication Console
+# Upgrading Veeam Agent from Veeam Backup & Replication Console
 
 
 In the Veeam Backup & Replication console, you can upgrade Veeam Agent on the computers that are added to a protection group of one of the following types:

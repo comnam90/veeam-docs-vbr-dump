@@ -3,8 +3,8 @@ title: "Licensing"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/managing_licenses.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Licensing
@@ -18,6 +18,7 @@ When you run a job, Enterprise Manager uses instances required for each type of 
 
 Consider the following:
 
+* You cannot install a license intended for version 13 on a backup server running Veeam Backup & Replication 12.
 * Enterprise Manager on Linux is supported only with the Enterprise Plus edition license.
 * Socket licenses are supported for Enterprise Manager on Windows only.
 * You cannot use the same Enterprise Manager server to manage backup servers that require different licenses, for example, a backup server of a Veeam Cloud Connect service provider and a regular backup server used to process Veeam Backup & Replication jobs. For example, you add to Enterprise Manager a backup server with the Veeam Cloud Connect service provider license installed. Enterprise Manager will obtain information about the license and save it to its database. If you then add another backup server with a different type of license installed, Enterprise Manager will install the Veeam Cloud Connect service provider license on this backup server. As a result, you will be able to use the second backup server to configure the Veeam Cloud Connect infrastructure, and will not be able to use this server to run backup and replication jobs.

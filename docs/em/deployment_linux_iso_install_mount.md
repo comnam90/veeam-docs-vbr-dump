@@ -3,7 +3,7 @@ title: "Step 1. Mount ISO File"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_install_mount.html"
-last_updated: "3/27/2026"
+last_updated: "4/2/2026"
 product_version: "13.0.1.2067"
 ---
 

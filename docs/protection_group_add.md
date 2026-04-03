@@ -3,8 +3,8 @@ title: "Creating Protection Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_add.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Protection Groups
@@ -42,7 +42,7 @@ The Computers with pre-installed backup agents option is the only applicable opt
 | IMPORTANT |
 | Make sure that the setup and configuration files are stored in a secure location. If a third party gains access to these files, they can use any host to connect to the protection group, obtain the configuration options, create backups and perform other actions. |
 
-To learn more about Veeam Agents deployment, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md).
+To learn more about Veeam Agents deployment, see [Deploy Veeam Agents](pg_pre_installed_next.md).
 
 * [Cloud machines](protection_group_cloud_machines.md) — create a protection group for these objects if you want to add to the protection group one or several Amazon EC2 instances or Microsoft Azure virtual machines (both objects can be also referred to as cloud machines). Using this protection group, Veeam Backup & Replication will discover such cloud machines and deploy Veeam Agent for Microsoft Windows or Veeam Agent for Linux on them without connection over network. After that, you will be able to create transactionally consistent backups of cloud machines included in the protection group.
 
