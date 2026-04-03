@@ -3,16 +3,16 @@ title: "Step 8. Schedule Switch to Production VMs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failback_schedule.html"
-last_updated: "10/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 8. Schedule Switch to Production VMs
 
 
-At the Failback Mode step of the wizard, specify when switch from replicas to the VMs in the production site must be performed:
+At the Failback Mode step of the wizard, specify when the switch from replicas to the VMs in the production site must be performed:
 
-* Select Auto if you want Veeam Backup & Replication to perform the switch automatically right after the state of the production VM is synchronized with the state of their replicas.
+* Select Auto if you want Veeam Backup & Replication to perform the switch automatically right after the state of the production VM is synchronized with the state of its replica.
 * Select Scheduled if you want Veeam Backup & Replication to perform the switch at a specific time.
 * Select Manual if you want to perform the switch manually.
 
