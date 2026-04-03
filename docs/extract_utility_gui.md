@@ -3,8 +3,8 @@ title: "Using Extract Utility in GUI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extract_utility_gui.html"
-last_updated: "2/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Using Extract Utility in GUI
@@ -22,7 +22,7 @@ To restore machine data in the extract utility GUI:
 |  |
 | --- |
 | Important |
-| If you restore machine data in the extract utility GUI, consider the following:   * The extract utility can be started on Microsoft Windows machines only. * If you plan to start the extract utility on the machine other than the backup server, make sure that you copy the Veeam.Backup.Extractor.exe file together with the extract.exe file from the product installation folder and store these files to the same folder on the destination machine. In the opposite case, the extract utility will fail to start. |
+| If you restore machine data in the extract utility GUI, consider the following:   * The extract utility can be started on Microsoft Windows machines only. * If you plan to start the extract utility on the machine other than the backup server, download the extract utility from [Veeam website](https://www.veeam.com/backup-replication-vcp-download.html?tab=extensions). It requires a registered Veeam account. |
 
 ![Using Extract Utility in GUI](images/extract_utility_gui.webp)
 
