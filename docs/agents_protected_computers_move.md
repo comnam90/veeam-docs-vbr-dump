@@ -3,8 +3,8 @@ title: "Moving Computer to Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_move.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Moving Computer to Protection Group
@@ -21,10 +21,10 @@ In Veeam Backup & Replication, you can move Veeam Agent computers between protec
 
 * You can also move an unmanaged Veeam Agent computer to a protection group for pre-installed Veeam Agents. You must do it from the Veeam Agent side. This operation is similar to the initial Veeam Agent configuration. To learn more, see one of the following sections depending on the OS of the Veeam Agent computer that you plan to move:
 
-* [Veeam Agent for Microsoft Windows Configuration](deploy_agent_windows.md#configure)
-* [Veeam Agent for Linux Configuration](deploy_agent_linux.md#configure)
-* [Veeam Agent for Unix Configuration](deploy_agent_unix.md#configure)
-* [Veeam Agent for Mac Configuration](deploy_agent_mac.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Microsoft Windows](deploy_agent_windows.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Linux](deploy_agent_linux.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Unix](deploy_agent_unix.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Mac](deploy_agent_mac.md#configure)
 
 You can move a computer to a new protection group or protection group that you have already created.
 
