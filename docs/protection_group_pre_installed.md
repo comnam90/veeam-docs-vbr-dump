@@ -1,13 +1,13 @@
 ---
-title: "Creating Protection Group for Computers with Pre-installed Backup Agents"
+title: "Creating Protection Group for Computers with Pre-Installed Backup Agents"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_pre_installed.html"
-last_updated: "2/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Creating Protection Group for Computers with Pre-installed Backup Agents
+# Creating Protection Group for Computers with Pre-Installed Backup Agents
 
 
 Before you create a protection group for computers with pre-installed Veeam Agents, [check prerequisites](pg_pre_installed_before.md).
@@ -15,7 +15,7 @@ Before you create a protection group for computers with pre-installed Veeam Agen
 |  |
 | --- |
 | IMPORTANT |
-| After you create a protection group for computers with pre-installed Veeam Agents, you must manually deploy Veeam Agent on the protected computers. For more information about installing and configuring Veeam Agents, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md). |
+| After you create a protection group for computers with pre-installed Veeam Agents, you must manually deploy Veeam Agent on the protected computers. For more information about installing and configuring Veeam Agents, see [Deploy Veeam Agents](pg_pre_installed_next.md). |
 
 To create a protection group for computers with pre-installed Veeam Agents, do the following:
 
