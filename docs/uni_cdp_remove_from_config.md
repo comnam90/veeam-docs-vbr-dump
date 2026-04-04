@@ -3,8 +3,8 @@ title: "Removing Replicas from Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_remove_from_config.html"
-last_updated: "9/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Removing Replicas from Configuration
@@ -21,7 +21,7 @@ To remove records about replicas from the Veeam Backup & Replication console and
 |  |
 | --- |
 | Note |
-| Consider the following:   * You can remove records only about replicas in the Ready state. * When you remove from the configuration a workload that is replicated as a standalone object, Veeam Backup & Replication removes this workload from the initial replication job. When you remove from the configuration a workload that is replicated as part of a protection group Veeam Backup & Replication adds this workload to the [list of exclusions](cdp_policy_exclude.md) in the CDP policy. |
+| Consider the following:   * You can remove records only about replicas in the Ready state. * When you remove from the configuration a workload that is replicated as a standalone object, Veeam Backup & Replication removes this workload from the initial replication job. When you remove from the configuration a workload that is replicated as part of a protection group, Veeam Backup & Replication adds this workload to the [list of exclusions](cdp_policy_exclude.md) in the CDP policy. |
 
 [![Remove replicas from configuration](images/replica_remove_from_config.webp)](images/replica_remove_from_config.webp "Remove replicas from configuration")
 
