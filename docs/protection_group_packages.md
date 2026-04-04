@@ -3,14 +3,14 @@ title: "Step 3. Specify Packages"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_packages.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Packages
 
 
-At the Package step of the wizard, specify what setup files you want to obtain to deploy Veeam Agents. Veeam Backup & Replication will export the specified setup files to the specified folder. Then, you must use these setup files to deploy Veeam Agents on computers you plan to protect. To learn more, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md).
+At the Package step of the wizard, specify what setup files you want to obtain to deploy Veeam Agents. Veeam Backup & Replication will export the specified setup files to the specified folder. Then, you must use these setup files to deploy Veeam Agents on computers you plan to protect. To learn more, see [Deploy Veeam Agents](pg_pre_installed_next.md).
 
 To specify setup files to export:
 
