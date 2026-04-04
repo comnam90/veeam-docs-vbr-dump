@@ -3,16 +3,14 @@ title: "Step 5. Specify Mount Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_mount_server_web.html"
-last_updated: "9/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 5. Specify Mount Server Settings
 
 
 At the Mount Server step of the wizard, specify settings for the mount server that you plan to use for restore operations.
-
-Specifying Mount Server Settings for VMware vSphere Platform
 
 To configure the mount server settings:
 
