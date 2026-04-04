@@ -3,8 +3,8 @@ title: "Protected Computers Discovery and Veeam Agent Deployment"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_discovery_and_deployment.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Protected Computers Discovery and Veeam Agent Deployment
@@ -41,7 +41,7 @@ To learn how to check information about the currently used certificate, see [Con
 | IMPORTANT |
 | Veeam Backup & Replication generates the same TLS certificate for the first communication between Veeam Backup & Replication and all computers you want to include in protection groups for pre-installed Veeam Agents. So, it is strongly recommended that you securely store and share Veeam Agent setup files. Otherwise, any computer that has this certificate can connect to the Veeam backup server. |
 
-1. Using external tools, transfer Veeam Agent setup files to the computer you want to protect. Then, deploy Veeam Agent and connect it to Veeam backup server with an XML configuration file. To learn more, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md).
+1. Using external tools, transfer Veeam Agent setup files to the computer you want to protect. Then, deploy Veeam Agent and connect it to Veeam backup server with an XML configuration file. To learn more, see [Deploy Veeam Agents](pg_pre_installed_next.md).
 
 Once you connect Veeam Agent to the Veeam backup server, Veeam Backup & Replication discoveries the computer and replaces the TLS certificate for all Veeam Agent computers with another TLS certificate that is unique for each computer. After that, you can find the connected computer in the Veeam Backup & Replication console displayed as a member of the protection group.
 

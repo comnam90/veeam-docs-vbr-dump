@@ -3,8 +3,8 @@ title: "NAS File Share Backup from Storage Snapshots"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nas_backup_from_storage_snapshots.html"
-last_updated: "10/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # NAS File Share Backup from Storage Snapshots
@@ -48,7 +48,7 @@ How File Share Backup Works with File Change Tracking
 When the usage of NAS manufacturer change tracking technology is enabled, Veeam Backup & Replication performs file share backup to the backup storage in the following way:
 
 1. When a new backup job session starts, Veeam Backup & Replication triggers a storage snapshot.
-2. [For all job sessions after the first one] Veeam Backup & Replication requests the storage system to return the difference between current and previous snapshots.
+2. [For all job sessions after the first one] Veeam Backup & Replication requests the storage system to return the difference between the current and previous snapshots.
 3. Veeam Backup & Replication assigns a file proxy to process the file share data.
 4. The file proxy enumerates files and folders on the file share and creates a cyclic redundancy check (CRC) tree.
 5. The file proxy transfers the CRC tree to the cache repository.

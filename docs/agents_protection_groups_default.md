@@ -3,8 +3,8 @@ title: "Predefined Protection Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_groups_default.html"
-last_updated: "12/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Predefined Protection Groups
@@ -49,9 +49,9 @@ The Out of Date protection group is displayed when Veeam Backup & Replication di
 |  |
 | --- |
 | NOTE |
-| Only computers with supported for upgrade Veeam Agents are displayed in this group. To learn more, see [Upgrading Veeam Agent](agents_protected_computers_upgrade.md). |
+| Only computers with supported for upgrade Veeam Agents are displayed in this group. To learn more, see [Upgrading Veeam Agent from Veeam Backup & Replication Console](agents_protected_computers_upgrade_console.md). |
 
-The Out of Date protection group lets you update Veeam Agent on multiple computers at once. To learn more, see [Upgrading Veeam Agent on Multiple Computers](agents_protected_computers_upgrade.md#upgrade).
+The Out of Date protection group lets you update Veeam Agent on multiple computers at once. To learn more, see [Upgrading Veeam Agent on Multiple Computers](agents_protected_computers_upgrade_console.md#auto).
 
 Offline
 

@@ -3,8 +3,8 @@ title: "Backup Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_server.html"
-last_updated: "2/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Server
@@ -24,7 +24,7 @@ In addition to its primary functions, a newly deployed backup server also perfor
 |  |
 | --- |
 | Important |
-| The backup server cannot be added as a managed server to another Veeam Backup & Replication server. This type of deployment is unsupported and may cause issues in Veeam services coordination. |
+| The backup server cannot be added as a managed server to another backup server. This type of deployment is unsupported and may cause issues in Veeam services coordination. |
 
 Related Topics
 

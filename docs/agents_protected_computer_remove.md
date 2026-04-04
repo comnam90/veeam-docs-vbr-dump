@@ -3,8 +3,8 @@ title: "Removing Computer from Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computer_remove.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Removing Computer from Protection Group
@@ -31,7 +31,7 @@ Backups created for computers that were removed from a protection group remain i
 
 |  |
 | --- |
-| ![Removing Computer from Protection Group](images/icon_note.webp) NOTE |
+| NOTE |
 | You cannot remove a computer from the protection group if this computer is a failover cluster node. |
 
 [![Remove from configuration](images/protected_computer_remove_from_group.webp)](images/protected_computer_remove_from_group.webp "Remove from configuration")
@@ -67,7 +67,7 @@ To remove a computer from the Manually Added protection group, you must edit thi
 
 |  |
 | --- |
-| ![Removing Computer from Protection Group](images/icon_note.webp) NOTE |
+| NOTE |
 | You cannot remove a computer from the Manually Added protection group if this computer is added to a Veeam Agent backup job. |
 
 

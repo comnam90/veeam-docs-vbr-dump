@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_before_mac.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -28,7 +28,7 @@ Consider the following about Veeam Agent backup policies:
 
 * Veeam Backup & Replication does not immediately apply backup policy to computers included in protection groups for pre-installed Veeam Agents. Veeam Agents installed on computers that are included in these groups connect to Veeam Backup & Replication every 6 hours and get updated backup policy settings. If you targeted a backup policy at the Veeam backup server and scheduled it earlier than the next connection to Veeam Backup & Replication, this backup policy will be updated on the Veeam Agent computer at the next start of the backup session. To learn more about protection groups for pre-installed Veeam Agents, see [Protection Group Types](agents_protection_groups_types.md).
 
-Keep in mind, that you can immediately update settings of the backup policy from the Veeam Agent computer. To learn more, see [Deploying Veeam Agent for Mac](deploy_agent_mac.md).
+Keep in mind, that you can immediately update settings of the backup policy from the Veeam Agent computer. To learn more, see [Applying Protection Group Configuration to Veeam Agent for Mac](deploy_agent_mac.md#configure).
 
 * Veeam Agent backup policy may fail unexpectedly due to restrictions applied on the Veeam Agent computer side. For more information, see [Backup Job Restrictions](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_job_restrictions.html) in the Veeam Agent for Mac User Guide.
 

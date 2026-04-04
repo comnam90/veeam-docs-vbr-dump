@@ -3,7 +3,7 @@ title: "Configuring Updates"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/update_appliance_configure_updates.html"
-last_updated: "3/27/2026"
+last_updated: "4/2/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -28,6 +28,12 @@ The date of the first found update is used as the start date for calculating com
 | Consider the following:   * If you select manual installation in the maintenance window, mandatory updates will be still automatically installed when the compliance deadline is reached. * If you schedule automatic update installation or miss the compliance deadline, updates will be installed even if you have running jobs. Recovery operations performed by these jobs will fail. |
 
 * Software repository. By default, updates are installed from the Veeam official repository (https://repository.veeam.com/vsa). If your backup server does not have internet access, you can specify a local mirror of the Veeam repository, for example, https://repository.tech.local. For the HTTPS repository, you also need to specify a certificate.
+
+|  |
+| --- |
+| Important |
+| If you use a local mirror repository, the file structure of your mirror repository must be identical to the Veeam official repository, excluding the primary URL.   * https://repository.tech.local/<veeamosreleaseversion>/vbr/<veeamproductversion>/mandatory/ * https://repository.tech.local/<veeamosreleaseversion>/vbr/<veeamproductversion>/optional/ * https://repository.tech.local/<veeamosreleaseversion>/external-mandatory/ |
+
 * Internet proxy. Add a proxy server if you use one.
 
 1. Click Save.

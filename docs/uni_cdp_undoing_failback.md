@@ -3,20 +3,20 @@ title: "Undoing Failback"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_undoing_failback.html"
-last_updated: "9/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Undoing Failback
 
 
-For more information on failback undo, see [Failover and Failback for CDP](uni_cdp_failover_failback.md) and [Failback Undo](uni_cdp_failback_undo.md).
+For more information on failback undo, see [Failover and Failback for Universal CDP](uni_cdp_failover_failback.md) and [Failback Undo](uni_cdp_failback_undo.md).
 
 To undo failback:
 
 1. Open the Home view.
 2. In the [inventory pane](vbr_ui.md), navigate to the Replicas > Active node.
-3. In the working area, select the necessary replica and click Undo Failback on the ribbon. Alternatively, you can right-click the necessary replica and select Undo Failback.
+3. In the working area, select the necessary replica and click Undo Failback on the ribbon. Alternatively, you can right-click the necessary replica and select Undo failback.
 
 [![Undo failback](images/cdp_failback_undo.webp)](images/cdp_failback_undo.webp "Undo failback")
 

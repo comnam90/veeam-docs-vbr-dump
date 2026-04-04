@@ -3,8 +3,8 @@ title: "Step 9. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failback_summary.html"
-last_updated: "10/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 9. Finish Working with Wizard
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 At the Summary step of the wizard, review the configured failback settings and click Finish.
 
-If you want to power on the production VMs right after the switch to production operation is performed, select the Power on target VM after restoring check box.
+If you want to power on the production VMs right after the switch to production operation is performed, select the Power on target machine after restoring check box.
 
 ![Step 9. Finish Working with Wizard](images/uni_cdp_failback_summary.webp "Finish working with wizard")
 
