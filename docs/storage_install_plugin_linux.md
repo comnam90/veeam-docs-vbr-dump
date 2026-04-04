@@ -3,8 +3,8 @@ title: "Installing and Updating Plug-Ins on Linux-Based Backup Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_install_plugin_linux.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Installing and Updating Plug-Ins on Linux-Based Backup Server
@@ -20,7 +20,7 @@ To install a plug-in, do the following:
 
 1. Download a bundle of the required Universal Storage API integrated system plug-in from the [Veeam Download page](https://www.veeam.com/backup-replication-vcp-download.html).
 
-Download the bundle to the computer from which you will access the Web UI. Choose the plug-in available for Veeam backup server installed on Linux.
+Download the bundle to the computer from which you will access the Web UI. Choose the plug-in available for a backup server deployed from [Veeam Software Appliance ISO](deployment_options.md).
 
 1. Open the Veeam Host Management console as described in [Accessing Veeam Host Management Console](hmc_access.md).
 2. In the management pane, click Logs and Services.
