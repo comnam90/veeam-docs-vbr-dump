@@ -3,8 +3,8 @@ title: "Upgrade and Update"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_updating.html"
-last_updated: "11/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Upgrade and Update
