@@ -3,8 +3,8 @@ title: "Step 2. Specify Failover Plan Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_creating_failover_plans_name.html"
-last_updated: "10/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Specify Failover Plan Name and Description
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 At the General step of the wizard, specify a name and description for the failover plan.
 
-If you want to execute custom scripts before or after the failover plan, select the Pre-failover script and Post-failover script check boxes and click Browse to choose executable files. For example, you may want stop some applications on production workloads before the failover plan starts or send an email to backup administrators after the failover plan finishes.
+If you want to execute custom scripts before or after the failover plan, select the Pre-failover script and Post-failover script check boxes and click Browse to choose executable files. For example, you may want to stop some applications on production workloads before the failover plan starts or send an email to backup administrators after the failover plan finishes.
 
 The scripts will be executed on the backup server. Veeam Backup & Replication supports the script files in the following formats: BAT, CMD, EXE and PS1.
 
