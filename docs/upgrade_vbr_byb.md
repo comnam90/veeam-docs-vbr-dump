@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "3/17/2026"
+last_updated: "3/30/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -98,7 +98,7 @@ Integration with Veeam Agents, Veeam Plug-Ins for Enterprise Applications and Mo
 * If you use Veeam Agent for Mac below 2.3.1, it will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agent for Mac to 13. If you use Veeam Agent for Mac 2.3.1 or later, it will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agent for Mac to 13 later if the support of new features is not critical for you.
 * If you use Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris below 4.6.1, it will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris to 13. If you use Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris 4.6.1 or later, it will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris to 13 later if the support of new features is not critical for you.
 
-For details about Veeam Agent upgrade, see [Upgrading Veeam Agent](agents_protected_computers_upgrade.md).
+For details about Veeam Agent upgrade, see [Upgrading Veeam Agent from Veeam Backup & Replication Console](agents_protected_computers_upgrade_console.md).
 
 1. Are you using Veeam Plug-Ins for Enterprise Applications (Veeam Plug-In for Oracle RMAN, Veeam Plug-In for SAP HANA, Veeam Plug-In for SAP on Oracle, Veeam Plug-In for Microsoft SQL Server or Veeam Plug-In for IBM Db2)?
 
