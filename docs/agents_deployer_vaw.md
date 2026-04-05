@@ -1,13 +1,13 @@
 ---
-title: "Deploying Veeam Agent for Microsoft Windows"
+title: "Deploying Veeam Agent for Microsoft Windows Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_deployer_vaw.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/18/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Deploying Veeam Agent for Microsoft Windows
+# Deploying Veeam Agent for Microsoft Windows Using Veeam Deployment Kit
 
 
 To deploy Veeam Agent for Microsoft Windows using Veeam Deployment Kit, perform the following steps:
