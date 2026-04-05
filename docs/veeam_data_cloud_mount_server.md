@@ -3,7 +3,7 @@ title: "Step 5. Specify Mount Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_mount_server.html"
-last_updated: "3/2/2026"
+last_updated: "3/30/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -12,13 +12,17 @@ product_version: "13.0.1.2067"
 
 At the Mount Server step of the wizard, specify settings for the mount server that you plan to use for restore operations.
 
-Specifying Mount Server Settings for VMware vSphere Platform
+To specify the mount server settings, do the following:
 
-To configure the mount server settings:
+1. From the Windows mount server drop-down list, select a server that you want to use as a Windows-based mount server. Veeam Backup & Replication uses this server during restore operations to mount VM disks directly from objects located in object storage repositories. For more information, see [Mount Servers](mount_server.md).
 
-1. From the Windows mount server list, select a Microsoft Windows server that you want to use as a mount server. The Windows mount server list contains only Microsoft Windows servers added to the backup infrastructure. If the server is not added to the backup infrastructure yet, click Add New on the right to open the New Windows Server wizard. For more information, see [Adding Microsoft Windows Servers](add_windows_server.md).
-2. From the Linux mount server list, select a Linux server that you want to use as a mount server. The Linux mount server list contains only RHEL/Rocky-based Linux servers added to the backup infrastructure and Veeam Software Appliance. If the server is not added to the backup infrastructure yet, click Add New on the right to open the New Linux Server wizard. For more information, see [Adding Linux Servers](add_linux_server.md).
-3. Click Configure settings to configure other settings for the selected mount servers:
+The Windows mount server list contains only Microsoft Windows servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, click Add New on the right to open the New Windows Server wizard. For more information, see [Adding Microsoft Windows Servers](add_windows_server.md).
+
+1. From the Linux mount server drop-down list, select a server that you want to use as a Linux-based mount server. Veeam Backup & Replication uses this server during restore operations to mount VM disks directly from objects located in object storage repositories. For more information, see [Mount Servers](mount_server.md).
+
+The Linux mount server list contains only RHEL/Rocky-based Linux servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, click Add New on the right to open the New Linux Server wizard. For more information, see [Adding Linux Servers](add_linux_server.md).
+
+1. Click Configure settings to configure other settings for the selected mount servers:
 
 1. Select the Enable vPower NFS service on the mount server check box to allow the Veeam vPower NFS Service access the object storage repository. Veeam Backup & Replication will enable the Veeam vPower NFS Service on the necessary mount server. For more information, see [Veeam vPower NFS Service](vpower_nfs_service.md).
 
@@ -35,6 +39,8 @@ To configure the mount server settings:
 For information on ports used by default, see [Ports](used_ports.md).
 
 1. In the Instant recovery write cache folder field, specify a folder to keep cache that is created during mount operations.
+
+1. To specify the helper appliance settings, click Configure. From the Managed server drop-down list, select a server that you want to use as the helper appliance.
 
 ![Step 5. Specify Mount Server Settings](images/veeam_vault_mount_server.webp)
 
