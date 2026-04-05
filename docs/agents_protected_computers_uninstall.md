@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_uninstall.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Uninstalling Veeam Agent
@@ -29,7 +29,7 @@ To uninstall Veeam Agent:
 |  |
 | --- |
 | NOTE |
-| Consider the following:   * If automatic installation of Veeam Agent is enabled in the protection group settings, after you remove Veeam Agent from a selected computer, Veeam Backup & Replication will install Veeam Agent on this computer during the next rescan job session started by schedule. * Prerequisite components installed and used by Veeam Agent are not removed during the uninstall process. You can remove the remaining components from the side of the computer from which you uninstalled Veeam Agent.  * If you uninstall Veeam Agent for Microsoft Windows added to the protection group for pre-installed Veeam Agents and then re-install on the same computer, Veeam Agent will not connect to Veeam backup server automatically. To connect Veeam Agent, you must repeat the configuration step of the Veeam Agent deployment scenario. To learn more, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md). |
+| Consider the following:   * If automatic installation of Veeam Agent is enabled in the protection group settings, after you remove Veeam Agent from a selected computer, Veeam Backup & Replication will install Veeam Agent on this computer during the next rescan job session started by schedule. * Prerequisite components installed and used by Veeam Agent are not removed during the uninstall process. You can remove the remaining components from the side of the computer from which you uninstalled Veeam Agent.  * If you uninstall Veeam Agent for Microsoft Windows added to the protection group for pre-installed Veeam Agents and then re-install on the same computer, Veeam Agent will not connect to Veeam backup server automatically. To connect Veeam Agent, you must repeat the configuration step of the Veeam Agent deployment scenario. To learn more, see [Deploy Veeam Agents](pg_pre_installed_next.md). |
 
 [![Uninstall Veeam Agent](images/protected_computer_remove.webp)](images/protected_computer_remove.webp "Uninstall Veeam Agent")
 
