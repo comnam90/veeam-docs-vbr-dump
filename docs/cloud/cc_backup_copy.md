@@ -3,7 +3,7 @@ title: "Backup Copy to Cloud Repository"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_backup_copy.html"
-last_updated: "3/12/2026"
+last_updated: "4/1/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -36,16 +36,14 @@ Veeam Backup & Replication supports backup copy to the cloud repository for the 
 * Backups of IBM AIX machines created by Veeam Agent for IBM AIX
 * Backups of Oracle Solaris machines (based on the x86 or SPARC architecture) created by Veeam Agent for Oracle Solaris
 
+* Backups of HPE Morpheus VM Essentials VMs created by Veeam Backup & Replication
 * Backups of Proxmox VE VMs created by [Veeam Backup for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Nutanix AHV virtual machines created by [Veeam Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
+* Backups of Nutanix AHV VMs created by [Veeam Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
 * Backups of Amazon EC2 instances created by [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/welcome.html?ver=10)
-* Backups of Microsoft Azure virtual machines created by [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)
+* Backups of Microsoft Azure VMs created by [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)
 
 * Backups of Google Compute Engine VM instances created by [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)
-* Backups of oVirt KVM virtual machines created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)
-
-* Backups of HPE Morpheus VM Essentials virtual machines created by Veeam Backup & Replication
-
+* Backups of oVirt KVM VMs created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)
 * Backups created by backup copy jobs configured in Veeam Backup & Replication (For details, see [Support for Backup Copy from Backup Copy](#backup_copy_jobs).)
 
 Support for Backup Copy from Backup Copy
@@ -64,8 +62,8 @@ Veeam Backup & Replication allows you to create a backup copy from another backu
 * Backups created by Veeam Agents
 
 * Backups of Proxmox VE VMs created by [Veeam Backup for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Nutanix AHV virtual machines created by [Veeam Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
-* Backups of oVirt KVM virtual machines created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)
+* Backups of Nutanix AHV VMs created by [Veeam Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
+* Backups of oVirt KVM VMs created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)
 
 Related Tasks
 
