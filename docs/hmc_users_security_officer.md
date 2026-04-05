@@ -3,7 +3,7 @@ title: "Performing Initial Security Officer Login"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_users_security_officer.html"
-last_updated: "3/31/2026"
+last_updated: "4/2/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -37,6 +37,15 @@ When you first log in to the Veeam Host Management as a Security Officer, perfor
 [![Performing Initial Security Officer Login](images/hmc_so_intial_setup_recovery_token.webp)](images/hmc_so_intial_setup_recovery_token.webp)
 
 1. Specify a passphrase and a hint to additionally protect sensitive data stored in encrypted configuration backups. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md) and [Restoring Configuration Database on Linux-Based Backup Server](vbr_config_restore_linux.md).
+
+The passphrase must meet the following requirements:
+
+* 15 characters minimum.
+* 1 upper case character.
+* 1 lower case character.
+* 1 numeric character.
+* 1 special character.
+* No more than 3 characters of the same class in a row. For example, more than 3 lowercase or 3 numerical characters in sequence.
 
 You can change the passphrase later if required. For more information, see [Managing Configuration Backup Passphrases](hmc_perform_so_tasks.md#manage_bco_passphrase).
 
