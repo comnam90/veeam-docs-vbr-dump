@@ -3,8 +3,8 @@ title: "Managing Protected Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_manage.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managing Protected Computers
@@ -24,12 +24,12 @@ You can perform the following operations with computers added to the inventory i
 
 * [Rescan a protected computer](agents_protected_computers_rescan.md).
 
-* Manage Veeam Agent installed on a protected computer:
+* Manage Veeam Agent installed on a protected computer that belongs to a protection group for individual computers:
 
 * [Create Veeam Recovery Media for a protected computer](recovery_media_create.md).
 
 * [Install Veeam Agent on a protected computer](agents_protected_computers_install.md).
-* [Upgrade Veeam Agent on a protected computer](agents_protected_computers_upgrade.md).
+* [Upgrade Veeam Agent from Veeam Backup & Replication Console](agents_protected_computers_upgrade_console.md)
 * [Install Veeam CBT driver on a protected computer](agents_protected_computers_driver.md).
 * [Reboot a protected computer](agents_protected_computers_reboot.md).
 * [Uninstall Veeam Agent on a protected computer](agents_protected_computers_uninstall.md).
