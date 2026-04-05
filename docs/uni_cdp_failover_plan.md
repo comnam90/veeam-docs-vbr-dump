@@ -3,14 +3,14 @@ title: "Failover Plans"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_plan.html"
-last_updated: "10/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Failover Plans
 
 
-A failover plan helps you perform failover for dependent workloads one by one, as a group. To do this automatically, you can prepare a failover plan.
+A failover plan helps you perform failover for dependent workloads sequentally, as a group. To do this automatically, you can prepare a failover plan.
 
 In the failover plan, you define the order in which workloads must be processed and an interval of time for which Veeam Backup & Replication must wait before starting the failover operation for the next workload in the list. The failover plan helps ensure that some workloads, such as a DNS server, are already running at the time the dependent workloads start.
 
