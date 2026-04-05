@@ -3,7 +3,7 @@ title: "Guest OS File Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_recovery.html"
-last_updated: "3/26/2026"
+last_updated: "4/2/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -114,9 +114,9 @@ The mount server connects to the workload to which you recover files (target wor
 
 How Recovery from Storage Snapshots Works
 
-The algorithm for restoring guest OS files from Linux and Microsoft Windows workloads is similar to the ones described in this section ([How Recovery of Linux Workloads Works](#lin) and [How Recovery of Microsoft Windows Workloads Works](#win)).
+The algorithm for restoring guest OS files from Linux and Microsoft Windows workloads is similar to the ones described in this section: [How Recovery of Linux Workloads Works](#lin) and [How Recovery of Microsoft Windows Workloads Works](#win).
 
-As the first step, Veeam Backup & Replication creates on an ESXi host a clone/virtual copy of the storage snapshot where the VM disks are hosted. Veeam Backup & Replication mounts the clone/virtual copy to the selected ESXi host as a new datastore.
+As the first step, Veeam Backup & Replication creates on an ESXi host a clone or virtual copy of the storage snapshot where the VM disks are hosted. Veeam Backup & Replication mounts the clone/virtual copy to the selected ESXi host as a new datastore.
 
 Further, Veeam Backup & Replication mounts disks not from backups or replicas, but directly from storage snapshots. When the restore process finishes, Veeam Backup & Replication deletes the datastore, unmounts the clone/virtual copy from the ESXi host and then deletes this copy.
 
