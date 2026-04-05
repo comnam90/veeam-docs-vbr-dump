@@ -3,14 +3,14 @@ title: "Performing Failover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_performing_failover.html"
-last_updated: "10/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Failover
 
 
-For more information on failover, see [Failover](uni_cdp_failover.md) and [Failover and Failback for CDP](uni_cdp_failover_failback.md).
+For more information on failover, see [Failover](uni_cdp_failover.md) and [Failover and Failback for Universal CDP](uni_cdp_failover_failback.md).
 
 To perform failover, use the Failover wizard.
 
