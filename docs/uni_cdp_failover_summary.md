@@ -3,8 +3,8 @@ title: "Step 5. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_failover_summary.html"
-last_updated: "10/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 5. Finish Working with Wizard
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 At the Summary step of the wizard, review details of the failover task and click Finish to exit the wizard.
 
-During the failover process, Veeam Backup & Replication will request the target host to to power on the replicas.
+During the failover process, Veeam Backup & Replication will request the target host to power on the replicas.
 
 What You Do Next
 
