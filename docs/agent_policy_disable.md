@@ -3,8 +3,8 @@ title: "Enabling and Disabling Backup Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_disable.html"
-last_updated: "8/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Enabling and Disabling Backup Policy
@@ -32,7 +32,12 @@ Keep in mind that Veeam Backup & Replication does not immediately disable a back
 
 If you disabled a backup policy in the Veeam Backup & Replication console and this backup policy starts a new backup session targeted at the Veeam backup server before the next connection to Veeam Backup & Replication, this backup session and all automatic retries of this session will fail.
 
-If you want to disable backup policy immediately, you must synchronize Veeam Agent with Veeam Backup & Replication from the Veeam Agent computer side manually. To learn more, see [Veeam Agent for Microsoft Windows Configuration](deploy_agent_windows.md#configure), [Veeam Agent for Linux Configuration](deploy_agent_linux.md#configure), or [Veeam Agent for Mac Configuration](deploy_agent_mac.md#configure).
+If you want to disable backup policy immediately, you must synchronize Veeam Agent with Veeam Backup & Replication from the Veeam Agent computer side manually. To learn more, see one of the following sections depending on the OS of the Veeam Agent computer that you plan to move:
+
+* [Applying Protection Group Configuration to Veeam Agent for Microsoft Windows](deploy_agent_windows.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Linux](deploy_agent_linux.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Unix](deploy_agent_unix.md#configure)
+* [Applying Protection Group Configuration to Veeam Agent for Mac](deploy_agent_mac.md#configure)
 
 To enable a disabled policy, select it in the list and click Disable on the ribbon once again.
 

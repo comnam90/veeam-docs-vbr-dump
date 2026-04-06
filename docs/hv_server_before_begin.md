@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_before_begin.html"
-last_updated: "2/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -19,7 +19,7 @@ Before you add a Microsoft Hyper-V server to the backup infrastructure, check th
 * File and printer sharing must be enabled in network connection settings of the added Microsoft Hyper-V host. Otherwise, Veeam Backup & Replication will fail to deploy required components.
 * Make sure that the NETBIOS name of the Microsoft Hyper-V Server is successfully resolved.
 * The option to use Veeam Deployment Kit for certificate-based authentication is not available for Hyper-V clusters. Credential-based authentication is required for communication with the Hyper-V cluster objects. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
-* [For Linux-based backup servers] Both the Hyper-V nodes and the backup server must be joined to the same Active Directory domain. If they are not joined to the same Active Directory domain, additional manual configuration of the krb5.conf file is required. For more information, see [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md).
+* [For Linux-based backup servers] Both the Hyper-V nodes and the backup server must be joined to the same Active Directory domain. If they are not joined to the same Active Directory domain, additional manual configuration of the krb5.conf file is required. For more information on the file configuration, see [this Veeam KB article](https://www.veeam.com/kb4841).
 * Linux-based backup servers do not support Hyper-V workgroup clusters. This configuration is available only for Microsoft Windows-based backup servers.
 
 * If you get the "Invalid Credentials" error when adding a Hyper-V host using a local account, see [this Veeam KB article](https://www.veeam.com/kb1914).

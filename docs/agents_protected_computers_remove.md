@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Agent and Other Veeam Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_remove.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Uninstalling Veeam Agent and Other Veeam Components
@@ -42,7 +42,7 @@ Before you start the uninstall process, consider the following:
 
 * You can uninstall Veeam Agent, Veeam Plug-ins and Veeam components on a computer added to a protection group for pre-installed Veeam Agents only from the Veeam Agent computer side. To learn more about protection groups for pre-installed Veeam Agents, see [Protection Group Types](agents_protection_groups_types.md).
 
-* If you uninstall Veeam Agent for Microsoft Windows added to the protection group for pre-installed Veeam Agents and then re-install on the same computer, Veeam Agent will not connect to Veeam backup server automatically. To connect Veeam Agent, you must repeat the configuration step of the Veeam Agent deployment scenario. To learn more, see [Deploying Veeam Agents Using Generated Setup Files](agents_deploy_package.md).
+* If you uninstall Veeam Agent for Microsoft Windows or Veeam Agent for Linux added to the protection group for pre-installed Veeam Agents and then re-install on the same computer, Veeam Agent will not connect to Veeam backup server automatically. To connect Veeam Agent, you must repeat the configuration step of the Veeam Agent deployment scenario. To learn more, see [Deploy Veeam Agents](pg_pre_installed_next.md).
 
 * Prerequisite components installed and used by Veeam Agent are not removed during the uninstall process. You can remove the remaining components from the side of the computer from which you uninstalled Veeam Agent.
 

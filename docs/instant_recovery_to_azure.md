@@ -3,7 +3,7 @@ title: "Instant Recovery to Microsoft Azure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_to_azure.html"
-last_updated: "3/11/2026"
+last_updated: "4/2/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -40,6 +40,8 @@ You can recover workloads from the following types of backups:
 * Backups of oVirt VMs created by [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
 
 * Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
+
+* Backups of HPE Morpheus VM Essentials VMs created by [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
 
 \* - Available on Microsoft Windows-based backup server.
 

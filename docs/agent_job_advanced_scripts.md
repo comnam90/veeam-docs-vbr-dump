@@ -3,14 +3,14 @@ title: "Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_advanced_scripts.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "3/31/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Script Settings
 
 
-Before you configure script execution settings, review the considerations and limitations in the [Backup Job and Snapshot Scripts](agents_backup_windows_scripts.md) topic.
+Before you configure script execution settings, review the considerations and limitations in the [Backup Job and Snapshot Scripts](agents_backup_windows_scripts.md) section.
 
 You can specify script settings for the job managed by backup server.
 

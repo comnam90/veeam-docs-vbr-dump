@@ -3,8 +3,8 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_plan_and_manage_licensing.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/1/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Licensing
@@ -18,7 +18,10 @@ Licensed Objects
 
 All nodes of a MongoDB replica set are assumed protected if the replica set has been processed by an application backup policy in the last 31 days.
 
-If you use any instance-based ([Veeam Universal Licensing](https://www.veeam.com/universal-licensing.html)) license in Veeam Backup & Replication, you do not need to install any additional licenses. Each node of the replica set consumes one instance unit from the license.
+If you use any instance-based ([Veeam Universal Licensing](https://www.veeam.com/universal-licensing.html)) license in Veeam Backup & Replication, you do not need to install any additional licenses. Each computer including nodes of the replica set consumes one instance unit from the license. Protected computers consume instances from the license in the following way:
+
+* In case of replica sets each server included in the replica set consumes one instance unit from the license.
+* In case of shared clusters each server of each shard in the cluster consumes one instance unit from the license.
 
 Servers processed by backup copy jobs are not regarded as protected machines, these types of jobs provide an additional protection level for machines that are already protected with application backup policies.
 
@@ -49,15 +52,32 @@ For details on how to install a license and monitor licensed objects, see [Licen
 
 Managing Veeam Plug-In Instance License Consumption
 
-You can assign and revoke licenses for installed instances protected by Veeam Plug-Ins from the Veeam backup server. This process helps you manage license usage and ensure only intended installed instances consume licenses.
+Veeam Backup & Replication automatically assigns a license instance to each computer added to a protected MongoDB Backup cluster. You cannot modify license use manually. However, you can restrict license consumption for specific machines to ensure only intended instances consume licenses.
 
-To assign or revoke license usage of individual instances, do the following:
+|  |
+| --- |
+| Note |
+| To run MongoDB backup jobs, select the Allow unlicensed agents to consume instances check box. When this option is enabled, Veeam Backup & Replication renews agent licenses during each backup job run by removing and reassigning them. This renewal logic ensures that licenses are correctly updated when the license is renewed on the Veeam Backup & Replication server. |
+
+Restricting License Consumption for All Instances
+
+To restrict instance consumption by all managed installed instances, do the following:
 
 1. From the main menu, select License.
-2. In the License Information window, click the Instances tab and click Manage.
-3. In the Licensed Instances tab, select the installed instance and click Assign to assign a license instance, or click Revoke to revoke a license instance.
+2. In the License Information window, click the Instances tab.
+3. On the Instances tab, clear the Allow unlicensed agents to consume instances check box.
 4. Click Close.
 
-![Licensing](images/plugins_license_management.webp)
+Restricting License Consumption for a Specific Instance
+
+To restrict license use for a specific machine in a MongoDB Backup cluster, do the following:
+
+1. From the main menu, select License.
+2. In the License Information window, click the Instances tab.
+3. In the Instances tab, click Manage.
+4. In the Licensed Instances tab, select the installed instance and click Revoke.
+5. Click Close.
+
+![Licensing](images/mongo_license_management.webp)
 
 

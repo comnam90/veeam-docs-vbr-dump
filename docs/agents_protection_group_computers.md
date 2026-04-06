@@ -3,8 +3,8 @@ title: "Step 3. Specify Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_computers.html"
-last_updated: "11/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2/23/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Computers
@@ -39,7 +39,7 @@ The user name can be specified in the following formats:
 * HOSTNAME\USERNAME — if you use Veeam Backup & Replication on Microsoft Windows
 * DOMAIN\USERNAME — if you use Veeam Backup & Replication on Microsoft Windows
 
-* [For Microsoft Windows and Linux computers] Connect using certificate-based authentication. Select this option, if you chose to pre-install Veeam Deployer Service on the computer that you want to add to the protection group. In this case, Veeam Backup & Replication will communicate with the computer using a certificate. Veeam Backup & Replication will install Transport Service that will be used to perform the necessary operations on the computer including upload and installation of Veeam Agent. To learn more, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md).
+* [For Microsoft Windows and Linux computers] Connect using certificate-based authentication. Select this option, if you chose to pre-install Veeam Deployer Service on the computer that you want to add to the protection group. In this case, Veeam Backup & Replication will connect to the computer using a certificate. Veeam Backup & Replication will install Transport Service that will be used to perform the necessary operations on the computer including upload and installation of Veeam Agent. To learn more, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md).
 
 If you want to change the connection method after you create a protection group, you can do this by [editing the protection group settings](agents_protection_group_edit.md).
 

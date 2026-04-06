@@ -3,8 +3,8 @@ title: "How Universal CDP Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_hiw.html"
-last_updated: "10/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # How Universal CDP Works
@@ -16,20 +16,20 @@ Universal CDP workflow during replication is divided into two parts: backup infr
 
 During the configuration, Veeam Backup & Replication configures the [required backup infrastructure components](uni_cdp_infrastructure.md). Veeam Backup & Replication also reconfigures the components if something changes in the infrastructure. During data transfer, Veeam Backup & Replication creates short-term and long-term restore points by sending disk data blocks and changes made to them. For more information on restore points, see [CDP Replication Chain](uni_cdp_replica_chain.md).
 
-Backup infrastructure component configuration and data transfer are constant processes.
+Backup infrastructure component configuration and data transfer are ongoing processes.
 
 Component Configuration Algorithm
 
 The following steps apply during the initial configuration, that is, when a [universal CDP policy](uni_cdp_policy_create.md) starts for the first time or after the policy is enabled:
 
 1. Veeam CDP Coordinator Service reads policy settings from the configuration database and creates a list of workload tasks to process. For every workload added to the universal CDP policy, Veeam Backup & Replication creates a new task.
-2. Veeam CDP Coordinator Service checks that required backup infrastructure components are available.
+2. Veeam CDP Coordinator Service checks that the required backup infrastructure components are available.
 3. Veeam CDP Coordinator Service queries information about workloads from the Veeam CDP Agent Service. The information contains data about the guest OS, hardware, network adapters and storage layout.
 4. Veeam CDP Agent Service transforms the storage layout information into a synthetic disk layout. This is required to create a similar disk structure on the target host.
 5. Veeam CDP Coordinator Service queries information about virtualization hosts from the target vCenter Server.
 6. Veeam CDP Coordinator Service requests vCenter Server to create replicas with empty disks on the target host. They are created based on the synthetic disk layout. The volumes (disk layout) are created during the data transfer process.
 7. vCenter Server registers the created replicas.
-8. Veeam CDP Coordinator Service selects which CDP proxies will be used for data transfer and sets a number of rules for data transfer, such as network traffic throttling rules and so on.
+8. Veeam CDP Coordinator Service selects which CDP proxies will be used for data transfer and sets a number of rules for data transfer, such as network traffic throttling rules, and so on.
 
 If you select automatic proxy selection when configuring the CDP policy, Veeam Backup & Replication analyzes the current workload on CDP proxies and selects a CDP proxy according to the following priority rules (starting from the most preferable one):
 
@@ -52,11 +52,11 @@ After the initial configuration finishes, Veeam Backup & Replication starts moni
 | Note |
 | If you add new proxies to the backup infrastructure, Veeam Backup & Replication does not use these proxies for the already created CDP policies — that is, Veeam Backup & Replication does not reconfigure the infrastructure. If you have selected automatic proxy selection for a CDP policy and want to use the newly added proxies, disable and then enable the CDP policy. If you have selected the proxies manually, edit the CDP policy settings and add the required proxies. |
 
-* If disks are added to source workload, Veeam CDP Coordinator Service requests vCenter to create the disks on the target host and selects CDP proxies to transfer disk data. Veeam CDP Coordinator Service also gets information about volumes and requests the Veeam CDP Agent Service to attach the Veeam CDP Volume Filter Driver to this volume.
-* If disk layout is changed on the source workload, Veeam CDP Coordinator Service also gets information about volumes and requests the Veeam CDP Agent Service to attach the Veeam CDP Volume Filter Driver to this volume. The Veeam CDP Agent Service initiates disk mapping: calculates the differences between the source workload and replica, and send the differences to the replica.
+* If disks are added to the source workload, Veeam CDP Coordinator Service requests vCenter to create the disks on the target host and selects CDP proxies to transfer disk data. Veeam CDP Coordinator Service also gets information about volumes and requests the Veeam CDP Agent Service to attach the Veeam CDP Volume Filter Driver to this volume.
+* If the disk layout is changed on the source workload, Veeam CDP Coordinator Service also gets information about volumes and requests the Veeam CDP Agent Service to attach the Veeam CDP Volume Filter Driver to this volume. The Veeam CDP Agent Service initiates disk mapping: calculates the differences between the source workload and replica, and sends the differences to the replica.
 * If new workloads are added to the CDP policy, Veeam CDP Coordinator Service requests vCenter to create replicas with empty disks, and selects which CDP proxies to use for data transfer. Veeam CDP Coordinator Service also gets information about volumes and requests the Veeam CDP Agent Service to attach the Veeam CDP Volume Filter Driver to this volume.
 
-Component reconfiguration requires Veeam CDP Coordinator Service to be working. If the coordinator goes down, existing CDP policies still work, create and remove short-term restore points. Long-term restore points are not created and removed because it is the coordinator who manages them. However, if any of the components goes out of service, for example, CDP proxy goes offline or VMware vSphere vMotion changes the infrastructure, CDP policies start failing until Veeam CDP Coordinator Service is repaired.
+Component reconfiguration requires Veeam CDP Coordinator Service to be working. If the coordinator goes down, existing CDP policies still work, create and remove short-term restore points. Long-term restore points are not created and removed because it is the coordinator who manages them. However, if any of the components goes out of service, for example, a CDP proxy goes offline or VMware vSphere vMotion changes the infrastructure, CDP policies start failing until Veeam CDP Coordinator Service is repaired.
 
 Data Transfer Algorithm
 
@@ -96,7 +96,7 @@ The following steps apply when Veeam Backup & Replication transfers data for sho
 5. Target Veeam CDP Proxy Service decompresses the received data. Then sends data to the target host.
 6. I/O filter on the target host saves the received data to transaction logs.
 
-When the time for the creation of a long-term restore point comes, the I/O filter forms a long-term restore point using data of short-term restore points created since the creation of the previous long-term restore point. Data for the new long-term restore point is saved to a delta disk.
+When it is time to create a long-term restore point, the I/O filter forms a long-term restore point using data of short-term restore points created since the creation of the previous long-term restore point. Data for the new long-term restore point is saved to a delta disk.
 
 |  |
 | --- |
@@ -107,8 +107,8 @@ CDP Policy Statuses
 
 Based on the workflow, CDP policies can have the following statuses:
 
-* Initial sync — the initial synchronization is in process.
-* Syncing — the incremental synchronization is in process.
+* Initial sync — the initial synchronization is in progress.
+* Syncing — the incremental synchronization is in progress.
 * CBT mode — the replica data on the target host is not actual. This status can be shown, for example, if a CDP proxy is overloaded and cannot receive or send data. The status can change for Syncing after the workload decreases and replica data on the target host is updated to the current VM state on the source host. For more information on how Veeam Backup & Replication behaves in case of data delivery issues, see [Guaranteed Delivery](cdp_guaranteed_delivery.md).
 * Success, Warning or Error — the CDP process was successful, had warnings or failed. These statuses are shown for the disabled CDP policies.
 

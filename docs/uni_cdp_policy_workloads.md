@@ -3,8 +3,8 @@ title: "Step 3. Select Workloads to Replicate and Processing Order"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_workloads.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Select Workloads to Replicate and Processing Order
@@ -22,7 +22,7 @@ Select workloads or protection groups that you want to replicate:
 |  |
 | --- |
 | Important |
-| Consider the following:   * You can replicate only workloads that are turned on, the turned off workloads will be skipped from processing. * You cannot add to a universal CDP policy workloads that were already added to other universal CDP policies created on the same backup server. |
+| Consider the following:   * You can replicate only workloads that are turned on. The turned off workloads will be skipped from processing. * You cannot add to a universal CDP policy workloads that were already added to other universal CDP policies created on the same backup server. |
 
 To quickly find the necessary workloads, you can use the search field at the bottom of the Select Objects window. If you want to switch between types of workloads you want to search through, use the button to the left of the search field.
 

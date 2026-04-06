@@ -3,8 +3,8 @@ title: "Step 6. Configure Network Mapping"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_network.html"
-last_updated: "10/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/2/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 6. Configure Network Mapping
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 The Network step of the wizard is available if you have selected the Network remapping option at the [Name](uni_cdp_policy_name.md) step.
 
-At the Network step of the wizard, configure a network mapping table. This table maps networks in the production site to networks in the disaster recovery (DR) site. When the replication session starts, Veeam Backup & Replication will check the network mapping table. Then Veeam Backup & Replication will update replica configuration to replace the production networks with the specified networks in the DR site. As a result, you will not have to re-configure network settings manually.
+At the Network step of the wizard, configure a network mapping table. This table maps networks in the production site to networks in the disaster recovery (DR) site. When the replication session starts, Veeam Backup & Replication will check the network mapping table. Then Veeam Backup & Replication will update the replica configuration to replace the production networks with the specified networks in the DR site. As a result, you will not have to reconfigure network settings manually.
 
 You can configure network mapping for all workloads in the policy or for individual workloads.
 

@@ -3,7 +3,7 @@ title: "Performing VM Restore to Amazon Web Services"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_restore_to_amazon_ec2.html"
-last_updated: "3/31/2026"
+last_updated: "4/2/2026"
 product_version: "13.0.1.2067"
 ---
 
