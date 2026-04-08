@@ -3,7 +3,7 @@ title: "Editing Access Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/access_permissions.html"
-last_updated: "3/11/2026"
+last_updated: "4/7/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -17,7 +17,7 @@ Access permissions are granted to security principals such as users and AD group
 |  |
 | --- |
 | Note |
-| Consider the following:   * If you plan to create backups in a Veeam backup repository with Veeam Agent backup jobs configured in Veeam Backup & Replication, you do not need to grant access permissions on the backup repository to users. In the Veeam Agent management scenario, to establish a connection between the backup server and protected computers, Veeam Backup & Replication uses a TLS certificate. To learn more, see the [Configuring Security Settings](agents_manage_tls_and_ssh.md) section in Veeam Agent Backup. * If you plan to create backups in a Veeam backup repository with Veeam Plug-In for Nutanix AHV, you do not need to grant access permissions when configuring repositories, you must do that when [configuring Nutanix AHV backup appliances](https://helpcenter.veeam.com/docs/vbahv/userguide/manage_proxy.html?ver=9). |
+| Consider the following:   * If you plan to create backups in a Veeam backup repository with Veeam Agent backup jobs configured in Veeam Backup & Replication, you do not need to grant access permissions on the backup repository to users. In the Veeam Agent management scenario, to establish a connection between the backup server and protected computers, Veeam Backup & Replication uses a TLS certificate. To learn more, see the [Configuring Security Settings](agents_manage_tls_and_ssh.md) section in Veeam Agent Backup. * Access permissions to Veeam backup repositories are not applicable to backups created with Veeam Plug-In for Nutanix AHV. If you plan to create Nutanix AHV backups, you do not need to grant access permissions on the backup repository to users. |
 
 Right after installation, access permissions on the default backup repository are set to Allow to everyone for testing and evaluation purposes. If necessary, you can change these settings.
 
@@ -35,7 +35,7 @@ To grant access permissions to a security principal:
 
 1. In the working area, select the necessary backup repository and click Set Access Permissions on the ribbon or right-click the backup repository and select Access permissions. If you do not see the Set Access Permissions button on the ribbon or the Access permissions command is not available in the shortcut menu, press and hold the [Ctrl] key, right-click the backup repository and select Access permissions.
 
-![Editing Access Permissions](images/ep_permissions.webp)
+[![Editing Access Permissions](images/ep_permissions.webp)](images/ep_permissions.webp)
 
 1. In the Standalone applications window, specify to whom you want to grant access permissions on this backup repository:
 
