@@ -3,8 +3,8 @@ title: "Step 11. Verify Recovery Settings and Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_vapp_restore_verify.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/7/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 11. Verify Recovery Settings and Finish Working with Wizard
