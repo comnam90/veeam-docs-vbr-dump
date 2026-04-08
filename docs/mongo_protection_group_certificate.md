@@ -3,8 +3,8 @@ title: "Deploying Veeam Components for Certificate-Based Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protection_group_certificate.html"
-last_updated: "12/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/7/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Deploying Veeam Components for Certificate-Based Authentication
@@ -27,7 +27,7 @@ To deploy Veeam components using Veeam Deployment Kit, perform the following ste
 2. Click the Physical and Cloud Infrastructure node in the inventory pane and click Create Veeam Deployment Kit on the ribbon. Alternatively, right-click the Physical and Cloud Infrastructure node in the inventory pane and select Create Veeam deployment kit.
 3. In the Create Deployment Kit window, specify a path to the folder to which Veeam Backup & Replication will export the deployment kit files.
 
-[![Create deployment kit](images/create_deployment_kit.webp)](images/create_deployment_kit.webp "Create deployment kit")
+[![Create deployment kit](images/plugins_create_deployment_kit.webp)](images/plugins_create_deployment_kit.webp "Create deployment kit")
 
 1. Upload the exported files on the computer which database you want to protect.
 2. On the MongoDB node side, install the uploaded files. You can do this in one of the following ways:
