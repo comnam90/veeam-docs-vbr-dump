@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "4/2/2026"
+last_updated: "4/7/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -36,7 +36,6 @@ Backup Server
 | Veeam Backup & Replication console | Backup server | TCP | 9420 | [For console version 12.3.2 P1 (build 12.3.2.4165)] Port used by the Veeam Backup & Replication console to communicate with the backup server for console automatic update. |
 | Backup proxy | Backup server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) for ransomware index transfer.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup repository (Linux),  Backup repository (Microsoft Windows),  Gateway server,  Mount server | Backup server | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
-| Mount server | Backup server | TCP | 9401 | Port used for communication with the Veeam Backup Service.  Also required to perform Copy to and Mount to console operations during Windows file-level recovery. |
 | REST client | Backup server | TCP | 9419 | Default ports for communication with REST API service. |
 | Veeam Infrastructure Appliance | Backup server | TCP | 443 | Port used by backup infrastructure components deployed from the Veeam Infrastructure Appliance ISO to authenticate incoming connections from Veeam Backup & Replication. |
 

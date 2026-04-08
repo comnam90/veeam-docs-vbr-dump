@@ -3,7 +3,7 @@ title: "Step 5c. Choose Guest Interaction Proxy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_gp_proxy.html"
-last_updated: "4/2/2026"
+last_updated: "4/7/2026"
 product_version: "13.0.1.2067"
 ---
 

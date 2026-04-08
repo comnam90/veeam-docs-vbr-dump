@@ -3,7 +3,7 @@ title: "Restoring Synchronized Users (Hybrid Identity)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_restore_sync_users.html"
-last_updated: "3/25/2026"
+last_updated: "4/6/2026"
 product_version: "13.0.1.2067"
 ---
 
