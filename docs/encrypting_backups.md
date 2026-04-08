@@ -3,7 +3,7 @@ title: "Encrypting Standalone Application Backups in Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypting_backups.html"
-last_updated: "3/10/2026"
+last_updated: "4/7/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -50,7 +50,7 @@ To encrypt standalone application backups, do the following:
 
 1. In the working area, select the necessary backup repository and click Set Access Permissions on the ribbon or right-click the backup repository and select Access permissions. If you do not see the Set Access Permissions button on the ribbon or the Access permissions command is not available in the shortcut menu, press and hold the [Ctrl] key, right-click the backup repository and select Access permissions.
 
-![Encrypting Standalone Application Backups in Backup Repositories](images/ep_permissions.webp)
+[![Encrypting Standalone Application Backups in Backup Repositories](images/ep_permissions.webp)](images/ep_permissions.webp)
 
 1. In the Standalone applications window, select the Encrypt standalone application backups stored in this repository check box and choose the necessary password from the field under the check box. If you have not specified a password beforehand, click Add on the right or the Manage passwords link to add a new password.
 
