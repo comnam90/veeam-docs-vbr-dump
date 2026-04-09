@@ -3,8 +3,8 @@ title: "Pre-Freeze and Post-Thaw Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_scripts.html"
-last_updated: "6/8/2023"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Pre-Freeze and Post-Thaw Scripts
@@ -14,7 +14,7 @@ If you plan to copy VMs running applications that do not support VSS, you can in
 
 To specify pre-freeze and post-thaw scripts for the job:
 
-1. At the Guest Processing step, click Applications.
+1. At the Guest Processing step, click Application handling options for individual machines.
 2. In the displayed list, select the VM and click Edit.
 3. Click the Scripts tab.
 4. In the Script processing mode section, specify the scenario for scripts execution:
