@@ -3,8 +3,8 @@ title: "Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_application.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Application-Aware Processing
@@ -15,7 +15,7 @@ If you add to the VM copy job VMs running VSS-aware applications, you can enable
 To enable application-aware processing:
 
 1. Select the Enable application-aware processing check box.
-2. Click Applications.
+2. Click Application handling options for individual machines.
 3. In the displayed list, select the VM and click Edit.
 
 To define custom settings for a VM added as a part of the VM container, you must include the VM in the list as a standalone object. To do this, click Add and choose a VM whose settings you want to customize. Then select the VM in the list and define the necessary settings.
@@ -26,7 +26,7 @@ To define custom settings for a VM added as a part of the VM container, you must
 * Select Try application processing, but ignore failures if you want to continue the VM copy process even if VSS errors occur. This option is recommended to guarantee completion of the job. The created VM image will not be transactionally consistent but crash consistent.
 * Select Disable application processing if you do not want to enable quiescence for the VM.
 
-1. [For Microsoft Exchange, Microsoft SQL and Oracle VMs] In the Transaction logs section, specify if Veeam Backup & Replication must process transaction logs or copy-only VM copies must be created.
+1. [For Microsoft Exchange, Microsoft SQL and Oracle VMs] In the VSS Settings section, specify if Veeam Backup & Replication must process transaction logs or copy-only VM copies must be created.
 
 1. Select Process transaction logs with this job if you want Veeam Backup & Replication to process transaction logs.
 

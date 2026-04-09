@@ -3,8 +3,8 @@ title: "Step 7. Specify Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_net_settings_hv.html"
-last_updated: "9/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 7. Specify Network Settings

@@ -3,8 +3,8 @@ title: "PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_postgresql_vm.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # PostgreSQL WAL Files Settings
@@ -17,7 +17,7 @@ Enabling Application-Aware Processing
 Before configuring WAL files processing, check that application-aware processing is enabled:
 
 1. At the Guest Processing step of the wizard, select the Enable application-aware processing check box.
-2. Click Applications.
+2. Click Application handling options for individual machines.
 3. In the displayed list, select the PostgreSQL VM and click Edit.
 
 Specifying WAL Files Settings

@@ -3,8 +3,8 @@ title: "Importing Certificate from Certificate Store"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tls.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Importing Certificate from Certificate Store

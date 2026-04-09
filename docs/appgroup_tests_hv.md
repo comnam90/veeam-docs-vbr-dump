@@ -3,8 +3,8 @@ title: "Step 4. Specify Recovery Verification Options and Tests"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_tests_hv.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Recovery Verification Options and Tests
