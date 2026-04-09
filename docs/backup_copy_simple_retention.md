@@ -3,30 +3,20 @@ title: "Short-Term Retention Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_simple_retention.html"
-last_updated: "11/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Short-Term Retention Policy
 
 
-The short-term retention policy allows retaining restore points created by backup copy jobs for a specified number of days or until the number of restore points reaches the specified number in the retention settings.
+The short-term retention policy allows to retain restore points created by the backup copy job for the specified number of days. The minimum number that you can specify is 2.
 
-During the first backup copy session, Veeam Backup & Replication creates the first restore point — a full backup. The next backup copy sessions add incremental backups to the backup chain. As a result, the regular backup cycle produces a chain of a full backup and set of incremental backups in the target backup repository. When the retention policy is exceeded, Veeam Backup & Replication removes the earliest restore points from backup chains in the target backup repositories.
+During the first backup copy session, Veeam Backup & Replication creates the first restore point — a full backup. The next backup copy sessions add incremental backups to the backup chain. As a result, the regular backup cycle produces a chain of a full backup and a set of incremental backups in the target backup repository. When the retention policy is exceeded, Veeam Backup & Replication merges the oldest restore point into the full backup and removes this restore point from the backup chain.
 
 Since Veeam Backup & Replication [creates forever forward incremental backup chains](backup_copying_process.md) while backup copy jobs run, Veeam Backup & Replication applies the [forever forward incremental retention policy](retention_forever_incremental.md) to remove restore points and maintain the desired number of restore points.
 
-When [configuring short-term retention policy settings](backup_copy_target.md) for a backup copy job, you have two options:
-
-* Specify the number of restore points.
-
-Veeam Backup & Replication keeps the last N restore points, where N is the number of restore points that you specify in the settings. The minimum number that you can specify is 2.
-
-* Specify the number of days.
-
-Veeam Backup & Replication keeps restore points created during the last N days, where N is the number of days that you specify in the settings. The minimum number that you can specify is 2.
-
-Consider the following for the daily retention policy:
+Consider the following:
 
 * The minimum number of retained restore points is 3. This number does not depend on the number of days set in the retention policy. For example, the retention policy is set to 5 days. You launch the job after it was stopped for 10 days. Normally, Veeam Backup & Replication deletes all previous restore points. However, due to the minimum number of retained restore points, you will still have at least 3 restore points: the newly created restore point and the two previous ones.
 
@@ -48,17 +38,15 @@ You can change the minimum number of retained restore points in the in the confi
 
 Example
 
-The regular backup cycle is based on the short-term retention policy scheme. When you specify retention policy settings, you define how many restore points you want to retain in the backup chain in the target backup repository.
+The regular backup cycle is based on the short-term retention policy scheme. When you specify retention policy settings, you define for how many days restore points are retained in the backup chain on the target backup repository.
 
-For example, you have selected to retain 7 restore points. The backup copy runs once a day and starts on Sunday.
+For example, you have selected to retain restore points for 7 days. The backup copy job runs once a day and starts on Sunday.
 
-1. Veeam Backup & Replication creates a full backup on Sunday and add 6 incremental backups Monday through Saturday.
+1. Veeam Backup & Replication creates a full backup on Sunday and then creates 6 incremental backups from Monday through Saturday.
 
 ![Short-Term Retention Policy](images/backup_copy_retention_simple1.webp)
 
-1. On Sunday, Veeam Backup & Replication creates another increment. As a result, there will be 8 restore points, which exceeds the retention policy. Thus, the oldest increment is merged to the full backup.
-
-After the oldest increment is merged to the full backup, Veeam Backup & Replication removes the increment as it is no longer needed.
+1. On the following Sunday, Veeam Backup & Replication creates the next incremental restore point. The oldest restore point now falls outside the specified retention policy. Veeam Backup & Replication merges the oldest restore point into the full backup and removes this restore point from the backup chain.
 
 ![Short-Term Retention Policy](images/backup_copy_retention_simple2.webp)
 
