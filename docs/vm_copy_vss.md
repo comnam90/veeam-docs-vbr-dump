@@ -3,8 +3,8 @@ title: "Step 6. Specify Guest Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 6. Specify Guest Processing Settings
@@ -16,6 +16,7 @@ At the Guest Processing step of the wizard, you can enable the following setting
 * [Microsoft SQL Server transaction log settings](vm_copy_vss_transaction_sql.md)
 * [Oracle archived log settings](vm_copy_vss_transaction_oracle.md)
 * [PostgreSQL WAL Files settings](vm_copy_vss_postgresql_vm.md)
+* [VM guest OS file exclusion](vm_copy_vss_exclusions.md)
 * [Use of pre-freeze and post-thaw scripts](vm_copy_vss_scripts.md)
 
 To coordinate guest processing activities, Veeam Backup & Replication deploys non-persistent runtime components or uses (if necessary, deploys) persistent agent components on the VM guest OS.
