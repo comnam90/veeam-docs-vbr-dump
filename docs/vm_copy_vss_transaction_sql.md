@@ -3,8 +3,8 @@ title: "Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_vss_transaction_sql.html"
-last_updated: "5/26/2023"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Microsoft SQL Server Transaction Log Settings
@@ -13,10 +13,10 @@ product_version: "13.0.1.1071"
 If you copy a Microsoft SQL VM, you can specify how Veeam Backup & Replication must process transaction logs:
 
 1. At the Guest Processing step of the wizard, select the Enable application-aware processing check box.
-2. Click Applications.
+2. Click Application handling options for individual machines.
 3. In the displayed list, select the Microsoft SQL Server VM and click Edit.
-4. In the Transaction logs section, select Process transaction logs with this job.
-5. In the VM Processing Settings window, click the SQL tab.
+4. In the VSS Settings section of the General tab, select Process transaction logs with this job.
+5. In the Processing Settings window, click the SQL tab.
 6. Specify how transaction logs must be processed:
 
 * Select Truncate logs if you want Veeam Backup & Replication to trigger truncation of transaction logs only after the job completes successfully. In this case, the non-persistent runtime components or persistent components will wait for the job to complete and then trigger truncation of transaction logs. If the VM copy job fails, the logs will remain untouched on the VM guest OS until the next start of the non-persistent runtime components or persistent components.
