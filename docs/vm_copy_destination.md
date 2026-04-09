@@ -3,8 +3,8 @@ title: "Step 5. Specify Copy Destination"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vm_copy_destination.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 5. Specify Copy Destination
@@ -27,7 +27,7 @@ Veeam Backup & Replication assigns backup proxies to VMs included in the VM copy
 |  |
 | --- |
 | Important |
-| You cannot use a [scale-out backup repository](backup_repository_sobr.md) as the copy destination. |
+| You cannot use a [scale-out backup repository](backup_repository_sobr.md) or an [object storage repository](object_storage_repository.md) as the copy destination. |
 
 + Select Server if you want to store the VM copy on a disk or storage device attached to the server. From the Server list, select a server added to the backup infrastructure. In the Path to folder field, specify a folder on the server where the created VM copy must be stored.
 
