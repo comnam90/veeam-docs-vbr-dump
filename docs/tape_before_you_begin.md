@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_before_you_begin.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Before you configure a backup to tape job, check the following prerequisites and limitations:
 
-* You must have Veeam Backup & Replication Enterprise license or higher installed on the Veeam backup server.
+* The availability of the feature depends on the license you use. You must have a legacy socket-based Enterprise license or higher, or the VUL Foundation license or higher, installed on the Veeam backup server. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * You must check configuration of source backup job(s). Tape jobs have the following requirements for the retention policy setting:
 
 + A source job with forever forward incremental chain must keep not less than 3 restore points on disk.
