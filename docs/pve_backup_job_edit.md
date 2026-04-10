@@ -3,7 +3,7 @@ title: "Editing Backup Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_edit.html"
-last_updated: "4/8/2026"
+last_updated: "4/9/2026"
 product_version: "13.0.1.2067"
 ---
 
