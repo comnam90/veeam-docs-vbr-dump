@@ -3,8 +3,8 @@ title: "Support for Veeam Backup for Public Clouds"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_public_cloud_backups.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Support for Veeam Backup for Public Clouds
@@ -21,12 +21,12 @@ The SP can configure backup copy jobs for backups created by the following Veeam
 
 To start working with those backups, the SP must add the repository that contains backups of Amazon EC2 instances or Azure VMs to the Veeam Backup & Replication infrastructure as an external repository. Then, they can use this external repository as a source backup repository and use a repository on the SP side as a target backup repository for backup copy.
 
-To work with backup copy jobs for Amazon EC2 or Microsoft Azure data, the SP must be able to manage the backup server with Veeam Service Provider Console. For more information, see the [Connect Veeam Cloud Connect Servers to Veeam Service Provider Console](https://helpcenter.veeam.com/docs/vac/deployment/connect_cloud_server.html?ver=9.1) section in the Deployment Guide.
+To work with backup copy jobs for Amazon EC2 or Microsoft Azure data, the SP must be able to manage the backup server with Veeam Service Provider Console. For more information, see the [Connect Veeam Cloud Connect Servers to Veeam Service Provider Console](https://helpcenter.veeam.com/docs/vac/deployment/connect_cloud_server.html?ver=9.2) section in the Deployment Guide.
 
 |  |
 | --- |
 | Note |
-| The public cloud appliance must be deployed in the SP backup infrastructure. To do this the SP must use the Veeam Service Provider Console. For details see the following sections:   * For Microsoft Azure, see details in the [Adding Veeam Backup for Microsoft Azure Appliances](https://helpcenter.veeam.com/docs/vac/provider_admin/clouds_add_azure.html?ver=9.1) section in the Guide for Service Providers. * For AWS, see details in the [Adding Veeam Backup for Amazon Web Services Appliances](https://helpcenter.veeam.com/docs/vac/provider_admin/clouds_add_aws.html?ver=9.1) section in the Guide for Service Providers. |
+| The public cloud appliance must be deployed in the SP backup infrastructure. To do this the SP must use the Veeam Service Provider Console. For details see the following sections:   * For Microsoft Azure, see details in the [Adding Veeam Backup for Microsoft Azure Appliances](https://helpcenter.veeam.com/docs/vac/provider_admin/clouds_add_azure.html?ver=9.2) section in the Guide for Service Providers. * For AWS, see details in the [Adding Veeam Backup for Amazon Web Services Appliances](https://helpcenter.veeam.com/docs/vac/provider_admin/clouds_add_aws.html?ver=9.2) section in the Guide for Service Providers. |
 
 You can restore data from backups created by both backup jobs and backup copy jobs. Restore operations are available directly from the SP Veeam Backup & Replication console. For the complete list of the available operations, see the following sections:
 
@@ -39,8 +39,8 @@ To start working with backup copy jobs for public cloud backups, you must comple
 
 1. In Veeam Service Provider Console, configure connection to the backup server and the public cloud appliance that contains backups of Amazon EC2 instances or Azure VMs.
 
-* For details on how to connect to the backup server, see the [Connecting Veeam Backup & Replication Servers](https://helpcenter.veeam.com/docs/vac/provider_admin/connect_backup_servers.html?ver=9.1) section in the Guide for Service Providers.
-* For details on how to connect to the public cloud appliance, see the [Managing Veeam Backup for Public Clouds Appliances](https://helpcenter.veeam.com/docs/vac/provider_admin/clouds_appliances.html?ver=9.1) section in the Guide for Service Providers.
+* For details on how to connect to the backup server, see the [Connecting Veeam Backup & Replication Servers](https://helpcenter.veeam.com/docs/vac/provider_admin/connect_backup_servers.html?ver=9.2) section in the Guide for Service Providers.
+* For details on how to connect to the public cloud appliance, see the [Managing Veeam Backup for Public Clouds Appliances](https://helpcenter.veeam.com/docs/vac/provider_admin/clouds_appliances.html?ver=9.2) section in the Guide for Service Providers.
 
 1. In the Veeam Backup & Replication console, set up credentials for repositories available on the appliance.
 
