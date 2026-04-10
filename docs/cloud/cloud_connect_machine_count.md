@@ -3,8 +3,8 @@ title: "Viewing Tenant Machine Count"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_machine_count.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Viewing Tenant Machine Count
@@ -26,6 +26,6 @@ The SP can also use Veeam PowerShell and Veeam Backup Enterprise Manager REST AP
 |  |
 | --- |
 | Note |
-| Consider the following:   * If the SP manages the Veeam backup infrastructure using Veeam Service Provider Console, they can view information about protected tenant workloads in Veeam Service Provider Console. For more information, refer to the [Veeam Service Provider Console documentation](https://helpcenter.veeam.com/docs/vac/provider_admin/cc_license.html?ver=9).   For example, if you use Veeam Service Provider Console REST API v3.6, see the [Get All Companies](https://helpcenter.veeam.com/docs/vac/rest/reference/vspc-rest.html?ver=9#tag/Companies/operation/GetCompanies) and [Get License Usage by All Organizations](https://helpcenter.veeam.com/docs/vac/rest/reference/vspc-rest.html?ver=9#tag/Licensing/operation/GetOrganizationsLicenseUsage) sections in the Veeam Service Provider Console REST API Reference.   * The SP can also view the number of tenant machines whose backups and replicas consume resources in the SP Veeam Cloud Connect infrastructure. Veeam Backup & Replication displays this information in the Tenants node of the Cloud Connect view in the SP backup console. To learn more, see [Viewing Tenant Account Information](cloud_connect_view.md). |
+| Consider the following:   * If the SP manages the Veeam backup infrastructure using Veeam Service Provider Console, they can view information about protected tenant workloads in Veeam Service Provider Console. For more information, refer to the [Veeam Service Provider Console documentation](https://helpcenter.veeam.com/docs/vac/provider_admin/cc_license.html?ver=9.2).   For example, if you use Veeam Service Provider Console REST API v3.6, see the [Get All Companies](https://helpcenter.veeam.com/references/vac/9.2/rest/3.6.1/tag/Companies#operation/GetCompanies) and [Get License Usage by All Organizations](https://helpcenter.veeam.com/references/vac/9.2/rest/3.6.1/tag/Licensing#operation/GetOrganizationsLicenseUsage) sections in the Veeam Service Provider Console REST API Reference.   * The SP can also view the number of tenant machines whose backups and replicas consume resources in the SP Veeam Cloud Connect infrastructure. Veeam Backup & Replication displays this information in the Tenants node of the Cloud Connect view in the SP backup console. To learn more, see [Viewing Tenant Account Information](cloud_connect_view.md). |
 
 
