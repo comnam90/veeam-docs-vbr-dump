@@ -3,7 +3,7 @@ title: "Automatic License Usage Reporting"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/sp_license_usage_report_online.html"
-last_updated: "3/12/2026"
+last_updated: "4/9/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -29,7 +29,7 @@ The notification window appears on the first day of the month.
 |  |
 | --- |
 | Note |
-| If the SP uses Veeam Service Provider Console to manage the Veeam backup infrastructure, and the Automatic Report Approval option is enabled in Veeam Service Provider Console, Veeam Backup & Replication does not display the notification window. To learn more, see the [Enabling Automatic Report Approval](https://helpcenter.veeam.com/docs/vac/provider_admin/submit_license_usage_report.html?ver=9.1#enabling-automatic-report-approval) section in the Guide for Service Providers. |
+| If the SP uses Veeam Service Provider Console to manage the Veeam backup infrastructure, and the Automatic Report Approval option is enabled in Veeam Service Provider Console, Veeam Backup & Replication does not display the notification window. To learn more, see the [Enabling Automatic Report Approval](https://helpcenter.veeam.com/docs/vac/provider_admin/submit_license_usage_report.html?ver=9.2#enabling-automatic-report-approval) section in the Guide for Service Providers. |
 
 1. The SP can review, adjust if necessary and send the report to Veeam. The SP can also postpone the sending of the report. To learn more, see [Managing License Usage Reports](sp_license_usage_manage.md).
 
