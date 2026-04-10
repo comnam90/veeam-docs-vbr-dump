@@ -3,8 +3,8 @@ title: "Virtualization Servers and Hosts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/setup_add_server.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/9/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Virtualization Servers and Hosts
@@ -21,13 +21,14 @@ You can add the following types of servers and hosts to the backup infrastructur
 
 |  |
 | --- |
-| Note |
-| We recommend that only one instance of a server or host is present in the backup infrastructure at a time. Do not add the same server or host multiple times, for example, by a DNS name and an IP address or an alternative IP address, this can cause unexpected behavior. |
+| Important |
+| Consider the following:   * We recommend that only one instance of a server or host is present in the backup infrastructure at a time. Do not add the same server or host multiple times, for example, by a DNS name and an IP address or an alternative IP address, this can cause unexpected behavior. * When deploying cloned servers or virtual machines, ensure that each system has a unique BIOS UUID. Using multiple servers with identical UUIDs can cause conflicts during discovery, backup, and management operations in Veeam Backup & Replication. Before adding a cloned machine to your Veeam environment, modify its UUID to prevent issues with identification and management. |
 
 You can add physical machines and VMs to the backup infrastructure and assign different roles to them. The following table describes which roles can be assigned to the different types of servers in VMware vSphere environments.
 
+Virtualization Servers and Hosts
+
 | Server Type | Source Host | Target Host | Backup Proxy | Backup Repository |
-| --- | --- | --- | --- | --- |
 | VMware vSphere Server  (standalone ESXi host or vCenter Server) | ✓ | ✓ | ✕ | ✕ |
 | VMware Cloud Director | ✓ | ✓  (for Cloud Director replication and continuous data protection) | ✕ | ✕ |
 | Microsoft Windows server | ✕ | ✕ | ✓ | ✓ |
@@ -35,8 +36,9 @@ You can add physical machines and VMs to the backup infrastructure and assign di
 
 The following table describes which roles can be assigned to the different types of servers in Microsoft Hyper-V environments.
 
+Virtualization Servers and Hosts
+
 | Server Type | Source Host | Target Host | Off-Host Backup Proxy | Backup Repository |
-| --- | --- | --- | --- | --- |
 | Microsoft Hyper-V Server  (standalone Microsoft Hyper-V host, SCVMM or Hyper-V cluster) | ✓ | ✓ | ✕ | ✓ |
 | Microsoft SMB3 server | ✓ | ✕ | ✕ | ✕ |
 | Microsoft Windows server | ✕ | ✕ | ✓ | ✓ |
