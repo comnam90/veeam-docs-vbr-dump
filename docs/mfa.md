@@ -3,14 +3,14 @@ title: "Multi-Factor Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mfa.html"
-last_updated: "3/19/2026"
+last_updated: "4/10/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Multi-Factor Authentication
 
 
-Veeam Backup & Replication supports multi-factor authentication (MFA) for additional user verification. A one-time password (OTP) generated in a mobile authenticator application is used as a second verification method. Combined with login and password credentials, it creates a more secure environment and protects user accounts from being compromised.
+Veeam Backup & Replication supports multi-factor authentication (MFA) for additional user verification when logging into the remote console and web UI. A one-time password (OTP) generated in a mobile authenticator application is used as a second verification method. Combined with login and password credentials, it creates a more secure environment and protects user accounts from being compromised.
 
 The feature includes:
 
@@ -23,9 +23,9 @@ The feature includes:
 | Tip |
 | Multi-factor authentication is compatible with mobile authentication applications that support [RFC4226](https://www.ietf.org/rfc/rfc4226.txt) and [RFC6238](https://datatracker.ietf.org/doc/html/rfc6238). |
 
-Requirements and Limitations
+Requirements and Considerations
 
-MFA has the following requirements and limitations:
+MFA has the following requirements and considerations:
 
 * Only users with the Veeam Backup Administrator role can manage MFA.
 * MFA is not supported in the Veeam Backup & Replication Community Edition.
@@ -44,6 +44,7 @@ To avoid connection issues, you must disable MFA for the accounts used to run th
 * To restore the configuration database properly, run the Veeam Backup & Replication console or Veeam Backup Configuration Restore application under the service account with disabled MFA.
 * If a service provider (SP) uses Veeam Service Provider Console and wants to use multi-factor authentication on the SP backup server, they must set up a service account in Veeam Backup & Replication. For more information, see [this Veeam KB article](https://www.veeam.com/kb4431).
 * Mobile push notifications are not supported. You can get an OTP code only in the mobile authenticator application.
+* If you use a Linux-based backup server, user accounts with access to the Veeam Host Management console and the remote console/web UI require two separate entries in your authenticator application. This is because secret keys are not shared between the interfaces. For more information on managing MFA in the Veeam Host Management console, see [Managing User Authentication](hmc_manage_user_auth.md).
 
 How MFA Works
 
