@@ -3,7 +3,7 @@ title: "Automating Installation with Initial Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_silent_deploy_configure.html"
-last_updated: "4/9/2026"
+last_updated: "4/10/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -72,7 +72,7 @@ To automate the installation and configuration of Veeam Software Appliance, do t
 | --- |
 | cat << EOF >> /etc/systemd/system/veeam-init.service  [Unit]  Description=One-shot daemon to run /opt/veeam/hostmanager/veeamhostmanager at next boot  [Service]  Type=oneshot  ExecStart=/etc/veeam/veeam-init.sh  RemainAfterExit=no  [Install]  WantedBy=multi-user.target  EOF  systemctl enable veeam-init.service |
 
-1. Repack the ISO.
+1. Repack the ISO. To rebuild the modified Veeam Software Appliance ISO image on Linux, you can use the free open-source utility [xorriso](https://www.gnu.org/software/xorriso/) (available for most Linux distributions and also works under Windows WSL).
 2. Mount the ISO file to the machine where you plan to install Veeam Software Appliance, or burn the ISO file to a flash drive or other removable storage device. If you plan to install Veeam Software Appliance on a virtual machine, use the built-in tools of the virtualization management software to mount the ISO file.
 
 |  |
