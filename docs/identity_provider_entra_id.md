@@ -3,7 +3,7 @@ title: "Configuring SAML Authentication for Microsoft Entra ID"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider_entra_id.html"
-last_updated: "3/19/2026"
+last_updated: "4/10/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -126,7 +126,5 @@ To add external users or groups to Veeam Backup & Replication and assign roles t
 5. In the Name field, enter the group name or user name in the UPN format, for example, john.doe@domain.com.
 6. From the Role drop-down list, select the role that you want to assign to this user or group.
 7. Click OK.
-
-![Configuring SAML Authentication for Microsoft Entra ID](images/saml_add_external_user.webp)
 
 
