@@ -3,7 +3,7 @@ title: "Changing Veeam Backup & Replication Service Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/service_account_change.html"
-last_updated: "4/9/2026"
+last_updated: "4/13/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -24,7 +24,7 @@ In some environments, you may need to run certain Veeam Backup & Replication ser
 
 Considerations and Limitations
 
-Before you change the Microsoft Windows service account, make sure that the new account meets all the service account and database access requirements. Check the following prerequisites:
+Before you change the Microsoft Windows service account, make sure that the new account meets all the requirements for the service account. Check the following prerequisites:
 
 * Ensure that the new account meets all the requirements for running Veeam Backup & Replication services, including logon rights and required local permissions. For more information on service account requirements, see [Specify Service Account Settings](install_vbr_account.md).
 * Confirm that the machine where Veeam Backup & Replication runs meets all installation prerequisites, including required Windows components and features necessary for the service account. For more information on installation prerequisites, see [Before You Begin](installation_byb.md).

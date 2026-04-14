@@ -3,8 +3,8 @@ title: "Set-VBRBackupRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrbackuprepository.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRBackupRepository
@@ -41,8 +41,9 @@ To modify an object storage backup repository, use cmdlets from the [Object Stor
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Repository | Specifies the backup repository you want to modify. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the name you want to assign to the backup repository. | String | False | Named | False |
 | Description | Specifies the description of the backup repository. | String | False | Named | False |
@@ -51,7 +52,6 @@ Parameters
 | ImmutabilityPeriod | For the immutability option.  Defines a number of days within which Veeam Backup & Replication will not delete blocks of data from the backup repository.  Default: 30 days. | Int32 | False | Named | False |
 | EnableBackupImmutability | Enables the immutability option for a backup repository.  Default: False. | SwitchParameter | False | Named | False |
 | NFSRepositoryEncoding | Specifies encoding for NFS share. You can specify either of the following values:   * utf * ansi | VBRNASEncoding | False | Named | False |
-| Force | Defines that the cmdlet will modify backup repository without showing warnings in the PowerShell console.  Default: False. | SwitchParameter | False | Named | False |
 | MountFolder | Specifies the path to the mount folder. Veeam Backup & Replication will use this folder to mount VM disks  and to keep write cache data. | String | False | Named | False |
 | MountServer | Specifies the mount server associated with the backup repository. You can assign the mount server role to the backup repository itself or to a server that resides close to the backup repository. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | MountServerOptions | Specifies the mount server settings for the servers that you plan to use as mount servers during the restore process. | Accepts the VBRRepositoryMountServerOptions[] object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
@@ -68,12 +68,14 @@ Parameters
 | DataRateLimit | Used for setting combined data ingestion rate for the LimitDatarate parameter.  Specifies the combined data ingestion rate for the repository.  Permitted value: 1 to 1024 (MByte/s). | Int32 | False | Named | False |
 | AlignDataBlocks | Defines that the backup blocks size will be aligned by a 4Kb block boundary. Data alignment provides better deduplication on storage systems with fixed block size.  Default: False. | SwitchParameter | False | Named | False |
 | DecompressDataBlocks | Defines that the backup data blocks must be decompressed before storing to the repository. | SwitchParameter | False | Named | False |
-| UsePerVMFile | This parameter is obsolete and is not supported.  Note: Backup repositories always create per-VM backup files. | SwitchParameter | False | Named | False |
+| DDServerName | Specifies the Data Domain server name. Enter the name in the following formats depending on the connection mode:   * If Dell Data Domain works over TCP/IP, enter a full DNS name or an IP address of the Dell Data Domain server. * If Dell Data Domain works over Fibre Channel, enter a name of the Data Domain server starting with the 'DFC-' prefix, for example, DFC-DataDomain690. | String | False | Named | Falses |
 | DDBoostEncryptionType | Specifies the native Dell Data Domain encryption level:   * High * Medium * None | VBRDDBoostEncryptionType | False | Named | False |
 | AffinityMode | Specifies what proxy affinity rules are set up for the backup repository:   * Auto — use this option if you want all backup proxies in the backup infrastructure to work with the backup repository. * Manual — use this option if you want backup proxies from the AffinityProxy list to work with the backup repository.   To configure proxy affinity settings, you must install Veeam Backup & Replication Enterprise or higher license on the backup server.  Default: Auto. | VBRProxyAffinityMode | False | Named | False |
 | AffinityProxy | Specifies the list of backup proxies that can work with the backup repository. Entries in the proxy affinity list are separated with a comma.  To configure proxy affinity settings, you must install Veeam Backup & Replication Enterprise or higher license on the backup server. | Accepts the CViProxy[] object. To get this object, run the [Get-VBRViProxy](get-vbrviproxy.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
 | EnableXFSFastClone | Enables the Fast Clone technology for the backup repository.  Default: False. | SwitchParameter | False | Named | False |
 | EnableReFSFastClone | Enables the ReFS Fast Clone technology for SMB backup repositories. | SwitchParameter | False | Named | False |
+| UsePerVMFile | This parameter is obsolete and is not supported.  Note: Backup repositories always create per-VM backup files. | SwitchParameter | False | Named | False |
+| Force | Defines that the cmdlet will modify backup repository without showing warnings in the PowerShell console.  Default: False. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
