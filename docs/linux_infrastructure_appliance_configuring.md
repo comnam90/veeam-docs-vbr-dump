@@ -3,8 +3,8 @@ title: "Configuring Veeam Infrastructure Appliance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_configuring.html"
-last_updated: "10/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Veeam Infrastructure Appliance
@@ -34,5 +34,7 @@ To do this, do one of the following:
 1. In the main menu, highlight Integration settings.
 2. Press [Delete] to delete the previous connection.
 3. Press [F1] to generate a pairing code.
+
+For more information on adding Veeam Infrastructure Appliance components, see [Adding Veeam Infrastructure Appliance](adding_via.md).
 
 
