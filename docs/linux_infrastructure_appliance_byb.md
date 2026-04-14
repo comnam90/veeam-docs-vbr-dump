@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "3/23/2026"
+last_updated: "4/13/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -44,7 +44,7 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 
 * In addition to the standard [system requirements](system_requirements.md) for a backup infrastructure component, the machine where Veeam Infrastructure Appliance is installed must also meet the following requirements:
 
-* [Hardened Repository only] Hardware RAID controllers must be used. Software RAID, Intel VMD VROC, and FakeRAID controllers are not supported.
+* Hardware RAID controllers must be used. Software RAID, Intel VMD VROC, and FakeRAID controllers are not supported.
 * UEFI Secure Boot must be enabled.
 
 * SSDs are strongly recommended for machines with the backup repository or hardened repository role assigned.
