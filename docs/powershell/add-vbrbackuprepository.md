@@ -3,8 +3,8 @@ title: "Add-VBRBackupRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrbackuprepository.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRBackupRepository
@@ -50,14 +50,14 @@ To add a scale-out backup repository, run the [Add-VBRScaleOutBackupRepository](
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
 | Folder | Specifies the full path to the folder where you want to store the backups. | String | True | Named | False |
 | Type | Specifies the type you want to assign to the repository:   * WinLocal * LinuxLocal * CifsShare * ExaGrid * DataDomain * HPStoreOnceIntegration * Quantum * Nfs * Infinidat * Fujitsu * HPStoreOnceCloudBank * Hardened | VBRRepositoryType | True | Named | False |
 | ImmutabilityPeriod | For the immutability option.  Defines a number of days within which Veeam Backup & Replication will not delete blocks of data from the backup repository.  Default: 30 days. | Int | False | Named | False |
 | EnableBackupImmutability | Enables the immutability option for a backup repository.  Default: False. | SwitchParameter | False | Named | False |
 | NFSRepositoryEncoding | Specifies encoding for NFS share. You can specify either of the following values:   * utf * ansi | VBRNASEncoding | False | Named | False |
-| Force | Defines that the cmdlet will add a backup repository without showing warnings in the PowerShell console.  Default: False. | SwitchParameter | False | Named | False |
 | Name | Specifies the name you want to assign to the new backup repository. | String | False | Named | False |
 | Description | Specifies the description of the backup repository. | String | False | Named | False |
 | Server | Specifies the host where the backup repository you want to add is located and host that will be used as gateway servers.  Use this parameter to explicitly set the host for the following repository types:   * WinLocal: to specify a Windows based server where you want to create the backup repository or to which you want to connect the rotated drives. * LinuxLocal type: to specify a Linux based server where you want to create the backup repository or to which you want to connect the rotated drives.   Note: when you specify an array of hosts, the first host is used as a backup repository, the others are used as gateway servers.   * CifsShare, DataDomain or HPStoreOnce: to specify a Windows based server to which the storage appliance is connected and which will be used as a gateway server.   Default: This server. | Accepts the CHost[] object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
@@ -72,6 +72,7 @@ Parameters
 | VPowerNFSPort | Specifies the port number of the vPower NFS Service. Veeam Backup & Replication will set up a direct connection between the backup repository and ESXi to which the vPower NFS datastore is mounted.  Default: 2049. | Int | False | Named | False |
 | MountPort | Specifies the port number of the mount server.  Default: 1058. | Int | False | Named | False |
 | DDServerName | Specifies the Data Domain server name. Enter the name in the following formats depending on the connection mode:   * If Dell Data Domain works over TCP/IP, enter a full DNS name or an IP address of the Dell Data Domain server. * If Dell Data Domain works over Fibre Channel, enter a name of the Data Domain server starting with the 'DFC-' prefix, for example, DFC-DataDomain690. | String | False | Named | False |
+| DDBoostEncryptionType | Specifies the native Dell Data Domain encryption level:   * High * Medium * None | VBRDDBoostEncryptionType | False | Named | False |
 | StoreOnceServerName | Specifies the HPE StoreOnce server name. | String | False | Named | False |
 | StoreOnceWanLink | Defines that the HPE StoreOnce must use source-side deduplication.  Default: False. | SwitchParameter | False | Named | False |
 | LimitConcurrentJobs | Defines that the number of concurrent jobs using this repository must be limited.  Use the MaxConcurrentJobs parameter to set the maximum value.  Default: True. | SwitchParameter | False | Named | False |
@@ -80,13 +81,13 @@ Parameters
 | DataRateLimit | Used for setting combined data ingestion rate for the LimitDatarate parameter.  Specifies the combined data ingestion rate for the repository.  Permitted value: 1 to 1024 (MByte/s). | Int | False | Named | False |
 | AlignDataBlocks | Defines that the backup blocks size will be aligned by a 4Kb block boundary. Data alignment provides better deduplication on storage systems with fixed block size.  Default: False. | SwitchParameter | False | Named | False |
 | DecompressDataBlocks | Defines that the backup data blocks must be decompressed before storing to the repository.  Default: False. | SwitchParameter | False | Named | False |
-| UsePerVMFile | This parameter is obsolete and is not supported.  Note: Backup repositories always create per-VM backup files. | SwitchParameter | False | Named | False |
-| DDBoostEncryptionType | Specifies the native Dell Data Domain encryption level:   * High * Medium * None | VBRDDBoostEncryptionType | False | Named | False |
 | UserName | Specifies the user name you want to use for authenticating with the backup repository host. | String | False | Named | False |
 | Password | Specifies the password you want to use for authenticating with the backup repository host. | String | False | Named | False |
 | Credentials | Specifies the credentials you want to use for authenticating with the backup repository host. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
 | EnableXFSFastClone | Enables the Fast Clone technology for the backup repository.  Default: False. | SwitchParameter | False | Named | False |
 | EnableReFSFastClone | Enables the ReFS Fast Clone technology for SMB backup repositories. | SwitchParameter | False | Named | False |
+| UsePerVMFile | This parameter is obsolete and is not supported.  Note: Backup repositories always create per-VM backup files. | SwitchParameter | False | Named | False |
+| Force | Defines that the cmdlet will add a backup repository without showing warnings in the PowerShell console.  Default: False. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
