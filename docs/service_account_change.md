@@ -3,7 +3,7 @@ title: "Changing Veeam Backup & Replication Service Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/service_account_change.html"
-last_updated: "4/9/2026"
+last_updated: "4/14/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -24,7 +24,7 @@ In some environments, you may need to run certain Veeam Backup & Replication ser
 
 Considerations and Limitations
 
-Before you change the Microsoft Windows service account, make sure that the new account meets all the service account and database access requirements. Check the following prerequisites:
+Before you change the Microsoft Windows service account, make sure that the new account meets all the requirements for the service account. Check the following prerequisites:
 
 * Ensure that the new account meets all the requirements for running Veeam Backup & Replication services, including logon rights and required local permissions. For more information on service account requirements, see [Specify Service Account Settings](install_vbr_account.md).
 * Confirm that the machine where Veeam Backup & Replication runs meets all installation prerequisites, including required Windows components and features necessary for the service account. For more information on installation prerequisites, see [Before You Begin](installation_byb.md).
@@ -36,12 +36,15 @@ Changing Veeam Backup & Replication Service Account
 
 To change the Veeam Backup & Replication service account or service account password, perform the following steps for each supported service:
 
-1. On the Veeam Backup & Replication backup server, open the Start menu, type services.msc, and press [Enter] to launch the Services console.
-2. In the list of services, locate the required service (for example, Veeam Backup Service).
-3. Right‑click the service and click Stop. If the state remains Stopping, wait approximately 5 minutes for the process to complete.
-4. After the service stops, right-click the service and select Properties.
-5. On the Log On tab, select This account. Specify the new account and password and click Apply.
-6. Click Start to start the service.
-7. Repeat steps 2-6 for any other supported services that require the updated account.
+1. On the Veeam Backup & Replication backup server, open the Start menu, type services.msc. Press Enter to launch the Services window.
+2. In the Services window, do the following:
+
+1. In the list of services, locate the required service (for example, Veeam Backup Service).
+2. Right‑click the service and click Stop. If the state remains Stopping, wait approximately 5 minutes for the process to complete.
+3. After the service stops, right-click the service and select Properties.
+
+1. In the Properties window, go to the Log On tab. Select This account, specify the new account and password, and click Apply.
+2. In the Services window, click Start to restart the service.
+3. Repeat steps 2-4 for any other supported services that require the updated account.
 
 
