@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_used_ports.html"
-last_updated: "4/10/2026"
+last_updated: "4/14/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -84,7 +84,7 @@ Protected Workloads
 | Guest interaction proxy | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel. Note: This port NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | Connections for Persistent Agent Components | | | | |
 | Backup server | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel during persistent agent installation. |
-| TCP | 2500 to 3300 | Range of ports used only during the installation of the persistent agent.  Default range of ports used for communication with a guest OS. |
+| TCP | 2500 to 3300 | Range of ports used only during the installation of the persistent agent. |
 | Guest interaction proxy | VM guest OS (Linux) | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162 | Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 | Guest interaction proxy | VM guest OS (Windows) | TCP | 6160, 11731 | Default ports used by Veeam Installer Service.  Port 11731 is used for failover if port 6160 is unavailable. |
