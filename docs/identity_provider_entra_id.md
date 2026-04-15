@@ -3,7 +3,7 @@ title: "Configuring SAML Authentication for Microsoft Entra ID"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider_entra_id.html"
-last_updated: "4/10/2026"
+last_updated: "4/13/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -117,7 +117,9 @@ To assign users that will be able to access Veeam Backup & Replication using SSO
 
 Step 8. Add External User or Group
 
-To add external users or groups to Veeam Backup & Replication and assign roles to them, do the following:
+To add external users or groups to Veeam Backup & Replication and assign roles to them, do one of the following:
+
+* In the console:
 
 1. From the main menu, select Users & Roles.
 2. In the User & Roles window, select the Security tab.
@@ -126,5 +128,20 @@ To add external users or groups to Veeam Backup & Replication and assign roles t
 5. In the Name field, enter the group name or user name in the UPN format, for example, john.doe@domain.com.
 6. From the Role drop-down list, select the role that you want to assign to this user or group.
 7. Click OK.
+
+* In the web UI:
+
+1. From the top bar, select Configuration > Users & Roles.
+2. Click Add.
+3. From the Type drop-down list, select External User or External Group.
+4. In the Name field, enter the group name or user name in the UPN format, for example, john.doe@domain.
+
+|  |
+| --- |
+| Important |
+| When specifying a group name, do not include the domain. |
+
+1. From the Role drop-down list, select the role that you want to assign to this user or group.
+2. Click OK.
 
 
