@@ -3,8 +3,8 @@ title: "Creating Veeam Agent Backup Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_backup_agents.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Veeam Agent Backup Jobs
@@ -47,6 +47,8 @@ To create a Veeam Agent backup job:
 ![Creating Veeam Agent Backup Jobs](images/agent_job_protection_mode.webp)
 
 1. At the Name step of the wizard, specify a name and description for the backup job.
+
+To avoid problems with long paths, it is recommended to create job names not longer than 50 characters.
 
 ![Creating Veeam Agent Backup Jobs](images/agent_job_name.webp)
 
