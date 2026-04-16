@@ -3,7 +3,7 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html"
-last_updated: "4/8/2026"
+last_updated: "4/15/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -135,6 +135,7 @@ General Amazon S3 and S3 Compatible Object Storage Permissions
 
 Consider the following:
 
+* The permissions listed in the section for Amazon S3 and S3 Compatible are IAM policy actions. These may differ from the S3 API operation names used in the AWS SDK or API documentation. For more information, see [AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-with-s3-policy-actions.html#using-with-s3-policy-actions-related-to-buckets).
 * Use the account that has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the [New Object Repository](adding_amazon_object_storage.md) wizard.
 

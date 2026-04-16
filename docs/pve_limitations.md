@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_limitations.html"
-last_updated: "4/10/2026"
+last_updated: "4/15/2026"
 product_version: "13.0.1.2067"
 ---
 

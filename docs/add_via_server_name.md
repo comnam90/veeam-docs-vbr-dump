@@ -3,8 +3,8 @@ title: "Step 2. Specify Server Name or Address"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_via_server_name.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Specify Server Name or Address
@@ -51,6 +51,11 @@ To let you identify the server, Veeam Backup & Replication displays the TLS key 
 
 + If you trust the server and want to connect to it, click Yes.
 + If you do not trust the server, click No. Veeam Backup & Replication will display an error message, and you will not be able to connect to the server.
+
+|  |
+| --- |
+| Note |
+| If you specify a Veeam Infrastructure Appliance that was previously connected to a different Veeam Backup & Replication installation, you will be prompted to enter a pairing code. For more information, see [Configuring Veeam Infrastructure Appliance](linux_infrastructure_appliance_configuring.md). |
 
 ![Step 2. Specify Server Name or Address](images/via_add_certificate.webp)
 

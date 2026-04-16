@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vbr_before_you_begin.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -16,7 +16,7 @@ Before you start the restore process, check the following prerequisites:
 * Multi-factor authentication (MFA) for the user account must be disabled before launching configuration database restore wizard. To learn how to disable MFA, see [Multi-Factor Authentication](mfa.md).
 * Stop all jobs that are currently running. During restore of configuration, Veeam Backup & Replication temporary stops the Veeam Backup Service and jobs.
 * Save registry values that you changed or created on the backup server. After restore, you will need to recreate or change the keys manually because the configuration database does not store them.
-* Check the version of the backup server. On the backup server running Veeam Backup & Replication 13, you can restore configuration backups created with the following product versions: 13, 12, 11a, 11 and 10a.
+* Check the version of the backup server. On the backup server running Veeam Backup & Replication 13, you can restore configuration backups created with Veeam Backup & Replication version 12.3.1.1139 or later.
 * Make sure that the certificate chain restored from a configuration backup will successfully pass validation on the target backup server. This precaution is required if the following conditions are met:
 
 1. You want to restore configuration database of a backup server used in the Veeam Agent management scenario.

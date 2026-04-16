@@ -3,14 +3,14 @@ title: "Copying Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copy_backup.html"
-last_updated: "12/21/2023"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Copying Backups
 
 
-Copying backups can be helpful if you want to copy backups of a workload or backup job to another repository, local or shared folder. Veeam Backup & Replication copies the whole backup chain. If you want to convert a specific restore point into a single VBK file, use backup export. For more information, see [Exporting Backups](exporting_backups.md).
+Copying backups can be helpful if you want to copy backups of a workload or backup job to another repository or local folder. Veeam Backup & Replication copies the whole backup chain. If you want to convert a specific restore point into a single VBK file, use backup export. For more information, see [Exporting Backups](exporting_backups.md).
 
 When Veeam Backup & Replication performs the copy operation, it disables the job, copies files to the target location and then enables the job. After the copy operation finishes, the copied backups are shown in a node with the (Exported) postfix in the [inventory pane](vbr_ui.md).
 
@@ -24,12 +24,13 @@ Requirements and Limitations
 Consider the following:
 
 * The copy operation does not change the [backup chain format](per_vm_backup_files.md) (single-file backup, per-machine with single metadata file or per-machine with separate metadata files). If you copy backups between repositories with and without the Use per-machine backup files check box enabled, backups preserve their formats.
-
-* If you copy backups from a scale-out backup repository and some backups are stored on extents in the Maintenance mode, such backups are not copied.
+* Backups with [transaction log backups](https://helpcenter.veeam.com/docs/vbr/userguide/guest_processing.html?ver=13#:~:text=Transaction%20log%20backup) configured copy both image-level and transaction log backups during the copy backup operation. Ensure there is sufficient free space in the target repository.
 
 * If you copy a backup chain to a repository with different immutability or retention settings, Veeam Backup & Replication will replace the source repository settings with the settings of the target repository for that specific backup chain.
 
 * Veeam Backup & Replication copies backups only from the performance tier of the scale-out backup repository. If you want to copy data from the capacity tier, you first must download it to the performance tier. For more information, see [Downloading Data from Capacity Tier](downloading_from_capacity_tier.md).
+
+* If you copy backups from a scale-out backup repository and some backups are stored on extents in the Maintenance mode, such backups are not copied.
 
 * You cannot copy backups between extents of a scale-out backup repository. To learn how to manage backups within the scale-out backup repository, see [Scale-Out Backup Repositories](backup_repository_sobr.md).
 

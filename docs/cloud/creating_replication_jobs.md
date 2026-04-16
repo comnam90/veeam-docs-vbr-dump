@@ -3,8 +3,8 @@ title: "Creating Replication Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/creating_replication_jobs.html"
-last_updated: "11/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Replication Jobs
@@ -21,7 +21,10 @@ To create a replication job:
 
 1. On the Home tab, click Replication Job and select Virtual machine > VMware vSphere or Virtual machine > Microsoft Hyper-V.
 2. At the Name step of the wizard, specify a name and description for the replication job.
-3. If you want to use advanced settings for the job:
+
+It is recommended to create job names not longer than 50 characters.
+
+1. If you want to use advanced settings for the job:
 
 * Select the Replica seeding check box to enable the Seeding step in the wizard.
 * Select the Network remapping check box to enable the Network step in the wizard. Veeam Backup & Replication does not currently support automatic connection of a Linux-based VM replica to the network on the cloud host. You must use the Network step of the wizard to manually select source and target networks for such replicas.
