@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_before_you_begin.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -55,6 +55,6 @@ For storing the configuration database, we recommend using a dedicated NVME driv
 |  |
 | --- |
 | Important |
-| Do not back up to tape large number of files (over 1 000 000 files in 1 000 folders) in one tape job if your Veeam backup server uses Microsoft SQL Server Express edition. Processing a large number of files will result in considerable performance penalty. Note that the usage of Microsoft SQL Server Express Edition is limited by the database size up to 10 GB. If you plan to have larger databases, use other editions of Microsoft SQL Server or PostgreSQL. |
+| Do not back up to tape large number of files (over 1 000 000 files in 1 000 folders) in one tape job if your Veeam backup server uses Microsoft SQL Server Express edition. Processing a large number of files will result in considerable performance penalty. Note that the usage of Microsoft SQL Server 2025 Express Edition is limited by the database size up to 50 GB (up to 10 GB for earlier versions of Microsoft SQL Server Express Edition). If you plan to have larger databases, use other editions of Microsoft SQL Server or PostgreSQL. |
 
 
