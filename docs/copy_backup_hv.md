@@ -3,14 +3,14 @@ title: "Copying Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/copy_backup_hv.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Copying Backups
 
 
-Copying backups can be helpful if you want to copy backups of a workload or backup job to another repository, local or shared folder. Veeam Backup & Replication copies the whole backup chain. If you want to convert a specific restore point into a single VBK file, use backup export. For more information, see [Exporting Backups](exporting_backups_hv.md).
+Copying backups can be helpful if you want to copy backups of a workload or backup job to another repository or local folder. Veeam Backup & Replication copies the whole backup chain. If you want to convert a specific restore point into a single VBK file, use backup export. For more information, see [Exporting Backups](exporting_backups_hv.md).
 
 When Veeam Backup & Replication performs the copy operation, it disables the job, copies files to the target location and then enables the job. After the copy operation finishes, the copied backups are shown in a node with the (Exported) postfix in the [inventory pane](vbr_ui.md).
 
