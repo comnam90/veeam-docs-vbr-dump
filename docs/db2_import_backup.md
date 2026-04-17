@@ -3,8 +3,8 @@ title: "Importing Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_import_backup.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Importing Backup Files
@@ -51,7 +51,7 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 * In case of capacity tier, the backups are displayed under the Backups > Capacity Tier (Imported) node in the inventory pane.
 * In case of object storage, the backups are displayed under the Backups > Object Storage (Imported) node in the inventory pane.
 
-[![Rescan Backup Repository](images/repo_rescan.webp)](images/repo_rescan.webp "Rescan Backup Repository")
+[![Rescan Backup Repository](images/plugins_repo_rescan.webp)](images/plugins_repo_rescan.webp "Rescan Backup Repository")
 
 1. On the IBM Db2 server, set the new repository as a target in the Veeam Plug-In settings:
 
