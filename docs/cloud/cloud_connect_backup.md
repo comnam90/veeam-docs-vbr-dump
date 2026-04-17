@@ -3,8 +3,8 @@ title: "Creating VM Backup Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_backup.html"
-last_updated: "1/30/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating VM Backup Jobs
@@ -25,6 +25,8 @@ To create a backup job:
 
 1. On the Home tab, click Backup Job and select Virtual machine > VMware vSphere or Virtual machine > Microsoft Hyper-V.
 2. At the Name step of the wizard, specify a name and description for the backup job.
+
+To avoid problems with long paths, it is recommended to create job names not longer than 50 characters.
 
 ![Creating VM Backup Jobs](images/vm_backup_job_name.webp)
 
