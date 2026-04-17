@@ -3,8 +3,8 @@ title: "Creating Universal CDP Policies"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/creating_universal_cdp_policies.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Universal CDP Policies
@@ -21,7 +21,10 @@ To create a universal CDP policy:
 
 1. On the Home tab, click CDP Policy and select Universal CDP.
 2. At the Name step of the wizard, specify a name and description for the CDP policy.
-3. If you want to use advanced settings for the CDP policy, select the Network remapping check box to enable the Network step in the wizard.
+
+To avoid problems with long paths, it is recommended to create policy names not longer than 50 characters.
+
+1. If you want to use advanced settings for the CDP policy, select the Network remapping check box to enable the Network step in the wizard.
 
 ![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_name.webp)
 
