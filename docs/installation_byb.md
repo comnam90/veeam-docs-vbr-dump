@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installation_byb.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -38,7 +38,7 @@ It is recommended to run the database engine instance locally to eliminate laten
 * High Availability. SQL Clustering and Always On Availability Group on external SQL Servers can be used for high availability of the configuration database. To learn about the configuration details, see [this Veeam KB article](https://www.veeam.com/kb2301).
 * Licensing. Some enterprises have dedicated virtual clusters for SQL Servers due to licensing constraints. In such cases, you can place the Veeam configuration database on an existing instance to lower the total cost of ownership.
 
-* If you prefer to use an Express Edition of Microsoft SQL Server as your database engine, note that its usage is limited by 10 GB of configuration database. The Express Edition is enough for evaluation purposes and not very large environments (<500 VMs). If your infrastructure is large (more than 500 VMs), you may consider to install a Microsoft SQL Server in advance.
+* If you prefer to use an Express Edition of Microsoft SQL Server as your database engine, note that its database is limited to 50 GB for Microsoft SQL Server 2025 or 10 GB for Microsoft SQL Server 2022 and earlier versions. The Microsoft SQL Server 2025 Express Edition is enough for evaluation purposes and environments up to 2500 VMs. If your infrastructure has more than 2500 VMs, you may consider installing a Microsoft SQL Server in advance.
 * If Microsoft SQL Server is installed by the previous product version, Veeam Backup & Replication will connect to the existing configuration database, upgrade it (if necessary) and use it for work.
 
 * If you already have an installed instance of PostgreSQL and want to use it for the configuration database, ensure that the LocalSystem account is added to your PostgreSQL configuration to successfully run the installation of Veeam Backup & Replication.
