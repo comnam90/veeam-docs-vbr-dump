@@ -3,14 +3,14 @@ title: "Restore to Another Server (System Copy)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sap_orcl_other_server.html"
-last_updated: "2/18/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/10/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore to Another Server (System Copy)
 
 
-You can restore Oracle databases from Veeam Plug-In backups to another server. To restore databases to another server, you must specify an authentication method to access the backup created for the original server and then select the backup from which you want to restore a database.
+You can restore Oracle databases from Veeam Plug-In backups to other servers. To restore databases to another server, you must specify an authentication method to access the backup created for the original server and then select the backup from which you want to restore a database.
 
 Veeam Plug-In supports the following authentication methods to access backups:
 
