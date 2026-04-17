@@ -3,8 +3,8 @@ title: "Creating Tenant Backup to Tape Job"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_backup_to_tape_backup.html"
-last_updated: "11/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Tenant Backup to Tape Job
@@ -30,6 +30,8 @@ To create a backup to tape job:
 
 1. On the Home tab, click Tape Job and select Backups.
 2. At the Name step of the wizard, specify a name and description for the backup to tape job.
+
+To avoid problems with long paths, it is recommended to create job names not longer than 50 characters.
 
 ![Creating Tenant Backup to Tape Job](images/cc_tape_name.webp)
 
