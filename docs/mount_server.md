@@ -3,8 +3,8 @@ title: "Mount Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Mount Servers
@@ -17,6 +17,7 @@ The mount server is required if you perform the following operations:
 * [Guest OS file restore](guest_file_recovery.md)
 * [Application items restore](restore_veeam_explorers.md)
 * [Secure restore](av_scan_about.md)
+* [Scan Backup](malware_detection_scan_backup.md)
 * [Instant recovery](instant_recovery.md)
 * [Instant disk recovery](instant_disk_recovery.md)
 * [Instant file share recovery](performing_instant_file_share_recovery.md)
