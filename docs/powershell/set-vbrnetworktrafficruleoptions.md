@@ -3,8 +3,8 @@ title: "Set-VBRNetworkTrafficRuleOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnetworktrafficruleoptions.html"
-last_updated: "3/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRNetworkTrafficRuleOptions
@@ -30,8 +30,9 @@ This cmdlet modifies settings of global network traffic rules.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | EnableMultipleUploadStreams | Enables multithreaded data transfer. | SwitchParameter | False | Named | False |
 | StreamsPerJobCount | Specifies a number of TCP/IP transfer connection for every job session. | Int32 | False | Named | False |
 | EnableIPv6 | Enables the IPv4/IPv6 dual stack mode is enabled or disabled. | SwitchParameter | False | Named | False |
@@ -48,10 +49,10 @@ Examples
 
 Modifying Settings of Global Network Traffic Rules
 
-This command enables multithreaded data transfer and sets a number of TCP/IP transfer connection for every job session to 8.
+This command enables multithreaded data transfer, sets a number of TCP/IP transfer connection for every job session to 8, and disables IPv6.
 
 |  |
 | --- |
-| Set-VBRNetworkTrafficRuleOptions -EnableMultipleUploadStreams -StreamsPerJobCount 8 |
+| Set-VBRNetworkTrafficRuleOptions -EnableMultipleUploadStreams -StreamsPerJobCount 8 -EnableIPv6:$false |
 
 
