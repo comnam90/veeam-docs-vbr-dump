@@ -3,8 +3,8 @@ title: "Tape Parallel Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/parallel_processing.html"
-last_updated: "1/15/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Tape Parallel Processing
@@ -59,6 +59,8 @@ Example 1. Processing Two Tape Jobs with Multiple Source Jobs
 
 Tape job A occupies drive 1. Tape job B occupies two other available drives and processes two source jobs. Tape job A finishes and releases drive 1, the third source job from tape job B occupies drive 1.
 
+The order in which VMs are queued for processing is defined by the schedule configured for running tape jobs and the order of source jobs within each tape job. Within each source job, VMs are processed in alphabetical order.
+
 ![Tape Parallel Processing](images/parallel_processing_mixed_source.webp)
 
 If a source job produces multiple per-machine backups, the media pool processes several per-machine backup chains simultaneously. For more information about per-machine backup files, see [Backup Chain Formats](per_vm_backup_files.md).
@@ -70,7 +72,7 @@ Example 2. Processing One Tape Job with One Source Job for Four VMs
 
 Tape job A starts and occupies all three available drives. It writes each separate VM of the source job by a separate drive. After tape job A finishes writing one of the current VMs and releases one of the three available drives, it occupies this drive with writing VM4. In other words, if a job with per-machine chains is configured to process more VMs than there are drives available, it occupies the entire media pool.
 
-The order in which VMs are queued for processing is defined by the order of VMs within each source job, by the order of source jobs within each tape job and the schedule configured for running tape jobs.
+VMs are queued for processing in alphabetical order.
 
 ![Tape Parallel Processing](images/parallel_processing_mixed_source_with_perVM.webp)
 

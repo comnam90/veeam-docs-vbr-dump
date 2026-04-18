@@ -3,8 +3,8 @@ title: "Get-VBRBackupServerCertificate"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrbackupservercertificate.html"
-last_updated: "1/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRBackupServerCertificate
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Add-VBRBackupServerCertificate -Certificate <VBRBackupServerCertificate>  [-WhatIf] [-Confirm] [<CommonParameters>] |
+| Get-VBRBackupServerCertificate -Certificate <VBRBackupServerCertificate>  [-WhatIf] [-Confirm] [<CommonParameters>] |
 
 * Get the TLS current certificate.
 
 |  |
 | --- |
-| Add-VBRBackupServerCertificate -Name <String>  [-WhatIf] [-Confirm]  [<CommonParameters>] |
+| Get-VBRBackupServerCertificate -Name <String>  [-WhatIf] [-Confirm]  [<CommonParameters>] |
 
 * Get the TLS certificate from a PFX file.
 
@@ -46,8 +46,9 @@ This cmdlet returns the TLS certificates.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | FromStore | Defines that the cmdlet will return the TLS certificate present in the local certificate store on this server. If you run the cmdlet without this parameter, it will return the certificate that is currently used. | SwitchParameter | True | Named | False |
 | Path | Specifies a path to the PXF file. The cmdlet will return TLS certificate that are available at this path. | String | True | Named | False |
 | Password | Specifies a password for a PXF file. | SecureString | False | Named | False |

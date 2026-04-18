@@ -3,16 +3,14 @@ title: "Step 4. Apply Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_s3_aws_apply.html"
-last_updated: "11/7/2023"
-product_version: "13.0.1.1071"
+last_updated: "4/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Apply Object Storage Settings
 
 
 At the Apply step of the wizard, wait till Veeam Backup & Replication installs and configures all required components and adds the object storage to the inventory of the virtual infrastructure. Click Next to proceed.
-
-At the Apply step of the wizard, wait till Veeam Backup & Replication installs and configures all required components and adds the object storage to the backup infrastructure. Click Next to proceed.
 
 ![Step 4. Apply Object Storage Settings](images/snippet_os_s3_aws_apply.webp)
 

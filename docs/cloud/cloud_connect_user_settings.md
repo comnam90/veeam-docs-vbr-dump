@@ -3,8 +3,8 @@ title: "Step 2. Specify Tenant Settings"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user_settings.html"
-last_updated: "4/10/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 2. Specify Tenant Settings
@@ -14,7 +14,7 @@ At the Tenant step of the wizard, specify tenant account and lease settings for 
 
 1. In the Username field, specify a name for the created tenant account. The user name must meet the following requirements:
 
-* The maximum length of the user name is 128 characters. It is recommended that you create short user names to avoid problems with long paths to backup files on the cloud repository.
+* The maximum length of the user name is 128 characters. To avoid problems with long paths to backup files on the cloud repository, it is recommended to create user names not longer than 50 characters.
 * The user name may contain space characters.
 * The user name must not contain the following characters: +][,\/:\*?\"<>|=;@ as well as ASCII symbols.
 * The user name must not end with the period character [.].

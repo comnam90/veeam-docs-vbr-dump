@@ -3,8 +3,8 @@ title: "Creating Backup Copy Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_backup_copy.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Backup Copy Jobs
@@ -27,6 +27,8 @@ To create a backup copy job:
 * Select the Immediate copy option to copy new restore points and, if required, database log backups as soon as they appear in the source backup repository.
 
 * Select the Periodic copy option to copy the most recent restore points according to a specified schedule.
+
+To avoid problems with long paths, it is recommended to create job names not longer than 50 characters.
 
 ![Creating Backup Copy Jobs](images/backup_copy_name.webp)
 

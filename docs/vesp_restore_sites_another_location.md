@@ -3,14 +3,14 @@ title: "Restoring Sites to Another Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_restore_sites_another_location.html"
-last_updated: "10/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring Sites to Another Location
 
 
-You can restore Microsoft SharePoint sites to other [Microsoft 365 organizations](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_office365_org.html?ver=80) and [on-premises Microsoft organizations](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_onpremises_org.html?ver=80).
+You can restore Microsoft SharePoint sites to other [Microsoft 365 organizations](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_office365_org.html?ver=8) and [on-premises Microsoft organizations](https://helpcenter.veeam.com/docs/vbo365/guide/vbo_add_onpremises_org.html?ver=8).
 
 In This Section
 

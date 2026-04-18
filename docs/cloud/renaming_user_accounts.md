@@ -3,8 +3,8 @@ title: "Renaming Tenant Accounts"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/renaming_user_accounts.html"
-last_updated: "4/17/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Renaming Tenant Accounts
@@ -20,8 +20,11 @@ To rename a tenant account (performed by the SP on the SP Veeam backup server):
 2. In the inventory pane, click Tenants.
 3. In the working area, right-click the necessary tenant and select Properties.
 4. At the Tenant step of the Edit Tenant wizard, specify a new name in the Username field.
-5. Click Finish to save the changes.
-6. [For Veeam Cloud Connect Backup] On the cloud repository, rename a subfolder where tenant backups are stored. For example, if the tenant was named Tenant1, and you changed the user name to Tenant2, you must find the Tenant1 subfolder on the cloud repository and rename it to Tenant2.
+
+The maximum length of the user name is 128 characters. To avoid problems with long paths to backup files on the cloud repository, it is recommended to create user names not longer than 50 characters.
+
+1. Click Finish to save the changes.
+2. [For Veeam Cloud Connect Backup] On the cloud repository, rename a subfolder where tenant backups are stored. For example, if the tenant was named Tenant1, and you changed the user name to Tenant2, you must find the Tenant1 subfolder on the cloud repository and rename it to Tenant2.
 
 |  |
 | --- |

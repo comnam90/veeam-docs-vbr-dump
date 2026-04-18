@@ -3,7 +3,7 @@ title: "Veeam Plug-Ins"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_plugins.html"
-last_updated: "3/11/2026"
+last_updated: "4/16/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -22,9 +22,9 @@ The machine where Veeam Plug-Ins will run must meet system requirements for the 
 Veeam Plug-Ins
 
 | Veeam Plug-In | Software |
-| Veeam Plug-In for AWS version 13.10.0.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for AWS User Guide](https://helpcenter.veeam.com/docs/vbaws/guide/system_requirements.html?ver=10). |
+| Veeam Plug-In for AWS version 13.10.0.xxx and later | The machine where Veeam Backup for AWS will run must meet system requirements described in section [Backup Infrastructure](system_requirements_backup_server.md). Additionally, the following software must be installed:   * Microsoft .NET Core Runtime 8.25 * Microsoft ASP.NET Core Shared Framework 8.25   For other system requirements of the plug-in, see [Workloads](platform_support_aws.md). |
 | Veeam Plug-In for Microsoft Azure version 13.8.1.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for Microsoft Azure User Guide](https://helpcenter.veeam.com/docs/vbazure/guide/system_requirements.html?ver=8.1). |
-| Veeam Plug-In for Google Cloud version 13.0.0.xxx and later1 | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Backup for Google Cloud User Guide](https://helpcenter.veeam.com/docs/vbgc/guide/system_requirements.html?ver=7). |
+| Veeam Plug-In for Google Cloud version 13.0.0.xxx and later1 | The machine where Veeam Plug-In for Google Cloud will run must meet system requirements described in section [Backup Infrastructure](system_requirements_backup_server.md). Additionally, the following software must be installed:   * Microsoft .NET Core Runtime 8.0 or later * Microsoft ASP.NET Core Shared Framework 8.0 or later   For other system requirements of the plug-in, see [Workloads](platform_support_google.md). |
 | Veeam Plug-In for Nutanix AHV version 13.9.0.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Plug-In for Nutanix AHV User Guide](https://helpcenter.veeam.com/docs/vbahv/userguide/system_requirements.html?ver=9). |
 | Veeam Plug-In for oVirt KVM version 13.7.0.xxx and later1 | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Plug-In for oVirt KVM User Guide](https://helpcenter.veeam.com/docs/vbrhv/userguide/system_requirements.html?ver=7). |
 | Veeam Plug-In for Proxmox Virtual Environment version 13.3.0.xxx and later | Microsoft .NET Core Runtime 8  Microsoft ASP.NET Core Shared Framework 8  For other system requirements of the plug-in, see the [Veeam Plug-In for Proxmox VE User Guide](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/system_requirements.html?ver=3). |
