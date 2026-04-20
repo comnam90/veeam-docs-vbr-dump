@@ -3,8 +3,8 @@ title: "Update-VBRUnstructuredBackupPath"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/update-vbrunstructuredbackuppath.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Update-VBRUnstructuredBackupPath
@@ -53,12 +53,13 @@ This cmdlet updates the data source for file backups and object storage backups.
 |  |
 | --- |
 | Important |
-| Consider the following:   * To correctly update the source file share path for a file backup job that has a configured secondary target, refer to the [Updating Source File Share Path for Backup Jobs with Secondary Target](https://helpcenter.veeam.com/docs/vbr/userguide/update_source_share_path.html?ver=13) section in the Veeam Backup & Replication User Guide. * To update the data source for object storage backups, the target data source must have the same path as the original data source. For example, if your original data source is "AWS 01" object storage with the "bucket01/Files/reports" location, and you want to change to target data source "AWS 02", it must also have the "bucket01/Files/reports" location. If you want to change the data source and location, run the [New-VBRObjectStorageBackupJobObject](new-vbrobjectstoragebackupjobobject.md) cmdlet. |
+| Consider the following:   * The cmdlet does not support file server type shares. * Cross-protocol path updates (for example, from SMB to NFS) are not supported. * To correctly update the source file share path for a file backup job that has a configured secondary target, refer to the [Updating Source File Share Path for Backup Jobs with Secondary Target](https://helpcenter.veeam.com/docs/vbr/userguide/update_source_share_path.html?ver=13) section in the Veeam Backup & Replication User Guide. * To update the data source for object storage backups, the target data source must have the same path as the original data source. For example, if your original data source is "AWS 01" object storage with the "bucket01/Files/reports" location, and you want to change to target data source "AWS 02", it must also have the "bucket01/Files/reports" location. If you want to change the data source and location, run the [New-VBRObjectStorageBackupJobObject](new-vbrobjectstoragebackupjobobject.md) cmdlet. |
+
+Parameters
 
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Backup | Specifies a file share backup or an object storage backup. The cmdlet will update the the data source for these backups. | Accepts the VBRUnstructuredBackup object. To get this object, run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. | True | Named | True (ByPropertyName, ByValue) |
 | SourceUnstructuredServer | Specifies data source of file share backup or object storage backup. The cmdlet will update this data source to a new data source. | Accepts the VBRUnstructuredServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | False |
 | SourceRootNASServerName | Specifies a new name of the root server. The cmdlet will add this name to a configuration database. | String | True | Named | False |
