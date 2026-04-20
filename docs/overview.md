@@ -3,7 +3,7 @@ title: "About Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview.html"
-last_updated: "3/9/2026"
+last_updated: "4/17/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -39,7 +39,7 @@ With Veeam Backup & Replication, you can back up and restore the following objec
 
 * [VMware vSphere VMs](backup.md)
 * [VMware Cloud Director VMs](vcloud_director_backup.md)
-* [Microsoft Hyper-V VMs](backup.md)
+* [Microsoft Hyper-V VMs](ms_hyperv.md)
 
 * [Nutanix AHV VMs](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
 * [oVirt VMs](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
