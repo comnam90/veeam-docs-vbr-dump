@@ -3,7 +3,7 @@ title: "Google Cloud"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_google.html"
-last_updated: "4/15/2026"
+last_updated: "4/17/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -13,10 +13,6 @@ product_version: "13.0.1.2067"
 Google Cloud APIs
 
 The backup appliance and worker instances must have outbound internet access to a number of Google Cloud APIs. For more information, see the Veeam Backup for Google Cloud User Guide, section [Google Cloud APIs](https://helpcenter.veeam.com/docs/vbgc/guide/google_cloud_apis.html?ver=7).
-
-Web Browsers
-
-Internet Explorer is not supported. To access the Veeam Backup for Google Cloud Web UI, use Microsoft Edge (latest version), Mozilla Firefox (latest version) or Google Chrome (latest version).
 
 Version Compatibility
 
