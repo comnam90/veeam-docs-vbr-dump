@@ -3,8 +3,8 @@ title: "SureBackup Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job.html"
-last_updated: "4/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # SureBackup Job
@@ -43,6 +43,7 @@ Related Topics
 * [Creating SureBackup Job](create_surebackup_job.md)
 * [Starting and Stopping SureBackup Job](surebackup_job_start.md)
 * [Viewing Recovery Verification Job Statistics](viewing_surebackup_stats.md)
+* [Starting SureBackup Job in Troubleshooting Mode](surebackup_job_troubleshooting.md)
 * [Creating SureBackup Session Reports](creating_surebackup_reports.md)
 
 
