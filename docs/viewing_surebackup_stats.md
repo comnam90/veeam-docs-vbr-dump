@@ -3,8 +3,8 @@ title: "Viewing Recovery Verification Job Statistics"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_surebackup_stats.html"
-last_updated: "9/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Viewing Recovery Verification Job Statistics
@@ -22,12 +22,7 @@ The job session window displays statistics for all VMs that are started during t
 
 After the verified VM is powered on, its name is displayed as a hyperlink. You can click the link to open the VM console to see what is happening inside the VM or perform manual testing.
 
-If some VM fails to be verified automatically, you can start it manually when this VM is powered off. To start a VM, right-click the VM in the list and select Start. If the application group has already been powered off by that time, it will be started again. After that, you can open the VMware Remote Console (VMRC) and perform verification and testing manually.
-
-|  |
-| --- |
-| Important |
-| VMware Remote Console is not included as part of Veeam Backup & Replication installation and must be installed separately. For details, see [Install the VMware Remote Console Application](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-38040DA5-2700-4D3F-8D7C-9996CCD6B2C7.html). |
+If some VM fails to be verified automatically, you can start it in the troubleshooting mode. For more information, see [Starting SureBackup Job in Troubleshooting Mode](surebackup_job_troubleshooting.md).
 
 If you enabled content analysis at the [Settings step](surebackup_job_settings_vm.md) of the SureBackup job wizard, you can view the detailed logging of the scan process. To view logs, click the Scan Log button that will appear at the bottom of the job session window after the scan is complete.
 
