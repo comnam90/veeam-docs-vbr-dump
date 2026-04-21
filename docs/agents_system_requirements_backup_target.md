@@ -3,8 +3,8 @@ title: "Backup Target"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_backup_target.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Target
@@ -23,19 +23,19 @@ Veeam Agent Backup Jobs Managed by Veeam Agent
 
 If you protect Veeam Agent computers by a backup job managed by Veeam Agent, you can store backups in repositories configured in the following locations:
 
-* Local (internal) storage of the protected computer (not recommended)
-* Direct attached storage (DAS), such as USB, eSATA or Firewire external drives, and raw device mapping (RDM) volumes
+* Local (internal) storage of the protected computer (not recommended).
+* Direct attached storage (DAS), such as USB, eSATA or Firewire external drives, and raw device mapping (RDM) volumes.
 
 |  |
 | --- |
 | IMPORTANT |
 | [For Veeam Agent for Microsoft Windows] Storage devices with the exFAT file system are not supported as a backup target. |
 
-* Network Attached Storage (NAS) able to represent itself as an SMB (CIFS) share
-* Network Attached Storage (NAS) able to represent itself as an NFS share (for backups of Linux and Unix computers only)
-* On-premises and cloud-based object storage (except backups of Unix computers)
-* Veeam Backup & Replication version 13.0.1 backup repository
-* Veeam Cloud Connect 13.0.1 cloud repository
+* Network Attached Storage (NAS) able to represent itself as an SMB (CIFS) share.
+* Network Attached Storage (NAS) able to represent itself as an NFS share (for backups of Linux and Unix computers only).
+* On-premises and cloud-based object storage. For more information and limitations, see [Backup to Object Storage](agents_object_storage.md).
+* Veeam Backup & Replication version 13.0.1 backup repository.
+* Veeam Cloud Connect 13.0.1 cloud repository.
 
 |  |
 | --- |
