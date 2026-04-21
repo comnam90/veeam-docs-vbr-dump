@@ -3,7 +3,7 @@ title: "Performing Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_data_recovery.html"
-last_updated: "3/26/2026"
+last_updated: "4/17/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 Entra ID offers the following restore operations:
 
-* [Tenant restore](entra_id_tenant_restore.md) — restore tenant items and their properties.
+* [Tenant restore](entra_id_tenant_restore.md) — restoretenant items and their properties.
 
 * [Tenant activity log restore](entra_id_log_restore.md) — restore audit and sign-in logs.
 

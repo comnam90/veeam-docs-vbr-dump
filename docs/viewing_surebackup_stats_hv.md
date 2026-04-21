@@ -3,8 +3,8 @@ title: "Viewing Recovery Verification Job Statistics"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_surebackup_stats_hv.html"
-last_updated: "9/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Viewing Recovery Verification Job Statistics
@@ -22,6 +22,8 @@ The job session window displays statistics for all VMs that are started during t
 
 After the verified VM is powered on, its name is displayed as a hyperlink. You can click the link to open the VM console to see what is happening inside the VM or perform manual testing.
 
-If some VM fails to be verified automatically, you can start it manually when this VM is powered off. To start a VM, right-click the VM in the list and select Start. If the application group has already been powered off by that time, it will be started again. After that, you can open the VM console and perform verification and testing manually. If you enabled content analysis at the [Settings step](surebackup_job_settings_hv.md) of the SureBackup job wizard, you can view the detailed logging of the scan process. To view logs, click the Scan Log button that will appear at the bottom of the job session window after the scan is complete.
+If some VM fails to be verified automatically, you can start it manually in the troubleshooting mode. For more information, see [Starting SureBackup Job in Troubleshooting Mode](surebackup_job_troubleshooting_hv.md).
+
+If you enabled content analysis at the [Settings step](surebackup_job_settings_hv.md) of the SureBackup job wizard, you can view the detailed logging of the scan process. To view logs, click the Scan Log button that will appear at the bottom of the job session window after the scan is complete.
 
 

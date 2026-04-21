@@ -3,8 +3,8 @@ title: "Support for Always On Availability Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/alwayson_support.html"
-last_updated: "12/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Support for Always On Availability Groups
@@ -23,7 +23,7 @@ Image-level Backup of Microsoft SQL Server VMs
 
 During an image-level backup of a Microsoft SQL Server VM, Veeam Backup & Replication requests and analyzes information about databases that are included in the Always On Availability Groups. Depending on the retrieved information, Veeam Backup & Replication creates a VSS snapshot with or without COPY\_ONLY flag. The VSS\_BS\_COPY flag for VSS snapshot is triggered if the VM represents a secondary node for at least one Always On Availability Group.
 
-Veeam Backup & Replication also detects to what cluster the database belongs. If the backup job does not include all VMs from the cluster, an information message will be issued.
+Veeam Backup & Replication also detects to which cluster a database belongs. If the backup job does not include all VMs from the cluster, Veeam Backup & Replication displays an informational message. Including all such VMs is not required for backup processing.
 
 Retrieved information is saved for further log identification.
 

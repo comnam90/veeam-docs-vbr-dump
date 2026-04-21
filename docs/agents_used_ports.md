@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_used_ports.html"
-last_updated: "4/2/2026"
+last_updated: "4/16/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -58,6 +58,8 @@ Communication with Veeam Backup Repositories
 | Gateway server | TCP | 6162, 2500 to 3300 | Ports used as data transmission channels.  Ports 137 to 139 are used by backup infrastructure components to communicate using NetBIOS if you use NetBIOS in your infrastructure.  Note: The port range 2500 to 3300 is optional. Only if port 6162 is unavailable, Veeam Agent uses the port range 2500 to 3300 for failover.  Tip: to learn about the ports required between gateway servers and backup repositories, see [Gateway Server](used_ports.md#gateway). |
 | Gateway server (Microsoft Windows) | TCP | 139, 445 |
 | UDP | 137, 138 |
+| Veeam backup repository,  Gateway server,  Mount server | Veeam Agent computer (Microsoft Windows) | TCP | 445, 6160, 6162 | Port 445 is used to connect to the Veeam Agent computer using credentials. If you use certificate-based authentication, you do not need port 445.  Ports 6160, 6162 are used for restore operations. |
+| Veeam backup repository,  Gateway server,  Mount server | Veeam Agent computer (Linux) | TCP | 6160, 6162 | Ports 6160, 6162 are used for restore operations. |
 
 Communication with Veeam Cloud Connect Repositories
 
@@ -108,7 +110,7 @@ Communication with Cloud Machines
 | HTTPS | AWS service endpoints:   * \*.amazonaws.com (for Global and Government regions) * \*.amazonaws.com.cn (for China region)   A complete list of connection endpoints can be found in [AWS Documentation](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). |
 | TCP | 80 | Port and endpoints used to verify the certificate status.  Keep in mind that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. The actual list of addresses can be found in the certificate itself. |
 | HTTP | Certificate verification endpoints:   * \*.amazontrust.com |
-| Veeam Backup & Replication, Microsoft Azure virtual machine with Veeam Agent | Microsoft Azure cloud | TCP | 443 | Port and endpoints used for communication from Veeam Backup & Replication and Microsoft Azure virtual machine to the Microsoft Azure cloud where the virtual machine is located.  Keep in mind that the <storage-account> part of the address must be replaced with your actual storage account URL, which can be found in the Azure management portal. |
+| Veeam Backup & Replication,  Microsoft Azure virtual machine with Veeam Agent | Microsoft Azure cloud | TCP | 443 | Port and endpoints used for communication from Veeam Backup & Replication and Microsoft Azure virtual machine to the Microsoft Azure cloud where the virtual machine is located.  Keep in mind that the <storage-account> part of the address must be replaced with your actual storage account URL, which can be found in the Azure management portal. |
 | HTTPS | Global region endpoints:   * management.azure.com * login.microsoftonline.com * <storage-account>.blob.core.windows.net * <storage-account>.queue.core.windows.net * core.windows.net   China region endpoints:   * management.chinacloudapi.cn * login.chinacloudapi.cn * <storage-account>.blob.core.chinacloudapi.cn * <storage-account>.queue.core.chinacloudapi.cn * core.chinacloudapi.cn   Government region endpoints:   * management.chinacloudapi.cn * login.microsoftonline.us * <storage-account>.blob.core.usgovcloudapi.net * <storage-account>.queue.core.usgovcloudapi.net * core.usgovcloudapi.net |
 | TCP | 80 | Port and endpoints used to verify the certificate status.  Keep in mind that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. The actual list of addresses can be found in the certificate itself. |
 | HTTP | Certificate verification endpoints:   * \*.digicert.com * \*.digicert.cn (for China region) * oneocsp.microsoft.com * microsoft.com/pkiops |

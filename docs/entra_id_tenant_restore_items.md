@@ -3,7 +3,7 @@ title: "Step 2. Choose Items to Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore_items.html"
-last_updated: "3/30/2026"
+last_updated: "4/17/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -16,7 +16,7 @@ In the Microsoft Entra ID Tenant Restore wizard, switch to the necessary tab and
 
 Veeam Backup for Microsoft Entra ID allows you to restore multiple items at a time. However, keep in mind that your selection is discarded when you switch between tabs since restoring different item types simultaneously is not supported.
 
-* If you want to restore properties of an item, select this item and click Restore > Metadata comparison.
+* If you want to restore properties of an item, select this item and click Restore > Metadata comparison. Alternatively, right-click the item and select Restore > Metadata comparison.
 
 Veeam Backup for Microsoft Entra ID allows you to restore multiple properties at a time. However, keep in mind that restoring properties of different items simultaneously is not supported.
 

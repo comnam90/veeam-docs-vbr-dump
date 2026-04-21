@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_limitations.html"
-last_updated: "4/16/2026"
+last_updated: "4/20/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -61,7 +61,7 @@ When protecting Proxmox VE resources, consider the following:
 * Veeam Plug-in for Proxmox VE does not support backup of VMs created from [templates as linked clones](https://pve.proxmox.com/wiki/VM_Templates_and_Clones#Linked_Clone). Backup of full clones is supported.
 * Veeam Plug-in for Proxmox VE does not support backup of VMs with the same BIOS UUID.
 
-* Veeam Plug-in for Proxmox VE does not support backup of iSCSI disks. If iSCSI disks are attached to a VM included into a backup job, these disks will be skipped from processing.
+* Veeam Plug-in for Proxmox VE does not support backup of iSCSI disks attached to VMs — such disks are skipped from backup processing.
 * Veeam Plug-in for Proxmox VE does not support backup of directly attached (passthrough) disks. If such disks are attached to a VM included into a backup job, these disks will be skipped from processing.
 * Veeam Plug-in for Proxmox VE does not support backup of VM permissions granted to users, user groups and API tokens.
 
