@@ -3,7 +3,7 @@ title: "Viewing Tenant Machine Count"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_machine_count.html"
-last_updated: "4/9/2026"
+last_updated: "4/17/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -20,8 +20,8 @@ The SP can also use Veeam PowerShell and Veeam Backup Enterprise Manager REST AP
 * Veeam PowerShell displays the total number of tenant machines (excluding rental machines and new workloads) that have been processed by Veeam Backup & Replication in the past 31 days and use points in the license. To learn more, see the [Get-VBRCloudTenant](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudtenant.html?ver=13) section in the Veeam PowerShell Reference.
 * Veeam Backup Enterprise Manager REST API displays the number of machines per tenant that have been processed by Veeam Backup & Replication in the past 31 days and use points in the license. The number of rental machines and the number of new workloads are displayed separately for each tenant. To learn more, see the following sections in the Veeam Backup Enterprise Manager REST API Reference:
 
-* [/cloud/tenants/{ID}](https://helpcenter.veeam.com/docs/backup/em_rest/tenants_id.html?ver=120)
-* [GET /cloud/tenants/{ID}/freelicenseCounters](https://helpcenter.veeam.com/docs/backup/em_rest/get_cloud_tenants_id_freelicensecounters.html?ver=120)
+* [/cloud/tenants/{ID}](https://helpcenter.veeam.com/docs/vbr/em_rest/tenants_id.html?ver=13)
+* [GET /cloud/tenants/{ID}/freelicenseCounters](https://helpcenter.veeam.com/docs/vbr/em_rest/get_cloud_tenants_id_freelicensecounters.html?ver=13)
 
 |  |
 | --- |
