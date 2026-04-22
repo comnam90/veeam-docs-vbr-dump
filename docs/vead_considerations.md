@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_considerations.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -25,6 +25,7 @@ General
 * Veeam Explorer for Microsoft Active Directory must stay open during all data recovery operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
 
 * Veeam Explorer for Microsoft Active Directory does not support Active Directory Lightweight Directory Services (AD LDS).
+* When you launch Veeam Explorer for Microsoft Active Directory,  the Veeam Mount Service running on the mount server associated with the backup repository mounts the backed-up file system to the machine where the Explorer is running. The Veeam Mount Service unmounts the file system when you close the Explorer session.
 * Database files created by the domain controller can be opened for object recovery with Veeam Explorer for Microsoft Active Directory only if Veeam Explorer for Microsoft Active Directory is installed on a Windows machine with the same OS version or later than the version of the domain controller OS.
 * To open database files, Veeam Explorer for Microsoft Active Directory uses a service dynamic link library (Esent.dll) which is installed with Microsoft Active Directory Domain Services and can be found in the %SystemRoot% directory. The Esent.dll file on a machine with Veeam Explorer for Microsoft Active Directory must be of the same version as that of Microsoft Active Directory Domain Services that was used to create database files.
 
