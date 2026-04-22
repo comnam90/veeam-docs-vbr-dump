@@ -3,8 +3,8 @@ title: "Performing Instant Recovery of Workloads to Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_instant_recovery_ahv.html"
-last_updated: "1/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Instant Recovery of Workloads to Nutanix AHV
@@ -32,6 +32,7 @@ To recover machines to a Nutanix AHV cluster, you can use the following backups:
 * Backups of oVirt KVM VMs created by Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization
 
 * Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE
+* Backups of HPE Morpheus VM Essentials VMs created by Veeam Plug-in for HPE Morpheus VM Essentials
 
 Instant Recovery is not supported:
 

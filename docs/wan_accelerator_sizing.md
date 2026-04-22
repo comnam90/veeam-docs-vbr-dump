@@ -3,8 +3,8 @@ title: "WAN Accelerator Sizing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_accelerator_sizing.html"
-last_updated: "5/29/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # WAN Accelerator Sizing
@@ -18,27 +18,23 @@ To avoid problems caused by the lack of free space when switching from the High 
 
 Source WAN Accelerator
 
-When you run a remote job over WAN accelerators, Veeam Backup & Replication analyses data blocks going to target and calculates digests for these data blocks. Digests data is stored on the source WAN accelerator, in the VeeamWAN folder on the disk that you select when you configure the WAN accelerator.
+When you run a remote job over WAN accelerators, Veeam Backup & Replication analyses data blocks going to target and calculates digests for these data blocks. Digests data is stored on the source WAN accelerator, in the VeeamWAN folder on the disk that you select when you configure the WAN accelerator. You must make sure that there is enough disk space on the source WAN accelerator to store digest data.
 
-![WAN Accelerator Sizing](images/add_wan_accelerator_cache.webp)
-
-You must make sure that there is enough disk space on the source WAN accelerator to store digest data.
-
-The amount of disk space required for a source WAN accelerator operating in the Low bandwidth mode is calculated by the following formula:
+The minimum amount of disk space required for a source WAN accelerator operating in the Low bandwidth mode is calculated by the following formula:
 
 |  |
 | --- |
 | Digest Size = 2% of Provisioned VM Size |
 
-For example, if you plan to process 10 VMs whose provisioned size is 2 TB, you must allocate 40 GB of disk space for digest data on the source WAN accelerator operating in the Low bandwidth mode.
+For example, if you plan to process 10 VMs whose provisioned size is 2 TB, you must allocate at least 40 GB of disk space for digest data on the source WAN accelerator operating in the Low bandwidth mode.
 
-The amount of disk space required for a source WAN accelerator operating in the High bandwidth mode is calculated by the following formula:
+The minimum amount of disk space required for a source WAN accelerator operating in the High bandwidth mode is calculated by the following formula:
 
 |  |
 | --- |
 | Digest Size = 1% of Provisioned VM Size |
 
-For example, if you plan to process 10 VMs whose provisioned size is 2 TB, you must allocate 20 GB of disk space for digest data on the source WAN accelerator operating in the High bandwidth mode.
+For example, if you plan to process 10 VMs whose provisioned size is 2 TB, you must allocate at least 20 GB of disk space for digest data on the source WAN accelerator operating in the High bandwidth mode.
 
 You can increase the throughput by adjusting the number of upload streams. To learn how to configure them on the source WAN accelerator, see the [Choose Server](wan_server.md) step of the New WAN Accelerator wizard.
 
@@ -56,7 +52,7 @@ You must make sure that you provide enough free space for the following data on 
 
 Global Cache Data
 
-Global cache is stored on the target WAN accelerator, in the VeeamWAN folder on the disk that you select when you configure the WAN accelerator. The size of global cache is specified in the properties of the target WAN accelerator.
+Global cache is stored on the target WAN accelerator, in the VeeamWAN folder on the disk that you select when you configure the WAN accelerator. The size of global cache is specified in the properties of the target WAN accelerator at the [Cache](wan_cache.md) step of the New WAN Accelerator wizard.
 
 ![WAN Accelerator Sizing](images/add_wan_accelerator_cache.webp)
 
@@ -64,9 +60,9 @@ You must provide enough free space for global cache data. It is recommended that
 
 For example, you want to process the following VMs:
 
-* 1 VM that runs Microsoft Windows 7
-* 3 VMs that run Microsoft Windows Server 2008 R2
-* 2 VMs that run Microsoft Windows Server 2012 R2
+* 1 VM that runs Microsoft Windows 11
+* 3 VMs that run Microsoft Windows Server 2016
+* 2 VMs that run Microsoft Windows Server 2019
 
 There are 3 types of OSes so you must allocate 30 GB for the global cache on the target WAN accelerator.
 
@@ -86,13 +82,13 @@ In such situations, the target WAN accelerator calculates digest data on its own
 
 For safety reasons, it is recommended that you provide the following amount of space for digest data on the target WAN accelerator:
 
-The amount of disk space required for digest data at a target WAN accelerator operating in the Low bandwidth mode is calculated by the following formula:
+The minimum amount of disk space required for digest data at a target WAN accelerator operating in the Low bandwidth mode is calculated by the following formula:
 
 |  |
 | --- |
 | Digest Size = 2% of Provisioned VM Size |
 
-The amount of disk space required for digest data at a target WAN accelerator operating in the High bandwidth mode is calculated by the following formula:
+The minimum amount of disk space required for digest data at a target WAN accelerator operating in the High bandwidth mode is calculated by the following formula:
 
 |  |
 | --- |
@@ -103,7 +99,7 @@ This amount of space is required for digest data recalculation. If you do not pr
 |  |
 | --- |
 | Important |
-| When you specify the global cache size for a target WAN accelerator, you do not allocate any space for storing digest data. To let Veeam Backup & Replication recalculate digest data, you must make sure that necessary amount of free space is available on the target WAN accelerator (in addition to the space allocated for the global cache). |
+| When you specify the global cache size for a target WAN accelerator, you do not allocate any space for storing digest data. However, you must make sure that necessary amount of free disk space is available on the target WAN accelerator (in addition to the space allocated for the global cache). |
 
 For example:
 
