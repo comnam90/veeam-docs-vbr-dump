@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vemdb_considerations.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -22,7 +22,6 @@ Consider the following:
 * Data recovery to MongoDB sharded clusters is not supported.
 * You cannot recover MongoDB data encrypted with native MongoDB encryption.
 * Before you use TLS or X.509 authentication with the System Certificate Authority option, make sure that the Certificate Authority file of the target replica set is added to the Trusted Root Certification Authorities certificate store of the mount server associated with the backup repository.
-* Data recovery to machines running MongoDB Community Edition is not supported.
 * [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
 
 Restore
