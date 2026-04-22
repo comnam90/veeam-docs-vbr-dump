@@ -3,7 +3,7 @@ title: "Restore to HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_hpe_pl.html"
-last_updated: "3/9/2026"
+last_updated: "4/20/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -34,7 +34,7 @@ To restore workloads to HPE Morpheus VM Essentials, you can use the following ba
 
 * Backups of HPE Morpheus VM Essentials VMs created by [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
 
-Performing Restore to Scale Computing HyperCore
+Performing Restore to HPE Morpheus VM Essentials
 
 The restore procedure of entire workloads to HPE Morpheus VM Essentials practically does not differ from the procedure described in [Performing VM Restore to HPE Morpheus VM Essentials](hpe_restore_entire_vm.md).
 
