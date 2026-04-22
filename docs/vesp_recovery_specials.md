@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_recovery_specials.html"
-last_updated: "3/10/2026"
+last_updated: "4/21/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -29,6 +29,9 @@ Consider the following:
 * You cannot restore application items from a CDP replica in parallel with guest OS file restore, SureReplica, and failover.
 
 * [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
+
+* When you launch Veeam Explorer for Microsoft SharePoint, the Veeam Mount Service running on the mount server associated with the backup repository mounts the backed-up file system to the staging server. The Veeam Mount Service unmounts the file system when you close the Explorer session.
+
 * For VMs that run Microsoft SQL Server backed up by Veeam Agent for Microsoft Windows and Microsoft SharePoint backed up by Veeam Backup & Replication, to perform SharePoint item restore, you must start Veeam Explorer for Microsoft SharePoint from the Veeam Backup Browser. To do this, start File Level Recovery for the backup of the required SQL Server VM, and then launch Veeam Explorer for Microsoft SharePoint from the toolbar in the Veeam Backup Browser.
 
 If you start item-level recovery directly for the backup of the SharePoint VM, mapping of a SharePoint site to a content database in the Restore wizard will fail, and Veeam Backup & Replication will display the following error: Unable to find SQL Server VM hosting the content database for the selected SharePoint site.
