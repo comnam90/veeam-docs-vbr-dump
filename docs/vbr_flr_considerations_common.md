@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_flr_considerations_common.html"
-last_updated: "4/1/2026"
+last_updated: "4/21/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -25,6 +25,7 @@ Source for Data Recovery
 * You can recover guest OS files from a backup, replica, Cloud Director replica or CDP replica that has at least one successfully created restore point.
 
 * You cannot recover pipes and other file system objects. Guest OS file restore supports recovery of files and folders only.
+* The guest OS file system must not be encrypted.
 
 * You cannot recover files from a backup created in the reverse incremental mode if the backup job is running. If the backup is created in the incremental backup mode and the backup job is being performed, you can recover files from any available restore point.
 
