@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_considerations.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Considerations and Limitations
@@ -17,6 +17,9 @@ General
 * When Veeam Explorer for Microsoft Exchange is installed on a server on which both Veeam Backup & Replication and Veeam Backup for Microsoft 365 are installed, the notification settings will be inherited from the Veeam Backup & Replication Global Notification settings.
 * Veeam Explorer for Microsoft Exchange does not support data restore using a group Managed Service Account (gMSA) to connect to the target server.
 * [For Linux-based backup servers] All open Explorer sessions become non-responsive after backup server switchover or failback. To continue browsing and restoring your data, you must reopen the sessions.
+
+* When you launch Veeam Explorer for Microsoft Exchange,  the Veeam Mount Service running on the mount server associated with the backup repository mounts the backed-up file system to the machine where the Explorer is running. The Veeam Mount Service unmounts the file system when you close the Explorer session.
+
 * When restoring your Exchange data from CDP replicas, consider the following limitations:
 
 * When you restore your data from CDP replicas, you can only use long-term (both application-consistent and crash-consistent) restore points. Short-term restore points are not supported.
