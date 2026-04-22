@@ -3,8 +3,8 @@ title: "Restoring Guest OS Files"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/guest_file_recovery.html"
-last_updated: "8/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring Guest OS Files
@@ -19,7 +19,7 @@ You can restore individual guest OS files and folders from backups exported from
 
 To restore guest OS files from Linux, Unix and other file systems, do the following:
 
-1. Check [considerations and limitations](https://helpcenter.veeam.com/docs/backup/vsphere/multios_restore_before_you_begin.html?ver=120) listed in the Veeam Backup & Replication User Guide.
+1. Check [considerations and limitations](https://helpcenter.veeam.com/docs/vbr/userguide/vbr_flr_considerations_common.html?ver=13) listed in the Veeam Backup & Replication User Guide.
 2. Launch and complete the File Level Restore wizard. To do that, open the Home view and navigate to Backups > Disk. In the working area, select an application whose files you want to restore. On the ribbon, click Restore Guest Files. Alternatively, right-click the application and select Restore guest files.
 3. Complete the wizard as described in the [Restoring VM Guest OS Files (Multi-OS)](https://helpcenter.veeam.com/docs/backup/vsphere/multios_restore_intro.html?ver=120) section in the Veeam Backup & Replication User Guide.
 
