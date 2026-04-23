@@ -3,16 +3,23 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/licensing_mssql.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Licensing
 
 
-To use the Veeam Plug-In functionality, you must have a valid Veeam Backup & Replication license. Licenses are installed and managed on the Veeam Backup & Replication server that is connected to the Veeam Plug-In server. If the license is not valid or out of resources, Veeam Plug-In backup jobs fail.
+If you plan to use Veeam Plug-Ins with Veeam Backup & Replication, you must install a valid license in Veeam Backup & Replication. The license must include a sufficient number of instances to protect the application servers or databases managed by Veeam Plug-Ins. To learn more about instance licensing, see [Veeam Licensing Policy](https://www.veeam.com/legal/licensing-policy.html#instance-conversion).
 
-This guide provides information only on specifics of Veeam licenses for Veeam Plug-Ins. For terminology and general information about Veeam Licensing, see [Veeam Licensing Policy](https://www.veeam.com/licensing-policy.html).
+Veeam Plug-In checks license validity with Veeam Backup & Replication during backup operations. If a licensing issue occurs, the backup job fails. Veeam Backup & Replication tracks all licensed plug-in instances. It groups instances with the same BIOS UUID and consumes only one license for each group. Veeam Backup & Replication assigns the license to the workload with the highest value. For example, if both a VM and a plug-in use the same UUID, only one license is consumed.
+
+Veeam Backup & Replication frees the license instance when you revoke a plug-in instance, such as after removing a backup job or deleting a host. If another Veeam product with the same UUID exists, that product may begin to use the released license.
+
+|  |
+| --- |
+| Note |
+| Veeam Plug-In and Veeam Backup & Replication log all license assign and revoke events for audit and troubleshooting. Veeam licensing logic ensures that only one license is consumed per host or group, even when multiple Veeam products are installed on the same host. |
 
 Licensed Objects
 
