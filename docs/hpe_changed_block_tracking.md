@@ -3,7 +3,7 @@ title: "Changed Block Tracking"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_changed_block_tracking.html"
-last_updated: "3/10/2026"
+last_updated: "4/22/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -22,7 +22,7 @@ To detect unallocated and changed data blocks, CBT relies on the QEMU Dirty Bitm
 
 Limitations for Changed Block Tracking
 
-Due to HPE Morpheus VM Essentials technical limitations, bitmaps created for disks in the RAW format are automatically removed as soon as VMs that have these disks attached are powered off or restarted. Therefore, Veeam Backup & Replication may not be able to use CBT when processing those VMs and trying to detect data blocks that have changed since the previous backup session. If CBT cannot be used, Veeam Backup & Replication reads the whole content of VM disks and compares it with backed-up data that already exists in backup repositories. In this case, the completion time of incremental backups may occur to grow.
+Due to HPE Morpheus VM Essentials technical limitations, bitmaps created for disks in the RAW format are automatically removed as soon as VMs that have these disks attached are powered off or restarted. Therefore, Veeam Backup & Replication may not be able to use CBT when processing those VMs and trying to detect data blocks that have changed since the previous backup session. If CBT cannot be used, Veeam Backup & Replication reads the whole content of VM disks and compares it with backed-up data that already exists in backup repositories. In this case, it may take Veeam Backup & Replication more time to create incremental backups.
 
 |  |
 | --- |
