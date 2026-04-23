@@ -3,8 +3,8 @@ title: "PostgreSQL Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_postgresql_vm.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # PostgreSQL Settings
@@ -19,7 +19,7 @@ Enabling Application-Aware Processing
 Before configuring WAL files processing, check that application-aware processing is enabled:
 
 1. At the Guest Processing step of the wizard, select the Enable application-aware processing check box.
-2. Click Application handling options for individual machiness.
+2. Click Application handling options for individual machines.
 3. In the displayed list, select the PostgreSQL VM and click Edit.
 
 To define custom settings for a VM added as a part of a VM container, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
