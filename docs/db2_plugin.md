@@ -3,8 +3,8 @@ title: "Veeam Plug-In for IBM Db2"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Plug-In for IBM Db2
@@ -29,7 +29,6 @@ In This Section
 * [Performing Restore](db2_restore.md)
 * [Retention of IBM Db2 Backups](db2_retention.md)
 * [Backup Copy for IBM DB2 Backups](db2_backup_copy.md)
-* [License Management](plugins_db2_license_management.md)
 * [Logs and Support](db2_veeam_logs.md)
 
 
