@@ -3,7 +3,7 @@ title: "Configuring Remote Access Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_remote_access.html"
-last_updated: "4/21/2026"
+last_updated: "4/22/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -97,23 +97,19 @@ If you configured the Security Officer account during the Veeam appliance instal
 * If you use the Veeam Host Management web UI, do the following:
 
 1. Log in to the Veeam Host Management web UI.
-
-1. In the management pane, click Overview.
-
-1. In the Quick Actions section, click Request root access.
+2. In the management pane, click Overview.
+3. In the Quick Actions section, click Request root access.
 
 [![Configuring Remote Access Settings](images/hmc_web_request_root_access.webp)](images/hmc_web_request_root_access.webp)
 
 * If you use the Veeam Host Management TUI, do the following:
 
 1. Log in to the Veeam Host Management TUI.
-
-1. In the main menu, select Remote access configuration.
-
-1. Select Request shell access, press [Enter] and confirm the operation.
+2. In the main menu, select Remote access configuration.
+3. Select Request shell access, press [Enter] and confirm the operation.
 
 [![Configuring Remote Access Settings](images/hmc_tui_request_root_access.webp)](images/hmc_tui_request_root_access.webp)
 
-If the Security Officer approves the request, access to the TUI root shell will be granted for 8 hours from the first login. The access is not revoked after activity timeouts.
+If the Security Officer approves the request, access to the TUI root shell will be granted for 8 hours from the first login. The access is not revoked after activity timeouts. Once approved, the Security Officer can remove access before the 8 hours ends by later declining the same request.
 
 
