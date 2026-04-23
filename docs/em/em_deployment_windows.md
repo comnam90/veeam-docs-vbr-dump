@@ -3,8 +3,8 @@ title: "Enterprise Manager Deployment on Windows"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_deployment_windows.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Enterprise Manager Deployment on Windows
@@ -18,6 +18,7 @@ In This Section
 
 * [Installing Enterprise Manager](installing_veeam_backup_em.md)
 * [Upgrading to Enterprise Manager 13.0.1](em_upgrading.md)
+* [Updating Enterprise Manager](em_updating.md)
 * [Uninstalling Enterprise Manager](uninstalling_ent_manager.md)
 * [Migrating Enterprise Manager](migrating_em.md)
 * [Silent Installation, Upgrade and Uninstallation](silent_mode.md)
