@@ -3,8 +3,8 @@ title: "Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_transaction_sql_hv.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Microsoft SQL Server Transaction Log Settings
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 The SQL tab is available for VMs that run Microsoft SQL Server and if you have selected Process transaction logs with this job when configuring application-aware processing.
 
-To create transactionally consistent backups of an Microsoft SQL Servers, you must check that application-aware processing is enabled and then specify settings of transaction log processing.
+To create transactionally consistent backups of a Microsoft SQL Servers, you must check that application-aware processing is enabled and then specify settings of transaction log processing.
 
 Enabling Application-Aware Processing
 
