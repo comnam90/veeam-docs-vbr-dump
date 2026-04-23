@@ -3,7 +3,7 @@ title: "Accessing Veeam Host Management Console"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_access.html"
-last_updated: "4/2/2026"
+last_updated: "4/16/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -22,7 +22,7 @@ A Host Administrator can add additional user accounts to grant access to Veeam H
 |  |
 | --- |
 | Note |
-| User accounts are locked after three failed login attempts. For more information on how to unlock them, see [Unlocking Users](hmc_configure_users.md#unlock_user). |
+| User accounts are locked after three failed login attempts. For more information on how to unlock them, see [Unlocking Users](hmc_manage_user_auth.md#unlock_user). |
 
 Logging in to Web UI
 
