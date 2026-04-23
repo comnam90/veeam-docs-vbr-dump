@@ -3,8 +3,8 @@ title: "Step 7. Specify Service Account"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_setup_specify_service_account.html"
-last_updated: "10/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 7. Specify Service Account

@@ -3,8 +3,8 @@ title: "Rolling Back to a Point in Time"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_recovery_roll_back_to_point_in_time.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Rolling Back to a Point in Time

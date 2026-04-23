@@ -3,8 +3,8 @@ title: "Step 8. Finish Working with Wizard"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_vcd_tenant_finish.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 8. Finish Working with Wizard
