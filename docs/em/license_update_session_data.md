@@ -3,8 +3,8 @@ title: "License Update Session Data"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/license_update_session_data.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # License Update Session Data
@@ -12,9 +12,10 @@ product_version: "13.0.1.1071"
 
 The table below lists the messages that can appear in the automatic license update session log. Similar messages are received as pop-ups after you force the immediate update. Recommendations for users (if applicable) are provided in the Comment field.
 
+License Update Session Data
+
 | Message | Reason | Comment |
-| --- | --- | --- |
-| “New license key has been received” | This sequence of messages means automatic license key update procedure has completed successfully. | You can open the License Information dialog in Veeam backup console or the Licensing section in Enterprise Manager to examine the details. |
+| “New license key has been received” “New license key has been installed” “License key has been auto-updated” | This sequence of messages means automatic license key update procedure has completed successfully. | You can open the License Information dialog in Veeam backup console or the Licensing section in Enterprise Manager to examine the details. |
 | “License key type is not supported at the moment” | License key generation failed due to currently unsupported license type. | Currently, automatic update is supported only for licenses associated with Hosting Rental contract type. |
 | “License key is invalid” | License signature (identifier) is invalid. | Contact your Veeam sales representative. |
 | “Your existing license key is up to date” | License expiration date is more than 7 days from now. | This message could probably been issued due to an accidental attempt to update the license manually. Select to update the license key automatically, and the system will notify you on time. |
