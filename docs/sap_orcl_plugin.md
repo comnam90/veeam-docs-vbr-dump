@@ -3,8 +3,8 @@ title: "Veeam Plug-In for SAP on Oracle"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_plugin.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Plug-In for SAP on Oracle
@@ -27,7 +27,6 @@ In This Section
 * [Database Recovery](restoring_databases_sap_orcl.md)
 * [Retention of SAP on Oracle Backups](sap_orcl_retention.md)
 * [Backup Copy for SAP on Oracle Backups](backup_copy_main_sap_oracle.md)
-* [License Management](plugins_sap_oracle_license_management.md)
 * [Logs and Support](sap_orcl_plugin_logs.md)
 
 
