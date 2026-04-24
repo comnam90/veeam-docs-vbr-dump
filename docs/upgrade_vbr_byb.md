@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "4/20/2026"
+last_updated: "4/22/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -19,7 +19,7 @@ Licensing
 
 System Requirements
 
-1. Verify that the backup server to be upgraded is running a supported operating system as specified in [System Requirements](system_requirements_backup_server.md#backup_server_windows). If not, perform a configuration backup, install Veeam Backup & Replication 13.0.1 (build 13.0.1.180) on a supported OS, and restore the configuration backup created earlier. For information on how to perform the migration, see [Migrating Veeam Backup & Replication to Another Backup Server](vbr_config_migrate.md).
+1. Verify that the backup server to be upgraded is running a supported operating system as specified in [System Requirements](system_requirements_backup_server.md#backup_server_windows). If not, perform a configuration backup, install Veeam Backup & Replication 13.0.1 P2 (build 13.0.1.2067) on a supported OS, and restore the configuration backup created earlier. For information on how to perform the migration, see [Migrating Veeam Backup & Replication to Another Backup Server](vbr_config_migrate.md).
 2. Ensure that the backup server has sufficient disk space. The minimum disk space is calculated dynamically during the system configuration check in the upgrade procedure. It is based on the list of required packages to be installed on the machine and usually is about 9 GB. We recommend allocating at least the minimum disk space calculated during the system configuration check, but not less than 55.5 GB: 3 x ISO size (50.5 GB) in the selected installation path (for example, D:\VBR) plus 5 GB for the database operations on the system volume (for example, C:).
 3. Make sure that other servers that you plan to use as backup infrastructure components meet the system requirements listed in [System Requirements](system_requirements.md). In particular, ensure all backup infrastructure servers are based on 64-bit operating systems.
 4. Ensure that the environment you are going to protect with Veeam Backup & Replication meets the requirements listed in [Workloads](platform_support.md). In particular:
@@ -102,15 +102,15 @@ For details about Veeam Agent upgrade, see [Upgrading Veeam Agent from Veeam Bac
 
 1. Are you using Veeam Plug-Ins for Enterprise Applications (Veeam Plug-In for Oracle RMAN, Veeam Plug-In for SAP HANA, Veeam Plug-In for SAP on Oracle, Veeam Plug-In for Microsoft SQL Server or Veeam Plug-In for IBM Db2)?
 
-If you use Veeam Plug-Ins for Enterprise Applications below 12.3.2.4165, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Plug-Ins to 13. If you use Veeam Plug-Ins for Enterprise Applications 12.3.2.4165 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Plug-Ins to 13 later if the support of new features is not critical for you.
+If you use Veeam Plug-Ins for Enterprise Applications below 12.3.2.4165, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading to 13. If you use Veeam Plug-Ins for Enterprise Applications 12.3.2.4165 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade to 13 later if the support of new features is not critical for you.
 
 For details about upgrade of Veeam Plug-Ins for Enterprise Applications, see [Upgrading Veeam Plug-In](protected_computers_upgrade.md).
 
 1. Are you using MongoDB Backup?
 
-If you use MongoDB Backup with Veeam Agents below 12.3.2.4165, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading Veeam Agents to 13. If you use MongoDB Backup with Veeam Agents 12.3.2.4165 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade Veeam Agents to 13 later if the support of new features is not critical for you.
+If you use MongoDB Backup with below 12.3.2.4165, they will stop working after upgrading to Veeam Backup & Replication 13. In this case, we recommend immediately upgrading to 13. If you use MongoDB Backup with 12.3.2.4165 or later, they will continue working after upgrading to Veeam Backup & Replication 13, but new features implemented in Veeam Backup & Replication 13 will not be supported. In this case, you can upgrade to 13 later if the support of new features is not critical for you.
 
-For details about upgrade of Veeam Agents, see [Upgrading Veeam Agent for MongoDB Backup](mongo_protected_computers_update.md).
+For details about upgrade of , see [Upgrading Veeam Agent for MongoDB Backup](mongo_protected_computers_update.md).
 
 Integration with Storage Systems
 

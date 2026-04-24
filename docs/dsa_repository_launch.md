@@ -3,8 +3,8 @@ title: "Step 1. Launch New Backup Repository Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_launch.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 1. Launch New Backup Repository Wizard

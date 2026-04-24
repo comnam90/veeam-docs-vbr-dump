@@ -3,8 +3,8 @@ title: "Using Veeam Backup Configuration Tool"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuration_tool_using.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Using Veeam Backup Configuration Tool
@@ -55,8 +55,9 @@ The Veeam Backup Configuration tool provides parameter sets that allow you to:
 
 Parameters
 
+Parameters
+
 | Parameter | Description |
-| --- | --- |
 | /file:value | Specifies a path to the configuration backup file. |
 | /analyzefile | Analyzes a configuration backup file. |
 | /checkfile | Checks whether the configuration backup is not corrupted. |

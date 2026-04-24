@@ -3,7 +3,7 @@ title: "Veeam Plug-In for Oracle RMAN"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_plugin.html"
-last_updated: "3/13/2026"
+last_updated: "4/22/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -27,7 +27,6 @@ In This Section
 * [Database Recovery](oracle_db_restore.md)
 * [Retention of RMAN Backups and Archived Logs](rman_retention.md)
 * [Backup Copy for Oracle RMAN Backups](backup_copy_main_rman.md)
-* [License Management](plugins_rman_license_management.md)
 * [Logs and Support](veeam_rman_logs.md)
 
 

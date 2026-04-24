@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_limitations.html"
-last_updated: "4/21/2026"
+last_updated: "4/22/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -28,17 +28,14 @@ When connecting a [remote Microsoft Entra ID backup repository](entra_id_remote_
 
 Tenant Backup and Restore
 
-When protectingconsider the following:
+When protecting tenant data, consider the following:
 
 * Veeam Backup for Microsoft Entra ID does not support backup of Microsoft Entra ID [tenants located in China](https://learn.microsoft.com/en-us/azure/china/), [Azure Government tenants](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-application#obtaining-your-government-tenant), [external tenants](https://learn.microsoft.com/en-us/entra/external-id/tenant-configurations) or [Azure Active Directory B2C tenants](https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview).
 * You cannot protect multiple tenants by one backup job. Also, you cannot protect the same tenant by multiple backup jobs.
 * Veeam Backup for Microsoft Entra ID does not support restore of [Microsoft Entra built-in roles](https://docs.azure.cn/en-us/entra/identity/role-based-access-control/permissions-reference), [distribution security groups](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-distributiongroup?view=exchange-ps) or [mail-enabled security groups](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 * By default, Veeam Backup for Microsoft Entra ID does not back up relationships between items of protected Microsoft Entra ID tenants and Azure management groups. To back up these relationships, you must perform additional configuration steps described in [this Veeam KB article](https://www.veeam.com/kb4683).
 * You cannot restore more than 1000 tenant items during one restore session. Also, you cannot restore multiple item types simultaneously.
-* It is recommended that you restore service principals and the applications they represent together, during the same restore session. Otherwise, the applications will be restored with new IDs — as a result, the service principals will fail to be restored.🔀 [IF: NOTINCLUDED]
-* You cannot use application permissions to restore [device configuration profiles](https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles) of the editionUpgradeConfiguration resource type — these profiles can be restored using delegated permissions only. Also, the License and the ProductKey properties are restored to their predefined placeholder values; after restore, these properties must be updated in the [Intune Admin Center](https://intune.microsoft.com/) manually.
-
-Veeam Backup for Microsoft Entra ID does not support restore of [device configuration profiles](https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles) of the editionUpgradeConfiguration resource type using application permissions — these profiles can be restored using delegated permissions only. Also, the License and the ProductKey properties are restored to their predefined placeholder values; after restore, these properties must be updated in the [Intune Admin Center](https://intune.microsoft.com/) manually.Veeam Backup for Microsoft Entra ID does not support restore of Intune device configuration profiles of the editionUpgradeConfiguration type with application permissions. You can restore this intune policy using delegated permissions only. During restore of Intune Device Configuration of type editionUpgradeConfiguration, the properties License and ProductKey are restored to predefined placeholder values. After restore, these properties must be manually updated in the [Intune Admin Center](https://intune.microsoft.com/).
+* It is recommended that you restore service principals and the applications they represent together, during the same restore session. Otherwise, the applications will be restored with new IDs — as a result, the service principals will fail to be restored.
 
 Log Backup and Restore
 

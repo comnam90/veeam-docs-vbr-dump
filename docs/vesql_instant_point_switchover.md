@@ -3,8 +3,8 @@ title: "Step 4. Specify Switchover Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_point_switchover.html"
-last_updated: "10/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Switchover Settings
@@ -30,6 +30,6 @@ After you click Recover, Veeam Explorer for Microsoft SQL Server starts publishi
 | Note |
 | [For Linux-based backup servers] Before the restore process begins, you will be prompted to enter the source machine credentials. |
 
-[![Specifying Database Switchover Scheduling Options](images/instant_switchover.webp)](images/instant_switchover.webp "Specifying Database Switchover Scheduling Options")
+![Step 4. Specify Switchover Settings](images/instant_switchover.webp "Specifying Database Switchover Scheduling Options")
 
 

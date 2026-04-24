@@ -3,8 +3,8 @@ title: "Step 1. Launch Utility"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/dbconfig_launch.html"
-last_updated: "11/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 1. Launch Utility

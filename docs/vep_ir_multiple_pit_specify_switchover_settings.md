@@ -3,8 +3,8 @@ title: "Step 3. Specify Switchover Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_pit_specify_switchover_settings.html"
-last_updated: "10/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Switchover Settings
@@ -25,6 +25,6 @@ To select a switchover type and start an instant recovery session, do the follow
 
 After you click Restore, Veeam Explorer for PostgreSQL starts publishing the instance on the target server.
 
-[![Specifying Database Switchover Scheduling Options](images/vep_instant_switchover.webp)](images/vep_instant_switchover.webp "Specifying Database Switchover Scheduling Options")
+![Step 3. Specify Switchover Settings](images/vep_instant_switchover.webp "Specifying Database Switchover Scheduling Options")
 
 

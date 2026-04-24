@@ -3,8 +3,8 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_licensing.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Licensing
@@ -26,21 +26,10 @@ Functionality of Veeam Plug-Ins is supported only for the Enterprise Plus editio
 
 For the full list of license packages, see [this Veeam webpage](https://www.veeam.com/backup-solution-pricing.html).
 
+For more information on available license management operations, see [Managing License](plugins_managed_licensing.md).
+
 Obtaining and Managing Licenses
 
 For details on how to install a license and monitor licensed objects, see [Licensing](licensing.md) for Veeam Backup & Replication.
-
-Managing Veeam Plug-In Instance License Consumption
-
-You can assign and revoke licenses for installed instances protected by Veeam Plug-Ins from the Veeam backup server. This process helps you manage license usage and ensure only intended installed instances consume licenses.
-
-To assign or revoke license usage of individual instances, do the following:
-
-1. From the main menu, select License.
-2. In the License Information window, click the Instances tab and click Manage.
-3. In the Licensed Instances tab, select the installed instance and click Assign to assign a license instance, or click Revoke to revoke a license instance.
-4. Click Close.
-
-![Licensing](images/plugins_license_management.webp)
 
 

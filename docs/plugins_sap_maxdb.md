@@ -3,8 +3,8 @@ title: "Veeam Plug-In for SAP MaxDB"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Plug-In for SAP MaxDB

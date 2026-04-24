@@ -3,8 +3,8 @@ title: "Managed Veeam Plug-Ins"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/management.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managed Veeam Plug-Ins
@@ -45,6 +45,7 @@ In This Section
 * [Managing Application Backup Policies](manage_policy.md)
 * [Managing Protected Computers](protected_computers.md)
 * [Managing Application Backups](application_backups.md)
+* [Managing License](plugins_managed_licensing.md)
 * [Reporting](report.md)
 
 

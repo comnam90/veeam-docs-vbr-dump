@@ -3,8 +3,8 @@ title: "Using Certificate Signed by Internal CA"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_tls_internal_ca.html"
-last_updated: "12/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Using Certificate Signed by Internal CA
@@ -18,19 +18,20 @@ Certificate Requirements
 
 A certificate signed by a CA must meet the following requirements.
 
+Certificate Requirements
+
 | Requirement | Description |
-| --- | --- |
-| Subject | Must be set to the fully qualified domain name (FQDN) of the Enterprise Manager server. |
-| Subject Alternative Name (SAN) | Must include both the FQDN and the NetBIOS name. You can specify multiple DNS entries in the following format:  DNS:emserver.domain.local, DNS:emserver |
-| Key Size | The minimum key size is 2048 bits. |
-| Key Usage Extensions | The following key usage extensions are enabled in the certificate:   * Digital Signature * Certificate Signing * Off-line CRL Signing * CRL Signing (86) |
-| Basic Constraints | The Path Length Constraint parameter must be set to 0. |
-| Key Type | Must be set to Exchange. |
+| Subject | Set to the fully qualified domain name (FQDN) of the Enterprise Manager server. |
+| Subject Alternative Name (SAN) | Include both the FQDN and the NetBIOS name. You can specify multiple DNS entries in the following format:  DNS:emserver.domain.local, DNS:emserver |
+| Key Size | Minimum 2048 bits. |
+| Key Usage | For the server certificate, enable the following extensions:   * Digital Signature * Certificate Signing * Off-line CRL Signing * CRL Signing (86)   For the web UI certificate, enable the Data Signature extension. |
+| Basic Constraints | Set Path Length Constraint to 0. |
+| Key Type | Set to Exchange. |
 
 |  |
 | --- |
 | Important |
-| The following certificates are not supported:   * Certificates issued by public CAs * Elliptic Curve Signature (ECC) certificates * Cryptography API: Next Generation (CNG) certificates |
+| The following certificates are not supported:   * Elliptic Curve Signature (ECC) certificates * Cryptography API: Next Generation (CNG) certificates   You cannot use certificates issued by public CAs as the server certificate, but you can use them as the web UI certificate. |
 
 CRL Requirements
 

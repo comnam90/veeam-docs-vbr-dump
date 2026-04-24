@@ -3,8 +3,8 @@ title: "Mixed Scenarios"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_verification.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Mixed Scenarios
@@ -20,9 +20,10 @@ For example, you can add VMs from backups and VMs from storage snapshots to the 
 
 You cannot link jobs that trigger snapshots on storage arrays to the SureBackup job. This option is not supported.
 
+Mixed Scenarios
+
 | Type of Job/Object | SureBackup | SureReplica | SureSnap |
-| --- | --- | --- | --- |
-| Application group | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) |
-| Linked job | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/no.webp) |
+| Application group |
+| Linked job |
 
 

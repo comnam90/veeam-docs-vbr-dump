@@ -3,8 +3,8 @@ title: "Managing Veeam Agent Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_manage_job.html"
-last_updated: "5/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managing Veeam Agent Backup Jobs

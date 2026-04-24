@@ -3,8 +3,8 @@ title: "Deleting from Disk"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_deleting.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Deleting from Disk
@@ -15,7 +15,7 @@ When you delete replicas from disks, Veeam Backup & Replication removes the repl
 |  |
 | --- |
 | Note |
-| Consider the following:   * You can delete records only about replicas that are in the Ready state. * Do not delete replica files from the destination storage manually, use the Delete from disk option instead. If you delete replica files manually, subsequent replication sessions will fail. * Unlike the Remove from configuration operation, the Delete from disk operation does not remove the processed workload from the initial replication job. This means that the replication process will restart for this workload. To avoid this, you can exclude the workload from the replication job or disable the job. |
+| Consider the following:   * You can delete records only about replicas that are in the Ready state. * Do not delete replica files from the destination storage manually; use the Delete from disk option instead. If you delete replica files manually, subsequent replication sessions will fail. * Unlike the Remove from configuration operation, the Delete from disk operation does not remove the processed workload from the initial replication job. This means that the replication process will restart for this workload. To avoid this, you can exclude the workload from the replication job or disable the job. |
 
 To delete replica files from disks:
 

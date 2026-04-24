@@ -3,8 +3,8 @@ title: "Managing TLS Certificates"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/tls_certificates.html"
-last_updated: "12/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managing TLS Certificates
@@ -18,7 +18,7 @@ TLS certificates ensure a secure connection with Veeam Backup Enterprise Manager
 TLS certificates are used for the following purposes:
 
 * The Veeam Backup Enterprise Manager Service and Veeam Guest Catalog Service use the server certificate to communicate with backup servers added to the Enterprise Manager infrastructure. For more information, see [How Enterprise Manager Authenticates to Backup Servers](connecting_to_backup_servers.md). The same certificate is used by the Veeam Backup Enterprise Manager REST API Service to communicate with REST API clients.
-* The Veeam Backup Enterprise Manager web application and Veeam vSphere Client plug-in use the web UI certificate to communicate with a browser.
+* The Veeam Backup Enterprise Manager web application, Veeam Plug-in for VMware vSphere Client, and Veeam Plug-in for VMware Cloud Director use the web UI certificate to communicate with the web browser.
 
 [![Viewing Certificates](images/tls_certificates.webp)](images/tls_certificates.webp "Viewing Certificates")
 

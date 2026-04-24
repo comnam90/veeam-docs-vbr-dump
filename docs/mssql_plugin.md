@@ -3,7 +3,7 @@ title: "Veeam Plug-In for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_plugin.html"
-last_updated: "3/26/2026"
+last_updated: "4/22/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -29,7 +29,6 @@ In This Section
 * [Performing Restore](mssql_db_restore.md)
 * [Configuring Retention of Microsoft SQL Server Backups](plugins_mssql_retention.md)
 * [Backup Copy for Microsoft SQL Server Backups](backup_copy_mssql.md)
-* [License Management](plugins_mssql_license_management.md)
 * [Logs and Support](veeam_mssql_logs.md)
 
 

@@ -3,8 +3,8 @@ title: "Step 4. Select Mailboxes to Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/select_mailboxes_to_restore_mfa.html"
-last_updated: "2/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Select Mailboxes to Restore

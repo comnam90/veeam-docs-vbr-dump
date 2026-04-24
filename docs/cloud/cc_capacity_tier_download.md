@@ -3,14 +3,19 @@ title: "Downloading Tenant Data from Capacity Tier"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_capacity_tier_download.html"
-last_updated: "4/17/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Downloading Tenant Data from Capacity Tier
 
 
 The SP can download tenant data that was offloaded to an object storage repository back to the on-premises extents of a scale-out backup repository. Veeam Backup & Replication lets the SP download all offloaded tenant backups at once. Downloaded backups remain in the performance tier and cannot be moved back to the capacity tier.
+
+|  |
+| --- |
+| Note |
+| The procedure to download tenant backup files from the capacity tier is supported only for unencrypted backups. |
 
 To download tenant data from capacity tier to performance tier:
 
