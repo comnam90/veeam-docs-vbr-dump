@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hv_server_before_begin.html"
-last_updated: "4/2/2026"
+last_updated: "4/23/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -15,6 +15,9 @@ Before you add a Microsoft Hyper-V server to the backup infrastructure, check th
 * Note that Linux-based Veeam Software Appliance does not support the SCVMM High Availability feature.
 * Check permissions required to add the server. For more information, see [Permissions](required_permissions.md#rphost).
 * Make sure that you do not add to the backup infrastructure Hyper-V hosts or clusters managed by an SCVMM server if this SCVMM server is already added to the backup infrastructure.
+* Modern versions of Azure Local (formerly Azure Stack HCI) clusters have Windows Defender Application Control (WDAC) enabled and running in enforcement mode by default. You will need to deploy the latest supplemental WDAC policy on these clusters before adding them to VBR. For more details, see [this Veeam KB article](https://www.veeam.com/kb4456).
+
+Only Hyper-V cluster or host roles are supported for Azure Local clusters or nodes in Veeam Backup & Replication. Assigning alternative roles (for example, backup repository, mount server, WAN accelerator) is not covered by the supplemental WDAC policies referenced in the KB article and is not supported.
 
 * File and printer sharing must be enabled in network connection settings of the added Microsoft Hyper-V host. Otherwise, Veeam Backup & Replication will fail to deploy required components.
 * Make sure that the NETBIOS name of the Microsoft Hyper-V Server is successfully resolved.
