@@ -3,7 +3,7 @@ title: "Installing Certificates"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/updating_security_certificate.html"
-last_updated: "4/22/2026"
+last_updated: "4/23/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -34,12 +34,11 @@ To install a new certificate, follow these steps:
 
 1. At the Certificate Type step of the Manage Certificate wizard, select one of the following options:
 
-* Select Select a certificate from the certificate store if you want to specify a certificate that is already uploaded to the local Certificate Store.
-
+* Select Select a certificate from the certificate store to use a certificate that is already uploaded to the local Certificate Store.
 * Select Generate new certificate if you want Enterprise Manager to generate a self-signed certificate.
-* Select Upload a custom certificate if you want to upload a certificate signed by your trusted Certificate Authority (CA). For more information on internal CA certificates, see [Using Certificate Signed by Internal CA](em_tls_internal_ca.md).
+* Select Upload a custom certificate to upload a certificate signed by your trusted Certificate Authority (CA). For more information on internal CA certificates, see [Using Certificate Signed by Internal CA](em_tls_internal_ca.md).
 
-Enterprise Manager accepts only PEM files that contain exactly two keys: the private key and the server certificate. If the file contains several certificates, the upload will fail. Intermediate certificates must be added separately to the certificate store on the connected backup servers.
+Enterprise Manager accepts only PEM files that contain exactly two key sections: the private key and the server certificate. If the file contains multiple certificates, the upload fails with the following error: PEM contains multiple public key sections. In this case, keep only the private key and the server certificate in the PEM file, and remove all other certificates. Add intermediate certificates separately to the certificate store on the connected backup servers.
 
 ![Installing Certificates](images/tls_certificates_type.webp "Specifying Certificate Type")
 
