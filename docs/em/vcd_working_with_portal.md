@@ -3,7 +3,7 @@ title: "Working with Veeam Self-Service Backup Portal"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_working_with_portal.html"
-last_updated: "4/22/2026"
+last_updated: "4/23/2026"
 product_version: "13.0.1.2067"
 ---
 

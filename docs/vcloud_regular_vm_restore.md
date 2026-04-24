@@ -3,7 +3,7 @@ title: "How Restore of Regular and Standalone VMs to VMware Cloud Director Works
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_regular_vm_restore.html"
-last_updated: "4/22/2026"
+last_updated: "4/23/2026"
 product_version: "13.0.1.2067"
 ---
 

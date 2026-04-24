@@ -3,7 +3,7 @@ title: "Step 2. Specify Cloud Gateway Pool Name and Description"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_gateway_pool_name.html"
-last_updated: "4/22/2026"
+last_updated: "4/23/2026"
 product_version: "13.0.1.2067"
 ---
 
