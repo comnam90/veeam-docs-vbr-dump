@@ -3,7 +3,7 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "4/1/2026"
+last_updated: "4/23/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -21,7 +21,7 @@ Infrastructure Components
 * The account that you use to start the Veeam Backup & Replication console and to connect to the backup server must have permissions and privileges described in section [Veeam Backup & Replication Console Permissions](required_permissions.md#rpvbr).
 
 * You can recover files from basic disks and dynamic disks (including simple, mirrored, striped, spanned and RAID5 volumes).
-* [For recovery to another workload, to original location, or permissions only] If the target workload uses the gMSA account and you recover files from a backup, you must also [install this account](using_gmsa.md#install) on the mount server used for recovery. If you recover from a replica, you must install the gMSA account on the backup server.
+* [For recovery to another workload, to original location, or permissions only] If the target workload uses a gMSA and you recover files from a backup, you must also [add this account](using_gmsa.md#install) on the mount server used for recovery. If you recover from a replica, you must add the gMSA account on the backup server.
 
 * [For vSphere recovery to original location] The mount server must have access to the guest OS (if recovery is performed over the network) or vCenter Server and ESXi host where the target workload runs (if recovery is performed over VIX API/vSphere Web Services).
 * [For Hyper-V recovery to original location] Guest OS must be accessible from the backup server over the network, or over PowerShell Direct (for VMs that reside on Microsoft Hyper-V Server 2016 or later).
