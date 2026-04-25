@@ -3,8 +3,8 @@ title: "Switch-VBRCloudTenantsQuotaRepositoryToSOBR"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/switch-vbrcloudtenantsquotarepositorytosobr.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Switch-VBRCloudTenantsQuotaRepositoryToSOBR
@@ -42,17 +42,18 @@ Note that either all folders or no folders that are being migrated must exist on
 * Migration to a scale-out backup repository is not possible if at least one extent is in the maintenance mode.
 * Names of folders with tenant backup data on the cloud repository must not contain special characters (for example, \/`~,!?#$&\*|{}[];"<>) and non-ASCII characters.
 * During migration, tenant accounts will be automatically disabled. The service provider must enable the disabled accounts manually once the migration process is completed.
-* All subtenants are migrated together with the tenant, it is not possible to migrate only specific subtenants.м
+* All subtenants are migrated together with the tenant, it is not possible to migrate only specific subtenants.
 * The tenant must not have more than 1 quota assigned.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept | Accept Wildcard Characters |
-| --- | --- | --- | --- | --- | --- | --- |
-| Resource | Specifies the object that contains the tenant backup resource. The cmdlet will switch this tenant backup resource to a scale-out backup repository. | Accepts the [VBRCloudTenantResource](vbrcloudtenantresource.md) object. To create this object, run the [New-VBRCloudTenantResource](new-vbrcloudtenantresource.md) cmdlet and provide the ScaleOut parameter. | True | Named | True (ByValue,  ByPropertyName) | False |
-| ScaleOutBackupRepository | Specifies the scale-out backup repository where you want to create cloud repository quota for a tenant account. | Accepts the [VBRScaleOutBackupRepository](vbrscaleoutbackuprepository.md) object. To create this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet and provide the ScaleOut parameter. | True | Named | True (ByValue,  ByPropertyName) | False |
-| Tenants | Specifies the array of tenant accounts for which you want to create cloud repository quota on a scale-out backup repository. | Accepts the IVBRCloudTenant object. To create this object, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. | False | Named | True (ByValue,  ByPropertyName) | False |
-| Force | Defines that the cmdlet will switch tenant quotas on the cloud repository to a scale-out backup repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False | False |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| Resource | Specifies the object that contains the tenant backup resource. The cmdlet will switch this tenant backup resource to a scale-out backup repository. | Accepts the [VBRCloudTenantResource](vbrcloudtenantresource.md) object. To get this object, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet and use the Resources property. | True | Named | True (ByValue,  ByPropertyName) |
+| ScaleOutBackupRepository | Specifies the scale-out backup repository where you want to create cloud repository quota for a tenant account. | Accepts the [VBRScaleOutBackupRepository](vbrscaleoutbackuprepository.md) object. To create this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet and provide the ScaleOut parameter. | True | Named | True (ByValue,  ByPropertyName) |
+| Tenants | Specifies the array of tenant accounts for which you want to create cloud repository quota on a scale-out backup repository. | Accepts the IVBRCloudTenant object. To create this object, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. | False | Named | True (ByValue,  ByPropertyName) |
+| Force | Defines that the cmdlet will switch tenant quotas on the cloud repository to a scale-out backup repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
