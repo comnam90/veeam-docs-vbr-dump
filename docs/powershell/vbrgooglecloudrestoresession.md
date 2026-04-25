@@ -3,8 +3,8 @@ title: "VBRGoogleCloudRestoreSession"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrgooglecloudrestoresession.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VBRGoogleCloudRestoreSession
@@ -14,8 +14,9 @@ Contains restore to Google Compute Engine session.
 
 Properties
 
+Properties
+
 | Property | Type | Description |
-| --- | --- | --- |
 | Log | [VBRLogItem](vbrlogitem.md) | Session log. |
 | CreationTime | DateTime | Date and time of session is created. |
 | EndTime | DateTime | Date and time of session ends. |
