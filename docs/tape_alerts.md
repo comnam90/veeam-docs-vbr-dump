@@ -3,7 +3,7 @@ title: "Tape Drive Alerts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_alerts.html"
-last_updated: "4/23/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -15,9 +15,9 @@ There are 3 types of error flags:
 Tape Drive Alerts
 
 | Severity | Urgent User Intervention | Risk of Data Loss | Explanations |
-| Critical | X | X |
-| Warning | X | X |
-| Information | X |
+| Critical | X | X |  |
+| Warning |  | X | X |
+| Information |  |  | X |
 
 You may get one of the following tape drive alerts when working with Veeam Backup & Replication:
 
@@ -70,7 +70,7 @@ Tape Drive Alerts
 | 44 | 0x2c | Autoloader hardware fault | Critical | The autoloader has a hardware fault:   1. Turn the autoloader off and then on again. 2. Restart the operation. 3. If the problem persists, call the tape drive supplier helpline.   Check the autoloader user’s manual for device specific instructions on turning the device power on and off. | The loader mechanism has a hardware fault that is not mechanically related. |
 | 45 | 0x2d | Autoloader cannot operate without magazine | Critical | The autoloader cannot operate without the magazine:   1. Insert the magazine into the autoloader. 2. Restart the operation. | Loader magazine not present. |
 | 46 | 0x2e | Autoloader predicted to fail | Warning | A hardware failure of the changer mechanism is predicted. Call the tape drive supplier helpline. | Predictive failure of loader mechanism hardware. |
-| 47 – 49 | 0x2f – 0x31 | These codes are reserved for future use. |
+| 47 – 49 | 0x2f – 0x31 |  |  | These codes are reserved for future use. |  |
 | 50 | 0x32 | Media statistics is lost | Warning | Media statistics have been lost at some time in the past. | Drive or library powered down with tape loaded. |
 | 51 | 0x33 | Tape directory is corrupted | Warning | The tape directory on the tape cartridge just unloaded has been corrupted. File search performance will be degraded. The tape directory can be rebuilt by reading all the data. | Error prevented the tape directory being updated on unload. |
 | 52 | 0x34 | Tape system area write failure | Critical | The tape just unloaded could not write its system area successfully:   1. Copy data to another tape cartridge. 2. Discard the old cartridge. | Write errors while writing the system log on unload. |
