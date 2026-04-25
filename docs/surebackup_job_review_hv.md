@@ -3,7 +3,7 @@ title: "Step 9. Review Job Summary and Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_review_hv.html"
-last_updated: "4/23/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
