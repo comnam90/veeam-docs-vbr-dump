@@ -3,8 +3,8 @@ title: "Add-VBRAzureComputeBackupCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazurecomputebackupcopyjob.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Add-VBRAzureComputeBackupCopyJob (obsolete)
@@ -40,8 +40,9 @@ This cmdlet creates Azure IaaS backup copy jobs of Azure Virtual Machines that a
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Backup | Specifies an array of Azure backups that you want to copy. | Accepts the VBRAzureComputeBackup[] object. To get this object, run the [Get-VBRAzureComputeBackup](get-vbrazurecomputebackup.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies a name of a backup copy job. The cmdlet will create the job with this name. | String | False | Named | False |
 | Description | Specifies a description of a backup copy job. The cmdlet will create the job with this description. | String | False | Named | False |
