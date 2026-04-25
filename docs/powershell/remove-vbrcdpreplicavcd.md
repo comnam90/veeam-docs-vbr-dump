@@ -3,8 +3,8 @@ title: "Remove-VBRCDPReplica"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrcdpreplicavcd.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Remove-VBRCDPReplica
@@ -35,8 +35,9 @@ You can remove the replica according to the following scenarios:
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Replica | Specifies the replica that you want to remove. | Accepts the VBRCDPReplicaBase object. To create this object, run the [Get-VBRCDPReplica](get-vbrcdpreplica.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | FromDisk | Defines that the cmdlet will remove the replica from the disk.  Note: If you do not provide this parameter, the cmdlet will remove the replica from the configuration. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will remove a replica showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
