@@ -3,8 +3,8 @@ title: "NDMP Servers"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/ndmp_servers.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # NDMP Servers
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets in this topic to perform the following operations.
 
+NDMP Servers
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Add-VBRNDMPServer](add-vbrndmpserver.md) | Adds NDMP servers to Veeam Backup & Replication. |
 | [Set-VBRNDMPServer](set-vbrndmpserver.md) | Modifies NDMP server settings. |
 | [Get-VBRNDMPServer](get-vbrndmpserver.md) | Returns NDMP servers. |
