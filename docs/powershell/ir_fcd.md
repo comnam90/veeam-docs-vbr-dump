@@ -3,8 +3,8 @@ title: "Instant First Class Disk (FCD) Recovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/ir_fcd.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Instant First Class Disk (FCD) Recovery
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets in this topic to perform the following operations.
 
+Instant First Class Disk (FCD) Recovery
+
 | Cmdlet | Operation |
-| --- | --- |
 | [New-VBRFCDInstantRecoveryMappingOptions](new-vbrfcdinstantrecoverymappingoptions.md) | Defines mapping settings of virtual disks that you want to restore using the Instant FCD Recovery. |
 | [Start-VBRFCDInstantRecovery](start-vbrfcdinstantrecovery.md) | Starts the FCD instant recovery session. |
 | [Get-VBRFCDInstantRecoverySession](get-vbrfcdinstantrecoverysession.md) | Returns an array of FCD recovery sessions. |
