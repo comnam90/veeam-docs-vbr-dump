@@ -3,7 +3,7 @@ title: "Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_ahv.html"
-last_updated: "3/20/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -19,7 +19,7 @@ Nutanix AHV Virtual Infrastructure
 | Specification | Requirement |
 | Platform | Nutanix-certified hardware and Nutanix Cloud Clusters (NC2) running Nutanix AOS versions 6.8.1.6 and above |
 | Hypervisor | AHV |
-| Management Server | Prism Central version pc.2022.6–pc.2024.3.1.10, pc.7.3 and above except 7.3.1.2 and 7.5.0.0 |
+| Management Server (optional) | Prism Central version pc.2022.6–pc.2024.3.1.10, pc.7.3 and above except 7.3.1.2 and 7.5.0.0 |
 
 Consider the following:
 
@@ -57,7 +57,7 @@ The following table lists compatible versions of Veeam Backup & Replication and 
 Version Compatibility
 
 | Product Release | Veeam Plug-In for Nutanix AHV Build | Veeam Backup & Replication Build | Backup Appliance / Worker OS Version |
-| 9 | 13.9.0.212 | 13.0.1.1071 | Veeam JeOS 9.2 |
+| 9 | 13.9.0.212 | 13.0.1.2067 (recommended) 13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
 | 8 | 13.8.0.582 | 13.0.0.4967 | Rocky Linux 8.10 |
 | 7.1 | 12.7.1.12 | 12.3.1.1139 | Rocky Linux 8.10 |
 | 7.0 | 12.7.0.172 | 12.3.0.310 |
