@@ -3,8 +3,8 @@ title: "VBRGlobalNotificationOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrglobalnotificationoptions.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VBRGlobalNotificationOptions
@@ -14,8 +14,9 @@ Contains global notification settings.
 
 Properties
 
+Properties
+
 | Property | Type | Description |
-| --- | --- | --- |
 | StorageSpaceThresholdEnabled | bool | Indicates that when the disk space in the target backup repository is below a specific value Veeam Backup & Replication will (TRUE) or will not (FALSE) display a warning. |
 | StorageSpaceThreshold | int | Disk space threshold for backup repositories in percent. |
 | DatastoreSpaceThresholdEnabled | bool | Indicates that when the disk space in a production datastore is below a specific value Veeam Backup & Replication will (TRUE) or will not (FALSE) display a warning. |
