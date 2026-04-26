@@ -3,8 +3,8 @@ title: "VBRS3CompatibleRepositorySecurityOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrs3compatiblerepositorysecurityoptions.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VBRS3CompatibleRepositorySecurityOptions
@@ -14,8 +14,9 @@ Contains settings that Veeam Agent uses to access S3 compatible repositories
 
 Properties
 
+Properties
+
 | Property | Type | Description |
-| --- | --- | --- |
 | RepositoryId | Guid | Repository ID |
 | AccessControlPolicy | [VBRS3CompatibleAccessControlPolicyType](enums.md#VBRS3CompatibleAccessControlPolicyType) | Access control type. |
 | IAMEndpoint | String | IP address |
