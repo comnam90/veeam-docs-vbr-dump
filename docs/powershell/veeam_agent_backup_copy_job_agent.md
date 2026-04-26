@@ -1,0 +1,30 @@
+---
+title: "Veeam Agent Backup Copy Jobs"
+product: "vbr"
+doc_type: "powershell"
+source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_backup_copy_job_agent.html"
+last_updated: "4/16/2026"
+product_version: "13.0.1.2067"
+---
+
+# Veeam Agent Backup Copy Jobs
+
+
+You can use cmdlets in this topic to perform the following operations:
+
+Veeam Agent Backup Copy Jobs
+
+| Cmdlet | Operation |
+| [Add-VBRBackupCopyJob](add-vbrbackupcopyjob_agent.md) | Creates a backup copy job. |
+| [Get-VBRComputerBackupCopyJob](get-vbrcomputerbackupcopyjob.md) | Returns Veeam Agent backup copy jobs. |
+| [Set-VBRComputerBackupCopyJob](set-vbrcomputerbackupcopyjob.md) | Modifies Veeam Agent backup copy jobs. |
+| [Sync-VBRComputerBackupCopyJob](sync-vbrcomputerbackupcopyjob.md) | Synchronizes Veeam Agent backup copy jobs. |
+| [Disable-VBRComputerBackupCopyJob](disable-vbrcomputerbackupcopyjob.md) | Disables Veeam Agent backup copy jobs. |
+| [Enable-VBRComputerBackupCopyJob](enable-vbrcomputerbackupcopyjob.md) | Enables Veeam Agent backup copy jobs. |
+| [Remove-VBRComputerBackupCopyJob](remove-vbrcomputerbackupcopyjob.md) | Removes Veeam Agent backup copy jobs. |
+| [New-VBRGFSRetentionPolicy](new-vbrgfsretentionpolicy_agent.md) | Defines GFS retention settings for Veeam Agent backup copy jobs. |
+| [Set-VBRGFSRetentionPolicy](set-vbrgfsretentionpolicy_agent.md) | Modifies GFS retention settings for Veeam Agent backup copy jobs. |
+| [New-VBRBackupCopyJobStorageOptions](new-vbrbackupcopyjobstorageoptions.md) | Defines storage settings for Veeam Agent backup copy jobs. |
+| [Set-VBRBackupCopyJobStorageOptions](set-vbrbackupcopyjobstorageoptions.md) | Modifies storage optimization settings for Veeam Agent backup copy jobs. |
+
+
