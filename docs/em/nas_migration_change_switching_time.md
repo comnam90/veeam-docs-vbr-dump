@@ -3,7 +3,7 @@ title: "Changing Switchover Time"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/nas_migration_change_switching_time.html"
-last_updated: "4/23/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 

@@ -3,7 +3,7 @@ title: "Step 3. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/roll_back_to_point_in_time_summary.html"
-last_updated: "4/23/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
