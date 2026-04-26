@@ -3,7 +3,7 @@ title: "Tape Changer Alerts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_changer_alerts.html"
-last_updated: "4/23/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -15,16 +15,16 @@ There are 3 types of error flags:
 Tape Changer Alerts
 
 | Severity | Urgent User Intervention | Risk of Data Loss | Explanations |
-| Critical | X | X |
-| Warning | X | X |
-| Information | X |
+| Critical | X | X |  |
+| Warning |  | X | X |
+| Information |  |  | X |
 
 You may get one of the following tape changer alerts when working with Veeam Backup & Replication:
 
 Tape Changer Alerts
 
 | Alert Code (Dec) | Alert Code (Hex) | Flag | Severity | Description | Cause |
-| 0 | 0x00 | Information | Unknown changer alert. |
+| 0 | 0x00 |  | Information | Unknown changer alert. |  |
 | 1 | 0x01 | Library Hardware A | Critical | The library mechanism is having difficulty communicating with the drive:   1. Turn the library off then on. 2. Restart the operation. 3. If the problem persists, call the library supplier help line. | Changer mechanism is having trouble communicating with the internal drive. |
 | 2 | 0x02 | Library Hardware B | Warning | There is a problem with the library mechanism.  If problem persists call the library supplier help line. | Changer mechanism has a hardware fault. |
 | 3 | 0x03 | Library Hardware C | Critical | The library has a hardware fault:   1. Reset the library. 2. Restart the operation. 3. Check the library users manual for device specific instructions on resetting the device. | The changer mechanism has a hardware fault that requires reset to recover. |
