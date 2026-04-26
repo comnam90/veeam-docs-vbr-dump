@@ -3,8 +3,8 @@ title: "Restore to Amazon EC2"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restore_to_amazon_ec2.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restore to Amazon EC2
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlet in this topic to perform the following operations.
 
+Restore to Amazon EC2
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VBRAmazonEC2Region](get-vbramazonec2region.md) | Returns AWS Regions and datacenters. |
 | [Get-VBRAmazonEC2InstanceType](get-vbramazonec2instancetype.md) | Returns an array of Amazon EC2 instances. |
 | [Get-VBRAmazonEC2SecurityGroup](get-vbramazonec2securitygroup.md) | Returns an array of AmazonEC2 security groups. |
