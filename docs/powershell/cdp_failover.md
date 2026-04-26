@@ -3,8 +3,8 @@ title: "CDP Failover"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cdp_failover.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # CDP Failover
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlet in this topic to perform the following operations.
 
+CDP Failover
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VBRCDPReplica](get-vbrcdpreplica.md) | Returns CDP replicas created by CDP policies including Cloud Director CDP policies, CDP policies, cloud CDP policies and so on. |
 | [Get-VBRCDPLongTermRestorePoint](get-vbrcdplongtermrestorepoint.md) | Returns a long-term restore point of CDP replicas. |
 | [Get-VBRCDPShortTermRestoreInterval](get-vbrcdpshorttermrestoreinterval.md) | Returns a list of replicated states for CDP replicas. |
