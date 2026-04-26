@@ -3,16 +3,16 @@ title: "Using Certificate Signed by Internal CA"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_tls_internal_ca.html"
-last_updated: "4/22/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Using Certificate Signed by Internal CA
 
 
-You can use a certificate signed by an internal Certificate Authority (CA) to secure communication between Enterprise Manager and connected components.
+You can use a certificate signed by an internal Certificate Authority (CA) as the server or web UI certificate to secure Enterprise Manager connections with other components and web browsers.
 
-Before installing a certificate signed by an internal CA, you must add the certificate to the certificate store on the Enterprise Manager machine to ensure that Enterprise Manager trusts the CA.
+Before you install a certificate signed by an internal CA, add the certificate to the certificate store on the Enterprise Manager machine to ensure that Enterprise Manager trusts the CA.
 
 Certificate Requirements
 
