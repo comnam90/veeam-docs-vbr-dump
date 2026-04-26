@@ -3,8 +3,8 @@ title: "Get-VBRRetentionPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrretentionpolicy_azure.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Get-VBRRetentionPolicy
@@ -35,8 +35,9 @@ This cmdlet returns a retention policy for backup copy jobs of the following typ
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies a backup copy job. The cmdlet will return a retention policy for the specified job. | Accepts the CBackupJob object. To get this object, run the [Get-VBRJob](get-vbrjob.md) cmdlet. | True | Named | True (ByValue) |
 
 <CommonParameters>
