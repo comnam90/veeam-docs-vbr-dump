@@ -3,8 +3,8 @@ title: "Veeam Agent Backup Copy Job"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_backup_copy_job.html"
-last_updated: "7/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/16/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Agent Backup Copy Job
@@ -12,8 +12,10 @@ product_version: "13.0.1.1071"
 
 You can use cmdlets in this topic to perform the following operations:
 
+Veeam Agent Backup Copy Job
+
 | Cmdlet | Operation |
-| --- | --- |
+| [Add-VBRBackupCopyJob](add-vbrbackupcopyjob_agent.md) | Creates a backup copy job. |
 | [Get-VBRComputerBackupCopyJob](get-vbrcomputerbackupcopyjob.md) | Returns Veeam Agent backup copy jobs. |
 | [Set-VBRComputerBackupCopyJob](set-vbrcomputerbackupcopyjob.md) | Modifies Veeam Agent backup copy jobs. |
 | [Sync-VBRComputerBackupCopyJob](sync-vbrcomputerbackupcopyjob.md) | Synchronizes Veeam Agent backup copy jobs. |
