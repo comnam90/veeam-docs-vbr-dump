@@ -3,8 +3,8 @@ title: "Migrating Backups within Scale-Out Backup Repository"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backups_migration.html"
-last_updated: "3/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Migrating Backups within Scale-Out Backup Repository
@@ -54,7 +54,9 @@ Migrating Data Between Different Buckets or Containers
 
 You can follow this scenario if you need to migrate data between different buckets or containers of the same object storage repository. These buckets or containers can have different or identical immutability settings. If Veeam Backup & Replication migrates data from the mutable bucket or container, it removes data from the source bucket or container. If Veeam Backup & Replication migrates data from the immutable bucket or container, this data remains intact after migration and will be removed according to the immutability period settings.
 
-Depending on the immutability settings, consider the necessary migration scenario.
+This scenario also applies when migrating data between different immutable buckets or containers using a third-party tool.
+
+Follow the procedure that matches your immutability settings.
 
 Identical Immutability Settings
 
@@ -92,6 +94,11 @@ You can follow this scenario in case you want to use a 3rd party tool to migrate
 3. Set a new object storage repository as a capacity extent of the scale-out backup repository which you use.
 
 1. Synchronize your data. For more information, see the [Synchronizing Capacity Tier Data](new_capacity_tier.md#sync_tier_data) section.
+
+|  |
+| --- |
+| Important |
+| Copying data between immutable buckets or containers using a 3rd party is not supported and may lead to data loss. For these purposes, follow the steps from the [Migrating Data Between Different Buckets or Containers](#different) scenario. |
 
 Migrating Data Within One Capacity Tier
 
