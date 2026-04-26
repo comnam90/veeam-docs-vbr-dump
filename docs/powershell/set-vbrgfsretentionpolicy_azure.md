@@ -3,8 +3,8 @@ title: "Set-VBRGFSRetentionPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrgfsretentionpolicy_azure.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRGFSRetentionPolicy
@@ -35,8 +35,9 @@ This cmdlet modifies a GFS retention policy for backup copy jobs that process ba
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RetentionPolicy | Specifies the GFS retention policy that you want to modify. | Accepts the VBRGFSRetentionPolicy object. To get this object, run the [New-VBRGFSRetentionPolicy](new-vbrgfsretentionpolicy.md) cmdlet. | True | Named | True (ByValue) |
 | RestorePoints | Specifies the number of the restore points for the regular backups. | Int | False | Named | False |
 | GFSWeeklyBackups | Specifies the number of the restore points for the weekly backups. | Int | False | Named | False |

@@ -3,8 +3,8 @@ title: "Set-VBRSimpleRetentionPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsimpleretentionpolicy_azure.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRSimpleRetentionPolicy
@@ -37,8 +37,9 @@ This cmdlet modifies a retention policy for backup copy jobs that process backup
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RetentionPolicy | Specifies a retention policy for a backup copy job. The cmdlet will modify this policy. | Accepts the VBRSimpleRetentionPolicy object. To get this object, run the [Get-VBRRetentionPolicy](get-vbrretentionpolicy.md) cmdlet. | True | Named | True (ByValue) |
 | RestorePoints | Specifies a number of restore points. | Int | False | Named | False |
 

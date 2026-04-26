@@ -3,8 +3,8 @@ title: "New-VBRSimpleRetentionPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsimpleretentionpolicy_azure.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRSimpleRetentionPolicy
@@ -37,8 +37,9 @@ This cmdlet specifies a retention policy for backup copy job that process backup
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoints | Specifies a number of restore points. Veeam Backup & Replication will keep the selected number of restore points on the target backup repository. | Int | False | Named | False |
 
 <CommonParameters>

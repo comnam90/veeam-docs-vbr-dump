@@ -3,7 +3,7 @@ title: "Dell Data Domain"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dell_dd.html"
-last_updated: "3/18/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -70,7 +70,10 @@ Encryption can also affect the backup size: the size of a backup can be larger t
 
 * The [forever forward backup chains](backup_methods.md) are not supported. The length of [forward incremental backup chain](backup_methods.md) cannot be greater than 120 restore points. To overcome this limitation, schedule full backups (active or synthetic) to split the backup chain into shorter series. For example, to perform backups at 15-minute intervals 24 hours a day, you must schedule synthetic fulls every day. In this scenario, intervals immediately after midnight may be skipped due to duration of synthetic processing. For more information, see [How Synthetic Full Backup Works](synthetic_full_hiw.md).
 * If you target a backup copy job to a Dell Data Domain repository or to a scale-out backup repository with a Dell Data Domain extent, you must enable the [long-term retention](backup_copy_target.md) for this backup copy job.
-* If you connect to an Dell Data Domain backup repository over Fibre Channel, you must explicitly define a gateway server to communicate with Dell Data Domain. As a gateway server, you must use a Microsoft Windows or Linux server that is added to the backup infrastructure and has access to the Dell Data Domain backup repository over Fibre Channel.
+* If you connect to an Dell Data Domain backup repository over Fibre Channel, consider the following:
+
+* You must explicitly define a gateway server to communicate with Dell Data Domain. As a gateway server, you must use a Microsoft Windows or Linux server that is added to the backup infrastructure and has access to the Dell Data Domain backup repository over Fibre Channel.
+* You cannot use DDBoost encryption with the Fiber Channel connectivity.
 
 * During backup repository rescan, Veeam Backup & Replication detects if the hard stream limit is set for a storage unit, and displays this information in backup repository rescan statistics. If the hard stream limit is exceeded when Veeam Backup & Replication runs tasks against the backup repository, Veeam Backup & Replication will fail to create new I/O streams.
 

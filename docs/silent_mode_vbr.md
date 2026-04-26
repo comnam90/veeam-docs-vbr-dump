@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Silent Deployment on Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/silent_mode_vbr.html"
-last_updated: "10/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Backup & Replication Silent Deployment on Microsoft Windows
@@ -24,10 +24,13 @@ You can find the template answer files on the Veeam Backup & Replication install
 In This Section
 
 * [Installing Veeam Backup & Replication in Silent Mode](install_vbr_answer_file.md)
-* [Installing Veeam Backup & Replication Console in Silent Mode](install_console_answer_file.md)
-* [Upgrading Veeam Backup & Replication in Silent Mode](upgrade_vbr_answer_file.md)
-* [Upgrading Veeam Backup & Replication Console in Silent Mode](upgrade_console_answer_file.md)
 * [Uninstalling Veeam Backup & Replication in Silent Mode](uninstall_vbr_answer_file.md)
+
+Related Topics
+
+* [Installing Veeam Backup & Replication Console in Silent Mode](install_console_answer_file.md)
 * [Uninstalling Veeam Backup & Replication Console in Silent Mode](uninstall_console_answer_file.md)
+* [Upgrading Veeam Backup & Replication in Silent Mode](upgrade_vbr_answer_file.md)
+* [Updating Veeam Backup & Replication in Silent Mode](update_unattended.md)
 
 

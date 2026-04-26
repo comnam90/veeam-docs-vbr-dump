@@ -3,8 +3,8 @@ title: "Set-VBRRecoveryPointObjective"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrrecoverypointobjective_azure.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Set-VBRRecoveryPointObjective
@@ -37,8 +37,9 @@ This cmdlet modifies an interval for backup copy jobs that process backups store
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RecoveryPointObjective | Specifies a schedule of a backup copy job that you want to modify. | Accepts the VBRRecoveryPointObjective object. To get this object, run the [New-VBRRecoveryPointObjective](new-vbrrecoverypointobjective.md) cmdlet. | True | Named | True (ByValue) |
 | Value | Specifies the number of times the backup copy job will copy new restore points. | Int | False | Named | False |
 | Unit | Specifies the period of time for a backup copy job to run:   * Minute  * Hour * Day | VBRRecoveryPointObjectiveUnit | False | Named | False |

@@ -3,8 +3,8 @@ title: "Performing Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection.html"
-last_updated: "9/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "12/9/2025"
+product_version: "13.0.1.2067"
 ---
 
 # Performing Backup
@@ -20,6 +20,7 @@ In This Section
 * [Preparing Database](db2_protection_prepare.md)
 * [Performing Full Backup](db2_protection_full.md)
 * [Performing Incremental Backup](db2_protection_incremental.md)
+* [Performing Log Backup](db2_protection_log.md)
 * [Managing Backup Jobs in Veeam Backup & Replication](db2_protection_job_vbr.md)
 * [Managing Backups in Veeam Backup & Replication](db2_protection_backup_vbr.md)
 

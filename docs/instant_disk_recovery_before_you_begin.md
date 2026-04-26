@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_before_you_begin.html"
-last_updated: "4/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -18,7 +18,7 @@ Before you perform Instant Disk Recovery, consider the following:
 * If you want to scan disk data for viruses, check the [secure restore requirements and limitations](av_scan_about.md#av_limitations).
 * Instant Disk Recovery to VMware Cloud Director is not supported.
 
-* You must have at least 10 GB of free disk space on the datastore where write cache folder is located. This disk space is required to store virtual disk updates for the restored VM.
+* You must have at least 10 GB of free disk space on the datastore where write cache folder is located. This disk space is required to store virtual disk updates for the restored VM. The actual space usage grows during the IR session depending on the write activity of the recovered workloads.
 
 By default, Veeam Backup & Replication writes virtual disk updates to the IRCache folder on a volume with the maximum amount of free space, for example, C:\ProgramData\Veeam\Backup\IRCache.
 

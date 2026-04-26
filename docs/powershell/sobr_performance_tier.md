@@ -3,8 +3,8 @@ title: "Performance Tier"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sobr_performance_tier.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Performance Tier
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets in this topic to perform the following operations:
 
+Performance Tier
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VBRRepositoryExtent](get-vbrrepositoryextent.md) | Returns scale-out backup repository performance extents. |
 | [Set-VBRRepositoryExtent](set-vbrrepositoryextent.md) | Modifies performance extents of scale-out backup repositories. |
 | [Enable-VBRRepositoryExtentMaintenanceMode](enable-vbrrepositoryextentmaintenancemode.md) | Enables Maintenance mode for performance extents of a scale-out backup repository. |
