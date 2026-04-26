@@ -3,7 +3,7 @@ title: "Managing TLS Certificates"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/tls_certificates.html"
-last_updated: "4/22/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -15,10 +15,10 @@ TLS certificates ensure a secure connection with Veeam Backup Enterprise Manager
 * During the Enterprise Manager installation on Linux, a self-signed certificate is generated.
 * During the Enterprise Manager installation on Microsoft Windows, you can select an existing certificate or generate a new self-signed certificate.
 
-TLS certificates are used for the following purposes:
+Enterprise Manager use the following certificates:
 
-* The Veeam Backup Enterprise Manager Service and Veeam Guest Catalog Service use the server certificate to communicate with backup servers added to the Enterprise Manager infrastructure. For more information, see [How Enterprise Manager Authenticates to Backup Servers](connecting_to_backup_servers.md). The same certificate is used by the Veeam Backup Enterprise Manager REST API Service to communicate with REST API clients.
-* The Veeam Backup Enterprise Manager web application, Veeam Plug-in for VMware vSphere Client, and Veeam Plug-in for VMware Cloud Director use the web UI certificate to communicate with the web browser.
+* Server certificate is used by the Veeam Backup Enterprise Manager Service and Veeam Guest Catalog Service to communicate with backup servers added to the Enterprise Manager infrastructure. For more information, see [How Enterprise Manager Authenticates to Backup Servers](connecting_to_backup_servers.md). The same certificate is used by the Veeam Backup Enterprise Manager REST API Service to communicate with REST API clients.
+* Web UI certificate is used by the Veeam Backup Enterprise Manager web application, Veeam Plug-in for VMware vSphere Client, and Veeam Plug-in for VMware Cloud Director to communicate with the web browser.
 
 [![Viewing Certificates](images/tls_certificates.webp)](images/tls_certificates.webp "Viewing Certificates")
 
