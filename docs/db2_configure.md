@@ -3,8 +3,8 @@ title: "Configuring Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_configure.html"
-last_updated: "12/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "12/5/2025"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Plug-In
@@ -63,7 +63,7 @@ For details about other required ports, see [Ports](db2_plugin_ports.md).
 
 |  |
 | --- |
-| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 |
+| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 Continue? (y/n): |
 
 1. Review requirements for the credentials and press y to confirm the connection using the specified credentials.
 
@@ -80,7 +80,7 @@ For details about other required ports, see [Ports](db2_plugin_ports.md).
 
 |  |
 | --- |
-| Available backup repositories:  1. Default Backup Repository |
+| Available backup repositories:  1. Default Backup Repository 2. Off-Site Backup Repository Enter repository number: 1 |
 
 |  |
 | --- |
