@@ -3,8 +3,8 @@ title: "NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_netapp.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG
@@ -47,6 +47,7 @@ For these operations, Veeam Backup & Replication uses different technologies dep
 * [For backup from secondary storage arrays and backup with storage snapshot retention] You must configure volume ONTAP SnapMirror or SnapVault relationships between the primary and secondary storage arrays. MirrorAndVault Relationships will be identified by Veeam Backup & Replication as SnapVault. For more information, see the NetApp documentation.
 * [For backup from secondary storage arrays and backup with storage snapshot retention] You must install a license for storage snapshot export on ONTAP SnapMirror or SnapVault. For more information, see [Required Licenses for NetApp](restore_storage_snapshots_hiw_netapp.md).
 * [For backup from secondary storage arrays] SVM/volumes must have different names between primary and secondary storage arrays. Otherwise, Veeam Backup & Replication may fail to perform backup from secondary storage arrays.
+* [For snapshot-only jobs] After a NetApp ONTAP MetroCluster switchover and switchback, Veeam Backup & Replication no longer manages the retention of snapshots created before the switchback. These snapshots are not removed automatically when the retention period expires. You must delete them manually. Snapshots created after the switchback are managed normally.
 * [For Kerberos authentication] The [Create required export rules automatically](netapp_add_options.md) option must be disabled.
 
 * [For NAS integration] Veeam Backup & Replication uses NetApp SnapDiff for changed files tracking (CBT):
