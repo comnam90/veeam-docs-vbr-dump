@@ -3,8 +3,8 @@ title: "New-VBRGFSRetentionPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrgfsretentionpolicy_azure.html"
-last_updated: "1/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # New-VBRGFSRetentionPolicy
@@ -30,8 +30,9 @@ This cmdlet creates the VBRGFSRetentionPolicy object. This object contains setti
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoints | Specifies the number of restore points that you want to keep in the backup chain on the target backup repository. | Int | False | Named | False |
 | GFSWeeklyBackups | Specifies the number of weekly backups that you want to keep on the target backup repository. | Int | False | Named | False |
 | GFSMonthlyBackups | Specifies the number of monthly backups that you want to keep on the target backup repository. | Int | False | Named | False |
