@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_before_you_begin_vm.html"
-last_updated: "3/11/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -28,7 +28,7 @@ Before you perform Instant Recovery, consider the following:
 
 * If you want to scan recovered VM data for viruses, check the [secure restore requirements and limitations](av_scan_about.md#av_limitations).
 
-* You must provide enough free disk space in [vPower NFS datastore](vpower_nfs_service.md). The minimum amount of free space must equal the RAM capacity of the recovered VM plus 200MB. For example, if the recovered VM has 32 GB of virtual RAM, 32.2 GB of free space is required.
+* You must provide enough free disk space in [vPower NFS datastore](vpower_nfs_service.md). The minimum amount of free space must equal the RAM capacity of the recovered VM plus 200MB. For example, if the recovered VM has 32 GB of virtual RAM, 32.2 GB of free space is required. The actual disk space usage grows during the IR session depending on the write activity of the recovered workloads.
 
 By default, vPower NFS datastore is located in the IRCache folder on a volume with the maximum amount of free space, for example, C:\ProgramData\Veeam\Backup\IRCache. The vPower NFS datastore is not used when you select to redirect virtual disk updates to a VMware vSphere datastore when configuring the job.
 
