@@ -3,8 +3,8 @@ title: "Upgrading Veeam Plug-In for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_mssql_plugin.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/24/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Upgrading Veeam Plug-In for Microsoft SQL Server
@@ -22,7 +22,19 @@ Note that Veeam Backup & Replication must be the same or later than the version 
 |  |
 | --- |
 | Important |
-| Consider the following:   * You must upgrade Veeam Backup & Replication before you upgrade Veeam Plug-Ins. To learn how to upgrade Veeam Backup & Replication, see [Upgrade and Update](vbr_updating.md).  * Before you upgrade Veeam Plug-In, check [System Requirements](system_requirements_mssql.md). Make sure Microsoft SQL Server Management Studio requirements are met. |
+| You must upgrade Veeam Backup & Replication before you upgrade Veeam Plug-Ins. To learn how to upgrade Veeam Backup & Replication, see [Upgrade and Update](vbr_updating.md). |
+
+Before you upgrade Veeam Plug-In, do the following:
+
+* Check that your environment meets the Microsoft SQL Server Management Studio requirements. For more information, see [System Requirements](system_requirements_mssql.md).
+* Check the full build number of the new Veeam Plug-In version.
+
+|  |
+| --- |
+| Note |
+| If the Veeam Plug-In upgrade changes only the fourth number of the build version, the MSI installer cannot upgrade the existing installation directly. To install the new version, first uninstall the current version of Veeam Plug-In for Microsoft SQL Server. Then, install the new  Veeam Plug-In version.  For more information on uninstalling the current version of  Veeam Plug-In for Microsoft SQL Server, see [Uninstalling Veeam Plug-in for Microsoft SQL Server](uninstall_plugin_mssql.md). |
+
+After the upgrade, you do not need to re-run the Veeam Plug-In configuration wizard, the plug-in configuration files will be preserved.
 
 For instructions on how to upgrade Veeam Plug-In for Microsoft SQL Server, see:
 
