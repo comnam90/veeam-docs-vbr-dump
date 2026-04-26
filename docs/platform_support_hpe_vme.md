@@ -3,7 +3,7 @@ title: "HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_hpe_vme.html"
-last_updated: "3/20/2026"
+last_updated: "4/24/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -54,7 +54,7 @@ The following table lists compatible versions of Veeam Backup & Replication and 
 Version Compatibility
 
 | Product Release | Veeam Plug-in HPE Morpheus VM Essentials Build | Veeam Backup & Replication Build | Worker OS Version |
-| 1 | 13.1.0.271 | 13.0.1.1071 | Veeam JeOS 9.2 |
+| 1 | 13.1.0.271 | 13.0.1.2067 (recommended) 13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
 
 Related Topics
 
