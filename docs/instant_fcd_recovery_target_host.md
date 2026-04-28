@@ -3,7 +3,7 @@ title: "Step 6. Specify Target Cluster"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_target_host.html"
-last_updated: "4/24/2026"
+last_updated: "4/27/2026"
 product_version: "13.0.1.2067"
 ---
 

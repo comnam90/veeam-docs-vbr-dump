@@ -3,7 +3,7 @@ title: "Supported Veeam Agents"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_supported_veeam_agents.html"
-last_updated: "3/30/2026"
+last_updated: "4/27/2026"
 product_version: "13.0.1.2067"
 ---
 
