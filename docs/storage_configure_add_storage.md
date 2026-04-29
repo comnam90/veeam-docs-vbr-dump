@@ -3,21 +3,14 @@ title: "Built-In Storage Systems"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_configure_add_storage.html"
-last_updated: "10/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/28/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Built-In Storage Systems
 
 
 To use storage snapshots for data protection and disaster recovery operations, you must add the storage system to the backup infrastructure. Before adding a storage system to the backup infrastructure, check [Planning and Preparation](storage_limitations.md). If you plan to work with secondary storage arrays, you must add them to the backup infrastructure as well.
-
-The topology of the storage system added to the backup infrastructure is displayed in the Storage Infrastructure view in the Veeam Backup & Replication console. On the Home view, in the Backups > Snapshots node, you can see volumes with storage snapshots and VMs stored on these volumes.
-
-|  |
-| --- |
-| Note |
-| If only Veeam Agents or NAS backup processing is selected for a storage system, volumes with snapshots are not displayed under the Backups > Snapshots node. The storage system itself is still displayed in the Storage Infrastructure view. |
 
 Supported Storage Systems
 
