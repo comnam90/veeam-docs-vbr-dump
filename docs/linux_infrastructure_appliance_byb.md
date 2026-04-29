@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "4/13/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -35,11 +35,12 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * [Mount Server](mount_server.md)
 * [WAN Accelerator](wan_accelerator.md)
 
+* [Log Shipping Server](log_shipping_server.md)
+
 * The following roles cannot be assigned to a machine deployed with Veeam Infrastructure Appliance:
 
 * [Tape Server](tape_server.md)
 * [Off-Host Backup Proxy](offhost_backup_proxy.md)
-* [Log Shipping Server](log_shipping_server.md)
 * [NDMP Server](ndmp_servers.md)
 
 * In addition to the standard [system requirements](system_requirements.md) for a backup infrastructure component, the machine where Veeam Infrastructure Appliance is installed must also meet the following requirements:

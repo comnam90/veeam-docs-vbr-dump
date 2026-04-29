@@ -3,7 +3,7 @@ title: "How Immutability Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_immutability.html"
-last_updated: "3/24/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -66,7 +66,7 @@ For image-level VM backups and physical machine backups, immutability works in t
 * The immutability period is set for 10 days and will be automatically extended for all backup files in the active chain. If there are several chains in the backup, Veeam Backup & Replication does not extend the immutability for inactive chains.
 * Full and incremental backup files will be immutable until January 24: the date of the last restore point creation (January 14) + 10 days.
 
-* The immutability flag is set on the file only when the current backup session is completed.
+* The immutability flag is set on the file only when the current backup session is completed. If the backup session fails due to an environmental issue (such as a network outage), the immutability flag will not be set. Veeam Backup & Replication will attempt to apply immutability in following backup runs. However, if the next run creates a new full backup, files from the failed run will not automatically be made immutable. If this occurs, you can set the flag manually using the [Set-VBRImmutabilityLockExpirationDate](https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrimmutabilitylockexpirationdate.html?ver=13) cmdlet.
 
 |  |
 | --- |

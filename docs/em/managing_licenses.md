@@ -3,7 +3,7 @@ title: "Licensing"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/managing_licenses.html"
-last_updated: "4/24/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -16,19 +16,22 @@ Veeam Backup Enterprise Manager collects information about the type of license i
 
 When you run a job, Enterprise Manager uses instances required for each type of protected workloads. If a workload is protected by multiple backup servers added to the Enterprise Manager infrastructure, the workload will consume the Enterprise Manager license only once.
 
-Consider the following:
+Before You Begin
 
-* You cannot install a license intended for version 13 on a backup server running Veeam Backup & Replication 12.
+Before you install a new license, consider the following:
+
 * Enterprise Manager on Linux supports the following instance-based licenses:
 
 * Subscription license
-* Rental license Enterprise Plus edition (Foundation, Advanced and Premium packages only)
+* Rental license (Foundation, Advanced and Premium packages)
 * Perpetual license
 * Evaluation and NFR licenses
 
 Socket licenses are supported for Enterprise Manager on Windows only.
 
 * You cannot use the same Enterprise Manager server to manage backup servers that require different licenses, for example, a backup server of a Veeam Cloud Connect service provider and a regular backup server used to process Veeam Backup & Replication jobs. For example, you add to Enterprise Manager a backup server with the Veeam Cloud Connect service provider license installed. Enterprise Manager will obtain information about the license and save it to its database. If you then add another backup server with a different type of license installed, Enterprise Manager will install the Veeam Cloud Connect service provider license on this backup server. As a result, you will be able to use the second backup server to configure the Veeam Cloud Connect infrastructure, and will not be able to use this server to run backup and replication jobs.
+* You cannot install a license intended for version 13 on a backup server running Veeam Backup & Replication 12.
+* If a backup server running an earlier version uses a different license type than Enterprise Manager, the backup server existing license will remain unchanged and the Enterprise Manager license will not be applied to the backup server. However, all workloads protected by the backup server will still be count toward the Enterprise Manager license.
 * For information on Veeam Backup & Replication license types, see the [Licensing](https://helpcenter.veeam.com/docs/vbr/userguide/licensing.html?ver=13) section of the Veeam Backup & Replication User Guide.
 * For information on Veeam Cloud Connect license types and license management tasks, see the [Licensing for Service Providers](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_licensing.html?ver=13) section of the Veeam Cloud Connect Guide.
 * For more information on Veeam licensing, see [Veeam Licensing Policy](https://www.veeam.com/licensing-policy.html).

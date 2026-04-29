@@ -3,7 +3,7 @@ title: "Switch-VBRCloudTenantsQuotaRepositoryToSOBR"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/switch-vbrcloudtenantsquotarepositorytosobr.html"
-last_updated: "4/24/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -26,7 +26,7 @@ Syntax
 
 |  |
 | --- |
-| Switch-VBRCloudTenantsQuotaRepositoryToSOBR -Resource <VBRCloudTenantResource> -ScaleOutBackupRepository <VBRScaleOutBackupRepository>  [-Tenants <IVBRCloudTenant[]>] [-Force]  [<CommonParameters>] |
+| Switch-VBRCloudTenantsQuotaRepositoryToSOBR -Resource <VBRCloudTenantResource> -ScaleOutBackupRepository <VBRScaleOutBackupRepository> [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -52,7 +52,6 @@ Parameters
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Resource | Specifies the object that contains the tenant backup resource. The cmdlet will switch this tenant backup resource to a scale-out backup repository. | Accepts the [VBRCloudTenantResource](vbrcloudtenantresource.md) object. To get this object, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet and use the Resources property. | True | Named | True (ByValue,  ByPropertyName) |
 | ScaleOutBackupRepository | Specifies the scale-out backup repository where you want to create cloud repository quota for a tenant account. | Accepts the [VBRScaleOutBackupRepository](vbrscaleoutbackuprepository.md) object. To create this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet and provide the ScaleOut parameter. | True | Named | True (ByValue,  ByPropertyName) |
-| Tenants | Specifies the array of tenant accounts for which you want to create cloud repository quota on a scale-out backup repository. | Accepts the IVBRCloudTenant object. To create this object, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. | False | Named | True (ByValue,  ByPropertyName) |
 | Force | Defines that the cmdlet will switch tenant quotas on the cloud repository to a scale-out backup repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -71,18 +70,18 @@ This example shows how to switch tenant quota on the cloud repository to a scale
 
 |  |
 | --- |
-| $repository = Get-VBRBackupRepository -ScaleOut -Name "Veeam Scale-Out Backup Repository"  $tenant = Get-VBRCloudTenant -Name "ABC Company"  Switch-VBRCloudTenantsQuotaRepositoryToSOBR -ScaleOutBackupRepository $repository -Tenants $tenant |
+| $repository = Get-VBRBackupRepository -ScaleOut -Name "Veeam Scale-Out Backup Repository"  $tenant = Get-VBRCloudTenant -Name "Tenant"  $resource = $tenant.Resources  Switch-VBRCloudTenantsQuotaRepositoryToSOBR -Resource $resource[2] -ScaleOutBackupRepository $repository |
 
 Perform the following steps:
 
 1. Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. Provide the ScaleOut parameter. Specify the Name parameter value. Save the result to the $repository variable.
 2. Run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. Specify the Name parameter value. Save the result to the $tenant variable.
-3. Run the Switch-VBRCloudTenantsQuotaRepositoryToSOBR cmdlet. Specify the following settings:
+3. Get the tenant resources. Provide the Resources property of the $tenant object. Save the result to the $resource variable.
 
-* Set the $repository variable as the ScaleOutBackupRepository parameter value.
-* Set the $tenant variable as the Tenant parameter value.
+You will get an array of tenant resources. Mind the ordinal number of the necessary tenant resource (in our example, it is the third tenant resource in the array).
 
-1. The cmdlet will prompt you to perform the following operations:
+1. Run the Switch-VBRCloudTenantsQuotaRepositoryToSOBR cmdlet. Set the $resource[2] variable as the Resource parameter value. Set the $repository variable as the ScaleOutBackupRepository parameter value.
+2. The cmdlet will prompt you to perform the following operations:
 
 1. Confirm that the specified tenant accounts will be disabled.
 2. Copy tenant backup files to the folders that the cmdlet has created on the scale-out backup repository, and then confirm that the backup files have been copied.
