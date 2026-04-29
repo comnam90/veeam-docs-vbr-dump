@@ -3,7 +3,7 @@ title: "Configuring Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_configure_repository.html"
-last_updated: "2/26/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -14,7 +14,7 @@ A backup repository is a storage location where Veeam Plug-in for Scale Computin
 
 * Direct attached storage: [Microsoft Windows](ms_server.md) and [Linux](linux_server.md) virtual and physical machines. [Hardened repositories](hardened_repository.md) based on Linux servers are supported.
 * Network attached storage: [SMB (CIFS) shares](smb_share.md) and [NFS shares](nfs_share.md).
-* Deduplicating storage appliances: [ExaGrid](deduplicating_appliance_exgrid.md), [Quantum DXi](deduplicating_appliance_quantum.md), [Dell Data Domain](dell_dd.md), [HPE StoreOnce](deduplicating_appliance_storeonce.md), [Fujitsu ETERNUS](fujitsu.md), [Infinidat InfiniGuard](infinidat_infiniguard.md).
+* Deduplicating storage appliances: [ExaGrid](deduplicating_appliance_exgrid.md), [Quantum DXi](deduplicating_appliance_quantum.md), [Dell Data Domain](dell_dd.md), [HPE StoreOnce](deduplicating_appliance_storeonce.md), [Fujitsu ETERNUS](fujitsu.md),[Infinidat InfiniGuard](infinidat_infiniguard.md).
 
 * Cloud object storage: [Amazon S3, S3 compatible, Google Cloud, Wasabi Cloud Storage, Veeam Data Cloud Vault, IBM Cloud and Microsoft Azure Blob](object_storage_repository.md).
 
@@ -27,6 +27,6 @@ Veeam Plug-in for Scale Computing HyperCore does not encrypt backup files stored
 |  |
 | --- |
 | Important |
-| Veeam Plug-in for Scale Computing HyperCore does not support storing backups in Veeam Cloud Connect and [HPE Cloud Bank Storage](storeonce_supported_features.md) repositories. However, you can use them for [storing copies of backups](sch_backups_copy.md) created with Veeam Plug-in for Scale Computing HyperCore. |
+| Veeam Cloud Connect and [HPE Cloud Bank Storage](storeonce_supported_features.md) repositories can only be used to store [copies of backups](sch_backups_copy.md) created with Veeam Plug-in for Scale Computing HyperCore. |
 
 
