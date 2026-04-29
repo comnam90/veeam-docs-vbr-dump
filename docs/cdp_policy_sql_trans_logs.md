@@ -3,7 +3,7 @@ title: "Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_sql_trans_logs.html"
-last_updated: "4/27/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 

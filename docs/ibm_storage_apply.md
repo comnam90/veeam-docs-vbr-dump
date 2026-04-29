@@ -3,7 +3,7 @@ title: "Step 7. Apply Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ibm_storage_apply.html"
-last_updated: "4/27/2026"
+last_updated: "4/28/2026"
 product_version: "13.0.1.2067"
 ---
 
