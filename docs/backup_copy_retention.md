@@ -3,7 +3,7 @@ title: "Retention Policy for Backup Copy Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_retention.html"
-last_updated: "4/28/2026"
+last_updated: "4/30/2026"
 product_version: "13.0.1.2067"
 ---
 
