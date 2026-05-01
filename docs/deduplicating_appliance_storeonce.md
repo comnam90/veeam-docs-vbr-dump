@@ -3,8 +3,8 @@ title: "HPE StoreOnce"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_storeonce.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # HPE StoreOnce
@@ -89,14 +89,7 @@ For more information and recommendations on working with HPE StoreOnce, see [thi
 
 HPE StoreOnce and Unstructured Data Backup
 
-If you plan to use HPE StoreOnce storage appliances for [unstructured data backup](unstructured_data_backup.md), consider the following recommendations for optimal performance:
-
-* A StoreOnce system can have multiple Catalyst stores, and large backup loads (exceeding 1PB) should be spread across more than one Catalyst store on the same StoreOnce system.
-* Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
-
-HPE StoreOnce and Veeam Plug-Ins for Enterprise Applications
-
-If you plan to use HPE StoreOnce as a backup repository for Veeam Plug-In for Oracle RMAN or Veeam Plug-In for SAP HANA, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, multiple Catalyst stores may be created on the same StoreOnce system.
+If you plan to use HPE StoreOnce storage appliances for [unstructured data backup](unstructured_data_backup.md), do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
 
 HPE StoreOnce and Immutability
 
