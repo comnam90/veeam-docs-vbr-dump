@@ -1,13 +1,13 @@
 ---
-title: "Entra ID Log Restore"
+title: "Performing Log Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_log_restore.html"
-last_updated: "3/17/2026"
+last_updated: "4/29/2026"
 product_version: "13.0.1.2067"
 ---
 
-# Entra ID Log Restore
+# Performing Log Restore
 
 
 Entra ID log restore allows restoring folders containing log files or individual log files.
