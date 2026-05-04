@@ -3,7 +3,7 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/permissions_mssql.html"
-last_updated: "4/28/2026"
+last_updated: "4/29/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -21,7 +21,7 @@ Permissions for Veeam Plug-In
 
 | Operation | Required Roles and Permissions |
 | Installing and updating Veeam Plug-In | The account used for installing and updating Veeam Plug-In must be a member of the local Administrators group. Local administrator permissions are required to install and manage Veeam Plug-In Toolbar in Microsoft SQL Server Management Studio. |
-| Performing backup and restore operations in Veeam Plug-In | To be able to connect to the SQL instance, the account used for starting Microsoft SQL Server backup and restore processes must meet the following conditions:   * The account must be added to the following roles: public, sysadmin.  * If the account is not a member of the Administrators group, you must enable the Create Global Objects security policy for the account. For detailed instructions on how to manage the Create Global Objects security policy, see the [Microsoft documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/create-global-objects). |
+| Performing backup and restore operations in Veeam Plug-In | To be able to connect to the SQL instance, the account used for starting Microsoft SQL Server backup and restore processes must meet the following conditions:   * The account must be added to the following roles: public, sysadmin.  * If the account is not a member of the Administrators group, you must enable the Create Global Objects security policy for the account. For detailed instructions on how to manage the Create Global Objects security policy, see [Microsoft documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/create-global-objects). |
 | Connecting to Veeam Backup & Replication, managing backups | The account that is used to authenticate against Veeam Backup & Replication must have access permissions on required Veeam backup repository servers. To learn how to configure permissions on repositories, see [Access and Encryption Settings on Backup Repositories](repository_permissions_mssql.md).  Veeam Plug-In for Microsoft SQL Server uses Windows authentication methods of the Veeam Backup & Replication server to establish a connection to this server and to the backup target. It is recommended to create one user for each standalone Microsoft SQL Server or failover cluster with Veeam Plug-In.  To work with backups created by Veeam Plug-In, you can use only the same account that was used for creating the backup. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). Alternatively, you can delete backups from the backup repository and re-create the backup using another account. For details on how to delete backups, see [Force Deleting Backups](plugins_mssql_retention_force.md) or [Deleting Backup with Veeam Backup & Replication](delete_backups_mssql.md). |
 
 Permissions for Object Storage
