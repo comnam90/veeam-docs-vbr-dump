@@ -3,8 +3,8 @@ title: "Snapshot Types"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_nutanix_snapshots.html"
-last_updated: "2/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Snapshot Types
@@ -22,16 +22,17 @@ Backup snapshots allow Veeam Backup & Replication to use the [CBT mechanism](ahv
 
 A snapshot is a VM snapshot taken manually in the Prism Element or Prism Central console. Snapshots are displayed in the Veeam Backup & Replication console. You can use snapshots to [restore VMs to the original Nutanix AHV environment](ahv_restore_to_ahv.md).
 
-While taking VM snapshots, Nutanix AHV captures data residing on virtual disks attached to the VMs. To protect data residing on volume groups that are attached to the VMs, volume group (VG) snapshots or protection domain (PD) snapshots are created. VG snapshots capture data of volume groups only, whereas PD snapshots capture data of consistency groups that include VMs and volume groups attached to them.
+While taking VM snapshots, Nutanix AHV captures data residing on virtual disks attached to the VMs. To protect data residing on volume groups that are attached to the VMs, volume group (VG) snapshots are created.
 
 * Snapshots on Replica Sites
 
-[Applies only to the [Prism Central deployment](ahv_infrastructure_prism_central.md)] A snapshot on a replica site is a VM snapshot created and replicated by a Prism Central[protection policy](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_7_3:mul-explore-protection-policies-view-pc-r.html). Snapshots on replica sites are not displayed in the Veeam Backup & Replication console — these snapshots can be only be found in the Prism Central console.
+[Applies only to the [Prism Central deployment](ahv_infrastructure_prism_central.md)] A snapshot on a replica site is a VM snapshot created and replicated by a Prism Central [protection policy](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_7_3:mul-explore-protection-policies-view-pc-r.html). Snapshots on replica sites are not displayed in the Veeam Backup & Replication console — these snapshots can be only be found in the Prism Central console.
 
 Snapshots on replica sites allow Veeam Backup & Replication to reduce the backup load on the production environment. However, Veeam Backup & Replication can use these snapshots only if the following requirements are met for each VM included into the backup scope:
 
-* No volume groups are attached to the VM.
+* Both the source cluster and the replica cluster are managed by the same Prism Central.
 * At least one VM snapshot has been replicated to a remote location since the most recent backup was created.
+* No volume groups are attached to the VM.
 * The VM disk configuration has not changed since the most recent snapshot was replicated to a remote location.
 * Guest processing is disabled for the backup job.
 
@@ -45,7 +46,7 @@ VG snapshots are not displayed in the Veeam Backup & Replication console. VG sna
 
 * PD snapshots
 
-A PD snapshot is a protection domain snapshot created to protect data of consistency groups (VMs and volume groups) included into a protection domain. PD snapshots guarantee the consistency of VM and volume group data. Starting from version 8, Veeam Plug-in for Nutanix AHV does not takes PD snapshots — if a PD is included into the backup scope, Veeam Plug-in for Nutanix AHV backs up VMs and their volume groups as if processing individual virtual machines.
+A PD snapshot is a protection domain snapshot created to protect data of consistency groups (VMs and volume groups) included into a protection domain. PD snapshots guarantee the consistency of VM and volume group data. Starting from version 8, Veeam Plug-in for Nutanix AHV does not take PD snapshots — if a PD is included into the backup scope, Veeam Plug-in for Nutanix AHV backs up VMs and their volume groups as if processing individual virtual machines.
 
 |  |
 | --- |
