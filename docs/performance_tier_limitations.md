@@ -3,7 +3,7 @@ title: "Limitations for Performance Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performance_tier_limitations.html"
-last_updated: "3/24/2026"
+last_updated: "4/30/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -48,6 +48,6 @@ Consider the following limitations for the performance tier:
 |  |
 | --- |
 | Note |
-| The total number of concurrent tasks for all Dell Data Domain storage systems used as performance extents must not exceed the soft limit for [data read and write speed](limiting_ingestion.md). |
+| The total number of concurrent tasks for all Dell Data Domain storage systems used as performance extents must not exceed the write streams soft limit. For more information on data streams sent to DD systems, see [this Dell Data Domain KB article](https://www.dell.com/support/kbdoc/en-us/000205841/data-domain-best-practices-for-data-streams-sent-to-dd-systems-with-ddos-7-x). |
 
 
