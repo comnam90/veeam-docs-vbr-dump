@@ -3,8 +3,8 @@ title: "Oplog Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_oplog_backup.html"
-last_updated: "7/31/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/29/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Oplog Backup
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 You can use MongoDB Backup to create transactionally consistent backups of MongoDB replica sets.
 
-To ensure transactional consistency, these backups must include the operations log (oplog). The oplog is a special collection in the MongoDB database that stores all operations that modify database data. The oplog backup helps to maintain data consistency across nodes. It also enables you to restore a MongoDB database items to a specific state between scheduled backups. For more details on MongoDB oplog backups, see the [MongoDB documentation](https://www.mongodb.com/docs/manual/core/replica-set-oplog/).
+To ensure transactional consistency, these backups must include the operations log (oplog). The oplog is a special collection in the MongoDB database that stores all operations that modify database data. The oplog backup helps to maintain data consistency across nodes. It also enables you to restore a MongoDB database items to a specific state between scheduled backups. For more details on MongoDB oplog backups, see [MongoDB documentation](https://www.mongodb.com/docs/manual/core/replica-set-oplog/).
 
 To back up the oplog, Veeam Backup & Replication uses a MongoDB log backup job. This log backup job runs alongside the application backup policy and stores the oplog collection along with the database backup. You can configure the MongoDB log backup job as a setting of the application backup policy. For details, see [Processing Settings](mongo_policy_preferences_processing.md).
 
