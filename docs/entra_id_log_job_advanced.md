@@ -1,13 +1,13 @@
 ---
-title: "Advanced Settings"
+title: "Configuring Advanced Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_log_job_advanced.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/29/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Advanced Settings
+# Configuring Advanced Settings
 
 
 In the Advanced Settings window, you can configure additional log backup job settings, such as compression level, password-based data encryption and custom notification settings.
@@ -63,6 +63,6 @@ For Veeam Backup & Replication to be able to send email notifications, you must 
 | Tip |
 | To instruct Veeam Backup & Replication to further use any of the updated advanced settings by default, click Save As Default in the respective tab. |
 
-![Advanced Settings](images/entra_id_log_job_notific.webp "Configure Notification Settings")
+![Configuring Advanced Settings](images/entra_id_log_job_notific.webp "Configure Notification Settings")
 
 
