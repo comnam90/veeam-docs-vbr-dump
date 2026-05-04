@@ -3,8 +3,8 @@ title: "Backup Infrastructure for Unstructured Data Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_infrastructure.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/30/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Backup Infrastructure for Unstructured Data Backup
@@ -45,7 +45,7 @@ File Shares
 
 A file share is a storage device or data source available to multiple hosts through a computer network.
 
-For supported file shares, requirements and limitations, see [Supported Platforms, Applications and Workloads](platform_support.md#file_servers).
+For supported file shares, requirements and limitations, see [Workloads](platform_support_unstructured_data.md#nas_file_shares).
 
 File backup jobs in Veeam Backup & Replication can read data from the following sources:
 
@@ -65,7 +65,7 @@ Object Storage
 
 An object storage is storage based on either a cloud solution or an S3 compatible on-premises storage solution.
 
-For supported object storage, requirements and limitations, see [Supported Platforms, Applications and Workloads](platform_support.md#os).
+For supported object storage, requirements and limitations, see [Workloads](platform_support_unstructured_data.md#nas_object_storage).
 
 To learn how to add object storage as a source for backup to the inventory of the virtual infrastructure, see the [Adding Object Storage](adding_object_storage.md) section.
 
@@ -122,10 +122,7 @@ Storage Repositories
 
 1 If you use a Dell PowerScale (formerly Isilon) storage system in the CIFS Share Access mode, make sure that you have assigned your service account to the built-in BackupAdmin role within PowerScale. Otherwise, the access to the share will be denied.
 
-2 If you plan to use HPE StoreOnce storage appliances, consider the following recommendations for optimal performance:
-
-* A StoreOnce system can have multiple Catalyst stores, and large backup loads (exceeding 1PB) should be spread across more than one Catalyst store on the same StoreOnce system.
-* Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
+2 If you plan to use HPE StoreOnce storage appliances, do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
 
 3 An object storage repository added as a [capacity tier](new_capacity_tier.md) in a scale-out backup repository cannot be used for storing unstructured data backups. To archive unstructured data backup files to an object storage repository, assign the object storage repository as an archive repository when [you create a file backup job](file_share_backup_job_storage.md).
 
