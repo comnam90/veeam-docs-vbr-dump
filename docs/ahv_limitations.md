@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_limitations.html"
-last_updated: "3/20/2026"
+last_updated: "4/30/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -79,6 +79,7 @@ Backup From Replica Cluster
 
 When configuring backup jobs to use backups from [replica clusters](ahv_backup_job_vbr_assign_vms.md), consider the following:
 
+* Both the source cluster and the replica cluster must be managed by the same Prism Central.
 * Backup from a replica cluster can be used if a protection policy is configured in Prism Central.
 * Backup from replica cluster will not be performed if guest processing (application-aware processing or indexing) is enabled in the backup job.
 * If backup cannot be performed from a replica cluster, it will be performed from the original cluster.

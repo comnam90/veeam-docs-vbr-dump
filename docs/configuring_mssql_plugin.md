@@ -3,8 +3,8 @@ title: "Configuring Veeam Plug-In for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_mssql_plugin.html"
-last_updated: "1/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/17/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Veeam Plug-In for Microsoft SQL Server
@@ -100,8 +100,9 @@ Configuration Parameters
 
 You can specify the following parameters for the MSSQLConfigTool.exe command:
 
+Configuration Parameters
+
 | Parameter | Description |
-| --- | --- |
 | --help | Shows the list of parameters for the plug-in configuration tool. |
 | --show-config | Shows the current Veeam Plug-In for Microsoft SQL Server configuration. |
 | --set-credentials | Specifies credentials to connect to the Veeam Backup & Replication server. Provide a user name in the username@domain format and a password in the password format. If you do not provide a password as a value for this parameter, Veeam Plug-In will prompt you to specify a password. |
@@ -117,7 +118,7 @@ You can specify the following parameters for the MSSQLConfigTool.exe command:
 | --show-preferred-networks | Shows the list of preferred networks set for Veeam Plug-In data traffic to the remote backup repository.  The list shows set preferred networks in descending order of priority. If the list is empty, no networks are set as preferred and Veeam Plug-In routes data traffic to the preferred networks set in Veeam Backup & Replication. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md). |
 | --add-preferred-network | Adds a network to the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository.  To select to which network Veeam Plug-In connects first, you can set the order number of the network in the list. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md). |
 | --remove-preferred-network | Removes a specified network from the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md). |
-| --set-auth-data-for-restore | Specifies the authentication method for database restore. Use this parameter if you want to restore a database to another server or to restore a database from a backup copy. |
+| --set-auth-data-for-restore | Specifies the authentication method for database restore. Use this parameter if you want to restore a database to another server or to restore a database from a backup copy.  When you use this parameter, Veeam Plug-In will prompt you to select an authentication method for database restore operations. You can choose to disable authentication, use specified credentials or apply an existing recovery token.  Depending on the authentication method you choose, Veeam Plug-In will prompt you to provide credentials of the user account under which the backup was created, or to specify a recovery token generated in Veeam Backup & Replication and provided to you by a backup administrator. |
 | --get-file-content | Use the --get-file-content parameter only with the ---set-auth-data-for-restore parameter.  Specifies the path to an .XML file. If you use the --get-file-content parameter, the authentication data will be retrieved from the specified .XML file. |
 | --exclude-from-managed-mode | For Veeam Plug-In for Microsoft SQL Server in the managed mode, specifies databases that are excluded from the backup scope of an application backup policy. You can back up these databases using a standalone backup job from Microsoft SQL Server. Requires --instance and --d parameters. For more information, see [Backing Up SQL Databases with Standalone Backup Job](mssql_configure_backup_exclude_from_managed.md). |
 | --remove-from-exclusions | Use the --remove-from-exclusions parameter only with the --exclude-from-managed-mode parameter.  Removes database from the list of exclusions that was created with the --exclude-from-managed-mode parameter. After you remove the database from the list of exclusions, you can back up this database again using an application backup policy. |

@@ -3,7 +3,7 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_permissions.html"
-last_updated: "4/28/2026"
+last_updated: "4/29/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -68,8 +68,8 @@ Computer with Veeam Plug-In for Microsoft SQL Server
 
 Consider the following:
 
-* The user account that you use for backup and restore processes must have the interactive logon right. If the account does not have this right, the rescan job fails. Veeam Plug-In uses an interactive logon session to connect to SQL instances during protection group rescan. To grant this right, allow the account to log on locally on the machine with Microsoft SQL Server. For more information, see the [Microsoft documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/allow-log-on-locally).
-* Backup or restore operations that use the Microsoft SQL Server Virtual Device Interface (VDI) require that the server connection for SQL Server must be logged on as the sysadmin server role. For details, see [Microsoft SQL documentation](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/vdi-reference/reference-virtual-device-interface?view=sql-server-ver15).
+* The user account responsible for backup and restore processes must have the interactive logon right. If the account does not have this right, the rescan job fails. Veeam Plug-In uses an interactive logon session to connect to SQL instances during protection group rescan. To grant this right, allow the account to log on locally on the machine with Microsoft SQL Server. For more information, see [Microsoft documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/allow-log-on-locally).
+* Backup or restore operations that use the Microsoft SQL Server Virtual Device Interface (VDI) require that the server connection for SQL Server must be logged on as the sysadmin server role. For details, see [Microsoft documentation](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/vdi-reference/reference-virtual-device-interface?view=sql-server-ver15).
 * If you work with SQL failover cluster or Always On availability group, you must assign permissions to the account on each node.
 * When you install Veeam Plug-In using [Veeam Deployment Kit](protection_group_deployer_service.md), Veeam Plug-In connects to the SQL instance with the NT AUTHORITY\SYSTEM account. To do this, the NT AUTHORITY\SYSTEM account must have a login to connect to the SQL instance. In addition, depending on the backup source, the NT AUTHORITY\SYSTEM account must have at least the permissions listed in the table above.
 

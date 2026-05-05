@@ -1,13 +1,13 @@
 ---
-title: "Advanced Settings"
+title: "Configuring Advanced Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_backup_advanced_settings.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "4/29/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Advanced Settings
+# Configuring Advanced Settings
 
 
 In the Advanced Settings window, you can instruct Veeam Backup for Microsoft Entra ID to use password-based data encryption and specify custom notification settings for the backup job.
@@ -49,7 +49,7 @@ The default subject for email notifications is: [%JobResult%] %JobName% (%Object
 
 By default, Veeam Backup & Replication retries to run failed backup jobs 3 times and sends notifications after every retry. To instruct Veeam Backup & Replication to send notifications only after the latest retry, select the Suppress notifications until the last retry check box.
 
-![Advanced Settings](images/entra_id_job_notific.webp "Configure Notifications")
+![Configuring Advanced Settings](images/entra_id_job_notific.webp "Configure Notifications")
 
 Related Topics
 

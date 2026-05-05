@@ -3,7 +3,7 @@ title: "Mount Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
-last_updated: "4/16/2026"
+last_updated: "4/30/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -82,6 +82,7 @@ Before you assign the role of a mount server, check the following requirements a
 * [VMware replication job with Re-IP rules](replica_reip_vm.md)
 * [Application item restore](restore_veeam_explorers.md)
 * [Secure restore](av_scan_about.md) for workloads with ReFS volumes
+* [Scan Backup](malware_detection_scan_backup.md) for workloads with ReFS volumes
 * [SureBackup](surebackup_recovery_verification.md)
 * [Guest OS file restore](guest_file_recovery.md) for Microsoft Windows workloads with ReFS volumes, or from workloads with data deduplication enabled for some volumes
 
