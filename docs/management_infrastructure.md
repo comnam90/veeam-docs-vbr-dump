@@ -3,8 +3,8 @@ title: "Veeam Plug-In Management Infrastructure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/management_infrastructure.html"
-last_updated: "11/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/4/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Plug-In Management Infrastructure
@@ -56,12 +56,23 @@ Distribution Server
 
 The distribution server is an architecture component in the Veeam Plug-In management infrastructure used for automated deployment of Veeam Plug-In setup files to protected computers. When you instruct Veeam Backup & Replication to install Veeam Plug-In on a protected computer, the Veeam backup server communicates to the distribution server, and Veeam Backup & Replication uploads Veeam Plug-In setup files from the distribution server to the target computer.
 
-By default, the role of the distribution server is assigned to the backup server. However, you can deploy a dedicated distribution server to reduce workload on the backup server. To deploy a distribution server, you need to add a server to Veeam Backup & Replication. For details, see [Adding Microsoft Windows Servers](add_windows_server.md). After you assigned the role of distribution server, you need to select this server in the properties of a protection group. To learn more, see [Specify Discovery and Deployment Options](protection_group_options.md).
+By default, the role of the distribution server is assigned to the backup server. However, you can deploy a dedicated distribution server to reduce workload on the backup server. To deploy a distribution server, you need to add a server to Veeam Backup & Replication. For details, see [Adding Microsoft Windows Servers](add_windows_server.md) and [Adding Linux Servers](add_linux_server.md). After you assigned the role of distribution server, you need to select this server in the properties of a protection group. To learn more, see [Creating Protection Groups](protection_group_create.md).
 
 A machine performing the role of the distribution server must meet the following requirements:
 
 * The role of the distribution server can be assigned to a physical or virtual machine.
-* The machine must meet system requirements for backup server. For details, see [System Requirements](system_requirements.md#backup-server).
+* The machine must run one of the following 64-bit OSes:
+
+* Microsoft Windows Server 2016 or later
+* Microsoft Windows 10 LTSB 2021 or later
+* RHEL 9.6 or later
+* Rocky Linux 9.6 or later
+
+|  |
+| --- |
+| Important |
+| If you use RHEL or Rocky Linux, and do not use [Veeam Infrastructure Appliance](linux_infrastructure.md), you must install the following packages before adding the server to the backup infrastructure: aspnetcore-runtime (version 8.0 or later), bindfs, libmsi1, samba-client and ntfs-3g. |
+
 * You must add the machine to the Veeam Backup & Replication console as a managed server.
 
 The distribution server comprises the following services and components:
