@@ -3,7 +3,7 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repos_mssql.html"
-last_updated: "3/23/2026"
+last_updated: "5/5/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -28,13 +28,13 @@ You can use the following types of repositories added to the Veeam Backup & Repl
 * [Dell Data Domain with Data Domain Boost (DDBoost)](dell_dd.md)
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
 
-If you plan to use HPE StoreOnce as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, multiple Catalyst stores may be created on the same StoreOnce system.
+If you plan to use HPE StoreOnce Gen3 or Gen4 software version earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x or Gen5, this 3,000,000 file limit does not apply.
 
 * [Quantum DXi](deduplicating_appliance_quantum.md)
 
 * [ExaGrid](deduplicating_appliance_exgrid.md)
 
-Make sure the repository is configured as described in the [ExaGrid](deduplicating_appliance_exgrid.md) section.
+Make sure the repository is configured as described in [ExaGrid](deduplicating_appliance_exgrid.md).
 
 * [Hardened Repository](hardened_repository.md)
 
