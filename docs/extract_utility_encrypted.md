@@ -3,7 +3,7 @@ title: "Getting Encryption Status of Backup File"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extract_utility_encrypted.html"
-last_updated: "5/4/2026"
+last_updated: "5/6/2026"
 product_version: "13.0.1.2067"
 ---
 
