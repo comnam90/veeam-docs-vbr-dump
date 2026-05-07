@@ -3,8 +3,8 @@ title: "VMware vSphere"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_vm.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # VMware vSphere
@@ -19,7 +19,7 @@ VMware vSphere Virtual Infrastructure
 | Specification | Requirement |
 | Platform | * vSphere 9.01 * vSphere 8.x * vSphere 7.x * VMware Cloud Foundation (VCF)   This platform is supported as individual VMware software components. VMware components listed on this page can be part of VCF. For the information on the correspondence of VMware components to the VCF version, see [this VMware KB article](https://kb.vmware.com/s/article/52520).   * Google Cloud VMware Engine (GCVE)   For more information on GCVE support, see [this Veeam KB article](https://www.veeam.com/kb3178).   * IBM Cloud for VMware Solutions   For more information on IBM Cloud for VMware Solutions support, see [this Veeam KB article](https://www.veeam.com/kb4006).   * Microsoft Azure VMware Solution (AVS)   For more information on AVS support, see [this Veeam KB article](https://www.veeam.com/kb4012).   * Oracle Cloud VMware Solution   For more information on Oracle Cloud VMware Solutions support, see [this Veeam KB article](https://www.veeam.com/kb4007).   * VMware Cloud on AWS   For more information on VMware Cloud on AWS support, see [this Veeam KB article](https://www.veeam.com/kb2414).   * VMware Cloud on Dell   1 Backup and restore of 4Kn drives is not supported. |
 | Hypervisor | * vSphere 9.0  * ESXi 8.x * ESXi 7.x   Free ESXi is not supported. Veeam Backup & Replication leverages vSphere and vStorage APIs that are disabled by VMware in free ESXi. |
-| Management Server | * vCenter Server or vCenter Server Appliance 9.0 (optional) * vCenter Server or vCenter Server Appliance 8.x (optional) * vCenter Server or vCenter Server Appliance 7.x (optional) |
+| Management Server (optional) | * vCenter Server or vCenter Server Appliance 9.0 (optional) * vCenter Server or vCenter Server Appliance 8.x (optional) * vCenter Server or vCenter Server Appliance 7.x (optional) |
 
 Veeam Continuous Data Protection (CDP)
 
@@ -28,6 +28,9 @@ The following infrastructure requirements apply only when you protect VMs with C
 * VMware vSphere edition must be VMware vSphere Essentials Kits editions or higher.
 
 * vCenter Server is required. Standalone ESXi hosts are not supported.
+
+* Support for VMware vSphere 7.x in Veeam Backup & Replication is limited because [VMware has ended the general support for vSphere 7.x](https://blogs.vmware.com/cloud-foundation/2024/07/25/announcing-extension-of-vmware-vsphere-7-x-and-vmware-vsan-7-x-general-support-period/). As a result, the I/O filter for vSphere 7.x hosts is no longer updated, new fixes and enhancements are not provided after October 2, 2025. It is recommended that you upgrade your clusters to version 8.x or later.
+
 * Minimum 16GB RAM is required for source and target ESXi hosts.
 
 * All hosts in a cluster must be of the same major version. For example, 7.x or 8.x (7.0.0, or 7.0.2, or a combination of 7.0.0 and 7.0.2 is supported).
