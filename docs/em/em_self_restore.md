@@ -3,43 +3,44 @@ title: "Using Self-Service File Restore Portal to Restore Machine Guest Files"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_self_restore.html"
-last_updated: "8/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/4/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Using Self-Service File Restore Portal to Restore Machine Guest Files
 
 
-Veeam Backup Enterprise Manager streamlines delegation of restore capabilities: instead of multiple role assignments and restore scope fine-tuning, Enterprise Manager administrator can provide users that have local administrator rights on a Windows machine with a link to Self-Service File Restore Portal — a web UI that displays the controls for file-level restore of the protected machines.
+The Self-Service File Restore Portal is a web-based UI in Veeam Backup Enterprise Manager that lets users restore files from their own Windows machines. Users do not need any Enterprise Manager roles to use the portal. Access is granted automatically if the domain account of the user is identified as a local administrator on the protected machine.
 
-This capability is supported by the Veeam runtime process which performs guest system indexing and also identifies local administrative accounts. Communication with the self-service webpage is performed over the HTTPS protocol. In particular, such delegation capabilities and self-service web portal can be used in enterprise deployments to elevate the first line support to perform in-place restores without administrative access.
+The portal helps you delegate in-place file restores to end users or first-line support without granting administrative access to the backup infrastructure. To delegate file restores to local administrators, provide the users with a link to the Self-Service File Restore Portal.
 
 Before You Begin
 
-|  |
-| --- |
-| Note |
-| * This functionality is supported only in the Enterprise Plus edition of Veeam Backup & Replication. * Self-Service File Restore Portal is available only for users of Microsoft Windows machines. For Linux-based machines, guest OS file restore is performed in the Veeam Backup Enterprise Manager UI under a user account configured in Enterprise Manager. For more information, see [Configuring Accounts and Roles](veeam_backup_em_roles.md). * Veeam Backup Enterprise Manager does not support guest OS files restore from storage snapshots. You can use the Veeam Backup & Replication console instead. |
+Before you use the Self-Service File Restore Portal, consider the following requirements and limitations:
 
-To provide a user account with the ability to access Self-Service File Restore Portal, make sure the following prerequisites are met:
+* The Self-Service File Restore Portal supports restoring guest OS files only from Microsoft Windows machines. To restore guest OS files from Linux-based machines, use the main Enterprise Manager UI with a user account configured in Enterprise Manager. For more information, see [Configuring Accounts and Roles](veeam_backup_em_roles.md).
+* To allow a user account to access the Self-Service File Restore Portal, make sure the account meets the following requirements:
 
-* The account belongs to the trusted or same domain as the Enterprise Manager server (for the user account to be resolved to SID). Users from untrusted domains cannot utilize self-restore.
-* The account has local administrative rights for the required machine guest OS, local user rights are not sufficient.
+* The user account is a domain account. Local accounts are not supported.
+* The account belongs to the same or trusted domain as the Enterprise Manager server, so the user account to be resolved to a SID. Users from untrusted domains cannot use self-restore.
+* The account has local administrator rights on the backed-up machine.
 
-|  |
-| --- |
-| Important |
-| A Self-Service File Restore Portal user has access only to restore points created after the user is assigned with local administrator rights.  Machine restore points will stay available for self-restore to a user account whose local administrative rights were revoked after the restore point creation until the next restore point is created (then that user will not be able to access guest files any longer). |
+* A Self-Service File Restore Portal user have access only to restore points created after the user was granted local administrator rights on the backed-up machine. If local administrator rights are later revoked, the restore points remain available until the next restore point is created (after that, the user can no longer access guest files).
+* Enterprise Manager does not support guest OS files restore from storage snapshots. You can use the Veeam Backup & Replication console instead.
+* Self-Service File Restore Portal is supported only in the Enterprise Plus edition of Veeam Backup & Replication.
+* If the Veeam Backup Enterprise Manager server is added to the Veeam ONE monitoring scope, restore operations performed with the Self-Service File Restore Portal are included in the [Restore Operator Activity](https://helpcenter.veeam.com/docs/one/userguide/restore_operator_activity.html?ver=13) report in Veeam ONE.
 
 Browsing Guest OS Files Through Self-Service Portal
 
 To access the guest files in a machine backup:
 
-1. Start the Self-Service File Restore Portal by clicking its icon in the list of applications or on the desktop. Alternatively, in the web browser address bar, enter the portal URL, for example:
+1. Start the Self-Service File Restore Portal by clicking its icon in the list of applications or on the desktop. Alternatively, in the web browser, specify the portal URL in the following format:
 
 |  |
 | --- |
-| https://enterprise\_manager\_host/selfrestore |
+| https://<enterprise\_manager\_address>/selfrestore |
+
+Note that the communication with the portal is performed over the HTTPS protocol.
 
 1. Enter the account credentials to log in. Use the DOMAIN\USERNAME format to specify the user name. The Files tab will open. By default, it displays guest OS files as of the latest restore point of the machine to which you logged in with local administrative rights.
 
@@ -48,10 +49,7 @@ To access the guest files in a machine backup:
 1. To view guest files as of earlier restore point, click the Calendar icon and select the restore point. To view guest files of another machine (if available to you), use the Search field or the Pick from List link.
 2. You can perform all operations supported for machine guest files by Veeam Backup Enterprise Manager. For more information on file browsing, search and restore, see [Browsing Machine Backups for Guest OS Files](browsing_vm_backups.md), [Searching for Guest OS Files in Machine Backups](searching_vm_backups.md), and [Performing 1-Click File Restore](performing_1-click_file_restore.md).
 
-|  |
-| --- |
-| Note |
-| If the Veeam Backup Enterprise Manager server is added to the Veeam ONE monitoring scope, the restore operations performed with Self-Service File Restore Portal are included in the [Restore Operator Activity](https://helpcenter.veeam.com/docs/one/userguide/restore_operator_activity.html?ver=13) report available in Veeam ONE. |
+Troubleshooting
 
 If no guest OS files are visible to the user, check the following reasons:
 
