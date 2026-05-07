@@ -3,8 +3,8 @@ title: "Connect-VBRServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vbrserver.html"
-last_updated: "2/17/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Connect-VBRServer
@@ -44,8 +44,8 @@ If you do not specify the server, you will connect to the local Veeam backup ser
 
 |  |
 | --- |
-| Note |
-| Only local and domain user accounts can be used for authentication. User accounts with SAML authentication are not supported. |
+| Important |
+| Consider the following:   * Connecting to a Microsoft Windows–based backup server from a remote Linux machine using Veeam Backup PowerShell is not supported. Veeam Backup PowerShell on Linux does not include an auto-update mechanism, so any version mismatch between the client and server will cause the connection to fail. * To connect from a Microsoft Windows–based backup server to Veeam Software Appliance, you must first connect to the backup server using the Veeam Backup & Replication console. This triggers the auto-update mechanism, which synchronizes the component versions on both the console and PowerShell clients. * Only local and domain user accounts can be used for authentication. User accounts with SAML authentication are not supported. |
 
 Within one PowerShell session, you can connect to one Veeam server. To connect to another Veeam server, you need to close the current session.
 
