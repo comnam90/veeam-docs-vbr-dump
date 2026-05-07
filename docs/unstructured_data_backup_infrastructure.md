@@ -3,7 +3,7 @@ title: "Backup Infrastructure for Unstructured Data Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_infrastructure.html"
-last_updated: "4/30/2026"
+last_updated: "5/6/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -122,7 +122,10 @@ Storage Repositories
 
 1 If you use a Dell PowerScale (formerly Isilon) storage system in the CIFS Share Access mode, make sure that you have assigned your service account to the built-in BackupAdmin role within PowerScale. Otherwise, the access to the share will be denied.
 
-2 If you plan to use HPE StoreOnce storage appliances, do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
+2 If you plan to use HPE StoreOnce storage appliances, consider the following recommendations for optimal performance:
+
+* For HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x, large backup loads (exceeding 1PB) should be spread across multiple Catalyst stores on the same StoreOnce system. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 1PB limit does not apply.
+* Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
 
 3 An object storage repository added as a [capacity tier](new_capacity_tier.md) in a scale-out backup repository cannot be used for storing unstructured data backups. To archive unstructured data backup files to an object storage repository, assign the object storage repository as an archive repository when [you create a file backup job](file_share_backup_job_storage.md).
 
