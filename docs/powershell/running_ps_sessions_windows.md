@@ -3,14 +3,19 @@ title: "Running Veeam Backup PowerShell on Windows Machines"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/running_ps_sessions_windows.html"
-last_updated: "12/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "4/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Running Veeam Backup PowerShell on Windows Machines
 
 
 Veeam Backup & Replication supports usage of Veeam Backup PowerShell on Windows machines with Veeam Console installed. After you install the Veeam Backup & Replication Console, Veeam PowerShell module will be installed by default. After that, you can run Veeam PowerShell cmdlets from the Veeam Backup & Replication Console, or directly from Windows PowerShell console installed on your machine.
+
+|  |
+| --- |
+| Important |
+| To connect from a Microsoft Windows–based backup server to Veeam Software Appliance, you must first connect to the backup server using the Veeam Backup & Replication console. This triggers the auto-update mechanism, which synchronizes the component versions on both the console and PowerShell clients. |
 
 Requirements
 
