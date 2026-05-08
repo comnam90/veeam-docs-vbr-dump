@@ -3,8 +3,8 @@ title: "Guest OS File Restore"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/searching_restoring_vm_guest_files.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/4/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Guest OS File Restore
