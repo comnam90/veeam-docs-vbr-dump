@@ -3,7 +3,7 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repos_rman.html"
-last_updated: "3/23/2026"
+last_updated: "5/5/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -16,7 +16,7 @@ Before you start performing operations on backup repositories within the Veeam B
 
 Supported Backup Repositories
 
-You can use the following types of repositories added to the Veeam Backup & Replication infrastructure to store backups created with Veeam Plug-In for Oracle RMAN:
+You can use the following types of repositories added to the Veeam Backup & Replication infrastructure to store backups created with Veeam Plug-In:
 
 * [Windows Server](ms_server.md)
 * [Linux Server](linux_server.md)
@@ -32,7 +32,7 @@ You can use the following types of repositories added to the Veeam Backup & Repl
 
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
 
-If you plan to use HPE StoreOnce as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, multiple Catalyst stores may be created on the same StoreOnce system.
+If you plan to use HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 3,000,000 file limit does not apply.
 
 * [Quantum DXi](deduplicating_appliance_quantum.md)
 * [ExaGrid](deduplicating_appliance_exgrid.md)
@@ -45,7 +45,7 @@ Make sure the repository is configured as described in [ExaGrid](deduplicating_a
 
 * [Scale-Out Backup Repository](backup_repository_sobr.md)
 
-Ensure that the performance extents of the scale-out backup repository contain repositories supported by Veeam Plug-In for Oracle RMAN. You can use object storage repositories as performance extents to store backups created with Veeam Plug-Ins.
+Ensure that the performance extents of the scale-out backup repository contain repositories supported by Veeam Plug-In. You can use object storage repositories as performance extents to store backups created with Veeam Plug-Ins.
 
 Backup Repository Limitations
 
