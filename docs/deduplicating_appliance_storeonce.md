@@ -3,7 +3,7 @@ title: "HPE StoreOnce"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_storeonce.html"
-last_updated: "4/30/2026"
+last_updated: "5/6/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -89,7 +89,14 @@ For more information and recommendations on working with HPE StoreOnce, see [thi
 
 HPE StoreOnce and Unstructured Data Backup
 
-If you plan to use HPE StoreOnce storage appliances for [unstructured data backup](unstructured_data_backup.md), do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
+If you plan to use HPE StoreOnce storage appliances for [unstructured data backup](unstructured_data_backup.md), consider the following recommendations for optimal performance:
+
+* For HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x, large backup loads (exceeding 1PB) should be spread across multiple Catalyst stores on the same StoreOnce system. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 1PB limit does not apply.
+* Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
+
+HPE StoreOnce and Veeam Plug-Ins for Enterprise Applications
+
+If you plan to use HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 3,000,000 file limit does not apply.
 
 HPE StoreOnce and Immutability
 
