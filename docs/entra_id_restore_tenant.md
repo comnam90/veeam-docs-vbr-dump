@@ -3,7 +3,7 @@ title: "Tenant Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_restore_tenant.html"
-last_updated: "5/4/2026"
+last_updated: "5/5/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -12,8 +12,9 @@ product_version: "13.0.1.2067"
 
 Veeam Backup for Microsoft Entra ID offers the following restore operations:
 
-* [Item restore](entra_id_tenant_restore_items.md) — restores Microsoft Entra ID items such as users, groups, roles, administrative units, applications, conditional access policies and intune policies from a backup to the Entra ID environment. You can restore one or more items of the same type at a time.
-* [Properties restore](entra_id_tenant_restore_properties.md) — restores properties of Microsoft Entra ID items from a backup to the Entra ID environment. You can restore properties of only one item at a time.
+* [Item restore](entra_id_tenant_restore_items.md) — restores Microsoft Entra ID items (users, groups, roles, administrative units, applications, conditional access policies and intune policies) from a backup to the Entra ID environment. You can restore one or more items of the same type at a time.
+
+* * [Properties restore](entra_id_tenant_restore_properties.md) — restores properties of Microsoft Entra ID items from a backup to the Entra ID environment. You can restore properties of only one item at a time.
 
 You can restore tenant data to the most recent state or to any available restore point.
 
