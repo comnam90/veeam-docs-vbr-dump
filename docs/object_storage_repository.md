@@ -3,7 +3,7 @@ title: "Object Storage Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_repository.html"
-last_updated: "3/11/2026"
+last_updated: "5/5/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -81,6 +81,8 @@ Depending on the type of job, a backup proxy connects to the object storage repo
 * Through gateway servers — in this mode, a backup proxy transfers data to the object storage repository through a gateway server.
 
 By default, Veeam Backup & Replication deploys object storage repositories with the direct connection mode. You can specify the connection mode at the Account step of the Object Storage Repository wizard.
+
+Note that the components used to communicate with object storage can vary depending on your infrastructure. For more information, see [deployment limitations](general_limitations.md#deployment).
 
 Multiple Buckets for S3 Compatible Object Storage Repositories
 
