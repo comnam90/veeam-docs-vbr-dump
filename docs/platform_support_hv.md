@@ -3,7 +3,7 @@ title: "Microsoft Hyper-V"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_hv.html"
-last_updated: "3/11/2026"
+last_updated: "5/5/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -34,14 +34,16 @@ Hyper-V VMs
 
 Consider the following:
 
+* Veeam Backup & Replication does not support VMs with the Trusted Launch security type on Azure Local. Backup, replication, and restore operations are not supported for this VM type.
+* Azure Arc VMs are not fully supported. Backup and replication jobs may complete, but Veeam Backup & Replication cannot restore Arc VMs with Azure integration intact. Microsoft does not provide the required API for this. The restored VM is created as a standard Hyper-V VM and loses all Azure Arc management plane integration.
 * [For Microsoft Windows 2003 and Nano Server] Application-aware processing is not supported due to the absence of VSS framework.
 * [For Hyper-V 2016 and later] Application-aware processing for Microsoft Windows VMs with volumes larger than 64 TB is not supported, because Veeam Backup & Replication uses the Microsoft Software Shadow Copy Provider to create a volume shadow copy during the backup or replication. For more information, see [this Microsoft KB article](https://support.microsoft.com/en-us/help/2967756/usability-limit-for-volume-shadow-copy-service-vss-in-windows).
 
 * [For Hyper-V 2016 and later] Veeam Backup & Replication cannot interact with the guest OS of a shielded VM and get information about its OS, IP address and so on. For this reason, the following operations are not supported for shielded VMs:
 
-+ Application-aware image processing
-+ Restore of VM guest OS files to the original location
-+ Restore of application items to the original location
+* Application-aware image processing
+* Restore of VM guest OS files to the original location
+* Restore of application items to the original location
 
 * [For Hyper-V 2016 and later] Shielded VMs can run only on trusted hosts guarded with the Host Guardian Service. Consider that when selecting a target host for VM replication or VM restore. If the target host is not guarded with the same Host Guardian Service as the source host, you will not be able to power on the replicated or restored VM.
 * The two previous limitations also apply to Generation 1 of Microsoft Hyper-V VMs that use Key Storage Drive. For more information about Key Storage Drive, see [Microsoft Docs](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/learn-more/Generation-1-virtual-machine-security-settings-for-Hyper-V).
