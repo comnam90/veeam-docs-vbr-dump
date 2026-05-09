@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_hpe_storeonce_byb.html"
-last_updated: "10/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -14,8 +14,8 @@ Before you create a backup copy job for HPE StoreOnce backup repository, check t
 
 * The minimum supported software versions of are the following:
 
-* For the third generation, the minimum version is 3.18.18.
-* For the fourth generation, the minimum version is 4.2.3.
+* For Gen3, the minimum version is 3.18.18.
+* For Gen4, the minimum version is 4.2.3.
 
 * Make sure that all backup infrastructure components that take part in the backup copy process are added to the backup infrastructure. These components include the source and target repositories between which data is copied. For more information on how to add a backup repository, see [Backup Repositories](backup_repository.md).
 * To perform the health check for backup files, you must use HPE StoreOnce version 5.2 or later.
