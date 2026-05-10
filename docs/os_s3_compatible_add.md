@@ -3,8 +3,8 @@ title: "Adding S3 Compatible Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_s3_compatible_add.html"
-last_updated: "1/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Adding S3 Compatible Object Storage
