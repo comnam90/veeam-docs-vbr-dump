@@ -3,7 +3,7 @@ title: "Running Veeam PowerShell Session on Linux Machines"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/running_ps_sessions_linux.html"
-last_updated: "3/12/2026"
+last_updated: "4/20/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -11,6 +11,11 @@ product_version: "13.0.1.2067"
 
 
 Veeam Backup & Replication supports usage of Veeam Backup PowerShell on a Veeam Software Appliance or other Linux machines. To run cmdlets on a Veeam Software Appliance, you need to enable SSH connections and root shell access, and import the Veeam Backup PowerShell module. Before you run the cmdlets on a Linux machine, you must create an optional repository for the Veeam package, install the Veeam Backup PowerShell module and import it to your Linux system. After that, you can connect to the backup server.
+
+|  |
+| --- |
+| Important |
+| Connecting to a Microsoft Windows–based backup server from a remote Linux machine using Veeam Backup PowerShell is not supported. Veeam Backup PowerShell on Linux does not include an auto-update mechanism, so any version mismatch between the client and server will cause the connection to fail. |
 
 Requirements
 
