@@ -3,7 +3,7 @@ title: "Quick Rollback"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_quick_rollback.html"
-last_updated: "5/4/2026"
+last_updated: "5/8/2026"
 product_version: "13.0.1.2067"
 ---
 
