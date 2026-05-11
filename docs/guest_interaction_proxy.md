@@ -3,8 +3,8 @@ title: "Guest Interaction Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_interaction_proxy.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/5/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Guest Interaction Proxies
@@ -45,7 +45,7 @@ If you use RHEL or Rocky Linux version 9 or later, and do not use [Veeam Infrast
 
 * You must add the machine to the Veeam Backup & Replication console as a managed server.
 * [For VMware vSphere environments] Guest interaction proxy must have either a LAN or VIX connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about setting up a connection to the VM, see [this Veeam KB article](https://www.veeam.com/kb1788).
-* [For Microsoft Hyper-V environments] Guest interaction proxy must have a LAN connection to the VM that will be backed up or replicated.
+* [For Microsoft Hyper-V environments] Guest interaction proxy must have either a LAN or PowerShell Direct connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about PowerShell Direct, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/powershell-direct).
 * [For Microsoft Hyper-V environments] If you plan to use PowerShell Direct connection to back up VMs that reside on Hyper-V Server 2016 (or later) and run Microsoft Windows 10 (or later) or Microsoft Windows Server 2016 (or later), the guest interaction proxy must have Microsoft PowerShell 2.0 (or later) installed.
 
 The guest interaction proxy role can be performed by any machine that meets the requirements, including VMware or off-host backup proxy, backup repository, WAN accelerator, Microsoft Hyper-V host or backup server.

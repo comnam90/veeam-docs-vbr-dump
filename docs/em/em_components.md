@@ -3,8 +3,8 @@ title: "Enterprise Manager Components"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_components.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/4/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Enterprise Manager Components
@@ -29,7 +29,7 @@ Veeam Backup Enterprise Manager incorporates the following services and componen
 * Web interfaces used to access Veeam Backup Enterprise Manager from different infrastructures:
 
 * Main web interface is used to browse and perform operations with jobs, backups and machines, to configure Enterprise Manager functionality and control infrastructure. For more information, see [Exploring Enterprise Manager](em_know_ui.md).
-* Veeam Self-Service File Restore Portal that allows administrators to restore files or folders from the guest OS of a virtual or physical machine. For more information, see [Using Self-Service File Restore Portal to Restore Machine Guest Files](em_self_restore.md).
+* Veeam Self-Service File Restore Portal that allows administrators to restore files or folders from the guest OS of a virtual or physical machine. For more information, see [Using Self-Service File Restore Portal to Restore Guest OS Files](em_self_restore.md).
 * Veeam Self-Service Backup Portal and Veeam Plug-in for VMware Cloud Director that provide members of VMware Cloud Director organizations with a UI for self-service operations on machine protection. For more information, see [Veeam Self-Service Backup Portal for Cloud Director](em_working_with_vcd_vms.md).
 * VMware vSphere Self-Service Backup Portal that provides Service Providers with a UI for managing access permissions and vSphere quotas for their customers. For more information, see [vSphere Self-Service Backup Portal](em_working_with_vsphere_portal.md).
 

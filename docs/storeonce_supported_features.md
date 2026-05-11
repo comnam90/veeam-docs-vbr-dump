@@ -3,8 +3,8 @@ title: "HPE StoreOnce Supported Features"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storeonce_supported_features.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/6/2026"
+product_version: "13.0.1.2067"
 ---
 
 # HPE StoreOnce Supported Features
@@ -18,7 +18,7 @@ HPE StoreOnce Catalyst improves synthetic full backup file creation and transfor
 
 Accelerated vPower-Enabled Operations
 
-[For VMware vSphere environments] If HPE StoreOnce Catalyst is integrated with Veeam Backup & Replication, it helps to benefit from improved performance of vPower-enabled operations — Instant Recovery, SureBackup and On-Demand Sandbox — from backups residing on HPE StoreOnce. To get the maximum vPower performance, HPE StoreOnce must be running firmware version 3.15.1 or later.
+[For VMware vSphere environments] If HPE StoreOnce Catalyst is integrated with Veeam Backup & Replication, it helps to benefit from improved performance of vPower-enabled operations — Instant Recovery, SureBackup and On-Demand Sandbox — from backups residing on HPE StoreOnce. To get the maximum vPower performance, HPE StoreOnce must be running software version 3.15.1 or later.
 
 Accelerated Data Recovery
 
@@ -55,10 +55,10 @@ Fixed block chunking is supported for the following types of backups:
 
 * Backups of Nutanix AHV virtual machines created by [Veeam Plug-In for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
 
-* Backups of oVirt VMs created by [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
+* Backups of oVirt VMs created by [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*
 
 * Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Scale Computing HyperCore VMs created by [Veeam Plug-In for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2)
+* Backups of Scale Computing HyperCore VMs created by [Veeam Plug-in for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2)
 
 \* - Available on Microsoft Windows-based backup server.
 
@@ -71,7 +71,7 @@ Veeam Backup & Replication supports HPE Cloud Bank Storage for HPE StoreOnce sof
 Veeam Backup & Replication can also use HPE Cloud Bank Storage located on HPE Alletra Storage MP X10000 as the target for backup jobs and backup copy jobs. The following list shows the supported platforms, products and operations:
 
 * Backup and backup copy: [VMware vSphere](vmware_vsphere.md), [Microsoft Hyper-V](ms_hyperv.md).
-* Experimental support for backup copy: [VMware Cloud Director](vcloud_director.md) , [Kasten](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13), [MongoDB](mongo_backup.md), [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*, [Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9), [Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3), [Veeam Agents](protect_comp.md).
+* Experimental support for backup copy: [VMware Cloud Director](vcloud_director.md) , [Kasten](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13), [MongoDB](mongo_backup.md), [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*, [Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9), [Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3), [Veeam Agents](protect_comp.md).
 * Experimental support for backup and backup copy: [Veeam Plug-Ins for Enterprise Applications](protect_applications.md) (except for MongoDB Backup).
 
 \*This feature is available for Microsoft Windows-based backup servers.

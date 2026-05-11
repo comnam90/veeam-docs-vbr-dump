@@ -3,14 +3,14 @@ title: "Adding Amazon S3 Object Storage, Amazon S3 Glacier Storage and AWS Snowb
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_amazon_object_storage.html"
-last_updated: "12/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/7/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Adding Amazon S3 Object Storage, Amazon S3 Glacier Storage and AWS Snowball Edge
 
 
-Before you add an Amazon S3 storage, Amazon Glacier or Amazon Snowball Edge to the backup infrastructure, check [prerequisites](s3_compatible_limitations.md) and [required permissions](required_permissions.md#rpasos). If you plan to use immutability, verify that you have configured the [necessary settings](immutability_os_enable.md#S3) for your S3 bucket. After that, use the New Object Storage Repository wizard.
+Before you add an Amazon S3 storage, Amazon Glacier or Amazon Snowball Edge to the backup infrastructure, check [prerequisites](s3_compatible_limitations.md) and [required permissions](required_permissions.md#rpasos). If you plan to use immutability, verify that you have configured the [necessary settings](immutability_os_enable.md#S3) for your S3 buckets. After that, use the New Object Storage Repository wizard.
 
 Related Topics
 
