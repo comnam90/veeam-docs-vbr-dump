@@ -3,8 +3,8 @@ title: "Adding 11:11 Cloud Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_1111.html"
-last_updated: "8/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/7/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Adding 11:11 Cloud Object Storage
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 For more information about 11:11 Cloud Object Storage, see this [11:11 Systems article](https://1111systems.com/services/object-storage/).
 
-Before you add an 11:11 Cloud Object Storage to the backup infrastructure, check [prerequisites](additional_providers_limitations.md#1111). If you plan to use immutability, verify that you have configured the [necessary settings](immutability_os_enable.md#S3) for your S3 bucket. After that, use the New Object Storage Repository wizard.
+Before you add an 11:11 Cloud Object Storage to the backup infrastructure, check [prerequisites](additional_providers_limitations.md#1111). If you plan to use immutability, verify that you have configured the [necessary settings](immutability_os_enable.md#S3) for your S3 buckets. After that, use the New Object Storage Repository wizard.
 
 1. [Launch the New Object Storage Repository wizard.](new_object_repository_1111.md)
 2. [Specify the object storage name.](1111_repository_name.md)
