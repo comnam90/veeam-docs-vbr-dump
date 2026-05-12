@@ -3,7 +3,7 @@ title: "Support for Always On Availability Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_plugin_aon.html"
-last_updated: "5/5/2026"
+last_updated: "5/11/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -35,7 +35,6 @@ Consider the following:
 * Veeam Plug-In does not check backup preferences of the Always On availability group if you start the backup process manually from the Veeam Plug-In UI.
 * On secondary replicas, only full copy-only backup and log backup are supported. Differential backup is not supported.
 * Veeam Plug-In does not add a restored database to an Always On availability group. You must perform this operation manually after the restore process is completed. For details, see [Restore of Always On Availability Groups](#aon_restore).
-* When you back up an Always On availability group, Veeam Backup & Replication selects the preferred backup node based on the backup preferences of the availability group. Only the Primary and Any Replica options are supported. With other options, Veeam Backup & Replication may select a secondary replica. In this case, backup jobs fail.
 
 Restore of Always On Availability Groups
 

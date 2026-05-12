@@ -3,7 +3,7 @@ title: "About Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview.html"
-last_updated: "4/17/2026"
+last_updated: "5/11/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -107,7 +107,7 @@ Veeam Backup & Replication integrates with a set of solutions that provide repor
 * [Veeam App for Splunk](https://helpcenter.veeam.com/docs/security_plugins_splunk/guide/): a Splunk extension that allows you to monitor the health and security status of your Veeam backup infrastructure.
 * [Veeam App for Palo Alto Networks XSOAR](https://helpcenter.veeam.com/docs/security_plugins_xsoar/guide/): a Cortex XSOAR content pack that allows you to monitor various security activities in your Veeam backup infrastructure.
 * [Veeam App for Palo Alto Networks XSIAM](https://helpcenter.veeam.com/docs/security_plugins_xsiam/guide/): a Cortex XSIAM content pack that allows you to monitor various security activities in your Veeam backup infrastructure.
-* [Veeam App for CrowdStrike Falcon LogScale](https://helpcenter.veeam.com/docs/security_plugins_falcon_logscale/guide/):a CrowdStrike app that allows you to monitor various security activities in your Veeam Data Platform environment.
+* [Veeam App for CrowdStrike Falcon LogScale](https://helpcenter.veeam.com/docs/security_plugins_falcon_logscale/guide/): a CrowdStrike app that allows you to monitor various security activities in your Veeam Data Platform environment.
 * [Veeam App for Microsoft Sentinel](https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/): a Microsoft Azure app that allows you to monitor backup jobs and various security activities in your Veeam Data Platform environment.
 
 Service Providers
