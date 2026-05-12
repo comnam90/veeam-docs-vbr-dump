@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_before.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -24,5 +24,7 @@ Application backup policies have the following limitations:
 * You can create application backups in a Veeam backup repository. If you want to save backups in other target locations, you must configure backup job on the computer with Veeam Plug-In installed.
 
 * After you start managing a Veeam Plug-In with Veeam Backup & Replication, data backup for the computer is performed by a backup policy configured in Veeam Backup & Replication. Veeam Plug-In running on the computer starts a new backup chain on a target location specified in the backup policy settings. You cannot continue the existing backup chain that was created by Veeam Plug-In operating in the standalone mode.
+
+* When you back up an Always On availability group with managed Veeam Plug-In, Veeam Backup & Replication selects the preferred backup node based on the backup preferences of the availability group. Only the Primary and Any Replica options are supported. With other options, Veeam Backup & Replication may select a secondary replica. In this case, applications backup policies fail.
 
 
