@@ -3,8 +3,8 @@ title: "Configuring Delegation Mode"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_configuring_delegation_mode.html"
-last_updated: "10/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/12/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Delegation Mode
@@ -37,7 +37,7 @@ The Self-service section is available if you have added to Enterprise Manager at
 | Note |
 | To enable your tenants to restore entire VMs to a new location, you must assign the specified tags to all VMware vSphere parent objects in the target location, including the host, VM folder, resource pool, datastore and network. |
 
-* vSphere role — to allow tenants to work with VMs that are available to the specified vSphere role.
+* vSphere role — to allow tenants to work with VMs that are available through the specified vSphere role. Note that Enterprise Manager determines whether a vSphere user has access to a VM, based on the effective user permission on the VM. Because direct user permissions override group permissions, and permissions on child objects override inherited permissions from parent objects, a VM might be unavailable to the tenant even if the delegation role is assigned higher in the vCenter hierarchy. For more information on vSphere permissions, see [this VMware KB article](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-security/vsphere-permissions-and-user-management-tasks.html).
 
 To specify a vSphere role:
 
