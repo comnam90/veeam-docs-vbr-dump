@@ -3,7 +3,7 @@ title: "Performing Instant Recovery to VMware vSphere"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_vsphere_perform.html"
-last_updated: "5/5/2026"
+last_updated: "5/12/2026"
 product_version: "13.0.1.2067"
 ---
 

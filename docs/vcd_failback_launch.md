@@ -3,7 +3,7 @@ title: "Step 1. Launch Failback Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_launch.html"
-last_updated: "5/11/2026"
+last_updated: "5/12/2026"
 product_version: "13.0.1.2067"
 ---
 
