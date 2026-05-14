@@ -3,8 +3,8 @@ title: "Step 3. Specify Bandwidth Settings"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_vcd_tenant_throttling.html"
-last_updated: "1/30/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 3. Specify Bandwidth Settings

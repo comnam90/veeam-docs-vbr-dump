@@ -3,8 +3,8 @@ title: "Data Encryption and Throttling"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/data_encryption_and_throttling.html"
-last_updated: "11/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Data Encryption and Throttling

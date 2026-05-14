@@ -3,7 +3,7 @@ title: "Switching to Production File Share Manually"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/nas_migration_switch_manually.html"
-last_updated: "5/5/2026"
+last_updated: "5/13/2026"
 product_version: "13.0.1.2067"
 ---
 
