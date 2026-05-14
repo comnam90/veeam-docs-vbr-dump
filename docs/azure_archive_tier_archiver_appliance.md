@@ -1,13 +1,13 @@
 ---
-title: "Step 6. Specify Archiver Appliance"
+title: "Step 5. Specify Archiver Appliance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_archive_tier_archiver_appliance.html"
-last_updated: "3/31/2026"
+last_updated: "5/13/2026"
 product_version: "13.0.1.2067"
 ---
 
-# Step 6. Specify Archiver Appliance
+# Step 5. Specify Archiver Appliance
 
 
 At the Archiver Appliance step of the wizard, you can specify archiver appliance settings. An archiver appliance is an auxiliary instance that is necessary to transfer data from Azure Blob storage to Azure Archive Storage. For more information, see the [Archiver Appliances](archiver_appliance.md) section.
@@ -15,7 +15,7 @@ At the Archiver Appliance step of the wizard, you can specify archiver appliance
 |  |
 | --- |
 | Important |
-| Consider the following:   * You must configure the archiver appliance if you transfer data from [Microsoft Azure Blob Storage](osr_adding_blob_storage.md), [Amazon S3 Storage](osr_amazon_adding.md) or [11:11 Cloud Object Storage Repository](adding_1111.md). * Veeam Backup & Replication must be able to connect to the machine that you will use as an archiver appliance. Therefore, if your backup server is not located within AWS, you must configure public IP addresses for the subnet in which the appliance resides. For more information on configuring the subnet for Amazon VPC, see [AWS Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/modify-subnets.html#subnet-public-ip). |
+| Consider the following:   * You must configure the archiver appliance if you transfer data from [Microsoft Azure Blob Storage](osr_adding_blob_storage.md), [Amazon S3 Storage](osr_amazon_adding.md) or [11:11 Cloud Object Storage Repository](adding_1111.md). * Veeam Backup & Replication must be able to connect to the machine that you will use as an archiver appliance. If your backup server is not deployed in your Microsoft Azure environment, assign a public IP address to the archiver appliance VM so the backup server can reach it over the internet. For more information on public IP addresses in Azure, see [Microsoft Azure documentation](https://learn.microsoft.com/en-us/azure/virtual-network/). |
 
 To configure and set up an archiver appliance, you must add a Microsoft Azure account to Veeam Backup & Replication. For that, do the following:
 
@@ -35,6 +35,6 @@ To configure and set up an archiver appliance, you must add a Microsoft Azure ac
 2. In the Redirector port field, specify the port that Veeam Backup & Replication will use to route requests between the archiver appliance and backup infrastructure components.
 3. Click OK.
 
-![Step 6. Specify Archiver Appliance](images/azure_archive_proxy.webp)
+![Step 5. Specify Archiver Appliance](images/azure_archive_proxy.webp)
 
 
