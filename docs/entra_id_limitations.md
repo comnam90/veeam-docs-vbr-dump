@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_limitations.html"
-last_updated: "4/22/2026"
+last_updated: "5/12/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -41,8 +41,8 @@ Log Backup and Restore
 
 When protecting sign-in and audit logs, consider the following:
 
-* Veeam Backup for Microsoft Entra ID does not support storing backed-up sign-in and audit logs in multi-bucket repositories. For more information, see section [Object Storage Repository](object_storage_repository.md).
-* Veeam Backup for Microsoft Entra ID does not support backup of sign-in logs with a free Microsoft Entra ID license.
-* To create a log backup, you must first back up the tenant whose logs you want to protect; keep in mind that the latest restore point of the tenant backup must be created within 30 days before the log backup.
+* Protection of sign-in logs is excluded from all [free licenses](entra_id_licensing.md) — with a free license, you can back up audit logs only.
+* Veeam Backup for Microsoft Entra ID does not support storing backed-up logs in multi-bucket repositories. For more information, see section [Object Storage Repository](object_storage_repository.md).
+* Veeam Backup for Microsoft Entra ID supports producing backups for only those logs that belong to tenants whose data the product already protects. Moreover, the most recent restore points must be created no earlier 30 days prior to the log backup.
 
 
