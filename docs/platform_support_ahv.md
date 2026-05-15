@@ -3,7 +3,7 @@ title: "Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_ahv.html"
-last_updated: "4/24/2026"
+last_updated: "5/12/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -19,7 +19,7 @@ Nutanix AHV Virtual Infrastructure
 | Specification | Requirement |
 | Platform | Nutanix-certified hardware and Nutanix Cloud Clusters (NC2) running Nutanix AOS versions 6.8.1.6 and above |
 | Hypervisor | AHV |
-| Management Server (optional) | Prism Central version pc.2022.6–pc.2024.3.1.10, pc.7.3 and above except 7.3.1.2 and 7.5.0.0 |
+| Management Server (optional) | Prism Central version pc.2022.6–pc.2024.3.1.10, pc.7.3 and above except 7.3.1.2, 7.3.1.3 and 7.5.0.0 |
 
 Consider the following:
 
