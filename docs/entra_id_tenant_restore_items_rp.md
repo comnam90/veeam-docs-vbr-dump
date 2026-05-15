@@ -3,8 +3,8 @@ title: "Restoring Items"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore_items_rp.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Restoring Items
@@ -22,7 +22,7 @@ Veeam Backup & Replication allows you to choose one restore point for multiple i
 |  |
 | --- |
 | Tip |
-| If you want to adjust the restore scope, you can click Upload CSV to import the list if items that you have previously exported at [step 2](entra_id_tenant_restore_items.md). Keep in mind that you will have to manually modify the .CSV file to remove all columns except Id (or Id and DisplayNamefor users) before uploading the file — otherwise, Veeam Backup & Replication will not be able to process the file properly. |
+| If you want to adjust the restore scope, you can click Upload CSV to import the list if items that you have previously exported at [step 2](entra_id_tenant_restore_items.md). Keep in mind that you will have to manually modify the .CSV file to remove all columns except Id (or Id and DisplayName for users) before uploading the file — otherwise, Veeam Backup & Replication will not be able to process the file properly. |
 
 [![Select Restore Point](images/entra_id_restore_user_point.webp)](images/entra_id_restore_user_point.webp "Select Restore Point")
 
