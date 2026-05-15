@@ -3,8 +3,8 @@ title: "Configuring Standalone Tenant Account"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user.html"
-last_updated: "6/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Standalone Tenant Account

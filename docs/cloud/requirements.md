@@ -3,8 +3,8 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/requirements.html"
-last_updated: "1/15/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Planning and Preparation

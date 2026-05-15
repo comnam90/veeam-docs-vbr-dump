@@ -3,8 +3,8 @@ title: "About Veeam Cloud Connect"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html"
-last_updated: "6/28/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # About Veeam Cloud Connect
