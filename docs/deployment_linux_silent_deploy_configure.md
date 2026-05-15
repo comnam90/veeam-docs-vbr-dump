@@ -3,7 +3,7 @@ title: "Automating Installation with Initial Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_silent_deploy_configure.html"
-last_updated: "4/21/2026"
+last_updated: "5/14/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -58,7 +58,7 @@ To automate the installation and configuration of Veeam Software Appliance, do t
 |  |
 | --- |
 | Note |
-| Consider the following when specifying your answers:   * The passwords for the veeamadmin and veeamso account must meet the following requirements:  * 15 characters minimum. * 1 upper case character. * 1 lower case character. * 1 numeric character. * 1 special character. * No more than 3 characters of the same class in a row. For example, you cannot use more than 3 lowercase or 3 numerical characters in sequence.  * The passwords for the veeamadmin and veeamso accounts must be different. * To avoid timing issues with multifactor authentication, it is recommended to set ntp.runSync=true. * The multifactor authentication secret key must be specified as a 16 digit, Base32-encoded string. * The recovery token must be specified using hexadecimal values — 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Note that you can generate an appropriate string with the New-Guid cmdlet in Microsoft PowerShell.   If your specified answers do not meet these requirements, the configuration process will fail. To troubleshoot errors, you can use the [Live OS ISO](https://www.veeam.com/kb4761) to view the /var/log/VeeamBackup/veeam\_hostmanager/veeamhostmanager.log file and the system logs files in the /var/log/anaconda directory. |
+| Consider the following when specifying your answers:   * The passwords for the veeamadmin and veeamso account must meet the following requirements:  * 15 characters minimum. * 1 upper case character. * 1 lower case character. * 1 numeric character. * 1 special character. * No more than 3 characters of the same class in a row. For example, you cannot use more than 3 lowercase or 3 numerical characters in sequence.  * The passwords for the veeamadmin and veeamso accounts must be different. * To avoid timing issues with multifactor authentication, it is recommended to set ntp.runSync=true.  * You cannot specify an NTS server as an answer to ntp.servers=.  * To specify multiple NTP servers, you must use the following format: ntp.servers=myntp01.example.local;myntp02.example.local;myntp03.example.local.  * The multifactor authentication secret key must be specified as a 16 digit, Base32-encoded string. * The recovery token must be specified using hexadecimal values — 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Note that you can generate an appropriate string with the New-Guid cmdlet in Microsoft PowerShell.   If your specified answers do not meet these requirements, the configuration process will fail. To troubleshoot errors, you can use the [Live OS ISO](https://www.veeam.com/kb4761) to view the /var/log/VeeamBackup/veeam\_hostmanager/veeamhostmanager.log file and the system logs files in the /var/log/anaconda directory. |
 
 1. To create a script that will complete the configuration process using the answer file, add the following code:
 
