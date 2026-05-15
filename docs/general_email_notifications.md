@@ -3,8 +3,8 @@ title: "Configuring Global Email Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_email_notifications.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Global Email Notification Settings
@@ -29,7 +29,7 @@ To configure mail server, in the Mail server field, specify the authentication m
 |  |
 | --- |
 | Note |
-| For more secure environments, it is recommended to use OAuth 2.0 authentication. Also, note that Microsoft and Google consider SMTP basic authentication as an outdated industry standard and they disabled it. For more information, see [this Microsoft article](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online) and [this Google article](https://support.google.com/accounts/answer/6010255). |
+| Consider the following:   * For more secure environments, it is recommended to use OAuth 2.0 authentication. Also, note that Microsoft and Google consider SMTP basic authentication as an outdated industry standard and they disabled it. For more information, see [this Microsoft article](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online) and [this Google article](https://support.google.com/accounts/answer/6010255). * In an HA cluster environment, Veeam Backup & Replication sends email reports from the IP address of the current primary node, not from the cluster (virtual) IP address. Ensure that your mail filters accept connections from both node IP addresses. |
 
 Configuring SMTP Basic Authentication
 
