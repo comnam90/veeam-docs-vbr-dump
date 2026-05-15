@@ -3,7 +3,7 @@ title: "Backup Copy to Cloud Repository"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_backup_copy.html"
-last_updated: "4/1/2026"
+last_updated: "5/13/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -21,30 +21,35 @@ The backup copy process differs depending on the backup copy mode: immediate cop
 * In the immediate copy mode, once a new restore point has been added to the primary backup chain, the backup copy job immediately copies it to the target backup repository. After that, the backup copy job stops until a new restore point appears on the source backup repository. You can specify the backup copy window to allow the job to copy restore points during specific time periods only.
 * In the periodic copy mode, the backup copy job runs according to the schedule that you specify in the backup copy job settings. You can set up the job to run daily, monthly or periodically at the specified time, specify automatic job retry settings and specify the backup copy window to allow the job to copy restore points during specific time periods only. When the backup copy job starts, Veeam Backup & Replication checks the source backup repository: if a new restore point has been added to the primary backup chain, Veeam Backup & Replication automatically copies it to the target backup repository.
 
+For more information, see the [Backup Copy](https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy.html?ver=13) section in the Veeam Backup & Replication User Guide.
+
 Supported Backup Types
 
-Veeam Backup & Replication supports backup copy to the cloud repository for the following types of backups:
+Veeam Cloud Connect supports backup copy to the cloud repository for backups of the following workloads created by Veeam Backup & Replication:
 
-* Backups of VMware vSphere VMs created by Veeam Backup & Replication
-
-* Backups of VMware Cloud Director VMs created by Veeam Backup & Replication
-* Backups of Microsoft Hyper-V VMs created by Veeam Backup & Replication
-
-* Backups of Microsoft Windows machines created by Veeam Agent for Microsoft Windows
-* Backups of Linux machines created by Veeam Agent for Linux
-* Backups of Mac machines created by Veeam Agent for Mac
-* Backups of IBM AIX machines created by Veeam Agent for IBM AIX
-* Backups of Oracle Solaris machines (based on the x86 or SPARC architecture) created by Veeam Agent for Oracle Solaris
-
-* Backups of HPE Morpheus VM Essentials VMs created by Veeam Backup & Replication
-* Backups of Proxmox VE VMs created by [Veeam Backup for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Nutanix AHV VMs created by [Veeam Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
-* Backups of Amazon EC2 instances created by [Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/welcome.html?ver=10)
-* Backups of Microsoft Azure VMs created by [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)
-
-* Backups of Google Compute Engine VM instances created by [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)
-* Backups of oVirt KVM VMs created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)
+* [VMware vSphere VMs](https://helpcenter.veeam.com/docs/vbr/userguide/vmware_vsphere.html?ver=13)
+* [VMware Cloud Director VMs](https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director.html?ver=13)
+* [Microsoft Hyper-V VMs](https://helpcenter.veeam.com/docs/vbr/userguide/ms_hyperv.html?ver=13)
+* [Nutanix AHV VMs](https://helpcenter.veeam.com/docs/vbr/userguide/ahv_overview.html?ver=13)
+* [Proxmox VE VMs](https://helpcenter.veeam.com/docs/vbr/userguide/pve_overview.html?ver=13)
+* [HPE Morpheus VM Essentials VMs](https://helpcenter.veeam.com/docs/vbr/userguide/hpe_morpheus_vme.html?ver=13) (requires installation of the HPE Morpheus plug-in)
+* [oVirt KVM VMs](https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_overview.html?ver=13)
 * Backups created by backup copy jobs configured in Veeam Backup & Replication (For details, see [Support for Backup Copy from Backup Copy](#backup_copy_jobs).)
+
+Veeam Cloud Connect supports backup copy to the cloud repository for the following types of backups created by [Veeam Agents](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13):
+
+* Microsoft Windows machines
+* Linux machines
+* Mac machines
+* IBM AIX machines
+* Oracle Solaris machines (based on the x86 or SPARC architecture)
+
+Veeam Cloud Connect supports backup copy to the cloud repository for backups of the following workloads created by Veeam products for public cloud backup:
+
+* [Amazon EC2 instances](https://helpcenter.veeam.com/docs/vbaws/guide/welcome.html?ver=10)
+
+* [Microsoft Azure VMs](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)
+* [Google Compute Engine VM instances](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)
 
 Support for Backup Copy from Backup Copy
 
@@ -52,18 +57,18 @@ Veeam Backup & Replication allows you to create a backup copy from another backu
 
 * Veeam Cloud Connect supports this operation for copies of the following types of backups:
 
-* Backups of VMware vSphere VMs created by Veeam Backup & Replication
-* Backups of VMware Cloud Director VMs created by Veeam Backup & Replication
-* Backups of Microsoft Hyper-V VMs created by Veeam Backup & Replication
+* VMware vSphere VMs
+* VMware Cloud Director VMs
+* Microsoft Hyper-V VMs
 
 * Veeam Cloud Connect does not support this operation for copies of the following types of backups:
 
-* External repository platforms, such as Amazon EC2, Microsoft Azure or Google Cloud
+* Nutanix AHV VMs
+* Proxmox VE VMs
+* HPE Morpheus VM Essentials VMs (requires installation of the HPE Morpheus plug-in)
+* oVirt KVM VMs
 * Backups created by Veeam Agents
-
-* Backups of Proxmox VE VMs created by [Veeam Backup for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
-* Backups of Nutanix AHV VMs created by [Veeam Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9)
-* Backups of oVirt KVM VMs created by [Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)
+* Backups of cloud workloads, such as Amazon EC2, Microsoft Azure or Google Cloud, created by Veeam products for public cloud backup
 
 Related Tasks
 
