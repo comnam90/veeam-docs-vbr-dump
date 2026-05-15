@@ -3,7 +3,7 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage.html"
-last_updated: "3/25/2026"
+last_updated: "5/12/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -32,15 +32,22 @@ You can store Veeam Agent backups in the following types of object storage:
 
 Veeam Agents communicate with the object storage using one of the following connection modes:
 
-* Connection through a gateway server. With this connection mode, Veeam Agents access object storage through Veeam Backup & Replication. As a result, Veeam Agent access to object storage is managed by a proxy component — a gateway server assigned in the Veeam Backup & Replication console. Backup data is sent from Veeam Agent computer to the gateway server, then it is sent from gateway server to the object storage.
-* Direct connection. With this connection mode, Veeam Agents access object storage directly. Backup data is sent from Veeam Agent computer to the object storage. Veeam Agent access to object storage is managed by Application Programming Interface (API) provided by an external cloud service provider. To learn more, see [Access Permissions for Direct Connection to Object Storage](agents_object_storage_direct_access.md).
+* Connection through a gateway server. With this connection mode, access object storage through Veeam Backup & Replication. As a result, Veeam Agent access to object storage is managed by a proxy component — a gateway server assigned in the Veeam Backup & Replication console. Backup data is sent from Veeam Agent computer to the gateway server, then it is sent from gateway server to the object storage.
+* Direct connection. With this connection mode, access object storage directly. Backup data is sent from Veeam Agent computer to the object storage. Veeam Agent access to object storage is managed by Application Programming Interface (API) provided by an external cloud service provider. To learn more, see [Access Permissions for Direct Connection to Object Storage](agents_object_storage_direct_access.md).
 
-If you plan to back up to the repository in the object storage in the direct connection mode and a backup job managed by Veeam Agent, keep in mind that Veeam Agents will still connect to Veeam Backup & Replication periodically. Using these connections, Veeam Agent will update license and backup job settings. These connections are not necessary for backup job sessions.
+If you plan to back up to the repository in the object storage in the direct connection mode using a backup job managed by Veeam Agent, keep in mind that Veeam Agents will still connect to Veeam Backup & Replication periodically to update license and backup job settings and refresh object storage credentials. These connections are not necessary for backup job sessions themselves.
+
+The period a Veeam Agent computer can stay offline from Veeam Backup & Replication is up to 7 or 30 days, depending on the backup repository type and how it was added:
+
+* Up to 7 days — for Microsoft Azure Blob storage repositories added using Entra ID credentials.
+* Up to 30 days — for all other repository types. This is the validity period of the license issued by Veeam Backup & Replication and the credential lifetime for Microsoft Azure Blob storage repositories added using a Shared Key.
+
+The license and credentials are not refreshed on every connection. The license and Shared Key credentials are refreshed on reconnection when 15 days or less remain; Entra ID credentials are refreshed when 6 days or less remain. To avoid license or credential expiration, Veeam Agent must reconnect to Veeam Backup & Replication within these refresh windows — otherwise backup jobs will fail.
 
 |  |
 | --- |
 | IMPORTANT |
-| * After you switch your repository from one connection mode to another, Veeam Agent will need to connect to Veeam Backup & Replication to update repository settings. Until this connection is made, all backup operations by Veeam Agents will fail.  * If you plan to back up data to the S3 compatible storage in the direct connection mode, you must perform an extra step: manually set access to the object storage for Veeam Agents. To learn more, see [Managing Permissions for S3 Compatible Object Storage](access_permissions.md). * Veeam Agent always performs backup of cloud machines directly to the cloud regardless of the connection mode specified in the backup repository settings. |
+| * After you switch your repository from one connection mode to another, Veeam Agent will need to connect to Veeam Backup & Replication to update repository settings. Until this connection is made, all backup operations by will fail.  * If you plan to back up data to the S3 compatible storage in the direct connection mode, you must perform an extra step: manually set access to the object storage for . To learn more, see [Managing Permissions for S3 Compatible Object Storage](access_permissions.md). * Veeam Agent always performs backup of cloud machines directly to the cloud regardless of the connection mode specified in the backup repository settings. |
 
 Getting Started
 
@@ -87,11 +94,11 @@ To learn about modes you can put extents of scale-out backup repositories to, se
 * [For Unix-based Veeam Agent computers] Consider the following:
 
 * Veeam Agent for Unix supports only Amazon S3, as well as selected types of S3 compatible storage: MinIO, IBM Cloud and Wasabi Cloud.
-* Veeam Agent for Unix does not support backup to object storage for computers added to a protection group for pre-installed Veeam Agents
+* Veeam Agent for Unix does not support backup to object storage for computers added to a protection group for pre-installed
 * [For Oracle Solaris 10 1/13] To enable Veeam Agent connection to S3 compatible storage repositories, you must install the necessary CA certificates. For more information on installing the certificates, see [this Veeam KB article](https://veeam.com/kb4735).
 * Veeam Agent for Unix only supports backup repositories that are configured to have [direct connection](#direct) to object storage.
 
-* For Microsoft Azure Blob storage, Veeam Agents do not support soft delete for blobs.
+* For Microsoft Azure Blob storage, do not support soft delete for blobs.
 * If you plan to back up data to the Microsoft Azure Blob storage using a [direct connection](#direct), the following limitations apply:
 
 * Cool tier is not supported for the following configurations:
@@ -108,7 +115,7 @@ To learn more about access tiers for blob data, see [Microsoft documentation](ht
 
 To learn more about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 
-* Veeam Agents do not support direct backup under the general-purpose V1 storage account type.
+* do not support direct backup under the general-purpose V1 storage account type.
 * [For backup jobs managed by Veeam Agent] If you configure an [expiration policy for shared access signatures (SAS)](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal) on your Azure container, the SAS expiry interval should be set to at least:
 
 * 30 days — for repositories using Shared Access Key.
