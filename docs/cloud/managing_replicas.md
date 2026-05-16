@@ -3,8 +3,8 @@ title: "Managing Replicas"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/managing_replicas.html"
-last_updated: "1/30/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Managing Replicas

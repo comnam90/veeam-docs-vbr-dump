@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_limitations.html"
-last_updated: "3/23/2026"
+last_updated: "5/8/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -82,6 +82,7 @@ Consider the following network limitations for the HA cluster:
 
 * Before you assemble the HA cluster, make sure that both nodes have the same DNS suffixes and correct DNS addresses. Otherwise, Veeam Backup & Replication will not be able to resolve infrastructure servers on both nodes. Ensure that the HA cluster hostname resolves to the correct IP by both HA nodes.
 * The machines that you use as Linux-based backup servers must allow inbound and outbound traffic on the ports listed in the [Ports](used_ports.md#copnfigurationdb) section. Ensure that these ports are opened for the cluster IP to enable proper cluster operations.
+* Veeam Backup & Replication sends email reports from the IP address of the current primary node, not from the cluster (virtual) IP address. Ensure that your mail filters accept connections from both node IP addresses.
 * The HA cluster does not synchronize DNS suffixes between HA nodes. You must add the suffixes for both nodes in the [Veeam Host Management console](hmc_about.md).
 
 * You must use static IP addresses for the HA nodes and for a cluster virtual IP address.
@@ -122,7 +123,7 @@ Failover Limitations for HA Cluster
 
 Before you perform a failover, consider the following limitations:
 
-* Before you initiate a failover, ensure that the primary node is offline and will not revert to online status during the failover. Otherwise, it may lead to split-brain scenarios.
+* Before you initiate a failover, ensure that the primary node is powered off. Keep the primary node powered off from the moment the failover prompt appears until the failover completes and the console reconnects to the new primary node. If the old primary node is powered on during this period, a split-brain scenario may occur.
 * Kerberos authentication is not supported during failover to the secondary node. You must specify credentials in plain text.
 * Veeam Backup & Replication does not support automatic failover of an HA cluster.
 

@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/ports.html"
-last_updated: "1/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/13/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Ports
@@ -22,8 +22,9 @@ In this section, you can also find diagrams illustrating the interaction between
 * [Ports in Universal CDP Replication Scenarios](#universal_cdp_replication_ports)
 * [Ports in Remote Access Console Scenarios](#rac_ports)
 
+Ports
+
 | From | To | Protocol | Port | Notes |
-| --- | --- | --- | --- | --- |
 | Cloud gateway | SP backup server | TCP | 6169 | Port on the SP backup server used to listen to cloud commands from the tenant side. Tenant cloud commands are passed to the Veeam Cloud Connect Service through the cloud gateway. |
 | TCP | 8190, 8191 | Port on the SP backup server used by SP-side network redirectors to connect to the Remote Access Console and establish a Remote Desktop Connection to tenant. |
 | TCP | 2500 to 5000 | Port range used during transfer of the Veeam Service Provider Console agent from the SP backup server to the tenant backup server. |
@@ -44,8 +45,8 @@ In this section, you can also find diagrams illustrating the interaction between
 | TCP | 636 | Ports used for LDAPS connections to Active Directory domain controllers for Active Directory tenants authentication. |
 | WAN accelerator | TCP | 6164 | Controlling port for RPC calls. |
 | TCP | 6220 | Port used for traffic control (throttling) for tenants that use WAN accelerators. |
-| SP backup repository | TCP | 2500 to 3300 | Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
-| SP backup repository | Cloud gateway | TCP and UDP | 6180 | Port used for connections during the following operations:   * Creating a replica from a cloud backup * Replica seeding from a cloud backup |
+| SP backup repository (or gateway server) | TCP | 2500 to 3300 | Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned. |
+| SP backup repository (or gateway server) | Cloud gateway | TCP and UDP | 6180 | Port used for connections during the following operations:   * Creating a replica from a cloud backup * Replica seeding from a cloud backup |
 | SP Veeam Backup & Replication console | SP backup server | TCP | 10003 | Port used by the Veeam Backup & Replication console to connect to the backup server when managing the Veeam Cloud Connect infrastructure. |
 | Tenant Veeam Backup & Replication console | Cloud gateway | TCP | 6180 | Port used by the Veeam Software Appliance (VSA) to connect to the cloud gateway when managing the Veeam Cloud Connect infrastructure. |
 | Tenant backup server | Cloud gateway | TCP and UDP | 6180 | Port on the cloud gateway used to transport VM data from the tenant side to the SP side (UDP is used only during partial failover of a cloud replica). |

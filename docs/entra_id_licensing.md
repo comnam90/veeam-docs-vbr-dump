@@ -3,7 +3,7 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_licensing.html"
-last_updated: "3/13/2026"
+last_updated: "5/12/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -51,14 +51,10 @@ Rental licenses are provided to Veeam Cloud & Service Providers (VCSPs) only. Fo
 
 |  |
 | --- |
-| Note |
-| Protection of conditional access policies is included in the Veeam Data Platform Advanced or Premium. For more details about all Veeam Data Platform packages, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
+| Important |
+| * Protection of sign-in logs is excluded from all free licenses — with a free license, you can back up audit logs only. * Protection of conditional access policies is included in the Veeam Data Platform Advanced and Premium license packages.   For more information on Veeam license packages, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf). |
 
 After you obtain a license, install it on the backup server as described in section [Installing License](install_license.md).
-
-Log Backup
-
-The feature is included in the Veeam Data Platform Advanced or Premium. For more details about all Veeam Data Platform packages, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 
 Using Existing License
 

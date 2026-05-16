@@ -3,8 +3,8 @@ title: "Failover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_failover.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/8/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Failover
@@ -16,7 +16,7 @@ Failover Limitations
 
 Before you perform a failover, consider the following limitations:
 
-* Before you initiate a failover, ensure that the primary node is offline and will not revert to online status during the failover. Otherwise, it may lead to split-brain scenarios.
+* Before you initiate a failover, ensure that the primary node is powered off. Keep the primary node powered off from the moment the failover prompt appears until the failover completes and the console reconnects to the new primary node. If the old primary node is powered on during this period, a split-brain scenario may occur.
 * Kerberos authentication is not supported during failover to the secondary node. You must specify credentials in plain text.
 * Veeam Backup & Replication does not support automatic failover of an HA cluster.
 
