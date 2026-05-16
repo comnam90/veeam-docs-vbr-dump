@@ -3,8 +3,8 @@ title: "Creating Backup Copy Jobs for HPE StoreOnce Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_hpe_storeonce.html"
-last_updated: "2/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/15/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Creating Backup Copy Jobs for HPE StoreOnce Repositories
@@ -17,8 +17,9 @@ Unlike other backup copy jobs, the backup copy job for HPE StoreOnce mirrors dat
 The backup copy job copies only backup files created by backup jobs and other backup copy jobs. The backup files must be of the following types:
 
 * Backup files of VMware vSphere and Microsoft Hyper-V VMs created by Veeam Backup & Replication. Log backup files are not copied.
+* Physical machine backup files created by [Veeam Agent backup jobs managed by the backup server](agents_job.md).
 * Backup files of Nutanix AHV VMs created by Veeam Plug-In for Nutanix AHV.
-* Backup files of oVirt VMs created by Veeam Backup for OLVM and RHV\*.
+* Backup files of oVirt VMs created by Veeam Plug-In for oVirt KVM\*.
 * Backups copied to an HPE StoreOnce repository by other backup copy jobs (regular backup copy jobs and backup copy jobs for HPE StoreOnce repositories).
 
 \* - Available on Microsoft Windows-based backup server.
