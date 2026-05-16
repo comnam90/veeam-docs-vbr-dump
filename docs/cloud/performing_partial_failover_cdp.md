@@ -3,7 +3,7 @@ title: "Performing Failover for CDP Replicas"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/performing_partial_failover_cdp.html"
-last_updated: "3/12/2026"
+last_updated: "5/15/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -31,7 +31,7 @@ To perform partial-site failover to a CDP replica, do the following:
 | If you have not deployed the network extension appliance for the network to which the corrupted VM is connected, Veeam Backup & Replication will display a warning. You can proceed to the Network Extension step of the Service Provider wizard to configure and deploy the missing network extension appliance. To learn more, see [Configure Network Extension Appliances](cloud_connect_sp_network_appliance.md).  After the network extension appliance is deployed, you can launch the Failover wizard to start the partial site failover operation. |
 
 1. At the Machines step of the wizard, select one or more VMs for which you want to perform failover.
-2. By default, Veeam Backup & Replication uses the latest valid restore point of the VM replica. If you want to fail over to an earlier state of the VM, select the VM in the Virtual machines to failover list and click Point.
+2. By default, Veeam Backup & Replication uses the latest valid restore point of the VM replica. If you want to fail over to an earlier state of the VM, select the VM in the Machines to failover list and click Point.
 
 ![Performing Failover for CDP Replicas](images/partial_failover_vms_cdp.webp)
 
