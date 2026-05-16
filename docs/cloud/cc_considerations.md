@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_considerations.html"
-last_updated: "5/13/2026"
+last_updated: "5/15/2026"
 product_version: "13.0.1.2067"
 ---
 
