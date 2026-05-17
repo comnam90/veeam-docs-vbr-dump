@@ -3,7 +3,7 @@ title: "Step 6. Assess Results"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/hardware_plan_assess_results.html"
-last_updated: "5/13/2026"
+last_updated: "5/15/2026"
 product_version: "13.0.1.2067"
 ---
 
