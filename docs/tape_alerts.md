@@ -3,7 +3,7 @@ title: "Tape Drive Alerts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_alerts.html"
-last_updated: "5/15/2026"
+last_updated: "5/20/2026"
 product_version: "13.0.1.2067"
 ---
 

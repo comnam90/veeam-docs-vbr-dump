@@ -3,7 +3,7 @@ title: "Failover Plans"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_failover.html"
-last_updated: "5/13/2026"
+last_updated: "5/19/2026"
 product_version: "13.0.1.2067"
 ---
 
