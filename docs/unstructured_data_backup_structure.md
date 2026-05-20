@@ -3,8 +3,8 @@ title: "Data Structure in Backup, Archive and Secondary Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_structure.html"
-last_updated: "9/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Data Structure in Backup, Archive and Secondary Repositories
@@ -22,8 +22,9 @@ Veeam Backup & Replication uses the following structure for storing the file bac
 
 ![Data Structure in Backup, Archive and Secondary Repositories](images/backup_repository_data_structure.webp)
 
+Data Structure in Backup, Archive and Secondary Repositories
+
 | Folder/File | | | | | | Description |
-| --- | --- | --- | --- | --- | --- | --- |
 | Backup |  |  |  |  |  | Folder in the repository that is dedicated to store backups. |
 |  | <job> |  |  |  |  | Folder that contains all data backed up by a specific file backup job or object storage backup job. Data for each job will be placed to its own directory. |
 |  |  | <job>.vstore |  |  |  | XML metadata file that describes the entire backup file for a specific file backup job or object storage backup job. |
