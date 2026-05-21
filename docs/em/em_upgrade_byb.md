@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_upgrade_byb.html"
-last_updated: "3/27/2026"
+last_updated: "5/19/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -21,7 +21,8 @@ Before starting the upgrade procedure, read and follow the recommendations below
 
 If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Enterprise Manager server. Otherwise, Veeam Backup Catalog, malware detection and the Configuration Database Connection Settings utility will not work properly for Veeam Backup & Replication. For more information about the utility, see [Connecting Enterprise Manager to Another Configuration Database](dbconfig_utility.md).
 
-* In Enterprise Manager, you cannot edit jobs that are managed by backup servers with earlier versions installed until you upgrade the backup servers. Additionally, you cannot create and edit jobs of such backup servers in [Veeam Self-Service Backup Portal for Cloud Director](em_working_with_vcd_vms.md) and [vSphere Self-Service Backup Portal](em_working_with_vsphere_portal.md). For example, if you upgrade Enterprise Manager to version 13.0, you will not be able to edit jobs managed by a backup server with version 12.3 until you upgrade the backup server to version 13.0.
+* In Enterprise Manager, you cannot edit jobs that are managed by backup servers with earlier versions installed until you upgrade the backup servers. Additionally, you cannot create and edit jobs of such backup servers in [Veeam Self-Service Backup Portal for Cloud Director](em_working_with_vcd_vms.md) and [vSphere Self-Service Backup Portal](em_working_with_vsphere_portal.md). For example, if you upgrade Enterprise Manager to version 13.0.1, you will not be able to edit jobs managed by a backup server with version 12.3 until you upgrade the backup server to version 13.0.1.
+
 * Local antivirus or antimalware software can interfere with Enterprise Manager upgrade. If you receive the Failed to create website 0x80070020 message, disable your local antivirus or antimalware software and start the upgrade process again. You can re-enable your antivirus software once the upgrade completes. For more information, see [this Veeam KB article](https://www.veeam.com/kb1992).
 * .NET 3.5.1 WCF HTTP Activation Windows component prevents Enterprise Manager from functioning. Make sure there is no .NET 3.5.1 WCF HTTP Activation Windows component on the Veeam Backup Enterprise Manager server prior to the installation.
 * If you use SAML authentication to log in to Enterprise Manager, update the service provider (SP) settings in your identity provider either before or immediately after the Enterprise Manager upgrade. When you configure SP settings for Enterprise Manager version 13, SSO is enabled for both the Enterprise Manager website and vSphere Self-Service Backup Portal; separate configuration for vSphere Self-Service Backup Portal is no longer required.  For more information on how to update the SP settings, see [Configuring SAML Authentication Settings](veeam_backup_em_saml.md#sp).
@@ -31,7 +32,7 @@ The following table lists the updated SP settings for Enterprise Manager version
 Before You Begin
 
 | Setting | Version 12 | Version 13 |
-| SP Entity ID / Issuer | https://<host>:<port>/Saml2 | https://<host>:<port>/Saml2/Acs |
-| Assertion Consumer URL | https://<host>:<port>/oauth/Saml2 | https://<host>:<port>/oauth/Saml2/Acs |
+| SP Entity ID / Issuer | https://<host>:<port>/Saml2 | https://<host>:<port>/oauth/Saml2 |
+| Assertion Consumer URL | https://<host>:<port>/Saml2/Acs | https://<host>:<port>/oauth/Saml2/Acs |
 
 
