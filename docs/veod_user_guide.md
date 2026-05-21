@@ -1,16 +1,16 @@
 ---
-title: "Veeam Explorer for Microsoft OneDrive for Business"
+title: "Veeam Explorer for Microsoft OneDrive"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_user_guide.html"
-last_updated: "10/31/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/11/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Veeam Explorer for Microsoft OneDrive for Business
+# Veeam Explorer for Microsoft OneDrive
 
 
-Veeam Explorer for Microsoft OneDrive for Business allows you to restore Microsoft OneDrive data from backups created by Veeam Backup for Microsoft 365. You can also save data from backups to a local computer and send data from backups by email.
+Veeam Explorer for Microsoft OneDrive allows you to restore Microsoft OneDrive for work or school data from backups created by Veeam Backup for Microsoft 365. You can also save data from backups to a local computer and send data from backups by email.
 
 In This Section
 
