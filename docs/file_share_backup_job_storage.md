@@ -3,8 +3,8 @@ title: "Step 4. Specify Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_storage.html"
-last_updated: "9/2/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Specify Backup Repository Settings
@@ -30,7 +30,7 @@ To map the job to a backup, click the Map backup link. In the opened Select Back
 
 1. Use the Keep all file versions for the last field to specify how long copies of all recent file versions in the selected file share must be kept in the backup repository. You can restore the entire file share to any restore point within the period specified in this setting.
 
-If, for example, Keep all file versions for the last is set to 30 days, the backup repository will store all file versions that appeared at the file share during the last 30 days. At the scheduled time on the 31st day, the file backup job first backs up new file versions and saves them to the backup repository. Right after that, file versions older than 30 days (created on the 1st day) are either deleted from the backup repository or moved to the archive repository. File versions are moved to the archive repository, if at the [Archive Repository](file_share_backup_job_archive_repo.md) step of the wizard you enable the Archive file versions to the following archive repository check box and configure the archive retention.
+If, for example, Keep all file versions for the last is set to 30 days, the backup repository will store all file versions that appeared at the file share during the last 30 days. At the scheduled time on the 31st day, the file backup job first backs up new file versions and saves them to the backup repository. Right after that, file versions older than 30 days that have been replaced by newer versions are either deleted from the backup repository or moved to the archive repository. File versions are moved to the archive repository, if at the [Archive Repository](file_share_backup_job_archive_repo.md) step of the wizard you enable the Archive file versions to the following archive repository check box and configure the archive retention.
 
 1. If you need to keep a copy of the backups in another repository, select the Configure secondary destinations for this job check box. That enables the [Secondary Target](file_share_backup_job_secondary_target.md) step of the wizard.
 

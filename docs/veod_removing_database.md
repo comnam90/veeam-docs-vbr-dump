@@ -3,14 +3,14 @@ title: "Removing Organizations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_removing_database.html"
-last_updated: "5/15/2026"
+last_updated: "5/20/2026"
 product_version: "13.0.1.2067"
 ---
 
 # Removing Organizations
 
 
-Veeam Explorer for Microsoft OneDrive for Business allows you to remove an organization from the application scope when you no longer need it.
+Veeam Explorer for Microsoft OneDrive allows you to remove an organization from the application scope when you no longer need it.
 
 To remove an organization from the application scope, right-click an organization in the navigation pane and select Remove organization.
 

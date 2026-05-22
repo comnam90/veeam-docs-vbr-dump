@@ -3,8 +3,8 @@ title: "Find-VBRADEntity"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/find-vbradentity.html"
-last_updated: "3/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "5/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Find-VBRADEntity
@@ -26,25 +26,25 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Find-VBRADEntity -Domain <VBRADDomain> [-Root <VBRADEntity>] [-Recurse]  [<CommonParameters>] |
+| Find-VBRADEntity -Domain <VBRADDomain> [-Root <VBRADEntity>] [-Recurse] [<CommonParameters>] |
 
 * Get Active Directory objects by ID.
 
 |  |
 | --- |
-| Find-VBRADEntity -Domain <VBRADDomain> [-Id <guid[]>] [-Root <VBRADEntity>] [-Recurse]  [<CommonParameters>] |
+| Find-VBRADEntity -Domain <VBRADDomain> [-Id <guid[]>] [-Root <VBRADEntity>] [-Recurse] [<CommonParameters>] |
 
 * Get Active Directory objects by name.
 
 |  |
 | --- |
-| Find-VBRADEntity -Domain <VBRADDomain> [-Name <string[]>] [-Root <VBRADEntity>] [-Recurse]  [<CommonParameters>] |
+| Find-VBRADEntity -Domain <VBRADDomain> [-Name <string[]>] [-Root <VBRADEntity>] [-Recurse] [<CommonParameters>] |
 
 * Get Active Directory objects of a specified type.
 
 |  |
 | --- |
-| Find-VBRADEntity -Domain <VBRADDomain> [-Type <VBRADEntityType[]> {Domain | Cluster | OrganizationUnit | Group | Folder | Computer}] [-Root <VBRADEntity>] [-Recurse]  [<CommonParameters>] |
+| Find-VBRADEntity -Domain <VBRADDomain> [-Type <VBRADEntityType[]> {Domain | Cluster | OrganizationUnit | Group | Folder | Computer}] [-Root <VBRADEntity>] [-Recurse] [<CommonParameters>] |
 
 Detailed Description
 
@@ -54,13 +54,14 @@ You can use this cmdlet to search for Active Directory objects you plan to add t
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
-| Domain | Specifies the Active Directory domain connection object. | Accepts the [VBRADDomain](vbraddomain.md) object. To get this object, run the [Get-VBRADDomain](get-vbraddomain.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| Domain | Specifies the Active Directory domain connection object. | Accepts the VBRADDomain object. To get this object, run the Get-VBRADDomain cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Id | Specifies the array of object IDs. The cmdlet will return objects with these IDs. | Guid[] | False | Named | True (ByProperty Name) |
-| Name | Specifies the array of object names. The cmdlet will return objects with these names. | String[] | False | Named | True (ByProperty Name) |
+| Name | Specifies the array of object names. The cmdlet will return objects with these names.  Note: Provide the value of the Active Directory name attribute. For Computer objects, the returned Name property will show the dNSHostName value. | String[] | False | Named | True (ByProperty Name) |
 | Type | Specifies the array of object types:   * Domain * Cluster * OrganizationUnit * Group * Folder * Computer   The cmdlet will return objects of these types. | VBRADEntityType[] | False | Named | True (ByProperty Name) |
-| Root | Specifies the container of objects. The cmdlet will look for objects in this container.  If omitted, the cmdlet will look for objects in the domain container. | Accepts the [VBRADEntity](vbradentity.md) object. To get this object, run the Find-VBRADEntity cmdlet. | False | Named | True (ByProperty Name) |
+| Root | Specifies the container of objects. The cmdlet will look for objects in this container.  If omitted, the cmdlet will look for objects in the domain container. | Accepts the VBRADEntity object. To get this object, run the Find-VBRADEntity cmdlet. | False | Named | True (ByProperty Name) |
 | Recurse | Defines that the cmdlet will look for objects from all child containers of the specified container. | SwitchParameter | False | Named | True (ByProperty Name) |
 
 <CommonParameters>
@@ -101,7 +102,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to get Active Directory objects by ID.  |  | | --- | | $connection = Get-VBRADDomain -ServerName support.east -Credentials support\jsmith  Find-VBRADEntity -Domain $connection -Id 3826d21c-0f7d-4c80-b5ef-b5568e967a6a, 85950671-5e3a-481f-8408-5af40de317c6 |  Perform the following steps:   1. Run the [Get-VBRADDomain](get-vbraddomain.md) cmdlet. Specify the ServerName and Credentials parameter values. Save the result to the $connection variable. 2. Run the Find-VBRADEntity cmdlet. Set the $connection variable as the Domain parameter value.  Specify the Id parameter value. |
+| This example shows how to get Active Directory objects by ID.  |  | | --- | | $connection = Get-VBRADDomain -ServerName support.east -Credentials support\jsmith  Find-VBRADEntity -Domain $connection -Id 3826d21c-0f7d-4c80-b5ef-b5568e967a6a, 85950671-5e3a-481f-8408-5af40de317c6 |  Perform the following steps:   1. Run the [Get-VBRADDomain](get-vbraddomain.md) cmdlet. Specify the ServerName and Credentials parameter values. Save the result to the $connection variable. 2. Run the Find-VBRADEntity cmdlet. Set the $connection variable as the Domain parameter value. Specify the Id parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 6. Getting Active Directory Object using Veeam PowerShell and Microsoft Active Directory Windows PowerShell
 

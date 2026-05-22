@@ -3,8 +3,8 @@ title: "Veeam Explorers Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/explorers_introduction.html"
-last_updated: "2/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/11/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Veeam Explorers Overview
@@ -19,11 +19,12 @@ Veeam Explorers are distributed as part of Veeam Backup for Microsoft 365 and Ve
 
 The following table lists all Veeam Explorers that come as part of Veeam Backup & Replication and Veeam Backup for Microsoft 365.
 
+Veeam Explorers Overview
+
 | Veeam Explorer | Veeam Backup & Replication | Veeam Backup for Microsoft 365 |
-| --- | --- | --- |
 | [Veeam Explorer for Microsoft Exchange](vex_user_guide.md) | ✔ | ✔ |
 | [Veeam Explorer for Microsoft SharePoint](vesp_user_guide.md) | ✔ | ✔ |
-| [Veeam Explorer for Microsoft OneDrive for Business](veod_user_guide.md) | ✔ | ✔ |
+| [Veeam Explorer for Microsoft OneDrive](veod_user_guide.md) | ✔ | ✔ |
 | [Veeam Explorer for Microsoft Teams](vet_user_guide.md) | ✔ | ✔ |
 | [Veeam Explorer for Microsoft Active Directory](vead_user_guide.md) | ✔ | ✖ |
 | [Veeam Explorer for Microsoft SQL Server](vesql_user_guide.md) | ✔ | ✖ |

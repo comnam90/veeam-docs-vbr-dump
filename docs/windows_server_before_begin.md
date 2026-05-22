@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/windows_server_before_begin.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Before You Begin
@@ -14,10 +14,14 @@ Before you add a Microsoft Windows server to the backup infrastructure, check ne
 
 * Check permissions required to add the server. For more information, see [Permissions](required_permissions.md#rphost).
 
-* File and printer sharing must be enabled in network connection settings of the added Microsoft Windows server. On every connected Microsoft Windows server, Veeam Backup & Replication deploys two components:
+* File and printer sharing must be enabled in network connection settings of the added Microsoft Windows server. On every connected Microsoft Windows server, Veeam Backup & Replication deploys the following components:
 
 + Veeam Installer Service
++ Veeam OpenSSL
 + Veeam Data Mover Service/Veeam Transport Service
++ Guest Interaction Proxy
++ HPE StoreOnce Library
++ Dell Data Domain Library
 
 If file and printer sharing is not enabled, Veeam Backup & Replication will fail to deploy these components.
 

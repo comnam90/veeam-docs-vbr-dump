@@ -3,7 +3,7 @@ title: "Update-VBRUnstructuredBackupPath"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/update-vbrunstructuredbackuppath.html"
-last_updated: "5/6/2026"
+last_updated: "5/7/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -98,7 +98,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to update the name of the root server to the name that does not exist in the Veeam Backup & Replication database.  |  | | --- | | $nasbackup = Get-VBRUnstructuredBackup -Name "File Backup Job 1"  $targetserver = Get-VBRUnstructuredServer -Name "\\TargetSrv\Reports"  Update-VBRUnstructuredBackupPath -Backup $nasbackup -SourceRootNASServerName "\\SourceSrv\Reports" -TargetRootNASServer $targetserver |  Perform the following steps:   1. Run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $nasbackup variable. 2. Run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. Specify the Name parameter value. Save the result to the $targetserver variable. 3. Run the Update-VBRUnstructuredBackupPath cmdlet. Specify the following settings:  * Set the $nasbackup variable as the Backup parameter value. * Specify the SourceRootNASServerName parameter value. * Set the $targetserver variable as the TargetNASServer parameter value. |
+| This example shows how to update the name of the root server to the name that does not exist in the Veeam Backup & Replication database.  |  | | --- | | $nasbackup = Get-VBRUnstructuredBackup -Name "File Backup Job 1"  $targetserver = Get-VBRUnstructuredServer -Name "\\TargetSrv\Reports"  Update-VBRUnstructuredBackupPath -Backup $nasbackup -SourceRootNASServerName "\\SourceSrv\Reports" -TargetRootNASServer $targetserver |  Perform the following steps:   1. Run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $nasbackup variable. 2. Run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. Specify the Name parameter value. Save the result to the $targetserver variable. 3. Run the Update-VBRUnstructuredBackupPath cmdlet. Specify the following settings:  * Set the $nasbackup variable as the Backup parameter value. * Specify the SourceRootNASServerName parameter value. * Set the $targetserver variable as the TargetRootNASServer parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 4. Updating SAN Host
 

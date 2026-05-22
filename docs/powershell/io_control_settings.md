@@ -3,7 +3,7 @@ title: "Specifying I/O Control Settings"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/io_control_settings.html"
-last_updated: "5/7/2026"
+last_updated: "5/20/2026"
 product_version: "13.0.1.2067"
 ---
 

@@ -3,8 +3,8 @@ title: "Step 4. Configure Hardened Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_add_web_repository.html"
-last_updated: "11/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/20/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 4. Configure Hardened Repository Settings
@@ -18,7 +18,7 @@ To configure general repository settings:
 
 1. In the Location section, specify a path to the folder where backup files must be stored. Click Populate to check capacity and available free space in the selected location.
 2. Select the Use fast cloning on XFS volumes check box to enable copy-on-write functionality. In terms of Veeam Backup & Replication, this functionality is known as Fast Clone. For more information, see [Fast Clone](backup_repository_block_cloning.md).
-3. Specify the immutability period.
+3. Specify the immutability period. You must select a value between 7 and 9999 days.
 4. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the hardened repository. These settings will help you control the load on the hardened repository and prevent possible timeouts of storage I/O operations.
 
 * Select the Limit maximum concurrent tasks check box and specify the maximum allowed number of concurrent tasks for the hardened repository. If this value is exceeded, Veeam Backup & Replication will not start a new task until one of current tasks finishes. For more information, see [Limiting the Number of Concurrent Tasks](limiting_tasks.md).
