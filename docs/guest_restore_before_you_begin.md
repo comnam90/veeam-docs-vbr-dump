@@ -3,7 +3,7 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "4/23/2026"
+last_updated: "5/21/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -56,6 +56,7 @@ Source for Data Recovery
 * You cannot recover guest OS files encrypted with Windows EFS.
 * You cannot recover and browse guest OS files on disks encrypted by BitLocker.
 
+* For Microsoft Hyper-V backups, if the source VM was powered off at the backup time, Veeam Backup & Replication cannot retrieve the guest OS information. Veeam Backup & Replication treats the guest OS as Linux and selects a Linux-based mount server by default. If the VM runs Microsoft Windows, select the Windows mount server manually at the [Mount Server](multios_restore_host_vm_web.md) step.
 * Processing of reparse points is supported only for NTFS. Note that reparse points with reparse tag values other than IO\_REPARSE\_TAG\_MOUNT\_POINT, IO\_REPARSE\_TAG\_SYMLINK and IO\_REPARSE\_TAG\_DEDUP may be processed and recovered incorrectly.
 * [For recovery to original location] You cannot recover guest OS files if you have excluded the system disk from the backup used for recovery and the [volume GUID](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-volume) of the system disk was changed after the backup creation.
 
