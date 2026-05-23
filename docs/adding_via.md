@@ -1,13 +1,13 @@
 ---
-title: "Adding Veeam Infrastructure Appliance"
+title: "Adding Veeam Infrastructure Appliances"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/adding_via.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/21/2026"
+product_version: "13.0.1.2067"
 ---
 
-# Adding Veeam Infrastructure Appliance
+# Adding Veeam Infrastructure Appliances
 
 
 You must add to the backup infrastructure Veeam Infrastructure Appliances that you plan to use as backup infrastructure components for various types of backup and restore operations.
