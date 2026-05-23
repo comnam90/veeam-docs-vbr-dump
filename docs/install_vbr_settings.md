@@ -3,8 +3,8 @@ title: "Step 6. Review Default Installation Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_settings.html"
-last_updated: "10/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 6. Review Default Installation Settings
@@ -17,8 +17,9 @@ At the Ready to Install step of the wizard, you can select to install Veeam Back
 
 The following table lists the default installation settings.
 
+Step 6. Review Default Installation Settings
+
 | Setting | Default Value | Description |
-| --- | --- | --- |
 | Installation folder | C:\Program Files\Veeam\Backup and Replication\ | Folder where Veeam Backup & Replication will be installed. |
 | vPower cache folder | C:\ProgramData\Veeam\Backup\IRCache\ | The IRCache folder on a volume with the maximum amount of free space. The IR cache folder stores the write cache for machines that are started from backups during recovery verification or restore operations. The minimum required free disk space for the IRCache folder is 10 GB. However, at least 100 GB is recommended for production environments, and more may be needed depending on the number and write activity of VMs being published with Instant Recovery. |
 | Guest catalog folder | C:\VBRCatalog\ | The VBRCatalog folder on a volume with the maximum amount of free space.  The guest catalog folder stores indexing data for VM guest OS files. Indexing data is required for browsing and searching for VM guest OS files inside backups and performing 1-click restore. |
@@ -34,15 +35,13 @@ The following table lists the default installation settings.
 
 The following Veeam services and components are also deployed when installing Veeam Backup & Replication. They have predefined installation locations that cannot be changed during the Veeam Backup & Replication installation:
 
+Step 6. Review Default Installation Settings
+
 | Veeam Component | Default Installation Path |
-| --- | --- |
-| AWS Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\AWS\ |
-| Veeam Plug-in for Google Cloud | %ProgramFiles%\Veeam\Plugins\GCP\ |
-| Veeam Kasten Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\Kasten\ |
-| Microsoft Azure Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\Microsoft Azure\ |
-| Veeam Plug-In for Nutanix AHV | %ProgramFiles%\Veeam\Plugins\Nutanix AHV\ |
-| oVirt KVM Plug-In for Veeam Backup & Replication | %ProgramFiles%\Veeam\Plugins\RHV\ |
-| Veeam Plug-In for Proxmox Virtual Environment | %ProgramFiles%\Veeam\Plugins\PVE\ |
+| Dell Data Domain DDBoost SDK | %ProgramFiles%\Veeam\Backup Transport\x64\ddboost |
+| HPE StoreOnce Catalyst SDK | %ProgramFiles%\Veeam\Backup Transport\x64\storeonce |
+| Microsoft Entra ID Plug-In for Veeam Backup & Replication | %ProgramFiles(x86)%\Veeam\Backup Transport\x64\Plugins\EntraId |
+| OpenSSL v3.0.0 FIPS | %ProgramFiles%\Common Files\Veeam\OpenSSL3 |
 | Veeam Agent for Linux Redistributable | %ProgramData%\Veeam\Agents\ |
 | Veeam Agent for Mac Redistributable | %ProgramData%\Veeam\Agents\ |
 | Veeam Agent for Microsoft Windows Redistributable | %ProgramData%\Veeam\Agents\ |
@@ -51,9 +50,21 @@ The following Veeam services and components are also deployed when installing Ve
 | Veeam Backup vPowerNFS | %ProgramFiles(x86)%\Veeam\vPowerNFS\ |
 | Veeam Backup VSS Integration | %ProgramFiles%\Veeam\Backup File System VSS Integration\ |
 | Veeam Distribution Service | %ProgramFiles%\Veeam\Veeam Distribution Service\ |
+| Veeam Explorers Recovery Service | %ProgramFiles%\Veeam\Backup and Replication\Explorers Recovery Service\ |
+| Veeam Guest Interaction Proxy Service | %ProgramFiles%\Veeam\\Veeam Guest Interaction Service\ |
 | Veeam Installer Service | %WinDir%\Veeam\Backup\ |
 | Veeam Mount Server | %ProgramFiles%\Common Files\Veeam\Backup and Replication\Mount Service\ |
+| Veeam Plug-In for AWS | %ProgramFiles%\Veeam\Plugins\AWS\ |
+| Veeam Plug-In for Google Cloud | %ProgramFiles%\Veeam\Plugins\GCP\ |
+| Veeam Plug-In for Kasten | %ProgramFiles%\Veeam\Plugins\Kasten\ |
+| Veeam Plug-In for Microsoft Azure | %ProgramFiles%\Veeam\Plugins\Microsoft Azure\ |
+| Veeam Plug-In for Nutanix AHV | %ProgramFiles%\Veeam\Plugins\Nutanix AHV\ |
+| Veeam Plug-In for oVirt KVM | %ProgramFiles%\Veeam\Plugins\RHV\ |
+| Veeam Plug-In for Proxmox Virtual Environment | %ProgramFiles%\Veeam\Plugins\PVE\ |
+| Veeam Plug-In for Scale Computing HyperCore | %ProgramFiles%\Veeam\Plugins\SC HyperCore\ |
 | Veeam Plug-Ins for Enterprise Applications Redistributable | %ProgramData%\Veeam\Plugins\ |
+| Veeam Threat Hunter | %ProgramData%\Veeam\Backup and Replication\Threat Hunter\ |
+| Veeam VSS Hardware Provider | %ProgramFiles%\Veeam\VSS Hardware Provider\ |
 | VMware VDDK | %ProgramFiles(x86)%\Veeam\Backup Transport\ |
 
 For more information, see [Veeam Backup & Replication Services](services_and_components.md).
