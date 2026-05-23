@@ -3,8 +3,8 @@ title: "Configuring Plug-In on Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_win.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Plug-In on Microsoft Windows
@@ -16,8 +16,9 @@ Note that configuration wizard of Veeam Plug-In for Oracle RMAN changes the sett
 
 To configure Veeam Plug-In, do the following:
 
-1. On the Oracle server, click launch the Veeam RMAN Configuration Wizard (%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\Veeam.Backup.RMAN.Configuration.exe).
-2. At the Backup Server step of the wizard, specify the DNS name of the Veeam Backup & Replication server and OS user account credentials that will be used to connect to the server.
+1. Log in to the Oracle server with an account which is a member of the ORA\_DBA group and has SYSDBA privileges.
+2. On the Oracle server, click launch the Veeam RMAN Configuration Wizard (%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\Veeam.Backup.RMAN.Configuration.exe).
+3. At the Backup Server step of the wizard, specify the DNS name of the Veeam Backup & Replication server and OS user account credentials that will be used to connect to the server.
 
 ![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_vbr.webp)
 
@@ -112,8 +113,9 @@ For example, to specify credentials that will be used to log in to the Veeam Bac
 | --- |
 | OracleRMANConfigTool.exe --set-credentials "serv02\Joelle" "password" |
 
+Configuration Tool Commands
+
 | Command | Description |
-| --- | --- |
 | --help | Shows the list of parameters of the plug-in configuration tool. |
 | --show-config | Shows configuration parameters. |
 | --wizard | Starts the wizard to configure the plug-in settings. This wizard edits the Veeam Plug-In configuration file (veeam\_config.xml) or creates a new one if the configuration file was removed from the %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN directory on the machine where Veeam Plug-In is installed. |
