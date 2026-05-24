@@ -3,8 +3,8 @@ title: "Configuring Performance Throttling"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_performance_throttling_rman.html"
-last_updated: "11/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Performance Throttling
@@ -26,8 +26,12 @@ Keep in mind that Veeam Plug-Ins manage the priority of backup operation process
 
 To throttle Veeam Plug-In performance, do the following:
 
-1. Log into the machine with a user with root or instance owner privileges.
-2. Start the Veeam Plug-In configuration tool with the following parameter:
+1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your Oracle server. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
+
+* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
+* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+
+1. Start the Veeam Plug-In configuration tool with the following parameter:
 
 * On machines running Linux or Unix OS:
 
