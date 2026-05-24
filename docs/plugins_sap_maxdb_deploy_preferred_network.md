@@ -3,8 +3,8 @@ title: "Specifying Preferred Networks for Veeam Plug-Ins"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_preferred_network.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Specifying Preferred Networks for Veeam Plug-Ins
@@ -27,7 +27,7 @@ To create and manage the list of preferred networks that Veeam Plug-In will use,
 
 Adding Preferred Networks
 
-1. Access the Veeam Plug-In for SAP MaxDB directory /opt/veeam/VeeamPluginforSAPMaxDB on the server where Veeam Plug-In is installed.
+1. Navigate to the /opt/veeam/VeeamPluginforSAPMaxDB directory on the server where Veeam Plug-In is installed.
 2. Run the SapMaxDBBackintConfigTool command with the following parameter:
 
 |  |
@@ -47,7 +47,7 @@ For example:
 
 Accessing Preferred Networks
 
-1. Access the Veeam Plug-In for SAP MaxDB directory /opt/veeam/VeeamPluginforSAPMaxDB on the server where Veeam Plug-In is installed.
+1. Navigate to the /opt/veeam/VeeamPluginforSAPMaxDB directory on the server where Veeam Plug-In is installed.
 2. Run SapMaxDBBackintConfigTool with the following parameter:
 
 |  |
@@ -62,7 +62,7 @@ The following example shows what the output of the SapMaxDBBackintConfigTool com
 
 Removing Preferred Networks
 
-1. Access the Veeam Plug-In for SAP MaxDB directory /opt/veeam/VeeamPluginforSAPMaxDB on the server where Veeam Plug-In is installed.
+1. Navigate to the /opt/veeam/VeeamPluginforSAPMaxDB directory on the server where Veeam Plug-In is installed.
 2. Run SapMaxDBBackintConfigTool with the following parameter:
 
 |  |
