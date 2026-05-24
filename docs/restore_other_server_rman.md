@@ -3,7 +3,7 @@ title: "Restore to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_other_server_rman.html"
-last_updated: "3/13/2026"
+last_updated: "5/21/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -55,6 +55,20 @@ The following examples show scripts for restoring the control file and restoring
 Consider the following:
 
 * If you do not use the SEND command, Veeam Plug-In will restore data from a backup created for the server on which Veeam Plug-In is currently running instead of restoring data from a backup created on another server.
+* If you restore an Oracle database using the DUPLICATE command, the SEND command must be a part of the ALLOCATE CHANNEL command. During duplication, RMAN reallocates channels multiple times. The SEND command inside the ALLOCATE CHANNEL command ensures that RMAN applies the srcBackup parameter on each reallocation.
+
+* For Linux and Unix machines:
+
+|  |
+| --- |
+| RUN {       ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt\_tape PARMS "SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so" SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";       DUPLICATE TARGET DATABASE TO DB01;     }  EXIT; |
+
+* For Microsoft Windows machines:
+
+|  |
+| --- |
+| RUN {       ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt\_tape PARMS "SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll" SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";       DUPLICATE TARGET DATABASE TO DB01;     }  EXIT; |
+
 * For restore to another server, you can use either backups or backup copies of Oracle databases.
 * If you perform restore from a backup that was imported to Veeam Backup & Replication, Veeam Plug-In will automatically create the backup job in Veeam Backup & Replication.
 * During the restore process, backup operations are not disabled on the Oracle server.
@@ -75,7 +89,7 @@ Specifying Credentials
 
 To restore a database to another server, you can specify credentials of a user account under which the backup was created. To do this, do the following:
 
-1. Access the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
+1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
 * On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
 * On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
@@ -97,7 +111,7 @@ To access the backup using account credentials, type 1:
 
 |  |
 | --- |
-| Select authentication type or disable the functionality: |
+| Select authentication type or disable the functionality: 0. To disable the functionality 1. Credentials 2. Recovery token Enter authentication type number: 1 |
 
 1. Veeam Plug-In will prompt you to provide credentials of the user account that under which the backup was created. Enter a user name and password of the account:
 
@@ -111,7 +125,7 @@ Specifying Recovery Token
 
 You can restore a database to another server using a recovery token generated in Veeam Backup & Replication and provided to you by a backup administrator. To do this, do the following:
 
-1. Access the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
+1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
 * On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
 * On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
@@ -140,7 +154,7 @@ Selecting Backup
 
 After you specify authentication settings to access the backup from which you want to restore a database on another server, you can select the backup. To do this, do the following:
 
-1. Access the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
+1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
 * On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
 * On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
