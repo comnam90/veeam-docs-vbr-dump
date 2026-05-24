@@ -3,8 +3,8 @@ title: "Configuring Performance Throttling"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_performance_throttling_mssql.html"
-last_updated: "11/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Performance Throttling
@@ -21,7 +21,7 @@ If you throttle performance, Veeam Plug-In uses the OS process priority system i
 
 To throttle Veeam Plug-In performance, do the following:
 
-1. Log into the machine with a user with root or instance owner privileges.
+1. Navigate to the %PROGRAMFILES%\Veeam\Plugins\Microsoft SQL\ folder.
 2. Start the Veeam Plug-In configuration tool with the following parameter:
 
 |  |
