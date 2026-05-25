@@ -3,8 +3,8 @@ title: "Configuring Plug-In on Linux or Unix"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_lin.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/19/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Configuring Plug-In on Linux or Unix
@@ -16,7 +16,7 @@ Note that the Veeam Plug-In configuration tool changes the settings of Oracle RM
 
 To configure Veeam Plug-In for Oracle RMAN, do the following:
 
-1. Log in to the Oracle server with an account which is the member of the DBA group.
+1. Log in to the Oracle server with an account which is a member of the OSDBA (typically called as “dba”) group and has SYSDBA privileges.
 2. Launch the configuration wizard:
 
 |  |
@@ -60,7 +60,7 @@ For details about other required ports, see [Ports](ports_vprman.md).
 
 |  |
 | --- |
-| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 |
+| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 Continue? (y/n): |
 
 1. Review requirements for the credentials and press y to confirm the connection using the specified credentials.
 
@@ -154,7 +154,7 @@ Specify all database names for which you want to use common credentials, and ent
 
 |  |
 | --- |
-| Save configuration?  1. Apply configuration to the Oracle environment  2. Export configuration into a file for manual setup  3. Cancel without saving  Enter:1    \*\*\* Database instance ORCL is configured \*\*\* |
+| Save configuration?  1. Apply configuration to the Oracle environment  2. Export configuration into a file for manual setup  3. Cancel without saving  Enter:1  \*\*\* Database instance ORCL is configured \*\*\* |
 
 |  |
 | --- |
@@ -177,8 +177,9 @@ Apart from running a configuration wizard, you can use the OracleRMANConfigTool 
 
 The following table lists available parameters for OracleRMANConfigTool.
 
+Configuration Tool Parameters
+
 | Parameter | Description |
-| --- | --- |
 | --help | Shows the list of parameters of the plug-in configuration tool. |
 | --show-config | Shows configuration parameters. |
 | --wizard | Starts the wizard to configure the plug-in settings. The wizard edits the Veeam Plug-In configuration file (veeam\_config.xml) or creates a new one if the configuration file was removed from the /opt/veeam/VeeamPluginforOracleRMAN directory on the machine where Veeam Plug-In is installed. |

@@ -3,8 +3,8 @@ title: "Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_kit.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/21/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Using Veeam Deployment Kit
@@ -20,7 +20,7 @@ Use the Deployment Kit in the following scenarios:
 
 * Kerberos is disabled or unavailable
 
-Use the Deployment Kit if your environment does not support NTLM or Kerberos authentication.
+Use the Deployment Kit if your environment does not support Kerberos authentication.
 
 * Enhanced security
 
@@ -50,6 +50,16 @@ For the following components, you can manually install the Deployment Kit:
 | --- |
 | Note |
 | The Deployment Kit cannot be used to connect to remote Linux servers that are not deployed from the Veeam JeOS ISO file. When adding such servers to the backup infrastructure, you must use the SSH credentials option at the [Access](linux_server_ssh.md) step of the New Linux Server wizard. |
+
+Certificate Lifecycle
+
+When you use the Deployment Kit to enable certificate-based authentication, certificates follow a defined lifecycle. This process transitions the environment from short-term to long-term security without manual intervention.
+
+The Deployment Kit installs a temporary certificate on a target server to enable initial communication. By default, this certificate is valid for 30 days (720 hours). You can adjust the validity period only when you generate the kit using PowerShell or the backup server REST API. For more information, see the [Generate-VBRBackupServerDeployerKit](https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrbackupserverdeployerkit.html) section in the Veeam PowerShell Reference.
+
+Only one temporary certificate is active at a time. Creating a new kit invalidates previously issued temporary certificates.
+
+When the initial connection to the server is established, Veeam Backup & Replication automatically replaces the temporary certificate with a permanent certificate. For all subsequent connections, authentication is performed using the permanent certificate. The permanent certificate's validity period is 10 years.
 
 How to Use the Veeam Deployment Kit
 
@@ -88,12 +98,7 @@ The Deployment Kit typically includes:
 1. Restart the Veeam Installer service (VeeamDeploySvc) to apply the changes.
 
 1. [For Veeam Agent computers] Follow the instructions provided in [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md).
-
-Usage Notes
-
-When the Deployment Kit is installed and certificates are configured, select Connect using certificate-based authentication when adding the server to your backup infrastructure.
-
-No user name or password are required; authentication is handled automatically using the installed certificates.
+2. When the Deployment Kit is installed and certificates are configured, select Connect using certificate-based authentication when adding the server to your backup infrastructure. No user name or password are required; authentication is handled automatically using the installed certificates.
 
 Related Topics
 

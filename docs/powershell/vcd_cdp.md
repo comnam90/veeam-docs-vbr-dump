@@ -3,7 +3,7 @@ title: "CDP for VMware Cloud Director"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cdp.html"
-last_updated: "5/20/2026"
+last_updated: "5/22/2026"
 product_version: "13.0.1.2067"
 ---
 

@@ -3,8 +3,8 @@ title: "Pre-Freeze and Post-Thaw Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_post_scripts_hv.html"
-last_updated: "7/31/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Pre-Freeze and Post-Thaw Scripts
@@ -47,6 +47,11 @@ Veeam Backup & Replication has the following limitations for pre-freeze and post
 * You cannot stop a job when the pre-freeze or post-thaw script is executed. If the script hangs up, Veeam Backup & Replication waits for 10 minutes and terminates the job.
 * If you want to run several scripts that depend on each other, you must upload them to the VM guest OS manually. For example, you have script1.bat that sequentially starts script2.bat, script3.bat and script4.bat. In this case, you must specify a path to script1.bat in the job properties and upload script2.bat, script3.bat and script4.bat to the VM guest OS.
 * You must not use the standard error (STDERR) stream for error output in Linux scripts. Scripts with STDERR cause failures in Veeam Backup & Replication.
+
+* If you use a Linux-based backup server, before you can use a script, you must upload it:
+
+* In the Veeam Backup & Replication console, navigate to the Files node.
+* Copy the script files to the /var/lib/veeam/scripts folder on the backup server.
 
 Related Topics
 

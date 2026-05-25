@@ -3,7 +3,7 @@ title: "Configuring Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_configure.html"
-last_updated: "12/5/2025"
+last_updated: "5/19/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -14,7 +14,7 @@ To configure Veeam Plug-In for IBM Db2, you can use DB2ConfigTool. The tool conf
 
 To configure Veeam Plug-In, do the following on the machine with IBM Db2:
 
-1. Log into the machine with a user with root or instance owner privileges.
+1. Log in to the machine with a user with root or instance owner privileges.
 2. To launch the Veeam Plug-In configuration tool, run the following command:
 
 |  |

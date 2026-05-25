@@ -3,8 +3,8 @@ title: "Step 8. Specify Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vlab_net_settings_vm.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/22/2026"
+product_version: "13.0.1.2067"
 ---
 
 # Step 8. Specify Network Settings
@@ -29,7 +29,7 @@ To add a vNIC adapter for an isolated network:
 |  |
 | --- |
 | Important |
-| Consider the following:   * You cannot assign more than one vNIC to a single isolated network for each protocol. * Network addresses specified for different vNIC adapters must belong to different networks. For example, if the first network adapter has the 192.168.0.1 IP address and the network mask is 255.255.255.0, and the second one — 192.168.0.2 and the network mask is 255.255.255.0, such configuration will not work. In this situation, you need to assign to the second adapter an IP address from a different network, for example, 172.16.0.1.  * If you assign more than 1 network adapter (or IP address) to one production VM, Veeam Backup & Replication will apply the predefined tests only to one of these IP addresses. For more information on the predefined tests, see [Predefined tests](predefined_tests.md). |
+| Consider the following:   * You cannot assign more than one vNIC to a single isolated network for each protocol. * Network addresses specified for different vNIC adapters must belong to different networks. For example, if the first network adapter has the 192.168.0.1 IP address and the network mask is 255.255.255.0, and the second one — 192.168.0.2 and the network mask is 255.255.255.0, such configuration will not work. In this situation, you need to assign to the second adapter an IP address from a different network, for example, 172.16.0.1.  * NIC teaming is not supported. If you assign more than 1 network adapter (or IP address) to one production VM, Veeam Backup & Replication will apply the predefined tests only to one of these IP addresses. For more information on the predefined tests, see [Predefined tests](predefined_tests.md). |
 
 ![Step 8. Specify Network Settings](images/vlab_network_settings.webp)
 
