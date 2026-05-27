@@ -3,7 +3,7 @@ title: "Mount Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
-last_updated: "4/30/2026"
+last_updated: "5/26/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -18,8 +18,8 @@ The mount server is required if you perform the following operations:
 * [Application items restore](restore_veeam_explorers.md)
 * [Secure restore](av_scan_about.md)
 * [Scan Backup](malware_detection_scan_backup.md)
-* [Instant recovery](instant_recovery.md)
-* [Instant disk recovery](instant_disk_recovery.md)
+* [Instant Recovery](instant_recovery.md)
+* [Instant Disk Recovery](instant_disk_recovery.md)
 * [Instant file share recovery](performing_instant_file_share_recovery.md)
 * Restore of specific objects from [file backup](file_share_recovery_restore_files_folders.md) and [object storage backup](os_data_recovery_restore_individual_objects.md)
 
@@ -52,6 +52,17 @@ It is recommended to [enable the vPower NFS Service](repository_mount_server.md)
 | Note |
 | Consider the following:   * For scale-out backup repositories, you must specify the mount server for every extent. * Every backup repository added to the backup infrastructure must have the Linux mount server configured. You cannot set the Linux mount server field to Not specified. |
 
+Mount Server Selection
+
+For the most features, the mount server selection depends on the guest OS of the workload that you work with:
+
+* For Linux workloads, Veeam Backup & Replication selects the Linux mount server associated with the backup repository. If this mount server is not available, Veeam Backup & Replication uses the default Linux mount server.
+* For Microsoft Windows workloads, Veeam Backup & Replication selects the Microsoft Windows mount server associated with the backup repository. If this mount server is not available, Veeam Backup & Replication uses the default Windows mount server.
+
+If the mount server of the same OS is not available, Veeam Backup & Replication will try to use the mount server of another OS. However, some features, for example, Instant Recovery, Instant Disk Recovery and SureBackup, can use only mount servers of the same guest OS as the processed workload. For details, see [Requirements for Mount Servers](#reqs).
+
+For the guest OS file restore, the mount selection algorithm differs. For more information, see [Guest OS Restore - Mount Server Automatic Selection](guest_restore_scenarios.md).
+
 Mount Server Services and Components
 
 Mount servers run light-weight services that take a few seconds to deploy. Deployment is fully automated. Veeam Backup & Replication installs the following services:
@@ -80,6 +91,8 @@ Before you assign the role of a mount server, check the following requirements a
 * The following features require a Microsoft Windows mount server and may fail if the Windows mount server or the default Windows mount server is not configured:
 
 * [VMware replication job with Re-IP rules](replica_reip_vm.md)
+* [Instant Recovery](instant_recovery.md) of  Microsoft Windows workloads
+* [Instant Disk Recovery](instant_disk_recovery.md) for Microsoft Windows workloads
 * [Application item restore](restore_veeam_explorers.md)
 * [Secure restore](av_scan_about.md) for workloads with ReFS volumes
 * [Scan Backup](malware_detection_scan_backup.md) for workloads with ReFS volumes
