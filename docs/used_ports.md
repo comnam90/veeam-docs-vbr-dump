@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "4/7/2026"
+last_updated: "5/26/2026"
 product_version: "13.0.1.2067"
 ---
 
@@ -77,7 +77,7 @@ Databases and External Services
 | Communication with Time Servers | | | | |
 | Backup server,  Veeam Infrastructure Appliance | NTP server | UDP | 123 | Port used for synchronization with NTP time servers. The port is used by Linux-based backup servers deployed from the Veeam Software Appliance ISO and by backup infrastructure components deployed from the Veeam Infrastructure Appliance  ISO. |
 | Backup server,  Veeam Infrastructure Appliance | NTS server | UDP | 123 | Ports used for synchronization with NTS time servers. The port is used by Linux-based backup servers deployed from the Veeam Software Appliance ISO and by backup infrastructure components deployed from theVeeam Infrastructure Appliance ISO. |
-| TCP | 4460 |  |
+| TCP | 4460 |
 | Other Communication | | | | |
 | Any backup infrastructure component | DNS server | UDP, TCP | 53 | Port used for communication with the DNS server. It is required for forward/reverse name resolution of all backup and infrastructure servers including Active Directory domain controllers. |
 | Backup server | Certificate Revocation Lists | TCP | 80 or 443 | Port used for access to the Certificate Revocation Lists (CRL) of the Certificate Authority (CA) that issued the certificate for each backup infrastructure component.  Note: The specific CRL endpoint that must be connected to depends on the CA that issued the certificate.  You can find the actual list of addresses in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access   Make sure that the backup server can reach these verification endpoints. |
@@ -120,7 +120,7 @@ Backup Proxies
 | Backup server | Backup proxy (Linux) | TCP | 22 | Default SSH port used as a control channel. |
 | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | Communication for Veeam Data Cloud Vault, Object Storage Repositories, External Repositories | | | | |
-| On-premises backup repository,  Gateway server | Backup proxy (direct connection) | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| On-premises backup repository,  Gateway server  (for on-premises backup repository in case of Veeam Data Cloud Vault) | Backup proxy (direct connection) | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
 Gateway Servers
 
@@ -136,7 +136,7 @@ Gateway Servers
 | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | Mount server running vPower NFS Service | Gateway server working with backup repository | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine) during Instant Recovery, SureBackup or Linux file-level recovery.  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Communication for Veeam Data Cloud Vault, Object Storage Repositories, External Repositories | | | | |
-| On-premises backup repository,  Gateway server | Gateway server for Veeam Data Cloud Vault | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| On-premises backup repository,  Gateway server   (for on-premises backup repository in case of Veeam Data Cloud Vault) | Gateway server for Veeam Data Cloud Vault | TCP | 6162, 2500 to 3300 | Default port used by Veeam Transport Service (Veeam Data Mover Service if Veeam Backup & Replication is installed on the Microsoft Windows machine).  The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 
 Backup Repositories
 
@@ -249,6 +249,7 @@ Veeam Data Cloud Vault
 | Backup server,  Backup proxy (direct connection)/  Gateway server/  Instant Recovery to Azure helper appliance | Veeam Data Cloud Vault  (<storage-account>.blob.core.windows.net, <storage-account>.blob.storage.azure.net) | TCP | 443 | Port used to communicate with the Microsoft Azure object storage.  Consider that the <storage-account> part of the address must be replaced with the ID of your storage vault. You can find the storage vault ID in the Storage Vaults > Vault ID section in Veeam Data Cloud Vault. For more information, see the [Managing Storage Vaults](https://helpcenter.veeam.com/docs/vdc/userguide/vault_storage_vaults_edit.html#viewing-storage-vault-details) section in the Veeam Data Cloud User Guide. |
 | Backup server,  Backup proxy (direct connection)/  Gateway server/  Instant Recovery to Azure helper appliance | Veeam Data Cloud Vault | TCP | 80 | Port used to verify the certificate status through the certificate verification endpoints (CRL URLs and OCSP servers).  These endpoints are subject to change. You can find the actual list of addresses in [this Microsoft article](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-CA-details?tabs=root-and-subordinate-cas-list#certificate-downloads-and-revocation-lists) or in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access   Make sure that the backup server, or proxy, or gateway server, or helper appliance can reach these verification endpoints. |
 | Backup server | Microsoft Entra ID  (login.microsoftonline.com, login.windows.net) | TCP | 443 | Port used for Entra ID authentication. |
+| Backup server | Veeam Data Cloud Vault  vdc-vault-integration-prod.veeamdatacloud.com | TCP | 443 | Port used to communicate with Veeam Data Cloud. |
 
 Object Storage Repositories
 
@@ -449,7 +450,7 @@ The following table describes network ports that must be opened to ensure proper
 * INFINIDAT InfiniBox
 * NetApp SolidFire/HCI
 
-DataCore SANsymphony, Dell PowerStore, Hitachi VSP/VSP One Block, HPE XP, INFINIDAT InfiniBox, NEC Storage V Series,NetApp SolidFire/HCI
+DataCore SANsymphony, Dell PowerStore, Hitachi VSP/VSP One Block, HPE XP, INFINIDAT InfiniBox, NetApp SolidFire/HCI
 
 | From | To | Protocol | Port | Notes |
 | Backup server | Storage system | TCP | 443 | Default command port used for communication with DataCore SANsymphony over HTTPS. |
@@ -764,7 +765,7 @@ Protected Workloads
 | Guest interaction proxy | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel. Note: This port NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | Connections for Persistent Agent Components | | | | |
 | Backup server | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel during persistent agent installation. |
-| TCP | 2500 to 3300 | Range of ports used only during the installation of the persistent agent.  Default range of ports used for communication with a guest OS. |
+| TCP | 2500 to 3300 | Range of ports used only during the installation of the persistent agent. |
 | Guest interaction proxy | VM guest OS (Linux) | TCP | 6160 | Default port used by Veeam Installer Service for Linux. |
 | TCP | 6162 | Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 | Guest interaction proxy | VM guest OS (Windows) | TCP | 6160, 11731 | Default ports used by Veeam Installer Service.  Port 11731 is used for failover if port 6160 is unavailable. |
@@ -781,7 +782,7 @@ Gateway Servers
 
 Hypervisors
 
-The following table describes network ports that must be opened for the hypervisors involved in the guest processing.
+The following table describes network ports that must be opened for specific hypervisors involved in the guest processing.
 
 Hypervisors
 
@@ -877,7 +878,7 @@ Gateway Servers
 
 Hypervisors
 
-The following table describes network ports that must be opened for hypervisors involved in the log backup.
+The following table describes network ports that must be opened for specific hypervisors involved in the log backup.
 
 Hypervisors
 
