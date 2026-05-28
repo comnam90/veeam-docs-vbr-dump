@@ -3,8 +3,8 @@ title: "VM Guest OS File Exclusion Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_exclusion_vm.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # VM Guest OS File Exclusion Settings

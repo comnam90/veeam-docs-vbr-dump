@@ -3,8 +3,8 @@ title: "External Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repository.html"
-last_updated: "10/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # External Repositories
@@ -42,7 +42,7 @@ You can perform the following operations:
 |  |
 | --- |
 | Note |
-| Consider the following:   * During the process of copying backups, or restore to Amazon EC2 or Microsoft Azure, data of EC2 instances and Azure VMs may migrate from one geographic location to another. In this case, Veeam Backup & Replication displays a warning and stores a record about data migration to job or task session details. For more information, see [Locations](locations.md#ext). * You cannot use an external repository as a target for backup or backup copy jobs. * If your Azure Blob repository is encrypted using an Azure Key Vault key, the gateway server associated with this repository must have a direct connection to the following resources: management.azure.com, management.core.windows.net, login.windows.net, and login.microsoftonline.com. HTTP/HTTPS proxies are not supported. |
+| Consider the following:   * During the process of copying backups, or restore to Amazon EC2 or Microsoft Azure, data of EC2 instances and Azure VMs may migrate from one geographic location to another. In this case, Veeam Backup & Replication displays a warning and stores a record about data migration to job or task session details. For more information, see [Locations](locations.md#ext). * You cannot use an external repository as a target for backup or backup copy jobs. * If your Azure Blob repository is encrypted using an Azure Key Vault key, the gateway server associated with this repository must have a direct connection to the following resources: management.azure.com, login.windows.net, and login.microsoftonline.com. HTTP/HTTPS proxies are not supported. |
 
 In This Section
 

@@ -3,8 +3,8 @@ title: "Installing Veeam Agent for Linux from Generated Setup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_pre-installed_val_install.html"
-last_updated: "3/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Installing Veeam Agent for Linux from Generated Setup Files
@@ -28,19 +28,19 @@ RHEL 8 / Rocky Linux 8.10 / AlmaLinux 8.10
 
 |  |
 | --- |
-| rpm -i <...>/kmod-veeamsnap-13.0.1.404-1.el8.x86\_64.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm |
+| rpm -i <...>/kmod-veeamsnap-13.0.2.2-1.el8.x86\_64.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el8.x86\_64.rpm |
 
-RHEL 9 / Rocky Linux 9.4 – 9.7 / AlmaLinux 9.4 – 9.7
+RHEL 9 / Rocky Linux 9.4 – 9.7 / AlmaLinux 9.4 – 9.8
 
 |  |
 | --- |
-| rpm -i <...>/kmod-blksnap-13.0.1.404-1.el9.x86\_64.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm |
+| rpm -i <...>/kmod-blksnap-13.0.2.2-1.el9.x86\_64.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el9.x86\_64.rpm |
 
 RHEL 10 / Rocky Linux 10 / AlmaLinux 10
 
 |  |
 | --- |
-| rpm -i <...>/kmod-blksnap-13.0.1.404-1.el10.x86\_64.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm rpm -i <...>/veeam-13.0.1.404-1.el10.x86\_64.rpm |
+| rpm -i <...>/kmod-blksnap-13.0.2.2-1.el10.x86\_64.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el10.x86\_64.rpm |
 
 where <...> is the path to the directory where you have saved the Veeam Agent packages.
 
@@ -52,25 +52,25 @@ For Oracle Linux 7
 
 |  |
 | --- |
-| rpm -i <...>/veeamsnap-13.0.1.404-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm rpm -i <...>/veeam-13.0.1.404-1.el7.x86\_64.rpm |
+| rpm -i <...>/veeamsnap-13.0.2.2-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el7.x86\_64.rpm |
 
 For Oracle Linux 8
 
 |  |
 | --- |
-| rpm -i <...>/veeamsnap-13.0.1.404-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm rpm -i <...>/veeam-13.0.1.404-1.el8.x86\_64.rpm |
+| rpm -i <...>/veeamsnap-13.0.2.2-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el8.x86\_64.rpm |
 
 For Oracle Linux 9
 
 |  |
 | --- |
-| rpm -i <...>/blksnap-13.0.1.404-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm rpm -i <...>/veeam-13.0.1.404-1.el9.x86\_64.rpm |
+| rpm -i <...>/blksnap-13.0.2.2-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el9.x86\_64.rpm |
 
 For Oracle Linux 10
 
 |  |
 | --- |
-| rpm -i <...>/blksnap-13.0.1.404-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm rpm -i <...>/veeam-13.0.1.404-1.el10.x86\_64.rpm |
+| rpm -i <...>/blksnap-13.0.2.2-1.noarch.rpm  rpm -i <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm rpm -i <...>/veeam-13.0.2.2-1.el10.x86\_64.rpm |
 
 where <...> is the path to the directory where you have saved the Veeam Agent packages.
 
@@ -82,49 +82,49 @@ For SLES 12 SP5
 
 |  |
 | --- |
-| zypper in <...>/veeamsnap-kmp-default-13.0.1.404\_k4.12.14\_120-sles12.5.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle12.x86\_64.rpm |
+| zypper in <...>/veeamsnap-kmp-default-13.0.2.2\_k4.12.14\_120-sles12.5.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle12.x86\_64.rpm |
 
 For SLES 15 SP3 with default kernel
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-default-13.0.1.404\_k5.3.18\_57-sles15.3.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-default-13.0.2.2\_k5.3.18\_57-sles15.3.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 For SLES 15 SP3 with preemptive kernel
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-preempt-13.0.1.404\_k5.3.18\_57-sles15.3.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-preempt-13.0.2.2\_k5.3.18\_57-sles15.3.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 For SLES 15 SP4
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-default-13.0.1.404\_k5.14.21\_150400.22-sles15.4.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-default-13.0.2.2\_k5.14.21\_150400.22-sles15.4.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 For SLES 15 SP5
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-default-13.0.1.404\_k5.14.21\_150500.53-sles15.5.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-default-13.0.2.2\_k5.14.21\_150500.53-sles15.5.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 For SLES 15 SP6
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-default-13.0.1.404\_k6.4.0\_150600.21-sles15.6.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-default-13.0.2.2\_k6.4.0\_150600.21-sles15.6.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 For SLES 15 SP7
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-default-13.0.1.404\_k6.4.0\_150700.51-sles15.7.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-default-13.0.2.2\_k6.4.0\_150700.51-sles15.7.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 For SLES 16.0
 
 |  |
 | --- |
-| zypper in <...>/blksnap-kmp-default-13.0.1.404\_k6.12.0\_160000.5-sles16.0.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.1.404-1.x86\_64.rpm zypper in <...>/veeam-13.0.1.404-1.sle15.x86\_64.rpm |
+| zypper in <...>/blksnap-kmp-default-13.0.2.2\_k6.12.0\_160000.5-sles16.0.x86\_64.rpm  zypper in <...>/veeam-libs-13.0.2.2-1.x86\_64.rpm zypper in <...>/veeam-13.0.2.2-1.sle15.x86\_64.rpm |
 
 where <...> is the path to the directory where you have saved the Veeam Agent packages.
 
@@ -136,13 +136,13 @@ For Debian 10 / Ubuntu 16.04, 18.04, 20.04 (kernel 5.4)
 
 |  |
 | --- |
-| apt-get install <...>/veeamsnap\_13.0.1.404\_all.deb  apt-get install <...>/veeam-libs\_13.0.1.404\_amd64.deb apt-get install <...>/veeam\_13.0.1.404\_amd64.deb |
+| apt-get install <...>/veeamsnap\_13.0.2.2\_all.deb  apt-get install <...>/veeam-libs\_13.0.2.2\_amd64.deb apt-get install <...>/veeam\_13.0.2.2\_amd64.deb |
 
-For Debian 11 – 13 / Ubuntu 22.04 and 24.04
+For Debian 11 – 13 / Ubuntu 22.04 – 26.04
 
 |  |
 | --- |
-| apt-get install <...>/blksnap\_13.0.1.404\_all.deb  apt-get install <...>/veeam-libs\_13.0.1.404\_amd64.deb apt-get install <...>/veeam\_13.0.1.404\_amd64.deb |
+| apt-get install <...>/blksnap\_13.0.2.2\_all.deb  apt-get install <...>/veeam-libs\_13.0.2.2\_amd64.deb apt-get install <...>/veeam\_13.0.2.2\_amd64.deb |
 
 where <...> is the path to the directory where you have saved the Veeam Agent packages.
 

@@ -3,8 +3,8 @@ title: "Supported Plug-In Versions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_vp_versions.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Supported Plug-In Versions
@@ -24,7 +24,7 @@ Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depen
 
 Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
 
-Veeam Backup & Replication version 13 (build 13.0.2.2067-1) comes with the following Veeam Plug-Ins stored in the ISO file:
+Veeam Backup & Replication version 13 (build 13.0.3.29-1-1) comes with the following Veeam Plug-Ins stored in the ISO file:
 
 * Veeam Plug-In for SAP HANA
 * Veeam Plug-In for Oracle RMAN

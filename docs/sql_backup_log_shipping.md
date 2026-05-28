@@ -3,8 +3,8 @@ title: "Log Shipping Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_log_shipping.html"
-last_updated: "9/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Log Shipping Servers
@@ -17,7 +17,9 @@ For every Microsoft SQL Server VM whose transaction logs you want to back up, Ve
 
 Note that if a direct connection is possible, files will always be transferred from VM guest to repository directly (regardless of the configured log shipping server, as this server will not be involved). This approach helps to optimize performance at file transfer.
 
-A log shipping server is a Microsoft Windows or Linux server added to the backup infrastructure. You can explicitly define what servers you want to use for log shipping or instruct Veeam Backup & Replication to automatically choose an optimal log shipping server. Veeam Backup & Replication chooses the log shipping server based on two criteria: possible data transfer methods and location of the Microsoft SQL Server VMs and log shipping server. For more information, see [Location of Log Shipping Server and VMs](#location).
+A log shipping server is a Microsoft Windows server or a supported Linux server added to the backup infrastructure. Support for Linux log shipping servers is limited to Red Hat Enterprise Linux and Rocky Linux.
+
+You can explicitly define what servers you want to use for log shipping, or instruct Veeam Backup & Replication to automatically choose an optimal log shipping server. Veeam Backup & Replication chooses the log shipping server based on two criteria: possible data transfer methods and the location of the Microsoft SQL Server VMs and the log shipping server. For more information, see [Location of Log Shipping Server and VMs](#location).
 
 Data Transfer Methods
 

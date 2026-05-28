@@ -3,8 +3,8 @@ title: "Installing Plug-In on Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_plugin_windows.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Installing Plug-In on Microsoft Windows
@@ -40,7 +40,7 @@ You can download the latest version of the Veeam Backup & Replication installati
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.2.2067\RMAN folder, find the VeeamPluginforOracleRMAN.exe file.
+2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.3.29-1\RMAN folder, find the VeeamPluginforOracleRMAN.exe file.
 3. Upload the VeeamPluginforOracleRMAN.exe file to Microsoft SQL Server, then run the uploaded file to launch the installation wizard.
 
 1. Install Veeam Plug-In. To do this, run the following commands:
@@ -81,7 +81,7 @@ You can download the latest version of the Veeam Backup & Replication installati
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.2.2067\Windows folder, find the VeeamPluginforOracleRMAN.exe file.
+2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.3.29-1\Windows folder, find the VeeamPluginforOracleRMAN.exe file.
 3. Upload the VeeamPluginforOracleRMAN.exe file to Microsoft SQL Server.
 
 1. Install Veeam Plug-In for Oracle RMAN on a Windows machine in the unattended mode using the command line. Go to folder where the VeeamPluginforOracleRMAN.exe file resides and run the following command:
