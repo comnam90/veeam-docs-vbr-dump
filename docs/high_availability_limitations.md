@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_limitations.html"
-last_updated: "5/8/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -53,6 +53,7 @@ Consider the following general limitations for the HA cluster:
 * The events that Veeam Backup & Replication writes and sends to the [syslog server](syslog_servers.md) do not contain events for the HA cluster reconfiguration and a failover.
 
 * [Veeam Backup Enterprise Manager] If a backup server is added to Enterprise Manager, you must re-add it using the cluster virtual IP address or cluster DNS name after assembling the cluster. If you do not re-add the backup server, Enterprise Manager will not be able to collect data from it after a switchover.
+* If you use [Security & Compliance Analyzer](best_practices_analyzer.md), do not modify the postgresql.conf file.
 
 Kerberos Environment Limitations for HA Cluster
 
