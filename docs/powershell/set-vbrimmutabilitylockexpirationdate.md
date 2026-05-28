@@ -3,8 +3,8 @@ title: "Set-VBRImmutabilityLockExpirationDate"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrimmutabilitylockexpirationdate.html"
-last_updated: "1/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/25/2026"
+product_version: "13.0.2.29"
 ---
 
 # Set-VBRImmutabilityLockExpirationDate
@@ -33,13 +33,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Set-VBRImmutabilityLockExpirationDate -RestorePoint <COib[]> -ExpirationDate <datetime>  [<CommonParameters>] |
+| Set-VBRImmutabilityLockExpirationDate -RestorePoint <COib[]> -ExpirationDate <datetime> [<CommonParameters>] |
 
 * Reset immutability period of restore points located in a hardened repository.
 
 |  |
 | --- |
-| Set-VBRImmutabilityLockExpirationDate -RestorePoint <COib[]> -ToOriginal  [<CommonParameters>] |
+| Set-VBRImmutabilityLockExpirationDate -RestorePoint <COib[]> -ToOriginal [<CommonParameters>] |
 
 Detailed Description
 
@@ -57,9 +57,10 @@ This cmdlet modifies immutability period of restore points located in a hardened
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| RestorePoint | Specifies an array of restore points. The cmdlet will modify immutability period for these restore points. | Accepts the COib[] object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
+| RestorePoint | Specifies a restore point from a backup chain. The cmdlet modifies the immutability period for the specified restore point and propagates the new value across the active backup chain. | Accepts the COib[] object. To create this object, run the Get-VBRRestorePoint cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | ExpirationDate | Specifies a date when Veeam Backup & Replication is allowed to remove restore points from a hardened repository with immutability. | DateTime | True | Named | False |
 | ToOriginal | Defines that the cmdlet will reset the immutability period of restore points to their original value. If you provide this value, the cmdlet will set the immutability to the maximum time period that is available for the hardened repository.  Default: False. | SwitchParameter | True | Named | False |
 
@@ -73,11 +74,11 @@ The cmdlet returns the VBRImmutabilityLockExpirationDate object that contains im
 
 Examples
 
-![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Extending Immutability Period of Restore Points
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Extending Immutability Period of the Latest Restore Point in a Chain
 
 |  |  |
 | --- | --- |
-| This examples shows how to set Veeam Backup & Replication to remove restore points on 03.02.2023 from the hardened repository.  |  | | --- | | $restorepoint = Get-VBRRestorePoint  $date = Get-Date -Year 2023 -Month 2 -Day 3 -Hour 0 -Minute 0 -Second 0  Set-VBRImmutabilityLockExpirationDate -RestorePoint $restorepoint -ExpirationDate $date |  Perform the following steps:   1. Run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. Save the result to the $restorepoint variable. 2. Run the [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1) cmdlet. Specify the Year, Month, Day, Hour, Minute and Second parameter values. Save the result to the $date variable. 3. Run the Set-VBRImmutabilityLockExpirationDate cmdlet. Set the $restorepoint variable as the RestorePoint parameter value. Set the $date variable as the ExpirationDate parameter value. |
+| This example shows how to change the immutability lock expiration date for the most recent incremental restore point in a backup chain. The cmdlet applies the new expiration date to the whole active chain that contains this restore point.  |  | | --- | | $backup = Get-VBRBackup -Name "example backup"  $rp = Get-VBRRestorePoint -Backup $backup  $date = Get-Date -Year 2023 -Month 2 -Day 3 -Hour 0 -Minute 0 -Second  Set-VBRImmutabilityLockExpirationDate -RestorePoint $rp[-1] -ExpirationDate $date |  Perform the following steps:   1. Run the [Get-VBRBackup](get-vbrbackup.md) cmdlet. Specify the Name parameter value. Save the result to the $backup variable. 2. Run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. Specify the $backup variable as the Backup parameter value. Save the result to the $rp variable. 3. Run the [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1) cmdlet. Specify the Year, Month, Day, Hour, Minute and Second parameter values. Save the result to the $date variable. 4. Run the Set-VBRImmutabilityLockExpirationDate cmdlet. Specify $rp[-1] as the RestorePoint parameter value. Specify the $date variable as the ExpirationDate parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Resetting Immutability Period of Restore Points
 
