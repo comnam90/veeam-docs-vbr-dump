@@ -3,8 +3,8 @@ title: "Working with Protection Groups"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_agent_protection_groups.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Working with Protection Groups

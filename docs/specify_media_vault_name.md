@@ -3,8 +3,8 @@ title: "Step 2. Specify Media Vault Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_media_vault_name.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 2. Specify Media Vault Name

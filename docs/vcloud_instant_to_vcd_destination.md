@@ -3,8 +3,8 @@ title: "Step 5. Select Destination for Restored VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_destination.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/27/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Select Destination for Restored VM
