@@ -1,13 +1,13 @@
 ---
-title: "Managing Backup Job in Veeam Backup & Replication"
+title: "Managing Backup Jobs in Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_job_vbr.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/15/2026"
+product_version: "13.0.2.29"
 ---
 
-# Managing Backup Job in Veeam Backup & Replication
+# Managing Backup Jobs in Veeam Backup & Replication
 
 
 After Veeam Plug-In for Microsoft SQL Server starts the backup process, Veeam Backup & Replication creates the backup job. You can use this job to view statistics on the backup process and generate backup job reports. You can also disable the backup job.
@@ -22,45 +22,11 @@ Consider the following:
 * For standalone Microsoft SQL Server, Veeam Backup & Replication generates the backup job name based on the names of Microsoft SQL Server and backup repository where Veeam Plug-In creates Microsoft SQL Server backups.
 * For Microsoft SQL Server that operates as part of a failover cluster or availability group, Veeam Backup & Replication generates the backup job name based on the name of the cluster or name of the availability group.
 
-Viewing Backup Job Statistics
+You can perform the following operations from the Veeam Backup & Replication console:
 
-To view details of the backup process, do the following:
-
-1. Open the Veeam Backup & Replication console.
-2. In the Home view, expand the Jobs node in the inventory pane and click Applications.
-3. In the working area, select the application backup policy for Microsoft SQL Server to see details of the current backup process or the last backup job session.
-
-|  |
-| --- |
-| Note |
-| Veeam Backup & Replication does not display the progress bar for a running Veeam Plug-In for Microsoft SQL Server backup job. Statistics for backup jobs of this type becomes available after the backup job session is completed. |
-
-[![View Details of Backup Process](images/plugins_mssql_backup_job.webp)](images/plugins_mssql_backup_job.webp "View Details of Backup Process")
-
-Generating Backup Job Reports
-
-Veeam Backup & Replication can generate reports with details about Microsoft SQL Server backup job session performance. The session report contains the following session statistics: session duration details, details of the session performance, amount of read, processed and transferred data, backup size, compression ratio, list of warnings and errors (if any).
-
-To generate a report, do the following:
-
-1. Open the Veeam Backup & Replication console.
-2. In the Home view, expand the Jobs node in the inventory pane and click Applications.
-3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
-
-[![Generate Backup Job Report](images/plugins_mssql_job_report.webp)](images/plugins_mssql_job_report.webp "Generate Backup Job Report")
-
-Disabling Backup Job
-
-You can disable Microsoft SQL Server backup jobs in the Veeam Backup & Replication console. If you disable the job, you will not be able to run Veeam Plug-In backup commands on Microsoft SQL Server.
-
-To disable a backup job, do the following:
-
-1. Open the Veeam Backup & Replication console.
-
-1. In the Home view, expand the Jobs node in the inventory pane and click Applications.
-
-1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
-
-[![Disable Backup Job](images/plugins_mssql_job_disable.webp)](images/plugins_mssql_job_disable.webp "Disable Backup Job")
+* [View backup job statistics](plugins_mssql_job_vbr_statistics.md)
+* [Generate a backup job report](plugins_mssql_job_vbr_reports.md)
+* [Disable a backup job](plugins_mssql_job_vbr_disable.md)
+* [Delete a backup job](plugins_mssql_job_vbr_delete.md)
 
 
