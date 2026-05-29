@@ -3,8 +3,8 @@ title: "Database Protection"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_protection.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Database Protection
@@ -28,6 +28,7 @@ In this Section
 
 * [Oracle RMAN Full Backup](rman_backup.md)
 * [Oracle RMAN Channel Allocation](rman_allocation_backup.md)
-* [Backup Job in Veeam Backup & Replication](rman_job_vbr.md)
+* [Managing Backup Jobs in Veeam Backup & Replication](rman_job_vbr.md)
+* [Managing Backups in Veeam Backup & Replication](plugins_rman_backup_management.md)
 
 
