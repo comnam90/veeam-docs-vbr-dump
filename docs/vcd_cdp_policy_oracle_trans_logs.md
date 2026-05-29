@@ -3,7 +3,7 @@ title: "Oracle Archived Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_oracle_trans_logs.html"
-last_updated: "5/27/2026"
+last_updated: "5/28/2026"
 product_version: "13.0.2.29"
 ---
 
