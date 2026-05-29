@@ -3,8 +3,8 @@ title: "Running Veeam Backup PowerShell on Windows Machines"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/running_ps_sessions_windows.html"
-last_updated: "4/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Running Veeam Backup PowerShell on Windows Machines
@@ -22,7 +22,7 @@ Requirements
 Consider the following requirements:
 
 * To run Veeam PowerShell cmdlets, you must have Veeam Backup Administrator role. For more information, see [Users and Roles](https://helpcenter.veeam.com/docs/vbr/userguide/users_roles.html?ver=13).
-* A machine that runs the PowerShell session must have Windows PowerShell version 7 installed.
+* A machine that runs the PowerShell session must have Windows PowerShell version 7.4.7 installed.
 * To utilize the Veeam Explorer PowerShell functionality, you must install the necessary Veeam Explorer PowerShell modules. For more information, see [Starting PowerShell Sessions](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/ps_sessions.html?ver=13) in the Veeam Explorers PowerShell Reference.
 
 Starting Veeam PowerShell Sessions
