@@ -3,8 +3,8 @@ title: "Restore Oracle Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sap_orcl.html"
-last_updated: "4/16/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore Oracle Databases
@@ -33,7 +33,7 @@ Run the brrestore command with the following parameters:
 
 |  |
 | --- |
-| rman\_send = "srcBackup=<backup\_ID>'" |
+| rman\_send = "'srcBackup=<backup\_ID>'" |
 
 where <backup\_ID> is the ID of the backup you want to restore from.
 
