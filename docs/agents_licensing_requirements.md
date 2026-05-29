@@ -3,8 +3,8 @@ title: "Licensing Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_licensing_requirements.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Licensing Requirements
@@ -69,10 +69,5 @@ To restrict instance consumption by specific Veeam Agents:
 | --- |
 | TIP |
 | With the Assign button, you can assign a license to Veeam Agents operating in the standalone mode. For example, see the [Assigning License to Veeam Agent](https://helpcenter.veeam.com/docs/agentforwindows/userguide/license_vbr_mode.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.  You cannot assign a license with the Assign button to operating in the managed mode. The license type of operating in the managed mode depends on the job mode specified in the backup job settings. To learn more, see [Working with Veeam Agent Backup Jobs and Policies](backup_job_tasks.md). |
-
-|  |
-| --- |
-| Important |
-| Enter your important text here... |
 
 
