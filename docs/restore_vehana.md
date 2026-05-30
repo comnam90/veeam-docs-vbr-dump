@@ -3,8 +3,8 @@ title: "Restore with Veeam Explorer for SAP HANA"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_vehana.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore with Veeam Explorer for SAP HANA
@@ -17,6 +17,6 @@ You can restore SAP HANA databases from Veeam Plug-In backups in the Veeam Backu
 | Tip |
 | To perform restore from SAP HANA databases, you can also use Veeam Explorer cmdlets. For details, see the [Veeam Explorer for SAP HANA](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_sap_hana.html?ver=13) section of the Veeam Explorers PowerShell Reference. |
 
-[![Restore From SAP HANA Backup](images/plugins_restore_saphana.webp)](images/plugins_restore_saphana.webp "Restore From SAP HANA Backup")
+[![Restore From SAP HANA Backup](images/plugins_sap_hana_restore_from.webp)](images/plugins_sap_hana_restore_from.webp "Restore From SAP HANA Backup")
 
 
