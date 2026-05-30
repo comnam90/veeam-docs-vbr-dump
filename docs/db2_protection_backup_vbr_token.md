@@ -3,8 +3,8 @@ title: "Creating Recovery Token"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_backup_vbr_token.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Creating Recovery Token

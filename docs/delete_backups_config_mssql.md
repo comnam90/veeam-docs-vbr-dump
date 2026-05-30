@@ -3,8 +3,8 @@ title: "Removing Backup from Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/delete_backups_config_mssql.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Removing Backup from Configuration

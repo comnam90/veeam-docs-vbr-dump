@@ -3,7 +3,7 @@ title: "Step 4. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/windows_server_review.html"
-last_updated: "5/27/2026"
+last_updated: "5/29/2026"
 product_version: "13.0.2.29"
 ---
 
