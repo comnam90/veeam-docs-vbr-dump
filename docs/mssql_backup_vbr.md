@@ -3,8 +3,8 @@ title: "Managing Veeam Plug-In Backups in Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_backup_vbr.html"
-last_updated: "2/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Managing Veeam Plug-In Backups in Veeam Backup & Replication
@@ -24,6 +24,8 @@ For backups created by Veeam Plug-In for Microsoft SQL Server, consider the foll
 
 You can use the Veeam Backup & Replication console to perform the following operations with Veeam Plug-In for Microsoft SQL Server backups:
 
+* [Restore from a Microsoft SQL Server backup](plugins_plugins_mssql_restore_from.md)
+* [Create a recovery token for a backup](plugins_mssql_backup_vbr_token.md)
 * [Delete a backup from the backup repository](delete_backups_mssql.md)
 * [Remove a backup from configuration](delete_backups_config_mssql.md)
 
