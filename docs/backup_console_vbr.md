@@ -1,13 +1,13 @@
 ---
-title: "Backup Job in Veeam Backup & Replication"
+title: "Managing Backup Jobs in Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_console_vbr.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/15/2026"
+product_version: "13.0.2.29"
 ---
 
-# Backup Job in Veeam Backup & Replication
+# Managing Backup Jobs in Veeam Backup & Replication
 
 
 |  |
@@ -27,36 +27,11 @@ Consider the following regarding the naming of SAP HANA backup jobs:
 | Note |
 | Due to specifics of the SAP HANA backup process, the progress bar of a running SAP HANA backup job is not available. |
 
-To view details of a backup job process, do the following:
+You can perform the following operations from the Veeam Backup & Replication console:
 
-1. Open the Veeam Backup & Replication console.
-2. In the Home view, expand the Jobs node and click Application Plug-Ins.
-3. In the list of jobs, select the SAP HANA backup job to see details of the current backup process or the last backup job session.
-
-[![View Details of Backup Job Process](images/plugins_vpsh_job.webp)](images/plugins_vpsh_job.webp "View Details of Backup Job Process")
-
-Generating Backup Job Reports
-
-Veeam Backup & Replication can generate reports with details about an SAP HANA backup job session performance. The session report contains the following session statistics: session duration details, details of the session performance, amount of read, processed and transferred data, backup size, compression ratio, list of warnings and errors (if any).
-
-1. Open the Home view.
-2. In the inventory pane, select Jobs.
-3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
-
-[![View Report of Backup Job Process](images/plugins_vpsh_job_report.webp)](images/plugins_vpsh_job_report.webp "View Report of Backup Job Process")
-
-Disabling Backup Job
-
-You can disable SAP HANA backup jobs in the Veeam Backup & Replication console. If you disable the job, you will not be able to run SAP Backint backup commands on the SAP HANA server.
-
-To disable a backup job:
-
-1. Open the Home view.
-
-1. In the inventory pane, select Jobs.
-
-1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
-
-[![Disable Backup Job](images/plugins_vpsh_job_disable.webp)](images/plugins_vpsh_job_disable.webp "Disable Backup Job")
+* [View backup job statistics](plugins_backup_console_vbr_statistics.md)
+* [Generate a backup job report](plugins_backup_console_vbr_reports.md)
+* [Disable a backup job](plugins_backup_console_vbr_disable.md)
+* [Delete a backup job](plugins_backup_console_vbr_delete.md)
 
 
