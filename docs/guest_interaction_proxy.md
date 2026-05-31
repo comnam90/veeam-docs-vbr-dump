@@ -3,8 +3,8 @@ title: "Guest Interaction Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_interaction_proxy.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Guest Interaction Proxies
@@ -39,11 +39,12 @@ Requirements for Guest Interaction Proxy
 
 A machine performing the role of a guest interaction proxy must meet the following requirements:
 
-* The role of a guest interaction proxy can be assigned to a Microsoft Windows or Linux server (physical or virtual).
+* The role of a guest interaction proxy can be assigned to a Microsoft Windows server or a RHEL/Rocky-based Linux server (physical or virtual).
 
-If you use RHEL or Rocky Linux version 9 or later, and do not use [Veeam Infrastructure Appliance](linux_infrastructure.md), you must install the following packages before adding the server to the backup infrastructure: libmsi1, samba-client, and samba-common-tools.
+If you use a Linux server and do not use [Veeam Infrastructure Appliance](linux_infrastructure.md), you must install the following packages before adding the server to the backup infrastructure: libmsi1, samba-client, and samba-common-tools.
 
 * You must add the machine to the Veeam Backup & Replication console as a managed server.
+* For Linux servers assigned the role of a guest interaction proxy, Guest Interaction Proxy component must be installed. For more information, see [Adding Linux Servers](linux_server_ssh.md#network).
 * [For VMware vSphere environments] Guest interaction proxy must have either a LAN or VIX connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about setting up a connection to the VM, see [this Veeam KB article](https://www.veeam.com/kb1788).
 * [For Microsoft Hyper-V environments] Guest interaction proxy must have either a LAN or PowerShell Direct connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about PowerShell Direct, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/powershell-direct).
 * [For Microsoft Hyper-V environments] If you plan to use PowerShell Direct connection to back up VMs that reside on Hyper-V Server 2016 (or later) and run Microsoft Windows 10 (or later) or Microsoft Windows Server 2016 (or later), the guest interaction proxy must have Microsoft PowerShell 2.0 (or later) installed.
