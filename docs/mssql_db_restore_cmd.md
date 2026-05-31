@@ -3,8 +3,8 @@ title: "Restore with Command-Line Interface"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_cmd.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore with Command-Line Interface
@@ -23,7 +23,7 @@ For example, to restore a Microsoft SQL Server database, use the following comma
 
 |  |
 | --- |
-| MSSQLRecoveryManager.exe --restore --src\_server="srv16" --src\_instance="MSSQLSERVER" --src\_database="IT" --src\_backup="srv16 SQL Backup (Backup Vol 01)" --date="2022-08-17 09:03:49" --dst\_instance="MSSQLSERVER" --dst\_database="IT\_restored" --recovery\_state="recovery" --f="'IT'::'DC:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\IT.mdf'" --f="'IT\_log'::C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\IT\_log.ldf'" |
+| MSSQLRecoveryManager.exe --restore --src\_server="srv16" --src\_instance="MSSQLSERVER" --src\_database="IT" --src\_backup="srv16 SQL Backup (Backup Vol 01)" --date="2022-08-17 09:03:49" --dst\_instance="MSSQLSERVER" --dst\_database="IT\_restored" --recovery\_state="recovery" --f="'IT'::'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\IT.mdf'" --f="'IT\_log'::'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\IT\_log.ldf'" |
 
 Exit Codes
 
@@ -36,8 +36,9 @@ Restore Parameters
 
 You can specify the following parameters for database restore with the MSSQLRecoveryManager.exe command:
 
+Restore Parameters
+
 | Command | Description |
-| --- | --- |
 | --help | Shows the list of parameters for the MSSQLRecoveryManager.exe command. |
 | --restore | Defines the restore operation. |
 | --src\_server | Specifies the name of the original server that contained the backed-up database. |
