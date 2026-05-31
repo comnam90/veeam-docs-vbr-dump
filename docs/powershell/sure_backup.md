@@ -3,7 +3,7 @@ title: "SureBackup"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sure_backup.html"
-last_updated: "5/27/2026"
+last_updated: "5/28/2026"
 product_version: "13.0.2.29"
 ---
 
