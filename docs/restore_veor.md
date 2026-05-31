@@ -3,8 +3,8 @@ title: "Restore with Veeam Explorer for Oracle"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_veor.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "5/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore with Veeam Explorer for Oracle
@@ -22,6 +22,6 @@ You can restore Oracle databases from Veeam Plug-In backups in the Veeam Backup 
 | Tip |
 | Consider the following:   * To perform restore from Oracle databases you can also use Veeam Explorer cmdlets. For details, see the [Veeam Explorer for Oracle](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_oracle.html?ver=13) section of the Veeam Explorers PowerShell Reference. * For details on Veeam Explorer for Oracle, see [Restoring from RMAN Plug-in Backups](https://helpcenter.veeam.com/docs/vbr/userguide/rman_backups.html?ver=13). |
 
-[![Restore From Oracle RMAN Backup](images/plugins_restore_veor.webp)](images/plugins_restore_veor.webp "Restore From Oracle RMAN Backup")
+[![Restore From Oracle RMAN Backup](images/plugins_rman_restore_from.webp)](images/plugins_rman_restore_from.webp "Restore From Oracle RMAN Backup")
 
 
