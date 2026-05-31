@@ -3,8 +3,8 @@ title: "Database Protection"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_sap_orcl.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/28/2026"
+product_version: "13.0.2.29"
 ---
 
 # Database Protection
@@ -19,7 +19,8 @@ In This Section
 * [Considerations and Limitations](sap_orcl_backup_limitations.md)
 * [SAP on Oracle Backup Using Backint](backup_brbackup.md)
 * [SAP on Oracle Backup Using RMAN\_UTIL](rman_util.md)
-* [Backup Job in Veeam Backup & Replication](backup_job_vbr.md)
+* [Managing Backup Jobs in Veeam Backup & Replication](backup_job_vbr.md)
+* [Managing Backups in Veeam Backup & Replication](plugins_sap_oracle_backup_management.md)
 
 |  |
 | --- |
