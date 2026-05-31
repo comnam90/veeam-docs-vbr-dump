@@ -1,13 +1,13 @@
 ---
-title: "Backup Job in Veeam Backup & Replication"
+title: "Managing Backup Jobs in Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_job_vbr.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2/15/2026"
+product_version: "13.0.2.29"
 ---
 
-# Backup Job in Veeam Backup & Replication
+# Managing Backup Jobs in Veeam Backup & Replication
 
 
 |  |
@@ -29,40 +29,11 @@ Consider the following regarding the naming of Oracle RMAN backup jobs:
 | Note |
 | The progress bar of a running Oracle database backup job is available only for backups of standalone Oracle databases. It is not available for Oracle RAC backups. |
 
-Viewing Backup Job Statistics
+You can perform the following operations from the Veeam Backup & Replication console:
 
-To view details of a backup job process, do the following:
-
-1. Open the Veeam Backup & Replication console.
-2. In the Home view, expand the Jobs node and click Backup.
-3. In the list of jobs, select the Oracle RMAN backup job to see details of the current backup process or the last backup job session.
-
-[![View Details of Backup Job Process](images/plugins_rman_backup_job.webp)](images/plugins_rman_backup_job.webp "View Details of Backup Job Process")
-
-Generating Backup Job Reports
-
-Veeam Backup & Replication can generate reports with details about an Oracle RMAN backup job session performance. The session report contains the following session statistics: session duration details, details of the session performance, amount of read, processed and transferred data, backup size, compression ratio, list of warnings and errors (if any).
-
-To generate a report, do the following:
-
-1. Open the Home view.
-2. In the inventory pane, select Jobs.
-3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
-
-[![Generate Backup Job Report](images/plugins_rman_job_report.webp)](images/plugins_rman_job_report.webp "Generate Backup Job Report")
-
-Disabling Backup Job
-
-You can disable Oracle RMAN backup jobs in the Veeam Backup & Replication console. If you disable the job, you will not be able to run RMAN backup commands on the Oracle server.
-
-To disable a backup job, do the following:
-
-1. Open the Home view.
-
-1. In the inventory pane, select Jobs.
-
-1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
-
-[![Disable Backup Job](images/plugins_rman_job_disable.webp)](images/plugins_rman_job_disable.webp "Disable Backup Job")
+* [View backup job statistics](plugins_rman_job_vbr_statistics.md)
+* [Generate a backup job report](plugins_rman_job_vbr_reports.md)
+* [Disable a backup job](plugins_rman_job_vbr_disable.md)
+* [Delete a backup job](plugins_rman_job_vbr_delete.md)
 
 
