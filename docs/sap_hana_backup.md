@@ -3,8 +3,8 @@ title: "Database Protection"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_hana_backup.html"
-last_updated: "10/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "2/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Database Protection
@@ -30,6 +30,7 @@ To back up SAP HANA databases, you can use SQL commands or SAP HANA administrati
 * [Database Backup (SAP HANA Studio)](backup_saphana_studio.md)
 * [Database Backup (SAP HANA Cockpit)](backup_hana_cockpit.md)
 
-* [Backup Job in Veeam Backup & Replication](backup_console_vbr.md)
+* [Managing Backup Jobs in Veeam Backup & Replication](backup_console_vbr.md)
+* [Managing Backups in Veeam Backup & Replication](plugins_sap_hana_backup_management.md)
 
 
