@@ -3,8 +3,8 @@ title: "Direct SAN Access"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/direct_san_access.html"
-last_updated: "3/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/1/2026"
+product_version: "13.0.2.29"
 ---
 
 # Direct SAN Access
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 The Direct SAN access transport mode is recommended for VMs whose disks are located on shared VMFS SAN LUNs that are connected to ESXi hosts over FC, FCoE, iSCSI, NVMe-FC\*, and on shared SAS storage.
 
-In the Direct SAN access transport mode, Veeam Backup & Replication leverages VMware VADP to transport VM data directly from and to FC, FCoE, NVMe-FC\* and iSCSI storage over the SAN. VM data travels over the SAN, bypassing ESXi hosts and the LAN. The Direct SAN access transport method provides the fastest data transfer speed and produces no load on the production network.
+In the Direct SAN access transport mode, Veeam Backup & Replication leverages VMware VADP to transport VM data directly from and to FC, FCoE, NVMe-FC\* and iSCSI storage over the SAN. The Direct SAN access mode transfers VM data from the source storage to the backup proxy over the SAN, with no load on the production ESXi hosts or the LAN. Due to its efficiency, the Direct storage access mode is prioritized over other transport modes when available.
 
 The Direct SAN access transport mode can be used for all operations where the VMware backup proxy is engaged:
 
@@ -29,10 +29,10 @@ The Direct SAN access transport mode can be used for all operations where the VM
 Requirements for the Direct SAN Access Mode
 
 * It is strongly recommended that you assign the role of a VMware backup proxy working in the Direct SAN access mode to a physical machine. If you assign this role to a VM, the VMware backup proxy performance may not be optimal.
-* A VMware backup proxy that uses the Direct SAN access transport mode must have a direct access to the production storage using a hardware or software HBA. If a direct SAN connection is not configured or not available when a job or task starts, the job or task will fail.
+* A VMware backup proxy that uses the Direct SAN access transport mode must have direct access to the production storage using a hardware or software HBA. If a direct SAN connection is not configured or not available when a job or task starts, the job or task will fail.
 * SAN storage volumes presented as VMware datastores must be exposed to the OS of the VMware backup proxy that works in the Direct SAN access transport mode.
 
-The volumes must be visible in Disk Management but must not be initialized by the OS. Otherwise, the VMFS filesystem will be overwritten with NTFS, and volumes will become unrecognizable by ESXi hosts. To prevent volumes initialization, Veeam Backup & Replication automatically sets the SAN Policy within each proxy to Offline Shared and also sets the SAN LUNs to the Offline state.
+The volumes must be visible in Disk Management but must not be initialized by the OS. Otherwise, the VMFS filesystem will be overwritten with NTFS, and volumes will become unrecognizable by ESXi hosts. To prevent volume initialization, Veeam Backup & Replication automatically sets the SAN Policy within each proxy to Offline Shared and also sets the SAN LUNs to the Offline state.
 
 * [For restore operations] A VMware backup proxy must have write access to LUNs where VM disks are located.
 * [For backup proxy deployed using [Veeam Infrastructure Appliance with iSCSI and NVMe/TCP](linux_infrastructure_appliance_install.md)] You can use the Direct SAN access mode over FC only if you manually specify datastores that the proxy can access.
@@ -70,7 +70,7 @@ To write VM data to the target datastore in the Direct SAN access transport mode
 
 * The Multipath I/O feature must be enabled in the Windows Server Manager console. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features).
 * Zoning and masking on the FC switches and storage must be configured.
-* All proxy ports must have access to shared VMFS SAN LUNs where VMs disks are located on.
+* All proxy ports must have access to shared VMFS SAN LUNs where VM disks are located on.
 
 * Multipathing (MPIO) for Linux-based backup proxies in the Direct SAN access transport mode leverages only path failovers and not load balancing. These are limitations of the VMware VDDK, and the distributions supported for MPIO in the Direct SAN access transport mode are listed in the Virtual Disk Development Kit release notes for your vSphere version.
 
