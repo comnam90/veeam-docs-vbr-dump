@@ -3,8 +3,8 @@ title: "Creating Configuration Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/export_vbr_config.html"
-last_updated: "3/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/2/2026"
+product_version: "13.0.2.29"
 ---
 
 # Creating Configuration Backups
@@ -34,7 +34,7 @@ Veeam Backup & Replication exports information about the following objects:
 |  |
 | --- |
 | Note |
-| Consider the following:   * If a configuration backup job has a remote repository as a target, a temporary BCO file is created in the %TEMP% folder during the job (by default, this is C:\Windows\Temp, but it can be modified in the environment variables). After the BCO file is copied to the remote repository, it is removed from %TEMP%. If the repository is local, the BCO file is saved directly to it without using %TEMP%.   Therefore, there must be enough free space on the disk for this temporary BCO file if the remote repository is used for storing the configuration backup. The size of the BCO file depends on the size of the database and its content (for example, sessions are compressed better than tapes in BCO). The compression ratio can be checked in the configuration backup session details.   * If you use custom configuration registry values, note that configuration backup will not apply to them. You may want to back them up manually. * The configuration backup job creates a snapshot of the configuration database and retrieves data required for successful restore from it. If the database size is large, the job may produce significant load on the Microsoft SQL Server. Make sure that you schedule the configuration backup job for a period of low operation intensity on the backup server. |
+| Consider the following:   * [For Veeam Backup & Replication on Windows] If a configuration backup job has a remote repository as a target, a temporary BCO file is created in the %TEMP% directory during the job (the default path is C:\Windows\Temp). After the BCO file is copied to the remote repository, it is removed from the %TEMP% directory. If the target repository is local, the BCO file is saved directly to it without being staged in %TEMP%. * [For Veeam Backup & Replication on Linux] During a configuration backup job, a temporary BCO file is always created in /var/lib/veeam/vbr\_tmp, regardless of whether the target repository is local or remote. After the job finishes, the BCO file is copied to the following directory: /var/lib/veeam/backup/VeeamConfigBackup/<MachineName>.  * There must be enough free space on the disk for the temporary BCO file. The size of the BCO file depends on the size of the database and its content (for example, sessions are compressed better than tapes). The compression ratio can be checked in the configuration backup session details.  * If you use custom configuration registry values, note that configuration backup will not apply to them. You may want to back them up manually. * The configuration backup job creates a snapshot of the configuration database and retrieves data required for successful restore from it. If the database size is large, the job may produce significant load on the PostgreSQL or Microsoft SQL Server. Make sure that you schedule the configuration backup job for a period of low operation intensity on the backup server. |
 
 Backup Repository Target
 
