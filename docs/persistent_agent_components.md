@@ -3,8 +3,8 @@ title: "Persistent Agent Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_agent_components.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/1/2026"
+product_version: "13.0.2.29"
 ---
 
 # Persistent Agent Components
@@ -16,15 +16,11 @@ Prerequisites
 
 To use persistent agent components, ensure the Deployment Kit is generated on a backup server and run on a protected Windows machine. The Deployment Kit typically contains necessary binaries and supporting files, authentication certificates, and a sample service configuration script (InstallDeploymentKit.BAT) for automated installation. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
 
-Certificate Lifecycle
+Certificate-Based Authentication
 
-When you use the Deployment Kit to enable certificate-based authentication for persistent guest agents, certificates follow a defined lifecycle.
+When you use the Deployment Kit to enable certificate-based authentication for persistent guest agents, certificates follow a defined lifecycle. During a backup job with application-aware processing and persistent guest agents enabled, Veeam Backup & Replication automatically replaces the temporary certificate with a permanent one.
 
-The Deployment Kit installs a temporary certificate on a protected VM to enable initial communication. By default, this certificate is valid for 30 days (720 hours). You can adjust the validity period only when you generate the kit using PowerShell or the backup server REST API. Only one temporary certificate is active at a time. Creating a new kit invalidates previously issued temporary certificates.
-
-When you run a backup job with Application-Aware Processing and persistent guest agents enabled, Veeam Backup & Replication automatically replaces the temporary certificate with a permanent certificate. The permanent certificate remains valid for 10 years. This process transitions the environment from short-term to long-term security without manual intervention.
-
-For information about the Deployment Kit generation and installation steps, see [Using Veeam Deployment Kit](deployment_kit.md).
+For more information on certificate handling, including certificate lifecycle, validity periods, and renewal behavior, see section [Certificate Lifecycle](deployment_kit.md#cert_lifecycle).
 
 Installing Persistent Agent Components on Microsoft Windows VMs
 

@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_used_ports.html"
-last_updated: "5/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/2/2026"
+product_version: "13.0.2.29"
 ---
 
 # Ports
@@ -31,11 +31,12 @@ Communication Between Veeam Backup & Replication Components
 
 Communication Between Veeam Plug-In and Veeam Backup & Replication Infrastructure Components
 
-The following sections describe network ports that must be opened to enable proper communication and data transfer between Veeam Plug-In and Veeam Backup & Replication infrastructure components:
+The following sections describe network ports that must be opened to enable proper communication and data transfer between Veeam Plug-In and Veeam Backup & Replication infrastructure components.
 
-* [Veeam Plug-In for Oracle RMAN](ports_vprman.md)
-* [Veeam Plug-In for SAP HANA](ports_vpsh.md)
-* [Veeam Plug-In for SAP on Oracle](ports_sap_orcl.md)
-* [Veeam Plug-In for Microsoft SQL Server](ports_mssql.md)
+Communication Between Veeam Plug-In and Veeam Backup & Replication Infrastructure Components
+
+| From | To | Protocol | Port | Notes |
+| Database server where Veeam Plug-In is installed | Veeam Backup & Replication server | TCP | 10006,  443 | Default ports used for communication with the Veeam Backup & Replication server.  Note: Data between Veeam Plug-Ins and backup repositories is transferred directly, bypassing the Veeam Backup & Replication server. |
+| Backup repository server or [gateway server](gateway_server.md) | TCP | 6162 | Default port used by Veeam Data Mover Service. |
 
 
