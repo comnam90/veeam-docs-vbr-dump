@@ -3,8 +3,8 @@ title: "Step 5. Configuring Helper Appliance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_acc_lin.html"
-last_updated: "10/23/2023"
-product_version: "13.0.1.1071"
+last_updated: "6/2/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Configuring Helper Appliance
@@ -13,6 +13,11 @@ product_version: "13.0.1.1071"
 This step is available if you have selected Enable direct restore of Linux-based computers at the Subscription step of the wizard.
 
 If you plan to restore Linux workloads to multiple locations, you must configure a helper appliance in each location.
+
+|  |
+| --- |
+| Note |
+| If you plan to perform [Instant Recovery to Microsoft Azure](instant_recovery_to_azure.md), consider that the configuration described in this step is not required — instead, you must perform the steps described in section [Helper Appliance Template](helper_appliance_template.md). |
 
 To configure a helper appliance, do the following:
 
