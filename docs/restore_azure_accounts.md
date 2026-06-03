@@ -3,8 +3,8 @@ title: "Microsoft Azure Compute Accounts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_accounts.html"
-last_updated: "2/23/2024"
-product_version: "13.0.1.1071"
+last_updated: "6/2/2026"
+product_version: "13.0.2.29"
 ---
 
 # Microsoft Azure Compute Accounts
@@ -13,8 +13,9 @@ product_version: "13.0.1.1071"
 You can use a Microsoft Azure Compute account for the following operations in Veeam Backup & Replication:
 
 * [Restore workloads to Microsoft Azure](restore_azure.md).
+* [Perform Instant Recovery to Microsoft Azure](instant_recovery_to_azure.md).
 * [Add Azure archive storage](azure_archive_tier_repository_account.md).
-* [Add a Microsoft Azure Plug-In for Veeam Backup & Replication appliance](https://helpcenter.veeam.com/docs/vbazure/guide/adding_appliance_console.html?ver=8.1).
+* [Add a Veeam Plug-In for Microsoft Azure appliance](https://helpcenter.veeam.com/docs/vbazure/guide/adding_appliance_console.html?ver=8.1).
 
 When you add a Microsoft Azure Compute account, Veeam Backup & Replication imports information about subscriptions and resources associated with this account. During the restore process, Veeam Backup & Replication accesses these resources and uses them to register new VMs in Microsoft Azure.
 
