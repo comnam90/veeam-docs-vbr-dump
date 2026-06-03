@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_considerations.html"
-last_updated: "1/8/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/2/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -12,7 +12,12 @@ product_version: "13.0.1.1071"
 
 Prerequisites
 
-Before you recover workloads, you must deploy a helper appliance template in the region where you plan to recover workloads. For more information, see [Helper Appliance Template](helper_appliance_template.md).
+Before you perform Instant Recovery to Microsoft Azure, do the following:
+
+* [Deploy a helper appliance template](helper_appliance_template.md) in the region where you plan to recover workloads.
+* [Add a Microsoft Azure Compute account](restore_azure_accounts.md) that has specific built-in Azure roles assigned (the roles are listed in the section prerequisites).
+
+If you do not want to use built-in roles, you can create a custom role with granular permissions. For more information, see [Creating Custom Role for Azure Account](azure_custom_role.md).
 
 Storage Accounts
 
