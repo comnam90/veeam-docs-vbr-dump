@@ -3,14 +3,14 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_plugin_permissions.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Permissions
 
 
-For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
+In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
 
 * [Permissions for Veeam Plug-In](#vp)
 * [Permissions for Object Storage](#object)
@@ -18,7 +18,7 @@ For general requirements for permissions that must be provided to the user accou
 |  |
 | --- |
 | Note |
-| If you plan to restore Oracle databases using Veeam Explorer for Oracle, consider the required permissions listed in [Permissions](https://helpcenter.veeam.com/docs/vbr/userguide/veo_permissions.html?ver=13). |
+| * For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. * If you plan to restore Oracle databases using Veeam Explorer for Oracle, consider the required permissions listed in [Permissions](https://helpcenter.veeam.com/docs/vbr/userguide/veo_permissions.html?ver=13) for Veeam Explorer for Oracle. * The following permissions apply to Veeam Plug-In for Oracle RMAN operating in the standalone mode. For more information on permissions for Veeam Plug-Ins managed by Veeam Backup & Replication, see [Permissions for Managed Veeam Plug-Ins](plan_and_manage_permissions.md#rman). |
 
 Permissions for Veeam Plug-In
 
