@@ -3,14 +3,19 @@ title: "System Requirements for x64 Linux"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_system_requirements_64.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # System Requirements for x64 Linux
 
 
 Before you start using Veeam Plug-In for IBM Db2 on machines running Linux OSes based on the x64 architecture, make sure the requirements listed in this section are met.
+
+|  |
+| --- |
+| Note |
+| The following system requirements apply to Veeam Plug-In for IBM Db2 for x64 Linux operating in the standalone mode. The managed operation mode is not supported. For details on operation modes, see [Standalone and Managed Operations Modes](overview_operation_modes.md#modes). |
 
 System Requirements for x64 Linux
 
