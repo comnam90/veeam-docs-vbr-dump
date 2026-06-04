@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_limitations.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -17,6 +17,7 @@ We do not recommend you to install Veeam Backup & Replication and its components
 Microsoft Windows Server Core
 
 You can assign roles of a backup proxy, backup repository, WAN accelerator, Veeam Cloud Connect infrastructure components and tape infrastructure components to machines running Microsoft Windows Server Core.
+Installing Veeam Backup & Replication and Veeam Backup Enterprise Manager on a Windows OS machine without Desktop Experience (Core) is not supported.
 
 Windows Server IoT/Windows Storage Server Support
 
@@ -46,7 +47,7 @@ Do not use native Hyper-V replication especially if replication is targeted at t
 
 Unstructured Data Backup
 
-Each of the following components for unstructured data backup may consume up to 4 GB RAM per task (in case of deduplicating storage appliances, up to 8 GB RAM): [backup repository](#repo), [general-purpose backup proxy](#file_proxy), [cache repository](#cache_repo). Make sure you allocate enough memory resources for your installation. For all-in-one installations, where the server performs several roles, it must have enough memory resources for all components.
+Each of the following components for unstructured data backup may consume up to 4 GB RAM per task (in case of deduplicating storage appliances, up to 8 GB RAM): [backup repository](system_requirements_backup_repo.md), [general-purpose backup proxy](system_requirements_general_proxy.md), [cache repository](system_requirements_cache_repo.md). Make sure you allocate enough memory resources for your installation. For all-in-one installations, where the server performs several roles, it must have enough memory resources for all components.
 
 Network Limitations
 
@@ -56,6 +57,5 @@ Consider the following requirements and limitations:
 
 * [For VMware vSphere] VMware NSX-T 2.3 or later is supported with N-VDS for VMware vSphere and VMware Cloud on AWS/Dell.
 * [For VMware vSphere] VMware NSX-T 3.0 or later is supported with VDS for VMware vSphere and VMware Cloud on AWS/Dell.
-* [For VMware vSphere] VMware NSX-V is supported (see details on the support of vSphere and VMware Cloud version in [VMware vSphere Virtual Infrastructure](#vm_virt_infrastructure)).
 
 
