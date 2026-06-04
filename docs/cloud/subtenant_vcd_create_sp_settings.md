@@ -3,8 +3,8 @@ title: "Step 2. Select Cloud Director User"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/subtenant_vcd_create_sp_settings.html"
-last_updated: "5/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 2. Select Cloud Director User

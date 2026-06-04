@@ -3,7 +3,7 @@ title: "Step 4. Finalize Instant Recovery Session"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_latest_finish.html"
-last_updated: "6/2/2026"
+last_updated: "6/3/2026"
 product_version: "13.0.2.29"
 ---
 

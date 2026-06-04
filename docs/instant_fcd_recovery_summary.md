@@ -3,7 +3,7 @@ title: "Step 9. Verify Instant FCD Recovery Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_summary.html"
-last_updated: "6/2/2026"
+last_updated: "6/3/2026"
 product_version: "13.0.2.29"
 ---
 

@@ -3,8 +3,8 @@ title: "Managing SP Backup Server"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_backup_server_manage.html"
-last_updated: "5/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Managing SP Backup Server
