@@ -3,16 +3,19 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ports_vprman.html"
-last_updated: "6/2/2026"
+last_updated: "6/3/2026"
 product_version: "13.0.2.29"
 ---
 
 # Ports
 
 
-For general requirements for ports that must be opened to ensure proper communication of the backup server with backup infrastructure components, see [Ports](used_ports.md).
-
 In addition to general port requirements applicable to a backup infrastructure components, the following network ports must be opened to enable proper communication of the Oracle database server and backup infrastructure components.
+
+|  |
+| --- |
+| Note |
+| * For general requirements for ports that must be opened to ensure proper communication of the backup server with backup infrastructure components, see [Ports](used_ports.md) for Veeam Backup & Replication. * The following port requirements apply to Veeam Plug-In for Oracle RMAN operating in the standalone mode. For more information on ports for Veeam Plug-Ins managed by Veeam Backup & Replication, see [Ports for Managed Veeam Plug-Ins](plan_and_manage_used_ports.md). |
 
 Ports
 

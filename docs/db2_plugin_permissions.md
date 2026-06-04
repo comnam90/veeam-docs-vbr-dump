@@ -3,22 +3,28 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_permissions.html"
-last_updated: "9/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Permissions
 
 
-For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
+In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
 
 * [Permissions for Veeam Plug-In](#vp)
 * [Permissions for Object Storage](#object)
 
+|  |
+| --- |
+| Note |
+| For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. |
+
+Permissions for Veeam Plug-In
+
 Permissions for Veeam Plug-In
 
 | Operation | Required Roles and Permissions |
-| --- | --- |
 | Installing and updating Veeam Plug-In | The account used for installing and updating Veeam Plug-In must have root privileges. |
 | Connecting to Veeam Backup & Replication, managing backups | * The account specified in the Veeam Plug-In configuration settings must be able to authenticate against the Veeam Backup & Replication server. For details, see [Configuring Plug-In](db2_configure.md). For enhanced security, we recommend creating a separate standard user that will be solely dedicated to performing the backup and restore operations.  * The account specified in the Veeam Plug-In configuration settings must be granted access rights on the Veeam backup repository where you want to store backups.   To learn how to grant permissions on Veeam repositories, see [Access and Encryption Settings on Backup Repositories](db2_repository_permissions.md).   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, see required permissions in [Configuring Plug-In](db2_configure.md). |
 
@@ -47,7 +53,7 @@ If you plan to back up data using such infrastructure configuration, make sure t
 
 |  |
 | --- |
-| { |
+| {   "iam:AttachUserPolicy",   "iam:CreateAccessKey",   "iam:CreatePolicy",   "iam:CreatePolicyVersion",   "iam:CreateUser",   "iam:DeleteAccessKey",   "iam:DeletePolicy",   "iam:DeletePolicyVersion",   "iam:DeleteUser",   "iam:DeleteUserPolicy",   "iam:DetachUserPolicy",   "iam:GetPolicy",   "iam:GetPolicyVersion",   "iam:GetUser",   "iam:GetUserPolicy",   "iam:ListAccessKeys",   "iam:ListAttachedUserPolicies",   "iam:ListPolicyVersions",   "iam:ListUserPolicies",   "iam:PutUserPolicy",   "iam:SetDefaultPolicyVersion",   "iam:SimulatePrincipalPolicy",   "iam:TagUser" } |
 
 S3 Compatible (Including IBM Cloud Object Storage, Wasabi Cloud Storage)
 

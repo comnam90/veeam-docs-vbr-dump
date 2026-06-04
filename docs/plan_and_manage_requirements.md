@@ -3,8 +3,8 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_requirements.html"
-last_updated: "3/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # System Requirements
@@ -23,9 +23,9 @@ A computer with databases you want to protect using Veeam Plug-In for Oracle RMA
 Computer with Veeam Plug-In for Oracle RMAN
 
 | Specification | Requirement |
-| OS | Veeam Plug-In for Oracle RMAN is supported for the following Microsoft Windows versions:  * Microsoft Windows Server 2025  * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2  Veeam Plug-In for Oracle RMAN is supported for the following x86\_64 versions of Linux distributions:  * SUSE Linux Enterprise Server 12 SP5, 15 SP3 and SP7 (x86 and x86\_64) * RHEL 8.4 – 9.x and 10.0 including Extended Update Support Add-On * Oracle Linux 7 – 9.x * CentOS 6.4 – 8.x: For non-production environments, as it is not officially supported by Oracle for their databases.  Note: Veeam Plug-In for Oracle RMAN in managed operation mode is not supported for Oracle Solaris and IBM AIX. |
+| OS | Veeam Plug-In for Oracle RMAN is supported for the following Microsoft Windows versions:   * Microsoft Windows Server 2025  * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Veeam Plug-In for Oracle RMAN is supported for the following x86\_64 versions of Linux distributions:   * SUSE Linux Enterprise Server 12 SP5, 15 SP3 and SP7 (x86 and x86\_64) * RHEL 8.4 – 9.x and 10.0 including Extended Update Support Add-On * Oracle Linux 7 – 9.x * CentOS 6.4 – 8.x: For non-production environments, as it is not officially supported by Oracle for their databases.   Note: Veeam Plug-In for Oracle RMAN in managed operation mode is not supported for Oracle Solaris and IBM AIX. |
 | Software | [For Microsoft Windows computers] Microsoft .NET Framework 4.6 is included in the Veeam Plug-In for Oracle RMAN Redistributable. During the deployment process, Veeam Backup & Replication checks whether Microsoft .NET Framework 4.6 is available on the target computer. If Microsoft .NET Framework 4.6 is missing, Veeam Backup & Replication will install the missing software automatically.  [For Linux computers] The protected computer must have FUSE libraries installed:   * [For SLES] libfuse2 * [For RHEL, Oracle Linux and CentOS] fuse-libs |
-| Oracle database | Veeam Plug-In for Oracle RMAN supports Standard and Enterprise Editions of the following Oracle Database versions:  * Oracle Database 23ai * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c * Oracle Database 11g Release 2  The Oracle database configuration must meet the following requirements:   * Oracle database must be in the OPEN state. * Oracle database must work in the ARCHIVELOG mode.   Notes:   * Oracle Express Edition (XE) is not supported. * Oracle databases residing in OS-level containerized environments (for example: Docker, Podman) are not supported. * Support for Oracle Database 23ai is limited to virtual machines in cloud deployments (for example: Oracle Cloud Infrastructure, Oracle Exadata Cloud) and Oracle Engineered Systems (for example: Oracle Exadata, Oracle Database Appliance). |
+| Oracle database | Veeam Plug-In for Oracle RMAN supports Standard and Enterprise Editions of the following Oracle Database versions:   * Oracle Database 23ai * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c * Oracle Database 11g Release 2   The Oracle database configuration must meet the following requirements:   * Oracle database must be in the OPEN state. * Oracle database must work in the ARCHIVELOG mode.   Notes:   * Oracle Express Edition (XE) is not supported. * Oracle databases residing in OS-level containerized environments (for example: Docker, Podman) are not supported. * Support for Oracle Database 23ai is limited to virtual machines in cloud deployments (for example: Oracle Cloud Infrastructure, Oracle Exadata Cloud) and Oracle Engineered Systems (for example: Oracle Exadata, Oracle Database Appliance). |
 | Oracle RMAN features | Veeam Plug-In for Oracle RMAN supports the following Oracle RMAN features:   * Veeam Plug-In will be registered as an SBT\_TAPE device. All Oracle RMAN functionality that is supported with the SBT\_TAPE device type will work. For example, Automatic Storage Management (Oracle ASM) and Container DBs (CDBs). * Veeam Plug-In supports Oracle Real Application Clusters (Oracle RAC). Other cluster databases are not supported. |
 
 Computer with Veeam Plug-In for SAP HANA
@@ -35,7 +35,7 @@ A computer with databases you want to protect using Veeam Plug-In for SAP HANA m
 Computer with Veeam Plug-In for SAP HANA
 
 | Specification | Requirement |
-| OS | Veeam Plug-In for SAP HANA supports 64-bit versions of the following distributions:   * SLES 15: SP3, SP4, SP5, SP6 and SP7 * SLES for SAP Applications 15: SP3, SP4, SP5, SP6 and SP7 * SLES 12 SP5  * SLES for SAP Applications 12 SP5 * RHEL 9 for SAP HANA: 9.0, 9.2, 9.4 and 9.6 * RHEL 8 for SAP HANA: 8.4, 8.6, 8.8 and 8.10 * RHEL 9 for SAP Solutions: 9.0, 9.2, 9.4 and 9.6 * RHEL 8 for SAP Solutions: 8.4, 8.6, 8.8 and 8.10   Note: Veeam Plug-In for SAP HANA in managed operation mode is not supported for Linux on Power. |
+| OS | Veeam Plug-In for SAP HANA supports 64-bit versions of the following distributions:   * SLES 15: SP3, SP4, SP5, SP6 and SP7 * SLES for SAP Applications 15: SP3, SP4, SP5, SP6 and SP7 * SLES 12 SP5  * SLES for SAP Applications 12 SP5 * RHEL 10 for SAP Solutions: 10.0 * RHEL 9 for SAP Solutions: 9.0, 9.2, 9.4 and 9.6 * RHEL 8 for SAP Solutions: 8.4, 8.6, 8.8 and 8.10   Note: Veeam Plug-In for SAP HANA in managed operation mode is not supported for Linux on Power. |
 | Software | The protected computer must have FUSE libraries installed:   * [For SLES] libfuse2 * [For RHEL] fuse-libs |
 | SAP HANA database | Veeam Plug-In for SAP HANA Veeam Plug-In for SAP HANA supports SAP HANA 2.0: SPS 02, SPS 03, SPS 04, SPS 05, SPS 06, SPS 07, SPS 08.  Notes:   * Only Backint version 1.0 is supported. * SAP HANA Express Edition is not supported. * To check whether an OS version is compatible with the SAP HANA release you want to use, see the [SAP HANA Administration Guide](https://launchpad.support.sap.com/#/notes/2235581) (requires an SAP ID). |
 
@@ -77,7 +77,7 @@ Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depen
 
 Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
 
-Veeam Backup & Replication version 13 (build 13.0.2.2067-1) comes with the following Veeam Plug-Ins stored in the ISO file:
+Veeam Backup & Replication version 13 (build 13.0.3.29-1-1) comes with the following Veeam Plug-Ins stored in the ISO file:
 
 * Veeam Plug-In for SAP HANA
 * Veeam Plug-In for Oracle RMAN

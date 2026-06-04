@@ -3,8 +3,8 @@ title: "Step 5. Specify Network Settings"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/hardware_plan_network.html"
-last_updated: "5/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Specify Network Settings

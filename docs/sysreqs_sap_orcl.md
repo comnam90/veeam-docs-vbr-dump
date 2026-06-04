@@ -3,8 +3,8 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sysreqs_sap_orcl.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # System Requirements
@@ -15,7 +15,7 @@ Before you start using Veeam Plug-In for SAP on Oracle, make sure the following 
 |  |
 | --- |
 | Note |
-| The following system requirements apply to Veeam Plug-In for SAP on Oracle operating in the standalone mode.  For more information on system requirements for Veeam Plug-In managed by Veeam Backup & Replication, see [System Requirements for Managed Veeam Plug-Ins](plan_and_manage_requirements.md#compvpso). |
+| The following system requirements apply to Veeam Plug-In for SAP on Oracle operating in the standalone mode. For more information on system requirements for Veeam Plug-Ins managed by Veeam Backup & Replication, see [System Requirements for Managed Veeam Plug-Ins](plan_and_manage_requirements.md#compvpso). |
 
 System Requirement
 

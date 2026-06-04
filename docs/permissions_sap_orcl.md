@@ -3,17 +3,22 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/permissions_sap_orcl.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # Permissions
 
 
-For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
+In addition to general port requirements, make sure that user accounts have permissions listed in the following subsections:
 
 * [Permissions for Veeam Plug-In](#vp)
 * [Permissions for Object Storage](#object)
+
+|  |
+| --- |
+| Note |
+| * For general requirements for permissions that must be provided to the user account to install and work with Veeam Backup & Replication, see [Permissions](required_permissions.md) for Veeam Backup & Replication. * The following permissions apply to Veeam Plug-In for SAP on Oracle operating in the standalone mode. For more information on permissions for Veeam Plug-Ins managed by Veeam Backup & Replication, see [Permissions for Managed Veeam Plug-Ins](plan_and_manage_permissions.md#sapo). |
 
 Permissions for Veeam Plug-In
 
@@ -49,7 +54,7 @@ If you plan to back up data using such infrastructure configuration, make sure t
 
 |  |
 | --- |
-| { |
+| {   "iam:AttachUserPolicy",   "iam:CreateAccessKey",   "iam:CreatePolicy",   "iam:CreatePolicyVersion",   "iam:CreateUser",   "iam:DeleteAccessKey",   "iam:DeletePolicy",   "iam:DeletePolicyVersion",   "iam:DeleteUser",   "iam:DeleteUserPolicy",   "iam:DetachUserPolicy",   "iam:GetPolicy",   "iam:GetPolicyVersion",   "iam:GetUser",   "iam:GetUserPolicy",   "iam:ListAccessKeys",   "iam:ListAttachedUserPolicies",   "iam:ListPolicyVersions",   "iam:ListUserPolicies",   "iam:PutUserPolicy",   "iam:SetDefaultPolicyVersion",   "iam:SimulatePrincipalPolicy",   "iam:TagUser" } |
 
 S3 Compatible (Including IBM Cloud Object Storage, Wasabi Cloud Storage)
 
