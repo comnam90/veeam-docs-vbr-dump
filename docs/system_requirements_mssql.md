@@ -3,14 +3,19 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_mssql.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/3/2026"
+product_version: "13.0.2.29"
 ---
 
 # System Requirements
 
 
 Before you start using Veeam Plug-In for Microsoft SQL Server, make sure the requirements listed in this section are met.
+
+|  |
+| --- |
+| Note |
+| The following system requirements apply to Veeam Plug-In for Microsoft SQL Server operating in the standalone mode. For more information on system requirements for Veeam Plug-Ins managed by Veeam Backup & Replication, see [System Requirements for Managed Veeam Plug-Ins](plan_and_manage_requirements.md#compvpsql). |
 
 System Requirements
 
