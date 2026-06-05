@@ -3,7 +3,7 @@ title: "Application-Aware Processing and Transaction Logs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_app_processing.html"
-last_updated: "6/3/2026"
+last_updated: "6/4/2026"
 product_version: "13.0.2.29"
 ---
 

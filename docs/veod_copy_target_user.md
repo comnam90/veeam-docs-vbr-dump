@@ -3,7 +3,7 @@ title: "Step 4. Specify Target User"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_copy_target_user.html"
-last_updated: "6/3/2026"
+last_updated: "6/4/2026"
 product_version: "13.0.2.29"
 ---
 
