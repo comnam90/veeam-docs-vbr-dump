@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_limitations.html"
-last_updated: "6/2/2026"
+last_updated: "6/4/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -32,7 +32,7 @@ When protecting tenant data, consider the following:
 
 * Veeam Backup for Microsoft Entra ID does not support backup of Microsoft Entra ID [tenants located in China](https://learn.microsoft.com/en-us/azure/china/), [Azure Government tenants](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-application#obtaining-your-government-tenant), [external tenants](https://learn.microsoft.com/en-us/entra/external-id/tenant-configurations) or [Azure Active Directory B2C tenants](https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview).
 * You cannot protect multiple tenants by one backup job. Also, you cannot protect the same tenant by multiple backup jobs.
-* Protection of conditional access policies and intune policies is excluded from all free licenses and from the Veeam Data Platform Foundation license package — to back up these tenant items, you must obtain the Veeam Data Platform Advanced or the Veeam Data Platform Premium license package. For more information, see section [Licensing](entra_id_licensing.md).
+* Protection of conditional access policies and intune policies is included into the Veeam Data Platform Advanced and Premium license packages only. For more information, see section [Licensing](entra_id_licensing.md).
 * Veeam Backup for Microsoft Entra ID does not support restore of [Microsoft Entra built-in roles](https://docs.azure.cn/en-us/entra/identity/role-based-access-control/permissions-reference), [distribution security groups](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-distributiongroup?view=exchange-ps) or [mail-enabled security groups](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 * By default, Veeam Backup for Microsoft Entra ID does not back up relationships between items of protected Microsoft Entra ID tenants and Azure management groups. To back up these relationships, you must perform additional configuration steps described in [this Veeam KB article](https://www.veeam.com/kb4683).
 * You cannot restore more than 1000 tenant items during one restore session. Also, you cannot restore multiple item types simultaneously.
@@ -42,7 +42,7 @@ Log Backup and Restore
 
 When protecting sign-in and audit logs, consider the following:
 
-* Protection of audit logs is excluded from all free licenses and from the Veeam Data Platform Foundation license package — to back up these logs, you must obtain the Veeam Data Platform Advanced or the Veeam Data Platform Premium license package. For more information, see section [Licensing](entra_id_licensing.md).
+* Log backup is included into the Veeam Data Platform Advanced and Premium license packages only. For more information, see section [Licensing](entra_id_licensing.md).
 * Protection of sign-in logs is not supported for [Microsoft Entra ID free license](entra_id_licensing.md) — with a free license, you can back up audit logs only.
 * Veeam Backup for Microsoft Entra ID does not support storing backed-up logs in multi-bucket repositories. For more information, see section [Object Storage Repository](object_storage_repository.md).
 * Veeam Backup for Microsoft Entra ID supports producing backups for only those logs that belong to tenants whose data the product already protects. Moreover, the most recent restore points must be created no earlier 30 days prior to the log backup.
