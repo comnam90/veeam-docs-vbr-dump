@@ -3,7 +3,7 @@ title: "Step 4. Specify Switchover Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_tas_specify_switchover_settings.html"
-last_updated: "6/3/2026"
+last_updated: "6/4/2026"
 product_version: "13.0.2.29"
 ---
 
