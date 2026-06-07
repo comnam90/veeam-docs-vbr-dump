@@ -3,7 +3,7 @@ title: "Performing Permanent Failover Retry"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_perform_perm_failover_retry.html"
-last_updated: "6/4/2026"
+last_updated: "6/5/2026"
 product_version: "13.0.2.29"
 ---
 

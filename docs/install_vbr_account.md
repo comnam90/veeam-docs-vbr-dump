@@ -3,7 +3,7 @@ title: "Step 7. Specify Service Account Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_account.html"
-last_updated: "6/4/2026"
+last_updated: "6/5/2026"
 product_version: "13.0.2.29"
 ---
 
