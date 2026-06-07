@@ -3,14 +3,19 @@ title: "Editing Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/editing_jobs_web.html"
-last_updated: "9/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/5/2026"
+product_version: "13.0.2.29"
 ---
 
 # Editing Job Settings
 
 
 After you add a backup job, you can edit its settings at any time. For example, you may want to change the scheduling settings or add VMs to the job.
+
+|  |
+| --- |
+| Note |
+| If you change the backup scope of an existing job, for example, switch from individual VMs to a cluster, datastore or tag, Veeam Backup & Replication preserves and continues the existing backup chain for VMs that have already been processed. Objects that are newly added to the job are treated as new and require a full backup during the next job session. Changes that you apply when the job is running take effect during the next job session. |
 
 Editing General Settings
 
