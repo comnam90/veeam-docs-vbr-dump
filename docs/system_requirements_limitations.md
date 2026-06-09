@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_limitations.html"
-last_updated: "6/3/2026"
+last_updated: "6/8/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -55,7 +55,8 @@ Consider the following requirements and limitations:
 
 * Names of port groups/segments/networks must be unique.
 
-* [For VMware vSphere] VMware NSX-T 2.3 or later is supported with N-VDS for VMware vSphere and VMware Cloud on AWS/Dell.
-* [For VMware vSphere] VMware NSX-T 3.0 or later is supported with VDS for VMware vSphere and VMware Cloud on AWS/Dell.
+* [For VMware vSphere] VMware NSX-T 2.X (starting from 2.3) is supported with N-VDS for VMware vSphere and VMware Cloud on AWS/Dell.
+* [For VMware vSphere] VMware NSX-T 3.X is supported with VDS for VMware vSphere and VMware Cloud on AWS/Dell.
+* [For VMware vSphere] VMware NSX 4.X (up to 4.2.3.2) and 9.0 are supported with VDS for VMware vSphere and VMware Cloud on AWS/Dell.
 
 
