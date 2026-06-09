@@ -3,8 +3,8 @@ title: "Step 6. Specify Backup Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_storage_vm.html"
-last_updated: "9/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/8/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 6. Specify Backup Storage Settings
@@ -29,7 +29,7 @@ If you plan to use the Backup from Storage Snapshots technology, see section [Re
 | Note |
 | Consider the following:   * If you change the repository after the job has already run, Veeam Backup & Replication suggests that you move the existing backups to the new repository. If you want to move the backups, see limitations and considerations in [Backup Move](backup_moving.md). * If you select an object storage repository or a scale-out backup repository which performance tier consists of object storage repositories, Veeam Backup & Replication will not provide the amount of free space in this repository since its capacity is constantly expanding. |
 
-1. You can map the job to a specific backup stored in the backup repository. Backup job mapping can be helpful if you have moved backup files to a new backup repository and want to point the job to existing backups in this new backup repository. You can also use backup job mapping if the configuration database gets corrupted and you need to reconfigure backup jobs.
+1. You can map the job to a specific backup available in the backup repository. Backup job mapping can be helpful if you have moved backup files to a new backup repository and want to point the job to existing backups in this new backup repository. You can also use backup job mapping if the configuration database gets corrupted and you need to reconfigure backup jobs.
 
 To map the job to a backup, click the Map backup link and select the backup in the backup repository. Backups can be easily identified by job names. To find the backup, you can also use the search field at the bottom of the window.
 
