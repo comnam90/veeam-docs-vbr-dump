@@ -3,7 +3,7 @@ title: "Step 5. Allocate Replication Resources"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user_compute_resources.html"
-last_updated: "6/3/2026"
+last_updated: "6/9/2026"
 product_version: "13.0.2.29"
 ---
 

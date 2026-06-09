@@ -3,7 +3,7 @@ title: "Step 6. Review Properties and Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_review.html"
-last_updated: "6/4/2026"
+last_updated: "6/8/2026"
 product_version: "13.0.2.29"
 ---
 
