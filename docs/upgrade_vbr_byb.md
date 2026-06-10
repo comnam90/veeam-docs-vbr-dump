@@ -3,8 +3,8 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "4/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Upgrade Checklist
@@ -36,16 +36,18 @@ System Requirements
 
 1. Make sure that all necessary permissions are granted. For information on permissions, see [Permissions for VMware vSphere](https://helpcenter.veeam.com/docs/vbr/permissions/cumulativepermissions.html?ver=13).
 2. Review the list of required [Trusted Root Certificates](trusted_root_certificates.md), and ensure all are installed.
-3. Do you have legacy per-machine backup format with single metadata file? Detach or upgrade such backups to a new format to proceed with the upgrade.
-4. Do you have legacy backup copy jobs? Switch your existing backup copy jobs to a supported mode before upgrading.
-5. Do you have nested repository paths? Configurations where one repository is located inside another are no longer supported.
-6. Do you use UNC path in export vbk wizard? Configurations with such settings are no longer supported.
-7. Do you have file copy jobs? The backup server can no longer be used as a destination for File Copy jobs. Update the configuration for these jobs before proceeding with the upgrade.
-8. Do you have Veeam Hardened Repository v2 added to the backup infrastructure? Consider upgrading Veeam Hardened Repository to the latest version using Veeam Infrastructure Appliance.
-9. Do you have the FIPS mode option enabled? Persistent components will be required for guest processing.
-10. Do you have trusted hosts hardening set to Manual? After the upgrade, open the backup console and make sure all your backup infrastructure servers are trusted.
-11. Do you have any jobs using the Transform previous backup chains into rollbacks option? This option has been removed from the product, and such jobs are no longer supported.
-12. The following features are no longer available in the product.
+3. The Veeam PowerShell module now requires PowerShell 7. If you run Veeam PowerShell scripts through a scheduler such as Windows Task Scheduler, update them to call the PowerShell 7 executable (pwsh.exe) instead of powershell.exe.
+4. Do you have legacy per-machine backup format with single metadata file? Detach or upgrade such backups to a new format to proceed with the upgrade.
+5. Do you have legacy backup copy jobs? Switch your existing backup copy jobs to a supported mode before upgrading.
+6. Do you have nested repository paths? Configurations where one repository is located inside another are no longer supported.
+7. Do you use UNC path in export vbk wizard? Configurations with such settings are no longer supported.
+8. Do you have file copy jobs? The backup server can no longer be used as a destination for File Copy jobs. Update the configuration for these jobs before proceeding with the upgrade.
+9. Do you have Veeam Hardened Repository v2 added to the backup infrastructure? Consider upgrading Veeam Hardened Repository to the latest version using Veeam Infrastructure Appliance.
+10. Do you have the FIPS mode option enabled? Persistent components will be required for guest processing.
+11. NTLM authentication is deprecated in Windows-based installations and discontinued in the Veeam Software Appliance, in favor of Kerberos. In environments where Kerberos is not available, install the Veeam Deployment Kit to keep certificate-based features such as persistent guest agents working.
+12. Do you have trusted hosts hardening set to Manual? After the upgrade, open the backup console and make sure all your backup infrastructure servers are trusted.
+13. Do you have any jobs using the Transform previous backup chains into rollbacks option? This option has been removed from the product, and such jobs are no longer supported.
+14. The following features are no longer available in the product.
 
 Deprecated features:
 
@@ -72,7 +74,10 @@ Integration with Veeam Management and Monitoring Products
 1. Are you using Veeam ONE to monitor your backup infrastructure? If yes, upgrade it first. Veeam ONE 13 supports monitoring of backup servers version 12 or later.
 2. Are you using Veeam Backup Enterprise Manager? If yes, start the upgrade procedure with this component. Veeam Backup & Replication should be upgraded after that. If you have a backup server installed on the same machine, upgrade it immediately after completing upgrade of the Veeam Backup Enterprise Manager server without restarting the machine. Otherwise, the [Veeam Configuration Database Connection Utility](dbconfig_utility.md) (DBConfig) utility will not work correctly for Veeam Backup & Replication.
 3. Are you using Veeam Backup Enterprise Manager server added to Veeam ONE? If yes, first upgrade Veeam ONE, second upgrade Veeam Backup Enterprise Manager, and third upgrade Veeam Backup & Replication.
-4. Are you using Veeam Cloud Connect? If yes, consider the following:
+
+Integration with Veeam Cloud Connect
+
+Are you using Veeam Cloud Connect? If yes, consider the following:
 
 * Check with your Cloud Connect service provider if they have already upgraded their system to at least the version you are upgrading to.
 * Ensure your Cloud Connect tenants use the supported Veeam product versions. The minimal supported tenant versions are: Veeam Backup & Replication 12.3.2.3617, Veeam Agent for Microsoft Windows 6.3.2, Veeam Agent for Linux 6.3.2, Veeam Agent for Mac 2.3.1.
@@ -141,5 +146,6 @@ You can disable only policies targeted at the cluster whose filter you want to u
 2. Ensure there are no active Veeam Recovery Orchestrator tasks.
 3. Perform the configuration backup, as described in [Running Configuration Backups Manually](vbr_config_manually.md).
 4. Ensure you have configuration backup encryption enabled, otherwise stored credentials will not be included in it. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md).
+5. Do you use File to Tape jobs? During the upgrade, manually added servers and sources are migrated to inventory objects (File Server or Unstructured Data Server). No action is required, but review the job sources after the upgrade.
 
 
