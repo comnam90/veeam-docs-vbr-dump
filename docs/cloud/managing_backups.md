@@ -3,7 +3,7 @@ title: "Managing Backups"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/managing_backups.html"
-last_updated: "6/3/2026"
+last_updated: "6/9/2026"
 product_version: "13.0.2.29"
 ---
 

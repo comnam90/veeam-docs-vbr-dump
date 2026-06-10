@@ -3,7 +3,7 @@ title: "Step 5. Specify Storage Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_storage.html"
-last_updated: "6/4/2026"
+last_updated: "6/10/2026"
 product_version: "13.0.2.29"
 ---
 
