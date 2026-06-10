@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Backup & Replication Console in Silent Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uninstall_console_answer_file.html"
-last_updated: "7/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Uninstalling Veeam Backup & Replication Console in Silent Mode
@@ -20,6 +20,7 @@ Before starting the uninstallation of the Veeam Backup & Replication console in 
 
 * If the user account that you use to run the unattended uninstallation is logged on the machine using the [network logon](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/windows-logon-scenarios#BKMK_NetworkLogon) method, the unattended uninstallation will fail. To avoid this, use an additional /SkipNetworkLogonErrors command line key. For example, it is required when the unattended uninstallation is started within a remote PowerShell session.
 * When configuring the answer file, remove or comment out the unused [Optional] parameter. Otherwise, the uninstallation session will fail.
+* To uninstall the console, use the installation files of the same build that is currently installed. The silent setup checks the installed product version against the version on the installation disk. If you patched the console after installing it from a GA ISO, the GA installer fails with error code 103 ("Another version of this product is already installed"). In that case, run the uninstallation from the files of the installed patch level, or uninstall the console through Programs and Features.
 
 Uninstalling Veeam Backup & Replication Console
 
@@ -57,16 +58,18 @@ Configuration Parameters
 
 The configuration file contains only the following parameter:
 
+Configuration Parameters
+
 | Parameter | Required? | Default | Description |
-| --- | --- | --- | --- |
 | REBOOT\_IF\_REQUIRED | No | 0 | Specify 1 if you want to reboot the machine where you uninstall the Veeam Backup & Replication console after the uninstallation finishes. Specify 0 if you do not want to reboot the machine. |
 
 Uninstallation Result Codes
 
 The uninstallation result is written into the uninstallation log file located at your selected log folder. It may show one of the following result codes:
 
+Uninstallation Result Codes
+
 | Result Code | Result |
-| --- | --- |
 | 0 | success |
 | 1603 | install failure |
 | 3010 | reboot required |
@@ -76,8 +79,9 @@ Uninstallation Error Codes
 
 The uninstallation error codes accompanied by their detailed description are displayed in the command line dialog. They can also be found in the UnattendedInstallationResult\_%DATE%\_%TIME%.xml file in the log folder (by default, C:\ProgramData\Veeam\Setup\Temp). You can use such an XML file for retrieving uninstallation results from the scripts or utilities that are used to run the uninstallation. The error message may show one of the following error codes:
 
+Uninstallation Error Codes
+
 | Error Code | Description |
-| --- | --- |
 | 2 | Uninstallation has been completed successfully. |
 | 11 | Unable to start the setup program, because machine reboot is pending. |
 | 101 | Failed to start the installer. |
