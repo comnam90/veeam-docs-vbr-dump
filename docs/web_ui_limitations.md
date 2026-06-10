@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Web UI Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/web_ui_limitations.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Backup & Replication Web UI Limitations
@@ -43,6 +43,10 @@ Alternative: Use the [Veeam Backup & Replication console](guest_file_recovery.md
 * The job wizard does not support configuring a secondary destination.
 
 Alternative: Create a [backup copy job](backup_copy_create.md).
+
+* Custom roles are not supported in the web UI, PowerShell, or REST API.
+
+Alternative: Use the [Veeam Backup & Replication console](configure_roles.md) instead.
 
 * The Install missing updates option in the Manage Updates group installs updates on Linux-based infrastructure components (Veeam Infrastructure Appliances), but not on the Linux-based backup server (Veeam Software Appliance). To update the backup server, use the [Veeam Updater](update_appliances.md).
 
