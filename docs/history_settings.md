@@ -3,8 +3,8 @@ title: "Specifying Session History Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/history_settings.html"
-last_updated: "7/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Specifying Session History Settings
@@ -23,6 +23,11 @@ You can specify session history settings for jobs performed on the backup server
 
 * Select Keep all sessions if you do not want to delete sessions.
 * Select Keep only last weeks if you want to keep sessions for a limited period of time. In the field, also specify this period in weeks.
+
+|  |
+| --- |
+| Note |
+| When you reduce the retention period, Veeam Backup & Replication does not remove outdated session records immediately. A background process tied to the job scheduler removes them shortly afterward, so expect a short delay rather than instant deletion. |
 
 ![Specifying Session History Settings](images/settings_history.webp)
 

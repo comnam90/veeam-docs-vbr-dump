@@ -3,7 +3,7 @@ title: "Step 2. Specify Media Pool Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_name.html"
-last_updated: "6/4/2026"
+last_updated: "6/10/2026"
 product_version: "13.0.2.29"
 ---
 

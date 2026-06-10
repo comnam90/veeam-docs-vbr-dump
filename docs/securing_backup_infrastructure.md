@@ -3,8 +3,8 @@ title: "Securing Backup Infrastructure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/securing_backup_infrastructure.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/5/2026"
+product_version: "13.0.2.29"
 ---
 
 # Securing Backup Infrastructure
@@ -36,6 +36,8 @@ For a Linux-based Veeam Backup & Replication server, allow only HTTPS connection
 | --- |
 | Note |
 | The account used for RDP access must not have local Administrator privileges on the jump server, and you must never use the saved credentials functionality for RDP access or any other remote console connections. To restrict users from saving RDP credentials, you can use Group Policies. For more information, see [this article](https://docs.microsoft.com/en-us/answers/questions/383902/how-to-prevent-windows-from-saving-rdp-connection.html). |
+
+* Restrict access to storage devices connected to the backup server. Inbound connections to storage devices must only be possible by authorized users connecting from trusted hosts.
 
 * Encrypt backup traffic. By default, Veeam Backup & Replication encrypts network traffic transferred between public networks. To ensure secure communication of sensitive data within the boundaries of the same network, encrypt backup traffic also in private networks. For more information, see [Enabling Traffic Encryption](enable_network_encryption.md).
 
@@ -70,7 +72,7 @@ To secure data stored in backups and replicas, consider the following recommenda
 * Encrypt data in backups. Use Veeam Backup & Replication built-in encryption to protect data in backups. For more information, see [Data Encryption](data_encryption.md).
 * Encrypt SMB traffic. If you use SMB shares in your backup infrastructure, [enable SMB signing](https://techcommunity.microsoft.com/t5/storage-at-microsoft/configure-smb-signing-with-confidence/ba-p/2418102) to prevent NTLMv2 relay attacks. Also, [enable SMB encryption](https://docs.microsoft.com/en-us/windows-server/storage/file-server/smb-security).
 * Enable immutability for backups. To protect backup files from being modified or deleted, you can make them immutable. For more information, see [Immutability for Backup Files](immutability.md).
-* Use offline media to keep backup files in addition to virtual storage. For more information, see [Backup Repositories with Rotated Drives](backup_repository_rotated.md) and [Tape Device Support](tape_device_support.md).
+* Use offline media to keep backup files in addition to virtual storage. For more information, see [Backup Repositories with Rotated Drives](backup_repository_rotated.md) and [Tape Device Support](tape_device_support.md)
 * Ensure security of mount servers. Machines performing roles of mount servers have access to the backup repositories and ESXi hosts which make them a potential source of vulnerability. Check that all required [security recommendations](general_security_considerations.md) are applied to these backup infrastructure components.
 
 Veeam Backup Enterprise Manager

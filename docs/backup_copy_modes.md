@@ -3,8 +3,8 @@ title: "Backup Copy Modes"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_modes.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/10/2026"
+product_version: "13.0.2.29"
 ---
 
 # Backup Copy Modes
@@ -27,7 +27,9 @@ The immediate copy mode is supported for the following backup types:
 * Backups created by Veeam Plug-In for Proxmox VE.
 
 * Backups created by Veeam Plug-In for Nutanix AHV.
-* Backups created by Veeam Backup for OLVM and RHV\*.
+* Backups created by Veeam Plug-In for Scale Computing HyperCore.
+* Backups created by Veeam Plug-in for HPE Morpheus VM Essentials.
+* Backups created by Veeam Plug-In for oVirt KVM\*.
 * Backups created by Veeam Backup for AWS.
 * Backups created by Veeam Backup for Microsoft Azure.
 * Backups created by Google Cloud.
@@ -47,7 +49,9 @@ The periodic copy mode is supported for the following backup types:
 * Backups created by Veeam Plug-In for Proxmox VE.
 
 * Backups created by Veeam Plug-In for Nutanix AHV.
-* Backups created by Veeam Backup for OLVM and RHV\*.
+* Backups created by Veeam Plug-In for oVirt KVM\*.
+* Backups created by Veeam Plug-in for HPE Morpheus VM Essentials.
+* Backups created by Veeam Plug-In for Scale Computing HyperCore.
 * Backups created by Veeam Backup for AWS.
 * Backups created by Veeam Backup for Microsoft Azure.
 * Backups created by Google Cloud.

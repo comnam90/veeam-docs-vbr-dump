@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_limitations.html"
-last_updated: "2/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/5/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -25,7 +25,8 @@ Backup Infrastructure
 
 Backup Source
 
-Veeam Backup & Replication does not support protection of workloads with 4K native disks (disks with 4096 bytes logical sector size).
+* Using replicas as a source for backup jobs is not recommended. Due to VMware vSphere Changed Block Tracking (CBT) behavior, incremental backups of replica VMs that have not been powered on may be inefficient.
+* Veeam Backup & Replication does not support the protection of workloads with 4K native disks (disks with 4096 bytes logical sector size).
 
 Backup Job Configuration
 

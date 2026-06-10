@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Backup & Replication in Silent Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uninstall_vbr_answer_file.html"
-last_updated: "6/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Uninstalling Veeam Backup & Replication in Silent Mode
@@ -57,16 +57,18 @@ Configuration Parameters
 
 The configuration file contains only the following parameter:
 
+Configuration Parameters
+
 | Parameter | Required? | Default | Description |
-| --- | --- | --- | --- |
 | REBOOT\_IF\_REQUIRED | No | 0 | Specify 1 if you want to reboot the machine where you uninstall Veeam Backup & Replication after the uninstallation finishes. Specify 0 if you do not want to reboot the machine. |
 
 Uninstallation Result Codes
 
 The uninstallation result is written into the uninstallation log file located at your selected log folder. It may show one of the following result codes:
 
+Uninstallation Result Codes
+
 | Result Code | Result |
-| --- | --- |
 | 0 | success |
 | 1603 | install failure |
 | 3010 | reboot required |
@@ -76,8 +78,9 @@ Uninstallation Error Codes
 
 The uninstallation error codes accompanied by their detailed description are displayed in the command line dialog. They can also be found in the UnattendedInstallationResult\_%DATE%\_%TIME%.xml file in the log folder (by default, C:\ProgramData\Veeam\Setup\Temp). You can use such an XML file for retrieving uninstallation results from the scripts or utilities that are used to run the uninstallation. The error message may show one of the following error codes:
 
+Uninstallation Error Codes
+
 | Error Code | Description |
-| --- | --- |
 | 2 | Uninstallation has been completed successfully. |
 | 11 | Unable to start the setup program, because machine reboot is pending. |
 | 101 | Failed to start the installer. |

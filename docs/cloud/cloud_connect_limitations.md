@@ -3,8 +3,8 @@ title: "Veeam Cloud Connect Backup"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_limitations.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Cloud Connect Backup
@@ -22,7 +22,7 @@ Note that cloud repositories backed by object storage systems are not supported 
 
 * Instant VM Recovery, multi-OS file-level restore, restore to Proxmox VE, restore to oVirt KVM, restore to Microsoft Azure and Amazon EC2 from backups in the cloud repository are not supported on the tenant side.
 
-If Nutanix AHV Plug-in is installed and a Nutanix AHV cluster is added in Veeam Backup & Replication, the tenant can perform instant recovery to Nutanix AHV form backups that reside in the cloud repository. For more information, see the [Instant Recovery](https://helpcenter.veeam.com/docs/vbahv/userguide/instant_recovery.html?ver=9) section in the Veeam Backup for Nutanix AHV User Guide.
+If Nutanix AHV Plug-in is installed and a Nutanix AHV cluster is added in Veeam Backup & Replication, the tenant can perform instant recovery to Nutanix AHV from backups that reside in the cloud repository. For more information, see the [Instant Recovery](https://helpcenter.veeam.com/docs/vbahv/userguide/instant_recovery.html?ver=9) section in the Veeam Backup for Nutanix AHV User Guide.
 
 Some restore operations are available on the SP side only, including Instant Recovery from VM backups and Veeam Agent backups, restore to Microsoft Azure and restore to Amazon EC2. To learn more, see [Restoring Data from Tenant Backups](cc_data_restore.md).
 
