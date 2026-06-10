@@ -3,8 +3,8 @@ title: "Step 5. Link Backup or Replication Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_joblink_vm.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/8/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Link Backup or Replication Job
@@ -17,7 +17,7 @@ You can link a backup or replication job to the SureBackup job or skip this step
 |  |
 | --- |
 | Note |
-| You cannot link backup copy jobs to the SureBackup job. |
+| You cannot link backup copy jobs to a SureBackup job. |
 
 Linking Backup or Replication Job
 
@@ -48,7 +48,7 @@ To remove an object from the list, select it and click Remove.
 |  |
 | --- |
 | Note |
-| Removed or deleted machines can be excluded from the SureBackup job using the From backups option. |
+| Removed or deleted machines cannot be excluded from a SureBackup job. |
 
 ![Step 5. Link Backup or Replication Job](images/surebackup_job_link_121.webp)
 
