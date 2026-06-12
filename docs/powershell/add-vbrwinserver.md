@@ -3,8 +3,8 @@ title: "Add-VBRWinServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrwinserver.html"
-last_updated: "7/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/11/2026"
+product_version: "13.0.2.29"
 ---
 
 # Add-VBRWinServer
@@ -15,8 +15,6 @@ Short Description
 Adds a Windows server to the backup infrastructure.
 
 Applies to
-
-Platform: VMware
 
 Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
 
@@ -48,8 +46,9 @@ This cmdlet adds a Windows server to the backup infrastructure.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the DNS name of the Windows server. | String | True | Named | False |
 | User | Specifies the user name you want to use for authenticating with the Windows server. | String | True | Named | False |
 | Password | Specifies the password you want to use for authenticating with the Windows server. | String | True | Named | False |
