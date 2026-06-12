@@ -3,8 +3,8 @@ title: "Set-VBRWinServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrwinserver.html"
-last_updated: "7/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/11/2026"
+product_version: "13.0.2.29"
 ---
 
 # Set-VBRWinServer
@@ -15,8 +15,6 @@ Short Description
 Modifies Windows server added to the backup infrastructure.
 
 Applies to
-
-Platform: VMware
 
 Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
 
@@ -53,8 +51,9 @@ This cmdlet modifies a Windows server added to the backup infrastructure.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies the Windows server which settings you want to modify. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | True (ByPropertyName, ByValue) |
 | User | Specifies a user name you want to use for authenticating with the Windows server. | String | False | Named | False |
 | Password | Specifies the password you want to use for authenticating with the Windows server. | String | False | Named | False |
