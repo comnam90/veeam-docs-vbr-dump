@@ -3,16 +3,14 @@ title: "Uninstalling Veeam Agent and Other Veeam Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computers_remove.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/11/2026"
+product_version: "13.0.2.29"
 ---
 
 # Uninstalling Veeam Agent and Other Veeam Components
 
 
 You can remove Veeam Agent and the following Veeam components installed on a protected computer as one operation:
-
-* Veeam Plug-Ins
 
 * [For Microsoft Windows and Linux computers] Veeam Transport Service
 * [For Microsoft Windows and Linux computers] Veeam OpenSSL
@@ -22,10 +20,13 @@ You can remove Veeam Agent and the following Veeam components installed on a pro
 
 * [For Microsoft Windows computers] Veeam CBT driver
 
+* [For Microsoft Windows computers] CDP agent
+* Veeam Plug-Ins
+
 |  |
 | --- |
 | TIP |
-| * To learn about Veeam Plug-Ins for enterprise applications, see [Database-Level Backup with Veeam Plug-Ins or MongoDB Backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications.html?ver=13#database-level-backup-with-veeam-plug-ins-or-mongodb-backup). * To learn about the Veeam Installer Service, Veeam Deployer Service and Veeam Transport Service, see [Rescan Job](agents_discovery_job.md). * To learn about the Veeam CBT driver, see [Installing Veeam CBT Driver](agents_protected_computers_driver.md). |
+| * To learn about the Veeam Installer Service, Veeam Deployer Service and Veeam Transport Service, see [Rescan Job](agents_discovery_job.md). * To learn about the Veeam CBT driver, see [Installing Veeam CBT Driver](agents_protected_computers_driver.md). * To learn about Veeam Plug-Ins for enterprise applications, see [Database-Level Backup with Veeam Plug-Ins or MongoDB Backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications.html?ver=13#database-level-backup-with-veeam-plug-ins-or-mongodb-backup). * To learn more about continuous data protection (CDP), see [Universal CDP to VMware vShpere](universal_cdp.md). |
 
 Before you start the uninstall process, consider the following:
 
@@ -46,12 +47,12 @@ Before you start the uninstall process, consider the following:
 
 * Prerequisite components installed and used by Veeam Agent are not removed during the uninstall process. You can remove the remaining components from the side of the computer from which you uninstalled Veeam Agent.
 
-To uninstall Veeam Agent, Veeam Plug-Ins and Veeam components:
+To uninstall Veeam Agent, Veeam Plug-Ins, CDP agent and Veeam components:
 
 1. Open the Inventory view.
 2. In the inventory pane, expand the Physical and Cloud Infrastructure node and select the necessary protection group.
 3. In the working area, select the necessary computer and click Uninstall Everything on the ribbon or right-click the computer and select Uninstall everything.
-4. In the displayed notification window, click Yes.
+4. In the confirmation window, click Yes.
 
 [![Uninstall all components](images/protected_computer_remove_all.webp)](images/protected_computer_remove_all.webp "Uninstall all components")
 
