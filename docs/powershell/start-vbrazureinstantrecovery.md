@@ -3,8 +3,8 @@ title: "Start-VBRAzureInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrazureinstantrecovery.html"
-last_updated: "8/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/5/2026"
+product_version: "13.0.2.29"
 ---
 
 # Start-VBRAzureInstantRecovery
@@ -35,9 +35,10 @@ The recovered VM runs from a backup and does not provide a fully functioning ser
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| RestorePoint | Specifies the restore point to which you want to recover the workload. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True |
+| RestorePoint | Specifies the restore point to which you want to recover the workload. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Subscription | Specifies the Microsoft Azure subscription. The cmdlet will recover the workload to this subscription. | Accepts the [VBRAzureSubscription](vbrazuresubscription.md) object. To get this object, run the [Get-VBRAzureSubscription](get-vbrazuresubscription.md) cmdlet. | True | Named | False |
 | Location | Specifies a geographic region to which you want to place the recovered workloads. | Accepts the VBRAzureLocation object. To get this object, run the [Get-VBRAzureLocation](get-vbrazurelocation.md) cmdlet. | True | Named | False |
 | VmSize | Specifies the Microsoft Azure VM configuration. The recovered workload will use this configuration template. | Accepts the [VBRAzureVMSize](vbrazurevmsize.md) object. To get this object, run the [Get-VBRAzureVMSize](get-vbrazurevmsize.md) cmdlet. | True | Named | False |
@@ -50,7 +51,7 @@ Parameters
 | ResourceGroup | Specifies the resource group. The recovered workload will use this restore group.  If you skip this parameter, the cmdlet will need to create a new resource group. Use the NewResourceGroupName parameter to create a new resource group. | Accepts the [VBRAzureResourceGroup](vbrazureresourcegroup.md) object. To get this object, run the [Get-VBRAzureResourceGroup](get-vbrazureresourcegroup.md) cmdlet. | False | Named | False |
 | NewResourceGroupName | Specifies the name of a new resource group. The cmdlet will create a new resource group with this name.  If you skip this parameter, use the ResourceGroup parameter to specify an existing resource group. | String | False | Named | False |
 | ApplianceStorageAccount | Specifies the storage account through which the recovered workload will communicated with the helper appliance. | Accepts the VBRAzureStorageAccount object. To get this object, run the [Get-VBRAzureStorageAccount](get-vbrazurestorageaccount.md) cmdlet. | False | Named | False |
-| NetworkSecurityGroup | Specifies the security group for the recovered workload. | Accepts the VBRNetworkSecurityGroup object. To get this object, run the [Get-VBRAzureNetworkSecurityGroup](get-vbrazurenetworksecuritygroup.md) cmdlet. | False | Named | False |
+| NetworkSecurityGroup | Specifies the security group for the recovered workload.  If you do not specify a network security group, Veeam Backup & Replication will automatically create a new group, allow RDP and SSH on it and connect network interfaces to it. For more information, see [Default Security Group Rules](https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_network.html?ver=13#default-security-group-rules). | Accepts the VBRNetworkSecurityGroup object. To get this object, run the [Get-VBRAzureNetworkSecurityGroup](get-vbrazurenetworksecuritygroup.md) cmdlet. | False | Named | False |
 | AllocatePublicIP | Defines that the cmdlet will assign a public IP to the recovered workload. | SwitchParameter | False | Named | False |
 | VerifyVMBoot | Defines that Veeam Backup & Replication checks if the recovered workload boots successfully.  Veeam Backup & Replication considers recovery as successful after receiving a response from the recovered workload. If the response is not received, Veeam Backup & Replication sends a warning in the recovery session. | SwitchParameter | False | Named | False |
 | Reason | Specifies a restore reason. | String | False | Named | False |

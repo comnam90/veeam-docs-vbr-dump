@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Plug-In and Other Veeam Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_uninstall_everything.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/11/2026"
+product_version: "13.0.2.29"
 ---
 
 # Uninstalling Veeam Plug-In and Other Veeam Components
@@ -13,7 +13,8 @@ product_version: "13.0.1.1071"
 You can uninstall all Veeam Plug-Ins and the following Veeam product components installed on a protected computer as one operation:
 
 * The veeam-openssl package
-* Veeam Agents
+* Veeam Agent
+* [For Microsoft Windows computers] CDP agent
 * [For Microsoft Windows computers] Veeam Installer Service
 * [For Linux computers] Veeam Deployer Service
 * Veeam Transport Service
@@ -23,7 +24,7 @@ This approach is helpful if Veeam Plug-Ins are installed on the protected comput
 |  |
 | --- |
 | Tip |
-| * To learn about Veeam Agents, see [Veeam Agent Backup](protect_comp.md). * For details on Veeam Installer Service, Veeam Deployer Service and Veeam Transport Service, see [Veeam Plug-In Management Infrastructure](management_infrastructure.md#agent). |
+| * To learn about Veeam Agents, see [Veeam Agent Backup](protect_comp.md). * For details on Veeam Installer Service, Veeam Deployer Service and Veeam Transport Service, see [Veeam Plug-In Management Infrastructure](management_infrastructure.md#agent).  * To learn more about continuous data protection (CDP), see [Universal CDP to VMware vShpere](universal_cdp.md). |
 
 Before you start the uninstall process, consider the following:
 
@@ -38,12 +39,12 @@ Before you start the uninstall process, consider the following:
 
 * Prerequisite components installed and used by Veeam Plug-In are not removed during the uninstall process. To remove the remaining components, use the built-in tools directly on this computer (for example, Microsoft Windows Control Panel on the Microsoft Windows computer).
 
-To uninstall Veeam Plug-Ins, Veeam Agents and Veeam product components:
+To uninstall Veeam Plug-Ins, Veeam Agent, CDP agent and Veeam components:
 
 1. Open the Inventory view.
 2. In the inventory pane, expand the Physical Infrastructure node and select the necessary protection group.
 3. In the working area, select the necessary computer and click Uninstall Everything on the ribbon or right-click the computer and select Uninstall everything.
-4. In the displayed notification window, click Yes.
+4. In the confirmation window, click Yes.
 
 [![Uninstall All Veeam Agents and Veeam Plug-ins](images/plugins_protected_computer_uninstall_all.webp)](images/plugins_protected_computer_uninstall_all.webp "Uninstall All Veeam Agents and Veeam Plug-ins")
 

@@ -3,7 +3,7 @@ title: "Step 2. Select Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_bak_multiple_tdl_select_databases.html"
-last_updated: "6/10/2026"
+last_updated: "6/11/2026"
 product_version: "13.0.2.29"
 ---
 

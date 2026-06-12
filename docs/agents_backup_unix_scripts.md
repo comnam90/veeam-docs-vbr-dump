@@ -3,8 +3,8 @@ title: "Backup Job Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_unix_scripts.html"
-last_updated: "11/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/10/2026"
+product_version: "13.0.2.29"
 ---
 
 # Backup Job Scripts
@@ -14,7 +14,7 @@ You can instruct Veeam Agent for Unix to run custom scripts within the backup jo
 
 Veeam Agent runs these scripts before the backup job starts and after the backup job completes. You can use pre-job and post-job scripts, for example, to quiesce an application for the time when the backup job session runs on the Veeam Agent computer.
 
-You can specify backup job script settings at the Guest Processing step of the New Agent Backup Job wizard. To learn more, see [Backup Job Scripts](agent_job_guest_scripts_unix.md).
+You can specify backup job script settings at the Guest Processing step of the New Agent Backup Job wizard. To learn more, see [Backup Job Scripts](agent_policy_guest_scripts_unix.md).
 
 During the backup job session, Veeam Backup & Replication uploads the scripts to each Veeam Agent computer added to the backup job and executes them on these computers.
 
