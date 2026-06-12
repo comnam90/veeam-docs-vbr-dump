@@ -3,7 +3,7 @@ title: "Working with Scale-Out Backup Repositories"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sobr_operations.html"
-last_updated: "5/28/2026"
+last_updated: "6/11/2026"
 product_version: "13.0.2.29"
 ---
 
