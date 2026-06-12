@@ -3,8 +3,8 @@ title: "Add-VBRLinux"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrlinux.html"
-last_updated: "12/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/11/2026"
+product_version: "13.0.2.29"
 ---
 
 # Add-VBRLinux
@@ -15,8 +15,6 @@ Short Description
 Adds a Linux server to the backup infrastructure.
 
 Applies to
-
-Platform: VMware
 
 Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
 
@@ -44,7 +42,7 @@ This cmdlet provides parameter sets that allow you to:
 
 Detailed Description
 
-This cmdlet adds a Linux server to the backup infrastructure.
+This cmdlet adds a Linux server to the backup infrastructure. To add a Veeam Infrastructure Appliance, use the set of parameters for the certificate-based authentication.
 
 |  |
 | --- |
@@ -53,8 +51,9 @@ This cmdlet adds a Linux server to the backup infrastructure.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies the DNS name or IP address of the Linux server. | String | True | 1 | False |
 | SSHUser | Specifies the user name you want to use for authenticating with the Linux server.  Note: To add a Linux host using an SSH key fingerprint, provide the Confirm parameter. | String | True | 2 | False |
 | SSHPassword | Specifies the password you want to use for authenticating with the Linux server.  Note: To add a Linux host using an SSH key fingerprint, provide the Confirm parameter. | String | True | 3 | False |
@@ -106,7 +105,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to add the 198.51.100.5 Linux server using an SSH key fingerprint. The cmdlet adds the Linux server with the following settings:   * The SSH port is set to 22. * The Confirm parameter is provided to verify the connection with the SSH key fingerprint.   |  | | --- | | Add-VBRLinux -Name "198.51.100.5" -SSHUser "Administrator" -SSHPassword "qwerty" -SSHFingerprint “9XREolvZA+LrXbblZ1nMAKLhTLFEYi3fHs+1+6F2Dak” -SSHPort 22 -Confirm  Confirm | |
+| This example shows how to add the 198.51.100.5 Linux server using an SSH key fingerprint. The cmdlet adds the Linux server with the following settings:   * The SSH port is set to 22. * The Confirm parameter is provided to verify the connection with the SSH key fingerprint.   |  | | --- | | Add-VBRLinux -Name "198.51.100.5" -SSHUser "Administrator" -SSHPassword "qwerty" -SSHFingerprint “9XREolvZA+LrXbblZ1nMAKLhTLFEYi3fHs+1+6F2Dak” -SSHPort 22 -Confirm  Confirm Are you sure you want to perform this action? Performing operation "Add-VBRLinux" on Target "198.51.100.5" "SSH key fingerprint: ssh-dss 1024 7a:64:8d:7d:12:72:e9:e1:28:42:94:51:55:65:13:7a Do you trust this server?". [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 5. Adding Linux Host With Specific Linux Component Using Credentials for Authentication
 
