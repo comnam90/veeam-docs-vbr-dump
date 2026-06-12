@@ -3,8 +3,8 @@ title: "Get-VBRSession"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrsession.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "6/11/2026"
+product_version: "13.0.2.29"
 ---
 
 # Get-VBRSession
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Returns jobs sessions.
+Returns job sessions.
 
 Applies to
 
@@ -67,12 +67,13 @@ This cmdlet returns sessions for a selected job.
 |  |
 | --- |
 | Important |
-| To get tape backup job sessions, tun the [Get-VBRTapeBackupSession](get-vbrtapebackupsession.md) cmdlet. |
+| To get tape backup job sessions, run the [Get-VBRTapeBackupSession](get-vbrtapebackupsession.md) cmdlet. |
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Job | Specifies the job for which you want to get sessions that have been run.  Note: This parameter does not accept VM copy and file copy job objects. | Accepts the [VBRJob](vbrjob.md) object. To get this object, run the [Get-VBRJob](get-vbrjob.md) cmdlet. | True | Named | True (ByProperty Name) |
 | Type | Specifies the type of the session. The cmdlet will return the session of this type. | EDbJobType | True | Named | True (ByPropertyName) |
 | ID | Specifies the ID of the session. The cmdlet will return the session with this ID. | Guid[] | False | Named | False |
