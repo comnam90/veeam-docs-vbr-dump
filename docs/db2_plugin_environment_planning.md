@@ -1,13 +1,13 @@
 ---
-title: "Environment Planning"
+title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_environment_planning.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/10/2026"
+product_version: "13.0.2.29"
 ---
 
-# Environment Planning
+# Veeam Environment Planning
 
 
 Before you deploy Veeam Plug-In, keep in mind the following requirements and limitations.
