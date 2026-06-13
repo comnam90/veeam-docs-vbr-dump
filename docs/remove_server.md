@@ -3,8 +3,8 @@ title: "Removing Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/remove_server.html"
-last_updated: "3/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/12/2026"
+product_version: "13.0.2.29"
 ---
 
 # Removing Servers
@@ -21,7 +21,7 @@ When you remove a server from the backup infrastructure, Veeam Backup & Replicat
 |  |
 | --- |
 | Note |
-| When you remove VMware Cloud Director from the backup infrastructure, vCenter Servers added to VMware Cloud Director are not removed. To remove the vCenter Server, in the inventory pane expand the vCenter Servers node, right-click the vCenter Server and select Remove.  You cannot remove vCenter Servers added to VMware Cloud Director until the VMware Cloud Director server is removed from the backup infrastructure. |
+| Consider the following:   * If the backup server is no longer available, and you did not have a chance to uninstall Veeam services and components from the managed servers, uninstall them manually. Use the standard application removal. * When you remove VMware Cloud Director from the backup infrastructure, vCenter Servers added to VMware Cloud Director are not removed. To remove the vCenter Server, in the inventory pane expand the vCenter Servers node, right-click the vCenter Server and select Remove.   You cannot remove vCenter Servers added to VMware Cloud Director until the VMware Cloud Director server is removed from the backup infrastructure. |
 
 To remove a server from the backup infrastructure:
 

@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_planning_sap_orcl.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/10/2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Environment Planning
@@ -70,26 +70,5 @@ Veeam Backup & Replication Users and Roles
 Veeam Plug-In for SAP on Oracle uses the Windows authentication methods of the Veeam Backup & Replication server to establish a connection to this server and to the backup target.
 
 If this user will be later changed manually, the new user must have at least the Veeam Backup Operator and Veeam Restore Operator rights within the Veeam Backup & Replication user management. To learn how to assign Veeam Backup & Replication roles, see [Users and Roles](users_roles.md).
-
-Parallel Data Streams and Backup Repository Task Slots
-
-Any parallel data stream started by SAP Backint will use one backup repository task slot. It is recommended to carefully plan repository task slots, so that SAP Backint can work with multiple channels in parallel.
-
-The following hardware resources are recommended based on tests on Skylake processors:
-
-* SAP on Oracle server: 1 CPU core and a minimum of 200 MB of RAM per currently used channel. Note that resource consumption on the SAP on Oracle server depends on hardware and Oracle settings.
-* Backup repository server: 1 CPU core and 1 GB of RAM per 5 currently used channels.
-
-These resources are recommended only if you use a dedicated backup repository for Veeam Plug-In backups. If you use the same backup repository for Veeam Plug-In backups and VM backups created by Veeam Backup & Replication or Veeam Agents, consider adding the hardware resources based on usual load on your backup repository. For details on hardware requirements for a backup repository, see [Backup Server System Requirements](system_requirements.md#repo).
-
-It is recommended to contact your Veeam system engineer to optimize the channel settings and resource allocation.
-
-It is recommended to use a separate backup repository for Veeam Plug-In backups.
-
-* Veeam Backup & Replication server: during manual metadata operations such as [import of backup files](import_backup_sap_orcl.md), the Veeam Backup & Replication server needs additional 15 GB of RAM per 1 million files located in the same backup job folder.
-
-Limitation for SAP Detection on Different Host
-
-Veeam Plug-In may not be able to detect SAP instances during the configuration if the Oracle Database and SAP central instance are running on different hosts. If you work with Veeam Plug-In in the managed mode, this configuration is not supported. If you work with Veeam Plug-In in the standalone operation mode, see [Configuring Plug-In for SAP on Oracle](configure_sap_orcl.md).
 
 

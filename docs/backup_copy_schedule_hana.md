@@ -3,7 +3,7 @@ title: "Step 6. Define Backup Copy Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_schedule_hana.html"
-last_updated: "6/11/2026"
+last_updated: "6/12/2026"
 product_version: "13.0.2.29"
 ---
 
