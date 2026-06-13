@@ -3,7 +3,7 @@ title: "Step 5. Specify Target Folder"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_copy_target_folder.html"
-last_updated: "6/11/2026"
+last_updated: "6/12/2026"
 product_version: "13.0.2.29"
 ---
 
