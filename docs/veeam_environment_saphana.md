@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_saphana.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/10/2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Environment Planning
@@ -70,65 +70,6 @@ To ignore network traffic encryption rules, do the following:
 | <PluginParameters IgnoreVBRNetworkRules="true" /> |
 
 For details on traffic encryption, see [Enabling Traffic Encryption](enable_network_encryption.md).
-
-SAP HANA Backup Channels and Veeam Repository Task Slots
-
-By default, SAP HANA uses one channel per data backup operation. You can configure SAP HANA to use additional channels. When multiple channels are used, SAP HANA distributes the data equally across available channels.
-
-Keep in mind that the number of SAP HANA channels must be equal to the number of available task slots in the repository. For details on task slot limitations, see [Limitation of Concurrent Tasks](limiting_tasks.md#task-limitation-for-backup-repositories).
-
-When using multiple channels in parallel, the data flow between SAP HANA and the source Veeam Data Mover is faster. This also improves overall backup performance. However, consider that using multiple channels uses more resources on the SAP HANA server, the network, the backup source, the target disk systems, and in the Veeam backup repository. To learn more about backup repository resource usage and limitations, see [Veeam Backup Repositories](sap_repos.md).
-
-To control the number of parallel channels used for each SAP HANA Backint instance, edit the parallel\_data\_backup\_backint\_channels parameter in the SAP HANA global.ini file. For detailed instructions on how to edit the number of channels used in parallel, see [this SAP article](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/18db704959a24809be8d01cc0a409681.html?locale=en-US).
-
-|  |
-| --- |
-| Note |
-| The application of multiple streaming channels applies to all data backup services larger than 128 GB. Data backup services smaller than 128 GB use only one channel. |
-
-If you use a dedicated backup repository for Veeam Plug-In backups, the following hardware resources are recommended and are based on tests on Skylake processors:
-
-* SAP HANA server: 1 CPU core and 200 MB of RAM per currently used channel.
-* Backup repository server: 1 CPU core and 1 GB of RAM per 5 currently used channels.
-
-If you use the same backup repository for Veeam Plug-In backups and backups created by Veeam Backup & Replication or Veeam Agents, consider adding the mentioned above hardware resources based on usual load on your backup repository.
-
-To learn more about the requirements for backup repositories, see [Backup Server System Requirements](system_requirements.md#repo).
-
-Additionally, consider the following limitations when using of multiple channels:
-
-* It is not recommended to use more than 64 channels in parallel as the overhead will reduce individual channel performance. Set the max\_recovery\_backint\_channels setting in global.ini to 64 or below depending on available hardware resources.
-* It is recommended to use a separate backup repository for Veeam Plug-In backups.
-* If you want to improve backup performance, the SAP HANA buffer must be increased for additional used channels. For details, consult with your SAP HANA database administrator.
-
-* SAP HANA can back up individual databases and tenants in parallel. To optimize resources, you can back up databases sequentially.
-* If there are not enough available repository task slots, SAP HANA waits till repository task slots become available.
-* During restore, the order of repository task slots is ignored, and channels are used as requested by SAP HANA.
-
-* Veeam Backup & Replication server: during manual metadata operations such as [import of backup files](import_backup_files.md), the Veeam Backup & Replication server needs additional 15 GB of RAM per 1 million files located in the same backup job folder.
-
-Example 1: Backing up all databases in parallel
-
-In this example, the system has 2 tenant databases, each database has 4 services. The databases are backed up in parallel. The SAP HANA channel setting is 6. The following channels are used:
-
-* Up to 4 channels are used by SYSTEMDB and its 4 services (all below 128 GB).
-* Up to 6 channels are used for the index service of the tenant database 1 (the database is bigger than 128 GB).
-* Up to 3 channels are used for the rest of the 3 remaining services of the tenant database 1 (all below 128 GB).
-* Up to 6 channels are used for the index service of the tenant database 2 (the database is bigger than 128 GB).
-* Up to 3 channels are used for the rest of the 3 remaining services of the tenant database 2 (all below 128 GB).
-* If the log backups are below 128 GB, you must reserve at least 3 channels for the log backup of SYSTEMDB, tenant database 1, and tenant database 2. These log backups are started automatically on their own schedule or when the maximum file size of the log file is reached.
-
-In total, 27 channels were used. For backup processes of all databases started in parallel, up to 27 task slots must be available.
-
-Example 2: Backup of all databases sequentially
-
-In this example, the system has 2 tenant databases, each database has 4 services. The databases are backed up sequentially. The SAP HANA channel setting is 6. The following maximum repository task slots and SAP channels are used:
-
-* Up to 6 channels are used for the index service of a tenant database (the database is bigger than 128 GB).
-* Up to 3 channels are used for the rest of the 3 remaining services of the same tenant database (all below 128 GB).
-* If the log backups are below 128 GB, you must reserve at least 3 channels for the log backup of SYSTEMDB, tenant database 1, and tenant database 2. These log backups are started automatically on their own schedule or when the maximum file size of the log file is reached. Assuming that the log file backups are below 128 GB and do not use additional channels.
-
-In total, 12 channels were used. For backup processes of sequential started database backups, up to 12 task slots must be available.
 
 Additional Files to Back Up
 
