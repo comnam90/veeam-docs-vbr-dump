@@ -3,7 +3,7 @@ title: "Adding External Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repositories_add.html"
-last_updated: "6/12/2026"
+last_updated: "6/15/2026"
 product_version: "13.0.2.29"
 ---
 

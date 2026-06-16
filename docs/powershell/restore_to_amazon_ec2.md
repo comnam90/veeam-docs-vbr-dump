@@ -3,7 +3,7 @@ title: "Restore to Amazon EC2"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restore_to_amazon_ec2.html"
-last_updated: "6/11/2026"
+last_updated: "6/15/2026"
 product_version: "13.0.2.29"
 ---
 
