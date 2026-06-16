@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_requirements.html"
-last_updated: "3/10/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -31,13 +31,23 @@ Infrastructure Components
 * When you upgrade Veeam Backup & Replication to the current version, you can postpone the I/O filter upgrade on vCenter Servers. Veeam Backup & Replication supports postponing the I/O filter upgrade for the minor versions within 13.x, and for 12.3.2.x or 12.3.1.x filter versions. It is recommended that all clusters in one vCenter Server use the same I/O filter version. Partially upgraded vCenter Servers have limited functionality. You cannot add VMs from non-upgraded hosts to CDP policies, commit failback and perform some other operations. You should keep the I/O filter at the latest version to reduce the risk of potential issues.
 * The maximum number of CDP policies that can be created on one backup server is 400.
 * If you upgrade the primary version of hosts in the vCenter Server (for example, from ESXi version 7 to 8), you must upgrade the I/O filter version on this server. Perform this upgrade either alongside the ESXi upgrade or immediately after it. For more information, see [Updating and Uninstalling I/O Filter](cdp_io_filter_remove.md).
+* [For ESXi 7 and 8] A cluster cannot run hosts with different major ESXi versions when the I/O filter is installed. The same I/O filter bundle cannot support ESXi 7.0 and ESXi 8.0 hosts at the same time.
+
+To upgrade hosts in a CDP cluster from ESXi version 7.x to 8.x:
+
+1. Disable the CDP policy that protect the cluster.
+2. Upgrade all hosts in the cluster to the new ESXi version, one by one.
+3. Launch the I/O Filter Management wizard and reinstall the filter on the cluster. For more information, see [Updating and Uninstalling I/O Filter](cdp_io_filter_remove.md).
+
+1. Enable the CDP policy.
+
 * If you add a new cluster or host to a vCenter Server after the I/O filter is installed on the existing clusters and hosts, you must [launch the](cdp_io_filter_install.md) [I/O Filter Management](cdp_io_filter_install.md) [wizard](cdp_io_filter_install.md). Make sure that check boxes are selected near all clusters where the I/O filter must be present and finish the wizard. After you finish the wizard, Veeam Backup & Replication requests the vCenter Server to install the I/O filter (if required), and to configure it.
 
 Virtual Machines
 
 * Sizes of all VM disks must be set as integer values.
 
-* Veeam Backup & Replication does not support protection of workloads with 4K native disks (disks with 4096 bytes logical sector size).
+* Veeam Backup & Replication does not support the protection of workloads with 4K native disks (disks with 4096 bytes logical sector size).
 * VMs that you plan to protect must not have snapshots at the moment the CDP policy starts for the first time. For example, if a VM is already added to a backup job, make sure that the scheduled backup session does not overlap with the CDP policy first run.
 * The hardware versions of VMs that you plan to protect must be supported on the target cluster.
 
@@ -53,9 +63,9 @@ Virtual Machines
 * The maximum number of long-term restore points per disk is 95.
 * For VMs encrypted on VMware side, consider the following:
 
-+ Make sure that the Allow I/O filters before encryption parameter is set to True for the VM storage policy component. For more details, see [VMware vSphere documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-1DA70011-BCDE-45F6-AA28-7E486144ED0E.html).
-+ To create encrypted CDP policy, select the encrypted datastore at the Destination step of the wizard. For more information, see [Creating CDP Policies](cdp_policy_create.md).
-+ Encryption for transaction log files that contain incremental changes for disks is not supported. For more information, see [CDP Replication Chain](cdp_replica_chain.md).
+* Make sure that the Allow I/O filters before encryption parameter is set to True for the VM storage policy component. For more details, see [VMware vSphere documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-1DA70011-BCDE-45F6-AA28-7E486144ED0E.html).
+* To create encrypted CDP policy, select the encrypted datastore at the Destination step of the wizard. For more information, see [Creating CDP Policies](cdp_policy_create.md).
+* Encryption for transaction log files that contain incremental changes for disks is not supported. For more information, see [CDP Replication Chain](cdp_replica_chain.md).
 
 Replicas
 
