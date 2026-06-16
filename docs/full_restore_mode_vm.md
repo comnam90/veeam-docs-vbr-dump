@@ -3,8 +3,8 @@ title: "Step 4. Select Restore Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/full_restore_mode_vm.html"
-last_updated: "1/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 4. Select Restore Mode
@@ -18,11 +18,11 @@ At the Restore Mode step of the wizard, choose the necessary restore mode and ba
 
 During restore to the original location, Veeam Backup & Replication restores only those disks that are included in the backup file. This means that after the restore finishes, you do not have to update existing jobs which process the original VMs.
 
-* Select Restore to a new location, or with different settings to restore VMs to a different location or with different settings (such as VM location, network settings, format of restored virtual disks and so on). If this option is selected, the Full VM Restore wizard will include additional steps for customizing VMs settings.
+* Select Restore to a new location, or with different settings to restore VMs to a different location or with different settings (such as VM location, network settings, format of restored virtual disks and so on). If this option is selected, the Entire VM Restore wizard will include additional steps for customizing VMs settings.
 
 During restore to a new location, Veeam Backup & Replication creates new VMs. If you want to process the restored VMs, you must edit existing jobs or create new jobs to process the restored VMs. If you restore VMs with the same name and to the same folder as the original VMs, Veeam Backup & Replication deletes the original VMs. In this case, you must edit existing jobs to exclude original VMs from them.
 
-* Select Staged restore to run an executable script for VMs before restoring them to the production environment. If this option is selected, the Full VM Restore wizard will include an additional step for customizing staged restore settings.
+* Select Staged restore to run an executable script for VMs before restoring them to the production environment. If this option is selected, the Entire VM Restore wizard will include an additional step for customizing staged restore settings.
 
 During staged restore to the original location, that is, when you leave the original settings on the next steps of the wizard, Veeam Backup & Replication removes the original VMs. However, Veeam Backup & Replication automatically updates the existing jobs to process the restored VMs and to exclude the original VMs.
 

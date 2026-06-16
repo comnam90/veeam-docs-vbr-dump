@@ -3,8 +3,8 @@ title: "Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_rman_overview.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "5/29/2026"
+product_version: "13.0.2.29"
 ---
 
 # Overview
@@ -26,7 +26,7 @@ Veeam Plug-In uses the backup and restore functionality of RMAN and transfers ba
 
 * If you want the Oracle database administrator to fully control the backup and recovery processes.
 * If you want to use existing Oracle RMAN scripts or external schedulers.
-* If you use Real Applications Clusters (Oracle RAC).
+* If you want to back up Oracle database that operate in a cluster. For example, you use Real Applications Clusters (Oracle RAC). For details, see [Support for Clusters](oracle_rman_overview_clusters.md).
 * If you use Automatic Storage Management (Oracle ASM) disks on a physical server.
 
 Veeam Plug-In functions as an agent between Oracle RMAN and the Veeam backup repository. With the configured Veeam Plug-In, the default backup device type is changed and gives control over backup media management to Veeam Plug-In. Veeam Plug-In compresses and transfers database backups to a backup repository connected to Veeam Backup & Replication. For details, see [How Veeam Plug-In for Oracle RMAN Works](hiw_rman_plugin.md).

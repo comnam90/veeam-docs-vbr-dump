@@ -3,8 +3,8 @@ title: "Get-VBRCDPReplica"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcdpreplica.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Get-VBRCDPReplica
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Get-VBRCDPReplica [-Name <string[]>] [-Type {Local | Cloud | Tenant | CloudvCD}]  [<CommonParameters>] |
+| Get-VBRCDPReplica [-Name <string[]>] [-Type {Local | Cloud | Tenant | CloudvCD}] [<CommonParameters>] |
 
 * Get replicas by IDs of the workloads protected by CDP.
 
 |  |
 | --- |
-| Get-VBRCDPReplica [-Id <guid[]>]  [<CommonParameters>] |
+| Get-VBRCDPReplica [-Id <guid[]>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -40,10 +40,11 @@ This cmdlet returns CDP replicas created by CDP policies including Cloud Directo
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies an array of names of workloads protected by CDP. The cmdlet will return a list of replicas of the workloads with these names. | String[] | False | Named | True (ByValue, ByPropertyName) |
-| Type | Specifies which type of replicas to get:   * Local: use this option to get local CDP and Cloud Director CDP replicas. The cmdlet will return replicas created not using Cloud Connect. * Tenant: use this option to get CDP replicas available on the tenant side. The cmdlet will return replicas created using Cloud Connect. * Cloud: use this option to get CDP replicas available on the Service Provider side. The cmdlet will return replicas created using Cloud Connect during the CDP to VMware scenario. * CloudvCD: use this option to get CDP replicas available on the Service Provider side. The cmdlet will return replicas created using Cloud Connect during the CDP to VMware Cloud Director scenario. | VBRReplicaType | False | Named | False |
+| Type | Specifies which type of replicas to get:   * Local: use this option to get local CDP and Cloud Director CDP replicas. The cmdlet will return replicas created not using Cloud Connect. * Tenant: use this option to get CDP replicas available on the Service Provider side. The cmdlet will return replicas created using Cloud Connect. * Cloud: use this option to get CDP replicas available on the tenant side. The cmdlet will return replicas created using Cloud Connect during the CDP to VMware scenario. * CloudvCD: use this option to get CDP replicas available on the tenant side. The cmdlet will return replicas created using Cloud Connect during the CDP to VMware Cloud Director scenario. | VBRReplicaType | False | Named | False |
 | Id | Specifies an array of IDs of workloads protected by CDP. The cmdlet will return a list of replicas of the workloads with these IDs. | Guid[] | False | Named | True (ByValue, ByPropertyName) |
 
 <CommonParameters>

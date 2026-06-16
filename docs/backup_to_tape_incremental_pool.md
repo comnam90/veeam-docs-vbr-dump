@@ -3,7 +3,7 @@ title: "Step 5. Choose Media Pool for Incremental Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_incremental_pool.html"
-last_updated: "6/12/2026"
+last_updated: "6/15/2026"
 product_version: "13.0.2.29"
 ---
 
