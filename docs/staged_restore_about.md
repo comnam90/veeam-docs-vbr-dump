@@ -3,20 +3,20 @@ title: "Staged Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/staged_restore_about.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/15/2026"
+product_version: "13.0.2.29"
 ---
 
 # Staged Restore
 
 
-Staged restore allows you to run an executable script for VMs before recovering them to the production environment. Staged restore is a part of the entire VM restore operations. To perform staged restore, you must select the Staged Restore mode in the [Full VM Restore](performing_full_recovery.md) wizard and specify [staged restore settings](full_restore_staged_vm.md).
+Staged restore allows you to run an executable script for VMs before recovering them to the production environment. Staged restore is a part of the entire VM restore operations. To perform staged restore, you must select the Staged Restore mode in the [Entire VM Restore](performing_full_recovery.md) wizard and specify [staged restore settings](full_restore_staged_vm.md).
 
 Staged restore can help you ensure that recovered VMs do not contain any personal or sensitive data. For example, you can instruct Veeam Backup & Replication to run a [Windows PowerShell script](https://docs.microsoft.com/en-us/powershell/module/activedirectory/remove-aduser?view=windowsserver2022-ps) that removes Active Directory users:
 
 |  |
 | --- |
-| $UserName = "John.Smith"  $ADUser = Get-ADUser -Filter 'Name -like $UserName'  if (!$ADUser)     {         [Environment]::Exit(1)     }  Remove-ADUser -Identity $UserName -Confirm:$false |
+| $UserName = "John.Smith"  $ADUser = Get-ADUser -Filter 'Name -like $UserName'  if (!$ADUser)  {  [Environment]::Exit(1)  }  Remove-ADUser -Identity $UserName -Confirm:$false |
 
 |  |
 | --- |
