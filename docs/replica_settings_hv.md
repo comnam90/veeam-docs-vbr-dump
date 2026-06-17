@@ -3,7 +3,7 @@ title: "Step 10. Specify Replication Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_settings_hv.html"
-last_updated: "6/15/2026"
+last_updated: "6/16/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,7 +21,7 @@ At the Job Settings step of the wizard, specify a backup repository for storing 
 
 1. In the Replica name suffix field, enter a suffix that will be added to the source VM names. To register a VM replica on the target host, Veeam Backup & Replication appends the specified suffix to the name of the source VMs.
 
-1. In the Restore points to keep field, specify the number of restore points that the replication job must maintain. Due to Hyper-V restrictions on the number of checkpoints, the maximum number of restore points for VM replicas is limited to 47. When the specified number is exceeded, Veeam Backup & Replication removes the earliest restore points.
+1. In the Restore points to keep field, specify the number of restore points that the replication job must maintain. The maximum number of restore points for VM replicas is limited to 28. When the specified number is exceeded, Veeam Backup & Replication removes the earliest restore points.
 
 ![Step 10. Specify Replication Job Settings](images/hv_replica_job_settings.webp)
 
