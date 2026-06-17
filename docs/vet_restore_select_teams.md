@@ -3,7 +3,7 @@ title: "Step 4. Select Teams"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_restore_select_teams.html"
-last_updated: "6/15/2026"
+last_updated: "6/16/2026"
 product_version: "13.0.2.29"
 ---
 
