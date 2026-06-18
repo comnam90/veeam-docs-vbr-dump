@@ -3,7 +3,7 @@ title: "Removing Organizations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_removing_database.html"
-last_updated: "6/15/2026"
+last_updated: "6/17/2026"
 product_version: "13.0.2.29"
 ---
 
