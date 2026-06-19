@@ -3,7 +3,7 @@ title: "Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_kit.html"
-last_updated: "6/1/2026"
+last_updated: "6/18/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -34,7 +34,7 @@ Deployment Kit Availability
 
 * Pre-installed by default:
 
-The Deployment Kit is pre-installed with all JeOS (Just enough Operating System) infrastructure components. If you deploy a JeOS-based Veeam component, you only need to pair it with Veeam Backup & Replication. No additional installation is required.
+The Deployment Kit is pre-installed with all Veeam Infrastructure Appliance components. If you deploy a Veeam Infrastructure Appliance, you only need to pair it with Veeam Backup & Replication. No additional installation is required.
 
 * Manual installation required:
 
@@ -49,7 +49,7 @@ For the following components, you can manually install the Deployment Kit:
 |  |
 | --- |
 | Note |
-| The Deployment Kit cannot be used to connect to remote Linux servers that are not deployed from the Veeam JeOS ISO file. When adding such servers to the backup infrastructure, you must use the SSH credentials option at the [Access](linux_server_ssh.md) step of the New Linux Server wizard. |
+| The Deployment Kit cannot be used to connect to remote Linux servers that are not deployed from the Veeam Infrastructure Appliance ISO file. When adding such servers to the backup infrastructure, you must use the SSH credentials option at the [Access](linux_server_ssh.md) step of the New Linux Server wizard. |
 
 Certificate Lifecycle
 
