@@ -3,8 +3,8 @@ title: "ExaGrid"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_exgrid.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/18/2026"
+product_version: "13.0.2.29"
 ---
 
 # ExaGrid
@@ -82,8 +82,9 @@ To determine which ports must be used, go to the Veeam EDM Container page on the
 
 Typically, the ports are as follows.
 
+Configuration on Veeam Backup & Replication Side
+
 |  | Installer Service | Data Mover Service | Data Transfer |
-| --- | --- | --- | --- |
 | Container 1  Note: If you use the first container, ports are defined automatically. You can skip the port specification. | 6160 | 6162 | 2500-3300 |
 | Container 2 | 13360 | 13362 | 12500-13300 |
 | Container 3 | 14360 | 14362 | 13500-14300 |
