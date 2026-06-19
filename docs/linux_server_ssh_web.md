@@ -3,8 +3,8 @@ title: "Step 3. Specify Credentials and SSH Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_server_ssh_web.html"
-last_updated: "12/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/18/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 3. Specify Credentials and SSH Settings
@@ -14,7 +14,7 @@ At the Access step of the wizard, provide credentials for the service console co
 
 1. Select the authentication method:
 
-* Connect using certificate-based authentication — select this option if the Linux server is a host deployed from Veeam JeOS image.
+* Connect using certificate-based authentication — select this option if the Linux server is a host deployed from the Veeam Infrastructure Appliance ISO.
 
 With this method, no user name or password is required; authentication is performed using certificates.
 
