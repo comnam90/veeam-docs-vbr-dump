@@ -3,7 +3,7 @@ title: "Mount Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
-last_updated: "5/26/2026"
+last_updated: "6/18/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -85,7 +85,7 @@ Before you assign the role of a mount server, check the following requirements a
 * For Linux mount servers, consider the following:
 
 * The Linux server must have the libmsi1 and ntfs-3g packages installed.
-* Veeam Infrastructure Appliance deployed from Veeam Backup & Replication JeOS ISO file does not require any additional installations and is ready to use. For more information, see [Installing Veeam Infrastructure Appliance with ISO](linux_infrastructure_appliance_install.md).
+* Veeam Infrastructure Appliance does not require any additional installations and is ready to use. For more information, see [Installing Veeam Infrastructure Appliance with ISO](linux_infrastructure_appliance_install.md).
 * Veeam Software Appliance and Veeam Infrastructure Appliance do not support the installation of third-party software. If you plan to use the [antivirus scan feature for secure restore](secure_restore_antivirus.md), make sure the Linux mount server role is assigned to a different Linux machine.
 
 * The following features require a Microsoft Windows mount server and may fail if the Windows mount server or the default Windows mount server is not configured:
