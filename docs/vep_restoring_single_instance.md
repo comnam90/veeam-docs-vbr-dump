@@ -3,7 +3,7 @@ title: "Restoring Single Instance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restoring_single_instance.html"
-last_updated: "6/18/2026"
+last_updated: "6/19/2026"
 product_version: "13.0.2.29"
 ---
 

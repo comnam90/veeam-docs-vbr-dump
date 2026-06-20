@@ -3,7 +3,7 @@ title: "RPO Warning Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_rpo_monitor_hana.html"
-last_updated: "6/18/2026"
+last_updated: "6/19/2026"
 product_version: "13.0.2.29"
 ---
 
