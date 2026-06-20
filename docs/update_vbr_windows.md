@@ -3,8 +3,8 @@ title: "Updating Veeam Backup & Replication on Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_vbr_windows.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/19/2026"
+product_version: "13.0.2.29"
 ---
 
 # Updating Veeam Backup & Replication on Windows
@@ -15,7 +15,7 @@ Apart from major version releases of Veeam Backup & Replication (for example, 13
 |  |
 | --- |
 | Note |
-| During the update procedure, Veeam Backup & Replication may recreate Windows Firewall rules with default settings. If you have manually modified Windows Firewall rules before installing a new cumulative patch, reapply those modifications after the update. |
+| During the update procedure, Veeam Backup & Replication resets the rules in the Veeam Networking Windows Firewall group to default settings. If you have manually modified these rules, reapply those modifications after the update. |
 
 In This Section
 
