@@ -3,8 +3,8 @@ title: "Performing Initial Security Officer Login"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_users_security_officer.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/19/2026"
+product_version: "13.0.2.29"
 ---
 
 # Performing Initial Security Officer Login
@@ -21,6 +21,7 @@ When you first log in to the Veeam Host Management as a Security Officer, perfor
 * 1 numeric character.
 * 1 special character.
 * No more than 3 characters of the same class in a row. For example, more than 3 lowercase or 3 numerical characters in sequence.
+* The new password must be different from the one specified in the [Initial Configuration wizard](deployment_linux_iso_install_security_officer.md).
 
 [![Performing Initial Security Officer Login](images/hmc_so_intial_setup_new_pass.webp)](images/hmc_so_intial_setup_new_pass.webp)
 
