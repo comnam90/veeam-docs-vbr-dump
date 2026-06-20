@@ -3,8 +3,8 @@ title: "Generate-VBRBackupServerCertificate"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/generate-vbrbackupservercertificate.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/19/2026"
+product_version: "13.0.2.29"
 ---
 
 # Generate-VBRBackupServerCertificate
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Generate-VBRBackupServerCertificate -Name <String>  [-WhatIf] [-Confirm] [<CommonParameters>] |
+| Generate-VBRBackupServerCertificate -Name <String> [-WhatIf] [-Confirm] [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,8 +32,9 @@ To assign the certificate to the cloud gateways, run the [Add-VBRCloudGatewayCer
 
 Parameters
 
+Detailed Description
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies a friendly name for the self-signed TLS certificate. | String | True | Named | False |
 | WhatIf | Defines that the cmdlet will write a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
 | Confirm | Defines that the cmdlet will display a prompt that asks if you want to continue running the command. | SwitchParameter | False | Named | False |
@@ -54,6 +55,6 @@ This command generates a TLS certificate in Veeam Backup & Replication.
 
 |  |
 | --- |
-| Add-VBRBackupServerCertificate -Name "veeam-bk01.tech.local" |
+| Generate-VBRBackupServerCertificate -Name "veeam-bk01.tech.local" |
 
 
