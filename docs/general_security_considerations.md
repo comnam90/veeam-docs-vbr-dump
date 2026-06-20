@@ -3,8 +3,8 @@ title: "General Security Considerations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_security_considerations.html"
-last_updated: "11/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/19/2026"
+product_version: "13.0.2.29"
 ---
 
 # General Security Considerations
@@ -62,6 +62,11 @@ To secure Microsoft Windows-based components in your backup infrastructure, cons
 * Regularly install the latest operating system and security updates for Microsoft Windows. To prevent a negative impact on the production environment, develop an update management strategy.
 
 * Turn on Microsoft Defender Firewall with Advanced Security. Set up rules for inbound and outbound connections according to your infrastructure and Microsoft best practices. For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+
+|  |
+| --- |
+| Note |
+| During the update procedure, Veeam Backup & Replication resets the rules in the Veeam Networking Windows Firewall group to default settings. If you have manually modified these rules, reapply those modifications after the update. |
 
 * Disable remote services if they are not needed:
 
