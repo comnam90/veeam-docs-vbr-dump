@@ -3,7 +3,7 @@ title: "Backup Copy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/backupcopy.html"
-last_updated: "6/15/2026"
+last_updated: "6/19/2026"
 product_version: "13.0.2.29"
 ---
 
