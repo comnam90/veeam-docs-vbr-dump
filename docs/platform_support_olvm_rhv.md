@@ -3,8 +3,8 @@ title: "oVirt KVM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_olvm_rhv.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/30/2026"
+product_version: "13.0.2.29"
 ---
 
 # oVirt KVM
@@ -54,13 +54,13 @@ The following table lists compatible versions of Veeam Backup & Replication and 
 Version Compatibility
 
 | Product Release | Veeam Plug-In for oVirt KVM Build | Veeam Backup & Replication Build |
-| 7 | 13.7.0.473 | 13.0.1.1071 |
+| 7 | 13.7.2.9 (recommended) 13.7.1.10 13.7.0.473 | 13.0.2.29 (recommended) 13.0.1.2067 13.0.1.1071 13.0.1.180 |
 | 6.2 | 12.6.2.6 | 12.3.2.3617 |
 | 6.1 | 12.6.1.4 | 12.3.1.1139 |
 | 6.0 | 12.6.0.166 | 12.3.0.310 |
 | 5.0 | 12.5.0.299 | 12.2.0.334 |
 | 4.1 | 12.4.1.45 | 12.1.2.172 |
-| 4.0 | 12.4.0.385 | 12.1.0.2131 |
+| 4.0 | 12.4.0.385 | 12.1.0.2131 12.1.1.56 |
 | 3b | 12.2.3.19 | 12.0.0.1420 |
 | 3a | 12.1.3.431 |
 | 3.0 | 12.0.3.412 |
