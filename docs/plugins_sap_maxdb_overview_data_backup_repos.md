@@ -3,8 +3,8 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_data_backup_repos.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Backup Repositories
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 Veeam Plug-Ins store backup files in repositories added to the Veeam Backup & Replication infrastructure. In this section, you can find the list of supported backup repositories and limitations for Veeam Plug-In backups.
 
-Before you start performing operations on backup repositories within the Veeam Backup & Replication infrastructure, consider that you need to set the access permissions for each repository. For details, see [Access and Encryption Settings on Repositories](repository_permissions_sap_orcl.md).
+Before you start performing operations on backup repositories within the Veeam Backup & Replication infrastructure, consider that you need to set the access permissions for each repository. For details, see [Access and Encryption Settings on Repositories](plugins_sap_maxdb_deploy_repo_permissions.md).
 
 Supported Backup Repositories
 
@@ -145,8 +145,8 @@ You can configure Veeam Backup & Replication to transfer Veeam Plug-In backup fi
 
 * Capacity tier does not track dependencies of full and incremental Veeam Plug-In backup files. Thus, consider the following:
 
-+ [For the Move policy] When backup files are transferred to the capacity tier, Veeam Backup & Replication takes into account only the creation time of backup files. Make sure that the [operational restore window](new_capacity_tier.md) is not longer than the whole backup chain cycle period. Otherwise, you may encounter the scenario when full backup files are transferred to the capacity tier and their increment backup files still remain in the performance tier.
-+ The capacity tier immutability expiration date does not have the additional [block generation](block_gen.md) period. The immutability expiration date is based only on the number of days specified in the settings of the object storage backup repository.
+* [For the Move policy] When backup files are transferred to the capacity tier, Veeam Backup & Replication takes into account only the creation time of backup files. Make sure that the [operational restore window](new_capacity_tier.md) is not longer than the whole backup chain cycle period. Otherwise, you may encounter the scenario when full backup files are transferred to the capacity tier and their increment backup files still remain in the performance tier.
+* The capacity tier immutability expiration date does not have the additional [block generation](block_gen.md) period. The immutability expiration date is based only on the number of days specified in the settings of the object storage backup repository.
 
 * In case a disaster strikes the scale-out repository and you have a Veeam Plug-In backup file on the capacity tier, you must re-create the scale-out repository before you restore from this backup file. You must connect the capacity tier with the Veeam Plug-In backup file to another backup server with Veeam Backup & Replication and a scale-out repository. After that, you can [import the backup files to Veeam Backup & Replication](importing_backups.md) and then perform data recovery operations.
 
@@ -176,7 +176,7 @@ For Veeam Plug-In backups, immutability works according to the following rules:
 
 Data Restore from Hardened Repository
 
-As a result of malware activity or unplanned actions, backup job metadata files (.VACM) may become unavailable in the hardened repository. In such cases, to restore data from the hardened repository, Veeam Backup & Replication can regenerate the .VACM file based on information from the backup job storage metadata file (.VASM). For more information, see [Restore from Hardened Repository](restore_from_immutable_sap_orcl.md).
+As a result of malware activity or unplanned actions, backup job metadata files (.VACM) may become unavailable in the hardened repository. In such cases, to restore data from the hardened repository, Veeam Backup & Replication can regenerate the .VACM file based on information from the backup job storage metadata file (.VASM). For more information, see [Restore from Hardened Repository](plugins_sap_maxdb_restore_from_hard.md).
 
 Object Storage Repository
 
