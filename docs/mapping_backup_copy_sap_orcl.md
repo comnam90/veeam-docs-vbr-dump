@@ -3,8 +3,8 @@ title: "Converting Backup Copy to Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy_sap_orcl.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Converting Backup Copy to Backup
@@ -23,7 +23,7 @@ You can convert imported Veeam Plug-In backups into regular Veeam Plug-In backup
 | Note |
 | If you want to restore from a backup copy, you don't need to convert the backup copy to backup. For details, see [Restore from Backup Copy](restore_from_copy_sap_orcl.md). |
 
-Converting Backup Copy to Backup for SAP HANA
+Converting Backup Copy to Backup for SAP on Oracle
 
 To convert a backup copy to a primary backup, use the --promote-backup-copy-to-primary parameter as shown below:
 
@@ -34,6 +34,6 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 |  |
 | --- |
 | Important |
-| [For servers with the customServerName option] To avoid failure of conversion of backup copies, the server name must be the same as the name used in the backup copy. |
+| [For servers with the customServerName option] To avoid failure of conversion of backup copies, the server name must be the same as the name used in the backup copy. |
 
 
