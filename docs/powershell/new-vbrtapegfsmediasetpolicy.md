@@ -3,8 +3,8 @@ title: "New-VBRTapeGFSMediaSetPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrtapegfsmediasetpolicy.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/22/2026"
+product_version: "13.0.2.29"
 ---
 
 # New-VBRTapeGFSMediaSetPolicy
@@ -30,8 +30,9 @@ This cmdlet creates a new [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Medium | Specifies the array of tapes. The cmdlet will add these tapes to the media set. | Accepts the [VBRTapeMedium](vbrtapemedium.md) object, GUID or string. | False | Named | False |
 | MoveFromMediaPoolAutomatically | Defines that the media set will be replenished by tapes from the parent media pool. | SwitchParameter | False | Named | False |
 | Name | Specifies the name that must be used for creating media set. | String | False | Named | False |
