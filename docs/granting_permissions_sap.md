@@ -3,8 +3,8 @@ title: "Granting Permissions to Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_sap.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Granting Permissions to Users
@@ -27,7 +27,7 @@ Before you create a user group that will have access to the plug-in configuratio
 
 Granting Permissions to the Plug-In Configuration File
 
-By default, the Veeam Plug-In configuration file (veeam\_config.xml) is located in the /opt/veeam/VeeamPluginforSAPonOracle directory on the machine where Veeam Plug-In is installed. To grant access to the configuration file to a dedicated group of users, do the following:
+By default, the Veeam Plug-In configuration file (veeam\_config.xml) is located in the /opt/veeam/VeeamPluginforSAPOracle directory on the machine where Veeam Plug-In is installed. To grant access to the configuration file to a dedicated group of users, do the following:
 
 1. Create a new user group by running the following command:
 
@@ -52,7 +52,7 @@ where:
 
 |  |
 | --- |
-| sudo chgrp <groupName> /opt/veeam/VeeamPluginforSAPonOracle/veeam\_config.xml |
+| sudo chgrp <groupName> /opt/veeam/VeeamPluginforSAPOracle/veeam\_config.xml |
 
 where <groupName> is the name of the created group.
 
@@ -60,6 +60,6 @@ where <groupName> is the name of the created group.
 
 |  |
 | --- |
-| sudo chmod 660 /opt/veeam/VeeamPluginforSAPonOracle/veeam\_config.xml |
+| sudo chmod 660 /opt/veeam/VeeamPluginforSAPOracle/veeam\_config.xml |
 
 
