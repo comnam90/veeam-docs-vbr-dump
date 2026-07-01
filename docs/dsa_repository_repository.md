@@ -3,8 +3,8 @@ title: "Step 4. Configure Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_repository.html"
-last_updated: "3/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/25/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 4. Configure Backup Repository Settings
@@ -71,29 +71,26 @@ Dell Data Domain
 
 ExaGrid
 
-* When the Use fast cloning on XFS volumes option is enabled, the Align backup file data blocks option is enabled and cannot be changed.
-
-When the Use fast cloning on XFS volumes option is disabled, the Align backup file data blocks option is disabled and must not be changed.
-
+* The Align backup file data blocks option is enabled and cannot be changed.
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 * Limit max concurrent tasks is equal to 10 (recommended).
 
 Quantum DXi
 
-* The Align backup file data blocks option is disabled and must not be changed.
+* The Align backup file data blocks option is enabled and cannot be changed.
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
 Fujitsu ETERNUS CS800
 
-* The Align backup file data blocks option is enabled.
+* The Align backup file data blocks option is enabled and cannot be changed.
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
 Infinidat InfiniGuard
 
-* The Align backup file data blocks option is enabled.
+* The Align backup file data blocks option is enabled and cannot be changed.
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
