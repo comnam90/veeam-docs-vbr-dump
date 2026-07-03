@@ -3,8 +3,8 @@ title: "HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_morpheus_vme.html"
-last_updated: "5/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/23/2026"
+product_version: "13.0.2.29"
 ---
 
 # HPE Morpheus VM Essentials
@@ -37,5 +37,16 @@ Veeam Backup & Replication offers various data protection and disaster recovery 
 | --- |
 | Note |
 | Restoring VMs to oVirt KVM and Google Cloud is currently not supported for Linux-based backup servers. |
+
+In This Section
+
+* [Overview](hpe_overview.md)
+* [Planning and Preparation](hpe_planning_and_preparation.md)
+* [Licensing](hpe_licensing.md)
+* [Deployment](hpe_deployment.md)
+* [Configuring Veeam Plug-In for HPE Morpheus VM Essentials](hpe_configuration.md)
+* [Performing Backup](hpe_data_protection.md)
+* [Managing Backups](hpe_backups_manage.md)
+* [Getting Technical Support](hpe_export_logs.md)
 
 
