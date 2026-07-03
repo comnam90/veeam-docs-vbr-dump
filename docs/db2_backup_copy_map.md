@@ -3,8 +3,8 @@ title: "Converting Backup Copy to Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_copy_map.html"
-last_updated: "3/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Converting Backup Copy to Backup
@@ -21,7 +21,7 @@ You can convert and unbind Veeam Plug-In backups into regular Veeam Plug-In back
 |  |
 | --- |
 | Note |
-| If you want to restore from a backup copy, you do not need to convert the backup copy to the backup. For details, see [Restore from Backup Copy](restore_from_copy.md). |
+| If you want to restore from a backup copy, you do not need to convert the backup copy to the backup. For details, see [Restore from Backup Copy](db2_restore_from_backup_copy.md). |
 
 Procedure
 
