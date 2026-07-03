@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_limitations.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/25/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -29,6 +29,7 @@ When configuring Veeam Plug-in for Proxmox VE, consider the following:
 * Veeam Plug-in for Proxmox VE does not support user accounts with multi-factor authentication to access the Proxmox VE server.
 
 * Veeam Plug-in for Proxmox VE does not support the IPv6 protocol.
+* Veeam Plug-in for Proxmox VE does not support synchronization of date and time settings with the backup server — the AM/PM format is used by default and cannot be changed.
 
 * The Proxmox VE server must be able to establish a direct IP connection to the backup server. Connections through NAT gateways are not supported.
 
