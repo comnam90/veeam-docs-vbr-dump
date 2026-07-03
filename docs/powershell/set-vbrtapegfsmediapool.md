@@ -3,8 +3,8 @@ title: "Set-VBRTapeGFSMediaPool"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrtapegfsmediapool.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/22/2026"
+product_version: "13.0.2.29"
 ---
 
 # Set-VBRTapeGFSMediaPool
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRTapeGFSMediaPool -MediaPool <VBRTapeGFSMediaPool> [-Name <string>] [-Description <string>] [-Library <VBRTapeLibrary[]>] [-Medium <VBRTapeMedium[]>] [-MoveFromFreePool] [-EnableEncryption] [-EncryptionKey <VBREncryptionKey>] [-KMSServer <VBRKMSServer>] [-NextLibOffline] [-NextLibDrivesBusy] [-NextLibNoMedia] [-DailyOverwritePeriod <int>] [-WeeklyOverwritePeriod <int>] [-MonthlyOverwritePeriod <int>] [-QuarterlyOverwritePeriod <int>] [-YearlyOverwritePeriod <int>] [-DailyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-WeeklyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-MonthlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-QuarterlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-YearlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-EnableMultiStreaming] [-NumberOfStreams <int>] [-SplitJobFilesBetweenDrives] [-PassThru] [-Mode <string> {Paralleling | Failover}]  [<CommonParameters>] |
+| Set-VBRTapeGFSMediaPool -MediaPool <VBRTapeGFSMediaPool> [-Name <string>] [-Description <string>] [-Library <VBRTapeLibrary[]>] [-Medium <VBRTapeMedium[]>] [-MoveFromFreePool] [-EnableEncryption] [-EncryptionKey <VBREncryptionKey>] [-KMSServer <VBRKMSServer>] [-NextLibOffline] [-NextLibDrivesBusy] [-NextLibNoMedia] [-DailyOverwritePeriod <int>] [-WeeklyOverwritePeriod <int>] [-MonthlyOverwritePeriod <int>] [-QuarterlyOverwritePeriod <int>] [-YearlyOverwritePeriod <int>] [-DailyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-WeeklyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-MonthlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-QuarterlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-YearlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-NumberOfStreams <int>] [-SplitJobFilesBetweenDrives] [-PassThru] [-Mode <string> {Paralleling | Failover}]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,8 +35,9 @@ This cmdlet modifies a GFS media pool.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | MediaPool | Specifies the GFS media pool you want to modify. | Accepts the [VBRTapeGFSMediaPool](vbrtapegfsmediapool.md) object. To get this object, run the [Get-VBRTapeMediaPool](get-vbrtapemediapool.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the name you want to assign to the media pool. | String | True | Named | False |
 | Library | Specifies the array of tape libraries. The media pool will use tapes from these libraries.  For tape library failover, use NextLibOffline, NextLibDrivesBusy and/or NextLibNoMedia parameters to manage the failover events. Veeam will switch to the next library in order they are added to the VBRTapeLibrary object. | Accepts the [VBRTapeLibrary](vbrtapelibrary.md) object, GUID or string. To get this object, run the [Get-VBRTapeLibrary](get-vbrtapelibrary.md) cmdlet. | True | Named | True (ByProperty Name) |
@@ -59,9 +60,8 @@ Parameters
 | MonthlyMediaSetPolicy | Specifies settings for the monthly media set. | Accepts the [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md) object. To create this object, run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet. | False | Named | False |
 | QuarterlyMediaSetPolicy | Specifies settings for the quarterly media set. | Accepts the [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md) object. To create this object, run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet. | False | Named | False |
 | YearlyMediaSetPolicy | Specifies settings for the yearly media set. | Accepts the [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md) object. To create this object, run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet. | False | Named | False |
-| EnableMultiStreaming | Enables the media pool to use several drives simultaneously.  Use the NumberOfStreams parameter to set the maximum number of drives that can be used.  Use the SplitJobFilesBetweenDrives parameter to indicate if the multistreaming will be used to split data between tape jobs or between source backup jobs. | SwitchParameter | False | Named | False |
-| NumberOfStreams | Used to set value for the EnableMultiStreaming parameter.  Indicates the maximum number of drives that the media pool can use.  Default: 2. | Int32 | False | Named | False |
-| SplitJobFilesBetweenDrives | Defines that one tape job will use multiple drives to write data. Drives will process source backup jobs one by one.  Default: one drive is used for one tape job. | SwitchParameter | False | Named | False |
+| NumberOfStreams | Indicates the maximum number of drives that the media pool can use. Set the value to 1 to disable parallel processing.  Default: 2. | Int32 | False | Named | False |
+| SplitJobFilesBetweenDrives | Defines that Veeam Backup & Replication will use multiple drives simultaneously to process multiple source backup chains within one tape job.  Default: one drive is used for one tape job. | SwitchParameter | False | Named | False |
 | PassThru | Defines that the command returns the output object to the Windows PowerShell console. | SwitchParameter | False | Named | False |
 | Mode | Specifies the tape media pool mode.  You can set either of the following modes:   * Paralleling: if you set this mode, the tape job will use drives in all libraries in parallel. * Failover: if you set this mode, the tape job will use the first library in the list to write data. Other libraries from this media pool will be passive and will be used for failover. | String | False | Named | False |
 
@@ -77,16 +77,16 @@ Examples
 
 Enabling Media Pool to Use Multiple Drives Simultaneously
 
-This example instructs a selected media pool to use up to 4 drives simultaneously.
+This example shows how to modify a selected media pool to use up to 4 drives simultaneously to write multiple source backup chains in parallel.
 
 |  |
 | --- |
-| $mpool = Get-VBRTapeMediaPool -Name "GFS Media Pool"  Set-VBRTapeGFSMediaPool -MediaPool $mpool -EnableMultiStreaming -NumberOfStreams 4 |
+| $mpool = Get-VBRTapeMediaPool -Name "GFS Media Pool"  Set-VBRTapeGFSMediaPool -MediaPool $mpool -NumberOfStreams 4 -SplitJobFilesBetweenDrives |
 
 Perform the following steps:
 
 1. Run the [Get-VBRTapeMediaPool](get-vbrtapemediapool.md) cmdlet. Specify the Name parameter value. Save the result to the $mpool variable.
-2. Run the Set-VBRTapeGFSMediaPool cmdlet. Set the $mpool variable as the MediaPool parameter value. Provide the EnableMultiStreaming parameter. Specify the NumberOfStreams parameter value.
+2. Run the Set-VBRTapeGFSMediaPool cmdlet. Set the $mpool variable as the MediaPool parameter value. Specify the NumberOfStreams parameter value. Provide the SplitJobFilesBetweenDrives parameter.
 
 Related Commands
 
