@@ -3,8 +3,8 @@ title: "Scale Computing HyperCore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_sch.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/30/2026"
+product_version: "13.0.2.29"
 ---
 
 # Scale Computing HyperCore
@@ -53,9 +53,9 @@ Version Compatibility
 
 Version Compatibility
 
-| Product Release | Veeam Plug-in for Scale Computing HyperCore Build | Veeam Backup & Replication Build |
-| 3 | 13.3.0.81 | 13.0.1.1071 |
-| 2 | 13.2.0.245 | 13.0.1.1071 |
+| Product Release | Veeam Plug-In for Scale Computing HyperCore Build | Veeam Backup & Replication Build |
+| 3 | 13.3.1.8 (recommended) 13.3.0.81 | 13.0.2.29 (recommended) 13.0.1.1071 13.0.1.180 |
+| 2 | 13.2.0.245 | 13.0.1.1071 13.0.1.180 |
 | 1.1 | 12.1.1.4 | 12.3.2.3617 |
 
 
