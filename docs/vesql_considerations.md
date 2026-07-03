@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_considerations.html"
-last_updated: "3/11/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/24/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -18,8 +18,9 @@ General
 
 * Veeam Explorer for Microsoft SQL Server must stay open during all restore, publishing and export operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
 
-This does not apply to restore from Veeam Plug-In for Microsoft SQL Server and instant recovery operations — they are managed by the Veeam Explorers Recovery Service, which runs on the mount server associated with the backup repository.
+This does not apply to restore from Veeam Plug-In for Microsoft SQL Server backups and instant recovery operations — they are managed by the Veeam Explorers Recovery Service, which runs on the mount server associated with the backup repository.
 
+* For Veeam Plug-In for Microsoft SQL Server backups, only the restore operation is supported. Publishing, instant recovery and export operations are not supported.
 * To restore, publish and instantly recover your Microsoft SQL Server data without granting access to the administrative share, make sure that the Veeam Installer Service is installed on the target server. For more information on installing this service, see [Veeam Installer Service](installer_service.md).
 * Restore, publishing, instant recovery, and export operations of Microsoft SQL Server data from replicas can only recover your data to the latest state of the selected restore point. Replication jobs do not copy Microsoft SQL Server transaction logs so data recovery to a point-in-time state is not supported.
 
@@ -35,7 +36,7 @@ This does not apply to restore from Veeam Plug-In for Microsoft SQL Server and i
 
 |  |
 | --- |
-| <Veeam>     <SQLCore StrictSQLConnectionEncryption="True"/>  </Veeam> |
+| <Veeam>  <SQLCore StrictSQLConnectionEncryption="True"/>  </Veeam> |
 
 The Config.xml files are located on the machine where Veeam Explorer for Microsoft SQL Server is running.
 
@@ -89,7 +90,7 @@ Restore from Plug-in Backups
 
 |  |
 | --- |
-| <Veeam>     <SQLCore EncryptionType="Mandatory"/>  </Veeam> |
+| <Veeam>  <SQLCore EncryptionType="Mandatory"/>  </Veeam> |
 
 The Config.xml files are located on the machine where Veeam Explorer for Microsoft SQL Server is running.
 
