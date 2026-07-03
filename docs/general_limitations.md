@@ -3,8 +3,8 @@ title: "General Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_limitations.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/1/2026"
+product_version: "13.0.2.29"
 ---
 
 # General Considerations and Limitations
@@ -20,6 +20,11 @@ This section contains general limitations for object storage repositories:
 | Consider the following:   * This option is not supported for Microsoft Azure Storage and Veeam Data Cloud Vault. * This option works for object storage repositories only if they meet the following requirements:  * You plan to add these object storage repositories as a performance or capacity extent of a scale-out backup repository.  * The object storage repositories do not have data encryption enabled. If encryption is enabled on these repositories, you will not be able to add object storage repositories using credentials with read-only permissions.  * You can use this option for direct backup object storage repositories added either as a standalone repository or a performance extent of a scale-out backup repository. |
 
 * Data in an object storage bucket or container must be managed solely by Veeam Backup & Replication, including retention and data management. When you enable Object Lock and S3 Versioning for an S3 bucket or version-level immutability for the Azure container, make sure that you do NOT enable the default retention option. Note that enabling lifecycle rules is not supported and may result in backup and restore failures.
+
+|  |
+| --- |
+| Important |
+| Lifecycle rules are enabled by default once you enable object versioning. Unlike other object storage repositories, the two lifecycle rules that Google Cloud automatically creates when you enable object versioning do not affect the consistency of data managed by Veeam Backup & Replication. However, you can disable these lifecycle rules if you prefer. For more information on how to disable these rules, see [Google Cloud documentation](https://docs.cloud.google.com/storage/docs/managing-lifecycles#set). |
 
 * You cannot simultaneously store [capacity tier](capacity_tier.md) and [unstructured data](unstructured_data_backup.md) backups in the same object storage repository. You must either add this object storage repository as the capacity extent or use it as the backup repository for the unstructured backup job.
 
