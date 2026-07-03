@@ -3,8 +3,8 @@ title: "Support for Clusters"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_clusters.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/26/2026"
+product_version: "13.0.2.29"
 ---
 
 # Support for Clusters
@@ -35,7 +35,7 @@ Veeam Plug-In will start the backup job on the primary cluster node.
 In case of clustered database, Veeam Plug-In can store data from several cluster nodes in the same backup file on the backup repository. To do this, Veeam Plug-In needs the name of the cluster. Depending on the cluster management software that you use, Veeam Plug-In gets the cluster name in one of the following names:
 
 * In case of IBM PowerH and IBM TSA, Veeam Plug-In gets the cluster name automatically.
-* In case of Pacemaker, you must set the cluster name in the [veeam\_config.xml](db2_configure_file.md) file. You must set the name with the customServerName parameter. The parameter value must be the same as the name of your cluster.
+* In case of Pacemaker, you must set the cluster name in the [veeam\_config.xml](plugins_sap_maxdb_deploy_configure_vp_file.md) file. You must set the name with the customServerName parameter. The parameter value must be the same as the name of your cluster.
 
 |  |
 | --- |
