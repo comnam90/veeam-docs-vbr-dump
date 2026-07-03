@@ -3,8 +3,8 @@ title: "Start-VBRJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrjob.html"
-last_updated: "12/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/24/2026"
+product_version: "13.0.2.29"
 ---
 
 # Start-VBRJob
@@ -16,7 +16,7 @@ Starts a backup or replication job.
 
 Applies to
 
-Platform: VMware, Hyper-V, file shares
+Platform: VMware, Hyper-V, file shares, object storage
 
 Product Edition: Standard, Enterprise, Enterprise Plus, Veeam Universal License
 
@@ -44,8 +44,9 @@ Run the [Start-VBRComputerBackupJob](start-vbrcomputerbackupjob.md) cmdlet to st
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Job | Specifies the array of jobs you want to start. | Accepts the CBackupJob object. To get this object, run the [Get-VBRJob](get-vbrjob.md) or [Get-VBRTapeJob](get-vbrtapejob.md) cmdlet. | True | 0 | True (ByProperty Name, ByValue) |
 | Object | Specifies an array of job objects (VMs and VM containers). The cmdlet will start jobs with these objects. | Accepts the CObjectInJob[]object. To get this object, run the [Get-VBRJobObject](get-vbrjobobject.md) cmdlet. | False | Named | False |
 | FullBackup | Defines that the job will create an active full backup. | SwitchParameter | False | Named | False |
