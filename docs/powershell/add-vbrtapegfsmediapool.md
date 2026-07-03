@@ -3,8 +3,8 @@ title: "Add-VBRTapeGFSMediaPool"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrtapegfsmediapool.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/22/2026"
+product_version: "13.0.2.29"
 ---
 
 # Add-VBRTapeGFSMediaPool
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRTapeGFSMediaPool -Name <string> -Library <VBRTapeLibrary[]> [-Description <string>] [-Medium <VBRTapeMedium[]>] [-MoveFromFreePool] [-EnableEncryption] [-EncryptionKey <VBREncryptionKey>] [-KMSServer <VBRKMSServer>] [-NextLibOffline] [-NextLibDrivesBusy] [-NextLibNoMedia] [-DailyOverwritePeriod <int>] [-WeeklyOverwritePeriod <int>] [-MonthlyOverwritePeriod <int>] [-QuarterlyOverwritePeriod <int>] [-YearlyOverwritePeriod <int>] [-DailyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-WeeklyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-MonthlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-QuarterlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-YearlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-EnableMultiStreaming] [-SplitJobFilesBetweenDrives] [-NumberOfStreams <int>] [-WORM]  [<CommonParameters>] |
+| Add-VBRTapeGFSMediaPool -Name <string> -Library <VBRTapeLibrary[]> [-Description <string>] [-Medium <VBRTapeMedium[]>] [-MoveFromFreePool] [-EnableEncryption] [-EncryptionKey <VBREncryptionKey>] [-KMSServer <VBRKMSServer>] [-NextLibOffline] [-NextLibDrivesBusy] [-NextLibNoMedia] [-DailyOverwritePeriod <int>] [-WeeklyOverwritePeriod <int>] [-MonthlyOverwritePeriod <int>] [-QuarterlyOverwritePeriod <int>] [-YearlyOverwritePeriod <int>] [-DailyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-WeeklyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-MonthlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-QuarterlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-YearlyMediaSetPolicy <VBRTapeGFSMediaSetPolicy>] [-SplitJobFilesBetweenDrives] [-NumberOfStreams <int>] [-WORM]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,8 +32,9 @@ Run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet t
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specifies the name you want to assign to the media pool. | String | True | Named | False |
 | Library | Specifies the array of tape libraries. The media pool will use tapes from these libraries.  For tape library failover, use NextLibOffline, NextLibDrivesBusy and/or NextLibNoMedia parameters to manage the failover events. Veeam will switch to the next library in order they are added to the VBRTapeLibrary object. | Accepts the [VBRTapeLibrary](vbrtapelibrary.md) object, GUID or string. To get this object, run the [Get-VBRTapeLibrary](get-vbrtapelibrary.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Medium | Specifies the array of tapes. The cmdlet will add these tapes to the media pool. | Accepts the [VBRTapeMedium](vbrtapemedium.md) object, GUID or string. To get this object, run the [Get-VBRTapeMedium](get-vbrtapemedium.md) cmdlet. | False | Named | False |
@@ -55,9 +56,8 @@ Parameters
 | MonthlyMediaSetPolicy | Specifies settings for the monthly media set. | Accepts the [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md) object. To create this object, run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet. | False | Named | False |
 | QuarterlyMediaSetPolicy | Specifies settings for the quarterly media set. | Accepts the [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md) object. To create this object, run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet. | False | Named | False |
 | YearlyMediaSetPolicy | Specifies settings for the yearly media set. | Accepts the [VBRTapeGFSMediaSetPolicy](vbrtapegfsmediasetpolicy.md) object. To create this object, run the [New-VBRTapeGFSMediaSetPolicy](new-vbrtapegfsmediasetpolicy.md) cmdlet. | False | Named | False |
-| EnableMultiStreaming | Enables the media pool to use several drives simultaneously.  Use the NumberOfStreams parameter to set the maximum number of drives that can be used.  Use the SplitJobFilesBetweenDrives parameter to indicate if the multistreaming will be used to split data between tape jobs or between source backup jobs. | SwitchParameter | False | Named | False |
-| SplitJobFilesBetweenDrives | Defines that one tape job will use multiple drives to write data. Drives will process source backup jobs one by one.  Default: one drive is used for one tape job. | SwitchParameter | False | Named | False |
-| NumberOfStreams | Used to set value for the EnableMultiStreaming parameter.  Indicates the maximum number of drives that the media pool can use.  Default: 2. | Int32 | False | Named | False |
+| SplitJobFilesBetweenDrives | Defines that Veeam Backup & Replication will use multiple drives simultaneously to process multiple source backup chains within one tape job.  Default: one drive is used for one tape job. | SwitchParameter | False | Named | False |
+| NumberOfStreams | Indicates the maximum number of drives that the media pool can use. Set the value to 1 to disable parallel processing.  Default: 2. | Int32 | False | Named | False |
 | WORM | Defines that the cmdlet will add the WORM Media Pool.  Note: you cannot set retention policy when the WORM parameter is set to true.  Default: False. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
