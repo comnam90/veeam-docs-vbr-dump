@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_immutability_limitations.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "7/1/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -34,6 +34,8 @@ The default retention may result in an unpredictable system behavior and data lo
 * After you have added the buckets to the backup infrastructure, you must NOT enable or disable Versioning and Object Lock as it may lead to unpredictable system behavior and data loss.
 * If you plan to use the immutability feature with the existing S3 bucket containing backups created by 9.5 Update 4, keep in mind that both Versioning and Object Lock must be enabled on the bucket simultaneously and immediately before enabling the immutability feature. Any other approach will lead to backup offload failures and inability to correctly interact with backups in the bucket.
 
+* Data in an object storage bucket or container must be managed solely by Veeam Backup & Replication, including retention and data management. When you enable Object Lock and S3 Versioning for an S3 bucket, make sure that you do NOT enable the default retention option. Note that enabling lifecycle rules is not supported and may result in backup and restore failures.
+
 Azure Blob Storage Immutability Limitations
 
 Consider the following immutability limitations for Azure Blob Storage:
@@ -55,6 +57,8 @@ Consider the following immutability limitations for Azure Blob Storage:
 
 * Version-level immutability support for Azure storage accounts is not supported.
 
+* Data in an object storage bucket or container must be managed solely by Veeam Backup & Replication, including retention and data management. When you enable version-level immutability for the Azure container, make sure that you do NOT enable the default retention option. Note that enabling lifecycle rules is not supported and may result in backup and restore failures.
+
 Veeam Data Cloud Vault Limitations
 
 Consider the following immutability limitations for Veeam Data Cloud Vault:
@@ -70,6 +74,7 @@ Consider the following immutability limitations for Google Cloud Storage:
 * Verify that the bucket retention policy is disabled.
 
 * After you have added the buckets to the backup infrastructure, you must NOT enable or disable Object versioning and object retention as it may lead to unpredictable system behavior and data loss.
+* Lifecycle rules are enabled by default once you enable object versioning. Unlike other object storage repositories, the two lifecycle rules that Google Cloud automatically creates when you enable object versioning do not affect the consistency of data managed by Veeam Backup & Replication. However, you can disable these lifecycle rules if you prefer. For more information on how to disable these rules, see [Google Cloud documentation](https://docs.cloud.google.com/storage/docs/managing-lifecycles).
 
 Block Generation for GFS Backups
 
