@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_considerations.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "6/24/2026"
+product_version: "13.0.2.29"
 ---
 
 # Considerations and Limitations
@@ -20,6 +20,7 @@ General
 
 This does not apply to instant recovery operations — they are managed by the Veeam Explorers Recovery Service, which runs on the mount server associated with the backup repository.
 
+* For Veeam Plug-In for Oracle RMAN backups, only the restore operation is supported. Publishing, instant recovery and export operations are not supported.
 * [Data recovery to Linux server] You can recover data over SSH only — recovery using Linux Management Agent is not supported.
 
 * [Data recovery to Linux server] Data recovery with Veeam Explorer for Oracle is not supported if the SQL\*Plus environment on the target Oracle server is configured to use glogin.sql or login.sql profile files. For details, see the [Configuring SQL\*Plus](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqpug/configuring-SQL-Plus.html#GUID-D7479120-872F-4E47-AC13-B1B07DF69A46) section of the SQL\*Plus User's Guide and Reference.
@@ -61,7 +62,7 @@ For example:
 
 Note that Btrfs volumes on a backed-up Veeam Agent machine must have identifiers in the UUID format in the fstab configuration file.
 
-* Mount operations with [FUSE](https://www.kernel.org/doc/html/latest/filesystems/fuse.html) are not supported on kernel versions 4.0.0 – 4.1.33. Make sure to upgrade the kernel to version 4.1.37 or later.
+* Mount operations with [FUSE](https://www.kernel.org/doc/html/latest/filesystems/fuse/index.html) are not supported on kernel versions 4.0.0 – 4.1.33. Make sure to upgrade the kernel to version 4.1.37 or later.
 * Veeam Explorer for Oracle does not support database files containing non-ASCII characters or non-printable ASCII charset symbols that have decimal values from 0 through 31, and 127 in the ASCII table. If the backup contains database files with such characters, the recovery operation will fail.
 
 * Veeam Explorer for Oracle supports SSH fingerprint validation of Linux machines used as target and staging Oracle servers. For more information on how to configure this feature, see [Host Authentication](linux_fingerprint_check.md).
