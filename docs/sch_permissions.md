@@ -3,8 +3,8 @@ title: "Account Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_permissions.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/30/2026"
+product_version: "13.0.2.29"
 ---
 
 # Account Permissions
@@ -25,6 +25,11 @@ Backup Server Windows Account Permissions
 Scale Computing HyperCore Cluster Permissions
 
 The account that the backup server uses to access the Scale Computing HyperCore cluster must have the Admin role assigned or posses the following permissions: Backup, VM Create/Edit, VM Delete, VM Power Controls, Cluster Settings.
+
+|  |
+| --- |
+| Important |
+| If you use Scale Computing HyperCore version 9.4.32 with a limited-permission account, the worker image upload may fail during deployment. |
 
 Performing Guest Processing
 
