@@ -3,8 +3,8 @@ title: "Viewing Real-Time Statistics"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/realtime_statistics_web.html"
-last_updated: "9/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "6/19/2026"
+product_version: "13.0.2.29"
 ---
 
 # Viewing Real-Time Statistics
@@ -54,7 +54,7 @@ To visualize the backup job progress, Veeam Backup & Replication displays a colo
 * The light blue Processed line defines the amount of processed data.
 * The dark blue Transferred line defines the amount of data transferred from the source-side Veeam Data Mover to the target-side Veeam Data Mover.
 
-If the job session is still being performed, you can click the graph to view the data rate for the last 5 minutes or the whole processing period. If the job session has already ended, the graph displays information for the whole processing period only.
+The graph displays the data rate for the whole processing period.
 
 The colored graph is displayed only for the currently running job session or the latest job session. If you open real-time statistics for sessions other than the latest one, the colored graph will not be displayed.
 
