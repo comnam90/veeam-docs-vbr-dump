@@ -3,8 +3,8 @@ title: "Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_ahv.html"
-last_updated: "5/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/30/2026"
+product_version: "13.0.2.29"
 ---
 
 # Nutanix AHV
@@ -57,7 +57,7 @@ The following table lists compatible versions of Veeam Backup & Replication and 
 Version Compatibility
 
 | Product Release | Veeam Plug-In for Nutanix AHV Build | Veeam Backup & Replication Build | Backup Appliance / Worker OS Version |
-| 9 | 13.9.0.212 | 13.0.1.2067 (recommended) 13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
+| 9 | 13.9.2.17 (recommended) 13.9.0.212 | 13.0.2.29 (recommended) 13.0.1.2067 13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
 | 8 | 13.8.0.582 | 13.0.0.4967 | Rocky Linux 8.10 |
 | 7.1 | 12.7.1.12 | 12.3.1.1139 | Rocky Linux 8.10 |
 | 7.0 | 12.7.0.172 | 12.3.0.310 |
