@@ -3,8 +3,8 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "5/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/24/2026"
+product_version: "13.0.2.29"
 ---
 
 # Microsoft Windows File Recovery
@@ -79,6 +79,7 @@ Target for Data Recovery
 
 ReFS
 
+* When recovering files from ReFS disks, Veeam Backup & Replication uses VHD mount. VHD mount supports disks up to 64 TB. If a workload has an ReFS disk larger than 64 TB, file-level recovery from that disk fails.
 * The mount server must run Microsoft Windows Server 2016 or later.
 * The mount server must support the same ReFS version or later than the version used on the workload from which you plan to recover files. For more information on which OSes support which ReFS, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
 
@@ -101,7 +102,10 @@ Recovery Finalization
 * The following applies to the Copy to operation:
 
 * The Copy to operation does not use the comparison states and copies all selected files and folders.
-* If the Veeam Backup & Replication console is launched on the backup server, the Copy to operation does not allow copying files to the backup server. You can only copy files to a network shared folder.
+* Do not copy restored files to the backup server. Restored files may be corrupted or infected. If such files reach the backup server, they can compromise the server and every backup stored on it.
+
+By default, if you launch the Veeam Backup & Replication console on the backup server, the Copy to operation blocks the backup server as a target and allows only a network shared folder. You can bypass this block by specifying the target as a UNC path. Do this only if you are certain the files are safe.
+
 * [For Hyper-V VMs] You can restore files and folders to components of the Veeam Backup & Replication infrastructure available over the network.
 
 

@@ -3,7 +3,7 @@ title: "SAP Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_environment_saphana.html"
-last_updated: "6/10/2026"
+last_updated: "6/26/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -55,8 +55,6 @@ In this example, the system has 2 tenant databases, each database has 4 services
 * If the log backups are below 128 GB, you must reserve at least 3 channels for the log backup of SYSTEMDB, tenant database 1, and tenant database 2. These log backups are started automatically on their own schedule or when the maximum file size of the log file is reached. Assuming that the log file backups are below 128 GB and do not use additional channels.
 
 In total, 12 channels were used. For backup processes of sequential started database backups, up to 12 task slots must be available.
-
-For details on resource considerations for the Oracle server, see [SAP Environment Planning](sap_environment_saphana.md).
 
 Scheduling
 

@@ -3,8 +3,8 @@ title: "Account Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_permissions.html"
-last_updated: "5/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "6/30/2026"
+product_version: "13.0.2.29"
 ---
 
 # Account Permissions
@@ -34,16 +34,21 @@ Veeam Plug-in for HPE Morpheus VM Essentials requires a user account in the HPE 
 * Infrastructure > Manage Placement
 * Infrastructure > Networks
 * Infrastructure > Storage
-* Library > Operating Systems
 * Library > Virtual Images
 * Lifecycle > Power Control
 * Lifecycle > Reconfigure
 * Operations > Wiki
+* Provisioning > Administrator
 * Provisioning > Instances: Add
 * Provisioning > Instances: Delete
 * Provisioning > Instances: Edit
 * Provisioning > Instances: List
 * Snapshots > Snapshots
+
+|  |
+| --- |
+| Note |
+| While configuring user role permissions, make sure that you enable full access to HVM instances (the Instance Types tab) and to the group that includes the HPE Morpheus VM Essentials Manager (the Groups tab). For more information on role configuration, see [HPE Morpheus VM Essentials documentation](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007735en_us&page=GUID-76B17464-6C1D-468E-B6D2-93ECF87E2289.html). |
 
 For more information on access permissions, see [HPE Morpheus VM Essentials documentation](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00006775en_us&page=GUID-BB3046E2-F2D4-4B45-8B85-E4982E255B2F.html).
 

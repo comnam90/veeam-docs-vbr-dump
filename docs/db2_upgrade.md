@@ -3,7 +3,7 @@ title: "Upgrading Veeam Plug-In for IBM Db2"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_upgrade.html"
-last_updated: "5/27/2026"
+last_updated: "6/26/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -26,7 +26,7 @@ Note that Veeam Backup & Replication must be the same or later than the version 
 
 Before You Begin
 
-Veeam Plug-In installation files are included in the installation image of Veeam Backup & Replication and available for download from [veeam.com](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins). You must get the installation files on the Oracle server. To do this, perform the following steps:
+Veeam Plug-In installation files are included in the installation image of Veeam Backup & Replication and available for download from [veeam.com](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins). You must get the installation files on the IBM Db2 server. To do this, perform the following steps:
 
 Using the Veeam Backup & Replication installation image
 
@@ -105,7 +105,7 @@ Upgrading Plug-In on Linux (.TAR.GZ)
 
 To upgrade Veeam Plug-In for IBM Db2 on a Linux machine from the archive, do the following:
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforDB2.tar.gz file to the Oracle server.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforDB2.tar.gz file to the IBM Db2 server.
 2. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
 
 |  |
@@ -122,7 +122,7 @@ Upgrading Plug-In on IBM AIX
 
 To upgrade Veeam Plug-In for IBM Db2 on an IBM AIX machine, do the following:
 
-1. Upload the VeeamPluginforDB2-13.0.3.29-1.aix6.1.ppc.rpm package to the Oracle server.
+1. Upload the VeeamPluginforDB2-13.0.3.29-1.aix6.1.ppc.rpm package to the IBM Db2 server.
 2. To upgrade Veeam Plug-In, run the following command. Note that the operation requires root privileges.
 
 |  |

@@ -3,7 +3,7 @@ title: "Installing Plug-In on Linux"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_install_linux.html"
-last_updated: "5/27/2026"
+last_updated: "6/26/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -40,11 +40,11 @@ You can download the latest version of the Veeam Backup & Replication installati
 1. In the \Package folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
 2. In the \Plugins\IBM Db2\Linux\x64 folder, find the VeeamPluginforDB2-13.0.3.29-1.x86\_64.rpm package.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforDB2-13.0.3.29-1.x86\_64.rpm packages to the Linux machine with SAP MaxDB database.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforDB2-13.0.3.29-1.x86\_64.rpm packages to the Linux machine with IBM Db2.
 
 Using veeam.com
 
-1. Download the setup archive for Veeam Plug-In for SAP MaxDB from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
+1. Download the setup archive for Veeam Plug-In for IBM Db2 from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following packages:
 
 1. In the \VeeamPluginForIBMDb2-13.0.3.29-1\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.

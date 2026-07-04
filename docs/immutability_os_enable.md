@@ -3,8 +3,8 @@ title: "Enabling Immutability"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_os_enable.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "7/1/2026"
+product_version: "13.0.2.29"
 ---
 
 # Enabling Immutability
@@ -58,8 +58,8 @@ To be able to use immutability with Google Cloud object storage repositories, yo
 
 |  |
 | --- |
-| Note |
-| Veeam Backup & Replication does not create any versions of objects. If you specify several versions of an object, this setting will not take effect. |
+| Important |
+| Consider the following:   * Lifecycle rules are enabled by default once you enable object versioning. Unlike other object storage repositories, the two lifecycle rules that Google Cloud automatically creates when you enable object versioning do not affect the consistency of data managed by Veeam Backup & Replication. However, you can disable these lifecycle rules if you prefer. For more information on how to disable these rules, see [Google Cloud documentation](https://docs.cloud.google.com/storage/docs/managing-lifecycles#set). * Veeam Backup & Replication does not create any versions of objects. If you specify several versions of an object, this setting will not take effect. |
 
 1. Enable object retention.
 

@@ -3,7 +3,7 @@ title: "Persistent Agent Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_agent_components_hv.html"
-last_updated: "6/1/2026"
+last_updated: "7/1/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -30,7 +30,7 @@ To use persistent agent components, select the Use persistent guest agent check 
 
 When you select the Use persistent guest agent option, Veeam Backup & Replication performs processing of the backup jobs with enabled guest processing according to the following algorithm.
 
-![Persistent Agent Components](images/guest_processing_persistent_agent.webp)
+![Persistent Agent Components](images/guest_processing_persistent_agent_hv.webp)
 
 When you start a job with guest processing tasks enabled, Veeam Backup & Replication performs the following operations:
 

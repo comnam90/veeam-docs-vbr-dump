@@ -3,7 +3,7 @@ title: "Upgrading Veeam Plug-In for SAP on Oracle"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_sap_on_oracle_plugin.html"
-last_updated: "5/27/2026"
+last_updated: "6/26/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -60,7 +60,7 @@ Upgrading Plug-In on Linux (.RPM)
 
 To upgrade Veeam Plug-In for SAP on Oracle from the .RPM package, perform the following:
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforSAPOracle-13.0.3.29-1.x86\_64.rpm packages to the SAP HANA server.
+1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforSAPOracle-13.0.3.29-1.x86\_64.rpm packages to the Oracle server.
 2. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
 
 |  |

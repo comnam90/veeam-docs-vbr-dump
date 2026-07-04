@@ -3,7 +3,7 @@ title: "Mount Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mount_server.html"
-last_updated: "6/18/2026"
+last_updated: "6/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -54,12 +54,15 @@ It is recommended to [enable the vPower NFS Service](repository_mount_server.md)
 
 Mount Server Selection
 
-For the most features, the mount server selection depends on the guest OS of the workload that you work with:
+For most features, the mount server selection depends on the guest OS of the workload that you work with:
 
 * For Linux workloads, Veeam Backup & Replication selects the Linux mount server associated with the backup repository. If this mount server is not available, Veeam Backup & Replication uses the default Linux mount server.
 * For Microsoft Windows workloads, Veeam Backup & Replication selects the Microsoft Windows mount server associated with the backup repository. If this mount server is not available, Veeam Backup & Replication uses the default Windows mount server.
 
-If the mount server of the same OS is not available, Veeam Backup & Replication will try to use the mount server of another OS. However, some features, for example, Instant Recovery, Instant Disk Recovery and SureBackup, can use only mount servers of the same guest OS as the processed workload. For details, see [Requirements for Mount Servers](#reqs).
+If the mount server of the same OS is not available, Veeam Backup & Replication tries to use a mount server of another OS. Whether Veeam Backup & Replication can use a mount server of a different OS depends on what the operation does with the workload:
+
+* If the operation does not access the guest file system or registry of the workload, Veeam Backup & Replication can use a mount server of any OS. For example, Instant Recovery of a VMware vSphere VM to VMware vSphere (without secure restore) does not require a mount server of the same OS as the workload.
+* If the operation must access or modify the guest file system or registry, or convert the workload to another platform, Veeam Backup & Replication requires a mount server of the same OS as the workload. For example, it applies to secure restore, Instant Recovery from Hyper-V to VMware vSphere. For the list of operations that require the Microsoft Windows mount server, see [Requirements for Mount Servers](#reqs).
 
 For the guest OS file restore, the mount selection algorithm differs. For more information, see [Guest OS Restore - Mount Server Automatic Selection](guest_restore_scenarios.md).
 
@@ -90,14 +93,14 @@ Before you assign the role of a mount server, check the following requirements a
 
 * The following features require a Microsoft Windows mount server and may fail if the Windows mount server or the default Windows mount server is not configured:
 
-* [VMware replication job with Re-IP rules](replica_reip_vm.md)
-* [Instant Recovery](instant_recovery.md) of  Microsoft Windows workloads
-* [Instant Disk Recovery](instant_disk_recovery.md) for Microsoft Windows workloads
-* [Application item restore](restore_veeam_explorers.md)
-* [Secure restore](av_scan_about.md) for workloads with ReFS volumes
-* [Scan Backup](malware_detection_scan_backup.md) for workloads with ReFS volumes
-* [SureBackup](surebackup_recovery_verification.md)
-* [Guest OS file restore](guest_file_recovery.md) for Microsoft Windows workloads with ReFS volumes, or from workloads with data deduplication enabled for some volumes
+* [VMware replication job with Re-IP rules](replica_reip_vm.md).
+* [Secure restore](av_scan_about.md) for workloads with ReFS volumes including secure restore performed as part of other restores.
+* [Instant Recovery](instant_recovery.md) of Microsoft Windows workloads from another platform (for example, recovery from Hyper-V to vSphere).
+* [Instant Disk Recovery](instant_disk_recovery.md) for Microsoft Windows workloads.
+* [Application item restore](restore_veeam_explorers.md).
+* [Scan Backup](malware_detection_scan_backup.md) for workloads with ReFS volumes.
+* [SureBackup](surebackup_recovery_verification.md) of Microsoft Windows workloads, when a recovery verification option modifies the guest OS — that is, verifies a workload from another platform, disables firewall, performs Domain Controller authoritative or non-authoritative restore or performs an antivirus or YARA scan for ReFS volumes.
+* [Guest OS file restore](guest_file_recovery.md) for Microsoft Windows workloads with ReFS volumes, or from workloads with data deduplication enabled for some volumes.
 
 Related Topics
 
