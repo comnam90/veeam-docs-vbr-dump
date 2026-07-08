@@ -3,8 +3,8 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planning.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "7/7/2026"
+product_version: "13.0.2.29"
 ---
 
 # Planning and Preparation
@@ -34,7 +34,7 @@ Step 1. Define Protection Scope
 
 Define how many machines you need to protect and the amount of disk space the machines use.
 
-After defining the protection scope, calculate how much of the total amount of data is actually changing on a daily basis. This information is required because of the mechanism of how Veeam Backup & Replication creates a backup chain. At the first run, Veeam Backup & Replication creates a full backup file; at the second and further runs, Veeam Backup & Replication creates an incremental backup file that contains only the blocks that has been changed since the last backup. As a result, the daily change rate has a significant impact on the backup window and the storage capacity needed to store the backups. As Veeam Backup & Replication creates image-level or block level backups, you need to know the daily change rate on the block level. For VMware vSphere or Microsoft Hyper-V, you can use Veeam ONE to measure and generate a report on the daily change rate of VMs.
+After defining the protection scope, calculate how much of the total amount of data is actually changing on a daily basis. This information is required because of the mechanism of how Veeam Backup & Replication creates a backup chain. At the first run, Veeam Backup & Replication creates a full backup file; at the second and further runs, Veeam Backup & Replication creates an incremental backup file that contains only the blocks that have been changed since the last backup. As a result, the daily change rate has a significant impact on the backup window and the storage capacity needed to store the backups. As Veeam Backup & Replication creates image-level or block level backups, you need to know the daily change rate on the block level. For VMware vSphere or Microsoft Hyper-V, you can use Veeam ONE to measure and generate a report on the daily change rate of VMs.
 
 As a result of this step, you can make a list of machines to be protected, including the data on which of the machines contain databases, which of the machines host business critical applications, and how much of the total amount of data is changing on these machines on a daily basis. This information will help you in further steps of deployment planning.
 
@@ -55,10 +55,10 @@ Based on the analysis of your RTO and RPO, you can define your protection plan a
 
 Step 3. Select Veeam Backup & Replication Features
 
-|  | RPO: Seconds | RPO: Minutes | RPO: Hours (<24h) | RPO: Hours (24-48) |
-| RTO: Seconds | [Continuous Data Protection (CDP)](cdp_replication.md) (for VMware vSphere) | [Replication](replication.md) |  |  |
-| RTO: Minutes |  | [Snapshot Orchestration](schedule_snapshots.md) (for VMware vSphere) | [Backup](backup.md) | [Backup Copy](backup_copy.md) |
-| RTO: Hours |  |  |  | [Tape Device Support](tape_device_support.md) |
+| RPO: Seconds | RPO: Minutes | RPO: Hours (<24h) | RPO: Hours (24-48) |
+| RTO: Seconds | [Continuous Data Protection (CDP)](cdp_replication.md) (for VMware vSphere) | [Replication](replication.md) |
+| RTO: Minutes | [Snapshot Orchestration](schedule_snapshots.md) (for VMware vSphere) | [Backup](backup.md) | [Backup Copy](backup_copy.md) |
+| RTO: Hours | [Tape Device Support](tape_device_support.md) |
 
 Apart from backup and replication options, the RTO also depends on the method of recovery and recovery verification. Veeam Backup & Replication offers a number of recovery options for various disaster recovery scenarios, including Instant Recovery, image-level restore, file-level restore, restore of application items and so on. For details, see the following sections:
 
