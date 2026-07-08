@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_byb.html"
-last_updated: "6/4/2026"
+last_updated: "7/7/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,6 +13,7 @@ product_version: "13.0.2.29"
 Before you install Veeam Software Appliance, review known issues and limitations described in [release notes](https://helpcenter.veeam.com/rn/veeam_backup_13_release_notes.html#known-issues-and-limitations). Also, consider the following:
 
 * Veeam Software Appliance must be installed on a dedicated empty machine that meets the system requirements. For more information, see [System Requirements](system_requirements.md).
+* For environments with up to 5 workloads, Veeam Software Appliance can operate with 6 cores (vCPUs) and 16 GB RAM at minimum. On Intel processors with hybrid architecture, count only performance cores (P-cores) toward this minimum.
 * Veeam Software Appliance cannot be installed on machines that have multipath storage devices.
 * Essentials license holders can only deploy Veeam Software Appliance on any [hypervisor supported by Veeam](https://helpcenter.veeam.com/docs/vbr/userguide/platform_support.html?ver=13) and on [Veeam Ready — Appliance](https://www.veeam.com/partners/alliance-partner-technical-programs.html) certified hardware.
 
@@ -26,6 +27,8 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * You cannot install third-party software on a Veeam Software Appliance.
 
 * You cannot use third-party software to back up or restore a Veeam Software Appliance.
+
+* Veeam Software Appliance cannot be used to back up itself. To ensure continuous availability of the Veeam Software Appliance and minimize its downtime, use the [High Availability Cluster](high_availability_cluster.md) feature.
 
 * [VMware only] Veeam Software Appliance only supports the Network transport mode.
 * [Microsoft Hyper-V only] Linux-based Veeam Software Appliance does not support the SCVMM High Availability feature.
