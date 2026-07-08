@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage.html"
-last_updated: "5/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/6/2026"
+product_version: "13.0.2.29"
 ---
 
 # Backup to Object Storage
@@ -94,7 +94,7 @@ To learn about modes you can put extents of scale-out backup repositories to, se
 * [For Unix-based Veeam Agent computers] Consider the following:
 
 * Veeam Agent for Unix supports only Amazon S3, as well as selected types of S3 compatible storage: MinIO, IBM Cloud and Wasabi Cloud.
-* Veeam Agent for Unix does not support backup to object storage for computers added to a protection group for pre-installed
+* Veeam Agent for Unix does not support backup to object storage for computers added to a protection group for pre-installed Veeam Agents.
 * [For Oracle Solaris 10 1/13] To enable Veeam Agent connection to S3 compatible storage repositories, you must install the necessary CA certificates. For more information on installing the certificates, see [this Veeam KB article](https://veeam.com/kb4735).
 * Veeam Agent for Unix only supports backup repositories that are configured to have [direct connection](#direct) to object storage.
 
