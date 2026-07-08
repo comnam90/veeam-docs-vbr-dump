@@ -3,8 +3,8 @@ title: "Backup Chain Formats"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/per_vm_backup_files.html"
-last_updated: "3/11/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/7/2026"
+product_version: "13.0.2.29"
 ---
 
 # Backup Chain Formats
@@ -78,10 +78,10 @@ Limitations and Considerations for Per-Machine Backup Files
 When planning to use per-machine backup files, consider the following limitations:
 
 * We recommend that you use the Use per-machine backup files option, especially for deduplicating storage appliances used as backup repositories. Veeam Backup & Replication will write machine data to the backup repository in several streams, which will improve the backup job performance. However, deduplication may be less effective compared to deduplication for single-file backups. Deduplication works within one backup file. For single-file backups, one backup file stores data for all machines, which is why data is deduplicated for all machines. Per-machine backups store data for one machine, which is why data is deduplicated for one machine only.
-* [For Veeam Agent backup jobs] Veeam Backup & Replication ignores the Use per-machine backup files option. The way Veeam Backup & Replication creates backup files depends on the objects included in the backup job:
+* [For Veeam Agent backup jobs and policies] Veeam Backup & Replication creates a separate backup file for each object in the backup job, regardless of the backup chain format configured for the target repository:
 
-* If several Veeam Agent machines are included in the backup job, Veeam Backup & Replication creates a separate backup file for each machine.
-* If failover clusters are included in the backup job, Veeam Backup & Replication creates a separate backup file for each cluster.
+* For each protected computer, Veeam Backup & Replication creates one backup file.
+* For each failover cluster, Veeam Backup & Replication creates one backup file.
 
 Upgrading Backup Chain Formats
 
