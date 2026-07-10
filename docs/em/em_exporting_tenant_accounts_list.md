@@ -3,8 +3,8 @@ title: "Exporting List of Tenant Accounts"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_exporting_tenant_accounts_list.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Exporting List of Tenant Accounts

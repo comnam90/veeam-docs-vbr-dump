@@ -3,8 +3,8 @@ title: "Step 1. Launch Entire VM Restore Wizard"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/entire_vm_restore_hv_launch.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 1. Launch Entire VM Restore Wizard

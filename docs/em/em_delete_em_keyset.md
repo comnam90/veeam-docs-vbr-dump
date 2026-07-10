@@ -3,8 +3,8 @@ title: "Deleting Enterprise Manager Keyset"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_delete_em_keyset.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Deleting Enterprise Manager Keyset

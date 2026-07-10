@@ -3,8 +3,8 @@ title: "Viewing Self-Service Backup Portal Statistics"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_viewing_statistics_vsphere_self_service.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Viewing Self-Service Backup Portal Statistics

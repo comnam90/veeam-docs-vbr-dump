@@ -3,8 +3,8 @@ title: "Managing Configurations for Cloud Director Organizations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_managing_vcd_org.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Managing Configurations for Cloud Director Organizations

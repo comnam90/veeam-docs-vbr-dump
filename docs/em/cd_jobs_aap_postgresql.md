@@ -3,8 +3,8 @@ title: "PostgreSQL Archive Log Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cd_jobs_aap_postgresql.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # PostgreSQL Archive Log Settings
