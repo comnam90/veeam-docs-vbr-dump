@@ -3,8 +3,8 @@ title: "Adding Backup Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/adding_backup_server.html"
-last_updated: "3/27/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Adding Backup Servers
@@ -24,7 +24,7 @@ Before you add backup servers, consider the following:
 
 * Data collection from backup servers of earlier major and minor versions takes more time, which can be critical if many backup servers are added to Enterprise Manager.
 
-* Enterprise Manager on Linux uses Kerberos authentication to communicate with backup servers. This means that you can add only domain-joined backup servers in Enterprise Manager on Linux. Workgroup backup servers cannot be added, as Kerberos authentication does not support local accounts.
+* Enterprise Manager on Linux uses Kerberos authentication to communicate with Microsof Windows backup servers. If you want to add a Microsoft Windows backup server, it must be joined to a domain; workgroup backup servers cannot be added bacause Kerberos authentication does not support local accounts. Linux backup servers do not have to be joined to a domain.
 
 Enterprise Manager on Microsoft Windows also uses Kerberos by default, but switches to NTLM authentication for workgroup backup servers or when Kerberos is not available. This allows you to add both domain-joined and workgroup backup servers in Enterprise Manager on Microsoft Windows.
 
