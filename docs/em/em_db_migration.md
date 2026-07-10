@@ -3,14 +3,16 @@ title: "Migrating Enterprise Manager from Microsoft SQL Server to PostrgeSQL"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_db_migration.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Migrating Enterprise Manager from Microsoft SQL Server to PostrgeSQL
 
 
-You can migrate the Enterprise Manager configuration database from Microsoft SQL Server to PostgreSQL. To perform the migration, back up the Enterprise Manager configuration database based on Microsoft SQL Server and restore it to PostgreSQL.
+You can migrate the Enterprise Manager configuration database from Microsoft SQL Server to PostgreSQL. If you want to migrate the configuration database from one Microsoft SQL Server instance to another Microsoft SQL Server instance or from one PostgreSQL instance to another PostgreSQL instance, contact [Veeam Customer Support](https://www.veeam.com/support.html).
+
+When performing the migration, you back up the Enterprise Manager configuration database based on Microsoft SQL Server and restore it to PostgreSQL.
 
 Enterprise Manager migration lets you change the engine of the Enterprise Manager configuration database and keep existing Enterprise Manager configurations including notification settings, Enterprise Manager accounts and roles, retention settings for index files and event history, self-service configurations for the Veeam Self-Service Backup Portal and vSphere Self-Service Backup Portal, SAML authentication settings, directory account settings, key management settings and encryption keys.
 
