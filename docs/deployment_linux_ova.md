@@ -3,14 +3,16 @@ title: "Installing Veeam Software Appliance from OVA"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_ova.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Installing Veeam Software Appliance from OVA
 
 
-You can use the OVA file to automatically deploy a VM in vSphere with predefined hardware and Veeam Software Appliance ready for configuration.To deploy Veeam Software Appliance using the OVA file, perform the following steps:
+You can use the OVA file to automatically deploy a VM in vSphere with predefined hardware and Veeam Software Appliance ready for configuration.
+
+To deploy Veeam Software Appliance using the OVA file, perform the following steps:
 
 1. Download the latest version of the Veeam Software Appliance VMware OVA file from the [Veeam](https://www.veeam.com/products/data-platform-trial-download.html) website.
 2. Deploy the OVA template in vSphere. For more information on how to perform this process, see the [vSphere documentation](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/deploying-ovf-templatesvsphere-vm-admin.html).
