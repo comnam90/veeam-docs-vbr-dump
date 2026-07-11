@@ -3,8 +3,8 @@ title: "Step 1. Launch PostgreSQL Restore Wizard"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_postgresql_custom_settings_launch.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 1. Launch PostgreSQL Restore Wizard
@@ -33,4 +33,5 @@ For more information on configuring transaction log backup, see [PostgreSQL Arch
 
 [![Launching PostgreSQL Restore Wizard](images/item_restore_postgres_alternative.webp)](images/item_restore_postgres_alternative.webp "Launching PostgreSQL Restore Wizard")
 
+Page updated 2026-07-10
 
