@@ -3,8 +3,8 @@ title: "Converting PO to JSON"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_lang_convert.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Converting PO to JSON
@@ -49,4 +49,5 @@ The JSON file will be created in the folder of the PO file.
 | Tip |
 | To view help for the Veeam.Backup.Localization.PoConverter.exe utility, run the utility with the /help parameter. |
 
+Page updated 2026-07-10
 
