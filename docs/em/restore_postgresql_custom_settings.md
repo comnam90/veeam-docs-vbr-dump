@@ -3,8 +3,8 @@ title: "Restore with Custom Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_postgresql_custom_settings.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore with Custom Settings
@@ -19,4 +19,5 @@ To restore a PostgreSQL instance with custom settings, use the PostgreSQL Restor
 3. [Specify restore settings](restore_postgresql_custom_settings_restore_settings.md).
 4. [Specify location for database tablespaces](restore_postgresql_custom_settings_tablespaces.md).
 
+Page updated 2026-07-10
 
