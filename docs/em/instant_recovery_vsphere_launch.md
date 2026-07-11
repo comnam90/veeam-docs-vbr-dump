@@ -3,8 +3,8 @@ title: "Step 1. Launch Instant Recovery Wizard"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_vsphere_launch.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 1. Launch Instant Recovery Wizard
@@ -19,4 +19,5 @@ Alternatively, you can right-click the VM and select Instant Recovery.
 
 [![Launching Instant Recovery Wizard](images/instant_recovery_vmware_launch.webp)](images/instant_recovery_vmware_launch.webp "Launching Instant Recovery Wizard")
 
+Page updated 2026-07-10
 
