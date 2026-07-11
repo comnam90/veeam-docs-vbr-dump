@@ -3,8 +3,8 @@ title: "Finalizing Instant Recovery to Microsoft Hyper-V"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_hv_finalize.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Finalizing Instant Recovery to Microsoft Hyper-V
@@ -52,4 +52,5 @@ To remove a recovered VM, do the following:
 
 [![Unpublishing Recovered VM](images/instant_recovery_hv_stop_publishing.webp)](images/instant_recovery_hv_stop_publishing.webp "Unpublishing Recovered VM")
 
+Page updated 2026-07-10
 
