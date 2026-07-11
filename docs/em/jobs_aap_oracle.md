@@ -3,8 +3,8 @@ title: "Oracle Archived Redo Log Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/jobs_aap_oracle.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Oracle Archived Redo Log Settings
@@ -67,4 +67,5 @@ When the parent backup job (job creating an image-level backup) runs, Veeam Back
 
 ![Oracle Archived Redo Log Settings](images/em_edit_job_aaip_oracle_new.webp "Handling Archived Logs")
 
+Page updated 2026-07-10
 
