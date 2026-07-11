@@ -3,8 +3,8 @@ title: "Instant File Share Recovery"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_nas_recovery.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Instant File Share Recovery
@@ -22,4 +22,5 @@ For NFS file shares, you can use the feature to publish a point-in-time file sha
 
 After you have performed instant file share recovery, you have to finalize it. For more information, see [Finalizing Instant File Share Recovery](instant_nas_recovery_finalize.md).
 
+Page updated 2026-07-10
 
