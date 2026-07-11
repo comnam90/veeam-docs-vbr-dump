@@ -3,16 +3,16 @@ title: "Veeam Software Appliance Installation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Software Appliance Installation
 
 
-To start working with Veeam Backup & Replication on Linux, you must configure a backup server — install Veeam Software Appliance on a machine that meets the system requirements. To do this, you can use the ISO or OVA file.
+To start working with Veeam Backup & Replication on Linux, you must configure a backup server — install Veeam Software Appliance on a machine that meets the system requirements. To do this, you can use the ISO or OVA file.
 
-After you install Veeam Software Appliance, you can access Veeam Backup & Replication remotely using the [web UI](vbr_web_console.md) or [desktop application](vbr_ui.md).
+After you install Veeam Software Appliance, you can access Veeam Backup & Replication remotely using the [web UI](vbr_web_console.md) or [desktop application](vbr_ui.md).
 
 In This Section
 
