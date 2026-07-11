@@ -3,8 +3,8 @@ title: "Step 3. Read and Accept License Agreements"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_setup_accept_license_agreement.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 3. Read and Accept License Agreements
@@ -14,4 +14,5 @@ At the License Agreement step of the wizard, read Veeam License Agreement and li
 
 ![Step 3. Read and Accept License Agreements](images/em_setup_eula.webp "Accepting License Agreement")
 
+Page updated 2026-07-10
 
