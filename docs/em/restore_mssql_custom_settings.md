@@ -3,8 +3,8 @@ title: "Restore with Custom Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_mssql_custom_settings.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore with Custom Settings
@@ -19,4 +19,5 @@ To restore an Oracle database with custom settings, use the SQL Restore wizard.
 3. [Specify AlwaysOn restore settings](restore_mssql_custom_settings_alwayson.md).
 4. [Specify files location](restore_mssql_custom_settings_files.md).
 
+Page updated 2026-07-10
 
