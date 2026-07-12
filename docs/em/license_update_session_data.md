@@ -3,8 +3,8 @@ title: "License Update Session Data"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/license_update_session_data.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # License Update Session Data
@@ -22,4 +22,5 @@ License Update Session Data
 | “Your contract has expired, so the license key cannot be updated automatically. Please contact your Veeam sales representative to renew your contract.” | Your contract has expired and needs to be renewed. | Contact your Veeam sales representative for contract renewal. |
 | “General license key generation error has occurred” | Web licensing server did not return a new key upon request due to some other reason. | Wait for 24 hours (Veeam will re-try to update the key). Retries will take place for 1 month after key expiration date. |
 
+Page updated 2026-07-10
 
