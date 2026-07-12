@@ -3,8 +3,8 @@ title: "Performing Instant Recovery to Microsoft Hyper-V"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_hv_perform.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Performing Instant Recovery to Microsoft Hyper-V
@@ -20,4 +20,5 @@ To instantly recover a VM, use the Instant Recovery to Microsoft Hyper-V wizard.
 6. [Configure network mapping](instant_recovery_hv_network.md).
 7. [Review the recovery settings](instant_recovery_hv_summary.md).
 
+Page updated 2026-07-10
 
