@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_limitations.html"
-last_updated: "6/25/2026"
+last_updated: "7/9/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -92,6 +92,8 @@ When restoring Proxmox VE resources, consider the following:
 * Starting from version 9, Proxmox VE supports the [snapshot-as-volume-chain](https://pve.proxmox.com/wiki/Storage%3A_LVM) functionality for some storage types. Since this functionality is available for VMs using QEMU version 10 and later, Veeam Plug-in for Proxmox VE is not able to restore VMs using an earlier QEMU version to a storage with the Allow Snapshots as Volume-Chain setting enabled. To work around the issue, see [this Veeam KB article](https://www.veeam.com/kb4773).
 
 * For backups stored in [HPE StoreOnce Cloud Bank Storage](storeonce_supported_features.md) repositories, Veeam Plug-in for Proxmox VE supports only file-level restore.
+
+* Veeam Plug-in for Proxmox VE does not support restore of High Availability (HA) VM settings.
 
 * You cannot perform VM restore from a tape to Enter value. A tape backup needs to be returned to a supported repository to complete the restore operation.
 
