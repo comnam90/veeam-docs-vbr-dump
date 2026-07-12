@@ -3,8 +3,8 @@ title: "Working with Veeam Self-Service Backup Portal"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_working_with_portal.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Working with Veeam Self-Service Backup Portal
@@ -25,4 +25,5 @@ In Veeam Self-Service Backup Portal, members of VMware Cloud Director organizati
 
 4
 
+Page updated 2026-07-10
 
