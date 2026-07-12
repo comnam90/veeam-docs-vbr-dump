@@ -3,8 +3,8 @@ title: "Enabling and Disabling Jobs"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/enable_disable_job.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Enabling and Disabling Jobs
@@ -32,4 +32,5 @@ To enable or disable a job:
 
 [![Disabling Job](images/em_job_disable.webp)](images/em_job_disable.webp "Disabling Job")
 
+Page updated 2026-07-10
 
