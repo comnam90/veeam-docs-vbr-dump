@@ -3,8 +3,8 @@ title: "Getting Technical Support"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_export_logs.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Getting Technical Support
@@ -31,7 +31,7 @@ Downloading Logs
 To download the product logs, do the following:
 
 1. From the main menu of the Veeam Backup & Replication console, select Help > Support Information.
-2. At the Scope step of the Export Logs wizard, select the Export all logs for selected components option. Then, in the Managed servers list, select the backup server and the VM running as the backup appliance.
+2. At the Scope step of the Export Logs wizard, select the Export all logs for selected components option. Then, in the Managed servers list, select the backup server.
 
 Complete the wizard as described in section [Exporting Logs](https://helpcenter.veeam.com/docs/backup/vsphere/exporting_logs.html?ver=120).
 
