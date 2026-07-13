@@ -3,8 +3,8 @@ title: "Exporting List of Tenant Accounts"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_exporting_tenant_accounts_list.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Exporting List of Tenant Accounts
@@ -27,4 +27,5 @@ The report is saved to the excelreport.xls file.
 
 ![Exporting List of Tenant Accounts](images/em_vsphere_selfservice_report.webp "Report on Tenant Accounts")
 
+Page updated 2026-07-10
 
