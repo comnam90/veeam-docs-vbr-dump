@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_used_ports.html"
-last_updated: "4/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Ports
@@ -56,8 +56,8 @@ The vPower NFS Service is a Microsoft Windows service that runs on a Microsoft W
 vPower NFS Service
 
 | From | To | Protocol | Port | Notes |
-| Nutanix AHV cluster | Microsoft Windows server with the mount server role running vPower NFS Service | TCP  UDP | 111 | Used by the Port Mapper service. |
-| TCP  UDP | 1058+ or 1063+ | Used as default mount port. The number of port depends on where the vPower NFS Service is located:   * 1058+: If the vPower NFS Service is located on the backup server. * 1063+: If the vPower NFS Service is located on a separate Microsoft Windows machine.   If port 1058/1063 is occupied, the succeeding port numbers will be used. |
-| TCP  UDP | 2049+ | Used as NFS port. If port 2049 is occupied, the succeeding port numbers will be used. |
+| Nutanix AHV cluster | Microsoft Windows or Linux server with the mount server role running vPower NFS Service | TCP UDP | 111 | Used by the Port Mapper service. |
+| TCP UDP | 1058+ or 1063+ | Used as default mount port. The number of port depends on where the vPower NFS Service is located:   * 1058+: If the vPower NFS Service is located on the backup server. * 1063+: If the vPower NFS Service is located on a separate Microsoft Windows machine.   If port 1058/1063 is occupied, the succeeding port numbers will be used. |
+| TCP UDP | 2049+ | Used as NFS port. If port 2049 is occupied, the succeeding port numbers will be used. |
 
 
