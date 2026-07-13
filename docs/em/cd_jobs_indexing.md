@@ -3,8 +3,8 @@ title: "Guest OS File Indexing"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cd_jobs_indexing.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Guest OS File Indexing
@@ -40,4 +40,5 @@ Consider the following:
 
 1. Click OK to save the settings and close the window.
 
+Page updated 2026-07-10
 
