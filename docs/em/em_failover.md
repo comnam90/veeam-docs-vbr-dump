@@ -3,8 +3,8 @@ title: "Failover Plans"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_failover.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Failover Plans
@@ -53,4 +53,5 @@ To view the failover progress, on the Machines tab, click History.
 
 [![Running Failover Plan](images/em_failover_plan.webp)](images/em_failover_plan.webp "Running Failover Plan")
 
+Page updated 2026-07-10
 
