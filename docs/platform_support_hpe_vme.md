@@ -3,7 +3,7 @@ title: "HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_hpe_vme.html"
-last_updated: "6/30/2026"
+last_updated: "7/9/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,7 +17,7 @@ Veeam Backup & Replication provides support for the following versions of the HP
 HPE Morpheus VM Essentials Virtual Infrastructure
 
 | Specification | Requirement |
-| Platform | HPE Morpheus VM Essentials Appliance versions 8.0.13 and 8.1 (host agent version 3.1.3 or later, morpheus-ws-node package version 3.3.19-1 or later, alletra plug-in version 1.8.1 or later) |
+| Platform | HPE Morpheus VM Essentials and HPE Morpheus Enterprise Software versions 8.0.13-2 - 9.0. The following versions of the components are required:   * host agent: 3.1.3 or later * morpheus-ws-node package:3.3.19-1 or later * alletra plugin: 1.8.1 or later (applies only if Alletra storage is used)   At least one datastore of the Directory Pool, NFS Pool, GFS2 Pool type is required in each HPE Morpheus VM Essentials cluster. The datastore must be in Active state. |
 | Hypervisor | KVM |
 | Management Server | HPE Morpheus VM Essentials Management Console |
 

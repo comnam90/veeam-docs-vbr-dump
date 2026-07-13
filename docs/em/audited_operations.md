@@ -3,8 +3,8 @@ title: "Audited Operations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/audited_operations.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Audited Operations
@@ -15,7 +15,6 @@ Audit reports contain records about the following operations performed on a back
 Audited Operations
 
 | Operation Type | Operation Name | Description |
-| User Activity | Login | User login |
 | Operations with Jobs | JobEnable | Enabling a job |
 | JobDisable | Disabling a job |
 | JobStart | Starting a job |
@@ -44,4 +43,5 @@ Audited Operations
 | NasFileLevelRestore | Performing file-level restore |
 | Mount | Mounting backup content to a mount server |
 
+Page updated 2026-07-10
 

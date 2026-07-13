@@ -3,8 +3,8 @@ title: "Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_database_processing_general.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "7/9/2026"
+product_version: "13.0.2.29"
 ---
 
 # Processing Settings
@@ -19,7 +19,7 @@ To specify processing settings:
 
 With this authentication method, Veeam Backup & Replication uses the OS user credentials to connect to the Oracle server. Then, Veeam Plug-In starts Oracle Recovery Manager (RMAN) using the OS user credentials. After that, RMAN uses the OS user credentials to connect to the Oracle database.
 
-To set the operating system authentication, from the Specify OS user credentials with SYSDBA privileges list, select an OS user account with SYSDBA permissions on the database. The OS user account must be a user on the Oracle server with the required permissions to run RMAN.
+To set operating system authentication, from the Specify OS user credentials with SYSDBA privileges list, select an OS user account with SYSDBA permissions on the database. The OS user account must be a user on the Oracle server with the required permissions to run RMAN.
 
 If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add credentials. For details, see [Credentials Manager](credentials_manager.md).
 
@@ -34,7 +34,7 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 With this authentication method, Veeam Backup & Replication uses the OS user credentials to connect to the Oracle server. Then, Veeam Plug-In starts RMAN using the OS user credentials. After that, RMAN uses the database user credentials to connect to the Oracle database. This process ensures that the database access is separate from the OS user access rights.
 
-To set the database authentication, do the following:
+To set database authentication, do the following:
 
 1. From the Specify OS user credentials to connect to the server list, select an OS user account that Veeam Plug-In will use to connect to the Oracle server. The OS user account must be a user on the Oracle server with the required permissions to run RMAN.
 2. From the Specify database user credentials list, select a database user account. The database user account must have the SYSDBA permission on the database. To learn more about Oracle permissions, see [this Oracle article](https://docs.oracle.com/database/121/ADMIN/dba.htm#ADMIN11047).

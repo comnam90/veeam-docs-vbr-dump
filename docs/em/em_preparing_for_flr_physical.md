@@ -3,8 +3,8 @@ title: "Preparing for File Browsing and Restore"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_preparing_for_flr_physical.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Preparing for File Browsing and Restore
@@ -15,4 +15,5 @@ You can browse and restore files from a backup of a physical server created by V
 * Preparing for restore from a [Windows Server](em_prepare_physical_windows.md) backup
 * Preparing for restore from a [Non-Windows Server](em_prepare_physical_non_windows.md) backup
 
+Page updated 2026-07-10
 

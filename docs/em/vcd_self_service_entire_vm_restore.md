@@ -3,8 +3,8 @@ title: "Entire VM Restore"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_self_service_entire_vm_restore.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Entire VM Restore
@@ -23,4 +23,5 @@ Alternatively, you can right-click the VM and select Entire VM Restore.
 
 [![Veeam Self-Service Backup Portal Accessed by URL](images/vcd_self_service_entire_vm_restore.webp)](images/vcd_self_service_entire_vm_restore.webp "Veeam Self-Service Backup Portal Accessed by URL")
 
+Page updated 2026-07-10
 

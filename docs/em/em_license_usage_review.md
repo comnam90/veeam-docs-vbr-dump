@@ -3,8 +3,8 @@ title: "Reviewing Monthly Usage Report"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_license_usage_review.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Reviewing Monthly Usage Report
@@ -32,4 +32,5 @@ On the report page, you can perform the following actions:
 
 [![Reviewing Monthly Usage Report](images/em_license_report_auto.webp)](images/em_license_report_auto.webp "Reviewing Monthly Usage Report")
 
+Page updated 2026-07-10
 
