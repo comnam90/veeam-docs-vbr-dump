@@ -3,8 +3,8 @@ title: "Managing Jobs"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/managing_jobs.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Managing Jobs
@@ -20,11 +20,12 @@ Consider the following limitations:
 * Veeam Backup for Google Cloud
 * Veeam Backup for Microsoft Azure
 
-* For the following Veeam plug-ins, Enterprise Manager displays only backup copy jobs:
+* For the following workloads, Enterprise Manager displays only backup copy jobs:
 
-* Veeam Backup for Nutanix AHV
-* Veeam Backup for Proxmox VE
-* Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization
+* Nutanix AHV
+* Oracle Linux Virtualization Manager and Red Hat Virtualization
+* Proxmox VE
+* Scale Computing HyperCore
 
 * For physical machines, Enterprise Manager displays the following job types:
 
@@ -41,4 +42,5 @@ In This Section
 * [Cloning Jobs](cloning_backup_replication_jobs.md)
 * [Deleting Jobs](em_delete_job.md)
 
+Page updated 2026-07-10
 
