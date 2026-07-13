@@ -3,8 +3,8 @@ title: "Restore to Original Location"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_oracle_1click_restore.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Restore to Original Location
@@ -45,4 +45,5 @@ To view a restore session log, click History.
 
 [![Restore to Original Location](images/em_items_oracle.webp)](images/em_items_oracle.webp "Restore to Original Location")
 
+Page updated 2026-07-10
 
