@@ -3,8 +3,8 @@ title: "Step 1. Launch Utility"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/dbconfig_launch.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 1. Launch Utility
@@ -16,4 +16,5 @@ Alternatively, you can run the Veeam.Backup.DBConfig.exe file. By default, the p
 
 To run the utility, you must have administrative rights on the local machine, as long as the utility makes changes to the registry. If prompted at the launch, choose Run as administrator.
 
+Page updated 2026-07-10
 
