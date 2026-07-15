@@ -3,7 +3,7 @@ title: "Step 5. Review Settings and Install Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_proxy_install_components.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -14,4 +14,5 @@ At the Review step of the wizard, review components which are already installed 
 
 ![Step 5. Review Settings and Install Components](images/cdp_proxy_review.webp "Review settings")
 
+Page updated 2026-07-14
 
