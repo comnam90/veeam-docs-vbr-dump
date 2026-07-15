@@ -3,7 +3,7 @@ title: "Step 2. Select VMs to Relocate"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_vms.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,4 +24,5 @@ To quickly find the necessary object, you can use the search field at the bottom
 
 ![Step 2. Select VMs to Relocate](images/migration_vms.webp)
 
+Page updated 2026-07-14
 
