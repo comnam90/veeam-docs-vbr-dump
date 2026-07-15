@@ -3,7 +3,7 @@ title: "Step 4. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/windows_server_review.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ At the Review step of the wizard, review what Veeam Backup & Replication compone
 
 ![Step 4. Review Components](images/add_server_windows_review.webp)
 
+Page updated 2026-07-14
 

@@ -3,7 +3,7 @@ title: "Veeam Backup Validator"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_validator.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ Related Topics
 
 [Using Veeam Backup Validator](backup_validator_validate.md)
 
+Page updated 2026-07-14
 

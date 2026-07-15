@@ -3,7 +3,7 @@ title: "Step 4. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wan_components.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,4 +22,5 @@ At the Review step of the wizard, review what components are already installed o
 
 ![Step 4. Review Components](images/add_wan_accelerator_review.webp)
 
+Page updated 2026-07-14
 

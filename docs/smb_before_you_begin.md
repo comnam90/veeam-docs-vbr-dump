@@ -3,7 +3,7 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_before_you_begin.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ Before you add a Microsoft SMB3 server or cluster to the backup infrastructure, 
 * [For Veeam Cloud Connect Replication scenario] You cannot use Microsoft SMB3 shared folder as a storage for VM replicas.
 * To read/write data from/to an SMB3 share, Veeam Backup & Replication uses the account that you provide when adding the Microsoft SMB3 server or cluster. Make sure that this account has Full Control permissions in the security settings for SMB3 shares configured on the scale-out file server.
 
+Page updated 2026-07-14
 
