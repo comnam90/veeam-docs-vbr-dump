@@ -3,7 +3,7 @@ title: "Exporting Objects"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_exporting_objects.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ To export Active Directory objects, do the following:
 
 [![Exporting Objects](images/vead_export_object.webp)](images/vead_export_object.webp "Exporting Objects")
 
+Page updated 2026-07-14
 
