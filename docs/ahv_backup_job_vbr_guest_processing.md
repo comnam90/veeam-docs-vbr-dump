@@ -3,8 +3,8 @@ title: "Step 5. Specify Guest Processing Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_backup_job_vbr_guest_processing.html"
-last_updated: "2/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Specify Guest Processing Options
@@ -22,7 +22,7 @@ For VMs running Microsoft SQL Server, Oracle Server or PostgreSQL Server applica
 
 Considerations and Limitations
 
-If you enable application-aware processing or guest files system indexing, consider the following:
+If you enable application-aware processing or guest file system indexing, consider the following:
 
 * Veeam Plug-in for Nutanix AHV will not be able to [obtain VM data from replica clusters](ahv_backup_job_vbr_assign_vms.md).
 * Veeam Plug-in for Nutanix AHV will not be able to [create PD snapshots](ahv_nutanix_snapshots.md#PDsnapshots) of protection domains included into the backup scope — it will back up VMs and their volume groups as if processing individual virtual machines.
@@ -32,7 +32,11 @@ If you enable application-aware processing or guest files system indexing, consi
 
 Related Topics
 
+* [Ports required for guest processing](used_ports.md#guest_processing_components)
+* [Requirements and limitations for Microsoft SQL Server logs backup](https://helpcenter.veeam.com/docs/vbr/userguide/sql_backup_hiw.html?ver=13)
+
 * [Requirements and limitations for PostgreSQL WAL files backup](postgresql_backup.md)
 * [Requirements and limitations for Oracle archived redo logs backup](oracle_backup.md)
 
+Page updated 2026-07-14
 
