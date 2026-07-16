@@ -3,7 +3,7 @@ title: "Instant Recovery to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_another_server.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ To perform instant recovery of a database to another server, use the Instant Rec
 6. [Specify switchover settings](vesql_instant_switchover.md).
 7. [Finalize the Instant Recovery session](vesql_instant_finish.md).
 
+Page updated 2026-07-14
 
