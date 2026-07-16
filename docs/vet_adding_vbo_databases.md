@@ -3,7 +3,7 @@ title: "Adding Veeam Backup for Microsoft 365 Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_adding_vbo_databases.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -28,4 +28,5 @@ To manually add databases that store Microsoft 365 organization data, do the fol
 | Note |
 | Make sure you have disabled the Veeam Backup Proxy for Microsoft 365 Service when adding local databases. You can stop this service by using the services.msc console. If you try to add a database having this service still in progress, you will receive an error message and will not be able to access the database due to database lock. |
 
+Page updated 2026-07-14
 

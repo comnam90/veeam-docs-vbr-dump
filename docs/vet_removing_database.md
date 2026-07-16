@@ -3,7 +3,7 @@ title: "Removing Organizations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_removing_database.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ To remove an organization from the application scope, right-click an organizatio
 
 [![Removing Organizations ](images/teams_removing.webp)](images/teams_removing.webp "Removing Organizations ")
 
+Page updated 2026-07-14
 

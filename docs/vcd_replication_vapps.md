@@ -3,7 +3,7 @@ title: "Step 3. Select vApps to Replicate"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_vapps.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,4 +24,5 @@ When you add new items to VM containers, Veeam Backup & Replication updates sett
 
 ![Step 3. Select vApps to Replicate](images/select_vapps.webp)
 
+Page updated 2026-07-14
 

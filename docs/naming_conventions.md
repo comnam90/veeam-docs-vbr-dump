@@ -3,7 +3,7 @@ title: "Naming Conventions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/naming_conventions.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ If you plan to store backups on a repository operating in the per-machine mode, 
 
 If you use a reserved name, Veeam Backup & Replication may not work as expected. For more information on naming conventions in Microsoft Windows, see [Microsoft Docs](https://msdn.microsoft.com/en-us/library/aa365247.aspx?f=255&MSPPError=-2147217396#naming_conventions).
 
+Page updated 2026-07-14
 
