@@ -3,7 +3,7 @@ title: "Creating SAP HANA Backup Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/create_policy_create_sap_hana.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,4 +24,5 @@ Before configuring an application backup policy, [check prerequisites](policy_sa
 8. [Specify the backup schedule](policy_sap_hana_schedule.md).
 9. [Review backup policy settings](policy_sap_hana_summary.md).
 
+Page updated 2026-07-14
 
