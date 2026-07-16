@@ -3,7 +3,7 @@ title: "Step 5. Select Target Datastore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_datastore_hv.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -29,4 +29,5 @@ The host or cluster where you plan to register VMs must have access to the to th
 
 ![Step 5. Select Target Datastore](images/hv_failback_datastore.webp)
 
+Page updated 2026-07-14
 
