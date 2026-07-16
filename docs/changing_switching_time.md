@@ -3,7 +3,7 @@ title: "Changing Switching Time"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/changing_switching_time.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,4 +22,5 @@ If the switching time operation failed, you can retry this operation again. To p
 
 [![Changing Switching Time](images/vcd_change_switching_time.webp)](images/vcd_change_switching_time.webp)
 
+Page updated 2026-07-14
 
