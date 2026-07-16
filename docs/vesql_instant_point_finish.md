@@ -3,7 +3,7 @@ title: "Step 5. Finalize Instant Recovery Session"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_point_finish.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -29,4 +29,5 @@ Related Topics
 * [Managing Instant Recovery Session](vesql_instant_session.md)
 * [Switchover](vesql_switchover.md)
 
+Page updated 2026-07-14
 
