@@ -3,7 +3,7 @@ title: "Step 6. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compatible_review.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ If the backup repository contains guest file system index files, select the Impo
 
 ![Step 6. Review Components](images/s3_compatible_add_review.webp)
 
+Page updated 2026-07-14
 

@@ -3,7 +3,7 @@ title: "Step 3. Specify Server Type"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_type.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ At the Type step of the wizard, select what type of Microsoft SMB3 server you wa
 
 ![Step 3. Specify Server Type](images/add_server_smb_type.webp)
 
+Page updated 2026-07-14
 

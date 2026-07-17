@@ -3,7 +3,7 @@ title: "Removing Stores"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_vex_database.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ To remove a store from the application scope, right-click a store in the navigat
 
 [![Removing Microsoft Exchange Stores](images/vex_removing_store.webp)](images/vex_removing_store.webp "Removing Microsoft Exchange Stores")
 
+Page updated 2026-07-14
 
