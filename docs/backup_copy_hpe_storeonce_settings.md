@@ -3,7 +3,7 @@ title: "Step 4. Specify Advanced Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_hpe_storeonce_settings.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,4 +21,5 @@ At the Storage Mapping step of the wizard, you can specify the following setting
 | Tip |
 | After you specify necessary settings for the backup copy job, you can save them as default settings. To do this, click Save as Default at the bottom left corner of the Advanced Settings window. When you create a new backup copy job, Veeam Backup & Replication will automatically apply the default settings to the new job. |
 
+Page updated 2026-07-14
 
