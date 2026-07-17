@@ -3,7 +3,7 @@ title: "Using 1-Click Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_one_click_restore.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,4 +23,5 @@ In This Section
 * [1-Click Container Restore](vead_one_click_restore_containers.md)
 * [1-Click Object Restore](vead_one_click_restore_objects.md)
 
+Page updated 2026-07-14
 
