@@ -3,7 +3,7 @@ title: "Step 4. Specify Media Set Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_set.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,4 +22,5 @@ In the Automatically create new media set section, specify conditions for creati
 
 ![Step 4. Specify Media Set Options](images/add_media_pool_set.webp)
 
+Page updated 2026-07-17
 
