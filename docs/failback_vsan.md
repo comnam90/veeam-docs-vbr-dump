@@ -3,7 +3,7 @@ title: "Failback on VSAN"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_vsan.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,4 +25,5 @@ Before Veeam Backup & Replication starts the failback process, it checks the loc
 
 The rest of the failback process does not differ from the regular failback process.
 
+Page updated 2026-07-17
 
