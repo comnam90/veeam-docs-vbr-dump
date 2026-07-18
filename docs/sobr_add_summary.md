@@ -3,7 +3,7 @@ title: "Step 7. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_summary.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ Wait for the scale-out backup repository to be added to the backup infrastructur
 
 [![Step 7. Finish Working with Wizard](images/scaleout_repo_add_summary.webp)](images/scaleout_repo_add_summary.webp)
 
+Page updated 2026-07-17
 
