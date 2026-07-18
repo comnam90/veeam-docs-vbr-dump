@@ -3,7 +3,7 @@ title: "Moving Unmanaged Computer to Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_move.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -41,4 +41,5 @@ To move an unmanaged computer to a protection group that is already created in t
 2. In the inventory pane, expand the Physical Infrastructure node and select the Unmanaged node.
 3. In the working area, select the necessary computer and click Move to > name of the protection group on the ribbon or right click the computer and select Move to > name of the protection group.
 
+Page updated 2026-07-17
 
