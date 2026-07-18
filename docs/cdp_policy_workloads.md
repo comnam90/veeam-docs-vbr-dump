@@ -3,7 +3,7 @@ title: "Step 3. Select VMs to Replicate"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_workloads.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -33,4 +33,5 @@ To quickly find the necessary VMs, you can use the search field at the bottom of
 
 ![Step 3. Select VMs to Replicate](images/cdp_policy_workloads.webp "Select workloads")
 
+Page updated 2026-07-17
 
