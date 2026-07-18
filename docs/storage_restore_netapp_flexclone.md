@@ -3,7 +3,7 @@ title: "FlexClone"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_restore_netapp_flexclone.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ During restore from storage snapshots, Veeam Backup & Replication creates a Flex
 
 ![FlexClone](images/netapp_restore_flexclone.webp)
 
+Page updated 2026-07-17
 
