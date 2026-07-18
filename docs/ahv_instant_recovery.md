@@ -3,7 +3,7 @@ title: "Instant Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_instant_recovery.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ In This Section
 * [Performing Instant Recovery of Workloads to VMware vSphere](ahv_instant_recovery_vsphere.md)
 * [Performing Instant Recovery of Workloads to Hyper-V](ahv_instant_recovery_hyperv.md)
 
+Page updated 2026-07-17
 
