@@ -3,7 +3,7 @@ title: "Updating Tape Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/updating_tapeserver.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -26,4 +26,5 @@ The Components Update section lists tape servers that have outdated components d
 
 ![Updating Tape Servers](images/tapeproxy_update.webp)
 
+Page updated 2026-07-17
 
