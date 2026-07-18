@@ -3,7 +3,7 @@ title: "Step 2. Select vApps"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover_workloads.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ At the vApp step of the wizard, you can modify a list of vApps from which you fa
 
 ![Step 2. Select vApps](images/vcd_vapp_failover.webp)
 
+Page updated 2026-07-17
 

@@ -3,7 +3,7 @@ title: "Step 4. Specify Target List"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_restore_item_target_doc.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,4 +21,5 @@ Make sure to specify a list that exists in the original SharePoint site.
 
 ![Step 4. Specify Target List](images/target_list_doc.webp "Specify Target List ")
 
+Page updated 2026-07-17
 

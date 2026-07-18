@@ -3,7 +3,7 @@ title: "Step 4. Specify Switchover Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_point_switchover.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -32,4 +32,5 @@ After you click Recover, Veeam Explorer for Microsoft SQL Server starts publishi
 
 ![Step 4. Specify Switchover Settings](images/instant_switchover.webp "Specifying Database Switchover Scheduling Options")
 
+Page updated 2026-07-17
 

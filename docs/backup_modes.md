@@ -3,7 +3,7 @@ title: "Backup Modes"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_modes.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ In This Section
 * [On-Host Backup](onhost_backup.md)
 * [Off-Host Backup](offhost_backup.md)
 
+Page updated 2026-07-17
 

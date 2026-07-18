@@ -3,7 +3,7 @@ title: "Quick Migration Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migration_architecture.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,4 +25,5 @@ For off-site migration, you need to deploy at least one local backup proxy in ea
 
 ![Quick Migration Architecture](images/quick_mig_2proxies.webp)
 
+Page updated 2026-07-17
 
