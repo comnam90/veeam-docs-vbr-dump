@@ -3,7 +3,7 @@ title: "Managing Cloud Director CDP Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_manage_policies.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ In This Section
 * [Editing Policies](vcd_cdp_edit.md)
 * [Disabling and Deleting Policies](vcd_cdp_disable.md)
 
+Page updated 2026-07-17
 
