@@ -3,7 +3,7 @@ title: "Step 1. Launch Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restore_wizard_2.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ To launch the Restore wizard, do the following:
 
 [![Restoring Container](images/restore_container_1.webp)](images/restore_container_1.webp "Restoring Container")
 
+Page updated 2026-07-17
 
