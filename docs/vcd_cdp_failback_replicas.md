@@ -3,7 +3,7 @@ title: "Step 2. Select Replicas"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_replicas.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ To update the list of replicas that are ready for failback (replicas in the Fail
 
 ![Step 2. Select Replicas](images/vcd_vapps_failback_select.webp)
 
+Page updated 2026-07-17
 
