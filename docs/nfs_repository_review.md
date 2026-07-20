@@ -3,7 +3,7 @@ title: "Step 6. Review Properties and Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_repository_review.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ At the Review step of the wizard, review details of the backup repository and sp
 
 ![Step 6. Review Properties and Components](images/nfs_repo_review.webp)
 
+Page updated 2026-07-17
 
