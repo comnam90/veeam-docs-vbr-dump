@@ -3,7 +3,7 @@ title: "Step 5. Review the Application Group Settings and Finish Working with Wi
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_review_hv.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ At the Summary step of the wizard, complete the procedure of application group c
 
 ![Step 5. Review the Application Group Settings and Finish Working with Wizard](images/app_group_summary.webp)
 
+Page updated 2026-07-17
 
