@@ -3,7 +3,7 @@ title: "Step 6. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_summary.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ At the Result step of the wizard, complete the procedure of Microsoft SMB3 serve
 
 ![Step 6. Finish Working with Wizard](images/add_server_smb_finish.webp)
 
+Page updated 2026-07-17
 
