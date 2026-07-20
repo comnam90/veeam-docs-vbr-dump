@@ -3,7 +3,7 @@ title: "Permanent Failover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_permanent_failover.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,4 +23,5 @@ In This Section
 * [Performing Permanent Failover](vcd_perform_permanent_failover.md)
 * [Performing Permanent Failover Retry](vcd_perform_perm_failover_retry.md)
 
+Page updated 2026-07-17
 

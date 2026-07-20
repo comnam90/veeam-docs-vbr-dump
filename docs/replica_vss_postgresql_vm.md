@@ -3,7 +3,7 @@ title: "PostgreSQL Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_postgresql_vm.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -59,4 +59,5 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 ![PostgreSQL Settings](images/vm_replica_job_vss_postgres.webp)
 
+Page updated 2026-07-17
 

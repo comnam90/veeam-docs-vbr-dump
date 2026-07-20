@@ -3,7 +3,7 @@ title: "PostgreSQL Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_postgresql.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -59,4 +59,5 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 
 ![PostgreSQL WAL Settings_2](images/vcd_cdp_policy_postgre.webp)
 
+Page updated 2026-07-17
 

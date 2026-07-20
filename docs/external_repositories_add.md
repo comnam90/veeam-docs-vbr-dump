@@ -3,7 +3,7 @@ title: "Adding External Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_repositories_add.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ You can add the following types of external repositories:
 * [External Azure Blob Storage](external_azure_blob_add.md)
 * [External Google Cloud Storage](adding_external_google_cloud_repository.md)
 
+Page updated 2026-07-17
 

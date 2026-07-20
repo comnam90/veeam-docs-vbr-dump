@@ -3,7 +3,7 @@ title: "Step 2. Select Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_ir_workloads_ahv.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -45,4 +45,5 @@ Add
 
 ![Step 2. Select Restore Point](images/ahv_ir_workloads_ahv.webp)
 
+Page updated 2026-07-17
 

@@ -3,7 +3,7 @@ title: "Step 9. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_summary.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ At the Summary step of the wizard, complete the procedure of backup job configur
 
 ![Step 9. Finish Working with Wizard](images/file_share_backup_job_summary.webp "Finish Working with Wizard")
 
+Page updated 2026-07-17
 

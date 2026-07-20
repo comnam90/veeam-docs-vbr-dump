@@ -3,7 +3,7 @@ title: "Viewing Restored Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/viewing_restored_files.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -12,4 +12,5 @@ product_version: "13.0.2.29"
 
 After backups are restored from tape, they are displayed as imported backups in the Home view > Backups > Imported. You can use the restored to disk backup for regular data recovery, including full recovery, recovery of machine files, guest OS file restore and other.
 
+Page updated 2026-07-17
 

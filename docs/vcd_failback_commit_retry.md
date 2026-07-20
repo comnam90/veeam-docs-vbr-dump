@@ -3,7 +3,7 @@ title: "Performing Failback Commit Retry"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_commit_retry.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ To perform a retry:
 1. Open the Home view, in the [inventory pane](vbr_ui.md), navigate to the Replicas > Active node.
 2. In the working area, select the necessary vApp and select Retry Commit Failback on the ribbon. Alternatively, you can right-click the necessary vApp and select Retry commit failback.
 
+Page updated 2026-07-17
 
