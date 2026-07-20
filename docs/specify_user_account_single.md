@@ -3,7 +3,7 @@ title: "Step 3. Specify User Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_user_account_single.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -14,4 +14,5 @@ At this step of the wizard, specify an account that you want to use to connect t
 
 ![Step 3. Specify User Account](images/on_premises_login.webp "Specify User Account")
 
+Page updated 2026-07-17
 
