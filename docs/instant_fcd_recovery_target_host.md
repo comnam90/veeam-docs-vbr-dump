@@ -3,7 +3,7 @@ title: "Step 6. Specify Target Cluster"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_target_host.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ At the Destination step of the wizard, specify a cluster where Veeam Backup & Re
 
 ![Step 6. Specify Target Cluster](images/instant_fcd_recovery_target_host.webp)
 
+Page updated 2026-07-17
 
