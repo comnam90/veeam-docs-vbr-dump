@@ -3,8 +3,8 @@ title: "Entire VM Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_how_entire.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Entire VM Restore
@@ -13,7 +13,7 @@ product_version: "13.0.1.2067"
 To restore a VM, Veeam Plug-in for Scale Computing HyperCore performs the following steps:
 
 1. [This step applies only if you perform restore to the original location and if the source VM is still present in the location] Powers off and removes the source VM.
-2. Launches a worker on same host where the processed VM resides.
+2. Launches a worker on the same host where the processed VM resides.
 3. Creates a new VM with source VM settings without disks.
 4. Restores each VM disk sequentially:
 
@@ -32,4 +32,5 @@ To restore a VM, Veeam Plug-in for Scale Computing HyperCore performs the follow
 
 To learn how to restore an entire VM, see [Performing VM Restore](sch_restore_entire_vm.md).
 
+Page updated 2026-07-14
 
