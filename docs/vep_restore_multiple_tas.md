@@ -3,7 +3,7 @@ title: "Restoring to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_multiple_tas.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ To restore PostgreSQL instances, use the Restore wizard.
 2. [Specify a restore point](vep_restore_multiple_tas_specify_restore_point.md).
 3. [Specify a target server](vep_restore_multiple_tas_specify_target_server.md).
 
+Page updated 2026-07-20
 
