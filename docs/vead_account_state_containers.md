@@ -3,7 +3,7 @@ title: "Step 5. Specify Account State"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_account_state_containers.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ At this step of the wizard, select one of the following options:
 
 ![Step 5. Specify Account State](images/vead_restore_obj_4.webp "Selecting Account State to Apply ")
 
+Page updated 2026-07-20
 
