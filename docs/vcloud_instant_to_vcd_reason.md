@@ -3,7 +3,7 @@ title: "Step 9. Specify Restore Reason"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_instant_to_vcd_reason.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ At the Reason step of the wizard, enter a reason for performing Instant Recovery
 
 ![Step 9. Specify Restore Reason](images/vcloud_instant_recovery_reason.webp)
 
+Page updated 2026-07-20
 
