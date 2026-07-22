@@ -3,7 +3,7 @@ title: "Protection Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protection_group_hiw.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -29,4 +29,5 @@ Related Tasks
 
 [Creating Protection Groups](protection_group_create.md)
 
+Page updated 2026-07-20
 
