@@ -3,7 +3,7 @@ title: "Step 4. Apply Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmware_server_apply.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -14,4 +14,5 @@ At the Apply step of the wizard, wait till Veeam Backup & Replication installs a
 
 ![Step 4. Apply Settings](images/add_server_vmware_apply.webp)
 
+Page updated 2026-07-20
 

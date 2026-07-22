@@ -3,8 +3,8 @@ title: "Step 3. Configure Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_workers_add_network.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 3. Configure Network Settings
@@ -46,4 +46,5 @@ For credentials to be displayed in the Credentials list, they must be added to t
 
 ![Step 3. Configure Network Settings](images/ahv_workers_add_network.webp "Specify Worker Network Settings")
 
+Page updated 2026-07-14
 

@@ -3,7 +3,7 @@ title: "Performing Failback Retry"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_retry.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ To retry failback:
 2. In the [inventory pane](vbr_ui.md), navigate to the Replicas > Active node.
 3. In the working area, select the necessary vApp and select Retry Failback on the ribbon. Alternatively, you can right-click the necessary vApp and select Retry failback.
 
+Page updated 2026-07-20
 

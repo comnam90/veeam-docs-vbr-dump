@@ -3,7 +3,7 @@ title: "Editing Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/edit_server.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ To edit settings of a server in the backup infrastructure:
 
 [![Click to zoom in](images/edit_server.webp)](images/edit_server.webp "Click to zoom in")
 
+Page updated 2026-07-20
 

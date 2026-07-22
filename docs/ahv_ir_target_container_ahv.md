@@ -3,7 +3,7 @@ title: "Step 5. Select Storage Container"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_ir_target_container_ahv.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ For a container to be displayed in the list of the available containers, it must
 
 ![Step 5. Select Storage Container](images/ahv_ir_target_container_ahv.webp)
 
+Page updated 2026-07-20
 

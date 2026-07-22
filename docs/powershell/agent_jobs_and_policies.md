@@ -3,7 +3,7 @@ title: "Working with Veeam Agent Backup Jobs and Policies"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/agent_jobs_and_policies.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,4 +21,5 @@ In this section
 * [Veeam Agent Job Guest Processing Options](veeam_agent_job_guest_processing_options.md)
 * [Veeam Agent Job Advanced Settings](veeam_agent_job_advanced_settings.md)
 
+Page updated 2026-07-21
 

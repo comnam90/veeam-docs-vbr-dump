@@ -3,7 +3,7 @@ title: "Step 1. Launch New Backup Repository Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_launch.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ To launch the New Backup Repository wizard, do the following:
 
 ![Step 1. Launch New Backup Repository Wizard](images/add_deduplicating_appliance_repo.webp)
 
+Page updated 2026-07-20
 
