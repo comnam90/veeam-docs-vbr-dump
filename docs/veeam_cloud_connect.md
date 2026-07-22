@@ -3,7 +3,7 @@ title: "Veeam Cloud Connect"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_cloud_connect.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ For more information about Veeam Cloud Connect, see the
 [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html?ver=13)
 .
 
+Page updated 2026-07-20
 
