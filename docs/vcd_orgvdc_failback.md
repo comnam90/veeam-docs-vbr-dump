@@ -3,7 +3,7 @@ title: "Step 4. Specify Organization VDCs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_orgvdc_failback.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,4 +16,5 @@ At the Organization VDC step of the wizard, specify names for the restored vApps
 
 ![Step 4. Specify Organization VDCs](images/vcd_organization_failback.webp)
 
+Page updated 2026-07-20
 
