@@ -3,7 +3,7 @@ title: "Step 9. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_finish.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,4 +21,5 @@ Failback is an intermediate step that needs to be finalized. You can finalize fa
 * [Commit failback](vcd_failback_committing.md)
 * [Undo failback](vcd_failback_undoing.md)
 
+Page updated 2026-07-20
 
