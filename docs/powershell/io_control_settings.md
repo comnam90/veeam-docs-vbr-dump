@@ -3,7 +3,7 @@ title: "Specifying I/O Control Settings"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/io_control_settings.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,4 +24,5 @@ Specifying I/O Control Settings
 | [Set-VBRAdvancedLatencyOptions](set-vbradvancedlatencyoptions.md) | Modifies latency settings for a specific datastore. |
 | [Remove-VBRAdvancedLatencyOptions](remove-vbradvancedlatencyoptions.md) | Removes datastore latency settings from Veeam Backup & Replication settings. |
 
+Page updated 2026-07-21
 
