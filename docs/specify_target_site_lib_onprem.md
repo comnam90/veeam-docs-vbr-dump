@@ -3,7 +3,7 @@ title: "Step 3. Specify Target Site Web Address and Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_target_site_lib_onprem.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,4 +24,5 @@ To specify web address of a target site and credentials to connect to SharePoint
 
 ![Step 3. Specify Target Site Web Address and Credentials](images/target_url_3.webp "Specify Target Site Web Address")
 
+Page updated 2026-07-20
 
