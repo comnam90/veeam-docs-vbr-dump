@@ -3,7 +3,7 @@ title: "Running Extract Utility in Interactive Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/extract_utility_console_interactive.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -34,4 +34,5 @@ This command validates an encrypted backup file.
 | --- |
 | extract.exe -password "standard 1" "C:/Backup/Single/Backup Job Single StorageD2022-10-03T132735\_1E50.vbk" |
 
+Page updated 2026-07-20
 
