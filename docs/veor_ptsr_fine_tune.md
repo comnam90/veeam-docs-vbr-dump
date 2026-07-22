@@ -3,7 +3,7 @@ title: "Step 3. Fine-Tune Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_ptsr_fine_tune.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ At this step of the wizard, select an operation prior to which you want to publi
 
 ![Step 3. Fine-Tune Restore Point](images/veor_fine_tune.webp "Fine-Tuning Restore Point")
 
+Page updated 2026-07-20
 
