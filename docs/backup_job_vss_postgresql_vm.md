@@ -3,7 +3,7 @@ title: "PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_postgresql_vm.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -61,4 +61,5 @@ Make sure that you select a server that is not used by other resource-consuming 
 
 ![PostgreSQL WAL Files Settings](images/vm_backup_job_vss_postgresql.webp)
 
+Page updated 2026-07-20
 
