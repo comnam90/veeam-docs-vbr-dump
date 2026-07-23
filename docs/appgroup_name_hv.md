@@ -3,7 +3,7 @@ title: "Step 2. Specify Application Group Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_name_hv.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ At the Name step of the wizard, specify a name and description for the applicati
 
 ![Step 2. Specify Application Group Name and Description](images/app_group_name.webp)
 
+Page updated 2026-07-22
 
