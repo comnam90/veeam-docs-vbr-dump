@@ -3,7 +3,7 @@ title: "Performing Instant File Share Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_instant_file_share_recovery.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ Before you perform instant file share recovery, [check prerequisites](instant_na
 5. [Specify a reason for instant recovery](instant_nas_recovery_reason.md).
 6. [Finish working with the wizard](instant_nas_recovery_summary.md).
 
+Page updated 2026-07-22
 
