@@ -3,7 +3,7 @@ title: "Step 1. Launch New Scale-Out Backup Repository Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_launch.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ To launch the New Scale-out Backup Repository wizard, do one of the following:
 
 [![Click to zoom in](images/scaleout_repo_add_launch.webp)](images/scaleout_repo_add_launch.webp "Click to zoom in")
 
+Page updated 2026-07-22
 
