@@ -3,8 +3,8 @@ title: "Deduplicating Storage Appliances"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_storage_appliances.html"
-last_updated: "1/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Deduplicating Storage Appliances
@@ -18,8 +18,9 @@ In This Section
 * [ExaGrid](deduplicating_appliance_exgrid.md)
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
 * [Quantum DXi](deduplicating_appliance_quantum.md)
-* [Fujitsu ETERNUS CS800](fujitsu.md)
+* [Fsas ETERNUS CS800](fujitsu.md)
 * [Infinidat InfiniGuard](infinidat_infiniguard.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
+Page updated 2026-07-20
 
