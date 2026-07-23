@@ -3,7 +3,7 @@ title: "Restore from Archive Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_archive_tier.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,4 +22,5 @@ In This Section
 * [Extending Data Availability](extending_expiration_time.md)
 * [Restoring Retrieved Data](restore_retrieved_data.md)
 
+Page updated 2026-07-22
 
