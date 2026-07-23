@@ -3,7 +3,7 @@ title: "Secure Restore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/secure_restore.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ Secure Restore
 | Cmdlet | Operation |
 | [Copy-VBRAntivirusConfigurationFile](copy-vbrantivirusconfigurationfile.md) | Copies the antivirus configuration file. |
 
+Page updated 2026-07-21
 
