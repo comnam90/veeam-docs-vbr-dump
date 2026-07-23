@@ -3,7 +3,7 @@ title: "Roles and Users"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/roles_and_users.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ Roles and Users
 | [Set-VBRUserRoleAssignment](set-vbruserroleassignment.md) | Modifies a role that is assigned to a user or a user group. |
 | [Remove-VBRUserRoleAssignment](remove-vbruserroleassignment.md) | Removes a role from a user or a user group. |
 
+Page updated 2026-07-21
 
