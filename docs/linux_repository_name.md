@@ -3,7 +3,7 @@ title: "Step 2. Specify Backup Repository Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_name.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ At the Name step of the wizard, specify a name and description for the backup re
 
 [![Step 2. Specify Backup Repository Name and Description](images/linux_repo_name.webp)](images/linux_repo_name.webp)
 
+Page updated 2026-07-22
 
