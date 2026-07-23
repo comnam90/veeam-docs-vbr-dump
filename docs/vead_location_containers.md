@@ -3,7 +3,7 @@ title: "Step 3. Specify Restore Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_location_containers.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -30,4 +30,5 @@ To select a different container, click Browse and choose a container you want to
 
 ![Step 3. Specify Restore Location](images/browse_container.webp "Selecting Different Container")
 
+Page updated 2026-07-22
 
