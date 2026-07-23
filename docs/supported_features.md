@@ -3,8 +3,8 @@ title: "Supported Storage Features for Backup and Orchestration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/supported_features.html"
-last_updated: "3/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Supported Storage Features for Backup and Orchestration
@@ -28,12 +28,12 @@ The following table shows which storage systems and which features supports Veea
 
 Storage Systems and Supported Features
 
-| Storage Type/ | Backup from Storage Snapshots | | Snapshot Orchestration / Backup from Storage Snapshots with Snapshot Retention | | Snapshot Immutability | Snapshot Archiving and Data Retrieval |
+| Storage Type/ Operation | Backup from Storage Snapshots | | Snapshot Orchestration / Backup from Storage Snapshots with Snapshot Retention | | Snapshot Immutability | Snapshot Archiving and Data Retrieval |
 | Primary Storage Arrays | Secondary Storage Arrays | Primary Storage Arrays | Secondary Storage Arrays |
 | Built-in Storage Systems | | | | | | |
 | Cisco HyperFlex HX-Series | ✓ | ✕ | ✕ | ✕ | ✕ | ✕ |
 | Dell Unity (XT) | ✓ | ✕ | ✕ | ✕ | ✕ | ✕ |
-| Fujitsu ETERNUS HX/AX, | ✓ | SnapMirror SnapVault | ✓ | SnapMirror1 SnapVault2 | ✕ | ✕ |
+| Fsas ETERNUS HX/AX, Lenovo ThinkSystem DM/DG Series, NetApp FAS/AFF/ASA, NetApp FlexArray (V-Series), NetApp ONTAP Edge/Select/Cloud VSA | ✓ | SnapMirror SnapVault | ✓ | SnapMirror1 SnapVault2 | ✕ | ✕ |
 | HPE 3PAR StoreServ,  HPE Primera,  HPE Alletra 9000, HPE Alletra Storage MP B10000 | ✓ | Remote Copy Peer Persistence3 Remote Copy Periodic (Asynchronous) | ✓ | Remote Copy Peer Persistence1, 3 Remote Copy Periodic (Asynchronous)2 | Virtual Lock | ✕ |
 | HPE Nimble Storage AF-Series,  HPE Nimble Storage HF-Series, HPE Nimble Storage CS-Series, HPE Alletra 5000, HPE Alletra 6000 | ✓ | Snapshot Replication Synchronous Replication (including Peer Persistence) | ✓ | Snapshot Replication2 Synchronous Replication (including Peer Persistence)1 | ✕ | ✕ |
 | Universal Storage API Integrated Systems | | | | | | |
@@ -41,7 +41,8 @@ Storage Systems and Supported Features
 | Dell PowerMax | ✓ | ✕ | ✓ | ✕ | ✕ | ✕ |
 | Dell PowerStore | ✓ | Native Asynchronous Replication Native Metro Synchronous Replication (Metro Volume) | ✓ | Native Asynchronous Replication2 Native Metro Synchronous Replication (Metro Volume)1 | ✕ | ✕ |
 | Dell SC Series (formerly Compellent) | ✓ | ✕ | ✓ | ✕ | ✕ | ✕ |
-| Fujitsu ETERNUS AF and DX Series | ✓ | ✕ | ✓ | ✕ | ✕ | ✕ |
+| Fsas ETERNUS EP300 | ✓ | TrueCopy Global-Active Device (GAD) | ✓ | TrueCopy1 Global-Active Device (GAD)1 | ✓ | ✕ |
+| Fsas ETERNUS AF and DX Series | ✓ | ✕ | ✓ | ✕ | ✕ | ✕ |
 | Hitachi VSP/VSP One Block | ✓ | TrueCopy Global-Active Device (GAD) | ✓ | TrueCopy1 Global-Active Device (GAD)1 | ✓ | ✕ |
 | HPE XP | ✓ | Continuous Access Synchronous High Availability | ✓ | Continuous Access Synchronous1 High Availability1 | ✓ | ✕ |
 | IBM FlashSystem (formerly Spectrum Virtualize, includes IBM StorWize and IBM SVC) | ✓ | HyperSwap5 Metro Mirror5 Global Mirror4,5 | ✓ | HyperSwap1,5 Metro Mirror1,5 Global Mirror2,4,5 | ✕ | ✕ |
@@ -68,13 +69,14 @@ The following table shows storage systems, replication features and terms for th
 Secondary Storage Array Replication Features and Veeam Backup & Replication Terms
 
 | Storage system \ Feature term | Snapshot transfer | Synchronous replication |
-| Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG Series, NetApp FAS/AFF/ASA, NetApp FlexArray (V-Series), NetApp ONTAP Edge/Select/Cloud VSA | SnapMirror SnapVault | ✕ |
+| Fsas ETERNUS HX/AX, Lenovo ThinkSystem DM/DG Series, NetApp FAS/AFF/ASA, NetApp FlexArray (V-Series), NetApp ONTAP Edge/Select/Cloud VSA | SnapMirror SnapVault | ✕ |
 | HPE 3PAR StoreServ,  HPE Primera,  HPE Alletra 9000, HPE Alletra Storage MP B10000 | Remote Copy Periodic (Asynchronous) | Remote Copy Peer Persistence (Snapshots are created on the target volume only) |
 | HPE Nimble Storage AF-Series,  HPE Nimble Storage HF-Series, HPE Nimble Storage CS-Series, HPE Alletra 6000,  HPE Alletra 5000 | Snapshot Replication | Synchronous Replication (including Peer Persistence) |
 | IBM FlashSystem (formerly Spectrum Virtualize, includes IBM StorWize and IBM SVC) | Global Mirror (Global Mirror with Change Volumes is not supported) | HyperSwap Metro Mirror |
 | Dell PowerStore | Native Asynchronous Replication | Native Metro Synchronous Replication (Metro Volume) |
-| Hitachi VSP/VSP One Block | ✕ | TrueCopy Global-Active Device (GAD) |
+| Fsas ETERNUS EP300, Hitachi VSP/VSP One Block | ✕ | TrueCopy Global-Active Device (GAD) |
 | HPE XP | ✕ | Continuous Access Synchronous High Availability |
 | Pure Storage FlashArray | Asynchronous Replication | ActiveCluster Replication |
 
+Page updated 2026-07-20
 
