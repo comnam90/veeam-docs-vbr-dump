@@ -3,7 +3,7 @@ title: "Instant Recovery to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_ir_multiple_tas.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ To perform instant recovery of multiple databases to another server, use the Ins
 5. [Specify switchover settings](vesql_instant_multiple_switchover.md).
 6. [Finalize the Instant Recovery session](vesql_instant_multiple_finish.md).
 
+Page updated 2026-07-22
 
