@@ -3,7 +3,7 @@ title: "Specifying Email Notification Settings"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/email_notification_settings.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,4 +21,5 @@ Specifying Email Notification Settings
 | [Set-VBRMailNotificationConfiguration](set-vbrmailnotificationconfiguration.md) | Modifies global email notification settings. |
 | [Test-VBRMailNotificationConfiguration](test-vbrmailnotificationconfiguration.md) | Tests global email notification settings. |
 
+Page updated 2026-07-21
 

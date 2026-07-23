@@ -3,7 +3,7 @@ title: "Add-VBRAzureComputeBackupCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazurecomputebackupcopyjob.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -78,4 +78,5 @@ Related Commands
 
 [Get-VBRAzureComputeBackup](get-vbrazurecomputebackup.md)
 
+Page updated 2026-07-21
 

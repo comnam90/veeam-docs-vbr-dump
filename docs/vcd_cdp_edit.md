@@ -3,7 +3,7 @@ title: "Editing Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_edit.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,4 +23,5 @@ Related Topics
 
 [Creating Cloud Director CDP Policies](vcd_cdp_policies_create.md)
 
+Page updated 2026-07-22
 

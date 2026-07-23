@@ -3,7 +3,7 @@ title: "Virtual Lab Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_vlab_config.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ Related Topics
 
 [Limitations of Single-Host Virtual Labs](surereplica_vlab_limitations.md)
 
+Page updated 2026-07-22
 

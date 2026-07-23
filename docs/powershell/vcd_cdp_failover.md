@@ -3,7 +3,7 @@ title: "Cloud Director CDP Failover"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cdp_failover.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ Cloud Director CDP Failover
 | [Start-VBRvCDCDPReplicaFailover](start-vbrvcdcdpreplicafailover.md) | Starts to perform failover to a Cloud Director CDP replica. |
 | [Stop-VBRvCDCDPReplicaFailover](stop-vbrvcdcdpreplicafailover.md) | Stops Cloud Director CDP replica failover. |
 
+Page updated 2026-07-21
 
