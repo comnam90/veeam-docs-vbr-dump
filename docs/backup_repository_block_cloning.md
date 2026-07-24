@@ -3,8 +3,8 @@ title: "Fast Clone"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_block_cloning.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Fast Clone
@@ -21,7 +21,7 @@ Veeam Backup & Replication supports Fast Clone for the following types of backup
 * SMB share
 * Dell Data Domain
 * ExaGrid
-* Fujitsu ETERNUS CS800
+* Fsas ETERNUS CS800
 * HPE StoreOnce
 * Infinidat InfiniGuard
 * Quantum DXi
@@ -136,8 +136,8 @@ Depending on the type of the performed job, Veeam Backup & Replication also impo
 Requirements for Microsoft Windows and SMB Repositories
 
 | Type of Job | Requirements for backup infrastructure components |
-| Backup job | Protocol: SMB 3.1.1  OS: Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the following backup infrastructure components:   * If a gateway is selected manually: Gateway server. * If a gateway is selected automatically:  * [For VMware vSphere environments] Mount server associated with the backup repository, or backup server. For reverse incremental backup chains, Microsoft Windows Server 2016 (or later) or Windows 10 Pro for Workstations (or later) must additionally be installed on backup proxies assigned for the job. * [For Microsoft Hyper-V environments] For forward incremental chains, mount server associated with the backup repository, or backup server. |
-| Backup copy job | Protocol: SMB 3.1.1  OS: Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the following backup infrastructure components:   * If a gateway is selected manually: Gateway server. * If a gateway is selected automatically: |
+| Backup job | Protocol: SMB 3.1.1  OS: Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the following backup infrastructure components:   * If a gateway is selected manually: Gateway server. * If a gateway is selected automatically:  * [For VMware vSphere environments] Mount server associated with the backup repository, or backup server. For reverse incremental backup chains, Microsoft Windows Server 2016 (or later) or Windows 10 Pro for Workstations (or later) must additionally be installed on backup proxies assigned for the job. * [For Microsoft Hyper-V environments] For forward incremental chains, mount server associated with the backup repository, or backup server. For reverse incremental chains, fast clone is supported if the source host runs Microsoft Hyper-V Server 2016 (or later). For earlier versions of the hypervisor, fast clone is not supported. |
+| Backup copy job | Protocol: SMB 3.1.1  OS: Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the following backup infrastructure components:   * If a gateway is selected manually: Gateway server. * If a gateway is selected automatically: [For direct data transport path] Mount server associated with the backup repository, or backup server. [For data transport path over WAN accelerators] Microsoft Windows Server 2016 (or later) or Microsoft Windows 10 Pro for Workstations (or later) on the target WAN accelerator. |
 
 Limitations
 
@@ -164,4 +164,5 @@ Related Topics
 
 [Backup File Placement for Performance Tier](backup_repository_sobr_placement.md)
 
+Page updated 2026-07-20
 
