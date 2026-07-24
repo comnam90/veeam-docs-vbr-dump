@@ -3,7 +3,7 @@ title: "Failback Undo"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_undo.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,4 +23,5 @@ In This Section
 * [Undoing Failback](vcd_failback_undoing.md)
 * [Performing Failback Undo Retry](vcd_failback_undo_retry.md)
 
+Page updated 2026-07-22
 
