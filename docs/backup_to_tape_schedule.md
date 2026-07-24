@@ -3,7 +3,7 @@ title: "Step 8. Define Job Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_schedule.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,4 +15,5 @@ At the Schedule step of the wizard, you can define a schedule for the job to run
 * [Schedule for Backup to Tape Job](backup_to_tape_simple_schedule.md)
 * [Schedule for GFS Tape Job](backup_to_tape_gfs_schedule.md)
 
+Page updated 2026-07-22
 
