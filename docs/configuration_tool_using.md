@@ -3,7 +3,7 @@ title: "Using Veeam Backup Configuration Tool"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuration_tool_using.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -95,4 +95,5 @@ This example shows how to analyze the 193022052014.bco configuration backup file
 | --- |
 | Veeam.Backup.Configuration.Tool.exe /file:c:\backups\091323052014.bco  /backupdatabase /servername:WIN2008R2 /instancename:VeeamSql2008  /initialcatalog:VeeamBackup |
 
+Page updated 2026-07-22
 

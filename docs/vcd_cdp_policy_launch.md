@@ -3,7 +3,7 @@ title: "Step 1. Launch New VMware Cloud Director CDP Policy Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_launch.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ To launch the New VMware Cloud Director CDP Policy wizard, do one of the followi
 
 [![Launch wizard](images/vcd_cdp_policy_launch.webp)](images/vcd_cdp_policy_launch.webp "Launch wizard")
 
+Page updated 2026-07-22
 

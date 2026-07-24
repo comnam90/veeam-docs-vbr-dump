@@ -3,7 +3,7 @@ title: "Step 10. Specify Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_notification.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -38,4 +38,5 @@ SNMP traps will be sent if you configure global SNMP settings in Veeam Backup & 
 
 ![Step 10. Specify Notification Settings](images/vcd_cdp_policy_notifications.webp)
 
+Page updated 2026-07-22
 

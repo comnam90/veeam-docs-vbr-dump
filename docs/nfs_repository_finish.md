@@ -3,7 +3,7 @@ title: "Step 8. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_repository_finish.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -14,4 +14,5 @@ At the Summary step of the wizard, review details of the added backup repository
 
 ![Step 8. Finish Working with Wizard](images/nfs_repo_summary.webp)
 
+Page updated 2026-07-22
 

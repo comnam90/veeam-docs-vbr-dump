@@ -3,8 +3,8 @@ title: "Specifying PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_postgresql.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Specifying PostgreSQL WAL Files Settings
@@ -14,7 +14,7 @@ By default, Veeam Backup & Replication creates application-consistent image-leve
 
 |  |
 | --- |
-| NoteS |
+| Notes |
 | * Veeam Backup & Replication stores image-level backups and WAL log backups in the same repository. * If Veeam Backup & Replication fails to produce a primary image-level backup, no secondary WAL log backups will be created. |
 
 To back up PostgreSQL WAL logs periodically, do the following:
@@ -40,7 +40,7 @@ For a server to be displayed in the list of available log shipping servers, it m
 
 |  |
 | --- |
-| TiPS |
+| Tips |
 | * It is recommended that you choose at least 2 log shipping servers for load balancing and high availability purposes. * It is recommended that you do not choose servers that are engaged in permanent tasks consuming resources (such as WAN accelerators and backup servers). |
 
 Configuring Access to PostgreSQL Data
@@ -62,4 +62,5 @@ Depending on the scope of resources that you have specified at [step 5a](sch_bac
 
 [![PostgreSQL WAL Files Settings](images/sch_backup_job_create_gp_postgresql.webp)](images/sch_backup_job_create_gp_postgresql.webp)
 
+Page updated 2026-07-14
 
