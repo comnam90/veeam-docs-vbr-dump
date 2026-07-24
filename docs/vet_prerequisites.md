@@ -3,7 +3,7 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_prerequisites.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ In This Section
 * [Permissions](vet_permissions.md)
 * [Considerations and Limitations](vet_considerations.md)
 
+Page updated 2026-07-22
 
