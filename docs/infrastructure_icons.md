@@ -3,8 +3,8 @@ title: "Infrastructure Icons"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infrastructure_icons.html"
-last_updated: "3/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Infrastructure Icons
@@ -349,9 +349,9 @@ Backup Repositories and Scale-Out Backup Repositories
 | ![Infrastructure Icons](images/storage_exagrid.webp) | ExaGrid repository |
 | ![Infrastructure Icons](images/exagrid_repository_disable.webp) | ExaGrid repository in the maintenance mode |
 | ![Infrastructure Icons](images/storage_exagrid_sealed.webp) | ExaGrid repository in the sealed mode |
-| ![Infrastructure Icons](images/fujitsu_logo.webp) | Fujitsu ETERNUS CS800 repository |
-| ![Infrastructure Icons](images/fujitsu_disabled.webp) | Fujitsu ETERNUS CS800 repository in the maintenance mode |
-| ![Infrastructure Icons](images/fujitsu_sealed.webp) | Fujitsu ETERNUS CS800 repository in the sealed mode |
+| ![Infrastructure Icons](images/fujitsu_logo.webp) | Fsas ETERNUS CS800 repository |
+| ![Infrastructure Icons](images/fujitsu_disabled.webp) | Fsas ETERNUS CS800 repository in the maintenance mode |
+| ![Infrastructure Icons](images/fujitsu_sealed.webp) | Fsas ETERNUS CS800 repository in the sealed mode |
 | ![Infrastructure Icons](images/hp_storeonce_repository.webp) | HPE StoreOnce repository |
 | ![Infrastructure Icons](images/hp_storeonce_repository_disable.webp) | HPE StoreOnce repository in the maintenance mode |
 | ![Infrastructure Icons](images/hp_storeonce_repository_sealed.webp) | HPE StoreOnce repository in the sealed mode |
@@ -463,4 +463,5 @@ Nutanix AHV Infrastructure
 | ![Infrastructure Icons](images/proxmox_worker_working.webp) | Worker is working |
 | ![Infrastructure Icons](images/proxmox_worker_turnedoff.webp) | Worker is powered off |
 
+Page updated 2026-07-20
 
