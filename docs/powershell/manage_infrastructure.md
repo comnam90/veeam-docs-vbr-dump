@@ -3,7 +3,7 @@ title: "Managing Infrastructure"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/manage_infrastructure.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ Managing Infrastructure
 | [Find-VBRHvEntity](find-vbrhventity.md) | Returns Hyper-V objects added to Veeam Backup & Replication. |
 | [Rescan-VBREntity](rescan-vbrentity.md) | Rescans backup infrastructure components. |
 
+Page updated 2026-07-21
 
