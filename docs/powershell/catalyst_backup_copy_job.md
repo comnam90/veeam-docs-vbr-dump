@@ -3,7 +3,7 @@ title: "Backup Copy Jobs for HPE StoreOnce Repositories"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/catalyst_backup_copy_job.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,4 +23,5 @@ Backup Copy Jobs for HPE StoreOnce Repositories
 | [Enable-VBRCatalystCopyJob](enable-vbrcatalystcopyjob.md) | Enables backup copy jobs for HPE StoreOnce repositories. |
 | [Remove-VBRCatalystCopyJob](remove-vbrcatalystcopyjob.md) | Removes backup copy jobs for HPE StoreOnce repositories. |
 
+Page updated 2026-07-21
 
