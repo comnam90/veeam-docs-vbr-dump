@@ -3,7 +3,7 @@ title: "SureBackup"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sure_backup.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,4 +18,5 @@ In this section
 * [SureBackup Application Groups](app_group.md)
 * [SureBackup Virtual Labs](virtual_lab.md)
 
+Page updated 2026-07-21
 
