@@ -3,7 +3,7 @@ title: "Restore to Amazon EC2"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restore_to_amazon_ec2.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -27,4 +27,5 @@ Restore to Amazon EC2
 | [Stop-VBRVMRestoreToAmazon](stop-vbrvmrestoretoamazon.md) | Stops running restore sessions of workloads to Amazon EC2 sessions. |
 | [New-VBRAmazonEC2ProxyAppliance](new-vbramazonec2proxyappliance.md) | Creates an Amazon EC2 proxy appliance. |
 
+Page updated 2026-07-21
 
