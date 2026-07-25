@@ -3,7 +3,7 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/used_ports.html"
-last_updated: "5/26/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -77,7 +77,7 @@ Databases and External Services
 | Communication with Time Servers | | | | |
 | Backup server,  Veeam Infrastructure Appliance | NTP server | UDP | 123 | Port used for synchronization with NTP time servers. The port is used by Linux-based backup servers deployed from the Veeam Software Appliance ISO and by backup infrastructure components deployed from the Veeam Infrastructure Appliance  ISO. |
 | Backup server,  Veeam Infrastructure Appliance | NTS server | UDP | 123 | Ports used for synchronization with NTS time servers. The port is used by Linux-based backup servers deployed from the Veeam Software Appliance ISO and by backup infrastructure components deployed from theVeeam Infrastructure Appliance ISO. |
-| TCP | 4460 |
+| TCP | 4460 |  |
 | Other Communication | | | | |
 | Any backup infrastructure component | DNS server | UDP, TCP | 53 | Port used for communication with the DNS server. It is required for forward/reverse name resolution of all backup and infrastructure servers including Active Directory domain controllers. |
 | Backup server | Certificate Revocation Lists | TCP | 80 or 443 | Port used for access to the Certificate Revocation Lists (CRL) of the Certificate Authority (CA) that issued the certificate for each backup infrastructure component.  Note: The specific CRL endpoint that must be connected to depends on the CA that issued the certificate.  You can find the actual list of addresses in the certificate details in the following fields:   * CRL Distribution Points * Authority Information Access   Make sure that the backup server can reach these verification endpoints. |
@@ -147,7 +147,7 @@ The following section describes ports that must be opened to ensure proper commu
 * [NFS backup repositories](#nfs_repository)
 * [SMB backup repositories](#smb_repository)
 * [Dell Data Domain System](#emc)
-* [ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800, Infinidat InfiniGuard](#exagrid)
+* [ExaGrid, Quantum DXi, Fsas ETERNUS CS800, Infinidat InfiniGuard](#exagrid)
 * [HPE StoreOnce](#storeonce)
 * [Veeam Data Cloud Vault](#VDCvault)
 * [Object storage repositories](#osrc)
@@ -211,18 +211,18 @@ Dell Data Domain System
 | TCP | 2049 | Main port used by NFS. Can be modified using the ‘nfs set server-port’ command. Command requires SE mode. |
 | TCP | 2052 | Main port used by NFS MOUNTD. Can be modified using the 'nfs set mountd-port' command in SE mode. |
 
-ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800, Infinidat InfiniGuard
+ExaGrid, Quantum DXi, Fsas ETERNUS CS800, Infinidat InfiniGuard
 
 The following table describes basic network ports that must be opened to ensure proper communication with storage systems added as deduplicating appliances:
 
 * [ExaGrid](deduplicating_appliance_exgrid.md)
 * [Quantum DXi](deduplicating_appliance_quantum.md)
-* [Fujitsu ETERNUS CS800](fujitsu.md)
+* [Fsas ETERNUS CS800](fujitsu.md)
 * [Infinidat InfiniGuard](infinidat_infiniguard.md)
 
 You must also open ports described in [Backup Repository Common Ports](#repo_common).
 
-ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800, Infinidat InfiniGuard
+ExaGrid, Quantum DXi, Fsas ETERNUS CS800, Infinidat InfiniGuard
 
 | From | To | Protocol | Port | Notes |
 | Backup server | Deduplicating appliance | TCP | 22 | Default command port used for communication with the deduplicating appliance and initial installation of Veeam components. |
@@ -433,24 +433,25 @@ Universal Storage API Integrated System
 
 The following tables describe network ports that must be opened to ensure proper communication with Universal Storage API integrated systems:
 
-* [DataCore SANsymphony](#DataCore), [Dell PowerMax](#dell_powermax), [Hitachi VSP/VSP One Block](#vsp), [HPE XP](#xp), [INFINIDAT InfiniBox](#infinidat), [NetApp SolidFire/HCI](#solidfire)
+* [DataCore SANsymphony](#DataCore), [Dell PowerMax](#dell_powermax), [Fsas ETERNUS EP300](storage_ports.md#fsas), [Hitachi VSP/VSP One Block](#vsp), [HPE XP](#xp), [INFINIDAT InfiniBox](#infinidat), [NetApp SolidFire/HCI](#solidfire)
 * [Dell SC Series](#DellEMC)
 * [Dell PowerStore](#dell_powerstore)
-* [Fujitsu ETERNUS DX/AF](#fujitsu), [IBM FlashSystem (formerly Spectrum Virtualize) Storage](#ibm), [NEC Storage M Series](#necm)
+* [Fsas ETERNUS DX/AF](#fujitsu), [IBM FlashSystem (formerly Spectrum Virtualize) Storage](#ibm), [NEC Storage M Series](#necm)
 * [Pure Storage FlashArray](#pure), [Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile)](#WesternDigital)
 
-DataCore SANsymphony, Dell PowerStore, Hitachi VSP/VSP One Block, HPE XP, INFINIDAT InfiniBox,  NetApp SolidFire/HCI
+DataCore SANsymphony, Dell PowerStore, Fsas ETERNUS EP300, Hitachi VSP/VSP One Block, HPE XP, INFINIDAT InfiniBox,  NetApp SolidFire/HCI
 
 The following table describes network ports that must be opened to ensure proper communication with the following storage systems:
 
 * DataCore SANsymphony
 * Dell PowerStore
+* Fsas ETERNUS EP300
 * Hitachi VSP/VSP One Block
 * HPE XP
 * INFINIDAT InfiniBox
 * NetApp SolidFire/HCI
 
-DataCore SANsymphony, Dell PowerStore, Hitachi VSP/VSP One Block, HPE XP, INFINIDAT InfiniBox, NetApp SolidFire/HCI
+DataCore SANsymphony, Dell PowerStore, Fsas ETERNUS EP300, Hitachi VSP/VSP One Block, HPE XP, INFINIDAT InfiniBox, NetApp SolidFire/HCI
 
 | From | To | Protocol | Port | Notes |
 | Backup server | Storage system | TCP | 443 | Default command port used for communication with DataCore SANsymphony over HTTPS. |
@@ -476,18 +477,18 @@ Dell PowerMax
 | Backup server | Dell PowerMax storage system | TCP | 8443 | Default command port used for communication with Dell PowerMax over HTTPS. |
 | Backup proxy | Dell PowerMax storage system | TCP | 3260 | Default iSCSI target port. |
 
-Fujitsu ETERNUS DX/AF, IBM FlashSystem (formerly Spectrum Virtualize) Storage, NEC Storage M Series
+Fsas ETERNUS DX/AF, IBM FlashSystem (formerly Spectrum Virtualize) Storage, NEC Storage M Series
 
 The following table describes network ports that must be opened to ensure proper communication with the following storage systems:
 
-* Fujitsu ETERNUS DX/AF
+* Fsas ETERNUS DX/AF
 * IBM FlashSystem (formerly Spectrum Virtualize) Storage
 * NEC Storage M Series
 
-Fujitsu ETERNUS DX/AF, IBM FlashSystem (formerly Spectrum Virtualize) Storage, NEC Storage M Series
+Fsas ETERNUS DX/AF, IBM FlashSystem (formerly Spectrum Virtualize) Storage, NEC Storage M Series
 
 | From | To | Protocol | Port | Notes |
-| Backup server | Storage system | TCP | 22 | Default command port used for communication with Fujitsu ETERNUS DX/AF over SSH. |
+| Backup server | Storage system | TCP | 22 | Default command port used for communication over SSH. |
 | Backup proxy | Storage system | TCP | 3260 | Default iSCSI target port. |
 
 Pure Storage FlashArray, Tintri IntelliFlash (formerly Western Digital IntelliFlash, Tegile)
@@ -762,7 +763,7 @@ Protected Workloads
 | Guest interaction proxy | VM guest OS | TCP | 2500 to 3300 | Default range of ports used as transmission channels for log shipping. Note: These ports are NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | Guest interaction proxy | VM guest OS (Microsoft Windows) | TCP | 445, 135 | Port used to deploy the runtime coordination process on the VM guest OS. Note: These ports are NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
 | TCP | 6173 | Port used by the runtime process deployed inside the VM for guest OS interaction. Note: This port NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
-| Guest interaction proxy | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel. Note: This port NOT required in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
+| Guest interaction proxy | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel. Note: This port NOT required in networkless mode over VMware VIX/vSphere Web Services. |
 | Connections for Persistent Agent Components | | | | |
 | Backup server | VM guest OS (Linux) | TCP | 22 | Default SSH port used as a control channel during persistent agent installation. |
 | TCP | 2500 to 3300 | Range of ports used only during the installation of the persistent agent. |
@@ -843,7 +844,7 @@ Oracle Guest OS
 | TCP | 6173 | Port used by the Veeam Guest Helper for guest OS processing |
 | TCP | 6160, 11731 | [Persistent agent components only] Default ports used by Veeam Installer Service.  Port 11731 is used for failover if port 6160 is unavailable. |
 | TCP | 6167 | Port used by the Veeam Log Shipping Service for preparing the database and taking logs. |
-| Guest interaction proxy | Oracle VM guest OS (Linux) | TCP | 22 | [Non-persistent runtime components only] Default SSH port used as a control channel.  This port is NOT required when working in networkless mode over VMware VIX/vSphere Web Services or PowerShell Direct. |
+| Guest interaction proxy | Oracle VM guest OS (Linux) | TCP | 22 | [Non-persistent runtime components only] Default SSH port used as a control channel.  This port is NOT required when working in networkless mode over VMware VIX/vSphere Web Services. |
 | TCP | 6162 | [Persistent agent components only] Default Management Agent port. Required if it is used as a control channel instead of SSH. |
 
 PostgreSQL Guest OS
@@ -1219,4 +1220,5 @@ Nutanix Mine with Veeam
 
 * [Nutanix Mine with Veeam Connections](https://helpcenter.veeam.com/docs/nutanixmine/userguide/used_ports.html?ver=40)
 
+Page updated 2026-07-20
 
