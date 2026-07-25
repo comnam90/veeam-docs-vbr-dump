@@ -3,7 +3,7 @@ title: "Cloud Director CDP Policy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cdp_policy_create.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,4 +22,5 @@ Cloud Director CDP Policy
 | [Disable-VBRCDPPolicy](disable-vbrcdppolicy.md) | Disables Cloud Director CDP policies. |
 | [Remove-VBRCDPPolicy](remove-vbrcdppolicy.md) | Removes Cloud Director CDP policies. |
 
+Page updated 2026-07-21
 
