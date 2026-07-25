@@ -3,7 +3,7 @@ title: "Step 4. Configure Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_repository.html"
-last_updated: "6/25/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,9 +24,8 @@ To configure general repository settings:
 
 ![Step 4. Configure Backup Repository Settings](images/hpestoreonce_repository.webp)
 
-1. [For ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800 and Infinidat InfiniGuard] The Use fast cloning on XFS volumes check box is enabled and cannot be changed. This enables the copy-on-write functionality. In terms of Veeam Backup & Replication, this functionality is known as Fast Clone. For more information, see [Fast Clone](backup_repository_block_cloning.md).
-
-1. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the backup repository. These settings will help you control the load on the backup repository and prevent possible timeouts of storage I/O operations.
+1. [For ExaGrid, Quantum DXi, Fsas ETERNUS CS800 and Infinidat InfiniGuard] The Use fast cloning on XFS volumes check box is enabled and cannot be changed. This enables the copy-on-write functionality. In terms of Veeam Backup & Replication, this functionality is known as Fast Clone. For more information, see [Fast Clone](backup_repository_block_cloning.md).
+2. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the backup repository. These settings will help you control the load on the backup repository and prevent possible timeouts of storage I/O operations.
 
    * Select the Limit maximum concurrent tasks check box and specify the maximum allowed number of concurrent tasks for the backup repository. If this value is exceeded, Veeam Backup & Replication will not start a new task until one of current tasks finishes. For more information, see [Limiting the Number of Concurrent Tasks](limiting_tasks.md).
 
@@ -82,7 +81,7 @@ Quantum DXi
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
-Fujitsu ETERNUS CS800
+Fsas ETERNUS CS800
 
 * The Align backup file data blocks option is enabled and cannot be changed.
 * The Decompress backup data blocks before storing option is enabled.
@@ -100,4 +99,5 @@ HPE StoreOnce
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
+Page updated 2026-07-20
 
