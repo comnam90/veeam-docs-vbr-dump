@@ -3,8 +3,8 @@ title: "Getting Technical Support"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_export_logs.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Getting Technical Support
@@ -22,7 +22,7 @@ Viewing Product Details
 
 To view the product details in a Windows-based environment, do the following:
 
-1. On the server running the Veeam Backup & Replication console, navigate to Settings> Apps & features.
+1. On the server running the Veeam Backup & Replication console, navigate to Settings > Apps & features.
 
 Alternatively, open the Control Panel window and navigate to Programs > Programs and Features.
 
@@ -67,4 +67,5 @@ Complete the wizard as described in section [Exporting Logs](exporting_logs.md).
 | Tip |
 | To download the product logs in a Linux-based environment, follow the instructions provided in section [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md#downloading-logs). |
 
+Page updated 2026-07-14
 
