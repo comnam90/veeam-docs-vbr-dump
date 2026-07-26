@@ -3,8 +3,8 @@ title: "VM Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_backup_job_how.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # VM Backup
@@ -32,7 +32,7 @@ Veeam Backup & Replication performs VM backup in the following way:
 If no worker is deployed on the host, Veeam Backup & Replication launches a worker that is deployed on any other HPE Morpheus VM Essentials host of the same HPE Morpheus VM Essentials server.
 
 1. Connects to the HPE Morpheus VM Essentials manager and creates copy-on-write disk snapshots of the processed VM.
-2. Uses the worker to read data from the snapshots of VM disks created at the step 2, transfers the data to the target backup repository and stores it in the native Veeam format.
+2. Uses the worker to read data from the snapshots of VM disks created at step 2, transfers the data to the target backup repository and stores it in the native Veeam format.
 
 To reduce the amount of data read from snapshots, Veeam Backup & Replication uses the changed block tracking (CBT) mechanism: during incremental backup sessions, Veeam Backup & Replication use native libvirt and QEMU mechanisms  to retrieve only those data blocks that have changed since the previous backup session. If CBT cannot be used, Veeam Backup & Replication reads all data from the snapshots. For more information, see [Changed Block Tracking](hpe_changed_block_tracking.md).
 
@@ -46,4 +46,5 @@ Related Topics
 * [Backup Chain](hpe_backup.md)
 * [Retention Policies](hpe_retention_policy.md)
 
+Page updated 2026-07-14
 
