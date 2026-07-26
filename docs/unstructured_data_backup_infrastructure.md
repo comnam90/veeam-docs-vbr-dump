@@ -3,8 +3,8 @@ title: "Backup Infrastructure for Unstructured Data Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_infrastructure.html"
-last_updated: "5/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Backup Infrastructure for Unstructured Data Backup
@@ -113,7 +113,7 @@ Storage Repositories
 | [ExaGrid](deduplicating_appliance_exgrid.md) | ✓ | ✓ | ✓ |
 | [HPE StoreOnce with Catalyst license](deduplicating_appliance_storeonce.md) 2 | ✓ | ✓ | ✓ |
 | [Quantum DXi](deduplicating_appliance_quantum.md) | ✓ | ✓ | ✓ |
-| [Fujitsu ETERNUS CS800](fujitsu.md) | ✓ | ✓ | ✓ |
+| [Fsas ETERNUS CS800](fujitsu.md) | ✓ | ✓ | ✓ |
 | [Infinidat InfiniGuard](infinidat_infiniguard.md) | ✓ | ✓ | ✓ |
 | [Scale-out backup repository (SOBR)](backup_repository_sobr.md) 3, 4 | ✓ | ✕ | ✓ |
 | [Object storage repository](object_storage_repository.md) 5 | ✓ | ✓ | ✓ |
@@ -153,4 +153,5 @@ In This Section
 
 * [Adding Unstructured Data Source](adding_unstructured_data_source.md)
 
+Page updated 2026-07-20
 
