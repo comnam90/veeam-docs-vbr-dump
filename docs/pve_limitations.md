@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_limitations.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -35,7 +35,7 @@ When configuring Veeam Plug-in for Proxmox VE, consider the following:
 
 * Before you [add a Proxmox VE server](pve_sever_add.md) to the backup infrastructure, ensure that it has been assigned a unique Proxmox VE system UUID and its name does not contain an FQDN.
 
-* If you want to protect VMs that reside in a Proxmox VE cluster, all nodes of these cluster must be added to the backup infrastructure separately. Adding clusters as standalone entities is not supported.
+* If you want to protect VMs that reside in a Proxmox VE cluster, all nodes of this cluster must be added to the backup infrastructure separately. Adding clusters as standalone entities is not supported.
 * After you add nodes of a cluster to the backup infrastructure, you must not change the name of the cluster in the Proxmox VE administration portal.
 * After you make changes to your Proxmox VE environment (for example, you migrate a VM between cluster nodes), these changes may not appear in Veeam Backup & Replication immediately — the data synchronization process between the backup server and the Proxmox VE server may take up to 15 minutes to complete. You can speed up the data synchronization process by [rescanning the Proxmox VE server](pve_server_rescan.md).
 
@@ -80,7 +80,7 @@ When configuring guest processing in backup jobs, consider the following:
 * Veeam Plug-in for Proxmox VE cannot [use Kerberos authentication](https://helpcenter.veeam.com/docs/vbr/userguide/kerberos_authentication.html?ver=13) while connecting to guest OSes of the processed VMs.
 
 * When restoring a database using Veeam Explorers to the original VM, the VM hostname is used instead of the FQDN name. If Veeam Explorers cannot reach the VM, you can add the FQDN name and the IP address of the VM to the hosts file on the backup server.
-* If you import backups created by a job with guest processing enabled, this backup job will truncate transaction logs but it will not store transaction log backups in the repository. To avoid the issue, before running the job, either clone the job and perform active full, or contact contact Veeam Customer Support.
+* If you import backups created by a job with guest processing enabled, this backup job will truncate transaction logs but it will not store transaction log backups in the repository. To avoid the issue, before running the job, either clone the job and perform active full, or contact Veeam Customer Support.
 * Image-level, application-aware backups of Veeam Backup for Microsoft 365 servers running on Proxmox VE clusters are not Veeam Microsoft 365 restore explorers-aware. The behavior described in [this article](https://bp.veeam.com/vb365/guide/design/vb365_with_vbr) is currently unsupported for Proxmox VE backups.
 
 * Veeam Plug-in for Proxmox VE will not be able to create an application-consistent backup of a Microsoft SQL Server running a Windows Server Failover Cluster. If you add such a VM to the backup job scope and enable application-aware processing for it, Veeam Backup & Replication will only create an image-level backup. To work around the limitation, [use Veeam Agent](agents_cluster_support.md) managed by Veeam Backup & Replication instead.
@@ -95,7 +95,7 @@ When restoring Proxmox VE resources, consider the following:
 
 * Veeam Plug-in for Proxmox VE does not support restore of High Availability (HA) VM settings.
 
-* You cannot perform VM restore from a tape to Enter value. A tape backup needs to be returned to a supported repository to complete the restore operation.
+* You cannot perform VM restore from a tape to Proxmox VE. A tape backup needs to be returned to a supported repository to complete the restore operation.
 
 * If you restore the VM from a backup stored in the archive tier of the scale-out backup repository, you must first retrieve backup data as described in the Veeam Backup & Replication User Guide, section [Retrieving Backup Files](https://helpcenter.veeam.com/docs/vbr/userguide/retrieval_job_launch.html?ver=13). Note that you cannot perform Entire VM restore from backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent. For those backups, you can perform [Instant VM Recovery](pve_restore_instant.md).
 
@@ -107,4 +107,5 @@ When restoring Proxmox VE resources, consider the following:
 
 * Veeam Plug-in for Proxmox VE does not support restore of VMs to the BTRFS and custom storage.
 
+Page updated 2026-07-14
 
