@@ -3,7 +3,7 @@ title: "CDP for VMware Cloud Director"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cdp.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ In this section
 * [Cloud Director CDP Failover](vcd_cdp_failover.md)
 * [Cloud Director CDP Failback](vcd_cdp_failback.md)
 
+Page updated 2026-07-21
 
