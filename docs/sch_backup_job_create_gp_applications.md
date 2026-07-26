@@ -3,8 +3,8 @@ title: "Step 5a. Enable Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_applications.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5a. Enable Application-Aware Processing
@@ -56,4 +56,5 @@ To change this behavior and instruct Veeam Backup & Replication to proceed with 
 
 [![Step 5a. Enable Application-Aware Processing](images/sch_backup_job_create_gp_applications.webp)](images/sch_backup_job_create_gp_applications.webp)
 
+Page updated 2026-07-14
 
