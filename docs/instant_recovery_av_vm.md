@@ -3,14 +3,14 @@ title: "Step 8. Specify Secure Restore Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_av_vm.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 8. Specify Secure Restore Settings
 
 
-This step is available if you recover workloads with Microsoft Windows OS. However, this step is not available if you recover VMware vSphere VMs from storage snapshots.
+This step is not available if you recover VMware vSphere VMs from storage snapshots.
 
 At the Secure Restore step of the wizard, you can instruct Veeam Backup & Replication to scan machine data for malware activity before restoring the machine to the production environment. To scan the data, Veeam Backup & Replication uses the following engines:
 
@@ -53,4 +53,5 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 
 ![Step 8. Specify Secure Restore Settings](images/instant_recovery_av_vm.webp)
 
+Page updated 2026-07-17
 
