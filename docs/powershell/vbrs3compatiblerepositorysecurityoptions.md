@@ -3,7 +3,7 @@ title: "VBRS3CompatibleRepositorySecurityOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrs3compatiblerepositorysecurityoptions.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -27,4 +27,5 @@ Related Commands
 * [Get-VBRS3CompatibleRepositorySecurityOptions](get-vbrs3compatiblerepositorysecurityoptions.md)
 * [Set-VBRS3CompatibleRepositorySecurityOptions](set-vbrs3compatiblerepositorysecurityoptions.md)
 
+Page updated 2026-07-21
 
