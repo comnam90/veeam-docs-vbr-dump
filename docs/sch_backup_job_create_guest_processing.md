@@ -3,8 +3,8 @@ title: "Step 5. Specify Guest Processing Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_guest_processing.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Specify Guest Processing Options
@@ -24,11 +24,12 @@ For VMs running Microsoft SQL Server, Oracle Server or PostgreSQL Server applica
 
 Considerations and Limitations
 
-If you enable application-aware processing or guest files system indexing, consider the following:
+If you enable application-aware processing or guest file system indexing, consider the following:
 
 * Guest processing requires Veeam Plug-in for Scale Computing HyperCore to access IP addresses of the processed VMs. To achieve that, make sure that Scale Computing Guest Tools (for Windows machines) or QEMU Guest Agent (for Linux machines) are installed on the VMs.
 * Veeam Plug-in for Scale Computing HyperCore will not be able to [use Kerberos authentication](kerberos_authentication.md) while connecting to guest OSes of the processed VMs.
 
 [![Step 5. Specify Guest Processing Settings](images/sch_backup_job_create_guest_processing.webp)](images/sch_backup_job_create_guest_processing.webp)
 
+Page updated 2026-07-14
 
