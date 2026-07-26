@@ -3,7 +3,7 @@ title: "Reports"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/reports.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ Reports
 | Cmdlet | Operation |
 | [Export-VBRAudit](export-vbraudit.md) | Exports report on actions performed in Veeam Backup & Replication. |
 
+Page updated 2026-07-21
 
