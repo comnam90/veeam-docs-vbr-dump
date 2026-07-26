@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repo_before_you_begin.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Before You Begin
@@ -49,11 +49,11 @@ Quantum DXi
 
 * To use Quantum DXi as a backup repository, you must configure a Quantum DXi share. For more information, see [Quantum DXi](deduplicating_appliance_quantum.md).
 
-Fujitsu ETERNUS CS800
+Fsas ETERNUS CS800
 
-* Fujitsu ETERNUS CS800 must meet software requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
+* Fsas ETERNUS CS800 must meet software requirements. For more information, see [System Requirements](system_requirements_backup_target.md).
 
-* To use Fujitsu ETERNUS CS800 as a backup repository, you must configure a Fujitsu share. For more information, see [Fujitsu ETERNUS CS800](fujitsu.md).
+* To use Fsas ETERNUS CS800 as a backup repository, you must configure a Fsas share. For more information, see [Fsas ETERNUS CS800](fujitsu.md).
 
 * Check vendor documentation dedicated to integration with Veeam. Some links you can find in [this Veeam KB article](https://www.veeam.com/kb1745#vendordocs).
 
@@ -74,4 +74,5 @@ To offload data to tapes, make sure that:
 * All of the backup data is stored on the appliance altogether (that is, all of the backup chains are stored on the appliance as a whole and not scattered across multiple devices) and only copies are stored on tapes.
 * These appliances emulate a tape system (VTL) as an access protocol for.
 
+Page updated 2026-07-20
 
