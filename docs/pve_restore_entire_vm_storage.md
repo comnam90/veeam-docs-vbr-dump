@@ -3,8 +3,8 @@ title: "Step 5. Select Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_restore_entire_vm_storage.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5. Select Storage
@@ -18,9 +18,10 @@ If you restore the VM to the original host, Veeam Backup & Replication will auto
 
 |  |
 | --- |
-| NoteS |
+| Notes |
 | * You will not be able to select storage and disk type for each VM disk separately. * If the selected storage does not support the specified disk type, Veeam Backup & Replication will display a warning notifying that some of the provided settings are invalid. You will still be able to proceed with the wizard without changing the disk type; in this case, Veeam Backup & Replication will automatically choose a supported disk type while restoring the VM. |
 
 ![Step 5. Select Storage](images/pve_restore_entire_vm_storage.webp)
 
+Page updated 2026-07-14
 
