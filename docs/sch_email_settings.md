@@ -3,8 +3,8 @@ title: "Configuring Email Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_email_settings.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Configuring Email Settings
@@ -84,10 +84,11 @@ To sign in with Exchange Online credentials, you may need to turn off the Intern
 |  |
 | --- |
 | Tip |
-| If you want to use your own web application for email notifications, do the following:   1. Register a new client application in the [Microsoft Azure portal](registering_azure_app.md) for Veeam Backup & Replication to be able to use OAuth 2.0 to access Microsoft Azure APIs. When registering the application, it is recommended to use a dedicated service account with granular SendMail permissions. 2. In the Options window, click Advanced. 3. In the Advanced window, select the Use custom registration settings check box, and provide the application client ID and tenant ID created for the application as described in [Microsoft documentation](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). 4. Click Authorize now. You will be redirected to the authorization page. 5. On the authorization page, specify a Exchange Online account to connect to the registered application. Note that you must also select the Send email on your behalf check box. |
+| If you want to use your own web application for email notifications, do the following:   1. Register a new client application in the [Microsoft Azure portal](registering_azure_app.md) for Veeam Backup & Replication to be able to use OAuth 2.0 to access Microsoft Azure APIs. When registering the application, it is recommended to use a dedicated service account with granular SendMail permissions. 2. In the Options window, click Advanced. 3. In the Advanced window, select the Use custom registration settings check box, and provide the application client ID and tenant ID created for the application as described in [Microsoft documentation](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). 4. Click Authorize now. You will be redirected to the authorization page. 5. On the authorization page, specify an Exchange Online account to connect to the registered application. Note that you must also select the Send email on your behalf check box. |
 
-If the authentication process completes successful, Veeam Backup & Replication will display a message notifying that the token is valid. If the token gets revoked or if the Exchange Online account password changes, click Re-authorize to update the configuration settings.
+If the authentication process completes successfully, Veeam Backup & Replication will display a message notifying that the token is valid. If the token gets revoked or if the Exchange Online account password changes, click Re-authorize to update the configuration settings.
 
 [![Configuring Email Notification Settings](images/sch_email_settings_modern_ms.webp)](images/sch_email_settings_modern_ms.webp "Configuring Email Notification Settings")
 
+Page updated 2026-07-14
 
