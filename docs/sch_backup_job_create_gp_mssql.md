@@ -3,8 +3,8 @@ title: "Specifying Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_mssql.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Specifying Microsoft SQL Server Transaction Log Settings
@@ -14,7 +14,7 @@ By default, Veeam Backup & Replication creates application-consistent image-leve
 
 |  |
 | --- |
-| NoteS |
+| Notes |
 | * Veeam Backup & Replication stores image-level backups and transaction log backups in the same repository. * If Veeam Backup & Replication fails to produce a primary image-level backup, no secondary transaction log backups will be created. |
 
 To back up Microsoft SQL Server transaction logs periodically, do the following:
@@ -36,7 +36,7 @@ For a Windows server to be displayed in the list of available log shipping serve
 
 |  |
 | --- |
-| TipS |
+| Tips |
 | * It is recommended that you choose at least 2 log shipping servers for load balancing and high availability purposes. * It is recommended that you do not choose servers that are engaged in permanent tasks consuming resources (such as WAN accelerators or backup servers). |
 
 You can also choose not to truncate logs at all. However, if log truncation is disabled for databases that use recovery models other than simple recovery model, it may significantly increase the amount of storage space consumed by transaction logs. For more information on recovery models used by Microsoft SQL databases, see [Microsoft Docs](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-ver16).
@@ -56,4 +56,5 @@ For more information on the SQL Server Always On availability group feature, see
 
 [![Microsoft SQL Server Transaction Log Settings](images/sch_backup_job_create_gp_mssql.webp)](images/sch_backup_job_create_gp_mssql.webp)
 
+Page updated 2026-07-14
 
