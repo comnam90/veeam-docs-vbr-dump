@@ -3,8 +3,8 @@ title: "Getting Technical Support"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_export_logs.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Getting Technical Support
@@ -22,7 +22,7 @@ Viewing Product Details
 
 To view the product details, do the following:
 
-1. On the server running the Veeam Backup & Replication console, navigate to Settings> Apps & features.
+1. On the server running the Veeam Backup & Replication console, navigate to Settings > Apps & features.
 
 Alternatively, open the Control Panel window and navigate to Programs > Programs and Features.
 
@@ -41,4 +41,5 @@ Complete the wizard as described in section [Exporting Logs](exporting_logs.md).
 
 [![Exporting Logs Using Veeam Backup & Replication Console](images/pve_logs_vbr.webp)](images/pve_logs_vbr.webp "Exporting Logs Using Veeam Backup & Replication Console")
 
+Page updated 2026-07-14
 
