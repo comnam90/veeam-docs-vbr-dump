@@ -3,7 +3,7 @@ title: "Backup Copy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/backupcopy.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,4 +21,5 @@ In this section
 * [Azure Backup Copy Job](azure_backup_copy.md)
 * [Veeam Agent Backup Copy Job](veeam_agent_backup_copy_job.md)
 
+Page updated 2026-07-21
 
