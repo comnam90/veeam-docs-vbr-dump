@@ -3,7 +3,7 @@ title: "Quick Backup"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/quick_backup.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,4 +17,5 @@ Quick Backup
 | Cmdlet | Operation |
 | [Start-VBRQuickBackup](start-vbrquickbackup.md) | Performs quick backup. |
 
+Page updated 2026-07-21
 
