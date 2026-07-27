@@ -3,8 +3,8 @@ title: "Step 3. Configure Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_workers_add_network.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 3. Configure Network Settings
@@ -15,7 +15,7 @@ At the Networks step of the wizard, do the following:
 1. Click Add to configure worker network interfaces:
 
 1. In the VLAN ID field, specify VLAN ID of a network to which the worker network interface will be connected.
-2. In the Description filed, provide a network interface description for future reference.
+2. In the Description field, provide a network interface description for future reference.
 3. If DHCP is enabled in the selected network, the IP address of the worker can be obtained automatically.
 
 If DHCP is disabled in the selected network, or you want to specify an IP address, select the Use the following IP address option and enter the worker IP address, subnet mask and default gateway.
@@ -45,4 +45,5 @@ To add more network interfaces, repeat the step and specify the network order us
 
 [![Specify Worker Network Settings](images/sch_workers_add_network.webp)](images/sch_workers_add_network.webp "Specify Worker Network Settings")
 
+Page updated 2026-07-14
 
