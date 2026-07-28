@@ -3,17 +3,12 @@ title: "Veeam Cloud Connect"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_cloud_connect.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Veeam Cloud Connect
 
-
-|  |
-| --- |
-| Important |
-| This functionality is not supported in the current version of Veeam Backup & Replication. |
 
 The following topics contain instructions on managing and storing your data in the cloud provider infrastructure by means of Veeam PowerShell.
 
@@ -37,4 +32,5 @@ In This Section
 * [Veeam Cloud Connect Subusers](subusers.md)
 * [Continuous Data Protection (CDP) with Veeam Cloud Connect](cdp_cloud_connect.md)
 
+Page updated 2026-07-21
 
