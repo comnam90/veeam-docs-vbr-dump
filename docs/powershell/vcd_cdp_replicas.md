@@ -3,7 +3,7 @@ title: "CDP Replica Management"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cdp_replicas.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,4 +20,5 @@ CDP Replica Management
 | [Get-VBRvCDCDPShortTermRestoreInterval](get-vbrvcdcdpshorttermrestoreinterval.md) | Returns short-term restore points of a Cloud Director CDP replica. |
 | [Remove-VBRCDPReplica](remove-vbrcdpreplicavcd.md) | Removes a Cloud Director CDP replica. |
 
+Page updated 2026-07-21
 
