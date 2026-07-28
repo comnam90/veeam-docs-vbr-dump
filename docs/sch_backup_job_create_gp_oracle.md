@@ -3,8 +3,8 @@ title: "Specifying Oracle Archived Redo Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_oracle.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Specifying Oracle Archived Redo Log Settings
@@ -14,7 +14,7 @@ By default, Veeam Backup & Replication creates application-consistent image-leve
 
 |  |
 | --- |
-| NoteS |
+| Notes |
 | * Veeam Backup & Replication stores image-level backups and archived redo log backups in the same repository. * If Veeam Backup & Replication fails to produce a primary image-level backup, no secondary archived redo log backups will be created. |
 
 To back up Oracle archived redo logs periodically, do the following:
@@ -32,11 +32,11 @@ For more information on how Veeam Backup & Replication retains archived redo log
 
 By default, Veeam Backup & Replication automatically chooses a log shipping server for each of the processed VMs based on network settings and rules listed in section [Log Shipping Servers](sql_backup_log_shipping.md). You can also manually limit the list of machines that may be used as log shipping servers — to do that, click Choose, select the Use the specified servers only option and then select check boxes next to the necessary servers.
 
-For a server to be displayed in the list of available log shipping servers, it must be added to the backup infrastructure as described in sections [Adding Microsoft Windows Servers](add_windows_server.md) and [Adding Linux Servers](add_linux_server.md).Keep in mind that the list will also include Linux servers added to the backup infrastructure; however, Linux servers cannot be used as log shipping servers for processing Windows-based VMs due to technical limitations in the current version.
+For a server to be displayed in the list of available log shipping servers, it must be added to the backup infrastructure as described in sections [Adding Microsoft Windows Servers](add_windows_server.md) and [Adding Linux Servers](add_linux_server.md). Keep in mind that the list will also include Linux servers added to the backup infrastructure; however, Linux servers cannot be used as log shipping servers for processing Windows-based VMs due to technical limitations in the current version.
 
 |  |
 | --- |
-| TipS |
+| Tips |
 | * It is recommended that you choose at least 2 log shipping servers for load balancing and high availability purposes. * It is recommended that you do not choose servers that are engaged in permanent tasks consuming resources (such as WAN accelerators or backup servers). |
 
 You can choose to keep the default Do not delete archived logs option, but in this case archived redo logs may grow large and increase the storage space consumption significantly. That is why it is recommended that you choose to remove archived redo logs that are older than a specific time limit or whose size exceeds a specific storage threshold. Keep in mind that the selected option will apply to logs of each processed Oracle database individually — and only after the backup job completes successfully.
@@ -56,4 +56,5 @@ When you configure transaction log settings, consider the following:
 
 [![Oracle Archived Redo Log Settings](images/sch_backup_job_create_gp_oracle.webp)](images/sch_backup_job_create_gp_oracle.webp)
 
+Page updated 2026-07-14
 
