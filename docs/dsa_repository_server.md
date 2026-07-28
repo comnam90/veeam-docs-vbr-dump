@@ -3,8 +3,8 @@ title: "Step 3. Specify Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_server.html"
-last_updated: "11/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 3. Specify Server Settings
@@ -35,9 +35,9 @@ For more information on the gateway servers, their requirements and limitations,
 
 ![Step 3. Specify Server Settings](images/dell_data_domain_server.webp)
 
-ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800 and Infinidat InfiniGuard
+ExaGrid, Quantum DXi, Fsas ETERNUS CS800 and Infinidat InfiniGuard
 
-To configure settings for ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800 or Infinidat InfiniGuard deduplicating appliance:
+To configure settings for ExaGrid, Quantum DXi, Fsas ETERNUS CS800 or Infinidat InfiniGuard deduplicating appliance:
 
 1. From the Repository server list, select an appliance that you want to use as a backup repository. The Repository server list contains only those servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, you can click Add New to open the New Linux Server wizard. For more information, see [Virtualization Servers and Hosts](setup_add_server.md).
 2. Click Populate to see the appliance capacity and available free space.
@@ -69,4 +69,5 @@ Related Topics
 
 [Gateway Servers](gateway_server.md)
 
+Page updated 2026-07-20
 
