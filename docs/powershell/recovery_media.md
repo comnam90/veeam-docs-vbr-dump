@@ -3,7 +3,7 @@ title: "Veeam Agent Management Recovery Media"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/recovery_media.html"
-last_updated: "6/24/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,4 +19,5 @@ Veeam Agent Management Recovery Media
 | [New-VBRRecoveryMediaISOTarget](new-vbrrecoverymediaisotarget.md) | Creates a file path to the recovery image |
 | [Add-VBRDiscoveredComputerRecoveryMedia](add-vbrdiscoveredcomputerrecoverymedia.md) | Creates Veeam Recovery Media |
 
+Page updated 2026-07-21
 
