@@ -3,8 +3,8 @@ title: "Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Backup Repositories
@@ -34,7 +34,7 @@ You can use the following storage types as backup repositories:
 
 * [Dell Data Domain](dell_dd.md)
 * [ExaGrid](deduplicating_appliance_exgrid.md)
-* [Fujitsu ETERNUS CS800](fujitsu.md)
+* [Fsas ETERNUS CS800](fujitsu.md)
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
 * [Infinidat InfiniGuard](infinidat_infiniguard.md)
 * [Quantum DXi](deduplicating_appliance_quantum.md)
@@ -71,4 +71,5 @@ Related Topics
 
 [Scale-Out Backup Repositories](backup_repository_sobr.md)
 
+Page updated 2026-07-20
 
