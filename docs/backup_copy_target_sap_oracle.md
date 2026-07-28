@@ -3,7 +3,7 @@ title: "Step 4. Define Backup Copy Target"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_target_sap_oracle.html"
-last_updated: "7/9/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -38,8 +38,9 @@ To map a backup copy job to the backup:
 | Important |
 | Keep in mind that repositories must meet the following requirements:   * Used account must have access to Veeam backup repositories that you plan to use. * Encryption must be disabled on the repository.   Otherwise, the repositories will not be listed as available. For details on how to configure access permissions and encryption settings on repositories, see [Editing Access Permissions](access_permissions.md). |
 
-1. You can specify the number of days after which the backup copy will be deleted from the repository. Note that the countdown starts from the moment when source backup has been created.
+1. With the Retention policy field, you can specify the number of days after which Veeam Backup & Replication deletes the backup copy file from the repository. Veeam Backup & Replication checks the backup copies created by the job every 24 hours and deletes the ones that are older than the specified value. The countdown starts from the moment when source backup has been created.
 
 ![Step 4. Define Backup Copy Target](images/plugins_backup_copy_target.webp)
 
+Page updated 2026-07-21
 
