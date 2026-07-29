@@ -3,8 +3,8 @@ title: "Entire VM Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_how_entire.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Entire VM Restore
@@ -13,7 +13,7 @@ product_version: "13.0.1.1071"
 To restore a VM, Veeam Backup & Replication performs the following steps:
 
 1. [Applies only if you perform restore to the original location where the source VM is still present] Connects to the Nutanix AHV server over REST API to power off and remove the source VM.
-2. Launches a worker on same host where the processed VM resides.
+2. Launches a worker on the same host where the processed VM resides.
 
 If no worker is deployed on the host, Veeam Backup & Replication launches any other Nutanix AHV worker that is added to the backup infrastructure.
 
@@ -39,4 +39,5 @@ The maximum number of disk nodes available on Nutanix AHV VMs for each bus type 
 
 To learn how to restore an entire VM, see [Performing VM Restore](ahv_restore_to_ahv.md).
 
+Page updated 2026-07-14
 
