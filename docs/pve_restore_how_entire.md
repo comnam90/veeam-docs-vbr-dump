@@ -3,8 +3,8 @@ title: "Entire VM Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_restore_how_entire.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Entire VM Restore
@@ -13,7 +13,7 @@ product_version: "13.0.1.2067"
 To restore a VM, Veeam Backup & Replication performs the following steps:
 
 1. [This step applies only if you perform restore to the original location and if the source VM is still present in the location] Connects to the Proxmox VE server over REST API to power off and remove the source VM.
-2. Launches a worker on same host where the processed VM resides.
+2. Launches a worker on the same host where the processed VM resides.
 
 If no worker is deployed on the host, Veeam Backup & Replication launches a worker that is deployed on any other Proxmox VE host connected to the backup infrastructure.
 
@@ -34,4 +34,5 @@ If multiple disks are attached to the backed-up VM, these disks are restored seq
 
 To learn how to restore an entire VM, see [Performing VM Restore](pve_restore_entire_vm.md).
 
+Page updated 2026-07-14
 
