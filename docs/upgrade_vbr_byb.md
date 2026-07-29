@@ -3,7 +3,7 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "6/23/2026"
+last_updated: "2026"
 product_version: "13.0.2.29"
 ---
 
@@ -129,7 +129,7 @@ Integration with Storage Systems
 * HPE Nimble: The minimum supported operating system version is 5.2. Upgrade to it or remove the storage arrays from the backup server configuration.
 * Dell Data Domain: The supported operating system version is 7.9 to 8.6. Upgrade to it, or the backup jobs pointed to this repository will fail to start.
 * ExaGrid: The minimum supported operating system version is 7.2.0 P08. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
-* Fujitsu CS800: The minimum supported operating system version is 5.2.0. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
+* Fsas CS800: The minimum supported operating system version is 5.2.0. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
 * Infinidat InfiniGuard: The minimum supported operating system version is 3.12. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
 * Quantum DXi: Quantum DXi: The minimum supported operating system version is 5.2.0. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. For more information, see [Quantum documantation](https://qsupport.quantum.com/kb/flare/Content/dxi/Dxi_V5000/Install/Veeam.htm). On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
 
@@ -148,4 +148,5 @@ You can disable only policies targeted at the cluster whose filter you want to u
 4. Ensure you have configuration backup encryption enabled, otherwise stored credentials will not be included in it. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md).
 5. Do you use File to Tape jobs? During the upgrade, manually added servers and sources are migrated to inventory objects (File Server or Unstructured Data Server). No action is required, but review the job sources after the upgrade.
 
+Page updated 2026-07-20
 
