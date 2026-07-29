@@ -3,8 +3,8 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_advanced_storage.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Storage Settings
@@ -27,7 +27,14 @@ You can select a Key Management System (KMS) server in the Password field. To do
 | NOTE |
 | Consider the following:   * If you plan to encrypt the content of backup files, consider the limitations listed in [Data Encryption Limitations](#limits). * You must encrypt the backup policy if you want to back up data to the Veeam Data Vault storage. |
 
-1. To remove deleted items data after a set period of time, select the Full backup file maintenance check box. The default time period is 14 days.
+1. To automatically delete outdated database backups, select the Remove deleted items data after check box and specify the time period in days. The default time period is 14 days.
+
+If you select the Remove deleted items data after check box, Veeam Backup & Replication performs the force delete operation after each backup policy run. If all backups of a database (full, differential and log) are older than the specified time period, Veeam Backup & Replication deletes all backups of this database from the backup files (.VAB). For more information on the logic behind the force delete operation, see [Force Delete Operation](mssql_retention_tools_force_delete.md).
+
+|  |
+| --- |
+| Important |
+| Use the force delete operation with caution, as it may lead to data loss. For example, the force delete operation can remove backups earlier than it is intended according to the retention policy. |
 
 ![Storage Settings](images/plugins_policy_mssql_storage_advanced_storage.webp)
 
@@ -43,4 +50,5 @@ If you plan to encrypt the content of backup files, consider the following limit
 
 To learn more about data encryption in Veeam Backup & Replication, see [Data Encryption](data_encryption.md).
 
+Page updated 2026-07-21
 
