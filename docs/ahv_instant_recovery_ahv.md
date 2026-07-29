@@ -3,8 +3,8 @@ title: "Performing Instant Recovery of Workloads to Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_instant_recovery_ahv.html"
-last_updated: "4/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.0.2.29"
 ---
 
 # Performing Instant Recovery of Workloads to Nutanix AHV
@@ -28,7 +28,7 @@ To recover machines to a Nutanix AHV cluster, you can use the following backups:
 * Backups of Amazon EC2 instances created by Veeam Backup for AWS
 
 * Backups of Microsoft Azure VMs created by Veeam Backup for Microsoft Azure
-* Backups of Google Cloud VMs instances created by Veeam Backup for Google Cloud
+* Backups of Google Cloud VM instances created by Veeam Backup for Google Cloud
 * Backups of oVirt KVM VMs created by Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization
 
 * Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE
@@ -66,4 +66,5 @@ To perform Instant Recovery of a protected workload, do the following:
 10. [Review the configured settings](ahv_ir_verify_ahv.md).
 11. [Finalize the recovery process](ahv_ir_finalize_ahv.md).
 
+Page updated 2026-07-14
 
