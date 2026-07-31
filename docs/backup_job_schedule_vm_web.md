@@ -3,8 +3,8 @@ title: "Step 9. Define Job Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_schedule_vm_web.html"
-last_updated: "9/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 9. Define Job Schedule
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 At the Schedule step of the wizard, select to run the job manually or schedule the job to run on a regular basis:
 
-1. To run the job automatically, select the Run the job automatically check box. If you do not select this check box, you will have to start the job manually.
+1. To run the job automatically, set the Run the job automatically toggle to On. If you do not do it, you will have to start the job manually.
 2. From the list, select the required schedule option:
 
 + Daily at this time. The job will run at a specific time daily, on weekdays or with specific periodicity. In the fields on the right of the radio button, specify the time and required days.
@@ -22,7 +22,7 @@ At the Schedule step of the wizard, select to run the job manually or schedule t
 To configure the period and allowed hours, do the following:
 
 1. In the field on the right of the list field, select the necessary time unit. If you select Continuously, a new job session will start as soon as the previous job session finishes.
-2. If you want to specify the permitted time window for the job, click Schedule. In the Time Periods window, specify the schedule.
+2. If you want to specify the permitted time window for the job, click Schedule. In the Configure Backup Window window, specify the schedule.
 
 If you want to shift the schedule, specify the offset in the Start time within an hour field. For example, you schedule the prohibited hours from 08:00 AM to 10:00 AM, and set the offset value to 25. The schedule will be shifted forward, and the prohibited hours will be from 8:00 AM and to 10:25 AM.
 
@@ -42,7 +42,7 @@ To create a chain of jobs, you must define the time schedule for the first job i
 | Note |
 | When you configure the job schedule, keep in mind possible date and time changes (for example, related to daylight saving time transition). |
 
-1. In the Automatic retry section, select the Retry failed items processing if Veeam Backup & Replication must attempt to run the job again for workloads whose processing failed for some reason. Enter the number of attempts to run the job and define time spans between them.
+1. In the Automatic retries section, set the Enable automatic retries toggle to On, if Veeam Backup & Replication must attempt to run the job again for workloads whose processing failed for some reason. Enter the number of attempts to run the job and define time spans between them.
 
 If you select continuous schedule for the job, Veeam Backup & Replication will retry the job for the defined number of times without any time intervals between the job sessions.
 
@@ -50,9 +50,10 @@ If you select continuous schedule for the job, Veeam Backup & Replication will r
 
 To set up a backup window for the job:
 
-1. Select the Terminate the job outside of the allowed backup window check box and click Window.
-2. In the Time Periods window, define the allowed hours and prohibited hours for the job. If the job exceeds the allowed window, the job will be automatically terminated.
+1. Set the Terminate the job outside of the allowed backup window toggle to On and click Configure backup window.
+2. In the Configure Backup Window window, define the allowed hours and prohibited hours for the job. If the job exceeds the allowed window, the job will be automatically terminated.
 
-[![Click to zoom in](images/vm_backup_job_schedule_web.webp)](images/vm_backup_job_schedule_web.webp "Click to zoom in")
+[![Define job schedule](images/vm_backup_job_schedule_web.webp)](images/vm_backup_job_schedule_web.webp "Define job schedule")
 
+Page updated 2026-06-29
 
