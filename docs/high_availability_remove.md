@@ -3,8 +3,8 @@ title: "Disassembling High Availability Cluster"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_remove.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Disassembling High Availability Cluster
@@ -15,7 +15,7 @@ After you initiate the cluster disassembly procedure, Veeam Backup & Replication
 |  |
 | --- |
 | Important |
-| You cannot use the secondary node as a standalone backup server after you disassemble an HA cluster. |
+| You cannot use the secondary node as a standalone backup server after you disassemble an HA cluster cluster. To sign in, you must use the same user accounts and MFA settings that were synchronized from the primary node — for example, if MFA is enabled for the veeamadmin and veeamso accounts on the primary node, you must use those same accounts with MFA on the secondary node after disassembly. |
 
 To disassemble an HA cluster, do the following:
 
@@ -25,4 +25,5 @@ To disassemble an HA cluster, do the following:
 
 [![Disassembling High Availability Cluster](images/high_availability_cluster_disassemble.webp)](images/high_availability_cluster_disassemble.webp)
 
+Page updated 2026-07-17
 
