@@ -3,8 +3,8 @@ title: "Removing License"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/removing_license.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing License
@@ -17,11 +17,12 @@ If you have a merged license installed, you can remove a part of it: a socket li
 To remove a part of a merged license, do the following:
 
 1. Sign in to Veeam Backup Enterprise Manager using an account with the Portal Administrator role.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+2. In the upper-right corner, click Configuration.
 3. In the Configuration view, open the Licensing section.
 4. On the Summary tab, click Remove Socket License or Remove Instance License.
 5. To confirm the removal, click Yes.
 
 [![Removing Part of Merged License](images/license_remove.webp)](images/license_remove.webp "Removing Part of Merged License")
 
+Page updated 2026-07-16
 
