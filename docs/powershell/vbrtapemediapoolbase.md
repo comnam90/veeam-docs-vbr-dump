@@ -3,8 +3,8 @@ title: "VBRTapeMediaPoolBase"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrtapemediapoolbase.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # VBRTapeMediaPoolBase
@@ -12,4 +12,5 @@ product_version: "13.0.2.29"
 
 Contains media pool. This type is represented by the [VBRTapeMediaPool](vbrtapemediapool.md) type in case of a simple media pool, or by the [VBRTapeGFSMediaPool](vbrtapegfsmediapool.md) type in case of a GFS media pool.
 
+Page updated 2026-07-30
 
