@@ -3,8 +3,8 @@ title: "Tenant Veeam Backup Server"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user_vbr.html"
-last_updated: "7/25/2023"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Tenant Veeam Backup Server
@@ -16,7 +16,7 @@ The Veeam backup server on the tenant side is a client machine. The tenant who p
 
 All data protection and disaster recovery tasks targeted at the cloud repository are performed by tenants themselves. The SP only sets up the Veeam Cloud Connect infrastructure and exposes storage resources on the cloud repository to tenants.
 
-Some disaster recovery tasks with cloud host can be performed not only by tenants but also by the SP. To learn more, see [SP and Tenant Roles](cloud_roles.md).
+Some disaster recovery tasks with cloud host can be performed not only by tenants but also by the SP. To learn more, see [Service Providers and Tenants](cloud_roles.md).
 
 ![Tenant Veeam Backup Server](images/cloud_connect_vbr_user.webp)
 
@@ -24,4 +24,5 @@ Related Tasks
 
 [Deploying Tenant Veeam Backup Server](cloud_connect_user_vbr_deploy.md)
 
+Page updated 2026-07-21
 
