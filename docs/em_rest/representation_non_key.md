@@ -3,8 +3,8 @@ title: "Resource Representations for Non-Key Resources"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/representation_non_key.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Resource Representations for Non-Key Resources
@@ -23,7 +23,7 @@ XML Representation
 
 |  |
 | --- |
-| <CredentialsInfo xmlns="http://www.veeam.com/ent/v1.0" Type="Credentials" Href="https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e"> |
+| <CredentialsInfo xmlns="http://www.veeam.com/ent/v1.0" Type="Credentials" Href="https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e">   <Links>     <Link Rel="Up" Type="BackupServer" Href="https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1?format=Entity" Name="appsrv01.tech.local" />     <Link Rel="Edit" Type="Credentials" Href="https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e" />     <Link Rel="Delete" Type="Credentials" Href="https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e" />   </Links>   <Id>e7592e37-834b-4c69-b505-597c91e9a77e</Id>   <Username>tech\william.fox</Username>   <Description>tech\william.fox</Description>   <Password /> </CredentialsInfo> |
 
 JSON Representation
 
@@ -31,4 +31,5 @@ JSON Representation
 | --- |
 | {   "Id": "e7592e37-834b-4c69-b505-597c91e9a77e",   "Username": "tech\\william.fox",   "Description": "tech\\william.fox",   "Password": "",   "Links": [    {     "Rel": "Up",     "Href": "https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1?format=Entity",     "Name": "appsrv01.tech.local",     "Type": "BackupServer"    },    {     "Rel": "Edit",     "Href": "https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e",     "Type": "Credentials"    },    {     "Rel": "Delete",     "Href": "https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e",     "Type": "Credentials"    }   ],   "Href": "https://srv12.tech.local:9398/api/backupServers/ffa6d4ef-ea63-4fb3-88a1-84706c2430e1/credentials/e7592e37-834b-4c69-b505-597c91e9a77e",   "Type": "Credentials"  } |
 
+Page updated 2026-07-29
 
