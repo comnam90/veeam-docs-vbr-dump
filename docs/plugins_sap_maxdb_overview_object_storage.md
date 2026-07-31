@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_object_storage.html"
-last_updated: "1/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup to Object Storage
@@ -14,13 +14,13 @@ If you want to store your data in a cloud-based or on-premises object storage, y
 
 You can store backups created with Veeam Plug-Ins on the following types of the object storage:
 
+* Veeam Data Cloud Vault
 * Amazon S3
 * S3 compatible
 * Google Cloud Storage
 * Microsoft Azure Blob Storage
 * IBM Cloud Object Storage
 * Wasabi Cloud Storage
-* Veeam Data Cloud Vault
 * 11:11 Cloud Object Storage
 
 Veeam Plug-In on the machine with the database always accesses object storage through Veeam Backup & Replication. As a result, Veeam Plug-In access to object storage is managed by a proxy component that Veeam Backup & Replication selects according to the connection mode specified in the repository settings:
@@ -54,4 +54,5 @@ To learn more, see [Creating Application Backup Policy](mongo_policy_create.md).
 | Note |
 | * Before you configure your backup infrastructure to back up to the object storage, consider the limitations listed in [Veeam Backup Repositories](plugins_sap_maxdb_overview_data_backup_repos.md#object).  * If you plan to configure immutability for the object storage repository, consider the limitations listed in [Backup Immutability](plugins_sap_maxdb_overview_object_storage_immutable.md). |
 
+Page updated 2026-06-05
 
