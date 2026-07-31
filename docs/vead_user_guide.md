@@ -3,8 +3,8 @@ title: "Veeam Explorer for Microsoft Active Directory"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_user_guide.html"
-last_updated: "8/13/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Explorer for Microsoft Active Directory
@@ -15,12 +15,9 @@ Veeam Explorer for Microsoft Active Directory allows you to restore and export A
 In This Section
 
 * [Planning and Preparation](vead_prerequisites.md)
-* [Launching Application and Exploring Backups](vead_launching.md)
-* [Enabling Extended Logging](vead_extended.md)
-* [Standalone Databases Management](vead_standalone_databases.md)
-* [Data Restore](vead_data_restore.md)
-* [Data Export](vead_data_export.md)
-* [Data Compare](vead_data_compare.md)
+* [Using Explorer Console](vead_console.md)
+* [Using Explorer Web UI](vead_web_ui.md)
 * [Getting Support](vead_support.md)
 
+Page updated 2026-06-01
 
