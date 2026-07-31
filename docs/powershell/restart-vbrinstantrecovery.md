@@ -3,8 +3,8 @@ title: "Restart-VBRInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restart-vbrinstantrecovery.html"
-last_updated: "2/28/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restart-VBRInstantRecovery
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Restart-VBRInstantRecovery -InstantRecovery <InstantRecovery[]>  [<CommonParameters>] |
+| Restart-VBRInstantRecovery -InstantRecovery <InstantRecovery[]> [<CommonParameters>] |
 
 Detailed Description
 
@@ -34,9 +34,11 @@ Run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet to get the st
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
-| InstantRecovery | Specifies the array of the instant recovery sessions. The cmdlet will restart these sessions. | Accepts the InstantRecovery[] object. To get this object, run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| InstantRecovery | Specifies the array of the instant recovery sessions. The cmdlet will restart these sessions. | Accepts the InstantRecovery[] object. To get this object, run the[Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -64,4 +66,5 @@ Related Commands
 
 [Get-VBRInstantRecovery](get-vbrinstantrecovery.md)
 
+Page updated 2026-05-13
 
