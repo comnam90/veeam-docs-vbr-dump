@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_rman_hana_object_storage.html"
-last_updated: "4/7/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup to Object Storage
@@ -54,4 +54,5 @@ To learn more, see [Creating Application Backup Policy](mongo_policy_create.md).
 | Note |
 | * Before you configure your backup infrastructure to back up to the object storage, consider the limitations listed in [Veeam Backup Repositories](repos_rman.md#object). * If you plan to configure immutability for the object storage repository, consider the limitations listed in [Backup Immutability](plugins_rman_hana_object_storage_immutable.md). |
 
+Page updated 2026-06-05
 
