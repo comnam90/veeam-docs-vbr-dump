@@ -3,8 +3,8 @@ title: "Get-VBRBackupSession"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrbackupsession.html"
-last_updated: "12/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRBackupSession
@@ -34,6 +34,12 @@ This cmdlet provides parameter sets that allow you to:
 | --- |
 | Get-VBRBackupSession [-Id <Guid[]>]  [<CommonParameters>] |
 
+* Get jobs sessions with the specified state.
+
+|  |
+| --- |
+| Get-VBRBackupSession -State {Stopped | Starting | Stopping | Working | Pausing | Resuming | WaitingTape | Idle | Postprocessing | WaitingRepository | Pending | WaitingSlot | ActionRequired}  [<CommonParameters>] |
+
 Detailed Description
 
 This cmdlet returns jobs sessions.
@@ -58,10 +64,12 @@ Run the [Get-VBRTaskSession](get-vbrtasksession.md) cmdlet to get the tasks perf
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specify the array of backup session names, followed by the backup type (Incremental, Full, Synthetic Full). The cmdlet will return the sessions with these names and the specified backup type. | String[] | False | Named | False |
 | Id | Specifies the array of backup session IDs. The cmdlet will return the sessions with these IDs. | Guid[] | False | Named | False |
+| State | Specifies the session state. The cmdlet will return sessions with the specified state. | [VBRSessionState](enums.md#vbrsessionstate) | True | Named | False |
 
 <CommonParameters>
 
@@ -103,8 +111,15 @@ Examples
 | --- | --- |
 | This command returns backup sessions that ended with the Warning status.  |  | | --- | | Get-VBRBackupSession | Where {$\_.result -eq "Warning"} | |
 
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 6. Getting Backup Sessions with Specified State
+
+|  |  |
+| --- | --- |
+| This command returns all backup sessions that are currently in the Working state.  |  | | --- | | Get-VBRBackupSession -State Working | |
+
 Related Commands
 
 [Get-VBRJob](get-vbrjob.md)
 
+Page updated 2026-06-01
 
