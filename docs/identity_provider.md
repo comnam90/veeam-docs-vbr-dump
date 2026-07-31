@@ -3,14 +3,14 @@ title: "SAML Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider.html"
-last_updated: "4/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SAML Authentication
 
 
-Veeam Backup & Replication supports single sign-on authentication based on the SAML 2.0 protocol. Enterprise organizations that use a single sign-on (SSO) service in their IT infrastructure can extend single sign-on capabilities to Veeam Backup & Replication. A user of the organization logged in to the single sign-on service can access Veeam Backup & Replication if their account was added by the Veeam Backup Administrator.
+Veeam Backup & Replication supports single sign-on authentication based on the SAML 2.0 protocol. Enterprise organizations that use a single sign-on (SSO) service in their IT infrastructure can extend single sign-on capabilities to Veeam Backup & Replication. A user of the organization logged in to the single sign-on service can access Veeam Backup & Replication if their account was added by the Veeam backup administrator.
 
 SAML authentication scenario involves the following parties:
 
@@ -29,7 +29,7 @@ How SAML Authentication Works
 
 Veeam Backup & Replication supports the following scenario for SAML authentication:
 
-1. A Veeam Backup Administrator adds an external user account in the Security tab of the Users & Roles window and assigns a role to this user. For more information, see [Adding External Users](#add_external_user).
+1. A Veeam backup administrator adds an external user account in the Security tab of the Users & Roles window and assigns a role to this user. For more information, see [Adding External Users](#add_external_user).
 2. A user runs the Veeam Backup & Replication console or opens the Veeam Backup & Replication Web UI.
 3. On the sign-in page, the user clicks Sign in with SSO.
 4. Veeam Backup & Replication redirects a SAML authentication request to the IdP. If the user has not previously logged in with the single sign-on service, the IdP redirects the user to the URL of the single sign-on service.
@@ -55,8 +55,8 @@ To configure SAML authentication on the Veeam Backup & Replication side, perform
 5. In the Identity provider (IdP) information section, specify the IdP metadata file. To do this, click Browse and select the file.
 6. In the Service Provider (SP) information section, do the following:
 
-1. Click Install to specify a valid Veeam Backup & Replication server certificate. Your IdP will use this certificate to validate requests from the Veeam Backup & Replication server. You can select an existing certificate from the certificate store or import a certificate from a file. For more information, see [Backup Server Certificate](backup_server_certificate.md).
-2. Click Download to get an XML metadata file for your IdP. Use this file to add the Veeam Backup & Replication server as the service provider in your IdP configuration.
+1. Select a certificate to use. By default, the current Veeam Backup & Replication server certificate is used. Your IdP uses this certificate to validate requests from the Veeam Backup & Replication server. To use a different certificate, click Install and select an existing certificate from the certificate store or import a certificate from a file. For more information, see [Backup Server Certificate](backup_server_certificate.md).
+2. Click Download to get the service provider settings for your IdP. Veeam Backup & Replication exports the XML metadata file together with a separate file that contains the public part of the SP certificate. Use the metadata file to add the Veeam Backup & Replication server as the service provider in your IdP configuration. You can provide the certificate file to your IdP separately, for example, after you change the certificate.
 
 1. Click OK.
 
@@ -64,7 +64,7 @@ To configure SAML authentication on the Veeam Backup & Replication side, perform
 
 Adding External Users
 
-After you configure SAML authentication, you can add external users or groups to Veeam Backup & Replication and assign roles to them. To do this, perform the following steps:
+After you configure SAML authentication, you must add any external users or groups you want to use to Veeam Backup & Replication and assign roles to them. To do this, perform the following steps:
 
 1. From the main menu, select Users & Roles.
 2. In the User & Roles window, select the Security tab.
@@ -76,4 +76,5 @@ After you configure SAML authentication, you can add external users or groups to
 
 ![SAML Authentication](images/saml_add_external_user.webp)
 
+Page updated 2026-07-10
 
