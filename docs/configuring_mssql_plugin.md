@@ -3,8 +3,8 @@ title: "Configuring Veeam Plug-In for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_mssql_plugin.html"
-last_updated: "2/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Veeam Plug-In for Microsoft SQL Server
@@ -74,7 +74,7 @@ You can map Veeam Plug-In for Microsoft SQL Server backup jobs to multiple backu
 |  |
 | --- |
 | Important |
-| You can work with backups created by Veeam Plug-In only under the account that was used for creating these backups. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account.  For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). |
+| You can work with backups created by Veeam Plug-In only under the account that was used for creating these backups. If you want to use another account, assign the Backup Administrator role or Backup Operator and Restore Operator roles to the account.  For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). |
 
 Configuring Veeam Plug-In with Command-Line Interface
 
@@ -125,4 +125,5 @@ Configuration Parameters
 | --instance | Use the --instance parameter only with the --exclude-from-managed-mode parameter.  Specifies the instance whose databases are are excluded from the backup scope of an application backup policy. |
 | --d | Use the --d parameter only with the --exclude-from-managed-mode parameter.  Specifies the databases that are excluded from the backup scope of an application backup policy. |
 
+Page updated 2026-07-10
 
