@@ -3,8 +3,8 @@ title: "Performing Tenant Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Tenant Restore
@@ -15,7 +15,7 @@ In case a disaster strikes, you can use backups created by Veeam Backup for Micr
 |  |
 | --- |
 | Important |
-| To restore tenant data from a backup copy that is stored in a secondary backup repository, you must [retrieve the copied data](entra_id_tenant_restore_from_copy.md) first. |
+| * To restore tenant data from a backup copy that is stored in a secondary backup repository, you must [retrieve the copied data](entra_id_tenant_restore_from_copy.md) first. * Veeam Backup for Microsoft Entra ID does not support restore of contacts (neither internal nor external) or devices of tenants across your organization — you can only [export their properties and metadata](entra_id_restore_to_json.md) to the JSON format. You can also use this functionality if you plan to restore tenant data using a 3rd party solution. |
 
 To restore data of a protected Microsoft Entra tenant, do the following:
 
@@ -31,4 +31,5 @@ Related Topics
 
 [Appendix. Restoring Synchronized Users (Hybrid Identity)](entra_id_restore_sync_users.md)
 
+Page updated 2026-06-23
 
