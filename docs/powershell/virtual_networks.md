@@ -3,8 +3,8 @@ title: "Virtual Networks"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/virtual_networks.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Virtual Networks
@@ -18,4 +18,5 @@ Virtual Networks
 | [Get-VBRViServerNetworkInfo](get-vbrviservernetworkinfo.md) | Returns virtual networks for a VMware host. |
 | [Get-VBRHvServerNetworkInfo](get-vbrhvservernetworkinfo.md) | Returns virtual networks for a Hyper-V host. |
 
+Page updated 2026-07-30
 
