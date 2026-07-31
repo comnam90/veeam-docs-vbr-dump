@@ -3,8 +3,8 @@ title: "Step 3. Configure Backup Source Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_assign_vms.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Configure Backup Source Settings
@@ -35,9 +35,9 @@ While running the job, Veeam Backup & Replication processes resources in the ord
 
 [![Select VMs to Back Up](images/pve_backup_job_create_resources.webp)](images/pve_backup_job_create_resources.webp "Select VMs to Back Up")
 
-Step 3b. Choose Disks and Volume Groups
+Step 3b. Choose Disks
 
-By default, jobs process all disks and volume groups attached to VMs included into the backup scope. However, you can instruct Veeam Backup & Replication to back up only specific virtual disks and volume groups related to the selected backup scope:
+By default, jobs process all disks attached to VMs included into the backup scope. However, you can instruct Veeam Backup & Replication to back up only specific virtual disks related to the selected backup scope:
 
 1. Click Exclusions.
 2. In the Exclusions window, switch to the Disks tab and click Add.
@@ -49,4 +49,5 @@ Disks that you do not select will be excluded from the backup job.
 
 [![Select Disks and Volume Groups](images/pve_backup_job_create_disk_excludes.webp)](images/pve_backup_job_create_disk_excludes.webp "Select Disks and Volume Groups")
 
+Page updated 2026-05-25
 
