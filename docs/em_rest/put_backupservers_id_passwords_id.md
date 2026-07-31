@@ -3,8 +3,8 @@ title: "PUT /backupServers/{ID}/passwords/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/put_backupservers_id_passwords_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # PUT /backupServers/{ID}/passwords/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Content-Type | True | Identifies the format of the request body message. Possible values:   * application/xml * application/json |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
@@ -43,8 +44,9 @@ In the request body, the client must send parameters for the password that must 
 
 The request body must contain the following elements:
 
+Request Body
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | Hint | String | Hint for the password. | Yes | 0/1 |
 
 For example:
@@ -53,7 +55,7 @@ XML Representation
 
 |  |
 | --- |
-| <?xml version="1.0" encoding="utf-8"?> |
+| <?xml version="1.0" encoding="utf-8"?> <PasswordKeyInfoSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Hint>My password</Hint> </PasswordKeyInfoSpec> |
 
 JSON Representation
 
@@ -73,8 +75,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -88,6 +91,7 @@ The example below updates the hint parameter in the password having ID c473b8df-
 
 |  |
 | --- |
-| Request:  PUT https://localhost:9398/api/backupServers/f62624c1-8462-4747-8bd4-d686f99b0540/passwords/c473b8df-4499-41b8-ba6b-7f76def6fea1    Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml    Request Body:  <?xml version="1.0" encoding="utf-8"?> <PasswordKeyInfoSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Hint>My password</Hint> </PasswordKeyInfoSpec>    Response:  204 No Content |
+| Request:  PUT https://localhost:9398/api/backupServers/f62624c1-8462-4747-8bd4-d686f99b0540/passwords/c473b8df-4499-41b8-ba6b-7f76def6fea1  Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml  Request Body:  <?xml version="1.0" encoding="utf-8"?> <PasswordKeyInfoSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Hint>My password</Hint> </PasswordKeyInfoSpec>  Response:  204 No Content |
 
+Page updated 2026-07-29
 
