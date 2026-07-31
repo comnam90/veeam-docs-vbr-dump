@@ -1,0 +1,28 @@
+---
+title: "Enabling Email Reporting"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/iris_report_email.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Enabling Email Reporting
+
+
+You can set up Veeam Backup & Replication to send reports automatically by email. To do this, you must enable and configure global email notification settings in Veeam Backup & Replication. For details, see [Configuring Global Email Notification Settings](general_email_notifications.md).
+
+In addition, you can enable and configure custom notification settings for a specific protection group or application backup policy. This may be useful if you want to change subject, notification rules or list of recipients for some reports.
+
+Rescan Job Report
+
+By default, after you enable and configure global email notification settings in Veeam Backup & Replication, Veeam Backup & Replication sends rescan job reports at 10:00 PM daily. Veeam Backup & Replication sends a separate report for every protection group that you configured. The report contains cumulative statistics for rescan job sessions performed within the last 24-hour period.
+
+You can specify custom notification settings for a specific protection group. For details, see [Advanced Settings](iris_protection_group_advanced.md).
+
+Backup Policy Report
+
+You can specify custom notification settings for a specific backup policy. For details, see [Notification Settings](iris_policy_advanced_notifications.md).
+
+Page updated 2026-07-15
+
