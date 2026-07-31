@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_limitations.html"
-last_updated: "3/16/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -58,8 +58,10 @@ When restoring Scale Computing HyperCore resources, consider the following:
 
 * Disk size over 16TB is not supported.
 * If you restore the VM from a backup stored in the archive tier of the scale-out backup repository, you must first retrieve backup data as described in section [Retrieving Backup Files](retrieval_job_launch.md). Note that you cannot perform Entire VM restore from backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent. For those backups, you can perform Instant Recovery.
-* If you restore the VM from a backup of a VMware, Hyper-V, oVirt KVM or Proxmox VE VM or from a backup created by Veeam Agent, a restored VM may have network connection problems. To resolve the issue, install Scale Guest Tools on the restored VM.
+* If you restore the VM from a backup of another platform or created by Veeam Agent, a restored VM may have network connection problems. To resolve the issue, install Scale Guest Tools on the restored VM.
+* When you restore a VM to Scale Computing HyperCore from a backup of another platform, the plug-in injects drivers into the restored VM. To do this, it attaches all disks of the VM to the worker at the same time. A worker VM supports a maximum of 30 disks, and one slot is reserved for the worker system disk. For that reason, restores of VMs with many disks, or a large number of concurrent restores, can exhaust the free disk slots on the worker and fail.
 * You cannot restore VMs from backups stored in external repositories, Veeam Cloud Connect repositories, and on tapes.
 * [SureBackup](surebackup_recovery_verification_hv.md) for backups created by Veeam Plug-in for Scale Computing HyperCore is supported in the Backup verification and content scan only verification mode.
 
+Page updated 2026-06-12
 
