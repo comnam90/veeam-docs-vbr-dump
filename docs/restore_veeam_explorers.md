@@ -3,8 +3,8 @@ title: "Application Item Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_veeam_explorers.html"
-last_updated: "1/7/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Application Item Restore
@@ -26,7 +26,7 @@ From image-based backups created with application-aware processing, you can rest
 |  |
 | --- |
 | Note |
-| Application item restore for Microsoft OneDrive for Business and Microsoft Teams is supported for backups created by Veeam Backup for Microsoft 365. To restore data with Veeam Explorer for OneDrive for Business and Veeam Explorer for Microsoft Teams that come with Veeam Backup & Replication installations, you must add a Microsoft 365 database, a Veeam Backup for Microsoft 365 backup server or Veeam Backup for Microsoft 365 service provider. |
+| Consider the following:   * Restore using the Veeam Backup & Replication web UI is currently supported only for Veeam Explorer for Microsoft Active Directory and Veeam Explorer for Microsoft SQL Server. * Application item restore for Microsoft OneDrive and Microsoft Teams is supported for backups created by Veeam Backup for Microsoft 365. To restore data with Veeam Explorer for Microsoft OneDrive and Veeam Explorer for Microsoft Teams that come with Veeam Backup & Replication installations, you must add a Microsoft 365 database, a Veeam Backup for Microsoft 365 backup server or Veeam Backup for Microsoft 365 service provider. |
 
 For more information, see [Launching Veeam Explorer from Image-Level Backups](restoring_veeam_explorers.md).
 
@@ -39,4 +39,7 @@ From database-level backups created by Veeam Plug-ins or MongoDB backup, you can
 
 For more information, see [Launching Veeam Explorer from Plug-in or MongoDB Backup](launching_veeam_explorers_plugin.md).
 
+From RDS backups created by Veeam Backup for AWS, you can restore Microsoft SQL Server databases. For more information, see [Launching Veeam Explorer from RDS Backups](launching_veeam_explorers_managed_databases.md).
+
+Page updated 2026-07-20
 
