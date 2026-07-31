@@ -3,8 +3,8 @@ title: "Set-VBREntraIDTenantBackupJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrentraidtenantbackupjob.html"
-last_updated: "7/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBREntraIDTenantBackupJob
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBREntraIDTenantBackupJob -Job <VBREntraIDTenantBackupJob> [-Name <String>] [-Description <String>] [-RetentionPolicy <Int32>] [-NotificationOptions <VBRNotificationOptions>] [-EnableSchedule] [-ScheduleOptions <VBRServerScheduleOptions>] [-EncryptionOptions <VBREncryptionOptions>] [-SecondaryTarget <VBREntraIDBackupSecondaryTarget[]>]  [<CommonParameters>] |
+| Set-VBREntraIDTenantBackupJob -Job <VBREntraIDTenantBackupJob> [-Name <String>] [-Description <String>] [-RetentionPolicy <Int32>] [-NotificationOptions <VBRNotificationOptions>] [-EnableSchedule] [-ScheduleOptions <VBRServerScheduleOptions>] [-EncryptionOptions <VBREncryptionOptions>] [-TargetBackup <VBREntraIDTenantBackup>] [-EnableSecondaryTarget] [-SecondaryTarget <VBREntraIDBackupSecondaryTarget[]>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,8 +30,9 @@ This cmdlet modifies an Entra ID tenant backup job.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Job | Specifies the tenant backup job that you want to modify. | Accepts the VBREntraIDTenantBackupJob object. To get this object, run the [Get-VBREntraIDTenantBackupJob](get-vbrentraidtenantbackupjob.md) cmdlet. | True | Named | True (ByPropertyName, ByValue) |
 | Name | Specifies the name of the tenant backup job. | String | False | Named | False |
 | Description | Specifies the description of the tenant backup job. | String | False | Named | False |
@@ -40,6 +41,8 @@ Parameters
 | EnableSchedule | Defines that the cmdlet will enable the custom schedule for the tenant backup job.  If you provide this parameter, the tenant backup job will run according to the schedule specified in ScheduleOptions. Otherwise, to run the job, you will need to start it manually. | SwitchParameter | False | Named | False |
 | ScheduleOptions | Specifies schedule options. | Accepts the VBRServerScheduleOptions object. To create this object, run the [New-VBRServerScheduleOptions](new-vbrserverscheduleoptions.md) cmdlet. | False | Named | True (ByPropertyName, ByValue) |
 | EncryptionOptions | Specifies encryption options. | Accepts the VBREncryptionOptions object. To create this object, run the [New-VBREncryptionOptions](new-vbrencryptionoptions.md) cmdlet. | False | Named | False |
+| TargetBackup | Specifies Entra ID backup copy settings. The cmdlet will use data of this backup to create a backup chain instead of creating the chain anew. | Accepts the VBREntraIDTenantBackup object. To get this object, run the [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md) cmdlet. | False | Named | False |
+| EnableSecondaryTarget | Enables copying tenant backups to the secondary backup repository. | SwitchParameter | False | Named | False |
 | SecondaryTarget | Specifies secondary repository settings. | Accepts the VBREntraIDBackupSecondaryTarget object. To create this object, run the [New-VBREntraIDBackupSecondaryTarget](new-vbrentraidbackupsecondarytarget.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
@@ -76,4 +79,5 @@ Related Commands
 * [New-VBREncryptionOptions](new-vbrencryptionoptions.md)
 * [New-VBREntraIDBackupSecondaryTarget](new-vbrentraidbackupsecondarytarget.md)
 
+Page updated 2026-06-15
 
