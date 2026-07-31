@@ -3,14 +3,14 @@ title: "Upgrading to Veeam Backup & Replication 13 on Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Upgrading to Veeam Backup & Replication 13 on Windows
 
 
-To perform upgrade of Veeam Backup & Replication on Microsoft Windows to version 13.0.1, you must be running version 12.3.1 (build 12.3.1.1139) or later on the supported Microsoft Windows operating system (refer to the [System Requirements](system_requirements_backup_server.md#backup_server_windows) section of this document). For information on upgrade from earlier versions, see [this Veeam KB article](https://www.veeam.com/kb2053).
+To perform upgrade of Veeam Backup & Replication on Microsoft Windows to version 13.1, you must be running version 12.3.1 (build 12.3.1.1139) or later on the supported Microsoft Windows operating system (refer to the [System Requirements](system_requirements_backup_server.md#backup_server_windows) section of this document). For information on upgrade from earlier versions, see [this Veeam KB article](https://www.veeam.com/kb2053).
 
 Before you upgrade Veeam Backup & Replication, [check prerequisites](upgrade_vbr_byb.md). Then use the Veeam Backup & Replication upgrade wizard to install the product.
 
@@ -31,4 +31,5 @@ Related Topics
 * [Backup Infrastructure Components](components.md)
 * [Upgrading Veeam Backup & Replication in Silent Mode](upgrade_vbr_answer_file.md)
 
+Page updated 2026-07-21
 
