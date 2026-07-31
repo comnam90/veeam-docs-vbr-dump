@@ -3,8 +3,8 @@ title: "Step 3. Specify Object Storage Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_data_lake_processing.html"
-last_updated: "2/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify Object Storage Processing Settings
@@ -19,22 +19,21 @@ At the Processing step of the wizard, do the following:
 
 If the object storage is used as a source for an object to tape backup job, the tape server utilized for this job is added as yet another backup proxy when creating an object to tape backup job. This backup proxy has the highest priority over all others and is used by default if it has access rights to the object storage. For details on object to tape backup jobs, see the [Object Storage Backup to Tape](https://helpcenter.veeam.com/docs/vbr/userguide/object_to_tape_jobs.html?ver=13) section.
 
-* If you select Use the selected backup proxies only, you can explicitly specify backup proxies that Veeam Backup & Replication must use for the object storage backup.
+* If you select Use the selected backup proxy servers only, you can explicitly specify backup proxies that Veeam Backup & Replication must use for the object storage backup.
 
 It is recommended that you select at least two backup proxies to ensure that the backup jobs start even if one of the proxies fails or loses its connectivity to the source object storage. The more proxies you select, the more data transfer threads Veeam Backup & Replication will use for backup jobs, thus improving performance.
 
 Even if the object storage is used as a source for object to tape backup jobs, Veeam Backup & Replication will use only proxies selected in the list to process the backup data traffic.
 
-![Step 3. Specify Object Storage Processing Settings](images/snippet_os_azure_processing_proxies.webp)
-
-1. From the Cache repository drop-down list, select a cache repository where temporary cache files must be stored. This repository must be located in the close proximity to the source object storage and backup proxies.
+1. From the Cache Repository drop-down list, select a cache repository where temporary cache files must be stored. This repository must be located in the close proximity to the source object storage and backup proxies.
 
 If you change the cache repository for an existing object storage whose backups are stored in another object storage, Veeam Backup & Replication will prompt you to either attach migrated metadata, copy metadata from the previous cache repository, or download metadata manually from the archive repository. For more information, see the [Unstructured Data Backups in Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_in_object_storage.html?ver=13) section.
 
-1. Use the Backup I/O control slider to define how fast backup proxies can read data from the source object storage. This setting is based on the number of parallel threads that can be used by proxies configured for processing the object storage.
+1. From the I/O control drop-down list, define how fast backup proxies can read data from the source object storage. This setting is based on the number of parallel threads that can be used by proxies configured for processing the object storage.
+
+Step 3. Specify Object Storage Processing Settings
 
 | I/O Control | Number of Proxies | Threads per Task |
-| --- | --- | --- |
 | Lower Impact | 1 | 1 |
 | Below Normal | 1 | 4 |
 | Normal | 2 | 8 |
@@ -43,8 +42,7 @@ If you change the cache repository for an existing object storage whose backups 
 
 If resources of your object storage source are limited, it is recommended that you select the Lower impact option. If your object storage source is powerful enough, select the Faster backup option.
 
-1. Click Apply to save the configured settings.
+[![Step 3. Specify Object Storage Processing Settings](images/unstructured_os_processing_web.webp)](images/unstructured_os_processing_web.webp)
 
-![Step 3. Specify Object Storage Processing Settings](images/snippet_os_azure_processing.webp "Specify Processing Settings for SMB File Share")
-
+Page updated 2026-07-24
 
