@@ -3,8 +3,8 @@ title: "ExaGrid"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_exgrid.html"
-last_updated: "6/18/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # ExaGrid
@@ -67,7 +67,13 @@ On the Veeam Backup & Replication side, do the following:
 At the Access step of the wizard, select the added SSH credentials from the drop-down list and click Optional components and advanced connection settings to configure connection ports:
 
 1. To configure a port for a component, select the required component and click Edit. In the Component port window, specify the port number and click OK to save the changes.
-2. In the Data transfer options section, provide a range of ports that will be used as a transmission channel.
+
+|  |
+| --- |
+| Note |
+| When you add ExaGrid version 8.0.1 or later, component ports are assigned automatically. |
+
+1. In the Data transfer options section, provide a range of ports that will be used as a transmission channel.
 
 ![ExaGrid](images/dedup_ports.webp)
 
@@ -114,4 +120,5 @@ Related Topics
 
 [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
+Page updated 2026-06-19
 
