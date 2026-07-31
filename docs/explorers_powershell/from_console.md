@@ -3,8 +3,8 @@ title: "Starting PowerShell Sessions from Veeam Products"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/from_console.html"
-last_updated: "11/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting PowerShell Sessions from Veeam Products
@@ -21,7 +21,7 @@ In this case, you will be able to perform actions with Veeam Explorers cmdlets w
 
 For more information on the Veeam Backup & Replication PowerShell module, see the [Getting Started](https://helpcenter.veeam.com/docs/vbr/powershell/getting_started.html?ver=13) section of the Veeam PowerShell Reference.
 
-For more information on the Veeam Backup for Microsoft 365 PowerShell module, see the [Getting Started](https://helpcenter.veeam.com/docs/vbo365/powershell/getting_started.html?ver=80) section of the Veeam Backup for Microsoft 365 PowerShell Reference.
+For more information on the Veeam Backup for Microsoft 365 PowerShell module, see the [Getting Started](https://helpcenter.veeam.com/docs/vbo365/powershell/getting_started.html?ver=8) section of the Veeam Backup for Microsoft 365 PowerShell Reference.
 
 To start a PowerShell session, do one of the following:
 
@@ -33,4 +33,5 @@ To start a PowerShell session, do one of the following:
 
 [![Starting PowerShell from Backup Console](images/starting_from_vbo.webp)](images/starting_from_vbo.webp "Starting PowerShell from Backup Console")
 
+Page updated 2026-01-30
 
