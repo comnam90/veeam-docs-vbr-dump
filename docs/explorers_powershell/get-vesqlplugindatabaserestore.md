@@ -3,8 +3,8 @@ title: "Get-VESQLPluginDatabaseRestore"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vesqlplugindatabaserestore.html"
-last_updated: "11/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VESQLPluginDatabaseRestore
@@ -28,7 +28,7 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Get-VESQLPluginDatabaseRestore -JobId <Guid>  [<CommonParameters>] |
+| Get-VESQLPluginDatabaseRestore -JobId <Guid> [<CommonParameters>] |
 
 * Get an active restore job using the name of the restored database.
 
@@ -44,14 +44,15 @@ Note the difference between a restore session and a restore job. A restore sessi
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | JobId | Specifies the job ID of the required restore job. The cmdlet will return information about the specified restore job. | GUID | True | Named | True (ByValue) |
 | DatabaseName | Specifies names of restored Microsoft SQL Server databases. The cmdlet will return restore jobs performed for the specified databases.  This parameter accepts wildcard characters. | String[] | False | Named | False |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -83,4 +84,5 @@ Examples
 | --- | --- |
 | This command returns all active restore jobs for databases whose names begin with "db". Save the result to the $restore variable to be able to use it with other cmdlets.  |  | | --- | | $restore = Get-VESQLPluginDatabaseRestore -DatabaseName "db\*" | |
 
+Page updated 2026-02-05
 
