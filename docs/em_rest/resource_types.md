@@ -3,8 +3,8 @@ title: "Resource Types"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/resource_types.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Resource Types
@@ -19,16 +19,17 @@ Some resources are grouped in collections. A resource collection contains object
 
 The REST API operates with the following resource types:
 
- ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Key Resources
+![Resource Types](images/hmtoggle_arrow0.gif) ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Key Resources
 
 |  |
 | --- |
 | * AgentBackupJob * AgentProtectionGroup * AgentRestorePoint * Backup * BackupFile * BackupJobSession * BackupServer * BackupTaskSession * CatalogVm * CatalogVmRestorePoint * CdpPolicy * CdpReplica * CdpReplicaSession * CdpReplicaTaskSession * CloudFailoverPlan * CloudFailoverSession * CloudFailoveredVm * CloudGateway * CloudGatewayPool * CloudHardwarePlan * CloudPublicIpAddress * CloudReplica * CloudTenant * CloudTenantVCloudComputeResource * CloudVmReplicaPoint * DiscoveredComputer * EnterpriseRole * EnterpriseAccount * ExternalRepository * FailoverPlan * FileServer * HierarchyRoot * Job * ManagedServer * NASJob * Replica * ReplicaJobSession * ReplicaTaskSession * Repository * RestoreJobSession * RestorePoint * SystemSession * VAppCdpReplica * VAppCdpReplicaVm * VAppReplicaPoint * vAppRestorePoint * VCloudOrganizationConfig * VlanConfiguration * VmReplicaPoint * VmRestorePoint * VSphereSelfServiceConfig * WanAccelerator |
 
- ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Other Resources
+![Resource Types](images/hmtoggle_arrow0.gif) ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Other Resources
 
 |  |
 | --- |
 | * AgentRestorePointMount * AgentsService * CloudConnectService * CloudSubtenant * Credentials * DirectoryEntry * EnterpriseAccountInRole * EnterpriseAccountHierarchyScope * EnterpriseManager * EnterpriseSecuritySettings * FileEntry * FileSystemItems * FreeLicenseCounters * LoginSession * LookupService * NasObject * NASService * ObjectInJob * ObjectInAgentBackupJob * QueryService * Report * ReportFrame * Passwords * Task * VCloudService * VCloudOrganizationConfigBackupJobSettings * VmRestorePointMount * VmReplicaPointMount * VSphereSelfService |
 
+Page updated 2026-07-29
 
