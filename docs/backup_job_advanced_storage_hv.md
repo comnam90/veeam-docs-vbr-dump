@@ -3,8 +3,8 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_storage_hv.html"
-last_updated: "9/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Storage Settings
@@ -31,16 +31,17 @@ By default, Veeam Backup & Replication checks the NTFS MFT file on VMs with Micr
 
 By default, Veeam Backup & Replication does not copy deleted file blocks ("dirty" blocks on the VM guest OS) to the target location. This option lets you reduce the size of backup files and increase job performance.
 
-1. From the Compression level list, select a compression level for the backup: None, Dedupe-friendly, Optimal, High, or Extreme. For more information on data compression, see [Data Compression and Deduplication](compression_deduplication_hv.md).
-2. In the Storage optimization section, select the block size that will be used to process VMs. For more information on the data block sizes and how they affect performance, see [Storage Optimization](compression_deduplication_hv.md#optimization).
+1. From the Compression level list, select the compression level for the backup: None, Dedupe-friendly, Optimal, High, or Extreme. For more information on data compression, see [Data Compression and Deduplication](compression_deduplication_hv.md).
+2. From the Storage optimization list, select the block size that will be used to process VMs. For more information on the data block sizes and how they affect performance, see [Storage Optimization](compression_deduplication_hv.md#optimization).
 3. To encrypt the content of backup files, select the Enable backup file encryption check box. In the Password field, select the encryption method you want to use — a password that will generate secret keys or an external KMS server that will generate KMS keys. For more information about backup job encryption, see [Encrypting Backup Jobs](encrypting_backup_jobs_hv.md).
 
 If you have not created the password beforehand, click Add or use the Manage passwords link to specify a new password. For more information, see [Password Manager](password_manager.md).
 
 If you do not use password loss protection, Veeam Backup & Replication will display a warning about it. For more information, see [Password Loss Protection](encryption_password_loss_protection.md).
 
-1. If you want to save this set of settings as the default one, click Save as default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
+1. If you want to save this set of settings as the default one, click Save as Default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
 
 ![Storage Settings](images/hv_backup_job_settings_storage.webp)
 
+Page updated 2026-06-26
 
