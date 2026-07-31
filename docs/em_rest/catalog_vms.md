@@ -3,8 +3,8 @@ title: "/catalog/vms"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/catalog_vms.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /catalog/vms
@@ -36,6 +36,7 @@ The /catalog/vms resource has a resource representation of the following type.
 
 |  |
 | --- |
-| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0"> |
+| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0">   <Ref Type="CatalogVmReference" Href="https://localhost:9398/api/catalog/vms/srv04" Name="srv04" UID="urn:veeam:CatalogVm:srv04">     <Links>       <Link Rel="Alternate" Href="https://localhost:9398/api/catalog/vms/srv04?format=Entity" />       <Link Rel="Down" Type="CatalogVmRestorePointReferenceList" Href="https://localhost:9398/api/catalog/vms/srv04/vmRestorePoints" />     </Links>   </Ref> </EntityReferences> |
 
+Page updated 2026-07-29
 
