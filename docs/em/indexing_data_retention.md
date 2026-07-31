@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/indexing_data_retention.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Indexing Data Retention
@@ -22,5 +22,5 @@ The retention period is calculated differently for backup chains created with di
 * [Retention for forward incremental backup chains](forward_increment_retention.md)
 * [Retention for reverse incremental backup chains](reversed_incremental_retention.md)
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
