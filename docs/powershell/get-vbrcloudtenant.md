@@ -3,8 +3,8 @@ title: "Get-VBRCloudTenant"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudtenant.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRCloudTenant
@@ -69,9 +69,10 @@ This cmdlet returns cloud tenant accounts of the following types:
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Id | Specifies an array of cloud tenant IDs you want to get. | Accepts GUID or string. | False | Named | True (ByValue, |
+| Id | Specifies an array of cloud tenant IDs you want to get.  Accepts Guid[] or String[]. | Guid[] | False | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies an array of cloud tenant names. The cmdlet will return details on tenants with specified names. | String | False | Named | True (ByValue, ByProperty Name) |
 | Repository | Specifies an array of backup repositories. The cmdlet will return the tenants that use these repositories.  You can specify simple or scale-out backup repositories.  You cannot specify cloud repositories. | Accepts the CBackupRepository[] object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
 
@@ -109,4 +110,5 @@ Related Commands
 
 [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-24
 
