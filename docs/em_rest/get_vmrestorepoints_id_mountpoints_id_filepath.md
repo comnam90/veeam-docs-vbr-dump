@@ -3,8 +3,8 @@ title: "GET /vmRestorePoints/{ID}/mounts/{ID}/{filepath}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_vmrestorepoints_id_mountpoints_id_filepath.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /vmRestorePoints/{ID}/mounts/{ID}/{filepath}
@@ -34,8 +34,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -55,8 +56,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -66,8 +68,9 @@ The response body contains links to the file or folder restore action and links 
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Files | FileEntryListType | Collection of directories that are contained in the the current directory. For details, see [Files](#FileEntries). |
 | Directories | DirectoryEntryListType | Collection of directories that are contained in the the current directory. For details, see [Directories](#DirectoryEntries). |
 | PagingInfo | PagingInfoType | Resource that lets you paginate display results. |
@@ -76,8 +79,9 @@ Files
 
 The FileEntry resource contains the following parameters.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Path | String | Path to the file in the VM file system hierarchy, for example: C:\william.fox\Report.docx. |
 | Name | String | Name of the file, for example: Report.docx. |
 | Size | Long | File size, in bytes. |
@@ -89,15 +93,17 @@ Directories
 
 The DirectoryEntry resource contains the following parameters.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Path | String | Path to the directory in the VM file system hierarchy, for example: C:\Shares. |
 | Name | String | Name of the directory, for example: Shares. |
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /vmRestorePoints/{ID}/mounts/{ID}/{filepath} | Up | URL of the [/vmRestorePoints/{ID}/mounts/{ID}/{filepath}](vmrestorepoints_id_mountpoints_id_filepath.md) resource — the directory at the higher level of hierarchy that contains the current directory entry. |
 | /vmRestorePoints/{ID}/mounts/{ID}/{filepath}?action=listAll | Down | URL of the [/vmRestorePoints/{ID}/mounts/{ID}/{filepath}](vmrestorepoints_id_mountpoints_id_filepath.md) resource — a collection of directories and files contained in the current directory. |
 | /vmRestorePoints/{ID}/mounts/{ID}/{filepath}?action=listDirs | Down | URL of the [/vmRestorePoints/{ID}/mounts/{ID}/{filepath}](vmrestorepoints_id_mountpoints_id_filepath.md) resource — a collection of directories contained in the current directory. |
@@ -106,10 +112,11 @@ Links
 
 Example
 
-The example below returns a resource representation for the E:/Documentation 2014 folder in the VM guest OS:
+The example below returns a resource representation for the E:/Documentation 2025 folder in the VM guest OS:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/vmRestorePoints/5253146b-a313-4831-9467-03c7e21b32e1/mounts/1/E:/Documentation%2014    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <FileSystemEntries xmlns="http://www.veeam.com/ent/v1.0" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202014?action=listAll&pageSize=100&page=1"> |
+| Request:  GET https://localhost:9398/api/vmRestorePoints/5253146b-a313-4831-9467-03c7e21b32e1/mounts/1/E:/Documentation%2025  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <FileSystemEntries xmlns="http://www.veeam.com/ent/v1.0" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1">   <Links>     <Link Rel="Up" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/?action=listAll&pageSize=100&page=1" />   </Links>   <Directories>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Contracts">       <Links>         <Link Rel="Up" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Contracts?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Contracts?action=listDirs&pageSize=10&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Contracts?action=listFiles&pageSize=10&page=1" />         <Link Rel="Restore" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Contracts?action=restore" />       </Links>       <Path>E:/Documentation 2025/Contracts</Path>       <Name>Contracts</Name>     </DirectoryEntry>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Invoices">       <Links>         <Link Rel="Up" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Invoices?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Invoices?action=listDirs&pageSize=10&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Invoices?action=listFiles&pageSize=10&page=1" />         <Link Rel="Restore" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Invoices?action=restore" />       </Links>       <Path>E:/Documentation 2025/Invoices</Path>       <Name>Invoices</Name>     </DirectoryEntry>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Offers">       <Links>         <Link Rel="Up" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Offers?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Offers?action=listDirs&pageSize=10&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Offers?action=listFiles&pageSize=10&page=1" />         <Link Rel="Restore" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Offers?action=restore" />       </Links>       <Path>E:/Documentation 2025/Offers</Path>       <Name>Offers</Name>     </DirectoryEntry>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Tax%20Docs">       <Links>         <Link Rel="Up" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Tax%20Docs?action=listAll&pageSize=100&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Tax%20Docs?action=listDirs&pageSize=10&page=1" />         <Link Rel="Down" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Tax%20Docs?action=listFiles&pageSize=10&page=1" />         <Link Rel="Restore" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525/Tax%20Docs?action=restore" />       </Links>       <Path>E:/Documentation 2025/Tax Docs</Path>       <Name>Tax Docs</Name>     </DirectoryEntry>   </Directories>   <PagingInfo PageNum="1" PageSize="100" PagesCount="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:/Documentation%202525?action=listAll&pageSize=100&page=1" />     </Links>   </PagingInfo> </FileSystemEntries> |
 
+Page updated 2026-07-29
 
