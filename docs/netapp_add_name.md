@@ -3,8 +3,8 @@ title: "Step 2. Specify NetApp Server Name or Address and Storage Role"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/netapp_add_name.html"
-last_updated: "5/11/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify NetApp Server Name or Address and Storage Role
@@ -25,10 +25,15 @@ You can add either the entire NetApp cluster or a specific Storage Virtual Machi
 
 This is the only available option for the Linux-based backup server.
 
-When you select any of these check boxes, additional steps of the wizard will appear.
+1. Select the NDMP server check box to allow file backup to tape jobs from this storage system using SMTape functionality.
+
+To enable this feature, once the NetApp server is added to the backup infrastructure, you must add it as an NDMP server following the steps of the [New NDMP Server](adding_ndmp_servers.md) wizard. For more information, see [NetApp NDMP Server Backup to Tape](netapp_ndmp.md).
+
+When you select the Block or file storage for VMware vSphere, or Block storage for Microsoft Windows server, or NAS filer check boxes, additional steps of the wizard will appear.
 
 If you do not select any check box, Veeam Backup & Replication displays an error. To proceed with the wizard, select at least one check box.
 
 ![Step 2. Specify NetApp Server Name or Address and Storage Role](images/netapp_add_name.webp)
 
+Page updated 2026-07-02
 
