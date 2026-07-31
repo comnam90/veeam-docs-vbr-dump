@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_setup_specify_service_account.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Specify Service Account
@@ -26,5 +26,5 @@ The user name of the custom account must be specified in the DOMAIN\USERNAME for
 
 ![Step 7. Specify Service Account](images/em_setup_serv_account.webp "Specifying Service Account")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
