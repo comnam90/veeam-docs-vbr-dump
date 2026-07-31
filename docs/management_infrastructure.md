@@ -3,8 +3,8 @@ title: "Veeam Plug-In Management Infrastructure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/management_infrastructure.html"
-last_updated: "5/4/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Plug-In Management Infrastructure
@@ -38,7 +38,7 @@ Veeam Backup & Replication lets you manage Veeam Plug-In on computers of the fol
 
 To learn more, see [System Requirements](plan_and_manage_requirements.md).
 
-If you want to manage Veeam Plug-Ins installed on protected computers in Veeam Backup & Replication, you must set Veeam Plug-Ins in the managed mode. In this mode, all data protection and administration tasks are performed by a user that has the Veeam Backup Administrator role or a custom role in Veeam Backup & Replication. To learn more, see [Managing Users and Roles](users_roles.md). In some scenarios, a user can also perform a limited set of backup and disaster recovery tasks directly on a protected computer.
+If you want to manage Veeam Plug-Ins installed on protected computers in Veeam Backup & Replication, you must set Veeam Plug-Ins in the managed mode. In this mode, all data protection and administration tasks are performed by a user that has the Backup Administrator role or a custom role in Veeam Backup & Replication. To learn more, see [Managing Users and Roles](users_roles.md). In some scenarios, a user can also perform a limited set of backup and disaster recovery tasks directly on a protected computer.
 
 Veeam Backup & Replication is set up to automatically discover computers added to the inventory and deploy Veeam Plug-Ins on these computers. To learn more, see [Computer Discovery and Veeam Plug-In Deployment](discovery_and_deployment.md).
 
@@ -96,4 +96,5 @@ The backup storage is an architecture component in the Veeam Plug-In management 
 
 * [Veeam Plug-In for Microsoft SQL Server](repos_mssql.md)
 
+Page updated 2026-07-10
 
