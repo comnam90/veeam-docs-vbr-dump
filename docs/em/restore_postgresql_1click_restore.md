@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_postgresql_1click_restore.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Original Location
@@ -44,5 +44,5 @@ To view a restore session log, click History.
 
 [![Restore to Original Location](images/item_restore_postgres_original.webp)](images/item_restore_postgres_original.webp "Restore to Original Location")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
