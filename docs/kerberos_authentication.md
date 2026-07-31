@@ -3,8 +3,8 @@ title: "Kerberos Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/kerberos_authentication.html"
-last_updated: "10/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Kerberos Authentication
@@ -48,7 +48,7 @@ Kerberos authentication has the following requirements and limitations:
 * For guest OS processing, consider the following:
 
 + Local accounts do not support Kerberos authentication. To authenticate with Microsoft Windows guest OS using Kerberos, specify an Active Directory account.
-+ If you use networkless application-aware guest processing through VIX API/vSphere Web Services or PowerShell Direct, the guest OS must still have access to the domain controller. Otherwise, Kerberos authentication will not work.
++ If you use networkless application-aware guest processing through vSphere Web Services or PowerShell Direct, the guest OS must still have access to the domain controller. Otherwise, Kerberos authentication will not work.
 
 For SPNs, consider the following aspects:
 
@@ -104,4 +104,5 @@ To configure a Kerberos-only environment, perform the following steps:
 | Note |
 | To prevent Kerberos environments from Kerberoasting attacks, do the following:   * Make sure that you use strong encryption algorithms allowed for Kerberos. For more information, see [this Microsoft article](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos). * Prevent Kerberos change password that uses RC4 secret keys. For more information, see [this Microsoft article](https://learn.microsoft.com/en-us/windows-server/security/kerberos/preventing-kerberos-change-password-that-uses-rc4-secret-keys). |
 
+Page updated 2026-07-29
 
