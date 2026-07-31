@@ -1,19 +1,25 @@
 ---
-title: "Restoring Objects"
+title: "Restoring Objects to Original Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_one_click_restore_objects.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Restoring Objects
+# Restoring Objects to Original Location
 
 
-To restore an object, do the following:
+To restore an object to the original location, do the following:
 
 1. In the preview pane, select objects.
 2. On the Objects tab, select Restore Objects > Restore objects to <original\_location> or right-click an object and select Restore objects to <original\_location>.
+
+Consider the following:
+
+* Both changed and deleted objects will be restored.
+* All the attributes will be restored.
+* Attribute values and security descriptors will be replaced with that of a backup file.
 
 |  |
 | --- |
@@ -26,6 +32,7 @@ After the restore process is complete, review the results shown in the Restore S
 
 You can filter notifications by their status: Error, Warning or Success.
 
-[![Reviewing Restore Summary Window](images/restore_summary_objects.webp)](images/restore_summary_objects.webp "Reviewing Restore Summary Window")
+![Restoring Objects to Original Location](images/restore_summary_objects.webp "Reviewing Restore Summary Window")
 
+Page updated 2026-05-26
 
