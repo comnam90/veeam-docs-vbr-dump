@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_saphana.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Environment Planning
@@ -54,7 +54,7 @@ Veeam User Management
 
 Veeam Plug-In for SAP HANA uses the Windows authentication methods of the Veeam Backup & Replication server to establish a connection to this server and to the target backup repository. It is recommended to create one specific user for each Veeam Plug-In server or for each scale-out cluster.
 
-In case of future manual changes to the user account, the new user must have at least the Veeam Backup Operator and Veeam Restore Operator rights within the Veeam Backup & Replication user management. To learn how to assign Veeam Backup & Replication roles, see [Users and Roles](users_roles.md).
+In case of future manual changes to the user account, the new user must have at least the Backup Operator and Restore Operator rights within the Veeam Backup & Replication user management. To learn how to assign Veeam Backup & Replication roles, see [Users and Roles](users_roles.md).
 
 Network Traffic Encryption
 
@@ -85,4 +85,5 @@ Veeam Plug-In for SAP HANA and SAP HANA do not include the respective configurat
 
 To learn more about SAP HANA configuration files, see [this SAP article](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c39a9abbbb57101496d4fade60e43503.html).
 
+Page updated 2026-07-10
 
