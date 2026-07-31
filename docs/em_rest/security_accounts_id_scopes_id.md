@@ -3,8 +3,8 @@ title: "/security/accounts/{ID}/scopes/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/security_accounts_id_scopes_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /security/accounts/{ID}/scopes/{ID}
@@ -35,6 +35,7 @@ The /security/accounts/{ID}/scopes/{ID} resource has a resource representation o
 
 |  |
 | --- |
-| <EnterpriseAccountHierarchyScope xmlns="http://www.veeam.com/ent/v1.0" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/scopes/bceb75f9-5c10-4f39-9eb5-c000a2fabaee"> |
+| <EnterpriseAccountHierarchyScope xmlns="http://www.veeam.com/ent/v1.0" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/scopes/bceb75f9-5c10-4f39-9eb5-c000a2fabaee"> <Links>   <Link Rel="Delete" Type="EnterpriseAccountHierarchyScope" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/scopes/bceb75f9-5c10-4f39-9eb5-c000a2fabaee" /> </Links> <Name>Datacenters</Name> <HierarchyRootName>F36CBAE2-F23D-46C7-865C-3E3CCC89B197</HierarchyRootName> <Platform>VMware</Platform> <HierarchyObjectType>Folder</HierarchyObjectType> <State>Unprocessed</State> </EnterpriseAccountHierarchyScope> |
 
+Page updated 2026-07-29
 
