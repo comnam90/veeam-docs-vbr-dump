@@ -3,8 +3,8 @@ title: "Scheduling Settings for Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_schedule_server_mac.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Scheduling Settings for Servers
@@ -29,7 +29,12 @@ To specify the job schedule:
 * To run the policy continuously, select the Periodically every option and choose Continuously from the list on the right. A new backup policy session will start as soon as the previous backup policy session finishes.
 
 1. In the Automatic retry section, define whether Veeam Agent must attempt to run the backup job again if the job fails for some reason. Enter the number of attempts to run the job and define time intervals between them. If you select continuous backup, Veeam Agent for Mac will retry the job for the defined number of times without any time intervals between the job runs.
+2. In the Backup window section, define the time interval during which the backup job must complete. The backup window helps prevent the job from overlapping with production hours and reduces the impact on server performance. To configure a backup window for the job, do the following:
+
+1. Select the Terminate job outside of the backup window check box and click Window.
+2. In the Time Periods window, define the allowed and prohibited hours for backup. If the job runs outside the allowed window, it is terminated automatically.
 
 ![Scheduling Settings for Servers](images/agent_policy_schedule_server_mac.webp)
 
+Page updated 2026-06-19
 
