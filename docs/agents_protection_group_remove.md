@@ -3,8 +3,8 @@ title: "Removing Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_remove.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Protection Group
@@ -26,7 +26,14 @@ Backups created for computers that were included in the removed protection group
 | TIP |
 | You can also remove separate computers from protection groups. To learn more, see [Removing Computer from Protection Group](agents_protected_computer_remove.md). |
 
-To remove a protection group:
+You can remove a protection group in the following ways:
+
+* [Removing Protection Group Using Console](#console)
+* [Removing Protection Group Using Web UI](#webui)
+
+Removing Protection Group Using Veeam Backup & Replication Console
+
+To remove a protection group in the Veeam Backup & Replication console:
 
 1. Open the Inventory view.
 2. In the inventory pane, expand the Physical and Cloud Infrastructure node.
@@ -36,4 +43,16 @@ To remove a protection group:
 
 [![Remove Protection Group](images/protection_group_remove.webp)](images/protection_group_remove.webp "Remove Protection Group")
 
+Removing Protection Group Using Veeam Backup & Replication Web UI
+
+To remove a protection group in the Veeam Backup & Replication web UI:
+
+1. In the management pane, click Protection Groups.
+2. Right-click the protection group that you want to remove, or select the protection group and select Delete from the Other drop-down list.
+3. If you want to remove Veeam Agent deployed on protected computers, in the displayed window, select the Uninstall everything check box. With this option selected, Veeam Backup & Replication will remove the protection group from the configuration database and, in addition, uninstall Veeam Agent and other Veeam components from every computer in the deleted protection group. Veeam Backup & Replication will remove the same components that can be removed from a specific Veeam Agent computer. To learn more, see [Uninstalling Veeam Agent and Other Veeam Components](agents_protected_computers_remove.md).
+4. In the displayed window, click Yes.
+
+[![Remove Protection Group](images/protection_group_remove_web.webp)](images/protection_group_remove_web.webp "Remove Protection Group")
+
+Page updated 2026-07-03
 
