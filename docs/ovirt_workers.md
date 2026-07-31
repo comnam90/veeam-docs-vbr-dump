@@ -3,8 +3,8 @@ title: "Managing Workers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_workers.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Workers
@@ -16,7 +16,7 @@ Each worker is launched on a specific host for the duration of a backup or resto
 
 Worker Lifecycle
 
-As soon as a backup or restore session starts, Veeam Backup & Replication launches a worker and test its configuration. Veeam Backup & Replication checks host affinity settings specified for the worker and chooses a host where the worker VM will run. Then, Veeam Backup & Replication powers on the worker VM and installs system updates (if available). When the backup or restore session completes, Veeam Backup & Replication shuts down the worker VM so that it can be used for other sessions later.
+As soon as a backup or restore session starts, Veeam Backup & Replication launches a worker and tests its configuration. Veeam Backup & Replication checks host affinity settings specified for the worker and chooses a host where the worker VM will run. Then, Veeam Backup & Replication powers on the worker VM and installs system updates (if available). When the backup or restore session completes, Veeam Backup & Replication shuts down the worker VM so that it can be used for other sessions later.
 
 In This Section
 
@@ -27,4 +27,5 @@ In This Section
 * [Disabling Automatic Worker Updates](ovirt_workers_update.md)
 * [Removing Workers](ovirt_workers_remove.md)
 
+Page updated 2026-07-24
 
