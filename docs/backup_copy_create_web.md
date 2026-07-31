@@ -3,8 +3,8 @@ title: "Creating Backup Copy Jobs for VMs and Physical Machines Using Web UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_create_web.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Backup Copy Jobs for VMs and Physical Machines Using Web UI
@@ -18,7 +18,9 @@ Before you create a job, [check prerequisites](backup_copy_before_you_begin_web.
 2. [Specify job name and copy mode](backup_copy_name_web.md).
 3. [Select workloads to process](backup_copy_vms_web.md).
 4. [Specify target repository and retention settings](backup_copy_target_web.md).
-5. [Define backup copy window](backup_copy_schedule_web.md).
-6. [Finish working with wizard](backup_copy_finish_web.md).
+5. [Step 5. Specify Advanced Settings](backup_copy_settings_web.md).
+6. [Define backup copy window](backup_copy_schedule_web.md).
+7. [Finish working with wizard](backup_copy_finish_web.md).
 
+Page updated 2026-07-27
 
