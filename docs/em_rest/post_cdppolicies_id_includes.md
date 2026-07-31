@@ -3,8 +3,8 @@ title: "POST /cdpPolicies/{ID}/includes"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/post_cdppolicies_id_includes.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # POST /cdpPolicies/{ID}/includes
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Content-Type | True | Identifies the format of the request body message. Possible values:   * application/xml * application/json |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
@@ -43,18 +44,20 @@ In the request body, the client must send parameters of the VM or VM container y
 
 The request body must contain the following elements:
 
+Request Body
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | HierarchyObjRef | HierarchyObjRefType | Reference to the VM or VM container. You can [construct the reference manually](constructing_hierarchyobjreftype.md) or use the [lookup service](lookupsvc.md) to retrieve the reference. | Yes | 1/1 |
 | HierarchyObjName | String | Name of the VM or VM container. | No | 1/1 |
-| GuestProcessingOptions | GuestProcessing OptionsType | Options for application-aware image processing. For details, see  [Guest Processing Options](#guest). | Yes | 0/1 |
+| GuestProcessingOptions | GuestProcessing OptionsType | Options for application-aware image processing. For details, see [Guest Processing Options](#guest). | Yes | 0/1 |
 
 Guest Processing Options
 
 You can define the following guest processing options for the CDP policy:
 
+Guest Processing Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | VssSnapshotOptions | VssSnapshotOptionsType | Application-aware processing options. For details, see [Application-Aware Processing Options](#vss). | Yes | 0/1 |
 | WindowsCredentialsId | String | Guest OS credentials for starting the indexing runtime process in Microsoft Windows OS. | Yes | 0/1 |
 | LinuxCredentialsId | String | Guest OS credentials for starting the indexing runtime process in Linux OS. | Yes | 0/1 |
@@ -65,7 +68,7 @@ XML Representation
 
 |  |
 | --- |
-| <?xml version="1.0" encoding="utf-8"?> |
+| <?xml version="1.0" encoding="utf-8"?> <CreateObjectInJobSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <HierarchyObjRef>urn:VMware:Vm:b4cd87e5-c608-4790-9178-076d16d4166b.vm-16</HierarchyObjRef>   <HierarchyObjName>virt03-srv01</HierarchyObjName>   <GuestProcessingOptions>     <VssSnapshotOptions>       <VssSnapshotMode>RequireSuccess</VssSnapshotMode>       <IsCopyOnly>false</IsCopyOnly>     </VssSnapshotOptions>   </GuestProcessingOptions>   <WindowsCredentialsId>00000000-0000-0000-0000-000000000000</WindowsCredentialsId>   <LinuxCredentialsId>00000000-0000-0000-0000-000000000000</LinuxCredentialsId> </CreateObjectInJobSpec> |
 
 JSON Representation
 
@@ -77,8 +80,9 @@ Application-Aware Processing Options
 
 You can define the following application-aware processing options for the CDP policy:
 
+Application-Aware Processing Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | VssSnapshotMode | String | Mode of application-aware image processing. Possible values:   * RequireSuccess * IgnoreFailures * Disabled | Yes | — |
 | IsCopyOnly | Boolean | Defines whether copy-only backups must be created or transaction logs for Microsoft Exchange, Microsoft SQL and Oracle VMs must be processed. Possible values:   * True * False | Yes | 0/1 |
 | UsePersistentGuestAgent | Boolean | Defines whether to use persistent guest agents on the protected VM for application-aware processing. Possible values:   * True * False   The default value is False. |  |  |
@@ -109,8 +113,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -126,12 +131,13 @@ The example below adds a VM having MoID vm-10266 to the CDP policy having ID f36
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/cdpPolicies/f365fbd8-fbd2-43ad-9f7a-c87cd390a0d9/includes    Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml    Request Body:  <?xml version="1.0" encoding="utf-8"?> <CreateObjectInJobSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <HierarchyObjRef>urn:VMware:VM:00000000-0000-0000-0000-000000000000.vm-10266</HierarchyObjRef>   <HierarchyObjName>exch02</HierarchyObjName>   <GuestProcessingOptions>     <VssSnapshotOptions>       <VssSnapshotMode>RequireSuccess</VssSnapshotMode>       <IsCopyOnly>false</IsCopyOnly>       <UsePersistentGuestAgent>false</UsePersistentGuestAgent>     </VssSnapshotOptions>   </GuestProcessingOptions> </CreateObjectInJobSpec>    Response:  202 Accepted    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>UpdateCdpPolicy</Operation> </Task> |
+| Request:  POST https://localhost:9398/api/cdpPolicies/f365fbd8-fbd2-43ad-9f7a-c87cd390a0d9/includes  Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml  Request Body:  <?xml version="1.0" encoding="utf-8"?> <CreateObjectInJobSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <HierarchyObjRef>urn:VMware:VM:00000000-0000-0000-0000-000000000000.vm-10266</HierarchyObjRef>   <HierarchyObjName>exch02</HierarchyObjName>   <GuestProcessingOptions>     <VssSnapshotOptions>       <VssSnapshotMode>RequireSuccess</VssSnapshotMode>       <IsCopyOnly>false</IsCopyOnly>       <UsePersistentGuestAgent>false</UsePersistentGuestAgent>     </VssSnapshotOptions>   </GuestProcessingOptions> </CreateObjectInJobSpec>  Response:  202 Accepted  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>UpdateCdpPolicy</Operation> </Task> |
 
 To track the status of the operation, send the GET HTTP request to the received task resource:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/tasks/task-1    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>UpdateCdpPolicy</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
+| Request:  GET https://localhost:9398/api/tasks/task-1  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>UpdateCdpPolicy</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
 
+Page updated 2026-07-29
 
