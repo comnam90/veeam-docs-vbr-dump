@@ -3,8 +3,8 @@ title: "Step 5a. Enable Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_applications.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5a. Enable Application-Aware Processing
@@ -31,7 +31,7 @@ To configure log processing settings, complete the following steps:
 1. Click Customize application-aware processing settings.
 2. In the Application-Aware Processing Options window, select the necessary resource and click Edit. You can configure guest processing settings for multiple resources at a time.
 
-If you want to configure processing settings for a specific VM that is included into a resource pool, host or cluster, you must configure those settings separately. To do that, click Add, choose the necessary VM and click Edit.
+If you want to configure processing settings for a specific VM that is included into a tag or cluster, you must configure those settings separately. To do that, click Add, choose the necessary VM and click Edit.
 
 1. In the Processing Settings window, do the following:
 
@@ -56,4 +56,5 @@ To change this behavior and instruct Veeam Backup & Replication to proceed with 
 
 [![Step 5a. Enable Application-Aware Processing](images/sch_backup_job_create_gp_applications.webp)](images/sch_backup_job_create_gp_applications.webp)
 
+Page updated 2026-07-14
 
