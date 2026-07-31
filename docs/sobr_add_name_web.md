@@ -3,8 +3,8 @@ title: "Step 2. Specify Scale-Out Backup Repository Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_add_name_web.html"
-last_updated: "9/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Scale-Out Backup Repository Name
@@ -17,4 +17,5 @@ At the Name step of the wizard, specify a name and description for the scale-out
 
 [![Step 2. Specify Scale-Out Backup Repository Name](images/sobr_name_web.webp)](images/sobr_name_web.webp)
 
+Page updated 2026-07-16
 
