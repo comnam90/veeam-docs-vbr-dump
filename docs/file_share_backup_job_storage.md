@@ -3,8 +3,8 @@ title: "Step 4. Specify Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_storage.html"
-last_updated: "5/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Backup Repository Settings
@@ -36,4 +36,5 @@ If, for example, Keep all file versions for the last is set to 30 days, the back
 
 ![Step 4. Specify Backup Repository Settings](images/file_share_backup_job_storage.webp "Specify Backup Repository Settings")
 
+Page updated 2026-06-02
 
