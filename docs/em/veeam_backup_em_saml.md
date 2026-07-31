@@ -3,8 +3,8 @@ title: "Configuring SAML Authentication Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/veeam_backup_em_saml.html"
-last_updated: "3/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring SAML Authentication Settings
@@ -19,8 +19,8 @@ Organizations that use single sign-on (SSO) in their infrastructure can allow us
 
 To configure SAML authentication settings:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
 3. Open the Settings section on the left of the Configuration view.
 4. Click the SAML Authentication tab.
 5. Select the Enable SAML 2.0 option.
@@ -97,11 +97,11 @@ Exporting Service Provider Settings
 
 You can export the service provider settings to a SAML metadata file, which is an XML file that conforms to the [SAML 2.0 Metadata Schema](http://docs.oasis-open.org/security/saml/v2.0/saml-schema-metadata-2.0.xsd). If you want to use a certificate to sign and encrypt SAML authentication requests, you must pass the public key certificate to the identity provider and include the certificate in the metadata file. For more information, see [Specifying Advanced SAML Authentication Settings](#advanced).
 
-To export service provider settings for the Veeam Backup Enterprise Manager website and  vSphere Self-Service Backup Portal, click the Download link next to the Veeam Backup Enterprise Manager field.
+To export service provider settings for the Veeam Backup Enterprise Manager website and vSphere Self-Service Backup Portal, click the Download link next to the Veeam Backup Enterprise Manager field.
 
 Copying Service Provider Settings
 
-To copy service provider settings for the Veeam Backup Enterprise Manager website and  vSphere Self-Service Backup Portal, do the following:
+To copy service provider settings for the Veeam Backup Enterprise Manager website and vSphere Self-Service Backup Portal, do the following:
 
 1. Copy the links next to the SP Entity ID / Issuer and Assertion consumer URL fields.
 2. If you have selected a certificate that will be used to sign end encrypt SAML authentication requests, you must also pass the public key certificate to the identity provider. To copy the certificate, click the Download link next to the Certificate field.
@@ -110,4 +110,5 @@ Related Topics
 
 [SAML Authentication Support](em_saml.md)
 
+Page updated 2026-07-16
 
