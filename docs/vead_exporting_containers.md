@@ -1,13 +1,13 @@
 ---
-title: "Exporting Containers"
+title: "Exporting Containers to Custom Location"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_exporting_containers.html"
-last_updated: "8/15/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Exporting Containers
+# Exporting Containers to Custom Location
 
 
 To export containers and their contents, do the following:
@@ -29,6 +29,7 @@ If necessary, select the Use LDAP filter check box to switch to the LDAP filteri
 
 All nested containers (if any) will be preserved during the export.
 
-[![Specifying Target Path and Export Settings](images/vead_export_filtering.webp)](images/vead_export_filtering.webp "Specifying Target Path and Export Settings")
+![Exporting Containers to Custom Location](images/vead_export_filtering.webp "Specifying Target Path and Export Settings")
 
+Page updated 2026-05-26
 
