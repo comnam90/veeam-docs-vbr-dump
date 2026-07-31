@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_permissions.html"
-last_updated: "6/3/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Permissions
@@ -25,12 +25,12 @@ Permissions for Veeam Plug-In
 Permissions for Veeam Plug-In
 
 | Operation | Required Roles and Permissions |
-| Installing and updating Veeam Plug-In | The account used for installing and updating Veeam Plug-In must have root privileges. |
+| Installing, updating and configuring Veeam Plug-In | The OS user account used for installing, updating and configuring Veeam Plug-In must have the following permissions.   * For Microsoft Windows:   In case of Veeam Plug-In installation, The account must be a member of the local Administrators group.  In case of Veeam Plug-In configuration, the account must be a member of the local Administrators group or the instance owner of the IBM Db2 instance.   * For Linux or Unix:   The account must have root privileges. |
 | Connecting to Veeam Backup & Replication, managing backups | * The account specified in the Veeam Plug-In configuration settings must be able to authenticate against the Veeam Backup & Replication server. For details, see [Configuring Plug-In](db2_configure.md). For enhanced security, we recommend creating a separate standard user that will be solely dedicated to performing the backup and restore operations.  * The account specified in the Veeam Plug-In configuration settings must be granted access rights on the Veeam backup repository where you want to store backups.   To learn how to grant permissions on Veeam repositories, see [Access and Encryption Settings on Backup Repositories](db2_repository_permissions.md).   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, see required permissions in [Configuring Plug-In](db2_configure.md). |
 
 Permissions for Object Storage
 
-The general permissions for backup to object storage are listed in [Using Object Storage Repositories](required_permissions.md#using-object-storage-repositories). Additional permissions are required if you want to back up databases with Veeam Plug-In. The list of additional permissions differs depending on the selected object storage and the way you set your backup infrastructure:
+The general permissions for backup to object storage are listed in [Using Object Storage Repositories](permissions_object_storage.md#obj_stor). Additional permissions are required if you want to back up databases with Veeam Plug-In. The list of additional permissions differs depending on the selected object storage and the way you set your backup infrastructure:
 
 * [Amazon S3](#aws_s3)
 * [S3 compatible (including IBM Cloud Object Storage and Wasabi Cloud Storage)](#s3)
@@ -42,7 +42,7 @@ Consider the following:
 
 * Make sure the user account you are using has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the New Object Repository wizard.
-* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](required_permissions.md#using-object-storage-repositories). For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
+* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](permissions_object_storage.md#obj_stor). For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -61,7 +61,7 @@ Consider the following:
 
 * Make sure the user account you are using has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the New Object Repository wizard.
-* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](required_permissions.md#using-object-storage-repositories) . For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
+* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](permissions_object_storage.md#obj_stor) . For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -90,4 +90,5 @@ If you plan to back up data using such infrastructure configuration, make sure t
 | --- |
 | {   "iam.serviceAccounts.create",   "iam.serviceAccounts.delete",   "iam.serviceAccounts.get",   "iam.serviceAccounts.list",   "storage.buckets.get",   "storage.buckets.getIamPolicy",   "storage.buckets.list",   "storage.buckets.setIamPolicy",   "storage.buckets.update",   "storage.hmacKeys.create",   "storage.hmacKeys.delete",   "storage.hmacKeys.get",   "storage.hmacKeys.list",   "storage.objects.create",   "storage.objects.delete",   "storage.objects.get",   "storage.objects.list" } |
 
+Page updated 2026-07-07
 
