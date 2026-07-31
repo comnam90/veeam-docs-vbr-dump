@@ -3,8 +3,8 @@ title: "Restore-VESQLDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restore-vesqldatabase.html"
-last_updated: "3/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore-VESQLDatabase
@@ -13,6 +13,11 @@ product_version: "13.0.1.2067"
 Short Description
 
 Restores a backed-up Microsoft SQL Server database.
+
+|  |
+| --- |
+| Note |
+| In Veeam Backup & Replication 13.1, this cmdlet became deprecated. Use the [Start-VESQLDatabaseRestore](start-vesqldatabaserestore.md) cmdlet to restore Microsoft SQL Server databases. |
 
 Applies to
 
@@ -54,7 +59,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -66,13 +71,13 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to restore a Microsoft SQL Server database to the original location. The restore operation will run with the following settings:   * The cmdlet will use the credentials of the user that is running the PowerShell session. * If these credentials do not work, the cmdlet will use the backup job credentials to connect to the guest OS and to Microsoft SQL Server.     |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "New SQL Database"  Restore-VESQLDatabase -Database $database |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable. 2. Run the Restore-VESQLDatabase cmdlet. Set the $database variable as the Database parameter value. |
+| This example shows how to restore a Microsoft SQL Server database to the original location. The restore operation will run with the following settings:   * The cmdlet will use the credentials of the user that is running the PowerShell session. * If these credentials do not work, the cmdlet will use the backup job credentials to connect to the guest OS and to Microsoft SQL Server.   |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "New SQL Database"  Restore-VESQLDatabase -Database $database |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable. 2. Run the Restore-VESQLDatabase cmdlet. Set the $database variable as the Database parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Restoring Microsoft SQL Server Database to Specific Folder
 
 |  |  |
 | --- | --- |
-| This example shows how to restore a Microsoft SQL Server database to a specific folder. SQL credentials are used for authenticating to the guest OS and Microsoft SQL Server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQL Database"  $creds = Get-Credential  Restore-VESQLDatabase -Database $database -ServerName "SQLServer" -TargetFolder "C:\SQL\Restore" -SQLCredentials $creds |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter SQL credentials that will be used for authenticating to the guest OS and Microsoft SQL Server. Save the result to the $creds variable. 3. Run the Restore-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database value. * Specify the ServerName parameter value. * Specify the TargetFolder parameter value. * Set the $creds variable as the SQLCredentials parameter value. |
+| This example shows how to restore a Microsoft SQL Server database to a specific folder. SQL credentials are used for authenticating to the guest OS and Microsoft SQL Server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQL Database"  $creds = Get-Credential  Restore-VESQLDatabase -Database $database -ServerName "SQLServer" -TargetFolder "C:\SQL\Restore" -SQLCredentials $creds |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. Save the result to the $database variable. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter SQL credentials that will be used for authenticating to the guest OS and Microsoft SQL Server. Save the result to the $creds variable. 3. Run the Restore-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the ServerName parameter value. * Specify the TargetFolder parameter value. * Set the $creds variable as the SQLCredentials parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Restoring Microsoft SQL Server Database Files to Specific Path Array
 
@@ -84,7 +89,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to restore Microsoft SQL Server database files to a point-in-time state. The database files are restored to a specific folder on the target server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  $creds = Get-Credential  $pit = Get-Date -Date "2023-05-25 15:00:00"  $pitutc = $pit.ToUniversalTime()  Restore-VESQLDatabase -Database $database -ServerName "SQLServer" -TargetFolder "C:\SQL\Restore" -SQLCredentials $creds -ToPointInTimeUtc $pitutc |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Save the result to the $database variable. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter credentials that will be used for authenticating to guest OS and the Microsoft SQL Server on the target server. Save the result to the $creds variable. 3. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time of the point-in-time state. Save the result to the $pit variable. 4. Convert the $pit variable to the UTC format using the ToUniversalTime() method. Save the result to the $pitutc variable.   Note that you can use the [Get-VESQLDatabaseRestoreInterval](get-vesqldatabaserestoreinterval.md) cmdlet to get the restore interval of the necessary database in UTC.   1. Run the Restore-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the ServerName parameter value. * Specify the TargetFolder parameter value. * Set the $creds variable as the SQLCredentials parameter value. * Set the $pitutc variable as the ToPointInTimeUtc parameter value. |
+| This example shows how to restore Microsoft SQL Server database files to a point-in-time state. The database files are restored to a specific folder on the target server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  $creds = Get-Credential  $pit = Get-Date -Date "2026-05-25 15:00:00"  $pitutc = $pit.ToUniversalTime()  Restore-VESQLDatabase -Database $database -ServerName "SQLServer" -TargetFolder "C:\SQL\Restore" -SQLCredentials $creds -ToPointInTimeUtc $pitutc |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Save the result to the $database variable. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter credentials that will be used for authenticating to guest OS and the Microsoft SQL Server on the target server. Save the result to the $creds variable. 3. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time of the point-in-time state. Save the result to the $pit variable. 4. Convert the $pit variable to the UTC format using the ToUniversalTime() method. Save the result to the $pitutc variable.   Note that you can use the [Get-VESQLDatabaseRestoreInterval](get-vesqldatabaserestoreinterval.md) cmdlet to get the restore interval of the necessary database in UTC.   1. Run the Restore-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the ServerName parameter value. * Specify the TargetFolder parameter value. * Set the $creds variable as the SQLCredentials parameter value. * Set the $pitutc variable as the ToPointInTimeUtc parameter value. |
 
 Related Commands
 
@@ -97,4 +102,5 @@ Related Commands
 * [Get-VESQLDatabaseFile](get-vesqldatabasefile.md)
 * [Get-VESQLDatabaseRestoreInterval](get-vesqldatabaserestoreinterval.md)
 
+Page updated 2026-06-08
 
