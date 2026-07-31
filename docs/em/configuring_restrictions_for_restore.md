@@ -3,8 +3,8 @@ title: "Configuring Permissions for File and Application Item Restore"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/configuring_restrictions_for_restore.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Permissions for File and Application Item Restore
@@ -18,8 +18,8 @@ To let users restore application items, you must assign a security role to the u
 
 To configure permissions for file and application item restore, take the following steps:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
 3. Select the Roles section on the left of the Configuration view.
 4. Click Add to add an account, or select an existing account and click Edit.
 5. In the Allow restore of section, to allow restore of entire machines and VM disks of machines included in the restore scope, select the Entire machines and disks check box.
@@ -68,4 +68,5 @@ In this case, specify an Active Directory account name and password. Make sure t
 
 [![Specifying Active Directory Account](images/em_settings_ad_account.webp)](images/em_settings_ad_account.webp "Specifying Active Directory Account")
 
+Page updated 2026-07-16
 
