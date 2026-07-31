@@ -3,8 +3,8 @@ title: "FIPS Compliance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/fips_compliance.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # FIPS Compliance
@@ -18,7 +18,8 @@ When this mode is enabled:
 * NTLM is disabled. Kerberos is the only available domain authentication protocol.
 * Persistent agents components must be used for guest processing.
 * Connections cannot be established with components that are not FIPS-compliant.
-* Self-tests are performed. For more information, see the Self-tests section of the [Veeam FIPS 140-2 Security Policy](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4282.pdf).
+* Self-tests are performed. For more information, see the Self-tests section of the [Veeam FIPS 140-3 Security Policy](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5156.pdf).
+* Post-quantum key exchange between [Veeam Data Movers](veeam_transport_service.md) is not used, because post-quantum algorithms are not yet FIPS-validated. Communication continues to use FIPS-validated cryptography.
 
 |  |
 | --- |
@@ -35,6 +36,11 @@ To enable the FIPS-compliant operation mode:
 |  |
 | --- |
 | Note |
+| The Force strict FIPS compliance mode check box is only available in the Veeam Backup & Replication console for Microsoft Windows-based backup servers. To manage the FIPS-compliant operation mode for a Linux-based backup server, use the Veeam Host Management console. For more information, see [Configuring Backup Infrastructure Settings](hmc_configure_infrastructure.md). |
+
+|  |
+| --- |
+| Note |
 | If you use Amazon S3 or Amazon S3 Glacier object repositories in your backup infrastructure and enable the FIPS-compliant operation mode, Veeam Backup & Replication checks if these components are FIPS-compliant. If any of them are not, a warning will be displayed. |
 
 |  |
@@ -44,4 +50,5 @@ To enable the FIPS-compliant operation mode:
 
 ![FIPS Compliance](images/fips_compliance.webp)
 
+Page updated 2026-07-14
 
