@@ -3,8 +3,8 @@ title: "Add-VBR1111SystemsS3Repository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbr1111systemss3repository.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBR1111SystemsS3Repository
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBR1111SystemsS3Repository -AmazonS3Folder <VBRAmazonS3Folder>  -Connection <VBRAmazonS3Connection> [-Name <String>] [-Description <String>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableIAStorageClass] [-EnableOZIAStorageClass] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions>] [-AmazonProxySpec <VBRAmazonEC2ProxyAppliance>] [-ProxyAppliance <CHost>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-Force]  [<CommonParameters>] |
+| Add-VBR1111SystemsS3Repository -AmazonS3Folder <VBRAmazonS3Folder>  -Connection <VBRAmazonS3Connection> [-Name <String>] [-Description <String>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableIAStorageClass] [-EnableOZIAStorageClass] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions>] [-AmazonProxySpec <VBRAmazonEC2ProxyAppliance>] [-ProxyAppliance <CHost>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-EnableReadOnlyMode] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,8 +30,9 @@ This cmdlet adds the 11:11 Cloud object storage repository to the backup infrast
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | AmazonS3Folder | Specifies an Amazon S3 folder. | Accepts the VBRAmazonS3Folder object. To get this object, run the [Get-VBRAmazonS3Folder](get-vbramazons3folder.md) cmdlet. | True | Named | True (ByValue) |
 | Connection | Specifies an active session with the object storage repository that you want to add to the backup infrastructure. | Accepts the VBRAmazonS3Connection object. To get this object, run the [Connect-VBRAmazonS3Service](connect-vbramazons3service.md) cmdlet and set the CapacityTier property as the ServiceType parameter value. | True | Named | False |
 | Name | Specifies a name of an object storage repository. The cmdlet will add the object storage repository with this name. | String | False | Named | False |
@@ -45,9 +46,10 @@ Parameters
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
 | AmazonProxySpec | Specifies a helper appliance. Veeam Backup & Replication will use this appliance to perform a health check of backup files and apply retention to file backup job files. | Accepts the VBRAmazonEC2ProxyAppliance object. To create this object, run the [New-VBRAmazonEC2ProxyAppliance](new-vbramazonec2proxyappliance.md) cmdlet. | False | Named | True (ByPropertyName) |
 | ProxyAppliance | Specifies a helper appliance. Veeam Backup & Replication will use this appliance to perform a health check of backup files and apply retention to file backup job files. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | True (ByPropertyName) |
-| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks paramter to specify the number of tasks.  Default: False. | SwitchParameter | False | Named | False |
+| EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks.  Default: False. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure.  Default: False. | SwitchParameter | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -96,4 +98,5 @@ Related Commands
 * [Get-VBRAmazonS3Bucket](get-vbramazons3bucket.md)
 * [Get-VBRAmazonS3Folder](get-vbramazons3folder.md)
 
+Page updated 2026-05-28
 
