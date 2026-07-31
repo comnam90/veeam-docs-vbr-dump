@@ -3,8 +3,8 @@ title: "Authentication and Security"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/authentication_and_security.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Authentication and Security
@@ -22,4 +22,5 @@ In This Section
 * [HTTP Authentication](http_authentication.md)
 * [TLS Certificate](ssl_encryption.md)
 
+Page updated 2026-07-29
 
