@@ -3,8 +3,8 @@ title: "Copying Backups to Tapes"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_backup_tape_jobs.html"
-last_updated: "1/30/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Copying Backups to Tapes
@@ -24,8 +24,9 @@ To archive VM backups to tape, do the following:
 |  |
 | --- |
 | Note |
-| You cannot restore oVirt VMs directly from tapes. To restore an oVirt VM, you must first restore its backups to a repository as described in section [Backup Restore from Tape to Repository](https://tw-preview.dev.amust.local/html/vbr/13.0.1/userguide/vm_restore_from_tape_to_repository.html?ver=13). |
+| You cannot restore oVirt VMs directly from tapes. To restore an oVirt VM, you must first restore its backups to a repository as described in section [Backup Restore from Tape to Repository](vm_restore_from_tape_to_repository.md). |
 
 [![Backup to Tape Jobs](images/ovirt_backup_to_tape.webp)](images/ovirt_backup_to_tape.webp "Backup to Tape Jobs")
 
+Page updated 2026-07-24
 
