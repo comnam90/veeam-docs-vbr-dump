@@ -3,12 +3,14 @@ title: "Step 3. Select Restore Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_mode_hv_web.html"
-last_updated: "9/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Select Restore Mode
 
+
+This step is available only if you recover Hyper-V VMs.
 
 At the Restore Mode step of the wizard, choose the necessary restore mode:
 
@@ -22,4 +24,5 @@ At the Restore Mode step of the wizard, choose the necessary restore mode:
 
 [![Select Recovery Mode - Web UI](images/ir_mode_hv_web.webp)](images/ir_mode_hv_web.webp "Select Recovery Mode - Web UI")
 
+Page updated 2026-06-30
 
