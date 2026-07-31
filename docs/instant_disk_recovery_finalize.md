@@ -3,8 +3,8 @@ title: "Finalizing Instant Disk Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_finalize.html"
-last_updated: "3/11/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Finalizing Instant Disk Recovery
@@ -57,4 +57,5 @@ To remove the recovered disks:
 
 [![Finalizing Instant Disk Recovery](images/instant_disk_recovery_stop_publishing.webp)](images/instant_disk_recovery_stop_publishing.webp)
 
+Page updated 2026-07-15
 
