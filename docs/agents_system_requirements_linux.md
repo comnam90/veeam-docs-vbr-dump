@@ -3,31 +3,28 @@ title: "System Requirements for Linux Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_linux.html"
-last_updated: "6/30/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # System Requirements for Linux Computers
 
 
+Prev1/1Next
+
 You can use Veeam Backup & Replication to manage Veeam Agent for Linux that was installed using a package with the Veeam kernel module dependency or using a nosnap package without dependency on the Veeam kernel module. On IBM Power Systems, Veeam Agent for Linux can be installed using a special nosnap package — Veeam Agent for Linux on Power.
 
 Veeam kernel module is used for creating system snapshots. The nosnap version of Veeam Agent for Linux leverages the native snapshot capabilities of the supported file systems. For information on system requirements for nosnap versions of Veeam Agent for Linux, see [System Requirements for Linux Computers (nosnap Veeam Agent)](agents_system_requirements_linux_nosnap.md).
-
-|  |
-| --- |
-| NOTE |
-| You can add computers with the nosnap version of Veeam Agent for Linux on Power installed only to the protection group for pre-installed Veeam Agents. |
 
 Veeam Agent Computer (Veeam Kernel Module)
 
 Veeam Agent Computer (Veeam Kernel Module)
 
 | Specification | Requirement |
-| Hardware | Important! Check [considerations and limitations](#limits_hw_val) that apply to the list of supported hardware.  CPU: x64.  Memory: 1 GB RAM or more. Memory consumption varies depending on the backup type and the total amount of backed-up data.  Disk Space: 500 MB for product installation. Required disk space varies depending on the Veeam Agent usage scenario.  Network: 10 Mbps or faster network connection to a backup target.  System firmware: BIOS or UEFI.  Disk layout: MBR or GPT. |
-| OS | Important! Check [considerations and limitations](#limits_os_val) that apply to the list of supported OSes.  Linux kernel version 3.10 to version 7.0 is supported.  Veeam Agent supports the 64-bit versions of the following distributions:   * Debian 11.0 – 13.51 * Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04 and 26.04  * RHEL 8.4 – 9.8, 10.0 and 10.2  * Oracle Linux 7 – 10.2 (RHCK) * Oracle Linux 7 (starting from UEK R4) – Oracle Linux 8 (up to UEK R6) * Oracle Linux 8 (UEK R7) — for information on installation, see [this Veeam KB article](https://www.veeam.com/kb4394). * Oracle Linux 9 (UEK R7)  * Oracle Linux 9 (UEK R8) – for information on installing Veeam Agent on Oracle Linux 9 with UEK R8, see [this Veeam KB article](https://www.veeam.com/kb4732). * Oracle Linux 10 (UEK R8)  * SLES 12 SP5, 15 SP3 – 15 SP7 and 16.0 * SLES for SAP 12 SP5, 15 SP3 – 15 SP7 and 16.0  * Rocky Linux 8.10, 9.4 – 9.8, 10.0 and 10.2 * AlmaLinux 8.10, 9.4 – 9.8, 10.0 – 10.2  * Amazon Linux 2 (starting from kernel version 5.10) and Amazon Linux 2023 — these distribution are supported for [cloud machines](agents_backup_cloud_machines.md) only and have an [experimental support](https://www.veeam.com/kb2976) status.   1 To install Veeam Agent on Debian 13, additional prerequisite [software](#deb13) is required. |
-| File System | Important! Check [considerations and limitations](#limits_fs_val) that apply to the list of supported file systems.  Veeam Agent for Linux supports consistent snapshot-based data backup for the following file systems:   * BTRFS (for OSes that run Linux kernel 3.16 or later) * Ext 2/3/4 * F2FS * FAT16 * FAT32 * HFS * HFS+ * JFS * NTFS * ReiserFS * XFS   The supported file system (except for BTRFS) can reside on a simple volume or LVM2 volume; volumes protected with encryption software such as dm-crypt are supported. The minimum supported LVM version is 2.02.133.  BTRFS is supported only if it resides directly on a physical device, with no additional abstraction layer below or above it, such as LVM, software RAID or dm-crypt.  Other file systems, file systems that are not located on logical volumes, as well as network file systems like NFS or SMB shares can be backed up using the snapshot-less mode only. For details, see the [Snapshot-Less File-Level Backup](https://helpcenter.veeam.com/docs/agentforlinux/userguide/file_backup_snapshotless.html) section in the Veeam Agent for Linux User Guide. |
-| Software | Important! Check [considerations and limitations](#software_lim) that apply to the list of required components.  Protected computer must have the following components installed:  Only for installing Veeam Agent using dkms packages:   * linux-headers (for Debian-based systems) * linux-headers-amd64 (for Debian 13. For package specifics, see [Considerations and Limitations](#software_lim)) * kernel-headers (for RHEL-based systems) * kernel-devel (for RHEL-based systems) * kernel-uek-devel (for Oracle Linux systems with UEK) * dkms * gcc * make * perl   For general operations, backup and restore:   * libudev (for managing devices during backup and restore) * libacl (for backup and restore of ACLs) * libattr (for backup and restore of extended file attributes) * lvm2 (for LVM snapshots and other LVM-related operations) * libfuse2 (FUSE libraries for Debian-based and SLES-based systems) * fuse-libs (FUSE libraries for RedHat-based systems) * libncurses5 (for rendering TUI on SLES 12) * libncurses6 (for rendering TUI on RHEL 8 – 10, SLES 15 and 16) * dmidecode (for managing Veeam Agent with Veeam Backup & Replication) * libmysqlclient (for processing MySQL database systems) * libpq5 (for processing PostgreSQL database systems) * python3 (for installing Veeam Agent on [some distributions](#python3) and other operations) * btrfs-progs (version 3.16 or later, for backup of BTRFS)  * wget (for downloading recovery ISO) * which (for deployment process)  * tar (for file system indexing, log export and rotation) * gzip (for file system indexing, log export and rotation)   For creating custom Veeam Recovery Media:   * efibootmgr (for UEFI-based systems) * isolinux (for Debian-based systems) * syslinux (for RHEL-based systems)  * mksquashfs * unsquashfs * xorriso (for custom Veeam Recovery Media with EFI support) |
+| Hardware | Important! Check considerations and limitations that apply to the list of supported hardware.  CPU: x64.  Memory: 1 GB RAM or more. Memory consumption varies depending on the backup type and the total amount of backed-up data.  Disk Space: 500 MB for product installation. Required disk space varies depending on the Veeam Agent usage scenario.  Network: 10 Mbps or faster network connection to a backup target.  System firmware: BIOS or UEFI.  Disk layout: MBR or GPT. |
+| OS | Important! Check considerations and limitations that apply to the list of supported OSes.  Linux kernel version 3.10 to version 7.0 is supported.  Veeam Agent supports the 64-bit versions of the following distributions:   * Debian 11.0 – 13.51 * Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04 and 26.04  * RHEL 7.9 ELS, 8.4 – 9.8, 10.0 – 10.2  * Oracle Linux 7 – 10.2 (RHCK) * Oracle Linux 7 (starting from UEK R4) – Oracle Linux 8 (up to UEK R6) * Oracle Linux 8 (UEK R7) — for information on installation, see this Veeam KB article. * Oracle Linux 9 (UEK R7)  * Oracle Linux 9 (UEK R8) – for information on installing Veeam Agent on Oracle Linux 9 with UEK R8, see this Veeam KB article. * Oracle Linux 10 (UEK R8)  * SLES 12 SP5, 15 SP3 – 15 SP7 and 16.0 * SLES for SAP 12 SP5, 15 SP3 – 15 SP7 and 16.0  * Rocky Linux 8.10, 9.4 – 9.8, 10.0 and 10.2 * AlmaLinux 8.10, 9.4 – 9.8, 10.0 – 10.2  * Amazon Linux 2 (starting from kernel version 5.10) and Amazon Linux 2023 — these distribution are supported for cloud machines only and have an experimental support status.   1 To install Veeam Agent on Debian 13, additional prerequisite software is required. |
+| File System | Important! Check considerations and limitations that apply to the list of supported file systems.  Veeam Agent for Linux supports consistent snapshot-based data backup for the following file systems:   * BTRFS (for OSes that run Linux kernel 3.16 or later) * Ext 2/3/4 * F2FS * FAT16 * FAT32 * HFS * HFS+ * JFS * NTFS * ReiserFS * XFS   The supported file system (except for BTRFS) can reside on a simple volume or LVM2 volume; volumes protected with encryption software such as dm-crypt are supported. BTRFS is supported only if it resides directly on a physical device with no additional abstraction layers (such as LVM, software RAID, dm-crypt and so on) below or above it.  Other file systems, file systems that are not located on logical volumes, as well as network file systems like NFS or SMB shares can be backed up using the snapshot-less mode only. For details, see the Snapshot-Less File-Level Backup section in the Veeam Agent for Linux User Guide. |
+| Software | Important! Check considerations and limitations that apply to the list of required components.  Protected computer must have the following components installed:  Only for installing Veeam Agent using dkms packages:   * linux-headers (for Debian-based systems) * linux-headers-amd64 (for Debian 13. For package specifics, see [Considerations and Limitations](#software_lim)) * kernel-headers (for RHEL-based systems) * kernel-devel (for RHEL-based systems) * kernel-devel, kernel6.12-devel, or kernel6.18-devel (for Amazon Linux 2023. Package name depends on the kernel version. For package specifics, see [Considerations and Limitations](#software_lim)) * kernel-uek-devel (for Oracle Linux systems with UEK) * dkms * gcc * make * perl   For general operations, backup and restore:   * libudev (for managing devices during backup and restore) * libacl (for backup and restore of ACLs) * libattr (for backup and restore of extended file attributes) * lvm2 (for LVM snapshots and other LVM-related operations) * libfuse2 (FUSE libraries for Debian-based and SLES-based systems) * fuse-libs (FUSE libraries for RedHat-based systems) * libncurses5 (for rendering TUI on SLES 12) * libncurses6 (for rendering TUI on RHEL 8 – 10, SLES 15 and 16) * dmidecode (for managing Veeam Agent with * libmysqlclient (for processing MySQL database systems) * libpq5 (for processing PostgreSQL database systems) * python3 (for installing Veeam Agent on some distributions and other operations) * btrfs-progs (version 3.16 or later, for backup of BTRFS)  * wget (for downloading recovery ISO) * which (for deployment process)  * tar (for file system indexing, log export and rotation) * gzip (for file system indexing, log export and rotation)   For creating custom Veeam Recovery Media:   * efibootmgr (for UEFI-based systems) * isolinux (for Debian-based systems) * syslinux (for RHEL-based systems)  * mksquashfs * unsquashfs * xorriso (for custom Veeam Recovery Media with EFI support) |
 
 Considerations and Limitations
 
@@ -53,12 +50,12 @@ If a new version of a supported Linux distribution is released after the release
 * For cloud-based installations that use customized kernels (such as Linux distributions deployed from AWS Marketplace or Azure Marketplace that are not in the [list of supported OSes](#OS)), the veeamsnap kernel module has an [experimental support](https://www.veeam.com/kb2976) status.
 * For backups of cloud machines running Amazon Linux 2 and Amazon Linux 2023, only file-level restore is supported.
 
-* Automatic upgrade from Veeam backup console is not supported for manually deployed Veeam Agents.
+* Automatic upgrade from Veeam backup console is not supported for manually deployed .
 * RHEL and Oracle Linux (RHCK) are supported up to certain kernel versions. To learn more, see [this Veeam KB article](https://www.veeam.com/kb2804).
 
 * Ubuntu with Linux kernel for KVM (Kernel-based Virtual Machine) is not supported. For the list of linux-kvm kernels for Ubuntu, see [Ubuntu documentation](https://launchpad.net/ubuntu/%2Bsource/linux-kvm).
 
-* Do not install Veeam Agent on servers that are used as components of the Veeam Backup & Replication infrastructure. This includes Veeam backup servers, backup repositories, proxy servers, mount servers, distribution servers, gateway and helper appliance servers, and any other backup infrastructure component that has the Veeam Mount Service deployed.
+* Do not install Veeam Agent on servers that are used as components of the Veeam Backup & Replication infrastructure. This includes Veeam backup servers, backup repositories, proxy servers, mount servers, distribution servers, gateway servers, helper appliance servers and other backup infrastructure components.
 
 * Do not use Veeam Agent managed by one Veeam Backup & Replication installation on a server that acts as a backup infrastructure component in another Veeam Backup & Replication installation. If this happens, both Veeam Backup & Replication installations can automatically update the Transport and Deployer components on the host server, which may lead to performance issues or errors in your backup infrastructure.
 
@@ -69,7 +66,7 @@ File System
 * Veeam Agent for Linux does not back up LVM snapshots.
 * File-level backup has the following limitations:
 
-* Total size of all file systems must not exceed 216 TiB. This limitation applies to all file systems where files you plan to back up are located.
+* Total size of all file systems must not exceed 216 TiB. This limitation applies to all file systems where files you plan to back up are located.
 * Size of a file included in a file-level backup must not exceed 16 TiB.
 * Name of a file must not be larger than 254 bytes.
 
@@ -120,13 +117,24 @@ Software
 
 * [For Debian 13] Veeam Agent installs the latest version of linux-headers-amd64 with the matching kernel and its headers. This can cause the kernel to be upgraded, which might affect drivers or software that rely on a specific kernel version. After kernel upgrade, you may need to rebuild or reinstall any custom kernel modules that you have on the system.
 
+* [For Amazon Linux 2023] The name of the kernel development package depends on the kernel version. Amazon Linux 2023 supports kernel lines: 6.1, 6.12 and 6.18. For example, kernel 6.1 uses the kernel-devel package, while kernel 6.18 uses the kernel6.18-devel package. For kernel 6.12, the package name may vary depending on the build.
+
+Because DKMS builds the Veeam kernel module for the running kernel, the kernel development package version must match the output of the uname -r command. If you specify an incorrect package name or version, DNF returns the No match for argument error and the module build fails.
+
+To avoid selecting the package manually, you can use DNF to find and install the package that matches the running kernel:
+
+|  |
+| --- |
+| sudo dnf install -y $(dnf repoquery --whatprovides "kernel-devel-uname-r = $(uname -r)") |
+
+For general instructions on installing kernel headers for kernel 6.12 and 6.18, see [Amazon documentation](https://docs.aws.amazon.com/linux/al2023/ug/kernel-update.html).
+
 * To install Veeam Agent for Linux packages on a target computer, Veeam Backup & Replication uses the default package manager of the Linux distribution running on this computer. During the installation process, the package manager checks whether all prerequisite software is available on the computer. If some of the required software components are missing, the package manager will attempt to install the missing packages from a software repository configured in the OS.
 * Version of the following packages varies according to the Linux kernel version that you use:
 
 * linux-headers and linux-headers-amd64 (for Debian-based systems)
 * kernel-headers (for RHEL-based systems)
 * kernel-devel (for RHEL-based systems)
-
 * kernel-uek-devel (for Oracle Linux systems with UEK)
 
 * The dmidecode package is required for Veeam Agent management — a valid BIOS UUID must be obtainable either from dmidecode | grep -i uuid or from /sys/class/dmi/id/product\_uuid. Each Veeam Agent that consumes a license installed in Veeam Backup & Replication must have a unique BIOS UUID. If a valid UUID cannot be obtained, Veeam will generate it automatically.
@@ -134,4 +142,5 @@ Software
 
 * The python3 package or another RPM package providing a /usr/bin/python3 binary is required for RHEL 8.4 and later distributions if a pre-built binary kmod-veeamsnap package is to be installed.
 
+Page updated 2026-07-30
 
