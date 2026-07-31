@@ -3,8 +3,8 @@ title: "Restore to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_other_server_rman.html"
-last_updated: "6/15/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Another Server
@@ -104,7 +104,7 @@ To restore a database to another server, you can specify credentials of a user a
 
 If you want to access the backup using account credentials, the account must meet the following requirements:
 
-* The account must either have the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles. You can also use the account under which the backup was created. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
+* The account must either have the Backup Administrator, or both the Backup Operator and Restore Operator roles. You can also use the account under which the backup was created. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
 * The account must have access permissions to the backup repository where the backup is stored. For more information, see [Access and Encryption Settings on Repositories](repository_permissions_rman.md).
 
 To access the backup using account credentials, type 1:
@@ -167,7 +167,7 @@ After you specify authentication settings to access the backup from which you wa
 
 1. Veeam Plug-In will display backups available for restore. The list of backups depends on the authentication settings that you specified:
 
-* If you specified credentials of a user account that has the Veeam Backup Administrator or Veeam Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
+* If you specified credentials of a user account that has the Backup Administrator or Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
 * If you specified a recovery token, Veeam Plug-In displays backups for which the recovery token was generated.
 
 Select the backup to obtain the backup ID:
@@ -176,4 +176,5 @@ Select the backup to obtain the backup ID:
 | --- |
 | Select backup to be used: 1. Backup1 Oracle backup (Default Backup Repository) 2. Backup2 Oracle backup (Default Backup Repository) 3. Backup3 Oracle backup (Default Backup Repository) Enter backup number: 3 To perform restore operations, use ID of the selected backup from the example below as srcBackup parameter value in SEND command: ALLOCATE CHANNEL ch1 DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so'; SEND 'srcBackup=6109d377-93b5-4741-a796-03471d2795cd'; |
 
+Page updated 2026-07-10
 
