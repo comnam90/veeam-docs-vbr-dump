@@ -3,8 +3,8 @@ title: "Persistent Agent Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/persistent_agent_components.html"
-last_updated: "6/1/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Persistent Agent Components
@@ -82,7 +82,7 @@ When you start a job with guest processing tasks enabled, Veeam Backup & Replica
 
 1. The job session proceeds as usual.
 
-If the transport service connection between the backup server and the VM guest OS fails, Veeam Backup & Replication tries to use the SSH connection with credentials specified in the backup job settings. If the SSH connection also fails, Veeam Backup & Replication uses networkless guest processing over VIX API/vSphere Web Services.
+If the transport service connection between the backup server and the VM guest OS fails, Veeam Backup & Replication tries to use the SSH connection with credentials specified in the backup job settings. If the SSH connection also fails, Veeam Backup & Replication uses networkless guest processing over vSphere Web Services.
 
 If all attempts are unsuccessful, guest processing tasks fail. The job proceeds with the scenario defined in the job settings. For example, if you have instructed a backup job to try application processing but ignore failures, Veeam Backup & Replication will not perform guest processing tasks but will proceed with the VM backup.
 
@@ -94,4 +94,5 @@ Related Topics
 * [Creating Replication Jobs](replica_job.md)
 * [Copying VMs](copy_job.md)
 
+Page updated 2026-07-29
 
