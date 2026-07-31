@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Web UI Features"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/web_console_features.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup & Replication Web UI Features
@@ -60,7 +60,7 @@ Repositories
 * [Microsoft Windows](add_repo_web.md)
 * [Linux](linux_repository_add_web.md)
 * [Hardened Repositories](hardened_repository_add_web.md)
-* [Veeam Data Cloud Vault](vdcv_add_web.md)
+* [Veeam Data Cloud Vault](veeam_data_cloud_add_web.md)
 
 * [Scale-Out Backup Repositories](sobr_add_web.md)
 
@@ -68,8 +68,12 @@ Backups
 
 * Backup Jobs
 
-* [VMware vSphere](backup_job_web.md)
-* [Microsoft Hyper-V](backup_job_hv_web.md)
+* [VMware vSphere](backup_job_web.md) backup jobs
+* [Microsoft Hyper-V](backup_job_hv_web.md) backup jobs
+* [Unstructured data](ud_backup_job.md) backup jobs
+* [Nutanix AHV](ahv_backup_web.md) backup jobs
+* [Proxmox VE](pve_backup_web.md) backup jobs
+* [Veeam Agent](agents_management_interfaces.md#backup_jobs) backup jobs
 
 * [Backup Copy Jobs](backup_copy_create_web.md)
 
@@ -86,6 +90,7 @@ Restore
 * [Microsoft Hyper-V](performing_full_recovery_hv_web.md)
 
 * [File Level Restore](performing_guest_restore_web.md)
+* Restore from Veeam Agent backups
 
 Audit
 
@@ -95,4 +100,5 @@ Audit
 * Authorization Events
 * Malware Events
 
+Page updated 2026-07-29
 
