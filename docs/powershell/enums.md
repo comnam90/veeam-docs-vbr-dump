@@ -3,8 +3,8 @@ title: "Veeam PowerShell Enumerations"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/enums.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam PowerShell Enumerations
@@ -119,6 +119,23 @@ VBRActivityState
 | Member | Description |
 | Created | Clean |
 | FalsePositive | False positive event |
+
+VBRActivityType
+
+Malware detection activity types.
+
+VBRActivityType
+
+| Member | Description |
+| Unknown | Unknown activity type. |
+| DeletedUsefulFiles | Detection of deleted files. |
+| RansomwareNotes | Detection of ransomware notes. |
+| RansomwareExtensions | Detection of suspicious file extensions. |
+| EncryptedData | Detection of encrypted files. |
+| YaraScan | YARA scan. |
+| AntivirusScan | Antivirus scan. |
+| RenamedFiles | Detection of bulk file rename activity. |
+| SuspiciousFilesInDelta | Detection of indicators of compromise. |
 
 VBRApplicationBackupAuthenticationMode
 
@@ -781,6 +798,10 @@ VBRPlatform:
 | Member | Description |
 | VMware | VMware virtualization platform. |
 | Hyper-V | Hyper-V virtualization platform. |
+| vCD | VMware Cloud Director platform. |
+| LinuxPhysical | Linux physical or cloud machine. |
+| WindowsPhysical | Microsoft Windows physical or cloud machine. |
+| CustomPlatform | Machine added through a custom platform integration, such as a hypervisor plug-in. |
 
 VBRRansomwareScanningSensitivity
 
@@ -845,6 +866,32 @@ VBRRestorePointType
 | Increment | Restore point is a VIB file (forward incremental backup). |
 | Different | Restore point is not identified. |
 | Snapshot | Restore point is a snapshot. |
+
+VBRRole
+
+Role assigned to a user or a user group.
+
+VBRRole
+
+| Member | Description |
+| BackupOperator | Backup Operator role. |
+| RestoreOperator | Restore Operator role. |
+| BackupAdmin | Backup Administrator role. |
+| TapeOperator | Tape Operator role. |
+| BackupViewer | Backup Viewer role. |
+| IncidentApiOperator | Incident API Operator role. |
+| SecurityAdministrator | Security Administrator role. |
+| Custom | Custom role. |
+
+VBRRoleType
+
+Type of a user or a user group.
+
+VBRRoleType
+
+| Member | Description |
+| User | User account. |
+| Group | User group. |
 
 VBRScaleOutBackupRepositoryPolicyType
 
@@ -919,6 +966,33 @@ VBRS3CompatibleAccessControlPolicyType
 | AllowAll | Direct access insecure. |
 | VBRManaged | Access using gateway server. |
 | S3CompatibleManaged | Direct access using token. |
+
+VBRSyslogServerEventSeverity
+
+Syslog message severity levels.
+
+VBRSyslogServerEventSeverity
+
+| Member | Description |
+| Emergency | System is unusable. |
+| Alert | Action must be taken immediately. |
+| Critical | Critical conditions. |
+| Error | Error conditions. |
+| Warning | Warning conditions. |
+| Notice | Normal but significant conditions. |
+| Informational | Informational messages. |
+| Debug | Debug-level messages. |
+
+VBRSyslogServerProtocol
+
+Transport protocol used to send messages to the syslog server.
+
+VBRSyslogServerProtocol
+
+| Member | Description |
+| Udp | UDP transport protocol. |
+| Tcp | TCP transport protocol. |
+| Tls | TLS-encrypted transport protocol. |
 
 VBRTapeDriveState
 
@@ -1041,4 +1115,5 @@ VBRUpdateType
 | SecurityOnly | Security updates are installed. |
 | SecurityAndOptional | Security and optional updates are installed. |
 
+Page updated 2026-07-14
 
