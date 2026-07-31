@@ -3,8 +3,8 @@ title: "Storage Snapshots Support"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_storage_systems.html"
-last_updated: "8/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Storage Snapshots Support
@@ -31,7 +31,7 @@ Keep in mind that you must allow your storage to process Veeam Agent backups. To
 
 Veeam Agent for Microsoft Windows allows you to create backups from native snapshots with hardware VSS provider only. For the list of supported storage systems, see [Veeam Agent Integration](agent_integration.md).
 
-1. Add a Microsoft Windows computer to the inventory and deploy Veeam Agent for Microsoft Windows on this computer using the Veeam Backup & Replication console. To learn more, see [Creating Protection Groups](protection_group_add.md).
+1. Add a Microsoft Windows computer to the inventory and deploy Veeam Agent for Microsoft Windows on this computer. To learn more, see [Creating Protection Groups](protection_group_add.md).
 
 Considerations and Limitations
 
@@ -44,7 +44,7 @@ Before you create a Veeam Agent backup from a storage system snapshot, check the
 
 * The Server edition of Veeam Agent for Microsoft Windows on the Veeam Agent computer.
 
-You can check product editions in the License Information window of the Veeam Backup & Replication backup console. To learn more, see [Viewing License Information](license_view.md).
+To learn how to check product editions, see [Viewing License Information](license_view.md).
 
 * At least one storage logical unit number (LUN) must be mapped to the Veeam Agent computer.
 
@@ -83,4 +83,5 @@ In This Section
 * [Storage Snapshots on Volumes Greater than 64 TB](agents_storage_snapshots_great.md)
 * [Storage Snapshots on BitLocker Encrypted Volumes](agents_storage_snapshots_encrypted.md)
 
+Page updated 2026-07-20
 
