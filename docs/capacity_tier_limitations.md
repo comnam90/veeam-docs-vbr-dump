@@ -3,8 +3,8 @@ title: "Limitations for Capacity Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier_limitations.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Limitations for Capacity Tier
@@ -22,6 +22,9 @@ Consider the following limitations for the capacity tier:
 * You cannot add the object storage repository that contains imported backups as a capacity extent. For more information, see [Importing Object Storage Backups](osr_import_backups.md).
 * You cannot copy transaction log backups to the capacity tier.
 * You cannot use the capacity tier as a target for file backup jobs and object storage backup jobs.
+
+* [For Veeam Cloud Connect] You cannot use S3 compatible repositories with multiple buckets as a capacity extent of a scale-out backup repository on the service provider side.
+
 * Before you start using the capacity tier, make sure to check the pricing plans of your cloud storage provider to avoid additional costs for offloading and downloading backup data.
 
 * Within a scale-out backup repository, the mount server of a performance extent will act as a gateway server of the capacity extent if all of the following is true:
@@ -63,4 +66,5 @@ For more information on limitations for a specific Veeam solution that utilizes 
 * [Veeam Plug-In for Microsoft SQL Server](repos_mssql.md#cap) — to check limitations for a backup and recovery solution that allows you to back up and restore Microsoft SQL Server databases.
 * [Veeam Plug-In for IBM Db2](db2_backup_repos.md#cap) — to check limitations for a backup and recovery solution that allows you to back up and restore IBM Db2 databases.
 
+Page updated 2026-06-23
 
