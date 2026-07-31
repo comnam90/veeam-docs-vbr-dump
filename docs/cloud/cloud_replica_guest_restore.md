@@ -3,8 +3,8 @@ title: "Restoring VM Guest OS Files"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_replica_guest_restore.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring VM Guest OS Files
@@ -17,7 +17,7 @@ During file-level recovery, Veeam Backup & Replication publishes VM replica virt
 |  |
 | --- |
 | Note |
-| This section describes only basic steps that you must take to restore VM guest OS files. To get a detailed description of all settings of the restore process, see the [Guest OS File Restore](https://helpcenter.veeam.com/docs/backup/vsphere/guest_file_recovery.html?ver=120) section in the Veeam Backup & Replication User Guide. |
+| This section describes only basic steps that you must take to restore VM guest OS files. To get a detailed description of all settings of the restore process, see the [Guest OS File Restore](https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_recovery.html?ver=13) section in the Veeam Backup & Replication User Guide. |
 
 To restore VM guest OS files of a Microsoft Windows VM replica:
 
@@ -56,8 +56,9 @@ If you select one of this options, select the target VM and target path for the 
 
 * To save a file or folder on the local machine or in a network shared folder, select Copy to, specify a path to the destination location and click OK.
 
-To learn more, see the [Finalize Restore](https://helpcenter.veeam.com/docs/backup/vsphere/guest_restore_save_vm.html?ver=120) section in the Veeam Backup & Replication User Guide.
+To learn more, see the [Finalize Restore](https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_save_vm.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
 [![Copy Files and Folders to Local Machine or Shared Folder](images/guest_replica_files_restore_copy.webp)](images/guest_replica_files_restore_copy.webp "Copy Files and Folders to Local Machine or Shared Folder")
 
+Page updated 2026-07-29
 
