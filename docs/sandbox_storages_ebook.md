@@ -3,8 +3,8 @@ title: "On-Demand Sandbox for Storage Snapshots"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sandbox_storages_ebook.html"
-last_updated: "3/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # On-Demand Sandbox for Storage Snapshots
@@ -31,8 +31,6 @@ To create a snapshot copy, Veeam Backup & Replication uses the same technology a
 2. Veeam Backup & Replication performs regular operations required for On-Demand Sandbox: reconfigures the VMX file, starts the VM, performs necessary tests for it and so on.
 3. After you finish working with VMs and power off On-Demand Sandbox, Veeam Backup & Replication performs cleanup operations: powers off the VM and the proxy appliance in the virtual lab, unmounts the datastore from the ESXi host and triggers the storage system to remove the snapshot copy.
 
-![On-Demand Sandbox for Storage Snapshots](images/suresnap_hiw.webp)
-
 Number of Mounted NFS Datastores
 
 You can add to the application group several VMs that reside on different storage snapshots. In this case, Veeam Backup & Replication will trigger several snapshot copies (one per each storage snapshot) and present the equal number of datastores to the ESXi host.
@@ -45,4 +43,5 @@ To overcome this situation, Veeam Backup & Replication offers the mechanism of t
 2. During the next 20 minutes, Veeam Backup & Replication attempts to mount the datastore with the time interval of 2 minutes.
 3. If resources are freed and Veeam Backup & Replication manages to mount the datastore, VMs in the application group are started and the SureBackup job continues to run. If resources on the ESXi hosts are not freed within 20 minutes, the SureBackup job fails.
 
+Page updated 2026-07-28
 
