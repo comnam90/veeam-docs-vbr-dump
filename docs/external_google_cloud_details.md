@@ -3,8 +3,8 @@ title: "Step 4. Specify Cloud Storage Details"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_google_cloud_details.html"
-last_updated: "6/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Cloud Storage Details
@@ -26,4 +26,5 @@ For more information about encryption, see [Encryption](external_repository_encr
 
 ![Step 4. Specify Cloud Storage Details ](images/external_google_bucket.webp)
 
+Page updated 2026-07-14
 
