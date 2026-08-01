@@ -3,8 +3,8 @@ title: "VM Files Restore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vm_restore.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # VM Files Restore
@@ -17,4 +17,5 @@ VM Files Restore
 | Cmdlet | Operation |
 | [Start-VBRRestoreVMFiles](start-vbrrestorevmfiles.md) | Restores VM configuration files. |
 
+Page updated 2026-07-30
 
