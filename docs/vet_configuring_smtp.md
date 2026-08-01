@@ -3,8 +3,8 @@ title: "SMTP Server with Basic Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_configuring_smtp.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SMTP Server with Basic Authentication
@@ -39,4 +39,5 @@ By default, Veeam Explorer for Microsoft Teams establishes a connection to the s
 
 ![SMTP Server with Basic Authentication](images/teams_smtp.webp "Configuring Mail Settings")
 
+Page updated 2026-03-23
 
