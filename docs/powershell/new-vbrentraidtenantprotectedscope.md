@@ -3,8 +3,8 @@ title: "New-VBREntraIDTenantProtectedScope"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrentraidtenantprotectedscope.html"
-last_updated: "10/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBREntraIDTenantProtectedScope
@@ -30,9 +30,10 @@ Specifies the scope of resources that will be protected for a specific Microsoft
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| ResourceType | Specifies the types of resources that will be protected for the tenant.  Depending on the resources you want to add to the protection scope, you can set the following resource types:   * Users * Groups * AdminUnits * Roles * Apps * Logs * ConditionalAccessPolicies * IntunePolicies | VBREntraIDResourceType | True | Named | False |
+| ResourceType | Specifies the types of resources that will be protected for the tenant.  Depending on the resources you want to add to the protection scope, you can set the following resource types:   * Users * Groups * AdminUnits * Roles * Apps * Logs * ConditionalAccessPolicies * IntunePolicies * OrgContacts * Devices | VBREntraIDResourceType | True | Named | False |
 
 <CommonParameters>
 
@@ -46,15 +47,16 @@ Examples
 
 Specifying Entra ID Tenant Protection Scope
 
-This example adds to the protection scope all users, groups, administrative units and conditional access policies of the tenant.
+This example adds to the protection scope all users, groups, conditional access policies and devices of the tenant.
 
 |  |
 | --- |
-| New-VBREntraIDTenantProtectedScope -ResourceType Users, Groups, AdminUnits, ConditionalAccessPolicies |
+| New-VBREntraIDTenantProtectedScope -ResourceType Users, Groups, ConditionalAccessPolicies, Devices |
 
 Related Commands
 
 * [Add-VBREntraIDTenant](add-vbrentraidtenant.md)
 * [Set-VBREntraIDTenant](set-vbrentraidtenant.md)
 
+Page updated 2026-06-11
 
