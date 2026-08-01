@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Plug-in for Scale Computing HyperCore Manually"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_uninstall_plugin.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Uninstalling Veeam Plug-in for Scale Computing HyperCore Manually
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 Before you uninstall Veeam Plug-in for Scale Computing HyperCore, it is recommended to [remove all configured workers](sch_workers_remove.md) from the backup infrastructure.
 
-To uninstall Veeam Plug-in for Proxmox VE, do the following:
+To uninstall Veeam Plug-in for Scale Computing HyperCore, do the following:
 
 1. Log in to the backup server using an account with the Local Administrator permissions.
 2. Open the Start menu and click the Settings icon.
@@ -22,4 +22,5 @@ To uninstall Veeam Plug-in for Proxmox VE, do the following:
 
 ![Uninstalling Veeam Plug-in for Scale Computing HyperCore Manually](images/sch_uninstall_plugin.webp)
 
+Page updated 2026-07-15
 
