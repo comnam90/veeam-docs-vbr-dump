@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_limitations.html"
-last_updated: "4/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -21,6 +21,8 @@ When configuring Veeam Plug-in for Nutanix AHV, consider the following:
 * You can use [Veeam Backup Enterprise Manager](https://helpcenter.veeam.com/docs/vbr/em/introduction.html?ver=13) to file-level restore guest OS files of Nutanix AHV VMs and manage Nutanix AHV VM backup copy jobs. All other operations are not supported.
 
 * Veeam Plug-in for Nutanix AHV does not support the IPv6 protocol.
+
+* Veeam Plug-in for Nutanix AHV does not support synchronization of date and time settings with the backup server — the AM/PM format is used by default and cannot be changed.
 
 * The Nutanix AHV server must be able to establish a direct IP connection to the backup server. Connections through NAT gateways are not supported.
 
@@ -39,7 +41,7 @@ When configuring workers, consider the following:
 * UEFI boot is required for workers.
 * Multiple vNICs may be configured for workers.
 * For Prism Central deployments, the “SelfServiceContainer” storage container will always be used for workers.
-* By default, installing worker updates is performed on each worker start. However, you can [disable automatic updates](ahv_workers_update.md),for example, if your infrastructure does not have connection to Internet.
+* By default, installing worker updates is performed on each worker start. However, you can [disable automatic updates](ahv_workers_update.md), for example, if your infrastructure does not have connection to the Internet.
 * Workers may start on the same host if automatic host affinity is enabled, and the number of workers has exceeded the number of hosts in the cluster.
 
 * [Applies only to the [Prism Central](ahv_infrastructure_prism_central.md) deployment] Worker image distribution is optimized so that the image is only populated to a Prism Central-managed cluster when a worker is instantiated on that cluster.
@@ -65,7 +67,7 @@ Due to technical limitations, you cannot change deduplication settings while con
 
 * If you specify a VM as the source for a backup job, Veeam Plug-in for Nutanix AHV processes volume groups attached to the VM. However, if you back up the VM with the attached volume groups, Veeam Plug-in for Nutanix AHV will create a crash-inconsistent backup.
 * Veeam Plug-in for Nutanix AHV does not process volume groups if CHAP authentication is enabled. For more information, see [Nutanix documentation](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_3:wc-volume-group-configure-c.html).
-* Second [Health Check](ahv_how_health_check_works.md) of same data corruption returns successful session (disk is skipped from processing).
+* A corrupted disk is skipped from [Health Check](ahv_how_health_check_works.md) processing if it was already checked previously.
 * Backups cannot be imported from unsupported repository types. This can affect importing from backup copy jobs.
 * Backup Copy exclusions cannot be applied to Nutanix AHV jobs and objects.
 * For VeeamZIP backups, retention is not supported.
@@ -101,7 +103,7 @@ When configuring guest processing in backup jobs, consider the following:
 * Veeam Plug-in for Nutanix AHV cannot [use Kerberos authentication](kerberos_authentication.md) while connecting to guest OSes of the processed VMs.
 
 * When restoring a database using Veeam Explorers to the original VM, the VM hostname is used instead of the FQDN name. If Veeam Explorers cannot reach the VM, you can add the FQDN name and the IP address of the VM to the hosts file on the backup server.
-* If you import backups created by a job with guest processing enabled, this backup job will truncate transaction logs but it will not store transaction log backups in the repository. To avoid the issue, before running the job, either clone the job and perform active full, or contact contact Veeam Customer Support.
+* If you import backups created by a job with guest processing enabled, this backup job will truncate transaction logs but it will not store transaction log backups in the repository. To avoid the issue, before running the job, either clone the job and perform active full, or contact Veeam Customer Support.
 * Image-level, application-aware backups of Veeam Backup for Microsoft 365 servers running on Nutanix AHV clusters are not Veeam Microsoft 365 restore explorers-aware. The behavior described in [this article](https://bp.veeam.com/vb365/guide/design/vb365_with_vbr) is currently unsupported for AHV backups.
 
 * Veeam Plug-in for Nutanix AHV will not be able to create an application-consistent backup of a Microsoft SQL Server running a Windows Server Failover Cluster. If you add such a VM to the backup job scope and enable application-aware processing for it, Veeam Backup & Replication will only create an image-level backup. To work around the limitation, [use Veeam Agent](agents_cluster_support.md) managed by Veeam Backup & Replication instead.
@@ -149,4 +151,5 @@ When using REST API for protecting Nutanix AHV resources, consider the following
 * You cannot use an account with MFA enabled to obtain an authorization token.
 * You cannot enable MFA for a user account.
 
+Page updated 2026-07-16
 
