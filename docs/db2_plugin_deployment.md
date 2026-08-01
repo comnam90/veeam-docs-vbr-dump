@@ -3,14 +3,14 @@ title: "Deployment and Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_deployment.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deployment and Configuration
 
 
-Veeam Plug-In for IBM Db2 is a feature of Veeam Backup & Replication. This guide gives instructions on how to deploy Veeam Plug-In assuming that you already have deployed Veeam Backup & Replication and configured a backup repository. To learn how to deploy Veeam Backup & Replication, see the [Veeam Backup & Replication User Guide](https://www.veeam.com/documentation-guides-datasheets.html) for your platform.
+Veeam Plug-In for IBM Db2 is a feature of Veeam Backup & Replication. This guide gives instructions on how to deploy Veeam Plug-In assuming that you already have deployed Veeam Backup & Replication and configured a backup repository. To learn how to deploy Veeam Backup & Replication, see the [Deployment](https://helpcenter.veeam.com/docs/vbr/userguide/deployment.html?ver=13) section in the Veeam Backup & Replication User Guide relevant for your platform.
 
 To be able to use Veeam Plug-In for IBM Db2, you must complete the following steps:
 
@@ -29,4 +29,5 @@ Related Topics
 * [Importing Backup Files](db2_import_backup.md)
 * [Uninstalling Plug-In](db2_uninstall.md)
 
+Page updated 2026-07-09
 
