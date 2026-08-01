@@ -3,8 +3,8 @@ title: "Add-VBRAzureComputeBackupCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazurecomputebackupcopyjob.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRAzureComputeBackupCopyJob (obsolete)
@@ -49,7 +49,7 @@ Parameters
 | Repository | Specifies a target backup repository. The cmdlet will copy Azure backups to this repository. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
 | RecoveryPointObjective | Specifies a backup copy interval. The cmdlet will copy new restore points of Azure IaaS backup copy jobs to the target backup repository. | Accepts the VBRRecoveryPointObjective object. To create this object, run the [New-VBRRecoveryPointObjective](new-vbrrecoverypointobjective_azure.md) cmdlet. | False | Named | False |
 | RetentionPolicy | Specifies a number of restore points to keep on a target backup repository. | Accepts the VBRRetentionPolicy object. To get this object, run the following cmdlets:   * [New-VBRGFSRetentionPolicy](new-vbrgfsretentionpolicy_azure.md) * [New-VBRSimpleRetentionPolicy](new-vbrsimpleretentionpolicy_azure.md) | False | Named | False |
-| BackupWindowOptions | Specifies the period of time when a backup copy job is allowed to run. | Accepts the VBRBackupWindowOptions object. To get this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | False |
+| BackupWindowOptions | Specifies the period of time when a backup copy job is allowed to run. | Accepts the [VBRBackupWindowOptions](vbrbackupwindowoptions.md) object. To get this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
 
@@ -78,4 +78,5 @@ Related Commands
 
 [Get-VBRAzureComputeBackup](get-vbrazurecomputebackup.md)
 
+Page updated 2026-07-30
 
