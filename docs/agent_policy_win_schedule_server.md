@@ -3,8 +3,8 @@ title: "Scheduling Settings for Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_schedule_server.html"
-last_updated: "2/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Scheduling Settings for Servers
@@ -44,18 +44,24 @@ If a backup policy fails and Veeam Agent retries the session, Veeam Agent does n
 | NOTE |
 | The automatic retry does not start if you run the backup policy manually. In this case, you can manually retry the backup policy. To learn more, see [Retrying Veeam Agent Backup Job](agent_job_retry.md). |
 
-1. In the Backup window section, define the time interval within which the backup policy must complete. The backup window prevents the policy from overlapping with production hours and ensures that the policy does not impact performance of your server. To set up a backup window for the policy:
+1. In the Backup window section, define the time interval during which the backup job must complete. The backup window helps prevent the job from overlapping with production hours and reduces the impact on server performance. To configure a backup window for the job, do the following:
 
-1. Select the Terminate job if it exceeds allowed backup window check box and click Window.
-2. In the Time Periods window, define the allowed hours and prohibited hours for backup.
+1. Select the Terminate job outside of the backup window check box and click Window.
+2. In the Time Periods window, define the allowed and prohibited hours for backup.
 
-If the policy exceeds the allowed window, it will be automatically terminated. In this case, data transport and backup chain transformation processes are stopped. Keep in mind that this behavior differs from a VM backup job where backup window affects data transport process and health check operations only.
+If the job runs outside the allowed window, it is terminated automatically. In this case, data transport and backup chain transformation processes are stopped. Keep in mind that this behavior differs from a VM backup job where backup window affects data transport process and health check operations only.
 
 |  |
 | --- |
-| ![Scheduling Settings for Servers](images/icon_important.webp) IMPORTANT |
+| IMPORTANT |
 | The backup window does not affect the process of uploading backup files from the backup cache to the target storage. If Veeam Agent creates one or more backup files in the backup cache, and then the backup target becomes available, Veeam Agent uploads backup files to the target location immediately, regardless of the specified backup window. |
+
+|  |
+| --- |
+| ![Scheduling Settings for Servers](images/icon_important.webp)IMPORTANT |
+| If the power settings on the Veeam Agent computer do not allow Veeam Agent for Microsoft Windows to wake the computer from sleep for scheduled backups (for example, wake up timers are disabled in the power plan, or the computer uses the Modern Standby power model), scheduled backups will not run. To adjust the power settings, navigate to Control Panel > All Control Panel Items > Power Options > Edit Plan Settings.  On computers that use Modern Standby, Veeam Agent for Microsoft Windows also detects it and adjusts scheduled backups accordingly: it does not start scheduled backups while the computer is in Modern Standby, and it postpones Modern Standby if a backup is already running. |
 
 ![Scheduling Settings for Servers](images/agent_policy_win_schedule_server.webp "Specify Scheduling Settings for Servers and Clusters")
 
+Page updated 2026-06-19
 
