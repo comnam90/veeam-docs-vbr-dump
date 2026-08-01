@@ -3,8 +3,8 @@ title: "Editing Backup Copy Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_edit.html"
-last_updated: "10/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Editing Backup Copy Job Settings
@@ -23,7 +23,7 @@ You will follow the same steps as you have followed when creating the job and ca
 Related Topics
 
 * [Creating Backup Copy Jobs for VMs and Physical Machines](backup_copy_create.md)
-* [Creating Backup Copy Jobs for HPE StoreOnce Repositories](backup_copy_hpe_storeonce.md)
+* [Creating Backup Copy Jobs for HPE StoreOnce Repositories](storage_copy_create.md)
 * [Creating Backup Copy Jobs for Veeam Plug-Ins](backup_copy_plugins.md)
 
 Disabling GFS Scheme
@@ -40,4 +40,5 @@ If you disable the Keep certain full backups longer for archival purposes option
 
 ![Editing Backup Copy Job Settings](images/backup_copy_edit.webp)
 
+Page updated 2026-07-30
 
