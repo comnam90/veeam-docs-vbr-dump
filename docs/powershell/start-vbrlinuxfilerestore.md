@@ -3,8 +3,8 @@ title: "Start-VBRLinuxFileRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrlinuxfilerestore.html"
-last_updated: "7/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRLinuxFileRestore
@@ -26,37 +26,37 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] -Server <CHost> [-ResourcePool <CViResourcePoolItem>] [-NetworkInfo <IVBRServerNetworkInfo>] [-IP <IPAddress>] [-NetworkMask <String>] [-Gateway <IPAddress>] [-PreferredDNSServer <IPAddress>] [-AlternateDNSServer <IPAddress>] [-IPv6 <IPAddress>] [-IPv6PrefixLength <Int32>] [-IPv6Gateway <IPAddress>] [-IPv6PreferredDNSServer <IPAddress>] [-IPv6AlternateDNSServer <IPAddress>] [-FromNSS] [-EnableFTP] [-ShareCredentials <CCredentials>]  [<CommonParameters>] |
+| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] -Server <CHost> [-ResourcePool <CViResourcePoolItem>] [-NetworkInfo <IVBRServerNetworkInfo>] [-IP <IPAddress>] [-NetworkMask <String>] [-Gateway <IPAddress>] [-PreferredDNSServer <IPAddress>] [-AlternateDNSServer <IPAddress>] [-IPv6 <IPAddress>] [-IPv6PrefixLength <Int32>] [-IPv6Gateway <IPAddress>] [-IPv6PreferredDNSServer <IPAddress>] [-IPv6AlternateDNSServer <IPAddress>] [-FromNSS] [-EnableFTP] [-ShareCredentials <CCredentials>] [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 * Start a restore session of Linux-based or Unix-based guest OS files using the Hyper-V platform.
 
 |  |
 | --- |
-| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] -Server <CHost> [-NetworkInfo <IVBRServerNetworkInfo>] [-IP <IPAddress>] [-NetworkMask <String>] [-Gateway <IPAddress>] [-PreferredDNSServer <IPAddress>] [-AlternateDNSServer <IPAddress>] [-IPv6 <IPAddress>] [-IPv6PrefixLength <Int32>] [-IPv6Gateway <IPAddress>] [-IPv6PreferredDNSServer <IPAddress>] [-IPv6AlternateDNSServer <IPAddress>] [-VLanId <Int32>] [-EnableFTP] [-ShareCredentials <CCredentials>]  [<CommonParameters>] |
+| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] -Server <CHost> [-NetworkInfo <IVBRServerNetworkInfo>] [-IP <IPAddress>] [-NetworkMask <String>] [-Gateway <IPAddress>] [-PreferredDNSServer <IPAddress>] [-AlternateDNSServer <IPAddress>] [-IPv6 <IPAddress>] [-IPv6PrefixLength <Int32>] [-IPv6Gateway <IPAddress>] [-IPv6PreferredDNSServer <IPAddress>] [-IPv6AlternateDNSServer <IPAddress>] [-VLanId <Int32>] [-EnableFTP] [-ShareCredentials <CCredentials>] [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 * Start a restore session of Linux-based or Unix-based guest OS files using an existing Linux-based machine as a helper host.
 
 |  |
 | --- |
-| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <string>] -MountServer <CHost> [-ShareCredentials <CCredentials>]  [<CommonParameters>] |
+| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <string>] -MountServer <CHost> [-ShareCredentials <CCredentials>] [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 * Start a restore session of Linux-based or Unix-based guest OS files using the original server as a helper host.
 
 |  |
 | --- |
-| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] [-Credentials <CCredentials>] [-ShareCredentials <CCredentials>] -MountToOriginalHost  [<CommonParameters>] |
+| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] [-Credentials <CCredentials>] [-ShareCredentials <CCredentials>] -MountToOriginalHost [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 * Start a restore session using a Linux-based machine as a temporary helper host.
 
 |  |
 | --- |
-| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] -HelperHost <VBRLinuxFileRestoreHelperHost> [-ShareCredentials <CCredentials>]  [<CommonParameters>] |
+| Start-VBRLinuxFileRestore -RestorePoint <COib> [-Reason <String>] -HelperHost <VBRLinuxFileRestoreHelperHost> [-ShareCredentials <CCredentials>] [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 * Start a restore session using a Linux-based machine as a temporary helper appliance.
 
 |  |
 | --- |
-| Start-VBRLinuxFileRestore -RestorePoint <COib> -ApplianceOptions <VBRFileRestoreLinuxHelperApplianceOptions> [-Reason <String>] [-ShareCredentials <CCredentials>] -ApplianceOptions <VBRFileRestoreLinuxHelperApplianceOptions>  [<CommonParameters>] |
+| Start-VBRLinuxFileRestore -RestorePoint <COib> -ApplianceOptions <VBRFileRestoreLinuxHelperApplianceOptions> [-Reason <String>] [-ShareCredentials <CCredentials>] -ApplianceOptions <VBRFileRestoreLinuxHelperApplianceOptions> [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -77,9 +77,10 @@ This cmdlet mounts disks from a backup or replica to the helper host or helper a
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| RestorePoint | Specifies the restore point to start a restore session. You will be able to use the session to perform operations with VM guest OS files. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, |
+| RestorePoint | Specifies the restore point to start a restore session. You will be able to use the session to perform operations with VM guest OS files. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | HelperHost | Specifies the temporary Linux helper host. | Accepts the VBRLinuxFileRestoreHelperHost object. To get this object, run the [New-VBRLinuxFileRestoreHelperHost](new-vbrlinuxfilerestorehelperhost.md) cmdlet. | True | Named | False |
 | ApplianceOptions | Specifies configuration settings for a temporary helper appliance. | Accepts the VBRLinuxFileRestoreHelperHost object. To get this object, run the [New-VBRFileRestoreLinuxHelperApplianceOptions](new-vbrfilerestorelinuxhelperapplianceoptions.md) cmdlet. | True | Named | False |
 | Server | Specifies the ESXi or Microsoft Hyper-V host on which the helper appliance must be registered.  Note: If you specify a host for the Novell file system proxy appliance, make sure that it can run VMs with 64-bit guest OSes. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | True (ByProperty Name) |
@@ -103,6 +104,7 @@ Parameters
 | EnableFTP | Enables the FTP access to the restored file system.  If you provide this parameter, users will be able to access the helper appliance over FTP, browse the file system of the restored VM and download necessary files on their own.  Default: False. | SwitchParameter | False | Named | False |
 | ShareCredentials | Specifies the credentials to authenticate against a backup repository where the backup from which you restore is stored.  Note: This parameter is required if you restore files using a helper appliance from a backup imported from an SMB share. This applies if the server where the share is located and the share itself is not added to the backup infrastructure. | Accepts the CCredentials object. To create this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
 | Credentials | Specifies the credentials to authenticate against the original Linux-based machine that will be used as a helper host.  Note: This parameter can be used only when MountToOriginalHost is true. | Accepts the CCredentials object. To create this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -145,4 +147,5 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Find-VBRViResourcePool](find-vbrviresourcepool.md)
 
+Page updated 2026-05-13
 
