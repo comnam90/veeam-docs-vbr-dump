@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_permissions.html"
-last_updated: "4/29/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Permissions
@@ -21,7 +21,7 @@ Computer with Veeam Plug-In for Oracle RMAN
 
 * The specified user account must belong to the dba system group. The default name of the OSDBA group depends on the operating system:
 
-* dba in Linux and UNIX.
+* dba in Linux and Unix.
 * ORA\_DBA in Microsoft Windows.
 
 To learn more about connecting to a database as administrator using operating system authentication, see [this Oracle article](https://docs.oracle.com/cd/E18283_01/server.112/e17120/dba006.htm#i1006677).
@@ -73,4 +73,5 @@ Consider the following:
 * If you work with SQL failover cluster or Always On availability group, you must assign permissions to the account on each node.
 * When you install Veeam Plug-In using [Veeam Deployment Kit](protection_group_deployer_service.md), Veeam Plug-In connects to the SQL instance with the NT AUTHORITY\SYSTEM account. To do this, the NT AUTHORITY\SYSTEM account must have a login to connect to the SQL instance. In addition, depending on the backup source, the NT AUTHORITY\SYSTEM account must have at least the permissions listed in the table above.
 
+Page updated 2026-07-08
 
