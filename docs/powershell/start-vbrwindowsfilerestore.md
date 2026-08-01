@@ -3,8 +3,8 @@ title: "Start-VBRWindowsFileRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrwindowsfilerestore.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRWindowsFileRestore
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Start-VBRWindowsFileRestore -RestorePoint <COib> [-Host <CHost>] [-ResourcePool <CViResourcePoolItem>] [-Folder <CViFolderItem>] [-Reason <string>] [-Credentials <CCredentials>] [-ShareCredentials <CCredentials>]  [<CommonParameters>] |
+| Start-VBRWindowsFileRestore -RestorePoint <COib> [-Host <CHost>] [-ResourcePool <CViResourcePoolItem>] [-Folder <CViFolderItem>] [-Reason <string>] [-Credentials <CCredentials>] [-ShareCredentials <CCredentials>] [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -45,14 +45,15 @@ Parameters
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| RestorePoint | Specifies a restore point to start a restore session. You will be able to use the session to perform operations with machine guest OS files. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, |
-| Host | Specifies the mount server to which machine disks will be mounted.  Note: This parameter works only if you start a restore session of machine disks located on storage that use the Direct SAN access transport mode.  If you start a restore session of machine disks located on storage that use the other transport mode methods, the cmdlet will mount machine disks to the source storage. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | 2 | False |
+| RestorePoint | Specifies a restore point to start a restore session. You will be able to use the session to perform operations with machine guest OS files. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
+| Host | For restore from storage snapshots.  Specifies the ESXi host to which the storage snapshot clone will be mounted as a temporary datastore. Veeam Backup & Replication registers a temporary VM on this host and attaches the source disks to it.  Note: This parameter applies only when the storage snapshot is accessed using the Direct SAN access transport mode. For other transport modes, Veeam Backup & Replicationmounts the snapshot clone to the source storage. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | 2 | False |
 | MountHost | Specifies the mount server to which machine disks will be mounted. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
-| ResourcePool | Specifies a resource pool. The cmdlet will register the mount server to this resource pool. | Accepts the CViResourcePoolItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | False | 3 | False |
-| Folder | Specifies a folder on the mount server. The cmdlet will place the machine disks under this folder. | Accepts the CViFolderItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md)  cmdlet. | False | 4 | False |
+| ResourcePool | For restore from storage snapshots.  Specifies the resource pool where the temporary VM will be mounted.  If you do not specify this parameter, the cmdlet will use the default resource pool of the Host. | Accepts the CViResourcePoolItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | False | 3 | False |
+| Folder | For restore from storage snapshots.  Specifies the folder where the temporary VM will be mounted.  If you do not specify this parameter, the cmdlet will use the default VM folder of the Host. | Accepts the CViFolderItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md)  cmdlet. | False | 4 | False |
 | Reason | Specifies the reason for starting a restore session of machine guest OS files.  The information you provide will be saved in the session history so that you can reference it later. | String | False | Named | False |
 | ShareCredentials | Specifies the credentials that will be used to access the shared folder. | Accepts the CCredentials object. To create this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
 | Credentials | Note: This parameter is obsolete. Use the ShareCredentials parameter instead,  Specifies the credentials to authenticate with the backup share folder. | Accepts the CCredentials object. To create this object, run the  [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -81,4 +82,5 @@ Related Commands
 * [Get-VBRBackup](get-vbrbackup.md)
 * [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 
+Page updated 2026-05-22
 
