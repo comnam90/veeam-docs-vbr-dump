@@ -3,8 +3,8 @@ title: "GET /cloud/gateways/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_cloudgateways_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /cloud/gateways/{ID}
@@ -32,8 +32,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -53,8 +54,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -64,8 +66,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the cloud gateway, for example: urn:veeam:CloudGateway:b5025a7b-5e13-41e2-a17e-9d9af985ecfd. |
 | Name | String | DNS name or IP address (depending on what was used in POST request when creating the cloud gateway) of the the cloud gateway, for example: srv01.tech.local. |
 | Enabled | Boolean | Defines if the cloud gateway is in the enabled or disabled state. Possible values:   * True * False |
@@ -79,8 +82,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the cloud gateway was created. |
 | /cloud/gateways/{ID} | Alternate | Alternate URL of the [/cloud/gateways/{ID}](cloudgateways_id.md) resource. |
 | /cloud/gateways/{ID} | Edit | URL for the [PUT /cloud/gateways/{ID}](put_cloudgateways_id.md) request. |
@@ -93,6 +97,7 @@ The example below returns an entity representation of the cloud gateway having I
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/cloud/gateways/72165f41-2374-44b6-a9ac-c18a461e03fe?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  GET https://localhost:9398/api/cloud/gateways/72165f41-2374-44b6-a9ac-c18a461e03fe?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <CloudGateway xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Href="https://enterprise06.tech.local:9398/api/cloud/gateways/72165f41-2374-44b6-a9ac-c18a461e03fe?format=Entity" Type="CloudGateway" Name="enterprise04.tech.local" UID="urn:veeam:CloudGateway:72165f41-2374-44b6-a9ac-c18a461e03fe" xmlns="http://www.veeam.com/ent/v1.0">     <Links>         <Link Href="https://enterprise06.tech.local:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" Type="BackupServerReference" Rel="Up" />         <Link Href="https://enterprise06.tech.local:9398/api/cloud/gateways/72165f41-2374-44b6-a9ac-c18a461e03fe" Name="enterprise04.tech.local" Type="CloudGatewayReference" Rel="Alternate" />         <Link Href="https://enterprise06.tech.local:9398/api/cloud/gateways/72165f41-2374-44b6-a9ac-c18a461e03fe" Name="enterprise04.tech.local" Type="CloudGatewayReference" Rel="Edit" />         <Link Href="https://enterprise06.tech.local:9398/api/cloud/gateways/72165f41-2374-44b6-a9ac-c18a461e03fe" Rel="Delete" />         <Link Href="https://enterprise06.tech.local:9398/api/cloud/gatewayPools/77e85a22-aa23-4c86-bbb2-a4e55860b0ee" Name="Cloud gateway pool 1" Type="CloudGatewayPoolReference" Rel="Related" />     </Links>     <Enabled>true</Enabled>     <NetworkMode>Direct</NetworkMode>     <ExternalIP>172.17.53.90</ExternalIP>     <ExternalPort>6180</ExternalPort>     <InternalPort>6180</InternalPort>     <Description>Created by TECH\sheila.d.cory</Description> </CloudGateway> |
 
+Page updated 2026-07-29
 
