@@ -3,16 +3,16 @@ title: "Archiving Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archiving_job.html"
-last_updated: "4/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Archiving Job
 
 
-The process of moving backup data from the performance or capacity tier to the archive tier is called an archiving job. This job runs in a separate session and follows the default schedule of the offload job (this job moves data from the performance tier to the capacity tier).
+The process of transferring backup data from the performance or capacity tier to the archive tier is called an archiving job. This job runs in a separate session and follows the default schedule of the offload job (this job moves data from the performance tier to the capacity tier).
 
-During the archiving job, new backup data is offloaded to the archive tier, while the outdated backup data is cleaned up from the archive tier during the same archiving session. To clean up outdated data, a cleanup task runs in parallel with the archiving job. After the archiving job finishes, the moved data is deleted from the performance tier. For the capacity tier, it happens during the next offload job.
+During the archiving job, new backup data is offloaded to the archive tier, while the outdated backup data is cleaned up from the archive tier during the same archiving session. To clean up outdated data, a cleanup task runs in parallel with the archiving job. After the archiving job finishes, the moved data is deleted from the performance tier. If you selected the copy policy, Veeam Backup & Replication retains the local copies on the performance tier until they fall outside the archive window — at that point, the local copies are deleted. For the capacity tier, data is deleted during the next offload job.
 
 How Archiving Job Works
 
@@ -68,4 +68,5 @@ Backup files that meet all the following conditions will be cleaned up:
 * Backup files that do not have original files on the performance tier.
 * Backup files with the expired or unspecified immutability period. For more information, see [Immutability for Archive Tier](immutability_archive_tier.md).
 
+Page updated 2026-06-22
 
