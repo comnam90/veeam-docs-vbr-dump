@@ -3,8 +3,8 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_advanced_storage.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Storage Settings
@@ -27,9 +27,7 @@ You can select a Key Management System (KMS) server in the Password field. To do
 | NOTE |
 | Consider the following:   * If you plan to encrypt the content of backup files, consider the limitations listed in [Data Encryption Limitations](#limits). * You must encrypt the backup policy if you want to back up data to the Veeam Data Vault storage. |
 
-1. To remove deleted items data after a set period of time, select the Full backup file maintenance check box. The default time period is 14 days.
-
-![Storage Settings](images/plugins_policy_mssql_storage_advanced_storage.webp)
+1. ![Storage Settings](images/plugins_policy_mssql_storage_advanced_storage.webp)
 
 Data Encryption Limitations
 
@@ -43,4 +41,5 @@ If you plan to encrypt the content of backup files, consider the following limit
 
 To learn more about data encryption in Veeam Backup & Replication, see [Data Encryption](data_encryption.md).
 
+Page updated 2026-07-30
 
