@@ -3,14 +3,12 @@ title: "Step 8. Specify Secure Restore Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_av.html"
-last_updated: "6/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 8. Specify Secure Restore Settings
 
-
-This step is available if you restore Microsoft Windows workloads.
 
 At the Secure Restore step of the wizard, you can instruct Veeam Backup & Replication to scan machine data for malware activity before restoring the machine to the production environment. To scan the data, Veeam Backup & Replication uses the following engines:
 
@@ -51,8 +49,9 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 
 Click the Click to change link to select the virtual network.
 
-1. Select the Continue scanning all remaining files after the first occurrence check box if you want to continue workload scan after the first malware is found. For information on how to view results of the malware scan, see [Viewing Antivirus Scan Results](av_scan_log.md).
+1. Select the Continue scanning all remaining files after the first occurrence check box if you want to continue workload scan after the first malware is found. For information on how to view results of the malware scan, see [Viewing Scan Results Using Console](malware_detection_secure_restore_results.md).
 
 ![Step 8. Specify Secure Restore Settings](images/azure_restore_antivirus.webp)
 
+Page updated 2026-07-30
 
