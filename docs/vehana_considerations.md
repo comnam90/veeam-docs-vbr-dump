@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vehana_considerations.html"
-last_updated: "3/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -32,7 +32,7 @@ Restore
 
 * Before you restore an SAP HANA tenant database to another server, make sure that the account used to connect the plug-in on the target server to the backup server and backup repository meets the following requirements:
 
-* The account must have either the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles. You can also use the account under which the backup was created. For more information on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
+* The account must have either the Backup Administrator, or both the Backup Operator and Restore Operator roles. You can also use the account under which the backup was created. For more information on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
 * The account must have access permissions to the backup repository where the backup resides. For more information, see [Access and Encryption Settings on Repositories](repository_permissions.md).
 
 If the account does not meet these requirements, you must configure the plug-in on the target server with the credentials of an account that meets the requirements or with a recovery token. To do this, go to /opt/veeam/VeeamPluginforSAPHANA on the target server and run the following command:
@@ -67,4 +67,5 @@ For more information about this command, see [Restore to Another Server (System 
 * Before you restore a tenant database using the SSL/TLS protocol, make sure that the target SAP HANA system is properly configured to use SSL/TLS and that the backup server has SAP Common Crypto Library installed. For more information about how to install SAP Common Crypto Library on Windows machines, see the [SAP Help Portal](https://help.sap.com/docs/SAP_DATA_SERVICES/e54136ab6a4a43e6a370265bf0a2d744/c049e28431ee4e8280cd6f5d1a8937d8.html?locale=en-US).
 * [For Windows-based backup servers] If you are using secure restore, the backup server is running Microsoft Windows Server 2012 or 2016 and you are using SAP Common Crypto Library 8.5.51 or higher, you must export the private key with the Triple DES encryption algorithm. SAP Common Crypto Library 8.5.51 or higher uses the AES 256 encryption algorithm as default for PKCS #12 encryption, while this encryption algorithm is not supported in Microsoft Windows Server 2012 and 2016.
 
+Page updated 2026-04-20
 
