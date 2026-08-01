@@ -3,8 +3,8 @@ title: "Tape Parallel Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/parallel_processing.html"
-last_updated: "4/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Tape Parallel Processing
@@ -65,7 +65,7 @@ The order in which VMs are queued for processing is defined by the schedule conf
 
 If a source job produces multiple per-machine backups, the media pool processes several per-machine backup chains simultaneously. For more information about per-machine backup files, see [Backup Chain Formats](per_vm_backup_files.md).
 
-Example 2. Processing One Tape Job with One Source Job for Four VMs
+Example 2. Processing One Backup to Tape Job with One Source Job for Four VMs
 
 * You set the maximum number of drives to three.
 * Tape job A has one source job, the source job processes four VMs.
@@ -97,8 +97,22 @@ File to Tape job A starts and occupies all three available drives. Veeam Backup 
 
 ![Tape Parallel Processing](images/parallel_processing_file_to_tape.webp)
 
+Example 4. Processing One Plug-In to Tape Job with Multiple Database Servers
+
+For plug-in backup to tape, Veeam Backup & Replication processes backups of each database server separately to ensure that a central backup job metadata file (.VACM) is always written to tape.
+
+In the example, the following settings apply:
+
+* You set the maximum number of drives to three.
+* The source plug-in backup job 1 processes four database servers.
+
+Tape job A starts and occupies all three available drives. It writes backups for each separate database server by a separate drive. After tape job A finishes writing one of the database server backups and releases one of the three available drives, it occupies this drive with writing DB server 4.
+
+![Tape Parallel Processing](images/parallel_processing_plugin_source.webp)
+
 Related Topics
 
 [Media Sets Created with Parallel Processing](parallel_processing_media_sets.md)
 
+Page updated 2026-07-22
 
