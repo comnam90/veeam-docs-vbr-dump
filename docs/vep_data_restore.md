@@ -3,8 +3,8 @@ title: "Data Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_data_restore.html"
-last_updated: "8/13/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Data Restore
@@ -17,8 +17,9 @@ Before restoring data, read the [Considerations and Limitations](vep_considerati
 In This Section
 
 * [How Restore Works](vep_how_restore_works.md)
-* [Restoring Single Instance](vep_restoring_single_instance.md)
-* [Restoring Multiple Instances](vep_restoring_multiple_instances.md)
+* [Restoring Instances](vep_restoring_instances.md)
+* [Restoring Databases](vep_restoring_databases.md)
 * [Managing Restore Session](vep_restore_manage_session.md)
 
+Page updated 2026-04-16
 
