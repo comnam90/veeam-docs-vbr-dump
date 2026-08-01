@@ -3,8 +3,8 @@ title: "Start-VBRViComputerInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvicomputerinstantrecovery.html"
-last_updated: "12/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRViComputerInstantRecovery
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Start-VBRViComputerInstantRecovery -RestorePoint <COib> -Server <CHost> [-RestoredVMName <string>] [-VMFolder <CViFolderItem>] [-ResourcePool <CViResourcePoolItem>] [-SourceNetwork <VBRComputerNetworkInfo[]>] [-TargetNetwork <IVBRServerNetworkInfo[]>] [-GenerateNewSystemUUID] [-CacheDatastore <VBRViDatastore>] [-StoragePolicy <VBRViStoragePolicy>] [-PowerOnAfterRestoring] [-ConnectVMToNetwork] [-Reason <string>] [-Credentials <CCredentials>] [-RunAsync] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction <VBRVirusDetectionAction> {DisableNetwork | AbortRecovery}] [-Force]  [<CommonParameters>] |
+| Start-VBRViComputerInstantRecovery -RestorePoint <COib> -Server <CHost> [-RestoredVMName <string>] [-VMFolder <CViFolderItem>] [-ResourcePool <CViResourcePoolItem>] [-SourceNetwork <VBRComputerNetworkInfo[]>] [-TargetNetwork <IVBRServerNetworkInfo[]>] [-GenerateNewSystemUUID] [-CacheDatastore <VBRViDatastore>] [-StoragePolicy <VBRViStoragePolicy>] [-PowerOnAfterRestoring] [-ConnectVMToNetwork] [-Reason <string>] [-Credentials <CCredentials>] [-RunAsync] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction <VBRVirusDetectionAction> {DisableNetwork | AbortRecovery}] [-Force] [-EnableClusterWideMount]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -36,8 +36,9 @@ Run the [Start-VBRHvInstantRecovery](start-vbrhvinstantrecovery.md) cmdlet to re
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point of a machine. The cmdlet will use the specified restore point to recover a machine. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | Server | For restore to another location.  Specifies the target ESXi host. The cmdlet will restore a machine to this ESXi host.  Note: You must not specify a vCenter Server in this parameter. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | False |
 | VMFolder | For restore to another location.  Specifies a folder on the ESXi host. The cmdlet will restore a machine to this folder. | Accepts the CViFolderItem object. To get this object, run the [Find-VBRViFolder](find-vbrvifolder.md) cmdlet. | False | Named | False |
@@ -59,6 +60,7 @@ Parameters
 | EnableEntireVolumeScan | For the secure restore option.  Defines that the antivirus will continue to scan a machine after the first virus threat is found. Use this option if you want to get the report on all virus threats. | SwitchParameter | False | Named | False |
 | VirusDetectionAction | For secure restore.  Specifies the secure restore action when the infection is detected.   * DisableNetwork: use this option if you want to restore a machine with disabled network adapters (NICs). * AbortRecovery: use this option if you want to cancel the restore session. | VBRVirusDetectionAction | False | Named | False |
 | Force | Defines that the cmdlet will perform restore of a machine even if the geographic location of the repository where backups of a machine reside and the target host location does not match. | SwitchParameter | False | Named | False |
+| EnableClusterWideMount | Defines that the cmdlet will mount the vPowerNFS datastore to all ESXi hosts in the target cluster. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -91,4 +93,5 @@ Related Commands
 * [Sort-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/sort-object?view=powershell-7)
 * [Select-Object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-object?view=powershell-7)
 
+Page updated 2026-05-14
 
