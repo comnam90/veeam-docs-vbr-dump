@@ -3,8 +3,8 @@ title: "VBRCloudvCDStoragePolicyQuota"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrcloudvcdstoragepolicyquota.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # VBRCloudvCDStoragePolicyQuota
@@ -21,4 +21,5 @@ Properties
 | Name | String | Storage policy name. |
 | UsedSpace | Int64 | Used space. |
 
+Page updated 2026-07-30
 
