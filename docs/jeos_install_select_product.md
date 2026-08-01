@@ -3,32 +3,24 @@ title: "Step 2. Select Product"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jeos_install_select_product.html"
-last_updated: "10/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Select Product
 
 
-In the installation menu, select one of the following:
+In the installation menu, select one of the following deployment types and press [Enter]:
 
-* Veeam Infrastructure Appliance
-* Veeam Infrastructure Appliance (with iSCSI & NVMe/TCP)
-
-|  |
-| --- |
-| Note |
-| You must select this option when you plan to deploy a VMware backup proxy for backup from storage snapshots using the iSCSI or NVMe/TCP protocol. For more information on proxies, see [VMware Backup Proxies](backup_proxy.md). |
-
-* Veeam Hardened Repository
+* Standard (Multi-Disk) Deployment — select this deployment type to deploy the appliance to multiple disks. This is the default option. The Veeam Infrastructure Appliance installer will use all available disks to create separate system and data volume groups.
+* Single-Disk Deployment — select this deployment type to deploy the appliance to a single disk. For example, if you want to use the appliance as a backup proxy. If multiple disks are present, the Veeam Infrastructure Appliance installer will use the smallest disk.
 
 |  |
 | --- |
-| Note |
-| Veeam Hardened Repositories have specific requirements and limitations. For more information, see [Requirements and Limitations](hardened_repository_limitations.md). |
+| Important |
+| If you select Single-Disk Deployment, all local disks connected to the host are formatted during installation, even though only one disk is used for the appliance. |
 
-Then, press [Enter].
+![Step 2. Select Deployment Type](images/jeos_product.webp)
 
-![Step 2. Select Product](images/jeos_product.webp)
-
+Page updated 2026-07-28
 
