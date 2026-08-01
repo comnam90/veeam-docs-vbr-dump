@@ -3,8 +3,8 @@ title: "Oracle Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_environment_planning.html"
-last_updated: "6/15/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Oracle Environment Planning
@@ -52,7 +52,8 @@ Oracle Cluster Solutions
 
 | Solution | Standalone Mode | Managed Mode |
 | Oracle Exadata, Oracle Database Appliance, Oracle RAC | Supported | Supported |
-| Oracle Data Guard | Supported | Not supported |
+| Oracle SEHA, Oracle Data Guard | Supported | Not supported |
+| Oracle Fail Safe, Pacemaker and Corosync, Red Hat High Availability Add-On | Supported. The configuration of the customServerName parameter is required. For details, see [Backup of Clusters that Require Custom Server Name](oracle_rman_overview_clusters.md#custom). | Not supported |
 
 To learn more about operation modes, see [Standalone and Managed Operations Modes](overview_operation_modes.md).
 
@@ -166,8 +167,8 @@ Disabling Veeam Explorer Processing
 
 You can disable Veeam Explorer for Oracle based restore for specific Oracle servers. To disable the restore on the Veeam Explorer for Oracle side, do the following:
 
-* [Linux or Unix] On the Oracle server, log in as a user with the Oracle Administrator rights and create an empty file in the following directory: /etc/veeam/disablerestore
-* [Windows] On the Oracle server, create an empty file in the following directory: %ProgramData%\Veeam\disablerestore
+* On machines running Linux or Unix OS: on the Oracle server, log in as a user with the Oracle Administrator rights and create an empty file in the following directory: /etc/veeam/disablerestore
+* On machines running Microsoft Windows OS: on the Oracle server, create an empty file in the following directory: %ProgramData%\Veeam\disablerestore
 
 Database Recovery
 
@@ -176,4 +177,5 @@ Before you recover your database using Veeam Explorer for Oracle, consider the f
 * The database that you want to restore must use SPFILE. If SPFILE is not used, a warning will be displayed during the Veeam Plug-In configuration.
 * If you use huge pages, make sure that you allocated enough memory to the system where you want to restore your database.
 
+Page updated 2026-07-29
 
