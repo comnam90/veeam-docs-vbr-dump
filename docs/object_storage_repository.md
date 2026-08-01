@@ -3,8 +3,8 @@ title: "Object Storage Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_repository.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Object Storage Repositories
@@ -67,13 +67,19 @@ You can also use object storage repositories as the following parts of the scale
 * As a part of [Capacity Tier](capacity_tier.md). Capacity tier of scale-out backup repository allows offloading the existing backup data directly to cloud-based object storage. For more information, see [Capacity Tier](capacity_tier.md).
 * As a part of [Archive Tier](archive_tier.md). Archive tier of scale-out backup repository allows transporting the infrequently accessed data from the capacity tier for archive storage. For more information, see [Archive Tier](archive_tier.md).
 
+Block Reuse
+
+For backups stored in object storage repositories, Veeam Backup & Replication can reuse data blocks already present in the repository instead of writing duplicate copies. Block reuse applies to synthetic full backups, backup file merges, and backups of clustered disks created by Veeam Agent for Microsoft Windows. Active full backups and incremental backups do not reuse existing blocks.
+
+Because of block reuse, the actual space a backup occupies in the repository can be smaller than its logical size. For more information, see [Viewing Backup Properties in Scale-Out Backup Repositories](view_backup_properties_sobr.md).
+
 Object Storage Repository Deployment
 
 To communicate with an object storage repository, Veeam Backup & Replication uses the following components:
 
 * [For VMware vSphere] A [VMware backup proxy](backup_proxy.md) — used to transfer data.
 * [For Microsoft Hyper-V] Either an [on-host](onhost_backup.md) or [off-host backup proxy](offhost_backup_proxy.md) — used to transfer data.
-* A [mount server](move_backup.md) — used to process guest OS applications and perform item recovery
+* A [mount server](move_backup.md) — used to process guest OS applications and perform item recovery.
 
 Depending on the type of job, a backup proxy connects to the object storage repository using one of the following connection modes:
 
@@ -96,6 +102,14 @@ For limitations, see [Considerations and Limitations for S3 Compatible Repositor
 
 For necessary permissions, see [Permissions for S3 Compatible Object Storage Repositories](required_permissions.md#rpasos).
 
+Read-Only Access to Object Storage Repositories
+
+Read-only access allows you to add the object storage repository that is already managed by one backup server to the backup infrastructure of the other server. In this case, the first backups server will keep the ownership over the object storage repository, and at the same time you will be able to perform restore and recovery check operations on the second backup server. In the read-only mode, Veeam Backup & Replication does not write or modify data in the object storage repository and does not loc the objects — the only operation available for such a repository is data recovery.
+
+To add the object storage repository with the read-only access, select the Add repository as a read-only option when you specify the bucket or container settings.
+
+For more information on limitations, see [General Considerations and Limitations](general_limitations.md).
+
 In This Section
 
 * [Considerations and Limitations](object_storage_repository_cal.md)
@@ -107,4 +121,5 @@ In This Section
 * [Managing Object Storage Repositories](managing_object_storage_repo_data.md)
 * [Managing Object Storage Backups](managing_object_storage_backups.md)
 
+Page updated 2026-07-28
 
