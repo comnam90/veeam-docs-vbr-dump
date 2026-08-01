@@ -3,8 +3,8 @@ title: "Changing Password for Tenant Account"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_change_password.html"
-last_updated: "1/30/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Changing Password for Tenant Account
@@ -33,4 +33,5 @@ To view the entered password, you can click and hold the eye icon on the right o
 
 ![Changing Password for Tenant Account](images/cloud_creds.webp)
 
+Page updated 2026-07-29
 
