@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cdp_enable_disable_policies.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Enabling and Disabling Policies
@@ -19,5 +19,5 @@ To enable or disable a policy:
 
 [![Enabling and Disabling Policies](images/em_cdp_policies_disable.webp)](images/em_cdp_policies_disable.webp "Enabling and Disabling Policies")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
