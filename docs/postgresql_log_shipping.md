@@ -3,8 +3,8 @@ title: "Log Shipping Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_log_shipping.html"
-last_updated: "9/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Log Shipping Servers
@@ -24,7 +24,7 @@ Data Transfer Methods
 Log shipping servers can transport data in two ways:
 
 * Over the network. In this scenario, Veeam Backup & Replication obtains files from the VM guest OS and transfers them over the network. This is a default method that uses log shipping servers.
-* Over VIX API/vSphere Web Services. In this scenario, Veeam Backup & Replication obtains WAL files from the VM guest OS over the VIX API/vSphere Web Services, bypassing the network.
+* Over vSphere Web Services. In this scenario, Veeam Backup & Replication obtains WAL files from the VM guest OS over vSphere Web Services, bypassing the network.
 
 Location of Log Shipping Server and VMs
 
@@ -45,4 +45,5 @@ Veeam Backup & Replication assigns log shipping servers per job session. When a 
 
 ![Log Shipping Servers](images/log_shipping_oracle_vm.webp)
 
+Page updated 2026-07-29
 
