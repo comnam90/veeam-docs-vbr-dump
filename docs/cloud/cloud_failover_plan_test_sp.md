@@ -3,8 +3,8 @@ title: "Testing Cloud Failover Plan"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_failover_plan_test_sp.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Testing Cloud Failover Plan
@@ -44,4 +44,5 @@ To use the registry key, complete the following steps:
 
 You can set CDP replicas to run in the keep alive mode for a maximum of 24 hours.
 
+Page updated 2026-07-29
 
