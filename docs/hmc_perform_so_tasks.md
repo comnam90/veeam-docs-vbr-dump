@@ -3,8 +3,8 @@ title: "Performing Security Officer Tasks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_perform_so_tasks.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Security Officer Tasks
@@ -17,9 +17,15 @@ Users with Security Officer permissions can perform the following tasks in the V
 * Reset own password
 * Reset MFA
 * Reset password recovery token
+* Approve or decline remote password reset
 * Use password recovery token to resolve authentication issues
 * View and export Veeam appliance events
 * Manage configuration backup passphrases
+
+|  |
+| --- |
+| Note |
+| If you have multi-factor authentication enabled, you must enter a one-time password before you can complete the following operations:   * Change own password * Reset multi-factor authentication * Reset the password recovery token   Authentication remains valid for 15 minutes. |
 
 Managing Authorization Requests
 
@@ -35,6 +41,8 @@ You can approve or decline the following requests from Host Administrators:
 * Allow remote connections for Veeam Agents
 * Allow a backup server to be added to a High Availability cluster
 * Disable backup infrastructure lockdown
+* Change the host management certificate
+* Add a trusted certificate
 
 To manage authorization requests, perform the following steps:
 
@@ -106,9 +114,21 @@ You can reset your current password recovery token. To do this, perform the foll
 |  |
 | --- |
 | Note |
-| A new recovery token is also generated when you use your current recovery token to solve authentication issues. For more information, see [Using Recovery Token](#use_recovery_token). |
+| When you reset a password recovery token, consider the following:   * A new recovery token is also generated when you use your current recovery token to solve authentication issues. For more information, see [Using Recovery Token](#use_recovery_token). |
 
 [![Performing Security Officer Tasks](images/hmc_so_recovery_token.webp)](images/hmc_so_recovery_token.webp)
+
+Approving or Declining Remote Password Reset
+
+If remote password resets are enabled and a Host Administrator forgets their password or cannot log in to the Veeam Host Management web UI, they can request a password reset.
+
+To approve or decline a password reset request, perform the following steps:
+
+1. Log in to the Veeam Host Management web UI as a Security Officer.
+2. In the management pane, click Overview.
+3. In the list of pending requests, select the password reset request and click Approve or Decline.
+4. If you approve the request, in the Password Reset window, specify a new password in the New password and Repeat password fields and click Apply.
+5. Provide the new password to the Host Administrator. They will be prompted to specify a new password the next time they log in.
 
 Using Recovery Token
 
@@ -119,6 +139,11 @@ If you forgot or lost the password, your Security Officer account locked after t
 3. Specify your recovery token and click Sign in.
 4. Complete the Security Officer Initialization wizard to enter new password, set up multi-factor authentication and get new recovery token.
 5. Click Finish.
+
+|  |
+| --- |
+| Note |
+| If multi-factor authentication was disabled in the Initial Configuration wizard, the MFA setup step of the Security Officer Initialization wizard is skipped. |
 
 [![Performing Security Officer Tasks](images/hmc_so_forgot_pass.webp)](images/hmc_so_forgot_pass.webp)
 
@@ -152,4 +177,5 @@ If you have a configuration backup passphrase from the previous backup server, y
 
 [![Performing Security Officer Tasks](images/hmc_so_bco_restore.webp)](images/hmc_so_bco_restore.webp)
 
+Page updated 2026-07-28
 
