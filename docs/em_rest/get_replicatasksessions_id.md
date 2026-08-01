@@ -3,8 +3,8 @@ title: "GET /replicaTaskSessions/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_replicatasksessions_id.html"
-last_updated: "9/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /replicaTaskSessions/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,10 +60,11 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the replication task session. |
-| Name | String | Name of the replication task session, for example: dc-hv@2013-08-25 05:01:09. |
+| Name | String | Name of the replication task session, for example: dc-hv@2025-08-25 05:01:09. |
 | JobSessionUid | UidType | UID of the replication job session parent to the replication task session resource. |
 | CreationTime | DateTime | Date and time when the replication task session was started. The parameter accepts only UTC-formatted DateTime values, for example: 2025-08-14T12:31:30.389954Z. |
 | EndTime | DateTime | Date and time when the replication task session was ended. The parameter accepts only UTC-formatted DateTime values, for example: 2025-08-14T12:31:31.000000Z. |
@@ -74,8 +77,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the parent replication job was configured. |
 | /replicaSessions/{ID} | Up | URL of the [/replicaSessions/{ID}](replicasessions_id.md) resource — a parent replication job session. |
 | /replicaTaskSessions/{ID} | Alternate | Alternate URL of the [/replicaTaskSessions/{ID}](replicatasksessions_id.md) resource. |
@@ -86,6 +90,7 @@ The example request below returns an entity resource representation of a task se
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/replicaTaskSessions/809564f0-d2e7-4ee2-af2f-06d385138be2?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  GET https://localhost:9398/api/replicaTaskSessions/809564f0-d2e7-4ee2-af2f-06d385138be2?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <ReplicaTaskSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Href="https://localhost:9398/api/replicaTaskSessions/809564f0-d2e7-4ee2-af2f-06d385138be2?format=Entity" Type="ReplicaTaskSession" Name="apache02\_replica01@2025-10-17 20:00:27" UID="urn:veeam:ReplicaTaskSession:809564f0-d2e7-4ee2-af2f-06d385138be2" VmDisplayName="apache02\_replica01" xmlns="http://www.veeam.com/ent/v1.0">     <Links>         <Link Href="https://localhost:9398/api/backupServers/a490c017-2c1c-40ee-8bcf-73bcce6ab36f" Name="enterprise01.tech.local" Type="BackupServerReference" Rel="Up" />         <Link Href="https://localhost:9398/api/replicaSessions/3ae6d70c-e13f-4ee5-9da6-8920369ced66" Name="Replication Job 1@2025-10-17 20:00:11" Type="ReplicaJobSessionReference" Rel="Up" />         <Link Href="https://localhost:9398/api/replicaTaskSessions/809564f0-d2e7-4ee2-af2f-06d385138be2" Name="apache02\_replica01@2025-10-17 20:00:27" Type="ReplicaTaskSessionReference" Rel="Alternate" />     </Links>     <JobSessionUid>urn:veeam:ReplicaJobSession:3ae6d70c-e13f-4ee5-9da6-8920369ced66</JobSessionUid>     <CreationTimeUTC>2025-10-17T20:00:27.087Z</CreationTimeUTC>     <EndTimeUTC>2025-10-17T20:03:11.843Z</EndTimeUTC>     <State>Completed</State>     <Result>Success</Result>     <Reason />     <TotalSize>8589934592</TotalSize> </ReplicaTaskSession> |
 
+Page updated 2026-07-28
 
