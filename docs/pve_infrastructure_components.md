@@ -3,8 +3,8 @@ title: "Solution Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_infrastructure_components.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Solution Architecture
@@ -28,7 +28,7 @@ A backup server is either a Windows-based or Linux-based physical or virtual mac
 
 Veeam Plug-In for Proxmox VE
 
-Veeam Plug-in for Proxmox VE is an architecture component that enables integration between the backup server and other components of the backup infrastructure. Veeam Plug-in for Proxmox VE allows Veeam Backup & Replication to connect to the Proxmox VE server, and to perform data protection and disaster recovery tasks with Proxmox VE resources.
+Veeam Plug-in for Proxmox VE is an architecture component that enables integration between the backup server and other components of the backup infrastructure. Veeam Plug-In for AWS allows Veeam Backup & Replication to connect to the Proxmox VE server, and to perform data protection and disaster recovery tasks with Proxmox VE resources.
 
 Backup Repositories
 
@@ -42,4 +42,5 @@ A worker is a Linux-based VM that resides on the Proxmox VE host and processes b
 
 [![Architecture Overview](images/pve_infrastructure_components.webp)](images/pve_infrastructure_components.webp "Architecture Overview")
 
+Page updated 2026-07-30
 
