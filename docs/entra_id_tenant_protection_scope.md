@@ -3,8 +3,8 @@ title: "Step 3. Specify Protection Scope"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_protection_scope.html"
-last_updated: "4/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify Protection Scope
@@ -21,4 +21,5 @@ At the Protection Scope step of the wizard, you can exclude resources from the p
 
 ![Step 3. Specify Protection Scope](images/entra_id_tenant_scope.webp)
 
+Page updated 2026-06-22
 
