@@ -3,14 +3,14 @@ title: "Step 1. Launch New Protection Group Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_launch.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch New Protection Group Wizard
 
 
-To launch the New Protection Group wizard, do the following:
+To launch the New Protection Group wizard in the Veeam Backup & Replication console, do the following:
 
 1. Open the Add Protection Group window. To open the window, do one of the following:
 
@@ -22,4 +22,5 @@ To launch the New Protection Group wizard, do the following:
 
 ![Step 1. Launch New Protection Group Wizard](images/pg_add_computers.webp "Select Protection Group Type")
 
+Page updated 2026-07-02
 
