@@ -3,8 +3,8 @@ title: "Storage System Snapshot Integration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_integration.html"
-last_updated: "3/10/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Storage System Snapshot Integration
@@ -19,6 +19,7 @@ Veeam Backup & Replication provides the following types of snapshot integrations
 * [VMware integration](vmware_integration.md). Allows creating backups of VMware vSphere VMs and performing snapshot orchestration — build a snapshot chain on primary and secondary storage arrays. Also, Veeam Backup & Replication allows restoring data from storage snapshots.
 * [NAS integration](nas_integration.md). Allows creating backups of NAS file shares.
 * [Veeam Agent for Microsoft Windows integration](agent_integration.md). Allows creating Veeam Agent backups of Microsoft Windows computers.
+* [Veeam Plug-In for IRIS Integration](storage_iris_integration.md). Allows creating backups and snapshots of IRIS instances.
 
 |  |
 | --- |
@@ -40,4 +41,5 @@ Related Topics
 * [Universal Storage API Integrated Systems](universal_storage_integration_api.md)
 * [On-Demand Sandbox for Storage Snapshots](sandbox_storages_ebook.md)
 
+Page updated 2026-05-29
 
