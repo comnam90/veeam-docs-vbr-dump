@@ -3,8 +3,8 @@ title: "Google Cloud"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_google.html"
-last_updated: "4/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Google Cloud
@@ -27,9 +27,10 @@ Version Compatibility
 | 12.1.0.2131 | 12.5.0.1257 | 5.0.0.1297 | Ubuntu 20.04 LTS |
 | 12.0.0.1420 | 12.0.4.907 | 4.0.0.1082 |
 | 4.0.0.1072 |
-| 11.0.1.1261 | 11.0.3.616 | 3.0.0.868 |
+| 11.0.1.1261 including all cumulative patches starting from P20211211 (CP3) | 11.0.3.616 | 3.0.0.868 |
 | 3.0.0.859 |
-| 11.0.1.1261 | 11.0.2.331 | 2.0.0.535 |
+| 11.0.1.1261 including all cumulative patches prior to P20211211 (CP3) | 11.0.2.331 | 2.0.0.535 |
 | 2.0.0.530 |
 
+Page updated 2026-07-29
 
