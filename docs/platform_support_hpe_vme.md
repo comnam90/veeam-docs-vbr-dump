@@ -3,8 +3,8 @@ title: "HPE Morpheus VM Essentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_hpe_vme.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # HPE Morpheus VM Essentials
@@ -30,7 +30,7 @@ HPE Morpheus VM Essentials VMs
 | Specification | Requirement |
 | Hardware | All types and versions of virtual hardware are supported. |
 | OS | All operating systems supported by HPE Morpheus VM Essentials. |
-| Software | [QEMU Guest Agent](https://pve.proxmox.com/wiki/Qemu-guest-agent) (optional, required for QEMU Guest Agent quiescence) |
+| Software | [QEMU Guest Agent](https://wiki.qemu.org/Features/GuestAgent) (optional, required for QEMU Guest Agent quiescence) |
 
 Guest OS File Restore
 
@@ -49,16 +49,18 @@ For other requirements and limitations of guest OS file restore, see [Requiremen
 
 Version Compatibility
 
-The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-in HPE Morpheus VM Essentials.
+The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-in for HPE Morpheus VM Essentials.
 
 Version Compatibility
 
-| Product Release | Veeam Plug-in HPE Morpheus VM Essentials Build | Veeam Backup & Replication Build | Worker OS Version |
-| 1 | 13.1.1.10 (recommended) 13.1.0.271 | 13.0.2.29 (recommended) 13.0.1.2067 13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
+| Product Release | Veeam Plug-in for HPE Morpheus VM Essentials Build | Veeam Backup & Replication Build | Worker OS Version |
+| 2 | 13.2.0.160 | 13.1.0.411 | Veeam JeOS 9.6 |
+| 1 | 13.1.1.10 13.1.0.271 | 13.0.2.29 13.0.1.2067 13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
 
 Related Topics
 
 * [Overview of HPE Morpheus VM Essentials Protection Functionality](hpe_morpheus_vme.md)
 * [HPE Morpheus VM Essentials Integration Architecture](hpe_infrastructure_components.md)
 
+Page updated 2026-07-27
 
