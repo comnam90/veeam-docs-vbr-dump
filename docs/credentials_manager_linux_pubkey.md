@@ -3,8 +3,8 @@ title: "SSH Private Keys"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/credentials_manager_linux_pubkey.html"
-last_updated: "1/8/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SSH Private Keys
@@ -37,8 +37,9 @@ Veeam Backup & Replication has the following limitations for the Identity/Pubkey
 
 Veeam Backup & Replication supports the following key algorithms: RSA, ECDSA, EdDSA (ED25519). For these algorithms you can use the following key formats:
 
+SSH Private Keys)
+
 | Key Formats | Key Algorithms | | |
-| --- | --- | --- | --- |
 | RSA | ECDSA | EdDSA (ED25519) |
 | PEM | ![SSH Private Keys)](images/yes.webp) | ![SSH Private Keys)](images/yes.webp) | ![SSH Private Keys)](images/no.webp) |
 | private | ![SSH Private Keys)](images/yes.webp) | ![SSH Private Keys)](images/yes.webp) | ![SSH Private Keys)](images/yes.webp) |
@@ -50,11 +51,12 @@ Veeam Backup & Replication supports the following key algorithms: RSA, ECDSA, Ed
 |  |
 | --- |
 | Important |
-| If you use VMware VIX/vSphere Web Services, Veeam Backup & Replication does not support usage of public keys for guest processing on Linux guest servers. |
+| If you use vSphere Web Services, Veeam Backup & Replication does not support usage of public keys for guest processing on Linux guest servers. |
 
 You can create a new credentials record using the Identity/Pubkey authentication method in one of the following ways:
 
 * [Creating an SSH private key using the Veeam Backup & Replication console](credentials_manager_linux_pubkey_console.md)
 * [Creating an SSH private key using the Veeam Backup & Replication web UI](credentials_manager_linux_pubkey_web.md)
 
+Page updated 2026-07-29
 
