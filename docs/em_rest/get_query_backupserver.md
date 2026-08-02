@@ -3,8 +3,8 @@ title: "GET /query?type=BackupServer"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_query_backupserver.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /query?type=BackupServer
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -39,14 +40,15 @@ Optional Parameters
 
 In the query, you can use the following parameters for filtering and sorting.
 
+Optional Parameters
+
 | Parameter | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the backup server connected to Veeam Backup Enterprise Manager, for example: urn:veeam:BackupServer:15942270-fb56-4dcc-96e9-5f80e4725a15. |
 | Name | String | Name of the backup server connected to Veeam Backup Enterprise Manager, for example: BACKUPSERVER. |
 | Description | String | Description specified for the backup server in Veeam Backup Enterprise Manager. |
 | IpOrDnsName | String | IP or DNS name that has been used for adding the backup server to Veeam Backup Enterprise Manager, for example, 172.16.11.22. |
 | Port | Int64 | Port used by Veeam Backup Enterprise Manager for collecting data from backup servers. By default, port 9392 is used. |
-| Version | String | Version of Veeam Backup & Replication installed on the backup server, for example: 13.0.0.1420. |
+| Version | String | Version of Veeam Backup & Replication installed on the backup server, for example: 13.1.0.411. |
 
 Response
 
@@ -60,8 +62,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -75,6 +78,7 @@ The example below returns an entity resource representation of a collection of b
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/query?type=BackupServer&format=Entities&filter=Version=="11.0.0.837"    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/query?type=BackupServer&format=Entities&filter=Version=="11.0.0.837"  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0">   <Entities>     <BackupServers>       <BackupServer Type="BackupServer" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563?format=Entity" Name="enterprise06.tech.local" UID="urn:veeam:BackupServer:7445e6ce-86f5-4171-b909-dac209c66563">         <Links>           <Link Rel="Alternate" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />           <Link Rel="Edit" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" />           <Link Rel="Delete" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" />           <Link Rel="Down" Type="JobReferenceList" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/jobs" />           <Link Rel="Down" Type="ManagedServerReferenceList" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/managedServers" />           <Link Rel="Down" Type="RepositoryReferenceList" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/repositories" />           <Link Rel="Down" Type="ExternalRepositoryReferenceList" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/externalRepositories" />           <Link Rel="Down" Type="CredentialsList" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/credentials" />           <Link Rel="Create" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/credentials?action=create" />           <Link Rel="Down" Type="PasswordKeyList" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/passwords" />           <Link Rel="Create" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563/passwords?action=create" />           <Link Rel="VeeamZip" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563?action=veeamzip" />           <Link Rel="QuickBackup" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563?action=quickbackup" />           <Link Rel="Start" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563?action=collect" />         </Links>         <Description />         <Port>9392</Port>         <Version>11.0.0.837</Version>       </BackupServer>     </BackupServers>   </Entities>   <PagingInfo PagesCount="1" PageSize="100" PageNum="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/query?type=BackupServer&format=Entities&filter=Version=="11.0.0.837"&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/query?type=BackupServer&format=Entities&filter=Version=="11.0.0.837"&pageSize=100&page=1" />     </Links>   </PagingInfo> </QueryResult> |
 
+Page updated 2026-07-29
 
