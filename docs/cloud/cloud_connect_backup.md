@@ -3,8 +3,8 @@ title: "Creating VM Backup Jobs"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_backup.html"
-last_updated: "4/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating VM Backup Jobs
@@ -53,7 +53,7 @@ To avoid problems with long paths, it is recommended to create job names not lon
 
 1. To encrypt the resulting backup file on the cloud repository, on the Storage tab, select the Enable backup file encryption check box. From the Password field, select a password that you want to use to encrypt the backup file. If you have not created a password beforehand, click Add or use the Manage passwords link to specify a new password.
 
-You can select a Key Management System (KMS) server in the Password field. The KMS server must be added to Veeam Backup & Replication in advance. If you choose to use KMS keys for backup file encryption at this step of the wizard, Veeam Backup & Replication immediately starts communication with the KMS server to retrieve the encryption keys. To learn more, see the [Key Management System Keys](https://helpcenter.veeam.com/docs/backup/vsphere/kms.html?ver=120) section in the Veeam Backup & Replication User Guide.
+You can select a Key Management System (KMS) server in the Password field. The KMS server must be added to Veeam Backup & Replication in advance. If you choose to use KMS keys for backup file encryption at this step of the wizard, Veeam Backup & Replication immediately starts communication with the KMS server to retrieve the encryption keys. To learn more, see the [Key Management System Keys](https://helpcenter.veeam.com/docs/vbr/userguide/kms.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
 ![Creating VM Backup Jobs](images/cloud_backup_encrypt.webp)
 
@@ -87,4 +87,5 @@ You can select a Key Management System (KMS) server in the Password field. The K
 1. At the Summary step of the wizard, select the Run the job when I click Finish check box if you want to start the created job right after you complete working with the wizard.
 2. Click Finish.
 
+Page updated 2026-07-29
 
