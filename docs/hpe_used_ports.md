@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_used_ports.html"
-last_updated: "4/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -20,7 +20,7 @@ Workers
 
 | From | To | Protocol | Port | Notes |
 | Worker | HPE Morpheus VM Essentials manager | TCP/HTTPS | 443 | Used to communicate with the REST API service running on the HPE Morpheus VM Essentials manager. |
-| HPE Morpheus VM Essentials manager | TCP | 7443 | Used to communicate with HPE Morpheus VM Essentials manager clusters when using the NBD transport mode and executing libvirt commands. |
+| HPE Morpheus VM Essentials manager | TCP | 7443 | Used to communicate with HPE Morpheus VM Essentials hosts when using the NBD transport mode and executing libvirt commands. |
 | Veeam backup repository or [gateway server](gateway_server.md) | TCP | 6162 (2500 to 3300) | Used as a transmission channel for jobs and restore sessions. The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup server | TCP | 6162 (2500 to 3300) | Used for ransomware index transfer. The port range 2500-3300 is used for failover if port 6162 is unavailable. |
 | Backup server | TCP | 10006 | Used to communicate with the backup server. |
@@ -44,4 +44,5 @@ Backup Server
 | Note |
 | For the list of ports used by the backup server to communicate with backup repositories, see [Ports](used_ports.md). |
 
+Page updated 2026-07-22
 
