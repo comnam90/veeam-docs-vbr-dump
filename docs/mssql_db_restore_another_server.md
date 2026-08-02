@@ -3,8 +3,8 @@ title: "Restore to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_another_server.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Another Server
@@ -40,7 +40,7 @@ To restore a database to another server, you can specify credentials of a user a
 
 |  |
 | --- |
-| Select authentication type or disable the functionality: |
+| Select authentication type or disable the functionality: 0. To disable the functionality 1. Credentials 2. Recovery token Enter authentication type number: 1 |
 
 1. Veeam Plug-In will prompt you to provide credentials of the user account that under which the backup was created. Enter a user name and password of the account:
 
@@ -57,7 +57,7 @@ After that, you gain access to the backups according to the credentials that you
 
 * Veeam Explorer for Microsoft SQL Server. For details, see [Restore with Veeam Explorer for Microsoft SQL Server](mssql_db_restore_vesql.md).
 
-Keep in mind that the account must either have the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles. You can also use the account under which the backup was created. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md)
+Keep in mind that the account must either have the Backup Administrator, or both the Backup Operator and Restore Operator roles. You can also use the account under which the backup was created. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md)
 
 Restore to Another Server Using Recovery Token
 
@@ -90,4 +90,5 @@ After that, you gain access to the backups for which the recovery token was gene
 
 * Veeam Explorer for Microsoft SQL Server. For details, see [Restore with Veeam Explorer for Microsoft SQL Server](mssql_db_restore_vesql.md).
 
+Page updated 2026-07-10
 
