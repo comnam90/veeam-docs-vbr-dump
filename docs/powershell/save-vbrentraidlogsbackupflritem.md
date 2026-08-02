@@ -3,8 +3,8 @@ title: "Save-VBREntraIDLogsBackupFLRItem"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/save-vbrentraidlogsbackupflritem.html"
-last_updated: "2/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Save-VBREntraIDLogsBackupFLRItem
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Save-VBREntraIDLogsBackupFLRItem -Server <VBRUnstructuredServer> -Item <VBREntraIDLogsBackupFLRItem[]> -Path <String> [-RunAsync]  [<CommonParameters>] |
+| Save-VBREntraIDLogsBackupFLRItem -Server <VBRUnstructuredServer> -Item <VBREntraIDLogsBackupFLRItem[]> -Path <String> [-RunAsync] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] [-Force] [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,12 +30,15 @@ This cmdlet restores and saves files and folders backed up by a log backup job.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Item | Specifies an array of Entra ID log files and folders that you want to restore. | Accepts the VBREntraIDLogsBackupFLRItem[] object. To get this object, run the [Get-VBREntraIDLogsBackupFLRItem](get-vbrentraidlogsbackupflritem.md) cmdlet. | True | Named | True (ByPropertyName, ByValue) |
 | Server | Specifies the file share to which you want to restore log files or folders. | Accepts the VBRUnstructuredServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | False |
 | Path | Specifies the path to the folder where you want to restore log files or folders. | String | True | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will modify settings of managed file shares without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -84,4 +87,5 @@ Related Commands
 * [Start-VBREntraIDLogsBackupFLRSession](start-vbrentraidlogsbackupflrsession.md)
 * [Get-VBREntraIDLogsBackupFLRItem](get-vbrentraidlogsbackupflritem.md)
 
+Page updated 2026-06-29
 
