@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/permissions_mssql.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Permissions
@@ -27,11 +27,11 @@ Permissions for Veeam Plug-In
 | Operation | Required Roles and Permissions |
 | Installing and updating Veeam Plug-In | The account used for installing and updating Veeam Plug-In must be a member of the local Administrators group. Local administrator permissions are required to install and manage Veeam Plug-In Toolbar in Microsoft SQL Server Management Studio. |
 | Performing backup and restore operations in Veeam Plug-In | To be able to connect to the SQL instance, the account used for starting Microsoft SQL Server backup and restore processes must meet the following conditions:   * The account must be added to the following roles: public, sysadmin.  * If the account is not a member of the Administrators group, you must enable the Create Global Objects security policy for the account. For detailed instructions on how to manage the Create Global Objects security policy, see [Microsoft documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/create-global-objects). |
-| Connecting to Veeam Backup & Replication, managing backups | The account that is used to authenticate against Veeam Backup & Replication must have access permissions on required Veeam backup repository servers. To learn how to configure permissions on repositories, see [Access and Encryption Settings on Backup Repositories](repository_permissions_mssql.md).  Veeam Plug-In for Microsoft SQL Server uses the Windows authentication methods of the Veeam Backup & Replication server to establish a connection to this server and to the backup target. It is recommended to create one user for each standalone Microsoft SQL Server or failover cluster with Veeam Plug-In.  To work with backups created by Veeam Plug-In, you can use only the same account that was used for creating the backup. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). Alternatively, you can delete backups from the backup repository and re-create the backup using another account. For details on how to delete backups, see [Force Deleting Backups](plugins_mssql_retention_force.md) or [Deleting Backup with Veeam Backup & Replication](delete_backups_mssql.md). |
+| Connecting to Veeam Backup & Replication, managing backups | The account that is used to authenticate against Veeam Backup & Replication must have access permissions on required Veeam backup repository servers. To learn how to configure permissions on repositories, see [Access and Encryption Settings on Backup Repositories](repository_permissions_mssql.md).  Veeam Plug-In for Microsoft SQL Server uses the Windows authentication methods of the Veeam Backup & Replication server to establish a connection to this server and to the backup target. It is recommended to create one user for each standalone Microsoft SQL Server or failover cluster with Veeam Plug-In.  To work with backups created by Veeam Plug-In, you can use only the same account that was used for creating the backup. If you want to use another account, assign the Backup Administrator role or Backup Operator and Restore Operator roles to the account. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). Alternatively, you can delete backups from the backup repository and re-create the backup using another account. For details on how to delete backups, see [Force Deleting Backups](plugins_mssql_retention_force.md) or [Backup in Veeam Backup & Replication](mssql_backup_vbr.md). |
 
 Permissions for Object Storage
 
-The general permissions for backup to object storage are listed in [Using Object Storage Repositories](required_permissions.md#using-object-storage-repositories). Additional permissions are required if you want to back up databases with Veeam Plug-In. The list of additional permissions differs depending on the selected object storage and the way you set your backup infrastructure:
+The general permissions for backup to object storage are listed in [Using Object Storage Repositories](permissions_object_storage.md#obj_stor). Additional permissions are required if you want to back up databases with Veeam Plug-In. The list of additional permissions differs depending on the selected object storage and the way you set your backup infrastructure:
 
 * [Amazon S3](#aws_s3)
 * [S3 compatible (including IBM Cloud Object Storage and Wasabi Cloud Storage)](#s3)
@@ -43,7 +43,7 @@ Consider the following:
 
 * Make sure the user account you are using has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the New Object Repository wizard.
-* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](required_permissions.md#using-object-storage-repositories). For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
+* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](permissions_object_storage.md#obj_stor). For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -62,7 +62,7 @@ Consider the following:
 
 * Make sure the user account you are using has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the New Object Repository wizard.
-* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](required_permissions.md#using-object-storage-repositories) . For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
+* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in [Using Object Storage Repositories](permissions_object_storage.md#obj_stor) . For details about immutability, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -91,4 +91,5 @@ If you plan to back up data using such infrastructure configuration, make sure t
 | --- |
 | {   "iam.serviceAccounts.create",   "iam.serviceAccounts.delete",   "iam.serviceAccounts.get",   "iam.serviceAccounts.list",   "storage.buckets.get",   "storage.buckets.getIamPolicy",   "storage.buckets.list",   "storage.buckets.setIamPolicy",   "storage.buckets.update",   "storage.hmacKeys.create",   "storage.hmacKeys.delete",   "storage.hmacKeys.get",   "storage.hmacKeys.list",   "storage.objects.create",   "storage.objects.delete",   "storage.objects.get",   "storage.objects.list" } |
 
+Page updated 2026-07-28
 
