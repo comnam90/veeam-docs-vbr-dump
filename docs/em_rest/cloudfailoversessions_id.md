@@ -3,8 +3,8 @@ title: "/cloud/failoverSessions/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/cloudfailoversessions_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /cloud/failoverSessions/{ID}
@@ -44,12 +44,13 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudFailoverSessionReference" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9" Name="ABC Company Failover Plan" UID="urn:veeam:CloudFailoverSession:475420ee-d045-4493-9869-0a970e08f6f9"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudFailoverSessionReference" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9" Name="ABC Company Failover Plan" UID="urn:veeam:CloudFailoverSession:475420ee-d045-4493-9869-0a970e08f6f9">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudFailoverSession" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9?format=Entity" Name="ABC Company Failover Plan" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
 |  |
 | --- |
-| <CloudFailoverSession xmlns="http://www.veeam.com/ent/v1.0" Type="CloudFailoverSession" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9?format=Entity" Name="ABC Company Failover Plan" UID="urn:veeam:CloudFailoverSession:475420ee-d045-4493-9869-0a970e08f6f9">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudFailoverSessionReference" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9" Name="ABC Company Failover Plan" />   </Links>   <JobType>FailoverPlan</JobType>   <CreationTimeUTC>2015-12-07T17:38:16Z</CreationTimeUTC>   <EndTimeUTC>2015-12-07T17:39:36Z</EndTimeUTC>   <State>Stopped</State>   <Result>Success</Result>   <Progress>100</Progress>   <CloudFailoverTasks /> </CloudFailoverSession> |
+| <CloudFailoverSession xmlns="http://www.veeam.com/ent/v1.0" Type="CloudFailoverSession" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9?format=Entity" Name="ABC Company Failover Plan" UID="urn:veeam:CloudFailoverSession:475420ee-d045-4493-9869-0a970e08f6f9">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudFailoverSessionReference" Href="https://localhost:9398/api/cloud/failoverSessions/475420ee-d045-4493-9869-0a970e08f6f9" Name="ABC Company Failover Plan" />   </Links>   <JobType>FailoverPlan</JobType>   <CreationTimeUTC>2025-12-07T17:38:16Z</CreationTimeUTC>   <EndTimeUTC>2025-12-07T17:39:36Z</EndTimeUTC>   <State>Stopped</State>   <Result>Success</Result>   <Progress>100</Progress>   <CloudFailoverTasks /> </CloudFailoverSession> |
 
+Page updated 2026-07-29
 
