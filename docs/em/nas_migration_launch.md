@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/nas_migration_launch.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Migrate to Production Wizard
@@ -19,5 +19,5 @@ Alternatively, you can right-click a file share and select Migrate to Production
 
 [![Launching File Share Migration Wizard](images/instant_nas_recovery_migrate.webp)](images/instant_nas_recovery_migrate.webp "Launching File Share Migration Wizard")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
