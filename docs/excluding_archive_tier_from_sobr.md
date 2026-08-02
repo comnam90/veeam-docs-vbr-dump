@@ -3,8 +3,8 @@ title: "Excluding Archive Extent from Scale-Out Backup Repository"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/excluding_archive_tier_from_sobr.html"
-last_updated: "5/29/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Excluding Archive Extent from Scale-Out Backup Repository
@@ -26,4 +26,5 @@ You will be asked to confirm the action in the dialog box. After that, the objec
 
 ![Excluding Archive Extent from Scale-Out Backup Repository](images/exclude_archive_extent.webp)
 
+Page updated 2026-07-16
 
