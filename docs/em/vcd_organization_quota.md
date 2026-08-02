@@ -3,8 +3,8 @@ title: "About Organization Quota"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_organization_quota.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # About Organization Quota
@@ -19,7 +19,7 @@ The used quota is recalculated every time any of the organization jobs runs. If 
 |  |
 | --- |
 | Note |
-| * Replication jobs and CDP policies do not consume storage quota of backup repositories because replicas are stored on the target VMware Cloud Director VDC. If you want to set a quota for replicas, configure storage policies of the target VDC. * Quota calculation is not currently supported for capacity and archive tiers of scale-out backup repositories. |
+| Replication jobs and CDP policies do not consume storage quota of backup repositories because replicas are stored on the target VMware Cloud Director VDC. If you want to set a quota for replicas, configure storage policies of the target VDC. |
 
 Managing Backups and Used Quota
 
@@ -27,4 +27,13 @@ If you want to protect backups created by organizations, you can create backup c
 
 You can also manually copy or move an organization backup from one backup repository to another. You may need to move some backups to another repository, for example, if the quota limit of one of the organization repositories is reaching. When you copy or move a backup to another repository, the used quota will be recalculated. For more information on copying and moving backups, see the [Copying Backups](https://helpcenter.veeam.com/docs/vbr/userguide/copy_backup.html?ver=13) and [Moving Backups](https://helpcenter.veeam.com/docs/vbr/userguide/move_backup.html?ver=13) sections of the Veeam Backup & Replication User Guide. Before you copy or move an organization backup, make sure that the organization has access to the target repository. To provide the access, add a new organization configuration for this repository. For details, see [Adding Organization Configuration](em_configure_vcd_org.md).
 
+For organizations whose backups are stored on a scale‑out backup repository, the portal shows quota consumption broken down by repository tier. The total used quota is the sum of the data stored on the performance tier, the capacity tier, and the archive tier:
+
+* Performance tier — backup data currently residing on the performance extents (the total consumption minus any data that has been moved to the capacity or archive tiers).
+* Capacity tier — backup data stored on the capacity extent.
+* Archive tier — backup data stored on the archive extent.
+
+Any data compression and deduplication performed on a target capacity or archive extent does not influence used quota calculation. To learn more about scale-out backup repositories, see the [Scale-Out Backup Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_sobr.html?ver=13) section of the Veeam Backup & Replication User Guide.
+
+Page updated 2026-07-21
 
