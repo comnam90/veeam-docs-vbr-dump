@@ -3,8 +3,8 @@ title: "Step 4. Configure Backup Destination Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_backup_job_create_destination.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Configure Backup Destination Settings
@@ -12,14 +12,9 @@ product_version: "13.0.1.1071"
 
 At the Storage step of the wizard, do the following:
 
-1. In the Backup repository drop-down list, select a backup repository where you want to store backups.
+1. In the Backup repository drop-down list, select a backup repository where you want to store backups. For a backup repository to be displayed in the list of available repositories, it must be [added to the backup infrastructure](hpe_configure_repository.md).
 
-For a backup repository to be displayed in the list of available repositories, it must be [added to the backup infrastructure](hpe_configure_repository.md).
-
-|  |
-| --- |
-| Note |
-| Veeam Backup & Replication Community Edition does not support [deduplicating storage appliances](hpe_configure_repository.md) for storing HPE Morpheus VM Essentials VM backups. |
+When restoring data of backed-up VMs, Veeam Backup & Replication will offer you to choose a restore point from the list of all restore points available in the default backup repository. To allow Veeam Backup & Replication to detect restore points created for these VMs by other backup jobs or stored in other backup repositories, you can map these restore points to this backup job — this way, Veeam Backup & Replication will be able to continue existing backup chains and will transfer less data over network, reducing unwanted overhead for the production environment. To do that, click Map backup and choose the necessary backup.
 
 1. In the Retention policy section, choose how long Veeam Backup & Replication will keep restore points in a backup chain. If a restore point is older than the specified limit, Veeam Backup & Replication will remove it from the chain. For more information on how Veeam Backup & Replication tracks and removes redundant restore points, see [Retention Policies](hpe_retention_policy.md).
 
@@ -34,4 +29,5 @@ To help you implement a comprehensive backup strategy, Veeam Backup & Replicatio
 
 [![Backup Destination](images/hpe_backup_job_create_destination.webp)](images/hpe_backup_job_create_destination.webp "Backup Destination")
 
+Page updated 2026-07-15
 
