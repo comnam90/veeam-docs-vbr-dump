@@ -3,8 +3,8 @@ title: "Link Types and XML Schema Definition"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/link_types_and_xml_schema.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Link Types and XML Schema Definition
@@ -21,4 +21,5 @@ The Type attribute value may differ from the root element name for the same reso
 
 For details on resource types mapping, see [Mapping Link Types to XML Schema Elements](mapping_link_types_to_xml_schema.md).
 
+Page updated 2026-07-29
 
