@@ -3,8 +3,8 @@ title: "Logging in to Veeam Backup & Replication Web UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/web_ui_logon.html"
-last_updated: "11/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Logging in to Veeam Backup & Replication Web UI
@@ -35,6 +35,11 @@ If your backup server uses a self-signed SSL certificate, your browser may displ
 
 Select Remember me to skip entering your credentials the next time you log in from the same device and browser.
 
+|  |
+| --- |
+| Note |
+| You can save credentials for a maximum of 5 accounts per backup server. After you reach this limit, the Remember me check box becomes unavailable, and a tooltip notifies you that you cannot save credentials for more accounts. |
+
 If SAML authentication is enabled, click Sign in with SSO and specify credentials to log in to the SSO service used by your organization. For more information, see [SAML Authentication](identity_provider.md).
 
 [![Logging in to Veeam Backup & Replication Web UI](images/web_ui_sign_in.webp)](images/web_ui_sign_in.webp)
@@ -43,4 +48,5 @@ If SAML authentication is enabled, click Sign in with SSO and specify credential
 
 Alternatively, you can use the Sign in as current user option. It allows you to log in to the Veeam Backup & Replication console using the credentials of the Windows user account currently signed in on the machine where you are launching the Veeam Backup & Replication console.
 
+Page updated 2026-07-13
 
