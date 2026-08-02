@@ -3,8 +3,8 @@ title: "Get-VBRTapeLibrary"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapelibrary.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRTapeLibrary
@@ -53,11 +53,12 @@ You can get the list of all tape libraries, narrow down your search to particula
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | TapeServer | Specifies the array of tape servers. The cmdlet will return tape libraries connected to these tape servers. | Accepts the [VBRTapeServer[]](vbrtapeserver.md) object, GUID or string type. To get this object, run the [Get-VBRTapeServer](get-vbrtapeserver.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
-| Name | Specifies the array of tape library names. The cmdlet will return tape libraries with these names. | String | False | Named | False |
-| Id | Specifies the array of tape library IDs. The cmdlet will return tape libraries with these IDs. | Accepts GUID or string. | False | Named | False |
+| Name | Specifies the array of tape library names. The cmdlet will return tape libraries with these names. | String[] | False | Named | False |
+| Id | Specifies the array of tape library IDs. The cmdlet will return tape libraries with these IDs.  Accepts Guid[] or String[]. | Guid[] | False | Named | False |
 
 <CommonParameters>
 
@@ -85,4 +86,5 @@ Related Commands
 
 [Get-VBRTapeServer](get-vbrtapeserver.md)
 
+Page updated 2026-06-24
 
