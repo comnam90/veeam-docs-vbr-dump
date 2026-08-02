@@ -3,8 +3,8 @@ title: "Google Cloud Accounts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cloud_credentials_google.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Google Cloud Accounts
@@ -15,7 +15,7 @@ You can add to the backup infrastructure a credentials record for the Google Clo
 To create a record for a Google Cloud account:
 
 1. From the main menu, select Credentials and Passwords > Cloud Credentials.
-2. Click Add > Google Cloud access key.
+2. Click Add > Google Cloud credentials > Google Cloud access key.
 3. In the Access Key and Secret key fields, specify the Hash-based Message Authentication Code (HMAC) key associated with the Google Cloud account. Veeam Backup & Replication will use the HMAC key to authenticate requests to the Google Cloud Storage. To view the entered key, click and hold the eye icon on the right of the field. For more information on Google Cloud accounts, see the [Google Cloud documentation](https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account).
 
 If you use Veeam Backup & Replication for Microsoft Windows and you have not created the HMAC key beforehand, you can do one of the following:
@@ -33,4 +33,5 @@ Related Topics
 
 [External Repository](external_repository.md)
 
+Page updated 2026-07-07
 
