@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_prerequisites.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -16,7 +16,6 @@ Before you create a backup job, consider the following limitations:
 
 * You cannot back up a VM being restored. Wait for the restore process to complete, and then start the backup job.
 
-* You cannot back up VMs created from [templates as linked clones](https://pve.proxmox.com/wiki/VM_Templates_and_Clones#Linked_Clone). Backup of full clones is supported.
 * You cannot back up VMs with the same BIOS UUID.
 * You cannot include into a backup job a VM that is being backed up by 3rd party software. Wait for the backup process to complete or stop the currently running job manually, and then add the VM to the necessary backup job.
 
@@ -29,4 +28,5 @@ Before you create a backup job, consider the following limitations:
 
 * Since Veeam Backup & Replication does not allow you to assign [information about locations](locations.md) to the Proxmox VE server and workers, job statistics do not include information on the Proxmox VE VM data migration between different geographic regions.
 
+Page updated 2026-07-27
 
