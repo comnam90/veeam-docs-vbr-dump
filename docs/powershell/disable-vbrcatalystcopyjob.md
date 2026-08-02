@@ -1,18 +1,23 @@
 ---
-title: "Disable-VBRCatalystCopyJob"
+title: "Disable-VBRCatalystCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/disable-vbrcatalystcopyjob.html"
-last_updated: "5/7/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Disable-VBRCatalystCopyJob
+# Disable-VBRCatalystCopyJob (obsolete)
 
 
 Short Description
 
 Disables backup copy jobs for HPE StoreOnce repositories.
+
+|  |
+| --- |
+| Note |
+| This cmdlet is obsolete. Run the [Disable-VBRStorageCopyJob](disable-vbrstoragecopyjob.md) cmdlet instead. |
 
 Applies to
 
@@ -32,8 +37,9 @@ Run the [Enable-VBRCatalystCopyJob](enable-vbrcatalystcopyjob.md) cmdlet to enab
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies an array of backup copy jobs for HPE StoreOnce repositories. The cmdlet will disable these jobs. | Accepts the VBRCatalystCopyJob[] object. To get this object, run the [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | PassThru | Defines that the command returns the output object to the Windows PowerShell console. | SwitchParameter | False | Named | False |
 | WhatIf | Defines whether the cmdlet writes a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
@@ -66,4 +72,5 @@ Related Commands
 
 [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md)
 
+Page updated 2026-06-12
 
