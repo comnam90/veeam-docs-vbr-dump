@@ -3,8 +3,8 @@ title: "/security"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/security.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /security
@@ -35,6 +35,7 @@ The /security resource has a resource representation of the following type:
 
 |  |
 | --- |
-| <EnterpriseSecuritySettings Href="http://local.host:9399/api/security" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| <EnterpriseSecuritySettings Href="http://local.host:9399/api/security" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/security/accounts" Type="EnterpriseAccountReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/security/roles" Type="EnterpriseRoleReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/security/accounts" Rel="Create"/>     <Link Href="http://local.host:9399/api/security/accounts?action=rebuildScope" Rel="Start"/>   </Links> </EnterpriseSecuritySettings> |
 
+Page updated 2026-07-29
 
