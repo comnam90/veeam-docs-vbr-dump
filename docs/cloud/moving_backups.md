@@ -3,8 +3,8 @@ title: "Moving Tenant Backups to Another Cloud Repository"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/moving_backups.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Moving Tenant Backups to Another Cloud Repository
@@ -185,4 +185,5 @@ Unlocked backups will be moved under the Backups > Cloud node.
 
 [![Delete Backup from Disk](images/cloud_connect_delete_backups.webp)](images/cloud_connect_delete_backups.webp "Delete Backup from Disk")
 
+Page updated 2026-07-29
 
