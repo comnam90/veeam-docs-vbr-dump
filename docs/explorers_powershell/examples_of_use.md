@@ -3,8 +3,8 @@ title: "Examples of Use"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/examples_of_use.html"
-last_updated: "2/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Examples of Use
@@ -69,13 +69,13 @@ Run the [Start-VBOTeamsItemRestoreSession](start-vboteamsitemrestoresession.md) 
 
 |  |
 | --- |
-| $datefrom = [datetime]"2/16/2025 10:00 AM" |
+| $datefrom = [datetime]"2/16/2026 10:00 AM" |
 
 1. Specify the time that defines the end of the period for which you want to export posts and convert it to the DateTime format. Save the result to the $dateto variable.
 
 |  |
 | --- |
-| $dateto = [datetime]"3/15/2025 2:00 PM" |
+| $dateto = [datetime]"3/15/2026 2:00 PM" |
 
 1. Run the [Export-VETPost](export-vetpost.md) cmdlet to initiate the restore process. Set the $channel variable as the Channel parameter value. Set the $datefrom variable as the From parameter value. Set the $dateto variable as the To parameter value. Specify the path to the exported file on the machine where the PowerShell session is running.
 
@@ -83,4 +83,5 @@ Run the [Start-VBOTeamsItemRestoreSession](start-vboteamsitemrestoresession.md) 
 | --- |
 | Export-VETPost -Channel $channel -Path "C:\export\posts.html" -From $datefrom -To $dateto |
 
+Page updated 2026-03-17
 
