@@ -3,8 +3,8 @@ title: "Enable Guest File System Indexing and Malware Detection"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_indexing_hv_web.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Enable Guest File System Indexing and Malware Detection
@@ -12,10 +12,10 @@ product_version: "13.0.1.1071"
 
 To specify VM guest OS indexing options for a VM:
 
-1. At the Guest Processing step of the wizard, select the Enable guest file system indexing and malware detection check box.
-2. Click Guest file system indexing options.
-3. Select a VM in the list and click Edit.
-4. In the Indexing Settings window, click Windows or Linux tab.
+1. At the Guest Processing step of the wizard, set the Enable guest file system indexing and malware detection toggle to On.
+2. Click the Customize guest processing link.
+3. Select a VM in the list and click Other Actions > Guest Indexing, or right-click the VM and select Guest Indexing. To quickly find a specific VM in the list, enter its name in the Search field.
+4. In the Indexing Settings window, click the Windows or Linux tab.
 5. Specify the indexing scope:
 
 + Select Disable indexing if you do not want to index guest OS files of the VM.
@@ -31,6 +31,7 @@ To reset the list of folders to its initial state, click Default.
 | Note |
 | [For Linux VMs] To perform guest OS file indexing, Veeam Backup & Replication requires several utilities to be installed on the Linux VM: openssh, gzip and tar. If these utilities are not found, Veeam Backup & Replication will prompt you to deploy them on the VM guest OS. |
 
-[![Click to zoom in](images/hv_backup_job_vss_indexing_web.webp)](images/hv_backup_job_vss_indexing_web.webp "Click to zoom in")
+[![Enable guest file system indexing](images/hv_backup_job_vss_indexing_web.webp)](images/hv_backup_job_vss_indexing_web.webp "Enable guest file system indexing")
 
+Page updated 2026-06-29
 
