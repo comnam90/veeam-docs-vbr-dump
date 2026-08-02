@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cd_jobs_aap_oracle.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Oracle Archived Log Settings
@@ -67,5 +67,5 @@ When the parent backup job (job creating an image-level backup) runs, Veeam Back
 
 ![Oracle Archived Log Settings](images/em_edit_job_aaip_oracle_new.webp "Handling Archived Logs")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
