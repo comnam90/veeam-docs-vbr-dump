@@ -3,8 +3,8 @@ title: "How Updates Work"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/update_appliance_hiw.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Updates Work
@@ -15,8 +15,8 @@ Update operations work in the following way:
 * Every 12 hours Veeam Updater sends a request to repository.veeam.com to get information about last updates and saves information to the service database located on Veeam Software Appliance. If there are updates for Veeam Updater itself, the service automatically updates and restarts. These operations are also performed if you click Check for updates in the Veeam Updater UI.
 * Veeam Backup Enterprise Manager requests Veeam Updater to check for updates in the following cases:
 
-* When you install a new license.
-* When you check for updates manually. For more information, see [Checking for Updates](update_appliance_check_updates.md).
+* * When you install a new license.
+  * When you check for updates manually. For more information, see [Checking for Updates](update_appliance_check_updates.md).
 
 Veeam Updater sends a request to repository.veeam.com to get information about last updates and saves the information to the service database. Veeam Backup & Replication saves the information received from Veeam Updater to the configuration database.
 
@@ -40,4 +40,5 @@ For more information on automatic and manual update installation, see [Installin
 | Note |
 | If your license has expired or is not valid, update operations will fail, and the Veeam Updater UI will be unavailable. |
 
+Page updated 2026-07-28
 
