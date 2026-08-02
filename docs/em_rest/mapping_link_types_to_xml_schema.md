@@ -3,8 +3,8 @@ title: "Mapping Link Types to XML Schema Elements"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/mapping_link_types_to_xml_schema.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Mapping Link Types to XML Schema Elements
@@ -14,8 +14,9 @@ Link elements of the resource representation may contain Type attributes whose v
 
 In the following table you can find the Type attribute values and XML schema elements for all REST API resource representations.
 
+Mapping Link Types to XML Schema Elements
+
 | Link Type | XML Schema Element |
-| --- | --- |
 | LogonSession | <xs:element name="LogonSession" type="LogonSessionType" /> |
 | LogonSessionList | <xs:element name="LogonSessions" type="LogonSessionListType" /> |
 | EnterpriseManager | <xs:element name="EnterpriseManager" type="EnterpriseManagerType" /> |
@@ -179,4 +180,5 @@ In the following table you can find the Type attribute values and XML schema ele
 | SystemSessions | <xs:element name="SystemSessions" type="SystemSessionEntityListType"/> |
 | SystemSessionEvents | <xs:element name="SystemSessionEvents" type="SystemSessionEventResourceType"/> |
 
+Page updated 2026-07-29
 
