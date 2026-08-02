@@ -3,8 +3,8 @@ title: "Beginner Example"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/beginner_example.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Beginner Example
@@ -19,4 +19,5 @@ To follow this exercise, you will perform the next steps:
 3. [Get a list of backup servers](getting_a_list_of_veeam_backup_servers.md)
 4. [Perform logout](logging_out.md)
 
+Page updated 2026-07-29
 
