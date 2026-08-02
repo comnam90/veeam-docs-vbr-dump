@@ -3,8 +3,8 @@ title: "Step 5. Select Storage Container"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_to_ahv_container.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Select Storage Container
@@ -21,6 +21,7 @@ For a container to be displayed in the list of the available containers, it must
 | Note |
 | You cannot choose a storage container when restoring the VM from a snapshot. |
 
-![Step 5. Select Storage Container](images/ahv_restore_vm_ahv_container.webp)
+![Step 5. Select Storage Container](images/ahv_restore_vm_container.webp)
 
+Page updated 2026-04-22
 
