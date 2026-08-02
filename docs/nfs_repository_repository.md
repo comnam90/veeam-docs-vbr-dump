@@ -3,8 +3,8 @@ title: "Step 4. Configure Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_repository_repository.html"
-last_updated: "8/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Configure Backup Repository Settings
@@ -17,7 +17,14 @@ Configuring General Repository Settings
 To configure general repository settings:
 
 1. In the Location section, specify a path to the folder where backup files must be stored. Click Populate to check capacity and available free space in the selected location.
-2. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the backup repository. These settings will help you control the load on the backup repository and prevent possible timeouts of storage I/O operations.
+2. [For NFS repositories hosted on storage systems with WORM support] To prohibit deletion of blocks of data from the backup repository, select the Make recent backups immutable for check box and specify the immutability period. For more information on limitations and considerations for immutability support for NFS shares, see [Immutability for NFS Backup Repositories](nfs_immutability.md#immutability).
+
+|  |
+| --- |
+| Important |
+| Veeam Backup & Replication allows you to enable the immutability option on any NFS repository, but if the underlying storage system does not support WORM, backup files will not be protected from deletion. |
+
+1. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the backup repository. These settings will help you control the load on the backup repository and prevent possible timeouts of storage I/O operations.
 
    * Select the Limit maximum concurrent tasks check box and specify the maximum allowed number of concurrent tasks for the backup repository. If this value is exceeded, Veeam Backup & Replication will not start a new task until one of current tasks finishes. For more information, see [Limiting the Number of Concurrent Tasks](limiting_tasks.md).
 
@@ -52,4 +59,5 @@ To configure advanced repository settings:
 
 ![Step 4. Configure Backup Repository Settings](images/nfs_repo_repository_advanced.webp)
 
+Page updated 2026-07-17
 
