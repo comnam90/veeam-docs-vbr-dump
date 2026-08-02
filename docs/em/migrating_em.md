@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/migrating_em.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Migrating Enterprise Manager
@@ -20,5 +20,5 @@ In This Section
 * [Migrating Enterprise Manager from Microsoft SQL Server to PostrgeSQL](em_db_migration.md)
 * [Connecting Enterprise Manager to Another Configuration Database](dbconfig_utility.md)
 
-Page updated 2026-07-09
+Page updated 2026-07-29
 
