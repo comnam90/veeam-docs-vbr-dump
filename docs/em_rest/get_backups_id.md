@@ -3,8 +3,8 @@ title: "GET /backups/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_backups_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /backups/{ID}
@@ -34,8 +34,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -55,8 +56,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -66,8 +68,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the backup resource, for example: urn:veeam:Backup:58c917c7-7b7a-41ff-8676-226656c35c05. |
 | Name | String | Name of the backup job parent to the backup, for example: SQL Backup. |
 | Platform | String | Type of a platform of a backup resource. Possible values:   * VMware — for protected VMware vSphere VMs. * HyperV — for protected Microsoft Hyper-V VMs. * vCloud — for protected VMware Cloud Director resources. * AgentForLinux — for machines protected with Veeam Agent for Linux. * AgentForWindows — for machines protected with Veeam Agent for Windows. * CustomPlatform — for Nutanix and other custom platforms. |
@@ -77,8 +80,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /repositories/{ID} | Up | URL of the [/repositories/{ID}](repositories_id.md) resource — a repository where the backup is stored. |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource parent to the backup. |
 | /backups/{ID} | Alternate | Alternate URL of the [/backups/{ID}](backups_id.md) resource. |
@@ -91,6 +95,7 @@ The example below returns an entity resource representation of a backup having I
 
 |  |
 | --- |
-| Request:  GET https://enterprise04.tech.local:9398/api/backups/2e734096-56ea-4f36-ac2a-15546518d26c?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  GET https://enterprise04.tech.local:9398/api/backups/2e734096-56ea-4f36-ac2a-15546518d26c?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <Backup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Href="https://enterprise04.tech.local:9398/api/backups/2e734096-56ea-4f36-ac2a-15546518d26c?format=Entity" Type="Backup" Name="Backup Job 3" UID="urn:veeam:Backup:2e734096-56ea-4f36-ac2a-15546518d26c" xmlns="http://www.veeam.com/ent/v1.0">     <Links>         <Link Href="https://enterprise04.tech.local:9398/api/repositories/7be12e58-d2ee-43c2-88d8-10fd4ea81ffe" Name="Backup Repository 1" Type="RepositoryReference" Rel="Up" />         <Link Href="https://enterprise04.tech.local:9398/api/backupServers/a490c017-2c1c-40ee-8bcf-73bcce6ab36f" Name="enterprise01.tech.local" Type="BackupServerReference" Rel="Up" />         <Link Href="https://enterprise04.tech.local:9398/api/backups/2e734096-56ea-4f36-ac2a-15546518d26c" Name="Backup Job 3" Type="BackupReference" Rel="Alternate" />         <Link Href="https://enterprise04.tech.local:9398/api/backups/2e734096-56ea-4f36-ac2a-15546518d26c/restorePoints" Type="RestorePointReferenceList" Rel="Down" />         <Link Href="https://enterprise04.tech.local:9398/api/backups/2e734096-56ea-4f36-ac2a-15546518d26c/backupFiles" Type="BackupFileReferenceList" Rel="Down" />     </Links>     <Platform>VMware</Platform>     <BackupType>Standard</BackupType> </Backup> |
 
+Page updated 2026-07-29
 
