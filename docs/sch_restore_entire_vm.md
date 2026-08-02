@@ -3,8 +3,8 @@ title: "Performing VM Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_entire_vm.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing VM Restore
@@ -16,22 +16,26 @@ To restore machines to Scale Computing HyperCore, you can use the following back
 
 * Backups of Scale Computing HyperCore VMs created by Veeam Plug-in for Scale Computing HyperCore
 
-* Backups of Nutanix AHV VMs created by Veeam Backup for Nutanix AHV
+* Backups of Nutanix AHV VMs created by Veeam Plug-in for Nutanix AHV
 
-* Backups of oVirt KVM VMs created by Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization
+* Backups of oVirt KVM VMs created by Veeam Plug-in for oVirt KVM
+* Backups of Proxmox VE VMs created by Veeam Plug-In for Proxmox VE
+
+* Backups of Xen VMs created by Veeam Plug-In for Xen
+* Backups of HPE Morpheus VM Essentials VMs created by Veeam Plug-in for HPE Morpheus VM Essentials
+* Backups of Sangfor aSV VMs created by Veeam Plug-in for Sangfor aSV
 
 * Backups of Microsoft Hyper-V and VMware vSphere VMs created by Veeam Backup & Replication
 
-* Backups of VMs created by VMware Cloud Director
+* Backups of VMware Cloud Director VMs created by Veeam Backup & Replication
 * Backups of Amazon EC2 instances created by Veeam Backup for AWS
 
 * Backups of Microsoft Azure VMs created by Veeam Backup for Microsoft Azure
 * Backups of Google Cloud VM instances created by Veeam Backup for Google Cloud
 
 * Backups of virtual and physical machines created by Veeam Agent for Microsoft Windows and Veeam Agent for Linux
-* Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE
 
-VM restore is supported only for backups stored in backup repositories, object storage repositories and on the performance, capacity and archive tier of a scale-out backup repository (except for backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent).
+VM restore is supported only for backups stored in backup repositories, object storage repositories and on the performance, capacity and archive tiers of scale-out backup repositories (except for backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent).
 
 |  |
 | --- |
@@ -49,4 +53,5 @@ To restore a protected VM, do the following:
 7. [Specify a restore reason](sch_restore_entire_vm_reason.md).
 8. [Verify restore settings](sch_restore_entire_vm_summary.md).
 
+Page updated 2026-07-16
 
