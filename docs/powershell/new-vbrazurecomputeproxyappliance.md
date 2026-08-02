@@ -3,8 +3,8 @@ title: "New-VBRAzureComputeProxyAppliance"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrazurecomputeproxyappliance.html"
-last_updated: "12/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRAzureComputeProxyAppliance
@@ -32,8 +32,9 @@ This cmdlet defines the proxy appliance settings for adding an Azure Archive rep
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | VMSize | Specifies the size of the proxy appliance. | Accepts the VBRAzureVMSize object. To create this object, run the [Get-VBRAzureVMSize](get-vbrazurevmsize.md) cmdlet. | True | Named | False |
 | Network | Specifies the network to which the proxy appliance appliance must be connected. | Accepts the VBRAzureVirtualNetwork object. To create this object, run the [Get-VBRAzureVirtualNetwork](get-vbrazurevirtualnetwork.md) cmdlet. | True | Named | False |
 | Subnet | Specifies the subnet for the proxy appliance. | Accepts the VBRAzureNetworkSubnet object. To create this object, run the [Get-VBRAzureVirtualNetworkSubnet](get-vbrazurevirtualnetworksubnet.md) cmdlet. | True | Named | False |
@@ -89,4 +90,5 @@ Related Commands
 * [Get-VBRAzureVirtualNetworkSubnet](get-vbrazurevirtualnetworksubnet.md)
 * [Get-VBRAzureResourceGroup](get-vbrazureresourcegroup.md)
 
+Page updated 2026-05-28
 
