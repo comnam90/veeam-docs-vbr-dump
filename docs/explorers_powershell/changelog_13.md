@@ -3,8 +3,8 @@ title: "v13 Changelog"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/changelog_13.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # v13 Changelog
@@ -18,4 +18,5 @@ In This Section
 
 * [Deprecated Cmdlets](deprecated_cmdlets_13.md)
 
+Page updated 2026-01-30
 
