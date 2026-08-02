@@ -3,8 +3,8 @@ title: "Backup Repositories with Rotated Drives"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_rotated.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Repositories with Rotated Drives
@@ -19,7 +19,7 @@ Limitations for Backup Repositories with Rotated Drives
 Backup repositories with rotated drives have the following limitations:
 
 * On one managed server, you must create only one repository with rotated drives.
-* The automount feature must be enabled on the Microsoft Windows server added as a a backup repository with rotated drives. This feature enables Microsoft Windows to assign the partition letter each time you swap the external hard drives. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/automount).
+* The automount feature must be enabled on the Microsoft Windows server added as a backup repository with rotated drives. This feature enables Microsoft Windows to assign the partition letter each time you swap the external hard drives. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/automount).
 * You cannot store archive full backups (GFS backups) created with backup jobs or backup copy jobs in backup repositories with rotated drives.
 * You cannot rescan backup repositories with rotated drives.
 * NFS backup repositories do not support rotated drives. If you enable the This repository is backed by rotated hard drives setting on the repository, Veeam Backup & Replication will ignore this setting.
@@ -33,4 +33,5 @@ In This Section
 * [How Repository with Rotated Drives Works](rotated_drives_hiw.md)
 * [Deploying Backup Repositories with Rotated Drives](rotated_drives_configure.md)
 
+Page updated 2026-07-23
 
