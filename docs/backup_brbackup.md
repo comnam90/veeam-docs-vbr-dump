@@ -3,8 +3,8 @@ title: "SAP on Oracle Backup Using Backint"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_brbackup.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SAP on Oracle Backup Using Backint
@@ -14,7 +14,7 @@ Veeam Plug-In for SAP on Oracle integrates with the BRBACKUP tool and transfers 
 
 For details on how the backup is performed, see [How Veeam Plug-In for SAP on Oracle Works](hiw_sap_orcl_plugin.md).
 
-To back up Oracle databases, you can use the interactive wizard of BRTOOLS or you can directly run the backup command using BRBACKUP. When you back up the database using the BRBACKUP tool, you must specify the path to the initialization profile file ($Oracle\_HOME/dbs/veeam\_initSID.sap) as the argument for the -p (-profile) parameter.
+To back up Oracle databases, you can use the interactive wizard of BRTOOLS or you can directly run the backup command using BRBACKUP. When you back up the database using the BRBACKUP tool, you must specify the path to the initialization profile file ($ORACLE\_HOME/dbs/veeam\_initSID.sap) as the argument for the -p (-profile) parameter.
 
 |  |
 | --- |
@@ -28,4 +28,5 @@ The following examples are only for demonstration purposes. To see the descripti
 * [Full Backup](sap_orcl_backint_full.md)
 * [Redo Logs Backup](sap_orcl_logs.md)
 
+Page updated 2026-07-13
 
