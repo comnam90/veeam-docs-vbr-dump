@@ -3,8 +3,8 @@ title: "Converting Backup Copy to Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy.html"
-last_updated: "10/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Converting Backup Copy to Backup
@@ -31,7 +31,7 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 
 |  |
 | --- |
-| OracleRMANConfigTool --promote-backup-copy-to-primary  Backup copies available for promotion to the primary backup target:  1. Backup Copy Job 1\ORCLSERV01 Oracle backup (Default Backup Repository)  Select a backup copy: 1  Changes to be applied to the RMAN configuration  CONFIGURE CHANNEL DEVICE TYPE SBT\_TAPE  PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VEEAMP~1\ORACLE~2.DLL'  FORMAT '94a7ac5a-2cb5-418b-8395-fb362d3aa182/RMAN\_%I\_%d\_%T\_%U.vab';  CONFIGURE CONTROLFILE AUTOBACKUP ON;  CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE SBT\_TAPE TO '%F\_RMAN\_AUTOBACKUP.vab';  CONFIGURE ARCHIVELOG BACKUP COPIES FOR DEVICE TYPE SBT\_TAPE TO 1;  CONFIGURE DATAFILE BACKUP COPIES FOR DEVICE TYPE SBT\_TAPE TO 1;    RMAN configuration to be applied:  SQL "alter system set backup\_tape\_io\_slaves=false deferred scope=both"; |
+| OracleRMANConfigTool --promote-backup-copy-to-primary  Backup copies available for promotion to the primary backup target:  1. Backup Copy Job 1\ORCLSERV01 Oracle backup (Default Backup Repository)  Select a backup copy: 1  Changes to be applied to the RMAN configuration  CONFIGURE CHANNEL DEVICE TYPE SBT\_TAPE  PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll'  FORMAT '94a7ac5a-2cb5-418b-8395-fb362d3aa182/RMAN\_%I\_%d\_%T\_%U.vab';  CONFIGURE CONTROLFILE AUTOBACKUP ON;  CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE SBT\_TAPE TO '%F\_RMAN\_AUTOBACKUP.vab';  CONFIGURE ARCHIVELOG BACKUP COPIES FOR DEVICE TYPE SBT\_TAPE TO 1;  CONFIGURE DATAFILE BACKUP COPIES FOR DEVICE TYPE SBT\_TAPE TO 1;  RMAN configuration to be applied:  SQL "alter system set backup\_tape\_io\_slaves=false deferred scope=both"; |
 
 1. Converting a backup copy into regular backup file, requires changes in the RMAN configuration. You can allow the command to change RMAN configuration automatically, or you can change it manually. Select one of the options:
 
@@ -39,4 +39,5 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 | --- |
 | Proceed with the action?  1. Promote backup copy destination to the primary backup target and apply required configuration to RMAN automatically  2. Promote backup copy destination to the primary backup target and export required RMAN configuration (RMAN will have to be configured manually)  3. Cancel  Enter selection: 1  Promoting backup copy destination  Configuring RMAN  Done |
 
+Page updated 2026-07-13
 
