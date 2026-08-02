@@ -3,8 +3,8 @@ title: "Deployment Procedure for Linux Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appendix_a_centralized_hotfix_deployment_linux.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deployment Procedure for Linux Computers
@@ -44,7 +44,7 @@ For Debian / Ubuntu
 | --- |
 | C:\ProgramData\Veeam\Agents\val |
 
-1. In the ValPackageIndex.xml file, locate packages that you want to update. Replace their names with names of Veeam Agent for Linux packages you saved in Step 2. After that, save changes and close the index file. For more information on deploying a hotfix for Veeam Agent for Linux version 13.0.1, see [Example 1](#example1).
+1. In the ValPackageIndex.xml file, locate packages that you want to update. Replace their names with names of Veeam Agent for Linux packages you saved in Step 2. After that, save changes and close the index file. For more information on deploying a hotfix for Veeam Agent for Linux version 13.1, see [Example 1](#example1).
 
 1. Rescan the protection group:
 
@@ -58,16 +58,16 @@ During the rescan, Veeam Backup & Replication will use updated packages specifie
 
 Example 1: Deploying a Hotfix for Veeam Agent for Linux Using General Procedure
 
-In this example, Veeam issued a hotfix for Veeam Agent for Linux 13.0.1 for RHEL 9 and you want to deploy it on your Veeam Agent computers.
+In this example, Veeam issued a hotfix for Veeam Agent for Linux 13.1 for RHEL 9 and you want to deploy it on your Veeam Agent computers.
 
 The hotfix consists of the following Veeam Agent packages:
 
-* blksnap-13.0.1.99-1.noarch.rpm
-* blksnap-13.0.1.99-1.noarch.rpm.manifest.xml
-* veeam-13.0.1.99-1.el9.x86\_64.rpm
-* veeam-13.0.1.99-1.el9.x86\_64.rpm.manifest.xml
-* kmod-blksnap-13.0.1.99-1.el9.x86\_64.rpm
-* kmod-blksnap-13.0.1.99-1.el9.x86\_64.rpm.manifest.xml
+* blksnap-13.1.0.999-1.noarch.rpm
+* blksnap-13.1.0.999-1.noarch.rpm.manifest.xml
+* veeam-13.1.0.999-1.el9.x86\_64.rpm
+* veeam-13.1.0.999-1.el9.x86\_64.rpm.manifest.xml
+* kmod-blksnap-13.1.0.999-1.el9.x86\_64.rpm
+* kmod-blksnap-13.1.0.999-1.el9.x86\_64.rpm.manifest.xml
 
 To deploy the hotfix, you need to do the following:
 
@@ -89,13 +89,13 @@ You do not need to delete obsolete Veeam Agent for Linux packages you want to up
 1. Open the ValPackageIndex.xml file.
 2. Locate the packages that you want to update and replace their version and names with version and names of the packages you saved in step 2.
 
-Usually, the packages that are available as a hotfix have a build version that is different from the obsolete packages. In this scenario, obsolete packages have the 13.0.1.95 build version and the updated packages have the 13.0.1.99 build version.
+Usually, the packages that are available as a hotfix have a build version that is different from the obsolete packages. In this scenario, obsolete packages have the 13.1.0.995 build version and the updated packages have the 13.1.0.999 build version.
 
 In the example below, replaced package version and names are highlighted in green:
 
 |  |
 | --- |
-| ...  <Distribution id="RHEL" displayName="Red Hat">  ...    <!-- EL9 -->    <Version majorVersions="9">       <Packages version="13.0.1.99" arch="x64">          <driver\_noarch value="blksnap-13.0.1.99-1.noarch.rpm"/>          <driver\_uefi\_cert value="veeamsnap-ueficert-13.0.1.95-1.noarch.rpm"/>          <driver\_bin value="kmod-blksnap-13.0.1.99-1.el9.x86\_64.rpm"/>          <veeam value="veeam-13.0.1.99-1.el9.x86\_64.rpm"/>       </Packages>    </Version>  </Distribution>  .... |
+| ...  <Distribution id="RHEL" displayName="Red Hat">  ...     <!-- EL9 -->     <Version majorVersions="9">         <Packages version="13.1.0.999" arch="x64">            <driver\_noarch value="blksnap-13.1.0.999-1.noarch.rpm"/>            <driver\_uefi\_cert value="veeamsnap-ueficert-13.1.0.995-1.noarch.rpm"/>            <driver\_bin value="kmod-blksnap-13.1.0.999-1.el9.x86\_64.rpm"/>           <veeam value="veeam-13.1.0.999-1.el9.x86\_64.rpm"/>         </Packages>      </Version>  </Distribution>  .... |
 
 1. Save changes and close the index file.
 
@@ -103,12 +103,12 @@ In the example below, replaced package version and names are highlighted in gree
 
 Example 2: Deploying a Hotfix for Veeam Agent for Linux Using Simplified Procedure
 
-In this example, Veeam issued a hotfix for Veeam Agent for Linux 13.0.1 for RHEL 9 and you want to deploy it on your Veeam Agent computers.
+In this example, Veeam issued a hotfix for Veeam Agent for Linux 13.1 for RHEL 9 and you want to deploy it on your Veeam Agent computers.
 
 The hotfix consists of the following Veeam Agent packages:
 
-* kmod-blksnap-patch-13.0.1.99-1.el9.x86\_64.rpm
-* kmod-blksnap-patch-13.0.1.99-1.el9.x86\_64.rpm.manifest.xml
+* kmod-blksnap-patch-13.1.0.999-1.el9.x86\_64.rpm
+* kmod-blksnap-patch-13.1.0.999-1.el9.x86\_64.rpm.manifest.xml
 
 To deploy the hotfix, you need to do the following:
 
@@ -122,4 +122,5 @@ To deploy the hotfix, you need to do the following:
 
 1. Rescan the protection group.
 
+Page updated 2026-07-20
 
