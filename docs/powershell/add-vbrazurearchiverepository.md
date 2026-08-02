@@ -3,8 +3,8 @@ title: "Add-VBRAzureArchiveRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazurearchiverepository.html"
-last_updated: "9/2/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRAzureArchiveRepository
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRAzureArchiveRepository -Connection <VBRAzureBlobConnection> -AzureBlobFolder <VBRAzureBlobFolder> [-EnableBackupImmutability] [-AzureProxySpec <VBRAzureComputeProxyAppliance>] [-Name <String>] [-Description <String>] [-UseInstantRetrieval] [-Force] [<CommonParameters>] |
+| Add-VBRAzureArchiveRepository -Connection <VBRAzureBlobConnection> -AzureBlobFolder <VBRAzureBlobFolder> [-EnableBackupImmutability] [-AzureProxySpec <VBRAzureComputeProxyAppliance>] [-Name <String>] [-Description <String>] [-UseInstantRetrieval] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-EnableReadOnlyMode] [-Force] [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,8 +32,9 @@ This cmdlet adds Azure Archive repository to the backup infrastructure.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Connection | Specifies an active session with an Azure Archive repository that you want to add to the backup infrastructure. | Accepts the VBRAzureBlobConnection object. To create this object, run the [Connect-VBRAzureBlobService](connect-vbrazureblobservice.md) cmdlet and set the ArchiveTier property as the ServiceType parameter value. | True | Named | True |
 | AzureBlobFolder | Specifies an Azure Blob folder. Veeam Backup & Replication will move backup files into this folder. | Accepts the VBRAzureBlobFolder object. To create this object, run the [New-VBRAzureBlobFolder](new-vbrazureblobfolder.md) cmdlet. | True | Named | False |
 | EnableBackupImmutability | Defines that the cmdlet will enable the immutability option.  Default: False. | SwitchParameter | False | Named | False |
@@ -41,6 +42,9 @@ Parameters
 | Name | Specifies a name of an Azure Archive repository. The cmdlet will add an archive repository with this name. | String | False | Named | False |
 | Description | Specifies a description of an Azure Archive repository. The cmdlet will add an archive repository with this description. | String | False | Named | False |
 | UseInstantRetrieval | Defines that the cmdlet will create a repository where data blocks are marked with the cool access tier.  Note: If you do not provide the UseInstantRetrieval parameter, the cmdlet will create a repository where blocks are marked as the archive access tier.  Default: False. | SwitchParameter | False | Named | False |
+| ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
+| ImmutabilityPeriod | For the EnableBackupImmutability parameter.  Defines the immutability period in days.  Default: 30 days.  Maximum: 999 days. | Int32 | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -106,4 +110,5 @@ Related Commands
 * [Get-VBRAzureResourceGroup](get-vbrazureresourcegroup.md)
 * [New-VBRAzureComputeProxyAppliance](new-vbrazurecomputeproxyappliance.md)
 
+Page updated 2026-05-27
 
