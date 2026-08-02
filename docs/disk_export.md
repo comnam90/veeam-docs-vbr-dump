@@ -3,8 +3,8 @@ title: "Disk Export"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_export.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Disk Export
@@ -44,6 +44,9 @@ You can restore disks from the following backups:
 
 * Backups of HPE Morpheus VM Essentials VMs created by [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
 
+* Backups of Xen VMs created by [Veeam Plug-in for Xen](xen.md).
+* Backups of Sangfor aSV VMs created by [Veeam Plug-in for Sangfor aSV](sangfor.md).
+
 \* - Available on Microsoft Windows-based backup server.
 
 Related Topics
@@ -51,4 +54,5 @@ Related Topics
 * [Exporting Disks](exporting_disks.md)
 * [Restoring Volumes from Veeam Agent Backups](integration_volume_restore.md)
 
+Page updated 2026-07-15
 
