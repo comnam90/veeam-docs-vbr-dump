@@ -3,8 +3,8 @@ title: "Installing and Updating Plug-Ins on Linux-Based Backup Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_install_plugin_linux.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing and Updating Plug-Ins on Linux-Based Backup Server
@@ -36,6 +36,8 @@ After the installation finishes, the plug-in appears in the list of available co
 
 [![Installing and Updating Plug-Ins on Linux-Based Backup Server](images/plugin_upload_bundle.webp)](images/plugin_upload_bundle.webp)
 
+Some storage system vendors provide the capability to configure additional integration options, such as limiting the scope of storage systems involved in the integration, specifying the primary node in active-active replication scenarios or others. After you add the storage system to the backup infrastructure, edit the configuration file and specify the options provided by the vendor. For the Linux-based backup server, edit the /etc/veeam/plugins/storages/<plugin-name> configuration file as described in [Performing Maintenance Tasks](hmc_perform_maintenance_tasks.md#config). For the Microsoft Windows-based backup server, edit the C:\ProgramData\Veeam\Storage\<Plugin Name> configuration file. For more information on the file format and the list of available options, see the vendor documentation of the plug-in.
+
 After you install the plug-in, you must configure the backup infrastructure to be able to use storage snapshots for data protection. For more information, see [Infrastructure Overview](storage_infrastructure.md).
 
 Updating Plug-in
@@ -64,4 +66,5 @@ Related Topics
 * [Infrastructure Overview](storage_infrastructure.md)
 * [Backup & Replication Console](backup_console.md)
 
+Page updated 2026-07-01
 
