@@ -3,17 +3,18 @@ title: "Appendix A. Deprecated Functionality"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_deprecated_features.html"
-last_updated: "1/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Appendix A. Deprecated Functionality
 
 
-Starting from version 8, Veeam Plug-in for Nutanix AHV comes without the backup appliance, the following changes have been introduced to the product functionality:
+Starting from version 8, Veeam Plug-in for Nutanix AHV comes without the backup appliance. The following changes have been introduced to the product functionality:
+
+Appendix A. Deprecated Functionality
 
 | Functionality | Availability in Versions Prior to 8 | Availability in Versions 8 and 9 |
-| --- | --- | --- |
 | Managing the backup appliance | [Veeam Backup & Replication console](https://helpcenter.veeam.com/docs/vbahv/userguide/manage_proxy.html?ver=7) | — |
 | Managing backup appliance users | [Backup appliance web console](https://helpcenter.veeam.com/docs/vbahv/userguide/accounts.html?ver=7) | — |
 | Backing up and restoring the backup appliance configuration | [Veeam Backup & Replication console](https://helpcenter.veeam.com/docs/vbahv/userguide/config_backup_restore.html?ver=7) | — |
@@ -30,4 +31,5 @@ Starting from version 8, Veeam Plug-in for Nutanix AHV comes without the backup 
 | Performing disk restore | [Backup appliance web console](https://helpcenter.veeam.com/docs/vbahv/userguide/restore_disks.html?ver=7) | [Veeam Backup & Replication console](ahv_restore_disks.md) |
 | Instant recovery | [Veeam Backup & Replication console](https://helpcenter.veeam.com/docs/vbahv/userguide/instant_recovery.html?ver=7) | [Veeam Backup & Replication console](ahv_instant_recovery.md) |
 
+Page updated 2026-07-16
 
