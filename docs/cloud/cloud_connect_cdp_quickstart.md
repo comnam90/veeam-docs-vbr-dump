@@ -3,8 +3,8 @@ title: "Getting Started with CDP"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_cdp_quickstart.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Getting Started with CDP
@@ -72,4 +72,5 @@ Alternatively, the tenant can rescan the SP. Cloud host provided to the tenant w
 1. Create a CDP policy targeted at a cloud host. For details, see [Creating CDP Policies for VMware vSphere](creating_cdp_policies.md) and [Creating Universal CDP Policies](creating_universal_cdp_policies.md).
 2. In case one or more VMs in the production site become unavailable, the tenant can perform failover tasks with VM replicas on the cloud host. For details, see [Performing Full Site Failover](performing_full_site_failover.md) and [Performing Partial Site Failover](performing_partial_site_failover.md).
 
+Page updated 2026-07-29
 
