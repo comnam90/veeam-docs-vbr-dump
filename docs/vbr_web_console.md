@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Web UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vbr_web_console.html"
-last_updated: "9/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup & Replication Web UI
@@ -15,7 +15,7 @@ The Veeam Backup & Replication web UI is a browser-based interface that enables 
 |  |
 | --- |
 | Important |
-| Consider the following:   * The Veeam Backup & Replication web UI is not available in the Community Edition. A valid license is required to use this functionality. * Only the Veeam Backup Administrator can log in to the web UI. |
+| Consider the following:   * The Veeam Backup & Replication web UI is not available in the Community Edition. A valid license is required to use this functionality. * Only users with the Backup Administrator role can log in to the web UI. |
 
 The overall look and feel of the Veeam Backup & Replication web UI is consistent with the Veeam product family, ensuring familiarity for users of the [Veeam Backup & Replication desktop application](vbr_ui.md) and [Veeam Enterprise Manager UI](https://helpcenter.veeam.com/docs/backup/em/em_know_ui.html?ver=13).
 
@@ -136,4 +136,5 @@ Clicking the gear icon in the top bar opens the Configuration menu, which groups
 * Appearance — [Customize the web UI appearance](change_color_theme_web.md): color scheme (light, dark, or system), navigation menu layout, and interface preferences.
 * About — View information about the installed Veeam Backup & Replication version, access the [Veeam Updater](update_appliances.md) and [Veeam Host Management](hmc_about.md) interfaces, open the Swagger documentation, download the [Veeam Backup & Replication console](vbr_ui.md) [installer](install_console.md), collect and download logs, access the [Veeam Help Center](https://helpcenter.veeam.com/), [Veeam R&D Forums](https://forums.veeam.com/) and [Veeam Customer Support Portal](https://www.veeam.com/support.html).
 
+Page updated 2026-07-10
 
