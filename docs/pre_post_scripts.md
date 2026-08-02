@@ -3,8 +3,8 @@ title: "Pre-Freeze and Post-Thaw Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pre_post_scripts.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Pre-Freeze and Post-Thaw Scripts
@@ -22,8 +22,8 @@ You must create scripts beforehand and specify paths to them in the job settings
 
 When the job starts, Veeam Backup & Replication uploads scripts to the VM guest OS and executes them under the account specified in the Guest OS credentials section of the job settings.
 
-* Scripts for Microsoft Windows VMs are uploaded to \\<vmname>\admin$ over the network or VIX API/vSphere Web Services if Veeam Backup & Replication fails to connect to the VM guest OS over the network. Scripts are executed from the C:\Windows directory.
-* Scripts for Linux VMs are uploaded over SSH or VIX API/vSphere Web Services if the SSH connection fails. Scripts are executed from the /tmp directory. If you use Renci or Rebex SSH library, and the [Elevate account privileges automatically](credentials_manager_linux_console.md) check box is selected for the user that you have specified in Guest OS credentials, the scripts will first be uploaded to the /home/<username> and then moved to /tmp.
+* Scripts for Microsoft Windows VMs are uploaded to \\<vmname>\admin$ over the network or vSphere Web Services if Veeam Backup & Replication fails to connect to the VM guest OS over the network. Scripts are executed from the C:\Windows directory.
+* Scripts for Linux VMs are uploaded over SSH or vSphere Web Services if the SSH connection fails. Scripts are executed from the /tmp directory. If you use Renci or Rebex SSH library, and the [Elevate account privileges automatically](credentials_manager_linux_console.md) check box is selected for the user that you have specified in Guest OS credentials, the scripts will first be uploaded to the /home/<username> and then moved to /tmp.
 
 The script is considered to be executed successfully if "0" is returned.
 
@@ -49,6 +49,7 @@ Veeam Backup & Replication has the following limitations for pre-freeze and post
 * If you use a Linux-based backup server, before you can use a script, you must upload it:
 
 * In the Veeam Backup & Replication console, navigate to the Files node.
+
 * Copy the script files to the /var/lib/veeam/scripts folder on the backup server.
 
 Related Topics
@@ -57,4 +58,5 @@ Related Topics
 * [Creating Replication Jobs](replica_job.md)
 * [Copying VMs](copy_job.md)
 
+Page updated 2026-07-29
 
