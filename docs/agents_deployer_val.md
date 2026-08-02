@@ -3,8 +3,8 @@ title: "Deploying Veeam Agent for Linux Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_deployer_val.html"
-last_updated: "3/18/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deploying Veeam Agent for Linux Using Veeam Deployment Kit
@@ -28,6 +28,12 @@ To deploy Veeam Agent for Linux using Veeam Deployment Kit, perform the followin
 
 1. Open the Inventory view.
 2. Click the Physical and Cloud Infrastructure node in the inventory pane and click Create Veeam Deployment Kit on the ribbon. Alternatively, right-click the Physical and Cloud Infrastructure node in the inventory pane and select Create Veeam Deployment Kit.
+3. In the Create Deployment Kit window, specify a path to the folder to which Veeam Backup & Replication will export the deployment kit files.
+
+* Using Veeam Backup & Replication web UI:
+
+1. In the management pane, click Protection Groups.
+2. From the Other drop-down list, select Create Deployment Kit.
 3. In the Create Deployment Kit window, specify a path to the folder to which Veeam Backup & Replication will export the deployment kit files.
 
 1. On the Veeam Agent computer side, install the uploaded files. You can do this in one of the following ways:
@@ -61,7 +67,7 @@ where <path> is the full path to the Certificate directory that contains the cer
 1. At the Type step of the wizard, select Individuals computers.
 2. At the Computers step of the wizard, specify a computer and select the Connect using certificate-based authentication method to connect to the computer.
 
-To learn more, see [Creating Protection Group for Individual Computers](protection_group_individual.md).
+To learn more, see [Protection Groups](agents_protection_groups.md).
 
 |  |
 | --- |
@@ -70,4 +76,5 @@ To learn more, see [Creating Protection Group for Individual Computers](protecti
 
 After you create the protection group, Veeam Backup & Replication will rescan the protection group. During the rescan operation, Veeam Backup & Replication will replace the Veeam Deployer Service temporary certificate, connect to the Veeam Deployer Service and install Veeam Agent. To learn more, see [Rescan Job](agents_discovery_job.md).
 
+Page updated 2026-07-01
 
