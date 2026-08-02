@@ -3,8 +3,8 @@ title: "Constructing HierarchyObjRefType"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/constructing_hierarchyobjreftype.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Constructing HierarchyObjRefType
@@ -80,4 +80,5 @@ The HierarchyObjRefType string will then look in the following way:
 | Note |
 | In addition to configuring the HierarchyObjRefType string manually, you can get the HierarchyObjRefType string for the necessary object in the virtual infrastructure hierarchy using the [/lookupSvc](lookupsvc.md) resource. |
 
+Page updated 2026-07-29
 
