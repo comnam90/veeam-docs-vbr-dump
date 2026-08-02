@@ -3,8 +3,8 @@ title: "Set-VBRSimpleRetentionPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsimpleretentionpolicy_azure.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRSimpleRetentionPolicy
@@ -72,4 +72,5 @@ Related Commands
 * [Get-VBRJob](get-vbrjob.md)
 * [Get-VBRRetentionPolicy](get-vbrretentionpolicy.md)
 
+Page updated 2026-07-30
 
