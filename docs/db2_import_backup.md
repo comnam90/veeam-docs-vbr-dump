@@ -3,8 +3,8 @@ title: "Importing Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_import_backup.html"
-last_updated: "4/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Importing Backup Files
@@ -53,21 +53,42 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 
 [![Rescan Backup Repository](images/plugins_repo_rescan.webp)](images/plugins_repo_rescan.webp "Rescan Backup Repository")
 
-1. On the IBM Db2 server, set the new repository as a target in the Veeam Plug-In settings:
+1. On the IBM Db2 server, set the new repository as a target in the Veeam Plug-In settings. Depending on the OS you are using, run one of the following commands:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --set-repositories  Available backup repositories: |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --set-repository |
 
-1. Start the Veeam Plug-In configuration tool with the following parameter:
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --set-repository |
+
+|  |
+| --- |
+| Available backup repositories: 1. serv55.tech.local 2. serv07\_repo Enter repository number: 1 |
+
+1. Start the Veeam Plug-In configuration tool using one of the following commands depending on the OS you are using:
 
 |  |
 | --- |
 | Note |
 | After you import the backup, map the imported backup to continue to back up to this repository. Using the Veeam Plug-In configuration tools, select the new repository as the target. |
 
+* For Linux or Unix:
+
 |  |
 | --- |
-| DB2ConfigTool --map-backup |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --map-backup |
 
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --map-backup |
+
+Page updated 2026-07-02
 
