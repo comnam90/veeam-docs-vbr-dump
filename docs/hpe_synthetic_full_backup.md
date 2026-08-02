@@ -3,8 +3,8 @@ title: "Synthetic Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_synthetic_full_backup.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Synthetic Full Backup
@@ -34,6 +34,7 @@ If the backup job is not scheduled or is disabled, Veeam Backup & Replication wi
 
 Related Topics
 
-[Creating Backup Jobs](hpe_backup_job_create_destination.md#advanced_job_settings)
+[Creating Backup Jobs](hpe_backup_job_create_advanced.md)
 
+Page updated 2026-07-22
 
