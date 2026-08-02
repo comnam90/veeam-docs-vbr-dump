@@ -3,14 +3,19 @@ title: "Resource Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_resource_planning.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Resource Planning
 
 
 Before you protect your environment with Veeam Plug-In, plan the resources for the components of your backup infrastructure.
+
+|  |
+| --- |
+| Tip |
+| For recommended and consistently regression tested maximums for a number of Veeam Plug-Ins per Veeam Backup & Replication server, see [Veeam Data Platform 13 Recommended Maximums](https://helpcenter.veeam.com/docs/vbr/recommended_maximums/limitations.html?ver=13#veeam-backup---replication-server-application-plug-ins). |
 
 Backup Server
 
@@ -30,4 +35,5 @@ We recommend planning for 1 to 3 CPU cores and 0.5 to 1 GB RAM of resource consu
 
 Recommended resource values were measured on 3rd Generation Intel Xeon Scalable processors. Newer processor generations typically require fewer resources, while older processor generations may require more resources.
 
+Page updated 2026-07-03
 
