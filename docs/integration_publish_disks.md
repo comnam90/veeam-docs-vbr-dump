@@ -3,21 +3,17 @@ title: "Performing Disk Publish"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_disks.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Disk Publish
 
 
-Before you publish disks, [check prerequisites](integration_publish_before.md). Then use the Publish Disks wizard.
+You can publish disks from Veeam Agent backups in one of the following ways:
 
-1. [Launch the wizard](integration_publish_wizard.md).
-2. [Select a Veeam Agent computer whose disks you want to publish](integration_publish_computer.md).
-3. [Select a restore point](integration_publish_point.md).
-4. [Select disks](integration_publish_disk.md).
-5. [Specify the target server](integration_publish_server.md).
-6. [Specify a reason for disk publishing](integration_publish_reason.md).
-7. [Finish working with the wizard](integration_publish_finish.md).
+* [Performing Disk Publish Using Console](integration_publish_disks_console.md)
+* [Performing Disk Publish Using Web UI](integration_publish_disks_web.md)
 
+Page updated 2026-05-21
 
