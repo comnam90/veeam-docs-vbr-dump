@@ -3,8 +3,8 @@ title: "Step 5c. Choose Guest Interaction Proxy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_proxy.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5c. Choose Guest Interaction Proxy
@@ -14,7 +14,7 @@ To produce transactionally consistent backups and to perform file system indexin
 
 By default, Veeam Backup & Replication automatically chooses which guest interaction proxy to use for each of the processed VMs based on network settings and rules listed in section [Guest Interaction Proxies](guest_interaction_proxy.md). You can also manually limit the list of servers that may be used as proxies — to do that, click Choose, select the Prefer the following guest interaction proxy servers option and then select check boxes next to the necessary servers.
 
-For a server to be displayed in the list of available log shipping servers, it must be added to the backup infrastructure as described in sections [Adding Microsoft Windows Servers](add_windows_server.md) and [Adding Linux Servers](add_linux_server.md).
+For a server to be displayed in the list of available guest interaction proxies, it must be added to the backup infrastructure as described in sections [Adding Microsoft Windows Servers](add_windows_server.md) and [Adding Linux Servers](add_linux_server.md).
 
 |  |
 | --- |
@@ -23,4 +23,5 @@ For a server to be displayed in the list of available log shipping servers, it m
 
 [![Step 5c. Choose Guest Interaction Proxy](images/sch_backup_job_create_gp_proxy.webp)](images/sch_backup_job_create_gp_proxy.webp)
 
+Page updated 2026-07-16
 
