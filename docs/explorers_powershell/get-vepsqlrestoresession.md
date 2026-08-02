@@ -3,8 +3,8 @@ title: "Get-VEPSQLRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vepsqlrestoresession.html"
-last_updated: "1/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VEPSQLRestoreSession
@@ -39,7 +39,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -57,11 +57,12 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to get a specific restore session started to perform operations with PostgreSQL instances.  |  | | --- | | $session = Get-VEPSQLRestoreSession  $session[0] |  Perform the following steps:   1. Run the Get-VEPSQLRestoreSession cmdlet. Save the result to the $session variable. The cmdlet will return an array of active restore sessions.  1. Specify the necessary ordinal number of the restore session for the $session variable. In our example, it is the first restore session in the array. |
+| This example shows how to get a specific restore session started to perform operations with PostgreSQL instances.  |  | | --- | | $session = Get-VEPSQLRestoreSession  $session[0] |  Perform the following steps:   1. Run the Get-VEPSQLRestoreSession cmdlet. Save the result to the $session variable. The cmdlet will return an array of active restore sessions.  1. Specify the necessary ordinal number of the restore session for the $session variable. In this example, it is the first restore session in the array. |
 
 Related Commands
 
 * [Start-VEPSQLRestoreSession](start-vepsqlrestoresession.md)
 * [Stop-VEPSQLRestoreSession](stop-vepsqlrestoresession.md)
 
+Page updated 2026-01-30
 
