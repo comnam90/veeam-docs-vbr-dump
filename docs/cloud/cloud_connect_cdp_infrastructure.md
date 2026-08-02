@@ -3,8 +3,8 @@ title: "CDP Infrastructure in Veeam Cloud Connect"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_cdp_infrastructure.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # CDP Infrastructure in Veeam Cloud Connect
@@ -113,4 +113,5 @@ Related Topics
 
 [Getting Started with CDP](cloud_connect_cdp_quickstart.md)
 
+Page updated 2026-07-29
 
