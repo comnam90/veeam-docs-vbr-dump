@@ -3,29 +3,44 @@ title: "Immutability for Archive Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_archive_tier.html"
-last_updated: "12/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Immutability for Archive Tier
 
 
-Veeam Backup & Replication allows you to prohibit deletion of data from the archive extent by making that data temporarily immutable. It is done for increased security: immutability protects your data from loss as a result of attacks, malware activity or any other injurious actions.
+Veeam Backup & Replication allows you to prohibit deletion of data from the archive extent by making that data temporarily immutable. Immutability protects your data from loss as a result of attacks, malware activity or any other injurious actions.
 
-You can enable immutability for data stored in Amazon S3 Glacier, S3-compatible with data archiving and Microsoft Azure Archive Storage repositories used as archive extents of the scale-out backup repository. After you enable immutability, Veeam Backup & Replication will prohibit data deletion from the archive tier until the immutability expiration date comes.
+You can enable immutability for data stored in the following repositories when they are used as archive extents of the scale-out backup repository:
+
+* Amazon S3 Glacier.
+* S3-compatible with data archiving.
+* Microsoft Azure Archive Storage.
+
+After you enable immutability, Veeam Backup & Replication prohibits data deletion from the archive extent until the immutability period expires. The duration of the immutability period depends on the immutability mode configured for the archive extent.
 
 |  |
 | --- |
-| Note |
-| Consider the following:   * When you enable immutability for the archive tier, keep in mind that only the settings of the archive extents will be taken into account. The settings of the capacity extents and of the original data blocks will be ignored. * The immutability period for backups with GFS flags depends on multiple settings of a scale-out backup repository. For more information, see the [GFS Backups Immutability Period](gfs_immutability_sobr.md) section. |
+| Notes |
+| Consider the following:   * When you enable immutability for the archive tier, only the settings of the archive extent are taken into account. The settings of the capacity extents and of the original data blocks are ignored. * The immutability period for backups with GFS flags depends on multiple settings of a scale-out backup repository. For more information, see [GFS Backups Immutability Period](gfs_immutability_sobr.md). |
 
-For Amazon S3 Glacier, S3-compatible with data archiving and Microsoft Azure Archive Storage, all the types of files that are suitable for archive storage can be made immutable:
+Immutability Modes
 
-* Backup files with GFS flags assigned: in case GFS retention is extended in the backup job or backup copy job settings, the immutability period for existing backup files will be prolonged at the end of the archiving session. For more information about GFS retention policy, see [Long-Term Retention Policy (GFS)](gfs_retention_policy.md).
+You can select one of the following immutability mode for the archive extent, when you add the object storage repository to the backup infrastructure:
+
+* For the entire duration of their retention policy — in this case, the immutability period depends on the GFS retention of the backup:
+
+* If the GFS retention period is shorter than the minimum immutability period configured for the repository, the minimum immutability period applies.
+* If the GFS retention period is longer, the backup is kept for the entire GFS period.
+
+* Minimum immutability — the immutability period always equals the minimum immutability period configured for the repository, ignoring the GFS retention of the backup.
+
+For Amazon S3 Glacier, S3-compatible with data archiving, Veeam Data Cloud Vault Archive and Microsoft Azure Archive Storage, all types of files that are suitable for archive storage can be made immutable:
+
+* Backup files with GFS flags assigned. If GFS retention is extended in the backup job or backup copy job settings, the immutability period for existing backup files will be prolonged at the end of the archiving session. For more information on GFS retention policy, see [Long-Term Retention Policy (GFS)](gfs_retention_policy.md).
 * VeeamZIP backup files with specified retention (deletion date). For more information, see [Creating VeeamZIP Backups](create_veeamzip.md).
 * Exported backup files with specified retention (deletion date). For more information, see [Exporting Backups](exporting_backups.md).
-
-The immutability period of a backup file will be equal to its retention period at the moment of archiving. If the retention period is not specified for VeeamZIP backup files or exported backup files, such files will not be made immutable.
 
 Enabling Immutability
 
@@ -41,5 +56,10 @@ Related Topics
 
 * [Immutability for Scale-Out Backup Repositories](immutability_sobr.md)
 * [Adding Amazon S3 Glacier Storage](osr_amazon_glacier_adding.md)
+* [Adding Azure Archive Storage](osr_adding_blob_storage_archive_tier.md)
+* [Adding Veeam Data Cloud Vault Archive](veeam_data_cloud_vault_archive.md)
+* [Adding S3 Compatible with Data Archiving](compatible_glacier_add.md)
+* [GFS Backups Immutability Period](gfs_immutability_sobr.md)
 
+Page updated 2026-07-23
 
