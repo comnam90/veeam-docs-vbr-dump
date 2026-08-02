@@ -3,8 +3,8 @@ title: "Backup Policy Application Methods"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_policy_apply.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Policy Application Methods
@@ -24,7 +24,7 @@ There are two methods to start the policy application process:
 Veeam Backup & Replication applies the backup policy to protected computers at the following events:
 
 * At the time when the backup policy is created.
-* At the time when you start the backup process manually in the Veeam Backup & Replication console.
+* At the time when you start the backup process manually in Veeam Backup & Replication.
 * At the time when Veeam Backup & Replication performs scheduled rescan of protection groups added to the backup policy. Veeam Backup & Replication automatically rescans a protection group upon schedule specified in the protection group settings.
 
 |  |
@@ -59,4 +59,5 @@ During the synchronization session, Veeam Agent performs the following operation
 * If the protected computer was added to a new backup policy, Veeam Agent creates a new backup job on the protected computer.
 * If the protected computer was removed from the backup policy, Veeam Agent removes the Veeam Agent backup job on the protected computer.
 
+Page updated 2026-07-20
 
