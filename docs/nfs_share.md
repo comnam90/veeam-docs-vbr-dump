@@ -3,8 +3,8 @@ title: "NFS Share"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/nfs_share.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # NFS Share
@@ -22,7 +22,7 @@ To communicate with an NFS backup repository, Veeam Backup & Replication uses tw
 |  |
 | --- |
 | Note |
-| Windows-based gateway servers cannot be used for NFS shares with krb5i and krb5p support. |
+| Microsoft Windows-based gateway servers cannot be used for NFS shares with krb5i and krb5p support. |
 
 An NFS share cannot host Veeam Data Movers. For this reason, to communicate with the NFS share, you need to deploy a gateway server. Veeam Backup & Replication will automatically deploy a Veeam Data Mover on this gateway server. For more information, see [Gateway Servers](gateway_server.md).
 
@@ -80,7 +80,9 @@ Note that the suffix indicating the NFS version in the NFS share properties may 
 
 Related Topics
 
+* [Immutability for NFS Backup Repositories](nfs_immutability.md)
 * [Adding NFS Repositories](nfs_repository_add.md)
 * [Gateway Servers](gateway_server.md)
 
+Page updated 2026-07-20
 
