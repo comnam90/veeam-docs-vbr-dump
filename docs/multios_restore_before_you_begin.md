@@ -3,8 +3,8 @@ title: "Linux File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/multios_restore_before_you_begin.html"
-last_updated: "3/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Linux File Recovery
@@ -21,7 +21,7 @@ Infrastructure Components
 
 * Veeam Backup & Replication must have access over the network to the guest OS of the target workload or direct access to the vCenter or ESXi host where the target workload resides to deploy a coordination process. The coordination process performs a number of administrative actions on the target workload guest OS, for example, it collects information about mount points.
 
-* The mount server, helper host and helper appliance must have access over the network to a VM whose files you recover or direct access to the vCenter server or ESXi host where the VM resides. If a network connection cannot be established, the mount server connects to the VM over VIX API/vSphere Web Services. In this case, you must use a root account for the target workload and check that /tmp directory on the target workload is mounted with the exec option. Otherwise, the recovery process will fail.
+* The mount server, helper host and helper appliance must have access over the network to a VM whose files you recover or direct access to the vCenter server or ESXi host where the VM resides. If a network connection cannot be established, the mount server connects to the VM over vSphere Web Services. In this case, you must use a root account for the target workload and check that /tmp directory on the target workload is mounted with the exec option. Otherwise, the recovery process will fail.
 
 If you use the FQDN of the ESXi host in the [helper appliance configuration window](multios_restore_proxy_vm.md), the helper appliance must be able to resolve the FQDN of the ESXi host.
 
@@ -100,4 +100,5 @@ where zone\_name\_1, zone\_name\_2 is a list of zone names where the ports must 
 | Note |
 | Veeam Backup & Replication opens the port 2500 in all zones even if you have specified the required zones in configuration files. |
 
+Page updated 2026-07-29
 
