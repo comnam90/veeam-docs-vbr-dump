@@ -3,18 +3,18 @@ title: "Specifying PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_gp_postgresql.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying PostgreSQL WAL Files Settings
 
 
-By default, Veeam Backup & Replication creates application-consistent image-level backups of VMs running the PostgreSQL Server application and does not truncate write ahead logs (WAL) after each successfully completed backup session — this allows you to restore PostgreSQL Server databases using specific backups. To protect mission-critical PostgreSQL Server databases, you can instruct Veeam Backup & Replication to create secondary restore points with WAL logs in addition to primary image-level backups — this will allow you to restore your databases to [specific points in time](https://helpcenter.veeam.com/docs/vbr/explorers/vesql_restoring_pit.html?ver=13).
+By default, Veeam Backup & Replication creates application-consistent image-level backups of VMs running the PostgreSQL Server application and does not truncate write ahead logs (WAL) after each successfully completed backup session — this allows you to restore PostgreSQL Server databases using specific backups. To protect mission-critical PostgreSQL Server databases, you can instruct Veeam Backup & Replication to create secondary restore points with WAL logs in addition to primary image-level backups — this will allow you to restore your databases to [specific points in time](https://helpcenter.veeam.com/docs/vbr/explorers/vep_export_specify_restore_point.html?ver=13).
 
 |  |
 | --- |
-| NoteS |
+| Note |
 | * Veeam Backup & Replication stores image-level backups and WAL log backups in the same repository. * If Veeam Backup & Replication fails to produce a primary image-level backup, no secondary WAL log backups will be created. |
 
 To back up PostgreSQL WAL logs periodically, do the following:
@@ -25,9 +25,9 @@ To back up PostgreSQL WAL logs periodically, do the following:
 
 * Select the Until the corresponding image-level backup is deleted option if you want to remove WAL log backups and the related image-level backups at the same time, according to the retention policy settings specified at [step 4](pve_backup_job_create_destination.md) of the wizard.
 
-* Select the Keep only last <N> days of log backups option if you want to retain WAL log backups for a specific time period, regardless of the retention policy settings specified for image-level backups. Note that WAL log backups must always be retained for a longer period than image-level backups.
+* Select the Keep only last <N> days of log backups option if you want to retain WAL log backups for a specific time period, regardless of the retention policy settings specified for image-level backups. Note that image-level backups must always be kept for a longer period than the related WAL log backups.
 
-For more information on how Veeam Backup & Replication retains WAL logs, see [Retention for PostgreSQL WAL Files](postrgresql_backup_retention.md).
+For more information on how Veeam Backup & Replication retains WAL logs, see [Retention for PostgreSQL WAL Files](postgresql_backup_retention.md).
 
 1. In the Temporary location for archive logs section, specify the path to a folder on the PostgreSQL machine where Veeam Backup & Replication will temporarily store archive logs until they are backed up.
 
@@ -41,7 +41,7 @@ For a server to be displayed in the list of available log shipping servers, it m
 
 |  |
 | --- |
-| TiPS |
+| Tip |
 | * It is recommended that you choose at least 2 log shipping servers for load balancing and high availability purposes. * It is recommended that you do not choose servers that are engaged in permanent tasks consuming resources (such as WAN accelerators and backup servers). |
 
 Configuring Access to PostgreSQL Data
@@ -63,4 +63,5 @@ Depending on the scope of resources that you have specified at [step 5a](pve_bac
 
 ![PostgreSQL WAL Files Settings](images/pve_backup_job_create_gp_postgresql.webp)
 
+Page updated 2026-07-15
 
