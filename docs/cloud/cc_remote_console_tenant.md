@@ -3,8 +3,8 @@ title: "Step 3. Connect to Tenant Backup Server"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_remote_console_tenant.html"
-last_updated: "11/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Connect to Tenant Backup Server
@@ -27,4 +27,5 @@ To log on to Veeam Backup & Replication on the tenant side, you must specify con
 
 1. Click Sign in.
 
+Page updated 2026-07-29
 
