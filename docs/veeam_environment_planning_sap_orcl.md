@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_planning_sap_orcl.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Environment Planning
@@ -69,6 +69,7 @@ Veeam Backup & Replication Users and Roles
 
 Veeam Plug-In for SAP on Oracle uses the Windows authentication methods of the Veeam Backup & Replication server to establish a connection to this server and to the backup target.
 
-If this user will be later changed manually, the new user must have at least the Veeam Backup Operator and Veeam Restore Operator rights within the Veeam Backup & Replication user management. To learn how to assign Veeam Backup & Replication roles, see [Users and Roles](users_roles.md).
+If this user will be later changed manually, the new user must have at least the Backup Operator and Restore Operator rights within the Veeam Backup & Replication user management. To learn how to assign Veeam Backup & Replication roles, see [Users and Roles](users_roles.md).
 
+Page updated 2026-07-10
 
