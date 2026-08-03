@@ -3,8 +3,8 @@ title: "HPE StoreOnce"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_storeonce.html"
-last_updated: "5/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # HPE StoreOnce
@@ -30,14 +30,14 @@ When any job addresses the backup repository, Veeam Data Mover on the gateway se
 
 ![HPE StoreOnce](images/dedupe_appl_hp.webp)
 
-The gateway server is selected when you assign a backup repository role to the HPE StoreOnce appliance. You can define the gateway server explicitly or instruct Veeam Backup & Replication to select it automatically.
+The gateway server is selected when you assign a backup repository role to the HPE StoreOnce appliance. You can define the gateway server explicitly or instruct Veeam Backup & Replication to select it automatically.
 
 Supported Protocols
 
 Veeam Backup & Replication supports HPE StoreOnce storage systems working over the following protocols:
 
-* TCP/IP protocol: Veeam Backup & Replication communicates with the HPE StoreOnce Catalyst server by sending commands over the LAN.
-* Fibre Channel protocol: Veeam Backup & Replication communicates with the HPE StoreOnce Catalyst server by sending SCSI commands over Fibre Channel.
+* TCP/IP protocol: Veeam Backup & Replication communicates with the HPE StoreOnce Catalyst server by sending commands over the LAN.
+* Fibre Channel protocol: Veeam Backup & Replication communicates with the HPE StoreOnce Catalyst server by sending SCSI commands over Fibre Channel.
 
 Data processing over Fibre Channel (FC) connectivity enables local area network-free backup to HP StoreOnce, eliminates the load from backup activities and increases availability of LAN resources to production workloads.
 
@@ -54,7 +54,7 @@ If you plan to use HPE StoreOnce as a backup repository for jobs other than file
 * Check [requirements and limitations for the gateway server](gateway_server.md).
 
 * The same Catalyst Store cannot be added to multiple backup servers.
-* The user account used to connect to HPE StoreOnce must have permissions listed in [Permissions](required_permissions.md#rphost).
+* The user account used to connect to HPE StoreOnce must have permissions listed in [Permissions](permissions_virt_servers.md#rphost).
 * Use of HPE StoreOnce with Catalyst does not guarantee the improvement of job performance. It can reduce the load on the network and improve the network throughput.
 * Veeam Backup & Replication uses the Catalyst library installed on the gateway server when working with HPE StoreOnce. The gateway location affects the network load.
 
@@ -79,9 +79,9 @@ For restore operations, assign the gateway server role to a machine that is clos
 * You cannot perform Quick Migration for Microsoft Hyper-V VMs started with Instant Recovery from the backup that resides in the HPE StoreOnce backup repository.
 * You cannot use HPE StoreOnce backup repositories as sources or targets for file copy jobs.
 * You cannot copy backup files (VBK, VIB and VRB) manually to the HPE StoreOnce backup repository. To copy such files, use backup copy jobs or [evacuate backups](sobr_evacuate.md) if you use a scale-out backup repository.
-* You cannot use the HPE StoreOnce backup repository as a cloud repository hosted behind a Cloud Connect Gateway server.
-* To optimize data transfer between two HPE StoreOnce repositories, use backup copy jobs for HPE StoreOnce repositories. For more information on how to create jobs and recommendations for them, see [Creating Backup Copy Jobs for HPE StoreOnce Repositories](backup_copy_hpe_storeonce.md).
-* Veeam Backup & Replication supports HPE Cloud Bank Storage for HPE StoreOnce software version 4.3.2 or later. It can be used for a limited range of operations. For more information, see [HPE StoreOnce Supported Features](storeonce_supported_features.md#bank).
+
+* To optimize data transfer between two HPE StoreOnce repositories, use backup copy jobs for HPE StoreOnce repositories. For more information on how to create jobs and recommendations for them, see [Creating Backup Copy Jobs for HPE StoreOnce Repositories](storage_copy_create.md).
+* Veeam Backup & Replication supports HPE Cloud Bank Storage for HPE StoreOnce software version 4.3.2 or later. For more information on the supported operations and platforms, see [HPE StoreOnce Supported Features](storeonce_supported_features.md#bank).
 * The HPE StoreOnce Cloud Bank stores do not work with object-versioned buckets. Immutability for these stores is enforced by the HPE StoreOnce solution, not the Cloud Bank object storage. As a result, the object storage administrator can delete data stored in the object storage buckets. To mitigate this risk, see the HPE best practice documentation.
 * Veeam Backup & Replication supports fixed block chunking functionality for HPE StoreOnce software version 4.3.2 or later. To be able to use this functionality in Veeam Backup & Replication, check that the [Align backup file data blocks](dsa_repository_repository.md) option is enabled in the repository settings.
 
@@ -89,14 +89,7 @@ For more information and recommendations on working with HPE StoreOnce, see [thi
 
 HPE StoreOnce and Unstructured Data Backup
 
-If you plan to use HPE StoreOnce storage appliances for [unstructured data backup](unstructured_data_backup.md), consider the following recommendations for optimal performance:
-
-* For HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x, large backup loads (exceeding 1PB) should be spread across multiple Catalyst stores on the same StoreOnce system. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 1PB limit does not apply.
-* Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
-
-HPE StoreOnce and Veeam Plug-Ins for Enterprise Applications
-
-If you plan to use HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 3,000,000 file limit does not apply.
+If you plan to use HPE StoreOnce storage appliances for [unstructured data backup](unstructured_data_backup.md), do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
 
 HPE StoreOnce and Immutability
 
@@ -144,4 +137,5 @@ Related Topics
 * [Accelerated Restore of Entire VM](storeonce_accelerated_restore.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
+Page updated 2026-07-30
 
