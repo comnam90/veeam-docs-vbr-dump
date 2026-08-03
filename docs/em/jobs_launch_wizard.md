@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/jobs_launch_wizard.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Wizard
@@ -20,5 +20,5 @@ Alternatively, you can right-click a job and select Job > Edit.
 
 [![Launching Wizard](images/em_edit_job_launch.webp)](images/em_edit_job_launch.webp "Launching Wizard")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
