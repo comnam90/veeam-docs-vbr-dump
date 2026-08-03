@@ -3,8 +3,8 @@ title: "/security/accounts"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/security_accounts.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /security/accounts
@@ -38,6 +38,7 @@ The /security/accounts resource has a resource representation of the following t
 
 |  |
 | --- |
-| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0"> |
+| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0">   <Ref Type="EnterpriseAccountReference" Href="https://localhost:9398/api/security/accounts/d1b025b4-af19-4a8d-9eeb-2db43e4710f4" Name="BUILTIN\Administrators" UID="urn:veeam:EnterpriseAccount:d1b025b4-af19-4a8d-9eeb-2db43e4710f4">     <Links>       <Link Rel="Alternate" Type="EnterpriseAccount" Href="https://localhost:9398/api/security/accounts/d1b025b4-af19-4a8d-9eeb-2db43e4710f4?format=Entity" />     </Links>   </Ref>   <Ref Type="EnterpriseAccountReference" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7" Name="BUILTIN\Users" UID="urn:veeam:EnterpriseAccount:de19303b-bcf3-428b-b113-ac0b2cf46bd7">     <Links>       <Link Rel="Alternate" Type="EnterpriseAccount" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7?format=Entity" />     </Links>   </Ref>   <Ref Type="EnterpriseAccountReference" Href="https://localhost:9398/api/security/accounts/2cd80a69-077c-400f-a714-cafe97bc8f60" Name="SRV02\Administrator" UID="urn:veeam:EnterpriseAccount:2cd80a69-077c-400f-a714-cafe97bc8f60">     <Links>       <Link Rel="Alternate" Type="EnterpriseAccount" Href="https://localhost:9398/api/security/accounts/2cd80a69-077c-400f-a714-cafe97bc8f60?format=Entity" />     </Links>   </Ref> </EntityReferences> |
 
+Page updated 2026-07-29
 
