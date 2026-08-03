@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/adding_backup_server.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Adding Backup Servers
@@ -16,7 +16,7 @@ Before You Begin
 
 Before you add backup servers, consider the following:
 
-* You cannot add a backup server that is running a newer version than Enterprise Manager. The Enterprise Manager version must be equal to or later than the version of any backup server that you want to add. Before adding a backup server of a newer version, upgrade Enterprise Manager first. For details, see [Veeam Software Appliance Update](em_update_linux.md) or [Upgrading to Enterprise Manager 13.0.1](em_upgrading.md).
+* You cannot add a backup server that is running a newer version than Enterprise Manager. The Enterprise Manager version must be equal to or later than the version of any backup server that you want to add. Before adding a backup server of a newer version, upgrade Enterprise Manager first. For details, see [Veeam Software Appliance Update](em_update_linux.md) or [Upgrading to Enterprise Manager 13.1](em_upgrading.md).
 * Enterprise Manager supports adding backup servers running Veeam Backup & Replication 12.3 or later. When Enterprise Manager and Veeam Backup & Replication run different major or minor versions, some Enterprise Manager features may not be available:
 
 * Enterprise Manager does not support editing jobs that are managed by backup servers of earlier major or minor versions. This includes Veeam Agent backup jobs, file backup jobs, object storage backup jobs, and backup copy jobs.
@@ -44,9 +44,9 @@ Adding Backup Server
 
 To add a backup server to Enterprise Manager, take the following steps:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
-3. Select the Backup Servers section on the left of the Configuration view.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
+3. In the Configuration view, open the Backup Servers section.
 4. At the top of the Backup Servers section, click Add.
 5. In the DNS name or IP address of the Veeam backup server field, enter the DNS name, IPv4 or IPv6 address of the server you want to add.
 
@@ -57,7 +57,7 @@ To add a backup server to Enterprise Manager, take the following steps:
 1. In the Server description field, specify a description for the backup server.
 2. Enter the name and password of the backup server account.
 
-* The account must be assigned the Veeam Backup Administrator role. For more information, see [Configuring Backup Server Roles](vbr_server_roles.md).
+* The account must be assigned the Backup Administrator role. For more information, see [Configuring Backup Server Roles](vbr_server_roles.md).
 * When adding a Linux-based backup server, use the UPN format to specify a domain user.
 * [For Linux-based Enterprise Manager] If you are adding a backup server with Veeam Backup & Replication 12.3.x and you want to use an Active Directory account, specify the user name in the UPN format with a capitalized domain name (for example, user@DOMAIN).
 
@@ -71,5 +71,5 @@ To add a backup server to Enterprise Manager, take the following steps:
 
 [![Adding Backup Server](images/em_add_bu_server.webp)](images/em_add_bu_server.webp "Adding Backup Server")
 
-Page updated 2026-07-09
+Page updated 2026-07-17
 
