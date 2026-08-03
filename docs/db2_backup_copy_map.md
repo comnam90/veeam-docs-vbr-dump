@@ -3,8 +3,8 @@ title: "Converting Backup Copy to Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_copy_map.html"
-last_updated: "6/26/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Converting Backup Copy to Backup
@@ -23,20 +23,27 @@ You can convert and unbind Veeam Plug-In backups into regular Veeam Plug-In back
 | Note |
 | If you want to restore from a backup copy, you do not need to convert the backup copy to the backup. For details, see [Restore from Backup Copy](db2_restore_from_backup_copy.md). |
 
-Procedure
-
 To convert a backup copy to a primary backup, use the --promote-backup-copy-to-primary parameter as shown below:
 
-1. Run the DB2ConfigTool with the --promote-backup-copy-to-primary parameter and type a backup copy number from the list of available backup copies.
+1. Run the DB2ConfigTool with the --promote-backup-copy-to-primary parameter using one of the following commands depending on the OS you are using, and type a backup copy number from the list of available backup copies.
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --promote-backup-copy-to-primary  Backup copies available for promotion to the primary backup target:  1. DB2 Backup Copy Job 1\db2ubuntu IBM Db2 backup (Scale-out Backup Repository 1)  Select a backup copy: 1 |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --promote-backup-copy-to-primary  Backup copies available for promotion to the primary backup target:  1. DB2 Backup Copy Job 1\db2ubuntu IBM Db2 backup (Scale-out Backup Repository 1)  Select a backup copy: 1 |
 
-1. Converting a backup copy into regular backup file, requires changes in the Veeam Plug-In configuration. Select option 1 to continue:
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --promote-backup-copy-to-primary  Backup copies available for promotion to the primary backup target:  1. DB2 Backup Copy Job 1\db2ubuntu IBM Db2 backup (Scale-out Backup Repository 1)  Select a backup copy: 1 |
+
+1. Converting a backup copy into a regular backup file requires changes in the Veeam Plug-In configuration. Select option 1 to continue:
 
 |  |
 | --- |
 | Proceed with the action?  1. Promote backup copy destination to the primary backup target and apply the required configuration automatically  2. Cancel  Enter selection: 1  Promoting backup copy destination  Done |
 
+Page updated 2026-07-02
 
