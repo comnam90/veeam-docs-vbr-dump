@@ -1,16 +1,16 @@
 ---
-title: "Google Compute Engine IAM User Permissions"
+title: "Google Compute Engine IAM Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gcp_iam_permissions.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Google Compute Engine IAM User Permissions
+# Google Compute Engine IAM Users
 
 
-To enable restore of workloads to Google Compute Engine, do the following:
+To enable [restore of workloads to Google Compute Engine](restore_google.md), do the following:
 
 1. Grant the following roles to the IAM user whose credentials you plan to use to connect to Google Compute Engine:
 
@@ -20,7 +20,7 @@ To avoid granting the Compute Admin role to the IAM user Compute Engine service 
 
 |  |
 | --- |
-| compute.addresses.list |
+| compute.addresses.list compute.disks.create compute.disks.delete compute.disks.get compute.disks.use compute.disks.useReadOnly compute.firewalls.create compute.firewalls.delete compute.firewalls.list compute.globalOperations.get compute.images.create compute.images.delete compute.images.get compute.images.useReadOnly compute.instances.attachDisk compute.instances.create compute.instances.delete compute.instances.detachDisk compute.instances.get compute.instances.getGuestAttributes compute.instances.list compute.instances.setLabels compute.instances.setMetadata compute.instances.setTags compute.instances.stop compute.machineTypes.list compute.networks.get compute.networks.list compute.networks.updatePolicy compute.projects.get compute.regions.list compute.subnetworks.get compute.subnetworks.list compute.subnetworks.use compute.subnetworks.useExternalIp compute.zoneOperations.get compute.zones.get compute.zones.list |
 
 * Cloud Build Editor role (roles/cloudbuild.builds.editor)
 * Project IAM Admin role (roles/resourcemanager.projectIamAdmin)
@@ -55,4 +55,5 @@ The Google Cloud service account specified at the [Account](restore_google_accou
 
 For more information on the required permissions and limitations, see the Import virtual disk images section in the [Google Cloud documentation](https://cloud.google.com/migrate/virtual-machines/docs/5.0/migrate/image_import#supported-formats).
 
+Page updated 2026-07-21
 
