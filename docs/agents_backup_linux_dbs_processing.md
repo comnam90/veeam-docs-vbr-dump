@@ -3,8 +3,8 @@ title: "Backup of Database Systems"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_linux_dbs_processing.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup of Database Systems
@@ -80,17 +80,47 @@ Requirements and Limitations for Oracle Processing
 
 * Oracle Database architectures with Data Guard are not supported.
 
-Requirements and Limitations for PostgreSQL Processing
+General Requirements and Limitations for PostgreSQL Processing
 
 * Veeam Agent supports processing of PostgreSQL database systems version 13 – 18.
 
-* Veeam Agent does not support backup of PostgreSQL clusters.
-
-* Veeam Agent does not support high availability cluster configurations and replication setups of PostgreSQL servers.
+* Veeam Agent supports backup of PostgreSQL clusters managed by Patroni, for backup jobs managed by Veeam Backup & Replication only. To learn more, see [Requirements and Limitations for Processing PostgreSQL Clusters](#patroni) below. Veeam Agent does not support other high availability cluster configurations and replication setups of PostgreSQL servers.
 
 * In PostgreSQL 15 and earlier, Veeam Agent does not support configuration sub-files that are specified in the include, include\_dir and include\_if\_exist options in the postgresql.conf file. All PostgreSQL configurations, instance ports in particular, must be specified in the single postgresql.conf file.
 
 Starting from PostgreSQL 16, the pg\_hba.conf and pg\_ident.conf files can also have configuration sub-files specified in the include, include\_dir and include\_if\_exist options. Veeam Agent does not support these configuration sub-files either. Make sure that in PostgreSQL 16 and later all configurations are specified only in the postgresql.conf, pg\_hba.conf and pg\_ident.conf files.
+
+Requirements and Limitations for Processing PostgreSQL Clusters
+
+Veeam Agent supports consistent backup of PostgreSQL clusters managed by Patroni, an open-source tool that automates and manages high availability (HA) for PostgreSQL clusters, providing automatic failover, leader election and cluster health monitoring. Consider the following requirements and limitations:
+
+* Patroni cluster processing is supported only for backup jobs managed by Veeam backup server. Backup jobs managed by Veeam Agent do not support Patroni cluster processing.
+* Patroni cluster backup is supported for computers running as physical machines, or as virtual machines on VMware vSphere, Microsoft Hyper-V, Nutanix AHV, Proxmox VE, Scale Computing HyperCore, or HPE Morpheus VM Essentials.
+* Only Linux-based operating systems are supported.
+* PostgreSQL database system versions 13 – 18 are supported.
+* Patroni versions starting from 4.0.6 are supported.
+* The patronictl utility must be installed on the database system.
+* Veeam Agent always detects Patroni cluster awareness automatically; this behavior cannot be disabled.
+* Veeam Agent does not support using a network share as a temporary location for log shipping — doing so causes WAL files to be backed up twice.
+* If a cluster node becomes unreachable, Veeam Agent cannot collect WAL files from that node.
+* If the PostgreSQL instance terminates unexpectedly (which also stops Patroni) and PostgreSQL does not create a .partial WAL file, a gap occurs in the backed-up log chain for that period.
+
+How Patroni Cluster Processing Works
+
+During backup, Veeam Agent automatically determines the role of each node in the Patroni cluster and creates a consistent backup that includes log shipping from the primary node, which enables point-in-time recovery. Veeam Agent also automatically rescans the cluster topology in the background during backup of physical and virtual machines with application-aware processing enabled, to keep track of role changes such as failover.
+
+Because WAL files are generated on the primary node only, and the pg\_start\_backup() function cannot be called on a replica node, Veeam Agent must know the role of each node before starting backup. To process a Patroni cluster, Veeam Agent performs the following operations:
+
+1. Veeam Agent detects Patroni processes on the operating system to obtain the Patroni API endpoint.
+2. Veeam Agent uses the Patroni API to determine the role of each node in the cluster (primary or replica).
+3. Veeam Agent verifies that the primary node is included in the backup job — this is required for WAL log shipment.
+4. On replica nodes, Veeam Agent triggers a checkpoint to determine the redo log sequence number (LSN).
+5. Veeam Agent triggers the pg\_start\_backup() function on the primary node to determine the LSN range for the backup.
+
+|  |
+| --- |
+| NOTE |
+| You can use Veeam Explorer for PostgreSQL to restore Patroni cluster instances and individual databases from a backup. For information about restoring Patroni instances and databases, see the [Veeam Explorer for PostgreSQL](vep_user_guide.md) section of the Veeam Backup & Replication User Guide. |
 
 Related Topics
 
@@ -98,4 +128,5 @@ Related Topics
 * [Oracle Processing Settings](agent_job_guest_oracle.md)
 * [PostgreSQL Processing Settings](agent_job_guest_postgresql.md)
 
+Page updated 2026-07-22
 
