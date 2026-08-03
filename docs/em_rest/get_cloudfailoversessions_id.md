@@ -3,8 +3,8 @@ title: "GET /cloud/failoverSessions/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_cloudfailoversessions_id.html"
-last_updated: "9/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /cloud/failoverSessions/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the cloud failover session resource, for example: urn:veeam:CloudFailoverSession:475420ee-d045-4493-9869-0a970e08f6f9. |
 | Name | String | Name of the cloud failover session resource, for example: ABC Company Failover Plan. |
 | JobType | String | Type of the cloud failover session. Possible value: FailoverPlan. |
@@ -77,8 +80,9 @@ Cloud Failover Task Session
 
 The CloudFailoverTasks element contains the following options of a cloud failover task session.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | VmReplicaPointLink | Link | URL of the [/cloud/vmReplicaPoints/{ID}](cloudvmreplicapoints_id.md) resource — a VM replica point processed by this task session. |
 | CreationTimeUTC | DateTime | Date and time when the cloud failover task session was started. |
 | EndTimeUTC | DateTime | Date and time when the cloud failover task session was ended. |
@@ -89,8 +93,9 @@ The CloudFailoverTasks element contains the following options of a cloud failove
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server of the Service Provider. |
 | /cloud/failoverSessions/{ID} | Alternate | Alternate URL of the [/cloud/failoverSessions/{ID}](cloudfailoversessions_id.md) resource. |
 
@@ -100,6 +105,7 @@ The example below returns an entity resource representation of the cloud failove
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/cloud/failoverSessions/4347c445-c6a7-418a-877c-9d39b77a8933?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  GET https://localhost:9398/api/cloud/failoverSessions/4347c445-c6a7-418a-877c-9d39b77a8933?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <CloudFailoverSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Href="https://enterprise06.tech.local:9398/api/cloud/failoverSessions/4347c445-c6a7-418a-877c-9d39b77a8933?format=Entity" Type="CloudFailoverSession" Name="Cloud failover plan 1" UID="urn:veeam:CloudFailoverSession:4347c445-c6a7-418a-877c-9d39b77a8933" xmlns="http://www.veeam.com/ent/v1.0">     <Links>         <Link Href="https://enterprise06.tech.local:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" Type="BackupServerReference" Rel="Up" />         <Link Href="https://enterprise06.tech.local:9398/api/cloud/failoverSessions/4347c445-c6a7-418a-877c-9d39b77a8933" Name="Cloud failover plan 1" Type="CloudFailoverSessionReference" Rel="Alternate" />     </Links>     <JobType>FailoverPlan</JobType>     <CreationTimeUTC>2025-11-04T21:39:59.103Z</CreationTimeUTC>     <State>Working</State>     <Result>None</Result>     <Progress>0</Progress>     <CloudFailoverTasks>         <CloudFailoverTasks VmName="apache05">             <VmReplicaPointLink Href="https://enterprise06.tech.local:9398/api/cloud/vmReplicaPoints/262824bd-525f-41b6-89c6-ec1b8cb703b3" Name="apache05@2025-11-04 18:01:08" Type="CloudVmReplicaPointReference" Rel="Related" />             <CreationTimeUTC>2025-11-04T21:40:03.62Z</CreationTimeUTC>             <State>Working</State>             <Result>None</Result>             <Progress>0</Progress>         </CloudFailoverTasks>     </CloudFailoverTasks> </CloudFailoverSession> |
 
+Page updated 2026-07-28
 
