@@ -3,8 +3,8 @@ title: "Database-Level Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications_db.html"
-last_updated: "3/27/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Database-Level Backup
@@ -24,10 +24,12 @@ Veeam Backup & Replication allows you to use the following backup solutions for 
 * [Veeam Plug-In for IBM Db2](db2_plugin.md) — a backup and recovery solution that allows you to back up and restore IBM Db2 databases.
 * [Veeam Plug-In Management](management.md) — Veeam Backup & Replication allows you to deploy Veeam Plug-Ins on database servers and launch backup policies directly from the Veeam backup console.
 * [MongoDB Backup](mongo_backup.md) — a backup and recovery solution that allows you to back up and restore MongoDB replica sets.
+* [Epic EHR System Protection](iris_backup.md) — a backup and recovery solution that allows you to back up and restore Epic Electronic Health Record (EHR) deployments running on the InterSystems IRIS Data Platform.
 
 |  |
 | --- |
 | Important |
 | Veeam Plug-Ins store database and log backups in repositories added to the Veeam Backup & Replication infrastructure. Thus, to use Veeam Plug-Ins, you must have a Veeam Backup & Replication server deployed in your infrastructure. To learn how to deploy Veeam Backup & Replication, see [Deployment](deployment.md). |
 
+Page updated 2026-07-29
 
