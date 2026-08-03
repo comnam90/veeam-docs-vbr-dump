@@ -3,8 +3,8 @@ title: "Attributes of a Link Element"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/attributes_of_a_link_element.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Attributes of a Link Element
@@ -16,8 +16,9 @@ Rel
 
 The Rel attribute defines the type of relationship between the resource and the linked resource or state. The Rel attribute can identify the following relationships:
 
+Rel
+
 | Relationship | Description |
-| --- | --- |
 | Action | Identifies an action that can be performed with the linked object. For example, Create, Edit, Delete, Start, Stop, Retry, Clone and so on. |
 | Type of relationship | Identifies the type of relations between the linked resource and the resource. Currently Veeam Backup Enterprise Manager REST API offers two types of relations:   * The Up value indicates that the linked resource is a parent element for the current resource. For example, the backup repository is a parent for the backup stored in this repository. * The Down value indicates that the linked resource is a child element for the current resource. For example, the repository is a child for the backup server to which the repository is connected. |
 | Alternate URL | In the entity reference resource representation, the Alternate value in the Rel attribute of the link identifies that the link is a reference to the resource entity. In the entity resource representation, it identifies the link to the reference representation. For details, see [Resource Representation for Key Resources](resource_representation_for_ke.md). |
@@ -47,4 +48,5 @@ Name
 
 The Name attribute defines the human-readable name of the resource. The name attribute is used for key resources and may be skipped in links to resource collections and actions to creating new resources.
 
+Page updated 2026-07-29
 
