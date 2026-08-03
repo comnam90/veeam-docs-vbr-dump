@@ -3,8 +3,8 @@ title: "How High Availability Cluster Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_hiw.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How High Availability Cluster Works
@@ -48,11 +48,6 @@ High Availability Cluster Upgrade
 
 To upgrade an HA cluster, Veeam Backup & Replication uses the [Veeam Updater service](update_appliances.md). The Veeam Updater service runs on both nodes. It uses the cluster IP address to communicate with the Veeam Identity Service and authorize against the Veeam Updater service on the secondary node. Veeam Backup & Replication starts upgrading the nodes from the primary node, and then synchronizes the updates with the secondary node. Automatic updates on the secondary node are disabled.
 
-|  |
-| --- |
-| Important |
-| Veeam Backup & Replication does not automatically install private fixes. You must do it manually using the Veeam Host Management console for every HA node. For more information, see [Installing Private Hotfixes](update_appliance_install_updates.md). |
-
 To upgrade an HA cluster, Veeam Backup & Replication does the following:
 
 1. Veeam Backup & Replication updates the primary node.
@@ -61,4 +56,5 @@ To upgrade an HA cluster, Veeam Backup & Replication does the following:
 4. Veeam Backup & Replication creates a list of the updates that should be installed on the secondary node.
 5. Veeam Backup & Replication sends a command to the secondary node to install the necessary updates.
 
+Page updated 2026-07-17
 
