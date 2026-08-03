@@ -3,8 +3,8 @@ title: "POST /security/accounts"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/post_security_accounts.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # POST /security/accounts
@@ -26,8 +26,9 @@ Request Header
 
 The request contains the following headers:
 
+Request Header
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Content-Type | True | Identifies the format of the request body message. Possible values:   * application/xml * application/json |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
@@ -43,9 +44,10 @@ In the request body, the client must send the parameters for the account that sh
 
 The request body must contain the following elements:
 
+Request Body
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
-| AccountType | AccountTypeEnumeration | Type of account added to Veeam Backup Enterprise Manager. Possible values:   * User * Group * ExternalUser * ExternalGroup   Accounts of the ExternalUser and ExternalGroup type are created for users that will access Veeam Backup Enterprise Manager using a single sign-on service. For details, see the [SAML Authentication Support](https://helpcenter.veeam.com/docs/backup/em/em_saml.html?ver=120) section in the Veeam Backup Enterprise Manager Guide. | No | 1/1 |
+| AccountType | AccountTypeEnumeration | Type of account added to Veeam Backup Enterprise Manager. Possible values:   * User * Group * ExternalUser * ExternalGroup   Accounts of the ExternalUser and ExternalGroup type are created for users that will access Veeam Backup Enterprise Manager using a single sign-on service. For details, see the [SAML Authentication Support](https://helpcenter.veeam.com/docs/vbr/em/em_saml.html?ver=13) section in the Veeam Backup Enterprise Manager Guide. | No | 1/1 |
 | AccountName | String | Name of the account added to Veeam Backup Enterprise Manager:   * For the User or Group account, the name must be specified in the Domain\Name format, for example: TECH\william.fox. * For the ExternalUser account, the name must be specified in the Username@Suffix format, for example: william.fox@tech.com. * For the ExternalGroup account, the name can be a free-form string. | Yes | 1/1 |
 | Roles | EnterpriseAccountInRoleCreateSpecListType | UID of the role assigned to the added account. To get a list of UIDs for available roles, send the GET HTTP request to the /security/roles resource. For details, see [GET /security/roles](get_security_roles.md). | No | 1/1 |
 | AllowRestoreAllVms | Boolean | Defines whether the account must have permissions to restore all VMs or not. If this parameter is set to False, the client must provide the restore scope in the HierarchyScopeObjects element. | No | 1/1 |
@@ -59,7 +61,7 @@ XML Representation
 
 |  |
 | --- |
-| <?xml version="1.0" encoding="utf-8"?> |
+| <?xml version="1.0" encoding="utf-8"?> <EnterpriseAccountCreateSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <AccountType>User</AccountType>   <AccountName>TECH\william.fox</AccountName>   <Roles>     <EnterpriseRole>       <EnterpriseRoleUid>urn:veeam:EnterpriseRole:f84a8b62-49b8-4d0c-b25b-92321b52bab6</EnterpriseRoleUid>     </EnterpriseRole>   </Roles>   <AllowRestoreAllVms>false</AllowRestoreAllVms>   <HierarchyScopeObjects>     <HierarchyScopeItem>       <HierarchyObjRef/>       <ObjectName/>     </HierarchyScopeItem>   </HierarchyScopeObjects> </EnterpriseAccountCreateSpec> |
 
 JSON Representation
 
@@ -71,8 +73,9 @@ Hierarchy Scope Settings
 
 You can define the following hierarchy scope settings for the added account:
 
+Hierarchy Scope Settings
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | HierarchyObjRef | HierarchyObjRefType | Reference to the object in the virtual infrastructure hierarchy. You can [construct the reference manually](constructing_hierarchyobjreftype.md) or use the [lookup service](lookupsvc.md) to retrieve the reference.  To get a file share reference, use the [GET /nas/fileServers/{ID}](get_nas_fileservers_id.md) request. | Yes | 0/1 |
 | ObjectName | String | Name of the object in the virtual infrastructure hierarchy, for example: VM01. | Yes | 0/1 |
 
@@ -94,8 +97,9 @@ File-Level Restore Settings
 
 You can define the following file-level restore settings for the added account:
 
+File-Level Restore Settings
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | FlrInplaceOnly | Boolean | Defines whether the account must have permissions to restore only files with specific filename extensions or not. If this parameter is set to True, the client must provide filename extensions for files that are permitted for restore in the FlrExtentionRestrictions element. | Yes | 1/1 |
 | FlrExtentionRestrictions | String | Filename extensions for files that are permitted for restore separated by comma, for example: doc,pptx,pdf. | Yes | 0/1 |
 
@@ -122,8 +126,9 @@ SQL Restore Settings
 
 You can define the following SQL restore settings for the added account:
 
+SQL Restore Settings
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | DenyInPlaceRestore | Boolean | Defines whether you want to prevent user account from overriding production databases at restore. | Yes | 1/1 |
 
 |  |
@@ -157,8 +162,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -174,7 +180,7 @@ The example below adds a Restore Operator user account:
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/security/accounts    Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml    Request Body:  <?xml version="1.0" encoding="utf-8"?> <EnterpriseAccountCreateSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <AccountType>User</AccountType>   <AccountName>VEEAM\User</AccountName>   <Roles>     <EnterpriseRole>       <EnterpriseRoleUid>urn:veeam:EnterpriseRole:f84a8b62-49b8-4d0c-b25b-92321b52bab6</EnterpriseRoleUid>     </EnterpriseRole>    </Roles>   <AllowRestoreAllVms>true</AllowRestoreAllVms> </EnterpriseAccountCreateSpec>    Response:  201 Created    Response Body:  None |
+| Request:  POST https://localhost:9398/api/security/accounts  Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml  Request Body:  <?xml version="1.0" encoding="utf-8"?> <EnterpriseAccountCreateSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <AccountType>User</AccountType>   <AccountName>VEEAM\User</AccountName>   <Roles>     <EnterpriseRole>       <EnterpriseRoleUid>urn:veeam:EnterpriseRole:f84a8b62-49b8-4d0c-b25b-92321b52bab6</EnterpriseRoleUid>     </EnterpriseRole>    </Roles>   <AllowRestoreAllVms>true</AllowRestoreAllVms> </EnterpriseAccountCreateSpec>  Response:  201 Created  Response Body:  None |
 
 Example 2
 
@@ -182,6 +188,7 @@ The example below adds a Restore Operator user account that can restore a file s
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/security/accounts    Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml    Request Body:  <?xml version="1.0" encoding="utf-8"?> <EnterpriseAccountCreateSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0">   <AccountType>User</AccountType>   <AccountName>TECH\mary.smith</AccountName>   <Roles>     <EnterpriseRole>       <EnterpriseRoleUid>urn:veeam:EnterpriseRole:f84a8b62-49b8-4d0c-b25b-92321b52bab6</EnterpriseRoleUid>     </EnterpriseRole>   </Roles>   <AllowRestoreAllVms>false</AllowRestoreAllVms>   <HierarchyScopeObjects>      <HierarchyScopeItem>       <HierarchyObjRef>urn:NasBackup:FileServer:541178f4-5335-46cb-b7bc-8fbb4a944307.541178f4-5335-46cb-b7bc-8fbb4a944307</HierarchyObjRef>       <ObjectName>\\enterprise05.tech.local\SMB Share</ObjectName>      </HierarchyScopeItem>   </HierarchyScopeObjects> </EnterpriseAccountCreateSpec>      Response:  201 Created    Response Body:  None |
+| Request:  POST https://localhost:9398/api/security/accounts  Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml  Request Body:  <?xml version="1.0" encoding="utf-8"?> <EnterpriseAccountCreateSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0">   <AccountType>User</AccountType>   <AccountName>TECH\mary.smith</AccountName>   <Roles>     <EnterpriseRole>       <EnterpriseRoleUid>urn:veeam:EnterpriseRole:f84a8b62-49b8-4d0c-b25b-92321b52bab6</EnterpriseRoleUid>     </EnterpriseRole>   </Roles>   <AllowRestoreAllVms>false</AllowRestoreAllVms>   <HierarchyScopeObjects>      <HierarchyScopeItem>       <HierarchyObjRef>urn:NasBackup:FileServer:541178f4-5335-46cb-b7bc-8fbb4a944307.541178f4-5335-46cb-b7bc-8fbb4a944307</HierarchyObjRef>       <ObjectName>\\enterprise05.tech.local\SMB Share</ObjectName>      </HierarchyScopeItem>   </HierarchyScopeObjects> </EnterpriseAccountCreateSpec>  Response:  201 Created  Response Body:  None |
 
+Page updated 2026-07-29
 
