@@ -3,8 +3,8 @@ title: "Performing Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_protection.html"
-last_updated: "2/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Backup
@@ -17,7 +17,7 @@ Veeam Plug-In backs up Microsoft SQL Server databases according to backup settin
 |  |
 | --- |
 | Note |
-| Backups created by Veeam Plug-Ins cannot be used as a source for file to tape or backup to tape jobs. |
+| Backups created by Veeam Plug-Ins cannot be used as a source for file to tape jobs. For information about backup to tape support, see [Backup to Tape](plugins_mssql_backup_to_tape.md). |
 
 In This Section
 
@@ -28,4 +28,5 @@ In This Section
 * [Managing Backup Job in Veeam Backup & Replication](mssql_job_vbr.md)
 * [Managing Backups in Veeam Backup & Replication](mssql_backup_vbr.md)
 
+Page updated 2026-07-10
 
