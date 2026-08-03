@@ -3,8 +3,8 @@ title: "Resources"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/resources.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Resources
@@ -19,4 +19,5 @@ Resources in Veeam Backup Enterprise Manager REST API are described with:
 * [Relationships to other resources](links.md) in Veeam Backup Enterprise Manager
 * [Optional] [Set of operations](http_requests_and_responses.md) that the client can perform with the resource
 
+Page updated 2026-07-29
 
