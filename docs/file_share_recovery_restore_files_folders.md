@@ -3,8 +3,8 @@ title: "Restoring Specific Files and Folders"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_recovery_restore_files_folders.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Specific Files and Folders
@@ -16,15 +16,10 @@ When you restore specific files, you can extract file versions not only from the
 
 Besides, you can restore multiple versions of the same file.
 
-Before you restore specific files and folders, [check prerequisites](restore_files_folders_before_you_begin.md). Then use the File Restore wizard to restore files and folders of the file share.
+You can can roll back files and folders in one of the following ways:
 
-1. [Launch the File Restore wizard](restore_files_folders_launch_wizard.md).
-2. [Select an object to restore](restore_files_folders_backup.md).
-3. [Verify restore object settings](restore_files_folders_summary.md).
-4. [Select files and folders to restore](restore_files_folders_backup_browser.md).
-5. [Select a restore point](restore_files_folders_restore_point.md).
-6. [Select a file version to restore](restore_files_folders_file_version.md).
-7. [Specify the destination for file restore](restore_files_folders_destination.md).
-8. [Finish working with the wizard](restore_files_folders_summary2.md).
+* [Restore specific files and folders using console](file_share_recovery_restore_files_folders_console.md).
+* [Restore specific files and folders using web UI](file_share_recovery_restore_files_folders_web.md).
 
+Page updated 2026-07-24
 
