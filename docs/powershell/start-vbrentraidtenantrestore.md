@@ -3,8 +3,8 @@ title: "Start-VBREntraIDTenantRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrentraidtenantrestore.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBREntraIDTenantRestore
@@ -37,8 +37,9 @@ Then you can use the following cmdlets:
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Backup | Specifies a tenant backup from which you want to restore data. | Accepts the VBREntraIDTenantBackup object. To get this object, run the [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md) cmdlet. | True | 0 | False |
 
 <CommonParameters>
@@ -68,4 +69,5 @@ Related Commands
 
 [Get-VBREntraIDTenantBackup](get-vbrentraidtenantbackup.md)
 
+Page updated 2026-06-18
 
