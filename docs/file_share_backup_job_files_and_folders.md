@@ -3,8 +3,8 @@ title: "Step 3. Select Files and Folders to Back Up"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_files_and_folders.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Select Files and Folders to Back Up
@@ -105,4 +105,5 @@ If necessary, you can export and import your masks:
 * To export a mask to a file, click the Export these filters link. In the Export to file window, specify a path to the necessary XML file. Click OK.
 * To import existing masks from a file, click the Import existing list link. In the Import masks from file window, specify a path to the necessary XML file. Click OK.
 
+Page updated 2026-07-23
 
