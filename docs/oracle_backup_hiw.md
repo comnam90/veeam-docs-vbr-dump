@@ -3,8 +3,8 @@ title: "How Oracle Archived Log Backup Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_backup_hiw.html"
-last_updated: "2/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Oracle Archived Log Backup Works
@@ -24,7 +24,7 @@ By default, Veeam Backup & Replication accesses the VM guest OS over the network
 
 * For Microsoft Windows VM guest OS — using RPC.
 
-If a network connection cannot be established, Veeam Backup & Replication accesses the VM guest OS over VIX API/vSphere Web Services.
+If a network connection cannot be established, Veeam Backup & Replication accesses the VM guest OS over vSphere Web Services.
 
 1. Veeam Backup & Replication deploys the non-persistent runtime components or uses (if necessary, deploys) persistent agent components in the VM guest OS. The components scan the Oracle system and collect information about databases whose logs must be processed, including:
 
@@ -54,4 +54,5 @@ Archived logs that, for some reason, were not processed during the log backup in
 
 ![How Oracle Archived Log Backup Works](images/oracle_backup_hiw_vm.webp)
 
+Page updated 2026-07-29
 
