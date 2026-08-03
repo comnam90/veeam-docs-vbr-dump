@@ -3,21 +3,21 @@ title: "Manage Guest OS Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vbr_credentials_manage_hv.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Manage Guest OS Credentials
 
 
-If you enable application-aware processing or instruct Veeam Backup & Replication to create a catalog of VM files and folders, you must also specify a user whose credentials are used to communicate with VM guest OSes. Note that the specified user must have the permissions required to perform guest processing. For more information on the required permissions, see [Performing Guest Processing](required_permissions.md#rptcb).
+If you enable application-aware processing or instruct Veeam Backup & Replication to create a catalog of VM files and folders, you must also specify a user whose credentials are used to communicate with VM guest OSes. Note that the specified user must have the permissions required to perform guest processing. For more information on the required permissions, see [Performing Guest Processing](permissions_guest_processing.md#rptcb).
 
 If you have installed persistent agent components for VMs running Linux operating systems, you can select Use management agent credentials from the list. For more information, see [Installing Persistent Agent Components on Linux VMs](persistent_agent_components.md#persistent_components_for_linux).
 
 |  |
 | --- |
 | Note |
-| Management Agent credentials have root or elevated to root permissions. If you do not want to perform guest processing tasks under the account with such privileges, you can specify a non-root user account. This account or custom credentials added for specific VMs will also be used for SSH connection or networkless guest processing over VIX API/vSphere Web Services if the transport service connection fails. |
+| Management Agent credentials have root or elevated to root permissions. If you do not want to perform guest processing tasks under the account with such privileges, you can specify a non-root user account. This account or custom credentials added for specific VMs will also be used for SSH connection or networkless guest processing over vSphere Web Services if the transport service connection fails. |
 
 By default, Veeam Backup & Replication uses a single set of credentials to access guest OSes of all VMs included in the backup scope. However, since Windows-based VMs and Linux-based VMs require different types of access credentials, you may need to specify the credentials explicitly for each processed VM. To do that:
 
@@ -38,4 +38,5 @@ To check whether Veeam Backup & Replication can connect to the VM guest OSes usi
 
 ![Manage Guest OS Credentials](images/backup_job_vbr_vm_credentials.webp)
 
+Page updated 2026-07-29
 
