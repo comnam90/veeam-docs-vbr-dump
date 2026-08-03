@@ -3,8 +3,8 @@ title: "Veeam Plug-In Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/saphana_bfiles.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Plug-In Backup Files
@@ -42,5 +42,7 @@ After one of the limits is reached, Veeam Plug-In closes the backup file and can
 * Set the immutability for the backup file.
 * Copy and move backup file to the capacity tier.
 * Update the encryption setting for the application backup policy.
+* Copy backup file to tape.
 
+Page updated 2026-07-13
 
