@@ -3,8 +3,8 @@ title: "Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_overview.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Overview
@@ -15,7 +15,7 @@ Starting from version Veeam Backup & Replication 13.0.1, you can install a plug-
 |  |
 | --- |
 | Note |
-| Since Veeam releases separate updates for the plug-in, the backup server version differs from the plug-in version. For more information on the version compatibility, see [System Requirements](hpe_system_requirements.md#compatibility).  The current version of Veeam Backup & Replication is 13.0.1.1071; the current version of Veeam Plug-in for HPE Morpheus VM Essentials is 13.1.0.271. |
+| Since Veeam releases separate updates for the plug-in, the backup server version differs from the plug-in version. For more information on the version compatibility, see [System Requirements](hpe_system_requirements.md#compatibility). |
 
 In This Section
 
@@ -24,4 +24,5 @@ In This Section
 * [VM Restore](hpe_restore_how.md)
 * [Retention Policies](hpe_retention_policy.md)
 
+Page updated 2026-07-23
 
