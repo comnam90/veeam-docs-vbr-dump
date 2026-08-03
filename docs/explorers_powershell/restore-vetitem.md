@@ -3,8 +3,8 @@ title: "Restore-VETItem"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restore-vetitem.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore-VETItem
@@ -162,8 +162,8 @@ This cmdlet allows you to restore Microsoft Teams items:
 
 You can restore Microsoft Teams items with one of the following authentication methods:
 
-* Authentication methods that utilize legacy protocols.
-* Multi-factor authentication. To restore data, the cmdlet utilizes a Microsoft Entra application.
+* Authentication methods that use legacy protocols.
+* Multi-factor authentication. To restore data, the cmdlet uses a Microsoft Entra application.
 
 |  |
 | --- |
@@ -172,8 +172,9 @@ You can restore Microsoft Teams items with one of the following authentication m
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Credential | Specifies credentials that will be used for authenticating to the Microsoft 365 organization. | Accepts the PSCredential object. To get this object, run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet. | True | Named | False |
 | Channel | Specifies a Microsoft Teams team channel. The cmdlet will restore items of this channel. | Accepts the [VETChannel](vetchannel.md) object. To get this object, run the [Get-VETChannel](get-vetchannel.md) cmdlet. | True | 0 | True (ByValue) |
 | PostsFrom | Specifies the point in time that defines the start of the period for which you want to restore posts of a Microsoft Teams channel.  The cmdlet will restore posts published within the specified time period. The time when a post was published is defined by the last modification time of the post.  Note: If you use this parameter, you cannot use the AllPosts parameter. | DateTime | True | Named | False |
@@ -195,7 +196,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -207,7 +208,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to restore posts of the General Microsoft Teams team channel created between 7/1/2023 10:00 AM and 8/31/2023 10:00 AM.  |  | | --- | | $credentials = Get-Credential  $session = Get-VBOTeamsItemRestoreSession  $org = Get-VETOrganization -Session $session -Name "ABC\*"  $team = Get-VETTeam -Organization $org -DisplayName "IT"  $channel = Get-VETChannel -Team $team -DisplayName "General"  Restore-VETItem -Credential $credentials -Channel $channel -PostsFrom "7/1/2023 10:00 AM" -PostsTo "8/31/2023 10:00 AM" |  Perform the following steps:   1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Type credentials that you want to use for connecting to the Microsoft 365 organization. Save the result to the $credentials variable. 2. Get the Microsoft Teams channel:  1. Run the [Get-VBOTeamsItemRestoreSession](get-vboteamsitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VETOrganization](get-vetorganization.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $org variable. 3. Run the [Get-VETTeam](get-vetteam.md) cmdlet. Set the $org variable as the Organization parameter value. Specify the DisplayName parameter value. Save the result to the $team variable. 4. Run the [Get-VETChannel](get-vetchannel.md) cmdlet. Set the $team variable as the Team parameter value. Specify the DisplayName parameter value. Save the result to the $channel variable.  1. Run the Restore-VETItem cmdlet. Set the $credentials variable as the Credential parameter value. Set the $channel variable as the Channel parameter value. Specify the From and To parameter values. |
+| This example shows how to restore posts of the General Microsoft Teams team channel created between 7/1/2026 10:00 AM and 8/31/2026 10:00 AM.  |  | | --- | | $credentials = Get-Credential  $session = Get-VBOTeamsItemRestoreSession  $org = Get-VETOrganization -Session $session -Name "ABC\*"  $team = Get-VETTeam -Organization $org -DisplayName "IT"  $channel = Get-VETChannel -Team $team -DisplayName "General"  Restore-VETItem -Credential $credentials -Channel $channel -PostsFrom "7/1/2026 10:00 AM" -PostsTo "8/31/2026 10:00 AM" |  Perform the following steps:   1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Type credentials that you want to use for connecting to the Microsoft 365 organization. Save the result to the $credentials variable. 2. Get the Microsoft Teams channel:  1. Run the [Get-VBOTeamsItemRestoreSession](get-vboteamsitemrestoresession.md) cmdlet. Save the result to the $session variable. 2. Run the [Get-VETOrganization](get-vetorganization.md) cmdlet. Set the $session variable as the Session parameter value. Specify the Name parameter value. Use the \* wildcard character to substitute the timestamp. Save the result to the $org variable. 3. Run the [Get-VETTeam](get-vetteam.md) cmdlet. Set the $org variable as the Organization parameter value. Specify the DisplayName parameter value. Save the result to the $team variable. 4. Run the [Get-VETChannel](get-vetchannel.md) cmdlet. Set the $team variable as the Team parameter value. Specify the DisplayName parameter value. Save the result to the $channel variable.  1. Run the Restore-VETItem cmdlet. Set the $credentials variable as the Credential parameter value. Set the $channel variable as the Channel parameter value. Specify the From and To parameter values. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Restoring Microsoft Teams Channel
 
@@ -255,4 +256,5 @@ Related Commands
 * [Get-VETFile](get-vetfile.md)
 * [Get-VETOtherTab](get-vetothertab.md)
 
+Page updated 2026-03-17
 
