@@ -3,8 +3,8 @@ title: "Configuring Staging Oracle Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_staging_server.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Staging Oracle Server
@@ -24,6 +24,7 @@ Consider the following:
 
 * If you plan to restore databases with Automatic Storage Management enabled, both staging and target servers must have ASM enabled.
 * Oracle Database Express Edition cannot be used as a staging system.
+* You can only configure staging server settings from an open backup with the same OS: Windows backup for a Windows staging server, Linux backup for a Linux staging server. You cannot configure a staging server from an Explorer opened from the Start menu.
 
 For Windows-based Oracle Servers
 
@@ -65,11 +66,11 @@ To configure a staging server for Linux-based Oracle servers, do the following:
 
 If you do not enable this option, you will have to manually add the user account to the sudoers file.
 
-1. When registering a Linux-based server, you have an option to failover to using the su command for distros where the sudo command is not available.
+1. When registering a Linux-based server, you have an option to failover to using the su command for distributions where the sudo command is not available.
 
 To enable the failover, select the Use su if sudo is unavailable check box and in the Root password field, enter the password for the root account.
 
-[![Granting Sudo Rights to Non-Root Account](images/elevate.webp)](images/elevate.webp "Granting Sudo Rights to Non-Root Account")
+![Configuring Staging Oracle Server](images/elevate.webp "Granting Sudo Rights to Non-Root Account")
 
 1. In the Password field, specify the password.
 2. If the private key is required to connect to the selected server, do the following:
@@ -83,4 +84,5 @@ To enable the failover, select the Use su if sudo is unavailable check box and i
 
 [![Configuring Staging Server for Linux Machines](images/veo_cfg_linux.webp)](images/veo_cfg_linux.webp "Configuring Staging Server for Linux Machines")
 
+Page updated 2026-07-24
 
