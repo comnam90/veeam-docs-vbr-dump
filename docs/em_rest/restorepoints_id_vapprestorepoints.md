@@ -3,8 +3,8 @@ title: "/restorePoints/{ID}/vAppRestorePoints"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/restorepoints_id_vapprestorepoints.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /restorePoints/{ID}/vAppRestorePoints
@@ -36,6 +36,7 @@ The /restorePoints/{ID}/vAppRestorePoints resource has a resource representation
 
 |  |
 | --- |
-| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0"> |
+| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0">   <Ref Type="VAppRestorePointReference" Href="https://localhost:9398/api/vAppRestorePoints/5edbd79d-273a-4688-bca8-228c4a1586d7" Name="vApp\_1@2025-10-25 14:50:08" UID="urn:veeam:VAppRestorePoint:5edbd79d-273a-4688-bca8-228c4a1586d7">     <Links>       <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/00fd67d9-2b4c-4c56-8a95-0b3dbec7ae43" Name="172.17.53.1" />       <Link Rel="Up" Type="RestorePointReference" Href="https://localhost:9398/api/restorePoints/aaf85ac9-f53c-4dfa-9837-024ad87ef4b6" Name="Oct 25 2025  2:49PM" />       <Link Rel="Alternate" Type="VAppRestorePoint" Href="https://localhost:9398/api/vAppRestorePoints/5edbd79d-273a-4688-bca8-228c4a1586d7?format=Entity" Name="vApp\_1@2025-10-25 14:50:08" />     </Links>   </Ref> </EntityReferences> |
 
+Page updated 2026-07-29
 
