@@ -3,8 +3,8 @@ title: "Rescan-VBREntity"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/rescan-vbrentity.html"
-last_updated: "5/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Rescan-VBREntity
@@ -66,8 +66,9 @@ You can rescan components, for example, after configuration restore.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Entity | Specifies an array of components you want to rescan. | Accepts the following objects:   * CHost (hosts connected to the backup infrastructure). Run the [Get-VBRServer](get-vbrserver.md) cmdlet to get this object. * [VBRTapeServer](vbrtapeserver.md) (tape servers). Run the [Get-VBRTapeServer](get-vbrtapeserver.md) cmdlet to get this object.  * [VBRTapeLibrary](vbrtapelibrary.md) (tape libraries). Run the [Get-VBRTapeLibrary](get-vbrtapelibrary.md) cmdlet to get this object. * CBackupRepository (backup repositories). Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet to get this object. * [VBRCloudProvider](vbrcloudprovider.md) (cloud providers). Run the [Get-VBRCloudProvider](get-vbrcloudprovider.md) cmdlet to get this object. * CBackup (only replicas restore points). Run the [Get-VBRReplica](get-vbrreplica.md) cmdlet to get this object. * [VBRProtectionGroup](vbrprotectiongroup.md) (protection groups). Run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet to get this object. * [VBRDiscoveredComputer](vbrdiscoveredcomputer.md) (discovered computers). Run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet to get this object. * [VBRDiscoveredADEntity](vbrdiscoveredadentity.md) (discovered Active Directory objects that belong to the same protection group).Run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet to get this object. | True | Named | True (ByValue) |
 | AllReplicas | Defines that the cmdlet will rescan all replicas restore points.  Default: False. | SwitchParameter | False | Named | False |
 | AllHosts | Defines that the cmdlet will rescan all managed hosts.  Default: False. | SwitchParameter | False | Named | False |
@@ -114,4 +115,5 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRReplica](get-vbrreplica.md)
 
+Page updated 2026-06-29
 
