@@ -3,8 +3,8 @@ title: "Supported Applications"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_supported_platforms.html"
-last_updated: "4/1/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Supported Applications
@@ -32,6 +32,7 @@ Veeam Agent for Linux
 | Specification | Requirements and Limitations |
 | Oracle | * Oracle Database versions 11g to 21c are supported for all [operating systems supported by Veeam Agent for Linux](agents_system_requirements_linux.md#OS). * Automatic Storage Management (ASM) is not supported. * Oracle Real Application Clusters (RAC) are not supported. * Oracle Grid Infrastructure is not supported.  * Oracle Database Express Edition is not supported. * SAP on Oracle is not supported. * Oracle Database architectures with Data Guard and passive instances are not supported. |
 | MySQL | * MySQL database system versions 5.7 to 9.0 are supported. * Configurations with multiple MySQL installations or instances on the same machine are not supported. * MySQL Cluster versions are not supported. |
-| PostgreSQL | * PostgreSQL database system versions 13 – 17 are supported. * PostgreSQL clusters are not supported. |
+| PostgreSQL | * PostgreSQL database system versions 13 – 18 are supported. * PostgreSQL clusters managed by Patroni version 4.0.6 and later are supported for backup jobs managed by Veeam Backup & Replication only. To learn more, see [Requirements and Limitations for Processing PostgreSQL Clusters](agents_backup_linux_dbs_processing.md#patroni). Other PostgreSQL clusters are not supported. |
 
+Page updated 2026-07-22
 
