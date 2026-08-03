@@ -3,8 +3,8 @@ title: "Step 4. Specify Oracle Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_oracle_settings.html"
-last_updated: "11/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Oracle Settings
@@ -12,8 +12,8 @@ product_version: "13.0.1.1071"
 
 At this step of the wizard, specify the location to which you want to restore the database.
 
-* Select Restore with the original name and settings to restore data using the original name and settings.
-* Select Restore with different name and settings to choose custom settings:
+* Select the Restore with the original name and settings option to restore data using the original name and settings.
+* Select the Restore with different name and settings option to choose custom settings:
 
 1. In the Oracle home field, specify the Oracle home directory.
 
@@ -40,6 +40,7 @@ The maximum length of the Oracle SID is 12 characters and it can only contain al
 | Note |
 | Consider the following:   * To use the Restore with different name and settings option, make sure that Controlfile Autobackup is enabled. For more information, see [Oracle Environment Planning](oracle_environment_planning.md#abname). * An existing Oracle SID (if any) will be replaced with that from the backup when selecting the Restore with different name and settings option. |
 
-[![Specifying Oracle Settings](images/rman_restore_settings.webp)](images/rman_restore_settings.webp "Specifying Oracle Settings")
+![Step 4. Specify Oracle Settings](images/rman_restore_settings.webp "Specifying Oracle Settings")
 
+Page updated 2026-07-16
 
