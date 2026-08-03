@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/managing_jobs.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Managing Jobs
@@ -14,14 +14,11 @@ Veeam Backup Enterprise Manager acts as a single point for managing jobs from al
 
 Consider the following limitations:
 
-* Enterprise Manager does not display backup policies created with the following Veeam solutions for cloud environments:
+* For the following workloads, Enterprise Manager displays only backup copy jobs and SureBackup jobs running in the Backup verification and content scan only mode:
 
-* Veeam Backup for AWS
-* Veeam Backup for Google Cloud
-* Veeam Backup for Microsoft Azure
-
-* For the following workloads, Enterprise Manager displays only backup copy jobs:
-
+* AWS
+* Google Cloud
+* Microsoft Azure
 * Nutanix AHV
 * Oracle Linux Virtualization Manager and Red Hat Virtualization
 * Proxmox VE
@@ -42,5 +39,5 @@ In This Section
 * [Cloning Jobs](cloning_backup_replication_jobs.md)
 * [Deleting Jobs](em_delete_job.md)
 
-Page updated 2026-07-10
+Page updated 2026-07-17
 
