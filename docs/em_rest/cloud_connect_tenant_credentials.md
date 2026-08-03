@@ -3,8 +3,8 @@ title: "Tenant Logon Session"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/cloud_connect_tenant_credentials.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Tenant Logon Session
@@ -25,8 +25,9 @@ Credentials for the standalone tenant account must be provided in the TenantCred
 
 The request body must contain the following elements:
 
+Standalone Cloud Tenant Logon Session Creation
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | Username | String | User name of the tenant account. | Yes | 1/1 |
 | Password | String | Password for the tenant account. | Yes | 1/1 |
 
@@ -34,7 +35,7 @@ For example:
 
 |  |
 | --- |
-| <?xml version="1.0" encoding="utf-8"?> |
+| <?xml version="1.0" encoding="utf-8"?> <LoginSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <TenantCredentials>     <Username>ABC Company</Username>     <Password>P@ssw0rd</Password>   </TenantCredentials> </LoginSpec> |
 
 In the response, Veeam Backup Enterprise Manager will return a representation of the /sessionMngr/ resource with a link to the Cloud Connect service resource. For example:
 
@@ -61,10 +62,11 @@ Credentials for the VMware Cloud Director tenant account must be provided in the
 
 The request body must contain the following elements:
 
+vCloud Tenant Logon Session Creation
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | OrganizationName | String | Name of the vCD organization. | Yes | 1/1 |
-| Login | String | Name of the vCD organization user. For details on VMware Cloud Director Tenant Account, see the [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/backup/cloud/cloud_vcloud_director_tenant.html?ver=120). | Yes | 1/1 |
+| Login | String | Name of the vCD organization user. For details on VMware Cloud Director Tenant Account, see the [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_vcloud_director_tenant.html?ver=13). | Yes | 1/1 |
 | Password | String | Password for the vCD organization user account. | Yes | 1/1 |
 
 For example:
@@ -92,4 +94,5 @@ With Veeam Backup Enterprise Manager REST API, a tenant can perform the followin
 
 A tenant cannot edit a cloud failover plan with Veeam Backup Enterprise Manager REST API.
 
+Page updated 2026-07-29
 
