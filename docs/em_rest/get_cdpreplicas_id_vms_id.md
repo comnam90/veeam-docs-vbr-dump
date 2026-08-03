@@ -3,8 +3,8 @@ title: "GET /cdpReplicas/{ID}/vms/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_cdpreplicas_id_vms_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /cdpReplicas/{ID}/vms/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the VM included in the CDP replica, for example: urn:veeam:CdpReplicaVm:6d9cb796-3c00-4fc5-bb99-3ad442e13eed. |
 | Name | String | Name of the VM included in the CDP replica, for example: virt03-ubuntu01. |
 | VmRef | HierarchyObjRefType | Reference to the VM, for example: urn:VMware:Vm:d68c782f-ec0a-4bf3-b3c1-04c552b64fdf.vm-85541. |
@@ -70,8 +73,9 @@ Parameters
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /cdpReplicas/{ID}/vms/{ID}?action=intervals | Intervals | URL for the [POST /cdpReplicas/{ID}/vms/{ID}?action=intervals](post_cdpreplicavm_id_actionintervals.md) request. |
 | /cdpReplicas/{ID}/vms/{ID}?action=failover | Failover | URL for the [POST /cdpReplicas/{ID}/vms/{ID}?action=failover](post_cdpreplicavm_id_actionfailover.md) request. |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the CDP policy was configured. |
@@ -84,6 +88,7 @@ The example below returns an entity resource representation of the VM having ID 
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/cdpReplicas/24ae37ad-4d28-4568-8467-98d8770bb722/vms/fc2d6425-e96d-44e7-9d96-b7af5991adb3    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  GET https://localhost:9398/api/cdpReplicas/24ae37ad-4d28-4568-8467-98d8770bb722/vms/fc2d6425-e96d-44e7-9d96-b7af5991adb3  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <CdpReplicaVm xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Href="https://enterprise04.tech.local:9398/api/cdpReplicas/fdab78b8-8cee-4939-b478-276dbcd25de4/vms/6d9cb796-3c00-4fc5-bb99-3ad442e13eed?format=Entity" Type="CdpReplicaVm" Name="virt03-ubuntu01" UID="urn:veeam:CdpReplicaVm:6d9cb796-3c00-4fc5-bb99-3ad442e13eed" xmlns="http://www.veeam.com/ent/v1.0">     <Links>         <Link Href="https://enterprise04.tech.local:9398/api/cdpReplicas/fdab78b8-8cee-4939-b478-276dbcd25de4/vms/6d9cb796-3c00-4fc5-bb99-3ad442e13eed?action=intervals" Rel="Intervals" />         <Link Href="https://enterprise04.tech.local:9398/api/cdpReplicas/fdab78b8-8cee-4939-b478-276dbcd25de4/vms/6d9cb796-3c00-4fc5-bb99-3ad442e13eed?action=failover" Rel="Failover" />         <Link Href="https://enterprise04.tech.local:9398/api/backupServers/16e902a6-1855-43a7-bb8f-ed1914c78fca" Name="backupsrv29.tech.local" Type="BackupServerReference" Rel="Up" />         <Link Href="https://enterprise04.tech.local:9398/api/cdpReplicas/fdab78b8-8cee-4939-b478-276dbcd25de4" Name="CDP Policy" Type="CdpReplicaReference" Rel="Up" />         <Link Href="https://enterprise04.tech.local:9398/api/cdpPolicies/872a3860-3805-43b8-bcf6-388384bfed33" Name="CDP Policy" Type="CdpPolicyReference" Rel="Up" />     </Links>     <VmRef>urn:VMware:Vm:83963a7e-d43f-4fea-9036-466898c9c9e7.vm-84373</VmRef>     <ReplicaUid>fdab78b8-8cee-4939-b478-276dbcd25de4</ReplicaUid>     <BackupServer>backupsrv29.tech.local</BackupServer>     <PolicyUid>872a3860-3805-43b8-bcf6-388384bfed33</PolicyUid>     <PolicyName>CDP Policy</PolicyName> </CdpReplicaVm> |
 
+Page updated 2026-07-29
 
