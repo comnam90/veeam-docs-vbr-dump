@@ -3,8 +3,8 @@ title: "Backup Methods"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_methods.html"
-last_updated: "7/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Methods
@@ -22,6 +22,7 @@ This backup method helps you save space on the backup storage because Veeam Plug
 
 When the forward incremental backup method is used, Veeam Plug-in for Scale Computing HyperCore creates a backup chain that consists of multiple full backup files (VBKs) and sets of forward incremental backup files (VIBs) following each full backup file. Full backups created using the synthetic full or active full method split the backup chain into shorter series. This lowers the chances of losing the backup chain completely and makes this backup method the most reliable. For more information, see [Forward Incremental Backup](sch_forward_backup.md).
 
-This backup method requires more storage space than other methods because the backup chains contains multiple full backup files and sometimes Veeam Plug-in for Scale Computing HyperCore stores more restore points than specified in the retention policy settings due to the specifics of the [forward incremental retention policy](sch_backup_retention.md#fi).
+This backup method requires more storage space than other methods because the backup chain contains multiple full backup files and sometimes Veeam Plug-in for Scale Computing HyperCore stores more restore points than specified in the retention policy settings due to the specifics of the [forward incremental retention policy](sch_backup_retention.md#fi).
 
+Page updated 2026-07-16
 
