@@ -3,8 +3,8 @@ title: "/agents/agentRestorePoints/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/agents_agentrestorepoints_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /agents/agentRestorePoints/{ID}
@@ -48,12 +48,13 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef UID="urn:veeam:AgentRestorePoint:b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" Name="rhel72@2018-12-17 02:01:05" Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" Type="AgentRestorePointReference" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| <EntityRef UID="urn:veeam:AgentRestorePoint:b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" Name="rhel72@2025-12-17 02:01:05" Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" Type="AgentRestorePointReference" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/backupServers/8c88c6d6-931f-4044-8c0b-7a0c5f188b00" Name="local.host" Type="BackupServerReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/restorePoints/67e4d9b0-a461-41e6-b5e8-037af89e2a88" Name="Dec 17 2025  2:00AM" Type="RestorePointReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/backupFiles/0e2f90e9-23ee-43fe-8279-d0220b081da2" Name="Agent Backup rhel72 lvm - rhel72\_2D7FD2025-12-17T050032.vib" Type="BackupFileReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d?format=Entity" Name="rhel72@2025-12-17 02:01:05" Type="AgentRestorePoint" Rel="Alternate"/>   </Links> </EntityRef> |
 
 Entity resource representation:
 
 |  |
 | --- |
-| <AgentRestorePoint Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d?format=Entity" Type="AgentRestorePoint" Name="rhel72@2018-12-17 02:01:05" UID="urn:veeam:AgentRestorePoint:b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/backupServers/8c88c6d6-931f-4044-8c0b-7a0c5f188b00" Name="local.host" Type="BackupServerReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/restorePoints/67e4d9b0-a461-41e6-b5e8-037af89e2a88" Name="Dec 17 2018  2:00AM" Type="RestorePointReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/backupFiles/0e2f90e9-23ee-43fe-8279-d0220b081da2" Name="Agent Backup rhel72 lvm - rhel72\_2D7FD2018-12-17T050032.vib" Type="BackupFileReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" Name="rhel72@2018-12-17 02:01:05" Type="AgentRestorePointReference" Rel="Alternate"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d/mounts" Type="AgentRestorePointMountList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d/mounts" Type="AgentRestorePointMount" Rel="Create"/>   </Links>   <CreationTimeUTC>2018-12-17T02:01:05Z</CreationTimeUTC>   <Algorithm>Incremental</Algorithm>   <PointType>Increment</PointType> </AgentRestorePoint> |
+| <AgentRestorePoint Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d?format=Entity" Type="AgentRestorePoint" Name="rhel72@2025-12-17 02:01:05" UID="urn:veeam:AgentRestorePoint:b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/backupServers/8c88c6d6-931f-4044-8c0b-7a0c5f188b00" Name="local.host" Type="BackupServerReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/restorePoints/67e4d9b0-a461-41e6-b5e8-037af89e2a88" Name="Dec 17 2025  2:00AM" Type="RestorePointReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/backupFiles/0e2f90e9-23ee-43fe-8279-d0220b081da2" Name="Agent Backup rhel72 lvm - rhel72\_2D7FD2025-12-17T050032.vib" Type="BackupFileReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d" Name="rhel72@2025-12-17 02:01:05" Type="AgentRestorePointReference" Rel="Alternate"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d/mounts" Type="AgentRestorePointMountList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints/b6bfce60-7d42-46d7-9e55-0a40c04b0d7d/mounts" Type="AgentRestorePointMount" Rel="Create"/>   </Links>   <CreationTimeUTC>2025-12-17T02:01:05Z</CreationTimeUTC>   <Algorithm>Incremental</Algorithm>   <PointType>Increment</PointType> </AgentRestorePoint> |
 
+Page updated 2026-07-29
 
