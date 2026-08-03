@@ -3,8 +3,8 @@ title: "Veeam Data Cloud Vault Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_cloud_limitations.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Data Cloud Vault Considerations and Limitations
@@ -43,4 +43,5 @@ Consider the following limitations for Veeam Data Cloud Vault:
 * [For backup jobs managed by Veeam Agent] You cannot back up data to Veeam Data Cloud Vault added in the direct connection mode.
 * [For Veeam Cloud Connect] Veeam Data Cloud Vault cannot be used as a cloud repository in the direct connection mode.
 
+Page updated 2026-07-21
 
