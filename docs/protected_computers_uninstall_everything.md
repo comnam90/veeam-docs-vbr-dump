@@ -3,8 +3,8 @@ title: "Uninstalling Veeam Plug-In and Other Veeam Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_uninstall_everything.html"
-last_updated: "6/11/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Uninstalling Veeam Plug-In and Other Veeam Components
@@ -12,7 +12,7 @@ product_version: "13.0.2.29"
 
 You can uninstall all Veeam Plug-Ins and the following Veeam product components installed on a protected computer as one operation:
 
-* The veeam-openssl package
+* The openssl-fips-redistributable-3.1.2 package
 * Veeam Agent
 * [For Microsoft Windows computers] CDP agent
 * [For Microsoft Windows computers] Veeam Installer Service
@@ -48,4 +48,5 @@ To uninstall Veeam Plug-Ins, Veeam Agent, CDP agent and Veeam components:
 
 [![Uninstall All Veeam Agents and Veeam Plug-ins](images/plugins_protected_computer_uninstall_all.webp)](images/plugins_protected_computer_uninstall_all.webp "Uninstall All Veeam Agents and Veeam Plug-ins")
 
+Page updated 2026-07-28
 
