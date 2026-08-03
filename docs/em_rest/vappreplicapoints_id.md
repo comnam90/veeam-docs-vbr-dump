@@ -3,8 +3,8 @@ title: "/vAppReplicaPoints/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/vappreplicapoints_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /vAppReplicaPoints/{ID}
@@ -47,12 +47,13 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="VAppReplicaPointReference" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" Name="vApp01@2021-02-04 00:08:35" UID="urn:veeam:VAppReplicaPoint:dc01c979-5f6a-409c-bcc2-c3c6ddf439b3"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="VAppReplicaPointReference" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" Name="vApp01@2025-02-04 00:08:35" UID="urn:veeam:VAppReplicaPoint:dc01c979-5f6a-409c-bcc2-c3c6ddf439b3">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/554dc718-37b7-4fb6-9e07-f97c6b5192aa" Name="enterprise04.tech.local" />     <Link Rel="Up" Type="ReplicaReference" Href="https://localhost:9398/api/replicas/2111ab48-0030-42c6-b69e-e91fc9653ef7" Name="vCD Replication Job 1" />     <Link Rel="Alternate" Type="VAppReplicaPoint" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity" Name="vApp01@2025-02-04 00:08:35" />     <Link Rel="Down" Type="VmReplicaPointReference" Href="https://localhost:9398/api/vmReplicaPoints/34ed5f74-0184-4077-987a-36e41eef6668" Name="win7-QDrB@2025-02-04 01:49:04" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
 |  |
 | --- |
-| <VAppReplicaPoint xmlns="http://www.veeam.com/ent/v1.0" Type="VAppReplicaPoint" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity" Name="vApp01@2021-02-04 00:08:35" UID="urn:veeam:VAppReplicaPoint:dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" VAppDisplayName="vApp01">   <Links>     <Link Rel="Failover" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?action=failover" />     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/554dc718-37b7-4fb6-9e07-f97c6b5192aa" Name="enterprise04.tech.local" />     <Link Rel="Up" Type="ReplicaReference" Href="https://localhost:9398/api/replicas/2111ab48-0030-42c6-b69e-e91fc9653ef7" Name="vCD Replication Job 1" />     <Link Rel="Alternate" Type="VAppReplicaPointReference" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" Name="vApp01@2021-02-04 00:08:35" />     <Link Rel="Down" Type="VmReplicaPointReference" Href="https://localhost:9398/api/vmReplicaPoints/34ed5f74-0184-4077-987a-36e41eef6668" Name="win7-QDrB@2021-02-04 01:49:04" />   </Links>   <CreationTimeUTC>2021-02-04T00:08:35.343Z</CreationTimeUTC>   <VAppName>vApp01</VAppName>   <Algorithm>Full</Algorithm>   <PointType>Snapshot</PointType> </VAppReplicaPoint> |
+| <VAppReplicaPoint xmlns="http://www.veeam.com/ent/v1.0" Type="VAppReplicaPoint" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity" Name="vApp01@2025-02-04 00:08:35" UID="urn:veeam:VAppReplicaPoint:dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" VAppDisplayName="vApp01">   <Links>     <Link Rel="Failover" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?action=failover" />     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/554dc718-37b7-4fb6-9e07-f97c6b5192aa" Name="enterprise04.tech.local" />     <Link Rel="Up" Type="ReplicaReference" Href="https://localhost:9398/api/replicas/2111ab48-0030-42c6-b69e-e91fc9653ef7" Name="vCD Replication Job 1" />     <Link Rel="Alternate" Type="VAppReplicaPointReference" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" Name="vApp01@2025-02-04 00:08:35" />     <Link Rel="Down" Type="VmReplicaPointReference" Href="https://localhost:9398/api/vmReplicaPoints/34ed5f74-0184-4077-987a-36e41eef6668" Name="win7-QDrB@2025-02-04 01:49:04" />   </Links>   <CreationTimeUTC>2025-02-04T00:08:35.343Z</CreationTimeUTC>   <VAppName>vApp01</VAppName>   <Algorithm>Full</Algorithm>   <PointType>Snapshot</PointType> </VAppReplicaPoint> |
 
+Page updated 2026-07-29
 
