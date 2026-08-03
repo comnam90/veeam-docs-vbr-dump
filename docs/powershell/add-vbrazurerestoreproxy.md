@@ -3,8 +3,8 @@ title: "Add-VBRAzureRestoreProxy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazurerestoreproxy.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRAzureRestoreProxy
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRAzureRestoreProxy -Name <string> -Description <string> -MaxConcurrentTasks <int> -CredentialsId <guid> -TrafficPort <int> -Subscription <VBRAzureSubscription> -Location <VBRAzureLocation> -VmSize <VBRAzureVMSize> -StorageAccount <VBRAzureStorageAccount> -ResourceGroup <VBRAzureResourceGroup> -DnsNameLabel <string> -VirtualNetwork <VBRAzureVirtualNetwork> -VirtualSubnet <VBRAzureNetworkSubnet> [-Wait]  [<CommonParameters>] |
+| Add-VBRAzureRestoreProxy -Name <string> -Description <string> -MaxConcurrentTasks <int> -CredentialsId <guid> -TrafficPort <int> -Subscription <VBRAzureSubscription> -Location <VBRAzureLocation> -VmSize <VBRAzureVMSize> -StorageAccount <VBRAzureStorageAccount> -ResourceGroup <VBRAzureResourceGroup> -DnsNameLabel <string> -VirtualNetwork <VBRAzureVirtualNetwork> -VirtualSubnet <VBRAzureNetworkSubnet> [-NetworkSecurityGroup <VBRNetworkSecurityGroup>] [-SkipNetworkSecurityGroup] [-Wait]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,8 +35,9 @@ This cmdlet creates a Windows-based proxy appliance. You can use this proxy appl
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies a name for the restore proxy appliance. | String | True | Named | True |
 | Description | Specifies a description for the restore proxy appliance. | String | True | Named | True |
 | MaxConcurrentTasks | Specifies a number of concurrent tasks that the Azure restore proxy appliance must handle in parallel.  Recommended value: 4 tasks. | Int | True | Named | True |
@@ -50,6 +51,8 @@ Parameters
 | DnsNameLabel | Specifies a DNS name label for the public IP that will be created. | String | True | Named | True |
 | VirtualNetwork | Specifies a virtual network. | Accept the [VBRAzureVirtualNetwork](vbrazurevirtualnetwork.md) object. To get this object, run the [Get-VBRAzureVirtualNetwork](get-vbrazurevirtualnetwork.md) cmdlet. | True | Named | True |
 | VirtualSubnet | Specifies the virtual network subnet to which you want to connect the restore proxy appliance. | Accepts the [VBRAzureNetworkSubnet](vbrazurenetworksubnet.md) object. To create this object, run the [Get-VBRAzureVirtualNetworkSubnet](get-vbrazurevirtualnetworksubnet.md) cmdlet. | True | Named | True |
+| NetworkSecurityGroup | Specifies the network security group for the restore proxy appliance. If you do not specify a network security group, Veeam Backup & Replication will automatically create a new group, allow RDP and SSH on it and connect network interfaces to it. | Accepts the VBRNetworkSecurityGroup object. To get this object, run the [Get-VBRAzureNetworkSecurityGroup](get-vbrazurenetworksecuritygroup.md) cmdlet. | False | Named | True |
+| SkipNetworkSecurityGroup | Defines that the cmdlet will not assign a network security group to the restore proxy appliance. | SwitchParameter | False | Named | True |
 | Wait | Defines that the command waits for the process to complete before accepting more input. | SwitchParameter | False | Named | True |
 
 <CommonParameters>
@@ -108,4 +111,5 @@ Related Commands
 * [Get-VBRAzureNetworkSubnet](get-vbrazureresourcegroup.md)
 * [Get-VBRAzureVMSize](get-vbrazurevmsize.md)
 
+Page updated 2026-06-11
 
