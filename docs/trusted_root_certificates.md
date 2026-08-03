@@ -3,8 +3,8 @@ title: "Trusted Certificates"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/trusted_root_certificates.html"
-last_updated: "12/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Trusted Certificates
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 There are several root and intermediate certificates necessary for the Veeam Backup & Replication to operate correctly. Removal of these certificates from the backup server or infrastructure component may limit the functionality of Veeam Backup & Replication or cause it to fail.
 
-Linux-based backup infrastructure components configured with Veeam Software Appliance or Veeam Infrastructure Appliance have all necessary certificates installed by default.
+Linux-based backup infrastructure components configured with Veeam Software Appliance or Veeam Infrastructure Appliance have all necessary certificates installed by default. However, you can add your own trusted certificates to a Veeam Software Appliance so that it trusts additional third-party servers and services, see [Managing Certificates](hmc_manage_certificates.md).
 
 In most cases, these certificates are already installed on Microsoft Windows and manually configured Linux machines. However, some installations do not contain needed certificate authorities as trusted certificates, or have non-current certificates. This may happen on servers with locked down security settings, or servers with no internet access or if the latest updates are not installed.
 
@@ -29,8 +29,9 @@ Make sure the following certificates are installed on the backup server and comp
 * Intermediate certificates:
 
 * <https://www.digicert.com/CACerts/DigiCertEVCodeSigningCA-SHA2.crt> (DigiCert EV Code Signing CA — SHA2)
-* <https://files.entrust.com/subca-certificates/EVCS2-CSBR1-crosscert.cer>  (Entrust Extended Validation Code Signing CA — EVCS2)
+* <https://files.entrust.com/subca-certificates/EVCS2-CSBR1-crosscert.cer> (Entrust Extended Validation Code Signing CA — EVCS2)
 
 If your backup server does not have internet access, you can download certificate files from another computer.
 
+Page updated 2026-07-14
 
