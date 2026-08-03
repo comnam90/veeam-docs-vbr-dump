@@ -3,8 +3,8 @@ title: "Connecting to Service Providers"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_sp.html"
-last_updated: "1/30/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Connecting to Service Providers
@@ -24,7 +24,7 @@ Before adding a SP, [check prerequisites](cloud_connect_sp_before_you_begin.md).
 1. [Launch the Service Provider wizard](cloud_connect_sp_launch.md).
 2. [Specify cloud gateway settings](cloud_connect_sp_settings.md).
 3. [Verify a TLS certificate and specify tenant account settings](cloud_connect_sp_ssl.md).
-4. [Enumerate cloud repository resources](cloud_connect_sp_enumerate.md).
+4. [Specify backup storage settings](cloud_connect_sp_enumerate.md).
 5. [Enumerate cloud replication resources](cloud_connect_sp_hardware_plans.md).
 6. [Configure one or several network extension appliances](cloud_connect_sp_network_appliance.md).
 7. [Assess results](cloud_connect_sp_apply.md).
@@ -32,6 +32,7 @@ Before adding a SP, [check prerequisites](cloud_connect_sp_before_you_begin.md).
 
 Related Concepts
 
-[SP and Tenant Roles](cloud_roles.md)
+[Service Providers and Tenants](cloud_roles.md)
 
+Page updated 2026-07-21
 
