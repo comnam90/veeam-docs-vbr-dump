@@ -3,8 +3,8 @@ title: "Updating License"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_license_update.html"
-last_updated: "11/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Updating License
@@ -29,7 +29,7 @@ You can update the license manually on demand. When you update the license manua
 To update the license, take the following steps:
 
 1. Sign in to Veeam Backup Enterprise Manager using an account with the Portal Administrator role.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+2. In the upper-right corner, click Configuration.
 3. In the Configuration view, open the Licensing section.
 4. On the Summary tab, click Details.
 5. Click the Update now link.
@@ -60,4 +60,5 @@ Veeam Backup Enterprise Manager supports a grace period after the license expira
 
 Messages that appear in the automatic license update session log are listed in the [License Update Session Data](license_update_session_data.md) section. Similar messages are received as pop-ups after you force the immediate update.
 
+Page updated 2026-07-16
 
