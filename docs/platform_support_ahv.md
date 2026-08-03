@@ -3,8 +3,8 @@ title: "Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_ahv.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Nutanix AHV
@@ -52,12 +52,13 @@ For other requirements and limitations of guest OS file restore, see [Requiremen
 
 Version Compatibility
 
-The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-In for Nutanix AHV.
+The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-in for Nutanix AHV.
 
 Version Compatibility
 
-| Product Release | Veeam Plug-In for Nutanix AHV Build | Veeam Backup & Replication Build | Backup Appliance / Worker OS Version |
-| 9.2 | 13.9.2.17 (recommended) | 13.0.2.29 (recommended) | Veeam JeOS 9.2 |
+| Product Release | Veeam Plug-in for Nutanix AHV Build | Veeam Backup & Replication Build | Backup Appliance / Worker OS Version |
+| 10 | 13.10.0.605 | 13.1.0.411 | Veeam JeOS 9.6 |
+| 9.2 | 13.9.2.17 | 13.0.2.29 | Veeam JeOS 9.2 |
 | 9.1 | 13.9.1.11 | 13.0.1.2067 |
 | 9.0 | 13.9.0.212 | 13.0.1.1071 13.0.1.180 |
 | 8 | 13.8.0.582 | 13.0.0.4967 | Rocky Linux 8.10 |
@@ -75,4 +76,5 @@ Related Topics
 * [Overview of Nutanix AHV Protection Functionality](nutanix_ahv.md)
 * [Nutanix AHV Integration Architecture](ahv_infrastructure_components.md)
 
+Page updated 2026-07-27
 
