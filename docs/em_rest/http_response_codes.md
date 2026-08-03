@@ -3,8 +3,8 @@ title: "HTTP Response Codes"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/http_response_codes.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # HTTP Response Codes
@@ -14,8 +14,9 @@ The request to the server can return a successful status or an error.
 
 Success Operation Statuses
 
+Success Operation Statuses
+
 | Code | Applies to HTTP Method | Description | Response Body Content | Details |
-| --- | --- | --- | --- | --- |
 | 200 | GET  PUT | OK | Resource representation | The operation has been successfully completed. |
 | 201 | POST | Created | Representation of the created resource | The resource has been successfully created. |
 | 202 | POST  DELETE | Accepted | n/a | The request has been accepted and a task to handle the request has been created.  A 202 response is typically used for actions that take a long while to process or performed asynchronously. This response is accompanied by a task resource. |
@@ -23,8 +24,9 @@ Success Operation Statuses
 
 Error operation statuses
 
+Error operation statuses
+
 | Code | Applies to HTTP Method | Description | Response Body Content | Details |
-| --- | --- | --- | --- | --- |
 | 400 | POST  PUT | Bad Request | Error | The request body is malformed, incomplete or otherwise invalid. |
 | 401 | All | Unauthorized | Error | The authorization header has been expected but not found (or found but is expired). |
 | 403 | All | Forbidden | Error | The user sending a request does not have adequate privileges to access one or more objects specified in the request. |
@@ -34,4 +36,5 @@ Error operation statuses
 | 501 | POST  PUT  DELETE | Not Implemented | Error | The server does not support the functionality required to fulfill the request. |
 | 503 | All | Service Unavailable | Error | The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. |
 
+Page updated 2026-07-29
 
