@@ -3,8 +3,8 @@ title: "Step 5. Specify Backup Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_storage_hv_web.html"
-last_updated: "9/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Backup Storage Settings
@@ -24,22 +24,23 @@ By default, if the off-host backup mode is selected for the job but no off-host 
 
 To perform off-host backup, Veeam Backup & Replication analyzes the current load on off-host backup proxies and proxy settings (such as the number of allowed tasks and connectivity to the source volumes) to select an appropriate off-host backup proxy for the job. You can also explicitly point out what off-host backup proxies the job must use. To do this, select the Use the following backup proxy servers only check box and choose one or several off-host backup proxies from the list. It is recommended that you select at least two off-host backup proxies to ensure that the backup job starts if one of the backup proxies fails or loses its connectivity to the source volumes.
 
-1. From the Backup repository list, select a backup repository where the created backup files must be stored. When you select a backup repository, Veeam Backup & Replication automatically checks how much free space is available in the backup repository.
+1. Click Choose next to the Backup repository field to select a backup repository where the created backup files must be stored. When you select a backup repository, Veeam Backup & Replication automatically checks how much free space is available in the backup repository.
 
 |  |
 | --- |
 | Note |
 | Consider the following:   * If you change the repository after the job has already run, Veeam Backup & Replication suggests you move the existing backups to the new repository. If you want to move the backups, check the limitations and considerations in [Backup Move](backup_moving_hv.md). * If you select an object storage repository or a scale-out backup repository which performance tier consists of object storage repositories, Veeam Backup & Replication will not provide the amount of free space in this repository since its capacity is constantly expanding. |
 
-1. In the Retention Policy field, specify retention policy settings for restore points.
+1. In the Retention policy field, specify retention policy settings for restore points.
 
-To keep all restore points created during the last N days, specify the number of days. When the specified number is exceeded, the earliest restore point is removed from the backup chain or merged with the next closest restore point. For more information, see [Short-Term Retention Policy](retention_policy.md).
+To keep all restore points created during the last N days, specify the number of days. When the specified number is exceeded, the earliest restore point is removed from the backup chain or merged with the next closest restore point. For more information, see [Short-Term Retention Policy](retention_policy_hv.md).
 
 |  |
 | --- |
 | Note |
 | If you enable the [GFS retention](gfs_retention_policy_hv.md), the short-term retention policy will not be able to delete and merge the GFS backup files. Thus, the backup chain will have more restore points than specified in the short-term retention policy. |
 
-[![Click to zoom in](images/hv_backup_job_storage_web.webp)](images/hv_backup_job_storage_web.webp "Click to zoom in")
+[![Specify backup storage settings](images/hv_backup_job_storage_web.webp)](images/hv_backup_job_storage_web.webp "Specify backup storage settings")
 
+Page updated 2026-07-17
 
