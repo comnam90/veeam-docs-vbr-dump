@@ -3,8 +3,8 @@ title: "Set-VBRNasFilerSMBServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnasfilersmbserver.html"
-last_updated: "4/29/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRNasFilerSMBServer
@@ -26,25 +26,25 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> [-CacheRepository <CBackupRepository>] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}]  [<CommonParameters>] |
+| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> [-CacheRepository <CBackupRepository>] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify settings of SMB shares located on an enterprise NAS system added to the inventory. The cmdlet will modify settings using specific user name and password.
 
 |  |
 | --- |
-| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> [-User <string>] [-Password <string>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}]  [<CommonParameters>] |
+| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> [-User <string>] [-Password <string>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify settings of SMB shares located on an enterprise NAS system added to the inventory. The cmdlet will modify settings using specific credentials.
 
 |  |
 | --- |
-| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> [-AccessCredentials <CCredentials>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}]  [<CommonParameters>] |
+| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> [-AccessCredentials <CCredentials>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify settings of SMB shares located on an enterprise NAS system added to the inventory. The SMB file share will inherit settings of the enterprise NAS system.
 
 |  |
 | --- |
-| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> -InheritSettingsFromFiler [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}]  [<CommonParameters>] |
+| Set-VBRNasFilerSMBServer -Server <VBRSANNASSMBServer> -InheritSettingsFromFiler [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -57,8 +57,9 @@ This cmdlet modifies settings of SMB shares located on an enterprise NAS system 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies an SMB file share. The cmdlet will modify settings for this file share. | Accepts the VBRSANNASSMBServer (VBRNASServer) object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | InheritSettingsFromFiler | Defines that the SMB file share will inherit settings of the enterprise SMB system. If you provide this parameter, the cmdlet will inherit cache settings, throttling settings and credentials.  Note: You must provide the MetaMigrationType to inherit cache repository settings. | SwitchParameter | True | Named | False |
 | CacheRepository | Specifies a cache repository. The cmdlet will set this repository as a cache repository for the SMB file share. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
@@ -67,6 +68,8 @@ Parameters
 | AccessCredentials | Specifies credentials that the cmdlet will use to authenticate against the enterprise NAS system. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
 | MetaMigrationType | Specifies how the cmdlet will migrate metadata. You can use one of the following options:   * CheckExistence — use this option to check that metadata is available on the current cache repository. * CopyMetaFromCache — use this option to migrate metadata from source cache repository to a new cache repository.   Note: If metadata in a source cache repository is corrupted, the cmdlet will copy data from the archive repository.   * DownloadMetaFromArchive — use this option to migrate metadata from archive repository or from replica metadata in archive repository. | VBRNASBackupMetaMigrationType | False | Named | False |
 | BackupIOControlLevel | Specifies a speed that Veeam Backup & Replication will use to read data from the file server. You can specify either of the following speed:   * Lowest * Low * Medium * High * Highest | VBRNASBackupIOControlLevel | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will modify settings of SMB shares without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -97,4 +100,5 @@ Related Commands
 * [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-29
 
