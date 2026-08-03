@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_planning_mssql.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Environment Planning
@@ -66,7 +66,7 @@ To ignore network traffic encryption rules, do the following:
 
 |  |
 | --- |
-| %PROGRAMFILES%\Veeam\VeeamPluginforMSSQL\veeam\_config.xml |
+| %PROGRAMFILES%\Veeam\Plugins\Microsoft SQL\veeam\_config.xml |
 
 1. Add the following parameter to the Veeam configuration XML file:
 
@@ -76,4 +76,5 @@ To ignore network traffic encryption rules, do the following:
 
 For details on traffic encryption, see [Enabling Traffic Encryption](enable_network_encryption.md).
 
+Page updated 2026-07-13
 
