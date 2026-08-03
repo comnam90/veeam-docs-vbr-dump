@@ -3,8 +3,8 @@ title: "Starting Backup Job on Veeam Plug-In Side"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_start_job_from_vp.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting Backup Job on Veeam Plug-In Side
@@ -37,7 +37,7 @@ Consider that the command differs depending on the OS running on the computer wi
 
 |  |
 | --- |
-| RUN { |
+| RUN {  ALLOCATE CHANNEL VeeamAgentChannel1 DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll' FORMAT 'RMAN\_%I\_%d\_%T\_%U.vab'; BACKUP INCREMENTAL LEVEL 0 DATABASE; } EXIT; |
 
 * Example for Linux- or Unix-based computers:
 
@@ -72,4 +72,5 @@ If you create an application backup policy for Veeam Plug-In for Microsoft SQL S
 | Tip |
 | With Veeam Plug-In for Microsoft SQL Server operating in the managed mode, you can still back up an SQL database using a standalone backup job. For details, see [Backing Up SQL Databases with Standalone Backup Job](mssql_configure_backup_exclude_from_managed.md). |
 
+Page updated 2026-07-13
 
