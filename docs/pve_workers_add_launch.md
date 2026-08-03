@@ -3,8 +3,8 @@ title: "Step 1. Launch New Proxmox Worker"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_workers_add_launch.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch New Proxmox Worker
@@ -20,4 +20,5 @@ To launch the New Proxmox VE Worker wizard, do the following:
 
 [![Launch Add Worker Wizard](images/pve_workers_add_launch.webp)](images/pve_workers_add_launch.webp "Launch Add Worker Wizard")
 
+Page updated 2026-07-14
 
