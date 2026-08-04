@@ -3,14 +3,14 @@ title: "Step 7. Configure Helper Appliance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_helper_appliance_vm.html"
-last_updated: "3/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Configure Helper Appliance
 
 
-This step is available if you recover workloads with Linux OS, recover them to a new location or with different settings, and VIX API is not available. However, this step is not available if you recover VMware vSphere VMs from storage snapshots.
+This step is available if you recover workloads with Linux OS to a new location or with different settings. However, this step is not available if you recover VMware vSphere VMs from storage snapshots.
 
 Veeam Backup & Replication recovers Linux machines to a standalone host using a helper appliance. The helper appliance is an auxiliary Linux-based VM registered by Veeam Backup & Replication. The appliance is quite small — around 150 MB. It requires the same amount of RAM as the VM being restored and takes around 10 seconds to boot.
 
@@ -46,4 +46,5 @@ Consider that the backup server and the mount server must have access to the hel
 
 ![Step 7. Configure Helper Appliance](images/instant_recovery_helper_appliance.webp)
 
+Page updated 2026-07-29
 
