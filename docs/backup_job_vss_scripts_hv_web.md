@@ -3,8 +3,8 @@ title: "Pre-Freeze and Post-Thaw Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_scripts_hv_web.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Pre-Freeze and Post-Thaw Scripts
@@ -18,8 +18,8 @@ To specify pre-freeze and post-thaw scripts for the job, do the following:
 2. In the Script processing mode section, specify the scenario for scripts execution:
 
 + Select Require successful processing if you want Veeam Backup & Replication to stop the backup process if the script fails.
-+ Select Try application processing, but ignore failures if you want to continue the backup process, even if script errors occur.
-+ Select Disable application processing if you do not want to run scripts for the VM.
++ Select Ignore script execution failures if you want to continue the backup process, even if script errors occur.
++ Select Disable script execution if you do not want to run scripts for the VM.
 
 1. In the Windows scripts section, specify paths to pre-freeze and post-thaw scripts for Microsoft Windows VMs. For the list of supported script formats, see [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts_hv.md).
 2. In the Linux scripts section, specify paths to pre-freeze and post-thaw scripts for Linux VMs. For the list of supported script formats, see [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts_hv.md).
@@ -33,4 +33,5 @@ If you have added a VM container with Microsoft Windows and Linux VMs to the job
 
 [![Click to zoom in](images/hv_backup_job_vss_scripts_web.webp)](images/hv_backup_job_vss_scripts_web.webp "Click to zoom in")
 
+Page updated 2026-06-26
 
