@@ -3,8 +3,8 @@ title: "Step 4. Specify Target Site Alias"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_target_site.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Target Site Alias
@@ -21,4 +21,5 @@ At this step of the wizard, specify a target site alias that you want to use for
 
 ![Step 4. Specify Target Site Alias](images/target_site.webp "Specify Target Site Alias")
 
+Page updated 2026-08-03
 
