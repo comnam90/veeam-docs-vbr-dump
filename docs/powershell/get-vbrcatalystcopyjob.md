@@ -1,18 +1,23 @@
 ---
-title: "Get-VBRCatalystCopyJob"
+title: "Get-VBRCatalystCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcatalystcopyjob.html"
-last_updated: "4/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Get-VBRCatalystCopyJob
+# Get-VBRCatalystCopyJob (obsolete)
 
 
 Short Description
 
 Returns backup copy jobs for HPE StoreOnce repositories.
+
+|  |
+| --- |
+| Note |
+| This cmdlet is obsolete. Run the [Get-VBRStorageCopyJob](get-vbrstoragecopyjob.md) cmdlet instead. |
 
 Applies to
 
@@ -40,8 +45,9 @@ This cmdlet returns backup copy jobs for HPE StoreOnce repositories.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies an array of names of backup copy jobs for HPE StoreOnce repositories. The cmdlet will return the job with this name. | String[] | True | Named | False |
 | Id | Specifies an ID of a backup copy job for HPE StoreOnce repositories. The cmdlet will return the job with this ID. | Guid | True | Named | False |
 
@@ -67,4 +73,5 @@ Examples
 | --- | --- |
 | This command returns the cc20878e-614a-4e28-b00b-d2434bae15d7 backup copy job for an HPE StoreOnce repository.  |  | | --- | | Get-VBRCatalystCopyJob -Id "cc20878e-614a-4e28-b00b-d2434bae15d7" | |
 
+Page updated 2026-06-12
 
