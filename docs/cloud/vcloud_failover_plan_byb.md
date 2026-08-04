@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/vcloud_failover_plan_byb.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -18,4 +18,5 @@ Before you create a cloud failover plan, check the following prerequisites and l
 
 * You cannot use the same cloud failover plan for full site failover of snapshot-based replicas and CDP replicas.
 
+Page updated 2026-08-03
 
