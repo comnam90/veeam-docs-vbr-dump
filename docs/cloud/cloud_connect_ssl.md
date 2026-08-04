@@ -3,8 +3,8 @@ title: "TLS Certificates"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_ssl.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # TLS Certificates
@@ -21,4 +21,5 @@ In This Section
 * [TLS Certificate Thumbprint Verification](cloud_connect_ssl_verify.md)
 * [Rights and Permissions to Access TLS Certificates](cloud_connect_ssl_rights.md)
 
+Page updated 2026-08-03
 
