@@ -3,8 +3,8 @@ title: "Add-NetAppHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-netapphost.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-NetAppHost
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Add-NetAppHost -Name <string> -UserName <string> -Password <string> [-Description <string>] [-IsHTTP <bool>] [-Port <int>] [-Proxy <IProxy[]>] [-MountServer <CHost>] [-WindowsMountServer <CHost>] [-LinuxMountServer <CHost>] [-NASProxy <VBRNASProxyServer[]>] [-SkipRescan] [-Force] [-iSCSI] [-NFS] [-FibreChannel] [-NVMe] [-CreateRulesAutomatically] [-NASNFS] [-NASSMB] [-NASCreateRulesAutomatically] [-AgentFC] [-AgentISCSI] [-AgentProxy <VBRNASProxyServer[]>] [-EnableVMwareBackup] [-EnableNASBackup] [-EnableAgentBackup]  [<CommonParameters>] |
+| Add-NetAppHost -Name <string> -UserName <string> -Password <string> [-Description <string>] [-IsHTTP <bool>] [-Port <int>] [-Proxy <IProxy[]>] [-MountServer <CHost>] [-WindowsMountServer <CHost>] [-LinuxMountServer <CHost>] [-NASProxy <VBRNASProxyServer[]>] [-SkipRescan] [-Force] [-iSCSI] [-NFS] [-FibreChannel] [-NVMe] [-CreateRulesAutomatically] [-NASNFS] [-NASSMB] [-NASCreateRulesAutomatically] [-AgentFC] [-AgentISCSI] [-AgentProxy <VBRComputerFileProxyServer[]>] [-EnableVMwareBackup] [-EnableNASBackup] [-EnableAgentBackup] [-EnableNDMPBackup]  [<CommonParameters>] |
 
 * Add storage systems by credentials.
 
 |  |
 | --- |
-| Add-NetAppHost -Name <string> -Credentials <CInternalCredentials> [-Description <string>] [-IsHTTP <bool>] [-Port <int>] [-Proxy <IProxy[]>] [-MountServer <CHost>] [-WindowsMountServer <CHost>] [-LinuxMountServer <CHost>][-NASProxy <VBRNASProxyServer[]>] [-SkipRescan] [-Force] [-iSCSI] [-NFS] [-FibreChannel] [-NVMe] [-CreateRulesAutomatically] [-NASNFS] [-NASSMB] [-NASCreateRulesAutomatically] [-AgentFC] [-AgentISCSI] [-AgentProxy <VBRNASProxyServer[]>] [-EnableVMwareBackup] [-EnableNASBackup] [-EnableAgentBackup]  [<CommonParameters>] |
+| Add-NetAppHost -Name <string> -Credentials <CInternalCredentials> [-Description <string>] [-IsHTTP <bool>] [-Port <int>] [-Proxy <IProxy[]>] [-MountServer <CHost>] [-WindowsMountServer <CHost>] [-LinuxMountServer <CHost>][-NASProxy <VBRNASProxyServer[]>] [-SkipRescan] [-Force] [-iSCSI] [-NFS] [-FibreChannel] [-NVMe] [-CreateRulesAutomatically] [-NASNFS] [-NASSMB] [-NASCreateRulesAutomatically] [-AgentFC] [-AgentISCSI] [-AgentProxy <VBRComputerFileProxyServer[]>] [-EnableVMwareBackup] [-EnableNASBackup] [-EnableAgentBackup] [-EnableNDMPBackup]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -49,8 +49,9 @@ For more information about the rescan, see the [Adding Storage Systems](https://
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specifies the storage IP address or DNS name. | String | True | Named | False |
 | Description | Specifies the description of the storage. | String | False | Named | False |
 | UserName | Specifies the user name that you want to use for authenticating with the storage. | String | True | Named | False |
@@ -66,6 +67,7 @@ Parameters
 | EnableVMwareBackup | Enables the VMware backup option.  If you provide this parameter, you will be able to use storage snapshots to backup and restore VMware vSphere VMs hosted on storage systems. | SwitchParameter | False | Named | False |
 | EnableNASBackup | Enables the file backup option.  If you provide this parameter, you will be able to integrate your storage systems with NAS file shares added to your infrastructure. | SwitchParameter | False | Named | False |
 | EnableAgentBackup | Enables the Veeam Agent backup option.  If you provide this parameter, you will be able to integrate your storage systems with Veeam Agent for Microsoft Windows installed on computers in your infrastructure. | SwitchParameter | False | Named | False |
+| EnableNDMPBackup | Enables the NetApp SMTape backup option.  If you provide this parameter, you will be able to add NetApp NDMP-enabled LIFs as NDMP servers and write the NetApp volume data to tape. | SwitchParameter | False | Named | False |
 | Proxy | For the EnableVMwareBackup parameter.  Specifies an array of proxies you want to use with this storage.  If not set, Veeam Backup & Replication will use automatic proxy selection. | Accepts the IProxy[] object. To create this object, run the [Get-VBRViProxy](get-vbrviproxy.md) cmdlet. | False | Named | False |
 | iSCSI | For the EnableVMwareBackup parameter.  Defines that the storage works over the iSCSI protocol. | SwitchParameter | False | Named | False |
 | NFS | For the EnableVMwareBackup parameter.  Defines that the storage works over the NFS protocol. | SwitchParameter | False | Named | False |
@@ -74,11 +76,11 @@ Parameters
 | CreateRulesAutomatically | For the EnableVMwareBackup parameter.  Defines that the cmdlet will allow Veeam Backup & Replication to automatically create required SMB and NFS export rules on the storage system.  If you provide this parameter, the rules will be created automatically in case the proxies are unavailable. | SwitchParameter | False | Named | False |
 | NASNFS | For the EnableNASBackup parameter.  Defines that the storage works over the NFS protocol. | SwitchParameter | False | Named | False |
 | NASSMB | For the EnableNASBackup parameter.  Defines that the storage works over the SMB protocol. | SwitchParameter | False | Named | False |
-| NASProxy | For the EnableNASBackup parameter.  Specifies an array of proxies you want to use with this storage. | Accepts the VBRNASProxyServer object. To create this object, run the [Add-VBRNASProxyServer](add-vbrnasproxyserver.md) cmdlet. | False | Named | False |
+| NASProxy | For the EnableNASBackup parameter.  Specifies an array of proxies you want to use with this storage. | Accepts the VBRNASProxyServer[] object. To create this object, run the [Add-VBRNASProxyServer](add-vbrnasproxyserver.md) cmdlet. | False | Named | False |
 | NASCreateRulesAutomatically | For the EnableNASBackup parameter.  Defines that the cmdlet will allow Veeam Backup & Replication to automatically create required SMB and NFS export rules on the storage system.  If you provide this parameter, the rules will be created automatically in case the proxies are unavailable. | SwitchParameter | False | Named | False |
 | AgentFC | For the EnableAgentBackup parameter.  Defines that the storage works over the FS protocol. | SwitchParameter | False | Named | False |
 | AgentISCSI | For the EnableAgentBackup parameter.  Defines that the storage works over the iSCSI protocol. | SwitchParameter | False | Named | False |
-| AgentProxy | For the EnableAgentBackup parameter.  Specifies an array of proxies you want to use with this storage. | Accepts the VBRComputerFileProxyServer object. To create this object, run the [Add-VBRComputerFileProxyServer](add-vbrcomputerfileproxyserver.md) cmdlet. | False | Named | False |
+| AgentProxy | For the EnableAgentBackup parameter.  Specifies an array of proxies you want to use with this storage. | Accepts the VBRComputerFileProxyServer[] object. To create this object, run the [Add-VBRComputerFileProxyServer](add-vbrcomputerfileproxyserver.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
 
@@ -110,4 +112,5 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-VBRViProxy](get-vbrviproxy.md)
 
+Page updated 2026-06-04
 
