@@ -3,8 +3,8 @@ title: "GET /query?type=RestoreSession"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_query_restoresession.html"
-last_updated: "9/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /query?type=RestoreSession
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -39,10 +40,11 @@ Optional Parameters
 
 In the query, you can use the following parameters for filtering and sorting.
 
+Optional Parameters
+
 | Parameter | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the restore session resource, for example: urn:veeam:RestoreSession:19d68dbb-0f96-431c-9e61-9f5342c41e7c. |
-| Name | String | Name of the restore session resource, for example: sql02@2013-08-26 11:28:33. |
+| Name | String | Name of the restore session resource, for example: sql02@2025-08-26 11:28:33. |
 | Type | String | Type of the restore session. Possible values:   * FileLevelRestore * RestoreVm |
 | CreationTime | DateTime | Date and time when the restore session was started. The parameter accepts only UTC-formatted DateTime values, for example: 2025-08-14T12:31:30.389954Z. |
 | EndTime | DateTime | Date and time when the restore session was ended. The parameter accepts only UTC-formatted DateTime values |
@@ -64,8 +66,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -79,6 +82,7 @@ The example below returns an entity resource representation of a collection of r
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/query?type=RestoreSession&format=Entities&filter=VmDisplayName=="virt03-ubuntu01"    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/query?type=RestoreSession&format=Entities&filter=VmDisplayName=="virt03-ubuntu01"  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0">   <Entities>     <RestoreSessions>       <RestoreSession Type="RestoreSession" Href="https://localhost:9398/api/restoreSessions/1ade3f6c-e85f-4d47-aef8-e29e72e6d535?format=Entity" Name="virt03-ubuntu01@2025-06-01 13:40:59" VmDisplayName="virt03-ubuntu01" UID="urn:veeam:RestoreSession:1ade3f6c-e85f-4d47-aef8-e29e72e6d535">         <Links>           <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/beda8585-1354-451c-afe2-646dcf42afa6" Name="backupsrv29.tech.local" />           <Link Rel="Alternate" Type="RestoreSessionReference" Href="https://localhost:9398/api/restoreSessions/1ade3f6c-e85f-4d47-aef8-e29e72e6d535" Name="virt03-ubuntu01@2025-06-01 13:40:59" />         </Links>         <JobType>Failover</JobType>         <CreationTimeUTC>2025-06-01T13:40:59.823Z</CreationTimeUTC>         <EndTimeUTC>2025-06-01T13:41:46.397Z</EndTimeUTC>         <State>Stopped</State>         <Result>Success</Result>         <Progress>0</Progress>       </RestoreSession>     </RestoreSessions>   </Entities>   <PagingInfo PagesCount="1" PageSize="100" PageNum="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/query?type=RestoreSession&format=Entities&filter=VmDisplayName=="virt03-ubuntu01"&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/query?type=RestoreSession&format=Entities&filter=VmDisplayName=="virt03-ubuntu01"&pageSize=100&page=1" />     </Links>   </PagingInfo> </QueryResult> |
 
+Page updated 2026-07-29
 
