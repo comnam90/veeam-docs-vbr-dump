@@ -1,13 +1,13 @@
 ---
-title: "Step 7. Specify Data Transfer and Replica Settings"
+title: "Step 10. Specify Data Transfer and Replica Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_data_transfer.html"
-last_updated: "10/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 7. Specify Data Transfer and Replica Settings
+# Step 10. Specify Data Transfer and Replica Settings
 
 
 At the Policy Settings step of the wizard, select CDP proxies that must be used for the CDP policy, specify which suffix to add to replica names and CDP proxies availability:
@@ -28,20 +28,21 @@ Veeam Backup & Replication will assign CDP proxies for processing one by one. Be
 | Note |
 | We recommend that you deploy at least two CDP proxies: one CDP proxy in the production site and one CDP proxy in the disaster recovery site. |
 
-1. To test whether CDP proxies available in the backup infrastructure can handle replication, click Verify whether currently available resource can handle can handle CDP activity.
+1. To test whether CDP proxies available in the backup infrastructure can handle replication, click Verify whether currently available resource can handle CDP activity.
 
 Veeam Backup & Replication will analyze available CPU on all source and all target CDP proxies, the maximum disk write speed during the last hour, and will calculate approximate requirements for CDP proxies. In the CDP Infrastructure Assessment window, you will see the calculated values:
 
 * The CPU rows show CPU cores available on all proxies (source or target).
-* The Proxy RAM rows show RAM required for CDP and, in parenthesis, RAM available on all proxies (source or target). If values in the parentheses and near the paranthesis are the same, you need to upgrade proxies for which values coincide to provide more resources. For example, you can double up the amount of RAM.
+* The Proxy RAM rows show RAM required for CDP and, in parentheses, RAM available on all proxies (source or target). If values in the parentheses and near the parentheses are the same, you need to upgrade proxies for which values coincide to provide more resources. For example, you can double up the amount of RAM.
 * The Proxy Bandwidth rows show the maximum disk write speed during the last hour and, in parenthesis, available bandwidth based on available cores of source or target proxies.
 
-1. In the Replica name suffix field, specify a suffix that will be added to names of replicas.
+1. In the Replica name suffix field, specify a suffix that will be added to the names of replicas.
 
-![Step 7. Specify Data Transfer and Replica Settings](images/uni_cdp_policy_job_settings.webp "Specify policy settings")
+![Step 10. Specify Data Transfer and Replica Settings](images/uni_cdp_policy_job_settings.webp "Specify policy settings")
 
 Related Topics
 
 [How Universal CDP Works](uni_cdp_hiw.md)
 
+Page updated 2026-05-06
 
