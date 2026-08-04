@@ -3,8 +3,8 @@ title: "Removing Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_vesp_database.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Databases
@@ -16,4 +16,5 @@ To remove a database from the application scope, right-click a database in the n
 
 [![Removing Microsoft SharePoint Databases](images/remove_database.webp)](images/remove_database.webp "Removing Microsoft SharePoint Databases")
 
+Page updated 2026-08-03
 
