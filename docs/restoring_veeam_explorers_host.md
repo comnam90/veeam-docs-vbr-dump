@@ -3,8 +3,8 @@ title: "Step 4. Select ESXi Host for Snapshot Mounting"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_host.html"
-last_updated: "12/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Select ESXi Host for Snapshot Mounting
@@ -22,6 +22,7 @@ To specify a destination for the snapshot clone or virtual copy and temporary VM
 4. Next to the VM folder field, click Choose and select a folder where you want to place the temporary VM.
 5. Click OK.
 
-![Step 4. Select ESXi Host for Snapshot Mounting](images/application_item_restore_ad_location.webp)
+![Step 4. Select ESXi Host for Snapshot Mounting](images/application_item_restore_ad_location.webp "Specify Location for Temporary VM")
 
+Page updated 2026-02-20
 
