@@ -3,8 +3,8 @@ title: "Veeam Cloud Connect License"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_sp_license.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Cloud Connect License
@@ -52,7 +52,7 @@ During the grace period, Veeam Backup & Replication will show a warning that the
 
 After the grace period is over, tenant workloads are no longer processed. To continue using Veeam Backup & Replication, the SP must purchase a new license.
 
-The grace period is also valid for situations when the number points used by tenant workloads exceeds the total number of licensed points. To learn more, see [Exceeding License Limit](cloud_connect_sp_license.md#cc_lic_exceed).
+The grace period is also valid for situations when the number points used by tenant workloads exceeds the total number of licensed points. To learn more, see [Exceeding License Limit](#cc_lic_exceed).
 
 Exceeding License Limit
 
@@ -69,4 +69,5 @@ When the license is exceeded by more than 10% or 10 points, Veeam Backup & Repli
 
 If the license limit is exceeded for more than 20% or 20 points, plus the number of new points from the previous month, all workloads that use points exceeding the licensed number plus the allowed increase are no longer processed. Each time the backup console opens, Veeam Backup & Replication displays a notification with the number of points by which the license is exceeded.
 
+Page updated 2026-07-29
 
