@@ -3,8 +3,8 @@ title: "License Expiration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/license_grace.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # License Expiration
@@ -32,12 +32,13 @@ Before the license expires, Veeam Backup & Replication notifies you about soon l
 
 The number of days for notification and grace period depends on the type of license:
 
+Grace Period Duration
+
 | License Type | License Expiration Notification | Grace Period |
-| --- | --- | --- |
 | Subscription | 30 days | 30 days |
-| Perpetual | 14 days before Support expiration date | n/a |
-| Perpetual | 14 days before Support expiration date | n/a |
-| Rental | 7 days | 60 days |
+| Perpetual  Instance | 14 days before Support expiration date | n/a |
+| Perpetual  Socket | 14 days before Support expiration date | n/a |
+| Rental | 7 days | 30 days |
 | Evaluation | 30 days | 0 days |
 | NFR | 30 days | 0 days |
 | Promo | 7 days | n/a |
@@ -56,4 +57,5 @@ If you merged licenses with different expiration dates, the merged license will 
 
 In such case, you can update your Subscription license or continue using the Perpetual license. To continue using the Perpetual license, remove the Subscription license. For more information, see [Removing License](removing_license.md).
 
+Page updated 2026-07-22
 
