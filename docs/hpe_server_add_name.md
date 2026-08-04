@@ -3,8 +3,8 @@ title: "Step 2. Specify Domain Name or IP Address of HPE Morpheus VM Essentials 
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_server_add_name.html"
-last_updated: "2/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Domain Name or IP Address of HPE Morpheus VM Essentials Server
@@ -17,4 +17,5 @@ At the Name step of the wizard, do the following:
 
 ![Step 2. Specify Domain Name or IP Address of HPE Morpheus VM Essentials Server](images/hpe_server_add_name.webp)
 
+Page updated 2026-05-22
 
