@@ -3,8 +3,8 @@ title: "Authentication Against Database"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_auth_methods.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Authentication Against Database
@@ -14,8 +14,6 @@ In addition to the RMAN session, Veeam Plug-In for Oracle RMAN requires its own 
 
 * When you use operating system authentication, you can connect to the server and to the database using only the OS user credentials. With this authentication method, the machine with Veeam Plug-In does not store database credentials at all.
 * When you use database authentication, you can connect to the server using OS user credentials and to the database using database user credentials. This authentication method is required when OS authentication is disabled for the database, or when you do not want to grant the OS user extra permissions required to back up the database. To learn more about required permissions, see [Permissions](rman_plugin_permissions.md).
-
-Veeam Plug-In stores all specified credentials in the Veeam Plug-In configuration file.
 
 Considerations and Limitations
 
@@ -35,4 +33,5 @@ Related Tasks
 * [Configuring Plug-In on Linux and Unix](configuring_rman_plugin_lin.md#authmethodsrman)
 * [Configuring Plug-In on Microsoft Windows](configuring_rman_plugin_win.md#authmethods)
 
+Page updated 2026-07-29
 
