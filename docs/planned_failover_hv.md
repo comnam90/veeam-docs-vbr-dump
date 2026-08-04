@@ -3,8 +3,8 @@ title: "Planned Failover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/planned_failover_hv.html"
-last_updated: "1/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Planned Failover
@@ -41,7 +41,7 @@ Planned failover has the following limitations:
 
 * If you start planned failover for several VMs that are replicated with one replication job, these VMs will be processed one by one, not in parallel.
 * Each planned failover task for each VM is processed as a separate replica job session. If a backup proxy is not available and the session has to wait for resources, job sessions for other VMs in the same task cannot be started before the current session is finished.
-* The user account under which you launch the planned failover operation must have the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles in Veeam Backup & Replication. For more information, see [Managing Users and Roles](users_roles.md).
+* The user account under which you launch the planned failover operation must have the Backup Administrator role or Backup Operator and Restore Operator roles in Veeam Backup & Replication. For more information, see [Managing Users and Roles](users_roles.md).
 
 Related Topics
 
@@ -50,4 +50,5 @@ Related Topics
 * [Performing Failback](performing_failback_hv.md)
 * [Performing Permanent Failover](failover_permanent_hv.md)
 
+Page updated 2026-07-10
 
