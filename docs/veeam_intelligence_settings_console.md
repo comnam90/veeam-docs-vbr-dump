@@ -3,8 +3,8 @@ title: "Configuring Veeam Intelligence Settings Using Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_intelligence_settings_console.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Veeam Intelligence Settings Using Console
@@ -18,8 +18,18 @@ To configure Veeam Intelligence settings, do the following in the Veeam Backup &
 
 * To disable Veeam Intelligence and hide it in the user interface, select the Disabled option.
 * To enable the Veeam Intelligence basic mode, select the Basic option.
-* To enable the Veeam Intelligence advanced mode, select the Advanced option. For more information, see [Advanced Mode](veeam_ai_online_assistant.md#advanced_mode).
+* To enable the Veeam Intelligence advanced mode, select the Advanced option. For more information, see [Advanced Mode](veeam_ai_online_assistant_console.md#advanced_mode).
+
+If you select the Advanced option, you can additionally select the Enable full administrative access check box to let Veeam Intelligence perform privileged operations.
+
+|  |
+| --- |
+| Important |
+| Privileged operations may affect protected workloads, that is, modify or delete data, change system settings or run administrative scripts. Enable full administrative access only if you understand and accept the risks. |
+
+1. Click Apply to save the settings.
 
 ![Configuring Veeam Intelligence Settings Using Console](images/settings_veeam_intelligence.webp)
 
+Page updated 2026-07-08
 
