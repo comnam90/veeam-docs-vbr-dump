@@ -3,8 +3,8 @@ title: "Tape Drive Alerts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_alerts.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Tape Drive Alerts
@@ -81,4 +81,5 @@ Tape Drive Alerts
 | 57 | 0x39 | Interface failure | Critical | The tape drive has a problem with the automation interface:   1. Check the power to the automation system. 2. Check the cables and cable connections. 3. Call the supplier help line if problem persists. | Automation interface failure. |
 | 58 | 0x3a | Firmware failure | Warning | The tape drive has reset itself due to a detected firmware fault. If problem persists, call the supplier help line. | Firmware failure. |
 
+Page updated 2026-08-03
 
