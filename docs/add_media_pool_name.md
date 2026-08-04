@@ -3,8 +3,8 @@ title: "Step 2. Specify Media Pool Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_name.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Media Pool Name
@@ -17,4 +17,5 @@ At the Name step of the wizard, define basic description for the new media pool.
 
 ![Step 2. Specify Media Pool Name](images/add_media_pool_name.webp)
 
+Page updated 2026-08-03
 
