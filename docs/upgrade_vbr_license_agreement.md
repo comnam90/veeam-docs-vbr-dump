@@ -3,8 +3,8 @@ title: "Step 3. Read and Accept License Agreement"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_license_agreement.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Read and Accept License Agreement
@@ -14,4 +14,5 @@ At the License Agreement step of the wizard, read Veeam License Agreement and li
 
 ![Step 3. Read and Accept License Agreement](images/installation_accept_la.webp)
 
+Page updated 2026-08-03
 
