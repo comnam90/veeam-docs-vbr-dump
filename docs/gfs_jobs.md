@@ -3,8 +3,8 @@ title: "GFS Backup to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_jobs.html"
-last_updated: "3/7/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GFS Backup to Tape
@@ -12,21 +12,20 @@ product_version: "13.0.1.1071"
 
 The GFS tape job creates yearly archive for source machines by the GFS (Grandfather-Father-Son) scheme. The GFS archive includes one yearly backup and several quarterly, monthly, weekly and daily backups.
 
-You can create GFS backups for VMs and Veeam agent computers (physical machines) on tape.
-
-The GFS tape job does not process source machines. The job uses backups created by machine-to-disk jobs.
+You can create GFS backups for VMs and Veeam agent computers (physical machines) on tape. The GFS tape job does not process source machines, but the source backup files created by primary backup jobs.
 
 |  |
 | --- |
 | Note |
-| GFS backup to tape does not support unstructured data backup jobs or repositories storing unstructured data backups as a source. However, if the backup repository stores not only unstructured data backups, but also backups that can be processed by a GFS backup to tape job, you can add this repository to the GFS backup to tape job: unstructured data backups will be skipped from processing. |
+| GFS backup to tape is not supported for the following types of source backups:   * Unstructured data backup jobs or repositories storing unstructured data backups as a source.  * Veeam Plug-In for Enterprise Applications backup jobs or repositories storing Veeam Plug-in for Enterprise Applications backups as a source.   However, if the backup repository stores not only unstructured data backups or Veeam Plug-In backups, but also backups that can be processed by a GFS backup to tape job, you can add this repository to the GFS backup to tape job: the backups that are not supported will be skipped from processing. |
 
 GFS Media Sets
 
 To distinguish between the backup cycles, the GFS media pool has 5 predefined media sets: yearly, quarterly, monthly, weekly and daily.
 
+GFS Media Sets
+
 | Media Set | Restore Point Type |
-| --- | --- |
 | Yearly | Full backup or synthesized virtual full backup |
 | Quarterly |
 | Monthly |
@@ -53,4 +52,5 @@ Related Topics
 * [Creating GFS Tape Jobs](creating_gfs_tape_jobs.md)
 * [Viewing Backups on Tape](view_backups_on_tape.md)
 
+Page updated 2026-07-13
 
