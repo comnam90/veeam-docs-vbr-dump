@@ -3,8 +3,8 @@ title: "Backup from Secondary Storage Arrays"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_secondary_backup.html"
-last_updated: "2/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup from Secondary Storage Arrays
@@ -16,11 +16,13 @@ How Backup from Secondary Storage Systems Works
 
 Backup from snapshots on secondary storage arrays is similar to backup from storage snapshots on the primary storage array. The algorithm slightly differs for snapshot transfer and synchronous replication.
 
-1. Veeam Backup & Replication analyzes which VMs in the job host their disks on the storage system and checks the backup infrastructure to detect if there is a backup proxy that has a direct connection to the storage system.
-2. Veeam Backup & Replication detects whether the storage system uses synchronous replication or snapshot transfer, and whether backup from secondary storage array is possible.
-3. Veeam Backup & Replication triggers a VMware snapshot for a VM whose disks are hosted on the primary storage array.
-4. Veeam Backup & Replication requests the ESXi host to retrieve metadata about the layout of VM disks (physical addresses of data blocks) and also gets Changed Block Tracking (CBT) information for VMs hosted on the storage system.
-5. Veeam Backup & Replication instructs the storage system to create a temporary storage snapshot. If snapshot transfer is used — on the primary storage array. If synchronous replication — on the primary and secondary storage arrays. However, only snapshot on the secondary storage array will be used.
+1. Veeam Backup & Replication analyzes which VMs in the job host their disks on the storage system and checks the backup infrastructure to detect if there is a backup proxy that has a direct connection to the storage system. Veeam Backup & Replication also divides the VMs into groups based on the storage resources they share. VMs are placed in the same group if they reside on the same volume or LUN or belong to the same storage replication relationship.
+
+1. Veeam Backup & Replication detects whether the storage system uses synchronous replication or snapshot transfer, and whether backup from secondary storage array is possible.
+
+1. Veeam Backup & Replication triggers a VMware snapshot for a VM whose disks are hosted on the primary storage array.
+2. Veeam Backup & Replication requests the ESXi host to retrieve metadata about the layout of VM disks (physical addresses of data blocks) and also gets Changed Block Tracking (CBT) information for VMs hosted on the storage system.
+3. Veeam Backup & Replication instructs the storage system to create a temporary storage snapshot. If snapshot transfer is used — on the primary storage array. If synchronous replication — on the primary and secondary storage arrays. However, only snapshot on the secondary storage array will be used.
 
 The created temporary snapshots capture the VMware vSphere VM snapshot. The VMware vSphere VM snapshot is then deleted.
 
@@ -37,10 +39,10 @@ The created temporary snapshots capture the VMware vSphere VM snapshot. The VMwa
 2. The backup job retrieves VM data from the mounted temporary storage snapshot.
 3. When the job finishes processing the VM, Veeam Backup & Replication instructs the storage system to delete the temporary snapshot on the primary and secondary storage arrays.
 
-Note the following:
-
-* [For HPE Alletra 5000, 6000, Nimble] On HPE Alletra 5000, 6000, Nimble storage systems, snapshot transport is triggered as soon as you create a new storage snapshot. For this reason, launch of snapshot transport and deletion of VMware snapshots are performed in parallel.
-* [For NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG and HPE Alletra 5000, 6000, Nimble] Veeam Backup & Replication creates auxiliary snapshots on the primary storage system. The number of storage snapshots in the snapshot chain cannot be fewer than 1.
+|  |
+| --- |
+| Note |
+| * Veeam Backup & Replication preserves the VM processing order within each group. However, because groups are processed in parallel, a group may start before another group that contains higher-priority VMs — so the actual start order can differ from the order configured in the job. If you need specific VMs to be processed first, add them to a separate job. * If a job also contains VMs whose disks are not on a supported storage system, Veeam Backup & Replication does not make them wait for the storage-snapshot preparation. It triggers their VMware snapshots and starts processing them immediately, in parallel with VMs processed from storage snapshots.  * [For HPE Alletra 5000, 6000, Nimble] On HPE Alletra 5000, 6000, Nimble storage systems, snapshot transport is triggered as soon as you create a new storage snapshot. For this reason, launch of snapshot transport and deletion of VMware snapshots are performed in parallel. * [For NetApp ONTAP, Fujitsu ETERNUS HX/AX, Lenovo ThinkSystem DM/DG and HPE Alletra 5000, 6000, Nimble] Veeam Backup & Replication creates auxiliary snapshots on the primary storage system. The number of storage snapshots in the snapshot chain cannot be fewer than 1. |
 
 ![Backup from Secondary Storage Arrays](images/backup_from_snapmirror_vault.webp)
 
@@ -63,4 +65,5 @@ Related Topics
 
 [Configuring Backup from Snapshots on Secondary Storage Arrays](storage_secondary_backup_perform.md)
 
+Page updated 2026-07-08
 
