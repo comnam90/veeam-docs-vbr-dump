@@ -3,8 +3,8 @@ title: "Maintenance Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_advanced_maintenance_vm.html"
-last_updated: "7/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Maintenance Settings
@@ -12,7 +12,10 @@ product_version: "13.0.1.1071"
 
 You can instruct Veeam Backup & Replication to periodically perform the health check for the latest restore point in the backup chain and run maintenance operations to make sure that the backup chain remains valid and consistent.
 
-To specify the health check and maintenance settings, at the Storage step of the New Backup Job wizard, click Advanced job settings and click the Maintenance tab.
+To specify the health check and maintenance settings:
+
+1. At the Storage step of the wizard, click Advanced job settings.
+2. Click the Maintenance tab.
 
 Specifying Health Check Settings
 
@@ -33,7 +36,7 @@ To specify maintenance settings for the backup job:
 | Note |
 | Consider the following:   * If a VM is no longer available (for example, it was deleted or excluded from the job), Veeam Backup & Replication will keep its data in the backup repository for the period that you have specified. When this period is over, data of the deleted VM will be removed from the backup repository. * By default, the retention period for deleted VM data is 14 days. It is strongly recommended that you set the retention period to 3 days or more to prevent unwanted data loss. For more information, see [Retention Policy for Deleted Items](retention_deleted_vms.md). |
 
-1. To periodically compact a full backup, select the Defragment and compact full backup file check box.
+1. To periodically compact a full backup, select the Defragment and compact full backup file on check box.
 
 |  |
 | --- |
@@ -42,7 +45,7 @@ To specify maintenance settings for the backup job:
 
 1. To specify the schedule for the compact operation, click the Configure link.
 2. In the Schedule Settings window, specify whether you want to compact a full backup monthly or weekly and specify the schedule settings.
-3. If you want to save this set of settings as the default one, click Save as default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
+3. If you want to save this set of settings as the default one, click Save as Default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
 
 |  |
 | --- |
@@ -51,4 +54,5 @@ To specify maintenance settings for the backup job:
 
 ![Maintenance Settings](images/vm_backup_job_settings_maintenance.webp)
 
+Page updated 2026-06-23
 
