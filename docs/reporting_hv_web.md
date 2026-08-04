@@ -3,19 +3,20 @@ title: "Reporting Using Web UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/reporting_hv_web.html"
-last_updated: "8/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Reporting Using Web UI
 
 
-When you run a job, Veeam Backup & Replication saves the job statistics and operation data to the configuration database. You can view real-time statistics for any performed job and generate reports with statistics data for any job or separate job session.
+When you run a job, Veeam Backup & Replication saves the job statistics and operation data to the configuration database. You can view real-time statistics and detailed session results for any performed job, and review job logs and events.
 
 In This Section
 
-* [Viewing Real-Time Statistics](realtime_statistics_hv_web.md)
-* [Viewing History Statistics](history_statistics_hv_web.md)
+* [Viewing Backup Job Details](realtime_statistics_hv_web.md)
+* [Viewing Logs and Events](history_statistics_hv_web.md)
 * [Viewing Job Session Results](session_results_hv_web.md)
 
+Page updated 2026-07-22
 
