@@ -3,8 +3,8 @@ title: "Step 3. Select Failback Destination"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_dest.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Select Failback Destination
@@ -59,4 +59,5 @@ When you click Next, Veeam Backup & Replication will check storage policies in t
 
 For more information, see [Storage Profiles](storage_profile_restore.md).
 
+Page updated 2026-08-03
 
