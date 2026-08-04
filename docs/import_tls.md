@@ -3,8 +3,8 @@ title: "Importing Certificate from Certificate Store"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tls.html"
-last_updated: "4/8/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Importing Certificate from Certificate Store
@@ -33,4 +33,5 @@ To select a certificate from the certificate store, do the following:
 1. At the Summary step of the wizard, review the certificate properties.
 2. Click Finish to apply the certificate.
 
+Page updated 2026-07-14
 
