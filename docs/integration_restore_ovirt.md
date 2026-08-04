@@ -3,8 +3,8 @@ title: "Restoring Veeam Agent Backup to oVirt KVM VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_restore_ovirt.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Veeam Agent Backup to oVirt KVM VM
@@ -29,8 +29,11 @@ If you restore a Veeam Agent computer to an oVirt KVM VM, consider the following
 
 Restore to oVirt KVM VM
 
-The procedure of restore to an oVirt KVM VM for a Veeam Agent computer practically does not differ from the same procedure for a VM. To learn more, see the [Performing VM Restore](https://helpcenter.veeam.com/docs/vbrhv/userguide/restore_to_rhv.html?ver=6) section in the Veeam Backup for Oracle Linux Virtualization Manager and Red Hat Virtualization User Guide.
+The procedure of restore to an oVirt KVM VM for a Veeam Agent computer practically does not differ from the same procedure for a VM. To learn more, see the [Performing VM Restore](ovirt_restore_to_rhv)
+
+[![Restore Veeam Agent Backup to oVirt KVM](images/agent_restore_ovirt.webp)](images/agent_restore_ovirt.webp "Restore Veeam Agent Backup to oVirt KVM")
 
 [![Restore Veeam Agent Backup to oVirt KVM](images/am_agent_restore_ovirt.webp)](images/am_agent_restore_ovirt.webp "Restore Veeam Agent Backup to oVirt KVM")
 
+Page updated 2026-08-03
 
