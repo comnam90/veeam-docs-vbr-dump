@@ -3,8 +3,8 @@ title: "Rescanning Replicas"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_rescanning_replicas.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Rescanning Replicas
@@ -23,4 +23,5 @@ To rescan replicas, do the following:
 
 [![vCD Replica Rescan](images/vcd_replica_rescan.webp)](images/vcd_replica_rescan.webp "vCD Replica Rescan")
 
+Page updated 2026-08-03
 
