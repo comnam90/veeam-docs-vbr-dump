@@ -3,8 +3,8 @@ title: "Add-VBRS3GlacierCompatibleRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrs3glaciercompatiblerepository.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRS3GlacierCompatibleRepository
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRS3GlacierCompatibleRepository -AmazonS3Folder <VBRAmazonS3Folder> -Connection <VBRAmazonS3CompatibleConnection> [-Name <string>] [-Description <string>] [-EnableBackupImmutability] [-ArchiverAppliance <CHost>] [-ForceOwnershipChange] [-Force]  [<CommonParameters>] |
+| Add-VBRS3GlacierCompatibleRepository -AmazonS3Folder <VBRAmazonS3Folder> -Connection <VBRAmazonS3CompatibleConnection> [-Name <string>] [-Description <string>] [-EnableBackupImmutability] [-ArchiverAppliance <CHost>] [-ForceOwnershipChange] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-EnableReadOnlyMode] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -37,7 +37,7 @@ Parameters
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | AmazonS3Folder | Specifies a folder for S3 compatible object storage with data archiving. Veeam Backup & Replication will move backup files into this folder. | Accepts the VBRAmazonS3Folder object. To create this object, run the [New-VBRAmazonS3Folder](new-vbramazons3folder.md) cmdlet. To get this object, run the [Get-VBRAmazonS3Folder](get-vbramazons3folder.md) cmdlet. | True | Named | True (ByValue) |
 | Connection | Specifies an active session with S3 compatible object storage that supports data archiving. The cmdlet use it to add S3 compatible object storage as a backup repository. | Accepts the VBRAmazonS3Connection object. To get this object, run the [Connect-VBRAmazonS3CompatibleService](connect-vbramazons3compatibleservice.md) cmdlet and set the ArchiveTier property as the ServiceType parameter value. | True | Named | False |
 | Name | Specifies a name of S3 compatible object storage with data archiving. The cmdlet will add S3 compatible object storage with this name. | String | False | Named | False |
@@ -45,6 +45,9 @@ Parameters
 | EnableBackupImmutability | Enables immutability for S3 compatible object storage with data archiving.  Default: False. | SwitchParameter | False | Named | False |
 | ArchiverAppliance | Specifies the archiver appliance. The cmdlet will use it to transfer data from S3 compatible object storage to S3 compatible object storage with data archiving.  You can use either Windows-based or Linux-based appliance. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the folder for S3 compatible that supports data archiving.  If you do not provide this parameter and the S3 compatible object storage folder is owned by another host, you will not be able to add S3 compatible object storage to the backup infrastructure.  Default: False. | SwitchParameter | False | Named | False |
+| ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
+| ImmutabilityPeriod | For the EnableBackupImmutability parameter.  Defines the immutability period in days.  Default: 30 days.  Maximum: 999 days. | Int32 | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add S3 compatible object storage with data archiving without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -83,4 +86,5 @@ Related Commands
 * [Connect-VBRAmazonS3CompatibleService](connect-vbramazons3compatibleservice.md)
 * [New-VBRAmazonS3Folder](new-vbramazons3folder.md)
 
+Page updated 2026-05-27
 
