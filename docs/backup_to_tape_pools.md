@@ -3,8 +3,8 @@ title: "Step 4. Choose Media Pool for Full Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_pools.html"
-last_updated: "10/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Choose Media Pool for Full Backups
@@ -32,10 +32,11 @@ You can select a media pool or a GFS media pool. Depending on the selected type,
 
 In the Full Backup Schedule window, you can enable the virtual full backup and configure its schedule. For more information, see [Virtual Full Backup](virtual_full_backup.md).
 
-Depending on the backup chain type of the source job, there are two possible options:
+Depending on the backup chain type of the source job, there are three possible options:
 
 * If the source job produces a forever incremental backup chain or is a backup copy job without GFS option enabled, Veeam Backup & Replication automatically enables virtual full backups for this job. In this case, the virtual full cannot be switched off. You can configure the virtual full backup schedule at this step of the wizard.
 * For the source jobs with other backup chain types, you can enable the virtual full backup manually. Select the Export virtual full backup even for backup chains with periodic fulls checkbox and configure the virtual full backup schedule.
+* For Veeam Plug-In backup to tape jobs, select the Export virtual full backup even for backup chains with periodic fulls checkbox if you want to create periodic full backups of your database servers. If the checkbox is not selected, the backup to tape job will create only incremental restore points. For more information about restore points for Veeam Plug-In backup to tape jobs, see [Backup to Tape for Veeam Plug-In Backups](plugins_backup_to_tape.md).
 
 |  |
 | --- |
@@ -44,4 +45,5 @@ Depending on the backup chain type of the source job, there are two possible opt
 
 ![Step 4. Choose Media Pool for Full Backups](images/backup_to_tape_schedule_virtual_full.webp)
 
+Page updated 2026-07-23
 
