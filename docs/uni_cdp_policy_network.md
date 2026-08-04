@@ -1,13 +1,13 @@
 ---
-title: "Step 6. Configure Network Mapping"
+title: "Step 7. Configure Network Mapping"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_network.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 6. Configure Network Mapping
+# Step 7. Configure Network Mapping
 
 
 The Network step of the wizard is available if you have selected the Network remapping option at the [Name](uni_cdp_policy_name.md) step.
@@ -25,6 +25,7 @@ To specify a network for an individual workload:
 3. Select the workload in the list and click Network. Alternatively, you can open the workload and specify a network for each network adapter.
 4. In the Select Network window, select the network in the DR site to which the replica will be connected and click OK.
 
-![Step 6. Configure Network Mapping](images/uni_cdp_policy_network.webp "Specify network mapping")
+![Step 7. Configure Network Mapping](images/uni_cdp_policy_network.webp "Specify network mapping")
 
+Page updated 2026-06-12
 
