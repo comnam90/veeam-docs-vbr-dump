@@ -3,8 +3,8 @@ title: "Get-VEHANABackup"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/get-vehanabackup.html"
-last_updated: "9/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VEHANABackup
@@ -32,13 +32,14 @@ This cmdlet returns an array of backups created by Veeam Plug-in for SAP HANA. A
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies an array of backup names. The cmdlet will return SAP HANA backups with these names.  This parameter accepts wildcard characters. | String[] | False | Named | False |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -58,4 +59,5 @@ Examples
 | --- | --- |
 | This command returns an array of SAP HANA backups with the specified names. Use the wildcard \* character to get all backups whose names begin with "SAP HANA". Save the result to the $backup variable to be able to use it with other cmdlets.  |  | | --- | | $backup = Get-VEHANABackup -Name "SAP HANA\*" | |
 
+Page updated 2026-01-30
 
