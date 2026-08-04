@@ -3,8 +3,8 @@ title: "GET /cdpReplicaTaskSessions/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_cdpreplicatasksessions_id.html"
-last_updated: "9/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /cdpReplicaTaskSessions/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,10 +60,11 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the CDP replication task session, for example: urn:veeam:CdpReplicaTaskSession:ad86fed0-4288-47ba-a7ab-0fca64d3ba5a. |
-| Name | String | Name of the CDP replication task session, for example: virt03-ubuntu01@2021-02-12 00:00:10. |
+| Name | String | Name of the CDP replication task session, for example: virt03-ubuntu01@2025-02-12 00:00:10. |
 | PolicySessionUid | UidType | UID of the CDP policy session parent to the CDP replication task session resource, for example: urn:veeam:CdpReplicaSession:6b872a71-51e8-437a-8d45-5c6494b92f3f. |
 | CreationTimeUTC | DateTime | Date and time when the CDP replication task session was launched. The parameter accepts only UTC-formatted DateTime values, for example: 2025-08-14T12:31:30.389954Z. |
 | EndTimeUTC | DateTime | Date and time when the CDP replication task session was completed. The parameter accepts only UTC-formatted DateTime values, for example: 2025-08-14T12:31:31.000000Z. |
@@ -74,8 +77,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the CDP policy was configured. |
 | /cdpReplicaSessions/{ID} | Up | URL of the [/cdpReplicaSessions/{ID}](cdpreplicasessions_id.md) resource — a parent CDP replication session. |
 | /cdpReplicaTaskSessions/{ID} | Alternate | Alternate URL of the [/cdpReplicaTaskSessions/{ID}](cdpreplicatasksessions_id.md) resource. |
@@ -86,6 +90,7 @@ The example request below returns an entity resource representation of a CDP rep
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/cdpReplicaTaskSessions/2ec4d35f-b5d8-4cb3-9d11-12e1d5792625?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body: |
+| Request:  GET https://localhost:9398/api/cdpReplicaTaskSessions/2ec4d35f-b5d8-4cb3-9d11-12e1d5792625?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <CdpReplicaTaskSession xmlns="http://www.veeam.com/ent/v1.0" Type="CdpReplicaTaskSession" Href="https://localhost:9398/api/replicaTaskSessions/2ec4d35f-b5d8-4cb3-9d11-12e1d5792625?format=Entity" Name="virt03-ubuntu01@2025-02-12 00:00:10" UID="urn:veeam:CdpReplicaTaskSession:2ec4d35f-b5d8-4cb3-9d11-12e1d5792625" VmDisplayName="virt03-ubuntu01">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/cca0b96b-4924-4461-8899-b831bc00176e" Name="enterprise03.tech.local" />     <Link Rel="Up" Type="CdpReplicaSessionReference" Href="https://localhost:9398/api/cdpReplicaSessions/6b872a71-51e8-437a-8d45-5c6494b92f3f" Name="CDP Policy 1@2025-02-11 19:08:36" />     <Link Rel="Alternate" Type="CdpReplicaTaskSessionReference" Href="https://localhost:9398/api/cdpReplicaTaskSessions/2ec4d35f-b5d8-4cb3-9d11-12e1d5792625" Name="virt03-ubuntu01@2025-02-12 00:00:10" />   </Links>   <PolicySessionUid>urn:veeam:CdpReplicaSession:6b872a71-51e8-437a-8d45-5c6494b92f3f</PolicySessionUid>   <CreationTimeUTC>2025-02-12T00:00:10.457Z</CreationTimeUTC>   <State>InProgress</State>   <Result>Success</Result>   <TotalSize>17179869184</TotalSize> </CdpReplicaTaskSession> |
 
+Page updated 2026-07-28
 
