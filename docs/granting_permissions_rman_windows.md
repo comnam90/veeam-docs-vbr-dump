@@ -3,8 +3,8 @@ title: "Granting User Permissions on Microsoft Windows Machines"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_rman_windows.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Granting User Permissions on Microsoft Windows Machines
@@ -16,7 +16,7 @@ Granting Permissions to the Plug-In Configuration File in Graphic User Interface
 
 1. Create a new user group:
 
-1. Launch Computer Management and expand the Tools > Local User and Groups node.
+1. Launch Computer Management and expand the System Tools > Local Users and Groups node.
 2. Right-click the Groups node and select New Group.
 3. Specify group properties and save the group.
 
@@ -88,4 +88,5 @@ where:
 * <configFilePAth> is the path to the plug-in configuration file. The default path is %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\veeam\_config.xml.
 * newACL is the name of the new access control list.
 
+Page updated 2026-07-07
 
