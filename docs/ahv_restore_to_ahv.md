@@ -1,13 +1,13 @@
 ---
-title: "Performing VM Restore"
+title: "VM Restore Using Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_to_ahv.html"
-last_updated: "1/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Performing VM Restore
+# VM Restore Using Console
 
 
 In case a disaster strikes, you can restore an entire Nutanix AHV VM from a backup or snapshot. Veeam Plug-in for Nutanix AHV allows you to restore one or more VMs at a time, to the original location or to a new location.
@@ -16,22 +16,26 @@ Supported Workloads
 
 To restore machines to a Nutanix AHV cluster, you can use the following backups and snapshots:
 
-* Snapshots of Nutanix AHV PDs created manually in Nutanix AHVPrism Central or Prism Element console
-* Snapshots of Nutanix AHV VMs created manually in Nutanix AHVPrism Central or Prism Element console
+* Snapshots of Nutanix AHV PDs created manually in Nutanix AHV Prism Central or Prism Element console
+* Snapshots of Nutanix AHV VMs created manually in Nutanix AHV Prism Central or Prism Element console
 * Backups of Nutanix AHV VMs created by Veeam Plug-in for Nutanix AHV (including VMs with volume groups attached and VMs with no disks attached)
 
 * Backups of Microsoft Hyper-V and VMware vSphere VMs created by Veeam Backup & Replication
 
-* Backups of oVirt KVM VMs created by Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization
+* Backups of oVirt VMs created by Veeam Plug-in for oVirt KVM
+
 * Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE
 
-* Backups of Scale Computing HyperCore VMs created by Veeam Plug-in for Scale Computing HyperCore
+* Backups of Scale Computing HyperCore VMs created by Scale Computing HyperCore
+
+* Backups of HPE Morpheus VM Essentials VMs created by Veeam Plug-in for HPE Morpheus VM Essentials
 
 * Backups of VMs created by vCloud Director
-* Backups of Amazon EC2 instances created by Veeam Backup for AWS
 
-* Backups of Microsoft Azure VMs created by Veeam Backup for Microsoft Azure
-* Backups of Google Cloud VM instances created by Veeam Backup for Google Cloud
+* Backups of Amazon EC2 instances created by Veeam Plug-in for AWS
+
+* Backups of Microsoft Azure VMs created by Veeam Plug-in for Microsoft Azure
+* Backups of Google Cloud VMs instances created by Veeam Plug-in for Google Cloud
 
 * Backups of virtual and physical machines created by Veeam Agent for Microsoft Windows and Veeam Agent for Linux
 
@@ -59,4 +63,5 @@ To restore a protected VM, do the following:
 9. [Specify a restore reason](ahv_restore_to_ahv_reason.md).
 10. [Verify restore settings](ahv_restore_to_ahv_summary.md).
 
+Page updated 2026-07-16
 
