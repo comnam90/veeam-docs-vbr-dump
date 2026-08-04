@@ -3,8 +3,8 @@ title: "PUT /cloud/tenants/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/put_tenants_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # PUT /cloud/tenants/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Content-Type | True | Identifies the format of the request body message. Possible values:   * application/xml * application/json |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
@@ -43,8 +44,9 @@ In the request body, the client must send parameters for the tenant account whos
 
 The request body must contain the following elements:
 
+Request Body
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | Password | String | Password for the tenant account. | Yes | 0/1 |
 | Description | String | Description for the tenant account. | Yes | 0/1 |
 | Enabled | Boolean | Defines if the tenant account must be in the enabled or disabled state. | Yes | 0/1 |
@@ -52,7 +54,7 @@ The request body must contain the following elements:
 | MaxConcurrentTasks | Int | Maximum number of concurrent tasks for the tenant. | Yes | 0/1 |
 | BackupProtectionEnabled | Boolean | Defines whether backups deleted by a tenant will be placed to the recycle bin on the service provider side. | Yes | 0/1 |
 | BackupProtectionPeriod | Int | Number of days to keep deleted tenant backups in the recycle bin. | Yes | 0/1 |
-| CloudTenantResource | CloudTenant | Defines the storage quota on the cloud backup repository that must be assigned to the tenant. You can assign several storage quotas on different cloud repositories to one tenant. For details on storage quota settings, see [Backup Resource Options](#resource). | No | 1/1 |
+| CloudTenantResource | CloudTenant Resource | Defines the storage quota on the cloud backup repository that must be assigned to the tenant. You can assign several storage quotas on different cloud repositories to one tenant. For details on storage quota settings, see [Backup Resource Options](#resource). | No | 1/1 |
 | CloudTenantComputeResource | CloudTenantComputeResource | Defines settings for cloud replication resources that must be assigned to the tenant. You can subscribe one tenant to one or several hardware plans that utilize resources of the same virtualization platform — VMware vSphere or Microsoft Hyper-V. For details on cloud replication settings, see [Compute Resource Options](#computeresource). | No | 1/1 |
 | TenantType | CloudTenantType | Type of the tenant account whose settings must be modified. Possible values:   * Standalone * Vcd * ActiveDirectory | No | 1/1 |
 | CloudGatewayPools | CloudGatewayPoolEntityListType | Specifies the cloud gateway pool assigned to the tenant account. For details, see [Cloud Gateway Pool Options](#cloudgatewayoptions). | Yes | 0/1 |
@@ -64,20 +66,21 @@ XML Representation
 
 |  |
 | --- |
-| <?xml version="1.0" encoding="utf-8"?> |
+| <?xml version="1.0" encoding="utf-8"?> <CloudTenant Type="CloudTenant" Href="https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7?format=Entity" Name="ABC Company" UID="urn:veeam:CloudTenant:b25f5f1d-a3c3-45ed-af23-9ef31a94dac7" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Description>Tenant account for ABC Company</Description>   <Enabled>true</Enabled>   <LeaseOptions Enabled="false"/>   <Resources>     <CloudTenantResource Type="CloudTenantResource" Href="https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/resources/2fcc7f11-2a33-448d-a242-ba8f0618c97b" Id="2fcc7f11-2a33-448d-a242-ba8f0618c97b">       <RepositoryQuota>         <DisplayName>ABC Cloud Vol1</DisplayName>         <RepositoryUid>urn:veeam:Repository:a0f35f34-8d58-4470-b52d-071e1417732a</RepositoryUid>         <WanAcceleratorUid>urn:veeam:WanAccelerator:34ebeeb4-75d0-4e71-b315-fbc16eb2975f</WanAcceleratorUid>         <Quota>307200</Quota>       </RepositoryQuota>     </CloudTenantResource>     <CloudTenantResource Type="CloudTenantResource" Href="https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/resources/8c6aa6b6-4668-4f81-9729-60c56b9b300b" Id="8c6aa6b6-4668-4f81-9729-60c56b9b300b">       <RepositoryQuota>         <DisplayName>Cloud Repository 2</DisplayName>         <RepositoryUid>urn:veeam:Repository:0a9c15f5-bc17-4848-a14b-b2ec3f9919ea</RepositoryUid>         <Quota>102400</Quota>       </RepositoryQuota>     </CloudTenantResource>   </Resources>   <LastActive>2025-01-04T21:12:52Z</LastActive>   <ComputeResources>     <CloudTenantComputeResource Type="CloudTenantComputeResource" Href="https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/computeResources/25f485fd-06e3-4ee2-9703-465c4d8c2fae" Id="25f485fd-06e3-4ee2-9703-465c4d8c2fae">       <CloudHardwarePlanUid>urn:veeam:CloudHardwarePlan:91156f8d-8bd3-44af-bec3-b6ac2ea24288</CloudHardwarePlanUid>       <WanAcceleratorUid>urn:veeam:WanAccelerator:34ebeeb4-75d0-4e71-b315-fbc16eb2975f</WanAcceleratorUid>       <PlatformType>VMware</PlatformType>       <UseNetworkFailoverResources>true</UseNetworkFailoverResources>       <NetworkAppliance>         <Name>Cloud Appliance ABC Company(esx01)</Name>         <ProductionNetwork>VM Network</ProductionNetwork>         <ObtainIPAddressAutomatically>true</ObtainIPAddressAutomatically>         <ViDistributedSwitchUuid/>         <ProductionNetworkUnderDvs>false</ProductionNetworkUnderDvs>       </NetworkAppliance>       <ComputeResourceStats>         <MemoryUsageMb>8192</MemoryUsageMb>         <CPUCount>2</CPUCount>         <StorageResourceStats>           <StorageResourceStat>             <StorageName>Cloud Replicas</StorageName>             <StorageUsageGb>35</StorageUsageGb>             <StorageLimitGb>300</StorageLimitGb>           </StorageResourceStat>         </StorageResourceStats>       </ComputeResourceStats>     </CloudTenantComputeResource>   </ComputeResources>   <ThrottlingEnabled>false</ThrottlingEnabled>   <ThrottlingSpeedLimit>10</ThrottlingSpeedLimit>   <ThrottlingSpeedUnit>MBps</ThrottlingSpeedUnit>   <PublicIpCount>2</PublicIpCount>   <BackupCount>1</BackupCount>   <ReplicaCount>2</ReplicaCount>   <MaxConcurrentTasks>2</MaxConcurrentTasks>   <BackupProtectionEnabled>true</BackupProtectionEnabled>   <BackupProtectionPeriod>5</BackupProtectionPeriod>   <BackupProtectionPeriod>5</BackupProtectionPeriod>   <TenantType>     <StandaloneTenant>       <TenantCredentials>         <Username>ABC Company</Username>       </TenantCredentials>     </StandaloneTenant>   </TenantType>   <FailoverToOthersGatewaysIfFail>true</FailoverToOthersGatewaysIfFail> </CloudTenant> |
 
 JSON Representation
 
 |  |
 | --- |
-| {   "Description": "Tenant account for ABC Company",   "Enabled": true,   "LeaseOptions": {     "Enabled": false   },   "Resources": {     "CloudTenantResources": [       {         "RepositoryQuota": {           "DisplayName": "ABC Cloud Vol1",           "RepositoryUid": "urn:veeam:Repository:a0f35f34-8d58-4470-b52d-071e1417732a",           "WanAcceleratorUid": "urn:veeam:WanAccelerator:34ebeeb4-75d0-4e71-b315-fbc16eb2975f",           "Quota": 307200         },         "Id": "2fcc7f11-2a33-448d-a242-ba8f0618c97b",         "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/resources/2fcc7f11-2a33-448d-a242-ba8f0618c97b",         "Type": "CloudTenantResource"       },       {         "RepositoryQuota": {           "DisplayName": "Cloud Repository 2",           "RepositoryUid": "urn:veeam:Repository:0a9c15f5-bc17-4848-a14b-b2ec3f9919ea",           "Quota": 102400         },         "Id": "8c6aa6b6-4668-4f81-9729-60c56b9b300b",         "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/resources/8c6aa6b6-4668-4f81-9729-60c56b9b300b",         "Type": "CloudTenantResource"       }     ]   },   "LastActive": "2016-01-04T21:12:52Z",   "ComputeResources": {     "CloudTenantComputeResources": [       {         "CloudHardwarePlanUid": "urn:veeam:CloudHardwarePlan:91156f8d-8bd3-44af-bec3-b6ac2ea24288",         "WanAcceleratorUid": "urn:veeam:WanAccelerator:34ebeeb4-75d0-4e71-b315-fbc16eb2975f",         "PlatformType": "VMware",         "UseNetworkFailoverResources": true,         "NetworkAppliance": {           "Name": "Cloud Appliance ABC Company(esx01)",           "ProductionNetwork": "VM Network",           "ObtainIPAddressAutomatically": true,           "ViDistributedSwitchUuid": "",           "ProductionNetworkUnderDvs": false         },         "ComputeResourceStats": {           "MemoryUsageMb": 8192,           "CpuCount": 2,           "StorageResourceStats": {             "StorageResourceStats": [               {                 "StorageName": "Cloud Replicas",                 "StorageUsageGb": 35,                 "StorageLimitGb": 300               }             ]           }         },         "Id": "25f485fd-06e3-4ee2-9703-465c4d8c2fae",         "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/computeResources/25f485fd-06e3-4ee2-9703-465c4d8c2fae",         "Type": "CloudTenantComputeResource"       }     ]   },   "ThrottlingEnabled": false,   "ThrottlingSpeedLimit": 10,   "ThrottlingSpeedUnit": "MBps",   "PublicIpCount": 2,   "BackupCount": 1,   "ReplicaCount": 2,   "MaxConcurrentTasks": 2,   "BackupProtectionEnabled": true,   "BackupProtectionPeriod": 5,   "TenantType": {     "StandaloneTenant": {       "TenantCredentials": {         "Username": "ABC Company"       }     }   },   "FailoverToOthersGatewaysIfFail": true,   "Name": "ABC Company",   "UID": "urn:veeam:CloudTenant:b25f5f1d-a3c3-45ed-af23-9ef31a94dac7",   "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7?format\u003dEntity",   "Type": "CloudTenant"  } |
+| {   "Description": "Tenant account for ABC Company",   "Enabled": true,   "LeaseOptions": {     "Enabled": false   },   "Resources": {     "CloudTenantResources": [       {         "RepositoryQuota": {           "DisplayName": "ABC Cloud Vol1",           "RepositoryUid": "urn:veeam:Repository:a0f35f34-8d58-4470-b52d-071e1417732a",           "WanAcceleratorUid": "urn:veeam:WanAccelerator:34ebeeb4-75d0-4e71-b315-fbc16eb2975f",           "Quota": 307200         },         "Id": "2fcc7f11-2a33-448d-a242-ba8f0618c97b",         "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/resources/2fcc7f11-2a33-448d-a242-ba8f0618c97b",         "Type": "CloudTenantResource"       },       {         "RepositoryQuota": {           "DisplayName": "Cloud Repository 2",           "RepositoryUid": "urn:veeam:Repository:0a9c15f5-bc17-4848-a14b-b2ec3f9919ea",           "Quota": 102400         },         "Id": "8c6aa6b6-4668-4f81-9729-60c56b9b300b",         "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/resources/8c6aa6b6-4668-4f81-9729-60c56b9b300b",         "Type": "CloudTenantResource"       }     ]   },   "LastActive": "2025-01-04T21:12:52Z",   "ComputeResources": {     "CloudTenantComputeResources": [       {         "CloudHardwarePlanUid": "urn:veeam:CloudHardwarePlan:91156f8d-8bd3-44af-bec3-b6ac2ea24288",         "WanAcceleratorUid": "urn:veeam:WanAccelerator:34ebeeb4-75d0-4e71-b315-fbc16eb2975f",         "PlatformType": "VMware",         "UseNetworkFailoverResources": true,         "NetworkAppliance": {           "Name": "Cloud Appliance ABC Company(esx01)",           "ProductionNetwork": "VM Network",           "ObtainIPAddressAutomatically": true,           "ViDistributedSwitchUuid": "",           "ProductionNetworkUnderDvs": false         },         "ComputeResourceStats": {           "MemoryUsageMb": 8192,           "CpuCount": 2,           "StorageResourceStats": {             "StorageResourceStats": [               {                 "StorageName": "Cloud Replicas",                 "StorageUsageGb": 35,                 "StorageLimitGb": 300               }             ]           }         },         "Id": "25f485fd-06e3-4ee2-9703-465c4d8c2fae",         "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7/computeResources/25f485fd-06e3-4ee2-9703-465c4d8c2fae",         "Type": "CloudTenantComputeResource"       }     ]   },   "ThrottlingEnabled": false,   "ThrottlingSpeedLimit": 10,   "ThrottlingSpeedUnit": "MBps",   "PublicIpCount": 2,   "BackupCount": 1,   "ReplicaCount": 2,   "MaxConcurrentTasks": 2,   "BackupProtectionEnabled": true,   "BackupProtectionPeriod": 5,   "TenantType": {     "StandaloneTenant": {       "TenantCredentials": {         "Username": "ABC Company"       }     }   },   "FailoverToOthersGatewaysIfFail": true,   "Name": "ABC Company",   "UID": "urn:veeam:CloudTenant:b25f5f1d-a3c3-45ed-af23-9ef31a94dac7",   "Href": "https://localhost:9398/api/cloud/tenants/b25f5f1d-a3c3-45ed-af23-9ef31a94dac7?format\u003dEntity",   "Type": "CloudTenant"  } |
 
 Backup Resource Options
 
 You can specify the following settings for the tenant backup resource:
 
+Backup Resource Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | DisplayName | String | Friendly name of the cloud repository. | Yes | 1/1 |
 | RepositoryUid | UidType | UID of the backup repository on which the storage quota must be modified. You cannot modify the repository resource if the current or new repository is a Scale-Out Backup Repository (SOBR). | Yes | 1/1 |
 | WanAcceleratorUid | UidType | UID of the WAN accelerator that must be used as a target WAN accelerator with the cloud repository. This parameter must be specified if you want tenants to communicate with the cloud repository through WAN accelerators. | Yes | 0/1 |
@@ -101,8 +104,9 @@ Compute Resource Options
 
 You can specify the following settings for the tenant compute resource:
 
+Compute Resource Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | CloudHardwarePlanUid | UidType | UID of the hardware plan to which the tenant must be subscribed, for example: urn:veeam:CloudHardwarePlan:127e652e-e02e-4951-99e7-03280edfe536. | Yes | 1/1 |
 | WanAcceleratorUid | UidType | UID of the WAN accelerator that must be used as a target WAN accelerator with the cloud host presented by the hardware plan. This parameter must be specified if you want tenants to communicate with cloud hosts through WAN accelerators. | Yes | 0/1 |
 | UseNetworkFailoverResources | Boolean | Defines whether the network extension appliance must be deployed for the tenant account subscribed to the hardware plan. | Yes | 1/1 |
@@ -126,8 +130,9 @@ vCloud Compute Resource Options
 
 You can specify the following settings for the tenant vCloud compute resource:
 
+vCloud Compute Resource Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | UseNetworkFailoverResources | Boolean | Defines whether the network extension appliance must be deployed for the VMware Cloud Director tenant account. Possible values:   * True * False | Yes | 1/1 |
 | NetworkAppliance | NetworkApplianceInfoType | If UseNetworkFailoverResources option is set to True, you can pass parameters for the network extension appliance in the NetworkAppliance section of the request body. For details, see [Network Extension Options](#appliance). | Yes | 0/1 |
 | WanAcceleratorUid | UidType | UID of the WAN accelerator that must be used as a target WAN accelerator. This parameter must be specified if you want tenants to communicate with vCloud hosts through WAN accelerators. | Yes | 0/1 |
@@ -150,8 +155,9 @@ Network Extension Options
 
 You can specify the following settings for the network extension appliance deployed for the tenant account:
 
+Network Extension Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | Name | String | Name for the network extension appliance. | Yes | 1/1 |
 | ProductionNetwork | String | Network label that identifies the port group to which you want to connect the network extension appliance. The port group is configured on the virtual switch in the SP virtualization environment and provides networking for the Veeam Cloud Connect infrastructure. | Yes | 1/1 |
 | ObtainIpAddressAutomatically | Boolean | Defines whether network settings must be configured automatically for the network extension appliance. Possible values:   * True * False   If you set this option to False, you must pass network settings for the network extension appliance in the ManualIPAdressSettings section of the request body. For details, see [Manual Ip Addressing Options](#ip). | Yes | 1/1 |
@@ -176,8 +182,9 @@ Manual IP Addressing Options
 
 To assign the specific IP address to the network extension appliance, you must pass the following parameters in the ManualIpAddressSettingsInfoType section of the request body:
 
+Manual IP Addressing Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | IpAddress | IPv4 | IP address for the network extension appliance. | Yes | 1/1 |
 | SubnetMask | IPv4 | Subnet mask for the network extension appliance. | Yes | 1/1 |
 | DefaultGateway | IPv4 | Default gateway for the network extension appliance. | Yes | 1/1 |
@@ -200,8 +207,9 @@ Cloud Gateway Pool Options
 
 Specifes the cloud gateway pool to assign to the tenant account.
 
+Cloud Gateway Pool Options
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | CloudGatewayPoolUid | UidType | UID of the cloud gateway pool which the tenant account will use. Can be taken from [/cloud/gatewayPools](cloudgatewaypools.md). | Yes | 0/1 |
 
 For example:
@@ -230,8 +238,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -245,12 +254,13 @@ The example below updates the description and password settings for the tenant a
 
 |  |
 | --- |
-| Request:  PUT https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89    Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml    Request Body:  <?xml version="1.0" encoding="utf-8"?> <CloudTenant Type="CloudTenant" Href="https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89?format=Entity" Name="ABC Company" UID="urn:veeam:CloudTenant:4f90635a-7ecc-49fe-beb6-60b37eb4bd89" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Password/>   <Description>Tenant Account for ABC Company</Description> </CloudTenant>    Response:  202 Accepted    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>EditCloudTenant</Operation> </Task> |
+| Request:  PUT https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89  Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml  Request Body:  <?xml version="1.0" encoding="utf-8"?> <CloudTenant Type="CloudTenant" Href="https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89?format=Entity" Name="ABC Company" UID="urn:veeam:CloudTenant:4f90635a-7ecc-49fe-beb6-60b37eb4bd89" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Password/>   <Description>Tenant Account for ABC Company</Description> </CloudTenant>  Response:  202 Accepted  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>EditCloudTenant</Operation> </Task> |
 
 To track the status of the operation, send the GET HTTP request to the received task resource:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/tasks/task-1    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>EditCloudTenant</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
+| Request:  GET https://localhost:9398/api/tasks/task-1  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>EditCloudTenant</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
 
+Page updated 2026-07-28
 
