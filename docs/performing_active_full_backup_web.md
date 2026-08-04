@@ -3,8 +3,8 @@ title: "Performing Active Full Backup Using Web UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_active_full_backup_web.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Active Full Backup Using Web UI
@@ -17,8 +17,9 @@ Performing Active Full Backup for All Workloads
 To perform active full backup for all workloads in a backup job:
 
 1. Open Jobs node in the management pane.
-2. In the working area, right-click the necessary job and select Active Full.
+2. In the working area, select a job and click Manage > Active Full on the ribbon or right-click the necessary job and select Manage > Active Full.
 
 [![Click to zoom in](images/create_active_full_web.webp)](images/create_active_full_web.webp "Click to zoom in")
 
+Page updated 2026-06-18
 
