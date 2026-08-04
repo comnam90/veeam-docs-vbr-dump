@@ -3,8 +3,8 @@ title: "Step 1. Launch Entire VM Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_entire_vm_launch.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Entire VM Restore Wizard
@@ -18,6 +18,7 @@ To launch the Entire VM Restore wizard, do the following:
 
 Alternatively, you can right-click the VM and select Restore entire VM > Scale Computing HyperCore.
 
-[![Launch Full VM Restore to Red Hat Virtualization Wizard](images/sch_restore_entire_vm_launch.webp)](images/sch_restore_entire_vm_launch.webp "Launch Full VM Restore to Red Hat Virtualization Wizard")
+[![Launch Full VM Restore to Scale Computing HyperCore Wizard](images/sch_restore_entire_vm_launch.webp)](images/sch_restore_entire_vm_launch.webp "Launch Full VM Restore to Scale Computing HyperCore Wizard")
 
+Page updated 2026-07-15
 
