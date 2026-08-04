@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Services"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/services_and_components.html"
-last_updated: "3/27/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup & Replication Services
@@ -37,7 +37,7 @@ Linux Services
 | Veeam Guest Interaction Service daemon | veeamguestinteraction.service | Performs application-aware processing, file system indexing and enables guest OS file restore to the original location. |
 | Veeam High Availability Service | veeamhasvc.service | Manages High Availability clusters. |
 | Veeam Host Manager daemon | veeamhostmanager.service | Provides access to the Veeam Host Management console. |
-| Veeam Identity Service | veeamidentitysvc.service | Manages authorization between Veeam backup infrastructure components. |
+| Veeam Identity Service | veeamidentitysvc.service  veeamidentitylinuxrootsvc.service | Manages authorization between Veeam backup infrastructure components. |
 | Veeam Immutability Service | veeamimmurepo.service | Manages immutability attributes. Runs as a dedicated process of the Veeam Transport Service. For more information, see [How Immutability Works](hardened_repository_immutability.md). |
 | Veeam Linux Deployer | veeamdeployment.service | Installs, updates or removes Veeam services when you add, update or remove backup infrastructure components. Runs as a dedicated process of the Veeam Installer Service. For more details, see [Veeam Installer Service](installer_service.md). |
 | Veeam Mount Service | veeammountsvc.service | Mounts backups and replicas for file-level access, browsing the VM guest file system and restoring VM guest OS files and application items to the original location. |
@@ -55,6 +55,9 @@ Linux Services
 | Veeam Nutanix AHV Platform Service | veeam-platform-service-ahv.service | Enables interaction between Veeam Backup & Replication and Nutanix AHV infrastructure. |
 | Veeam Proxmox Virtual Environment Platform Service | veeam-platform-service-pve.service | Enables interaction between Veeam Backup & Replication and Proxmox Virtual Environment. |
 | Veeam Scale Computing HyperCore Platform Service | veeam-platform-service-scp.service | Enables interaction between Veeam Backup & Replication and Scale Computing HyperCore infrastructure. |
+| Veeam HPE Morpheus VM Essentials Platform Service | veeam-platform-service-hpemorpheusvme.service | Enables interaction between Veeam Backup & Replication and HPE Morpheus VM Essentials infrastructure. |
+| Veeam XenServer Platform Service | veeam-platform-service-xen.service | Enables interaction between Veeam Backup & Replication and Citrix XenServer infrastructure. |
+| Veeam Sangfor aSV Platform Service | veeam-platform-service-sfr.service | Enables interaction between Veeam Backup & Replication and Sangfor aSV infrastructure. |
 
 |  |
 | --- |
@@ -110,5 +113,9 @@ Microsoft Windows Services
 | Veeam KVM Service | VeeamRHVSvc | Enables interaction between Veeam Backup & Replication and oVirt KVM infrastructure. |
 | Veeam PVE Service | VeeamPVESvc | Enables interaction between Veeam Backup & Replication and Proxmox Virtual Environment. |
 | Veeam SC HyperCore Service | VeeamHyperCoreSvc | Enables interaction between Veeam Backup & Replication and Scale Computing HyperCore infrastructure. |
+| Veeam Xen Service | VeeamPlatformServiceXen | Enables interaction between Veeam Backup & Replication and Citrix XenServer infrastructure. |
+| Veeam Sangfor aSV Service | VeeamPlatformServiceSfr | Enables interaction between Veeam Backup & Replication and Sangfor aSV infrastructure. |
+| Veeam HPE Morpheus VME Service | VeeamPlatformServiceHpeMorpheusVme | Enables interaction between Veeam Backup & Replication and HPE Morpheus VM Essentials infrastructure. |
 
+Page updated 2026-07-27
 
