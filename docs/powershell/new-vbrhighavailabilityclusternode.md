@@ -3,8 +3,8 @@ title: "New-VBRHighAvailabilityClusterNode"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhighavailabilityclusternode.html"
-last_updated: "10/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRHighAvailabilityClusterNode
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| New-VBRHighAvailabilityClusterNode -HostName <String>  [<CommonParameters>] |
+| New-VBRHighAvailabilityClusterNode -SecondaryNodeIPAddress <String>  [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,9 +32,10 @@ To assemble a HA cluster, run the [Add-VBRHighAvailabilityCluster](add-vbrhighav
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| HostName | Specifies the IP address of the secondary node. | String | True | Named | False |
+| SecondaryNodeIPAddress | Specifies the IP address of the secondary node.  Aliase: HostName | String | True | Named | False |
 
 <CommonParameters>
 
@@ -52,6 +53,7 @@ This command defines the settings of the secondary node for the HA cluster. Save
 
 |  |
 | --- |
-| $secondary = New-VBRHighAvailabilityClusterNode -HostName "203.0.113.24" |
+| $secondary = New-VBRHighAvailabilityClusterNode -SecondaryNodeIPAddress "203.0.113.24" |
 
+Page updated 2026-06-10
 
