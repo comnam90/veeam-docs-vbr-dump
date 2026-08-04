@@ -3,8 +3,8 @@ title: "Performing Failover Retry"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover_retry.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Failover Retry
@@ -18,4 +18,5 @@ To retry failover:
 2. In the [inventory pane](vbr_ui.md), navigate to the Replicas > Active node.
 3. In the working area, select the necessary vApp and select Retry Failover on the ribbon. Alternatively, you can right-click the necessary vApp and select Retry failover.
 
+Page updated 2026-08-03
 
