@@ -3,8 +3,8 @@ title: "Specifying Preferred Networks for Veeam Plug-Ins"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_preferred_network.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying Preferred Networks for Veeam Plug-Ins
@@ -27,12 +27,19 @@ To create and manage the list of preferred networks that Veeam Plug-In will use,
 
 Adding Preferred Networks
 
-1. Navigate to the /opt/veeam/VeeamPluginforDB2 directory on the server where Veeam Plug-In is installed.
-2. Run the DB2ConfigTool command with the following parameter:
+1. Run the Veeam Plug-In configuration tool using one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --add-preferred-network <network\_IP\_address> <position\_in\_list> |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --add-preferred-network <network\_IP\_address> <position\_in\_list> |
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --add-preferred-network <network\_IP\_address> <position\_in\_list> |
 
 where:
 
@@ -41,40 +48,79 @@ where:
 
 For example:
 
+* For Linux or Unix:
+
 |  |
 | --- |
-| DB2ConfigTool --add-preferred-network 172.24.29.189 2 |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --add-preferred-network 172.24.29.189 2 |
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --add-preferred-network 172.24.29.189 2 |
 
 Accessing Preferred Networks
 
-1. Navigate to the /opt/veeam/VeeamPluginforDB2 directory on the server where Veeam Plug-In is installed.
-2. Run DB2ConfigTool with the following parameter:
+1. Run the Veeam Plug-In configuration tool using one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --show-preferred-networks |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --show-preferred-networks |
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --show-preferred-networks |
 
 The following example shows what the output of the DB2ConfigTool command with the --show-preferred-networks parameter can look like:
 
+* For Linux or Unix:
+
 |  |
 | --- |
-| DB2ConfigTool --show-preferred-networks  Preferred networks:  1. 172.24.29.156  2. 172.24.26.189 |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --show-preferred-networks  Preferred networks:  1. 172.24.29.156  2. 172.24.26.189 |
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --show-preferred-networks  Preferred networks:  1. 172.24.29.156  2. 172.24.26.189 |
 
 Removing Preferred Networks
 
-1. Navigate to the /opt/veeam/VeeamPluginforDB2 directory on the server where Veeam Plug-In is installed.
-2. Run DB2ConfigTool with the following parameter:
+1. Run the Veeam Plug-In configuration tool using one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --remove-preferred-network <network\_IP\_address> |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --remove-preferred-network <network\_IP\_address> |
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --remove-preferred-network <network\_IP\_address> |
 
 where <network\_IP\_address> can be either the IP address of a single network or a network mask that contains a range of network IP addresses. Specify one of the available options to remove from the preferred networks list.
 
 For example:
 
+* For Linux or Unix:
+
 |  |
 | --- |
-| DB2ConfigTool --remove-preferred-network 172.24.29.189 |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --remove-preferred-network 172.24.29.189 |
 
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --remove-preferred-network 172.24.29.189 |
+
+Page updated 2026-07-02
 
