@@ -3,8 +3,8 @@ title: "SMTP Server with Basic Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_configuring_smtp_onedrive.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SMTP Server with Basic Authentication
@@ -30,13 +30,14 @@ The default port number is 25. If you want to use TLS data encryption, specify p
 
 1. In the SMTP server field, specify the address of a server that you want to use as an SMTP server.
 
-By default, Veeam Explorer for Microsoft OneDrive for Business establishes a connection to the smtp.office365.com server.
+By default, Veeam Explorer for Microsoft OneDrive establishes a connection to the smtp.office365.com server.
 
 1. In the From field, specify the email address to be shown as a sender.
-2. In the Send a test email to field, specify the email address to which Veeam Explorer for Microsoft OneDrive for Business sends a test email message.
+2. In the Send a test email to field, specify the email address to which Veeam Explorer for Microsoft OneDrive sends a test email message.
 3. Click Send to send a test email message.
 4. Click OK.
 
 ![SMTP Server with Basic Authentication](images/onedrive_smtp.webp "Configuring Mail Settings")
 
+Page updated 2026-03-23
 
