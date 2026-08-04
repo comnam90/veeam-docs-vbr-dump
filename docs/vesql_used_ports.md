@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_used_ports.html"
-last_updated: "2/18/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -32,11 +32,13 @@ Data Recovery from Image-Level Backups
 | Target machine with Microsoft SQL Server, staging server | Mount server associated with the backup repository | TCP | 3260 to 3270 | Port range opened by Veeam Backup & Replication to manage iSCSI traffic during restore to the target machine.  This port range is opened only during application item restore.  For more information, see [How Mounting Works](vesql_mount_operations.md). |
 | Backup repository | TCP | 6162 or 2500 to 3300 | These ports are used by the Veeam Agent persistent component deployed on the target or staging server and only during transaction log restore.  Port 6162 is used to connect to the Veeam Data Mover Service (for Windows-based backup servers) or Veeam Transport Service (for Linux-based backup servers).  The 2500 to 3300 port range is the default port range for data transfer over the network.  For more information on the components used during data recovery, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md). |
 
-Restore from Plug-in Backups
+Restore from Plug-in and RDS Backups
 
-The following table lists network ports that must be opened for managing restore from backups created with Veeam Plug-In for Microsoft SQL Server. For more information on the ports used for data transfer during restore, see the [Ports](ports_mssql.md) section for standalone plug-ins or the [Ports](plan_and_manage_used_ports.md) section for managed plug-ins.
+The following table lists network ports that must be opened for managing restore from backups created with Veeam Plug-In for Microsoft SQL Server and RDS backups created with Veeam Backup for AWS.
 
-Restore from Plug-in Backups
+For more information on the ports used for data transfer during restore, see the [Ports](ports_mssql.md) section for standalone plug-ins or the [Ports](plan_and_manage_used_ports.md) section for managed plug-ins.
+
+Restore from Plug-in and RDS Backups
 
 | From | To | Protocol | Port | Notes |
 | Veeam Backup & Replication console | Backup server | TCP | 443 | Port used to communicate with the backup server. |
@@ -48,4 +50,5 @@ Restore from Plug-in Backups
 
 1 If you use default Microsoft Windows firewall settings, you do not need to configure dynamic RPC ports: during setup, Veeam Backup & Replication automatically creates a firewall rule for the runtime process. If you use firewall settings other than default ones or application-aware processing fails with the RPC function call failed error, you need to configure dynamic RPC ports. For more information on how to configure RPC dynamic port allocation to work with firewalls, see [this Microsoft KB article](https://support.microsoft.com/en-us/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls).
 
+Page updated 2026-07-28
 
