@@ -3,8 +3,8 @@ title: "GET /cloud/vlans/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_vlans_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /cloud/vlans/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | String | ID of the virtual switch in the Veeam infrastructure, for example: 510f34ea-1534-437c-a746-f32cf0f712aa. |
 | Name | String | Name of the virtual switch, for example: Intel(R) I350 Gigabit Network Connection - Virtual Switch. |
 | HostRef | HierarchyObjRefType | Reference to the host on which the virtual switch is configured, for example: urn:VMware:Host:4a3f28d9-d4f3-4e4c-9afb-91db8ab57436.host-438. |
@@ -78,8 +81,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the VLAN was configured. |
 | /cloud/vlans/{ID} | Alternate | Alternate URL of the [/cloud/vlans/{ID}](vlans_id.md) resource. |
 | /cloud/vlans/{ID} | Edit | URL for the [PUT /cloud/vlans/{ID}](put_vlans_id.md) request. |
@@ -91,6 +95,7 @@ The example below returns a virtual switch with the ID 78c6a038-38a2-4908-ac19-1
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/cloud/vlans/78c6a038-38a2-4908-ac19-1540f9448533?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <VlanConfiguration xmlns="http://www.veeam.com/ent/v1.0" Name="vSwitch0" UID="78c6a038-38a2-4908-ac19-1540f9448533"> |
+| Request:  GET https://localhost:9398/api/cloud/vlans/78c6a038-38a2-4908-ac19-1540f9448533?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <VlanConfiguration xmlns="http://www.veeam.com/ent/v1.0" Name="vSwitch0" UID="78c6a038-38a2-4908-ac19-1540f9448533">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="VlanConfigurationReference" Href="https://localhost:9398/api/cloud/vlans/78c6a038-38a2-4908-ac19-1540f9448533" Name="vSwitch0" />     <Link Rel="Edit" Type="VlanConfigurationReference" Href="https://localhost:9398/api/cloud/vlans/78c6a038-38a2-4908-ac19-1540f9448533" Name="vSwitch0" />     <Link Rel="Delete" Type="VlanConfiguration" Href="https://localhost:9398/api/cloud/vlans/78c6a038-38a2-4908-ac19-1540f9448533" Name="vSwitch0" />   </Links>   <HostRef>urn:VMware:Host:4a3f28d9-d4f3-4e4c-9afb-91db8ab57436.host-438</HostRef>   <PlatformType>VMware</PlatformType>   <VlanIdsWithInternetLeftBound>500</VlanIdsWithInternetLeftBound>   <VlanIdsWithInternetRightBound>510</VlanIdsWithInternetRightBound>   <VlanIdsWithoutInternetLeftBound>511</VlanIdsWithoutInternetLeftBound>   <VlanIdsWithoutInternetRightBound>520</VlanIdsWithoutInternetRightBound>   <SwitchName>vSwitch0</SwitchName>   <SwitchId>vSwitch0</SwitchId>   <SwitchType>VirtualSwitch</SwitchType> </VlanConfiguration> |
 
+Page updated 2026-07-29
 
