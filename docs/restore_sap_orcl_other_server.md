@@ -3,8 +3,8 @@ title: "Restore to Another Server (System Copy)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sap_orcl_other_server.html"
-last_updated: "4/10/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Another Server (System Copy)
@@ -40,12 +40,12 @@ You can restore a database to another server using an account and authentication
 
 |  |
 | --- |
-| Select authentication type or disable the functionality: |
+| Select authentication type or disable the functionality: 0. To disable the functionality 1. Currently set authentication data 2. Credentials 3. Recovery token Enter authentication type number: 1 |
 
 1. Veeam Plug-In will display backups available for restore under the user account specified in the Veeam Plug-In configuration. The list of backups depends on the authentication method specified for the user account:
 
 * For the user account with a security certificate, Veeam Plug-In displays backups created under this user account.
-* For the user account with credentials, if the account has the Veeam Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
+* For the user account with credentials, if the account has the Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
 * For the user account with a recovery token, Veeam Plug-In displays backups for which the recovery token was generated.
 
 Select a backup to start the restore process:
@@ -78,7 +78,7 @@ To restore a database to another server, you can specify credentials of a user a
 | --- |
 | Enter username: Enter password for <username>: |
 
-1. Veeam Plug-In will display backups available for restore under the specified user account. If the account has the Veeam Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
+1. Veeam Plug-In will display backups available for restore under the specified user account. If the account has the Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
 
 Select a backup to start the restore process:
 
@@ -118,4 +118,5 @@ You can restore a database to another server using a recovery token generated in
 
 1. Perform database restore. To learn more, see [Restore Oracle Databases](restore_sap_orcl.md).
 
+Page updated 2026-07-10
 
