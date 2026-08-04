@@ -3,8 +3,8 @@ title: "How Restore Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_how_restore_works.html"
-last_updated: "6/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Restore Works
@@ -18,4 +18,5 @@ Restoring your data with Veeam Explorer for Microsoft Active Directory works in 
 
 [![How Restore Works](images/vead_how_restore_works.webp)](images/vead_how_restore_works.webp "How Restore Works")
 
+Page updated 2026-05-26
 
