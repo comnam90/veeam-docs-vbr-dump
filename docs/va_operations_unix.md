@@ -3,8 +3,8 @@ title: "Operations Available on Unix Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations_unix.html"
-last_updated: "12/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Operations Available on Unix Computers
@@ -21,6 +21,9 @@ On the Veeam Agent computer side, you can perform the following operations:
 * [Start active full backup](#start_af).
 * [Stop backup job](#stop_job).
 * [View session statistics](#job_stats).
+
+* [Connect to another Veeam backup server in read-only mode](#vbr_readonly).
+
 * [Perform restore](#restore).
 * [Add Veeam backup server in read-only mode](#vbr2).
 * [Configure device exclusions](#excludes).
@@ -103,6 +106,14 @@ For more information on viewing session statistics in Veeam Agent for IBM AIX, s
 
 For more information on viewing session statistics in Veeam Agent for Oracle Solaris, see the [Reporting](https://helpcenter.veeam.com/docs/agentforsolaris/userguide/reporting.html?ver=13) section in the Veeam Agent for Oracle Solaris User Guide.
 
+Adding Second Veeam Backup Server in Read-Only Mode
+
+On the Veeam Agent computer side, you can connect Veeam Agent to another Veeam backup server in read-only mode. This will allow you to view backups stored in its repositories and restore data from them.
+
+For more information on connecting Veeam Agent for IBM AIX, see the [Connecting to Veeam Backup Server in Read-Only Mode](https://helpcenter.veeam.com/docs/agentforaix/userguide/manage_vbr_add_readonly.html?ver=13) section in the Veeam Agent for IBM AIX User Guide.
+
+For more information on connecting Veeam Agent for Oracle Solaris, see the [Connecting to Veeam Backup Server in Read-Only Mode](https://helpcenter.veeam.com/docs/agentforsolaris/userguide/manage_vbr_add_readonly.html?ver=13) section in the Veeam Agent for Oracle Solaris User Guide.
+
 Performing Restore
 
 The restore options for Veeam Agent operating in the managed mode do not differ from the same options for Veeam Agent operating in the standalone mode. You can perform restore in the following ways:
@@ -166,4 +177,5 @@ If you have any questions or want to share your feedback about Veeam Agent, you 
 
 * Visit [Veeam R&D Forums](https://forums.veeam.com) to share your opinion or ask a question.
 
+Page updated 2026-06-17
 
