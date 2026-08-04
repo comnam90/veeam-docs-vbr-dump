@@ -3,8 +3,8 @@ title: "Step 3. Specify VM Destination"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_destination.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify VM Destination
@@ -60,4 +60,5 @@ To change VM disk format:
 
 ![Step 3. Specify VM Destination](images/migration_destination.webp)
 
+Page updated 2026-08-03
 
