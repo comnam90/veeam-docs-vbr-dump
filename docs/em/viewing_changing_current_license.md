@@ -3,8 +3,8 @@ title: "Viewing License Details"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/viewing_changing_current_license.html"
-last_updated: "11/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Viewing License Details
@@ -19,7 +19,7 @@ For more information on Veeam licensing, see [Veeam Licensing Policy](https://ww
 To view license details:
 
 1. Sign in to Veeam Backup Enterprise Manager under an account with the Portal Administrator role.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+2. In the upper-right corner, click Configuration.
 3. In the Configuration view, open the Licensing section.
 
 [![License Summary](images/license_summary.webp)](images/license_summary.webp "License Summary")
@@ -38,4 +38,5 @@ You can display detailed information about the current license, including licens
 
 ![Viewing License Details](images/em_lic_per_vm_95.webp "License Details")
 
+Page updated 2026-07-16
 
