@@ -3,8 +3,8 @@ title: "TLS Certificate Thumbprint Verification"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_ssl_verify.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # TLS Certificate Thumbprint Verification
@@ -16,4 +16,5 @@ To make sure that the obtained TLS certificate is really the TLS certificate use
 
 To enable thumbprint verification, the SP must pass the TLS certificate thumbprint to the tenant over a secure channel, for example, by email. When the tenant adds the SP, Veeam Backup & Replication offers the tenant to enter the TLS certificate thumbprint to verify if this TLS certificate is the original SP certificate.
 
+Page updated 2026-08-03
 
