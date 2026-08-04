@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_before_unix.html"
-last_updated: "3/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -20,11 +20,12 @@ Before you create a Veeam Agent backup policy in the Veeam Backup & Replication 
 
 Veeam Agent backup policies have the following limitations:
 
-* After you start managing a Veeam Agent computer with Veeam Backup & Replication, data backup for this computer is performed by a backup job configured in Veeam Backup & Replication. Veeam Agent running on the computer starts a new backup chain on a target location specified in the backup policy settings. You cannot continue the existing backup chain that was created by Veeam Agent operating in the standalone mode.
+* After you start managing a Veeam Agent machine with Veeam Backup & Replication, data backup for this machine is performed by a backup job configured in Veeam Backup & Replication. Veeam Agent running on the machine starts a new backup chain on a target location specified in the backup policy settings. You cannot continue the existing backup chain that was created by Veeam Agent operating in the standalone mode.
 
 * You cannot map a Veeam Agent backup policy configured in Veeam Backup & Replication to a Veeam Agent backup chain created by a standalone Veeam Agent on a backup repository.
-* Veeam Backup & Replication does not immediately apply backup policy to computers included in protection groups for pre-installed Veeam Agents. Veeam Agents installed on computers that are included in these groups connect to Veeam Backup & Replication every 6 hours and get updated backup policy settings. If you targeted a backup policy at the Veeam backup server and scheduled it earlier than the next connection to Veeam Backup & Replication, this backup policy will be updated on the Veeam Agent computer at the next start of the backup session. To learn more about protection groups for pre-installed Veeam Agents, see [Protection Group Types](agents_protection_groups_types.md).
+* Veeam Backup & Replication does not immediately apply backup policy to machines included in protection groups for pre-installed Veeam Agents. Veeam Agents installed on machines that are included in these groups connect to Veeam Backup & Replication every 6 hours and get updated backup policy settings. If you targeted a backup policy at the Veeam backup server and scheduled it earlier than the next connection to Veeam Backup & Replication, this backup policy will be updated on the Veeam Agent machine at the next start of the backup session. To learn more about protection groups for pre-installed Veeam Agents, see [Protection Group Types](agents_protection_groups_types.md).
 
-Keep in mind, that you can immediately update settings of the backup policy from the Veeam Agent computer. To learn more, see [Applying Protection Group Configuration to Veeam Agent for Unix](deploy_agent_unix.md#configure)..
+Note that you can immediately update the backup policysettings from the Veeam Agent computer. To learn more, see [Applying Protection Group Configuration to Veeam Agent for Unix](deploy_agent_unix.md#configure)..
 
+Page updated 2026-06-24
 
