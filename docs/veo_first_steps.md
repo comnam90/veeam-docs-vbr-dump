@@ -3,8 +3,8 @@ title: "Launching Application and Exploring Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veo_first_steps.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Launching Application and Exploring Backups
@@ -20,7 +20,7 @@ For more information, see [Application Item Restore](restore_veeam_explorers.md)
 
 For more information, see [Restore with Veeam Explorer for Oracle](restore_veor.md).
 
-* Use the Start menu method to, for example, manage ongoing instant recovery sessions or check the installed product version. Note that this method does not load any Oracle data and does not allow you to start new data recovery sessions.
+* Use the Start menu method to, for example, manage ongoing instant recovery sessions or check the installed product version. Note that this method does not load any Oracle data and does not allow you to start new data recovery sessions or edit the staging server settings.
 
 To launch the application, go to Start, click Veeam Explorer for Oracle and perform the following steps:
 
@@ -28,13 +28,13 @@ To launch the application, go to Start, click Veeam Explorer for Oracle and perf
 
 Click Connect.
 
-[![Specify Backup Server](images/veor_launching_explorer_specify_backup_server.webp)](images/veor_launching_explorer_specify_backup_server.webp "Specify Backup Server")
+![Launching Application and Exploring Backups](images/veor_launching_explorer_specify_backup_server.webp "Specify Backup Server")
 
 1. When you are connecting to the backup server for the first time, Veeam Explorer for Oracle will ask you to validate the backup server certificate fingerprint. Click View Certificate to see more details about the imported certificate.
 
 Click Yes to install the certificate on the machine where you are launching Veeam Explorer for Oracle.
 
-[![Validate Server Certificate Fingerprint](images/veor_launching_explorer_certificate.webp)](images/veor_launching_explorer_certificate.webp "Validate Server Certificate Fingerprint")
+![Launching Application and Exploring Backups](images/veor_launching_explorer_certificate.webp "Validate Server Certificate Fingerprint")
 
 1. At the Sign in step, enter the credentials of the user account that you want to use to connect to the backup server. For more information on the required permissions for the user, see [Permissions](veo_permissions.md).
 
@@ -44,7 +44,7 @@ Click Sign in.
 
 Alternatively, select Sign in as current user to use the credentials of the Windows user account currently signed in on the machine where you are launching Veeam Explorer for Oracle.
 
-[![Specify Credentials](images/veor_launching_explorer_specify_credentials.webp)](images/veor_launching_explorer_specify_credentials.webp "Specify Credentials")
+![Launching Application and Exploring Backups](images/veor_launching_explorer_specify_credentials.webp "Specify Credentials")
 
 In This Section
 
@@ -52,4 +52,5 @@ In This Section
 * [How Mounting Works](veo_mount.md)
 * [Viewing Database Information](veo_view_db_info.md)
 
+Page updated 2026-07-24
 
