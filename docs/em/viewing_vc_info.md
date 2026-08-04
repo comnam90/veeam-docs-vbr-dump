@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/viewing_vc_info.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Viewing vCenter Servers
@@ -27,5 +27,5 @@ For more information on the plug-in, see [Veeam Plug-in for VMware vSphere Clien
 
 [![Viewing Information about vCenter Servers](images/em_view_vcenters.webp)](images/em_view_vcenters.webp "Viewing Information about vCenter Servers")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
