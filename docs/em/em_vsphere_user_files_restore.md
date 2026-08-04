@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_vsphere_user_files_restore.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Guest OS Files
@@ -19,5 +19,5 @@ To restore guest OS files, follow the steps described in [Performing 1-Click Fil
 | Note |
 | * When you restore from non-indexed guest OS file system, mount operation is performed using mount server associated with the backup repository that stores the backup file. * Before you restore files from a non-Windows VM, make sure that a helper host or helper appliance is configured on the backup server. For more information, see [Preparing for File Search and Restore (non-Windows machines)](em_preparing_for_linux_guest_file.md). |
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
