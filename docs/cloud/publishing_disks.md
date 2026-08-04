@@ -3,8 +3,8 @@ title: "Publishing Disks"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/publishing_disks.html"
-last_updated: "11/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Publishing Disks
@@ -74,4 +74,5 @@ When you are finished, you can stop the disk publish session.
 
 For details, see the [Managing Published Disks](https://helpcenter.veeam.com/docs/vbr/userguide/publishing_disks_manage.html?ver=13) section in the Veeam Backup & Replication Guide.
 
+Page updated 2026-07-29
 
