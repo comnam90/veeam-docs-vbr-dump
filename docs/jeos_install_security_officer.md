@@ -3,8 +3,8 @@ title: "Step 9. Configure Security Officer Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jeos_install_security_officer.html"
-last_updated: "11/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 9. Configure Security Officer Account
@@ -15,7 +15,7 @@ At the Security Officer step of the Initial Configuration wizard, configure the 
 |  |
 | --- |
 | Note |
-| If you do not want to configure the security officer account, select Skip setting up Security Officer. To enable this account later, you will have to reinstall Veeam Software Appliance and complete the initial configuration. |
+| If you do not want to configure the security officer account, select Skip setting up Security Officer. To enable this account later, you will have to reinstall Veeam Infrastructure Appliance and complete the initial configuration.  However, if you selected Veeam Hardened Repository as the appliance role and disabled multi-factor authentication, you must configure a security officer account and cannot skip this step. |
 
 To configure the security officer account, do the following:
 
@@ -27,6 +27,7 @@ To configure the security officer account, do the following:
 * 1 numeric character.
 * 1 special character.
 * No more than 4 characters of the same class in a row. For example, more than 4 lowercase or 4 numerical characters in sequence.
+* Different from the password of the veeamadmin user.
 
 |  |
 | --- |
@@ -40,8 +41,9 @@ When a security officer first logs in to the Host Management console, they must 
 |  |
 | --- |
 | Note |
-| If configured, the security officer account must be initialized before you can add a hardened repository created with Veeam Infrastructure Appliance to Veeam Backup & Replication. |
+| If configured, the security officer account must be initialized before you can add a Veeam Hardened Repository to Veeam Backup & Replication. |
 
-![Step 9. Configure Security Officer Account](images/deployment_iso_install_security_officer_password.webp)
+![Step 10. Configure Security Officer Account](images/deployment_iso_install_security_officer_password.webp)
 
+Page updated 2026-07-28
 
