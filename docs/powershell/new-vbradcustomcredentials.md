@@ -3,8 +3,8 @@ title: "New-VBRADCustomCredentials"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbradcustomcredentials.html"
-last_updated: "7/31/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRADCustomCredentials
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| New-VBRADCustomCredentials -Entity <VBRADEntity> [-Credentials <CCredentials>]  [<CommonParameters>] |
+| New-VBRADCustomCredentials -Entity <VBRADEntity> -Credentials <CCredentials>  [<CommonParameters>]  New-VBRADCustomCredentials -Entity <VBRADEntity> -UseTemporaryCertificate  [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,10 +32,12 @@ By default, Veeam Backup & Replication uses Master account credentials for au
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
-| Entity | Specifies Active Directory objects for which you want to specify custom credentials. | Accepts the [VBRADEntity](vbradentity.md) object. To get this object, run the [Find-VBRADEntity](find-vbradentity.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
-| Credentials | Specifies custom credentials for authenticating with Active Directory objects in a protection group.  If not set, Veeam Backup & Replication will use Master account credentials for authenticating with associated objects.  Note: for string type, enter a user name in the DNS.DOMAIN.NAME\USERNAME or USERNAME@DNS.DOMAIN.NAME format. | Accepts string (user name) or the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | True (ByProperty Name) |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| Entity | Specifies Active Directory objects for which you want to specify custom credentials.  Note: If you specify a group, it must be a global domain group. | Accepts the [VBRADEntity](vbradentity.md) object. To get this object, run the [Find-VBRADEntity](find-vbradentity.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
+| Credentials | Specifies custom credentials for authenticating with Active Directory objects in a protection group.  If not set, Veeam Backup & Replication will use Master account credentials for authenticating with associated objects.  Note: for string type, enter a user name in the DNS.DOMAIN.NAME\USERNAME or USERNAME@DNS.DOMAIN.NAME format. | Accepts string (user name) or the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | True (ByProperty Name) |
+| UseTemporaryCertificate | Defines that the cmdlet will use a temporary certificate to connect to the Active Directory objects instead of authenticating with credentials. | SwitchParameter | True | Named | True (ByProperty Name) |
 
 <CommonParameters>
 
@@ -59,9 +61,16 @@ Examples
 | --- | --- |
 | This example shows how to specify Master account credentials for the scope of Active Directory objects.  |  | | --- | | $connection = Get-VBRADDomain -ServerName support.east -Credentials support\jsmith  $objects = Find-VBRADEntity -Domain $connection -Name Support  New-VBRADCustomCredentials -Entity $objects |  Perform the following steps:   1. Run the [Get-VBRADDomain](get-vbraddomain.md) cmdlet. Specify the ServerName and Credentials parameter values. Save the result to the $connection variable. 2. Run the Find-VBRADEntity cmdlet. Set the $connection variable as the Domain parameter value. Specify the Name parameter value. Save the result to the $objects variable. 3. Run the New-VBRADCustomCredentials cmdlet. Set the $objects variable as the Entity parameter value. |
 
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Specifying Temporary Certificate for Authenticating with Active Directory Objects
+
+|  |  |
+| --- | --- |
+| This example shows how to specify a temporary certificate for authenticating with Active Directory objects.  |  | | --- | | $connection = Get-VBRADDomain -ServerName support.east -Credentials support\jsmith  $root = Find-VBRADEntity -Domain $connection  $servers = Find-VBRADEntity -Domain $connection -Root $root -Name Servers  New-VBRADCustomCredentials -Entity $servers -UseTemporaryCertificate |  Perform the following steps:   1. Run the [Get-VBRADDomain](get-vbraddomain.md) cmdlet. Specify the ServerName and Credentials parameter values. Save the result to the $connection variable. 2. Run the [Find-VBRADEntity](find-vbradentity.md) cmdlet. Set the $connection variable as the Domain parameter value. Save the result to the $root variable. 3. Run the [Find-VBRADEntity](find-vbradentity.md) cmdlet. Set the $connection variable as the Domain parameter value. Set the $root variable as the Root parameter value. Specify the Name parameter value. Save the result to the $servers variable. 4. Run the New-VBRADCustomCredentials cmdlet. Set the $servers variable as the Entity parameter value. Provide the UseTemporaryCertificate parameter. |
+
 Related Commands
 
 * [Get-VBRADDomain](get-vbraddomain.md)
 * [Find-VBRADEntity](find-vbradentity.md)
 
+Page updated 2026-06-08
 
