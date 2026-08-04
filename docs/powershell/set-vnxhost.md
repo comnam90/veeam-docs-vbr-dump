@@ -3,8 +3,8 @@ title: "Set-VNXHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vnxhost.html"
-last_updated: "7/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VNXHost
@@ -42,8 +42,11 @@ This cmdlet modifies settings of Dell VNX storage systems. When you modify stora
 | Tip |
 | You can specify the scope of volumes that you want to rescan with the VBRVolumeScanType parameter.  Run the [Get-VNXInfrastructureVolume](get-vnxinfrastructurevolume.md) cmdlet to get an array of volumes from Dell VNX storage systems. |
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Host | Specifies the storage you want to modify. | Accepts the CVnxHost object. To create this object, run the [Get-VNXHost](get-vnxhost.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Description | Specifies the description of the storage. | String | False | Named | False |
 | UserName | Specifies the user name that you want to use for authenticating with the storage. | String | True | Named | False |
@@ -103,4 +106,5 @@ Related Commands
 * [Get-VBRViProxy](get-vbrviproxy.md)
 * [Get-VNXInfrastructureVolume](get-vnxinfrastructurevolume.md)
 
+Page updated 2026-06-29
 
