@@ -3,8 +3,8 @@ title: "Step 2. Specify Media Vault Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_media_vault_name.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Media Vault Name
@@ -18,4 +18,5 @@ At the Name step of the wizard, you should define basic description for the new 
 
 ![Step 2. Specify Media Vault Name](images/vault_add.webp)
 
+Page updated 2026-08-03
 
