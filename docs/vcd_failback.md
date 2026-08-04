@@ -3,8 +3,8 @@ title: "Failback"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Failback
@@ -75,4 +75,5 @@ In This Section
 * [Switching to Production vApps Manually](vcd_production_manual_switch.md)
 * [Performing Failback Retry](vcd_failback_retry.md)
 
+Page updated 2026-08-03
 
