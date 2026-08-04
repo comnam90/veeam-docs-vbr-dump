@@ -3,8 +3,8 @@ title: "Add-VBRProtectionGroup"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrprotectiongroup.html"
-last_updated: "1/16/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRProtectionGroup
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRProtectionGroup -Name <string> -Container <VBRProtectionGroupContainer>[-Description <string>] [-ScheduleOptions <VBRProtectionGroupScheduleOptions>] [-DeploymentOptions <VBRProtectionGroupDeploymentOptions>] [-AdvancedOptions <VBRProtectionGroupAdvancedWindowsOptions>] [-NotificationOptions <VBRProtectionGroupNotificationOptions>]  [<CommonParameters>] |
+| Add-VBRProtectionGroup -Name <string> -Container <VBRProtectionGroupContainer>[-Description <string>] [-ScheduleOptions <VBRProtectionGroupScheduleOptions>] [-DeploymentOptions <VBRProtectionGroupDeploymentOptions>] [-AdvancedOptions <VBRProtectionGroupAdvancedWindowsOptions>] [-NotificationOptions <VBRProtectionGroupNotificationOptions>] [-CacheRepository <VBRBackupRepository>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -36,6 +36,7 @@ Before creating a protection group, you must create a protection scope for this 
 * Computers imported from a CSV file.
 * Computers with pre-installed backup agents.
 * MongoDB Replica sets.
+* InterSystems IRIS servers.
 
 For more information about the protection scope, see the following cmdlets:
 
@@ -46,18 +47,21 @@ For more information about the protection scope, see the following cmdlets:
 * [New-VBRCSVContainer](new-vbrcsvcontainer.md)
 * [New-VBRManuallyDeployedContainer](new-vbrmanuallydeployedcontainer.md)
 * [New-VBRMongoDBContainer](new-vbrmongodbcontainer.md)
+* [New-VBRIrisContainer](new-vbririscontainer.md)
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
-| Container | Specifies the protection scope. The protection scope can contain the following objects:   * Active Directory objects. * Individual computers. * Cloud machines. * Computers imported from a CSV file. * Computers with pre-installed backup agents. * MongoDB Replica sets.   The cmdlet will create the protection group with this protection scope. | Accepts the following objects:   * [VBRADContainer](vbradcontainer.md)  * [VBRIndividualComputerContainer](vbrindividualcomputercontainer.md)  * [VBRAmazonEC2Container](vbramazonec2container.md) * [VBRAzureContainer](vbrazurecontainer.md)  * [VBRCSVContainer](vbrcsvcontainer.md) * [VBRManuallyDeployedContainer](vbrmanuallydeployedcontainer.md) * [VBRMongoDBContainer](vbrmongodbcontainer.md)   To get this objects, run one of the following cmdlets:   * [New-VBRADContainer](new-vbradcontainer.md) * [New-VBRIndividualComputerContainer](new-vbrindividualcomputercontainer.md)  * [New-VBRAmazonEC2Container](new-vbramazonec2container.md) * [New-VBRAzureContainer](new-vbrazurecontainer.md)  * [New-VBRCSVContainer](new-vbrcsvcontainer.md)  * [New-VBRManuallyDeployedContainer](new-vbrmanuallydeployedcontainer.md) * [New-VBRMongoDBContainer](new-vbrmongodbcontainer.md) | True | Named | True (ByValue, ByProperty Name) |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
+| Container | Specifies the protection scope. The protection scope can contain the following objects:   * Active Directory objects. * Individual computers. * Cloud machines. * Computers imported from a CSV file. * Computers with pre-installed backup agents. * MongoDB Replica sets. * InterSystems IRIS servers.   The cmdlet will create the protection group with this protection scope. | Accepts the following objects:   * [VBRADContainer](vbradcontainer.md)  * [VBRIndividualComputerContainer](vbrindividualcomputercontainer.md)  * [VBRAmazonEC2Container](vbramazonec2container.md) * [VBRAzureContainer](vbrazurecontainer.md)  * [VBRCSVContainer](vbrcsvcontainer.md) * [VBRManuallyDeployedContainer](vbrmanuallydeployedcontainer.md) * [VBRMongoDBContainer](vbrmongodbcontainer.md) * [VBRIrisContainer](vbririscontainer.md)   To get this objects, run one of the following cmdlets:   * [New-VBRADContainer](new-vbradcontainer.md) * [New-VBRIndividualComputerContainer](new-vbrindividualcomputercontainer.md)  * [New-VBRAmazonEC2Container](new-vbramazonec2container.md) * [New-VBRAzureContainer](new-vbrazurecontainer.md)  * [New-VBRCSVContainer](new-vbrcsvcontainer.md)  * [New-VBRManuallyDeployedContainer](new-vbrmanuallydeployedcontainer.md) * [New-VBRMongoDBContainer](new-vbrmongodbcontainer.md) * [New-VBRIrisContainer](new-vbririscontainer.md) | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the name you want to assign to the protection group. | String | True | Named | True (ByProperty Name) |
 | Description | Specifies the description of the protection group. | String | False | Named | True (ByProperty Name) |
 | ScheduleOptions | Specifies the discovery schedule. The cmdlet will use this schedule to perform discovery operations for computers in the protection group. | Accepts the [VBRProtectionGroupScheduleOptions](vbrprotectiongroupscheduleoptions.md) object. To get this object, run the [New-VBRProtectionGroupScheduleOptions](new-vbrprotectiongroupscheduleoptions.md) cmdlet. | False | Named | True (ByProperty Name) |
 | DeploymentOptions | Specifies Veeam Agent deployment settings. The cmdlet will use these settings to install Veeam Agent on the discovered computers in the protection group. | Accepts the [VBRProtectionGroupDeploymentOptions](vbrprotectiongroupdeploymentoptions.md) object. To get this object, run the [New-VBRProtectionGroupDeploymentOptions](new-vbrprotectiongroupdeploymentoptions.md) cmdlet. | False | Named | True (ByProperty Name) |
 | AdvancedOptions | Specifies settings for Veeam Agent for Windows deployed on computers in the protection group. You can specify the following settings:   * Network usage settings * Throttling settings * Security settings | Accepts the [VBRProtectionGroupAdvancedWindowsOptions](vbrprotectiongroupadvancedwindowsoptions.md) object. To get this object, run the [New-VBRProtectionGroupAdvancedWindowsOptions](new-vbrprotectiongroupadvancedwindowsoptions.md) cmdlet. | False | Named | True (ByProperty Name) |
 | NotificationOptions | Specifies notification settings for the protection group. | Accepts the [VBRProtectionGroupNotificationOptions](vbrprotectiongroupnotificationoptions.md) object. To get this object, run the [New-VBRProtectionGroupNotificationOptions](new-vbrprotectiongroupnotificationoptions.md) cmdlet. | False | Named | True (ByProperty Name) |
+| CacheRepository | Specifies the cache repository for the protection group. Veeam Backup & Replication will keep the .VCACHE files on this repository. This parameter applies only to protection groups with the IrisServers container type. If you do not specify the parameter, Veeam Backup & Replication will automatically select a default cache repository. | Accepts the VBRBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | True (ByProperty Name) |
 
 <CommonParameters>
 
@@ -88,5 +92,7 @@ Related Commands
 * [New-VBRPeriodicallyOptions](new-vbrperiodicallyoptions.md)
 * [New-VBRProtectionGroupScheduleOptions](new-vbrprotectiongroupscheduleoptions.md)
 * [New-VBRProtectionGroupDeploymentOptions](new-vbrprotectiongroupdeploymentoptions.md)
+* [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-18
 
