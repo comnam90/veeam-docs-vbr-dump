@@ -3,8 +3,8 @@ title: "Installing Plug-In on Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_plugin_windows.html"
-last_updated: "5/27/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Plug-In on Microsoft Windows
@@ -35,13 +35,13 @@ Using the Veeam Backup & Replication installation image
 You can download the latest version of the Veeam Backup & Replication installation image from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html).
 
 1. In the installation disk folder, go to \Plugins\Oracle RMAN\Windows.
-2. Upload the VeeamPluginforOracleRMAN.exe file to Microsoft SQL Server, then run the uploaded file to launch the installation wizard.
+2. Upload the VeeamPluginforOracleRMAN.exe file to a machine, then run the uploaded file to launch the installation wizard.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.3.29-1\RMAN folder, find the VeeamPluginforOracleRMAN.exe file.
-3. Upload the VeeamPluginforOracleRMAN.exe file to Microsoft SQL Server, then run the uploaded file to launch the installation wizard.
+2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.1.0.411\RMAN folder, find the VeeamPluginforOracleRMAN.exe file.
+3. Upload the VeeamPluginforOracleRMAN.exe file to a machine, then run the uploaded file to launch the installation wizard.
 
 1. Install Veeam Plug-In. To do this, run the following commands:
 
@@ -81,8 +81,8 @@ You can download the latest version of the Veeam Backup & Replication installati
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.3.29-1\Windows folder, find the VeeamPluginforOracleRMAN.exe file.
-3. Upload the VeeamPluginforOracleRMAN.exe file to Microsoft SQL Server.
+2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.1.0.411\Windows folder, find the VeeamPluginforOracleRMAN.exe file.
+3. Upload the VeeamPluginforOracleRMAN.exe file to a machine.
 
 1. Install Veeam Plug-In for Oracle RMAN on a Windows machine in the unattended mode using the command line. Go to folder where the VeeamPluginforOracleRMAN.exe file resides and run the following command:
 
@@ -98,14 +98,17 @@ Installing Plug-In in Unattended Mode
 | /silent | Enables the silent mode. |
 | /accepteula | Accepts [EULA](https://www.veeam.com/eula.html) terms. |
 | /acceptthirdpartylicenses | Accepts terms of third-party licenses. |
+| /acceptrequiredsoftware | Enables installation of the required software (Microsoft .NET Framework 4.6) and accepts terms of its license. |
+| /acceptlicensingpolicy | Accepts terms of the Veeam licensing policy. |
 
 Veeam Plug-In for Oracle RMAN uses the following codes to report about the installation results:
 
-* 1000 — Veeam Plug-In for Oracle RMAN has been successfully installed.
-* 1001 — prerequisite components required for Veeam Plug-In for Oracle RMAN have been installed on the machine. Veeam Plug-In for Oracle RMAN has not been installed. The machine needs to be rebooted.
-* 1002 — Veeam Plug-In for Oracle RMAN installation has failed.
-* 1101 — Veeam Plug-In for Oracle RMAN has been installed. The machine needs to be rebooted.
+* 1000 — Veeam Plug-In has been successfully installed.
+* 1001 — prerequisite components required for Veeam Plug-In have been installed on the machine. Veeam Plug-In has not been installed. The machine needs to be rebooted.
+* 1002 — Veeam Plug-In installation has failed.
+* 1101 — Veeam Plug-In has been installed. The machine needs to be rebooted.
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In on Microsoft Windows](configuring_rman_plugin_win.md).
 
+Page updated 2026-07-28
 
