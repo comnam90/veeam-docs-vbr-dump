@@ -3,8 +3,8 @@ title: "Step 5d. Manage VM Guest OS Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_credentials.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5d. Manage VM Guest OS Credentials
@@ -19,10 +19,11 @@ For a user to be displayed in the Credentials list, it must be added to the Cred
 |  |
 | --- |
 | Tip |
-| If the backup scope includes a resource pool, host or cluster, you can specify both Standard and SSH credentials. This will allow Veeam Backup & Replication to access the processed VMs regardless of their guest OSes. |
+| If the backup scope includes a tag or cluster, you can specify both Standard and SSH credentials. This will allow Veeam Backup & Replication to access the processed VMs regardless of their guest OSes. |
 
 To check whether Veeam Backup & Replication is able to connect to the VM guest OSes using the specified credentials, click Verify network connectivity and credentials.
 
 [![Step 5d. Manage VM Guest OS Credentials](images/sch_backup_job_create_gp_credentials.webp)](images/sch_backup_job_create_gp_credentials.webp)
 
+Page updated 2026-07-15
 
