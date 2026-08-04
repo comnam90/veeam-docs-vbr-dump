@@ -3,8 +3,8 @@ title: "Quick Rollback"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_quick_rollback.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Quick Rollback
@@ -31,4 +31,5 @@ Limitations for Quick Rollback
 
 During the first replication job session after failback with quick rollback, CBT on the source vApp is reset. Due to that Veeam Backup & Replication will read data of the entire vApp.
 
+Page updated 2026-08-03
 
