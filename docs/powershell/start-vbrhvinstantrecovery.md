@@ -3,8 +3,8 @@ title: "Start-VBRHvInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrhvinstantrecovery.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRHvInstantRecovery
@@ -54,8 +54,9 @@ Run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet to get the se
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point to which you want to restore the workload. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | Server | Specifies the host where the restored VM will reside. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | Path | To redirect the redo logs.  Specifies the path to the folder where you want to restore the VM.  Note: This parameter is required if you provide the Server parameter. | String | False | Named | False |
@@ -72,8 +73,8 @@ Parameters
 | YARAScanRule | Specifies the YARA rule. Veeam Backup & Replication will scan VMs with this rule.  Veeam Backup & Replication searches for YARA rules in the YaraRules folder. The default path is: C:\Program Files\Veeam\Backup and Replication\Backup\YaraRules.  To use a YARA rule, you must specify its name and extension. Veeam Backup & Replication accepts only .yar and .yara extensions. | String | False | Named | False |
 | EnableEntireVolumeScan | For secure restore.  Defines that the antivirus will continue workload scan after the first virus threat is found. Use this option if you want to get the report on all virus threats. | SwitchParameter | False | Named | False |
 | VirusDetectionAction | For secure restore.  Specifies the secure restore action when the infection is detected.   * DisableNetwork — use this option if you want to restore VMs in with disabled network adapters (NICs). * AbortRecovery — use this option if you want to cancel the restore session. | Accepts the VBRVirusDetectionAction enum type. | False | Named | False |
-| NetworkMapping | Specifies an array of network mapping rules. These rules specify how to map networks in the original site with networks in the target site (where the recovered VM will reside).  Note: This parameter applies if you perform instant recovery of Veeam Agent computers. | Accepts the VBRHvInstantRecoveryNetworkMappingRule[] object. To create this object, run the [New-VBRHvInstantRecoveryNetworkMappingRule](new-vbrhvinstantrecoverynetworkmappingrule.md) cmdlet. | False | Named | False |
-| HelperAppliance | Specifies settings of a helper appliance used to restore Linux-based VMs.  Note: This parameter applies if you perform instant recovery for workloads other than Microsoft Hyper-V VMs. | Accepts the VBRHvInstantRecoveryHelperAppliance object. To create this object, run the [New-VBRHvInstantRecoveryHelperAppliance](new-vbrhvinstantrecoveryhelperappliance.md) cmdlet. | False | Named | True (ByValue, ByPropertyName) |
+| NetworkMapping | Specifies an array of network mapping rules. These rules specify how to map networks in the original site with networks in the target site (where the recovered VM will reside).  Note: This parameter applies if you perform instant recovery of Veeam Agent computers. | Accepts the [VBRHvInstantRecoveryNetworkMappingRule](vbrhvinstantrecoverynetworkmappingrule.md)[] object. To create this object, run the [New-VBRHvInstantRecoveryNetworkMappingRule](new-vbrhvinstantrecoverynetworkmappingrule.md) cmdlet. | False | Named | False |
+| HelperAppliance | Specifies settings of a helper appliance used to restore Linux-based VMs.  Note: This parameter applies if you perform instant recovery for workloads other tha Microsoft Hyper-V VMs. | Accepts the VBRHvInstantRecoveryHelperAppliance object. To create this object, run the [New-VBRHvInstantRecoveryHelperAppliance](new-vbrhvinstantrecoveryhelperappliance.md) cmdlet. | False | Named | True (ByValue, ByPropertyName) |
 | DisableDiskAllocation | Defines whether to allocate disk space. | SwitchParameter | False | Named | False |
 | DiskMappingRule | Specifies backed-up virtual disk mapping settings. | Accepts the VBRHvVirtualDeviceMappingRule[] object. To create this object, run the [New-VBRHvVirtualDeviceMappingRule](new-vbrhvvirtualdevicemappingrule.md) cmdlet. | False | Named | False |
 | RegisterAsClusterResource | Defines that the restored VM will be registered as a part of a cluster in case you restore the VM to a clustered host. | SwitchParameter | False | Named | False |
@@ -112,4 +113,5 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
+Page updated 2026-03-31
 
