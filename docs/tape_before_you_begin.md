@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tape_before_you_begin.html"
-last_updated: "4/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -13,6 +13,7 @@ product_version: "13.0.1.2067"
 Before you configure a backup to tape job, check the following prerequisites and limitations:
 
 * The availability of the feature depends on the license you use. You must have a legacy socket-based Enterprise license or higher, or the VUL Foundation license or higher, installed on the Veeam backup server. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
+* Protecting [unstructured data backups](btt_nas.md) and [Veeam Plug-In backups](plugins_backup_to_tape.md) with backup to tape jobs does not consume Veeam license instances.
 * You must check configuration of source backup job(s). Tape jobs have the following requirements for the retention policy setting:
 
 + A source job with forever forward incremental chain must keep not less than 3 restore points on disk.
@@ -23,11 +24,15 @@ Before you configure a backup to tape job, check the following prerequisites and
 
 * You must configure one or more media pools with the necessary media set and retention settings.
 * You must load tapes to the tape device and configure the target media pool so that it has access to them. If the media pool has no available tape, the tape job will wait for 72 hours and then terminate.
-* The backup to tape job processes VBK (full backups), VIB files (forward incremental backups), and files and folders (if the source for the backup to tape job is an unstructured data backup job or repository that stores unstructured data backups).
+* The backup to tape job processes the following types of files:
+
+* VBK (full backups) and VIB files (forward incremental backups) for VM and physical machine backups
+* VACM (backup job metadata file), VAB (backup data files) and VASM (backup metadata files) for Veeam Plug-In backups
+* Files and folders for backup to tape jobs for unstructured data backups
+
 * If you back up to tape a reverse incremental chain, the tape job will always copy the full backup. Reverse incremental backups (VRB) are skipped from processing.
 * Microsoft SQL Server log files, Oracle log files and PostgreSQL log files (VLB) are skipped from processing.
 * If a job is unable to complete within 21 days period, it will be stopped with the Failed status.
-* Protecting [unstructured data backups with backup to tape jobs](btt_nas.md) does not consume Veeam license instances.
 * [For Veeam Cloud Connect service providers] To back up tenants to tape, you must have Veeam Cloud Connect service provider license installed on the Veeam backup server.
 * [For Veeam Cloud Connect service providers] The backup to tape job that backs up tenants to tape will not process backups created with previous versions of Veeam Backup & Replication or Veeam Agents. To avoid this, you must upgrade the tenants' backup server or agent machines to the last version. After the upgrade, the tenants' jobs must run at least once.
 
@@ -56,4 +61,5 @@ For the database server to store the configuration database, we recommend using 
 * Memory: Same as for the backup server. If the database server and the backup server are the same server, double the RAM.
 * Database Size: 850 MB for every 1 000 000 file and folder versions written to tape. A new file or folder version is created with each full backup run or if a file or folder was changed.
 
+Page updated 2026-07-23
 
