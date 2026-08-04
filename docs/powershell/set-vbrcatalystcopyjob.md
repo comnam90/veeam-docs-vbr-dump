@@ -1,18 +1,23 @@
 ---
-title: "Set-VBRCatalystCopyJob"
+title: "Set-VBRCatalystCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcatalystcopyjob.html"
-last_updated: "4/25/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Set-VBRCatalystCopyJob
+# Set-VBRCatalystCopyJob (obsolete)
 
 
 Short Description
 
 Modifies backup copy jobs for HPE StoreOnce repositories.
+
+|  |
+| --- |
+| Note |
+| This cmdlet is obsolete. Run the [Set-VBRStorageCopyJob](set-vbrstoragecopyjob.md) cmdlet instead. |
 
 Applies to
 
@@ -45,8 +50,9 @@ This cmdlet modifies backup copy jobs that are created for HPE StoreOnce reposit
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specify a backup copy job for an HPE StoreOnce repository. The cmdlet will modify the settings of this job. | Accepts the VBRCatalystCopyJob object. To get this object, run the [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies a name of a backup copy job. The cmdlet will create the backup copy job with this name. | String | False | Named | False |
 | Description | Specifies a description of a backup copy job. The cmdlet will create the backup copy job with this description. | String | False | Named | False |
@@ -54,7 +60,7 @@ Parameters
 | TargetRepository | Specifies an array of target HPE StoreOnce repositories. The cmdlet will copy backup files to these repositories.  You can specify the following types of repositories:   * HPE StoreOnce repositories. * HPE StoreOnce repositories added as extents to a Scale-Out Backup Repository. | Accepts the string and the CBackupRepository[] object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
 | NotificationOptions | Specifies notification settings. The cmdlet will create the backup copy job with these settings | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
 | ScriptOptions | Specifies job scrip options. The cmdlet will create a copy job with these script options. | Accepts the VBRJobScriptOptions object. To create this object, run the [New-VBRJobScriptOptions](new-vbrjobscriptoptions.md) cmdlet. | False | Named | False |
-| BackupWindowOptions | Specifies backup window settings for a job. The cmdlet will create the the backup copy job with these settings. | Accepts the VBRBackupWindowOptions object. To create this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | False |
+| BackupWindowOptions | Specifies backup window settings for a job. The cmdlet will create the the backup copy job with these settings. | Accepts the [VBRBackupWindowOptions](vbrbackupwindowoptions.md) object. To create this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | False |
 | AnyTime | Defines that Veeam Backup & Replication will run a backup job continuously. | SwitchParameter | False | Named | False |
 | KeepSecondaryCopies | Defines that the cmdlet will enable retention policy for the backup files in the target location. | SwitchParameter | False | Named | False |
 | SecondaryCopiesRetentionPeriod | Specifies a number of days for which you want to store backup files in the target location. | Int32 | False | Named | False |
@@ -88,4 +94,5 @@ Related Commands
 * [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md)
 * [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md)
 
+Page updated 2026-06-12
 
