@@ -3,8 +3,8 @@ title: "Encrypting Backup Copy Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/encrypting_backup_copy_jobs.html"
-last_updated: "12/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Encrypting Backup Copy Jobs
@@ -28,7 +28,7 @@ If you use WAN accelerators for backup copy jobs, the encryption process is perf
 
 ![Encrypting Backup Copy Jobs](images/encryption_wan.webp)
 
-An encrypted backup copy job may use an encrypted backup file as a source. In this situation, Veeam Backup & Replication decrypts encrypted source backup file, encrypts it again and and transfers to the target backup repository. Even if encryption is disabled in the backup copy job, Veeam Backup & Replication will decrypt data blocks of the encrypted source backup files.
+An encrypted backup copy job may use an encrypted backup file as a source. In this situation, Veeam Backup & Replication decrypts encrypted source backup file, encrypts it again and transfers to the target backup repository. Even if encryption is disabled in the backup copy job, Veeam Backup & Replication will decrypt data blocks of the encrypted source backup files.
 
 ![Encrypting Backup Copy Jobs](images/backup_copy_job_double_encryption.webp)
 
@@ -41,4 +41,5 @@ Note that Veeam Backup & Replication does not encrypt the previous backup chain 
 * If you change the password or start using KMS keys for the already encrypted job, during the next job session Veeam Backup & Replication will create a new incremental backup file. The created backup file and subsequent backup files in the backup chain will be encrypted with the new password or KMS key.
 * If you disable encryption, during the next job session Veeam Backup & Replication will automatically create a full backup file.
 
+Page updated 2026-07-23
 
