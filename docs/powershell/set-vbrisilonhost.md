@@ -3,8 +3,8 @@ title: "Set-VBRIsilonHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrisilonhost.html"
-last_updated: "3/27/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRIsilonHost
@@ -40,8 +40,11 @@ To modify settings, enter the necessary parameters with new values. The paramete
 | Tip |
 | You can specify the scope of volumes that you want to rescan with the VBRVolumeScanType parameter.  Run the [Get-VBRIsilonInfrastructureVolume](get-vbrisiloninfrastructurevolume.md) cmdlet to get an array of volumes from Dell PowerScale storage systems. |
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Host | Specifies the storage you want to modify. | Accepts the CIsilonHost object. To get this object, run the [Get-VBRIsilonHost](get-vbrisilonhost.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the name of the storage. | String | False | Named | False |
 | Description | Specifies the description of the storage. | String | False | Named | False |
@@ -83,4 +86,5 @@ Related Commands
 * [Get-VBRIsilonHost](get-vbrisilonhost.md)
 * [Get-VBRIsilonInfrastructureVolume](get-vbrisiloninfrastructurevolume.md)
 
+Page updated 2026-06-29
 
