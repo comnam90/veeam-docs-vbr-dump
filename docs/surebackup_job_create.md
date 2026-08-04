@@ -3,14 +3,19 @@ title: "Creating SureBackup Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surebackup_job_create.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating SureBackup Job
 
 
 To create a new SureBackup job, use the New SureBackup Job wizard.
+
+|  |
+| --- |
+| NOTE |
+| You can create a SureBackup job only in the Veeam Backup & Replication console. This operation is not available in the Veeam Backup & Replication web UI. |
 
 1. On the Home tab, click the SureBackup Job to launch the SureBackup Job wizard.
 2. At the Name step of the wizard, specify a name, description and backup verification mode for the SureBackup job.
@@ -53,4 +58,5 @@ To create a new SureBackup job, use the New SureBackup Job wizard.
 
 1. Click Finish
 
+Page updated 2026-07-20
 
