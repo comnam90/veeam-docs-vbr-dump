@@ -3,8 +3,8 @@ title: "Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_guest_scripts.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Script Settings
@@ -22,11 +22,11 @@ Before configuring transaction log processing, check that application-aware proc
 2. Click Application handling options for individual machines.
 3. In the displayed list, select workloads for which you want to configure application-aware processing and click Edit.
 
-To define custom settings for a VM added as a part of a VM container, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
+To define custom settings for a workload added as a part of a container, you must include the workload in the list as a standalone object. To do this, click Add and choose the necessary workload. Then select the workload in the list and define the necessary settings.
 
 1. In the Processing Settings window, on the General tab, check that Require successful processing or Try application processing, but ignore failures option is selected in the Applications area.
 
-Specifying VM Guest OS File Exclusion Settings
+Specifying Guest OS File Exclusion Settings
 
 To configure scripts:
 
@@ -35,13 +35,14 @@ To configure scripts:
 
 + Select Require successful script execution if you want Veeam Backup & Replication to stop the replication process if scripts fail.
 + Select Ignore script execution failures if you want to continue the replication process even if script errors occur.
-+ Select Disable script execution if you do not want to run scripts for the VM.
++ Select Disable script execution if you do not want to run scripts for the workload.
 
-1. In the Windows scripts section, specify paths to scripts for Microsoft Windows VMs. For the list of supported script formats, see [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts.md).
-2. In the Linux scripts section, specify paths to scripts for Linux VMs. For the list of supported script formats, see [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts.md).
+1. In the Windows scripts section, specify paths to scripts for Microsoft Windows workloads. For the list of supported script formats, see [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts.md).
+2. In the Linux scripts section, specify paths to scripts for Linux workloads. For the list of supported script formats, see [Pre-Freeze and Post-Thaw Scripts](pre_post_scripts.md).
 
-If you plan to replicate a VM container with Microsoft Windows and Linux VMs, you can select to execute both Microsoft Windows and Linux scripts. When replication starts, Veeam Backup & Replication will automatically determine which OS type is installed on the VM and use the correct scripts for this VM.
+If you plan to replicate a container with Microsoft Windows and Linux workloads, you can select to execute both Microsoft Windows and Linux scripts. When replication starts, Veeam Backup & Replication will automatically determine which OS type is installed on the workload and use the correct scripts for this workload.
 
 ![Script Settings](images/cdp_policy_guest_script.webp "Configure script processing")
 
+Page updated 2026-08-03
 
