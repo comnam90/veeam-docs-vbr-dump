@@ -3,8 +3,8 @@ title: "Start-VEHANARestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/start-vehanarestoresession.html"
-last_updated: "3/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VEHANARestoreSession
@@ -34,13 +34,14 @@ Note the difference between a restore session and a restore job. A restore sessi
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Backup | Specifies a backup used to start a new restore session. You will be able to use the session to perform restore operations with the SAP HANA databases in the backup. | Accepts the [IVEHANABackup](vehanabackup.md) object. To get this object, run the [Get-VEHANABackup](get-vehanabackup.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -67,4 +68,5 @@ Related Commands
 * [Get-VEHANARestoreSession](get-vehanarestoresession.md)
 * [Stop-VEHANARestoreSession](stop-vehanarestoresession.md)
 
+Page updated 2026-01-30
 
