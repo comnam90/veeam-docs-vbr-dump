@@ -3,8 +3,8 @@ title: "Upgrade Checklist"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_byb.html"
-last_updated: "6/23/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Upgrade Checklist
@@ -44,7 +44,7 @@ System Requirements
 8. Do you have file copy jobs? The backup server can no longer be used as a destination for File Copy jobs. Update the configuration for these jobs before proceeding with the upgrade.
 9. Do you have Veeam Hardened Repository v2 added to the backup infrastructure? Consider upgrading Veeam Hardened Repository to the latest version using Veeam Infrastructure Appliance.
 10. Do you have the FIPS mode option enabled? Persistent components will be required for guest processing.
-11. NTLM authentication is deprecated in Windows-based installations and discontinued in the Veeam Software Appliance, in favor of Kerberos. In environments where Kerberos is not available, install the Veeam Deployment Kit to keep certificate-based features such as persistent guest agents working.
+11. NTLM authentication is deprecated in the Windows-based installations and discontinued in the Veeam Software Appliance, in favor of Kerberos. In environments where Kerberos is not available, install the Veeam Deployment Kit to keep certificate-based features such as persistent guest agents working.
 12. Do you have trusted hosts hardening set to Manual? After the upgrade, open the backup console and make sure all your backup infrastructure servers are trusted.
 13. Do you have any jobs using the Transform previous backup chains into rollbacks option? This option has been removed from the product, and such jobs are no longer supported.
 14. The following features are no longer available in the product.
@@ -122,14 +122,14 @@ Integration with Storage Systems
 1. IBM FlashSystem: If you are using IBM FlashSystem Plug-In for Veeam Backup & Replication, upgrade it to version 2.3.77 or later. If the plug-in version is lower than the minimum required, storage integration will not function.
 2. Hitachi VSP: If you are using Hitachi for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with Hitachi is available starting from Veeam Backup & Replication version 13.0.1.180.
 3. HPE XP: If you are using HPE XP for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with HPE XP is available starting from Veeam Backup & Replication version 13.0.1.180.
-4. NEC Storage V Series: If you are using NEC Storage V Series Plug-In for Veeam Backup & Replication, storage integration will stop working after the upgrade. Plug-in version with support for Veeam Backup & Replication will be released by the vendor later.
+4. NEC Storage V Series: If you are using NEC Storage V Series Plug-In for Veeam Backup & Replication, upgrade it to version 2.2.271 or later. If the plug-in version is lower than the minimum required, storage integration will not function. Note that the integration with HPE XP is available starting from Veeam Backup & Replication version 13.1.
 5. Make sure your storage systems work on a supported operating system:
 
 * Cisco HyperFlex: The minimum supported operating system version is v5.0 (2x). Upgrade to it or remove the storage arrays from the backup server configuration. Also note that support for Cisco HyperFlex in this release is experimental.
 * HPE Nimble: The minimum supported operating system version is 5.2. Upgrade to it or remove the storage arrays from the backup server configuration.
 * Dell Data Domain: The supported operating system version is 7.9 to 8.6. Upgrade to it, or the backup jobs pointed to this repository will fail to start.
 * ExaGrid: The minimum supported operating system version is 7.2.0 P08. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
-* Fujitsu CS800: The minimum supported operating system version is 5.2.0. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
+* Fsas CS800: The minimum supported operating system version is 5.2.0. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
 * Infinidat InfiniGuard: The minimum supported operating system version is 3.12. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
 * Quantum DXi: Quantum DXi: The minimum supported operating system version is 5.2.0. Upgrade the storage array and Veeam Backup & Replication. On the storage side, open the VDMS Settings and enable Veeam 13 Support. For more information, see [Quantum documantation](https://qsupport.quantum.com/kb/flare/Content/dxi/Dxi_V5000/Install/Veeam.htm). On the Veeam Backup & Replication side, open the corresponding Linux host properties and complete the wizard to install persistent data mover components on the storage array. If the same array was added twice under different names in the previous version, complete the wizard for one of the hosts and re-point all backup repositories to it.
 
@@ -148,4 +148,5 @@ You can disable only policies targeted at the cluster whose filter you want to u
 4. Ensure you have configuration backup encryption enabled, otherwise stored credentials will not be included in it. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md).
 5. Do you use File to Tape jobs? During the upgrade, manually added servers and sources are migrated to inventory objects (File Server or Unstructured Data Server). No action is required, but review the job sources after the upgrade.
 
+Page updated 2026-07-24
 
