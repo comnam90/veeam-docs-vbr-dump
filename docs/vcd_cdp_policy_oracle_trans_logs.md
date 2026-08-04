@@ -3,8 +3,8 @@ title: "Oracle Archived Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_oracle_trans_logs.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Oracle Archived Log Settings
@@ -22,7 +22,7 @@ Before configuring archive log processing, check that application-aware processi
 2. Click Application handling options for individual machines.
 3. In the displayed list, select the Oracle server and click Edit.
 
-To define custom settings for a VM added as a part of a VM container, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
+To define custom settings for a VM added as a part of a container, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
 
 1. In the Processing Settings window, on the General tab, check that Require successful processing or Try application processing, but ignore failures option is selected in the Applications area.
 
@@ -31,13 +31,13 @@ Specifying Archive Log Settings
 To configure how Veeam Backup & Replication must process archive logs of an Oracle server:
 
 1. In the Processing Settings window, switch to the Oracle tab.
-2. From the Specify Oracle account with SYSDBA privileges drop-down list, select a user account that Veeam Backup & Replication will use to connect to the Oracle databases. The account that you plan to use must have privileges described in section [Permissions](required_permissions.md#veo).
+2. From the Specify Oracle account with SYSDBA privileges drop-down list, select a user account that Veeam Backup & Replication will use to connect to the Oracle databases. The account that you plan to use must have privileges described in section [Permissions](permissions_guest_processing.md#veo).
 
-You can select Use guest credentials from the list of user accounts. In this case, Veeam Backup & Replication will use the account specified at the Guest Processing step of the wizard to access the VM guest OS and connect to the Oracle databases.
+You can select Use guest credentials from the list of user accounts. In this case, Veeam Backup & Replication will use the account specified at the Guest Processing step of the wizard to access the guest OS and connect to the Oracle databases.
 
 1. In the Archived logs section, specify how to process archived logs:
 
-* If you want to preserve archived logs on the VM guest OS, select Do not delete archived logs. When the replication job completes, the non-persistent runtime components or persistent components will not truncate transaction logs.
+* If you want to preserve archived logs on the guest OS, select Do not delete archived logs. When the replication job completes, the non-persistent runtime components or persistent components will not truncate transaction logs.
 
 It is recommended that you select this option for databases where the ARCHIVELOG mode is turned off. If the ARCHIVELOG mode is turned on, archived logs may grow large and consume all disk space.
 
@@ -48,4 +48,5 @@ Transaction logs will be deleted using Oracle Call Interface after the CDP polic
 
 ![Oracle Archived Log Settings_2](images/vcd_cdp_policy_oracle.webp)
 
+Page updated 2026-08-03
 
