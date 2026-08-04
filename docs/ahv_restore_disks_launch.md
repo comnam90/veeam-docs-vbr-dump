@@ -3,8 +3,8 @@ title: "Step 1. Launch Virtual Disk Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_disks_launch.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Virtual Disk Restore Wizard
@@ -26,4 +26,5 @@ Alternatively, expand the necessary backup job, select the VM and click Virtual 
 
 [![Launch Virtual Disk Restore Wizard](images/ahv_restore_disk_launch.webp)](images/ahv_restore_disk_launch.webp "Launch Virtual Disk Restore Wizard")
 
+Page updated 2026-07-16
 
