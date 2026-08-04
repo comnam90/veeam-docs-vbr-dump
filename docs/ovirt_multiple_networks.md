@@ -3,8 +3,8 @@ title: "Configuring Multiple Networks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_multiple_networks.html"
-last_updated: "1/30/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Multiple Networks
@@ -40,7 +40,7 @@ In this example, the workers, the backup server, the repository and the oVirt cl
 
 Example 3. Valid Configuration
 
-In this example, the workers are connected to Network A using their first vNICs, while the workers are also connected to Network B that is [configured as a preferred network](select_backup_network.md) to deliver traffic to the backup repository. Also, you have a router configured to forward traffic between networks A, C and D. This configuration is valid since the workers can use Network A to communicate with other backup infrastructure components though the router.
+In this example, the workers are connected to Network A using their first vNICs, while the workers are also connected to Network B that is [configured as a preferred network](select_backup_network.md) to deliver traffic to the backup repository. Also, you have a router configured to forward traffic between networks A, C and D. This configuration is valid since the workers can use Network A to communicate with other backup infrastructure components through the router.
 
 |  |
 | --- |
@@ -60,4 +60,5 @@ To make the configuration valid, do either of the following:
 
 ![Configuring Multiple Networks](images/ovirt_multiple_networks_a_b_c.webp)
 
+Page updated 2026-07-24
 
