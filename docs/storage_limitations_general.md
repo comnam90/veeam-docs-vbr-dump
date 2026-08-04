@@ -3,8 +3,8 @@ title: "General Requirements and Limitations (Storage Systems)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_limitations_general.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # General Requirements and Limitations (Storage Systems)
@@ -33,8 +33,9 @@ IPv6 is supported for the following storage systems:
 
 * Dell Unity (XT)
 * Dell PowerStore
-* Fujitsu ETERNUS HX/AX
-* Fujitsu ETERNUS AF and DX Series (management connections only)
+* Fsas ETERNUS EP300
+* Fsas ETERNUS HX/AX
+* Fsas ETERNUS AF and DX Series (management connections only)
 * Hitachi VSP/VSP One Block (data connections for VSP 5000; management and data connections for others)
 * HPE Primera, HPE Alletra 9000
 * HPE Alletra Storage MP B10000 (management connections only)
@@ -43,8 +44,9 @@ IPv6 is supported for the following storage systems:
 * IBM FlashSystem (management connections only)
 * Lenovo ThinkSystem DM/DG Series
 * NEC Storage M Series (management connections only)
+* NEC Storage V Series
 * NetApp ONTAP
-* Pure Storage FlashArray
+* Everpure FlashArray
 
 If only management IPv6 connection is supported for a storage system, you can add this storage system to backup infrastructure using IPv6 address. However, all data traffic will be transferred over IPv4.
 
@@ -63,9 +65,9 @@ Backup from storage snapshots has the following requirements and limitations:
 
 * You must configure the backup infrastructure in the following way:
 
-+ Add to the backup infrastructure a backup proxy that will be used for backup or replication, and properly configure this backup proxy. For more information, see [Configuring Backup Proxy](storage_configure_proxy.md).
-+ Add to the backup infrastructure vCenter Server or ESXi hosts with VMs whose disks are hosted on the storage system.
-+ Add the storage system to the backup infrastructure. If you plan to perform backup from snapshots on secondary storage arrays, also add the secondary storage array to the backup infrastructure.
+* Add to the backup infrastructure a backup proxy that will be used for backup or replication, and properly configure this backup proxy. For more information, see [Configuring Backup Proxy](storage_configure_proxy.md).
+* Add to the backup infrastructure vCenter Server or ESXi hosts with VMs whose disks are hosted on the storage system.
+* Add the storage system to the backup infrastructure. If you plan to perform backup from snapshots on secondary storage arrays, also add the secondary storage array to the backup infrastructure.
 
 * Backup from storage snapshots does not support vRDM disks. vRDM disks are skipped from processing.
 * Backup from storage snapshots cannot be used:
@@ -79,9 +81,9 @@ Backup from storage snapshots has the following requirements and limitations:
 
 * For storage systems working over NFS:
 
-+ VMs that you plan to back up or replicate must not have VMware snapshots. VMs with snapshots are processed during regular backup job.
-+ If you enable the Enable VMware tools quiescence option in the job settings, Veeam Backup & Replication will not use backup from storage snapshots to process running Microsoft Windows VMs that have VMware Tools installed.
-+ Backup from storage snapshots is not supported for SLES operating systems working over IPv6.
+* VMs that you plan to back up or replicate must not have VMware snapshots. VMs with snapshots are processed during regular backup job.
+* If you enable the Enable VMware tools quiescence option in the job settings, Veeam Backup & Replication will not use backup from storage snapshots to process running Microsoft Windows VMs that have VMware Tools installed.
+* Backup from storage snapshots is not supported for SLES operating systems working over IPv6.
 
 * [For backup from secondary storage arrays] When you add storage arrays to the backup infrastructure, you must add to the rescan scope volumes and LUNs on which VM disks are located (both for primary and secondary storage arrays). For more information, see the description of the storage system wizard.
 
@@ -96,17 +98,17 @@ Snapshot jobs (snapshot-only jobs and backup jobs with storage snapshot retentio
 
 * The following applies to snapshot-only jobs:
 
-+ If you exclude a VM disk from the job and this disk resides on the same volume as a non-excluded disk, Veeam Backup & Replication creates a snapshot of the entire volume, which includes the data of the excluded disk. If only the excluded disks reside on the volume, the volume snapshot is not created.
-+ Veeam Backup & Replication does not support guest file indexing for snapshot-only jobs.
-+ The ability to create snapshot-only jobs depends on the Veeam Backup & Replication license edition. For snapshot-only jobs on the primary storage arrays, you can use any license edition. For snapshot-only jobs on the secondary storage arrays, the license edition depends on the used storage system and replication feature. For more information, see [Storage Systems and Supported Features](vmware_integration.md#feature).
+* If you exclude a VM disk from the job and this disk resides on the same volume as a non-excluded disk, Veeam Backup & Replication creates a snapshot of the entire volume, which includes the data of the excluded disk. If only the excluded disks reside on the volume, the volume snapshot is not created.
+* Veeam Backup & Replication does not support guest file indexing for snapshot-only jobs.
+* The ability to create snapshot-only jobs depends on the Veeam Backup & Replication license edition. For snapshot-only jobs on the primary storage arrays, you can use any license edition. For snapshot-only jobs on the secondary storage arrays, the license edition depends on the used storage system and replication feature. For more information, see [Storage Systems and Supported Features](vmware_integration.md#feature).
 
 * The following applies to backup jobs with storage snapshot retention:
 
 * You must configure the backup infrastructure in the following way:
 
-+ Add to the backup infrastructure a backup proxy that will be used for backup or replication, and properly configure this backup proxy. For more information, see [Configuring Backup Proxy](storage_configure_proxy.md).
-+ Add to the backup infrastructure vCenter Server or ESXi hosts with VMs whose disks are hosted on the storage system.
-+ Add the storage system to the backup infrastructure. If you plan to perform backup from snapshots on secondary storage arrays, also add the secondary storage array to the backup infrastructure.
+* Add to the backup infrastructure a backup proxy that will be used for backup or replication, and properly configure this backup proxy. For more information, see [Configuring Backup Proxy](storage_configure_proxy.md).
+* Add to the backup infrastructure vCenter Server or ESXi hosts with VMs whose disks are hosted on the storage system.
+* Add the storage system to the backup infrastructure. If you plan to perform backup from snapshots on secondary storage arrays, also add the secondary storage array to the backup infrastructure.
 
 * The availability of the feature depends on the license you use. For more details about licensing support, see [Veeam Data Platform Feature Comparison](https://www.veeam.com/veeam_data_platform_feature_comparison_ds.pdf).
 * [For backup from secondary storage arrays] When you add storage arrays to the backup infrastructure, you must add to the rescan scope volumes and LUNs on which VM disks are located (both for primary and secondary storage arrays). For more information, see the description of the storage system wizard.
@@ -153,7 +155,7 @@ Before you restore VM guest OS files from Linux, Unix or other file systems, che
 * If you plan to restore VM guest OS files to their original location, make sure that VMware Tools are installed on the target VM.
 * Veeam Backup & Replication restores ACL for recovered VM guest OS files. To let Veeam Backup & Replication detect the target Linux system architecture and kernel version, make sure that arch and uname are installed on the VM guest OS.
 * Veeam Backup & Replication must have access to the guest OS of the target VM to be able to deploy a coordination process. The coordination process performs a number of administrative actions on the target VM guest OS, for example, collects information about mount points.
-* The mount server, whether it is a helper host or a helper appliance, must have access over a network to a VM whose files you restore or direct access to vCenter or ESXi host where the VM resides. If the mount server is connected to a VM whose files you restore through VIX API/vSphere Web Services, you must use a root account for a target VM, otherwise the restore process will fail.
+* The mount server, whether it is a helper host or a helper appliance, must have access over a network to a VM whose files you restore or direct access to vCenter or ESXi host where the VM resides. If the mount server is connected to a VM whose files you restore through vSphere Web Services, you must use a root account for a target VM, otherwise the restore process will fail.
 
 * You cannot restore files directly to the original location from backups of BSD, Mac and Solaris VMs. You cannot restore files directly to the original location from NSS filesystems. Use the Copy to option instead.
 
@@ -161,10 +163,11 @@ Before you restore VM guest OS files from Linux, Unix or other file systems, che
 
 * For Linux target VM, consider the following:
 
-+ If you want to restore files over network, make sure that the SSH daemon is configured and SCP utility is available on the target VM.
-+ SELinux must be disabled on the target VM.
-+ A range of ports that are used for data transfer must be open on the target VM.
+* If you want to restore files over network, make sure that the SSH daemon is configured and SCP utility is available on the target VM.
+* SELinux must be disabled on the target VM.
+* A range of ports that are used for data transfer must be open on the target VM.
 
 For more information on configuring connection settings for Linux servers, see the [Specify Credentials and SSH Settings](linux_server_ssh.md) step of the New Linux Server wizard.
 
+Page updated 2026-07-29
 
