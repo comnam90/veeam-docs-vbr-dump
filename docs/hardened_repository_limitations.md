@@ -3,14 +3,25 @@ title: "Requirements and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_limitations.html"
-last_updated: "3/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Requirements and Limitations
 
 
 For the hardened repository, consider the following requirements and limitations.
+
+Veeam Infrastructure Appliance Hardened Repository
+
+When deploying a Veeam Hardened Repository with Veeam Infrastructure Appliance, consider the following:
+
+* Hardened repositories created with Veeam Infrastructure Appliance must use certificate-based authentication. SSH cannot be used.
+* It is strongly recommended that you disable the Host Management console Web UI on Veeam Infrastructure Appliance Hardened Repositories. This reduces the potential security attack surface.
+* Multi-factor authentication cannot be disabled on hardened repositories that do not have security officer accounts enabled.
+* If security officer accounts are enabled, you must initialize the default security officer account before you add the hardened repository to your Veeam Backup & Replication infrastructure.
+* You attach the block storage for a Veeam Infrastructure Appliance Hardened Repository — local, iSCSI or Fibre Channel — in the Host Management console. For more information, see [Managing Storage](hmc_manage_storage.md).
+* You can allow a Veeam Infrastructure Appliance Hardened Repository to also function as an Application Backup repository. Combining both roles on the same appliance increases the attack surface on its immutability compared to using a standalone Veeam Hardened Repository. For more information, see [Configuring Backup Infrastructure Settings](hmc_configure_infrastructure.md).
 
 Linux Server
 
@@ -29,15 +40,15 @@ Linux Server
 * The Linux machine file system must support immutable files and extended attributes modified by the [chattr](https://man7.org/linux/man-pages/man1/chattr.1.html) and [setxattr](https://man7.org/linux/man-pages/man2/setxattr.2.html) commands. We recommend using XFS for performance and space efficiency reasons (block cloning support).
 * As the hardened repository requires the block storage, you cannot use the following storage types:
 
-+ NFS share or a Linux machine with the mounted NFS volume.
-+ ⁠A Linux machine with the mounted SMB (CIFS) volume.
+* NFS share or a Linux machine with the mounted NFS volume.
+* ⁠A Linux machine with the mounted SMB (CIFS) volume.
 
 * Depending on the Linux distribution, Veeam services use one of the following Linux firewall managers to operate correctly:
 
-+ firewalld
-+ ufw
-+ iptables
-+ [For IPv6] ip6tables
+* firewalld
+* ufw
+* iptables
+* [For IPv6] ip6tables
 
 If none of these firewall managers are installed, make sure that you open all required ports manually. For more information, see [Ports](used_ports.md).
 
@@ -49,9 +60,9 @@ Repository
 
 * For the separate directory that you created for the backup data, consider the following:
 
-+ Both owner and group must be the user account you use to connect to the Linux server.
-+ Directory permissions must be 0700.
-+ Directory must not have a sticky bit.
+* Both owner and group must be the user account you use to connect to the Linux server.
+* Directory permissions must be 0700.
+* Directory must not have a sticky bit.
 
 * To store backup files in a repository, use only a forward incremental backup method with enabled [active full backup](active_full_backup.md) or [synthetic full backup](synthetic_full_backup.md). Once a backup file becomes immutable, it can be merged or deleted only when the immutability time period expires. For this reason, you cannot select a reverse or a forever forward incremental backup method.
 
@@ -64,13 +75,5 @@ Immutability Feature
 
 * To use the immutability feature for backup copy jobs, enable the GFS retention policy. For more information, see [Long-Term Retention Policy (GFS)](backup_copy_gfs.md).
 
-Veeam Infrastructure Appliance Hardened Repository
-
-When deploying a Veeam Hardened Repository with Veeam Infrastructure Appliance, consider the following:
-
-* Hardened repositories created with Veeam Infrastructure Appliance must use certificate-based authentication. SSH cannot be used.
-* The Host Management console web UI is disabled by default. It is automatically enabled for 24 hours when security officer approval is required. When the request is resolved, the web UI is automatically disabled.
-* Multi-factor authentication cannot be disabled on hardened repositories that do not have security officer accounts enabled.
-* If security officer accounts are enabled, you must initialize the default security officer account before you add the hardened repository to your Veeam Backup & Replication infrastructure.
-
+Page updated 2026-07-22
 
