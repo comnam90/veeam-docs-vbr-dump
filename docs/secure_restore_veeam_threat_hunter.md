@@ -3,20 +3,19 @@ title: "Veeam Threat Hunter for Secure Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/secure_restore_veeam_threat_hunter.html"
-last_updated: "7/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Threat Hunter for Secure Restore
 
 
-For restore session, you can run a Veeam Threat Hunter scan to detect malware activity.
+For the restore session, you can run a Veeam Threat Hunter scan to detect malware activity. For more information on how to run the scan, see [Performing Veeam Threat Hunter Scan](restore_session_veeam_threat_hunter_run.md).
 
 In This Section
 
-* [How Veeam Threat Hunter Works](scan_backup_veeam_threat_hunter_hiw.md)
-* [Requirements and Limitations](scan_backup_veeam_threat_hunter_limitations.md)
-* [Performing Veeam Threat Hunter Scan](restore_session_veeam_threat_hunter_run.md)
-* [Viewing Veeam Threat Hunter Scan Results](scan_backup_veeam_threat_hunter_log.md)
+* [How Veeam Threat Hunter Works](secure_restore_veeam_threat_hunter_hiw.md)
+* [Requirements and Limitations](restore_session_veeam_threat_hunter_limitations.md)
 
+Page updated 2026-07-24
 
