@@ -3,8 +3,8 @@ title: "Microsoft Windows File Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_restore_before_you_begin.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Microsoft Windows File Recovery
@@ -18,12 +18,12 @@ The availability of the recovery features depends on the license you use. For mo
 
 Infrastructure Components
 
-* The account that you use to start the Veeam Backup & Replication console and to connect to the backup server must have permissions and privileges described in section [Veeam Backup & Replication Console Permissions](required_permissions.md#rpvbr).
+* The account that you use to start the Veeam Backup & Replication console and to connect to the backup server must have permissions and privileges described in section [Veeam Backup & Replication Console Permissions](permissions_installing.md#rpvbr).
 
 * You can recover files from basic disks and dynamic disks (including simple, mirrored, striped, spanned and RAID5 volumes).
-* [For recovery to another workload, to original location, or permissions only] If the target workload uses a gMSA and you recover files from a backup, you must also [add this account](using_gmsa.md#install) on the mount server used for recovery. If you recover from a replica, you must add the gMSA account on the backup server.
+* [For recovery to another workload, to original location, or permissions only] If the target workload uses a gMSA and you recover files from a backup, the mount server used for recovery must be allowed to [retrieve the gMSA password](using_gmsa.md#creating_gmsa). If you recover from a replica, the backup server must be allowed to retrieve the gMSA password.
 
-* [For vSphere recovery to original location] The mount server must have access to the guest OS (if recovery is performed over the network) or vCenter Server and ESXi host where the target workload runs (if recovery is performed over VIX API/vSphere Web Services).
+* [For vSphere recovery to original location] The mount server must have access to the guest OS (if recovery is performed over the network) or vCenter Server and ESXi host where the target workload runs (if recovery is performed over vSphere Web Services).
 * [For Hyper-V recovery to original location] Guest OS must be accessible from the backup server over the network, or over PowerShell Direct (for VMs that reside on Microsoft Hyper-V Server 2016 or later).
 
 Mount Server
@@ -38,7 +38,7 @@ You can recover files and folders of Microsoft Windows workloads using a Linux s
 * Symbolic links and reparse points cannot be recovered.
 * Recovery of files and folders from dynamic disks is not supported.
 * The backup server, mount server and the target Microsoft Windows workload must be in the same domain, or the [Deployment Kit](deployment_kit.md) must be installed on the target workload.
-* Recovery is available only over the network. Recovery over VIX API/vSphere Web Services or PowerShell Direct is not available.
+* Recovery is available only over the network. Recovery over vSphere Web Services or PowerShell Direct is not available.
 * Besides the file or folder content, Veeam Backup & Replication recovers only basic attributes: Date Created, Date Modified, Read-Only, and Hidden.
 * You will need to specify the path for recovery.
 * [For Microsoft Windows-based backup server] The following operations are available to finalize recovery: recovery to the original location (Restore), recovery to another location (Restore to) and copy (Copy to).
@@ -61,7 +61,6 @@ Source for Data Recovery
 * [For recovery to original location] You cannot recover guest OS files if you have excluded the system disk from the backup used for recovery and the [volume GUID](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-volume) of the system disk was changed after the backup creation.
 
 * [For [comparison functionality](guest_restore_save.md#compare) and recovery of permissions only] Check that VMware Tools or [Hyper-V integration services](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/integration-services) are installed on the original machine and the machine is accessible over the network.
-* You cannot use the [comparison functionality](guest_restore_save.md#compare) if the [Group Managed Service Account (gMSA) account](using_gmsa.md) is used for the workload whose files you plan to recover.
 
 * The [comparison functionality](guest_restore_save.md#compare) is not available for backups created by [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7), for backups exported with Kasten policies and for backups stored in external repositories (for example, backups created by Veeam Backup for AWS, Veeam Backup for Microsoft Azure, and so on).
 
@@ -71,7 +70,6 @@ Source for Data Recovery
 
 Target for Data Recovery
 
-* If you restore files to a target workload that uses the gMSA credentials, install the Deployment Kit on the target workload before you start the restore. For more information, see [Using Veeam Deployment Kit](deployment_kit.md).
 * [For recovery to original location] VMware Tools must be installed on the target VM. Application-aware processing must be supported for the Microsoft Windows OS of the original machine. If this is not possible, you can use 1-click file-level restore or copy files to the selected folder and then move them to their original location.
 
 * [For [recovery to another workload](guest_restore_save.md#new_vm)] You can recover items only to Microsoft Windows-based workloads. You can select a workload only within the same virtual infrastructure where the original workload resides. For example, if the original workload resides in VMware vSphere, you can select a workload that resides in VMware vSphere only.
@@ -79,7 +77,6 @@ Target for Data Recovery
 
 ReFS
 
-* When recovering files from ReFS disks, Veeam Backup & Replication uses VHD mount. VHD mount supports disks up to 64 TB. If a workload has an ReFS disk larger than 64 TB, file-level recovery from that disk fails.
 * The mount server must run Microsoft Windows Server 2016 or later.
 * The mount server must support the same ReFS version or later than the version used on the workload from which you plan to recover files. For more information on which OSes support which ReFS, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
 
@@ -102,10 +99,8 @@ Recovery Finalization
 * The following applies to the Copy to operation:
 
 * The Copy to operation does not use the comparison states and copies all selected files and folders.
-* Do not copy restored files to the backup server. Restored files may be corrupted or infected. If such files reach the backup server, they can compromise the server and every backup stored on it.
-
-By default, if you launch the Veeam Backup & Replication console on the backup server, the Copy to operation blocks the backup server as a target and allows only a network shared folder. You can bypass this block by specifying the target as a UNC path. Do this only if you are certain the files are safe.
-
+* Do not copy restored files to the backup server. Restored files may be corrupted or infected. If such files reach the backup server, they can compromise the server and every backup stored on it.By default, if you launch the Veeam Backup & Replication console on the backup server, the Copy to operation blocks the backup server as a target and allows only a network shared folder. You can bypass this block by specifying the target as a UNC path. Do this only if you are certain the files are safe.
 * [For Hyper-V VMs] You can restore files and folders to components of the Veeam Backup & Replication infrastructure available over the network.
 
+Page updated 2026-07-29
 
