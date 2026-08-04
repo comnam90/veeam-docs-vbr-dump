@@ -3,8 +3,8 @@ title: "Step 4. Specify PostgreSQL Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_single_tas_specify_postgresql_settings.html"
-last_updated: "8/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify PostgreSQL Settings
@@ -34,13 +34,14 @@ For example:
 
 |  |
 | --- |
-| $ pg\_ctl start -D /var/lib/pgsql/13/data |
+| # Linux target server $ pg\_ctl start -D /var/lib/pgsql/13/data # Windows target server pg\_ctl.exe start -D "C:\Program Files\PostgreSQL\13\data" |
 
 |  |
 | --- |
 | Note |
 | If the target data directory is not empty, you will be prompted to overwrite it before proceeding to the next step. |
 
-[![Specifying PostgreSQL Settings](images/vep_restore_to_another_server_postgresql_settings.webp)](images/vep_restore_to_another_server_postgresql_settings.webp "Specifying PostgreSQL Settings")
+![Step 4. Specify PostgreSQL Settings](images/vep_restore_to_another_server_postgresql_settings.webp "Specifying PostgreSQL Settings")
 
+Page updated 2026-07-31
 
