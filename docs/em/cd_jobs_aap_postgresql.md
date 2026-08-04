@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cd_jobs_aap_postgresql.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # PostgreSQL Archive Log Settings
@@ -49,5 +49,5 @@ Make sure the specified account has sufficient rights. For details, see the [Per
 
 ![PostgreSQL Archive Log Settings](images/postgresl_item_restore_postgres.webp "Handling PostgreSQL Transaction Logs")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
