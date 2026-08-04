@@ -3,8 +3,8 @@ title: "Using Certificate Signed by Internal CA"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tls_internal_ca.html"
-last_updated: "4/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Using Certificate Signed by Internal CA
@@ -15,11 +15,7 @@ If you want to use a certificate signed by an internal Certificate Authority (CA
 * The Veeam Backup & Replication server must trust the CA:
 
 * For Microsoft Windows-based Veeam Backup & Replication, add the certificate to the Trusted Root Certification Authority store.
-* For Linux-based Veeam Backup & Replication, copy the CA certificate to the /etc/pki/ca-trust/source/anchors/ directory in the PEM format, and then run the following command as the [root user](hmc_configure_remote_access.md#access_root_shell).
-
-|  |
-| --- |
-| update-ca-trust extract |
+* For Linux-based Veeam Backup & Replication, add the CA certificate to the trusted certificate store in the Veeam Host Management web UI. For more information, see [Managing Certificates](hmc_manage_certificates.md).
 
 * [For Linux-based Veeam Agent computers] OpenSSL version 1.0 or later must be installed on the Veeam Agent computer.
 
@@ -61,4 +57,5 @@ If you use Windows Server Certification Authority for managing certificates, per
 3. On the Extensions tab, enable the Make this extension critical and Do not allow subject to issue certificates to other CAs options.
 4. Issue an Veeam Backup & Replication certificate based on this template.
 
+Page updated 2026-07-14
 
