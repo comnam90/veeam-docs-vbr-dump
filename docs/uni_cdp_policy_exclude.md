@@ -3,8 +3,8 @@ title: "Step 4. Exclude Objects"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_policy_exclude.html"
-last_updated: "10/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Exclude Objects
@@ -21,4 +21,5 @@ To exclude workloads:
 
 ![Step 4. Exclude Objects](images/uni_cdp_policy_exclude_workload.webp "Select workloads")
 
+Page updated 2026-06-15
 
