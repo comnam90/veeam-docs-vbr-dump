@@ -3,8 +3,8 @@ title: "GET /security"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_security.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /security
@@ -26,8 +26,9 @@ Request Header
 
 The request contains the following headers:
 
+Request Header
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -62,6 +64,7 @@ The example below returns a resource representation of the /security resource in
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/security    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <EnterpriseSecuritySettings Href="http://local.host:9399/api/security" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| Request:  GET https://localhost:9398/api/security  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <EnterpriseSecuritySettings Href="http://local.host:9399/api/security" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/security/accounts" Type="EnterpriseAccountReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/security/roles" Type="EnterpriseRoleReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/security/accounts" Rel="Create"/>     <Link Href="http://local.host:9399/api/security/accounts?action=rebuildScope" Rel="Start"/>   </Links> </EnterpriseSecuritySettings> |
 
+Page updated 2026-07-29
 
