@@ -3,8 +3,8 @@ title: "Working with Tapes"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_backup_to_tape.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Working with Tapes
@@ -19,4 +19,5 @@ Related Topics
 
 [Tenant Backup to Tape](cloud_connect_tape.md)
 
+Page updated 2026-08-03
 
