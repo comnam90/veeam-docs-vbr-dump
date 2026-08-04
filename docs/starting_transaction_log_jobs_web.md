@@ -3,8 +3,8 @@ title: "Starting and Stopping Transaction Log Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/starting_transaction_log_jobs_web.html"
-last_updated: "9/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting and Stopping Transaction Log Backup Jobs
@@ -22,7 +22,7 @@ The transaction log backup job is created automatically by Veeam Backup & Replic
 
 Starting Transaction Log Backup Jobs
 
-A parent backup job is manually started when you click Start on the toolbar or automatically by schedule. The transaction log backup job is initially started when you enable the schedule for the parent backup job. The transaction log backup works continuously in the background. A new session of the transaction log backup job starts every time the parent backup job is launched.
+A parent backup job is manually started when you click Start on the ribbon or automatically by schedule. The transaction log backup job is initially started when you enable the schedule for the parent backup job. The transaction log backup works continuously in the background. A new session of the transaction log backup job starts every time the parent backup job is launched.
 
 Stopping Transaction Log Backup Jobs
 
@@ -38,9 +38,9 @@ If you want the backup job to create image-level backups of the VM, but do not w
 To disable transaction log shipping:
 
 1. In the management pane, click the Jobs node.
-2. In the working area, select a backup job and click Edit on the ribbon or right-click a backup job and select Edit.
-3. Proceed to the Guest Processing step of the wizard and click Application-aware processing options.
-4. In the Application-Aware Processing Options window, select a VM and click Edit.
+2. In the working area, select a backup job and click Manage > Edit on the ribbon or right-click a backup job and select Manage > Edit.
+3. At the Guest Processing step of the wizard, click Customize guest processing link.
+4. In the Customize Guest Processing Settings window, select a VM and click Application Settings.
 5. On the SQL or Oracle tab of the Processing Settings window, disable transaction log backup.
 6. Click Finish to save the job settings.
 
@@ -51,17 +51,18 @@ If you do not want to create image-level backups of the VM and back up database 
 To disable scheduling for the parent backup job:
 
 1. In the management pane, click the Jobs node.
-2. In the working area, select a backup job and click Edit on the ribbon. Alternatively, you can right-click a backup job and select Edit.
-3. Proceed to the Schedule step of the wizard and clear the Run the job automatically check box.
+2. In the working area, select a backup job and click Manage > Edit on the ribbon. Alternatively, you can right-click a backup job and select Manage > Edit.
+3. At the Schedule step of the wizard, set the Run the job automatically toggle to Off.
 4. Click Finish to save the job settings.
 
 Alternatively, you can disable the parent backup job:
 
 1. In the management pane, click the Jobs node.
-2. In the working area, select a backup job and click Disable on the ribbon or right-click a job and select Disable.
+2. In the working area, select a backup job and click Manage > Disable on the ribbon or right-click a job and select Manage > Disable.
 
-To re-activate transaction log processing for all VMs in the parent backup job, select the job in the list and click Enable on the ribbon again.
+To re-activate transaction log processing for all VMs in the parent backup job, select the job in the list and click Manage > Enable on the ribbon again.
 
 [![Click to zoom in](images/log_backup_disable_web.webp)](images/log_backup_disable_web.webp "Click to zoom in")
 
+Page updated 2026-06-18
 
