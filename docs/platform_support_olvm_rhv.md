@@ -3,8 +3,8 @@ title: "oVirt KVM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_olvm_rhv.html"
-last_updated: "6/30/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # oVirt KVM
@@ -20,8 +20,6 @@ oVirt KVM Virtual Infrastructure
 | Platform | * Oracle Linux Virtualization node operating version 4.5 and cluster compatibility version 4.7 * Red Hat Virtualization node operating version 4.5 and cluster compatibility version 4.7 |
 | Hypervisor | KVM |
 | Management Server | * Red Hat Virtualization Manager version 4.5.0 or later * Oracle Linux Virtualization Manager version 4.5.5 or later |
-
-Consider that at least one file-level storage configured in Proxmox Virtual Environment is required.
 
 oVirt KVM VMs
 
@@ -49,13 +47,14 @@ For other requirements and limitations of guest OS file restore, see [Requiremen
 
 Version Compatibility
 
-The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-In for oVirt KVM.
+The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-in for oVirt KVM.
 
 Version Compatibility
 
-| Product Release | Veeam Plug-In for oVirt KVM Build | Veeam Backup & Replication Build |
-| 7 | 13.7.2.9 (recommended) 13.7.1.10 13.7.0.473 | 13.0.2.29 (recommended) 13.0.1.2067 13.0.1.1071 13.0.1.180 |
-| 6.2 | 12.6.2.6 | 12.3.2.3617 |
+| Product Release | Veeam Plug-in for oVirt KVM Build | Veeam Backup & Replication Build |
+| 8 | 13.8.0.359 | 13.1.0.411 |
+| 7 | 13.7.2.9 13.7.1.10 13.7.0.473 | 13.0.2.29 13.0.1.2067 13.0.1.1071 13.0.1.180 |
+| 6.2 | 12.6.2.6 | 12.3.2.4165 12.3.2.3617 |
 | 6.1 | 12.6.1.4 | 12.3.1.1139 |
 | 6.0 | 12.6.0.166 | 12.3.0.310 |
 | 5.0 | 12.5.0.299 | 12.2.0.334 |
@@ -70,4 +69,5 @@ Related Topics
 * [Overview of Oracle Linux Virtualization Manager Protection Functionality](olvm_rhv.md)
 * [Oracle Linux Virtualization Manager Integration Architecture](ovirt_infrastructure_components.md)
 
+Page updated 2026-07-27
 
