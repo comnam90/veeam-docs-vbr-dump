@@ -3,8 +3,8 @@ title: "Set-VBRNASFileServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnasfileserver.html"
-last_updated: "3/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRNASFileServer
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Modifies managed Windows or Linux file serves added to the Veeam Backup & Replication infrastructure.
+Modifies managed Windows or Linux file servers added to the Veeam Backup & Replication infrastructure.
 
 Applies to
 
@@ -22,11 +22,11 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRNASFileServer -Server <VBRNASFileServer> [-CacheRepository <CBackupRepository>]  [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel <VBRNASBackupIOControlLevel>]  [<CommonParameters>] |
+| Set-VBRNASFileServer [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-CacheRepository <CBackupRepository>] [-Force] [-MetaMigrationType {CheckExistence | CopyMetaFromCache | DownloadMetaFromArchive}] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] -Server <VBRNASFileServer> [<CommonParameters>] |
 
 Detailed Description
 
-This cmdlet modifies managed Windows or Linux file serves added to the Veeam Backup & Replication infrastructure. This cmdlet modifies an existing VMware replication job.
+This cmdlet modifies managed Windows or Linux file servers added to the Veeam Backup & Replication infrastructure. This cmdlet modifies an existing VMware replication job.
 
 |  |
 | --- |
@@ -35,12 +35,15 @@ This cmdlet modifies managed Windows or Linux file serves added to the Veeam Ba
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specify a file server. The cmdlet will modify settings of this file server. | Accepts the VBRNASNFSServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | CacheRepository | Specifies the cache repository that you want to modify. Veeam Backup & Replication will keep the cached data of the file server on this repository. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
-| MetaMigrationType | Specifies how the cmdlet will migrate metadata. You can use one of the following options:   * CheckExistence — use this option to check that metadata is available on the current cache repository. * CopyMetaFromCache — use this option to migrate metadata from source cache repository to a new cache repository. * DownloadMetaFromArchive — use this option to migrate metadata from archive repository or from replica metadata in archive repository. | VBRNASBackupMetaMigrationType | False | Named | False |
+| MetaMigrationType | Specifies how the cmdlet will migrate metadata. You can use one of the following options:   * CheckExistence — use this option to check that metadata is available on the current cache repository. * CopyMetaFromCache — use this option to migrate metadata from source cache repository to a new cache repository. Note: If metadata in a source cache repository is corrupted, the cmdlet will copy data from the archive repository. * DownloadMetaFromArchive — use this option to migrate metadata from archive repository or from replica metadata in archive repository. | VBRNASBackupMetaMigrationType | False | Named | False |
 | BackupIOControlLevel | Specifies a speed that Veeam Backup & Replication will use to read data from the file server. You can specify either of the following speed:   * Lowest * Low * Medium * High * Highest | VBRNASBackupIOControlLevel | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will modify settings of managed Windows or Linux file servers without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -71,4 +74,5 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-29
 
