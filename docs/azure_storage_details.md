@@ -3,8 +3,8 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/azure_storage_details.html"
-last_updated: "4/1/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Object Storage Settings
@@ -30,8 +30,13 @@ Make sure that the container where you want to store your backup data was create
 | The default Root container is not supported. For more information about this container, see [Microsoft Docs](https://docs.microsoft.com/en-us/rest/api/storageservices/working-with-the-root-container). |
 
 1. To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
+2. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB
+3. If another backup server already manages the object storage repository, you will be prompted to either add it as a read-only repository or take ownership of it from the backup server currently managing it in read-write mode. For more information, see the [Read-only mode](object_storage_repository.md#readOnlyAccess) subsection. To enable the read-only access, select the Enable read-only access check box.
 
-1. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB.
+   |  |
+   | --- |
+   | Important |
+   | Consider the following:  * This check box is available only for immutable object storage repositories, added as a standalone repository or as the performance or capacity extent of a scale-out backup repository. * You cannot change this option after you add the object storage repository to the backup infrastructure. |
 
 [![Specify Object Storage Settings](images/azure_container.webp)](images/azure_container.webp "Specify Object Storage Settings")
 
@@ -54,6 +59,11 @@ To enable immutability:
 * Select the For the minimum immutability period only option if you want to specify the immutability period explicitly. The backup job retention will be skipped.
 * Next to the Minimum immutability duration option, provide the necessary value.
 
+|  |
+| --- |
+| Important |
+| If you create a Microsoft Entra ID application with the [Microsoft Azure Compute Account](restore_azure_accounts.md) wizard, you must manually assign the Storage Blob Data Owner role to the application. Otherwise, Veeam Backup & Replication will not be able to check or enable immutability for the container. For more information, see [Permissions](permissions_storage_account.md#entraid). If you create a Microsoft Entra ID application using the [Microsoft Azure Storage Accounts (Entra ID)](azure_entra_id.md) wizard, the Storage Blob Data Owner role is assigned to the application automatically. |
+
 ![Step 4. Specify Object Storage Settings](images/azure_container_immutability.webp)
 
 Specifying Azure Access Tier Settings
@@ -71,8 +81,9 @@ To specify the access tier settings, do the following:
 |  |
 | --- |
 | Important |
-| Consider the following:   * If you select the Cool option and plan to use this object storage as a performance or capacity tier, do not target to this repository any jobs that constantly send backup data to this storage: scheduled regular backup and backup copy jobs that run without GFS, jobs with transactions logs enabled, jobs created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md). Otherwise, it will result in higher costs. * Azure Blob storage may apply a different access tier to your backup data and metadata than the settings specified in Veeam Backup & Replication, if your Azure storage account access tier differs from those set in Veeam Backup & Replication. For more information, see [Azure Storage Access Tier Considerations](azure_limitations.md#accesstier). |
+| Consider the following:   * If you select the Cool option and plan to use this object storage as a performance or capacity tier, do not target to this repository any jobs that constantly send backup data to this storage: scheduled regular backup and backup copy jobs that run without GFS, jobs with transactions logs enabled, jobs created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md). Otherwise, it will result in higher costs. * Azure Blob storage may apply a different access tier to your backup data and metadata than the settings specified in Veeam Backup & Replication, if your Azure storage account access tier differs from those set in Veeam Backup & Replication. For more information, see [Azure Storage Access Tier Considerations](os_azure_limitations.md#accesstier). |
 
 ![Step 4. Specify Object Storage Settings](images/azure_access_tier.webp)
 
+Page updated 2026-07-29
 
