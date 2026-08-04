@@ -3,8 +3,8 @@ title: "Step 5. Choose Media Pool for Incremental Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_incremental_pool.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Choose Media Pool for Incremental Backups
@@ -29,4 +29,5 @@ You cannot select a GFS media pool to copy incremental backups to tape. Instead 
 
 ![Step 5. Choose Media Pool for Incremental Backups](images/backup_to_tape_incremental_mediapool.webp)
 
+Page updated 2026-08-03
 
