@@ -3,8 +3,8 @@ title: "Policy Scheduling Options"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/policyscheduleoptions.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Policy Scheduling Options
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 The PolicyScheduleOptions element of the CDP policy resource contains the following scheduling options for the CDP policy.
 
+Policy Scheduling Options
+
 | Element | Type | Description |
-| --- | --- | --- |
 | RecoveryPointObjectiveSeconds | Int64 | Recovery point objective in seconds. |
 | RecoveryPointObjectiveMinutes | Int64 | Recovery point objective in minutes. |
 | RPOSchedule | RPOScheduleType | Time intervals that define when the CDP policy is allowed to create a replicated state of the source VMs. For details, see [RPO Schedule Options](#rpo). |
@@ -28,8 +29,9 @@ RPO Schedule Options
 
 The RPOSchedule element contains the following RPO schedule options.
 
+RPO Schedule Options
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Enabled | Boolean | Defines whether RPO schedule options are specified for the CDP policy. |
 | TimePeriods | TimePeriodsType | Defines an hourly scheme by which the CDP policy must run. The schedule scheme is constructed by the following pattern:  <Day Name ="Sunday"> 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</Day>  where 1 means the CDP policy must run, 0 means the CDP policy must not run. |
 
@@ -37,8 +39,9 @@ RPO Reporting Options
 
 The RPOReporting element contains the following RPO reporting options.
 
+RPO Reporting Options
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Enabled | Boolean | Defines whether RPO reporting options are specified for the job. |
 | MarkAsWarning | CDPReplicaRPOReportingWarningOptionsType | Time interval in seconds or minutes before Veeam Backup & Replication sends a notification with a warning if a newly created restore point is not transferred to the target within the set RPO. For details, see [Warning Settings](#warning). |
 | MarkAsFailed | CDPReplicaRPOReportingFailedOptionsType | Time interval in seconds or minutes before Veeam Backup & Replication sends a notification with an error if a newly created restore point is not transferred to the target within the set RPO. For details, see [Error Settings](#error). |
@@ -47,8 +50,9 @@ Warning Settings
 
 The MarkAsWarning element contains the following warning settings.
 
+Warning Settings
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Enabled | Boolean | Defines whether warning notifications are enabled. |
 | RPOThresholdSeconds | Int | Time interval in seconds before Veeam Backup & Replication sends a notification with a warning if a newly created restore point is not transferred to the target within the set RPO. |
 | RPOThresholdMinutes | Int | Time interval in minutes before Veeam Backup & Replication sends a notification with a warning if a newly created restore point is not transferred to the target within the set RPO. |
@@ -57,8 +61,9 @@ Error Settings
 
 The MarkAsFailed element contains the following error settings.
 
+Error Settings
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Enabled | Boolean | Defines whether error notifications are enabled. |
 | RPOThresholdSeconds | Int | Time interval in seconds before Veeam Backup & Replication sends a notification with an error if a newly created restore point is not transferred to the target within the set RPO. |
 | RPOThresholdMinutes | Int | Time interval in minutes before Veeam Backup & Replication sends a notification with an error if a newly created restore point is not transferred to the target within the set RPO. |
@@ -67,9 +72,11 @@ Long-Term Retention Schedule Options
 
 The LongTermRetentionSchedule element contains the following periodic scheduling options.
 
+Long-Term Retention Schedule Options
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Enabled | Boolean | Defines whether long-term retention schedule options are specified for the job. |
 | Schedule | TimePeriodsType | Defines an hourly scheme when the CDP policy must create application-consistent and when crash-consistent long-term restore points. The scheduling scheme is constructed by the following pattern:  <Day Name ="Sunday"> 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</Day>  where 1 means the CDP policy must create crash-consistent long-term restore points, 2 means the CDP policy must create application-consistent long-term restore points. |
 
+Page updated 2026-07-29
 
