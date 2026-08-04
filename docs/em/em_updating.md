@@ -3,14 +3,14 @@ title: "Updating Enterprise Manager"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_updating.html"
-last_updated: "4/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Updating Enterprise Manager
 
 
-Apart from version releases of Veeam Backup Enterprise Manager (for example, 13, 13.0.1), Veeam Software provides updates (for example, update 13.0.1 P1 and 13.0.1 P2). Updates include bug fixes, performance enhancements, and new features.
+Apart from version releases of Veeam Backup Enterprise Manager (for example, 13, 13.1), Veeam Software provides updates (for example, update 13.0.1 P1 and 13.0.1 P2). Updates include bug fixes, performance enhancements, and new features.
 
 This article describes how to install updates for Enterprise Manager on Windows. Updated for Enterprise Manager on Linux can be installed automatically. For details, see [Veeam Software Appliance Update](em_update_linux.md).
 
@@ -18,9 +18,9 @@ Before You Begin
 
 Before you install an update for Enterprise Manager 13, check the following prerequisites:
 
-* Make sure you have Enterprise Manager 13.0.1 (build 13.0.1.x.x) of any earlier patch installed.
+* Make sure you have Enterprise Manager 13.1 (build 13.1.x.x) of any earlier patch installed.
 
-For information on how to upgrade from version 12.3.1 or later, see [Upgrading to Enterprise Manager 13.0.1](em_upgrading.md).
+For information on how to upgrade from version 12.3.1 or later, see [Upgrading to Enterprise Manager 13.1](em_upgrading.md).
 
 * With Enterprise Manager and connected backup servers, start the update process with Veeam Backup Enterprise Manager. Backup servers should be updated after that. If you have Veeam Backup & Replication and Veeam Backup Enterprise Manager installed on the same machine, the update wizard will update both products at once.
 
@@ -36,4 +36,5 @@ To install the latest update for Enterprise Manager, perform the following steps
 4. To launch the update wizard, unzip the downloaded archive and run the Setup.exe file.
 5. To install the update, follow the prompts in the update wizard.
 
+Page updated 2026-07-17
 
