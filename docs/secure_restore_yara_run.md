@@ -3,8 +3,8 @@ title: "Performing YARA Scan"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/secure_restore_yara_run.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing YARA Scan
@@ -38,10 +38,11 @@ For more information on how to create a YARA rule, see [YARA documentation](http
 
 1. If you want to continue the YARA scan after the first malware is found, select the Continue scanning all remaining files after the first occurrence check box.
 
-Note that if the YARA rule is not found, Veeam Backup & Replication will display a warning. In that case, to pass the step with secure restore settings, you can do one of the following:
+If the YARA rule is not found, Veeam Backup & Replication will display a warning. In that case, to pass the step with Secure Restore settings, you can do one of the following:
 
 * Make sure that the YARA file is located in the required directory, has the proper syntax and the .yara or .yar extension.
 * Clear the Scan the restore point with the following YARA rule option.
-* Use Veeam Threat Hunter or third-party antivirus sofware. For more information, see [Veeam Threat Hunter for Secure Restore](secure_restore_veeam_threat_hunter.md) and [Antivirus Scan for Secure Restore](secure_restore_antivirus.md).
+* Use Veeam Threat Hunter or 3rd party antivirus software. For more information, see [Veeam Threat Hunter for Secure Restore](secure_restore_veeam_threat_hunter.md) and [Antivirus Scan for Secure Restore](secure_restore_antivirus.md).
 
+Page updated 2026-07-23
 
