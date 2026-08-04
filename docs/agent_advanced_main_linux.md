@@ -3,8 +3,8 @@ title: "Maintenance Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_advanced_main_linux.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Maintenance Settings
@@ -44,9 +44,10 @@ If the full backup file contains data blocks for deleted items (protection group
 
 |  |
 | --- |
-| ![Maintenance Settings](images/icon_note.webp)NOTE |
+| NOTE |
 | Consider the following:   * If you want to periodically compact a full backup, you must make sure that you have enough free space in the target location. For the compact operation, the amount of free space must be equal to or more that the size of the full backup file. * In contrast to the compact operation for a VM backup, during compact of a full Veeam Agent backup file, Veeam Backup & Replication does not perform the data take out operation. If the full backup file contains data for a machine that has only one restore point and this restore point is older than 7 days, Veeam Backup & Replication will not extract data for this machine to a separate full backup file. |
 
 ![Maintenance Settings](images/agent_job_settings_maintain_linux.webp)
 
+Page updated 2026-06-19
 
