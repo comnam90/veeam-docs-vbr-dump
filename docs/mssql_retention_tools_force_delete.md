@@ -3,8 +3,8 @@ title: "Force Delete Operation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_retention_tools_force_delete.html"
-last_updated: "3/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Force Delete Operation
@@ -37,4 +37,5 @@ Related Task
 
 [Force Deleting Backups](plugins_mssql_retention_force.md)
 
+Page updated 2026-07-22
 
