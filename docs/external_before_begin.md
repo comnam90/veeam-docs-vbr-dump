@@ -3,8 +3,8 @@ title: "How External Repository Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_before_begin.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How External Repository Works
@@ -20,4 +20,5 @@ In This Section
 * [Managing Retention Policy](external_repository_retention.md)
 * [Maintenance Job](external_repository_maintenance_job.md)
 
+Page updated 2026-08-03
 
