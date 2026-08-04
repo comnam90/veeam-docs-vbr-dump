@@ -3,8 +3,8 @@ title: "Veeam Explorer for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_user_guide.html"
-last_updated: "2/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Explorer for Microsoft SQL Server
@@ -15,14 +15,10 @@ Veeam Explorer for Microsoft SQL Server allows you to restore, publish, instantl
 In This Section
 
 * [Planning and Preparation](vesql_prerequisites.md)
-* [Launching Application and Exploring Backups](vesql_launching.md)
-* [General Application Settings](vesql_settings.md)
-* [Standalone Databases Management](vesql_standalone_databases.md)
-* [Data Restore](vesql_data_restore.md)
-* [Data Publishing](vesql_data_publishing.md)
-* [Instant Recovery](vesql_instant_recovery.md)
-* [Data Export](vesql_data_export.md)
+* [Using Explorer Console](vesql_console.md)
+* [Using Explorer Web UI](vesql_web_ui.md)
 * [SQL Server Database Operations](vesql_operations.md)
 * [Getting Support](vesql_support.md)
 
+Page updated 2026-06-01
 
