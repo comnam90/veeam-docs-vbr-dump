@@ -3,8 +3,8 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_repos.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup Repositories
@@ -31,9 +31,6 @@ You can use the following types of repositories added to the Veeam Backup & Repl
 * [Infinidat InfiniGuard](infinidat_infiniguard.md)
 
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
-
-If you plan to use HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 3,000,000 file limit does not apply.
-
 * [Quantum DXi](deduplicating_appliance_quantum.md)
 * [ExaGrid](deduplicating_appliance_exgrid.md)
 
@@ -116,17 +113,33 @@ For details, see [Rescanning Scale-Out Repositories](sobr_rescan.md).
 
 On the Veeam Plug-In side
 
-1. Set the scale-out repository as the target for backups using the following command:
+1. Set the scale-out repository as the target for backups using one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --set-repository |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --set-repository |
 
-1. Map the imported backups using the following command:
+* For Microsoft Windows:
 
 |  |
 | --- |
-| DB2ConfigTool --map-backup |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --set-repository |
+
+1. Map the imported backups using one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
+
+|  |
+| --- |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --map-backup |
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --map-backup |
 
 Capacity Tier
 
@@ -193,7 +206,9 @@ Before you configure your backup infrastructure to back up to the object storage
 
 * Data in object storage repositories must be managed solely by Veeam Backup & Replication, including retention and data management. Lifecycle rules are not supported, and their enabling may result in backup and restore failures.
 * If you access the object storage repository using credentials with the read-only access permissions, data recovery options are not available for backups located in object storage repositories.
+* Veeam Plug-Ins write backup data to object storage repositories in 32 MB data blocks. Such large data blocks reduce the number of PUT requests sent to the object storage and, as a result, the costs associated with API calls.
 
 * For Microsoft Azure Blob storage, Veeam Plug-Ins do not support soft delete for blobs.
 
+Page updated 2026-07-02
 
