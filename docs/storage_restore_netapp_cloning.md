@@ -3,8 +3,8 @@ title: "Traditional LUN Cloning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_restore_netapp_cloning.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Traditional LUN Cloning
@@ -16,4 +16,5 @@ During restore from storage snapshots, Veeam Backup & Replication creates a LUN 
 
 ![Traditional LUN Cloning](images/netapp_restore_tradiitonal_clone.webp)
 
+Page updated 2026-08-03
 
