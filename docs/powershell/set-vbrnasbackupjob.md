@@ -3,8 +3,8 @@ title: "Set-VBRNASBackupJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnasbackupjob.html"
-last_updated: "10/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRNASBackupJob
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRNASBackupJob -Job <VBRNASBackupJob> [-Name <string>] [-Description <string>] [-BackupObject <VBRNASBackupJobObject[]>] [-ShortTermBackupRepository <CBackupRepository>] [-ShortTermRetentionType <VBRUnstructuredBackupShortTermRetentionType> {Daily | Monthly}] [-ShortTermRetentionPeriod <int>] [-EnableLongTermRetention] [-LongTermRetentionType <VBRUnstructuredBackupLongTermRetentionType> {Monthly | Yearly}] [-LongTermBackupRepository <CBackupRepository>] [-EnableCopyMode] [-LongTermRetentionPeriod <int>] [-LongTermArchivalOptions <VBRUnstructuredBackupArchivalOptions>] [-EnableSecondaryTarget] [-SecondaryTarget <VBRUnstructuredBackupSecondaryTarget[]>] [-VersionRetentionOptions <VBRUnstructuredBackupVersionRetentionOptions>] [-StorageOptions <VBRStorageOptions>] [-HealthCheckOptions <VBRFullBackupOptions>] [-NotificationOptions <VBRNotificationOptions>] [-ScriptOptions <VBRJobScriptOptions>] [-EnableFileACLChangeTracking] [-EnableSchedule][-ScheduleOptions <VBRServerScheduleOptions>] [-Force] [-HighPriority] [-TargetBackup <VBRUnstructuredBackup>] [<CommonParameters>] |
+| Set-VBRNASBackupJob [-BackupObject <VBRUnstructuredBackupJobObject[]>] [-Description <String>] [-EnableCopyMode] [-EnableFileACLChangeTracking] [-EnableLongTermRetention] [-EnableSchedule] [-EnableSecondaryTarget] [-Force] [-HealthCheckOptions <VBRFullBackupOptions>] [-HighPriority] [-IncludeSymbolicLinkContent] -Job <VBRNASBackupJob> [-LongTermArchivalOptions <VBRUnstructuredBackupArchivalOptions>] [-LongTermBackupRepository <IRepository>] [-LongTermRetentionPeriod <Int32>] [-LongTermRetentionType {Monthly | Yearly}] [-Name <String>] [-NotificationOptions <VBRNotificationOptions>] [-ScheduleOptions <VBRServerScheduleOptions>] [-ScriptOptions <VBRJobScriptOptions>] [-SecondaryTarget <VBRUnstructuredBackupSecondaryTarget[]>] [-ShortTermBackupRepository <CBackupRepository>] [-ShortTermRetentionPeriod <Int32>] [-ShortTermRetentionType {Daily | Monthly}] [-StorageOptions <VBRStorageOptions>] [-TargetBackup <VBRUnstructuredBackup>] [-VersionRetentionOptions <VBRUnstructuredBackupVersionRetentionOptions>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,8 +35,9 @@ This cmdlet modifies settings of existing file backup jobs.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies the file backup job. The cmdlet will modify settings of the specified job. | Accepts the VBRNASBackupJob object. To create this object, run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Name | Specifies a name of the file backup job. The cmdlet will change the existing name of the file backup job with the specified name. | String | False | Named | False |
 | Description | Specifies a description of the file backup job. The cmdlet will change the existing description of the file backup job with the specified description. | String | False | Named | False |
@@ -50,6 +51,7 @@ Parameters
 | LongTermRetentionPeriod | For the LongTermRetentionType option.  Specifies the period of time to keep data on the short-term repository. When this period is passed, Veeam Backup & Replication will delete this data from the long-term repository. | Int32 | False | Named | False |
 | LongTermArchivalOptions | Specifies the retention policy for file versions that are located on the long-term repository. The cmdlet will create file backup jobs with the specified retention policy. | Accepts the VBRUnstructuredBackupArchivalOptions object. To create this object, run the [New-VBRUnstructuredBackupArchivalOptions](new-vbrunstructuredbackuparchivaloptions.md) cmdlet. | False | Named | False |
 | EnableCopyMode | Defines that the cmdlet will keep the copy of the data stored in the backup repository in the long-term archive repository. | SwitchParameter | False | Named | False |
+| IncludeSymbolicLinkContent | Defines that Veeam Backup & Replication will backup the contents of SMB symbolic links. | SwitchParameter | False | Named | False |
 | EnableSecondaryTarget | Defines that the cmdlet will enable a secondary backup repository for a file backup job.  If you provide this parameter, Veeam Backup & Replication will create copies of file backup jobs and will keep them on a secondary backup repository. Otherwise, copies of the file backup job will not be created. | SwitchParamter | False | Named | False |
 | SecondaryTarget | Specifies the backup repository. The cmdlet will add this backup repository as the secondary repository to the file backup job. | Accepts the VBRUnstructuredBackupSecondaryTarget[] object. To create this object, run the [New-VBRUnstructuredBackupSecondaryTarget](new-vbrunstructuredbackupsecondarytarget.md) cmdlet. | False | Named | False |
 | VersionRetentionOptions | Specifies the settings of version-based retention for backup and archive repositories. The cmdlet will apply these settings to the file backup job. | Accepts the VBRUnstructuredBackupVersionRetentionOptions object. To create this object, run the [New-VBRUnstructuredBackupVersionRetentionOptions](new-vbrunstructuredbackupversionretentionoptions.md) cmdlet. | False | Named | False |
@@ -78,7 +80,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to modify a long-term repository for a file backup job. The file backup job will have the following settings:   * Veeam Backup & Replication will move data from the short-term repository to the Repository 09 backup repository. * Veeam Backup & Replication will keep file versions on the long-term repository for 3 years.     |  | | --- | | $job = Get-VBRUnstructuredBackupJob -Name "NFS Backup"  $repository = Get-VBRBackupRepository -Name "Repository 09"  Set-VBRNASBackupJob -Job $job -LongTermBackupRepository $repository -EnableLongTermRetention -LongTermRetentionType Yearly -LongTermRetentionPeriod 3 |  Perform the following steps:   1. Run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. Specify the Name parameter value. Save the result to the $job variable. 2. Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. Specify the Name parameter value. Save the result to the $repository variable. 3. Run the Set-VBRNASBackupJob cmdlet. Specify the following settings:  * Set the $Job variable as the Job parameter value. * Set the $repository variable as the LongTermBackupRepository parameter value. * Specify the EnableLongTermRetention parameter value. * Set the Yearly option for the LongTermRetentionType parameter value. * Specify the LongTermRetentionPeriod parameter value. |
+| This example shows how to modify a long-term repository for a file backup job. The file backup job will have the following settings:   * Veeam Backup & Replication will move data from the short-term repository to the Repository 09 backup repository. * Veeam Backup & Replication will keep file versions on the long-term repository for 3 years.   |  | | --- | | $job = Get-VBRUnstructuredBackupJob -Name "NFS Backup"  $repository = Get-VBRBackupRepository -Name "Repository 09"  Set-VBRNASBackupJob -Job $job -LongTermBackupRepository $repository -EnableLongTermRetention -LongTermRetentionType Yearly -LongTermRetentionPeriod 3 |  Perform the following steps:   1. Run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. Specify the Name parameter value. Save the result to the $job variable. 2. Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. Specify the Name parameter value. Save the result to the $repository variable. 3. Run the Set-VBRNASBackupJob cmdlet. Specify the following settings:  * Set the $Job variable as the Job parameter value. * Set the $repository variable as the LongTermBackupRepository parameter value. * Specify the EnableLongTermRetention parameter value. * Set the Yearly option for the LongTermRetentionType parameter value. * Specify the LongTermRetentionPeriod parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Modifying Notification Options
 
@@ -90,11 +92,12 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to enable the secondary repository for the file backup job. The secondary repository will be created with the following settings:   * Veeam Backup & Replication will apply a retention policy that is set to the file backup job. * Veeam Backup & Replication will apply an encryption key that is set to the file backup job. * Veeam Backup & Replication will copy data to the repository continuously.     |  | | --- | | $job = Get-VBRUnstructuredBackupJob -Name "NFS Backup"  $srepo = Get-VBRBackupRepository -Name "Repository 09"  $secondary = New-VBRUnstructuredBackupSecondaryTarget -BackupRepository $srepo  Set-VBRNASBackupJob -Job $job -EnableSecondaryTarget:$true -SecondaryTarget $secondary |  Perform the following steps:   1. Run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. Specify the Name parameter value. Save the result to the $job variable. 2. Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. Specify the Name parameter value. Save the result to the $srepo variable. 3. Run the [New-VBRUnstructuredBackupSecondaryTarget](new-vbrunstructuredbackupsecondarytarget.md) cmdlet. Set the $srepo variable as the BackupRepository parameter value. Save the result to the $secondary variable. 4. Run the Set-VBRNASBackupJob cmdlet. Specify the following settings:  * Set the $Job variable as the Job parameter value. * Set the EnableSecondaryTarget parameter to $true. * Set the $secondary variable as the SecondaryTarget parameter value. |
+| This example shows how to enable the secondary repository for the file backup job. The secondary repository will be created with the following settings:   * Veeam Backup & Replication will apply a retention policy that is set to the file backup job. * Veeam Backup & Replication will apply an encryption key that is set to the file backup job. * Veeam Backup & Replication will copy data to the repository continuously.   |  | | --- | | $job = Get-VBRUnstructuredBackupJob -Name "NFS Backup"  $srepo = Get-VBRBackupRepository -Name "Repository 09"  $secondary = New-VBRUnstructuredBackupSecondaryTarget -BackupRepository $srepo  Set-VBRNASBackupJob -Job $job -EnableSecondaryTarget:$true -SecondaryTarget $secondary |  Perform the following steps:   1. Run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. Specify the Name parameter value. Save the result to the $job variable. 2. Run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. Specify the Name parameter value. Save the result to the $srepo variable. 3. Run the [New-VBRUnstructuredBackupSecondaryTarget](new-vbrunstructuredbackupsecondarytarget.md) cmdlet. Set the $srepo variable as the BackupRepository parameter value. Save the result to the $secondary variable. 4. Run the Set-VBRNASBackupJob cmdlet. Specify the following settings:  * Set the $Job variable as the Job parameter value. * Set the EnableSecondaryTarget parameter to $true. * Set the $secondary variable as the SecondaryTarget parameter value. |
 
 Related Commands
 
 * [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-15
 
