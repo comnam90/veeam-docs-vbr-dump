@@ -3,8 +3,8 @@ title: "Guest Interaction Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_interaction_proxy.html"
-last_updated: "5/28/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Guest Interaction Proxies
@@ -45,7 +45,7 @@ If you use a Linux server and do not use [Veeam Infrastructure Appliance](linux_
 
 * You must add the machine to the Veeam Backup & Replication console as a managed server.
 * For Linux servers assigned the role of a guest interaction proxy, Guest Interaction Proxy component must be installed. For more information, see [Adding Linux Servers](linux_server_ssh.md#network).
-* [For VMware vSphere environments] Guest interaction proxy must have either a LAN or VIX connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about setting up a connection to the VM, see [this Veeam KB article](https://www.veeam.com/kb1788).
+* [For VMware vSphere environments] Guest interaction proxy must have either a LAN or vSphere Web Services connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about setting up a connection to the VM, see [this Veeam KB article](https://www.veeam.com/kb1788).
 * [For Microsoft Hyper-V environments] Guest interaction proxy must have either a LAN or PowerShell Direct connection to the VM that will be processed. You do not have to set up both connections — only one connection is required. For more information about PowerShell Direct, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/powershell-direct).
 * [For Microsoft Hyper-V environments] If you plan to use PowerShell Direct connection to back up VMs that reside on Hyper-V Server 2016 (or later) and run Microsoft Windows 10 (or later) or Microsoft Windows Server 2016 (or later), the guest interaction proxy must have Microsoft PowerShell 2.0 (or later) installed.
 
@@ -82,4 +82,5 @@ Related Topics
 * [Creating Replication Jobs](replica_job.md)
 * [Creating VM Copy Jobs](copy_job.md)
 
+Page updated 2026-07-29
 
