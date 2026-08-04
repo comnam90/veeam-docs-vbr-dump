@@ -3,12 +3,14 @@ title: "Step 3. Select Restore Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_mode_vm_web.html"
-last_updated: "8/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Select Restore Mode
 
+
+This step is available only if you recover VMware vSphere VMs or VMware Cloud Director VMs.
 
 At the Restore Mode step of the wizard, specify a destination for recovery and whether you want to recover VM tags:
 
@@ -30,4 +32,5 @@ At the Restore Mode step of the wizard, specify a destination for recovery and w
 
 [![Select Restore Mode - Web UI](images/instant_recovery_mode_vm_web.webp)](images/instant_recovery_mode_vm_web.webp "Select Restore Mode - Web UI")
 
+Page updated 2026-06-30
 
