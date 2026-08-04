@@ -3,8 +3,8 @@ title: "Step 2. Specify Job Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_name_vm_web.html"
-last_updated: "9/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Job Name and Description
@@ -19,8 +19,9 @@ At the Name step of the wizard, specify a name and description for the backup jo
 |  |
 | --- |
 | Tip |
-| In the list of jobs in the Veeam Backup & Replication console, jobs with the High priority option enabled are marked with double green arrows (![Step 2. Specify Job Name and Description](images/high_priority_job.webp)). |
+| In the list of jobs in the Veeam Backup & Replication console, jobs with the High priority option enabled are marked with double green arrows (![Step 2. Specify Job Name and Description](images/high_priority_job_web.webp)). |
 
 [![Click to zoom in](images/vm_backup_job_name_web.webp)](images/vm_backup_job_name_web.webp "Click to zoom in")
 
+Page updated 2026-06-29
 
