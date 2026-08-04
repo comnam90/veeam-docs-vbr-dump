@@ -3,8 +3,8 @@ title: "Managing Workers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_workers.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Workers
@@ -16,7 +16,19 @@ Each worker is launched on a specific host for the duration of a backup or resto
 
 Worker Lifecycle
 
-As soon as a backup or restore session starts, Veeam Backup & Replication launches a worker and test its configuration. Veeam Backup & Replication checks host affinity settings specified for the worker and chooses a host where the worker VM will run. Then, Veeam Backup & Replication powers on the worker VM and installs system updates (if available). When the backup or restore session completes, Veeam Backup & Replication shuts down the worker VM so that it can be used for other sessions later.
+When you add a worker to the backup infrastructure, its configuration is saved to the Veeam Backup & Replication configuration database, but no VM is actually deployed on the host unless you choose to test the configuration. In the latter case, a VM (worker VM) is deployed and shut down after the test operation completes.
+
+As soon as a backup or restore session starts, Veeam Backup & Replication tries to launch the worker and test its configuration. If no worker VM has been previously deployed, Veeam Backup & Replication deploys the VM using the worker configuration saved to the configuration database. Veeam Backup & Replication checks host affinity settings specified for the worker and chooses a host where the worker VM will run. Then, Veeam Backup & Replication powers on the worker VM and installs system updates (if available). When the backup or restore session completes, Veeam Backup & Replication shuts down the worker VM so that it can be used for other sessions later.
+
+During the lifecycle, a worker can obtain one of the following statuses:
+
+Worker Lifecycle
+
+| Icon | Status |
+| ![Managing Workers](images/proxmox_worker_configured.webp) | Worker configuration is added to the Veeam Backup & Replication configuration database or worker configuration is being tested |
+| ![Managing Workers](images/proxmox_worker_working.webp) | Worker is processing a backup or restore operation |
+| ![Managing Workers](images/proxmox_worker_turnedoff.webp) | Worker is powered off |
+| ![Managing Workers](images/proxmox_worker_disable.webp) | Worker is disabled |
 
 In This Section
 
@@ -27,4 +39,5 @@ In This Section
 * [Disabling Automatic Worker Updates](ovirt_workers_update.md)
 * [Removing Workers](ovirt_workers_remove.md)
 
+Page updated 2026-08-03
 
