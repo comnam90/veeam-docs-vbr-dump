@@ -3,14 +3,14 @@ title: "Publishing Disks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Publishing Disks
 
 
-You can use the Veeam backup console to publish disks from Veeam Agent backups.
+You can use Veeam Backup & Replication to publish disks from Veeam Agent backups.
 
 |  |
 | --- |
@@ -27,6 +27,11 @@ You can publish disks from backups of Veeam Agent computers created with the fol
 * Veeam Agent for IBM AIX
 * Veeam Agent for Mac
 
+|  |
+| --- |
+| NOTE |
+| In the Veeam Backup & Replication Web UI, disk publishing is available only for backups of Microsoft Windows and Linux Veeam Agent computers. |
+
 To publish disks from a backup of a Veeam Agent computer to a target server, Veeam Backup & Replication uses one of the following storage network protocols depending on the target server OS:
 
 * [For Windows-based target servers] iSCSI
@@ -35,4 +40,5 @@ To publish disks from a backup of a Veeam Agent computer to a target server, Vee
 
 To learn more, see [Disk Publishing](data_integration_api.md).
 
+Page updated 2026-07-29
 
