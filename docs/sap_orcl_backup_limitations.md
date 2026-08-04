@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sap_orcl_backup_limitations.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -18,6 +18,8 @@ Before you start using Veeam Plug-In for SAP on Oracle, consider the following:
 * You cannot back up Oracle RAC databases using the BRBACKUP tool.
 * Volume backup (-d util\_vol, util\_vol\_online) is not supported.
 * Backup of directories is not supported.
-* Backups created by Veeam Plug-Ins cannot be used as a source for file to tape or backup to tape jobs.
 
+* Backups created by Veeam Plug-Ins cannot be used as a source for file to tape jobs. For information about backup to tape support, see [Backup to Tape](plugins_sap_orcl_backup_to_tape.md).
+
+Page updated 2026-07-10
 
