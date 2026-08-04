@@ -3,8 +3,8 @@ title: "Planning and Preparation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_prerequisites.html"
-last_updated: "6/18/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Planning and Preparation
@@ -20,4 +20,5 @@ In This Section
 * [Required Job Settings](vead_backup_job_settings.md)
 * [Considerations and Limitations](vead_considerations.md)
 
+Page updated 2026-05-26
 
