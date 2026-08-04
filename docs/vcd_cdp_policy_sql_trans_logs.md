@@ -3,8 +3,8 @@ title: "Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_sql_trans_logs.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Microsoft SQL Server Transaction Log Settings
@@ -22,13 +22,23 @@ Before configuring transaction log processing, check that application-aware proc
 2. Click Application handling options for individual machines.
 3. In the displayed list, select the Microsoft SQL Server and click Edit.
 
-To define custom settings for a VM added as a part of a VM container, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
+To define custom settings for a VM added as a part of a protection group, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
 
 1. In the Processing Settings window, on the General tab, check that Require successful processing or Try application processing, but ignore failures option is selected in the Applications area.
 
 Specifying Transaction Log Settings
 
-In the Processing Settings window, switch to the SQL tab and specify how transaction logs must be processed:
+To configure how Veeam Backup & Replication must process archive logs of an Oracle server:
+
+1. In the Processing Settings window, switch to the SQL tab.
+2. From the Specify Windows account with sysadmin role on SQL Server drop-down list, select a user account that Veeam Backup & Replication will use to connect to the SQL databases:
+
+* To use the account specified at the Guest Processing step of the wizard, select Use guest credentials.
+* To use another account from the drop-down list, select the required one. In this case, you can use SQL Server authentication by selecting the Use SQL Server authentication check box.
+
+The account that you plan to use must have privileges described in section [Permissions](permissions_guest_processing.md#veo).
+
+1. In the Choose how this job should process Microsoft SQL Server transaction logs section, specify how to process transaction logs:
 
 * If you want Veeam Backup & Replication to trigger truncation of transaction logs after the CDP policy creates a long-term restore point, select Truncate logs.
 
@@ -40,4 +50,5 @@ This option is recommended if you use another tool to perform VM guest-level rep
 
 ![Microsoft SQL Server Transaction Log Settings](images/vcd_cdp_policy_sql.webp)
 
+Page updated 2026-08-03
 
