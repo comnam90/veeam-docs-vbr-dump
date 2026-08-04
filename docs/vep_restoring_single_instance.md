@@ -3,8 +3,8 @@ title: "Restoring Single Instance"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restoring_single_instance.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Single Instance
@@ -16,4 +16,5 @@ You can restore a PostgreSQL instance by following one of the scenarios:
 * [Restoring Point-in-Time State](vep_restore_single_pit.md)
 * [Restoring to Another Server](vep_restore_single_tas.md)
 
+Page updated 2026-08-04
 
