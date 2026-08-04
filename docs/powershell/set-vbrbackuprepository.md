@@ -3,8 +3,8 @@ title: "Set-VBRBackupRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrbackuprepository.html"
-last_updated: "4/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRBackupRepository
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRBackupRepository -Repository <CBackupRepository> [-Name <string>] [-Description <string>] [-MountServer <CHost>] [-Server <CHost[]>] [-AutoSelectGateway] [-RotatedDrive] [-RotatedDriveCleanupMode {ContinueBackupChain | ClearBackupFolder | ClearRepositoryFolder}] [-EnableVPowerNFS] [-VPowerNFSPort <int>] [-MountPort <int>] [-MountFolder <string>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-DDServerName <string>] [-RequireAccessCreds] [-Credentials <CCredentials>] [-LimitConcurrentJobs] [-MaxConcurrentJobs <int>] [-LimitDatarate] [-DataRateLimit <int>] [-AlignDataBlocks] [-DecompressDataBlocks] [-UsePerVMFile] [-DDBoostEncryptionType {None | Medium | High}] [-AffinityMode {Auto | Manual}] [-AffinityProxy <CViProxy[]>] [-EnableXFSFastClone] [-EnableReFSFastClone] [-EnableBackupImmutability] [-ImmutabilityPeriod <int>] [-NFSRepositoryEncoding {utf | ansi}] [-Force]  [<CommonParameters>] |
+| Set-VBRBackupRepository -Repository <CBackupRepository> [-Name <string>] [-Description <string>] [-MountServer <CHost>] [-Server <CHost[]>] [-AutoSelectGateway] [-RotatedDrive] [-RotatedDriveCleanupMode {ContinueBackupChain | ClearBackupFolder | ClearRepositoryFolder}] [-EnableVPowerNFS] [-VPowerNFSPort <int>] [-MountPort <int>] [-MountFolder <string>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-DDServerName <string>] [-RequireAccessCreds] [-Credentials <CCredentials>] [-LimitConcurrentJobs] [-MaxConcurrentJobs <int>] [-LimitDatarate] [-DataRateLimit <int>] [-AlignDataBlocks] [-DecompressDataBlocks] [-UsePerVMFile] [-DDBoostEncryptionType {None | Medium | High}] [-StoreOnceWanLink] [-AffinityMode {Auto | Manual}] [-AffinityProxy <CViProxy[]>] [-EnableXFSFastClone] [-EnableReFSFastClone] [-EnableBackupImmutability] [-ImmutabilityPeriod <int>] [-NFSRepositoryEncoding {utf | ansi}] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -43,7 +43,7 @@ Parameters
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Repository | Specifies the backup repository you want to modify. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the name you want to assign to the backup repository. | String | False | Named | False |
 | Description | Specifies the description of the backup repository. | String | False | Named | False |
@@ -70,6 +70,7 @@ Parameters
 | DecompressDataBlocks | Defines that the backup data blocks must be decompressed before storing to the repository. | SwitchParameter | False | Named | False |
 | DDServerName | Specifies the Data Domain server name. Enter the name in the following formats depending on the connection mode:   * If Dell Data Domain works over TCP/IP, enter a full DNS name or an IP address of the Dell Data Domain server. * If Dell Data Domain works over Fibre Channel, enter a name of the Data Domain server starting with the 'DFC-' prefix, for example, DFC-DataDomain690. | String | False | Named | Falses |
 | DDBoostEncryptionType | Specifies the native Dell Data Domain encryption level:   * High * Medium * None | VBRDDBoostEncryptionType | False | Named | False |
+| StoreOnceWanLink | Defines that the HPE StoreOnce must use source-side deduplication.  Default: False. | SwitchParameter | False | Named | False |
 | AffinityMode | Specifies what proxy affinity rules are set up for the backup repository:   * Auto — use this option if you want all backup proxies in the backup infrastructure to work with the backup repository. * Manual — use this option if you want backup proxies from the AffinityProxy list to work with the backup repository.   To configure proxy affinity settings, you must install Veeam Backup & Replication Enterprise or higher license on the backup server.  Default: Auto. | VBRProxyAffinityMode | False | Named | False |
 | AffinityProxy | Specifies the list of backup proxies that can work with the backup repository. Entries in the proxy affinity list are separated with a comma.  To configure proxy affinity settings, you must install Veeam Backup & Replication Enterprise or higher license on the backup server. | Accepts the CViProxy[] object. To get this object, run the [Get-VBRViProxy](get-vbrviproxy.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
 | EnableXFSFastClone | Enables the Fast Clone technology for the backup repository.  Default: False. | SwitchParameter | False | Named | False |
@@ -108,4 +109,5 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Get-VBRCredentials](get-vbrcredentials.md)
 
+Page updated 2026-06-05
 
