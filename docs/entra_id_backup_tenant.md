@@ -3,8 +3,8 @@ title: "Tenant Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_backup_tenant.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Tenant Backup
@@ -20,4 +20,5 @@ Related Topics
 
 [Creating Tenant Backup Jobs](entra_id_backup_job.md)
 
+Page updated 2026-06-16
 
