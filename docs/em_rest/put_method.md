@@ -3,8 +3,8 @@ title: "PUT Method"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/put_method.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # PUT Method
@@ -23,12 +23,13 @@ In the example below, the PUT HTTP request is sent to update the job description
 
 |  |
 | --- |
-| Request:  PUT https://localhost:9398/api/jobs/115f560f-3a5f-4a88-b0c8-096c845bafcd    Request Body:  <?xml version="1.0" encoding="utf-8"?>    Response:  202 Accepted    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-12"> <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-12" />   </Links>   <TaskId>task-12</TaskId>   <State>Running</State>   <Operation>EditJob</Operation> </Task> |
+| Request:  PUT https://localhost:9398/api/jobs/115f560f-3a5f-4a88-b0c8-096c845bafcd  Request Body:  <?xml version="1.0" encoding="utf-8"?> <Job Href="https://localhost:9398/api/jobs/115f560f-3a5f-4a88-b0c8-096c845bafcd?format=Entity" Type="Job" Name="vcloud" UID="urn:veeam:Job:115f560f-3a5f-4a88-b0c8-096c845bafcd" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <Description>Changing job description</Description> </Job>  Response:  202 Accepted  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-12"> <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-12" />   </Links>   <TaskId>task-12</TaskId>   <State>Running</State>   <Operation>EditJob</Operation> </Task> |
 
 To monitor the state of the task completion, the client sends the GET HTTP request to the task resource:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/tasks/task-12    Response:  20O Success    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-12"> <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-12" />   </Links>   <TaskId>task-12</TaskId>   <State>Finished</State>   <Operation>EditJob</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
+| Request:  GET https://localhost:9398/api/tasks/task-12  Response:  20O Success  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-12"> <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-12" />   </Links>   <TaskId>task-12</TaskId>   <State>Finished</State>   <Operation>EditJob</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
 
+Page updated 2026-07-29
 
