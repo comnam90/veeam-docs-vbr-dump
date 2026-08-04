@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_configuration_byb.html"
-last_updated: "2/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 To assemble an HA cluster, you must install Veeam Software Appliance on the Linux-based servers that you plan to use as HA nodes, configure your HA network environment, and enable the High Availability option for both Linux-based servers using [Veeam Host Management Web UI](hmc_access.md). If you use Kerberos authentication, you must create a .keytab file and import it to the primary node using the Veeam Host Management Web UI.
 
-Configuring HA Nodes and HA Network Environment
+Configuring HA Nodes and HA Network Environment for Standard HA cluster
 
 To configure Linux-based servers that you plan to use as HA nodes and the HA network environment, do the following:
 
@@ -35,6 +35,18 @@ To configure Linux-based servers that you plan to use as HA nodes and the HA net
 1. Configure the HA cluster DNS name to resolve to the HA cluster IP address.
 2. [For Kerberos authentication] Join both Linux-based servers to a domain where Kerberos authentication is configured. For more information, see [Managing Domain Settings](hmc_configure_domain.md).
 
+Configuring HA Nodes and HA Network Environment for Cross-Subnet HA cluster
+
+Before you assemble the cross-subnet HA cluster, you must do the following:
+
+1. Reserve 2 static external IP addresses for the cluster endpoint.
+2. Reserve 2 static internal IP addresses for the cluster nodes. They must be from the same address family as the external IP addresses. For example, if the external IP addresses are IPv4, the internal IP addresses must also be IPv4. If the external IP addresses are IPv6, the internal IP addresses must be IPv6.
+3. [Optional] [Deploy a Veeam Software Appliance](deployment_options.md) on a Linux-based server that you plan to use as a primary node of your HA cluster.
+4. Deploy a Veeam Software Appliance on a Linux-based machine that you plan to use as a secondary node of your HA cluster.
+5. Install the Veeam Data Platform Premium License on the primary node.
+6. Add a remote backup repository, and then remove the Default Backup Repository from the primary node.
+7. On your DNS server, create two A (or AAAA) records for the cluster hostname — one record for each external IP address.
+
 Enabling High Availability
 
 After you configure the HA nodes, submit a request to enable the High Availability option for both Linux-based servers. Note that if you have disassembled the HA cluster, you will need to resubmit the request.
@@ -45,8 +57,8 @@ To submit the request, do the following:
 2. In the management pane, click Backup Infrastructure.
 3. In the High Availability section, click Submit Request.
 
-+ If you did not configure the [Security Officer](deployment_linux_iso_install_security_officer.md) account during the Veeam Software Appliance installation, the request is approved automatically.
-+ If you configured the Security Officer account, you must wait until the security officer approves your request. This approval expires in 8 hours; ensure that you assemble the cluster within this period.
+* If you did not configure the [Security Officer](deployment_linux_iso_install_security_officer.md) account during the Veeam Software Appliance installation, the request is approved automatically.
+* If you configured the Security Officer account, you must wait until the security officer approves your request. This approval expires in 8 hours; ensure that you assemble the cluster within this period.
 
 1. [For Kerberos authentication] If you use the Kerberos environment, you must create a .keytab file and import it to the primary node using the [Veeam Host Management Web UI](hmc_access.md).
 
@@ -157,4 +169,5 @@ Creating Keytab File Examples
 | --- | --- | --- |
 | 1. This command verifies the contents of the .keytab file.   |  | | --- | | klist –k /etc/veeam/auth/krb.keytab |   1. This command verifies if the .keytab file can be used to get a Kerberos TGT for the specified SPNs.   |  | | --- | | kinit -k -t /etc/veeam/auth/krb.keytab {cluster SPN} | |
 
+Page updated 2026-07-07
 
