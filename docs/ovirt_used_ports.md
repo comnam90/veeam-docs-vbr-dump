@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_used_ports.html"
-last_updated: "3/16/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -45,6 +45,7 @@ Backup Server
 |  |
 | --- |
 | Note |
-| For the list of ports used by the backup server to communicate with backup repositories, see [Ports](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120#backup-repositories). |
+| For the list of ports used by the backup server to communicate with backup repositories, see [Ports](used_ports.md#backup_repos). |
 
+Page updated 2026-07-24
 
