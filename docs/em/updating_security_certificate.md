@@ -3,8 +3,8 @@ title: "Installing Certificates"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/updating_security_certificate.html"
-last_updated: "4/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Certificates
@@ -21,8 +21,8 @@ If you plan to use a certificate signed by an internal Certificate Authority (CA
 
 To install a new certificate, follow these steps:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
 3. Open the Settings section.
 4. On the Certificates tab, click Install and then choose the type of certificate to install:
 
@@ -48,4 +48,5 @@ Enterprise Manager accepts only PEM files that contain exactly two key sections:
 
 1. To install the certificate, click Finish.
 
+Page updated 2026-07-16
 
