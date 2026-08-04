@@ -3,8 +3,8 @@ title: "Access Permissions for Direct Connection to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage_direct_access.html"
-last_updated: "3/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Access Permissions for Direct Connection to Object Storage
@@ -18,11 +18,6 @@ If you back up data using a direct connection between the Veeam Agent computer a
 * [Veeam Data Cloud Vault](#vault)
 * [IBM Cloud, Wasabi Cloud or other S3 compatible storage](#S3)
 
-|  |
-| --- |
-| NOTE |
-| Backup policies cannot back up data to the Microsoft Azure Blob storage with immutability enabled and Veeam Data Cloud Vault storage added in the direct connection mode. |
-
 Amazon S3
 
 On the Amazon S3 storage side, Veeam Agent backup is performed with the following steps:
@@ -34,7 +29,7 @@ For backup jobs targeted at the Veeam backup repository
 * For the following job configurations, Veeam Backup & Replication provides Veeam Agents access to the object storage repository using credentials that were specified during the repository configuration:
 
 * Backup job managed by the backup server
-* Backup policy targeted at the object storage though a gateway
+* Backup policy targeted at the object storage through a gateway
 
 * For the backup policy directly targeted at an object storage repository, Veeam Backup & Replication creates a user in AWS for each Veeam Agent that performs backups to AWS.
 
@@ -44,7 +39,7 @@ For backup jobs targeted at the Cloud Connect repository
 
 * Backup job managed by the backup server
 
-* Backup policy targeted at the object storage though a gateway
+* Backup policy targeted at the object storage through a gateway
 
 * For the backup policy targeted at the object storage directly, Veeam Backup & Replication creates a user in AWS for each subtenant.
 
@@ -70,7 +65,7 @@ For backup jobs targeted at the Veeam backup repository
 * For the following job configurations, Veeam Backup & Replication provides Veeam Agents an access to the repository in the object storage using credentials that were specified during the repository configuration:
 
 * Backup job managed by the backup server
-* Backup policy targeted at the object storage though a gateway
+* Backup policy targeted at the object storage through a gateway
 
 * For the backup policy targeted at the object storage directly, Veeam Backup & Replication creates a user for each Veeam Agent that backs up to Google storage.
 
@@ -80,7 +75,7 @@ For backup jobs targeted at the Cloud Connect repository
 
 * Backup job managed by backup server
 
-* Backup policy targeted at the object storage though a gateway
+* Backup policy targeted at the object storage through a gateway
 
 * For the backup policy targeted at the object storage directly, Veeam Backup & Replication creates a user in Google Cloud for each subtenant.
 
@@ -108,10 +103,11 @@ IBM Cloud, Wasabi Cloud or Other S3 Compatible Storage
 
 Keep in mind the following limitations and prerequisites:
 
-* After you added the S3 compatible object storage, you must configure access permissions manually in the Veeam Backup & Replication console. If you selected the Provided by IAM/STS object storage capabilities option for the object storage, Veeam Backup & Replication will perform the backup operation in the same way as for the [Amazon S3 storage](#aws).
+* After you added the S3 compatible object storage, you must configure access permissions manually in the Veeam Backup & Replication interface. If you selected the Provided by IAM/STS object storage capabilities option for the object storage, Veeam Backup & Replication will perform the backup operation in the same way as for the [Amazon S3 storage](#aws).
 
 To learn more, see [Managing Permissions for S3 Compatible Object Storage](access_permissions.md).
 
 * User accounts that you use to connect to the S3 compatible storage have the required permissions. To learn more, see [Permissions](agents_permissions.md#s3).
 
+Page updated 2026-07-20
 
