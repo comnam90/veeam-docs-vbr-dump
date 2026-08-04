@@ -3,8 +3,8 @@ title: "Backup to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_jobs.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup to Tape
@@ -38,9 +38,9 @@ Jobs as Source
 
 The following jobs can be a source for tape jobs:
 
-* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE/HPE Morpheus VM Essentials backup jobs
-* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE/HPE Morpheus VM Essentials backup copy jobs
+* VMware/Hyper-V/Nutanix AHV/RHV/Proxmox VE/HPE Morpheus VM Essentials backup and backup copy jobs
 * Unstructured data backup jobs
+* Veeam Plug-In for Enterprise Applications backup and backup copy jobs (for plug-ins deployed in managed or standalone mode)
 * Windows/Linux/Unix/Mac Veeam Agent backup jobs configured in Veeam Agent operating in the standalone mode
 * Windows/Linux/Unix/Mac Veeam Agent standalone backup copy jobs
 * Windows/Linux/Unix/Mac Veeam Agent backup jobs configured in Veeam Backup & Replication
@@ -52,11 +52,12 @@ The following jobs can be a source for tape jobs:
 * Cloud VM (Veeam Backup for Microsoft Azure/AWS/Google Cloud) backup copy jobs configured in Veeam Backup & Replication
 * Kasten policies
 * Backup copy jobs for Kasten policy
+* Backup copy jobs for application backup repositories
 
 |  |
 | --- |
 | Note |
-| Consider the following:   * [VeeamZIP backup jobs](veeamzip.md) can be archived to tape only with File to Tape jobs. VeeamZIP backup jobs cannot be a source for backup to tape jobs. For more information, see [File Backup to Tape](file_to_tape_jobs.md). * Backup to tape jobs can process only Veeam Agent backup jobs that are targeted to a Veeam backup repository. * [Microsoft Entra ID tenant backups](https://helpcenter.veeam.com/docs/backup/entraid/) and backups produced by [Veeam Plug-ins for Enterprise Applications](https://helpcenter.veeam.com/docs/backup/plugins/overview.html) cannot be a source for backup to tape jobs and are skipped from processing even if you add a repository as a source for tape jobs. |
+| Consider the following:   * [VeeamZIP backup jobs](veeamzip.md) can be archived to tape only with File to Tape jobs. VeeamZIP backup jobs cannot be a source for backup to tape jobs. For more information, see [File Backup to Tape](file_to_tape_jobs.md). * Backup to tape jobs can process only Veeam Agent backup jobs that are targeted to a Veeam backup repository. * [Microsoft Entra ID tenant backups](https://helpcenter.veeam.com/docs/backup/entraid/) and [InterSystems IRIS application backup policies](iris_backup.md) cannot be a source for backup to tape jobs and are skipped from processing even if you add a repository as a source for tape jobs. |
 
 When the tape job starts on its schedule, it picks the restore points that were produced by the source jobs in period since the last tape job run. If you change the configuration of the source jobs, the tape job is updated automatically: it adds new machines or folders and files to the list of entities to archive or stops archiving entities that were removed from source jobs.
 
@@ -67,7 +68,7 @@ Backup Repositories as Source
 |  |
 | --- |
 | Note |
-| When using backup repositories as a source for backup to tape, only [supported backup types](#supported_backups) can be archived to tape. |
+| Consider the following:   * When using backup repositories as a source for backup to tape, only [supported backup types](#supported_backups) can be archived to tape. * Application backup repositories cannot be selected as a source for backup to tape jobs. However, you can create a backup copy job for application backup repositories and add it as a source instead. For more information, see [Backup Copy Jobs for Application Backup Repositories](bcj_abr_repository.md). |
 
 When you add a repository as a source to a tape job, the tape job constantly scans the selected repository (or repositories) and writes the newly created backups to tape. The tape job monitors the selected repository in a background mode. You can set explicit backup windows for the tape job. In this case, the tape job will start on the set time and archive all new restore points that were created in the period since the last job run.
 
@@ -122,4 +123,5 @@ Related Topics
 * [Creating Backup to Tape Jobs](creating_backup_to_tape_jobs.md)
 * [Linking Backup Jobs to Backup to Tape Jobs](linking_backup_to_backup_to_tape.md)
 
+Page updated 2026-07-22
 
