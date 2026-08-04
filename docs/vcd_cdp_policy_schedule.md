@@ -3,8 +3,8 @@ title: "Step 11. Configure Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_schedule.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 11. Configure Schedule
@@ -16,9 +16,9 @@ At the Schedule step of the wizard, configure the schedule and retention policie
 
 1. In the Recovery point objective field, specify the necessary RPO in seconds or minutes, that is, how often to create short-term restore points.
 
-The minimum RPO is 2 seconds, however it can be not optimal if your CDP policy contains many VMs with high workload. The optimal RPO is not less than 15 seconds. The maximum RPO is 60 minutes.
+The minimum RPO is 2 seconds, however it can be not optimal if your CDP policy contains many workloads with high workload. The optimal RPO is not less than 15 seconds. The maximum RPO is 60 minutes.
 
-During every specified period, Veeam Backup & Replication will prepare data for short-term restore points for VM replicas and send this data to the target destination. Note that short-term restore points are crash-consistent.
+During every specified period, Veeam Backup & Replication will prepare data for short-term restore points for replicas and send this data to the target destination. Note that short-term restore points are crash-consistent.
 
 1. If you want to prohibit the policy to run at specific time intervals, click Schedule. In the schedule box, click Denied and select the necessary time area.
 
@@ -47,4 +47,5 @@ Related Topics
 
 * [Specify Guest Processing Settings](vcd_cdp_policy_guest.md)
 
+Page updated 2026-08-03
 
