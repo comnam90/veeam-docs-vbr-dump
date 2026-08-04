@@ -3,8 +3,8 @@ title: "Backup Cache"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_backup_cache.html"
-last_updated: "12/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Cache
@@ -60,6 +60,7 @@ Keep in mind that Veeam Backup & Replication automatically deletes restore point
 * Disable the backup cache for the backup policy.
 * Delete the backup policy.
 
-You can also delete restore points from the backup cache manually in the Veeam backup console. To learn more, see [Clearing Backup Cache](agent_policy_cache.md).
+You can also delete restore points from the backup cache manually in the Veeam backup interface. To learn more, see [Clearing Backup Cache](agent_policy_cache.md).
 
+Page updated 2026-07-20
 
