@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_nas_recovery_finalize.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Finalizing Instant File Share Recovery
@@ -17,5 +17,5 @@ After you have performed instant file share recovery, you have to finalize the p
 
 Until you finalize instant recovery of all recovered file shares, a notification about running instant recovery sessions is displayed on the Dashboard tab.
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
