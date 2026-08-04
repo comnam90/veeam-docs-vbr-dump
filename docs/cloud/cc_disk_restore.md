@@ -3,8 +3,8 @@ title: "Restoring Disks from Tenant Backups"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_disk_restore.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Disks from Tenant Backups
@@ -18,7 +18,7 @@ In addition, for disk restore from tenant backups on the SP side consider the fo
 
 * Tenant backups must be available on the SP side. For details, see [Restoring Data from Tenant Backups](cc_data_restore.md).
 * The target virtualization host and VM where the SP plans to restore disks must be added to the Veeam Backup & Replication infrastructure on the SP backup server.
-* Veeam Cloud Connect supports disk restore from unencrypted backups only.
+* Veeam Cloud Connect supports disk restore from encrypted tenant backups only if the tenant has granted the SP restore access to all backups. Otherwise, disk restore is supported from unencrypted backups only. For details, see [Access to Tenant Backups](cc_sp_restore_access.md).
 
 To restore disks from a tenant backup, complete the following steps:
 
@@ -27,18 +27,19 @@ To restore disks from a tenant backup, complete the following steps:
 3. Run the Get-VBRCloudTenantRestorePoint cmdlet to specify the necessary restore point in the backup. For details, see the [Get-VBRCloudTenantRestorePoint](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudtenantrestorepoint.html?ver=13) section in the Veeam PowerShell Reference.
 4. Run the Get-VBRServer and Find-VBRViEntity cmdlets to specify the target host and VM where you want to restore disks from the backup.
 5. Run the Get-VBRViVirtualDevice cmdlet to specify the disks that you want to restore.
-6. Run the Start-VBRViInstantVMDiskRecovery cmdlet to restore disks.
+6. Run the Start-VBRViInstantVMDiskRecovery cmdlet to restore disks.
 
 For example:
 
 |  |
 | --- |
-| $backup = Get-VBRCloudTenantBackup -Name "Fileserver Backup to Cloud" |
+| $backup = Get-VBRCloudTenantBackup -Name "Fileserver Backup to Cloud" $restorepoint = Get-VBRCloudTenantRestorePoint $server = Get-VBRServer -Name "esx01" $vm = Find-VBRViEntity -Server $server -Name "filesrv05" $device = Get-VBRViVirtualDevice -RestorePoint $restorepoint Start-VBRViInstantVMDiskRecovery -RestorePoint $restorepoint[3] -TargetVM $vm -TargetVirtualDevice $device |
 
-For details, see the [Start-VBRViInstantVMDiskRecovery](https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantvmdiskrecovery.html?ver=13) section in the Veeam PowerShell Reference.
+For details, see the [Start-VBRViInstantVMDiskRecovery](https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantvmdiskrecovery.html?ver=13) section in the Veeam PowerShell Reference.
 
 After Veeam Backup & Replication mounts the restored disk to the target VM, you must finalize the process. For details, see the [Finalizing Instant Disk Recovery](https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_finalize.html?ver=13) section in the Veeam Backup & Replication Guide and [Start-VBRViInstantRecoveryDiskMigration](https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantrecoverydiskmigration.html?ver=13) section in the Veeam PowerShell Reference.
 
 Once you finalize the disk restore operation, you can enable the tenant account.
 
+Page updated 2026-07-29
 
