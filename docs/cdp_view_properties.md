@@ -3,8 +3,8 @@ title: "Viewing Replica Properties"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_view_properties.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Viewing Replica Properties
@@ -18,4 +18,5 @@ To view replica properties:
 
 ![Viewing Replica Properties](images/cdp_replica_properties.webp "View CDP replica properties")
 
+Page updated 2026-08-03
 
