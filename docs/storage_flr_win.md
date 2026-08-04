@@ -3,8 +3,8 @@ title: "Guest OS Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_flr_win.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Guest OS Restore
@@ -20,4 +20,5 @@ Performing Recovery from Storage Snapshots
 
 For information on how to recover guest OS files, see [Recovering Guest OS Files Using Console](performing_guest_restore.md).
 
+Page updated 2026-07-29
 
