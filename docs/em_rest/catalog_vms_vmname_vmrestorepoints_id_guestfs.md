@@ -3,8 +3,8 @@ title: "/catalog/vms/{vmname}/vmRestorePoints/{ID}/guestfs"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/catalog_vms_vmname_vmrestorepoints_id_guestfs.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /catalog/vms/{vmname}/vmRestorePoints/{ID}/guestfs
@@ -36,6 +36,7 @@ The /catalog/vms/{vmname}/vmRestorePoints/{ID}/guestfs/ resource has a resource 
 
 |  |
 | --- |
-| <FileSystemEntry xmlns="http://www.veeam.com/ent/v1.0"> |
+| <FileSystemEntry xmlns="http://www.veeam.com/ent/v1.0">   <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/catalog/vms/exch01/vmRestorePoints/1bd3ebf0-34fa-40f6-bc4c-c9bacdba8c0a/guestfs/">     <Links>       <Link Rel="Down" Type="FileSystemItemsList" Href="https://localhost:9398/api/catalog/vms/exch01/vmRestorePoints/1bd3ebf0-34fa-40f6-bc4c-c9bacdba8c0a/guestfs/?action=listAll" />       <Link Rel="Down" Type="FileEntryList" Href="https://localhost:9398/api/catalog/vms/exch01/vmRestorePoints/1bd3ebf0-34fa-40f6-bc4c-c9bacdba8c0a/guestfs/?action=listFiles&pageSize=10&page=1" />       <Link Rel="Down" Type="DirectoryEntryList" Href="https://localhost:9398/api/catalog/vms/exch01/vmRestorePoints/1bd3ebf0-34fa-40f6-bc4c-c9bacdba8c0a/guestfs/?action=listDirs&pageSize=10&page=1" />     </Links>   </DirectoryEntry> </FileSystemEntry> |
 
+Page updated 2026-07-29
 
