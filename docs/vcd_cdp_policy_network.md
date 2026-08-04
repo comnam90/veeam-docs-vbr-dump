@@ -3,8 +3,8 @@ title: "Step 7. Configure Network Mapping"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_network.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Configure Network Mapping
@@ -30,4 +30,5 @@ To add a row to the network mapping table:
 
 ![Step 7. Configure Network Mapping](images/vcd_cdp_policy_network.webp)
 
+Page updated 2026-08-03
 
