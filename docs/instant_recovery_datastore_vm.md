@@ -3,8 +3,8 @@ title: "Step 6. Select Destination for Virtual Disk Updates"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_datastore_vm.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Select Destination for Virtual Disk Updates
@@ -28,4 +28,5 @@ To redirect redo logs:
 
 ![Step 6. Select Destination for Virtual Disk Updates](images/instant_recovery_datastore.webp)
 
+Page updated 2026-06-30
 
