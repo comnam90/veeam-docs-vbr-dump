@@ -3,8 +3,8 @@ title: "Standalone and Managed Operations Modes"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview_operation_modes.html"
-last_updated: "11/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Standalone and Managed Operations Modes
@@ -33,14 +33,17 @@ For solutions managed by Veeam Backup & Replication, data protection, data resto
 
 * For details about managed Veeam Plug-Ins, see [Managed Veeam Plug-Ins](management.md).
 * For details on how to back up MongoDB items, see [MongoDB Backup](mongo_backup.md).
+* For details on how to back up InterSystems IRIS instances, see [Epic EHR System Protection](iris_backup.md).
 
 Supported Operation Modes
 
 The following table describes the support of operation modes by solutions for enterprise applications.
 
-| Operation Mode | Veeam Plug-In for Oracle RMAN | Veeam Plug-In for SAP HANA | Veeam Plug-In for SAP on Oracle | Veeam Plug-In for SAP MaxDB | Veeam Plug-In for Microsoft SQL Server | Veeam Plug-In for IBM Db2 | MongoDB Backup |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Standalone mode | Supported | Supported | Supported | Supported | Supported | Supported | Not supported |
-| Managed mode | Supported | Supported | Supported | Not supported | Supported | Not supported | Supported |
+Supported Operation Modes
 
+| Operation Mode | Veeam Plug-In for Oracle RMAN | Veeam Plug-In for SAP HANA | Veeam Plug-In for SAP on Oracle | Veeam Plug-In for SAP MaxDB | Veeam Plug-In for Microsoft SQL Server | Veeam Plug-In for IBM Db2 | MongoDB Backup | Epic EHR System Protection |
+| Standalone mode | Supported | Supported | Supported | Supported | Supported | Supported | Not supported | Not supported |
+| Managed mode | Supported | Supported | Supported | Not supported | Supported | Not supported | Supported | Supported |
+
+Page updated 2026-07-24
 
