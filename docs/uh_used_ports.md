@@ -1,0 +1,48 @@
+---
+title: "Ports"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uh_used_ports.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Ports
+
+
+Veeam Backup & Replication automatically creates firewall rules for the ports required to allow communication between the Universal Hypervisor Manager, workers and the backup server.
+
+Workers
+
+The following table describes network ports that must be open to ensure proper communication of workers with other backup infrastructure components.
+
+Workers
+
+| From | To | Protocol | Port | Notes |
+| Worker | Universal Hypervisor Manager | TCP/HTTPS | 443 | Used to communicate with the REST API service running on the Universal Hypervisor Manager. |
+| Veeam backup repository or [gateway server](gateway_server.md) | TCP | 6162 (2500 to 3300) | Used as a transmission channel for jobs and restore sessions. The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Backup server | TCP | 6162 (2500 to 3300) | Used for ransomware index transfer. The port range 2500-3300 is used for failover if port 6162 is unavailable. |
+| Backup server | TCP | 10006 | Used to communicate with the backup server. |
+| Veeam Update Repository (repository.veeam.com)  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) (cloudfront.net, amazonaws.com) | TCP/HTTPS | 443 | Used to download worker deployment packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
+| Veeam Update Repository (local mirror)  (<yourlocalmirror.domain>) | TCP | 443 or 80 | Used to download worker update packages from your local mirror repository if enabled as described in section [Setting Up Global Update Configuration](update_appliance_configure_updates.md#global_configuration). |
+| NTP server | UDP | 123 | Used for time synchronization with NTP servers. |
+
+Backup Server
+
+The following table describes network ports that must be open to ensure proper communication of the backup server with other backup infrastructure components.
+
+Backup Server
+
+| From | To | Protocol | Port | Notes |
+| Backup server | Worker | TCP | 19000 | Used to communicate with workers. |
+| Worker | TCP/HTTPS | 443 | Used by the Platform Service to enable communication with the Veeam Updater service on the worker. |
+| VergeOS | TCP/HTTPS | 443 | Used to communicate with the REST API service running on the VergeOS hypervisor |
+| Platform9 | TCP/HTTPS | 30000–32767 | Used to communicate with the REST API service running on the Platform9 hypervisor |
+
+|  |
+| --- |
+| Note |
+| For the list of ports used by the backup server to communicate with backup repositories, see [Ports](used_ports.md). |
+
+Page updated 2026-07-30
+
