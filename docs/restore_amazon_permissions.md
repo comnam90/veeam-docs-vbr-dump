@@ -1,16 +1,16 @@
 ---
-title: "AWS IAM User Permissions"
+title: "AWS IAM Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_amazon_permissions.html"
-last_updated: "3/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# AWS IAM User Permissions
+# AWS IAM Users
 
 
-To restore to Amazon EC2, it is recommended that the IAM user whose credentials you plan to use to connect to AWS has administrative permissions — access to all AWS actions and resources.
+To [restore workloads to Amazon EC2](restore_amazon.md), it is recommended that the IAM user whose credentials you plan to use to connect to AWS has administrative permissions — access to all AWS actions and resources.
 
 If you do not want to provide full access to AWS, you can grant to the IAM user a minimal set of permissions that will be sufficient for restore. To do that, create the following policy in the JSON format and attach it to the IAM user.
 
@@ -27,4 +27,5 @@ Alternatively, you can attach the created policy to the IAM group or role to whi
 
 For information on how to create and attach a policy to an IAM user, see the [Creating IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) and [Adding and Removing IAM Identity Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) sections in the AWS IAM User Guide.
 
+Page updated 2026-07-21
 
