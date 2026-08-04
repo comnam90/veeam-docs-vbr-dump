@@ -3,8 +3,8 @@ title: "/cloud/tenants/{ID}/freelicenseCounters"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/tenants_id_freelicensecounters.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /cloud/tenants/{ID}/freelicenseCounters
@@ -14,7 +14,7 @@ Represents the following license counters that do not consume a Veeam Cloud Conn
 
 * New machines
 
-New machines do not consume license instances immediately. Instead, they are displayed in the representation of the /freelicenseCounters resource. Starting with the first day of the next calendar month, the new machines take license instances and move to counters in the representation of the [/cloud/tenants/{ID}](tenants_id.md) resource. For details, see the [New Workloads](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_sp_license.html?ver=120#new_vms) subsection of the Veeam Cloud Connect Guide.
+New machines do not consume license instances immediately. Instead, they are displayed in the representation of the /freelicenseCounters resource. Starting with the first day of the next calendar month, the new machines take license instances and move to counters in the representation of the [/cloud/tenants/{ID}](tenants_id.md) resource. For details, see the [New Workloads](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_sp_license.html?ver=13#new-workloads) subsection of the Veeam Cloud Connect Guide.
 
 * Rental machines
 
@@ -42,6 +42,7 @@ The /cloud/tenants/{ID}/freelicenseCounters resource has a resource representati
 
 |  |
 | --- |
-| <CloudTenantFreeLicenseCounters xmlns="http://www.veeam.com/ent/v1.0" Href="https://172.24.31.67:9398/api/cloud/tenants/b7c7f152-a44a-4651-94df-40bb14cfe840/freelicenseCounters"> |
+| <CloudTenantFreeLicenseCounters xmlns="http://www.veeam.com/ent/v1.0" Href="https://172.24.31.67:9398/api/cloud/tenants/b7c7f152-a44a-4651-94df-40bb14cfe840/freelicenseCounters">   <Links>     <Link Rel="Up" Type="CloudTenant" Href="https://172.24.31.67:9398/api/cloud/tenants/b7c7f152-a44a-4651-94df-40bb14cfe840?format=Entity" Name="QWE Systems" />   </Links>   <RentalVMBackupCount>2</RentalVMBackupCount>   <RentalWorkstationBackupCount>2</RentalWorkstationBackupCount>   <RentalServerBackupCount>3</RentalServerBackupCount>   <NewVMBackupCount>4</NewVMBackupCount>   <NewWorkstationBackupCount>5</NewWorkstationBackupCount>   <NewServerBackupCount>1</NewServerBackupCount>   <NewVMReplicaCount>2</NewVMReplicaCount> </CloudTenantFreeLicenseCounters> |
 
+Page updated 2026-07-29
 
