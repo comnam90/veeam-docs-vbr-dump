@@ -3,8 +3,8 @@ title: "Publish-VBRBackupContent"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/publish-vbrbackupcontent.html"
-last_updated: "2/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Publish-VBRBackupContent
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Publish-VBRBackupContent -RestorePoint <COib> [-AllowedIps <string[]>] [-DiskNames <string[]>] [-RunAsync] [-TargetServerName <string>] [-TargetServerCredentials <CCredentials>] [-MountHostId <guid>] [-Reason <string>]  [<CommonParameters>] |
+| Publish-VBRBackupContent -RestorePoint <COib> [-AllowedIps <string[]>] [-DiskNames <string[]>] [-RunAsync] [-TargetServerName <string>] [-TargetServerCredentials <CCredentials>] [-MountHostId <guid>] [-Reason <string>] [-EnableFUSEProtocol] [-StorageHost <CHost>] [-ResourcePool <CViResourcePoolItem>] [-Folder <CViFolderItem>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -43,17 +43,21 @@ After you started the publishing session, you can check details on this session 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point. The cmdlet will publish disks in the state stored in the specified restore point. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | AllowedIps | For Microsoft Windows-based file systems and the manual mount mode.  Specifies an array of IP addresses of target servers (iSCSI initiators) that are allowed to access the iSCSI Target Server (mount server).  Note: This parameter is required if you do not specify the TargetServerName parameter. After the cmdlet finishes its work, you need to manually start the iSCSI session from any server specified in this parameter to the iSCSI Target Server. | String[] | False | Named | False |
 | DiskNames | Specifies disk names. The cmdlet will publish disks with the specified names. If you do not specify this parameter, the cmdlet will publish all disks from the backup or replica. | String[] | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 | TargetServerName | For the automatic mount mode.  Specifies the name of the target server. The cmdlet will give the specified server access to the disk content.  Note: You must specify the TargetServerCredentials parameter to provide credentials that Veeam Backup & Replication will use to authenticate against the target server. | String | False | Named | False |
-| TargetServerCredentials | Specifies credentials that the cmdlet will use to authenticate against the target server. | Accepts the CCredentials object. To create this object, run the [Add-VBRCredentials](add-vbrcredentials.md) cmdlet. | False | Named | False |
+| TargetServerCredentials | Specifies credentials that the cmdlet will use to authenticate against the target server. | Accepts the CCredentials object. To create this object, run the[Add-VBRCredentials](add-vbrcredentials.md) cmdlet. | False | Named | False |
 | MountHostId | Specifies the ID of a server that has the mount server role. The mount server acts as an intermediary between the backup repository and the target server.  If you specify the ID, the cmdlet will use the specified server as the mount server. If you do not specify the ID, the cmdlet will use the mount server associated with the backup repository where backups are stored.  Note: You must add the server with this ID as the mount server to any backup repository in your backup infrastructure. For more information, see the [Specify Mount Server Settings](https://helpcenter.veeam.com/docs/vbr/userguide/repository_mount_server.html?ver=13) section in the Veeam Backup & Replication User Guide. | GUID | False | Named | False |
 | EnableFUSEProtocol | Enables the FUSE protocol.  Note: This parameter is required if you want to publish disks to a Linux-based or Unix-based server. | SwitchParameter | False | Named | False |
 | Reason | Specifies the reason for disk publishing. | String | False | Named | False |
+| StorageHost | For restore from storage snapshots.  Specifies the ESXi host to which the storage snapshot clone will be mounted as a temporary datastore. Veeam Backup & Replication registers a temporary VM on this host and attaches the source disks to it.  Note: This parameter applies only when the storage snapshot is accessed using the Direct SAN access transport mode. For other transport modes, Veeam Backup & Replicationmounts the snapshot clone to the source storage. | Accepts the CHost object. To create this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
+| ResourcePool | For restore from storage snapshots.  Specifies the resource pool where the temporary VM will be mounted.  If you do not specify this parameter, the cmdlet will use the default resource pool of the StorageHost. | Accepts the CViResourcePoolItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | False | Named | False |
+| Folder | For restore from storage snapshots.  Specifies the folder where the temporary VM will be mounted.  If you do not specify this parameter, the cmdlet will use the default VM folder of the StorageHost. | Accepts the CViFolderItem object. To create this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
 
@@ -95,4 +99,5 @@ Related Commands
 * [Get-VBRRestorePoint](get-vbrrestorepoint.md)
 * [Add-VBRCredentials](add-vbrcredentials.md)
 
+Page updated 2026-05-22
 
