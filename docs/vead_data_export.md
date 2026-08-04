@@ -3,8 +3,8 @@ title: "Data Export"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_data_export.html"
-last_updated: "4/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Data Export
@@ -17,9 +17,9 @@ Before exporting data, read the [Considerations and Limitations](vead_considerat
 In This Section
 
 * [How Export Works](vead_how_export_works.md)
-* [Exporting Objects](vead_exporting_objects.md)
+* [Exporting Objects](vead_export_objects.md)
 
-* [Exporting Containers](vead_exporting_containers.md)
-* [Using 1-Click Export](vead_one_click_export.md)
+* [Exporting Containers](vead_export_containers.md)
 
+Page updated 2026-05-26
 
