@@ -3,8 +3,8 @@ title: "Step 1. Launch Failover Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failover_launch.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Failover Wizard
@@ -17,4 +17,5 @@ To launch the Failover wizard, do one of the following:
 
 [![Launch Failover Wizard](images/vcd_failover_launch.webp)](images/vcd_failover_launch.webp "Launch Failover Wizard")
 
+Page updated 2026-08-04
 
