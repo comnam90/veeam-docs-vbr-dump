@@ -1,13 +1,13 @@
 ---
-title: "Step 6. Specify Database Processing Settings"
+title: "Step 7. Specify Database Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_database_processing.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 6. Specify Database Processing Settings
+# Step 7. Specify Database Processing Settings
 
 
 At the Database Processing step of the wizard, specify database credentials and log processing settings:
@@ -38,6 +38,7 @@ To quickly find the necessary object, use the search field at the bottom of the 
 1. Enter the object name or a part of it in the search field.
 2. Click the Start search button on the right or press [Enter].
 
-![Step 6. Specify Database Processing Settings](images/plugins_policy_rman_database_settings.webp)
+![Step 7. Specify Database Processing Settings](images/plugins_policy_rman_database_settings.webp)
 
+Page updated 2026-06-30
 
