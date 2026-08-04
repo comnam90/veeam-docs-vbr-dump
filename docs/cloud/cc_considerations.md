@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_considerations.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -17,4 +17,5 @@ In This Section
 * [Veeam Cloud Connect Backup](cloud_connect_limitations.md)
 * [Veeam Cloud Connect Replication](cloud_replication_limitations.md)
 
+Page updated 2026-08-03
 
