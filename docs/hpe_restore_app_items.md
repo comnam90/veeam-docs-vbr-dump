@@ -3,8 +3,8 @@ title: "Performing Application Item Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_restore_app_items.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Application Item Restore
@@ -17,11 +17,6 @@ With application item restore, you can use backups to restore the following data
 * Microsoft SharePoint sites and lists
 * Microsoft SQL Server
 * Oracle databases
-
-|  |
-| --- |
-| Note |
-| By default, Veeam Plug-in for HPE Morpheus VM Essentials produces only crash-consistent backups that in some cases cannot be used for application item restore. To instruct Veeam Plug-in for HPE Morpheus VM Essentials to create application-consistent backups of Windows VMs, enable QEMU Guest Agent quiescence in [backup job settings](hpe_backup_job_create_advanced.md#gp) beforehand. |
 
 To restore application items from a VM backup, do the following:
 
@@ -37,8 +32,9 @@ Alternatively, expand the necessary backup job, select the VM, click Application
 |  |
 | --- |
 | Tip |
-| As an alternative to application item restore, you can also [perform file-level restore](pve_vm_guest_restore.md) to recover standalone databases using Veeam Explorers. |
+| As an alternative to application item restore, you can also [perform file-level restore](hpe_vm_guest_restore.md) to recover standalone databases. |
 
 [![Performing Application Item Restore](images/hpe_restore_app_items.webp)](images/hpe_restore_app_items.webp "Performing Application Item Restore")
 
+Page updated 2026-07-22
 
