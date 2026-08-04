@@ -3,8 +3,8 @@ title: "Deprecated Cmdlets"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/deprecated_cmdlets.html"
-last_updated: "2/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deprecated Cmdlets
@@ -20,7 +20,7 @@ In this version, some cmdlets in the Veeam Explorer for Microsoft Exchange Power
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Get-VEXSmtpSettings](get-vexsmtpsettings.md) | Returns Veeam Explorer for Microsoft Exchange SMTP settings. | | [Set-VEXSmtpSettings](set-vexsmtpsettings.md) | Modifies Veeam Explorer for Microsoft Exchange SMTP settings. | |
+| Deprecated Cmdlets  | Cmdlet | Operation | | [Get-VEXSmtpSettings](get-vexsmtpsettings.md) | Returns Veeam Explorer for Microsoft Exchange SMTP settings. | | [Set-VEXSmtpSettings](set-vexsmtpsettings.md) | Modifies Veeam Explorer for Microsoft Exchange SMTP settings. | |
 
 Veeam Explorer for Microsoft SharePoint
 
@@ -30,17 +30,17 @@ In Veeam Backup & Replication 12.1, some cmdlets for Veeam Explorer for Microsof
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Get-VESPSmtpSettings](get-vespsmtpsettings.md) | Returns Veeam Explorer for Microsoft SharePoint SMTP settings. | | [Set-VESPSmtpSettings](set-vespsmtpsettings.md) | Modifies Veeam Explorer for Microsoft SharePoint SMTP settings. | |
+| Deprecated Cmdlets  | Cmdlet | Operation | | [Get-VESPSmtpSettings](get-vespsmtpsettings.md) | Returns Veeam Explorer for Microsoft SharePoint SMTP settings. | | [Set-VESPSmtpSettings](set-vespsmtpsettings.md) | Modifies Veeam Explorer for Microsoft SharePoint SMTP settings. | |
 
-Veeam Explorer for Microsoft OneDrive for Business
+Veeam Explorer for Microsoft OneDrive
 
-In Veeam Backup & Replication 12.1, some cmdlets for Veeam Explorer for Microsoft OneDrive for Business became deprecated.
+In Veeam Backup & Replication 12.1, some cmdlets for Veeam Explorer for Microsoft OneDrive became deprecated.
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Deprecated Cmdlets
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Get-VEODSmtpSettings](get-veodsmtpsettings.md) | Returns Veeam Explorer for Microsoft OneDrive for Business SMTP settings. | | [Set-VEODSmtpSettings](set-veodsmtpsettings.md) | Modifies Veeam Explorer for Microsoft OneDrive for Business SMTP settings. | |
+| Deprecated Cmdlets  | Cmdlet | Operation | | [Get-VEODSmtpSettings](get-veodsmtpsettings.md) | Returns Veeam Explorer for Microsoft OneDrive SMTP settings. | | [Set-VEODSmtpSettings](set-veodsmtpsettings.md) | Modifies Veeam Explorer for Microsoft OneDrive SMTP settings. | |
 
 Veeam Explorer for Microsoft Teams
 
@@ -50,6 +50,7 @@ In Veeam Backup & Replication 12.1, some cmdlets in the Veeam Explorer for Micro
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Get-VETSmtpSettings](get-vetsmtpsettings.md) | Returns Veeam Explorer for Microsoft Teams SMTP settings. | | [Set-VETSmtpSettings](set-vetsmtpsettings.md) | Modifies Veeam Explorer for Microsoft Teams SMTP settings. | |
+| Deprecated Cmdlets  | Cmdlet | Operation | | [Get-VETSmtpSettings](get-vetsmtpsettings.md) | Returns Veeam Explorer for Microsoft Teams SMTP settings. | | [Set-VETSmtpSettings](set-vetsmtpsettings.md) | Modifies Veeam Explorer for Microsoft Teams SMTP settings. | |
 
+Page updated 2026-01-30
 
