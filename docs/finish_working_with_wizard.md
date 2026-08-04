@@ -3,8 +3,8 @@ title: "Step 6. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/finish_working_with_wizard.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Finish Working with Wizard
@@ -16,4 +16,5 @@ To inventory tape libraries connected to the tape server, select the Start tape 
 
 ![Step 6. Finish Working with Wizard](images/tapeproxy_finish.webp)
 
+Page updated 2026-08-03
 
