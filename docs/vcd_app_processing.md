@@ -3,8 +3,8 @@ title: "Application-Aware Processing and Transaction Logs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_app_processing.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Application-Aware Processing and Transaction Logs
@@ -22,7 +22,7 @@ Before configuring transaction log processing, check that application-aware proc
 2. Click Application handling options for individual machines.
 3. In the displayed list, select workloads for which you want to configure application-aware processing and click Edit.
 
-To define custom settings for a VM added as a part of a VM container, you must include the VM in the list as a standalone object. To do this, click Add and choose the necessary VM. Then select the VM in the list and define the necessary settings.
+To define custom settings for a workload added as a part of a container, you must include the workload in the list as a standalone object. To do this, click Add and choose the necessary workload. Then select the workload in the list and define the necessary settings.
 
 1. In the Processing Settings window, on the General tab, check that Require successful processing or Try application processing, but ignore failures option is selected in the Applications area.
 
@@ -34,7 +34,7 @@ To configure application-aware processing settings:
 
 1. Select Process transaction logs with this job if you want Veeam Backup & Replication to process transaction logs.
 
-[For Microsoft Exchange VMs] With this option selected, the non-persistent runtime components or persistent components running on the VM guest OS will wait for replication to complete successfully and then trigger truncation of transaction logs. If the replication job fails, the logs will remain untouched on the VM guest OS until the next start of the non-persistent runtime components or persistent components.
+[For Microsoft Exchange workloads] With this option selected, the non-persistent runtime components or persistent components running on the guest OS will wait for replication to complete successfully and then trigger truncation of transaction logs. If the replication job fails, the logs will remain untouched on the guest OS until the next start of the non-persistent runtime components or persistent components.
 
 [For Microsoft SQL Server] You will need to configure how to process transaction logs.
 
@@ -43,15 +43,15 @@ To configure application-aware processing settings:
 | Tip |
 | To configure log processing for Oracle and PostgreSQL databases, switch to the Oracle and PostrgeSQL tabs. |
 
-1. Select Perform copy only if you use another tool to perform guest level processing, and this tool maintains consistency of the database state. Veeam Backup & Replication will create a copy-only replica for the selected VMs. The copy only replica preserves the chain of full and differential files and transaction logs on the VM. For more information, see [Microsoft Docs](http://msdn.microsoft.com/en-us/library/ms191495.aspx).
+1. Select Perform copy only if you use another tool to perform guest level processing, and this tool maintains consistency of the database state. Veeam Backup & Replication will create a copy-only replica for the selected workloads. The copy only replica preserves the chain of full and differential files and transaction logs on the workload. For more information, see [Microsoft Docs](http://msdn.microsoft.com/en-us/library/ms191495.aspx).
 
-1. [For Microsoft Windows VMs] In the Persistent guest agent section, select the Use persistent guest agent check box to use for application-aware processing persistent guest agents on each protected VM.
+1. [For Microsoft Windows workloads] In the Persistent guest agent section, select the Use persistent guest agent check box to use for application-aware processing persistent guest agents on each protected workload.
 
-By default, Veeam Backup & Replication uses non-persistent runtime components. Veeam Backup & Replication deploys runtime components on each protected VM when the replication job starts, and removes the runtime components as soon as the replication job finishes.
+By default, Veeam Backup & Replication uses non-persistent runtime components. Veeam Backup & Replication deploys runtime components on each protected workload when the replication job starts, and removes the runtime components as soon as the replication job finishes.
 
 For more information on guest agent and non-persistent components, see [Non-Persistent Runtime Components and Persistent Agent Components](runtime_process.md).
 
-[For Linux VMs] To use persistent guest agents, you must install Management Agent on protected VMs. For more information, see [Persistent Agent Components](persistent_agent_components.md).
+[For Linux workloads] To use persistent guest agents, you must install Management Agent on protected workloads. For more information, see [Persistent Agent Components](persistent_agent_components.md).
 
 ![Application-Aware Processing and Transaction Logs](images/vcd_replica_guest_general.webp)
 
@@ -60,4 +60,5 @@ Related Topics
 * [Microsoft SQL Server Transaction Log Settings](vcd_replication_sql_logs.md)
 * [Oracle Archived Log Settings](vcd_replication_oracle_logs.md)
 
+Page updated 2026-08-03
 
