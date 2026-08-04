@@ -3,8 +3,8 @@ title: "Queries"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/query_service.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Queries
@@ -41,4 +41,5 @@ For details, see [Type Parameter](#type).
 
 For details, see [Optional Parameters](#optional).
 
+Page updated 2026-07-29
 
