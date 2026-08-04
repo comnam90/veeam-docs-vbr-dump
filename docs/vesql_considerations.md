@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_considerations.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -14,13 +14,13 @@ This section lists considerations and known limitations of Veeam Explorer for Mi
 
 General
 
-* When Veeam Explorer for Microsoft SQL Server is installed on a server on which both Veeam Backup & Replication and Veeam Backup for Microsoft 365 are installed, the notification settings will be inherited from the Veeam Backup & Replication Global Notification settings.
+* [For data recovery with Explorer console] When Veeam Explorer for Microsoft SQL Server is installed on a server on which both Veeam Backup & Replication and Veeam Backup for Microsoft 365 are installed, the notification settings will be inherited from the Veeam Backup & Replication Global Notification settings.
 
-* Veeam Explorer for Microsoft SQL Server must stay open during all restore, publishing and export operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
+* [For data recovery with Explorer console] Veeam Explorer for Microsoft SQL Server must stay open during all restore, publishing and export operations. If the user who started the operation logs out or is logged out automatically, the operation will be terminated.
 
-This does not apply to restore from Veeam Plug-In for Microsoft SQL Server backups and instant recovery operations — they are managed by the Veeam Explorers Recovery Service, which runs on the mount server associated with the backup repository.
+This does not apply to restore from Veeam Plug-In for Microsoft SQL Server and RDS backups and instant recovery operations — these operations are managed by the Veeam Explorers Recovery Service, which runs on the mount server associated with the backup repository. In the Explorer web UI, all operations are managed by this service.
 
-* For Veeam Plug-In for Microsoft SQL Server backups, only the restore operation is supported. Publishing, instant recovery and export operations are not supported.
+* [For data recovery with Explorer console] For Veeam Plug-In for Microsoft SQL Server and RDS backups, only the restore operation is supported. Publishing, instant recovery and export operations are not supported.
 * To restore, publish and instantly recover your Microsoft SQL Server data without granting access to the administrative share, make sure that the Veeam Installer Service is installed on the target server. For more information on installing this service, see [Veeam Installer Service](installer_service.md).
 * Restore, publishing, instant recovery, and export operations of Microsoft SQL Server data from replicas can only recover your data to the latest state of the selected restore point. Replication jobs do not copy Microsoft SQL Server transaction logs so data recovery to a point-in-time state is not supported.
 
@@ -38,14 +38,14 @@ This does not apply to restore from Veeam Plug-In for Microsoft SQL Server backu
 | --- |
 | <Veeam>  <SQLCore StrictSQLConnectionEncryption="True"/>  </Veeam> |
 
-The Config.xml files are located on the machine where Veeam Explorer for Microsoft SQL Server is running.
+The Config.xml files are located on the machine where the Explorer is running (when using the Explorer console) or the mount server (when using the Explorer web UI).
 
 * The user configuration file is located in the %UserProfile%\AppData\Local\Veeam\Backup\SQLExplorer directory.
 * The global configuration file is located in the %ProgramData%\Veeam\Backup\SQLExplorer directory.
 
 If a configuration file named Config.xml does not exist in the necessary directory, create this file.
 
-* Veeam Explorer for Microsoft SQL Server does not support data recovery using a group Managed Service Account (gMSA) to connect to the target server.
+* Connecting to the target server using a group Managed Service Account (gMSA) is supported in PowerShell and the Explorer web UI.
 * [For Linux-based backup servers] To recover Microsoft SQL Server data, you must specify a Windows mount server for the backup repository or a default Windows mount server.
 * By default, the AUTO\_CLOSE option for Microsoft SQL Server databases is set to False. If AUTO\_CLOSE is enabled, your databases may be skipped from processing.
 * [For machines with ReFS] The mount server, target server, staging server, backup server and the machine where the Veeam Backup & Replication console is installed must support the same or a later ReFS version than that on the source machine. For more information on which OSes support which ReFS version, see [ReFS versions and compatibility matrix](https://gist.github.com/XenoPanther/15d8fad49fbd51c6bd946f2974084ef8#mountability).
@@ -74,7 +74,7 @@ Restore from Plug-in Backups
 
 * Before you restore a database from a SQL plug-in backup to another server, make sure that the account used to connect the plug-in on the target server to the backup server and backup repository meets the following requirements:
 
-* The account must either have the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles. You can also use the account under which the backup was created. For more information on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
+* The account must either have the Backup Administrator, or both the Backup Operator and Restore Operator roles. You can also use the account under which the backup was created. For more information on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
 * The account must have access permissions to the backup repository where the backup is stored. For more information, see [Access and Encryption Settings on Backup Repositories](repository_permissions_mssql.md).
 
 * Microsoft SQL Server does not support transaction log backups for the master database. Because of this, you can only restore the master database as a single database, from a full backup, to the latest state on the backup file and with the default (RECOVERY) restore option.
@@ -103,6 +103,13 @@ Note that when using the Mandatory encryption mode you must manually add the cer
 
 * To use the Optional encryption mode, no additional configuration is necessary.
 
+Restore from RDS Backups
+
+* You can restore data only from full backups created by Veeam Backup for Amazon Web Services. Restore from incremental and transaction log backups is not supported.
+* You can restore data from RDS backups only to a standalone on-premises Microsoft SQL Server server, using the Restore to Another Server option. Restoring back to an Amazon RDS instance is not supported — to restore to Amazon RDS, use Veeam Backup for AWS.
+* Restoring a database to an Always On availability group is not supported.
+* Veeam Explorer for Microsoft SQL Server does not show or support recovery of system databases (master, model, msdb).
+
 Publishing
 
 * Publishing to a Microsoft SQL Server failover cluster requires a free drive letter on each cluster node to mount a volume from the backup. If the backed-up machine has multiple volumes, a free drive letter must be available for each volume in the backup. For more information, see [How Publishing Works](vesql_how_publishing_works.md).
@@ -111,11 +118,11 @@ Publishing
 * Make sure that the mount server volume with the write cache has enough free disk space to store the changes of the published database. By default, the write cache is stored in the C:\ProgramData\Veeam\Backup\IRCache\ folder of the mount server. For more information on how to configure the write cache folder, see [Specify Mount Server Settings](repository_mount_server.md).
 
 * After you unpublish a database, Veeam Explorer for Microsoft SQL Server detaches such a database from the target Microsoft SQL Server machine but the restore point will continue to remain on the target machine for the next 15 minutes.
-* If a Veeam Explorer for Microsoft SQL Server session has been terminated in any way other than by clicking Exit in the main menu (or by clicking the X button in the upper-right corner), then all the published databases will continue to remain attached to the target Microsoft SQL Server machine with the Recovery pending state.
+* [For data recovery with Explorer console] If a Veeam Explorer for Microsoft SQL Server session has been terminated in any way other than by clicking Exit in the main menu (or by clicking the X button in the upper-right corner), then all the published databases will continue to remain attached to the target Microsoft SQL Server machine with the Recovery pending state.
 * If published databases have been renamed manually using SQL tools (for example, Microsoft SQL Management Studio), Veeam Explorer for Microsoft SQL Server will not be able to unpublish such databases properly. In this case, all the renamed databases will continue to remain attached to the target Microsoft SQL Server machine and you will have to remove them manually using SQL tools.
 * Veeam Explorer for Microsoft SQL Server does not back up published databases.
 
-* Upon closing the Veeam Explorer for Microsoft SQL Server console, all the published databases will be detached from the target Microsoft SQL Server instance automatically. Mount points will be also dismounted from under the C:\VeeamFLR directory.
+* [For data recovery with Explorer console] Upon closing the Veeam Explorer for Microsoft SQL Server console, all the published databases will be detached from the target Microsoft SQL Server instance automatically. Mount points will be also dismounted from under the C:\VeeamFLR directory.
 
 Instant Recovery
 
@@ -129,4 +136,5 @@ As a workaround, you can perform instant recovery of multiple databases in paral
 * If you plan to perform scheduled or manual switchover, make sure that the mount server volume with the write cache has enough free disk space to store the changes of the published database. By default, the write cache is stored in the C:\ProgramData\Veeam\Backup\IRCache\ folder of the mount server. For more information on how to configure the write cache folder, see [Specify Mount Server Settings](repository_mount_server.md).
 * Instant recovery to a Microsoft SQL Server failover cluster requires 2 free drive letters on each cluster node to mount a volume from the backup. If the backed-up machine has multiple volumes, the number of free drive letters on each cluster node must be twice the number of volumes in the backup. For more information, see [How Instant Recovery Works](vesql_instant_hiw.md).
 
+Page updated 2026-07-14
 
