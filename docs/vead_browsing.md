@@ -3,8 +3,8 @@ title: "Browsing, Searching and Viewing Items"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_browsing.html"
-last_updated: "12/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Browsing, Searching and Viewing Items
@@ -21,7 +21,7 @@ To view the contents of a backup file, use the navigation pane which shows you t
 
 Right-click an object and select View attributes to view object attributes. To copy necessary attributes to the clipboard, select an attribute and press [Ctrl+C] on the keyboard. Multiple selection is also supported.
 
-Veeam Explorer for Microsoft Active Directory does not display some objects and containers in the default view, such as the entire Microsoft Exchange System Options, System, Integrated DNS, Configuration Partition containers, as well as the objects stored in the Domain Controllers container. This behavior is intended to prevent accidental errors during the recovery process that may affect the system stability of the target machine.
+Veeam Explorer for Microsoft Active Directory does not display some objects and containers in the default view, such as the entire Microsoft Exchange System Objects, System, Integrated DNS, Configuration Partition containers, as well as the objects stored in the Domain Controllers container. This behavior is intended to prevent accidental errors during the recovery process that may affect the system stability of the target machine.
 
 You can view and recover some of this data if you open the Home tab and enable Advanced Features, but you must manually verify all recovery operations to ensure stable operation of the system.
 
@@ -53,4 +53,5 @@ To use the LDAP search query, do the following:
 
 [![Using LDAP Queries](images/vead_search_ldap_query.webp)](images/vead_search_ldap_query.webp "Using LDAP Queries")
 
+Page updated 2026-06-30
 
