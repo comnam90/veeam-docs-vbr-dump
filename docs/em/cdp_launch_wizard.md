@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cdp_launch_wizard.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Edit Policy Wizard
@@ -17,5 +17,5 @@ To launch the Edit Policy wizard:
 
 [![Launching Edit Policy Wizard](images/em_cdp_policies_edit.webp)](images/em_cdp_policies_edit.webp "Launching Edit Policy Wizard")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
