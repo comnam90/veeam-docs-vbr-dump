@@ -3,8 +3,8 @@ title: "Add-VBRApplicationBackupJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrapplicationbackupjob.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRApplicationBackupJob
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRApplicationBackupJob -BackupObject <Object[]> -BackupRepository <CBackupRepository> [-Name <string>] [-Description <string>] [-BackupOptions <VBRApplicationBackupOptions>] [-RetentionPolicy <int>] [-EnableSchedule] [-ScheduleOptions <VBRApplicationScheduleOptions>] [-NotificationOptions <VBRNotificationOptions>] [-DatabaseProcessingOptions <VBRDatabaseProcessingOptions[]>] [-SAPOnOracleMode {RMAN | BACKINT}] [-SAPOnOracleStorageOptions <VBRSAPOnOracleStorageOptions>] [-SAPOnOracleOptions <VBRSAPOnOracleOptions>] [-OracleRMANStorageOptions <VBROracleRMANStorageOptions>] [-OracleRMANOptions <VBROracleRMANOptions>] [-SAPHANAOptions <VBRSAPHANAOptions>] [-SAPHANACredentialsOptions <VBRSAPHANACredentialsOptions[]>] [-SAPHANAStorageOptions <VBRSAPHANAStorageOptions>] [-MSSQLOptions <VBRMSSQLOptions>] [-MSSQLCredentialsOptions <VBRMSSQLCredentialsOptions[]>] [-MSSQLStorageOptions <VBRMSSQLStorageOptions>] [<CommonParameters>] |
+| Add-VBRApplicationBackupJob -BackupObject <Object[]> -BackupRepository <CBackupRepository> [-Name <string>] [-Description <string>] [-BackupOptions <VBRApplicationBackupOptions>] [-RetentionPolicy <int>] [-EnableSchedule] [-ScheduleOptions <VBRApplicationScheduleOptions>] [-NotificationOptions <VBRNotificationOptions>] [-DatabaseProcessingOptions <VBRDatabaseProcessingOptions[]>] [-GFSOptions <VBRComputerGFSOptions>] [-SAPOnOracleMode {RMAN | BACKINT}] [-SAPOnOracleStorageOptions <VBRSAPOnOracleStorageOptions>] [-SAPOnOracleOptions <VBRSAPOnOracleOptions>] [-OracleRMANStorageOptions <VBROracleRMANStorageOptions>] [-OracleRMANOptions <VBROracleRMANOptions>] [-SAPHANAOptions <VBRSAPHANAOptions>] [-SAPHANACredentialsOptions <VBRSAPHANACredentialsOptions[]>] [-SAPHANAStorageOptions <VBRSAPHANAStorageOptions>] [-MSSQLOptions <VBRMSSQLOptions>] [-MSSQLCredentialsOptions <VBRMSSQLCredentialsOptions[]>] [-MSSQLStorageOptions <VBRMSSQLStorageOptions>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -36,8 +36,9 @@ To create application backup policies, you must specify a container object with 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | BackupObject | Specifies an array of discovered application entities: individual computers, databases, protection groups, and so on. The cmdlet will add these entities to the application backup policy. | Accepts the Object[] object. To get this object, run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. | True | Named | False |
 | BackupRepository | Specifies the target backup location for the application backup policy. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | False |
 | Name | Specifies the name that you want to assign to the application backup policy. | String | False | Named | False |
@@ -48,6 +49,7 @@ Parameters
 | ScheduleOptions | Specifies the settings for the application backup policy schedule. | Accepts the VBRApplicationScheduleOptions object. To get this object, run the one of the following cmdlets:   * [New-VBRServerScheduleOptions](new-vbrserverscheduleoptions.md) * [New-VBRApplicationScheduleOptions](new-vbrapplicationscheduleoptions.md) | False | Named | False |
 | NotificationOptions | Specifies notification settings for the application backup policy. | Accepts the VBRNotificationOptions object. To define this object, run the [New-VBRNotificationOptions](new-vbrnotificationoptions.md) cmdlet. | False | Named | False |
 | DatabaseProcessingOptions | Specifies database processing settings for the application backup policy. | Accepts the VBRDatabaseProcessingOptions[] object. To define this object, run the [New-VBRDatabaseProcessingOptions](new-vbrdatabaseprocessingoptions.md) cmdlet. | False | Named | False |
+| GFSOptions | Specifies GFS retention settings for the application backup policy. | Accepts the VBRComputerGFSOptions object. To define this object, run the [New-VBRComputerGFSOptions](new-vbrcomputergfsoptions.md) cmdlet. | False | Named | False |
 | SAPOnOracleMode | Note: This option works only for Veeam Plug-In for SAP on Oracle.  Specifies the backup mode for Veeam Plug-In for SAP on Oracle:   * RMAN: for BR\*Tools with RMAN (rman\_util mode). * BACKINT: for BR\*Tools with BACKINT (util\_file\_online mode). | VBRSAPOnOracleMode | False | Named | False |
 | SAPOnOracleStorageOptions | Note: This option works only for Veeam Plug-In for SAP on Oracle.  Specifies the storage settings for Veeam Plug-In for SAP on Oracle. | Accepts the VBRDatabaseProcessingOptions object. To define this object, run the [New-VBRSAPOnOracleStorageOptions](new-vbrsaponoraclestorageoptions.md) cmdlet. | False | Named | False |
 | SAPOnOracleOptions | Note: This option works only for Veeam Plug-In for SAP on Oracle.  Specifies the backup settings for Veeam Plug-In for SAP on Oracle. | Accepts the VBRSAPOnOracleOptions object. To define this object, run the [New-VBRSAPOnOracleOptions](new-vbrsaponoracleoptions.md) cmdlet. | False | Named | False |
@@ -128,4 +130,5 @@ Related Commands
 * [New-VBRSAPHANAOptions](new-vbrsaphanaoptions.md)
 * [New-VBRSAPHANACredentialsOptions](new-vbrsaphanacredentialsoptions.md)
 
+Page updated 2026-06-17
 
