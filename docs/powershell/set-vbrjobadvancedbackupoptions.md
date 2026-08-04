@@ -3,8 +3,8 @@ title: "Set-VBRJobAdvancedBackupOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrjobadvancedbackupoptions.html"
-last_updated: "10/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRJobAdvancedBackupOptions
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRJobAdvancedBackupOptions -Job <CBackupJob[]> [-Algorithm {ReverseIncremental | Incremental | RecoveryPointObjective | Unknown}] [-TransformFullToSynthetic <Boolean>] [-TransformToSyntheticScheduleKind <EFullBackupScheduleKind>] [-TransformToSyntheticDays {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}] [-TransformToSyntheticMonths {January | February | March | April | May | June | July | August | September | October | November | December}] [-SyntheticDayNumberInMonth {First | Second | Third | Fourth | Last | OnDay}] [-SyntheticDayOfMonth <CDayOfMonth>] [-SyntheticDayOfWeek {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}] [-EnableFullBackup <Boolean>] [-FullBackupDays {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}] [-FullBackupScheduleKind {Daily | Monthly}] [-Months {January | February | March | April | May | June | July | August | September | October | November | December}] [-DayNumberInMonth {First | Second | Third | Fourth | Last | OnDay}] [-DayOfMonth <CDayOfMonth>] [-DayOfWeek {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}]  [<CommonParameters>] |
+| Set-VBRJobAdvancedBackupOptions -Job <CBackupJob[]> [-Algorithm {ReverseIncremental | Incremental}] [-TransformFullToSynthetic <Boolean>] [-TransformToSyntheticScheduleKind <EFullBackupScheduleKind>] [-TransformToSyntheticDays {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}] [-TransformToSyntheticMonths {January | February | March | April | May | June | July | August | September | October | November | December}] [-SyntheticDayNumberInMonth {First | Second | Third | Fourth | Last | OnDay}] [-SyntheticDayOfMonth <CDayOfMonth>] [-SyntheticDayOfWeek {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}] [-EnableFullBackup <Boolean>] [-FullBackupDays {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}] [-FullBackupScheduleKind {Daily | Monthly}] [-Months {January | February | March | April | May | June | July | August | September | October | November | December}] [-DayNumberInMonth {First | Second | Third | Fourth | Last | OnDay}] [-DayOfMonth <CDayOfMonth>] [-DayOfWeek {Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday}]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -39,10 +39,11 @@ You can select backup method: reverse incremental or incremental, and set schedu
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Job | Specifies the array of jobs. The cmdlet will modify advanced backup options of these jobs. | Accepts the CBackupJob[] object. To create this object, run the [Get-VBRJob](get-vbrjob.md) cmdlet. | True | Named | True (ByProperty Name, ByValue) |
-| Algorithm | Specifies backup method:   * ReverseIncremental: reverse incremental backup method. * Incremental: incremental backup method.  * RecoveryPointObjective: not supported. * Unknown: not supported.   Note: To enable forever forward incremental backup method, disable the TransformFullToSynthetic and EnableFullBackup parameters. | JobAlgorithms | False | Named | False |
+| Algorithm | Specifies backup method:   * ReverseIncremental: reverse incremental backup method. * Incremental: incremental backup method.   Note: To enable forever forward incremental backup method, disable the TransformFullToSynthetic and EnableFullBackup parameters. | JobAlgorithms | False | Named | False |
 | TransformFullToSynthetic | For incremental backup method.  Defines whether the job will create a synthetic full backup.  Use the TransformToSyntheticDays parameter to set the days to perform the synthetic full backups. | Bool | False | Named | False |
 | TransformToSyntheticScheduleKind | For synthetic full schedule.  Specifies the synthetic full backup schedule type:   * Daily: the job will create a synthetic full on selected days of week. Use the TransformToSyntheticDays parameter to set the days. * Monthly: the job will create a synthetic full on selected days of month. Use the TransformToSyntheticMonths, SyntheticDayNumberInMonth and SyntheticDayOfMonth parameters to configure the schedule. | EFullBackupScheduleKind | False | Named | False |
 | TransformToSyntheticDays | For synthetic full schedule.  Specifies days when the job will perform the synthetic fulls:   * Sunday * Monday * Tuesday * Wednesday * Thursday * Friday * Saturday | DayOfWeek[] | False | Named | False |
@@ -84,4 +85,5 @@ Related Commands
 
 [Get-VBRJob](get-vbrjob.md)
 
+Page updated 2026-07-23
 
