@@ -3,8 +3,8 @@ title: "General-Purpose Backup Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_proxy_general.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # General-Purpose Backup Proxies
@@ -43,6 +43,12 @@ Before you add a backup proxy to the inventory of the virtual infrastructure, ch
 
 * The backup proxy must meet the system requirements. For more information, see [System Requirements](system_requirements_general_proxy.md).
 * The role of a backup proxy for unstructured data backup and file to tape backup can be assigned to a Microsoft Windows or Linux server.
-* For Veeam Agent backup from storage system snapshots, the role of a backup proxy must be assigned to a Microsoft Windows server. For more information on the limitations, see the [Storage Snapshots Support](agents_storage_systems.md) section in  Veeam Agent Backup.
+* For Veeam Agent backup from storage system snapshots, the role of a backup proxy must be assigned to a Microsoft Windows server. For more information on the limitations, see the [Storage Snapshots Support](agents_storage_systems.md) section in Veeam Agent Backup.
 
+Related Topics
+
+* [Adding General-Purpose Backup Proxies Using Console](file_share_backup_add_file_proxy.md)
+* [Adding General-Purpose Backup Proxies Using Web UI](file_share_backup_add_file_proxy_web.md)
+
+Page updated 2026-07-28
 
