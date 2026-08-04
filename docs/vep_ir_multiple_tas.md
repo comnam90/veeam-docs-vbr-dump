@@ -3,8 +3,8 @@ title: "Instant Recovery to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_tas.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Instant Recovery to Another Server
@@ -18,4 +18,5 @@ To perform instant recovery of multiple instances to another server, use the Ins
 4. [Specify switchover settings](vep_ir_multiple_tas_specify_switchover_settings.md).
 5. [Finalize the Instant Recovery session](vep_ir_multiple_tas_finalize_ir_session.md).
 
+Page updated 2026-08-04
 
