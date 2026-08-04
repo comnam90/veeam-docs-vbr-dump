@@ -3,8 +3,8 @@ title: "Mixed Scenarios"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/recovery_verification.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Mixed Scenarios
@@ -26,4 +26,5 @@ Mixed Scenarios
 | Application group | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) |
 | Linked job | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/yes.webp) | ![Mixed Scenarios](images/no.webp) |
 
+Page updated 2026-08-03
 
