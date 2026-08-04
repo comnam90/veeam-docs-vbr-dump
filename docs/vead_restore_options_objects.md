@@ -3,8 +3,8 @@ title: "Step 6. Specify Restore Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restore_options_objects.html"
-last_updated: "8/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Specify Restore Options
@@ -38,8 +38,9 @@ By default, multi-valued attributes will be replaced, not merged.
 |  |
 | --- |
 | Note |
-| * When working with a backed-up domain controller running Microsoft Windows Server 2016 and later, this dialog will also include the Restore expiration time option, which allows you to restore expiration time for linked attributes. * Users cannot change recovery settings for disabled attributes. Such attributes will be either restored or skipped according to the default configuration. |
+| * When working with a backed-up domain controller running Microsoft Windows Server 2016 and later, this dialog will also include the Restore expiration time option, which allows you to restore expiration time for linked attributes. If an attribute being restored expires during the restore session, the attribute will not be restored. * Users cannot change recovery settings for disabled attributes. Such attributes will be either restored or skipped according to the default configuration. |
 
-[![Specifying Restore Options](images/vead_restore_obj_5.webp)](images/vead_restore_obj_5.webp "Specifying Restore Options")
+![Step 6. Specify Restore Options](images/vead_restore_obj_5.webp "Specifying Restore Options")
 
+Page updated 2026-05-26
 
