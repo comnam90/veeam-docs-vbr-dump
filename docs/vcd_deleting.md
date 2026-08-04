@@ -3,8 +3,8 @@ title: "Deleting from Disk"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_deleting.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deleting from Disk
@@ -25,4 +25,5 @@ To delete replica files from disks:
 
 [![Cloud Director - Replica Delete From Disk](images/vcd_replica-delete_from_disk.webp)](images/vcd_replica-delete_from_disk.webp "Cloud Director - Replica Delete From Disk")
 
+Page updated 2026-08-03
 
