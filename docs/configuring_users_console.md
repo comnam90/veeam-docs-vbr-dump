@@ -3,8 +3,8 @@ title: "Configuring Users Using Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_users_console.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Users Using Console
@@ -16,8 +16,7 @@ To add a user or user group:
 
 1. From the main menu, select Users & Roles > Security.
 2. Click Add.
-3. In the Type field, select User or Group.
-4. In the User or group field, enter the name of a user or user group in the UPN format, for example, john.doe@tech.local.
+3. In the Name field, enter the name of a user or user group in the UPN format, for example, john.doe@tech.local.
 
 To add a default domain security group, use the group@domain format, for example, Administrators@tech.local. For more information on all security groups, see this [Microsoft article](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#default-active-directory-security-groups).
 
@@ -52,4 +51,5 @@ To remove a user or user group:
 2. Select a user or user group.
 3. Click Remove.
 
+Page updated 2026-07-10
 
