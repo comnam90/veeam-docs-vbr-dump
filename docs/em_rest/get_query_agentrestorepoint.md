@@ -3,8 +3,8 @@ title: "GET /query?type=AgentRestorePoint"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_query_agentrestorepoint.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /query?type=AgentRestorePoint
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -39,10 +40,11 @@ Optional Parameters
 
 In the query, you can use the following parameters for filtering and sorting.
 
+Optional Parameters
+
 | Parameter | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the Veeam Agent restore point resource. |
-| Name | String | Name of the Veeam Agent restore point, for example: sql01-hv@2013-08-24 05:03:25. |
+| Name | String | Name of the Veeam Agent restore point, for example: sql01-hv@2025-08-24 05:03:25. |
 | CreationTime | DateTime | Date and time when the restore point was created. The parameter accepts only UTC-formatted DateTime values. |
 | ComputerName | String | Name of the machine protected with Veeam Agent for which the restore point has been created. |
 | Type | String | Type of the restore point. Possible values:   * Full * Increment |
@@ -68,8 +70,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -83,6 +86,7 @@ The example below returns an entity resource representation of a collection of f
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/query?type=AgentRestorePoint&format=Entities&filter=Type==Full    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/query?type=AgentRestorePoint&format=Entities&filter=Type==Full  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0">   <Entities>     <AgentRestorePoints>       <AgentRestorePoint Type="AgentRestorePoint" Href="https://localhost:9398/api/agents/agentRestorePoints/e74ba372-5e1c-4c7d-bc76-d4360468d546?format=Entity" Name="enterprise05.tech.local@2025-06-03 23:38:00" UID="urn:veeam:AgentRestorePoint:e74ba372-5e1c-4c7d-bc76-d4360468d546">         <Links>           <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />           <Link Rel="Up" Type="RestorePointReference" Href="https://localhost:9398/api/restorePoints/784dfa30-1fe1-4ce2-b0c0-475d2858d9d4" Name="Jun  3 2025 11:37PM" />           <Link Rel="Up" Type="BackupFileReference" Href="https://localhost:9398/api/backupFiles/18410e2c-f7a4-438c-80ea-b2234bed33ca" Name="Agent Backup Job 1 - enterprise05.tech.localD2025-06-04T013755\_5CA9.vbk" />           <Link Rel="Alternate" Type="AgentRestorePointReference" Href="https://localhost:9398/api/agents/agentRestorePoints/e74ba372-5e1c-4c7d-bc76-d4360468d546" Name="enterprise05.tech.local@2025-06-03 23:38:00" />           <Link Rel="Down" Type="AgentRestorePointMountList" Href="https://localhost:9398/api/agents/agentRestorePoints/e74ba372-5e1c-4c7d-bc76-d4360468d546/mounts" />           <Link Rel="Create" Type="AgentRestorePointMount" Href="https://localhost:9398/api/agents/agentRestorePoints/e74ba372-5e1c-4c7d-bc76-d4360468d546/mounts" />         </Links>         <CreationTimeUTC>2025-06-03T23:38:00Z</CreationTimeUTC>         <Algorithm>Full</Algorithm>         <PointType>Full</PointType>       </AgentRestorePoint>     </AgentRestorePoints>   </Entities>   <PagingInfo PagesCount="1" PageSize="100" PageNum="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/query?type=AgentRestorePoint&format=Entities&filter=Type==Full&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/query?type=AgentRestorePoint&format=Entities&filter=Type==Full&pageSize=100&page=1" />     </Links>   </PagingInfo> </QueryResult> |
 
+Page updated 2026-07-29
 
