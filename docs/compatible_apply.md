@@ -3,8 +3,8 @@ title: "Step 7. Apply Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/compatible_apply.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Apply Settings
@@ -14,4 +14,5 @@ At the Apply step of the wizard, wait for Veeam Backup & Replication to complete
 
 ![Step 7. Apply Settings](images/s3_compatible_add_apply.webp)
 
+Page updated 2026-08-03
 
