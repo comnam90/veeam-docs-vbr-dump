@@ -3,8 +3,8 @@ title: "Step 5. Specify Oracle Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_restore_single_tas_specify_oracle_settings.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Oracle Settings
@@ -30,12 +30,13 @@ For example, if you specify the global database name as orcl\_restored.tech.loca
 
 The maximum length of the Oracle SID is 12 characters and it can only contain alphanumeric characters (a-z, A-Z and 0-9).
 
-[![Specifying Oracle Settings](images/veo_rest_wiz_oracle_srv.webp)](images/veo_rest_wiz_oracle_srv.webp "Specifying Oracle Settings")
+![Step 5. Specify Oracle Settings](images/veo_rest_wiz_oracle_srv.webp "Specifying Oracle Settings")
 
 [For Windows-based Oracle servers] If the account specified in the previous step is not the Oracle home user, you must provide a password to access the target Oracle home. Applicable to Oracle 12c and later versions.
 
 Note that this window will not appear if you are restoring your data as of a specific transaction and entered the Oracle home user password when configuring the staging server. For more information, see [Configuring Staging Oracle Server](veor_staging_server.md#staging_windows).
 
-[![Specifying Oracle Home User Password](images/veor_restore_oracle_home_password.webp)](images/veor_restore_oracle_home_password.webp "Specifying Oracle Home User Password")
+![Step 5. Specify Oracle Settings](images/veor_restore_oracle_home_password.webp "Specifying Oracle Home User Password")
 
+Page updated 2026-07-14
 
