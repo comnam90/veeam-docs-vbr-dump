@@ -3,8 +3,8 @@ title: "Step 3. Select Virtual Machines"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_failover_plan_vms.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Select Virtual Machines
@@ -23,4 +23,5 @@ To quickly find VMs, you can use the search field at the bottom of the Select Re
 
 ![Step 3. Select Virtual Machines](images/cloud_failover_plan_vms.webp)
 
+Page updated 2026-08-03
 
