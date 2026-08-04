@@ -3,8 +3,8 @@ title: "Installing License"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_license_install.html"
-last_updated: "4/28/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing License
@@ -17,11 +17,12 @@ Before you install a license, read the considerations and limitations.
 To install a license, take the following steps:
 
 1. Sign in to Veeam Backup Enterprise Manager using an account with the Portal Administrator role.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+2. In the upper-right corner, click Configuration.
 3. In the Configuration view, open the Licensing section.
 4. On the Summary tab, click Install license.
 5. Select the necessary LIC file and click Open.
 
 [![Installing License](images/license_summary.webp)](images/license_summary.webp "Installing License")
 
+Page updated 2026-07-16
 
