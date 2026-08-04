@@ -3,8 +3,8 @@ title: "Disabling and Deleting Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disabling_jobs_web.html"
-last_updated: "9/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Disabling and Deleting Jobs
@@ -17,7 +17,7 @@ Disabling Jobs
 To disable a job:
 
 1. In the management pane, click the Jobs node.
-2. In the working area, select a job and click Disable on the ribbon or right-click the job and select Disable.
+2. In the working area, select a job and click Manage > Disable on the ribbon or right-click the job and select Manage > Disable.
 
 To enable a disabled job, select it in the list and click Enable on the ribbon.
 
@@ -33,10 +33,11 @@ Deleting Jobs
 To delete a job:
 
 1. In the management pane, click the Jobs node.
-2. In the working area, select a job and click Delete on the ribbon or right-click the job and select Delete.
+2. In the working area, select a job and click Manage > Delete on the ribbon or right-click the job and select Manage > Delete.
 
 After you delete a job, the backups created by this job are displayed in the Backups node. Their backup type is changes to Orphaned.
 
 [![Click to zoom in](images/delete_jobs_web.webp)](images/delete_jobs_web.webp "Click to zoom in")
 
+Page updated 2026-06-18
 
