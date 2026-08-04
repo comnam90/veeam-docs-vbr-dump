@@ -3,8 +3,8 @@ title: "Start-VBRTapeRestore (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrtaperestore.html"
-last_updated: "3/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRTapeRestore (obsolete)
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Starts VM restore from tape.
+Starts VM or database plug-in backups restore from tape.
 
 |  |
 | --- |
@@ -25,9 +25,25 @@ Platform: VMware, Hyper-V
 
 Syntax
 
+This cmdlet provides parameter sets that allow you to:
+
+* Start a restore session for database plug-in backups stored on tape.
+
 |  |
 | --- |
-| Start-VBRTapeRestore -RestorePoint <COib[]> -Repository <CBackupRepository> [-Reason <string>] [-RunAsync]  [<CommonParameters>]  -OR-  Start-VBRTapeRestore -RestorePoint <COib[]> -Server <CHost> -Path <string> [-Reason <string>] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRTapeRestore -DbPluginRestorePoint <VBRTapeDbPluginRestorePoint[]> -Repository <CBackupRepository> [-Reason <String>] [-RunAsync] [<CommonParameters>] |
+
+* Start a restore session to restore VMs to a chosen folder on a server.
+
+|  |
+| --- |
+| Start-VBRTapeRestore -Path <String> -RestorePoint <COib[]> [-Reason <String>] [-RunAsync] -Server <CHost> [<CommonParameters>] |
+
+* Start a restore session to restore VMs to a chosen backup repository.
+
+|  |
+| --- |
+| Start-VBRTapeRestore -Repository <CBackupRepository> -RestorePoint <COib[]> [-Reason <String>] [-RunAsync] [<CommonParameters>] |
 
 Detailed Description
 
@@ -37,10 +53,12 @@ You can restore VMs to a chosen backup repository or to a folder on the server y
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | RestorePoint | Specifies the particular restore points of the VM.  You can assign multiple restore points to this object. | Accepts the COib[] object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Repository | Specifies the backup repository where you want to restore the VM. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | False |
+| DbPluginRestorePoint | Specifies the restore points of database plug-in backups stored on tape. | Accepts the VBRTapeDbPluginRestorePoint[] object. To get this object, run the [Get-VBRTapeDbPluginRestorePoint](get-vbrtapedbpluginrestorepoint.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Reason | Specifies the reason for restore. | String | False | Named | False |
 | Server | Specifies the server where you want to restore the VM. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | Named | False |
 | Path | Specifies the path to the folder where you want to restore the VM. | String | True | Named | False |
@@ -70,4 +88,5 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRServer](get-vbrserver.md)
 
+Page updated 2026-06-05
 
