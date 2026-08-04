@@ -3,8 +3,8 @@ title: "Get-VBRTapeMediaPool"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapemediapool.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRTapeMediaPool
@@ -48,11 +48,12 @@ The cmdlet returns simple, GFS and service media pools. You can get the list of 
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Library | Specifies the array of tape libraries. The cmdlet will return media pools that belong to these tape libraries. | Accepts the [VBRTapeLibrary](vbrtapelibrary.md) object, GUID or string. To get this object, run the [Get-VBRTapeLibrary](get-vbrtapelibrary.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
-| Id | Specifies the array of media pool IDs. The cmdlet will return media pools with these IDs. | Accepts GUID or string. | False | Named | False |
-| Name | Specifies the array of media pool names. The cmdlet will return media pools with these names. | String | False | Named | False |
+| Id | Specifies the array of media pool IDs. The cmdlet will return media pools with these IDs.  Accepts Guid[] or String[]. | Guid[] | False | Named | False |
+| Name | Specifies the array of media pool names. The cmdlet will return media pools with these names. | String[] | False | Named | False |
 
 <CommonParameters>
 
@@ -92,4 +93,5 @@ Related Commands
 
 [Get-VBRTapeLibrary](get-vbrtapelibrary.md)
 
+Page updated 2026-06-24
 
