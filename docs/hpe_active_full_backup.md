@@ -3,8 +3,8 @@ title: "Active Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_active_full_backup.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Active Full Backup
@@ -23,6 +23,7 @@ If the backup job is not scheduled to run automatically or is disabled, Veeam Ba
 Related Topics
 
 * [Creating Active Full Backups](hpe_active_full_create.md)
-* [Creating Backup Jobs](hpe_backup_job_create_destination.md#advanced_job_settings)
+* [Creating Backup Jobs](hpe_backup_job_create_advanced.md)
 
+Page updated 2026-07-22
 
