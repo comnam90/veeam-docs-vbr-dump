@@ -3,8 +3,8 @@ title: "Step 2. Select VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vmfile_restore_vms_vm.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Select VM
@@ -17,4 +17,5 @@ At the Virtual Machine step of the wizard, select the VM whose files you want to
 
 ![Step 2. Select VM](images/vmfilesrestore_vm.webp)
 
+Page updated 2026-08-04
 
