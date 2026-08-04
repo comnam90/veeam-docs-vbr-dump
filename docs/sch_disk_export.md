@@ -3,8 +3,8 @@ title: "Exporting Disks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_disk_export.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Exporting Disks
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 Veeam Plug-in for Scale Computing HyperCore allows you to export disks, that is, restore disks from VM backups and convert them to the VMDK, VHD and VHDX formats. You can save the exported disks to any server added to the backup infrastructure or place the disks on a datastore connected to an ESXi host (for the VMDK disk format only). For more information, see [Disk Export](disk_export.md).
 
-To export disks of an Scale Computing HyperCore VM, do the following:
+To export disks of a Scale Computing HyperCore VM, do the following:
 
 1. Open the Home view.
 2. In the inventory pane, select Backups.
@@ -24,4 +24,5 @@ Alternatively, you can expand the necessary backup job, select the VM and click 
 
 [![VM Disk Export](images/sch_disk_export.webp)](images/sch_disk_export.webp "VM Disk Export")
 
+Page updated 2026-07-16
 
