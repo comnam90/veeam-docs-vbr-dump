@@ -3,8 +3,8 @@ title: "Get-VBRCloudSubTenant"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudsubtenant.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRCloudSubTenant
@@ -62,9 +62,10 @@ This cmdlet returns cloud subtenant accounts of the following types:
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Id | Specifies the array of subtenant IDs. The cmdlet will return the subtenants with these IDs. | Accepts GUID[] or string[]. | False | Named | True (ByValue, |
+| Id | Specifies the array of subtenant IDs. The cmdlet will return the subtenants with these IDs.  Accepts Guid[] or String[]. | Guid[] | False | Named | True (ByValue, ByProperty Name) |
 | Mode | Specifies the cloud subtenant mode. You can select either of the following modes:   * Common * AgentManagement   The cmdlet will return subusers of the specified mode. | VBRCloudSubTenantMode | False | Named | False |
 | Name | Specifies the array of names for the subtenant account you want to get or search conditions. | String[] | False | Named | True (ByValue, ByProperty Name) |
 | Tenant | Specifies the tenant. The cmdlet will return the subtenants associated with this tenant. | Accepts the IVBRCloudSubTenant[] and [VBRvCDCloudTenant[]](vbrvcdcloudtenant.md) objects. To get one of the objects, run the [Get-VBRCloudTenant](get-vbrcloudtenant.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
@@ -97,4 +98,5 @@ Related Commands
 
 [Get-VBRCloudTenant](get-vbrcloudtenant.md)
 
+Page updated 2026-06-24
 
