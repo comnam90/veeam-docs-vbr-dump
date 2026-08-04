@@ -3,21 +3,20 @@ title: "Launching Veeam Explorer from Image-Level Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers.html"
-last_updated: "12/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Launching Veeam Explorer from Image-Level Backups
 
 
-To restore application items from image-level backups, use the item restore wizard.
+To restore application items from image-level backups, you can launch the relevant Veeam Explorer from the Veeam Backup & Replication console or the web UI.
 
-1. [Check prerequisites](restoring_veeam_explorers_byb.md).
-2. [Launch the wizard](restoring_veeam_explorers_launch.md).
-3. [Select a machine or site](restoring_veeam_explorers_vm.md).
-4. [Select a restore point or content database](restoring_veeam_explorers_point.md).
-5. [[For restore from storage snapshots] Select an ESXi host for snapshot mounting](restoring_veeam_explorers_host.md).
-6. [Specify a restore reason](restoring_veeam_explorers_reason.md).
-7. [Open Veeam Explorer](restoring_veeam_explorers_open.md).
+In This Section
 
+* [Before You Begin](restoring_veeam_explorers_byb.md)
+* [Launching Veeam Explorer Using Console](restoring_veeam_explorers_console.md)
+* [Launching Veeam Explorer Using Web UI](restoring_veeam_explorers_web_ui.md)
+
+Page updated 2026-06-29
 
