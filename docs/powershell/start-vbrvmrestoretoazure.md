@@ -3,8 +3,8 @@ title: "Start-VBRVMRestoreToAzure"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrvmrestoretoazure.html"
-last_updated: "9/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRVMRestoreToAzure
@@ -31,13 +31,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRVMRestoreToAzure -RestorePoint <COib> -Subscription <VBRAzureSubscription> -VmSize <VBRAzureVMSize> -VirtualNetwork <VBRAzureVirtualNetwork> -VirtualSubnet <VBRAzureNetworkSubnet> [-ResourceGroup <VBRAzureResourceGroup>] [-NewResourceGroupName <string>] [-StorageAccount <VBRAzureStorageAccount>] [-Location <VBRAzureLocation>] [-DisksToExclude <string[]>] [-DiskConfigurations <VBRAzureDiskConfiguration[]>] [-VmName <string>] [-Reason <string>] [-GatewayServer <CHost>] [-Credentials <CCredentials>] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction {ConnectToIsolatedNetwork | AbortRecovery}] [-VirusIsolatedNetwork <VBRAzureVirtualNetwork>] [-VirusIsolatedNetworkSubnet <VBRAzureNetworkSubnet>] [-NetworkSecurityGroup <VBRNetworkSecurityGroup>] [-Wait] [-AllocatePublicIP] [-ShutdownVM] [-StorageType {Managed | Unmanaged}]  [<CommonParameters>] |
+| Start-VBRVMRestoreToAzure -RestorePoint <COib> -Subscription <VBRAzureSubscription> -VmSize <VBRAzureVMSize> -VirtualNetwork <VBRAzureVirtualNetwork> -VirtualSubnet <VBRAzureNetworkSubnet> [-ResourceGroup <VBRAzureResourceGroup>] [-NewResourceGroupName <string>] [-StorageAccount <VBRAzureStorageAccount>] [-Location <VBRAzureLocation>] [-DisksToExclude <string[]>] [-DiskConfigurations <VBRAzureDiskConfiguration[]>] [-VmName <string>] [-Reason <string>] [-GatewayServer <CHost>] [-Credentials <CCredentials>] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction {ConnectToIsolatedNetwork | AbortRecovery}] [-VirusIsolatedNetwork <VBRAzureVirtualNetwork>] [-VirusIsolatedNetworkSubnet <VBRAzureNetworkSubnet>] [-NetworkSecurityGroup <VBRNetworkSecurityGroup>] [-SkipNetworkSecurityGroup] [-Wait] [-AllocatePublicIP] [-ShutdownVM] [-StorageType {Managed | Unmanaged}]  [<CommonParameters>] |
 
 * For Microsoft Azure Classic deployment model.
 
 |  |
 | --- |
-| [-StorageAccount <VBRAzureStorageAccount>] [-Location <VBRAzureLocation>] [-DisksToExclude <string[]>] [-DiskConfigurations <VBRAzureDiskConfiguration[]>] [-VmName <string>] [-CloudService <VBRAzureCloudService>] [-DNSName <string>] [-Endpoint <uint16>] [-VirtualNetwork <VBRAzureVirtualNetwork>] [-VirtualSubnet <VBRAzureNetworkSubnet>] [-Reason <string>] [-GatewayServer <CHost>] [-Credentials <CCredentials>] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction {ConnectToIsolatedNetwork | AbortRecovery}] [-VirusIsolatedNetwork <VBRAzureVirtualNetwork>] [-VirusIsolatedNetworkSubnet <VBRAzureNetworkSubnet>] [-NetworkSecurityGroup <VBRNetworkSecurityGroup>] [-Wait] [-AllocatePublicIP] [-ShutdownVM] [-StorageType {Managed | Unmanaged}]  [<CommonParameters>] |
+| [-StorageAccount <VBRAzureStorageAccount>] [-Location <VBRAzureLocation>] [-DisksToExclude <string[]>] [-DiskConfigurations <VBRAzureDiskConfiguration[]>] [-VmName <string>] [-CloudService <VBRAzureCloudService>] [-DNSName <string>] [-Endpoint <uint16>] [-VirtualNetwork <VBRAzureVirtualNetwork>] [-VirtualSubnet <VBRAzureNetworkSubnet>] [-Reason <string>] [-GatewayServer <CHost>] [-Credentials <CCredentials>] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction {ConnectToIsolatedNetwork | AbortRecovery}] [-VirusIsolatedNetwork <VBRAzureVirtualNetwork>] [-VirusIsolatedNetworkSubnet <VBRAzureNetworkSubnet>] [-NetworkSecurityGroup <VBRNetworkSecurityGroup>] [-SkipNetworkSecurityGroup] [-Wait] [-AllocatePublicIP] [-ShutdownVM] [-StorageType {Managed | Unmanaged}]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -54,8 +54,9 @@ This cmdlet restores VM backups to Microsoft Azure. You can restore the data to 
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | RestorePoint | Specifies the restore point of the backup you want to restore to Microsoft Azure. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Subscription | Specifies the Microsoft Azure subscription. The cmdlet will restore the backup to this subscription. | Accepts the [VBRAzureSubscription](vbrazuresubscription.md) object. To get this object, run the [Get-VBRAzureSubscription](get-vbrazuresubscription.md) cmdlet. | True | Named | False |
 | VmSize | Specifies the Microsoft Azure VM configuration option. The VM will use this configuration template. | Accepts the [VBRAzureVMSize](vbrazurevmsize.md) object. To get this object, run the [Get-VBRAzureVMSize](get-vbrazurevmsize.md) cmdlet. | True | Named | False |
@@ -79,6 +80,7 @@ Parameters
 | VirusIsolatedNetwork | Specifies the Azure virtual network. Veeam Backup & Replication will restore the infected VM to the selected network. | Accepts the [VBRAzureVirtualNetwork](vbrazurevirtualnetwork.md) object. To get this object, run the [Get-VBRAzureVirtualNetwork](get-vbrazurevirtualnetwork.md) cmdlet. | False | Named | False |
 | VirusIsolatedNetworkSubnet | Specifies the Azure virtual network subnet. Veeam Backup & Replication will restore the infected VM to the selected network. | Accepts the [VBRAzureNetworkSubnet](vbrazurenetworksubnet.md) object. To get this object, run the [Get-VBRAzureVirtualNetworkSubnet](get-vbrazurevirtualnetworksubnet.md) cmdlet. | False | Named | False |
 | NetworkSecurityGroup | Specifies a security group for the restored VM. | Accepts the VBRNetworkSecurityGroup object. | False | Named | False |
+| SkipNetworkSecurityGroup | Defines that the cmdlet will not assign a network security group to the restored VM. | SwitchParameter | False | Named | False |
 | Wait | Defines that the command waits for the process to complete before accepting more input. | SwitchParameter | False | Named | False |
 | AllocatePublicIP | Defines that the cmdlet will assign a public IP to the restored VM.  If you provide this parameter, Veeam Backup & Replication will assign a public IP to it.  Otherwise, the restored VM will remain without the public IP. | SwitchParameter | False | Named | False |
 | ShutdownVM | Defines that the cmdlet will power on the restored VM after the restore is complete.  If you do not provide this parameter, the restored VM will remain powered on. | SwitchParameter | False | Named | False |
@@ -128,4 +130,5 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-VBRAzureCloudService](get-vbrazurecloudservice.md)
 
+Page updated 2026-05-15
 
