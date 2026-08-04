@@ -3,8 +3,8 @@ title: "Veeam Explorer for PostgreSQL"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_postgresql.html"
-last_updated: "3/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Explorer for PostgreSQL
@@ -31,7 +31,7 @@ Veeam Explorer for PostgreSQL
 | [Stop-VEPSQLInstancePublish](stop-vepsqlinstancepublish.md) | Unpublishes a PostgreSQL instance from the target server. |
 | [Restart-VEPSQLInstancePublish](restart-vepsqlinstancepublish.md) | Restarts a failed publishing process for a backed-up PostgreSQL instance. |
 | [New-VEPSQLIRSwitchOverOptions](new-vepsqlirswitchoveroptions.md) | Defines the switchover option that you can apply to the instant recovery session of a PostgreSQL instance. |
-| [Start-VEPSQLInstanceInstantRecovery](start-vepsqlinstanceinstantrecovery.md) | Performs instant recovery of backed-up PostgreSQL instances. |
+| [Start-VEPSQLInstanceInstantRecovery](start-vepsqlinstanceinstantrecovery.md) | Performs instant recovery of a backed-up PostgreSQL instance. |
 | [Set-VEPSQLInstanceInstantRecovery](set-vepsqlinstanceinstantrecovery.md) | Modifies switchover settings for a specified PostgreSQL instance. |
 | [Get-VEPSQLInstanceInstantRecovery](get-vepsqlinstanceinstantrecovery.md) | Returns PostgreSQL instances that are published within an instant recovery session. |
 | [Restart-VEPSQLInstanceInstantRecovery](restart-vepsqlinstanceinstantrecovery.md) | Restarts a failed instant recovery process for a PostgreSQL instance. |
@@ -39,6 +39,9 @@ Veeam Explorer for PostgreSQL
 | [Switch-VEPSQLInstanceInstantRecovery](switch-vepsqlinstanceinstantrecovery.md) | Performs switchover of a PostgreSQL instance published within an instant recovery session. |
 | [Get-VEPSQLDatabase](get-vepsqldatabase.md) | Returns backed-up PostgreSQL databases. |
 | [Get-VEPSQLPublishedDatabase](get-vepsqlpublisheddatabase.md) | Returns published PostgreSQL databases. |
+| [Start-VEPSQLDatabaseRestore](start-vepsqldatabaserestore.md) | Restores a backed-up PostgreSQL database. |
+| [Get-VEPSQLDatabaseRestore](get-vepsqldatabaserestore.md) | Returns information about restore processes for backed-up PostgreSQL databases. |
+| [Stop-VEPSQLDatabaseRestore](stop-vepsqldatabaserestore.md) | Stops a restore job for a backed-up PostgreSQL database. |
 | [Start-VEPSQLDatabaseExport](start-vepsqldatabaseexport.md) | Starts an export process for a backed-up or a published PostgreSQL database. |
 | [Get-VEPSQLDatabaseExport](get-vepsqldatabaseexport.md) | Returns PostgreSQL databases with ongoing export sessions. |
 | [Restart-VEPSQLDatabaseExport](restart-vepsqldatabaseexport.md) | Restarts a failed export process for a backed-up PostgreSQL database. |
@@ -46,6 +49,8 @@ Veeam Explorer for PostgreSQL
 | [Get-VEPSQLExtendedLogging](get-vepsqlextendedlogging.md) | Returns the state of the extended logging mode for Veeam Explorer for PostgreSQL. |
 | [Enable-VEPSQLExtendedLogging](enable-vepsqlextendedlogging.md) | Enables the extended logging mode for Veeam Explorer for PostgreSQL. |
 | [Disable-VEPSQLExtendedLogging](disable-vepsqlextendedlogging.md) | Disables the extended logging mode for Veeam Explorer for PostgreSQL. |
-| [New-VEPSQLLinuxCredential](new-vepsqllinuxcredential.md) | Creates Linux credential record to connect to a target PostgreSQL server. |
+| [New-VEPSQLLinuxCredential](new-vepsqllinuxcredential.md) | Creates a Linux credential record to connect to a target PostgreSQL server. |
+| [New-VEPSQLInstanceCredentials](new-vepsqlinstancecredentials.md) | Creates a PostgreSQL credential object to authenticate to a PostgreSQL database. |
 
+Page updated 2026-06-11
 
