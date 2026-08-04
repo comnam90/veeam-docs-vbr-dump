@@ -3,14 +3,14 @@ title: "Step 7. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_summary.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Finish Working with Wizard
 
 
-At the Summary step of the wizard, review summary information and click Finish. As soon as Veeam Plug-in for Scale Computing HyperCore starts the job, the backup progress will be displayed in the working area when you navigate to Jobs > Backups in the inventory pane of the Home view.
+At the Summary step of the wizard, review summary information and click Finish. As soon as Veeam Plug-in for Scale Computing HyperCore starts the job, the backup progress will be displayed in the working area when you navigate to Jobs > Backup in the inventory pane of the Home view.
 
 |  |
 | --- |
@@ -19,4 +19,5 @@ At the Summary step of the wizard, review summary information and click Finish. 
 
 [![Step 7. Finish Working with Wizard](images/sch_backup_job_create_summary.webp)](images/sch_backup_job_create_summary.webp)
 
+Page updated 2026-07-16
 
