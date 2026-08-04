@@ -3,8 +3,8 @@ title: "Switch-VEORIRDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/switch-veorirdatabase.html"
-last_updated: "1/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Switch-VEORIRDatabase
@@ -32,13 +32,14 @@ This cmdlet performs a manual switchover of an Oracle database published within 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a published Oracle database that the cmdlet will switchover. | Accepts the [VEORIRDatabase](veorirdatabase.md) object. To get this object, run the [Get-VEORIRDatabase](get-veorirdatabase.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -63,4 +64,5 @@ Related Commands
 
 [Get-VEORIRDatabase](get-veorirdatabase.md)
 
+Page updated 2026-01-30
 
