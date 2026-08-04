@@ -3,8 +3,8 @@ title: "Set-VESQLIRDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/set-vesqlirdatabase.html"
-last_updated: "12/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VESQLIRDatabase
@@ -37,14 +37,15 @@ This cmdlet allows you to modify the switchover settings for a specified Microso
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a published Microsoft SQL Server database within an instant recovery session. | Accepts the [VESQLIRDatabase](vesqlirdatabase.md) object. To get this object, run the [Get-VESQLIRDatabase](get-vesqlirdatabase.md) cmdlet. | True | 0 | True (ByValue) |
 | SwitchOverOptions | Specified a new switchover option for the specified Microsoft SQL Server database. | Accepts the [VESQLIRSwitchOverOptions](vesqlirswitchoveroptions.md) object. To create this object, run the [New-VESQLIRSwitchOverOptions](new-vesqlirswitchoveroptions.md) cmdlet. | True | 1 | True (ByValue) |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -54,11 +55,11 @@ Example
 
 Setting Scheduled Switchover for Microsoft SQL Server Database
 
-This example shows how to set scheduled switchover for the fiscal database. The switchover will be performed on 2023-12-4 at 13:00:00.
+This example shows how to set scheduled switchover for the fiscal database. The switchover will be performed on 2026-12-4 at 13:00:00.
 
 |  |
 | --- |
-| $time = Get-Date -Date "2023-12-4 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VESQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc  $IRDatabase = Get-VESQLIRDatabase -DatabaseName "fiscal"  Set-VESQLIRDatabase -Database $IRDatabase -SwitchOverOptions $ScheduledSwitch |
+| $time = Get-Date -Date "2026-12-4 13:00:00"  $TimeUtc = $time.ToUniversalTime()  $ScheduledSwitch = New-VESQLIRSwitchOverOptions -Scheduled -SwitchingTimeUtc $TimeUtc  $IRDatabase = Get-VESQLIRDatabase -DatabaseName "fiscal"  Set-VESQLIRDatabase -Database $IRDatabase -SwitchOverOptions $ScheduledSwitch |
 
 Perform the following steps:
 
@@ -76,4 +77,5 @@ Related Commands
 * [New-VESQLIRSwitchOverOptions](new-vesqlirswitchoveroptions.md)
 * [Get-VESQLIRDatabase](get-vesqlirdatabase.md)
 
+Page updated 2026-03-17
 
