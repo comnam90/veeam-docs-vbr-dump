@@ -3,8 +3,8 @@ title: "Performing Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_protection_full.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Full Backup
@@ -41,11 +41,21 @@ This command returns a list of all existing connections. To stop these connectio
 
 where <database\_name> is the name of the database you want to deactivate.
 
-1. Back up the database offline with the following command:
+1. Back up the database offline with one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
 | db2 backup database <database\_name> load /opt/veeam/VeeamPluginforDB2/libDB2Plugin.so |
+
+where <database\_name> is the name of the database you want to back up.
+
+* For Microsoft Windows:
+
+|  |
+| --- |
+| db2 backup database <database\_name> load 'C:\Program Files\Veeam\VeeamPluginforDB2\DB2Plugin.dll' |
 
 where <database\_name> is the name of the database you want to back up.
 
@@ -55,7 +65,7 @@ where <database\_name> is the name of the database you want to back up.
 | --- |
 | db2 activate database <database\_name> |
 
-where <database\_name> is the name of the database you want to deactivate.
+where <database\_name> is the name of the database you want to activate.
 
 Online Backup
 
@@ -63,21 +73,39 @@ To back up database online, do the following steps:
 
 1. Before you back up database online, check if you set Veeam Plug-In to use the logarchmeth1 parameter.
 
-If you have not configured the logarchmeth1 parameter during the [Veeam Plug-In configuration](db2_configure.md), you can configure the parameter using DB2ConfigTool:
+If you have not configured the logarchmeth1 parameter during the [Veeam Plug-In configuration](db2_configure.md), you can configure the parameter using DB2ConfigTool or the db2 command, depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --set-logarchmeth yes |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --set-logarchmeth yes |
 
-Alternatively, you can re-configure the database with the following command:
+Alternatively, you can configure the parameter using the db2 command:
 
 |  |
 | --- |
-| db2 update database cfg for <database\_name> using logarchmeth1 VENDOR:</opt/veeam/VeeamPluginforDB2/libDB2Plugin.so> |
+| db2 update database cfg for <database\_name> using logarchmeth1 VENDOR:/opt/veeam/VeeamPluginforDB2/libDB2Plugin.so |
 
 where <database\_name> is the name of the database you want to back up.
 
-1. Back up the database online with the following command:
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --set-logarchmeth yes |
+
+Alternatively, you can configure the parameter using the db2 command:
+
+|  |
+| --- |
+| db2 update database cfg for <database\_name> using logarchmeth1 'VENDOR:C:\Program Files\Veeam\VeeamPluginforDB2\DB2Plugin.dll' |
+
+where <database\_name> is the name of the database you want to back up.
+
+1. Back up the database online with one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
@@ -85,7 +113,17 @@ where <database\_name> is the name of the database you want to back up.
 
 where <database\_name> is the name of the database you want to back up.
 
-If you want to include logs in the backup, you can use the INCLUDE LOGS option with the BACKUP DATABASE command:
+* For Microsoft Windows:
+
+|  |
+| --- |
+| db2 backup database <database\_name> online load 'C:\Program Files\Veeam\VeeamPluginforDB2\DB2Plugin.dll' |
+
+where <database\_name> is the name of the database you want to back up.
+
+If you want to include logs in the backup, you can use the INCLUDE LOGS option with the BACKUP DATABASE command. To do this, run one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
@@ -93,6 +131,15 @@ If you want to include logs in the backup, you can use the INCLUDE LOGS option w
 
 where <database\_name> is the name of the database you want to back up.
 
+* For Microsoft Windows:
+
+|  |
+| --- |
+| db2 backup database <database\_name> online load 'C:\Program Files\Veeam\VeeamPluginforDB2\DB2Plugin.dll' include logs |
+
+where <database\_name> is the name of the database you want to back up.
+
 To learn more about the INCLUDE LOGS option, see [this IBM article](https://www.ibm.com/docs/en/db2/11.5?topic=management-including-log-files-backup-image).
 
+Page updated 2026-07-02
 
