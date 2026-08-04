@@ -3,14 +3,19 @@ title: "Guest OS File Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_file_recovery.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Guest OS File Restore
 
 
 With guest OS file restore, you can recover individual guest OS files and folders. When you recover files or folders, you do not need to extract the image of a workload to a staging location or start the workload prior to recovery. You can recover files and folders directly from a regular image-level backup or replica to the necessary point in time.
+
+|  |
+| --- |
+| NOTE |
+| To learn about guest file restore from Veeam Agent backups, see [Restoring Files and Folders](integration_flr.md). |
 
 Supported Sources
 
@@ -30,7 +35,8 @@ When you perform guest OS file restore, Veeam Backup & Replication provides the 
 
 * Helper appliance. The helper appliance is a helper VM running a stripped-down Linux kernel that has a minimal set of components. The appliance is quite small (around 50 MB) and requires 2048 MB RAM and 2 CPUs.
 * Mount server (Microsoft Windows or Linux). You can select the default mount server or a mount server associated with a repository.
-* Linux helper host. You can select a Linux server added to the backup infrastructure or a server not present in the backup infrastructure. We recommend you to specify the same server as the recovery target. This will improve the performance.
+* Helper host. You can select a Linux server added to the backup infrastructure or a Linux server that is not present in the backup infrastructure.
+* Original host. The recovery target itself. This option is recommended for performance.
 
 For more information on how a mount server is selected automatically, see [Mount Server Automatic Selection](guest_restore_scenarios.md).
 
@@ -45,7 +51,7 @@ During the guest OS file restore, Veeam Backup & Replication performs the follow
 1. [If mount server is helper appliance] Veeam Backup & Replication deploys the helper appliance on the host in the virtual infrastructure.
 2. Veeam Backup & Replication creates a mount point on the mount server and mounts workload disks from the backup or replica to it. For more information on automatically selected mount servers, see [Mount Server Automatic Selection](guest_restore_scenarios.md).
 
-If a workload has ReFS disks, Veeam Backup & Replication uses virtual hard disk (VHD) mount to access the content of all disks. If a workload does not have ReFS disks, Veeam Backup & Replication uses a separate program — Virtual Disk Driver (VDK) that is provided with the product. Workload disks are not physically extracted from the backup file or workload replica. Veeam Backup & Replication emulates their presence on the backup server or Veeam Backup & Replication console. The backup file or workload replica itself remains in the read-only state.
+To access the content of workload disks, Veeam Backup & Replication mounts them using a proprietary driver provided with the product. Workload disks are not physically extracted from the backup file or workload replica — Veeam Backup & Replication emulates their presence on the mount server. The backup file or workload replica itself remains in the read-only state.
 
 1. Veeam Backup & Replication launches the Veeam Backup browser on the Veeam Backup & Replication console. The Veeam Backup browser shows the content of disks mounted to the mount server.
 
@@ -55,7 +61,7 @@ You can browse the workload guest file system in the Veeam Backup browser and re
 
 * Restore > Keep or Restore > Overwrite command: recovers files to the original location.
 
-The mount server connects to the workload over the network, or VIX API/vSphere Web Services or PowerShell Direct if a connection over the network cannot be established.
+The mount server connects to the workload over the network, or vSphere Web Services, or PowerShell Direct if a connection over the network cannot be established.
 
 * Restore > Permissions only command: recovers permissions.
 
@@ -63,7 +69,7 @@ The mount server connects to the workload over the network.
 
 * Restore to > Keep or Restore to > Overwrite command: recovers files to a new workload.
 
-The mount server connects to the workload over the network, or VIX API/vSphere Web Services or PowerShell Direct if a connection over the network cannot be established.
+The mount server connects to the workload over the network, or vSphere Web Services, or PowerShell Direct if a connection over the network cannot be established.
 
 * Copy to command: recovers files to the Veeam Backup & Replication console or a shared folder.
 
@@ -94,7 +100,7 @@ When you perform guest OS file restore, Veeam Backup & Replication performs the 
 
 If you have installed the [Linux Management Agent](persistent_agent_components.md), the mount server connects to the workload to which you recover files (target workload) using this agent and recovers files. This is the preferred way of connection.
 
-[For VMware vSphere] If the backup server fails to connect to the Management Agent, the backup server connects to the target workload over SSH. If the SSH connection also fails, Veeam Backup & Replication uses networkless processing over VIX API/vSphere Web Services. Then, Veeam Backup & Replication deploys on the workload a temporary agent that performs recovery.
+[For VMware vSphere] If the backup server fails to connect to the Management Agent, the backup server connects to the target workload over SSH. If the SSH connection also fails, Veeam Backup & Replication uses networkless processing over vSphere Web Services. Then, Veeam Backup & Replication deploys on the workload a temporary agent that performs recovery.
 
 [For Microsoft Hyper-V] If the backup server fails to connect to the Management Agent, the backup server connects to the target workload over SSH. Then Veeam Backup & Replication deploys on the workload a temporary agent that performs recovery.
 
@@ -127,4 +133,5 @@ Related Topics
 * [Recovering Guest OS Files](performing_guest_restore.md)
 * [Application Item Restore](restore_veeam_explorers.md)
 
+Page updated 2026-07-29
 
