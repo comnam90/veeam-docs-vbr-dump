@@ -3,8 +3,8 @@ title: "Managing Backups"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/managing_backups.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Backups
@@ -15,4 +15,5 @@ You can perform the following operations with backups created with backup and ba
 * [View properties](view_backup_properties.md)
 * [Delete from disk](delete_backup_from_disk.md)
 
+Page updated 2026-08-03
 
