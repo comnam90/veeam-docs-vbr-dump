@@ -1,13 +1,13 @@
 ---
-title: "Step 2. Specify Worker VM Settings"
+title: "Step 2. Configure Worker Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_workers_add_vm.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 2. Specify Worker VM Settings
+# Step 2. Configure Worker Settings
 
 
 At the Virtual Machine step of the wizard, do the following:
@@ -18,7 +18,7 @@ At the Virtual Machine step of the wizard, do the following:
 
 [Applies only to the [standalone cluster deployment](ahv_infrastructure_cluster.md)] For a cluster to be displayed in the list of the available clusters, it must added to the backup infrastructure as described in section [Adding Nutanix AHV Server to Backup Infrastructure](ahv_add_ahv_cluster.md).
 
-1. In the Name field, specify a name for the worker. The maximum length of the name is 63 characters; the following characters are only supported: a-z, A-Z, 0-9, -.
+1. In the Name field, specify a name for the worker. The maximum length of the name is 63 characters; only the following characters are supported: a-z, A-Z, 0-9, -.
 2. Check the Storage field to see the storage container that is automatically selected for worker system file.
 3. In the Description field, provide a description for future reference. The maximum length of the description is 1024 characters.
 4. In the Max concurrent tasks field, specify the number of tasks that the worker will be able to handle in parallel. If this value is exceeded, the worker will not start processing a new task until one of the currently running tasks finishes.
@@ -36,4 +36,5 @@ If you do not specify host affinity settings, Veeam Backup & Replication will au
 
 ![Step 2. Specify Worker VM Settings](images/ahv_workers_add_vm.webp "Specify Worker VM Settings")
 
+Page updated 2026-07-16
 
