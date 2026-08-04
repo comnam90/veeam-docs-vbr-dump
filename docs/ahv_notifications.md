@@ -3,8 +3,8 @@ title: "Configuring Notifications"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_notifications.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Notifications
@@ -28,4 +28,5 @@ For more information on how to track the support expiration date, see [Viewing L
 
 [![Configuring Notifications](images/ahv_settings_notifications.webp)](images/ahv_settings_notifications.webp "Configuring Notifications")
 
+Page updated 2026-07-08
 
