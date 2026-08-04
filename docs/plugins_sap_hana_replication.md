@@ -3,8 +3,8 @@ title: "Support for SAP HANA System Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_hana_replication.html"
-last_updated: "5/29/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Support for SAP HANA System Replication
@@ -71,4 +71,5 @@ This command specifies the backup that Veeam Plug-In will use for restore. For d
 
 If then you want to restore from a backup created in a new backup chain, you must use the --set-backup-for-restore parameter again to select a new backed-up machine as a source for restore.
 
+Page updated 2026-06-05
 
