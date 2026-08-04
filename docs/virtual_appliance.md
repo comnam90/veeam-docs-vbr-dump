@@ -3,8 +3,8 @@ title: "Virtual Appliance (HotAdd)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_appliance.html"
-last_updated: "9/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Virtual Appliance (HotAdd)
@@ -24,7 +24,7 @@ The Virtual appliance transport mode can be used for all operations where the VM
 * VM disk restore
 * Replica failback
 
-Requirements for the Virtual Appliance mode
+Requirements for Virtual Appliance Mode
 
 To use the Virtual appliance transport mode, make sure that the following requirements are met:
 
@@ -39,15 +39,17 @@ As an alternative, you can use ESXi 6.0 or later and NFS 4.1.
 
 * SCSI 0:X controller must be present on a VMware backup proxy. In the opposite case, VM data processing in the Virtual appliance transport mode will fail.
 
-Limitations for the Virtual Appliance mode
+Limitations for Virtual Appliance Mode
 
+* [For Veeam Software Appliance] Starting from 13.1, the default transport mode for a VMware backup proxy running on Veeam Software Appliance is Automatic. Since Veeam Software Appliance does not support the Direct storage access mode, Veeam Backup & Replication uses the Virtual appliance (HotAdd) mode if it is enabled in Veeam Host Management Console and available for the processed virtual machine, or the Network mode otherwise.
+* [For Veeam Software Appliance] Adding a local, iSCSI, or FC storage device to Veeam Software Appliance in Veeam Host Management Console restarts the HotAdd service on the appliance. As a result, backup jobs and restores that use the Virtual appliance (HotAdd) transport mode fail. Before you add a new storage device, wait for such jobs and restores to complete.
 * [For vSphere 6.5 and later] If a source VM has vSAN disks and a VMware backup proxy used to process this VM has non-vSAN disks, backup and restore in the Virtual appliance mode is not supported.
 * If a VMware backup proxy used to process a source VM resides on a VMFS 3 datastore, it must be formatted with proper block size to be able to mount the largest virtual disk of hot-added VMs:
 
-+ 1 MB block size — 256 GB maximum file size
-+ 2 MB block size — 512 GB maximum file size
-+ 4 MB block size — 1024 GB maximum file size
-+ 8 MB block size — 2048 GB maximum file size
+* 1 MB block size — 256 GB maximum file size
+* 2 MB block size — 512 GB maximum file size
+* 4 MB block size — 1024 GB maximum file size
+* 8 MB block size — 2048 GB maximum file size
 
 This limitation does not apply to VMFS-5 volumes that always have 1 MB file block size.
 
@@ -63,4 +65,5 @@ Related Topics
 * [Virtual Appliance Mode for VMs on VSAN](virtual_appliance_mode_vsan.md)
 * [Adding VMware Backup Proxies](add_vmware_proxy.md)
 
+Page updated 2026-07-28
 
