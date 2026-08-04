@@ -3,8 +3,8 @@ title: "Veeam Backup & Replication Web UI Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/web_ui_limitations.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup & Replication Web UI Limitations
@@ -12,7 +12,14 @@ product_version: "13.0.2.29"
 
 The Veeam Backup & Replication web UI has the following limitations:
 
-* Backup jobs only for [VMware vSphere](backup_job_web.md) and [Microsoft Hyper-V](backup_job_hv_web.md) VMs are available in the Veeam Backup & Replication web UI.
+* In the Veeam Backup & Replication web UI, you can manage the following backup jobs only:
+
+* Backup jobs for [VMware vSphere](backup_job_web.md)
+* Backup jobs for [Microsoft Hyper-V](backup_job_hv_web.md)
+* Backup jobs for [unstructured data](ud_backup_job.md) (file shares and object storage repositories)
+* Backup jobs for [Nutanix AHV](ahv_backup_web.md)
+* Backup jobs for [Proxmox VE](pve_backup_web.md)
+* [Veeam Agent](agents_management_interfaces.md) backup jobs.
 
 Alternative: To manage backup jobs for other platforms, use the [Veeam Backup & Replication console](vbr_ui.md) instead.
 
@@ -50,4 +57,5 @@ Alternative: Use the [Veeam Backup & Replication console](configure_roles.md) in
 
 * The Install missing updates option in the Manage Updates group installs updates on Linux-based infrastructure components (Veeam Infrastructure Appliances), but not on the Linux-based backup server (Veeam Software Appliance). To update the backup server, use the [Veeam Updater](update_appliances.md).
 
+Page updated 2026-07-29
 
