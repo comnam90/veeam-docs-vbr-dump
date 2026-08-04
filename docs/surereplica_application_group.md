@@ -3,8 +3,8 @@ title: "Application Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_application_group.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Application Group
@@ -14,4 +14,5 @@ You can add to the same application groups both VMs from backups and VMs from re
 
 For more information, see [Application Group](application_group.md).
 
+Page updated 2026-08-03
 
