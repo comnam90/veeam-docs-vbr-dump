@@ -3,8 +3,8 @@ title: "Get-VBRDiscoveredApplication"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrdiscoveredapplication.html"
-last_updated: "7/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRDiscoveredApplication
@@ -52,6 +52,12 @@ This cmdlet provides parameter sets that allow you to:
 | --- |
 | Get-VBRDiscoveredApplication [-Name <String[]>] [-MSSQL] [-MSSQLEntityType <VBRDiscoveredMSSQLEntityType>]  [<CommonParameters>] |
 
+* Get discovered applications to be protected by InterSystems IRIS.
+
+|  |
+| --- |
+| Get-VBRDiscoveredApplication [-Name <String[]>] [-Iris] [-IrisEntityType <VBRDiscoveredIrisEntityType>]  [<CommonParameters>] |
+
 Detailed Description
 
 This cmdlet returns discovered Veeam Plug-In for Oracle RMAN, Veeam Plug-In for SAP HANA, Veeam Plug-In for SAP on Oracle or MongoDB instances. Use an appropriate parameter set for each Veeam Plug-In.
@@ -60,8 +66,9 @@ Veeam Backup & Replication regularly performs discovery operations for Veeam 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Name | Specifies a name of a computer. | String[] | False | Named | False |
 | OracleRMAN | Note: This option works for Veeam Plug-In for Oracle RMAN.  Specifies the discovered application. | SwitchParameter | False | Named | False |
 | OracleRMANEntityType | Note: This option works for Veeam Plug-In for Oracle RMAN.  Specifies the application type:   * RAC: Oracle Real Application Clusters. * Server: Servers.  * OracleHOME: Oracle database systems.  * Database: Databases.   The cmdlet will return discovered application of these types. | VBRDiscoveredOracleRMANEntityType | False | Named | False |
@@ -73,6 +80,8 @@ Parameters
 | MongoDBEntityType | Note: This option works for MongoDB.  Specifies the application type. | VBRDiscoveredMongoDBEntityType | False | Named | False |
 | MSSQL | Note: This option works for Veeam Plug-In for Microsoft SQL Server.  Specifies the discovered application. | SwitchParameter | False | Named | False |
 | MSSQLEntityType | Note: This option works for Veeam Plug-In for Microsoft SQL Server.  Specifies the application type:   * Server: Servers. * AlwaysOn: Always on applications. * Cluster: Clusters. * Instance: Instances.  * Database: Databases.   The cmdlet will return discovered application of these types. | VBRDiscoveredMSSQLEntityType | False | Named | False |
+| Iris | Note: This option works for InterSystems IRIS.  Specifies the discovered application. | SwitchParameter | False | Named | False |
+| IrisEntityType | Note: This option works for InterSystems IRIS.  Specifies the application type:   * IrisInstance: InterSystems IRIS instances.   The cmdlet will return discovered application of these types. | VBRDiscoveredIrisEntityType | False | Named | False |
 
 <CommonParameters>
 
@@ -101,4 +110,5 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Rescan-VBREntity](rescan-vbrentity.md)
 
+Page updated 2026-06-10
 
