@@ -3,8 +3,8 @@ title: "Step 1. Launch Export Backup Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/launching_new_export_wizard.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Export Backup Wizard
@@ -17,4 +17,5 @@ To launch the Export Backup wizard, do either of the following:
 
 [![New Export Wizard](images/launch_export_wizard.webp)](images/launch_export_wizard.webp "New Export Wizard")
 
+Page updated 2026-08-03
 
