@@ -3,8 +3,8 @@ title: "Remove-VBRUserRoleAssignment"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbruserroleassignment.html"
-last_updated: "1/29/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Remove-VBRUserRoleAssignment
@@ -27,17 +27,23 @@ Syntax
 
 |  |
 | --- |
-| Remove-VBRUserRoleAssignment -Assignment <VBRUserRoleAssignment>  [<CommonParameters>] |
+| Remove-VBRUserRoleAssignment -Assignment <VBRUserRoleAssignment> [<CommonParameters>] |
 
 Detailed Description
 
 This cmdlet removes a role from a user or a user group.
 
+|  |
+| --- |
+| Note |
+| You cannot remove the role of the last administrator. This is to prevent a situation where no administrator remains. |
+
+Parameters
+
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Assignment | Specifies a user or a user group from which you want to remove a role. | Accepts the VBRUserRoleAssignment object. To create this object, run the [Get-VBRUserRoleAssignment](get-vbruserroleassignment.md) cmdlet. | True | Named | True (ByValue, |
+| Assignment | Specifies a role assignment that you want to remove | Accepts the VBRUserRoleAssignment object. To get this object, run the [Get-VBRUserRoleAssignment](get-vbruserroleassignment.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
 
@@ -49,21 +55,27 @@ None.
 
 Examples
 
-Removing Role from User
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 1. Removing All Role Assignments from User
 
-This example shows how to remove a role that is assigned to the Tech\BackupAdmin user.
+|  |  |
+| --- | --- |
+| This example shows how to remove all roles that are assigned to the User\Administrator user if it has more than one role assigned.  |  | | --- | | Get-VBRUserRoleAssignment -Name "User\Administrator" | Remove-VBRUserRoleAssignment | |
 
-|  |
-| --- |
-| $role = Get-VBRUserRoleAssignment -Name Tech\BackupAdmin  Remove-VBRUserRoleAssignment -Assignment $role |
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Removing Custom Role from User
 
-Perform the following steps:
+|  |  |
+| --- | --- |
+| This example shows how to remove a custom role that is assigned to the User\Administrator user.  |  | | --- | | $role = Get-VBRUserRoleAssignment -Name "User\Administrator" -RoleEntity (Get-VBRRoleEntity -Name "r1")  Remove-VBRUserRoleAssignment -Assignment $role |  Perform the following steps:   1. Run the [Get-VBRUserRoleAssignment](get-vbruserroleassignment.md) cmdlet. Specify the Name and RoleEntity parameter values. Save the result to the $role variable. 2. Run the Remove-VBRUserRoleAssignment cmdlet. Set the $role variable as the Assignment parameter value. |
 
-1. Run the [Get-VBRUserRoleAssignment](get-vbruserroleassignment.md) cmdlet. Specify the Name parameter value. Save the result to the $role variable.
-2. Run the Remove-VBRUserRoleAssignment cmdlet. Set the $role variable as the Assignment parameter value.
+![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Removing Built-In Role from User
+
+|  |  |
+| --- | --- |
+| This example shows how to remove a built-in role that is assigned to the User\Administrator user.  |  | | --- | | $role = Get-VBRUserRoleAssignment -Name "User\Administrator" -Role BackupOperator  Remove-VBRUserRoleAssignment -Assignment $role |  Perform the following steps:   1. Run the [Get-VBRUserRoleAssignment](get-vbruserroleassignment.md) cmdlet. Specify the Name and Role parameter values. Save the result to the $role variable. 2. Run the Remove-VBRUserRoleAssignment cmdlet. Set the $role variable as the Assignment parameter value. |
 
 Related Commands
 
 [Get-VBRUserRoleAssignment](get-vbruserroleassignment.md)
 
+Page updated 2026-07-03
 
