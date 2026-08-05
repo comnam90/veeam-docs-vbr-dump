@@ -3,8 +3,8 @@ title: "SMTP Server with Basic Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_configuring_smtp_settings.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SMTP Server with Basic Authentication
@@ -39,4 +39,5 @@ By default, Veeam Explorer for Microsoft SharePoint establishes a connection to 
 
 ![SMTP Server with Basic Authentication](images/vesp_options_mail.webp "Configuring Mail Settings")
 
+Page updated 2026-03-23
 
