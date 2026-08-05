@@ -3,8 +3,8 @@ title: "Links"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/links.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Links
@@ -24,7 +24,7 @@ For example, if you send an XML request to get a representation for a specific b
 
 |  |
 | --- |
-| <Job xmlns="http://www.veeam.com/ent/v1.0" Type="Job" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?format=Entity" Name="Exchange Backup" UID="urn:veeam:Job:568c42ce-eb11-4140-92cf-39ab36712bf5"> |
+| <Job xmlns="http://www.veeam.com/ent/v1.0" Type="Job" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?format=Entity" Name="Exchange Backup" UID="urn:veeam:Job:568c42ce-eb11-4140-92cf-39ab36712bf5">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/21a631e0-af7f-46ba-afbd-273de2e6fd4a" Name="localhost" />     <Link Rel="Alternate" Type="JobReference" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5" Name="Exchange Backup" />     <Link Rel="Down" Type="BackupJobSessionReferenceList" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5/backupSessions" />     <Link Rel="Down" Type="ObjectInJobList" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5/includes" />     <Link Rel="Edit" Type="JobReference" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5" Name="Exchange Backup" />     <Link Rel="Create" Type="ObjectInJob" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5/includes" />     <Link Rel="Start" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=start" />     <Link Rel="Stop" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=stop" />     <Link Rel="Retry" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=retry" />     <Link Rel="Clone" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=clone" />     <Link Rel="ToggleScheduleEnabled" Href="https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=toggleScheduleEnabled" />   </Links>   ... </Job> |
 
 Using links from the representation of the job resource, you can get information about job sessions and the backup server on which the job was created, add objects to the job, edit the jobs settings, start, stop, retry and clone and disable/enable a job.
 
@@ -97,4 +97,5 @@ In This Section
 * [Attributes of a Link Element](attributes_of_a_link_element.md)
 * [Link Types and XML Schema Definition](link_types_and_xml_schema.md)
 
+Page updated 2026-07-29
 
