@@ -3,8 +3,8 @@ title: "Veeam Explorer for Oracle"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_oracle.html"
-last_updated: "9/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Explorer for Oracle
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets for Veeam Explorer for Oracle to perform the following operations:
 
+Veeam Explorer for Oracle
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VEORCommand](get-veorcommand.md) | Returns a set of cmdlets available for Veeam Explorer for Oracle. |
 | [Start-VEORRestoreSession](start-veorrestoresession.md) | Starts a restore session to explore backed-up Oracle databases and to perform operations with these databases. |
 | [Get-VEORRestoreSession](get-veorrestoresession.md) | Returns active restore sessions started to perform operations with backed-up Oracle databases. |
@@ -37,12 +38,13 @@ You can use the cmdlets for Veeam Explorer for Oracle to perform the following o
 | [Get-VEORExtendedLogging](get-veorextendedlogging.md) | Returns the state of the extended logging mode for Veeam Explorer for Oracle. |
 | [Enable-VEORExtendedLogging](enable-veorextendedlogging.md) | Enables the extended logging mode for Veeam Explorer for Oracle. |
 | [Disable-VEORExtendedLogging](disable-veorextendedlogging.md) | Disables the extended logging mode for Veeam Explorer for Oracle. |
-| [New-VEORLinuxCredential](new-veorlinuxcredential.md) | Creates Linux credential record to connect to a Linux machine. |
+| [New-VEORLinuxCredential](new-veorlinuxcredential.md) | Creates a Linux credential record to connect to a Linux machine. |
 | [Get-VEORRMANBackup](get-veorrmanbackup.md) | Returns backups created by Veeam Plug-in for Oracle RMAN. |
 | [Start-VEORRMANRestoreSession](start-veorrmanrestoresession.md) | Starts a restore session to explore Oracle databases backed up with Veeam Plug-in for Oracle RMAN. |
 | [Get-VEORRMANRestoreSession](get-veorrmanrestoresession.md) | Returns active restore sessions started to explore Oracle databases backed up with Veeam Plug-in for Oracle RMAN. |
 | [Stop-VEORRMANRestoreSession](stop-veorrmanrestoresession.md) | Stops an active restore session started to explore Oracle databases backed up with Veeam Plug-in for Oracle RMAN. |
-| [Get-VEORRMANDatabase](get-veorrmandatabase.md) | Returns Oracle databases backed-up with Veeam Plug-in for Oracle RMAN. |
+| [Get-VEORRMANDatabase](get-veorrmandatabase.md) | Returns Oracle databases backed up with Veeam Plug-in for Oracle RMAN. |
 | [Restore-VEORRMANDatabase](restore-veorrmandatabase.md) | Restores an Oracle database backed up with Veeam Plug-in for Oracle RMAN. |
 
+Page updated 2026-06-11
 
