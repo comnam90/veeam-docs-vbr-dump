@@ -3,8 +3,8 @@ title: "Launching Application and Exploring Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vex_launching.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Launching Application and Exploring Backups
@@ -47,4 +47,5 @@ In This Section
 * [Getting to Know User Interface](vex_know_ui.md)
 * [Browsing, Searching and Viewing Items](vex_browsing.md)
 
+Page updated 2026-07-10
 
