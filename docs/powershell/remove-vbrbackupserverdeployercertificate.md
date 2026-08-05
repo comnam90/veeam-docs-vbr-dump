@@ -3,8 +3,8 @@ title: "Remove-VBRBackupServerDeployerCertificate"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrbackupserverdeployercertificate.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Remove-VBRBackupServerDeployerCertificate
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Removes Veeam Deployer Service certificates from the Veeam Backup & Replication database.
+Removes all Veeam Deployer Service certificates from the Veeam Backup & Replication database.
 
 Applies to
 
@@ -26,7 +26,7 @@ Syntax
 
 Detailed Description
 
-Removes Veeam Deployer Service certificates from the Veeam Backup & Replication database.
+This cmdlet removes all existing Veeam Deployer Service certificates from the Veeam Backup & Replication database.
 
 <CommonParameters>
 
@@ -46,4 +46,5 @@ This command removes Veeam Deployer Service certificates from the Veeam Backup�
 | --- |
 | Remove-VBRBackupServerDeployerCertificate |
 
+Page updated 2026-06-04
 
