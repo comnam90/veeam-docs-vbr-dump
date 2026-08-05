@@ -3,8 +3,8 @@ title: "/nas"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/nas.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /nas
@@ -38,6 +38,7 @@ The /nas resource has a resource representation of the following type:
 
 |  |
 | --- |
-| <NASService xmlns="http://www.veeam.com/ent/v1.0"> |
+| <NASService xmlns="http://www.veeam.com/ent/v1.0">   <Links>     <Link Rel="Down" Type="JobReferenceList" Href="https://srv12.tech.local:9398/api/nas/jobs" />     <Link Rel="Down" Type="FileServerReferenceList" Href="https://srv12.tech.local:9398/api/nas/fileServers" />     <Link Rel="Down" Type="BackupJobSessionReferenceList" Href="https://srv12.tech.local:9398/api/nas/backupSessions" />     <Link Rel="Down" Type="JobList" Href="https://srv12.tech.local:9398/api/nas/jobs?format=Entity" />     <Link Rel="Down" Type="FileServerList" Href="https://srv12.tech.local:9398/api/nas/fileServers?format=Entity" />     <Link Rel="Down" Type="BackupJobSessionList" Href="https://srv12.tech.local:9398/api/nas/backupSessions?format=Entity" />   </Links> </NASService> |
 
+Page updated 2026-07-29
 
