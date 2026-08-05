@@ -3,14 +3,14 @@ title: "Configuring Advanced Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore_options_advanced.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Advanced Options
 
 
-In the Advanced options section, choose whether you want to restore not only the processed items themselves but also their relationships. Additionally, you can instruct Veeam Backup for Microsoft Entra ID to use data temporarily stored in the  Entra ID Recycle Bin to perform the restore operation.
+In the Advanced options section, choose whether you want to restore not only the processed items themselves but also their relationships. Additionally, you can instruct Veeam Backup for Microsoft Entra ID to use data temporarily stored in the Entra ID Recycle Bin to perform the restore operation, or add certificates when restoring applications.
 
 Restoring Item Relationships
 
@@ -39,6 +39,7 @@ When restoring an item that still exists in the production environment, Veeam Ba
 
 To learn how Microsoft Entra ID retains data in the Recycle Bin, see [Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-recycle-bin).
 
-[![Configure Restore Options](images/entra_id_restore_user_options.webp)](images/entra_id_restore_user_options.webp "Configure Restore Options")
+[![Configure Restore Options](images/entra_id_restore_mode.webp)](images/entra_id_restore_mode.webp "Configure Restore Options")
 
+Page updated 2026-06-30
 
