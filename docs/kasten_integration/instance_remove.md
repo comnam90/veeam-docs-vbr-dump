@@ -3,8 +3,8 @@ title: "Removing Instance"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/instance_remove.html"
-last_updated: "8/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Instance
@@ -23,9 +23,10 @@ To remove an instance, do the following:
 
 1. Open the Backup Infrastructure view.
 2. In the inventory pane, select Managed Servers.
-3. In the working area, select the appliance that you want to remove and click Remove Instance on the ribbon. Alternatively, right-click the instance and select Remove.
+3. In the working area, select the instance that you want to remove and click Remove Instance on the ribbon. Alternatively, right-click the instance and select Remove.
 4. In the Veeam Backup & Replication window, click Yes.
 
 [![Remove Instance](images/remove_instance.webp)](images/remove_instance.webp "Remove Instance")
 
+Page updated 2026-08-04
 
