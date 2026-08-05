@@ -3,8 +3,8 @@ title: "Set-VBRNDMPServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrndmpserver.html"
-last_updated: "4/17/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRNDMPServer
@@ -30,6 +30,8 @@ Detailed Description
 
 This cmdlet modifies settings of a selected NDMP server.
 
+To modify a NetApp NDMP server, use the [Set-VBRNetAppNDMPServer](set-vbrnetappndmpserver.md) cmdlet.
+
 |  |
 | --- |
 | Note |
@@ -37,8 +39,9 @@ This cmdlet modifies settings of a selected NDMP server.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Server | Specifies the NDMP server that you want to modify. | Accepts the VBRNDMPServer object. To get this object, run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. | True | Named | False |
 | Name | Specifies the DNS or IP address of the NDMP server that you want to modify. | String | False | Named | False |
 | Port | Specifies the port. Veeam Backup & Replication will use that port to connect to the NDMP server. | Int | False | Named | False |
@@ -52,7 +55,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-[VBRNDMPServer](vbrndmpserver.md)
+The cmdlet returns the VBRNDMPServer object that contains information about the modified NDMP server.
 
 Examples
 
@@ -85,4 +88,5 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-VBRServer](get-vbrserver.md)
 
+Page updated 2026-06-04
 
