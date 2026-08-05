@@ -3,8 +3,8 @@ title: "Guest Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/guest_processing.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Guest Processing
@@ -43,7 +43,7 @@ Requirements and Limitations
 
 Consider the following requirements and limitations for guest processing:
 
-* Check that accounts that you plan to use for guest processing have permissions described in section [Permissions](required_permissions.md#rptcb).
+* Check that accounts that you plan to use for guest processing have permissions described in section [Permissions](permissions_guest_processing.md#rptcb).
 
 * Veeam Backup & Replication excludes from application-aware processing Microsoft SQL databases that are mounted to the Microsoft SQL Server using a remote UNC path. If at least one file of the database is located on a network shared folder, this database will be backed up in the crash-consistent state. Other databases on this server will be backed up in the transactionally consistent state.
 * Veeam Backup & Replication excludes the master database from guest processing and does not process transaction logs for it.
@@ -64,10 +64,11 @@ If you want to exclude other databases from the transaction log processing workf
 
 Related Topics
 
-* [Permissions for Guest Processing](required_permissions.md#rptcb)
+* [Permissions for Guest Processing](permissions_guest_processing.md#rptcb)
 * [Guest Interaction Proxies](guest_interaction_proxy.md)
 * [Persistent VSS Snapshots](persistent_snapshots.md)
 * [Creating Backup Jobs](backup_job.md)
 * [Creating Replication Jobs](replica_job.md)
 
+Page updated 2026-08-04
 
