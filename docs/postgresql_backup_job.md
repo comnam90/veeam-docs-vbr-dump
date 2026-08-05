@@ -3,8 +3,8 @@ title: "How PostgreSQL WAL Files Backup Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_backup_job.html"
-last_updated: "3/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How PostgreSQL WAL Files Backup Works
@@ -34,9 +34,15 @@ The WAL files backup for PostgreSQL VMs is performed in the following way:
 
 1. Veeam Backup & Replication deletes WALs from the temporary directory on the VM guest file system.
 
+For PostgreSQL clusters managed by Patroni, Veeam Backup & Replication backs up WAL files in the following way:
+
+* At the beginning of every log backup interval, Veeam Backup & Replication detects the leader node of the cluster and backs up WAL files from this node. WAL files are not backed up from replica nodes.
+* If the leader node has changed since the previous log backup interval, Veeam Backup & Replication backs up WAL files from both the previous and the current leader nodes. This way, no WAL files are lost after a failover.
+
 |  |
 | --- |
 | Important |
 | Consider the following:   * Veeam Backup & Replication removes only backed-up WALs from a temporary folder. The WALs that were not backed up during the log backup interval remain in the temporary folder. Veeam Backup & Replication will process these logs during the next log backup interval. * If a new session of the WALs backup starts and the parent backup job has not created a new restore point yet, the WALs backup job will remain in the idle state, waiting for a new restore point to be created. |
 
+Page updated 2026-07-31
 
