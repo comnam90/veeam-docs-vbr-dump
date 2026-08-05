@@ -3,8 +3,8 @@ title: "New-VEPSQLLinuxCredential"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/new-vepsqllinuxcredential.html"
-last_updated: "3/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VEPSQLLinuxCredential
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 Short Description
 
-Creates Linux credential record to connect to a target PostgreSQL server.
+Creates a Linux credential record to connect to a target PostgreSQL server.
 
 Applies to
 
@@ -51,7 +51,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -75,4 +75,5 @@ Related Commands
 
 [Read-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.5)
 
+Page updated 2026-06-11
 
