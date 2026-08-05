@@ -3,8 +3,8 @@ title: "New and Updated Cmdlets"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/new_updated_cmdlets_13.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New and Updated Cmdlets
@@ -34,7 +34,7 @@ In Veeam Backup & Replication 13, new cmdlets were added to the Veeam Explorer f
 
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Start-VEMDBDataRestore](start-vemdbdatarestore.md) | Restores MongoDB collections or the entire MongoDB instance. Use this cmdlet instead of the deprecated Start-VEMDBRestoreJob cmdlet. | | [Get-VEMDBDataRestore](get-vemdbdatarestore.md) | Returns active MongoDB restore jobs. Use this cmdlet instead of the deprecated Get-VEMDBRestoreJob cmdlet. | | [Stop-VEMDBDataRestore](stop-vemdbdatarestore.md) | Stops the restore process for backed-up MongoDB data. Use this cmdlet instead of the deprecated Stop-VEMDBRestoreJob cmdlet. | | [Get-VEMDBPublishedCollection](get-vemdbpublishedcollection.md) | Returns published MongoDB collections. | | [Get-VEMDBPublishJob](get-vemdbpublishjob.md) | Returns active publishing sessions for backed-up MongoDB instances. | | [Get-VEMDBRestoreInterval](get-vemdbrestoreinterval.md) | Returns details on the available restore period for a backed-up MongoDB instance. | | [Start-VEMDBPublishJob](start-vemdbpublishjob.md) | Publishes a backed-up MongoDB instance. | | [Stop-VEMDBPublishJob](stop-vemdbpublishjob.md) | Unpublishes a MongoDB instance from the target server. | |
+| New Cmdlets  | Cmdlet | Operation | | [Start-VEMDBDataRestore](start-vemdbdatarestore.md) | Restores MongoDB collections or the entire MongoDB instance. Use this cmdlet instead of the deprecated Start-VEMDBRestoreJob cmdlet. | | [Get-VEMDBDataRestore](get-vemdbdatarestore.md) | Returns active MongoDB restore jobs. Use this cmdlet instead of the deprecated Get-VEMDBRestoreJob cmdlet. | | [Stop-VEMDBDataRestore](stop-vemdbdatarestore.md) | Stops the restore process for backed-up MongoDB data. Use this cmdlet instead of the deprecated Stop-VEMDBRestoreJob cmdlet. | | [Get-VEMDBPublishedCollection](get-vemdbpublishedcollection.md) | Returns published MongoDB collections. | | [Get-VEMDBPublishJob](get-vemdbpublishjob.md) | Returns active publishing sessions for backed-up MongoDB instances. | | [Get-VEMDBRestoreInterval](get-vemdbrestoreinterval.md) | Returns details on the available restore period for a backed-up MongoDB instance. | | [Start-VEMDBPublishJob](start-vemdbpublishjob.md) | Publishes a backed-up MongoDB instance. | | [Stop-VEMDBPublishJob](stop-vemdbpublishjob.md) | Unpublishes a MongoDB instance from the target server. | |
 
 In this version, additional parameters were added to the [Start-VEMDBDataRestore](start-vemdbdatarestore.md) cmdlet that allow you to restore instances to a point-in-time state and authenticate to MongoDB deployments using X.509 authentication.
 
@@ -55,6 +55,7 @@ In this version, new cmdlets were added to the Veeam Explorer for Microsoft Exch
 
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | Operation | | --- | --- | | [Get-VEXUseSecureLdap](get-vexusesecureldap.md) | Returns the state of the secure LDAP mode for Veeam Explorer for Microsoft Exchange. | | [Enable-VEXUseSecureLdap](enable-vexusesecureldap.md) | Enables the secure LDAP mode for Veeam Explorer for Microsoft Exchange. | | [Disable-VEXUseSecureLdap](disable-vexusesecureldap.md) | Disables the secure LDAP mode for Veeam Explorer for Microsoft Exchange. | |
+| New Cmdlets  | Cmdlet | Operation | | [Get-VEXUseSecureLdap](get-vexusesecureldap.md) | Returns the state of the secure LDAP mode for Veeam Explorer for Microsoft Exchange. | | [Enable-VEXUseSecureLdap](enable-vexusesecureldap.md) | Enables the secure LDAP mode for Veeam Explorer for Microsoft Exchange. | | [Disable-VEXUseSecureLdap](disable-vexusesecureldap.md) | Disables the secure LDAP mode for Veeam Explorer for Microsoft Exchange. | |
 
+Page updated 2026-01-30
 
