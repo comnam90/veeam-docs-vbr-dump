@@ -3,8 +3,8 @@ title: "Specifying Destination for Multiple VMs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_destination_mltpl_vm.html"
-last_updated: "3/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying Destination for Multiple VMs
@@ -22,13 +22,16 @@ Selecting Target Host
 
 At the Host step of the wizard, specify a target host and resource pool for recovered VMs:
 
-1. In the list, select the necessary VMs and click the Host button.
-2. From the virtual environment, select a standalone or clustered host where the selected VMs will be registered.
+1. In the list, select the necessary VMs and click the Host or Cluster button.
+2. From the virtual environment, select a standalone host, clustered host or cluster where the selected VMs will be registered.
 
 [For VMware vSphere VM recovery from storage snapshots] Veeam Backup & Replication will create a clone/virtual copy of the storage snapshot, mount it to the selected ESXi host and start the VM on this ESXi host.
 
 1. Select one or multiple VMs and click the Pool button.
 2. In the list, select a resource pool where the selected VMs will be stored.
+3. Select the Mount to all hosts in a cluster check box to mount the vPower NFS datastore to all ESXi hosts in the cluster. Veeam Backup & Replication uses a temporary vPower NFS datastore to run the VMs directly from backups.
+
+Use Mount to all hosts in a cluster to provide datastore redundancy and to avoid the vCenter Server alarm reporting that the datastore is connected to a single host.
 
 ![Specifying Destination for Multiple VMs](images/instant_recovery_host.webp)
 
@@ -68,10 +71,11 @@ To change networks to which the recovered VMs will be connected:
 
 If a workload is connected to multiple networks, you can select a network to map and click Network.
 
-1. The Select Network window displays all networks to which the target host or cluster is connected. In the list, select a network to which the recovered VM will be connected after recover.
+1. The Select Network window displays all networks to which the target host or cluster is connected. In the list, select a network to which the recovered VM will be connected after recovery.
 
 If you do not want to connect a recovered VM to any virtual network, select the original workload and click Disconnected.
 
 ![Specifying Destination for Multiple VMs](images/hv_instant_recovery_to_vmware_network.webp)
 
+Page updated 2026-06-30
 
