@@ -3,8 +3,8 @@ title: "Get-VBRTapeVault"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapevault.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRTapeVault
@@ -48,10 +48,11 @@ You can get the list of all tape vaults or search for instances directly by name
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specifies the array of vault names. The cmdlet will return vaults with these names. | String | False | Named | True (ByValue, ByProperty Name) |
-| Id | Specifies the array of vault IDs. The cmdlet will return vaults with these IDs. | Accepts GUID or string. | False | Named | True (ByValue, ByProperty Name) |
+| Id | Specifies the array of vault IDs. The cmdlet will return vaults with these IDs.  Accepts Guid[] or String[]. | Guid[] | False | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
 
@@ -75,4 +76,5 @@ Examples
 | --- | --- |
 | This command looks for a vault named Sydney Remote Storage.  |  | | --- | | Get-VBRTapeVault -Name "Sydney Remote Storage" | |
 
+Page updated 2026-06-24
 
