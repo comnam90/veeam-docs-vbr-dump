@@ -3,8 +3,8 @@ title: "File Backup to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_to_tape_jobs.html"
-last_updated: "7/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # File Backup to Tape
@@ -26,7 +26,7 @@ To back up Veeam backup files, you can use backup to tape jobs that are speciall
 | Note |
 | Backups produced by [Veeam Plug-ins for Enterprise Applications](https://helpcenter.veeam.com/docs/backup/plugins/overview.html) cannot be a source for file to tape jobs. |
 
-When planning file to tape jobs, consider that the job performance depends more on the number of files to back up then on the amount of data. For example, writing a large number of small files with overall size of 10GB with one job will take more time than writing one 10GB file. If your job contains an extra-large number of files (like millions of files) with one job, the job performance will be affected significantly. To improve performance, consider creating several file to tape jobs.
+When planning file to tape jobs, consider that the job performance depends more on the number of files to back up then on the amount of data. For example, writing a large number of small files with overall size of 10GB with one job will take more time than writing one 10GB file. If your job contains an extra-large number of files (for example, millions of files) with one job, the job performance will be affected significantly. To improve performance, consider creating several file to tape jobs.
 
 Related Topics
 
@@ -34,4 +34,5 @@ Related Topics
 * [Before You Begin](file_to_tape_before_you_begin.md)
 * [Creating File to Tape Jobs](creating_file_to_tape_jobs.md)
 
+Page updated 2026-07-20
 
