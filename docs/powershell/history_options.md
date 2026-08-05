@@ -3,8 +3,8 @@ title: "Specifying Session History Settings"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/history_options.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying Session History Settings
@@ -18,4 +18,5 @@ Specifying Session History Settings
 | [Get-VBRHistoryOptions](get-vbrhistoryoptions.md) | Returns job sessions history settings. |
 | [Set-VBRHistoryOptions](set-vbrhistoryoptions.md) | Modifies job sessions history settings. |
 
+Page updated 2026-08-04
 
