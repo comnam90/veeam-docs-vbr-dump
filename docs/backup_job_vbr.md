@@ -1,13 +1,13 @@
 ---
-title: "Managing Backup Jobs in Veeam Backup & Replication"
+title: "Backup Job in Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vbr.html"
-last_updated: "2/15/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Managing Backup Jobs in Veeam Backup & Replication
+# Backup Job in Veeam Backup & Replication
 
 
 |  |
@@ -26,11 +26,37 @@ Consider that Veeam Backup & Replication generates the backup job name based on 
 | Note |
 | Due to specifics of the SAP on Oracle backup process, the progress bar of a running SAP on Oracle backup job is not available. |
 
-You can perform the following operations from the Veeam Backup & Replication console:
+To view details of a backup job process, do the following:
 
-* [View backup job statistics](plugins_backup_job_vbr_statistics.md)
-* [Generate a backup job report](plugins_backup_job_vbr_reports.md)
-* [Disable a backup job](plugins_backup_job_vbr_disable.md)
-* [Delete a backup job](plugins_backup_job_vbr_delete.md)
+1. Open the Veeam Backup & Replication console.
+2. In the Home view, expand the Jobs node and click Backup.
+3. In the list of jobs, select the BR\*Tools backup job to see details of the current backup process or the last backup job session.
 
+[![View Details](images/plugins_sap_orcl_job.webp)](images/plugins_sap_orcl_job.webp "View Details")
+
+Generating Backup Job Reports
+
+Veeam Backup & Replication can generate reports with details about an BR\*Tools backup job session performance. The session report contains the following session statistics: session duration details, details of the session performance, amount of read, processed and transferred data, backup size, compression ratio, list of warnings and errors (if any).
+
+1. Open the Home view.
+2. In the inventory pane, select Jobs.
+3. In the working area, select the necessary job and click Report on the ribbon. You can also right-click the job and select Report.
+
+[![View Report of Backup Job](images/plugins_sap_orcl_job_report.webp)](images/plugins_sap_orcl_job_report.webp "View Report of Backup Job")
+
+Disabling Backup Job
+
+You can disable BR\*Tools backup jobs in the Veeam Backup & Replication console. If you disable the job, you will not be able to run BR\*Tools backup commands on the SAP on Oracle server.
+
+To disable a backup job:
+
+1. Open the Home view.
+
+1. In the inventory pane, select Jobs.
+
+1. In the working area, select the necessary job and click Disable on the ribbon. You can also right-click the job and select Disable.
+
+[![Disable of Backup Job](images/plugins_sap_orcl_job_disable.webp)](images/plugins_sap_orcl_job_disable.webp "Disable of Backup Job")
+
+Page updated 2026-07-24
 
