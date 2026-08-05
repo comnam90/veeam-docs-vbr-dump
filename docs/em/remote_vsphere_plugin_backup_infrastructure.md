@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/remote_vsphere_plugin_backup_infrastructure.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Examining Backup Infrastructure
@@ -32,5 +32,5 @@ You can view the following statistics:
 
 [![Examining Backup Infrastructure](images/remote_plugin_dashboard.webp)](images/remote_plugin_dashboard.webp "Examining Backup Infrastructure")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
