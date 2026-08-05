@@ -3,8 +3,8 @@ title: "Supported Plug-In Versions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_vp_versions.html"
-last_updated: "5/27/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Supported Plug-In Versions
@@ -24,11 +24,14 @@ Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depen
 
 Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
 
-Veeam Backup & Replication version 13 (build 13.0.3.29-1-1) comes with the following Veeam Plug-Ins stored in the ISO file:
+To restore data from a backup, the version of Veeam Plug-In must be the same or later than the version that created the backup. Restore with an earlier version of Veeam Plug-In from a backup created with a later version is not supported and may cause the restore to fail. This limitation applies to build numbers, not only major versions. For example, you cannot use Veeam Plug-In build 13.0.1.1071 to restore data from a backup created with build 13.0.1.2067.
+
+Veeam Backup & Replication version 13 (build 13.1.0.411) comes with the following Veeam Plug-Ins stored in the ISO file:
 
 * Veeam Plug-In for SAP HANA
 * Veeam Plug-In for Oracle RMAN
 * Veeam Plug-In for SAP on Oracle
 * Veeam Plug-In for Microsoft SQL Server
 
+Page updated 2026-07-28
 
