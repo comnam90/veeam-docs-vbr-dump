@@ -3,8 +3,8 @@ title: "Save-VESPItem"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/save-vespitem.html"
-last_updated: "3/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Save-VESPItem
@@ -56,11 +56,11 @@ Parameters
 | AsZip | Defines that the cmdlet will save the specified item as a ZIP archive.  Default: False | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will create a folder in the specified directory.  Default: False | SwitchParameter | False | Named | False |
 | Document | Specifies an array of SharePoint documents that you want to save. | Accepts the [VESPDocument](vespdocument.md)[] object. To get this object, run the [Get-VESPDocument](get-vespdocument.md) cmdlet. | True | 0 | True (ByValue) |
-| ItemAttachment | Specifies an array of SharePoint item attachments that you want to save. | Accepts the [VESPItemAttachment](vespitemattachment.md)[]object. To get this object, run the [Get-VESPItemAttachment](get-vespitemattachment.md) cmdlet. | True | 0 | True (ByValue) |
+| ItemAttachment | Specifies an array of SharePoint item attachments that you want to save. | Accepts the [VESPItemAttachment](vespitemattachment.md)[] object. To get this object, run the [Get-VESPItemAttachment](get-vespitemattachment.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -121,4 +121,5 @@ Related Commands
 * [Get-VESPItemAttachment](get-vespitemattachment.md)
 * [Get-VESPDatabase](get-vespdatabase.md)
 
+Page updated 2026-05-15
 
