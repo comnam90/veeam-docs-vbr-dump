@@ -3,8 +3,8 @@ title: "Connect-VBRServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect-vbrserver.html"
-last_updated: "5/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Connect-VBRServer
@@ -36,16 +36,24 @@ This cmdlet provides parameter sets that allow you to:
 | --- |
 | Connect-VBRServer [-Server <String>] [-Port <Int32>] -Credential <PSCredential> [-Timeout <Int32>] [-ForceAcceptTlsCertificate] [<CommonParameters>] |
 
+* Connect to the Veeam Backup & Replication server that the console is currently connected to.
+
+|  |
+| --- |
+| Connect-VBRServer [-Server <String>] [-Port <Int32>] [-Timeout <Int32>] [-ForceAcceptTlsCertificate]  [<CommonParameters>] |
+
 Detailed Description
 
 This cmdlet creates connection with a local or remote Veeam backup server. The connection starts a Veeam PowerShell session during which you can perform all operations available with Veeam PowerShell.
 
-If you do not specify the server, you will connect to the local Veeam backup server.
+If you do not specify the server, the cmdlet connects to the local Veeam backup server.
+
+If you open PowerShell from the Veeam Backup & Replication console, the cmdlet is called automatically and connects to the server to which the console is currently connected.
 
 |  |
 | --- |
-| Important |
-| Consider the following:   * Connecting to a Microsoft Windows–based backup server from a remote Linux machine using Veeam Backup PowerShell is not supported. Veeam Backup PowerShell on Linux does not include an auto-update mechanism, so any version mismatch between the client and server will cause the connection to fail. * To connect from a Microsoft Windows–based backup server to Veeam Software Appliance, you must first connect to the backup server using the Veeam Backup & Replication console. This triggers the auto-update mechanism, which synchronizes the component versions on both the console and PowerShell clients. * Only local and domain user accounts can be used for authentication. User accounts with SAML authentication are not supported. |
+| Note |
+| Only local and domain user accounts can be used for authentication. User accounts with SAML authentication are not supported. |
 
 Within one PowerShell session, you can connect to one Veeam server. To connect to another Veeam server, you need to close the current session.
 
@@ -58,7 +66,7 @@ Parameters
 Parameters
 
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| Server | Specifies the Veeam server to which you want to connect.  Default: localhost. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
+| Server | Specifies the Veeam server to which you want to connect.  Default: localhost. If PowerShell is launched from the Veeam Backup & Replication console, the server is inherited from the console session. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
 | Port | Specifies the port for connection.  Default: 443. | Int | False | Named | False |
 | Timeout | Specifies timeout in seconds for waiting for a blocked session.  Default: 30. | Int32 | False | Named | False |
 | ForceAcceptTlsCertificate | Defines that the cmdlet will accept the backup server TLS certificate. | SwitchParameter | False | Named | False |
@@ -101,4 +109,5 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.1)
 
+Page updated 2026-06-10
 
