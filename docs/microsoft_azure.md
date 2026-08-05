@@ -3,37 +3,38 @@ title: "Microsoft Azure"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/microsoft_azure.html"
-last_updated: "5/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Microsoft Azure
 
 
-Veeam Backup & Replication with Microsoft Azure Plug-In for Veeam Backup & Replication allows you to add Microsoft Azure backup appliances to Veeam Backup & Replication and manage data protection and recovery operations for all these appliances from a single Veeam Backup & Replication console. You can use Veeam Backup & Replication with the installed plug-in to perform the following operations:
+Veeam Backup & Replication offers various data protection and disaster recovery features for Microsoft Azure environments: Azure VMs, Azure SQL databases, Azure Cosmos DB accounts and Azure Files. Veeam Backup & Replication also allows you to back up and restore Azure Virtual Network (VNet) configurations.
 
-* Data protection
+Specifically, you can perform the following data protection and disaster recovery operations:
 
-* Create image-level backups and cloud-native snapshots of Azure VMs.
-* Create backups of Azure SQL databases.
-* Create backups of Cosmos DB accounts.
-* Create cloud-native snapshots of Azure Files.
-* Create backups of virtual network configurations.
-* Create backups of the Veeam Backup for Microsoft Azure configuration database.
+* Create cloud-native snapshots of Azure VMs and Azure file shares.
+* Create image-level backups of Azure VMs and keep them in Azure Storage for high availability, cost-effective and long-term storage.
+* Create backups of Azure SQL databases and keep them in Azure Storage for high availability, cost-effective and long-term storage.
 
-* Data recovery
-
-* Restore entire Azure VMs, individual virtual disks, and guest OS files and folders.
+* Restore entire Azure VMs, individual virtual disks, as well as guest OS files and folders.
 * Restore Azure SQL databases.
+
+* Restore individual files of Azure VMs.
+* Restore individual files of Azure file shares.
+
+For backup appliances managed by Veeam Backup & Replication, you can perform the following operations:
+
+* Create backups of Cosmos DB accounts and keep them in Azure Storage for high availability, cost-effective and long-term storage.
+* Create backups of VNet configurations.
+
 * Restore Cosmos DB accounts.
-* Restore Azure Files.
-* Restore entire virtual network configurations of Azure subscriptions.
-* Restore specific items of virtual network configurations of Azure subscriptions.
-* Restore individual files of Azure VMs and Azure Files.
+* Restore entire VNet configurations of Azure subscriptions, as well as specific items of VNet configurations of Azure subscriptions.
+
 * Restore entire Azure VMs to AWS, Google Cloud and Nutanix AHV.
+
 * Perform Instant Recovery of Azure VMs to VMware vSphere and Hyper-V environments, and to Nutanix AHV clusters.
-* Restore the Veeam Backup for Microsoft Azure configuration database to the same or another backup appliance.
 
-For more information, see the [Veeam Backup for Microsoft Azure User Guide](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1).
-
+Page updated 2026-06-26
 
