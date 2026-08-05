@@ -3,8 +3,8 @@ title: "Veeam Plug-In for IBM Db2"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Plug-In for IBM Db2
@@ -17,7 +17,7 @@ Database administrators can use Veeam Plug-In for IBM Db2 to create native appli
 |  |
 | --- |
 | Tip |
-| If you want to protect the server itself, you can use the image-level backup functionality of the following products:   * [Veeam Backup & Replication](workloads.md) * [Veeam Agent for Linux](https://helpcenter.veeam.com/docs/agentforlinux/userguide/overview.html?ver=13) * [Veeam Agent for IBM AIX](https://helpcenter.veeam.com/docs/agentforaix/userguide/about.html?ver=13) |
+| If you want to protect the server itself, you can use the image-level backup functionality of the following products:   * [Veeam Backup & Replication](workloads.md) * [Veeam Agent for Microsoft Windows](https://helpcenter.veeam.com/docs/agentforwindows/userguide/overview.html?ver=13) * [Veeam Agent for Linux](https://helpcenter.veeam.com/docs/agentforlinux/userguide/overview.html?ver=13) * [Veeam Agent for IBM AIX](https://helpcenter.veeam.com/docs/agentforaix/userguide/about.html?ver=13) |
 
 In This Section
 
@@ -31,4 +31,5 @@ In This Section
 * [Backup Copy for IBM DB2 Backups](db2_backup_copy.md)
 * [Logs and Support](db2_veeam_logs.md)
 
+Page updated 2026-07-08
 
