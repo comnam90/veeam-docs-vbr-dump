@@ -3,23 +3,23 @@ title: "Deleting Backups"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/deleting_backups.html"
-last_updated: "8/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deleting Backups
 
 
-Veeam Plug-In for Kasten allows you to permanently delete backups exported by Veeam Kasten policies.
+Veeam Plug-in for Kasten allows you to permanently delete backups exported by Veeam Kasten policies.
 
-If you want to remove records about backups from both Veeam Backup & Replication infrastructure and configuration database, you can use Delete from disk operation. When you delete backup files from a disk, Veeam Backup & Replication deletes the whole chain from the Veeam backup repository. Thus, on the next run of the Veeam Kasten policy, Veeam Plug-In for Kasten will create full backups for applications included and added to the job.
+If you want to remove records about backups from both Veeam Backup & Replication infrastructure and configuration database, you can use Delete from disk operation. When you delete backup files from a disk, Veeam Backup & Replication deletes the whole chain from the Veeam backup repository. Thus, on the next run of the Veeam Kasten policy, Veeam Plug-in for Kasten will create full backups for applications included and added to the job.
 
 |  |
 | --- |
 | Important |
 | Do not delete backup files from the Veeam backup repository manually. If you delete backup files manually, subsequent backup or replication job sessions will fail. |
 
-This option allows you to delete the following type of data:
+This option allows you to delete the following types of data:
 
 * Backup files from the Veeam backup repository
 * Specific applications from backups
@@ -35,4 +35,5 @@ To delete backup files or applications from the Veeam backup repository, do the 
 
 [![Delete from Disk](images/delete_from_disk.webp)](images/delete_from_disk.webp "Delete from Disk")
 
+Page updated 2026-08-04
 
