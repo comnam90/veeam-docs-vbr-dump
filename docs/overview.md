@@ -3,8 +3,8 @@ title: "About Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/overview.html"
-last_updated: "6/5/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # About Veeam Backup & Replication
@@ -46,6 +46,8 @@ With Veeam Backup & Replication, you can back up and restore the following objec
 * [Proxmox VE VMs](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3)
 * [Scale Computing HyperCore VMs](https://helpcenter.veeam.com/docs/vpsch/userguide/overview.html?ver=2)
 * [HPE Morpheus VM Essentials VMs](hpe_morpheus_vme.md)
+* [Xen VMs](xen.md)
+* [Sangfor aSV VMs](sangfor.md)
 
 * Cloud workloads:
 
@@ -116,4 +118,5 @@ If you are a service provider, you can use [Veeam Service Provider Console](http
 
 You can also use Veeam Backup & Replication to offer cloud repository as a service and disaster recovery as a service. For details, see [Veeam Cloud Connect](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html?ver=13).
 
+Page updated 2026-07-15
 
