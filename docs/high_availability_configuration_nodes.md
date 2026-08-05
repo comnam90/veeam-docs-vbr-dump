@@ -1,26 +1,22 @@
 ---
-title: "Step 3. Specify Cluster Nodes Settings"
+title: "Step 4. Specify Cluster Nodes Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_configuration_nodes.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 3. Specify Cluster Nodes Settings
+# Step 4. Specify Cluster Nodes Settings
 
 
-At the Cluster Nodes step of the wizard, you must specify details for primary and secondary nodes.
+At the Cluster Nodes step of the wizard, specify the primary and secondary node settings for the HA cluster. The available settings depend on the cluster mode you selected at the [Step 2](high_availability_mode.md) of the wizard:
 
-1. In the Primary node section, from the IP address drop-down menu, select the IP address of the primary node.
-2. In the Secondary node section, in the IP address field, specify the IP address of the secondary node.
-3. From the Credentials drop-down list, select credentials for the administrator account that you use to access the secondary node. If you have not set up credentials beforehand, click the Manage accounts link or click Add on the right to add the credentials. For more information, see [Credentials Manager](credentials_manager.md). Veeam Backup & Replication will use the provided credentials to access the secondary backup server.
+* For a standard HA cluster, see [📄 Specify Standard Cluster Nodes Settings](standard_cluster_nodes.md).
+* For a cross-subnet HA cluster, specify the settings for both nodes in the following order:
 
-|  |
-| --- |
-| Note |
-| The local Veeam Software Appliance users do not sync between the primary and the secondary nodes. If you create a local user on the primary node, you must create this user on the secondary node. If you do not do this, you will not be able to log in to the secondary node after switchover using the local user credentials. |
+* [📄 Specify Primary Node Settings](cross_subnet_cluster_primary_node.md).
+* [📄 Specify Secondary Node Settings](cross_subnet_cluster_secondary_node.md).
 
-![Step 3. Specify Cluster Nodes Settings](images/high_availability_cluster_nodes.webp)
-
+Page updated 2026-07-10
 
