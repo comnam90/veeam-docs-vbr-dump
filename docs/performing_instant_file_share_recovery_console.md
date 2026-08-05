@@ -1,0 +1,23 @@
+---
+title: "Performing Instant File Share Recovery Using Console"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_instant_file_share_recovery_console.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Performing Instant File Share Recovery Using Console
+
+
+Before you perform instant file share recovery, [check prerequisites](instant_nas_recovery_byb.md). Then use the Instant File Share Recovery wizard.
+
+1. [Launch the Instant File Share Recovery wizard](instant_nas_recovery_launch.md).
+2. [Select a file share to restore](instant_nas_recovery_file_shares.md).
+3. [Specify mount server settings](instant_nas_recovery_mount_servers.md).
+4. [Specify file share access permissions](instant_nas_recovery_access_permissions.md).
+5. [Specify a reason for instant recovery](instant_nas_recovery_reason.md).
+6. [Finish working with the wizard](instant_nas_recovery_summary.md).
+
+Page updated 2026-07-23
+
