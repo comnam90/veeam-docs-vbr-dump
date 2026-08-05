@@ -3,8 +3,8 @@ title: "System Requirements for Linux Computers with Nosnap Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_system_requirements_linux_nosnap.html"
-last_updated: "6/1/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # System Requirements for Linux Computers with Nosnap Veeam Agent
@@ -16,8 +16,8 @@ System Requirements for Computers with nosnap Veeam Agent
 
 | Specification | Requirement |
 | Hardware | [For nosnap Veeam Agent for Linux] CPU: x64.  [For nosnap Veeam Agent for Linux on Power] CPU: IBM POWER9 or POWER10.  Memory: 1 GB RAM or more. Memory consumption varies depending on the backup type and the total amount of backed-up data.  Disk Space: 300 MB free disk space for product installation.  Network: 10 Mbps or faster network connection to a backup target.  Disk layout: MBR or GPT. |
-| OS | Important! Check [considerations and limitations](#os_limits) that apply to the list of supported OSes.  Nosnap Veeam Agent for Linux supports the following distributions:   * Debian 11.0 – 13.5 * Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04 and 26.04  * RHEL 8.4 – 9.8, 10.0 – 10.2  * Oracle Linux 7 – 10.2 (RHCK) * Oracle Linux 7 (starting from UEK R4) – Oracle Linux 10 (up to 6.12.0-202.76.4.4.el10uek)  * SLES 12 SP5, 15 SP3 – 15 SP7 and 16.0 * SLES for SAP 12 SP5, 15 SP3 – 15 SP7 and 16.0  * Rocky Linux 8.10, 9.4 – 9.8, 10.0 and 10.2 * AlmaLinux 8.10, 9.4 – 9.8, 10.0 and 10.2   Nosnap Veeam Agent for Linux on Power supports little endian versions of the following Linux distributions for IBM Power:   * SLES 15 SP3 – 15 SP7 and 16.0 * SLES for SAP 12 SP5, 15 SP3 – 15 SP7 and 16.0  * RHEL 8.4, 8.6, 8.8, 8.10, 9.0, 9.2, 9.4, 9.6 and 10.0  * RHEL for SAP 8.4, 8.6, 8.8, 8.10, 9.0, 9.2, 9.4, 9.6 and 10.0 |
-| File System | Important! Check [considerations and limitations](#file_sys_lim) that apply to the list of supported file systems.  Veeam Agent for Linux supports consistent snapshot-based data backup for the following file systems:   * All supported file systems that are built on top of LVM logical volumes. The minimum supported LVM version is 2.02.133. * BTRFS, for OSes that run Linux kernel 3.16 or later.   [For nosnap Veeam Agent for Linux] BTRFS is supported only if it resides directly on a physical device with no additional abstraction layers (such as LVM, software RAID, dm-crypt and so on) below or above it.  [For nosnap Veeam Agent for Linux on Power] If BTRFS has additional abstraction layers (such as LVM, software RAID, dm-crypt and so on) above it, only file-level restore operations are supported. Instant Recovery, restore verification (SureBackup), bare metal recovery and volume-level restore are not supported.  Supported file systems that are not located on logical volumes, other file systems and network file systems like NFS or SMB shares can be backed up using the snapshot-less mode only. For details, see the [Snapshot-Less File-Level Backup](https://helpcenter.veeam.com/docs/agentforlinux/userguide/file_backup_snapshotless.html) section in the Veeam Agent for Linux User Guide. |
+| OS | Important! Check [considerations and limitations](#os_limits) that apply to the list of supported OSes.  Veeam Agent supports the following distributions:   * Debian 11.0 – 13.5 * Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04 and 26.04  * RHEL 7.9 ELS, 8.4 – 9.8, 10.0 – 10.2  * Oracle Linux 7 – 10.2 (RHCK) * Oracle Linux 7 (starting from UEK R4) – Oracle Linux 10 (up to 6.12.0-202.76.4.4.el10uek)  * SLES 12 SP5, 15 SP3 – 15 SP7 and 16.0 * SLES for SAP 12 SP5, 15 SP3 – 15 SP7 and 16.0  * Rocky Linux 8.10, 9.4 – 9.8, 10.0 and 10.2 * AlmaLinux 8.10, 9.4 – 9.8, 10.0 – 10.2   Veeam Agent for Linux on Power supports little endian versions of the following Linux distributions for IBM Power:   * SLES 15 SP3 – 15 SP7 and 16.0 * SLES for SAP 12 SP5, 15 SP3 – 15 SP7 and 16.0  * RHEL 8.4, 8.6, 8.8, 8.10, 9.0, 9.2, 9.4, 9.6 and 10.0  * RHEL for SAP 8.4, 8.6, 8.8, 8.10, 9.0, 9.2, 9.4, 9.6 and 10.0 |
+| File System | Important! Check [considerations and limitations](#file_sys_lim) that apply to the list of supported file systems.  Veeam Agent for Linux supports consistent snapshot-based data backup for the following file systems:   * All [supported file systems](agents_system_requirements_linux.md#filesystem) that are built on top of LVM logical volumes.  * BTRFS (for OSes that run Linux kernel 3.16 or later)   [For nosnap Veeam Agent for Linux] BTRFS is supported only if it resides directly on a physical device with no additional abstraction layers (such as LVM, software RAID, dm-crypt and so on) below or above it.  [For nosnap Veeam Agent for Linux on Power] If BTRFS has additional abstraction layers (such as LVM, software RAID, dm-crypt and so on) above it, only file-level restore operations are supported. Instant Recovery, restore verification (SureBackup), bare metal recovery and volume-level restore are not supported.  Supported file systems that are not located on logical volumes, other file systems and network file systems like NFS or SMB shares can be backed up using the snapshot-less mode only. For details, see the [Snapshot-Less File-Level Backup](https://helpcenter.veeam.com/docs/agentforlinux/userguide/file_backup_snapshotless.html) section in the Veeam Agent for Linux User Guide. |
 | Software | Important! Check [considerations and limitations](#software_lim) that apply to the list of supported components.  Protected computer must have the following components installed:  For general operations, backup and restore:   * libacl (for backup and restore of ACLs) * libattr (for backup and restore of extended file attributes) * lvm2 (for LVM snapshots and other LVM-related operations)  * libfuse2 (FUSE libraries for Debian-based and SLES-based systems) * fuse-libs (FUSE libraries for RedHat-based systems)  * dmidecode (for managing Veeam Agent with Veeam Backup & Replication, not required for Veeam Agent for Linux on Power) * btrfs-progs (version 3.16 or later, for backup of BTRFS) * wget (for downloading recovery ISO)  * which (for deployment process)  * tar (for file system indexing, log export and rotation) * gzip (for file system indexing, log export and rotation)   For creating custom Veeam Recovery Media (not required for Veeam Agent for Linux on Power):   * efibootmgr (for UEFI-based systems) * isolinux (for Debian-based systems) * syslinux (for RedHat-based systems) * mksquashfs * unsquashfs * xorriso (for custom Veeam Recovery Media with EFI support) |
 
 Considerations and Limitations
@@ -28,10 +28,10 @@ OS
 
 If a new version of a supported Linux distribution is released after the release of the current version of Veeam Agent, Veeam Agent may require a patch to support this new OS version. For details on Veeam Agent compatibility with Linux OS versions, see [this Veeam KB article](https://www.veeam.com/kb2804). Customers with a valid contract can request a patch from Veeam Support; for other customers, the support of the new Linux distribution will be provided with the next release of Veeam Agent.
 
-* The Linux OS must be set up to receive software updates from the default repositories enabled in the OS after installation.
+* The Linux OS must be configured to receive software updates from the default repositories enabled after OS installation. This requirement is met if the distribution’s base system, patches and fixes are bit-for-bit identical to those of one of the supported distributions, regardless of which entity provides support to the customer.
 
-* [For nosnap Veeam Agent for Linux] Veeam Agent supports the following versions of RHEL with Extended Update Support Add-On: 8.4, 8.6, 8.8, 8.10, 9.0, 9.2, 9.4, 9.6, 9.8, 10.0 and 10.2.
-* [For nosnap Veeam Agent for Linux on Power] Veeam Agent supports the following versions of RHEL with Extended Update Support Add-On: 8.4, 8.6, 8.8, 8.10, 9.4, 9.6 and 10.0.
+* Veeam Agent supports the following versions of RHEL with Extended Update Support Add-On: 8.4, 8.6, 8.8, 8.10, 9.0, 9.2 and 9.4.
+* Veeam Agent supports the following versions of RHEL with Extended Update Support Add-On: 8.4, 8.6, 8.8, 8.10 and 9.4.
 
 * Do not install Veeam Agent on servers that are used as components of the Veeam Backup & Replication infrastructure. This includes Veeam backup servers, backup repositories, proxy servers, mount servers, distribution servers, gateway and helper appliance servers, and any other backup infrastructure component that has the Veeam Mount Service deployed.
 
@@ -43,7 +43,7 @@ File System
 
 * LVM volumes encrypted with dm-crypt software are not supported.
 
-* Total size of all file systems must not exceed 216 TiB. This limitation applies to all file systems where files you plan to back up are located.
+* Total size of all file systems must not exceed 216 TiB. This limitation applies to all file systems where files you plan to back up are located.
 
 * Size of a file included in a file-level backup must not exceed 16 TiB.
 * Name of a file must not be larger than 254 bytes.
@@ -96,6 +96,7 @@ Software
 | IMPORTANT |
 | Linux user account used to work with Veeam Agent for Linux must have the /bin/bash set as the default shell. |
 
-* [For nosnap Veeam Agent for Linux] The dmidecode package is required for Veeam Agent management — a valid BIOS UUID must be obtainable either from dmidecode | grep -i uuid or from /sys/class/dmi/id/product\_uuid. Each Veeam Agent that consumes a license installed in Veeam Backup & Replication must have a unique BIOS UUID. If a valid UUID cannot be obtained, Veeam will generate it automatically.
+* [For nosnap The dmidecode package is required for Veeam Agent management — a valid BIOS UUID must be obtainable either from dmidecode | grep -i uuid or from /sys/class/dmi/id/product\_uuid. Each Veeam Agent that consumes a license installed in Veeam Backup & Replication must have a unique BIOS UUID. If a valid UUID cannot be obtained, Veeam will generate it automatically.
 
+Page updated 2026-08-04
 
