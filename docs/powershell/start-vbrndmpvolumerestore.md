@@ -3,8 +3,8 @@ title: "Start-VBRNDMPVolumeRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrndmpvolumerestore.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRNDMPVolumeRestore
@@ -32,11 +32,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRNDMPVolumeRestore -RestorePoint <VBRNDMPVolumeRestorePoint> -Server <VBRNDMPServer> -Path <String> [-PreserveFolderHierarchy] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRNDMPVolumeRestore -Server <VBRNDMPServerBase> -Path <String> -RestorePoint <VBRNDMPVolumeRestorePoint> [-EnableVolumeWriteAccess] [-PreserveFolderHierarchy] [-RunAsync]  [<CommonParameters>] |
 
 Detailed Description
 
 This cmdlet restores data from the tape device to an NDMP server.
+
+For SMTape backup restore to the NetApp NDMP server, the target volume specified in the Path parameter must already exist on the target NetApp SVM as a Data Protection volume in restricted state.
 
 |  |
 | --- |
@@ -47,11 +49,12 @@ Parameters
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | RestorePoint | Specifies the restore point to which you want to restore the selected volume. | Accepts the [VBRNDMPVolumeRestorePoint](vbrndmpvolumerestorepoint.md) object. To get this object, run the [Get-VBRNDMPVolumeRestorePoint](get-vbrndmpvolumerestorepoint.md) cmdlet. | True | Named | False |
-| ToOriginalLocation | Defines that the cmdlet will start the restore to the original NDMP server. | SwitchParameter | True | Named | False |
-| Server | For restore to another location.  Specifies the target NDMP server. Veeam Backup & Replication will restore the volumes to that server. | Accepts the [VBRNDMPServer](vbrndmpserver.md) object. To get this object, run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. | True | Named | False |
+| ToOriginalLocation | Defines that the cmdlet will start the restore to the original NDMP server.  Note: This option is not available for restores from NetApp SMTape backups. | SwitchParameter | True | Named | False |
+| Server | For restore to another location.  Specifies the target NDMP server. Veeam Backup & Replication will restore the volumes to that server. | Accepts the VBRNDMPServerBase object. To get this object, run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. | True | Named | False |
 | Path | For restore to another location.  Specifies the path to the volume on the target NDMP server. Veeam Backup & Replication will restore the data to that volume. | String | True | Named | False |
+| EnableVolumeWriteAccess | For NetApp NDMP volume restore to another location.  Enables the option to make the target Data Protection volume available for write operations after the recovery is finished. | SwitchParameter | False | Named | False |
 | PreserveFolderHierarchy | For restore to another location.  Defines that Veeam Backup & Replication will preserve folder hierarchy. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
@@ -83,4 +86,5 @@ Related Commands
 * [Get-VBRNDMPVolumeRestorePoint](get-vbrndmpvolumerestorepoint.md)
 * [Get-VBRNDMPServer](get-vbrndmpserver.md)
 
+Page updated 2026-06-12
 
