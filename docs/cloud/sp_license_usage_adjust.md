@@ -3,8 +3,8 @@ title: "Adjusting License Usage Report"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/sp_license_usage_adjust.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Adjusting License Usage Report
@@ -17,4 +17,5 @@ In This Section
 * [Adjusting Usage Report for Veeam Cloud Connect License](sp_license_usage_adjust_vcc.md)
 * [Adjusting Usage Report for Rental License](sp_license_usage_adjust_baas.md)
 
+Page updated 2026-08-04
 
