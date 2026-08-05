@@ -3,8 +3,8 @@ title: "Data Protection"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/data_protection.html"
-last_updated: "8/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Data Protection
@@ -26,7 +26,7 @@ The backup copy to cloud option allows you to create and keep multiple instances
 
 * Backup to tape jobs
 
-Backup to tape jobs allows you to keep backed-up data on tape devices. For more information, see [Creating Backups to Tapes](copy_to_tape.md).
+Backup to tape jobs allow you to keep backed-up data on tape devices. For more information, see [Creating Backup to Tape](copy_to_tape.md).
 
 |  |
 | --- |
@@ -35,14 +35,15 @@ Backup to tape jobs allows you to keep backed-up data on tape devices. For more 
 
 In This Section
 
-* [How Kasten Policy Works](how_k10_works.md)
+* [How Kasten Policies Work](how_k10_works.md)
 * [Working with Kasten Policies](working_with_policies.md)
 * [Backup Chain and Retention Policy](backup_chain.md)
 
 * [Managing Backed-Up Data](manage_backups.md)
 * [Creating Backup Copy Jobs](backup_copy.md)
 * [Copying Data to Cloud Repositories](copy_to_cloud.md)
-* [Creating Backups to Tapes](copy_to_tape.md)
+* [Creating Backup to Tape](copy_to_tape.md)
 * [Viewing Statistics](view_policy_statistics.md)
 
+Page updated 2026-08-04
 
