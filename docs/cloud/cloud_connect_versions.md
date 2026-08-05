@@ -3,8 +3,8 @@ title: "Veeam Product Versions"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_versions.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Product Versions
@@ -15,11 +15,11 @@ The SP and tenants can run different versions of Veeam Backup & Replication on t
 * Veeam Backup & Replication versions must support the Veeam Cloud Connect functionality.
 * The SP Veeam backup server can run the same or later version of Veeam Backup & Replication than the tenant Veeam backup server. The SP backup server cannot run an earlier version of Veeam Backup & Replication than the tenant backup server.
 
-This applies to major product versions. Within Veeam Backup & Replication version 13, the SP and tenant can use a product build 13.0.1 or later. It is recommended, however, that the SP and tenant install latest hotfixes and updates on the backup server.
+This applies to major product versions. Within Veeam Backup & Replication version 13, the SP and tenant can use a product build 13.0.1 or later. Version 13.1 is backward compatible with version 13.0.1. It is recommended, however, that the SP and tenant install latest hotfixes and updates on the backup server.
 
-* Veeam Backup & Replication 13.0.1 running on the SP backup server is compatible with the following versions of Veeam products running on the tenant side:
+* Veeam Backup & Replication 13.1 running on the SP backup server is compatible with the following versions of Veeam products running on the tenant side:
 
-* Veeam Backup & Replication 12.3.2 (starting from 12.3.2.3617) and 13.0.1 or later
+* Veeam Backup & Replication 12.3.2 (starting from 12.3.2.4854) and 13.0.1 or later
 
 |  |
 | --- |
@@ -41,4 +41,5 @@ Tenants who run earlier versions of Veeam Backup & Replication can continue usin
 
 For installations with high loads (up to 1000 parallel tenant tasks), it is recommended that all tenants run the latest version of Veeam Backup & Replication and Veeam Agents.
 
+Page updated 2026-08-04
 
