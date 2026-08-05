@@ -3,8 +3,8 @@ title: "Veeam Agent for Microsoft Windows Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ad_objects_advanced_vaw.html"
-last_updated: "8/21/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Agent for Microsoft Windows Settings
@@ -67,4 +67,5 @@ To learn more, see [Restoring Files from Backup without Administrator Privileges
 
 ![Veeam Agent for Microsoft Windows Settings](images/ad_objects_advanced_vaw.webp "Specify Veeam Agent for Microsoft Windows Settings")
 
+Page updated 2026-07-01
 
