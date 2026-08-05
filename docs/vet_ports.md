@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vet_ports.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -12,4 +12,5 @@ product_version: "13.0.2.29"
 
 For restore of Microsoft Teams data, you must open the same ports that are required for restore of Microsoft Exchange and Microsoft SharePoint data. For more information, see [Veeam Explorer for Microsoft Exchange: Ports](vex_ports.md) and [Veeam Explorer for Microsoft SharePoint: Ports](vesp_ports.md).
 
+Page updated 2026-08-04
 
