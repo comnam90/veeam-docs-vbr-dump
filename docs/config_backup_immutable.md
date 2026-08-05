@@ -3,8 +3,8 @@ title: "Creating Immutable Configuration Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/config_backup_immutable.html"
-last_updated: "11/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Immutable Configuration Backups
@@ -28,6 +28,12 @@ To make configurations backups immutable, perform the following steps:
 6. To create an encrypted backup, select the Enable backup file encryption check box. From the Password field, select a password you want to use for encryption. If you have not created a password beforehand, click Add or use the Manage passwords link to specify a new password. For more information, see [Creating Encrypted Configuration Backups](config_backup_encrypted.md).
 7. Click Backup now.
 
+|  |
+| --- |
+| Note |
+| The configuration backup created by a tenant does not become immutable when the configuration backup job targets a cloud repository that the service provider has configured on a hardened repository. |
+
 ![Creating Immutable Configuration Backups](images/immutable_config_backup.webp)
 
+Page updated 2026-07-29
 
