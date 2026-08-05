@@ -3,8 +3,8 @@ title: "New-VEMDBLinuxCredentials"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/new-vemdblinuxcredentials.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VEMDBLinuxCredentials
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Short Description
 
-Creates Linux credential record to connect to a target MongoDB server.
+Creates a Linux credential record to connect to a target MongoDB server.
 
 Applies to
 
@@ -34,8 +34,9 @@ Run the [Start-VEMDBDataRestore](start-vemdbdatarestore.md) cmdlet to restore Mo
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Account | Specifies the user name of the account that will be used to connect to the target Linux server. | String | True | 0 | False |
 | AddToSudoers | Defines that the cmdlet will add the account to the sudoers file. | SwitchParameter | False | Named | False |
 | ElevateAccountToRoot | Defines that the account must be elevated to root. | SwitchParameter | False | Named | False |
@@ -47,7 +48,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -71,4 +72,5 @@ Related Commands
 
 [Read-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.5)
 
+Page updated 2026-06-11
 
