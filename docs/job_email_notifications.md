@@ -3,8 +3,8 @@ title: "Configuring Job Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/job_email_notifications.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Job Notification Settings
@@ -32,7 +32,7 @@ You can find the notification settings description in the dedicated jobs, for ex
 * [Notification Settings](backup_copy_settings_notification.md) for backup copy job
 * [Notification Settings](os_backup_job_advanced_notification.md) for object storage backup job
 * [Notification Settings](file_share_backup_job_advanced_notifications.md) for file backup job
-* [Notification Settings](bc_hpe_storeonce_notification_settings.md) for backup copy jobs for HPE StoreOnce repositories
+* [Notification Settings](storage_copy_notification_settings.md) for backup copy jobs for HPE StoreOnce repositories
 * [Notification Settings](replica_advanced_notify_vm.md) for replication jobs
 * [Notification Settings](agent_job_advanced_notify.md) for Veeam agent backup jobs (for Windows machines)
 * [Notification Settings](agent_advanced_notifiy_linux.md) for Veeam agent backup jobs (for Linux machines)
@@ -54,4 +54,5 @@ You can find the notification settings description in the dedicated jobs, for ex
 
 ![Configuring Job Notification Settings](images/vm_backup_job_settings_notification.webp)
 
+Page updated 2026-07-30
 
