@@ -3,8 +3,8 @@ title: "Configuring Veeam Plug-In for SAP MaxDB"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_vp.html"
-last_updated: "1/30/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Veeam Plug-In for SAP MaxDB
@@ -56,7 +56,7 @@ For details about other required ports, see [Ports](plugins_sap_maxdb_preparatio
 |  |
 | --- |
 | Important |
-| Consider the following:   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account.   For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).   * The account must have access permissions on the required backup repository. To learn how to configure access permissions on repositories, see [Access and Encryption Settings on Repositories](plugins_sap_maxdb_deploy_repo_permissions.md). |
+| Consider the following:   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Backup Administrator role or Backup Operator and Restore Operator roles to the account.   For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).   * The account must have access permissions on the required backup repository. To learn how to configure access permissions on repositories, see [Access and Encryption Settings on Repositories](plugins_sap_maxdb_deploy_repo_permissions.md). |
 
 1. If you connect to the specified Veeam Backup & Replication server for the first time, provide the following confirmations:
 
@@ -64,7 +64,7 @@ For details about other required ports, see [Ports](plugins_sap_maxdb_preparatio
 
 |  |
 | --- |
-| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 |
+| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 Continue? (y/n): |
 
 1. Review requirements for the credentials and press y to confirm the connection using the specified credentials.
 
@@ -83,7 +83,7 @@ In the wizard dialog, you will see a list of available repositories. Enter the n
 
 |  |
 | --- |
-| Available backup repositories:  1. Default Backup Repository |
+| Available backup repositories:  1. Default Backup Repository 2. Off-Site Backup Repository 3. Object Storage Repository Enter repository number: 1 |
 
 |  |
 | --- |
@@ -106,4 +106,5 @@ To learn more about SapMaxDBBackintConfigTool and configuration file, see the fo
 * [Configuration file](plugins_sap_maxdb_deploy_configure_vp_file.md)
 * [Configuration tool](plugins_sap_maxdb_deploy_configure_vp_parameters.md)
 
+Page updated 2026-07-10
 
