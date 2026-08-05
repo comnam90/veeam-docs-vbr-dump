@@ -3,8 +3,8 @@ title: "Multi-Factor Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mfa.html"
-last_updated: "4/10/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Multi-Factor Authentication
@@ -27,16 +27,16 @@ Requirements and Considerations
 
 MFA has the following requirements and considerations:
 
-* Only users with the Veeam Backup Administrator role can manage MFA.
+* Only users with the Backup Administrator role can manage MFA.
 * MFA is not supported in the Veeam Backup & Replication Community Edition.
 * MFA is not natively supported for Veeam Backup Enterprise Manager. It can be used with a third-party identity provider [specified in the SAML authentication settings](https://helpcenter.veeam.com/docs/vbr/em/veeam_backup_em_saml.html?ver=13).
 * User groups are not supported. You can enable MFA only for user accounts.
 * MFA is not supported for non-interactive connections used by the following applications and backup infrastructure components:
 
-+ Veeam Backup & Replication REST API
-+ Veeam Backup Enterprise Manager (for communication with the Veeam Backup & Replication server)
-+ Veeam ONE agent (for communication with the Veeam Backup & Replication server)
-+ Veeam Backup Validator
+* Veeam Backup & Replication REST API
+* Veeam Backup Enterprise Manager (for communication with the Veeam Backup & Replication server)
+* Veeam ONE agent (for communication with the Veeam Backup & Replication server)
+* Veeam Backup Validator
 
 To avoid connection issues, you must disable MFA for the accounts used to run these applications and backup infrastructure components. For more information, see [Disabling MFA for Service Accounts](#disable_mfa_service_accounts).
 
@@ -44,7 +44,9 @@ To avoid connection issues, you must disable MFA for the accounts used to run th
 * To restore the configuration database properly, run the Veeam Backup & Replication console or Veeam Backup Configuration Restore application under the service account with disabled MFA.
 * If a service provider (SP) uses Veeam Service Provider Console and wants to use multi-factor authentication on the SP backup server, they must set up a service account in Veeam Backup & Replication. For more information, see [this Veeam KB article](https://www.veeam.com/kb4431).
 * Mobile push notifications are not supported. You can get an OTP code only in the mobile authenticator application.
-* If you use a Linux-based backup server, user accounts with access to the Veeam Host Management console and the remote console/web UI require two separate entries in your authenticator application. This is because secret keys are not shared between the interfaces. For more information on managing MFA in the Veeam Host Management console, see [Managing User Authentication](hmc_manage_user_auth.md).
+* If you use a Linux-based backup server, user accounts with access to the Veeam Host Management console and the remote console/web UI do not require separate entries in your authenticator application. For more information on managing MFA in the Veeam Host Management console, see [Managing User Authentication](hmc_manage_user_auth.md).
+* When multi-factor authentication is enabled, you must confirm your identity with a one-time password before you can change any Users and Roles settings in the remote console. For more information, see [Managing Users and Roles](users_roles.md).
+* [If you upgrade a Linux-based backup server to Veeam Backup & Replication 13.1 (build 13.1.0.411)] The Veeam Host Management and Veeam Backup & Replication MFA codes are merged into a single code. After the upgrade, use the MFA code configured in Veeam Host Management to log in to the Veeam Backup & Replication console and web UI.
 
 How MFA Works
 
@@ -115,7 +117,7 @@ To disable the feature for all users:
 
 Disabling MFA for Service Accounts
 
-If you cannot use MFA due to limitations described in section [Requirements and Limitations](#requirements_and_limitations), you can disable this feature for specific service accounts used to run applications and backup infrastructure components.
+If you cannot use MFA due to limitations described in section [Requirements and Considerations](#requirements_and_limitations), you can disable this feature for specific service accounts used to run applications and backup infrastructure components.
 
 To disable the feature for service accounts:
 
@@ -127,4 +129,5 @@ To disable the feature for service accounts:
 
 ![Multi-Factor Authentication](images/mfa_disable_service_account.webp)
 
+Page updated 2026-07-28
 
