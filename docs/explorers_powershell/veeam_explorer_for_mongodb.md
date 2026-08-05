@@ -3,8 +3,8 @@ title: "Veeam Explorer for MongoDB"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_mongodb.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Explorer for MongoDB
@@ -12,8 +12,9 @@ product_version: "13.0.1.1071"
 
 You can use the cmdlets for Veeam Explorer for MongoDB to perform the following operations:
 
+Veeam Explorer for MongoDB
+
 | Cmdlet | Operation |
-| --- | --- |
 | [Get-VEMDBCommand](get-vemdbcommand.md) | Returns a set of cmdlets available for Veeam Explorer for MongoDB. |
 | [Start-VEMDBRestoreSession](start-vemdbrestoresession.md) | Starts a restore session to explore and perform restore operations with backed-up MongoDB data. |
 | [Get-VEMDBRestoreSession](get-vemdbrestoresession.md) | Returns active restore sessions started to perform restore operations with backed-up MongoDB data. |
@@ -33,6 +34,7 @@ You can use the cmdlets for Veeam Explorer for MongoDB to perform the following 
 | [Get-VEMDBExtendedLogging](get-vemdbextendedlogging.md) | Returns the state of the extended logging mode for Veeam Explorer for MongoDB. |
 | [Enable-VEMDBExtendedLogging](enable-vemdbextendedlogging.md) | Enables the extended logging mode for Veeam Explorer for MongoDB. |
 | [Disable-VEMDBExtendedLogging](disable-vemdbextendedlogging.md) | Disables the extended logging mode for Veeam Explorer for MongoDB. |
-| [New-VEMDBLinuxCredentials](new-vemdblinuxcredentials.md) | Creates Linux credential record to connect to a target MongoDB server. |
+| [New-VEMDBLinuxCredentials](new-vemdblinuxcredentials.md) | Creates a Linux credential record to connect to a target MongoDB server. |
 
+Page updated 2026-06-11
 
