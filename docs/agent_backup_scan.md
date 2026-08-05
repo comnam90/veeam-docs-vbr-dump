@@ -3,16 +3,14 @@ title: "Scanning Veeam Agent Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_scan.html"
-last_updated: "11/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Scanning Veeam Agent Backups
 
 
-You can scan restore points of a backup created by Veeam Agent for Microsoft Windows or Veeam Agent for Linux after a malware attack or to look for some sensitive data in a backup.
-
-You cannot scan backups created by Veeam Agent for IBM AIX, Veeam Agent for Oracle Solaris or Veeam Agent for Mac.
+You can scan restore points of a backup created by Veeam Agent for Microsoft Windows, Veeam Agent for Linux, Veeam Agent for IBM AIX or Veeam Agent for Oracle Solaris after a malware attack or to look for some sensitive data in a backup. You cannot scan backups created by Veeam Agent for Mac.
 
 To run the scan backup session:
 
@@ -72,4 +70,5 @@ To learn more, see [Scan Backup](malware_detection_scan_backup.md).
 
 ![Scanning Veeam Agent Backups](images/agent_backup_scan_rules.webp "Scan Backup")
 
+Page updated 2026-07-23
 
