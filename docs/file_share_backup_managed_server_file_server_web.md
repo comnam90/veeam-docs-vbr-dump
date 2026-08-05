@@ -1,0 +1,30 @@
+---
+title: "Step 2. Add Managed Server"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_managed_server_file_server_web.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Step 2. Add Managed Server
+
+
+At the File Server step of the wizard, choose the server, which you want to use as a file share server. Select it from the Managed Server drop-down list.
+
+|  |
+| --- |
+| Note |
+| If you plan not only to back up the Linux-managed file server, but also to restore files to it, use an account with root access when adding the server to the backup infrastructure. |
+
+If the drop-down list does not display the required server, you must add it to the backup infrastructure. To add the server, do the following:
+
+1. Click Add New.
+2. Select Microsoft Windows or Linux Server.
+3. Add a new Windows or Linux server to the backup infrastructure as described in the [Adding Microsoft Windows Servers](https://helpcenter.veeam.com/docs/vbr/userguide/add_windows_server.html?ver=13) and [Adding Linux Servers](https://helpcenter.veeam.com/docs/vbr/userguide/add_linux_server.html?ver=13) sections.
+4. Select the newly added server from the Managed Server drop-down list.
+
+[![Step 2. Add Managed Server](images/win_file_share_wizard_file_server_web.webp)](images/win_file_share_wizard_file_server_web.webp)
+
+Page updated 2026-07-22
+
