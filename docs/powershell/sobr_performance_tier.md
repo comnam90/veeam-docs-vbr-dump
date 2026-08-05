@@ -3,8 +3,8 @@ title: "Performance Tier"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sobr_performance_tier.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performance Tier
@@ -23,4 +23,5 @@ Performance Tier
 | [Disable-VBRRepositoryExtentSealedMode](disable-vbrrepositoryextentsealedmode.md) | Disables Sealed mode for performance extents of a scale-out backup repository. |
 | [Start-VBRRepositoryExtentBackupEvacuation](start-vbrrepositoryextentbackupevacuation.md) | Evacuates backups from performance extents. |
 
+Page updated 2026-08-04
 
