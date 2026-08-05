@@ -3,8 +3,8 @@ title: "Running Veeam Backup PowerShell on Windows Machines"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/running_ps_sessions_windows.html"
-last_updated: "5/28/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Running Veeam Backup PowerShell on Windows Machines
@@ -12,16 +12,11 @@ product_version: "13.0.2.29"
 
 Veeam Backup & Replication supports usage of Veeam Backup PowerShell on Windows machines with Veeam Console installed. After you install the Veeam Backup & Replication Console, Veeam PowerShell module will be installed by default. After that, you can run Veeam PowerShell cmdlets from the Veeam Backup & Replication Console, or directly from Windows PowerShell console installed on your machine.
 
-|  |
-| --- |
-| Important |
-| To connect from a Microsoft Windows–based backup server to Veeam Software Appliance, you must first connect to the backup server using the Veeam Backup & Replication console. This triggers the auto-update mechanism, which synchronizes the component versions on both the console and PowerShell clients. |
-
 Requirements
 
 Consider the following requirements:
 
-* To run Veeam PowerShell cmdlets, you must have Veeam Backup Administrator role. For more information, see [Users and Roles](https://helpcenter.veeam.com/docs/vbr/userguide/users_roles.html?ver=13).
+* To run Veeam PowerShell cmdlets, you must have Backup Administrator role. For more information, see [Users and Roles](https://helpcenter.veeam.com/docs/vbr/userguide/users_roles.html?ver=13).
 * A machine that runs the PowerShell session must have Windows PowerShell version 7.4.7 installed.
 * To utilize the Veeam Explorer PowerShell functionality, you must install the necessary Veeam Explorer PowerShell modules. For more information, see [Starting PowerShell Sessions](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/ps_sessions.html?ver=13) in the Veeam Explorers PowerShell Reference.
 
@@ -50,4 +45,5 @@ After start the Veeam PowerShell session, you must connect to a local or a remot
 
 [![Starting PowerShell Session](images/starting_from_vbr.webp)](images/starting_from_vbr.webp "Starting PowerShell Session")
 
+Page updated 2026-07-14
 
