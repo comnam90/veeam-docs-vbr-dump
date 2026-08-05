@@ -3,8 +3,8 @@ title: "Archive Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/archive_tier.html"
-last_updated: "11/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Archive Tier
@@ -21,11 +21,12 @@ Supported Types of Object Storage Repositories
 
 The archive tier consists of object storage repository added as a single archive extent. You can add one of the following cloud-based object storage repositories with "cold" data storage:
 
-* Amazon S3 Glacier.
-* S3 compatible object storage with data archiving.
-* Microsoft Azure Archive Storage.
+* [Amazon S3 Glacier](osr_amazon_glacier_adding.md).
+* [S3 compatible object storage with data archiving](compatible_glacier_add.md)
+* [Microsoft Azure Archive Storage](osr_adding_blob_storage_archive_tier.md).
+* [Veeam Data Cloud Vault Archive](veeam_data_cloud_vault_archive.md).
 
-Before you configure an object storage repository as the archive extent, you must add it to Veeam Backup & Replication backup infrastructure. For more information, see [Adding Amazon S3 Glacier Storage](osr_amazon_glacier_adding.md), [Adding S3 Compatible with Data Archiving](compatible_glacier_add.md) and [Adding Azure Archive Storage](osr_adding_blob_storage_archive_tier.md). You can add the archive extent to your scale-out backup repository and configure its settings on the [Add Archive Tier](new_archive_tier.md) step of the New Scale-out Backup Repository wizard.
+Before you configure an object storage repository as the archive extent, you must add it to Veeam Backup & Replication backup infrastructure. You can add the archive extent to your scale-out backup repository and configure its settings on the [Add Archive Tier](new_archive_tier.md) step of the New Scale-out Backup Repository wizard.
 
 Direct Data Transfer to Archive Tier
 
@@ -57,10 +58,12 @@ In This Section
 
 * [Limitations for Archive Tier](limitations_archive_tier.md)
 * [Archiving Job](archiving_job.md)
+* [Archive Tier Policies](archive_tier_policies.md)
 * [Archive Extent Structure](archive_extent_structure.md)
 * [Immutability for Archive Tier](immutability_archive_tier.md)
 * [Encryption for Archive Tier](encryption_for_archive_tier.md)
 * [Managing Archive Tier](managing_archive_tier.md)
 * [Restore from Archive Tier](restore_archive_tier.md)
 
+Page updated 2026-07-30
 
