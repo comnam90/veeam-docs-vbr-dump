@@ -3,8 +3,8 @@ title: "Restoring Veeam Agent Backup to Proxmox VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_proxmox.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Veeam Agent Backup to Proxmox VM
@@ -29,8 +29,9 @@ If you restore a Veeam Agent computer to a Proxmox VE VM, consider the following
 
 Restore to Proxmox VE
 
-The procedure of restore to Proxmox VE for a Veeam Agent computer practically does not differ from the same procedure for a VM. To learn more about restore to Proxmox VE, see the [Performing VM Restore](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/restore_entire_vm.html?ver=1) section in the Veeam Backup for Proxmox VE User Guide.
+The procedure of restore to Proxmox VE for a Veeam Agent computer practically does not differ from the same procedure for a VM. To learn more about restore to Proxmox VE, see [Performing VM Restore](pve_restore_vm.md).
 
 [![Restore Veeam Agent Backup to Proxmox VE](images/am_agent_restore_proxmox.webp)](images/am_agent_restore_proxmox.webp "Restore Veeam Agent Backup to Proxmox VE")
 
+Page updated 2026-07-29
 
