@@ -3,14 +3,14 @@ title: "Step 6. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ibm_storage_review.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Review Components
 
 
-At the Review step of the wizard, review what components will be processed on the mount server server and their status.
+At the Review step of the wizard, review what components will be processed on the mount server and their status.
 
 If the backup repository contains backups, select the Search the repository for existing backups and import them automatically check box. Veeam Backup & Replication will scan the backup repository to detect existing backup files and display them in the Veeam Backup & Replication console under the Backups > Object Storage (Imported) node.
 
@@ -18,4 +18,5 @@ If the backup repository contains guest file system index files, select the Impo
 
 ![Step 6. Review Components](images/new_ibm_storage_review.webp)
 
+Page updated 2026-08-04
 
