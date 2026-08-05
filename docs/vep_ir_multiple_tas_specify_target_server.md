@@ -3,14 +3,32 @@ title: "Step 3. Specify Target Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_tas_specify_target_server.html"
-last_updated: "9/15/2023"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify Target Server
 
 
-At this step of the wizard, specify credentials to access the target PostgreSQL server.
+At this step of the wizard, specify connection settings required to access the target PostgreSQL server. The set of connection settings depends on the OS type of the target server: Windows or Linux.
+
+Windows-Based Target Server
+
+For a Windows-based target server, do the following:
+
+1. In the Server name field, enter the DNS name or IP address of the target server.
+2. In the Specify user account to connect section, specify the following:
+
+1. In the Username field, enter a user name of the account.
+2. In the Password field, enter the account password.
+
+For more information on the required user account configuration, see the [Permissions](vep_permissions.md) section.
+
+![Step 3. Specify Target Server](images/vep_ir_tas_windows_target_server.webp "Specifying Windows Server Connection Credentials")
+
+Linux-Based Target Server
+
+For a Linux-based target server, do the following:
 
 1. In the Server field, enter the DNS name or IP address of the target server.
 2. In the SSH port field, specify an SSH port (by default, port 22 is used).
@@ -29,7 +47,7 @@ If you do not enable this option, you will have to manually add the user account
 
 Veeam Backup & Replication will first try to use the sudo command. If the attempt fails, Veeam Backup & Replication will use the su command.
 
-[![Elevating Specified Account](images/vep_restore_to_another_server_elevate_account.webp)](images/vep_restore_to_another_server_elevate_account.webp "Elevating Specified Account")
+![Step 3. Specify Target Server](images/vep_restore_to_another_server_elevate_account.webp "Elevating Specified Account")
 
 1. In the Password field, enter the account password.
 2. If a private key is required to connect to the server, do the following:
@@ -47,6 +65,7 @@ To locate a file, click Browse and select a key.
 | Note |
 | When performing instant recovery of multiple instances to another server, Veeam Explorer for PostgreSQL restores data to the same data directories and tablespace directories as on the backup file. If the data tablespace directories of any of the backed-up instances are not empty on the target server, you will be prompted to overwrite them before proceeding to the next step. |
 
-[![Specifying Linux Server Connection Credentials](images/vep_ir_tas_credentials.webp)](images/vep_ir_tas_credentials.webp "Specifying Linux Server Connection Credentials")
+![Step 3. Specify Target Server](images/vep_ir_tas_credentials.webp "Specifying Linux Server Connection Credentials")
 
+Page updated 2026-04-28
 
