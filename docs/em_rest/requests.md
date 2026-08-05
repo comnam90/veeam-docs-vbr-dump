@@ -3,8 +3,8 @@ title: "Requests"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/requests.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Requests
@@ -31,8 +31,9 @@ Additionally, the action is described with the Rel attribute within the link, fo
 
 The table below describes relations between the operations that the client can perform with resources and HTTP verbs to be used:
 
+Requests
+
 | Operation | HTTP Verb | Sample Actions |
-| --- | --- | --- |
 | Create | POST | Create a new resource, for example, a logon session or credentials record. |
 | Delete | DELETE | Delete a resource, for example, a logon session or a task. |
 | Alternate | GET | Get an entity representation or a reference representation for the resource. |
@@ -56,4 +57,5 @@ The table below describes relations between the operations that the client can p
 | First | GET | Move to the first page with query results |
 | Last | GET | Move to the last page with query results |
 
+Page updated 2026-07-29
 
