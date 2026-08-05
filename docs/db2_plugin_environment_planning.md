@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_environment_planning.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Environment Planning
@@ -18,8 +18,12 @@ By default, Veeam Plug-In uses the hostname of the IBM Db2 machine or cluster to
 
 To assign a custom name, update the Veeam configuration XML file as follows:
 
-1. On the machine with Veeam Plug-In, open the /opt/veeam/VeeamPluginforDB2/veeam\_config.xml file.
-2. Add the customServerName parameter entry to the <PluginParameters /> line in the Veeam configuration XML file:
+1. On the machine with Veeam Plug-In, open the configuration file (veeam\_config.xml). The file location differs depending on the OS that you use:
+
+* For Linux or Unix: /opt/veeam/VeeamPluginforDB2/veeam\_config.xml
+* For Microsoft Windows: %PROGRAMFILES%\Veeam\VeeamPluginforDB2\veeam\_config.xml.
+
+1. Add the customServerName parameter entry to the <PluginParameters /> line in the Veeam configuration XML file:
 
 |  |
 | --- |
@@ -56,8 +60,12 @@ Veeam Plug-In supports network traffic encryption rules set on the Veeam Backup 
 
 To ignore network traffic encryption rules, do the following:
 
-1. On the machine with Veeam Plug-In, open the /opt/veeam/VeeamPluginforDB2/veeam\_config.xml file.
-2. Add the following parameter to the Veeam configuration XML file:
+1. On the machine with Veeam Plug-In, open the configuration file (veeam\_config.xml). The file location differs depending on the OS that you use:
+
+* For Linux or Unix: /opt/veeam/VeeamPluginforDB2/veeam\_config.xml
+* For Microsoft Windows: %PROGRAMFILES%\Veeam\VeeamPluginforDB2\veeam\_config.xml
+
+1. Add the following parameter to the Veeam configuration XML file:
 
 |  |
 | --- |
@@ -65,4 +73,5 @@ To ignore network traffic encryption rules, do the following:
 
 For details on traffic encryption, see [Enabling Traffic Encryption](enable_network_encryption.md).
 
+Page updated 2026-07-02
 
