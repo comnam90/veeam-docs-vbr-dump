@@ -3,8 +3,8 @@ title: "Creating Microsoft SQL Server Backup Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/create_policy_create_microsoft_sql_server.html"
-last_updated: "11/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Microsoft SQL Server Backup Policy
@@ -18,10 +18,12 @@ Before configuring an application backup policy, [check prerequisites](policy_mi
 2. [Specify policy name and description](policy_microsoft_sql_server_name.md).
 3. [Select databases to back up](policy_microsoft_sql_server_databases.md).
 4. [Specify backup storage settings.](policy_microsoft_sql_server_repository.md)
-5. [Specify advanced backup settings.](policy_microsoft_sql_server_advanced.md)
-6. [Specify database credentials.](policy_microsoft_sql_server_credentials.md)
-7. [Specify log processing settings.](policy_microsoft_sql_server_log_processing.md)
-8. [Specify the backup schedule.](policy_microsoft_sql_server_schedule.md)
-9. [Review backup policy settings.](policy_microsoft_sql_server_summary.md)
+5. [Configure long-term retention.](policy_microsoft_sql_server_gfs.md)
+6. [Specify advanced backup settings.](policy_microsoft_sql_server_advanced.md)
+7. [Specify database credentials.](policy_microsoft_sql_server_credentials.md)
+8. [Specify log processing settings.](policy_microsoft_sql_server_log_processing.md)
+9. [Specify the backup schedule.](policy_microsoft_sql_server_schedule.md)
+10. [Review backup policy settings.](policy_microsoft_sql_server_summary.md)
 
+Page updated 2026-06-30
 
