@@ -3,8 +3,8 @@ title: "New-VBRHvInstantRecoveryNetworkMappingRule"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrhvinstantrecoverynetworkmappingrule.html"
-last_updated: "4/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRHvInstantRecoveryNetworkMappingRule
@@ -32,8 +32,9 @@ This cmdlet defines the VBRHvInstantRecoveryNetworkMappingRule object. This obje
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | SourceNetwork | Specifies the array of networks connected to Veeam Agent computers. | Accepts the VBRComputerNetworkInfo[] object. To get this object, run the [Get-VBRComputerNetworkInfo](get-vbrcomputernetworkinfo.md) cmdlet. | True | Named | False |
 | TargetNetwork | Specifies the array of virtual networks connected to the Hyper-V host which computers are restored to. | Accepts the VBRHvServerNetworkInfo[] object. To get this object, run the [Get-VBRHvServerNetworkInfo](get-vbrhvservernetworkinfo.md) cmdlet. | True | Named | False |
 
@@ -43,7 +44,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the VBRHvInstantRecoveryNetworkMappingRule object that defines network mapping rules.
+The cmdlet returns the [VBRHvInstantRecoveryNetworkMappingRule](vbrhvinstantrecoverynetworkmappingrule.md) object that defines network mapping rules.
 
 Examples
 
@@ -60,4 +61,5 @@ Perform the following steps:
 1. Run the [Get-VBRComputerNetworkInfo](get-vbrcomputernetworkinfo.md) cmdlet. Save the result to the $network variable.
 2. Run the New-VBRHvInstantRecoveryNetworkMappingRule cmdlet. Set the $network variable as the SourceNetwork parameter value.
 
+Page updated 2026-03-31
 
