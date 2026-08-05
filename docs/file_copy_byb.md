@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_copy_byb.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -24,4 +24,5 @@ Consider the following limitations:
 | Tip |
 | You can restore the ACL settings for recovered guest OS files and folders using [Guest OS File Restore](guest_file_recovery.md). |
 
+Page updated 2026-08-04
 
