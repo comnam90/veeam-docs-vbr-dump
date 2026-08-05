@@ -3,8 +3,8 @@ title: "GET /vAppReplicaPoints/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_vappreplicapoints_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /vAppReplicaPoints/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,10 +60,11 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the vApp replica point resource. |
-| Name | String | Name of the vApp replica point, for example: vApp01@2021-02-04 00:08:35. |
+| Name | String | Name of the vApp replica point, for example: vApp01@2025-02-04 00:08:35. |
 | CreationTime | DateTime | Date and time when the restore point was created. The parameter accepts only UTC-formatted DateTime values. |
 | VAppName | String | Name of the vApp for which the restore point has been created. |
 | Algorithm | String | Replication method used to create the restore point. Possible values:   * Full * ReversedIncremental * Incremental * SyntheticFull |
@@ -71,8 +74,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /vAppReplicaPoints/{ID}?action=failover | Failover | URL for the [POST /vAppReplicaPoints/{ID}?action=failover](post_vappreplicapoints_id_actionfailover.md) request. |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server that created the restore point. |
 | /replicas/{ID} | Up | URL of the [/replicas/{ID}](replicas_id.md) resource — a vApp replica for which the restore point was created. |
@@ -85,6 +89,7 @@ The example below returns an entity resource representation of the vApp replica 
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <VAppReplicaPoint xmlns="http://www.veeam.com/ent/v1.0" Type="VAppReplicaPoint" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity" Name="vApp01@2021-02-04 00:08:35" UID="urn:veeam:VAppReplicaPoint:dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" VAppDisplayName="vApp01"> |
+| Request:  GET https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <VAppReplicaPoint xmlns="http://www.veeam.com/ent/v1.0" Type="VAppReplicaPoint" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?format=Entity" Name="vApp01@2025-02-04 00:08:35" UID="urn:veeam:VAppReplicaPoint:dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" VAppDisplayName="vApp01">   <Links>     <Link Rel="Failover" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3?action=failover" />     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/554dc718-37b7-4fb6-9e07-f97c6b5192aa" Name="enterprise04.tech.local" />     <Link Rel="Up" Type="ReplicaReference" Href="https://localhost:9398/api/replicas/2111ab48-0030-42c6-b69e-e91fc9653ef7" Name="vCD Replication Job 1" />     <Link Rel="Alternate" Type="VAppReplicaPointReference" Href="https://localhost:9398/api/vAppReplicaPoints/dc01c979-5f6a-409c-bcc2-c3c6ddf439b3" Name="vApp01@2025-02-04 00:08:35" />     <Link Rel="Down" Type="VmReplicaPointReference" Href="https://localhost:9398/api/vmReplicaPoints/34ed5f74-0184-4077-987a-36e41eef6668" Name="win7-QDrB@2025-02-04 01:49:04" />   </Links>   <CreationTimeUTC>2025-02-04T00:08:35.343Z</CreationTimeUTC>   <VAppName>vApp01</VAppName>   <Algorithm>Full</Algorithm>   <PointType>Snapshot</PointType> </VAppReplicaPoint> |
 
+Page updated 2026-07-29
 
