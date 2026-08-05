@@ -3,8 +3,8 @@ title: "Capacity Tier"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/capacity_tier.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Capacity Tier
@@ -57,4 +57,5 @@ In This Section
 * [Managing Capacity Tier](managing_capacity_tier_data.md)
 * [Restore from Capacity Tier](restore_capacity_tier.md)
 
+Page updated 2026-06-23
 
