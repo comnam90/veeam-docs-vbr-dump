@@ -3,8 +3,8 @@ title: "Add-VBRBackupServerCertificate"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrbackupservercertificate.html"
-last_updated: "1/6/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRBackupServerCertificate
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Add-VBRBackupServerCertificate -Certificate <VBRBackupServerCertificate> [-WhatIf] [-Confirm] [<CommonParameters>] |
+| Add-VBRBackupServerCertificate -Certificate <VBRBackupServerCertificate> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>] |
 
 * Assign a certificate using the .CRT or .PEM and .KEY files associated with the certificate.
 
 |  |
 | --- |
-| Add-VBRBackupServerCertificate -CertificatePath <String> -PrivateKeyPath <String> [-Password <SecureString>]  [-WhatIf] [-Confirm] [<CommonParameters>] |
+| Add-VBRBackupServerCertificate -CertificatePath <String> -PrivateKeyPath <String> [-Password <SecureString>] [-Force]  [-WhatIf] [-Confirm] [<CommonParameters>] |
 
 Detailed Description
 
@@ -45,13 +45,15 @@ This cmdlet specifies a TLS certificate to be used to establish a secure connect
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Certificate | Specifies the certificate you want to use. | Accepts the VBRBackupServerCertificate object. To create this object, run the [Get-VBRBackupServerCertificate](get-vbrbackupservercertificate.md) cmdlet. | True | Named | True (ByValue, |
-| CertificatePath | Specifies the full path to the .CRT or .PEM file associated with the certificate. | String | True | Named | False |
-| Password | Specifies the full path to the KEY file associated with the certificate. | SecureString | False | Named | False |
-| PrivateKeyPath | Specifies a secure string that contains the password for the certificate file. | String | True | Named | False |
+| Certificate | Specifies the certificate you want to use. | Accepts the VBRBackupServerCertificate object. To get this object, run the [Get-VBRBackupServerCertificate](get-vbrbackupservercertificate.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
+| CertificatePath | Specifies the full path to the certificate file (for example, a .crt or .pem file). The cmdlet does not accept .pfx files; see the Important note above. | String | True | Named | False |
+| Password | Specifies a secure string that contains the password for the certificate file. | SecureString | False | Named | False |
+| PrivateKeyPath | Specifies the full path to the KEY file associated with the certificate. | String | True | Named | False |
 | Name | Note: This parameter is obsolete.  Specifies a friendly name for the self-signed TLS certificate. | String | True | Named | True (ByValue, ByProperty Name) |
+| Force | Defines that the cmdlet installs the certificate without prompting you to confirm the operation. | SwitchParameter | False | Named | False |
 | WhatIf | Defines that the cmdlet will write a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
 | Confirm | Defines that the cmdlet will display a prompt that asks if you want to continue running the command. | SwitchParameter | False | Named | False |
 
@@ -69,7 +71,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to assign a certificate using certificate files.  |  | | --- | | Add-VBRBackupServerCertificate -CertificatePath "C:\Certs\TechCompany.crt" -PrivateKeyPath  "C:\Certs\OmegaCompany.key" -Password (Read-Host -AsSecureString "Enter certificate password") | |
+| This example shows how to assign a certificate using certificate files.  |  | | --- | | Add-VBRBackupServerCertificate -CertificatePath "C:\Certs\TechCompany.crt" -PrivateKeyPath "C:\Certs\TechCompany.key" -Password (Read-Host -AsSecureString "Enter certificate password") | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Importing Certificate from Certificate Store
 
@@ -81,4 +83,5 @@ Related Commands
 
 [Get-VBRBackupServerCertificate](get-vbrbackupservercertificate.md)
 
+Page updated 2026-06-12
 
