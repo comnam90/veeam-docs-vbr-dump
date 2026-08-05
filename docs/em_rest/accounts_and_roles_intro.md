@@ -3,8 +3,8 @@ title: "Accounts and Roles"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/accounts_and_roles_intro.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Accounts and Roles
@@ -24,4 +24,5 @@ In this section
 * [/security/accounts/{ID}/scopes](security_accounts_id_scopes.md)
 * [/security/accounts/{ID}/scopes/{ID}](security_accounts_id_scopes_id.md)
 
+Page updated 2026-07-29
 
