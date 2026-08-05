@@ -3,8 +3,8 @@ title: "Switching from Linux Repository to Hardened Repository"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_sobr_migration_linux.html"
-last_updated: "4/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Switching from Linux Repository to Hardened Repository
@@ -53,7 +53,7 @@ For detailed requirements and limitations for a hardened repository, see the [Re
 
 * In the Veeam Backup & Replication console, disable all tenants whose data resides in the Linux repository used as a cloud repository. Make sure related sessions are finalized.
 
-For details, see [Disabling and Enabling Tenant Accounts](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_disable_account.html?ver=120).
+For details, see [Disabling and Enabling Tenant Accounts](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_disable_account.html?ver=13).
 
 * [For a scale-out backup repository] In the Veeam Backup & Replication console, put the Linux backup repository used as a performance extent of a scale-out backup repository to the Maintenance mode.
 
@@ -149,4 +149,5 @@ To map the existing backup chain, do the following:
 4. When prompted that the selected backup is already used by another job, confirm the warning.
 5. Delete the original job. For details, see the [Deleting Backup Jobs](https://helpcenter.veeam.com/docs/vbr/userguide/rescanning_backup_repositories.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
+Page updated 2026-07-29
 
