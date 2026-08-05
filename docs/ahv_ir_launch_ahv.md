@@ -3,8 +3,8 @@ title: "Step 1. Launch Instant Recovery Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_ir_launch_ahv.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Instant Recovery Wizard
@@ -21,4 +21,5 @@ Alternatively, expand the necessary backup job, select the VM and click Instant 
 
 [![Step 1. Launch Instant Recovery Wizard](images/ahv_ir_launch_ahv.webp)](images/ahv_ir_launch_ahv.webp)
 
+Page updated 2026-07-16
 
