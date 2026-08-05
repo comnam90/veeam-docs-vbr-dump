@@ -3,8 +3,8 @@ title: "Start-VBRViInstantVMDiskRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrviinstantvmdiskrecovery.html"
-last_updated: "12/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRViInstantVMDiskRecovery
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Start-VBRViInstantVMDiskRecovery -RestorePoint <COib> [-ShareCredentials <CCredentials>] -TargetVM <CViVmItem> -TargetVirtualDevice  <VBRViVirtualDevice[]> [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-Reason <string>] [-RunAsync] [-Force]  [<CommonParameters>] |
+| Start-VBRViInstantVMDiskRecovery -RestorePoint <COib> [-ShareCredentials <CCredentials>] -TargetVM <CViVmItem> -TargetVirtualDevice  <VBRViVirtualDevice[]> [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-Reason <string>] [-RunAsync] [-Force] [-ForceArchivedSnapshotsRestore] [-EnableClusterWideMount]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,8 +30,9 @@ This cmdlet starts restore of VM virtual disks from backups. You can publish the
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point of VMs. The cmdlet will restore virtual disks of these VMs. | Accepts the COib object. To get this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | TargetVM | Specifies a target VM. The cmdlet will restore virtual disks to the specified VM. | Accepts the CViVmItem object. To get this object, run the [Find-VBRViEntity](find-vbrvientity.md) cmdlet. | True | Named | False |
 | TargetVirtualDevice | Specifies an array of target VM device nodes. The cmdlet will map the virtual disks from backup to the specified node. | Accepts the VBRViVirtualDevice[] object. To get this object, run the [Get-VBRViVirtualDevice](get-vbrvivirtualdevice.md) cmdlet. | True | Named | False |
@@ -43,6 +44,8 @@ Parameters
 | Reason | Specifies a reason for performing instant recovery of VM virtual disks. | String | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will perform restore of VM virtual disks even if the geographic location of the repository where backups of VM virtual disks reside and the target host location does not match. | SwitchParameter | False | Named | False |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
+| EnableClusterWideMount | Defines that the cmdlet will mount the vPowerNFS datastore to all ESXi hosts in the target cluster. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -91,4 +94,5 @@ Related Commands
 * [Get-VBRServer](get-vbrserver.md)
 * [Find-VBRViEntity](find-vbrvientity.md)
 
+Page updated 2026-05-14
 
