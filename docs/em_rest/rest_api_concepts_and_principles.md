@@ -3,8 +3,8 @@ title: "Concepts And Principles"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/rest_api_concepts_and_principles.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Concepts And Principles
@@ -18,4 +18,5 @@ In This Section
 * [Resources](resources.md)
 * [HTTP Requests and Responses](http_requests_and_responses.md)
 
+Page updated 2026-07-29
 
