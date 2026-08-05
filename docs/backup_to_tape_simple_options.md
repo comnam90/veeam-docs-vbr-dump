@@ -3,8 +3,8 @@ title: "Options for Backup to Tape Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_simple_options.html"
-last_updated: "7/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Options for Backup to Tape Job
@@ -25,9 +25,10 @@ In the Media Automation section, specify options for automatic operations after 
 
 If you want to export tapes on specific days only (for example, every Saturday), click Days and schedule export on the necessary days.
 
-* If the media pool, which is the target for the tape job, uses parallel processing, you can limit the number of drives to use for processing this tape job. To enable this, select the Limit the number of drives this job can use to N tape drives check box and specify the number of drives to use. For more information on how to enable parallel processing for the media pool, see [Add Optional Media Pool Settings](add_media_pool_encryption.md).
+* If the media pool, which is the target for the tape job, uses [parallel processing](parallel_processing.md), you can limit the number of drives to use for processing this tape job. To enable this, select the Limit the number of drives this job can use to N tape drives check box and specify the number of drives to use. For more information on how to enable parallel processing for the media pool, see [Add Optional Media Pool Settings](add_media_pool_encryption.md).
 * Click Advanced to configure the advanced job options.
 
 ![Options for Backup to Tape Job](images/backup_to_tape_options.webp)
 
+Page updated 2026-07-15
 
