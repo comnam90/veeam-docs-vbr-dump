@@ -3,8 +3,8 @@ title: "Guest OS File Exclusion Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_guest_exclusions.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Guest OS File Exclusion Settings
@@ -44,4 +44,5 @@ To exclude guest OS files and folders from being replicated:
 
 ![Guest OS File Exclusion Settings](images/vcd_replica_guest_exclusions.webp)
 
+Page updated 2026-08-04
 
