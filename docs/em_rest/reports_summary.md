@@ -3,8 +3,8 @@ title: "/reports/summary"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/reports_summary.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /reports/summary
@@ -42,6 +42,7 @@ The /reports/summary resource has a resource representation of the following typ
 
 |  |
 | --- |
-| <SummaryReport xmlns="http://www.veeam.com/ent/v1.0"> |
+| <SummaryReport xmlns="http://www.veeam.com/ent/v1.0">   <Links>     <Link Rel="Down" Type="ReportFrame" Href="https://localhost:9398/api/reports/summary/overview" Name="Overview" />     <Link Rel="Down" Type="ReportFrame" Href="https://localhost:9398/api/reports/summary/vms\_overview" Name="VmsOverview" />     <Link Rel="Down" Type="ReportFrame" Href="https://localhost:9398/api/reports/summary/job\_statistics" Name="JobStatistics" />     <Link Rel="Down" Type="ReportFrame" Href="https://localhost:9398/api/reports/summary/processed\_vms" Name="ProcessedVms" />     <Link Rel="Down" Type="ReportFrame" Href="https://localhost:9398/api/reports/summary/repository" Name="Repositories" />   </Links> </SummaryReport> |
 
+Page updated 2026-07-29
 
