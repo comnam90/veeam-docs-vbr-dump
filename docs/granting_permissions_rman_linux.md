@@ -1,16 +1,16 @@
 ---
-title: "Granting User Permissions on Linux and UNIX Machines"
+title: "Granting User Permissions on Linux and Unix Machines"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/granting_permissions_rman_linux.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Granting User Permissions on Linux and UNIX Machines
+# Granting User Permissions on Linux and Unix Machines
 
 
-On Linux and UNIX machines, you can set up access to the plug-in configuration files in command line interface.
+On Linux and Unix machines, you can set up access to the plug-in configuration files in command line interface.
 
 By default, the Veeam Plug-In configuration file (veeam\_config.xml) is located in the /opt/veeam/VeeamPluginforOracleRMAN directory on the machine where Veeam Plug-In is installed. To grant access to the configuration file to a dedicated group of users, do the following:
 
@@ -47,4 +47,5 @@ where <groupName> is the name of the created group.
 | --- |
 | sudo chmod 660 /opt/veeam/VeeamPluginforOracleRMAN/veeam\_config.xml |
 
+Page updated 2026-07-08
 
