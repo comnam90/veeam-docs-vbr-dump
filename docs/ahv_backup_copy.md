@@ -3,8 +3,8 @@ title: "Copying Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_backup_copy.html"
-last_updated: "2/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Copying Backups
@@ -22,11 +22,12 @@ Note that for backup copies, you can also use [Veeam Cloud Connect repositories]
 
 |  |
 | --- |
-| NotE |
+| Note |
 | Veeam Plug-in for Nutanix AHV copies all backups produced by a source backup job — you cannot select backups of specific VMs. |
 
 Alternatively, you can create a copy of a backup without configuring a job as described in section [Copying Backups](copy_backup.md).
 
 [![Copying Backups](images/ahv_backup_copy.webp)](images/ahv_backup_copy.webp "Copying Backups")
 
+Page updated 2026-07-14
 
