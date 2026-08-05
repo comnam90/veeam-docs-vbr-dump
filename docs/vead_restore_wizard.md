@@ -3,8 +3,8 @@ title: "Step 1. Launch Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restore_wizard.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Restore Wizard
@@ -17,4 +17,5 @@ To launch the Restore wizard, do the following:
 
 [![Restoring Objects](images/restore_object_1.webp)](images/restore_object_1.webp "Restoring Objects")
 
+Page updated 2026-08-04
 
