@@ -3,8 +3,8 @@ title: "Transport Modes"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/transport_modes.html"
-last_updated: "3/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Transport Modes
@@ -52,9 +52,9 @@ Transport Mode Limitations
 
 | Component Used as Backup Proxy | Direct Storage Access | | | Virtual Appliance | Network Mode |
 | Direct SAN Access1 | Direct NFS Access | Storage Integration Access1 |
-| Veeam Software Appliance | ✕ | ✕ | ✕ | ✕ | ✓ |
-| Veeam Infrastructure Appliance2 | ✕ | ✓ | NFS | ✓ | ✓ |
-| Veeam Infrastructure Appliance with iSCSI and NVMe/TCP2 | ✓ | ✓ | iSCSI, FC, NFS, NVMe-TCP | ✓ | ✓ |
+| Veeam Software Appliance | ✕ | ✕ | ✕ | ✓ | ✓ |
+| Veeam Infrastructure Appliance2 | ✓ | ✓ | iSCSI, FC, NFS | ✓ | ✓ |
+| Veeam Infrastructure Appliance with iSCSI and NVMe/TCP2 | ✓ | ✓ | iSCSI, FC, NFS, NVMe-FC, NVMe-TCP | ✓ | ✓ |
 | Veeam Hardened Repository | ✕ | ✕ | ✕ | ✕ | ✓ |
 | Microsoft Windows-based backup server | ✓ | ✓ | iSCSI, FC, NFS | ✓ | ✓ |
 | Microsoft Windows server | ✓ | ✓ | iSCSI, FC, NFS | ✓ | ✓ |
@@ -65,4 +65,5 @@ Transport Mode Limitations
 
 2 These backup infrastructure components may support additional transport modes and block protocols if configured manually using root access permissions.
 
+Page updated 2026-07-30
 
