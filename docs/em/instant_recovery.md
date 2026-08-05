@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Instant Recovery
@@ -33,5 +33,5 @@ You can recover workloads from the following types of backups:
 * Backups of VMware Cloud Director virtual machines created by Veeam Backup & Replication
 * Backups of Microsoft Hyper-V virtual machines created by Veeam Backup & Replication
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
