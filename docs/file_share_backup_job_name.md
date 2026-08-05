@@ -3,8 +3,8 @@ title: "Step 2. Specify Job Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_name.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Job Name and Description
@@ -23,4 +23,5 @@ At the Name step of the wizard, specify a name and description for the file ba
 
 ![Step 2. Specify Job Name and Description](images/file_share_backup_job_name.webp "Specify Job Name and Description")
 
+Page updated 2026-07-28
 
