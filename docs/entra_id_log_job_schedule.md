@@ -3,8 +3,8 @@ title: "Step 6. Define Job Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_log_job_schedule.html"
-last_updated: "2/27/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Define Job Schedule
@@ -54,4 +54,5 @@ To do that, select the Terminate the job outside of the allowed backup window ch
 
 ![Step 6. Define Job Schedule](images/entra_id_log_job_schedule.webp "Configure Schedule")
 
+Page updated 2026-07-08
 
