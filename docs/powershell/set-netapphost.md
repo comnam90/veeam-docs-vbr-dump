@@ -3,8 +3,8 @@ title: "Set-NetAppHost"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-netapphost.html"
-last_updated: "7/16/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-NetAppHost
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Set-NetAppHost -Host <CNaHost> [-Name <string>] [-Description <string>] [-UserName <string>] [-Password <string>] [-Credentials <CInternalCredentials>] [-IsHTTP <bool>] [-Port <int>] [-Proxy <IProxy[]>] [-MountServer <CHost>] [-WindowsMountServer <CHost>] [-LinuxMountServer <CHost>]  [-VolumeScanType {All | Exclude | Include}] [-IncludedVolume <CSanInfrastructureVolume[]>] [-ExcludedVolume <CSanInfrastructureVolume[]>] [-IncludedWildcard <string[]>] [-ExcludedWildcard <string[]>] [-NASProxy <VBRNASProxyServer[]>] [-NASVolumeScanType {All | Exclude | Include}] [-NASIncludedVolume <CSanInfrastructureVolume[]>] [-NASExcludedVolume <CSanInfrastructureVolume[]>] [-NASIncludedWildcard <string[]>] [-NASExcludedWildcard <string[]>] [-AgentProxy <VBRNASProxyServer[]>] [-AgentVolumeScanType {All | Exclude | Include}] [-AgentIncludedVolume <CSanInfrastructureVolume[]>] [-AgentExcludedVolume <CSanInfrastructureVolume[]>] [-AgentIncludedWildcard <string[]>] [-AgentExcludedWildcard <string[]>] [-SkipRescan] [-Force] [-EnableProxyAutoSelection] [-ProtocolPolicy <VBRStorageProtocolPolicy>] [-NASEnableProxyAutoSelection] [-NASProtocolPolicy <VBRStorageProtocolPolicy>] [-AgentEnableProxyAutoSelection] [-AgentProtocolPolicy <VBRStorageProtocolPolicy>] [-EnableVMwareBackup] [-EnableNASBackup] [-EnableAgentBackup]  [<CommonParameters>] |
+| Set-NetAppHost -Host <CNaHost> [-Name <string>] [-Description <string>] [-UserName <string>] [-Password <string>] [-Credentials <CInternalCredentials>] [-IsHTTP <bool>] [-Port <int>] [-Proxy <IProxy[]>] [-MountServer <CHost>] [-WindowsMountServer <CHost>] [-LinuxMountServer <CHost>]  [-VolumeScanType {All | Exclude | Include}] [-IncludedVolume <CSanInfrastructureVolume[]>] [-ExcludedVolume <CSanInfrastructureVolume[]>] [-IncludedWildcard <string[]>] [-ExcludedWildcard <string[]>] [-NASProxy <VBRNASProxyServer[]>] [-NASVolumeScanType {All | Exclude | Include}] [-NASIncludedVolume <CSanInfrastructureVolume[]>] [-NASExcludedVolume <CSanInfrastructureVolume[]>] [-NASIncludedWildcard <string[]>] [-NASExcludedWildcard <string[]>] [-AgentProxy <VBRComputerFileProxyServer[]>] [-AgentVolumeScanType {All | Exclude | Include}] [-AgentIncludedVolume <CSanInfrastructureVolume[]>] [-AgentExcludedVolume <CSanInfrastructureVolume[]>] [-AgentIncludedWildcard <string[]>] [-AgentExcludedWildcard <string[]>] [-SkipRescan] [-Force] [-EnableProxyAutoSelection] [-ProtocolPolicy <VBRStorageProtocolPolicy>] [-NASEnableProxyAutoSelection] [-NASProtocolPolicy <VBRStorageProtocolPolicy>] [-AgentEnableProxyAutoSelection] [-AgentProtocolPolicy <VBRStorageProtocolPolicy>] [-EnableVMwareBackup] [-EnableNASBackup] [-EnableAgentBackup] [-EnableNDMPBackup]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -42,8 +42,9 @@ This cmdlet modifies settings of NetApp storage systems. When you modify storage
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Host | Specifies a storage that you want to modify. | Accepts the CNaHost object. To get this object, run the [Get-NetAppHost](get-netapphost.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the storage IP address or DNS name. | String | True | Named | False |
 | Description | Specifies a description of the storage. | String | False | Named | False |
@@ -58,6 +59,7 @@ Parameters
 | EnableVMwareBackup | Enables the VMware backup option.  If you provide this parameter, you will be able to use storage snapshots to backup and restore VMware vSphere VMs hosted on storage systems. | SwitchParameter | False | Named | False |
 | EnableNASBackup | Enables the file backup option.  If you provide this parameter, you will be able to integrate your storage systems with file shares added to your infrastructure. | SwitchParameter | False | Named | False |
 | EnableAgentBackup | Enables the Veeam Agent backup option.  If you provide this parameter, you will be able to integrate your storage systems with Veeam Agent for Microsoft Windows installed on computers in your infrastructure. | SwitchParameter | False | Named | False |
+| EnableNDMPBackup | Enables the NetApp SMTape backup option.  If you provide this parameter, you will be able to add NetApp NDMP-enabled LIFs as NDMP servers and write the NetApp volume data to tape. | SwitchParameter | False | Named | False |
 | Proxy | For the EnableVMwareBackup parameter.  Specifies an array of proxies you want to use with this storage. | String | False | Named | False |
 | EnableProxyAutoSelection | For the EnableVMwareBackup parameter.  Defines that Veeam Backup & Replication will use automatic proxy selection. | SwitchParameter | False | Named | False |
 | ProtocolPolicy | For the EnableVMwareBackup parameter.  Specifies the protocol policy for the storage. | Accepts the VBRStorageProtocolPolicy object. To create this object, run the [New-VBRStorageProtocolPolicy](new-vbrstorageprotocolpolicy.md) cmdlet. | False | Named | False |
@@ -72,7 +74,7 @@ Parameters
 | NASIncludedWildcard | For the NASVolumeScanType parameter with the include option.  Specifies an array of storage volumes with wildcard characters. Veeam Backup & Replication will rescan only those volumes which names are specified with these wildcard characters. | String | False | Named | False |
 | NASExcludedVolume | For the NASVolumeScanType parameter with the exclude option.  Specifies an array of storage volumes that you do not want to rescan.  Note: Veeam Backup & Replication will not show the excluded volumes in the backup infrastructure after the rescan. | Accepts the CSanInfrastructureVolume[] object. To create this object, run the [Get-NetAppInfrastructureVolume](get-netappinfrastructurevolume.md) cmdlet. | False | Named | False |
 | NASExcludedWildcard | For the NASVolumeScanType parameter with the exclude option.  Specifies an array of storage volumes with wildcard characters. Veeam Backup & Replication will not rescan the volumes which names are specified with these wildcard characters. | String | False | Named | False |
-| AgentProxy | For the EnableAgentBackup parameter.  Specifies an array of proxies you want to use with this storage. | Accepts the VBRComputerFileProxyServer object. To create this object, run the [Add-VBRComputerFileProxyServer](add-vbrcomputerfileproxyserver.md) cmdlet. | False | Named | False |
+| AgentProxy | For the EnableAgentBackup parameter.  Specifies an array of proxies you want to use with this storage. | Accepts the VBRComputerFileProxyServer[] object. To create this object, run the [Add-VBRComputerFileProxyServer](add-vbrcomputerfileproxyserver.md) cmdlet. | False | Named | False |
 | AgentVolumeScanType | For the EnableAgentBackup parameter.  Specifies the scope of volumes that you want to rescan.  You can use the following options to rescan the volumes:   * All - choose this option to scan all volumes that were added to your backup infrastructure with the initial scan. * Exclude - choose this option to exclude volumes from scan. Note: Veeam Backup & Replication will not show excluded volumes in the backup infrastructure after the rescan. Use the ExcludedVolume parameter to specify the excluded volumes. * Include - choose this option to scan only the specified storage volumes. Use the IncludedVolume parameter to specify the included volumes. | VBRVolumeScanType | False | Named | False |
 | AgentIncludedVolume | For the AgentVolumeScanType parameter with the include option.  Specifies an array of storage volumes that you want to rescan.  Note: Veeam Backup & Replication will show only rescanned volumes in the backup infrastructure. | Accepts the CSanInfrastructureVolume[] object. To create this object, run the [Get-NetAppInfrastructureVolume](get-netappinfrastructurevolume.md) cmdlet. | False | Named | False |
 | AgentExcludedVolume | For the AgentVolumeScanType parameter with the exclude option.  Specifies an array of storage volumes that you do not want to rescan.  Note: Veeam Backup & Replication will not show the excluded volumes in the backup infrastructure after the rescan. | Accepts the CSanInfrastructureVolume[] object. To create this object, run the [Get-NetAppInfrastructureVolume](get-netappinfrastructurevolume.md) cmdlet. | False | Named | False |
@@ -117,4 +119,5 @@ Related Commands
 * [New-VBRStorageProtocolPolicy](new-vbrstorageprotocolpolicy.md)
 * [Get-NetAppInfrastructureVolume](get-netappinfrastructurevolume.md)
 
+Page updated 2026-06-04
 
