@@ -3,8 +3,8 @@ title: "Step 7. Specify Service Account Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_account.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Specify Service Account Settings
@@ -17,7 +17,7 @@ You can select an account under which you want to run the Veeam Backup Service:
 * LOCAL SYSTEM account (recommended, used by default)
 * Custom user account
 
-The user name of the custom account must be specified in the DOMAIN\USERNAME format and have permissions described in [Permissions for Veeam Backup & Replication Services for Veeam Backup & Replication on Microsoft Windows](required_permissions.md#rpvbr).
+The user name of the custom account must be specified in the DOMAIN\USERNAME format and have permissions described in [Permissions for Veeam Backup & Replication Services for Veeam Backup & Replication on Microsoft Windows](permissions_installing.md#rpvbr).
 
 |  |
 | --- |
@@ -26,4 +26,5 @@ The user name of the custom account must be specified in the DOMAIN\USERNAME for
 
 ![Step 7. Specify Service Account Settings](images/installation_service_account.webp)
 
+Page updated 2026-08-04
 
