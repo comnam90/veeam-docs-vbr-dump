@@ -3,8 +3,8 @@ title: "Changed Block Tracking"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_changed_block_tracking.html"
-last_updated: "4/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Changed Block Tracking
@@ -18,7 +18,7 @@ The changed block tracking (CBT) mechanism allows Veeam Backup & Replication to 
 To detect unallocated and changed data blocks, CBT relies on the QEMU Dirty Bitmaps functionality:
 
 1. During the first (full) backup session, Veeam Backup & Replication [creates a bitmap](https://qemu-project.gitlab.io/qemu/interop/bitmaps.html) for each disk that is attached to a processed VM.
-2. During subsequent sessions, Veeam Backup & Replication uses the created bitmaps to compare the contents of disks backed up during the previous backup session and the current disk contents. This allows Veeam Backup & Replicationto detect data blocks that have changed since the previous backup session. As soon as a new backup is created, Veeam Backup & Replication updates the bitmaps to include the latest changes.
+2. During subsequent sessions, Veeam Backup & Replication uses the created bitmaps to compare the contents of disks backed up during the previous backup session and the current disk contents. This allows Veeam Backup & Replication to detect data blocks that have changed since the previous backup session. As soon as a new backup is created, Veeam Backup & Replication updates the bitmaps to include the latest changes.
 
 Limitations for Changed Block Tracking
 
@@ -29,4 +29,5 @@ Due to Proxmox VE technical limitations, bitmaps created for disks in the RAW an
 | Note |
 | This limitation does not apply to disks in the QCOW2 format. |
 
+Page updated 2026-07-16
 
