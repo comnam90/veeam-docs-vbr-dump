@@ -3,8 +3,8 @@ title: "Step 3. Specify Cloud Storage Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_azure_account.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify Cloud Storage Account
@@ -14,7 +14,7 @@ At the Account step of the wizard, specify settings for an account which will be
 
 1. From the Credentials drop-down list, select user credentials to access your Azure Blob storage.
 
-If you have not set up credentials beforehand in the [Cloud Credentials Manager](cloud_credentials.md), click the Manage cloud accounts link or click Add on the right to add the necessary credentials.
+If you have not set up credentials beforehand in the [Cloud Credentials Manager](cloud_credentials.md), click the Manage cloud accounts link or click Add on the right to add the necessary credentials. You can use your Microsoft Azure storage account (shared key) or Microsoft Azure storage account (Entra ID) to authenticate.
 
 1. From the Region drop-down list, select the region type.
 2. From the Gateway server drop-down list, select a gateway server that will be used to access Azure Blob storage. We recommend that you use a gateway server, for example, if your organization has NAT or different types of firewalls and your access to the internet is limited.
@@ -30,4 +30,5 @@ By default, the role of a gateway server is assigned to the Veeam Backup & Repli
 
 [![Step 3. Specify Cloud Storage Account](images/external_azure_wizard_account.webp)](images/external_azure_wizard_account.webp)
 
+Page updated 2026-07-24
 
