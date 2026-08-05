@@ -3,8 +3,8 @@ title: "Connecting HPE Morpheus VM Essentials Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_connecting_manager.html"
-last_updated: "2/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Connecting HPE Morpheus VM Essentials Server
@@ -14,9 +14,10 @@ An HPE Morpheus VM Essentials manager allows the backup server to access HPE Mor
 
 In This Section
 
-* [Adding HPE Morpheus VM Essentials Server to Backup Infrastructure](hpe_sever_add.md)
+* [Adding HPE Morpheus VM Essentials Server to Backup Infrastructure](hpe_server_add.md)
 * [Editing HPE Morpheus VM Essentials Server Properties](hpe_server_edit.md)
 * [Rescanning HPE Morpheus VM Essentials Server](hpe_server_rescan.md)
 * [Removing HPE Morpheus VM Essentials Server](hpe_server_remove.md)
 
+Page updated 2026-07-22
 
