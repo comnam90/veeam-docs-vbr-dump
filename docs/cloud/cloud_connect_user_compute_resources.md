@@ -3,8 +3,8 @@ title: "Step 5. Allocate Replication Resources"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user_compute_resources.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Allocate Replication Resources
@@ -24,4 +24,5 @@ To subscribe a tenant to a hardware plan:
 
 ![Step 5. Allocate Replication Resources](images/add_user_replica_resources.webp)
 
+Page updated 2026-08-04
 
