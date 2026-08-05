@@ -3,8 +3,8 @@ title: "Converting Backup Copy to Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mapping_backup_copy_mssql.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Converting Backup Copy to Backup
@@ -39,4 +39,5 @@ To convert a backup copy to a primary backup, do the following:
 | --- |
 | Backup copies available for promotion to the primary backup target:  1. Backup Copy Job 1\SERV01 Microsoft SQL backup (Default Backup Repository)  Select a backup copy: 1  Proceed with the action?  1. Promote backup copy destination to the primary backup target  2. Cancel  Enter selection: 1  Promoting backup copy destination  Done |
 
+Page updated 2026-06-25
 
