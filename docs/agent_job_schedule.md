@@ -3,8 +3,8 @@ title: "Step 11. Specify Backup Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_schedule.html"
-last_updated: "2/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 11. Specify Backup Schedule
@@ -38,7 +38,7 @@ For example, you have configured a job to run with a 2-hour interval and defined
 
 |  |
 | --- |
-| ![Step 11. Specify Backup Schedule](images/icon_note.webp) NOTE |
+| NOTE |
 | The After this job function will automatically start a job if the first job in the chain is started automatically by schedule. If you start the first job manually, Veeam Backup & Replication will display a notification. You will be able to choose whether Veeam Backup & Replication must start the chained job as well. |
 
 1. In the Automatic retry section, define whether Veeam Backup & Replication must attempt to run the backup job again if the job fails for some reason. Enter the number of attempts to run the job and define time intervals between them. If you select continuous backup, Veeam Backup & Replication retries the job for the defined number of times without any time intervals between the job runs.
@@ -48,13 +48,17 @@ For example, you have configured a job to run with a 2-hour interval and defined
 | NOTE |
 | The automatic retry does not start if you run the backup job manually. In this case, you can manually retry the backup job. To learn more, see [Retrying Veeam Agent Backup Job](agent_job_retry.md). |
 
-1. In the Backup window section, define the time interval within which the backup job must complete. The backup window prevents the job from overlapping with production hours and ensures that the job does not impact performance of your server. To set up a backup window for the job:
+1. In the Backup window section, define the time interval during which the backup job must complete. The backup window helps prevent the job from overlapping with production hours and reduces the impact on server performance. To configure a backup window for the job, do the following:
 
-1. Select the Terminate job if it exceeds allowed backup window check box and click Window.
-2. In the Time Periods window, define the allowed hours and prohibited hours for backup.
+1. Select the Terminate job outside of the backup window check box and click Window.
+2. In the Time Periods window, define the allowed and prohibited hours for backup:
 
-If the job exceeds the allowed window, it will be automatically terminated. In this case, data transport and backup chain transformation processes are stopped. Keep in mind that this behavior differs from a VM backup job where backup window affects data transport process and health check operations only.
+* Green cells indicate the Permitted window — the hours when the backup job is allowed to run.
+* White cells indicate the Denied window — the hours when the backup job is not allowed to run. If the Terminate job outside of the backup window check box is selected, a job that is still running when the denied window starts is automatically terminated.
+
+If the job runs outside the allowed window, it is terminated automatically. In this case, data transport and backup chain transformation processes are stopped. Keep in mind that this behavior differs from a VM backup job where backup window affects data transport process and health check operations only.
 
 ![Step 11. Specify Backup Schedule](images/agent_job_schedule_server.webp "Specify Scheduling Settings for Servers and Clusters")
 
+Page updated 2026-07-15
 
