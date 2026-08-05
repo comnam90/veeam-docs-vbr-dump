@@ -3,8 +3,8 @@ title: "How Immutability Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_immutability.html"
-last_updated: "4/28/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Immutability Works
@@ -138,4 +138,5 @@ Consider the following retention scenarios:
 
 * [With disabled retention period] Veeam Backup & Replication ignores the VeeamZIP or Export Backup retention period. The immutability time period for VeeamZIP or Export Backup backup files equals the period specified in the setting of a hardened repository.
 
+Page updated 2026-06-30
 
