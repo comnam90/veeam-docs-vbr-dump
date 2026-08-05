@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_permissions.html"
-last_updated: "5/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Permissions
@@ -28,13 +28,13 @@ Adding and Backing Up Tenants
 
 | Application | Permissions |
 | New | The Microsoft Entra ID user account associated with the tenant where the Microsoft Entra ID application will be created must have the following built-in roles assigned:   * [Application Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator) * [Privileged Role Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator)   As an alternative, you can assign the [Global Administrator Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-administrator) built-in role. |
-| Existing | To perform backup, the application must have the following permissions:   * [Microsoft Graph application permissions](https://learn.microsoft.com/en-us/graph/permissions-reference).   For essential tenant items backup: Directory.Read.All, Group.Read.All, MailboxSettings.Read, RoleManagement.Read.Directory, User.Read.All.  For optional tenant items backup: Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.Read.All.  For log backup: AuditLog.Read.All. |
+| Existing | To perform backup, the application must have the following permissions:   * [Microsoft Graph application permissions](https://learn.microsoft.com/en-us/graph/permissions-reference).   For essential tenant items backup: Directory.Read.All, Group.Read.All, MailboxSettings.Read, RoleManagement.Read.Directory, User.Read.All.  For optional tenant items backup: Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.Read.All, BitlockerKey.Read.All.  For log backup: AuditLog.Read.All. |
 | To perform restore, the application must have the following permissions:   * [Microsoft Graph delegated permissions](https://learn.microsoft.com/en-us/graph/permissions-reference).   For essential tenant items restore: Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory, AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All, Application.ReadWrite.All, Group.ReadWrite.All.  For optional tenant items restore: Policy.ReadWrite.ConditionalAccess, Agreement.Read.All, DeviceManagementConfiguration.ReadWrite.All.   * [API delegated permissions](https://learn.microsoft.com/en-us/information-protection/develop/concept-api-permissions): user\_impersonation   Note: Make sure that the Allow public client flows option is enabled for the application. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#authentication-setting-confidential-vs-public). |
 
 |  |
 | --- |
 | Important |
-| * Application permissions cannot be used to restore [device configuration profiles](https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles) of the editionUpgradeConfiguration resource type — these profiles can be restored using delegated permissions only. * When restoring device configuration profiles of the editionUpgradeConfiguration resource type, Veeam Backup for Microsoft Entra ID rewrites values of the License and ProductKey properties with predefined placeholders. To change these values, update the properties manually in the Intune Admin Center. |
+| * Application permissions cannot be used to restore [device configuration profiles](https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles) of the editionUpgradeConfiguration resource type — these profiles can be restored using delegated permissions only. * When restoring device configuration profiles of the editionUpgradeConfiguration resource type, Veeam Backup for Microsoft Entra ID rewrites values of the License and ProductKey properties with predefined placeholders. To change these values, [update the properties manually](https://learn.microsoft.com/en-us/intune/device-configuration/templates/ref-edition-upgrade-settings-windows#edition-upgrade) in the Intune Admin Center. |
 
 Restoring Tenant Data
 
@@ -53,4 +53,5 @@ This user must have with the following roles:
 
 As an alternative, you can use [Global Administrator Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-administrator) plus [Conditional Access Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) (recommended) or plus [Security Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#security-administrator) roles.
 
+Page updated 2026-05-26
 
