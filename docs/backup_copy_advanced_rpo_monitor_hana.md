@@ -3,8 +3,8 @@ title: "RPO Warning Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_rpo_monitor_hana.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # RPO Warning Settings
@@ -18,4 +18,5 @@ If the backup copy is not created within the specified time period, the backup c
 
 ![RPO Warning Settings](images/plugins_backup_copy_rpo.webp)
 
+Page updated 2026-08-04
 
