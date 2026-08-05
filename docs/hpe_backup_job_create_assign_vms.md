@@ -3,8 +3,8 @@ title: "Step 3. Configure Backup Source Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_backup_job_create_assign_vms.html"
-last_updated: "3/10/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Configure Backup Source Settings
@@ -47,6 +47,7 @@ By default, jobs process all disks attached to VMs included into the backup scop
 
 Disks that you do not select will be excluded from the backup job.
 
-[![Select Disks and Volume Groups](images/hpe_backup_job_create_disk_excludes.webp)](images/hpe_backup_job_create_disk_excludes.webp "Select Disks and Volume Groups")
+[![Select Disks](images/hpe_backup_job_create_disk_excludes.webp)](images/hpe_backup_job_create_disk_excludes.webp "Select Disks")
 
+Page updated 2026-07-22
 
