@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/reports_on_policies.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Viewing Policies
@@ -43,5 +43,5 @@ In addition to the information presented in the list of policies, the Policies t
 
 [![CDP Policy Statistics](images/em_cdp_policies_tab.webp)](images/em_cdp_policies_tab.webp "CDP Policy Statistics")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
