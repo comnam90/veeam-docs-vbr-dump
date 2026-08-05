@@ -3,8 +3,8 @@ title: "Continuous Data Protection (CDP)"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/cdp.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Continuous Data Protection (CDP)
@@ -38,4 +38,5 @@ In this section
 * [/cdpReplicaTaskSessions](cdpreplicatasksessions.md)
 * [/cdpReplicaTaskSessions/{ID}](cdpreplicatasksessions_id.md)
 
+Page updated 2026-07-29
 
