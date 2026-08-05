@@ -3,8 +3,8 @@ title: "Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_backup_files.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Files
@@ -44,5 +44,7 @@ After one of the limits is archived, Veeam Plug-In closes the backup file and ca
 
 * Set the immutability for the backup file.
 * Copy and move backup file to the capacity tier.
+* Copy backup file to tape.
 
+Page updated 2026-07-13
 
