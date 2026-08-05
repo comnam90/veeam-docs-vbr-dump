@@ -3,8 +3,8 @@ title: "/hierarchyRoots/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/hierarchyroots_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /hierarchyRoots/{ID}
@@ -45,7 +45,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="HierarchyRootReference" Href="https://localhost:9398/api/hierarchyRoots/0d7ea80c-6ac8-46bf-863c-3a6093f8baec" Name="vcdev51" UID="urn:veeam:HierarchyRoot:0d7ea80c-6ac8-46bf-863c-3a6093f8baec"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="HierarchyRootReference" Href="https://localhost:9398/api/hierarchyRoots/0d7ea80c-6ac8-46bf-863c-3a6093f8baec" Name="vcdev51" UID="urn:veeam:HierarchyRoot:0d7ea80c-6ac8-46bf-863c-3a6093f8baec">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/ce15a8c7-aa49-495e-b05b-ee3398c91018" Name="srv02.tech.local" />     <Link Rel="Alternate" Type="HierarchyRoot" Href="https://localhost:9398/api/hierarchyRoots/0d7ea80c-6ac8-46bf-863c-3a6093f8baec?format=Entity" Name="vc01" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -53,4 +53,5 @@ Entity resource representation:
 | --- |
 | <HierarchyRoot xmlns="http://www.veeam.com/ent/v1.0" Type="HierarchyRoot" Href="https://localhost:9398/api/hierarchyRoots/0d7ea80c-6ac8-46bf-863c-3a6093f8baec?format=Entity" Name="vcdev51" UID="urn:veeam:HierarchyRoot:0d7ea80c-6ac8-46bf-863c-3a6093f8baec">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/ce15a8c7-aa49-495e-b05b-ee3398c91018" Name="srv02.tech.local" />     <Link Rel="Alternate" Type="HierarchyRootReference" Href="https://localhost:9398/api/hierarchyRoots/0d7ea80c-6ac8-46bf-863c-3a6093f8baec" Name="vc01" />     <Link Rel="Related" Type="ManagedServer" Href="https://localhost:9398/api/managedServers/0d7ea80c-6ac8-46bf-863c-3a6093f8baec?format=Entity" Name="vc01" />   </Links>   <HierarchyRootId>0d7ea80c-6ac8-46bf-863c-3a6093f8baec</HierarchyRootId>   <UniqueId>09D89361-9178-4EAF-8037-E4E82B1932F0</UniqueId>   <HostType>VC</HostType> </HierarchyRoot> |
 
+Page updated 2026-07-29
 
