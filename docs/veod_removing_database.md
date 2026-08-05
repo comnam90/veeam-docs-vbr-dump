@@ -3,8 +3,8 @@ title: "Removing Organizations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veod_removing_database.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Organizations
@@ -16,4 +16,5 @@ To remove an organization from the application scope, right-click an organizatio
 
 [![Removing Organizations ](images/onedrive_removing.webp)](images/onedrive_removing.webp "Removing Organizations ")
 
+Page updated 2026-08-04
 
