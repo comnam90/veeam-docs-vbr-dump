@@ -3,8 +3,8 @@ title: "Start-VBRWindowsGuestItemRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrwindowsguestitemrestore.html"
-last_updated: "7/24/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRWindowsGuestItemRestore
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRWindowsGuestItemRestore -Path <String[]> [-Session <CRestoreSession>] [-FileRestore <FileRestore>] -RestorePolicy <VBRWindowsGuestItemRestorePolicy> [-GuestCredentials <CCredentials>] [-TargetViVm <CViVmItem>] [-TargetVcdVm <CVcdVmItem>] [-TargetHvVm <CHvVmItem>] [-TargetAgentMachine <VBRDiscoveredComputer>] [-TargetDirectory <String>] [-PermissionsOnly] [-ChangedItemsOnly] [-RunAsync] [<CommonParameters>] |
+| Start-VBRWindowsGuestItemRestore -Path <String[]> [-Session <CRestoreSession>] [-FileRestore <FileRestore>] -RestorePolicy <VBRWindowsGuestItemRestorePolicy> [-GuestCredentials <CCredentials>] [-TargetViVm <CViVmItem>] [-TargetVcdVm <CVcdVmItem>] [-TargetHvVm <CHvVmItem>] [-TargetAgentMachine <VBRDiscoveredComputer>] [-TargetDirectory <String>] [-PermissionsOnly] [-ChangedItemsOnly] [-RunAsync] [-ForceArchivedSnapshotsRestore] [<CommonParameters>] |
 
 * Restore files and folders from a backup to another machine in your infrastructure. Files and folders are specified using the Get-VBRWindowsGuestItem cmdlet.
 
 |  |
 | --- |
-| Start-VBRWindowsGuestItemRestore -Item <VBRFLRFsItem[]> [-Session <CRestoreSession>] [-FileRestore <FileRestore>] -RestorePolicy <VBRWindowsGuestItemRestorePolicy> [-GuestCredentials <CCredentials>] [-TargetViVm <CViVmItem>] [-TargetVcdVm <CVcdVmItem>] [-TargetHvVm <CHvVmItem>] [-TargetAgentMachine <VBRDiscoveredComputer>] [-TargetDirectory <String>] [-PermissionsOnly] [-ChangedItemsOnly] [-RunAsync] [<CommonParameters>] |
+| Start-VBRWindowsGuestItemRestore -Item <VBRFLRFsItem[]> [-Session <CRestoreSession>] [-FileRestore <FileRestore>] -RestorePolicy <VBRWindowsGuestItemRestorePolicy> [-GuestCredentials <CCredentials>] [-TargetViVm <CViVmItem>] [-TargetVcdVm <CVcdVmItem>] [-TargetHvVm <CHvVmItem>] [-TargetAgentMachine <VBRDiscoveredComputer>] [-TargetDirectory <String>] [-PermissionsOnly] [-ChangedItemsOnly] [-RunAsync] [-ForceArchivedSnapshotsRestore] [<CommonParameters>] |
 
 Detailed Description
 
@@ -45,9 +45,10 @@ This cmdlet starts to restore Microsoft Windows guest OS files and folders to th
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Path | Specifies an array of file paths to files and folders that you want to restore.  Note: The parameter does not accept the mount server path. | String[] | True | Named | True (ByValue, |
+| Path | Specifies an array of file paths to files and folders that you want to restore.  Note: The parameter does not accept the mount server path. | String[] | True | Named | True (ByValue, ByProperty Name) |
 | Item | Specifies an array of files and folders that you want to restore. The cmdlet will restore these files and folders. | Accepts the VBRFLRFsItem[] object. To create this object, run the [Get-VBRWindowsGuestItem](get-vbrwindowsguestitem.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | RestorePolicy | Specifies the file restore policy:   * Keep: Use this option if you want to restore the files with the \_restored postfix next to the original file. * Overwrite: Use this option if you want to replace the original files with the restored files. | VBRWindowsGuestItemRestorePolicy | True | Named | False |
 | Session | Specifies a session of Microsoft Windows guest OS file restore. The cmdlet will use this session to restore guest OS files.  Note: The restore session must be started within the current PowerShell session.  This parameter is required if the FileRestore parameter is not specified. | Accepts the CRestoreSession object. To create this object, run the [Get-VBRRestoreSession](get-vbrrestoresession.md) cmdlet. | False | Named | False |
@@ -61,6 +62,7 @@ Parameters
 | PermissionsOnly | Defines whether to restore only permissions of files and folders.  Note: This functionality is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise or Enterprise Plus editions of Veeam Backup & Replication are required. | SwitchParameter | False | Named | False |
 | ChangedItemsOnly | Defines whether to restore changed files and folders only. Before restoring changes, you must launch [Compare-VBRWindowsGuestItemsAttributes](compare-vbrwindowsguestitemsattributes.md) for files and folders that youplan to restore.  Note: This functionality is included in the Veeam Universal License. When using a legacy socket-based license, the Enterprise or Enterprise Plus editions of Veeam Backup & Replication are required. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -91,4 +93,5 @@ Related Commands
 * [Start-VBRWindowsFileRestore](start-vbrwindowsfilerestore.md)
 * [Get-VBRWindowsGuestItem](get-vbrwindowsguestitem.md)
 
+Page updated 2026-05-13
 
