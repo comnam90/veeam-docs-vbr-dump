@@ -3,8 +3,8 @@ title: "Viewing Job Session Results"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/session_results.html"
-last_updated: "9/8/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Viewing Job Session Results
@@ -35,4 +35,5 @@ For tenant jobs that failed because of an issue on the tenant backup server, the
 
 ![Viewing Job Session Results](images/realtime_stats_result.webp)
 
+Page updated 2026-07-29
 
