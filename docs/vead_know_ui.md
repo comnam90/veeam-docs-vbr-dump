@@ -1,13 +1,13 @@
 ---
-title: "Getting to Know User Interface"
+title: "Getting to Know Explorer Console UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_know_ui.html"
-last_updated: "8/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Getting to Know User Interface
+# Getting to Know Explorer Console UI
 
 
 Veeam Explorer for Microsoft Active Directory provides you with a convenient user interface that allows you to perform required operations in a user-friendly manner.
@@ -41,4 +41,5 @@ The main application window contains the following UI elements:
 
 [![Components of Main Application Window](images/vead_know_ui.webp)](images/vead_know_ui.webp "Components of Main Application Window")
 
+Page updated 2026-05-26
 
