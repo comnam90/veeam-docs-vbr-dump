@@ -3,8 +3,8 @@ title: "Configuring Plug-In on Linux or Unix"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_lin.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Plug-In on Linux or Unix
@@ -52,7 +52,7 @@ For details about other required ports, see [Ports](ports_vprman.md).
 |  |
 | --- |
 | Important |
-| Consider the following:   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account.   For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).   * The account must have access permissions on the required backup repository. To learn how to configure access permissions on repositories, see [Access and Encryption Settings on Repositories](repository_permissions.md). |
+| Consider the following:   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Backup Administrator role or Backup Operator and Restore Operator roles to the account.   For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).   * The account must have access permissions on the required backup repository. To learn how to configure access permissions on repositories, see [Access and Encryption Settings on Repositories](repository_permissions.md). |
 
 1. If you connect to the specified Veeam Backup & Replication server for the first time, provide the following confirmations:
 
@@ -209,4 +209,5 @@ To specify credentials that will be used to log in to the Veeam Backup & Replica
 | --- |
 | OracleRMANConfigTool --set-credentials 'serv04\joelle' 'password' |
 
+Page updated 2026-07-10
 
