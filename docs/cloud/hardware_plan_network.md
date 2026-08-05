@@ -3,8 +3,8 @@ title: "Step 5. Specify Network Settings"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/hardware_plan_network.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Network Settings
@@ -21,4 +21,5 @@ To learn more about the VLAN range configuration process, see [Managing VLANs](h
 
 ![Step 5. Specify Network Settings](images/new_hw_plan_network.webp)
 
+Page updated 2026-08-04
 
