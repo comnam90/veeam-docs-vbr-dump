@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_permissions.html"
-last_updated: "3/25/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Permissions
@@ -36,7 +36,7 @@ If you want to back up Microsoft Azure virtual machines, a Microsoft Azure Compu
 
 |  |
 | --- |
-| { |
+| {   "actions": [     "Microsoft.Compute/virtualMachines/instanceView/read",     "Microsoft.Compute/virtualMachines/read",     "Microsoft.Compute/virtualMachines/runCommand/action",     "Microsoft.Resources/subscriptions/locations/read",     "Microsoft.Storage/storageAccounts/read"   ],     "notActions": [],     "dataActions": [],     "notDataActions": [] } |
 
 The permissions are assigned in the following ways:
 
@@ -51,11 +51,11 @@ If you want to back up Amazon EC2 instances, make sure the user account that you
 
 |  |
 | --- |
-| {   "ec2:AssociateIamInstanceProfile",   "ec2:DescribeIamInstanceProfileAssociations",   "ec2:DescribeInstances",   "iam:AddRoleToInstanceProfile",   "iam:AttachRolePolicy",   "iam:CreateInstanceProfile",   "iam:CreateRole",   "iam:GetRole",   "iam:GetUser",   "iam:PassRole",   "iam:SimulatePrincipalPolicy",   "sqs:\*",   "ssm:DescribeInstanceInformation",   "ssm:GetCommandInvocation",   "ssm:SendCommand",   "ssm:UpdateManagedInstanceRole" } |
+| {   "ec2:AssociateIamInstanceProfile",   "ec2:DescribeIamInstanceProfileAssociations",   "ec2:DescribeInstances",   "iam:AddRoleToInstanceProfile",   "iam:AttachRolePolicy",   "iam:CreateInstanceProfile",   "iam:CreateRole",   "iam:GetRole",   "iam:GetUser",   "iam:PassRole",   "iam:SimulatePrincipalPolicy",   "sqs:\*",   "ssm:DescribeInstanceInformation",   "ssm:GetCommandInvocation",   "ssm:SendCommand",   "ssm:UpdateManagedInstanceRole" } |
 
 Permissions for Backup to Object Storage
 
-The general permissions for backup to object storage are listed in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html?ver=13#using-object-storage-repositories). Additional permissions are required for object storage in the Veeam Agent management infrastructure. The list of additional permissions differs depending on the selected object storage and the way you set your backup infrastructure:
+The general permissions for backup to object storage are listed in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/permissions_object_storage.html?ver=13#obj_stor). Additional permissions are required for object storage in the Veeam Agent management infrastructure. The list of additional permissions differs depending on the selected object storage and the way you set your backup infrastructure:
 
 * [Amazon S3](#aws_s3)
 * [S3 compatible (including IBM Cloud Object Storage and Wasabi Cloud Storage)](#s3)
@@ -67,7 +67,7 @@ Consider the following:
 
 * Make sure the user account you are using has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the New Object Repository wizard.
-* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html?ver=13#using-object-storage-repositories). To learn more about immutability, see [Backup Immutability](agents_object_storage_backup_immutability.md).
+* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/permissions_object_storage.html?ver=13#obj_stor). To learn more about immutability, see [Backup Immutability](agents_object_storage_backup_immutability.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -78,7 +78,7 @@ If you plan to back up data using such infrastructure configuration, make sure t
 
 |  |
 | --- |
-| {   "iam:AttachUserPolicy",   "iam:CreateAccessKey",   "iam:CreatePolicy",   "iam:CreatePolicyVersion",   "iam:CreateUser",   "iam:DeleteAccessKey",   "iam:DeletePolicy",   "iam:DeletePolicyVersion",   "iam:DeleteUser",   "iam:DeleteUserPolicy",   "iam:DetachUserPolicy",   "iam:GetPolicy",   "iam:GetPolicyVersion",   "iam:GetUser",   "iam:GetUserPolicy",   "iam:ListAccessKeys",   "iam:ListAttachedUserPolicies",   "iam:ListPolicyVersions",   "iam:ListUserPolicies",   "iam:PutUserPolicy",   "iam:SetDefaultPolicyVersion",   "iam:SimulatePrincipalPolicy",   "iam:TagUser" } |
+| {   "iam:AttachUserPolicy",   "iam:CreateAccessKey",   "iam:CreatePolicy",   "iam:CreatePolicyVersion",   "iam:CreateUser",   "iam:DeleteAccessKey",   "iam:DeletePolicy",   "iam:DeletePolicyVersion",   "iam:DeleteUser",   "iam:DeleteUserPolicy",   "iam:DetachUserPolicy",   "iam:GetPolicy",   "iam:GetPolicyVersion",   "iam:GetUser",   "iam:GetUserPolicy",   "iam:ListAccessKeys",   "iam:ListAttachedUserPolicies",   "iam:ListPolicyVersions",   "iam:ListUserPolicies",   "iam:PutUserPolicy",   "iam:SetDefaultPolicyVersion",   "iam:SimulatePrincipalPolicy",   "iam:TagUser" } |
 
 S3 Compatible (Including IBM Cloud Object Storage, Wasabi Cloud Storage)
 
@@ -86,7 +86,7 @@ Consider the following:
 
 * Make sure the user account you are using has access to Amazon buckets and folders.
 * The ListAllMyBuckets permission is not required if you specify the bucket name explicitly at the Bucket step of the New Object Repository wizard.
-* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html?ver=13#using-object-storage-repositories). To learn more about immutability, see [Backup Immutability](agents_object_storage_backup_immutability.md).
+* If you plan to use Amazon S3 storage with immutability enabled, see permissions required for immutability in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/permissions_object_storage.html?ver=13#obj_stor). To learn more about immutability, see [Backup Immutability](agents_object_storage_backup_immutability.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -99,11 +99,11 @@ If you plan to back up data using such infrastructure configuration, make sure t
 
 |  |
 | --- |
-| {   "iam:AttachUserPolicy",   "iam:CreateAccessKey",   "iam:CreatePolicy",   "iam:CreatePolicyVersion",   "iam:CreateUser",   "iam:DeleteAccessKey",   "iam:DeletePolicy",   "iam:DeletePolicyVersion",   "iam:DeleteUser",   "iam:DeleteUserPolicy",   "iam:DetachUserPolicy",   "iam:GetPolicy",   "iam:GetPolicyVersion",   "iam:GetUser",   "iam:GetUserPolicy",   "iam:ListAccessKeys",   "iam:ListAttachedUserPolicies",   "iam:ListPolicyVersions",   "iam:ListUserPolicies",   "iam:PutUserPolicy",   "iam:SetDefaultPolicyVersion",   "sts:GetCallerIdentity" } |
+| {   "iam:AttachUserPolicy",   "iam:CreateAccessKey",   "iam:CreatePolicy",   "iam:CreatePolicyVersion",   "iam:CreateUser",   "iam:DeleteAccessKey",   "iam:DeletePolicy",   "iam:DeletePolicyVersion",   "iam:DeleteUser",   "iam:DeleteUserPolicy",   "iam:DetachUserPolicy",   "iam:GetPolicy",   "iam:GetPolicyVersion",   "iam:GetUser",   "iam:GetUserPolicy",   "iam:ListAccessKeys",   "iam:ListAttachedUserPolicies",   "iam:ListPolicyVersions",   "iam:ListUserPolicies",   "iam:PutUserPolicy",   "iam:SetDefaultPolicyVersion",   "sts:GetCallerIdentity" } |
 
 Google Cloud Storage
 
-If you plan to use Google Cloud Storage with immutability enabled, see permissions required for immutability in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/required_permissions.html?ver=13#google-cloud-object-storage-permissions). To learn more about immutability, see [Backup Immutability](agents_object_storage_backup_immutability.md).
+If you plan to use Google Cloud Storage with immutability enabled, see permissions required for immutability in section [Using Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/permissions_object_storage.html?ver=13#gcos). To learn more about immutability, see [Backup Immutability](agents_object_storage_backup_immutability.md).
 
 Make sure that your infrastructure configuration fits the following description:
 
@@ -115,23 +115,16 @@ If you plan to back up data using such infrastructure configuration, make sure t
 
 |  |
 | --- |
-| {   "iam.serviceAccounts.create",   "iam.serviceAccounts.delete",   "iam.serviceAccounts.get",   "iam.serviceAccounts.list",   "storage.buckets.get",   "storage.buckets.getIamPolicy",   "storage.buckets.list",   "storage.buckets.setIamPolicy",   "storage.buckets.update",   "storage.hmacKeys.create",   "storage.hmacKeys.delete",   "storage.hmacKeys.get",   "storage.hmacKeys.list",   "storage.objects.create",   "storage.objects.delete",   "storage.objects.get",   "storage.objects.list",   "storage.objects.setRetention",   "storage.objects.update" } |
+| {   "iam.serviceAccounts.create",   "iam.serviceAccounts.delete",   "iam.serviceAccounts.get",   "iam.serviceAccounts.list",   "storage.buckets.get",   "storage.buckets.getIamPolicy",   "storage.buckets.list",   "storage.buckets.setIamPolicy",   "storage.buckets.update",   "storage.hmacKeys.create",   "storage.hmacKeys.delete",   "storage.hmacKeys.get",   "storage.hmacKeys.list",   "storage.objects.create",   "storage.objects.delete",   "storage.objects.get",   "storage.objects.list",    "storage.objects.setRetention",    "storage.objects.update" } |
 
 Permissions for Guest Processing
 
-To use guest processing, make sure to configure user accounts according to the following requirements.
+To use guest processing, depending on the application you need to back up, the user must have the permissions listed in the following table:
 
-Consider the following general requirements when choosing a user account:
-
-* For Linux computers, choose a user account with root privileges and with the home directory created.
-* If you plan to perform file indexing for Microsoft Windows computers, choose a user account that has administrator privileges.
-* If you plan to use guest processing over network for Microsoft Windows computers without listed applications, choose a user account that has administrator privileges.
-* When using Active Directory accounts, make sure to provide a user account in the DOMAIN\USERNAME format.
-* When using local user accounts, make sure to provide a user account in the USERNAME or HOST\USERNAME format.
-* To process a Domain Controller server, make sure that you are using a user account that is a member of the DOMAIN\ADMINISTRATORS group.
-* To back up a Read-Only Domain controller, a delegated RODC administrator account is sufficient. For more information, see [Microsoft Documentation](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755310%28v%3Dws.10%29#Anchor_1).
-
-Depending on the application you need to back up, the user must have the permissions listed in the following table:
+|  |
+| --- |
+| Note |
+| For Linux computers, choose a user account with root privileges and with the home directory created. |
 
 Permissions for Guest Processing
 
@@ -145,4 +138,5 @@ Permissions for Guest Processing
 | MySQL | To process the MySQL database system, the MySQL user account must have the following privileges:   * SELECT for all tables. This privilege is required to allow Veeam Agent to access table metadata. To learn more, see [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/information-schema-introduction.html). * LOCK TABLES. This privilege is required to allow Veeam Agent to process tables based on the MyISAM storage engine. * RELOAD. This privilege is required to allow the MySQL account to perform FLUSH operations. |
 | PostgreSQL | To back up PostgreSQL instances, the user account must have the superuser privileges for the PostgreSQL instance. For more information, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html). |
 
+Page updated 2026-08-04
 
