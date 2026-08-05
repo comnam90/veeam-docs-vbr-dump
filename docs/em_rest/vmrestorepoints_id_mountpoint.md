@@ -3,8 +3,8 @@ title: "/vmRestorePoints/{ID}/mounts"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/vmrestorepoints_id_mountpoint.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /vmRestorePoints/{ID}/mounts
@@ -41,6 +41,7 @@ The /vmRestorePoints/{ID}/mounts resource has a resource representation of the f
 
 |  |
 | --- |
-| <VmRestorePointMounts xmlns="http://www.veeam.com/ent/v1.0"> |
+| <VmRestorePointMounts xmlns="http://www.veeam.com/ent/v1.0">   <VmRestorePointMount Type="VmRestorePointMount" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1">     <Links>       <Link Rel="Delete" Type="VmRestorePointMount" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1" />     </Links>     <FSRoots>       <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/Volume$0:">         <Path>Volume$0:</Path>         <Name>Volume$0:</Name>       </DirectoryEntry>       <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/C:">         <Path>C:</Path>         <Name>C:</Name>       </DirectoryEntry>       <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmRestorePoints/fb87163e-687d-4006-96c9-0451b5423b85/mounts/1/E:">         <Path>E:</Path>         <Name>E:</Name>       </DirectoryEntry>     </FSRoots>   </VmRestorePointMount> </VmRestorePointMounts> |
 
+Page updated 2026-07-29
 
