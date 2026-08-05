@@ -3,8 +3,8 @@ title: "Veeam Explorers PowerShell Changelog"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/changelog.html"
-last_updated: "11/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Explorers PowerShell Changelog
@@ -19,5 +19,7 @@ In This Section
 * [v12.3 Changelog](changelog_12.3.md)
 * [v13 Changelog](changelog_13.md)
 * [v13.0.1 Changelog](changelog_13.0.1.md)
+* [v13.1 Changelog](changelog_13.1.md)
 
+Page updated 2026-05-22
 
