@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_db_migration.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Migrating Enterprise Manager from Microsoft SQL Server to PostrgeSQL
@@ -123,5 +123,5 @@ Utility Parameters
 | /password:<value> | Specifies a password that the utility uses to authenticate against a PostgreSQL server. By default, the utility uses the account under which the Veeam Backup Enterprise Manager Service is running. |
 | /verbose | Enables verbose logging mode. Logs are stored in the following directory: %PROGRAMDATA%\Veeam\Backup\Utils\Util.EmTransfer. |
 
-Page updated 2026-07-09
+Page updated 2026-07-29
 
