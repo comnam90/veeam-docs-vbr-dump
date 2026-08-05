@@ -3,8 +3,8 @@ title: "Step 7. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_review.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Finish Working with Wizard
@@ -16,4 +16,5 @@ The new media pool will be available under the Tape Infrastructure > Media Pools
 
 ![Step 7. Finish Working with Wizard](images/add_media_pool_review.webp)
 
+Page updated 2026-08-04
 
