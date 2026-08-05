@@ -1,13 +1,13 @@
 ---
-title: "Step 7. Specify Log Processing Settings"
+title: "Step 8. Specify Log Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_microsoft_sql_server_log_processing.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 7. Specify Log Processing Settings
+# Step 8. Specify Log Processing Settings
 
 
 At the Log processing step of the wizard, specify credentials and log processing options for the added objects:
@@ -38,6 +38,7 @@ To quickly find the necessary object, use the search field at the bottom of the 
 1. Enter the object name or a part of it in the search field.
 2. Click the Start search button on the right or press [Enter].
 
-![Step 7. Specify Log Processing Settings](images/plugins_policy_mssql_log_processing.webp)
+![Step 8. Specify Log Processing Settings](images/plugins_policy_mssql_log_processing.webp)
 
+Page updated 2026-06-30
 
