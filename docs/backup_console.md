@@ -3,8 +3,8 @@ title: "Backup & Replication Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_console.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup & Replication Console
@@ -36,7 +36,7 @@ If you have multiple backup servers in the infrastructure, you can connect to an
 |  |
 | --- |
 | Important |
-| Note the following:   * You cannot use the same console to connect to backup servers on different operating systems. For example, you cannot use the same console to connect to Windows-based and Linux-based backup servers. * You cannot use the same console to connect to backup servers with different versions of Veeam Backup & Replication. Note this if you have more than one backup server in your backup environment, and these backup servers run different versions of Veeam Backup & Replication. For example, if one of your backup servers run version 13, and another backup server runs version 12.3.2, you will need to use 2 separate consoles for connecting to these servers. |
+| Note that you cannot use the same console to connect to backup servers with different versions of Veeam Backup & Replication. Note this if you have more than one backup server in your backup environment, and these backup servers run different versions of Veeam Backup & Replication. For example, if one of your backup servers runs version 13, and another backup server runs version 12.3.2, you will need to use 2 separate consoles for connecting to these servers. |
 
 The console supports automatic update. Every time you connect to the backup server locally or remotely, the console checks for updates. If the backup server has updates installed, the console will be updated automatically.
 
@@ -54,7 +54,7 @@ When you install a remote console on a machine, Veeam Backup & Replication insta
 * Veeam Backup PowerShell Module
 * Veeam Explorer for Microsoft Active Directory
 * Veeam Explorer for Microsoft Exchange
-* Veeam Explorer for Microsoft OneDrive for Business
+* Veeam Explorer for Microsoft OneDrive
 * Veeam Explorer for Microsoft SharePoint
 * Veeam Explorer for Microsoft SQL Server
 * Veeam Explorer for Microsoft Teams
@@ -91,4 +91,5 @@ Related Topics
 * [Installing Veeam Backup & Replication Console](install_console.md)
 * [Logging in to Veeam Backup & Replication](logon_to_console.md)
 
+Page updated 2026-07-29
 
