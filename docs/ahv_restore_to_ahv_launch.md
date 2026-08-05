@@ -3,8 +3,8 @@ title: "Step 1. Launch Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_to_ahv_launch.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Restore Wizard
@@ -24,6 +24,7 @@ Alternatively, expand the necessary backup job, select the VM and click Entire V
 | Tip |
 | To restore a VM from a snapshot taken in the Nutanix AHV Prism Element console, expand the cluster where the VM resides, right-click the VM and select Restore entire VM to Nutanix AHV. |
 
-[![Step 1. Launch Restore Wizard](images/ahv_restore_vm_ahv_launch.webp)](images/ahv_restore_vm_ahv_launch.webp)
+[![Step 1. Launch Restore Wizard](images/ahv_restore_vm_launch.webp)](images/ahv_restore_vm_launch.webp)
 
+Page updated 2026-04-22
 
