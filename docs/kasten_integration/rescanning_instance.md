@@ -3,14 +3,14 @@ title: "Rescanning Instance"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/rescanning_instance.html"
-last_updated: "8/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Rescanning Instance
 
 
-You can rescan the Kasten instance configured in the backup infrastructure. It may be necessary when the Kasten instance becomes unavailable, or there is a mismatch between data in the backup console and on the actual appliance. Veeam Backup & Replication will erase and re-download Kasten instance settings and some statistics during the rescan operation.
+You can rescan the Kasten instance configured in the backup infrastructure. It may be necessary when the Kasten instance becomes unavailable, or there is a mismatch between data in the backup console and on the actual instance. Veeam Backup & Replication will erase and re-download Kasten instance settings and some statistics during the rescan operation.
 
 To rescan the Kasten instance, do the following:
 
@@ -21,4 +21,5 @@ To rescan the Kasten instance, do the following:
 
 [![Rescan Instance](images/rescan_instance.webp)](images/rescan_instance.webp "Rescan Instance")
 
+Page updated 2026-08-04
 
