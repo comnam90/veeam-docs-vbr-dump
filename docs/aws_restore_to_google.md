@@ -1,0 +1,30 @@
+---
+title: "Restoring to Google Cloud"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/aws_restore_to_google.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Restoring to Google Cloud
+
+
+Veeam Backup & Replication allows you to restore Amazon EC2 instances from image-level backups created with Veeam Plug-in for AWS to Google Cloud as VM instances. You can restore EC2 instances to any available restore point. For more information, see section [Restore to Google Compute Engine](restore_google.md).
+
+|  |
+| --- |
+| Important |
+| * Restore to Google Cloud can be performed only using backup files stored in standard backup repositories for which you have specified access keys of an IAM user whose permissions are used to access the repositories. To learn how to specify credentials for the repositories, see sections [Creating New Repositories](aws_add_s3_account.md) and [Connecting to Existing Appliances](aws_connect_appliance_repo.md).  * Before you start the restore operation, check the limitations and prerequisites described in section [Before You Begin](restore_google_byb.md). |
+
+To restore an EC2 instance to Google Cloud, do the following:
+
+1. In the Veeam Backup & Replication console, open the Home view.
+2. Navigate to Backups > External Repository.
+3. Expand the backup policy that protects an EC2 instance that you want to restore, select the necessary instance and click Google CE on the ribbon.
+4. Complete the Restore to Google Compute Engine wizard as described in section [Restoring to Google Compute Engine](restore_google_virtual_machines.md).
+
+[![Restore to Google Cloud Platform](images/aws_restore_to_google.webp)](images/aws_restore_to_google.webp "Restore to Google Cloud Platform")
+
+Page updated 2026-05-21
+
