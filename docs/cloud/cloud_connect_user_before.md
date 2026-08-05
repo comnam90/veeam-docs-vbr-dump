@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user_before.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -22,4 +22,5 @@ Before you add a new tenant account, check the following prerequisites:
 * If tenants will work with the cloud repository and cloud host over WAN accelerators, the target WAN accelerator must be properly configured on the SP side.
 * It is recommended that you change the password for the root account of network extension appliances before subscribing tenants to hardware plans. You can change the password using the Credentials Manager. To learn more, see [Managing Network Extension Appliance Credentials](network_extension_credentials.md).
 
+Page updated 2026-08-04
 
