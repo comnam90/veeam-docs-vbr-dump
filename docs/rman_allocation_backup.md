@@ -3,8 +3,8 @@ title: "Oracle RMAN Channel Allocation"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_allocation_backup.html"
-last_updated: "12/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Oracle RMAN Channel Allocation
@@ -78,6 +78,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| In this example for Microsoft Windows environments, the RUN block contains the following commands:   * ALLOCATE CHANNEL: this command allocates channel ch1 to the Veeam backup repository with UUID d8338780-1aec-4c36-b17c-e1ea3ea2ca93. * BACKUP DATABASE: this command backs up the specified database. * RELEASE CHANNEL: this command releases the allocated channel ch1 to optimize resources.   |  | | --- | | RUN {     ALLOCATE CHANNEL ch1 DEVICE TYPE SBT\_TAPE       PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VEEAMP~2\ORACLE~2.DLL' FORMAT 'd8338780-1aec-4c36-b17c-e1ea3ea2ca93/RMAN\_%I\_%d\_%T\_%U.vab';     BACKUP DATABASE;     RELEASE CHANNEL ch1;  }  EXIT; | |
+| In this example for Microsoft Windows environments, the RUN block contains the following commands:   * ALLOCATE CHANNEL: this command allocates channel ch1 to the Veeam backup repository with UUID d8338780-1aec-4c36-b17c-e1ea3ea2ca93. * BACKUP DATABASE: this command backs up the specified database. * RELEASE CHANNEL: this command releases the allocated channel ch1 to optimize resources.   |  | | --- | | RUN {     ALLOCATE CHANNEL ch1 DEVICE TYPE SBT\_TAPE        PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll' FORMAT 'd8338780-1aec-4c36-b17c-e1ea3ea2ca93/RMAN\_%I\_%d\_%T\_%U.vab';     BACKUP DATABASE;     RELEASE CHANNEL ch1;  }  EXIT; | |
 
+Page updated 2026-07-13
 
