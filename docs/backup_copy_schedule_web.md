@@ -1,13 +1,13 @@
 ---
-title: "Step 5. Define Backup Copy Window"
+title: "Step 6. Define Backup Copy Window"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_schedule_web.html"
-last_updated: "8/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 5. Define Backup Copy Window
+# Step 6. Define Backup Copy Window
 
 
 At the Schedule step of the wizard, you can define a time span in which the backup copy job will transport data between source and target backup repositories. For more information, see [Backup Copy Window](backup_copy_window.md#immediate).
@@ -25,7 +25,7 @@ To define a backup window for the periodic backup copy job:
 1. To configure the backup copy job automatic retries, select the Retry failed items processing check box and specify the amount of retries and time intervals between them.
 2. Select the Terminate job if it exceeds allowed backup window check box if you want the job to terminate itself to prevent performance impact during production hours. Click Window to select the desired backup window time area. Use the Permitted and Denied options to mark the selected time segments.
 
-![Step 5. Define Backup Copy Window](images/backup_copy_schedule_web.png)
+![Step 6. Define Backup Copy Window](images/backup_copy_schedule_web.png)
 
 To define a backup window for the immediate backup copy job:
 
@@ -36,10 +36,11 @@ To define a backup window for the immediate backup copy job:
 
 1. If you selected the During the following time periods only option, specify the required backup window option. Use the Enable and Disable options to mark the selected time segments as allowed or prohibited for the backup copy job.
 
-![Step 5. Define Backup Copy Window](images/backup_copy_schedule_imm_web.webp)
+![Step 6. Define Backup Copy Window](images/backup_copy_schedule_imm_web.webp)
 
 Related Topics
 
 [Backup Copy Window](backup_copy_window.md)
 
+Page updated 2026-07-23
 
