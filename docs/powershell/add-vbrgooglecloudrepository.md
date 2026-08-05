@@ -3,8 +3,8 @@ title: "Add-VBRGoogleCloudRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrgooglecloudrepository.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRGoogleCloudRepository
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRGoogleCloudRepository -Folder <VBRGoogleCloudFolder> -Connection <VBRGoogleCloudConnection> [-Name <String>] [-Description <String>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableNearlineStorageClass] [-EnableColdlineStorageClass] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-GoogleProxySpec <VBRGoogleCloudComputeProxyAppliance>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-Force]  [<CommonParameters>] |
+| Add-VBRGoogleCloudRepository -Folder <VBRGoogleCloudFolder> -Connection <VBRGoogleCloudConnection> [-Name <String>] [-Description <String>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableNearlineStorageClass] [-EnableColdlineStorageClass] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-GoogleProxySpec <VBRGoogleCloudComputeProxyAppliance>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-EnableReadOnlyMode] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -44,6 +44,7 @@ Parameters
 | EnableNearlineStorageClass | Enables the nearline storage class for optimized archive storage.  Default: False. | SwitchParameter | False | Named | False |
 | GoogleProxySpec | Specifies proxy appliance settings for adding object storage repository. | Accepts the VBRGoogleCloudComputeProxyAppliance object. To create this object, run the [New-VBRGoogleCloudComputeProxyAppliance](new-vbrgooglecloudcomputeproxyappliance.md) cmdlet. | False | Named | False |
 | MountServerOptions | Specifies settings of a mount server for object storage repositories.  Note: This parameter is required for object storage repositories that you want to add as performance extents to a scale-out backup repository. | Accepts the VBRRepositoryMountServerOptions object. To create this object, run the [New-VBRRepositoryMountServerOptions](new-vbrrepositorymountserveroptions.md) cmdlet. | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add ab object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 | EnableColdlineStorageClass | Enables the coldline storage class to data blocks that you want to keep in Google Cloud object storage. Use this option if you plan to access your backup data rarely (for example, once a quarter) and plan to store data minimum 90 days.  Default: False.  Note: If you do not provide the EnableNearlineStorageClass or EnableColdlineStorageClass parameters, the cmdlet will assing the Standard storage class to data blocks. | SwitchParameter | False | Named | False |
 | EnableBackupImmutability | Defines that the cmdlet will enable the immutability option.  Default: False. | SwitchParameter | False | Named | False |
@@ -98,4 +99,5 @@ Related Commands
 * [Get-VBRGoogleCloudBucket](get-vbrgooglecloudbucket.md)
 * [Get-VBRGoogleCloudFolder](get-vbrgooglecloudfolder.md)
 
+Page updated 2026-05-27
 
