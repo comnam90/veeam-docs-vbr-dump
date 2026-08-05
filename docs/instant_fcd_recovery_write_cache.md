@@ -3,8 +3,8 @@ title: "Step 7. Select Destination for FCD Updates"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_write_cache.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Select Destination for FCD Updates
@@ -21,4 +21,5 @@ To redirect redo logs:
 
 ![Step 7. Select Destination for FCD Updates](images/instant_fcd_recovery_write_cache.webp)
 
+Page updated 2026-07-15
 
