@@ -3,14 +3,14 @@ title: "Step 6. Specify Secure Restore Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_secure_restore.html"
-last_updated: "3/24/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Specify Secure Restore Settings
 
 
-This step is available if you restore disks of Microsoft Windows VMs. However, this step is not available if you restore disks from storage snapshots.
+This step is not available if you restore disks from storage snapshots.
 
 At the Secure Restore step of the wizard, you can instruct Veeam Backup & Replication to scan machine data for malware activity before restoring the machine to the production environment. To scan the data, Veeam Backup & Replication uses the following engines:
 
@@ -44,8 +44,9 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 | Tip |
 | To copy the path to the folder with YARA rules, click Copy YARA rules location to clipboard. |
 
-1. Select the Continue scanning all remaining files after the first occurrence check box if you want to continue the virtual disk scan after a virus threat is detected. For information on how to view results of the malware scan, see [Viewing Malware Scan Results](av_scan_log.md).
+1. Select the Continue scanning all remaining files after the first occurrence check box if you want to continue the virtual disk scan after the first malware is found. For information on how to view results of the malware scan, see [Viewing Scan Results Using Console](malware_detection_secure_restore_results.md).
 
 ![Step 6. Specify Secure Restore Settings](images/instant_disk_recovery_secure_restore.webp)
 
+Page updated 2026-07-30
 
