@@ -3,8 +3,8 @@ title: "/security/accounts/{ID}/roles/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/security_accounts_id_roles_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /security/accounts/{ID}/roles/{ID}
@@ -35,6 +35,7 @@ The /security/accounts/{ID}/roles/{ID} resource has a resource representation of
 
 |  |
 | --- |
-| <EnterpriseAccountInRole xmlns="http://www.veeam.com/ent/v1.0" Href="https://localhost:9398/api/security/accounts/f7d81d38-a457-4ee7-9294-a9123f8e4e99/roles/f84a8b62-49b8-4d0c-b25b-92321b52bab6"> |
+| <EnterpriseAccountInRole xmlns="http://www.veeam.com/ent/v1.0" Href="https://localhost:9398/api/security/accounts/f7d81d38-a457-4ee7-9294-a9123f8e4e99/roles/f84a8b62-49b8-4d0c-b25b-92321b52bab6">   <Links>     <Link Rel="Delete" Type="EnterpriseAccountInRole" Href="https://localhost:9398/api/security/accounts/f7d81d38-a457-4ee7-9294-a9123f8e4e99/roles/f84a8b62-49b8-4d0c-b25b-92321b52bab6" />   </Links>   <RoleName>File Restore Operator</RoleName> </EnterpriseAccountInRole> |
 
+Page updated 2026-07-29
 
