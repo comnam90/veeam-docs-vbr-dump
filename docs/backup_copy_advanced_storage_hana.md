@@ -3,8 +3,8 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_storage_hana.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Storage Settings
@@ -29,4 +29,5 @@ You can select a Key Management System (KMS) server in the Password field. To do
 
 ![New topic](images/plugins_backup_copy_storage.webp)
 
+Page updated 2026-08-04
 
