@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_limitations.html"
-last_updated: "5/27/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -33,12 +33,7 @@ Consider the following general limitations for the HA cluster:
 | Note |
 | Consider the following:   * By default, configuration backups are located in the local backup repository. If you want to create configuration backups for your nodes, you must specify a different backup repository to store these backups. For more information, see [Scheduling Configuration Backups](vbr_config_schedule.md). * If you use a scale-out backup repository, ensure that it does not use local repositories as performance extents. |
 
-* Veeam Backup & Replication does not automatically install private fixes. You must do it manually using the Veeam Host Management console for every HA node. For more information, see [Installing Private Hotfixes](update_appliance_install_updates.md).
-
-|  |
-| --- |
-| Note |
-| We recommend that you install private fixes on both nodes, so that they have the same configuration. |
+* Veeam Backup & Replication automatically synchronizes and installs private fixes on the secondary node after you install them on the primary node. Veeam Backup & Replication synchronizes only private fixes that you install after cluster creation; it does not synchronize private fixes that were already installed before you created the cluster.
 
 * You cannot use the [Veeam Host Management console](hmc_about.md) and the [Veeam Backup & Replication Web UI](vbr_web_console.md) to manage an HA cluster.
 
@@ -84,11 +79,13 @@ Consider the following network limitations for the HA cluster:
 * Before you assemble the HA cluster, make sure that both nodes have the same DNS suffixes and correct DNS addresses. Otherwise, Veeam Backup & Replication will not be able to resolve infrastructure servers on both nodes. Ensure that the HA cluster hostname resolves to the correct IP by both HA nodes.
 * The machines that you use as Linux-based backup servers must allow inbound and outbound traffic on the ports listed in the [Ports](used_ports.md#copnfigurationdb) section. Ensure that these ports are opened for the cluster IP to enable proper cluster operations.
 * Veeam Backup & Replication sends email reports from the IP address of the current primary node, not from the cluster (virtual) IP address. Ensure that your mail filters accept connections from both node IP addresses.
+
 * The HA cluster does not synchronize DNS suffixes between HA nodes. You must add the suffixes for both nodes in the [Veeam Host Management console](hmc_about.md).
 
-* You must use static IP addresses for the HA nodes and for a cluster virtual IP address.
+* For a standard HA cluster, you must use static IP addresses for both HA nodes and for the cluster virtual IP address. For a cross-subnet HA cluster, you must use static external and internal IP addresses for both HA nodes.
 
-* The hosts that you plan to use as the HA nodes must be in the same subnet.
+* For a standard HA cluster, the hosts that you plan to use as the HA nodes must be in the same subnet. For a cross-subnet HA cluster, the hosts can be in different subnets or geographic locations.
+
 * After you disassemble your HA cluster, the static IP address of the cluster remains assigned to the HA primary node.
 
 * If you want to include the DNS name of the HA cluster in the self-signed certificate, you must regenerate this certificate after you assemble the cluster. After that, the cluster DNS name will be added to the alternative names. Ensure that both cluster nodes are online and the cluster is fully functional.
@@ -111,7 +108,12 @@ Cluster Synchronization Limitations for HA Cluster
 Consider the following synchronization limitations for the HA cluster:
 
 * Veeam Backup & Replication synchronizes job scripts, pre-freeze and post-thaw scripts only if they are located in the /var/lib/veeam/scripts directory. Currently, it is not possible to synchronize scripts from the different directories.
-* Veeam Backup & Replication does not synchronize Veeam appliance users between nodes of an HA cluster. If you plan to use several users to manage your HA cluster, you must create these users on each HA node. For more information on creating users, see [Configuring Users](hmc_configure_users.md).
+* Veeam Backup & Replication automatically synchronizes Veeam appliance users, including their passwords and MFA configuration, from the primary node to the secondary node. You can manage users only on the primary node while the HA cluster is active. After you disassemble the cluster, the secondary node keeps the users and MFA configuration that were synchronized while the cluster was active.
+
+|  |
+| --- |
+| Note |
+| User synchronization runs only if the Security Officer role is configured the same way on both nodes — either both nodes have a Security Officer configured, or neither does. If the Security Officer configuration differs between the nodes, Veeam Backup & Replication skips user synchronization for that cycle. |
 
 * Veeam Backup & Replication synchronizes only the global update configuration settings of the Veeam Updater service. If you need to set custom update configuration settings, you must set them up for each node. For more information, see [Configuring Updates](update_appliance_configure_updates.md).
 * Veeam Backup & Replication does not synchronize the following data:
@@ -129,7 +131,8 @@ Before you perform a failover, consider the following limitations:
 * Veeam Backup & Replication does not support automatic failover of an HA cluster.
 
 * If you initiate a failover while the secondary node is not synchronized with the primary node — for example, due to network issues — the secondary node database may lack information about the latest backup files created by the primary node. After the failover, you must rescan the backup repository to ensure the secondary node is updated with any backup files created while it was out of sync.
-* To initiate a failover, you must use either the cluster virtual IP address or the IP address of the secondary node. You cannot initiate a failover using the cluster DNS name.
+* To initiate a failover for a standard HA cluster, use either the cluster virtual IP address or the IP address of the secondary node. You cannot use the cluster DNS name.
+* To initiate a failover for a cross-subnet HA cluster, use the cluster DNS name or the external IP address of the secondary node.
 
 Switchover Limitations for HA Cluster
 
@@ -148,4 +151,5 @@ Before you disassemble an HA cluster, consider the following limitations:
 * By default, you cannot use the secondary node as a standalone backup server after you disassemble an HA cluster, since it still contains the configuration files and certificates. To use it as a standalone backup server, you must [reinstall Veeam Infrastructure Appliance](linux_infrastructure_appliance_install.md).
 * If you disassemble an HA cluster, you can use the secondary node again in the same cluster.
 
+Page updated 2026-07-17
 
