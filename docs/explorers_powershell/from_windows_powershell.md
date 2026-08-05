@@ -3,8 +3,8 @@ title: "Starting PowerShell Sessions from PowerShell Console"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/from_windows_powershell.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting PowerShell Sessions from PowerShell Console
@@ -43,7 +43,7 @@ To import the modules and connect to the backup server, perform the following st
 
 |  |
 | --- |
-| Import-Module /opt/veeam/powershell/Veeam.Backup.PowerShell/Veeam.Backup.PowerShell.psd1  Import-Module /opt/veeam/veeam-saphana-powershell/Veeam.SapHana.PowerShell/Veeam.SapHana.PowerShell.psd1  Import-Module /opt/veeam/veeam-oracle-powershell/Veeam.Oracle.PowerShell/Veeam.Oracle.PowerShell.psd1get-o  Import-Module /opt/veeam/veeam-postgresql-powershell/Veeam.PostgreSQL.PowerShell/Veeam.PostgreSQL.PowerShell.psd1  Import-Module /opt/veeam/veeam-mongodb-powershell/Veeam.MongoDB.PowerShell/Veeam.MongoDB.PowerShell.psd1 |
+| Import-Module /opt/veeam/powershell/Veeam.Backup.PowerShell/Veeam.Backup.PowerShell.psd1  Import-Module /opt/veeam/veeam-saphana-powershell/Veeam.SapHana.PowerShell/Veeam.SapHana.PowerShell.psd1  Import-Module /opt/veeam/veeam-oracle-powershell/Veeam.Oracle.PowerShell/Veeam.Oracle.PowerShell.psd1  Import-Module /opt/veeam/veeam-postgresql-powershell/Veeam.PostgreSQL.PowerShell/Veeam.PostgreSQL.PowerShell.psd1  Import-Module /opt/veeam/veeam-mongodb-powershell/Veeam.MongoDB.PowerShell/Veeam.MongoDB.PowerShell.psd1 |
 
 The remaining Veeam Explorers PowerShell modules are not supported on Linux machines.
 
@@ -70,7 +70,7 @@ Once these requirements are met, perform the following steps:
 
 |  |
 | --- |
-| dnf install https://repository.veeam.com/rocky/9.2/vbr/13.0/optional/x86\_64/veeam-optional-release-latest-13.0.1.2067-1.x86\_64.rpm -y |
+| dnf install https://repository.veeam.com/vsa/9.6/vbr/13.1/mandatory/x86\_64/veeam-optional-release-latest-13.1.0.411-1.x86\_64.rpm -y |
 
 This command gives the dnf package manager access to the necessary Veeam Software Appliance packages.
 
@@ -78,7 +78,7 @@ This command gives the dnf package manager access to the necessary Veeam Softwar
 
 |  |
 | --- |
-| dnf install veeam-powershell -y  dnf install veeam-vbr-pkg-mount.x86\_64 veeam-vbr-pkg-transport.x86\_64 veeam-vbr-pkg-deployment.x86\_64 -y  dnf install /opt/veeam/vbr/Packages/veeamdeployment-13.0.1.2067-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeam-mount-13.0.1.2067-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeamtransport-13.0.1.2067-1.x86\_64.rpm -y |
+| dnf install veeam-powershell -y  dnf install veeam-vbr-pkg-mount.x86\_64 veeam-vbr-pkg-transport.x86\_64 veeam-vbr-pkg-deployment.x86\_64 -y  dnf install /opt/veeam/vbr/Packages/veeamdeployment-13.1.0.411-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeam-mount-13.1.0.411-1.x86\_64.rpm -y  dnf install /opt/veeam/vbr/Packages/veeamtransport-13.1.0.411-1.x86\_64.rpm -y |
 
 1. Start a PowerShell session to use PowerShell commands.
 
@@ -90,7 +90,7 @@ This command gives the dnf package manager access to the necessary Veeam Softwar
 
 |  |
 | --- |
-| Import-Module /opt/veeam/powershell/Veeam.Backup.PowerShell/Veeam.Backup.PowerShell.psd1  Import-Module /opt/veeam/veeam-saphana-powershell/Veeam.SapHana.PowerShell/Veeam.SapHana.PowerShell.psd1  Import-Module /opt/veeam/veeam-oracle-powershell/Veeam.Oracle.PowerShell/Veeam.Oracle.PowerShell.psd1get-o  Import-Module /opt/veeam/veeam-postgresql-powershell/Veeam.PostgreSQL.PowerShell/Veeam.PostgreSQL.PowerShell.psd1  Import-Module /opt/veeam/veeam-mongodb-powershell/Veeam.MongoDB.PowerShell/Veeam.MongoDB.PowerShell.psd1 |
+| Import-Module /opt/veeam/powershell/Veeam.Backup.PowerShell/Veeam.Backup.PowerShell.psd1  Import-Module /opt/veeam/veeam-saphana-powershell/Veeam.SapHana.PowerShell/Veeam.SapHana.PowerShell.psd1  Import-Module /opt/veeam/veeam-oracle-powershell/Veeam.Oracle.PowerShell/Veeam.Oracle.PowerShell.psd1  Import-Module /opt/veeam/veeam-postgresql-powershell/Veeam.PostgreSQL.PowerShell/Veeam.PostgreSQL.PowerShell.psd1  Import-Module /opt/veeam/veeam-mongodb-powershell/Veeam.MongoDB.PowerShell/Veeam.MongoDB.PowerShell.psd1 |
 
 The remaining Veeam Explorers PowerShell modules are not supported on Linux machines.
 
@@ -109,6 +109,7 @@ To use Veeam Explorer cmdlets for Veeam Backup for Microsoft 365, perform the fo
 1. Start a PowerShell session on a machine that has Veeam Backup for Microsoft 365 PowerShell installed. For more information on starting the session, see [this Microsoft article](https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5).
 2. Connect to a local or remote Veeam Backup for Microsoft 365 server.
 
-For more information on how to connect to Veeam Backup for Microsoft 365 server, see [Connect-VBOServer](https://helpcenter.veeam.com/docs/vbo365/powershell/connect-vboserver.html?ver=80).
+For more information on how to connect to Veeam Backup for Microsoft 365 server, see [Connect-VBOServer](https://helpcenter.veeam.com/docs/vbo365/powershell/connect-vboserver.html?ver=8).
 
+Page updated 2026-07-30
 
