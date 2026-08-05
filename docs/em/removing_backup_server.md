@@ -3,8 +3,8 @@ title: "Removing Backup Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/removing_backup_server.html"
-last_updated: "10/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Backup Servers
@@ -16,13 +16,14 @@ On the backup server side, a record about the Enterprise Manager instance is del
 
 To remove a backup server, do the following:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
-3. Select the Backup Servers section on the left of the Configuration view.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
+3. In the Configuration view, open the Backup Servers section.
 4. Select a backup sever from the list and click Remove on the toolbar.
 
 Alternatively, you can right-click the selected backup server and select Remove.
 
 1. In the open window, click Yes to confirm the removal.
 
+Page updated 2026-07-16
 
