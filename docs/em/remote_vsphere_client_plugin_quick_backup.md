@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/remote_vsphere_client_plugin_quick_backup.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Creating Incremental VM Backup with Quick Backup
@@ -32,5 +32,5 @@ This will trigger a backup job processing the selected VM to create a new increm
 
 [![Creating Incremental VM Backup with Quick Backup](images/remote_plugin_quick_backup.webp)](images/remote_plugin_quick_backup.webp "Creating Incremental VM Backup with Quick Backup")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
