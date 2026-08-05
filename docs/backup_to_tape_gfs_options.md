@@ -3,8 +3,8 @@ title: "Options for GFS Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_gfs_options.html"
-last_updated: "7/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Options for GFS Job
@@ -20,9 +20,10 @@ This option does not prevent the tape job from appending data to this tape. If n
 
 Click Media sets and select the media sets that you want to export.
 
-* If the media pool, which is the target for the tape job, uses parallel processing, you can limit the number of drives to use for processing this tape job. To enable this, select the Limit the number of drives this job can use to N tape drives check box and specify the number of drives to use. For more information on how to enable parallel processing for the media pool, see [Add Optional Media Pool Settings](add_gfs_media_pool_optional.md).
+* If the media pool, which is the target for the tape job, uses [parallel processing](parallel_processing.md), you can limit the number of drives to use for processing this tape job. To enable this, select the Limit the number of drives this job can use to N tape drives check box and specify the number of drives to use. For more information on how to enable parallel processing for the media pool, see [Add Optional Media Pool Settings](add_gfs_media_pool_optional.md).
 * Click Advanced to configure the advanced job options.
 
 ![Options for GFS Job](images/backup_to_tape_gfs_options.webp)
 
+Page updated 2026-07-15
 
