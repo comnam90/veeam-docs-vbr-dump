@@ -3,8 +3,8 @@ title: "Performing Full Site Failover"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/performing_full_site_failover.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Full Site Failover
@@ -24,4 +24,5 @@ In This Section
 * [Editing Cloud Failover Plan Settings](cloud_failover_plan_edit.md)
 * [Deleting Cloud Failover Plan](cloud_failover_plan_delete.md)
 
+Page updated 2026-08-04
 
