@@ -3,8 +3,8 @@ title: "Exporting and Importing Plug-In Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_export_plugin_settings.html"
-last_updated: "3/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Exporting and Importing Plug-In Settings
@@ -39,6 +39,7 @@ For Microsoft Windows
 
 |  |
 | --- |
-| %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool.exe --set-credentials "serv\username" "password" |
+| "%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool.exe" --set-credentials "serv\username" "password" |
 
+Page updated 2026-07-13
 
