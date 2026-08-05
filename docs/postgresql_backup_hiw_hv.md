@@ -3,8 +3,8 @@ title: "WAL Files PostgreSQL Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_backup_hiw_hv.html"
-last_updated: "2/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # WAL Files PostgreSQL Backup Jobs
@@ -19,6 +19,8 @@ To back up WAL files, you must create a backup job, add a PostgreSQL VM to it an
 
 The parent job runs in a regular manner — it starts by schedule or is started manually by the user. The child job is triggered by the parent backup job. This sequence ensures that the VM (and the instances) restore point is present when you need to use WAL files to restore the database.
 
+For PostgreSQL clusters managed by Patroni, Veeam Backup & Replication backs up WAL files from the leader node only and can use them with a backup of any node in the cluster to restore the cluster to the necessary state. For more information on requirements for cluster backup, see [PostgreSQL WAL Files Backup](postgresql_backup.md).
+
 Sessions of Archived Log Backup Jobs
 
 The child backup job runs permanently in the background, shipping WAL files to the backup repository at a specific time interval (by default, every 15 minutes). A sequence of time intervals between sessions of the parent backup job makes up a session of the child backup job.
@@ -29,4 +31,5 @@ The child backup session starts and stops in the following way:
 * The session ends before the next session of the parent backup job or when this parent backup job is disabled.
 * When the session ends, Veeam Backup & Replication stops the non-persistent runtime components and uninstalls them from the VM guest OS. When a new session starts, the runtime components are deployed again.
 
+Page updated 2026-07-31
 
