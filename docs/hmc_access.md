@@ -3,8 +3,8 @@ title: "Accessing Veeam Host Management Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_access.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Accessing Veeam Host Management Console
@@ -29,16 +29,29 @@ Logging in to Web UI
 To log in to the Veeam Host Management web UI, do the following:
 
 1. In your web browser, navigate to the Veeam Host Management URL. The URL consists of an FQDN or IP address of the server where the backup infrastructure component is installed, and the Veeam Host Management port. For example, https://vbrsrv01.tech.local:10443.
-2. Specify user credentials with Host Administrator or Security Officer permissions.
-3. Click Sign in.
-4. If you enable multi-factor authentication (MFA) for the user, specify the confirmation code and click OK.
 
 |  |
 | --- |
 | Note |
-| For Security Officer, MFA is enabled by default. |
+| The Veeam Host Management web UI does not support the following browser versions:   * Google Chrome — version 118 and earlier * Microsoft Edge — version 118 and earlier * Google Chrome — version 118 and earlier |
 
-[![Accessing Veeam Host Management Console](images/hmc_web_ui.webp)](images/hmc_web_ui.webp)
+1. Select a language. This choice applies only to the current session and does not change your saved user settings.
+2. Specify user credentials with Host Administrator or Security Officer permissions.
+
+|  |
+| --- |
+| Tip |
+| If you have forgotten the password to your Host Administrator account, you can request a remote password reset by clicking Forgot password?  This option is only available if the following is true:   * The appliance has a Security Officer account configured. * Remote password resets are enabled in the Password Policies menu. For more information, see [Configuring Password Policies](hmc_manage_user_auth.md#password_policies). |
+
+1. Click Sign in.
+2. If you enable multi-factor authentication (MFA) for the user, specify the confirmation code and click OK.
+
+|  |
+| --- |
+| Note |
+| If you skipped multi-factor authentication (MFA) configuration for veeamadmin during the appliance installation, you are prompted to set up MFA at first login to the Veeam Host Management console. Until you configure MFA, you cannot access Veeam Backup & Replication. |
+
+[![Accessing Veeam Host Management Console](images/hmc_tui.webp)](images/hmc_tui.webp)
 
 Logging in to TUI
 
@@ -61,6 +74,12 @@ To log in to the Veeam Host Management TUI, do the following:
 1. Press [Enter].
 2. If you enabled multi-factor authentication (MFA) for the user, specify the confirmation code and press [OK].
 
+|  |
+| --- |
+| Note |
+| If you skipped multi-factor authentication (MFA) configuration for veeamadmin during the appliance installation, you are prompted to set up MFA at first login to the Veeam Host Management console. Until you configure MFA, you cannot access Veeam Backup & Replication. |
+
 [![Accessing Veeam Host Management Console](images/hmc_tui.webp)](images/hmc_tui.webp)
 
+Page updated 2026-07-21
 
