@@ -3,8 +3,8 @@ title: "Removing Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_remove_backups.html"
-last_updated: "8/31/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Backups
@@ -39,7 +39,7 @@ To permanently remove backup copies from the target backup repository:
 
 1. Open the Home view.
 2. In the inventory pane, select Backups > Disk (Copy).
-3. In the working area, right-click the backup copy job or a workload in the backup copy and click click Remove from > Disk.
+3. In the working area, right-click the backup copy job or a workload in the backup copy and click Remove from > Disk.
 4. To remove all weekly, monthly, quarterly and yearly backups from disk, select the Remove GFS full backups check box and click Yes.
 
 [![Removing Backups](images/remove_from_disk_bcj_vm.webp)](images/remove_from_disk_bcj_vm.webp)
@@ -63,4 +63,5 @@ To remove a backup from the configuration:
 
 [![Removing Backups](images/remove_from_configuration_bcj.webp)](images/remove_from_configuration_bcj.webp)
 
+Page updated 2026-07-23
 
