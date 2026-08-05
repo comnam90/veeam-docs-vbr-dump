@@ -3,8 +3,8 @@ title: "Step 2. Select Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_multiple_tas_select_databases.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Select Databases
@@ -16,4 +16,5 @@ To quickly find the necessary databases, use the search field or sort the databa
 
 ![Step 2. Select Databases](images/multiple_ir_select_databases.webp "Selecting Databases to Restore")
 
+Page updated 2026-08-04
 
