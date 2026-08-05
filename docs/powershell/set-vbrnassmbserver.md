@@ -3,8 +3,8 @@ title: "Set-VBRNASSMBServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrnassmbserver.html"
-last_updated: "12/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRNASSMBServer
@@ -26,19 +26,19 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Set-VBRNASSMBServer -Server <VBRNASSMBServer> [-RequireAccessCredentials] [-ProcessingMode <VBRNASProcessingMode>{Direct | VSSSnapshot | StorageSnapshot}] [-ProxyMode <VBRNASProxyMode> {Automatic | SelectedProxy}] [-SelectedProxyServer <VBRNASProxyServer[]>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-StorageSnapshotPath <string>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-EnableDirectBackupFailover]  [<CommonParameters>] |
+| Set-VBRNASSMBServer -Server <VBRNASSMBServer> [-RequireAccessCredentials] [-ProcessingMode <VBRNASProcessingMode>{Direct | VSSSnapshot | StorageSnapshot}] [-ProxyMode <VBRNASProxyMode> {Automatic | SelectedProxy}] [-SelectedProxyServer <VBRNASProxyServer[]>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-StorageSnapshotPath <string>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-EnableDirectBackupFailover] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify settings of SMB network shared folders with the user name and password.
 
 |  |
 | --- |
-| Set-VBRNASSMBServer -Server <VBRNASSMBServer> -User <string> -Password <string> [-RequireAccessCredentials] [-ProcessingMode <VBRNASProcessingMode> {Direct | VSSSnapshot | StorageSnapshot}] [-ProxyMode <VBRNASProxyMode> {Automatic | SelectedProxy}] [-SelectedProxyServer <VBRNASProxyServer[]>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-StorageSnapshotPath <string>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-EnableDirectBackupFailover]  [<CommonParameters>] |
+| Set-VBRNASSMBServer -Server <VBRNASSMBServer> -User <string> -Password <string> [-RequireAccessCredentials] [-ProcessingMode <VBRNASProcessingMode> {Direct | VSSSnapshot | StorageSnapshot}] [-ProxyMode <VBRNASProxyMode> {Automatic | SelectedProxy}] [-SelectedProxyServer <VBRNASProxyServer[]>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-StorageSnapshotPath <string>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-EnableDirectBackupFailover] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify settings of SMB network shared folders using credentials.
 
 |  |
 | --- |
-| Set-VBRNASSMBServer -Server <VBRNASSMBServer> -AccessCredentials <CCredentials> [-RequireAccessCredentials] [-ProcessingMode <VBRNASProcessingMode> {Direct | VSSSnapshot | StorageSnapshot}] [-ProxyMode <VBRNASProxyMode> {Automatic | SelectedProxy}] [-SelectedProxyServer <VBRNASProxyServer[]>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-StorageSnapshotPath <string>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-EnableDirectBackupFailover]  [<CommonParameters>] |
+| Set-VBRNASSMBServer -Server <VBRNASSMBServer> -AccessCredentials <CCredentials> [-RequireAccessCredentials] [-ProcessingMode <VBRNASProcessingMode> {Direct | VSSSnapshot | StorageSnapshot}] [-ProxyMode <VBRNASProxyMode> {Automatic | SelectedProxy}] [-SelectedProxyServer <VBRNASProxyServer[]>] [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-StorageSnapshotPath <string>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-EnableDirectBackupFailover] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -51,14 +51,15 @@ This cmdlet modifies settings of SMB network shared folders added to the Veeam 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Server | Specifies an array of SMB network shared folders that you want to modify. | Accepts the VBRNASSMBServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | User | Specifies the user name. The cmdlet will apply this user name to authenticate against the SMB network shared folder.  Note: The user name must be in the DOMAIN\Username format. | String | True | Named | False |
 | Password | Specifies the password. The cmdlet will use this password to authenticate against the SMB network shared folder. | String | True | Named | False |
 | AccessCredentials | Specifies credentials that the cmdlet will use to authenticate against the SMB network shared folder. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | False |
 | RequireAccessCredentials | Defines that the cmdlet will check whether Veeam Backup & Replication uses authentication to access the SMB network shared folder.  If you do not provide this parameter, the cmdlet will not check credentials that are used to access the SMB network shared folder.  To remove credentials, specify the RequireAccessCredentials parameter with the :$False value.  Note: If credentials are not provided, the cmdlet will return an error. To avoid the error, you must specify credentials using either of the following parameters:   * User and Password * AccessCredentials | SwitchParamter | False | Named | False |
-| ProcessingMode | Specifies processing options that define how Veeam Backup & Replication will back up data.   * Direct: use this option to back up directly from the SMB network shared folder. * VSSSnapshot: use this option to back up from VSS snapshots that have been created by the backup proxy. * StorageSnapshot: use this option to back up from the native storage snapshots. | VBRNASProcessingMode | False | Named | False |
+| ProcessingMode | Specifies processing options that define how Veeam Backup & Replication will back up data.   * Direct: use this option to back up directly from the SMB network shared folder. Note: This option does not back up locked files. * VSSSnapshot: use this option to back up from VSS snapshots that have been created by the backup proxy. * StorageSnapshot: use this option to back up from the native storage snapshots. Use the StorageSnapshotPath parameter to specify the path to the folder where native storage snapshots are located. | VBRNASProcessingMode | False | Named | False |
 | ProxyMode | Specifies the backup proxy options.   * Automatic: use this option if you want Veeam Backup & Replication to choose the backup proxy that will process the SMB network shared folder. * SelectedProxy: use this option if you want to specify the backup proxy that will process the SMB network shared folder. Use the SelectedProxyServer parameter to specify the backup proxy. | VBRNASProxyMode | False | Named | False |
 | SelectedProxyServer | For the SelectedProxy option of the ProxyMode parameter.  Specifies the backup proxy. Veeam Backup & Replication will use this backup proxy to back up the SMB network shared folder. | Accepts the VBRNASProxyServer[] object. To get this object, run the [Get-VBRNASProxyServer](get-vbrnasproxyserver.md) cmdlet. | False | Named | False |
 | CacheRepository | Specifies the cache repository. Veeam Backup & Replication will keep the cached data of the SMB network shared folder on this repository. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
@@ -66,6 +67,8 @@ Parameters
 | StorageSnapshotPath | For the StorageSnapshot processing options.  Specifies the path to the folder where native storage snapshots are located. Veeam Backup & Replication will get data from these snapshots located at the specified folder. | String | False | Named | False |
 | BackupIOControlLevel | Specifies a speed that Veeam Backup & Replication will use to read data from the file server. You can specify either of the following speed:   * Lowest * Low * Medium * High * Highest | VBRNASBackupIOControlLevel | False | Named | False |
 | EnableDirectBackupFailover | For the StorageSnapshot processing option.  Defines that if the native storage snapshot fails while being processed, Veeam Backup & Replication will backup data directly from the file server. | SwitchParameter | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will modify settings of SMB network shared folders without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -114,4 +117,5 @@ Related Commands
 * [Get-VBRCredentials](get-vbrcredentials.md)
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-29
 
