@@ -3,8 +3,8 @@ title: "Immutability for Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/immutability_hv.html"
-last_updated: "12/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Immutability for Backup Files
@@ -25,4 +25,5 @@ You can enable the immutability feature for the following types of backup reposi
 * Object storage repository. For more information, see [Immutability for Object Storage Repositories](immutability_object_storage_repositories.md).
 * Scale-out backup repository. For more information, see [Immutability for Scale-out Backup Repository](immutability_sobr.md).
 
+Page updated 2026-08-04
 
