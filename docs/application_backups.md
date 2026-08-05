@@ -3,8 +3,8 @@ title: "Managing Application Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_backups.html"
-last_updated: "6/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Application Backups
@@ -22,6 +22,7 @@ You can perform administration tasks with backups created on a Veeam backup repo
 |  |
 | --- |
 | Note |
-| Backups created by Veeam Plug-Ins cannot be used as a source for file to tape or backup to tape jobs. |
+| Backups created by Veeam Plug-Ins cannot be used as a source for file to tape jobs. For information about backup to tape support, see [Backup to Tape](plugins_rman_backup_to_tape.md). |
 
+Page updated 2026-07-10
 
