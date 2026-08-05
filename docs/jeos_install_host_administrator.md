@@ -3,8 +3,8 @@ title: "Step 8. Configure Host Administrator Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/jeos_install_host_administrator.html"
-last_updated: "12/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 8. Configure Host Administrator Account
@@ -28,13 +28,41 @@ To configure the host administrator account, perform the following steps:
 | Tip |
 | To view the password, select Show Password and press the spacebar. |
 
-![Step 8. Configure Host Administrator Account](images/deployment_iso_install_host_admin_password.webp)
+![Step 9. Configure Host Administrator Account](images/deployment_iso_install_host_admin_password.webp)
 
-1. Configure multi-factor authentication (MFA):
+1. Configure your multi-factor authentication (MFA) settings. Perform one of the following actions:
+
+1. To configure MFA immediately:
 
 1. Open your authentication application. Enter the code or scan the QR code.
-2. Specify the one-time code provided by the application.
-3. Press [Ok].
+2. Specify the one-time code provided by the application in the Configure Multi-Factor Authentication dialog box.
+3. Press [OK].
+
+![Step 9. Configure Host Administrator Account](images/deployment_iso_install_host_admin_mfa.webp)
+
+1. To configure MFA in the Host Management console after completing the Initial Configuration wizard:
+
+1. When the Configure Multi-Factor Authentication dialog box opens, press [Escape].
+2. Select [OK].
+
+![Step 9. Configure Host Administrator Account](images/jeos_mfa_deferred.webp)
+
+1. To disable MFA entirely:
+
+1. At the Host Administrator step, press [F8].
+2. Type OK in the field and press [Enter].
+
+|  |
+| --- |
+| Note |
+| Press [F8] at the Host Administrator step, before the Configure Multi-Factor Authentication dialog box opens. [F8] has no effect while that dialog box is open. |
+
+![Step 9. Configure Host Administrator Account](images/jeos_mfa_disabled.webp)
+
+|  |
+| --- |
+| Important |
+| If you disable MFA in the Initial Configuration wizard, you can enable it later in the Host Management console. After you enable MFA, users are prompted to set it up at their next login. |
 
 |  |
 | --- |
@@ -43,6 +71,5 @@ To configure the host administrator account, perform the following steps:
 
 1. Select Next.
 
-![Step 8. Configure Host Administrator Account](images/deployment_iso_install_host_admin_mfa.webp)
-
+Page updated 2026-07-28
 
