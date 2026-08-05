@@ -1,13 +1,13 @@
 ---
-title: "SP and Tenant Roles"
+title: "Service Providers and Tenants"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_roles.html"
-last_updated: "12/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# SP and Tenant Roles
+# Service Providers and Tenants
 
 
 Communication in the cloud is carried out between two parties: SP on one side and tenants on the other side.
@@ -22,7 +22,7 @@ Communication in the cloud is carried out between two parties: SP on one side an
 |  |
 | --- |
 | Note |
-| Veeam Cloud Connect does not support Role-Based Access Control (RBAC). Tenants cannot be assigned custom roles to control access to the SP cloud infrastructure. |
+| Veeam Cloud Connect does not support Role-Based Access Control (RBAC). Tenants cannot be assigned custom roles to control access to the SP cloud infrastructure. However, tenants can use RBAC on the tenant backup server to control access to cloud backup copies. To learn more, see [Custom Roles on Tenant Side](cloud_tenant_roles.md). |
 
 SP Tasks
 
@@ -38,7 +38,7 @@ Veeam Cloud Connect Backup Tasks
 + Registers tenant accounts.
 
 * Managing tenant accounts and tenant data to ensure flawless work of the Veeam Cloud Connect infrastructure.
-* Performing selected data recovery operations from tenant backups.
+* Performing selected VM restore operations and instant recovery from tenant backups. For details, see [Restoring Data from Tenant Backups](cc_data_restore.md).
 
 Veeam Cloud Connect Replication Tasks
 
@@ -76,4 +76,5 @@ SP and Tenant Roles in Managed Service Scenario
 
 In addition to Backup as a Service (Veeam Cloud Connect Backup) and Disaster Recovery as a Service (Veeam Cloud Connect Replication), the SP can use Veeam Backup & Replication to offer the Managed Service (MSP Backup and Disaster Recovery as a Service) to tenants. In this scenario, the tenant may not take part in deploying and managing backup infrastructure. The SP takes responsibility for configuring backup infrastructure on the tenant side and performing all data protection and disaster recovery tasks. To learn more, see [Managed Service (MSP Backup)](cloud_connect_licensing.md#baas).
 
+Page updated 2026-07-22
 
