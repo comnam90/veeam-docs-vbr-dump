@@ -1,0 +1,21 @@
+---
+title: "Step 2. Specify Backup Repository Name and Description"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/abr_repository_name.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Step 2. Specify Backup Repository Name and Description
+
+
+At the Name step of the wizard, specify a name and description for the backup repository:
+
+1. In the Name field, specify a name for the backup repository.
+2. In the Description field, provide a description for future reference.
+
+![Step 2. Specify Backup Repository Name and Description](images/new_abr_wizard_name.webp)
+
+Page updated 2026-06-05
+
