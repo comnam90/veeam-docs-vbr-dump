@@ -3,14 +3,17 @@ title: "Configuration Commands"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_configure_commands.html"
-last_updated: "8/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuration Commands
 
 
-You can use the DB2ConfigTool tool to change specific parameters in the configuration file, located in the /opt/veeam/VeeamPluginforDB2 directory.
+You can use the DB2ConfigTool tool to change specific parameters in the configuration file, located in one of the following locations:
+
+* For Linux or Unix: /opt/veeam/VeeamPluginforDB2/veeam\_config.xml.
+* For Microsoft Windows: %PROGRAMFILES%\Veeam\VeeamPluginforDB2\veeam\_config.xml.
 
 |  |
 | --- |
@@ -19,11 +22,12 @@ You can use the DB2ConfigTool tool to change specific parameters in the configur
 
 You can use the following parameters with DB2ConfigTool:
 
+Configuration Commands
+
 | Parameter | Description |
-| --- | --- |
 | --help | Shows the list of tool parameters. |
 | --show-config | Shows configuration parameters. |
-| --wizard | Starts the wizard to configure the plug-in settings. This wizard edits the Veeam Plug-In configuration file (veeam\_config.xml) or creates a new one if the configuration file was removed from the /opt/veeam/VeeamPluginforDB2 directory on the machine where Veeam Plug-In is installed. |
+| --wizard | Starts the wizard to configure the plug-in settings. This wizard edits the Veeam Plug-In configuration file (veeam\_config.xml) or creates a new one if the configuration file was removed from the folder where Veeam Plug-In is installed. |
 | --set-credentials <"serv\username"> <password> | Specifies credentials to log in to the Veeam Backup & Replication server. |
 | --set-host <hostname> | Specifies the IP address or hostname of the Veeam Backup & Replication server. |
 | --set-port <port\_number> | Specifies a port number that Veeam Plug-In will use to communicate with the Veeam Backup & Replication server. |
@@ -43,10 +47,19 @@ You can use the following parameters with DB2ConfigTool:
 
 Example
 
-To specify credentials that will be used to log in to the Veeam Backup & Replication server, use the plug-in configuration tool with the following command:
+To specify credentials that will be used to log in to the Veeam Backup & Replication server, run one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
-| DB2ConfigTool --set-credentials "serv02\Administrator" password |
+| /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --set-credentials "serv02\Administrator" password |
 
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --set-credentials "serv02\Administrator" password |
+
+Page updated 2026-07-02
 
