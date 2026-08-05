@@ -3,8 +3,8 @@ title: "/agents/agentRestorePoints/{ID}/mounts/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/agents_agentrestorepoints_id_mounts_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /agents/agentRestorePoints/{ID}/mounts/{ID}
@@ -41,6 +41,7 @@ The /agents/agentRestorePoints/{ID}/mounts/{ID} resource has a resource represen
 
 |  |
 | --- |
-| <AgentRestorePointMount Href="https://localhost:9398/api/agents/agentRestorePoints/dd3cf3d0-0533-424e-abc3-249c4c62b797/mounts/1" Type="AgentRestorePointMount" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| <AgentRestorePointMount Href="https://localhost:9398/api/agents/agentRestorePoints/dd3cf3d0-0533-424e-abc3-249c4c62b797/mounts/1" Type="AgentRestorePointMount" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="https://localhost:9398/api/agents/agentRestorePoints/dd3cf3d0-0533-424e-abc3-249c4c62b797/mounts/1" Rel="Delete"/>   </Links>   <FSRoots>     <DirectoryEntry Href="https://localhost:9398/api/agents/agentRestorePoints/dd3cf3d0-0533-424e-abc3-249c4c62b797/mounts/1/C:" Type="DirectoryEntry">       <Path>C:</Path>       <Name>C:</Name>     </DirectoryEntry>   </FSRoots> </AgentRestorePointMount> |
 
+Page updated 2026-07-29
 
