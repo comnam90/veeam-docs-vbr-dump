@@ -3,8 +3,8 @@ title: "Installing Veeam Software Appliance from OVA"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_ova.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Veeam Software Appliance from OVA
@@ -20,4 +20,5 @@ To deploy Veeam Software Appliance using the OVA file, perform the following ste
 4. Select Veeam Backup & Replication in the boot menu.
 5. Starting from the [Read and Accept License Agreements](deployment_linux_iso_install_license.md) step, follow the process described in the [Installing Veeam Software Appliance from ISO](deployment_linux_iso_install.md) section to complete the Initial Configuration wizard.
 
+Page updated 2026-07-15
 
