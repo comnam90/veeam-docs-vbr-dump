@@ -3,7 +3,7 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_byb.html"
-last_updated: "2026"
+last_updated: "7/9/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -49,6 +49,3 @@ Before you install Veeam Software Appliance, review known issues and limitations
 * [V-270180](https://stigviewer.com/stigs/red_hat_enterprise_linux_9/2024-12-04/finding/V-270180) — The RHEL 9 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.
 * [V-257937](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-257937) — The RHEL 9 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems.
 * [V-258122](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-258122) — RHEL 9 must enable certificate based smart card authentication.
-
-Page updated 2026-07-09
-
