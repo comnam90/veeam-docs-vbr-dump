@@ -3,7 +3,7 @@ title: "Veeam Software Appliance Installation"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux.html"
-last_updated: "2026"
+last_updated: "7/9/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,6 +20,3 @@ In This Section
 * [Installing Veeam Software Appliance from ISO](deployment_linux_iso_install.md)
 * [Reinstalling Veeam Software Appliance from ISO](deployment_linux_iso_reinstall.md)
 * [Automated Veeam Software Appliance Installation](deployment_linux_automated_deployment.md)
-
-Page updated 2026-07-09
-
