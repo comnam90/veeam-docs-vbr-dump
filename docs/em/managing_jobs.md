@@ -3,7 +3,7 @@ title: "Managing Jobs"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/managing_jobs.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -41,6 +41,3 @@ In This Section
 * [Creating Active Full Backups](em_job_create_active_full.md)
 * [Cloning Jobs](cloning_backup_replication_jobs.md)
 * [Deleting Jobs](em_delete_job.md)
-
-Page updated 2026-07-10
-
