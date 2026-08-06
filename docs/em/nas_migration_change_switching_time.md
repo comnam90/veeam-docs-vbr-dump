@@ -3,7 +3,7 @@ title: "Changing Switchover Time"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/nas_migration_change_switching_time.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,6 +25,3 @@ To change the time when Veeam Backup & Replication will switch from the mount
 1. At the Summary step of the Edit Switchover wizard, review the migration settings and click Finish.
 
 [![Changing Switchover Time](images/nas_edit_schedule.webp)](images/nas_edit_schedule.webp "Changing Switchover Time")
-
-Page updated 2026-07-10
-
