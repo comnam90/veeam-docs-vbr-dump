@@ -3,7 +3,7 @@ title: "Working with Veeam Self-Service Backup Portal"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_working_with_portal.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,6 +24,3 @@ In Veeam Self-Service Backup Portal, members of VMware Cloud Director organizati
 | If the Veeam Backup Enterprise Manager server is added to the Veeam ONE monitoring scope, the restore operations performed with Veeam Self-Service Backup Portal are included in the [Restore Operator Activity](https://helpcenter.veeam.com/docs/one/userguide/restore_operator_activity.html?ver=13) report available in Veeam ONE. |
 
 4
-
-Page updated 2026-07-10
-
