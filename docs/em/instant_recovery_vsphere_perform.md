@@ -3,7 +3,7 @@ title: "Performing Instant Recovery to VMware vSphere"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_vsphere_perform.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,6 +18,3 @@ To instantly recover a VM, use the Instant Recovery to VMware vSphere wizard.
 4. [Specify destination settings for the recovered VM](instant_recovery_vsphere_destination.md).
 5. [Specify target datastore](instant_recovery_vsphere_datastore.md).
 6. [Review the recovery settings](instant_recovery_vsphere_summary.md).
-
-Page updated 2026-07-10
-

@@ -3,7 +3,7 @@ title: "Updating Tape Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/updating_tapeserver.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,5 +25,3 @@ If components on all managed servers are up to date, the Upgrade item will be di
 The Components Update section lists tape servers that have outdated components deployed. To see the current and the latest available versions for deployed components, select a server in the list and click Details. Select check boxes next to servers for which you want to upgrade components and click Apply.
 
 ![Updating Tape Servers](images/tapeproxy_update.webp)
-
-

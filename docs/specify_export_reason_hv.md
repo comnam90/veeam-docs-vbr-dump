@@ -3,7 +3,7 @@ title: "Step 4. Specify Export Reason"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_export_reason_hv.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ At the Reason step of the wizard, provide the reason for restore.
 | If you do not want to show this page, select the Do not show me this page again check box. If you want to unhide this page, follow the instructions described in [this Veeam KB article](https://www.veeam.com/kb4432). |
 
 [![Step 4. Specify Export Reason](images/export_vbk_7.webp)](images/export_vbk_7.webp)
-
-

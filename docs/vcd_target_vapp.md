@@ -3,7 +3,7 @@ title: "Step 7. Select Target vApp"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_target_vapp.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,5 +21,3 @@ By default, Veeam Backup & Replication fails back the replica to the source vApp
 3. Click Add.
 
 ![Step 7. Select Target vApp](images/vcd_failback_target_vapp.webp)
-
-

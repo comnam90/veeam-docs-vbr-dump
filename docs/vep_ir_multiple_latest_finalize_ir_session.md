@@ -3,7 +3,7 @@ title: "Step 3. Finalize Instant Recovery Session"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_ir_multiple_latest_finalize_ir_session.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -30,5 +30,3 @@ Related Topics
 
 * [Managing Instant Recovery Session](vesql_instant_session.md)
 * [Switchover](vesql_switchover.md)
-
-

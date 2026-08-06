@@ -3,7 +3,7 @@ title: "Backup Copy for Oracle RMAN Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_main_rman.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,5 +24,3 @@ In This Section
 
 * [Creating Backup Copy Job](backup_copy_rman.md)
 * [Converting Backup Copy to Backup](mapping_backup_copy.md)
-
-

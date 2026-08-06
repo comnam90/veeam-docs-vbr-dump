@@ -3,8 +3,8 @@ title: "Restoring Data from Veeam Agent Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_restore_tasks.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/13/2026"
+product_version: "13.0.2.29"
 ---
 
 # Restoring Data from Veeam Agent Backups
@@ -39,5 +39,3 @@ You can perform the following restore operations:
 * [Publish disks to analyze backup content](integration_publish.md)
 
 * [Export restore points of Veeam Agent backups to standalone full backup files](agent_export_backup.md)
-
-

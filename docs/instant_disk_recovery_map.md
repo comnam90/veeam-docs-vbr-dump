@@ -3,7 +3,7 @@ title: "Step 5. Select Virtual Disks to Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_disk_recovery_map.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -31,5 +31,3 @@ At the Disk Mapping step, select virtual disks that you want to restore and choo
 | If you restore a virtual disk to an unoccupied node, Veeam Backup & Replication restores the disk in the offline state. To work with it, you need to bring the disk online. |
 
 ![Step 5. Select Virtual Disks to Restore](images/instant_disk_recovery_mapping.webp)
-
-

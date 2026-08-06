@@ -3,7 +3,7 @@ title: "Step 1. Launch New VMware Cloud Director CDP Policy Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_launch.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ To launch the New VMware Cloud Director CDP Policy wizard, do one of the followi
 * Open the Inventory view. In the inventory pane, right-click workloads that you want to replicate. Select Add to CDP policy > New job if you want to create a new VMware Cloud Director CDP policy, or Add to CDP policy > <Policy Name> if you want to add workloads to an existing VMware Cloud Director CDP policy.
 
 [![Launch wizard](images/vcd_cdp_policy_launch.webp)](images/vcd_cdp_policy_launch.webp "Launch wizard")
-
-

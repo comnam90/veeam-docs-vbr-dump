@@ -3,7 +3,7 @@ title: "Step 2. Specify Media Vault Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_media_vault_name.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ At the Name step of the wizard, you should define basic description for the new 
 3. If you want to set overwrite protection to all tapes in this vault, select the Protect all tapes moved to this media vault automatically check box. For more information, see [Tape Protection](tape_protection.md).
 
 ![Step 2. Specify Media Vault Name](images/vault_add.webp)
-
-

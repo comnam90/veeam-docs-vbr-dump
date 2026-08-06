@@ -3,7 +3,7 @@ title: "Finalizing Instant File Share Recovery"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_nas_recovery_finalize.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,6 +16,3 @@ After you have performed instant file share recovery, you have to finalize the p
 * [For SMB file shares] When you perform instant recovery of an SMB file share, the published file share is available for reading and writing. After you finish working with the files, you must stop publishing the recovered file share or migrate it to the production environment.
 
 Until you finalize instant recovery of all recovered file shares, a notification about running instant recovery sessions is displayed on the Dashboard tab.
-
-Page updated 2026-07-10
-

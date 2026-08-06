@@ -3,7 +3,7 @@ title: "Step 6. Select Destination Network"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_network.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,5 +22,3 @@ To facilitate selection, use the search field at the bottom of the window: enter
 To prevent the restored VM from accessing any network, select it in the list and click Disconnected.
 
 ![Step 6. Select Destination Network](images/vcloud_full_restore_network.webp)
-
-

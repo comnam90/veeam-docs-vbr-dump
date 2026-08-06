@@ -3,7 +3,7 @@ title: "Step 11. Configure Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_schedule.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -46,5 +46,3 @@ Related Topics
 * [Long-term Retention Policy](cdp_retention.md#long)
 
 * [Specify Guest Processing Settings](vcd_cdp_policy_guest.md)
-
-

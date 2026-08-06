@@ -3,7 +3,7 @@ title: "Logging"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/log_cmdlets.html"
-last_updated: "6/24/2026"
+last_updated: "7/21/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ Logging
 | Cmdlet | Operation |
 | [Export-VBRLogs](export-vbrlogs.md) | Collects system logs for export. |
 | [Get-VBRExportLogSession](get-vbrexportlogsession.md) | Returns details on sessions that were started to collect system logs. |
-
-

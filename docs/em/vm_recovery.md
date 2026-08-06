@@ -3,7 +3,7 @@ title: "VM Recovery"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vm_recovery.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,6 +20,3 @@ With Veeam Backup Enterprise Manager, you can perform the following types of rec
 
 * [VM Failover](em_performing_failover.md)
 * [Failover Plans](em_failover.md)
-
-Page updated 2026-07-10
-

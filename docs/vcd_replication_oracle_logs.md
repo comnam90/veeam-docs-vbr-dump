@@ -3,7 +3,7 @@ title: "Oracle Archived Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replication_oracle_logs.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -47,5 +47,3 @@ It is recommended that you select this option for databases where the ARCHIVELOG
 The non-persistent runtime components or persistent components running on the VM guest OS will wait for the replication job to complete successfully and then trigger transaction logs truncation using Oracle Call Interface (OCI). If the job does not manage to replicate the Oracle VM, the logs will remain untouched on the VM guest OS until the next start of the non-persistent runtime components or persistent components.
 
 ![Oracle Archived Log Settings](images/vcd_transaction_oracle.webp)
-
-

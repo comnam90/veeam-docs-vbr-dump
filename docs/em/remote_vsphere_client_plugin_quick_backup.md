@@ -3,7 +3,7 @@ title: "Creating Incremental VM Backup with Quick Backup"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/remote_vsphere_client_plugin_quick_backup.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -31,6 +31,3 @@ This will trigger a backup job processing the selected VM to create a new increm
 | A quick backup job fails to start if the Location property of the VM and backup repository do not match — for example, if you try to use a repository with location set to Sydney to back up a VM with location set to Helsinki. To read more about location settings, refer to the Veeam Backup & Replication User Guide. |
 
 [![Creating Incremental VM Backup with Quick Backup](images/remote_plugin_quick_backup.webp)](images/remote_plugin_quick_backup.webp "Creating Incremental VM Backup with Quick Backup")
-
-Page updated 2026-07-10
-

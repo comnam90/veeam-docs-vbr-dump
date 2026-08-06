@@ -3,7 +3,7 @@ title: "Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_guest_scripts.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -43,5 +43,3 @@ To configure scripts:
 If you plan to replicate a VM container with Microsoft Windows and Linux VMs, you can select to execute both Microsoft Windows and Linux scripts. When replication starts, Veeam Backup & Replication will automatically determine which OS type is installed on the VM and use the correct scripts for this VM.
 
 ![Script Settings](images/vcd_cdp_policy_script.webp)
-
-

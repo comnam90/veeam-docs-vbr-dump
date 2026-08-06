@@ -3,7 +3,7 @@ title: "Retention for Forward Incremental Backups"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/forward_increment_retention.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,6 +25,3 @@ For example, the retention policy settings are specified in the following manner
 * The retention period in Veeam Backup Enterprise Manager is set to 1 month, or 30 days.
 
 In this case, Veeam Backup Enterprise Manager will retain indexing data for 30 days, because this value is greater than the number of restore points in the job.
-
-Page updated 2026-07-10
-

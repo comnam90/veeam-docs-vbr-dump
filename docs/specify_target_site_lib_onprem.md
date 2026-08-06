@@ -3,7 +3,7 @@ title: "Step 3. Specify Target Site Web Address and Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_target_site_lib_onprem.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,5 +23,3 @@ To specify web address of a target site and credentials to connect to SharePoint
 2. In the Specify user account to connect to SharePoint Server section, use an account that you are currently logged in to or provide a user name and password to connect to the on-premises Microsoft SharePoint server.
 
 ![Step 3. Specify Target Site Web Address and Credentials](images/target_url_3.webp "Specify Target Site Web Address")
-
-

@@ -3,7 +3,7 @@ title: "Step 5. Specify Target Site and List"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_target_site_list_m365.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,5 +23,3 @@ To specify web address of a target site and a list to restore backed-up data, do
 If the specified list does not exist, Veeam Explorer for Microsoft SharePoint will create it automatically.
 
 ![Step 5. Specify Target Site and List](images/target_url_list_2.webp "Specify Target Site and List")
-
-

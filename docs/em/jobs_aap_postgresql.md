@@ -3,7 +3,7 @@ title: "PostgreSQL Archive Log Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/jobs_aap_postgresql.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -48,6 +48,3 @@ Make sure the specified account has sufficient rights. For details, see the [Per
 | Using the Veeam Backup & Replication console, you can also specify log shipping servers that you want to use to transport archive logs. For more information, see the [Retention for PostgreSQL WAL Files](https://helpcenter.veeam.com/docs/vbr/userguide/postrgresql_backup_retention.html?ver=13) section of the Veeam Backup & Replication User Guide. |
 
 ![PostgreSQL Archive Log Settings](images/postgresl_item_restore_postgres.webp "Handling PostgreSQL Transaction Logs")
-
-Page updated 2026-07-10
-

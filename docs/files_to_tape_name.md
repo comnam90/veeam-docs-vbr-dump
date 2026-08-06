@@ -3,7 +3,7 @@ title: "Step 2. Specify Job Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/files_to_tape_name.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,5 +16,3 @@ At the Name step of the wizard, you should define basic settings for the created
 2. In the Description field, enter a description of the created job. The default description contains information about the user who created the job, date and time when the job was created.
 
 ![Step 2. Specify Job Name and Description](images/files_to_tape_name.webp)
-
-

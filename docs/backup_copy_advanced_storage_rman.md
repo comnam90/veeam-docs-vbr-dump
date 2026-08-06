@@ -3,7 +3,7 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_storage_rman.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -28,5 +28,3 @@ You can select a Key Management System (KMS) server in the Password field. To do
 | When specifying encryption settings, consider the following:   * To enable encryption for an existing backup copy job, you must disable a backup copy job. Otherwise, you cannot reconfigure the Enable backup file encryption check box.   After you enable encryption and enable the backup copy job, Veeam Backup & Replication applies new settings only starting from the next backup session (created manually or by the GFS schedule). The next created backup file will be encrypted with the specified password.   * Encryption is not retroactive. If you enable encryption for an existing job, Veeam Backup & Replication does not encrypt the previous backup chain created with this job. If you want to start a new chain so that the unencrypted previous chain can be separated from the encrypted new chain, follow the scenario described in [this Veeam KB article](https://www.veeam.com/kb1885). |
 
 ![Storage Settings](images/plugins_backup_copy_storage.webp)
-
-

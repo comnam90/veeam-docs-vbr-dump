@@ -3,7 +3,7 @@ title: "Step 1. Launch Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restore_wizard.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,5 +16,3 @@ To launch the Restore wizard, do the following:
 2. On the Objects tab, select Restore Objects > Restore objects to or right-click an object and select Restore objects to.
 
 [![Restoring Objects](images/restore_object_1.webp)](images/restore_object_1.webp "Restoring Objects")
-
-

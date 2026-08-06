@@ -3,7 +3,7 @@ title: "Step 5. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover_summary.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,5 +23,3 @@ Failover is an intermediate step that needs to be finalized. You can finalize fa
 * Perform permanent failover
 * Undo failover
 * Perform failback
-
-

@@ -3,7 +3,7 @@ title: "Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_notifications_hana.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -28,5 +28,3 @@ At the Notifications tab, to specify notification settings for the backup copy j
 2. Select the Notify on success, Notify on warning and Notify on error check boxes to receive email notification if data processing within the backup copy interval completes successfully, fails or completes with a warning.
 
 ![Notification Settings](images/plugins_backup_copy_notifications.webp)
-
-

@@ -3,7 +3,7 @@ title: "Working with Scale-Out Backup Repositories"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sobr_operations.html"
-last_updated: "6/24/2026"
+last_updated: "7/21/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,5 +19,3 @@ Working with Scale-Out Backup Repositories
 | [Set-VBRScaleOutBackupRepository](set-vbrscaleoutbackuprepository.md) | Modifies scale-out backup repositories. |
 | [Send-VBRScaleOutBackupRepositoryReport](send-vbrscaleoutbackuprepositoryreport.md) | Sends reports on processing results of scale-out backup repositories. |
 | [Start-VBRScaleOutBackupRepositoryRebalance](start-vbrscaleoutbackuprepositoryrebalance.md) | Starts to rebalance data of scale-out backup repositories. |
-
-

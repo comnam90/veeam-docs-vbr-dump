@@ -3,7 +3,7 @@ title: "Step 4. Specify Target List"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_restore_lib.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,5 +20,3 @@ You can select one of the following options:
 If the specified list does not exist, Veeam Explorer for Microsoft SharePoint will create it automatically.
 
 ![Step 4. Specify Target List](images/vesp_restore_wiz_item_location.webp "Specify Target List ")
-
-

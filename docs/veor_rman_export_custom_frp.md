@@ -3,7 +3,7 @@ title: "Step 3. Fine-Tune Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_rman_export_custom_frp.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ At this step of the wizard, select an operation prior to which you want to expor
 | This step is available only if you have selected the Perform restore to the specific transaction check box at the [Specify Restore Point](veor_rman_export_custom_srp.md) step of the wizard. |
 
 ![Step 3. Fine-Tune Restore Point](images/rman_export.webp "Fine-Tuning Restore Point")
-
-

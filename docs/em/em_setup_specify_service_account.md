@@ -3,7 +3,7 @@ title: "Step 7. Specify Service Account"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_setup_specify_service_account.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,6 +25,3 @@ The user name of the custom account must be specified in the DOMAIN\USERNAME for
 | The user account must have Veeam Backup Enterprise Manager service account permissions to run the Veeam Backup Enterprise Manager Service. For more information, see [Permissions](required_permissions.md). |
 
 ![Step 7. Specify Service Account](images/em_setup_serv_account.webp "Specifying Service Account")
-
-Page updated 2026-07-10
-

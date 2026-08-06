@@ -3,7 +3,7 @@ title: "Examining Backup Infrastructure"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/remote_vsphere_plugin_backup_infrastructure.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -31,6 +31,3 @@ You can view the following statistics:
 * Active Sessions — statistics about all active backup and replication sessions for all vCenter Server VMs.
 
 [![Examining Backup Infrastructure](images/remote_plugin_dashboard.webp)](images/remote_plugin_dashboard.webp "Examining Backup Infrastructure")
-
-Page updated 2026-07-10
-

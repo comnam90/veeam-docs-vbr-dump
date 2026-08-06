@@ -3,7 +3,7 @@ title: "Step 6. Configure Network Mapping"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_network.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -25,5 +25,3 @@ If vApps are connected to multiple networks, select the necessary network and cl
 If you do not want to connect restored vApps to any virtual network, select the necessary vApps and click Disconnect.
 
 ![Step 6. Configure Network Mapping_2](images/vcd_failback_network.webp)
-
-

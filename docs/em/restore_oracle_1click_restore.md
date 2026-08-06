@@ -3,7 +3,7 @@ title: "Restore to Original Location"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_oracle_1click_restore.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -44,6 +44,3 @@ For more information on configuring transaction log backup, see [Oracle Archived
 To view a restore session log, click History.
 
 [![Restore to Original Location](images/em_items_oracle.webp)](images/em_items_oracle.webp "Restore to Original Location")
-
-Page updated 2026-07-10
-

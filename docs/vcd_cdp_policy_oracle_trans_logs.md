@@ -3,7 +3,7 @@ title: "Oracle Archived Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_oracle_trans_logs.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -47,5 +47,3 @@ It is recommended that you select this option for databases where the ARCHIVELOG
 Transaction logs will be deleted using Oracle Call Interface after the CDP policy creates a long-term restore point. If the creation fails, the logs will remain untouched until the next start of the long-term restore point creation.
 
 ![Oracle Archived Log Settings_2](images/vcd_cdp_policy_oracle.webp)
-
-

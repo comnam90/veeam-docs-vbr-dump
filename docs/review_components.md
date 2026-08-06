@@ -3,7 +3,7 @@ title: "Step 4. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/review_components.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ At the Review step of the wizard, Veeam Backup & Replication will display the li
 If any of them is missing, Veeam Backup & Replication will automatically install them on the selected server.
 
 ![Step 4. Review Components](images/tapeproxy_review.webp)
-
-

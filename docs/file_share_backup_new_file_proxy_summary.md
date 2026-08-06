@@ -3,7 +3,7 @@ title: "Step 6. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_new_file_proxy_summary.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,5 +13,3 @@ product_version: "13.0.2.29"
 At the Summary step of the wizard, review details of the added backup proxy and click Finish to exit the wizard.
 
 ![Step 6. Finish Working with Wizard](images/add_file_proxy_summary.webp "Finish File Proxy Addition")
-
-

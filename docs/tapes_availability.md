@@ -3,7 +3,7 @@ title: "Tapes Availability and Write-Protection"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/tapes_availability.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ Before archiving data to tape media, Veeam Backup & Replication detects availabl
 * The tape has the write-protect switch set.
 
 If your tape is write-protected and you want to write data to this tape, you must eject the tape from the drive and drag the write protection switch off. After you insert the tape back to the drive, you must inventory the tape to mark it as writable in the Veeam Backup & Replication database.
-
-

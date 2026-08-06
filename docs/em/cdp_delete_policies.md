@@ -3,7 +3,7 @@ title: "Deleting Policies"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cdp_delete_policies.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,6 +24,3 @@ To delete a policy:
 1. In the displayed window, click Yes to confirm the operation.
 
 ![Deleting Policies](images/em_policy_delete_prompt.webp "Confirmation Window")
-
-Page updated 2026-07-10
-

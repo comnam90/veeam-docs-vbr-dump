@@ -3,7 +3,7 @@ title: "Oracle Archived Redo Log Settings"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/jobs_aap_oracle.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -66,6 +66,3 @@ When the parent backup job (job creating an image-level backup) runs, Veeam Back
 | Using the Veeam Backup & Replication console, you can also specify log shipping servers that you want to use to transport archived logs. For more information, see the [Oracle Archived Log Settings](https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_oracle_vm.html?ver=13) section of the Veeam Backup & Replication User Guide. |
 
 ![Oracle Archived Redo Log Settings](images/em_edit_job_aaip_oracle_new.webp "Handling Archived Logs")
-
-Page updated 2026-07-10
-

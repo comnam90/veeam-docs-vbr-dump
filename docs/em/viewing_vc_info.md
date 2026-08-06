@@ -3,7 +3,7 @@ title: "Viewing vCenter Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/viewing_vc_info.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -26,6 +26,3 @@ For more information on the plug-in, see [Veeam Plug-in for VMware vSphere Clien
 | To perform these operations, you should supply a user account with sufficient permissions to access vCenter Server. User account information is not imported from the Veeam Backup & Replication configuration database to the Enterprise Manager database for security reasons. |
 
 [![Viewing Information about vCenter Servers](images/em_view_vcenters.webp)](images/em_view_vcenters.webp "Viewing Information about vCenter Servers")
-
-Page updated 2026-07-10
-

@@ -3,7 +3,7 @@ title: "Instant File Share Recovery"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_nas_recovery.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,6 +21,3 @@ For SMB file shares, you can mount a recovered file share, make changes to the f
 For NFS file shares, you can use the feature to publish a point-in-time file share state as a read-only SMB file share. This lets you instantly access all recovered files.
 
 After you have performed instant file share recovery, you have to finalize it. For more information, see [Finalizing Instant File Share Recovery](instant_nas_recovery_finalize.md).
-
-Page updated 2026-07-10
-

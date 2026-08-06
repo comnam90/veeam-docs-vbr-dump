@@ -3,7 +3,7 @@ title: "Managing Cloud Director CDP Replicas"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_replica_manage.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ In This Section
 * [Rescanning Replicas](vcd_cdp_rescanning_replicas.md)
 * [Removing from Configuration](vcd_cdp_removing_config.md)
 * [Deleting from Disk](vcd_cdp_delete_disk.md)
-
-

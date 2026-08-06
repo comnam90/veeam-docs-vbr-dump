@@ -3,7 +3,7 @@ title: "Managing Configurations for Cloud Director Organizations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_managing_vcd_org.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,6 +21,3 @@ You can perform the following operations with Cloud Director organizations:
 * [Edit a Cloud Director organization configuration](em_modifying_vcd_org_settings.md)
 * [Remove a Cloud Director organization configuration](em_remove_custom_vcd_settings.md)
 * [Export a configuration report](em_vcd_export_configuration_report.md)
-
-Page updated 2026-07-10
-

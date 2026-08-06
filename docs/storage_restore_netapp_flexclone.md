@@ -3,7 +3,7 @@ title: "FlexClone"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_restore_netapp_flexclone.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,5 +15,3 @@ For NetApp storage systems that have a FlexClone license installed, Veeam Backup
 During restore from storage snapshots, Veeam Backup & Replication creates a FlexClone of a LUN. The storage snapshot from which you want to restore data is used as a base copy. The FlexClone is then mounted to an ESXi host, and you can restore the necessary VM data from it.
 
 ![FlexClone](images/netapp_restore_flexclone.webp)
-
-

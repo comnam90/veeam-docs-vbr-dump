@@ -3,7 +3,7 @@ title: "Failover Undo"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failover_undo.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,5 +21,3 @@ In This Section
 
 * [Undoing Failover](vcd_cdp_undoing_fo.md)
 * [Performing Failover Undo Retry](vcd_cdp_undoing_fo_retry.md)
-
-

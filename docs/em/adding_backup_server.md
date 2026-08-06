@@ -3,7 +3,7 @@ title: "Adding Backup Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/adding_backup_server.html"
-last_updated: "2026"
+last_updated: "7/9/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -70,6 +70,3 @@ To add a backup server to Enterprise Manager, take the following steps:
 * Click No if you do not trust the server. Enterprise Manager will display an error message, and the connection will not be established.
 
 [![Adding Backup Server](images/em_add_bu_server.webp)](images/em_add_bu_server.webp "Adding Backup Server")
-
-Page updated 2026-07-09
-

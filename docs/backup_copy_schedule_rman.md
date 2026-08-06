@@ -3,7 +3,7 @@ title: "Step 6. Define Backup Copy Schedule"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_schedule_rman.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,5 +19,3 @@ To define a backup window for the backup copy job:
 3. Use the Enable and Disable options to mark the selected area as allowed or prohibited for the backup copy job.
 
 ![Step 6. Define Backup Copy Schedule](images/plugins_backup_copy_schedule.webp)
-
-

@@ -3,7 +3,7 @@ title: "I/O Filter Management"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vcd_cdp_io_filter.html"
-last_updated: "6/24/2026"
+last_updated: "7/21/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ I/O Filter Management
 | [Install-VBRvCDCDPFilter](install-vbrvcdcdpfilter.md) | Installs Veeam I/O filter on organization VDCs. |
 | [Get-VBRvCDCDPFilter](get-vbrvcdcdpfilter.md) | Returns a list of Veeam I/O filter installed on an ESXi host. |
 | [Uninstall-VBRvCDCDPFilter](uninstall-vbrvcdcdpfilter.md) | Removes Veeam I/O filter from organization VDCs. |
-
-

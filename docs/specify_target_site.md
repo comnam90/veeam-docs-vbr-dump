@@ -3,7 +3,7 @@ title: "Step 4. Specify Target Site Alias"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/specify_target_site.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,5 +20,3 @@ At this step of the wizard, specify a target site alias that you want to use for
 | When restoring site collections other than site collections with the Group#0 or SITEPAGEPUBLISHING#0 template, make sure that such collections exist in the target location; Veeam Explorer for Microsoft SharePoint does not create site collections. |
 
 ![Step 4. Specify Target Site Alias](images/target_site.webp "Specify Target Site Alias")
-
-

@@ -3,7 +3,7 @@ title: "Step 4. Specify Organization VDCs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_orgvdc_failback.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,5 +15,3 @@ The Organization VDC step is available if you have selected the Failback to the 
 At the Organization VDC step of the wizard, specify names for the restored vApps and the organization VDCs to which Veeam Backup & Replication will add restored vApps. To do this, select the necessary vApp and use the Name and VDC buttons.
 
 ![Step 4. Specify Organization VDCs](images/vcd_organization_failback.webp)
-
-

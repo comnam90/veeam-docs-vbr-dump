@@ -3,7 +3,7 @@ title: "Step 7. Configure Network Mapping"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_network.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -29,5 +29,3 @@ To add a row to the network mapping table:
 | Consider the following:   * Cloud Director CDP policies do not support network mapping of vApp networks. You can configure a mapping table for organization VDC networks only. * If your replica has a configured network remapping and IP addresses are set as a static pool on the target, Veeam Backup & Replication will assign these IP addresses to VM NICs on a "first come, first served" basis: the first available IP address will be assigned to the first NIC, the second available IP address will be assigned to the second NIC and so on. |
 
 ![Step 7. Configure Network Mapping](images/vcd_cdp_policy_network.webp)
-
-

@@ -3,7 +3,7 @@ title: "Step 6. Review Properties and Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_review.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ At the Review step of the wizard, review details of the backup repository and sp
 3. If the backup repository contains guest file system index files that were previously created by Veeam Backup & Replication, select the Import guest file system index data to the catalog check box. Index files will be imported with backup files, and you will be able to search for guest OS files inside imported backups.
 
 ![Step 6. Review Properties and Components](images/linux_repo_review.webp)
-
-

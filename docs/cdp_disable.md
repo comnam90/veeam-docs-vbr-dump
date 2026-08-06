@@ -3,7 +3,7 @@ title: "Disabling and Deleting Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_disable.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -37,5 +37,3 @@ Veeam Backup & Replication allows you to delete only disabled policies. To delet
 4. In the working area, select the necessary policy and select Delete on the ribbon. Alternatively, right-click the necessary policy and select Delete.
 
 [![Delete CDP policy](images/cdp_delete_policy.webp)](images/cdp_delete_policy.webp "Delete CDP policy")
-
-

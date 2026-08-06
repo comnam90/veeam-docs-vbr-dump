@@ -3,7 +3,7 @@ title: "Editing Policies"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cdp_edit_policies.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -26,6 +26,3 @@ To edit a CDP policy, use the Edit Policy wizard.
 3. [Edit the list of VMs](cdp_edit_list_of_vms.md).
 4. [Configure RPO and retention settings](jobs_edit_schedule.md).
 5. [Configure guest processing settings](cdp_configure_guest_processing_settings.md).
-
-Page updated 2026-07-10
-

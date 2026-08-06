@@ -3,7 +3,7 @@ title: "Step 4. Specify Media Set Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_set.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,5 +21,3 @@ In the Automatically create new media set section, specify conditions for creati
 * Daily at. If this option is selected, you can specify day and time when new media sets should be created. For example, if at the end of the week you send weekly media sets to offsite storage, you can schedule creation of new media sets at the beginning of each week.
 
 ![Step 4. Specify Media Set Options](images/add_media_pool_set.webp)
-
-

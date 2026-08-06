@@ -3,7 +3,7 @@ title: "How Restore of Regular and Standalone VMs to VMware Cloud Director Works
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_regular_vm_restore.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ When you restore regular or standalone VMs back to the VMware Cloud Director hie
 2. Veeam Backup & Replication restores VMs from the backup file to their original location or to a different location. Additionally, Veeam Backup & Replication restores all VM settings.
 
 ![How Restore of Regular and Standalone VMs to VMware Cloud Director Works](images/vcd_regular_restore.webp)
-
-

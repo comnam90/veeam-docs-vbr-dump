@@ -3,7 +3,7 @@ title: "Restoring Application Items"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_vsphere_user_items_restore.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,6 +17,3 @@ For more information, see the following sections:
 * [Restoring Microsoft SQL Server Databases](restore_mssql.md)
 * [Restoring Oracle Databases](restore_oracle.md)
 * [Restoring PostgreSQL Instances](restore_postgresql.md)
-
-Page updated 2026-07-10
-

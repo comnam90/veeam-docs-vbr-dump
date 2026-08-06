@@ -3,7 +3,7 @@ title: "Step 4. Select Target Host"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_host_hv.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,5 +21,3 @@ To quickly find the necessary hosts, you can use the search field at the top of 
 1. If you choose to register a restored VM on a host that is a part of a Microsoft Hyper‑V failover cluster, you can register it as a cluster resource. To do this, select a VM in the list and click Resource. In the Cluster Resource Settings section, choose Register VM as a cluster resource. In this case, if the target host is brought offline or fails for any reason, the VM will fail over to another node in the cluster.
 
 ![Step 4. Select Target Host](images/hv_failback_host.webp)
-
-

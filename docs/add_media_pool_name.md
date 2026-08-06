@@ -3,7 +3,7 @@ title: "Step 2. Specify Media Pool Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_media_pool_name.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,5 +16,3 @@ At the Name step of the wizard, define basic description for the new media pool.
 2. In the Description field, enter a description of the new media pool. The default description contains information about the user who created the media pool, date and time when the media pool was created.
 
 ![Step 2. Specify Media Pool Name](images/add_media_pool_name.webp)
-
-
