@@ -3,7 +3,7 @@ title: "Audited Operations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/audited_operations.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -42,6 +42,3 @@ Audited Operations
 | FileShareMigration | Migrating a file share |
 | NasFileLevelRestore | Performing file-level restore |
 | Mount | Mounting backup content to a mount server |
-
-Page updated 2026-07-10
-
