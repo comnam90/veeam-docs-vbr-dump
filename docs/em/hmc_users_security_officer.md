@@ -3,7 +3,7 @@ title: "Performing Initial Security Officer Login"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/hmc_users_security_officer.html"
-last_updated: "2026"
+last_updated: "6/19/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -38,6 +38,3 @@ When you first log in to the Veeam Host Management as a Security Officer, perfor
 [![Performing Initial Security Officer Login](images/hmc_so_intial_setup_recovery_token.webp)](images/hmc_so_intial_setup_recovery_token.webp)
 
 1. Click Finish.
-
-Page updated 2026-06-19
-
