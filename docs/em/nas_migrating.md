@@ -3,7 +3,7 @@ title: "Migrating Recovered File Shares"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/nas_migrating.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,6 +19,3 @@ To migrate a recovered file share, use the Migrate to Production wizard.
 3. [Specify restore options](nas_migration_restore_options.md).
 4. [Configure switchover](nas_migration_configure_switchover.md).
 5. [Review the migration settings](nas_migration_summary.md).
-
-Page updated 2026-07-10
-
