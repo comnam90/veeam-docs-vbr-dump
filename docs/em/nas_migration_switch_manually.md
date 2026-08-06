@@ -3,7 +3,7 @@ title: "Switching to Production File Share Manually"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/nas_migration_switch_manually.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,6 +20,3 @@ To switch to a production file share, do the following:
 Alternatively, you can right-click a file share and select Switchover Now.
 
 [![Switching to Production File Share Manually](images/nas_switchover_now.webp)](images/nas_switchover_now.webp "Switching to Production File Share Manually")
-
-Page updated 2026-07-10
-
