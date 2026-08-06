@@ -3,7 +3,7 @@ title: "Viewing Policies"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/reports_on_policies.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -42,6 +42,3 @@ In addition to the information presented in the list of policies, the Policies t
 | You can export displayed information to a file using the Export link on the toolbar. This file then can be opened on the client machine using the associated application. |
 
 [![CDP Policy Statistics](images/em_cdp_policies_tab.webp)](images/em_cdp_policies_tab.webp "CDP Policy Statistics")
-
-Page updated 2026-07-10
-
