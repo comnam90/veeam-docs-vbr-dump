@@ -3,8 +3,8 @@ title: "Step 5a. Enable Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_backup_job_create_gp_applications.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "7/14/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 5a. Enable Application-Aware Processing
@@ -55,5 +55,3 @@ By default, Veeam Backup & Replication requires application-aware processing to 
 To change this behavior and instruct Veeam Backup & Replication to proceed with the backup operation, creating a crash-consistent backup instead of an application-consistent backup, switch to the General tab of the Processing Settings window and select the Try application processing, but ignore failures option.
 
 [![Step 5a. Enable Application-Aware Processing](images/sch_backup_job_create_gp_applications.webp)](images/sch_backup_job_create_gp_applications.webp)
-
-

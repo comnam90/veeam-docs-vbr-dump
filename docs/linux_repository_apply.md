@@ -3,7 +3,7 @@ title: "Step 7. Apply Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_repository_apply.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,5 +13,3 @@ product_version: "13.0.2.29"
 At the Apply step of the wizard, wait for Veeam Backup & Replication to install and configure all required components. Then click Next to complete the procedure of adding the backup repository to the backup infrastructure.
 
 ![Step 7. Apply Backup Repository Settings](images/linux_repo_apply.webp)
-
-

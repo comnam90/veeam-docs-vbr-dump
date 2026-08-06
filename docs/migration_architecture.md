@@ -3,7 +3,7 @@ title: "Quick Migration Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/migration_architecture.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -24,5 +24,3 @@ The common requirement for off-site migration is that one Veeam Data Mover runs 
 For off-site migration, you need to deploy at least one local backup proxy in each site: a source backup proxy in the production site, and a target backup proxy in the remote target site.
 
 ![Quick Migration Architecture](images/quick_mig_2proxies.webp)
-
-

@@ -3,7 +3,7 @@ title: "Viewing Replica Properties"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_view_properties.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ To view replica properties:
 3. In the working area, right-click the necessary replica and select Properties. Alternatively, select Properties on the ribbon.
 
 ![Viewing Replica Properties](images/cdp_replica_properties.webp "View CDP replica properties")
-
-

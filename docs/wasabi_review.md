@@ -3,7 +3,7 @@ title: "Step 6. Review Components"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/wasabi_review.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ If the backup repository contains backups, select the Search the repository for 
 If the backup repository contains guest file system index files, select the Import guest file system index data to the catalog check box. Veeam Backup & Replication will import index files together with backup files, and you will be able to search for guest OS files inside imported backups. For more information, see the [Guest OS File Restore](https://helpcenter.veeam.com/docs/vbr/em/searching_restoring_vm_guest_files.html?ver=13) section of the Veeam Backup Enterprise Manager Guide.
 
 ![Step 6. Review Components](images/wasabi_review.webp)
-
-

@@ -3,7 +3,7 @@ title: "Step 8. Schedule Switch to Production vApps"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_schedule.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,5 +19,3 @@ At the Failback Mode step of the wizard, specify when switch from replicas to pr
 If you select the Scheduled or Manual option, you can further reset or set the scheduled time or switch to the production VM manually. For more information, see [Changing Switching Time](vcd_cdp_failback_switching_time.md) and [Switching to Production vApps Manually](vcd_cdp_failback_switch.md).
 
 ![Step 8. Schedule Switch to Production vApps](images/vcd_failback_switch_shedule.webp)
-
-

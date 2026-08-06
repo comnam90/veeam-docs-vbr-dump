@@ -3,7 +3,7 @@ title: "Step 5. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_backup_from_tape_review.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,5 +13,3 @@ product_version: "13.0.2.29"
 Review the settings and click Finish to restore selected machines backups.
 
 ![Step 5. Finish Working with Wizard](images/restore_backup_from_tape_review.webp)
-
-

@@ -3,7 +3,7 @@ title: "Step 1. Launch Failback Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_failback_launch.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,5 +16,3 @@ To launch the Failback wizard, do one of the following:
 * Open the Home view, in the inventory pane select Replicas > Active. In the working area, right-click the necessary replica and select Failback to production. Alternatively, click Failback to Production on the ribbon.
 
 [![Launch Failback Wizard](images/vcd_failback_launch.webp)](images/vcd_failback_launch.webp "Launch Failback Wizard")
-
-

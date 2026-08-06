@@ -3,7 +3,7 @@ title: "Rescanning Replicas"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_rescanning_replicas.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,5 +22,3 @@ To rescan replicas, do the following:
 2. In the inventory pane, right-click the Replicas node and select Rescan replicas.
 
 [![vCD Replica Rescan](images/vcd_replica_rescan.webp)](images/vcd_replica_rescan.webp "vCD Replica Rescan")
-
-

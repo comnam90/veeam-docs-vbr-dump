@@ -3,7 +3,7 @@ title: "Configuring SNMP Service Properties"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snmp_service_properties.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -27,5 +27,3 @@ To configure SNMP service properties on recipient systems:
 5. Click OK to save changes.
 
 ![Configuring SNMP Service Properties](images/snmp_service_security.webp)
-
-

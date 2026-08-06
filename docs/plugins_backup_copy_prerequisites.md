@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_backup_copy_prerequisites.html"
-last_updated: "12/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "7/21/2026"
+product_version: "13.0.2.29"
 ---
 
 # Before You Begin
@@ -18,5 +18,3 @@ Before you create a backup copy job, check the prerequisites and limitations:
 * For Veeam Plug-In backup copy jobs, you cannot select the [Veeam Cloud Connect repository](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_configure_repository.html?ver=13) as a backup copy target.
 
 * For Veeam Plug-In backup copy jobs, you cannot select the [Veeam Cloud Connect repository](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_configure_repository.html?ver=13) as a backup copy target.
-
-

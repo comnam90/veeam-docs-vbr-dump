@@ -3,7 +3,7 @@ title: "Step 9. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_to_tape_review.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,5 +13,3 @@ product_version: "13.0.2.29"
 After you have specified schedule settings, click Create. Select the Run the job when I click Finish check box if you want to start archiving backups to tape job right after you complete working with the wizard. Click Finish to close the wizard.
 
 ![Step 9. Finish Working with Wizard](images/backup_to_tape_review.webp)
-
-

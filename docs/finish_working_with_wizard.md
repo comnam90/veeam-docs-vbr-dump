@@ -3,7 +3,7 @@ title: "Step 6. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/finish_working_with_wizard.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,5 +15,3 @@ At the Summary step of the wizard, finalize the procedure of the tape server con
 To inventory tape libraries connected to the tape server, select the Start tape libraries inventory when I click Finish check box. Veeam Backup & Replication will start the inventory process when you finish working with the wizard. If you do not enable this option, you will have to inventory tape libraries manually. For more information, see [Inventorying Tapes](inventoring_tapes.md).
 
 ![Step 6. Finish Working with Wizard](images/tapeproxy_finish.webp)
-
-

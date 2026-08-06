@@ -3,7 +3,7 @@ title: "Step 4. Specify Media Set Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/add_gfs_media_pool_set.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,5 +19,3 @@ Usually, daily media sets do not contain full backups as daily backups are mostl
 Click Advanced to configure the advanced media set options.
 
 ![Step 4. Specify Media Set Options](images/add_gfs_media_pool_set.webp)
-
-

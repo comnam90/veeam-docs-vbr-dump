@@ -3,7 +3,7 @@ title: "Step 10. Specify Data Transfer Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_replica_data_transfer.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -32,5 +32,3 @@ You should not assign one source WAN accelerator to several replication jobs tha
 The target WAN accelerator, however, can be assigned to several replication jobs. For more information, see [Adding WAN Accelerators](wan_add.md).
 
 ![Step 10. Specify Data Transfer Settings](images/vcd_replica_data_transfer.webp)
-
-

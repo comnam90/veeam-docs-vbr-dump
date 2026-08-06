@@ -3,7 +3,7 @@ title: "Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_policy_sql_trans_logs.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -39,5 +39,3 @@ In this case, transaction logs will be truncated after the CDP policy creates a 
 This option is recommended if you use another tool to perform VM guest-level replication, and this tool maintains consistency of the database state.
 
 ![Microsoft SQL Server Transaction Log Settings](images/vcd_cdp_policy_sql.webp)
-
-

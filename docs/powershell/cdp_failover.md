@@ -3,7 +3,7 @@ title: "CDP Failover"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/cdp_failover.html"
-last_updated: "6/24/2026"
+last_updated: "7/21/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,5 +21,3 @@ CDP Failover
 | [Start-VBRCDPReplicaFailover](start-vbrcdpreplicafailover.md) | Starts to perform a failover to CDP replicas. |
 | [Stop-VBRCDPReplicaFailover](stop-vbrcdpreplicafailover.md) | Undoes a CDP failover. |
 | [Remove-VBRCDPReplica](remove-vbrcdpreplica.md) | Removes CDP replicas from the backup infrastructure. |
-
-

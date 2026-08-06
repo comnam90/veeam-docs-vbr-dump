@@ -3,7 +3,7 @@ title: "Step 5. Specify Storage Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcd_cdp_failback_storage.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ At the Storage Policy step of the wizard, specify storage policies that Veeam Ba
 2. In the Select storage policy window select the policy that you want to apply.
 
 ![Step 5. Specify Storage Policies](images/vcd_failback_storage_policy.webp)
-
-

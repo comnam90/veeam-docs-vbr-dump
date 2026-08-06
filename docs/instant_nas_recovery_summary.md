@@ -3,7 +3,7 @@ title: "Step 6. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_nas_recovery_summary.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,5 +13,3 @@ product_version: "13.0.2.29"
 At the Summary step of the wizard, review the instant file share recovery settings and click Finish. Veeam Backup & Replication will publish the file share to the specified mount servers.
 
 ![Step 6. Finish Working with Wizard](images/instant_nas_recovery_summary.webp)
-
-

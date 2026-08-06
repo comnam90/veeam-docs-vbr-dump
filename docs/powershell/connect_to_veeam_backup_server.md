@@ -3,7 +3,7 @@ title: "Connecting to Veeam Backup Server"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/connect_to_veeam_backup_server.html"
-last_updated: "6/24/2026"
+last_updated: "7/21/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ Connecting to Veeam Backup Server
 | [Connect-VBRServer](connect-vbrserver.md) | Connects to a Veeam backup server. |
 | [Disconnect-VBRServer](disconnect-vbrserver.md) | Ends current connection. |
 | [Get-VBRServerSession](get-vbrserversession.md) | Returns current session. |
-
-

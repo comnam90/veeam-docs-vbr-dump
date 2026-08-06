@@ -3,7 +3,7 @@ title: "Step 2. Specify Application Group Name and Description"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/appgroup_name_hv.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -16,5 +16,3 @@ At the Name step of the wizard, specify a name and description for the applicati
 2. In the Description field, provide a description for future reference. The default description contains information about the user who created the group, date and time when the group was created.
 
 ![Step 2. Specify Application Group Name and Description](images/app_group_name.webp)
-
-

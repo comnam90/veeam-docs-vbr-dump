@@ -3,7 +3,7 @@ title: "VM Guest OS File Exclusion Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/replica_vss_exclusion_vm.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -43,5 +43,3 @@ To exclude guest OS files and folders from being replicated:
 | When you select files to be included or excluded, consider requirements and limitations that are listed in section [Requirements and Limitations for VM Guest OS File Exclusion](guest_file_exclusion.md#reqs). |
 
 ![VM Guest OS File Exclusion Settings](images/vm_replica_job_vss_exclude.webp)
-
-

@@ -3,7 +3,7 @@ title: "Retention Policy for Backup Copy Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_retention.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ Veeam Backup & Replication offers two retention policy schemes for backup copy j
 * [GFS Retention Policy (Weekly, Monthly, Yearly)](backup_copy_gfs.md)
 
 Also, there is a separate retention policy for machines that has been removed from the infrastructure. For details, see [Deleted Items Retention](backup_copy_deleted_vms.md).
-
-

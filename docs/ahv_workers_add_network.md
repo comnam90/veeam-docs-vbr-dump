@@ -3,8 +3,8 @@ title: "Step 3. Configure Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_workers_add_network.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "7/14/2026"
+product_version: "13.0.2.29"
 ---
 
 # Step 3. Configure Network Settings
@@ -45,5 +45,3 @@ For credentials to be displayed in the Credentials list, they must be added to t
 | If the worker does not have access to the internet and no internet proxy is configured for the worker, you can instruct Veeam Backup & Replication not to update it. To do that, clear the Check for updates online check box. |
 
 ![Step 3. Configure Network Settings](images/ahv_workers_add_network.webp "Specify Worker Network Settings")
-
-

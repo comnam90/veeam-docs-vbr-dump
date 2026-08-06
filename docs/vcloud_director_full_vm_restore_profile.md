@@ -3,7 +3,7 @@ title: "Step 8. Select Storage Policy and Datastores"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_profile.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,5 +23,3 @@ If you have selected to disable fast provisioning at the previous step of the wi
 2. In the displayed window, select the datastore on which the VM disks must be located.
 
 ![Step 8. Select Storage Policy and Datastores](images/vcloud_full_restore_datastores.webp)
-
-

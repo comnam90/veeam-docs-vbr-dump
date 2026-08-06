@@ -3,7 +3,7 @@ title: "Removing Scale-Out Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sobr_remove.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -21,5 +21,3 @@ To remove a scale-out backup repository:
 3. In the working area, select the scale-out repository and click Remove Repository on the ribbon or right-click the backup repository and select Remove.
 
 [![Removing Scale-Out Backup Repositories](images/scaleout_repo_remove.webp)](images/scaleout_repo_remove.webp "Removing Scale-Out Backup Repositories")
-
-

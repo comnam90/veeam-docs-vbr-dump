@@ -3,7 +3,7 @@ title: "Step 5. Select Target Datastore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/failback_datastore_hv.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -28,5 +28,3 @@ You can specify the following folders:
 The host or cluster where you plan to register VMs must have access to the to the Microsoft SMB3 shared folder. If you are using Microsoft SCVMM 2012 or Microsoft SCVMM 2012 R2, the server hosting the Microsoft SMB3 share must be registered in Microsoft SCVMM as a storage device. For more information, see [Microsoft Docs](http://technet.microsoft.com/en-us/library/jj614620.aspx).
 
 ![Step 5. Select Target Datastore](images/hv_failback_datastore.webp)
-
-

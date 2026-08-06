@@ -3,7 +3,7 @@ title: "Step 3. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/finish_working_with_vault_wizard.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,5 +13,3 @@ product_version: "13.0.2.29"
 Review the media vault settings and click Finish to complete the wizard.
 
 ![Step 3. Finish Working with Wizard](images/vault_summary.webp)
-
-

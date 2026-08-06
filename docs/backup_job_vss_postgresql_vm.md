@@ -3,7 +3,7 @@ title: "PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_postgresql_vm.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -60,5 +60,3 @@ Note that if you plan to select the System user without password file (peer) aut
 Make sure that you select a server that is not used by other resource-consuming tasks. For example, you may want not to use a server that performs the WAN accelerator role as a log shipping server. For load balance and high availability purposes, it is recommended that you select at least 2 log shipping servers.
 
 ![PostgreSQL WAL Files Settings](images/vm_backup_job_vss_postgresql.webp)
-
-

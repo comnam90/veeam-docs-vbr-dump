@@ -3,7 +3,7 @@ title: "Configuring Advanced Options for Off-Host Backup Proxies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/offhost_proxy_advanced.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -20,5 +20,3 @@ In This Section
 
 * [Presenting Volumes to Off-Host Backup Proxies](present_volumes.md)
 * [Assigning Off-Host Backup Proxies to Jobs](assign_proxy.md)
-
-

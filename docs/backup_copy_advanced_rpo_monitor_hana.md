@@ -3,7 +3,7 @@ title: "RPO Warning Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_advanced_rpo_monitor_hana.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -17,5 +17,3 @@ Enable the Warn me if backup is not copied within check box and specify the time
 If the backup copy is not created within the specified time period, the backup copy job will finish with the Warning status. The countdown starts from the moment when the required backup is finished and ready to be copied.
 
 ![RPO Warning Settings](images/plugins_backup_copy_rpo.webp)
-
-

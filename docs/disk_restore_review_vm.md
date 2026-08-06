@@ -3,7 +3,7 @@ title: "Step 7. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/disk_restore_review_vm.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,5 +15,3 @@ At the Summary step of the wizard, review the configured settings and click Fini
 If you want to start the VM to which the disk will be attached right after restore, select the Power on target VM after restoring check box.
 
 ![Step 7. Finish Working with Wizard](images/hard_disk_restore_summary.webp)
-
-

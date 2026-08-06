@@ -3,7 +3,7 @@ title: "Managing Cloud Director Replicas"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/managing_vcd_replicas.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,5 +18,3 @@ In This Section
 * [Rescan vApp replicas](vcd_rescanning_replicas.md)
 * [Remove a vApp replica from configuration](vcd_removing.md)
 * [Delete a vApp replica from disk](vcd_deleting.md)
-
-

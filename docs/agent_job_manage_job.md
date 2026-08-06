@@ -3,7 +3,7 @@ title: "Managing Veeam Agent Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_manage_job.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,5 +19,3 @@ You can use the Veeam Backup & Replication console to perform the following oper
 * [Enable and disable a Veeam Agent backup job](agent_job_edit.md).
 * [Clone a Veeam Agent backup job](agent_job_clone.md).
 * [Remove a Veeam Agent backup job](agent_job_delete.md).
-
-

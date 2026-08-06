@@ -3,7 +3,7 @@ title: "Step 3. Specify VM Destination"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/quick_migration_destination.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -59,5 +59,3 @@ To change VM disk format:
 4. In the Disk Type Settings section, choose the format that will be used to restore VM disk files: same as the source disk, thin or thick.
 
 ![Step 3. Specify VM Destination](images/migration_destination.webp)
-
-

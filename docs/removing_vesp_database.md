@@ -3,7 +3,7 @@ title: "Removing Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/removing_vesp_database.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,5 +15,3 @@ Veeam Explorer for Microsoft SharePoint allows you to remove Microsoft SharePoin
 To remove a database from the application scope, right-click a database in the navigation pane and select Remove database.
 
 [![Removing Microsoft SharePoint Databases](images/remove_database.webp)](images/remove_database.webp "Removing Microsoft SharePoint Databases")
-
-

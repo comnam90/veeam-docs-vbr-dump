@@ -3,7 +3,7 @@ title: "Copying Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_copy_backups.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -81,5 +81,3 @@ To finalize the copy operation:
 1. Open the Home view.
 2. In the inventory pane, select the Last 24 Hours node.
 3. Right-click the failed copy session and select the required action. Alternatively, select the required action on the ribbon.
-
-

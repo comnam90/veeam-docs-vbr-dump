@@ -3,7 +3,7 @@ title: "Traditional LUN Cloning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_restore_netapp_cloning.html"
-last_updated: "7/9/2026"
+last_updated: "7/24/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,5 +15,3 @@ For NetApp storage systems that do not have the FlexClone license installed, Vee
 During restore from storage snapshots, Veeam Backup & Replication creates a LUN clone. The storage snapshot from which you want to restore data is used as a backing copy. The LUN clone is then mounted to an ESXi host, and you can restore VM data from it.
 
 ![Traditional LUN Cloning](images/netapp_restore_tradiitonal_clone.webp)
-
-
