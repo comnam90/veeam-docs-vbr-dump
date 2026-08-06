@@ -3,7 +3,7 @@ title: "Step 3. Read and Accept License Agreements"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_upgrade_accept_license_agreement.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -13,6 +13,3 @@ product_version: "13.0.2.29"
 At the License Agreement step of the wizard, read Veeam License Agreement and licensing policy as well as license agreements of 3rd party components that Veeam incorporates and license agreements of required software. To accept the license agreements and continue installing Veeam Backup Enterprise Manager, click I Accept.
 
 ![Step 3. Read and Accept License Agreements](images/em_setup_eula.webp "Accepting License Agreement")
-
-Page updated 2026-07-10
-
