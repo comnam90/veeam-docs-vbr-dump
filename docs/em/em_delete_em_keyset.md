@@ -3,7 +3,7 @@ title: "Deleting Enterprise Manager Keyset"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_delete_em_keyset.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,6 +23,3 @@ To delete a keyset:
 | --- |
 | Important |
 | It is strongly recommended that you export a keyset before you delete it. If you delete a keyset and do not make its backup copy, you will not be able to restore data from a backup or tape encrypted with keys from this keyset in case a password is lost. For more information, see [Exporting and Importing Enterprise Manager Keyset](em_export_import_keys.md). |
-
-Page updated 2026-07-10
-
