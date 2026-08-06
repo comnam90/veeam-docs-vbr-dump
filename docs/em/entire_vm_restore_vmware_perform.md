@@ -3,7 +3,7 @@ title: "Restoring Entire VM to VMware vSphere"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/entire_vm_restore_vmware_perform.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -23,6 +23,3 @@ To restore an entire VM, use the Entire VM Restore wizard.
 5. [Specify a target datastore](entire_vm_restore_vmware_datastore.md).
 6. [Configure network mapping](entire_vm_restore_vmware_network.md).
 7. [Review the recovery settings](entire_vm_restore_vmware_summary.md).
-
-Page updated 2026-07-10
-
