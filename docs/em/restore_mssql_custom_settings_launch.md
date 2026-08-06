@@ -3,7 +3,7 @@ title: "Step 1. Launch SQL Restore Wizard"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_mssql_custom_settings_launch.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -37,6 +37,3 @@ For more information on configuring transaction log backup, see [Microsoft SQL S
 2. Click Restore.
 
 [![Launching SQL Restore Wizard](images/em_restore_app_sql.webp)](images/em_restore_app_sql.webp "Launching SQL Restore Wizard")
-
-Page updated 2026-07-10
-
