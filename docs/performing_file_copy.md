@@ -3,8 +3,8 @@ title: "Creating File Copy Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/performing_file_copy.html"
-last_updated: "3/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "7/20/2026"
+product_version: "13.0.2.29"
 ---
 
 # Creating File Copy Jobs
@@ -19,7 +19,7 @@ File copy jobs let you copy files between the following backup infrastructure ob
 * Linux servers
 * ExaGrid storage appliances used as backup repositories
 * Quantum DXi
-* Fujitsu ETERNUS CS800
+* Fsas ETERNUS CS800
 * Infinidat InfiniGuard
 
 Before you configure a file copy job, [check prerequisites](file_copy_byb.md). Then use the New File Copy Job wizard to create a job.
@@ -30,5 +30,3 @@ Before you configure a file copy job, [check prerequisites](file_copy_byb.md). T
 4. [Select a destination for copying](file_copy_destination.md).
 5. [Define a job schedule](file_copy_schedule.md).
 6. [Finish working with the wizard](file_copy_summary.md).
-
-
