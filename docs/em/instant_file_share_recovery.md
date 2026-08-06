@@ -3,7 +3,7 @@ title: "Performing Instant File Share Recovery"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_file_share_recovery.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -18,6 +18,3 @@ To perform instant file share recovery, use the Instant File Share Recovery wiza
 2. [Select a restore point](instant_nas_recovery_file_shares.md).
 3. [Specify access permissions](instant_nas_recovery_access_permissions.md).
 4. [Review the recovery settings](instant_nas_recovery_summary.md).
-
-Page updated 2026-07-10
-
