@@ -3,7 +3,7 @@ title: "Viewing Self-Service Backup Portal Statistics"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_viewing_statistics_vsphere_self_service.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -37,6 +37,3 @@ The Last 24 hours / Last 7 days block reports on job session results for the sel
 To visualize on-going job data, the Dashboard tab also comprises a graph showing time and date when jobs were performed, and the network throughput rate during the job.
 
 The highlighted part of the graph represents the configured backup window if this option was specified in the dashboard settings. For more information, see [Customizing Dashboard Chart](customizing_dashboard_chart.md).
-
-Page updated 2026-07-10
-
