@@ -3,7 +3,7 @@ title: "Entire VM Restore"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_self_service_entire_vm_restore.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -22,6 +22,3 @@ Alternatively, you can right-click the VM and select Entire VM Restore.
 1. Follow the steps of the Entire VM Restore wizard. For more information, see [Restoring Entire VM to VMware Cloud Director](entire_vm_restore_vcd_perform.md).
 
 [![Veeam Self-Service Backup Portal Accessed by URL](images/vcd_self_service_entire_vm_restore.webp)](images/vcd_self_service_entire_vm_restore.webp "Veeam Self-Service Backup Portal Accessed by URL")
-
-Page updated 2026-07-10
-
