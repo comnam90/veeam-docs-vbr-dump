@@ -3,7 +3,7 @@ title: "Performing Instant Recovery to VMware Cloud Director"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_vcd_perform.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -19,6 +19,3 @@ To instantly recover a VM, use the Instant Recovery to VMware Cloud Director wiz
 5. [Specify target datastore](instant_recovery_vcd_datastore.md).
 6. [Configure network mapping](instant_recovery_vcd_network.md).
 7. [Review the recovery settings](instant_recovery_vcd_summary.md).
-
-Page updated 2026-07-10
-
