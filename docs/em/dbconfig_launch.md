@@ -3,7 +3,7 @@ title: "Step 1. Launch Utility"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/dbconfig_launch.html"
-last_updated: "2026"
+last_updated: "7/10/2026"
 product_version: "13.0.2.29"
 ---
 
@@ -15,6 +15,3 @@ You can launch the Configuration Database Connection Settings utility from the S
 Alternatively, you can run the Veeam.Backup.DBConfig.exe file. By default, the path is the following: %PROGRAMFILES%\Common Files\Veeam\Backup and Replication\DBConfig.
 
 To run the utility, you must have administrative rights on the local machine, as long as the utility makes changes to the registry. If prompted at the launch, choose Run as administrator.
-
-Page updated 2026-07-10
-
