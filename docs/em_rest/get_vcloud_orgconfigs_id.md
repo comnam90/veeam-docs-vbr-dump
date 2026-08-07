@@ -3,8 +3,8 @@ title: "GET /vCloud/orgConfigs/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_vcloud_orgconfigs_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /vCloud/orgConfigs/{ID}
@@ -32,8 +32,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -53,8 +54,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -64,8 +66,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the VMware Cloud Director organization configuration resource, for example: urn:veeam:BackupFile:0874ab95-10e5-4f25-84df-2782ad81f3e5. |
 | Name | String | Name of the VMware Cloud Director organization configuration resource, for example: org1. |
 | BackupServerUid | UidType | UID of the backup server parent to the VMware Cloud Director organization configuration resource. |
@@ -83,8 +86,9 @@ Job Settings
 
 The JobSettings element contains the following job settings.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | DefaultSettings | Boolean | Defines if the default VMware Cloud Director organization configuration is in the disabled or enabled state. Possible values:   * True — the default configuration is disabled. Self-service backup is unavailable for VMware Cloud Director organizations that do not have individual configurations. * False — the default configuration is enabled. VMware Cloud Director organizations for which individual configurations were not created can perform self-service backup. |
 | JobSchedulerType | String | Job scheduling options. Possible values:   * Full — VMware Cloud Director organization members have full access to all job scheduling options. * Partial — VMware Cloud Director organization members can create daily and monthly jobs only. * Random — VMware Cloud Director organization members can create daily jobs with randomized start time within the backup window. * Disabled — VMware Cloud Director organization members can create only jobs with no schedule assigned. |
 | HighPriorityJob | Boolean | Defines whether the backup job has a high priority. Possible values:   * True * False |
@@ -92,8 +96,9 @@ The JobSettings element contains the following job settings.
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server that contains the VMware Cloud Director server in its infrastructure. |
 | /vCloud/orgConfigs/{ID} | Alternate | Alternate URL of the [/vCloud/orgConfigs/{ID}](vcloud_orgconfigs_id.md) resource. |
 | /vCloud/orgConfigs/{ID} | Edit | URL for the [PUT /vCloud/orgConfigs/{ID}](put_vcloud_orgconfigs_id.md) request. |
@@ -106,6 +111,7 @@ The example below returns an entity representation of the configuration with ID 
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <VCloudOrganizationConfig xmlns="http://www.veeam.com/ent/v1.0" Type="VCloudOrganizationConfig" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640?format=Entity" Name="org1" UID="urn:veeam:VCloudOrganizationConfig:ee1018b4-6f52-489e-80b7-8005e0b2d640"> |
+| Request:  GET https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <VCloudOrganizationConfig xmlns="http://www.veeam.com/ent/v1.0" Type="VCloudOrganizationConfig" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640?format=Entity" Name="org1" UID="urn:veeam:VCloudOrganizationConfig:ee1018b4-6f52-489e-80b7-8005e0b2d640">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/1cf4ea89-89d9-4b4e-a285-71bd8c705222" Name="172.17.53.2" />     <Link Rel="Alternate" Type="VCloudOrganizationConfigReference" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640" Name="org1" />     <Link Rel="Edit" Type="VCloudOrganizationConfigReference" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640" Name="org1" />     <Link Rel="Disable" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640?action=disable" />     <Link Rel="Delete" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640" />     <Link Rel="Down" Type="VCloudOrganizationConfigBackupJobSettings" Href="https://localhost:9398/api/vCloud/orgConfigs/ee1018b4-6f52-489e-80b7-8005e0b2d640/backupJobSettings" Name="org1" />   </Links>   <BackupServerUid>urn:veeam:BackupServer:1cf4ea89-89d9-4b4e-a285-71bd8c705222</BackupServerUid>   <RepositoryUid>urn:veeam:Repository:df9903aa-d2b6-4edd-9a0b-057bc8dd4451</RepositoryUid>   <QuotaGb>100</QuotaGb>   <IsDisabled>false</IsDisabled>   <JobSettings>     <CustomSettings>true</CustomSettings>     <JobSchedulerType>Full</JobSchedulerType>     <HighPriorityJob>false</HighPriorityJob>   </JobSettings>   <UsedQuotaMb>120</UsedQuotaMb>   <HostUid>urn:veeam:ManagedServer:24a14898-77d0-4881-bbf8-c8ba71ce4d55</HostUid>   <RepositoryFriendlyName>Repository 1</RepositoryFriendlyName> </VCloudOrganizationConfig> |
 
+Page updated 2026-07-29
 
