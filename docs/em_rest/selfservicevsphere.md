@@ -3,8 +3,8 @@ title: "/selfService/vSphere"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/selfservicevsphere.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /selfService/vSphere
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Represents a collection of vSphere Self-Service Backup Portal resources.
 
-Veeam Backup Enterprise Manager administrators can use Veeam Backup Enterprise Manager REST API to create and manage access configurations for tenants of vSphere Self-Service Backup Portal. An access configuration includes information about vSphere user or group, target repository for backups of vSphere VMs, repository quota, job scheduling options and backup job template. For details, see the [Working with vSphere Self-Service Backup Portal](https://helpcenter.veeam.com/docs/backup/em/em_working_with_vsphere_portal.html?ver=120) section of the Veeam Backup Enterprise Manager User Guide.
+Veeam Backup Enterprise Manager administrators can use Veeam Backup Enterprise Manager REST API to create and manage access configurations for tenants of vSphere Self-Service Backup Portal. An access configuration includes information about vSphere user or group, target repository for backups of vSphere VMs, repository quota, job scheduling options and backup job template. For details, see the [vSphere Self-Service Backup Portal](https://helpcenter.veeam.com/docs/vbr/em/em_working_with_vsphere_portal.html?ver=13) section of the Veeam Backup Enterprise Manager User Guide.
 
 In its resource representation, the /selfService/vSphere resource provides a set of links. By using a link from the list, the client can perform the following operations:
 
@@ -43,6 +43,7 @@ The /selfService/vSphere resource has a resource representation of the following
 
 |  |
 | --- |
-| <VSphereSelfServiceHref="http://127.0.0.1:9399/api/selfService/vSphere"Type="VSphereSelfService"xmlns="http://www.veeam.com/ent/v1.0"xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| <VSphereSelfServiceHref="http://127.0.0.1:9399/api/selfService/vSphere"Type="VSphereSelfService"xmlns="http://www.veeam.com/ent/v1.0"xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <LinkHref="https://localhost:9398/api/selfService/vSphere/Configs"Type="VSphereSelfServiceConfigReferenceList"Rel="Down"/>     <LinkHref="https://localhost:9398/api/selfService/vSphere/Configs?format=Entity"Type="VSphereSelfServiceConfigList"Rel="Down"/>     <LinkHref="https://localhost:9398/api/selfService/vSphere/Configs"Rel="Create"/>   </Links> </VSphereSelfService> |
 
+Page updated 2026-07-29
 
