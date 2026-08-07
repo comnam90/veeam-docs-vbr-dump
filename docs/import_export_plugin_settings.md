@@ -3,8 +3,8 @@ title: "Exporting and Importing Plug-In Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_export_plugin_settings.html"
-last_updated: "3/27/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Exporting and Importing Plug-In Settings
@@ -19,7 +19,7 @@ You can export a Veeam Plug-In configuration file and apply the plug-in settings
 
 To export the configuration file to another server, do the following:
 
-For Linux and Unix
+For Linux or Unix
 
 1. On the server where Veeam Plug-In is installed, go to /opt/veeam/VeeamPluginforOracleRMAN.
 2. Copy the Veeam Plug-In configuration file (veeam\_config.xml) to the server where you want to configure the plug-in.
@@ -39,6 +39,7 @@ For Microsoft Windows
 
 |  |
 | --- |
-| %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool.exe --set-credentials "serv\username" "password" |
+| "%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool.exe" --set-credentials "serv\username" "password" |
 
+Page updated 2026-07-31
 
