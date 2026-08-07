@@ -3,8 +3,8 @@ title: "Adjusting PostgreSQL Instance Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_instance_configuration.html"
-last_updated: "10/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Adjusting PostgreSQL Instance Configuration
@@ -40,7 +40,7 @@ For example:
 | --- |
 | psql -U postgres -f "C:\config.sql" |
 
-After you apply the configuration from the dump file, all changes will be written into the postgressql.auto.conf file located in the PostgreSQL installation folder. This file is loaded when the service starts and takes precedence over the default PostgreSQL configuration file.
+After you apply the configuration from the dump file, all changes will be written into the postgresql.auto.conf file located in the PostgreSQL installation folder. This file is loaded when the service starts and takes precedence over the default PostgreSQL configuration file.
 
 1. Include the [pg\_stat\_statements](https://www.postgresql.org/docs/current/pgstatstatements.html) library to the PostgreSQL configuration. To add the library, you can manually edit the shared\_preload\_libraries option in the postgresql.conf file.
 
@@ -50,7 +50,7 @@ Alternatively, you can do it by executing the SQL code:
 
 |  |
 | --- |
-| SELECT \* FROM pg\_settings |
+| SELECT \* FROM pg\_settings WHERE name = 'shared\_preload\_libraries'; |
 
 1. Add the pg\_stat\_statements library to the shared preloaded libraries.
 
@@ -73,4 +73,5 @@ Alternatively, you can do it by executing the SQL code:
 | --- |
 | CREATE EXTENSION IF NOT EXISTS "pg\_stat\_statements"; |
 
+Page updated 2026-07-23
 
