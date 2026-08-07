@@ -3,8 +3,8 @@ title: "Proxy Requirements (Storage Systems)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_configure_proxy.html"
-last_updated: "12/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Proxy Requirements (Storage Systems)
@@ -15,7 +15,7 @@ This section describes requirements for proxies used for storage integration.
 General Requirements
 
 * The proxy and the storage system must support the same IP version.
-* For VMware integration
+* For VMware integration:
 
 * You must assign to a Microsoft Windows or a Linux machine the role of a backup proxy. This can be a dedicated machine or backup server performing the role of the default backup proxy. For more information on the protocol support for different backup infrastructure components assigned the role of the backup proxy, see [Transport Modes](transport_modes.md#limitations).
 * We recommend that you add only one proxy to one initiator group. Otherwise, you may encounter issues on proxies with the number of devices that correspond to storage snapshot clones. During the backup process, devices may be unintentionally created on all proxies added to the initiator group, for example, if two backup jobs that use proxies from the initiator group work simultaneously. The created devices may be accumulated.
@@ -27,6 +27,7 @@ During backup, Veeam Backup & Replication creates a temporary snapshot of the pr
 * For Linux-based backup proxy, to check compatibility with a storage system, see the system requirements provided by the storage system vendor.
 
 * [For Veeam Agent and NAS integration] Check requirements for the general-purpose backup proxy. For more information, see the [General Purpose-Backup Proxy](backup_proxy_general.md) section in the Veeam Backup & Replication User Guide.
+* [For IRIS integration] Only Linux general-purpose proxies are supported.
 * If you want to configure multipathing (MPIO) feature for backup from storage snapshots, check the following:
 
 * [For Windows-based backup proxies] The Multipath I/O feature is enabled in the Windows Server Manager console. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features).
@@ -88,4 +89,5 @@ For other proxies, the following technologies are supported: NVMe-RDMA, NVMe-FC 
 * The proxy must have an NVMe-FC adapter installed and also access to the storage system over Fibre Channel fabric.
 * Install NVMe-FC devices on the proxy must be installed according to the vendor documentation. Ensure that the proxy operating system and the Fibre Channel adapter are compatible. Also, check that the WWN ID of the proxy is properly zoned on the Fibre Channel switch.
 
+Page updated 2026-05-28
 
