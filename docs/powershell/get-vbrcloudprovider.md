@@ -3,8 +3,8 @@ title: "Get-VBRCloudProvider"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudprovider.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRCloudProvider
@@ -52,9 +52,10 @@ You can get the list of all existing service providers or search for instances d
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Id | Specifies the array of the cloud provider IDs you want to get. | Accepts GUID[] or string[]. | False | Named | True (ByValue, |
+| Id | Specifies the array of the cloud provider IDs you want to get.  Accepts Guid[] or String[]. | Guid[] | False | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the array of the service provider names you want to get or search conditions. | String[] | False | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
@@ -79,4 +80,5 @@ Examples
 | --- | --- |
 | This command looks for the cloud service provider with the 104.45.95.227 IP address.  |  | | --- | | Get-VBRCloudProvider -Name "104.45.95.227" | |
 
+Page updated 2026-06-24
 
