@@ -3,14 +3,14 @@ title: "Starting and Stopping Policies"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/policy_start_stop.html"
-last_updated: "6/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting and Stopping Policies
 
 
-Veeam Plug-In for Kasten allows you to start a Veeam Kasten policy manually from the Veeam Backup & Replication console. It can be helpful if you want to create an additional snapshot or export without modifying the configured backup policy schedule. Additionally, you can stop a Veeam Kasten backup policy if the processing of applications is about to take too long and you do not want the policy to produce a heavy load on the production environment during business hours.
+Veeam Plug-in for Kasten allows you to start a Veeam Kasten policy manually from the Veeam Backup & Replication console. It can be helpful if you want to create an additional snapshot or export without modifying the configured backup policy schedule. Additionally, you can stop a Veeam Kasten backup policy if the processing of applications is about to take too long and you do not want the policy to produce a heavy load on the production environment during business hours.
 
 Starting Kasten Policies
 
@@ -23,7 +23,7 @@ To start a Kasten policy:
 |  |
 | --- |
 | Tip |
-| To select several Kasten policies, click the first policy, press and hold the [SHIFT] key and select the other policies. |
+| To select several Kasten policies, click the first policy, press and hold the [Shift] key and select the other policies. |
 
 [![Start Kasten Policy](images/start_policy.webp)](images/start_policy.webp "Start Kasten Policy")
 
@@ -38,8 +38,9 @@ To stop a Veeam Kasten policy:
 |  |
 | --- |
 | Tip |
-| To select several Kasten policies, click the first policy, press and hold the [SHIFT] key and select the other policies. |
+| To select several Kasten policies, click the first policy, press and hold the [Shift] key and select the other policies. |
 
 [![Stop Kasten Policy](images/stop_policy.webp)](images/stop_policy.webp "Stop Kasten Policy")
 
+Page updated 2026-08-04
 
