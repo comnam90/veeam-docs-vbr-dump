@@ -3,8 +3,8 @@ title: "Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_permissions.html"
-last_updated: "4/29/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Permissions
@@ -21,21 +21,21 @@ Computer with Veeam Plug-In for Oracle RMAN
 
 * The specified user account must belong to the dba system group. The default name of the OSDBA group depends on the operating system:
 
-* dba in Linux and UNIX.
+* dba in Linux and Unix.
 * ORA\_DBA in Microsoft Windows.
 
 To learn more about connecting to a database as administrator using operating system authentication, see [this Oracle article](https://docs.oracle.com/cd/E18283_01/server.112/e17120/dba006.htm#i1006677).
 
-* [For Linux and Unix computers] If you use Oracle ASM and distribute system privileges with separate operating system groups, make sure you follow the Oracle recommendations described in [this Oracle article](https://docs.oracle.com/en/database/oracle/oracle-database/21/ostmg/authenticate-access-asm-instance.html#GUID-5DAEB139-6FAD-4129-A0ED-DF61EDA1B2B8).
+* [For Linux or Unix] If you use Oracle ASM and distribute system privileges with separate operating system groups, make sure you follow the Oracle recommendations described in [this Oracle article](https://docs.oracle.com/en/database/oracle/oracle-database/21/ostmg/authenticate-access-asm-instance.html#GUID-5DAEB139-6FAD-4129-A0ED-DF61EDA1B2B8).
 
-* [For Linux and Unix computers] [During application backup policy configuration](policy_oracle_rman_database_processing_general.md), when you specify the OS user account as a database administrator and this OS user account is not the Oracle Software Owner User, make sure one of the following requirements is met:
+* [For Linux or Unix] [During application backup policy configuration](policy_oracle_rman_database_processing_general.md), when you specify the OS user account as a database administrator and this OS user account is not the Oracle Software Owner User, make sure one of the following requirements is met:
 
 * Permissions for Oracle directories are set with the chmod command as 775.
 * The OS user account has the primary membership in the Oracle Inventory Group (oinstall) group.
 
 To learn how to configure the Oracle Inventory Group, see [this Oracle article](https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/example-of-creating-minimal-users-roles-groups.html#GUID-103186A1-74E0-42A8-AC3D-15AF833DCB40).
 
-* [For Microsoft Windows computers] The specified OS user account must have local administrator privileges.
+* [For Microsoft Windows] The specified OS user account must have local administrator privileges.
 
 Computer with Veeam Plug-In for SAP HANA
 
@@ -73,4 +73,5 @@ Consider the following:
 * If you work with SQL failover cluster or Always On availability group, you must assign permissions to the account on each node.
 * When you install Veeam Plug-In using [Veeam Deployment Kit](protection_group_deployer_service.md), Veeam Plug-In connects to the SQL instance with the NT AUTHORITY\SYSTEM account. To do this, the NT AUTHORITY\SYSTEM account must have a login to connect to the SQL instance. In addition, depending on the backup source, the NT AUTHORITY\SYSTEM account must have at least the permissions listed in the table above.
 
+Page updated 2026-07-31
 
