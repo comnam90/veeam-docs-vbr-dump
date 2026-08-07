@@ -3,8 +3,8 @@ title: "Automating Installation with Initial Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_linux_silent_deploy_configure.html"
-last_updated: "5/14/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Automating Installation with Initial Configuration
@@ -15,7 +15,7 @@ You can modify the Veeam Software Appliance ISO file to allow unattended install
 |  |
 | --- |
 | Important |
-| Installing additional Linux packages, third-party applications, or changing OS settings (other than those that can be controlled by the Veeam Host Management Console) on Veeam Appliances is not supported. Veeam Customer Support cannot provide technical support for appliances with unsupported modifications due to their unpredictable impact on the  security, stability, and performance of the appliance. For more information, see [this KB article.](https://www.veeam.com/kb4772) |
+| Installing additional Linux packages, third-party applications, or changing OS settings (other than those that can be controlled by the Veeam Host Management Console) on Veeam Appliances is not supported. Veeam Customer Support cannot provide technical support for appliances with unsupported modifications due to their unpredictable impact on the security, stability, and performance of the appliance. For more information, see [this KB article.](https://www.veeam.com/kb4772) |
 
 Required Edits
 
@@ -47,7 +47,7 @@ To automate the installation and configuration of Veeam Software Appliance, do t
 
 |  |
 | --- |
-| touch /etc/veeam/cockpit\_auto\_test\_disable\_init |
+| touch /etc/veeam/host\_management\_disable\_init |
 
 1. To create a configuration file that contains answers for the initialization wizard, add the following code with your specified answers:
 
@@ -58,7 +58,7 @@ To automate the installation and configuration of Veeam Software Appliance, do t
 |  |
 | --- |
 | Note |
-| Consider the following when specifying your answers:   * The passwords for the veeamadmin and veeamso account must meet the following requirements:  * 15 characters minimum. * 1 upper case character. * 1 lower case character. * 1 numeric character. * 1 special character. * No more than 3 characters of the same class in a row. For example, you cannot use more than 3 lowercase or 3 numerical characters in sequence.  * The passwords for the veeamadmin and veeamso accounts must be different. * To avoid timing issues with multifactor authentication, it is recommended to set ntp.runSync=true.  * You cannot specify an NTS server as an answer to ntp.servers=.  * To specify multiple NTP servers, you must use the following format: ntp.servers=myntp01.example.local;myntp02.example.local;myntp03.example.local.  * The multifactor authentication secret key must be specified as a 16 digit, Base32-encoded string. * The recovery token must be specified using hexadecimal values — 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Note that you can generate an appropriate string with the New-Guid cmdlet in Microsoft PowerShell.   If your specified answers do not meet these requirements, the configuration process will fail. To troubleshoot errors, you can use the [Live OS ISO](https://www.veeam.com/kb4761) to view the /var/log/VeeamBackup/veeam\_hostmanager/veeamhostmanager.log file and the system logs files in the /var/log/anaconda directory. |
+| Consider the following when specifying your answers:   * The passwords for the veeamadmin and veeamso account must meet the following requirements:  * 15 characters minimum. * 1 upper case character. * 1 lower case character. * 1 numeric character. * 1 special character. * No more than 4 characters of the same class in a row. For example, you cannot use more than 4 lowercase or 4 numerical characters in sequence.  * The passwords for the veeamadmin and veeamso accounts must be different. * To avoid timing issues with multifactor authentication, it is recommended to set ntp.runSync=true.  * You cannot specify an NTS server as an answer to ntp.servers=.  * To specify multiple NTP servers, you must use the following format: ntp.servers=myntp01.example.local;myntp02.example.local;myntp03.example.local.  * The multifactor authentication secret key must be specified as a 16 digit, Base32-encoded string. * The recovery token must be specified using hexadecimal values — 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Note that you can generate an appropriate string with the New-Guid cmdlet in Microsoft PowerShell.   If your specified answers do not meet these requirements, the configuration process will fail. To troubleshoot errors, you can use the [Live OS ISO](https://www.veeam.com/kb4761) to view the /var/log/VeeamBackup/veeam\_hostmanager/veeamhostmanager.log file and the system logs files in the /var/log/anaconda directory. |
 
 1. To create a script that will complete the configuration process using the answer file, add the following code:
 
@@ -84,11 +84,11 @@ To automate the installation and configuration of Veeam Software Appliance, do t
 
 Optional Edits
 
-You can also set the hostname and IP address, but this is optional. To do this, edit the vbr-ks.cfg. file as described in the following sections.
+You can also configure several additional parameters, but this is optional. To do this, edit the vbr-ks.cfg file as described in the following sections.
 
 Setting Hostname
 
-To set a specific hostname, edit the hostname parameter in the network command:
+To set a specific hostname, edit the hostname parameter in the network command :
 
 |  |
 | --- |
@@ -107,4 +107,29 @@ To set a static IP address, edit the bootproto parameter and add the ip, netmask
 | --- |
 | network --bootproto=static --ip=192.0.2.1 --netmask=255.255.255.0 --gateway=192.0.2.254 --nameserver=192.168.2.1,192.168.3.1 --hostname=vbr-MACH\_HASH |
 
+Enabling Data Collection
+
+To allow remote data collection immediately after deployment, add the following lines to your configuration file answers:
+
+|  |
+| --- |
+| externalManagersInstallation.enabled = true  externalManagersInstallation.timeout = Xsec |
+
+Omit the externalManagersInstallation.timeout line to use the default 1-hour timeout period.
+
+For more information, see [Configuring Backup Infrastructure Settings](hmc_configure_infrastructure.md).
+
+Enabling High Availability
+
+To enable High Availability immediately after deployment, add the following lines to your configuration file answers:
+
+|  |
+| --- |
+| highAvailability.enabled = true  highAvailability.timeout = Xsec |
+
+Omit the highAvailability.timeout line to use the default 8-hour timeout period.
+
+Note that you must still add the Veeam Software Appliance to a High Availability cluster. For more information, see [Assembling High Availability Cluster](high_availability_configuration.md).
+
+Page updated 2026-07-29
 
