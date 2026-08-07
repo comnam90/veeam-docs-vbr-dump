@@ -3,8 +3,8 @@ title: "New-VBRSQLProcessingOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsqlprocessingoptions.html"
-last_updated: "5/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRSQLProcessingOptions
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| New-VBRSQLProcessingOptions -TransactionAction <VBRSQLTransactionLogAction> {Truncate | NotTruncate | BackupPeriodically} [-Credentials <CCredentials>] [-LogBackupPeriod <int>] [-LogRetainAction <VBRLogRetainAction> {WaitForBackupDeletion | KeepOnlyLastDays}] [-LogRetainPeriod <int>]  [<CommonParameters>] |
+| New-VBRSQLProcessingOptions -TransactionAction <VBRSQLTransactionLogAction> {Truncate | NotTruncate | BackupPeriodically} [-Credentials <CCredentials>] [-LogBackupPeriod <int>] [-LogRetainAction <VBRLogRetainAction> {WaitForBackupDeletion | KeepOnlyLastDays}] [-LogRetainPeriod <int>] [-UseSqlAuthentication]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -40,13 +40,15 @@ For more information about custom scripts, see the [Transaction Log Settings: Mi
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | TransactionAction | Specifies transaction logs processing actions.   * Truncate: use this option to truncate transaction logs after successful backups. * NotTruncate: use this option to preserve transaction logs after the backup job completes. * BackupPeriodically: use this option to back up transaction logs periodically. | VBRSQLTransactionLogAction | True | Named | False |
 | Credentials | Specifies the credentials that Veeam Agent for Microsoft Windows will use to connect to the Microsoft SQL Server. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | False | Named | False |
 | LogBackupPeriod | For the BackupPeriodically action.  Specifies the number of minutes for transaction logs backups.  Default: 15. | Int | False | Named | False |
 | LogRetainAction | For the BackupPeriodically action.  Specifies retention policy for transaction logs stored in the backup repository.   * WaitForBackupDeletion: use this option to keep transaction logs backups the same period as image-level backups.  * KeepOnlyLastDays: use this option to keep transaction log backups for a specific number of days. Use the LogRetainPeriod to specify the number of days. | VBRLogRetainAction | False | Named | False |
 | LogRetainPeriod | For the BackupPeriodically action.  Specifies the number of days to keep the transaction logs.  Default: 15. | Int | False | Named | False |
+| UseSqlAuthentication | Defines that Veeam Agent for Microsoft Windows will use SQL Server authentication to connect to the Microsoft SQL Server. If you specify this parameter, use the Credentials parameter to provide the account credentials. | SwitchParameter | False | Named | True |
 
 <CommonParameters>
 
@@ -69,4 +71,5 @@ This command creates SQL processing settings for a Veeam Agent job that backs up
 | --- |
 | New-VBRSQLProcessingOptions -TransactionAction BackupPeriodically -LogBackupPeriod 25 -LogRetainAction KeepOnlyLastDays -LogRetainPeriod 7 |
 
+Page updated 2026-06-11
 
