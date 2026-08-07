@@ -3,8 +3,8 @@ title: "Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_about.html"
-last_updated: "12/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Overview
@@ -30,4 +30,5 @@ You must use the Veeam Backup & Replication console for the following tasks:
 | Tip |
 | If you want to protect the whole server where your databases are located, you can use the image-level backup functionality of [Veeam Backup & Replication](backup.md) or [Veeam Agent for Linux](https://helpcenter.veeam.com/docs/agentforlinux/userguide/overview.html?ver=60). In case of image-level backup, application-aware processing of MongoDB data is not available. |
 
+Page updated 2026-07-09
 

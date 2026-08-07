@@ -3,14 +3,16 @@ title: "Creating Universal CDP Policies"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/creating_universal_cdp_policies.html"
-last_updated: "4/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Universal CDP Policies
 
 
 To protect workloads with universal CDP, you must configure a CDP policy. The CDP policy defines which workloads to protect, where to store replicas, how often create short-term and long-term restore points, and so on. One CDP policy can process one or multiple workloads.
+
+With universal CDP, you can protect Microsoft Windows workloads and Linux-based machines.
 
 |  |
 | --- |
@@ -23,8 +25,6 @@ To create a universal CDP policy:
 2. At the Name step of the wizard, specify a name and description for the CDP policy.
 
 To avoid problems with long paths, it is recommended to create policy names not longer than 50 characters.
-
-1. If you want to use advanced settings for the CDP policy, select the Network remapping check box to enable the Network step in the wizard.
 
 ![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_name.webp)
 
@@ -39,7 +39,15 @@ To avoid problems with long paths, it is recommended to create policy names not 
 
 1. If you want to exclude workloads from the CDP policy, click Exclusions and specify what objects you want to exclude.
 2. If you want to define the order in which the CDP policy must process workloads or protection groups, select a workload or protection group added to the policy and use the Up and Down buttons on the right to move the object up or down in the list.
-3. At the Destination step of the wizard, in the Host or cluster section, click Choose and select Cloud host. Then select the cloud host allocated to you by the SP:
+3. At the Destination Type step of the wizard, select Cloud Host. If you want to use advanced settings for the CDP policy:
+
+* Select the Replica seeding check box to enable the Seeding step in the wizard.
+* Select the Network remapping check box to enable the Network step in the wizard. Veeam Backup & Replication does not currently support automatic connection of a Linux-based VM replica to the network on the cloud host. You must use the Network step of the wizard to manually select source and target networks for such replicas.
+* Veeam Backup & Replication does not support re-IP rules for VM replicas on the cloud host. Do not select the Replica re-IP check box for the CDP policy targeted at the cloud host. If you select the Replica re-IP option, this option will be disabled when you select the cloud host at the Destination step of the wizard.
+
+![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_target.webp)
+
+1. At the Destination step of the wizard, in the Host or cluster section, click Choose and select Cloud host. Then select the cloud host allocated to you by the SP:
 
 * If the SP allocated to you replication resources on a VMware vSphere host, select the cloud host provided to you through a hardware plan.
 
@@ -81,6 +89,12 @@ Note that you must not use the same vApp as a target for both a CDP policy and a
 
 ![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_network.webp)
 
+1. At the Seeding step of the wizard, configure replica seeding and mapping.
+
+If you want to use initial seeding, select the Get seed from the following backup repository check box and from the list of available backup repositories, select the repository where your replica seeds are stored.
+
+If you want to use replica mapping, select the Map replica to existing Machines check box and select the copy of the necessary machines.![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_seeding.webp)
+
 1. At the Policy Settings step of the wizard, click Choose next to the Source proxy field to select a source CDP proxy for the CDP policy. You can choose automatic proxy selection or assign the source proxy explicitly.
 
 You cannot specify a target proxy for the CDP policy targeted at the cloud host. During the CDP policy run, Veeam Backup & Replication will automatically select the target CDP proxy configured by the SP in the SP backup infrastructure.
@@ -88,6 +102,10 @@ You cannot specify a target proxy for the CDP policy targeted at the cloud host.
 1. In the Replica name suffix field, enter a suffix for the name of CDP replicas. To register a CDP replica on the target host in the SP site, Veeam Backup & Replication appends the specified suffix to the name of the source workload.
 
 ![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_settings.webp)
+
+1. At the Guest Processing step of the wizard, select the Enable application-aware processing check box to create transactionally consistent VM replicas. With application-aware processing enabled, Veeam Backup & Replication can detect network settings of replicated VMs in the most efficient way and use the detected settings for configuring network extension appliances. To learn more, see [Network Mapping for Cloud Replicas](cloud_network_mapping.md).
+
+![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_guest_processing.webp)
 
 1. At the Schedule step of the wizard, configure schedule and retention policy settings for the CDP policy:
 
@@ -102,9 +120,15 @@ During every specified period, Veeam Backup & Replication will prepare data for 
 
 For Universal CDP policies, application-consistent restore points are not supported, and those time periods cannot be specified. Crash-consistent is selected by default.
 
+|  |
+| --- |
+| Note |
+| For Linux-based machines, universal CDP creates crash-consistent short-term and long-term restore points. Application-consistent restore points are not supported. |
+
 ![Creating Universal CDP Policies](images/cloud_universal_cdp_policy_schedule.webp)
 
 1. At the Summary step of the wizard, select the Enable the policy when I click Finish check box if you want to start the created CDP policy right after you complete working with the wizard.
 2. Click Finish.
 
+Page updated 2026-07-29
 

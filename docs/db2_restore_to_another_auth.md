@@ -3,8 +3,8 @@ title: "Restore to Another Server Using Configured Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_restore_to_another_auth.html"
-last_updated: "4/2/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Another Server Using Configured Authentication
@@ -14,17 +14,25 @@ You can restore a database to another server using an account and authentication
 
 To restore database, do the following steps:
 
-1. Start the restore operation with the following command:
+1. Start the restore operation using one of the following commands depending on the OS you are using:
+
+* For Linux or Unix:
 
 |  |
 | --- |
 | /opt/veeam/VeeamPluginforDB2/DB2ConfigTool --set-backup-for-restore |
 
+* For Microsoft Windows:
+
+|  |
+| --- |
+| "C:\Program Files\Veeam\VeeamPluginforDB2\DB2ConfigTool.exe" --set-backup-for-restore |
+
 1. Veeam Plug-In will prompt you to select an authentication method to access the backup. To access the backup using the authentication method that was specified during the Veeam Plug-In configuration process, type 1:
 
 |  |
 | --- |
-| Select authentication type or disable the functionality: |
+| Select authentication type or disable the functionality: 0. To disable the functionality 1. Currently set authentication data 2. Credentials 3. Recovery token Enter authentication type number: 1 |
 
 1. Veeam Plug-In will display backups available for restore under the user account specified in the Veeam Plug-In configuration. For the user account with a security certificate, Veeam Plug-In displays backups created under this user account.
 
@@ -40,4 +48,5 @@ Select a backup to start the restore process:
 
 * If you plan to restore to another instance with a name that is different from the backed-up instance, see [Restore to Instance with Different Name](db2_restore_to_server_with_different_name.md).
 
+Page updated 2026-07-02
 

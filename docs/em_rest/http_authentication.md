@@ -3,8 +3,8 @@ title: "HTTP Authentication"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/http_authentication.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # HTTP Authentication
@@ -22,7 +22,7 @@ Every work cycle with Veeam Backup Enterprise Manager REST API must begin with t
 
 |  |
 | --- |
-| Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <EnterpriseManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0">   <Links>     <Link Href="https://enterprise04.tech.local:9398/api/logonSessions" Type="LogonSessionList" Rel="Down"/>     <Link Href="https://enterprise04.tech.local:9398/api/sessionMngr/?v=latest" Type="LogonSession" Rel="Create"/>   </Links>   <SupportedVersions>     <SupportedVersion Name="v1\_5">       <Links>         <Link Href="https://enterprise04.tech.local:9398/api/sessionMngr/?v=v1\_5" Type="LogonSession" Rel="Create"/>       </Links>     </SupportedVersion>     <SupportedVersion Name="v1\_6">       <Links>         <Link Href="https://enterprise04.tech.local:9398/api/sessionMngr/?v=v1\_6" Type="LogonSession" Rel="Create"/>       </Links>     </SupportedVersion>     <SupportedVersion Name="v1\_7">       <Links>         <Link Href="https://enterprise04.tech.local:9398/api/sessionMngr/?v=v1\_7" Type="LogonSession" Rel="Create"/>       </Links>     </SupportedVersion>   </SupportedVersions> </EnterpriseManager> |
 
 1. The client sends the POST HTTP requests to the obtained URL to create a new logon session.
 
@@ -89,4 +89,5 @@ To log out, the client must delete a created logon session. A URL for a session 
 | Tip |
 | For an example of the logon and logout procedures, see [Beginner Example](beginner_example.md). |
 
+Page updated 2026-07-29
 

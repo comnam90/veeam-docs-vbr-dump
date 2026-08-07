@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_used_ports.html"
-last_updated: "3/16/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -22,9 +22,9 @@ Workers
 | Worker | Scale Computing HyperCore cluster | TCP/HTTPS | 443 | Used to communicate with the REST API service running on the Scale Computing HyperCore cluster. |
 | Backup server | TCP | 10006 | Used to communicate with the backup server. |
 | Veeam backup repository or [gateway server](gateway_server.md) | TCP | 2500-3300 | Default range of ports used as transmission channels for jobs and restore sessions. For each TCP connection that a job uses, one port from this range is assigned. |
-| TCP | 6162 | Default port used by Veeam Transport Service (on Linux servers) or Veeam Data Mover Service (on Windows servers) |
+| 6162 | Default port used by Veeam Transport Service (on Linux servers) or Veeam Data Mover Service (on Windows servers) |
 | Rocky Linux repositories  (mirrors.rockylinux.org, mirrors.fedoraproject.org, rockylinux.map.fastly.net) | TCP/HTTP(S) | 80 (443) | Used to get OS security updates and .NET Core package updates.  Note: The listed mirror URLs are used to get actual URLs that will be used to obtain updates. |
-| Veeam Update Repository  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) | TCP/HTTPS | 443 | Used to download worker deployment packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
+| Veeam Update Repository (repository.veeam.com)  [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) (cloudfront.net, amazonaws.com) | TCP/HTTPS | 443 | Used to download worker deployment packages.  Note: Veeam Update Repository uses the Amazon CloudFront service to distribute traffic when downloading product updates. |
 | NTP server | UDP | 123 | Used for time synchronization with NTP servers. |
 
 Backup Server
@@ -44,4 +44,5 @@ Backup Server
 | Note |
 | For the list of ports used for application-aware processing as well as ports used by the backup server to communicate with backup repositories, see [Used Ports](used_ports.md). |
 
+Page updated 2026-07-07
 

@@ -3,14 +3,14 @@ title: "Creating Policy for Unix Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_create_unix.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Policy for Unix Computers
 
 
-To back up data of a computer protected with Veeam Agent for Oracle Solaris or Veeam Agent for IBM AIX, you must configure a Veeam Agent backup policy in Veeam Backup & Replication. This backup policy will be applied to Veeam Agent computers to create individual backup jobs. Using these jobs, Veeam Agents will perform backup operations.
+To back up data of a computer protected with Veeam Agent for Oracle Solaris or Veeam Agent for IBM AIX, you must configure a Veeam Agent backup policy in Veeam Backup & Replication. This backup policy is applied to Veeam Agent machines and creates individual backup jobs that Veeam Agent uses to perform backup operations on the protected machines.
 
 Before configuring a backup policy, [check prerequisites](agent_policy_before_unix.md). Then use the New Agent Backup Job wizard to define settings for the backup policy.
 
@@ -28,4 +28,5 @@ Before configuring a backup policy, [check prerequisites](agent_policy_before_un
 12. [Specify the backup schedule](agent_policy_schedule_unix.md).
 13. [Review backup policy settings](agent_policy_review_unix.md).
 
+Page updated 2026-06-24
 

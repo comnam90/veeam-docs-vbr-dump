@@ -3,8 +3,8 @@ title: "/cloud/replicas/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/cloudreplicas_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /cloud/replicas/{ID}
@@ -51,7 +51,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudReplicaReference" Href="https://localhost:9398/api/cloud/replicas/8393c284-c953-403f-a9b9-cff63e0c6815" Name="ABC Company Servers Replication" UID="urn:veeam:CloudReplica:8393c284-c953-403f-a9b9-cff63e0c6815"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudReplicaReference" Href="https://localhost:9398/api/cloud/replicas/8393c284-c953-403f-a9b9-cff63e0c6815" Name="ABC Company Servers Replication" UID="urn:veeam:CloudReplica:8393c284-c953-403f-a9b9-cff63e0c6815">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudReplica" Href="https://localhost:9398/api/cloud/replicas/8393c284-c953-403f-a9b9-cff63e0c6815?format=Entity" Name="ABC Company Servers Replication" />     <Link Rel="Down" Type="CloudVmReplicaPointReferenceList" Href="https://localhost:9398/api/cloud/vmReplicaPoints/8393c284-c953-403f-a9b9-cff63e0c6815/vmReplicaPoints" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -59,4 +59,5 @@ Entity resource representation:
 | --- |
 | <CloudReplica xmlns="http://www.veeam.com/ent/v1.0" Type="CloudReplica" Href="https://localhost:9398/api/cloud/replicas/8393c284-c953-403f-a9b9-cff63e0c6815?format=Entity" Name="ABC Company Servers Replication" UID="urn:veeam:CloudReplica:8393c284-c953-403f-a9b9-cff63e0c6815">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudReplicaReference" Href="https://localhost:9398/api/cloud/replicas/8393c284-c953-403f-a9b9-cff63e0c6815" Name="ABC Company Servers Replication" />     <Link Rel="Down" Type="CloudVmReplicaPointReferenceList" Href="https://localhost:9398/api/cloud/vmReplicaPoints/8393c284-c953-403f-a9b9-cff63e0c6815/vmReplicaPoints" />   </Links>   <Platform>VMware</Platform> </CloudReplica> |
 
+Page updated 2026-07-29
 

@@ -3,8 +3,8 @@ title: "How Unstructured Data Backup Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_hiw.html"
-last_updated: "11/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Unstructured Data Backup Works
@@ -32,6 +32,7 @@ In This Section
 
 * [Data Structure in Backup, Archive and Secondary Repositories](unstructured_data_backup_structure.md)
 * [Unstructured Data Backup Retention Scenarios](unstructured_data_backup_retention_scenarios.md)
+* [Long-Term Retention (GFS) for Unstructured Data Backups](unstructured_data_backup_gfs.md)
 * [Unstructured Data Backups in Object Storage Repositories](unstructured_data_backup_in_object_storage.md)
 * [Unstructured Data Backups in Immutable Repositories](unstructured_data_backup_in_immutable_repo.md)
 * [Unstructured Data Backups in Deduplicating Storage Appliances](unstructured_data_backup_dedup_storage_appliances.md)
@@ -39,4 +40,5 @@ In This Section
 * [Scale-Out Repository with Extents in Metadata and Data Roles](unstructured_data_backup_sobr_extent_roles.md)
 * [File Backup Integration with Storage Systems](storage_snapshot_integration.md)
 
+Page updated 2026-08-05
 

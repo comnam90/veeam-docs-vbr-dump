@@ -3,8 +3,8 @@ title: "VBRGoogleCloudBucket"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/vbrgooglecloudbucket.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # VBRGoogleCloudBucket
@@ -24,4 +24,5 @@ Related Commands
 
 [Add-VBRGoogleCloudRepository](add-vbrgooglecloudrepository.md)
 
+Page updated 2026-08-04
 

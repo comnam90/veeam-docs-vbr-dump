@@ -3,8 +3,8 @@ title: "POST /failoverPlans/{ID}?action=start"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/post_failoverplans_id_start.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # POST /failoverPlans/{ID}?action=start
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Content-Type | True | Identifies the format of the request body message. Possible values:   * application/xml * application/json |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
@@ -43,8 +44,9 @@ In the request body, the client must send the parameters for the started failove
 
 The request body must contain either of the following elements:
 
+Request Body
+
 | Element | Type | Description | Modifiable | Min/Max Occurrence |
-| --- | --- | --- | --- | --- |
 | StartNow | Boolean | If you specify this parameter, Veeam Backup & Replication will fail over VMs added to the failover plan to their latest restore points. | No | 0/1 |
 | StartDate | DateTime | If you specify this parameter, Veeam Backup & Replication will fail over VMs added to the failover plan to the most recent restore points that were created prior to the selected date. | No | 0/1 |
 
@@ -54,13 +56,13 @@ XML Representation
 
 |  |
 | --- |
-| <?xml version="1.0" encoding="utf-8"?> |
+| <?xml version="1.0" encoding="utf-8"?> <FailoverPlanManagementSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0">   <StartNow>true</StartNow>   <StartDate>2025-07-24T19:04:35.8385611Z</StartDate> </FailoverPlanManagementSpec> |
 
 JSON Representation
 
 |  |
 | --- |
-| {   "StartNow": true,   "StartDate": "2020-07-24T19:04:35.8385611Z"  } |
+| {   "StartNow": true,   "StartDate": "2025-07-24T19:04:35.8385611Z"  } |
 
 Response
 
@@ -74,8 +76,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -91,12 +94,13 @@ The example below starts a failover plan having ID ae01e36f-32a3-4095-95fa-09a2a
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/failoverPlans/ae01e36f-32a3-4095-95fa-09a2af744009?action=start    Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml    Request Body:  <?xml version="1.0" encoding="utf-8"?> <FailoverPlanManagementSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0">   <StartNow>true</StartNow> </FailoverPlanManagementSpec>    Response:  202 Accepted    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>StartFailoverPlan</Operation> </Task> |
+| Request:  POST https://localhost:9398/api/failoverPlans/ae01e36f-32a3-4095-95fa-09a2af744009?action=start  Request Headers:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj Content-Type         application/xml  Request Body:  <?xml version="1.0" encoding="utf-8"?> <FailoverPlanManagementSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0">   <StartNow>true</StartNow> </FailoverPlanManagementSpec>  Response:  202 Accepted  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>StartFailoverPlan</Operation> </Task> |
 
 To track the status of the operation, send the GET HTTP request to the received task resource:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/tasks/task-1    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>StartFailoverPlan</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
+| Request:  GET https://localhost:9398/api/tasks/task-1  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>StartFailoverPlan</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
 
+Page updated 2026-07-28
 

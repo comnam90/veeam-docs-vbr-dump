@@ -1,13 +1,13 @@
 ---
-title: "Performing Instant Recovery of Workloads to Hyper-V"
+title: "Instant Recovery of Workloads to Hyper-V"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_instant_recovery_hyperv.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Performing Instant Recovery of Workloads to Hyper-V
+# Instant Recovery of Workloads to Hyper-V
 
 
 To perform Instant Recovery to Microsoft Hyper-V environment, do the following:
@@ -20,6 +20,7 @@ Alternatively, expand the necessary backup job, select the VM and click Instant 
 
 1. Complete the Instant Recovery wizard as described in section [Performing Instant VM Recovery of Workloads to Hyper-V VMs](performing_instant_recovery_hv_vm.md).
 
-[![Performing Instant Recovery of Workloads to Hyper-V](images/ahv_instant_recovery_hyperv.webp)](images/ahv_instant_recovery_hyperv.webp)
+[![Instant Recovery of Workloads to Hyper-V](images/ahv_instant_recovery_hyperv.webp)](images/ahv_instant_recovery_hyperv.webp)
 
+Page updated 2026-06-24
 

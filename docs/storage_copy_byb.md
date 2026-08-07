@@ -1,0 +1,45 @@
+---
+title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_copy_byb.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Before You Begin
+
+
+Before you create a storage copy job, check the following requirements:
+
+* The minimum supported HPE StoreOnce versions are the following:
+
+* For Gen3, the minimum version is 3.18.18.
+* For Gen4, the minimum version is 4.2.3.
+
+* The minimum supported Dell Data Domain version is 7.9.
+* Make sure that all backup infrastructure components that take part in the backup copy process are added to the backup infrastructure. These components include the source and target repositories between which data is copied. For more information on how to add a backup repository, see [Backup Repositories](backup_repository.md).
+* To perform the health check for backup files, you must use HPE StoreOnce version 5.2 or later.
+* Veeam Backup & Replication does not perform the health check for encrypted and compressed backup files.
+* Make sure that repositories between which you plan to copy data have a direct connection to each other.
+
+This direct connection must be of the same type as the connection that [you select when adding](dsa_repository_server.md) the target backup repository. For example, if you connected the target HPE StoreOnce repository over Fibre Channel, you must connect the source HPE StoreOnce to the target HPE StoreOnce over Fibre Channel.
+
+* HPE StoreOnce repositories connected over Fibre Channel require the two-way connection. Zone the source initiator World Wide Names (WWNs) with the destination target WWNs, and zone the destination initiator WWNs with the source target WWNs.
+* If the source backup repository has backup immutability disabled while the target repository is immutable, the storage copy job will work in non-immutable mode.
+* If the source and target HPE StoreOnce backup repositories are configured with different block chunking algorithms, the storage copy job will copy the data without changing the block sizes.
+* If the source backup job has a [GFS retention policy](gfs_retention_policy.md) configured, its GFS immutability settings will be applied to the backup files copied to the target backup repository.
+* If you plan to use pre-job and post-job scripts, you must create scripts before you configure the storage copy job.
+
+* [For Linux-based backup server] The following applies to pre-job and post-job scripts:
+
+* Bash scripts must use Linux-style line endings (LF).
+* Only the .SH and .PS1 file extensions are supported.
+
+* Scripts with the .EXE file extension are not supported.
+* Script impersonation is not supported.
+
+To upload scripts to the Linux backup server, in the Veeam Backup & Replication console, navigate to the Files node. Then, copy script files to the /var/lib/veeam/scripts folder on the Linux backup server.
+
+Page updated 2026-07-30
+

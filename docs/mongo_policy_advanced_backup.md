@@ -3,8 +3,8 @@ title: "Backup Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_policy_advanced_backup.html"
-last_updated: "8/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Settings
@@ -25,9 +25,10 @@ To specify settings for a backup chain created with the backup policy:
 
 1. To define the schedule for active full backups, select the Create active full backups periodically on check box and click Configure. In the Schedule Settings window, define the schedule:
 
-* To create a active full backup once a month on specific days, select Monthly on. Use the fields on the right to configure the necessary schedule.
-* To create a active full backup once a week on specific week days, select Weekly. Use the fields on the right to select the necessary week days.
+* To create an active full backup once a month on specific days, select Monthly on. Use the fields on the right to configure the necessary schedule.
+* To create an active full backup once a week on specific week days, select Weekly. Use the fields on the right to select the necessary week days.
 
 ![Backup Settings](images/mongo_policy_storage_advanced_backup.webp)
 
+Page updated 2026-08-04
 

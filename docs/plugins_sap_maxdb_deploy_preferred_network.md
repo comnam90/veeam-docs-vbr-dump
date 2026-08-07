@@ -3,8 +3,8 @@ title: "Specifying Preferred Networks for Veeam Plug-Ins"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_preferred_network.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying Preferred Networks for Veeam Plug-Ins
@@ -37,7 +37,7 @@ Adding Preferred Networks
 where:
 
 * <network\_IP\_address> can be either the IP address of a single network or a network mask that contains a range of network IP addresses. Specify one of the available options to add as preferred networks for Veeam Plug-In data traffic.
-* <position\_in\_list> is the position number of the network in the preferred networks list. The position in the list determines in what order Veeam Plug-In will connect to the specified network. If you do not chose a specific position in the list, newly added networks take the last place in the list automatically.
+* <position\_in\_list> is the position number of the network in the preferred networks list. The position in the list determines in what order Veeam Plug-In will connect to the specified network. If you do not choose a specific position in the list, newly added networks take the last place in the list automatically.
 
 For example:
 
@@ -77,4 +77,5 @@ For example:
 | --- |
 | SapMaxDBBackintConfigTool --remove-preferred-network 172.24.29.189 |
 
+Page updated 2026-08-04
 

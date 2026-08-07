@@ -3,8 +3,8 @@ title: "About Backup Copy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/about_backup_copy.html"
-last_updated: "3/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # About Backup Copy
@@ -23,6 +23,7 @@ Veeam Backup & Replication supports backup copy for the following types of backu
 * Backups of databases created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md).
 * Backups of MongoDB replica sets created by [MongoDB Backup](mongo_backup.md).
 * Backups stored in an HPE StoreOnce backup repository.
+* Backups stored in an Dell Data Domain backup repository.
 
 * File share backups created by Veeam Backup & Replication.
 * Backups of Proxmox VE VMs created by [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3).
@@ -51,7 +52,8 @@ Related Topics
 
 * [How Backup Copy Works](backup_copying_process.md)
 * [Creating Backup Copy Jobs for VMs and Physical Machines](backup_copy_create.md)
-* [Creating Backup Copy Jobs for HPE StoreOnce Repositories](backup_copy_hpe_storeonce.md)
+* [Creating Backup Copy Jobs for HPE StoreOnce Repositories](storage_copy_create.md)
 * [Creating Backup Copy Jobs for Veeam Plug-Ins](backup_copy_plugins.md)
 
+Page updated 2026-07-30
 

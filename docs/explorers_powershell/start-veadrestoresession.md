@@ -3,8 +3,8 @@ title: "Start-VEADRestoreSession"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/start-veadrestoresession.html"
-last_updated: "3/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VEADRestoreSession
@@ -13,6 +13,11 @@ product_version: "13.0.1.1071"
 Short Description
 
 Starts a restore session to explore backed-up Microsoft Active Directory databases and to perform operations with these databases.
+
+|  |
+| --- |
+| Note |
+| In Veeam Backup & Replication 13.1, this cmdlet became deprecated. Use the [Start-VEADRestoreSessionJob](start-veadrestoresessionjob.md) cmdlet to start a session. |
 
 Applies to
 
@@ -28,7 +33,7 @@ Syntax
 
 Detailed Description
 
-This cmdlet starts a new restore session, establishes a connection to the backup server and retrieves backed-up Microsoft Active Directory databases. Within the restore session, you can get backed-up databases using the following cmdlets:
+This cmdlet starts a new restore session, establishes a connection to the backup server and retrieves backed-up Microsoft Active Directory databases. Within the restore session, you can get backed-up data using the following cmdlets:
 
 * [Get-VEADDomain](get-veaddomain.md)
 
@@ -41,13 +46,14 @@ Run the [Restore-VEADItem](restore-veaditem.md) cmdlet to restore Microsoft Acti
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | RestorePoint | Specifies a restore point to start a new restore session. You will be able to use this session to perform operations with Microsoft Active Directory databases that this restore point contains. | Accepts the [IVBRApplicationRestorePoint](https://helpcenter.veeam.com/docs/vbr/powershell/vbrapplicationrestorepoint.html?ver=13) object. To get this object, run the [Get-VBRApplicationRestorePoint](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrapplicationrestorepoint.html?ver=13) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -67,7 +73,7 @@ Perform the following steps:
 
 1. Run the [Get-VBRApplicationRestorePoint](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrapplicationrestorepoint.html?ver=13) cmdlet with the ActiveDirectory parameter. Save the result to the $restorepoint variable.
 
-The cmdlet will return an array of restore points. Note the ordinal number of the necessary restore point. In our example, it is the first restore point in the array.
+The cmdlet will return an array of restore points. Note the ordinal number of the necessary restore point. In this example, it is the first restore point in the array.
 
 1. Run the Start-VEADRestoreSession cmdlet. Set the $restorepoint variable as the RestorePoint parameter value and select the necessary restore point.
 
@@ -75,4 +81,5 @@ Related Commands
 
 [Get-VBRApplicationRestorePoint](https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrapplicationrestorepoint.html?ver=13)
 
+Page updated 2026-03-27
 

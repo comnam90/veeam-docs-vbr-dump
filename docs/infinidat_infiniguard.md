@@ -3,8 +3,8 @@ title: "Infinidat InfiniGuard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/infinidat_infiniguard.html"
-last_updated: "2/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Infinidat InfiniGuard
@@ -63,8 +63,9 @@ In the Credentials window, you must specify the SSH port that will be used to co
 
 The port number depends on the number of a Veeam container that you want to use. To see the available containers, go to Configuration -> System -> App Environment.
 
+Configuration on Veeam Backup & Replication Side
+
 |  | Port |
-| --- | --- |
 | Container 1 | 11000 |
 | Container 2 | 12000 |
 | Container 3 | 13000 |
@@ -81,14 +82,21 @@ The port number depends on the number of a Veeam container that you want to use.
 At the Access step of the wizard, select the added SSH credentials from the drop-down list. Click Optional components and advanced connection settings to configure connection ports:
 
 1. To configure a port for a component, select the required component and click Edit. In the Component port window, specify the port number and click OK to save the changes.
-2. In the Data transfer options section, provide a range of ports that will be used as a transmission channel.
 
-![Infinidat InfiniGuard](images/dedup_ports.webp)
+|  |
+| --- |
+| Note |
+| When you add Infinidat InfiniGuard version 5.3.0 or later, component ports are assigned automatically. |
+
+1. In the Data transfer options section, provide a range of ports that will be used as a transmission channel.
+
+![Infinidat InfiniGuard](images/dedup_quant_ports.webp)
 
 The ports differ depending on the container to which you plan to connect.
 
+Configuration on Veeam Backup & Replication Side
+
 |  | Installer Service | Data Mover Service | Data Transfer |
-| --- | --- | --- | --- |
 | Container 1 | 11001 | 11002 | 11003-11999 |
 | Container 2 | 12001 | 12002 | 12003-12999 |
 | Container 3 | 13001 | 13002 | 13003-13999 |
@@ -108,4 +116,5 @@ Related Topics
 
 [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
+Page updated 2026-06-19
 

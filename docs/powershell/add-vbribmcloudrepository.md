@@ -3,8 +3,8 @@ title: "Add-VBRIBMCloudRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbribmcloudrepository.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRIBMCloudRepository
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRIBMCloudRepository -AmazonS3Folder <VBRAmazonS3Folder> -Connection <VBRAmazonS3CompatibleConnection> [-Name <String>] [-Description <String>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-ProxyAppliance <CHost>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-Force]  [<CommonParameters>] |
+| Add-VBRIBMCloudRepository -AmazonS3Folder <VBRAmazonS3Folder> -Connection <VBRAmazonS3CompatibleConnection> [-Name <String>] [-Description <String>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-ProxyAppliance <CHost>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-EnableReadOnlyMode] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -46,6 +46,7 @@ Parameters
 | EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks.  Default: False. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure.  Default: False. | SwitchParameter | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -89,4 +90,5 @@ Related Commands
 * [Get-VBRAmazonS3Bucket](get-vbramazons3bucket.md)
 * [Get-VBRAmazonS3Folder](get-vbramazons3folder.md)
 
+Page updated 2026-05-27
 

@@ -3,8 +3,8 @@ title: "Add-VBRNDMPServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrndmpserver.html"
-last_updated: "3/8/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRNDMPServer
@@ -30,10 +30,13 @@ Detailed Description
 
 This cmdlet adds NDMP servers to the backup infrastructure.
 
+To add a NetApp NDMP server, use the [Add-VBRNetAppNDMPServer](add-vbrnetappndmpserver.md) cmdlet.
+
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specifies the DNS or IP of an NDMP server that you want to add to Veeam Backup & Replication. | String | True | Named | False |
 | Port | Specifies the port. Veeam Backup & Replication will use that port to connect to an NDMP server. | Int | True | Named | False |
 | Credentials | Specifies the credentials. Veeam Backup & Replication will use these credentials to connect to an NDMP server. | Accepts the CCredentials object. To get this object, run [Add-VBRCredentials](add-vbrcredentials.md) cmdlet. | True | Named | False |
@@ -46,7 +49,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-[VBRNDMPServer](vbrndmpserver.md)
+The cmdlet returns the VBRNDMPServer object that contains information about the NDMP server.
 
 Examples
 
@@ -67,4 +70,5 @@ Related Commands
 * [Add-VBRCredentials](add-vbrcredentials.md)
 * [Get-VBRServer](get-vbrserver.md)
 
+Page updated 2026-06-04
 

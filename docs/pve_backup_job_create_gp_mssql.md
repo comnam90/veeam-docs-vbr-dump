@@ -3,18 +3,18 @@ title: "Specifying Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_backup_job_create_gp_mssql.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying Microsoft SQL Server Transaction Log Settings
 
 
-By default, Veeam Backup & Replication creates application-consistent image-level backups of VMs running the Microsoft SQL Server application and truncates transaction logs after each successfully completed backup session — this will allows you to restore Microsoft SQL Server databases using specific backups. To protect mission-critical Microsoft SQL Server databases, you can instruct Veeam Backup & Replication to create secondary restore points with transaction logs in addition to primary image-level backups — this will allow you to restore your databases to [specific points in time](https://helpcenter.veeam.com/docs/vbr/explorers/vesql_restoring_pit.html?ver=13).
+By default, Veeam Backup & Replication creates application-consistent image-level backups of VMs running the Microsoft SQL Server application and truncates transaction logs after each successfully completed backup session — this will allow you to restore Microsoft SQL Server databases using specific backups. To protect mission-critical Microsoft SQL Server databases, you can instruct Veeam Backup & Replication to create secondary restore points with transaction logs in addition to primary image-level backups — this will allow you to restore your databases to [specific points in time](https://helpcenter.veeam.com/docs/vbr/explorers/vesql_restoring_pit.html?ver=13).
 
 |  |
 | --- |
-| NoteS |
+| Note |
 | * Veeam Backup & Replication stores image-level backups and transaction log backups in the same repository. * If Veeam Backup & Replication fails to produce a primary image-level backup, no secondary transaction log backups will be created. |
 
 To back up Microsoft SQL Server transaction logs periodically, do the following:
@@ -37,7 +37,7 @@ For a Windows server to be displayed in the list of available log shipping serve
 
 |  |
 | --- |
-| TipS |
+| Tip |
 | * It is recommended that you choose at least 2 log shipping servers for load balancing and high availability purposes. * It is recommended that you do not choose servers that are engaged in permanent tasks consuming resources (such as WAN accelerators or backup servers). |
 
 You can also choose not to truncate logs at all. However, keep in mind that this option requires databases to use the simple recovery model. Otherwise, transaction logs may grow large and increase the storage space consumption significantly. For more information on recovery models used by Microsoft SQL databases, see [Microsoft Docs](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-ver16).
@@ -59,4 +59,5 @@ For more information on the SQL Server Always On availability group feature, see
 
 ![Microsoft SQL Server Transaction Log Settings](images/pve_backup_job_create_gp_mssql.webp)
 
+Page updated 2026-07-15
 

@@ -1,13 +1,13 @@
 ---
-title: "Uninstalling Veeam Plug-In for HPE Morpheus VM Essentials"
+title: "Uninstalling Veeam Plug-In for HPE Morpheus VM Essentials Manually"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_uninstall_plugin.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Uninstalling Veeam Plug-In for HPE Morpheus VM Essentials
+# Uninstalling Veeam Plug-In for HPE Morpheus VM Essentials Manually
 
 
 [This section does not apply to Linux-based backup server]
@@ -27,4 +27,5 @@ To uninstall Veeam Plug-in for HPE Morpheus VM Essentials, do the following:
 
 ![Uninstalling Veeam Plug-In for HPE Morpheus VM Essentials](images/hpe_plugin_uninstall.webp)
 
+Page updated 2026-05-22
 

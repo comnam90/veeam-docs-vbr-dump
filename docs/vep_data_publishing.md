@@ -3,8 +3,8 @@ title: "Data Publishing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_data_publishing.html"
-last_updated: "8/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Data Publishing
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 Publishing a PostgreSQL instance allows you to temporarily attach the instance to the target PostgreSQL server without launching restore. Publishing typically occurs faster than using standard restore features and could be convenient when, for example, your time to perform disaster-recovery operations is limited.
 
-Veeam Explorer for PostgreSQL mounts disks from the backup repository to the target machine (under the /run/media directory), retrieves required instance files and attaches the associated instance directly to PostgreSQL so that you can perform required operations using PostgreSQL tools such as pgAdmin.
+Veeam Explorer for PostgreSQL mounts disks from the backup repository to the target machine (under the C:\VeeamFLR directory for Windows machines or the /run/media directory for Linux machines), retrieves required instance files and attaches the associated instance directly to PostgreSQL so that you can perform required operations using PostgreSQL tools such as pgAdmin.
 
 After you have launched a publishing operation to a PostgreSQL machine, you can quickly republish the latest or point-in-time state of the instance to the same machine.
 
@@ -27,4 +27,5 @@ In This Section
 * [Publishing Latest or Point-in-Time State](vep_pit.md)
 * [Managing Publishing Session](vep_publish_managing_session.md)
 
+Page updated 2026-07-31
 

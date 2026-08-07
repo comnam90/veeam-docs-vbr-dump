@@ -3,8 +3,8 @@ title: "How Veeam Plug-In for SAP HANA Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hiw_sap_hana_plugin.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Veeam Plug-In for SAP HANA Works
@@ -21,6 +21,7 @@ When Veeam Plug-In is configured, SAP Backint performs a database backup in the 
 3. Veeam Plug-In starts Veeam Data Movers on the SAP HANA server and on a backup repository. According to a specified number of parallel Backint channels, Veeam Data Movers create channels to transfer backup data.
 4. Veeam Data Movers transport backup data to the backup repository.
 
-[![How Veeam Plug-in for SAP HANA Works](images/plugins_sap_hana_plugin_architecture.webp)](images/plugins_sap_hana_plugin_architecture.webp "How Veeam Plug-in for SAP HANA Works")
+[![How Veeam Plug-In for SAP HANA Works](images/plugins_sap_hana_plugin_architecture.webp)](images/plugins_sap_hana_plugin_architecture.webp "How Veeam Plug-In for SAP HANA Works")
 
+Page updated 2026-08-04
 

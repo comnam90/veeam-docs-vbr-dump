@@ -3,8 +3,8 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/repos_mssql.html"
-last_updated: "5/5/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup Repositories
@@ -27,8 +27,6 @@ You can use the following types of repositories added to the Veeam Backup & Repl
 
 * [Dell Data Domain with Data Domain Boost (DDBoost)](dell_dd.md)
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
-
-If you plan to use HPE StoreOnce Gen3 or Gen4 software version earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x or Gen5, this 3,000,000 file limit does not apply.
 
 * [Quantum DXi](deduplicating_appliance_quantum.md)
 
@@ -61,6 +59,8 @@ Keep in mind that you must add the parameter to the existing line in the veeam\_
 Alternatively, you can use transparent data encryption (TDE) provided by Microsoft. Using TDE, you can encrypt database data with an encryption key, back up encrypted data with Veeam Plug-In, then restore data and decrypt using the same encryption key. To learn more about TDE encryption, see [this Microsoft article](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver16).
 
 * Veeam extract utility cannot extract Veeam Plug-In backup files. By design of Microsoft SQL Server, these files cannot be imported “as files” as they contain additional metadata bound to the used SBT device.
+
+* Veeam Plug-In does not use [fast cloning](backup_repository_block_cloning.md). Repositories that use a file system with block cloning support, such as XFS or ReFS, are processed the same way as repositories that do not. As a result, every backup file occupies its full physical size, and no operation gets faster.
 
 Veeam Scale-Out Backup Repositories
 
@@ -135,7 +135,7 @@ You can configure Veeam Backup & Replication to transfer Veeam Plug-In backup fi
 
 * Veeam Plug-In supports encryption of offloaded data to the capacity tier. The Encrypt data uploaded to object storage option in the Capacity Tier settings of the scale-out backup repository ensures that the entire collection of blocks along with the metadata will be encrypted while being offloaded. For details on capacity tier encryption, see [Encryption for Capacity Tier](encryption_for_capacity_tier.md).
 
-* In case a disaster strikes the scale-out repository and you have a Veeam Plug-In backup file on the capacity tier, you must re-create the scale-out repository before you restore from this backup file. You must connect the capacity tier with the Veeam Plug-In backup file to another backup server with Veeam Backup & Replication and a scale-out repository. After that, you can [import the backup files to Veeam Backup & Replication](importing_backups.md) and then perform data recovery operations.
+* In case a disaster strikes the scale-out repository and you have a Veeam Plug-In backup file on the capacity tier, you must add the object storage repository used as the capacity tier to another backup server with Veeam Backup & Replication as a standalone object storage repository. After that, you can [import the backup files to Veeam Backup & Replication](osr_import_backups.md) and then perform data recovery operations.
 
 |  |
 | --- |
@@ -189,7 +189,9 @@ Before you configure your backup infrastructure to back up to the object storage
 
 * Data in object storage repositories must be managed solely by Veeam Backup & Replication, including retention and data management. Lifecycle rules are not supported, and their enabling may result in backup and restore failures.
 * If you access the object storage repository using credentials with the read-only access permissions, data recovery options are not available for backups located in object storage repositories.
+* Veeam Plug-Ins write backup data to object storage repositories in 32 MB data blocks. Such large data blocks reduce the number of PUT requests sent to the object storage and, as a result, the costs associated with API calls.
 
 * For Microsoft Azure Blob storage, Veeam Plug-Ins do not support soft delete for blobs.
 
+Page updated 2026-08-06
 

@@ -3,8 +3,8 @@ title: "Stop-VBRInstantRecoveryMigration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrinstantrecoverymigration.html"
-last_updated: "4/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Stop-VBRInstantRecoveryMigration
@@ -32,8 +32,9 @@ This cmdlet stops migration sessions launched during Instant Recovery (including
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Migration | Specifies an array of IDs of the migration sessions that you want to stop. | Accepts the InstantRecoveryMigration[] object. To create this object, run the [Get-VBRInstantRecoveryMigration](get-vbrinstantrecoverymigration.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
@@ -67,4 +68,5 @@ Related Commands
 
 [Get-VBRInstantRecoveryMigration](get-vbrinstantrecoverymigration.md)
 
+Page updated 2026-08-04
 

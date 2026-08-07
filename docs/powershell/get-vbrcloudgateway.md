@@ -3,8 +3,8 @@ title: "Get-VBRCloudGateway"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudgateway.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRCloudGateway
@@ -48,9 +48,10 @@ This cmdlet returns existing cloud gateways.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Id | Specifies the array of IDs of cloud gateways. | Accepts GUID[] or string[]. | False | Named | True (ByValue, |
+| Id | Specifies the array of IDs of cloud gateways.  Accepts Guid[] or String[]. | Guid[] | False | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies the array of the cloud gateway names you want to get or search conditions. | String[] | False | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
@@ -75,4 +76,5 @@ Examples
 | --- | --- |
 | This command gets the cloud gateway by name.  |  | | --- | | Get-VBRCloudGateway -Name "Cloud gateway" | |
 
+Page updated 2026-06-24
 

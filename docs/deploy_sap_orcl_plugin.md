@@ -3,8 +3,8 @@ title: "Deployment and Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deploy_sap_orcl_plugin.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deployment and Configuration
@@ -21,7 +21,7 @@ In This Section
 
 * [Configuring Plug-In for SAP on Oracle](configure_sap_orcl.md)
 * [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_sap_orcl.md)
-* [Configuring Performance Throttling](plan_and_manage_performance_throttling_sap.md)
+* [Reducing Load on the Oracle Server](plan_and_manage_performance_throttling_sap.md)
 * [Configuring Parallelism for Redo Logs](sap_orcl_parallelism.md)
 * [Importing Backup Files](import_backup_sap_orcl.md)
 * [Upgrading Veeam Plug-In for SAP on Oracle](update_sap_on_oracle_plugin.md)
@@ -29,4 +29,5 @@ In This Section
 
 This guide gives instructions on how to deploy Veeam Plug-In assuming that you have already deployed a Veeam Backup & Replication server and configured a backup repository. If you need instructions on how to deploy Veeam Backup & Replication, see the [Veeam Backup & Replication User Guide](https://www.veeam.com/documentation-guides-datasheets.html) for your platform.
 
+Page updated 2026-08-06
 

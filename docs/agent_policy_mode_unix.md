@@ -3,8 +3,8 @@ title: "Step 5. Select Backup Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_mode_unix.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Select Backup Mode
@@ -25,4 +25,5 @@ Consider that in the Entire machine mode, Veeam Agent excludes network shared fo
 
 ![Step 5. Select Backup Mode](images/agent_policy_mode_unix.webp)
 
+Page updated 2026-06-19
 

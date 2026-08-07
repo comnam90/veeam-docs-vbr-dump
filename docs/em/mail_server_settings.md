@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/mail_server_settings.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Mail Server Settings
@@ -18,5 +18,5 @@ You can allow Veeam Backup Enterprise Manager to send email notifications on beh
 * [Connect Veeam Backup Enterprise Manager with a Microsoft 365 account](notifications_ms365.md)
 * [Use an SMTP server with basic authentication](notifications_smtp.md)
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 

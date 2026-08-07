@@ -3,8 +3,8 @@ title: "Get-VBRUnstructuredBackupRestorePoint"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrunstructuredbackuprestorepoint.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRUnstructuredBackupRestorePoint
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Get-VBRUnstructuredBackupRestorePoint -Backup <VBRUnstructuredBackup[]> [-Server <VBRUnstructuredServer[]>]  [<CommonParameters>] |
+| Get-VBRUnstructuredBackupRestorePoint -Backup <VBRUnstructuredBackup[]> [-Server <VBRUnstructuredServer[]>] [<CommonParameters>] |
 
 * Get a restore point for backups created by file backup jobs and object storage backup jobs by the restore point ID.
 
 |  |
 | --- |
-| Get-VBRUnstructuredBackupRestorePoint -Id <guid[]>  [<CommonParameters>] |
+| Get-VBRUnstructuredBackupRestorePoint -Id <guid[]> [<CommonParameters>] |
 
 Detailed Description
 
@@ -40,8 +40,9 @@ This cmdlet returns restore points created by file backup jobs file backup jobs 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Backup | Specifies an array of backup files created by file backup jobs and object storage backup jobs. The cmdlet will return restore points that are available for these backup files. | Accepts the VBRUnstructuredBackup[] object. To get this object, run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Server | Specifies an array of file shares and object storage. The cmdlet will return backup files that are located on these file shares and object storage. | Accepts the VBRUnstructuredServer[] object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | False | Named | True (ByPropertyName) |
 | Id | Specifies an array of IDs of restore points. The cmdlet will return restore points with this IDs. | Guid[] | True | Named | False |
@@ -81,4 +82,5 @@ Related Commands
 
 * [Select-Object](https://docs.microsoft.com/en-us/PowerShell/module/microsoft.powershell.utility/select-object?view=powershell-6)
 
+Page updated 2026-06-19
 

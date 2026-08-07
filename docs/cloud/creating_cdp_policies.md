@@ -3,8 +3,8 @@ title: "Creating CDP Policies for VMware vSphere"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/creating_cdp_policies.html"
-last_updated: "4/15/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating CDP Policies for VMware vSphere
@@ -24,12 +24,6 @@ To create a CDP policy:
 
 To avoid problems with long paths, it is recommended to create policy names not longer than 50 characters.
 
-1. If you want to use advanced settings for the CDP policy:
-
-* Select the Replica seeding check box to enable the Seeding step in the wizard.
-* Select the Network remapping check box to enable the Network step in the wizard. Veeam Backup & Replication does not currently support automatic connection of a Linux-based VM replica to the network on the cloud host. You must use the Network step of the wizard to manually select source and target networks for such replicas.
-* Veeam Backup & Replication does not support re-IP rules for VM replicas on the cloud host. Do not select the Replica re-IP check box for the CDP policy targeted at the cloud host. If you select the Replica re-IP option, this option will be disabled when you select the cloud host at the Destination step of the wizard.
-
 ![Creating CDP Policies for VMware vSphere](images/cloud_cdp_policy_name.webp)
 
 1. At the Virtual Machines step of the wizard, click Add and select VMs and VM containers that you want to replicate. To quickly find the necessary object, use the search field at the bottom of the Add Objects window.
@@ -43,7 +37,15 @@ To avoid problems with long paths, it is recommended to create policy names not 
 
 1. If you want to exclude VMs from the VM container or replicate only specific VM disks, click Exclusions and specify what objects you want to exclude.
 2. If you want to define the order in which the CDP policy must process VMs, select a VM or VM container added to the policy and use the Up and Down buttons on the right to move the VM or VM container up or down in the list.
-3. At the Destination step of the wizard, in the Host or cluster section, click Choose and select Cloud host. Then select the cloud host allocated to you by the SP:
+3. At the Destination Type step of the wizard, select Cloud Host. If you want to use advanced settings for the CDP policy:
+
+* Select the Replica seeding check box to enable the Seeding step in the wizard.
+* Select the Network remapping check box to enable the Network step in the wizard. Veeam Backup & Replication does not currently support automatic connection of a Linux-based VM replica to the network on the cloud host. You must use the Network step of the wizard to manually select source and target networks for such replicas.
+* Veeam Backup & Replication does not support re-IP rules for VM replicas on the cloud host. Do not select the Replica re-IP check box for the CDP policy targeted at the cloud host. If you select the Replica re-IP option, this option will be disabled when you select the cloud host at the Destination step of the wizard.
+
+![Creating CDP Policies for VMware vSphere](images/cloud_cdp_policy_destination_type.webp)
+
+1. At the Destination step of the wizard, in the Host or cluster section, click Choose and select Cloud host. Then select the cloud host allocated to you by the SP:
 
 * If the SP allocated to you replication resources on a VMware vSphere host, select the cloud host provided to you through a hardware plan.
 
@@ -166,4 +168,5 @@ During every specified period, Veeam Backup & Replication will prepare data for 
 1. At the Summary step of the wizard, select the Enable the policy when I click Finish check box if you want to start the created CDP policy right after you complete working with the wizard.
 2. Click Finish.
 
+Page updated 2026-07-22
 

@@ -3,8 +3,8 @@ title: "Configuring Veeam Plug-In for SAP on Oracle"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configure_sap_orcl.html"
-last_updated: "12/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Veeam Plug-In for SAP on Oracle
@@ -68,7 +68,7 @@ For details about other required ports, see [Ports](permissions_sap_orcl.md).
 |  |
 | --- |
 | Important |
-| Consider the following:   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account.   For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).   * The account must have access permissions on the required backup repository. To learn how to configure access permissions on repositories, see [Access and Encryption Settings on Repositories](repository_permissions.md). |
+| Consider the following:   * You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Backup Administrator role or Backup Operator and Restore Operator roles to the account.   For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).   * The account must have access permissions on the required backup repository. To learn how to configure access permissions on repositories, see [Access and Encryption Settings on Repositories](repository_permissions.md). |
 
 1. If you connect to the specified Veeam Backup & Replication server for the first time, provide the following confirmations:
 
@@ -76,7 +76,7 @@ For details about other required ports, see [Ports](permissions_sap_orcl.md).
 
 |  |
 | --- |
-| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 |
+| Veeam Backup & Replication server fingerprint: XX986XX6X6106XXXXX765X574X72X5X11502XXX8 Continue? (y/n): |
 
 1. Review requirements for the credentials and press y to confirm the connection using the specified credentials.
 
@@ -95,7 +95,7 @@ In the wizard dialog, you will see a list of available repositories. Enter the n
 
 |  |
 | --- |
-| Available backup repositories:  1. serv10\_repo |
+| Available backup repositories:  1. serv10\_repo 2. serv07\_repo Enter repository number: 1 |
 
 |  |
 | --- |
@@ -106,7 +106,7 @@ In the wizard dialog, you will see a list of available repositories. Enter the n
 
 |  |
 | --- |
-| Enter number of data streams (From 1 to 32) to run in parallel: 4    Configuration result:  An auxiliary initialization profile has been successfully created for SAP system "ODB": /oracle/ODB/sapprof/veeam\_initODB.sap  The created profile must be leveraged to perform backup and restore tasks by BR\*Tools. |
+| Enter number of data streams (From 1 to 32) to run in parallel: 4  Configuration result:  An auxiliary initialization profile has been successfully created for SAP system "ODB": /oracle/ODB/sapprof/veeam\_initODB.sap  The created profile must be leveraged to perform backup and restore tasks by BR\*Tools. |
 
 Note that this parallelism setting applies only to backup and restore of Oracle datafiles. If you want to configure parallel channels for backup and restore of redo logs, see [Configuring Parallelism for Redo Logs](sap_orcl_parallelism.md).
 
@@ -121,8 +121,9 @@ Apart from running a configuration wizard, you can use the SapOracleBackintConfi
 
 The following table lists available parameters for SapOracleBackintConfigTool.
 
+Configuration Tool Parameters
+
 | Parameter | Description |
-| --- | --- |
 | --help | Shows the list of tool parameters. |
 | --show-config | Shows configuration parameters. |
 | --wizard | Starts the wizard to configure the plug-in settings. The wizard edits the Veeam Plug-In configuration file (veeam\_config.xml) or creates a new one if the configuration file was removed from the /opt/veeam/VeeamPluginforSAPOracle directory on the machine where Veeam Plug-In is installed. |
@@ -148,4 +149,5 @@ The following example shows how to specify credentials that will be used to log 
 | --- |
 | SapOracleBackintConfigTool --set-credentials "serv02\Administrator" "password" |
 
+Page updated 2026-07-10
 

@@ -1,19 +1,21 @@
 ---
-title: "Restoring Data with Veeam Recovery Media"
+title: "Restoring from Veeam Recovery Media"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_media.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Restoring Data with Veeam Recovery Media
+# Restoring from Veeam Recovery Media
 
 
-In addition to data restore tasks available in the Veeam backup console, you can also recover data on a Veeam Agent computer using the Veeam Recovery Media. To do this, you must have a backup of the computer whose data you want to restore and the Veeam Recovery media created for this computer.
+In addition to data restore tasks available in the Veeam Backup & Replication interface, you can also recover data on a Veeam Agent computer using bare metal recovery. To do this, you must have a backup of the computer whose data you want to restore and Veeam Recovery Media created for this computer. To learn more about creating Veeam Recovery Media, see [Creating Veeam Recovery Media](recovery_media_create.md).
 
-* For a Microsoft Windows computer, you can create the Veeam Recovery Media with the Veeam backup console. To learn more, see [Creating Veeam Recovery Media](recovery_media_create.md).
-* For a Linux computer, you can download the Veeam Recovery Media from the [Veeam website](https://www.veeam.com/linux-backup-download.html) or create a custom Veeam Recovery Media. To learn more, see the [Veeam Recovery Media](https://helpcenter.veeam.com/docs/agentforlinux/userguide/recovery_media.html?ver=13) section in the Veeam Agent for Linux User Guide.
+Depending on how you access the computer being recovered, you can perform bare metal recovery in one of the following ways:
+
+* [Local bare metal recovery](integration_instant_restore_media_local.md) — you boot the computer that must be recovered from a Veeam Recovery Media ISO and perform the restore locally on the computer side.
+* [Remote bare metal recovery](integration_instant_restore_media_remote.md) — you initiate and control the restore from the Veeam Backup & Replication web UI without physical access to the computer being recovered.
 
 Considerations and Limitations
 
@@ -33,11 +35,5 @@ Veeam Backup & Replication will automatically attempt to replace the old object 
 | NOTE |
 | Veeam Backup & Replication cannot remove from backup jobs individual computers from the [Manually Added](agents_protection_groups_default.md#manual) protection groups. |
 
-Restore with Veeam Recovery Media
-
-The process of data restore with the Veeam Recovery Media in the Veeam Agent management scenario does not differ from the same process on a computer that runs Veeam Agent operating in the standalone mode.
-
-* For information on data restore with the Veeam Recovery Media on a Microsoft Windows computer, see the [Restoring from Veeam Recovery Media](https://helpcenter.veeam.com/docs/agentforwindows/userguide/image_boot.html?ver=13) section in the Veeam Agent for Microsoft Windows User Guide.
-* For information on data restore with the Veeam Recovery Media on a Linux computer, see the [Restoring from Veeam Recovery Media](https://helpcenter.veeam.com/docs/agentforlinux/userguide/baremetal.html?ver=13) section in the Veeam Agent for Linux User Guide.
-
+Page updated 2026-07-21
 

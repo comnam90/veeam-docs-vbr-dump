@@ -3,14 +3,14 @@ title: "Step 3. Configure Backup Source Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_backup_job_vbr_assign_vms.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Configure Backup Source Settings
 
 
-At the Virtual Machines step of the wizard, specify the backup scope — resources that Veeam Backup & Replication will back up.
+At the Virtual Machines step of the wizard, specify the backup scope — select resources that Veeam Backup & Replication will back up.
 
 Step 3a. Choose Virtual Machines
 
@@ -62,4 +62,5 @@ Related Topics
 
 [Snapshot Types](ahv_nutanix_snapshots.md)
 
+Page updated 2026-03-25
 

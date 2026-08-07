@@ -1,13 +1,13 @@
 ---
-title: "Getting to Know User Interface"
+title: "Getting to Know Explorer Console UI"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_know_ui.html"
-last_updated: "8/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Getting to Know User Interface
+# Getting to Know Explorer Console UI
 
 
 Veeam Explorer for Microsoft SQL Server provides you with a convenient user interface that allows you to perform the required operations in a user-friendly manner.
@@ -41,4 +41,5 @@ The main application window contains the following UI elements:
 
 [![Components of Main Application Window](images/vesql_know_ui.webp)](images/vesql_know_ui.webp "Components of Main Application Window")
 
+Page updated 2026-04-14
 

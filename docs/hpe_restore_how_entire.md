@@ -3,8 +3,8 @@ title: "Entire VM Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_restore_how_entire.html"
-last_updated: "3/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Entire VM Restore
@@ -25,7 +25,7 @@ The number of empty disks equals the number of disks attached to the backed-up V
 
 If multiple disks are attached to the backed-up VM, these disks are restored sequentially, one disk at a time.
 
-1. Shut down the worker VM when the restore session completes.
+1. Shuts down the worker VM when the restore session completes.
 
 |  |
 | --- |
@@ -34,4 +34,5 @@ If multiple disks are attached to the backed-up VM, these disks are restored seq
 
 To learn how to restore an entire VM, see [Performing VM Restore](hpe_restore_entire_vm.md).
 
+Page updated 2026-07-22
 

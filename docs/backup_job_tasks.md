@@ -3,8 +3,8 @@ title: "Working with Veeam Agent Backup Jobs and Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_tasks.html"
-last_updated: "6/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Working with Veeam Agent Backup Jobs and Policies
@@ -16,6 +16,11 @@ In Veeam Backup & Replication, you can create Veeam Agent backup jobs of the fol
 
 * The backup job that runs on the backup server in the similar way as a regular job for VM data backup. The backup job is intended for protected computers that have permanent connection to the backup server. To learn more, see [Backup Job](agents_job.md).
 * The backup policy that describes configuration of individual Veeam Agent backup jobs that run on protected computers. Veeam Backup & Replication uses the backup policy as a saved template and applies settings from the backup policy to Veeam Agents that run on computers added to the backup policy. The backup policy is intended for protected computers that may have limited connection to the backup server. To learn more, see [Backup Policy](agents_policy.md).
+
+|  |
+| --- |
+| NOTE |
+| In the Veeam Backup & Replication web UI, you can create and manage backup jobs and backup policies only for computers protected with Veeam Agent for Microsoft Windows and Veeam Agent for Linux. To create or manage backup jobs and policies for Veeam Agent for Unix or Veeam Agent for Mac, use the Veeam Backup & Replication console. |
 
 After you configured a Veeam Agent backup job in Veeam Backup & Replication, you can manage it in Veeam Backup & Replication as well. Operations available for a Veeam Agent backup job depend on the job mode specified in the job properties:
 
@@ -42,4 +47,5 @@ Related Tasks
 * [Creating Agent Backup Policy for Unix Computers](agent_policy_create_unix.md)
 * [Creating Agent Backup Policy for Mac Computers](agent_policy_create_mac.md)
 
+Page updated 2026-07-15
 

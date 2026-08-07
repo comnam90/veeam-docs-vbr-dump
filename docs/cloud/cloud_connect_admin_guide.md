@@ -3,8 +3,8 @@ title: "Guide for Service Providers"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_admin_guide.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Guide for Service Providers
@@ -19,6 +19,7 @@ In This Section
 * [Managing Subtenant Accounts on SP Side](cloud_connect_subtenants_manage.md)
 * [Restoring Data from Tenant Backups](cc_data_restore.md)
 * [Managing Tenant Data](cloud_connect_manage_data.md)
+* [Scanning Tenant Backups](cloud_connect_scan_backup.md)
 * [Managing Tenant Cloud Failover Plans](cloud_failover_plan_manage_sp.md)
 * [Using Remote Access Console](cc_remote.md)
 * [Managing SP Backup Server](cc_backup_server_manage.md)
@@ -31,4 +32,5 @@ Related Topics
 * [Getting Started with Veeam Cloud Connect Backup](cloud_connect_backup_getting_started.md)
 * [Getting Started with Veeam Cloud Connect Replication](cloud_connect_replication_getting_started.md)
 
+Page updated 2026-06-12
 

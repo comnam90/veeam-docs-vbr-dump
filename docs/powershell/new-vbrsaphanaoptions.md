@@ -3,8 +3,8 @@ title: "New-VBRSAPHANAOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrsaphanaoptions.html"
-last_updated: "12/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRSAPHANAOptions
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| New-VBRSAPHANAOptions [-ParallelChannelsCount <int>]  [<CommonParameters>] |
+| New-VBRSAPHANAOptions [-ParallelChannelsCount <int>] [-UseCustomPrefix] [-Prefix <String>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,9 +32,12 @@ This cmdlet creates SAP HANA backup settings. You can run this cmdlet to allow V
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | ParallelChannelsCount | Specifies the number of data channels that can be assigned.  Permitted values: 1 to 32. | Int32 | False | Named | False |
+| Prefix | Specifies the custom prefix for backup files on the SAP HANA side.  Provide this parameter together with the UseCustomPrefix parameter. | String | False | Named | False |
+| UseCustomPrefix | Defines that Veeam Plug-In for SAP HANA will use a custom prefix for backup files on the SAP HANA side instead of the standard backup prefixes (COMPLETE\_DATA\_BACKUP, DIFF\_DATA\_BACKUP and INC\_DATA\_BACKUP).  If you provide this parameter, specify the prefix using the Prefix parameter. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -54,4 +57,5 @@ This command creates a SAP HANA backup settings for application backup policies 
 | --- |
 | New-VBRSAPHANAOptions -ParallelChannelsCount 3 |
 
+Page updated 2026-06-12
 

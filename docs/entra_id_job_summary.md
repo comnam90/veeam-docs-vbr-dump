@@ -3,8 +3,8 @@ title: "Step 6. Finish Working with Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_job_summary.html"
-last_updated: "10/6/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Finish Working with Wizard
@@ -19,4 +19,5 @@ At the Summary step of the wizard, review configuration information and click Fi
 
 ![Step 6. Finish Working with Wizard](images/entra_id_job_summary.webp "Summary")
 
+Page updated 2026-06-12
 

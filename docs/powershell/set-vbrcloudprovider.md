@@ -3,8 +3,8 @@ title: "Set-VBRCloudProvider"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrcloudprovider.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRCloudProvider
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRCloudProvider -CloudProvider <VBRCloudProvider> [-Address <string>] [-Description <string>] [-Port <int32>] [-Credentials <VBRCloudProviderCredentials>] [-PassThru] [-Appliance <VBRCloudProviderNetworkAppliance[]>] [-VerifyCertificate] [-CertificateThumbprint <string>] [-InstallManagementAgent] [-Force]  [<CommonParameters>] |
+| Set-VBRCloudProvider -CloudProvider <VBRCloudProvider> [-Address <string>] [-Description <string>] [-Port <int32>] [-Credentials <VBRCloudProviderCredentials>] [-PassThru] [-Appliance <VBRCloudProviderNetworkAppliance[]>] [-VerifyCertificate] [-CertificateThumbprint <string>] [-InstallManagementAgent] [-RestoreAccessLevel {None | UnencryptedBackups | AllBackups}] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -42,9 +42,10 @@ This cmdlet modifies settings of service provider added to Veeam Backup & Rep
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| CloudProvider | Specifies the service provider you want to modify. | Accepts the [VBRCloudProvider](vbrcloudprovider.md) object. To get this object, run the [Get-VBRCloudProvider](get-vbrcloudprovider.md) cmdlet. | True | Named | True (ByValue, |
+| CloudProvider | Specifies the service provider you want to modify. | Accepts the [VBRCloudProvider](vbrcloudprovider.md) object. To get this object, run the [Get-VBRCloudProvider](get-vbrcloudprovider.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Address | Specifies a full DNS name or an IP address of the cloud gateway configured on the service provider side. | String | False | Named | False |
 | Description | Specifies the description of the service provider. | String | False | Named | False |
 | Port | Specifies the port over which the Veeam backup server of the user will communicate with the cloud gateway.  Permitted values: 1 to 65535.  Default: 6180. | Int32 | False | Named | False |
@@ -53,6 +54,7 @@ Parameters
 | VerifyCertificate | Defines if the TLS certificate must be verified by the thumbprints.  Use the CertificateThumbprint parameter to set the thumbprint that will be compared to the TLS certificate thumbprint. | SwitchParameter | False | Named | False |
 | CertificateThumbprint | Specifies the thumbprint that will be compared to the TLS certificate thumbprint. | String | False | Named | False |
 | InstallManagementAgent | Defines that the service provider must manage the Veeam backup server under the Backup as a Service agreement.  The cmdlet will install the Veeam Managed Backup Portal agent on the Veeam backup server. | SwitchParameter | False | Named | False |
+| RestoreAccessLevel | Defines the access level according to which the service provider can restore backups stored on cloud repositories:   * None: the service provider cannot restore backups. * UnencryptedBackups: the service provider can restore only  backups created without encryption. * AllBackups: the service provider can restore any backups.   Default: None.  Note: You cannot decrease the access level given to the service provider. The AllBackups access level is permanent and cannot be revoked. | VBRVccRestoreAccessLevel | False | Named | False |
 | Force | Defines that the command will skip the certificate verification if the verification fails. | SwitchParameter | False | Named | False |
 | PassThru | Defines that the command will return the output object to the Windows PowerShell console. | SwitchParameter | False | Named | False |
 | WhatIf | Defines that the cmdlet will write a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
@@ -91,4 +93,5 @@ Related Commands
 * [Set-VBRCloudProviderNetworkAppliance](set-vbrcloudprovidernetworkappliance.md)
 * [Get-VBRCloudProvider](get-vbrcloudprovider.md)
 
+Page updated 2026-05-25
 

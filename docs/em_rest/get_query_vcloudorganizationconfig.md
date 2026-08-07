@@ -3,8 +3,8 @@ title: "GET /query?type=VCloudOrganizationConfig"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_query_vcloudorganizationconfig.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /query?type=VCloudOrganizationConfig
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -39,8 +40,9 @@ Optional Parameters
 
 In the query, you can use the following parameters for filtering and sorting.
 
+Optional Parameters
+
 | Parameter | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the VMware Cloud Director organization configuration resource, for example: urn:veeam:BackupFile:0874ab95-10e5-4f25-84df-2782ad81f3e5. |
 | Name | String | Name of the VMware Cloud Director organization configuration resource, for example: org1. |
 | RepositoryUid | UidType | UID of the backup repository on which the storage quota for the VMware Cloud Director organization is created, for example: urn:veeam:Repository:82db96c3-445c-4a7e-9587-f2d523e839f4. |
@@ -65,8 +67,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -80,6 +83,7 @@ The example below returns an entity resource representation of a collection of e
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/query?type=VCloudOrganizationConfig&format=Entities&filter=BackupServerName=="enterprise06.tech.local";Disabled==false    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/query?type=VCloudOrganizationConfig&format=Entities&filter=BackupServerName=="enterprise06.tech.local";Disabled==false  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0">   <Entities>     <VCloudOrganizationConfigs>       <VCloudOrganizationConfig Type="VCloudOrganizationConfig" Href="https://localhost:9398/api/vCloud/orgConfigs/21e1e4bb-1adc-4851-bc3a-5d25bb39ff10?format=Entity" Name="organization02" UID="urn:veeam:VCloudOrganizationConfig:21e1e4bb-1adc-4851-bc3a-5d25bb39ff10">         <Links>           <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />           <Link Rel="Alternate" Type="VCloudOrganizationConfigReference" Href="https://localhost:9398/api/vCloud/orgConfigs/21e1e4bb-1adc-4851-bc3a-5d25bb39ff10" Name="organization02" />           <Link Rel="Edit" Type="VCloudOrganizationConfigReference" Href="https://localhost:9398/api/vCloud/orgConfigs/21e1e4bb-1adc-4851-bc3a-5d25bb39ff10" Name="organization02" />           <Link Rel="Delete" Href="https://localhost:9398/api/vCloud/orgConfigs/21e1e4bb-1adc-4851-bc3a-5d25bb39ff10" />           <Link Rel="Down" Type="VCloudOrganizationConfigBackupJobSettings" Href="https://localhost:9398/api/vCloud/orgConfigs/21e1e4bb-1adc-4851-bc3a-5d25bb39ff10/backupJobSettings" Name="organization02" />         </Links>         <BackupServerUid>urn:veeam:BackupServer:7445e6ce-86f5-4171-b909-dac209c66563</BackupServerUid>         <RepositoryUid>urn:veeam:Repository:425b6739-5082-4f7a-99fb-1ae13ef87d9f</RepositoryUid>         <QuotaGb>100</QuotaGb>         <IsDisabled>false</IsDisabled>         <JobSettings>           <DefaultSettings>false</DefaultSettings>           <JobSchedulerType>Full</JobSchedulerType>           <HighPriorityJob>false</HighPriorityJob>         </JobSettings>         <UsedQuotaMb>0</UsedQuotaMb>         <HostUid>urn:veeam:ManagedServer:24a14898-77d0-4881-bbf8-c8ba71ce4d55</HostUid>         <RepositoryFriendlyName>Repository 1</RepositoryFriendlyName>       </VCloudOrganizationConfig>       <VCloudOrganizationConfig Type="VCloudOrganizationConfig" Href="https://localhost:9398/api/vCloud/orgConfigs/7656b73b-52e3-48d8-a65c-a5850c0a8af9?format=Entity" Name="organization01" UID="urn:veeam:VCloudOrganizationConfig:7656b73b-52e3-48d8-a65c-a5850c0a8af9">         <Links>           <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />           <Link Rel="Alternate" Type="VCloudOrganizationConfigReference" Href="https://localhost:9398/api/vCloud/orgConfigs/7656b73b-52e3-48d8-a65c-a5850c0a8af9" Name="organization01" />           <Link Rel="Edit" Type="VCloudOrganizationConfigReference" Href="https://localhost:9398/api/vCloud/orgConfigs/7656b73b-52e3-48d8-a65c-a5850c0a8af9" Name="organization01" />           <Link Rel="Delete" Href="https://localhost:9398/api/vCloud/orgConfigs/7656b73b-52e3-48d8-a65c-a5850c0a8af9" />           <Link Rel="Down" Type="VCloudOrganizationConfigBackupJobSettings" Href="https://localhost:9398/api/vCloud/orgConfigs/7656b73b-52e3-48d8-a65c-a5850c0a8af9/backupJobSettings" Name="organization01" />         </Links>         <BackupServerUid>urn:veeam:BackupServer:7445e6ce-86f5-4171-b909-dac209c66563</BackupServerUid>         <RepositoryUid>urn:veeam:Repository:425b6739-5082-4f7a-99fb-1ae13ef87d9f</RepositoryUid>         <QuotaGb>600</QuotaGb>         <IsDisabled>false</IsDisabled>         <JobSettings>           <DefaultSettings>false</DefaultSettings>           <JobSchedulerType>Full</JobSchedulerType>           <HighPriorityJob>true</HighPriorityJob>         </JobSettings>         <UsedQuotaMb>0</UsedQuotaMb>         <HostUid>urn:veeam:ManagedServer:24a14898-77d0-4881-bbf8-c8ba71ce4d55</HostUid>         <RepositoryFriendlyName>Repository 1</RepositoryFriendlyName>       </VCloudOrganizationConfig>     </VCloudOrganizationConfigs>   </Entities>   <PagingInfo PagesCount="1" PageSize="100" PageNum="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/query?type=VCloudOrganizationConfig&format=Entities&filter=BackupServerName=="enterprise06.tech.local";Disabled==false&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/query?type=VCloudOrganizationConfig&format=Entities&filter=BackupServerName=="enterprise06.tech.local";Disabled==false&pageSize=100&page=1" />     </Links>   </PagingInfo> </QueryResult> |
 
+Page updated 2026-07-29
 

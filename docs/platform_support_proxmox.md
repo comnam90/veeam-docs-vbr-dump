@@ -3,8 +3,8 @@ title: "Proxmox VE"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_proxmox.html"
-last_updated: "6/30/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Proxmox VE
@@ -17,7 +17,7 @@ Veeam Backup & Replication provides support for the following versions of the Pr
 Proxmox VE Virtual Infrastructure
 
 | Specification | Requirement |
-| Platform | Proxmox Virtual Environment versions 8.2–9.1 installed using the official ISO image provided by Proxmox |
+| Platform | Proxmox Virtual Environment versions 8.2–9.2 installed using the official ISO image provided by Proxmox |
 | Hypervisor | KVM |
 | Management Server | n/a |
 
@@ -49,12 +49,13 @@ For other requirements and limitations of guest OS file restore, see [Requiremen
 
 Version Compatibility
 
-The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-In for Proxmox VE.
+The following table lists compatible versions of Veeam Backup & Replication and Veeam Plug-in for Proxmox VE.
 
 Version Compatibility
 
-| Product Release | Veeam Plug-In for Proxmox VE Build | Veeam Backup & Replication Build | Worker OS Version |
-| 3 | 13.3.2.9 (recommended) 13.3.0.237 | 13.0.2.29 (recommended) 13.0.1.2067  13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
+| Product Release | Veeam Plug-in for Proxmox VE Build | Veeam Backup & Replication Build | Worker OS Version |
+| 4 | 13.4.0.300 | 13.1.0.411 | Veeam JeOS 9.6 |
+| 3 | 13.3.2.9 13.3.0.237 | 13.0.2.29 13.0.1.2067  13.0.1.1071 13.0.1.180 | Veeam JeOS 9.2 |
 | 2 | 13.2.0.457 | 13.0.0.4967 | Rocky Linux 8.10 |
 | 1.5 | 12.1.5.17 | 12.3.2.3617 |
 | 1.3 | 12.1.3.217 | 12.3.2.3617  12.3.1.1139  12.3.0.310 |
@@ -65,4 +66,5 @@ Related Topics
 * [Overview of Proxmox VE Protection Functionality](proxmox_ve.md)
 * [Proxmox VE Integration Architecture](pve_infrastructure_components.md)
 
+Page updated 2026-07-29
 

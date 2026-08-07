@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/hardware_plan_before_you_begin.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -43,4 +43,5 @@ Before you add a new Hyper-V hardware plan, consider the following limitations:
 * After you subscribe a tenant to a Hyper-V hardware plan, you cannot rename the virtual switch in Microsoft Hyper-V infrastructure that is used by VM replicas. If you rename the virtual switch, replication jobs targeted at the cloud host that use the renamed virtual switch will fail.
 * Usage of a Microsoft SMB3 shared folder as a storage for VM replicas is not supported in the Veeam Cloud Connect infrastructure.
 
+Page updated 2026-08-04
 

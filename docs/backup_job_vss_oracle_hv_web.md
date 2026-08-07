@@ -3,8 +3,8 @@ title: "Oracle Archived Redo Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_oracle_hv_web.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Oracle Archived Redo Log Settings
@@ -15,7 +15,7 @@ To create a transactionally consistent backup of a VM where Oracle Database is d
 To specify Oracle archived redo logs, do the following:
 
 1. In the Processing Settings window, click the Oracle tab.
-2. In the Specify Oracle account with SYSDBA privileges section, specify a user account that Veeam Backup & Replication will use to connect to the Oracle database. The account must have privileges for the Oracle database listed in section [Performing Guest Processing](required_permissions.md#rptcb).
+2. In the Specify Oracle account with SYSDBA privileges section, specify a user account that Veeam Backup & Replication will use to connect to the Oracle database. The account must have privileges for the Oracle database listed in section [Performing Guest Processing](permissions_guest_processing.md#rptcb).
 
 You can select Use guest credentials in the list of user accounts. In this case, Veeam Backup & Replication will use the account specified at the Guest Processing step of the wizard to access the VM guest OS and connect to the Oracle database.
 
@@ -42,6 +42,7 @@ When the parent backup job (job creating an image-level backup) runs, Veeam Back
 
 Make sure that you select a server that is not engaged in other resource-consuming tasks. For example, you may want not to use a server that performs the WAN accelerator role as a log shipping server. For load balance and high availability purposes, it is recommended that you select at least 2 log shipping servers.
 
-[![Click to zoom in](images/hv_backup_job_vss_oracle_web.webp)](images/hv_backup_job_vss_oracle_web.webp "Click to zoom in")
+[![Oracle archived redo log settings](images/hv_backup_job_vss_oracle_web.webp)](images/hv_backup_job_vss_oracle_web.webp "Oracle archived redo log settings")
 
+Page updated 2026-06-29
 

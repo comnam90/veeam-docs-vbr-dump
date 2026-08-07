@@ -3,8 +3,8 @@ title: "Step 4. Specify Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/os_backup_job_target_repository.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Backup Repository Settings
@@ -24,10 +24,11 @@ To map the job to a backup, click the Map backup link. In the opened Select Back
 
 1. Use the Keep all versions for the last field to specify how long copies of all recent object versions from the selected object storage bucket or container must be kept in the backup repository. You can restore the entire bucket or container to any restore point within the period specified in this setting.
 
-If, for example, Keep all versions for the last is set to 30 days, the backup repository will store all object versions that appeared in the object storage bucket or container during the last 30 days. At the scheduled time on the 31st day, the object storage backup job first backs up new object versions and saves them to the backup repository. Right after that, object versions older than 30 days (created on the 1st day) are either deleted from the backup repository or moved to the archive repository. Object versions are moved to the archive repository, if at the [Archive Repository](os_backup_job_archive_repository.md) step of the wizard you enable the Archive file versions to the following archive repository check box and configure the archive retention.
+If, for example, Keep all versions for the last is set to 30 days, the backup repository will store all object versions that appeared in the object storage bucket or container during the last 30 days. At the scheduled time on the 31st day, the object storage backup job first backs up new object versions and saves them to the backup repository. Right after that, object versions older than 30 days that have been replaced by newer versions are either deleted from the backup repository or moved to the archive repository. Object versions are moved to the archive repository if at the [Archive Repository](os_backup_job_archive_repository.md) step of the wizard you enable the Archive file versions to the following archive repository check box and configure the archive retention.
 
 1. If you need to keep a copy of backups in another repository, select the Configure secondary destinations for this job check box. That enables the [Secondary Target](file_share_backup_job_secondary_target.md) step of the wizard.
 
 ![Step 4. Specify Backup Repository Settings](images/os_backup_job_target_repository.webp)
 
+Page updated 2026-06-02
 

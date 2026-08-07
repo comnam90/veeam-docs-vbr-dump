@@ -3,8 +3,8 @@ title: "GET /nas/jobs/{ID}/includes/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_nas_jobs_id_includes_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /nas/jobs/{ID}/includes/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | HierarchyObjRef | HierarchyObjRefType | Reference to file or folder processed by the file share backup job, for example: urn:NasBackup:FileServer:ee50f2fb-034f-41cd-8dc8-904aeae2d0d8. |
 | ObjectInJobId | String | ID of the file or folder processed by the file share backup job, for example: e310aa12-eff2-41f4-97c8-631b677fc17f. |
 | FileOrFolder | String | Path to the file or folder processed by the job, for example: C:\File Share. |
@@ -71,8 +74,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /nas/jobs/{ID} | Up | URL of the [/nas/jobs/{ID}](nas_jobs_id.md) resource — a file share backup job that backs up the file share. |
 | /nas/fileservers/{ID} | Related | URL of the [/nas/fileServers/{ID}](nas_fileservers_id.md) resource related to this [/nas/jobs/{ID}/includes/{ID}](nas_jobs_id_includes_id.md) resource. |
 
@@ -82,6 +86,7 @@ A sample request below returns a resource representation of the VM having ID 830
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/nas/jobs/da4a15c2-04e7-4135-b876-577249d3d720/includes/83071dc0-44f2-49b6-b431-1cb79ed66639    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <NASObject xmlns="http://www.veeam.com/ent/v1.0" Type="NasObject" Href="https://srv12.tech.local:9398/api/nas/jobs/93dfbb3e-f420-45cf-addc-4ee9297113f2/includes/6fefb504-856d-4c31-b767-76af5567c407"> |
+| Request:  GET https://localhost:9398/api/nas/jobs/da4a15c2-04e7-4135-b876-577249d3d720/includes/83071dc0-44f2-49b6-b431-1cb79ed66639  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <NASObject xmlns="http://www.veeam.com/ent/v1.0" Type="NasObject" Href="https://srv12.tech.local:9398/api/nas/jobs/93dfbb3e-f420-45cf-addc-4ee9297113f2/includes/6fefb504-856d-4c31-b767-76af5567c407">   <Links>     <Link Rel="Up" Type="Job" Href="https://srv12.tech.local:9398/api/nas/jobs/93dfbb3e-f420-45cf-addc-4ee9297113f2?format=Entity" Name="Shared Files Backup" />     <Link Rel="Related" Type="FileServer" Href="https://srv12.tech.local:9398/api/nas/fileServers/517be4c8-9c43-4e7c-9f59-4e368d3a8f3c?format=Entity" Name="\\srv12\share" />   </Links>   <HierarchyObjRef>urn:NasBackup:BackupServer:5735d1af-3aad-49ac-ac77-eab708ac1a37</HierarchyObjRef>   <ObjectInJobId>6fefb504-856d-4c31-b767-76af5567c407</ObjectInJobId>   <FileOrFolder>\\srv12\share</FileOrFolder>   <FileServerUid>urn:veeam:FileServer:517be4c8-9c43-4e7c-9f59-4e368d3a8f3c</FileServerUid>   <InclusionMask>     <Extension>\*.\*</Extension>   </InclusionMask>   <ExclusionMask>     <Extension>\\srv12\share\.snapshot</Extension>     <Extension>\\srv12\share\~snapshot</Extension>   </ExclusionMask> </NASObject> |
 
+Page updated 2026-07-29
 

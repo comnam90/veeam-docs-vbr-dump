@@ -3,8 +3,8 @@ title: "Choosing Restore Mode"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_tenant_restore_options_mode.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Choosing Restore Mode
@@ -22,6 +22,7 @@ To change this behavior, clear the Restore from Entra ID Recycle Bin check box i
 
 * If the item does not exist in the environment, Veeam Backup for Microsoft Entra ID restores this item using the backed-up data.
 
-  [![Configure Restore Options](images/entra_id_restore_user_options.webp)](images/entra_id_restore_user_options.webp "Configure Restore Options")
+[![Configure Restore Options](images/entra_id_restore_mode.webp)](images/entra_id_restore_mode.webp "Configure Restore Options")
 
+Page updated 2026-06-30
 

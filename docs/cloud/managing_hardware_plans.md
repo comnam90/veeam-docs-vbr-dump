@@ -3,8 +3,8 @@ title: "Managing Hardware Plans"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/managing_hardware_plans.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Hardware Plans
@@ -17,4 +17,5 @@ In This Section
 * [Editing Hardware Plan Settings](hardware_plans_edit.md)
 * [Removing Hardware Plans](hardware_plans_remove.md)
 
+Page updated 2026-08-04
 

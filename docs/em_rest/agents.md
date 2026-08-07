@@ -3,8 +3,8 @@ title: "/agents"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/agents.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /agents
@@ -43,6 +43,7 @@ The /agents resource has a resource representation of the following type:
 
 |  |
 | --- |
-| <Agents Href="http://local.host:9399/api/agents" Type="AgentsService" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| <Agents Href="http://local.host:9399/api/agents" Type="AgentsService" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/agents/jobs" Type="JobReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints" Type="AgentRestorePointReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/backups" Type="BackupReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/restorePoints" Type="RestorePointReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/backupFiles" Type="RestorePointReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/backupSessions" Type="BackupJobSessionReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/protectionGroups" Type="AgentProtectionGroupReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/discoveredComputers" Type="DiscoveredComputerReferenceList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/jobs?format=Entity" Type="JobList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/agentRestorePoints?format=Entity" Type="AgentRestorePointList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/backups?format=Entity" Type="BackupList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/restorePoints?format=Entity" Type="RestorePointList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/backupFiles?format=Entity" Type="RestorePointList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/backupSessions?format=Entity" Type="BackupJobSessionList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/protectionGroups?format=Entity" Type="AgentProtectionGroupList" Rel="Down"/>     <Link Href="http://local.host:9399/api/agents/discoveredComputers?format=Entity" Type="DiscoveredComputerList" Rel="Down"/>   </Links> </Agents> |
 
+Page updated 2026-07-29
 

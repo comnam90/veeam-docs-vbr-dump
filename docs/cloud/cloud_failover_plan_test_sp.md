@@ -3,8 +3,8 @@ title: "Testing Cloud Failover Plan"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_failover_plan_test_sp.html"
-last_updated: "11/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Testing Cloud Failover Plan
@@ -17,7 +17,7 @@ This operation is supported for cloud failover plans that contain snapshot-based
 |  |
 | --- |
 | Note |
-| Consider the following limitations:   * Veeam Backup & Replication does not support this operation for failover plans that contain CDP replicas with I/O filters older than version 12.1 installed on the cluster where the VMs that you plan to protect reside and where replicas will reside. To learn more about updating I/O filters, see the [Updating and Uninstalling I/O Filter](https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_remove.html?ver=13) section in the Veeam Backup & Replication User Guide. * If the SP starts the cloud failover plan test for CDP replicas created with VBR version 12.2 (or earlier), long-term retention policy creation will be stopped while testing. |
+| Consider the following limitations:   * Veeam Backup & Replication does not support this operation for failover plans that contain CDP replicas with I/O filters older than version 12.1 installed on the cluster where the VMs that you plan to protect reside and where replicas will reside. To learn more about updating I/O filters, see the [Updating and Uninstalling I/O Filter](https://helpcenter.veeam.com/docs/vbr/userguide/cdp_io_filter_remove.html?ver=13) section in the Veeam Backup & Replication User Guide. * If the SP starts the cloud failover plan test for CDP replicas created with Veeam Backup & Replication version 12.2 (or earlier), long-term retention policy creation will be stopped while testing. |
 
 |  |
 | --- |
@@ -44,4 +44,5 @@ To use the registry key, complete the following steps:
 
 You can set CDP replicas to run in the keep alive mode for a maximum of 24 hours.
 
+Page updated 2026-08-03
 

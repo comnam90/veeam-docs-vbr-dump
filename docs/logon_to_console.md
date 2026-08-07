@@ -3,8 +3,8 @@ title: "Logging in to Veeam Backup & Replication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/logon_to_console.html"
-last_updated: "10/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Logging in to Veeam Backup & Replication
@@ -39,6 +39,11 @@ The user account must be added to the Local Users group on the backup server or 
 
 Select Remember me if you do not want to enter the credentials again the next time you sign in on this backup server.
 
+|  |
+| --- |
+| Note |
+| You can save credentials for a maximum of 5 accounts per backup server. After you reach this limit, the Remember me check box becomes unavailable, and a tooltip notifies you that you cannot save credentials for more accounts. |
+
 If SAML authentication is enabled, click Sign in with SSO and specify credentials to log in to the SSO service used by your organization. For more information, see [SAML Authentication](identity_provider.md).
 
 ![Logging in to Veeam Backup & Replication](images/rem_console_sign_in.webp)
@@ -57,4 +62,5 @@ Related Topics
 * [Veeam Backup & Replication Web UI](vbr_web_console.md)
 * [Installing Veeam Backup & Replication Console](install_console.md)
 
+Page updated 2026-07-13
 

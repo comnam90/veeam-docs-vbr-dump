@@ -3,8 +3,8 @@ title: "Restoring Veeam Agent Backup to Hyper-V VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_hyperv.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Veeam Agent Backup to Hyper-V VM
@@ -40,6 +40,9 @@ If you restore a Veeam Agent computer to a Hyper-V VM, consider the following:
 
 Restore to Hyper-V VM
 
-The procedure of Instant Recovery for a Veeam Agent computer practically does not differ from the same procedure for a VM. The main difference from Instant Recovery is that you do not need to select the recovery mode, because Veeam Agent computers are always restored to a new location. To learn more, see [Performing Instant Recovery of Workloads to Hyper-V](performing_instant_recovery_hv_vm.md).[![Restore Veeam Agent Backup to Hyper-V VM](images/am_agent_restore_instant.webp)](images/am_agent_restore_instant.webp "Restore Veeam Agent Backup to Hyper-V VM")
+The procedure of Instant Recovery for a Veeam Agent computer practically does not differ from the same procedure for a VM. The main difference from Instant Recovery is that you do not need to select the recovery mode, because Veeam Agent computers are always restored to a new location. To learn more, see [Instant Recovery to Microsoft Hyper-V](instant_recovery_to_hv.md).
 
+[![Restore Veeam Agent Backup to Hyper-V VM](images/am_agent_restore_instant.webp)](images/am_agent_restore_instant.webp "Restore Veeam Agent Backup to Hyper-V VM")
+
+Page updated 2026-07-29
 

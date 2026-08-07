@@ -3,8 +3,8 @@ title: "Step 4. Define VM Backup Order"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_order_hv_web.html"
-last_updated: "8/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Define VM Backup Order
@@ -24,6 +24,7 @@ To define the VM backup order:
 | Note |
 | VMs may be processed in a different order. For example, if backup infrastructure resources for a VM that is higher on the priority list are not available, and resources for a VM that is lower on the list are available, Veeam Backup & Replication will start processing the VM that is lower on the list first. |
 
-[![Click to zoom in](images/hv_backup_job_vm_order_web.webp)](images/hv_backup_job_vm_order_web.webp "Click to zoom in")
+[![Define VM backup order](images/hv_backup_job_vm_order_web.webp)](images/hv_backup_job_vm_order_web.webp "Define VM backup order")
 
+Page updated 2026-06-29
 

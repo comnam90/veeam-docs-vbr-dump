@@ -3,8 +3,8 @@ title: "What You Do Next"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_gateway_pool_after.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # What You Do Next
@@ -17,4 +17,5 @@ After you create a cloud gateway pool, you must do the following:
 
 Only those tenants to whom the cloud gateway pool is assigned can use cloud gateways added to this cloud gateway pool. Other tenants will be able to use individual cloud gateways that are not added to any cloud gateway pool.
 
+Page updated 2026-08-04
 

@@ -3,8 +3,8 @@ title: "Step 4. Specify Default Gateways"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_failover_plan_gateways.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Default Gateways
@@ -18,4 +18,5 @@ To specify default gateways, click Manage default gateways at the bottom of the 
 
 ![Step 4. Specify Default Gateways](images/cloud_failover_plan_gateways.webp)
 
+Page updated 2026-08-04
 

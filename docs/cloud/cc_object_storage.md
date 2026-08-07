@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cc_object_storage.html"
-last_updated: "3/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup to Object Storage
@@ -85,4 +85,5 @@ In earlier product versions, object storage repositories used as cloud repositor
 
 For more information on how to configure an expiration policy for SAS, see [Microsoft docs](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy?tabs=azure-portal).
 
+Page updated 2026-07-29
 

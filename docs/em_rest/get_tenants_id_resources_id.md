@@ -3,8 +3,8 @@ title: "GET /cloud/tenants/{ID}/resources/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_tenants_id_resources_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /cloud/tenants/{ID}/resources/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,15 +60,17 @@ In the response body, the REST API returns a representation of the /cloud/tenant
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | RepositoryQuota | CloudTenantRepositoryQuotaInfoType | Repository quota assigned to the tenant. For details, see [Repository Quota](#RepositoryQuota). |
 | Id | String | ID of the storage quota, for example: b5025a7b-5e13-41e2-a17e-9d9af985ecfd |
 
 Repository Quota
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | DisplayName | String | Friendly name of the cloud repository. |
 | RepositoryUid | UidType | UID of the backup repository on which the storage quota is created, for example: urn:veeam:Repository:82db96c3-445c-4a7e-9587-f2d523e839f4 |
 | WanAcceleratorUid | UidType | UID of the WAN accelerator used as a target WAN accelerator with the cloud repository quota. |
@@ -75,8 +79,9 @@ Repository Quota
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /cloud/tenants/{ID}/resources | Delete | URL for the [DELETE /cloud/tenants/{ID}/resources/{ID}](delete_tenants_id_resources_id.md) request. |
 | /cloud/tenants/{ID} | Up | URL of the [/cloud/tenants/{ID}](tenants_id.md) resource — a tenant that uses the cloud repository. |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server of the service provider. |
@@ -87,6 +92,7 @@ The example below returns a storage quota having ID 1c7c6cd7-0cd0-4e20-8d15-a94d
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/cloud/tenants/2ff85684-64ae-4db8-a5f3-373a2270c1cd/resources/1c7c6cd7-0cd0-4e20-8d15-a94d23299a93    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <CloudTenantResource xmlns="http://www.veeam.com/ent/v1.0" Type="CloudTenantResource" Href="https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89/resources/1c7c6cd7-0cd0-4e20-8d15-a94d23299a93" Id="1c7c6cd7-0cd0-4e20-8d15-a94d23299a93"> |
+| Request:  GET https://localhost:9398/api/cloud/tenants/2ff85684-64ae-4db8-a5f3-373a2270c1cd/resources/1c7c6cd7-0cd0-4e20-8d15-a94d23299a93  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <CloudTenantResource xmlns="http://www.veeam.com/ent/v1.0" Type="CloudTenantResource" Href="https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89/resources/1c7c6cd7-0cd0-4e20-8d15-a94d23299a93" Id="1c7c6cd7-0cd0-4e20-8d15-a94d23299a93">   <Links>     <Link Rel="Delete" Type="CloudTenantResource" Href="https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89/resources/1c7c6cd7-0cd0-4e20-8d15-a94d23299a93" Name="Cloud repository 3" />     <Link Rel="Up" Type="CloudTenant" Href="https://localhost:9398/api/cloud/tenants/4f90635a-7ecc-49fe-beb6-60b37eb4bd89?format=Entity" Name="ABC Company" />     <Link Rel="Up" Type="BackupServer" Href="https://localhost:9398/api/backupServers/8ea5406b-a6e9-42d9-bca5-44b6a5d94af1?format=Entity" Name="localhost" />   </Links>   <RepositoryQuota>     <DisplayName>Cloud repository 3</DisplayName>     <RepositoryUid>urn:veeam:Repository:82db96c3-445c-4a7e-9587-f2d523e839f4</RepositoryUid>     <Quota>1024</Quota>     <UsedQuota>0</UsedQuota>   </RepositoryQuota> </CloudTenantResource> |
 
+Page updated 2026-07-29
 

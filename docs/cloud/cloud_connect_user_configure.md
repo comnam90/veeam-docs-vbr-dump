@@ -3,8 +3,8 @@ title: "Setting Up Tenant Veeam Cloud Connect Infrastructure"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user_configure.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Setting Up Tenant Veeam Cloud Connect Infrastructure
@@ -27,4 +27,5 @@ Related Concepts
 
 [Veeam Cloud Connect Infrastructure](cloud_infrastructure.md)
 
+Page updated 2026-08-04
 

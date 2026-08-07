@@ -1,13 +1,13 @@
 ---
-title: "Using Self-Service File Restore Portal to Restore Machine Guest Files"
+title: "Using Self-Service File Restore Portal to Restore Guest Files"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_self_restore.html"
-last_updated: "5/4/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Using Self-Service File Restore Portal to Restore Machine Guest Files
+# Using Self-Service File Restore Portal to Restore Guest Files
 
 
 The Self-Service File Restore Portal is a web-based UI in Veeam Backup Enterprise Manager that lets users restore files from their own Windows machines. Users do not need any Enterprise Manager roles to use the portal. Access is granted automatically if the domain account of the user is identified as a local administrator on the protected machine.
@@ -64,4 +64,5 @@ Disabling Self-Service File Restore Portal
 
 You can prevent local administrators from accessing the self-service file restore functionality. You can do it by disabling Self-Service File Restore Portal. To disable the portal, change the Enterprise Manager registry key. For more information, contact [Veeam Customer Support](https://www.veeam.com/support.html).
 
+Page updated 2026-07-29
 

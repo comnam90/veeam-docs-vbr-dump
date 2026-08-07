@@ -3,8 +3,8 @@ title: "Start-VEHANADatabaseRestore"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/start-vehanadatabaserestore.html"
-last_updated: "3/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VEHANADatabaseRestore
@@ -95,7 +95,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -117,7 +117,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to restore a point-in-time state of an SAP HANA database to the original server. Note that in this example, the plug-in on the SAP HANA machine is managed by a protection group in Veeam Backup & Replication, so the GuestCredential and ApplicationCredential parameters are not used. The cmdlet will use the credentials specified in the backup policy.  |  | | --- | | $session = Get-VEHANARestoreSession  $system = Get-VEHANASystem -Session $session[0]  $database = (Get-VEHANADatabase -System $system)[0]  $pit = Get-Date -Date "2023-05-25 15:00:00"  $timezone = Get-TimeZone "Central Europe Standard Time"  $restore = Start-VEHANADatabaseRestore -Database $database -PointInTime $pit -TimeZone $timezone -ClearLog |  Perform the following steps:   1. Run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VEHANASystem](get-vehanasystem.md) cmdlet. Set the first restore session in the $session variable as the Session parameter value. 2. Run the [Get-VEHANADatabase](get-vehanadatabase.md) cmdlet and set the $system variable as the System parameter value. Select the necessary database returned by this command and save it to the $database variable. In this example, it is the first database in the array. 3. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time of the state to which you want to restore your database. Save the result to the $pit variable. 4. Run the [Get-TimeZone](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-timezone?view=powershell-7.5) cmdlet and specify the required time zone. Save the result to the $timezone variable. 5. Run the Start-VEHANADatabaseRestore cmdlet. Specify the following settings:  * Set the $database variable as the Database value. * Set the $pit variable as the PointInTime value. * Set the $timezone variable as the TimeZone value. * Provide the ClearLog parameter to remove all log segments in the log area and restore the database as of the last log backup before the selected point in time. Note that this may cause loss of in-memory data, so perform this action only if the log area is unavailable.   Save the result to the $restore variable to be able to use it with other cmdlets. |
+| This example shows how to restore a point-in-time state of an SAP HANA database to the original server. Note that in this example, the plug-in on the SAP HANA machine is managed by a protection group in Veeam Backup & Replication, so the GuestCredential and ApplicationCredential parameters are not used. The cmdlet will use the credentials specified in the backup policy.  |  | | --- | | $session = Get-VEHANARestoreSession  $system = Get-VEHANASystem -Session $session[0]  $database = (Get-VEHANADatabase -System $system)[0]  $pit = Get-Date -Date "2026-05-25 15:00:00"  $timezone = Get-TimeZone "Central Europe Standard Time"  $restore = Start-VEHANADatabaseRestore -Database $database -PointInTime $pit -TimeZone $timezone -ClearLog |  Perform the following steps:   1. Run the [Get-VEHANARestoreSession](get-vehanarestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VEHANASystem](get-vehanasystem.md) cmdlet. Set the first restore session in the $session variable as the Session parameter value. 2. Run the [Get-VEHANADatabase](get-vehanadatabase.md) cmdlet and set the $system variable as the System parameter value. Select the necessary database returned by this command and save it to the $database variable. In this example, it is the first database in the array. 3. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time of the state to which you want to restore your database. Save the result to the $pit variable. 4. Run the [Get-TimeZone](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-timezone?view=powershell-7.5) cmdlet and specify the required time zone. Save the result to the $timezone variable. 5. Run the Start-VEHANADatabaseRestore cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Set the $pit variable as the PointInTime value. * Set the $timezone variable as the TimeZone value. * Provide the ClearLog parameter to remove all log segments in the log area and restore the database as of the last log backup before the selected point in time. Note that this may cause loss of in-memory data, so perform this action only if the log area is unavailable.   Save the result to the $restore variable to be able to use it with other cmdlets. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Restoring Tenant Database to Another Server Using Backup Prefix
 
@@ -141,4 +141,5 @@ Related Commands
 * [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5)
 * [Read-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.5)
 
+Page updated 2026-06-08
 

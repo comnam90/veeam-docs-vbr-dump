@@ -3,14 +3,19 @@ title: "Backup Job Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_guest_scripts_unix.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Job Scripts
 
 
 You can specify custom backup job scripts that will be executed within the backup job session on Unix computers. Veeam Agent supports pre-job and post-job scripts that run on the Veeam Agent computer before and after the backup job session. To learn more about requirements for scripts, see [Backup Job Scripts](agents_backup_unix_scripts.md).
+
+|  |
+| --- |
+| Note |
+| If you use Veeam Backup & Replication on Linux, you must place the scripts into the /var/lib/veeam/scripts\* directory on the backup server.  If you use Veeam Backup & Replication on Windows, you can place the script files in any local folder on the backup server. |
 
 To specify custom scripts for the job:
 
@@ -27,4 +32,5 @@ Veeam Agent supports scripts in the SH file format. During the backup job sessio
 
 ![Backup Job Scripts](images/agent_policy_unix_scripts.webp)
 
+Page updated 2026-08-04
 

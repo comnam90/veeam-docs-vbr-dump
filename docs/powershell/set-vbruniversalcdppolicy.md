@@ -3,8 +3,8 @@ title: "Set-VBRUniversalCDPPolicy"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbruniversalcdppolicy.html"
-last_updated: "11/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRUniversalCDPPolicy
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRUniversalCDPPolicy -Policy <VBRUniversalCDPPolicy> [-SourceObject <VBRUniversalCDPSource[]>] [-ExcludedObject <VBRUniversalCDPSource[]>] [-Destination <IUniversalCdpDestination>] [-Name <string>] [-Description <string>] [-EnableNetworkMapping] [-NetworkMapping <VBRUniversalCDPNetworkMappingRule[]>] [-SourceProxy <VBRCDPProxy[]>] [-TargetProxy <VBRCDPProxy[]>] [-Suffix <string>] [-CompressionLevel {None | DedupeFriendly | Optimal | High | Extreme}] [-NotificationOptions <VBRNotificationOptions>] [-RetentionOptions <VBRCDPPolicyRetentionOptions>] [<CommonParameters>] |
+| Set-VBRUniversalCDPPolicy -Policy <VBRUniversalCDPPolicy> [-SourceObject <VBRUniversalCDPSource[]>] [-ExcludedObject <VBRUniversalCDPSource[]>] [-Destination <IUniversalCdpDestination>] [-Name <string>] [-Description <string>] [-EnableNetworkMapping] [-NetworkMapping <VBRUniversalCDPNetworkMappingRule[]>] [-SourceProxy <VBRCDPProxy[]>] [-TargetProxy <VBRCDPProxy[]>] [-Suffix <string>] [-CompressionLevel {None | DedupeFriendly | Optimal | High | Extreme}] [-NotificationOptions <VBRNotificationOptions>] [-RetentionOptions <VBRCDPPolicyRetentionOptions>] [-EnableReplicaSeeding] [-RepositorySeed <CBackupRepository>] [-EnableReplicaMapping] [-OriginalMachine <VBRDiscoveredComputer[]>] [-ReplicaMachine <VBRNamedObject[]>] [-EnableGuestProcessing] [-GuestProcessingOptions <VBRApplicationProcessingOptions[]>] [-ReIpRule <IViReIpRule[]>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,12 +35,13 @@ This cmdlet modifies settings of a universal CDP policy.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Policy | Specifies the universal CDP policy whose settings you want to change. | Accepts the VBRUniversalCDPPolicy object. To create this object, run the [Add-VBRUniversalCDPPolicy](add-vbruniversalcdppolicy.md) cmdlet. To get this object, run the [Get-VBRCDPPolicy](get-vbrcdppolicy.md) cmdlet. | True | Named | True |
+| Policy | Specifies the universal CDP policy whose settings you want to change. | Accepts the VBRUniversalCDPPolicy object. To create this object, run the [Add-VBRUniversalCDPPolicy](add-vbruniversalcdppolicy.md) cmdlet. To get this object, run the [Get-VBRCDPPolicy](get-vbrcdppolicy.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | SourceObject | Specifies the workloads or protection groups that you want to protect with universal CDP. | Accepts the VBRUniversalCDPSource[] object. To get this object, run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) or [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. | False | Named | False |
 | ExcludedObject | Specifies the array of workloads that you want to exclude from the universal CDP policy processing. | Accepts the VBRUniversalCDPSource[] object. To get this object, run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet. | False | Named | False |
-| Destination | Specifies the settings of the target location where the workloads will be replicated. | Accepts the IUniversalCdpDestination object. To get this object, run the [New-VBRUniversalCDPViDestination](new-vbruniversalcdpvidestination.md) cmdlet. | False | Named | False |
+| Destination | Specifies the settings of the target location where the workloads will be replicated. | Accepts the IUniversalCdpDestination object. To create this object, run the [New-VBRUniversalCDPViDestination](new-vbruniversalcdpvidestination.md) or [New-VBRUniversalCDPCloudDestination](new-vbruniversalcdpclouddestination.md) cmdlet. | False | Named | False |
 | Name | Specifies a name for the universal CDP policy. | String | False | Named | False |
 | Description | Specifies a description for the universal CDP policy. | String | False | Named | False |
 | EnableNetworkMapping | Defines if network mapping is enabled for the universal CDP policy. | SwitchParameter | False | Named | False |
@@ -51,6 +52,14 @@ Parameters
 | CompressionLevel | Specifies the compression level of the replicated data:   * None: use this option if you do not want to enable data compression. * Dedupe-friendly: use this option to set a dedupe-friendly compression level. * Optimal: use this option to set an optimal compression level. * High: use this option to set a high compression level. * Extreme: use this option to set an extreme compression level. | [VBRCompressionLevel](enums.md#VBRCompressionLevel) | False | Named | False |
 | NotificationOptions | Specifies notification settings of the universal CDP policy. | Accepts the VBRNotificationOptions object. To create this object, run the [New-VBRNotificationOptions](new-vbrnotificationoptions.md) cmdlet. | False | Named | False |
 | RetentionOptions | Specifies retention settings of the universal CDP policy. | Accepts the VBRCDPPolicyRetentionOptions object. To create this object, run the [New-VBRCDPPolicyRetentionOptions](new-vbrcdppolicyretentionoptions.md) cmdlet. | False | Named | False |
+| EnableReplicaSeeding | Defines if replica seeding is enabled for the universal CDP policy. | SwitchParameter | False | Named | False |
+| RepositorySeed | For replica seeding.  Specifies the backup repository that keeps a full backup of workloads that you want to replicate.  Note: Backups for seeding must be created by Veeam Agent for Linux or Veeam Agent for Microsoft Windows. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
+| EnableReplicaMapping | Defines if replica mapping is enabled for the universal CDP policy. | SwitchParameter | False | Named | False |
+| OriginalMachine | For replica mapping.  Specifies an array of production workloads that you want to replicate using replica mapping.  The universal CDP policy will map these workloads to the workloads in the disaster recovery site.  Use the ReplicaMachine parameter to specify the replicated workloads on the disaster recovery site. | Accepts the VBRDiscoveredComputer[] object. To get this object, run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet. | False | Named | False |
+| ReplicaMachine | For replica mapping.  Specifies an array of workloads on the disaster recovery site.  The cmdlet will map the production workloads to these workloads.  Use the OriginalMachine parameter to specify the production workloads. | Accepts the VBRNamedObject[] object. To get this object, run the [Get-VBRViVM](get-vbrvivm.md) , [Get-VBRViCloudVM](get-vbrvicloudvm.md) or [Get-VBRvCDCloudVM](get-vbrvcdcloudvm.md) cmdlet. | False | Named | False |
+| EnableGuestProcessing | Defines if guest processing is enabled for the universal CDP policy. | SwitchParameter | False | Named | False |
+| GuestProcessingOptions | Specifies the array of guest processing settings for the universal CDP policy. | Accepts the VBRApplicationProcessingOptions[] object. To create this object, run the [New-VBRApplicationProcessingOptions](new-vbrapplicationprocessingoptions.md) cmdlet. | False | Named | False |
+| ReIpRule | Specifies the array of re-IP rules. Use re-IP rules when the workloads must be replicated to a network with a different IP addressing scheme. | Accepts the IViReIpRule[] object. To get this object, run the [Get-VBRViReplicaReIpRule](get-vbrvireplicareiprule.md) cmdlet. | False | Named | False |
 
 <CommonParameters>
 
@@ -78,7 +87,8 @@ Perform the following steps:
 Related Commands
 
 * [Get-VBRCDPPolicy](get-vbrcdppolicy.md)
-* [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md)
+* [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 
+Page updated 2026-05-27
 

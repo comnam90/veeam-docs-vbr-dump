@@ -3,8 +3,8 @@ title: "/cdpReplicas/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/cdpreplicas_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /cdpReplicas/{ID}
@@ -46,7 +46,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CdpReplicaReference" Href="https://localhost:9398/api/cdpReplicas/7665222c-2e99-4a3f-b892-1827ba8d1eee" Name="CDP Policy 2" UID="urn:veeam:CdpReplica:7665222c-2e99-4a3f-b892-1827ba8d1eee"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CdpReplicaReference" Href="https://localhost:9398/api/cdpReplicas/7665222c-2e99-4a3f-b892-1827ba8d1eee" Name="CDP Policy 2" UID="urn:veeam:CdpReplica:7665222c-2e99-4a3f-b892-1827ba8d1eee">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/cca0b96b-4924-4461-8899-b831bc00176e" Name="enterprise03.tech.local" />     <Link Rel="Alternate" Type="CdpReplica" Href="https://localhost:9398/api/cdpReplicas/7665222c-2e99-4a3f-b892-1827ba8d1eee?format=Entity" Name="CDP Policy 2" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -54,4 +54,5 @@ Entity resource representation:
 | --- |
 | <CdpReplica xmlns="http://www.veeam.com/ent/v1.0" Type="CdpReplica" Href="https://localhost:9398/api/cdpReplicas/7665222c-2e99-4a3f-b892-1827ba8d1eee?format=Entity" Name="CDP Policy 2" UID="urn:veeam:CdpReplica:7665222c-2e99-4a3f-b892-1827ba8d1eee">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/cca0b96b-4924-4461-8899-b831bc00176e" Name="enterprise03.tech.local" />     <Link Rel="Down" Type="CdpReplicaVmReferenceList" Href="https://localhost:9398/api/cdpReplicas/7665222c-2e99-4a3f-b892-1827ba8d1eee/vms" />     <Link Rel="Up" Type="CdpPolicyReference" Href="https://localhost:9398/api/cdpPolicies/a3f2bc1b-b9d2-4c07-b15e-eefad1ba8701" Name="CDP Policy 2" />     <Link Rel="Alternate" Type="CdpReplicaReference" Href="https://localhost:9398/api/cdpReplicas/7665222c-2e99-4a3f-b892-1827ba8d1eee" Name="CDP Policy 2" />   </Links>   <BackupServer>enterprise03.tech.local</BackupServer>   <PolicyUid>a3f2bc1b-b9d2-4c07-b15e-eefad1ba8701</PolicyUid>   <PolicyName>CDP Policy 2</PolicyName> </CdpReplica> |
 
+Page updated 2026-07-29
 

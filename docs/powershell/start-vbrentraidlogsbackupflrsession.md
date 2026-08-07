@@ -3,8 +3,8 @@ title: "Start-VBREntraIDLogsBackupFLRSession"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrentraidlogsbackupflrsession.html"
-last_updated: "1/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBREntraIDLogsBackupFLRSession
@@ -35,10 +35,13 @@ After you gain the access, you can use this session to restore specific files an
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Backup | Specifies the backup from which you want to get access to logs. You can further restore files from this backup. | Accepts the VBREntraIdLogsBackup object. To get this object, run the [Get-VBREntraIDLogsBackup](get-vbrentraidlogsbackup.md) cmdlet. | True | Named | True (ByPropertyName, ByValue) |
 | Tenant | Specifies the tenant whose logs you want to access. | Accepts the VBREntraIDTenant object. To get this object, run the [Get-VBREntraIDTenant](get-vbrentraidtenant.md) cmdlet. | True | Named | True (ByPropertyName) |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will modify settings of managed file shares without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -76,5 +79,7 @@ Related Commands
 
 * [Get-VBREntraIdTenant](get-vbrentraidtenant.md)
 * [Get-VBREntraIDLogsBackup](get-vbrentraidlogsbackup.md)
+* [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md)
 
+Page updated 2026-06-29
 

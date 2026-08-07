@@ -3,8 +3,8 @@ title: "Disk Publishing (Data Integration API)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/data_integration_api.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Disk Publishing (Data Integration API)
@@ -39,8 +39,10 @@ You can publish disks from the following types of backups:
 * Backups of Scale Computing HyperCore VMs created by [Veeam Plug-in for Scale Computing HyperCore](sc_hypercore.md)
 
 * Backups of HPE Morpheus VM Essentials VMs created by [Veeam Plug-in for HPE Morpheus VM Essentials](hpe_morpheus_vme.md)
+* Backups of Xen VMs created by [Veeam Plug-in for Xen](xen.md)
+* Backups of Sangfor aSV VMs created by [Veeam Plug-in for Sangfor aSV](sangfor.md)
 
-\* - Available on Microsoft Windows-based backup server.​
+\* - Available on Microsoft Windows-based backup server.
 
 |  |
 | --- |
@@ -100,7 +102,7 @@ After you start the publishing session for disks with Linux, Unix or other file 
 
 1. Veeam Backup & Replication uses the FUSE protocol to publish the content of the backup automatically.
 
-The published disk images are available in the /tmp/Veeam.Mount.Disks location. The disk content is available in the /tmp/Veeam.Mount.FS location. Note that disk data is read-only.
+The published disk images are available in the  /run/media/Veeam.Mount.Disks location. The disk content is available in the  /run/media/Veeam.Mount.FS location. Note that disk data is read-only.
 
 After that, you can browse the disks and perform data analysis operations with them.
 
@@ -110,4 +112,5 @@ Mount Modes
 
 When you publish disks with Microsoft Windows file system from the UI, Veeam Backup & Replication automatically configures the iSCSI session and gives the target server (iSCSI initiator) access to the published disks. To manually start the iSCSI session from any server that has access to the iSCSI Target Server, you can use the [Publish-VBRBackupContent](https://helpcenter.veeam.com/docs/vbr/powershell/publish-vbrbackupcontent.html?ver=13) cmdlet.
 
+Page updated 2026-08-03
 

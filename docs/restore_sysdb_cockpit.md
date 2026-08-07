@@ -3,8 +3,8 @@ title: "Restoring SYSTEMDB (SAP HANA Cockpit)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sysdb_cockpit.html"
-last_updated: "4/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring SYSTEMDB (SAP HANA Cockpit)
@@ -54,7 +54,7 @@ To perform a Backint recovery of SYSTEMDB from a Veeam Plug-In backup, do the fo
 
 1. At the Specify Alternative Backup Locations step, if you want to use backups that are not in the backup catalog, specify their locations. You can also change the location for log backups.
 
-If you you leave the fields empty, SAP HANA will use the locations specified in the backup catalog.
+If you leave the fields empty, SAP HANA will use the locations specified in the backup catalog.
 
 [![Specify Alternative Backup Locations](images/plugins_sysdb_recovery_alternative_location.webp)](images/plugins_sysdb_recovery_alternative_location.webp "Specify Alternative Backup Locations")
 
@@ -70,4 +70,5 @@ If you you leave the fields empty, SAP HANA will use the locations specified in 
 
 [![Review Recovery Options](images/plugins_sysdb_recovery_review.webp)](images/plugins_sysdb_recovery_review.webp "Review Recovery Options")
 
+Page updated 2026-08-04
 

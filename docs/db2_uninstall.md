@@ -3,8 +3,8 @@ title: "Uninstalling Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_uninstall.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Uninstalling Plug-In
@@ -12,9 +12,17 @@ product_version: "13.0.1.2067"
 
 Installation scenario depends on the OS you work with:
 
-* [Uninstalling Veeam Plug-In on Linux machines](#linux).
+* [Microsoft Windows](#win)
+* [Linux](#linux)
 
-* [Uninstalling Veeam Plug-In on IBM AIX machines](#aix).
+* [IBM AIX](#aix)
+
+Uninstalling Veeam Plug-In on Windows Machines
+
+To uninstall Veeam Plug-In and undo the configuration changes, do the following:
+
+1. Open the Control Panel and click Programs and Features.
+2. In the list of programs, select Veeam Plug-In for IBM Db2 and click Uninstall.
 
 Uninstalling Veeam Plug-In on Linux Machines
 
@@ -28,11 +36,11 @@ For CentOS / RHEL / Oracle Linux, run the following commands:
 | --- |
 | rpm -e VeeamPluginforDB2 |
 
-1. To uninstall the veeam-openssl3 package:
+1. To uninstall the openssl-fips-redistributable-3.1.2 package:
 
 |  |
 | --- |
-| rpm -e veeam-openssl3-3.0.0.31-1.x86\_64 |
+| rpm -e openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64 |
 
 For SLES, run the following commands:
 
@@ -42,11 +50,11 @@ For SLES, run the following commands:
 | --- |
 | zypper rm VeeamPluginforDB2 |
 
-1. To uninstall the veeam-openssl3 package:
+1. To uninstall the openssl-fips-redistributable-3.1.2 package:
 
 |  |
 | --- |
-| zypper rm veeam-openssl3-3.0.0.31-1.x86\_64 |
+| zypper rm openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64 |
 
 For Ubuntu, run the following commands:
 
@@ -56,11 +64,11 @@ For Ubuntu, run the following commands:
 | --- |
 | apt-get remove VeeamPluginforDB2 |
 
-1. To uninstall the veeam-openssl3 package:
+1. To uninstall the openssl-fips-redistributable-3.1.2 package:
 
 |  |
 | --- |
-| apt-get remove veeam-openssl3\_3.0.0.31\_amd64 |
+| apt-get remove openssl-fips-redistributable-3.1.2\_3.1.2.2\_amd64 |
 
 Uninstalling Veeam Plug-In on IBM AIX Machines
 
@@ -70,4 +78,5 @@ To uninstall Veeam Plug-In and undo the configuration changes, run the following
 | --- |
 | rpm -e VeeamPluginforDB2 |
 
+Page updated 2026-07-28
 

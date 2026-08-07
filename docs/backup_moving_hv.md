@@ -3,8 +3,8 @@ title: "Backup Move"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_moving_hv.html"
-last_updated: "11/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Move
@@ -35,11 +35,11 @@ How Moving to Another Job Works
 
 When moving backups to another job, Veeam Backup & Replication performs the following:
 
-1. Disables the source and target jobs.
+1. Keeps the source and target jobs enabled, so they continue to protect their other workloads while the selected workloads are moved.
 2. If backups are moved within one repository without immutability, Veeam Backup & Replication invokes the native move method of the file system. This applies if the repository is Windows, Linux, CIFS, NFS, deduplicating storage appliance or a scale-out backup repository of one of the listed types. In other cases, Veeam Backup & Replication copies backup files of selected workloads to the repository where the target job saves backups.
 3. Excludes the selected workloads from being processed by the source job.
 4. Includes the selected workloads to be processed by the target job.
-5. After the successful move, Veeam Backup & Replication enables the source and target jobs. The target backup job continues the backup chain for the existing and moved backups.
+5. After the successful move, the target backup job continues the backup chain for the existing and moved backups.
 
 |  |
 | --- |
@@ -69,12 +69,12 @@ Consider the following:
 * You cannot move backups from encrypted jobs to unencrypted jobs and vice versa.
 * You cannot move backups imported without the metadata (.VBM) file.
 * You cannot launch the restore operation for backups that are being moved at the moment.
-* You cannot move backups from an HPE StoreOnce repository used as a target for a [backup copy for HPE StoreOnce repositories](backup_copy_hpe_storeonce.md).
+* You cannot move backups from an HPE StoreOnce repository used as a target for a [backup copy for HPE StoreOnce repositories](storage_copy_create.md).
 * [For Microsoft Windows-based backup servers] You cannot move backups created by backup copy jobs in the legacy periodic copy mode. To move backups, you first need to upgrade the backup format as described in section [Upgrading Backup Chain Formats](backup_copy_change_type.md).
 
 * After you move backups between backup copy jobs, Veeam Backup & Replication does not include and exclude workloads from the backup copy jobs. You should do that manually.
 
-* You cannot move backups created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md), Veeam Cloud Plug-Ins ([Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10), [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\*, [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)), [Veeam Plug-In for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9), [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*, [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3) and [Veeam Kasten](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13).
+* You cannot move backups created by [Veeam Plug-Ins for Enterprise Applications](protect_applications.md), Veeam Cloud Plug-Ins ([Veeam Backup for AWS](https://helpcenter.veeam.com/docs/vbaws/guide/overview.html?ver=10), [Veeam Backup for Google Cloud](https://helpcenter.veeam.com/docs/vbgc/guide/welcome.html?ver=7)\*, [Veeam Backup for Microsoft Azure](https://helpcenter.veeam.com/docs/vbazure/guide/overview.html?ver=8.1)), [Veeam Plug-In for Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9), [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*, [Veeam Plug-In for Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3) and [Veeam Kasten](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13).
 
 \* Available only for Microsoft Windows-based backup servers.
 
@@ -142,12 +142,13 @@ If you move workloads and their backups from a scale-out backup repository, the 
 
 * Veeam Backup & Replication moves backups only from the performance tier. If you want to move data from the capacity tier, you must first download it to the performance tier. For more information, see [Downloading Data from Capacity Tier](downloading_from_capacity_tier.md).
 * Veeam Backup & Replication does not support moving backups between extents of a scale-out backup repository. To learn how to manage backups within the scale-out backup repository, see [Scale-Out Backup Repositories](backup_repository_sobr.md).
-* Backups stored in the capacity and archive tiers are moved to the node with the (Orphaned) postfix. The backups are retained according to the retention settings of the job from which the backups were moved. If the retention period is set in days, the Veeam Backup & Replication retains the backups according to the configured retention and deletes the backups from the repository after the retention period ends. If the retention period is set in restore points, Veeam Backup & Replication leaves backup files in a backup chain. The minimum number of backup files left equals the current retention period. You can delete these backup files manually as described in section [Deleting Backups from Disk](delete_backup_from_disk_hv.md).
-* Veeam Backup & Replication does not move backups from extents in the Maintenance mode. These backups are deleted once the extents exit the Maintenance mode.
+* Backups stored in the capacity and archive tiers are moved to the node with the (Orphaned) postfix. The backups are retained according to the retention settings of the job from which the backups were moved. If the retention period is set in days, Veeam Backup & Replication retains the backups according to the configured retention and deletes the backups from the repository after the retention period ends. If the retention period is set in restore points, Veeam Backup & Replication leaves backup files in a backup chain. The minimum number of backup files left equals the current retention period. You can delete these backup files manually as described in section [Deleting Backups from Disk](delete_backup_from_disk_hv.md).
+* Veeam Backup & Replication does not move backups from extents in the Maintenance mode.
 
 Related Topics
 
 * [Moving Backups](move_backup_hv.md)
 * [Copying Backups](copy_backup_hv.md)
 
+Page updated 2026-07-30
 

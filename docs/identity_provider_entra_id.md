@@ -3,8 +3,8 @@ title: "Configuring SAML Authentication for Microsoft Entra ID"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/identity_provider_entra_id.html"
-last_updated: "4/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring SAML Authentication for Microsoft Entra ID
@@ -21,17 +21,17 @@ To obtain the service provider authentication settings, do the following:
 3. Select the Enable SAML authentication check box.
 4. In the Service Provider (SP) information section, do the following:
 
-1. Click Install to specify a valid server certificate. You can select an existing backup server certificate from the certificate store or import a certificate from a file. For more information, see [Backup Server Certificate](backup_server_certificate.md).
-2. Click Download to get an XML metadata file for Microsoft Entra ID. Alternatively, you can copy the service provider settings manually.
+1. Select a certificate to use. By default, the current backup server certificate is used. To use a different certificate, click Install and select an existing certificate from the certificate store or import a certificate from a file. For more information, see [Backup Server Certificate](backup_server_certificate.md).
+2. Click Download to get the service provider settings for Microsoft Entra ID. Veeam Backup & Replication exports the XML metadata file together with a separate file that contains the public part of the SP certificate. Alternatively, you can copy the service provider settings manually.
 
 |  |
 | --- |
 | Tip |
-| A service provider certificate is required to validate connections from the backup server to Microsoft Entra ID. The default Veeam Backup Server Certificate can be used for this. |
+| If a service provider certificate is required to validate connections from the backup server to Microsoft Entra ID, the current backup server certificate is used for this by default. |
 
 ![Configuring SAML Authentication for Microsoft Entra ID](images/identity_provider_entra_id_enablesaml.webp)
 
-Step 2. Set up Single Sign-On with SAML for Microsoft Entra ID application
+Step 2. Set up Single Sign-On with SAML for Microsoft Entra ID Application
 
 To set up single sign-on (SSO) with SAML in your Microsoft Entra ID, do the following:
 
@@ -53,7 +53,7 @@ To forward the service provider authentication settings to your Microsoft Entra 
 
 ![Configuring SAML Authentication for Microsoft Entra ID](images/identity_provider_entra_id_uploadmetadata.webp)
 
-Step 4. Create Claim for Microsoft Entra ID application
+Step 4. Create Claim for Microsoft Entra ID Application
 
 To authenticate an SSO user, Microsoft Entra ID sends a SAML authentication response to Veeam Backup & Replication. The SAML response contains an attribute that will be used by Veeam Backup & Replication to identify the user. To send the attributes required for user or group-based authentication, you must create the appropriate claim in Microsoft Entra ID.
 
@@ -100,7 +100,7 @@ To import the obtained Microsoft Entra ID identity provider settings to Veeam Ba
 3. In the Identity provider configuration section:
 
 1. In the Identity Provider information section, click Browse to locate the federation metadata file with the identity provider settings.
-2. Click Open
+2. Click Open.
 
 ![Configuring SAML Authentication for Microsoft Entra ID](images/saml_configure.webp)
 
@@ -117,9 +117,11 @@ To assign users that will be able to access Veeam Backup & Replication using SSO
 
 Step 8. Add External User or Group
 
-To add external users or groups to Veeam Backup & Replication and assign roles to them, do one of the following:
+You can add external users or groups and assign roles to them in the Veeam Backup & Replication console or web UI.
 
-* In the console:
+Adding External User or Group Using Console
+
+To add an external user or group in the Veeam Backup & Replication console, do the following:
 
 1. From the main menu, select Users & Roles.
 2. In the User & Roles window, select the Security tab.
@@ -129,7 +131,9 @@ To add external users or groups to Veeam Backup & Replication and assign roles t
 6. From the Role drop-down list, select the role that you want to assign to this user or group.
 7. Click OK.
 
-* In the web UI:
+Adding External User or Group Using Web UI
+
+To add an external user or group in the Veeam Backup & Replication web UI, do the following:
 
 1. From the top bar, select Configuration > Users & Roles.
 2. Click Add.
@@ -144,4 +148,5 @@ To add external users or groups to Veeam Backup & Replication and assign roles t
 1. From the Role drop-down list, select the role that you want to assign to this user or group.
 2. Click OK.
 
+Page updated 2026-07-28
 

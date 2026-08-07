@@ -3,8 +3,8 @@ title: "Editing Workers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_workers_edit.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Editing Workers
@@ -21,7 +21,7 @@ Alternatively, right-click the worker and select Properties.
 1. Complete the Edit oVirt KVM Worker wizard:
 
 1. To provide a new name and description for the worker, to change the storage domain where worker system files are stored, to specify a host where the worker is launched or to modify the number of tasks that the worker is able to handle in parallel, follow the instructions provided in section [Adding Workers](ovirt_workers_add_vm.md) (step 2).
-2. To change the network to which the worker is connected or to specify a new IP address for the worker, follow the instructions provided in section [Adding Workers](ovirt_workers_add_vm.md) (step 3).
+2. To change the network to which the worker is connected or to specify a new IP address for the worker, follow the instructions provided in section [Adding Workers](ovirt_workers_add_network.md) (step 3).
 3. To save changes made to the worker settings, click Finish.
 
 |  |
@@ -31,4 +31,5 @@ Alternatively, right-click the worker and select Properties.
 
 [![Editing Workers](images/ovirt_workers_edit.webp)](images/ovirt_workers_edit.webp "Editing Workers")
 
+Page updated 2026-07-24
 

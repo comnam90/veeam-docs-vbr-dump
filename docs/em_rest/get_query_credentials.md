@@ -3,8 +3,8 @@ title: "GET /query?type=Credentials"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_query_credentials.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /query?type=Credentials
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -39,8 +40,9 @@ Optional Parameters
 
 In the query, you can use the following parameters for filtering and sorting.
 
+Optional Parameters
+
 | Parameter | Type | Description |
-| --- | --- | --- |
 | Username | String | User name of the credentials record, for example: BACKUPSERVER\Administrator. |
 | Description | String | Description of the credentials record, for example: Administrator credentials. |
 | BackupServerUid | UidType | UID of the backup server on which the credentials record has been created, for example: urn:veeam:BackupServer:15942270-fb56-4dcc-96e9-5f80e4725a15. |
@@ -58,8 +60,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -73,6 +76,7 @@ The example below returns an entity resource representation of a collection of c
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/query?type=Credentials&format=Entities&filter=Username==administrator    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/query?type=Credentials&format=Entities&filter=Username==administrator  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0">   <Resources>     <CredentialsList>       <CredentialsInfo Type="Credentials" Href="https://localhost:9398/api/backupServers/beda8585-1354-451c-afe2-646dcf42afa6/credentials/2b20d9a3-4de9-4426-aa6a-1d8c00abd114">         <Links>           <Link Rel="Up" Type="BackupServer" Href="https://localhost:9398/api/backupServers/beda8585-1354-451c-afe2-646dcf42afa6?format=Entity" Name="backupsrv29.tech.local" />           <Link Rel="Edit" Type="Credentials" Href="https://localhost:9398/api/backupServers/beda8585-1354-451c-afe2-646dcf42afa6/credentials/2b20d9a3-4de9-4426-aa6a-1d8c00abd114" />           <Link Rel="Delete" Type="Credentials" Href="https://localhost:9398/api/backupServers/beda8585-1354-451c-afe2-646dcf42afa6/credentials/2b20d9a3-4de9-4426-aa6a-1d8c00abd114" />         </Links>         <Id>2b20d9a3-4de9-4426-aa6a-1d8c00abd114</Id>         <Username>administrator</Username>         <Description>administrator</Description>         <Password />       </CredentialsInfo>     </CredentialsList>   </Resources>   <PagingInfo PagesCount="1" PageSize="100" PageNum="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/query?type=Credentials&format=Entities&sortAsc=BackupServerUid&filter=Username==administrator&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/query?type=Credentials&format=Entities&sortAsc=BackupServerUid&filter=Username==administrator&pageSize=100&page=1" />     </Links>   </PagingInfo> </QueryResult> |
 
+Page updated 2026-07-29
 

@@ -3,8 +3,8 @@ title: "Scale-Out Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_repository_sobr.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Scale-Out Backup Repositories
@@ -62,4 +62,5 @@ In This Section
 * [Adding Scale-Out Backup Repositories](sobr_add.md)
 * [Managing Scale-Out Backup Repositories](managing_sobr_data.md)
 
+Page updated 2026-07-28
 

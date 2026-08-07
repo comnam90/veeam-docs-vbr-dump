@@ -3,8 +3,8 @@ title: "Upgrading Veeam Plug-In for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/update_mssql_plugin.html"
-last_updated: "4/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Upgrading Veeam Plug-In for Microsoft SQL Server
@@ -19,6 +19,8 @@ Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depen
 
 Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
 
+To restore data from a backup, the version of Veeam Plug-In must be the same or later than the version that created the backup. Restore with an earlier version of Veeam Plug-In from a backup created with a later version is not supported and may cause the restore to fail. This limitation applies to build numbers, not only major versions. For example, you cannot use Veeam Plug-In build 13.0.1.1071 to restore data from a backup created with build 13.0.1.2067.
+
 |  |
 | --- |
 | Important |
@@ -32,9 +34,9 @@ Before you upgrade Veeam Plug-In, do the following:
 |  |
 | --- |
 | Note |
-| If the Veeam Plug-In upgrade changes only the fourth number of the build version, the MSI installer cannot upgrade the existing installation directly. To install the new version, first uninstall the current version of Veeam Plug-In for Microsoft SQL Server. Then, install the new  Veeam Plug-In version.  For more information on uninstalling the current version of  Veeam Plug-In for Microsoft SQL Server, see [Uninstalling Veeam Plug-in for Microsoft SQL Server](uninstall_plugin_mssql.md). |
+| If the Veeam Plug-In upgrade changes only the fourth number of the build version, the MSI installer cannot upgrade the existing installation directly. To install the new version, first uninstall the current version of Veeam Plug-In for Microsoft SQL Server. Then, install the new  Veeam Plug-In version.  For more information on uninstalling the current version of Veeam Plug-In for Microsoft SQL Server, see [Uninstalling Veeam Plug-In for Microsoft SQL Server](uninstall_plugin_mssql.md). |
 
-After the upgrade, you do not need to re-run the Veeam Plug-In configuration wizard, the plug-in configuration files will be preserved.
+After the upgrade, you do not need to reconfigure Veeam Plug-In, the plug-in configuration files will be preserved.
 
 For instructions on how to upgrade Veeam Plug-In for Microsoft SQL Server, see:
 
@@ -84,4 +86,5 @@ Upgrading Veeam Plug-In in Unattended Mode
 
 You can upgrade Veeam Plug-In for Microsoft SQL Server to a later version in the unattended mode using the same command that is used for unattended installation. For details, see [Installing Veeam Plug-In in Unattended Mode](install_mssql_unattended.md).
 
+Page updated 2026-08-04
 
