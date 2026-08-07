@@ -3,8 +3,8 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plan_and_manage_requirements.html"
-last_updated: "6/3/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # System Requirements
@@ -24,9 +24,10 @@ Computer with Veeam Plug-In for Oracle RMAN
 
 | Specification | Requirement |
 | OS | Veeam Plug-In for Oracle RMAN is supported for the following Microsoft Windows versions:   * Microsoft Windows Server 2025  * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows Server 2012 R2   Veeam Plug-In for Oracle RMAN is supported for the following x86\_64 versions of Linux distributions:   * SUSE Linux Enterprise Server 12 SP5, 15 SP3 and SP7 (x86 and x86\_64) * RHEL 8.4 – 9.x and 10.0 including Extended Update Support Add-On * Oracle Linux 7 – 9.x * CentOS 6.4 – 8.x: For non-production environments, as it is not officially supported by Oracle for their databases.   Note: Veeam Plug-In for Oracle RMAN in managed operation mode is not supported for Oracle Solaris and IBM AIX. |
+| Cloud platforms | Veeam Plug-In for Oracle RMAN is supported on virtual machines running in the following cloud platforms, provided the virtual machine runs a supported OS:   * Oracle Cloud Infrastructure * Amazon EC2 * Microsoft Azure * Google Cloud Platform * Alibaba Cloud * IBM Cloud |
 | Software | [For Microsoft Windows computers] Microsoft .NET Framework 4.6 is included in the Veeam Plug-In for Oracle RMAN Redistributable. During the deployment process, Veeam Backup & Replication checks whether Microsoft .NET Framework 4.6 is available on the target computer. If Microsoft .NET Framework 4.6 is missing, Veeam Backup & Replication will install the missing software automatically.  [For Linux computers] The protected computer must have FUSE libraries installed:   * [For SLES] libfuse2 * [For RHEL, Oracle Linux and CentOS] fuse-libs |
-| Oracle database | Veeam Plug-In for Oracle RMAN supports Standard and Enterprise Editions of the following Oracle Database versions:   * Oracle Database 23ai * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c * Oracle Database 11g Release 2   The Oracle database configuration must meet the following requirements:   * Oracle database must be in the OPEN state. * Oracle database must work in the ARCHIVELOG mode.   Notes:   * Oracle Express Edition (XE) is not supported. * Oracle databases residing in OS-level containerized environments (for example: Docker, Podman) are not supported. * Support for Oracle Database 23ai is limited to virtual machines in cloud deployments (for example: Oracle Cloud Infrastructure, Oracle Exadata Cloud) and Oracle Engineered Systems (for example: Oracle Exadata, Oracle Database Appliance). |
-| Oracle RMAN features | Veeam Plug-In for Oracle RMAN supports the following Oracle RMAN features:   * Veeam Plug-In will be registered as an SBT\_TAPE device. All Oracle RMAN functionality that is supported with the SBT\_TAPE device type will work. For example, Automatic Storage Management (Oracle ASM) and Container DBs (CDBs). * Veeam Plug-In supports Oracle Real Application Clusters (Oracle RAC). Other cluster databases are not supported. |
+| Oracle database | Veeam Plug-In for Oracle RMAN supports Standard and Enterprise Editions of the following Oracle Database versions:   * Oracle Database 26ai * Oracle Database 23ai * Oracle Database 21c * Oracle Database 19c * Oracle Database 18c * Oracle Database 12c * Oracle Database 11g Release 2   The Oracle database configuration must meet the following requirements:   * Oracle database must be in the OPEN state. * Oracle database must work in the ARCHIVELOG mode.   Notes:   * Oracle Express Edition (XE) is not supported. * Oracle databases residing in OS-level containerized environments (for example: Docker, Podman) are not supported. * Support for Oracle Database 23ai is limited to virtual machines in cloud deployments (for example: Oracle Cloud Infrastructure, Oracle Exadata Cloud) and Oracle Engineered Systems (for example: Oracle Exadata, Oracle Database Appliance). |
+| Oracle RMAN features | Veeam Plug-In for Oracle RMAN supports the following Oracle RMAN features:   * Veeam Plug-In will be registered as an SBT\_TAPE device. All Oracle RMAN functionality that is supported with the SBT\_TAPE device type will work. For example, Automatic Storage Management (Oracle ASM) and Container DBs (CDBs).  * Veeam Plug-In supports backup and restore of Oracle databases that operate in clusters. For details, see [Support for Clusters](oracle_rman_overview_clusters.md). |
 
 Computer with Veeam Plug-In for SAP HANA
 
@@ -77,7 +78,9 @@ Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depen
 
 Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
 
-Veeam Backup & Replication version 13 (build 13.0.3.29-1-1) comes with the following Veeam Plug-Ins stored in the ISO file:
+To restore data from a backup, the version of Veeam Plug-In must be the same or later than the version that created the backup. Restore with an earlier version of Veeam Plug-In from a backup created with a later version is not supported and may cause the restore to fail. This limitation applies to build numbers, not only major versions. For example, you cannot use Veeam Plug-In build 13.0.1.1071 to restore data from a backup created with build 13.0.1.2067.
+
+Veeam Backup & Replication version 13 (build 13.1.0.411) comes with the following Veeam Plug-Ins stored in the ISO file:
 
 * Veeam Plug-In for SAP HANA
 * Veeam Plug-In for Oracle RMAN
@@ -98,4 +101,5 @@ If you plan to install Veeam Plug-Ins with Veeam Deployment Kit, Kerberos is not
 
 As NTLM is provided by Microsoft, only the Veeam Backup & Replication server running on the Microsoft Windows OS supports NTLM.
 
+Page updated 2026-08-05
 
