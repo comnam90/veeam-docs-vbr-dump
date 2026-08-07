@@ -3,14 +3,21 @@ title: "Managing Publishing Disks Session"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_publish_session.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Publishing Disks Session
 
 
 After you started a publishing session, you can check details about the session or stop it.
+
+You can manage a publishing session in one of the following ways:
+
+* [Using Veeam Backup & Replication Console](#console)
+* [Using Veeam Backup & Replication Web UI](#webui)
+
+Managing Publishing Disks Session Using Veeam Backup & Replication Console
 
 Viewing Statistics on Publishing Session
 
@@ -40,4 +47,27 @@ To stop a publishing session, do one of the following:
 
 [![Managing Publishing Disks Session](images/disk_publish_stop_agents.webp)](images/disk_publish_stop_agents.webp)
 
+Managing Publishing Disks Session Using Veeam Backup & Replication Web UI
+
+Viewing Statistics on Publishing Session
+
+When you click Finish in the Publish Disks wizard, the Disk Publish window opens automatically and shows the publishing session details: job progress, duration, status and a log of operations performed during the session.
+
+If the Disk Publish window has been closed, do the following:
+
+1. In the management pane, click Instant Recovery.
+2. Select the check box next to the necessary publishing session and click Properties on the toolbar. Alternatively, right-click the session and select Properties.
+
+[![View Publishing Disks Session Statistics](images/agents_disk_publish_statistics_web.webp)](images/agents_disk_publish_statistics_web.webp "View Publishing Disks Session Statistics")
+
+Stopping Publishing Session
+
+To stop a publishing session:
+
+1. In the management pane, under Action Required, click Instant Recovery.
+2. Select the check box next to the necessary publishing session and click Stop Publishing on the toolbar. Alternatively, right-click the session and select Stop Publishing.
+
+[![Stop Publishing Disks Session](images/agents_disk_publish_stop_web.webp)](images/agents_disk_publish_stop_web.webp "Stop Publishing Disks Session")
+
+Page updated 2026-07-29
 
