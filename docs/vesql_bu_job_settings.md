@@ -3,8 +3,8 @@ title: "Required Job Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_bu_job_settings.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Required Job Settings
@@ -26,7 +26,7 @@ Veeam Explorer for Microsoft SQL Server allows you to explore crash-consistent r
 
 Consider the following:
 
-* For backups made with [Veeam Backup for OLVM and RHV](https://helpcenter.veeam.com/docs/vbrhv/userguide/data_protection.html) and [Veeam Plug-in for Scale Computing HyperCore](https://helpcenter.veeam.com/docs/vpsch/userguide/data_protection.html), application-aware processing is not supported.
+* For backups created with [Veeam Backup for OLVM and RHV](olvm_rhv.md), [Veeam Plug-in for Sangfor aSV](sangfor.md) and [Veeam Plug-in for Universal Hypervisor API](universal_hypervisors.md), application-aware processing is not supported.
 * For VeeamZIP backups, application-aware processing is not supported. For more information, see [VeeamZIP](veeamzip.md).
 * For storage snapshots, application-aware processing is automatically enabled. For more information, see [Application Item Restore from Storage Snapshots](restore_veeam_explorers_snapshots.md).
 
@@ -37,11 +37,21 @@ You can create backups of Microsoft SQL Server databases using application backu
 * To create an application backup policy managed by Veeam Backup & Replication, do the following:
 
 1. Add the source Microsoft SQL Server machine to a protection group. For more information, see [Creating Protection Group for Individual Computers](protection_group_individual.md).
-2. Create an application backup policy using the protection group. For more information, see [Creating](create_policy_create_microsoft_sql_server.md) Microsoft SQL Server [Backup Policy](create_policy_create_microsoft_sql_server.md).
+2. Create an application backup policy using the protection group. For more information, see [Creating Microsoft SQL Server Backup Policy](create_policy_create_microsoft_sql_server.md).
 
 * To create a backup job managed by a standalone Veeam Plug-In for Microsoft SQL Server, you can create a backup job with the plug-in backup wizard or with the command-line interface. For more information, see [Performing Backup](mssql_protection.md).
 
-After the SQL plug-in backups are successfully created using one of these methods, you can use Veeam Plug-In for Microsoft SQL Server to restore your data.
+After the SQL plug-in backups are successfully created using one of these methods, you can use Veeam Explorer for Microsoft SQL Server to restore your data. You can also use the restore functionality of Veeam Plug-In for Microsoft SQL Server.
+
+RDS Backups Created with Veeam Backup for AWS
+
+You can create image-level backups of Amazon RDS instances for Microsoft SQL Server in the Veeam Backup & Replication console or in Veeam Backup for AWS.
+
+* For more details on how to create a backup policy in Veeam Backup & Replication, see [Creating Backup Policies](aws_add_policy.md).
+
+* For more details on how to create a backup policy in Veeam Backup for AWS, see [Creating RDS Backup Policies](aws_policies_create_rds.md).
+
+After the RDS backups are successfully created, you can use Veeam Explorer for Microsoft SQL Server to restore your data to an on-premise Microsoft SQL Server machine.
 
 Recovery Model
 
@@ -52,11 +62,13 @@ Recovery Model
 
 The following table lists database logging models and applicable options in Veeam Backup & Replication.
 
+Recovery Model
+
 | SQL DB Logging Model | Veeam Backup & Replication Options | | |
-| --- | --- | --- | --- |
 |  | Truncate logs | Do not truncate logs | Backup logs periodically |
 | Simple | Databases are skipped from processing. | Applicable option. | Databases are skipped from processing.  Log files do not grow (and do not need to be backed up). |
 | Full | Applicable option.  Veeam Backup & Replication performs "backup to NUL" for log files on guest. | Applicable but not recommended to use without native or 3rd party means of log truncation or backup – otherwise, logs will increase in size. | Applicable option. Log backup files (in the BAK format) are copied from the temporary folder on the Microsoft SQL Server machine to a backup repository. As soon as the data is copied to the target, BAK files are deleted from the source. |
 | Bulk-logged | Applicable option.  Veeam Backup & Replication performs "backup to NUL" for log files on guest. | Applicable but not recommended to use without native or 3rd party means of log truncation or backup – otherwise, logs will increase in size. | Applicable option. Log backup files (in the BAK format) are copied from the temporary folder on the Microsoft SQL Server machine to a backup repository. As soon as the data is copied to the target, BAK files are deleted from the source. |
 
+Page updated 2026-07-16
 
