@@ -3,8 +3,8 @@ title: "Operations Available on Linux Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations_linux.html"
-last_updated: "12/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Operations Available on Linux Computers
@@ -18,6 +18,7 @@ If Veeam Agent computer is protected by a backup job managed by either backup se
 * [Create Veeam Recovery Media](#recovery_media).
 * [Stop backup job](#stop_job).
 * [View session statistics](#job_stats).
+* [Connect to another Veeam backup server in read-only mode](#vbr_readonly).
 * [Perform restore](#restore).
 * [Manage operation mode](#manage_mode).
 * [Export logs](#logs).
@@ -102,6 +103,12 @@ Viewing Session Progress, Statistics and Results
 
 On the Veeam Agent computer side, you can view the statistics of the completed backup job and restore sessions from the Veeam Agent control panel or using the command line interface. You can also view the progress and statistics of a running session in real-time. The options of viewing session statistics do not differ from the same options for Veeam Agent operating in the standalone mode. For more information, see the [Reporting](https://helpcenter.veeam.com/docs/agentforlinux/userguide/reporting.html?ver=13) section in the Veeam Agent for Linux User Guide.
 
+Adding Second Veeam Backup Server in Read-Only Mode
+
+On the Veeam Agent computer side, you can connect Veeam Agent to another Veeam backup server in read-only mode. This will allow you to view backups stored in its repositories and restore data from them.
+
+For more information, see the [Connecting to Veeam Backup Server in Read-Only Mode](https://helpcenter.veeam.com/docs/agentforlinux/userguide/manage_vbr_add_readonly.html?ver=13) section in the Veeam Agent for Linux User Guide.
+
 Performing Restore
 
 The restore options for Veeam Agent operating in the managed mode are similar to the restore options for Veeam Agent operating in the standalone mode.
@@ -135,4 +142,5 @@ If you have any questions or want to share your feedback about Veeam Agent, you 
 
 * Visit [Veeam R&D Forums](https://forums.veeam.com) to share your opinion or ask a question.
 
+Page updated 2026-06-17
 
