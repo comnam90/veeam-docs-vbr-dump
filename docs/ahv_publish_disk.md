@@ -3,8 +3,8 @@ title: "Publishing Disks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_publish_disk.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Publishing Disks
@@ -24,4 +24,5 @@ Alternatively, expand the necessary backup job, select the VM and click Publish 
 
 [![Publishing disks](images/ahv_publish_disks.webp)](images/ahv_publish_disks.webp "Publishing disks")
 
+Page updated 2026-07-13
 
