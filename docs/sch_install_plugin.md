@@ -3,8 +3,8 @@ title: "Installing Veeam Plug-in for Scale Computing HyperCore Manually"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_install_plugin.html"
-last_updated: "3/4/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Veeam Plug-in for Scale Computing HyperCore Manually
@@ -12,7 +12,7 @@ product_version: "13.0.1.2067"
 
 [This section applies only to Windows-based backup servers]
 
-The pre-installed plug-in that comes with the default installation package of Veeam Backup & Replication allows you to protect Scale Computing HyperCore resources. However, you may require to install a new plug-in version on the backup server manually if some updates and patches become available.
+The pre-installed plug-in that comes with the default installation package of Veeam Backup & Replication allows you to protect Scale Computing HyperCore resources. However, you may need to install a new plug-in version on the backup server manually if some updates and patches become available.
 
 |  |
 | --- |
@@ -27,7 +27,7 @@ To install Veeam Plug-in for Scale Computing HyperCore, do the following:
 
 Before proceeding with installation, the installer will check whether you have Microsoft .NET Core Runtime installed on the backup server. In case the required version is missing, the installer will offer to install it automatically. To do that, click OK.
 
-1. At the License Agreement step of the Veeam Plug-in for Scale Computing HyperCore Setup wizard, read and accept both the Veeam license agreement, licensing policy, the 3rd party components and required software license agreement. If you reject the agreements, you will not be able to continue installation.
+1. At the License Agreement step of the Veeam Plug-in for Scale Computing HyperCore Setup wizard, read and accept the Veeam license agreement, licensing policy, the 3rd party components and required software license agreement. If you reject the agreements, you will not be able to continue installation.
 
 To read the documents included in the agreement, click the links of the documents.
 
@@ -41,4 +41,5 @@ To read the documents included in the agreement, click the links of the document
 
 ![Installing Veeam Plug-in for Scale Computing HyperCore Manually](images/sch_install_plugin_ready.webp "Installing RHV Plug-In")
 
+Page updated 2026-07-16
 
