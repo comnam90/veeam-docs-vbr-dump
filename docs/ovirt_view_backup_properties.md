@@ -3,8 +3,8 @@ title: "Viewing Backup Properties"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_view_backup_properties.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Viewing Backup Properties
@@ -37,4 +37,5 @@ Alternatively, select the backup job and click Properties on the ribbon.
 
 [![Viewing Backup Properties](images/ovirt_backup_properties.webp)](images/ovirt_backup_properties.webp "Viewing Backup Properties")
 
+Page updated 2026-07-10
 
