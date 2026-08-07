@@ -3,19 +3,14 @@ title: "Running Veeam PowerShell Session on Linux Machines"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/running_ps_sessions_linux.html"
-last_updated: "5/28/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Running Veeam PowerShell Session on Linux Machines
 
 
 Veeam Backup & Replication supports usage of Veeam Backup PowerShell on a Veeam Software Appliance or other Linux machines. To run cmdlets on a Veeam Software Appliance, you need to enable SSH connections and root shell access, and import the Veeam Backup PowerShell module. Before you run the cmdlets on a Linux machine, you must create an optional repository for the Veeam package, install the Veeam Backup PowerShell module and import it to your Linux system. After that, you can connect to the backup server.
-
-|  |
-| --- |
-| Important |
-| Connecting to a Microsoft Windows–based backup server from a remote Linux machine using Veeam Backup PowerShell is not supported. Veeam Backup PowerShell on Linux does not include an auto-update mechanism, so any version mismatch between the client and server will cause the connection to fail. |
 
 Requirements
 
@@ -36,7 +31,7 @@ Consider the following requirements:
 
 1. Install PowerShell. For more information, see [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/scripting/install/install-rhel?view=powershell-7.5).
 
-* To run Veeam Backup PowerShell cmdlets, you must have the Veeam Backup Administrator role. For more information, see [Users and Roles](https://helpcenter.veeam.com/docs/vbr/userguide/users_roles.html?ver=13).
+* To run Veeam Backup PowerShell cmdlets, you must have the Backup Administrator role. For more information, see [Users and Roles](https://helpcenter.veeam.com/docs/vbr/userguide/users_roles.html?ver=13).
 * A machine that runs the PowerShell session must have PowerShell version 7.4.7 installed.
 * To utilize the Veeam Explorer PowerShell functionality, you must install the necessary Veeam Explorer PowerShell modules. For more information, see [Starting PowerShell Sessions](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/ps_sessions.html?ver=13) in the Veeam Explorers PowerShell Reference.
 
@@ -71,7 +66,7 @@ To be able to perform operations Veeam Backup PowerShell on Linux machines, perf
 
 |  |
 | --- |
-| dnf install <https://repository.veeam.com/rocky/9.2/vbr/13.0/optional/x86_64/veeam-optional-release-latest-13.0.2.29-1.x86_64.rpm> -y |
+| dnf install <https://repository.veeam.com/vsa/9.6/vbr/13.1/mandatory/x86_64/veeam-optional-release-latest-13.1.0.411-1.x86_64.rpm> -y |
 
 1. Install the Veeam Backup PowerShell Module:
 
@@ -97,4 +92,5 @@ To be able to perform operations Veeam Backup PowerShell on Linux machines, perf
 | --- |
 | Connect-VBRServer -Server "192.24.125.135" -User "veeamadmin" -Password "Password" |
 
+Page updated 2026-07-30
 
