@@ -3,8 +3,8 @@ title: "Solution Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_architecture.html"
-last_updated: "3/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Solution Architecture
@@ -44,4 +44,5 @@ A cache repository is a storage location where Veeam Backup for Microsoft Entra 
 
 [![Launch Audit Log Restore](images/entra_id_architecture.webp)](images/entra_id_architecture.webp "Launch Audit Log Restore")
 
+Page updated 2026-06-23
 
