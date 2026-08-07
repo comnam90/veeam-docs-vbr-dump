@@ -3,8 +3,8 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/system_requirements.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # System Requirements
@@ -17,7 +17,7 @@ Cloud Gateway
 Cloud Gateway
 
 | Specification | Requirement |
-| Hardware | CPU: x86 or x86-64 processor with 8 cores (vCPUs) minimum.  Memory: 8 GB RAM for up to 500 concurrent tenant tasks.  Disk Space: 300 MB for Cloud Gateway service installation.  Note: Disk requirements differ for cloud gateways deployed with the Veeam Infrastructure Appliance. For details, see the [Veeam Infrastructure Appliance](https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_via.html?ver=13) section in the Veeam Backup & Replication User Guide.  Network: 1 Gbps LAN or faster. |
+| Hardware | CPU: x86 or x86-64 processor with 8 cores (vCPUs) minimum.  Memory: 16 GB RAM for up to 500 concurrent tenant tasks.  Disk Space: 300 MB for Cloud Gateway service installation.  Note: Disk requirements differ for cloud gateways deployed with the Veeam Infrastructure Appliance. For details, see the [Veeam Infrastructure Appliance](https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements_via.html?ver=13) section in the Veeam Backup & Replication User Guide.  Network: 1 Gbps LAN or faster. |
 | OS | 64-bit versions of the following Microsoft Windows operating systems are supported, including Core edition:   * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows 11 (versions 22H2 – 25H2) * Microsoft Windows 10 (version 22H2) * Microsoft Windows 10 LTS (version LTSC 2021)   64-bit versions of the following Linux distributions are supported:   * RHEL 9.6 * Veeam Infrastructure Appliance |
 
 SP Veeam Backup Server
@@ -29,7 +29,7 @@ In addition to requirements listed in the Veeam Backup & Replication User Guide,
 SP Veeam Backup Server
 
 | Specification | Requirement |
-| Hardware | Memory: 8 GB RAM minimum, 16 GB RAM for installations with more than 100 parallel tenant tasks. |
+| Hardware | Memory: 16 GB RAM minimum. |
 | OS | 64-bit versions of the following Microsoft Windows operating systems are supported:   * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows 11 (versions 22H2 – 25H2) * Microsoft Windows 10 (version 22H2) * Microsoft Windows 10 LTS (version LTSC 2021) |
 
 |  |
@@ -42,7 +42,7 @@ The following recommendations help improve data processing performance for the S
 SP Veeam Backup Server
 
 | Specification | Recommendation |
-| SQL Database | It is recommended to use an SQL database installed on a dedicated server.  The following versions of PostgreSQL are supported:   * PostgreSQL 17.x (PostgreSQL 17.6 is included in the Veeam Backup & Replication 13 setup, but we strongly recommend to [download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and install the latest PostgreSQL 17.x version) * PostgreSQL 15.x * PostgreSQL 14.x   The following versions of Microsoft SQL Server are supported:   * Microsoft SQL Server 2022 Standard or Enterprise Edition * Microsoft SQL Server 2019 Standard or Enterprise Edition * Microsoft SQL Server 2017 Standard or Enterprise Edition * Microsoft SQL Server 2016 Standard or Enterprise Edition |
+| SQL Database | It is recommended to use an SQL database installed on a dedicated server.  The following versions of PostgreSQL are supported:   * PostgreSQL 17.x (PostgreSQL 17.6 is included in the Veeam Backup & Replication 13 setup, but we strongly recommend to [download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and install the latest PostgreSQL 17.x version) * PostgreSQL 15.x * PostgreSQL 14.x   The following versions of Microsoft SQL Server are supported:   * Microsoft SQL Server 2025 Standard or Enterprise Edition * Microsoft SQL Server 2022 Standard or Enterprise Edition * Microsoft SQL Server 2019 Standard or Enterprise Edition * Microsoft SQL Server 2017 Standard or Enterprise Edition * Microsoft SQL Server 2016 Standard or Enterprise Edition |
 
 For installations with high loads (up to 1,000 parallel tenant tasks), consider performance tuning. To learn more, see [this Veeam KB article](https://www.veeam.com/kb4217).
 
@@ -69,4 +69,5 @@ WAN Accelerator
 
 To learn about system requirements for WAN accelerators deployed on the SP side and on tenant side, see the [System Requirements](https://helpcenter.veeam.com/docs/vbr/userguide/system_requirements.html?ver=13#wan) section in the Veeam Backup & Replication User Guide.
 
+Page updated 2026-07-30
 
