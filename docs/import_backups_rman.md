@@ -3,8 +3,8 @@ title: "Importing Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_backups_rman.html"
-last_updated: "1/19/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Importing Backup Files
@@ -50,13 +50,13 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 
 1. On the Oracle server, use the terminal to set the new repository as a target in the Veeam Plug-In settings:
 
-* For Windows:
+* For Microsoft Windows:
 
 |  |
 | --- |
-| "%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool" --set-repositories  Available backup repositories: |
+| "%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool" --set-repositories  Available backup repositories: 1. serv55.tech.local 2. serv07\_repo Enter repository number: 1 |
 
-* For Linux and Unix:
+* For Linux or Unix:
 
 |  |
 | --- |
@@ -69,16 +69,17 @@ During the rescan operation, Veeam Backup & Replication gathers information abou
 | Note |
 | After you import the backup, map the imported backup to continue to back up to this repository. Using the Veeam Plug-In configuration tools, select the new repository as the target. |
 
-* For Windows:
+* For Microsoft Windows:
 
 |  |
 | --- |
 | "%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANConfigTool" --map-backup |
 
-* For Linux and Unix:
+* For Linux or Unix:
 
 |  |
 | --- |
 | OracleRMANConfigTool --map-backup |
 
+Page updated 2026-07-31
 
