@@ -3,8 +3,8 @@ title: "Before You Begin"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/subtenant_vcd_create_before.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Before You Begin
@@ -16,4 +16,5 @@ Before you add a new subtenant account, check the following prerequisites:
 * You can allocate only one storage quota per subtenant account. To provide a user with multiple quotas on the same or different cloud repositories, you must create different subtenant accounts for the same user.
 * The Cloud Director user account that you plan use as a subtenant account must be created for the organization in VMware Cloud Director.
 
+Page updated 2026-08-04
 
