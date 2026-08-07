@@ -1,18 +1,23 @@
 ---
-title: "Remove-VBRCatalystCopyJob"
+title: "Remove-VBRCatalystCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/remove-vbrcatalystcopyjob.html"
-last_updated: "5/7/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Remove-VBRCatalystCopyJob
+# Remove-VBRCatalystCopyJob (obsolete)
 
 
 Short Description
 
 Removes backup copy jobs for HPE StoreOnce repositories.
+
+|  |
+| --- |
+| Note |
+| This cmdlet is obsolete. Run the [Remove-VBRStorageCopyJob](remove-vbrstoragecopyjob.md) cmdlet instead. |
 
 Applies to
 
@@ -30,8 +35,9 @@ This cmdlet removes backup copy jobs for HPE StoreOnce repositories.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies an array of backup copy jobs for HPE StoreOnce repositories. The cmdlet will remove these jobs. | Accepts the VBRCatalystCopyJob[] object. To get this object, run the [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | WhatIf | Defines whether the cmdlet writes a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
 | Confirm | Defines whether the cmdlet displays a prompt that asks if the user is sure that they want to continue.  Note: Microsoft PowerShell enables the Confirm parameter for this cmdlet by default. To disable this option, set the parameter value to $false. That is, Confirm:$false. | SwitchParameter | False | Named | False |
@@ -61,4 +67,5 @@ Related Commands
 
 [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md)
 
+Page updated 2026-06-12
 
