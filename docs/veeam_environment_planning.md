@@ -3,8 +3,8 @@ title: "Veeam Environment Planning"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_environment_planning.html"
-last_updated: "6/10/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Environment Planning
@@ -16,14 +16,19 @@ Hosting Environments and Backup Job Names
 
 By default, for standalone servers, Veeam Plug-In uses the Oracle server hostname to create the name for the Veeam Backup & Replication backup job and backup folder. In some cases, different standalone servers can have the same hostname in multiple environments. The procedure below describes how to differentiate between standalone server names.
 
-Keep in mind that for servers in Oracle RAC environments, Veeam Backup & Replication generates the backup job name based on the single client access name (SCAN) of the cluster. For more information about backup job naming methods, see [Veeam Backup Job Name](#jname).
+Keep in mind that for servers in Oracle cluster environments, Veeam Backup & Replication generates the backup job name based on the single client access name (SCAN) of the cluster. For more information about backup job naming methods, see [Veeam Backup Job Name](#jname).
 
 To identify standalone servers, update the Veeam configuration XML file as follows:
 
 1. Open the Veeam configuration XML file. The path to the file differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN/veeam\_config.xml
-* On machines running Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\veeam\_config.xml
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN/veeam\_config.xml
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\veeam\_config.xml
 
 1. Add one of the following parameters to the <PluginParameters /> line in the Veeam configuration XML file:
 
@@ -66,8 +71,13 @@ To ignore network traffic encryption rules, do the following:
 
 1. Locate the Veeam configuration XML file. The path to the file differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN/veeam\_config.xml
-* On machines running Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\veeam\_config.xml
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN/veeam\_config.xml
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\veeam\_config.xml
 
 1. Add the following parameter to the Veeam configuration XML file:
 
@@ -84,4 +94,5 @@ Consider the following:
 * On the Veeam Backup & Replication server, the backup job name will be created automatically based on the server or cluster name and selected repository.
 * For environments that use Oracle RMAN copy processing, one job per repository is created.
 
+Page updated 2026-07-31
 
