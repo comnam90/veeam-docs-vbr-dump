@@ -3,8 +3,8 @@ title: "Solution Architecture"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_infrastructure_components.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Solution Architecture
@@ -24,7 +24,7 @@ The oVirt KVM Manager is a Linux-based physical or virtual machine that manages 
 
 Backup Server
 
-The backup server is a Windows-based physical or virtual machine on which Veeam Backup & Replication is installed. The backup server is the configuration, administration and management core of the backup infrastructure. It coordinates backup and restore operations, controls job scheduling and manages resource allocation.
+A backup server is either a Windows-based or Linux-based machine (either physical or virtual) on which Veeam Backup & Replication is installed. The backup server is the configuration, administration and management core of the backup infrastructure. It coordinates backup and restore operations, controls job scheduling and manages resource allocation.
 
 Veeam Plug-In for oVirt KVM
 
@@ -42,4 +42,5 @@ A worker is an auxiliary Linux-based VM that resides in the cluster and processe
 
 [![Architecture Overview](images/ovirt_infrastructure_components.webp)](images/ovirt_infrastructure_components.webp "Architecture Overview")
 
+Page updated 2026-07-06
 
