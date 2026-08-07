@@ -3,8 +3,8 @@ title: "Restoring Veeam Agent Backup to Nutanix VM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/integration_instant_restore_nutanix.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Veeam Agent Backup to Nutanix VM
@@ -29,8 +29,9 @@ If you restore a Veeam Agent computer to a Nutanix AHV VM, consider the followin
 
 Restore to Nutanix AHV
 
-The procedure of restore from a Veeam Agent backup to Nutanix AHV does not differ from the same procedure for a VM. To learn more about restore to Nutanix AHV, see the [Performing VM Restore](https://helpcenter.veeam.com/docs/vbahv/userguide/restore_to_ahv.html?ver=8) section in the Veeam Plug-in for Nutanix AHV User Guide.
+The procedure of restore from a Veeam Agent backup to Nutanix AHV does not differ from the same procedure for a VM. To learn more about restore to Nutanix AHV, see [VM Restore](ahv-vm-restore.md).
 
 [![Restore Veeam Agent Backup to Nutanix VM](images/am_agent_restore_nutanix.webp)](images/am_agent_restore_nutanix.webp "Restore Veeam Agent Backup to Nutanix VM")
 
+Page updated 2026-07-29
 
