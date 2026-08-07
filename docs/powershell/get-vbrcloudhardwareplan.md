@@ -3,8 +3,8 @@ title: "Get-VBRCloudHardwarePlan"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrcloudhardwareplan.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRCloudHardwarePlan
@@ -52,11 +52,12 @@ You can get the list of all hardware plans or search for instances directly by n
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Name | Specifies the array of the hardware plan names you want to get. | String[] | False | Named | True (ByValue, |
+| Name | Specifies the array of the hardware plan names you want to get. | String[] | False | Named | True (ByValue, ByProperty Name) |
 | Platform | Specifies the platform of the hardware plan:   * VMWare * HyperV * vCD * LinuxPhysical * WindowsPhysical * Tape * CustomPlatform | VBRPlatform | False | Named | True (ByProperty Name) |
-| ID | Specifies the array of the IDs of the [VBRViCloudHardwarePlan](vbrvicloudhardwareplan.md) or [VBRHvCloudHardwarePlan](vbrhvcloudhardwareplan.md) object you want to get. | Accepts GUID[] or string[]. | True | Named | True (ByValue, ByProperty Name) |
+| ID | Specifies the array of the IDs of the [VBRViCloudHardwarePlan](vbrvicloudhardwareplan.md) or [VBRHvCloudHardwarePlan](vbrhvcloudhardwareplan.md) object you want to get.  Accepts Guid[] or String[]. | Guid[] | True | Named | True (ByValue, ByProperty Name) |
 
 <CommonParameters>
 
@@ -99,4 +100,5 @@ Examples
 | --- | --- |
 | This command returns a Hyper-V hardware plan named Hyper-V Silver.  |  | | --- | | Get-VBRCloudHardwarePlan -Name "Hyper-V Silver" -Platform HyperV | |
 
+Page updated 2026-06-24
 
