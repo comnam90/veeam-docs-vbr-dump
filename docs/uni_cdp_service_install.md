@@ -3,8 +3,8 @@ title: "Installing CDP Agent Service and Filter Driver"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/uni_cdp_service_install.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing CDP Agent Service and Filter Driver
@@ -27,15 +27,24 @@ To install the Veeam CDP Agent Service and Veeam CDP Volume Filter Driver on wor
 1. Enter a full DNS name, NetBIOS name or IP address of the workload that you want to add to the protection group.
 2. Select Connect using admin credentials and specify the credentials of a user who has administrative permissions on the workload.
 
+If you plan to use guest processing during CDP, the account must also have permissions described in section [Permissions](permissions_guest_processing.md#veo).
+
 1. At the Options step, do the following:
 
 1. Select Install CDP agent to install the Veeam CDP Agent Service and Veeam CDP Volume Filter Driver.
+
+|  |
+| --- |
+| Important |
+| Veeam CDP Agent Service and Veeam CDP Volume Filter Driver are compatible only with the nosnap backup agent. If you plan to back up Linux workloads using Veeam Agent for Linux, make sure that the Install nosnap agent check box is selected. |
+
+1. Select Enable auto-update for installed components to keep the agent and driver updated.
 2. Select Perform reboot automatically if required to allow Veeam Backup & Replication to reboot the workload automatically.
 
 |  |
 | --- |
 | Note |
-| The universal CDP will not work until you reboot the workload after the CDP agent service and driver installation. |
+| For Microsoft Windows-based workloads, the universal CDP will not work until you reboot the workload after the CDP agent service and driver installation. For Linux-based workloads, reboot is not needed. |
 
 1. Click Next.
 
@@ -43,4 +52,5 @@ For the full description of the protection group options, see [Creating Protecti
 
 ![Installing CDP Agent Service and Filter Driver](images/cdp_guest_filter.webp)
 
+Page updated 2026-06-12
 
