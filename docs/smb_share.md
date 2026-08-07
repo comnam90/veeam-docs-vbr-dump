@@ -3,8 +3,8 @@ title: "SMB (CIFS) Share"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/smb_share.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SMB (CIFS) Share
@@ -33,7 +33,9 @@ The role of an SMB repository can be assigned to a Microsoft Windows machine (ph
 
 Related Topics
 
+* [Immutability for SMB Backup Repositories](smb_immutability.md)
 * [Adding SMB (CIFS) Repositories](smb_repository_add.md)
 * [Gateway Servers](gateway_server.md)
 
+Page updated 2026-07-20
 
