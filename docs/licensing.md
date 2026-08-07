@@ -3,8 +3,8 @@ title: "Licensing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/licensing.html"
-last_updated: "12/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Licensing
@@ -36,7 +36,7 @@ Socket Licensing
 |  |
 | --- |
 | Important |
-| Socket licensing is not available if you use a Veeam Software Appliance as a backup server. |
+| Socket licensing is not available if you use a Linux-based backup server. |
 
 With the socket licensing model, Veeam Backup & Replication is licensed by the number of CPU sockets on protected hosts. For more information, see [Veeam Licensing Policy](https://www.veeam.com/licensing-policy.html).
 
@@ -126,4 +126,5 @@ In This Section
 * [Updating License](license_update.md)
 * [Automatic License Usage Reporting](automatic_usage_logging.md)
 
+Page updated 2026-08-06
 
