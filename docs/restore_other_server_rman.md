@@ -3,12 +3,14 @@ title: "Restore to Another Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_other_server_rman.html"
-last_updated: "6/15/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Another Server
 
+
+Prev1/4Next
 
 If you want to restore Oracle databases from a Veeam Plug-In backup to another server, see [this Oracle article](https://docs.oracle.com/en/database/oracle/oracle-database/21/bradv/rman-recovery-advanced.html#GUID-6B71E7DF-A2B6-44F5-A8D5-B184BB41A768) and consider the specifics described in this section.
 
@@ -40,34 +42,34 @@ To obtain a backup ID, do the following:
 
 The following examples show scripts for restoring the control file and restoring the Oracle database to another server using the SEND command in different OSes:
 
-* For Linux and Unix machines:
+* For Linux or Unix:
 
 |  |
 | --- |
-| RUN {       ALLOCATE CHANNEL ch1 TYPE sbt\_tape PARMS "SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so";      SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";      SET CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE 'SBT\_TAPE' TO '%F\_RMAN\_AUTOBACKUP.vab';      RESTORE controlfile FROM 'c-4097408439-20200410-00\_RMAN\_AUTOBACKUP.vab';  }  EXIT; |
+| RUN {       ALLOCATE CHANNEL ch1 TYPE sbt\_tape PARMS "SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so";       SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";       SET CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE 'SBT\_TAPE' TO '%F\_RMAN\_AUTOBACKUP.vab';       RESTORE controlfile FROM 'c-4097408439-20200410-00\_RMAN\_AUTOBACKUP.vab';  }  EXIT; |
 
-* For Microsoft Windows machines:
+* For Microsoft Windows:
 
 |  |
 | --- |
-| RUN {       ALLOCATE CHANNEL ch1 TYPE sbt\_tape PARMS "SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll";      SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";      SET CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE 'SBT\_TAPE' TO '%F\_RMAN\_AUTOBACKUP.vab';      RESTORE controlfile FROM 'c-4097408439-20200410-00\_RMAN\_AUTOBACKUP.vab';  }  EXIT; |
+| RUN {       ALLOCATE CHANNEL ch1 TYPE sbt\_tape PARMS "SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll";       SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";       SET CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE 'SBT\_TAPE' TO '%F\_RMAN\_AUTOBACKUP.vab';       RESTORE controlfile FROM 'c-4097408439-20200410-00\_RMAN\_AUTOBACKUP.vab';  }  EXIT; |
 
 Consider the following:
 
 * If you do not use the SEND command, Veeam Plug-In will restore data from a backup created for the server on which Veeam Plug-In is currently running instead of restoring data from a backup created on another server.
 * If you restore an Oracle database using the DUPLICATE command, the SEND command must be a part of the ALLOCATE CHANNEL command. During duplication, RMAN reallocates channels multiple times. The SEND command inside the ALLOCATE CHANNEL command ensures that RMAN applies the srcBackup parameter on each reallocation.
 
-* For Linux and Unix machines:
+* For Linux or Unix:
 
 |  |
 | --- |
-| RUN {       ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt\_tape PARMS "SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so" SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";       DUPLICATE TARGET DATABASE TO DB01;     }  EXIT; |
+| RUN {        ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt\_tape PARMS "SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so" SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";        DUPLICATE TARGET DATABASE TO DB01;      }  EXIT; |
 
-* For Microsoft Windows machines:
+* For Microsoft Windows:
 
 |  |
 | --- |
-| RUN {       ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt\_tape PARMS "SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll" SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";       DUPLICATE TARGET DATABASE TO DB01;     }  EXIT; |
+| RUN {        ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt\_tape PARMS "SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll" SEND "srcBackup=6109d377-93b5-4741-a796-03471d2795cd";        DUPLICATE TARGET DATABASE TO DB01;      }  EXIT; |
 
 * For restore to another server, you can use either backups or backup copies of Oracle databases.
 * If you perform restore from a backup that was imported to Veeam Backup & Replication, Veeam Plug-In will automatically create the backup job in Veeam Backup & Replication.
@@ -91,8 +93,13 @@ To restore a database to another server, you can specify credentials of a user a
 
 1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
-* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
 
 1. Run the following command:
 
@@ -104,7 +111,7 @@ To restore a database to another server, you can specify credentials of a user a
 
 If you want to access the backup using account credentials, the account must meet the following requirements:
 
-* The account must either have the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles. You can also use the account under which the backup was created. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
+* The account must either have the Backup Administrator, or both the Backup Operator and Restore Operator roles. You can also use the account under which the backup was created. For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
 * The account must have access permissions to the backup repository where the backup is stored. For more information, see [Access and Encryption Settings on Repositories](repository_permissions_rman.md).
 
 To access the backup using account credentials, type 1:
@@ -127,8 +134,13 @@ You can restore a database to another server using a recovery token generated in
 
 1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
-* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
 
 1. Run the following command:
 
@@ -156,8 +168,13 @@ After you specify authentication settings to access the backup from which you wa
 
 1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your machine. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
-* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
 
 1. Run the following command:
 
@@ -167,7 +184,7 @@ After you specify authentication settings to access the backup from which you wa
 
 1. Veeam Plug-In will display backups available for restore. The list of backups depends on the authentication settings that you specified:
 
-* If you specified credentials of a user account that has the Veeam Backup Administrator or Veeam Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
+* If you specified credentials of a user account that has the Backup Administrator or Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
 * If you specified a recovery token, Veeam Plug-In displays backups for which the recovery token was generated.
 
 Select the backup to obtain the backup ID:
@@ -176,4 +193,5 @@ Select the backup to obtain the backup ID:
 | --- |
 | Select backup to be used: 1. Backup1 Oracle backup (Default Backup Repository) 2. Backup2 Oracle backup (Default Backup Repository) 3. Backup3 Oracle backup (Default Backup Repository) Enter backup number: 3 To perform restore operations, use ID of the selected backup from the example below as srcBackup parameter value in SEND command: ALLOCATE CHANNEL ch1 DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so'; SEND 'srcBackup=6109d377-93b5-4741-a796-03471d2795cd'; |
 
+Page updated 2026-07-31
 
