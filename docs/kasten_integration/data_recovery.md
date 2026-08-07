@@ -3,18 +3,18 @@ title: "Data Recovery"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/data_recovery.html"
-last_updated: "8/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Data Recovery
 
 
-Veeam Plug-In for Kasten offers the following recovery options for various disaster recovery scenarios:
+Veeam Plug-in for Kasten offers the following recovery options for various disaster recovery scenarios:
 
 * [Restoring to Kubernetes](restoring_kasten.md)
 
-Restores applications to the Kubernetes cluster (using the Veeam Kasten web console).
+Restore applications to the Kubernetes cluster (using the Veeam Kasten web console).
 
 * [Exporting Disks](export_disks.md)
 
@@ -35,6 +35,7 @@ Synthesize an independent full backup file using restore points that are located
 |  |
 | --- |
 | Important |
-| Consider the following:   * Veeam Plug-In for Kasten does not allow you to restore Kubernetes containers from a Veeam Backup & Replication server to a Veeam Kasten cluster or any other location. To perform the restore operations with Kubernetes containers, use Veeam Kasten recovery options. For more information, see [Veeam Kasten Docs](https://docs.kasten.io/latest/usage/restore.html). * You can perform the recovery options (except restore to the Kubernetes cluster) only for restore points exported to the Veeam backup repository. * Restore points created by backup copy jobs or tape jobs can be recovered only by using operations available in the Veeam Backup & Replication console. You cannot use Veeam Kasten recovery options. |
+| Consider the following:   * Veeam Plug-in for Kasten does not allow you to restore Kubernetes containers from a Veeam Backup & Replication server to a Veeam Kasten cluster or any other location. To perform the restore operations with Kubernetes containers, use Veeam Kasten recovery options. For more information, see [Veeam Kasten Docs](https://docs.kasten.io/latest/usage/restore.html). * You can perform the recovery options (except restore to the Kubernetes cluster) only for restore points exported to the Veeam backup repository. * Restore points created by backup copy jobs or tape jobs can be recovered only by using operations available in the Veeam Backup & Replication console. You cannot use Veeam Kasten recovery options. |
 
+Page updated 2026-08-04
 
