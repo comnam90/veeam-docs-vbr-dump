@@ -3,8 +3,8 @@ title: "Step 4. Specify Discovery and Deployment Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_options.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Discovery and Deployment Options
@@ -19,7 +19,7 @@ Veeam Backup & Replication regularly connects to protected computers according t
 | TIP |
 | To learn how to use protection groups to automatically deploy Veeam plug-ins for enterprise applications, see [Database-Level Backup with Veeam Plug-Ins or MongoDB Backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications.html?ver=13#database-level-backup-with-veeam-plug-ins-or-mongodb-backup).  To learn how to use protection groups to automatically deploy Veeam CDP Agent Service and Veeam CDP Volume Filter Driver for universal continuous data protection (CDP), see [Universal CDP to VMware vSphere](universal_cdp.md). |
 
-To specify discovery and deployment options:
+To specify discovery and deployment options, do the following:
 
 1. In the Discovery section, define schedule for automatic computer discovery within the scope of the protection group:
 
@@ -34,36 +34,31 @@ To specify discovery and deployment options:
 | You cannot create a protection group without defining schedule for automatic discovery. However, you can disable automatic discovery for a specific protection group, if needed. To learn more, see [Disabling Protection Group](agents_protection_group_disable.md). |
 
 1. In the Deployment section, from the Distribution server list, select a server that you plan to use a distribution server. Veeam Backup & Replication will use the distribution server to upload Veeam Agent setup files to computers added to the protection group. By default, Veeam Backup & Replication assigns the distribution server role to the backup server. To learn more, see [Distribution Server](agents_infrastructure.md#distribution).
-2. If you want to instruct Veeam Backup & Replication to automatically deploy Veeam Agents on all discovered computers in the protection group, in the Deployment section, make sure that the Install backup agent check box is selected.
+2. If you want Veeam Backup & Replication to automatically deploy Veeam Agents on all discovered computers in the protection group, in the Deployment section, select the Install backup agent check box.
 
-You can also choose to disable automated Veeam Agent installation. In this case, you will need to install Veeam Agent on every computer included in the protection group and discovered by Veeam Backup & Replication. To learn more, see [Installing Veeam Agent](agents_protected_computers_install.md).
+You can also choose to disable automated Veeam Agent installation. In this case, you must install Veeam Agent manually on every computer included in the protection group and discovered by Veeam Backup & Replication. To learn more, see [Installing Veeam Agent](agents_protected_computers_install.md).
 
-Keep in mind that Veeam Backup & Replication installs the Veeam Installer Service or Veeam Deployer Service, Veeam OpenSSL3 FIPS Provider and Veeam Transport Service on every computer added to the protection group even if the Install backup agent check box is not selected in the protection group settings. If Veeam Transport Service is already installed on a computer, Veeam Backup & Replication checks its version and upgrade Veeam Transport Service if a later version is available.
+Note that Veeam Backup & Replication installs Veeam Installer Service or Veeam Deployer Service, Veeam OpenSSL3 FIPS Provider and Veeam Transport Service on every computer added to the protection group even if the Install backup agent check box is not selected in the protection group settings. If Veeam Transport Service is already installed on a computer, Veeam Backup & Replication checks its version and upgrades the service if a later version is available.
 
-|  |
-| --- |
-| IMPORTANT |
-| Automatic installation of nonsnap Veeam Agent for Linux is not available. If you want to add a computer with nonsnap Veeam Agent for Linux to a protection group, you must deploy Veeam Agent on the protected computer first. For more information on standalone installation of nonsnap Veeam Agent for Linux, see the [Installation and Configuration](https://helpcenter.veeam.com/docs/agentforlinux/userguide/installation.html?ver=13) section of the Veeam Agent for Linux User Guide. |
-
-1. If you want to instruct Veeam Backup & Replication to automatically upgrade Veeam Agent on discovered computers when a new version of Veeam Agent appears on the Veeam Backup & Replication server, in the Deployment section, make sure that the Enable auto-update for installed components check box is selected.
+* [For Windows-based computers] To install the advanced changed block tracking (CBT) driver on computers protected with Veeam Agent for Microsoft Windows, select the Install changed block tracking driver check box. Veeam Backup & Replication installs the CBT driver only on computers that run supported Microsoft Windows OS versions. To learn more, see [Installing Veeam CBT Driver](agents_protected_computers_driver.md).
 
 |  |
 | --- |
-| IMPORTANT |
-| Automatic upgrade of nosnap Veeam Agent for Linux is not available. You must upgrade such Veeam Agents on the protected computer side, manually or using third-party tools. |
+| Tip |
+| Veeam Backup & Replication can install the CBT driver on a wider range of Microsoft Windows OS versions, but does not install drivers automatically after upgrade. To install drivers in an existing protection group on computers running OS versions that became supported only in Veeam Backup & Replication 13.1, open the Edit Protection Group wizard, make sure that the Install changed block tracking driver check box is selected and save the protection group again. |
 
-1. [For protection groups that include Microsoft Windows computers] Select the Install changed block tracking driver check box if you want to install the advanced changed block tracking (CBT) driver on computers protected with Veeam Agent for Microsoft Windows.
-
-Keep in mind that Veeam Backup & Replication will install the CBT driver only on those computers that run supported Microsoft Windows OS versions. To learn more, see [Installing Veeam CBT Driver](agents_protected_computers_driver.md).
+* [For Linux-based computers] To install the nosnap version of Veeam Agent for Linux on protected Linux computers in this protection group, select the Install nosnap backup agent check box.
 
 |  |
 | --- |
-| TIP |
-| Veeam Backup & Replication can install the CBT driver on a wider range of Microsoft Windows OS versions, but Veeam Backup & Replication will not install drivers automatically after upgrade. To install drivers in the existing protection group on the computers running OS versions that got support only in Veeam Backup & Replication 13.0.1, open the Edit Protection Group wizard, make sure that the Install changed block tracking driver check box is selected and re-save the protection group. |
+| Note |
+| The Install nosnap backup agent check box does not enable agent deployment. It only specifies that if Veeam Backup & Replication installs Veeam Agent for Linux on a protected Linux computer in this protection group, Veeam Backup & Replication installs the nosnap version of Veeam Agent for Linux. For automatic installation during a rescan job, you must also select the Install backup agent check box. You can also install nosnap Veeam Agent for Linux manually on individual computers in the protection group. For more information, see [Installing Veeam Agent](agents_protected_computers_install.md). |
 
-1. Select the Perform reboot automatically if required check box to allow Veeam Backup & Replication to reboot a protected computer. In particular, the reboot operation is required as part of the Veeam CBT driver installation process.
-2. Click Advanced to specify advanced settings for the protection group. To learn more, see [Specify Advanced Protection Group Settings](agents_protection_group_advanced.md).
+1. If you want to instruct Veeam Backup & Replication to automatically upgrade Veeam Agent on discovered computers when a new version of Veeam Agent appears on the Veeam Backup & Replication server, select Enable auto-update for installed components.
+2. Select Perform reboot automatically if required to allow Veeam Backup & Replication to reboot a protected computer. In particular, the reboot operation is required as part of the Veeam CBT driver installation process.
+3. Click Advanced to specify advanced settings for the protection group. To learn more, see [Specify Advanced Protection Group Settings](ad_objects_advanced.md).
 
 ![Step 4. Specify Discovery and Deployment Options](images/pg_computers_options.webp "Specify Discovery and Deployment Options")
 
+Page updated 2026-07-02
 
