@@ -3,8 +3,8 @@ title: "Stop-VBRInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/stop-vbrinstantrecovery.html"
-last_updated: "7/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Stop-VBRInstantRecovery
@@ -32,8 +32,9 @@ With instant recovery technology, Veeam Backup & Replication starts a workloa
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | InstantRecovery | Specifies an array of IDs of the running Instant Recovery sessions that you want to stop. | Accepts the InstantRecovery[] object. To create this object, run the [Get-VBRInstantRecovery](get-vbrinstantrecovery.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
@@ -63,4 +64,5 @@ Related Commands
 
 [Get-VBRInstantRecovery](get-vbrinstantrecovery.md)
 
+Page updated 2026-08-04
 
