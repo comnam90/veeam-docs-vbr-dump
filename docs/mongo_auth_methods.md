@@ -3,8 +3,8 @@ title: "Authentication Against Replica Set"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_auth_methods.html"
-last_updated: "7/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Authentication Against Replica Set
@@ -15,7 +15,7 @@ When you configure MongoDB Backup, you can choose one of several methods to auth
 |  |
 | --- |
 | Important |
-| Before you you configure MongoDB Backup, consider access permissions listed in [Permissions](mongo_plan_and_manage_permissions.md). |
+| Before you configure MongoDB Backup, consider access permissions listed in [Permissions](mongo_plan_and_manage_permissions.md). |
 
 You can select one of the following methods to connect to MongoDB replica sets:
 
@@ -29,4 +29,5 @@ Related Task
 
 [Specify Deployments](mongo_protection_group_scope_deployments.md)
 
+Page updated 2026-08-04
 
