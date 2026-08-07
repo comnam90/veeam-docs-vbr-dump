@@ -3,8 +3,8 @@ title: "Rescan Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_discovery_job.html"
-last_updated: "11/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Rescan Job
@@ -12,17 +12,14 @@ product_version: "13.0.1.1071"
 
 For automated discovery of protected computers, Veeam Backup & Replication uses the rescan job that runs on the backup server. Veeam Backup & Replication automatically creates this job once you create the first protection group in the inventory. The rescan job runs upon schedule defined individually for every protection group in the protection group settings. By default, Veeam Backup & Replication is set up to perform discovery at 9:00 PM daily. You can adjust daily schedule in the protection group settings or define periodic schedule.
 
-The rescan job itself is not displayed in the Veeam Backup & Replication console. However, you can start rescan job sessions manually for a specific protection group or individual computer in the inventory. This may be helpful, for example, if new computers appeared in your infrastructure, and you want to discover these computers without waiting for the next scheduled rescan job session start. To learn more, see [Rescanning Protection Group](agents_protection_group_rescan.md) and [Rescanning Protected Computer](agents_protected_computers_rescan.md).
+The rescan job itself is not displayed in Veeam Backup & Replication. However, you can start rescan job sessions manually for a specific protection group or individual computer in the inventory. This may be helpful, for example, if new computers appeared in your infrastructure, and you want to discover these computers without waiting for the next scheduled rescan job session start. To learn more, see [Rescanning Protection Group](agents_protection_group_rescan.md) and [Rescanning Protected Computer](agents_protected_computers_rescan.md).
 
 You can view statistics for currently running and already performed rescan job sessions. To learn more, see [Viewing Rescan Job Statistics](agents_reporting_stats.md).
 
-Considerations and Limitations
-
-Consider the following about rescan of protection group and computer discovery:
-
-* Automatic installation of nonsnap Veeam Agent for Linux during rescan is not available. If you want to add a computer with nonsnap Veeam Agent for Linux to a protection group, you must deploy Veeam Agent on the protected computer first. For more information on standalone installation of nonsnap Veeam Agent for Linux, see the [Installation and Configuration](https://helpcenter.veeam.com/docs/agentforlinux/userguide/installation.html?ver=13) section of the Veeam Agent for Linux User Guide.
-* Automatic upgrade of nosnap Veeam Agent for Linux during rescan is not available. You must upgrade such Veeam Agents on the protected computer side, manually or using third-party tools.
-* Rescan is available for all protection groups except protection groups for pre-installed Veeam Agents and their individual members. Veeam Agents installed on computers included in protection groups for pre-installed Veeam Agents synchronize with Veeam Backup & Replication every 6 hours and provide information about the Veeam Agent computer. If necessary, you can synchronize Veeam Agent with Veeam Backup & Replication running a command from the Veeam Agent computer. To learn more, see [Backup Policy Application Methods](agents_policy_apply.md).
+|  |
+| --- |
+| NOTE |
+| Rescan is available for all protection groups except protection groups for pre-installed Veeam Agents and their individual members. Veeam Agents installed on computers included in protection groups for pre-installed Veeam Agents synchronize with Veeam Backup & Replication every 6 hours and provide information about the Veeam Agent computer. If necessary, you can synchronize Veeam Agent with Veeam Backup & Replication running a command from the Veeam Agent computer. To learn more, see [Backup Policy Application Methods](agents_policy_apply.md). |
 
 How It Works
 
@@ -40,7 +37,7 @@ When the rescan job is started — either automatically upon schedule or manuall
 |  |
 | --- |
 | NOTE |
-| Consider the following:   1. You can manually pre-install Veeam components using Veeam Deployment Kit. In this case, Veeam Backup & Replication will make the initial connection to such computers using a single-use certificate. For more information on this deployment option, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md). 2. On computers where Veeam Transport Service is already installed, Veeam Backup & Replication checks the Veeam Transport Service version. If a later version is available, Veeam Backup & Replication upgrades Veeam Transport Service. |
+| Consider the following:   * You can manually pre-install Veeam components using Veeam Deployment Kit. In this case, Veeam Backup & Replication will make the initial connection to such computers using a single-use certificate. For more information on this deployment option, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md). * On computers where Veeam Transport Service is already installed, Veeam Backup & Replication checks the Veeam Transport Service version. If a later version is available, Veeam Backup & Replication upgrades Veeam Transport Service. |
 
 1. If the automatic Veeam Agent deployment option is enabled in the protection group settings, Veeam components also deploy Veeam Agent on discovered computers. As a part of this process, Veeam Backup & Replication performs the following operations:
 
@@ -73,4 +70,5 @@ Related Tasks
 * [Rescanning Protected Computer](agents_protected_computers_rescan.md)
 * [Viewing Rescan Job Statistics](agents_reporting_stats.md)
 
+Page updated 2026-07-20
 
