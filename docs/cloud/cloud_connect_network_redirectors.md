@@ -3,8 +3,8 @@ title: "Network Redirectors"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_network_redirectors.html"
-last_updated: "6/9/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Network Redirectors
@@ -24,4 +24,5 @@ Veeam Backup & Replication components involved in remote connection scenarios co
 
 ![Network Redirectors](images/remote_console_redirectors.webp)
 
+Page updated 2026-08-04
 
