@@ -3,8 +3,8 @@ title: "Removal of Restore Points"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/retention_separate_vms.html"
-last_updated: "8/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removal of Restore Points
@@ -58,7 +58,7 @@ During the 7th job run, Veeam Backup & Replication will create restore points fo
 
 ![Removal of Restore Points](images/retention_policy_per_machine_reverse2.webp)
 
-Retention for Single-File Backups and Per-Machine Backups with Single Metadata File
+Retention for Single-File Backups and Per-Machine Backups with Single Metadata File (Deprecated)
 
 When you use the single-file backup chain format, Veeam Backup & Replication creates one backup file for all workloads during one session. When you use the per-machine backup with a single metadata file format, Veeam Backup & Replication creates a separate backup file for each workload during one session. However, Veeam Backup & Replication perceives all backup files created during one job session as one restore point.
 
@@ -98,4 +98,5 @@ Related Topics
 
 [Creating Backup Jobs](backup_job.md)
 
+Page updated 2026-08-04
 
