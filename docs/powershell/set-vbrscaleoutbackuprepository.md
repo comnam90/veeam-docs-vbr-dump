@@ -3,8 +3,8 @@ title: "Set-VBRScaleOutBackupRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrscaleoutbackuprepository.html"
-last_updated: "12/19/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRScaleOutBackupRepository
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRScaleOutBackupRepository -Repository <VBRScaleOutBackupRepository> [-Name <String>] [-Description <String>] [-PolicyType <VBRScaleOutBackupRepositoryPolicyType>] [-Extent <CBackupRepository[]>] [-UsePerVMBackupFiles] [-PerformFullWhenExtentOffline] [-EnableCapacityTier] [-ForceStrictPlacementPolicy] [-OperationalRestorePeriod <Int32>] [-EnableOverridePolicy] [-OverrideSpaceThreshold <Int32>] [-OffloadWindowOptions <VBRBackupWindowOptions>] [-ObjectStorageRepository <VBRObjectStorageRepository[]>] [-EnableCapacityTierEncryption] [-CapacityTierEncryptionKey <VBREncryptionKey>] [-CapacityTierKMSServer <VBRKMSServer>] [-PassThru] [-Force] [-EnableCapacityTierMovePolicy] [-EnableCapacityTierCopyPolicy] [-CapacityTierHealthCheckOptions <VBRHealthCheckOptions>] [-EnableArchiveTier] [-ArchiveObjectStorageRepository <VBRArchiveObjectStorageRepository>] [-EnableArchiveTierEncryption] [-ArchiveTierEncryptionKey <VBREncryptionKey>] [-ArchiveTierKMSServer <VBRKMSServer>] [-ArchivePeriod <Int32>] [-EnableCostOptimizedArchive] [-EnableArchiveFullBackupMode] [-EnablePluginBackupOffload] [-EnableCopyAllPluginBackups] [-EnableCopyAllMachineBackups]  [<CommonParameters>] |
+| Set-VBRScaleOutBackupRepository -Repository <VBRScaleOutBackupRepository> [-Name <String>] [-Description <String>] [-PolicyType <VBRScaleOutBackupRepositoryPolicyType>] [-Extent <CBackupRepository[]>] [-UsePerVMBackupFiles] [-PerformFullWhenExtentOffline] [-EnableCapacityTier] [-ForceStrictPlacementPolicy] [-OperationalRestorePeriod <Int32>] [-EnableOverridePolicy] [-OverrideSpaceThreshold <Int32>] [-OffloadWindowOptions <VBRBackupWindowOptions>] [-ObjectStorageRepository <VBRObjectStorageRepository[]>] [-EnableCapacityTierEncryption] [-CapacityTierEncryptionKey <VBREncryptionKey>] [-CapacityTierKMSServer <VBRKMSServer>] [-PassThru] [-Force] [-EnableCapacityTierMovePolicy] [-EnableCapacityTierCopyPolicy] [-CapacityTierHealthCheckOptions <VBRHealthCheckOptions>] [-EnableArchiveTier] [-ArchiveObjectStorageRepository <VBRArchiveObjectStorageRepository>] [-EnableArchiveTierMovePolicy] [-EnableArchiveTierCopyPolicy] [-EnableArchiveTierEncryption] [-ArchiveTierEncryptionKey <VBREncryptionKey>] [-ArchiveTierKMSServer <VBRKMSServer>] [-ArchivePeriod <Int32>] [-EnableCostOptimizedArchive] [-EnableArchiveFullBackupMode] [-EnablePluginBackupOffload] [-EnableCopyAllPluginBackups] [-EnableCopyAllMachineBackups]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,8 +35,9 @@ This cmdlet modifies settings of scale-out backup repositories.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Repository | Specifies a scale-out repository that you want to modify. | Accepts the VBRScaleOutBackupRepository object. To create this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet and provide the ScaleOut parameter. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies a name of a scale-out repository. | String | False | Named | True (ByProperty Name) |
 | Description | Specifies a description of a scale-out repository. | String | False | Named | True (ByProperty Name) |
@@ -48,7 +49,7 @@ Parameters
 | OperationalRestorePeriod | For retention policy.  Specifies the number of days to keep backup files on the local repository. When the number of days is passed, Veeam Backup & Replication will move backup files to an object storage.  Note: If you select zero days, Veeam Backup & Replication will move all backup files from the local repository to the object storage immediately. | Int | False | Named | True (ByProperty Name) |
 | EnableOverridePolicy | Enables the option to move backup files from the local repository to an object storage when the capacity reaches limits. If set, this option overrides the retention policy. Veeam Backup & Replication will move backup files to an object storage even if the retention policy value has not reached limits.  Default: False. | SwitchParameter | False | Named | True (ByProperty Name) |
 | OverrideSpaceThreshold | For the override option.  Specifies the capacity value in percent for the override option. Once the value reaches the limit, Veeam Backup & Replication will move the data from the local repository to an object storage. | Int32 | False | Named | True (ByProperty Name) |
-| OffloadWindowOptions | Specifies the time interval, when Veeam Backup & Replication is allowed will move the backup files to an object storage. | Accepts the VBRBackupWindowOptions object. To create this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | True (ByProperty Name) |
+| OffloadWindowOptions | Specifies the time interval, when Veeam Backup & Replication is allowed will move the backup files to an object storage. | Accepts the [VBRBackupWindowOptions](vbrbackupwindowoptions.md) object. To create this object, run the [New-VBRBackupWindowOptions](new-vbrbackupwindowoptions.md) cmdlet. | False | Named | True (ByProperty Name) |
 | ObjectStorageRepository | Specifies an object storage. Veeam Backup & Replication will move the backup files to this object storage. | Accepts the VBRObjectStorageRepository object. To create this object, run the [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md) cmdlet. | False | Named | True (ByProperty Name) |
 | Force | Defines that the cmdlet will create the scale-out backup repository without showing up the notifications in the PowerShell console. | SwitchParameter | False | Named | False |
 | PassThru | Defines that the command returns the output object to the Windows PowerShell console.  Default: False. | SwitchParameter | False | Named | False |
@@ -60,6 +61,8 @@ Parameters
 | CapacityTierEncryptionKey | Specifies a password that Veeam Backup & Replication will use to encrypt backups on the capacity tier.  Note: If you add the capacity tier that has been encrypted, you must specify the password that you used to encrypt data on this tier. You can change a password after you configure the scale-out backup repository. | Accepts the VBREncryptionKey object. To get this object, run the [Get-VBREncryptionKey](get-vbrencryptionkey.md) cmdlet. | False | Named | False |
 | CapacityTierKMSServer | Specifies the KMS server you want to use to encrypt backups. | Accepts the VBRKMSServer object.  To get this object, run the [Get-VBRKMSServer](get-vbrkmsserver.md) cmdlet. | False | Named | False |
 | EnableArchiveTierEncryption | Enables encryption for the archive tier. The cmdlet will encrypt backups moved to the archive tier. | SwitchParameter | False | Named | False |
+| EnableArchiveTierCopyPolicy | Defines that the cmdlet will use the copy to transfer backup files from the performance tier to the archive tier.  Default: False. | SwitchParameter | False | Named | False |
+| EnableArchiveTierMovePolicy | Defines that the cmdlet will use the move policy to transfer backup files from the performance and capacity tier to the archive tier.  Default: False. | SwitchParameter | False | Named | False |
 | ArchiveTierEncryptionKey | Specifies a password that Veeam Backup & Replication will use to encrypt backups on the archive tier.  Note: If you add the archive tier that has been encrypted, you must specify the password that you used to encrypt data on this tier. You can change a password after you configure the scale-out backup repository. | Accepts the VBREncryptionKey object. To get this object, run the [Get-VBREncryptionKey](get-vbrencryptionkey.md) cmdlet. | False | Named | False |
 | ArchiveTierKMSServer | Specifies the KMS server you want to use to encrypt backups. | Accepts the VBRKMSServer object.  To get this object, run the [Get-VBRKMSServer](get-vbrkmsserver.md) cmdlet. | False | Named | False |
 | EnableCopyAllMachineBackups | For backup files created with Veeam Agent backup jobs and Veeam Backup jobs for VMs.  Enables copying of all backup files from the performance extents to the capacity extent. If you do not provide this parameter, the cmdlet will copy only the latest backup files.  Note: To activate the copy policy, you must provide the EnableCapacityTierCopyPolicy parameter.  Default: False. | SwitchParameter | False | Named | False |
@@ -93,4 +96,5 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRRepositoryExtent](get-vbrrepositoryextent.md)
 
+Page updated 2026-06-24
 
