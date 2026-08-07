@@ -3,8 +3,8 @@ title: "Restore-VBRUnstructuredBackupFLRItem"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/restore-vbrunstructuredbackupflritem.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore-VBRUnstructuredBackupFLRItem
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Restore-VBRUnstructuredBackupFLRItem -Item <VBRUnstructuredBackupFLRItem[]> [-ChangedItemsOnly] [-Overwrite] [-RunAsync]  [<CommonParameters>] |
+| Restore-VBRUnstructuredBackupFLRItem [-ChangedItemsOnly] [-Force] -Item <VBRUnstructuredBackupFLRItem[]> [-Overwrite] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] [-RunAsync] [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,11 +30,14 @@ This cmdlet restores specific files and folders backed up by file backup jobs or
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Item | Specifies an array of backed-up objects. The cmdlet will restore these objects to the original file share or object storage. | Accepts the VBRUnstructuredBackupFLRItem[] object. To get this object, run the [Get-VBRUnstructuredBackupFLRItemVersion](get-vbrunstructuredbackupflritemversion.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | ChangedItemsOnly | Defines whether to restore changed files and folders only. | SwitchParameter | False | Named | False |
 | Overwrite | Defines that the cmdlet will overwrite an existing object with the restored one.  If you provide this parameter, the cmdlet will overwrite an existing object on the file share or object storage server with the version of an object from a backup. Otherwise, an existing object will not be overwritten. | SwitchParameter | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive object storage repositories.  Note: If you do not provide this parameter, the cmdlet will prompt you to use the default retrieval policy settings. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will restore unstructured data backups without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -66,4 +69,5 @@ Related Commands
 * [Get-VBRUnstructuredBackupFLRItem](get-vbrunstructuredbackupflritem.md)
 * [Get-VBRUnstructuredBackupFLRItemVersion](get-vbrunstructuredbackupflritemversion.md)
 
+Page updated 2026-06-29
 
