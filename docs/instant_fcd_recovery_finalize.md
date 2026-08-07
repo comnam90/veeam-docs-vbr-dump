@@ -3,8 +3,8 @@ title: "Finalizing Instant FCD Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_fcd_recovery_finalize.html"
-last_updated: "2/13/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Finalizing Instant FCD Recovery
@@ -37,4 +37,5 @@ To stop publishing FCDs:
 
 [![FCD Stop Publish](images/instant_disk_recovery_fcd_stop_publishing.webp)](images/instant_disk_recovery_fcd_stop_publishing.webp "FCD Stop Publish")
 
+Page updated 2026-07-15
 
