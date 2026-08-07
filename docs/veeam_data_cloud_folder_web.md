@@ -1,37 +1,56 @@
 ---
-title: "Step 4. Specify Veeam Data Cloud Vault Wizard Settings"
+title: "Step 4. Specify Veeam Data Cloud Vault Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_folder_web.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 4. Specify Veeam Data Cloud Vault Wizard Settings
+# Step 4. Specify Veeam Data Cloud Vault Settings
 
 
 At the Folder step of the wizard, specify the folder that will be used to store data, the storage consumption and the immutability period.
 
-1. To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
-2. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB.
-3. To prohibit deletion of blocks of data from object storage, select the Make recent backups immutable (recommended) check box. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
+1. To the right of the Folder field, click Configure
+2. Select an existing folder or click Add new folder and in the New Folder Name window, specify the folder name. To refresh the list of folders, click Refresh.
+3. Click Select.
+4. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB.
 
-* Select For the entire duration of their retention policy if you want the immutability period depend on the retention policy of a backup job.
+1. If another backup server already manages the object storage repository, you will be prompted to either add it as a read-only repository or take ownership of it from the backup server currently managing it in read-write mode. For more information, see the [Read-only mode](object_storage_repository.md#readOnlyAccess) subsection. To enable the read-only access, select the Enable read-only access check box.
+
+   |  |
+   | --- |
+   | Important |
+   | Consider the following:  * This check box is available only for immutable object storage repositories, added as a standalone repository or as the performance or capacity extent of a scale-out backup repository. * You cannot change this option after you add the object storage repository to the backup infrastructure. |
+
+[![Step 4. Specify New Veeam Data Cloud Vault Settings](images/veeam_standard_vault_container_web.webp)](images/veeam_standard_vault_container_web.webp)
+
+Specifying Immutability Settings
+
+Immutability prohibits deletion of blocks of data from your object storage repository.
+
+To enable immutability:
+
+1. Select the Make backups immutable (recommended) check box.
+2. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
+
+* Select the For the entire duration of their retention policy option if you want the immutability period depend on the retention policy of a backup job.
 
 |  |
 | --- |
 | Important |
-| Consider the following:   * If the job retention exceeds the immutability period, the actual retention is counted as job retention policy + Block Generation period. * If the immutability period exceeds the job retention period, the actual retention is counted as immutability period + Block Generation period.   For more information, see [How Immutability Works](hiw_immutability_os.md), |
+| Consider the following:   * If the job retention exceeds the immutability period, the actual retention is counted as job retention policy + Block Generation period. * If the immutability period exceeds the job retention period, the actual retention is counted as immutability period + Block Generation period. * The default immutability period is 30 days. You can set the immutability period to different values in the Veeam Backup & Replication UI. The minimum immutability period is 1 day, and the maximum is 999 days.   For more information, see [How Immutability Works](hiw_immutability_os.md). |
 
 * Select the For the minimum immutability period only option if you want to specify the immutability period explicitly. The backup job retention will be skipped.
-
 * Next to the Minimum immutability duration option, provide the necessary value.
 
 |  |
 | --- |
 | Note |
-| Consider the following:   * By default, immutability is enabled for Veeam Data Cloud Vault. You cannot disable this option and cannot remove data during this period.  * The default immutability period is 30 days. You can set the immutability period to different values. The minimum immutability period is 1 day, and the maximum is 999 days. |
+| By default, immutability is enabled for Veeam Data Cloud Vault. You cannot disable this option and cannot remove data during this period. |
 
-[![Step 4. Specify New Veeam Data Cloud Vault Wizard Settings](images/veeam_vault_container_web.webp)](images/veeam_vault_container_web.webp)
+[![Step 4. Specify New Veeam Data Cloud Vault Settings](images/veeam_standard_vault_immutability_web.webp)](images/veeam_standard_vault_immutability_web.webp)
 
+Page updated 2026-07-23
 
