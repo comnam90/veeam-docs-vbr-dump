@@ -3,8 +3,8 @@ title: "Support for Always On Availability Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/alwayson_support.html"
-last_updated: "4/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Support for Always On Availability Groups
@@ -40,11 +40,12 @@ Logs are backed up from one node of the Always On Availability Group. To become 
 * The necessary Veeam Backup & Replication components must be installed on this node and the VM included in Always On Availability Group must be running. For more information on the necessary components, see [How Microsoft SQL Server Log Backup Works](sql_backup_hiw.md).
 * The database backup preferences settings must allow a backup of the node you want to process. For example, if you want to back up the primary node, you must not exclude this node from a backup, or select the Secondary only option in the database backup preferences settings.
 * Databases in the Always On Availability Groups for this node were successfully backed up for the last two processing intervals.
-* Veeam Backup & Replication can establish a network connection to the node or VIX connection if a connection over the network cannot be established.
+* Veeam Backup & Replication can establish a network connection to the node.
 
 |  |
 | --- |
 | Note |
 | When you configure a backup job to process Distributed Availability Groups transaction logs, select either primary or secondary distributed availability group. Otherwise, the log chain of the distributed group databases may become inconsistent.  When you configure a backup job to back up transaction logs for other Distributed Availability Groups, use the Perform copy only mode. See [Application-Aware Processing](backup_job_vss_application_vm.md) to learn more about the copy only mode. You can also use the exclude feature to prevent Guest-OS database from being processed. See [Exclude Objects from Backup Job](backup_job_excludes_vm.md) to learn more on excluding objects. To read about distributed availability group limitations, see [Configure distributed availability group](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/configure-distributed-availability-groups). |
 
+Page updated 2026-07-29
 
