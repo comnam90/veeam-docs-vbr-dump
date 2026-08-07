@@ -3,8 +3,8 @@ title: "Enabling and Disabling Backup Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_disable.html"
-last_updated: "3/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Enabling and Disabling Backup Policy
@@ -16,6 +16,13 @@ You can temporary disable Veeam Agent backup policies configured in Veeam Backup
 * Veeam Agent running on a protected computer does not create backups on the backup repository.
 
 If a user of a protected computer starts the Veeam Agent backup job manually or if the job starts by schedule, the job session will fail and report the "The job has been disabled by the Veeam Backup & Replication administrator" error. To let Veeam Agent for Microsoft Windows store backups to the backup repository again, you must enable the disabled policy and apply it to protected computers. To learn more, see [Applying Backup Policy to Protected Computers](agent_policy_apply.md).
+
+You can enable or disable a Veeam Agent backup policy in one of the following ways:
+
+* [Using Veeam Backup & Replication Console](#console)
+* [Using Veeam Backup & Replication Web UI](#webui)
+
+Enabling and Disabling Backup Policy Using Veeam Backup & Replication Console
 
 To disable a Veeam Agent backup policy:
 
@@ -43,4 +50,16 @@ To enable a disabled policy, select it in the list and click Disable on the ribb
 
 [![Disable Backup Policy](images/agent_policy_disable.webp)](images/agent_policy_disable.webp "Disable Backup Policy")
 
+Enabling and Disabling Backup Policy Using Veeam Backup & Replication Web UI
+
+To disable a Veeam Agent backup policy:
+
+1. In the management pane, click Jobs.
+2. Select the check box next to the necessary backup policy, and from the Manage drop-down list, select Disable. Alternatively, right-click the policy and click Manage > Disable.
+
+To enable a disabled policy, select it and click Manage > Enable on the toolbar, or right-click the policy and click Manage > Enable.
+
+[![Disable Backup Policy](images/agent_policy_disable_web.webp)](images/agent_policy_disable_web.webp "Disable Backup Policy")
+
+Page updated 2026-07-29
 
