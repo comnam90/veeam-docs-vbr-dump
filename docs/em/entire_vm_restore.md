@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/entire_vm_restore.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Entire VM Restore
@@ -25,5 +25,5 @@ Before you perform entire VM restore, consider the following:
 * Entire VM Restore is available in the Enterprise and Enterprise Plus editions of Veeam Backup & Replication.
 * Veeam Backup Enterprise Manager does not support entire VM Restore from storage snapshots, Veeam Agent backups and backups created with Veeam Plug-ins for Enterprise Applications.
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
