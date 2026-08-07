@@ -3,8 +3,8 @@ title: "Support for Clusters"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_clusters.html"
-last_updated: "6/26/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Support for Clusters
@@ -53,4 +53,5 @@ Restore of Cluster
 
 To restore a database that operates as part of a failover cluster, you must start the restore process on the primary cluster node.
 
+Page updated 2026-08-04
 
