@@ -3,8 +3,8 @@ title: "GET /nas/fileServers/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_nas_fileservers_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /nas/fileServers/{ID}
@@ -32,8 +32,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -53,8 +54,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -64,8 +66,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the file share, for example: urn:veeam:FileServer:517be4c8-9c43-4e7c-9f59-4e368d3a8f3c. |
 | Name | String | Name of the file share, for example: \\srv12\share. |
 | ServerType | String | Type of the file share:   * FileServer * SmbServer * NfsServer |
@@ -82,8 +85,9 @@ SMB Server Options
 
 The SmbServerOptions element contains the following SMB server options.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Path | String | Path to an SMB file share. |
 | CredentialsId | String | Credentials that are used to access the shared folder. |
 
@@ -91,24 +95,27 @@ NFS Server Options
 
 The NfsServerOptions element contains the following NFS server options.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Path | String | Path to an NFS file share. |
 
 File Server Options
 
 The FileServerOptions element contains the following file server options.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | ServerUid | UidType | UID of a managed server, for example: urn:veeam:FileServer:f5d9ea1f-ef70-4e51-af3d-c760380d5347. |
 
 Processing Options
 
 The ProcessingOptions element contains the following processing options.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | ServerUid | UidType | UID of a file server. |
 | CacheRepositoryUid | UidType | UID of a cache repository where temporary cache files are stored. |
 
@@ -116,15 +123,17 @@ NAS Server Advanced Options
 
 The NASServerAdvancedOptions element contains the following NAS server advanced options.
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | ProcessingMode | String | Processing mode that defines if Veeam Backup & Replication uses snapshots for backups. |
 | StorageSnapshotPath | String | Path to the folder on the file share where the file share snapshot is saved. |
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server that contains the file server in the backup infrastructure. |
 | /nas/fileServers//{ID} | Alternate | Alternate URL of the [/nas/fileServers/{ID}](nas_fileservers_id.md) resource. |
 
@@ -134,6 +143,7 @@ The example below returns an entity representation of the file share having ID 5
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/nas/fileServers/517be4c8-9c43-4e7c-9f59-4e368d3a8f3c?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <FileServer xmlns="http://www.veeam.com/ent/v1.0" Type="FileServer" Href="https://srv12.tech.local:9398/api/nas/fileServers/517be4c8-9c43-4e7c-9f59-4e368d3a8f3c?format=Entity" Name="\\srv12\share" UID="urn:veeam:FileServer:517be4c8-9c43-4e7c-9f59-4e368d3a8f3c"> |
+| Request:  GET https://localhost:9398/api/nas/fileServers/517be4c8-9c43-4e7c-9f59-4e368d3a8f3c?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <FileServer xmlns="http://www.veeam.com/ent/v1.0" Type="FileServer" Href="https://srv12.tech.local:9398/api/nas/fileServers/517be4c8-9c43-4e7c-9f59-4e368d3a8f3c?format=Entity" Name="\\srv12\share" UID="urn:veeam:FileServer:517be4c8-9c43-4e7c-9f59-4e368d3a8f3c">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://srv12.tech.local:9398/api/backupServers/d1444f74-27e6-4399-81a9-d28ba98913f0" Name="srv12.tech.local" />     <Link Rel="Alternate" Type="FileServerReference" Href="https://srv12.tech.local:9398/api/nas/fileServers/517be4c8-9c43-4e7c-9f59-4e368d3a8f3c" Name="\\srv12\share" />   </Links>   <ServerType>SmbServer</ServerType>   <HierarchyObjRef>urn:NasBackup:FileServer:5735d1af-3aad-49ac-ac77-eab708ac1a37.517be4c8-9c43-4e7c-9f59-4e368d3a8f3c</HierarchyObjRef>   <SmbServerOptions>     <Path>\\srv12\share</Path>     <CredentialsId>43f9521d-7b9a-4be5-847f-fd69cf19bded</CredentialsId>   </SmbServerOptions>   <ProcessingOptions>     <ServerUid>urn:veeam:FileServer:517be4c8-9c43-4e7c-9f59-4e368d3a8f3c</ServerUid>     <CacheRepositoryUid>urn:veeam:Repository:88788f9e-d8f5-4eb4-bc4f-9b3f5403bcec</CacheRepositoryUid>   </ProcessingOptions>   <NASServerAdvancedOptions>     <ProcessingMode>Direct</ProcessingMode>   </NASServerAdvancedOptions> </FileServer> |
 
+Page updated 2026-07-29
 
