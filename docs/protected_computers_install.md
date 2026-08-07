@@ -3,8 +3,8 @@ title: "Installing Veeam Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_install.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Veeam Plug-In
@@ -24,6 +24,7 @@ To install Veeam Plug-In on a protected computer:
 2. In the inventory pane, expand the Physical Infrastructure node and select the necessary protection group.
 3. In the working area, select the necessary computer and click Install Plug-In on the ribbon or right-click the computer and select Plug-In > Install and select the plug-in you want to install.
 
-[![Install Plug-in](images/plugins_protection_group_install_plug-in.webp)](images/plugins_protection_group_install_plug-in.webp "Install Plug-in")
+[![Install Plug-In](images/plugins_protection_group_install_plug-in.webp)](images/plugins_protection_group_install_plug-in.webp "Install Plug-In")
 
+Page updated 2026-08-04
 
