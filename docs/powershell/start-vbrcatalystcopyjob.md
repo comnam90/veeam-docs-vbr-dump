@@ -1,18 +1,23 @@
 ---
-title: "Start-VBRCatalystCopyJob"
+title: "Start-VBRCatalystCopyJob (obsolete)"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrcatalystcopyjob.html"
-last_updated: "3/1/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Start-VBRCatalystCopyJob
+# Start-VBRCatalystCopyJob (obsolete)
 
 
 Short Description
 
 Starts backup copy jobs for HPE StoreOnce repositories.
+
+|  |
+| --- |
+| Note |
+| This cmdlet is obsolete. Run the [Start-VBRStorageCopyJob](start-vbrstoragecopyjob.md) cmdlet instead. |
 
 Applies to
 
@@ -30,8 +35,9 @@ This cmdlet starts backup copy jobs for HPE StoreOnce repositories.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Job | Specifies an array of backup copy jobs for HPE StoreOnce repositories. The cmdlet will start these jobs. | Accepts the VBRCatalystCopyJob[] object. To get this object, run the [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md) cmdlet. | True | 0 | True (ByValue, ByPropertyName) |
 
 <CommonParameters>
@@ -61,4 +67,5 @@ Related Commands
 
 [Get-VBRCatalystCopyJob](get-vbrcatalystcopyjob.md)
 
+Page updated 2026-06-12
 
