@@ -3,8 +3,8 @@ title: "Getting Technical Support"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_export_logs.html"
-last_updated: "1/14/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Getting Technical Support
@@ -44,4 +44,5 @@ Complete the wizard as described in section [Exporting Logs](exporting_logs.md).
 
 [![Exporting Logs Using Veeam Backup & Replication Console](images/ahv_logs_vbr.webp)](images/ahv_logs_vbr.webp "Exporting Logs Using Veeam Backup & Replication Console")
 
+Page updated 2026-07-17
 
