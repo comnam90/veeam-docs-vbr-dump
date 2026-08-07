@@ -3,8 +3,8 @@ title: "Start-VBRInstantRecovery"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrinstantrecovery.html"
-last_updated: "12/10/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRInstantRecovery
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Start-VBRInstantRecovery -RestorePoint <COib> -Server <CHost> [-ResourcePool <CViResourcePoolItem>] [-VMName <string>] [-Datastore <CViDatastoreItem>] [-StoragePolicy <VBRViStoragePolicy>] [-Folder <CViFolderItem>] [-PowerUp] [-NICsEnabled] [-Reason <string>] [-Credentials <CCredentials>] [-RunAsync] [-Force] [-SourceNetwork <VBRViNetworkInfo[]>] [-TargetNetwork <VBRViNetworkInfo[]>] [-EnableTagRestore] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction <VBRVirusDetectionAction> {DisableNetwork | AbortRecovery}] [-GenerateNewSystemUUID]  [<CommonParameters>] |
+| Start-VBRInstantRecovery -RestorePoint <COib> -Server <CHost> [-ResourcePool <CViResourcePoolItem>] [-VMName <string>] [-Datastore <CViDatastoreItem>] [-StoragePolicy <VBRViStoragePolicy>] [-Folder <CViFolderItem>] [-PowerUp] [-NICsEnabled] [-Reason <string>] [-Credentials <CCredentials>] [-RunAsync] [-Force] [-SourceNetwork <VBRViNetworkInfo[]>] [-TargetNetwork <VBRViNetworkInfo[]>] [-EnableTagRestore] [-EnableAntivirusScan] [-EnableYARAScan] [-YARAScanRule <String>] [-EnableEntireVolumeScan] [-VirusDetectionAction <VBRVirusDetectionAction> {DisableNetwork | AbortRecovery}] [-GenerateNewSystemUUID] [-ForceArchivedSnapshotsRestore] [-EnableClusterWideMount]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -38,8 +38,9 @@ This cmdlet starts VM instant recovery. With this cmdlet, you can perform the fo
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | RestorePoint | Specifies the restore point to which you want to recover the VM. | Accepts the COib object. To create this object, run the [Get-VBRRestorePoint](get-vbrrestorepoint.md) cmdlet. | True | 1 | True (ByValue, ByProperty Name) |
 | VMName | Specifies a name you want to apply to the restored VM. By default, the original VM name is applied. | String | False | Named | False |
 | Server | For restore to another location.  Specifies the target ESXi host where you want to locate the restored VM.  Note: You must not specify a vCenter Server in this parameter. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | True | 2 | False |
@@ -62,6 +63,8 @@ Parameters
 | SourceNetwork | For restore to another location.  Specifies the source site network. Veeam Backup & Replication will map it to the target network. | Accepts the VBRViNetworkInfo[] object. To get this object, run the [Get-VBRViServerNetworkInfo](get-vbrviservernetworkinfo.md) cmdlet. | False | Named | False |
 | TargetNetwork | For restore to another location.  Specifies the target site network. Veeam Backup & Replication will map it with the source network. | Accepts the VBRViNetworkInfo[] object. To get this object, run the [Get-VBRViServerNetworkInfo](get-vbrviservernetworkinfo.md) cmdlet. | False | Named | False |
 | GenerateNewSystemUUID | Defines that the cmdlet will generate a new system UUID for the restored machine.  Note: Currently this parameter supports only the $false value: GenerateNewSystemUUID:$false. | SwitchParameter | False | Named | False |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
+| EnableClusterWideMount | Defines that the cmdlet will mount the vPowerNFS datastore to all ESXi hosts in the target cluster. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -100,4 +103,5 @@ Related Commands
 * [Find-VBRViFolder](find-vbrvifolder.md)
 * [Get-VBRLocation](get-vbrlocation.md)
 
+Page updated 2026-05-14
 
