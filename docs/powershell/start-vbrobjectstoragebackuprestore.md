@@ -3,8 +3,8 @@ title: "Start-VBRObjectStorageBackupRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrobjectstoragebackuprestore.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRObjectStorageBackupRestore
@@ -26,19 +26,19 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRObjectStorageBackupRestore -RestorePoint <VBRUnstructuredBackupRestorePoint> [-DestinationServer <VBRUnstructuredServer>] [-RollBack] [-OverwriteMode <VBRUnstructuredBackupRestoreOverwriteMode>] [-OverwriteBucketAttributes] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRObjectStorageBackupRestore -RestorePoint <VBRUnstructuredBackupRestorePoint> [-DestinationServer <VBRUnstructuredServer>] [-RollBack] [-OverwriteMode <VBRUnstructuredBackupRestoreOverwriteMode>] [-OverwriteBucketAttributes] [-RunAsync] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Start restore of backups created by an object storage backup job to another location.
 
 |  |
 | --- |
-| Start-VBRObjectStorageBackupRestore -RestorePoint <VBRUnstructuredBackupRestorePoint> [-DestinationServer <VBRUnstructuredServer>] [-DestinationFolderPath <String>] [-RollBack] [-OverwriteMode <VBRUnstructuredBackupRestoreOverwriteMode>] [-OverwriteBucketAttributes] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRObjectStorageBackupRestore -RestorePoint <VBRUnstructuredBackupRestorePoint> [-DestinationServer <VBRUnstructuredServer>] [-DestinationFolderPath <String>] [-RollBack] [-OverwriteMode <VBRUnstructuredBackupRestoreOverwriteMode>] [-OverwriteBucketAttributes] [-RunAsync] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Start restore of backups created by an object storage backup job to a new bucket.
 
 |  |
 | --- |
-| Start-VBRObjectStorageBackupRestore -RestorePoint <VBRUnstructuredBackupRestorePoint> [-DestinationServer <VBRUnstructuredServer>] [-NewBucketName <String>] [-RegionId <String>] [-RollBack] [-OverwriteMode <VBRUnstructuredBackupRestoreOverwriteMode>] [-OverwriteBucketAttributes] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRObjectStorageBackupRestore -RestorePoint <VBRUnstructuredBackupRestorePoint> [-DestinationServer <VBRUnstructuredServer>] [-NewBucketName <String>] [-RegionId <String>] [-RollBack] [-OverwriteMode <VBRUnstructuredBackupRestoreOverwriteMode>] [-OverwriteBucketAttributes] [-RunAsync] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -57,6 +57,8 @@ Parameters
 | DestinationFolderPath | Specifies the path to the folder on the file share. The cmdlet will restore backups to the specified folder. | String | False | Named | False |
 | NewBucketName | Specifies a new name for the bucket. | String | False | Named | False |
 | RegionId | Specifies the ID of the region. | String | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories.  Note: If you do not provide this parameter, the cmdlet will prompt you to use the default retrieval policy settings. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will restore backups created by an object storage backup job without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -88,4 +90,5 @@ Related Commands
 * [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md)
 * [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md)
 
+Page updated 2026-06-29
 
