@@ -3,8 +3,8 @@ title: "Pre-Freeze and Post-Thaw Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_vss_scripts.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Pre-Freeze and Post-Thaw Script Settings
@@ -34,4 +34,5 @@ When the backup policy is applied, Veeam Backup & Replication uploads the script
 
 ![Pre-Freeze and Post-Thaw Script Settings](images/agent_policy_win_vss_scripts.webp "Specify Pre-Freeze and Post-Thaw Scripts")
 
+Page updated 2026-08-04
 
