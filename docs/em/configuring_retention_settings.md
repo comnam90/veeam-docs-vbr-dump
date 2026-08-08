@@ -3,8 +3,8 @@ title: "Configuring Retention Settings for Index and History"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/configuring_retention_settings.html"
-last_updated: "11/18/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Retention Settings for Index and History
@@ -27,12 +27,12 @@ To configure retention settings, take the following steps:
 3. Open the Settings section on the left of the Configuration view.
 4. On the Session History tab, in the Guest file system catalog section, specify how long index files must be stored on the Enterprise Manager server:
 
-1. Enter the desired number of months in the Retention period, months field. The default value is 3 months, the minimum allowed value is 1 month, and the maximum allowed value is 99 months.
+1. Enter the desired number of months in the Retention period, months field. The default value is 3 months, the minimum allowed value is 1 month, and the maximum allowed value is 120 months, or 10 years.
 2. When finished, click the Save button under the Event history section. New retention settings will be saved in the Enterprise Manager database, and a message notifying you on the update will be displayed at the top of the window.
 
 1. In the Event history section, specify the period for which Enterprise Manager should keep historical data available in the main working area of the Enterprise Manager website.
 
-1. Enter the desired number of weeks or select Keep all. By default, the retention period for session data is set to 13 weeks. The minimum allowed value is 1 week, and the maximum allowed value is 999 weeks.
+1. Enter the desired number of weeks or select Keep all. By default, the retention period for session data is set to 13 weeks. The minimum allowed value is 1 week, and the maximum allowed value is 999 weeks.
 2. When finished, click Save. New retention settings will be saved in the Enterprise Manager database, and a message notifying you on the update will be displayed at the top of the window.
 
 [![Configuring Retention Settings for Index and History](images/em_catalog_retention_settings.webp)](images/em_catalog_retention_settings.webp "Configuring Retention Settings for Index and History")
@@ -41,4 +41,5 @@ Note that the retention settings you specify in Enterprise Manager are propagate
 
 ![Configuring Retention Settings for Index and History](images/options_history.webp "Session History Retention on Veeam Backup Server")
 
+Page updated 2026-07-16
 
