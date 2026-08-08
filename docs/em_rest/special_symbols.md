@@ -3,8 +3,8 @@ title: "Special Characters in Responses"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/special_symbols.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Special Characters in Responses
@@ -14,8 +14,9 @@ Responses from the server may contain special characters that cannot be displaye
 
 HTTP responses received from Veeam Backup Enterprise Manager REST API may contain the following character entity references:
 
+Special Characters in Responses
+
 | Character | Character Entity Reference | Description |
-| --- | --- | --- |
 | & | &amp; | Ampersand |
 | < | &lt; | Less-than sign |
 | > | &gt; | Greater-than sign |
@@ -27,7 +28,7 @@ The example below represents a list of links in the paginated response from the 
 
 |  |
 | --- |
-| <Links> |
+| <Links>   <Link Rel="First" Href="https://localhost:9398/api/query?type=BackupServer&amp;pageSize=1&amp;page=1" />   <Link Rel="Next" Href="https://localhost:9398/api/query?type=BackupServer&amp;pageSize=1&amp;page=2" />   <Link Rel="Last" Href="https://localhost:9398/api/query?type=BackupServer&amp;pageSize=1&amp;page=3" /> </Links> |
 
 When the client parses a response and retrieves a link that contains a character entity reference, the client must replace the character entity reference with the character itself before using the link in a request. If the client sends a request that contains a character entity reference, the server may ignore the subsequent parameter while processing the request or completely fail to process the request.
 
@@ -36,4 +37,5 @@ When the client parses a response and retrieves a link that contains a character
 | Note |
 | You do not need to perform this operation when you evaluate and test capabilities of Veeam Backup Enterprise Manager REST API using Veeam Backup Enterprise Manager Web Client. For your convenience, Veeam Backup Enterprise Manager Web Client automatically replaces character entity references with the characters and displays responses in a readable way. |
 
+Page updated 2026-07-29
 
