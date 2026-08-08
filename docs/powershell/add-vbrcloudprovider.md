@@ -3,8 +3,8 @@ title: "Add-VBRCloudProvider"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrcloudprovider.html"
-last_updated: "10/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRCloudProvider
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRCloudProvider -Address <string> -Credentials <VBRCloudProviderCredentials> [-Description <string>] [-Port <int32>] [-Appliance <VBRCloudProviderNetworkAppliance[]>] [-VerifyCertificate] [-CertificateThumbprint <string>] [-InstallManagementAgent] [-Force]  [<CommonParameters>] |
+| Add-VBRCloudProvider -Address <string> -Credentials <VBRCloudProviderCredentials> [-Description <string>] [-Port <int32>] [-Appliance <VBRCloudProviderNetworkAppliance[]>] [-VerifyCertificate] [-CertificateThumbprint <string>] [-InstallManagementAgent] [-RestoreAccessLevel {None | UnencryptedBackups | AllBackups}] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -41,8 +41,9 @@ You must set a network extension appliance if you plan to replicate your VMs to 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Address | Specifies a full DNS name or IP address of the cloud gateway configured on the service provider side. | String | True | Named | False |
 | Description | Specifies the description of the service provider. | String | False | Named | False |
 | Port | Specifies the port over which user’s Veeam backup server will communicate with the cloud gateway.  Permitted values: 1 to 65535.  Default: 6180. | Int32 | False | Named | False |
@@ -51,6 +52,7 @@ Parameters
 | VerifyCertificate | Defines if the TLS certificate must be verified by the thumbprints.  Use the CertificateThumbprint parameter to set the thumbprint that will be compared to the TLS certificate thumbprint. | SwitchParameter | False | Named | False |
 | CertificateThumbprint | Specifies the thumbprint that will be compared to the TLS certificate thumbprint. | String | False | Named | False |
 | InstallManagementAgent | Defines that the service provider must manage the Veeam backup server under the Backup as a Service agreement.  The cmdlet will install the Veeam Managed Backup Portal agent on the Veeam backup server. | SwitchParameter | False | Named | False |
+| RestoreAccessLevel | Defines the access level according to which the service provider can restore backups stored on cloud repositories:   * None: the service provider cannot restore backups. * UnencryptedBackups: the service provider can restore only backups created without encryption. * AllBackups: the service provider can restore any backups.   Default: None.  Note: The AllBackups access level is permanent and cannot be revoked. | VBRVccRestoreAccessLevel | False | Named | False |
 | Force | Defines that the cmdlet will skip the certificate verification if the verification fails. | SwitchParameter | False | Named | False |
 | WhatIf | Defines that the cmdlet will write a message that describes the effects of running the cmdlet without actually performing any action. | SwitchParameter | False | Named | False |
 | Confirm | Defines that the cmdlet will display a prompt that asks if you want to continue running the command. | SwitchParameter | False | Named | False |
@@ -75,7 +77,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to add a cloud service provider with the following settings:   * The service provider IP address is 198.51.100.11.  * The service provider uses port 6252 for connection. * The TLS certificate thumbprint verification is enabled. The thumbprint is ‎e6 c0 e5 1a db 73 0c 13 b3 c3 74 d4 ee 93 ab d0 08 3f 7a a8.   |  | | --- | | $credentials = Get-VBRCloudProviderCredentials -Name "Tenant1"  Add-VBRCloudProvider -Address "198.51.100.11" -Description "Cloud gateway for SP" -Port 6252 -Credentials $credentials -VerifyCertificate -CertificateThumbprint "‎e6 c0 e5 1a db 73 0c 13 b3 c3 74 d4 ee 93 ab d0 08 3f 7a a8" |  Perform the following steps:   1. Run the [Get-VBRCloudProviderCredentials](get-vbrcloudprovidercredentials.md) cmdlet. Specify the Name parameter value. Save the result to the $credentials variable. 2. Run the Add-VBRCloudProvider cmdlet. Specify the following settings:  * Specify the Address and the Description parameter values. * Specify the Port parameter value. * Set the $credentials variable as the Credentials parameter value. * Provide the VerifyCertificate parameter. * Specify the CertificateThumbprint parameter value. |
+| This example shows how to add a cloud service provider with the following settings:   * The service provider IP address is 198.51.100.11.  * The service provider uses port 6252 for connection. * The TLS certificate thumbprint verification is enabled. The thumbprint is ‎e6 c0 e5 1a db 73 0c 13 b3 c3 74 d4 ee 93 ab d0 08 3f 7a a8. * The service provider can restore unencrypted backups.   |  | | --- | | $credentials = Get-VBRCloudProviderCredentials -Name "Tenant1"  Add-VBRCloudProvider -Address "198.51.100.11" -Description "Cloud gateway for SP" -Port 6252 -Credentials $credentials -VerifyCertificate -CertificateThumbprint "‎e6 c0 e5 1a db 73 0c 13 b3 c3 74 d4 ee 93 ab d0 08 3f 7a a8" -RestoreAccessLevel UnencryptedBackups |  Perform the following steps:   1. Run the [Get-VBRCloudProviderCredentials](get-vbrcloudprovidercredentials.md) cmdlet. Specify the Name parameter value. Save the result to the $credentials variable. 2. Run the Add-VBRCloudProvider cmdlet. Specify the following settings:  * Specify the Address and the Description parameter values. * Specify the Port parameter value. * Set the $credentials variable as the Credentials parameter value. * Provide the VerifyCertificate parameter. * Specify the CertificateThumbprint parameter value. * Specify the RestoreAccessLevel parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Adding Cloud Service Provider and Configuring Network Extension Appliance
 
@@ -88,4 +90,5 @@ Related Commands
 * [Get-VBRCloudProviderCredentials](get-vbrcloudprovidercredentials.md)
 * [Get-VBRCloudProviderNetworkAppliance](get-vbrcloudprovidernetworkappliance.md)
 
+Page updated 2026-06-04
 
