@@ -3,8 +3,8 @@ title: "Instant Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_instant_recovery.html"
-last_updated: "3/22/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Instant Recovery
@@ -22,4 +22,5 @@ In This Section
 * [Switchover](vesql_switchover.md)
 * [Managing Instant Recovery Session](vesql_instant_session.md)
 
+Page updated 2026-04-14
 
