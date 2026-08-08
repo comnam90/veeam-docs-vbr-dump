@@ -3,8 +3,8 @@ title: "Configuring Plug-In on Microsoft Windows"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/configuring_rman_plugin_win.html"
-last_updated: "5/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Plug-In on Microsoft Windows
@@ -17,7 +17,7 @@ Note that configuration wizard of Veeam Plug-In for Oracle RMAN changes the sett
 To configure Veeam Plug-In, do the following:
 
 1. Log in to the Oracle server with an account which is a member of the ORA\_DBA group and has SYSDBA privileges.
-2. On the Oracle server, click launch the Veeam RMAN Configuration Wizard (%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\Veeam.Backup.RMAN.Configuration.exe).
+2. On the Oracle server, launch the Veeam RMAN Configuration Wizard (%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\Veeam.Backup.RMAN.Configuration.exe).
 3. At the Backup Server step of the wizard, specify the DNS name of the Veeam Backup & Replication server and OS user account credentials that will be used to connect to the server.
 
 ![Configuring Plug-In on Microsoft Windows](images/plugins_rman_plugin_wizard_vbr.webp)
@@ -45,7 +45,7 @@ Note that if you use Veeam Plug-In compression in combination with Oracle RMAN i
 |  |
 | --- |
 | Important |
-| You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Veeam Backup Administrator role or Veeam Backup Operator and Veeam Restore Operator roles to the account.  For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). |
+| You can work with backups created by Veeam Plug-In only with the account used for creating the backups. If you want to use another account, assign the Backup Administrator role or Backup Operator and Restore Operator roles to the account.  For details on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md). |
 
 1. At the Authentication step of the wizard, you can select a preferred authentication method to connect to the backup database.
 
@@ -137,4 +137,5 @@ Configuration Tool Commands
 | --add-preferred-network <network\_IP\_address> <position\_in\_list> | Adds a network to the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository.  To select to which network Veeam Plug-In connects first, you can set the order number of the network in the list. For more information, see [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_rman.md). |
 | --remove-preferred-network <network\_IP\_address> | Removes a specified network from the list of preferred networks for Veeam Plug-In data traffic to the remote backup repository. |
 
+Page updated 2026-07-10
 
