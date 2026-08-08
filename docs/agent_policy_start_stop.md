@@ -3,8 +3,8 @@ title: "Starting and Stopping Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_start_stop.html"
-last_updated: "8/21/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting and Stopping Backup
@@ -20,13 +20,21 @@ Veeam Backup & Replication does not check whether connection to Veeam Agent comp
 
 Keep in mind that you cannot start or stop the backup process for protection groups for pre-installed Veeam Agents and their members. Veeam Agent computers included in such protection groups will be skipped and Veeam Backup & Replication will display a warning message in a backup policy session statistics.
 
-Starting Backup
+You can start or stop backup on Veeam Agent computers added to a backup policy in one of the following ways:
 
-To start backup on Veeam Agent computers added to the backup policy:
+* [Using Veeam Backup & Replication Console](#console)
+* [Using Veeam Backup & Replication Web UI](#webui)
+
+Starting and Stopping Backup Using Veeam Backup & Replication Console
+
+To start or stop backup on Veeam Agent computers added to the backup policy:
 
 1. Open the Home view.
 2. In the inventory pane, select Jobs.
-3. In the working area, select the backup policy and click Start on the ribbon or right-click the job and select Start.
+3. In the working area, select the backup policy and do one of the following:
+
+* To start backup, click Start on the ribbon or right-click the policy and select Start.
+* To stop backup, click Stop on the ribbon or right-click the policy and select Stop. In the displayed window, click Yes.
 
 |  |
 | --- |
@@ -35,14 +43,17 @@ To start backup on Veeam Agent computers added to the backup policy:
 
 [![Starting and Stopping Backup](images/agent_policy_start.webp)](images/agent_policy_start.webp)
 
-Stopping Backup
+Starting and Stopping Backup Using Veeam Backup & Replication Web UI
 
-To stop backup on Veeam Agent computers added to the backup policy:
+To start or stop backup on Veeam Agent computers added to the backup policy:
 
-1. Open the Home view.
-2. In the inventory pane, select Jobs.
-3. In the working area, select the backup policy and click Stop on the ribbon or right-click the job and select Stop. In the displayed window, click Yes.
+1. In the management pane, click Jobs.
+2. Select the check box next to the necessary backup policy and do one of the following:
 
-[![Stop Backup Policy](images/agent_policy_stop.webp)](images/agent_policy_stop.webp "Stop Backup Policy")
+* To start backup, click Start on the toolbar or right-click the policy and select Start.
+* To stop backup, click Stop on the toolbar or right-click the policy and select Stop. In the Stop Job window, click Yes.
 
+[![Start or Stop Backup](images/agent_policy_start_stop_web.webp)](images/agent_policy_start_stop_web.webp "Start or Stop Backup")
+
+Page updated 2026-07-28
 
