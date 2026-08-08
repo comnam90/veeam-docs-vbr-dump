@@ -3,8 +3,8 @@ title: "Health Check for Backup Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_health_check_hv.html"
-last_updated: "8/13/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Health Check for Backup Files
@@ -138,4 +138,5 @@ Related Topics
 
 [Reverse Incremental Backup (Deprecated)](reversed_incremental_backup_hv.md)
 
+Page updated 2026-08-04
 
