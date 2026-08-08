@@ -3,8 +3,8 @@ title: "Step 2. Specify Veeam Data Cloud Vault Name"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_name_web.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Veeam Data Cloud Vault Name
@@ -19,4 +19,5 @@ If you want to limit the maximum number of tasks that can be processed at once, 
 
 [![Step 2. Specify New Veeam Data Cloud Vault Name](images/veeam_vault_name_web.webp)](images/veeam_vault_name_web.webp)
 
+Page updated 2026-07-23
 
