@@ -3,8 +3,8 @@ title: "Notification Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job_advanced_notifications.html"
-last_updated: "6/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Notification Settings
@@ -37,8 +37,9 @@ Email notifications will be sent if you configure global email notification sett
 * Select the Make file or folder processing issues result in a job warning to receive a warning at the end of the job processing session if any issues with file or folder processing occur.
 * Select the Make file or folder attribute's processing issues result in a job warning to receive a warning at the end of the job processing session if any issues with processing of file or folder attributes occur.
 
-1. If you want to save this set of settings as the default one, click Save as default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
+1. If you want to save this set of settings as the default one, click Save as Default. When you create a new job, the saved settings will be offered as the default. This also applies to all users added to the backup server.
 
 ![Notification Settings](images/file_share_backup_job_advanced_notifications.webp "Notification Settings")
 
+Page updated 2026-07-28
 
