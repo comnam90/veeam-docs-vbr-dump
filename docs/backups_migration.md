@@ -3,8 +3,8 @@ title: "Migrating Backups within Scale-Out Backup Repository"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backups_migration.html"
-last_updated: "4/24/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Migrating Backups within Scale-Out Backup Repository
@@ -87,7 +87,7 @@ To migrate data, do the following:
 
 Copying Data Between Different Buckets or Containers with 3rd Party Tool
 
-You can follow this scenario in case you want to use a 3rd party tool to migrate data located in an object storage repository between different buckets or containers of the same same object storage repository, do the following:
+You can follow this scenario in case you want to use a 3rd party tool to migrate data located in an object storage repository between different buckets or containers of the same object storage repository, do the following:
 
 1. Use any available 3rd party tool to copy ALL data from an old bucket or container to a new bucket or container.
 2. Add a new object storage repository to the backup infrastructure. For more information, see the [Adding Object Storage Repositories](new_object_storage.md) section.
@@ -109,4 +109,5 @@ To do this, perform the following steps:
 1. Switch the necessary extent into the [Maintenance](sobr_maintenance.md) mode.
 2. Evacuate backups from the extent.
 
+Page updated 2026-07-23
 
