@@ -3,8 +3,8 @@ title: "/systemSessions/{ID}/events"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/systemsessions_id_events.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /systemSessions/{ID}/events
@@ -34,6 +34,7 @@ The /systemSessions/{ID}/events resource has a resource representation of the fo
 
 |  |
 | --- |
-| <SystemSessionEvents xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0" Href="https://enterprise04.tech.local:9398/api/systemSessions/00057ade-8f1a-4b54-a265-391441981e25/events" Type="SystemSessionEvents"> |
+| <SystemSessionEvents xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.veeam.com/ent/v1.0" Href="https://enterprise04.tech.local:9398/api/systemSessions/00057ade-8f1a-4b54-a265-391441981e25/events" Type="SystemSessionEvents">   <Links>     <Link Href="https://enterprise04.tech.local:9398/api/systemSessions/00057ade-8f1a-4b54-a265-391441981e25?format=Entity" Name="Collect Job @2025-01-27 17:05:52.069837" Type="BackupJobSession" Rel="Up"/>   </Links>   <Events>     <CreationTimeUTC>2025-01-27T17:05:52.069837</CreationTimeUTC>     <Message>Starting data collection job...</Message>     <Order>1</Order>   </Events>   <Events>     <CreationTimeUTC>2025-01-27T17:05:52.101105</CreationTimeUTC>     <Message>Job successfully started.</Message>     <Order>2</Order>   </Events>   <Events>     <CreationTimeUTC>2025-01-27T17:05:52.101105</CreationTimeUTC>     <Message>Checking deleted backup servers removal</Message>     <Order>3</Order>   </Events>   <Events>     <CreationTimeUTC>2025-01-27T17:05:52.116682</CreationTimeUTC>     <Message>Preparing to collect data from enterprise05.tech.local</Message>     <Order>4</Order>   </Events>   <Events>     <CreationTimeUTC>2025-01-27T17:05:52.116682</CreationTimeUTC>     <Message>Retrieving data from enterprise05.tech.local...</Message>     <Order>5</Order>   </Events>   <Events>     <CreationTimeUTC>2025-01-27T17:06:10.30038</CreationTimeUTC>     <Message>Data collection from enterprise05.tech.local completed successfully.</Message>     <Order>6</Order>   </Events>   <Events>     <CreationTimeUTC>2025-01-27T17:06:10.488816</CreationTimeUTC>     <Message>Data collection job finished.</Message>     <Order>7</Order>   </Events> </SystemSessionEvents> |
 
+Page updated 2026-07-29
 
