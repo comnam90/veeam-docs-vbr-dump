@@ -3,8 +3,8 @@ title: "/backups/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/backups_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /backups/{ID}
@@ -46,7 +46,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef UID="urn:veeam:Backup:c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70" Name="Simple backup\_1" Href="https://localhost:9398/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70" Type="BackupReference" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| <EntityRef UID="urn:veeam:Backup:c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70" Name="Simple backup\_1" Href="https://localhost:9398/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70" Type="BackupReference" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/backupServers/8c88c6d6-931f-4044-8c0b-7a0c5f188b00" Name="local.host" Type="BackupServerReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/repositories/b8832f03-2c9e-4222-8d0b-e43e0c912f93" Name="Scale-out Backup Repository 2" Type="RepositoryReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70?format=Entity" Name="Simple backup\_1" Type="Backup" Rel="Alternate"/>     <Link Href="http://local.host:9399/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70/childbackups" Type="BackupReferenceList" Rel="Up"/>   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -54,4 +54,5 @@ Entity resource representation:
 | --- |
 | <Backup Href="http://local.host:9399/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70?format=Entity" Type="Backup" Name="Simple backup\_1" UID="urn:veeam:Backup:c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/repositories/b8832f03-2c9e-4222-8d0b-e43e0c912f93" Name="Scale-out Backup Repository 2" Type="RepositoryReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/backupServers/8c88c6d6-931f-4044-8c0b-7a0c5f188b00" Name="local.host" Type="BackupServerReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70" Name="Simple backup\_1" Type="BackupReference" Rel="Alternate"/>     <Link Href="http://local.host:9399/api/backups/c213fbfa-7b9e-4772-9ddc-3ecbdcc3fc70/childbackups?format=Entity" Type="BackupList" Rel="Up"/>   </Links>   <Platform>CustomPlatform</Platform>   <BackupType>ParentBackup</BackupType> </Backup |
 
+Page updated 2026-07-29
 
