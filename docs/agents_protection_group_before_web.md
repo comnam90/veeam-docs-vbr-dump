@@ -1,0 +1,28 @@
+---
+title: "Before You Begin"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_before_web.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Before You Begin
+
+
+Before creating a protection group, consider the following prerequisites and limitations:
+
+|  |
+| --- |
+| NOTE |
+| In the Veeam Backup & Replication web UI, you can create protection groups for Microsoft Windows and Linux computers only. To work with other operating systems, use the [Veeam Backup & Replication console](vbr_ui.md). |
+
+* When Veeam Backup & Replication performs discovery of protected computers, Veeam Backup & Replication connects to every computer added to the protection group. If you instruct Veeam Backup & Replication to perform discovery immediately after the protection group is created, make sure that all computers added to the protection group are powered on and may be accessed over the network. Otherwise, Veeam Backup & Replication will be unable to connect to a protected computer and perform the required operations on this computer.
+* To install Veeam Agents, you can configure Veeam Backup & Replication to connect to the protected computers using certificate-based authentication instead of user credentials. Before creating a protection group for individual computers, you must install the certificates on the computers that you plan to add to the protection group. For more information, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md).
+* We recommend that you do not add a computer to a protection group by specifying a dynamic IP address assigned to this computer. If such computer receives another IP address from a DHCP server, Veeam Backup & Replication will be unable to discover the computer and perform on this computer operations defined in the protection group settings.
+* We recommend that you do not add a computer to a protection group by specifying a public IP address assigned to this computer. If you add such computer to a backup policy targeted at a cloud repository, the name of the subtenant account created for the computer can contain the public IP address. This IP address will be visible to the Veeam Cloud Connect service provider who has access to subtenant account settings.
+
+* Do not install Veeam Agent for Linux on servers that are used as components of the Veeam Backup & Replication infrastructure. This includes Veeam backup servers, backup repositories, proxy servers, mount servers, distribution servers, gateway and helper appliance servers, and any other backup infrastructure component that has the Veeam Mount Service deployed.
+
+Page updated 2026-06-30
+
