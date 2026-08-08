@@ -3,8 +3,8 @@ title: "Backup Job and Snapshot Script Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_guest_scripts.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Job and Snapshot Script Settings
@@ -21,6 +21,11 @@ You can specify custom scripts that will be executed within the backup job sessi
 | --- |
 | IMPORTANT |
 | Snapshot script settings are not available if you select the Backup directly from live file system option at the [Backup Mode](agent_job_mode_linux.md) step of the wizard. If this option is selected, data will be backed up without a snapshot. |
+
+|  |
+| --- |
+| Note |
+| If you use Veeam Backup & Replication on Linux, you must place the scripts into the /var/lib/veeam/scripts\* directory on the backup server.  If you use Veeam Backup & Replication on Windows, you can place the script files in any local folder on the backup server. |
 
 |  |
 | --- |
@@ -46,4 +51,5 @@ During the backup job session, Veeam Backup & Replication uploads the scripts to
 
 ![Backup Job and Snapshot Script Settings](images/agent_job_linux_scripts.webp)
 
+Page updated 2026-08-05
 
