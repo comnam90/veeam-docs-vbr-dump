@@ -3,8 +3,8 @@ title: "Quantum DXi"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deduplicating_appliance_quantum.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Quantum DXi
@@ -83,7 +83,13 @@ Configuration on Veeam Backup & Replication Side
 At the Access step of the wizard, select the added SSH credentials from the drop-down list. Click Optional components and advanced connection settings to configure connection ports:
 
 1. To configure a port for a component, select the required component and click Edit. In the Component port window, specify the port number and click OK to save the changes.
-2. In the Data transfer options section, provide a range of ports that will be used as a transmission channel.
+
+|  |
+| --- |
+| Note |
+| When you add Quantum DXi version 5.3.0 or later, component ports are assigned automatically. |
+
+1. In the Data transfer options section, provide a range of ports that will be used as a transmission channel.
 
 ![Quantum DXi](images/dedup_quant_ports.webp)
 
@@ -111,4 +117,5 @@ Related Topics
 
 [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
+Page updated 2026-06-19
 
