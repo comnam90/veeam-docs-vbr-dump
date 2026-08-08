@@ -3,8 +3,8 @@ title: "Protection Groups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_groups.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Protection Groups
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 In Veeam Backup & Replication, computers that you want to protect with Veeam Agents are organized into protection groups. Technically, a protection group is a container in the Veeam Backup & Replication inventory aimed to combine protected computers of a specific type. For example, you can use a dedicated protection group for computers of the same type (for example, laptops, workstations or servers) or computers running the same OS type to simplify management of such computers. You can also use a separate protection group for a number of Veeam Agent computers that you want to manage in a different way from other machines in your infrastructure.
 
-To start managing Veeam Agents in Veeam Backup & Replication, you need to create a protection group in the inventory and specify computers that you want to protect with Veeam Agents in the protection group settings. You can create one or more protection groups depending on the size and complexity of your infrastructure. Protection groups appear under the Physical and Cloud Infrastructure node in the Inventory view of the Veeam Backup & Replication console.
+To start managing Veeam Agents in Veeam Backup & Replication, you need to create a protection group in the inventory and specify computers that you want to protect with Veeam Agents in the protection group settings. You can create one or more protection groups depending on the size and complexity of your infrastructure. In the Veeam Backup & Replication console, protection groups appear under the Physical and Cloud Infrastructure node in the Inventory view. In the Veeam Backup & Replication web UI, protection groups appear under Inventory > Protection Groups.
 
 |  |
 | --- |
@@ -37,4 +37,5 @@ Related Tasks
 
 [Creating Protection Groups](protection_group_add.md)
 
+Page updated 2026-06-29
 
