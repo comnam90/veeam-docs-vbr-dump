@@ -3,8 +3,8 @@ title: "Microsoft SQL Server Transaction Log Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_sql_hv.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Microsoft SQL Server Transaction Log Settings
@@ -17,14 +17,20 @@ To define how Veeam Backup & Replication will process transaction logs on this V
 1. In the Processing Settings window, click the General tab.
 2. In the VSS Settings section, select Process transaction logs with this job. For more information, see [VSS settings](backup_job_vss_application_vm_web.md#vss).
 3. Switch to the SQL tab.
-4. Specify how transaction logs must be processed. You can select one of the following options:
+4. In the Specify Windows account with sysadmin role on SQL Server section, specify a user account that Veeam Backup & Replication will use to connect to the Microsoft SQL Server. The account must have the privileges listed in the section [Performing Guest Processing](permissions_guest_processing.md#rptcb).
+
+You can select Use guest credentials in the list of user accounts. In this case, Veeam Backup & Replication will use the account specified at the Guest Processing step of the wizard.
+
+To use Microsoft SQL Server authentication instead of Windows authentication, select the Use SQL Server authentication check box. In this case, the specified account is treated as a Microsoft SQL Server account. This check box is not available if you select the Use guest credentials option.
+
+1. Specify how transaction logs must be processed. You can select one of the following options:
 
 * Select Truncate logs to truncate transaction logs after successful backup. The non-persistent runtime components or persistent components running on the VM guest OS will wait for the backup to complete successfully and then truncate transaction logs. If the job does not manage to back up the Microsoft SQL Server VM, the logs will remain untouched on the VM guest OS until the next start of the non-persistent runtime components or persistent components.
 
 |  |
 | --- |
 | Note |
-| If the account specified at the [Guest Processing](backup_job_vss_hv.md) step does not have enough rights, Veeam Backup & Replication tries to truncate logs using the local SYSTEM account for Microsoft SQL Server 2008 and 2008 R2. For other Microsoft SQL Server versions, Veeam Backup & Replication uses NT AUTHORITY\SYSTEM account.  Make sure that these accounts have permissions listed in section [Performing Guest Processing](required_permissions.md#rptcb). |
+| If the account specified at the [Guest Processing](backup_job_vss_hv.md) step does not have enough rights, Veeam Backup & Replication tries to truncate logs using the local SYSTEM account for Microsoft SQL Server 2008 and 2008 R2. For other Microsoft SQL Server versions, Veeam Backup & Replication uses NT AUTHORITY\SYSTEM account.  Make sure that these accounts have permissions listed in section [Performing Guest Processing](permissions_guest_processing.md#rptcb). |
 
 * Select Do not truncate logs to preserve transaction logs. When the backup job completes, Veeam Backup & Replication will not truncate transaction logs on the Microsoft SQL Server VM.
 
@@ -58,4 +64,5 @@ For more information on log shipping servers and how they are selected, see [Log
 
 ![Microsoft SQL Server Transaction Log Settings](images/hv_backup_job_vss_sql.webp)
 
+Page updated 2026-06-24
 

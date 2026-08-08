@@ -3,8 +3,8 @@ title: "GET /agents/protectionGroups/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_agents_protectiongroups_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /agents/protectionGroups/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of a protection group, for example: urn:veeam:AgentProtectionGroup:1ca088be-7a63-43b9-bda1-2db2ad7a1bd5. |
 | Name | String | Name of a protection group, for example: Agent Protection Group. |
 | RescanScheduleEnabled | Bool | Defines whether schedule for automatic computer discovery is enabled. Possible values:   * True * False |
@@ -69,8 +72,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the protection group was created. |
 | /agents/protectionGroups/{ID} | Alternate | Alternate URL of the [/agents/protectionGroups/{ID}](agents_protectiongroups_id.md) resource. |
 | /agents/protectionGroups/{ID}/discoveredComputers | Down | URL of the [/agents/protectionGroups/{ID}/discoveredComputers](agents_protectiongroups_id_discoveredcomputers.md) resource — a collection of discovered computers contained in the protection group. |
@@ -81,6 +85,7 @@ The example below returns an entity representation of the protection group resou
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/agents/protectionGroups/1ca088be-7a63-43b9-bda1-2db2ad7a1bd5?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <AgentProtectionGroup Href="http://local.host:9399/api/agents/protectionGroups/1ca088be-7a63-43b9-bda1-2db2ad7a1bd5?format=Entity" Type="AgentProtectionGroup" Name="sql servers" UID="urn:veeam:AgentProtectionGroup:1ca088be-7a63-43b9-bda1-2db2ad7a1bd5" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> |
+| Request:  GET https://localhost:9398/api/agents/protectionGroups/1ca088be-7a63-43b9-bda1-2db2ad7a1bd5?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <AgentProtectionGroup Href="http://local.host:9399/api/agents/protectionGroups/1ca088be-7a63-43b9-bda1-2db2ad7a1bd5?format=Entity" Type="AgentProtectionGroup" Name="sql servers" UID="urn:veeam:AgentProtectionGroup:1ca088be-7a63-43b9-bda1-2db2ad7a1bd5" xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <Links>     <Link Href="http://local.host:9399/api/backupServers/8c88c6d6-931f-4044-8c0b-7a0c5f188b00" Name="local.host" Type="BackupServerReference" Rel="Up"/>     <Link Href="http://local.host:9399/api/agents/protectionGroups/1ca088be-7a63-43b9-bda1-2db2ad7a1bd5" Name="sql servers" Type="AgentProtectionGroupReference" Rel="Alternate"/>     <Link Href="http://local.host:9399/api/agents/protectionGroups/1ca088be-7a63-43b9-bda1-2db2ad7a1bd5/discoveredComputers?format=Entity" Type="DiscoveredComputerList" Rel="Down"/>   </Links>   <RescanScheduleEnabled>true</RescanScheduleEnabled>   <HierarchyObjRef>urn:AgentForWindows:AgentProtectionGroup:00000000-0000-0000-0000-000000000000.730dc485-84c2-4a9d-86e7-2e35d1d5a0be</HierarchyObjRef> </AgentProtectionGroup> |
 
+Page updated 2026-07-29
 

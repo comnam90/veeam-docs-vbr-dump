@@ -3,8 +3,8 @@ title: "Step 2. Specify Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_multiple_pit_specify_restore_point.html"
-last_updated: "2/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Specify Restore Point
@@ -23,4 +23,5 @@ Note that if the backed-up WAL files do not contain information about some insta
 
 ![Step 2. Specify Restore Point](images/vep_point_in_time_specify_restore_point.webp "Specifying Restore Point")
 
+Page updated 2026-07-22
 

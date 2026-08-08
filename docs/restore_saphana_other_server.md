@@ -3,8 +3,8 @@ title: "Restore to Another Server (System Copy)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_saphana_other_server.html"
-last_updated: "11/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore to Another Server (System Copy)
@@ -45,12 +45,12 @@ You can restore a database to another server using an account and authentication
 
 |  |
 | --- |
-| Select authentication type or disable the functionality: |
+| Select authentication type or disable the functionality: 0. To disable the functionality 1. Currently set authentication data 2. Credentials 3. Recovery token Enter authentication type number: 1 |
 
 1. Veeam Plug-In will display backups available for restore under the user account specified in the Veeam Plug-In configuration. The list of backups depends on the authentication method specified for the user account:
 
 * For the user account with a security certificate, Veeam Plug-In displays backups created under this user account.
-* For the user account with credentials, if the account has the Veeam Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
+* For the user account with credentials, if the account has the Restore Operator role assigned in Veeam Backup & Replication, Veeam Plug-In displays all backups that reside in the backup repository. Otherwise, Veeam Plug-In displays backups created under the specified user account.
 * For the user account with a recovery token, Veeam Plug-In displays backups for which the recovery token was generated.
 
 |  |
@@ -128,4 +128,5 @@ You can restore a database to another server using a recovery token generated in
 
 1. Perform the SAP HANA System Copy based restore following [this SAP KB article](https://apps.support.sap.com/sap/support/knowledge/preview/en/2486224) (requires an SAP ID).
 
+Page updated 2026-07-10
 

@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_considerations.html"
-last_updated: "1/22/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -14,15 +14,14 @@ This section lists considerations and known limitations of Veeam Explorer for Po
 
 General
 
-* High availability cluster configurations and replication setups of PostgreSQL servers are not supported.
 * Veeam Explorer for PostgreSQL does not support recovery operations over VIX API or vSphere Automation API.
 * Recovery of databases that reside in an encrypted file system on the source machine is not supported. In particular, encrypted LVM volumes are not supported.
-* You can recover PostgreSQL data over SSH only, restore using Linux Management Agent is not supported.
+* For Linux target servers, you can recover PostgreSQL data over SSH only. Restore using Linux Management Agent is not supported.
 * Veeam Explorer for PostgreSQL does not support data recovery from backed-up machines that have 3rd party PostgreSQL variants or extensions installed.
 * With Veeam Explorer for PostgreSQL, you can only recover PostgreSQL data from backups of powered-on machines and from instances that were running at the time of backup.
 
 * Restore, publishing, instant recovery, and export operations of PostgreSQL instances or databases to a point-in-time state require backups of PostgreSQL write ahead log (WAL) files. To allow Veeam Backup & Replication to create PostgreSQL WAL file backups, PostgreSQL instances must have the replica wal\_level setting or higher. The minimal wal\_level setting does not write information about database transactions and it allows you to create a crash-consistent backup only.
-
+* Veeam Explorer for PostgreSQL supports uninterrupted point-in-time restore across Patroni switchover or failover events because all nodes share a common WAL history — but only when the PostgreSQL timeline increments continuously (n → n+1). A gap in the timeline breaks the chain and prevents seamless point-in-time restore across that point.
 * Restore, publishing, instant recovery, and export operations of PostgreSQL data from replicas can only recover your data to the latest state of the selected restore point. Replication jobs do not copy PostgreSQL write ahead log (WAL) files so data recovery to a point-in-time state is not supported.
 
 * When recovering your PostgreSQL data from CDP replicas, consider the following limitations:
@@ -50,15 +49,15 @@ Note that if the include, include\_dir and include\_if\_exist options are used, 
 * The en\_US.utf8 locale must be installed on the target server. The locale is also required on the staging server for export operations.
 * Interactive login scripts configured on the target server (and staging server for export operations) may interrupt the recovery process. To prevent data recovery from failure, disable the scripts.
 
-* If PostgreSQL utilities (such as pg\_ctl, pg\_dump and pg\_basebackup) are located in custom directories on the target server (the staging server for export operations), Veeam Explorer for PostgreSQL may not find the utilities. In this case, go to the /etc/veeam/explorerstandbyservice/ (for Linux-based mount servers) or %ProgramData%\Veeam\Backup\ExplorerStandByService\ (for Windows-based mount servers) directory of the mount server. If a configuration file named config.xml (for Linux-based mount servers) or Config.xml (for Windows-based mount servers) does not exist in this directory, create this file.
+* [For recovery to Linux-based machines] If PostgreSQL utilities (such as pg\_ctl, pg\_dump and pg\_basebackup) are located in custom directories on the target server (the staging server for export operations), Veeam Explorer for PostgreSQL may not find the utilities. In this case, go to the /etc/veeam/explorerstandbyservice/ (for Linux-based mount servers) directory of the mount server. If a configuration file named config.xml (for Linux-based mount servers) or Config.xml (for Windows-based mount servers) does not exist in this directory, create this file.
 
 In the configuration file, enter the following XML code:
 
 |  |
 | --- |
-| <Veeam>     <PostgreSqlExplorer>         <PostgreSQL PostgreSqlBinariesDirectory="<path1> <path2>"/>     </PostgreSqlExplorer>  </Veeam> |
+| <Veeam>  <PostgreSqlExplorer>  <PostgreSQL PostgreSqlBinariesDirectory="<path1> <path2>"/>  </PostgreSqlExplorer>  </Veeam> |
 
-where <path1> and <path2> are paths to directories that contain PostgreSQL utilities. For example, the paths can be /directory\_name/postgres/postgres-14.10.0/bin and /var/lib/pg (note the absence of a separator at the end of the paths). You can add multiple paths, but make sure to separate them with spaces, not commas.
+where <path1> and <path2> are paths to directories that contain PostgreSQL utilities. For example, on a Linux-based target server, the paths can be /directory\_name/postgres/postgres-14.10.0/bin and /var/lib/pg (note the absence of a separator at the end of the paths). You can add multiple paths, but make sure to separate them with spaces, not commas.
 
 To finish the configuration, save the configuration file and restart the Veeam Explorers Recovery Service on the same server.
 
@@ -67,19 +66,23 @@ To finish the configuration, save the configuration file and restart the Veeam E
 Restore, Publishing and Instant Recovery
 
 * Mount of Btrfs and ZFS disks will fail if you perform instant recovery, data restore or data publish operations to the original server. The issue occurs due to a restriction for mounting 2 Btrfs or ZFS disks with identical IDs to the same machine (the disks have the same IDs on the backup and the original server).
-* With Veeam Explorer for PostgreSQL, you can restore, instantly recover and publish entire PostgreSQL instances; restore, instant recovery and publishing of individual databases is not supported.
+* Veeam Explorer for PostgreSQL supports restore, publish and instant recovery only to a target server that runs the same operating system as the backed-up machine. You cannot recover a Linux-based backup to a Windows target server or a Windows-based backup to a Linux target server.
+* With Veeam Explorer for PostgreSQL, you can publish and instantly recover entire PostgreSQL instances only. Publishing and instant recovery of individual databases is not supported.
+* You can restore individual PostgreSQL databases to Linux-based target servers only.
+* [For instance restore and instant recovery to Linux-based machines] If the target instance is managed by Patroni, restoring a PostgreSQL instance to it will overwrite the high-availability infrastructure with a standalone instance. To preserve the cluster, restore the instance to a different location and add it to the cluster manually, as described in the [Converting Restored Standalone Instance to Cluster](vep_restoring_instance_convert_to_cluster.md) section. You can also restore individual databases directly to the clustered instance, as described in the [Restoring Databases](vep_restoring_databases.md) section.
 * PostgreSQL on the target machine and on the backed-up machine must be of the same major version. For example, you can restore a PostgreSQL instance based on PostgreSQL 15.1 to a machine with PostgreSQL 15.3.
 * Before you restore, instantly recover, or publish an PostgreSQL instance to another server, make sure PostgreSQL is installed on the target machine.
-* [For restore and instant recovery] If you specify another data directory for the recovered PostgreSQL instance, services will not be created automatically (including systemd).
-* [For restore and instant recovery on Debian and Ubuntu] When you restore a PostgreSQL instance to a new data directory, Veeam Explorer for PostgreSQL saves PostgreSQL configuration files to the specified data directory (not to the /etc/postgresql directory). In this case, you will not be able to discover the recovered PostgreSQL instance with the pg\_lsclusters utility.
-* [For publishing and instant recovery] Make sure that the volume with the write cache has enough free disk space to store the changes of the published database. The write cache is stored in the /var/lib/veeam/IRCache folder on the mount server.
+* [For instance restore and instant recovery] If you specify another data directory for the recovered PostgreSQL instance, services will not be created automatically (including systemd).
+* [For instance restore and instant recovery to Debian and Ubuntu] When you restore a PostgreSQL instance to a new data directory, Veeam Explorer for PostgreSQL saves PostgreSQL configuration files to the specified data directory (not to the /etc/postgresql directory). In this case, you will not be able to discover the recovered PostgreSQL instance with the pg\_lsclusters utility.
+* [For publishing and instant recovery] Make sure that the volume with the write cache has enough free disk space to store the changes of the published database. The write cache is stored in the /var/lib/veeam/IRCache (for Linux machines) or in the C:\ProgramData\Veeam\Backup\IRCache folder (for Windows machines) on the mount server.
 
 Export
 
 * Exporting multiple databases one by one may cause performance issues — do so only if you need to restore each database to a different point-in-time state. To export up to a 1000 databases in parallel, start the export sessions from a published PostgreSQL instance (the only option if you use PowerShell), a backed-up PostgreSQL instance, or from the backed-up PostgreSQL server.
-* Exporting databases to the local host where Veeam Explorer for PostgreSQL is running is only supported for Windows-based backup servers (Veeam Backup & Replication version 12.1 and later). If you use a Linux-based backup server, you can only export your databases to another Linux server.
+* Exporting databases to another Windows machine is only supported for Windows-based backup servers (Veeam Backup & Replication version 12.1 and later). If you use a Linux-based backup server, you can only export your databases to another Linux server.
 * You cannot export databases whose pg\_database system catalog has the datallowconn parameter set to false. This setting prevents all connections to the database and causes export operations to fail. For example, this is the case for the template0 database, which is used to create new databases — as a template database, it must remain unchanged.
 * PostgreSQL on the staging server and on the backed-up machine must be of the same major version. For example, if PostgreSQL 15.1 is installed on the backed-up machine, the staging server can have PostgreSQL 15.3.
 * You can use pg\_restore to reconstruct a database from a DUMP file exported with Veeam Explorer for PostgreSQL. If a new database is created in the process and the database in the DUMP file has tablespaces, you must manually create tablespaces with the same names as the ones in the DUMP file. Note that the --no-tablespace argument of the pg\_restore utility, which places the reconstructed database in the default tablespace, is not supported for DUMP files exported with Veeam Explorer for PostgreSQL. For more information, see [Restoring Exported Database](vep_export_restore_exported_databases.md).
 
+Page updated 2026-07-30
 

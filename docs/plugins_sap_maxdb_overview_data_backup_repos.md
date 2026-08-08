@@ -3,8 +3,8 @@ title: "Veeam Backup Repositories"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_overview_data_backup_repos.html"
-last_updated: "6/26/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Backup Repositories
@@ -12,7 +12,7 @@ product_version: "13.0.2.29"
 
 Veeam Plug-Ins store backup files in repositories added to the Veeam Backup & Replication infrastructure. In this section, you can find the list of supported backup repositories and limitations for Veeam Plug-In backups.
 
-Before you start performing operations on backup repositories within the Veeam Backup & Replication infrastructure, consider that you need to set the access permissions for each repository. For details, see [Access and Encryption Settings on Repositories](plugins_sap_maxdb_deploy_repo_permissions.md).
+Before you start performing operations on backup repositories within the Veeam Backup & Replication infrastructure, consider that you need to set the access permissions for each repository. For details, see [Access and Encryption Settings on Repositories](repository_permissions_sap_orcl.md).
 
 Supported Backup Repositories
 
@@ -31,9 +31,6 @@ You can use the following types of repositories added to the Veeam Backup & Repl
 * [Infinidat InfiniGuard](infinidat_infiniguard.md)
 
 * [HPE StoreOnce](deduplicating_appliance_storeonce.md)
-
-If you plan to use HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x as a backup repository for Veeam Plug-In backups, the total number of stored files (data and metadata) must not exceed 3,000,000 per Catalyst store. If necessary, you can create multiple Catalyst stores on the same StoreOnce system to accommodate more files. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 3,000,000 file limit does not apply.
-
 * [Quantum DXi](deduplicating_appliance_quantum.md)
 * [ExaGrid](deduplicating_appliance_exgrid.md)
 
@@ -60,6 +57,8 @@ To configure the warning settings, add the following parameter in the veeam\_con
 Keep in mind that you must add the parameter to the existing line in the veeam\_config.xml file. If you create a new line with the same name as the existing line, Veeam Plug-In will consider parameters only in the first detected line. Other parameters will be ignored.
 
 * [Veeam extract utility](extract_utility.md) cannot extract Veeam Plug-In backup files.
+
+* Veeam Plug-In does not use [fast cloning](backup_repository_block_cloning.md). Repositories that use a file system with block cloning support, such as XFS or ReFS, are processed the same way as repositories that do not. As a result, every backup file occupies its full physical size, and no operation gets faster.
 
 Veeam Scale-Out Backup Repositories
 
@@ -148,7 +147,7 @@ You can configure Veeam Backup & Replication to transfer Veeam Plug-In backup fi
 * [For the Move policy] When backup files are transferred to the capacity tier, Veeam Backup & Replication takes into account only the creation time of backup files. Make sure that the [operational restore window](new_capacity_tier.md) is not longer than the whole backup chain cycle period. Otherwise, you may encounter the scenario when full backup files are transferred to the capacity tier and their increment backup files still remain in the performance tier.
 * The capacity tier immutability expiration date does not have the additional [block generation](block_gen.md) period. The immutability expiration date is based only on the number of days specified in the settings of the object storage backup repository.
 
-* In case a disaster strikes the scale-out repository and you have a Veeam Plug-In backup file on the capacity tier, you must re-create the scale-out repository before you restore from this backup file. You must connect the capacity tier with the Veeam Plug-In backup file to another backup server with Veeam Backup & Replication and a scale-out repository. After that, you can [import the backup files to Veeam Backup & Replication](importing_backups.md) and then perform data recovery operations.
+* In case a disaster strikes the scale-out repository and you have a Veeam Plug-In backup file on the capacity tier, you must add the object storage repository used as the capacity tier to another backup server with Veeam Backup & Replication as a standalone object storage repository. After that, you can [import the backup files to Veeam Backup & Replication](osr_import_backups.md) and then perform data recovery operations.
 
 |  |
 | --- |
@@ -176,7 +175,7 @@ For Veeam Plug-In backups, immutability works according to the following rules:
 
 Data Restore from Hardened Repository
 
-As a result of malware activity or unplanned actions, backup job metadata files (.VACM) may become unavailable in the hardened repository. In such cases, to restore data from the hardened repository, Veeam Backup & Replication can regenerate the .VACM file based on information from the backup job storage metadata file (.VASM). For more information, see [Restore from Hardened Repository](plugins_sap_maxdb_restore_from_hard.md).
+As a result of malware activity or unplanned actions, backup job metadata files (.VACM) may become unavailable in the hardened repository. In such cases, to restore data from the hardened repository, Veeam Backup & Replication can regenerate the .VACM file based on information from the backup job storage metadata file (.VASM). For more information, see [Restore from Hardened Repository](restore_from_immutable_sap_orcl.md).
 
 Object Storage Repository
 
@@ -192,7 +191,9 @@ Before you configure your backup infrastructure to back up to the object storage
 
 * Data in object storage repositories must be managed solely by Veeam Backup & Replication, including retention and data management. Lifecycle rules are not supported, and their enabling may result in backup and restore failures.
 * If you access the object storage repository using credentials with the read-only access permissions, data recovery options are not available for backups located in object storage repositories.
+* Veeam Plug-Ins write backup data to object storage repositories in 32 MB data blocks. Such large data blocks reduce the number of PUT requests sent to the object storage and, as a result, the costs associated with API calls.
 
 * For Microsoft Azure Blob storage, Veeam Plug-Ins do not support soft delete for blobs.
 
+Page updated 2026-08-06
 

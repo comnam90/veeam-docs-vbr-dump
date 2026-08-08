@@ -3,8 +3,8 @@ title: "Lookup Query"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/lookup_query.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Lookup Query
@@ -29,7 +29,7 @@ The example below returns a resource representation of the VM having the followi
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/lookup?hierarchyRef=urn:vCloud:Vm:fa099d3b-7376-49b1-884c-bb6fa47c7b1e.urn:vcloud:vm:6b2da27f-e653-495b-b515-2b18bbb4d3ec    Response:  200 OK    Response Body:  <HierarchyItems xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/lookup?hierarchyRef=urn:vCloud:Vm:fa099d3b-7376-49b1-884c-bb6fa47c7b1e.urn:vcloud:vm:6b2da27f-e653-495b-b515-2b18bbb4d3ec  Response:  200 OK  Response Body:  <HierarchyItems xmlns="http://www.veeam.com/ent/v1.0">   <HierarchyItem Type="HierarchyItem">     <ObjectRef>urn:vCloud:Vm:fa099d3b-7376-49b1-884c-bb6fa47c7b1e.urn:vcloud:vm:6b2da27f-e653-495b-b515-2b18bbb4d3ec</ObjectRef>     <ObjectType>Vm</ObjectType>     <ObjectName>dc-vm</ObjectName>   </HierarchyItem> </HierarchyItems> |
 
 Query String with Parameters
 
@@ -87,6 +87,7 @@ The example below returns a VM named DC that resides on the host having the foll
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/lookup?host=urn:veeam:HierarchyRoot:fa099d3b-7376-49b1-884c-bb6fa47c7b1e&name=DC&type=Vm    Response:  200 OK    Response Body:  <HierarchyItems xmlns="http://www.veeam.com/ent/v1.0">   <HierarchyItem Type="HierarchyItem">     <ObjectRef>urn:vCloud:Vm:fa099d3b-7376-49b1-884c-bb6fa47c7b1e.urn:vcloud:vm:340be4d6-8657-4d70-92d7-41ac6298f688</ObjectRef>     <ObjectType>Vm</ObjectType>     <ObjectName>DC</ObjectName>   </HierarchyItem> </HierarchyItems> |
+| Request:  GET https://localhost:9398/api/lookup?host=urn:veeam:HierarchyRoot:fa099d3b-7376-49b1-884c-bb6fa47c7b1e&name=DC&type=Vm  Response:  200 OK  Response Body:  <HierarchyItems xmlns="http://www.veeam.com/ent/v1.0">   <HierarchyItem Type="HierarchyItem">     <ObjectRef>urn:vCloud:Vm:fa099d3b-7376-49b1-884c-bb6fa47c7b1e.urn:vcloud:vm:340be4d6-8657-4d70-92d7-41ac6298f688</ObjectRef>     <ObjectType>Vm</ObjectType>     <ObjectName>DC</ObjectName>   </HierarchyItem> </HierarchyItems> |
 
+Page updated 2026-07-29
 

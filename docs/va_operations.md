@@ -3,14 +3,14 @@ title: "Operations Available on Veeam Agent Computer"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/va_operations.html"
-last_updated: "8/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Operations Available on Veeam Agent Computer
 
 
-If Veeam Agent operates under control of Veeam Backup & Replication, Veeam Backup Administrator or another user that has access to Veeam Agent Management, performs all data protection, data restore and administration tasks from the Veeam Backup & Replication console.
+If Veeam Agent operates under control of Veeam Backup & Replication, Veeam backup administrator or another user that has access to Veeam Agent Management, performs all data protection, data restore and administration tasks from the Veeam Backup & Replication console.
 
 On the Veeam Agent computer side, the list of available operations depends on how the backup job for this computer is managed: by Veeam backup server or by Veeam Agent. For more information about backup job types, see [Veeam Agent Backup Jobs and Policies](agents_job_mode.md).
 
@@ -21,4 +21,5 @@ The list of operations that can be performed in Veeam Agent operating in the man
 * [Operations available on Unix Computers](va_operations_unix.md)
 * [Operations available on Mac Computers](va_operations_mac.md)
 
+Page updated 2026-07-10
 

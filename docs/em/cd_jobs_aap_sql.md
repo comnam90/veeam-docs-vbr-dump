@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/cd_jobs_aap_sql.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Microsoft SQL Server Transaction Log Settings
@@ -55,5 +55,5 @@ For more information, see the [Microsoft SQL Server Transaction Log Settings](ht
 
 ![Microsoft SQL Server Transaction Log Settings](images/em_sql_item_restore_sql.webp "Handling SQL Transaction Logs")
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 

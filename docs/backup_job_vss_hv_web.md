@@ -3,8 +3,8 @@ title: "Step 8. Specify Guest Processing Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_hv_web.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 8. Specify Guest Processing Settings
@@ -17,6 +17,7 @@ At the Guest Processing step of the wizard, you can configure the following sett
 * [Guest interaction proxy](backup_job_vbr_vss_proxy_choose_hv_web.md) — to specify interaction proxy settings that Veeam Backup & Replication will use to install non-persistent runtime components or use (if necessary, install) persistent agent components in each VM.
 * [Guest OS credentials](backup_job_vbr_credentials_manage_hv_web.md) — to specify credentials that allow Veeam Backup & Replication to connect to the VM guest OS.
 
-[![Click to zoom in](images/hv_backup_job_vss_web.webp)](images/hv_backup_job_vss_web.webp "Click to zoom in")
+[![Guest processing settings](images/hv_backup_job_vss_web.webp)](images/hv_backup_job_vss_web.webp "Guest processing settings")
 
+Page updated 2026-06-29
 

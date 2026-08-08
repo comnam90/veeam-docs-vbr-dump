@@ -3,8 +3,8 @@ title: "Resource URLs"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/resource_urls.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Resource URLs
@@ -67,4 +67,5 @@ Such resources as files or directories do not have IDs:
 | Important |
 | The client must never construct URLs for resources itself. URLs for all resources and actions that the client can perform are generated automatically by the server and provided in [resource representations](resource_representations.md). The client should only select the URL it needs and [send a necessary HTTP request](http_requests_and_responses.md) to it. |
 
+Page updated 2026-07-29
 

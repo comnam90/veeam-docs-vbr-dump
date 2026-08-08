@@ -3,8 +3,8 @@ title: "Failover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_failover.html"
-last_updated: "5/8/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Failover
@@ -21,7 +21,8 @@ Before you perform a failover, consider the following limitations:
 * Veeam Backup & Replication does not support automatic failover of an HA cluster.
 
 * If you initiate a failover while the secondary node is not synchronized with the primary node — for example, due to network issues — the secondary node database may lack information about the latest backup files created by the primary node. After the failover, you must rescan the backup repository to ensure the secondary node is updated with any backup files created while it was out of sync.
-* To initiate a failover, you must use either the cluster virtual IP address or the IP address of the secondary node. You cannot initiate a failover using the cluster DNS name.
+* To initiate a failover for a standard HA cluster, use either the cluster virtual IP address or the IP address of the secondary node. You cannot use the cluster DNS name.
+* To initiate a failover for a cross-subnet HA cluster, use the cluster DNS name or the external IP address of the secondary node.
 
 How Failover of High Availability Cluster Works
 
@@ -29,7 +30,7 @@ After you initiate a failover, the following steps are performed:
 
 1. Veeam Backup & Replication updates the node database configuration.
 2. Veeam Backup & Replication assigns the role of the primary node to the secondary node.
-3. Veeam Backup & Replication assigns the cluster IP address to the secondary node.
+3. For a standard cluster, Veeam Backup & Replication assigns the cluster IP address to the secondary node. For a cross-subnet cluster, Veeam Backup & Replication unblocks port 443 for the external IP address of a new primary node.
 4. Veeam Backup & Replication restores all processes necessary for the backup server operations.
 5. Veeam Backup & Replication stops the PostgreSQL replication and synchronization between the nodes.
 6. After the failover is completed, the HA cluster has only one node. The former primary node is no longer available.
@@ -53,4 +54,5 @@ To prevent the split-brain scenario, Veeam Backup & Replication uses the followi
 3. The new primary node notifies that it has been assigned the role of primary node and informs the former primary node that it is now the secondary node.
 4. Veeam Backup & Replication on the new secondary node updates the configuration and starts operating as the secondary node.
 
+Page updated 2026-07-17
 

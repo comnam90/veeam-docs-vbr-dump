@@ -3,8 +3,8 @@ title: "Get-VBREPJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrepjob.html"
-last_updated: "2/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBREPJob
@@ -42,10 +42,11 @@ This cmdlet returns backup jobs run by Veeam Agent operating in the standalone m
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specifies the array of  backup job names. The cmdlet will return jobs with these names. | String[] | False | Named | False |
-| Id | Specifies the array of job IDs. The cmdlet will return the backup jobs with these IDs. | Accepts GUID[] or string[]. | False | Named | False |
+| Id | Specifies the array of job IDs. The cmdlet will return the backup jobs with these IDs.  Accepts Guid[] or String[]. | Guid[] | False | Named | False |
 
 <CommonParameters>
 
@@ -69,4 +70,5 @@ Examples
 | --- | --- |
 | This command gets a backup job run by Veeam Agent operating in the standalone mode by a job name.  |  | | --- | | Get-VBREPJob -Name "Backup Job Mediaserver" | |
 
+Page updated 2026-06-24
 

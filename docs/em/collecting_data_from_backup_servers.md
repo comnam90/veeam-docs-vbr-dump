@@ -3,8 +3,8 @@ title: "Collecting Data from Backup Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/collecting_data_from_backup_servers.html"
-last_updated: "10/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Collecting Data from Backup Servers
@@ -30,9 +30,9 @@ By default, Veeam Backup Enterprise Manager collects data from added backup serv
 
 To change the data collection interval, do the following:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
-3. Select the Backup Servers section on the left of the Configuration view.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
+3. In the Configuration view, open the Backup Servers section.
 4. Click Schedule on the toolbar.
 5. In the Data Collection Settings window, specify the desired interval in the Periodically every option.
 6. Click OK.
@@ -69,4 +69,5 @@ To view details on job sessions, to the following:
 
 [![Data Collection Job Sessions](images/em_data_collection_session.webp)](images/em_data_collection_session.webp "Data Collection Job Sessions")
 
+Page updated 2026-07-16
 

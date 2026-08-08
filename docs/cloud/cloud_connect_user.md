@@ -3,8 +3,8 @@ title: "Configuring Standalone Tenant Account"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_user.html"
-last_updated: "5/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Standalone Tenant Account
@@ -26,7 +26,8 @@ Before creating a tenant account, [check prerequisites](cloud_connect_user_befor
 
 Related Concepts
 
-* [SP and Tenant Roles](cloud_roles.md)
+* [Service Providers and Tenants](cloud_roles.md)
 * [Tenant Lease and Quota](lease_and_quota.md)
 
+Page updated 2026-07-21
 

@@ -3,8 +3,8 @@ title: "Step 3. Specify Cloud Storage Account"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/external_google_cloud_account.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify Cloud Storage Account
@@ -26,4 +26,5 @@ Gateway servers store cached data. For more information, see [Cache](external_re
 
 ![Step 3. Specify Cloud Storage Account ](images/external_google_account.webp)
 
+Page updated 2026-07-14
 

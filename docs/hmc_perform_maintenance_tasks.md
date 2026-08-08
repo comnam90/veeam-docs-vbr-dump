@@ -3,8 +3,8 @@ title: "Performing Maintenance Tasks"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_perform_maintenance_tasks.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Maintenance Tasks
@@ -12,14 +12,20 @@ product_version: "13.0.1.2067"
 
 Users with Host Administrator permissions can perform the following maintenance tasks:
 
+* View system resource usage
 * Start, stop and restart Veeam services
-* Restart Veeam appliance
+* Restart Veeam Appliance
 * Import and export configuration files
-* Managing Veeam components
-* View and export Veeam appliance events
+* Manage Veeam components
+* View and export Veeam Appliance events
 * Download logs
-* Generate new certificate for the Veeam Host Management web UI
 * Reset time shift protection on a Veeam Hardened Repository
+
+Viewing Resource Usage
+
+You can monitor the CPU, memory, and storage usage of the appliance on the Overview page.
+
+For detailed storage usage per volume, see [Managing Storage](hmc_manage_storage.md).
 
 Managing Veeam Services
 
@@ -31,7 +37,7 @@ For more information, see [Veeam Backup & Replication Services](services_and_com
 
 Restarting Appliance
 
-You can restart Veeam appliance in the Veeam Host Management web UI or TUI.
+You can restart Veeam Appliance in the Veeam Host Management web UI or TUI.
 
 If you use the Veeam Host Management web UI, perform the following steps:
 
@@ -47,7 +53,7 @@ If you use the Veeam Host Management TUI, in the main menu, select Reboot system
 
 Managing Configuration Files
 
-You can export and import required configuration files to customize Veeam appliance configuration. To do this, perform the following steps:
+You can export and import required configuration files to customize Veeam Appliance configuration. To do this, perform the following steps:
 
 1. Log in to the Veeam Host Management web UI as a Host Administrator. For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
 2. In the management pane, click Logs and Services.
@@ -58,7 +64,7 @@ You can export and import required configuration files to customize Veeam applia
 
 Managing Veeam Components
 
-You can manage components installed on the Veeam appliance. To view the list of components, log in to the Veeam Host Management web UI as a Host Administrator and click Logs and Services in the management pane. Then, click on the Components tab.
+You can manage components installed on the Veeam Appliance. To view the list of components, log in to the Veeam Host Management web UI as a Host Administrator and click Logs and Services in the management pane. Then, click on the Components tab.
 
 Components and their versions are updated automatically when you add backup infrastructure components through the Veeam Backup & Replication console or install updates and hotfixes. You can also add a component manually. To do this, click Add component, select an installation package and click Upload.
 
@@ -68,7 +74,7 @@ To export all components in the CSV format, click Export.
 
 Viewing Appliance Events
 
-You can monitor system, security, configuration and other types of events occurred on the Veeam appliance. To view the list of events, log in to the Veeam Host Management web UI as a Host Administrator and click Logs and Services in the management pane. Then, click on the Events tab.
+You can monitor system, security, configuration and other types of events that occurred on the Veeam Appliance. To view the list of events, log in to the Veeam Host Management web UI as a Host Administrator and click Logs and Services in the management pane. Then, click on the Events tab.
 
 To export all events in the CSV format, click Export.
 
@@ -81,7 +87,7 @@ For troubleshooting, you can download all Veeam logs as an archive file. To do t
 1. Log in to the Veeam Host Management web UI as a Host Administrator. For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
 2. In the management pane, click Logs and Services.
 3. On the Logs tab, click Create support logs bundle.
-4. To include operating system and Veeam logs to the archive, make sure that the Include application logs check box is selected. You can also select the Include configuration database check box to add a configuration database file to the archive.
+4. To include operating system and Veeam logs in the archive, make sure that the Include application logs check box is selected. You can also select the Include configuration database check box to add a configuration database file to the archive.
 5. Click OK.
 6. When the archive is prepared, click Download.
 7. After you download the archive, you can delete it from the server. To do this, click Remove.
@@ -93,19 +99,9 @@ For troubleshooting, you can download all Veeam logs as an archive file. To do t
 
 [![Performing Maintenance Tasks](images/hmc_web_logs.webp)](images/hmc_web_logs.webp)
 
-Generating Certificates
-
-In the Veeam Host Management TUI, you can generate new certificate for the Veeam Host Management web UI. To do this, perform the following steps:
-
-1. Log in to the Veeam Host Management TUI as a Host Administrator. For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
-2. In the main menu, select Remote access configuration.
-3. Press [F1] to generate new certificate. The web service will be restarted.
-
-[![Performing Maintenance Tasks](images/hmc_tui_generate_certificates.webp)](images/hmc_tui_generate_certificates.webp)
-
 Resetting Time Shift Protection
 
-In the Veeam Host Management TUI, you can reset the time shift protection on aVeeam Hardened Repository or Veeam Software Appliance. To do this, perform the following steps:
+In the Veeam Host Management TUI, you can reset the time shift protection on a Veeam Hardened Repository or Veeam Software Appliance. To do this, perform the following steps:
 
 1. Log in to the Veeam Host Management TUI as a Host Administrator. For more information, see [Accessing Veeam Host Management Console](hmc_access.md).
 2. In the main menu, select Host configuration.
@@ -115,4 +111,5 @@ For more information on time shift protection, see [How Immutability Works](http
 
 [![Performing Maintenance Tasks](images/hmc_tui_reset_time_shift.webp)](images/hmc_tui_reset_time_shift.webp)
 
+Page updated 2026-07-16
 

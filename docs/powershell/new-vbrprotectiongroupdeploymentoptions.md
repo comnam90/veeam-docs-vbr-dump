@@ -3,8 +3,8 @@ title: "New-VBRProtectionGroupDeploymentOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrprotectiongroupdeploymentoptions.html"
-last_updated: "10/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRProtectionGroupDeploymentOptions
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| New-VBRProtectionGroupDeploymentOptions [-DistributionServer <CHost>] [-DistributionRepository <VBRObjectStorageRepository>] [-InstallAgent] [-UpgradeAutomatically] [-InstallDriver] [-RebootIfRequired] [-InstallApplicationPlugins] [-InstallCDPAgent] [<CommonParameters>] |
+| New-VBRProtectionGroupDeploymentOptions [-DistributionServer <CHost>] [-DistributionRepository <VBRObjectStorageRepository>] [-InstallAgent] [-UpgradeAutomatically] [-InstallDriver] [-InstallNoSnapAgent] [-RebootIfRequired] [-InstallApplicationPlugins] [-InstallCDPAgent] [<CommonParameters>] |
 
 * Define deployment settings for the Veeam Plug-In protection group.
 
 |  |
 | --- |
-| New-VBRProtectionGroupDeploymentOptions [-DistributionServer <CHost>] [-DistributionRepository <VBRObjectStorageRepository>] [-InstallAgent] [-UpgradeAutomatically] [-InstallDriver] [-RebootIfRequired] [-InstallApplicationPlugins] [-ApplicationTypes <VBRApplicationType[]>]  [<CommonParameters>] |
+| New-VBRProtectionGroupDeploymentOptions [-DistributionServer <CHost>] [-DistributionRepository <VBRObjectStorageRepository>] [-InstallAgent] [-UpgradeAutomatically] [-InstallDriver] [-InstallNoSnapAgent] [-RebootIfRequired] [-InstallApplicationPlugins] [-ApplicationTypes <VBRApplicationType[]>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -42,13 +42,15 @@ Run the [Set-VBRProtectionGroup](set-vbrprotectiongroup.md) cmdlet to apply depl
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | DistributionServer | Specifies a distribution server. The cmdlet will instruct Veeam Backup & Replication to use this server to upload Veeam Agent or Veeam Plug-In setup files and private fixes to computers added to the protection group. | Accepts the CHost object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
 | DistributionRepository | For protection groups for cloud machines.  Specifies an object storage repository (either Microsoft Azure blob storage or Amazon S3 object storage repository) that will act as a distribution repository. Veeam Backup & Replication will use this repository to upload Veeam Agent setup files to cloud machines added to the protection group. | Accepts the VBRObjectStorageRepository object. To create this object, run the [Get-VBRObjectStorageRepository](get-vbrobjectstoragerepository.md) cmdlet. | False | Named | True (ByValue, ByProperty Name) |
 | InstallAgent | Defines that Veeam Backup & Replication will automatically install Veeam Agent on all discovered computers of the protection group. | SwitchParameter | False | Named | True (ByProperty Name) |
 | UpgradeAutomatically | Defines that Veeam Backup & Replication will automatically upgrade Veeam Agent or Veeam Plug-In on discovered computers when the new Veeam Agent version or private fix appears on the distribution server. | SwitchParameter | False | Named | True (ByProperty Name) |
 | InstallDriver | Used only for Veeam Agent for Microsoft Windows.  Defines that Veeam Backup & Replication will automatically install the CBT driver on discovered computers. | SwitchParameter | False | Named | True (ByProperty Name) |
+| InstallNoSnapAgent | Defines that Veeam Backup & Replication will deploy the nosnap Veeam Agent on the discovered computers of the protection group. | SwitchParameter | False | Named | True (ByProperty Name) |
 | RebootIfRequired | Defines that Veeam Backup & Replication will reboot discovered computers if required.  Note: Reboot is required after the CBT driver installation. | SwitchParameter | False | Named | True (ByProperty Name) |
 | InstallApplicationPlugins | Defines that Veeam Backup & Replication will automatically install Veeam Plug-In on all discovered computers of the protection group.  Use the ApplicationTypes parameter to specify Veeam Plug-Ins that Veeam Backup & Replication will install. | SwitchParameter | False | Named | True (ByProperty Name) |
 | ApplicationTypes | Specifies an array of Veeam Plug-Ins that you want to install on the protected computers:   * OracleRMAN: for Veeam Plug-In for Oracle RMAN * SAPHANA: for Veeam Plug-In for SAP HANA * SAPOnOracle: for Veeam Plug-In for SAP on Oracle | Accepts the VBRApplicationType[] object. To get this object, run the [Get-VBRDiscoveredApplication](get-vbrdiscoveredapplication.md) cmdlet. | False | Named | True (ByProperty Name) |
@@ -68,13 +70,13 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to create an object containing the following Veeam Agent deployment settings:   * Veeam Agents will be installed automatically on discovered computers. * Veeam Agents will be upgraded automatically to the version of Veeam Agent on the distribution server.   |  | | --- | | $server = Get-VBRServer -Name support.east.local  New-VBRProtectionGroupDeploymentOptions -DistributionServer $server -InstallAgent -UpgradeAutomatically |  Perform the following steps:   1. Run the [Get-VBRServer](get-vbrserver.md) cmdlet. Specify the Name parameter value. Save the result to the $server variable. 2. Run the New-VBRProtectionGroupDeploymentOptions cmdlet. Set the $server variable as the DistributionServer parameter value. Provide the InstallAgent and UpgradeAutomatically parameters. |
+| This example shows how to create an object containing the following Veeam Agent deployment settings:   * Veeam Agents will be installed automatically on discovered computers. * Veeam Agents will be upgraded automatically to the version of Veeam Agent on the distribution server. * Veeam Agents will be deployed in the nosnap mode.   |  | | --- | | $server = Get-VBRServer -Name support.east.local  New-VBRProtectionGroupDeploymentOptions -DistributionServer $server -InstallAgent -UpgradeAutomatically -InstallNoSnapAgent |  Perform the following steps:   1. Run the [Get-VBRServer](get-vbrserver.md) cmdlet. Specify the Name parameter value. Save the result to the $server variable. 2. Run the New-VBRProtectionGroupDeploymentOptions cmdlet. Set the $server variable as the DistributionServer parameter value. Provide the InstallAgent, UpgradeAutomatically and InstallNoSnapAgent parameters. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Creating and Applying Discovery Schedule for Protection Group
 
 |  |  |
 | --- | --- |
-| This example shows how to apply Veeam Agent deployment settings to a protection group. Per these settings, Veeam Backup & Replication will automatically install Veeam Agents on discovered computers and automatically upgrade them.  |  | | --- | | $server = Get-VBRServer -Name support.east.local  $deployment = New-VBRProtectionGroupDeploymentOptions -DistributionServer $server -InstallAgent -UpgradeAutomatically  $group = Get-VBRProtectionGroup -Name "East Computers"  Set-VBRProtectionGroup -ProtectionGroup $group -DeploymentOptions $deployment |  Perform the following steps:   1. Create an object with Veeam Agent deployment settings:  * Run the [Get-VBRServer](get-vbrserver.md) cmdlet. Specify the Name parameter value. Save the result to the $server variable. * Run the New-VBRProtectionGroupDeploymentOptions cmdlet. Set the $server variable as the DistributionServer parameter value. Provide the InstallAgent and UpgradeAutomatically parameters. Save the result to the $deployment variable.  1. Apply Veeam Agent deployment settings to a protection group:  * Run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. Specify the Name parameter value. Save the result to the $group variable. * Run the [Set-VBRProtectionGroup](set-vbrprotectiongroup.md) cmdlet. Set the $group variable as the ProtectionGroup parameter value. Set the $deployment variable as the DeploymentOptions parameter value. |
+| This example shows how to apply Veeam Agent deployment settings to a protection group. Per these settings, Veeam Backup & Replication will automatically install Veeam Agents on discovered computers and automatically upgrade them.  |  | | --- | | $server = Get-VBRServer -Name support.east.local  $deployment = New-VBRProtectionGroupDeploymentOptions -DistributionServer $server -InstallAgent -UpgradeAutomatically -InstallNoSnapAgent  $group = Get-VBRProtectionGroup -Name "East Computers"  Set-VBRProtectionGroup -ProtectionGroup $group -DeploymentOptions $deployment |  Perform the following steps:   1. Create an object with Veeam Agent deployment settings:  * Run the [Get-VBRServer](get-vbrserver.md) cmdlet. Specify the Name parameter value. Save the result to the $server variable. * Run the New-VBRProtectionGroupDeploymentOptions cmdlet. Set the $server variable as the DistributionServer parameter value. Provide the InstallAgent, UpgradeAutomatically and InstallNoSnapAgent parameters. Save the result to the $deployment variable.  1. Apply Veeam Agent deployment settings to a protection group:  * Run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. Specify the Name parameter value. Save the result to the $group variable. * Run the [Set-VBRProtectionGroup](set-vbrprotectiongroup.md) cmdlet. Set the $group variable as the ProtectionGroup parameter value. Set the $deployment variable as the DeploymentOptions parameter value. |
 
 Related Commands
 
@@ -82,4 +84,5 @@ Related Commands
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Set-VBRProtectionGroup](set-vbrprotectiongroup.md)
 
+Page updated 2026-06-03
 

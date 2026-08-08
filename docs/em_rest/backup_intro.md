@@ -3,8 +3,8 @@ title: "Backup"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/backup_intro.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup
@@ -50,4 +50,5 @@ In this section
 * [/restoreSessions](restoresessions.md)
 * [/restoreSessions/{ID}](restoresessions_id.md)
 
+Page updated 2026-07-29
 

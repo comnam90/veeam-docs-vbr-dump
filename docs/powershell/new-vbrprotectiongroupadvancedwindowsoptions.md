@@ -3,8 +3,8 @@ title: "New-VBRProtectionGroupAdvancedWindowsOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/new-vbrprotectiongroupadvancedwindowsoptions.html"
-last_updated: "5/3/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # New-VBRProtectionGroupAdvancedWindowsOptions
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| New-VBRProtectionGroupAdvancedWindowsOptions [-EnableBandwidthThrottling] [-BandwidthThrottlingValue <int>] [-BandwidthThrottlingUnitType <VBRSpeedUnit> {MbitPerSec | MbytePerSec | KbytePerSec}] [-DisableBackupOverMeteredConnection] [-DisableBackupOverVPNConnections] [-UseSpecifiedWiFiNetworks] [-WiFiNetworks <string[]>] [-EnableAgentThrottling] [-ThrottleAgentOn <VBREpThrottlingAgentType> {Workstations | Servers | AllHosts}] [-EnableFLRWithoutAdministrativeAccount]  [<CommonParameters>] |
+| New-VBRProtectionGroupAdvancedWindowsOptions [-EnableBandwidthThrottling] [-BandwidthThrottlingValue <int>] [-BandwidthThrottlingUnitType <VBRSpeedUnit> {MbitPerSec | MbytePerSec | KbytePerSec}] [-DisableBackupOverMeteredConnection] [-DisableBackupOverVPNConnections] [-UseSpecifiedWiFiNetworks] [-WiFiNetworks <string[]>] [-EnableAgentThrottling] [-ThrottleAgentOn <VBREpThrottlingAgentType> {Workstations | Servers | AllHosts}] [-EnableFLRWithoutAdministrativeAccount] [-CreateEmbeddedRecoveryMedia]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -39,8 +39,9 @@ This cmdlet creates the [VBRProtectionGroupAdvancedWindowsOptions](vbrprotection
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | EnableBandwidthThrottling | Enables the bandwidth limit.  Use the BandwidthThrottlingValue and the BandwidthThrottlingUnitType parameters to set the value and the unit type for bandwidth limit. | SwitchParameter | False | Named | True (ByProperty Name) |
 | BandwidthThrottlingValue | Specifies the bandwidth limit value. | Int | False | Named | True (ByProperty Name) |
 | BandwidthThrottlingUnitType | Specifies the measure units for measure limit. You can select the following type of measure units:   * MbitPerSec: for megabit per second unit * MbytePerSec: for megabyte per second unit * KbytePerSec: for kilobyte per second unit | VBRSpeedUnit | False | Named | True (ByProperty Name) |
@@ -51,6 +52,7 @@ Parameters
 | EnableAgentThrottling | Enables throttling for Veeam Agent activities during backup.  Use the ThrottleAgentOn parameter to specify the type of computers. | SwitchParameter | False | Named | True (ByPropertyName) |
 | ThrottleAgentOn | Specifies the type of computers. Veeam Backup & Replication will throttle Veeam Agent activities during backup on computers of these types.  You can select one of the following types of the computers:   * Workstations * Servers * AllHosts | VBREpThrottlingAgentType | False | Named | True (ByPropertyName) |
 | EnableFLRWithoutAdministrativeAccount | Defines that users without administrative privileges will be able to perform file-level restore on Veeam Agent computers.  Note: This parameter works only for backups located on Veeam Backup & Replication. | SwitchParameter | False | Named | True (ByPropertyName) |
+| CreateEmbeddedRecoveryMedia | Defines that Veeam Backup & Replication will create recovery media for the Veeam Agent computers added to the protection group and place the media inside the operating system of these computers. | SwitchParameter | False | Named | True (ByPropertyName) |
 
 <CommonParameters>
 
@@ -66,17 +68,18 @@ Examples
 
 |  |  |
 | --- | --- |
-| This command creates additional settings for Veeam Agent for Microsoft Windows machines. The additional settings will have the following options:   * Bandwidth limit is enabled and set to 20 megabytes per second. * Backup over metered connections option is enabled. * Throttling for Veeam Agent activities is enabled on all machines. * Users without administrative privileges will be able to perform the file-level restore on Veeam Agent computers.   |  | | --- | | New-VBRProtectionGroupAdvancedWindowsOptions -EnableBandwidthThrottling -BandwidthThrottlingValue 20  -BandwidthThrottlingUnitType MbytePerSec -DisableBackupOverMeteredConnection:$false  -EnableAgentThrottling -ThrottleAgentOn AllHosts -EnableFLRWithoutAdministrativeAccount | |
+| This command creates additional settings for Veeam Agent for Microsoft Windows machines. The additional settings will have the following options:   * Bandwidth limit is enabled and set to 20 megabytes per second. * Backup over metered connections option is enabled. * Throttling for Veeam Agent activities is enabled on all machines. * Users without administrative privileges will be able to perform the file-level restore on Veeam Agent computers. * Embedded recovery media will be created for the protected computers.   |  | | --- | | New-VBRProtectionGroupAdvancedWindowsOptions -EnableBandwidthThrottling -BandwidthThrottlingValue 20  -BandwidthThrottlingUnitType MbytePerSec -DisableBackupOverMeteredConnection:$false  -EnableAgentThrottling -ThrottleAgentOn AllHosts -EnableFLRWithoutAdministrativeAccount -CreateEmbeddedRecoveryMedia | |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Applying Additional Settings to Protection Group
 
 |  |  |
 | --- | --- |
-| This example shows how to create additional settings for the protection group and apply these settings to the Windows machines protection group.  |  | | --- | | $options = New-VBRProtectionGroupAdvancedWindowsOptions -EnableBandwidthThrottling -BandwidthThrottlingValue 20 -BandwidthThrottlingUnitType MbytePerSec -DisableBackupOverMeteredConnection:$false -EnableAgentThrottling -ThrottleAgentOn AllHosts -EnableFLRWithoutAdministrativeAccount  $group = Get-VBRProtectionGroup -Name "Windows machines"  Set-VBRProtectionGroup -ProtectionGroup $group -AdvancedOptions $options |  Perform the following steps:   1. Run the New-VBRProtectionGroupAdvancedWindowsOptions cmdlet. Specify the necessary parameters. Save the result to the $options variable. 2. Run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. Specify the Name parameter value. Save the result to the $group variable. 3. Run the [Set-VBRProtectionGroup](set-vbrprotectiongroup.md) cmdlet. Set the $group variable as the ProtectionGroup parameter value. Set the $options variable as the AdvancedOptions parameter value. |
+| This example shows how to create additional settings for the protection group and apply these settings to the Windows machines protection group.  |  | | --- | | $options = New-VBRProtectionGroupAdvancedWindowsOptions -EnableBandwidthThrottling -BandwidthThrottlingValue 20 -BandwidthThrottlingUnitType MbytePerSec -DisableBackupOverMeteredConnection:$false -EnableAgentThrottling -ThrottleAgentOn AllHosts -EnableFLRWithoutAdministrativeAccount -CreateEmbeddedRecoveryMedia  $group = Get-VBRProtectionGroup -Name "Windows machines"  Set-VBRProtectionGroup -ProtectionGroup $group -AdvancedOptions $options |  Perform the following steps:   1. Run the New-VBRProtectionGroupAdvancedWindowsOptions cmdlet. Specify the necessary parameters. Save the result to the $options variable. 2. Run the [Get-VBRProtectionGroup](get-vbrprotectiongroup.md) cmdlet. Specify the Name parameter value. Save the result to the $group variable. 3. Run the [Set-VBRProtectionGroup](set-vbrprotectiongroup.md) cmdlet. Set the $group variable as the ProtectionGroup parameter value. Set the $options variable as the AdvancedOptions parameter value. |
 
 Related Commands
 
 * [Get-VBRProtectionGroup](get-vbrprotectiongroup.md)
 * [Set-VBRProtectionGroup](set-vbrprotectiongroup.md)
 
+Page updated 2026-06-03
 

@@ -3,8 +3,8 @@ title: "Step 2. Select Restore Point"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_to_ahv_select_vms.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Select Restore Point
@@ -14,21 +14,21 @@ At the Virtual Machines step of the wizard, select a restore point that will be 
 
 To select a restore point, do the following:
 
-1. Select the VM.
-2. Click Point.
-3. In the Restore Points window, select the necessary restore point and click OK.
+1. Select the VM and click Point.
+2. In the Restore Points window, select the necessary restore point and click OK.
 
 To help you choose a restore point, Veeam Backup & Replication provides the following information on each available restore point:
 
-* Job — the name of the backup job that created the restore point and the date when the restore point was created.
+* Job — the name of the backup job that created the restore point, and the date when the restore point was created.
 * Type — the type of the restore point.
 * Location — the repository where the restore point is stored.
 
 |  |
 | --- |
 | Tip |
-| You can use the wizard to restore multiple VMs at a time. To do that, click Add, select more VMs to restore and select a restore point for each of them. |
+| You can use the wizard to restore multiple VMs at a time. To do that, click Add, select more VMs to restore and choose a restore point for each of them. |
 
-![Step 2. Select Restore Point](images/ahv_restore_vm_ahv_add_vms.webp)
+![Step 2. Select Restore Point](images/ahv_restore_vm_add_vms.webp)
 
+Page updated 2026-06-11
 

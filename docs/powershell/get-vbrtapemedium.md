@@ -3,8 +3,8 @@ title: "Get-VBRTapeMedium"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrtapemedium.html"
-last_updated: "5/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRTapeMedium
@@ -64,11 +64,12 @@ This cmdlet returns tapes managed by Veeam Backup & Replication.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Name | Specifies the array of tape names. The cmdlet will return tapes with these names. | String[] | False | Named | True (ByValue, ByProperty Name) |
 | Drive | Specifies the array of drives. The cmdlet will return tapes located in these drives. | Accepts the [VBRTapeDrive[]](vbrtapedrive.md) object, GUID or string. To get this object, run the [Get-VBRTapeDrive](get-vbrtapedrive.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
-| Id | Specifies the array of tape IDs. The cmdlet will return tapes with these IDs. | Accepts GUID[] or string[]. | True | Named | True (ByValue, ByProperty Name) |
+| Id | Specifies the array of tape IDs. The cmdlet will return tapes with these IDs.  Accepts Guid[] or String[]. | Guid[] | True | Named | True (ByValue, ByProperty Name) |
 | Library | Specifies the array of tape libraries. The cmdlet will return tapes in these libraries. | Accepts the [VBRTapeLibrary[]](vbrtapelibrary.md) object, GUID or string. To get this object, run the [Get-VBRTapeLibrary](get-vbrtapelibrary.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | MediaPool | Specifies the array of media pools. The cmdlet will return tapes in these media pools. | Accepts the [VBRTapeMediaPool[]](vbrtapemediapool.md) object, GUID or string. To get this object, run the [Get-VBRTapeMediaPool](get-vbrtapemediapool.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Vault | Specifies the array of vaults. The cmdlet will return tapes in these vaults. | Accepts the [VBRTapeVault[]](vbrtapevault.md) object, GUID or string. To get this object, run the [Get-VBRTapeVault](get-vbrtapevault.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
@@ -113,4 +114,5 @@ Related Commands
 * [Get-VBRTapeMediaPool](get-vbrtapemediapool.md)
 * [Get-VBRTapeLibrary](get-vbrtapelibrary.md)
 
+Page updated 2026-06-24
 

@@ -3,8 +3,8 @@ title: "v12.2 Changelog"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/changelog_12.2.html"
-last_updated: "2/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # v12.2 Changelog
@@ -16,4 +16,5 @@ In This Section
 
 [New and Updated Cmdlets](new_updated_cmdlets_12.2.md)
 
+Page updated 2026-01-30
 

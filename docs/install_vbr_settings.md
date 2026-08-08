@@ -3,8 +3,8 @@ title: "Step 6. Review Default Installation Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_settings.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 6. Review Default Installation Settings
@@ -38,10 +38,10 @@ The following Veeam services and components are also deployed when installing Ve
 Step 6. Review Default Installation Settings
 
 | Veeam Component | Default Installation Path |
-| Dell Data Domain DDBoost SDK | %ProgramFiles%\Veeam\Backup Transport\x64\ddboost |
-| HPE StoreOnce Catalyst SDK | %ProgramFiles%\Veeam\Backup Transport\x64\storeonce |
-| Microsoft Entra ID Plug-In for Veeam Backup & Replication | %ProgramFiles(x86)%\Veeam\Backup Transport\x64\Plugins\EntraId |
-| OpenSSL v3.0.0 FIPS | %ProgramFiles%\Common Files\Veeam\OpenSSL3 |
+| Dell Data Domain DDBoost SDK | %ProgramFiles%\Veeam\Backup Transport\ |
+| HPE StoreOnce Catalyst SDK | %ProgramFiles%\Veeam\Backup Transport\ |
+| Microsoft Entra ID Plug-In for Veeam Backup & Replication Veeam Plug-In | %Program Files (x86)%\Veeam\Backup Transport\x64\Plugins\EntraId\ |
+| OpenSSL FIPS Redistributable 3.1.2 | %ProgramFiles%\Common Files\Veeam\OpenSSL FIPS Redistributable\3.1.2\ |
 | Veeam Agent for Linux Redistributable | %ProgramData%\Veeam\Agents\ |
 | Veeam Agent for Mac Redistributable | %ProgramData%\Veeam\Agents\ |
 | Veeam Agent for Microsoft Windows Redistributable | %ProgramData%\Veeam\Agents\ |
@@ -50,20 +50,27 @@ Step 6. Review Default Installation Settings
 | Veeam Backup vPowerNFS | %ProgramFiles(x86)%\Veeam\vPowerNFS\ |
 | Veeam Backup VSS Integration | %ProgramFiles%\Veeam\Backup File System VSS Integration\ |
 | Veeam Distribution Service | %ProgramFiles%\Veeam\Veeam Distribution Service\ |
-| Veeam Explorers Recovery Service | %ProgramFiles%\Veeam\Backup and Replication\Explorers Recovery Service\ |
-| Veeam Guest Interaction Proxy Service | %ProgramFiles%\Veeam\\Veeam Guest Interaction Service\ |
+| Veeam Explorers Recovery Service | %ProgramFiles%\Common Files\Veeam\Backup and Replication\Explorers Recovery Service\ |
+| Veeam Guest Interaction Proxy Service | %ProgramFiles%\Veeam\Veeam Guest Interaction Service\ |
 | Veeam Installer Service | %WinDir%\Veeam\Backup\ |
-| Veeam Mount Server | %ProgramFiles%\Common Files\Veeam\Backup and Replication\Mount Service\ |
+| Veeam Mount Service | %ProgramFiles%\Common Files\Veeam\Backup and Replication\Mount Service\ |
 | Veeam Plug-In for AWS | %ProgramFiles%\Veeam\Plugins\AWS\ |
-| Veeam Plug-In for Google Cloud | %ProgramFiles%\Veeam\Plugins\GCP\ |
+| Veeam Plug-in for HPE Morpheus VM Essentials | %ProgramFiles%\Veeam\Plugins\HPE Morpheus VM Essentials\ |
+|  |
 | Veeam Plug-In for Kasten | %ProgramFiles%\Veeam\Plugins\Kasten\ |
 | Veeam Plug-In for Microsoft Azure | %ProgramFiles%\Veeam\Plugins\Microsoft Azure\ |
 | Veeam Plug-In for Nutanix AHV | %ProgramFiles%\Veeam\Plugins\Nutanix AHV\ |
-| Veeam Plug-In for oVirt KVM | %ProgramFiles%\Veeam\Plugins\RHV\ |
 | Veeam Plug-In for Proxmox Virtual Environment | %ProgramFiles%\Veeam\Plugins\PVE\ |
-| Veeam Plug-In for Scale Computing HyperCore | %ProgramFiles%\Veeam\Plugins\SC HyperCore\ |
+| Veeam Plug-in for Scale Computing HyperCore | %ProgramFiles%\Veeam\Plugins\SC HyperCore\ |
+| Veeam Plug-In for Universal Hypervisor API | %ProgramFiles%\Veeam\Plugins\UHAPI\ |
+| Veeam Plug-In for oVirt KVM | %ProgramFiles%\Veeam\Plugins\RHV\ |
+| Veeam Plug-In for Xen | %ProgramFiles%\Veeam\Plugins\Xen\ |
 | Veeam Plug-Ins for Enterprise Applications Redistributable | %ProgramData%\Veeam\Plugins\ |
-| Veeam Threat Hunter | %ProgramData%\Veeam\Backup and Replication\Threat Hunter\ |
+| Veeam Plug-In Worker | %ProgramFiles%\Veeam\Plugins\Common\ |
+| Veeam Reverse Proxy Service | %ProgramFiles%\Veeam\ReverseProxy\ |
+| Veeam Threat Hunter | %ProgramFiles%\Veeam\Backup and Replication\Threat Hunter\ |
+| Veeam Updater | %ProgramFiles%\Common Files\Veeam\Updater\ |
+| Veeam Updater Plug-In for Veeam Backup & Replication | %ProgramFiles%\Common Files\Veeam\Updater\ |
 | Veeam VSS Hardware Provider | %ProgramFiles%\Veeam\VSS Hardware Provider\ |
 | VMware VDDK | %ProgramFiles(x86)%\Veeam\Backup Transport\ |
 
@@ -71,4 +78,5 @@ For more information, see [Veeam Backup & Replication Services](services_and_com
 
 ![Step 6. Review Default Installation Settings](images/installation_ready_to_install.webp)
 
+Page updated 2026-07-21
 

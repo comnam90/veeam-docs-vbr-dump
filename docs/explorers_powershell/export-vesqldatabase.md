@@ -3,8 +3,8 @@ title: "Export-VESQLDatabase"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/export-vesqldatabase.html"
-last_updated: "8/25/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Export-VESQLDatabase
@@ -13,6 +13,11 @@ product_version: "13.0.1.1071"
 Short Description
 
 Exports a backed-up Microsoft SQL Server database.
+
+|  |
+| --- |
+| Note |
+| In Veeam Backup & Replication 13.1, this cmdlet became deprecated. Use the [Start-VESQLDatabaseExport](start-vesqldatabaseexport.md) cmdlet to export Microsoft SQL Server databases. |
 
 Applies to
 
@@ -35,8 +40,9 @@ This cmdlet allows you to export a Microsoft SQL Server database to the machine 
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies a Microsoft SQL Server database that you want to export. | Accepts the [VESQLDatabase](vesqldatabase.md) object. To get this object, run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. | True | 0 | True (ByValue) |
 | Path | Specifies the export path on the machine where the PowerShell session is running.  To export your database as a backup (.bak) file, specify the ToBackupFile parameter.  Note: To overwrite an existing file in the export destination, use the Force parameter. | String | True | Named | False |
 | ToPointInTime | Specifies a point in time within the restore interval of a Microsoft SQL Server database.  The cmdlet will export the database to the state of the specified point in time.  Note: Make sure that the value you assign to this parameter is converted to Universal Coordinated Time (UTC). | DateTime | False | Named | False |
@@ -52,7 +58,7 @@ Parameters
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -64,19 +70,19 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to export Microsoft SQL Server database files to the latest state on the backup file. This example uses the backup server as a staging server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  Export-VESQLDatabase -Database $database -Path "C:\SQLExport" |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. 2. Run the Export-VESQLDatabase cmdlet. Set the $database variable as the Database parameter value. Specify the Path parameter value. |
+| This example shows how to export Microsoft SQL Server database files to the latest state on the backup file. This example uses the backup server as a staging server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  Export-VESQLDatabase -Database $database -Path "C:\SQLExport" |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. 2. Run the Export-VESQLDatabase cmdlet. Set the $database variable as the Database parameter value. Specify the Path parameter value. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Exporting Microsoft SQL Server Database to Latest State as .bak File
 
 |  |  |
 | --- | --- |
-| This example shows how to export a Microsoft SQL Server database to the latest state on the backup file. The database is exported as a .bak file. This example uses SQL credentials to authenticate to the guest OS and Microsoft SQL Server on the staging server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  $sqlcreds = Get-Credential  Export-VESQLDatabase -Database $database -Path "C:\export\Export.bak" -ServerName "StagingServer" -SQLCredentials $sqlcreds -ToBackupFile |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter the SQL credentials that will be used for authenticating to the guest OS and Microsoft SQL Server on the staging server. Save the result to the $sqlcreds variable. 3. Run the Export-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the Path parameter value.  * Specify the ServerName parameter value to select the staging server. * Set the $sqlcreds variable as the SQLCredentials parameter value. * Provide the ToBackupFile parameter. |
+| This example shows how to export a Microsoft SQL Server database to the latest state on the backup file. The database is exported as a .bak file. This example uses SQL credentials to authenticate to the guest OS and Microsoft SQL Server on the staging server.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQLDatabase"  $sqlcreds = Get-Credential  Export-VESQLDatabase -Database $database -Path "C:\export\Export.bak" -ServerName "StagingServer" -SQLCredentials $sqlcreds -ToBackupFile |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter the SQL credentials that will be used for authenticating to the guest OS and Microsoft SQL Server on the staging server. Save the result to the $sqlcreds variable. 3. Run the Export-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the Path parameter value.  * Specify the ServerName parameter value to select the staging server. * Set the $sqlcreds variable as the SQLCredentials parameter value. * Provide the ToBackupFile parameter. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 3. Exporting Microsoft SQL Server Database Files to Specific Point in Time
 
 |  |  |
 | --- | --- |
-| This example shows how to export Microsoft SQL Server database files to a specific point-in-time state.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQL database"  $pit = Get-Date -Date "2023-05-25 15:00:00"  $pitutc = $pit.ToUniversalTime()  $windowscreds = Get-Credential  $sqlcreds = Get-Credential  Export-VESQLDatabase -Database $database -Path "C:\Export" -ServerName "StagingServer" -UseSQLAuthentication -GuestCredentials $windowscreds -SQLCredentials $sqlcreds -ToPointInTime $pitutc |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In our example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. 2. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time of the point-in-time state. Save the result to the $pit variable. 3. Convert the $pit variable to the UTC format using the ToUniversalTime() method. Save the result to the $pitutc variable.   Note that you can use the [Get-VESQLDatabaseRestoreInterval](get-vesqldatabaserestoreinterval.md) cmdlet to get the restore interval of the necessary database in UTC.   1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter guest credentials that will be used for authenticating to the guest OS on the staging server. Save the result to the $windowscreds variable. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter SQL credentials that will be used for authenticating to Microsoft SQL Server on the staging server. Save the result to the $sqlcreds variable. 3. Run the Export-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the Path parameter value.  * Specify the ServerName parameter value to select the staging server. * Provide the UseSQLAuthentication parameter. * Set the $windowscreds variable as the GuestCredentials. * Set the $sqlcreds variable as the SQLCredentials parameter value. * Set the $pitutc variable as the ToPointInTime parameter value. |
+| This example shows how to export Microsoft SQL Server database files to a specific point-in-time state.  |  | | --- | | $session = Get-VESQLRestoreSession  $database = Get-VESQLDatabase -Session $session[0] -Name "SQL database"  $pit = Get-Date -Date "2026-05-25 15:00:00"  $pitutc = $pit.ToUniversalTime()  $windowscreds = Get-Credential  $sqlcreds = Get-Credential  Export-VESQLDatabase -Database $database -Path "C:\Export" -ServerName "StagingServer" -UseSQLAuthentication -GuestCredentials $windowscreds -SQLCredentials $sqlcreds -ToPointInTime $pitutc |  Perform the following steps:   1. Run the [Get-VESQLRestoreSession](get-vesqlrestoresession.md) cmdlet. Save the result to the $session variable.   The cmdlet will return an array of restore sessions. Note the ordinal number of the necessary restore session. In this example, it is the first restore session in the array.   1. Run the [Get-VESQLDatabase](get-vesqldatabase.md) cmdlet. Set the $session variable as the Session parameter value and select the necessary restore session. Specify the Name parameter value. 2. Run the [Get-Date](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.5) cmdlet and specify the date and time of the point-in-time state. Save the result to the $pit variable. 3. Convert the $pit variable to the UTC format using the ToUniversalTime() method. Save the result to the $pitutc variable.   Note that you can use the [Get-VESQLDatabaseRestoreInterval](get-vesqldatabaserestoreinterval.md) cmdlet to get the restore interval of the necessary database in UTC.   1. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter guest credentials that will be used for authenticating to the guest OS on the staging server. Save the result to the $windowscreds variable. 2. Run the [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5) cmdlet to create a credential object. Enter SQL credentials that will be used for authenticating to Microsoft SQL Server on the staging server. Save the result to the $sqlcreds variable. 3. Run the Export-VESQLDatabase cmdlet. Specify the following settings:  * Set the $database variable as the Database parameter value. * Specify the Path parameter value.  * Specify the ServerName parameter value to select the staging server. * Provide the UseSQLAuthentication parameter. * Set the $windowscreds variable as the GuestCredentials. * Set the $sqlcreds variable as the SQLCredentials parameter value. * Set the $pitutc variable as the ToPointInTime parameter value. |
 
 Related Commands
 
@@ -86,4 +92,5 @@ Related Commands
 * [Get-Credential](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-credential?view=powershell-7.5)
 * [Get-VESQLDatabaseRestoreInterval](get-vesqldatabaserestoreinterval.md)
 
+Page updated 2026-03-17
 

@@ -3,8 +3,8 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_details.html"
-last_updated: "4/1/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Object Storage Settings
@@ -26,7 +26,7 @@ To specify general settings for the Amazon S3 bucket:
 |  |
 | --- |
 | Important |
-| You must create the bucket where you want to store your backup data beforehand. When you create a bucket, consider Amazon bucket naming rules. It is not recommended that you use dots (.) in the bucket name. For more information on bucket naming rules, see [AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). |
+| Consider the following:   * You must create the bucket where you want to store your backup data beforehand. When you create a bucket, consider Amazon bucket naming rules. It is not recommended that you use dots (.) in the bucket name. For more information on bucket naming rules, see [AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). * You cannot browse for buckets when adding the AWS edition storage vault. * To specify a bucket for the AWS edition storage vault, you must use the Vault ID as the bucket name.To obtain the storage vault ID, copy the value in the Vault ID field in Veeam Data Cloud Vault. For more information, see the [Viewing Storage Vault Details](https://helpcenter.veeam.com/docs/vdc/userguide/vault_storage_vaults_edit.html#view_vault) section in the Veeam Data Cloud User Guide. |
 
 If the FIPS-compliant operation mode is enabled and the bucket you want to add is non-FIPS compliant, the warning will be displayed. For more information, see [FIPS Compliance](fips_compliance.md).
 
@@ -38,8 +38,14 @@ If the FIPS-compliant operation mode is enabled and the bucket you want to add i
 | Veeam Backup & Replication supports specific storage classes. For more information, see [Considerations and Limitations](s3_compatible_limitations.md). |
 
 1. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB.
+2. If another backup server already manages the object storage repository, you will be prompted to either add it as a read-only repository or take ownership of it from the backup server currently managing it in read-write mode. For more information, see the [Read-only mode](object_storage_repository.md#readOnlyAccess) subsection. To enable the read-only access, select the Enable read-only access check box.
 
-![Step 4. Specify Object Storage Settings](images/s3_add_bucket_bucket.webp)
+   |  |
+   | --- |
+   | Important |
+   | Consider the following:  * This check box is available only for immutable object storage repositories, added as a standalone repository or as the performance or capacity extent of a scale-out backup repository. * You cannot change this option after you add the object storage repository to the backup infrastructure. |
+
+![Step 4. Specify Object Storage Settings](images/s3_add_bucket.webp)
 
 Specifying Immutability Settings
 
@@ -60,7 +66,7 @@ To enable immutability:
 * Select the For the minimum immutability period only option if you want to specify the immutability period explicitly. The backup job retention will be skipped.
 * Next to the Minimum immutability duration option, provide the necessary value.
 
-![Step 4. Specify Object Storage Settings](images/s3_add_bucket.webp "Specify S3 Object Storage Bucket")
+![Step 4. Specify Object Storage Settings](images/s3_add_bucket_immutability.webp "Specify S3 Object Storage Bucket")
 
 Specifying Amazon S3 Storage Class
 
@@ -73,6 +79,12 @@ To specify the storage class, do the following:
 
 * Standard (recommended): Use this option if you plan to access your data frequently.
 * Infrequent Access: Use this option if you plan to access your data infrequently and require fast access in case when data is needed.
+
+|  |
+| --- |
+| Important |
+| You must use this option for AWS Edition of Veeam Data Cloud Vault. Other storage classes for this type of object storage repository are not supported. |
+
 * One Zone-Infrequent Access: Use this option if you want to isolate your data and store it in a specific location.
 
 |  |
@@ -82,4 +94,5 @@ To specify the storage class, do the following:
 
 ![Step 4. Specify Object Storage Settings](images/s3_add_bucket_storage_class.webp)
 
+Page updated 2026-07-28
 

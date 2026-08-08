@@ -3,8 +3,8 @@ title: "Viewing Snapshots and Backups"
 product: "vbr"
 doc_type: "kasten_integration"
 source_url: "https://helpcenter.veeam.com/docs/vbr/kasten_integration/view_backups.html"
-last_updated: "8/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Viewing Snapshots and Backups
@@ -19,17 +19,19 @@ Available backups and snapshots are displayed in the Home view:
 
 When you expand a node in the working area, you can see the following icons:
 
+Viewing Snapshots and Backups
+
 | Icon | State |
-| --- | --- |
 | ![Viewing Snapshots and Backups](images/icon_full.webp) | Kasten snapshot or export |
 | ![Viewing Snapshots and Backups](images/k10_application.webp) | Kasten application |
 
 This information in the working area provides the following data:
 
-* Veeam backup repository and folder on this repository where the backup is stored.
-* Available restore points.
-* Date of restore points creation.
-* Data size and backup file size.
-* A type of platform service where backups are created.
+* Veeam backup repository and folder on this repository where the backup is stored
+* Available restore points
+* Date of restore points creation
+* Data size and backup file size
+* A type of platform service where backups are created
 
+Page updated 2026-08-04
 

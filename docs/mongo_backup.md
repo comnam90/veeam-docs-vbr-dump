@@ -3,8 +3,8 @@ title: "MongoDB Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_backup.html"
-last_updated: "12/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # MongoDB Backup
@@ -31,4 +31,5 @@ In This Section
 * [Retention of MongoDB Backups](mongo_retention.md)
 * [Logs and Support](mongo_veeam_logs.md)
 
+Page updated 2026-06-16
 

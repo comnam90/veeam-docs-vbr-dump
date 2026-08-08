@@ -3,8 +3,8 @@ title: "/failoverPlans"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/failoverplans.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /failoverPlans
@@ -39,6 +39,7 @@ The /failoverPlans resource has a resource representation of the following type:
 
 |  |
 | --- |
-| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0"> |
+| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0">   <Ref Type="FailoverPlanReference" Href="https://localhost:9398/api/failoverPlans/ae01e36f-32a3-4095-95fa-09a2af744009" Name="SQL Failover Plan" UID="urn:veeam:FailoverPlan:ae01e36f-32a3-4095-95fa-09a2af744009">     <Links>       <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/ce15a8c7-aa49-495e-b05b-ee3398c91018" Name="srv02.tech.local" />       <Link Rel="Alternate" Type="FailoverPlan" Href="https://localhost:9398/api/failoverPlans/ae01e36f-32a3-4095-95fa-09a2af744009?format=Entity" Name="SQL Failover Plan" />     </Links>   </Ref>   <Ref Type="FailoverPlanReference" Href="https://localhost:9398/api/failoverPlans/8c6ac2a1-8330-400e-9194-40310b5ca58a" Name="Exchange Group Failover Plan" UID="urn:veeam:FailoverPlan:8c6ac2a1-8330-400e-9194-40310b5ca58a">     <Links>       <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/ce15a8c7-aa49-495e-b05b-ee3398c91018" Name="srv02.tech.local" />       <Link Rel="Alternate" Type="FailoverPlan" Href="https://localhost:9398/api/failoverPlans/8c6ac2a1-8330-400e-9194-40310b5ca58a?format=Entity" Name="Exchange Group Failover Plan" />     </Links>   </Ref> </EntityReferences> |
 
+Page updated 2026-07-29
 

@@ -3,12 +3,19 @@ title: "Uninstalling Veeam Plug-In for oVirt KVM"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_uninstall_plugin.html"
-last_updated: "2/2/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Uninstalling Veeam Plug-In for oVirt KVM
 
+
+[This section does not apply to Linux-based backup server]
+
+|  |
+| --- |
+| Tip |
+| Before you uninstall Veeam Plug-in for oVirt KVM, it is recommended that you [remove the oVirt KVM Manager](ovirt_remove_rhv_manager.md) from the backup infrastructure. In this case, Veeam Backup & Replication will also remove workers and worker images from the connected oVirt KVM clusters. |
 
 To uninstall Veeam Plug-in for oVirt KVM, do the following:
 
@@ -25,4 +32,5 @@ Related Topics
 * [Removing oVirt KVM Manager](ovirt_remove_rhv_manager.md)
 * [Removing Workers](ovirt_workers_remove.md)
 
+Page updated 2026-07-06
 

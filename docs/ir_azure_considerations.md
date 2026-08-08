@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ir_azure_considerations.html"
-last_updated: "6/2/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -12,12 +12,7 @@ product_version: "13.0.2.29"
 
 Prerequisites
 
-Before you perform Instant Recovery to Microsoft Azure, do the following:
-
-* [Deploy a helper appliance template](helper_appliance_template.md) in the region where you plan to recover workloads.
-* [Add a Microsoft Azure Compute account](restore_azure_accounts.md) that has specific built-in Azure roles assigned (the roles are listed in the section prerequisites).
-
-If you do not want to use built-in roles, you can create a custom role with granular permissions. For more information, see [Creating Custom Role for Azure Account](azure_custom_role.md).
+Before you recover workloads, you must deploy a helper appliance template in the region where you plan to recover workloads. For more information, see [Helper Appliance Template](helper_appliance_template.md).
 
 Storage Accounts
 
@@ -36,8 +31,8 @@ Workloads and Architectures
 
 * Veeam Backup & Replication supports Instant Recovery to Microsoft Azure for the following workloads:
 
-+ Microsoft Windows workloads that run Microsoft Windows Server 2016/Windows 10 and later.
-+ Linux workloads (see the Supported Distributions & Versions section in [Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros)).
+* Microsoft Windows workloads that run Microsoft Windows Server 2016/Windows 10 and later.
+* Linux workloads (see the Supported Distributions & Versions section in [Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros)).
 
 * Restoring of workloads running on the ARM CPU architecture is not supported.
 
@@ -76,7 +71,7 @@ Microsoft Windows-Specific Requirements
 
 Disks and VM Sizes
 
-* Veeam Backup & Replication does not support the Microsoft Azure VM sizes that support NVMe storage controllers. If you restore a VM with this configuration, the VM will fail to boot. For more information on the unsupported sizes, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview#vm-sizes).
+* Veeam Backup & Replication does not support the Microsoft Azure VM sizes that support only NVMe storage controllers. If you restore a VM with this configuration, the VM will fail to boot. For more information on the unsupported sizes, see [Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview#vm-sizes).
 
 * Veeam Backup & Replication does not support restoring of 4K native disks (disks with 4096 byte logical sector size). Contents of such disks will be unreadable after [migration](ir_azure_finalize.md).
 
@@ -104,4 +99,5 @@ Large-Scale Restore of Workloads
 
 If you plan to recover more than 20 workloads at the same time, follow the instructions provided in [this Veeam KB article](https://www.veeam.com/kb4764).
 
+Page updated 2026-06-22
 

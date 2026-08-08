@@ -3,8 +3,8 @@ title: "Removing HPE Morpheus VM Essentials Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_server_remove.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing HPE Morpheus VM Essentials Server
@@ -23,6 +23,7 @@ To remove the HPE Morpheus VM Essentials manager from the backup infrastructure:
 2. In the inventory pane, select Managed Servers > HPE Morpheus VM Essentials > HPE Morpheus VM Essentials Servers.
 3. In the working area, select the HPE Morpheus VM Essentials manager and click Remove Server on the ribbon, or right-click the HPE Morpheus VM Essentials manager and select Remove.
 
-[![Removing PVE Server](images/hpe_server_remove.webp)](images/hpe_server_remove.webp "Removing PVE Server")
+[![Removing HPE Morpheus VM Essentials Server](images/hpe_server_remove.webp)](images/hpe_server_remove.webp "Removing HPE Morpheus VM Essentials Server")
 
+Page updated 2026-07-22
 

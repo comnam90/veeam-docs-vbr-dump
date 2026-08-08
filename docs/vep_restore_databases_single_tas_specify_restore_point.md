@@ -1,0 +1,24 @@
+---
+title: "Step 2. Specify Restore Point"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vep_restore_databases_single_tas_specify_restore_point.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Step 2. Specify Restore Point
+
+
+At this step of the wizard, select a state as of which you want to restore your data:
+
+* Select the Restore to the point in time of the selected image-level backup option to load database files as of the moment when the current restore point was created.
+
+* Select the Restore to a specific point in time option to obtain database files as of the selected point in time within the available restore period. Use the slider to choose the point in time you need.
+
+The Restore to a specific point in time option is available only if backups of PostgreSQL write ahead log (WAL) files exist. For more information, see [Required Job Settings](vep_bu_job_settings.md).
+
+![Step 2. Specify Restore Point](images/vep_restore_tas_specify_restore_point_database.webp "Specifying Restore Point")
+
+Page updated 2026-04-17
+

@@ -3,8 +3,8 @@ title: "Copying Backups to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_backups_copy_tape.html"
-last_updated: "3/5/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Copying Backups to Tape
@@ -24,8 +24,9 @@ To archive VM backups to tape, do the following:
 |  |
 | --- |
 | Note |
-| You cannot restore HPE Morpheus VM Essentials VMs directly from tapes. To restore a HPE Morpheus VM Essentials VM, you must first restore its backups to a repository as described section [Backup Restore from Tape to Repository](vm_restore_from_tape_to_repository.md). |
+| You cannot restore HPE Morpheus VM Essentials VMs directly from tapes. To restore an HPE Morpheus VM Essentials VM, you must first restore its backups to a repository as described in section [Backup Restore from Tape to Repository](vm_restore_from_tape_to_repository.md). |
 
-[![Backup to Tape Jobs](images/pve_backups_copy_tape.webp)](images/pve_backups_copy_tape.webp "Backup to Tape Jobs")
+[![Backup to Tape Jobs](images/hpe_backups_copy_tape.webp)](images/hpe_backups_copy_tape.webp "Backup to Tape Jobs")
 
+Page updated 2026-07-22
 

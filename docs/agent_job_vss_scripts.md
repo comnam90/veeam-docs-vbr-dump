@@ -3,8 +3,8 @@ title: "Pre-Freeze and Post-Thaw Scripts"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_job_vss_scripts.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Pre-Freeze and Post-Thaw Scripts
@@ -38,4 +38,5 @@ During the backup job session, Veeam Backup & Replication uploads the scripts to
 
 ![Pre-Freeze and Post-Thaw Scripts](images/agent_job_vss_scripts.webp "Specify Pre-Freeze and Post-Thaw Scripts")
 
+Page updated 2026-08-05
 

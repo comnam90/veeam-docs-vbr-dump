@@ -3,8 +3,8 @@ title: "Specifying Preferred Networks for Veeam Plug-Ins"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/preferred_network_rman.html"
-last_updated: "5/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Specifying Preferred Networks for Veeam Plug-Ins
@@ -29,18 +29,23 @@ Adding Preferred Networks
 
 1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your Oracle server. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
-* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
 
 1. Run OracleRMANConfigTool command with the following parameter:
 
-* On machines running Linux or Unix OS:
+* For Linux or Unix:
 
 |  |
 | --- |
 | OracleRMANConfigTool --add-preferred-network <network\_IP\_address> <position\_in\_list> |
 
-* On machines running Microsoft Windows OS:
+* For Microsoft Windows:
 
 |  |
 | --- |
@@ -49,7 +54,7 @@ Adding Preferred Networks
 where:
 
 * <network\_IP\_address> can be either the IP address of a single network or a network mask that contains a range of network IP addresses. Specify one of the available options to add as preferred networks for Veeam Plug-In data traffic.
-* <position\_in\_list> is the position number of the network in the preferred networks list. The position in the list determines in what order Veeam Plug-In will connect to the specified network. If you do not chose a specific position in the list, newly added networks take the last place in the list automatically.
+* <position\_in\_list> is the position number of the network in the preferred networks list. The position in the list determines in what order Veeam Plug-In will connect to the specified network. If you do not choose a specific position in the list, newly added networks take the last place in the list automatically.
 
 For example:
 
@@ -61,18 +66,23 @@ Accessing Preferred Networks
 
 1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your Oracle server. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
-* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
 
 1. Run OracleRMANConfigTool with the --show-preferred-networks parameter:
 
-* On machines running Linux or Unix OS:
+* For Linux or Unix:
 
 |  |
 | --- |
 | OracleRMANConfigTool --show-preferred-networks |
 
-* On machines running Microsoft Windows OS:
+* For Microsoft Windows:
 
 |  |
 | --- |
@@ -88,18 +98,23 @@ Removing Preferred Networks
 
 1. Navigate to the Veeam Plug-In for Oracle RMAN directory on your Oracle server. The path to the directory differs depending on the OS of the machine where Veeam Plug-In is installed:
 
-* On machines running Linux or Unix OS: /opt/veeam/VeeamPluginforOracleRMAN
-* On machines running Microsoft Windows OS: %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
+* For Linux or Unix:
+
+/opt/veeam/VeeamPluginforOracleRMAN
+
+* For Microsoft Windows:
+
+%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN
 
 1. Run OracleRMANConfigTool with the --remove-preferred-network <network\_IP\_address> parameter:
 
-* On machines running Linux or Unix OS:
+* For Linux or Unix:
 
 |  |
 | --- |
 | OracleRMANConfigTool --remove-preferred-network <network\_IP\_address> |
 
-* On machines running Microsoft Windows OS:
+* For Microsoft Windows:
 
 |  |
 | --- |
@@ -113,4 +128,5 @@ For example:
 | --- |
 | OracleRMANConfigTool.exe --remove-preferred-network 172.24.29.189 |
 
+Page updated 2026-08-04
 

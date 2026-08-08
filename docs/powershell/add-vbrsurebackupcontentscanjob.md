@@ -3,8 +3,8 @@ title: "Add-VBRSureBackupContentScanJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrsurebackupcontentscanjob.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRSureBackupContentScanJob
@@ -22,11 +22,11 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRSureBackupContentScanJob -LinkedJob <VBRSureBackupLinkedJob[]> -VerificationOptions <VBRSureBackupJobVerificationOptions> [-Name <String>] [-Description <String>] [-MaxConcurrentVMs <Int32>] [-ProcessRandomMachines] [-ScheduleOptions <VBRSureBackupJobScheduleOptions>] [-Force] [-RandomMachinesMaxCount <Int32>]  [<CommonParameters>] |
+| Add-VBRSureBackupContentScanJob [-Description <String>] [-Force] [-LinkedJob <VBRSureBackupLinkedJob[]>] [-MaxConcurrentVMs <Int32>] [-Name <String>] [-ProcessRandomMachines] [-RandomMachinesMaxCount <Int32>] [-ScheduleOptions <VBRSureBackupJobScheduleOptions>] [-UnstructuredLinkedJob <VBRUnstructuredBackupJob[]>] -VerificationOptions <VBRSureBackupJobVerificationOptions> [<CommonParameters>] |
 
 Detailed Description
 
-This cmdlet createsa SureBackup job that runs in the backup content scan verification mode. This SureBackup job performs only backup integrity check and its content analysis to detect traces of malware or any other unwanted or sensitive data. These tests do no require setting up a virtual lab or an application group.
+This cmdlet creates a SureBackup job that runs in the backup content scan verification mode. This SureBackup job performs only backup integrity check and its content analysis to detect traces of malware or any other unwanted or sensitive data. These tests do no require setting up a virtual lab or an application group.
 
 Note that when you create a backup job, you need to run it manually unless you enable a job schedule.
 
@@ -36,9 +36,11 @@ Run the [New-VBRSureBackupJobScheduleOptions](new-vbrsurebackupjobscheduleoption
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| LinkedJob | Specifies a backup or replication job. The cmdlet will verify VMs that are added to this job with the lite SureBackup job. | Accepts the VBRSureBackupLinkedJob[] object. To create this object, run the [New-VBRSureBackupLinkedJob](new-vbrsurebackuplinkedjob.md) cmdlet. | True | Named | False |
+| LinkedJob | Specifies a backup or replication job. The cmdlet will verify VMs that are added to this job with the lite SureBackup job. | Accepts the VBRSureBackupLinkedJob[] object. To create this object, run the [New-VBRSureBackupLinkedJob](new-vbrsurebackuplinkedjob.md) cmdlet. | False | Named | False |
+| UnstructuredLinkedJob | Specifies an unstructured data backup job. The cmdlet will verify backups created by this job with the lite SureBackup job. | Accepts the VBRUnstructuredBackupJob[] object. To get this object, run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. | False | Named | False |
 | VerificationOptions | Specifies verification settings for a SureBackup job. | Accepts the VBRSureBackupJobVerificationOptions object. To create this object, run the [New-VBRSureBackupJobVerificationOptions](new-vbrsurebackupjobverificationoptions.md) cmdlet. | True | Named | False |
 | Name | Specifies a name for a SureBackup job. The cmdlet will create a SureBackup job with this name. | String | False | Named | False |
 | Description | Specifies a description for a SureBackup job. The cmdlet will create a SureBackup job with this description. | String | False | Named | False |
@@ -78,4 +80,5 @@ Related Commands
 * [New-VBRDailyOptions](new-vbrdailyoptions.md)
 * [New-VBRSureBackupJobScheduleOptions](new-vbrsurebackupjobscheduleoptions.md)
 
+Page updated 2026-06-12
 

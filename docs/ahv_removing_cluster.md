@@ -3,8 +3,8 @@ title: "Removing Nutanix AHV Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_removing_cluster.html"
-last_updated: "1/12/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Nutanix AHV Server
@@ -20,4 +20,10 @@ To remove the Prism Central or cluster from the backup infrastructure:
 
 [![Removing Nutanix AHV Cluster](images/ahv_cluster_remove.webp)](images/ahv_cluster_remove.webp "Removing Nutanix AHV Cluster")
 
+|  |
+| --- |
+| Tip |
+| Alternatively, in the Veeam Backup & Replication Web UI, navigate to Managed Servers, select the necessary server and click Remove. |
+
+Page updated 2026-07-03
 

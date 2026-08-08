@@ -3,8 +3,8 @@ title: "Scheduling Settings for Workstations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_win_schedule_workstation.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Scheduling Settings for Workstations
@@ -28,10 +28,21 @@ To specify the policy schedule:
 You can leave the Daily at check box unchecked to configure the backup policy without daily schedule. In this case, you will be able to use the backup policy to perform backup automatically [at specific events](#events).
 
 1. If you have selected the On these days option, click the Days button and clear check boxes for the days when the policy must not start.
-2. Select the action that Veeam Agent for Microsoft Windows must perform in case the protected computer is powered off at the time when the scheduled backup policy must start.
+2. If the protected computer is not available when the scheduled backup policy must start — for example, if the computer is:
 
-* Backup once powered on — select this option if you want Veeam Agent for Microsoft Windows to start the scheduled backup policy when the protected computer is powered on.
-* Skip backup — select this option if you want Veeam Agent for Microsoft Windows not to start the scheduled backup policy when the computer is powered on. Veeam Agent for Microsoft Windows will perform backup at the next scheduled time.
+* Powered off.
+* In sleep or hibernation mode with wake up timers disabled in the power plan settings.
+* In sleep mode with the Modern Standby power model enabled.
+
+Select the action that Veeam Agent for Microsoft Windows must perform:
+
+* Backup once powered on — select this option if you want Veeam Agent for Microsoft Windows to start the missed scheduled backup run when the protected computer becomes available.
+* Skip backup — select this option if you want Veeam Agent for Microsoft Windows not to start the missed scheduled backup run when the protected computer becomes available. Veeam Agent for Microsoft Windows will perform backup at the next scheduled time.
+
+|  |
+| --- |
+| NOTE |
+| If the Backup once powered on option is selected and a scheduled backup was missed while the computer was in Modern Standby, expect a delay of several minutes after the computer resumes before the missed backup starts. Veeam Agent for Microsoft Windows needs this time to confirm the computer has fully exited Modern Standby. |
 
 1. If you want Veeam Agent for Microsoft Windows to perform a finalizing action after the backup policy completes successfully, select the necessary action:
 
@@ -63,8 +74,9 @@ The Back up no more often than every <N> <time units> option is applied only to 
 |  |
 | --- |
 | ![Scheduling Settings for Workstations](images/icon_important.webp)IMPORTANT |
-| If the power scheme on the Veeam Agent computer does not allow using wake up timers, Veeam Agent for Microsoft Windows will not be able to wake your computer from sleep for backup. You can manually change the power scheme settings on the Veeam Agent computer. To do this, navigate to Control Panel > All Control Panel Items > Power Options > Edit Plan Settings. |
+| Veeam Agent for Microsoft Windows will not be able to wake the computer from sleep mode for scheduled backups in the following cases:   * The power scheme on the Veeam Agent computer does not allow using wake up timers. You can manually change the power scheme settings on the Veeam Agent computer. To do this, navigate to Control Panel > All Control Panel Items > Power Options > Edit Plan Settings. * The computer uses the Modern Standby power model.   On computers that use Modern Standby, Veeam Agent for Microsoft Windows detects it and adjusts behavior accordingly: it does not start scheduled backups while the computer is in Modern Standby, and it postpones going to idle sleep if a backup job is already running. |
 
 ![Scheduling Settings for Workstations](images/agent_job_schedule_workstation.webp "Specify Scheduling Settings for Workstations")
 
+Page updated 2026-07-28
 

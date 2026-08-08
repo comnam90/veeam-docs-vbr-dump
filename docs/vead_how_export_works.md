@@ -3,8 +3,8 @@ title: "How Export Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_how_export_works.html"
-last_updated: "5/10/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Export Works
@@ -20,6 +20,7 @@ Exporting Microsoft Active Directory data works in the following manner:
 
 You can make an exported LDF file available to an Active Directory Domain Services server by importing it with the ldifde utility. For more information, see [this Microsoft article](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781%28v%3Dws.10%29).
 
-[![How Export Works](images/vead_how_export_works.webp)](images/vead_how_export_works.webp "How Export Works")
+![How Export Works](images/vead_how_export_works.webp "How Export Works")
 
+Page updated 2026-05-26
 

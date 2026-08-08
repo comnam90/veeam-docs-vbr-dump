@@ -3,8 +3,8 @@ title: "Virtual Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/virtual_full_backup.html"
-last_updated: "9/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Virtual Full Backup
@@ -27,11 +27,12 @@ You can customize the virtual full backup schedule according to your needs, alth
 |  |
 | --- |
 | Note |
-| Consider the following:   * [For regular backup to tape jobs] If multiple scheduled virtual full backups were missed, the backup to tape job will write only the latest missed virtual full backup on the next run. * [For GFS backup to tape jobs] The source job configuration and the backup chain type do not have an impact on the virtual full backups. For more information, see [How GFS Backup to Tape Works](gfs_to_tape_hiw.md). |
+| Consider the following:   * [For regular backup to tape jobs] If multiple scheduled virtual full backups were missed, the backup to tape job will write only the latest missed virtual full backup on the next run. * [For GFS backup to tape jobs] The source job configuration and the backup chain type do not have an impact on the virtual full backups. For more information, see [How GFS Backup to Tape Works](gfs_to_tape_hiw.md). * [For Veeam Plug-In backup to tape jobs] The virtual full backups are processed as a scheduled full backup. On the virtual full day, Veeam Backup & Replication runs an active full backup and copies all closed plug-in backup files existing at the time in the source repository. No synthetic operations are performed on the backup files. |
 
 Related Topics
 
 * [How Virtual Full Backup Works](virtual_full_backup_hiw.md)
 * [Virtual Full Intervals](virtual_full_intervals.md)
 
+Page updated 2026-07-23
 
