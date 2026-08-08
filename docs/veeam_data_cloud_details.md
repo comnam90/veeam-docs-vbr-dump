@@ -3,8 +3,8 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veeam_data_cloud_details.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Object Storage Settings
@@ -21,6 +21,12 @@ To specify the folder that will be used to store data and the storage consumptio
 
 1. To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
 2. Select the Limit object storage consumption to check box to define a soft limit for your object storage consumption. If this limit is exceeded during a job run, Veeam Backup & Replication will complete the job. However, a new job will not be able to start unless you remove the extra data that exceeds the limit or change the soft limit settings. Provide the value in TB or PB.
+3. If another backup server already manages the object storage repository, you will be prompted to either add it as a read-only repository or take ownership of it from the backup server currently managing it in read-write mode. For more information, see the [Read-only mode](object_storage_repository.md#readOnlyAccess) subsection. To enable the read-only access, select the Enable read-only access check box.
+
+   |  |
+   | --- |
+   | Important |
+   | Consider the following:  * This check box is available only for immutable object storage repositories, added as a standalone repository or as the performance or capacity extent of a scale-out backup repository. * You cannot change this option after you add the object storage repository to the backup infrastructure. |
 
 ![Step 4. Specify Object Storage Settings](images/veeam_vault_container.webp)
 
@@ -50,4 +56,5 @@ To enable immutability:
 
 ![Step 4. Specify Object Storage Settings](images/veeam_vault_immutability.webp)
 
+Page updated 2026-07-23
 
