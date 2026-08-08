@@ -3,8 +3,8 @@ title: "Configuring Advanced Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_log_job_advanced.html"
-last_updated: "4/29/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Advanced Settings
@@ -65,4 +65,5 @@ For Veeam Backup & Replication to be able to send email notifications, you must 
 
 ![Configuring Advanced Settings](images/entra_id_log_job_notific.webp "Configure Notification Settings")
 
+Page updated 2026-05-26
 
