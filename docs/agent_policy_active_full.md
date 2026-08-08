@@ -3,8 +3,8 @@ title: "Performing Active Full Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_policy_active_full.html"
-last_updated: "8/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Active Full Backup
@@ -15,6 +15,13 @@ You can create an ad-hoc full backup — active full backup, and add it to the b
 When you start active full backup for a backup policy, Veeam Backup & Replication applies the policy to Veeam Agent computers and sends a command to perform active full backup on these computers. Veeam Backup & Replication does not check whether connection to Veeam Agent computers is active at the time when the command is sent. Keep in mind that the active full backup operation will be performed only on those computers that received the command from the backup server.
 
 Keep in mind that you cannot start active full backup for protection groups for pre-installed Veeam Agents and their members. Veeam Agent computers included in such protection groups will be skipped and Veeam Backup & Replication will display a warning message in a backup policy session statistics.
+
+You can perform an active full backup in one of the following ways:
+
+* [Using Veeam Backup & Replication Console](#console)
+* [Using Veeam Backup & Replication Web UI](#webui)
+
+Performing Active Full Backup Using Veeam Backup & Replication Console
 
 To perform active full backup on Veeam Agent computers added to the backup policy:
 
@@ -38,8 +45,18 @@ To create an active full backup for an individual computer:
 3. In the working area, select the Veeam Agent backup policy.
 4. In the bottom part of Veeam Backup & Replication, find the list of computers that are processed by the selected backup policy. In the list, right-click the computer and click Active full.
 
-Keep in mind the following you will be able to create an active full backup for another computer in the same job only after active full backup is created for the selected computer.
+Keep in mind that you will be able to create an active full backup for another computer in the same policy only after active full backup is created for the selected computer.
 
 [![Perform Full Backup for Individual Computer](images/agent_policy_full_one.webp)](images/agent_policy_full_one.webp "Perform Full Backup for Individual Computer")
 
+Performing Active Full Backup Using Veeam Backup & Replication Web UI
+
+To perform active full backup on Veeam Agent computers added to the backup policy:
+
+1. In the management pane, click Jobs.
+2. Select the check box next to the necessary backup policy, and from the Manage drop-down list, select Active Full. Alternatively, right-click the policy and click Manage > Active Full.
+
+[![Perform Active Full Backup](images/agent_policy_active_full_web.webp)](images/agent_policy_active_full_web.webp "Perform Active Full Backup")
+
+Page updated 2026-07-29
 
