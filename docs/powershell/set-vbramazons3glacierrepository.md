@@ -3,8 +3,8 @@ title: "Set-VBRAmazonS3GlacierRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbramazons3glacierrepository.html"
-last_updated: "5/17/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRAmazonS3GlacierRepository
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRAmazonS3GlacierRepository -Repository <VBRAmazonS3GlacierRepository> [-Name <String>] [-Description <String>] [-AmazonProxySpec <VBRAmazonEC2ProxyAppliance>] [-UseDeepArchive] [-UseInstantRetrieval] [-UseGatewayServer] [-GatewayServer <CHost[]>] [-ConnectionType <VBRRepositoryConnectionType>] [-Force]  [<CommonParameters>] |
+| Set-VBRAmazonS3GlacierRepository -Repository <VBRAmazonS3GlacierRepository> [-Name <String>] [-Description <String>] [-AmazonProxySpec <VBRAmazonEC2ProxyAppliance>] [-UseDeepArchive] [-UseInstantRetrieval] [-UseGatewayServer] [-GatewayServer <CHost[]>] [-ConnectionType <VBRRepositoryConnectionType>] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -37,17 +37,20 @@ This cmdlet modifies settings for Amazon S3 Glacier archive storage repository a
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Repository | Specifies an Amazons S3 Glacier archive storage that you want to modify. | Accepts the VBRAmazonS3GlacierRepository object. To get this object, run the [Get-VBRArchiveObjectStorageRepository](get-vbrarchiveobjectstoragerepository.md) cmdlet. | True | Named | True (ByValue) |
 | Name | Specifies a name of an Amazon S3 Glacier object storage. The cmdlet will add object storage with this name. | String | False | Named | False |
 | Description | Specifies a description of an Amazon S3 Glacier object storage. The cmdlet will add object storage with this description. | String | False | Named | False |
 | AmazonProxySpec | Specifies the archiver appliance that will transfer the data from Amazon S3 to Amazon S3 Glacier object storage. | Accepts the VBRAmazonEC2ProxyAppliance object. To create this object, run the [New-VBRAmazonEC2ProxyAppliance](new-vbramazonec2proxyappliance.md) cmdlet. | True | Named | True (ByPropertyName) |
-| UseDeepArchive | Defines that the cmdlet will create a repository where blocks are marked with the Glacier Deep Archive storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.    Default: False. | SwitchParameter | False | Named | False |
-| UseInstantRetrieval | Defines that the cmdlet will create a repository where blocks are marked with the Amazon S3 Glacier Instant Retrieval storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.    Default: False. | SwitchParameter | False | Named | False |
+| UseDeepArchive | Defines that the cmdlet will create a repository where blocks are marked with the Glacier Deep Archive storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.  Default: False. | SwitchParameter | False | Named | False |
+| UseInstantRetrieval | Defines that the cmdlet will create a repository where blocks are marked with the Amazon S3 Glacier Instant Retrieval storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.  Default: False. | SwitchParameter | False | Named | False |
 | UseGatewayServer | Note: This parameter is deprecated and will be ignored. Use the GatewayServer parameter instead.  Defines that the cmdlet will use a gateway server to transfer data from processed VM to object storage repositories.  Default: False. | SwitchParameter | False | Named | False |
 | GatewayServer | Specifies an array of gateway servers that you want to use to transfer data from processed VM to object storage repositories. | Accepts the CHost[] object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
-| ConnectionType | Specifies how Veeam Backup & Replication will access the object storage repository:   * Direct: Use this option if you want Veeam Backup & Replication to use a proxy server to transfer data from the processed VM to object storage repositories. * Gateway: Use this option if you want Veeam Backup & Replication to use a gateway server to transfer data from processed VM to object storage repositories.   Default: Direct. | VBRRepositoryConnectionType | False | Named | False |
+| ConnectionType | Specifies how Veeam Backup & Replication will access the object storage repository:   * Direct: Use this option if you want Veeam Backup & Replication to use a proxy server to transfer data from the processed VM to object storage repositories. * Gateway: Use this option if you want Veeam Backup & Replication to use a gateway server to transfer data from processed VM to object storage repositories. Note: Provide the GatewayServer parameter to specify the server.   Default: Direct. | VBRRepositoryConnectionType | False | Named | False |
+| ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
+| ImmutabilityPeriod | Defines the immutability period in days.  Default: 30 days.  Maximum: 999 days. | Int32 | False | Named | False |
 | Force | Defines that the cmdlet will modify object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -79,4 +82,5 @@ Related Commands
 
 * [Get-VBRServer](get-vbrserver.md)
 
+Page updated 2026-05-27
 
