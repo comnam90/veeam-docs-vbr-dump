@@ -3,8 +3,8 @@ title: "About Veeam Cloud Connect"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_overview.html"
-last_updated: "5/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # About Veeam Cloud Connect
@@ -22,7 +22,7 @@ Tenants who want to store their data in the cloud can connect to the SP and writ
 In This Section
 
 * [Veeam Cloud Connect Infrastructure](cloud_infrastructure.md)
-* [SP and Tenant Roles](cloud_roles.md)
+* [Service Providers and Tenants](cloud_roles.md)
 * [Veeam Cloud Connect Backup](cloud_backup.md)
 * [Veeam Cloud Connect Replication](cloud_replication.md)
 * [Continuous Data Protection (CDP) with Veeam Cloud Connect](cloud_connect_cdp.md)
@@ -35,4 +35,5 @@ In This Section
 * [Tenant Backup to Tape](cloud_connect_tape.md)
 * [IPv6 Support](cloud_connect_ipv6.md)
 
+Page updated 2026-07-21
 
