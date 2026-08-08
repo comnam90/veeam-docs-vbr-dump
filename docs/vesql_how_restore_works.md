@@ -3,8 +3,8 @@ title: "How Restore Works"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_how_restore_works.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Restore Works
@@ -24,7 +24,7 @@ To perform these validations and required file operations, Veeam Explorer for Mi
 
 After the restore operation successfully completes, Veeam Explorer for Microsoft SQL Server unmounts the mounted file system from the target server.
 
-![How Restore Works](images/vesql_restore.webp "How Restore Works")
+![How Restore Works](images/vesql_restore.webp "How Restore from Image-Level Backups Works")
 
 Restore from SQL Plug-in Backups
 
@@ -32,7 +32,7 @@ Restoring from backups created with Veeam Plug-In for Microsoft SQL Server works
 
 1. To start the restore process, Veeam Explorer for Microsoft SQL Server sends a restore command to the Veeam Mount Service running on the mount server associated with the backup repository.
 2. The Veeam Mount Service delegates this request to the Veeam Explorers Recovery Service running on the same server.
-3. The Veeam Explorers Recovery Service deploys a restore component on the target  server. For more information about persistent and non-persistent components used during restore, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md).
+3. The Veeam Explorers Recovery Service deploys a restore component on the target server. For more information about persistent and non-persistent components used during restore, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md).
 4. On the target server, the restore component checks if the database exists on the target server, the valid rights assignments required for database recovery and if the target server has enough free space for the restored database. The restore component also connects to Veeam Plug-In for Microsoft SQL Server.
 
 For each database that will be restored, the restore component creates a VDI device — a virtual device that impersonates itself as backup storage and communicates with Microsoft SQL Server.
@@ -40,6 +40,23 @@ For each database that will be restored, the restore component creates a VDI dev
 1. Veeam Plug-In for Microsoft SQL Server retrieves data from the backups stored in the backup repository and starts Veeam Data Mover services on the backup repository and the target Microsoft SQL Server machine.
 2. Veeam Data Movers transport the Microsoft SQL Server data from the backup repository to the VDI devices on the target server. The restore component on the target server applies the changes to the relevant databases.
 
-![How Restore Works](images/vesql_restore_plugin.webp "How Restore Works")
+![How Restore Works](images/vesql_restore_plugin.webp "How Restore from Plug-in Backups Works")
 
+Restore from RDS Backups
+
+Restoring from Amazon RDS backups works in the following manner:
+
+1. To start the restore process, Veeam Explorer for Microsoft SQL Server sends a restore command to the Veeam Mount Service running on the mount server associated with the backup repository.
+2. The Veeam Mount Service delegates this request to the Veeam Explorers Recovery Service running on the same server.
+3. The Veeam Explorers Recovery Service deploys a restore component on the target server. For more information about persistent and non-persistent components used during restore, see [Deploying Persistent and Non-Persistent Components](vesql_restore_service.md).
+4. On the target server, the restore component checks if the database exists on the target server, the valid rights assignments required for database recovery and if the target server has enough free space for the restored database.
+
+For each database that will be restored, the restore component creates a VDI device — a virtual device that impersonates itself as backup storage and communicates with Microsoft SQL Server.
+
+1. To retrieve the data from the backups stored in the Amazon S3 backup repository, the restore component starts Veeam Data Movers — one on the gateway server associated with the repository and one on the target Microsoft SQL Server machine.
+2. Veeam Data Movers transport the Microsoft SQL Server data from the Amazon S3 backup repository to the VDI devices on the target server. The restore component on the target server applies the changes to the relevant databases.
+
+![How Restore Works](images/vesql_restore_rds.webp "How Restore from RDS Backups Works")
+
+Page updated 2026-07-14
 
