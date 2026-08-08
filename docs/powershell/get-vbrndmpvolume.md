@@ -3,8 +3,8 @@ title: "Get-VBRNDMPVolume"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrndmpvolume.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRNDMPVolume
@@ -38,7 +38,7 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Get-VBRNDMPVolume -Server <VBRNDMPServer[]>  [<CommonParameters>] |
+| Get-VBRNDMPVolume -Server <VBRNDMPServerBase[]>  [<CommonParameters>] |
 
 Detailed Description
 
@@ -48,9 +48,9 @@ Parameters
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Id | Specifies an array of volume IDs. The cmdlet will return volumes with these IDs.  Note: You an array of volume IDs only after you create the file to tape job. | Guid[] | True | Named | False |
-| Server | Specifies an array of NDMP servers. The cmdlet will return volumes located on these NDMP servers. | Accepts the [VBRNDMPServer](vbrndmpserver.md)[] object. To get this object, run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. | True | Named | False |
+| Server | Specifies an array of NDMP servers. The cmdlet will return volumes located on these NDMP servers. | Accepts the VBRNDMPServerBase[] object. To get this object, run the [Get-VBRNDMPServer](get-vbrndmpserver.md) cmdlet. | True | Named | False |
 | Name | Specifies an array of names for volumes. The cmdlet will return volumes with these names. | String[] | False | Named | False |
 
 <CommonParameters>
@@ -91,4 +91,5 @@ Related Commands
 
 [Get-VBRNDMPServer](get-vbrndmpserver.md)
 
+Page updated 2026-06-04
 
