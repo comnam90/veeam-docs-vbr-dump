@@ -3,8 +3,8 @@ title: "About Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/about_backup.html"
-last_updated: "1/14/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # About Backup
@@ -41,4 +41,5 @@ In This Section
 * [Resume on Disconnect](replica_resume_disconnect.md)
 * [Snapshot Hunter](snapshot_hunter.md)
 
+Page updated 2026-08-04
 
