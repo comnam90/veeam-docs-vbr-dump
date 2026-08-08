@@ -3,8 +3,8 @@ title: "Backup to Object Storage"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_object_storage.html"
-last_updated: "7/6/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup to Object Storage
@@ -32,7 +32,7 @@ You can store Veeam Agent backups in the following types of object storage:
 
 Veeam Agents communicate with the object storage using one of the following connection modes:
 
-* Connection through a gateway server. With this connection mode, access object storage through Veeam Backup & Replication. As a result, Veeam Agent access to object storage is managed by a proxy component — a gateway server assigned in the Veeam Backup & Replication console. Backup data is sent from Veeam Agent computer to the gateway server, then it is sent from gateway server to the object storage.
+* Connection through a gateway server. With this connection mode, access object storage through Veeam Backup & Replication. As a result, Veeam Agent access to object storage is managed by a proxy component — a gateway server assigned by Veeam Backup & Replication. Backup data is sent from Veeam Agent computer to the gateway server, then it is sent from gateway server to the object storage.
 * Direct connection. With this connection mode, access object storage directly. Backup data is sent from Veeam Agent computer to the object storage. Veeam Agent access to object storage is managed by Application Programming Interface (API) provided by an external cloud service provider. To learn more, see [Access Permissions for Direct Connection to Object Storage](agents_object_storage_direct_access.md).
 
 If you plan to back up to the repository in the object storage in the direct connection mode using a backup job managed by Veeam Agent, keep in mind that Veeam Agents will still connect to Veeam Backup & Replication periodically to update license and backup job settings and refresh object storage credentials. These connections are not necessary for backup job sessions themselves.
@@ -47,13 +47,13 @@ The license and credentials are not refreshed on every connection. The license a
 |  |
 | --- |
 | IMPORTANT |
-| * After you switch your repository from one connection mode to another, Veeam Agent will need to connect to Veeam Backup & Replication to update repository settings. Until this connection is made, all backup operations by will fail.  * If you plan to back up data to the S3 compatible storage in the direct connection mode, you must perform an extra step: manually set access to the object storage for . To learn more, see [Managing Permissions for S3 Compatible Object Storage](access_permissions.md). * Veeam Agent always performs backup of cloud machines directly to the cloud regardless of the connection mode specified in the backup repository settings. |
+| * After you switch your repository from one connection mode to another, Veeam Agent will need to connect to Veeam Backup & Replication to update repository settings. Until this connection is made, all backup operations by Veeam Agent will fail.  * If you plan to back up data to the S3 compatible storage in the direct connection mode, you must perform an extra step: manually set access to the object storage for . To learn more, see [Managing Permissions for S3 Compatible Object Storage](access_permissions.md). * Veeam Agent always performs backup of cloud machines directly to the cloud regardless of the connection mode specified in the backup repository settings. |
 
 Getting Started
 
 To back up Veeam Agent computer data to an object storage, you must complete the following steps:
 
-1. Add repository in the Veeam backup console. To learn more, see [Adding Object Storage Repositories](new_object_storage.md).
+1. Add repository in Veeam Backup & Replication. To learn more, see [Adding Object Storage Repositories](new_object_storage.md).
 
 You can use an object storage in Veeam Backup & Replication as one of the following repositories:
 
@@ -88,15 +88,14 @@ Before you configure your backup infrastructure to enable backup to object stora
 
 To learn about modes you can put extents of scale-out backup repositories to, see [Service Actions with Scale-Out Backup Repositories](backup_repository_sobr_service.md).
 
-* [For backup jobs managed by Veeam Agent] You cannot back up data to the Veeam Data Cloud Vault storage added in the [direct connection mode](#direct).
 * [For backup jobs managed by Veeam Agent] If you back up data to the S3 compatible object storage with multiple buckets, Veeam Agent will ignore the number of workloads set for one bucket and will store all backups in a single child bucket. To learn more about multiple buckets, see [Multiple Buckets for S3 Compatible Object Storage Repositories](https://helpcenter.veeam.com/docs/vbr/userguide/object_storage_repository.html?ver=13#multiple-buckets-for-s3-compatible-object-storage-repositories).
 
 * [For Unix-based Veeam Agent computers] Consider the following:
 
 * Veeam Agent for Unix supports only Amazon S3, as well as selected types of S3 compatible storage: MinIO, IBM Cloud and Wasabi Cloud.
 * Veeam Agent for Unix does not support backup to object storage for computers added to a protection group for pre-installed Veeam Agents.
+* Veeam Agent for Unix supports backup to an object storage repository only through a backup policy. For more information about differences between backup jobs and backup policies, see [Veeam Agent Backup Jobs and Policies](agents_job_mode.md).
 * [For Oracle Solaris 10 1/13] To enable Veeam Agent connection to S3 compatible storage repositories, you must install the necessary CA certificates. For more information on installing the certificates, see [this Veeam KB article](https://veeam.com/kb4735).
-* Veeam Agent for Unix only supports backup repositories that are configured to have [direct connection](#direct) to object storage.
 
 * For Microsoft Azure Blob storage, do not support soft delete for blobs.
 * If you plan to back up data to the Microsoft Azure Blob storage using a [direct connection](#direct), the following limitations apply:
@@ -121,4 +120,5 @@ To learn more about immutability, see [Immutability for Object Storage Repositor
 * 30 days — for repositories using Shared Access Key.
 * 7 days — for repositories using Entra ID credentials.
 
+Page updated 2026-07-24
 
