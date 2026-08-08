@@ -3,8 +3,8 @@ title: "/cloud/publicIpAddresses/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/publicipaddresses_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /cloud/publicIpAddresses/{ID}
@@ -44,7 +44,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudPublicIpAddressReference" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648" Name="198.51.100.16" UID="urn:veeam:CloudPublicIpAddress:22d2cdad-ddd1-4789-9e27-03bf25786648"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudPublicIpAddressReference" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648" Name="198.51.100.16" UID="urn:veeam:CloudPublicIpAddress:22d2cdad-ddd1-4789-9e27-03bf25786648">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudPublicIpAddress" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648?format=Entity" Name="198.51.100.16" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -52,4 +52,5 @@ Entity resource representation:
 | --- |
 | <CloudPublicIpAddress xmlns="http://www.veeam.com/ent/v1.0" Type="CloudPublicIpAddress" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648?format=Entity" Name="198.51.100.16" UID="urn:veeam:CloudPublicIpAddress:22d2cdad-ddd1-4789-9e27-03bf25786648" BackupServerUid="urn:veeam:BackupServer:8fff3b8e-c3f1-4ef5-aecc-561f07bf9982">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8fff3b8e-c3f1-4ef5-aecc-561f07bf9982" Name="172.17.53.48" />     <Link Rel="Alternate" Type="CloudPublicIpAddressReference" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648" Name="198.51.100.16" />     <Link Rel="Edit" Type="CloudPublicIpAddressReference" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648" Name="198.51.100.16" />     <Link Rel="Delete" Type="CloudPublicIpAddress" Href="https://localhost:9398/api/cloud/publicIpAddresses/22d2cdad-ddd1-4789-9e27-03bf25786648" Name="198.51.100.16" />   </Links>   <IpAddress>198.51.100.16</IpAddress> </CloudPublicIpAddress> |
 
+Page updated 2026-07-29
 
