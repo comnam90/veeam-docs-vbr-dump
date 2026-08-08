@@ -3,8 +3,8 @@ title: "System Requirements"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_sys_req.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # System Requirements
@@ -13,7 +13,7 @@ product_version: "13.0.1.2067"
 System Requirements
 
 | Specification | Requirement |
-| Veeam Backup & Replication | Veeam Backup & Replication version 13.0.1 must be deployed on the backup server. |
+| Veeam Backup & Replication | Veeam Backup & Replication version 13.1 must be deployed on the backup server. |
 | Backup server | The backup server must meet the system requirements listed in the section [System Requirements](system_requirements.md). |
 | Veeam Backup & Replication console | 64-bit versions of the following Microsoft Windows operating systems are supported:   * Microsoft Windows Server 2025 * Microsoft Windows Server 2022 * Microsoft Windows Server 2019 * Microsoft Windows Server 2016 * Microsoft Windows 11 (versions 22H2, 23H2, 24H2) * Microsoft Windows 10 (versions 1909 to 22H2) * Microsoft Windows 10 LTS (versions 21H2 LTSC, 22H2 GA)   Other system requirements for the Veeam Backup & Replication console are listed in section [Veeam Backup & Replication Console System Requirements](system_requirements.md). |
 | Backup proxy | The general-purpose backup proxy must meet the system requirements listed in section [System Requirements](system_requirements.md). |
@@ -21,4 +21,5 @@ System Requirements
 | Cache repository | The cache repository stores temporary cache files for log processing. This repository must meet system requirements described in section [Cache Repository System Requirements](system_requirements.md). |
 | Log backup repository | The primary and secondary log backup repositories store audit and sign-in log backups and their copies. These repositories must meet requirements described in section [Backup Repository System Requirements](system_requirements.md).  For information on which types of repositories can be used as primary and secondary repositories, see [Configuring Repositories](entra_id_configure_repo.md). |
 
+Page updated 2026-08-03
 
