@@ -3,8 +3,8 @@ title: "Step 5. Specify Secondary Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/entra_id_log_job_secondary.html"
-last_updated: "3/3/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Secondary Repository Settings
@@ -35,4 +35,5 @@ For a password to be displayed in the list of available passwords, it must be ad
 
 ![Step 5. Specify Secondary Repository Settings](images/entra_id_tenant_backup_copy.webp)
 
+Page updated 2026-06-16
 
