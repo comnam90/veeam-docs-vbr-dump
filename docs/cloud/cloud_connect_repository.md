@@ -3,8 +3,8 @@ title: "Cloud Repository"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_repository.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Cloud Repository
@@ -20,7 +20,7 @@ The cloud repository is a regular backup repository configured in the SP backup 
 To learn more, see [Support for Hardened (Immutable) Backup Repository](#hardened_repository).
 
 * Shared folder
-* Deduplicating storage appliance: Dell Data Domain, ExaGrid and Quantum DXi
+* Deduplicating storage appliance: Dell Data Domain, ExaGrid, Quantum DXi and HPE StoreOnce
 * Scale-out backup repository
 
 To learn more, see [Support for Scale-Out Backup Repository](#sobr).
@@ -48,7 +48,7 @@ Keep in mind that the immutable time is a per-repository setting and different t
 |  |
 | --- |
 | Note |
-| Hardened (immutable) backup repository is not supported for tenants that run Veeam Backup & Replication versions earlier than version 11.   * If storage quotas are allocated for such tenants on the cloud repository, the SP cannot enable immutability in the backup repository settings. * Backup repositories with enabled immutability are not displayed in the Edit Tenant wizard for such tenants. |
+| The tenant can enable configuration backup in Veeam Backup & Replication and target it at a hardened repository used as a cloud repository. In this case, the configuration backup does not become immutable. |
 
 Support for Scale-Out Backup Repository
 
@@ -72,4 +72,5 @@ Related Tasks
 
 [Configuring Cloud Repositories](cloud_connect_configure_repository.md)
 
+Page updated 2026-07-29
 
