@@ -3,8 +3,8 @@ title: "Using Veeam Infrastructure Appliance as Hardened Repository"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hardened_repository_appliance_prepare.html"
-last_updated: "3/19/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Using Veeam Infrastructure Appliance as Hardened Repository
@@ -15,6 +15,7 @@ You can install, configure and maintain a hardened repository using Veeam Infras
 |  |
 | --- |
 | Important |
-| To use a Veeam Infrastructure Appliance as a hardened repository, you must select the Veeam Hardened Repository option on the [Veeam Infrastructure Appliance](linux_infrastructure_appliance_install.md) installation menu. |
+| To use a Veeam Infrastructure Appliance as a hardened repository, you must select the Veeam Hardened Repository role in the Initial Configuration wizard. For more information, see [Installing Veeam Infrastructure Appliance with ISO](linux_infrastructure_appliance_install.md). |
 
+Page updated 2026-06-18
 
