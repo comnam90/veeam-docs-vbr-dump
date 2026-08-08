@@ -3,8 +3,8 @@ title: "Managing Accounts"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_managing_accounts.html"
-last_updated: "10/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Accounts
@@ -27,8 +27,8 @@ Adding Account
 
 To add an account, take the following steps:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
 3. Select the Roles section on the left of the Configuration view.
 
 [![Adding Account](images/em_users_list.webp)](images/em_users_list.webp "Adding Account")
@@ -57,4 +57,5 @@ Removing Account
 
 To remove an added user or group, select it in the list and click Remove on the toolbar.
 
+Page updated 2026-07-16
 
