@@ -3,8 +3,8 @@ title: "Account Permissions"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_permissions.html"
-last_updated: "6/30/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Account Permissions
@@ -24,12 +24,7 @@ Backup Server Windows Account Permissions
 
 Scale Computing HyperCore Cluster Permissions
 
-The account that the backup server uses to access the Scale Computing HyperCore cluster must have the Admin role assigned or posses the following permissions: Backup, VM Create/Edit, VM Delete, VM Power Controls, Cluster Settings.
-
-|  |
-| --- |
-| Important |
-| If you use Scale Computing HyperCore version 9.4.32 with a limited-permission account, the worker image upload may fail during deployment. |
+The account that the backup server uses to access the Scale Computing HyperCore cluster must have the Admin role assigned or possess the following permissions: Backup, VM Create/Edit, VM Delete, VM Power Controls, Cluster Settings.
 
 Performing Guest Processing
 
@@ -50,6 +45,7 @@ Performing Guest Processing
 | Microsoft Exchange | The account used to back up Microsoft Exchange data must have the local Administrator permissions on the machine where Microsoft Exchange is installed. |
 | Oracle | The account specified at the Guest Processing step must be configured in the following way:   * For a Windows-based VM, the account must be a member of both the Local Administrator group and the ORA\_DBA group (if OS authentication is used). In addition, if ASM is used, then such an account must be a member of the ORA\_ASMADMIN group (for Oracle 12 and higher). * For a Linux-based VM, the account must be a Linux user elevated to root. The account must have the home directory created.   To back up Oracle databases, you can specify the following options at the [Oracle](sch_backup_job_create_gp_oracle.md) tab:   * Oracle account with SYSDBA privileges.   You can use, for example, the SYS Oracle account or any other Oracle account that has been granted SYSDBA privileges.   * Account specified for guest processing. That is, the Use guest credentials option selected.   In this case, the account that was specified at the Guest Processing step must be a member of the ORA\_DBA group for a Windows-based VM and OSASM, OSDBA and OINSTALL groups for a Linux-based VM.  To perform guest processing for Oracle databases on Linux servers, make sure that the /tmp directory is mounted with the exec option. Otherwise, you will get an error with the permission denial. |
 | Microsoft SharePoint | To back up a Microsoft SharePoint Server, the account must have the Farm Administrator role.  To back up Microsoft SQL databases of the Microsoft SharePoint Server, the account must have permissions required for Microsoft SQL Server backup operations. |
-| PostgreSQL | The account specified at the Guest Processing step must be a Linux user elevated to root. The account must have the home directory created.  For the directory specified as the temporary location for archive logs, the following permissions must be granted:   * The user running the PostgreSQL instance must have read, write, and execute (rwx) permissions. * The user selected in the backup job settings must have read and execute (rx) permissions.   To back up PostgreSQL instances, the account must have the superuser privileges for the PostgreSQL instance. For more information, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html).  Note: If you back up data using vSphere API, the account specified at the Guest Processing step must be a root Linux user. |
+| PostgreSQL | The account specified at the Guest Processing step must be a Linux user elevated to root. The account must have the home directory created.  For the directory specified as the temporary location for archive logs, the following permissions must be granted:   * The user running the PostgreSQL instance must have read, write, and execute (rwx) permissions. * The user selected in the backup job settings must have read and execute (rx) permissions.   To back up PostgreSQL instances, the account must have the superuser privileges for the PostgreSQL instance. For more information, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html). |
 
+Page updated 2026-07-15
 
