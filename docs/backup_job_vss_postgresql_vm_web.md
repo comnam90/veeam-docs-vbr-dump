@@ -3,8 +3,8 @@ title: "PostgreSQL WAL Files Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_postgresql_vm_web.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # PostgreSQL WAL Files Settings
@@ -20,7 +20,7 @@ To create a transactionally consistent backup of PostgreSQL VM, you must enable 
 To specify WAL files settings and back up PostgreSQL logs, do the following:
 
 1. In the Processing Settings window, click the PostgreSQL tab.
-2. From the Specify PostgreSQL account with superuser privileges drop-down list, select a user account that Veeam Backup & Replication will use to connect to the PostgreSQL instance. The account must have privileges described in section [Permissions](required_permissions.md#postgresql). If you have not set up credentials beforehand, click Add on the right to add credentials.
+2. From the Specify PostgreSQL account with superuser privileges drop-down list, select a user account that Veeam Backup & Replication will use to connect to the PostgreSQL instance. The account must have privileges described in section [Permissions](permissions_guest_processing.md#postgresql). If you have not set up credentials beforehand, click Add on the right to add credentials.
 
 By default, the Use guest credentials option is selected in the list. With this option selected, Veeam Backup & Replication will connect to the PostgreSQL instance under the account. In this case, Veeam Backup & Replication will use the account specified at the Guest Processing step of the wizard to access the VM guest OS and connect to the PostgreSQL instance.
 
@@ -36,19 +36,19 @@ Note that if you plan to select the System user without password file (peer) aut
 | If you want Veeam Backup & Replication to use the user name map authentication, select Database user with password and leave the password field empty. Consider the following:   * Guest OS credentials specified at the Guest Processing step of the wizard will be used as the System-Username.  * PostgreSQL account specified at the step 2 will be used as the PG-Username.   For more information about the user name maps, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/auth-username-maps.html). |
 
 * Select Database user with password file (.pgpass) if the password for the account you specified at the step 2 is defined in the .pgpass configuration file on the PostgreSQL VM. The password file must be located in the user's home directory. For more information about the password file, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/libpq-pgpass.html).
-* Select System user without password file (peer) if you want Veeam Backup & Replication to use the peer authentication method. In this case, Veeam Backup & Replication will use the account you specified at the step 2 as the OS account and as the PostgreSQL account to connect to PostgreSQL. For more information about the peer authentication method, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/auth-peer.html).
+* Select System user without password (peer) if you want Veeam Backup & Replication to use the peer authentication method. In this case, Veeam Backup & Replication will use the account you specified at the step 2 as the OS account and as the PostgreSQL account to connect to PostgreSQL. For more information about the peer authentication method, see [PostgreSQL documentation](https://www.postgresql.org/docs/current/auth-peer.html).
 
 |  |
 | --- |
 | Important |
-| If you have added a new PostgreSQL account and want to use it with the peer authentication method, make sure that you have added this account as a Linux user with [sufficient permissions](required_permissions.md#postgresql). |
+| If you have added a new PostgreSQL account and want to use it with the peer authentication method, make sure that you have added this account as a Linux user with [sufficient permissions](permissions_guest_processing.md#postgresql). |
 
-1. To back up PostgreSQL WAL files with Veeam Backup & Replication, select the Backup logs every <N> minutes check box and specify the frequency for WAL files backup. By default, WAL files are backed up every 15 minutes. The maximum log backup interval is 480 minutes.
+1. To back up PostgreSQL WAL files with Veeam Backup & Replication, select the Back up logs every <N> minutes check box and specify the frequency for WAL files backup. By default, WAL files are backed up every 15 minutes. The maximum log backup interval is 480 minutes.
 
 1. In the Retain log backups section, specify the retention policy for WAL files stored in the backup repository:
 
 + Select Until the corresponding image-level backup is deleted to apply the same retention policy for both image-level backups and WAL file backups.
-+ Select Keep only last <N> days of log backups to keep WAL files for a specific number of days. By default, WAL files are kept for 15 days. If you select this option, you must make sure that retention for WAL files is not greater than retention for the image-level backups. For more information, see [Retention for PostgreSQL WAL Files](postrgresql_backup_retention.md).
++ Select Keep only last <N> days of log backups to keep WAL files for a specific number of days. By default, WAL files are kept for 15 days. If you select this option, you must make sure that retention for WAL files is not greater than retention for the image-level backups. For more information, see [Retention for PostgreSQL WAL Files](postgresql_backup_retention.md).
 
 1. In the Temporary location for archive logs section, specify a path to the storage location where you want to keep WAL files.
 
@@ -61,4 +61,5 @@ Make sure that you select a server that is not used by other resource-consuming 
 
 [![Click to zoom in](images/vm_backup_job_vss_postgresql_web.webp)](images/vm_backup_job_vss_postgresql_web.webp "Click to zoom in")
 
+Page updated 2026-07-17
 
