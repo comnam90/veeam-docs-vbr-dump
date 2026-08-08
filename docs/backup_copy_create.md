@@ -3,8 +3,8 @@ title: "Creating Backup Copy Jobs for VMs and Physical Machines Using Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy_create.html"
-last_updated: "8/31/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Backup Copy Jobs for VMs and Physical Machines Using Console
@@ -15,7 +15,7 @@ To copy backups to a secondary location, you must configure a backup copy job. T
 |  |
 | --- |
 | Note |
-| If you want to copy backups between HPE StoreOnce repositories, follow the instructions listed in section [Creating Backup Copy Jobs for HPE StoreOnce Repositories](backup_copy_hpe_storeonce.md).  If you want to copy file share backups, follow the instructions listed in section [Creating File Backup Jobs](file_share_backup_job.md). |
+| If you want to copy backups between HPE StoreOnce repositories, follow the instructions listed in section [Creating Backup Copy Jobs for HPE StoreOnce Repositories](storage_copy_create.md).  If you want to copy file share backups, follow the instructions listed in section [Creating File Backup Jobs](file_share_backup_job.md). |
 
 Before you create a job, [check prerequisites](backup_copy_before_you_begin.md). Then use the New Backup Copy Job wizard to configure the backup copy job.
 
@@ -30,4 +30,5 @@ Before you create a job, [check prerequisites](backup_copy_before_you_begin.md).
 9. [Define a backup copy window](backup_copy_schedule.md).
 10. [Finish working with the wizard](backup_copy_finish.md).
 
+Page updated 2026-07-30
 
