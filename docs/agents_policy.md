@@ -3,8 +3,8 @@ title: "Backup Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_policy.html"
-last_updated: "11/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Policy
@@ -16,12 +16,12 @@ The backup policy describes configuration of individual Veeam Agent backup jobs 
 
 Veeam Backup & Replication uses the backup policy as a saved template and applies settings from the backup policy to protected computers. The resulting Veeam Agent backup jobs run on protected computers in the similar way as a regular backup job configured directly in Veeam Agent. All backup job management and data processing tasks are performed by Veeam Agent itself. This allows Veeam Agent to create backups of your data even if a connection to the backup server is unavailable. To learn more, see [How Backup Policy Works](#policy_hiw).
 
-To configure a backup policy, you must launch the New Agent Backup Job wizard and select the Managed by agent option at the Job mode step of the wizard. To learn more, see [Creating Veeam Agent Backup Policies](agent_policy.md).
+To configure a backup policy, launch the New Agent Backup Job wizard and choose to have the job managed by Veeam Agent. To learn more, see [Creating Veeam Agent Backup Policies](agent_policy.md).
 
 |  |
 | --- |
 | NOTE |
-| * For computers specified in the backup policy, in addition to managing backup settings and performing backup tasks from the Veeam backup console, you can also perform selected operations, including file-level and volume-level restore, directly on a protected computer. In particular, you can use the Veeam Agent control panel to start the backup job manually. This allows you to create ad-hoc backups of your data in addition to backups created upon schedule defined in the backup policy.  * The backup policy is the only approach to protect Unix computers as Veeam Agent for IBM AIX and Veeam Agent for Oracle Solaris do not support backup jobs managed by backup server. * The backup policy is the only approach to protect members of a protection group for pre-installed Veeam Agents. To learn more, see [Protection Group Types](agents_protection_groups_types.md). * For object storage repositories accessed directly, information about the latest backup policy run appears in Veeam Backup & Replication only after synchronization with Veeam Agent. |
+| * For computers specified in the backup policy, in addition to managing backup settings and performing backup tasks from the Veeam backup interface, you can also perform selected operations, including file-level and volume-level restore, directly on a protected computer. In particular, you can use the Veeam Agent control panel to start the backup job manually. This allows you to create ad-hoc backups of your data in addition to backups created upon schedule defined in the backup policy.  * The backup policy is the only approach to protect Unix computers as Veeam Agent for IBM AIX and Veeam Agent for Oracle Solaris do not support backup jobs managed by backup server. * The backup policy is the only approach to protect members of a protection group for pre-installed Veeam Agents. To learn more, see [Protection Group Types](agents_protection_groups_types.md). * For object storage repositories accessed directly, information about the latest backup policy run appears in Veeam Backup & Replication only after synchronization with Veeam Agent. |
 
 How Backup Policy Works
 
@@ -97,4 +97,5 @@ Every 6 hours, or when the backup policy starts, Veeam Agent checks whether job 
 
 ![Backup Policy](images/backup_policy_hiw_flex.webp)
 
+Page updated 2026-07-20
 
