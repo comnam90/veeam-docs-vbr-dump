@@ -3,8 +3,8 @@ title: "Log Shipping Servers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/oracle_log_shipping.html"
-last_updated: "9/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Log Shipping Servers
@@ -27,7 +27,7 @@ Log shipping servers can transport data in two ways:
 
 To offload the VM guest OS, logs are created one by one (not simultaneously). One log creation request is issued for every DB.
 
-* Over VIX API/vSphere Web Services. In this scenario, Veeam Backup & Replication obtains transaction logs from the VM guest OS over the VIX API/vSphere Web Services, bypassing the network. For each Oracle Server instance one log creation request is created for all DBs (grouped by instance).
+* Over vSphere Web Services. In this scenario, Veeam Backup & Replication obtains transaction logs from the VM guest OS over vSphere Web Services, bypassing the network. For each Oracle Server instance one log creation request is created for all DBs (grouped by instance).
 
 The default method is log shipping over the network.
 
@@ -50,4 +50,5 @@ Log shipping servers are assigned per job session. When a new job session starts
 
 ![Log Shipping Servers](images/log_shipping_oracle_vm.webp)
 
+Page updated 2026-08-03
 
