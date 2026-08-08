@@ -3,8 +3,8 @@ title: "Restore with Veeam Explorer for Microsoft SQL Server"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_db_restore_vesql.html"
-last_updated: "5/28/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore with Veeam Explorer for Microsoft SQL Server
@@ -14,6 +14,7 @@ You can restore Microsoft SQL Server databases from Veeam Plug-In backups in the
 
 Alternatively, you can use Veeam Explorer cmdlets to perform restore from Microsoft SQL Server databases. For details, see the [Veeam Explorer for Microsoft SQL Server](https://helpcenter.veeam.com/docs/vbr/explorers_powershell/veeam_explorer_for_microsoft_sql.html?ver=13) section of the Veeam Explorers PowerShell Reference.
 
-[![View Details](images/plugins_mssql_restore_from.webp)](images/plugins_mssql_restore_from.webp "View Details")
+[![Restore with Veeam Explorer for Microsoft SQL Server](images/plugins_restore_vesql.webp)](images/plugins_restore_vesql.webp)
 
+Page updated 2026-07-28
 
