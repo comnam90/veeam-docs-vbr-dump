@@ -3,8 +3,8 @@ title: "Customizing Dashboard Chart"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/customizing_dashboard_chart.html"
-last_updated: "11/19/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Customizing Dashboard Chart
@@ -19,8 +19,8 @@ You can customize the appearance of the Backup Servers chart that you can see on
 
 To customize the appearance of the chart, do the following:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
 3. Select the Settings section on the left of the Configuration view.
 4. Select the Chart Settings tab.
 5. Use the Activity graph scale options to switch between graph types: Linear and Logarithmic.
@@ -30,4 +30,5 @@ To customize the appearance of the chart, do the following:
 
 [![Customizing Chart Appearance](images/em_dashboard_settings.webp)](images/em_dashboard_settings.webp "Customizing Chart Appearance")
 
+Page updated 2026-07-16
 
