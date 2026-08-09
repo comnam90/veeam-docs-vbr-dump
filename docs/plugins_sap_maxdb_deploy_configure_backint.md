@@ -3,8 +3,8 @@ title: "Configuring Backint"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_deploy_configure_backint.html"
-last_updated: "2/10/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Backint
@@ -51,7 +51,7 @@ For example:
 
 |  |
 | --- |
-| STAGING AREA: /tmp/MAXDB1/stage1 1 GB |
+| STAGING AREA: /tmp/MAXDB1/stage1 1 GB STAGING AREA: /tmp/MAXDB1/stage2 1 GB STAGING AREA: /tmp/MAXDB1/stage3 1 GB STAGING AREA: /tmp/MAXDB1/stage4 1 GB FILES PER BACKINT CALL: 4 HISTORY FILE: /sapdb/MAXDB1/data/wrk/MAXDB1/backuphistory.adapter INPUTFILE FOR BACKINT: /sapdb/MAXDB1/data/wrk/MAXDB1/bin.adapter OUTPUTFILE FOR BACKINT: /sapdb/MAXDB1/data/wrk/MAXDB1/bout.adapter ERRORFILE FOR BACKINT: /sapdb/MAXDB1/data/wrk/MAXDB1/berr.adapter BACKINT: /opt/veeam/VeeamPluginforSAPMaxDB/backint |
 
 |  |
 | --- |
@@ -80,7 +80,7 @@ For example:
 
 1. For the correct Veeam Plug-In functioning, the configuration file must contain the following parameters:
 
-* BACKINT: an absolute path and name of of the SAP MaxDB Backint program.
+* BACKINT: an absolute path and name of the SAP MaxDB Backint program.
 * PARAMETERFILE: an absolute path and name of the [parameter file for the SAP MaxDB Adapter Program](#param).
 
 To learn about other parameters that can be added to the file, see [SAP MaxDB documentation](https://maxdb.sap.com/doc/7_8/45/74841112e14022e10000000a1553f6/frameset.htm).
@@ -91,4 +91,5 @@ For example:
 | --- |
 | BACKINT /opt/sdb/MAXDB1/bin/backint PARAMETERFILE /sapdb/MAXDB1/data/wrk/MAXDB1/adapter\_config.par |
 
+Page updated 2026-08-04
 
