@@ -3,8 +3,8 @@ title: "Step 5. Specify Restore Reason"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restoring_veeam_explorers_reason.html"
-last_updated: "12/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Restore Reason
@@ -17,6 +17,7 @@ At the Reason step of the wizard, enter a reason for restoring the application i
 | Tip |
 | If you do not want to show this page, select the Do not show me this page again check box. If you want to unhide this page, follow the instructions described in [this Veeam KB article](https://www.veeam.com/kb4432). |
 
-![Step 5. Specify Restore Reason](images/application_item_restore_ad_reason.webp)
+![Step 5. Specify Restore Reason](images/application_item_restore_ad_reason.webp "Specify Restore Reason")
 
+Page updated 2026-02-20
 
