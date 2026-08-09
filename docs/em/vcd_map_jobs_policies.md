@@ -3,14 +3,14 @@ title: "Mapping Jobs and CDP Policies to Organization Configurations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/vcd_map_jobs_policies.html"
-last_updated: "11/22/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Mapping Jobs and CDP Policies to Organization Configurations
 
 
-Service providers can map backup jobs, replication jobs, and CDP policies created in Veeam Backup & Replication to the organization configurations of their tenants. After you map the jobs and policies, tenants can manage them and perform recovery operations independently in Veeam Self-Service Backup Portal.
+Service providers can map backup jobs, replication jobs, and CDP policies created in Veeam Backup & Replication to the organization configurations of their tenants. You can map jobs and policies configured on any backup server added to Enterprise Manager. After mapping, tenants can manage jobs and policies and perform recovery operations independently in Veeam Self-Service Backup Portal.
 
 |  |
 | --- |
@@ -28,4 +28,5 @@ For backup and replication jobs, you can include any objects from the organizati
 
 You can also use this cmdlet to unmap jobs and policies from an organization configuration.
 
+Page updated 2026-07-22
 
