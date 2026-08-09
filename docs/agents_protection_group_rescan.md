@@ -3,8 +3,8 @@ title: "Rescanning Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_rescan.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Rescanning Protection Group
@@ -19,7 +19,14 @@ You can rescan a protection group configured in the inventory. When you perform 
 
 During the rescan operation, Veeam Backup & Replication starts the rescan job in the same way as in case of scheduled discovery. The rescan job connects to computers included in the protection group and performs on these computers operations specified in the protection group settings. For example, if Veeam Backup & Replication is set up to automatically install Veeam Agent on protected computers during discovery, you can use the rescan operation to deploy Veeam Agent to computers that have appeared in the protection group after the previous scheduled rescan job session finished.
 
-To rescan a protection group:
+You can rescan a protection group in the following ways:
+
+* [Rescanning Protection Group Using Console](#console)
+* [Rescanning Protection Group Using Web UI](#webui)
+
+Rescanning Protection Group Using Veeam Backup & Replication Console
+
+To rescan a protection group in the Veeam Backup & Replication console:
 
 1. Open the Inventory view.
 2. In the inventory pane, expand the Physical and Cloud Infrastructure node.
@@ -27,4 +34,14 @@ To rescan a protection group:
 
 [![Rescan Protection Group](images/protection_group_rescan.webp)](images/protection_group_rescan.webp "Rescan Protection Group")
 
+Rescanning Protection Group Using Veeam Backup & Replication Web UI
+
+To rescan a protection group in the Veeam Backup & Replication web UI:
+
+1. In the management pane, click Protection Groups.
+2. Right-click the protection group that you want to rescan and select Rescan.
+
+[![Rescan Protection Group](images/protection_group_rescan_web.webp)](images/protection_group_rescan_web.webp "Rescan Protection Group")
+
+Page updated 2026-07-03
 
