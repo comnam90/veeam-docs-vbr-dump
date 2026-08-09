@@ -3,8 +3,8 @@ title: "Rescan (Storage Discovery) Process"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_discovery_process.html"
-last_updated: "5/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Rescan (Storage Discovery) Process
@@ -33,7 +33,7 @@ To obtain the Veeam iSCSI IQN, launch Storage Discovery. In the discovery sessio
 
 Stages of Rescan
 
-1. [For VMware, NAS, Veeam Agent integration] General infrastructure
+1. [For VMware, NAS, Veeam Agent, IRIS integration] General infrastructure
 
 Receiving storage system information.
 
@@ -43,7 +43,7 @@ Receiving storage system information.
 4. Getting information about storage adapters (targets).
 5. Receiving other relevant information.
 
-1. [For VMware, NAS, Veeam Agent integration] Availability from proxies
+1. [For VMware, NAS, Veeam Agent, IRIS integration] Availability from proxies
 
 Verifying the possibility of using proxies for backup/rescan/data transmission directly from the storage systems.
 
@@ -149,4 +149,5 @@ To manually start storage discovery:
 
 [![Click to zoom in](images/san_rescan.webp)](images/san_rescan.webp "Click to zoom in")
 
+Page updated 2026-05-28
 
