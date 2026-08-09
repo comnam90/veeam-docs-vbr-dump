@@ -3,8 +3,8 @@ title: "Enable Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup_job_vss_application_hv_web.html"
-last_updated: "12/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Enable Application-Aware Processing
@@ -16,9 +16,9 @@ Enabling Application-Aware Processing
 
 Before configuring general application-aware processing settings, check that application-aware processing is enabled:
 
-1. At the Guest Processing step of the wizard, select the Enable application-aware processing check box.
-2. Click Application-aware processing options.
-3. In the Application-Aware Processing Options window, select the VM and click Edit.
+1. At the Guest Processing step of the wizard, set the Enable application-aware processing toggle to On.
+2. Click the Customize guest processing link.
+3. In the Customize Guest Processing Settings window, select a VM in the list and click Application Settings or right-click the VM and select Application Settings. To quickly find a VM in the list, enter its name in the Search field.
 
 To define custom settings for a VM added as a part of a VM container, you must include the VM to the list as a standalone object. To do this, click Add and choose the VM whose settings you want to customize. Then, select the VM in the list and define the necessary settings.
 
@@ -59,6 +59,7 @@ Note that if you select this option, the SQL tab will not be available in the Pr
 | Important |
 | If both Microsoft SQL Server and Oracle Server are installed on one VM, and this VM is processed by a job with log backup enabled for both applications, Veeam Backup & Replication will back up only Oracle transaction logs. Microsoft SQL Server transaction logs will not be processed. |
 
-[![Click to zoom in](images/hv_backup_job_vss_common_web.webp)](images/hv_backup_job_vss_common_web.webp "Click to zoom in")
+[![Enable application-aware processing](images/hv_backup_job_vss_common_web.webp)](images/hv_backup_job_vss_common_web.webp "Enable application-aware processing")
 
+Page updated 2026-06-29
 
