@@ -3,8 +3,8 @@ title: "Restore Oracle Databases"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_sap_orcl.html"
-last_updated: "5/28/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restore Oracle Databases
@@ -12,7 +12,7 @@ product_version: "13.0.2.29"
 
 Veeam Plug-In for SAP on Oracle allows you to restore databases using the BRRESTORE tool functionality. When you launch the restore, BRRESTORE restores the selected database from backup files stored on the backup repository.
 
-By default, BRRESTORE uses the initSID.sap initialization profile. Thus, you must specify the -p $Oracle\_HOME/dbs/veeam\_initSID.sap parameter in the restore commands.
+By default, BRRESTORE uses the initSID.sap initialization profile. Thus, you must specify the -p $ORACLE\_HOME/dbs/veeam\_initSID.sap parameter in the restore commands.
 
 For details on all restore options, see [this SAP article](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/46/bafec999701515e10000000a114a6b/frameset.htm).
 
@@ -20,7 +20,7 @@ Example: Performing Full Restore of SAP on Oracle Database
 
 |  |
 | --- |
-| brrestore -d util\_file -p $Oracle\_HOME/dbs/veeam\_initSID.sap -b last -m full |
+| brrestore -d util\_file -p $ORACLE\_HOME/dbs/veeam\_initSID.sap -b last -m full |
 
 Run the brrestore command with the following parameters:
 
@@ -29,7 +29,7 @@ Run the brrestore command with the following parameters:
 * If the backup was created by SAP Backint, use util\_file.
 * If the backup was created by RMAN, use rman\_util.
 
-1. If you use rman\_util, you must specify the ID of the backup you want to restore from in the initialization profile file. To do so, open the initialization profile file ($Oracle\_HOME/dbs/veeam\_initSID.sap) and specify the backup ID as the parameter for the rman\_send command:
+1. If you use rman\_util, you must specify the ID of the backup you want to restore from in the initialization profile file. To do so, open the initialization profile file ($ORACLE\_HOME/dbs/veeam\_initSID.sap) and specify the backup ID as the parameter for the rman\_send command:
 
 |  |
 | --- |
@@ -50,9 +50,10 @@ For example:
 
 After the restore, make sure to delete the rman\_send command. Otherwise, all subsequent backup and restore operations will use the specified backup as their source.
 
-1. Specify the path to the initialization profile file ($Oracle\_HOME/dbs/veeam\_initSID.sap) as the argument for the -p (-profile) parameter.
+1. Specify the path to the initialization profile file ($ORACLE\_HOME/dbs/veeam\_initSID.sap) as the argument for the -p (-profile) parameter.
 
 1. Specify last as the argument for the -b (-backup) parameter. With this option, BRRESTORE uses the last successful database backup for the restore.
 2. Specify full as the argument for the -m (-mode) parameter. With this option, BRRESTORE performs restore of files in all tablespaces, control files and redo log files.
 
+Page updated 2026-07-13
 
