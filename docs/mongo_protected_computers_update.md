@@ -3,8 +3,8 @@ title: "Upgrading Veeam Agent"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_protected_computers_update.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Upgrading Veeam Agent
@@ -50,7 +50,7 @@ You can upgrade Veeam Agent on all computers that require upgrade at once. To up
 | NOTE |
 | In some cases, upgrade to the new version of Veeam Agent may require computer reboot. |
 
-[![Upgrade Plug-in](images/mongo_protection_group_outdated_upgrade_batch.webp)](images/mongo_protection_group_outdated_upgrade_batch.webp "Upgrade Plug-in")
+[![Upgrade Plug-In](images/mongo_protection_group_outdated_upgrade_batch.webp)](images/mongo_protection_group_outdated_upgrade_batch.webp "Upgrade Plug-In")
 
 Upgrading Veeam Agent Manually
 
@@ -65,6 +65,7 @@ To upgrade Veeam Agent manually on a certain protected computer:
 | NOTE |
 | In some cases, upgrade to the new version of Veeam Agent may require computer reboot. |
 
-[![Upgrade All Plug-ins](images/mongo_protection_group_outdated_upgrade_single_machine.webp)](images/mongo_protection_group_outdated_upgrade_single_machine.webp "Upgrade All Plug-ins")
+[![Upgrade All Plug-Ins](images/mongo_protection_group_outdated_upgrade_single_machine.webp)](images/mongo_protection_group_outdated_upgrade_single_machine.webp "Upgrade All Plug-Ins")
 
+Page updated 2026-08-04
 
