@@ -3,8 +3,8 @@ title: "Start-VBRUnstructuredBackupHealthCheck"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrunstructuredbackuphealthcheck.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRUnstructuredBackupHealthCheck
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRUnstructuredBackupHealthCheck -Backup <VBRUnstructuredBackup[]> [-Force] [-Repair] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRUnstructuredBackupHealthCheck -Backup <VBRUnstructuredBackup[]> [-Repair] [-RunAsync] [-Force] [-EnableColdStorageRetrieval] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] [<CommonParameters>] |
 
 * Perform a health check for the latest restore point of file backup jobs and object storage backup jobs.
 
 |  |
 | --- |
-| Start-VBRUnstructuredBackupHealthCheck -Job <CBackupJob[]> [-Repair] [-Force] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRUnstructuredBackupHealthCheck -Job <CBackupJob[]> [-Repair] [-RunAsync] [-Force] [-EnableColdStorageRetrieval] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -40,13 +40,16 @@ This cmdlet performs a health check for the latest restore point created by file
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Backup | Specifies backup files created by file backup jobs and object storage backup jobs. The cmdlet will perform a health check for these backup files. | Accepts the VBRUnstructuredBackup[] object. To get this object, run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Job | Specifies an array of file backup jobs and object storage backup jobs. The cmdlet will perform a health check for these backup jobs. | Accepts the CBackupJob[] object. To get this object, run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Repair | Defines that the cmdlet will repair missing data and metadata.  If you provide this parameter, the cmdlet will repair the missing metadata. Otherwise, the cmdlet will perform a health check of backup files and if corruption is detected, it will return a notification.  Note: First, run the cmdlet with this option disabled to perform the health check. After that, if there are any inconsistencies in the backup, run the cmdlet again with this option enabled. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will perform a health check without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
+| EnableColdStorageRetrieval | Defines that the cmdlet will retrieve backup data from cold or archive storage before running the health check. | SwitchParameter | False | Named | False |
+| RetrievalSettings | Specifies the cold or archive storage retrieval settings for the health check operation. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the New-VBRUnstructuredBackupColdStorageRetrievalSettings cmdlet. | False | Named | False |
 
 <CommonParameters>
 
@@ -74,4 +77,7 @@ Related Commands
 
 [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md)
 
+New-VBRUnstructuredBackupColdStorageRetrievalSettings
+
+Page updated 2026-06-09
 
