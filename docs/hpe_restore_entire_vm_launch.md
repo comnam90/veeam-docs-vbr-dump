@@ -3,8 +3,8 @@ title: "Step 1. Launch Entire VM Restore Wizard"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_restore_entire_vm_launch.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 1. Launch Entire VM Restore Wizard
@@ -18,6 +18,7 @@ To launch the Full VM Restore wizard, do the following:
 
 Alternatively, expand the necessary backup job, select the VM and click Entire VM > HPE Morpheus VM Essentials on the ribbon.
 
-[![Launch Full VM Restore to Red Hat Virtualization Wizard](images/hpe_restore_entire_vm_launch.webp)](images/hpe_restore_entire_vm_launch.webp "Launch Full VM Restore to Red Hat Virtualization Wizard")
+[![Launch Full VM Restore to HPE Morpheus VM Essentials Wizard](images/hpe_restore_entire_vm_launch.webp)](images/hpe_restore_entire_vm_launch.webp "Launch Full VM Restore to HPE Morpheus VM Essentials Wizard")
 
+Page updated 2026-07-22
 
