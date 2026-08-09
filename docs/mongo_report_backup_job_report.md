@@ -3,8 +3,8 @@ title: "Viewing Backup Policy Report"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mongo_report_backup_job_report.html"
-last_updated: "8/26/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Viewing Backup Policy Report
@@ -31,4 +31,5 @@ The report contains data on the latest policy session:
 
 [![View Backup Report](images/mongo_policy_report.webp)](images/mongo_policy_report.webp "View Backup Report")
 
+Page updated 2026-07-15
 
