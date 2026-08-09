@@ -3,8 +3,8 @@ title: "Infrastructure Overview (Storage Systems)"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storage_infrastructure.html"
-last_updated: "4/17/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Infrastructure Overview (Storage Systems)
@@ -41,7 +41,7 @@ Veeam Backup & Replication uses different proxies depending on the integration t
 
 To learn how to add proxies, see the [VMware Backup Proxies](backup_proxy.md) section in the Veeam Backup & Replication Guide.
 
-* For NAS and Veeam Agent integrations, Veeam Backup & Replication uses general-purpose backup proxies.
+* For NAS, Veeam Agent and IRIS integrations, Veeam Backup & Replication uses general-purpose backup proxies.
 
 For more information on these proxies and how to add them, see the [General-Purpose Backup Proxies](backup_proxy_general.md) section in the Veeam Backup & Replication Guide.
 
@@ -55,4 +55,5 @@ Related Topics
 
 [Planning and Preparation](storage_limitations.md)
 
+Page updated 2026-05-28
 
