@@ -3,8 +3,8 @@ title: "Notifications on Restore Operations"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_notifications_on_rest_ops.html"
-last_updated: "11/10/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Notifications on Restore Operations
@@ -20,9 +20,9 @@ You can configure Veeam Backup Enterprise Manager to send email notifications ab
 
 To receive notifications about performed file restore operations, do the following:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
-3. Open the Notifications section on the left of the Configuration view.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
+3. In the Configuration view, open the Notifications section.
 4. Open the Restore Operations tab.
 5. Select Send notifications on restore operations.
 6. In the From field, enter an email address of the notification sender.
@@ -36,4 +36,5 @@ To receive notifications about performed file restore operations, do the followi
 
 [![Notifications on Restore Operations](images/em_notifications_restore.webp)](images/em_notifications_restore.webp "Notifications on Restore Operations")
 
+Page updated 2026-07-21
 
