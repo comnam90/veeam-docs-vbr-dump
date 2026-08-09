@@ -3,8 +3,8 @@ title: "/security/accounts/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/security_accounts_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /security/accounts/{ID}
@@ -49,7 +49,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="EnterpriseAccountReference" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7" Name="BUILTIN\Users" UID="urn:veeam:EnterpriseAccount:de19303b-bcf3-428b-b113-ac0b2cf46bd7"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="EnterpriseAccountReference" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7" Name="BUILTIN\Users" UID="urn:veeam:EnterpriseAccount:de19303b-bcf3-428b-b113-ac0b2cf46bd7">   <Links>     <Link Rel="Alternate" Type="EnterpriseAccount" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7?format=Entity" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -57,4 +57,5 @@ Entity resource representation:
 | --- |
 | <EnterpriseAccount xmlns="http://www.veeam.com/ent/v1.0" Type="EnterpriseAccount" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7?format=Entity" Name="BUILTIN\Users" UID="urn:veeam:EnterpriseAccount:de19303b-bcf3-428b-b113-ac0b2cf46bd7">   <Links>     <Link Rel="Alternate" Type="EnterpriseAccountReference" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7" />     <Link Rel="Down" Type="EnterpriseAccountInRoleList" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/roles" />     <Link Rel="Create" Type="EnterpriseAccountInRole" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/roles" />     <Link Rel="Down" Type="EnterpriseAccountHierarchyScopeList" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/scopes" />     <Link Rel="Create" Type="EnterpriseAccountHierarchyScope" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7/scopes" />     <Link Rel="Delete" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7" />     <Link Rel="ToggleRestoreScopesEnabled" Href="https://localhost:9398/api/security/accounts/de19303b-bcf3-428b-b113-ac0b2cf46bd7" />   </Links>   <AccountType>Group</AccountType>   <AllowRestoreAllVms>false</AllowRestoreAllVms> </EnterpriseAccount> |
 
+Page updated 2026-07-29
 
