@@ -3,8 +3,8 @@ title: "Start-VBRLinuxGuestItemRestore"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrlinuxguestitemrestore.html"
-last_updated: "12/11/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRLinuxGuestItemRestore
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Start-VBRLinuxGuestItemRestore -LinuxFlrObject <VBRLinuxFlrObject> -Item <VBRFLRFsItem[]> [-TargetDirectory <String>] [-Overwrite] [-GuestCredentials <CCredentials>] [-TargetViVm <CViVmItem>] [-TargetVcdVm <CVcdVmItem>] [-TargetHvVm <CHvVmItem>] [-TargetAgentMachine <VBRDiscoveredComputer>] [-RunAsync]  [<CommonParameters>] |
+| Start-VBRLinuxGuestItemRestore -LinuxFlrObject <VBRLinuxFlrObject> -Item <VBRFLRFsItem[]> [-TargetDirectory <String>] [-Overwrite] [-GuestCredentials <CCredentials>] [-TargetViVm <CViVmItem>] [-TargetVcdVm <CVcdVmItem>] [-TargetHvVm <CHvVmItem>] [-TargetAgentMachine <VBRDiscoveredComputer>] [-RunAsync] [-ForceArchivedSnapshotsRestore]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,9 +30,10 @@ This cmdlet restores Linux-based or Unix-based guest OS files to the original or
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| LinuxFlrObject | Specifies a restore session of Linux-based or Unix-based guest OS files. The cmdlet will use this session to restore guest OS files.  Note: The restore session must be started within the current PowerShell session. | Accepts the VBRLinuxFlrObject object. To create this object, run the [Start-VBRLinuxFileRestore](start-vbrlinuxfilerestore.md) cmdlet. | True | Named | True (ByValue, |
+| LinuxFlrObject | Specifies a restore session of Linux-based or Unix-based guest OS files. The cmdlet will use this session to restore guest OS files.  Note: The restore session must be started within the current PowerShell session. | Accepts the VBRLinuxFlrObject object. To create this object, run the [Start-VBRLinuxFileRestore](start-vbrlinuxfilerestore.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Item | Specifies the array of files and folders that are available on disks of Linux-based or Unix-based machines. The cmdlet will restore these files and folders. | Accepts the VBRFLRFsItem[] object. To get this object, run the [Get-VBRLinuxGuestItem](get-vbrlinuxguestitem.md) cmdlet. | True | Named | False |
 | TargetDirectory | Specifies the path to a folder on the target VM to which you want to restore files. | String | False | Named | False |
 | Overwrite | Defines that the cmdlet will overwrite existing files and folders with files and folders from a backup.  If you set this parameter to the $false value, the cmdlet will not replace exiting files and folders. It will add the restored files and folders with the \_restored postfix to the target machine. | SwitchParameter | True | Named | False |
@@ -42,6 +43,7 @@ Parameters
 | TargetHvVm | For performing restore to the Hyper-V platform.  Specifies the target machine to which the cmdlet will restore guest OS files.  Note: This parameter will work only if source machine is restored or deleted. | Accepts the CHvVmItem object. To get this object, run the [Find-VBRHvEntity](find-vbrhventity.md) cmdlet. | False | Named | False |
 | TargetAgentMachine | For performing restore to a Veeam Agent computer.  Specifies the target computer to which the cmdlet will restore guest OS files. | Accepts the VBRDiscoveredComputer object. To get this object, run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet. | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
+| ForceArchivedSnapshotsRestore | Defines that the cmdlet will use archive snapshots for restore without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -93,4 +95,5 @@ Related Commands
 * [Find-VBRvCloudEntity](find-vbrvcloudentity.md)
 * [Find-VBRHvEntity](find-vbrhventity.md)
 
+Page updated 2026-05-13
 
