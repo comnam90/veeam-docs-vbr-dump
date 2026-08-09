@@ -3,8 +3,8 @@ title: "Amazon Web Services"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/platform_support_aws.html"
-last_updated: "4/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Amazon Web Services
@@ -12,15 +12,16 @@ product_version: "13.0.1.2067"
 
 AWS Services
 
-The backup appliance and worker instances must have outbound internet access to a number of AWS services. For the list of services, see the Veeam Backup for AWS User Guide, section [AWS Services](https://helpcenter.veeam.com/docs/vbaws/guide/system_requirements_aws_services.html?ver=10).
+The backup appliance and worker instances must have outbound internet access to a number of AWS services. For the list of services, see [AWS Services](amazon_web_services.md).
 
 Version Compatibility
 
-The following table lists compatible versions of Veeam Backup & Replication, Veeam Plug-In for AWS and Veeam Backup for AWS.
+The following table lists compatible versions of Veeam Backup & Replication, Veeam Plug-In for AWS and backup appliance.
 
 Version Compatibility
 
-| Veeam Backup & Replication Build | Veeam Plug-In for AWS Build | Veeam Backup for AWS Build |
+| Veeam Backup & Replication Build | Veeam Plug-In for AWS Build | Backup Appliance Build |
+| 13.1.0.411 | 13.11.0.100 | 11.0.0.100 |
 | 13.0.1.180 and later | 13.10.0.225 and later | 10.0.0.232 |
 | 13.0.0.4967 | 13.9.1.467 | 9.1.0.45 |
 | 12.3.2.3617 | 12.9.0.281 |
@@ -32,4 +33,5 @@ Version Compatibility
 | 12.1.6.93 |
 | 12.0.6.956 | 6.0.0, 6.0.1, 6.0.2 |
 
+Page updated 2026-08-04
 
