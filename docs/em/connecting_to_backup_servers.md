@@ -3,8 +3,8 @@ title: "How Enterprise Manager Authenticates to Backup Servers"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/connecting_to_backup_servers.html"
-last_updated: "4/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # How Enterprise Manager Authenticates to Backup Servers
@@ -14,7 +14,7 @@ When communicating with backup servers, Veeam Backup Enterprise Manager uses a T
 
 Certificate-based connection works in the following way:
 
-1. When adding a backup server, you specify connection settings including an account with Veeam Backup Administrator role assigned on the backup server.
+1. When adding a backup server, you specify connection settings including an account with Backup Administrator role assigned on the backup server.
 
 For more information, see [Adding Backup Servers](adding_backup_server.md).
 
@@ -34,4 +34,5 @@ If a backup server is not available at the moment, Enterprise Manager stores the
 
 For more information, see [Installing Certificates](updating_security_certificate.md).
 
+Page updated 2026-07-16
 
