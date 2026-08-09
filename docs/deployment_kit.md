@@ -3,8 +3,8 @@ title: "Using Veeam Deployment Kit"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/deployment_kit.html"
-last_updated: "6/18/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Using Veeam Deployment Kit
@@ -42,7 +42,7 @@ For the following components, you can manually install the Deployment Kit:
 
 * Microsoft Windows managed servers
 * Hyper-V hosts
-* Microsoft Windows-based and Linux-based Veeam Agent computers
+* Veeam Agent machines on Microsoft Windows, Linux or IBM AIX
 * Guest Interaction proxies
 * Protected Microsoft Windows VMs (for persistent guest agent installation)
 
@@ -106,4 +106,5 @@ Related Topics
 * [Adding Microsoft Windows Servers](add_windows_server.md)
 * [Guest Interaction Proxies](guest_interaction_proxy.md)
 
+Page updated 2026-07-21
 
