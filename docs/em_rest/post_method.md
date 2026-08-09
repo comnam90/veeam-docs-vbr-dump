@@ -3,8 +3,8 @@ title: "POST Method"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/post_method.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # POST Method
@@ -27,7 +27,7 @@ Other POST HTTP requests require the request body. For example, if you want to c
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=clone    Request Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  POST https://localhost:9398/api/jobs/568c42ce-eb11-4140-92cf-39ab36712bf5?action=clone  Request Body:  <?xml version="1.0" encoding="utf-8"?> <JobCloneSpec xmlns="http://www.veeam.com/ent/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">   <BackupJobCloneInfo>     <JobName>Exchange Backup Cloned</JobName>     <FolderName>Exchange Backup Cloned</FolderName>     <RepositoryUid>urn:veeam:Repository:3efc471c-04be-4dd1-9ed2-54e7fddc5ecf</RepositoryUid>   </BackupJobCloneInfo> </JobCloneSpec> |
 
 In case of success, the server returns the HTTP response code 202 Accepted. The operation itself is performed in the asynchronous manner. The server creates a task for the operation completion and returns a link to this task to the client. Using this link, the client can monitor the task completion.
 
@@ -35,12 +35,13 @@ The example below illustrates the job start operation:
 
 |  |
 | --- |
-| Request:  POST https://localhost:9398/api/jobs/115f560f-3a5f-4a88-b0c8-096c845bafcd?action=start    Response:  202 Accepted    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-10"> <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-10" />   </Links>   <TaskId>task-10</TaskId>   <State>Running</State>   <Operation>StartJob</Operation> </Task> |
+| Request:  POST https://localhost:9398/api/jobs/115f560f-3a5f-4a88-b0c8-096c845bafcd?action=start  Response:  202 Accepted  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-10"> <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-10" />   </Links>   <TaskId>task-10</TaskId>   <State>Running</State>   <Operation>StartJob</Operation> </Task> |
 
 To monitor the state of the task completion, the client sends the GET HTTP request to the task resource:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/tasks/task-10    Response:  200 OK    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-10">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-10" />   </Links>   <TaskId>task-10</TaskId>   <State>Finished</State>   <Operation>StartJob</Operation>   <Result Success="true">     <Message>Job "SQL Backup" triggered to start.</Message>   </Result> </Task> |
+| Request:  GET https://localhost:9398/api/tasks/task-10  Response:  200 OK  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-10">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-10" />   </Links>   <TaskId>task-10</TaskId>   <State>Finished</State>   <Operation>StartJob</Operation>   <Result Success="true">     <Message>Job "SQL Backup" triggered to start.</Message>   </Result> </Task> |
 
+Page updated 2026-07-29
 
