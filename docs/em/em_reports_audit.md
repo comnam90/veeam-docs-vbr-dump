@@ -3,8 +3,8 @@ title: "Audit Reports"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_reports_audit.html"
-last_updated: "10/30/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Audit Reports
@@ -36,9 +36,9 @@ The generated file is also saved on the Enterprise Manager machine. Enterprise M
 
 To generate an audit report:
 
-1. Log in to Enterprise Manager using an administrative account.
-2. To open the Configuration view, click Configuration in the upper-right corner.
-3. Select the Backup Servers section on the left of the Configuration view.
+1. Log in to Enterprise Manager using an account with the Portal Administrator role.
+2. In the upper-right corner, click Configuration.
+3. In the Configuration view, open the Backup Servers section.
 4. Select a backup server whose report you want to export.
 5. Click Audit report.
 6. In the Audit Report window, specify a time period covered by the report and click Generate.
@@ -47,4 +47,5 @@ The report contains only the audit records whose retention period is not expired
 
 [![Generating Audit Report](images/em_audit_report_export.webp)](images/em_audit_report_export.webp "Generating Audit Report")
 
+Page updated 2026-07-16
 
