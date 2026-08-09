@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_plugin_ports.html"
-last_updated: "6/3/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -23,4 +23,5 @@ Ports
 | Database server where Veeam Plug-In is installed | Veeam Backup & Replication server | TCP | 10006,  443 | Default ports used for communication with the Veeam Backup & Replication server.  Note: Data between Veeam Plug-Ins and backup repositories is transferred directly, bypassing the Veeam Backup & Replication server. |
 | Backup repository server or [gateway server](gateway_server.md) | TCP | 6162 | Default port used by Veeam Data Mover Service. |
 
+Page updated 2026-06-19
 
