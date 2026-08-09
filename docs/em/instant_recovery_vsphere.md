@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/instant_recovery_vsphere.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Instant Recovery to VMware vSphere
@@ -14,5 +14,5 @@ Veeam Backup Enterprise Manager allows you to instantly recover VMware vSphere V
 
 For more information on Instant Recovery, see the [Instant Recovery to VMware vSphere](https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery.html?ver=13) section of the Veeam Backup & Replication User Guide.
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 
