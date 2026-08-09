@@ -3,8 +3,8 @@ title: "Backup Infrastructure for Unstructured Data Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/unstructured_data_backup_infrastructure.html"
-last_updated: "5/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Infrastructure for Unstructured Data Backup
@@ -113,7 +113,7 @@ Storage Repositories
 | [ExaGrid](deduplicating_appliance_exgrid.md) | ✓ | ✓ | ✓ |
 | [HPE StoreOnce with Catalyst license](deduplicating_appliance_storeonce.md) 2 | ✓ | ✓ | ✓ |
 | [Quantum DXi](deduplicating_appliance_quantum.md) | ✓ | ✓ | ✓ |
-| [Fujitsu ETERNUS CS800](fujitsu.md) | ✓ | ✓ | ✓ |
+| [Fsas ETERNUS CS800](fujitsu.md) | ✓ | ✓ | ✓ |
 | [Infinidat InfiniGuard](infinidat_infiniguard.md) | ✓ | ✓ | ✓ |
 | [Scale-out backup repository (SOBR)](backup_repository_sobr.md) 3, 4 | ✓ | ✕ | ✓ |
 | [Object storage repository](object_storage_repository.md) 5 | ✓ | ✓ | ✓ |
@@ -122,10 +122,7 @@ Storage Repositories
 
 1 If you use a Dell PowerScale (formerly Isilon) storage system in the CIFS Share Access mode, make sure that you have assigned your service account to the built-in BackupAdmin role within PowerScale. Otherwise, the access to the share will be denied.
 
-2 If you plan to use HPE StoreOnce storage appliances, consider the following recommendations for optimal performance:
-
-* For HPE StoreOnce Gen3 or Gen4 software versions earlier than 4.3.x, large backup loads (exceeding 1PB) should be spread across multiple Catalyst stores on the same StoreOnce system. For HPE StoreOnce Gen4 software version 4.3.x and Gen5, this 1PB limit does not apply.
-* Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
+2 Do not include Catalyst stores in a SOBR intended for unstructured data backups. This will reduce the global deduplication of the StoreOnce system.
 
 3 An object storage repository added as a [capacity tier](new_capacity_tier.md) in a scale-out backup repository cannot be used for storing unstructured data backups. To archive unstructured data backup files to an object storage repository, assign the object storage repository as an archive repository when [you create a file backup job](file_share_backup_job_storage.md).
 
@@ -133,7 +130,6 @@ Storage Repositories
 
 5 Consider the following limitations:
 
-* Amazon S3 Glacier and Azure Blob Storage Archive Tier are not supported for unstructured data backup.
 * Amazon S3 Snowball Edge and Azure Databox are not supported as archive repositories for unstructured data backup, but you can use them as backup repositories, secondary repositories, or targets for [copying file share backups](unstructured_data_backup_copy_backups.md).
 * You cannot use S3 compatible repositories with multiple buckets as a target repository for Unstructured Data. This includes backup, archive, or secondary repositories.
 
@@ -153,4 +149,5 @@ In This Section
 
 * [Adding Unstructured Data Source](adding_unstructured_data_source.md)
 
+Page updated 2026-07-28
 
