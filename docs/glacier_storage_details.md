@@ -3,8 +3,8 @@ title: "Step 4. Specify Object Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/glacier_storage_details.html"
-last_updated: "4/1/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Object Storage Settings
@@ -13,14 +13,15 @@ product_version: "13.0.1.2067"
 At the Bucket step of the wizard, do the following:
 
 1. [Specify general settings for the Amazon S3 bucket](#bucket).
-2. [Specify the Amazon S3 storage class](#storageclass).
+2. [Specify immutability settings.](glacier_storage_details.md#immutability)
+3. [Specify the Amazon S3 storage class](#storageclass).
 
 Specifying General Settings for Amazon S3 Bucket
 
 To specify general settings for the Amazon S3 bucket:
 
-1. From the Data center drop-down list, select the AWS region where the Amazon S3 bucket is located.
-2. In the Bucket field, enter a name of the bucket or click Browse to get the necessary bucket.
+* From the Data center drop-down list, select the AWS region where the Amazon S3 bucket is located.
+* In the Bucket field, enter a name of the bucket or click Browse to get the necessary bucket.
 
 |  |
 | --- |
@@ -29,12 +30,34 @@ To specify general settings for the Amazon S3 bucket:
 
 If the FIPS-compliant operation mode is enabled and the bucket you want to add is non-FIPS compliant, the warning will be displayed. For more information, see [FIPS Compliance](fips_compliance.md).
 
-1. To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
-2. To prohibit deletion of blocks of data from object storage, select the Make backups immutable for the entire duration of their retention policy check box. The immutability period will be equal to the retention period (if any) of the data blocks. All the types of files that are eligible for archive storage can be made immutable. For more information on the immutability feature and the retention policy for each file type, see [Immutability for Archive Tier](immutability_archive_tier.md).
+* To the right of the Folder field, click Browse and either select an existing folder or click New Folder.
+* To prohibit deletion of blocks of data from object storage, select the Make backups immutable for the entire duration of their retention policy check box. The immutability period will be equal to the retention period (if any) of the data blocks. All the types of files that are eligible for archive storage can be made immutable. For more information on the immutability feature and the retention policy for each file type, see [Immutability for Archive Tier](immutability_archive_tier.md).
 
 Keep in mind that to use immutability, you must enable the Object Lock and Versioning features on your S3 bucket at the time when you create the bucket. For more information, see [Enabling Immutability](immutability_os_enable.md).
 
 ![Step 4. Specify Object Storage Settings](images/glacier_bucket.webp)
+
+Specifying Immutability Settings
+
+Immutability prohibits deletion of blocks of data from your object storage repository.
+
+To enable immutability:
+
+1. Select the Make backups immutable (recommended) check box.
+2. In the Immutability Settings window, specify how the immutability period is counted and set the immutability period in days:
+
+* Select the For the entire duration of their retention policy option if you want the immutability period depend on the retention policy of a backup job.
+
+|  |
+| --- |
+| Important |
+| Consider the following:   * If the GFS retention period is shorter than the minimum immutability period configured for the repository, the minimum immutability period applies. * If the GFS retention period is longer, the backup is kept for the entire GFS period.   For more information, see [Immutability for Archive Tier](immutability_archive_tier.md). |
+
+* Select the For the minimum immutability period only option if you want to specify the immutability period explicitly. The backup job retention will be skipped.
+
+* Next to the Minimum immutability duration option, provide the necessary value.
+
+![Step 4. Specify Object Storage Settings](images/glacier_bucket_immutability.webp)
 
 Specifying Amazon S3 Storage Classes
 
@@ -62,4 +85,5 @@ Related Topics
 * [Immutability for Archive Tier](immutability_archive_tier.md)
 * [Immutability for Scale-Out Backup Repositories](immutability_sobr.md)
 
+Page updated 2026-07-29
 

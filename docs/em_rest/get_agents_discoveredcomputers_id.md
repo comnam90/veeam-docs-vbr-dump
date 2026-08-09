@@ -3,8 +3,8 @@ title: "GET /agents/discoveredComputers/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_agents_discoveredcomputers_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /agents/discoveredComputers/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the protected computer, for example: urn:veeam:DiscoveredComputer:b85df3d1-c094-437c-b836-eaca6c3762ca. |
 | Name | String | Name of the protected computer, for example: AgentProtected.local. |
 | HostStatus | String | Status of the host:   * Online * Offline |
@@ -73,8 +76,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the protection group was created. |
 | /agents/discoveredComputers/{ID} | Alternate | Alternate URL of the [/agents/discoveredComputers/{ID}](agents_discoveredcomputers_id.md) resource. |
 | /agents/protectionGroups/{ID} | Down | URL of the [/agents/protectionGroups/{ID}](agents_protectiongroups_id.md) resource — a protection group that contains the discovered computer. |
@@ -85,6 +89,7 @@ An example below returns an entity representation of the protected computer reso
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/agents/discoveredComputers/b85df3d1-c094-437c-b836-eaca6c3762ca?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <DiscoveredComputer xmlns="http://www.veeam.com/ent/v1.0" Type="DiscoveredComputer" Href="https://localhost:9398/api/backupTaskSessions/b85df3d1-c094-437c-b836-eaca6c3762ca?format=Entity" Name="enterprise03.tech.local" UID="urn:veeam:DiscoveredComputer:b85df3d1-c094-437c-b836-eaca6c3762ca"> |
+| Request:  GET https://localhost:9398/api/agents/discoveredComputers/b85df3d1-c094-437c-b836-eaca6c3762ca?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <DiscoveredComputer xmlns="http://www.veeam.com/ent/v1.0" Type="DiscoveredComputer" Href="https://localhost:9398/api/backupTaskSessions/b85df3d1-c094-437c-b836-eaca6c3762ca?format=Entity" Name="enterprise03.tech.local" UID="urn:veeam:DiscoveredComputer:b85df3d1-c094-437c-b836-eaca6c3762ca">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />     <Link Rel="Alternate" Type="DiscoveredComputerReference" Href="https://localhost:9398/api/agents/discoveredComputers/b85df3d1-c094-437c-b836-eaca6c3762ca" Name="enterprise03.tech.local" />     <Link Rel="Up" Type="AgentProtectionGroupReference" Href="https://localhost:9398/api/agents/protectionGroups/d0671b61-8f92-45a7-a199-ab2aad8037c6" Name="Protection Group 1" />   </Links>   <HostStatus>Online</HostStatus>   <AgentVersion>5.0.0.4301</AgentVersion>   <AgentStatus>Installed</AgentStatus>   <OsVersion>Microsoft Windows Server 2025 R2 (64-bit)</OsVersion>   <IpAddress>172.17.53.89</IpAddress>   <HierarchyObjRef>urn:AgentForWindows:VeeamAgent:00000000-0000-0000-0000-000000000000.b85df3d1-c094-437c-b836-eaca6c3762ca</HierarchyObjRef> </DiscoveredComputer> |
 
+Page updated 2026-07-29
 

@@ -3,8 +3,8 @@ title: "Application-Aware Processing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/application_aware_processing_hv.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Application-Aware Processing
@@ -56,7 +56,7 @@ VSS-aware restore is performed when the VM is started after you restore it from 
 
 How Application-Aware Processing Works for PostgreSQL
 
-If you enable application-aware processing in job settings, Veeam Backup & Replication performs the following operations as a part of the backup or replication process.
+If you enable application-aware processing in job settings, Veeam Backup & Replication performs the following operations as a part of the backup or replication process:
 
 1. Veeam Backup & Replication installs either non-persistent components or persistent agent components to the VM guest OS and detects if the VM runs any of the supported applications.
 
@@ -80,6 +80,10 @@ If you enable application-aware processing in job settings, Veeam Backup & Repli
 6. Veeam Backup & Replication completes a backup of the PostgreSQL instance and resumes stopped activities on the VM guest OS.
 7. Veeam Backup & Replication saves a backup of a machine with a PostgreSQL instance to a backup repository.
 
+For PostgreSQL clusters managed by Patroni, Veeam Backup & Replication detects the cluster topology during application-aware processing, after it discovers PostgreSQL instances on the machine. Veeam Backup & Replication checks whether a Patroni process is running on the machine and then uses the patronictl utility to get the cluster members, their roles and the Patroni version.
+
+Veeam Backup & Replication backs up WAL files from the leader node only. If the leader node changes, Veeam Backup & Replication will continue to back up WAL files from the new leader node. This allows you to restore the cluster to any point in time, including one before the leader node changed.
+
 Related Topics
 
 * [Transaction Log Truncation](transaction_truncation_hv.md)
@@ -88,4 +92,5 @@ Related Topics
 * [PostgreSQL WAL Files Backup](postgresql_backup_hv.md)
 * [Guest Interaction Proxies](guest_interaction_proxy.md)
 
+Page updated 2026-07-30
 

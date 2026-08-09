@@ -3,8 +3,8 @@ title: "Disabling Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_disable.html"
-last_updated: "2/11/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Disabling Protection Group
@@ -21,23 +21,36 @@ Disabling a protection group does not affect processing of Veeam Agent computers
 | NOTE |
 | You cannot disable default protection groups that act as filters used to display protected computers of a specific type: Unmanaged, Out of Date, Offline and Untrusted. |
 
-To disable automatic discovery for the protection group:
+You can disable or enable a protection group in the following ways:
+
+* [Disabling Protection Group Using Console](#console)
+* [Disabling Protection Group Using Web UI](#webui)
+
+Disabling Protection Group Using Veeam Backup & Replication Console
+
+To disable or enable automatic discovery for the protection group in the Veeam Backup & Replication console:
 
 1. Open the Inventory view.
 2. In the inventory pane, expand the Physical and Cloud Infrastructure node.
-3. In the inventory pane, select the necessary protection group and click Disable on the ribbon or right-click the necessary protection group and select Disable.
+3. In the inventory pane, select the necessary protection group and click Disable or Enable on the ribbon.
 
-To enable automatic discovery for the protection group:
-
-1. Open the Inventory view.
-2. In the inventory pane, expand the Physical and Cloud Infrastructure node.
-3. In the inventory pane, select the necessary protection group and click Disable on the ribbon or right-click the necessary protection group and select Disable.
+Alternatively, right-click the protection group and select Disable or Enable.
 
 |  |
 | --- |
 | ![Disabling Protection Group](images/icon_tip.webp) TIP |
-| After you disable a protection group for pre-installed Veeam Agents, Veeam Backup & Replication does not add new members to this protection group. If the Veeam Agent computer user tries to connect to the Veeam backup server with the configuration file, the user will get an error message. To learn more about protection group types, see [Protection Group Types](agents_protection_groups_types.md). |
+| After you disable a protection group for pre-installed , Veeam Backup & Replication does not add new members to this protection group. If the Veeam Agent computer user tries to connect to the Veeam backup server with the configuration file, the user will get an error message. To learn more about protection group types, see [Protection Group Types](agents_protection_groups_types.md). |
 
 [![Disable Protection Group](images/protection_group_disable.webp)](images/protection_group_disable.webp "Disable Protection Group")
 
+Disabling Protection Group Using Veeam Backup & Replication Web UI
+
+To disable or enable automatic discovery for the protection group in the Veeam Backup & Replication web UI:
+
+1. In the management pane, click Protection Groups.
+2. Right-click the necessary protection group, or select the protection group and select Disable or Enable from the Other drop-down list.
+
+[![Disable Protection Group](images/protection_group_disable_web.webp)](images/protection_group_disable_web.webp "Disable Protection Group")
+
+Page updated 2026-07-03
 

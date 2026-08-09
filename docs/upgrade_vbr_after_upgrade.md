@@ -3,16 +3,16 @@ title: "After Upgrade"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/upgrade_vbr_after_upgrade.html"
-last_updated: "10/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # After Upgrade
 
 
-After you upgrade Veeam Backup & Replication to version 13.0.1, perform the following steps:
+After you upgrade Veeam Backup & Replication to version 13.1, perform the following steps:
 
-1. If you use remote backup consoles, upgrade them to version 13.0.1. If you use remote backup consoles of version 12.3.2 P1 (build 12.3.2.4165) , you can upgrade them to version 13.0.1 automatically when connecting to backup server version 13.0.1.
+1. If you use remote backup consoles, upgrade them to version 13.1. If you use remote backup consoles of version 12.3.2 P1 (build 12.3.2.4165), you can upgrade them to version 13.1 automatically when connecting to backup server version 13.1.
 2. Download and install the latest available update from the [Veeam Updates](https://www.veeam.com/products/downloads/latest-version.html) page.
 3. Open the Veeam Backup & Replication console. If necessary, the automated upgrade wizard will automatically appear, prompting you to upgrade the product components running on remote servers. Follow the wizard to complete the upgrade process.
 4. If some remote servers are unavailable at the time of upgrade, you can run the upgrade wizard at any time later from the main product menu, or by closing and re-opening the Veeam Backup & Replication console. Note that the out-of-date product components cannot be used by jobs until they are updated to the backup server version.
@@ -28,4 +28,5 @@ Note that immediately after the upgrade, the backup server performance may decre
 | Important |
 | You must upgrade Veeam components on all remote servers with which the backup server communicates during data protection and disaster recovery tasks. If you do not upgrade components on remote servers, Veeam Backup & Replication jobs will fail. For more information, see [Server Components Upgrade](components_update.md). |
 
+Page updated 2026-08-03
 

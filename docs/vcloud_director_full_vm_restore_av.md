@@ -3,8 +3,8 @@ title: "Step 9. Specify Secure Restore Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vcloud_director_full_vm_restore_av.html"
-last_updated: "12/6/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 9. Specify Secure Restore Settings
@@ -47,8 +47,9 @@ For a YARA rule to appear in the drop-down list, it must be placed in the YaraRu
 * Proceed with recovery but disable network adapters — restore the VM with disabled network adapters (NICs).
 * Abort VM recovery — cancel the restore session.
 
-1. Select the Continue scanning all remaining files after the first occurrence check box if you want the antivirus software to continue the VM data scan after the first malware is found. For information on how to view the results of the antivirus scan, see [Viewing Antivirus Scan Results](av_scan_log.md).
+1. Select the Continue scanning all remaining files after the first occurrence check box if you want the antivirus software to continue the VM data scan after the first malware is found. For information on how to view the results of the antivirus scan, see [Viewing Scan Results Using Console](malware_detection_secure_restore_results.md).
 
 ![Step 9. Specify Secure Restore Settings](images/vcloud_full_restore_secure.webp)
 
+Page updated 2026-07-30
 

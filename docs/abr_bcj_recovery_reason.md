@@ -1,0 +1,23 @@
+---
+title: "Step 5. Specify Restore Reason"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/abr_bcj_recovery_reason.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Step 5. Specify Restore Reason
+
+
+At the Reason step of the wizard, enter a reason for performing the application backup repository restore operation. The information you provide will be saved in the session history and you can reference it later.
+
+|  |
+| --- |
+| Tip |
+| If you do not want to show this page, select the Do not show me this page again check box. If you want to unhide this page, follow the instructions described in [this Veeam KB article](https://www.veeam.com/kb4432). |
+
+![Step 5. Specify Restore Reason](images/abr_bcj_restore_reasons.webp)
+
+Page updated 2026-06-18
+

@@ -3,8 +3,8 @@ title: "Step 7. Configure Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_to_ahv_network.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Configure Network Settings
@@ -21,6 +21,7 @@ For a network to be displayed in the list of the available networks, it must be 
 | Note |
 | You cannot change network settings when restoring the VM from a snapshot. However, when restoring the VM from a [user snapshot](ahv_nutanix_snapshots.md), you can choose to disconnect the original network. |
 
-![Step 7. Configure Network Settings](images/ahv_restore_vm_ahv_network.webp)
+![Step 7. Configure Network Settings](images/ahv_restore_vm_network.webp)
 
+Page updated 2026-04-22
 

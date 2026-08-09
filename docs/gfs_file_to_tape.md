@@ -3,8 +3,8 @@ title: "GFS File and Object Storage Backup to Tape"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/gfs_file_to_tape.html"
-last_updated: "10/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GFS File and Object Storage Backup to Tape
@@ -25,14 +25,15 @@ You can create GFS backups for files, folders and objects from the following sto
 |  |
 | --- |
 | Note |
-| [NDMP server backup](ndmp_servers_backup_to_tape.md) does not support GFS. |
+| [NDMP](ndmp_servers_backup_to_tape.md) and [NetApp NDMP](netapp_ndmp.md) server backup do not support GFS. |
 
 GFS Media Sets
 
 To distinguish between the backup cycles, the GFS media pool has 5 predefined media sets: yearly, quarterly, monthly, weekly and daily.
 
+GFS Media Sets
+
 | Media Set | Restore Point Type |
-| --- | --- |
 | Yearly | Full backup |
 | Quarterly |
 | Monthly |
@@ -58,4 +59,5 @@ Related Topics
 * [File Backup to Tape](file_to_tape_jobs.md)
 * [Object Storage Backup to Tape](object_to_tape_jobs.md)
 
+Page updated 2026-07-13
 

@@ -3,8 +3,8 @@ title: "Backup for VMware vSphere"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/backup.html"
-last_updated: "8/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup for VMware vSphere
@@ -26,4 +26,5 @@ In This Section
 * [Managing Backup Jobs](managing_jobs.md)
 * [Reporting](reporting.md)
 
+Page updated 2026-08-04
 

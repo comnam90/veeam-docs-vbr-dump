@@ -3,8 +3,8 @@ title: "Installing Plug-In on IBM AIX"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_plugin_aix.html"
-last_updated: "5/27/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Plug-In on IBM AIX
@@ -28,20 +28,21 @@ Using the Veeam Backup & Replication installation image
 You can download the latest version of the Veeam Backup & Replication installation image from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html).
 
 1. In the installation disk folder, go to \Plugins\Oracle RMAN\AIX\ppc64.
-2. Upload the Veeam Plug-In installation package (VeeamPluginforOracleRMAN-13.0.3.29-1.aix6.1.ppc.rpm) to the AIX server where the target Oracle database is deployed.
+2. Upload the Veeam Plug-In installation package (VeeamPluginforOracleRMAN-13.1.0.411-1.aix6.1.ppc.rpm) to the AIX server where the target Oracle database is deployed.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for Oracle RMAN from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
-2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.0.3.29-1\RMAN\_AIX\ppc64 folder, find the VeeamPluginforOracleRMAN-13.0.3.29-1.aix6.1.ppc.rpm file.
-3. Upload the Veeam Plug-In installation package (VeeamPluginforOracleRMAN-13.0.3.29-1.aix6.1.ppc.rpm) to the AIX server where the target Oracle database is deployed.
+2. Open the setup archive, in the \VeeamPluginforOracleRMAN-13.1.0.411\RMAN\_AIX\ppc64 folder, find the VeeamPluginforOracleRMAN-13.1.0.411-1.aix6.1.ppc.rpm file.
+3. Upload the Veeam Plug-In installation package (VeeamPluginforOracleRMAN-13.1.0.411-1.aix6.1.ppc.rpm) to the AIX server where the target Oracle database is deployed.
 
 1. Install the plug-in from package with root privileges. Make sure the root user has privileges to add the PKG file.
 
 |  |
 | --- |
-| rpm -i VeeamPluginforOracleRMAN-13.0.3.29-1.aix6.1.ppc.rpm |
+| rpm -i VeeamPluginforOracleRMAN-13.1.0.411-1.aix6.1.ppc.rpm |
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In on Linux or Unix](configuring_rman_plugin_lin.md).
 
+Page updated 2026-07-28
 

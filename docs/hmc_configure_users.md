@@ -3,8 +3,8 @@ title: "Configuring Users"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hmc_configure_users.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Users
@@ -17,6 +17,11 @@ Users with Host Administrator permissions can perform the following operations r
 * Enable and disable multi-factor authentication
 
 Users with Security Officer permissions cannot configure local users.
+
+|  |
+| --- |
+| Note |
+| When configuring users, consider the following:   * If you have multi-factor authentication enabled, you must enter a one-time password before you can perform the following operations on Host Administrator accounts: create, edit, or remove users, assign roles, or reset multi-factor authentication. Authentication remains valid for 15 minutes. * A Host Administrator can enable or disable multi-factor authentication for other users at any time. If multi-factor authentication was disabled during initial configuration, it can be re-enabled here. After you enable MFA, users are prompted to set it up at their next login. |
 
 User Roles
 
@@ -33,7 +38,7 @@ User Roles
 |  |
 | --- |
 | Note |
-| You can add local Veeam Software Appliance users to the Veeam Backup & Replication console and assign a Veeam Backup & Replication role to them. Multi-factor authentication settings for these users apply independently. For example, if you enable multi-factor authentication for the user in the Veeam Host Management console, it will not affect the Veeam Backup & Replication console.  Users with the Service Account role can be used in Veeam Backup & Replication by applications and backup infrastructure components for non-interactive connections. |
+| You can add local Veeam Software Appliance users to the Veeam Backup & Replication console and assign a Veeam Backup & Replication role to them. Multi-factor authentication for the Veeam Backup & Replication console is disabled by default and is enabled separately from the Veeam Host Management console. When you enable it, the same authenticator code used for the Veeam Host Management console also works for the Veeam Backup & Replication console.  Users with the Service Account role can be used in Veeam Backup & Replication by applications and backup infrastructure components for non-interactive connections. |
 
 Creating Users
 
@@ -47,16 +52,23 @@ To create a new user, perform the following steps:
 |  |
 | --- |
 | Note |
-| Consider the following:   * The password must meet the following requirements:  + 15 characters minimum. + 1 upper case character. + 1 lower case character. + 1 numeric character. + 1 special character. + No more than 3 characters of the same class in a row. For example, more than 3 lowercase or 3 numerical characters in sequence.  * Passwords stay valid for 60 days. When a password expires, a user will need to specify a new one that follows requirements. * After you add the user, you cannot change its name. |
+| Consider the following:   * The password must meet the following requirements:  * 15 characters minimum. * 1 upper case character. * 1 lower case character. * 1 numeric character. * 1 special character. * No more than 4 characters of the same class in a row. For example, more than 4 lowercase or 4 numerical characters in sequence.  * By default, passwords stay valid for 60 days, after which a user must set a new one that meets these requirements. A Host Administrator can change this interval or disable password expiration. For more information, see [Managing User Authentication](hmc_manage_user_auth.md). * After you add the user, you cannot change its name. |
 
 1. Click Next.
-2. At the Role step of the wizard, select the role and click Next. You can assign only one role to the user.
+2. At the Role step of the wizard, select a role and click Next. You can assign only one role to the user.
 3. At the MFA step of the wizard, enable or disable multi-factor authentication for the user and click Next.
 
 |  |
 | --- |
 | Note |
-| Consider the following:   * If you add a user with the Security Officer role, you cannot disable MFA. * If you add a user with the User or Service Account role, this step will be skipped. |
+| Consider the following:   * If you add a user with the Security Officer role, you cannot disable MFA on that account. * If you add a user with the User or Service Account role, this step will be skipped. |
+
+1. At the VBR Role step of the wizard, select a role, and specify if the user will be a Veeam Backup & Replication service account. Then, click Next.
+
+|  |
+| --- |
+| Note |
+| When assigning a Veeam Backup & Replication role to a new user, consider the following:   * Accounts with the Host Admin role can only be assigned the Backup Administrator Veeam Backup & Replication role. * Accounts with the Service Account or Security Officer role cannot be assigned a Veeam Backup & Replication role. |
 
 1. At the Summary step of the wizard, review the data and click Finish.
 
@@ -69,7 +81,7 @@ To edit a user, perform the following steps:
 1. Log in to the Veeam Host Management web UI as a Host Administrator.
 2. In the management pane, click Users and Roles.
 3. Click Edit.
-4. Change the description and the role if necessary. For Host Administrator accounts, you can also enable or disable multi-factor authentication.
+4. Change the description and roles if necessary. For Host Administrator accounts, you can also enable or disable multi-factor authentication.
 5. Review the data and click Finish.
 
 [![Configuring Users](images/hmc_web_edit_user.webp)](images/hmc_web_edit_user.webp)
@@ -115,4 +127,5 @@ For Security Officer accounts, multi-factor authentication cannot be disabled.
 
 [![Configuring Users](images/hmc_web_disable_mfa.webp)](images/hmc_web_disable_mfa.webp)
 
+Page updated 2026-07-28
 

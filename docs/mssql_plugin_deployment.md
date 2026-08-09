@@ -3,14 +3,14 @@ title: "Deployment and Configuration"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_plugin_deployment.html"
-last_updated: "4/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deployment and Configuration
 
 
-Veeam Plug-In for Microsoft SQL Server is a feature of Veeam Backup & Replication. This guide gives instructions on how to deploy Veeam Plug-In assuming that you already have deployed Veeam Backup & Replication and configured a backup repository. To learn how to deploy Veeam Backup & Replication, see the [Veeam Backup & Replication User Guide](https://www.veeam.com/documentation-guides-datasheets.html) for your platform.
+Veeam Plug-In for Microsoft SQL Server is a feature of Veeam Backup & Replication. This guide gives instructions on how to deploy Veeam Plug-In assuming that you already have deployed Veeam Backup & Replication and configured a backup repository. To learn how to deploy Veeam Backup & Replication, see the [Deployment](https://helpcenter.veeam.com/docs/vbr/userguide/deployment.html?ver=13) section in the Veeam Backup & Replication User Guide relevant for your platform.
 
 To be able to use Veeam Plug-In for Microsoft SQL Server, you must complete the following steps:
 
@@ -20,10 +20,14 @@ To be able to use Veeam Plug-In for Microsoft SQL Server, you must complete the 
 
 Related Topics
 
+* [Granting Permissions to Users](granting_permissions_mssql.md)
+* [Specifying Preferred Networks for Veeam Plug-Ins](preferred_network_mssql.md)
+* [Reducing Load on the Microsoft SQL Server](plan_and_manage_performance_throttling_mssql.md)
 * [Upgrading Veeam Plug-In for Microsoft SQL Server](update_mssql_plugin.md)
 * [Exporting and Importing Plug-In Settings](import_export_plugin_settings_mssql.md)
 * [Importing Backup Files](import_backups_mssql.md)
 * [Specifying the Version of Microsoft ODBC Driver for SQL Server](mssql_odbc_driver.md)
 * [Uninstalling Veeam Plug-In for Microsoft SQL Server](uninstall_plugin_mssql.md)
 
+Page updated 2026-08-06
 

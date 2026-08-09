@@ -3,8 +3,8 @@ title: "Step 4. Specify Target Cluster"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_restore_to_ahv_target_cluster.html"
-last_updated: "1/28/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Target Cluster
@@ -21,6 +21,7 @@ For a cluster to be displayed in the list of the available clusters, it must be 
 | Note |
 | The Cluster step of the Full VM Restore to Nutanix AHV wizard is only available when you restore the VM from a backup. |
 
-![Step 4. Specify Target Cluster](images/ahv_restore_vm_ahv_cluster.webp)
+![Step 4. Specify Target Cluster](images/ahv_restore_vm_cluster.webp)
 
+Page updated 2026-04-22
 

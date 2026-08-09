@@ -3,8 +3,8 @@ title: "Set-VBRSureBackupContentScanJob"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrsurebackupcontentscanjob.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRSureBackupContentScanJob
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRSureBackupContentScanJob -Job <VBRSureBackupContentScanJob> [-Name <String>] [-Description <String>] [-LinkedJob <VBRSureBackupLinkedJob[]>] [-MaxConcurrentVMs <Int32>] [-ProcessRandomMachines] [-RandomMachinesMaxCount <Int32>] [-ScheduleOptions <VBRSureBackupJobScheduleOptions>] [-VerificationOptions <VBRSureBackupJobVerificationOptions>] [-EnableSchedule] [-Force]  [<CommonParameters>] |
+| Set-VBRSureBackupContentScanJob [-Description <String>] [-EnableSchedule] [-Force] -Job <VBRSureBackupContentScanJob> [-LinkedJob <VBRSureBackupLinkedJob[]>] [-MaxConcurrentVMs <Int32>] [-Name <String>] [-ProcessRandomMachines] [-RandomMachinesMaxCount <Int32>] [-ScheduleOptions <VBRSureBackupJobScheduleOptions>] [-UnstructuredLinkedJob <VBRUnstructuredBackupJob[]>] [-VerificationOptions <VBRSureBackupJobVerificationOptions>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,12 +35,14 @@ This cmdlet modifies settings of a SureBackup job that runs in the backup conten
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Job | Specifies a SureBackup job. The cmdlet will modify settings of this job. | Accepts the VBRSureBackupContentScanJob object. To create this object, run the [Get-VBRSureBackupJob](get-vbrsurebackupjob.md) cmdlet. | True | Named | True (ByValue, |
+| Job | Specifies a SureBackup job. The cmdlet will modify settings of this job. | Accepts the VBRSureBackupContentScanJob object. To create this object, run the [Get-VBRSureBackupJob](get-vbrsurebackupjob.md) cmdlet. | True | Named | True (ByValue, ByProperty Name) |
 | Name | Specifies a name for a SureBackup job. The cmdlet will create a SureBackup job with this name. | String | False | Named | False |
 | Description | Specifies a description for a SureBackup job. The cmdlet will create a SureBackup job with this description. | String | False | Named | False |
 | LinkedJob | Specifies a backup or replication job. The cmdlet will verify VMs that are added to this job with the SureBackup job. | Accepts the VBRSureBackupLinkedJob[] object. To create this object, run the [New-VBRSureBackupLinkedJob](new-vbrsurebackuplinkedjob.md) cmdlet. | False | Named | False |
+| UnstructuredLinkedJob | Specifies an unstructured data backup job. The cmdlet will verify backups created by this job with the lite SureBackup job. | Accepts the VBRUnstructuredBackupJob[] object. To get this object, run the [Get-VBRUnstructuredBackupJob](get-vbrunstructuredbackupjob.md) cmdlet. | False | Named | False |
 | MaxConcurrentVMs | Specifies the maximum number of VMs that can be started at the same time. | Int32 | False | Named | False |
 | ProcessRandomMachines | Defines that the cmdlet will randomly test the specified number of machines from the linked job.  Use the RandomMachinesMaxCount parameter to specify the number of machines to randomly test. | SwitchParamter | False | Named | False |
 | VerificationOptions | Specifies verification settings for a SureBackup job. | Accepts the VBRSureBackupJobVerificationOptions object. To create this object, run the [New-VBRSureBackupJobVerificationOptions](new-vbrsurebackupjobverificationoptions.md) cmdlet. | False | Named | False |
@@ -77,4 +79,5 @@ Related Commands
 * [Get-VBRSureBackupJob](get-vbrsurebackupjob.md)
 * [New-VBRSureBackupJobScheduleOptions](new-vbrsurebackupjobscheduleoptions.md)
 
+Page updated 2026-06-12
 

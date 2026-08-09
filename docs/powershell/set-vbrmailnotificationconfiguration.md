@@ -3,8 +3,8 @@ title: "Set-VBRMailNotificationConfiguration"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrmailnotificationconfiguration.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRMailNotificationConfiguration
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Set-VBRMailNotificationConfiguration [-SmtpServer <String>] [-Sender <String>] [-Recipient <String>] [-Subject <String>] [-DailyReportsTime <DateTime>] [-Port <Int32>] [-Timeout <Int32>] [-EnableSSL] [-EnableAuth] [-Credentials <CCredentials>] [-NotifyOnSuccess] [-NotifyOnWarning][-NotifyOnFailure] [-NotifyOnLastRetryOnly] [-Force]  [<CommonParameters>] |
+| Set-VBRMailNotificationConfiguration [-SmtpServer <String>] [-Sender <String>] [-Recipient <String>] [-Subject <String>] [-DailyReportsTime <DateTime>] [-Port <Int32>] [-Timeout <Int32>] [-EnableSSL] [-EnableAuth] [-Credentials <CCredentials>] [-NotifyOnSuccess] [-NotifyOnWarning] [-NotifyOnFailure] [-NotifyOnLastRetryOnly] [-Force] [-AIGenerated <Boolean>] [<CommonParameters>] |
 
 Detailed Description
 
@@ -53,6 +53,7 @@ Parameters
 | NotifyOnFailure | Defines that Veeam Backup & Replication will send email notifications if a job does not complete successfully.  Default: True.  Note: To disable this option, set the parameter value to $false. That is, parameter\_name:$false. | SwitchParameter | False | Named | False |
 | NotifyOnLastRetryOnly | Defines that Veeam Backup & Replication will send  email notifications about the final job status.  Default: True.  Note: To disable this option, set the parameter value to $false. That is, parameter\_name:$false. | SwitchParameter | False | Named | Falseqnb |
 | Force | Defines that the cmdlet will modify global email notification settings without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
+| AIGenerated | Specifies whether Veeam Backup & Replication will use AI-generated text in email notification messages. | Boolean | False | Named | False |
 
 <CommonParameters>
 
@@ -60,7 +61,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-The cmdlet returns the VBRMailNotificationConfiguration object that contains global email notification settings.
+The cmdlet returns the [VBRMailNotificationConfiguration](vbrmailnotificationconfiguration.md) object that contains global email notification settings.
 
 Examples
 
@@ -82,4 +83,5 @@ Related Commands
 
 [Get-Date](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.1)
 
+Page updated 2026-06-10
 

@@ -3,8 +3,8 @@ title: "Restoring from Image-Level Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_restore_image_level_backups.html"
-last_updated: "2/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring from Image-Level Backups
@@ -20,4 +20,5 @@ In This Section
 * [Restoring Multiple Databases](vesql_restoring_multiple_database.md)
 * [Restoring Database Schema and Data](vesql_restoring_schema.md)
 
+Page updated 2026-06-01
 

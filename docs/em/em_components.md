@@ -3,8 +3,8 @@ title: "Enterprise Manager Components"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_components.html"
-last_updated: "5/4/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Enterprise Manager Components
@@ -18,6 +18,7 @@ Veeam Backup Enterprise Manager incorporates the following services and componen
 * Veeam Enterprise Manager Web UI Service hosts and delivers the Veeam Backup Enterprise Manager web application when deployed on Linux-based systems.
 
 * Veeam Backup Enterprise Manager REST API Service allows you to communicate with Veeam Backup Enterprise Manager using HTTP and HTTPS protocols and the principles of REST. For more information, see the [Veeam Backup Enterprise Manager REST API Reference](https://helpcenter.veeam.com/docs/vbr/em_rest/overview.html?ver=13).
+* Veeam Backup Update Service enables the update of Enterprise Manager. The service runs locally and does not connect to the internet. It only requires a connection to the Enterprise Manager configuration database.
 
 * [For Linux-based Enterprise Manager] Veeam Updater and Veeam Updater package manager are used to manage Veeam Software Appliance updates, this includes OS and Enterprise Manager updates. For details, see [Veeam Software Appliance Update](em_update_linux.md).
 * [For Linux-based Enterprise Manager] Veeam Host Management Service allows you to configure host settings. For details, see [Host Management](em_vhm.md).
@@ -42,4 +43,5 @@ Veeam Backup Enterprise Manager incorporates the following services and componen
 
 * Veeam Backup Search is an optional component used for guest OS file indexing of protected machines. This component is included in the installation package to provide backward compatibility with older existing deployments. For a new deployment, there is no need to install Veeam Backup Search since all operations related to guest OS file indexing and search will be performed by Veeam proprietary built-in indexing engine. For more information, see [Veeam Backup Search Capabilities](understanding_search.md).
 
+Page updated 2026-07-17
 

@@ -3,8 +3,8 @@ title: "Step 4. Specify Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_repository.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Specify Storage Settings
@@ -20,8 +20,10 @@ At the Storage step of the wizard, specify settings for the target backup reposi
 | Note |
 | On the computer with Veeam Plug-In, make sure that the value set for the CONTROL\_FILE\_RECORD\_KEEP\_TIME parameter in the control file is greater than the recovery window. Otherwise, the retention policy will not be applicable as the backup records will be always overwritten earlier than they can be considered obsolete by the retention policy. To learn more, see [this Oracle article](https://support.oracle.com/knowledge/Oracle%20Database%20Products/397269_1.html) (requires an Oracle Support account). |
 
-1. Click Advanced to specify advanced settings for the backup job. To learn more, see [Specify Advanced Backup Settings](policy_oracle_rman_advanced.md).
+1. To use the GFS (Grandfather-Father-Son) retention scheme, select the Keep certain full backups longer for archival purposes check box and click Configure. In the Configure GFS window, specify how weekly, monthly and yearly full backups must be retained. To learn more, see [Configure Long-Term Retention](policy_oracle_rman_gfs.md).
+2. Click Advanced to specify advanced settings for the backup job. To learn more, see [Specify Advanced Backup Settings](policy_oracle_rman_advanced.md).
 
 ![Step 4. Specify Storage Settings](images/plugins_policy_rman_storage.webp)
 
+Page updated 2026-06-30
 

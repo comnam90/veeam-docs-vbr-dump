@@ -3,12 +3,14 @@ title: "Switchover"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/high_availability_switchover.html"
-last_updated: "1/13/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Switchover
 
+
+Prev1/1Next
 
 A switchover is a process used when both nodes are in an operational state and synchronized with each other, but you need to perform tasks that require primary node downtime, such as hardware maintenance. When you initiate a switchover, Veeam Backup & Replication assigns the role of the primary node to the secondary node. The replication of the database configuration flows to the former primary node. After the maintenance, you can revert to the primary node or use it as a new secondary.
 
@@ -26,10 +28,16 @@ How Switchover Works
 
 After you initiate a switchover, Veeam Backup & Replication performs the following:
 
-1. Removes the HA cluster IP from the primary node.
+1. For a standard  HA cluster removes the cluster IP address from the primary node. For a cross-subnet HA cluster, unblocks port 443 for the new primary node external IP address and blocks port 443 for the new secondary node external IP address in the firewall.
 2. Rewrites information about which host is a primary node in the database.
 3. Sets the database on the former primary node to read-only mode.
 4. Restarts services on both HA nodes.
-5. Assigns an HA cluster IP address to the new primary node.
+5. For a standard HA cluster, assigns the cluster IP address to the new primary node.
 
+|  |
+| --- |
+| Note |
+| This step does not apply to a cross-subnet HA cluster, since there is no cluster IP address to reassign — the switchover for a cross-subnet cluster is handled entirely by the firewall port rule changes described in step 1. |
+
+Page updated 2026-07-17
 

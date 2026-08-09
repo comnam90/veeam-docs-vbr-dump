@@ -3,8 +3,8 @@ title: "Sync-VBRUnstructuredBackupMetadata"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/sync-vbrunstructuredbackupmetadata.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Sync-VBRUnstructuredBackupMetadata
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Sync-VBRUnstructuredBackupMetadata -SourceBackup <VBRUnstructuredBackup> -TargetRepository <CBackupRepository> [-RunAsync]  [<CommonParameters>] |
+| Sync-VBRUnstructuredBackupMetadata [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] [-RunAsync] -SourceBackup <VBRUnstructuredBackup> -TargetRepository <CBackupRepository> [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,11 +35,14 @@ This cmdlet downloads metadata of backup files from the long-term backup reposit
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | SourceBackup | Specifies a backup file. The cmdlet will download metadata of this backup file from the long-term repository. | Accepts the VBRUnstructuredBackup object. To get this object, run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | TargetRepository | Specifies the short-term backup repository. The cmdlet will download metadata of backup files to the specified short-term backup repository. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | True | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParameter | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories.  Note: If you do not provide this parameter, the cmdlet will prompt you to use the default retrieval policy settings. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will download metadata of backup files from the long-term backup repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -71,4 +74,5 @@ Related Commands
 
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 
+Page updated 2026-06-29
 

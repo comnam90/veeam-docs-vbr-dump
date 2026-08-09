@@ -3,8 +3,8 @@ title: "SureBackup Job for VM Replicas"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/surereplica_job.html"
-last_updated: "8/20/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SureBackup Job for VM Replicas
@@ -33,8 +33,9 @@ To overcome the situation of job overlapping, you may chain the replication and 
 | Note |
 | You can mix VM backups and replicas in the recovery verification job. For example, the application group may contain VMs that will be started from backup files and the job linked to the recovery verification job may be a replication job. Veeam Backup & Replication supports any type of a mixed scenario. Note that VMs that you verify with a SureBackup job must belong to the same platform — VMware or Hyper-V. |
 
-Related Topis
+Related Topics
 
 [SureBackup Job for VM Replicas Processing](surereplica_job_processing.md)
 
+Page updated 2026-07-23
 

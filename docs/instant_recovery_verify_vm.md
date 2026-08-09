@@ -3,8 +3,8 @@ title: "Step 10. Verify Instant Recovery Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery_verify_vm.html"
-last_updated: "3/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 10. Verify Instant Recovery Settings
@@ -27,4 +27,5 @@ What You Do Next
 
 [Finalizing Instant Recovery to VMware vSphere](instant_recovery_review_vm.md)
 
+Page updated 2026-06-30
 

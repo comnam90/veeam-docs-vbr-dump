@@ -3,8 +3,8 @@ title: "General Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/general_limitations.html"
-last_updated: "7/1/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # General Considerations and Limitations
@@ -12,19 +12,7 @@ product_version: "13.0.2.29"
 
 This section contains general limitations for object storage repositories:
 
-* You can add an object storage repository to a second backup server using credentials with the read-only access permissions that allows you to perform data recovery options. If you use credentials with full-access permissions, it will lead to unpredictable behavior and data loss. For more information on permissions, see [Permissions](required_permissions.md#s3readonly).
-
-|  |
-| --- |
-| Important |
-| Consider the following:   * This option is not supported for Microsoft Azure Storage and Veeam Data Cloud Vault. * This option works for object storage repositories only if they meet the following requirements:  * You plan to add these object storage repositories as a performance or capacity extent of a scale-out backup repository.  * The object storage repositories do not have data encryption enabled. If encryption is enabled on these repositories, you will not be able to add object storage repositories using credentials with read-only permissions.  * You can use this option for direct backup object storage repositories added either as a standalone repository or a performance extent of a scale-out backup repository. |
-
 * Data in an object storage bucket or container must be managed solely by Veeam Backup & Replication, including retention and data management. When you enable Object Lock and S3 Versioning for an S3 bucket or version-level immutability for the Azure container, make sure that you do NOT enable the default retention option. Note that enabling lifecycle rules is not supported and may result in backup and restore failures.
-
-|  |
-| --- |
-| Important |
-| Lifecycle rules are enabled by default once you enable object versioning. Unlike other object storage repositories, the two lifecycle rules that Google Cloud automatically creates when you enable object versioning do not affect the consistency of data managed by Veeam Backup & Replication. However, you can disable these lifecycle rules if you prefer. For more information on how to disable these rules, see [Google Cloud documentation](https://docs.cloud.google.com/storage/docs/managing-lifecycles#set). |
 
 * You cannot simultaneously store [capacity tier](capacity_tier.md) and [unstructured data](unstructured_data_backup.md) backups in the same object storage repository. You must either add this object storage repository as the capacity extent or use it as the backup repository for the unstructured backup job.
 
@@ -95,6 +83,25 @@ Consider the following deployment imitations:
 2. You have chosen Automatic selection for the gateway server at the [Specify Shared Folder Settings](repository_server.md) step of the New backup repository wizard.
 3. For the object storage that you use as the capacity extent, you have not selected to connect to object storage using a gateway server at the Account step of the New Object Repository wizard.
 
+Read-Only Mode for Object Storage Repositories Limitations
+
+* The read-only mode is available for immutable standalone object storage repositories and immutable performance and capacity tier extents.
+* The read-only mode is not available for archive tier extents and for Veeam Data Cloud Vault.
+* The read-only mode is not available for Veeam Cloud Connect repositories.
+* You cannot disable the read-only mode after you add the object storage repository.
+* You cannot use a read-only object storage repository as a target for the following jobs:
+
+* Backup jobs
+
+* Backup copy jobs
+
+* Configuration backups
+
+* You cannot use a read-only object storage repository as a source for backup copy jobs or backup to tape jobs.
+* You cannot switch a read-only object storage repository to Sealed Mode or Maintenance Mode, or evacuate its data.
+* For multi-bucket object storage repositories, automatic child bucket creation is not available for repositories added in the read-only mode.
+* To add the object storage repository with read-only mode, ee recommend that you use credentials with the read-only access permissions.
+
 Limitations for Veeam Solutions
 
 For more information on limitations for Veeam solutions that utilizes object storage repositories functionality, see the following sections of the necessary guide:
@@ -105,4 +112,5 @@ For more information on limitations for Veeam solutions that utilizes object sto
 * [Veeam Agent for Mac](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_object_ovw.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for physical endpoints and virtual machines running macOS.
 * [Veeam Cloud Connect Guide](https://helpcenter.veeam.com/docs/vbr/cloud/cc_object_storage.html?ver=13#considerations-and-limitations) — to check limitations for data protection and disaster recovery solution for cloud service providers.
 
+Page updated 2026-07-14
 

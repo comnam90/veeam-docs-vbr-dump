@@ -3,8 +3,8 @@ title: "SAML Authentication Support"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/em_saml.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # SAML Authentication Support
@@ -31,7 +31,7 @@ How It Works
 
 In Veeam Backup Enterprise Manager, SAML authentication is performed in the following way:
 
-1. The user accesses the website under an account of the External type. The account must be registered in advance in Enterprise Manager by the Enterprise Manager administrator.
+1. The user accesses the website under an account of the External type. The account must be added in advance in Enterprise Manager by the Enterprise Manager administrator. For dedails on how to add an account, see [Managing Accounts](em_managing_accounts.md#add).
 2. Veeam Backup Enterprise Manager redirects a SAML authentication request to the IdP.
 3. If the user has not previously logged in with the single sign-on service of the IdP, the IdP redirects the user to the URL of the single sign-on webpage.
 
@@ -64,4 +64,5 @@ Related Tasks
 * [Configuring SAML Authentication Settings](veeam_backup_em_saml.md)
 * [Configuring Accounts and Roles](veeam_backup_em_roles.md)
 
+Page updated 2026-07-23
 
