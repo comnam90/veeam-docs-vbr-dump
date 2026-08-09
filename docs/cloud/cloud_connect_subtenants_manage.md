@@ -3,8 +3,8 @@ title: "Managing Subtenant Accounts on SP Side"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_subtenants_manage.html"
-last_updated: "5/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Managing Subtenant Accounts on SP Side
@@ -23,7 +23,8 @@ Related Concepts
 
 * [Subtenant Accounts for VMware Cloud Director Tenant Accounts](cloud_vcloud_director_tenant.md#vcd_subtenants)
 
-* [SP and Tenant Roles](cloud_roles.md)
+* [Service Providers and Tenants](cloud_roles.md)
 * [Tenant Lease and Quota](lease_and_quota.md)
 
+Page updated 2026-07-21
 
