@@ -3,8 +3,8 @@ title: "/vmReplicaPoints/{ID}/mounts/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/vmreplicapoints_id_mountpoints_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /vmReplicaPoints/{ID}/mounts/{ID}
@@ -41,6 +41,7 @@ The /vmReplicaPoints/{ID}/mounts/{ID} resource has a resource representation of 
 
 |  |
 | --- |
-| <VmReplicaPointMount xmlns="http://www.veeam.com/ent/v1.0" Type="VmReplicaPointMount" Href="https://localhost:9398/api/vmReplicaPoints/623cbbec-c8ff-4cf4-96be-d433f3b775c7/mounts/1"> |
+| <VmReplicaPointMount xmlns="http://www.veeam.com/ent/v1.0" Type="VmReplicaPointMount" Href="https://localhost:9398/api/vmReplicaPoints/623cbbec-c8ff-4cf4-96be-d433f3b775c7/mounts/1">   <Links>     <Link Rel="Delete" Type="VmReplicaPointMount" Href="https://localhost:9398/api/vmReplicaPoints/623cbbec-c8ff-4cf4-96be-d433f3b775c7/mounts/1" />   </Links>   <FSRoots>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmReplicaPoints/623cbbec-c8ff-4cf4-96be-d433f3b775c7/mounts/1/Volume$0:">       <Path>Volume$0:</Path>       <Name>Volume$0:</Name>     </DirectoryEntry>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmReplicaPoints/623cbbec-c8ff-4cf4-96be-d433f3b775c7/mounts/1/C:">       <Path>C:</Path>       <Name>C:</Name>     </DirectoryEntry>     <DirectoryEntry Type="DirectoryEntry" Href="https://localhost:9398/api/vmReplicaPoints/623cbbec-c8ff-4cf4-96be-d433f3b775c7/mounts/1/E:">       <Path>E:</Path>       <Name>E:</Name>     </DirectoryEntry>   </FSRoots> </VmReplicaPointMount> |
 
+Page updated 2026-07-29
 
