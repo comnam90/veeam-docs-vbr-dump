@@ -3,8 +3,8 @@ title: "Importing Certificate from PFX Files"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/import_tls_pfx.html"
-last_updated: "4/8/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Importing Certificate from PFX Files
@@ -42,4 +42,5 @@ To import a TLS certificate from a PFX file, do the following:
 1. At the Summary step of the wizard, review the certificate properties. Use the Copy to clipboard link to copy and save information about the TLS certificate. You can use the copied information on a protected computer to verify the TLS certificate with the certificate thumbprint.
 2. Click Finish to apply the certificate.
 
+Page updated 2026-07-14
 
