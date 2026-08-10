@@ -3,8 +3,8 @@ title: "Step 2. Select Authentication Method"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/select_authentication_method_mfa_one_click.html"
-last_updated: "3/9/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 2. Select Authentication Method
@@ -72,4 +72,5 @@ Make sure that the account that you use has both the Exchange Administrator and 
 
 ![Step 2. Select Authentication Method](images/one_click_on.webp "Select Authentication Method")
 
+Page updated 2026-03-23
 
