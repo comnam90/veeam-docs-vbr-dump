@@ -3,8 +3,8 @@ title: "Performing VM Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_restore_to_rhv.html"
-last_updated: "1/29/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing VM Restore
@@ -14,18 +14,21 @@ In case a disaster strikes, you can restore an entire oVirt VM from a backup. Ve
 
 Supported Workloads
 
-To restore machines to a oVirt KVM cluster, you can use the following backups:
+To restore machines to an oVirt KVM cluster, you can use the following backups:
 
 * Backups of oVirt VMs created by Veeam Plug-in for oVirt KVM (including VMs with volume groups attached and VMs with no disks attached).
 * Backups of Microsoft Hyper-V and VMware vSphere VMs created by Veeam Backup & Replication.
 * Backups of virtual and physical machines created by Veeam Agent for Microsoft Windows and Veeam Agent for Linux.
 * Backups of VMs created by vCloud Director.
-* Backups of Amazon EC2 instances created by Veeam Backup for AWS.
-* Backups of Microsoft Azure VMs created by Veeam Backup for Microsoft Azure.
-* Backups of Google Cloud VM instances created by Veeam Backup for Google Cloud.
+* Backups of Amazon EC2 instances created by Veeam Plug-in for AWS.
+* Backups of Microsoft Azure VMs created by Veeam Plug-in for Microsoft Azure.
+* Backups of Google Cloud VM instances created by Veeam Plug-in for Google Cloud.
+
 * Backups of Nutanix AHV VMs created by Veeam Plug-in for Nutanix AHV.
+
 * Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE.
-* Backups of Scale Computing VMs created by Veeam Plug-in for Scale Computing HyperCore.
+
+* Backups of Scale Computing HyperCore VMs created by Veeam Plug-in for Scale Computing HyperCore.
 
 VM restore is supported only for backups stored in backup repositories, object storage repositories, and on the performance, capacity and archive tier of a scale-out backup repository (except for backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent).
 
@@ -48,4 +51,5 @@ To restore a protected VM, do the following:
 8. [Specify a restore reason](ovirt_restore_to_rhv_reason.md).
 9. [Verify restore settings](ovirt_restore_to_rhv_summary.md).
 
+Page updated 2026-07-24
 
