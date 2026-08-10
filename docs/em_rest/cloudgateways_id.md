@@ -3,8 +3,8 @@ title: "/cloud/gateways/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/cloudgateways_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /cloud/gateways/{ID}
@@ -47,7 +47,7 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudGatewayReference" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd" Name="172.16.13.97" UID="urn:veeam:CloudGateway:b5025a7b-5e13-41e2-a17e-9d9af985ecfd"> |
+| <EntityRef xmlns="http://www.veeam.com/ent/v1.0" Type="CloudGatewayReference" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd" Name="172.16.13.97" UID="urn:veeam:CloudGateway:b5025a7b-5e13-41e2-a17e-9d9af985ecfd">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8ea5406b-a6e9-42d9-bca5-44b6a5d94af1" Name="localhost" />     <Link Rel="Alternate" Type="CloudGateway" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd?format=Entity" Name="172.16.13.97" />   </Links> </EntityRef> |
 
 Entity resource representation:
 
@@ -55,4 +55,5 @@ Entity resource representation:
 | --- |
 | <CloudGateway xmlns="http://www.veeam.com/ent/v1.0" Type="CloudGateway" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd?format=Entity" Name="172.16.13.97" UID="urn:veeam:CloudGateway:b5025a7b-5e13-41e2-a17e-9d9af985ecfd">   <Links>     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/8ea5406b-a6e9-42d9-bca5-44b6a5d94af1" Name="localhost" />     <Link Rel="Alternate" Type="CloudGatewayReference" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd" Name="172.16.13.97" />     <Link Rel="Edit" Type="CloudGatewayReference" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd" Name="172.16.13.97" />     <Link Rel="Delete" Type="CloudGateway" Href="https://localhost:9398/api/cloud/gateways/b5025a7b-5e13-41e2-a17e-9d9af985ecfd" Name="172.16.13.97" />   </Links>   <Enabled>true</Enabled>   <NetworkMode>Direct</NetworkMode>   <ExternalIP>172.16.13.97</ExternalIP>   <ExternalPort>6180</ExternalPort>   <InternalPort>6180</InternalPort>   <Description>Cloud gateway 1</Description> </CloudGateway> |
 
+Page updated 2026-07-29
 
