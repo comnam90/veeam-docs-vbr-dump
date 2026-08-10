@@ -3,8 +3,8 @@ title: "Removing Computer from Protection Group"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protected_computer_remove.html"
-last_updated: "3/30/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Removing Computer from Protection Group
@@ -21,12 +21,6 @@ Alternatively, you can remove a computer from a protection group, and then unins
 | TIP |
 | You can also remove entire protection group from the Veeam Backup & Replication inventory. When you remove a protection group, you can instruct Veeam Backup & Replication to uninstall Veeam Agents from all protected computers included in this protection group. To learn more, see [Removing Protection Group](agents_protection_group_remove.md). |
 
-To remove a computer from a protection group:
-
-1. Open the Inventory view.
-2. In the inventory pane, expand the Physical and Cloud Infrastructure node and select the necessary protection group.
-3. In the working area, select the necessary computer and click Remove from Configuration on the ribbon or right-click the computer and select Remove from configuration.
-
 Backups created for computers that were removed from a protection group remain intact in the backup location. You can delete this backup data manually later if needed.
 
 |  |
@@ -34,7 +28,30 @@ Backups created for computers that were removed from a protection group remain i
 | NOTE |
 | You cannot remove a computer from the protection group if this computer is a failover cluster node. |
 
+You can remove a computer from a protection group in the following ways:
+
+* [Removing Computer from Protection Group Using Console](#console)
+* [Removing Computer from Protection Group Using Web UI](#webui)
+
+Removing Computer from Protection Group Using Veeam Backup & Replication Console
+
+To remove a computer from a protection group in the Veeam Backup & Replication console:
+
+1. Open the Inventory view.
+2. In the inventory pane, expand the Physical and Cloud Infrastructure node and select the necessary protection group.
+3. In the working area, select the necessary computer and click Remove from Configuration on the ribbon or right-click the computer and select Remove from configuration.
+
 [![Remove from configuration](images/protected_computer_remove_from_group.webp)](images/protected_computer_remove_from_group.webp "Remove from configuration")
+
+Removing Computer from Protection Group Using Veeam Backup & Replication Web UI
+
+To remove a computer from a protection group in the Veeam Backup & Replication web UI:
+
+1. In the management pane, click Protection Groups.
+2. Select the protection group that contains the necessary computer.
+3. In the working area, select the check box next to the computers and click Other Actions > Remove from Configuration on the toolbar. Alternatively, right-click the computer and select Other Actions > Remove from Configuration.
+
+[![Remove from Configuration](images/protected_computer_remove_from_group_web.webp)](images/protected_computer_remove_from_group_web.webp "Remove from Configuration")
 
 Alternative Ways to Remove Computer from Protection Group
 
@@ -70,4 +87,5 @@ To remove a computer from the Manually Added protection group, you must edit thi
 | NOTE |
 | You cannot remove a computer from the Manually Added protection group if this computer is added to a Veeam Agent backup job. |
 
+Page updated 2026-07-06
 
