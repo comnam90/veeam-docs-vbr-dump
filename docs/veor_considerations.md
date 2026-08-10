@@ -3,8 +3,8 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/veor_considerations.html"
-last_updated: "6/24/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
@@ -20,7 +20,7 @@ General
 
 This does not apply to instant recovery operations — they are managed by the Veeam Explorers Recovery Service, which runs on the mount server associated with the backup repository.
 
-* For Veeam Plug-In for Oracle RMAN backups, only the restore operation is supported. Publishing, instant recovery and export operations are not supported.
+* For Veeam Plug-In for Oracle RMAN backups, only restore and recovery script export operations are supported. Publishing, instant recovery, and export operations are not supported.
 * [Data recovery to Linux server] You can recover data over SSH only — recovery using Linux Management Agent is not supported.
 
 * [Data recovery to Linux server] Data recovery with Veeam Explorer for Oracle is not supported if the SQL\*Plus environment on the target Oracle server is configured to use glogin.sql or login.sql profile files. For details, see the [Configuring SQL\*Plus](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqpug/configuring-SQL-Plus.html#GUID-D7479120-872F-4E47-AC13-B1B07DF69A46) section of the SQL\*Plus User's Guide and Reference.
@@ -110,7 +110,7 @@ Restore of Oracle Databases
 
 * Before you restore an Oracle database from an RMAN plug-in backup to another server, make sure that the account used to connect the plug-in on the target server to the backup server and backup repository meets the following requirements:
 
-* The account must either have the Veeam Backup Administrator, or both the Veeam Backup Operator and Veeam Restore Operator roles. You can also use the account under which the backup was created. For more information on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
+* The account must either have the Backup Administrator, or both the Backup Operator and Restore Operator roles. You can also use the account under which the backup was created. For more information on how to assign Veeam Backup & Replication roles, see [Managing Users and Roles](users_roles.md).
 * The account must have access permissions to the backup repository where the backup is stored. For more information, see [Access and Encryption Settings on Repositories](repository_permissions_rman.md).
 
 If the account does not meet these requirements, you must configure the plug-in on the target server with the credentials of an account that meets the requirements or with a recovery token. You can do this by running the following command on the target server:
@@ -167,6 +167,18 @@ Restore with different settings will fail due to Data Guard limitations.
 
 Restore with different settings will fail due to Data Guard limitations.
 
+Restore of Other Cluster Solutions
+
+* Before you restore your database from a cluster based on one of the following solutions: Oracle SEHA, Oracle Fail Safe, Pacemaker and Corosync, Red Hat High Availability Add-On, using Veeam Explorer for Oracle, consider the following:
+
+* Before you restore a database to the original location, you must suspend automated management of the database. Otherwise, the restore may fail as the cluster management software can interfere with the database during restore. This limitation is applied to the database only, you can leave database-related resources intact.
+* If you restore a database to the original location, you must use the hostname of the node where the database instance is currently running as the target node name. If you try to use customServerName, the restore will fail. To avoid restore failure, perform the following:
+
+1. Find a backup created with Veeam Plug-In for Oracle RMAN and launch the Restore wizard. For details, see [Exploring RMAN Plug-in Backups](veor_exploring_rman.md) and [Launch Restore Wizard](rman_restore_wizard.md).
+2. In the Restore wizard, delete the auto-filled server name and specify the DNS name or IP address of the target node to which you want to restore. For details about the wizard step, see [Specify Target Server](rman_target.md).
+
+* If you restore a database with different name or settings using Veeam Explorer for Oracle, it will be restored not as a database in a cluster, but as a standalone database. After the restore, you need to add the restored database to the cluster manually. For more information about Oracle settings, see [Specifying Oracle Settings](rman_oracle_settings.md).
+
 Publish
 
 * Make sure that the target Oracle server to which you publish your databases is of the same version as the database in the backup.
@@ -199,4 +211,5 @@ Export
 
 The databases from the Data Guard are exported as standalone Oracle databases, preserving no Data Guard infrastructure.
 
+Page updated 2026-07-08
 
