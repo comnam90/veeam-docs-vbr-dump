@@ -3,8 +3,8 @@ title: "Step 5. Install Missing Software"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/install_vbr_missing.html"
-last_updated: "2/24/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Install Missing Software
@@ -21,4 +21,5 @@ If the setup wizard cannot install some of the required software components auto
 
 ![Step 5. Install Missing Software](images/installation_missing_components.webp)
 
+Page updated 2026-07-21
 
