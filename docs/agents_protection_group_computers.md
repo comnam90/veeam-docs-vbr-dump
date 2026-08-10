@@ -3,8 +3,8 @@ title: "Step 3. Specify Computers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_protection_group_computers.html"
-last_updated: "2/23/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 3. Specify Computers
@@ -30,7 +30,7 @@ If you have not set up credentials beforehand, click the Manage accounts link or
 You can add the following types of credentials:
 
 * Stored credentials. Select stored credentials if you want Veeam Backup & Replication to use the specified user name and password for each connection to Veeam Agent.
-* [For Linux computers] Single-use credentials. Select single-use credentials if you do not want Veeam Backup & Replication to store credentials in the configuration database. With this option selected, Veeam Backup & Replication will use the specified user name and password to deploy Veeam components. After the components are successfully deployed, Veeam Backup & Replication will use Veeam Transport Service to communicate with the Veeam Agent computer.
+* [For Linux and Unix computers] Single-use credentials. Select single-use credentials if you do not want Veeam Backup & Replication to store credentials in the configuration database. With this option selected, Veeam Backup & Replication will use the specified user name and password to deploy Veeam components. After the components are successfully deployed, Veeam Backup & Replication will use Veeam Transport Service to communicate with the Veeam Agent computer.
 
 The user name can be specified in the following formats:
 
@@ -39,7 +39,7 @@ The user name can be specified in the following formats:
 * HOSTNAME\USERNAME — if you use Veeam Backup & Replication on Microsoft Windows
 * DOMAIN\USERNAME — if you use Veeam Backup & Replication on Microsoft Windows
 
-* [For Microsoft Windows and Linux computers] Connect using certificate-based authentication. Select this option, if you chose to pre-install Veeam Deployer Service on the computer that you want to add to the protection group. In this case, Veeam Backup & Replication will connect to the computer using a certificate. Veeam Backup & Replication will install Transport Service that will be used to perform the necessary operations on the computer including upload and installation of Veeam Agent. To learn more, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md).
+* [For Microsoft Windows, Linux and IBM AIX computers] Connect using certificate-based authentication. Select this option, if you chose to pre-install Veeam Deployer Service on the computer that you want to add to the protection group. In this case, Veeam Backup & Replication will connect to the computer using a certificate. Veeam Backup & Replication will install Transport Service that will be used to perform the necessary operations on the computer including upload and installation of Veeam Agent. To learn more, see [Deploying Veeam Agent Using Veeam Deployment Kit](agents_deploy_deployer.md).
 
 If you want to change the connection method after you create a protection group, you can do this by [editing the protection group settings](agents_protection_group_edit.md).
 
@@ -53,4 +53,5 @@ If you want to change the connection method after you create a protection group,
 
 ![Step 3. Specify Computers](images/protection_group_computers.webp "Specify Computers")
 
+Page updated 2026-06-22
 
