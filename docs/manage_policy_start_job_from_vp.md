@@ -3,8 +3,8 @@ title: "Starting Backup Job on Veeam Plug-In Side"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/manage_policy_start_job_from_vp.html"
-last_updated: "11/28/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Starting Backup Job on Veeam Plug-In Side
@@ -33,22 +33,22 @@ If you create an application backup policy for Veeam Plug-In for Oracle RMAN, Ve
 
 Consider that the command differs depending on the OS running on the computer with Veeam Plug-In for Oracle RMAN installed:
 
-* Example for Windows-based computers:
+* Example for Microsoft Windows:
 
 |  |
 | --- |
-| RUN { |
+| RUN {  ALLOCATE CHANNEL VeeamAgentChannel1 DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=%PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN\OracleRMANPlugin.dll' FORMAT 'RMAN\_%I\_%d\_%T\_%U.vab'; BACKUP INCREMENTAL LEVEL 0 DATABASE; } EXIT; |
 
-* Example for Linux- or Unix-based computers:
+* Example for Linux or Unix:
 
 |  |
 | --- |
-| RUN {   ALLOCATE CHANNEL VeeamAgentChannel1  DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so' FORMAT 'RMAN\_%I\_%d\_%T\_%U.vab'; BACKUP INCREMENTAL LEVEL 0 DATABASE; } EXIT; |
+| RUN {  ALLOCATE CHANNEL VeeamAgentChannel1  DEVICE TYPE SBT\_TAPE PARMS 'SBT\_LIBRARY=/opt/veeam/VeeamPluginforOracleRMAN/libOracleRMANPlugin.so' FORMAT 'RMAN\_%I\_%d\_%T\_%U.vab'; BACKUP INCREMENTAL LEVEL 0 DATABASE; } EXIT; |
 
 |  |
 | --- |
 | Important |
-| If you selected the database authentication method during the application backup policy configuration, the backup operation started from the computer with Veeam Plug-In will fail. This happens because the database credentials are not available on the computer with Veeam Plug-In. Veeam Backup & Replication stores the database credentials only in the application backup policy settings. For details, see [Authentication Against Database](rman_auth_methods.md).  As a workaround, you can manually set the database credentials on the computer with Veeam Plug-In using the OracleRMANConfigTool tool. The command to manually set the database credentials differs depending on the OS of the machine where Veeam Plug-In is installed:   * On machines running Linux or Unix OS: OracleRMANConfigTool --set-db-credentials * On machines running Windows OS:  1. On the Oracle server, go to %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN. 2. Run the required OracleRMANConfigTool.exe --set-db-credentials command.   The database credentials that you specified with the tool will be saved in the Veeam Plug-In configuration file (veeam\_config.xml). Veeam Plug-In will use them for backup operations started from the computer with Veeam Plug-In. |
+| If you selected the database authentication method during the application backup policy configuration, the backup operation started from the computer with Veeam Plug-In will fail. This happens because the database credentials are not available on the computer with Veeam Plug-In. Veeam Backup & Replication stores the database credentials only in the application backup policy settings. For details, see [Authentication Against Database](rman_auth_methods.md).  As a workaround, you can manually set the database credentials on the computer with Veeam Plug-In using the OracleRMANConfigTool tool. The command to manually set the database credentials differs depending on the OS of the machine where Veeam Plug-In is installed:   * For Linux or Unix:  1. On the Oracle server, go to /opt/veeam/VeeamPluginforOracleRMAN. 2. Run the OracleRMANConfigTool --set-db-credentials command.  * For Microsoft Windows:  1. On the Oracle server, go to %PROGRAMFILES%\Veeam\VeeamPluginforOracleRMAN. 2. Run the OracleRMANConfigTool.exe --set-db-credentials command.   The database credentials that you specified with the tool will be saved in the Veeam Plug-In configuration file (veeam\_config.xml). Veeam Plug-In will use them for backup operations started from the computer with Veeam Plug-In. |
 
 Veeam Plug-In for SAP HANA
 
@@ -72,4 +72,5 @@ If you create an application backup policy for Veeam Plug-In for Microsoft SQL S
 | Tip |
 | With Veeam Plug-In for Microsoft SQL Server operating in the managed mode, you can still back up an SQL database using a standalone backup job. For details, see [Backing Up SQL Databases with Standalone Backup Job](mssql_configure_backup_exclude_from_managed.md). |
 
+Page updated 2026-07-31
 
