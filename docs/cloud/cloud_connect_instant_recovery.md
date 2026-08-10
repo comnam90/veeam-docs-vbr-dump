@@ -3,8 +3,8 @@ title: "Instant Recovery from Tenant Backups"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_instant_recovery.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Instant Recovery from Tenant Backups
@@ -22,7 +22,7 @@ To use this functionality, the SP and tenant must make sure that the following c
 | For Veeam Agent users, consider that to display on the SP side backups created by Veeam Agent in the standalone mode, a backup server connected to the SP with the Allow this Veeam Backup & Replication installation to be managed by the service provider option enabled is required. |
 
 * The target VMware vSphere host where the SP plans to register the recovered VMs must be added to the Veeam Backup & Replication infrastructure on the SP backup server.
-* Veeam Cloud Connect supports Instant Recovery from unencrypted backups only.
+* Veeam Cloud Connect supports Instant Recovery from encrypted tenant backups only if the tenant has granted the SP restore access to all backups. For details, see [Access to Tenant Backups](cc_sp_restore_access.md).
 
 Instant Recovery from tenant backups works in the similar way as the regular one. For more information, see the [Instant Recovery to VMware vSphere](https://helpcenter.veeam.com/docs/vbr/userguide/instant_recovery.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
@@ -39,7 +39,7 @@ Note that Veeam Cloud Connect supports Instant Recovery to VMware vSphere only. 
 
 [For backups in the archive tier] The Instant Recovery operation will be pending until the backed-up data is retrieved from the archive tier. Data retrieval time may take from several minutes to several hours depending on the object storage system and data retrieval method. During this time, the tenant account will be in the disabled state. For more information on data retrieval cost and speed, see the [Data Retrieval](https://helpcenter.veeam.com/docs/vbr/userguide/archive_tier_retrieval.html?ver=13) section in the Veeam Backup & Replication User Guide.
 
-Note that after Instant Recovery, the tenant account remains in the disabled state. The SP needs to manually enable the tenant account. For details, see [Disabling and Enabling Tenant Accounts](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_disable_account.html?ver=120).
+Note that after Instant Recovery, the tenant account remains in the disabled state. The SP needs to manually enable the tenant account. For details, see [Disabling and Enabling Tenant Accounts](https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_disable_account.html?ver=13).
 
 * Migration of a recovered VM back to the tenant production site is unavailable. The SP can finalize the Instant Recovery process by migrating the VM to the SP virtual environment.
 * Separate prerequisites and limitations apply to Instant Recovery from VM backups and Instant Recovery from Veeam Agent backups. For details, see the following sections in the Veeam Backup & Replication documentation:
@@ -58,4 +58,5 @@ Related Tasks
 
 [Performing Instant Recovery from Tenant Backups](cc_perform_instant_recovery.md)
 
+Page updated 2026-07-29
 
