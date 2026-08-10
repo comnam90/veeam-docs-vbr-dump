@@ -3,16 +3,18 @@ title: "Considerations and Limitations"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/linux_infrastructure_appliance_byb.html"
-last_updated: "4/28/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Considerations and Limitations
 
 
+Veeam Infrastructure Appliances
+
 Before you install Veeam Infrastructure Appliance, consider the following:
 
-* You can assign the following roles to a machine deployed with Veeam Infrastructure Appliance:
+* You can assign the following roles to a machine deployed with Veeam Infrastructure Appliance:
 
 * [Virtualization Server and Host](setup_add_server.md)
 * [Backup Proxy](proxies.md)
@@ -49,9 +51,10 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * UEFI Secure Boot must be enabled.
 
 * SSDs are strongly recommended for machines with the backup repository or hardened repository role assigned.
+* It is strongly recommended that you disable the Host Management console Web UI on Veeam Infrastructure Appliance Hardened Repositories. This reduces the potential security attack surface.
 * Veeam Infrastructure Appliance cannot be installed on machines that have multipath storage devices.
 * Veeam Infrastructure Appliance installation and initial configuration support only the English US keyboard layout.
-* When you install Veeam Infrastructure Appliance, the Rocky Linux operating system is installed with predefined settings, including volume partitioning and user account creation. After installation is complete, you need to proceed with the initial configuration of Veeam Infrastructure Appliance, which includes setting up default user accounts and basic system settings.
+* When you install Veeam Infrastructure Appliance, the Rocky Linux operating system is installed with predefined settings, including volume partitioning and user account creation. After installation is complete, you need to proceed with the initial configuration of Veeam Infrastructure Appliance, which includes setting up default user accounts and basic system settings.
 * After you deploy a Veeam Infrastructure Appliance, adding new storage devices or resizing existing ones is not supported.
 
 * You cannot install third-party software on a Veeam Infrastructure Appliance.
@@ -75,4 +78,10 @@ Before you install Veeam Infrastructure Appliance, consider the following:
 * [V-257937](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-257937) — The RHEL 9 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems.
 * [V-258122](https://www.stigviewer.com/stigs/red_hat_enterprise_linux_9/2025-05-14/finding/V-258122) — RHEL 9 must enable certificate based smart card authentication.
 
+Veeam Single Disk Appliances
+
+* During the installation of a Veeam Single Disk Appliance, all local disks connected to the machine are formatted.
+* During the reinstallation of a Veeam Single Disk Appliance, only the system disk is formatted.
+
+Page updated 2026-07-29
 
