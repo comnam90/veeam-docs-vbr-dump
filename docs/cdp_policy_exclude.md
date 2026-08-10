@@ -3,8 +3,8 @@ title: "Step 4. Exclude Objects"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/cdp_policy_exclude.html"
-last_updated: "8/20/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Exclude Objects
@@ -50,4 +50,5 @@ To exclude VM disks:
 
 ![Step 4. Exclude Objects](images/cdp_policy_exclude_disk.webp "Exclude disks")
 
+Page updated 2026-06-25
 
