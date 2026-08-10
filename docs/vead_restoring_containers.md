@@ -3,22 +3,17 @@ title: "Restoring Containers"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vead_restoring_containers.html"
-last_updated: "9/26/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restoring Containers
 
 
-To restore Active Directory containers, do the following:
+You can restore containers in the Veeam Explorer for Microsoft Active Directory console by following one of these scenarios:
 
-1. [Launch the Restore wizard](vead_restore_wizard_2.md).
-2. [Specify connection parameters](vead_parameters_containers.md).
-3. [Specify the restore location](vead_location_containers.md).
-4. [Specify password restore options](vead_password_containers.md).
-5. [Specify the account state](vead_account_state_containers.md).
-6. [Specify restore options](vead_options_containers.md).
-7. [Specify attributes to restore](vead_restore_attr_containers.md).
-8. [Review the restore summary](vead_restore_containers_summary.md).
+* [Restoring Containers to Original Location](vead_one_click_restore_containers.md)
+* [Restoring Containers to Another Location](vead_restore_containers_tas.md)
 
+Page updated 2026-05-26
 
