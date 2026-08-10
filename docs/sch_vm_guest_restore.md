@@ -3,8 +3,8 @@ title: "Performing File-Level Restore"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_vm_guest_restore.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing File-Level Restore
@@ -25,8 +25,9 @@ Alternatively, you can select the VM and click Restore Guest Files on the ribbon
 |  |
 | --- |
 | Note |
-| Depending on the operating system of a VM whose files and folders you want to restore, Veeam Backup & Replication may require a [mount host](guest_file_recovery.md) — a server that will be used to mount VM disks. While completing the Guest File Restore wizard, you will be able either to choose a server already added to the backup infrastructure or to specify connection settings of a new server that will used as the mount host. For more information on how Veeam Backup & Replication selects mount hosts, see [Mount Host Automatic Selection](guest_restore_scenarios.md). |
+| Depending on the operating system of a VM whose files and folders you want to restore, Veeam Backup & Replication may require a [mount host](guest_file_recovery.md) — a server that will be used to mount VM disks. While completing the Guest File Restore wizard, you will be able either to choose a server already added to the backup infrastructure or to specify connection settings of a new server that will be used as the mount host. For more information on how Veeam Backup & Replication selects mount hosts, see [Mount Host Automatic Selection](guest_restore_scenarios.md). |
 
 [![VM Guest OS Files Restore](images/sch_vm_guest_restore.webp)](images/sch_vm_guest_restore.webp "VM Guest OS Files Restore")
 
+Page updated 2026-07-16
 
