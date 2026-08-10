@@ -3,8 +3,8 @@ title: "filter"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/filter.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # filter
@@ -26,4 +26,5 @@ where <filterCriteria> is a logical expression that combines the following eleme
 * [Optional] [Logical Operators: AND, OR](query_and_or.md)
 * [Optional] [Grouping operators](query_grouping.md)
 
+Page updated 2026-07-29
 
