@@ -1,13 +1,13 @@
 ---
-title: "Retention Policy"
+title: "Short-Term Retention Policy"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/mssql_retention.html"
-last_updated: "3/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Retention Policy
+# Short-Term Retention Policy
 
 
 Veeam Plug-In allows you to configure retention policy for Microsoft SQL Server backups. The retention policy helps maintain the life cycle of restore points and make sure that backup files do not consume the entire space on the backup repository.
@@ -24,4 +24,5 @@ Related Task
 
 [Configuring Retention Policy](plugins_mssql_retention_policy.md)
 
+Page updated 2026-06-05
 
