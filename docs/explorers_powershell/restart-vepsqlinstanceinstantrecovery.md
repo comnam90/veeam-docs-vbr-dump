@@ -3,8 +3,8 @@ title: "Restart-VEPSQLInstanceInstantRecovery"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/restart-vepsqlinstanceinstantrecovery.html"
-last_updated: "1/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Restart-VEPSQLInstanceInstantRecovery
@@ -32,13 +32,14 @@ This cmdlet restarts a failed instant recovery process for a PostgreSQL instance
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Instance | Specifies the PostgreSQL instance with an ongoing instant recovery session. The cmdlet will restart the instant recovery process for this instance. | Accepts the [VEPSQLInstanceInstantRecovery](vepsqlinstanceinstantrecovery.md) object. To get this object, run the [Get-VEPSQLInstanceInstantRecovery](get-vepsqlinstanceinstantrecovery.md) cmdlet. | True | 0 | True (ByValue) |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -63,4 +64,5 @@ Related Commands
 
 [Get-VEPSQLInstanceInstantRecovery](get-vepsqlinstanceinstantrecovery.md)
 
+Page updated 2026-01-30
 
