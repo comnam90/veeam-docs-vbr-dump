@@ -3,8 +3,8 @@ title: "GET /hierarchyRoots/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_hierarchyroots_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /hierarchyRoots/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,20 +60,22 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the hierarchy root resource, for example: urn:veeam:HierarchyRoot:195c7259-8d89-4f6e-9098-25ee1f432669. |
 | Name | String | Name of the hierarchy root resource, for example: 172.16.12.21. |
 | HierarchyRootId | String | ID of the hierarchy root resource, for example: 195c7259-8d89-4f6e-9098-25ee1f432669. |
 | UniqueId | String | Unique ID of the hierarchy root, or virtualization host (for example, vCenter InstanceUUID or DNS name of the Hyper-V host). |
 | HostType | String | Type of the virtualization host. Possible values:   * ESX * VC * ESXi * HvServer * HvCluster * Scvmm * VcdSystem |
 
-To view query parameters that you can use for filtering or sorting, see  [GET /query?type=HierarchyRoot](get_query_hierarchyroot.md).
+To view query parameters that you can use for filtering or sorting, see [GET /query?type=HierarchyRoot](get_query_hierarchyroot.md).
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server that contains the hierarchy root in the backup infrastructure. |
 | /hierarchyRoots/{ID} | Alternate | Alternate URL of the [/hierarchyRoots/{ID}](hierarchyroots_id.md) resource. |
 | /managedServers/{ID} | Related | URL of the [/managedServers/{ID}](managedservers_id.md) resource — a managed server resource related to the hierarchy root. |
@@ -82,6 +86,7 @@ The example below returns an entity representation of a virtualization host havi
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/hierarchyRoots/d68c782f-ec0a-4bf3-b3c1-04c552b64fdf?format=Entity    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <?xml version="1.0" encoding="utf-8"?> |
+| Request:  GET https://localhost:9398/api/hierarchyRoots/d68c782f-ec0a-4bf3-b3c1-04c552b64fdf?format=Entity  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <?xml version="1.0" encoding="utf-8"?> <HierarchyRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Href="https://enterprise04.tech.local:9398/api/hierarchyRoots/d68c782f-ec0a-4bf3-b3c1-04c552b64fdf?format=Entity" Type="HierarchyRoot" Name="vcenter01.tech.local" UID="urn:veeam:HierarchyRoot:d68c782f-ec0a-4bf3-b3c1-04c552b64fdf" xmlns="http://www.veeam.com/ent/v1.0">     <Links>         <Link Href="https://enterprise04.tech.local:9398/api/backupServers/a490c017-2c1c-40ee-8bcf-73bcce6ab36f" Name="enterprise01.tech.local" Type="BackupServerReference" Rel="Up" />         <Link Href="https://enterprise04.tech.local:9398/api/hierarchyRoots/d68c782f-ec0a-4bf3-b3c1-04c552b64fdf" Name="vcenter01.tech.local" Type="HierarchyRootReference" Rel="Alternate" />         <Link Href="https://enterprise04.tech.local:9398/api/managedServers/d68c782f-ec0a-4bf3-b3c1-04c552b64fdf?format=Entity" Name="vcenter01.tech.local" Type="ManagedServer" Rel="Related" />     </Links>     <HierarchyRootId>d68c782f-ec0a-4bf3-b3c1-04c552b64fdf</HierarchyRootId>     <UniqueId>13660d26-9451-41ea-88f4-ca4aca217dff</UniqueId>     <HostType>VC</HostType> </HierarchyRoot> |
 
+Page updated 2026-07-29
 
