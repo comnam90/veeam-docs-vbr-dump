@@ -3,8 +3,8 @@ title: "Data Publishing"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesql_data_publishing.html"
-last_updated: "2/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Data Publishing
@@ -29,4 +29,5 @@ In This Section
 * [Unpublishing Databases](vesql_unpublishing.md)
 * [Refreshing Database Status](vesql_refreshing_published_database.md)
 
+Page updated 2026-06-01
 
