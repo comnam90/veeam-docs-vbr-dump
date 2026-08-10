@@ -3,8 +3,8 @@ title: "Veeam PowerShell Types"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/veeam_powershell_types.html"
-last_updated: "12/5/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam PowerShell Types
@@ -18,6 +18,7 @@ Veeam PowerShell uses the following types:
 * [VBRADCustomCredentials](vbradcustomcredentials.md)
 * [VBRADDomain](vbraddomain.md)
 * [VBRADEntity](vbradentity.md)
+* [VBRADForest](vbradforest.md)
 * [VBRAmazonS3Repository](vbramazons3repository.md)
 * [VBRApplicationRestorePoint](vbrapplicationrestorepoint.md)
 * [VBRAzureAccount](vbrazureaccount.md)
@@ -186,5 +187,7 @@ Veeam PowerShell uses the following types:
 * [VBRViReplicaReIpRule](vbrvireplicareiprule.md)
 * [VBRViStoragePolicy](vbrvistoragepolicy.md)
 * [VBRViVirtualSwitch](vbrvivirtualswitch.md)
+* [VBRViVM](vbrvivm.md)
 
+Page updated 2026-05-27
 
