@@ -1,35 +1,32 @@
 ---
-title: "Performing VM Restore"
+title: "Performing VM Restore Using Console"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/pve_restore_entire_vm.html"
-last_updated: "4/21/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Performing VM Restore
+# Performing VM Restore Using Console
 
 
-In case of a disaster, you can restore an entire Proxmox VE VM from a backup. Veeam Backup & Replication allows you to restore one or more VMs at a time, to the original location or to a new location.
+In case a disaster strikes, you can restore an entire Proxmox VE VM from a backup. Veeam Backup & Replication allows you to restore one or more VMs at a time, to the original location or to a new location.
 
 To restore machines to Proxmox VE, you can use the following backups:
 
 * Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE
-
 * Backups of Nutanix AHV VMs created by Veeam Plug-in for Nutanix AHV
-
-* Backups of oVirt KVM VMs created by Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization
-
-* Backups of Scale Computing HyperCore VMs created by Veeam Plug-in for Scale Computing HyperCore
-
+* Backups of HPE Morpheus VM Essentials VMs created by Veeam Plug-in for HPE Morpheus VM Essentials
+* Backups of oVirt VMs created by Veeam Plug-in for oVirt KVM
+* Backups of Scale Computing HyperCore VMs created by Veeam Plug-in for Sangfor aSV
+* Backups of Sangfor aSV VMs created by Veeam Plug-in for Sangfor aSV
+* Backups of Xen and XCP-ng VMs created by Veeam Plug-in for Xen
+* Backups of VMs residing on universal hypervisors created by Veeam Plug-in for Universal Hypervisor API
 * Backups of Microsoft Hyper-V and VMware vSphere VMs created by Veeam Backup & Replication
-
-* Backups of VMs created by vCloud Director
-* Backups of Amazon EC2 instances created by Veeam Backup for AWS
-
-* Backups of Microsoft Azure VMs created by Veeam Backup for Microsoft Azure
-* Backups of Google Cloud VM instances created by Veeam Backup for Google Cloud
-
+* Backups of VMware Cloud Director VMs created by Veeam Backup & Replication
+* Backups of Amazon EC2 instances created by Veeam Plug-in for AWS
+* Backups of Microsoft Azure VMs created by Veeam Plug-in for Microsoft Azure
+* Backups of Google Cloud VM instances created by Veeam Plug-in for Google Cloud
 * Backups of virtual and physical machines created by Veeam Agent for Microsoft Windows and Veeam Agent for Linux
 
 VM restore is supported only for backups stored in backup repositories, object storage repositories and on the performance, capacity and archive tier of a scale-out backup repository (except for backups stored in the archive tier that consists of the Amazon S3 Glacier Instant Retrieval extent).
@@ -51,4 +48,5 @@ To restore a protected VM, do the following:
 8. [Specify a restore reason](pve_restore_entire_vm_reason.md).
 9. [Verify restore settings](pve_restore_entire_vm_summary.md).
 
+Page updated 2026-07-27
 

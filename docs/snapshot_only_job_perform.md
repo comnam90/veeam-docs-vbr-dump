@@ -3,8 +3,8 @@ title: "Configuring Snapshot-Only Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/snapshot_only_job_perform.html"
-last_updated: "3/17/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Snapshot-Only Jobs
@@ -110,4 +110,5 @@ The freeze-only VMs (those VMs for which a VMware snapshot was not created) are 
 | Tip |
 | To learn which VMs were processed by a snapshot job (a snapshot-only job or a backup job with storage snapshot retention) open the Storage Infrastructure view and navigate to the necessary storage snapshot. If a VM was processed by a snapshot job, Veeam Backup & Replication displays the job name in the Protected by column. |
 
+Page updated 2026-08-04
 

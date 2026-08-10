@@ -1,0 +1,51 @@
+---
+title: "Granting User Permissions on Linux and Unix Machines"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/db2_permissions_to_users_linux.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Granting User Permissions on Linux and Unix Machines
+
+
+On Linux and Unix machines, you can set up access to the plug-in configuration file in the command line interface.
+
+By default, the Veeam Plug-In configuration file (veeam\_config.xml) is located in the /opt/veeam/VeeamPluginforDB2 directory on the machine where Veeam Plug-In is installed. To grant access to the configuration file to a dedicated group of users, do the following:
+
+1. Create a new user group by running the following command:
+
+|  |
+| --- |
+| sudo groupadd <groupName> |
+
+where <groupName> is the name of the created group.
+
+1. Add a user to the group with the following command:
+
+|  |
+| --- |
+| sudo usermod -a -G <groupName> <userName> |
+
+where:
+
+* <groupName> is the name of the created group.
+* <userName> is the name of the account that will be granted access to the configuration file.
+
+1. Change the ownership of the configuration file to enable users from the dedicated group to access the configuration file. To do this, run the following command:
+
+|  |
+| --- |
+| sudo chgrp <groupName> /opt/veeam/VeeamPluginforDB2/veeam\_config.xml |
+
+where <groupName> is the name of the created group.
+
+1. Limit the permissions for the configuration file to allow the read-write access only to the members of the group. To do this, use the following command:
+
+|  |
+| --- |
+| sudo chmod 660 /opt/veeam/VeeamPluginforDB2/veeam\_config.xml |
+
+Page updated 2026-07-08
+

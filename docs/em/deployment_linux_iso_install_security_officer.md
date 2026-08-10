@@ -3,8 +3,8 @@ title: "Step 9. Configure Security Officer Account"
 product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/deployment_linux_iso_install_security_officer.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 9. Configure Security Officer Account
@@ -39,4 +39,5 @@ When a security officer first logs in to the Host Management console, they must 
 
 ![Step 9. Configure Security Officer Account](images/deployment_iso_install_security_officer_password.webp)
 
+Page updated 2026-06-23
 

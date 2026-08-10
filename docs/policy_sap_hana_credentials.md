@@ -1,13 +1,13 @@
 ---
-title: "Step 6. Specify Credentials"
+title: "Step 7. Specify Credentials"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_sap_hana_credentials.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Step 6. Specify Credentials
+# Step 7. Specify Credentials
 
 
 At the Credentials step of the wizard, specify credentials that Veeam Plug-In will use to connect to the database:
@@ -20,6 +20,7 @@ At the Credentials step of the wizard, specify credentials that Veeam Plug-In wi
 | Note |
 | Make sure the specified user accounts have the required [permissions](plan_and_manage_permissions.md#hana). |
 
-![Step 6. Specify Credentials](images/plugins_policy_sap_hana_credentials.webp)
+![Step 7. Specify Credentials](images/plugins_policy_sap_hana_credentials.webp)
 
+Page updated 2026-06-30
 

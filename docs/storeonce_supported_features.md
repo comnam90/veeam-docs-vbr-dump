@@ -3,8 +3,8 @@ title: "HPE StoreOnce Supported Features"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/storeonce_supported_features.html"
-last_updated: "5/6/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # HPE StoreOnce Supported Features
@@ -30,7 +30,7 @@ Veeam Backup & Replication provides advanced support for WAN-based HPE Catalyst 
 
 HPE StoreOnce Replication
 
-HPE StoreOnce replication improves copying data between two HPE StoreOnce backup repositories. For more information on copying, see [Creating Backup Copy Jobs for HPE StoreOnce Repositories](backup_copy_hpe_storeonce.md).
+HPE StoreOnce replication improves copying data between two HPE StoreOnce backup repositories. For more information on copying, see [Creating Backup Copy Jobs for HPE StoreOnce Repositories](storage_copy_create.md).
 
 Independent Software Vendor (ISV) Controlled Data Immutability (ISV-DI)
 
@@ -66,13 +66,12 @@ For more information on issue that can occur, see [this Veeam KB article](https:
 
 Cloud Bank Storage
 
-Veeam Backup & Replication supports HPE Cloud Bank Storage for HPE StoreOnce software version 4.3.2 or later. HPE Cloud Bank Storage is an extension of HPE StoreOnce Catalyst that uses external object storage to store backup data. It is possible to use HPE Cloud Bank Storage as a target for [backup copy jobs for HPE StoreOnce repositories](backup_copy_hpe_storeonce.md). This helps to reduce long-term retention costs.
+Veeam Backup & Replication supports HPE Cloud Bank Storage for HPE StoreOnce software version 4.3.2 or later. HPE Cloud Bank Storage is an extension of HPE StoreOnce Catalyst that uses external object storage to store backup data. It is possible to use HPE Cloud Bank Storage as a target for [backup copy jobs for HPE StoreOnce repositories](storage_copy_create.md). This helps to reduce long-term retention costs.
 
 Veeam Backup & Replication can also use HPE Cloud Bank Storage located on HPE Alletra Storage MP X10000 as the target for backup jobs and backup copy jobs. The following list shows the supported platforms, products and operations:
 
-* Backup and backup copy: [VMware vSphere](vmware_vsphere.md), [Microsoft Hyper-V](ms_hyperv.md).
-* Experimental support for backup copy: [VMware Cloud Director](vcloud_director.md) , [Kasten](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13), [MongoDB](mongo_backup.md), [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*, [Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9), [Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3), [Veeam Agents](protect_comp.md).
-* Experimental support for backup and backup copy: [Veeam Plug-Ins for Enterprise Applications](protect_applications.md) (except for MongoDB Backup).
+* Backup and backup copy: [VMware vSphere](vmware_vsphere.md), [Microsoft Hyper-V](ms_hyperv.md), [VMware Cloud Director](vcloud_director.md), [MongoDB](mongo_backup.md), [Veeam Plug-Ins for Enterprise Applications](protect_applications.md), [Veeam Plug-In for oVirt KVM](https://helpcenter.veeam.com/docs/vbrhv/userguide/overview.html?ver=7)\*, [Nutanix AHV](https://helpcenter.veeam.com/docs/vbahv/userguide/overview.html?ver=9), [Proxmox VE](https://helpcenter.veeam.com/docs/vbproxmoxve/userguide/overview.html?ver=3), [Veeam Agents](protect_comp.md), [unstructured data](unstructured_data_backup.md) and [VeeamZIP](veeamzip.md).
+* Backup copy only: [Kasten](https://helpcenter.veeam.com/docs/vbr/kasten_integration/overview.html?ver=13).
 
 \*This feature is available for Microsoft Windows-based backup servers.
 
@@ -82,4 +81,5 @@ Related Topics
 * [Operational Modes](deduplicating_appliance_storeonce_modes.md)
 * [Adding Deduplicating Storage Appliances](dsa_repository_add.md)
 
+Page updated 2026-07-30
 

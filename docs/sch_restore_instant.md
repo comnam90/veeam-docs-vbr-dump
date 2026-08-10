@@ -3,14 +3,14 @@ title: "Performing Instant VM Recovery"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/sch_restore_instant.html"
-last_updated: "2/26/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Performing Instant VM Recovery
 
 
-With Instant VM Recovery, you can immediately restore Scale Computing HyperCore VMs as VMware vSphere, Microsoft Hyper-V or Nutanix AHV VMs to your production environment by running them directly from their backups. Instant VM Recovery helps you improve recovery time objectives and minimize disruption and downtime of production workloads. For more information on Instant VM Recovery, see [VM Recovery](vm_restores.md).
+With Instant VM Recovery, you can immediately restore Scale Computing HyperCore VMs as VMware vSphere, Microsoft Hyper-V, Nutanix AHV or Proxmox VE VMs to your production environment by running them directly from their backups. Instant VM Recovery helps you improve recovery time objectives and minimize disruption and downtime of production workloads. For more information on Instant VM Recovery, see [VM Recovery](vm_restores.md).
 
 |  |
 | --- |
@@ -31,4 +31,5 @@ Alternatively, you can expand the necessary backup job, select the VM and click 
 
 [![Instant VM Recovery](images/sch_restore_instant.webp)](images/sch_restore_instant.webp "Instant VM Recovery")
 
+Page updated 2026-07-08
 

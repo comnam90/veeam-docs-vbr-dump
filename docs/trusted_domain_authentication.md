@@ -3,8 +3,8 @@ title: "Trusted Domain Authentication"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/trusted_domain_authentication.html"
-last_updated: "12/11/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Trusted Domain Authentication
@@ -24,5 +24,7 @@ Before you use trusted domain authentication, consider the following:
 * When using one-way relationships, authentication is possible if the trust direction allows the Veeam Backup & Replication backup server domain to validate credentials from the trusted domain.
 * When you log in to the Veeam Backup & Replication console using trusted domain authentication, you can use the Remember Me check box only if there is a two-way relationship between the domains.
 * For authentication with Active Directory user accounts, the accounts must have the User logon name attribute populated in the Active Directory Users and Computers MMC snap-in.
+* The computer account of the backup server must have permissions to read the Active Directory attributes of the accounts that authenticate to Veeam Backup & Replication. For details on the required attributes, see [Installation and Usage of Veeam Backup & Replication](permissions_installing.md#rpvbr).
 
+Page updated 2026-08-04
 

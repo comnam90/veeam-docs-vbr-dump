@@ -3,8 +3,8 @@ title: "Veeam Agent Backup Jobs and Policies"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_job_mode.html"
-last_updated: "3/13/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Veeam Agent Backup Jobs and Policies
@@ -36,7 +36,7 @@ Veeam Backup & Replication lets you create the following types of backup jobs an
 
 * Backup jobs and policies that process Microsoft Windows computers. For such Veeam Agent backup jobs, Veeam Backup & Replication offers settings supported in Veeam Agent for Microsoft Windows.
 * Backup jobs and policies that process Linux computers. For such Veeam Agent backup jobs, Veeam Backup & Replication offers settings supported in Veeam Agent for Linux.
-* Backup policies that process Unix computers. For such Veeam Agent backup policies, Veeam Backup & Replication offers settings supported in Veeam Agent for IBM AIX and Veeam Agent for Oracle Solaris.
+* Backup jobs and policies that process Unix computers. For such Veeam Agent backup jobs, Veeam Backup & Replication offers settings supported in Veeam Agent for IBM AIX and Veeam Agent for Oracle Solaris.
 * Backup policies that process Mac computers. For such Veeam Agent backup policies, Veeam Backup & Replication offers settings supported in Veeam Agent for Mac.
 
 If a protection group contains Microsoft Windows computers and Linux computers, you can add this protection group to a Veeam Agent backup job intended for any of these types of protected computers. Veeam Backup & Replication will automatically exclude computers of another type from the backup job and processes only those computers that run an OS of the same type.
@@ -61,4 +61,5 @@ Related Tasks
 * [Creating Veeam Agent Backup Jobs](agent_job_create.md)
 * [Creating Veeam Agent Backup Policies](agent_policy.md)
 
+Page updated 2026-07-16
 

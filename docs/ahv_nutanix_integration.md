@@ -3,8 +3,8 @@ title: "VM Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_nutanix_integration.html"
-last_updated: "1/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # VM Backup
@@ -20,7 +20,7 @@ How to Protect VMs
 2. [Add backup repositories](ahv_configure_repository.md).
 3. [Connect the Nutanix AHV server](ahv_managing_clusters.md).
 4. [Configure worker settings](ahv_workers_add.md).
-5. [Complete the New Backup Job wizard](ahv_backup_job_create.md).
+5. [Complete the New Backup Job wizard](ahv_data_protection.md).
 
 How VM Backup Works
 
@@ -54,4 +54,5 @@ Related Topics
 
 * [Retention Policies](ahv_retention_policy.md)
 
+Page updated 2026-03-18
 

@@ -3,14 +3,14 @@ title: "Backup Retention"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/hpe_backup_retention.html"
-last_updated: "1/21/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Retention
 
 
-Veeam Backup & Replication retains the number of latest restore points defined in job scheduling settings as described in section [Creating Backup Jobs](hpe_backup_job_create_destination.md). For backup chains created by jobs without scheduled active or synthetic full backups, Veeam Backup & Replication applies forever forward incremental backup retention policy. For backup chains created by jobs that regularly produce active or synthetic full backups, Veeam Backup & Replication applies forward incremental backup retention policy.
+Veeam Backup & Replication retains restore points for the number of days defined in job scheduling settings as described in section [Creating Backup Jobs](hpe_backup_job_create_destination.md). For backup chains created by jobs without scheduled active or synthetic full backups, Veeam Backup & Replication applies forever forward incremental backup retention policy. For backup chains created by jobs that regularly produce active or synthetic full backups, Veeam Backup & Replication applies forward incremental backup retention policy.
 
 |  |
 | --- |
@@ -24,7 +24,7 @@ To track and remove redundant restore points from a forever forward incremental 
 1. Veeam Backup & Replication checks the configuration database to detect backup chains with restore points that are older than the specified time limit.
 2. If a redundant restore point exists in a backup chain, Veeam Backup & Replication transforms the backup chain in the following way:
 
-1. Rebuilds the full backup to include there data of the incremental backup that follows the full backup. To do that, Veeam Backup & Replication injects into the full backup data blocks from the earliest incremental backup in the chain. This way, the full backup ‘moves’ forward in the standard backup chain.
+1. Rebuilds the full backup to include the data of the incremental backup that follows the full backup. To do that, Veeam Backup & Replication injects into the full backup data blocks from the earliest incremental backup in the chain. This way, the full backup ‘moves’ forward in the standard backup chain.
 
 ![Backup Retention](images/vplugins_backup_retention_injecting_blocks.webp)
 
@@ -47,4 +47,5 @@ To track and remove redundant restore points from a forward incremental backup c
 
 ![Backup Retention](images/vplugins_retention_policy_forward.webp)
 
+Page updated 2026-07-22
 

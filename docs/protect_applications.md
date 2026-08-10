@@ -3,8 +3,8 @@ title: "Databases and Enterprise Applications"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protect_applications.html"
-last_updated: "3/31/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Databases and Enterprise Applications
@@ -14,7 +14,8 @@ Veeam Backup & Replication allows you to protect data from various applications 
 
 Databases and Enterprise Applications
 
-| Database or Application | Image-Level Backup with Application-Aware Processing | Database-Level Backup with Veeam Plug-Ins or MongoDB Backup |
+| Database or Application | Image-Level Backup with Application-Aware Processing | Database-Level Backup with Backup Solutions for Enterprise Applications |
+| Epic EHR System | - | [Epic EHR System Protection](iris_backup.md) |
 | IBM Db2 | - | [Veeam Plug-In for IBM Db2](db2_plugin.md) |
 | Microsoft Active Directory | [Veeam Backup & Replication](application_aware_processing.md) | - |
 | Microsoft Exchange | [Veeam Backup & Replication](application_aware_processing.md) | - |
@@ -22,7 +23,7 @@ Databases and Enterprise Applications
 | Microsoft SQL Server | [Veeam Backup & Replication](application_aware_processing.md) | [Veeam Plug-In for Microsoft SQL Server](mssql_plugin.md) |
 | MongoDB | - | [MongoDB Backup](mongo_backup.md) |
 | MySQL | [Veeam Agent for Linux](agents_backup_linux_dbs_processing.md) | - |
-| Oracle | [Veeam Backup & Replication](application_aware_processing.md), | [Veeam Plug-In for Oracle RMAN](rman_plugin.md), |
+| Oracle | [Veeam Backup & Replication](application_aware_processing.md),  [Veeam Agent for Linux](agents_backup_linux_dbs_processing.md) | [Veeam Plug-In for Oracle RMAN](rman_plugin.md),  [Veeam Plug-In for SAP on Oracle](sap_orcl_plugin.md) |
 | PostgreSQL | [Veeam Backup & Replication](application_aware_processing.md),  [Veeam Agent for Linux](agents_backup_linux_dbs_processing.md) | - |
 | SAP HANA | - | [Veeam Plug-In for SAP HANA](sap_hana_plugin.md) |
 | SAP MaxDB | - | [Veeam Plug-In for SAP MaxDB](plugins_sap_maxdb.md) |
@@ -32,4 +33,5 @@ In This Section
 * [Image-Level Backup](protect_applications_image.md)
 * [Database-Level Backup](protect_applications_db.md)
 
+Page updated 2026-07-30
 

@@ -3,8 +3,8 @@ title: "Appendix B. Configuring Bus Type Restore Priority"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_bus_type_restore_order.html"
-last_updated: "1/26/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Appendix B. Configuring Bus Type Restore Priority
@@ -21,9 +21,10 @@ You can modify the default priority to define the order in which Veeam Plug-in f
 
 Consider the following example. You want to restore a VMware VM that originally had 30 SATA disks and 2 IDE disks. Depending on the bus type restore priority, Veeam Plug-in for Nutanix AHV will attach disks to the following nodes of the target VM:
 
+Appendix B. Configuring Bus Type Restore Priority
+
 | Bus Type Priority | Ignore Original Bus | Target VM Disk Nodes |
-| --- | --- | --- |
-| SATA, SCSI, IDE, PCI | False | * 6 SATA (originally, 6 SATA) * 24 SCSI (originally, 24 SATA) * 2 IDE (originally) * 0 PCI |
+| SATA, SCSI, IDE, PCI (default) | False | * 6 SATA (originally, 6 SATA) * 24 SCSI (originally, 24 SATA) * 2 IDE (originally) * 0 PCI |
 | SATA, IDE, PCI, SCSI | False | * 6 SATA (originally, 6 SATA) * 4 IDE (originally, 2 IDE and 2 SATA) * 7 PCI (originally, 7 SATA) * 15 SCSI (originally, 15 SATA) |
 | SCSI, IDE, PCI, SATA | False | * 24 SCSI (originally, 24 SATA) * 2 IDE  (originally, 2 IDE) * 0 PCI * 6 SATA (originally, 6 SATA) |
 | SCSI, IDE, PCI, SATA | True | * 32 SCSI (originally, 30 SATA and 2 IDE) * 0 IDE * 0 PCI * 0 SATA |
@@ -65,7 +66,7 @@ To modify the default bus type restore priority on a Windows-based backup server
 2. Open a plain text editor (for example, Notepad) as Administrator.
 3. In the editor, open the appsettings.json file located in the {plug-in location}\Service folder.
 
-The default location of Nutanix AHV plug-in is C:\Program Files\Veeam\Plugins\Nutanix AHV. However, the location may differ depending on the [specified setup settings](ahv_install_ahv_services.md).
+The default location of Nutanix AHV plug-in is C:\Program Files\Veeam\Plugins\Nutanix AHV. However, the location may differ depending on the specified setup settings.
 
 1. Locate the RestoreDefaults configuration section.
 
@@ -84,4 +85,5 @@ To change the bus type priority, update the following parameter value:
 1. Save the appsettings.json file.
 2. Restart the Veeam AHV Service.
 
+Page updated 2026-07-29
 

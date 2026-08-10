@@ -3,8 +3,8 @@ title: "Save-VBRUnstructuredBackupFLRItem"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/save-vbrunstructuredbackupflritem.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Save-VBRUnstructuredBackupFLRItem
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Save-VBRUnstructuredBackupFLRItem -Item <VBRUnstructuredBackupFLRItem[]> -Path <String> -Server <VBRUnstructuredServer> [-PreservePermissions] [-RunAsync]  [<CommonParameters>] |
+| Save-VBRUnstructuredBackupFLRItem -Item <VBRUnstructuredBackupFLRItem[]> -Path <String> -Server <VBRUnstructuredServer> [-PreservePermissions] [-RunAsync]  [<CommonParameters>]  Save-VBRUnstructuredBackupFLRItem [-Force] -Item <VBRUnstructuredBackupFLRItem[]> -Path <String> [-PreservePermissions] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>] [-RunAsync] -Server <VBRUnstructuredServer> [<CommonParameters>] |
 
 Detailed Description
 
@@ -30,12 +30,15 @@ This cmdlet restores objects backed up by file backup jobs or object storage bac
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Item | Specifies an array of backed-up object. The cmdlet will restore these objects to the file share. | [For restore of backups to the specific restore point]: Accepts the VBRNASBackupFLRItem[] object. To get this object, run the [Get-VBRUnstructuredBackupFLRItem](get-vbrunstructuredbackupflritem.md) cmdlet.  [For all versions of backups restore]: Accepts the VBRUnstructuredBackupFLRItemVersion object. To get this object, run the [Get-VBRUnstructuredBackupFLRItemVersion](get-vbrunstructuredbackupflritemversion.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | Server | Specifies a file share or object storage. The cmdlet will restore the backed-up object to this file share or object storage. | Accepts the VBRUnstructuredServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | False |
 | Path | Specifies one of the location:   * [For file shares] a path to the folder. * [For object storage] a bucket, a container and prefixes inside the bucket or a container.   The cmdlet will restore the backed-up object to that location. | String | False | Named | False |
 | PreservePermissions | Defines that the cmdlet will restore permissions and security attributes of objects that you want to save.  If you provide this parameter, the cmdlet will restore backup files with security attributes and permissions set by the user. Otherwise, permissions and security attributes of restored backups will not be recovered. | SwitchParamter | False | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive object storage repositories.  Note: If you do not provide this parameter, the cmdlet will prompt you to use the default retrieval policy settings. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will restore unstructured data backups without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 | RunAsync | Defines that the command returns immediately without waiting for the task to complete. | SwitchParamter | False | Named | False |
 
 <CommonParameters>
@@ -67,4 +70,5 @@ Related Commands
 * [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 * [Get-VBRUnstructuredBackupFLRItem](get-vbrunstructuredbackupflritem.md)
 
+Page updated 2026-06-29
 

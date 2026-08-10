@@ -3,8 +3,8 @@ title: "Step 5. Specify Mount Server Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/amazon_storage_mount_server.html"
-last_updated: "4/1/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Mount Server Settings
@@ -47,6 +47,11 @@ Configuring Helper Appliance
 
 A helper appliance is a temporary EC2 instance that Veeam Backup & Replication deploys in your Amazon EC2 to perform a health check of backup files and apply retention to unstructured data backup files. For more information, see [Health Check for Object Storage Repositories](health_check_os.md) and [Helper Appliance in Unstructured Data Backup](unstructured_data_backup_in_object_storage.md#helper). After Veeam Backup & Replication completes these operations, it removes the helper appliance from Amazon EC2.
 
+|  |
+| --- |
+| Important |
+| You cannot configure the helper appliance for an AWS edition of Veeam Data Cloud Vault. |
+
 To configure the helper appliance, do the following
 
 1. Click Configure.
@@ -75,4 +80,5 @@ To be able to select the necessary security group from the drop-down list, you m
 
 ![Step 5. Specify Mount Server Settings](images/s3_add_helper_appliance.webp "Specify S3 Object Storage Mount Server")
 
+Page updated 2026-07-28
 

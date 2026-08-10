@@ -3,8 +3,8 @@ title: "Step 5. Specify Veeam Agent Access Options"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/usais_agents_access.html"
-last_updated: "8/4/2023"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 5. Specify Veeam Agent Access Options
@@ -25,11 +25,6 @@ To select volumes to rescan, click Choose to the right of the Volumes to scan fi
 
 After you finish working with the wizard, you can change the rescan scope and start the rescan process manually at any time. For more information, see [Rescanning Storage Systems](storage_rescan.md).
 
-|  |
-| --- |
-| Important |
-| [For VMware integration] If you plan to use [backup from storage snapshots](backup_from_storage_snapshots.md), you need to make sure that you include in the rescan scope the volumes on which the protected machine disks reside. |
-
 1. To rescan storage systems and perform backup from storage snapshots, you need to configure a proxy. On the right of the Backup proxies to use field, click Choose and define proxies that you want to use for these operations.
 
 + Select Automatic selection to let Veeam Backup & Replication pick a proxy automatically. Veeam Backup & Replication will check which proxies have access to the storage system, and automatically assign an optimal proxy for rescan and backup from storage snapshots.
@@ -40,6 +35,7 @@ After you finish working with the wizard, you can change the rescan scope and st
 | Note |
 | [For VMware integration] If you select proxies explicitly, you must make sure that you also select these proxies in settings of backup and replication jobs for which you plan to use backup from storage snapshots. If a proxy selected for the job is not added to the list of proxies in the storage system connection settings and the Failover to standard backup option is disabled in the job settings, the job will fail. |
 
-![Step 6. Specify Agents Access Options](images/inf_add_agents.webp)
+![Step 5. Specify Agents Access Options](images/inf_add_agents.webp)
 
+Page updated 2026-05-28
 

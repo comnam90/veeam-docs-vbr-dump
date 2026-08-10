@@ -1,13 +1,13 @@
 ---
-title: "Performing Instant Recovery of Workloads to Nutanix AHV"
+title: "Instant Recovery of Workloads to Nutanix AHV"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_instant_recovery_ahv.html"
-last_updated: "4/20/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
-# Performing Instant Recovery of Workloads to Nutanix AHV
+# Instant Recovery of Workloads to Nutanix AHV
 
 
 You can immediately restore virtual or physical machines into a Nutanix AHV cluster by running it directly from a compressed and deduplicated backup file. Before you perform Instant Recovery, check the following prerequisites:
@@ -25,14 +25,17 @@ To recover machines to a Nutanix AHV cluster, you can use the following backups:
 
 * Backups of virtual and physical machines created by Veeam Agent for Microsoft Windows and Veeam Agent for Linux
 * Backups of VMs created by vCloud Director
-* Backups of Amazon EC2 instances created by Veeam Backup for AWS
 
-* Backups of Microsoft Azure VMs created by Veeam Backup for Microsoft Azure
-* Backups of Google Cloud VMs instances created by Veeam Backup for Google Cloud
-* Backups of oVirt KVM VMs created by Veeam Plug-in for Oracle Linux Virtualization Manager and Red Hat Virtualization
+* Backups of Amazon EC2 instances created by Veeam Plug-in for AWS
+
+* Backups of Microsoft Azure VMs created by Veeam Plug-in for Microsoft Azure
+* Backups of Google Cloud VMs instances created by Veeam Plug-in for Google Cloud
+
+* Backups of oVirt VMs created by Veeam Plug-in for oVirt KVM
+* Backups of HPE Morpheus VM Essentials VMs created by Veeam Plug-in for HPE Morpheus VM Essentials
+* Backups of Scale Computing HyperCore VMs created by Scale Computing HyperCore
 
 * Backups of Proxmox VE VMs created by Veeam Plug-in for Proxmox VE
-* Backups of HPE Morpheus VM Essentials VMs created by Veeam Plug-in for HPE Morpheus VM Essentials
 
 Instant Recovery is not supported:
 
@@ -66,4 +69,5 @@ To perform Instant Recovery of a protected workload, do the following:
 10. [Review the configured settings](ahv_ir_verify_ahv.md).
 11. [Finalize the recovery process](ahv_ir_finalize_ahv.md).
 
+Page updated 2026-07-16
 

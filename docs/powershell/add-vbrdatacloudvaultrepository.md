@@ -3,8 +3,8 @@ title: "Add-VBRDataCloudVaultRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrdatacloudvaultrepository.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRDataCloudVaultRepository
@@ -13,6 +13,11 @@ product_version: "13.0.1.2067"
 Short Description
 
 Adds a Veeam Data Cloud Vault to the backup infrastructure.
+
+|  |
+| --- |
+| Important |
+| You cannot add Veeam Data Cloud Vault Archive using this cmdlet. |
 
 Applies to
 
@@ -31,13 +36,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Add-VBRDataCloudVaultRepository [-Name <String>] [-Description <String>] [-Vault <VBRVeeamDataCloudAssignedVault>] [-Folder <String>] [-GatewayServer <CHost[]>] [-ConnectionType <VBRRepositoryConnectionType>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-Force] [<CommonParameters>] |
+| Add-VBRDataCloudVaultRepository [-Name <String>] [-Description <String>] [-Vault <VBRVeeamDataCloudAssignedVault>] [-Folder <String>] [-GatewayServer <CHost[]>] [-ConnectionType <VBRRepositoryConnectionType>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-EnableReadOnlyMode] [-Force] [<CommonParameters>] |
 
 * Add a Veeam Data Cloud Vault using the service key.
 
 |  |
 | --- |
-| Add-VBRDataCloudVaultRepository [-Name <String>] [-Description <String>] [-AzureBlobFolder <VBRAzureBlobFolder>] [-Connection <VBRAzureBlobConnection>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-Force] [<CommonParameters>] |
+| Add-VBRDataCloudVaultRepository [-Name <String>] [-Description <String>] [-AzureBlobFolder <VBRAzureBlobFolder>] [-Connection <VBRAzureBlobConnection>] [-EnableSizeLimit] [-SizeLimit <Int32>] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-EnableReadOnlyMode] [-Force] [<CommonParameters>] |
 
 Detailed Description
 
@@ -47,7 +52,7 @@ Parameters
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Vault | [Subscription scenario]  Specifies a Veeam storage vault assigned to the backup server. The cmdlet will add this vault to the backup infrastructure. | Accepts the [VBRVeeamDataCloudAssignedVault](vbrveeamdatacloudassignedvault.md) object. To get this object, run the [Get-VBRVeeamDataCloudAssignedVault](get-vbrveeamdatacloudassignedvault.md) cmdlet. | False | Named | False |
 | Folder | [Subscription scenario]  Specifies the folder that will be used to store data. | String | False | Named | False |
 | GatewayServer | [Subscription scenario]  Specifies an array of gateway servers that you want to use to transfer data from processed VM to object storage repositories. | Accepts the CHost[] object. To get this object, run the [Get-VBRServer](get-vbrserver.md) cmdlet. | False | Named | False |
@@ -64,6 +69,7 @@ Parameters
 | EnableConcurrentTasksLimit | Enables limits for concurrent tasks that can be processed by the object storage repository.  Use the MaxConcurrentTasks parameter to specify the number of tasks. | SwitchParameter | False | Named | False |
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int32 | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure. | SwitchParameter | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -102,4 +108,5 @@ Related Commands
 * [Get-VBRAzureBlobFolder](get-vbrazureblobfolder.md)
 * [New-VBRAzureBlobFolder](new-vbrazureblobfolder.md)
 
+Page updated 2026-07-29
 

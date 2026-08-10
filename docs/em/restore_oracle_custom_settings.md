@@ -4,7 +4,7 @@ product: "vbr"
 doc_type: "em"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em/restore_oracle_custom_settings.html"
 last_updated: "2026"
-product_version: "13.0.2.29"
+product_version: "13.1.0.411"
 ---
 
 # Restore with Custom Settings
@@ -19,5 +19,5 @@ To restore an Oracle database with custom settings, use the Oracle Restore wizar
 3. [Specify Oracle home settings](restore_oracle_custom_settings_restore_settings.md).
 4. [Specify database files location](restore_oracle_custom_settings_files.md).
 
-Page updated 2026-07-10
+Page updated 2026-07-29
 

@@ -3,8 +3,8 @@ title: "Creating File Backup Jobs"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/file_share_backup_job.html"
-last_updated: "11/14/2023"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating File Backup Jobs
@@ -18,18 +18,10 @@ File backup jobs are used to protect the following sources of unstructured data:
 * [File shares (NFS and SMB (CIFS)](adding_file_share.md)
 * [Enterprise storage systems added as NAS filers](adding_nas_filer.md)
 
-Before you create a file backup job, check [prerequisites](file_share_backup_job_before_you_begin.md).
+You can create the file backup job in one of the following ways:
 
-To create a file backup job, use the New File Backup Job wizard:
+* [Create file backup jobs using console](file_share_backup_job_console.md).
+* [Create file backup jobs using web UI](file_share_backup_job_web.md).
 
-1. [Launch the New File Share Backup wizard](file_share_backup_job_launch_wizard.md).
-2. [Specify the job name and description](file_share_backup_job_name.md).
-3. [Select files and folders to back up](file_share_backup_job_files_and_folders.md).
-4. [Specify backup repository settings](file_share_backup_job_storage.md).
-5. [Specify advanced backup settings](file_share_backup_job_advanced_settings.md).
-6. [Specify archive repository settings](file_share_backup_job_archive_repo.md).
-7. [Specify the secondary target repository](file_share_backup_job_secondary_target.md).
-8. [Define the job schedule](file_share_backup_job_schedule.md).
-9. [Finish working with the wizard](file_share_backup_job_summary.md).
-
+Page updated 2026-07-25
 

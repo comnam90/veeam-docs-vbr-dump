@@ -3,8 +3,8 @@ title: "Get-VBRNDMPServer"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/get-vbrndmpserver.html"
-last_updated: "2/2/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Get-VBRNDMPServer
@@ -38,12 +38,13 @@ This cmdlet provides parameter sets that allow you to:
 
 Detailed Description
 
-This cmdlet returns an array of NDMP servers managed by Veeam Backup & Replication.
+This cmdlet returns an array of NDMP servers and NetApp NDMP servers managed by Veeam Backup & Replication.
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | Id | Specifies an array of IDs for NDMP servers. The cmdlet will return NDMP servers with these IDs. | Guid[] | True | Named | False |
 | Name | Specifies an array of DNS names or IP addresses of NDMP servers. The cmdlet will return NDMP servers with these DNS names or IP addresses. | String[] | False | Named | False |
 
@@ -53,7 +54,7 @@ This cmdlet supports Microsoft PowerShell common parameters. For more informatio
 
 Output Object
 
-[VBRNDMPServer](vbrndmpserver.md)
+The cmdlet returns the VBRNDMPServerBase object that contains information about the NDMP and NetApp NDMP servers.
 
 Examples
 
@@ -69,4 +70,5 @@ Examples
 | --- | --- |
 | This command gets the 0fccf7c9-1f90-49de-8bec-53a0697e04ab NDMP server.  |  | | --- | | Get-VBRNDMPServer -ID "0fccf7c9-1f90-49de-8bec-53a0697e04ab" | |
 
+Page updated 2026-06-04
 

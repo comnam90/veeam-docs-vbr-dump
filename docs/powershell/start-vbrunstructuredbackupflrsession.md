@@ -3,8 +3,8 @@ title: "Start-VBRUnstructuredBackupFLRSession"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/start-vbrunstructuredbackupflrsession.html"
-last_updated: "8/14/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Start-VBRUnstructuredBackupFLRSession
@@ -26,13 +26,13 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Start-VBRUnstructuredBackupFLRSession -Backup <VBRUnstructuredBackup> -Server <VBRUnstructuredServer>  [<CommonParameters>] |
+| Start-VBRUnstructuredBackupFLRSession -Backup <VBRUnstructuredBackup> -Server <VBRUnstructuredServer> [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Start a restore of files, folders or individual objects. This parameter set recovers backup files or objects to the specified restore point.
 
 |  |
 | --- |
-| Start-VBRUnstructuredBackupFLRSession -RestorePoint <VBRUnstructuredBackupRestorePoint>  [<CommonParameters>] |
+| Start-VBRUnstructuredBackupFLRSession -RestorePoint <VBRUnstructuredBackupRestorePoint> [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -49,11 +49,14 @@ Run the [Restore-VBRUnstructuredBackupFLRItem](restore-vbrunstructuredbackupflri
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Backup | Specifies the backup file. The cmdlet will start a file-level restore to recover all versions of a backup file that is located on the short-term and long-term repositories. | Accepts the  VBRUnstructuredBackup object. To get this object, run the [Get-VBRUnstructuredBackup](get-vbrunstructuredbackup.md) cmdlet. | True | Named | True (ByPropertyName |
 | Server | Specifies file shares or object storage. The cmdlet will start a restore of files, folders or individual objects. This parameter set recovers backup files or objects to the specified restore point. | Accepts the VBRUnstructuredServer object. To get this object, run the [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | RestorePoint | Specifies a restore point. The cmdlet will start a restore of files, folders or individual objects. This parameter set recovers backup files or objects to the specified restore point. | Accepts the VBRUnstructuredBackupRestorePoint object. To get this object, run the [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories.  Note: If you do not provide this parameter, the cmdlet will prompt you to use the default retrieval policy settings. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will start a restore session without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -83,4 +86,5 @@ Related Commands
 * [Get-VBRUnstructuredServer](get-vbrunstructuredserver.md)
 * [Get-VBRUnstructuredBackupRestorePoint](get-vbrunstructuredbackuprestorepoint.md)
 
+Page updated 2026-06-29
 

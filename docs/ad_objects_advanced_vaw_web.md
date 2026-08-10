@@ -1,0 +1,73 @@
+---
+title: "Veeam Agent for Microsoft Windows Settings"
+product: "vbr"
+doc_type: "userguide"
+source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ad_objects_advanced_vaw_web.html"
+last_updated: "2026"
+product_version: "13.1.0.411"
+---
+
+# Veeam Agent for Microsoft Windows Settings
+
+
+You can specify the following settings for Veeam Agent for Microsoft Windows that will be deployed on computers included in the protection group:
+
+* Network usage settings. You can limit bandwidth consumption and restrict network connections usage for Veeam Agent for Microsoft Windows backup jobs. Limiting bandwidth consumption prevents jobs from utilizing the entire bandwidth available in your environment and makes sure that enough traffic is provided for other network operations. In addition to limiting bandwidth consumption, you can choose whether to allow backup over metered connections and VPN connections. For Microsoft Windows workstations that run Veeam Agent, you can also specify one or more wireless networks over which Veeam Agent is allowed to perform backup or restrict usage over any wireless networks.
+
+|  |
+| --- |
+| IMPORTANT |
+| Network usage settings are not applied to protected computers added to a Veeam Agent backup job managed by the backup server. |
+
+* Backup I/O settings. You can instruct Veeam Agent for Microsoft Windows to throttle its activities during backup. This option can help you avoid situations when backup tasks performed by Veeam Agent for Microsoft Windows consume all available hard disk resources and hinder work of other applications and services on a protected computer. With throttling enabled, Veeam Backup & Replication sets low priority for Veeam Agent components running on protected computers and engaged in the backup process. If this option is not enabled, Veeam Agent components have normal priority.
+* Security settings. You can allow user accounts that do not have administrative privileges on a Veeam Agent computer to perform file-level restore on this computer. You can also enable [remote bare metal recovery](integration_instant_restore_media_remote.md) for protected computers.
+
+|  |
+| --- |
+| IMPORTANT |
+| The Allow file-level recovery without administrative account setting is not applied to protected computers added to a Veeam Agent backup job managed by the backup server. The Allow virtual recovery partition creation setting is applied to these computers as well. |
+
+Veeam Backup & Replication applies the specified settings to Veeam Agent that runs on a protected computer added to a backup policy. Veeam Backup & Replication applies the settings during the protection group rescan process. Settings are saved to the Veeam Agent for Microsoft Windows database on the protected computer.
+
+To specify settings for Veeam Agent for Microsoft Windows:
+
+1. At the Options step of the wizard, click Configure advanced settings.
+2. If you want to limit bandwidth consumption for Veeam Agent backup jobs, on the Agent for Windows tab, in the Network section, select the Limit bandwidth consumption to check box. Then specify the maximum speed for transferring backed-up data from the Veeam Agent computer to the target location.
+3. By default, backup over metered connections is disabled for Veeam Agent for Microsoft Windows. Veeam Agent automatically detects metered connections and does not perform backup when your computer is on such connection. To enable backup over metered connections, clear the Restrict metered connection usage check box.
+
+|  |
+| --- |
+| NOTE |
+| You must specify which connections are metered in Microsoft Windows. To learn more, see [this Microsoft webpage](https://support.microsoft.com/en-us/help/17452/windows-metered-internet-connections-faq). |
+
+1. If you want to disable backup over VPN connections, select the Restrict VPN connection usage check box. Veeam Agent for Microsoft Windows will automatically detect VPN connections and will not perform backup when the Veeam Agent computer is on such connection.
+2. If you want to restrict usage of wireless networks for Veeam Agent running on Microsoft Windows workstations, do the following:
+
+1. Select the Restrict Wi-Fi usage to these networks check box and click Add.
+2. In the Wi-Fi Network window, specify the SSID of the Wi-Fi network over which Veeam Agent will be allowed to perform backup, and click OK.
+
+Veeam Backup & Replication will add the specified network to the list of allowed Wi-Fi networks. Backup over other wireless networks will be disabled for Veeam Agent.
+
+|  |
+| --- |
+| TIP |
+| If you want to restrict usage over any wireless networks, select the Restrict Wi-Fi usage to these networks check box and do not add any networks to the list. |
+
+1. If you want to throttle Veeam Agent activities during backup, in the Backup I/O control section, make sure that the Throttle backup agent activity on option is selected. Then select the type of computers on which to throttle Veeam Agent backup activities: Workstations, Servers or All hosts.
+
+If you do not want to throttle backup activities for Veeam Agent, select Do not throttle backup agent.
+
+1. In the Security section, select the Allow file-level recovery without administrative account check box. With this option enabled, Veeam Agent computer users who work under accounts that do not have administrative privileges will be able to perform file-level restore on the Veeam Agent computer.
+
+In this case, access rights to files and folders are managed by Veeam Agent computer OS. If user cannot access the folder in the original location, this user cannot browse or restore the content of this folder as well.
+
+To learn more, see [Restoring Files from Backup without Administrator Privileges](appendix_b_restore_file_not_admin.md).
+
+1. To enable remote bare metal recovery on protected computers, select the Allow virtual recovery partition creation check box. Veeam Agent for Microsoft Windows will create a hidden recovery environment on each protected compute that you can boot remotely from the Veeam Backup & Replication web UI to restore the computer without physical access
+
+To learn more, see [Restoring from Veeam Recovery Media Remotely](integration_instant_restore_media_remote.md).
+
+[![Specify Veeam Agent for Microsoft Windows Settings](images/ad_objects_advanced_vaw_web.webp)](images/ad_objects_advanced_vaw_web.webp "Specify Veeam Agent for Microsoft Windows Settings")
+
+Page updated 2026-07-21
+

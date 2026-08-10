@@ -3,8 +3,8 @@ title: "Converting Backup Copy to Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/plugins_sap_maxdb_backup_copy_map.html"
-last_updated: "6/26/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Converting Backup Copy to Backup
@@ -18,6 +18,11 @@ You can convert imported Veeam Plug-In backups into regular Veeam Plug-In backup
 * If you have excluded a backup job from a backup copy job that used multiple backup jobs as a source.
 * If you have imported a Veeam Plug-In backup copy from another repository.
 
+|  |
+| --- |
+| Note |
+| If you want to restore from a backup copy, you don't need to convert the backup copy to backup. For details, see [Restore from Backup Copy](restore_from_copy_sap_orcl.md). |
+
 Converting Backup Copy to Backup for SAP MaxDB
 
 To convert a backup copy to a primary backup, use the --promote-backup-copy-to-primary parameter as shown below:
@@ -29,6 +34,7 @@ To convert a backup copy to a primary backup, use the --promote-backup-copy-to-p
 |  |
 | --- |
 | Important |
-| [For servers with the customServerName option] To avoid failure of conversion of backup copies, the server name must be the same as the name used in the backup copy. |
+| [For servers with the customServerName option] To avoid failure of conversion of backup copies, the server name must be the same as the name used in the backup copy. |
 
+Page updated 2026-08-04
 

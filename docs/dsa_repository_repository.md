@@ -3,8 +3,8 @@ title: "Step 4. Configure Backup Repository Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/dsa_repository_repository.html"
-last_updated: "6/25/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 4. Configure Backup Repository Settings
@@ -20,13 +20,19 @@ To configure general repository settings:
 
 ![Step 4. Configure Backup Repository Settings](images/dell_data_domain_repository.webp)
 
+1. [For HPE StoreOnce] If you plan to create multiple repositories on a Catalyst store, specify a folder for the current repository in the Folder field. Veeam Backup & Replication will use the specified folder name as a Catalyst object name that imitates a folder within the store.
+
+|  |
+| --- |
+| Note |
+| Consider the following:   * Only first-level folders are supported. * The folder name can contain up to 50 characters: alphanumeric characters and the \_ - . + symbols. The name must be unique. * If you create repositories on folders of a Catalyst store, do not add a repository that points to the parent Catalyst store itself (without a folder). Otherwise, metadata may become inconsistent and data may be corrupted. |
+
 1. [For HPE StoreOnce or Dell Data Domain with immutability] To prohibit deletion of blocks of data from the backup repository, select the Make recent backups immutable for check box and specify the immutability period. For more information on limitations and considerations for HPE StoreOnce with immutability, see [HPE StoreOnce and Immutability](deduplicating_appliance_storeonce.md#immutability). For more information on limitations and considerations for Dell Data Domain with immutability, see [Dell Data Domain](dell_dd.md#immutability).
 
 ![Step 4. Configure Backup Repository Settings](images/hpestoreonce_repository.webp)
 
-1. [For ExaGrid, Quantum DXi, Fujitsu ETERNUS CS800 and Infinidat InfiniGuard] The Use fast cloning on XFS volumes check box is enabled and cannot be changed. This enables the copy-on-write functionality. In terms of Veeam Backup & Replication, this functionality is known as Fast Clone. For more information, see [Fast Clone](backup_repository_block_cloning.md).
-
-1. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the backup repository. These settings will help you control the load on the backup repository and prevent possible timeouts of storage I/O operations.
+1. [For ExaGrid, Quantum DXi, Fsas ETERNUS CS800 and Infinidat InfiniGuard] The Use fast cloning on XFS volumes check box is enabled and cannot be changed. This enables the copy-on-write functionality. In terms of Veeam Backup & Replication, this functionality is known as Fast Clone. For more information, see [Fast Clone](backup_repository_block_cloning.md).
+2. Use the Load control section to limit the number of concurrent tasks and data ingestion rate for the backup repository. These settings will help you control the load on the backup repository and prevent possible timeouts of storage I/O operations.
 
    * Select the Limit maximum concurrent tasks check box and specify the maximum allowed number of concurrent tasks for the backup repository. If this value is exceeded, Veeam Backup & Replication will not start a new task until one of current tasks finishes. For more information, see [Limiting the Number of Concurrent Tasks](limiting_tasks.md).
 
@@ -82,7 +88,7 @@ Quantum DXi
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
-Fujitsu ETERNUS CS800
+Fsas ETERNUS CS800
 
 * The Align backup file data blocks option is enabled and cannot be changed.
 * The Decompress backup data blocks before storing option is enabled.
@@ -100,4 +106,5 @@ HPE StoreOnce
 * The Decompress backup data blocks before storing option is enabled.
 * The This repository is backed by rotated hard drives option is disabled and cannot be changed.
 
+Page updated 2026-07-20
 

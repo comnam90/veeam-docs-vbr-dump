@@ -3,8 +3,8 @@ title: "Deprecated Cmdlets"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/deprecated_cmdlets_13.html"
-last_updated: "7/29/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deprecated Cmdlets
@@ -20,7 +20,7 @@ In this version, some cmdlets in the Veeam Explorer for SAP HANA PowerShell modu
 
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | New Cmdlet | | --- | --- | | Restore-VEHANADatabase | [Start-VEHANADatabaseRestore](start-vehanadatabaserestore.md) | | Get-VEHANARestoreJob | [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) | | Stop-VEHANARestoreJob | [Stop-VEHANADatabaseRestore](stop-vehanadatabaserestore.md) | |
+| Deprecated Cmdlets  | Cmdlet | New Cmdlet | | Restore-VEHANADatabase | [Start-VEHANADatabaseRestore](start-vehanadatabaserestore.md) | | Get-VEHANARestoreJob | [Get-VEHANADatabaseRestore](get-vehanadatabaserestore.md) | | Stop-VEHANARestoreJob | [Stop-VEHANADatabaseRestore](stop-vehanadatabaserestore.md) | |
 
 Veeam Explorer for MongoDB
 
@@ -30,6 +30,7 @@ In Veeam Backup & Replication 13, some cmdlets in the Veeam Explorer for MongoDB
 
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Cmdlet | New Cmdlet | | --- | --- | | Start-VEMDBRestoreJob | [Start-VEMDBDataRestore](start-vemdbdatarestore.md) | | Get-VEMDBRestoreJob | [Get-VEMDBDataRestore](get-vemdbdatarestore.md) | | Stop-VEMDBRestoreJob | [Stop-VEMDBDataRestore](stop-vemdbdatarestore.md) | |
+| Deprecated Cmdlets  | Cmdlet | New Cmdlet | | Start-VEMDBRestoreJob | [Start-VEMDBDataRestore](start-vemdbdatarestore.md) | | Get-VEMDBRestoreJob | [Get-VEMDBDataRestore](get-vemdbdatarestore.md) | | Stop-VEMDBRestoreJob | [Stop-VEMDBDataRestore](stop-vemdbdatarestore.md) | |
 
+Page updated 2026-01-30
 

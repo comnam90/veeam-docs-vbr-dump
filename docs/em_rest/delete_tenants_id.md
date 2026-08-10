@@ -3,8 +3,8 @@ title: "DELETE /cloud/tenants/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/delete_tenants_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # DELETE /cloud/tenants/{ID}
@@ -31,8 +31,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -44,8 +45,9 @@ Request Parameters
 
 You can specify whether to delete backups created for the deleted tenant account. To do this, you must add the following parameter to the base URL of the request:
 
+Request Parameters
+
 | Element | Type | Required | Description |
-| --- | --- | --- | --- |
 | includeBackups | Boolean | False | Defines if the backups created for the tenant account will be deleted from the cloud repository. Possible values:   * True * False |
 
 For example:
@@ -66,8 +68,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -83,12 +86,13 @@ The example below removes a tenant account with ID 6f17f70a-a61c-4ef0-ac7f-426a6
 
 |  |
 | --- |
-| Request:  DELETE https://localhost:9398/api/cloud/tenants/6f17f70a-a61c-4ef0-ac7f-426a6ae1ec8b    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  202 Accepted    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1"> |
+| Request:  DELETE https://localhost:9398/api/cloud/tenants/6f17f70a-a61c-4ef0-ac7f-426a6ae1ec8b  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  202 Accepted  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Running</State>   <Operation>DeleteCloudTenant</Operation> </Task> |
 
 To track the status of the operation, send the GET HTTP request to the received task resource:
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/tasks/task-1    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>DeleteCloudTenant</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
+| Request:  GET https://localhost:9398/api/tasks/task-1  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <Task xmlns="http://www.veeam.com/ent/v1.0" Type="Task" Href="https://localhost:9398/api/tasks/task-1">   <Links>     <Link Rel="Delete" Type="Task" Href="https://localhost:9398/api/tasks/task-1" />   </Links>   <TaskId>task-1</TaskId>   <State>Finished</State>   <Operation>DeleteCloudTenant</Operation>   <Result Success="true">     <Message>Ok</Message>   </Result> </Task> |
 
+Page updated 2026-07-29
 

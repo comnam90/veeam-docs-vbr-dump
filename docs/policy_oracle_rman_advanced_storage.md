@@ -3,8 +3,8 @@ title: "Storage Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/policy_oracle_rman_advanced_storage.html"
-last_updated: "1/20/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Storage Settings
@@ -46,4 +46,5 @@ If you plan to encrypt the content of backup files, consider the following limit
 
 To learn more about data encryption in Veeam Backup & Replication, see [Data Encryption](data_encryption.md).
 
+Page updated 2026-07-22
 

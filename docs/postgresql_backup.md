@@ -3,8 +3,8 @@ title: "PostgreSQL WAL Files Backup"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/postgresql_backup.html"
-last_updated: "11/12/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # PostgreSQL WAL Files Backup
@@ -16,10 +16,10 @@ Requirements and Limitations
 
 Before you back up WAL files for PostgreSQL instances, consider the following requirements and limitations:
 
-* Veeam Backup & Replication supports log backup and restore for PostgreSQL version 13, 14, 15, 16, 17, 18.
-* Veeam Backup & Replication supports only backup of PostgreSQL instances configured on Linux-based VMs.
+* Veeam Backup & Replication supports log backup and restore for PostgreSQL version 14, 15, 16, 17, 18.
+* Veeam Backup & Replication supports backup of PostgreSQL instances configured on both Linux-based and Microsoft Windows-based VMs.
+* Veeam Backup & Replication supports backup of PostgreSQL clusters managed by Patroni 4.0.6 or later.
 * Veeam Backup & Replication does not support backup of individual PostgreSQL databases.
-* Veeam Backup & Replication does not support high availability cluster configurations and replication setups of PostgreSQL servers.
 
 * Set the archive\_mode parameter to the on mode in PostgreSQL instances.
 * The archive\_command and archive\_library parameters must not contain any values in PostgreSQL instances.
@@ -29,12 +29,20 @@ Before you back up WAL files for PostgreSQL instances, consider the following re
 
 * To perform guest processing for PostgreSQL instances on Linux servers, make sure that the /tmp directory is mounted with the exec option. Otherwise, you will get an error with the permission denial.
 
+If you plan to back up PostgreSQL clusters managed by Patroni, consider the following:
+
+* The patronictl utility must be installed on all cluster nodes.
+* For each cluster node added to the backup job, specify guest OS and database credentials, in the same way as for standalone PostgreSQL instances.
+* Veeam Backup & Replication backs up WAL files from the leader node of the cluster only. Add all nodes that can become the leader node to the backup job — otherwise, Veeam Backup & Replication cannot back up WAL files if the leader node changes.
+* It is recommended that you configure the same application-aware processing settings for all cluster nodes.
+
 Related Topics
 
 * [WAL Files PostgreSQL Backup Jobs](postgresql_backup_hiw.md)
 * [How PostgreSQL WAL Files Backup Works](postgresql_backup_job.md)
-* [Retention for PostgreSQL WAL Files](postrgresql_backup_retention.md)
+* [Retention for PostgreSQL WAL Files](postgresql_backup_retention.md)
 * [Log Shipping Servers](postgresql_log_shipping.md)
-* [WAL Backup Statistics](postrgesql_statistics.md)
+* [WAL Backup Statistics](postgresql_statistics.md)
 
+Page updated 2026-07-28
 

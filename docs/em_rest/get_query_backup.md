@@ -3,8 +3,8 @@ title: "GET /query?type=Backup"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_query_backup.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /query?type=Backup
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -39,8 +40,9 @@ Optional Parameters
 
 In the query, you can use the following parameters for filtering and sorting.
 
+Optional Parameters
+
 | Parameter | Type | Description |
-| --- | --- | --- |
 | UID | UidType | UID of the backup resource, for example: urn:veeam:Backup:58c917c7-7b7a-41ff-8676-226656c35c05. |
 | Name | String | Name of the backup job parent to the backup, for example: SQL Backup. |
 | JobUid | UidType | UID of the backup job parent to the backup, for example:urn:veeam:Job:da736815-4fea-4c8e-b0e1-5ecdbca1c512. |
@@ -62,8 +64,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -77,6 +80,7 @@ The example below returns an entity resource representation of a collection of p
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/query?type=Backup&format=Entities&sortAsc=Name&filter=Platform==AgentForWindows    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0"> |
+| Request:  GET https://localhost:9398/api/query?type=Backup&format=Entities&sortAsc=Name&filter=Platform==AgentForWindows  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <QueryResult xmlns="http://www.veeam.com/ent/v1.0">   <Entities>     <Backups>       <Backup Type="Backup" Href="https://localhost:9398/api/backups/ddf0a147-45ea-4295-813e-4fc919e6864a?format=Entity" Name="Agent Backup Job 1" UID="urn:veeam:Backup:ddf0a147-45ea-4295-813e-4fc919e6864a">         <Links>           <Link Rel="Up" Type="RepositoryReference" Href="https://localhost:9398/api/repositories/425b6739-5082-4f7a-99fb-1ae13ef87d9f" Name="Default Backup Repository" />           <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />           <Link Rel="Alternate" Type="BackupReference" Href="https://localhost:9398/api/backups/ddf0a147-45ea-4295-813e-4fc919e6864a" Name="Agent Backup Job 1" />           <Link Rel="Down" Type="BackupList" Href="https://localhost:9398/api/backups/ddf0a147-45ea-4295-813e-4fc919e6864a/childbackups?format=Entity" />         </Links>         <Platform>AgentForWindows</Platform>         <BackupType>ParentBackup</BackupType>       </Backup>       <Backup Type="Backup" Href="https://localhost:9398/api/backups/082503a1-5887-4f1a-b785-b83faf066e71?format=Entity" Name="Agent Backup Job 1 - enterprise05.tech.local" UID="urn:veeam:Backup:082503a1-5887-4f1a-b785-b83faf066e71">         <Links>           <Link Rel="Up" Type="RepositoryReference" Href="https://localhost:9398/api/repositories/425b6739-5082-4f7a-99fb-1ae13ef87d9f" Name="Default Backup Repository" />           <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/7445e6ce-86f5-4171-b909-dac209c66563" Name="enterprise06.tech.local" />           <Link Rel="Alternate" Type="BackupReference" Href="https://localhost:9398/api/backups/082503a1-5887-4f1a-b785-b83faf066e71" Name="Agent Backup Job 1 - enterprise05.tech.local" />           <Link Rel="Down" Type="RestorePointReferenceList" Href="https://localhost:9398/api/backups/082503a1-5887-4f1a-b785-b83faf066e71/restorePoints" />           <Link Rel="Down" Type="BackupFileReferenceList" Href="https://localhost:9398/api/backups/082503a1-5887-4f1a-b785-b83faf066e71/backupFiles" />           <Link Rel="Up" Type="Backup" Href="https://localhost:9398/api/backups/ddf0a147-45ea-4295-813e-4fc919e6864a?format=Entity" Name="Parent Backup" />         </Links>         <Platform>AgentForWindows</Platform>         <BackupType>ChildBackup</BackupType>       </Backup>     </Backups>   </Entities>   <PagingInfo PagesCount="1" PageSize="100" PageNum="1">     <Links>       <Link Rel="First" Href="https://localhost:9398/api/query?type=Backup&format=Entities&sortAsc=name&filter=Platform==AgentForWindows&pageSize=100&page=1" />       <Link Rel="Last" Href="https://localhost:9398/api/query?type=Backup&format=Entities&sortAsc=name&filter=Platform==AgentForWindows&pageSize=100&page=1" />     </Links>   </PagingInfo> </QueryResult> |
 
+Page updated 2026-07-29
 

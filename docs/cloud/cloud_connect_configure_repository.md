@@ -3,8 +3,8 @@ title: "Configuring Cloud Repositories"
 product: "vbr"
 doc_type: "cloud"
 source_url: "https://helpcenter.veeam.com/docs/vbr/cloud/cloud_connect_configure_repository.html"
-last_updated: "12/23/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Configuring Cloud Repositories
@@ -19,7 +19,7 @@ You can use the following types of backup repositories as cloud repositories:
 * Microsoft Windows server with a local or directly attached storage
 * Linux server with local, directly attached or mounted NFS storage
 * SMB (CIFS) or NFS shared folder
-* Deduplicating storage appliance: Dell Data Domain, ExaGrid and Quantum DXi
+* Deduplicating storage appliance: Dell Data Domain, ExaGrid, Quantum DXi and HPE StoreOnce
 * Scale-out backup repository
 
 * Object storage: S3 compatible, Amazon S3, IBM Cloud, Microsoft Azure and Wasabi
@@ -48,4 +48,5 @@ Related Concepts
 
 [Cloud Repository](cloud_connect_repository.md)
 
+Page updated 2026-06-30
 

@@ -3,8 +3,8 @@ title: "/restorePoints/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/restorepoints_id.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # /restorePoints/{ID}
@@ -46,12 +46,13 @@ Entity reference resource representation:
 
 |  |
 | --- |
-| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0"> |
+| <EntityReferences xmlns="http://www.veeam.com/ent/v1.0">   <Ref Type="RestorePointReference" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a" Name="Sep 20 2025  2:59PM" UID="urn:veeam:RestorePoint:e729979a-fcc2-4880-a420-9291ba64aa2a">     <Links>       <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/99f01406-ecdc-428f-ae09-a13de244140a" Name="172.17.53.1" />       <Link Rel="Up" Type="BackupReference" Href="https://localhost:9398/api/backups/10cf7239-ddbd-47ad-8cfa-15438a5a5467" Name="Webserver Backup" />       <Link Rel="Alternate" Type="RestorePoint" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a?format=Entity" Name="Sep 20 2025  2:59PM" />       <Link Rel="Down" Type="VmRestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/vmRestorePoints" />       <Link Rel="Down" Type="VAppRestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/vAppRestorePoints" />       <Link Rel="Related" Type="RestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/backupFiles" />     </Links>   </Ref> </EntityReferences> |
 
 Entity resource representation:
 
 |  |
 | --- |
-| <RestorePoint xmlns="http://www.veeam.com/ent/v1.0" Type="RestorePoint" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a?format=Entity" Name="Sep 20 2016  2:59PM" UID="urn:veeam:RestorePoint:e729979a-fcc2-4880-a420-9291ba64aa2a">   <Links>     <Link Rel="Up" Type="BackupReference" Href="https://localhost:9398/api/backups/10cf7239-ddbd-47ad-8cfa-15438a5a5467" Name="Webserver Backup" />     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/99f01406-ecdc-428f-ae09-a13de244140a" Name="172.17.53.1" />     <Link Rel="Alternate" Type="RestorePointReference" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a" Name="Sep 20 2016  2:59PM" />     <Link Rel="Down" Type="VmRestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/vmRestorePoints" />     <Link Rel="Down" Type="VAppRestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/vAppRestorePoints" />     <Link Rel="Related" Type="RestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/backupFiles" />   </Links>   <BackupDateUTC>2016-09-20T14:59:02.777Z</BackupDateUTC> </RestorePoint> |
+| <RestorePoint xmlns="http://www.veeam.com/ent/v1.0" Type="RestorePoint" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a?format=Entity" Name="Sep 20 2025  2:59PM" UID="urn:veeam:RestorePoint:e729979a-fcc2-4880-a420-9291ba64aa2a">   <Links>     <Link Rel="Up" Type="BackupReference" Href="https://localhost:9398/api/backups/10cf7239-ddbd-47ad-8cfa-15438a5a5467" Name="Webserver Backup" />     <Link Rel="Up" Type="BackupServerReference" Href="https://localhost:9398/api/backupServers/99f01406-ecdc-428f-ae09-a13de244140a" Name="172.17.53.1" />     <Link Rel="Alternate" Type="RestorePointReference" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a" Name="Sep 20 2025  2:59PM" />     <Link Rel="Down" Type="VmRestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/vmRestorePoints" />     <Link Rel="Down" Type="VAppRestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/vAppRestorePoints" />     <Link Rel="Related" Type="RestorePointReferenceList" Href="https://localhost:9398/api/restorePoints/e729979a-fcc2-4880-a420-9291ba64aa2a/backupFiles" />   </Links>   <BackupDateUTC>2025-09-20T14:59:02.777Z</BackupDateUTC> </RestorePoint> |
 
+Page updated 2026-07-29
 

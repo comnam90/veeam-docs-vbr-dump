@@ -3,8 +3,8 @@ title: "Deleting Backups"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ahv_retention.html"
-last_updated: "1/9/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Deleting Backups
@@ -23,8 +23,9 @@ Alternatively, expand the job that created the backup, select the VM and click R
 |  |
 | --- |
 | Note |
-| If [4-eyes authorization](four_eyes_authorization.md) is enabled in Veeam Backup & Replication, deleting backup files will require additional approval from another user with the Veeam Backup Administrator role. |
+| If [4-eyes authorization](four_eyes_authorization.md) is enabled in Veeam Backup & Replication, deleting backup files will require additional approval from another user with the Backup Administrator role. |
 
 [![Deleting Backups](images/ahv_backup_delete_from_disk.webp)](images/ahv_backup_delete_from_disk.webp "Deleting Backups")
 
+Page updated 2026-07-13
 

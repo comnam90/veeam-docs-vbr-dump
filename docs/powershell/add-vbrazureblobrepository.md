@@ -3,8 +3,8 @@ title: "Add-VBRAzureBlobRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrazureblobrepository.html"
-last_updated: "3/12/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRAzureBlobRepository
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRAzureBlobRepository -Connection <VBRAzureBlobConnection> [-Name <String>] [-Description <String>] -AzureBlobFolder <VBRAzureBlobFolder>[-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableCoolAccessTier] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-AzureProxySpec <VBRAzureComputeProxyAppliance>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-Force]  [<CommonParameters>]>] |
+| Add-VBRAzureBlobRepository -Connection <VBRAzureBlobConnection> [-Name <String>] [-Description <String>] -AzureBlobFolder <VBRAzureBlobFolder>[-EnableSizeLimit] [-SizeLimit <Int32>] [-EnableCoolAccessTier] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-MountServerOptions <VBRRepositoryMountServerOptions[]>] [-AzureProxySpec <VBRAzureComputeProxyAppliance>] [-EnableConcurrentTasksLimit] [-MaxConcurrentTasks <Int32>] [-ForceOwnershipChange] [-EnableReadOnlyMode] [-Force]  [<CommonParameters>]>] |
 
 Detailed Description
 
@@ -50,6 +50,7 @@ Parameters
 | MaxConcurrentTasks | Specifies a maximum number of concurrent tasks that can be processed at once by the object storage repository. | Int32 | False | Named | False |
 | AzureProxySpec | Specifies a helper appliance. Veeam Backup & Replication will use this appliance to perform a health check of backup files and apply retention to file backup job files. | Accepts the VBRAzureComputeProxyAppliance object. To create this object, run the [New-VBRAzureComputeProxyAppliance](new-vbrazurecomputeproxyappliance.md) cmdlet. | False | Named | False |
 | ForceOwnershipChange | Defines that the cmdlet will force ownership change of the object storage folder.  If you do not provide this parameter and the object storage folder is owned by another host, you will not be able to add object storage to the backup infrastructure. | SwitchParameter | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -82,4 +83,5 @@ Related Commands
 * [Get-VBRAzureBlobFolder](get-vbrazureblobfolder.md)
 * [New-VBRAzureBlobFolder](new-vbrazureblobfolder.md)
 
+Page updated 2026-05-27
 

@@ -3,8 +3,8 @@ title: "Overview"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_introduction.html"
-last_updated: "12/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Overview
@@ -48,4 +48,5 @@ In This Section
 * [Recovery Verification for Veeam Agent Backups](agents_recovery_verification.md)
 * [Malware Detection](agents_malware_detection.md)
 
+Page updated 2026-07-07
 
