@@ -3,8 +3,8 @@ title: "DELETE Method"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/delete_method.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # DELETE Method
@@ -16,6 +16,7 @@ In the example below, the DELETE HTTP request is used to delete the current logo
 
 |  |
 | --- |
-| Request:  DELETE https://localhost:9398/api/logonSessions/0e879be7-8854-4a54-990b-ec16e1c6d1ee    Response:  204 No Content |
+| Request:  DELETE https://localhost:9398/api/logonSessions/0e879be7-8854-4a54-990b-ec16e1c6d1ee  Response:  204 No Content |
 
+Page updated 2026-07-29
 
