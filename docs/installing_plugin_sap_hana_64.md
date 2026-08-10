@@ -3,8 +3,8 @@ title: "Installing Plug-In for x64 Linux"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/installing_plugin_sap_hana_64.html"
-last_updated: "6/26/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Installing Plug-In for x64 Linux
@@ -36,34 +36,34 @@ You can download the latest version of the Veeam Backup & Replication installati
 
 1. Open the mounted image and find the following packages:
 
-1. In the \Packages folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \Plugins\SAP HANA\x64 folder, find the VeeamPluginforSAPHANA-13.0.3.29-1.x86\_64.rpm package.
+1. In the \Packages folder, find the openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm package.
+2. In the \Plugins\SAP HANA\x64 folder, find the VeeamPluginforSAPHANA-13.1.0.411-1.x86\_64.rpm package.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforSAPHANA-13.0.3.29-1.x86\_64.rpm packages to the SAP HANA server.
+1. Upload openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm and VeeamPluginforSAPHANA-13.1.0.411-1.x86\_64.rpm packages to the SAP HANA server.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for SAP HANA from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following packages:
 
-1. In the \VeeamPluginforSAPHANA-13.0.3.29-1\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \VeeamPluginforSAPHANA-13.0.3.29-1\x64 folder, find the VeeamPluginforSAPHANA-13.0.3.29-1.x86\_64.rpm package.
+1. In the \VeeamPluginForSAPHANA-13.1.0.411\openssl-fips-redistributable-3.1.2 folder, find the openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm package.
+2. In the \VeeamPluginForSAPHANA-13.1.0.411\x64 folder, find the VeeamPluginforSAPHANA-13.1.0.411-1.x86\_64.rpm package.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforSAPHANA-13.0.3.29-1.x86\_64.rpm packages to the SAP HANA server.
+1. Upload openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm and VeeamPluginforSAPHANA-13.1.0.411-1.x86\_64.rpm packages to the SAP HANA server.
 
 1. Install Veeam Plug-In. To do this, run the following commands:
 
-1. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
+1. Install the openssl-fips-redistributable-3.1.2 package that is required for the Veeam Plug-In functioning:
 
 |  |
 | --- |
-| rpm -i veeam-openssl3-3.0.0.31-1.x86\_64.rpm |
+| rpm -i openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm |
 
 1. Install Veeam Plug-In:
 
 |  |
 | --- |
-| rpm -i VeeamPluginforSAPHANA-13.0.3.29-1.x86\_64.rpm |
+| rpm -i VeeamPluginforSAPHANA-13.1.0.411-1.x86\_64.rpm |
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In for SAP HANA](configure_sap_hana_plugin.md).
 
@@ -81,28 +81,28 @@ You can download the latest version of the Veeam Backup & Replication installati
 
 1. Open the mounted image and find the following files:
 
-* In the \Packages folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
+* In the \Packages folder, find the openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm package.
 * In the \Plugins\SAP HANA\x64 folder, find the VeeamPluginforSAPHANA.tar.gz archive.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforSAPHANA.tar.gz files to the SAP HANA server.
+1. Upload openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm and VeeamPluginforSAPHANA.tar.gz files to the SAP HANA server.
 
 Using veeam.com
 
 1. Download the setup archive for Veeam Plug-In for SAP HANA from [this Veeam webpage](https://www.veeam.com/products/data-platform-trial-download.html?tab=application-plugins).
 2. Open the setup archive and find the following files:
 
-1. In the \VeeamPluginforSAPHANA-13.0.3.29-1\veeam-openssl3 folder, find the veeam-openssl3-3.0.0.31-1.x86\_64.rpm package.
-2. In the \VeeamPluginforSAPHANA-13.0.3.29-1\x64 folder, find the VeeamPluginforSAPHANA.tar.gz archive.
+1. In the \VeeamPluginForSAPHANA-13.1.0.411\openssl-fips-redistributable-3.1.2 folder, find the openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm package.
+2. In the \VeeamPluginForSAPHANA-13.1.0.411\x64 folder, find the VeeamPluginforSAPHANA.tar.gz archive.
 
-1. Upload veeam-openssl3-3.0.0.31-1.x86\_64.rpm and VeeamPluginforSAPHANA.tar.gz files to the SAP HANA server.
+1. Upload openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm and VeeamPluginforSAPHANA.tar.gz files to the SAP HANA server.
 
 1. Install Veeam Plug-In. To do this, run the following commands:
 
-1. Install the veeam-openssl3 package that is required for the Veeam Plug-In functioning:
+1. Install the openssl-fips-redistributable-3.1.2 package that is required for the Veeam Plug-In functioning:
 
 |  |
 | --- |
-| rpm -i veeam-openssl3-3.0.0.31-1.x86\_64.rpm |
+| rpm -i openssl-fips-redistributable-3.1.2-3.1.2.2-1.x86\_64.rpm |
 
 1. Create the /opt/veeam directory.
 
@@ -120,4 +120,5 @@ In the terminal, open the folder that contains the VeeamPluginforSAPHANA.TAR.GZ 
 
 Once Veeam Plug-In is installed, you can configure the plug-in settings. For details, see [Configuring Plug-In for SAP HANA](configure_sap_hana_plugin.md).
 
+Page updated 2026-07-28
 
