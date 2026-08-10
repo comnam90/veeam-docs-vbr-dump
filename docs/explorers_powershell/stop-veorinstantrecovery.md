@@ -3,8 +3,8 @@ title: "Stop-VEORInstantRecovery"
 product: "vbr"
 doc_type: "explorers_powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/explorers_powershell/stop-veorinstantrecovery.html"
-last_updated: "1/7/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Stop-VEORInstantRecovery
@@ -37,14 +37,15 @@ This cmdlet stops an active instant recovery session for an Oracle database.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Database | Specifies an Oracle database. The cmdlet will stop the instant recovery session of this database. | Accepts the [VEORIRDatabase](veorirdatabase.md) object. To get this object, run the [Get-VEORIRDatabase](get-veorirdatabase.md) cmdlet. | True | 0 | True (ByValue) |
 | Force | Defines that the cmdlet will stop the instant recovery session of an Oracle database without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
-This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
+This cmdlet supports Microsoft PowerShell common parameters. For more information on common parameters, see the [About Common Parameters](http://go.microsoft.com/fwlink/p/?LinkID=113216) section of Microsoft Docs.
 
 Output Object
 
@@ -69,4 +70,5 @@ Related Commands
 
 [Get-VEORIRDatabase](get-veorirdatabase.md)
 
+Page updated 2026-01-30
 
