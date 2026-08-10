@@ -3,8 +3,8 @@ title: "Changed Block Tracking"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/ovirt_changed_block_tracking.html"
-last_updated: "4/22/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Changed Block Tracking
@@ -30,7 +30,7 @@ While processing the requests, oVirt KVM creates a checkpoint ID for the backup 
 
 Limitations for Changed Block Tracking
 
-Due to oVirt KVM technical limitations, checkpoint IDs are not created for disks in the RAW format. Therefore, Veeam Plug-in for oVirt KVM will not be able to use CBT when processing VMs with RAW disks attached. If CBT cannot be used, Veeam Plug-in for oVirt KVM reads the whole content of VM disks and compares it with backed-up data that already exists in backup repositories. In this case, it may take Veeam Backup & Replication more time to create incremental backups.
+Due to oVirt KVM technical limitations, checkpoint IDs are not created for disks in the RAW format. Therefore, Veeam Plug-in for oVirt KVM will not be able to use CBT when processing RAW disks attached to VMs. If CBT cannot be used, Veeam Plug-in for oVirt KVM reads the whole content of VM disks and compares it with backed-up data that already exists in backup repositories. In this case, it may take Veeam Backup & Replication more time to create incremental backups.
 
 |  |
 | --- |
@@ -42,4 +42,5 @@ Due to oVirt KVM technical limitations, checkpoint IDs are not created for disks
 | Important |
 | If Veeam Plug-in for oVirt KVM is unable to use CBT while creating incremental backups, you may get the following warnings in backup session logs:   * "Unable to backup disks incrementally, using full scan backup".   To resolve this issue, check the oVirt KVM configuration as described in the [Veeam KB article](https://www.veeam.com/kb4208).   * "The Disk id=<disk id> has RAW format and can be backed up only in full scan mode".   To resolve this issue, convert the disk format to QCOW2 as described in the [Veeam KB article](https://www.veeam.com/kb4345). |
 
+Page updated 2026-07-24
 
