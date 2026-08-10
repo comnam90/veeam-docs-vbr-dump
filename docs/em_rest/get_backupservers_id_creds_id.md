@@ -3,8 +3,8 @@ title: "GET /backupServers/{ID}/credentials/{ID}"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/get_backupservers_id_creds_id.html"
-last_updated: "8/15/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # GET /backupServers/{ID}/credentials/{ID}
@@ -26,8 +26,9 @@ Request Headers
 
 The request contains the following headers:
 
+Request Headers
+
 | Header | Required | Description |
-| --- | --- | --- |
 | X-RestSvcSessionId | True | The request requires authorization. In the header, the client must send a session ID copied from the server reply to the request creating a new logon session. For details, see [Authentication and Security](authentication_and_security.md). |
 | Accept | False | Identifies the format of the response. Possible values:   * application/xml — the client can send this value in the header to accept response in the XML format. * application/json — the client must send this value in the header to accept the request in the JSON format.   If the request does not contain the header, the server will return the response in the XML format. |
 
@@ -47,8 +48,9 @@ Response Headers
 
 The response to this request contains the following headers. The response may also include additional standard HTTP headers.
 
+Response Headers
+
 | Header | Description |
-| --- | --- |
 | Content-length | The length of the response body. |
 | Content-type | The media type and syntax of the request body message. Possible values:   * application/xml * application/json |
 
@@ -58,8 +60,9 @@ In the response body, the REST API returns an entity or an entity reference of t
 
 Parameters
 
+Response Body
+
 | Element | Type | Description |
-| --- | --- | --- |
 | Id | String | ID of the credentials record, for example: 3ff61155-ed3d-47c5-a07b-29c7ca0d36b9. |
 | Username | String | User name of the credentials record, for example: BACKUPSERVER\Administrator. |
 | Description | String | Description of the credentials record, for example: Administrator credentials. |
@@ -69,8 +72,9 @@ To view query parameters that you can use for filtering or sorting, see [GET /qu
 
 Links
 
+Response Body
+
 | Reference | Relationship | Description |
-| --- | --- | --- |
 | /backupServers/{ID} | Up | URL of the [/backupServers/{ID}](backupservers_id.md) resource — a backup server where the credentials have been created. |
 | /backupServers/{ID}/credentials/{ID} | Edit | Alternate URL of the [PUT /backupServers/{ID}/credentials/{ID}](put_backupservers_id_creds_id.md) resource. |
 | /backupServers/{ID}/credentials/{ID} | Delete | URL for the [DELETE /backupServers/{ID}/credentials/{ID}](delete_backupservers_id_creds_id.md) request. |
@@ -81,6 +85,7 @@ The example below returns a credentials record having ID a45eb049-6f8d-49d4-9dba
 
 |  |
 | --- |
-| Request:  GET https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c/credentials/a45eb049-6f8d-49d4-9dba-4f1499f9d8d1    Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj    Response:  200 OK    Response Body:  <CredentialsInfo xmlns="http://www.veeam.com/ent/v1.0" Type="Credentials" Href="https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c/credentials/a45eb049-6f8d-49d4-9dba-4f1499f9d8d1"> |
+| Request:  GET https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c/credentials/a45eb049-6f8d-49d4-9dba-4f1499f9d8d1  Request Header:  X-RestSvcSessionId   NDRjZmJkYmUtNWE5NS00MTU2LTg4NjctOTFmMDY5YjdjMmNj  Response:  200 OK  Response Body:  <CredentialsInfo xmlns="http://www.veeam.com/ent/v1.0" Type="Credentials" Href="https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c/credentials/a45eb049-6f8d-49d4-9dba-4f1499f9d8d1">   <Links>     <Link Rel="Up" Type="BackupServer" Href="https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c?format=Entity" Name="win-tw5" />     <Link Rel="Edit" Type="Credentials" Href="https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c/credentials/a45eb049-6f8d-49d4-9dba-4f1499f9d8d1" />     <Link Rel="Delete" Type="Credentials" Href="https://localhost:9398/api/backupServers/50a1b2fb-b90a-4e05-816f-e298eb2f995c/credentials/a45eb049-6f8d-49d4-9dba-4f1499f9d8d1" />   </Links>   <Id>a45eb049-6f8d-49d4-9dba-4f1499f9d8d1</Id>   <Username>root</Username>   <Description>Credentials for ESXi and Linux hosts.</Description>   <Password/> </CredentialsInfo> |
 
+Page updated 2026-07-29
 
