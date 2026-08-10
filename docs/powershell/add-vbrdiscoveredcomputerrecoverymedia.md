@@ -3,8 +3,8 @@ title: "Add-VBRDiscoveredComputerRecoveryMedia"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbrdiscoveredcomputerrecoverymedia.html"
-last_updated: "10/9/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRDiscoveredComputerRecoveryMedia
@@ -22,7 +22,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRDiscoveredComputerRecoveryMedia -DiscoveredComputer <VBRDiscoveredComputer> -RecoveryMediaTarget <VBRRecoveryMediaTarget> [-Force] [<CommonParameters>] |
+| Add-VBRDiscoveredComputerRecoveryMedia -DiscoveredComputer <VBRDiscoveredComputer> -RecoveryMediaTarget <VBRRecoveryMediaTarget> [-Force] [-EnableRemoteBmr] [<CommonParameters>] |
 
 Detailed Description
 
@@ -35,11 +35,13 @@ This cmdlet creates Veeam Recovery — a recovery image of your computer. You ca
 
 Parameters
 
-| Parameter | Description | Type | Required | Position | Accept |
-| --- | --- | --- | --- | --- | --- |
+Parameters
+
+| Parameter | Description | Type | Required | Position | Accept Pipeline Input |
 | DiscoveredComputer | Specifies the discovered computer for which you want to create Veeam Recovery Media.  Note: You can create Veeam Recovery Media only for discovered computers. | Accepts the [VBRDiscoveredComputer](vbrdiscoveredcomputer.md) object. To get this object, run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet. | True | Named | True (ByValue ByProperty Name) |
 | RecoveryMediaTarget | Specifies a storage device or the ISO file path for creating Veeam Recovery Media. | Accepts the VBRRecoveryMediaTarget object. To get this object, run the [Get-VBRRecoveryMediaTarget](get-vbrrecoverymediatarget.md) cmdlet. | True | Named | True (ByProperty Name) |
 | Force | Defines that the cmdlet will create Veeam Recovery Media even if any of the following occurs:   * The target removable device needs to be formatted. * The ISO file under the specified path already exists. * There is not enough space on the target removable device. | SwitchParameter | False | Named | True (ByProperty Name) |
+| EnableRemoteBmr | Defines that the created Veeam Recovery Media will support remote bare metal recovery. | SwitchParameter | False | Named | True (ByProperty Name) |
 
 <CommonParameters>
 
@@ -55,7 +57,7 @@ Examples
 
 |  |  |
 | --- | --- |
-| This example shows how to save Veeam Recovery Media in the ISO file format.  |  | | --- | | $isopath = New-VBRRecoveryMediaISOTarget -Path "c:\image.iso"  $computer = Get-VBRDiscoveredComputer | Where {$\_.name -eq "support.east.local"}  Add-VBRDiscoveredComputerRecoveryMedia -DiscoveredComputer $computer -RecoveryMediaTarget $isopath |  Perform the following steps:   1. Run the [New-VBRRecoveryMediaISOTarget](new-vbrrecoverymediaisotarget.md) cmdlet. Specify the Path parameter value. Save the result to the $isopath variable. 2. Run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet. Use the Where-Object method to get the computer for which you want to create Veeam Recovery Media. Save the result to the $computer variable. 3. Run the Add-VBRDiscoveredComputerRecoveryMedia cmdlet. Set the $computer variable as the DiscoveredComputer parameter value. Set the $isopath variable as the RecoveryMediaTarget parameter value. |
+| This example shows how to save Veeam Recovery Media in the ISO file format. The recovery media will support remote bare metal recovery.  |  | | --- | | $isopath = New-VBRRecoveryMediaISOTarget -Path "c:\image.iso"  $computer = Get-VBRDiscoveredComputer | Where {$\_.name -eq "support.east.local"}  Add-VBRDiscoveredComputerRecoveryMedia -DiscoveredComputer $computer -RecoveryMediaTarget $isopath -EnableRemoteBmr |  Perform the following steps:   1. Run the [New-VBRRecoveryMediaISOTarget](new-vbrrecoverymediaisotarget.md) cmdlet. Specify the Path parameter value. Save the result to the $isopath variable. 2. Run the [Get-VBRDiscoveredComputer](get-vbrdiscoveredcomputer.md) cmdlet. Use the Where-Object method to get the computer for which you want to create Veeam Recovery Media. Save the result to the $computer variable. 3. Run the Add-VBRDiscoveredComputerRecoveryMedia cmdlet. Set the $computer variable as the DiscoveredComputer parameter value. Set the $isopath variable as the RecoveryMediaTarget parameter value. Provide the EnableRemoteBmr parameter. |
 
 ![](//img.veeam.com/helpcenter/baggage/arrow_next.svg)Example 2. Creating Veeam Recovery Media on Removable Storage Device
 
@@ -69,4 +71,5 @@ Related Commands
 * [Get-VBRRecoveryMediaTarget](get-vbrrecoverymediatarget.md)
 * [New-VBRRecoveryMediaISOTarget](new-vbrrecoverymediaisotarget.md)
 
+Page updated 2026-06-04
 
