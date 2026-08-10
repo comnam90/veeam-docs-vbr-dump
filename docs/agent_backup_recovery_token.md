@@ -3,8 +3,8 @@ title: "Creating Recovery Token"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agent_backup_recovery_token.html"
-last_updated: "11/14/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Creating Recovery Token
@@ -12,7 +12,7 @@ product_version: "13.0.1.1071"
 
 If you want to recover files, volumes or an entire computer from a specific backup, you can use the Create recovery token operation.
 
-You can generate the recovery token on the Veeam Backup & Replication side. Then, on the computer side, with this recovery token get access to the backup and recover data that is stored in the backup. To learn more, see one of the following sections depending on Veeam Agent you work with:
+You can generate the recovery token on the Veeam Backup & Replication side. Then, on the computer side, use this recovery token to get access to the backup and recover data that is stored in the backup. To learn more, see one of the following sections depending on Veeam Agent you work with:
 
 * [Veeam Agent for Microsoft Windows](https://helpcenter.veeam.com/docs/agentforwindows/userguide/baremetal_vbr.html?ver=13)
 * [Veeam Agent for Linux](https://helpcenter.veeam.com/docs/agentforlinux/userguide/baremetal_volume_restore_vbr.html?ver=13)
@@ -21,6 +21,11 @@ You can generate the recovery token on the Veeam Backup & Replication side. Then
 * [Veeam Agent for IBM AIX](https://helpcenter.veeam.com/docs/agentforaix/userguide/baremetal_files_restore_vbr_wiz.html?ver=13)
 
 * [Veeam Agent for Mac](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_import_vbr_panel.html?ver=13)
+
+You can create a recovery token in one of the following ways:
+
+* [Using Veeam Backup & Replication Console](#console)
+* [Using Veeam Backup & Replication Web UI](#webui)
 
 Considerations and Limitations
 
@@ -33,9 +38,9 @@ Before creating a recovery token, consider the following prerequisites and limit
 * You cannot create a recovery token for a whole backup copy job, but you can create a recovery token for individual objects included in a backup copy job.
 * If you work with scale-out backup repositories (SOBR), you cannot create a recovery token for backups displayed in Capacity and Archive nodes in the inventory pane. To create a recovery token for such backups, select the backup in the Backups node in the inventory pane.
 
-Generating Recovery Token
+Creating Recovery Token Using Veeam Backup & Replication Console
 
-To create a recovery token on the Veeam Backup & Replication side:
+To create a recovery token in the Veeam Backup & Replication console:
 
 1. Open the Home view and do the following:
 
@@ -49,9 +54,20 @@ You can also create and modify the existing recovery token using the PowerShell 
 
 |  |
 | --- |
-| Tip |
+| TIP |
 | Alternatively, you can get access to the backup using user credentials. To learn more, see one of the following sections depending on Veeam Agent you work with:   * [Veeam Agent for Microsoft Windows](https://helpcenter.veeam.com/docs/agentforwindows/userguide/baremetal_vbr.html?ver=13) * [Veeam Agent for Linux](https://helpcenter.veeam.com/docs/agentforlinux/userguide/baremetal_volume_restore_vbr.html?ver=13)  * [Veeam Agent for Oracle Solaris](https://helpcenter.veeam.com/docs/agentforsolaris/userguide/baremetal_files_restore_vbr_wiz.html?ver=13) * [Veeam Agent for IBM AIX](https://helpcenter.veeam.com/docs/agentforaix/userguide/baremetal_files_restore_vbr_wiz.html?ver=13)  * [Veeam Agent for Mac](https://helpcenter.veeam.com/docs/agentformac/userguide/backup_import_vbr_panel.html?ver=13) |
 
 [![Create Recovery Token](images/agent_backup_create_recovery_token.webp)](images/agent_backup_create_recovery_token.webp "Create Recovery Token")
 
+Creating Recovery Token Using Veeam Backup & Replication Web UI
+
+To create a recovery token in the Veeam Backup & Replication web UI:
+
+1. In the management pane, click Backups.
+2. Expand the backup that contains the necessary computer.
+3. Select the check box next to the necessary backup and click Create Recovery Token on the toolbar. Alternatively, right-click the backup and select Create Recovery Token.
+
+[![Create Recovery Token](images/agent_backup_create_recovery_token_web.webp)](images/agent_backup_create_recovery_token_web.webp "Create Recovery Token")
+
+Page updated 2026-07-20
 
