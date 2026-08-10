@@ -3,8 +3,8 @@ title: "Universal CDP to VMware vSphere"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/universal_cdp.html"
-last_updated: "4/2/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Universal CDP to VMware vSphere
@@ -39,4 +39,5 @@ In This Section
 * [Backup Infrastructure for Universal CDP](uni_cdp_infrastructure.md)
 * [Considerations and Limitations](uni_cdp_considerations.md)
 
+Page updated 2026-05-07
 
