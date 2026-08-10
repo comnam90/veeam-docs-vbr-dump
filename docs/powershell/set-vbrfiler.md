@@ -3,8 +3,8 @@ title: "Set-VBRFiler"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrfiler.html"
-last_updated: "9/4/2024"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRFiler
@@ -26,19 +26,19 @@ This cmdlet provides parameter sets that allow you to:
 
 |  |
 | --- |
-| Set-VBRFiler -Filer <VBRFiler> [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-RequireAccessCredentials] [-EnableSnapDiff]  [<CommonParameters>] |
+| Set-VBRFiler -Filer <VBRFiler> [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-RequireAccessCredentials] [-EnableSnapDiff] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify the enterprise NAS system added as a file share to the inventory with specific user name and password.
 
 |  |
 | --- |
-| Set-VBRFiler -Filer <VBRFiler> -User <string> -Password <string> [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-RequireAccessCredentials] [-EnableSnapDiff]  [<CommonParameters>] |
+| Set-VBRFiler -Filer <VBRFiler> -User <string> -Password <string> [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-RequireAccessCredentials] [-EnableSnapDiff] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 * Modify the enterprise NAS system added as a file share to the inventory using specific credentials.
 
 |  |
 | --- |
-| Set-VBRFiler -Filer <VBRFiler> -AccessCredentials <CCredentials> [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-RequireAccessCredentials] [-EnableSnapDiff]  [<CommonParameters>] |
+| Set-VBRFiler -Filer <VBRFiler> -AccessCredentials <CCredentials> [-CacheRepository <CBackupRepository>] [-MetaMigrationType <VBRNASBackupMetaMigrationType>] [-BackupIOControlLevel {Lowest | Low | Medium | High | Highest}] [-RequireAccessCredentials] [-EnableSnapDiff] [-Force] [-RetrievalSettings <VBRUnstructuredBackupColdStorageRetrievalSettings>]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -51,17 +51,20 @@ This cmdlet modifies settings of enterprise NAS systems added to the inventory.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Filer | Specifies the enterprise NAS system. The cmdlet will modify the settings of this server. | Accepts the VBRFiler object. To get this object, run the [Add-VBRFiler](add-vbrfiler.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | CacheRepository | Specifies the cache repository. Veeam Backup & Replication will keep the .VCACHE files on this repository. | Accepts the CBackupRepository object. To get this object, run the [Get-VBRBackupRepository](get-vbrbackuprepository.md) cmdlet. | False | Named | False |
-| MetaMigrationType | Specifies how the cmdlet will migrate metadata. You can use one of the following options:   * CheckExistence — use this option to check that metadata is available on the current cache repository. * CopyMetaFromCache — use this option to migrate metadata from source cache repository to a new cache repository. * DownloadMetaFromArchive — use this option to migrate metadata from archive repository or from replica metadata in archive repository. | VBRNASBackupMetaMigrationType | False | Named | False |
+| MetaMigrationType | Specifies how the cmdlet will migrate metadata. You can use one of the following options:   * CheckExistence — use this option to check that metadata is available on the current cache repository. * CopyMetaFromCache — use this option to migrate metadata from source cache repository to a new cache repository. Note: If metadata in a source cache repository is corrupted, the cmdlet will copy data from the archive repository. * DownloadMetaFromArchive — use this option to migrate metadata from archive repository or from replica metadata in archive repository. | VBRNASBackupMetaMigrationType | False | Named | False |
 | BackupIOControlLevel | Specifies a speed that Veeam Backup & Replication will use to read data from the file server. You can specify either of the following speed:   * Lowest * Low * Medium * High * Highest | VBRNASBackupIOControlLevel | False | Named | False |
 | RequireAccessCredentials | Defines that the cmdlet will check whether Veeam Backup & Replication uses authentication to access the SMB network shared folder.  If you do not provide this parameter, the cmdlet will not check credentials that are used to access the SMB network shared folder.  To remove credentials, specify the RequireAccessCredentials parameter with the :$False value.  Note: If credentials are not provided, the cmdlet will return an error. To avoid the error, you must specify credentials using either of the following parameters:   * User and Password * AccessCredentials | SwitchParameter | False | Named | False |
 | EnableSnapDiff | Use this parameter for Dell PowerScale (formerly Isilon) storages only.  Defines that during the file backup jobs Veeam Backup & Replication will use the file change tracking technology provided by the NAS manufacturer. | SwitchParameter | False | Named | False |
 | User | Specifies the user name. The cmdlet will apply this user name to authenticate against the enterprise NAS system. | String | True | Named | False |
 | Password | Specifies the password. The cmdlet will use this password to authenticate against the enterprise NAS system. | String | True | Named | False |
 | AccessCredentials | Specifies credentials that the cmdlet will use to authenticate against the enterprise NAS system. | Accepts the CCredentials object. To get this object, run the [Get-VBRCredentials](get-vbrcredentials.md) cmdlet. | True | Named | False |
+| RetrievalSettings | Specifies the retrieval policy settings. The cmdlet will use these settings to retrieve data from archive repositories. | Accepts the VBRUnstructuredBackupColdStorageRetrievalSettings object. To create this object, run the [New-VBRUnstructuredBackupColdStorageRetrievalSettings](new-vbrunstructuredbackupretrievalsettings.md) cmdlet. | False | Named | False |
+| Force | Defines that the cmdlet will modify settings of enterprise NAS systems without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
 
@@ -98,4 +101,5 @@ Related Commands
 * [Get-VBRBackupRepository](get-vbrbackuprepository.md)
 * [Get-VBRCredentials](get-vbrcredentials.md)
 
+Page updated 2026-06-29
 
