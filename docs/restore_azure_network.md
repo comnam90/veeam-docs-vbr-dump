@@ -3,8 +3,8 @@ title: "Step 7. Configure Network Settings"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/restore_azure_network.html"
-last_updated: "7/3/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Step 7. Configure Network Settings
@@ -36,21 +36,24 @@ Configuring Security Group
 To change a security group to which a workload will be restored:
 
 1. From the Virtual network list, select a workload and click Group.
-2. Select the network security group from the Network security group list.
+2. From the Network security group drop-down list, how Veeam Backup & Replication assigns a network security group:
 
-If you leave the Empty value, Veeam Backup & Replication will create a new network security group. The rules for this group are described in [Default Security Group Rules](#rules).
+   1. Create new. Veeam Backup & Replication creates a new network security group. The rules for this group are described in [Default Security Group Rules](#rules).
+   2. Do not assign (use subnet settings). Veeam Backup & Replication uses the network security group already associated with the target subnet.
+   1. <existing group>. Veeam Backup & Replication assigns the selected network security group.
 
 ![Step 7. Configure Network Settings](images/azure_restore_network_security.webp)
 
 Default Security Group Rules
 
-When you leave the Empty value while configuring the security group, Veeam Backup & Replication creates a security group with the following rules.
+When you select the Create new option while configuring the security group, Veeam Backup & Replication creates a security group with the following rules.
+
+Default Security Group Rules
 
 | Priority | Name | Port | Protocol | Source | Destination | Action |
-| --- | --- | --- | --- | --- | --- | --- |
 | Inbound security rules | | | | | | |
-| 300 | SSH  Note: This rule applies if you restore Linux VMs. | 22 | TCP | Any | Any | Allow |
-| 300 | RemoteDesktop  Note: This rule applies if you restore Microsoft Windows VMs. | 3389 | TCP | Any | Any | Allow |
+| 300 | SSH  Note: This rule applies if you recover Linux VMs. | 22 | TCP | Any | Any | Allow |
+| 300 | RemoteDesktop  Note: This rule applies if you recover Microsoft Windows VMs. | 3389 | TCP | Any | Any | Allow |
 | 65000 | AllowVnetInBound | Any | Any | VirtualNetwork | VirtualNetwork | Allow |
 | 65001 | AllowAzureLoadBalancerInBound | Any | Any | AzureLoadBalancer | Any | Allow |
 | 65500 | DenyAllInBound | Any | Any | Any | Any | Deny |
@@ -59,4 +62,5 @@ When you leave the Empty value while configuring the security group, Veeam Backu
 | 65001 | AllowInternetOutBound | Any | Any | Any | Internet | Allow |
 | 65500 | DenyAllOutBound | Any | Any | Any | Any | Deny |
 
+Page updated 2026-07-02
 
