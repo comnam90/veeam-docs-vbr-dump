@@ -3,8 +3,8 @@ title: "Add-VBRAmazonS3GlacierRepository"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/add-vbramazons3glacierrepository.html"
-last_updated: "9/2/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Add-VBRAmazonS3GlacierRepository
@@ -24,7 +24,7 @@ Syntax
 
 |  |
 | --- |
-| Add-VBRAmazonS3GlacierRepository -Connection <VBRAmazonS3Connection> -AmazonS3Folder <VBRAmazonS3Folder> [-AmazonProxySpec <VBRAmazonEC2ProxyAppliance>] [-Name <String>] [-Description <String>] [-UseDeepArchive] [-UseInstantRetrieval] [-EnableBackupImmutability] [-Force]  [<CommonParameters>] |
+| Add-VBRAmazonS3GlacierRepository -Connection <VBRAmazonS3Connection> -AmazonS3Folder <VBRAmazonS3Folder> [-AmazonProxySpec <VBRAmazonEC2ProxyAppliance>] [-Name <String>] [-Description <String>] [-UseDeepArchive] [-UseInstantRetrieval] [-EnableBackupImmutability] [-ImmutabilityMode <VBRRepositoryImmutabilityMode>] [-ImmutabilityPeriod <Int32>] [-EnableReadOnlyMode] [-Force]  [<CommonParameters>] |
 
 Detailed Description
 
@@ -32,16 +32,20 @@ This cmdlet adds Amazon S3 Glacier archive storage repository to the backup infr
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
 | Connection | Specifies an active session with an Amazon S3 Glacier object storage that you want to add as an archive repository. | Accepts the VBRAmazonS3Connection object. To get this object, run the [Connect-VBRAmazonS3Service](connect-vbramazons3service.md) cmdlet and set the ArchiveTier property as the ServiceType parameter value. | True | Named | False |
 | AmazonS3Folder | Specifies an Amazon S3 folder. Veeam Backup & Replication will move backup files into this folder. | Accepts the VBRAmazonS3Folder object. To create this object, run the [New-VBRAmazonS3Folder](new-vbramazons3folder.md) cmdlet. | True | Named | True (ByValue) |
 | AmazonProxySpec | Specifies the archiver appliance that will transfer the data from Amazon S3 to Amazon S3 Glacier object storage. | Accepts the VBRAmazonEC2ProxyAppliance object. To create this object, run the [New-VBRAmazonEC2ProxyAppliance](new-vbramazonec2proxyappliance.md) cmdlet. | False | Named | True (ByPropertyName) |
 | Name | Specifies a name of an Amazon S3 Glacier object storage. The cmdlet will add object storage with this name. | String | False | Named | False |
 | Description | Specifies a description of an Amazon S3 Glacier object storage. The cmdlet will add object storage with this description. | String | False | Named | False |
-| UseDeepArchive | Defines that the cmdlet will create a repository where blocks are marked with the Glacier Deep Archive storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.    Default: False. | SwitchParameter | False | Named | False |
-| UseInstantRetrieval | Defines that the cmdlet will create a repository where blocks are marked with the Amazon S3 Glacier Instant Retrieval storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.    Default: False. | SwitchParameter | False | Named | False |
+| UseDeepArchive | Defines that the cmdlet will create a repository where blocks are marked with the Glacier Deep Archive storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.  Default: False. | SwitchParameter | False | Named | False |
+| UseInstantRetrieval | Defines that the cmdlet will create a repository where blocks are marked with the Amazon S3 Glacier Instant Retrieval storage class.  Note: If you do not provide the UseDeepArchive and UseInstantRetrieval parameters, the cmdlet will create a repository where blocks are marked as the Amazon S3 Glacier Flexible Retrieval storage class.  Default: False. | SwitchParameter | False | Named | False |
 | EnableBackupImmutability | Enables the immutability option.  Default: False. | SwitchParameter | False | Named | False |
+| ImmutabilityMode | Specifies the immutability retention period:   * BackupRetention: Use this option if you want the immutability period to depend on the backup job retention. * RepositoryRetention: Use this option if you want to ignore the job retention and specify the immutability period explicitly. | VBRRepositoryImmutabilityMode | False | Named | False |
+| ImmutabilityPeriod | For the EnableBackupImmutability parameter.  Defines the immutability period in days.  Default: 30 days.  Maximum: 999 days. | Int32 | False | Named | False |
+| EnableReadOnlyMode | Defines that the cmdlet will add the object storage repository in the read-only mode. If you enable this option, Veeam Backup & Replication will not write or modify data in the object storage repository. You can use the object storage repository for restore operations only.  Default: False. | SwitchParameter | False | Named | False |
 | Force | Defines that the cmdlet will add an object storage repository without showing warnings in the PowerShell console. | SwitchParameter | False | Named | False |
 
 <CommonParameters>
@@ -60,7 +64,7 @@ This example shows how to add Amazon S3 Glacier object storage as a backup repos
 
 |  |
 | --- |
-| $account = Get-VBRAmazonAccount -AccessKey "XXXXXXXXXXXXXXXXXXX" -SecretKey "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  $bucket = Get-VBRAmazonS3Bucket -Connection $connection -Name "connect"  $folder = Get-VBRAmazonS3Folder -Connection $connection -Bucket $bucket -Name "veeam"  $region = Get-VBRAmazonS3Region -Account $account -RegionType Global -Name "ap-northeast-1"  $instance = Get-VBRAmazonEC2InstanceType -Region $region -Name "al.xlarge"  $vpc = Get-VBRAmazonEC2VPC -Region $region  $sgroup = Get-VBRAmazonEC2SecurityGroup -VPC $vpc -Name "veeamvpc"  $subnet = Get-VBRAmazonEC2Subnet -VPC $vpc -Name "veeamsubnet"  $proxy = New-VBRAmazonEC2ProxyAppliance -InstanceType $instance -Subnet $subnet -SecurityGroup $sgroup -RedirectorPort 443  Add-VBRAmazonS3GlacierRepository -Connection $connection -AmazonS3Folder $folder -AmazonProxySpec $proxy -Name Repository09 |
+| $account = Get-VBRAmazonAccount -AccessKey "XXXXXXXXXXXXXXXXXXX" -SecretKey "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  $connection = Connect-VBRAmazonS3Service -Account $account -RegionType Global -ServiceType ArchiveTier  $bucket = Get-VBRAmazonS3Bucket -Connection $connection -Name "connect"  $folder = Get-VBRAmazonS3Folder -Connection $connection -Bucket $bucket -Name "veeam"  $region = Get-VBRAmazonS3Region -Account $account -RegionType Global -Name "ap-northeast-1"  $instance = Get-VBRAmazonEC2InstanceType -Region $region -Name "al.xlarge"  $vpc = Get-VBRAmazonEC2VPC -Region $region  $sgroup = Get-VBRAmazonEC2SecurityGroup -VPC $vpc -Name "veeamvpc"  $subnet = Get-VBRAmazonEC2Subnet -VPC $vpc -Name "veeamsubnet"  $proxy = New-VBRAmazonEC2ProxyAppliance -InstanceType $instance -Subnet $subnet -SecurityGroup $sgroup -RedirectorPort 443  Add-VBRAmazonS3GlacierRepository -Connection $connection -AmazonS3Folder $folder -AmazonProxySpec $proxy -Name Repository09 |
 
 Perform the following steps:
 
@@ -104,4 +108,5 @@ Related Commands
 * [Get-VBRAmazonEC2Subnet](get-vbramazonec2subnet.md)
 * [New-VBRAmazonEC2ProxyAppliance](new-vbramazonec2proxyappliance.md)
 
+Page updated 2026-05-28
 
