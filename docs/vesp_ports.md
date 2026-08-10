@@ -3,8 +3,8 @@ title: "Ports"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/vesp_ports.html"
-last_updated: "3/10/2026"
-product_version: "13.0.1.2067"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Ports
@@ -34,4 +34,5 @@ Ports
 | Note |
 | To restore database items or lists to a server that is running in a DMZ, the SharePoint web application ports will be used. |
 
+Page updated 2026-03-23
 
