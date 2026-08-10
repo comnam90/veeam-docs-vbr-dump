@@ -3,8 +3,8 @@ title: "Database Protection"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/rman_protection.html"
-last_updated: "2/15/2026"
-product_version: "13.0.2.29"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Database Protection
@@ -14,10 +14,7 @@ After you configure Veeam Plug-In, you can use the Oracle RMAN functionality to 
 
 The examples given below are for demonstration purposes only. The backup process is performed on the Oracle RMAN side. Consider configuring required RMAN-specific parameters that may affect the backup process. For details on the backup functionality of Oracle RMAN, see [this Oracle article](https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmbckba.htm).
 
-|  |
-| --- |
-| Note |
-| Consider the following:   * In the Veeam Plug-In configuration wizard, you can enable/disable Veeam Plug-In [Data Compression and Deduplication](compression_deduplication.md). If you enable the Veeam Plug-In compression, do not use Oracle RMAN integrated compression as well. It can slow down the backup and restore processes. * It is Oracle's best practice to add the EXIT; command at the bottom of the script to shut down the RMAN utility. Without the EXIT; command in the script, it is up to Oracle RMAN to decide when to close the backup session, which can lead to multiple unclosed RMAN backup sessions. * Backups created by Veeam Plug-Ins cannot be used as a source for file to tape or backup to tape jobs. |
+Before you start you start protecting your Oracle database Veeam Plug-In, review [Considerations and Limitations](rman_limitations.md).
 
 |  |
 | --- |
@@ -28,7 +25,7 @@ In this Section
 
 * [Oracle RMAN Full Backup](rman_backup.md)
 * [Oracle RMAN Channel Allocation](rman_allocation_backup.md)
-* [Managing Backup Jobs in Veeam Backup & Replication](rman_job_vbr.md)
-* [Managing Backups in Veeam Backup & Replication](plugins_rman_backup_management.md)
+* [Backup Job in Veeam Backup & Replication](rman_job_vbr.md)
 
+Page updated 2026-07-10
 
