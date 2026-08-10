@@ -3,8 +3,8 @@ title: "System Sessions"
 product: "vbr"
 doc_type: "em_rest"
 source_url: "https://helpcenter.veeam.com/docs/vbr/em_rest/system_sessions.html"
-last_updated: "5/22/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # System Sessions
@@ -18,4 +18,5 @@ In this section
 * [/systemSessions/{ID}](systemsessions_id.md)
 * [/systemSessions/{ID}/events](systemsessions_id_events.md)
 
+Page updated 2026-07-29
 
