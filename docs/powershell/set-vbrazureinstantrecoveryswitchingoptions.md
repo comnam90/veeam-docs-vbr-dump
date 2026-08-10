@@ -3,8 +3,8 @@ title: "Set-VBRAzureInstantRecoverySwitchingOptions"
 product: "vbr"
 doc_type: "powershell"
 source_url: "https://helpcenter.veeam.com/docs/vbr/powershell/set-vbrazureinstantrecoveryswitchingoptions.html"
-last_updated: "8/1/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Set-VBRAzureInstantRecoverySwitchingOptions
@@ -30,9 +30,10 @@ This cmdlet sets the switchover options for an Instant Recovery operation.
 
 Parameters
 
+Parameters
+
 | Parameter | Description | Type | Required | Position | Accept Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| InstantRecovery | Specifies the Instant Recovery operation for which you want to change the switchover options. | Accepts the VBRAzureInstantRecovery object. To create or get this object, run the [Start-VBRAzureInstantRecovery](start-vbrazureinstantrecovery.md) or [Get-VBRAzureInstantRecovery](get-vbrazureinstantrecovery.md) cmdlet. | True | Named | True |
+| InstantRecovery | Specifies the Instant Recovery operation for which you want to change the switchover options. | Accepts the VBRAzureInstantRecovery object. To create or get this object, run the [Start-VBRAzureInstantRecovery](start-vbrazureinstantrecovery.md) or [Get-VBRAzureInstantRecovery](get-vbrazureinstantrecovery.md) cmdlet. | True | Named | True (ByValue, ByPropertyName) |
 | SwitchingOptions | Specifies the switchover options that you want to change for the Instant Recovery operation. | Accepts the VBRAzureInstantRecoverySwitchingOptions object. To create or get this object, run the [New-VBRAzureInstantRecoverySwitchingOptions](new-vbrazureinstantrecoveryswitchingoptions.md) or [Get-VBRAzureInstantRecoverySwitchingOptions](get-vbrazureinstantrecoveryswitchingoptions.md) cmdlet. | True | Named | False |
 
 <CommonParameters>
@@ -62,4 +63,5 @@ Related Commands
 * [Get-VBRAzureInstantRecovery](get-vbrazureinstantrecovery.md)
 * [New-VBRAzureInstantRecoverySwitchingOptions](new-vbrazureinstantrecoveryswitchingoptions.md)
 
+Page updated 2026-06-29
 
