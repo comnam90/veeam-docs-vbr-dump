@@ -3,8 +3,8 @@ title: "Upgrading Veeam Plug-In"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/protected_computers_upgrade.html"
-last_updated: "2/25/2026"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Upgrading Veeam Plug-In
@@ -18,6 +18,8 @@ Veeam Backup & Replication 13 supports different versions of Veeam Plug-In depen
 * Veeam Backup & Replication on Microsoft Windows supports management of Veeam Plug-Ins 12.3.2.4165 and later.
 
 Note that Veeam Backup & Replication must be the same or later than the version of Veeam Plug-In. If you want to use the latest functionality, you must upgrade both Veeam Backup & Replication and Veeam Plug-In to the latest version. If you use an earlier Veeam Plug-In build, it may not have all the features and bug fixes introduced in your Veeam Backup & Replication version. To learn more about the Veeam Plug-In builds included in Veeam Backup & Replication installation ISO files, see [this Veeam KB article](https://www.veeam.com/kb4474).
+
+To restore data from a backup, the version of Veeam Plug-In must be the same or later than the version that created the backup. Restore with an earlier version of Veeam Plug-In from a backup created with a later version is not supported and may cause the restore to fail. This limitation applies to build numbers, not only major versions. For example, you cannot use Veeam Plug-In build 13.0.1.1071 to restore data from a backup created with build 13.0.1.2067.
 
 You can upgrade Veeam Plug-In running on a specific protected computer. This operation may be required, for example, if you did not allow Veeam Backup & Replication to automatically upgrade Veeam Plug-In on computers included in the protection group and want to test the upgrade process on a selected computer first.
 
@@ -46,7 +48,7 @@ To upgrade Veeam Plug-In on a protected computer:
 | NOTE |
 | In some cases, upgrade to the new version of Veeam Plug-In may require computer reboot. |
 
-[![Upgrade Plug-in](images/plugins_protection_group_outdated_upgrade_one.webp)](images/plugins_protection_group_outdated_upgrade_one.webp "Upgrade Plug-in")
+[![Upgrade Plug-In](images/plugins_protection_group_outdated_upgrade_one.webp)](images/plugins_protection_group_outdated_upgrade_one.webp "Upgrade Plug-In")
 
 Upgrading Veeam Plug-In on Multiple Computers
 
@@ -60,7 +62,7 @@ You can upgrade Veeam Plug-In on all computers that require upgrade at once. To 
 | NOTE |
 | In some cases, upgrade to the new version of Veeam Plug-In may require computer reboot. |
 
-[![Upgrade All Plug-ins](images/plugins_protection_group_outdated_upgrade_batch.webp)](images/plugins_protection_group_outdated_upgrade_batch.webp "Upgrade All Plug-ins")
+[![Upgrade All Plug-Ins](images/plugins_protection_group_outdated_upgrade_batch.webp)](images/plugins_protection_group_outdated_upgrade_batch.webp "Upgrade All Plug-Ins")
 
 Upgrading from Veeam Plug-In Side
 
@@ -69,7 +71,9 @@ You can also upgrade Veeam Plug-In from the computer side. This approach is requ
 * [Upgrading Veeam Plug-In for Oracle RMAN](update_rman_plugin.md)
 * [Upgrading Veeam Plug-In for SAP HANA](update_saphana_plugin.md)
 * [Upgrading Veeam Plug-In for SAP on Oracle](update_sap_on_oracle_plugin.md)
+* [Upgrading Veeam Plug-In for SAP MaxDB](plugins_sap_maxdb_deploy_upgrade.md)
 * [Upgrading Veeam Plug-In for Microsoft SQL Server](update_mssql_plugin.md)
 * [Upgrading Veeam Plug-In for IBM Db2](db2_upgrade.md)
 
+Page updated 2026-08-04
 
