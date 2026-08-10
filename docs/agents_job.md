@@ -3,8 +3,8 @@ title: "Backup Job"
 product: "vbr"
 doc_type: "userguide"
 source_url: "https://helpcenter.veeam.com/docs/vbr/userguide/agents_job.html"
-last_updated: "11/4/2025"
-product_version: "13.0.1.1071"
+last_updated: "2026"
+product_version: "13.1.0.411"
 ---
 
 # Backup Job
@@ -14,12 +14,12 @@ The backup job that processes Veeam Agent computers runs on the backup server in
 
 For a Veeam Agent backup job managed by the backup server, all job management tasks are performed on the Veeam Backup & Replication side: Veeam Backup & Replication starts the job upon the defined schedule, allocates backup infrastructure resources, and so on. Veeam Agent running on a protected computer operates under control from Veeam Backup & Replication and performs data backup operations only, such as creating a volume snapshot, reading the backed-up data and transferring backed-up data to the target location. To learn more, see [How Veeam Agent Backup Job Works](#job_hiw).
 
-To configure a backup job, you must launch the New Agent Backup Job wizard and select the Managed by backup server option at the Job mode step of the wizard. For backup jobs of this type, Veeam Backup & Replication offers settings similar to settings of a VM backup job, as well as settings specific for Veeam Agents. To learn more, see [Creating Veeam Agent Backup Jobs](agent_job_create.md).
+To configure a backup job, launch the New Agent Backup Job wizard and choose to have the job managed by the backup server. For backup jobs of this type, Veeam Backup & Replication offers settings similar to settings of a VM backup job, as well as settings specific for Veeam Agents. To learn more, see [Creating Veeam Agent Backup Jobs](agent_job_create.md).
 
 |  |
 | --- |
 | NOTE |
-| * [For Microsoft Windows computers] To manage a Veeam Agent backup job managed by the backup server, you can use the Veeam Backup & Replication console only. On a computer added to a backup job of this type, the Veeam Agent user interface is not available, and you cannot perform operations with Veeam Agent directly on the protected computer. * The Veeam Agent backup job is the only approach to protect members of a protection group for cloud machines. To learn more, see [Protection Group Types](agents_protection_groups_types.md). |
+| * [For Microsoft Windows computers] To manage a Veeam Agent backup job managed by the backup server, you can use the Veeam Backup & Replication interfaces only. On a computer added to a backup job of this type, the Veeam Agent user interface is not available, and you cannot perform operations with Veeam Agent directly on the protected computer. * The Veeam Agent backup job is the only approach to protect members of a protection group for cloud machines. To learn more, see [Protection Group Types](agents_protection_groups_types.md). |
 
 How Veeam Agent Backup Job Works
 
@@ -44,4 +44,5 @@ Veeam Backup & Replication stores backed-up data to the backup file in the backu
 
 ![Backup Job](images/backup_job.webp)
 
+Page updated 2026-07-16
 
